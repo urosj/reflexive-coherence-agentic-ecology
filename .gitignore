@@ -1,0 +1,42 @@
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+/.venv/
+/.venv*/
+/venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local generated outputs and scratch work
+/outputs/
+/tmp/
+/scratch/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Local tool state
+.codex/
+.agents/
+
+# Environment and secret-bearing local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx

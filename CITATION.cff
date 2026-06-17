@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Reflexive Coherence Agentic Ecology"
+message: "If you use this repository, please cite it as below and cite the specific paper, specification section, or related RC repository that your work depends on."
+abstract: "Mixed-license conceptual paper/specification repository: papers/ documents declare CC BY-SA 4.0 in their headers; non-paper support files are GPL-2.0-only unless a file states otherwise. The repository translates classical state-rule agent systems into Reflexive Coherence agentic ecologies, with RC-Ant Colony as the worked example and explicit producer-residue claim boundaries."
+authors:
+  - family-names: "Jovanovic"
+    given-names: "Uros"
+version: "0.1"
+date-released: "2026-06-17"
+license: GPL-2.0-only
+url: "https://github.com/urosj/reflexive-coherence-agentic-ecology"
