@@ -1,14 +1,17 @@
 # Contributing
 
 This repository is for Reflexive Coherence agentic-ecology theory, translation
-method, vocabulary, and claim-boundary documentation.
+method, shared-medium coordination theory, vocabulary, and claim-boundary
+documentation.
 
 Appropriate contributions include:
 
 - fixes or clarifications to papers in `papers/`;
 - improvements to source grounding, citations, and cross-repository links;
 - clearer examples of state-rule to RC-geometry translation;
-- tighter producer-residue and naturalization-debt language;
+- clearer examples of message-passing to shared-medium translation;
+- tighter producer-residue, naturalization-debt, message-scaffold, and
+  medium-debt language;
 - documentation fixes, broken-link fixes, and license/citation corrections.
 
 Implementation work for graph runtimes, telemetry, visualization, or LGRC model
@@ -26,6 +29,7 @@ When adding or revising text, state whether the claim is:
 - conceptual vocabulary;
 - engineering method;
 - producer-mediated design;
+- message-scaffolded coordination;
 - partially naturalized substrate behavior;
 - implemented and artifact-backed evidence.
 
@@ -48,6 +52,8 @@ supports it.
 
 - Prefer direct definitions over metaphor when the text is making a claim.
 - Preserve the distinction between RC target ontology and producer scaffolding.
+- Preserve the distinction between shared-medium participation and direct
+  message scaffolding.
 - Keep examples explicit about what is native, scaffolded, or aspirational.
 - Use tables when they clarify a translation ledger or claim ladder.
 

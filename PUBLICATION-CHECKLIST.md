@@ -8,7 +8,9 @@ for a public GitHub publication pass.
 - [x] Add a concise project description near the top.
 - [x] State current maturity: conceptual paper/specification repository, no
       runnable implementation package.
-- [x] Add a reading path for current papers.
+- [x] Add a four-paper reading path for current papers.
+- [x] Add core translation, intended-reader, practical-use, and maturity-ladder
+      orientation sections.
 - [x] Link the related theory and implementation repositories.
 - [x] Add repository map, claim boundary, citation, and license sections.
 
@@ -27,6 +29,10 @@ for a public GitHub publication pass.
 - [x] Confirm the README does not imply runnable code or native implementation
       claims.
 - [x] Confirm paper headers declare CC BY-SA 4.0.
+- [x] Confirm shared-medium coordination is framed as conceptual/specification
+      work unless future implementation evidence is linked.
+- [x] Confirm message scaffolds and medium debt are distinguished from native
+      shared-medium coordination.
 - [x] Confirm repository metadata documents the mixed-license boundary:
       `papers/` are CC BY-SA 4.0, while non-paper support files are
       GPL-2.0-only unless a file states otherwise.
