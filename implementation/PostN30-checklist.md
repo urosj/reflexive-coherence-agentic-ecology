@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.15
+**Baseline revision:** 0.16
 
 **Date:** 2026-07-10
 
@@ -46,8 +46,8 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.15 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
-| Phase 0 — Architecture and decisions | In progress | P0-I3-GATE | P0-I2-GATE passed |
+| Master directive | Active at revision 0.16 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Phase 0 — Architecture and decisions | In progress | Review R1 / P0-GATE | P0-I3-GATE passed |
 | Phase 1 — AE01 contract freeze | Not started | P1-GATE | Pending |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
@@ -248,20 +248,27 @@ Entry condition:
 
 Required work:
 
-- [ ] Create `experiments/README.md` with reconstruction and claim-boundary
-  conventions.
-- [ ] Create the Post-N30 atlas roadmap path.
-- [ ] Create the minimum AE01 experiment directory.
-- [ ] Create only experiment subdirectories required by the frozen Phase 1
-  work.
-- [ ] Add `implementation/README.md` if multiple implementation directives need
-  an index.
-- [ ] Add `specs/README.md` only when the first canonical or clearly conceptual
-  spec surface is introduced.
-- [ ] Add installable-package scaffolding only if Phase 1 validation tooling
-  requires reusable source code.
-- [ ] Update the repository README map when new top-level surfaces exist.
-- [ ] Verify no generated scaffold contains machine-local paths.
+- [x] Create `experiments/README.md` with reconstruction and claim-boundary
+  conventions. Evidence: experiment index at plan revision 0.16.
+- [x] Create the Post-N30 atlas roadmap path. Evidence:
+  `experiments/Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md`.
+- [x] Create the minimum AE01 experiment directory. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md`.
+- [x] Create only experiment subdirectories required by the accepted Phase 1
+  work. Evidence: owned `contracts/`, `hypotheses/`, and `implementation/`
+  indexes; no speculative configuration, script, report, or output paths.
+- [x] Add `implementation/README.md` because the plan and checklist require an
+  index.
+- [x] Defer `specs/README.md` until the first promoted or explicitly conceptual
+  operational contract owns that surface. Evidence: D-017 and the P0-I3
+  iteration boundary.
+- [x] Defer installable-package scaffolding because P0-I3 has no reusable source
+  requirement. Evidence: D-032; reopen O-002 if P1 tooling requires
+  installation.
+- [x] Update the repository README map for the new experiment and implementation
+  surfaces.
+- [x] Verify no generated scaffold contains machine-local paths. Evidence:
+  portability scan at revision 0.16.
 
 Iteration boundary:
 
@@ -272,18 +279,22 @@ Directory creation does not admit the concepts named by those directories.
 
 Exit gate `P0-I3-GATE`:
 
-- [ ] The minimum Phase 1 paths exist and are documented.
-- [ ] Every created path has an immediate owner and purpose.
-- [ ] No stable `src` API or positive research claim has been implied.
-- [ ] Repository navigation points to the master plan and checklist.
+- [x] The minimum Phase 1 paths exist and are documented.
+- [x] Every created path has an immediate owner and purpose.
+- [x] No stable `src` API or positive research claim has been implied.
+- [x] Repository navigation points to the master plan and checklist.
+- [x] `P0-I3-GATE` passed. Evidence: revision 0.16 scaffold and portability
+  verification.
 
 ### Phase 0 exit gate `P0-GATE`
 
 - [x] `P0-I1-GATE` passed.
 - [x] `P0-I2-GATE` passed.
-- [ ] `P0-I3-GATE` passed.
-- [ ] All AE01-blocking architecture decisions are accepted or safely deferred.
-- [ ] Phase 1 can proceed without deciding semantics through incidental code.
+- [x] `P0-I3-GATE` passed.
+- [x] All AE01-blocking architecture decisions are accepted or safely deferred.
+- [x] Phase 1 can proceed without deciding semantics through incidental code.
+- [ ] Mandatory Review R1 completed against the revision 0.16 scaffold.
+- [ ] `P0-GATE` passed.
 
 Phase 0 boundary:
 
@@ -1544,6 +1555,7 @@ Use this section when checking a conditional item as deferred.
 | --- | --- | --- | --- |
 | P0-I1-GATE | Master plan and checklist revision 0.3; all P0-I1 exit items checked | 2026-07-10 | Accepted by project owner; passed |
 | P0-I2-GATE | Master plan and checklist revision 0.14; O-001 through O-010 dispositioned with decisions D-025 through D-035 and explicit safe defaults | 2026-07-10 | Accepted item-by-item by project owner; passed |
+| P0-I3-GATE | Revision 0.16 experiment/implementation indexes, Post-N30 roadmap, AE01 workspace, owned Phase 1 paths, README navigation, and portability scan | 2026-07-10 | Self-audited; passed pending Review R1 for P0-GATE |
 | P0-GATE | Pending | — | Open |
 | P1-GATE | Pending | — | Blocked |
 | P2-GATE | Pending | — | Blocked |
@@ -1604,12 +1616,13 @@ Change log:
 | CL-012 | 2026-07-10 | Revision 0.12 resolved O-003 as D-033: artifact inspection remains non-runtime while live execution requires explicit compatible local PyGRC bindings with no silent constructed/native transition. | P0-I2-GATE onward | Superseded by CL-013 |
 | CL-013 | 2026-07-10 | Revision 0.13 partially resolved O-007 as D-034: replay-frozen realization profiles govern AE01, a general API remains deferred, and no RCAE workflow may modify the graph/PyGRC repository. | P0-I2-GATE onward | Superseded by CL-014 |
 | CL-014 | 2026-07-10 | Revision 0.14 partially resolved O-008 as D-035 with admission-driven domain packages and no predeclared inventory; the complete decision audit passed P0-I2-GATE. | P0-I2-GATE onward | Superseded by CL-015 |
-| CL-015 | 2026-07-10 | Revision 0.15 accepted D-036, corrected stale gate/dependency bookkeeping, and added explicit Phase 1 guardrails for constructed mechanisms, runtime bindings, tooling bootstrap, domain placement, applicability, artifact roles, and bounded lane closure. | P0-I3-GATE and P1-GATE onward | Active |
+| CL-015 | 2026-07-10 | Revision 0.15 accepted D-036, corrected stale gate/dependency bookkeeping, and added explicit Phase 1 guardrails for constructed mechanisms, runtime bindings, tooling bootstrap, domain placement, applicability, artifact roles, and bounded lane closure. | P0-I3-GATE and P1-GATE onward | Superseded by CL-016 |
+| CL-016 | 2026-07-10 | Revision 0.16 completed P0-I3 with the minimum owned scaffold and navigation, while explicitly deferring specs, source packaging, and execution/output paths. | P0-I3-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Create the minimum scaffold in `P0-I3`.
-2. [ ] Run Review R1 and pass `P0-GATE`.
-3. [ ] Begin the AE01 contract freeze.
+1. [ ] Run Review R1 against the revision 0.16 scaffold.
+2. [ ] Pass `P0-GATE`.
+3. [ ] Begin the AE01 contract freeze at P1-I1.

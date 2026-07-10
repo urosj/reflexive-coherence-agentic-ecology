@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.15
+**Plan revision:** 0.16
 
 **Date:** 2026-07-10
 
@@ -1615,6 +1615,7 @@ directive.
 | 2026-07-10 | Revision 0.13: partially resolved O-007 as D-034 with replay-frozen mechanism contracts and realization profiles, graph Phase 8 extension discipline, deferred general API stability, and an explicit prohibition on RCAE modifying the graph/PyGRC repository. |
 | 2026-07-10 | Revision 0.14: partially resolved O-008 as D-035 with admission-driven domain packages, experiment-local domain fixtures, and no predeclared or empty domain inventory. P0-I2 decision resolution passed. |
 | 2026-07-10 | Revision 0.15: accepted D-036, corrected stale Phase 0 dependency bookkeeping, and converted identified architecture tensions into explicit Phase 1 construction, runtime-binding, tooling-bootstrap, domain-placement, applicability, and bounded lane-closure obligations. |
+| 2026-07-10 | Revision 0.16: completed the minimum P0-I3 scaffold with experiment and implementation indexes, the Post-N30 roadmap, the AE01 workspace, and only the contract, hypothesis, and experiment-implementation paths owned by Phase 1. |
 
 ## 18. Program completion criteria
 

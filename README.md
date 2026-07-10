@@ -92,8 +92,9 @@ It provides:
 
 ## Status and claim boundary
 
-This is currently a conceptual and specification repository, not a runnable
-implementation package.
+This is currently a conceptual and experiment-planning repository, not a
+runnable implementation package. The initialized Post-N30 workspace defines
+questions and contract work; it contains no positive atlas result.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -145,7 +146,13 @@ and shared-medium participation before implementation claims are made.
 
 ## Current repository map
 
-- `papers/`: draft papers and specifications.
+- [`papers/`](papers/README.md): conceptual ontology, transition arguments, and
+  engineering vocabulary.
+- [`experiments/`](experiments/README.md): bounded experiment roadmaps,
+  contracts, reconstruction conventions, evidence, and closeouts. The current
+  AE01 workspace is initialized but has not entered contract freeze.
+- [`implementation/`](implementation/README.md): active cross-cutting plans,
+  decisions, checklists, and handoffs.
 - `README.md`: public orientation and claim boundary.
 - `CONTRIBUTING.md`: contribution scope and review expectations.
 - `CITATION.cff`: citation metadata for GitHub and archival tooling.
