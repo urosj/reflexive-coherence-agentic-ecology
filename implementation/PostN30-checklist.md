@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.18
+**Baseline revision:** 0.19
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.18 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.19 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | Ready; not started | P1-I1-GATE | P0-GATE passed |
+| Phase 1 — AE01 contract freeze | In progress | P1-I2-GATE | P1-I1-GATE passed |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -316,28 +316,28 @@ Entry condition:
 
 Required conceptual-source records:
 
-- [ ] `papers/2026-06-FromStateToBecoming.md` recorded as ontology/method only.
-- [ ] `papers/2026-06-RC-AgenticEcology.md` recorded as ontology/method only.
-- [ ] `papers/2026-06-TheSharedMedium.md` recorded as ontology/method only.
-- [ ] `papers/2026-06-SharedMediumCoordination-EngineeringSpec.md` recorded as
+- [x] `papers/2026-06-FromStateToBecoming.md` recorded as ontology/method only.
+- [x] `papers/2026-06-RC-AgenticEcology.md` recorded as ontology/method only.
+- [x] `papers/2026-06-TheSharedMedium.md` recorded as ontology/method only.
+- [x] `papers/2026-06-SharedMediumCoordination-EngineeringSpec.md` recorded as
   ontology/method/control vocabulary only.
 
 Required graph-source records:
 
-- [ ] N29 closeout recorded as capability/debt/prototype bridge input.
-- [ ] N29 closeout output digest matches
+- [x] N29 closeout recorded as capability/debt/prototype bridge input.
+- [x] N29 closeout output digest matches
   `fa21662f0a69d582bfe574311110f2610a21e6e4e352991823ce47280e0e8ff5`.
-- [ ] N29 A/B/C/D prototype classifications and composition-contract limits
+- [x] N29 A/B/C/D prototype classifications and composition-contract limits
   recorded.
-- [ ] All ten N29 closeout `source_artifacts` are recorded with portable path,
+- [x] All ten N29 closeout `source_artifacts` are recorded with portable path,
   source ID, output digest, file SHA-256, status, and acceptance state.
-- [ ] N30 closeout recorded at its exact supported participant and relation
+- [x] N30 closeout recorded at its exact supported participant and relation
   rungs.
-- [ ] N30 closeout output digest matches
+- [x] N30 closeout output digest matches
   `7971163b1d7bd4027f5375270cfb2445cfe4698a8869b28e26f9273d0a5b5af6`.
-- [ ] N30 replay/control evidence and medium debt recorded.
-- [ ] Active N30+ handoff recorded as the continuation rule.
-- [ ] Later closeouts are confirmed to control the status of earlier evidence.
+- [x] N30 replay/control evidence and medium debt recorded.
+- [x] Active N30+ handoff recorded as the continuation rule.
+- [x] Later closeouts are confirmed to control the status of earlier evidence.
 
 Canonical N29 source-artifact values to verify:
 
@@ -356,24 +356,24 @@ Canonical N29 source-artifact values to verify:
 
 Required N29 debt carry-forward records:
 
-- [ ] `composed_ecology_runtime_harness_missing` carried as open outbound debt.
-- [ ] `producer_mediated_cross_prototype_handoff` carried as open bidirectional
+- [x] `composed_ecology_runtime_harness_missing` carried as open outbound debt.
+- [x] `producer_mediated_cross_prototype_handoff` carried as open bidirectional
   debt.
-- [ ] `medium_debt_and_nonzero_leakage_policy` carried as open bidirectional
+- [x] `medium_debt_and_nonzero_leakage_policy` carried as open bidirectional
   debt.
-- [ ] `ap4_ap5_gap_propagation` carried as open inbound N30+ debt.
-- [ ] `resource_economy_cooperation_exploitation_semantics` carried as open
+- [x] `ap4_ap5_gap_propagation` carried as open inbound N30+ debt.
+- [x] `resource_economy_cooperation_exploitation_semantics` carried as open
   outbound debt.
-- [ ] `deviation_nativity_discharge` carried as open bidirectional debt.
-- [ ] Every debt records the N29 blocked claims and its AE01 disposition rule.
+- [x] `deviation_nativity_discharge` carried as open bidirectional debt.
+- [x] Every debt records the N29 blocked claims and its AE01 disposition rule.
 
 Required validation:
 
-- [ ] Every source has a portable identifier.
-- [ ] Every source has a declared role and consumption boundary.
-- [ ] Runtime-evidence permission is false for conceptual sources.
-- [ ] No positive AE01 evidence is opened by source admission.
-- [ ] Source digests or stable source revisions are recorded where required by
+- [x] Every source has a portable identifier.
+- [x] Every source has a declared role and consumption boundary.
+- [x] Runtime-evidence permission is false for conceptual sources.
+- [x] No positive AE01 evidence is opened by source admission.
+- [x] Source digests or stable source revisions are recorded where required by
   the accepted artifact policy.
 
 Iteration boundary:
@@ -386,16 +386,18 @@ motif, regime, or N31 candidate.
 
 Exit gate `P1-I1-GATE`:
 
-- [ ] All required sources exist and have consumption roles.
-- [ ] Source precedence and claim ceilings are unambiguous.
-- [ ] No conceptual source is counted as runtime evidence.
-- [ ] AE01-C1 source-inventory prerequisites are satisfied.
+- [x] All required sources exist and have consumption roles.
+- [x] Source precedence and claim ceilings are unambiguous.
+- [x] No conceptual source is counted as runtime evidence.
+- [x] AE01-C1 source-inventory prerequisites are satisfied.
+- [x] `P1-I1-GATE` passed. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md`.
 
 ### P1-I2 — AE01 roadmap and experiment boundary
 
 Entry condition:
 
-- [ ] `P1-I1-GATE` passed.
+- [x] `P1-I1-GATE` passed.
 
 Required roadmap content:
 
@@ -669,7 +671,7 @@ Exit gate `P1-I5-GATE`:
 
 ### Phase 1 exit gate `P1-GATE`
 
-- [ ] `P1-I1-GATE` passed.
+- [x] `P1-I1-GATE` passed.
 - [ ] `P1-I2-GATE` passed.
 - [ ] `P1-I3-GATE` passed.
 - [ ] `P1-I4-GATE` passed.
@@ -1597,7 +1599,8 @@ Use this section when checking a conditional item as deferred.
 | P0-I2-GATE | Master plan and checklist revision 0.14; O-001 through O-010 dispositioned with decisions D-025 through D-035 and explicit safe defaults | 2026-07-10 | Accepted item-by-item by project owner; passed |
 | P0-I3-GATE | Revision 0.16 experiment/implementation indexes, Post-N30 roadmap, AE01 workspace, owned Phase 1 paths, README navigation, and portability scan | 2026-07-10 | Self-audited; passed |
 | P0-GATE | Revision 0.17; P0-I1 through P0-I3 passed; Review R1 accepted as D-037 with no P0-I2 reopening | 2026-07-10 | Accepted by project owner; passed |
-| P1-GATE | Pending | — | Open; P1-I1 ready |
+| P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
+| P1-GATE | Pending | — | Open; P1-I2 ready |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -1659,12 +1662,13 @@ Change log:
 | CL-015 | 2026-07-10 | Revision 0.15 accepted D-036, corrected stale gate/dependency bookkeeping, and added explicit Phase 1 guardrails for constructed mechanisms, runtime bindings, tooling bootstrap, domain placement, applicability, artifact roles, and bounded lane closure. | P0-I3-GATE and P1-GATE onward | Superseded by CL-016 |
 | CL-016 | 2026-07-10 | Revision 0.16 completed P0-I3 with the minimum owned scaffold and navigation, while explicitly deferring specs, source packaging, and execution/output paths. | P0-I3-GATE onward | Superseded by CL-017 |
 | CL-017 | 2026-07-10 | Revision 0.17 accepted D-037 as the R1 resolution: ceremony scales with evidential use while safety remains fixed; shared profiles, generated receipts, experiment-local construction sharing, schema-drift controls, and qualitative ranking rationale reduce compliance friction. P0-GATE passed. | P0-GATE and P1-GATE onward | Superseded by CL-018 |
-| CL-018 | 2026-07-10 | Revision 0.18 aligned the experiment reconstruction summary with D-027 and added Phase 1 stable lane IDs, a single machine lane registry, rename provenance, and narrative projection validation. Completed Phase 0 gates remain closed. | P1-I2-GATE onward | Active |
+| CL-018 | 2026-07-10 | Revision 0.18 aligned the experiment reconstruction summary with D-027 and added Phase 1 stable lane IDs, a single machine lane registry, rename provenance, and narrative projection validation. Completed Phase 0 gates remain closed. | P1-I2-GATE onward | Superseded by CL-019 |
+| CL-019 | 2026-07-10 | Revision 0.19 passed P1-I1 with a verified narrative source inventory, explicit mutable-roadmap provenance, all N29 debts carried, and N30 bounded at P2/M2. No AE01 rung or positive result opened. | P1-I1-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Begin P1-I1 source inventory and method admission.
-2. [ ] Verify the controlling N29/N30 records and digests.
-3. [ ] Pass `P1-I1-GATE` without opening positive AE01 evidence.
+1. [ ] Complete P1-I2 roadmap and experiment boundary freeze.
+2. [ ] Assign stable lane IDs and align roadmap/README projections.
+3. [ ] Pass `P1-I2-GATE` and assign AE01-C0 without positive evidence.

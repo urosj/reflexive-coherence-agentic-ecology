@@ -1,6 +1,6 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** initialized experiment workspace; contract freeze not started
+**Status:** Phase 1 in progress; P1-I1 source admission passed
 
 **Acceptance state:** AE01-C0 through AE01-C6 are unassigned
 
@@ -31,6 +31,10 @@ Directories for configurations, scripts, outputs, and reports will be created
 only when a frozen contract gives them an immediate owner. Reusable source,
 canonical specifications, and domain packages are not scaffolded by AE01
 initialization.
+
+The accepted narrative source-admission record is
+[contracts/source-inventory.md](contracts/source-inventory.md). It satisfies
+P1-I1 without assigning an AE01 acceptance rung or opening positive evidence.
 
 ## Initial lanes
 

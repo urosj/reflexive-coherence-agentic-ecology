@@ -1,6 +1,6 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** initialized roadmap scaffold; Phase 1 contract not frozen
+**Status:** Phase 1 in progress; P1-I1 source admission passed; roadmap not frozen
 
 **Local experiment:** `AE01`
 

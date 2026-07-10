@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.18
+**Plan revision:** 0.19
 
 **Date:** 2026-07-10
 
@@ -1708,6 +1708,7 @@ directive.
 | 2026-07-10 | Revision 0.16: completed the minimum P0-I3 scaffold with experiment and implementation indexes, the Post-N30 roadmap, the AE01 workspace, and only the contract, hypothesis, and experiment-implementation paths owned by Phase 1. |
 | 2026-07-10 | Revision 0.17: accepted D-037 as the Review R1 resolution, introducing graduated evidence ceremony, resolved shared profiles, generated runtime receipts, experiment-local construction sharing, schema-drift controls, and qualitative rationale alongside synthesis-only scoring. P0-GATE passed. |
 | 2026-07-10 | Revision 0.18: applied the post-scaffold review follow-ups by aligning the experiment reconstruction summary with every D-027 requirement and requiring stable lane IDs, a single machine-readable lane registry, rename provenance, and validated narrative projections during Phase 1. No completed gate reopened. |
+| 2026-07-10 | Revision 0.19: passed P1-I1 source inventory and method admission with verified conceptual-source digests, N29 closeout and ten-artifact lineage, A-D prototype/debt boundaries, N30 replay/closeout evidence, mutable-roadmap provenance, and the current N30+ cross-project spiral rule. No positive AE01 evidence or acceptance rung opened. |
 
 ## 18. Program completion criteria
 

@@ -13,9 +13,8 @@ being placed here.
 - [Master program plan](../implementation/PostN30-plan.md)
 - [Master program checklist](../implementation/PostN30-checklist.md)
 
-AE01 is currently an initialized workspace only. Its Phase 1 contract has not
-been frozen, no acceptance rung has been assigned, and no atlas result is
-supported.
+AE01 has passed P1-I1 source admission, but its Phase 1 contract has not been
+frozen, no acceptance rung has been assigned, and no atlas result is supported.
 
 ## Experiment authority
 
