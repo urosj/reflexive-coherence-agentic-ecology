@@ -10,7 +10,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "record_type": {
       "enum": [
@@ -30,7 +30,10 @@
         "n31_ranking",
         "artifact_manifest",
         "profile_registry",
-        "report_projection"
+        "report_projection",
+        "metric_sheet",
+        "metric_calibration",
+        "developmental_interpretation"
       ]
     },
     "record": {
@@ -105,6 +108,18 @@
     {
       "if": {"properties": {"record_type": {"const": "report_projection"}}, "required": ["record_type"]},
       "then": {"properties": {"record": {"$ref": "#/$defs/report_projection"}}}
+    },
+    {
+      "if": {"properties": {"record_type": {"const": "metric_sheet"}}, "required": ["record_type"]},
+      "then": {"properties": {"record": {"$ref": "#/$defs/metric_sheet"}}}
+    },
+    {
+      "if": {"properties": {"record_type": {"const": "metric_calibration"}}, "required": ["record_type"]},
+      "then": {"properties": {"record": {"$ref": "#/$defs/metric_calibration"}}}
+    },
+    {
+      "if": {"properties": {"record_type": {"const": "developmental_interpretation"}}, "required": ["record_type"]},
+      "then": {"properties": {"record": {"$ref": "#/$defs/developmental_interpretation"}}}
     }
   ],
   "additionalProperties": false,
@@ -661,7 +676,7 @@
     },
     "terminal_classification": {
       "type": "object",
-      "required": ["terminal_record_id", "lane_id", "classification", "stopping_condition", "stopping_condition_reached", "attempted_work", "execution_status", "positive_signatures", "negative_signatures", "blocked_signatures", "missing_information", "control_refs", "retained_evidence_refs", "reconstruction_status", "debt_refs", "claim_impact", "record_complete", "forces_n31_non_selection", "extensions"],
+      "required": ["terminal_record_id", "lane_id", "classification", "stopping_condition", "stopping_condition_reached", "attempted_work", "execution_status", "positive_signatures", "negative_signatures", "blocked_signatures", "missing_information", "control_refs", "retained_evidence_refs", "reconstruction_status", "developmental_interpretation_ref", "debt_refs", "claim_impact", "record_complete", "forces_n31_non_selection", "extensions"],
       "properties": {
         "terminal_record_id": {"$ref": "#/$defs/id"},
         "lane_id": {"type": "string", "pattern": "^AE01-L0[1-7]$"},
@@ -677,6 +692,7 @@
         "control_refs": {"$ref": "#/$defs/id_array"},
         "retained_evidence_refs": {"$ref": "#/$defs/id_array"},
         "reconstruction_status": {"enum": ["verified", "failed", "not_available"]},
+        "developmental_interpretation_ref": {"$ref": "#/$defs/id"},
         "debt_refs": {"$ref": "#/$defs/id_array"},
         "claim_impact": {"$ref": "#/$defs/non_empty_string"},
         "record_complete": {"type": "boolean"},
@@ -1121,6 +1137,263 @@
           }
         }
       ],
+      "additionalProperties": false
+    },
+    "metric_sheet": {
+      "type": "object",
+      "required": ["metric_sheet_id", "lane_id", "metric_id", "units", "candidate_surface", "comparator_surface", "numerator_definition", "denominator_definition", "zero_denominator_policy", "pairing", "aggregation", "direction", "threshold", "resolution_policy", "relation_vocabulary", "claim_boundary_ref", "extensions"],
+      "properties": {
+        "metric_sheet_id": {"$ref": "#/$defs/id"},
+        "lane_id": {"type": "string", "pattern": "^AE01-L0[1-7]$"},
+        "metric_id": {"$ref": "#/$defs/id"},
+        "units": {"const": "normalized_paired_margin"},
+        "candidate_surface": {"$ref": "#/$defs/non_empty_string"},
+        "comparator_surface": {"$ref": "#/$defs/non_empty_string"},
+        "numerator_definition": {"$ref": "#/$defs/non_empty_string"},
+        "denominator_definition": {"$ref": "#/$defs/non_empty_string"},
+        "zero_denominator_policy": {"$ref": "#/$defs/non_empty_string"},
+        "pairing": {"const": "paired_by_seed_and_frozen_configuration"},
+        "aggregation": {"const": "preserve_per_seed_margins_without_scalar_collapse"},
+        "direction": {"const": "greater_than_zero_is_aligned"},
+        "threshold": {
+          "const": {"operator": "greater_than", "value": 0.0}
+        },
+        "resolution_policy": {
+          "type": "object",
+          "required": ["status", "candidate_blind", "calibration_profile_ref", "calibration_seed_profile", "estimator", "measurement_resolution", "delta", "candidate_execution_effect"],
+          "properties": {
+            "status": {"enum": ["pending_candidate_blind_calibration", "frozen"]},
+            "candidate_blind": {"const": true},
+            "calibration_profile_ref": {"$ref": "#/$defs/id"},
+            "calibration_seed_profile": {
+              "type": "array",
+              "minItems": 3,
+              "items": {"type": "integer"},
+              "uniqueItems": true
+            },
+            "estimator": {"const": "max_of_measurement_resolution_and_maximum_absolute_matched_null_margin"},
+            "measurement_resolution": {"type": "number", "exclusiveMinimum": 0},
+            "delta": {
+              "type": "object",
+              "required": ["status", "rationale"],
+              "properties": {
+                "status": {"enum": ["pending", "frozen"]},
+                "value": {"type": "number", "minimum": 0},
+                "calibration_artifact_ref": {"$ref": "#/$defs/id"},
+                "rationale": {"$ref": "#/$defs/non_empty_string"}
+              },
+              "allOf": [
+                {
+                  "if": {"properties": {"status": {"const": "frozen"}}, "required": ["status"]},
+                  "then": {"required": ["value", "calibration_artifact_ref"]},
+                  "else": {"not": {"anyOf": [{"required": ["value"]}, {"required": ["calibration_artifact_ref"]}]}}
+                }
+              ],
+              "additionalProperties": false
+            },
+            "candidate_execution_effect": {"const": "blocked_until_delta_is_frozen"}
+          },
+          "allOf": [
+            {
+              "if": {"properties": {"status": {"const": "frozen"}}, "required": ["status"]},
+              "then": {"properties": {"delta": {"properties": {"status": {"const": "frozen"}}}}},
+              "else": {"properties": {"delta": {"properties": {"status": {"const": "pending"}}}}}
+            }
+          ],
+          "additionalProperties": false
+        },
+        "relation_vocabulary": {
+          "const": ["robust_aligned", "narrow_aligned", "resolution_limited", "mixed_direction", "narrow_counter", "robust_counter", "resolution_unknown", "not_applicable"]
+        },
+        "claim_boundary_ref": {"$ref": "#/$defs/id"},
+        "extensions": {"$ref": "#/$defs/extensions"}
+      },
+      "additionalProperties": false
+    },
+    "metric_calibration": {
+      "type": "object",
+      "required": ["calibration_id", "metric_sheet_ref", "candidate_blind", "seed_margins", "measurement_resolution", "delta", "command_profile_ref", "evidence_effect", "claim_boundary_ref", "extensions"],
+      "properties": {
+        "calibration_id": {"$ref": "#/$defs/id"},
+        "metric_sheet_ref": {"$ref": "#/$defs/id"},
+        "candidate_blind": {"const": true},
+        "seed_margins": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["seed", "matched_null_margin"],
+            "properties": {
+              "seed": {"type": "integer"},
+              "matched_null_margin": {"type": "number"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "measurement_resolution": {"type": "number", "exclusiveMinimum": 0},
+        "delta": {"type": "number", "minimum": 0},
+        "command_profile_ref": {"$ref": "#/$defs/id"},
+        "evidence_effect": {"const": "resolution_only_no_candidate_evidence"},
+        "claim_boundary_ref": {"$ref": "#/$defs/id"},
+        "extensions": {"$ref": "#/$defs/extensions"}
+      },
+      "additionalProperties": false
+    },
+    "developmental_interpretation": {
+      "type": "object",
+      "required": ["interpretation_id", "lane_id", "source_result_refs", "metric_relations", "boundary_rungs", "highest_valid_rung", "expressed_properties", "support_status", "classification_value", "becoming_reading", "development_reading", "next_move", "local_optimization_guard", "claim_boundary_ref", "blocked_claims", "debt_refs", "extensions"],
+      "properties": {
+        "interpretation_id": {"$ref": "#/$defs/id"},
+        "lane_id": {"type": "string", "pattern": "^AE01-L0[1-7]$"},
+        "source_result_refs": {"$ref": "#/$defs/id_array"},
+        "metric_relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["metric_sheet_ref", "seed_margins", "resolution_status", "relation", "threshold_passed", "rationale"],
+            "properties": {
+              "metric_sheet_ref": {"$ref": "#/$defs/id"},
+              "seed_margins": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["seed", "margin"],
+                  "properties": {
+                    "seed": {"type": "integer"},
+                    "margin": {"type": "number"}
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "resolution_status": {"enum": ["frozen", "unknown", "not_applicable"]},
+              "delta": {"type": "number", "minimum": 0},
+              "calibration_artifact_ref": {"$ref": "#/$defs/id"},
+              "relation": {"enum": ["robust_aligned", "narrow_aligned", "resolution_limited", "mixed_direction", "narrow_counter", "robust_counter", "resolution_unknown", "not_applicable"]},
+              "threshold_passed": {"type": "boolean"},
+              "rationale": {"$ref": "#/$defs/non_empty_string"}
+            },
+            "allOf": [
+              {
+                "if": {"properties": {"resolution_status": {"const": "frozen"}}, "required": ["resolution_status"]},
+                "then": {"required": ["delta", "calibration_artifact_ref"]},
+                "else": {"not": {"anyOf": [{"required": ["delta"]}, {"required": ["calibration_artifact_ref"]}]}}
+              }
+            ],
+            "additionalProperties": false
+          }
+        },
+        "boundary_rungs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["rung_id", "name", "status", "evidence_refs", "rationale"],
+            "properties": {
+              "rung_id": {"$ref": "#/$defs/id"},
+              "name": {"$ref": "#/$defs/non_empty_string"},
+              "status": {"enum": ["reached", "partially_reached", "not_reached", "unknown", "not_applicable"]},
+              "evidence_refs": {"$ref": "#/$defs/id_array"},
+              "rationale": {"$ref": "#/$defs/non_empty_string"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "highest_valid_rung": {"$ref": "#/$defs/reference_applicability"},
+        "expressed_properties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["property_id", "name", "expectedness", "evidence_refs", "rationale"],
+            "properties": {
+              "property_id": {"$ref": "#/$defs/id"},
+              "name": {"$ref": "#/$defs/non_empty_string"},
+              "expectedness": {"enum": ["expected", "adjacent", "unexpected"]},
+              "evidence_refs": {"$ref": "#/$defs/id_array"},
+              "rationale": {"$ref": "#/$defs/non_empty_string"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "support_status": {"enum": ["not_applicable", "explicit_constructed_support", "scaffold_dependent", "weakened_support", "substituted_support", "endogenous_precondition_candidate", "native_expression_candidate", "unresolved"]},
+        "classification_value": {
+          "type": "object",
+          "required": ["rung", "organizes_next_iteration", "rationale"],
+          "properties": {
+            "rung": {"enum": ["T0_observation_tag", "T1_reusable_class", "T2_generative_class", "T3_operational_class", "T4_theoretical_class"]},
+            "organizes_next_iteration": {"type": "boolean"},
+            "rationale": {"$ref": "#/$defs/non_empty_string"}
+          },
+          "additionalProperties": false
+        },
+        "becoming_reading": {
+          "type": "object",
+          "required": ["appearance", "classification_status", "live_boundary", "support_dependence", "claim_ceiling"],
+          "properties": {
+            "appearance": {"$ref": "#/$defs/non_empty_string"},
+            "classification_status": {"$ref": "#/$defs/non_empty_string"},
+            "live_boundary": {"$ref": "#/$defs/non_empty_string"},
+            "support_dependence": {"$ref": "#/$defs/non_empty_string"},
+            "claim_ceiling": {"$ref": "#/$defs/non_empty_string"}
+          },
+          "additionalProperties": false
+        },
+        "development_reading": {
+          "type": "object",
+          "required": ["condition_revealed", "aim_effect", "organization_implication", "measurement_question", "stewardship_implication"],
+          "properties": {
+            "condition_revealed": {"$ref": "#/$defs/non_empty_string"},
+            "aim_effect": {"enum": ["supports", "clarifies", "revises", "challenges", "undetermined"]},
+            "organization_implication": {"$ref": "#/$defs/non_empty_string"},
+            "measurement_question": {"$ref": "#/$defs/non_empty_string"},
+            "stewardship_implication": {"$ref": "#/$defs/non_empty_string"}
+          },
+          "additionalProperties": false
+        },
+        "next_move": {
+          "type": "object",
+          "required": ["disposition", "target_function", "rationale", "falsifier", "new_preregistration_required"],
+          "properties": {
+            "disposition": {"enum": ["retain_current_implementation", "bounded_local_refinement", "alternative_realization", "new_boundary_or_naturalization_probe", "revise_working_class_or_hypothesis", "redescribe_aim", "stop_no_reusable_or_generative_value"]},
+            "target_function": {"$ref": "#/$defs/non_empty_string"},
+            "rationale": {"$ref": "#/$defs/non_empty_string"},
+            "falsifier": {"$ref": "#/$defs/non_empty_string"},
+            "new_preregistration_required": {"type": "boolean"},
+            "implementation_ref": {"$ref": "#/$defs/reference_applicability"}
+          },
+          "additionalProperties": false
+        },
+        "local_optimization_guard": {
+          "type": "object",
+          "required": ["status", "rationale"],
+          "properties": {
+            "status": {"enum": ["applicable", "not_applicable"]},
+            "same_causal_question": {"const": true},
+            "function_not_proxy": {"const": true},
+            "one_bounded_change": {"const": true},
+            "preserves_prior_result": {"const": true},
+            "falsifiable": {"const": true},
+            "advances": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"enum": ["source_specificity", "withdrawal_resistance", "recurrence", "transfer", "broader_regime_validity", "native_expression"]},
+              "uniqueItems": true
+            },
+            "rationale": {"$ref": "#/$defs/non_empty_string"}
+          },
+          "allOf": [
+            {
+              "if": {"properties": {"status": {"const": "applicable"}}, "required": ["status"]},
+              "then": {"required": ["same_causal_question", "function_not_proxy", "one_bounded_change", "preserves_prior_result", "falsifiable", "advances"]},
+              "else": {"not": {"anyOf": [{"required": ["same_causal_question"]}, {"required": ["function_not_proxy"]}, {"required": ["one_bounded_change"]}, {"required": ["preserves_prior_result"]}, {"required": ["falsifiable"]}, {"required": ["advances"]}]}}
+            }
+          ],
+          "additionalProperties": false
+        },
+        "claim_boundary_ref": {"$ref": "#/$defs/id"},
+        "blocked_claims": {"$ref": "#/$defs/string_array"},
+        "debt_refs": {"$ref": "#/$defs/id_array"},
+        "extensions": {"$ref": "#/$defs/extensions"}
+      },
       "additionalProperties": false
     },
     "profile_registry": {

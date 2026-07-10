@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.23
+**Baseline revision:** 0.24
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.23 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.24 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | Freeze complete; review open | P1-GATE | P1-I5-GATE passed; R2 pending |
+| Phase 1 — AE01 contract freeze | Revision 0.24 refreeze complete; review open | P1-GATE | P1-I3 through P1-I5 revised and passed; R2 pending |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -60,7 +60,7 @@ AE01 ladder dashboard:
 | --- | --- | --- |
 | AE01-C0 | Initialized, no atlas claim | Assigned at P1-I2; no positive evidence |
 | AE01-C1 | Source inventory and consumption boundaries accepted | Not assigned |
-| AE01-C2 | Lane schemas, controls, and claim guards frozen | Not assigned |
+| AE01-C2 | Lane schemas, controls, claim guards, metric/calibration semantics, and developmental interpretation frozen | Not assigned |
 | AE01-C3 | All required lane records classified | Not assigned |
 | AE01-C4 | Cross-lane requirements and dependencies synthesized | Not assigned |
 | AE01-C5 | Controls, debt, failure, and non-selection gates passed | Not assigned |
@@ -483,6 +483,9 @@ Required common contracts:
 - [x] Evidence-use tier, shared-profile resolution, and fully materialized
   manifest contract.
 - [x] Human-readable report projection contract.
+- [x] Primary metric-sheet and candidate-blind metric-calibration contracts.
+- [x] First-class developmental-interpretation contract.
+- [x] Terminal-to-developmental-interpretation reference contract.
 
 Pattern-card required fields:
 
@@ -517,6 +520,9 @@ Pattern-card required fields:
 - [x] Claim ceiling, blocked relabels, and N31+ implication.
 - [x] Terminal classification, stopping condition, closure evidence, and clear
   separation of scientific result from incomplete or unavailable execution.
+- [x] Per-seed threshold relation, boundary ladder, expected/adjacent/
+  unexpected properties, support status, classification value, two-axis
+  reading, blocked claims, and falsifiable next move.
 
 Lane-registry required fields:
 
@@ -539,7 +545,9 @@ Exit gate `P1-I3-GATE`:
 - [x] Narrative reports cannot carry stronger claims than machine records.
 - [x] Missing required evidence fails closed.
 - [x] Contract versions and compatibility behavior are explicit.
-- [x] `P1-I3-GATE` passed. Evidence:
+- [x] Schema `1.1.0` explicitly supersedes `1.0.0` for new records without
+  silently migrating retained history.
+- [x] `P1-I3-GATE` passed after D-038 reopening. Evidence:
   `experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/common-contract.md`,
   `experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/schemas/ae01-contract.schema.json`,
   and
@@ -602,10 +610,33 @@ Required failure classifications:
 - [x] Regime fragmentation.
 - [x] Dormancy ambiguity.
 
+Required developmental interpretation:
+
+- [x] Separate execution-validity, claim-safety, and interpretive scientific
+  gates.
+- [x] Freeze `robust_aligned`, `narrow_aligned`, `resolution_limited`,
+  `mixed_direction`, `narrow_counter`, `robust_counter`,
+  `resolution_unknown`, and `not_applicable` meanings.
+- [x] Define “narrow” only relative to a frozen candidate-blind resolution
+  band; prohibit intuitive use when resolution is unknown.
+- [x] Freeze five cumulative boundary rungs for every stable lane.
+- [x] Preserve expected, adjacent, and unexpected expressed properties.
+- [x] Record separate becoming and development readings for every completed
+  result.
+- [x] Freeze T0-through-T4 classification value and prevent T0 from organizing
+  another implementation iteration.
+- [x] Freeze allowed next moves and the function-not-proxy local-optimization
+  guard.
+- [x] Treat scientific refinement or an alternative as a new preregistration,
+  never an infrastructure retry or retroactive rescue.
+- [x] Preserve non-selection as a ranking result rather than erasure of atlas
+  observations or next questions.
+
 Iteration boundary:
 
 ```text
-P1-I4 predeclares what would support, block, or downgrade a result.
+P1-I4 predeclares what would support, block, downgrade, or redescribe a result
+and how lower, adjacent, or unexpected classes remain visible.
 Controls must not be tuned after seeing lane conclusions without a recorded
 contract revision and rerun.
 ```
@@ -617,10 +648,14 @@ Exit gate `P1-I4-GATE`:
 - [x] Every unsafe relabel has a fail-closed control.
 - [x] Failure remains a valid catalog input rather than disappearing from the
   atlas.
+- [x] Threshold passage/failure cannot replace the lane boundary ladder or
+  developmental interpretation.
+- [x] Every allowed next move has a claim-safe authority and falsifier boundary.
 - [x] Iteration interpretation and P1-I5 implementation handoff recorded below.
 - [x] `P1-I4-GATE` passed. Evidence:
   `experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/README.md`
-  and its linked outcome, lane, synthesis, control, and failure contracts.
+  and its linked outcome, lane, synthesis, control, failure, and developmental-
+  interpretation contracts.
 
 #### P1-I4 iteration interpretation and implementation handoff
 
@@ -661,8 +696,9 @@ P1-I4 freezes these logical semantics, not runtime code. P1-I5 must:
 2. Materialize finite comparison matrices with exact configurations,
    thresholds, deterministic seeds, attempt limits, resource envelopes, and
    expected artifacts.
-3. Use the existing P1-I3 record shapes rather than invent a parallel result
-   schema.
+3. Use the explicitly versioned P1-I3 `1.1.0` metric-sheet, calibration, and
+   developmental-interpretation records rather than a parallel result schema
+   or authoritative extension prose.
 4. Require an explicit applicability disposition for every common control.
 5. Permit positive classification only from verified retained evidence with
    every mandatory control passed.
@@ -672,15 +708,26 @@ P1-I4 freezes these logical semantics, not runtime code. P1-I5 must:
    reports.
 8. Keep constructed mechanisms constructed unless an explicit native
    transition and rerun occurs.
-9. Block synthesis until all seven lane terminal records exist, then validate
-   independent lineage before counting cross-lane recurrence.
+9. Block synthesis until all seven linked terminal/developmental-interpretation
+   pairs exist, then validate independent lineage before counting cross-lane
+   recurrence.
 10. Enforce D-029 scoring and non-selection without scoring ineligible
     candidates or allowing qualitative intuition to become a silent override.
 11. Preserve the graph/PyGRC repository as read-only.
+12. Derive “narrow” and “robust” only from a frozen candidate-blind resolution
+    band while retaining every per-seed margin.
+13. Require a lane boundary ladder, support status, classification value,
+    two-axis reading, blocked claims, and falsifiable next move before terminal
+    synthesis.
+14. Permit bounded local refinement only under the function-not-proxy guard and
+    a new preregistration; otherwise require an alternative, new probe,
+    class/hypothesis revision, aim redescription, or explicit stop.
 
-Numeric thresholds, fixtures, seeds, and commands remain P1-I5 work because
-they depend on the tooling envelope. They must be frozen before `P1-GATE` and
-cannot be tuned after outcomes without a contract revision and affected rerun.
+Numeric threshold surfaces, formulas, fixtures, seeds, calibration procedures,
+and commands remain P1-I5 work because they depend on the tooling envelope.
+The candidate-blind procedure must freeze before `P1-GATE`; each resulting
+lane-local `delta` must freeze before candidate execution and cannot inspect or
+be tuned from candidate outcomes.
 
 ### P1-I5 — Artifact, tooling, and reconstruction freeze
 
@@ -715,6 +762,21 @@ Required work:
   transient storage for non-evidential runs but never omit identity validation.
 - [x] Add conformance fixtures proving Markdown meaning, JSON Schema shape, and
   Python semantic validation remain within their divided authority.
+- [x] Implement schema `1.1.0` metric-sheet, metric-calibration, and
+  developmental-interpretation records with terminal references.
+- [x] Freeze one primary metric sheet per lane with explicit numerator,
+  comparator, denominator, direction, seed pairing, and zero-denominator rule.
+- [x] Implement candidate-blind `delta` calculation from fixed calibration
+  seeds and block candidate execution until the lane sheet is frozen.
+- [x] Implement exact robust/narrow/resolution-limited/mixed/counter relation
+  derivation while preserving per-seed margins.
+- [x] Validate lane-specific cumulative boundary ladders and highest valid rung.
+- [x] Validate T0-through-T4 classification value, separate becoming/
+  development readings, blocked claims, next-move authority, and falsifier.
+- [x] Enforce the function-not-proxy guard for bounded local refinement and
+  require new preregistration for every scientific change.
+- [x] Require seven same-lane terminal/developmental-interpretation pairs
+  before synthesis.
 - [x] Verify all tooling and reconstruction paths preserve the read-only graph
   repository boundary.
 - [x] Add focused tests for all Phase 1 infrastructure.
@@ -740,9 +802,18 @@ Exit gate `P1-I5-GATE`:
   a classification or gate until promoted through verified D-027 retention.
 - [x] Missing, duplicate, stale, or reordered lane identities fail projection
   validation before P1-GATE.
+- [x] Candidate-blind calibration reconstructs deterministically and produces a
+  schema-valid calibration plus frozen metric sheet.
+- [x] Pending calibration produces only `resolution_unknown`; it cannot produce
+  “narrow,” “robust,” or candidate-execution authority.
+- [x] A threshold-relation mismatch, invalid T0 next move, or unguarded local
+  refinement fails semantic validation.
+- [x] Terminal synthesis fails when any developmental interpretation is
+  missing, duplicated, unresolved, or belongs to another lane.
 - [x] Iteration interpretation and P1-GATE implementation handoff recorded below.
 - [x] `P1-I5-GATE` passed. Evidence: P1-I5 tooling contract, profiles,
-  execution policy, conformance fixtures, experiment-local scripts, and 28
+  execution/interpretation policies, metric sheets, conformance fixtures,
+  experiment-local scripts, and 32
   focused passing tests.
 
 #### P1-I5 iteration interpretation and implementation handoff
@@ -751,10 +822,11 @@ Exit gate `P1-I5-GATE`:
 
 **Status:** self-audited infrastructure closeout; no evidential lane result
 
-P1-I5 turns the Phase 1 contracts into executable rejection boundaries. It is
-not an ecology implementation: it makes invalid evidence, claims, paths,
-runtime substitutions, projections, manifests, reports, and synthesis entry
-fail deterministically before they can look like atlas results.
+P1-I5 turns the Phase 1 contracts into executable validity, claim-safety, and
+interpretive boundaries. It is not an ecology implementation: invalid
+evidence, claims, paths, runtime substitutions, projections, manifests,
+reports, and synthesis entry fail deterministically, while scientifically valid
+narrow, mixed, counter, lower-rung, or unexpected observations remain visible.
 
 The infrastructure has four interpreted roles:
 
@@ -767,14 +839,15 @@ The infrastructure has four interpreted roles:
 3. **Runtime honesty:** artifact inspection remains non-runtime; a live request
    imports the explicitly available local PyGRC, validates exact identity and
    public surfaces, emits a receipt on failure, and never falls back.
-4. **Finite execution:** seven cells per lane, three live seeds, bounded
-   attempts/resources, strict positive directional margin, full mandatory
-   control/signature passage, and fixed synthesis/non-selection gates prevent
-   open-ended tuning.
+4. **Finite observation-first execution:** seven cells per lane, three live
+   seeds, bounded attempts/resources, frozen threshold anchors, and fixed
+   synthesis/non-selection rules prevent open-ended tuning while explicit
+   resolution, boundary, support, and classification-value ladders preserve
+   what the system actually expresses.
 
 Implementation details:
 
-- Tooling version `1.0.0` is experiment-local in `scripts/ae01_tooling.py` with
+- Tooling version `1.1.0` is experiment-local in `scripts/ae01_tooling.py` with
   the `scripts/ae01.py` command entry point; no distribution metadata or
   reusable `src/` surface was added.
 - The bootstrap is Python `>=3.11` with ephemeral pinned
@@ -782,7 +855,7 @@ Implementation details:
 - The shared profile registry contains versioned environment, command,
   dependency, and resource profiles; live realization profiles remain
   lane-local and explicit.
-- The finite policy contains 49 comparison cells, seeds `101`, `211`, and
+- The finite policy contains 49 comparison cells, candidate seeds `101`, `211`, and
   `307` for live cells, one attempt per seed, one infrastructure retry,
   120-second/512-MiB/256-MiB envelopes, nineteen resolved common controls per
   lane, five lane controls per lane, and eight non-selection conditions. Every
@@ -790,21 +863,30 @@ Implementation details:
   resolved cell carries its deterministic configuration ID, artifact roles,
   and success/invalid/infrastructure-failure criteria. The resolved policy
   digest is
-  `4f08613549aacaead12ec67ab2c060cc8616e6766bc6e8f9ae5cf519bda63cc4`.
-- Five valid fixtures cover empty ranking, non-runtime inspection, conceptual
-  source denial, empty resolved manifest, and unavailable realization. Three
-  invalid fixtures cover missing shape, incompatible version, and constructed
-  mechanism relabeled as graph evidence.
-- Twenty-eight focused tests pass, including missing/duplicate/stale/reordered
+  `9a27dd99dfe85f35e137263100d7f0bc6ac957ca13a1c9a13e5adae3205ed231`.
+- Seven primary metric sheets define the exact normalized comparison surfaces.
+  Candidate-blind calibration seeds `19`, `43`, `71`, `109`, and `163` compute
+  `delta`; candidate cells remain blocked until their lane-local frozen sheet
+  and registration exist.
+- The retained infrastructure-only Lane 1 calibration fixture input reconstructs calibration ID
+  `ae01:metric-calibration:f13ffc3678c720f4` with `delta=0.04`. Margins
+  `0.08`, `0.03`, and `0.06` classify as `narrow_aligned`; the same margins
+  against the pending sheet classify only as `resolution_unknown` even though
+  the strict zero threshold passes.
+- Seven valid fixtures cover the original infrastructure cases plus metric
+  calibration and narrow scaffold-dependent interpretation. Four invalid
+  fixtures additionally cover a machine/claimed threshold-relation mismatch.
+- Thirty-two focused tests pass, including missing/duplicate/stale/reordered
   lane projections, tier/claim rejection, duplicate reconstruction, report
   authority, explicit runtime-profile state, missing/incompatible runtime,
-  manifest realization resolution, D-029 selection robustness, and read-only
-  tree mutation.
+  manifest realization resolution, D-029 selection robustness, resolution
+  calibration, all threshold-relation classes, guarded next moves, linked
+  synthesis interpretation, and read-only tree mutation.
 - Duplicate validation reconstructions were byte-identical. Their canonical
   `output_digest` is
-  `9a5ea60d1fd42c76624d7e778b9646c90229dbb428123bf79299e843eabe1601`;
+  `560f2855ebd424d00f4b96117c5986dfcdea8e8b7253eafc4e48683e5717607b`;
   exact-file SHA-256 is
-  `63654e70c229d122e6799394cbb9047fcbf300012cf24de36ce21560b70f5fb6`.
+  `a36c147c084fb70cdf0adab980944e7f7b54bd1b1b0bc2aec5d32d325a530bde`.
 - Declared-unavailable and import-missing PyGRC live requests both fail before
   state execution, with `pygrc:unavailable`, no fallback, no machine-local
   path, and graph-write flag false. Available/enabled profile state, execution
@@ -816,6 +898,15 @@ Infrastructure success establishes contract enforceability only. It does not
 support a lane, composition, primitive, building block, PyGRC compatibility on
 another machine, or N31+ selection. Review R2 and `P1-GATE` are next;
 `AE01-C1` and `AE01-C2` remain unassigned until that review.
+
+Revision 0.24 specifically corrects the possible binary reading of revision
+0.23. Thresholds remain frozen and cannot be tuned after candidate outcomes,
+but they no longer decide whether an observation matters. A below-threshold
+result may expose a lower, adjacent, counter-directional, unexpected, reusable,
+or generative class. A passing result may remain narrow, resolution-limited,
+scaffold-dependent, proxy-like, or blocked at a lower rung. The terminal label
+summarizes this result for synthesis only after the first-class developmental
+interpretation records both axis readings and a falsifiable next move.
 
 ### Phase 1 exit gate `P1-GATE`
 
@@ -832,7 +923,9 @@ another machine, or N31+ selection. Review R2 and `P1-GATE` are next;
 Phase 1 boundary:
 
 ```text
-Passing P1-GATE authorizes lane execution only.
+Passing P1-GATE authorizes candidate-blind calibration and lane registration
+only. Candidate execution requires the lane-local resolution/registration
+gate.
 It does not support an atlas pattern, composition, N31 candidate, canonical
 specification, or general source implementation.
 ```
@@ -844,6 +937,12 @@ specification, or general source implementation.
 Every lane iteration below MUST complete the same minimum work:
 
 - [ ] Confirm all declared input sources and digests.
+- [ ] Run the candidate-blind matched-null calibration and retain its
+  schema-valid calibration record.
+- [ ] Freeze the lane's primary metric sheet `delta`; do not inspect candidate
+  outcomes during calibration.
+- [ ] Pass the lane-local registration gate for exact implementation,
+  realization profile, cells, controls, artifacts, and interpretation refs.
 - [ ] Populate the complete pattern-card contract.
 - [ ] Separate N30-supported and ecology-extrapolated legs.
 - [ ] Record the parent basin and effect on parent closure.
@@ -855,6 +954,15 @@ Every lane iteration below MUST complete the same minimum work:
 - [ ] Generate a machine artifact and matching human-readable report.
 - [ ] Validate manifest, digest, portable paths, and unsafe-claim flags.
 - [ ] Preserve negative and blocked rows in the atlas.
+- [ ] Derive and retain every per-seed threshold relation without scalar
+  collapse or intuitive narrow/robust wording.
+- [ ] Complete every lane boundary rung and record the highest valid rung.
+- [ ] Preserve expected, adjacent, and unexpected properties plus support and
+  classification-value status.
+- [ ] Record separate becoming/development readings, blocked claims, and one
+  falsifiable next move.
+- [ ] If refinement is proposed, pass the function-not-proxy guard and create a
+  new preregistration rather than consuming the infrastructure retry.
 
 Common lane boundary:
 
@@ -868,10 +976,13 @@ or regime claims.
 Lane execution policy:
 
 ```text
-After P1-GATE, P2-I1 through P2-I7 may execute independently or in parallel.
+After P1-GATE, P2-I1 through P2-I7 may calibrate and register independently or
+in parallel. Candidate execution begins only after the lane-local resolution/
+registration gate.
 No lane may consume another lane's conclusion as evidence.
 P2-I8 is the first iteration allowed to compare and synthesize lane results,
-and it requires every lane exit gate to pass.
+and it requires every lane exit gate plus all seven linked terminal/
+developmental-interpretation pairs to pass.
 ```
 
 ### P2-I1 — Minimal shared-medium niche formation lane
@@ -1676,13 +1787,14 @@ Phase 4.
 | Evidence provenance and source roles | Yes | Yes | Negative/compatibility | P1-I5 semantic guards and negative fixtures complete |
 | Hypothesis, control, and failure vocabulary | Yes | Yes | ID/outcome/control coverage | P1-I5 closed vocabularies and policy resolution tests complete |
 | Debt and claim-boundary model | Yes | Yes | Fail-closed claim tests | P1-I5 tier, terminal, claim, and synthesis guards complete |
+| Metric resolution and developmental interpretation | Yes | Yes | Candidate-blind calibration/relation/ladder/next-move checks | P1-I3 through P1-I5 revision 0.24 records, policy, seven lane sheets, and semantic tests complete; evidential calibration remains Phase 2 work |
 | Artifact manifests and schema restoration | Yes | Yes | Replay/round-trip | P1-I5 manifest generation, schema validation, and reconstruction checks complete |
 | LGRC runtime/artifact bridge | Yes | Conditional modes | Integration/read-only | P1-I5 binding/receipt and read-only guards complete; lane realization profiles remain Phase 2 work |
 | Primitive catalog implementations | Per promotion queue | Conditional | Contract/replay/transfer | Blocked by AE01 |
 | Building-block implementations | Per promotion queue | Conditional | Composition/control | Blocked by AE01 |
 | Motif implementations | Dedicated motif contract | Conditional | Combined controls | Blocked by blocks |
 | Regime/domain probes | Dedicated regime contract | Conditional | Persistence/recovery | Blocked by motifs |
-| Telemetry and reports | Yes | Yes for admitted surfaces | Artifact comparison | P1-I5 deterministic report assembly implemented; evidential lane reports remain Phase 2 work |
+| Telemetry and reports | Yes | Yes for admitted surfaces | Artifact comparison | P1-I5 deterministic report assembly and terminal-to-interpretation linkage implemented; evidential lane reports remain Phase 2 work |
 | Examples and public documentation | Yes | Conditional | Execution/link checks | Pending |
 
 ## 11. Required indexes and traceability records
@@ -1750,9 +1862,9 @@ Use this section when checking a conditional item as deferred.
 | P0-GATE | Revision 0.17; P0-I1 through P0-I3 passed; Review R1 accepted as D-037 with no P0-I2 reopening | 2026-07-10 | Accepted by project owner; passed |
 | P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
 | P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-I3-GATE | Revision 0.21 common meaning contract, JSON Schema Draft 2020-12 bundle, and controlling machine lane registry | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-I4-GATE | Revision 0.22 hypothesis index and linked outcome/stopping, lane, synthesis, control, and failure contracts | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-I5-GATE | Revision 0.23 tooling contract, profiles, finite execution policy, conformance fixtures, scripts, 28 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
+| P1-I3-GATE | Revision 0.24 common contract and schema `1.1.0`; twenty record shapes including metric sheet, candidate-blind calibration, developmental interpretation, and required terminal reference | 2026-07-10 | Reopened by D-038, revised, self-audited, and passed pending R2 |
+| P1-I4-GATE | Revision 0.24 hypotheses plus developmental-interpretation contract, hard-gate partition, exact threshold relations, seven lane ladders, classification-value ladder, and next-move discipline | 2026-07-10 | Reopened by D-038, revised, self-audited, and passed pending R2 |
+| P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Reopened by D-038, revised, self-audited, and passed pending R2 |
 | P1-GATE | Pending | — | Open; Review R2 and AE01-C1/C2 disposition required |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
@@ -1820,7 +1932,8 @@ Change log:
 | CL-020 | 2026-07-10 | Revision 0.20 passed P1-I2 with a complete atlas content outline, stable lane IDs, source motivations, ontology and placement rules, debt/failure/terminal taxonomies, stopping conditions, and aligned narrative projections. `AE01-C0` assigned without positive evidence. | P1-I2-GATE onward | Superseded by CL-021 |
 | CL-021 | 2026-07-10 | Revision 0.21 passed P1-I3 with one normative meaning contract, a discriminated schema bundle for seventeen closed record shapes, and the controlling seven-lane registry. Semantic validators and automated projection checks remain P1-I5 work; no positive evidence or higher rung opened. | P1-I3-GATE onward | Superseded by CL-022 |
 | CL-022 | 2026-07-10 | Revision 0.22 passed P1-I4 with nine preregistered hypotheses, finite outcome and stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and a bounded P1-I5 implementation handoff. No lane executed, no result was assigned, and `AE01-C0` remains the ceiling. | P1-I4-GATE onward | Superseded by CL-023 |
-| CL-023 | 2026-07-10 | Revision 0.23 passed P1-I5 with PyGRC-compatible canonicalization, semantic and schema guards, portable paths, deterministic IDs, resolved profiles and manifests, a finite 49-cell policy, runtime receipts, report assembly, validated lane projections, 28 focused tests, duplicate reconstruction, and fail-closed missing-runtime evidence. No lane executed and Review R2 remains open before P1-GATE. | P1-I5-GATE onward | Active |
+| CL-023 | 2026-07-10 | Revision 0.23 passed P1-I5 with PyGRC-compatible canonicalization, semantic and schema guards, portable paths, deterministic IDs, resolved profiles and manifests, a finite 49-cell policy, runtime receipts, report assembly, validated lane projections, 28 focused tests, duplicate reconstruction, and fail-closed missing-runtime evidence. No lane executed and Review R2 remains open before P1-GATE. | P1-I5-GATE onward | Superseded by CL-024 |
+| CL-024 | 2026-07-10 | Revision 0.24 accepted D-038, preserved revision 0.23 in commit `d240269`, and reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric/calibration/interpretation records, candidate-blind resolution, exact threshold relations, lane boundary ladders, two-axis readings, classification-value and guarded-next-move semantics, 32 focused tests, and linked synthesis entry. No lane or calibration executed as evidence; `AE01-C0` remains the ceiling. | P1-I3-GATE onward | Active |
 
 ## 17. Current next actions
 
@@ -1830,4 +1943,5 @@ The next unchecked actions in dependency order are:
 2. [ ] Disposition `AE01-C1`, `AE01-C2`, and any Review R2 findings without
    opening evidential conclusions.
 3. [ ] Pass `P1-GATE` only if the full contract remains claim-safe and
-   reconstructable, then open Phase 2 lane registration and execution.
+   reconstructable, then open candidate-blind calibration and lane
+   registration; keep candidate execution behind each lane-local gate.

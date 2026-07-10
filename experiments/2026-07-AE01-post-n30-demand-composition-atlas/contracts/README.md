@@ -1,13 +1,14 @@
 # AE01 Contracts
 
-This directory owns the versioned experiment-local contracts frozen by P1-I3.
+This directory owns the versioned experiment-local contracts frozen by P1-I3
+and explicitly revised at revision 0.24.
 They govern AE01 records without becoming canonical project specifications.
 
 ## Frozen contract set
 
 - [common-contract.md](common-contract.md) is the normative meaning contract.
 - [schemas/ae01-contract.schema.json](schemas/ae01-contract.schema.json) is the
-  JSON Schema Draft 2020-12 persisted-shape contract at version `1.0.0`.
+  JSON Schema Draft 2020-12 persisted-shape contract at version `1.1.0`.
 - [lane-registry.json](lane-registry.json) is the controlling machine registry
   for the seven stable lanes.
 - [source-inventory.md](source-inventory.md) is the accepted P1-I1 source
@@ -16,7 +17,7 @@ They govern AE01 records without becoming canonical project specifications.
 
 The one schema bundle uses a discriminated `record_type` envelope so common
 vocabularies and compatibility rules do not drift across many independent
-schema files. It defines these seventeen record shapes:
+schema files. It defines these twenty record shapes:
 
 | Contract surface | Record type |
 | --- | --- |
@@ -37,6 +38,13 @@ schema files. It defines these seventeen record shapes:
 | reconstructed artifact manifest | `artifact_manifest` |
 | shared-profile registry and resolution | `profile_registry` |
 | generated or assembled report projection | `report_projection` |
+| primary metric formula and resolution policy | `metric_sheet` |
+| candidate-blind resolution calibration | `metric_calibration` |
+| threshold, boundary-rung, and two-axis reading | `developmental_interpretation` |
+
+Revision `1.1.0` requires every terminal classification to reference a
+developmental interpretation. Existing retained `1.0.0` records remain
+versioned history and do not migrate silently.
 
 ## Authority and validation boundary
 
@@ -48,8 +56,9 @@ without redefining either authority.
 The registry records validator-backed `validated` projection status. P1-I5
 adds [conformance fixtures](fixtures/README.md), canonical serialization,
 deterministic IDs and digests, portable-path checks, strict runtime receipts,
-resolved manifests, and reconstruction commands. The complete implementation
-boundary is in the
+resolved manifests, metric calibration, threshold-relation derivation,
+developmental-interpretation guards, and reconstruction commands. The
+complete implementation boundary is in the
 [P1-I5 tooling contract](../implementation/P1-I5-tooling-contract.md).
 
 ## Freeze verification

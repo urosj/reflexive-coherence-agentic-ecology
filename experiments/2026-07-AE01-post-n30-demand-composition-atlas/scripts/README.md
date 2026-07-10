@@ -36,6 +36,32 @@ modifying the artifact.
 uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py digest --input outputs/ae01-resolved-policy.json
 ```
 
+### `freeze-resolution`
+
+Consumes a pending primary metric sheet and candidate-blind matched-null input.
+It writes a schema-valid calibration record and frozen metric sheet with:
+
+```text
+delta = max(measurement resolution, maximum absolute matched-null margin)
+```
+
+The input seeds must exactly match the sheet's calibration seed profile. The
+command fails if candidate blindness, seeds, or resolution status differ.
+
+```bash
+uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py freeze-resolution --metric-sheet experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L01.json --calibration-input experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/fixtures/inputs/l01-candidate-blind-calibration-input.json --calibration-output outputs/ae01-l01-metric-calibration.json --frozen-sheet-output outputs/ae01-l01-frozen-metric-sheet.json
+```
+
+### `classify-margin`
+
+Derives the threshold relation from a frozen sheet while preserving every
+seed margin. A pending sheet produces `resolution_unknown`, never intuitive
+“narrow” or “robust” wording.
+
+```bash
+uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py classify-margin --metric-sheet outputs/ae01-l01-frozen-metric-sheet.json --margin 101:0.08 --margin 211:0.03 --margin 307:0.06
+```
+
 ### `runtime-receipt`
 
 Requires a lane-local `realization_profile` record, explicit live class, run

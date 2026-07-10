@@ -17,14 +17,17 @@ from ae01_tooling import (
     assemble_report,
     build_artifact_manifest,
     build_runtime_binding_receipt,
+    classify_threshold_relation,
     digest_canonical_data,
     digest_file,
     find_repository_root,
+    freeze_metric_resolution,
     load_json,
     pretty_json_dumps,
     resolve_execution_policy,
     semantic_file_digest,
     validate_execution_policy,
+    validate_interpretation_policy,
     validate_lane_projections,
     validate_record,
     validate_portable_path,
@@ -37,6 +40,13 @@ SCHEMA = EXPERIMENT / "contracts/schemas/ae01-contract.schema.json"
 REGISTRY = EXPERIMENT / "contracts/lane-registry.json"
 PROFILES = EXPERIMENT / "configs/p1_i5_profiles.json"
 EXECUTION_POLICY = EXPERIMENT / "configs/p1_i5_execution_policy.json"
+INTERPRETATION_POLICY = (
+    EXPERIMENT / "configs/p1_i4_developmental_interpretation_policy.json"
+)
+METRIC_SHEETS = EXPERIMENT / "contracts/metric-sheets"
+INTERPRETATION_CLAIM = (
+    EXPERIMENT / "contracts/phase1-interpretation-claim-boundary.json"
+)
 FIXTURES = EXPERIMENT / "contracts/fixtures"
 
 
@@ -50,11 +60,25 @@ def _validate_phase1(root: Path) -> dict[str, Any]:
     registry = load_json(root / REGISTRY)
     profiles = load_json(root / PROFILES)
     policy = load_json(root / EXECUTION_POLICY)
+    interpretation_policy = load_json(root / INTERPRETATION_POLICY)
+    interpretation_claim = load_json(root / INTERPRETATION_CLAIM)
 
     validate_record(registry, schema)
     validate_record(profiles, schema)
+    validate_record(interpretation_claim, schema)
     validate_lane_projections(registry, root)
     validate_execution_policy(policy)
+    validate_interpretation_policy(interpretation_policy)
+    metric_sheet_paths = sorted((root / METRIC_SHEETS).glob("*.json"))
+    if len(metric_sheet_paths) != 7:
+        raise ContractError("exactly seven primary metric sheets are required")
+    metric_sheets = [load_json(path) for path in metric_sheet_paths]
+    for metric_sheet in metric_sheets:
+        validate_record(metric_sheet, schema)
+    if [item["record"]["lane_id"] for item in metric_sheets] != [
+        f"AE01-L0{index}" for index in range(1, 8)
+    ]:
+        raise ContractError("metric sheets must be complete and lane-ordered")
     first = resolve_execution_policy(policy)
     second = resolve_execution_policy(policy)
     if digest_canonical_data(first) != digest_canonical_data(second):
@@ -80,11 +104,12 @@ def _validate_phase1(root: Path) -> dict[str, Any]:
 
     return {
         "artifact_role": "p1_i5_infrastructure_validation",
-        "contract_revision": "0.23",
+        "contract_revision": "0.24",
         "evidence_effect": "none_infrastructure_only",
         "valid_fixture_count": len(valid_paths),
         "invalid_fixture_count": len(invalid_paths),
         "lane_projection_count": len(registry["record"]["projection_targets"]),
+        "metric_sheet_count": len(metric_sheets),
         "resolved_execution_policy_digest": first["resolved_policy_digest"],
         "checks": {
             "schema_and_semantics": "passed",
@@ -92,6 +117,8 @@ def _validate_phase1(root: Path) -> dict[str, Any]:
             "duplicate_resolution": "passed",
             "negative_fixtures": "passed",
             "portable_paths": "passed",
+            "developmental_interpretation_policy": "passed",
+            "candidate_execution_resolution_gate": "passed_pending_calibration",
         },
         "claim_boundary": {
             "positive_atlas_evidence_opened": False,
@@ -216,6 +243,62 @@ def command_report(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_freeze_resolution(args: argparse.Namespace) -> int:
+    root = find_repository_root()
+    schema = load_json(root / SCHEMA)
+    metric_sheet = load_json(_path(root, args.metric_sheet))
+    calibration_input = load_json(_path(root, args.calibration_input))
+    validate_record(metric_sheet, schema)
+    calibration, frozen_sheet = freeze_metric_resolution(
+        metric_sheet, calibration_input
+    )
+    validate_record(calibration, schema)
+    validate_record(frozen_sheet, schema)
+    write_json(_path(root, args.calibration_output), calibration)
+    write_json(_path(root, args.frozen_sheet_output), frozen_sheet)
+    return 0
+
+
+def _parse_seed_margin(value: str) -> dict[str, int | float]:
+    try:
+        seed_text, margin_text = value.split(":", 1)
+        return {"seed": int(seed_text), "margin": float(margin_text)}
+    except ValueError as exc:
+        raise ContractError("margin must use SEED:VALUE syntax") from exc
+
+
+def command_classify_margin(args: argparse.Namespace) -> int:
+    root = find_repository_root()
+    schema = load_json(root / SCHEMA)
+    metric_sheet = load_json(_path(root, args.metric_sheet))
+    validate_record(metric_sheet, schema)
+    payload = metric_sheet["record"]
+    resolution = payload["resolution_policy"]
+    margins = [_parse_seed_margin(value) for value in args.margin]
+    frozen = resolution["status"] == "frozen"
+    delta = resolution["delta"].get("value") if frozen else None
+    relation = classify_threshold_relation(margins, delta=delta)
+    result = {
+        "metric_sheet_ref": payload["metric_sheet_id"],
+        "seed_margins": margins,
+        "resolution_status": "frozen" if frozen else "unknown",
+        "relation": relation,
+        "threshold_passed": all(item["margin"] > 0 for item in margins),
+        "rationale": (
+            "Relation derived from the frozen resolution band"
+            if frozen
+            else "Resolution is not calibrated; narrow or robust language is blocked"
+        ),
+    }
+    if frozen:
+        result["delta"] = delta
+        result["calibration_artifact_ref"] = resolution["delta"][
+            "calibration_artifact_ref"
+        ]
+    sys.stdout.write(pretty_json_dumps(result))
+    return 0
+
+
 def parser() -> argparse.ArgumentParser:
     result = argparse.ArgumentParser(description=__doc__)
     commands = result.add_subparsers(dest="command", required=True)
@@ -257,6 +340,18 @@ def parser() -> argparse.ArgumentParser:
     report.add_argument("--output")
     report.add_argument("--preview-digest", action="store_true")
     report.set_defaults(handler=command_report)
+
+    freeze_resolution = commands.add_parser("freeze-resolution")
+    freeze_resolution.add_argument("--metric-sheet", required=True)
+    freeze_resolution.add_argument("--calibration-input", required=True)
+    freeze_resolution.add_argument("--calibration-output", required=True)
+    freeze_resolution.add_argument("--frozen-sheet-output", required=True)
+    freeze_resolution.set_defaults(handler=command_freeze_resolution)
+
+    classify_margin = commands.add_parser("classify-margin")
+    classify_margin.add_argument("--metric-sheet", required=True)
+    classify_margin.add_argument("--margin", action="append", required=True)
+    classify_margin.set_defaults(handler=command_classify_margin)
 
     return result
 

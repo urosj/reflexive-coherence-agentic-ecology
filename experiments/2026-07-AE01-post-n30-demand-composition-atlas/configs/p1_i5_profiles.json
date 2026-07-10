@@ -158,6 +158,52 @@
         }
       },
       {
+        "profile_id": "ae01-command-freeze-resolution-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "run",
+            "--with",
+            "jsonschema==4.26.0",
+            "python",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+            "freeze-resolution",
+            "--metric-sheet",
+            "LOCAL_METRIC_SHEET",
+            "--calibration-input",
+            "LOCAL_CANDIDATE_BLIND_CALIBRATION_INPUT",
+            "--calibration-output",
+            "outputs/LOCAL_CALIBRATION.json",
+            "--frozen-sheet-output",
+            "outputs/LOCAL_FROZEN_METRIC_SHEET.json"
+          ],
+          "command": "uv",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "ae01-command-classify-margin-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "run",
+            "--with",
+            "jsonschema==4.26.0",
+            "python",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+            "classify-margin",
+            "--metric-sheet",
+            "LOCAL_FROZEN_METRIC_SHEET",
+            "--margin",
+            "LOCAL_SEED_AND_MARGIN"
+          ],
+          "command": "uv",
+          "working_directory": "."
+        }
+      },
+      {
         "profile_id": "ae01-dependencies-phase1-v1",
         "profile_type": "dependency",
         "profile_version": "1.0.0",
@@ -190,5 +236,5 @@
     ]
   },
   "record_type": "profile_registry",
-  "schema_version": "1.0.0"
+  "schema_version": "1.1.0"
 }

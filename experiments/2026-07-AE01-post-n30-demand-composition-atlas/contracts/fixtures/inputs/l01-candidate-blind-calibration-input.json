@@ -1,0 +1,10 @@
+{
+  "candidate_blind": true,
+  "seed_margins": [
+    {"matched_null_margin": 0.01, "seed": 19},
+    {"matched_null_margin": -0.04, "seed": 43},
+    {"matched_null_margin": 0.02, "seed": 71},
+    {"matched_null_margin": -0.03, "seed": 109},
+    {"matched_null_margin": 0.01, "seed": 163}
+  ]
+}

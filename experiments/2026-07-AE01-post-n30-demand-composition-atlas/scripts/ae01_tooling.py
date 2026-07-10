@@ -22,8 +22,8 @@ from types import MappingProxyType, ModuleType
 from typing import Any
 
 
-SCHEMA_VERSION = "1.0.0"
-TOOLING_VERSION = "1.0.0"
+SCHEMA_VERSION = "1.1.0"
+TOOLING_VERSION = "1.1.0"
 DIGEST_ALGORITHM = "sha256"
 
 LANE_IDS = tuple(f"AE01-L0{index}" for index in range(1, 8))
@@ -37,6 +37,61 @@ LANE_CONTROL_IDS = {
     lane_id: tuple(f"{lane_id}-CTRL-{index:02d}" for index in range(1, 6))
     for lane_id in LANE_IDS
 }
+METRIC_IDS = {
+    "AE01-L01": "later_formation_or_susceptibility_normalized_margin",
+    "AE01-L02": "combined_pool_history_normalized_margin",
+    "AE01-L03": "trace_conditioned_route_normalized_margin",
+    "AE01-L04": "support_conditioned_admissibility_normalized_margin",
+    "AE01-L05": "boundary_conditioned_exchange_normalized_margin",
+    "AE01-L06": "circulation_conditioned_eligibility_normalized_margin",
+    "AE01-L07": "parent_local_discriminator_separation_normalized_margin",
+}
+METRIC_SHEET_IDS = {
+    lane_id: f"ae01-{lane_id.casefold().split('-')[-1]}-primary-metric-v1"
+    for lane_id in LANE_IDS
+}
+BOUNDARY_LADDER_IDS = {
+    lane_id: f"ae01-{lane_id.casefold().split('-')[-1]}-boundary-ladder-v1"
+    for lane_id in LANE_IDS
+}
+BOUNDARY_RUNG_IDS = {
+    lane_id: tuple(f"{lane_id}-R{index:02d}" for index in range(1, 6))
+    for lane_id in LANE_IDS
+}
+THRESHOLD_RELATIONS = (
+    "robust_aligned",
+    "narrow_aligned",
+    "resolution_limited",
+    "mixed_direction",
+    "narrow_counter",
+    "robust_counter",
+    "resolution_unknown",
+    "not_applicable",
+)
+CLASSIFICATION_VALUE_RUNGS = (
+    "T0_observation_tag",
+    "T1_reusable_class",
+    "T2_generative_class",
+    "T3_operational_class",
+    "T4_theoretical_class",
+)
+NEXT_MOVE_DISPOSITIONS = (
+    "retain_current_implementation",
+    "bounded_local_refinement",
+    "alternative_realization",
+    "new_boundary_or_naturalization_probe",
+    "revise_working_class_or_hypothesis",
+    "redescribe_aim",
+    "stop_no_reusable_or_generative_value",
+)
+LOCAL_OPTIMIZATION_ADVANCES = (
+    "source_specificity",
+    "withdrawal_resistance",
+    "recurrence",
+    "transfer",
+    "broader_regime_validity",
+    "native_expression",
+)
 
 COMPARISON_GROUPS = (
     "reference",
@@ -683,6 +738,162 @@ def _validate_report_projection(payload: Mapping[str, Any]) -> list[str]:
     return issues
 
 
+def classify_threshold_relation(
+    seed_margins: Sequence[Mapping[str, Any]],
+    *,
+    delta: float | None,
+    applicable: bool = True,
+) -> str:
+    """Classify per-seed margins without turning the threshold into a veto."""
+
+    if not applicable:
+        if seed_margins:
+            raise ContractError("not-applicable metric relation cannot carry margins")
+        return "not_applicable"
+    if delta is None:
+        return "resolution_unknown"
+    if delta < 0 or not math.isfinite(delta):
+        raise ContractError("resolution delta must be finite and non-negative")
+    if not seed_margins:
+        raise ContractError("applicable metric relation requires per-seed margins")
+    seeds = [item.get("seed") for item in seed_margins]
+    if len(seeds) != len(set(seeds)):
+        raise ContractError("per-seed metric margins require unique seeds")
+    margins = [float(item["margin"]) for item in seed_margins]
+    if not all(math.isfinite(value) for value in margins):
+        raise ContractError("metric margins must be finite")
+    if all(value > delta for value in margins):
+        return "robust_aligned"
+    if all(abs(value) <= delta for value in margins):
+        return "resolution_limited"
+    if all(value > 0 for value in margins):
+        return "narrow_aligned"
+    if all(value < -delta for value in margins):
+        return "robust_counter"
+    if all(value < 0 for value in margins):
+        return "narrow_counter"
+    return "mixed_direction"
+
+
+def _validate_metric_sheet(payload: Mapping[str, Any]) -> list[str]:
+    issues: list[str] = []
+    lane_id = payload.get("lane_id")
+    if lane_id not in LANE_IDS:
+        return [f"unknown metric-sheet lane ID: {lane_id}"]
+    if payload.get("metric_sheet_id") != METRIC_SHEET_IDS[lane_id]:
+        issues.append(f"{lane_id}: metric-sheet ID does not match the freeze")
+    if payload.get("metric_id") != METRIC_IDS[lane_id]:
+        issues.append(f"{lane_id}: primary metric ID does not match the freeze")
+    if tuple(payload.get("relation_vocabulary", [])) != THRESHOLD_RELATIONS:
+        issues.append(f"{lane_id}: threshold relation vocabulary drifted")
+    resolution = payload.get("resolution_policy", {})
+    seeds = resolution.get("calibration_seed_profile", [])
+    if seeds != [19, 43, 71, 109, 163]:
+        issues.append(f"{lane_id}: calibration seed profile drifted")
+    delta = resolution.get("delta", {})
+    if resolution.get("status") == "frozen":
+        value = delta.get("value")
+        if value is None or value < resolution.get("measurement_resolution", math.inf):
+            issues.append(f"{lane_id}: frozen delta is below measurement resolution")
+    elif delta.get("status") != "pending":
+        issues.append(f"{lane_id}: pending resolution requires pending delta")
+    return issues
+
+
+def _validate_metric_calibration(payload: Mapping[str, Any]) -> list[str]:
+    issues: list[str] = []
+    margins = payload.get("seed_margins", [])
+    seeds = [item.get("seed") for item in margins]
+    if len(seeds) != len(set(seeds)):
+        issues.append("metric calibration seed IDs must be unique")
+    expected = max(
+        [float(payload.get("measurement_resolution", 0.0))]
+        + [abs(float(item.get("matched_null_margin", math.inf))) for item in margins]
+    )
+    if not math.isfinite(expected) or payload.get("delta") != expected:
+        issues.append("metric calibration delta does not match the frozen estimator")
+    return issues
+
+
+def _validate_developmental_interpretation(
+    payload: Mapping[str, Any],
+) -> list[str]:
+    issues: list[str] = []
+    lane_id = payload.get("lane_id")
+    if lane_id not in LANE_IDS:
+        return [f"unknown interpretation lane ID: {lane_id}"]
+    metric_refs: set[str] = set()
+    for relation in payload.get("metric_relations", []):
+        metric_ref = relation.get("metric_sheet_ref")
+        if metric_ref in metric_refs:
+            issues.append(f"duplicate metric relation: {metric_ref}")
+        metric_refs.add(metric_ref)
+        if metric_ref != METRIC_SHEET_IDS[lane_id]:
+            issues.append(f"{lane_id}: metric relation references the wrong sheet")
+        status = relation.get("resolution_status")
+        margins = relation.get("seed_margins", [])
+        applicable = status != "not_applicable"
+        derived = classify_threshold_relation(
+            margins,
+            delta=relation.get("delta") if status == "frozen" else None,
+            applicable=applicable,
+        )
+        if relation.get("relation") != derived:
+            issues.append(
+                f"{metric_ref}: relation {relation.get('relation')} does not match {derived}"
+            )
+        expected_threshold = bool(margins) and all(
+            float(item["margin"]) > 0 for item in margins
+        )
+        if relation.get("threshold_passed") is not expected_threshold:
+            issues.append(f"{metric_ref}: threshold_passed does not match margins")
+    rungs = payload.get("boundary_rungs", [])
+    rung_ids = [item.get("rung_id") for item in rungs]
+    if rung_ids != list(BOUNDARY_RUNG_IDS[lane_id]):
+        issues.append(f"{lane_id}: boundary ladder is missing, stale, or reordered")
+    reached = [
+        item.get("rung_id")
+        for item in rungs
+        if item.get("status") in ("reached", "partially_reached")
+    ]
+    highest = payload.get("highest_valid_rung", {})
+    if reached:
+        if highest.get("status") != "applicable" or highest.get("reference_id") != reached[-1]:
+            issues.append("highest valid rung does not match the reached ladder prefix")
+        reached_positions = [rung_ids.index(rung_id) for rung_id in reached]
+        if reached_positions != list(range(max(reached_positions) + 1)):
+            issues.append("boundary ladder rungs must form a cumulative prefix")
+    elif highest.get("status") == "applicable":
+        issues.append("highest valid rung cannot resolve when no rung was reached")
+    classification = payload.get("classification_value", {})
+    should_organize = classification.get("rung") != "T0_observation_tag"
+    if classification.get("organizes_next_iteration") is not should_organize:
+        issues.append("classification-value rung disagrees with iteration authority")
+    next_move = payload.get("next_move", {})
+    disposition = next_move.get("disposition")
+    requires_preregistration = disposition not in (
+        "retain_current_implementation",
+        "stop_no_reusable_or_generative_value",
+    )
+    if next_move.get("new_preregistration_required") is not requires_preregistration:
+        issues.append("next-move preregistration flag disagrees with disposition")
+    local_guard = payload.get("local_optimization_guard", {})
+    if disposition == "bounded_local_refinement":
+        if local_guard.get("status") != "applicable":
+            issues.append("bounded local refinement requires its optimization guard")
+    elif local_guard.get("status") != "not_applicable":
+        issues.append("local optimization guard applies only to bounded refinement")
+    if classification.get("rung") == "T0_observation_tag" and disposition not in (
+        "revise_working_class_or_hypothesis",
+        "redescribe_aim",
+        "stop_no_reusable_or_generative_value",
+    ):
+        issues.append("T0 observation tag cannot organize an implementation iteration")
+    if not payload.get("blocked_claims"):
+        issues.append("developmental interpretation requires blocked stronger claims")
+    return issues
+
+
 def validate_semantics(record: Mapping[str, Any]) -> None:
     """Apply semantic checks without redefining Markdown or schema authority."""
 
@@ -703,6 +914,9 @@ def validate_semantics(record: Mapping[str, Any]) -> None:
         "realization_profile": _validate_realization_profile,
         "runtime_binding_receipt": _validate_runtime_receipt,
         "report_projection": _validate_report_projection,
+        "metric_sheet": _validate_metric_sheet,
+        "metric_calibration": _validate_metric_calibration,
+        "developmental_interpretation": _validate_developmental_interpretation,
     }
     validator = validators.get(str(record_type))
     if validator is not None:
@@ -806,14 +1020,24 @@ def validate_execution_policy(policy: Mapping[str, Any]) -> None:
         issues.append("resource envelope does not match the P1-I5 freeze")
     if tuple(global_policy.get("expected_artifact_roles", [])) != EXPECTED_ARTIFACT_ROLES:
         issues.append("expected artifact roles do not match the P1-I5 freeze")
-    if global_policy.get("support_thresholds") != {
+    if global_policy.get("top_rung_anchors") != {
         "mandatory_control_pass_fraction": 1.0,
         "mandatory_signature_pass_fraction": 1.0,
         "minimum_directional_seed_fraction": 1.0,
         "minimum_transfer_contrast_pass_fraction": 2 / 3,
         "unsafe_flag_count_maximum": 0,
     }:
-        issues.append("support thresholds do not match the P1-I5 freeze")
+        issues.append("top-rung anchors do not match the P1-I5 freeze")
+    if (
+        global_policy.get("interpretation_policy_ref")
+        != "ae01-p1-i4-developmental-interpretation-policy"
+    ):
+        issues.append("execution policy does not reference the interpretation policy")
+    if (
+        global_policy.get("candidate_execution_precondition")
+        != "primary metric sheet delta is frozen by a candidate-blind calibration record"
+    ):
+        issues.append("candidate execution calibration precondition drifted")
     for criteria_name in (
         "success_criteria",
         "invalid_run_criteria",
@@ -834,6 +1058,10 @@ def validate_execution_policy(policy: Mapping[str, Any]) -> None:
         lane_id = f"AE01-L0{index}"
         if lane.get("hypothesis_id") != f"AE01-H-L0{index}":
             issues.append(f"{lane_id}: hypothesis mapping mismatch")
+        if lane.get("metric_sheet_ref") != METRIC_SHEET_IDS[lane_id]:
+            issues.append(f"{lane_id}: metric-sheet reference mismatch")
+        if lane.get("boundary_ladder_id") != BOUNDARY_LADDER_IDS[lane_id]:
+            issues.append(f"{lane_id}: boundary-ladder reference mismatch")
         cells = lane.get("comparison_cells", [])
         if len(cells) != 7:
             issues.append(f"{lane_id}: exactly seven frozen comparison cells required")
@@ -890,6 +1118,53 @@ def validate_execution_policy(policy: Mapping[str, Any]) -> None:
         raise ContractError(issues)
 
 
+def validate_interpretation_policy(policy: Mapping[str, Any]) -> None:
+    """Validate the non-binary P1-I4 interpretation and next-move freeze."""
+
+    issues: list[str] = []
+    if policy.get("policy_id") != "ae01-p1-i4-developmental-interpretation-policy":
+        issues.append("interpretation policy ID mismatch")
+    if policy.get("policy_version") != "1.0.0":
+        issues.append("interpretation policy version mismatch")
+    if policy.get("evidence_effect") != "none_interpretation_preregistration_only":
+        issues.append("interpretation policy cannot claim evidence")
+    relation_ids = [item.get("relation") for item in policy.get("threshold_relations", [])]
+    if relation_ids != list(THRESHOLD_RELATIONS):
+        issues.append("threshold relation order or vocabulary drifted")
+    value_rungs = [item.get("rung") for item in policy.get("classification_value_ladder", [])]
+    if value_rungs != list(CLASSIFICATION_VALUE_RUNGS):
+        issues.append("classification-value ladder drifted")
+    for item in policy.get("classification_value_ladder", []):
+        expected = item.get("rung") != "T0_observation_tag"
+        if item.get("organizes_next_iteration") is not expected:
+            issues.append("classification-value iteration authority drifted")
+    if policy.get("next_move_dispositions") != list(NEXT_MOVE_DISPOSITIONS):
+        issues.append("next-move dispositions drifted")
+    if policy.get("local_optimization_advances") != list(LOCAL_OPTIMIZATION_ADVANCES):
+        issues.append("local-optimization advances drifted")
+    lanes = policy.get("lane_ladders", [])
+    if [item.get("lane_id") for item in lanes] != list(LANE_IDS):
+        issues.append("interpretation lane ladders must be complete and ordered")
+    for lane in lanes:
+        lane_id = lane.get("lane_id")
+        if lane_id not in LANE_IDS:
+            continue
+        if lane.get("metric_sheet_ref") != METRIC_SHEET_IDS[lane_id]:
+            issues.append(f"{lane_id}: interpretation metric-sheet reference mismatch")
+        if lane.get("boundary_ladder_id") != BOUNDARY_LADDER_IDS[lane_id]:
+            issues.append(f"{lane_id}: interpretation ladder ID mismatch")
+        rung_ids = [item.get("rung_id") for item in lane.get("rungs", [])]
+        if rung_ids != list(BOUNDARY_RUNG_IDS[lane_id]):
+            issues.append(f"{lane_id}: boundary rung IDs are missing, stale, or reordered")
+        if any(not str(item.get("name", "")).strip() for item in lane.get("rungs", [])):
+            issues.append(f"{lane_id}: every boundary rung requires a name")
+    hard = policy.get("hard_gate_partition", {})
+    if set(hard) != {"claim_safety", "execution_validity", "interpretive_not_binary"}:
+        issues.append("hard-gate partition is incomplete")
+    if issues:
+        raise ContractError(issues)
+
+
 def resolve_execution_policy(policy: Mapping[str, Any]) -> dict[str, Any]:
     """Return a canonical fully explicit comparison-policy view."""
 
@@ -941,8 +1216,74 @@ def resolve_execution_policy(policy: Mapping[str, Any]) -> dict[str, Any]:
     return canonicalize_json_value(resolved)
 
 
-def assert_synthesis_entry(terminal_records: Sequence[Mapping[str, Any]]) -> None:
-    """Block synthesis until every stable lane has exactly one terminal record."""
+def freeze_metric_resolution(
+    metric_sheet: Mapping[str, Any],
+    calibration_input: Mapping[str, Any],
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Create a candidate-blind calibration record and frozen metric sheet."""
+
+    sheet = deepcopy(metric_sheet)
+    payload = sheet.get("record", sheet)
+    if sheet.get("record_type") != "metric_sheet":
+        raise ContractError("resolution freeze requires a metric_sheet record")
+    resolution = payload.get("resolution_policy", {})
+    if resolution.get("status") != "pending_candidate_blind_calibration":
+        raise ContractError("metric sheet resolution is not pending calibration")
+    if calibration_input.get("candidate_blind") is not True:
+        raise ContractError("resolution calibration must be candidate-blind")
+    input_margins = calibration_input.get("seed_margins", [])
+    seeds = [item.get("seed") for item in input_margins]
+    if seeds != resolution.get("calibration_seed_profile"):
+        raise ContractError("calibration seeds do not match the frozen metric sheet")
+    if len(seeds) != len(set(seeds)):
+        raise ContractError("calibration seeds must be unique")
+    margins = [float(item["matched_null_margin"]) for item in input_margins]
+    if not all(math.isfinite(value) for value in margins):
+        raise ContractError("calibration margins must be finite")
+    measurement_resolution = float(resolution["measurement_resolution"])
+    delta = max([measurement_resolution, *[abs(value) for value in margins]])
+    calibration_id = deterministic_id(
+        "metric-calibration",
+        {
+            "metric_sheet_id": payload["metric_sheet_id"],
+            "seed_margins": input_margins,
+            "measurement_resolution": measurement_resolution,
+        },
+    )
+    calibration = {
+        "schema_version": SCHEMA_VERSION,
+        "record_type": "metric_calibration",
+        "record": {
+            "calibration_id": calibration_id,
+            "metric_sheet_ref": payload["metric_sheet_id"],
+            "candidate_blind": True,
+            "seed_margins": deepcopy(input_margins),
+            "measurement_resolution": measurement_resolution,
+            "delta": delta,
+            "command_profile_ref": resolution["calibration_profile_ref"],
+            "evidence_effect": "resolution_only_no_candidate_evidence",
+            "claim_boundary_ref": payload["claim_boundary_ref"],
+            "extensions": {},
+        },
+    }
+    resolution["status"] = "frozen"
+    resolution["delta"] = {
+        "status": "frozen",
+        "value": delta,
+        "calibration_artifact_ref": calibration_id,
+        "rationale": (
+            "Frozen from candidate-blind matched-null margins and declared "
+            "measurement resolution"
+        ),
+    }
+    return canonicalize_json_value(calibration), canonicalize_json_value(sheet)
+
+
+def assert_synthesis_entry(
+    terminal_records: Sequence[Mapping[str, Any]],
+    developmental_interpretations: Sequence[Mapping[str, Any]],
+) -> None:
+    """Require one linked terminal and interpretation for every stable lane."""
 
     if any(item.get("record_type") != "terminal_classification" for item in terminal_records):
         raise ContractError("synthesis accepts only terminal-classification records")
@@ -953,6 +1294,28 @@ def assert_synthesis_entry(terminal_records: Sequence[Mapping[str, Any]]) -> Non
         raise ContractError(
             "synthesis requires exactly one terminal record for every AE01 lane"
         )
+    interpretations_by_id: dict[str, Mapping[str, Any]] = {}
+    for item in developmental_interpretations:
+        if item.get("record_type") != "developmental_interpretation":
+            raise ContractError(
+                "synthesis accepts only developmental-interpretation records"
+            )
+        payload = item.get("record", {})
+        interpretation_id = payload.get("interpretation_id")
+        if interpretation_id in interpretations_by_id:
+            raise ContractError("synthesis interpretation IDs must be unique")
+        interpretations_by_id[interpretation_id] = payload
+    if len(interpretations_by_id) != len(LANE_IDS):
+        raise ContractError("synthesis requires seven developmental interpretations")
+    for terminal in terminal_records:
+        payload = terminal.get("record", {})
+        interpretation = interpretations_by_id.get(
+            payload.get("developmental_interpretation_ref")
+        )
+        if interpretation is None:
+            raise ContractError("terminal developmental interpretation does not resolve")
+        if interpretation.get("lane_id") != payload.get("lane_id"):
+            raise ContractError("terminal and developmental interpretation lanes differ")
 
 
 def build_runtime_binding_receipt(

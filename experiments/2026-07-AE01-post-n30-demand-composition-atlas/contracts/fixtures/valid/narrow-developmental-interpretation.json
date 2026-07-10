@@ -1,0 +1,72 @@
+{
+  "record": {
+    "blocked_claims": [
+      "The narrow aligned relation does not establish robust transfer",
+      "The scaffold-dependent function is not native capacity or an ecology regime"
+    ],
+    "boundary_rungs": [
+      {"evidence_refs": ["fixture-result"], "name": "Auditable medium history", "rationale": "The carrier history is present and attributable", "rung_id": "AE01-L01-R01", "status": "reached"},
+      {"evidence_refs": ["fixture-result"], "name": "Later formation or susceptibility sign", "rationale": "All registered seeds remain directionally aligned", "rung_id": "AE01-L01-R02", "status": "reached"},
+      {"evidence_refs": ["fixture-control"], "name": "Medium-history-specific functional dependence", "rationale": "The matched control separates the bounded function", "rung_id": "AE01-L01-R03", "status": "partially_reached"},
+      {"evidence_refs": [], "name": "Withdrawal and source controls preserve specificity", "rationale": "Withdrawal evidence is not yet sufficient", "rung_id": "AE01-L01-R04", "status": "not_reached"},
+      {"evidence_refs": [], "name": "Meaningful carrier or timescale variation retains the relation", "rationale": "Transfer has not been established", "rung_id": "AE01-L01-R05", "status": "not_reached"}
+    ],
+    "becoming_reading": {
+      "appearance": "A small but seed-consistent later-response relation appeared under explicit support",
+      "claim_ceiling": "Bounded scaffold-dependent medium-history function candidate",
+      "classification_status": "Threshold-aligned but resolution-adjacent and only partially source-specific",
+      "live_boundary": "Whether withdrawal preserves the function rather than only its sign",
+      "support_dependence": "The current construction still supplies the medium-history transition"
+    },
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "classification_value": {
+      "organizes_next_iteration": true,
+      "rationale": "The result exposes a reusable withdrawal boundary rather than only a local score miss",
+      "rung": "T2_generative_class"
+    },
+    "debt_refs": ["fixture-withdrawal-debt"],
+    "development_reading": {
+      "aim_effect": "clarifies",
+      "condition_revealed": "Medium-history support can expose the function, but its endogenous availability remains unknown",
+      "measurement_question": "Does the relation remain above zero and retain specificity when support is weakened?",
+      "organization_implication": "Keep construction explicit and isolate its supplied transition",
+      "stewardship_implication": "Weaken support without discarding the observed lower-rung function"
+    },
+    "expressed_properties": [
+      {"evidence_refs": ["fixture-result"], "expectedness": "expected", "name": "Later-response directional sign", "property_id": "fixture-later-response-sign", "rationale": "All margins are positive"},
+      {"evidence_refs": ["fixture-result"], "expectedness": "adjacent", "name": "Resolution-adjacent susceptibility", "property_id": "fixture-resolution-adjacent-susceptibility", "rationale": "One seed lies inside the frozen resolution band"}
+    ],
+    "extensions": {},
+    "highest_valid_rung": {"rationale": "The third rung is only partially reached", "reference_id": "AE01-L01-R03", "status": "applicable"},
+    "interpretation_id": "ae01-fixture-narrow-interpretation",
+    "lane_id": "AE01-L01",
+    "local_optimization_guard": {"rationale": "The next move is a boundary probe rather than local optimization", "status": "not_applicable"},
+    "metric_relations": [
+      {
+        "calibration_artifact_ref": "ae01-fixture-metric-calibration",
+        "delta": 0.04,
+        "metric_sheet_ref": "ae01-l01-primary-metric-v1",
+        "rationale": "Two seeds exceed delta and one remains inside it while every seed is positive",
+        "relation": "narrow_aligned",
+        "resolution_status": "frozen",
+        "seed_margins": [
+          {"margin": 0.08, "seed": 101},
+          {"margin": 0.03, "seed": 211},
+          {"margin": 0.06, "seed": 307}
+        ],
+        "threshold_passed": true
+      }
+    ],
+    "next_move": {
+      "disposition": "new_boundary_or_naturalization_probe",
+      "falsifier": "The directional sign disappears or becomes generic when support is weakened",
+      "new_preregistration_required": true,
+      "rationale": "Test the disclosed withdrawal boundary without optimizing the margin",
+      "target_function": "Later-response dependence on medium history under reduced external support"
+    },
+    "source_result_refs": ["fixture-result", "fixture-control"],
+    "support_status": "scaffold_dependent"
+  },
+  "record_type": "developmental_interpretation",
+  "schema_version": "1.1.0"
+}

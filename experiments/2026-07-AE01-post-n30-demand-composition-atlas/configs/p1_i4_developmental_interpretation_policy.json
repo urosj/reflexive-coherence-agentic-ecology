@@ -1,0 +1,145 @@
+{
+  "classification_value_ladder": [
+    {"organizes_next_iteration": false, "rung": "T0_observation_tag", "meaning": "Faithful local label retained for audit; it does not organize another scientific iteration"},
+    {"organizes_next_iteration": true, "rung": "T1_reusable_class", "meaning": "Travels beyond one local setup or clarifies a reusable contrast"},
+    {"organizes_next_iteration": true, "rung": "T2_generative_class", "meaning": "Produces a new question, missing boundary, support function, or ladder rung"},
+    {"organizes_next_iteration": true, "rung": "T3_operational_class", "meaning": "Defines a bounded probe, intervention, comparison, or measurement rule"},
+    {"organizes_next_iteration": true, "rung": "T4_theoretical_class", "meaning": "Requires revision of how the core proposition or ontology is understood"}
+  ],
+  "evidence_effect": "none_interpretation_preregistration_only",
+  "hard_gate_partition": {
+    "claim_safety": [
+      "evidence_role_and_claim_ceiling_valid",
+      "unsafe_relabels_absent",
+      "constructed_and_native_realizations_not_silently_substituted"
+    ],
+    "execution_validity": [
+      "schema_and_semantic_validation_passed",
+      "runtime_binding_and_realization_conformance_passed_when_live",
+      "artifact_reconstruction_and_digests_verified",
+      "portable_path_and_graph_read_only_boundaries_passed",
+      "registered_attempt_seed_resource_and_artifact_contract_completed"
+    ],
+    "interpretive_not_binary": [
+      "primary_metric_threshold_relation",
+      "mandatory_signature_relation",
+      "causal_and_withdrawal_control_outcomes",
+      "transfer_and_recurrence_observations"
+    ]
+  },
+  "lane_ladders": [
+    {
+      "boundary_ladder_id": "ae01-l01-boundary-ladder-v1",
+      "lane_id": "AE01-L01",
+      "metric_sheet_ref": "ae01-l01-primary-metric-v1",
+      "rungs": [
+        {"name": "Auditable medium history", "rung_id": "AE01-L01-R01"},
+        {"name": "Later formation or susceptibility sign", "rung_id": "AE01-L01-R02"},
+        {"name": "Medium-history-specific functional dependence", "rung_id": "AE01-L01-R03"},
+        {"name": "Withdrawal and source controls preserve specificity", "rung_id": "AE01-L01-R04"},
+        {"name": "Meaningful carrier or timescale variation retains the relation", "rung_id": "AE01-L01-R05"}
+      ]
+    },
+    {
+      "boundary_ladder_id": "ae01-l02-boundary-ladder-v1",
+      "lane_id": "AE01-L02",
+      "metric_sheet_ref": "ae01-l02-primary-metric-v1",
+      "rungs": [
+        {"name": "One auditable non-private pool", "rung_id": "AE01-L02-R01"},
+        {"name": "Attributable contributions from multiple sources", "rung_id": "AE01-L02-R02"},
+        {"name": "Later response depends on combined pool history", "rung_id": "AE01-L02-R03"},
+        {"name": "Mailbox, controller, shuffle, and contributor controls preserve specificity", "rung_id": "AE01-L02-R04"},
+        {"name": "Capacity, contributor, or access variation retains the shared-pool function", "rung_id": "AE01-L02-R05"}
+      ]
+    },
+    {
+      "boundary_ladder_id": "ae01-l03-boundary-ladder-v1",
+      "lane_id": "AE01-L03",
+      "metric_sheet_ref": "ae01-l03-primary-metric-v1",
+      "rungs": [
+        {"name": "Costly attributable deposition", "rung_id": "AE01-L03-R01"},
+        {"name": "Persistent decaying or reinforced trace", "rung_id": "AE01-L03-R02"},
+        {"name": "Later routing depends functionally on trace history", "rung_id": "AE01-L03-R03"},
+        {"name": "Withdrawal, shuffle, and false-trace controls preserve specificity", "rung_id": "AE01-L03-R04"},
+        {"name": "Geometry or timescale variation retains the route relation", "rung_id": "AE01-L03-R05"}
+      ]
+    },
+    {
+      "boundary_ladder_id": "ae01-l04-boundary-ladder-v1",
+      "lane_id": "AE01-L04",
+      "metric_sheet_ref": "ae01-l04-primary-metric-v1",
+      "rungs": [
+        {"name": "Auditable support field and fragile reference", "rung_id": "AE01-L04-R01"},
+        {"name": "Support-conditioned formation or stability sign", "rung_id": "AE01-L04-R02"},
+        {"name": "Specific admissibility function beyond generic allocation", "rung_id": "AE01-L04-R03"},
+        {"name": "Withdrawal and hidden-allocation controls preserve the bounded function", "rung_id": "AE01-L04-R04"},
+        {"name": "Susceptibility or support variation retains the relation", "rung_id": "AE01-L04-R05"}
+      ]
+    },
+    {
+      "boundary_ladder_id": "ae01-l05-boundary-ladder-v1",
+      "lane_id": "AE01-L05",
+      "metric_sheet_ref": "ae01-l05-primary-metric-v1",
+      "rungs": [
+        {"name": "Maintained selective boundary state", "rung_id": "AE01-L05-R01"},
+        {"name": "Ingress, egress, or transformation sign", "rung_id": "AE01-L05-R02"},
+        {"name": "Exchange depends specifically on boundary condition", "rung_id": "AE01-L05-R03"},
+        {"name": "Neutralization, inversion, and direct-bypass controls preserve specificity", "rung_id": "AE01-L05-R04"},
+        {"name": "Permeability, load, maintenance, or repair variation retains the relation", "rung_id": "AE01-L05-R05"}
+      ]
+    },
+    {
+      "boundary_ladder_id": "ae01-l06-boundary-ladder-v1",
+      "lane_id": "AE01-L06",
+      "metric_sheet_ref": "ae01-l06-primary-metric-v1",
+      "rungs": [
+        {"name": "Audited capacity reserve and ledger", "rung_id": "AE01-L06-R01"},
+        {"name": "Circulation, depletion, replenishment, or floor sign", "rung_id": "AE01-L06-R02"},
+        {"name": "Eligibility depends specifically on capacity history", "rung_id": "AE01-L06-R03"},
+        {"name": "Disable, source-shuffle, free-injection, and leakage controls preserve specificity", "rung_id": "AE01-L06-R04"},
+        {"name": "Topology or timescale variation retains the circulation relation", "rung_id": "AE01-L06-R05"}
+      ]
+    },
+    {
+      "boundary_ladder_id": "ae01-l07-boundary-ladder-v1",
+      "lane_id": "AE01-L07",
+      "metric_sheet_ref": "ae01-l07-primary-metric-v1",
+      "rungs": [
+        {"name": "Source-current parent and local surfaces classified", "rung_id": "AE01-L07-R01"},
+        {"name": "Parent-local relation and state handoff operationally defined", "rung_id": "AE01-L07-R02"},
+        {"name": "Future discriminator separates parent conditioning from labels or scheduling", "rung_id": "AE01-L07-R03"},
+        {"name": "Constructed contrast and withdrawal preserve evidence-role separation", "rung_id": "AE01-L07-R04"},
+        {"name": "Demand class is reusable enough to organize a graph-side discriminator", "rung_id": "AE01-L07-R05"}
+      ]
+    }
+  ],
+  "local_optimization_advances": [
+    "source_specificity",
+    "withdrawal_resistance",
+    "recurrence",
+    "transfer",
+    "broader_regime_validity",
+    "native_expression"
+  ],
+  "next_move_dispositions": [
+    "retain_current_implementation",
+    "bounded_local_refinement",
+    "alternative_realization",
+    "new_boundary_or_naturalization_probe",
+    "revise_working_class_or_hypothesis",
+    "redescribe_aim",
+    "stop_no_reusable_or_generative_value"
+  ],
+  "policy_id": "ae01-p1-i4-developmental-interpretation-policy",
+  "policy_version": "1.0.0",
+  "threshold_relations": [
+    {"relation": "robust_aligned", "rule": "every per-seed margin is greater than positive delta"},
+    {"relation": "narrow_aligned", "rule": "every per-seed margin is greater than zero, at least one is greater than delta, and at least one is less than or equal to delta"},
+    {"relation": "resolution_limited", "rule": "every absolute per-seed margin is less than or equal to delta"},
+    {"relation": "mixed_direction", "rule": "per-seed margins cross or touch zero and at least one lies outside the resolution band"},
+    {"relation": "narrow_counter", "rule": "every per-seed margin is less than zero, at least one is less than negative delta, and at least one is greater than or equal to negative delta"},
+    {"relation": "robust_counter", "rule": "every per-seed margin is less than negative delta"},
+    {"relation": "resolution_unknown", "rule": "delta is not frozen; robust or narrow language is prohibited"},
+    {"relation": "not_applicable", "rule": "the cell is artifact inspection or has no live numeric relation"}
+  ]
+}

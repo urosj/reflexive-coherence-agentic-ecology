@@ -1,8 +1,8 @@
 # AE01 P1-I5 Artifact, Tooling, and Reconstruction Contract
 
-**Status:** frozen at P1-I5
+**Status:** revised and frozen at P1-I5 revision 0.24
 
-**Tooling version:** `1.0.0`
+**Tooling version:** `1.1.0`
 
 **Dependency profile:** Python `>=3.11`, `jsonschema==4.26.0`
 
@@ -19,6 +19,11 @@ P1-I5 introduces only experiment-local infrastructure:
   dependency, and resource profiles.
 - `configs/p1_i5_execution_policy.json` materializes the finite P1-I4
   comparison and stopping policy.
+- `configs/p1_i4_developmental_interpretation_policy.json` freezes hard-gate
+  partitioning, threshold relations, lane boundary ladders, classification
+  value, and allowed next moves.
+- `contracts/metric-sheets/` freezes the primary metric formula and candidate-
+  blind resolution procedure for every lane.
 - `contracts/fixtures/` separates schema-valid, semantic-negative, and invalid
   conformance cases.
 - `implementation/tests/` verifies Phase 1 infrastructure.
@@ -36,10 +41,11 @@ JSON Schema Draft 2020-12    persisted envelope and field shape
 Python semantic validation   cross-field and cross-record fail-closed checks
 ```
 
-Python rejects invalid combinations but does not add a stronger claim, change
-a field meaning, or create a new persisted record type. A future persisted
-hypothesis/control registry requires a schema version change and reopens
-P1-I3.
+Python rejects invalid combinations but does not add a stronger claim or
+change a field meaning. Revision 0.24 explicitly reopens P1-I3 and advances
+the schema to `1.1.0` for first-class metric-sheet, metric-calibration, and
+developmental-interpretation records. No retained `1.0.0` record migrates
+silently.
 
 ## 3. Canonical serialization and digests
 
@@ -124,9 +130,12 @@ envelope, required artifact roles, success criteria, invalid-run criteria, and
 infrastructure-failure criteria. An infrastructure failure remains visible and
 can never satisfy a scientific signature.
 
-Live cells use deterministic seeds `101`, `211`, and `307`, one attempt per
+Candidate-blind metric calibration uses seeds `19`, `43`, `71`, `109`, and
+`163`; candidate cells remain blocked until their resolution `delta` is frozen.
+Live candidate cells use deterministic seeds `101`, `211`, and `307`, one attempt per
 seed, and at most one infrastructure-only retry. A cell has 120 seconds,
-512 MiB memory, and 256 MiB disk. Support requires:
+512 MiB memory, and 256 MiB disk. The highest support rung retains these
+anchors:
 
 ```text
 100% mandatory signatures
@@ -137,13 +146,24 @@ at least 2 of 3 transfer-contrast seeds
 zero unsafe flags
 ```
 
-The strict positive margin establishes direction, not a large effect-size
-claim. P1-I4 lane ceilings still control interpretation. Threshold, seed,
-cell, resource, or retry changes after observation require contract revision
-and affected rerun.
+These anchors do not form an accept/reject filter. Each result also records its
+machine-derived `robust_aligned`, `narrow_aligned`, `resolution_limited`,
+`mixed_direction`, `narrow_counter`, `robust_counter`, `resolution_unknown`,
+or `not_applicable` relation; its lane boundary rung; support status;
+classification value; and two-axis developmental interpretation. The strict
+positive threshold establishes direction only. P1-I4 lane ceilings still
+control interpretation. Threshold, calibration, seed, cell, resource, or
+retry changes after candidate observation require contract revision and
+affected rerun.
+
+A valid scientific result may propose a bounded local refinement or alternative
+realization. That proposal requires a new preregistration and may never consume
+the one infrastructure-only retry or rewrite the prior result.
 
 Synthesis fails until exactly one terminal record exists for each stable lane.
-The eight explicit non-selection conditions remain fixed.
+Each terminal record must reference a same-lane developmental interpretation.
+The eight explicit non-selection conditions remain fixed; non-selection does
+not erase atlas observations or next questions.
 
 ## 8. Runtime binding and realization
 
@@ -212,6 +232,19 @@ Materialize the resolved finite policy:
 uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py resolve-policy --output outputs/ae01-p1-i5-resolved-policy.json
 ```
 
+Freeze a candidate-blind resolution calibration and produce its frozen metric
+sheet:
+
+```bash
+uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py freeze-resolution --metric-sheet experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L01.json --calibration-input experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/fixtures/inputs/l01-candidate-blind-calibration-input.json --calibration-output outputs/ae01-l01-metric-calibration.json --frozen-sheet-output outputs/ae01-l01-frozen-metric-sheet.json
+```
+
+Classify per-seed candidate margins without collapsing them into a scalar gate:
+
+```bash
+uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py classify-margin --metric-sheet outputs/ae01-l01-frozen-metric-sheet.json --margin 101:0.08 --margin 211:0.03 --margin 307:0.06
+```
+
 Produce and compare duplicate validation summaries:
 
 ```bash
@@ -228,7 +261,9 @@ They fail rather than inventing missing inputs.
 ## 12. P1-I5 claim boundary
 
 Successful validation proves that the infrastructure enforces the frozen
-contracts on its fixtures. It does not establish a shared-medium pattern,
+contracts on its fixtures. P1-GATE may authorize candidate-blind calibration
+and lane registration, but candidate execution remains lane-blocked until its
+metric sheet is frozen. Validation does not establish a shared-medium pattern,
 successful composition, reusable primitive, PyGRC compatibility on another
 machine, catalog admission, or N31+ selection. `AE01-C0` remains the highest
 assigned rung until P1-GATE review separately assigns C1/C2.

@@ -1,0 +1,32 @@
+{
+  "record": {
+    "aggregation": "preserve_per_seed_margins_without_scalar_collapse",
+    "candidate_surface": "separation produced by a parent-local discriminator against duplicated local parameters, central scheduling, or labels",
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "comparator_surface": "the source-current adequacy finding and matched label, scheduler, susceptibility, or scaffold-withdrawal contrast",
+    "denominator_definition": "maximum absolute magnitude of the paired reference and comparator discriminator responses, bounded below by measurement_resolution",
+    "direction": "greater_than_zero_is_aligned",
+    "extensions": {},
+    "lane_id": "AE01-L07",
+    "metric_id": "parent_local_discriminator_separation_normalized_margin",
+    "metric_sheet_id": "ae01-l07-primary-metric-v1",
+    "numerator_definition": "parent-local discriminator response minus its matched alternative-mechanism response; artifact-only cells use not_applicable until a live contrast exists",
+    "pairing": "paired_by_seed_and_frozen_configuration",
+    "relation_vocabulary": ["robust_aligned", "narrow_aligned", "resolution_limited", "mixed_direction", "narrow_counter", "robust_counter", "resolution_unknown", "not_applicable"],
+    "resolution_policy": {
+      "calibration_profile_ref": "ae01-command-freeze-resolution-v1",
+      "calibration_seed_profile": [19, 43, 71, 109, 163],
+      "candidate_blind": true,
+      "candidate_execution_effect": "blocked_until_delta_is_frozen",
+      "delta": {"rationale": "No candidate-blind matched-null calibration has executed; artifact inspection remains not_applicable", "status": "pending"},
+      "estimator": "max_of_measurement_resolution_and_maximum_absolute_matched_null_margin",
+      "measurement_resolution": 1e-12,
+      "status": "pending_candidate_blind_calibration"
+    },
+    "threshold": {"operator": "greater_than", "value": 0.0},
+    "units": "normalized_paired_margin",
+    "zero_denominator_policy": "Use measurement_resolution as the denominator floor and record resolution_limited when both paired response magnitudes remain at that floor"
+  },
+  "record_type": "metric_sheet",
+  "schema_version": "1.1.0"
+}

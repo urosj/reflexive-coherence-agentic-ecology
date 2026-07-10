@@ -1,8 +1,8 @@
 # AE01 Lane Hypotheses
 
-**Status:** frozen at P1-I4
+**Status:** revised and frozen at P1-I4 revision 0.24
 
-**Hypothesis-set version:** `1.0.0`
+**Hypothesis-set version:** `1.1.0`
 
 **Evidence effect:** no lane executed and no result assigned
 
@@ -13,7 +13,9 @@ partially exposed, rejected, or converted into a precise missing-surface
 demand. The terminal meanings and attempt limits come from the
 [outcome and stopping contract](outcome-and-stopping-contract.md). Common
 controls and failures come from the
-[control and failure register](control-and-failure-register.md).
+[control and failure register](control-and-failure-register.md). Threshold
+relations, lane boundary ladders, two-axis readings, and next moves come from
+the [developmental interpretation contract](developmental-interpretation-contract.md).
 
 The signatures below are logical requirements. P1-I5 must freeze metric
 definitions, thresholds, deterministic seeds, variants, attempts, runtime

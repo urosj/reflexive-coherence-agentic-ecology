@@ -1,6 +1,6 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** P1-I5 infrastructure freeze complete; P1-GATE review next
+**Status:** revision 0.24 developmental interpretation and infrastructure freeze complete; P1-GATE review next
 
 **Local experiment:** `AE01`
 
@@ -14,6 +14,9 @@
 
 **Hypothesis freeze:**
 [AE01 P1-I4 hypothesis index](2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/README.md)
+
+**Developmental interpretation:**
+[AE01 threshold, ladder, and next-move contract](2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/developmental-interpretation-contract.md)
 
 **Tooling freeze:**
 [AE01 P1-I5 artifact, tooling, and reconstruction contract](2026-07-AE01-post-n30-demand-composition-atlas/implementation/P1-I5-tooling-contract.md)
@@ -254,14 +257,15 @@ identical at this freeze. IDs survive every later rename.
 
 ## 8. Lane independence, execution, and rename rules
 
-All seven lanes may execute independently after P1-GATE. None may consume
-another lane's conclusion as evidence. Shared infrastructure, source records,
-or constructed mechanisms may be referenced, but every lane must preserve its
-own inputs, controls, result lineage, and claim ceiling.
+All seven lanes may calibrate and register independently after P1-GATE. None
+may consume another lane's conclusion as evidence. Candidate execution
+requires the lane's resolution/registration gate. Shared infrastructure,
+source records, or constructed mechanisms may be referenced, but every lane
+must preserve its own inputs, controls, result lineage, and claim ceiling.
 
 Cross-lane recurrence and composition synthesis begin only after every lane has
-a valid terminal record. A lane is retained even when it produces no positive
-candidate.
+a valid linked terminal/developmental-interpretation pair. A lane is retained
+even when it produces no positive candidate.
 
 A display name may change only during controlled contract revision to improve
 ontology or remove a premature claim. A rename must preserve:
@@ -353,21 +357,22 @@ admitted.
 P1-I1 source admission                         passed
 P1-I2 roadmap and experiment boundary          passed
 P1-I3 machine and narrative contracts          passed
-P1-I4 hypotheses, controls, failures            passed
-P1-I5 artifact, tooling, reconstruction         passed by this revision
-P1-GATE                                         review next; execution remains closed
+P1-I4 hypotheses, controls, failures, ladders   passed at revision 0.24
+P1-I5 calibration, tooling, reconstruction      passed at revision 0.24
+P1-GATE                                         review next; calibration remains closed
 
-P2-I1 through P2-I7 lane execution              independent/parallel
-P2-I8 cross-lane synthesis                      after every terminal lane record
+P2-I1 through P2-I7 calibrate/register/execute  independent/parallel
+P2-I8 cross-lane synthesis                      after every linked terminal/interpretation pair
 P2-I9 controls, debt, and acceptance synthesis  after P2-I8
 
 P3 ranking, non-selection, promotion, closeout  after P2-GATE
 P4 promoted specs and reusable implementation   after P3 queue
 ```
 
-No P1 iteration assigns a positive lane result. P2 lanes cannot tune their
-frozen signatures or controls after seeing outcomes without a recorded revision
-and required rerun.
+No P1 iteration assigns a positive lane result. P2 candidate cells remain
+blocked until candidate-blind calibration and exact lane registration freeze.
+P2 lanes cannot tune thresholds, ladders, signatures, or controls after seeing
+candidate outcomes without a recorded revision and affected new execution.
 
 ## 13. Outputs and report authority
 
@@ -382,8 +387,9 @@ authored interpretation. The final file must be reproducible and trace every
 factual statement to controlling machine records.
 
 P1-I5 defines concrete reconstruction commands, artifact manifests, retention
-tiers, and report assembly. Infrastructure entry points now exist, but no lane
-execution is authorized before P1-GATE.
+tiers, candidate-blind resolution calibration, threshold-relation derivation,
+developmental interpretation, and report assembly. Infrastructure entry points
+now exist, but no calibration or lane execution is authorized before P1-GATE.
 
 ## 14. Expected AE01 outputs
 
@@ -480,13 +486,17 @@ Phase 8 completion or unrestricted autonomy
 ```
 
 The maximum P1 result is a complete, internally consistent, reproducible
-contract set at AE01-C2. This P1-I5 freeze still establishes only AE01-C0.
+contract set at AE01-C2. This revision 0.24 freeze still establishes only
+AE01-C0.
 
 ## 19. Remaining Phase 1 work
 
 Review R2 must evaluate the complete P1-I1 through P1-I5 freeze. P1-GATE must
 then disposition `AE01-C1` and `AE01-C2`, confirm all narrative projections,
-and preserve the no-positive-result boundary before lane execution opens.
+and preserve the no-positive-result boundary before calibration/registration
+opens.
 
-Until P1-GATE passes, lane execution and positive atlas conclusions remain
-closed.
+Until P1-GATE passes, lane calibration, registration, execution, and positive
+atlas conclusions remain closed. Passing it opens candidate-blind calibration
+and lane registration only; each candidate matrix retains a lane-local
+resolution/registration gate.

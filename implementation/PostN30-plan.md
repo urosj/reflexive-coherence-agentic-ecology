@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.23
+**Plan revision:** 0.24
 
 **Date:** 2026-07-10
 
@@ -215,6 +215,7 @@ process in Section 17.
 | D-035 | Accepted partial resolution and deferral | Domain-package creation is admission-driven. Conceptual examples and experiment-local domain fixtures do not preselect reusable packages; the inventory beyond each explicitly promoted domain remains deferred. |
 | D-036 | Accepted | The known tensions among constructed exploration, implementation restraint, reproducibility, local PyGRC resolution, deferred packaging, domain placement, and bounded lane closure are operationalized as explicit Phase 1 contract and tooling obligations without reopening P0-I2. |
 | D-037 | Accepted | Evidence ceremony is graduated by evidential use, while runtime safety, graph read-only behavior, evidence-class separation, and claim ceilings remain fixed. Shared profiles and generated receipts SHOULD remove repeated manual entry; N31+ scoring remains a synthesis gate accompanied by independent qualitative rationale. |
+| D-038 | Accepted | Frozen scientific thresholds are reference surfaces and highest-rung anchors, not universal accept/reject gates. Every valid lane result preserves machine-derived threshold relation, lowest valid boundary rung, support status, expected/adjacent/unexpected properties, separate becoming/development readings, claim ceiling, and a falsifiable next move. Hard execution-validity and claim-safety gates remain fail-closed. |
 
 ## 7. Target repository structure
 
@@ -650,6 +651,12 @@ new substrate requirements
 composition inputs, outputs, and interference risks
 controls and withdrawal tests
 execution class and runtime-binding/realization-profile receipt, if execution is requested
+primary metric sheet, candidate-blind resolution calibration, and per-seed threshold relation
+lane boundary ladder and highest valid rung
+expected, adjacent, and unexpected expressed properties
+support status and classification-value rung
+separate becoming and development readings
+falsifiable next move and local-optimization guard where applicable
 all applicable debts
 transfer scope
 claim ceiling and blocked relabels
@@ -723,7 +730,7 @@ report. AE01-level outputs MUST include:
 ```text
 AE01-C0 = initialized, no atlas claim
 AE01-C1 = source inventory and consumption boundaries accepted
-AE01-C2 = lane schemas, controls, and claim guards frozen
+AE01-C2 = lane schemas, controls, claim guards, metric sheets, calibration procedure, and developmental interpretation frozen
 AE01-C3 = all required lane records classified
 AE01-C4 = cross-lane requirements and composition dependencies synthesized
 AE01-C5 = controls, debt, failure, and non-selection gates passed
@@ -799,6 +806,8 @@ Required outputs:
 - runtime-binding and realization-profile contract;
 - catalog/domain placement and field-applicability rules;
 - lane terminal-classification and stopping contract;
+- metric-sheet and candidate-blind resolution contract;
+- developmental-interpretation and lane boundary-ladder contract;
 - implementation plan and checklist;
 - expected artifact inventory.
 
@@ -808,17 +817,23 @@ Exit gate:
 
 ```text
 sources, lanes, schemas, controls, evidence classes, debt fields,
-acceptance rungs, and stopping conditions are frozen
+acceptance rungs, metric/calibration semantics, developmental interpretation,
+and stopping conditions are frozen
 ```
 
 ### Phase 2 — Atlas execution
 
 Required work:
 
+- run and retain candidate-blind primary-metric calibration for each lane;
+- freeze each lane's resolution band and complete lane registration before
+  candidate execution;
 - populate each lane from declared sources;
 - generate reproducible artifacts and reports;
 - distinguish N30 grounding from ecology extrapolation;
 - classify missing requirements and failures;
+- classify threshold relation, boundary rung, support status, unexpected
+  properties, and two-axis developmental meaning before terminal synthesis;
 - run contract, provenance, digest, and claim-boundary validation.
 
 Cross-lane synthesis MUST occur only after every required lane has been
@@ -1623,23 +1638,102 @@ without reopening P0-I2. A later workflow that lets scratch support a claim,
 lets profile inheritance conceal required identity, or makes qualitative
 judgment an implicit override reopens the affected contract and gate.
 
+### 15.12 D-038 disposition — Threshold anchors and developmental interpretation
+
+**Observed tension:** revision 0.23 froze exact margins, full signature/control
+passage, seed agreement, and non-selection paths correctly before execution,
+but its language could be read as a binary accept/decline system. That would
+discard structure below the target, over-read narrow success, and turn local
+optimization toward the proxy rather than the function. It would also conflict
+with the observation-first, bounded-probe, naturalization, two-axis,
+measurement, and renewed-attunement directives supplied by the project owner.
+
+**Selected resolution:** thresholds remain fixed but become reference surfaces
+and highest-rung anchors. AE01 separates:
+
+```text
+hard execution validity:
+  schema, runtime, reconstruction, identity, path, attempt, resource,
+  and graph-read-only conformance
+
+hard claim safety:
+  evidence-role separation, unsafe relabel prevention, claim ceilings,
+  and explicit constructed/native transitions
+
+scientific interpretation:
+  direction, resolution, boundary rung, causal controls, support dependence,
+  transfer, recurrence, unexpected properties, and next questions
+```
+
+A valid causal control that contradicts the target is evidence. A missing or
+invalid control leaves the execution incomplete. A below-threshold result may
+remain a lower, adjacent, unexpected, reusable, or generative class. An above-
+threshold result may remain narrow, resolution-limited, support-dependent, or
+blocked at a lower claim ceiling.
+
+Every lane receives a first-class primary metric sheet and candidate-blind
+calibration record. Before candidate execution, the resolution band is:
+
+```text
+delta = max(
+  declared measurement resolution,
+  maximum absolute matched-null margin from frozen calibration seeds
+)
+```
+
+The candidate-blind calibration seeds are distinct from candidate seeds and
+cannot inspect candidate outcomes. Without frozen `delta`, narrow/robust
+language and candidate execution remain blocked.
+
+Every completed result also receives one first-class developmental-
+interpretation record with per-seed relation, the cumulative lane boundary
+ladder, highest valid rung, support status, expected/adjacent/unexpected
+properties, T0-through-T4 classification value, separate becoming/development
+readings, blocked claims, and one next move with a falsifier.
+
+A bounded local refinement is not a retry. It must keep the causal question,
+target the function rather than its proxy, change one surface, preserve the
+prior result, name a falsifier, and advance source specificity, withdrawal
+resistance, recurrence, transfer, broader regime validity, or native
+expression. Otherwise the work becomes an alternative realization, new probe,
+class/hypothesis revision, aim redescription, or explicit stop, each under a
+new preregistration.
+
+**Schema and gate effect:** this decision explicitly reopens P1-I3, P1-I4, and
+P1-I5. The common schema advances from `1.0.0` to `1.1.0`; retained older
+records never migrate silently. P1-I1 and P1-I2 remain closed because source
+admission, lane identity, and atlas content did not change. P1-GATE remains
+closed until revision 0.24 validation passes. When it passes, it authorizes
+candidate-blind calibration and lane registration; candidate cells remain
+blocked until their lane-local resolution freeze and registration gate pass.
+
+**Alternatives dispositioned:** turning fixed thresholds into post-outcome
+discretion is rejected because it invites rescue narratives. Keeping binary
+threshold interpretation is rejected because it erases irreducible structure.
+Hiding authoritative interpretation in `x_` extensions is rejected because
+extensions cannot satisfy a gate or redefine terminal meaning. Treating every
+local tag as a new research arc is rejected through the T0/T1 value boundary.
+
+**Reopening condition:** a valid result exposes an important relation not
+representable by the threshold vocabulary, lane ladder, support statuses,
+classification-value ladder, or next-move dispositions; or the calibration
+procedure proves unable to separate measurement resolution from candidate
+behavior without leakage.
+
 ## 16. Immediate next steps
 
-After this plan is accepted:
+Current dependency order after revision 0.24:
 
-1. Review and accept or revise this plan and its companion master checklist.
-2. Record the review result and pass the checklist's `P0-I1-GATE`.
-3. Resolve only the open decisions that block the AE01 contract freeze.
-4. Create the minimum `experiments/` structure and its README.
-5. Draft the Post-N30 atlas roadmap without positive conclusions.
-6. Draft the AE01 README, hypotheses, common lane contract, controls, and
-   acceptance ladder.
-7. Define the initial machine-readable contract and artifact policy.
-8. Scaffold only the code and directories required to validate and execute the
-   frozen AE01 contract.
-9. Execute and classify one lane at a time; synthesize only after all required
-   lanes are comparable.
-10. Close AE01 before promoting canonical specifications or stable source
+1. Complete Review R2 over the refrozen P1-I1 through P1-I5 contract.
+2. Disposition `AE01-C1`, `AE01-C2`, and any R2 findings without opening an
+   evidential conclusion.
+3. Pass `P1-GATE`; this opens candidate-blind calibration and lane registration
+   only.
+4. For each Phase 2 lane, freeze calibration and exact implementation
+   registration before candidate execution.
+5. Execute and classify lanes independently; synthesize only after all required
+   terminal and developmental-interpretation records are comparable.
+6. Close AE01 before promoting canonical specifications or stable source
    abstractions.
 
 ## 17. Conversation provenance and directive maintenance
@@ -1714,6 +1808,7 @@ directive.
 | 2026-07-10 | Revision 0.21: passed P1-I3 with a versioned Markdown meaning contract, one discriminated JSON Schema Draft 2020-12 bundle for seventeen record types, and the controlling seven-lane machine registry. Contract closure did not open positive evidence or advance beyond `AE01-C0`; Python semantic validation and automated projection checks remain P1-I5 work. |
 | 2026-07-10 | Revision 0.22: passed P1-I4 with seven lane hypotheses, recurring-demand and explicit-non-selection synthesis hypotheses, finite comparison/stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and an explicit P1-I5 implementation handoff. No lane executed and no result or higher acceptance rung opened. |
 | 2026-07-10 | Revision 0.23: passed P1-I5 with experiment-local canonicalization, digests, schema and semantic guards, deterministic IDs, resolved manifests/profiles, finite comparison policy, strict runtime receipts, report assembly, validated lane projections, conformance fixtures, portable reconstruction commands, and focused tests. Infrastructure validation opened no lane evidence; P1-GATE and Review R2 remain open. |
+| 2026-07-10 | Revision 0.24: accepted D-038 and explicitly reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric sheets, candidate-blind calibration, machine-derived threshold relations, lane boundary ladders, two-axis developmental interpretations, classification-value and next-move discipline, and guarded local refinement. Thresholds remain frozen anchors without erasing lower or unexpected classes; no lane evidence opened. |
 
 ## 18. Program completion criteria
 

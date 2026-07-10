@@ -29,12 +29,15 @@ from ae01_tooling import (  # noqa: E402
     build_runtime_binding_receipt,
     canonical_json_dumps,
     canonicalize_json_value,
+    classify_threshold_relation,
     deterministic_id,
     digest_canonical_data,
     load_json,
+    freeze_metric_resolution,
     pretty_json_dumps,
     resolve_execution_policy,
     validate_execution_policy,
+    validate_interpretation_policy,
     validate_lane_projections,
     validate_portable_path,
     validate_record,
@@ -51,6 +54,12 @@ class AE01ToolingTest(unittest.TestCase):
         cls.registry = load_json(EXPERIMENT / "contracts/lane-registry.json")
         cls.profiles = load_json(EXPERIMENT / "configs/p1_i5_profiles.json")
         cls.policy = load_json(EXPERIMENT / "configs/p1_i5_execution_policy.json")
+        cls.interpretation_policy = load_json(
+            EXPERIMENT / "configs/p1_i4_developmental_interpretation_policy.json"
+        )
+        cls.metric_sheet = load_json(
+            EXPERIMENT / "contracts/metric-sheets/AE01-L01.json"
+        )
 
     def test_canonical_json_is_order_independent(self) -> None:
         left = {"b": [2, 1], "a": {"z", "x"}}
@@ -175,6 +184,13 @@ class AE01ToolingTest(unittest.TestCase):
                 set(lane["lane_control_ids"]), set(LANE_CONTROL_IDS[lane["lane_id"]])
             )
 
+    def test_interpretation_policy_and_metric_sheets_are_complete(self) -> None:
+        validate_interpretation_policy(self.interpretation_policy)
+        sheets = sorted((EXPERIMENT / "contracts/metric-sheets").glob("*.json"))
+        self.assertEqual(len(sheets), 7)
+        for path in sheets:
+            validate_record(load_json(path), self.schema)
+
     def test_execution_policy_mutations_fail(self) -> None:
         bad = deepcopy(self.policy)
         bad["global_policy"]["deterministic_seeds"].append(401)
@@ -201,6 +217,91 @@ class AE01ToolingTest(unittest.TestCase):
         self.assertEqual(len(COMMON_CONTROL_IDS), 19)
         self.assertEqual(len(FAILURE_IDS), 10)
         self.assertTrue(all(len(values) == 5 for values in LANE_CONTROL_IDS.values()))
+
+    def test_threshold_relations_form_an_explicit_ladder(self) -> None:
+        cases = {
+            "robust_aligned": [0.08, 0.07, 0.09],
+            "narrow_aligned": [0.08, 0.03, 0.06],
+            "resolution_limited": [0.02, -0.03, 0.01],
+            "mixed_direction": [0.08, -0.02, 0.06],
+            "narrow_counter": [-0.08, -0.03, -0.06],
+            "robust_counter": [-0.08, -0.07, -0.09],
+        }
+        for expected, margins in cases.items():
+            with self.subTest(expected=expected):
+                relation = classify_threshold_relation(
+                    [
+                        {"seed": seed, "margin": margin}
+                        for seed, margin in zip((101, 211, 307), margins, strict=True)
+                    ],
+                    delta=0.04,
+                )
+                self.assertEqual(relation, expected)
+        self.assertEqual(
+            classify_threshold_relation(
+                [{"seed": 101, "margin": 0.08}], delta=None
+            ),
+            "resolution_unknown",
+        )
+
+    def test_metric_resolution_freeze_is_candidate_blind_and_deterministic(self) -> None:
+        calibration_input = {
+            "candidate_blind": True,
+            "seed_margins": [
+                {"seed": seed, "matched_null_margin": margin}
+                for seed, margin in zip(
+                    (19, 43, 71, 109, 163),
+                    (0.01, -0.04, 0.02, -0.03, 0.01),
+                    strict=True,
+                )
+            ],
+        }
+        first = freeze_metric_resolution(self.metric_sheet, calibration_input)
+        second = freeze_metric_resolution(self.metric_sheet, calibration_input)
+        self.assertEqual(first, second)
+        calibration, frozen_sheet = first
+        validate_record(calibration, self.schema)
+        validate_record(frozen_sheet, self.schema)
+        self.assertEqual(calibration["record"]["delta"], 0.04)
+        self.assertEqual(
+            frozen_sheet["record"]["resolution_policy"]["status"], "frozen"
+        )
+        bad = deepcopy(calibration_input)
+        bad["candidate_blind"] = False
+        with self.assertRaises(ContractError):
+            freeze_metric_resolution(self.metric_sheet, bad)
+
+    def test_developmental_interpretation_guards_next_move(self) -> None:
+        interpretation = load_json(
+            EXPERIMENT
+            / "contracts/fixtures/valid/narrow-developmental-interpretation.json"
+        )
+        validate_record(interpretation, self.schema)
+        bad = deepcopy(interpretation)
+        bad["record"]["classification_value"] = {
+            "rung": "T0_observation_tag",
+            "organizes_next_iteration": False,
+            "rationale": "Deliberate local-only mutation",
+        }
+        with self.assertRaises(ContractError):
+            validate_record(bad, self.schema)
+        bad = deepcopy(interpretation)
+        bad["record"]["next_move"]["disposition"] = "bounded_local_refinement"
+        with self.assertRaises(ContractError):
+            validate_record(bad, self.schema)
+        guarded = deepcopy(interpretation)
+        guarded["record"]["next_move"]["disposition"] = "bounded_local_refinement"
+        guarded["record"]["local_optimization_guard"] = {
+            "status": "applicable",
+            "same_causal_question": True,
+            "function_not_proxy": True,
+            "one_bounded_change": True,
+            "preserves_prior_result": True,
+            "falsifiable": True,
+            "advances": ["withdrawal_resistance"],
+            "rationale": "One bounded support weakening tests the disclosed function",
+        }
+        validate_record(guarded, self.schema)
 
     def _realization(self) -> dict[str, object]:
         return load_json(
@@ -326,7 +427,7 @@ class AE01ToolingTest(unittest.TestCase):
                 "rationale": "Artifact inspection has no live realization",
             },
             "artifact_kind": "fixture_json",
-            "schema_version": "1.0.0",
+            "schema_version": "1.1.0",
             "retention_mode": "tracked_selected_evidence",
             "resource_profile_ref": "ae01-resource-phase1-v1",
             "verification_command_profile_ref": "ae01-command-validate-phase1-v1",
@@ -390,7 +491,7 @@ class AE01ToolingTest(unittest.TestCase):
 
     def test_negative_terminal_requires_completed_verified_evidence(self) -> None:
         record = {
-            "schema_version": "1.0.0",
+            "schema_version": "1.1.0",
             "record_type": "terminal_classification",
             "record": {
                 "terminal_record_id": "fixture-terminal",
@@ -407,6 +508,7 @@ class AE01ToolingTest(unittest.TestCase):
                 "control_refs": [],
                 "retained_evidence_refs": [],
                 "reconstruction_status": "not_available",
+                "developmental_interpretation_ref": "fixture-interpretation",
                 "debt_refs": [],
                 "claim_impact": "none",
                 "record_complete": True,
@@ -419,7 +521,7 @@ class AE01ToolingTest(unittest.TestCase):
 
     def _report_projection(self, mode: str) -> dict[str, object]:
         return {
-            "schema_version": "1.0.0",
+            "schema_version": "1.1.0",
             "record_type": "report_projection",
             "record": {
                 "report_id": "ae01-fixture-report",
@@ -460,15 +562,35 @@ class AE01ToolingTest(unittest.TestCase):
         records = [
             {
                 "record_type": "terminal_classification",
-                "record": {"lane_id": lane_id, "record_complete": True},
+                "record": {
+                    "lane_id": lane_id,
+                    "record_complete": True,
+                    "developmental_interpretation_ref": f"interpretation-{lane_id}",
+                },
             }
             for lane_id in LANE_IDS
         ]
-        assert_synthesis_entry(records)
+        interpretations = [
+            {
+                "record_type": "developmental_interpretation",
+                "record": {
+                    "lane_id": lane_id,
+                    "interpretation_id": f"interpretation-{lane_id}",
+                },
+            }
+            for lane_id in LANE_IDS
+        ]
+        assert_synthesis_entry(records, interpretations)
         with self.assertRaises(ContractError):
-            assert_synthesis_entry(records[:-1])
+            assert_synthesis_entry(records[:-1], interpretations)
         with self.assertRaises(ContractError):
-            assert_synthesis_entry([*records[:-1], records[0]])
+            assert_synthesis_entry([*records[:-1], records[0]], interpretations)
+        with self.assertRaises(ContractError):
+            assert_synthesis_entry(records, interpretations[:-1])
+        mismatched = deepcopy(interpretations)
+        mismatched[0]["record"]["lane_id"] = "AE01-L02"
+        with self.assertRaises(ContractError):
+            assert_synthesis_entry(records, mismatched)
 
     def test_machine_local_path_in_record_fails_semantics(self) -> None:
         projection = self._report_projection("generated_projection")

@@ -16,7 +16,7 @@
         "positive_atlas_evidence_opened": false
       }
     },
-    "contract_revision": "P1-I5-revision-0.23",
+    "contract_revision": "P1-I5-revision-0.24",
     "experiment_id": "AE01",
     "extensions": {},
     "lanes": [
@@ -199,5 +199,5 @@
     "registry_id": "ae01-lane-registry"
   },
   "record_type": "lane_registry",
-  "schema_version": "1.0.0"
+  "schema_version": "1.1.0"
 }

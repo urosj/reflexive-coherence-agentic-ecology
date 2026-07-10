@@ -36,5 +36,5 @@
     "validated": false
   },
   "record_type": "realization_profile",
-  "schema_version": "1.0.0"
+  "schema_version": "1.1.0"
 }

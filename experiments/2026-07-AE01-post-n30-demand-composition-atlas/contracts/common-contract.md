@@ -1,8 +1,8 @@
 # AE01 Common Machine and Narrative Contract
 
-**Status:** frozen at P1-I3
+**Status:** refrozen at P1-I3 revision 0.24; Review R2 pending
 
-**Contract version:** `1.0.0`
+**Contract version:** `1.1.0`
 
 **Machine shape:** [schemas/ae01-contract.schema.json](schemas/ae01-contract.schema.json)
 
@@ -20,9 +20,9 @@ relationships, debt, controls, compatibility, and claim boundaries.
 The JSON Schema Draft 2020-12 bundle governs persisted field shape, required
 values, local types, enumerations, and closed extension placement.
 
-Python types and validators may later implement views and semantic checks for
-records actually consumed by tooling. They do not become a third schema
-authority and must not redefine Markdown meaning or JSON shape.
+Python types and validators implement views and semantic checks for records
+actually consumed by P1-I5 tooling. They do not become a third schema authority
+and must not redefine Markdown meaning or JSON shape.
 
 When layers disagree, the record fails closed:
 
@@ -39,7 +39,7 @@ Every persisted AE01 machine record uses:
 
 ```json
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "record_type": "<declared type>",
   "record": {}
 }
@@ -332,13 +332,81 @@ Domain-shaped interpretation does not create a domain package.
 
 A terminal record declares lane ID, classification, stopping condition and
 whether reached, attempted work, execution status, positive/negative/blocked/
-missing signatures, controls, retained evidence, reconstruction, missing
-information, debts, claim impact, record completeness, and forced non-selection.
+missing signatures, controls, retained evidence, reconstruction, its required
+developmental-interpretation reference, debts, claim impact, record
+completeness, and forced non-selection.
 
 An incomplete execution may close only when its record is complete. It cannot
 be scored as recurrence, positive evidence, or refutation.
 
-## 16. N31+ ranking and non-selection contract
+The terminal classification is a synthesis label. It never replaces the
+metric relation, boundary rung, support status, unexpected properties, or
+two-axis reading in the referenced interpretation.
+
+## 16. Metric-sheet contract
+
+Every primary lane metric has a first-class metric sheet. The sheet freezes
+candidate and comparator surfaces, numerator and denominator meanings,
+zero-denominator behavior, seed/configuration pairing, direction, the exact
+zero threshold, and the rule that per-seed margins remain visible rather than
+collapsing into one acceptance score.
+
+The metric sheet also freezes a candidate-blind resolution procedure. Its
+resolution band `delta` is the greater of declared numerical resolution and
+the maximum absolute matched-null margin from its calibration profile. The
+calibration uses a separate deterministic seed profile and may not inspect a
+candidate result. Candidate execution remains blocked until `delta` and its
+calibration artifact are frozen. A missing calibration produces
+`resolution_unknown`, never an intuitive “narrow” or “robust” label.
+
+The first-class metric-calibration record preserves the metric-sheet reference,
+candidate-blind declaration, exact seed/matched-null margins, measurement
+resolution, calculated `delta`, command profile, and a fixed no-candidate-
+evidence effect. It can authorize a resolution label but cannot support or
+refute the lane hypothesis.
+
+Thresholds are reference surfaces and top-rung anchors. They are not universal
+accept/reject gates and do not erase below-threshold observations.
+
+## 17. Developmental-interpretation contract
+
+Every completed lane result has one first-class developmental interpretation
+record. It preserves:
+
+- machine-derived per-seed threshold relations;
+- every lane boundary rung and the lowest honest highest-valid rung;
+- expected, adjacent, and unexpected expressed properties;
+- explicit support/naturalization status;
+- the T0-through-T4 classification-value rung;
+- separate becoming and development readings;
+- blocked stronger claims and claim ceiling;
+- one declared next-move disposition and falsifier; and
+- the local-optimization guard when bounded refinement is proposed.
+
+The becoming reading asks what appeared, what class remains uncertain, which
+boundary is live, what support carried the appearance, and what can be claimed.
+The development reading asks what condition was disclosed, whether the aim is
+supported or disturbed, and what organization, measurement, and stewardship
+question follows.
+
+Metric relations and calibration identities are generated machine facts.
+Boundary-rung status and property evidence references are controlled
+classifications. Becoming/development prose and next-move rationale are
+explicitly authored interpretations inside the validated envelope; their
+presence does not turn them into generated facts, and they cannot contradict
+the relations, evidence refs, terminal state, or claim boundary.
+
+`T0_observation_tag` is preserved for audit but cannot organize another
+iteration. A local refinement is allowed only when it retains the same causal
+question, targets the function rather than the proxy, changes one bounded
+surface, preserves the prior result, names a falsifier, and advances at least
+one of source specificity, withdrawal resistance, recurrence, transfer,
+broader regime validity, or native expression. Otherwise the next move must be
+an alternative realization, new probe, class/hypothesis revision, aim
+redescription, or explicit stop. Every scientific change is a new
+preregistration, never an infrastructure retry or retroactive rescue.
+
+## 18. N31+ ranking and non-selection contract
 
 Only eligible post-synthesis candidates may be scored. The record embeds the
 fixed D-029 dimension, group, critical-dimension, overall, tie, and sensitivity
@@ -354,7 +422,7 @@ reasons and an applicable information-gathering step.
 Scoring cannot occur before synthesis. Intuition cannot silently override a
 gate, score, tie, sensitivity result, or required non-selection.
 
-## 17. Artifact-manifest and profile-resolution contract
+## 19. Artifact-manifest and profile-resolution contract
 
 Every retained artifact entry resolves artifact ID/path, producing command and
 working directory, environment/dependency/source/configuration identities,
@@ -370,7 +438,7 @@ expose every D-027 value. Scratch and transient registered output cannot
 support a gate. Omitted large artifacts use `reconstructable_local_only` and
 require the same verified entry as tracked selected evidence.
 
-## 18. Human-readable report-projection contract
+## 20. Human-readable report-projection contract
 
 Every report declares ID, `generated_projection` or
 `assembled_interpretation` mode, controlling machine sources/facts, authored
@@ -381,7 +449,7 @@ Machine facts remain authoritative. Authored interpretation cannot invent
 evidence, alter a terminal result, discharge debt, change a score, or raise a
 claim ceiling.
 
-## 19. Cross-record semantic invariants
+## 21. Cross-record semantic invariants
 
 P1-I5 validators must enforce at least:
 
@@ -400,8 +468,15 @@ P1-I5 validators must enforce at least:
 13. Machine facts and report projections agree.
 14. Lane registry and narrative lane projections agree.
 15. A retained-artifact manifest resolves every D-027 field.
+16. Every terminal record references a same-lane developmental interpretation.
+17. “Narrow” and “robust” relations are machine-derived from a frozen metric
+    sheet and calibration; unknown resolution remains explicit.
+18. Threshold failure cannot erase a valid lower, adjacent, or unexpected
+    expressed property.
+19. A T0 observation tag cannot organize another scientific iteration.
+20. Local optimization cannot target a proxy or reuse the infrastructure retry.
 
-## 20. P1-I3 claim boundary
+## 22. P1-I3 claim boundary
 
 This contract freezes record meaning and shape only. Schema completeness,
 registry consistency, or a valid empty record does not support a lane result,

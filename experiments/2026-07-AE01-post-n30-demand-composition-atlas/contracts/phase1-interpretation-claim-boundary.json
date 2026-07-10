@@ -1,0 +1,36 @@
+{
+  "record": {
+    "allowed_claims": [
+      "Threshold relations describe observed per-seed margins against frozen reference surfaces",
+      "Boundary rungs classify the lowest expression actually reached",
+      "Two-axis readings may propose a bounded next question without changing the recorded result"
+    ],
+    "blocked_relabels": [
+      "below-threshold observation as no evidence",
+      "above-threshold sign as native capacity or regime",
+      "local optimization as infrastructure retry",
+      "unexpected property as proof of the original hypothesis",
+      "developmental interpretation as positive LGRC evidence"
+    ],
+    "claim_boundary_id": "ae01-phase1-developmental-interpretation-claim",
+    "claim_ceiling": "AE01-C0 interpretation infrastructure only until lane evidence and dedicated gates exist",
+    "controlling_evidence_refs": [],
+    "debt_refs": [],
+    "extensions": {},
+    "reopening_condition": "A lane result, metric calibration, or later review exposes an unrepresented boundary or invalid interpretation relation",
+    "subject_id": "AE01",
+    "terminal_effects": [
+      "No threshold relation alone determines a terminal classification",
+      "Hard validity failure blocks scientific interpretation but preserves operational failure history",
+      "Hard claim-safety failure removes the unsafe claim while preserving valid lower observations"
+    ],
+    "unsafe_flags": {
+      "binary_threshold_owns_interpretation": false,
+      "local_optimization_rewrites_prior_result": false,
+      "threshold_failure_erases_observation": false,
+      "threshold_pass_proves_native_capacity": false
+    }
+  },
+  "record_type": "claim_boundary",
+  "schema_version": "1.1.0"
+}

@@ -1,6 +1,6 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P1-I5 artifact, tooling, and reconstruction freeze complete; P1-GATE review next
+**Status:** revision 0.24 developmental interpretation and tooling freeze complete; P1-GATE review next
 
 **Acceptance state:** `AE01-C0` assigned; `AE01-C1` through `AE01-C6` unassigned
 
@@ -15,6 +15,9 @@
 
 **Hypothesis freeze:**
 [P1-I4 hypothesis index](hypotheses/README.md)
+
+**Developmental interpretation:**
+[P1-I4 threshold, ladder, and next-move contract](hypotheses/developmental-interpretation-contract.md)
 
 **Tooling freeze:**
 [P1-I5 artifact, tooling, and reconstruction contract](implementation/P1-I5-tooling-contract.md)
@@ -77,9 +80,11 @@ The [machine-readable registry](contracts/lane-registry.json) controls stable
 IDs, current names, order, inclusion state, and rename provenance. The roadmap
 and this README are narrative projections and must remain consistent with it.
 
-Lanes may execute independently after P1-GATE and may not consume another
-lane's conclusion. Cross-lane synthesis begins only after every lane has a
-complete terminal record.
+After P1-GATE, lanes may calibrate and register independently and may not
+consume another lane's conclusion. Candidate cells remain blocked until the
+lane's candidate-blind resolution and exact registration freeze. Cross-lane
+synthesis begins only after every lane has a complete terminal record and
+linked developmental interpretation.
 
 ## Atlas content
 
@@ -124,9 +129,9 @@ non-selection.
 P1-I1 source admission                         passed
 P1-I2 roadmap and experiment boundary          passed
 P1-I3 machine and narrative contracts          passed
-P1-I4 hypotheses, controls, and failures        passed
-P1-I5 tooling and reconstruction                passed by this revision
-P1-GATE                                         review next; execution remains closed
+P1-I4 hypotheses, controls, failures, ladders   passed at revision 0.24
+P1-I5 tooling, calibration, reconstruction      passed at revision 0.24
+P1-GATE                                         review next; calibration remains closed
 
 P2-I1 through P2-I7                             independent lane execution
 P2-I8                                           cross-lane synthesis
@@ -140,9 +145,10 @@ No P1 work may assign a positive lane result.
 
 - `contracts/` owns experiment-local narrative and machine contracts.
 - `hypotheses/` owns the frozen P1-I4 lane/synthesis hypotheses, stopping
-  contract, controls, and failure register.
+  contract, controls, failure register, and developmental interpretation.
 - `implementation/` owns AE01-specific plans and checklists.
-- `configs/` owns the frozen P1-I5 profiles and finite execution policy.
+- `configs/` owns the frozen profiles, finite execution policy, hard-gate
+  partition, threshold relations, lane ladders, and next-move policy.
 - `scripts/` owns experiment-local validation and reconstruction tooling.
 - `outputs/` and `reports/` own only explicitly selected retained products.
 
@@ -159,10 +165,16 @@ exploratory_scratch -> registered_probe -> retained_evidence
 
 Only verified retained evidence may support a report fact, terminal
 classification, or gate. P1-I3 freezes the manifest, profile, runtime-receipt,
-and report-projection shapes. P1-I5 implements canonical serialization,
-resolved manifests, portable reconstruction commands, selected-output policy,
-duplicate reconstruction, and semantic validation. These are infrastructure
-entry points, not authorization to execute a lane before P1-GATE.
+metric-sheet, calibration, developmental-interpretation, terminal, and report
+shapes. P1-I5 implements canonical serialization, resolved manifests,
+candidate-blind resolution freeze, threshold-relation derivation, portable
+reconstruction, and semantic validation. These are infrastructure entry
+points, not authorization to calibrate or execute before P1-GATE.
+
+Thresholds are frozen reference surfaces and highest-rung anchors, not
+universal accept/reject gates. Every valid result must preserve its lower,
+adjacent, unexpected, narrow, mixed, or counter-directional structure and end
+with separate becoming/development readings plus a falsifiable next move.
 
 Artifact inspection is non-runtime. Requested live execution requires an
 explicit compatible local PyGRC binding and cannot fall back to inspection,

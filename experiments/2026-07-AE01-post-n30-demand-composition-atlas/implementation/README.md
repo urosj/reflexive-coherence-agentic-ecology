@@ -12,13 +12,16 @@ nativity.
 
 P1-I4 now supplies the implementation semantics through the
 [hypothesis index](../hypotheses/README.md): stable hypothesis/control/failure
-IDs, finite comparison groups, terminal rules, and a bounded P1-I5 handoff.
+IDs, finite comparison groups, terminal rules, lane boundary ladders,
+threshold interpretation, and a bounded P1-I5 handoff.
 
 P1-I5 implements the minimum experiment infrastructure in the
 [artifact, tooling, and reconstruction contract](P1-I5-tooling-contract.md).
 It materializes finite comparison matrices, validates the P1-I3/P1-I4
 contracts, produces reproducible manifests and bounded reports, and enforces
-runtime/read-only boundaries.
+runtime/read-only boundaries. Revision 0.24 also implements first-class metric
+sheets, candidate-blind resolution calibration, machine-derived threshold
+relations, developmental-interpretation validation, and guarded next moves.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

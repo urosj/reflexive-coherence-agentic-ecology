@@ -1,0 +1,29 @@
+{
+  "record": {
+    "blocked_claims": ["Native capacity remains blocked"],
+    "boundary_rungs": [
+      {"evidence_refs": ["fixture-result"], "name": "Auditable medium history", "rationale": "Reached", "rung_id": "AE01-L01-R01", "status": "reached"},
+      {"evidence_refs": [], "name": "Later formation or susceptibility sign", "rationale": "Not reached", "rung_id": "AE01-L01-R02", "status": "not_reached"},
+      {"evidence_refs": [], "name": "Medium-history-specific functional dependence", "rationale": "Not reached", "rung_id": "AE01-L01-R03", "status": "not_reached"},
+      {"evidence_refs": [], "name": "Withdrawal and source controls preserve specificity", "rationale": "Not reached", "rung_id": "AE01-L01-R04", "status": "not_reached"},
+      {"evidence_refs": [], "name": "Meaningful carrier or timescale variation retains the relation", "rationale": "Not reached", "rung_id": "AE01-L01-R05", "status": "not_reached"}
+    ],
+    "becoming_reading": {"appearance": "Counter margins", "claim_ceiling": "Observation only", "classification_status": "Invalid fixture", "live_boundary": "Relation derivation", "support_dependence": "Unknown"},
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "classification_value": {"organizes_next_iteration": false, "rationale": "Local fixture", "rung": "T0_observation_tag"},
+    "debt_refs": [],
+    "development_reading": {"aim_effect": "undetermined", "condition_revealed": "Fixture", "measurement_question": "Will semantic validation reject the mismatch?", "organization_implication": "None", "stewardship_implication": "None"},
+    "expressed_properties": [],
+    "extensions": {},
+    "highest_valid_rung": {"rationale": "Only the first rung was reached", "reference_id": "AE01-L01-R01", "status": "applicable"},
+    "interpretation_id": "ae01-fixture-invalid-relation",
+    "lane_id": "AE01-L01",
+    "local_optimization_guard": {"rationale": "No optimization", "status": "not_applicable"},
+    "metric_relations": [{"calibration_artifact_ref": "ae01-fixture-calibration", "delta": 0.04, "metric_sheet_ref": "ae01-l01-primary-metric-v1", "rationale": "Deliberately wrong", "relation": "robust_aligned", "resolution_status": "frozen", "seed_margins": [{"margin": -0.08, "seed": 101}, {"margin": -0.03, "seed": 211}, {"margin": -0.06, "seed": 307}], "threshold_passed": false}],
+    "next_move": {"disposition": "stop_no_reusable_or_generative_value", "falsifier": "Not applicable to fixture", "new_preregistration_required": false, "rationale": "Invalid fixture", "target_function": "Semantic rejection"},
+    "source_result_refs": ["fixture-result"],
+    "support_status": "unresolved"
+  },
+  "record_type": "developmental_interpretation",
+  "schema_version": "1.1.0"
+}

@@ -15,6 +15,11 @@ evidence.
   manifest is deterministic and claim-free.
 - `valid/unavailable-realization-profile.json` supplies a compatible shape for
   fail-closed missing-runtime tests without claiming runtime availability.
+- `valid/candidate-blind-metric-calibration.json` proves resolution derives
+  only from declared measurement resolution and matched-null margins.
+- `valid/narrow-developmental-interpretation.json` proves a threshold-passing
+  result can remain resolution-adjacent, scaffold-dependent, and bounded by a
+  lower rung with a new probe rather than automatic promotion.
 
 ## Invalid fixtures
 
@@ -23,6 +28,15 @@ evidence.
 - `invalid/constructed-native-role.json` passes basic shape but fails Python
   semantic authority because an RCAE construction is relabeled as inherited
   graph evidence.
+- `invalid/threshold-relation-mismatch.json` passes shape but fails semantic
+  authority because its asserted relation disagrees with the seed margins and
+  frozen resolution band.
+
+## Reconstruction inputs
+
+- `inputs/l01-candidate-blind-calibration-input.json` is the exact non-record
+  CLI input for reconstructing the Lane 1 calibration example. It contains no
+  candidate outcome and has no evidence effect by itself.
 
 The normative Markdown meaning remains in `../common-contract.md` and the
 P1-I4 hypothesis/control/failure set. Fixtures cannot redefine it and cannot

@@ -1,0 +1,22 @@
+{
+  "record": {
+    "calibration_id": "ae01-fixture-metric-calibration",
+    "candidate_blind": true,
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "command_profile_ref": "ae01-command-freeze-resolution-v1",
+    "delta": 0.04,
+    "evidence_effect": "resolution_only_no_candidate_evidence",
+    "extensions": {},
+    "measurement_resolution": 0.001,
+    "metric_sheet_ref": "ae01-l01-primary-metric-v1",
+    "seed_margins": [
+      {"matched_null_margin": 0.01, "seed": 19},
+      {"matched_null_margin": -0.04, "seed": 43},
+      {"matched_null_margin": 0.02, "seed": 71},
+      {"matched_null_margin": -0.03, "seed": 109},
+      {"matched_null_margin": 0.01, "seed": 163}
+    ]
+  },
+  "record_type": "metric_calibration",
+  "schema_version": "1.1.0"
+}
