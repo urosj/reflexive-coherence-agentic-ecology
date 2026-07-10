@@ -1,80 +1,177 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** Phase 1 in progress; P1-I1 source admission passed
+**Status:** P1-I2 roadmap and experiment boundary frozen; P1-I3 not started
 
-**Acceptance state:** AE01-C0 through AE01-C6 are unassigned
+**Acceptance state:** `AE01-C0` assigned; `AE01-C1` through `AE01-C6` unassigned
 
 **Roadmap:**
 [Post-N30 Agentic-Ecology Demand and Composition Atlas](../Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md)
+
+**Source admission:**
+[P1-I1 source inventory](contracts/source-inventory.md)
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
 [master checklist](../../implementation/PostN30-checklist.md)
 
-## Purpose
+## Core question
 
-AE01 will test how far the N29/N30 handoff can support ecology-side
-shared-medium demand discovery and controlled composition, where explicit RCAE
-constructions are useful, and which recurring missing substrate distinctions
-should be returned to the graph/ecology spiral.
+Which ecology-side shared-medium patterns can be consumed, composed, or
+explicitly constructed from the admitted N29/N30 handoff; where do those
+compositions fail or expose missing substrate distinctions; and which recurring
+demands, if any, justify proposing a later graph-side primitive or
+building-block experiment?
 
-AE01 is local to this repository. It is not graph experiment N31 and does not
-modify the graph/PyGRC repository.
+AE01 is a local demand and composition atlas. It is not graph experiment N31,
+a canonical specification, a reusable ecology runtime, or evidence that agency
+or an ecology regime exists.
+
+## Graph/ecology spiral role
+
+The graph project owns LGRC implementation, source-current substrate evidence,
+native admission, and graph experiment authority. RCAE owns ecology-side demand
+discovery, controlled composition, explicit constructed probes, and the return
+of bounded missing-surface contracts.
+
+RCAE may consume graph artifacts and compatible public runtime surfaces but
+must never modify the graph/PyGRC repository. Demand does not become substrate
+evidence, and a later native implementation never silently upgrades an earlier
+constructed RCAE run.
+
+## Source and non-evidence boundary
+
+- The four RCAE papers supply ontology, mapping method, control vocabulary, and
+  domain-shaped motivation only.
+- N29 supplies the demand/capability/debt bridge, A-D exemplars, composition
+  seeds, and accepted probe contracts within its bridge ceiling.
+- N30 supplies bounded P2/M2 trace-mediated eligibility evidence,
+  replay/control patterns, and medium debt.
+- The active N30+ handoff supplies the cross-project continuation rule.
+- N30+ roadmap and candidate prose supplies orientation, not positive evidence.
+
+The exact identities, hashes, roles, precedence, and blocked claims are in the
+source inventory. Source admission supports no lane result.
+
+## Stable lane projection
+
+| Stable ID | Current display name | Maximum intended result |
+| --- | --- | --- |
+| `AE01-L01` | Minimal shared-medium niche formation | Bounded niche-conditioning demand pattern |
+| `AE01-L02` | Shared-pool co-conditioning | Bounded shared-pool co-conditioning demand pattern |
+| `AE01-L03` | Trail or stigmergic field | Bounded trail/stigmergic demand pattern |
+| `AE01-L04` | Nursery or support field | Bounded support-conditioned admissibility demand pattern |
+| `AE01-L05` | Boundary-conditioned exchange | Bounded boundary-conditioned exchange demand pattern |
+| `AE01-L06` | Capacity circulation | Bounded capacity-circulation demand pattern |
+| `AE01-L07` | Parent-basin modulation demand and missing-surface classification | Bounded demand/missing-surface classification; positive M3/M4 is not expected |
+
+P1-I3 will freeze the machine-readable registry controlling stable IDs,
+current names, order, inclusion state, and rename provenance. The roadmap and
+this README are narrative projections and must remain consistent with it.
+
+Lanes may execute independently after P1-GATE and may not consume another
+lane's conclusion. Cross-lane synthesis begins only after every lane has a
+complete terminal record.
+
+## Atlas content
+
+AE01 will contain:
+
+- source and authority inventory;
+- stable lane registry;
+- common pattern-card collection;
+- N29/N30 traceability and N30-overconsumption guard;
+- demand and missing-surface atlas;
+- composition/dependency and interference atlas;
+- debt, failure, and control atlas;
+- cross-lane recurring-requirement synthesis;
+- N31+ ranking or explicit non-selection;
+- specification and implementation promotion queues; and
+- closeout plus graph/ecology spiral handoff.
+
+P1 defines these records and validation rules. P2 populates them with retained
+evidence and terminal classifications. P3 ranks candidates, decides selection
+or non-selection, and closes the atlas.
+
+## Terminal states
+
+Every lane must terminate as one of:
+
+```text
+supported_bounded_candidate
+partial_or_mixed
+not_supported
+blocked_missing_prerequisite
+incomplete_execution
+```
+
+An incomplete execution can close only through a complete record of what was
+attempted, what remains missing, and how claims are affected. It supports
+neither a positive nor negative scientific result and forces N31+
+non-selection.
+
+## Experiment phases and iteration order
+
+```text
+P1-I1 source admission                         passed
+P1-I2 roadmap and experiment boundary          passed by this revision
+P1-I3 machine and narrative contracts          next
+P1-I4 hypotheses, controls, and failures        after P1-I3
+P1-I5 tooling and reconstruction                after P1-I4
+P1-GATE                                         authorizes lane execution
+
+P2-I1 through P2-I7                             independent lane execution
+P2-I8                                           cross-lane synthesis
+P2-I9                                           control/debt/acceptance synthesis
+P3                                              ranking, promotion, and closeout
+```
+
+No P1 work may assign a positive lane result.
 
 ## Current workspace
 
-- `contracts/` owns experiment-local machine and narrative contracts.
+- `contracts/` owns experiment-local narrative and machine contracts.
 - `hypotheses/` owns preregistered lane and synthesis hypotheses.
-- `implementation/` owns AE01-specific implementation plans and checklists.
+- `implementation/` owns AE01-specific plans and checklists.
 
-Directories for configurations, scripts, outputs, and reports will be created
-only when a frozen contract gives them an immediate owner. Reusable source,
-canonical specifications, and domain packages are not scaffolded by AE01
-initialization.
-
-The accepted narrative source-admission record is
-[contracts/source-inventory.md](contracts/source-inventory.md). It satisfies
-P1-I1 without assigning an AE01 acceptance rung or opening positive evidence.
-
-## Initial lanes
-
-The accepted initial lane set is:
-
-1. minimal shared-medium niche formation;
-2. shared-pool co-conditioning;
-3. trail or stigmergic field;
-4. nursery or support field;
-5. boundary-conditioned exchange;
-6. capacity circulation; and
-7. parent-basin modulation demand and missing-surface classification.
-
-Lane names and detailed contracts remain subject to P1-I2 through P1-I4
-freeze. P1-I2 must assign stable lane IDs. P1-I3 must freeze one
-machine-readable lane registry as the authority for current display names,
-ordering, inclusion status, and rename provenance; this README and the roadmap
-remain validated narrative projections. No lane may execute before P1-GATE.
+Configuration, script, output, report, and reusable-source paths will be
+created only when a frozen contract gives them an immediate owner. No domain
+package or canonical specification is selected by this experiment boundary.
 
 ## Evidence and reconstruction boundary
 
-No evidence artifacts or reconstruction entry points exist yet. P1-I5 must
-define canonical records, manifests, portable commands, runtime bindings,
-selected-output policy, and clean duplicate reconstruction before execution.
-It must also distinguish exploratory scratch, registered probes, and retained
-evidence; only the final tier may support a classification or gate.
+AE01 distinguishes:
 
-Conceptual papers are ontology and method sources only. N29/N30 records retain
-their graph-side evidence scope. Every AE01 record must distinguish inherited
-evidence, ecology interpretation, constructed mechanism, observed result,
-missing surface, and proposed graph discriminator.
+```text
+exploratory_scratch -> registered_probe -> retained_evidence
+```
 
-Artifact inspection does not require PyGRC. Requested live execution requires
-an explicit compatible local PyGRC binding and cannot fall back to inspection,
-mock behavior, or a different realization. Local runtime paths are never
-committed.
+Only verified retained evidence may support a report fact, terminal
+classification, or gate. P1-I5 must still define canonical records, manifests,
+portable reconstruction commands, runtime receipts, selected-output policy,
+and duplicate reconstruction. No execution entry point exists yet.
+
+Artifact inspection is non-runtime. Requested live execution requires an
+explicit compatible local PyGRC binding and cannot fall back to inspection,
+mock behavior, or another realization. Local runtime paths are never committed.
+
+Machine records control facts. Human-readable reports are generated projections
+or deterministic assemblies with bounded authored interpretation and cannot
+raise the machine claim ceiling.
+
+## Handoff role
+
+AE01 may return one selected or explicitly non-selected primitive/building-block
+demand to the graph project. Any proposed discriminator is ecology-side
+guidance, not LGRC evidence or automatic assignment of N31. The graph project
+retains authority to accept, reject, rename, or replace it.
+
+Successful AE01 contracts may enter post-closeout specification and
+implementation queues. Nothing moves to canonical `specs/`, reusable `src/`, or
+a domain package merely because it appears in the atlas.
 
 ## Claim boundary
 
-Initialization supports no positive atlas claim. In particular, it does not
-establish shared-medium coordination, a reusable primitive or building block,
-an ecology motif or regime, a domain implementation, agency, or a selected
-N31+ experiment.
+`AE01-C0` establishes an initialized and bounded experiment only. It does not
+establish a shared-medium pattern, composition, reusable primitive or building
+block, coordination, communication, motif, regime, domain ecology, agency,
+life, or selected N31+ experiment.

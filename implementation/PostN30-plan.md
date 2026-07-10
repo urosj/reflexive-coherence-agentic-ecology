@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.19
+**Plan revision:** 0.20
 
 **Date:** 2026-07-10
 
@@ -573,13 +573,14 @@ closeout MUST each carry an explicit disposition for these six debts.
 with seven comparable lanes that may execute independently after the Phase 1
 contract freeze:
 
-1. minimal shared-medium niche formation;
-2. shared-pool co-conditioning;
-3. trail or stigmergic field;
-4. nursery or support field;
-5. boundary-conditioned exchange;
-6. capacity circulation;
-7. parent-basin modulation demand and missing-surface classification.
+1. `AE01-L01` — minimal shared-medium niche formation;
+2. `AE01-L02` — shared-pool co-conditioning;
+3. `AE01-L03` — trail or stigmergic field;
+4. `AE01-L04` — nursery or support field;
+5. `AE01-L05` — boundary-conditioned exchange;
+6. `AE01-L06` — capacity circulation;
+7. `AE01-L07` — parent-basin modulation demand and missing-surface
+   classification.
 
 Lane 1 is motivated by N30 trace-conditioned eligibility, N29 Prototype B's
 boundary/shared-medium unit, N29 Prototype C's susceptibility/re-entry surface,
@@ -1709,6 +1710,7 @@ directive.
 | 2026-07-10 | Revision 0.17: accepted D-037 as the Review R1 resolution, introducing graduated evidence ceremony, resolved shared profiles, generated runtime receipts, experiment-local construction sharing, schema-drift controls, and qualitative rationale alongside synthesis-only scoring. P0-GATE passed. |
 | 2026-07-10 | Revision 0.18: applied the post-scaffold review follow-ups by aligning the experiment reconstruction summary with every D-027 requirement and requiring stable lane IDs, a single machine-readable lane registry, rename provenance, and validated narrative projections during Phase 1. No completed gate reopened. |
 | 2026-07-10 | Revision 0.19: passed P1-I1 source inventory and method admission with verified conceptual-source digests, N29 closeout and ten-artifact lineage, A-D prototype/debt boundaries, N30 replay/closeout evidence, mutable-roadmap provenance, and the current N30+ cross-project spiral rule. No positive AE01 evidence or acceptance rung opened. |
+| 2026-07-10 | Revision 0.20: passed P1-I2 with a complete atlas content outline, stable `AE01-L01` through `AE01-L07` identities, lane motivations and ceilings, catalog/ontology rules, debt and terminal taxonomies, expected outputs, stopping/non-selection boundaries, and aligned roadmap/README projections. `AE01-C0` assigned with no positive evidence. |
 
 ## 18. Program completion criteria
 

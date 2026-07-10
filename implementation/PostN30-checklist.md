@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.19
+**Baseline revision:** 0.20
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.19 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.20 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | In progress | P1-I2-GATE | P1-I1-GATE passed |
+| Phase 1 — AE01 contract freeze | In progress | P1-I3-GATE | P1-I2-GATE passed |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -58,7 +58,7 @@ AE01 ladder dashboard:
 
 | Rung | Meaning | Status |
 | --- | --- | --- |
-| AE01-C0 | Initialized, no atlas claim | Not assigned |
+| AE01-C0 | Initialized, no atlas claim | Assigned at P1-I2; no positive evidence |
 | AE01-C1 | Source inventory and consumption boundaries accepted | Not assigned |
 | AE01-C2 | Lane schemas, controls, and claim guards frozen | Not assigned |
 | AE01-C3 | All required lane records classified | Not assigned |
@@ -401,43 +401,43 @@ Entry condition:
 
 Required roadmap content:
 
-- [ ] State the core Post-N30 question.
-- [ ] State the graph/ecology spiral role.
-- [ ] Define AE01 as a local experiment rather than graph N31.
-- [ ] Define all seven initial lanes.
-- [ ] Assign one stable ID to each accepted initial lane and use it consistently
+- [x] State the core Post-N30 question.
+- [x] State the graph/ecology spiral role.
+- [x] Define AE01 as a local experiment rather than graph N31.
+- [x] Define all seven initial lanes.
+- [x] Assign one stable ID to each accepted initial lane and use it consistently
   in the roadmap and AE01 README.
-- [ ] Cite N30 trace-conditioned eligibility, N29 Prototype B, N29 Prototype C,
+- [x] Cite N30 trace-conditioned eligibility, N29 Prototype B, N29 Prototype C,
   and ecology demand mapping as the motivation for Lane 1 without treating
   `niche` as an N30-supported label.
-- [ ] Cite the N29 nursery-demand debt row, N29 Prototype D, N22 susceptibility
+- [x] Cite the N29 nursery-demand debt row, N29 Prototype D, N22 susceptibility
   context, N28 generative/extractive discipline, and N30+ support redistribution
   as the motivation for Lane 4.
-- [ ] Define Lane 7 as parent-basin modulation demand and expected
+- [x] Define Lane 7 as parent-basin modulation demand and expected
   missing-surface classification, not a positive M3/M4 search.
-- [ ] Define the catalog hierarchy and primary-layer rule.
-- [ ] Define domain-role, placement, and domain-specific versus transferable
+- [x] Define the catalog hierarchy and primary-layer rule.
+- [x] Define domain-role, placement, and domain-specific versus transferable
   classification without preselecting a domain package.
-- [ ] Define shared-medium and parent-basin ontology requirements.
-- [ ] Define debt and failure taxonomies.
-- [ ] Define N29/N30 consumption constraints.
-- [ ] Define expected cross-lane outputs.
-- [ ] Define AE01-C0 through AE01-C6.
-- [ ] Define finite positive, negative, blocked, incomplete, non-selection, and
+- [x] Define shared-medium and parent-basin ontology requirements.
+- [x] Define debt and failure taxonomies.
+- [x] Define N29/N30 consumption constraints.
+- [x] Define expected cross-lane outputs.
+- [x] Define AE01-C0 through AE01-C6.
+- [x] Define finite positive, negative, blocked, incomplete, non-selection, and
   closeout classifications and stopping conditions.
-- [ ] Define rename behavior: stable IDs persist; initial and current display
+- [x] Define rename behavior: stable IDs persist; initial and current display
   names, contract revision, and rationale remain visible.
-- [ ] State blocked claims.
+- [x] State blocked claims.
 
 Required AE01 README content:
 
-- [ ] Core question and status.
-- [ ] Source lanes and non-evidence sources.
-- [ ] Experiment phases and iteration order.
-- [ ] Reconstruction entry points.
-- [ ] Output/report relationship.
-- [ ] Claim ceiling and unsafe relabels.
-- [ ] Handoff role to specs, implementation, and graph N31+.
+- [x] Core question and status.
+- [x] Source lanes and non-evidence sources.
+- [x] Experiment phases and iteration order.
+- [x] Reconstruction entry points, including their explicit pending status.
+- [x] Output/report relationship.
+- [x] Claim ceiling and unsafe relabels.
+- [x] Handoff role to specs, implementation, and graph N31+.
 
 Iteration boundary:
 
@@ -448,18 +448,21 @@ It does not answer the atlas questions or preselect a winning building block.
 
 Exit gate `P1-I2-GATE`:
 
-- [ ] Roadmap and README agree on scope, lanes, gates, and non-claims.
-- [ ] Roadmap and README agree on every provisional stable lane ID, display
+- [x] Roadmap and README agree on scope, lanes, gates, and non-claims.
+- [x] Roadmap and README agree on every stable lane ID, display
   name, order, and inclusion state.
-- [ ] Every lane has a declared reason for inclusion.
-- [ ] The roadmap contains no positive lane result or fixed N31 selection.
-- [ ] AE01-C0 can be assigned without implying positive evidence.
+- [x] Every lane has a declared reason for inclusion.
+- [x] The roadmap contains no positive lane result or fixed N31 selection.
+- [x] AE01-C0 assigned without implying positive evidence.
+- [x] `P1-I2-GATE` passed. Evidence:
+  `experiments/Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md` and
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md`.
 
 ### P1-I3 — Machine and narrative contract freeze
 
 Entry condition:
 
-- [ ] `P1-I2-GATE` passed.
+- [x] `P1-I2-GATE` passed.
 
 Required common contracts:
 
@@ -672,7 +675,7 @@ Exit gate `P1-I5-GATE`:
 ### Phase 1 exit gate `P1-GATE`
 
 - [x] `P1-I1-GATE` passed.
-- [ ] `P1-I2-GATE` passed.
+- [x] `P1-I2-GATE` passed.
 - [ ] `P1-I3-GATE` passed.
 - [ ] `P1-I4-GATE` passed.
 - [ ] `P1-I5-GATE` passed.
@@ -1600,7 +1603,8 @@ Use this section when checking a conditional item as deferred.
 | P0-I3-GATE | Revision 0.16 experiment/implementation indexes, Post-N30 roadmap, AE01 workspace, owned Phase 1 paths, README navigation, and portability scan | 2026-07-10 | Self-audited; passed |
 | P0-GATE | Revision 0.17; P0-I1 through P0-I3 passed; Review R1 accepted as D-037 with no P0-I2 reopening | 2026-07-10 | Accepted by project owner; passed |
 | P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-GATE | Pending | — | Open; P1-I2 ready |
+| P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
+| P1-GATE | Pending | — | Open; P1-I3 ready |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -1663,12 +1667,13 @@ Change log:
 | CL-016 | 2026-07-10 | Revision 0.16 completed P0-I3 with the minimum owned scaffold and navigation, while explicitly deferring specs, source packaging, and execution/output paths. | P0-I3-GATE onward | Superseded by CL-017 |
 | CL-017 | 2026-07-10 | Revision 0.17 accepted D-037 as the R1 resolution: ceremony scales with evidential use while safety remains fixed; shared profiles, generated receipts, experiment-local construction sharing, schema-drift controls, and qualitative ranking rationale reduce compliance friction. P0-GATE passed. | P0-GATE and P1-GATE onward | Superseded by CL-018 |
 | CL-018 | 2026-07-10 | Revision 0.18 aligned the experiment reconstruction summary with D-027 and added Phase 1 stable lane IDs, a single machine lane registry, rename provenance, and narrative projection validation. Completed Phase 0 gates remain closed. | P1-I2-GATE onward | Superseded by CL-019 |
-| CL-019 | 2026-07-10 | Revision 0.19 passed P1-I1 with a verified narrative source inventory, explicit mutable-roadmap provenance, all N29 debts carried, and N30 bounded at P2/M2. No AE01 rung or positive result opened. | P1-I1-GATE onward | Active |
+| CL-019 | 2026-07-10 | Revision 0.19 passed P1-I1 with a verified narrative source inventory, explicit mutable-roadmap provenance, all N29 debts carried, and N30 bounded at P2/M2. No AE01 rung or positive result opened. | P1-I1-GATE onward | Superseded by CL-020 |
+| CL-020 | 2026-07-10 | Revision 0.20 passed P1-I2 with a complete atlas content outline, stable lane IDs, source motivations, ontology and placement rules, debt/failure/terminal taxonomies, stopping conditions, and aligned narrative projections. `AE01-C0` assigned without positive evidence. | P1-I2-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Complete P1-I2 roadmap and experiment boundary freeze.
-2. [ ] Assign stable lane IDs and align roadmap/README projections.
-3. [ ] Pass `P1-I2-GATE` and assign AE01-C0 without positive evidence.
+1. [ ] Complete P1-I3 machine and narrative contract freeze.
+2. [ ] Freeze the machine lane registry and common artifact contracts.
+3. [ ] Pass `P1-I3-GATE` without opening positive lane evidence.

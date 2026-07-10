@@ -13,8 +13,8 @@ being placed here.
 - [Master program plan](../implementation/PostN30-plan.md)
 - [Master program checklist](../implementation/PostN30-checklist.md)
 
-AE01 has passed P1-I1 source admission, but its Phase 1 contract has not been
-frozen, no acceptance rung has been assigned, and no atlas result is supported.
+AE01 has passed P1-I2 and assigned `AE01-C0`; its machine contracts are not yet
+frozen and no positive atlas result is supported.
 
 ## Experiment authority
 
