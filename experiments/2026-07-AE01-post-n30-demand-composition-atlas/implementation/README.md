@@ -23,6 +23,21 @@ runtime/read-only boundaries. Revision 0.24 also implements first-class metric
 sheets, candidate-blind resolution calibration, machine-derived threshold
 relations, developmental-interpretation validation, and guarded next moves.
 
+Phase 2 lane-specific directives begin with the
+[P2-I1 minimal shared-medium niche formation brief](P2-I1-minimal-shared-medium-niche-brief.md).
+It defines L01's theoretical, geometric, ecological, anti-subsumption,
+observation, decision-timing, and registration boundaries without answering
+the experiment in advance or changing the frozen hypothesis.
+
+The corresponding
+[P2-I1 detailed checklist](P2-I1-minimal-shared-medium-niche-checklist.md)
+is the living execution surface. It may expand from evidence between probe
+cycles, remains frozen within a cycle, preserves prior results, and feeds only
+stable cover gates back to the master checklist. Its calibration
+preregistration gate freezes response, orientation, opportunity, normalization,
+window, matched-null, calibration-realization, analysis, and selectivity-policy
+identities before any resolution margins are generated.
+
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,
 or lane result.

@@ -1003,14 +1003,32 @@ Entry condition:
 
 - [x] `P1-GATE` passed.
 
-Required lane work:
+Detailed authority:
 
-- [ ] Define niche as shared-medium condition-space, not passive environment.
-- [ ] Define how local identity formation, persistence, re-entry, cost, or
-  susceptibility changes.
-- [ ] Test participant/medium co-constitution versus pre-given-agent framing.
-- [ ] Identify inhabitability/support thresholds without semantic niche claims.
-- [ ] Apply the common lane completion contract.
+- [x] Create a lane-specific theory, geometry, ecology, observation, and
+  decision-timing brief. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I1-minimal-shared-medium-niche-brief.md`.
+- [x] Create the dedicated provisional, evidence-expandable P2-I1 checklist.
+  Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I1-minimal-shared-medium-niche-checklist.md`.
+
+Cover checks:
+
+- [x] Dedicated checklist `P2-I1-THEORY-GATE` passed. Evidence: accepted owner
+  review recorded in the dedicated checklist; no realization or outcome
+  selected.
+- [ ] Dedicated checklist `P2-I1-CAL-PRE-GATE` passed with response,
+  orientation, opportunity, normalization, window, matched-null, and
+  calibration-realization identities, selectivity-policy separation, and
+  analysis code frozen before calibration margins exist.
+- [ ] Dedicated checklist `P2-I1-CAL-GATE` passed.
+- [ ] Dedicated checklist `P2-I1-REG-GATE` passed before candidate execution.
+- [ ] Dedicated checklist `P2-I1-EXEC-GATE` passed or has a complete valid
+  blocked/incomplete disposition.
+- [ ] Dedicated checklist `P2-I1-CLOSE-GATE` passed.
+- [ ] Every evidence-triggered checklist expansion preserves prior results,
+  records its change class and rerun scope, and freezes a new probe cycle.
+- [ ] Review R3 handoff prepared without tuning the completed conclusion.
 
 Lane-specific boundary:
 
@@ -1021,10 +1039,10 @@ Blocked: ecological niche proof, population ecology, agency, organism, or regime
 
 Exit gate `P2-I1-GATE`:
 
-- [ ] Niche pattern is classified as supported candidate, partial, blocked, or
-  failed with explicit reasons.
-- [ ] New requirements and debts are recorded.
-- [ ] No stronger ecological relabel is opened.
+- [ ] Local `P2-I1-CLOSE-GATE` passed with one complete terminal
+  classification and retained reconstruction evidence.
+- [ ] New requirements, debts, redirects, and missing surfaces are recorded.
+- [ ] No stronger ecological relabel or cross-lane conclusion is opened.
 
 ### P2-I2 — Shared-pool co-conditioning lane
 
@@ -1880,6 +1898,7 @@ Use this section when checking a conditional item as deferred.
 | P1-I4-GATE | Revision 0.24 hypotheses plus developmental-interpretation contract, hard-gate partition, exact threshold relations, seven lane ladders, classification-value ladder, and next-move discipline | 2026-07-10 | Accepted by Review R2; passed |
 | P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Accepted by Review R2; passed |
 | P1-GATE | Structured R2 checklist and closeout; `AE01-C1` and `AE01-C2` assigned; no-positive-result boundary preserved | 2026-07-10 | Project-owner-supplied Review R2 accepted; passed |
+| P2-I1-THEORY-GATE | Accepted P2-I1 brief and detailed checklist; bounded niche-conditioning meaning, anti-subsumption, negative/redirective outcomes, and open decision timing preserved | 2026-07-10 | Accepted by project owner; passed |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |

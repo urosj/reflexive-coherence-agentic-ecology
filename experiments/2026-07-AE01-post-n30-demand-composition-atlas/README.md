@@ -26,6 +26,11 @@
 [Review R2 closeout](reports/R2-closeout.md) and
 [structured R2 checklist](reports/R2-review-checklist.json)
 
+**Current Phase 2 directive:**
+[P2-I1 minimal shared-medium niche formation brief](implementation/P2-I1-minimal-shared-medium-niche-brief.md)
+and
+[detailed living checklist](implementation/P2-I1-minimal-shared-medium-niche-checklist.md)
+
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
 [master checklist](../../implementation/PostN30-checklist.md)
