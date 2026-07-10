@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.3
+**Baseline revision:** 0.14
 
 **Date:** 2026-07-10
 
@@ -46,8 +46,8 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Accepted at revision 0.3 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
-| Phase 0 — Architecture and decisions | In progress | P0-I2-GATE | P0-I1-GATE passed |
+| Master directive | Active at revision 0.14 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Phase 0 — Architecture and decisions | In progress | P0-I3-GATE | P0-I2-GATE passed |
 | Phase 1 — AE01 contract freeze | Not started | P1-GATE | Pending |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
@@ -90,6 +90,10 @@ These are non-negotiable unless the master plan itself is revised.
 - [x] Domain examples remain distinct from catalog-layer admission.
 - [x] N31+ selection is permitted but not required.
 - [x] `agentic_ecology_demand_as_substrate_evidence` is explicitly blocked.
+- [x] Naturalization is a preferred maturity direction, not an exploration
+  prerequisite. AE01 may construct bounded ecology-side mechanisms to expose
+  missing patterns, but must preserve their constructed evidence class and all
+  applicable debt. Evidence: master-plan decision D-028.
 - [ ] Add automated portable-path validation before the first committed
   machine-readable experiment artifact.
 - [ ] Add automated unsafe-claim validation before the first positive AE01
@@ -162,29 +166,61 @@ Entry condition:
 
 AE01-blocking decisions:
 
-- [ ] Resolve O-004: canonical JSON serialization and digest convention.
-- [ ] Resolve O-005: Python types, JSON Schema, or dual-schema approach.
-- [ ] Resolve O-006: selected-output and large-artifact commit policy.
-- [ ] Resolve O-009: N31+ ranking dimensions, scoring, and tie/non-selection
-  policy.
-- [ ] Resolve O-010: authored versus generated experiment reports.
+- [x] Resolve O-004: canonical JSON serialization and digest convention.
+  Evidence: master-plan decision D-025 and O-004 disposition.
+- [x] Resolve O-005: Python types, JSON Schema, or dual-schema approach.
+  Evidence: master-plan decision D-026 and O-005 disposition.
+- [x] Resolve O-006: selected-output and large-artifact commit policy.
+  Evidence: master-plan decision D-027 and O-006 disposition.
+- [x] Resolve O-009: N31+ ranking dimensions, scoring, and tie/non-selection
+  policy. Evidence: master-plan decision D-029 and O-009 disposition.
+- [x] Resolve O-010: authored versus generated experiment reports. Evidence:
+  master-plan decision D-030 and O-010 disposition.
 
 Implementation-blocking decisions that MAY remain deferred until needed:
 
-- [ ] Resolve or explicitly defer O-001: Python import package name.
-- [ ] Keep O-002 distribution name/version deferred, or resolve with rationale.
-- [ ] Resolve or explicitly defer O-003: installed `pygrc`, artifact-only bridge,
-  or both.
-- [ ] Keep O-007 stable public API policy deferred, or resolve with rationale.
-- [ ] Keep O-008 domain inventory deferred, or resolve with rationale.
+- [x] Resolve O-001: Python import package name. Evidence: master-plan decision
+  D-031 and O-001 disposition.
+- [x] Keep O-002 distribution name/version deferred. Evidence: master-plan
+  decision D-032 and O-002 disposition; reopen at P4-I1 or before earlier
+  installable-package metadata.
+- [x] Resolve O-003: artifact inspection without runtime plus live execution
+  only through an available compatible PyGRC installation. Evidence:
+  master-plan decision D-033 and O-003 disposition.
+- [x] Require replay-frozen realization profiles while keeping a general stable
+  public/producer API deferred. Evidence: master-plan decision D-034 and O-007
+  disposition; reopen at P4-I1 or earlier repeated cross-experiment use.
+- [x] Make domain-package creation admission-driven and keep the unselected
+  inventory deferred. Evidence: master-plan decision D-035 and O-008
+  disposition; reopen for the selected domain after dedicated probe evidence.
+
+Accepted decision evidence:
+
+| Open item | Decision | Selected option | Reopening condition |
+| --- | --- | --- | --- |
+| O-004 | D-025 | PyGRC-compatible canonical JSON; separate semantic `output_digest` and exact-file `sha256` | A concrete non-Python LGRC implementation or independent AE artifact producer/verifier enters the roadmap |
+| O-005 | D-026 | JSON Schema Draft 2020-12 for persisted shape; Python types and validators for implementation and semantic constraints | Changing persisted schema authority or dialect, or making a Python framework authoritative |
+| O-006 | D-027 | Selected experiment-local evidence plus mandatory verified reconstruction for every declared artifact | Git LFS/external storage, non-reconstructable evidence, or materially revised size/retention policy becomes necessary |
+| O-009 | D-029 | Eligibility gates plus anchored 0–3 scoring, deterministic tie handling, sensitivity checks, and explicit non-selection | Post-freeze scoring changes or a proposed discretionary/mandatory selection override |
+| O-010 | D-030 | Generated projections or deterministic assembly of generated facts with separately authored bounded interpretation | Making manual final reports authoritative or changing a frozen report mode/source boundary |
+| O-001 | D-031 | Python import root `rc_agentic_ecology` | A later cross-repository namespace or package rename requires migration |
+| O-002 | D-032 | Explicitly deferred; no distribution or software version assigned | P4-I1 or any earlier need for installable-package metadata |
+| O-003 | D-033 | Non-runtime artifact inspection plus strict installed-PyGRC runtime bindings with no silent constructed/native substitution | Any proposal for a pseudo-runtime, automatic fallback, API mirroring, or implicit binding migration |
+| O-007 | D-034 | Replay-frozen mechanism contracts and explicit realization profiles; general API stability deferred; graph/PyGRC remains read-only from RCAE | P4-I1 reusable promotion or earlier when two independent retained consumers require the same boundary |
+| O-008 | D-035 | Admission-driven domain-package creation; no predeclared inventory or empty domain placeholders | Phase 3 selects a domain and dedicated probe evidence supports reusable implementation |
 
 Required decision-record behavior:
 
-- [ ] Record selected option and rejected alternatives.
-- [ ] Record rationale and source basis.
-- [ ] Record reversibility and work affected.
-- [ ] Record the safe default for every deferred blocking decision.
-- [ ] Update the master-plan decision/open-decision tables.
+- [x] Record selected option and rejected alternatives. Evidence: master-plan
+  O-001 through O-010 dispositions and decisions D-025 through D-035.
+- [x] Record rationale and source basis. Evidence: each applicable disposition
+  records conceptual, N29/N30, PyGRC-practice, or implementation-boundary basis.
+- [x] Record reversibility and work affected. Evidence: disposition reopening
+  conditions and affected artifacts, gates, packages, or compatibility surfaces.
+- [x] Record the safe default for every deferred blocking decision. Evidence:
+  D-032, D-034, and D-035 dispositions and deferred-work ledger.
+- [x] Update the master-plan decision/open-decision tables. Evidence: plan
+  revision 0.14.
 
 Iteration boundary:
 
@@ -196,17 +232,19 @@ No choice in this iteration counts as atlas evidence or primitive admission.
 
 Exit gate `P0-I2-GATE`:
 
-- [ ] Every Phase 1 blocking decision is accepted or explicitly deferred with a
+- [x] Every Phase 1 blocking decision is accepted or explicitly deferred with a
   safe default.
-- [ ] No accepted choice conflicts with portability, read-only graph
+- [x] No accepted choice conflicts with portability, read-only graph
   consumption, or claim discipline.
-- [ ] Master plan and checklist reflect the accepted decision state.
+- [x] Master plan and checklist reflect the accepted decision state.
+- [x] `P0-I2-GATE` passed. Evidence: plan/checklist revision 0.14, accepted by
+  the project owner on 2026-07-10.
 
 ### P0-I3 — Minimum repository scaffold
 
 Entry condition:
 
-- [ ] `P0-I2-GATE` passed.
+- [x] `P0-I2-GATE` passed.
 
 Required work:
 
@@ -242,7 +280,7 @@ Exit gate `P0-I3-GATE`:
 ### Phase 0 exit gate `P0-GATE`
 
 - [ ] `P0-I1-GATE` passed.
-- [ ] `P0-I2-GATE` passed.
+- [x] `P0-I2-GATE` passed.
 - [ ] `P0-I3-GATE` passed.
 - [ ] All AE01-blocking architecture decisions are accepted or safely deferred.
 - [ ] Phase 1 can proceed without deciding semantics through incidental code.
@@ -426,6 +464,9 @@ Pattern-card required fields:
 - [ ] Possible co-response and parent-closure relevance.
 - [ ] N29 prototype/demand consumption.
 - [ ] N30-supported versus ecology-extrapolated legs.
+- [ ] Constructed ecology-side mechanisms and their evidence class.
+- [ ] Missing or unsuitable graph surfaces and proposed future LGRC
+  discriminators.
 - [ ] Missing requirements and composition interfaces.
 - [ ] Controls, debts, transfer scope, and failure modes.
 - [ ] Claim ceiling, blocked relabels, and N31+ implication.
@@ -478,6 +519,7 @@ Required fail-closed controls:
 - [ ] Premature semantic communication, cooperation, intention, or agency.
 - [ ] Fixed N31 selection before synthesis.
 - [ ] Agentic-ecology demand relabeled as substrate evidence.
+- [ ] Constructed ecology-side mechanism relabeled as native LGRC evidence.
 
 Required failure classifications:
 
@@ -1447,7 +1489,9 @@ Use this section when checking a conditional item as deferred.
 
 | Item ID | Decision | Reason | Preserved boundary | Reopening condition | Status |
 | --- | --- | --- | --- | --- | --- |
-| — | — | — | — | — | Empty |
+| O-002 | D-032 | Distribution identity would be premature before an installable package exists. | No distribution or software-release meaning is inferred from repository publication version `0.1`. | P4-I1 or any earlier installable-package requirement. | Deferred with safe default |
+| O-007 | D-034 | AE01 has replayable mechanism boundaries but insufficient repeated use pressure for a general producer/plugin API. | Explicit realization profiles, replay compatibility, no silent substitution, and strict read-only graph consumption. | P4-I1 reusable promotion or two independent retained consumers requiring the same boundary. | Partially resolved; general API deferred |
+| O-008 | D-035 | Conceptual domain examples and experiment-local fixtures do not establish a reusable package inventory. | Domain packages require promotion and dedicated probe evidence; no empty placeholders. | A Phase 3-selected domain has dedicated evidence supporting reusable implementation. | Partially resolved; unselected inventory deferred |
 
 ## 14. Blocked-work ledger
 
@@ -1460,6 +1504,7 @@ Use this section when checking a conditional item as deferred.
 | Gate | Evidence | Date | Reviewer/status |
 | --- | --- | --- | --- |
 | P0-I1-GATE | Master plan and checklist revision 0.3; all P0-I1 exit items checked | 2026-07-10 | Accepted by project owner; passed |
+| P0-I2-GATE | Master plan and checklist revision 0.14; O-001 through O-010 dispositioned with decisions D-025 through D-035 and explicit safe defaults | 2026-07-10 | Accepted item-by-item by project owner; passed |
 | P0-GATE | Pending | — | Open |
 | P1-GATE | Pending | — | Blocked |
 | P2-GATE | Pending | — | Blocked |
@@ -1508,14 +1553,23 @@ Change log:
 | --- | --- | --- | --- | --- |
 | CL-001 | 2026-07-10 | Created full-program checklist baseline revision 0.1. | P0-I1-GATE onward | Superseded by CL-002 |
 | CL-002 | 2026-07-10 | Revision 0.2 applied external review: exact N29 debt/digest traceability, demand-as-evidence blocker, safer Lane 7, parallel lane execution, and provisional Phase 4 boundary. | P0-I1-GATE onward | Superseded by CL-003 |
-| CL-003 | 2026-07-10 | Revision 0.3 added symmetric N30 closeout-digest traceability and corrected the accepted-decision range through D-024. | P0-I1-GATE onward | Active |
+| CL-003 | 2026-07-10 | Revision 0.3 added symmetric N30 closeout-digest traceability and corrected the accepted-decision range through D-024. | P0-I1-GATE onward | Superseded by CL-004 |
+| CL-004 | 2026-07-10 | Revision 0.4 resolved O-004 as D-025: PyGRC-compatible canonical JSON now, with language-neutral canonicalization deferred to a concrete non-Python interoperability need. | P0-I2-GATE onward | Superseded by CL-005 |
+| CL-005 | 2026-07-10 | Revision 0.5 resolved O-005 as D-026: JSON Schema Draft 2020-12 governs persisted shape while Python types and validators implement runtime and semantic constraints. | P0-I2-GATE onward | Superseded by CL-006 |
+| CL-006 | 2026-07-10 | Revision 0.6 resolved O-006 as D-027: selected historical evidence and mandatory verified artifact-level reconstruction, including omitted large artifacts. | P0-I2-GATE onward | Superseded by CL-007 |
+| CL-007 | 2026-07-10 | Revision 0.7 accepted D-028: naturalization remains preferred but AE01 may use bounded constructed mechanisms to expose missing patterns in the bidirectional graph/ecology spiral. | P0-I2-GATE onward | Superseded by CL-008 |
+| CL-008 | 2026-07-10 | Revision 0.8 resolved O-009 as D-029: gated consume/extend/introduce candidate ranking with fixed thresholds, sensitivity checks, and explicit non-selection. | P0-I2-GATE onward | Superseded by CL-009 |
+| CL-009 | 2026-07-10 | Revision 0.9 resolved O-010 as D-030: generated projections or deterministic assembly of generated facts with separately authored bounded interpretation. | P0-I2-GATE onward | Superseded by CL-010 |
+| CL-010 | 2026-07-10 | Revision 0.10 resolved O-001 as D-031: the Python import root is `rc_agentic_ecology`, independently of distribution and compatibility policy. | P0-I2-GATE onward | Superseded by CL-011 |
+| CL-011 | 2026-07-10 | Revision 0.11 accepted D-032: distribution name and software version remain deferred and distinct from repository publication version `0.1`. | P0-I2-GATE onward | Superseded by CL-012 |
+| CL-012 | 2026-07-10 | Revision 0.12 resolved O-003 as D-033: artifact inspection remains non-runtime while live execution requires explicit compatible local PyGRC bindings with no silent constructed/native transition. | P0-I2-GATE onward | Superseded by CL-013 |
+| CL-013 | 2026-07-10 | Revision 0.13 partially resolved O-007 as D-034: replay-frozen realization profiles govern AE01, a general API remains deferred, and no RCAE workflow may modify the graph/PyGRC repository. | P0-I2-GATE onward | Superseded by CL-014 |
+| CL-014 | 2026-07-10 | Revision 0.14 partially resolved O-008 as D-035 with admission-driven domain packages and no predeclared inventory; the complete decision audit passed P0-I2-GATE. | P0-I2-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Resolve the AE01-blocking decisions in `P0-I2`.
-2. [ ] Record selected options, rationale, reversibility, and safe defaults.
-3. [ ] Pass `P0-I2-GATE`.
-4. [ ] Create the minimum scaffold in `P0-I3`.
-5. [ ] Pass `P0-GATE` and begin the AE01 contract freeze.
+1. [ ] Create the minimum scaffold in `P0-I3`.
+2. [ ] Run Review R1 and pass `P0-GATE`.
+3. [ ] Begin the AE01 contract freeze.

@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.3
+**Plan revision:** 0.14
 
 **Date:** 2026-07-10
 
@@ -189,7 +189,7 @@ process in Section 17.
 | D-009 | Accepted | Experiment-local contracts precede positive atlas conclusions. Successful contracts may be distilled into canonical specifications after closeout. |
 | D-010 | Accepted | Reusable source items carry explicit maturity, evidence, debt, transfer, and claim metadata. Placement in `src/` does not imply admission or nativity. |
 | D-011 | Accepted | LGRC integration is isolated behind a validated, read-only bridge that preserves provenance and claim status. |
-| D-012 | Accepted | Early implementation is limited to infrastructure required to execute and validate AE01. |
+| D-012 | Accepted, qualified by D-028 | Early stable or reusable implementation is limited to infrastructure required to execute and validate AE01. Bounded constructed mechanisms needed for AE01 demand discovery are permitted under D-028 without admission or nativity. |
 | D-013 | Accepted | Raw conversation is decision provenance, not normative project authority. This plan is the maintained directive extracted from it. |
 | D-014 | Accepted | Only the minimum structure required by the current phase should be scaffolded; speculative empty architecture is deferred. |
 | D-015 | Accepted | The repository tree in Section 7 is the target structure, introduced incrementally rather than scaffolded all at once. |
@@ -199,9 +199,20 @@ process in Section 17.
 | D-019 | Accepted | AE01 is an atlas-building experiment with specification-like local contracts, not itself a canonical specification. |
 | D-020 | Accepted | AE01 begins with the seven comparable, independently executable shared-medium lanes listed in Section 11.3; only cross-lane synthesis requires every lane to close. |
 | D-021 | Accepted | AE01 uses the C0-C6 acceptance ladder in Section 11.7, subject to contract-freeze review. |
-| D-022 | Accepted | Pre-closeout implementation remains limited to reproducibility, validation, provenance, and bridge infrastructure required by AE01. |
+| D-022 | Accepted, qualified by D-028 | Pre-closeout stable or reusable `src/` implementation remains limited to reproducibility, validation, provenance, and bridge infrastructure. Experiment-local constructed probes and explicitly experimental shared surfaces required by AE01 are permitted under D-028 and remain non-admitted. |
 | D-023 | Accepted | Maintained decision records, not raw dialogue, are the normative way conversation-derived directives enter the repository. |
 | D-024 | Accepted | AE01 carries all six unresolved N29 debts through source inventory, lane classification, synthesis, promotion, and closeout unless dedicated discharge evidence exists. |
+| D-025 | Accepted | Native AE artifacts use the PyGRC-compatible canonical JSON and SHA-256 digest convention defined in the O-004 disposition. RFC 8785/JCS is deferred until a concrete non-Python LGRC or AE artifact consumer justifies an artifact-library migration. |
+| D-026 | Accepted | AE01 uses the divided-authority dual schema representation defined in the O-005 disposition: Markdown contracts govern meaning, JSON Schema governs persisted shape, and Python types and validators implement runtime and semantic constraints. |
+| D-027 | Accepted | AE01 uses the selected-output and mandatory artifact-reconstruction policy defined in the O-006 disposition. Uncommitted or oversized artifacts remain eligible evidence only when their complete portable reconstruction contract has passed verification. |
+| D-028 | Accepted | The graph/agentic-ecology relation is a bidirectional spiral. AE01 prefers naturalized LGRC surfaces but may construct explicitly bounded ecology-side mechanisms to expose missing patterns, without relabeling them as native LGRC evidence or silently discharging debt. |
+| D-029 | Accepted | AE01 applies the gated N31+ ranking and explicit non-selection policy defined in the O-009 disposition. Candidates may consume, extend, or introduce LGRC distinctions; current absence from graph implementation is not disqualifying. |
+| D-030 | Accepted | AE01 reports use the two-mode authority and assembly policy defined in the O-010 disposition: generated machine facts remain controlling while explicitly authored Markdown may supply bounded interpretation. |
+| D-031 | Accepted | The Python import root is `rc_agentic_ecology`. It identifies project ownership only and carries no admission, nativity, public API, compatibility, distribution, or release claim. |
+| D-032 | Accepted deferral | Python distribution name and software version remain unset until P4-I1 or an earlier installable-package requirement. Repository publication version `0.1` is not a Python distribution release. |
+| D-033 | Accepted | LGRC integration follows the strict dual-surface policy in the O-003 disposition: artifact inspection is non-runtime; all live execution requires a compatible local PyGRC runtime; constructed and native bindings never substitute silently. |
+| D-034 | Accepted partial resolution and deferral | AE01 freezes replay-oriented mechanism contracts and explicit realization profiles rather than promising a general stable producer/plugin API. The graph/PyGRC repository remains strictly read-only from RCAE; any native implementation is separately authorized and performed under graph-project authority. |
+| D-035 | Accepted partial resolution and deferral | Domain-package creation is admission-driven. Conceptual examples and experiment-local domain fixtures do not preselect reusable packages; the inventory beyond each explicitly promoted domain remains deferred. |
 
 ## 7. Target repository structure
 
@@ -255,9 +266,7 @@ src/
         motifs/
         regimes/
         domains/
-            ant/
-            forest/
-            swarm/
+            <promoted_domain>/
         telemetry/
 
 tests/
@@ -426,6 +435,60 @@ Domain code SHOULD consume substrate-neutral bridge protocols rather than deep
 mechanism remains an open program decision that must be resolved during Phase
 0 before bridge implementation begins.
 
+### 10.1 Bidirectional spiral and constructed exploration
+
+**Decision D-028 — Accepted.** Naturalization is a preferred maturity direction,
+not an exploration prerequisite. The relationship between the two projects is
+bidirectional:
+
+```text
+graph evidence and runtime surfaces
+    -> agentic-ecology consumption and composition
+    -> tension, failure, or missing pattern
+    -> ecology-side constructed probe or provisional mechanism
+    -> precisely extracted substrate demand
+    -> proposed future LGRC discriminator and experiment
+    -> graph-side implementation and evidence
+    -> renewed ecology-side consumption
+```
+
+AE01 MAY design and execute an explicitly constructed, producer-mediated, or
+ecology-local mechanism when the applicable graph surface is absent or creates
+a composition tension. Such a result is valid only within its declared role as
+demand-discovery, composition, or constructed-probe evidence. It MUST NOT be
+consumed as native LGRC evidence, proof that the graph substrate already
+supports the pattern, canonical primitive admission, or discharge of producer,
+naturalization, transfer, or composition debt.
+
+Every lane that constructs or proposes a missing surface MUST distinguish:
+
+```text
+inherited or source-current graph evidence
+ecology-side interpretation
+constructed ecology-side mechanism
+missing or unsuitable substrate surface
+proposed future LGRC discriminator
+```
+
+Constructed mechanisms belong under the experiment by default. A surface used
+across lanes MAY be shared through `src/` only with explicit experimental and
+constructed status, maturity, evidence class, debt, transfer scope, and claim
+ceiling. Neither location nor successful execution admits it as a reusable
+primitive or native LGRC capability.
+
+A constructed probe MAY demonstrate that its declared construction behaves as
+specified, that a composition becomes possible or fails in a particular way,
+and that a missing pattern is useful to formulate. It MUST preserve the active
+counterfactual question of whether an LGRC-native realization can reproduce the
+relevant distinction under graph-side source-current evidence and controls.
+
+The resulting tension, missing pattern, control requirements, and proposed
+discriminator form an ecology-to-graph handoff. This repository remains
+read-only with respect to the graph project; the graph project retains authority
+over LGRC implementation, experiment naming, and substrate-evidence claims.
+Future graph results return through the bridge and may support, revise,
+supersede, or reject the constructed ecology-side account.
+
 ## 11. AE01 atlas experiment
 
 ### 11.1 Role
@@ -557,6 +620,9 @@ effect on parent closure
 N29 prototypes and demand rows consumed
 N30-supported legs
 ecology-extrapolated legs
+constructed ecology-side mechanisms and their evidence class
+missing or unsuitable graph surfaces
+proposed future LGRC discriminators
 new substrate requirements
 composition inputs, outputs, and interference risks
 controls and withdrawal tests
@@ -583,6 +649,7 @@ free trace, free memory, or unaccounted activity
 absent parent-basin context
 participant/medium boundary confusion
 semantic communication, cooperation, intention, or agency promotion
+constructed ecology mechanism relabeled as native LGRC evidence
 fixed N31 selection before cross-lane synthesis
 ```
 
@@ -831,19 +898,607 @@ These decisions are intentionally not resolved by conversation alone.
 
 | ID | Status | Decision needed | Must resolve before |
 | --- | --- | --- | --- |
-| O-001 | Proposed | Python import package name `rc_agentic_ecology`. | Creating the installable package. |
-| O-002 | Deferred | Distribution name and initial version. | Packaging or release work. |
-| O-003 | Open | LGRC dependency mode: installed `pygrc`, artifact-only adapter, or both. | Implementing the bridge. |
-| O-004 | Open | Canonical JSON serialization and digest conventions. | Producing AE01 artifacts consumed across iterations. |
-| O-005 | Open | Schema representation: Python types, JSON Schema, or both. | Freezing AE01 machine contracts. |
-| O-006 | Open | Selected-output commit and large-artifact policy. | First generated AE01 outputs. |
-| O-007 | Deferred | Stable public API and compatibility policy. | Promoting reusable Phase 4 implementations. |
-| O-008 | Deferred | Domain package inventory beyond the first admitted probe. | Domain implementation. |
-| O-009 | Open | Exact N31+ selection scoring and tie policy. | AE01 cross-lane synthesis contract freeze. |
-| O-010 | Open | Whether experiment-local reports are generated entirely from JSON or partly authored. | AE01 report tooling. |
+| O-001 | Accepted as D-031 | Python import package name `rc_agentic_ecology`. | Resolved before package creation. |
+| O-002 | Deferred by D-032 | Distribution name and initial version. | P4-I1 or any earlier installable-package metadata. |
+| O-003 | Accepted as D-033 | LGRC dependency mode: non-runtime artifact inspection plus installed-PyGRC runtime execution. | Resolved before bridge implementation. |
+| O-004 | Accepted as D-025 | Canonical JSON serialization and digest conventions. | Resolved before AE01 artifact production. |
+| O-005 | Accepted as D-026 | Schema representation: Python types, JSON Schema, or both. | Resolved before AE01 contract freeze. |
+| O-006 | Accepted as D-027 | Selected-output commit and large-artifact policy. | Resolved before AE01 artifact production. |
+| O-007 | Partially resolved and deferred by D-034 | Replay-frozen realization-profile compatibility is required now; a general stable public or producer/plugin API remains deferred. | Promoting reusable Phase 4 implementations or earlier repeated cross-experiment use. |
+| O-008 | Partially resolved and deferred by D-035 | Domain packages are created individually from promotion and dedicated probe evidence; no domain inventory is predeclared. | Phase 3 selects a domain probe and its dedicated evidence supports reusable implementation. |
+| O-009 | Accepted as D-029 | Exact N31+ selection scoring and tie policy. | Resolved before AE01 cross-lane synthesis contract freeze. |
+| O-010 | Accepted as D-030 | Whether experiment-local reports are generated entirely from JSON or partly authored. | Resolved before AE01 report tooling. |
 
 Open decisions SHOULD be resolved through the smallest document or probe that
 can expose the tradeoff. They MUST NOT be silently decided by incidental code.
+
+### 15.1 O-004 disposition — PyGRC-compatible canonical JSON
+
+**Selected option:** native AE artifacts use the existing PyGRC-compatible
+canonical JSON convention. For the JSON-native artifact boundary this means
+string object keys, recursively sorted keys, semantically ordered arrays,
+finite JSON numbers, compact separators, ASCII escaping, UTF-8 encoding, and no
+trailing newline in the canonical digest payload. SHA-256 digests are lowercase
+hexadecimal values.
+
+Semantic and file identity remain distinct:
+
+- `output_digest` hashes the explicitly scoped canonical payload after removing
+  its own `output_digest` field;
+- any further digest-scope exclusions MUST be declared by the controlling
+  artifact schema rather than inferred from field names;
+- tracked JSON files use sorted keys, two-space indentation, ASCII escaping,
+  and one trailing newline; and
+- a recorded file `sha256` hashes those exact file bytes rather than the
+  semantic payload.
+
+Nondeterministic metadata MUST be absent, deterministically derived, or
+explicitly excluded by the schema's digest scope. Artifact contracts remain
+JSON-native even if an implementation helper can normalize additional Python
+container types before validation.
+
+**Alternatives dispositioned:** RFC 8785/JCS is not adopted for native
+artifacts at this stage because there is no concrete non-Python LGRC or AE
+artifact producer or verifier. File-byte-only hashing is rejected because it
+would conflate semantic identity with presentation changes. An undocumented
+project-local convention is rejected because PyGRC already provides the
+controlling compatibility behavior and source precedent.
+
+**Rationale and source basis:** the graph project's core serialization and
+digest helpers, together with N29/N30 artifact practice, establish the current
+interoperability boundary. Reusing that boundary keeps AE artifacts directly
+compatible with the evidence and runtime family they consume. Multi-language
+portability is speculative until the project has sufficiently stable and
+valuable content to justify another LGRC implementation.
+
+**Reversibility:** this choice is inexpensive to reverse before native AE
+artifacts are retained as stable evidence. After that point, changing the
+canonicalization profile is a versioned migration that rebuilds the affected
+artifact library while preserving old profile identifiers and source digests.
+
+**Reopening condition:** reconsider JCS or another language-neutral profile
+when a concrete non-Python LGRC implementation or independent AE artifact
+producer/verifier enters the roadmap. Reopening affects artifact schemas,
+serializer conformance vectors, digest validation, manifests, replay, and any
+retained native artifact library.
+
+### 15.2 O-005 disposition — Divided-authority dual representation
+
+**Selected option:** AE01 uses JSON Schema Draft 2020-12 for persisted artifact
+shape together with Python implementation types and semantic validators. This
+is a dual representation, not dual normative authority:
+
+- Markdown experiment contracts govern meaning, evidence roles, controls,
+  acceptance, debt, and claim boundaries;
+- versioned JSON Schemas govern serialized field structure, required values,
+  local types, enumerations, and extension shape; and
+- Python dataclasses or `TypedDict` views support code that consumes the
+  records, while Python validators enforce cross-field, cross-artifact,
+  provenance, digest, path, debt, and claim rules.
+
+Experiment-local schemas remain with AE01 under `contracts/` until closeout.
+Only schemas distilled from admitted contracts may later enter
+`specs/schemas/`. Python views MUST be introduced only for records actually
+consumed by implementation; every schema does not require a speculative Python
+type.
+
+Core artifact fields are closed by default. Reviewed extension fields MAY use
+the `x_` namespace, but extensions MUST NOT replace required fields, alter the
+meaning of core fields, discharge debt, or raise a claim ceiling. Shared valid
+and invalid fixtures MUST verify JSON Schema behavior and the corresponding
+Python round trip or semantic validator where one exists.
+
+**Alternatives dispositioned:** Python-only schemas are rejected for persisted
+AE01 artifacts because the producing script would remain the only effective
+validator and contract readers would need implementation code. JSON
+Schema-only representation is rejected because local shape validation cannot
+enforce the required lineage, digest, source-role, cross-record, and claim
+semantics. A Pydantic-first or automatically generated schema system is
+deferred because no framework dependency or generation authority is yet
+justified.
+
+**Rationale and source basis:** PyGRC and N29/N30 demonstrate the value of
+Python types, explicit versions, and semantic validation, while also exposing
+the maintenance cost of bespoke required-field and enumeration dictionaries in
+experiment builders. AE01 needs independently validatable JSON artifacts at
+contract freeze without treating JSON Schema as a replacement for its research
+contract or claim guards. Draft 2020-12 is the selected fixed dialect.
+
+**Reversibility:** individual Python implementation views are replaceable while
+their artifact schema and behavior remain stable. Changing the persisted schema
+dialect or authority after contract freeze requires a versioned schema change,
+new conformance fixtures, and reopening of every affected gate and artifact.
+
+**Implementation boundary:** O-005 does not select a Python schema framework or
+validation library. P1-I5 may select the smallest Draft 2020-12-conformant
+validator and standard-library Python representation that satisfy the frozen
+contracts. Incidental code MUST NOT make Pydantic or generated schemas
+authoritative without reopening this decision.
+
+### 15.3 O-006 disposition — Selected evidence and mandatory reconstruction
+
+**Selected option:** AE01 uses two output tiers. Full runs, raw telemetry,
+caches, duplicate reruns, transient logs, large checkpoints, and exploratory
+products belong under the ignored top-level `outputs/` workspace.
+Experiment-local `outputs/` contains only predeclared historical evidence
+selected for audit, control, replay, closeout, handoff, or compact
+reconstruction fixtures. Negative, partial, blocked, and rejected results are
+eligible for selection on the same basis as positive results.
+
+Every declared artifact, including a large artifact omitted from Git, MUST have
+a portable reconstruction contract containing:
+
+```text
+artifact ID and expected relative path
+producing target or command and working-directory convention
+environment, dependency, and source revisions
+input artifact digests, configuration, and random seeds
+expected artifact kind, schema, semantic digest, file digest, and size
+runtime, memory, disk, and hardware envelope
+verification command and last verified reconstruction status
+```
+
+One reconstruction recipe MAY produce a related artifact set, but every output
+MUST appear in the artifact manifest. Instructions MUST NOT depend on an
+undocumented sibling-checkout location, machine-local file, hidden environment
+variable, or manual post-generation edit. PyGRC/LGRC dependencies MUST identify
+their required version or source revision and provide portable acquisition and
+setup instructions.
+
+Machine-readable evidence MUST reproduce its semantic `output_digest`.
+Deterministically serialized files SHOULD also reproduce their exact-file
+`sha256`. A permitted platform-sensitive visualization MUST declare its
+deterministic source artifact and equivalence check and MUST NOT be the sole
+evidence for a claim.
+
+Before selection as evidence, reconstruction MUST pass from a clean work area
+using the documented instructions. A large local-only artifact retains its
+expected digests, size, recipe, resource envelope, and verification status in
+the committed manifest. An uncommitted artifact without verified
+reconstruction is transient scratch and cannot support a classification or
+gate. Loss of reconstruction reopens or downgrades every dependent conclusion.
+
+**Size review policy:** an individual file above 1 MiB or a complete selected
+AE01 output set above 10 MiB triggers explicit retention review rather than
+automatic rejection. Review MUST consider a compact summary, meaningful
+partition, or deterministic local reconstruction without using compression to
+hide an unauditable artifact. Git LFS and external artifact storage remain
+deferred until a non-reducible evidence artifact establishes a concrete need.
+
+**Alternatives dispositioned:** committing every generated output is rejected
+because it would mix historical evidence with disposable runtime state.
+Reconstruction-only retention with no selected committed evidence is rejected
+because it weakens direct inspection and makes closeout depend entirely on
+tool execution. Silent omission of large artifacts is rejected because size
+does not discharge evidential dependencies.
+
+**Rationale and source basis:** the graph project already separates ignored
+top-level output from selected experiment-local historical evidence. N29 and
+N30 demonstrate that compact source, control, classification, and closeout
+artifacts can remain directly inspectable while runtime telemetry stays
+reconstructable. AE01 strengthens that practice by making artifact-level
+instructions and verified reconstruction mandatory rather than relying on the
+mere existence of generating code.
+
+**Reversibility and reopening:** size thresholds are review triggers and MAY be
+revised without changing artifact identity, but a post-freeze policy change
+must revisit affected manifests and retention decisions. Introducing Git LFS,
+external storage, or allowing non-reconstructable evidence requires reopening
+O-006 and every dependent gate.
+
+### 15.4 O-009 disposition — Gated N31+ ranking and non-selection
+
+**Selected option:** AE01 ranks one primary ecology-to-graph recommendation
+only after all required lanes and cross-lane synthesis close. Every candidate
+declares one origin mode:
+
+```text
+consume = an existing graph surface appears adequate but needs a dedicated probe
+extend = an existing surface is relevant but creates a composition tension
+introduce = the required distinction is absent and must be proposed
+```
+
+Origin mode does not add or subtract points. Naturalization is a preferred
+direction and an explicit debt path, not an eligibility prerequisite.
+
+Before scoring, a candidate MUST pass non-compensable eligibility gates. It
+must trace to a classified AE01 demand, composition failure, or constructed
+probe tension; go beyond conceptual motivation alone; preserve graph evidence,
+ecology interpretation, construction, and absence as distinct roles; define an
+operational primitive or building-block demand; propose a future graph-side
+positive discriminator and counterfactual; admit feasible controls and bounded
+reconstruction; and avoid dependence on an unnamed stronger prerequisite.
+The proposed discriminator need not exist in current LGRC code.
+
+Eligible candidates receive anchored integer scores from zero to three on ten
+dimensions:
+
+| Group | Dimension | Zero anchor | Three anchor |
+| --- | --- | --- | --- |
+| Demand | Cross-lane recurrence | No classified lane | Four or more independent lanes |
+| Demand | Prerequisite centrality | No downstream dependency | Shared prerequisite across several lanes or layers |
+| Demand | Composition leverage | Unblocks no composition | Resolves a recurring composition bottleneck |
+| Demand | Transfer value | Fixture-specific with no transfer test | Substrate-neutral with meaningful variants |
+| Experiment | Gap or tension specificity | Already supported or vaguely missing | Repeated, precisely bounded missing or unsuitable surface |
+| Experiment | Future discriminator quality | No proposed source-current discriminator | Measurable signature, threshold, lineage, and counterfactual |
+| Experiment | Control feasibility | Nearby explanations cannot be separated | Active nulls, ablation, replay, and alternative-mechanism controls |
+| Experiment | Naturalization and debt path | Adds or ignores debt | Defines a credible less-producer-mediated test targeting canonical debt |
+| Safety | Claim safety | Requires an unsafe semantic relabel | Precise substrate claim with explicit blocked relabels |
+| Safety | Cost feasibility | Unbounded program of work | One bounded experiment using available or explicitly proposed surfaces |
+
+Score `1` means weak, single-instance, mostly inferred, or costly support.
+Score `2` means bounded, directly traceable, and adequate for a dedicated
+probe. Constructed-probe evidence may support demand, composition, gap, and
+control scores only within its declared ecology-side envelope; it cannot count
+as native LGRC evidence.
+
+Selection eligibility requires:
+
+```text
+every dimension >= 1
+demand value >= 7 of 12
+experimental readiness >= 8 of 12
+safety and feasibility >= 4 of 6
+overall >= 20 of 30
+gap specificity, future discriminator, controls, and claim safety each >= 2
+```
+
+Candidates within one overall point form a tie band. Ties resolve in this
+order: demonstrated prerequisite relation, higher experimental readiness,
+higher safety and feasibility, then lower implementation/evidence cost.
+Candidate identifiers, inherited N31/N32 order, or recurrence alone MUST NOT
+break a tie. A remaining tie closes as non-selection with a ranked shortlist
+and the evidence needed to separate it.
+
+The ranking MUST be recomputed with equal weights, doubled demand-group weight,
+doubled experimental-readiness and safety-group weights, and a conservative
+profile that lowers every low-confidence score by one. A candidate is robust
+only if it remains first or wins the declared tie procedure in every profile.
+
+AE01 MUST close with explicit non-selection when no candidate clears every
+gate and threshold, a tie remains, sensitivity changes the winner, required
+lane or synthesis evidence is incomplete, conceptual demand is the primary
+basis, reconstruction cannot be bounded, or a stronger unnamed prerequisite
+is required. Non-selection still records the ranked shortlist, failure reasons,
+missing discriminators, and recommended information-gathering step, and it does
+not prevent AE01-C6.
+
+**Alternatives dispositioned:** recurrence-only selection and unconstrained
+weighted totals are rejected because strength in one area could hide an
+untestable or unsafe candidate. Mandatory selection and discretionary tie
+breaking are rejected because an unstable ecology-side demand ranking is itself
+a valid result. Restricting candidates to current LGRC code is rejected under
+D-028 because it would break the bidirectional spiral.
+
+**Authority and reversibility:** selection is ecology-side demand guidance, not
+LGRC evidence or automatic assignment of graph experiment N31. The graph
+project retains authority over acceptance, naming, implementation, and
+substrate evidence. Scoring anchors and thresholds are frozen before lane
+results; changing them afterward reopens ranking, closeout, and every dependent
+handoff.
+
+### 15.5 O-010 disposition — Generated facts with authored interpretation
+
+**Selected option:** every AE01 experiment-result report declares one of two
+modes:
+
+```text
+generated_projection = deterministic report generated entirely from machine records
+assembled_interpretation = deterministic generated facts plus tracked authored Markdown
+```
+
+Inventory, validation, control, and status reports SHOULD use
+`generated_projection` when no distinct interpretive layer is needed. Lane
+interpretation, cross-lane synthesis, ranking, and closeout reports MAY use
+`assembled_interpretation` so that reasoning remains readable and reviewable
+rather than being forced into JSON fields or embedded as long strings in Python
+builders.
+
+Machine artifacts remain authoritative for experiment facts: status,
+acceptance state, metrics, thresholds, scores, source and artifact identities,
+evidence classifications, control results, debt states, gates, ranking
+outcomes, claim ceilings, and blocked relabels. Authored sources MAY explain
+significance, composition tension, limitations, uncertainty, competing
+interpretations, missing patterns, or future hypotheses and LGRC
+discriminators. They MUST NOT silently change a machine-recorded fact or
+introduce a stronger positive classification.
+
+A result discovered while writing MUST first enter the appropriate machine
+record before it can control acceptance or closeout. Otherwise it remains
+explicitly labeled as interpretation, hypothesis, or proposed demand within the
+report's claim ceiling. This rule does not reduce the exploratory role granted
+by D-028; it keeps exploratory interpretation distinct from accepted machine
+classification.
+
+Authored sources are tracked separately under the experiment's `reports/`
+area. Final evidence-bearing reports are generated artifacts and MUST NOT be
+edited directly. Each final report or its report manifest records:
+
+```text
+report mode and claim ceiling
+source artifact IDs and semantic digests
+authored source path and file hash when applicable
+generator identity
+final report path and file hash
+validation and reconstruction status
+```
+
+Report generation MUST be deterministic, documented, and verified under
+D-027. Regeneration from a clean work area MUST produce no diff from the
+committed final report. Validation MUST compare projected status, metrics,
+claims, debts, gates, and rankings with the controlling machine artifacts.
+Report hashes belong in an external artifact/report manifest so the source
+artifact and generated report do not create a circular digest dependency.
+
+Fully manual evidence-bearing final reports are rejected. README files,
+hypotheses, contracts, design discussions, and authored report sources are not
+generated result reports and remain directly authored documents.
+
+**Alternatives dispositioned:** fully generated prose is rejected as a general
+rule because AE01 requires substantive interpretation and storing that prose in
+JSON or Python obscures review. Fully manual reports are rejected because
+machine values and claim boundaries would drift. Embedding all authored
+interpretation inside report-generation scripts is rejected because code would
+become an awkward second home for narrative reasoning.
+
+**Implementation boundary and reversibility:** O-010 does not select a template
+engine. P1-I5 may implement the smallest deterministic assembler that preserves
+this authority split. A report may change modes before contract freeze; after
+freeze, a mode or source-boundary change requires regeneration, validation, and
+review of the affected report and gates.
+
+### 15.6 O-001 disposition — Python import root
+
+**Selected option:** the project's Python import package is
+`rc_agentic_ecology`, rooted at `src/rc_agentic_ecology/`. The `rc` prefix
+preserves the established project identity and distinguishes the package from a
+generic agentic-ecology library without introducing a shared
+`reflexive_coherence` namespace across independently governed repositories.
+
+The import name identifies ownership only. It does not imply that a contained
+primitive or building block is admitted, that a surface is native LGRC, or that
+top-level exports and compatibility are stable. Subpackages remain subject to
+minimum scaffolding and are introduced only when accepted experiment, bridge,
+or implementation work requires them.
+
+**Alternatives dispositioned:** `agentic_ecology` is rejected as too generic;
+`reflexive_coherence_agentic_ecology` is rejected as unnecessarily long; and a
+`reflexive_coherence.agentic_ecology` namespace package is deferred because no
+cross-repository namespace governance currently exists.
+
+**Boundary and reversibility:** O-001 does not select the distribution name,
+version, public API, or compatibility policy. Renaming is inexpensive before
+package creation but becomes a migration after imports appear, so any later
+change reopens packaging, tests, examples, and reconstruction instructions.
+
+### 15.7 O-002 disposition — Distribution identity deferred
+
+**Selected option:** distribution name and software version remain unset. The
+accepted `rc_agentic_ecology` import root does not require a corresponding
+distribution decision during Phase 0. The repository's existing `0.1` changelog
+and citation version identifies its conceptual public snapshot and MUST NOT be
+interpreted as an installable Python package release.
+
+Before packaging, reconstruction identities use Git revisions, schema versions,
+artifact digests, and dependency revisions. Phase 1 MAY add `pyproject.toml`
+tool configuration without adding `[project]` distribution metadata. If a
+frozen Phase 1 contract requires installation rather than documented
+repository-local execution, O-002 MUST reopen before that metadata is created.
+
+The likely distribution spelling `rc-agentic-ecology` remains a non-binding
+candidate. Reopening at P4-I1 or earlier MUST jointly decide distribution name,
+software version and versioning policy, its relationship to repository
+publication versions, supported Python versions, dependency groups,
+license/package-content boundary, publication target, and compatibility status.
+
+**Safe default and reversibility:** no distribution is built or published, and
+no software release meaning is inferred. Deferral avoids a later rename or
+version reset and has no effect on artifact or source reconstruction because
+those identities are already explicit under D-025 and D-027.
+
+### 15.8 O-003 disposition — Strict dual-surface LGRC integration
+
+**Selected option:** RCAE distinguishes non-runtime artifact inspection from
+live execution through an installed PyGRC runtime. There are three explicit
+execution classes:
+
+```text
+artifact_inspection
+pygrc_runtime_with_rcae_producer
+pygrc_native_runtime
+```
+
+Artifact inspection validates and interprets historical artifacts without
+claiming execution and without requiring `pygrc`. Every live execution class
+requires an available, compatible PyGRC installation and MUST fail immediately
+when runtime identity or required capabilities cannot be established. Artifact
+inspection, mock behavior, or an RCAE-local pseudo-runtime MUST NOT substitute
+for a requested runtime mode.
+
+The physical PyGRC location is machine- and user-specific. Python environment
+resolution or an ignored local binding selects it; no checkout, environment,
+or package path enters committed configuration, artifacts, reports, or
+reconstruction receipts. Public reconstruction instructions record how to
+obtain the required source revision. Each run validates and records the PyGRC
+revision, relevant schema versions, capability set, and runtime identity. A
+local binding that does not satisfy those identities fails closed.
+
+RCAE exposes only narrow ecology-side boundaries needed by admitted use cases:
+
+```text
+validated LGRC state or snapshot
+    -> minimal immutable ecology view
+    -> explicit RCAE constructed producer
+    -> declarative producer request
+    -> narrow runtime adapter
+    -> declared PyGRC public operation
+    -> transition receipt and resulting state identity
+```
+
+The bridge MUST NOT mirror or re-export the PyGRC API, subclass or monkey-patch
+LGRC to inject behavior, register global hooks at import time, mutate PyGRC
+module state or registries, make PyGRC import RCAE, import graph experiment
+scripts, or write into the graph repository. Intended runtime transitions occur
+only through explicit session requests and record before/after identities,
+provenance, and transition receipts.
+
+Every mechanism freezes its binding mode, implementation identity, required
+PyGRC identity, evidence class, claim ceiling, and remaining debt. A constructed
+RCAE binding remains constructed even when a later PyGRC version offers related
+native functionality. Native adoption requires a separate explicit binding,
+capability/schema validation, new run identity and artifacts, comparison
+against the constructed version, updated debt and claim classification, and an
+explicit promotion or supersession decision. Existing runs remain
+reconstructable against their pinned runtime and are never retroactively
+naturalized.
+
+RCAE sends the graph project a versioned demand contract describing the missing
+mechanism, constructed semantics, inputs and outputs, discriminator,
+counterfactuals, controls, debt, and expected native claim ceiling. It does not
+inject its producer into PyGRC. The graph project independently implements and
+tests a native realization, which RCAE may later consume through a new binding.
+
+**Alternatives dispositioned:** artifact-only integration is rejected as the
+sole mode because D-028 requires live comparisons and constructed probes when
+useful. Runtime-only integration is rejected because historical evidence must
+remain inspectable without a runtime. Automatic fallback, API mirroring,
+monkey-patched extensions, and availability-based native substitution are
+rejected because they destroy provenance, isolation, and reconstruction.
+
+**Staging and reopening:** artifact inspection is the initial AE01 path; runtime
+adapters are implemented only for frozen use cases. The detailed binding and
+compatibility policy remains subject to O-007 review against actual LGRC
+extension practice, but no later decision may weaken the explicit-mode,
+no-silent-substitution, read-only, or runtime-identity requirements of D-033.
+
+### 15.9 O-007 disposition — Replay-frozen realization profiles; general API deferred
+
+**Selected option:** AE01 does not define a general stable RCAE producer,
+plugin, or LGRC-extension API. Each retained runtime experiment instead freezes
+a versioned mechanism contract and an explicit realization profile. The stable
+unit for replay is the recorded experiment boundary, not a promise that all
+future mechanisms share one Python interface.
+
+Every realization profile MUST declare at least:
+
+```text
+mechanism-contract and realization-profile identifiers and versions
+realization class: rcae_constructed | pygrc_native_candidate | pygrc_native_supported
+exact PyGRC source/release identity and required public facade capabilities
+required policy identifiers and input, output, state, and artifact schema versions
+availability, enabled, validated, and supported status as separate fields
+producer/transition discipline and allowed scheduling operations
+claim ceiling, evidence class, remaining debt, and transfer scope
+reconstruction, replay, controls, and compatibility-conformance procedure
+```
+
+Constructed RCAE producers inspect an immutable copy or validated projection of
+LGRC state, emit evidence and declarative requests, and schedule work only
+through the narrow public PyGRC operations named in their profile. They MUST NOT
+retain or mutate internal PyGRC state. PyGRC `step()` or its declared successor
+remains the transition consumer; an RCAE producer does not replace transition
+semantics.
+
+A native candidate and a supported native realization are distinct additive
+profiles. The existence of a newer native capability never changes a retained
+constructed profile, its replay target, or its historical claim class. Native
+comparison requires a new profile, compatibility/conformance checks, controls,
+artifacts, and an explicit promotion or supersession decision. A later PyGRC
+revision likewise requires a new or revalidated profile rather than presumed
+compatibility.
+
+This policy follows the extension discipline observed in the graph project's
+Phase 8 LGRC work: freeze a baseline before source changes; add default-off,
+serialized, versioned policy; expose runtime-visible evidence; keep producers
+separate from transition consumption; validate snapshot/artifact replay and
+negative controls; distinguish enabled, validated, and supported states; and
+close out the native surface before downstream adoption. The Phase 8 native
+packet-loop path is the controlling precedent for treating constructed and
+native rows as non-retroactive evidence rather than silently rewriting earlier
+runs. This is a source-practice observation, not authorization for RCAE to
+perform the graph-side changes.
+
+**Hard repository boundary:** the graph/PyGRC repository is read-only from
+RCAE. No RCAE command, script, adapter, experiment, test, reproduction recipe,
+promotion workflow, or automation may edit it. RCAE may emit a portable demand
+contract and later consume a graph-owned native result. Implementing or changing
+the native PyGRC realization is a separately authorized graph-project action,
+performed outside RCAE and under graph-project change control. This boundary is
+non-negotiable within O-007 and reinforces D-003, D-018, D-028, and D-033.
+
+**Alternatives dispositioned:** a stable general producer/plugin API is
+deferred because PyGRC exposes mechanism-specific policies and public scheduling
+operations rather than a general plugin contract, and AE01 has not yet produced
+repeated use pressure from which to infer the right abstraction. Mirroring or
+re-exporting the PyGRC API, importing deep internal modules, accepting mutable
+runtime state, monkey-patching, global registration, or availability-driven
+binding substitution is rejected under D-033. Treating current PyGRC research
+surfaces as SemVer-stable is also rejected.
+
+**Safe default, reversibility, and reopening:** new mechanisms remain
+experiment-local and receive explicit replay profiles; no general public API or
+cross-experiment compatibility promise is inferred. This is additive and
+reversible because a later API can wrap retained profiles without changing
+their identities or evidence. Reopen the general API question at P4-I1 when a
+reusable implementation is actually promoted, or earlier when at least two
+independent retained consumers require the same boundary. Reopening MUST retain
+replay compatibility and the hard read-only graph boundary.
+
+### 15.10 O-008 disposition — Admission-driven domain inventory
+
+**Selected option:** no fixed domain-package inventory is declared. A reusable
+domain package is created only when the Phase 3 promotion queue selects that
+domain and a dedicated domain probe supports its implementation. Each later
+domain is considered independently; admitting one domain does not reserve,
+promise, or scaffold the others.
+
+The ant colony remains the primary conceptual worked example in the papers, but
+conceptual prominence does not make `ant` the first admitted implementation.
+Likewise, ant, forest, farm, swarm, cell, society, and other examples name
+transfer questions and possible domain contexts, not a source backlog. The
+`<promoted_domain>/` target-tree entry is therefore a category boundary rather
+than a list of promised packages.
+
+AE01 lanes SHOULD remain substrate- and domain-neutral wherever their tested
+distinction permits it. A lane MAY use domain-shaped fixtures, interpretations,
+or constructed mechanisms, but these stay experiment-local and retain their
+evidence class and claim ceiling. Domain-specific experimental success does not
+admit a reusable domain package or establish the domain's biological, semantic,
+coordination, or agency claims.
+
+Before a domain package can be created, its promotion record MUST identify:
+
+```text
+dedicated domain contract and supporting probe classification
+admitted or explicitly candidate primitive, building-block, motif, and regime dependencies
+parent basin, persistence boundary, controls, and reconstruction procedure
+domain-specific versus transferable responsibilities
+producer scaffolds, debt, transfer scope, claim ceiling, and blocked relabels
+implementation owner, public surface, conformance tests, and promotion status
+```
+
+Reusable behavior discovered through a domain probe belongs in a
+substrate-neutral catalog layer only when its transfer evidence supports that
+broader placement. It MUST NOT be generalized merely to avoid domain-local
+code, and domain packages MUST NOT become a miscellaneous home for unclassified
+primitives, bridge behavior, or runtime policy.
+
+**Alternatives dispositioned:** precreating `ant`, `forest`, and `swarm`
+packages is rejected because it would turn illustrative paper domains into an
+implicit implementation commitment and create empty architecture without an
+immediate owner. Automatically selecting RC-Ant first is rejected because its
+worked-example role is conceptual rather than experimental admission evidence.
+A fixed comprehensive inventory is rejected because AE01 and later graph/ecology
+spirals may expose different domain boundaries.
+
+**Safe default, reversibility, and reopening:** until a supported promotion
+exists, no `domains/` package or empty domain subpackages are created; domain
+work remains in its owning experiment. This deferral costs only a later additive
+directory creation and avoids package removal or misleading public surfaces.
+Reopen O-008 when Phase 3 selects the first domain probe and its dedicated
+evidence supports reusable implementation. At that point decide only the
+selected domain's package; inventory beyond it remains evidence-driven and
+deferred by this policy.
 
 ## 16. Immediate next steps
 
@@ -916,6 +1571,17 @@ directive.
 | 2026-07-10 | Revision 0.2: carried forward six canonical N29 debts, required N29 closeout/source digests, reframed Lane 7 as expected-missing demand classification, documented Lane 1/4 motivation, enabled parallel lane execution, and made Phase 4/spec filenames explicitly provisional. |
 | 2026-07-10 | Revision 0.3: added symmetric N30 closeout-digest traceability and aligned the recorded decision range through D-024. |
 | 2026-07-10 | Revision 0.3 formally accepted by the project owner; checklist gate `P0-I1-GATE` closed. |
+| 2026-07-10 | Revision 0.4: resolved O-004 as D-025 with a PyGRC-compatible canonical JSON profile and a concrete trigger for reconsidering language-neutral canonicalization. |
+| 2026-07-10 | Revision 0.5: resolved O-005 as D-026 with JSON Schema Draft 2020-12 for persisted shape and Python types/validators for implementation and semantic constraints. |
+| 2026-07-10 | Revision 0.6: resolved O-006 as D-027 with selected historical evidence, review thresholds for large outputs, and mandatory verified reconstruction for every declared artifact. |
+| 2026-07-10 | Revision 0.7: accepted D-028, defining the graph/agentic-ecology relation as a bidirectional spiral that permits explicitly constructed ecology-side demand probes without promoting them to native LGRC evidence. |
+| 2026-07-10 | Revision 0.8: resolved O-009 as D-029 with consume/extend/introduce candidate origins, non-compensable eligibility gates, anchored scoring, deterministic tie handling, sensitivity checks, and explicit non-selection. |
+| 2026-07-10 | Revision 0.9: resolved O-010 as D-030 with generated report projections or deterministic assembly of generated facts and separately authored bounded interpretation. |
+| 2026-07-10 | Revision 0.10: resolved O-001 as D-031, fixing `rc_agentic_ecology` as the Python import root without assigning distribution, release, or compatibility meaning. |
+| 2026-07-10 | Revision 0.11: accepted D-032, explicitly deferring Python distribution name and software version while separating them from repository publication version `0.1`. |
+| 2026-07-10 | Revision 0.12: resolved O-003 as D-033 with non-runtime artifact inspection, strict installed-PyGRC execution, local runtime resolution, narrow adapters, and explicit constructed-to-native transitions. |
+| 2026-07-10 | Revision 0.13: partially resolved O-007 as D-034 with replay-frozen mechanism contracts and realization profiles, graph Phase 8 extension discipline, deferred general API stability, and an explicit prohibition on RCAE modifying the graph/PyGRC repository. |
+| 2026-07-10 | Revision 0.14: partially resolved O-008 as D-035 with admission-driven domain packages, experiment-local domain fixtures, and no predeclared or empty domain inventory. P0-I2 decision resolution passed. |
 
 ## 18. Program completion criteria
 
