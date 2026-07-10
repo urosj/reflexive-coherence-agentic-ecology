@@ -2,8 +2,8 @@
 
 **Status:** P1-I4 revision 0.24 developmental interpretation freeze complete
 
-**Acceptance state:** preregistration only; `AE01-C0` remains the highest
-assigned rung
+**Acceptance state:** preregistration only; Review R2 assigned `AE01-C2` for
+the complete Phase 1 contract, not for a hypothesis result
 
 ## Frozen P1-I4 set
 

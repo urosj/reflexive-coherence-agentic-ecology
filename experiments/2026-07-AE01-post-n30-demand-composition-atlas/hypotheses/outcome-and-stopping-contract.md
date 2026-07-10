@@ -166,4 +166,5 @@ recurrence or ranking.
 
 This contract freezes outcome meaning and stopping logic only. It neither
 assigns a terminal result nor establishes that any required mechanism exists.
-`AE01-C0` remains the highest assigned rung.
+Review R2 assigned `AE01-C2` for the complete Phase 1 contract, not for a lane
+result. No terminal result or higher scientific rung is assigned.

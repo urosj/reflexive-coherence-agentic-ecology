@@ -84,4 +84,5 @@ uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand
 ```
 
 Contract completeness, schema validity, and registry consistency are not
-positive atlas evidence. `AE01-C0` remains the highest assigned rung.
+positive atlas evidence. Review R2 assigned `AE01-C2` for the accepted Phase 1
+contract; no lane or higher scientific rung is assigned.

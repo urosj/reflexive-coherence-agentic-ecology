@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.24
+**Baseline revision:** 0.25
 
 **Date:** 2026-07-10
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.24 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.25 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | Revision 0.24 refreeze complete; review open | P1-GATE | P1-I3 through P1-I5 revised and passed; R2 pending |
-| Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
+| Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
+| Phase 2 — Atlas execution | Open for calibration and registration | P2-GATE | Candidate execution remains lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -59,8 +59,8 @@ AE01 ladder dashboard:
 | Rung | Meaning | Status |
 | --- | --- | --- |
 | AE01-C0 | Initialized, no atlas claim | Assigned at P1-I2; no positive evidence |
-| AE01-C1 | Source inventory and consumption boundaries accepted | Not assigned |
-| AE01-C2 | Lane schemas, controls, claim guards, metric/calibration semantics, and developmental interpretation frozen | Not assigned |
+| AE01-C1 | Source inventory and consumption boundaries accepted | Assigned by Review R2 at P1-GATE; no lane evidence |
+| AE01-C2 | Lane schemas, controls, claim guards, metric/calibration semantics, and developmental interpretation frozen | Assigned by Review R2 at P1-GATE; no lane result |
 | AE01-C3 | All required lane records classified | Not assigned |
 | AE01-C4 | Cross-lane requirements and dependencies synthesized | Not assigned |
 | AE01-C5 | Controls, debt, failure, and non-selection gates passed | Not assigned |
@@ -896,8 +896,9 @@ Implementation details:
 
 Infrastructure success establishes contract enforceability only. It does not
 support a lane, composition, primitive, building block, PyGRC compatibility on
-another machine, or N31+ selection. Review R2 and `P1-GATE` are next;
-`AE01-C1` and `AE01-C2` remain unassigned until that review.
+another machine, or N31+ selection. Review R2 subsequently accepted this
+infrastructure and assigned `AE01-C1` and `AE01-C2` at `P1-GATE` without
+opening lane evidence.
 
 Revision 0.24 specifically corrects the possible binary reading of revision
 0.23. Thresholds remain frozen and cannot be tuned after candidate outcomes,
@@ -915,10 +916,14 @@ interpretation records both axis readings and a falsifiable next move.
 - [x] `P1-I3-GATE` passed.
 - [x] `P1-I4-GATE` passed.
 - [x] `P1-I5-GATE` passed.
-- [ ] AE01-C1 is assigned with evidence.
-- [ ] AE01-C2 is assigned with evidence.
+- [x] Review R2 passed over the complete P1-I1 through P1-I5 freeze. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/R2-closeout.md`.
+- [x] AE01-C1 is assigned with evidence.
+- [x] AE01-C2 is assigned with evidence.
 - [x] Positive atlas conclusions remain unopened.
 - [x] The frozen machine lane registry and all narrative lane projections agree.
+- [x] `P1-GATE` passed; candidate-blind calibration and lane registration are
+  open, while candidate execution remains behind each lane-local gate.
 
 Phase 1 boundary:
 
@@ -939,10 +944,14 @@ Every lane iteration below MUST complete the same minimum work:
 - [ ] Confirm all declared input sources and digests.
 - [ ] Run the candidate-blind matched-null calibration and retain its
   schema-valid calibration record.
+- [ ] Retain reconstructable calibration-input and matched-null generator
+  provenance, and verify that no candidate-derived input contributed.
 - [ ] Freeze the lane's primary metric sheet `delta`; do not inspect candidate
   outcomes during calibration.
 - [ ] Pass the lane-local registration gate for exact implementation,
   realization profile, cells, controls, artifacts, and interpretation refs.
+- [ ] Materialize and review an explicit lane-registration evidence bundle;
+  `validate-phase1` success alone does not satisfy registration.
 - [ ] Populate the complete pattern-card contract.
 - [ ] Separate N30-supported and ecology-extrapolated legs.
 - [ ] Record the parent basin and effect on parent closure.
@@ -950,6 +959,9 @@ Every lane iteration below MUST complete the same minimum work:
 - [ ] Record N29 prototype and composition dependencies.
 - [ ] Extract missing substrate requirements without treating demand as proof.
 - [ ] Run all common controls and relevant lane-specific controls.
+- [ ] Resolve every mandatory control outcome and every applicability
+  disposition through retained evidence; control ID references alone do not
+  satisfy terminal closure.
 - [ ] Record failures, debt, transfer scope, and claim ceiling.
 - [ ] Generate a machine artifact and matching human-readable report.
 - [ ] Validate manifest, digest, portable paths, and unsafe-claim flags.
@@ -989,7 +1001,7 @@ developmental-interpretation pairs to pass.
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1018,7 +1030,7 @@ Exit gate `P2-I1-GATE`:
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1045,7 +1057,7 @@ Exit gate `P2-I2-GATE`:
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1075,7 +1087,7 @@ Exit gate `P2-I3-GATE`:
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1104,7 +1116,7 @@ Exit gate `P2-I4-GATE`:
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1132,7 +1144,7 @@ Exit gate `P2-I5-GATE`:
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1161,7 +1173,7 @@ Exit gate `P2-I6-GATE`:
 
 Entry condition:
 
-- [ ] `P1-GATE` passed.
+- [x] `P1-GATE` passed.
 
 Required lane work:
 
@@ -1818,7 +1830,9 @@ Mandatory review points:
   accepted by project owner on 2026-07-10.
 - [x] Review R1 before `P0-GATE`. Evidence: project-owner review of the P0-I2
   decision lattice, D-037 disposition, and revision 0.16 scaffold audit.
-- [ ] Review R2 before AE01 contract freeze at `P1-GATE`.
+- [x] Review R2 before AE01 contract freeze at `P1-GATE`. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/R2-review-checklist.json`
+  and its closeout record.
 - [ ] Review R3 after the first completed lane to assess contract adequacy
   without tuning conclusions.
 - [ ] Review R4 before cross-lane synthesis.
@@ -1860,13 +1874,13 @@ Use this section when checking a conditional item as deferred.
 | P0-I2-GATE | Master plan and checklist revision 0.14; O-001 through O-010 dispositioned with decisions D-025 through D-035 and explicit safe defaults | 2026-07-10 | Accepted item-by-item by project owner; passed |
 | P0-I3-GATE | Revision 0.16 experiment/implementation indexes, Post-N30 roadmap, AE01 workspace, owned Phase 1 paths, README navigation, and portability scan | 2026-07-10 | Self-audited; passed |
 | P0-GATE | Revision 0.17; P0-I1 through P0-I3 passed; Review R1 accepted as D-037 with no P0-I2 reopening | 2026-07-10 | Accepted by project owner; passed |
-| P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-I3-GATE | Revision 0.24 common contract and schema `1.1.0`; twenty record shapes including metric sheet, candidate-blind calibration, developmental interpretation, and required terminal reference | 2026-07-10 | Reopened by D-038, revised, self-audited, and passed pending R2 |
-| P1-I4-GATE | Revision 0.24 hypotheses plus developmental-interpretation contract, hard-gate partition, exact threshold relations, seven lane ladders, classification-value ladder, and next-move discipline | 2026-07-10 | Reopened by D-038, revised, self-audited, and passed pending R2 |
-| P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Reopened by D-038, revised, self-audited, and passed pending R2 |
-| P1-GATE | Pending | — | Open; Review R2 and AE01-C1/C2 disposition required |
-| P2-GATE | Pending | — | Blocked |
+| P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Accepted by Review R2; passed |
+| P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Accepted by Review R2; passed |
+| P1-I3-GATE | Revision 0.24 common contract and schema `1.1.0`; twenty record shapes including metric sheet, candidate-blind calibration, developmental interpretation, and required terminal reference | 2026-07-10 | Accepted by Review R2; passed |
+| P1-I4-GATE | Revision 0.24 hypotheses plus developmental-interpretation contract, hard-gate partition, exact threshold relations, seven lane ladders, classification-value ladder, and next-move discipline | 2026-07-10 | Accepted by Review R2; passed |
+| P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Accepted by Review R2; passed |
+| P1-GATE | Structured R2 checklist and closeout; `AE01-C1` and `AE01-C2` assigned; no-positive-result boundary preserved | 2026-07-10 | Project-owner-supplied Review R2 accepted; passed |
+| P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
 | FINAL-GATE | Pending | — | Blocked |
@@ -1933,15 +1947,20 @@ Change log:
 | CL-021 | 2026-07-10 | Revision 0.21 passed P1-I3 with one normative meaning contract, a discriminated schema bundle for seventeen closed record shapes, and the controlling seven-lane registry. Semantic validators and automated projection checks remain P1-I5 work; no positive evidence or higher rung opened. | P1-I3-GATE onward | Superseded by CL-022 |
 | CL-022 | 2026-07-10 | Revision 0.22 passed P1-I4 with nine preregistered hypotheses, finite outcome and stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and a bounded P1-I5 implementation handoff. No lane executed, no result was assigned, and `AE01-C0` remains the ceiling. | P1-I4-GATE onward | Superseded by CL-023 |
 | CL-023 | 2026-07-10 | Revision 0.23 passed P1-I5 with PyGRC-compatible canonicalization, semantic and schema guards, portable paths, deterministic IDs, resolved profiles and manifests, a finite 49-cell policy, runtime receipts, report assembly, validated lane projections, 28 focused tests, duplicate reconstruction, and fail-closed missing-runtime evidence. No lane executed and Review R2 remains open before P1-GATE. | P1-I5-GATE onward | Superseded by CL-024 |
-| CL-024 | 2026-07-10 | Revision 0.24 accepted D-038, preserved revision 0.23 in commit `d240269`, and reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric/calibration/interpretation records, candidate-blind resolution, exact threshold relations, lane boundary ladders, two-axis readings, classification-value and guarded-next-move semantics, 32 focused tests, and linked synthesis entry. No lane or calibration executed as evidence; `AE01-C0` remains the ceiling. | P1-I3-GATE onward | Active |
+| CL-024 | 2026-07-10 | Revision 0.24 accepted D-038, preserved revision 0.23 in commit `d240269`, and reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric/calibration/interpretation records, candidate-blind resolution, exact threshold relations, lane boundary ladders, two-axis readings, classification-value and guarded-next-move semantics, 32 focused tests, and linked synthesis entry. No lane or calibration executed as evidence; `AE01-C0` remains the ceiling. | P1-I3-GATE onward | Superseded by CL-025 |
+| CL-025 | 2026-07-10 | Revision 0.25 retained the complete Review R2 disposition as a structured checklist and closeout, accepted P1-I1 through P1-I5, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Candidate-blind calibration and lane registration opened; candidate execution remains behind each lane-local gate. Calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory Phase 2 guards; R3 decides whether concrete use requires new first-class records. No positive atlas result is assigned. | P1-GATE and P2 entry | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Complete Review R2 over the full P1-I1 through P1-I5 contract freeze.
-2. [ ] Disposition `AE01-C1`, `AE01-C2`, and any Review R2 findings without
-   opening evidential conclusions.
-3. [ ] Pass `P1-GATE` only if the full contract remains claim-safe and
-   reconstructable, then open candidate-blind calibration and lane
-   registration; keep candidate execution behind each lane-local gate.
+1. [ ] Begin candidate-blind calibration for one or more independently chosen
+   Phase 2 lanes and retain each schema-valid record plus reconstructable
+   matched-null provenance.
+2. [ ] Freeze the corresponding metric sheet and materialize an explicit
+   registration evidence bundle before any candidate cell executes; do not
+   infer registration from `validate-phase1` alone.
+3. [ ] Execute the first locally admitted lane, resolve every mandatory control
+   outcome before terminal closure, then complete Review R3 without tuning its
+   conclusion and decide whether first-class registration/control records are
+   actually required.

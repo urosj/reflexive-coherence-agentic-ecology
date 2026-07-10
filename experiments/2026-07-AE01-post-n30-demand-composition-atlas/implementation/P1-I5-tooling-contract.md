@@ -261,9 +261,9 @@ They fail rather than inventing missing inputs.
 ## 12. P1-I5 claim boundary
 
 Successful validation proves that the infrastructure enforces the frozen
-contracts on its fixtures. P1-GATE may authorize candidate-blind calibration
+contracts on its fixtures. P1-GATE now authorizes candidate-blind calibration
 and lane registration, but candidate execution remains lane-blocked until its
-metric sheet is frozen. Validation does not establish a shared-medium pattern,
-successful composition, reusable primitive, PyGRC compatibility on another
-machine, catalog admission, or N31+ selection. `AE01-C0` remains the highest
-assigned rung until P1-GATE review separately assigns C1/C2.
+metric sheet and exact registration are frozen. Validation does not establish
+a shared-medium pattern, successful composition, reusable primitive, PyGRC
+compatibility on another machine, catalog admission, or N31+ selection. Review
+R2 assigned `AE01-C2` for contract acceptance only.

@@ -1,6 +1,6 @@
 # AE01 Common Machine and Narrative Contract
 
-**Status:** refrozen at P1-I3 revision 0.24; Review R2 pending
+**Status:** frozen at P1-I3 revision 0.24; Review R2 and P1-GATE passed
 
 **Contract version:** `1.1.0`
 
@@ -482,5 +482,6 @@ This contract freezes record meaning and shape only. Schema completeness,
 registry consistency, or a valid empty record does not support a lane result,
 composition, catalog admission, domain package, or N31+ candidate.
 
-`AE01-C0` remains the highest assigned rung. `AE01-C1` and `AE01-C2` remain
-unassigned until the full Phase 1 gate and R2 review.
+Review R2 assigned `AE01-C1` and `AE01-C2` after accepting this contract as
+part of the complete Phase 1 freeze. `AE01-C2` is contract acceptance only and
+does not support a lane result or stronger claim.

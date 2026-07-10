@@ -1,10 +1,10 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** revision 0.24 developmental interpretation and infrastructure freeze complete; P1-GATE review next
+**Status:** Review R2 and P1-GATE passed; Phase 2 calibration and registration open
 
 **Local experiment:** `AE01`
 
-**Acceptance state:** `AE01-C0` assigned; no positive atlas claim
+**Acceptance state:** `AE01-C2` assigned; no positive atlas claim
 
 **Source admission:**
 [AE01 P1-I1 source inventory](2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md)
@@ -20,6 +20,9 @@
 
 **Tooling freeze:**
 [AE01 P1-I5 artifact, tooling, and reconstruction contract](2026-07-AE01-post-n30-demand-composition-atlas/implementation/P1-I5-tooling-contract.md)
+
+**Phase 1 closeout:**
+[AE01 Review R2 closeout](2026-07-AE01-post-n30-demand-composition-atlas/reports/R2-closeout.md)
 
 **Controlling directives:**
 [Post-N30 master plan](../implementation/PostN30-plan.md) and
@@ -359,7 +362,7 @@ P1-I2 roadmap and experiment boundary          passed
 P1-I3 machine and narrative contracts          passed
 P1-I4 hypotheses, controls, failures, ladders   passed at revision 0.24
 P1-I5 calibration, tooling, reconstruction      passed at revision 0.24
-P1-GATE                                         review next; calibration remains closed
+Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1 through P2-I7 calibrate/register/execute  independent/parallel
 P2-I8 cross-lane synthesis                      after every linked terminal/interpretation pair
@@ -424,8 +427,9 @@ must not disappear because they fail to support promotion.
 | `AE01-C5` | Controls, debt, failure, and non-selection gates passed | Ecology runtime or native organization |
 | `AE01-C6` | Atlas closeout and N31+ handoff complete | Coordination, agency, motif, regime, life, or graph-side acceptance |
 
-P1-I2 assigns `AE01-C0`. `AE01-C1` and `AE01-C2` remain unassigned until the
-full P1-GATE evidence is reviewed. Later rungs require their dedicated phases.
+P1-I2 assigned `AE01-C0`. Review R2 and P1-GATE assigned `AE01-C1` and
+`AE01-C2` after reviewing the full Phase 1 evidence. Later rungs require their
+dedicated phases.
 
 ## 16. Stopping, closeout, and non-selection
 
@@ -486,17 +490,25 @@ Phase 8 completion or unrestricted autonomy
 ```
 
 The maximum P1 result is a complete, internally consistent, reproducible
-contract set at AE01-C2. This revision 0.24 freeze still establishes only
-AE01-C0.
+contract set at `AE01-C2`. Review R2 assigned that rung without opening a lane
+result.
 
-## 19. Remaining Phase 1 work
+## 19. Phase 1 closeout and Phase 2 entry
 
-Review R2 must evaluate the complete P1-I1 through P1-I5 freeze. P1-GATE must
-then disposition `AE01-C1` and `AE01-C2`, confirm all narrative projections,
-and preserve the no-positive-result boundary before calibration/registration
-opens.
+Review R2 evaluated the complete P1-I1 through P1-I5 freeze, assigned
+`AE01-C1` and `AE01-C2`, confirmed all narrative projections, and preserved the
+no-positive-result boundary. The controlling closeout is recorded in the
+[R2 report](2026-07-AE01-post-n30-demand-composition-atlas/reports/R2-closeout.md).
 
-Until P1-GATE passes, lane calibration, registration, execution, and positive
-atlas conclusions remain closed. Passing it opens candidate-blind calibration
-and lane registration only; each candidate matrix retains a lane-local
-resolution/registration gate.
+P1-GATE opens candidate-blind calibration and lane registration only. Each
+candidate matrix retains a lane-local resolution/registration gate; candidate
+execution and positive atlas conclusions remain closed until their dedicated
+evidence gates pass.
+
+Before candidate execution, calibration must retain reconstructable
+matched-null generator/input provenance and registration must materialize an
+explicit reviewed evidence bundle; `validate-phase1` alone is not
+registration. Before terminal closure, every mandatory control outcome and
+applicability disposition must resolve through retained evidence. Review R3
+will decide whether the first concrete lane requires new first-class records
+for those relationships.

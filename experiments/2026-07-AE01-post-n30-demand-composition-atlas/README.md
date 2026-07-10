@@ -1,8 +1,8 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** revision 0.24 developmental interpretation and tooling freeze complete; P1-GATE review next
+**Status:** Review R2 and P1-GATE passed; Phase 2 calibration and registration open
 
-**Acceptance state:** `AE01-C0` assigned; `AE01-C1` through `AE01-C6` unassigned
+**Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
 **Roadmap:**
 [Post-N30 Agentic-Ecology Demand and Composition Atlas](../Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md)
@@ -21,6 +21,10 @@
 
 **Tooling freeze:**
 [P1-I5 artifact, tooling, and reconstruction contract](implementation/P1-I5-tooling-contract.md)
+
+**Phase 1 closeout:**
+[Review R2 closeout](reports/R2-closeout.md) and
+[structured R2 checklist](reports/R2-review-checklist.json)
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -86,6 +90,13 @@ lane's candidate-blind resolution and exact registration freeze. Cross-lane
 synthesis begins only after every lane has a complete terminal record and
 linked developmental interpretation.
 
+Calibration authority requires reconstructable matched-null generator/input
+provenance, and registration requires an explicit reviewed evidence bundle;
+`validate-phase1` success alone supplies neither. Terminal closure additionally
+requires every mandatory control outcome and applicability disposition to
+resolve through retained evidence. Review R3 will determine whether the first
+concrete lane creates a justified need for new first-class records.
+
 ## Atlas content
 
 AE01 will contain:
@@ -131,9 +142,9 @@ P1-I2 roadmap and experiment boundary          passed
 P1-I3 machine and narrative contracts          passed
 P1-I4 hypotheses, controls, failures, ladders   passed at revision 0.24
 P1-I5 tooling, calibration, reconstruction      passed at revision 0.24
-P1-GATE                                         review next; calibration remains closed
+Review R2 and P1-GATE                           passed; C1/C2 assigned
 
-P2-I1 through P2-I7                             independent lane execution
+P2-I1 through P2-I7                             calibration/registration open; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis
 P3                                              ranking, promotion, and closeout
@@ -150,7 +161,9 @@ No P1 work may assign a positive lane result.
 - `configs/` owns the frozen profiles, finite execution policy, hard-gate
   partition, threshold relations, lane ladders, and next-move policy.
 - `scripts/` owns experiment-local validation and reconstruction tooling.
-- `outputs/` and `reports/` own only explicitly selected retained products.
+- `outputs/` owns explicitly selected retained evidence; `reports/` owns
+  deterministic reports and administrative review/closeout records with their
+  evidence effect stated explicitly.
 
 No reusable-source path, domain package, or canonical specification is selected
 by this experiment boundary.
@@ -197,7 +210,8 @@ a domain package merely because it appears in the atlas.
 
 ## Claim boundary
 
-`AE01-C0` establishes an initialized and bounded experiment only. It does not
-establish a shared-medium pattern, composition, reusable primitive or building
-block, coordination, communication, motif, regime, domain ecology, agency,
-life, or selected N31+ experiment.
+`AE01-C2` establishes accepted source boundaries and a frozen, executable
+Phase 1 contract only. It does not establish a shared-medium pattern,
+composition, reusable primitive or building block, coordination,
+communication, motif, regime, domain ecology, agency, life, or selected N31+
+experiment.

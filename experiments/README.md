@@ -13,11 +13,12 @@ being placed here.
 - [Master program plan](../implementation/PostN30-plan.md)
 - [Master program checklist](../implementation/PostN30-checklist.md)
 
-AE01 has passed the revision 0.24 P1-I3-through-P1-I5 refreeze and assigned only
-`AE01-C0`; its machine/narrative contracts, hypothesis/control/failure and
-developmental-interpretation preregistration, metric calibration, and
-infrastructure are frozen. P1-GATE review remains open and no positive atlas
-result is supported.
+AE01 has passed Review R2 and `P1-GATE` at `AE01-C2`. Its source boundaries,
+machine/narrative contracts, hypothesis/control/failure and developmental-
+interpretation preregistration, candidate-blind calibration procedure, and
+infrastructure are frozen. Phase 2 calibration and lane registration are open;
+candidate execution remains lane-gated and no positive atlas result is
+supported.
 
 ## Experiment authority
 

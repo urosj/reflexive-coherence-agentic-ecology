@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.24
+**Plan revision:** 0.25
 
 **Date:** 2026-07-10
 
@@ -740,6 +740,12 @@ AE01-C6 = atlas closeout and N31+ handoff complete
 `AE01-C6` is an atlas and handoff rung. It does not mean an ecology runtime,
 native shared-medium coordination, agency, an ecology motif, or an ecology
 regime has been demonstrated.
+
+Review R2 accepted the full Phase 1 freeze, assigned `AE01-C1` and
+`AE01-C2`, and passed `P1-GATE`. The disposition is recorded in the
+[AE01 R2 closeout](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/R2-closeout.md).
+This opens candidate-blind calibration and lane registration only; no positive
+lane or higher rung is implied.
 
 ### 11.8 N31+ selection rule
 
@@ -1722,18 +1728,22 @@ behavior without leakage.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.24:
+Current dependency order after revision 0.25:
 
-1. Complete Review R2 over the refrozen P1-I1 through P1-I5 contract.
-2. Disposition `AE01-C1`, `AE01-C2`, and any R2 findings without opening an
-   evidential conclusion.
-3. Pass `P1-GATE`; this opens candidate-blind calibration and lane registration
-   only.
-4. For each Phase 2 lane, freeze calibration and exact implementation
-   registration before candidate execution.
-5. Execute and classify lanes independently; synthesize only after all required
-   terminal and developmental-interpretation records are comparable.
-6. Close AE01 before promoting canonical specifications or stable source
+1. For each Phase 2 lane, freeze candidate-blind calibration and exact
+   implementation registration before candidate execution. Retain
+   reconstructable matched-null provenance and an explicit reviewed
+   registration evidence bundle; infrastructure validation alone is not
+   registration.
+2. Execute and classify lanes independently; preserve each prior result when a
+   scientific next move requires a new preregistration, and require resolved
+   mandatory control outcomes rather than control ID references alone.
+3. Complete Review R3 after the first lane closes without tuning its
+   conclusion; decide there whether concrete use requires first-class
+   lane-registration or control-outcome records.
+4. Synthesize only after all required terminal and developmental-
+   interpretation records are comparable.
+5. Close AE01 before promoting canonical specifications or stable source
    abstractions.
 
 ## 17. Conversation provenance and directive maintenance
@@ -1809,6 +1819,7 @@ directive.
 | 2026-07-10 | Revision 0.22: passed P1-I4 with seven lane hypotheses, recurring-demand and explicit-non-selection synthesis hypotheses, finite comparison/stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and an explicit P1-I5 implementation handoff. No lane executed and no result or higher acceptance rung opened. |
 | 2026-07-10 | Revision 0.23: passed P1-I5 with experiment-local canonicalization, digests, schema and semantic guards, deterministic IDs, resolved manifests/profiles, finite comparison policy, strict runtime receipts, report assembly, validated lane projections, conformance fixtures, portable reconstruction commands, and focused tests. Infrastructure validation opened no lane evidence; P1-GATE and Review R2 remain open. |
 | 2026-07-10 | Revision 0.24: accepted D-038 and explicitly reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric sheets, candidate-blind calibration, machine-derived threshold relations, lane boundary ladders, two-axis developmental interpretations, classification-value and next-move discipline, and guarded local refinement. Thresholds remain frozen anchors without erasing lower or unexpected classes; no lane evidence opened. |
+| 2026-07-10 | Revision 0.25: recorded Review R2 over the complete P1-I1 through P1-I5 freeze, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Phase 2 candidate-blind calibration and lane registration are open; candidate execution remains behind each lane-local resolution/registration gate. Reconstructable calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory proportional guards, while R3 decides whether concrete use justifies new first-class records. No positive atlas result is assigned. |
 
 ## 18. Program completion criteria
 

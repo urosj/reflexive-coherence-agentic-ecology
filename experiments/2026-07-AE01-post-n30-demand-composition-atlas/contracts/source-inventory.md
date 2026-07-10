@@ -280,6 +280,6 @@ roadmap may be used as positive substrate evidence.
 - Mutable orientation prose is separated from immutable closeout provenance.
 - No source admission opens positive AE01 evidence.
 
-`P1-I1-GATE` is supported by this record. AE01-C1 prerequisites are satisfied,
-but AE01-C1 remains unassigned until the full Phase 1 gate is passed with its
-required evidence.
+`P1-I1-GATE` is supported by this record. Review R2 accepted these source and
+consumption boundaries and assigned `AE01-C1` when P1-GATE passed. The
+assignment opens no positive AE01 evidence.
