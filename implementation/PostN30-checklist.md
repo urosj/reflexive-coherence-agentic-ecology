@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.21
+**Baseline revision:** 0.22
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.21 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.22 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | In progress | P1-I4-GATE | P1-I3-GATE passed |
+| Phase 1 — AE01 contract freeze | In progress | P1-I5-GATE | P1-I4-GATE passed |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -553,54 +553,54 @@ Entry condition:
 
 Required hypotheses:
 
-- [ ] Niche-formation demand hypothesis.
-- [ ] Pool co-conditioning demand hypothesis.
-- [ ] Trail/stigmergic demand hypothesis.
-- [ ] Nursery/support demand hypothesis.
-- [ ] Boundary-exchange demand hypothesis.
-- [ ] Capacity-circulation demand hypothesis.
-- [ ] Parent-basin modulation demand and missing-surface hypothesis.
-- [ ] Cross-lane recurring-requirement hypothesis.
-- [ ] Non-selection hypothesis when no candidate meets the N31+ gate.
+- [x] Niche-formation demand hypothesis.
+- [x] Pool co-conditioning demand hypothesis.
+- [x] Trail/stigmergic demand hypothesis.
+- [x] Nursery/support demand hypothesis.
+- [x] Boundary-exchange demand hypothesis.
+- [x] Capacity-circulation demand hypothesis.
+- [x] Parent-basin modulation demand and missing-surface hypothesis.
+- [x] Cross-lane recurring-requirement hypothesis.
+- [x] Non-selection hypothesis when no candidate meets the N31+ gate.
 
 Required fail-closed controls:
 
-- [ ] Conceptual paper relabeled as runtime evidence.
-- [ ] N30 relabeled as coordination, agency, or ecology regime.
-- [ ] N29 component success relabeled as composition success.
-- [ ] Pre-given closed agent plus passive environment relabeled as RC ecology.
-- [ ] Message bus/global variable disguised as medium.
-- [ ] Surface annotation without functional dependence.
-- [ ] Co-occurrence relabeled as composition.
-- [ ] Hidden producer or cross-prototype handoff.
-- [ ] Free trace, memory, movement, maintenance, or communication.
-- [ ] Missing parent-basin context.
-- [ ] Participant/medium boundary confusion.
-- [ ] Premature semantic communication, cooperation, intention, or agency.
-- [ ] Fixed N31 selection before synthesis.
-- [ ] Agentic-ecology demand relabeled as substrate evidence.
-- [ ] Constructed ecology-side mechanism relabeled as native LGRC evidence.
-- [ ] Constructed mechanism admitted without necessity, minimality,
+- [x] Conceptual paper relabeled as runtime evidence.
+- [x] N30 relabeled as coordination, agency, or ecology regime.
+- [x] N29 component success relabeled as composition success.
+- [x] Pre-given closed agent plus passive environment relabeled as RC ecology.
+- [x] Message bus/global variable disguised as medium.
+- [x] Surface annotation without functional dependence.
+- [x] Co-occurrence relabeled as composition.
+- [x] Hidden producer or cross-prototype handoff.
+- [x] Free trace, memory, movement, maintenance, or communication.
+- [x] Missing parent-basin context.
+- [x] Participant/medium boundary confusion.
+- [x] Premature semantic communication, cooperation, intention, or agency.
+- [x] Fixed N31 selection before synthesis.
+- [x] Agentic-ecology demand relabeled as substrate evidence.
+- [x] Constructed ecology-side mechanism relabeled as native LGRC evidence.
+- [x] Constructed mechanism admitted without necessity, minimality,
   counterfactual, withdrawal, debt, and discriminator declarations.
-- [ ] Artifact inspection, mock behavior, or automatic fallback substituted for
+- [x] Artifact inspection, mock behavior, or automatic fallback substituted for
   requested live PyGRC execution.
-- [ ] Domain-shaped fixture or conceptual example relabeled as a reusable motif
+- [x] Domain-shaped fixture or conceptual example relabeled as a reusable motif
   or admitted domain package.
-- [ ] Incomplete or runtime-unavailable execution relabeled as a negative lane
+- [x] Incomplete or runtime-unavailable execution relabeled as a negative lane
   result or valid lane closure.
 
 Required failure classifications:
 
-- [ ] No primitive.
-- [ ] Primitive visible but unstable.
-- [ ] Producer-carried only.
-- [ ] Medium absent.
-- [ ] Proxy success.
-- [ ] Fixture lock.
-- [ ] Composition interference.
-- [ ] Claim inflation.
-- [ ] Regime fragmentation.
-- [ ] Dormancy ambiguity.
+- [x] No primitive.
+- [x] Primitive visible but unstable.
+- [x] Producer-carried only.
+- [x] Medium absent.
+- [x] Proxy success.
+- [x] Fixture lock.
+- [x] Composition interference.
+- [x] Claim inflation.
+- [x] Regime fragmentation.
+- [x] Dormancy ambiguity.
 
 Iteration boundary:
 
@@ -612,17 +612,81 @@ contract revision and rerun.
 
 Exit gate `P1-I4-GATE`:
 
-- [ ] Every lane has finite positive, negative, blocked, and incomplete outcomes
+- [x] Every lane has finite positive, negative, blocked, and incomplete outcomes
   with explicit stopping conditions.
-- [ ] Every unsafe relabel has a fail-closed control.
-- [ ] Failure remains a valid catalog input rather than disappearing from the
+- [x] Every unsafe relabel has a fail-closed control.
+- [x] Failure remains a valid catalog input rather than disappearing from the
   atlas.
+- [x] Iteration interpretation and P1-I5 implementation handoff recorded below.
+- [x] `P1-I4-GATE` passed. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/README.md`
+  and its linked outcome, lane, synthesis, control, and failure contracts.
+
+#### P1-I4 iteration interpretation and implementation handoff
+
+**Recorded:** 2026-07-10
+
+**Status:** accepted iteration closeout interpretation; no evidential result
+
+The seven lanes are different causal views of shared history outside a closed
+participant:
+
+- `AE01-L01` asks whether medium history conditions later local formation.
+- `AE01-L02` asks whether multiple sources can co-condition one shared carrier.
+- `AE01-L03` isolates persistent, costly trace-mediated routing.
+- `AE01-L04` tests support-conditioned formation without importing care or
+  cooperation.
+- `AE01-L05` tests maintained boundary state as a cause of exchange.
+- `AE01-L06` tests auditable capacity circulation without semantic resource
+  language.
+- `AE01-L07` classifies whether parent-basin modulation needs a missing graph
+  distinction.
+
+Lane 7 is intentionally asymmetric: its successful result can be a precise
+missing-surface contract, not positive M3/M4 evidence.
+
+The synthesis hypotheses ask separately whether independent lanes expose the
+same operational prerequisite and whether any such prerequisite is sufficiently
+strong and robust to recommend, or whether AE01 must explicitly select nothing.
+Recurrence is not selection. Classified failure is not discarded work:
+producer dependence, fixture lock, medium absence, proxy success, and
+composition interference remain atlas inputs because they identify what the
+substrate cannot yet express cleanly.
+
+P1-I4 freezes these logical semantics, not runtime code. P1-I5 must:
+
+1. Implement hypothesis, common-control, lane-control, and failure IDs as
+   closed validator vocabularies, including the five frozen lane-specific
+   controls per AE01 lane without generalizing that count beyond AE01.
+2. Materialize finite comparison matrices with exact configurations,
+   thresholds, deterministic seeds, attempt limits, resource envelopes, and
+   expected artifacts.
+3. Use the existing P1-I3 record shapes rather than invent a parallel result
+   schema.
+4. Require an explicit applicability disposition for every common control.
+5. Permit positive classification only from verified retained evidence with
+   every mandatory control passed.
+6. Permit a negative result only after valid completed execution, never after
+   missing PyGRC, fallback, or failed reconstruction.
+7. Preserve every failure through terminal records, debt, synthesis, and
+   reports.
+8. Keep constructed mechanisms constructed unless an explicit native
+   transition and rerun occurs.
+9. Block synthesis until all seven lane terminal records exist, then validate
+   independent lineage before counting cross-lane recurrence.
+10. Enforce D-029 scoring and non-selection without scoring ineligible
+    candidates or allowing qualitative intuition to become a silent override.
+11. Preserve the graph/PyGRC repository as read-only.
+
+Numeric thresholds, fixtures, seeds, and commands remain P1-I5 work because
+they depend on the tooling envelope. They must be frozen before `P1-GATE` and
+cannot be tuned after outcomes without a contract revision and affected rerun.
 
 ### P1-I5 — Artifact, tooling, and reconstruction freeze
 
 Entry condition:
 
-- [ ] `P1-I4-GATE` passed.
+- [x] `P1-I4-GATE` passed.
 
 Required work:
 
@@ -682,7 +746,7 @@ Exit gate `P1-I5-GATE`:
 - [x] `P1-I1-GATE` passed.
 - [x] `P1-I2-GATE` passed.
 - [x] `P1-I3-GATE` passed.
-- [ ] `P1-I4-GATE` passed.
+- [x] `P1-I4-GATE` passed.
 - [ ] `P1-I5-GATE` passed.
 - [ ] AE01-C1 is assigned with evidence.
 - [ ] AE01-C2 is assigned with evidence.
@@ -1534,6 +1598,7 @@ Phase 4.
 | Packaging and quality configuration | Yes | Yes | Install/import/lint/type/test | Pending |
 | Stable IDs and canonical serialization | Yes | Yes | Round-trip/digest | Contract shape frozen; code/verification pending |
 | Evidence provenance and source roles | Yes | Yes | Negative/compatibility | Contract shape frozen; code/verification pending |
+| Hypothesis, control, and failure vocabulary | Yes | Yes | ID/outcome/control coverage | P1-I4 semantics frozen; code/verification pending |
 | Debt and claim-boundary model | Yes | Yes | Fail-closed claim tests | Contract shape frozen; code/verification pending |
 | Artifact manifests and schema restoration | Yes | Yes | Replay/round-trip | Contract shape frozen; code/verification pending |
 | LGRC runtime/artifact bridge | Yes | Conditional modes | Integration/read-only | Runtime-binding shape frozen; implementation pending |
@@ -1610,7 +1675,8 @@ Use this section when checking a conditional item as deferred.
 | P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
 | P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
 | P1-I3-GATE | Revision 0.21 common meaning contract, JSON Schema Draft 2020-12 bundle, and controlling machine lane registry | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-GATE | Pending | — | Open; P1-I4 ready |
+| P1-I4-GATE | Revision 0.22 hypothesis index and linked outcome/stopping, lane, synthesis, control, and failure contracts | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
+| P1-GATE | Pending | — | Open; P1-I5 ready |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -1675,12 +1741,15 @@ Change log:
 | CL-018 | 2026-07-10 | Revision 0.18 aligned the experiment reconstruction summary with D-027 and added Phase 1 stable lane IDs, a single machine lane registry, rename provenance, and narrative projection validation. Completed Phase 0 gates remain closed. | P1-I2-GATE onward | Superseded by CL-019 |
 | CL-019 | 2026-07-10 | Revision 0.19 passed P1-I1 with a verified narrative source inventory, explicit mutable-roadmap provenance, all N29 debts carried, and N30 bounded at P2/M2. No AE01 rung or positive result opened. | P1-I1-GATE onward | Superseded by CL-020 |
 | CL-020 | 2026-07-10 | Revision 0.20 passed P1-I2 with a complete atlas content outline, stable lane IDs, source motivations, ontology and placement rules, debt/failure/terminal taxonomies, stopping conditions, and aligned narrative projections. `AE01-C0` assigned without positive evidence. | P1-I2-GATE onward | Superseded by CL-021 |
-| CL-021 | 2026-07-10 | Revision 0.21 passed P1-I3 with one normative meaning contract, a discriminated schema bundle for seventeen closed record shapes, and the controlling seven-lane registry. Semantic validators and automated projection checks remain P1-I5 work; no positive evidence or higher rung opened. | P1-I3-GATE onward | Active |
+| CL-021 | 2026-07-10 | Revision 0.21 passed P1-I3 with one normative meaning contract, a discriminated schema bundle for seventeen closed record shapes, and the controlling seven-lane registry. Semantic validators and automated projection checks remain P1-I5 work; no positive evidence or higher rung opened. | P1-I3-GATE onward | Superseded by CL-022 |
+| CL-022 | 2026-07-10 | Revision 0.22 passed P1-I4 with nine preregistered hypotheses, finite outcome and stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and a bounded P1-I5 implementation handoff. No lane executed, no result was assigned, and `AE01-C0` remains the ceiling. | P1-I4-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Complete P1-I4 hypothesis, control, and failure freeze.
-2. [ ] Freeze all lane, synthesis, and non-selection hypotheses.
-3. [ ] Pass `P1-I4-GATE` without executing a lane or opening positive evidence.
+1. [ ] Complete P1-I5 artifact, tooling, and reconstruction freeze.
+2. [ ] Implement semantic validation and finite comparison-matrix materialization
+   for the frozen P1-I3/P1-I4 contracts.
+3. [ ] Pass `P1-I5-GATE` without executing an evidential lane or opening
+   positive evidence.

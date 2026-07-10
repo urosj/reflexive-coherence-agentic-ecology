@@ -10,4 +10,12 @@ minimality, counterfactual, withdrawal test, debt, claim ceiling, and proposed
 graph-side discriminator. Placement here does not imply admission or LGRC
 nativity.
 
-No AE01 implementation plan or executable surface exists yet.
+P1-I4 now supplies the implementation semantics through the
+[hypothesis index](../hypotheses/README.md): stable hypothesis/control/failure
+IDs, finite comparison groups, terminal rules, and a bounded P1-I5 handoff.
+
+P1-I5 is the next implementation iteration. It may add only the minimum
+experiment infrastructure needed to materialize finite comparison matrices,
+validate the P1-I3/P1-I4 contracts, produce reproducible manifests and reports,
+and enforce runtime/read-only boundaries. No AE01 executable surface exists
+yet.

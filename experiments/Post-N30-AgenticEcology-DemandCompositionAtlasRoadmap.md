@@ -1,6 +1,6 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** P1-I3 machine and narrative contracts frozen; P1-I4 next
+**Status:** P1-I4 hypotheses, controls, and failures frozen; P1-I5 next
 
 **Local experiment:** `AE01`
 
@@ -11,6 +11,9 @@
 
 **Common contract:**
 [AE01 P1-I3 machine and narrative contract](2026-07-AE01-post-n30-demand-composition-atlas/contracts/common-contract.md)
+
+**Hypothesis freeze:**
+[AE01 P1-I4 hypothesis index](2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/README.md)
 
 **Controlling directives:**
 [Post-N30 master plan](../implementation/PostN30-plan.md) and
@@ -301,8 +304,8 @@ explicit rationale; a discharge requires newly admitted dedicated evidence.
 
 ## 10. Failure and terminal taxonomy
 
-P1-I4 will freeze detailed failure signatures. P1-I2 fixes the top-level
-terminal vocabulary:
+P1-I4 froze detailed failure signatures and fail-closed controls. P1-I2 fixes
+the top-level terminal vocabulary:
 
 | Terminal classification | Meaning | Lane-gate effect |
 | --- | --- | --- |
@@ -346,9 +349,9 @@ admitted.
 ```text
 P1-I1 source admission                         passed
 P1-I2 roadmap and experiment boundary          passed
-P1-I3 machine and narrative contracts          passed by this revision
-P1-I4 hypotheses, controls, failures            next
-P1-I5 artifact, tooling, reconstruction         after P1-I4
+P1-I3 machine and narrative contracts          passed
+P1-I4 hypotheses, controls, failures            passed by this revision
+P1-I5 artifact, tooling, reconstruction         next
 P1-GATE                                         authorizes execution only
 
 P2-I1 through P2-I7 lane execution              independent/parallel
@@ -473,13 +476,12 @@ Phase 8 completion or unrestricted autonomy
 ```
 
 The maximum P1 result is a complete, internally consistent, reproducible
-contract set at AE01-C2. This P1-I3 freeze still establishes only AE01-C0.
+contract set at AE01-C2. This P1-I4 freeze still establishes only AE01-C0.
 
 ## 19. Remaining Phase 1 freeze work
 
-P1-I4 and P1-I5 must still provide:
+P1-I5 must still provide:
 
-- hypotheses, positive/null/blocked signatures, controls, and failure mappings;
 - deterministic IDs, canonical serialization, digests, portable-path guards,
   validators, and conformance fixtures;
 - artifact retention, shared-profile materialization, reconstruction commands,

@@ -1,6 +1,6 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P1-I3 machine and narrative contracts frozen; P1-I4 next
+**Status:** P1-I4 hypotheses, controls, and failures frozen; P1-I5 next
 
 **Acceptance state:** `AE01-C0` assigned; `AE01-C1` through `AE01-C6` unassigned
 
@@ -12,6 +12,9 @@
 
 **Common contract:**
 [P1-I3 machine and narrative contract](contracts/common-contract.md)
+
+**Hypothesis freeze:**
+[P1-I4 hypothesis index](hypotheses/README.md)
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -117,9 +120,9 @@ non-selection.
 ```text
 P1-I1 source admission                         passed
 P1-I2 roadmap and experiment boundary          passed
-P1-I3 machine and narrative contracts          passed by this revision
-P1-I4 hypotheses, controls, and failures        next
-P1-I5 tooling and reconstruction                after P1-I4
+P1-I3 machine and narrative contracts          passed
+P1-I4 hypotheses, controls, and failures        passed by this revision
+P1-I5 tooling and reconstruction                next
 P1-GATE                                         authorizes lane execution
 
 P2-I1 through P2-I7                             independent lane execution
@@ -133,7 +136,8 @@ No P1 work may assign a positive lane result.
 ## Current workspace
 
 - `contracts/` owns experiment-local narrative and machine contracts.
-- `hypotheses/` owns preregistered lane and synthesis hypotheses.
+- `hypotheses/` owns the frozen P1-I4 lane/synthesis hypotheses, stopping
+  contract, controls, and failure register.
 - `implementation/` owns AE01-specific plans and checklists.
 
 Configuration, script, output, report, and reusable-source paths will be
