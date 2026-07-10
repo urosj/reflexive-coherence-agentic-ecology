@@ -150,8 +150,8 @@ and shared-medium participation before implementation claims are made.
   engineering vocabulary.
 - [`experiments/`](experiments/README.md): bounded experiment roadmaps,
   contracts, reconstruction conventions, evidence, and closeouts. The current
-  AE01 workspace has frozen its P1-I2 scope at `AE01-C0` but has not frozen
-  machine contracts or opened positive evidence.
+  AE01 workspace has completed its P1-I5 infrastructure freeze at `AE01-C0` and
+  awaits P1-GATE review without opening positive evidence.
 - [`implementation/`](implementation/README.md): active cross-cutting plans,
   decisions, checklists, and handoffs.
 - `README.md`: public orientation and claim boundary.

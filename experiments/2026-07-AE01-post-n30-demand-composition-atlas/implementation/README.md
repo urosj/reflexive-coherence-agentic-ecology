@@ -14,8 +14,12 @@ P1-I4 now supplies the implementation semantics through the
 [hypothesis index](../hypotheses/README.md): stable hypothesis/control/failure
 IDs, finite comparison groups, terminal rules, and a bounded P1-I5 handoff.
 
-P1-I5 is the next implementation iteration. It may add only the minimum
-experiment infrastructure needed to materialize finite comparison matrices,
-validate the P1-I3/P1-I4 contracts, produce reproducible manifests and reports,
-and enforce runtime/read-only boundaries. No AE01 executable surface exists
-yet.
+P1-I5 implements the minimum experiment infrastructure in the
+[artifact, tooling, and reconstruction contract](P1-I5-tooling-contract.md).
+It materializes finite comparison matrices, validates the P1-I3/P1-I4
+contracts, produces reproducible manifests and bounded reports, and enforces
+runtime/read-only boundaries.
+
+The implementation remains experiment-local under `scripts/`; it is not an
+installable distribution, reusable ecology source surface, admitted mechanism,
+or lane result.

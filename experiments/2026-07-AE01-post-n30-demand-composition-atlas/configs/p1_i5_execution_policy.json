@@ -1,0 +1,236 @@
+{
+  "evidence_effect": "none_configuration_only",
+  "global_policy": {
+    "common_control_default": {
+      "rationale": "All P1-I4 common controls remain required record guards or causal controls; directness changes priority, not applicability",
+      "status": "required"
+    },
+    "deterministic_seeds": [
+      101,
+      211,
+      307
+    ],
+    "expected_artifact_roles": [
+      "comparison_record",
+      "control_record",
+      "runtime_binding_receipt_for_every_live_run",
+      "terminal_classification_input"
+    ],
+    "infrastructure_failure_criteria": [
+      "runtime binding, dependency acquisition, process launch, timeout, or write-boundary failure is recorded separately from scientific outcome",
+      "the failed attempt remains visible and only one preregistered infrastructure retry is permitted",
+      "no infrastructure failure can satisfy a negative or positive lane signature"
+    ],
+    "invalid_run_criteria": [
+      "schema, semantic, profile, digest, path, control, budget, or reconstruction validation fails",
+      "the requested execution class or realization differs from the registered cell",
+      "an undeclared seed, attempt, configuration, artifact role, or fallback is observed"
+    ],
+    "max_attempts_per_seed": 1,
+    "max_infrastructure_retries": 1,
+    "resource_envelope": {
+      "max_disk_mb": 256,
+      "max_memory_mb": 512,
+      "max_runtime_seconds": 120
+    },
+    "support_thresholds": {
+      "mandatory_control_pass_fraction": 1.0,
+      "mandatory_signature_pass_fraction": 1.0,
+      "minimum_directional_seed_fraction": 1.0,
+      "minimum_transfer_contrast_pass_fraction": 0.6666666666666666,
+      "unsafe_flag_count_maximum": 0
+    },
+    "success_criteria": [
+      "the registered configuration and seed policy complete within the resource envelope",
+      "all required artifacts are present and pass schema, semantic, digest, and reconstruction validation",
+      "all mandatory signatures and controls are recorded without an unsafe claim flag"
+    ]
+  },
+  "lanes": [
+    {
+      "comparison_cells": [
+        {"cell_id": "reference", "group": "reference", "seed_policy": "global"},
+        {"cell_id": "candidate-conditioning", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "medium-freeze-withdrawal", "group": "withdrawal", "seed_policy": "global"},
+        {"cell_id": "trace-shuffle", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "parent-context-contrast", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "susceptibility-inversion", "group": "budget_or_leakage", "seed_policy": "global"},
+        {"cell_id": "carrier-timescale-contrast", "group": "transfer_or_contrast", "seed_policy": "global"}
+      ],
+      "direct_common_control_ids": [
+        "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-04", "AE01-CTRL-05", "AE01-CTRL-06",
+        "AE01-CTRL-08", "AE01-CTRL-09", "AE01-CTRL-10", "AE01-CTRL-11", "AE01-CTRL-12",
+        "AE01-CTRL-14", "AE01-CTRL-15", "AE01-CTRL-16", "AE01-CTRL-17", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L01",
+      "lane_control_ids": ["AE01-L01-CTRL-01", "AE01-L01-CTRL-02", "AE01-L01-CTRL-03", "AE01-L01-CTRL-04", "AE01-L01-CTRL-05"],
+      "lane_id": "AE01-L01",
+      "primary_metric": "later_formation_or_susceptibility_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    },
+    {
+      "comparison_cells": [
+        {"cell_id": "reference-pool", "group": "reference", "seed_policy": "global"},
+        {"cell_id": "individual-contributions", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "combined-orders", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "pooled-history-shuffle", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "contributor-removal", "group": "withdrawal", "seed_policy": "global"},
+        {"cell_id": "global-state-exclusion", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "access-capacity-contrast", "group": "transfer_or_contrast", "additional_groups": ["budget_or_leakage"], "seed_policy": "global"}
+      ],
+      "direct_common_control_ids": [
+        "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-03", "AE01-CTRL-04", "AE01-CTRL-05",
+        "AE01-CTRL-06", "AE01-CTRL-07", "AE01-CTRL-08", "AE01-CTRL-09", "AE01-CTRL-11",
+        "AE01-CTRL-12", "AE01-CTRL-14", "AE01-CTRL-15", "AE01-CTRL-16", "AE01-CTRL-17",
+        "AE01-CTRL-18", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L02",
+      "lane_control_ids": ["AE01-L02-CTRL-01", "AE01-L02-CTRL-02", "AE01-L02-CTRL-03", "AE01-L02-CTRL-04", "AE01-L02-CTRL-05"],
+      "lane_id": "AE01-L02",
+      "primary_metric": "combined_pool_history_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    },
+    {
+      "comparison_cells": [
+        {"cell_id": "reference-route", "group": "reference", "seed_policy": "global"},
+        {"cell_id": "candidate-deposition", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "deposition-withdrawal", "group": "withdrawal", "seed_policy": "global"},
+        {"cell_id": "trace-shuffle", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "false-trace-injection", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "decay-reinforcement-manipulation", "group": "budget_or_leakage", "seed_policy": "global"},
+        {"cell_id": "geometry-timescale-contrast", "group": "transfer_or_contrast", "seed_policy": "global"}
+      ],
+      "direct_common_control_ids": [
+        "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-04", "AE01-CTRL-05", "AE01-CTRL-06",
+        "AE01-CTRL-08", "AE01-CTRL-09", "AE01-CTRL-11", "AE01-CTRL-12", "AE01-CTRL-14",
+        "AE01-CTRL-15", "AE01-CTRL-16", "AE01-CTRL-17", "AE01-CTRL-18", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L03",
+      "lane_control_ids": ["AE01-L03-CTRL-01", "AE01-L03-CTRL-02", "AE01-L03-CTRL-03", "AE01-L03-CTRL-04", "AE01-L03-CTRL-05"],
+      "lane_id": "AE01-L03",
+      "primary_metric": "trace_conditioned_route_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    },
+    {
+      "comparison_cells": [
+        {"cell_id": "fragile-reference", "group": "reference", "seed_policy": "global"},
+        {"cell_id": "candidate-support", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "support-withdrawal", "group": "withdrawal", "seed_policy": "global"},
+        {"cell_id": "neutral-extractive-contrast", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "susceptibility-contrast", "group": "transfer_or_contrast", "seed_policy": "global"},
+        {"cell_id": "hidden-allocation-exclusion", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "support-budget-leakage", "group": "budget_or_leakage", "seed_policy": "global"}
+      ],
+      "direct_common_control_ids": [
+        "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-03", "AE01-CTRL-04", "AE01-CTRL-05",
+        "AE01-CTRL-06", "AE01-CTRL-07", "AE01-CTRL-08", "AE01-CTRL-09", "AE01-CTRL-10",
+        "AE01-CTRL-11", "AE01-CTRL-12", "AE01-CTRL-14", "AE01-CTRL-15", "AE01-CTRL-16",
+        "AE01-CTRL-17", "AE01-CTRL-18", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L04",
+      "lane_control_ids": ["AE01-L04-CTRL-01", "AE01-L04-CTRL-02", "AE01-L04-CTRL-03", "AE01-L04-CTRL-04", "AE01-L04-CTRL-05"],
+      "lane_id": "AE01-L04",
+      "primary_metric": "support_conditioned_admissibility_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    },
+    {
+      "comparison_cells": [
+        {"cell_id": "boundary-reference", "group": "reference", "seed_policy": "global"},
+        {"cell_id": "candidate-exchange", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "boundary-neutralization", "group": "withdrawal", "seed_policy": "global"},
+        {"cell_id": "selectivity-inversion", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "direct-bypass-exclusion", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "maintenance-leakage-audit", "group": "budget_or_leakage", "seed_policy": "global"},
+        {"cell_id": "permeability-load-contrast", "group": "transfer_or_contrast", "seed_policy": "global"}
+      ],
+      "direct_common_control_ids": [
+        "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-03", "AE01-CTRL-04", "AE01-CTRL-05",
+        "AE01-CTRL-06", "AE01-CTRL-07", "AE01-CTRL-08", "AE01-CTRL-09", "AE01-CTRL-10",
+        "AE01-CTRL-11", "AE01-CTRL-12", "AE01-CTRL-14", "AE01-CTRL-15", "AE01-CTRL-16",
+        "AE01-CTRL-17", "AE01-CTRL-18", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L05",
+      "lane_control_ids": ["AE01-L05-CTRL-01", "AE01-L05-CTRL-02", "AE01-L05-CTRL-03", "AE01-L05-CTRL-04", "AE01-L05-CTRL-05"],
+      "lane_id": "AE01-L05",
+      "primary_metric": "boundary_conditioned_exchange_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    },
+    {
+      "comparison_cells": [
+        {"cell_id": "capacity-reference", "group": "reference", "seed_policy": "global"},
+        {"cell_id": "candidate-circulation", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "circulation-disable", "group": "withdrawal", "seed_policy": "global"},
+        {"cell_id": "ledger-source-shuffle", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "free-capacity-injection", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "floor-and-leakage-stress", "group": "budget_or_leakage", "seed_policy": "global"},
+        {"cell_id": "topology-timescale-contrast", "group": "transfer_or_contrast", "seed_policy": "global"}
+      ],
+      "direct_common_control_ids": [
+        "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-03", "AE01-CTRL-04", "AE01-CTRL-05",
+        "AE01-CTRL-06", "AE01-CTRL-07", "AE01-CTRL-08", "AE01-CTRL-09", "AE01-CTRL-11",
+        "AE01-CTRL-12", "AE01-CTRL-14", "AE01-CTRL-15", "AE01-CTRL-16", "AE01-CTRL-17",
+        "AE01-CTRL-18", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L06",
+      "lane_control_ids": ["AE01-L06-CTRL-01", "AE01-L06-CTRL-02", "AE01-L06-CTRL-03", "AE01-L06-CTRL-04", "AE01-L06-CTRL-05"],
+      "lane_id": "AE01-L06",
+      "primary_metric": "circulation_conditioned_eligibility_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    },
+    {
+      "comparison_cells": [
+        {"cell_id": "source-current-inspection", "group": "reference", "seed_policy": "deterministic_no_seed"},
+        {"cell_id": "declared-parent-local-surfaces", "group": "candidate", "seed_policy": "deterministic_no_seed"},
+        {"cell_id": "parent-state-variation", "group": "candidate", "seed_policy": "global"},
+        {"cell_id": "parent-separation-label-null", "group": "active_null", "seed_policy": "global"},
+        {"cell_id": "central-scheduler-exclusion", "group": "lineage_or_source", "seed_policy": "global"},
+        {"cell_id": "susceptibility-inversion", "group": "transfer_or_contrast", "seed_policy": "global"},
+        {"cell_id": "constructed-scaffold-withdrawal", "group": "withdrawal", "seed_policy": "global"}
+      ],
+      "inapplicable_comparison_groups": {
+        "budget_or_leakage": "Lane 7 classifies a parent/local demand and makes no economy claim; AE01-CTRL-09 remains a required record guard and any later economy-bearing realization must add the comparison through change control"
+      },
+      "direct_common_control_ids": [
+        "AE01-CTRL-02", "AE01-CTRL-10", "AE01-CTRL-13", "AE01-CTRL-14", "AE01-CTRL-15",
+        "AE01-CTRL-16", "AE01-CTRL-17", "AE01-CTRL-19"
+      ],
+      "execution_classes": ["artifact_inspection", "pygrc_runtime_with_rcae_producer"],
+      "hypothesis_id": "AE01-H-L07",
+      "lane_control_ids": ["AE01-L07-CTRL-01", "AE01-L07-CTRL-02", "AE01-L07-CTRL-03", "AE01-L07-CTRL-04", "AE01-L07-CTRL-05"],
+      "lane_id": "AE01-L07",
+      "primary_metric": "parent_local_discriminator_separation_normalized_margin",
+      "primary_threshold": {"normalized_margin": 0.0, "operator": "greater_than"},
+      "registration_status": "frozen_not_executed"
+    }
+  ],
+  "non_selection_conditions": [
+    "no_candidate_clears_every_eligibility_gate",
+    "eligible_candidates_exist_but_none_clears_every_threshold",
+    "tie_remains_after_declared_procedure",
+    "sensitivity_profiles_change_winner",
+    "required_lane_or_synthesis_record_incomplete",
+    "conceptual_demand_is_primary_support",
+    "reconstruction_cannot_be_bounded",
+    "unnamed_stronger_prerequisite_required"
+  ],
+  "policy_id": "ae01-p1-i5-execution-policy",
+  "policy_version": "1.0.0",
+  "synthesis_entry": {
+    "required_terminal_lane_ids": [
+      "AE01-L01", "AE01-L02", "AE01-L03", "AE01-L04", "AE01-L05", "AE01-L06", "AE01-L07"
+    ],
+    "terminal_record_count": 7
+  }
+}

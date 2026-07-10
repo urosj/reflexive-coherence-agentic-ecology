@@ -42,14 +42,15 @@ schema files. It defines these seventeen record shapes:
 
 Markdown controls meaning and cross-record claims. JSON Schema controls the
 persisted envelope, required fields, types, enumerations, and closed extension
-placement. Python semantic validators will be implemented in P1-I5; they may
-enforce cross-record invariants but may not redefine either authority.
+placement. The P1-I5 Python semantic validator enforces cross-record invariants
+without redefining either authority.
 
-The registry currently records manual projection consistency as
-`manual_review_passed_pending_automated_validation`. P1-I5 must replace that
-status with validator-backed evidence and add negative/conformance fixtures,
-canonical serialization, deterministic IDs, digests, and portable-path checks.
-No live execution or reconstruction entry point exists yet.
+The registry records validator-backed `validated` projection status. P1-I5
+adds [conformance fixtures](fixtures/README.md), canonical serialization,
+deterministic IDs and digests, portable-path checks, strict runtime receipts,
+resolved manifests, and reconstruction commands. The complete implementation
+boundary is in the
+[P1-I5 tooling contract](../implementation/P1-I5-tooling-contract.md).
 
 ## Freeze verification
 
@@ -66,8 +67,12 @@ Expected output:
 schema and lane registry valid
 ```
 
-This is a reproducible P1-I3 inspection command, not the Python semantic
-validator or stable tooling interface deferred to P1-I5.
+This remains the narrow P1-I3 shape-only inspection command. The complete
+P1-I5 schema, semantic, projection, policy, and fixture validation command is:
+
+```bash
+uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py validate-phase1
+```
 
 Contract completeness, schema validity, and registry consistency are not
 positive atlas evidence. `AE01-C0` remains the highest assigned rung.

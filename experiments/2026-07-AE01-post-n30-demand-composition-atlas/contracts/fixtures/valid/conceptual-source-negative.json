@@ -1,0 +1,55 @@
+{
+  "record": {
+    "claim_boundary": {
+      "allowed_claims": [
+        "Conceptual source is admitted as vocabulary and method only"
+      ],
+      "blocked_relabels": [
+        "conceptual source as runtime evidence",
+        "conceptual source as positive AE01 evidence"
+      ],
+      "claim_ceiling": "conceptual motivation only",
+      "unsafe_flags": {
+        "positive_atlas_evidence_opened": false,
+        "runtime_evidence_opened": false
+      }
+    },
+    "experiment_id": "AE01",
+    "extensions": {},
+    "inventory_id": "ae01-fixture-conceptual-source-inventory",
+    "precedence": [
+      "Accepted experiment evidence controls conceptual interpretation"
+    ],
+    "refresh_condition": "Refresh if the admitted source content or role changes",
+    "sources": [
+      {
+        "blocked_relabels": [
+          "runtime evidence",
+          "positive atlas result"
+        ],
+        "claim_ceiling": "ontology and method only",
+        "current_sha256": "c2c2371525036b3a56e88a38d8ca51bf140a9b16a897378c50b01be5ec076c45",
+        "evidence_role": "conceptual_motivation",
+        "extensions": {},
+        "mutable": false,
+        "path": "papers/2026-06-TheSharedMedium.md",
+        "positive_evidence_permission": false,
+        "repository_id": "rcae",
+        "revision": "d4cbcdfffc7b27f5dfb06e1b3b8ebf16106288d2",
+        "runtime_evidence_permission": false,
+        "source_id": "ae01-fixture-conceptual-shared-medium",
+        "source_role": "conceptual vocabulary and method"
+      }
+    ],
+    "verification_baselines": [
+      {
+        "repository_id": "rcae",
+        "revision": "d4cbcdfffc7b27f5dfb06e1b3b8ebf16106288d2",
+        "role": "fixture source baseline",
+        "worktree_state": "clean"
+      }
+    ]
+  },
+  "record_type": "source_inventory",
+  "schema_version": "1.0.0"
+}

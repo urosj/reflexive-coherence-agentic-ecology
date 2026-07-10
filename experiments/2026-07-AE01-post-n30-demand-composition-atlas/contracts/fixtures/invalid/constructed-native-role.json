@@ -1,0 +1,40 @@
+{
+  "record": {
+    "allowed_scheduling_operations": [
+      "fixture_binding_check"
+    ],
+    "availability": false,
+    "claim_boundary_ref": "ae01-fixture-constructed-claim",
+    "conformance_procedure": "Fixture conformance procedure",
+    "debt_refs": [
+      "deviation_nativity_discharge"
+    ],
+    "enabled": false,
+    "evidence_role": "inherited_graph_evidence",
+    "extensions": {},
+    "mechanism_contract_id": "ae01-fixture-constructed-mechanism",
+    "policy_ids": [
+      "AE01-CTRL-15"
+    ],
+    "producer_transition_discipline": "No silent native substitution",
+    "profile_id": "ae01-fixture-invalid-constructed-role",
+    "profile_version": "1.0.0",
+    "realization_class": "rcae_constructed",
+    "replay_procedure": "Repeat fixture validation",
+    "required_capabilities": [
+      "pygrc.core"
+    ],
+    "required_pygrc_identity": "pygrc==0.1",
+    "schema_versions": {
+      "artifact": "1.0.0",
+      "input": "1.0.0",
+      "output": "1.0.0",
+      "state": "1.0.0"
+    },
+    "supported": false,
+    "transfer_scope": "invalid fixture only",
+    "validated": false
+  },
+  "record_type": "realization_profile",
+  "schema_version": "1.0.0"
+}

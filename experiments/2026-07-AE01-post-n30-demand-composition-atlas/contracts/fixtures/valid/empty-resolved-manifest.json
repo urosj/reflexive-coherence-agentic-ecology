@@ -1,0 +1,31 @@
+{
+  "record": {
+    "artifact_set_size_bytes": 0,
+    "artifacts": [],
+    "experiment_id": "AE01",
+    "extensions": {},
+    "fully_resolved": true,
+    "manifest_id": "ae01-fixture-empty-resolved-manifest",
+    "profile_registry_ref": "ae01-fixture-profile-registry",
+    "resolved_realization_profiles": [],
+    "resolved_shared_profiles": [
+      {
+        "profile_id": "ae01-fixture-environment",
+        "profile_type": "environment",
+        "profile_version": "1.0.0",
+        "values": {
+          "locale_policy": "UTF-8",
+          "operating_system_scope": "portable Python runtime",
+          "python_version": ">=3.11",
+          "timezone_policy": "not used"
+        }
+      }
+    ],
+    "retention_review": {
+      "rationale": "Empty fixture has no retained artifact size",
+      "status": "not_applicable"
+    }
+  },
+  "record_type": "artifact_manifest",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+  "record": {
+    "allowed_scheduling_operations": [
+      "fixture_binding_check"
+    ],
+    "availability": false,
+    "claim_boundary_ref": "ae01-fixture-no-runtime-claim",
+    "conformance_procedure": "Import installed pygrc, compare identity and required public surfaces, and fail when unavailable",
+    "debt_refs": [
+      "composed_ecology_runtime_harness_missing"
+    ],
+    "enabled": false,
+    "evidence_role": "constructed_ecology_mechanism",
+    "extensions": {},
+    "mechanism_contract_id": "ae01-fixture-constructed-mechanism",
+    "policy_ids": [
+      "AE01-CTRL-15",
+      "AE01-CTRL-17"
+    ],
+    "producer_transition_discipline": "No availability-driven substitution; native transition requires a new profile and rerun",
+    "profile_id": "ae01-fixture-unavailable-realization",
+    "profile_version": "1.0.0",
+    "realization_class": "rcae_constructed",
+    "replay_procedure": "Repeat the binding check and compare canonical receipt digests",
+    "required_capabilities": [
+      "pygrc.core",
+      "pygrc.models"
+    ],
+    "required_pygrc_identity": "pygrc==0.1",
+    "schema_versions": {
+      "artifact": "1.0.0",
+      "input": "1.0.0",
+      "output": "1.0.0",
+      "state": "1.0.0"
+    },
+    "supported": false,
+    "transfer_scope": "fixture-only binding conformance",
+    "validated": false
+  },
+  "record_type": "realization_profile",
+  "schema_version": "1.0.0"
+}

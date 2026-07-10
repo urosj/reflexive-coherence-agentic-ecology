@@ -1,0 +1,48 @@
+{
+  "record": {
+    "candidates": [],
+    "extensions": {},
+    "information_gathering_step": {
+      "rationale": "Ranking has not run during the Phase 1 infrastructure freeze",
+      "status": "not_tested"
+    },
+    "non_selection_reasons": [],
+    "ranking_id": "ae01-fixture-ranking-not-run",
+    "ranking_policy": {
+      "critical_dimension_minimums": {
+        "claim_safety": 2,
+        "control_feasibility": 2,
+        "future_discriminator_quality": 2,
+        "gap_tension_specificity": 2
+      },
+      "demand_minimum": 7,
+      "dimension_minimum": 1,
+      "experimental_readiness_minimum": 8,
+      "overall_minimum": 20,
+      "policy_id": "D-029",
+      "safety_feasibility_minimum": 4,
+      "sensitivity_profiles": [
+        "equal",
+        "doubled_demand",
+        "doubled_readiness_safety",
+        "conservative"
+      ],
+      "tie_band_points": 1,
+      "tie_order": [
+        "demonstrated_prerequisite_relation",
+        "higher_experimental_readiness",
+        "higher_safety_feasibility",
+        "lower_implementation_evidence_cost"
+      ],
+      "unresolved_tie_result": "non_selection"
+    },
+    "selected_candidate": {
+      "rationale": "No selection exists before synthesis",
+      "status": "not_run"
+    },
+    "selection_result": "not_run",
+    "synthesis_refs": []
+  },
+  "record_type": "n31_ranking",
+  "schema_version": "1.0.0"
+}

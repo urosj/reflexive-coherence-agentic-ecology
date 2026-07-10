@@ -115,3 +115,7 @@ contract revision and affected rerun.
 No hypothesis result, control result, failure occurrence, terminal
 classification, recurring requirement, or N31+ candidate is recorded by this
 P1-I4 freeze.
+
+P1-I5 materializes this handoff in the
+[artifact, tooling, and reconstruction contract](../implementation/P1-I5-tooling-contract.md)
+without changing the P1-I4 hypothesis meanings.

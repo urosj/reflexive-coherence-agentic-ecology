@@ -1,6 +1,6 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** P1-I4 hypotheses, controls, and failures frozen; P1-I5 next
+**Status:** P1-I5 infrastructure freeze complete; P1-GATE review next
 
 **Local experiment:** `AE01`
 
@@ -14,6 +14,9 @@
 
 **Hypothesis freeze:**
 [AE01 P1-I4 hypothesis index](2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/README.md)
+
+**Tooling freeze:**
+[AE01 P1-I5 artifact, tooling, and reconstruction contract](2026-07-AE01-post-n30-demand-composition-atlas/implementation/P1-I5-tooling-contract.md)
 
 **Controlling directives:**
 [Post-N30 master plan](../implementation/PostN30-plan.md) and
@@ -350,9 +353,9 @@ admitted.
 P1-I1 source admission                         passed
 P1-I2 roadmap and experiment boundary          passed
 P1-I3 machine and narrative contracts          passed
-P1-I4 hypotheses, controls, failures            passed by this revision
-P1-I5 artifact, tooling, reconstruction         next
-P1-GATE                                         authorizes execution only
+P1-I4 hypotheses, controls, failures            passed
+P1-I5 artifact, tooling, reconstruction         passed by this revision
+P1-GATE                                         review next; execution remains closed
 
 P2-I1 through P2-I7 lane execution              independent/parallel
 P2-I8 cross-lane synthesis                      after every terminal lane record
@@ -378,8 +381,9 @@ Reports use either generated projection or deterministic assembly with bounded
 authored interpretation. The final file must be reproducible and trace every
 factual statement to controlling machine records.
 
-P1-I5 will define concrete reconstruction commands, artifact manifests,
-retention tiers, and report assembly. No reconstruction entry point exists yet.
+P1-I5 defines concrete reconstruction commands, artifact manifests, retention
+tiers, and report assembly. Infrastructure entry points now exist, but no lane
+execution is authorized before P1-GATE.
 
 ## 14. Expected AE01 outputs
 
@@ -476,17 +480,13 @@ Phase 8 completion or unrestricted autonomy
 ```
 
 The maximum P1 result is a complete, internally consistent, reproducible
-contract set at AE01-C2. This P1-I4 freeze still establishes only AE01-C0.
+contract set at AE01-C2. This P1-I5 freeze still establishes only AE01-C0.
 
-## 19. Remaining Phase 1 freeze work
+## 19. Remaining Phase 1 work
 
-P1-I5 must still provide:
-
-- deterministic IDs, canonical serialization, digests, portable-path guards,
-  validators, and conformance fixtures;
-- artifact retention, shared-profile materialization, reconstruction commands,
-  runtime receipts, and report assembly; and
-- focused tests proving missing evidence and unsafe relabels fail closed.
+Review R2 must evaluate the complete P1-I1 through P1-I5 freeze. P1-GATE must
+then disposition `AE01-C1` and `AE01-C2`, confirm all narrative projections,
+and preserve the no-positive-result boundary before lane execution opens.
 
 Until P1-GATE passes, lane execution and positive atlas conclusions remain
 closed.

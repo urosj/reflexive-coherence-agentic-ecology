@@ -1,0 +1,12 @@
+{
+  "record": {
+    "conformance_status": "not_applicable_non_runtime",
+    "execution_class": "artifact_inspection",
+    "extensions": {},
+    "graph_repository_write_observed": false,
+    "receipt_id": "ae01-fixture-missing-field",
+    "run_id": "ae01-fixture-missing-field"
+  },
+  "record_type": "runtime_binding_receipt",
+  "schema_version": "1.0.0"
+}

@@ -16,7 +16,7 @@
         "positive_atlas_evidence_opened": false
       }
     },
-    "contract_revision": "P1-I3-revision-0.21",
+    "contract_revision": "P1-I5-revision-0.23",
     "experiment_id": "AE01",
     "extensions": {},
     "lanes": [
@@ -181,17 +181,17 @@
     ],
     "projection_targets": [
       {
-        "consistency_status": "manual_review_passed_pending_automated_validation",
+        "consistency_status": "validated",
         "path": "implementation/PostN30-plan.md",
         "projection_role": "accepted initial scope and stable IDs"
       },
       {
-        "consistency_status": "manual_review_passed_pending_automated_validation",
+        "consistency_status": "validated",
         "path": "experiments/Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md",
         "projection_role": "authoritative narrative atlas outline"
       },
       {
-        "consistency_status": "manual_review_passed_pending_automated_validation",
+        "consistency_status": "validated",
         "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
         "projection_role": "experiment orientation projection"
       }

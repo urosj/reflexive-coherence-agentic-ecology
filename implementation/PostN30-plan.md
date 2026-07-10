@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.22
+**Plan revision:** 0.23
 
 **Date:** 2026-07-10
 
@@ -1713,6 +1713,7 @@ directive.
 | 2026-07-10 | Revision 0.20: passed P1-I2 with a complete atlas content outline, stable `AE01-L01` through `AE01-L07` identities, lane motivations and ceilings, catalog/ontology rules, debt and terminal taxonomies, expected outputs, stopping/non-selection boundaries, and aligned roadmap/README projections. `AE01-C0` assigned with no positive evidence. |
 | 2026-07-10 | Revision 0.21: passed P1-I3 with a versioned Markdown meaning contract, one discriminated JSON Schema Draft 2020-12 bundle for seventeen record types, and the controlling seven-lane machine registry. Contract closure did not open positive evidence or advance beyond `AE01-C0`; Python semantic validation and automated projection checks remain P1-I5 work. |
 | 2026-07-10 | Revision 0.22: passed P1-I4 with seven lane hypotheses, recurring-demand and explicit-non-selection synthesis hypotheses, finite comparison/stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and an explicit P1-I5 implementation handoff. No lane executed and no result or higher acceptance rung opened. |
+| 2026-07-10 | Revision 0.23: passed P1-I5 with experiment-local canonicalization, digests, schema and semantic guards, deterministic IDs, resolved manifests/profiles, finite comparison policy, strict runtime receipts, report assembly, validated lane projections, conformance fixtures, portable reconstruction commands, and focused tests. Infrastructure validation opened no lane evidence; P1-GATE and Review R2 remain open. |
 
 ## 18. Program completion criteria
 

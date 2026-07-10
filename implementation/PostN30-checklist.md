@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.22
+**Baseline revision:** 0.23
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.22 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.23 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | In progress | P1-I5-GATE | P1-I4-GATE passed |
+| Phase 1 — AE01 contract freeze | Freeze complete; review open | P1-GATE | P1-I5-GATE passed; R2 pending |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -690,34 +690,34 @@ Entry condition:
 
 Required work:
 
-- [ ] Implement or select canonical serialization.
-- [ ] Implement stable artifact digests.
-- [ ] Implement schema validation.
-- [ ] Implement portable-path guards.
-- [ ] Implement source-role and claim-boundary guards.
-- [ ] Define deterministic ID policy.
-- [ ] Define artifact manifest generation.
-- [ ] Define authored/generated report boundary.
-- [ ] Define `exploratory_scratch`, `registered_probe`, and `retained_evidence`
+- [x] Implement or select canonical serialization.
+- [x] Implement stable artifact digests.
+- [x] Implement schema validation.
+- [x] Implement portable-path guards.
+- [x] Implement source-role and claim-boundary guards.
+- [x] Define deterministic ID policy.
+- [x] Define artifact manifest generation.
+- [x] Define authored/generated report boundary.
+- [x] Define `exploratory_scratch`, `registered_probe`, and `retained_evidence`
   roles so only verified retained evidence can support a classification or gate.
-- [ ] Implement versioned shared environment, command, resource, dependency,
+- [x] Implement versioned shared environment, command, resource, dependency,
   and realization profiles with deterministic fully resolved manifest views.
-- [ ] Implement lane-registry validation for unique/stable IDs, complete initial
+- [x] Implement lane-registry validation for unique/stable IDs, complete initial
   scope, ordering, rename provenance, and narrative projection consistency.
-- [ ] Define duplicate reconstruction expectations.
-- [ ] Define selected-output commit policy.
-- [ ] Define commands for regenerating each artifact family.
-- [ ] Select and document the minimum repository-local tooling bootstrap; do not
+- [x] Define duplicate reconstruction expectations.
+- [x] Define selected-output commit policy.
+- [x] Define commands for regenerating each artifact family.
+- [x] Select and document the minimum repository-local tooling bootstrap; do not
   add distribution metadata unless O-002 is reopened first.
-- [ ] Implement runtime-binding receipt and realization-profile conformance for
+- [x] Implement runtime-binding receipt and realization-profile conformance for
   requested live modes, including fail-closed missing/incompatible PyGRC.
-- [ ] Generate a per-run runtime receipt at every live evidence-use tier; allow
+- [x] Generate a per-run runtime receipt at every live evidence-use tier; allow
   transient storage for non-evidential runs but never omit identity validation.
-- [ ] Add conformance fixtures proving Markdown meaning, JSON Schema shape, and
+- [x] Add conformance fixtures proving Markdown meaning, JSON Schema shape, and
   Python semantic validation remain within their divided authority.
-- [ ] Verify all tooling and reconstruction paths preserve the read-only graph
+- [x] Verify all tooling and reconstruction paths preserve the read-only graph
   repository boundary.
-- [ ] Add focused tests for all Phase 1 infrastructure.
+- [x] Add focused tests for all Phase 1 infrastructure.
 
 Iteration boundary:
 
@@ -728,18 +728,94 @@ Tooling success does not support any atlas lane or reusable ecology mechanism.
 
 Exit gate `P1-I5-GATE`:
 
-- [ ] Representative empty/negative fixtures validate deterministically.
-- [ ] Missing fields and incompatible schemas fail closed.
-- [ ] Duplicate reconstruction produces stable canonical records.
-- [ ] No generated record contains a machine-local path.
-- [ ] Missing or incompatible PyGRC fails every requested live mode without
+- [x] Representative empty/negative fixtures validate deterministically.
+- [x] Missing fields and incompatible schemas fail closed.
+- [x] Duplicate reconstruction produces stable canonical records.
+- [x] No generated record contains a machine-local path.
+- [x] Missing or incompatible PyGRC fails every requested live mode without
   fallback to artifact inspection, mock behavior, or another realization.
-- [ ] No RCAE tooling, test, or reconstruction command writes into the graph
+- [x] No RCAE tooling, test, or reconstruction command writes into the graph
   repository.
-- [ ] Scratch and transient registered-probe outputs fail any attempt to satisfy
+- [x] Scratch and transient registered-probe outputs fail any attempt to satisfy
   a classification or gate until promoted through verified D-027 retention.
-- [ ] Missing, duplicate, stale, or reordered lane identities fail projection
+- [x] Missing, duplicate, stale, or reordered lane identities fail projection
   validation before P1-GATE.
+- [x] Iteration interpretation and P1-GATE implementation handoff recorded below.
+- [x] `P1-I5-GATE` passed. Evidence: P1-I5 tooling contract, profiles,
+  execution policy, conformance fixtures, experiment-local scripts, and 28
+  focused passing tests.
+
+#### P1-I5 iteration interpretation and implementation handoff
+
+**Recorded:** 2026-07-10
+
+**Status:** self-audited infrastructure closeout; no evidential lane result
+
+P1-I5 turns the Phase 1 contracts into executable rejection boundaries. It is
+not an ecology implementation: it makes invalid evidence, claims, paths,
+runtime substitutions, projections, manifests, reports, and synthesis entry
+fail deterministically before they can look like atlas results.
+
+The infrastructure has four interpreted roles:
+
+1. **Identity and reproducibility:** PyGRC-compatible canonical JSON,
+   deterministic IDs, semantic/file SHA-256 digests, portable paths, resolved
+   profiles, and manifests make retained artifacts reconstructable.
+2. **Inference safety:** source-role, claim, tier, terminal, ranking, report,
+   and hypothesis/control/failure guards prevent missing or weaker evidence
+   from being promoted by representation.
+3. **Runtime honesty:** artifact inspection remains non-runtime; a live request
+   imports the explicitly available local PyGRC, validates exact identity and
+   public surfaces, emits a receipt on failure, and never falls back.
+4. **Finite execution:** seven cells per lane, three live seeds, bounded
+   attempts/resources, strict positive directional margin, full mandatory
+   control/signature passage, and fixed synthesis/non-selection gates prevent
+   open-ended tuning.
+
+Implementation details:
+
+- Tooling version `1.0.0` is experiment-local in `scripts/ae01_tooling.py` with
+  the `scripts/ae01.py` command entry point; no distribution metadata or
+  reusable `src/` surface was added.
+- The bootstrap is Python `>=3.11` with ephemeral pinned
+  `jsonschema==4.26.0`.
+- The shared profile registry contains versioned environment, command,
+  dependency, and resource profiles; live realization profiles remain
+  lane-local and explicit.
+- The finite policy contains 49 comparison cells, seeds `101`, `211`, and
+  `307` for live cells, one attempt per seed, one infrastructure retry,
+  120-second/512-MiB/256-MiB envelopes, nineteen resolved common controls per
+  lane, five lane controls per lane, and eight non-selection conditions. Every
+  P1-I4 comparison group is covered or explicitly inapplicable, and every
+  resolved cell carries its deterministic configuration ID, artifact roles,
+  and success/invalid/infrastructure-failure criteria. The resolved policy
+  digest is
+  `4f08613549aacaead12ec67ab2c060cc8616e6766bc6e8f9ae5cf519bda63cc4`.
+- Five valid fixtures cover empty ranking, non-runtime inspection, conceptual
+  source denial, empty resolved manifest, and unavailable realization. Three
+  invalid fixtures cover missing shape, incompatible version, and constructed
+  mechanism relabeled as graph evidence.
+- Twenty-eight focused tests pass, including missing/duplicate/stale/reordered
+  lane projections, tier/claim rejection, duplicate reconstruction, report
+  authority, explicit runtime-profile state, missing/incompatible runtime,
+  manifest realization resolution, D-029 selection robustness, and read-only
+  tree mutation.
+- Duplicate validation reconstructions were byte-identical. Their canonical
+  `output_digest` is
+  `9a5ea60d1fd42c76624d7e778b9646c90229dbb428123bf79299e843eabe1601`;
+  exact-file SHA-256 is
+  `63654e70c229d122e6799394cbb9047fcbf300012cf24de36ce21560b70f5fb6`.
+- Declared-unavailable and import-missing PyGRC live requests both fail before
+  state execution, with `pygrc:unavailable`, no fallback, no machine-local
+  path, and graph-write flag false. Available/enabled profile state, execution
+  class, and requested operations must all be explicit before import.
+- The graph/PyGRC repository remains read-only; tooling offers a content
+  fingerprint guard for any live command given a local source checkout.
+
+Infrastructure success establishes contract enforceability only. It does not
+support a lane, composition, primitive, building block, PyGRC compatibility on
+another machine, or N31+ selection. Review R2 and `P1-GATE` are next;
+`AE01-C1` and `AE01-C2` remain unassigned until that review.
 
 ### Phase 1 exit gate `P1-GATE`
 
@@ -747,11 +823,11 @@ Exit gate `P1-I5-GATE`:
 - [x] `P1-I2-GATE` passed.
 - [x] `P1-I3-GATE` passed.
 - [x] `P1-I4-GATE` passed.
-- [ ] `P1-I5-GATE` passed.
+- [x] `P1-I5-GATE` passed.
 - [ ] AE01-C1 is assigned with evidence.
 - [ ] AE01-C2 is assigned with evidence.
-- [ ] Positive atlas conclusions remain unopened.
-- [ ] The frozen machine lane registry and all narrative lane projections agree.
+- [x] Positive atlas conclusions remain unopened.
+- [x] The frozen machine lane registry and all narrative lane projections agree.
 
 Phase 1 boundary:
 
@@ -1595,18 +1671,18 @@ Phase 4.
 
 | Implementation surface | Contract required | Code required | Verification required | Current status |
 | --- | --- | --- | --- | --- |
-| Packaging and quality configuration | Yes | Yes | Install/import/lint/type/test | Pending |
-| Stable IDs and canonical serialization | Yes | Yes | Round-trip/digest | Contract shape frozen; code/verification pending |
-| Evidence provenance and source roles | Yes | Yes | Negative/compatibility | Contract shape frozen; code/verification pending |
-| Hypothesis, control, and failure vocabulary | Yes | Yes | ID/outcome/control coverage | P1-I4 semantics frozen; code/verification pending |
-| Debt and claim-boundary model | Yes | Yes | Fail-closed claim tests | Contract shape frozen; code/verification pending |
-| Artifact manifests and schema restoration | Yes | Yes | Replay/round-trip | Contract shape frozen; code/verification pending |
-| LGRC runtime/artifact bridge | Yes | Conditional modes | Integration/read-only | Runtime-binding shape frozen; implementation pending |
+| Packaging and quality configuration | Yes | Yes | Install/import/lint/type/test | Distribution deferred by D-032; experiment-local P1-I5 bootstrap and tests implemented |
+| Stable IDs and canonical serialization | Yes | Yes | Round-trip/digest | P1-I5 implementation and duplicate-reconstruction verification complete |
+| Evidence provenance and source roles | Yes | Yes | Negative/compatibility | P1-I5 semantic guards and negative fixtures complete |
+| Hypothesis, control, and failure vocabulary | Yes | Yes | ID/outcome/control coverage | P1-I5 closed vocabularies and policy resolution tests complete |
+| Debt and claim-boundary model | Yes | Yes | Fail-closed claim tests | P1-I5 tier, terminal, claim, and synthesis guards complete |
+| Artifact manifests and schema restoration | Yes | Yes | Replay/round-trip | P1-I5 manifest generation, schema validation, and reconstruction checks complete |
+| LGRC runtime/artifact bridge | Yes | Conditional modes | Integration/read-only | P1-I5 binding/receipt and read-only guards complete; lane realization profiles remain Phase 2 work |
 | Primitive catalog implementations | Per promotion queue | Conditional | Contract/replay/transfer | Blocked by AE01 |
 | Building-block implementations | Per promotion queue | Conditional | Composition/control | Blocked by AE01 |
 | Motif implementations | Dedicated motif contract | Conditional | Combined controls | Blocked by blocks |
 | Regime/domain probes | Dedicated regime contract | Conditional | Persistence/recovery | Blocked by motifs |
-| Telemetry and reports | Yes | Yes for admitted surfaces | Artifact comparison | Report-projection shape frozen; implementation pending |
+| Telemetry and reports | Yes | Yes for admitted surfaces | Artifact comparison | P1-I5 deterministic report assembly implemented; evidential lane reports remain Phase 2 work |
 | Examples and public documentation | Yes | Conditional | Execution/link checks | Pending |
 
 ## 11. Required indexes and traceability records
@@ -1676,7 +1752,8 @@ Use this section when checking a conditional item as deferred.
 | P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
 | P1-I3-GATE | Revision 0.21 common meaning contract, JSON Schema Draft 2020-12 bundle, and controlling machine lane registry | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
 | P1-I4-GATE | Revision 0.22 hypothesis index and linked outcome/stopping, lane, synthesis, control, and failure contracts | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-GATE | Pending | — | Open; P1-I5 ready |
+| P1-I5-GATE | Revision 0.23 tooling contract, profiles, finite execution policy, conformance fixtures, scripts, 28 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
+| P1-GATE | Pending | — | Open; Review R2 and AE01-C1/C2 disposition required |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -1742,14 +1819,15 @@ Change log:
 | CL-019 | 2026-07-10 | Revision 0.19 passed P1-I1 with a verified narrative source inventory, explicit mutable-roadmap provenance, all N29 debts carried, and N30 bounded at P2/M2. No AE01 rung or positive result opened. | P1-I1-GATE onward | Superseded by CL-020 |
 | CL-020 | 2026-07-10 | Revision 0.20 passed P1-I2 with a complete atlas content outline, stable lane IDs, source motivations, ontology and placement rules, debt/failure/terminal taxonomies, stopping conditions, and aligned narrative projections. `AE01-C0` assigned without positive evidence. | P1-I2-GATE onward | Superseded by CL-021 |
 | CL-021 | 2026-07-10 | Revision 0.21 passed P1-I3 with one normative meaning contract, a discriminated schema bundle for seventeen closed record shapes, and the controlling seven-lane registry. Semantic validators and automated projection checks remain P1-I5 work; no positive evidence or higher rung opened. | P1-I3-GATE onward | Superseded by CL-022 |
-| CL-022 | 2026-07-10 | Revision 0.22 passed P1-I4 with nine preregistered hypotheses, finite outcome and stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and a bounded P1-I5 implementation handoff. No lane executed, no result was assigned, and `AE01-C0` remains the ceiling. | P1-I4-GATE onward | Active |
+| CL-022 | 2026-07-10 | Revision 0.22 passed P1-I4 with nine preregistered hypotheses, finite outcome and stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and a bounded P1-I5 implementation handoff. No lane executed, no result was assigned, and `AE01-C0` remains the ceiling. | P1-I4-GATE onward | Superseded by CL-023 |
+| CL-023 | 2026-07-10 | Revision 0.23 passed P1-I5 with PyGRC-compatible canonicalization, semantic and schema guards, portable paths, deterministic IDs, resolved profiles and manifests, a finite 49-cell policy, runtime receipts, report assembly, validated lane projections, 28 focused tests, duplicate reconstruction, and fail-closed missing-runtime evidence. No lane executed and Review R2 remains open before P1-GATE. | P1-I5-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Complete P1-I5 artifact, tooling, and reconstruction freeze.
-2. [ ] Implement semantic validation and finite comparison-matrix materialization
-   for the frozen P1-I3/P1-I4 contracts.
-3. [ ] Pass `P1-I5-GATE` without executing an evidential lane or opening
-   positive evidence.
+1. [ ] Complete Review R2 over the full P1-I1 through P1-I5 contract freeze.
+2. [ ] Disposition `AE01-C1`, `AE01-C2`, and any Review R2 findings without
+   opening evidential conclusions.
+3. [ ] Pass `P1-GATE` only if the full contract remains claim-safe and
+   reconstructable, then open Phase 2 lane registration and execution.
