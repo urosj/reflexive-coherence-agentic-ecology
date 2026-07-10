@@ -1,0 +1,203 @@
+{
+  "record": {
+    "claim_boundary": {
+      "allowed_claims": [
+        "AE01 lane identities and experiment boundary are frozen"
+      ],
+      "blocked_relabels": [
+        "lane registration as positive atlas evidence",
+        "lane name as catalog admission",
+        "lane scope as fixed N31 selection"
+      ],
+      "claim_ceiling": "AE01-C0 initialized experiment boundary only",
+      "unsafe_flags": {
+        "catalog_admission_opened": false,
+        "fixed_n31_selection_opened": false,
+        "positive_atlas_evidence_opened": false
+      }
+    },
+    "contract_revision": "P1-I3-revision-0.21",
+    "experiment_id": "AE01",
+    "extensions": {},
+    "lanes": [
+      {
+        "blocked_relabels": [
+          "ecological niche proof",
+          "population ecology",
+          "agency",
+          "organism",
+          "ecology regime"
+        ],
+        "current_display_name": "Minimal shared-medium niche formation",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Minimal shared-medium niche formation",
+        "lane_id": "AE01-L01",
+        "maximum_intended_result": "Bounded niche-conditioning demand pattern",
+        "motivation_source_roles": [
+          "n30_trace_conditioned_eligibility",
+          "n29_prototype_b_boundary_shared_medium",
+          "n29_prototype_c_susceptibility_reentry",
+          "ecology_niche_interpretation"
+        ],
+        "order": 1,
+        "rename_history": []
+      },
+      {
+        "blocked_relabels": [
+          "collective memory",
+          "communication",
+          "resource economy",
+          "coordination"
+        ],
+        "current_display_name": "Shared-pool co-conditioning",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Shared-pool co-conditioning",
+        "lane_id": "AE01-L02",
+        "maximum_intended_result": "Bounded shared-pool co-conditioning demand pattern",
+        "motivation_source_roles": [
+          "n29_prototype_b_shared_medium_separation",
+          "n29_prototype_d_medium_reshaping",
+          "n30_non_private_surface_dependency"
+        ],
+        "order": 2,
+        "rename_history": []
+      },
+      {
+        "blocked_relabels": [
+          "pheromone semantics",
+          "communication",
+          "coordination",
+          "learning",
+          "ant ecology implementation"
+        ],
+        "current_display_name": "Trail or stigmergic field",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Trail or stigmergic field",
+        "lane_id": "AE01-L03",
+        "maximum_intended_result": "Bounded trail or stigmergic demand pattern",
+        "motivation_source_roles": [
+          "n30_trace_conditioned_eligibility",
+          "n29_prototype_a_trace_pressure_loop",
+          "n29_prototype_b_medium_surface",
+          "shared_medium_method"
+        ],
+        "order": 3,
+        "rename_history": []
+      },
+      {
+        "blocked_relabels": [
+          "semantic care",
+          "altruism",
+          "cooperation",
+          "generative agency",
+          "reproduction",
+          "life"
+        ],
+        "current_display_name": "Nursery or support field",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Nursery or support field",
+        "lane_id": "AE01-L04",
+        "maximum_intended_result": "Bounded support-conditioned admissibility demand pattern",
+        "motivation_source_roles": [
+          "n29_nursery_demand_debt",
+          "n29_prototype_d_medium_reshaping",
+          "n22_susceptibility_context_via_n29",
+          "n28_generative_extractive_discipline_via_n29",
+          "n30_plus_support_redistribution_orientation"
+        ],
+        "order": 4,
+        "rename_history": []
+      },
+      {
+        "blocked_relabels": [
+          "membrane semantics",
+          "organism identity",
+          "communication",
+          "native multi-basin exchange"
+        ],
+        "current_display_name": "Boundary-conditioned exchange",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Boundary-conditioned exchange",
+        "lane_id": "AE01-L05",
+        "maximum_intended_result": "Bounded boundary-conditioned exchange demand pattern",
+        "motivation_source_roles": [
+          "n29_prototype_b_boundary_shared_medium",
+          "n30_participant_boundary_guardrail_context",
+          "n30_plus_boundary_exchange_orientation"
+        ],
+        "order": 5,
+        "rename_history": []
+      },
+      {
+        "blocked_relabels": [
+          "resource economy",
+          "cooperation",
+          "exploitation",
+          "metabolism",
+          "native ecology circulation"
+        ],
+        "current_display_name": "Capacity circulation",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Capacity circulation",
+        "lane_id": "AE01-L06",
+        "maximum_intended_result": "Bounded capacity-circulation demand pattern",
+        "motivation_source_roles": [
+          "n29_prototype_d_circulation",
+          "n29_multi_leg_leakage_debt",
+          "n28_generative_extractive_discipline_via_n29",
+          "n30_alternative_circulatory_m2_evidence"
+        ],
+        "order": 6,
+        "rename_history": []
+      },
+      {
+        "blocked_relabels": [
+          "positive M3 evidence",
+          "positive M4 evidence",
+          "shared-medium coordination",
+          "colony agency",
+          "ecology regime"
+        ],
+        "current_display_name": "Parent-basin modulation demand and missing-surface classification",
+        "extensions": {},
+        "inclusion_state": "included",
+        "initial_display_name": "Parent-basin modulation demand and missing-surface classification",
+        "lane_id": "AE01-L07",
+        "maximum_intended_result": "Bounded parent-basin modulation demand and missing-surface classification; positive M3 or M4 evidence is not expected",
+        "motivation_source_roles": [
+          "n30_parent_basin_modulation_blocked_above_m2",
+          "shared_medium_parent_basin_ontology",
+          "graph_ecology_spiral_demand_role"
+        ],
+        "order": 7,
+        "rename_history": []
+      }
+    ],
+    "projection_targets": [
+      {
+        "consistency_status": "manual_review_passed_pending_automated_validation",
+        "path": "implementation/PostN30-plan.md",
+        "projection_role": "accepted initial scope and stable IDs"
+      },
+      {
+        "consistency_status": "manual_review_passed_pending_automated_validation",
+        "path": "experiments/Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md",
+        "projection_role": "authoritative narrative atlas outline"
+      },
+      {
+        "consistency_status": "manual_review_passed_pending_automated_validation",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
+        "projection_role": "experiment orientation projection"
+      }
+    ],
+    "registry_id": "ae01-lane-registry"
+  },
+  "record_type": "lane_registry",
+  "schema_version": "1.0.0"
+}

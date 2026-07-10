@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.20
+**Baseline revision:** 0.21
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.20 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.21 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
-| Phase 1 — AE01 contract freeze | In progress | P1-I3-GATE | P1-I2-GATE passed |
+| Phase 1 — AE01 contract freeze | In progress | P1-I4-GATE | P1-I3-GATE passed |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -466,65 +466,65 @@ Entry condition:
 
 Required common contracts:
 
-- [ ] Source inventory contract.
-- [ ] Pattern-card contract.
-- [ ] Machine-readable lane-registry contract.
-- [ ] Medium-surface declaration contract.
-- [ ] Requirement-extraction contract.
-- [ ] Composition-assessment contract.
-- [ ] Debt-record contract.
-- [ ] Claim-boundary and unsafe-flag contract.
-- [ ] Constructed-mechanism declaration contract.
-- [ ] Runtime-binding receipt and realization-profile contract.
-- [ ] Catalog/domain placement and field-applicability contract.
-- [ ] Lane terminal-classification and stopping contract.
-- [ ] N31+ ranking and non-selection contract.
-- [ ] Artifact manifest contract.
-- [ ] Evidence-use tier, shared-profile resolution, and fully materialized
+- [x] Source inventory contract.
+- [x] Pattern-card contract.
+- [x] Machine-readable lane-registry contract.
+- [x] Medium-surface declaration contract.
+- [x] Requirement-extraction contract.
+- [x] Composition-assessment contract.
+- [x] Debt-record contract.
+- [x] Claim-boundary and unsafe-flag contract.
+- [x] Constructed-mechanism declaration contract.
+- [x] Runtime-binding receipt and realization-profile contract.
+- [x] Catalog/domain placement and field-applicability contract.
+- [x] Lane terminal-classification and stopping contract.
+- [x] N31+ ranking and non-selection contract.
+- [x] Artifact manifest contract.
+- [x] Evidence-use tier, shared-profile resolution, and fully materialized
   manifest contract.
-- [ ] Human-readable report projection contract.
+- [x] Human-readable report projection contract.
 
 Pattern-card required fields:
 
-- [ ] Pattern ID, primary catalog layer, and secondary observations.
-- [ ] Evidence-use tier and prohibition on scratch supporting classification or
+- [x] Pattern ID, primary catalog layer, and secondary observations.
+- [x] Evidence-use tier and prohibition on scratch supporting classification or
   a gate.
-- [ ] Domain role, placement rationale, and domain-specific versus transferable
+- [x] Domain role, placement rationale, and domain-specific versus transferable
   boundary.
-- [ ] Explicit applicability status and rationale for every inapplicable common
+- [x] Explicit applicability status and rationale for every inapplicable common
   field; no silent omission.
-- [ ] Parent basin and persistence condition.
-- [ ] Local differentiations or participant carriers.
-- [ ] Shared medium and carrier surfaces.
-- [ ] Participant/medium separation or co-constitution account.
-- [ ] Reserve, cost, leakage, maintenance, and coherence economy.
-- [ ] Perturbation and source attribution.
-- [ ] Trace persistence, decay, reinforcement, and saturation.
-- [ ] Susceptibility and later continuation effect.
-- [ ] Possible co-response and parent-closure relevance.
-- [ ] N29 prototype/demand consumption.
-- [ ] N30-supported versus ecology-extrapolated legs.
-- [ ] Constructed ecology-side mechanisms and their evidence class.
-- [ ] For every construction: LGRC absence/tension, necessity, minimality,
+- [x] Parent basin and persistence condition.
+- [x] Local differentiations or participant carriers.
+- [x] Shared medium and carrier surfaces.
+- [x] Participant/medium separation or co-constitution account.
+- [x] Reserve, cost, leakage, maintenance, and coherence economy.
+- [x] Perturbation and source attribution.
+- [x] Trace persistence, decay, reinforcement, and saturation.
+- [x] Susceptibility and later continuation effect.
+- [x] Possible co-response and parent-closure relevance.
+- [x] N29 prototype/demand consumption.
+- [x] N30-supported versus ecology-extrapolated legs.
+- [x] Constructed ecology-side mechanisms and their evidence class.
+- [x] For every construction: LGRC absence/tension, necessity, minimality,
   inputs/outputs, counterfactual, withdrawal test, debt, claim ceiling, and
   proposed graph-side discriminator.
-- [ ] Requested execution class and runtime-binding/realization-profile receipt,
+- [x] Requested execution class and runtime-binding/realization-profile receipt,
   including required and observed identities and conformance status.
-- [ ] Missing or unsuitable graph surfaces and proposed future LGRC
+- [x] Missing or unsuitable graph surfaces and proposed future LGRC
   discriminators.
-- [ ] Missing requirements and composition interfaces.
-- [ ] Controls, debts, transfer scope, and failure modes.
-- [ ] Claim ceiling, blocked relabels, and N31+ implication.
-- [ ] Terminal classification, stopping condition, closure evidence, and clear
+- [x] Missing requirements and composition interfaces.
+- [x] Controls, debts, transfer scope, and failure modes.
+- [x] Claim ceiling, blocked relabels, and N31+ implication.
+- [x] Terminal classification, stopping condition, closure evidence, and clear
   separation of scientific result from incomplete or unavailable execution.
 
 Lane-registry required fields:
 
-- [ ] Stable lane ID and accepted initial display name.
-- [ ] Current display name, order, and inclusion state.
-- [ ] Lane motivation and source-role references.
-- [ ] Rename contract revision and rationale when the display name changes.
-- [ ] Projection targets and consistency status for the roadmap and AE01 README.
+- [x] Stable lane ID and accepted initial display name.
+- [x] Current display name, order, and inclusion state.
+- [x] Lane motivation and source-role references.
+- [x] Rename contract revision and rationale when the display name changes.
+- [x] Projection targets and consistency status for the roadmap and AE01 README.
 
 Iteration boundary:
 
@@ -535,16 +535,21 @@ Schema completeness is not a positive pattern result.
 
 Exit gate `P1-I3-GATE`:
 
-- [ ] Required fields are machine-validatable.
-- [ ] Narrative reports cannot carry stronger claims than machine records.
-- [ ] Missing required evidence fails closed.
-- [ ] Contract versions and compatibility behavior are explicit.
+- [x] Required fields are machine-validatable.
+- [x] Narrative reports cannot carry stronger claims than machine records.
+- [x] Missing required evidence fails closed.
+- [x] Contract versions and compatibility behavior are explicit.
+- [x] `P1-I3-GATE` passed. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/common-contract.md`,
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/schemas/ae01-contract.schema.json`,
+  and
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/lane-registry.json`.
 
 ### P1-I4 — Hypothesis, control, and failure freeze
 
 Entry condition:
 
-- [ ] `P1-I3-GATE` passed.
+- [x] `P1-I3-GATE` passed.
 
 Required hypotheses:
 
@@ -676,7 +681,7 @@ Exit gate `P1-I5-GATE`:
 
 - [x] `P1-I1-GATE` passed.
 - [x] `P1-I2-GATE` passed.
-- [ ] `P1-I3-GATE` passed.
+- [x] `P1-I3-GATE` passed.
 - [ ] `P1-I4-GATE` passed.
 - [ ] `P1-I5-GATE` passed.
 - [ ] AE01-C1 is assigned with evidence.
@@ -1527,16 +1532,16 @@ Phase 4.
 | Implementation surface | Contract required | Code required | Verification required | Current status |
 | --- | --- | --- | --- | --- |
 | Packaging and quality configuration | Yes | Yes | Install/import/lint/type/test | Pending |
-| Stable IDs and canonical serialization | Yes | Yes | Round-trip/digest | Pending |
-| Evidence provenance and source roles | Yes | Yes | Negative/compatibility | Pending |
-| Debt and claim-boundary model | Yes | Yes | Fail-closed claim tests | Pending |
-| Artifact manifests and schema restoration | Yes | Yes | Replay/round-trip | Pending |
-| LGRC runtime/artifact bridge | Yes | Conditional modes | Integration/read-only | Pending |
+| Stable IDs and canonical serialization | Yes | Yes | Round-trip/digest | Contract shape frozen; code/verification pending |
+| Evidence provenance and source roles | Yes | Yes | Negative/compatibility | Contract shape frozen; code/verification pending |
+| Debt and claim-boundary model | Yes | Yes | Fail-closed claim tests | Contract shape frozen; code/verification pending |
+| Artifact manifests and schema restoration | Yes | Yes | Replay/round-trip | Contract shape frozen; code/verification pending |
+| LGRC runtime/artifact bridge | Yes | Conditional modes | Integration/read-only | Runtime-binding shape frozen; implementation pending |
 | Primitive catalog implementations | Per promotion queue | Conditional | Contract/replay/transfer | Blocked by AE01 |
 | Building-block implementations | Per promotion queue | Conditional | Composition/control | Blocked by AE01 |
 | Motif implementations | Dedicated motif contract | Conditional | Combined controls | Blocked by blocks |
 | Regime/domain probes | Dedicated regime contract | Conditional | Persistence/recovery | Blocked by motifs |
-| Telemetry and reports | Yes | Yes for admitted surfaces | Artifact comparison | Pending |
+| Telemetry and reports | Yes | Yes for admitted surfaces | Artifact comparison | Report-projection shape frozen; implementation pending |
 | Examples and public documentation | Yes | Conditional | Execution/link checks | Pending |
 
 ## 11. Required indexes and traceability records
@@ -1604,7 +1609,8 @@ Use this section when checking a conditional item as deferred.
 | P0-GATE | Revision 0.17; P0-I1 through P0-I3 passed; Review R1 accepted as D-037 with no P0-I2 reopening | 2026-07-10 | Accepted by project owner; passed |
 | P1-I1-GATE | Revision 0.19 narrative source inventory; verified paper, N29, N30, and active N30+ identities, roles, precedence, debts, and claim ceilings | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
 | P1-I2-GATE | Revision 0.20 roadmap and AE01 README; stable lane projection, atlas outline, ontology, taxonomies, terminal states, outputs, and claim boundaries | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
-| P1-GATE | Pending | — | Open; P1-I3 ready |
+| P1-I3-GATE | Revision 0.21 common meaning contract, JSON Schema Draft 2020-12 bundle, and controlling machine lane registry | 2026-07-10 | Self-audited; passed pending later R2 review of the full Phase 1 freeze |
+| P1-GATE | Pending | — | Open; P1-I4 ready |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -1668,12 +1674,13 @@ Change log:
 | CL-017 | 2026-07-10 | Revision 0.17 accepted D-037 as the R1 resolution: ceremony scales with evidential use while safety remains fixed; shared profiles, generated receipts, experiment-local construction sharing, schema-drift controls, and qualitative ranking rationale reduce compliance friction. P0-GATE passed. | P0-GATE and P1-GATE onward | Superseded by CL-018 |
 | CL-018 | 2026-07-10 | Revision 0.18 aligned the experiment reconstruction summary with D-027 and added Phase 1 stable lane IDs, a single machine lane registry, rename provenance, and narrative projection validation. Completed Phase 0 gates remain closed. | P1-I2-GATE onward | Superseded by CL-019 |
 | CL-019 | 2026-07-10 | Revision 0.19 passed P1-I1 with a verified narrative source inventory, explicit mutable-roadmap provenance, all N29 debts carried, and N30 bounded at P2/M2. No AE01 rung or positive result opened. | P1-I1-GATE onward | Superseded by CL-020 |
-| CL-020 | 2026-07-10 | Revision 0.20 passed P1-I2 with a complete atlas content outline, stable lane IDs, source motivations, ontology and placement rules, debt/failure/terminal taxonomies, stopping conditions, and aligned narrative projections. `AE01-C0` assigned without positive evidence. | P1-I2-GATE onward | Active |
+| CL-020 | 2026-07-10 | Revision 0.20 passed P1-I2 with a complete atlas content outline, stable lane IDs, source motivations, ontology and placement rules, debt/failure/terminal taxonomies, stopping conditions, and aligned narrative projections. `AE01-C0` assigned without positive evidence. | P1-I2-GATE onward | Superseded by CL-021 |
+| CL-021 | 2026-07-10 | Revision 0.21 passed P1-I3 with one normative meaning contract, a discriminated schema bundle for seventeen closed record shapes, and the controlling seven-lane registry. Semantic validators and automated projection checks remain P1-I5 work; no positive evidence or higher rung opened. | P1-I3-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Complete P1-I3 machine and narrative contract freeze.
-2. [ ] Freeze the machine lane registry and common artifact contracts.
-3. [ ] Pass `P1-I3-GATE` without opening positive lane evidence.
+1. [ ] Complete P1-I4 hypothesis, control, and failure freeze.
+2. [ ] Freeze all lane, synthesis, and non-selection hypotheses.
+3. [ ] Pass `P1-I4-GATE` without executing a lane or opening positive evidence.

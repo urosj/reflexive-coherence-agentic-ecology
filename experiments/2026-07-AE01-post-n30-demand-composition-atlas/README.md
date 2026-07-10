@@ -1,6 +1,6 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P1-I2 roadmap and experiment boundary frozen; P1-I3 not started
+**Status:** P1-I3 machine and narrative contracts frozen; P1-I4 next
 
 **Acceptance state:** `AE01-C0` assigned; `AE01-C1` through `AE01-C6` unassigned
 
@@ -9,6 +9,9 @@
 
 **Source admission:**
 [P1-I1 source inventory](contracts/source-inventory.md)
+
+**Common contract:**
+[P1-I3 machine and narrative contract](contracts/common-contract.md)
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -64,9 +67,9 @@ source inventory. Source admission supports no lane result.
 | `AE01-L06` | Capacity circulation | Bounded capacity-circulation demand pattern |
 | `AE01-L07` | Parent-basin modulation demand and missing-surface classification | Bounded demand/missing-surface classification; positive M3/M4 is not expected |
 
-P1-I3 will freeze the machine-readable registry controlling stable IDs,
-current names, order, inclusion state, and rename provenance. The roadmap and
-this README are narrative projections and must remain consistent with it.
+The [machine-readable registry](contracts/lane-registry.json) controls stable
+IDs, current names, order, inclusion state, and rename provenance. The roadmap
+and this README are narrative projections and must remain consistent with it.
 
 Lanes may execute independently after P1-GATE and may not consume another
 lane's conclusion. Cross-lane synthesis begins only after every lane has a
@@ -113,9 +116,9 @@ non-selection.
 
 ```text
 P1-I1 source admission                         passed
-P1-I2 roadmap and experiment boundary          passed by this revision
-P1-I3 machine and narrative contracts          next
-P1-I4 hypotheses, controls, and failures        after P1-I3
+P1-I2 roadmap and experiment boundary          passed
+P1-I3 machine and narrative contracts          passed by this revision
+P1-I4 hypotheses, controls, and failures        next
 P1-I5 tooling and reconstruction                after P1-I4
 P1-GATE                                         authorizes lane execution
 
@@ -146,9 +149,11 @@ exploratory_scratch -> registered_probe -> retained_evidence
 ```
 
 Only verified retained evidence may support a report fact, terminal
-classification, or gate. P1-I5 must still define canonical records, manifests,
-portable reconstruction commands, runtime receipts, selected-output policy,
-and duplicate reconstruction. No execution entry point exists yet.
+classification, or gate. P1-I3 freezes the manifest, profile, runtime-receipt,
+and report-projection shapes. P1-I5 must still implement canonical
+serialization, resolved manifests, portable reconstruction commands,
+selected-output policy, duplicate reconstruction, and semantic validation. No
+execution entry point exists yet.
 
 Artifact inspection is non-runtime. Requested live execution requires an
 explicit compatible local PyGRC binding and cannot fall back to inspection,

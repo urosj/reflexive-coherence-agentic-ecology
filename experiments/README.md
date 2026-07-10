@@ -13,8 +13,9 @@ being placed here.
 - [Master program plan](../implementation/PostN30-plan.md)
 - [Master program checklist](../implementation/PostN30-checklist.md)
 
-AE01 has passed P1-I2 and assigned `AE01-C0`; its machine contracts are not yet
-frozen and no positive atlas result is supported.
+AE01 has passed P1-I3 and assigned only `AE01-C0`; its versioned machine and
+narrative contracts are frozen, while hypotheses and tooling remain open and
+no positive atlas result is supported.
 
 ## Experiment authority
 

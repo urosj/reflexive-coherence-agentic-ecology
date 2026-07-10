@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.20
+**Plan revision:** 0.21
 
 **Date:** 2026-07-10
 
@@ -1711,6 +1711,7 @@ directive.
 | 2026-07-10 | Revision 0.18: applied the post-scaffold review follow-ups by aligning the experiment reconstruction summary with every D-027 requirement and requiring stable lane IDs, a single machine-readable lane registry, rename provenance, and validated narrative projections during Phase 1. No completed gate reopened. |
 | 2026-07-10 | Revision 0.19: passed P1-I1 source inventory and method admission with verified conceptual-source digests, N29 closeout and ten-artifact lineage, A-D prototype/debt boundaries, N30 replay/closeout evidence, mutable-roadmap provenance, and the current N30+ cross-project spiral rule. No positive AE01 evidence or acceptance rung opened. |
 | 2026-07-10 | Revision 0.20: passed P1-I2 with a complete atlas content outline, stable `AE01-L01` through `AE01-L07` identities, lane motivations and ceilings, catalog/ontology rules, debt and terminal taxonomies, expected outputs, stopping/non-selection boundaries, and aligned roadmap/README projections. `AE01-C0` assigned with no positive evidence. |
+| 2026-07-10 | Revision 0.21: passed P1-I3 with a versioned Markdown meaning contract, one discriminated JSON Schema Draft 2020-12 bundle for seventeen record types, and the controlling seven-lane machine registry. Contract closure did not open positive evidence or advance beyond `AE01-C0`; Python semantic validation and automated projection checks remain P1-I5 work. |
 
 ## 18. Program completion criteria
 

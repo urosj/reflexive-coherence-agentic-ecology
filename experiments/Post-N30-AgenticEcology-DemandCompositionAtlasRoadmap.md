@@ -1,6 +1,6 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** P1-I2 scope and experiment boundary frozen; machine contracts not frozen
+**Status:** P1-I3 machine and narrative contracts frozen; P1-I4 next
 
 **Local experiment:** `AE01`
 
@@ -8,6 +8,9 @@
 
 **Source admission:**
 [AE01 P1-I1 source inventory](2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md)
+
+**Common contract:**
+[AE01 P1-I3 machine and narrative contract](2026-07-AE01-post-n30-demand-composition-atlas/contracts/common-contract.md)
 
 **Controlling directives:**
 [Post-N30 master plan](../implementation/PostN30-plan.md) and
@@ -77,8 +80,8 @@ all five.
 ## 4. Atlas content architecture
 
 AE01 will produce a connected atlas rather than seven isolated reports. Its
-content is organized into the following sections. P1-I3 freezes their exact
-machine shapes.
+content is organized into the following sections. P1-I3 froze their exact
+machine shapes in the common contract.
 
 ### A0 — Source and authority inventory
 
@@ -263,7 +266,7 @@ ontology or remove a premature claim. A rename must preserve:
 - rationale and affected projections;
 - unchanged or explicitly revised scope.
 
-P1-I3 freezes the machine-readable registry. P1-I5 must fail when the plan,
+P1-I3 froze the machine-readable registry. P1-I5 must fail when the plan,
 roadmap, AE01 README, or registry has missing, duplicate, stale, or reordered
 lane identities.
 
@@ -342,9 +345,9 @@ admitted.
 
 ```text
 P1-I1 source admission                         passed
-P1-I2 roadmap and experiment boundary          this freeze
-P1-I3 machine and narrative contracts          next
-P1-I4 hypotheses, controls, failures            after P1-I3
+P1-I2 roadmap and experiment boundary          passed
+P1-I3 machine and narrative contracts          passed by this revision
+P1-I4 hypotheses, controls, failures            next
 P1-I5 artifact, tooling, reconstruction         after P1-I4
 P1-GATE                                         authorizes execution only
 
@@ -470,15 +473,12 @@ Phase 8 completion or unrestricted autonomy
 ```
 
 The maximum P1 result is a complete, internally consistent, reproducible
-contract set at AE01-C2. This P1-I2 roadmap establishes only AE01-C0.
+contract set at AE01-C2. This P1-I3 freeze still establishes only AE01-C0.
 
 ## 19. Remaining Phase 1 freeze work
 
-P1-I3 through P1-I5 must still provide:
+P1-I4 and P1-I5 must still provide:
 
-- machine-readable lane registry and common artifact contracts;
-- exact pattern-card, medium, demand, composition, debt, claim, construction,
-  runtime-binding, report, ranking, and manifest shapes;
 - hypotheses, positive/null/blocked signatures, controls, and failure mappings;
 - deterministic IDs, canonical serialization, digests, portable-path guards,
   validators, and conformance fixtures;
