@@ -8,8 +8,9 @@ validators required by the frozen experiment.
 Planned contract surfaces include source inventory, pattern cards, medium
 surfaces, requirement extraction, composition assessment, debt, claims,
 constructed mechanisms, runtime bindings and realization profiles,
-catalog/domain placement, field applicability, terminal classification,
-artifact manifests, report projection, and N31+ ranking or non-selection.
+catalog/domain placement, field applicability, a stable lane registry, terminal
+classification, artifact manifests, report projection, and N31+ ranking or
+non-selection.
 
 No contract is frozen yet. Files added here remain AE01 historical records and
 do not become canonical specifications without a post-closeout promotion

@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.17
+**Baseline revision:** 0.18
 
 **Date:** 2026-07-10
 
@@ -46,7 +46,7 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.17 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.18 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Ready; not started | P1-I1-GATE | P0-GATE passed |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
@@ -403,6 +403,8 @@ Required roadmap content:
 - [ ] State the graph/ecology spiral role.
 - [ ] Define AE01 as a local experiment rather than graph N31.
 - [ ] Define all seven initial lanes.
+- [ ] Assign one stable ID to each accepted initial lane and use it consistently
+  in the roadmap and AE01 README.
 - [ ] Cite N30 trace-conditioned eligibility, N29 Prototype B, N29 Prototype C,
   and ecology demand mapping as the motivation for Lane 1 without treating
   `niche` as an N30-supported label.
@@ -421,6 +423,8 @@ Required roadmap content:
 - [ ] Define AE01-C0 through AE01-C6.
 - [ ] Define finite positive, negative, blocked, incomplete, non-selection, and
   closeout classifications and stopping conditions.
+- [ ] Define rename behavior: stable IDs persist; initial and current display
+  names, contract revision, and rationale remain visible.
 - [ ] State blocked claims.
 
 Required AE01 README content:
@@ -443,6 +447,8 @@ It does not answer the atlas questions or preselect a winning building block.
 Exit gate `P1-I2-GATE`:
 
 - [ ] Roadmap and README agree on scope, lanes, gates, and non-claims.
+- [ ] Roadmap and README agree on every provisional stable lane ID, display
+  name, order, and inclusion state.
 - [ ] Every lane has a declared reason for inclusion.
 - [ ] The roadmap contains no positive lane result or fixed N31 selection.
 - [ ] AE01-C0 can be assigned without implying positive evidence.
@@ -457,6 +463,7 @@ Required common contracts:
 
 - [ ] Source inventory contract.
 - [ ] Pattern-card contract.
+- [ ] Machine-readable lane-registry contract.
 - [ ] Medium-surface declaration contract.
 - [ ] Requirement-extraction contract.
 - [ ] Composition-assessment contract.
@@ -505,6 +512,14 @@ Pattern-card required fields:
 - [ ] Claim ceiling, blocked relabels, and N31+ implication.
 - [ ] Terminal classification, stopping condition, closure evidence, and clear
   separation of scientific result from incomplete or unavailable execution.
+
+Lane-registry required fields:
+
+- [ ] Stable lane ID and accepted initial display name.
+- [ ] Current display name, order, and inclusion state.
+- [ ] Lane motivation and source-role references.
+- [ ] Rename contract revision and rationale when the display name changes.
+- [ ] Projection targets and consistency status for the roadmap and AE01 README.
 
 Iteration boundary:
 
@@ -613,6 +628,8 @@ Required work:
   roles so only verified retained evidence can support a classification or gate.
 - [ ] Implement versioned shared environment, command, resource, dependency,
   and realization profiles with deterministic fully resolved manifest views.
+- [ ] Implement lane-registry validation for unique/stable IDs, complete initial
+  scope, ordering, rename provenance, and narrative projection consistency.
 - [ ] Define duplicate reconstruction expectations.
 - [ ] Define selected-output commit policy.
 - [ ] Define commands for regenerating each artifact family.
@@ -647,6 +664,8 @@ Exit gate `P1-I5-GATE`:
   repository.
 - [ ] Scratch and transient registered-probe outputs fail any attempt to satisfy
   a classification or gate until promoted through verified D-027 retention.
+- [ ] Missing, duplicate, stale, or reordered lane identities fail projection
+  validation before P1-GATE.
 
 ### Phase 1 exit gate `P1-GATE`
 
@@ -658,6 +677,7 @@ Exit gate `P1-I5-GATE`:
 - [ ] AE01-C1 is assigned with evidence.
 - [ ] AE01-C2 is assigned with evidence.
 - [ ] Positive atlas conclusions remain unopened.
+- [ ] The frozen machine lane registry and all narrative lane projections agree.
 
 Phase 1 boundary:
 
@@ -1638,7 +1658,8 @@ Change log:
 | CL-014 | 2026-07-10 | Revision 0.14 partially resolved O-008 as D-035 with admission-driven domain packages and no predeclared inventory; the complete decision audit passed P0-I2-GATE. | P0-I2-GATE onward | Superseded by CL-015 |
 | CL-015 | 2026-07-10 | Revision 0.15 accepted D-036, corrected stale gate/dependency bookkeeping, and added explicit Phase 1 guardrails for constructed mechanisms, runtime bindings, tooling bootstrap, domain placement, applicability, artifact roles, and bounded lane closure. | P0-I3-GATE and P1-GATE onward | Superseded by CL-016 |
 | CL-016 | 2026-07-10 | Revision 0.16 completed P0-I3 with the minimum owned scaffold and navigation, while explicitly deferring specs, source packaging, and execution/output paths. | P0-I3-GATE onward | Superseded by CL-017 |
-| CL-017 | 2026-07-10 | Revision 0.17 accepted D-037 as the R1 resolution: ceremony scales with evidential use while safety remains fixed; shared profiles, generated receipts, experiment-local construction sharing, schema-drift controls, and qualitative ranking rationale reduce compliance friction. P0-GATE passed. | P0-GATE and P1-GATE onward | Active |
+| CL-017 | 2026-07-10 | Revision 0.17 accepted D-037 as the R1 resolution: ceremony scales with evidential use while safety remains fixed; shared profiles, generated receipts, experiment-local construction sharing, schema-drift controls, and qualitative ranking rationale reduce compliance friction. P0-GATE passed. | P0-GATE and P1-GATE onward | Superseded by CL-018 |
+| CL-018 | 2026-07-10 | Revision 0.18 aligned the experiment reconstruction summary with D-027 and added Phase 1 stable lane IDs, a single machine lane registry, rename provenance, and narrative projection validation. Completed Phase 0 gates remain closed. | P1-I2-GATE onward | Active |
 
 ## 17. Current next actions
 

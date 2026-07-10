@@ -52,7 +52,10 @@ terminal classification under the frozen common contract.
 Before lane execution, this roadmap and the AE01 contract set must freeze:
 
 - source roles, precedence, digests, and claim ceilings;
-- lane motivations, hypotheses, terminal classifications, and stopping rules;
+- stable lane IDs, current display names, motivations, hypotheses, terminal
+  classifications, and stopping rules;
+- one machine-readable lane registry with validated roadmap and README
+  projections and explicit rename provenance;
 - common pattern, medium, requirement, composition, debt, and claim records;
 - constructed-mechanism necessity, minimality, counterfactual, withdrawal,
   debt, and graph-discriminator declarations;

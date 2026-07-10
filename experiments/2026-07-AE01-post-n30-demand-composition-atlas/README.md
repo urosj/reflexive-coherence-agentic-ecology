@@ -45,7 +45,10 @@ The accepted initial lane set is:
 7. parent-basin modulation demand and missing-surface classification.
 
 Lane names and detailed contracts remain subject to P1-I2 through P1-I4
-freeze. No lane may execute before P1-GATE.
+freeze. P1-I2 must assign stable lane IDs. P1-I3 must freeze one
+machine-readable lane registry as the authority for current display names,
+ordering, inclusion status, and rename provenance; this README and the roadmap
+remain validated narrative projections. No lane may execute before P1-GATE.
 
 ## Evidence and reconstruction boundary
 

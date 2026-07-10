@@ -55,9 +55,9 @@ manifest. Its reconstruction record must identify:
 
 - a stable artifact ID and expected repository-relative path;
 - the producing command and working-directory convention;
-- source, dependency, schema, and configuration identities;
+- environment, dependency, source-revision, and configuration identities;
 - input digests and any random seeds;
-- expected semantic and file digests and size;
+- expected artifact kind, schema, semantic and file digests, and size;
 - the required runtime, memory, disk, and hardware envelope; and
 - a verification command and last verified reconstruction status.
 

@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.17
+**Plan revision:** 0.18
 
 **Date:** 2026-07-10
 
@@ -604,6 +604,15 @@ required lane exit gates pass.
 Lanes MAY be renamed during contract freeze if the new name improves ontology
 or avoids a premature claim. A lane MUST NOT be removed merely because it fails
 to support a positive candidate; failed or blocked lanes remain demand evidence.
+P1-I2 MUST assign a stable lane ID to every accepted initial lane. P1-I3 MUST
+freeze one machine-readable lane registry controlling stable IDs, current
+display names, order, inclusion state, initial-name lineage, and rename
+rationale. IDs survive renames. The roadmap and AE01 README remain independently
+navigable narrative projections, but P1-I5 MUST validate them against the
+registry and fail on missing, duplicate, stale, or reordered lane identities.
+The plan preserves the accepted initial scope and must record any scope change
+through normal change control.
+
 Each lane contract MUST freeze finite terminal classifications and stopping
 conditions. A negative, absent, producer-carried, or missing-surface result can
 close a lane only after its required record, controls, and reconstruction pass.
@@ -1698,6 +1707,7 @@ directive.
 | 2026-07-10 | Revision 0.15: accepted D-036, corrected stale Phase 0 dependency bookkeeping, and converted identified architecture tensions into explicit Phase 1 construction, runtime-binding, tooling-bootstrap, domain-placement, applicability, and bounded lane-closure obligations. |
 | 2026-07-10 | Revision 0.16: completed the minimum P0-I3 scaffold with experiment and implementation indexes, the Post-N30 roadmap, the AE01 workspace, and only the contract, hypothesis, and experiment-implementation paths owned by Phase 1. |
 | 2026-07-10 | Revision 0.17: accepted D-037 as the Review R1 resolution, introducing graduated evidence ceremony, resolved shared profiles, generated runtime receipts, experiment-local construction sharing, schema-drift controls, and qualitative rationale alongside synthesis-only scoring. P0-GATE passed. |
+| 2026-07-10 | Revision 0.18: applied the post-scaffold review follow-ups by aligning the experiment reconstruction summary with every D-027 requirement and requiring stable lane IDs, a single machine-readable lane registry, rename provenance, and validated narrative projections during Phase 1. No completed gate reopened. |
 
 ## 18. Program completion criteria
 
