@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.14
+**Plan revision:** 0.15
 
 **Date:** 2026-07-10
 
@@ -213,6 +213,7 @@ process in Section 17.
 | D-033 | Accepted | LGRC integration follows the strict dual-surface policy in the O-003 disposition: artifact inspection is non-runtime; all live execution requires a compatible local PyGRC runtime; constructed and native bindings never substitute silently. |
 | D-034 | Accepted partial resolution and deferral | AE01 freezes replay-oriented mechanism contracts and explicit realization profiles rather than promising a general stable producer/plugin API. The graph/PyGRC repository remains strictly read-only from RCAE; any native implementation is separately authorized and performed under graph-project authority. |
 | D-035 | Accepted partial resolution and deferral | Domain-package creation is admission-driven. Conceptual examples and experiment-local domain fixtures do not preselect reusable packages; the inventory beyond each explicitly promoted domain remains deferred. |
+| D-036 | Accepted | The known tensions among constructed exploration, implementation restraint, reproducibility, local PyGRC resolution, deferred packaging, domain placement, and bounded lane closure are operationalized as explicit Phase 1 contract and tooling obligations without reopening P0-I2. |
 
 ## 7. Target repository structure
 
@@ -431,9 +432,12 @@ The bridge MUST NOT:
   appears.
 
 Domain code SHOULD consume substrate-neutral bridge protocols rather than deep
-`pygrc` implementation modules. The exact dependency and package-installation
-mechanism remains an open program decision that must be resolved during Phase
-0 before bridge implementation begins.
+`pygrc` implementation modules. D-033 fixes the dependency mode and D-034 fixes
+the replay-compatibility floor: live execution resolves a compatible PyGRC
+runtime locally, while artifact inspection remains non-runtime. P1-I5 selects
+only the repository-local tooling bootstrap needed by frozen contracts. It MUST
+reopen O-002 before requiring installable-package metadata and MUST preserve the
+read-only graph boundary in every mode.
 
 ### 10.1 Bidirectional spiral and constructed exploration
 
@@ -599,6 +603,11 @@ required lane exit gates pass.
 Lanes MAY be renamed during contract freeze if the new name improves ontology
 or avoids a premature claim. A lane MUST NOT be removed merely because it fails
 to support a positive candidate; failed or blocked lanes remain demand evidence.
+Each lane contract MUST freeze finite terminal classifications and stopping
+conditions. A negative, absent, producer-carried, or missing-surface result can
+close a lane only after its required record, controls, and reconstruction pass.
+An incomplete or unavailable execution is recorded as such and MUST NOT be
+relabeled as a negative scientific result or kept open indefinitely.
 
 ### 11.4 Common lane contract
 
@@ -607,6 +616,8 @@ Every lane MUST record:
 ```text
 pattern identifier
 primary catalog layer and secondary observations
+domain role, domain-specific versus transferable boundary, and placement rationale
+field applicability status and rationale wherever a common field is not applicable
 parent basin and persistence condition
 local differentiations or participant carriers
 shared medium and declared surfaces
@@ -621,16 +632,33 @@ N29 prototypes and demand rows consumed
 N30-supported legs
 ecology-extrapolated legs
 constructed ecology-side mechanisms and their evidence class
+constructed-mechanism necessity, minimality, counterfactual, and withdrawal declaration
 missing or unsuitable graph surfaces
 proposed future LGRC discriminators
 new substrate requirements
 composition inputs, outputs, and interference risks
 controls and withdrawal tests
+execution class and runtime-binding/realization-profile receipt, if execution is requested
 all applicable debts
 transfer scope
 claim ceiling and blocked relabels
 candidate N31+ implication, if any
+terminal classification, stopping condition, and closure evidence
 ```
+
+A constructed-mechanism declaration MUST identify the observed LGRC absence or
+composition tension, justify the smallest added mechanism, define inputs and
+outputs, state the counterfactual and scaffold-withdrawal test, preserve
+producer and naturalization debt, cap its claims, and name the graph-side
+discriminator it is meant to expose. Missing or weak justification fails the
+construction closed; experimental status is not by itself sufficient.
+
+Any requested live execution MUST reference a runtime-binding receipt and
+realization profile that record the required and observed PyGRC identities,
+capabilities, policies, schemas, execution class, conformance result, and
+before/after state identities without recording a machine-local path. Artifact
+inspection records that no live runtime was requested and cannot satisfy a live
+execution requirement.
 
 ### 11.5 Required controls
 
@@ -756,6 +784,10 @@ Required outputs:
 - requirement-extraction contract;
 - composition-assessment contract;
 - claim-boundary contract;
+- constructed-mechanism declaration contract;
+- runtime-binding and realization-profile contract;
+- catalog/domain placement and field-applicability rules;
+- lane terminal-classification and stopping contract;
 - implementation plan and checklist;
 - expected artifact inventory.
 
@@ -1582,6 +1614,7 @@ directive.
 | 2026-07-10 | Revision 0.12: resolved O-003 as D-033 with non-runtime artifact inspection, strict installed-PyGRC execution, local runtime resolution, narrow adapters, and explicit constructed-to-native transitions. |
 | 2026-07-10 | Revision 0.13: partially resolved O-007 as D-034 with replay-frozen mechanism contracts and realization profiles, graph Phase 8 extension discipline, deferred general API stability, and an explicit prohibition on RCAE modifying the graph/PyGRC repository. |
 | 2026-07-10 | Revision 0.14: partially resolved O-008 as D-035 with admission-driven domain packages, experiment-local domain fixtures, and no predeclared or empty domain inventory. P0-I2 decision resolution passed. |
+| 2026-07-10 | Revision 0.15: accepted D-036, corrected stale Phase 0 dependency bookkeeping, and converted identified architecture tensions into explicit Phase 1 construction, runtime-binding, tooling-bootstrap, domain-placement, applicability, and bounded lane-closure obligations. |
 
 ## 18. Program completion criteria
 

@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.14
+**Baseline revision:** 0.15
 
 **Date:** 2026-07-10
 
@@ -46,7 +46,7 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.14 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.15 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | In progress | P0-I3-GATE | P0-I2-GATE passed |
 | Phase 1 — AE01 contract freeze | Not started | P1-GATE | Pending |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
@@ -279,7 +279,7 @@ Exit gate `P0-I3-GATE`:
 
 ### Phase 0 exit gate `P0-GATE`
 
-- [ ] `P0-I1-GATE` passed.
+- [x] `P0-I1-GATE` passed.
 - [x] `P0-I2-GATE` passed.
 - [ ] `P0-I3-GATE` passed.
 - [ ] All AE01-blocking architecture decisions are accepted or safely deferred.
@@ -399,12 +399,15 @@ Required roadmap content:
 - [ ] Define Lane 7 as parent-basin modulation demand and expected
   missing-surface classification, not a positive M3/M4 search.
 - [ ] Define the catalog hierarchy and primary-layer rule.
+- [ ] Define domain-role, placement, and domain-specific versus transferable
+  classification without preselecting a domain package.
 - [ ] Define shared-medium and parent-basin ontology requirements.
 - [ ] Define debt and failure taxonomies.
 - [ ] Define N29/N30 consumption constraints.
 - [ ] Define expected cross-lane outputs.
 - [ ] Define AE01-C0 through AE01-C6.
-- [ ] Define stopping, non-selection, and closeout conditions.
+- [ ] Define finite positive, negative, blocked, incomplete, non-selection, and
+  closeout classifications and stopping conditions.
 - [ ] State blocked claims.
 
 Required AE01 README content:
@@ -446,13 +449,21 @@ Required common contracts:
 - [ ] Composition-assessment contract.
 - [ ] Debt-record contract.
 - [ ] Claim-boundary and unsafe-flag contract.
+- [ ] Constructed-mechanism declaration contract.
+- [ ] Runtime-binding receipt and realization-profile contract.
+- [ ] Catalog/domain placement and field-applicability contract.
+- [ ] Lane terminal-classification and stopping contract.
 - [ ] N31+ ranking and non-selection contract.
 - [ ] Artifact manifest contract.
 - [ ] Human-readable report projection contract.
 
 Pattern-card required fields:
 
-- [ ] Pattern ID and catalog layer.
+- [ ] Pattern ID, primary catalog layer, and secondary observations.
+- [ ] Domain role, placement rationale, and domain-specific versus transferable
+  boundary.
+- [ ] Explicit applicability status and rationale for every inapplicable common
+  field; no silent omission.
 - [ ] Parent basin and persistence condition.
 - [ ] Local differentiations or participant carriers.
 - [ ] Shared medium and carrier surfaces.
@@ -465,11 +476,18 @@ Pattern-card required fields:
 - [ ] N29 prototype/demand consumption.
 - [ ] N30-supported versus ecology-extrapolated legs.
 - [ ] Constructed ecology-side mechanisms and their evidence class.
+- [ ] For every construction: LGRC absence/tension, necessity, minimality,
+  inputs/outputs, counterfactual, withdrawal test, debt, claim ceiling, and
+  proposed graph-side discriminator.
+- [ ] Requested execution class and runtime-binding/realization-profile receipt,
+  including required and observed identities and conformance status.
 - [ ] Missing or unsuitable graph surfaces and proposed future LGRC
   discriminators.
 - [ ] Missing requirements and composition interfaces.
 - [ ] Controls, debts, transfer scope, and failure modes.
 - [ ] Claim ceiling, blocked relabels, and N31+ implication.
+- [ ] Terminal classification, stopping condition, closure evidence, and clear
+  separation of scientific result from incomplete or unavailable execution.
 
 Iteration boundary:
 
@@ -520,6 +538,14 @@ Required fail-closed controls:
 - [ ] Fixed N31 selection before synthesis.
 - [ ] Agentic-ecology demand relabeled as substrate evidence.
 - [ ] Constructed ecology-side mechanism relabeled as native LGRC evidence.
+- [ ] Constructed mechanism admitted without necessity, minimality,
+  counterfactual, withdrawal, debt, and discriminator declarations.
+- [ ] Artifact inspection, mock behavior, or automatic fallback substituted for
+  requested live PyGRC execution.
+- [ ] Domain-shaped fixture or conceptual example relabeled as a reusable motif
+  or admitted domain package.
+- [ ] Incomplete or runtime-unavailable execution relabeled as a negative lane
+  result or valid lane closure.
 
 Required failure classifications:
 
@@ -544,7 +570,8 @@ contract revision and rerun.
 
 Exit gate `P1-I4-GATE`:
 
-- [ ] Every lane has positive, negative, and blocked outcomes.
+- [ ] Every lane has finite positive, negative, blocked, and incomplete outcomes
+  with explicit stopping conditions.
 - [ ] Every unsafe relabel has a fail-closed control.
 - [ ] Failure remains a valid catalog input rather than disappearing from the
   atlas.
@@ -565,9 +592,17 @@ Required work:
 - [ ] Define deterministic ID policy.
 - [ ] Define artifact manifest generation.
 - [ ] Define authored/generated report boundary.
+- [ ] Define declared-evidence, declared-reconstructable, and transient-scratch
+  artifact classes so only manifested artifacts can support a gate.
 - [ ] Define duplicate reconstruction expectations.
 - [ ] Define selected-output commit policy.
 - [ ] Define commands for regenerating each artifact family.
+- [ ] Select and document the minimum repository-local tooling bootstrap; do not
+  add distribution metadata unless O-002 is reopened first.
+- [ ] Implement runtime-binding receipt and realization-profile conformance for
+  requested live modes, including fail-closed missing/incompatible PyGRC.
+- [ ] Verify all tooling and reconstruction paths preserve the read-only graph
+  repository boundary.
 - [ ] Add focused tests for all Phase 1 infrastructure.
 
 Iteration boundary:
@@ -583,6 +618,10 @@ Exit gate `P1-I5-GATE`:
 - [ ] Missing fields and incompatible schemas fail closed.
 - [ ] Duplicate reconstruction produces stable canonical records.
 - [ ] No generated record contains a machine-local path.
+- [ ] Missing or incompatible PyGRC fails every requested live mode without
+  fallback to artifact inspection, mock behavior, or another realization.
+- [ ] No RCAE tooling, test, or reconstruction command writes into the graph
+  repository.
 
 ### Phase 1 exit gate `P1-GATE`
 
@@ -1564,7 +1603,8 @@ Change log:
 | CL-011 | 2026-07-10 | Revision 0.11 accepted D-032: distribution name and software version remain deferred and distinct from repository publication version `0.1`. | P0-I2-GATE onward | Superseded by CL-012 |
 | CL-012 | 2026-07-10 | Revision 0.12 resolved O-003 as D-033: artifact inspection remains non-runtime while live execution requires explicit compatible local PyGRC bindings with no silent constructed/native transition. | P0-I2-GATE onward | Superseded by CL-013 |
 | CL-013 | 2026-07-10 | Revision 0.13 partially resolved O-007 as D-034: replay-frozen realization profiles govern AE01, a general API remains deferred, and no RCAE workflow may modify the graph/PyGRC repository. | P0-I2-GATE onward | Superseded by CL-014 |
-| CL-014 | 2026-07-10 | Revision 0.14 partially resolved O-008 as D-035 with admission-driven domain packages and no predeclared inventory; the complete decision audit passed P0-I2-GATE. | P0-I2-GATE onward | Active |
+| CL-014 | 2026-07-10 | Revision 0.14 partially resolved O-008 as D-035 with admission-driven domain packages and no predeclared inventory; the complete decision audit passed P0-I2-GATE. | P0-I2-GATE onward | Superseded by CL-015 |
+| CL-015 | 2026-07-10 | Revision 0.15 accepted D-036, corrected stale gate/dependency bookkeeping, and added explicit Phase 1 guardrails for constructed mechanisms, runtime bindings, tooling bootstrap, domain placement, applicability, artifact roles, and bounded lane closure. | P0-I3-GATE and P1-GATE onward | Active |
 
 ## 17. Current next actions
 
