@@ -60,6 +60,8 @@ Before lane execution, this roadmap and the AE01 contract set must freeze:
 - catalog layer, domain role, field applicability, and transfer boundaries;
 - positive, negative, blocked, incomplete, and unsafe-relabel controls;
 - artifact roles, manifests, canonicalization, reconstruction, and reports;
+- graduated evidence-use tiers, resolved shared profiles, and generated live
+  execution receipts;
 - N31+ ranking, sensitivity, tie, and non-selection rules; and
 - AE01-C0 through AE01-C6 evidence and closeout gates.
 

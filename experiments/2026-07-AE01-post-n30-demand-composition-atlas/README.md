@@ -52,6 +52,8 @@ freeze. No lane may execute before P1-GATE.
 No evidence artifacts or reconstruction entry points exist yet. P1-I5 must
 define canonical records, manifests, portable commands, runtime bindings,
 selected-output policy, and clean duplicate reconstruction before execution.
+It must also distinguish exploratory scratch, registered probes, and retained
+evidence; only the final tier may support a classification or gate.
 
 Conceptual papers are ontology and method sources only. N29/N30 records retain
 their graph-side evidence scope. Every AE01 record must distinguish inherited

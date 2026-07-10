@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.16
+**Plan revision:** 0.17
 
 **Date:** 2026-07-10
 
@@ -214,6 +214,7 @@ process in Section 17.
 | D-034 | Accepted partial resolution and deferral | AE01 freezes replay-oriented mechanism contracts and explicit realization profiles rather than promising a general stable producer/plugin API. The graph/PyGRC repository remains strictly read-only from RCAE; any native implementation is separately authorized and performed under graph-project authority. |
 | D-035 | Accepted partial resolution and deferral | Domain-package creation is admission-driven. Conceptual examples and experiment-local domain fixtures do not preselect reusable packages; the inventory beyond each explicitly promoted domain remains deferred. |
 | D-036 | Accepted | The known tensions among constructed exploration, implementation restraint, reproducibility, local PyGRC resolution, deferred packaging, domain placement, and bounded lane closure are operationalized as explicit Phase 1 contract and tooling obligations without reopening P0-I2. |
+| D-037 | Accepted | Evidence ceremony is graduated by evidential use, while runtime safety, graph read-only behavior, evidence-class separation, and claim ceilings remain fixed. Shared profiles and generated receipts SHOULD remove repeated manual entry; N31+ scoring remains a synthesis gate accompanied by independent qualitative rationale. |
 
 ## 7. Target repository structure
 
@@ -1532,6 +1533,86 @@ evidence supports reusable implementation. At that point decide only the
 selected domain's package; inventory beyond it remains evidence-driven and
 deferred by this policy.
 
+### 15.11 R1 disposition — Graduated evidence ceremony
+
+**Review finding:** the P0-I2 decision lattice is coherent and its strongest
+features are the D-028 evidence classes, concrete reopening conditions, valid
+non-selection under D-029, and the D-030 split between generated facts and
+authored interpretation. Its highest friction-to-value risks are repetitive
+reconstruction entry under D-027, runtime-binding ceremony under D-033/D-034,
+false precision in D-029 scoring, and silent Markdown/schema/Python drift under
+D-026. Strict promotion metadata could also discourage useful experiment-local
+sharing, while strict live bindings could discourage informative comparisons.
+
+**Selected resolution:** ceremony scales with evidential use; safety and claim
+boundaries do not. AE01 freezes three evidence-use tiers:
+
+```text
+exploratory_scratch
+    transient local work that may inform contract design
+    cannot support a classification, gate, report fact, or promotion
+
+registered_probe
+    frozen question, controls, stopping conditions, and execution mode
+    may use generated local receipts and transient outputs
+    cannot support a classification until selected artifacts satisfy D-027
+
+retained_evidence
+    selected declared artifacts supporting classification, audit, or a gate
+    requires a complete resolved manifest and verified clean reconstruction
+```
+
+Every live execution at every tier still validates and records its requested
+execution class, PyGRC identity, required capabilities, and realization profile
+and still fails closed without fallback. Exploratory status never authorizes a
+pseudo-runtime, an incompatible binding, mutation of the graph repository, or
+a stronger claim. A transient live receipt may remain in ignored local output,
+but it must exist for the run.
+
+Reconstruction manifests MAY reference versioned environment, dependency,
+command, resource, and realization profiles. Tooling SHOULD generate receipts
+and artifact entries from those profiles. Before an artifact becomes retained
+evidence, validation MUST materialize a fully resolved view containing every
+D-027 field; profile inheritance cannot hide, weaken, or ambiguously override a
+required value.
+
+D-026 remains a divided-authority model rather than three copies of one schema.
+Markdown states meaning and claims, JSON Schema alone governs persisted shape,
+and Python adds only required semantic and cross-record validation for records
+actually consumed. Shared valid and invalid fixtures expose drift. Phase 1
+SHOULD automate reference projections where doing so does not create a new
+schema authority.
+
+Constructed code used by multiple AE01 lanes MAY be shared within the AE01
+experiment without promotion to `src/`. Its lanes MAY reference one common
+construction declaration and implementation identity, but each use must retain
+its applicable inputs, controls, debts, claim ceiling, and result lineage.
+Cross-experiment reuse or a public surface reopens the `src/` promotion and
+metadata question; experiment-local sharing alone does not.
+
+D-029 scoring occurs only after eligible candidates and cross-lane synthesis
+exist. Every candidate keeps an independently authored qualitative mechanism
+rationale and any investigator-prior ordering separate from its machine-derived
+scores. The report MUST expose disagreements between qualitative judgment,
+thresholds, tie handling, and sensitivity profiles. Qualitative judgment may
+motivate another discriminator or review but cannot silently override an
+eligibility gate, frozen score, or required non-selection.
+
+**Alternatives dispositioned:** full retained-evidence ceremony for transient
+scratch is rejected as likely compliance theater. Relaxing runtime identity,
+read-only behavior, evidence roles, reconstruction before retention, or claim
+ceilings for exploration is rejected because those are safety and meaning
+boundaries rather than documentation overhead. Manual duplication of shared
+profile fields is rejected when a deterministic resolved manifest can preserve
+the same information. Intuitive candidate selection is retained as explicit
+qualitative rationale but rejected as an unrecorded scoring override.
+
+**R1 conclusion:** D-027, D-029, D-033, and the other P0-I2 decisions remain in
+force. D-037 governs their Phase 1 operationalization and closes Review R1
+without reopening P0-I2. A later workflow that lets scratch support a claim,
+lets profile inheritance conceal required identity, or makes qualitative
+judgment an implicit override reopens the affected contract and gate.
+
 ## 16. Immediate next steps
 
 After this plan is accepted:
@@ -1616,6 +1697,7 @@ directive.
 | 2026-07-10 | Revision 0.14: partially resolved O-008 as D-035 with admission-driven domain packages, experiment-local domain fixtures, and no predeclared or empty domain inventory. P0-I2 decision resolution passed. |
 | 2026-07-10 | Revision 0.15: accepted D-036, corrected stale Phase 0 dependency bookkeeping, and converted identified architecture tensions into explicit Phase 1 construction, runtime-binding, tooling-bootstrap, domain-placement, applicability, and bounded lane-closure obligations. |
 | 2026-07-10 | Revision 0.16: completed the minimum P0-I3 scaffold with experiment and implementation indexes, the Post-N30 roadmap, the AE01 workspace, and only the contract, hypothesis, and experiment-implementation paths owned by Phase 1. |
+| 2026-07-10 | Revision 0.17: accepted D-037 as the Review R1 resolution, introducing graduated evidence ceremony, resolved shared profiles, generated runtime receipts, experiment-local construction sharing, schema-drift controls, and qualitative rationale alongside synthesis-only scoring. P0-GATE passed. |
 
 ## 18. Program completion criteria
 

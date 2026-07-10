@@ -29,6 +29,25 @@ Experiment-local contracts remain historical records after closeout. A
 reusable contract moves to `specs/` only through an explicit promotion decision
 supported by classified experiment evidence.
 
+## Evidence-use tiers
+
+Experiment work uses three progressively stronger tiers:
+
+```text
+exploratory_scratch -> registered_probe -> retained_evidence
+```
+
+Scratch is transient and may inform contract design but cannot support a
+classification or gate. A registered probe has a frozen question, controls,
+stopping conditions, and execution mode; its outputs remain transient until
+selected. Retained evidence is declared in a manifest and must pass verified
+clean reconstruction before supporting a classification, report fact, or gate.
+
+Runtime identity, graph read-only behavior, evidence-class separation, and
+claim ceilings do not weaken at earlier tiers. Every live run validates its
+binding and creates a receipt even when that receipt remains in ignored local
+output.
+
 ## Reconstruction convention
 
 Every artifact that supports a classification or gate must be declared in a
@@ -41,6 +60,11 @@ manifest. Its reconstruction record must identify:
 - expected semantic and file digests and size;
 - the required runtime, memory, disk, and hardware envelope; and
 - a verification command and last verified reconstruction status.
+
+Artifacts may reference versioned environment, command, dependency, resource,
+and realization profiles to avoid repeated manual entry. Validation must
+materialize an unambiguous resolved manifest containing every required field
+before the artifact becomes retained evidence.
 
 Tracked selected evidence belongs under its owning experiment. Disposable full
 runs, raw telemetry, caches, duplicate reruns, and exploratory products belong

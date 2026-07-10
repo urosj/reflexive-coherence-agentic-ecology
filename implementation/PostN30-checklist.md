@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.16
+**Baseline revision:** 0.17
 
 **Date:** 2026-07-10
 
@@ -46,9 +46,9 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.16 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
-| Phase 0 — Architecture and decisions | In progress | Review R1 / P0-GATE | P0-I3-GATE passed |
-| Phase 1 — AE01 contract freeze | Not started | P1-GATE | Pending |
+| Master directive | Active at revision 0.17 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
+| Phase 1 — AE01 contract freeze | Ready; not started | P1-I1-GATE | P0-GATE passed |
 | Phase 2 — Atlas execution | Blocked by Phase 1 | P2-GATE | Pending |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
@@ -293,8 +293,10 @@ Exit gate `P0-I3-GATE`:
 - [x] `P0-I3-GATE` passed.
 - [x] All AE01-blocking architecture decisions are accepted or safely deferred.
 - [x] Phase 1 can proceed without deciding semantics through incidental code.
-- [ ] Mandatory Review R1 completed against the revision 0.16 scaffold.
-- [ ] `P0-GATE` passed.
+- [x] Mandatory Review R1 completed against the revision 0.16 scaffold.
+  Evidence: D-037 and revision 0.17 R1 disposition.
+- [x] `P0-GATE` passed. Evidence: revision 0.17, accepted by the project owner
+  on 2026-07-10.
 
 Phase 0 boundary:
 
@@ -310,7 +312,7 @@ claim.
 
 Entry condition:
 
-- [ ] `P0-GATE` passed.
+- [x] `P0-GATE` passed.
 
 Required conceptual-source records:
 
@@ -466,11 +468,15 @@ Required common contracts:
 - [ ] Lane terminal-classification and stopping contract.
 - [ ] N31+ ranking and non-selection contract.
 - [ ] Artifact manifest contract.
+- [ ] Evidence-use tier, shared-profile resolution, and fully materialized
+  manifest contract.
 - [ ] Human-readable report projection contract.
 
 Pattern-card required fields:
 
 - [ ] Pattern ID, primary catalog layer, and secondary observations.
+- [ ] Evidence-use tier and prohibition on scratch supporting classification or
+  a gate.
 - [ ] Domain role, placement rationale, and domain-specific versus transferable
   boundary.
 - [ ] Explicit applicability status and rationale for every inapplicable common
@@ -603,8 +609,10 @@ Required work:
 - [ ] Define deterministic ID policy.
 - [ ] Define artifact manifest generation.
 - [ ] Define authored/generated report boundary.
-- [ ] Define declared-evidence, declared-reconstructable, and transient-scratch
-  artifact classes so only manifested artifacts can support a gate.
+- [ ] Define `exploratory_scratch`, `registered_probe`, and `retained_evidence`
+  roles so only verified retained evidence can support a classification or gate.
+- [ ] Implement versioned shared environment, command, resource, dependency,
+  and realization profiles with deterministic fully resolved manifest views.
 - [ ] Define duplicate reconstruction expectations.
 - [ ] Define selected-output commit policy.
 - [ ] Define commands for regenerating each artifact family.
@@ -612,6 +620,10 @@ Required work:
   add distribution metadata unless O-002 is reopened first.
 - [ ] Implement runtime-binding receipt and realization-profile conformance for
   requested live modes, including fail-closed missing/incompatible PyGRC.
+- [ ] Generate a per-run runtime receipt at every live evidence-use tier; allow
+  transient storage for non-evidential runs but never omit identity validation.
+- [ ] Add conformance fixtures proving Markdown meaning, JSON Schema shape, and
+  Python semantic validation remain within their divided authority.
 - [ ] Verify all tooling and reconstruction paths preserve the read-only graph
   repository boundary.
 - [ ] Add focused tests for all Phase 1 infrastructure.
@@ -633,6 +645,8 @@ Exit gate `P1-I5-GATE`:
   fallback to artifact inspection, mock behavior, or another realization.
 - [ ] No RCAE tooling, test, or reconstruction command writes into the graph
   repository.
+- [ ] Scratch and transient registered-probe outputs fail any attempt to satisfy
+  a classification or gate until promoted through verified D-027 retention.
 
 ### Phase 1 exit gate `P1-GATE`
 
@@ -991,6 +1005,9 @@ Entry condition:
 
 Required work:
 
+- [ ] Restrict scoring to eligible candidates after cross-lane synthesis.
+- [ ] Record an independent qualitative mechanism rationale and any declared
+  investigator-prior ordering for every eligible candidate.
 - [ ] Rank candidates by cross-lane recurrence.
 - [ ] Rank candidates by prerequisite centrality.
 - [ ] Rank candidates by current evidence gap.
@@ -1002,6 +1019,8 @@ Required work:
 - [ ] Apply the declared tie policy.
 - [ ] Apply the declared non-selection policy.
 - [ ] Record sensitivity to reasonable scoring changes.
+- [ ] Expose every disagreement between qualitative rationale, numeric ranking,
+  tie procedure, and sensitivity result without allowing an implicit override.
 
 Iteration boundary:
 
@@ -1514,7 +1533,8 @@ Mandatory review points:
 
 - [x] Review R0 after master-plan/checklist acceptance. Evidence: revision 0.3
   accepted by project owner on 2026-07-10.
-- [ ] Review R1 before `P0-GATE`.
+- [x] Review R1 before `P0-GATE`. Evidence: project-owner review of the P0-I2
+  decision lattice, D-037 disposition, and revision 0.16 scaffold audit.
 - [ ] Review R2 before AE01 contract freeze at `P1-GATE`.
 - [ ] Review R3 after the first completed lane to assess contract adequacy
   without tuning conclusions.
@@ -1555,9 +1575,9 @@ Use this section when checking a conditional item as deferred.
 | --- | --- | --- | --- |
 | P0-I1-GATE | Master plan and checklist revision 0.3; all P0-I1 exit items checked | 2026-07-10 | Accepted by project owner; passed |
 | P0-I2-GATE | Master plan and checklist revision 0.14; O-001 through O-010 dispositioned with decisions D-025 through D-035 and explicit safe defaults | 2026-07-10 | Accepted item-by-item by project owner; passed |
-| P0-I3-GATE | Revision 0.16 experiment/implementation indexes, Post-N30 roadmap, AE01 workspace, owned Phase 1 paths, README navigation, and portability scan | 2026-07-10 | Self-audited; passed pending Review R1 for P0-GATE |
-| P0-GATE | Pending | — | Open |
-| P1-GATE | Pending | — | Blocked |
+| P0-I3-GATE | Revision 0.16 experiment/implementation indexes, Post-N30 roadmap, AE01 workspace, owned Phase 1 paths, README navigation, and portability scan | 2026-07-10 | Self-audited; passed |
+| P0-GATE | Revision 0.17; P0-I1 through P0-I3 passed; Review R1 accepted as D-037 with no P0-I2 reopening | 2026-07-10 | Accepted by project owner; passed |
+| P1-GATE | Pending | — | Open; P1-I1 ready |
 | P2-GATE | Pending | — | Blocked |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -1617,12 +1637,13 @@ Change log:
 | CL-013 | 2026-07-10 | Revision 0.13 partially resolved O-007 as D-034: replay-frozen realization profiles govern AE01, a general API remains deferred, and no RCAE workflow may modify the graph/PyGRC repository. | P0-I2-GATE onward | Superseded by CL-014 |
 | CL-014 | 2026-07-10 | Revision 0.14 partially resolved O-008 as D-035 with admission-driven domain packages and no predeclared inventory; the complete decision audit passed P0-I2-GATE. | P0-I2-GATE onward | Superseded by CL-015 |
 | CL-015 | 2026-07-10 | Revision 0.15 accepted D-036, corrected stale gate/dependency bookkeeping, and added explicit Phase 1 guardrails for constructed mechanisms, runtime bindings, tooling bootstrap, domain placement, applicability, artifact roles, and bounded lane closure. | P0-I3-GATE and P1-GATE onward | Superseded by CL-016 |
-| CL-016 | 2026-07-10 | Revision 0.16 completed P0-I3 with the minimum owned scaffold and navigation, while explicitly deferring specs, source packaging, and execution/output paths. | P0-I3-GATE onward | Active |
+| CL-016 | 2026-07-10 | Revision 0.16 completed P0-I3 with the minimum owned scaffold and navigation, while explicitly deferring specs, source packaging, and execution/output paths. | P0-I3-GATE onward | Superseded by CL-017 |
+| CL-017 | 2026-07-10 | Revision 0.17 accepted D-037 as the R1 resolution: ceremony scales with evidential use while safety remains fixed; shared profiles, generated receipts, experiment-local construction sharing, schema-drift controls, and qualitative ranking rationale reduce compliance friction. P0-GATE passed. | P0-GATE and P1-GATE onward | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Run Review R1 against the revision 0.16 scaffold.
-2. [ ] Pass `P0-GATE`.
-3. [ ] Begin the AE01 contract freeze at P1-I1.
+1. [ ] Begin P1-I1 source inventory and method admission.
+2. [ ] Verify the controlling N29/N30 records and digests.
+3. [ ] Pass `P1-I1-GATE` without opening positive AE01 evidence.
