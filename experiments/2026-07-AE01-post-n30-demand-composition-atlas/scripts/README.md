@@ -113,3 +113,73 @@ Commands write only to explicitly supplied RCAE-relative outputs. Disposable
 products belong under ignored top-level `outputs/`. Only an explicit verified
 manifest and retention decision can move selected evidence under the
 experiment. No command writes into the graph/PyGRC repository.
+
+## P2-I1 entry point
+
+`p2_i1.py` is the thin file/CLI boundary. `p2_i1_analysis.py` contains pure
+deterministic analysis and never imports PyGRC. `p2_i1_runtime.py` imports
+PyGRC only inside an explicit runtime call and contains no candidate runner
+while `P2-I1-REG-GATE` and `P2-I1-EXEC-GATE` remain closed.
+
+Create the ignored local environment and install a non-editable build from the
+locally configured PyGRC source plus the pinned validation dependency:
+
+```bash
+uv venv .venv
+uv pip install --python .venv/bin/python LOCAL_PYGRC_SOURCE jsonschema==4.26.0
+```
+
+`LOCAL_PYGRC_SOURCE` is machine-specific and never enters shared records. A
+retained runtime profile must instead record the installed `pygrc==0.1`
+identity and source revision/digests.
+
+Validate the five committed P2-I1 configs:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py validate-configs
+```
+
+Generate the CAL-PRE code, policy, fixture, cell, calibration, runtime, and
+static-profile identity. The result records the current source revision and
+therefore becomes a retained freeze artifact only after the implementation
+commit is final:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py build-cal-pre-identity --output outputs/p2-i1-cal-pre-identity.json
+```
+
+The freeze command fails when the worktree is dirty. During implementation
+review, an explicitly non-retainable preview may be generated with
+`--allow-dirty-preview`; its artifact kind, identity ID, clean-state flag, and
+retention eligibility prevent it from masquerading as the final freeze.
+
+Generate the candidate-blind matched null through the same opportunity
+aggregation and paired-margin functions later used for live records:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py generate-matched-null --output outputs/p2-i1-matched-null.json
+```
+
+Analyze retained raw opportunity records without authored recomputation:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py analyze --input outputs/p2-i1-opportunities.json --output outputs/p2-i1-analysis.json
+```
+
+### Runtime preflight
+
+Runtime preflight requires an ignored local `realization_profile` record whose
+availability, enabled, supported, and validated fields are all true; whose
+PyGRC identity is `pygrc==0.1`; and whose allowed operations contain
+`p2_i1_runtime_preflight`. The local environment must already make that exact
+PyGRC available. Its installation and checkout locations are arguments only
+and never enter a shared record.
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py runtime-preflight --realization-profile outputs/p2-i1-local-realization-profile.json --run-id p2-i1-local-preflight --graph-root LOCAL_GRAPH_CHECKOUT --output outputs/p2-i1-runtime-preflight.json
+```
+
+Missing dependencies, an incompatible identity, a disabled local profile, or
+an undeclared operation produces a failed binding receipt and no fallback.
+The preflight builds and snapshots the baseline fixture only. It does not emit
+a writer packet, medium row, opportunity, candidate result, or lane evidence.

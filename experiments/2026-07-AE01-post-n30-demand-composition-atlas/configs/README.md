@@ -24,3 +24,30 @@ PyGRC installation location, graph checkout location, secrets, and machine
 resource overrides are local inputs and are never committed. A lane-specific
 live probe must add an explicit realization profile and runtime receipt before
 execution; absence fails closed.
+
+## P2-I1 configuration surfaces
+
+P2-I1 adds five experiment-local inputs derived from its cumulative decision
+record:
+
+- `p2_i1_fixture.json` freezes the four-node topology, participant route
+  aspect, native numeric base, seeds, feedback masks, and four opportunity
+  profiles;
+- `p2_i1_cells.json` freezes the seven interventions, fixed cell order,
+  retry allocation, W0-W4 windows, and branch isolation;
+- `p2_i1_analysis_policy.json` owns three separately digested projections for
+  aggregation, rung inputs, and terminal inputs; it fixes candidate versus
+  reference as the primary normalized margin while candidate versus medium
+  absence remains the separate dependency/selectivity comparison;
+- `p2_i1_calibration_policy.json` freezes five identical matched-null panels
+  and explicitly excludes PyGRC and candidate inputs; and
+- `p2_i1_runtime_policy.json` freezes required public PyGRC capabilities and
+  the no-fallback preflight boundary while leaving candidate execution
+  unauthorized.
+
+These files are preregistration inputs, not candidate results. Validate them
+from the repository root with:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py validate-configs
+```

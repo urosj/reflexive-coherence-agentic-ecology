@@ -63,6 +63,7 @@ reconstruction requirements.
 | `P2-I1-DEC-016` | How do content, source lineage, and causal order make the medium historical rather than a row-presence gate? | Accepted: neutral-content reference, source-digest mismatch, and strict order verification | Resolves `L01-Q09`; remains configured-history evidence | 2026-07-11 |
 | `P2-I1-DEC-017` | What support carries formation, and how should the parent-context cell test it without inventing a parent basin? | Accepted: score-preserving reduced-support contrast | Resolves `L01-Q10`; supplies no parent-basin evidence | 2026-07-11 |
 | `P2-I1-DEC-018` | Which single carrier/timescale axis should the final contrast vary? | Accepted: double later reader-packet amount | Resolves `L01-Q21`; bounded carrier-load contrast only | 2026-07-11 |
+| `P2-I1-DEC-019` | Which comparator owns the primary normalized margin, and which comparisons remain causal controls? | Accepted: reference is primary; row absence owns medium dependency and selectivity | Resolves `L01-Q22`; completes normalized-margin specialization | 2026-07-11 |
 
 ## 3. `P2-I1-DEC-001` — Realization family
 
@@ -868,6 +869,12 @@ The threshold is not a terminal accept/reject rule:
 A positive mean with a counter-direction pair is `mixed`, not weak support.
 Magnitude cannot compensate for failed exposure matching, baseline viability,
 medium dependence, or direct-address controls.
+
+If both pair interactions are exactly zero, the result is
+`generic_main_effect_or_no_effect`, not `weak_directionally_resolved`: the weak
+branch requires at least one strictly positive pair interaction. Whether the
+zero relation accompanies generic formation or no formation is read from the
+retained raw opportunity coverage.
 
 ### 9.7 Susceptibility-inversion control
 
@@ -2273,20 +2280,88 @@ Reopen `P2-I1-DEC-018` if:
 - a carrier-load contrast proves irrelevant to L01 while one available
   timescale contrast has a clearer bounded discriminator.
 
-## 22. Current decision boundary and next work
+## 22. `P2-I1-DEC-019` — Primary comparator and causal comparison roles
+
+**Status:** accepted; implementation frozen in the analysis policy
+
+**Question IDs:** resolves `L01-Q22`
+
+### 22.1 Decision question
+
+Which cell is the comparator in the primary normalized margin, and how should
+that metric remain distinct from the row-presence and selectivity controls?
+
+### 22.2 Options considered
+
+| Primary comparator | What it isolates | Main problem | Disposition |
+| --- | --- | --- | --- |
+| `reference` | Writer-relative feedback content beyond the neutral-content row | Does not alone prove that the row is load-bearing | **Accepted as primary metric comparator** |
+| `medium-freeze-withdrawal` | Presence of the accepted feedback row beyond matched participant/node state | Conflates primary content effect with medium-presence control | Retained as causal-control comparator |
+| Composite of reference and withdrawal | Jointly rewards content and row dependence | Hides which causal relation carries the margin and creates an invented scale | Rejected |
+
+### 22.3 Accepted comparison roles
+
+```text
+primary normalized margin:
+  candidate-conditioning vs reference
+  meaning = writer-relative history-content effect
+
+medium-dependency control diagnostic:
+  candidate-conditioning vs medium-freeze-withdrawal
+  meaning = feedback-row presence is load-bearing
+
+selectivity interaction:
+  candidate-conditioning vs medium-freeze-withdrawal
+  meaning = the medium effect differs by frozen polarity susceptibility
+```
+
+Only the first comparison instantiates the primary calibrated normalized
+margin. The medium-dependency diagnostic preserves raw fractions and paired
+differences but does not become a second primary metric or consume calibrated
+`delta`. Selectivity remains the separately resolved two-context interaction
+from `P2-I1-DEC-007` and likewise does not consume `delta`.
+
+### 22.4 Joint interpretation
+
+A primary aligned margin without row dependence remains insufficient: it may
+reflect generic content, participant state, or another bypass. Row dependence
+without a primary content effect shows that a feedback row matters but does
+not establish writer-relative historical content. Both relations and the
+separate selectivity result remain visible to rung and terminal interpretation;
+they are never collapsed into one score.
+
+This decision assigns metric roles, not accept/reject verdicts. Raw coverage,
+threshold proximity, lineage, controls, support, and unexpected properties
+still govern the developmental reading of the specific result.
+
+### 22.5 Reopening conditions
+
+Reopen `P2-I1-DEC-019` if:
+
+- the neutral-content reference fails to isolate the registered writer
+  contribution;
+- candidate and reference cannot preserve their declared non-content fields;
+- row absence proves to be the only scientifically meaningful comparator and
+  the L01 question must be redescribed around medium presence;
+- calibration and live analysis cannot use the same primary comparison; or
+- a later cycle replaces the accepted medium definition or primary response.
+
+## 23. Current decision boundary and next work
 
 All decision-level semantics currently required to implement CAL-PRE are
 resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
 interpretation, and `L01-Q14` remains reserved for R3 after concrete execution.
 
-The next work is implementation, not another semantic choice:
+The decision-derived configs, pure analysis module, thin CLI, tests, and
+fail-closed runtime preflight are materialized in the current implementation
+work. The next work is freeze and review, not another semantic choice:
 
-1. materialize fixture, cell, control, analysis-policy, and reconstruction
-   configs from decisions 001–018;
-2. implement the pure analysis module and thin CLI;
-3. implement the separate PyGRC runtime harness and fail-closed receipts;
-4. generate and verify static identities, hashes, digests, expected manifests,
-   and matched-null provenance; and
+1. validate the complete implementation and reproduce the candidate-blind
+   matched-null expectation;
+2. obtain owner review and commit approval for the implementation;
+3. generate the retained source/config/policy identities from that final
+   commit;
+4. compare independent reconstruction digests; and
 5. seek independent `P2-I1-CAL-PRE-GATE` review before calibration.
 
 None of those steps opens candidate evidence until the registered execution

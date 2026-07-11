@@ -1,0 +1,33 @@
+{
+  "evidence_effect": "none_preregistered_comparison_matrix_only",
+  "schema_version": "1.0.0",
+  "lane_id": "AE01-L01",
+  "cycle_id": "P2-I1-C00",
+  "execution_class": "pygrc_runtime_with_rcae_producer",
+  "cell_order_policy": "fixed_as_listed_with_order_effect_debt",
+  "attempt_policy": {
+    "attempts_per_seed": 1,
+    "infrastructure_retries_per_cell": 1,
+    "retry_seed_selection": "lowest_seed_with_first_infrastructure_failure",
+    "scientific_refinement_by_retry": false
+  },
+  "cells": [
+    {"cell_id": "reference", "group": "reference", "intervention": {"kind": "feedback_reference_delta", "reference_delta": 0.25}},
+    {"cell_id": "candidate-conditioning", "group": "candidate", "intervention": {"kind": "accepted_writer_relative_feedback_history", "reference_delta": 0.0}},
+    {"cell_id": "medium-freeze-withdrawal", "group": "withdrawal", "intervention": {"kind": "medium_freeze", "emit_feedback_row": false, "scaffold_withdrawal": false}},
+    {"cell_id": "trace-shuffle", "group": "lineage_or_source", "intervention": {"kind": "expected_source_digest_substitution", "expected_source": "writer_departure_contact", "feedback_source": "writer_arrival_contact"}},
+    {"cell_id": "parent-context-contrast", "group": "active_null", "intervention": {"kind": "absolute_environmental_support_scale", "support_offset": -0.25, "P_transform": "P_seed", "W_transform": "W_seed + 2 * support_offset", "A_transform": "0.5 + support_offset", "B_transform": "0.5 + support_offset", "parent_context": "absent_not_represented"}},
+    {"cell_id": "susceptibility-inversion", "group": "budget_or_leakage", "intervention": {"kind": "swap_expected_polarity_between_stable_reader_slots", "profile_polarity_overrides": {"ctx-a-aligned": "negative", "ctx-a-inverted": "positive", "ctx-b-aligned": "negative", "ctx-b-inverted": "positive"}}},
+    {"cell_id": "carrier-timescale-contrast", "group": "transfer_or_contrast", "intervention": {"kind": "reader_packet_amount", "reader_packet_amount": 0.25}}
+  ],
+  "windows": [
+    {"window_id": "W0", "role": "baseline", "queue_requirement": "empty", "focal_surface_row_count": 0},
+    {"window_id": "W1", "role": "writer", "writer_packets": 1, "committed_packet_events": 2, "queue_exit_requirement": "empty"},
+    {"window_id": "W2", "role": "medium_materialization", "pulse_contact_rows_selected": 1, "feedback_rows_emitted": "cell_intervention", "branch_point_created": true},
+    {"window_id": "W3", "role": "later_opportunity", "branch_restore": true, "producer_evaluations": 1},
+    {"window_id": "W4", "role": "response", "maximum_committed_packet_events": 2, "queue_exit_requirement": "empty"}
+  ],
+  "opportunities_per_seed": 4,
+  "opportunity_relation": "independent_counterfactual_branches",
+  "cross_branch_state_carryover": false
+}

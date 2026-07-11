@@ -194,6 +194,7 @@ valid outcomes.
 | `L01-Q13` | Is the result reusable or generative beyond the fixture? | Classification-value reading and R3 | Open | — |
 | `L01-Q14` | Are first-class registration or control-outcome records necessary? | R3 | Open | — |
 | `L01-Q21` | Which one carrier or timescale axis does `carrier-timescale-contrast` vary, and what can it establish? | Calibration preregistration | Decided | `P2-I1-DEC-018`: double reader-packet amount from `.125` to `.25`; bounded carrier-load invariance only |
+| `L01-Q22` | Which comparator owns the primary normalized margin, and which comparisons remain causal controls? | Calibration preregistration | Decided | `P2-I1-DEC-019`: candidate versus neutral-content reference is primary; candidate versus row absence controls medium dependency and selectivity |
 
 An open question blocks only the gate named by its decision point. It is not a
 defect merely because the answer is unknown earlier.
@@ -301,8 +302,12 @@ transition occurred.
   from one registered cell/seed branch point. Evidence:
   [`P2-I1-DEC-006`](P2-I1-decision-record.md).
 - [x] Freeze aggregation from opportunity records to the seed-level formation
-  fraction; normalized paired-margin specialization remains open. Evidence:
-  [`P2-I1-DEC-005`](P2-I1-decision-record.md).
+  fraction and specialize the primary normalized margin as
+  `candidate-conditioning` versus `reference`. Preserve
+  `candidate-conditioning` versus `medium-freeze-withdrawal` as the separate
+  medium-dependency and selectivity comparison. Evidence:
+  [`P2-I1-DEC-005`](P2-I1-decision-record.md),
+  [`P2-I1-DEC-019`](P2-I1-decision-record.md).
 - [x] Freeze treatment of missing, censored, and structurally unavailable
   opportunities without silently removing them from the denominator.
   Evidence: [`P2-I1-DEC-005`](P2-I1-decision-record.md).
@@ -375,6 +380,52 @@ Exit gate `P2-I1-CAL-PRE-GATE`:
 - [ ] Independent review accepts the calibration preregistration.
 - [ ] Its frozen fields must import unchanged into lane registration; any
   change restarts calibration in a new probe cycle.
+
+CAL-PRE implementation progress — 2026-07-11:
+
+- [x] Materialize the decision-derived fixture, seven cells, W0-W4 windows,
+  seed transforms, four profiles, calibration panels, analysis projections,
+  and runtime boundary as portable configuration surfaces. Evidence:
+  [P2-I1 configs](../configs/README.md#p2-i1-configuration-surfaces).
+- [x] Implement one pure opportunity-analysis path for scientific versus
+  operational missingness, fixed-denominator seed aggregation, raw paired
+  coverage, normalized margins, selectivity interactions, and
+  serialization-ready rung/terminal inputs. Evidence:
+  [`p2_i1_analysis.py`](../scripts/p2_i1_analysis.py).
+- [x] Implement deterministic static opportunity-profile and reader-identity
+  digests, with four distinct profile identities and exactly two reader
+  configurations. Evidence: [`p2_i1.py`](../scripts/p2_i1.py) config
+  validation and identity builder.
+- [x] Implement a thin CLI for config validation, CAL-PRE identity generation,
+  matched-null generation, and later raw-record analysis.
+  Evidence: [P2-I1 commands](../scripts/README.md#p2-i1-entry-point).
+- [x] Implement a fail-closed PyGRC preflight boundary with a schema-validated
+  local realization profile, runtime-binding receipt, graph-tree read-only
+  guard, no recorded local path, and no fallback. Evidence:
+  [`p2_i1_runtime.py`](../scripts/p2_i1_runtime.py).
+- [x] Keep candidate execution mechanically unauthorized in the shared runtime
+  policy and runtime scaffold.
+  Evidence: [`p2_i1_runtime_policy.json`](../configs/p2_i1_runtime_policy.json).
+- [x] Verify the baseline fixture against a local non-editable `pygrc==0.1`
+  installation: native route-aspect validation and snapshot construction pass,
+  the baseline queue and surface log are empty, and the graph repository
+  remains unchanged. Evidence: ignored local preflight output reconstructed by
+  the [runtime-preflight command](../scripts/README.md#runtime-preflight). This
+  is infrastructure evidence only.
+- [x] Add deterministic tests for policy, aggregation, missingness, coverage,
+  null generation, selectivity, profile identities, portable identity, and
+  runtime binding boundaries. Evidence:
+  [`test_p2_i1.py`](tests/test_p2_i1.py).
+- [ ] Generate the retained CAL-PRE identity from the final implementation
+  commit, compare reconstruction digests, and obtain independent review.
+
+Implementation interpretation: this slice freezes the executable measurement
+and infrastructure boundary without opening a candidate observation. The
+matched-null result remains a preregistered expectation until CAL-PRE review
+accepts the final source identity and `P2-I1-CAL-GATE` authorizes retained
+calibration. Runtime preflight is deliberately narrower than execution: it can
+show that the declared fixture constructs against the exact local PyGRC, but
+cannot support or refute L01.
 
 ## 7. Calibration gate
 

@@ -1,0 +1,16 @@
+{
+  "evidence_effect": "none_runtime_boundary_only",
+  "schema_version": "1.0.0",
+  "runtime_policy_id": "rcae-p2-i1-runtime-policy-v1",
+  "execution_class": "pygrc_runtime_with_rcae_producer",
+  "required_pygrc_identity": "pygrc==0.1",
+  "required_public_capabilities": ["pygrc.core", "pygrc.models"],
+  "preflight_operation_id": "p2_i1_runtime_preflight",
+  "required_operations": ["fixture_construction", "route_aspect_validation", "snapshot_round_trip", "packet_queue_step", "feedback_surface_emission", "feedback_conditioned_packet_production"],
+  "local_realization_profile_required": true,
+  "machine_local_runtime_path_recorded": false,
+  "fallback_execution_class": null,
+  "graph_repository_write_allowed": false,
+  "candidate_execution_authorized": false,
+  "authorization_boundary": "P2-I1-REG-GATE and P2-I1-EXEC-GATE must pass before candidate execution"
+}

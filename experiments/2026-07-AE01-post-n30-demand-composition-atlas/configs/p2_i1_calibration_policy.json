@@ -1,0 +1,20 @@
+{
+  "evidence_effect": "resolution_only_no_candidate_evidence",
+  "schema_version": "1.0.0",
+  "calibration_id": "rcae-p2-i1-candidate-blind-matched-null-v1",
+  "candidate_blind": true,
+  "runtime_execution": false,
+  "pygrc_imported": false,
+  "measurement_resolution": 1e-12,
+  "candidate_seeds_excluded": [101, 211, 307],
+  "panels": [
+    {"seed": 19, "null_a": [0, 0, 0, 0], "null_b": [0, 0, 0, 0]},
+    {"seed": 43, "null_a": [1, 0, 0, 0], "null_b": [1, 0, 0, 0]},
+    {"seed": 71, "null_a": [1, 1, 0, 0], "null_b": [1, 1, 0, 0]},
+    {"seed": 109, "null_a": [1, 1, 1, 0], "null_b": [1, 1, 1, 0]},
+    {"seed": 163, "null_a": [1, 1, 1, 1], "null_b": [1, 1, 1, 1]}
+  ],
+  "forbidden_inputs": ["candidate_artifacts", "candidate_outcomes", "pygrc_runtime_inputs", "post_outcome_tuning"],
+  "expected_matched_null_margins": [0.0, 0.0, 0.0, 0.0, 0.0],
+  "expected_delta": 1e-12
+}
