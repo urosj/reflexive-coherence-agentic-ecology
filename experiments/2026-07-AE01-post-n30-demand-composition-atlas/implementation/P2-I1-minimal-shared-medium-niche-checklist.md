@@ -6,10 +6,9 @@
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C00` — theory review and calibration
-preregistration
+**Current probe cycle:** `P2-I1-C00` — candidate-blind calibration
 
-**Current local gate:** `P2-I1-CAL-PRE-GATE`
+**Current local gate:** `P2-I1-CAL-GATE`
 
 **Acceptance ceiling:** `AE01-C2`; no lane result assigned
 
@@ -73,7 +72,7 @@ Rules:
 | Gate | Meaning | Status | Exit evidence |
 | --- | --- | --- | --- |
 | `P2-I1-THEORY-GATE` | L01 meaning, distinctions, open questions, and decision timing accepted | Passed | Accepted brief and owner review disposition dated 2026-07-10 |
-| `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Pending | Reviewed calibration preregistration with candidate outcomes absent |
+| `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Passed | Reviewed calibration preregistration with candidate outcomes absent |
 | `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Pending | Calibration input lineage, calibration record, frozen metric sheet |
 | `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Pending | Reviewed bundle tying every registered surface together |
 | `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Pending | Cell artifacts, receipts, control outcomes, reconstruction |
@@ -244,8 +243,11 @@ Entry condition:
   [`p2_i1_calibration_policy.json`](../configs/p2_i1_calibration_policy.json),
   and the clean-commit identity builder in
   [`p2_i1.py`](../scripts/p2_i1.py).
-- [ ] Retain the final fixture and calibration-realization digests from the
-  clean follow-up implementation commit.
+- [x] Retain the final fixture and calibration-realization digests from the
+  clean follow-up implementation commit. Evidence:
+  [CAL-PRE identity](../contracts/p2-i1/cal-pre-identity.json) and
+  [freeze record](../contracts/p2-i1/cal-pre-freeze.json), anchored to
+  `134b66cf6adf50e9f1e773454be25bbea53938d2`.
 - [x] Freeze baseline, writer, medium-materialization, later-opportunity, and
   response windows as bounded native causal-event stages. Evidence:
   [`P2-I1-DEC-009`](P2-I1-decision-record.md). Numeric event-time policy is
@@ -362,9 +364,11 @@ transition occurred.
 - [x] Freeze the thin-CLI, pure-analysis-module, and one-policy responsibility
   boundary plus portable paths. Evidence:
   [`P2-I1-DEC-014`](P2-I1-decision-record.md).
-- [ ] Freeze portable `analysis_script_path` and `analysis_script_sha256`.
-- [ ] Freeze `aggregation_policy_digest`, `rung_classifier_digest`, and
+- [x] Freeze portable `analysis_script_path` and `analysis_script_sha256`.
+  Evidence: [CAL-PRE identity](../contracts/p2-i1/cal-pre-identity.json).
+- [x] Freeze `aggregation_policy_digest`, `rung_classifier_digest`, and
   `terminal_classifier_digest` before calibration or candidate outcomes.
+  Evidence: [CAL-PRE identity](../contracts/p2-i1/cal-pre-identity.json).
 - [x] Verify the analysis identity converts opportunity records into seed
   aggregates, frozen-role margins, selectivity results, rung inputs, and
   terminal inputs without authored recomputation. Evidence: analysis and
@@ -381,9 +385,11 @@ transition occurred.
 - [x] Freeze portable calibration command, environment, dependency, resource,
   source/input identity, and expected-artifact policies. Evidence:
   [`p2_i1_cal_pre_provenance.json`](../configs/p2_i1_cal_pre_provenance.json).
-- [ ] Materialize the final clean source revision, source hashes, configuration
+- [x] Materialize the final clean source revision, source hashes, configuration
   and projection digests, and reconstruction identity after the follow-up
-  implementation commit.
+  implementation commit. Evidence:
+  [CAL-PRE identity](../contracts/p2-i1/cal-pre-identity.json) and
+  [freeze record](../contracts/p2-i1/cal-pre-freeze.json).
 - [x] Freeze calibration seeds `19`, `43`, `71`, `109`, and `163`. Evidence:
   [`P2-I1-DEC-013`](P2-I1-decision-record.md).
 - [x] Verify calibration seeds are disjoint from candidate seeds `101`, `211`,
@@ -395,13 +401,17 @@ transition occurred.
 
 Exit gate `P2-I1-CAL-PRE-GATE`:
 
-- [ ] Response, orientation, unit, opportunity, normalization, window, null,
+- [x] Response, orientation, unit, opportunity, normalization, window, null,
   calibration-realization, selectivity-policy, and analysis identities are
-  complete and internally consistent.
-- [ ] Candidate outcomes were absent at freeze.
-- [ ] Independent review accepts the calibration preregistration.
-- [ ] Its frozen fields must import unchanged into lane registration; any
-  change restarts calibration in a new probe cycle.
+  complete and internally consistent. Evidence: retained CAL-PRE records,
+  passing config validation, and the P2-I1 test suite.
+- [x] Candidate outcomes were absent at freeze. Evidence: candidate-absence
+  projection in [CAL-PRE freeze](../contracts/p2-i1/cal-pre-freeze.json).
+- [x] Independent review accepts the calibration preregistration. Evidence:
+  [P2-I1 CAL-PRE review](../reports/P2-I1-CAL-PRE-review.md).
+- [x] Freeze the requirement that these fields import unchanged into lane
+  registration; any change restarts calibration in a new probe cycle.
+  Evidence: retained measurement and calibration-realization identities.
 
 CAL-PRE implementation progress — 2026-07-11:
 
@@ -438,22 +448,71 @@ CAL-PRE implementation progress — 2026-07-11:
   null generation, selectivity, profile identities, portable identity, and
   runtime binding boundaries. Evidence:
   [`test_p2_i1.py`](tests/test_p2_i1.py).
-- [ ] Generate the retained CAL-PRE identity from the final implementation
-  commit, compare reconstruction digests, and obtain independent review.
+- [x] Generate the retained CAL-PRE identity from the final implementation
+  commit and record its canonical, semantic-file, and exact-file digests.
+- [x] Obtain independent CAL-PRE review. Review record:
+  [P2-I1 CAL-PRE review](../reports/P2-I1-CAL-PRE-review.md).
 
-Implementation interpretation: this slice freezes the executable measurement
-and infrastructure boundary without opening a candidate observation. The
-matched-null result remains a preregistered expectation until CAL-PRE review
-accepts the final source identity and `P2-I1-CAL-GATE` authorizes retained
-calibration. Runtime preflight is deliberately narrower than execution: it can
-show that the declared fixture constructs against the exact local PyGRC, but
-cannot support or refute L01.
+CAL-PRE gate disposition — 2026-07-11:
+
+> The retained CAL-PRE identity correctly anchors the reviewed implementation,
+> its declared digests and candidate-absence boundaries are consistent, and
+> runtime-dependent evidence remains deferred.
+
+Disposition: `P2-I1-CAL-PRE-GATE=passed`. This opens candidate-blind
+calibration only. Candidate execution, registration, L01 rungs, and ecology
+claims remain closed.
+
+CAL-PRE implementation details and interpretation — 2026-07-11:
+
+- Scientific structure is declarative and digest-bound across six separate
+  surfaces: fixture, cells, analysis, calibration, provenance, and runtime.
+  This keeps scientific policy reviewable without importing machine-local
+  runtime location or state.
+- The seven-cell matrix has closed roles. The primary normalized margin is
+  `candidate-conditioning` versus `reference`; medium dependency and
+  selectivity separately compare `candidate-conditioning` with
+  `medium-freeze-withdrawal`. Callers cannot substitute other comparison roles
+  during analysis.
+- Each cell/seed run defines one branch point and four independently restored
+  later opportunities. Static opportunity-profile identities are frozen now;
+  live registration must add resolved contact, history, and restoration
+  identities while proving exact cross-cell matching and no branch carryover.
+- One pure analysis path validates opportunity records, preserves scientific
+  versus operational missingness, aggregates over the fixed planned
+  denominator, retains raw paired coverage, and emits serialization-ready
+  margin, selectivity, rung, and terminal inputs. The thin CLI does not carry a
+  second scientific policy.
+- Matched-null generation is deterministic and candidate-blind: its five
+  seeds are disjoint from the three candidate seeds, and it accepts neither
+  candidate artifacts nor PyGRC runtime inputs. The implementation-time null
+  output tested the generator only; it was not retained as calibration
+  evidence.
+- Runtime binding fails closed against an explicitly selected, machine-local
+  PyGRC realization profile. There is no fallback or silent transition from an
+  RCAE-owned producer to later native functionality, and candidate execution
+  remains mechanically disabled.
+- The clean source anchor and later retention commit avoid circular identity.
+  Canonical-payload, semantic-file, and exact-file digests distinguish three
+  kinds of drift. Independent clean-worktree reconstruction reproduced all
+  three and passed the 25 P2-I1 plus 32 Phase 1 tests.
+
+Interpretation: CAL-PRE freezes how P2-I1 asks and measures the niche question;
+it does not observe an answer. Calibration still must retain the candidate-
+blind null lineage and freeze the resolution sheet before registration. The
+eventual `delta` is a resolution/proximity guide for interpreting the specific
+result, not a substitute for examining narrow success, near misses, structural
+quality, or alternative realizations. Selectivity remains a separate causal
+question. Runtime preflight is narrower still: it shows only that the declared
+fixture constructs against the selected local PyGRC and cannot support or
+refute L01.
 
 ## 7. Calibration gate
 
 Entry condition:
 
-- [ ] `P2-I1-CAL-PRE-GATE` passed.
+- [x] `P2-I1-CAL-PRE-GATE` passed. Evidence:
+  [P2-I1 CAL-PRE review](../reports/P2-I1-CAL-PRE-review.md).
 
 Required calibration work:
 
@@ -484,7 +543,8 @@ Exit gate `P2-I1-CAL-GATE`:
 Entry conditions:
 
 - [x] `P2-I1-THEORY-GATE` passed.
-- [ ] `P2-I1-CAL-PRE-GATE` passed.
+- [x] `P2-I1-CAL-PRE-GATE` passed. Evidence:
+  [P2-I1 CAL-PRE review](../reports/P2-I1-CAL-PRE-review.md).
 - [ ] `P2-I1-CAL-GATE` passed.
 
 ### 8.1 Operational identities

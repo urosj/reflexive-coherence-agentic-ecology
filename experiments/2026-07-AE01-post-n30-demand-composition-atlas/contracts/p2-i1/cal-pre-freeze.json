@@ -1,0 +1,91 @@
+{
+  "artifact_kind": "p2_i1_cal_pre_freeze",
+  "schema_version": "1.0.0",
+  "freeze_id": "rcae-p2-i1-cal-pre-freeze-v1",
+  "evidence_effect": "none_preregistration_freeze_only",
+  "source_revision": "134b66cf6adf50e9f1e773454be25bbea53938d2",
+  "identity_artifact": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/cal-pre-identity.json",
+    "canonical_payload_digest": "ababf1196b664e174cf182238432a6a4fbaf6a4d925c7780dc48dc1956f1655e",
+    "semantic_file_digest": "1eece72127dbac9d4d6999962baf4776f01e3f1f4ce1f38bd654032461ec86fc",
+    "file_sha256": "7f87b018b397d515329d6b559d268ae54e3d6cef6b5a3cf27aaf77214ca4ffaf",
+    "retention_eligible": true,
+    "source_tree_clean_at_generation": true
+  },
+  "frozen_identities": {
+    "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+    "calibration_config_digest": "a0e5eeed61368d04d3db97bf15a571a33a0b7ba4e84860d5ca66149d1759fbf8",
+    "calibration_realization_digest": "9b59988a0f5211cb32aaf531748f8a9b235540729d40544373e6ba3a04b769b8",
+    "analysis_script_sha256": "962beedfe12d1cd0c9f87e608fff52aa6a938b6015d4223894843cfb600e6c40",
+    "analysis_policy_digest": "9701e9f80742f65d34e04591c16d01a125aaf8527e4c5ad1b21c653c0f3b58e6",
+    "aggregation_policy_digest": "56fac67543ec9f8d1e0e8f3f7e85ba5d3ecb78daa312a67e3415d4174a3d92cb",
+    "rung_classifier_digest": "f540f6a53a6a8cecd8a4885131eedc226f34a105cb118acc6296c1ed89af4f10",
+    "terminal_classifier_digest": "b871b6da601eb8082ddc3d159c5ee10bffeff7b98fc05b649323929824342fb1",
+    "provenance_profile_digest": "c9a2edfb7d602bb76c59d5fcddad4fdb639db03536ad41b33a62306de0df4c6a",
+    "measurement_identity_digest": "eff89329d93d2addd05c27e72706da59c6f96c7ad813dceb90452a37bc46fd70"
+  },
+  "candidate_absence": {
+    "candidate_outcomes_absent": true,
+    "candidate_execution_authorized": false,
+    "candidate_artifact_inputs_allowed": false,
+    "candidate_seeds_allowed_in_calibration": false,
+    "pygrc_runtime_inputs_allowed_in_calibration": false,
+    "post_outcome_tuning_allowed": false,
+    "basis": [
+      "the identity generator accepts only committed configuration and source surfaces",
+      "the calibration policy contains only seeds 19, 43, 71, 109, and 163",
+      "the provenance policy prohibits candidate artifacts, candidate seeds, PyGRC runtime inputs, and post-outcome tuning",
+      "the source runtime policy keeps candidate_execution_authorized=false"
+    ]
+  },
+  "calibration_boundary": {
+    "matched_null_generated_for_implementation_verification": true,
+    "matched_null_retained_as_calibration_evidence": false,
+    "metric_calibration_record_created": false,
+    "metric_sheet_frozen": false,
+    "calibration_work_authorized": true,
+    "cal_gate_passed": false
+  },
+  "deferred_runtime_values": [
+    "resolved opportunity-profile digests",
+    "native event and surface identities",
+    "actual relation-chain records",
+    "cross-branch contamination audit outcomes"
+  ],
+  "reconstruction": {
+    "working_directory": ".",
+    "source_checkout_instruction": "Use a clean checkout of source_revision, create the documented local environment, and run the frozen identity command",
+    "identity_command": [
+      ".venv/bin/python",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py",
+      "build-cal-pre-identity",
+      "--output",
+      "outputs/p2-i1-cal-pre-identity.json"
+    ],
+    "verification_command": [
+      ".venv/bin/python",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+      "digest",
+      "--input",
+      "outputs/p2-i1-cal-pre-identity.json"
+    ],
+    "verification_status": "passed",
+    "exact_file_comparison": "identical",
+    "observed_canonical_payload_digest": "ababf1196b664e174cf182238432a6a4fbaf6a4d925c7780dc48dc1956f1655e",
+    "observed_semantic_file_digest": "1eece72127dbac9d4d6999962baf4776f01e3f1f4ce1f38bd654032461ec86fc",
+    "observed_file_sha256": "7f87b018b397d515329d6b559d268ae54e3d6cef6b5a3cf27aaf77214ca4ffaf",
+    "phase1_validation": "passed",
+    "p2_i1_config_validation": "passed",
+    "unit_test_count": 57,
+    "unit_tests": "passed"
+  },
+  "review_record": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-CAL-PRE-review.md",
+  "gate_status": "passed",
+  "unsafe_flags": {
+    "candidate_execution_performed": false,
+    "candidate_outcome_observed": false,
+    "calibration_evidence_promoted": false,
+    "positive_lane_evidence_opened": false,
+    "native_niche_claim_opened": false
+  }
+}
