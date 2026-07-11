@@ -75,3 +75,25 @@ from the repository root with:
 ```bash
 .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py validate-configs
 ```
+
+## P2-I1 C01 execution surface
+
+`p2_i1_c01_execution_policy.json` is the candidate-free executable projection
+of the passed registration bundle. It does not alter the seven cells, three
+seeds, one-attempt policy, retry allocation, measurement, or claim boundary.
+It adds only what EXEC-FREEZE needs:
+
+- exact W0-W4 native operation sequences;
+- a C01-specific callable superset for writer scheduling, producer invocation,
+  branch persistence, and state audit;
+- one exact realization for every comparison cell;
+- twelve live obligations mapped to required machine fields and failure
+  effects;
+- 21 primary run paths, conditional retry paths, cycle audit, retry ledger,
+  and execution-manifest roles; and
+- the requirement that every candidate path is absent when the retained freeze
+  is generated.
+
+The shared runtime policy continues to deny blanket execution. Only a clean,
+retained, tracked `p2_i1_c01_exec_freeze` may authorize the exact C01
+cell/seed/attempt scope.

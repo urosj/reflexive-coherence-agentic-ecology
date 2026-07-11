@@ -265,3 +265,65 @@ Missing dependencies, an incompatible identity, a disabled local profile, or
 an undeclared operation produces a failed binding receipt and no fallback.
 The preflight builds and snapshots the baseline fixture only. It does not emit
 a writer packet, medium row, opportunity, candidate result, or lane evidence.
+
+### C01 execution and live-obligation audit
+
+`p2_i1_execution.py` validates the exact C01 policy and keeps candidate
+execution disabled during source review:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py validate-policy
+```
+
+After the implementation source is committed, bind the exact C01-only call
+superset without scheduling a writer, medium, or reader operation:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-execution-binding --graph-root LOCAL_GRAPH_CHECKOUT --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/execution-binding-receipt.json
+```
+
+Then build the candidate-free cycle authorization at its declared path:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-exec-freeze --execution-binding-receipt experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/execution-binding-receipt.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json
+```
+
+Dirty source may produce only a non-retainable preview with
+`--allow-dirty-preview`. A preview records
+`candidate_execution_authorized=false` and cannot pass the runtime guard. The
+retained freeze must then be committed: `run-one` and `run-cycle` require its
+bytes to match the current tracked `HEAD` record.
+
+Once EXEC-FREEZE passes, execute all 21 primaries in fresh worker processes.
+The graph checkout remains a local-only argument:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py run-cycle --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json --graph-root LOCAL_GRAPH_CHECKOUT --summary-output outputs/p2-i1-c01-run-summary.json
+```
+
+The orchestrator retains operational failures in the retry ledger and derives
+at most one retry per cell for the lowest failed seed. A retry keeps the same
+scientific configuration digest and cannot be allocated from candidate
+outcomes.
+
+After execution, derive the cross-run structural audit:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-cycle-audit --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/cycle-audit.json
+```
+
+The audit resolves initialization, isolation, restoration, medium
+reconstruction, exposure, support/budget, producer parity, trace-shuffle, and
+runtime-receipt structure. It preserves observed responses but assigns no
+threshold verdict, boundary rung, or terminal class.
+
+Index the effective runs, retry ledger, and completed cycle audit only after
+those files validate:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-execution-manifest --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/execution-manifest.json
+```
+
+The execution manifest is a retention index. It cannot assign a boundary rung
+or terminal classification, and it preserves each run's independent
+reconstruction status.

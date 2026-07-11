@@ -1146,37 +1146,49 @@ Cell-specific freeze requirements:
 - [x] Freeze the logical `reference`, `medium-freeze-withdrawal`, and
   `trace-shuffle` interventions plus causal-order guard. Evidence:
   [`P2-I1-DEC-015`](P2-I1-decision-record.md) and
-  [`P2-I1-DEC-016`](P2-I1-decision-record.md). Concrete configurations,
-  digests, and expected artifacts remain implementation work.
+  [`P2-I1-DEC-016`](P2-I1-decision-record.md). Concrete C01 operations and
+  artifact fields are materialized; retained EXEC-FREEZE identities remain
+  pending.
 - [x] Freeze `parent-context-contrast` as the single-axis, score-preserving
   reduced-support transform in
   [`P2-I1-DEC-017`](P2-I1-decision-record.md), with no parent-basin claim.
+  The C01 support/budget auditor treats it as one declared exception.
 
-- [ ] `medium-freeze-withdrawal` declares exactly one `intervention_kind` per
+- [x] `medium-freeze-withdrawal` declares exactly one `intervention_kind` per
   probe cycle: `medium_freeze` or `scaffold_withdrawal`, plus whether
   participant opportunity, baseline support, and parent context are preserved.
-- [ ] `intervention_kind=both` is prohibited: it would create two undeclared
+  The primary C01 realization is `medium_freeze`, preserves native producer
+  invocation and participant opportunity, and sets scaffold withdrawal false.
+  Evidence: [C01 execution policy](../configs/p2_i1_c01_execution_policy.json).
+- [x] `intervention_kind=both` is prohibited: it would create two undeclared
   configurations inside one frozen comparison cell and obscure seed, attempt,
-  retry, and artifact accounting.
-- [ ] If both interventions are scientifically mandatory, preregister a later
+  retry, and artifact accounting. Evidence:
+  [C01 policy validator](../scripts/p2_i1_execution.py).
+- [x] If both interventions are scientifically mandatory, preregister a later
   probe cycle with the other realization of the same logical cell, preserve
   both cycle results, and do not close a claim that requires the unresolved
-  control.
+  control. This remains a change-control rule, not an authorized C01 variant.
 - [x] Record constructed-scaffold withdrawal as not applicable to the primary
   cycle because no constructed scaffold carries the accepted native medium or
   later response; preserve producer/construction guards and reopen before
   execution if implementation contradicts this account. Evidence:
   [`P2-I1-DEC-025`](P2-I1-decision-record.md).
-- [ ] `trace-shuffle` freezes preserved quantity, cost, write count, timing
+- [x] `trace-shuffle` freezes preserved quantity, cost, write count, timing
   distribution, carrier size/spatial support, parent/support context, and
-  coherence/resource input where applicable.
-- [ ] `trace-shuffle` freezes only the source, lineage, ordering, or geometry
+  coherence/resource input where applicable. Evidence:
+  [C01 execution policy](../configs/p2_i1_c01_execution_policy.json) and
+  [cycle auditor](../scripts/p2_i1_execution.py).
+- [x] `trace-shuffle` freezes only the source, lineage, ordering, or geometry
   relation to break, plus pre/post digests and quantity-match tolerance.
+  C01 changes only the producer's expected source from the writer-arrival
+  contact digest to the writer-departure contact digest while retaining the
+  arrival-derived row. Evidence:
+  [C01 execution policy](../configs/p2_i1_c01_execution_policy.json).
 - [x] Freeze `carrier-timescale-contrast` as exactly one axis—reader-packet
   amount `0.125` → `0.250`—with all other fields matched and no broad
   transfer/timescale claim. Evidence:
-  [`P2-I1-DEC-018`](P2-I1-decision-record.md). Concrete config, digests, and
-  expected artifacts remain implementation work.
+  [`P2-I1-DEC-018`](P2-I1-decision-record.md) and
+  [C01 execution policy](../configs/p2_i1_c01_execution_policy.json).
 
 No additional cell may be introduced inside a frozen cycle. Evidence may
 motivate a later preregistered cycle with a new cell, alternative, or revised
@@ -1201,34 +1213,34 @@ evidence only.
 
 | Control | L01 priority | Applicability reviewed | Planned evidence | Outcome resolved |
 | --- | --- | --- | --- | --- |
-| `AE01-CTRL-01` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-02` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-03` | inherited | [ ] | [ ] | [ ] |
-| `AE01-CTRL-04` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-05` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-06` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-07` | inherited | [ ] | [ ] | [ ] |
-| `AE01-CTRL-08` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-09` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-10` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-11` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-12` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-13` | inherited | [ ] | [ ] | [ ] |
-| `AE01-CTRL-14` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-15` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-16` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-17` | direct | [ ] | [ ] | [ ] |
-| `AE01-CTRL-18` | inherited | [ ] | [ ] | [ ] |
-| `AE01-CTRL-19` | direct | [ ] | [ ] | [ ] |
+| `AE01-CTRL-01` | direct | [x] | [x] | [x] |
+| `AE01-CTRL-02` | direct | [x] | [x] | [x] |
+| `AE01-CTRL-03` | inherited | [x] | [x] | [x] |
+| `AE01-CTRL-04` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-05` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-06` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-07` | inherited | [x] | [x] | [x] |
+| `AE01-CTRL-08` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-09` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-10` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-11` | direct | [x] | [x] | [x] |
+| `AE01-CTRL-12` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-13` | inherited | [x] | [x] | [ ] |
+| `AE01-CTRL-14` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-15` | direct | [x] | [x] | [x] |
+| `AE01-CTRL-16` | direct | [x] | [x] | [x] |
+| `AE01-CTRL-17` | direct | [x] | [x] | [ ] |
+| `AE01-CTRL-18` | inherited | [x] | [x] | [ ] |
+| `AE01-CTRL-19` | direct | [x] | [x] | [ ] |
 
 ### 10.2 L01-specific controls
 
 | Control | Meaning | Applicability reviewed | Planned evidence | Outcome resolved |
 | --- | --- | --- | --- | --- |
-| `AE01-L01-CTRL-01` | Medium freeze with participant opportunity preserved | [ ] | [ ] | [ ] |
-| `AE01-L01-CTRL-02` | Matched trace shuffle | [ ] | [ ] | [ ] |
-| `AE01-L01-CTRL-03` | Susceptibility/selectivity inversion | [ ] | [ ] | [ ] |
-| `AE01-L01-CTRL-04` | Parent-context separation | [ ] | [ ] | [ ] |
+| `AE01-L01-CTRL-01` | Medium freeze with participant opportunity preserved | [x] | [x] | [ ] |
+| `AE01-L01-CTRL-02` | Matched trace shuffle | [x] | [x] | [ ] |
+| `AE01-L01-CTRL-03` | Susceptibility/selectivity inversion | [x] | [x] | [ ] |
+| `AE01-L01-CTRL-04` | Parent-context separation | [x] | [x] | [ ] |
 | `AE01-L01-CTRL-05` | Constructed-scaffold withdrawal when applicable | [x] | [x] | [x] |
 
 Applicability rules:
@@ -1251,7 +1263,7 @@ Applicability rules:
 
 ### `P2-I1-C00` — registration preparation
 
-**Status:** active, not frozen for candidate execution
+**Status:** closed design-only cycle; never frozen for candidate execution
 
 **Evidence effect:** resolution only; no candidate evidence
 
@@ -1276,10 +1288,80 @@ Applicability rules:
 
 - [x] Predecessor cycle is `P2-I1-C00`.
 - [x] `P2-I1-REG-GATE` passed without resolving live causal outcomes.
-- [ ] Exact executable cell configurations and expected artifact contracts are
-  materialized.
+- [x] Exact executable cell configurations and expected artifact contracts are
+  materialized in candidate-free source. Evidence:
+  [C01 execution policy](../configs/p2_i1_c01_execution_policy.json) and
+  [execution boundary](../scripts/p2_i1_execution.py).
 - [ ] One cycle-scoped freeze proves candidate outcomes were absent at freeze.
 - [ ] `P2-I1-EXEC-FREEZE` passed.
+
+### C01 source materialization and live-obligation interpretation — 2026-07-11
+
+**Record status:** executable source and candidate-free policy materialized;
+`P2-I1-DEC-026` accepted with its layered REG-to-EXEC rationale recorded. The
+clean source anchor, retained EXEC-FREEZE, and candidate execution remain
+pending.
+
+The C01 source adds one bounded layer above the passed registration bundle:
+
+1. [The C01 execution policy](../configs/p2_i1_c01_execution_policy.json)
+   imports the registered seven cells and three seeds unchanged, freezes exact
+   W0-W4 native operations, binds twelve live obligations to machine fields,
+   and declares every primary, retry, audit, ledger, and manifest path.
+2. [The execution boundary](../scripts/p2_i1_execution.py) builds a
+   candidate-free cycle authorization, refuses preview or untracked freezes,
+   validates an execution-specific PyGRC callable superset, and runs every
+   primary in a fresh worker.
+3. The same boundary records deterministic infrastructure failures and permits
+   only the lowest failed seed's single same-configuration retry per cell.
+4. A cross-run auditor resolves structural obligations without converting a
+   magnitude or threshold crossing into a terminal verdict.
+
+The execution-specific PyGRC superset is governed by
+[`P2-I1-DEC-026`](P2-I1-decision-record.md). That decision records why exact
+execution calls became visible only while materializing W0-W4, why the
+retained REG receipt remains valid, what each added call owns, and the concrete
+failure condition that alone would justify reopening REG.
+
+The native sequence for each cell/seed is:
+
+```text
+W0  construct and match the retained cell/seed baseline
+W1  schedule one P->W writer packet and drain departure/arrival events
+W2  emit or freeze the arrival-derived feedback row and persist one branch point
+W3  restore four independent branches and invoke the native feedback producer
+W4  drain scheduled reader work and retain the raw opportunity relation
+```
+
+The geometry remains the registered `P-W-A-B` fixture. C01 does not add a
+participant, medium carrier, parent basin, reader edge, or comparison cell.
+The medium-freeze cell keeps the post-writer base state, arrival contact,
+producer call, and opportunity panel while omitting only the feedback row. The
+trace-shuffle cell keeps the arrival-derived row but asks the producer to
+expect the departure-contact digest. The parent and carrier contrasts retain
+their already declared support-scale and reader-load exceptions.
+
+The live obligations split across two evidence levels:
+
+- **per run/opportunity:** W0 identity, empty start, native binding, writer and
+  contact lineage, participant-label-free medium reconstruction, four-profile
+  viability, common medium exposure, W2 restoration, no branch carryover,
+  producer invocation, support/budget projection, raw response, runtime
+  receipt, and reconstruction command;
+- **cross run:** unique worker scopes, candidate-versus-freeze state matching,
+  producer parity, trace-shuffle single-axis matching, ordinary-cell
+  support/budget equality, and declared parent/load exceptions.
+
+Independent medium reconstruction is deliberately bounded: the restored W2
+snapshot locates and reconstructs the native feedback surface by surface kind
+and native lineage without accepting or reading a participant label. This
+supports a separable recorded carrier under the participant-mediated reading
+ceiling; it does not claim autonomous reader access or co-constitution.
+
+Source validation currently passes `88` tests. Dirty-worktree construction
+produces only `p2_i1_c01_exec_freeze_preview`, with retention and candidate
+authority both false. No writer packet, feedback row, reader opportunity, or
+candidate result has been executed during source materialization.
 
 ### Candidate-execution freeze template
 

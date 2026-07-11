@@ -70,6 +70,7 @@ reconstruction requirements.
 | `P2-I1-DEC-023` | How should baseline/reset identity remain exact across seven cells and three seed transforms? | Accepted: per-configuration identity plus fresh worker isolation | Resolves REG-GATE reset/contamination policy; execution proof remains open | 2026-07-11 |
 | `P2-I1-DEC-024` | How should registration distinguish control applicability, resolution stage, and observed outcome? | Accepted: three independent control-lifecycle fields | Constrains all REG-GATE control plans; R3 retains schema-admission decision | 2026-07-11 |
 | `P2-I1-DEC-025` | Does the primary cycle require constructed-scaffold withdrawal? | Accepted: not applicable; no constructed scaffold carries the claimed relation | Resolves `AE01-L01-CTRL-05` applicability; guarded reopening only | 2026-07-11 |
+| `P2-I1-DEC-026` | How should C01 bind native calls that are more specific than the REG-GATE operation-family receipt? | Accepted: execution-specific callable superset | Constrains EXEC-FREEZE and every live receipt; REG reopens only on concrete contradiction | 2026-07-11 |
 
 ## 3. `P2-I1-DEC-001` — Realization family
 
@@ -2828,15 +2829,180 @@ Reopen `P2-I1-DEC-025` before execution if implementation shows that:
 If reopened after any candidate observation, preserve the primary result and
 register a new linked cycle; never add scaffold withdrawal as a rescue variant.
 
-## 29. Current decision boundary and next work
+## 29. `P2-I1-DEC-026` — Execution-specific runtime binding
+
+**Status:** accepted for C01 EXEC-FREEZE
+
+**Question IDs:** C01 runtime conformance and D-033/D-034 explicit-transition
+discipline
+
+### 29.1 Decision question
+
+REG-GATE verified the registered operation family through fixture construction,
+route validation, snapshot/load, stepping, feedback-row emission, and producer
+configuration. The concrete C01 sequence also needs to schedule the writer
+packet, invoke the configured native producer, persist the W2 branch point, and
+inspect native state. How should those more specific calls be bound without
+silently changing the retained REG receipt or pretending it authorized
+execution?
+
+### 29.2 Why this decision became necessary
+
+REG-GATE and EXEC-FREEZE answer related but different questions.
+
+REG-GATE asked:
+
+> Does the selected PyGRC realization expose the native operation families
+> required by the registered experiment?
+
+Its receipt verified fixture construction, route validation, snapshot/load,
+queue stepping, feedback-row emission, and feedback-producer configuration.
+That was sufficient to establish that the proposed realization family and
+registered native surfaces exist. It did not authorize candidate execution.
+
+Writing the concrete W0-W4 runner exposed the narrower execution question:
+
+> Which exact PyGRC methods does this executable sequence call, and are all of
+> them present before the first candidate operation?
+
+The distinction matters because configuration is not invocation. In
+particular, `set_feedback_coupled_pulse_producer()` configures the native
+producer, but source-current PyGRC requires `produce_events()` to ask that
+producer to schedule eligible work. Likewise, the registered packet-step and
+snapshot families do not by themselves state that C01 will call
+`schedule_packet_departure()`, `save()`, `load()`, `get_state()`, and
+`snapshot()` at its exact writer, branch, and audit boundaries.
+
+The concrete roles are:
+
+| Exact call | C01 role |
+| --- | --- |
+| `schedule_packet_departure()` | Schedule the single P-to-W writer packet at W1 |
+| `produce_events()` | Invoke the configured native feedback producer at W3 |
+| `save()` / `load()` | Persist W2 and restore four independent counterfactual branches |
+| `get_state()` / `snapshot()` | Audit baseline, queue, medium, restoration, isolation, and retained identity without direct mutation |
+
+This is not evidence that REG-GATE failed. It is evidence that registration
+conformance was necessary but intentionally not identical to exact execution
+conformance. The missing precision naturally appeared when the registered
+design was turned into executable operations.
+
+### 29.3 Options considered
+
+| Option | Benefit | Cost | Disposition |
+| --- | --- | --- | --- |
+| Reopen REG-GATE and replace the retained receipt | One exhaustive receipt | Rewrites an accepted registration fact for detail only discoverable during executable materialization | Not recommended unless the added binding fails |
+| Add a C01 execution-specific callable superset | Keeps registration and execution conformance distinct; fails before execution when any exact call is absent | Requires a second, narrower binding record in EXEC-FREEZE and every run | **Accepted** |
+| Treat producer configuration plus `step()` as sufficient | No new record | False: source-current PyGRC requires explicit `produce_events()`, and writer setup requires `schedule_packet_departure()` | Rejected |
+| Implement RCAE replacements for missing calls | Could keep the experiment runnable | Violates no-fallback and explicit-native-transition constraints | Rejected |
+
+### 29.4 Accepted binding and layered contract
+
+C01 imports every passed registration capability and adds exact callable
+resolution for:
+
+```text
+LGRC9V3.schedule_packet_departure
+LGRC9V3.produce_events
+LGRC9V3.save
+LGRC9V3.load
+LGRC9V3.get_state
+LGRC9V3.snapshot
+```
+
+The relation is:
+
+```text
+C01 execution binding
+  = every capability already required by REG
+  + the exact additional calls used by the C01 runner
+```
+
+It is a strict execution-specific superset, not a replacement public API and
+not a monkey patch. The retained REG receipt remains evidence that the
+registered family exists. The C01 binding receipt establishes that the exact
+runner calls exist. EXEC-FREEZE binds those calls to one exact cycle, and only
+the retained tracked freeze authorizes its 21 primary runs.
+
+```text
+REG receipt
+  -> registered native operation family exists
+
+C01 execution-binding receipt
+  -> every exact C01 call is callable
+
+P2-I1-EXEC-FREEZE
+  -> those calls are bound to one exact candidate-free cycle
+
+tracked P2-I1-EXEC-FREEZE
+  -> only the exact cell/seed/attempt scope may run
+```
+
+The accepted binding is explicitly not:
+
+- a duplicate RCAE implementation of PyGRC functionality;
+- permission to monkey-patch or modify PyGRC;
+- a fallback operation map;
+- a transition to a newly native implementation;
+- general candidate-execution authority; or
+- scientific evidence for or against niche conditioning.
+
+Missing, non-callable, or identity-drifting surfaces block execution as an
+operational result. They cannot select a fallback, mutate PyGRC, or count as
+scientific negative evidence. If PyGRC later provides a more native combined
+operation, C01 continues to use this frozen realization until an explicit new
+profile and rerun are accepted.
+
+### 29.5 Failure and REG reopening boundary
+
+An unavailable exact call stops C01 before scientific execution. The resulting
+classification is operationally blocked or incomplete, never a negative niche
+result. The next question would be whether:
+
+- C01 selected the wrong public PyGRC call;
+- the registered native-operation claim was too broad;
+- the substrate is missing an operation surface; or
+- a separately declared constructed realization and new cycle are warranted.
+
+REG-GATE does not reopen merely because exact-call conformance belongs to the
+next gate. It reopens only if the C01 binding exposes a concrete contradiction
+with the retained REG claim—for example, if the supposedly available native
+operation cannot be expressed by any admitted public call.
+
+The candidate-free preview binding already resolved all six added methods in
+the selected `pygrc==0.1` realization while leaving the graph worktree clean.
+Therefore the accepted decision records a layered contract, not a workaround
+for an observed missing runtime method.
+
+Owner acceptance is recorded by the stable machine-readable marker:
+
+```text
+P2-I1-DEC-026 accepted for C01 EXEC-FREEZE
+```
+
+### 29.6 Reopening conditions
+
+Reopen `P2-I1-DEC-026` if:
+
+- one added call cannot be resolved in the retained `pygrc==0.1` realization;
+- source inspection shows a different public call owns the registered
+  operation;
+- C01 would need a constructed replacement, direct state injection, or PyGRC
+  modification;
+- the execution-specific map duplicates a broad PyGRC API instead of the exact
+  calls used; or
+- the added binding changes the scientific fixture, cell, control, or claim
+  semantics rather than merely making them executable.
+
+## 30. Current decision boundary and next work
 
 All scientific decision-level semantics currently required for registration
 are resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
 interpretation, and `L01-Q14` remains reserved for R3 after concrete execution.
 
-The bounded `P2-I1-DEC-020` identity refresh is complete. The immediate work is
-REG-GATE materialization under `P2-I1-DEC-021` and the path-free profile
-boundary in `P2-I1-DEC-022`, with per-configuration isolation from
-`P2-I1-DEC-023` and control lifecycle from `P2-I1-DEC-024`. Candidate execution
-remains blocked under the scaffold boundary in `P2-I1-DEC-025` until a reviewed
-registration and a separate exact-cycle `P2-I1-EXEC-FREEZE` both exist.
+REG-GATE is complete under `P2-I1-DEC-021` through `DEC-025`. The immediate work
+is C01 executable materialization: exact native operations, per-run and
+cross-run obligation audits, deterministic retry handling, expected artifacts,
+and one candidate-free cycle authorization. Candidate execution remains
+blocked until `P2-I1-DEC-026` is accepted and a retained, tracked
+`P2-I1-EXEC-FREEZE` validates against the unchanged execution source.
