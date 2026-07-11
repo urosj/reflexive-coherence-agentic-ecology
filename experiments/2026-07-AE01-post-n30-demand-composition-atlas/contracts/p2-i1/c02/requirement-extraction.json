@@ -1,0 +1,61 @@
+{
+  "record": {
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "composition_leverage": "Provides a reusable building-block contract for composing attributable participant history, a reconstructable non-private eligibility surface, and selective later local opportunity while retaining withdrawal, source-order, and susceptibility controls.",
+    "construction_refs": [
+      "p2-i1-c02-execution-policy",
+      "p2-i1-c02-restoration-projection",
+      "p2-i1-c02-writer-medium-reader-fixture"
+    ],
+    "counterfactual": "When the feedback-medium row is absent or its expected source order is shuffled, later packet formation disappears despite preserved participant opportunity or preserved feedback content.",
+    "debt_refs": [
+      "p2-i1-debt-native-support",
+      "p2-i1-debt-cross-lane-recurrence",
+      "p2-i1-debt-autonomous-shared-access",
+      "p2-i1-debt-broader-transfer"
+    ],
+    "evidence_refs": [
+      {
+        "claim_ceiling": "Bounded niche-conditioning demand pattern under explicit constructed support",
+        "evidence_role": "observed_ae01_result",
+        "file_sha256": "b53d37db4706a08dd5b0263190893a6ed94c0f088624c56e5644451841fa2253",
+        "output_digest": "df72d8e5813f7fdd159974dc23812af04c4f6697b7dcf645a11443b8e7e9fb38",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/scientific-analysis.json",
+        "reference_id": "p2-i1-c02-scientific-analysis"
+      },
+      {
+        "claim_ceiling": "Constructed experiment mechanism only; not native niche evidence",
+        "evidence_role": "constructed_ecology_mechanism",
+        "file_sha256": "36e55ce768badf4ae221884ec3be634a40a47b9e69f72587f3e79b1045c33b51",
+        "output_digest": "929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/exec-freeze.json",
+        "reference_id": "p2-i1-c02-exec-freeze"
+      },
+      {
+        "claim_ceiling": "Authored ecology interpretation bounded by the same retained evidence",
+        "evidence_role": "ecology_interpretation",
+        "file_sha256": "738afbec0b4a68ce7c44378590882996f11bb918b2c7068f77ca3eec61e54a6f",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/developmental-interpretation.json",
+        "reference_id": "p2-i1-c02-developmental-interpretation"
+      }
+    ],
+    "extensions": {},
+    "future_discriminator": "Test whether an independently registered lane or a less explicitly supported realization recovers the same attributable-history to shared-eligibility to selective-opportunity relation without importing L01 outcomes.",
+    "lane_ids": ["AE01-L01"],
+    "origin": "extend",
+    "prerequisite_ids": [
+      "lgrc-attributable-source-lineage",
+      "lgrc-reconstructable-feedback-eligibility-surface",
+      "lgrc-selective-native-packet-opportunity"
+    ],
+    "ranking_eligibility": "pending_synthesis",
+    "requirement_id": "p2-i1-l01-history-conditioned-selective-opportunity",
+    "source_tension": "Source-current PyGRC supplies the native low-level history, surface, producer, and packet operations, but the ecology relation is assembled explicitly by the experiment and has no admitted native niche-conditioning abstraction.",
+    "surface_description": "A composable history-conditioned selective-opportunity building block that binds attributable writer lineage to a non-private reconstructable eligibility surface and later reader-local formation, with source-order, withdrawal, susceptibility, and support identity exposed.",
+    "surface_status": "apparently_adequate",
+    "target_catalog_layer": "building_block",
+    "transfer_scope": "Method and demand abstraction only within AE01 until independent recurrence is established; no L01 result, margin, threshold, or terminal class transfers as evidence."
+  },
+  "record_type": "requirement_extraction",
+  "schema_version": "1.1.0"
+}

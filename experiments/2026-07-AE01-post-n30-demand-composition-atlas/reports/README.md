@@ -34,6 +34,11 @@ Phase 2 gate reviews:
 - [P2-I1 C02 EXEC-FREEZE review](P2-I1-C02-EXEC-FREEZE-review.md) verifies the
   D-027 restoration correction, exact successor scope, and byte-identical
   candidate-free reconstruction before tracked authorization.
+- [P2-I1 C02 result](P2-I1-C02-result.md) records the completed matrix,
+  geometric and ecology interpretation, boundary ladder, terminal disposition,
+  implementation details, blocked claims, and reconstruction commands.
+- [P2-I1 owner closeout review](P2-I1-closeout-review.md) accepts R05 as
+  bounded carrier-load invariance and authorizes deterministic result retention.
 
 Reports use either:
 

@@ -1,0 +1,224 @@
+{
+  "all_expected_runs_present": true,
+  "artifact_count": 23,
+  "artifact_kind": "p2_i1_c02_execution_manifest",
+  "artifact_set_size_bytes": 1814840,
+  "artifacts": [
+    {
+      "artifact_id": "P2-I1-C02-cycle-audit",
+      "artifact_role": "cycle_audit",
+      "file_sha256": "318e80ceced967756bd8f029f47b39c8d64ba385062ffc449e0db6352d73efa2",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/cycle-audit.json",
+      "reconstruction_status": "deterministically_derived",
+      "semantic_digest": "16f9e451dd0900059584de37518d821c32386a9883047ebcca30f293a09021f8",
+      "size_bytes": 6514
+    },
+    {
+      "artifact_id": "P2-I1-C02-retry-ledger",
+      "artifact_role": "retry_ledger",
+      "file_sha256": "351078ee8fa7e35ba2ac3843b645b924c78be538aff31075a6ace989c7790778",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/retry-ledger.json",
+      "reconstruction_status": "deterministically_derived",
+      "semantic_digest": "bbc187860f4cb91158c0339432bfe6be37ee43a734c3d0c05900629864108005",
+      "size_bytes": 491
+    },
+    {
+      "artifact_id": "P2-I1-C02:candidate-conditioning:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "9f9ebea80bb446605d6ca01ec058b7c9eaf122be462ab2369b794655001fefd2",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/candidate-conditioning/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "6b5063470727c81f21a8ab9f351f834ce6eda81e64fce75e69b85810b8c84ed2",
+      "size_bytes": 105333
+    },
+    {
+      "artifact_id": "P2-I1-C02:candidate-conditioning:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "c0691868eb409d470f9dc95dbb0ad16a6c4b28260eacd3fc119b175cea595679",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/candidate-conditioning/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "181fb58b30e0e5082e874b25a34aecfc2299f25ac0364d996a899a469f38d970",
+      "size_bytes": 105294
+    },
+    {
+      "artifact_id": "P2-I1-C02:candidate-conditioning:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "ff033660c7628355bb1d8a9e73c8f1b329be58adb61ba1afdd6a1b51892058ce",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/candidate-conditioning/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "99fe474c9d3f202630706cc7be66ae04917ee7686520afc04ae76a4f9c12ed9f",
+      "size_bytes": 105333
+    },
+    {
+      "artifact_id": "P2-I1-C02:carrier-timescale-contrast:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "e4e4fb41b5d7b562a81b116e1cf744d171ac07cea67807050769f43064edd61b",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/carrier-timescale-contrast/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "d0fad8bf186ab369dfeda9f3320fedf7fa3e9c8981de3098ad24b205e22e86a9",
+      "size_bytes": 105442
+    },
+    {
+      "artifact_id": "P2-I1-C02:carrier-timescale-contrast:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "85ccd1b20b430f5f3625535ae3ad1266606bd4257e4ae9d8ecd0309950c13be4",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/carrier-timescale-contrast/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "99cdb00bbd90ac77cb583b7b87596ee36878c8d8054fa3118292345132e77953",
+      "size_bytes": 105403
+    },
+    {
+      "artifact_id": "P2-I1-C02:carrier-timescale-contrast:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "df443be7dd96ff855a5271aa6199da0246f173d72f8e792e49a067c30103caa0",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/carrier-timescale-contrast/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "971cacc0a694621bbb10619bdd417c6ef326f39a16a5d1d0658198eedb660c1f",
+      "size_bytes": 105442
+    },
+    {
+      "artifact_id": "P2-I1-C02:medium-freeze-withdrawal:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "9a01aa94ce6ef9aa799b172513736d59be58ee10f314bc7a3acf16c72a0c1d9c",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/medium-freeze-withdrawal/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "bfd71185ff146e1b7d4e9339b92be0a3918c74258073f09c3352f5deb649d1ce",
+      "size_bytes": 55061
+    },
+    {
+      "artifact_id": "P2-I1-C02:medium-freeze-withdrawal:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "2e38165815169e1a438abd2980448674c034bd308a1c4918ffc76865ea1964d7",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/medium-freeze-withdrawal/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "df9b18af5e75f3a3370a6abbd974da63d8eb239af720b54d49f9395c872e1422",
+      "size_bytes": 55049
+    },
+    {
+      "artifact_id": "P2-I1-C02:medium-freeze-withdrawal:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "b61c39115da7ac2eaa70a3bbea346d9f7da37966765ee0ca6648079288a02887",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/medium-freeze-withdrawal/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "056a005144b7752967245000e01d8634690b9cc841d395903dd2a1d6f6c9adf6",
+      "size_bytes": 55061
+    },
+    {
+      "artifact_id": "P2-I1-C02:parent-context-contrast:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "213e33da177f3e15b4a9fe210339bd8e5a33919a94494829cbc289053e1eadf2",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/parent-context-contrast/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "9e851b95dd5e051f4b46b4ddba53e5688b674e88bef0386f360840d553fe3958",
+      "size_bytes": 105375
+    },
+    {
+      "artifact_id": "P2-I1-C02:parent-context-contrast:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "71db09954fb4245ef70bd79d384a8c67446a1ad9089c5b505ce9ed840c052f5c",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/parent-context-contrast/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "fbfe78e3538946c1190992daad29633b720f834041c4b02dcc5ab1f676cf3ca9",
+      "size_bytes": 105336
+    },
+    {
+      "artifact_id": "P2-I1-C02:parent-context-contrast:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "d0e3baf29a46986a017a0a4bf0285214675484e105092abc33701db96a1ca4a1",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/parent-context-contrast/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "25150249f598042f99807babc30593403d1ac8a1dbad0fe568addafb6d04d00b",
+      "size_bytes": 105375
+    },
+    {
+      "artifact_id": "P2-I1-C02:reference:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "d10df6858d70c58be8a59b2a1847120ce415069615a987191386fb2dbd8d0367",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/reference/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "3d2d4cf078fda5cf3313698df4016f9d0bda311e89b1196309ec1ca861daf6aa",
+      "size_bytes": 62981
+    },
+    {
+      "artifact_id": "P2-I1-C02:reference:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "1cff783cc6f62a13346a496eb9708d9cbee3159bc2dcd7542e1f0c1951bd3c7b",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/reference/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "c6a211bb50ca53e4d9cb47020272d0fc8b23edf93fe3dfb04c64a84af973a20e",
+      "size_bytes": 62921
+    },
+    {
+      "artifact_id": "P2-I1-C02:reference:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "4fe1f0379021a210dd2d14180de215006b868fcfff361f69c1c756aee513eb39",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/reference/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "a0f780367b7ea368d7b17e24defc3b4fe7145eaeb5bdf0fd52c2f65029d7445a",
+      "size_bytes": 62986
+    },
+    {
+      "artifact_id": "P2-I1-C02:susceptibility-inversion:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "1b5d81cf42dc314532130cd1e5a5ee0b29123fc8e3aca079e6f4e3bb2a216081",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/susceptibility-inversion/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "e61707e90e786a7df5d6f67bc908e10ece2a04233506db06eb2b68fa87d09800",
+      "size_bytes": 105391
+    },
+    {
+      "artifact_id": "P2-I1-C02:susceptibility-inversion:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "a2d119de8e4639cd6fc100b317c51f86f729fcd9f444077b5c6a400ae9214d4c",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/susceptibility-inversion/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "5d27b1d68d8840186d0f137b6414018aeac77e409b8157bd8e027ccf24775946",
+      "size_bytes": 105352
+    },
+    {
+      "artifact_id": "P2-I1-C02:susceptibility-inversion:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "9c8ce40a1833fc157bc2c8a76974a4244dce1bb15a1c16bee083ee076ded24ef",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/susceptibility-inversion/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "fb95bf7d71916a3de19047f1ee48aabcf7c38ef7a525284e6e7f5967469f9cfd",
+      "size_bytes": 105391
+    },
+    {
+      "artifact_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "9348cddc0019d65de34a1b2a91d678244c3d327075275443bc5e80b8d56712f4",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-101.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "7a57d3cad71d36f1a515c44c01ad64993274a17b9dd40d773e64b8691a43a84a",
+      "size_bytes": 63116
+    },
+    {
+      "artifact_id": "P2-I1-C02:trace-shuffle:seed-211:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "1ff9d89dc6dec95ea8a2230e75812c8957feb88ffa211cb400da182723cf154a",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-211.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "ac78b2af07705ec68afd0a197ec550966c88ea6551136289fb2e900016d36b5a",
+      "size_bytes": 63077
+    },
+    {
+      "artifact_id": "P2-I1-C02:trace-shuffle:seed-307:attempt-1",
+      "artifact_role": "cell_seed_run",
+      "file_sha256": "706cf142779bd64e910c84f92eccf52825d8652676e1934ea20b7bcf6c6bf33b",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-307.json",
+      "reconstruction_status": "not_yet_independently_reconstructed",
+      "semantic_digest": "fbab58d0741c3b1ed37b5cef4ea112f8e4fe66746dc588b6bd400959052fda70",
+      "size_bytes": 63116
+    }
+  ],
+  "canonical_payload_digest": "c00252f235fb054624acf6d29c0be2df4f759b2eb63f14b3fdd7a59a78bb0dbb",
+  "cycle_audit_complete": true,
+  "cycle_id": "P2-I1-C02",
+  "evidence_effect": "retention_index_only",
+  "exec_freeze_digest": "929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84",
+  "rung_assignment_opened": false,
+  "schema_version": "1.0.0",
+  "scientific_interpretation_opened": false,
+  "terminal_classification_opened": false
+}

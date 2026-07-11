@@ -1,6 +1,6 @@
 # P2-I1 C02 EXEC-FREEZE Review
 
-**Status:** ready for tracked retention
+**Status:** passed
 
 **Gate under review:** `P2-I1-EXEC-FREEZE` for `P2-I1-C02`
 
@@ -127,12 +127,12 @@ Generated identities pending tracked retention:
 | Execution-binding receipt | `09dbf32d1351a91aa7ac628418440c45575c7855fd2c1e241267e44722bab13e` | `5f8a45660d02454c62a24bf7cc20da663a39552d0c9bdb3a2f8f336e8bc4e60d` |
 | EXEC-FREEZE | `929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84` | `36e55ce768badf4ae221884ec3be634a40a47b9e69f72587f3e79b1045c33b51` |
 
-## 6. Remaining mechanical boundary
+## 6. Tracked mechanical boundary
 
-Internal untracked validation passes. Candidate execution remains mechanically
-unavailable until both records are committed byte-for-byte and validation with
-`--require-tracked` passes. Tracking will authorize only the exact C02
-cell/seed/attempt scope; it will not execute C02 or open evidence.
+The binding receipt, EXEC-FREEZE, and review were retained in commit `94505ef`.
+Validation with `--require-tracked` then passed, proving both machine records
+match their current tracked `HEAD` bytes. This authorizes only the exact C02
+cell/seed/attempt scope; it does not itself execute C02 or open evidence.
 
 ## 7. Disposition
 
@@ -140,5 +140,5 @@ No pre-execution source, predecessor, projection, native binding, or
 reconstruction defect was found.
 
 ```text
-P2-I1-C02-EXEC-FREEZE = ready_for_tracking
+P2-I1-C02-EXEC-FREEZE = passed
 ```

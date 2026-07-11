@@ -1,15 +1,15 @@
 # P2-I1 Minimal Shared-Medium Niche Formation Checklist
 
-**Status:** active provisional lane checklist; registration completed, no
-candidate execution completed
+**Status:** active provisional lane checklist; C02 execution and validated
+closeout records complete; owner interpretation accepted; retention pending
 
 **Iteration:** `P2-I1`
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C02` — final freeze ready for tracking
+**Current probe cycle:** `P2-I1-C02` — completed validated result
 
-**Current local gate:** `P2-I1-EXEC-FREEZE`
+**Current local gate:** `P2-I1-CLOSE-GATE`
 
 **Acceptance ceiling:** `AE01-C2`; no lane result assigned
 
@@ -81,9 +81,9 @@ Rules:
 | `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Passed | v2 identity refresh passed; v1 remains retained history |
 | `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Passed | D-020 regeneration is byte-identical to retained calibration |
 | `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Passed | Retained bundle and owner-accepted REG-GATE review dated 2026-07-11 |
-| `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | C01 passed; C02 pending | C02 tracked binding receipt and cycle freeze with candidate outcomes absent |
-| `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Pending | Cell artifacts, receipts, control outcomes, reconstruction |
-| `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Pending | Terminal record, report, retained manifest, R3 handoff |
+| `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | C01 and C02 passed | C02 tracked binding receipt, cycle freeze, and `--require-tracked` validation |
+| `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Passed | 21 completed C02 runs, complete audit, zero retries, and verified execution manifest |
+| `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Ready for tracking | Owner accepted R05; terminal record, report, manifest, and R3 handoff agree |
 
 `P2-I1-GATE` in the master checklist is equivalent to
 `P2-I1-CLOSE-GATE` here.
@@ -1133,13 +1133,13 @@ artifact. The table names the exact direct causal/withdrawal IDs for each cell;
 
 | Cell | Group | Exact direct controls | Implementation frozen | Expected artifacts frozen | Ready |
 | --- | --- | --- | --- | --- | --- |
-| `reference` | reference | none; registered matched baseline | [x] | [x] | [ ] |
-| `candidate-conditioning` | candidate | `AE01-CTRL-04`, `AE01-CTRL-05`, `AE01-CTRL-11` | [x] | [x] | [ ] |
-| `medium-freeze-withdrawal` | withdrawal | `AE01-CTRL-06`, `AE01-CTRL-08`, `AE01-L01-CTRL-01` | [x] | [x] | [ ] |
-| `trace-shuffle` | lineage/source | `AE01-CTRL-06`, `AE01-L01-CTRL-02` | [x] | [x] | [ ] |
-| `parent-context-contrast` | active null | `AE01-CTRL-10`, `AE01-L01-CTRL-04` | [x] | [x] | [ ] |
-| `susceptibility-inversion` | budget/leakage and selectivity | `AE01-CTRL-09`, `AE01-L01-CTRL-03` | [x] | [x] | [ ] |
-| `carrier-timescale-contrast` | transfer/contrast | none; registered single-axis transfer contrast | [x] | [x] | [ ] |
+| `reference` | reference | none; registered matched baseline | [x] | [x] | [x] |
+| `candidate-conditioning` | candidate | `AE01-CTRL-04`, `AE01-CTRL-05`, `AE01-CTRL-11` | [x] | [x] | [x] |
+| `medium-freeze-withdrawal` | withdrawal | `AE01-CTRL-06`, `AE01-CTRL-08`, `AE01-L01-CTRL-01` | [x] | [x] | [x] |
+| `trace-shuffle` | lineage/source | `AE01-CTRL-06`, `AE01-L01-CTRL-02` | [x] | [x] | [x] |
+| `parent-context-contrast` | active null | `AE01-CTRL-10`, `AE01-L01-CTRL-04` | [x] | [x] | [x] |
+| `susceptibility-inversion` | budget/leakage and selectivity | `AE01-CTRL-09`, `AE01-L01-CTRL-03` | [x] | [x] | [x] |
+| `carrier-timescale-contrast` | transfer/contrast | none; registered single-axis transfer contrast | [x] | [x] | [x] |
 
 Cell-specific freeze requirements:
 
@@ -1420,8 +1420,8 @@ historical C01 authority digest remains reconstructable.
 
 ### `P2-I1-C02` — bounded native restoration correction
 
-**Status:** clean source anchor committed; exact candidate-free binding and
-EXEC-FREEZE reconstructed; tracked authorization pending
+**Status:** completed; 21 primary runs, zero failures, zero retries, all twelve
+structural obligations passed, and validated closeout records generated
 
 **Evidence effect:** none; successor implementation only
 
@@ -1438,7 +1438,8 @@ EXEC-FREEZE reconstructed; tracked authorization pending
 - [x] Final C02 binding receipt and EXEC-FREEZE generated from that clean anchor
   and reproduced byte-for-byte in a separate clone. Evidence:
   [C02 EXEC-FREEZE review](../reports/P2-I1-C02-EXEC-FREEZE-review.md).
-- [ ] Tracked C02 EXEC-FREEZE validation passed before any C02 operation.
+- [x] Tracked C02 EXEC-FREEZE validation passed before any C02 operation.
+  Evidence: [C02 EXEC-FREEZE review](../reports/P2-I1-C02-EXEC-FREEZE-review.md).
 
 ### C02 implementation and geometric interpretation — 2026-07-11
 
@@ -1483,9 +1484,9 @@ continuation difference fails closed and triggers D-027's reopening boundary.
 Source validation passes 89 tests. The additional test proves that changes
 confined to the excluded nested cache do not alter the projection while native
 runtime drift does. Execution tests now isolate candidate-result paths, so the
-suite remains usable after a prior cycle is retained. A dirty-worktree binding
-and freeze produce only non-retainable C02 preview artifacts with candidate
-authority false; no C02 writer, medium, producer, or outcome operation has run.
+suite remains usable after a prior cycle is retained. At the preview boundary,
+a dirty-worktree binding and freeze produced only non-retainable artifacts with
+candidate authority false; no C02 operation had yet run.
 
 Final generation from clean source `c2def54` produced a retained-eligible C02
 binding receipt and EXEC-FREEZE. A separate clone regenerated both files
@@ -1494,6 +1495,14 @@ fifteen authorities, nine source files, no candidate outcomes, and no executed
 candidate operation. Internal validation passes; tracked validation remains the
 last mechanical boundary. Exact identities are recorded in the
 [C02 EXEC-FREEZE review](../reports/P2-I1-C02-EXEC-FREEZE-review.md).
+
+Tracked validation then passed and the exact matrix completed. All 21 primary
+runs succeeded, no retry was authorized, and all twelve obligations passed.
+The scientific analysis derives three primary margins of `1.0`,
+`robust_aligned`, strong constructed selectivity for every seed, and R05 under
+explicit constructed support. The terminal classification is
+`supported_bounded_candidate`. Evidence and interpretation:
+[C02 result](../reports/P2-I1-C02-result.md).
 
 ### Candidate-execution freeze template
 
@@ -1548,43 +1557,44 @@ Entry conditions:
 - [x] `P2-I1-REG-GATE` passed. Evidence:
   [P2-I1 REG review](../reports/P2-I1-REG-review.md).
 - [x] `P2-I1-EXEC-FREEZE` passed for the active candidate-execution cycle.
-  Evidence: [EXEC-FREEZE review](../reports/P2-I1-EXEC-FREEZE-review.md).
+  Evidence: [C02 EXEC-FREEZE review](../reports/P2-I1-C02-EXEC-FREEZE-review.md).
 
 Execution tracking for the active candidate cycle:
 
 | Cell | Seed 101 | Seed 211 | Seed 307 | Receipt/reconstruction | Scientific disposition |
 | --- | --- | --- | --- | --- | --- |
-| `reference` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
-| `candidate-conditioning` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
-| `medium-freeze-withdrawal` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
-| `trace-shuffle` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
-| `parent-context-contrast` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
-| `susceptibility-inversion` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
-| `carrier-timescale-contrast` | Blocked at restore | Blocked at restore | Blocked at restore | Audit retained | None—operational |
+| `reference` | Complete | Complete | Complete | Verified | `0/4` formation |
+| `candidate-conditioning` | Complete | Complete | Complete | Verified | Selective `[1,0,1,0]`; `2/4` formation |
+| `medium-freeze-withdrawal` | Complete | Complete | Complete | Verified | `0/4`; medium dependency control |
+| `trace-shuffle` | Complete | Complete | Complete | Verified | `0/4`; source-order control |
+| `parent-context-contrast` | Complete | Complete | Complete | Verified | Selective `[1,0,1,0]`; `2/4` formation |
+| `susceptibility-inversion` | Complete | Complete | Complete | Verified | Reversed `[0,1,0,1]`; `2/4` formation |
+| `carrier-timescale-contrast` | Complete | Complete | Complete | Verified | Selective `[1,0,1,0]`; `2/4` formation |
 
 Opportunity-level execution requirements:
 
-- [ ] Every run emits the frozen opportunity schema and preserves raw records
+- [x] Every run emits the frozen opportunity schema and preserves raw records
   behind each seed aggregate.
-- [ ] Opportunity counts, admissibility, aggregation, missingness, and
+- [x] Opportunity counts, admissibility, aggregation, missingness, and
   structural unavailability match the preregistration.
-- [ ] Every opportunity resolves one machine-level causal relation chain from
+- [x] Every opportunity resolves one machine-level causal relation chain from
   writer through medium history to later response, including causal-order and
   medium-dependency-control verification.
-- [ ] Writer-reader relation, self-aftereffect control, and sharedness claim
+- [x] Writer-reader relation, self-aftereffect control, and sharedness claim
   remain within the registered boundary.
-- [ ] Initial-state and post-reset digests match the frozen baseline before
+- [x] Initial-state and post-reset digests match the frozen baseline before
   every independent cell/seed.
-- [ ] Cross-cell and cross-seed contamination audits resolve before any causal
+- [x] Cross-cell and cross-seed contamination audits resolve before any causal
   result is interpreted.
-- [ ] Execution order matches its frozen order or frozen randomization seed.
-- [ ] Support/budget matching and all cell-specific invariant audits resolve.
+- [x] Execution order matches its frozen order or frozen randomization seed.
+- [x] Support/budget matching and all cell-specific invariant audits resolve.
 
 Infrastructure retry ledger:
 
 | Failure ID | Cell/seed | Failure class | Retry authorized | Retry result | Scientific effect |
 | --- | --- | --- | --- | --- | --- |
 | `P2-I1-C01-INFRA-001` | All 21 primaries; seed 101 retry in each cell | Full-snapshot restoration predicate rejected native load | Seven; one per cell | All seven failed at the same boundary | None—operational only |
+| `P2-I1-C02-NONE` | All 21 primaries | No failure | None | Not applicable | Completed scientific execution |
 
 Retry authorization requires the same seed, configuration, initial digest,
 scientific parameters, and reset baseline. It is never outcome-dependent, the
@@ -1594,51 +1604,52 @@ registered seed-allocation rule controls any contention within a cell.
 Exit gate `P2-I1-EXEC-GATE`:
 
 - [x] Every registered cell/seed has a valid completed, blocked, or incomplete
-  disposition. Evidence: [cycle audit](../contracts/p2-i1/c01/cycle-audit.json).
+  disposition. Evidence: [C02 cycle audit](../contracts/p2-i1/c02/cycle-audit.json).
 - [x] No undeclared attempt, seed, fallback, or configuration was used.
-  Evidence: [retry ledger](../contracts/p2-i1/c01/retry-ledger.json).
-- [ ] Runtime receipts and graph read-only checks resolve for every live run.
-- [ ] Every mandatory control outcome resolves through retained evidence.
-- [ ] Reconstruction status is known for every candidate and control artifact.
+  Evidence: [C02 retry ledger](../contracts/p2-i1/c02/retry-ledger.json).
+- [x] Runtime receipts and graph read-only checks resolve for every live run.
+- [x] Every mandatory control outcome resolves through retained evidence.
+- [x] Reconstruction status is known for every candidate and control artifact.
 - [x] Operational failures remain distinct from scientific negative evidence.
-  Evidence: [cycle audit](../contracts/p2-i1/c01/cycle-audit.json).
+  Evidence: [C01 result](../reports/P2-I1-C01-bounded-incomplete.md) and
+  [C02 result](../reports/P2-I1-C02-result.md).
 
 ## 13. Developmental interpretation and terminal closure
 
 ### 13.1 Machine-derived observation
 
-- [ ] Preserve every raw and oriented primary response.
-- [ ] Preserve every per-seed normalized margin.
-- [ ] Derive the exact threshold relation from the frozen `delta`.
-- [ ] Record response distribution/admissibility rather than one-event success.
-- [ ] Record all rungs `AE01-L01-R01` through `R05` with `rung_id`, `status`,
-  `required_evidence`, `evidence_refs`, `failed_or_blocked_reason`, and
-  `claim_enabled`.
-- [ ] Use only `passed`, `failed_closed`, `blocked`, or `not_applicable` as rung
-  status and record the honest highest-valid rung.
-- [ ] Never skip a rung; a higher rung cannot pass when a lower prerequisite is
+- [x] Preserve every raw and oriented primary response.
+- [x] Preserve every per-seed normalized margin.
+- [x] Derive the exact threshold relation from the frozen `delta`.
+- [x] Record response distribution/admissibility rather than one-event success.
+- [x] Record all rungs `AE01-L01-R01` through `R05` with schema-authoritative
+  rung IDs, names, statuses, evidence references, rationales, and highest rung.
+- [x] Use the developmental schema vocabulary `reached`, `partially_reached`,
+  `not_reached`, `unknown`, or `not_applicable` and record the honest
+  highest-valid rung.
+- [x] Never skip a rung; a higher rung cannot pass when a lower prerequisite is
   blocked, and metric magnitude cannot compensate for a failed causal rung.
-- [ ] `R05` transfer never upgrades support nativity, and a positive terminal
+- [x] `R05` transfer never upgrades support nativity, and a positive terminal
   class does not automatically establish `R04` or `R05`.
-- [ ] Record expected, adjacent, and unexpected expressed properties.
-- [ ] Record support status and T0–T4 classification value.
+- [x] Record expected, adjacent, and unexpected expressed properties.
+- [x] Record support status and T0–T4 classification value.
 
 ### 13.2 Two-axis interpretation
 
-- [ ] Becoming reading states what appeared, where, under what support, and at
+- [x] Becoming reading states what appeared, where, under what support, and at
   what claim ceiling.
-- [ ] Development reading states what condition was disclosed and what should
+- [x] Development reading states what condition was disclosed and what should
   be retained, varied, withdrawn, redirected, redescribed, or stopped.
-- [ ] Niche medium state, niche-conditioning relation, and niche formation
+- [x] Niche medium state, niche-conditioning relation, and niche formation
   remain separate in authored interpretation.
-- [ ] Uniform environmental conditioning is not relabeled as selective niche
+- [x] Uniform environmental conditioning is not relabeled as selective niche
   conditioning.
-- [ ] Occupancy/suitability is not relabeled as historically produced niche
+- [x] Occupancy/suitability is not relabeled as historically produced niche
   formation.
-- [ ] More specific lane interpretations take precedence when their causal
+- [x] More specific lane interpretations take precedence when their causal
   discriminator explains the result.
-- [ ] Strongest valid claim and every blocked stronger claim are explicit.
-- [ ] One next move and its falsifier are recorded.
+- [x] Strongest valid claim and every blocked stronger claim are explicit.
+- [x] One next move and its falsifier are recorded.
 
 ### 13.3 Terminal-to-claim mapping
 
@@ -1660,36 +1671,49 @@ support status.
 The frozen schema is not reopened. Existing authoritative records carry the
 distinction as follows:
 
-- [ ] Terminal classification and same-lane developmental interpretation state
+- [x] Terminal classification and same-lane developmental interpretation state
   the observed relation and reference only observation/control evidence.
-- [ ] `requirement_extraction` records state LGRC demand implications and use
+- [x] `requirement_extraction` records state LGRC demand implications and use
   distinct demand-basis references.
-- [ ] Demand records explicitly state that demand is not runtime or native
+- [x] Demand records explicitly state that demand is not runtime or native
   substrate evidence.
-- [ ] The authored report projects both authorities without merging the demand
+- [x] The authored report projects both authorities without merging the demand
   implication into the observed relation.
 
 ### 13.5 Terminal classification
 
-- [ ] Complete exactly one terminal record:
+- [x] Complete exactly one terminal record:
   `supported_bounded_candidate`, `partial_or_mixed`, `not_supported`,
   `blocked_missing_prerequisite`, or `incomplete_execution`.
-- [ ] Terminal record references the same-lane developmental interpretation.
-- [ ] Positive or negative scientific closure uses completed verified retained
+- [x] Terminal record references the same-lane developmental interpretation.
+- [x] Positive or negative scientific closure uses completed verified retained
   evidence rather than missing runtime or reconstruction.
-- [ ] Every failure and debt remains visible.
-- [ ] Non-selection effect is applied when required.
-- [ ] Human report agrees with controlling machine records.
+- [x] Every failure and debt remains visible.
+- [x] Non-selection effect is applied when required; P2-I1 does not itself
+  force N31+ non-selection.
+- [x] Human report agrees with controlling machine records.
 
 Exit gate `P2-I1-CLOSE-GATE`:
 
-- [ ] `P2-I1-EXEC-GATE` passed or a complete valid blocked/incomplete closure
+- [x] `P2-I1-EXEC-GATE` passed or a complete valid blocked/incomplete closure
   exists.
-- [ ] Developmental interpretation is complete and claim-safe.
-- [ ] Terminal record, retained manifest, reconstruction, and report agree.
-- [ ] New requirements, debts, redirects, and missing surfaces are recorded.
-- [ ] No claim exceeds the bounded niche-conditioning demand-pattern ceiling.
-- [ ] R3 handoff is prepared without tuning the completed result.
+- [x] Developmental interpretation is complete and claim-safe.
+- [x] Terminal record, generated closeout manifest, reconstruction, and report
+  agree; tracked retention is pending owner review.
+- [x] New requirements, debts, redirects, and missing surfaces are recorded.
+- [x] No claim exceeds the bounded niche-conditioning demand-pattern ceiling.
+- [x] R3 handoff is prepared without tuning the completed result.
+
+Owner closeout disposition — 2026-07-11:
+
+```text
+P2-I1-R05 accepted as bounded carrier-load invariance
+P2-I1-CLOSE-GATE = ready_for_tracking
+```
+
+R05 does not imply timescale persistence, broad transfer, native support, or
+cross-lane recurrence. Deterministic tracked retention remains before the gate
+is recorded as passed.
 
 ## 14. Evidence-triggered checklist change control
 
@@ -1733,7 +1757,7 @@ Change ledger:
 
 | Change ID | Trigger | Change class | New requirement | Rerun scope | Claim impact | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| — | Initial provisional checklist | — | No evidence-triggered additions yet | None | None | Empty |
+| `P2-I1-CHG-001` | C01 universal full-snapshot restoration failure | `infrastructure_correction` | Use accepted D-027 native restoration projection plus independent continuation twin in new C02 | Entire separately frozen C02 matrix | Preserves C01 as no-result integrity evidence; enables no claim until C02 completes | Complete |
 
 Rules:
 
@@ -1752,7 +1776,7 @@ Rules:
 | --- | --- | --- | --- | --- | --- |
 | `P2-I1-C00` | Theory, calibration, and registration preparation | Design-only; closed | REG-GATE passed; no candidate execution | Registration-only bundle; no scientific result | Handed exact probe boundary to `P2-I1-C01` |
 | `P2-I1-C01` | First exact candidate-execution cycle | Frozen; EXEC-FREEZE passed | Bounded incomplete: 21 primaries and 7 retries stopped at W2 restoration check | Control/integrity only; no scientific result | Disposition DEC-027 before any C02 correction |
-| `P2-I1-C02` | Correct the over-broad RCAE restoration predicate only | Source committed; final freeze ready for tracking | Not authorized or executed | None | Track exact binding/freeze and pass `--require-tracked` |
+| `P2-I1-C02` | Correct the over-broad RCAE restoration predicate only | Frozen; EXEC-FREEZE passed | Completed: 21 primaries, zero failures, zero retries; all obligations passed | `supported_bounded_candidate`; R05; explicit constructed support | Stop local L01 variants; retain for method reuse and P2-I8 synthesis |
 
 Completed and superseded cycles remain in this table. Their records and
 artifacts are never replaced by the successor cycle.
@@ -1770,8 +1794,15 @@ artifacts are never replaced by the successor cycle.
 | `P2-I1-C01-EXEC-FREEZE` | `P2-I1-C01` | Exact-cycle execution authorization | `contracts/p2-i1/c01/exec-freeze.json` | Exact | Cell, seed, attempt, obligation, and claim scope | `registration-only` | Retained |
 | `P2-I1-C01-RETRY` | `P2-I1-C01` | Primary-failure and retry ledger | `contracts/p2-i1/c01/retry-ledger.json` | Exact from frozen cycle execution | Attempt integrity and operational failure classification | `control` | Retained |
 | `P2-I1-C01-AUDIT` | `P2-I1-C01` | Incomplete-cycle audit | `contracts/p2-i1/c01/cycle-audit.json` | Exact from retained ledger and run paths | Obligation blocking and no-scientific-result boundary | `control` | Retained |
-| `P2-I1-C02-BINDING` | `P2-I1-C02` | Successor runtime binding receipt | `contracts/p2-i1/c02/execution-binding-receipt.json` | Exact in separate clone | D-027 native callable and source identity | `registration-only` | Generated; retention pending |
-| `P2-I1-C02-EXEC-FREEZE` | `P2-I1-C02` | Exact successor-cycle authorization | `contracts/p2-i1/c02/exec-freeze.json` | Exact in separate clone | Projection, continuation, cell, seed, attempt, and claim scope | `registration-only` | Generated; retention pending |
+| `P2-I1-C02-BINDING` | `P2-I1-C02` | Successor runtime binding receipt | `contracts/p2-i1/c02/execution-binding-receipt.json` | Exact in separate clone | D-027 native callable and source identity | `registration-only` | Retained |
+| `P2-I1-C02-EXEC-FREEZE` | `P2-I1-C02` | Exact successor-cycle authorization | `contracts/p2-i1/c02/exec-freeze.json` | Exact in separate clone | Projection, continuation, cell, seed, attempt, and claim scope | `registration-only` | Retained |
+| `P2-I1-C02-RUNS` | `P2-I1-C02` | Twenty-one cell/seed run records | `contracts/p2-i1/c02/execution-manifest.json` | Exact per-run commands and digests | Raw opportunity and causal-chain evidence | `positive` and `control` | Generated; retention pending |
+| `P2-I1-C02-AUDIT` | `P2-I1-C02` | Complete structural audit | `contracts/p2-i1/c02/cycle-audit.json` | Deterministic from retained runs | Twelve obligation outcomes and cross-cell controls | `control` | Generated; retention pending |
+| `P2-I1-C02-ANALYSIS` | `P2-I1-C02` | Frozen-policy scientific analysis | `contracts/p2-i1/c02/scientific-analysis.json` | Deterministic closeout builder | Margins, selectivity, and response distributions | `positive` | Generated; retention pending |
+| `P2-I1-C02-INTERPRETATION` | `P2-I1-C02` | Developmental interpretation | `contracts/p2-i1/c02/developmental-interpretation.json` | Schema and cross-record validation | R05, support, two-axis reading, next move | `interpretation` | Generated; retention pending |
+| `P2-I1-C02-TERMINAL` | `P2-I1-C02` | Terminal classification | `contracts/p2-i1/c02/terminal-classification.json` | Schema and cross-record validation | `supported_bounded_candidate` | `interpretation` | Generated; retention pending |
+| `P2-I1-C02-DEMAND` | `P2-I1-C02` | Requirement extraction | `contracts/p2-i1/c02/requirement-extraction.json` | Schema and evidence-role validation | Building-block demand pending synthesis | `interpretation` | Generated; retention pending |
+| `P2-I1-C02-CLOSEOUT` | `P2-I1-C02` | Closeout validation and manifest | `contracts/p2-i1/c02/closeout-manifest.json` | Deterministic index | Retention and reconstruction closure | `reconstruction` | Generated; retention pending |
 
 Allowed evidence effects are `method`, `resolution-only`, `registration-only`,
 `positive`, `negative`, `control`, `reconstruction`, and `interpretation`.
@@ -1812,5 +1843,14 @@ without tuning its conclusion and decide:
    matrix or shared analysis identity.
 10. [x] Commit the C02 source anchor and generate its byte-identical final
     binding receipt and EXEC-FREEZE.
-11. [ ] Track those records and pass `--require-tracked` before any C02
+11. [x] Track those records and pass `--require-tracked` before any C02
     operation.
+12. [x] Execute all 21 C02 primaries, retain zero retries, and pass all twelve
+    structural obligations.
+13. [x] Reconstruct scientific analysis, validate developmental and terminal
+    records, extract the distinct LGRC building-block demand, and build the
+    closeout manifest.
+14. [x] Complete owner closeout review and accept R05 as bounded invariance to
+    doubled carrier load.
+15. [ ] Retain the result bundle, rerun deterministic closeout validation, and
+    pass `P2-I1-CLOSE-GATE` before starting the next lane.

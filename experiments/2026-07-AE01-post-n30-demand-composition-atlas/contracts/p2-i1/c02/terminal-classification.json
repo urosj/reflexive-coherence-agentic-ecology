@@ -1,0 +1,68 @@
+{
+  "record": {
+    "attempted_work": [
+      "C01 executed 21 primaries and seven deterministic retries before closing bounded incomplete at an over-broad RCAE restoration predicate",
+      "C02 implemented accepted D-027 without changing the scientific matrix and completed all 21 frozen primary runs with no retries",
+      "All seven comparison cells, three seeds, four opportunities per run, twelve structural obligations, and reconstruction identities were audited",
+      "Primary margin, medium dependency, selectivity, source shuffle, susceptibility inversion, parent context, and carrier-load contrast were interpreted"
+    ],
+    "blocked_signatures": [
+      "native_or_endogenous_niche_formation",
+      "agency_coordination_organism_motif_regime_or_life",
+      "multi_source_co_conditioning",
+      "general_transfer_or_cross_lane_recurrence"
+    ],
+    "claim_impact": "Supports AE01-H-L01 through R05 as a bounded niche-conditioning demand pattern under explicit constructed support; all stronger native, general, cross-lane, agency, coordination, motif, and regime claims remain blocked.",
+    "classification": "supported_bounded_candidate",
+    "control_refs": [
+      "AE01-CTRL-01", "AE01-CTRL-02", "AE01-CTRL-03", "AE01-CTRL-04",
+      "AE01-CTRL-05", "AE01-CTRL-06", "AE01-CTRL-07", "AE01-CTRL-08",
+      "AE01-CTRL-09", "AE01-CTRL-10", "AE01-CTRL-11", "AE01-CTRL-12",
+      "AE01-CTRL-13", "AE01-CTRL-14", "AE01-CTRL-15", "AE01-CTRL-16",
+      "AE01-CTRL-17", "AE01-CTRL-18", "AE01-CTRL-19",
+      "AE01-L01-CTRL-01", "AE01-L01-CTRL-02", "AE01-L01-CTRL-03",
+      "AE01-L01-CTRL-04", "AE01-L01-CTRL-05"
+    ],
+    "debt_refs": [
+      "p2-i1-debt-native-support",
+      "p2-i1-debt-cross-lane-recurrence",
+      "p2-i1-debt-autonomous-shared-access",
+      "p2-i1-debt-broader-transfer"
+    ],
+    "developmental_interpretation_ref": "p2-i1-c02-developmental-interpretation",
+    "execution_status": "completed",
+    "extensions": {},
+    "forces_n31_non_selection": false,
+    "lane_id": "AE01-L01",
+    "missing_information": [
+      "Whether the relation recurs independently in any other AE01 lane",
+      "Whether comparable function can arise with endogenous or less explicit support",
+      "Whether multiple writers can co-condition one carrier",
+      "Whether the pattern transfers across broader geometry, timescale, runtime, or domain changes"
+    ],
+    "negative_signatures": [],
+    "positive_signatures": [
+      "Robust aligned primary margin 1.0 for all three registered seeds",
+      "Medium-freeze withdrawal removes formation while preserving participant opportunity",
+      "Strong constructed selectivity in both contexts for every seed",
+      "Single-axis trace shuffle removes formation while preserving feedback content",
+      "Susceptibility inversion reverses which profiles form",
+      "Carrier-load contrast retains the selective relation",
+      "All twelve structural obligations and all reconstruction checks pass"
+    ],
+    "record_complete": true,
+    "reconstruction_status": "verified",
+    "retained_evidence_refs": [
+      "p2-i1-c02-exec-freeze",
+      "p2-i1-c02-scientific-analysis",
+      "p2-i1-c02-cycle-audit",
+      "p2-i1-c02-execution-manifest",
+      "p2-i1-c02-runs"
+    ],
+    "stopping_condition": "Stop when the complete frozen matrix yields one terminal classification without adding rescue or optimization variants.",
+    "stopping_condition_reached": true,
+    "terminal_record_id": "p2-i1-c02-terminal-classification"
+  },
+  "record_type": "terminal_classification",
+  "schema_version": "1.1.0"
+}

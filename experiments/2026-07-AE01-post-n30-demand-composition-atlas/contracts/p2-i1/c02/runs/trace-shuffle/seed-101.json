@@ -1,0 +1,1351 @@
+{
+  "artifact_kind": "p2_i1_c02_run",
+  "attempt": 1,
+  "baseline_match": true,
+  "baseline_viability_audit": {
+    "all_node_coherences_positive": true,
+    "participant_reserve_positive": true,
+    "profile_count": 4,
+    "reader_configuration_count": 2
+  },
+  "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+  "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+  "canonical_payload_digest": "c07f1709b1154703f6e5d2daaae4be791068423434c9bae77a6f17fa03daa02c",
+  "cell_id": "trace-shuffle",
+  "continuation_validation_invocation_count": 4,
+  "cross_branch_state_carryover": false,
+  "cycle_id": "P2-I1-C02",
+  "declared_cell_exception": null,
+  "departure_contact_surface_digest": "1ad4676b10e22dd3b05cdb8a0126527d6144896e8b8235d135b04e4047849d4a",
+  "equal_input_continuation_audit": true,
+  "evidence_effect": "candidate_observation_pending_cycle_controls",
+  "exec_freeze_digest": "929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84",
+  "execution_configuration_digest": "81a54f1fcebc510aca462a022cb4939ca47fb5cf8d825c64693421a48fab4e83",
+  "expected_source_surface_digest": "1ad4676b10e22dd3b05cdb8a0126527d6144896e8b8235d135b04e4047849d4a",
+  "exposure_match_audit": {
+    "passed": true,
+    "same_medium_history_across_profiles": true,
+    "same_pulse_contact_across_profiles": true
+  },
+  "feedback_row_content_projection_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+  "graph_repository_write_observed": false,
+  "lane_id": "AE01-L01",
+  "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+  "medium_presence": true,
+  "medium_projection": {
+    "boundary_polarity_score": 0.28125,
+    "declared_front_node_ids": [
+      1
+    ],
+    "declared_rear_node_ids": [
+      2,
+      3
+    ],
+    "event_time_key": 2.0,
+    "feedback_threshold": 0.125,
+    "medium_present": true,
+    "reference_delta": 0.0,
+    "scheduler_event_index": 4,
+    "source_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+    "surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+    "surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+    "surface_kind": "feedback_eligibility",
+    "surface_nodes": [
+      1,
+      2,
+      3
+    ]
+  },
+  "medium_reconstruction": {
+    "lookup_basis": "surface_kind_and_native_lineage_only",
+    "medium_projection_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+    "participant_label_input_consumed": false,
+    "passed": true,
+    "reconstructed_medium_projection_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b"
+  },
+  "observed_baseline_digest": "7f8bf3351d60b95bfb8a450dbc5c35792d69b44994a5344c58bf62fd63a6b120",
+  "opportunity_records": [
+    {
+      "admissibility": "admissible",
+      "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+      "causal_order_verified": true,
+      "cell_id": "trace-shuffle",
+      "complete_registered_chain": false,
+      "context": "A",
+      "continuation_digest": "0efccd2aaf79b5fcf941eb3bbfb1b41ef712127dabfd24648f3ce0da91319ccd",
+      "cross_branch_state_carryover": false,
+      "equal_input_continuation": true,
+      "later_opportunity_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:no-event-0",
+      "medium_change_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:feedback-row",
+      "medium_dependency_control_refs": [
+        "AE01-CTRL-04",
+        "AE01-CTRL-05",
+        "AE01-CTRL-08",
+        "AE01-L01-CTRL-01"
+      ],
+      "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+      "medium_surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+      "opportunity_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:opportunity-0",
+      "opportunity_index": 0,
+      "opportunity_status": "observed",
+      "oriented_response": 0,
+      "producer_reason_code": "feedback_coupled_pulse_order_mismatch",
+      "producer_record": {
+        "causal_surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+        "idempotency_key": "packet_departure_from_feedback_eligibility_policy:2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3:order_mismatch",
+        "observed_evidence": {
+          "adaptive_topology_entry_allowed": false,
+          "boundary_polarity_score": 0.28125,
+          "copied_from_original_schedule": false,
+          "direct_centroid_write": false,
+          "direct_claim_write": false,
+          "direct_coherence_write": false,
+          "direct_displacement_write": false,
+          "direct_support_mask_write": false,
+          "direct_topology_write": false,
+          "edge_id": 2,
+          "expected_next_channel_id": null,
+          "expected_next_route_id": null,
+          "expected_polarity": "positive",
+          "locomotion_like_claim_allowed": false,
+          "loop_driven_movement_claim_allowed": false,
+          "movement_claim_allowed": false,
+          "native_m6": false,
+          "packet_amount_source": "serialized_producer_policy",
+          "polarity_policy_source": "serialized_producer_policy",
+          "producer_emitted_claim_label": false,
+          "producer_marked_packet_processed": false,
+          "producer_mutated_coherence": false,
+          "producer_mutation_ownership": "step_processes_packet_departure",
+          "producer_reads_committed_feedback_surface_row": true,
+          "producer_reads_transport_successor": false,
+          "regenerated_pulse_source": "feedback_eligibility",
+          "signed_feedback": 0.28125,
+          "source_node_id": 0,
+          "source_pulse_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+          "source_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+          "surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+          "surface_lineage_current": true,
+          "surface_lineage_record_digest": null,
+          "surface_lineage_record_id": null,
+          "target_node_id": 2,
+          "threshold": 0.125,
+          "threshold_source": "serialized_producer_policy",
+          "topology_event_digest": null,
+          "topology_event_id": null,
+          "topology_state_reabsorption_record_digest": null,
+          "topology_state_reabsorption_verified": false
+        },
+        "producer_policy": "packet_departure_from_feedback_eligibility_policy",
+        "producer_version": "lgrc9v3_autonomy_v1",
+        "queued_work_consumed": false,
+        "reason_code": "feedback_coupled_pulse_order_mismatch",
+        "record_id": "lgrc9v3-producer-record-58a7fc7f442a4737a7ad7e84",
+        "scheduled_event_id": null,
+        "scheduled_event_kind": null,
+        "scheduled_event_time_key": null,
+        "thresholds": {
+          "expected_polarity": "positive",
+          "packet_amount": 0.125,
+          "threshold": 0.125
+        },
+        "topology_mutated": false,
+        "trigger_edge_id": 2,
+        "trigger_node_id": 0
+      },
+      "profile_id": "ctx-a-aligned",
+      "raw_response": 0,
+      "raw_snapshot_equal": false,
+      "raw_snapshot_normalization_observed": true,
+      "reader_or_local_differentiation_id": "ctx-a-aligned",
+      "relation_chain_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-medium-reader",
+      "resolved_expected_polarity": "positive",
+      "resolved_profile_identity": {
+        "identity": {
+          "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+          "cross_branch_state_carryover": false,
+          "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+          "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "raw_snapshot_equal": false,
+          "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+          "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+          "static_opportunity_profile_digest": "05b1c19e9ce2abbd966917a5414c33a97d8108796ad9ad8e09d601125d925cc3"
+        },
+        "opportunity_profile_digest": "05b1c19e9ce2abbd966917a5414c33a97d8108796ad9ad8e09d601125d925cc3",
+        "profile_id": "ctx-a-aligned",
+        "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+        "resolved_opportunity_profile_digest": "db7038d2824021eec4f2fa4026d3e922ac7b62c0e86cecbb5b4e1f239a69dbef"
+      },
+      "response_steps": [],
+      "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+      "seed": 101,
+      "selectivity_group": "aligned",
+      "twin_continuation_digest": "0efccd2aaf79b5fcf941eb3bbfb1b41ef712127dabfd24648f3ce0da91319ccd",
+      "writer_carrier_id": "rcae-p2-i1-seed-101-participant-P",
+      "writer_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-window"
+    },
+    {
+      "admissibility": "admissible",
+      "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+      "causal_order_verified": true,
+      "cell_id": "trace-shuffle",
+      "complete_registered_chain": false,
+      "context": "A",
+      "continuation_digest": "01e1e85cd0cbedeca833ab1c1c442a5b38a4ce78e4ad732649d1ca8f97d15621",
+      "cross_branch_state_carryover": false,
+      "equal_input_continuation": true,
+      "later_opportunity_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:no-event-1",
+      "medium_change_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:feedback-row",
+      "medium_dependency_control_refs": [
+        "AE01-CTRL-04",
+        "AE01-CTRL-05",
+        "AE01-CTRL-08",
+        "AE01-L01-CTRL-01"
+      ],
+      "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+      "medium_surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+      "opportunity_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:opportunity-1",
+      "opportunity_index": 1,
+      "opportunity_status": "observed",
+      "oriented_response": 0,
+      "producer_reason_code": "feedback_coupled_pulse_order_mismatch",
+      "producer_record": {
+        "causal_surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+        "idempotency_key": "packet_departure_from_feedback_eligibility_policy:2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3:order_mismatch",
+        "observed_evidence": {
+          "adaptive_topology_entry_allowed": false,
+          "boundary_polarity_score": 0.28125,
+          "copied_from_original_schedule": false,
+          "direct_centroid_write": false,
+          "direct_claim_write": false,
+          "direct_coherence_write": false,
+          "direct_displacement_write": false,
+          "direct_support_mask_write": false,
+          "direct_topology_write": false,
+          "edge_id": 2,
+          "expected_next_channel_id": null,
+          "expected_next_route_id": null,
+          "expected_polarity": "negative",
+          "locomotion_like_claim_allowed": false,
+          "loop_driven_movement_claim_allowed": false,
+          "movement_claim_allowed": false,
+          "native_m6": false,
+          "packet_amount_source": "serialized_producer_policy",
+          "polarity_policy_source": "serialized_producer_policy",
+          "producer_emitted_claim_label": false,
+          "producer_marked_packet_processed": false,
+          "producer_mutated_coherence": false,
+          "producer_mutation_ownership": "step_processes_packet_departure",
+          "producer_reads_committed_feedback_surface_row": true,
+          "producer_reads_transport_successor": false,
+          "regenerated_pulse_source": "feedback_eligibility",
+          "signed_feedback": -0.28125,
+          "source_node_id": 0,
+          "source_pulse_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+          "source_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+          "surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+          "surface_lineage_current": true,
+          "surface_lineage_record_digest": null,
+          "surface_lineage_record_id": null,
+          "target_node_id": 2,
+          "threshold": 0.125,
+          "threshold_source": "serialized_producer_policy",
+          "topology_event_digest": null,
+          "topology_event_id": null,
+          "topology_state_reabsorption_record_digest": null,
+          "topology_state_reabsorption_verified": false
+        },
+        "producer_policy": "packet_departure_from_feedback_eligibility_policy",
+        "producer_version": "lgrc9v3_autonomy_v1",
+        "queued_work_consumed": false,
+        "reason_code": "feedback_coupled_pulse_order_mismatch",
+        "record_id": "lgrc9v3-producer-record-58a7fc7f442a4737a7ad7e84",
+        "scheduled_event_id": null,
+        "scheduled_event_kind": null,
+        "scheduled_event_time_key": null,
+        "thresholds": {
+          "expected_polarity": "negative",
+          "packet_amount": 0.125,
+          "threshold": 0.125
+        },
+        "topology_mutated": false,
+        "trigger_edge_id": 2,
+        "trigger_node_id": 0
+      },
+      "profile_id": "ctx-a-inverted",
+      "raw_response": 0,
+      "raw_snapshot_equal": false,
+      "raw_snapshot_normalization_observed": true,
+      "reader_or_local_differentiation_id": "ctx-a-inverted",
+      "relation_chain_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-medium-reader",
+      "resolved_expected_polarity": "negative",
+      "resolved_profile_identity": {
+        "identity": {
+          "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+          "cross_branch_state_carryover": false,
+          "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+          "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "raw_snapshot_equal": false,
+          "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+          "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+          "static_opportunity_profile_digest": "14a054667ad5baa37db3ae975f8864f5dc4e4dfa7f44b3fad73ef8574bfcb735"
+        },
+        "opportunity_profile_digest": "14a054667ad5baa37db3ae975f8864f5dc4e4dfa7f44b3fad73ef8574bfcb735",
+        "profile_id": "ctx-a-inverted",
+        "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+        "resolved_opportunity_profile_digest": "29bcdb4ab45ce48334ed08998b354d247727f0a9ade62caef16b44a6944b2579"
+      },
+      "response_steps": [],
+      "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+      "seed": 101,
+      "selectivity_group": "inverted",
+      "twin_continuation_digest": "01e1e85cd0cbedeca833ab1c1c442a5b38a4ce78e4ad732649d1ca8f97d15621",
+      "writer_carrier_id": "rcae-p2-i1-seed-101-participant-P",
+      "writer_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-window"
+    },
+    {
+      "admissibility": "admissible",
+      "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+      "causal_order_verified": true,
+      "cell_id": "trace-shuffle",
+      "complete_registered_chain": false,
+      "context": "B",
+      "continuation_digest": "1774960982fe2ae43bd676fb88beda80bdd3d824efa1f1ea47ac55c2f0dce136",
+      "cross_branch_state_carryover": false,
+      "equal_input_continuation": true,
+      "later_opportunity_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:no-event-2",
+      "medium_change_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:feedback-row",
+      "medium_dependency_control_refs": [
+        "AE01-CTRL-04",
+        "AE01-CTRL-05",
+        "AE01-CTRL-08",
+        "AE01-L01-CTRL-01"
+      ],
+      "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+      "medium_surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+      "opportunity_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:opportunity-2",
+      "opportunity_index": 2,
+      "opportunity_status": "observed",
+      "oriented_response": 0,
+      "producer_reason_code": "feedback_coupled_pulse_order_mismatch",
+      "producer_record": {
+        "causal_surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+        "idempotency_key": "packet_departure_from_feedback_eligibility_policy:2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3:order_mismatch",
+        "observed_evidence": {
+          "adaptive_topology_entry_allowed": false,
+          "boundary_polarity_score": 0.28125,
+          "copied_from_original_schedule": false,
+          "direct_centroid_write": false,
+          "direct_claim_write": false,
+          "direct_coherence_write": false,
+          "direct_displacement_write": false,
+          "direct_support_mask_write": false,
+          "direct_topology_write": false,
+          "edge_id": 3,
+          "expected_next_channel_id": null,
+          "expected_next_route_id": null,
+          "expected_polarity": "positive",
+          "locomotion_like_claim_allowed": false,
+          "loop_driven_movement_claim_allowed": false,
+          "movement_claim_allowed": false,
+          "native_m6": false,
+          "packet_amount_source": "serialized_producer_policy",
+          "polarity_policy_source": "serialized_producer_policy",
+          "producer_emitted_claim_label": false,
+          "producer_marked_packet_processed": false,
+          "producer_mutated_coherence": false,
+          "producer_mutation_ownership": "step_processes_packet_departure",
+          "producer_reads_committed_feedback_surface_row": true,
+          "producer_reads_transport_successor": false,
+          "regenerated_pulse_source": "feedback_eligibility",
+          "signed_feedback": 0.28125,
+          "source_node_id": 0,
+          "source_pulse_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+          "source_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+          "surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+          "surface_lineage_current": true,
+          "surface_lineage_record_digest": null,
+          "surface_lineage_record_id": null,
+          "target_node_id": 3,
+          "threshold": 0.125,
+          "threshold_source": "serialized_producer_policy",
+          "topology_event_digest": null,
+          "topology_event_id": null,
+          "topology_state_reabsorption_record_digest": null,
+          "topology_state_reabsorption_verified": false
+        },
+        "producer_policy": "packet_departure_from_feedback_eligibility_policy",
+        "producer_version": "lgrc9v3_autonomy_v1",
+        "queued_work_consumed": false,
+        "reason_code": "feedback_coupled_pulse_order_mismatch",
+        "record_id": "lgrc9v3-producer-record-b9d754454e5133296af57f5c",
+        "scheduled_event_id": null,
+        "scheduled_event_kind": null,
+        "scheduled_event_time_key": null,
+        "thresholds": {
+          "expected_polarity": "positive",
+          "packet_amount": 0.125,
+          "threshold": 0.125
+        },
+        "topology_mutated": false,
+        "trigger_edge_id": 3,
+        "trigger_node_id": 0
+      },
+      "profile_id": "ctx-b-aligned",
+      "raw_response": 0,
+      "raw_snapshot_equal": false,
+      "raw_snapshot_normalization_observed": true,
+      "reader_or_local_differentiation_id": "ctx-b-aligned",
+      "relation_chain_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-medium-reader",
+      "resolved_expected_polarity": "positive",
+      "resolved_profile_identity": {
+        "identity": {
+          "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+          "cross_branch_state_carryover": false,
+          "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+          "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "raw_snapshot_equal": false,
+          "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+          "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+          "static_opportunity_profile_digest": "58a804b8ac6b948aa5252485fca5915d3c85eaddb96431fabb693a546be1c825"
+        },
+        "opportunity_profile_digest": "58a804b8ac6b948aa5252485fca5915d3c85eaddb96431fabb693a546be1c825",
+        "profile_id": "ctx-b-aligned",
+        "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+        "resolved_opportunity_profile_digest": "aa9f91088125a0932a7b73b09e2f654fed7a87822eee6da992a22b8b94a927ea"
+      },
+      "response_steps": [],
+      "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+      "seed": 101,
+      "selectivity_group": "aligned",
+      "twin_continuation_digest": "1774960982fe2ae43bd676fb88beda80bdd3d824efa1f1ea47ac55c2f0dce136",
+      "writer_carrier_id": "rcae-p2-i1-seed-101-participant-P",
+      "writer_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-window"
+    },
+    {
+      "admissibility": "admissible",
+      "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+      "causal_order_verified": true,
+      "cell_id": "trace-shuffle",
+      "complete_registered_chain": false,
+      "context": "B",
+      "continuation_digest": "805114f5acbf49283d8d588fde6e621ee3a43be2288e0035a8126626e1db9a4a",
+      "cross_branch_state_carryover": false,
+      "equal_input_continuation": true,
+      "later_opportunity_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:no-event-3",
+      "medium_change_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:feedback-row",
+      "medium_dependency_control_refs": [
+        "AE01-CTRL-04",
+        "AE01-CTRL-05",
+        "AE01-CTRL-08",
+        "AE01-L01-CTRL-01"
+      ],
+      "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+      "medium_surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+      "opportunity_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:opportunity-3",
+      "opportunity_index": 3,
+      "opportunity_status": "observed",
+      "oriented_response": 0,
+      "producer_reason_code": "feedback_coupled_pulse_order_mismatch",
+      "producer_record": {
+        "causal_surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+        "idempotency_key": "packet_departure_from_feedback_eligibility_policy:2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3:order_mismatch",
+        "observed_evidence": {
+          "adaptive_topology_entry_allowed": false,
+          "boundary_polarity_score": 0.28125,
+          "copied_from_original_schedule": false,
+          "direct_centroid_write": false,
+          "direct_claim_write": false,
+          "direct_coherence_write": false,
+          "direct_displacement_write": false,
+          "direct_support_mask_write": false,
+          "direct_topology_write": false,
+          "edge_id": 3,
+          "expected_next_channel_id": null,
+          "expected_next_route_id": null,
+          "expected_polarity": "negative",
+          "locomotion_like_claim_allowed": false,
+          "loop_driven_movement_claim_allowed": false,
+          "movement_claim_allowed": false,
+          "native_m6": false,
+          "packet_amount_source": "serialized_producer_policy",
+          "polarity_policy_source": "serialized_producer_policy",
+          "producer_emitted_claim_label": false,
+          "producer_marked_packet_processed": false,
+          "producer_mutated_coherence": false,
+          "producer_mutation_ownership": "step_processes_packet_departure",
+          "producer_reads_committed_feedback_surface_row": true,
+          "producer_reads_transport_successor": false,
+          "regenerated_pulse_source": "feedback_eligibility",
+          "signed_feedback": -0.28125,
+          "source_node_id": 0,
+          "source_pulse_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+          "source_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "surface_digest": "2ab78216908fbb7bc41257764a3cb5cbe4fedc68532f684302fb2f3335b3ffc3",
+          "surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:feedback_eligibility",
+          "surface_lineage_current": true,
+          "surface_lineage_record_digest": null,
+          "surface_lineage_record_id": null,
+          "target_node_id": 3,
+          "threshold": 0.125,
+          "threshold_source": "serialized_producer_policy",
+          "topology_event_digest": null,
+          "topology_event_id": null,
+          "topology_state_reabsorption_record_digest": null,
+          "topology_state_reabsorption_verified": false
+        },
+        "producer_policy": "packet_departure_from_feedback_eligibility_policy",
+        "producer_version": "lgrc9v3_autonomy_v1",
+        "queued_work_consumed": false,
+        "reason_code": "feedback_coupled_pulse_order_mismatch",
+        "record_id": "lgrc9v3-producer-record-b9d754454e5133296af57f5c",
+        "scheduled_event_id": null,
+        "scheduled_event_kind": null,
+        "scheduled_event_time_key": null,
+        "thresholds": {
+          "expected_polarity": "negative",
+          "packet_amount": 0.125,
+          "threshold": 0.125
+        },
+        "topology_mutated": false,
+        "trigger_edge_id": 3,
+        "trigger_node_id": 0
+      },
+      "profile_id": "ctx-b-inverted",
+      "raw_response": 0,
+      "raw_snapshot_equal": false,
+      "raw_snapshot_normalization_observed": true,
+      "reader_or_local_differentiation_id": "ctx-b-inverted",
+      "relation_chain_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-medium-reader",
+      "resolved_expected_polarity": "negative",
+      "resolved_profile_identity": {
+        "identity": {
+          "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+          "cross_branch_state_carryover": false,
+          "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+          "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+          "raw_snapshot_equal": false,
+          "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+          "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+          "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+          "static_opportunity_profile_digest": "1c785355dc84598a2e4026489f60856eadc77a3c9cf76188349bb07c610189b5"
+        },
+        "opportunity_profile_digest": "1c785355dc84598a2e4026489f60856eadc77a3c9cf76188349bb07c610189b5",
+        "profile_id": "ctx-b-inverted",
+        "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+        "resolved_opportunity_profile_digest": "a9c9282e074bdbfb23415ef69b9393afea359714077d5c522bb87762f7f010be"
+      },
+      "response_steps": [],
+      "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+      "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+      "seed": 101,
+      "selectivity_group": "inverted",
+      "twin_continuation_digest": "805114f5acbf49283d8d588fde6e621ee3a43be2288e0035a8126626e1db9a4a",
+      "writer_carrier_id": "rcae-p2-i1-seed-101-participant-P",
+      "writer_event_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1:writer-window"
+    }
+  ],
+  "participant_opportunity_signature": "9f41d0d010b7c138b321084eefbcefc7ff71ba463a67189fb1d75cb5d2652d4a",
+  "post_writer_base_state_digest": "8aa7d59066cecd006be65b885e61b2d63f8ea14d1d57e8ad8ec351be490ef465",
+  "preserved_trace_fields_audit": {
+    "passed": true,
+    "single_axis_declared": true
+  },
+  "producer_configuration_except_medium_digest": "34c370ad0f3bb0d2fcc4f653029fa5aeb8a0376dd7a257531f240f9b5668a4d5",
+  "producer_invocation_count": 4,
+  "producer_policy": "packet_departure_from_feedback_eligibility_policy",
+  "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+  "raw_snapshot_normalization_observed": true,
+  "reconstruction": {
+    "command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py run-one --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/exec-freeze.json --cell trace-shuffle --seed 101 --attempt 1 --graph-root LOCAL_GRAPH_CHECKOUT --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-101.json",
+    "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-101.json",
+    "status": "not_yet_independently_reconstructed"
+  },
+  "registered_baseline_digest": "7f8bf3351d60b95bfb8a450dbc5c35792d69b44994a5344c58bf62fd63a6b120",
+  "resolved_profile_identities": [
+    {
+      "identity": {
+        "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+        "cross_branch_state_carryover": false,
+        "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+        "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+        "raw_snapshot_equal": false,
+        "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+        "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+        "static_opportunity_profile_digest": "05b1c19e9ce2abbd966917a5414c33a97d8108796ad9ad8e09d601125d925cc3"
+      },
+      "opportunity_profile_digest": "05b1c19e9ce2abbd966917a5414c33a97d8108796ad9ad8e09d601125d925cc3",
+      "profile_id": "ctx-a-aligned",
+      "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+      "resolved_opportunity_profile_digest": "db7038d2824021eec4f2fa4026d3e922ac7b62c0e86cecbb5b4e1f239a69dbef"
+    },
+    {
+      "identity": {
+        "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+        "cross_branch_state_carryover": false,
+        "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+        "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+        "raw_snapshot_equal": false,
+        "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+        "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+        "static_opportunity_profile_digest": "14a054667ad5baa37db3ae975f8864f5dc4e4dfa7f44b3fad73ef8574bfcb735"
+      },
+      "opportunity_profile_digest": "14a054667ad5baa37db3ae975f8864f5dc4e4dfa7f44b3fad73ef8574bfcb735",
+      "profile_id": "ctx-a-inverted",
+      "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a",
+      "resolved_opportunity_profile_digest": "29bcdb4ab45ce48334ed08998b354d247727f0a9ade62caef16b44a6944b2579"
+    },
+    {
+      "identity": {
+        "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+        "cross_branch_state_carryover": false,
+        "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+        "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+        "raw_snapshot_equal": false,
+        "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+        "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+        "static_opportunity_profile_digest": "58a804b8ac6b948aa5252485fca5915d3c85eaddb96431fabb693a546be1c825"
+      },
+      "opportunity_profile_digest": "58a804b8ac6b948aa5252485fca5915d3c85eaddb96431fabb693a546be1c825",
+      "profile_id": "ctx-b-aligned",
+      "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+      "resolved_opportunity_profile_digest": "aa9f91088125a0932a7b73b09e2f654fed7a87822eee6da992a22b8b94a927ea"
+    },
+    {
+      "identity": {
+        "branch_point_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "branch_point_snapshot_digest": "326610c6fd048f5da0b73330949c08fd28da65540ce9226f85445c312a85a93c",
+        "cross_branch_state_carryover": false,
+        "medium_history_digest": "f8cf7bc28cdba2e6deedf53201d928703db6eaaa5d912b33b99321d883a1023b",
+        "pulse_contact_surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+        "raw_snapshot_equal": false,
+        "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+        "restored_restoration_projection_digest": "6e00c059a16dedd0a86e22bbfade2b8eb93920e312155366b91c3e79950a6b75",
+        "restored_snapshot_digest": "bae35ee7c3793c05648df0f7990e5310b8191089ddeedf4e72bc3e64ef1262ae",
+        "static_opportunity_profile_digest": "1c785355dc84598a2e4026489f60856eadc77a3c9cf76188349bb07c610189b5"
+      },
+      "opportunity_profile_digest": "1c785355dc84598a2e4026489f60856eadc77a3c9cf76188349bb07c610189b5",
+      "profile_id": "ctx-b-inverted",
+      "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777",
+      "resolved_opportunity_profile_digest": "a9c9282e074bdbfb23415ef69b9393afea359714077d5c522bb87762f7f010be"
+    }
+  ],
+  "restoration_projection_match": true,
+  "run_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1",
+  "rung_assignment_opened": false,
+  "runtime_binding": {
+    "execution_class": "pygrc_runtime_with_rcae_producer",
+    "execution_specific_capabilities": {
+      "branch_snapshot_persistence": [
+        "models.LGRC9V3.save",
+        "models.LGRC9V3.load"
+      ],
+      "feedback_conditioned_packet_production": [
+        "models.LGRC9V3.produce_events"
+      ],
+      "runtime_state_audit": [
+        "models.LGRC9V3.get_state",
+        "models.LGRC9V3.snapshot"
+      ],
+      "writer_packet_scheduling": [
+        "models.LGRC9V3.schedule_packet_departure"
+      ]
+    },
+    "fallback_used": false,
+    "observed_identity": "pygrc==0.1"
+  },
+  "runtime_receipt": {
+    "conformance_status": "passed",
+    "execution_specific_capabilities": {
+      "branch_snapshot_persistence": [
+        "models.LGRC9V3.save",
+        "models.LGRC9V3.load"
+      ],
+      "feedback_conditioned_packet_production": [
+        "models.LGRC9V3.produce_events"
+      ],
+      "runtime_state_audit": [
+        "models.LGRC9V3.get_state",
+        "models.LGRC9V3.snapshot"
+      ],
+      "writer_packet_scheduling": [
+        "models.LGRC9V3.schedule_packet_departure"
+      ]
+    },
+    "fallback_used": false,
+    "requested_operation_classes": [
+      "p2_i1_runtime_preflight",
+      "fixture_construction",
+      "route_aspect_validation",
+      "snapshot_round_trip",
+      "packet_queue_step",
+      "feedback_surface_emission",
+      "feedback_conditioned_packet_production"
+    ],
+    "run_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1",
+    "runtime_identity": "pygrc==0.1"
+  },
+  "schema_version": "1.0.0",
+  "seed": 101,
+  "source_revisions": {
+    "graph": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+    "rcae_current_head": "94505ef73e38778621ce5f03170034d937a6f962",
+    "rcae_execution_source": "c2def54c3721c506c28fc9f14390b1ba683a98ec",
+    "registration_freeze": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+  },
+  "static_profile_identities": [
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "A",
+        "edge_id": 2,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "positive",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "aligned",
+        "opportunity_index": 0,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-a-aligned",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 2
+      },
+      "opportunity_profile_digest": "05b1c19e9ce2abbd966917a5414c33a97d8108796ad9ad8e09d601125d925cc3",
+      "profile_id": "ctx-a-aligned",
+      "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a"
+    },
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "A",
+        "edge_id": 2,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "negative",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "inverted",
+        "opportunity_index": 1,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-a-inverted",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 2
+      },
+      "opportunity_profile_digest": "14a054667ad5baa37db3ae975f8864f5dc4e4dfa7f44b3fad73ef8574bfcb735",
+      "profile_id": "ctx-a-inverted",
+      "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a"
+    },
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "B",
+        "edge_id": 3,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "positive",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "aligned",
+        "opportunity_index": 2,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-b-aligned",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 3
+      },
+      "opportunity_profile_digest": "58a804b8ac6b948aa5252485fca5915d3c85eaddb96431fabb693a546be1c825",
+      "profile_id": "ctx-b-aligned",
+      "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777"
+    },
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "B",
+        "edge_id": 3,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "negative",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "inverted",
+        "opportunity_index": 3,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-b-inverted",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 3
+      },
+      "opportunity_profile_digest": "1c785355dc84598a2e4026489f60856eadc77a3c9cf76188349bb07c610189b5",
+      "profile_id": "ctx-b-inverted",
+      "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777"
+    }
+  ],
+  "support_budget_projection": {
+    "edge_policy": {
+      "conductance": 1.0,
+      "flux_coupling": 0.0,
+      "geometric_length": 1.0,
+      "temporal_delay": 1.0
+    },
+    "participant_reserve": 0.96875,
+    "reader_packet_amount": 0.125,
+    "resolved_node_coherences": {
+      "A": 0.5,
+      "B": 0.5,
+      "P": 0.96875,
+      "W": 1.03125
+    },
+    "topology_digest": "eb2ca4facaaab0a1526f97318b91e7b02879564fcaca34f790011f8bd99079d3",
+    "total_native_coherence": 3.0,
+    "writer_packet_amount": 0.25
+  },
+  "support_budget_projection_digest": "29036c7ff722428d0918bc1e666f4b06096f34fe312e9d943dd9ba2208112249",
+  "terminal_classification_opened": false,
+  "w0_queue_empty": true,
+  "w0_surface_empty": true,
+  "worker_scope_id": "P2-I1-C02-worker:trace-shuffle:seed-101:attempt-1",
+  "writer_event_digest": "8dbb59f33ba8f5efd1bc67ad44c0c47849cc46366fe8893cceb96eaf88fec690",
+  "writer_steps": [
+    {
+      "bookkeeping": {
+        "boundary_birth_trial_queue_after": 0,
+        "boundary_birth_trial_queue_before": 0,
+        "causal_flux_events_processed": 1,
+        "causal_pulse_substrate_surface_rows": 1,
+        "causal_spark_diagnostic_events": 0,
+        "causal_spark_evaluation_index": 0,
+        "causal_topology_integration_events": 0,
+        "checkpoint_index": 1,
+        "delayed_evaluation_applied": false,
+        "event_time_key": 1.0,
+        "local_update_eligibility_events": 0,
+        "local_update_events": 0,
+        "packetized_flux_applied": true,
+        "processed_event_id": "lgrc9v3-packet-event-6fc8195db1230ee3",
+        "processed_event_kind": "lgrc9v3_packet_departure",
+        "queue_length_after": 1,
+        "queue_length_before": 1,
+        "scheduler_event_index": 1,
+        "step_order": [
+          "order_event_queue",
+          "process_packet_event",
+          "emit_causal_pulse_substrate_surface_row",
+          "route_arrival_eligibility",
+          "apply_packetized_local_update",
+          "evaluate_causal_spark_diagnostics",
+          "checkpoint_runtime_state"
+        ],
+        "topology_events_routed": 0
+      },
+      "events": [
+        {
+          "kind": "lgrc9v3_packet_departure",
+          "payload": {
+            "budget_after": 3.0,
+            "budget_before": 3.0,
+            "budget_error": 0.0,
+            "checkpoint_index": 1,
+            "event_schema_version": "lgrc9v3_runtime_event_v1",
+            "event_time_key": 1.0,
+            "identity_acceptance_emitted": false,
+            "mechanical_expansion_emitted": false,
+            "packet_record": {
+              "amount": 0.25,
+              "arrival_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+              "arrival_event_time_key": 2.0,
+              "arrival_scheduler_event_index": 2,
+              "departure_event_id": "lgrc9v3-packet-event-6fc8195db1230ee3",
+              "departure_event_time_key": 1.0,
+              "departure_scheduler_event_index": 1,
+              "edge_id": 0,
+              "packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+              "packet_state": "in_flight",
+              "source_lineage_id": null,
+              "source_node_id": 0,
+              "target_lineage_id": null,
+              "target_node_id": 1
+            },
+            "processed_event": {
+              "amount": 0.25,
+              "budget_after": 3.0,
+              "budget_before": 3.0,
+              "budget_error": 0.0,
+              "edge_id": 0,
+              "event_id": "lgrc9v3-packet-event-6fc8195db1230ee3",
+              "event_kind": "lgrc9v3_packet_departure",
+              "event_time_key": 1.0,
+              "packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+              "scheduler_event_index": 1,
+              "source_node_id": 0,
+              "target_node_id": 1
+            },
+            "proper_time_update": {
+              "delta_event_time_key": 1.0,
+              "delta_tau": 1.0,
+              "event_time_key": 1.0,
+              "lapse": 1.0,
+              "node_id": 0,
+              "node_proper_time": 1.0,
+              "previous_event_time_key": 0.0,
+              "previous_node_proper_time": 0.0,
+              "proper_time_accumulation_policy": "local_event_frontier"
+            },
+            "runtime_family": "LGRC9V3",
+            "scheduler_event_index": 1,
+            "spark_event_emitted": false,
+            "state_mutated": true,
+            "topology_mutated": false
+          },
+          "source_family": "LGRC9V3",
+          "step_index": 1
+        },
+        {
+          "kind": "lgrc9v3_causal_pulse_substrate_surface_row",
+          "payload": {
+            "artifact_kind": "lgrc9v3_causal_pulse_substrate_surface_row",
+            "artifact_schema_version": "lgrc9v3_causal_pulse_substrate_surface_row_v1",
+            "claim_flags": {
+              "adaptive_topology_entry_allowed": false,
+              "agency_claim_allowed": false,
+              "biological_claim_allowed": false,
+              "identity_acceptance_claim_allowed": false,
+              "locomotion_like_claim_allowed": false,
+              "loop_driven_movement_claim_allowed": false,
+              "movement_claim_allowed": false,
+              "native_m6": false
+            },
+            "contact_amount": 0.25,
+            "event_time_key": 1.0,
+            "evidence_class": "causal_pulse_substrate_surface",
+            "lgrc_runtime_level": "lgrc2",
+            "lineage_status": "fixed_topology",
+            "mode_version": "lgrc9v3_causal_pulse_substrate_surface_v1",
+            "node_proper_time": {
+              "0": 1.0,
+              "1": 0.0,
+              "2": 0.0,
+              "3": 0.0
+            },
+            "producer_records": [],
+            "pulse_channel_id": "edge:0",
+            "pulse_event_id": "lgrc9v3-packet-event-6fc8195db1230ee3",
+            "pulse_event_kind": "lgrc9v3_packet_departure",
+            "pulse_packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+            "pulse_route_step": 0,
+            "route_aspect_digest": "0119b504869677397f912e8082e1bbb292025442da25e25af58220c026009cb9",
+            "route_aspect_id": "unbound_lgrc2_packet_contact",
+            "runtime_family": "LGRC9V3",
+            "runtime_visible_inputs": [
+              "committed_packet_event",
+              "route_aspect_digest",
+              "pulse_channel_id"
+            ],
+            "scheduler_event_index": 2,
+            "schema_version": "lgrc9v3_causal_pulse_substrate_surface_row_v1",
+            "source_node_id": 0,
+            "surface_budget_after": 0.0,
+            "surface_budget_before": 0.0,
+            "surface_budget_error": 0.0,
+            "surface_budget_surface": "derived_surface_accounting",
+            "surface_digest": "1ad4676b10e22dd3b05cdb8a0126527d6144896e8b8235d135b04e4047849d4a",
+            "surface_id": "surface:lgrc9v3-packet-event-6fc8195db1230ee3:route_local_pulse_contact",
+            "surface_kind": "route_local_pulse_contact",
+            "surface_nodes": [
+              0,
+              1
+            ],
+            "surface_policy_enabled": true,
+            "surface_policy_id": "emit_committed_packet_contact_rows",
+            "surface_policy_validated": true,
+            "surface_state_digest": "dd438e9611a3707b81e1ba5c574afe9de6798c3411c91dac0a8ec593805467fa",
+            "surface_state_id": "surface-state:lgrc9v3-packet-event-6fc8195db1230ee3:1",
+            "surface_update_policy": {
+              "activation_gate": "committed_packet_event",
+              "allowed_surface_kinds": [
+                "route_local_pulse_contact"
+              ],
+              "policy_id": "replay_declared_surface_update_policy",
+              "version": "surface_update_policy_v1"
+            },
+            "surface_values_after": {
+              "committed_packet_event_observed": true,
+              "source_event_id": "lgrc9v3-packet-event-6fc8195db1230ee3",
+              "surface_contact_mass": 0.25
+            },
+            "surface_values_before": {
+              "committed_packet_event_observed": false,
+              "surface_contact_mass": 0.0
+            },
+            "target_node_id": 1
+          },
+          "source_family": "LGRC9V3",
+          "step_index": 2
+        }
+      ],
+      "step_index": 1,
+      "time": 1.0
+    },
+    {
+      "bookkeeping": {
+        "boundary_birth_trial_queue_after": 0,
+        "boundary_birth_trial_queue_before": 0,
+        "causal_flux_events_processed": 1,
+        "causal_pulse_substrate_surface_rows": 1,
+        "causal_spark_diagnostic_events": 0,
+        "causal_spark_evaluation_index": 1,
+        "causal_topology_integration_events": 0,
+        "checkpoint_index": 2,
+        "delayed_evaluation_applied": false,
+        "event_time_key": 2.0,
+        "local_update_eligibility_events": 1,
+        "local_update_events": 1,
+        "packetized_flux_applied": true,
+        "processed_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+        "processed_event_kind": "lgrc9v3_packet_arrival",
+        "queue_length_after": 0,
+        "queue_length_before": 1,
+        "scheduler_event_index": 2,
+        "step_order": [
+          "order_event_queue",
+          "process_packet_event",
+          "emit_causal_pulse_substrate_surface_row",
+          "route_arrival_eligibility",
+          "apply_packetized_local_update",
+          "evaluate_causal_spark_diagnostics",
+          "checkpoint_runtime_state"
+        ],
+        "topology_events_routed": 0
+      },
+      "events": [
+        {
+          "kind": "lgrc9v3_packet_arrival",
+          "payload": {
+            "budget_after": 3.0,
+            "budget_before": 3.0,
+            "budget_error": 0.0,
+            "checkpoint_index": 2,
+            "event_schema_version": "lgrc9v3_runtime_event_v1",
+            "event_time_key": 2.0,
+            "identity_acceptance_emitted": false,
+            "mechanical_expansion_emitted": false,
+            "packet_record": {
+              "amount": 0.25,
+              "arrival_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+              "arrival_event_time_key": 2.0,
+              "arrival_scheduler_event_index": 2,
+              "departure_event_id": "lgrc9v3-packet-event-6fc8195db1230ee3",
+              "departure_event_time_key": 1.0,
+              "departure_scheduler_event_index": 1,
+              "edge_id": 0,
+              "packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+              "packet_state": "arrived",
+              "source_lineage_id": null,
+              "source_node_id": 0,
+              "target_lineage_id": null,
+              "target_node_id": 1
+            },
+            "processed_event": {
+              "amount": 0.25,
+              "budget_after": 3.0,
+              "budget_before": 3.0,
+              "budget_error": 0.0,
+              "edge_id": 0,
+              "event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+              "event_kind": "lgrc9v3_packet_arrival",
+              "event_time_key": 2.0,
+              "packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+              "scheduler_event_index": 2,
+              "source_node_id": 0,
+              "target_node_id": 1
+            },
+            "proper_time_update": {
+              "delta_event_time_key": 2.0,
+              "delta_tau": 2.0,
+              "event_time_key": 2.0,
+              "lapse": 1.0,
+              "node_id": 1,
+              "node_proper_time": 2.0,
+              "previous_event_time_key": 0.0,
+              "previous_node_proper_time": 0.0,
+              "proper_time_accumulation_policy": "local_event_frontier"
+            },
+            "runtime_family": "LGRC9V3",
+            "scheduler_event_index": 2,
+            "spark_event_emitted": false,
+            "state_mutated": true,
+            "topology_mutated": false
+          },
+          "source_family": "LGRC9V3",
+          "step_index": 2
+        },
+        {
+          "kind": "lgrc9v3_causal_pulse_substrate_surface_row",
+          "payload": {
+            "artifact_kind": "lgrc9v3_causal_pulse_substrate_surface_row",
+            "artifact_schema_version": "lgrc9v3_causal_pulse_substrate_surface_row_v1",
+            "claim_flags": {
+              "adaptive_topology_entry_allowed": false,
+              "agency_claim_allowed": false,
+              "biological_claim_allowed": false,
+              "identity_acceptance_claim_allowed": false,
+              "locomotion_like_claim_allowed": false,
+              "loop_driven_movement_claim_allowed": false,
+              "movement_claim_allowed": false,
+              "native_m6": false
+            },
+            "contact_amount": 0.25,
+            "event_time_key": 2.0,
+            "evidence_class": "causal_pulse_substrate_surface",
+            "lgrc_runtime_level": "lgrc2",
+            "lineage_status": "fixed_topology",
+            "mode_version": "lgrc9v3_causal_pulse_substrate_surface_v1",
+            "node_proper_time": {
+              "0": 1.0,
+              "1": 2.0,
+              "2": 0.0,
+              "3": 0.0
+            },
+            "producer_records": [],
+            "pulse_channel_id": "edge:0",
+            "pulse_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+            "pulse_event_kind": "lgrc9v3_packet_arrival",
+            "pulse_packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+            "pulse_route_step": 1,
+            "route_aspect_digest": "ffff4afca7301fa650ce6362dcaa3ab47ee8efa56bf6b385c9932f7982cebdc0",
+            "route_aspect_id": "unbound_lgrc2_packet_contact",
+            "runtime_family": "LGRC9V3",
+            "runtime_visible_inputs": [
+              "committed_packet_event",
+              "route_aspect_digest",
+              "pulse_channel_id"
+            ],
+            "scheduler_event_index": 3,
+            "schema_version": "lgrc9v3_causal_pulse_substrate_surface_row_v1",
+            "source_node_id": 0,
+            "surface_budget_after": 0.0,
+            "surface_budget_before": 0.0,
+            "surface_budget_error": 0.0,
+            "surface_budget_surface": "derived_surface_accounting",
+            "surface_digest": "5f195ab53819f3963526a0bcbc15fe53e087d721b2239698d0daec1ccd8a833e",
+            "surface_id": "surface:lgrc9v3-packet-event-385a7a9d0def8893:route_local_pulse_contact",
+            "surface_kind": "route_local_pulse_contact",
+            "surface_nodes": [
+              0,
+              1
+            ],
+            "surface_policy_enabled": true,
+            "surface_policy_id": "emit_committed_packet_contact_rows",
+            "surface_policy_validated": true,
+            "surface_state_digest": "e06c01c832e90f04d320196ce59b0784614361954de43955d2e800e92da4f6e5",
+            "surface_state_id": "surface-state:lgrc9v3-packet-event-385a7a9d0def8893:2",
+            "surface_update_policy": {
+              "activation_gate": "committed_packet_event",
+              "allowed_surface_kinds": [
+                "route_local_pulse_contact"
+              ],
+              "policy_id": "replay_declared_surface_update_policy",
+              "version": "surface_update_policy_v1"
+            },
+            "surface_values_after": {
+              "committed_packet_event_observed": true,
+              "source_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+              "surface_contact_mass": 0.25
+            },
+            "surface_values_before": {
+              "committed_packet_event_observed": false,
+              "surface_contact_mass": 0.0
+            },
+            "target_node_id": 1
+          },
+          "source_family": "LGRC9V3",
+          "step_index": 3
+        },
+        {
+          "kind": "lgrc9v3_packet_arrival_eligibility",
+          "payload": {
+            "amount": 0.25,
+            "arrival_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+            "artifact_kind": "lgrc9v3_packet_arrival_eligibility",
+            "artifact_schema_version": "lgrc9v3_packet_arrival_eligibility_v1",
+            "causal_layer_mode": "packetized_fixed_topology",
+            "edge_id": 0,
+            "event_time_key": 2.0,
+            "evidence_class": "packet_arrival_eligibility",
+            "identity_acceptance_emitted": false,
+            "lgrc_runtime_level": "lgrc2",
+            "local_update_eligible": true,
+            "mechanical_expansion_emitted": false,
+            "mode_version": "lgrc2_packetized_fixed_topology_v1",
+            "packet_id": "lgrc9v3-packet-074d7ec0bac72788",
+            "runtime_family": "LGRC9V3",
+            "scheduler_event_index": 2,
+            "source_node_id": 0,
+            "spark_diagnostic_eligible": true,
+            "spark_event_emitted": false,
+            "target_node_id": 1,
+            "topology_signature": {
+              "edge_records": [
+                {
+                  "edge_id": 0,
+                  "endpoints": [
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "edge_id": 1,
+                  "endpoints": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                },
+                {
+                  "edge_id": 2,
+                  "endpoints": [
+                    [
+                      0,
+                      2
+                    ],
+                    [
+                      2,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "edge_id": 3,
+                  "endpoints": [
+                    [
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "node_ids": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          },
+          "source_family": "LGRC9V3",
+          "step_index": 2
+        },
+        {
+          "kind": "lgrc9v3_local_update",
+          "payload": {
+            "arrival_amount": 0.25,
+            "arrival_event_id": "lgrc9v3-packet-event-385a7a9d0def8893",
+            "causal_availability_source": "packet_arrival_eligibility",
+            "checkpoint_index": 2,
+            "delayed_evaluation_applied": false,
+            "event_schema_version": "lgrc9v3_local_update_event_v1",
+            "event_time_key": 2.0,
+            "identity_acceptance_emitted": false,
+            "local_continuity_formula_applied": false,
+            "local_update_event_id": "lgrc9v3-local-update-2-1-lgrc9v3-packet-event-385a7a9d0def8893",
+            "mechanical_expansion_emitted": false,
+            "packetized_flux_applied": true,
+            "proper_time_update": {
+              "delta_event_time_key": 2.0,
+              "delta_tau": 2.0,
+              "event_time_key": 2.0,
+              "lapse": 1.0,
+              "node_id": 1,
+              "node_proper_time": 2.0,
+              "previous_event_time_key": 0.0,
+              "previous_node_proper_time": 0.0,
+              "proper_time_accumulation_policy": "local_event_frontier"
+            },
+            "route_count": 0,
+            "runtime_family": "LGRC9V3",
+            "scheduled_departure_event_ids": [],
+            "scheduled_packet_count": 0,
+            "scheduled_packet_ids": [],
+            "scheduler_event_index": 2,
+            "spark_event_emitted": false,
+            "state_mutated": true,
+            "target_node_id": 1,
+            "topology_mutated": false
+          },
+          "source_family": "LGRC9V3",
+          "step_index": 2
+        }
+      ],
+      "step_index": 2,
+      "time": 2.0
+    }
+  ]
+}

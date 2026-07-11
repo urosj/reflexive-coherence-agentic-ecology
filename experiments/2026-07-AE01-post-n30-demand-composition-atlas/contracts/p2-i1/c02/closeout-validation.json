@@ -1,0 +1,9 @@
+{
+  "analysis_digest": "df72d8e5813f7fdd159974dc23812af04c4f6697b7dcf645a11443b8e7e9fb38",
+  "artifact_kind": "p2_i1_c02_closeout_validation",
+  "developmental_semantic_digest": "380bd9ca7bc4c6d838ca3cc50f0f1352d55d3894ccd345e4fd2ce8bfcea8c2df",
+  "requirement_semantic_digest": "b42f20f7d71bc87d9011cf996adc433c12d071de89849ccb5c0c681f3e489156",
+  "schema_version": "1.0.0",
+  "status": "passed",
+  "terminal_semantic_digest": "a4b985e1bdda87632f9dc3de18d23cc970b35487ba7d968c2971dab62b884126"
+}
