@@ -1,0 +1,23 @@
+{
+  "record": {
+    "affected_lane_ids": ["AE01-L01"],
+    "blocks": [
+      "order-invariant transfer claim",
+      "using absence of observed contamination as proof that order never matters"
+    ],
+    "category": "measurement",
+    "debt_id": "rcae-p2-i1-fixed-order-debt",
+    "direction": "local_ae01",
+    "discharge_requirements": [
+      "Run a newly preregistered order contrast or deterministic permutation",
+      "Show that per-attempt fresh workers and read-only external state preserve the same scientific result"
+    ],
+    "disposition": "Use the frozen listed order for reproducibility, require fresh workers and contamination audits, and interpret only this order",
+    "evidence_refs": [],
+    "extensions": {},
+    "source_description": "The primary cycle uses a fixed seven-cell order; fresh-worker isolation controls state carryover but does not establish scientific order invariance",
+    "status": "open"
+  },
+  "record_type": "debt_record",
+  "schema_version": "1.1.0"
+}

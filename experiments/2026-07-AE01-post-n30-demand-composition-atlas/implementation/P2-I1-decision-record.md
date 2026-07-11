@@ -65,6 +65,11 @@ reconstruction requirements.
 | `P2-I1-DEC-018` | Which single carrier/timescale axis should the final contrast vary? | Accepted: double later reader-packet amount | Resolves `L01-Q21`; bounded carrier-load contrast only | 2026-07-11 |
 | `P2-I1-DEC-019` | Which comparator owns the primary normalized margin, and which comparisons remain causal controls? | Accepted: reference is primary; row absence owns medium dependency and selectivity | Resolves `L01-Q22`; completes normalized-margin specialization | 2026-07-11 |
 | `P2-I1-DEC-020` | Which gate authorizes candidate execution without making the post-execution gate circular? | Accepted: explicit cycle-scoped `EXEC-FREEZE` | Bounded v2 CAL-PRE/CAL refresh passed; REG-GATE resumed | 2026-07-11 |
+| `P2-I1-DEC-021` | How should REG-GATE become machine-verifiable without prematurely adding a first-class registration schema? | Accepted: experiment-local policy plus existing records and manifest | Constrains REG-GATE; R3 retains schema-admission decision | 2026-07-11 |
+| `P2-I1-DEC-022` | Should registration and execution use one retained realization profile or transition between profiles? | Accepted: one path-free, cycle-spanning conformance profile | Constrains REG-GATE and EXEC-FREEZE; grants no execution authority | 2026-07-11 |
+| `P2-I1-DEC-023` | How should baseline/reset identity remain exact across seven cells and three seed transforms? | Accepted: per-configuration identity plus fresh worker isolation | Resolves REG-GATE reset/contamination policy; execution proof remains open | 2026-07-11 |
+| `P2-I1-DEC-024` | How should registration distinguish control applicability, resolution stage, and observed outcome? | Accepted: three independent control-lifecycle fields | Constrains all REG-GATE control plans; R3 retains schema-admission decision | 2026-07-11 |
+| `P2-I1-DEC-025` | Does the primary cycle require constructed-scaffold withdrawal? | Accepted: not applicable; no constructed scaffold carries the claimed relation | Resolves `AE01-L01-CTRL-05` applicability; guarded reopening only | 2026-07-11 |
 
 ## 3. `P2-I1-DEC-001` — Realization family
 
@@ -2432,12 +2437,404 @@ Reopen `P2-I1-DEC-020` if:
 - the execution-close gate cannot remain distinct from terminal scientific
   interpretation.
 
-## 24. Current decision boundary and next work
+## 24. `P2-I1-DEC-021` — Registration representation
+
+**Status:** accepted; source materialized, retained freeze and manifest pending
+
+**Question IDs:** REG-GATE representation and the deferred R3 contract-adequacy
+question
+
+### 24.1 Decision question
+
+How should P2-I1 materialize a portable, machine-verifiable registration bundle
+without either reducing registration to Markdown or prematurely revising the
+common schema with a first-class `lane_registration` record?
+
+### 24.2 Options considered
+
+| Representation | Advantage | Main problem | Disposition |
+| --- | --- | --- | --- |
+| Experiment-local registration policy plus existing schema records and resolved manifest | Tests the accepted Phase 1 contract set in concrete use while keeping every relationship machine-verifiable | Requires an experiment-local validator and derived registration freeze | **Accepted** |
+| Add first-class `lane_registration` and `control_outcome` schema records now | Makes registration and later control outcomes explicit core types | Reopens Phase 1 before concrete use demonstrates that existing records are insufficient | Deferred to R3 |
+| Markdown checklist and authored registration report only | Low implementation cost | Cannot prove identity equality, exact controls, execution configuration, or candidate absence | Rejected |
+| One opaque custom registration JSON replacing existing records | Simple single file | Creates an unreviewed parallel schema and hides record authority | Rejected |
+
+### 24.3 Accepted bundle architecture
+
+The registration bundle consists of:
+
+1. one experiment-local `p2_i1_registration_policy.json` configuration that
+   freezes operational identities, imported measurement fields, cells, seeds,
+   order, reset/retry/resource policies, controls, expected artifacts,
+   reconstruction, claim boundaries, and `EXEC-FREEZE` prerequisites;
+2. existing schema-valid `realization_profile`, `runtime_binding_receipt`,
+   `pattern_card`, `medium_surface`, `constructed_mechanism`, `claim_boundary`,
+   and applicable debt records;
+3. one derived experiment-local registration freeze that computes and compares
+   the calibration and registration measurement/realization projections,
+   separately digests registration-only policy, and records candidate absence;
+   and
+4. one resolved `artifact_manifest` that indexes the retained registration
+   evidence and its reconstruction identities.
+
+The derived freeze is an experiment artifact with an explicit
+`artifact_kind`; it is not a new common record type, cannot replace any core
+record, and cannot become positive lane evidence. Expected candidate outputs
+that do not yet exist remain declarations in the registration policy rather
+than fake manifest entries.
+
+### 24.4 Authority and verification boundary
+
+- Existing JSON Schema records retain their frozen meanings and shapes.
+- The registration policy is a non-evidential experiment input validated by
+  P2-I1 tooling.
+- The registration freeze proves cross-record relationships and identity
+  equality; it does not redefine core record semantics.
+- The artifact manifest resolves only files that exist at registration time.
+- Retained generated artifacts require a clean source anchor; dirty review
+  previews are explicitly non-retainable and cannot enter the manifest.
+- `validate-phase1` success alone cannot satisfy registration.
+- No registration artifact grants candidate execution authority; a separate
+  exact-cycle `P2-I1-EXEC-FREEZE` remains mandatory.
+- R3 decides whether concrete friction justifies promoting registration or
+  control outcomes into new first-class common records.
+
+### 24.5 Reopening conditions
+
+Reopen `P2-I1-DEC-021` if:
+
+- existing records cannot express a required registration relationship without
+  an authoritative `x_` extension or authored inference;
+- the registration freeze must duplicate or redefine a core record meaning;
+- the manifest cannot index the retained bundle without pretending future
+  candidate artifacts already exist;
+- control applicability cannot be made explicit and verifiable in the
+  experiment-local policy; or
+- R3 finds that the first completed lane cannot be audited cleanly without a
+  first-class registration or control-outcome record.
+
+## 25. `P2-I1-DEC-022` — Realization-profile scope
+
+**Status:** accepted; source profile materialized, retained binding receipt pending
+
+**Question IDs:** REG-GATE realization identity and D-033/D-034 runtime-binding
+discipline
+
+### 25.1 Decision question
+
+Should registration retain a preflight-only realization profile and transition
+to another profile before execution, or should one exact profile span the
+registered preflight and declared P2-I1 operation classes?
+
+### 25.2 Options considered
+
+| Profile scope | Advantage | Main problem | Disposition |
+| --- | --- | --- | --- |
+| One path-free profile spanning registration and the declared execution operation classes | Preserves realization identity from REG-GATE through EXEC-FREEZE while per-run receipts still verify use | Must distinguish conformance from scientific success and from authorization | **Accepted** |
+| Registration-only profile followed by a separate execution profile | Narrow initial statement | Introduces a realization transition after registration and forces new identity review before execution | Rejected for the primary cycle |
+| Keep the profile local and unretained | Avoids machine-specific availability claims in the repository | Makes the registered realization and reconstruction boundary unauditable | Rejected |
+| Treat PyGRC availability as sufficient without a profile | Minimal ceremony | Permits silent version/capability/substitution drift | Rejected |
+
+### 25.3 Accepted profile boundary
+
+The retained profile:
+
+- contains no machine-local runtime or checkout path;
+- records the exact required and observed PyGRC identity, public capabilities,
+  realization class, source/configuration identities, and claim ceiling;
+- lists `p2_i1_runtime_preflight` plus the operation classes declared by the
+  v2 runtime policy;
+- resolves those operation classes to concrete callable PyGRC methods rather
+  than treating an allowed name or public module namespace as conformance;
+- uses `availability`, `enabled`, `supported`, and `validated` only for the
+  exact binding, capability, and baseline-fixture conformance established at
+  registration;
+- does not claim that any writer, medium, reader opportunity, candidate cell,
+  control, or scientific outcome succeeded;
+- remains the referenced realization profile through the first exact-cycle
+  `EXEC-FREEZE`; and
+- requires one retained runtime receipt for every later live run.
+
+The shared profile is a retained registration observation tied to its source
+anchor, not a promise that another machine has the runtime installed. A
+reproducer must perform the same local binding and emit a new receipt. Merely
+listing operation classes never schedules them and never replaces the
+cycle-scoped execution freeze from `P2-I1-DEC-020`.
+
+### 25.4 Transition discipline
+
+If PyGRC later implements an RCAE producer natively, the existing profile and
+runner continue to use the registered constructed realization. Transition to
+native functionality requires a new profile, explicit decision/change record,
+new cycle freeze, and rerun. Neither repository may produce availability-driven
+side effects in the other.
+
+### 25.5 Reopening conditions
+
+Reopen `P2-I1-DEC-022` if:
+
+- registration preflight cannot verify the declared identity or capabilities;
+- any listed operation class requires a different PyGRC build, realization
+  class, producer implementation, or schema version;
+- the profile would need a machine-local path to reproduce its identity;
+- per-run receipts cannot prove which retained profile was used; or
+- an explicit native-transition decision replaces the constructed producer.
+
+## 26. `P2-I1-DEC-023` — Baseline, reset, and isolation identity
+
+**Status:** accepted; baseline tooling materialized, 21 retained identities pending
+
+**Question IDs:** REG-GATE state isolation, reset, retry, and contamination
+boundary
+
+### 26.1 Decision question
+
+How should registration freeze baseline state when the three seed transforms
+and the parent-support intervention legitimately produce different initial
+runtime states?
+
+### 26.2 Options considered
+
+| Reset model | Advantage | Main problem | Disposition |
+| --- | --- | --- | --- |
+| One expected baseline identity per exact cell/seed configuration, reconstructed in a fresh worker | Makes every intended initial difference explicit and prevents mutable state reuse | Produces 21 registered identities, including legitimate duplicate digest values | **Accepted** |
+| One global baseline digest | Simple comparison | Incorrectly treats seed and support transforms as contamination | Rejected |
+| Reuse one runtime and clear queue/log/state between runs | Lower construction cost | Reset correctness depends on mutation completeness and may preserve hidden state | Rejected |
+| Reconstruct one runtime per seed and mutate cells in fixed order | Fewer constructions | Makes cell order a causal input and permits cross-cell history | Rejected |
+
+### 26.3 Accepted baseline identity
+
+Registration emits one ordered baseline-identity entry for each of the seven
+cells and candidate seeds `101`, `211`, and `307`. Each entry binds:
+
+```text
+cell_id
+seed
+fixture_config_digest
+cell_configuration_digest
+resolved node coherences
+topology and route-aspect identities
+empty queue identity
+empty focal-surface identity
+runtime policy and realization profile refs
+canonical initial snapshot digest
+expected composite baseline digest
+```
+
+All 21 entries remain explicit even when several expected composite digests are
+equal. Equality is an observed configuration relation, not a reason to drop an
+entry.
+
+### 26.4 Construction and retry boundary
+
+Every cell/seed attempt starts in a fresh worker process and constructs a new
+runtime from declarative inputs. It may not reset by clearing or mutating a
+prior runtime. Before the writer operation, the observed composite baseline
+must equal the registered expected identity.
+
+An infrastructure retry reconstructs the same cell/seed/configuration in a
+new worker, must reproduce the same baseline identity, and retains the failed
+attempt. The lowest-seed-first cell retry allocation from the frozen cell
+policy remains unchanged.
+
+### 26.5 Opportunity branch boundary
+
+Inside one valid cell/seed attempt, W2 creates exactly one branch-point
+snapshot after writer history and medium materialization. Each of the four
+opportunities restores that snapshot independently. Restoration equality is
+separate from the W0 baseline identity: W0 proves attempt initialization; W2
+proves equal later-opportunity exposure.
+
+Fixed cell order remains retained for audit and operational reproducibility,
+but intended scientific isolation comes from fresh workers and matching
+identities rather than from assuming order has no effect.
+
+### 26.6 Failure meaning and reopening conditions
+
+A baseline mismatch, non-empty queue or surface, failed W2 restoration,
+residual prior-run identity, or worker reuse is an infrastructure/integrity
+failure. It cannot support or refute L01.
+
+Reopen `P2-I1-DEC-023` if:
+
+- source-current PyGRC cannot serialize a sufficient initial snapshot;
+- the composite digest omits model-owned state that can affect later events;
+- fresh workers cannot reproduce the same registered configuration identity;
+- worker isolation changes the declared runtime or resource envelope; or
+- W2 restoration cannot preserve every registered branch-point field.
+
+## 27. `P2-I1-DEC-024` — Control lifecycle and registration meaning
+
+**Status:** accepted; exact evidence-bound control map materialized, retained freeze pending
+
+**Question IDs:** REG-GATE control applicability, planned evidence, and the
+deferred R3 `control_outcome` contract question
+
+### 27.1 Decision question
+
+How should REG-GATE freeze every common and L01-specific control without
+mistaking an applicable control or a planned artifact for a completed causal
+outcome?
+
+### 27.2 Accepted policy and result fields
+
+The control lifecycle preserves three independent concepts without allowing an
+input policy to declare its own successful outcome:
+
+```text
+registration policy:
+applicability:
+  applicable | not_applicable
+
+resolution_stage:
+  registration_guard | execution_comparison |
+  terminal_report_guard | inherited_verification
+
+required_evidence
+fail_closed_effect
+
+derived registration/execution/terminal freeze:
+outcome_status:
+  resolved | pending_execution | blocked | not_applicable
+```
+
+`not_applicable` always includes a control-specific causal or record-role
+rationale in both policy and freeze. `blocked` is missing knowledge and cannot
+masquerade as a negative result. A registration validator derives `resolved`
+only when an applicable control's entire required check is deterministic,
+outcome-independent, and satisfied by the declared evidence. The policy itself
+never emits `resolved`.
+
+The concrete P2-I1 materialization represents that boundary with exact
+`evidence_binding_refs`. Both the descriptive obligation and its permitted
+bindings are validator-frozen. Resolution requires every bound record, source,
+profile, receipt, or baseline identity to pass its own validator; stage name
+alone cannot resolve a leg.
+
+### 27.3 Mixed and inherited controls
+
+A control with both record-guard and causal/withdrawal meaning is represented
+as separate legs under the same control ID. Resolving the registration leg does
+not resolve its execution leg.
+
+Every inherited-verification leg records:
+
+```text
+source artifact and digest
+inherited role
+identical-scope verification
+must_not_consume_as
+new lane execution required
+```
+
+Inheritance supplies only its declared method, schema, or fixed
+runtime-invariant role unless identical carrier, mechanism, intervention, and
+claim scope are demonstrated. A list of inherited IDs is not evidence.
+
+### 27.4 Causal and withdrawal controls
+
+Every causal or withdrawal leg names its exact registered cell or comparison,
+preserved fields, broken relation, expected artifact role, and fail-closed
+effect. The derived registration freeze records `pending_execution` through
+REG-GATE. Registration cannot infer an outcome from a fixture, preflight,
+expected result, or decision record.
+
+Control IDs alone never satisfy terminal closure. Later outcome evidence must
+remain linked through execution, developmental interpretation, terminal
+classification, pattern card, debt, and report projections.
+
+### 27.5 Representation and R3 boundary
+
+The experiment-local registration policy carries applicability, stage, and
+evidence obligations under `P2-I1-DEC-021`. Derived freezes carry outcome
+status; no first-class `control_outcome` schema is added now. R3 may promote one
+only if concrete execution cannot preserve these relationships without
+authored inference, authoritative extensions, or duplicated meaning.
+
+### 27.6 Reopening conditions
+
+Reopen `P2-I1-DEC-024` if:
+
+- one field cannot distinguish applicable-but-unexecuted from resolved;
+- a mixed control cannot preserve separate registration and execution legs;
+- inherited verification requires authored inference to determine scope;
+- a causal outcome cannot link to its exact registered comparison artifact; or
+- R3 finds that the first lane cannot audit control closure without a
+  first-class record.
+
+## 28. `P2-I1-DEC-025` — Constructed-scaffold withdrawal applicability
+
+**Status:** accepted; `AE01-L01-CTRL-05` is not applicable to the primary cycle
+
+**Question IDs:** L01 constructed-scaffold withdrawal applicability
+
+### 28.1 Decision question
+
+Does the accepted Option A realization contain a constructed scaffold whose
+withdrawal would isolate whether the proposed medium or later response is
+scaffold-carried?
+
+### 28.2 Accepted applicability
+
+```text
+control_id = AE01-L01-CTRL-05
+applicability = not_applicable
+outcome_status = not_applicable
+```
+
+The accepted medium—native pulse-contact to feedback-eligibility history—and
+the later feedback producer are model-owned PyGRC runtime surfaces. RCAE owns
+the fixture, initial intervention, configuration, orchestration, and analysis,
+but is prohibited from computing the later response, injecting a successful
+surface, directly mutating coherence, marking native events processed, or
+bypassing the event queue.
+
+Removing the RCAE adapter would therefore remove the experiment and its
+invocation boundary rather than withdraw a causal scaffold while preserving a
+matched opportunity. Such a comparison would not discriminate the L01 claim.
+
+### 28.3 Controls that remain applicable
+
+This decision does not weaken:
+
+- `AE01-L01-CTRL-01`, which freezes the accepted feedback-medium row while
+  preserving participant state and opportunity;
+- `AE01-CTRL-08`, which instruments every producer/handoff and blocks hidden
+  constructed causality;
+- `AE01-CTRL-15`, which preserves the RCAE-constructed role and prohibits
+  native relabeling or silent substitution; or
+- `AE01-CTRL-16`, which requires necessity, minimality, counterfactual,
+  withdrawal meaning, debt, and discriminator fields for the constructed
+  adapter/mechanism record.
+
+Medium freeze and scaffold withdrawal remain distinct interventions. The
+former is mandatory in this cycle; the latter is neither blended into it nor
+treated as an unexecuted negative.
+
+### 28.4 Reopening conditions
+
+Reopen `P2-I1-DEC-025` before execution if implementation shows that:
+
+- an RCAE-owned state surface carries medium history or later eligibility;
+- an RCAE producer computes or schedules the later response outside the
+  declared native producer;
+- a constructed scaffold can be withdrawn while preserving the registered
+  participant, native medium, and later opportunity; or
+- source-current PyGRC lacks the declared native operation and the primary
+  realization must introduce a constructed replacement.
+
+If reopened after any candidate observation, preserve the primary result and
+register a new linked cycle; never add scaffold withdrawal as a rescue variant.
+
+## 29. Current decision boundary and next work
 
 All scientific decision-level semantics currently required for registration
 are resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
 interpretation, and `L01-Q14` remains reserved for R3 after concrete execution.
 
 The bounded `P2-I1-DEC-020` identity refresh is complete. The immediate work is
-REG-GATE materialization. Candidate execution remains blocked until a reviewed
+REG-GATE materialization under `P2-I1-DEC-021` and the path-free profile
+boundary in `P2-I1-DEC-022`, with per-configuration isolation from
+`P2-I1-DEC-023` and control lifecycle from `P2-I1-DEC-024`. Candidate execution
+remains blocked under the scaffold boundary in `P2-I1-DEC-025` until a reviewed
 registration and a separate exact-cycle `P2-I1-EXEC-FREEZE` both exist.

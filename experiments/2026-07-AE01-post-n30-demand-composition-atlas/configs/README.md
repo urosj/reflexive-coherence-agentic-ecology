@@ -49,6 +49,26 @@ record:
   `P2-I1-EXEC-FREEZE` authorization mode while leaving blanket candidate
   execution unauthorized. `P2-I1-EXEC-GATE` remains post-execution closure.
 
+REG-GATE adds two registration-only inputs without changing the six CAL-PRE
+surfaces:
+
+- `p2_i1_registration_policy.json` imports the retained v2 measurement and
+  calibration identities, freezes operational identity, realization,
+  cell/seed/order/reset/retry/resource/matching policies, declares all common
+  and L01 control obligations, causal broken relations and preserved fields,
+  expected artifacts, claim boundaries, response-family non-comparability,
+  and `EXEC-FREEZE` prerequisites. It is a non-evidential experiment policy,
+  not a first-class `lane_registration` or `control_outcome` record; and
+- `p2_i1_registration_profiles.json` freezes the portable environment,
+  dependency, resource, reconstruction-command, and verification profiles used
+  by the resolved registration manifest. Local PyGRC and graph checkout paths
+  remain command arguments and never enter retained records.
+
+The registration validator also resolves every declared operation class to its
+concrete callable PyGRC methods. An allowed operation name plus matching
+package version is insufficient when the native emission, producer, step, or
+snapshot surface is unavailable.
+
 These files are preregistration inputs, not candidate results. Validate them
 from the repository root with:
 

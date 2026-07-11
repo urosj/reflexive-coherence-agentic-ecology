@@ -28,6 +28,27 @@ REQUIRED_MODEL_SYMBOLS = (
     "validate_lgrc9v3_route_aspect",
 )
 REQUIRED_CORE_SYMBOLS = ("PortGraphBackend",)
+OPERATION_CAPABILITY_PATHS = {
+    "p2_i1_runtime_preflight": (
+        "models.LGRC9V3.from_state",
+        "models.LGRC9V3.get_state",
+        "models.LGRC9V3.snapshot",
+    ),
+    "fixture_construction": ("models.LGRC9V3.from_state",),
+    "route_aspect_validation": ("models.validate_lgrc9v3_route_aspect",),
+    "snapshot_round_trip": (
+        "models.LGRC9V3.snapshot",
+        "models.LGRC9V3.load",
+    ),
+    "packet_queue_step": ("models.LGRC9V3.step",),
+    "feedback_surface_emission": (
+        "models.LGRC9V3.emit_feedback_eligibility_surface_row",
+    ),
+    "feedback_conditioned_packet_production": (
+        "models.LGRC9V3.set_feedback_coupled_pulse_producer",
+        "models.LGRC9V3.step",
+    ),
+}
 
 
 def _import_module(name: str) -> ModuleType:
@@ -36,6 +57,29 @@ def _import_module(name: str) -> ModuleType:
 
 def _read_version(name: str) -> str:
     return importlib.metadata.version(name)
+
+
+def validate_runtime_operation_capabilities(
+    runtime_modules: Mapping[str, ModuleType], operation_ids: list[str]
+) -> dict[str, list[str]]:
+    """Resolve every abstract operation class to concrete callable surfaces."""
+
+    if operation_ids != list(OPERATION_CAPABILITY_PATHS):
+        raise ContractError("P2-I1 operation-class order or set drifted")
+    resolved: dict[str, list[str]] = {}
+    for operation_id in operation_ids:
+        paths = OPERATION_CAPABILITY_PATHS[operation_id]
+        for path in paths:
+            parts = path.split(".")
+            value: Any = runtime_modules.get(parts[0])
+            for part in parts[1:]:
+                value = getattr(value, part, None)
+            if not callable(value):
+                raise ContractError(
+                    f"P2-I1 operation capability is unavailable: {path}"
+                )
+        resolved[operation_id] = list(paths)
+    return resolved
 
 
 def bind_runtime(
@@ -100,7 +144,12 @@ def bind_runtime(
     for symbol in REQUIRED_MODEL_SYMBOLS:
         if not hasattr(models, symbol):
             raise ContractError(f"PyGRC model symbol missing: {symbol}")
-    return {"pygrc": root, "core": core, "models": models}
+    modules = {"pygrc": root, "core": core, "models": models}
+    validate_runtime_operation_capabilities(
+        modules,
+        [runtime_policy["preflight_operation_id"], *runtime_policy["required_operations"]],
+    )
+    return modules
 
 
 def resolve_node_coherences(

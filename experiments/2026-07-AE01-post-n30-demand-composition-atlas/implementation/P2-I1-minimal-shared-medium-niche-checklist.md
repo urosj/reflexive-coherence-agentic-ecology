@@ -630,12 +630,21 @@ Entry conditions:
 
 ### 8.1 Operational identities
 
-- [ ] Participant carrier and continuity criterion frozen.
-- [ ] Medium carrier, access scope, and non-private/sharedness account frozen.
-- [ ] Participant writing event and attributable lineage frozen.
-- [ ] Persistence/decay and later-response windows frozen with rationale.
-- [ ] Parent context and support context declared separately from the candidate
-  medium and assigned controls.
+- [x] Participant carrier and continuity criterion frozen. Evidence:
+  [registration policy](../configs/p2_i1_registration_policy.json) and
+  [pattern card](../contracts/p2-i1/registration-records/pattern-card.json).
+- [x] Medium carrier, access scope, and non-private/sharedness account frozen.
+  Evidence: [medium surface](../contracts/p2-i1/registration-records/medium-surface.json).
+- [x] Participant writing event and attributable lineage frozen. Evidence:
+  [registration policy](../configs/p2_i1_registration_policy.json) and
+  [medium surface](../contracts/p2-i1/registration-records/medium-surface.json).
+- [x] Persistence/decay and later-response windows frozen with rationale.
+  Evidence: [medium surface](../contracts/p2-i1/registration-records/medium-surface.json)
+  and the accepted window/config authorities imported by the registration
+  policy.
+- [x] Parent context and support context declared separately from the candidate
+  medium and assigned controls. Evidence: [pattern card](../contracts/p2-i1/registration-records/pattern-card.json)
+  and [parent-context debt](../contracts/p2-i1/registration-records/parent-context-debt.json).
 - [x] Freeze participant/medium separation with a state-matched
   feedback-row-absent intervention; no co-constitution claim is made. Evidence:
   [`P2-I1-DEC-015`](P2-I1-decision-record.md).
@@ -656,34 +665,43 @@ private_state_only_control
 
 - [ ] Medium state can be reconstructed independently of the participant
   label.
-- [ ] Participant continuity is not inferred from the later medium outcome.
+- [x] Participant continuity is not inferred from the later medium outcome.
+  Evidence: [medium surface](../contracts/p2-i1/registration-records/medium-surface.json).
 - [ ] Medium ablation changes the later response while participant and medium
   ablations have distinguishable effects.
-- [ ] Writing and reading remain temporally and interventionally separable.
+- [x] Writing and reading are frozen as temporally and interventionally
+  separable; execution must still verify the registered causal chain. Evidence:
+  [medium surface](../contracts/p2-i1/registration-records/medium-surface.json)
+  and [registration policy](../configs/p2_i1_registration_policy.json).
 - [ ] If these checks cannot be implemented, registration limits the possible
   result to producer-carried or missing participant/medium separation.
 
 ### 8.2 Measurement and selectivity
 
-- [ ] Response family, raw formula/units, orientation, opportunity structure,
+- [x] Response family, raw formula/units, orientation, opportunity structure,
   aggregation, windows, normalization, and calibration realization import
-  unchanged from the accepted calibration preregistration.
-- [ ] Registration identifies the imported fields and proves one-to-one
+  unchanged from the accepted calibration preregistration. Evidence:
+  [registration validator](../scripts/p2_i1_registration.py).
+- [x] Registration identifies the imported fields and proves one-to-one
   identity; any change starts a new calibration and probe cycle.
-- [ ] Produce `calibration_measurement_identity_digest` and
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json)
+  and [registration validator](../scripts/p2_i1_registration.py).
+- [x] Produce `calibration_measurement_identity_digest` and
   `registration_measurement_identity_digest` over response formula/units,
   orientation, unit of analysis, opportunity structure, aggregation, windows,
   normalization, participant/medium fixture identity, and matched-null
-  realization, writer-reader relation, and frozen analysis identity.
-- [ ] Produce `calibration_realization_digest` and
+  realization, writer-reader relation, and frozen analysis identity. Evidence:
+  [registration validator](../scripts/p2_i1_registration.py).
+- [x] Produce `calibration_realization_digest` and
   `registration_realization_digest`, then require machine-derived
   `measurement_identity_match=true` and `realization_identity_match=true`.
-- [ ] Both realization digests hash the same calibration-relevant identity
+  Evidence: [registration validator](../scripts/p2_i1_registration.py).
+- [x] Both realization digests hash the same calibration-relevant identity
   projection rather than their entire bundles; registration-only controls and
   execution details remain separately digested and cannot mask projection
-  drift.
-- [ ] Any digest mismatch fails closed and reopens CAL-PRE/CAL; prose review
-  cannot waive it.
+  drift. Evidence: [registration validator](../scripts/p2_i1_registration.py).
+- [x] Any digest mismatch fails closed and reopens CAL-PRE/CAL; prose review
+  cannot waive it. Evidence: [registration tests](tests/test_p2_i1_registration.py).
 - [x] Freeze configured polarity susceptibility as the compatibility-relative
   selectivity discriminator. Evidence:
   [`P2-I1-DEC-007`](P2-I1-decision-record.md).
@@ -700,20 +718,30 @@ private_state_only_control
   remains a registration artifact.
 - [ ] Verify matched baseline opportunity and support for every selectivity
   group before the medium-history intervention.
-- [ ] Freeze `medium_history_match_fields`, exposure digest per group, trace
+- [x] Freeze `medium_history_match_fields`, exposure digest per group, trace
   quantity/timing tolerances, and surface-access tolerance.
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
 - [ ] Verify comparable medium history across selectivity groups before
   attributing their different later responses to the discriminator.
-- [ ] Generic main effects that change all groups similarly cannot pass the
+- [x] Generic main effects that change all groups similarly cannot pass the
   selectivity gate; the declared medium-history-by-discriminator interaction
-  must resolve.
-- [ ] Magnitudes across response families declared non-comparable.
+  must resolve. Evidence: imported selectivity analysis identity in the
+  [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] Magnitudes across response families declared non-comparable. Evidence:
+  `measurement_scope` in the
+  [registration policy](../configs/p2_i1_registration_policy.json).
 
 ### 8.3 State isolation, order, and matching
 
-- [ ] Freeze cell execution order and declare fixed or randomized order policy.
-- [ ] If randomized, freeze the order-randomization seed before execution; if
+- [x] Freeze one expected baseline identity for every exact cell/seed
+  configuration, fresh worker construction for every attempt/retry, and W2
+  branch restoration as a separate identity boundary. Evidence:
+  [`P2-I1-DEC-023`](P2-I1-decision-record.md).
+- [x] Freeze cell execution order and declare fixed or randomized order policy.
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] If randomized, freeze the order-randomization seed before execution; if
   fixed, record order effects as an explicit control or debt.
+  Evidence: [fixed-order debt](../contracts/p2-i1/registration-records/fixed-order-debt.json).
 - [ ] Freeze the baseline initial-state digest, medium reset procedure, and
   expected reset-state digest.
 - [ ] Every independent cell/seed starts from that baseline unless cumulative
@@ -724,33 +752,48 @@ private_state_only_control
   digest from the frozen static profile, actual pulse-contact and medium-history
   digests, and an exactly restored branch-point digest; cross-cell static-panel
   matching and zero cross-branch carryover validate before interpretation.
-- [ ] Freeze support/budget matching variables and tolerances across reference,
+- [x] Freeze support/budget matching variables and tolerances across reference,
   candidate, freeze/withdrawal, shuffle, and inversion cells.
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
 - [ ] Require a retained support/budget matching audit before scientific
   interpretation.
 
 ### 8.4 Realization, retry, and reproducibility
 
-- [ ] Exact PyGRC-compatible execution class selected.
-- [ ] Realization profile records local availability/enabled state without a
+- [x] Freeze one retained, path-free realization profile across registration
+  and the declared P2-I1 operation classes; distinguish binding/baseline
+  conformance from scientific success and execution authorization. Evidence:
+  [`P2-I1-DEC-022`](P2-I1-decision-record.md).
+- [x] Exact PyGRC-compatible execution class selected. Evidence:
+  [realization profile](../contracts/p2-i1/registration-realization-profile.json).
+- [x] Realization profile records local availability/enabled state without a
   machine-local path.
-- [ ] Any constructed mechanism declares necessity, minimality, counterfactual,
+  Evidence: [realization profile](../contracts/p2-i1/registration-realization-profile.json).
+- [x] Any constructed mechanism declares necessity, minimality, counterfactual,
   withdrawal, implementation identity, debts, and claim ceiling.
-- [ ] Exact cells, candidate seeds `101`, `211`, and `307`, attempt limits,
+  Evidence: [constructed mechanism](../contracts/p2-i1/registration-records/constructed-mechanism.json).
+- [x] Exact cells, candidate seeds `101`, `211`, and `307`, attempt limits,
   resources, and expected artifacts frozen.
-- [ ] Preserve the resolved Phase 1 scope: at most one infrastructure retry per
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] Preserve the resolved Phase 1 scope: at most one infrastructure retry per
   comparison cell, shared across that cell's three seeds; never one retry per
   seed or one pool silently shared by the whole cycle.
-- [ ] Freeze the deterministic seed-allocation rule used if more than one seed
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] Freeze the deterministic seed-allocation rule used if more than one seed
   in a cell encounters an infrastructure failure; outcome inspection cannot
   choose which seed receives the retry.
-- [ ] An infrastructure retry uses the same seed, configuration, initial-state
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] An infrastructure retry uses the same seed, configuration, initial-state
   digest, and scientific parameters; begins from the reset baseline; is never
   outcome-dependent; and retains the failed attempt and infrastructure-only
   reason.
-- [ ] Runtime receipt requirement exists for every live run.
-- [ ] Reconstruction commands and retention roles frozen.
-- [ ] Graph read-only fingerprint guard configured for live use.
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] Runtime receipt requirement exists for every live run. Evidence:
+  [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] Reconstruction commands and retention roles frozen. Evidence:
+  [registration tooling instructions](../scripts/README.md).
+- [x] Graph read-only fingerprint guard configured for live use. Evidence:
+  [registration tooling](../scripts/p2_i1_registration.py).
 - [x] Freeze candidate authorization as an exact cycle-scoped
   `P2-I1-EXEC-FREEZE`, distinct from the post-execution `P2-I1-EXEC-GATE`.
   Evidence: [`P2-I1-DEC-020`](P2-I1-decision-record.md).
@@ -759,7 +802,9 @@ Local artifact-validity rules:
 
 - [ ] Every retained artifact's SHA-256 matches its file contents and manifest.
 - [ ] Positive-evidence rows identify source-current inputs and their digests.
-- [ ] Portable records contain no machine-local or absolute paths.
+- [x] Portable registration inputs and existing-schema records contain no
+  machine-local or absolute paths; the derived freeze revalidates this rule.
+  Evidence: [registration tooling](../scripts/p2_i1_registration.py).
 - [ ] Canonical payload digest and file-content SHA-256 are both retained where
   the record contract provides them.
 - [ ] `derived_report_only=true` artifacts cannot support a positive boundary
@@ -769,22 +814,283 @@ Local artifact-validity rules:
 
 ### 8.5 Registration evidence bundle
 
+- [x] Freeze the bundle representation as one experiment-local registration
+  policy plus existing schema records, a derived registration freeze, and a
+  resolved manifest; defer first-class `lane_registration` and
+  `control_outcome` records to R3 unless concrete friction satisfies the
+  reopening conditions. Evidence:
+  [`P2-I1-DEC-021`](P2-I1-decision-record.md).
 - [ ] Bundle resolves the brief, hypothesis, lane registry, execution policy,
   metric sheet, calibration, pattern card, medium surface, realization profile,
   constructions, controls, claims, debts, profiles, and expected manifest.
-- [ ] Every common control has a reviewed applicability disposition.
-- [ ] Every L01 control has a planned outcome artifact.
+- [x] Every common control has an explicit applicability disposition and
+  resolution stage; review of the final retained bundle remains pending.
+  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+- [x] Every L01 control has a planned outcome artifact or the accepted D-025
+  inapplicability. Evidence:
+  [registration policy](../configs/p2_i1_registration_policy.json).
 - [ ] Every inherited control records source artifact, source digest, inherited
   role, identical-scope verification, `must_not_consume_as`, and whether new
   lane execution is required.
-- [ ] Inheritance supplies only method, schema, or fixed runtime-invariant
+- [x] Inheritance supplies only method, schema, or fixed runtime-invariant
   evidence unless identical carrier, mechanism, intervention, and claim scope
   are demonstrated; it never substitutes for lane-specific causal evidence.
+  Evidence: [registration tooling](../scripts/p2_i1_registration.py).
 - [ ] The bundle contains no candidate outcome.
 - [ ] Independent review confirms `validate-phase1` success alone was not
   treated as registration.
 - [ ] Registration review records unresolved questions and why none blocks the
   current gate.
+
+Focused source-safety corrections required by the REG-GATE implementation
+review:
+
+- [x] Retained registration generation fails when source files differ from the
+  source revision; only the five expected generated outputs are ignored while
+  assembling the post-anchor bundle. Dirty review artifacts require
+  `--allow-dirty-preview`, carry a preview-specific kind and
+  `retention_eligible=false`, and cannot enter the manifest. Evidence:
+  [registration tooling](../scripts/p2_i1_registration.py) and
+  [registration tests](tests/test_p2_i1_registration.py).
+- [x] Every registration-time `resolved` leg has exact
+  `evidence_binding_refs`; both its evidence description and bindings are
+  validator-frozen, and missing or substituted evidence yields `blocked` or
+  policy rejection rather than resolution. Evidence:
+  [registration policy](../configs/p2_i1_registration_policy.json),
+  [registration tooling](../scripts/p2_i1_registration.py), and
+  [registration tests](tests/test_p2_i1_registration.py).
+- [x] Runtime conformance resolves all seven operation classes to concrete
+  callable PyGRC methods; version and namespace checks alone cannot pass the
+  registration receipt. Evidence:
+  [runtime boundary](../scripts/p2_i1_runtime.py) and
+  [runtime tests](tests/test_p2_i1.py).
+
+### 8.6 REG-GATE implementation record and interpretation — 2026-07-11
+
+**Record status:** source materialization complete; retained post-anchor
+registration artifacts, final reconstruction, and REG-GATE disposition remain
+pending. Everything described here has `registration-only` or infrastructure
+effect. It is not candidate execution, positive or negative L01 evidence, or a
+niche result.
+
+#### 8.6.1 What was implemented
+
+The registration source layer now contains four mutually constrained parts:
+
+1. [The registration policy](../configs/p2_i1_registration_policy.json)
+   imports the frozen v2 CAL-PRE/CAL identities and freezes operational
+   carrier identities, seven cells, three seeds, fixed order, fresh-worker
+   reset, retry allocation, matching fields and tolerances, resources,
+   expected artifacts, claims, and every common/L01 control plan.
+2. [The reconstruction profile registry](../configs/p2_i1_registration_profiles.json)
+   freezes path-free environment, dependency, resource, generation, and
+   verification commands. The exact PyGRC and graph checkout locations remain
+   local command arguments.
+3. Eight existing-schema records under
+   [`registration-records/`](../contracts/p2-i1/registration-records/) define
+   one pattern card, one medium-surface candidate, one constructed
+   orchestration boundary, one registration claim boundary, and four debts.
+   No new `lane_registration` or `control_outcome` common record was added.
+4. [`p2_i1_registration.py`](../scripts/p2_i1_registration.py) validates and
+   joins those inputs, verifies inherited sources, binds native runtime
+   capabilities, constructs W0 baseline identities in fresh workers, derives
+   evidence-sensitive control status, freezes the bundle, and builds the
+   non-recursive resolved manifest. [`p2_i1_runtime.py`](../scripts/p2_i1_runtime.py)
+   owns the fail-closed PyGRC binding and concrete operation-capability map.
+
+The deterministic generation path is:
+
+```text
+frozen CAL-PRE/CAL identities
+  -> registration policy and existing-schema record validation
+  -> exact N29/N30 inherited-source verification
+  -> path-free PyGRC binding receipt plus concrete method conformance
+  -> 21 fresh-worker W0 baseline identities
+  -> exact evidence-binding resolution for registration controls
+  -> derived registration freeze
+  -> resolved manifest over files that actually exist
+```
+
+The manifest is deliberately last: it may digest the freeze, while the freeze
+can only declare the expected manifest path. This avoids a recursive identity.
+
+The post-anchor generation step will retain five machine artifacts under
+`contracts/p2-i1/`:
+
+| Artifact | Registration role |
+| --- | --- |
+| `inherited-control-verification.json` | Exact N29/N30 paths, file/output digests, inherited roles, non-identical scope, blocked consumption, and fresh-execution requirement |
+| `registration-runtime-binding-receipt.json` | Observed PyGRC identity, public capabilities, concrete callable operation surfaces, source state, and graph read-only result |
+| `baseline-identity-registry.json` | All 21 ordered W0 cell/seed identities, native snapshots, route identity, empty queue/surface checks, and composite digests |
+| `registration-freeze.json` | Imported identity equality, 32-file bundle digests, exact evidence resolution, control lifecycle, reconstruction commands, and closed claims |
+| `registration-manifest.json` | Non-recursive resolved retention index over the 15 selected registration artifacts and their shared/realization profiles |
+
+#### 8.6.2 Geometric and runtime artifacts materialized
+
+The registered geometry is a four-node fixed-topology fixture:
+
+```text
+P --participant_to_writer--> W
+P <--writer_return---------- W
+P --reader_a---------------> A
+P --reader_b---------------> B
+```
+
+- `P` is the participant/source-pole carrier and `W` the writer/return pole.
+  Their two directed edges form one validated closed route aspect.
+- `A` and `B` are distinct later-reader contexts. Four opportunity profiles
+  cross these two contexts with aligned/inverted configured susceptibility;
+  the four profiles retain distinct identities while resolving to exactly two
+  reader carrier configurations.
+- Seeds `101`, `211`, and `307` apply balanced coherence offsets
+  `{-1/32, 0, +1/32}`: `P=1+offset`, `W=1-offset`, and `A=B=0.5`.
+- The parent-context contrast is not a parent basin. It is a declared
+  reduced-support geometry with `W=0.5-offset` and `A=B=0.25`, preserving the
+  registered feedback-score relation while changing absolute support.
+- The carrier-timescale contrast changes reader packet amount from `0.125` to
+  `0.25`; it does not silently alter W0 node coherence.
+
+The candidate-free W0 preview constructed all `7 cells x 3 seeds = 21`
+configurations in separate worker processes. It produced:
+
+| Geometric identity observation | Preview result | Meaning |
+| --- | ---: | --- |
+| Explicit cell/seed entries | `21` | No legitimate configuration was collapsed |
+| Composite baseline digests | `21` unique | Cell configuration remains part of identity even when native state coincides |
+| Native snapshot digests | `6` unique | Three ordinary seed states plus three reduced-support seed states |
+| Route-aspect digests | `1` unique | All cells retain the same participant-writer route geometry |
+| Initial queue states | all empty | No scheduled packet contaminates W0 |
+| Initial focal surfaces | all empty | No medium row or outcome is preinstalled at W0 |
+
+The runtime binding also verified concrete callable PyGRC surfaces for fixture
+construction, route validation, snapshot/load, queue stepping,
+feedback-eligibility surface emission, and feedback-conditioned packet
+production. This demonstrates that the registered operation family exists in
+the selected `pygrc==0.1` realization. It does not demonstrate that the
+candidate sequence succeeds.
+
+What the geometric materialization shows:
+
+- the declared initial topology, coherences, route aspect, profiles, and cell
+  transforms are constructible and distinguish intended from unintended W0
+  differences;
+- each exact configuration can begin from an auditable fresh native state;
+- no queue, medium row, candidate outcome, or cross-cell history is smuggled
+  into the baseline; and
+- the calibration and registration measurement/realization projections remain
+  identical (`853c5f10...f2e5a` and `9b59988a...769b8`).
+
+What it does **not** show:
+
+- an attributable writer event or committed feedback row;
+- independent medium reconstruction after writing;
+- persistence from writing to the later branch point;
+- branch restoration, comparable exposure, or zero carryover after W2;
+- later opportunity formation, medium dependency, selectivity, or causal
+  source-lineage dependence; or
+- niche conditioning, niche formation, agency, coordination, motif, or regime.
+
+Those remain execution comparisons in Sections 9-14.
+
+#### 8.6.3 Agentic-ecology materialization
+
+The registration turns the L01 theory into a bounded ecology-side object
+without claiming its result:
+
+- **Participant:** structural source-pole identity, lineage identity, and a
+  budgeted one-repeat reserve; continuity is defined before and independently
+  of the later outcome.
+- **Medium candidate:** a native model-owned pulse-contact to
+  feedback-eligibility row, outside participant identity and available under
+  bounded shared-local counterfactual access. Reading remains
+  participant-mediated, which is retained as explicit debt.
+- **Historical relation:** participant write/contact, attributable row source,
+  bounded W1-to-W2 persistence, and a later configured opportunity are
+  separately named so that mere environmental improvement cannot satisfy L01.
+- **Selectivity:** aligned and inverted susceptibility groups must receive
+  comparable medium history and differ through the frozen interaction; a
+  generic main effect remains below the niche boundary.
+- **Support context:** no parent basin exists in the primary fixture. Absolute
+  support is visible through one bounded contrast and parent-context debt,
+  blocking parent-modulation and higher ecology claims.
+- **Construction/native boundary:** RCAE configures and orchestrates the
+  experiment but may not compute the later response or inject native state.
+  The medium and feedback producer remain native PyGRC surfaces; RCAE remains
+  constructed, and any future native transition requires a new profile,
+  cycle, and rerun.
+- **Catalog placement:** the pattern remains a `registered_probe`,
+  `building_block` candidate with `candidate` maturity and `absent` domain
+  role. It is not a reusable motif or admitted ecology.
+
+The N29/N30 spiral is also made operational rather than rhetorical. Five exact
+graph-side sources are digest-verified under a read-only guard, but all four
+identical-scope dimensions—carrier, mechanism, intervention, and claim
+scope—remain false. Inheritance supplies method, debt, control patterns, and
+the P2/M2 evidence ceiling only; fresh L01 execution remains mandatory.
+
+#### 8.6.4 Control and claim result at registration time
+
+The preview freeze resolves `13` outcome-independent legs. Seven controls are
+fully resolved because all their exact evidence bindings validate:
+
+```text
+AE01-CTRL-01  conceptual/source-role boundary
+AE01-CTRL-02  N30 claim ceiling
+AE01-CTRL-03  N29 component versus composition boundary
+AE01-CTRL-07  composition-scope guard
+AE01-CTRL-11  participant/medium carrier separation record
+AE01-CTRL-15  constructed-role and no-silent-transition guard
+AE01-CTRL-16  constructed-mechanism completeness
+```
+
+Sixteen controls remain `pending_execution`. These include mixed controls
+whose registration leg resolved but whose causal leg did not (`04`, `05`,
+`08`, `09`, `10`, and `17`), causal/withdrawal comparisons (`06` and L01
+controls `01`-`04`), and terminal report guards (`12`, `13`, `14`, `18`, and
+`19`). `AE01-L01-CTRL-05` alone is `not_applicable` under D-025. No control is
+blocked, but pending is not passing.
+
+The registration claim ceiling is therefore:
+
+```text
+portable, internally constrained registered probe candidate
+```
+
+It is not:
+
+```text
+positive lane evidence
+negative lane evidence
+candidate execution authorization
+native niche formation
+agentic ecology success
+```
+
+#### 8.6.5 Reproducibility, safety, and remaining work
+
+Source review exercised the inherited verification, binding receipt, all 21
+baselines, and derived freeze through explicit dirty-preview mode. Every such
+artifact records a preview-specific kind, `source_worktree_clean=false`,
+`retention_eligible=false`, and `preview_only=true`. The manifest has no dirty
+preview mode and rejects these artifacts.
+
+The source implementation currently passes all `75` tests, Phase 1 validation,
+P2-I1 config validation, registration-policy validation, duplicate-key checks,
+portable-path checks, and graph read-only checks. These are source-level facts,
+not the final retained reconstruction record.
+
+Before Section 8 and `P2-I1-REG-GATE` can close:
+
+1. commit the reviewed source materialization as the clean source anchor;
+2. regenerate the inherited verification, binding receipt, 21-entry baseline
+   registry, registration freeze, and manifest without preview mode;
+3. verify their canonical and file digests and reconstruct the final bundle;
+4. complete the still-open independent-medium and retained-artifact checks in
+   Sections 8.1, 8.4, and 8.5;
+5. record the bounded REG-GATE review, unresolved questions, and disposition;
+   and
+6. keep candidate execution closed until a separate exact-cycle
+   `P2-I1-EXEC-FREEZE` is retained after REG-GATE passes.
 
 Exit gate `P2-I1-REG-GATE`:
 
@@ -804,7 +1110,7 @@ artifact. The table names the exact direct causal/withdrawal IDs for each cell;
 | --- | --- | --- | --- | --- | --- |
 | `reference` | reference | none; registered matched baseline | [ ] | [ ] | [ ] |
 | `candidate-conditioning` | candidate | `AE01-CTRL-04`, `AE01-CTRL-05`, `AE01-CTRL-11` | [ ] | [ ] | [ ] |
-| `medium-freeze-withdrawal` | withdrawal | `AE01-CTRL-06`, `AE01-CTRL-08`, `AE01-L01-CTRL-01`, conditionally `AE01-L01-CTRL-05` | [ ] | [ ] | [ ] |
+| `medium-freeze-withdrawal` | withdrawal | `AE01-CTRL-06`, `AE01-CTRL-08`, `AE01-L01-CTRL-01` | [ ] | [ ] | [ ] |
 | `trace-shuffle` | lineage/source | `AE01-CTRL-06`, `AE01-L01-CTRL-02` | [ ] | [ ] | [ ] |
 | `parent-context-contrast` | active null | `AE01-CTRL-10`, `AE01-L01-CTRL-04` | [ ] | [ ] | [ ] |
 | `susceptibility-inversion` | budget/leakage and selectivity | `AE01-CTRL-09`, `AE01-L01-CTRL-03` | [ ] | [ ] | [ ] |
@@ -831,6 +1137,11 @@ Cell-specific freeze requirements:
   probe cycle with the other realization of the same logical cell, preserve
   both cycle results, and do not close a claim that requires the unresolved
   control.
+- [x] Record constructed-scaffold withdrawal as not applicable to the primary
+  cycle because no constructed scaffold carries the accepted native medium or
+  later response; preserve producer/construction guards and reopen before
+  execution if implementation contradicts this account. Evidence:
+  [`P2-I1-DEC-025`](P2-I1-decision-record.md).
 - [ ] `trace-shuffle` freezes preserved quantity, cost, write count, timing
   distribution, carrier size/spatial support, parent/support context, and
   coherence/resource input where applicable.
@@ -857,6 +1168,11 @@ governs meaning. This checklist records local applicability, execution, and
 evidence only.
 
 ### 10.1 Common controls
+
+- [x] Freeze applicability, resolution stage, and outcome status as independent
+  lifecycle concepts: policy declares obligations, derived freezes record
+  outcomes, mixed controls split into legs, and inherited controls require full
+  provenance. Evidence: [`P2-I1-DEC-024`](P2-I1-decision-record.md).
 
 | Control | L01 priority | Applicability reviewed | Planned evidence | Outcome resolved |
 | --- | --- | --- | --- | --- |
@@ -888,7 +1204,7 @@ evidence only.
 | `AE01-L01-CTRL-02` | Matched trace shuffle | [ ] | [ ] | [ ] |
 | `AE01-L01-CTRL-03` | Susceptibility/selectivity inversion | [ ] | [ ] | [ ] |
 | `AE01-L01-CTRL-04` | Parent-context separation | [ ] | [ ] | [ ] |
-| `AE01-L01-CTRL-05` | Constructed-scaffold withdrawal when applicable | [ ] | [ ] | [ ] |
+| `AE01-L01-CTRL-05` | Constructed-scaffold withdrawal when applicable | [x] | [x] | [x] |
 
 Applicability rules:
 
@@ -902,6 +1218,9 @@ Applicability rules:
   cannot substitute for a lane-specific causal or withdrawal result.
 - `AE01-L01-CTRL-01` is medium freeze with opportunity preserved; it is not
   interchangeable with the `AE01-L01-R02` persistence boundary rung.
+- `AE01-L01-CTRL-05` is explicitly not applicable in the primary cycle under
+  [`P2-I1-DEC-025`](P2-I1-decision-record.md); the checked outcome means
+  `not_applicable`, not a successful withdrawal result.
 
 ## 11. Current frozen probe cycle
 

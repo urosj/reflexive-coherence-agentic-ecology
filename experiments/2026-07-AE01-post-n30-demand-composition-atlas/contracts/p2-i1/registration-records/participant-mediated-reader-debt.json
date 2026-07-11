@@ -1,0 +1,25 @@
+{
+  "record": {
+    "affected_lane_ids": ["AE01-L01"],
+    "blocks": [
+      "autonomous reader access claim",
+      "participant-independent medium consumption claim",
+      "unqualified shared-medium niche formation"
+    ],
+    "category": "medium",
+    "debt_id": "rcae-p2-i1-participant-mediated-reader-debt",
+    "direction": "local_ae01",
+    "discharge_requirements": [
+      "Instantiate a later reader whose access is not produced by the participant-side configured producer",
+      "Preserve the same auditable medium lineage and matched causal controls",
+      "Rerun the relevant cells under a newly frozen cycle"
+    ],
+    "disposition": "Permit only participant-mediated configured reading in the primary cycle and retain the limitation in every result",
+    "evidence_refs": [],
+    "extensions": {},
+    "source_description": "The registered later packet opportunity is produced through participant-side configured logic even though it reads model-owned non-private feedback state",
+    "status": "open"
+  },
+  "record_type": "debt_record",
+  "schema_version": "1.1.0"
+}

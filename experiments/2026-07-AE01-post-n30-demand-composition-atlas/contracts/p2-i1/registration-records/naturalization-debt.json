@@ -1,0 +1,36 @@
+{
+  "record": {
+    "affected_lane_ids": ["AE01-L01"],
+    "blocks": [
+      "native LGRC niche-conditioning claim",
+      "silent transition from the registered RCAE realization",
+      "retroactive upgrade of constructed evidence"
+    ],
+    "category": "naturalization",
+    "debt_id": "rcae-p2-i1-naturalization-debt",
+    "direction": "both",
+    "discharge_requirements": [
+      "A source-current PyGRC capability covers the same registered operation semantics",
+      "A new realization profile explicitly selects the native operation",
+      "The affected cycle is refrozen and rerun against the native realization",
+      "Constructed and native outputs are compared without rewriting prior evidence"
+    ],
+    "disposition": "Carry through registration, execution, terminal classification, and any graph-side discriminator proposal",
+    "evidence_refs": [
+      {
+        "claim_ceiling": "N29 deviations and producer-mediated handoffs cannot be discharged without explicit rerun",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "842ba57e994bbb3e219acff741afd85c87d102bea5eec6d134f3b84f2445cb52",
+        "output_digest": "fa21662f0a69d582bfe574311110f2610a21e6e4e352991823ce47280e0e8ff5",
+        "path": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_closeout_and_ecology_handoff_i18.json",
+        "reference_id": "n29_nativity_debt_source"
+      }
+    ],
+    "extensions": {},
+    "source_debt_id": "deviation_nativity_discharge",
+    "source_description": "RCAE selects, configures, and orchestrates native PyGRC operations under an experiment-local realization that is not itself a native LGRC ecology capability",
+    "status": "carried"
+  },
+  "record_type": "debt_record",
+  "schema_version": "1.1.0"
+}

@@ -1,0 +1,25 @@
+{
+  "record": {
+    "affected_lane_ids": ["AE01-L01"],
+    "blocks": [
+      "parent-basin modulation claim",
+      "ecology motif or regime promotion",
+      "general support-scale invariance"
+    ],
+    "category": "claim",
+    "debt_id": "rcae-p2-i1-parent-context-debt",
+    "direction": "outbound_ecology",
+    "discharge_requirements": [
+      "Represent a distinct parent-basin carrier and state",
+      "Freeze a causal parent-context discriminator rather than a support proxy",
+      "Complete a dedicated lane or cycle with the required controls"
+    ],
+    "disposition": "Treat parent context as absent and the registered reduced-support cell as a bounded support contrast only",
+    "evidence_refs": [],
+    "extensions": {},
+    "source_description": "The fixture has no independently represented parent basin; its parent-context-contrast changes absolute environmental support while preserving the declared score relation",
+    "status": "open"
+  },
+  "record_type": "debt_record",
+  "schema_version": "1.1.0"
+}

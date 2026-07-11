@@ -45,6 +45,7 @@ from p2_i1_runtime import (  # noqa: E402
     bind_runtime,
     resolve_node_coherences,
     resolve_reader_packet_amount,
+    validate_runtime_operation_capabilities,
 )
 
 
@@ -472,6 +473,16 @@ class P2I1Test(unittest.TestCase):
         core = ModuleType("pygrc.core")
         core.PortGraphBackend = object
         models = ModuleType("pygrc.models")
+
+        class RuntimeFacade:
+            from_state = staticmethod(lambda *args, **kwargs: None)
+            get_state = lambda self: None
+            snapshot = lambda self: {}
+            load = staticmethod(lambda *args, **kwargs: None)
+            step = lambda self: None
+            emit_feedback_eligibility_surface_row = lambda self, **kwargs: None
+            set_feedback_coupled_pulse_producer = lambda self, **kwargs: None
+
         for symbol in (
             "GRC9V3NodeState",
             "GRC9V3State",
@@ -484,6 +495,7 @@ class P2I1Test(unittest.TestCase):
             "validate_lgrc9v3_route_aspect",
         ):
             setattr(models, symbol, object)
+        models.LGRC9V3 = RuntimeFacade
         modules = {"pygrc": root, "pygrc.core": core, "pygrc.models": models}
         profile = {
             "availability": True,
@@ -491,7 +503,10 @@ class P2I1Test(unittest.TestCase):
             "supported": True,
             "validated": True,
             "required_pygrc_identity": "pygrc==0.1",
-            "allowed_scheduling_operations": ["p2_i1_runtime_preflight"],
+            "allowed_scheduling_operations": [
+                self.configs["runtime"]["preflight_operation_id"],
+                *self.configs["runtime"]["required_operations"],
+            ],
         }
         bound = bind_runtime(
             self.configs["runtime"],
@@ -500,6 +515,26 @@ class P2I1Test(unittest.TestCase):
             version_reader=lambda name: "0.1",
         )
         self.assertEqual(set(bound), {"pygrc", "core", "models"})
+
+    def test_runtime_operation_conformance_rejects_missing_native_method(self) -> None:
+        models = ModuleType("pygrc.models")
+
+        class IncompleteRuntime:
+            from_state = staticmethod(lambda *args, **kwargs: None)
+            get_state = lambda self: None
+            snapshot = lambda self: {}
+            load = staticmethod(lambda *args, **kwargs: None)
+            step = lambda self: None
+            emit_feedback_eligibility_surface_row = lambda self, **kwargs: None
+
+        models.LGRC9V3 = IncompleteRuntime
+        models.validate_lgrc9v3_route_aspect = lambda *args, **kwargs: None
+        operations = [
+            self.configs["runtime"]["preflight_operation_id"],
+            *self.configs["runtime"]["required_operations"],
+        ]
+        with self.assertRaises(ContractError):
+            validate_runtime_operation_capabilities({"models": models}, operations)
 
 
 if __name__ == "__main__":
