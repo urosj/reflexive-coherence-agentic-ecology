@@ -10,15 +10,14 @@ being placed here.
 
 - [Post-N30 Agentic-Ecology Demand and Composition Atlas roadmap](Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md)
 - [AE01 experiment workspace](2026-07-AE01-post-n30-demand-composition-atlas/README.md)
+- [Why AE01 matters for agentic ecology](2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
 - [Master program plan](../implementation/PostN30-plan.md)
 - [Master program checklist](../implementation/PostN30-checklist.md)
 
-AE01 has passed Review R2 and `P1-GATE` at `AE01-C2`. Its source boundaries,
-machine/narrative contracts, hypothesis/control/failure and developmental-
-interpretation preregistration, candidate-blind calibration procedure, and
-infrastructure are frozen. Phase 2 calibration and lane registration are open;
-candidate execution remains lane-gated and no positive atlas result is
-supported.
+AE01 has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is closed with one
+bounded, explicitly constructed L01 result, and Review R3 passed without tuning
+it. P2-I2 is next. Every remaining lane retains independent calibration,
+registration, control-resolution, execution, and claim boundaries.
 
 ## Experiment authority
 

@@ -1,0 +1,380 @@
+{
+  "artifact_kind": "p2_i1_c01_retry_ledger",
+  "canonical_payload_digest": "cacaffa051e1d5fb613e063831eb6178a71cbc9c29c913db9917ed3073caaf0d",
+  "cycle_id": "P2-I1-C01",
+  "evidence_effect": "infrastructure_only",
+  "exec_freeze_digest": "71080bf26c4ea5146a49d5c74aa2d0b934e77287bb7af6b310730ccad048c343",
+  "primary_failures": [
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "reference",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "a9e99bd16663e6156250a2fecedd7382a55d257ecdfeb6f3b81403313aaf46be",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "reference",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "2c5dccab9861a32e8991be315a3cfe3ae34e4ae5115e37cec4d5b088ed447a54",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "reference",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "4a424ca0c003e3ecc06867580bce7d7e4af67d150d045fe8e7a09194b38258b6",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "candidate-conditioning",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "d2f5b51303931465d2fd2e1537b0f44a3d11f08b44090d7f4f94721395d058d6",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "candidate-conditioning",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "5ad972d2d65fafd63cf80dfe518e7996568c577aefa0ff889186a948f1b54f6b",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "candidate-conditioning",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "00c3754adc48284ab1c1c2e173c4bfc1091653ad94f6361301ef05e2bcd96b47",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "medium-freeze-withdrawal",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "de70cb3a80e90297cbf90d29b81cdbe95b4140fda3d879c24cb41fbf63fea2ab",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "medium-freeze-withdrawal",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "cb526d490ee186bcb4842f99998d70617feeebd63d9b657de92136ba5af223d7",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "medium-freeze-withdrawal",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "4e90530b0e88a170af323181343a3462a0b129ec68dbb140de95ebdf1bc283c4",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "trace-shuffle",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "cdc03518b129f190f443020aa12d0a02c2bfc363ee784d56c649631fe3980ec9",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "trace-shuffle",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "c184e8b18194fe0ade146cbbaba4588aac95e6838419ede7fec962484e8311be",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "trace-shuffle",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "9d3e1897f138ab8f2a4098df02170b7ed1bda61d322ada0011849d07e28be009",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "parent-context-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "81158424158e54cb765e6d1882c23f6016d4db35584cbc1e1435a55ac19e297f",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "parent-context-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "c80868ced4b8bdeaacd40d19f3f08305c3dad514d3e3c2ca68e91d71e26350c3",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "parent-context-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "269b2b37d399769745c3db2a8693d15e9379c01b8e77b735b24c983f2fa2928d",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "susceptibility-inversion",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "f82503259fe2231ba3bb5b7ce8e77ea34c240336f4bf435f3802140fcefb3577",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "susceptibility-inversion",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "ffc7baff2df5c8bc66f50ae68a4c85f149fc069da4ebdcfdda0a26d3de85882c",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "susceptibility-inversion",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "bdb84f8659940a43e9332b587722c1e3d1a8febcb7745584cca113357384d8bd",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "carrier-timescale-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "e34fef253c1985eaf0cc070624f9e8b0403edf95a1612c2028079a18fa30b79f",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 101
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "carrier-timescale-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "4910fc4436674bb6b099fe7c0be0a95dae8c974e419e5131bf9d567c63eaae2e",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 211
+    },
+    {
+      "attempt": 1,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "carrier-timescale-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "execution_configuration_digest": "0241b1eb97508d0b00d9d40cd8e58cbc615b63d0178b69a00310722cd892f8b0",
+      "exit_code": 2,
+      "failure_class": "runtime_or_integrity_failure_pending_review",
+      "seed": 307
+    }
+  ],
+  "retries_per_cell_limit": 1,
+  "retry_authorizations": [
+    {
+      "cell_id": "reference",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "a9e99bd16663e6156250a2fecedd7382a55d257ecdfeb6f3b81403313aaf46be",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    },
+    {
+      "cell_id": "candidate-conditioning",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "d2f5b51303931465d2fd2e1537b0f44a3d11f08b44090d7f4f94721395d058d6",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    },
+    {
+      "cell_id": "medium-freeze-withdrawal",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "de70cb3a80e90297cbf90d29b81cdbe95b4140fda3d879c24cb41fbf63fea2ab",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    },
+    {
+      "cell_id": "trace-shuffle",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "cdc03518b129f190f443020aa12d0a02c2bfc363ee784d56c649631fe3980ec9",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    },
+    {
+      "cell_id": "parent-context-contrast",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "81158424158e54cb765e6d1882c23f6016d4db35584cbc1e1435a55ac19e297f",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    },
+    {
+      "cell_id": "susceptibility-inversion",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "f82503259fe2231ba3bb5b7ce8e77ea34c240336f4bf435f3802140fcefb3577",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    },
+    {
+      "cell_id": "carrier-timescale-contrast",
+      "primary_attempt": 1,
+      "retry_attempt": 2,
+      "same_scientific_configuration_digest": "e34fef253c1985eaf0cc070624f9e8b0403edf95a1612c2028079a18fa30b79f",
+      "seed": 101,
+      "selection_rule": "lowest_seed_with_first_infrastructure_failure",
+      "status": "authorized"
+    }
+  ],
+  "retry_results": [
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "reference",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "candidate-conditioning",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "medium-freeze-withdrawal",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "trace-shuffle",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "parent-context-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "susceptibility-inversion",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    },
+    {
+      "attempt": 2,
+      "candidate_scientific_effect": "none_operational_only",
+      "cell_id": "carrier-timescale-contrast",
+      "diagnostic_digest": "cafffec3f98ecdcb1a2070c0e5f383cf3e5586a86cbf1a7c8671a68784f17e15",
+      "diagnostic_summary": "P2-I1 C01 execution error: C01 branch restoration differs from W2 snapshot",
+      "exit_code": 2,
+      "seed": 101,
+      "status": "failed"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scientific_refinement_by_retry": false
+}

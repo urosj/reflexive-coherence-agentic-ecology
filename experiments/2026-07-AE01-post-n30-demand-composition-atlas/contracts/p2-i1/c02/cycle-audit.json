@@ -1,0 +1,199 @@
+{
+  "artifact_kind": "p2_i1_c02_cycle_audit",
+  "audit_complete": true,
+  "baseline_matches": true,
+  "candidate_outcomes_present": true,
+  "canonical_payload_digest": "8a535c6af06c96e1c93be9e6f3ef31a05af081f0fc14711388de9a937e6503ed",
+  "cycle_id": "P2-I1-C02",
+  "duplicate_cell_seed_keys": false,
+  "effective_run_count": 21,
+  "evidence_effect": "control_and_integrity_only",
+  "exec_freeze_digest": "929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84",
+  "medium_dependency_audit": [
+    {
+      "candidate_formed_count": 2,
+      "candidate_medium_present": true,
+      "freeze_formed_count": 0,
+      "freeze_medium_present": false,
+      "same_participant_opportunity": true,
+      "same_post_writer_base_state": true,
+      "seed": 101,
+      "structural_control_passed": true
+    },
+    {
+      "candidate_formed_count": 2,
+      "candidate_medium_present": true,
+      "freeze_formed_count": 0,
+      "freeze_medium_present": false,
+      "same_participant_opportunity": true,
+      "same_post_writer_base_state": true,
+      "seed": 211,
+      "structural_control_passed": true
+    },
+    {
+      "candidate_formed_count": 2,
+      "candidate_medium_present": true,
+      "freeze_formed_count": 0,
+      "freeze_medium_present": false,
+      "same_participant_opportunity": true,
+      "same_post_writer_base_state": true,
+      "seed": 307,
+      "structural_control_passed": true
+    }
+  ],
+  "missing_run_ids": [],
+  "no_prior_trace_at_w0": true,
+  "no_reused_worker_scope": true,
+  "obligation_results": [
+    {
+      "obligation_id": "C02-OBL-01",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-02",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-03",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-04",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-05",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-06",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-07",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-08",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-09",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-10",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-11",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    },
+    {
+      "obligation_id": "C02-OBL-12",
+      "scientific_interpretation_deferred": true,
+      "status": "structural_prerequisites_passed"
+    }
+  ],
+  "producer_parity_audit": [
+    {
+      "candidate_invocation_count": 4,
+      "configuration_except_medium_match": true,
+      "freeze_invocation_count": 4,
+      "seed": 101
+    },
+    {
+      "candidate_invocation_count": 4,
+      "configuration_except_medium_match": true,
+      "freeze_invocation_count": 4,
+      "seed": 211
+    },
+    {
+      "candidate_invocation_count": 4,
+      "configuration_except_medium_match": true,
+      "freeze_invocation_count": 4,
+      "seed": 307
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scientific_rung_assigned": false,
+  "support_budget_matching_audit": [
+    {
+      "carrier_exception_declared": true,
+      "ordinary_projection_match": true,
+      "parent_exception_declared": true,
+      "seed": 101
+    },
+    {
+      "carrier_exception_declared": true,
+      "ordinary_projection_match": true,
+      "parent_exception_declared": true,
+      "seed": 211
+    },
+    {
+      "carrier_exception_declared": true,
+      "ordinary_projection_match": true,
+      "parent_exception_declared": true,
+      "seed": 307
+    }
+  ],
+  "terminal_classification_opened": false,
+  "thresholds_applied_as_terminal_boolean_gates": false,
+  "trace_shuffle_audit": [
+    {
+      "candidate_expected_arrival": true,
+      "expected_source_digest_differs": true,
+      "feedback_content_match": true,
+      "seed": 101,
+      "shuffle_expected_departure": true
+    },
+    {
+      "candidate_expected_arrival": true,
+      "expected_source_digest_differs": true,
+      "feedback_content_match": true,
+      "seed": 211,
+      "shuffle_expected_departure": true
+    },
+    {
+      "candidate_expected_arrival": true,
+      "expected_source_digest_differs": true,
+      "feedback_content_match": true,
+      "seed": 307,
+      "shuffle_expected_departure": true
+    }
+  ],
+  "worker_scope_ids": [
+    "P2-I1-C02-worker:reference:seed-101:attempt-1",
+    "P2-I1-C02-worker:reference:seed-211:attempt-1",
+    "P2-I1-C02-worker:reference:seed-307:attempt-1",
+    "P2-I1-C02-worker:candidate-conditioning:seed-101:attempt-1",
+    "P2-I1-C02-worker:candidate-conditioning:seed-211:attempt-1",
+    "P2-I1-C02-worker:candidate-conditioning:seed-307:attempt-1",
+    "P2-I1-C02-worker:medium-freeze-withdrawal:seed-101:attempt-1",
+    "P2-I1-C02-worker:medium-freeze-withdrawal:seed-211:attempt-1",
+    "P2-I1-C02-worker:medium-freeze-withdrawal:seed-307:attempt-1",
+    "P2-I1-C02-worker:trace-shuffle:seed-101:attempt-1",
+    "P2-I1-C02-worker:trace-shuffle:seed-211:attempt-1",
+    "P2-I1-C02-worker:trace-shuffle:seed-307:attempt-1",
+    "P2-I1-C02-worker:parent-context-contrast:seed-101:attempt-1",
+    "P2-I1-C02-worker:parent-context-contrast:seed-211:attempt-1",
+    "P2-I1-C02-worker:parent-context-contrast:seed-307:attempt-1",
+    "P2-I1-C02-worker:susceptibility-inversion:seed-101:attempt-1",
+    "P2-I1-C02-worker:susceptibility-inversion:seed-211:attempt-1",
+    "P2-I1-C02-worker:susceptibility-inversion:seed-307:attempt-1",
+    "P2-I1-C02-worker:carrier-timescale-contrast:seed-101:attempt-1",
+    "P2-I1-C02-worker:carrier-timescale-contrast:seed-211:attempt-1",
+    "P2-I1-C02-worker:carrier-timescale-contrast:seed-307:attempt-1"
+  ]
+}

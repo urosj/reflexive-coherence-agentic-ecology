@@ -1,0 +1,168 @@
+{
+  "record": {
+    "extensions": {},
+    "profile_registry_id": "rcae-p2-i1-registration-profile-registry-v1",
+    "profiles": [
+      {
+        "profile_id": "rcae-p2-i1-environment-v1",
+        "profile_type": "environment",
+        "profile_version": "1.0.0",
+        "values": {
+          "locale_policy": "UTF-8 input and ASCII-safe canonical JSON output",
+          "operating_system_scope": "POSIX-compatible or equivalent Python subprocess and filesystem semantics",
+          "python_version": ">=3.11",
+          "timezone_policy": "No wall-clock or timezone value enters canonical records"
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-digest-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+            "digest",
+            "--input",
+            "LOCAL_ARTIFACT"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-inherited-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-inherited-verification",
+            "--graph-root",
+            "LOCAL_GRAPH_CHECKOUT",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-runtime-receipt-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-runtime-receipt",
+            "--graph-root",
+            "LOCAL_GRAPH_CHECKOUT",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-baseline-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-baseline-registry",
+            "--realization-profile",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-realization-profile.json",
+            "--graph-root",
+            "LOCAL_GRAPH_CHECKOUT",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-freeze-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-registration-freeze",
+            "--baseline-registry",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json",
+            "--inherited-verification",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json",
+            "--runtime-receipt",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-manifest-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-registration-manifest",
+            "--baseline-registry",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json",
+            "--inherited-verification",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json",
+            "--runtime-receipt",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json",
+            "--registration-freeze",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-manifest.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-dependencies-v1",
+        "profile_type": "dependency",
+        "profile_version": "1.0.0",
+        "values": {
+          "dependencies": [
+            {
+              "name": "Python standard library",
+              "source": "Python runtime",
+              "version_or_revision": ">=3.11"
+            },
+            {
+              "name": "jsonschema",
+              "source": "Python Package Index",
+              "version_or_revision": "4.26.0"
+            },
+            {
+              "name": "pygrc",
+              "source": "locally configured PyGRC distribution",
+              "version_or_revision": "0.1"
+            }
+          ]
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-resource-v1",
+        "profile_type": "resource",
+        "profile_version": "1.0.0",
+        "values": {
+          "hardware_class": "single local CPU; no accelerator required",
+          "max_disk_mb": 256,
+          "max_memory_mb": 512,
+          "max_runtime_seconds": 120
+        }
+      }
+    ]
+  },
+  "record_type": "profile_registry",
+  "schema_version": "1.1.0"
+}

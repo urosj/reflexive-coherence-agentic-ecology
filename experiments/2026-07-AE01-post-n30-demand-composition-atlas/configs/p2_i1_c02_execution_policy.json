@@ -1,0 +1,300 @@
+{
+  "artifact_kind": "p2_i1_c02_execution_policy",
+  "schema_version": "1.0.0",
+  "lane_id": "AE01-L01",
+  "cycle_id": "P2-I1-C02",
+  "predecessor_cycle_id": "P2-I1-C01",
+  "evidence_effect": "none_pre_execution_policy_only",
+  "authorization": {
+    "candidate_execution_authorized": false,
+    "authorization_record_kind": "p2_i1_c02_exec_freeze",
+    "authorization_gate": "P2-I1-EXEC-FREEZE",
+    "authorization_scope": "exact_cycle_cell_seed_attempt_only",
+    "candidate_outcomes_absent_required_at_freeze": true,
+    "tracked_freeze_required_before_run": true,
+    "fallback_execution_class": null
+  },
+  "authorities": {
+    "registration_freeze_path": "contracts/p2-i1/registration-freeze.json",
+    "registration_manifest_path": "contracts/p2-i1/registration-manifest.json",
+    "registration_review_path": "reports/P2-I1-REG-review.md",
+    "registration_review_marker": "P2-I1-REG-GATE = passed",
+    "decision_record_path": "implementation/P2-I1-decision-record.md",
+    "decision_026_acceptance_marker": "P2-I1-DEC-026 accepted for C01 EXEC-FREEZE",
+    "decision_027_acceptance_marker": "P2-I1-DEC-027 accepted for C02 restoration correction",
+    "predecessor_retry_ledger_path": "contracts/p2-i1/c01/retry-ledger.json",
+    "predecessor_cycle_audit_path": "contracts/p2-i1/c01/cycle-audit.json",
+    "predecessor_result_report_path": "reports/P2-I1-C01-bounded-incomplete.md",
+    "calibration_freeze_path": "contracts/p2-i1/calibration-freeze.json",
+    "cal_pre_identity_path": "contracts/p2-i1/cal-pre-identity-v2.json",
+    "fixture_path": "configs/p2_i1_fixture.json",
+    "cells_path": "configs/p2_i1_cells.json",
+    "analysis_policy_path": "configs/p2_i1_analysis_policy.json",
+    "registration_policy_path": "configs/p2_i1_registration_policy.json",
+    "realization_profile_path": "contracts/p2-i1/registration-realization-profile.json",
+    "baseline_registry_path": "contracts/p2-i1/baseline-identity-registry.json"
+  },
+  "execution_identity": {
+    "execution_class": "pygrc_runtime_with_rcae_producer",
+    "required_pygrc_identity": "pygrc==0.1",
+    "registered_operation_classes": [
+      "p2_i1_runtime_preflight",
+      "fixture_construction",
+      "route_aspect_validation",
+      "snapshot_round_trip",
+      "packet_queue_step",
+      "feedback_surface_emission",
+      "feedback_conditioned_packet_production"
+    ],
+    "execution_specific_capability_paths": {
+      "writer_packet_scheduling": [
+        "models.LGRC9V3.schedule_packet_departure"
+      ],
+      "feedback_conditioned_packet_production": [
+        "models.LGRC9V3.produce_events"
+      ],
+      "branch_snapshot_persistence": [
+        "models.LGRC9V3.save",
+        "models.LGRC9V3.load"
+      ],
+      "runtime_state_audit": [
+        "models.LGRC9V3.get_state",
+        "models.LGRC9V3.snapshot"
+      ]
+    },
+    "binding_relation_to_registration": "strict_execution_specific_superset",
+    "binding_failure_class": "blocked_runtime_unavailable_never_scientific_negative",
+    "machine_local_runtime_path_recorded": false,
+    "graph_repository_access": "read_only_fingerprint_guard"
+  },
+  "restoration_identity": {
+    "policy": "declared_native_restoration_projection",
+    "included_snapshot_groups": ["metadata", "topology", "basin_attributes", "edge_labels", "dynamics.lgrc9v3_runtime", "observables", "events"],
+    "excluded_snapshot_path": "caches.base_grc9v3_snapshot",
+    "raw_snapshot_digests_retained": true,
+    "projection_digests_must_match": true,
+    "medium_reconstruction_verified_separately": true,
+    "equal_input_continuation_required": true,
+    "normalization_is_observation_not_failure": true,
+    "pygrc_state_mutation_permitted": false,
+    "pygrc_modification_permitted": false
+  },
+  "matrix": {
+    "cell_order": [
+      "reference",
+      "candidate-conditioning",
+      "medium-freeze-withdrawal",
+      "trace-shuffle",
+      "parent-context-contrast",
+      "susceptibility-inversion",
+      "carrier-timescale-contrast"
+    ],
+    "seeds": [101, 211, 307],
+    "attempts_per_seed": 1,
+    "infrastructure_retries_per_cell": 1,
+    "retry_seed_selection": "lowest_seed_with_first_infrastructure_failure",
+    "fresh_worker_per_attempt": true,
+    "worker_reuse_allowed": false,
+    "scientific_refinement_by_retry": false,
+    "opportunities_per_cell_seed": 4,
+    "expected_primary_run_count": 21
+  },
+  "window_operations": [
+    {
+      "window_id": "W0",
+      "operations": ["construct_fixture", "verify_registered_baseline"],
+      "required_audits": ["initial_state_match", "empty_queue", "empty_surface"]
+    },
+    {
+      "window_id": "W1",
+      "operations": ["schedule_writer_packet", "drain_native_queue"],
+      "required_audits": ["writer_event_lineage", "departure_contact", "arrival_contact", "queue_empty"]
+    },
+    {
+      "window_id": "W2",
+      "operations": ["apply_cell_medium_intervention", "persist_branch_point"],
+      "required_audits": ["medium_presence", "medium_reconstruction", "participant_label_not_consumed", "branch_point_identity"]
+    },
+    {
+      "window_id": "W3",
+      "operations": ["restore_branch_point", "configure_native_reader_producer", "invoke_native_producer"],
+      "required_audits": ["restoration_projection_match", "raw_snapshot_normalization_recorded", "equal_input_continuation", "static_profile_match", "medium_history_match", "producer_invocation_parity"]
+    },
+    {
+      "window_id": "W4",
+      "operations": ["drain_native_queue", "record_raw_opportunity"],
+      "required_audits": ["causal_chain", "response", "queue_empty", "support_budget", "no_branch_carryover"]
+    }
+  ],
+  "cell_realizations": {
+    "reference": {
+      "feedback_row": "emit_from_writer_arrival_contact",
+      "reference_delta_source": "registered_cell_reference_delta",
+      "expected_source_digest": "writer_arrival_contact",
+      "profile_polarity_mode": "registered",
+      "reader_packet_amount_source": "fixture"
+    },
+    "candidate-conditioning": {
+      "feedback_row": "emit_from_writer_arrival_contact",
+      "reference_delta_source": "registered_cell_reference_delta",
+      "expected_source_digest": "writer_arrival_contact",
+      "profile_polarity_mode": "registered",
+      "reader_packet_amount_source": "fixture"
+    },
+    "medium-freeze-withdrawal": {
+      "feedback_row": "not_emitted",
+      "reference_delta_source": "not_applicable",
+      "expected_source_digest": "writer_arrival_contact",
+      "profile_polarity_mode": "registered",
+      "reader_packet_amount_source": "fixture",
+      "producer_invocation_preserved": true,
+      "participant_opportunity_preserved": true,
+      "scaffold_withdrawal": false
+    },
+    "trace-shuffle": {
+      "feedback_row": "emit_from_writer_arrival_contact",
+      "reference_delta_source": "fixture",
+      "expected_source_digest": "writer_departure_contact",
+      "broken_relation": "expected_source_digest_only",
+      "preserved_relation": "row_quantity_content_timing_support_and_opportunity",
+      "profile_polarity_mode": "registered",
+      "reader_packet_amount_source": "fixture"
+    },
+    "parent-context-contrast": {
+      "feedback_row": "emit_from_writer_arrival_contact",
+      "reference_delta_source": "fixture",
+      "expected_source_digest": "writer_arrival_contact",
+      "profile_polarity_mode": "registered",
+      "reader_packet_amount_source": "fixture",
+      "support_transform": "registered_absolute_environmental_support_scale",
+      "parent_basin": "absent_not_represented"
+    },
+    "susceptibility-inversion": {
+      "feedback_row": "emit_from_writer_arrival_contact",
+      "reference_delta_source": "fixture",
+      "expected_source_digest": "writer_arrival_contact",
+      "profile_polarity_mode": "registered_inversion",
+      "reader_packet_amount_source": "fixture"
+    },
+    "carrier-timescale-contrast": {
+      "feedback_row": "emit_from_writer_arrival_contact",
+      "reference_delta_source": "fixture",
+      "expected_source_digest": "writer_arrival_contact",
+      "profile_polarity_mode": "registered",
+      "reader_packet_amount_source": "registered_cell_override"
+    }
+  },
+  "live_obligations": [
+    {
+      "obligation_id": "C02-OBL-01",
+      "meaning": "independent_medium_reconstruction",
+      "resolution_scope": "per_run",
+      "required_fields": ["medium_projection_digest", "reconstructed_medium_projection_digest", "participant_label_input_consumed"],
+      "pass_condition": "digests_equal_and_participant_label_input_consumed_false",
+      "failure_effect": "limit_to_participant_carried_or_missing_medium"
+    },
+    {
+      "obligation_id": "C02-OBL-02",
+      "meaning": "medium_dependency_with_participant_opportunity_preserved",
+      "resolution_scope": "cross_cell_seed",
+      "required_cells": ["candidate-conditioning", "medium-freeze-withdrawal"],
+      "required_fields": ["post_writer_base_state_digest", "participant_opportunity_signature", "medium_presence", "opportunity_records"],
+      "failure_effect": "block_medium_dependent_l01_claim"
+    },
+    {
+      "obligation_id": "C02-OBL-03",
+      "meaning": "matched_selectivity_baseline_viability",
+      "resolution_scope": "per_run",
+      "required_fields": ["static_profile_identities", "baseline_viability_audit"],
+      "failure_effect": "selectivity_not_evaluable"
+    },
+    {
+      "obligation_id": "C02-OBL-04",
+      "meaning": "comparable_medium_exposure_across_selectivity_groups",
+      "resolution_scope": "per_run",
+      "required_fields": ["medium_history_digest", "resolved_profile_identities", "exposure_match_audit"],
+      "failure_effect": "limit_to_generic_or_unresolved_conditioning"
+    },
+    {
+      "obligation_id": "C02-OBL-05",
+      "meaning": "exact_initialization_and_reset",
+      "resolution_scope": "per_run",
+      "required_fields": ["registered_baseline_digest", "observed_baseline_digest", "baseline_match"],
+      "failure_effect": "infrastructure_or_integrity_failure"
+    },
+    {
+      "obligation_id": "C02-OBL-06",
+      "meaning": "cross_cell_seed_and_attempt_isolation",
+      "resolution_scope": "cycle",
+      "required_fields": ["worker_scope_ids", "baseline_matches", "no_reused_worker_scope", "no_prior_trace_at_w0"],
+      "failure_effect": "infrastructure_or_integrity_failure"
+    },
+    {
+      "obligation_id": "C02-OBL-07",
+      "meaning": "exact_branch_restoration_and_no_carryover",
+      "resolution_scope": "per_opportunity",
+      "required_fields": ["branch_point_snapshot_digest", "restored_snapshot_digest", "branch_point_restoration_projection_digest", "restored_restoration_projection_digest", "raw_snapshot_equal", "equal_input_continuation", "cross_branch_state_carryover"],
+      "failure_effect": "opportunity_not_evaluable"
+    },
+    {
+      "obligation_id": "C02-OBL-08",
+      "meaning": "support_budget_matching",
+      "resolution_scope": "cross_cell_seed",
+      "required_fields": ["support_budget_projection", "support_budget_projection_digest", "declared_cell_exception"],
+      "failure_effect": "record_support_budget_debt_or_integrity_failure"
+    },
+    {
+      "obligation_id": "C02-OBL-09",
+      "meaning": "source_current_runtime_and_causal_identity",
+      "resolution_scope": "per_run",
+      "required_fields": ["runtime_binding", "source_revisions", "writer_event_digest", "pulse_contact_surface_digest", "medium_history_digest"],
+      "failure_effect": "blocked_or_incomplete_never_scientific_negative"
+    },
+    {
+      "obligation_id": "C02-OBL-10",
+      "meaning": "producer_invocation_parity",
+      "resolution_scope": "cross_cell_seed",
+      "required_cells": ["candidate-conditioning", "medium-freeze-withdrawal"],
+      "required_fields": ["producer_invocation_count", "producer_policy", "producer_configuration_except_medium_digest"],
+      "failure_effect": "classify_producer_carried_only"
+    },
+    {
+      "obligation_id": "C02-OBL-11",
+      "meaning": "trace_shuffle_single_axis",
+      "resolution_scope": "cross_cell_seed",
+      "required_cells": ["candidate-conditioning", "trace-shuffle"],
+      "required_fields": ["feedback_row_content_projection_digest", "expected_source_surface_digest", "preserved_trace_fields_audit"],
+      "failure_effect": "block_history_content_claim"
+    },
+    {
+      "obligation_id": "C02-OBL-12",
+      "meaning": "retained_runtime_receipt_and_reconstruction",
+      "resolution_scope": "per_run",
+      "required_fields": ["runtime_receipt", "reconstruction", "graph_repository_write_observed"],
+      "failure_effect": "blocked_or_incomplete_never_scientific_negative"
+    }
+  ],
+  "artifact_contract": {
+    "execution_binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-binding-receipt.json",
+    "run_artifact_path_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/{cell_id}/seed-{seed}.json",
+    "retry_run_artifact_path_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/retries/{cell_id}/seed-{seed}.json",
+    "cycle_audit_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/cycle-audit.json",
+    "retry_ledger_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/retry-ledger.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-manifest.json",
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/exec-freeze.json",
+    "per_run_opportunity_count": 4,
+    "retain_failed_attempts": true,
+    "derived_reports_cannot_support_positive_rung": true,
+    "candidate_result_paths_must_be_absent_at_freeze": true
+  },
+  "claim_boundary": {
+    "registration_facts_are_not_lane_evidence": true,
+    "thresholds_are_interpretive_ladders_not_terminal_boolean_gates": true,
+    "positive_or_negative_classification_requires_completed_verified_execution": true,
+    "maximum_claim": "bounded niche-conditioning demand pattern",
+    "native_niche_claim": false,
+    "agency_claim": false,
+    "coordination_claim": false,
+    "motif_or_regime_claim": false
+  }
+}

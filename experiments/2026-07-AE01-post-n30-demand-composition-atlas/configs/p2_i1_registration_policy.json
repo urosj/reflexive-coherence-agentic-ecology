@@ -1,0 +1,290 @@
+{
+  "artifact_kind": "p2_i1_registration_policy",
+  "schema_version": "1.0.0",
+  "policy_id": "rcae-p2-i1-registration-policy-v1",
+  "evidence_effect": "none_registration_input_only",
+  "lane_id": "AE01-L01",
+  "cycle_id": "P2-I1-C00",
+  "hypothesis_id": "AE01-H-L01",
+  "candidate_outcomes_absent_required": true,
+  "candidate_execution_authorized": false,
+  "decision_refs": [
+    "P2-I1-DEC-001", "P2-I1-DEC-002", "P2-I1-DEC-003",
+    "P2-I1-DEC-004", "P2-I1-DEC-005", "P2-I1-DEC-006",
+    "P2-I1-DEC-007", "P2-I1-DEC-008", "P2-I1-DEC-009",
+    "P2-I1-DEC-010", "P2-I1-DEC-011", "P2-I1-DEC-012",
+    "P2-I1-DEC-013", "P2-I1-DEC-014", "P2-I1-DEC-015",
+    "P2-I1-DEC-016", "P2-I1-DEC-017", "P2-I1-DEC-018",
+    "P2-I1-DEC-019", "P2-I1-DEC-020", "P2-I1-DEC-021",
+    "P2-I1-DEC-022", "P2-I1-DEC-023", "P2-I1-DEC-024",
+    "P2-I1-DEC-025"
+  ],
+  "identity_imports": {
+    "cal_pre_identity_path": "contracts/p2-i1/cal-pre-identity-v2.json",
+    "calibration_path": "contracts/p2-i1/metric-calibration.json",
+    "frozen_metric_sheet_path": "contracts/p2-i1/frozen-metric-sheet.json",
+    "calibration_measurement_identity_digest": "853c5f10d33a1820b72cc3245e0612ff9024a7ae920833d44e81fcc22a7f2e5a",
+    "calibration_realization_digest": "9b59988a0f5211cb32aaf531748f8a9b235540729d40544373e6ba3a04b769b8",
+    "metric_sheet_id": "ae01-l01-primary-metric-v1",
+    "metric_calibration_id": "ae01:metric-calibration:e6597bb377916086",
+    "delta": 1e-12
+  },
+  "operational_identity": {
+    "participant_carrier": "node_P_plus_registered_source_pole_lineage",
+    "participant_continuity": "live_source_pole_nodes_and_lineage_plus_budgeted_one_repeat_reserve",
+    "medium_carrier": "model_owned_pulse_contact_to_feedback_eligibility_history",
+    "medium_access_scope": "registered_surface_nodes_and_distinct_reader_route_profiles",
+    "non_private_status": "model_owned_runtime_state_outside_participant_identity",
+    "writer_reader_relation": "distinct_carrier",
+    "read_mode": "participant_mediated_configured_producer",
+    "co_constitution_claimed": false,
+    "parent_context": "absent_not_represented",
+    "claim_ceiling": "bounded_niche_conditioning_demand_pattern"
+  },
+  "realization_policy": {
+    "profile_path": "contracts/p2-i1/registration-realization-profile.json",
+    "profile_id": "rcae-p2-i1-registered-realization-v1",
+    "execution_class": "pygrc_runtime_with_rcae_producer",
+    "required_pygrc_identity": "pygrc==0.1",
+    "required_public_capabilities": ["pygrc.core", "pygrc.models"],
+    "allowed_operation_classes": [
+      "p2_i1_runtime_preflight",
+      "fixture_construction",
+      "route_aspect_validation",
+      "snapshot_round_trip",
+      "packet_queue_step",
+      "feedback_surface_emission",
+      "feedback_conditioned_packet_production"
+    ],
+    "machine_local_path_recorded": false,
+    "fallback_allowed": false,
+    "profile_grants_execution_authority": false,
+    "runtime_receipt_required_for_every_live_run": true
+  },
+  "execution_policy": {
+    "cell_order_policy": "fixed_as_listed_with_order_effect_debt",
+    "cell_order": [
+      "reference", "candidate-conditioning", "medium-freeze-withdrawal",
+      "trace-shuffle", "parent-context-contrast",
+      "susceptibility-inversion", "carrier-timescale-contrast"
+    ],
+    "seeds": [101, 211, 307],
+    "attempts_per_seed": 1,
+    "infrastructure_retries_per_cell": 1,
+    "retry_seed_selection": "lowest_seed_with_first_infrastructure_failure",
+    "fresh_worker_per_attempt": true,
+    "worker_reuse_allowed": false,
+    "scientific_refinement_by_retry": false,
+    "resource_envelope": {
+      "max_runtime_seconds": 120,
+      "max_memory_mb": 512,
+      "max_disk_mb": 256
+    }
+  },
+  "baseline_policy": {
+    "expected_configuration_count": 21,
+    "identity_scope": "one_entry_per_exact_cell_and_seed",
+    "duplicate_digest_entries_retained": true,
+    "initial_window": "W0",
+    "queue_requirement": "empty",
+    "focal_surface_requirement": "empty",
+    "baseline_match_required_before_writer": true,
+    "reset_method": "fresh_worker_reconstruction_from_declarative_inputs",
+    "w2_branch_point_count_per_attempt": 1,
+    "opportunity_restores_per_attempt": 4,
+    "cross_branch_state_carryover": false,
+    "mismatch_class": "infrastructure_or_integrity_failure"
+  },
+  "matching_policy": {
+    "medium_history_match_fields": [
+      "writer_event_id", "pulse_contact_surface_digest", "feedback_reference",
+      "feedback_threshold", "feedback_mask", "write_count",
+      "event_time_key", "surface_node_ids"
+    ],
+    "support_budget_match_fields": [
+      "resolved_node_coherences", "total_native_budget", "participant_reserve",
+      "writer_packet_amount", "reader_packet_amount", "edge_delays",
+      "topology_digest"
+    ],
+    "exact_identity_fields": [
+      "fixture_config_digest", "static_opportunity_profile_digest",
+      "branch_point_snapshot_digest", "restored_snapshot_digest"
+    ],
+    "numeric_identity_tolerance": 1e-12,
+    "trace_quantity_tolerance": 0,
+    "event_time_tolerance": 0,
+    "surface_access_tolerance": 0
+  },
+  "measurement_scope": {
+    "primary_response_family": "later_native_packet_opportunity_formation",
+    "cross_response_family_magnitude_comparison": "prohibited_not_applicable_single_primary_family",
+    "interpretation_rule": "Raw values and proximity relations remain specific to the registered formation family and may not be numerically compared with persistence, re-entry, cost, or susceptibility families"
+  },
+  "control_plans": [
+    {
+      "control_id": "AE01-CTRL-01", "priority": "direct", "applicability": "applicable",
+      "rationale": "conceptual sources motivate but never become runtime evidence",
+      "legs": [{"leg_id": "record-role-guard", "resolution_stage": "registration_guard", "required_evidence": ["source role and runtime-permission audit"], "evidence_binding_refs": ["source-inventory", "rcae-p2-i1-l01-registered-probe"], "fail_closed_effect": "reject dependent evidence and gate"}]
+    },
+    {
+      "control_id": "AE01-CTRL-02", "priority": "direct", "applicability": "applicable",
+      "rationale": "N30 contributes inherited method and evidence only within its original ceiling",
+      "legs": [{"leg_id": "n30-ceiling-verification", "resolution_stage": "inherited_verification", "required_evidence": ["N30 artifact path and digest", "inherited role", "identical-scope result", "must_not_consume_as", "new lane execution required"], "evidence_binding_refs": ["inherited:n30_replay_controls_i7", "inherited:n30_closeout_and_spiral_handoff_i8"], "fail_closed_effect": "reject coordination agency or ecology-regime relabel"}]
+    },
+    {
+      "control_id": "AE01-CTRL-03", "priority": "inherited", "applicability": "applicable",
+      "rationale": "N29 component observations cannot establish the fresh P2-I1 composition",
+      "legs": [{"leg_id": "n29-component-scope", "resolution_stage": "inherited_verification", "required_evidence": ["N29 artifact path and digest", "inherited role", "identical-scope result", "must_not_consume_as", "new lane execution required"], "evidence_binding_refs": ["inherited:n29_closeout_and_ecology_handoff_i18", "inherited:n29_prototype_atlas_i15"], "fail_closed_effect": "keep component and composition claims separate"}]
+    },
+    {
+      "control_id": "AE01-CTRL-04", "priority": "direct", "applicability": "applicable",
+      "rationale": "L01 requires participant medium history and later dependence rather than passive environment",
+      "legs": [
+        {"leg_id": "boundary-registration", "resolution_stage": "registration_guard", "required_evidence": ["participant and medium carrier account", "parent-context declaration"], "evidence_binding_refs": ["rcae-p2-i1-l01-registered-probe", "rcae-p2-i1-feedback-row-surface-v1", "rcae-p2-i1-registration-claim-boundary-v1"], "fail_closed_effect": "block ecology and niche relation claims"},
+        {"leg_id": "later-dependence", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "reference", "medium-freeze-withdrawal"], "broken_relation": "attributable medium history changes later opportunity formation", "preserved_fields": ["participant identity", "later opportunity profiles", "support and budget outside declared interventions"], "expected_artifact_role": "later_response_comparison", "required_evidence": ["attributable history and later-response comparison"], "fail_closed_effect": "classify medium absent or claim inflation"}
+      ]
+    },
+    {
+      "control_id": "AE01-CTRL-05", "priority": "direct", "applicability": "applicable",
+      "rationale": "the accepted medium must not reduce to private addressing or global routing",
+      "legs": [
+        {"leg_id": "non-private-carrier-guard", "resolution_stage": "registration_guard", "required_evidence": ["model-owned surface identity and access scope"], "evidence_binding_refs": ["rcae-p2-i1-feedback-row-surface-v1"], "fail_closed_effect": "reject medium support"},
+        {"leg_id": "medium-dependence", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "medium-freeze-withdrawal"], "broken_relation": "presence of the model-owned feedback row carries the later effect", "preserved_fields": ["post-writer participant state", "writer contact history", "producer invocation", "later opportunity profiles"], "expected_artifact_role": "medium_dependency_control", "required_evidence": ["state-matched row-presence comparison"], "fail_closed_effect": "classify medium absent or producer debt"}
+      ]
+    },
+    {
+      "control_id": "AE01-CTRL-06", "priority": "direct", "applicability": "applicable",
+      "rationale": "surface labels must be causally load-bearing",
+      "legs": [{"leg_id": "surface-dependence", "resolution_stage": "execution_comparison", "exact_cells": ["medium-freeze-withdrawal", "trace-shuffle"], "broken_relation": "declared surface presence and writer-relative lineage are causally load-bearing", "preserved_fields": ["surface label vocabulary", "nearby participant activity", "row quantity in shuffle", "opportunity profiles"], "expected_artifact_role": "surface_dependence_control", "required_evidence": ["frozen and shuffled surface comparisons"], "fail_closed_effect": "classify proxy success"}]
+    },
+    {
+      "control_id": "AE01-CTRL-07", "priority": "inherited", "applicability": "applicable",
+      "rationale": "native and RCAE legs cannot become a composition claim without combined evidence",
+      "legs": [{"leg_id": "composition-scope-guard", "resolution_stage": "inherited_verification", "required_evidence": ["component ownership", "ordered interface plan", "must_not_consume_as composition success"], "evidence_binding_refs": ["inherited:n29_prototype_atlas_i15", "rcae-p2-i1-l01-registered-probe"], "fail_closed_effect": "block composition support"}]
+    },
+    {
+      "control_id": "AE01-CTRL-08", "priority": "direct", "applicability": "applicable",
+      "rationale": "every native and RCAE transition must remain attributable and no hidden handoff may carry the result",
+      "legs": [
+        {"leg_id": "producer-ownership", "resolution_stage": "registration_guard", "required_evidence": ["constructed mechanism and native operation ownership"], "evidence_binding_refs": ["rcae-p2-i1-option-a-adapter-v1", "rcae-p2-i1-registered-realization-v1"], "fail_closed_effect": "block native and medium claims"},
+        {"leg_id": "producer-parity", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "medium-freeze-withdrawal"], "broken_relation": "producer output depends on the registered native row rather than an undeclared handoff", "preserved_fields": ["producer implementation and invocation count", "participant state", "opportunity profiles", "scientific parameters"], "expected_artifact_role": "producer_parity_control", "required_evidence": ["same producer invocation with feedback row varied"], "fail_closed_effect": "classify producer-carried only"}
+      ]
+    },
+    {
+      "control_id": "AE01-CTRL-09", "priority": "direct", "applicability": "applicable",
+      "rationale": "reserve cost leakage and carrier burden must remain visible",
+      "legs": [
+        {"leg_id": "budget-registration", "resolution_stage": "registration_guard", "required_evidence": ["reserve and packet debit projections"], "evidence_binding_refs": ["rcae-p2-i1-l01-registered-probe"], "fail_closed_effect": "block economy-dependent claims"},
+        {"leg_id": "budget-and-load-audit", "resolution_stage": "execution_comparison", "exact_cells": ["susceptibility-inversion", "carrier-timescale-contrast"], "broken_relation": "later formation is free of reserve, packet-load, or leakage constraints", "preserved_fields": ["topology", "writer amount", "registered seed transform", "all non-declared cell parameters"], "expected_artifact_role": "support_budget_matching_audit", "required_evidence": ["per-run reserve cost and leakage records"], "fail_closed_effect": "record budget or measurement debt"}
+      ]
+    },
+    {
+      "control_id": "AE01-CTRL-10", "priority": "direct", "applicability": "applicable",
+      "rationale": "parent context is explicitly absent and receives one bounded support contrast",
+      "legs": [
+        {"leg_id": "parent-context-declaration", "resolution_stage": "registration_guard", "required_evidence": ["parent absent declaration and claim ceiling"], "evidence_binding_refs": ["rcae-p2-i1-l01-registered-probe", "rcae-p2-i1-parent-context-debt", "rcae-p2-i1-registration-claim-boundary-v1"], "fail_closed_effect": "block parent modulation motif and regime claims"},
+        {"leg_id": "support-context-contrast", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "parent-context-contrast"], "broken_relation": "the bounded effect is independent of the registered absolute-support contrast", "preserved_fields": ["candidate feedback-score relation", "topology", "packet amounts", "opportunity profiles"], "expected_artifact_role": "support_context_control", "required_evidence": ["score-preserving reduced-support comparison"], "fail_closed_effect": "retain support-scale debt without parent claim"}
+      ]
+    },
+    {
+      "control_id": "AE01-CTRL-11", "priority": "direct", "applicability": "applicable",
+      "rationale": "participant and medium use separate carrier and lineage identities",
+      "legs": [{"leg_id": "carrier-separation", "resolution_stage": "registration_guard", "required_evidence": ["participant and medium IDs", "non-circular continuity", "writer-reader relation"], "evidence_binding_refs": ["rcae-p2-i1-l01-registered-probe", "rcae-p2-i1-feedback-row-surface-v1"], "fail_closed_effect": "reject participant-medium relation claims"}]
+    },
+    {
+      "control_id": "AE01-CTRL-12", "priority": "direct", "applicability": "applicable",
+      "rationale": "semantic promotion remains blocked regardless of result magnitude",
+      "legs": [{"leg_id": "semantic-ceiling", "resolution_stage": "terminal_report_guard", "required_evidence": ["claim ceiling unsafe flags and blocked relabel audit"], "fail_closed_effect": "reject stronger semantics and preserve weaker facts"}]
+    },
+    {
+      "control_id": "AE01-CTRL-13", "priority": "inherited", "applicability": "applicable",
+      "rationale": "P2-I1 cannot select N31 before seven-lane synthesis",
+      "legs": [{"leg_id": "selection-order", "resolution_stage": "terminal_report_guard", "required_evidence": ["ranking remains not run before synthesis"], "fail_closed_effect": "force non-selection or not-run status"}]
+    },
+    {
+      "control_id": "AE01-CTRL-14", "priority": "direct", "applicability": "applicable",
+      "rationale": "ecology demand and missing-surface outputs are not native substrate evidence",
+      "legs": [{"leg_id": "demand-role-guard", "resolution_stage": "terminal_report_guard", "required_evidence": ["evidence-role and claim audit"], "fail_closed_effect": "block native-surface success claim"}]
+    },
+    {
+      "control_id": "AE01-CTRL-15", "priority": "direct", "applicability": "applicable",
+      "rationale": "the RCAE adapter remains constructed and cannot transition silently to native behavior",
+      "legs": [{"leg_id": "constructed-role", "resolution_stage": "registration_guard", "required_evidence": ["realization profile", "producer transition discipline", "constructed evidence role"], "evidence_binding_refs": ["rcae-p2-i1-option-a-adapter-v1", "rcae-p2-i1-registered-realization-v1", "rcae-p2-i1-naturalization-debt"], "fail_closed_effect": "reject native claim"}]
+    },
+    {
+      "control_id": "AE01-CTRL-16", "priority": "direct", "applicability": "applicable",
+      "rationale": "constructed adapter fields must be complete before execution",
+      "legs": [{"leg_id": "construction-completeness", "resolution_stage": "registration_guard", "required_evidence": ["necessity minimality counterfactual withdrawal debt discriminator and claim ceiling"], "evidence_binding_refs": ["rcae-p2-i1-option-a-adapter-v1", "rcae-p2-i1-registration-claim-boundary-v1"], "fail_closed_effect": "invalidate constructed mechanism and execution"}]
+    },
+    {
+      "control_id": "AE01-CTRL-17", "priority": "direct", "applicability": "applicable",
+      "rationale": "requested live PyGRC execution cannot fall back to inspection or mocks",
+      "legs": [
+        {"leg_id": "runtime-registration", "resolution_stage": "registration_guard", "required_evidence": ["path-free profile binding receipt and no-fallback policy"], "evidence_binding_refs": ["rcae-p2-i1-registered-realization-v1", "ae01:runtime-receipt:5c1ea774e3cfc31e", "baseline-identity-registry"], "fail_closed_effect": "block execution"},
+        {"leg_id": "per-run-binding", "resolution_stage": "execution_comparison", "exact_cells": ["reference", "candidate-conditioning", "medium-freeze-withdrawal", "trace-shuffle", "parent-context-contrast", "susceptibility-inversion", "carrier-timescale-contrast"], "broken_relation": "an unavailable, substituted, or drifting runtime can masquerade as scientific execution", "preserved_fields": ["exact realization profile", "PyGRC identity", "requested operation set", "graph read-only boundary"], "expected_artifact_role": "runtime_binding_receipt", "required_evidence": ["runtime receipt for every live run"], "fail_closed_effect": "classify blocked or incomplete never scientific negative"}
+      ]
+    },
+    {
+      "control_id": "AE01-CTRL-18", "priority": "inherited", "applicability": "applicable",
+      "rationale": "the abstract fixture cannot become a reusable motif or domain package",
+      "legs": [{"leg_id": "domain-and-catalog-role", "resolution_stage": "terminal_report_guard", "required_evidence": ["domain role layer maturity and promotion audit"], "fail_closed_effect": "reject package or motif admission"}]
+    },
+    {
+      "control_id": "AE01-CTRL-19", "priority": "direct", "applicability": "applicable",
+      "rationale": "incomplete runtime cannot become a negative scientific result",
+      "legs": [{"leg_id": "completion-classification", "resolution_stage": "terminal_report_guard", "required_evidence": ["completed comparison and runtime availability status"], "fail_closed_effect": "classify incomplete execution and remove support refutation and scores"}]
+    },
+    {
+      "control_id": "AE01-L01-CTRL-01", "priority": "lane", "applicability": "applicable",
+      "rationale": "medium row dependence is mandatory beyond matched participant state",
+      "legs": [{"leg_id": "medium-freeze", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "medium-freeze-withdrawal"], "broken_relation": "later response requires the accepted feedback-medium row", "preserved_fields": ["participant and post-writer state", "writer contact history", "producer invocation", "later opportunity"], "expected_artifact_role": "medium_freeze_control", "required_evidence": ["state-matched medium freeze control artifact"], "fail_closed_effect": "block medium-dependent L01 claim"}]
+    },
+    {
+      "control_id": "AE01-L01-CTRL-02", "priority": "lane", "applicability": "applicable",
+      "rationale": "writer-relative source lineage must matter beyond row quantity",
+      "legs": [{"leg_id": "trace-shuffle", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "trace-shuffle"], "broken_relation": "writer-relative source lineage rather than row quantity carries the effect", "preserved_fields": ["feedback row quantity and content", "participant state", "timing envelope", "opportunity profiles"], "expected_artifact_role": "trace_shuffle_control", "required_evidence": ["quantity-matched source-digest substitution artifact"], "fail_closed_effect": "block history-content claim"}]
+    },
+    {
+      "control_id": "AE01-L01-CTRL-03", "priority": "lane", "applicability": "applicable",
+      "rationale": "selective conditioning requires the polarity-susceptibility interaction",
+      "legs": [{"leg_id": "susceptibility-inversion", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "medium-freeze-withdrawal", "susceptibility-inversion"], "broken_relation": "medium history interacts selectively with configured polarity susceptibility", "preserved_fields": ["medium exposure", "trace quantity and timing", "support and budget", "paired context topology"], "expected_artifact_role": "selectivity_interaction_control", "required_evidence": ["matched two-context interaction artifact"], "fail_closed_effect": "limit result to generic environmental conditioning"}]
+    },
+    {
+      "control_id": "AE01-L01-CTRL-04", "priority": "lane", "applicability": "applicable",
+      "rationale": "parent context is absent and support scale must remain explicit",
+      "legs": [{"leg_id": "parent-context-separation", "resolution_stage": "execution_comparison", "exact_cells": ["candidate-conditioning", "parent-context-contrast"], "broken_relation": "absolute support is separable from any unrepresented parent-basin relation", "preserved_fields": ["feedback-score relation", "participant-medium lineage", "packet amounts", "opportunity profiles"], "expected_artifact_role": "parent_context_separation_control", "required_evidence": ["reduced-support comparison and no-parent claim audit"], "fail_closed_effect": "block parent modulation and higher ecology claims"}]
+    },
+    {
+      "control_id": "AE01-L01-CTRL-05", "priority": "lane", "applicability": "not_applicable",
+      "rationale": "no RCAE-owned scaffold carries the native medium or later response in the primary cycle under P2-I1-DEC-025",
+      "not_applicable_decision_ref": "P2-I1-DEC-025",
+      "legs": []
+    }
+  ],
+  "expected_artifact_roles": {
+    "per_live_run": [
+      "runtime_binding_receipt", "initial_state_identity", "raw_opportunity_records",
+      "branch_restoration_audit", "support_budget_matching_audit"
+    ],
+    "per_cell_seed": ["comparison_record", "control_record", "terminal_classification_input"],
+    "registration": [
+      "registration_policy", "registration_freeze", "baseline_identity_registry",
+      "realization_profile", "reconstruction_profile_registry", "runtime_preflight", "pattern_card", "medium_surface",
+      "constructed_mechanism", "claim_boundary", "debt_records", "artifact_manifest"
+    ]
+  },
+  "exec_freeze_requirements": [
+    "P2-I1-CAL-GATE passed",
+    "P2-I1-REG-GATE passed",
+    "exact registration and calibration identities imported without drift",
+    "exact configurations seeds attempts retry allocation resources artifacts controls and stopping rule bound",
+    "candidate outcomes absent when the cycle freeze is retained"
+  ],
+  "claim_boundary": {
+    "maximum_claim": "bounded_niche_conditioning_demand_pattern",
+    "registration_evidence_role": "none_registration_only",
+    "positive_lane_evidence_opened": false,
+    "candidate_execution_opened": false,
+    "native_niche_claim_opened": false
+  }
+}

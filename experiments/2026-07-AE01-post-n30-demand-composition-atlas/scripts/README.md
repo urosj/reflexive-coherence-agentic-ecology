@@ -113,3 +113,217 @@ Commands write only to explicitly supplied RCAE-relative outputs. Disposable
 products belong under ignored top-level `outputs/`. Only an explicit verified
 manifest and retention decision can move selected evidence under the
 experiment. No command writes into the graph/PyGRC repository.
+
+## P2-I1 entry point
+
+`p2_i1.py` is the thin file/CLI boundary. `p2_i1_analysis.py` contains pure
+deterministic analysis and never imports PyGRC. `p2_i1_runtime.py` imports
+PyGRC only inside an explicit runtime call and contains no candidate runner.
+Candidate execution remains closed until `P2-I1-REG-GATE` passes and a
+cycle-scoped `P2-I1-EXEC-FREEZE` authorizes the exact frozen run;
+`P2-I1-EXEC-GATE` is the post-execution close gate.
+
+Create the ignored local environment and install a non-editable build from the
+locally configured PyGRC source plus the pinned validation dependency:
+
+```bash
+uv venv .venv
+uv pip install --python .venv/bin/python LOCAL_PYGRC_SOURCE jsonschema==4.26.0
+```
+
+`LOCAL_PYGRC_SOURCE` is machine-specific and never enters shared records. A
+retained runtime profile must instead record the installed `pygrc==0.1`
+identity and source revision/digests.
+
+Validate the six committed P2-I1 configs:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py validate-configs
+```
+
+Generate the CAL-PRE code, policy, fixture, cell, calibration, runtime, and
+static-profile identity. The result records the current source revision and
+therefore becomes a retained freeze artifact only after the implementation
+commit is final:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py build-cal-pre-identity --output outputs/p2-i1-cal-pre-identity.json
+```
+
+The freeze command fails when the worktree is dirty. During implementation
+review, an explicitly non-retainable preview may be generated with
+`--allow-dirty-preview`; its artifact kind, identity ID, clean-state flag, and
+retention eligibility prevent it from masquerading as the final freeze.
+
+Generate the candidate-blind matched null through the same opportunity
+aggregation and paired-margin functions later used for live records:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py generate-matched-null --output outputs/p2-i1-matched-null.json
+```
+
+Analyze retained raw opportunity records without authored recomputation:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py analyze --input outputs/p2-i1-opportunities.json --output outputs/p2-i1-analysis.json
+```
+
+### Registration policy validation
+
+`p2_i1_registration.py` is a registration-only boundary. It imports the six
+frozen CAL-PRE configs and the experiment-local registration policy, proves
+measurement and calibration-realization identity equality against the retained
+v2 identity, validates all 24 control plans, and keeps candidate execution
+closed:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py validate-policy
+```
+
+This validation is not REG-GATE by itself. Runtime baseline identities,
+path-free realization evidence, existing schema records, a registration freeze,
+and a resolved manifest remain required.
+
+Build the 21-entry W0 baseline registry with one fresh worker process per
+cell/seed configuration. The realization profile and graph checkout arguments
+are local paths and never enter the retained registry:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py build-baseline-registry --realization-profile experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-realization-profile.json --graph-root LOCAL_GRAPH_CHECKOUT --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json
+```
+
+The command constructs and snapshots only W0. It requires empty queue and
+surface state and does not schedule writer, medium, reader, or candidate
+operations.
+
+Verify the admitted N29/N30 sources against the clean, read-only graph source
+snapshot. The retained result contains only `grc:` identities and digests, not
+the local checkout argument. Every source is recorded as non-identical in
+carrier, mechanism, intervention, and claim scope, so it cannot replace fresh
+lane execution:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py build-inherited-verification --graph-root LOCAL_GRAPH_CHECKOUT --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json
+```
+
+Generate the registration binding receipt with every operation class declared
+by the retained realization profile:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py build-runtime-receipt --graph-root LOCAL_GRAPH_CHECKOUT --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json
+```
+
+After the source implementation is committed, combine those artifacts with
+the existing-schema registration records into a derived freeze:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py build-registration-freeze --baseline-registry experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json --inherited-verification experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json --runtime-receipt experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json
+```
+
+The derived freeze may resolve deterministic registration and inherited-source
+legs only. Causal and terminal legs remain `pending_execution`, and the freeze
+does not pass REG-GATE or authorize candidate execution. The resolved manifest
+is built afterward to avoid a recursive freeze/manifest digest.
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py build-registration-manifest --baseline-registry experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json --inherited-verification experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json --runtime-receipt experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json --registration-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-manifest.json
+```
+
+Retained generation fails when source files differ from the current commit.
+The five expected generated registration outputs may be untracked while the
+bundle is assembled; no other change is ignored. During source review only,
+the inherited-verification, receipt, baseline, and freeze commands accept
+`--allow-dirty-preview`. Such artifacts record a preview-specific kind,
+`retention_eligible=false`, and `preview_only=true`; the manifest command has
+no preview mode and rejects every preview input.
+
+Registration-time control resolution is evidence-specific. Every resolvable
+leg carries exact `evidence_binding_refs`; the derived freeze marks it resolved
+only after those exact record, source, receipt, profile, or baseline identities
+have passed their concrete validators. Changing descriptive evidence text or
+substituting another existing record fails policy validation.
+
+The runtime receipt additionally resolves every abstract operation class to
+concrete callable PyGRC methods. Namespace/version availability alone cannot
+establish conformance for feedback-surface emission, feedback-conditioned
+production, stepping, or snapshot round-trip.
+
+### Runtime preflight
+
+Runtime preflight requires an ignored local `realization_profile` record whose
+availability, enabled, supported, and validated fields are all true; whose
+PyGRC identity is `pygrc==0.1`; and whose allowed operations contain
+`p2_i1_runtime_preflight`. The local environment must already make that exact
+PyGRC available. Its installation and checkout locations are arguments only
+and never enter a shared record.
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py runtime-preflight --realization-profile outputs/p2-i1-local-realization-profile.json --run-id p2-i1-local-preflight --graph-root LOCAL_GRAPH_CHECKOUT --output outputs/p2-i1-runtime-preflight.json
+```
+
+Missing dependencies, an incompatible identity, a disabled local profile, or
+an undeclared operation produces a failed binding receipt and no fallback.
+The preflight builds and snapshots the baseline fixture only. It does not emit
+a writer packet, medium row, opportunity, candidate result, or lane evidence.
+
+### C01 execution and live-obligation audit
+
+`p2_i1_execution.py` validates the exact C01 policy and keeps candidate
+execution disabled during source review:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py validate-policy
+```
+
+After the implementation source is committed, bind the exact C01-only call
+superset without scheduling a writer, medium, or reader operation:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-execution-binding --graph-root LOCAL_GRAPH_CHECKOUT --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/execution-binding-receipt.json
+```
+
+Then build the candidate-free cycle authorization at its declared path:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-exec-freeze --execution-binding-receipt experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/execution-binding-receipt.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json
+```
+
+Dirty source may produce only a non-retainable preview with
+`--allow-dirty-preview`. A preview records
+`candidate_execution_authorized=false` and cannot pass the runtime guard. The
+retained freeze must then be committed: `run-one` and `run-cycle` require its
+bytes to match the current tracked `HEAD` record.
+
+Once EXEC-FREEZE passes, execute all 21 primaries in fresh worker processes.
+The graph checkout remains a local-only argument:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py run-cycle --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json --graph-root LOCAL_GRAPH_CHECKOUT --summary-output outputs/p2-i1-c01-run-summary.json
+```
+
+The orchestrator retains operational failures in the retry ledger and derives
+at most one retry per cell for the lowest failed seed. A retry keeps the same
+scientific configuration digest and cannot be allocated from candidate
+outcomes.
+
+After execution, derive the cross-run structural audit:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-cycle-audit --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/cycle-audit.json
+```
+
+The audit resolves initialization, isolation, restoration, medium
+reconstruction, exposure, support/budget, producer parity, trace-shuffle, and
+runtime-receipt structure. It preserves observed responses but assigns no
+threshold verdict, boundary rung, or terminal class.
+
+Index the effective runs, retry ledger, and completed cycle audit only after
+those files validate:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py build-execution-manifest --exec-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/exec-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/execution-manifest.json
+```
+
+The execution manifest is a retention index. It cannot assign a boundary rung
+or terminal classification, and it preserves each run's independent
+reconstruction status.

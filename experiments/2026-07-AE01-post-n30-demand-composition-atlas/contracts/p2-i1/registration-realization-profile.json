@@ -1,0 +1,53 @@
+{
+  "record": {
+    "allowed_scheduling_operations": [
+      "p2_i1_runtime_preflight",
+      "fixture_construction",
+      "route_aspect_validation",
+      "snapshot_round_trip",
+      "packet_queue_step",
+      "feedback_surface_emission",
+      "feedback_conditioned_packet_production"
+    ],
+    "availability": true,
+    "claim_boundary_ref": "rcae-p2-i1-registration-claim-boundary-v1",
+    "conformance_procedure": "Import installed pygrc==0.1, verify declared public capabilities and the concrete callable methods behind all seven operation classes, construct each registered W0 fixture in a fresh worker, validate route aspects, snapshot state, and require empty queue and surface logs without scheduling a candidate operation",
+    "debt_refs": [
+      "rcae-p2-i1-naturalization-debt",
+      "rcae-p2-i1-participant-mediated-reader-debt"
+    ],
+    "enabled": true,
+    "evidence_role": "constructed_ecology_mechanism",
+    "extensions": {},
+    "mechanism_contract_id": "rcae-p2-i1-option-a-adapter-v1",
+    "policy_ids": [
+      "P2-I1-DEC-001",
+      "P2-I1-DEC-020",
+      "P2-I1-DEC-022",
+      "P2-I1-DEC-023",
+      "AE01-CTRL-15",
+      "AE01-CTRL-17"
+    ],
+    "producer_transition_discipline": "No availability-driven substitution is allowed; the registered RCAE adapter remains active even if native functionality later appears, and native transition requires a new profile, cycle freeze, and rerun",
+    "profile_id": "rcae-p2-i1-registered-realization-v1",
+    "profile_version": "1.0.0",
+    "realization_class": "rcae_constructed",
+    "replay_procedure": "Recreate the locally configured environment, bind the exact PyGRC identity without recording its path, rebuild all 21 W0 baseline entries in fresh workers, and compare canonical registry and receipt digests",
+    "required_capabilities": [
+      "pygrc.core",
+      "pygrc.models"
+    ],
+    "required_pygrc_identity": "pygrc==0.1",
+    "schema_versions": {
+      "artifact": "1.0.0",
+      "input": "1.0.0",
+      "output": "1.0.0",
+      "state": "1.0.0"
+    },
+    "supported": true,
+    "transfer_scope": "P2-I1 registered Option A binding and operation classes only; scientific behavior and execution authorization are excluded",
+    "validated": true
+  },
+  "record_type": "realization_profile",
+  "schema_version": "1.1.0"
+}

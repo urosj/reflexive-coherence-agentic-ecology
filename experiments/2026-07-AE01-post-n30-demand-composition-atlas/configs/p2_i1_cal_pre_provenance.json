@@ -1,0 +1,64 @@
+{
+  "evidence_effect": "none_preregistration_provenance_only",
+  "schema_version": "1.0.0",
+  "provenance_profile_id": "rcae-p2-i1-cal-pre-provenance-v1",
+  "working_directory": ".",
+  "environment_profile": {
+    "python_version": ">=3.11",
+    "locale_policy": "UTF-8 input and ASCII-safe canonical JSON output",
+    "timezone_policy": "No wall-clock or timezone value enters canonical records"
+  },
+  "dependency_profile": {
+    "analysis_runtime_dependencies": ["python_standard_library"],
+    "phase1_validation_dependencies": ["jsonschema==4.26.0"],
+    "pygrc_required_for_calibration": false
+  },
+  "command_profiles": [
+    {
+      "command_id": "p2-i1-validate-phase1-v1",
+      "argv": [".venv/bin/python", "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py", "validate-phase1"]
+    },
+    {
+      "command_id": "p2-i1-validate-configs-v1",
+      "argv": [".venv/bin/python", "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py", "validate-configs"]
+    },
+    {
+      "command_id": "p2-i1-test-v1",
+      "argv": [".venv/bin/python", "-m", "unittest", "discover", "-s", "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests", "-v"]
+    },
+    {
+      "command_id": "p2-i1-build-cal-pre-identity-v1",
+      "argv": [".venv/bin/python", "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py", "build-cal-pre-identity", "--output", "outputs/p2-i1-cal-pre-identity.json"]
+    },
+    {
+      "command_id": "p2-i1-generate-matched-null-v1",
+      "argv": [".venv/bin/python", "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py", "generate-matched-null", "--output", "outputs/p2-i1-matched-null.json"]
+    }
+  ],
+  "resource_envelope": {
+    "max_runtime_seconds": 120,
+    "max_memory_mb": 512,
+    "max_disk_mb": 256
+  },
+  "expected_artifacts": [
+    {"artifact_role": "config_validation", "path": "outputs/p2-i1-config-validation.json", "retention_stage": "review_then_select"},
+    {"artifact_role": "cal_pre_identity", "path": "outputs/p2-i1-cal-pre-identity.json", "retention_stage": "retain_after_clean_commit"},
+    {"artifact_role": "matched_null", "path": "outputs/p2-i1-matched-null.json", "retention_stage": "cal_gate_only_after_cal_pre_pass"}
+  ],
+  "source_identity_policy": {
+    "rcae_revision_source": "clean_git_head_at_identity_generation",
+    "analysis_source_hash_required": true,
+    "cli_source_hash_required": true,
+    "runtime_harness_hash_required": true,
+    "dirty_preview_retention_allowed": false
+  },
+  "input_identity_policy": {
+    "canonical_config_digests_required": true,
+    "analysis_projection_digests_required": true,
+    "static_profile_digests_required": true,
+    "candidate_artifacts_allowed": false,
+    "candidate_seeds_allowed": false,
+    "pygrc_runtime_inputs_allowed": false,
+    "post_outcome_tuning_allowed": false
+  }
+}

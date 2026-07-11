@@ -1,0 +1,109 @@
+{
+  "record": {
+    "access_scope": "The registered pulse-contact-to-feedback row is model-owned and can be held available to either distinct reader profile through the same configured producer relation; this is shared-local counterfactual access, not autonomous broadcast access",
+    "carrier": "Native PyGRC committed causal-pulse substrate-surface feedback row produced from the participant-writer pulse-contact lineage",
+    "claim_boundary_ref": "rcae-p2-i1-registration-claim-boundary-v1",
+    "control_refs": [
+      "AE01-CTRL-04",
+      "AE01-CTRL-05",
+      "AE01-CTRL-06",
+      "AE01-CTRL-08",
+      "AE01-CTRL-09",
+      "AE01-CTRL-10",
+      "AE01-CTRL-11",
+      "AE01-CTRL-15",
+      "AE01-CTRL-16",
+      "AE01-CTRL-17",
+      "AE01-L01-CTRL-01",
+      "AE01-L01-CTRL-02",
+      "AE01-L01-CTRL-03",
+      "AE01-L01-CTRL-04"
+    ],
+    "counterfactuals": [
+      "Remove the feedback row while preserving participant-side state",
+      "Substitute a quantity-matched source lineage",
+      "Invert configured polarity susceptibility under comparable exposure",
+      "Reduce support without naming the contrast a parent basin",
+      "Vary reader packet load along the one registered carrier axis"
+    ],
+    "debt_refs": [
+      "rcae-p2-i1-participant-mediated-reader-debt",
+      "rcae-p2-i1-parent-context-debt"
+    ],
+    "evidence_role": "ecology_interpretation",
+    "extensions": {},
+    "lane_id": "AE01-L01",
+    "later_response_dependency": {
+      "rationale": "The candidate matrix is registered to test whether the later native packet-opportunity formation fraction depends on this row; no candidate execution has occurred",
+      "status": "not_tested"
+    },
+    "lineage": "participant P source-pole lineage -> writer packet contact -> committed feedback row with writer/source identity -> later configured reader opportunity",
+    "medium_surface_id": "rcae-p2-i1-feedback-row-surface-v1",
+    "metrics": [
+      {
+        "applicability": {
+          "rationale": "Exact committed-row count and timing are matching fields",
+          "status": "applicable"
+        },
+        "metric_id": "p2_i1_feedback_row_quantity",
+        "role": "persistence",
+        "threshold_rule": "Exact equality across selectivity groups and registered quantity-matched controls",
+        "unit": "committed_feedback_rows",
+        "value_type": "integer"
+      },
+      {
+        "applicability": {
+          "rationale": "Later response is the frozen per-seed opportunity-formation fraction",
+          "status": "applicable"
+        },
+        "metric_id": "p2_i1_later_formation_fraction",
+        "role": "eligibility",
+        "threshold_rule": "Interpret paired margins and proximity bands under the frozen metric sheet; no scalar threshold alone owns the result",
+        "unit": "formed_opportunities_per_four_registered_profiles",
+        "value_type": "number"
+      },
+      {
+        "applicability": {
+          "rationale": "Participant reserve and packet load remain explicit economy-side constraints",
+          "status": "applicable"
+        },
+        "metric_id": "p2_i1_participant_repeat_reserve",
+        "role": "reserve",
+        "threshold_rule": "Must remain viable and matched under the registered budget audit",
+        "unit": "native_coherence_budget",
+        "value_type": "number"
+      }
+    ],
+    "non_private": {
+      "rationale": "The row is owned by native model state rather than participant identity or an RCAE side store, while access remains bounded and participant-mediated",
+      "status": "applicable"
+    },
+    "participant_boundary": "Participant continuity is the live P source-pole node and lineage plus budgeted one-repeat reserve; it is not inferred from the later feedback or opportunity result",
+    "perturbation": "A native writer packet contact commits a feedback row whose source-relative content can be retained, removed, or quantity-matched and shuffled before the later opportunity",
+    "trace_dynamics": {
+      "decay": {
+        "rationale": "The primary cycle does not estimate a decay law",
+        "status": "not_applicable"
+      },
+      "persistence": {
+        "rationale": "Row presence and identity must survive from the registered write event to the W2 branch point",
+        "status": "applicable"
+      },
+      "reinforcement": {
+        "rationale": "The primary cycle has one registered write and no reinforcement schedule",
+        "status": "not_applicable"
+      },
+      "saturation": {
+        "rationale": "The primary cycle has no repeated accumulation or saturation claim",
+        "status": "not_applicable"
+      }
+    },
+    "trace_signature": "Exact writer event, pulse-contact surface digest, feedback reference and threshold, mask, one-write count, event-time key, surface nodes, and source-relative row digest",
+    "parent_basin_relevance": {
+      "rationale": "No parent basin is represented; only a bounded reduced-support contrast is registered",
+      "status": "not_applicable"
+    }
+  },
+  "record_type": "medium_surface",
+  "schema_version": "1.1.0"
+}

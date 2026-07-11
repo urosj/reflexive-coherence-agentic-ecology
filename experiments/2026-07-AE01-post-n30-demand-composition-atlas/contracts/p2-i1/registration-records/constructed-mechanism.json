@@ -1,0 +1,39 @@
+{
+  "record": {
+    "claim_boundary_ref": "rcae-p2-i1-registration-claim-boundary-v1",
+    "counterfactual": "Keeping native PyGRC state and operations fixed while removing the RCAE configuration/orchestration layer makes the registered experiment inexpressible; it does not show that the underlying native surface or packet operations disappear",
+    "debt_refs": [
+      "rcae-p2-i1-naturalization-debt",
+      "rcae-p2-i1-participant-mediated-reader-debt"
+    ],
+    "evidence_role": "constructed_ecology_mechanism",
+    "extensions": {},
+    "implementation_identity": "p2_i1_runtime.py plus p2_i1_registration.py under rcae-p2-i1-registration-policy-v1; exact source digests are bound by the derived registration freeze",
+    "implementation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_runtime.py",
+    "inputs": [
+      "frozen fixture and comparison-cell configurations",
+      "path-free realization profile",
+      "native PyGRC public operations",
+      "explicit deterministic seed and cell identity",
+      "cycle-scoped execution authorization when candidate execution begins"
+    ],
+    "lane_ids": ["AE01-L01"],
+    "mechanism_id": "rcae-p2-i1-option-a-adapter-v1",
+    "minimality": "The adapter binds public PyGRC surfaces, constructs the frozen fixture, assigns declared inputs, schedules declared native operations, and records identities; it adds no alternate medium store, hidden state, fallback runtime, or automatic native substitution",
+    "necessity": "PyGRC provides the native graph, packet, feedback-surface, snapshot, and producer-relevant operations but does not provide the P2-I1 cell matrix, ecology-side identities, control orchestration, or evidence records as one native experiment",
+    "observed_absence_or_tension": "The desired niche-conditioning comparison is a new ecology-side composition of native operations, while the project must preserve exact provenance and prevent experiment code from becoming a silent LGRC extension",
+    "outputs": [
+      "registered native-operation request sequence",
+      "runtime and branch identity receipts",
+      "raw opportunity and matching records",
+      "no mutation of the graph repository"
+    ],
+    "proposed_graph_discriminator": "Whether a future native LGRC surface can express the same feedback-conditioned later-opportunity relation with explicit lineage, withdrawal, and receipt semantics",
+    "realization_profile_ref": "rcae-p2-i1-registered-realization-v1",
+    "scheduling_behavior": "Fresh worker per attempt; fixed cell order; one W2 snapshot branch point; four independent restores; no cross-attempt mutable reset and no operation outside the profile or exact cycle freeze",
+    "state_behavior": "All scientific carrier state remains in native PyGRC model state; RCAE retains only declarative inputs, orchestration-local values, and auditable output records",
+    "withdrawal_test": "D-025 classifies adapter withdrawal as an implementation-conformance boundary, not the L01 constructed-scaffold causal control; if execution reveals RCAE-owned state carrying the medium or response, reopen registration and make AE01-L01-CTRL-05 applicable before proceeding"
+  },
+  "record_type": "constructed_mechanism",
+  "schema_version": "1.1.0"
+}

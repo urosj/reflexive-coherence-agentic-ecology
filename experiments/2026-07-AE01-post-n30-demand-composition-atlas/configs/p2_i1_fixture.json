@@ -1,0 +1,92 @@
+{
+  "evidence_effect": "none_preregistered_fixture_only",
+  "fixture_id": "rcae_p2_i1_four_node_v1",
+  "schema_version": "1.0.0",
+  "nodes": [
+    {"node_id": 0, "role": "P", "base_coherence": 1.0},
+    {"node_id": 1, "role": "W", "base_coherence": 1.0},
+    {"node_id": 2, "role": "A", "base_coherence": 0.5},
+    {"node_id": 3, "role": "B", "base_coherence": 0.5}
+  ],
+  "edges": [
+    {"edge_id": 0, "role": "participant_to_writer", "source_node_id": 0, "source_port": 0, "target_node_id": 1, "target_port": 0},
+    {"edge_id": 1, "role": "writer_return", "source_node_id": 1, "source_port": 1, "target_node_id": 0, "target_port": 1},
+    {"edge_id": 2, "role": "reader_a", "source_node_id": 0, "source_port": 2, "target_node_id": 2, "target_port": 0},
+    {"edge_id": 3, "role": "reader_b", "source_node_id": 0, "source_port": 3, "target_node_id": 3, "target_port": 0}
+  ],
+  "edge_policy": {
+    "conductance": 1.0,
+    "geometric_length": 1.0,
+    "temporal_delay": 1.0,
+    "flux_coupling": 0.0
+  },
+  "route_aspect": {
+    "route_aspect_id": "rcae_p2_i1_participant_writer_loop_v1",
+    "direction": "custom",
+    "closed_loop": true,
+    "pole_regions": {"S": [0], "K": [1]},
+    "source_pole_id": "S",
+    "channel_sequence": ["participant_to_writer", "writer_return"],
+    "channels": [
+      {"channel_id": "participant_to_writer", "source_pole_id": "S", "target_pole_id": "K", "expected_next_channel_id": "writer_return", "edge_id": 0},
+      {"channel_id": "writer_return", "source_pole_id": "K", "target_pole_id": "S", "expected_next_channel_id": "participant_to_writer", "edge_id": 1}
+    ]
+  },
+  "runtime_parameters": {
+    "dt": 1.0,
+    "causal_layer_mode": "packetized_fixed_topology",
+    "lgrc_runtime_level": "lgrc2",
+    "lapse_policy": "unit",
+    "edge_delay_policy": "constant_delay",
+    "event_time_policy": "explicit_event_time_key",
+    "proper_time_accumulation_policy": "local_event_frontier",
+    "causal_pulse_substrate_surface_enabled": true,
+    "causal_pulse_substrate_surface_policy": "emit_committed_packet_contact_rows",
+    "causal_pulse_substrate_surface_validated": true
+  },
+  "packets": {
+    "writer_amount": 0.25,
+    "writer_departure_event_time_key": 1.0,
+    "reader_amount": 0.125,
+    "arrival_event_time_key": null
+  },
+  "feedback": {
+    "front_node_ids": [1],
+    "rear_node_ids": [2, 3],
+    "reference_delta": 0.0,
+    "feedback_threshold": 0.125,
+    "producer_threshold": 0.125,
+    "expected_next_route_id": null,
+    "expected_next_channel_id": null
+  },
+  "budget": {
+    "epsilon_budget": 1e-09,
+    "viability_policy": "budget_derived_one_repeat_reserve"
+  },
+  "seeds": [
+    {"seed": 101, "offset": -0.03125},
+    {"seed": 211, "offset": 0.0},
+    {"seed": 307, "offset": 0.03125}
+  ],
+  "seed_transform": {
+    "P": "1 + offset",
+    "W": "1 - offset",
+    "A": "0.5",
+    "B": "0.5"
+  },
+  "opportunity_profiles": [
+    {"opportunity_index": 0, "profile_id": "ctx-a-aligned", "context": "A", "group": "aligned", "source_node_id": 0, "target_node_id": 2, "edge_id": 2, "expected_polarity": "positive"},
+    {"opportunity_index": 1, "profile_id": "ctx-a-inverted", "context": "A", "group": "inverted", "source_node_id": 0, "target_node_id": 2, "edge_id": 2, "expected_polarity": "negative"},
+    {"opportunity_index": 2, "profile_id": "ctx-b-aligned", "context": "B", "group": "aligned", "source_node_id": 0, "target_node_id": 3, "edge_id": 3, "expected_polarity": "positive"},
+    {"opportunity_index": 3, "profile_id": "ctx-b-inverted", "context": "B", "group": "inverted", "source_node_id": 0, "target_node_id": 3, "edge_id": 3, "expected_polarity": "negative"}
+  ],
+  "lineage_id_templates": {
+    "participant": "rcae-p2-i1-seed-{seed}-participant-P",
+    "reader_a": "rcae-p2-i1-seed-{seed}-reader-A",
+    "reader_b": "rcae-p2-i1-seed-{seed}-reader-B"
+  },
+  "writer_reader_relation": "distinct_carrier",
+  "read_mode": "participant_mediated_configured_producer",
+  "sharedness_ceiling": "shared_local_counterfactual_access",
+  "self_aftereffect_control": "mandatory"
+}

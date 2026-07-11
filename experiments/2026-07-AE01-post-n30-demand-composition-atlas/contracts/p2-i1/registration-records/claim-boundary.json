@@ -1,0 +1,65 @@
+{
+  "record": {
+    "allowed_claims": [
+      "P2-I1 has registered a bounded participant-relative niche-conditioning probe",
+      "The registered carrier and operation identities conform to the declared PyGRC binding",
+      "The 21 W0 baseline configurations may be compared for registration parity",
+      "N29 and N30 contribute bounded method and inherited evidence roles only"
+    ],
+    "blocked_relabels": [
+      "registration as candidate execution",
+      "baseline conformance as niche formation",
+      "constructed orchestration as native LGRC niche behavior",
+      "participant-mediated reading as autonomous medium access",
+      "support contrast as parent-basin modulation",
+      "one lane as an ecology motif or regime",
+      "P2-I1 as N31 selection"
+    ],
+    "claim_boundary_id": "rcae-p2-i1-registration-claim-boundary-v1",
+    "claim_ceiling": "Registration-only bounded niche-conditioning demand probe; no positive or negative L01 result exists before complete authorized execution",
+    "controlling_evidence_refs": [
+      {
+        "claim_ceiling": "Bridge and probe-contract handoff only; not executed ecology runtime",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "842ba57e994bbb3e219acff741afd85c87d102bea5eec6d134f3b84f2445cb52",
+        "output_digest": "fa21662f0a69d582bfe574311110f2610a21e6e4e352991823ce47280e0e8ff5",
+        "path": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_closeout_and_ecology_handoff_i18.json",
+        "reference_id": "n29_closeout_and_ecology_handoff_i18",
+        "source_id": "n29_closeout"
+      },
+      {
+        "claim_ceiling": "Artifact-level bounded minimal shared-medium participation candidate at P2/M2",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "ade32c848cbffa4d5757bfce50eaadb72a63a8252a8ba09e5fd562c6c100718c",
+        "output_digest": "7971163b1d7bd4027f5375270cfb2445cfe4698a8869b28e26f9273d0a5b5af6",
+        "path": "grc:experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_closeout_and_spiral_handoff_i8.json",
+        "reference_id": "n30_closeout_and_spiral_handoff_i8",
+        "source_id": "n30_closeout"
+      }
+    ],
+    "debt_refs": [
+      "rcae-p2-i1-naturalization-debt",
+      "rcae-p2-i1-participant-mediated-reader-debt",
+      "rcae-p2-i1-fixed-order-debt",
+      "rcae-p2-i1-parent-context-debt"
+    ],
+    "extensions": {},
+    "reopening_condition": "A source-current identity changes, registration reconstruction fails, the implemented mechanism contradicts D-025, or completed evidence supports a different bounded claim ceiling",
+    "subject_id": "rcae-p2-i1-l01-registered-probe",
+    "terminal_effects": [
+      "Registration artifacts can resolve method and infrastructure controls only",
+      "Execution controls remain pending until retained candidate comparisons exist",
+      "Runtime unavailability or reconstruction failure yields blocked or incomplete status rather than scientific refutation",
+      "Any valid lower observation survives rejection of a stronger niche or ecology relabel"
+    ],
+    "unsafe_flags": {
+      "baseline_conformance_is_scientific_support": false,
+      "constructed_adapter_is_native_lgrc": false,
+      "participant_mediated_reading_is_autonomous_access": false,
+      "registration_authorizes_execution": false,
+      "registration_is_lane_result": false
+    }
+  },
+  "record_type": "claim_boundary",
+  "schema_version": "1.1.0"
+}

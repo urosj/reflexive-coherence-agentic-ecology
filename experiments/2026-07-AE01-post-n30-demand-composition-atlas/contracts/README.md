@@ -86,3 +86,17 @@ uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand
 Contract completeness, schema validity, and registry consistency are not
 positive atlas evidence. Review R2 assigned `AE01-C2` for the accepted Phase 1
 contract; no lane or higher scientific rung is assigned.
+
+## P2-I1 registration materialization
+
+`p2-i1/registration-records/` applies the existing `1.1.0` record vocabulary
+to the first concrete lane. It contains one registered-probe pattern card, one
+candidate medium-surface account, one constructed orchestration boundary, one
+registration-only claim boundary, and four explicit debts. These records test
+the Phase 1 shapes in use; they do not add `lane_registration` or
+`control_outcome` record types and do not contain candidate outcomes.
+
+`p2-i1/registration-realization-profile.json` binds the path-free realization
+identity used by registration. The derived registration freeze and manifest
+are generated only after their source implementation is committed, so their
+source revision and digests cannot accidentally identify an earlier commit.

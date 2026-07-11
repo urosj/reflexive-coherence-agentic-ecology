@@ -1,0 +1,733 @@
+{
+  "artifact_contract": {
+    "candidate_result_paths_must_be_absent_at_freeze": true,
+    "cycle_audit_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/cycle-audit.json",
+    "derived_reports_cannot_support_positive_rung": true,
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/exec-freeze.json",
+    "execution_binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-binding-receipt.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-manifest.json",
+    "per_run_opportunity_count": 4,
+    "retain_failed_attempts": true,
+    "retry_ledger_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/retry-ledger.json",
+    "retry_run_artifact_path_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/retries/{cell_id}/seed-{seed}.json",
+    "run_artifact_path_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/{cell_id}/seed-{seed}.json"
+  },
+  "artifact_kind": "p2_i1_c02_exec_freeze",
+  "authority_records": [
+    {
+      "authority_id": "registration_freeze",
+      "file_sha256": "5b3bc38d85190e753f4acedf2510132f6d13fca404834588e11b566a58ecb593",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json",
+      "semantic_digest": "50de49e01008f5ca3949d62283701b0e59eeac5079466c15fa54b09f6a17644b",
+      "size_bytes": 50328
+    },
+    {
+      "authority_id": "registration_manifest",
+      "file_sha256": "a091d71908e152e1e5ac9c89cd68c089ee978db26342c39e60bebda3bc493c47",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-manifest.json",
+      "semantic_digest": "47696658c79ddf4e942595b393601efd411c6fa4bbc7fcde55c06f2b8b662832",
+      "size_bytes": 37804
+    },
+    {
+      "authority_id": "registration_review",
+      "file_sha256": "8e87b6a8c0229f35f35a2f0a4c7c6426eb086624e54155c2d0125948077218d8",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-REG-review.md",
+      "semantic_digest": "8e87b6a8c0229f35f35a2f0a4c7c6426eb086624e54155c2d0125948077218d8",
+      "size_bytes": 9577
+    },
+    {
+      "authority_id": "decision_record",
+      "file_sha256": "abf4f1cddd6f330d4307fb6602d6b22141a9dbb20edfdbfa2c6d42a778d34dd2",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I1-decision-record.md",
+      "semantic_digest": "abf4f1cddd6f330d4307fb6602d6b22141a9dbb20edfdbfa2c6d42a778d34dd2",
+      "size_bytes": 140616
+    },
+    {
+      "authority_id": "predecessor_retry_ledger",
+      "file_sha256": "8ea6c323857db5ac58bb7d4a46945d25f285520e747f2491383a674eac4b43fe",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/retry-ledger.json",
+      "semantic_digest": "5dfd77f72b19cf9836288e99bfb3cbd560177a02b2e01e41a8c0a8440457f141",
+      "size_bytes": 17379
+    },
+    {
+      "authority_id": "predecessor_cycle_audit",
+      "file_sha256": "1073b28c3c60741b2196f9d80c42ab66d6c669f4c364d38eec0ccb316585b123",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c01/cycle-audit.json",
+      "semantic_digest": "fdf83d5a0a116744cc514ef87108566426019f37ced64e5bb6b0fdecae70ca61",
+      "size_bytes": 3801
+    },
+    {
+      "authority_id": "predecessor_result_report",
+      "file_sha256": "114238fe34af169eb8136f9fa10429440d6cdd8e5c18f886c828efd3736abb67",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-C01-bounded-incomplete.md",
+      "semantic_digest": "114238fe34af169eb8136f9fa10429440d6cdd8e5c18f886c828efd3736abb67",
+      "size_bytes": 6445
+    },
+    {
+      "authority_id": "calibration_freeze",
+      "file_sha256": "99bcba601db2df86e539bcbf17c638e09af5fd4acc74c0505f0e347b468ab35a",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/calibration-freeze.json",
+      "semantic_digest": "f56d0363eda6e8f8d9d4a59d18b21dcafd0a611d6131f1f8e54f5c6daade01fd",
+      "size_bytes": 7703
+    },
+    {
+      "authority_id": "cal_pre_identity",
+      "file_sha256": "7b9dc60365eb79af08094bf605cf8c0bac633d391eee3271566360ccccca2319",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/cal-pre-identity-v2.json",
+      "semantic_digest": "2116ef8c9f1501aafccf3734194c5da996f2b0bc813ba440ffe3b3e08b3969cf",
+      "size_bytes": 9314
+    },
+    {
+      "authority_id": "fixture",
+      "file_sha256": "1513381ca9a8747d636f286c4d9f12bef103baa8cd0659395e7bc966b3948ed5",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_fixture.json",
+      "semantic_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "size_bytes": 4045
+    },
+    {
+      "authority_id": "cells",
+      "file_sha256": "ecdd15d24e34e4007f611489f172e49fb8f00292c0f02d14c1ebb3924143efe6",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_cells.json",
+      "semantic_digest": "71064441bfd5894346f808124081caeb426b4e2f72265a9cc6a56f63b2fdb002",
+      "size_bytes": 2787
+    },
+    {
+      "authority_id": "analysis_policy",
+      "file_sha256": "ff9a30e5d227e9d1f3a54069c46633588e63a89f1e3c31792eef487a5f5e5e48",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_analysis_policy.json",
+      "semantic_digest": "9701e9f80742f65d34e04591c16d01a125aaf8527e4c5ad1b21c653c0f3b58e6",
+      "size_bytes": 2968
+    },
+    {
+      "authority_id": "registration_policy",
+      "file_sha256": "3c90344a2a9fade5f234d481b213a449d610d2d45dbc6f7b9af3af42849551e4",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_registration_policy.json",
+      "semantic_digest": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e",
+      "size_bytes": 23992
+    },
+    {
+      "authority_id": "realization_profile",
+      "file_sha256": "52fe60b2db4086c6e0044feebb336cfa4b0c9bc73fdbfa81a778316335069004",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-realization-profile.json",
+      "semantic_digest": "1d416919b038dc125601d23ca1425b39b1e560848b3da8582d986b75a3758a6d",
+      "size_bytes": 2316
+    },
+    {
+      "authority_id": "baseline_registry",
+      "file_sha256": "b886ee3a1f27ef08e75ca375470cab9eceddbfa9bc5d31afcd4c50a6aac83ac4",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json",
+      "semantic_digest": "e412fb45b36dd074ac556381100490a4210b24080946593274147740e20d28cd",
+      "size_bytes": 22227
+    }
+  ],
+  "authorization_gate": "P2-I1-EXEC-FREEZE",
+  "authorization_scope": "exact_cycle_cell_seed_attempt_only",
+  "candidate_execution_authorized": true,
+  "candidate_execution_performed_at_freeze": false,
+  "candidate_outcomes_absent_at_freeze": true,
+  "canonical_payload_digest": "929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84",
+  "claim_ceiling": "bounded niche-conditioning demand pattern",
+  "cycle_id": "P2-I1-C02",
+  "evidence_effect": "none_pre_execution_authorization_only",
+  "execution_binding_receipt": {
+    "canonical_payload_digest": "09dbf32d1351a91aa7ac628418440c45575c7855fd2c1e241267e44722bab13e",
+    "file_sha256": "5f8a45660d02454c62a24bf7cc20da663a39552d0c9bdb3a2f8f336e8bc4e60d",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-binding-receipt.json",
+    "semantic_digest": "0f3cbca11d0f8ef80ce3839b84c423f272ac8d6350f80c4b1d6aefd3da1d9e9f"
+  },
+  "execution_policy_digest": "c1f764eeb7131095e47dd72e3f9a111422db0918f5a214e84b0d866ebe24eacd",
+  "execution_source_files": [
+    {
+      "file_sha256": "3561871a70a7353e0d1281674e04b1d94238d714e766f5f8ec38eb6822438c46",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_c02_execution_policy.json",
+      "semantic_digest": "c1f764eeb7131095e47dd72e3f9a111422db0918f5a214e84b0d866ebe24eacd"
+    },
+    {
+      "file_sha256": "1513381ca9a8747d636f286c4d9f12bef103baa8cd0659395e7bc966b3948ed5",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_fixture.json",
+      "semantic_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476"
+    },
+    {
+      "file_sha256": "ecdd15d24e34e4007f611489f172e49fb8f00292c0f02d14c1ebb3924143efe6",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_cells.json",
+      "semantic_digest": "71064441bfd5894346f808124081caeb426b4e2f72265a9cc6a56f63b2fdb002"
+    },
+    {
+      "file_sha256": "ff9a30e5d227e9d1f3a54069c46633588e63a89f1e3c31792eef487a5f5e5e48",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_analysis_policy.json",
+      "semantic_digest": "9701e9f80742f65d34e04591c16d01a125aaf8527e4c5ad1b21c653c0f3b58e6"
+    },
+    {
+      "file_sha256": "e519cb8ae6c40ab0bcad02f0794f7daea47ade0e593397250749e8e6d9db4b4c",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_runtime_policy.json",
+      "semantic_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793"
+    },
+    {
+      "file_sha256": "3c90344a2a9fade5f234d481b213a449d610d2d45dbc6f7b9af3af42849551e4",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_registration_policy.json",
+      "semantic_digest": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+    },
+    {
+      "file_sha256": "d09955bf48b986729dc01acd283fdbe14f7515e9b5e8785c404f34ea53effa07",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_execution.py",
+      "semantic_digest": "d09955bf48b986729dc01acd283fdbe14f7515e9b5e8785c404f34ea53effa07"
+    },
+    {
+      "file_sha256": "ac16303ebbc97e63dfd85c16676d77b8d2cda345fe76bffbbcae2459661693f6",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_runtime.py",
+      "semantic_digest": "ac16303ebbc97e63dfd85c16676d77b8d2cda345fe76bffbbcae2459661693f6"
+    },
+    {
+      "file_sha256": "962beedfe12d1cd0c9f87e608fff52aa6a938b6015d4223894843cfb600e6c40",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_analysis.py",
+      "semantic_digest": "962beedfe12d1cd0c9f87e608fff52aa6a938b6015d4223894843cfb600e6c40"
+    }
+  ],
+  "fallback_permitted": false,
+  "graph_read_only_guard_required_per_run": true,
+  "lane_id": "AE01-L01",
+  "live_obligations": [
+    {
+      "failure_effect": "limit_to_participant_carried_or_missing_medium",
+      "meaning": "independent_medium_reconstruction",
+      "obligation_id": "C02-OBL-01",
+      "pass_condition": "digests_equal_and_participant_label_input_consumed_false",
+      "required_fields": [
+        "medium_projection_digest",
+        "reconstructed_medium_projection_digest",
+        "participant_label_input_consumed"
+      ],
+      "resolution_scope": "per_run"
+    },
+    {
+      "failure_effect": "block_medium_dependent_l01_claim",
+      "meaning": "medium_dependency_with_participant_opportunity_preserved",
+      "obligation_id": "C02-OBL-02",
+      "required_cells": [
+        "candidate-conditioning",
+        "medium-freeze-withdrawal"
+      ],
+      "required_fields": [
+        "post_writer_base_state_digest",
+        "participant_opportunity_signature",
+        "medium_presence",
+        "opportunity_records"
+      ],
+      "resolution_scope": "cross_cell_seed"
+    },
+    {
+      "failure_effect": "selectivity_not_evaluable",
+      "meaning": "matched_selectivity_baseline_viability",
+      "obligation_id": "C02-OBL-03",
+      "required_fields": [
+        "static_profile_identities",
+        "baseline_viability_audit"
+      ],
+      "resolution_scope": "per_run"
+    },
+    {
+      "failure_effect": "limit_to_generic_or_unresolved_conditioning",
+      "meaning": "comparable_medium_exposure_across_selectivity_groups",
+      "obligation_id": "C02-OBL-04",
+      "required_fields": [
+        "medium_history_digest",
+        "resolved_profile_identities",
+        "exposure_match_audit"
+      ],
+      "resolution_scope": "per_run"
+    },
+    {
+      "failure_effect": "infrastructure_or_integrity_failure",
+      "meaning": "exact_initialization_and_reset",
+      "obligation_id": "C02-OBL-05",
+      "required_fields": [
+        "registered_baseline_digest",
+        "observed_baseline_digest",
+        "baseline_match"
+      ],
+      "resolution_scope": "per_run"
+    },
+    {
+      "failure_effect": "infrastructure_or_integrity_failure",
+      "meaning": "cross_cell_seed_and_attempt_isolation",
+      "obligation_id": "C02-OBL-06",
+      "required_fields": [
+        "worker_scope_ids",
+        "baseline_matches",
+        "no_reused_worker_scope",
+        "no_prior_trace_at_w0"
+      ],
+      "resolution_scope": "cycle"
+    },
+    {
+      "failure_effect": "opportunity_not_evaluable",
+      "meaning": "exact_branch_restoration_and_no_carryover",
+      "obligation_id": "C02-OBL-07",
+      "required_fields": [
+        "branch_point_snapshot_digest",
+        "restored_snapshot_digest",
+        "branch_point_restoration_projection_digest",
+        "restored_restoration_projection_digest",
+        "raw_snapshot_equal",
+        "equal_input_continuation",
+        "cross_branch_state_carryover"
+      ],
+      "resolution_scope": "per_opportunity"
+    },
+    {
+      "failure_effect": "record_support_budget_debt_or_integrity_failure",
+      "meaning": "support_budget_matching",
+      "obligation_id": "C02-OBL-08",
+      "required_fields": [
+        "support_budget_projection",
+        "support_budget_projection_digest",
+        "declared_cell_exception"
+      ],
+      "resolution_scope": "cross_cell_seed"
+    },
+    {
+      "failure_effect": "blocked_or_incomplete_never_scientific_negative",
+      "meaning": "source_current_runtime_and_causal_identity",
+      "obligation_id": "C02-OBL-09",
+      "required_fields": [
+        "runtime_binding",
+        "source_revisions",
+        "writer_event_digest",
+        "pulse_contact_surface_digest",
+        "medium_history_digest"
+      ],
+      "resolution_scope": "per_run"
+    },
+    {
+      "failure_effect": "classify_producer_carried_only",
+      "meaning": "producer_invocation_parity",
+      "obligation_id": "C02-OBL-10",
+      "required_cells": [
+        "candidate-conditioning",
+        "medium-freeze-withdrawal"
+      ],
+      "required_fields": [
+        "producer_invocation_count",
+        "producer_policy",
+        "producer_configuration_except_medium_digest"
+      ],
+      "resolution_scope": "cross_cell_seed"
+    },
+    {
+      "failure_effect": "block_history_content_claim",
+      "meaning": "trace_shuffle_single_axis",
+      "obligation_id": "C02-OBL-11",
+      "required_cells": [
+        "candidate-conditioning",
+        "trace-shuffle"
+      ],
+      "required_fields": [
+        "feedback_row_content_projection_digest",
+        "expected_source_surface_digest",
+        "preserved_trace_fields_audit"
+      ],
+      "resolution_scope": "cross_cell_seed"
+    },
+    {
+      "failure_effect": "blocked_or_incomplete_never_scientific_negative",
+      "meaning": "retained_runtime_receipt_and_reconstruction",
+      "obligation_id": "C02-OBL-12",
+      "required_fields": [
+        "runtime_receipt",
+        "reconstruction",
+        "graph_repository_write_observed"
+      ],
+      "resolution_scope": "per_run"
+    }
+  ],
+  "positive_or_negative_lane_evidence_opened": false,
+  "predecessor_cycle_id": "P2-I1-C01",
+  "preview_only": false,
+  "retention_eligible": true,
+  "run_specs": [
+    {
+      "attempt": 1,
+      "cell_id": "reference",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "registered_cell_reference_delta"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "3f999ab2eb4e760844f7c2367dd69fb9e3cbdc1c15de40fe204b18103e885f71",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/reference/seed-101.json",
+      "run_id": "P2-I1-C02:reference:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:reference:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "reference",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "registered_cell_reference_delta"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "92079af06ec801ed05c2d9145775ae2ec500f1d9bd72f11b2edc6aef858a6c02",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/reference/seed-211.json",
+      "run_id": "P2-I1-C02:reference:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:reference:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "reference",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "registered_cell_reference_delta"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "fcf285dcf95d84e9108695a36595a38300f8d1437d24b0db79b11ff9c15b2439",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/reference/seed-307.json",
+      "run_id": "P2-I1-C02:reference:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:reference:seed-307:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "candidate-conditioning",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "registered_cell_reference_delta"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "8e6b33cc1e10c555a04cbb7fffca13267b0af5f70596a7b895829b00228ca51b",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/candidate-conditioning/seed-101.json",
+      "run_id": "P2-I1-C02:candidate-conditioning:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:candidate-conditioning:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "candidate-conditioning",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "registered_cell_reference_delta"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "ff584259bb491aeb59deeccd4530bd0749288ce3f2c9bf3743b6b731191b7da3",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/candidate-conditioning/seed-211.json",
+      "run_id": "P2-I1-C02:candidate-conditioning:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:candidate-conditioning:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "candidate-conditioning",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "registered_cell_reference_delta"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "ce16a44f691f4fb54b91437540d23babc885fe86cafd6d8febd6902ed69da976",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/candidate-conditioning/seed-307.json",
+      "run_id": "P2-I1-C02:candidate-conditioning:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:candidate-conditioning:seed-307:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "medium-freeze-withdrawal",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "not_emitted",
+        "participant_opportunity_preserved": true,
+        "producer_invocation_preserved": true,
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "not_applicable",
+        "scaffold_withdrawal": false
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "7e8f5bbb0fbf989af2ba215eb2c28ddd23343d4202d7220214a6a31c7e8e28de",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/medium-freeze-withdrawal/seed-101.json",
+      "run_id": "P2-I1-C02:medium-freeze-withdrawal:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:medium-freeze-withdrawal:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "medium-freeze-withdrawal",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "not_emitted",
+        "participant_opportunity_preserved": true,
+        "producer_invocation_preserved": true,
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "not_applicable",
+        "scaffold_withdrawal": false
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "320a29d68470e461ecd826651076648be000b5bec9d15ad39b3b23a568135c29",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/medium-freeze-withdrawal/seed-211.json",
+      "run_id": "P2-I1-C02:medium-freeze-withdrawal:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:medium-freeze-withdrawal:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "medium-freeze-withdrawal",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "not_emitted",
+        "participant_opportunity_preserved": true,
+        "producer_invocation_preserved": true,
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "not_applicable",
+        "scaffold_withdrawal": false
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "ffb05f59a2b6b4fe1e26bed17ef32d77c5b33783b19716a63c40a88426bc3ae2",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/medium-freeze-withdrawal/seed-307.json",
+      "run_id": "P2-I1-C02:medium-freeze-withdrawal:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:medium-freeze-withdrawal:seed-307:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "trace-shuffle",
+      "cell_realization": {
+        "broken_relation": "expected_source_digest_only",
+        "expected_source_digest": "writer_departure_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "preserved_relation": "row_quantity_content_timing_support_and_opportunity",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "81a54f1fcebc510aca462a022cb4939ca47fb5cf8d825c64693421a48fab4e83",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-101.json",
+      "run_id": "P2-I1-C02:trace-shuffle:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:trace-shuffle:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "trace-shuffle",
+      "cell_realization": {
+        "broken_relation": "expected_source_digest_only",
+        "expected_source_digest": "writer_departure_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "preserved_relation": "row_quantity_content_timing_support_and_opportunity",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "fb956e1aed897cc1887bd3d28846d04a7d0cbcd6daa8323785a9419a08939324",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-211.json",
+      "run_id": "P2-I1-C02:trace-shuffle:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:trace-shuffle:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "trace-shuffle",
+      "cell_realization": {
+        "broken_relation": "expected_source_digest_only",
+        "expected_source_digest": "writer_departure_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "preserved_relation": "row_quantity_content_timing_support_and_opportunity",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "af6ddaa2257222bb393a835a53623079a59f2b0d920d8ea8a77a3c7f4cd35aae",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/trace-shuffle/seed-307.json",
+      "run_id": "P2-I1-C02:trace-shuffle:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:trace-shuffle:seed-307:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "parent-context-contrast",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "parent_basin": "absent_not_represented",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture",
+        "support_transform": "registered_absolute_environmental_support_scale"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "af54b0a2a1c654ca4a086aceae919d8ed782c478791e66d9702cd70ca8697fcc",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/parent-context-contrast/seed-101.json",
+      "run_id": "P2-I1-C02:parent-context-contrast:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:parent-context-contrast:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "parent-context-contrast",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "parent_basin": "absent_not_represented",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture",
+        "support_transform": "registered_absolute_environmental_support_scale"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "0164805343308a97717a0e668e4800e04c511d47e9323e2dcc468af0b8c3de00",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/parent-context-contrast/seed-211.json",
+      "run_id": "P2-I1-C02:parent-context-contrast:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:parent-context-contrast:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "parent-context-contrast",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "parent_basin": "absent_not_represented",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture",
+        "support_transform": "registered_absolute_environmental_support_scale"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "54b13a334b1e3139ed3a71711cffe40afe2f116ceb8a169f7df94fb72da3650e",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/parent-context-contrast/seed-307.json",
+      "run_id": "P2-I1-C02:parent-context-contrast:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:parent-context-contrast:seed-307:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "susceptibility-inversion",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered_inversion",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "37771ad19b4ef7a1a8dc52e8f52ba8ef8dab606a1f54204621fa14a4f29b3de7",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/susceptibility-inversion/seed-101.json",
+      "run_id": "P2-I1-C02:susceptibility-inversion:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:susceptibility-inversion:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "susceptibility-inversion",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered_inversion",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "e52c387baa4c35336fd754ddca3fab89d414d96b89f254c69ae94d513528ddf2",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/susceptibility-inversion/seed-211.json",
+      "run_id": "P2-I1-C02:susceptibility-inversion:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:susceptibility-inversion:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "susceptibility-inversion",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered_inversion",
+        "reader_packet_amount_source": "fixture",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "c166dd373278bd6cc71c0d097e5c0835327d4ab0bc337bbcfc4611d83cdb34a4",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/susceptibility-inversion/seed-307.json",
+      "run_id": "P2-I1-C02:susceptibility-inversion:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:susceptibility-inversion:seed-307:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "carrier-timescale-contrast",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "registered_cell_override",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "9ecb0d40e28587b2e338b19bc91d872463ab6d3d341384119e62d88d52f20a9d",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/carrier-timescale-contrast/seed-101.json",
+      "run_id": "P2-I1-C02:carrier-timescale-contrast:seed-101:attempt-1",
+      "seed": 101,
+      "worker_scope_id": "P2-I1-C02-worker:carrier-timescale-contrast:seed-101:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "carrier-timescale-contrast",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "registered_cell_override",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "01093f1744659936d237bbd946018f56b47b383f40aa7806e5fb2599b1c1b246",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/carrier-timescale-contrast/seed-211.json",
+      "run_id": "P2-I1-C02:carrier-timescale-contrast:seed-211:attempt-1",
+      "seed": 211,
+      "worker_scope_id": "P2-I1-C02-worker:carrier-timescale-contrast:seed-211:attempt-1"
+    },
+    {
+      "attempt": 1,
+      "cell_id": "carrier-timescale-contrast",
+      "cell_realization": {
+        "expected_source_digest": "writer_arrival_contact",
+        "feedback_row": "emit_from_writer_arrival_contact",
+        "profile_polarity_mode": "registered",
+        "reader_packet_amount_source": "registered_cell_override",
+        "reference_delta_source": "fixture"
+      },
+      "cycle_id": "P2-I1-C02",
+      "execution_configuration_digest": "2bed97545bff753f958e4948089085b89f353126ef3acc66952923837c343df8",
+      "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/runs/carrier-timescale-contrast/seed-307.json",
+      "run_id": "P2-I1-C02:carrier-timescale-contrast:seed-307:attempt-1",
+      "seed": 307,
+      "worker_scope_id": "P2-I1-C02-worker:carrier-timescale-contrast:seed-307:attempt-1"
+    }
+  ],
+  "runtime_binding_required_per_run": true,
+  "schema_version": "1.0.0",
+  "source_revision": "c2def54c3721c506c28fc9f14390b1ba683a98ec",
+  "source_status_entry_count": 0,
+  "source_worktree_clean": true,
+  "thresholds_are_terminal_boolean_gates": false
+}

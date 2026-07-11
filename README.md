@@ -92,9 +92,11 @@ It provides:
 
 ## Status and claim boundary
 
-This is currently a conceptual and experiment-planning repository, not a
-runnable implementation package. The initialized Post-N30 workspace defines
-questions and contract work; it contains no positive atlas result.
+This is a conceptual and bounded experiment repository, not a reusable runtime
+package. The Post-N30 workspace now contains one retained, explicitly
+constructed P2-I1 result at the bounded niche-conditioning demand-pattern
+ceiling. That result does not establish an admitted ecology primitive or a
+complete agentic ecology.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -150,9 +152,11 @@ and shared-medium participation before implementation claims are made.
   engineering vocabulary.
 - [`experiments/`](experiments/README.md): bounded experiment roadmaps,
   contracts, reconstruction conventions, evidence, and closeouts. The current
-  AE01 workspace has passed Review R2 and `P1-GATE` at `AE01-C2`; Phase 2
-  candidate-blind calibration and lane registration are open, while candidate
-  execution remains lane-gated and no positive atlas evidence is assigned.
+  AE01 workspace has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is
+  closed with one bounded, explicitly constructed L01 result, and Review R3
+  passed without tuning it. P2-I2 is next; all remaining lane execution stays
+  independently gated. New readers can begin with
+  [why AE01 matters for agentic ecology](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
 - [`implementation/`](implementation/README.md): active cross-cutting plans,
   decisions, checklists, and handoffs.
 - `README.md`: public orientation and claim boundary.

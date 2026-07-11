@@ -1,0 +1,98 @@
+{
+  "all_execution_artifacts_indexed_by_execution_manifest": true,
+  "artifact_count": 13,
+  "artifact_kind": "p2_i1_c02_closeout_manifest",
+  "artifacts": [
+    {
+      "file_sha256": "382b78537eb23bc8c672f57b8cb7baa5e9897fb338b6321eb88db2e1f8cbb408",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/closeout-validation.json",
+      "semantic_digest": "93f775aad9c56ff2f1db7d0fb401e81af4d84626a4066c925b8ba702fa472451",
+      "size_bytes": 497
+    },
+    {
+      "file_sha256": "318e80ceced967756bd8f029f47b39c8d64ba385062ffc449e0db6352d73efa2",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/cycle-audit.json",
+      "semantic_digest": "16f9e451dd0900059584de37518d821c32386a9883047ebcca30f293a09021f8",
+      "size_bytes": 6514
+    },
+    {
+      "file_sha256": "738afbec0b4a68ce7c44378590882996f11bb918b2c7068f77ca3eec61e54a6f",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/developmental-interpretation.json",
+      "semantic_digest": "380bd9ca7bc4c6d838ca3cc50f0f1352d55d3894ccd345e4fd2ce8bfcea8c2df",
+      "size_bytes": 9568
+    },
+    {
+      "file_sha256": "36e55ce768badf4ae221884ec3be634a40a47b9e69f72587f3e79b1045c33b51",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/exec-freeze.json",
+      "semantic_digest": "ad07ce65e81950f353c5cc36f87e1f07dd34b02e8f81e0ec17b25ad75a60a8ae",
+      "size_bytes": 35017
+    },
+    {
+      "file_sha256": "5f8a45660d02454c62a24bf7cc20da663a39552d0c9bdb3a2f8f336e8bc4e60d",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-binding-receipt.json",
+      "semantic_digest": "0f3cbca11d0f8ef80ce3839b84c423f272ac8d6350f80c4b1d6aefd3da1d9e9f",
+      "size_bytes": 1763
+    },
+    {
+      "file_sha256": "ab340157ade209c6d932a10503253b86f4d7d30bb69977ba1be7222b2970c645",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/execution-manifest.json",
+      "semantic_digest": "fb3a9abd928a209c804cc149d7216cc55a1e42c0418823954ac4c0a0a6f5d69a",
+      "size_bytes": 12955
+    },
+    {
+      "file_sha256": "c3dbb49f04cda9a711d6df2674c905ae28aa615e299d50d958dc66b3a1c0da30",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/requirement-extraction.json",
+      "semantic_digest": "b42f20f7d71bc87d9011cf996adc433c12d071de89849ccb5c0c681f3e489156",
+      "size_bytes": 4010
+    },
+    {
+      "file_sha256": "351078ee8fa7e35ba2ac3843b645b924c78be538aff31075a6ace989c7790778",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/retry-ledger.json",
+      "semantic_digest": "bbc187860f4cb91158c0339432bfe6be37ee43a734c3d0c05900629864108005",
+      "size_bytes": 491
+    },
+    {
+      "file_sha256": "b53d37db4706a08dd5b0263190893a6ed94c0f088624c56e5644451841fa2253",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/scientific-analysis.json",
+      "semantic_digest": "9979fa4aec9439d37ff41900af32a622999d1434babec7842c749caacfd503ca",
+      "size_bytes": 21744
+    },
+    {
+      "file_sha256": "4c408a1f4bf32bf0dbe7d715796fd8b199dcbbc685f7b626340875be43eb3f91",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/c02/terminal-classification.json",
+      "semantic_digest": "a4b985e1bdda87632f9dc3de18d23cc970b35487ba7d968c2971dab62b884126",
+      "size_bytes": 3584
+    },
+    {
+      "file_sha256": "accf6ce4ffeba3ab0709bffb1802a17d556c1975959977602dbace61bd7379b6",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-C02-result.md",
+      "semantic_digest": "accf6ce4ffeba3ab0709bffb1802a17d556c1975959977602dbace61bd7379b6",
+      "size_bytes": 12724
+    },
+    {
+      "file_sha256": "c095ee48e3317328b3edb5fa54532e5b053a27debd1eb70a45c7b9fce021c16c",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-closeout-review.md",
+      "semantic_digest": "c095ee48e3317328b3edb5fa54532e5b053a27debd1eb70a45c7b9fce021c16c",
+      "size_bytes": 2472
+    },
+    {
+      "file_sha256": "6f10fb7cd8de75488c371b5086511b45d28162145500283515ade5fd7447de7d",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_closeout.py",
+      "semantic_digest": "6f10fb7cd8de75488c371b5086511b45d28162145500283515ade5fd7447de7d",
+      "size_bytes": 16771
+    }
+  ],
+  "canonical_payload_digest": "64e403f6ef131177f391557b058bc1b60d4af1374fe2e69efb153de9679cf725",
+  "cycle_id": "P2-I1-C02",
+  "evidence_effect": "retention_and_reconstruction_index_only",
+  "execution_manifest_ref": "p2-i1-c02-execution-manifest",
+  "highest_valid_rung": {
+    "rationale": "All five cumulative L01 boundaries are reached within explicit constructed support, including the frozen reader carrier-load contrast.",
+    "reference_id": "AE01-L01-R05",
+    "status": "applicable"
+  },
+  "schema_version": "1.0.0",
+  "scientific_interpretation_opened_only_after_complete_audit": true,
+  "support_status": "explicit_constructed_support",
+  "terminal_classification": "supported_bounded_candidate"
+}

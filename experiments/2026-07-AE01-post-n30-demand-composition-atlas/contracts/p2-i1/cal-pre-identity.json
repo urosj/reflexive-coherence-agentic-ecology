@@ -1,0 +1,245 @@
+{
+  "aggregation_policy_digest": "56fac67543ec9f8d1e0e8f3f7e85ba5d3ecb78daa312a67e3415d4174a3d92cb",
+  "analysis_policy_digest": "9701e9f80742f65d34e04591c16d01a125aaf8527e4c5ad1b21c653c0f3b58e6",
+  "analysis_policy_path": "configs/p2_i1_analysis_policy.json",
+  "analysis_script_path": "scripts/p2_i1_analysis.py",
+  "analysis_script_sha256": "962beedfe12d1cd0c9f87e608fff52aa6a938b6015d4223894843cfb600e6c40",
+  "artifact_kind": "p2_i1_cal_pre_identity",
+  "calibration_realization_digest": "9b59988a0f5211cb32aaf531748f8a9b235540729d40544373e6ba3a04b769b8",
+  "candidate_execution_authorized": false,
+  "candidate_outcomes_absent": true,
+  "canonical_payload_digest": "ababf1196b664e174cf182238432a6a4fbaf6a4d925c7780dc48dc1956f1655e",
+  "cli_path": "scripts/p2_i1.py",
+  "cli_sha256": "244fa47d74d270457c4be27b738d464a46577473b954958d67b509ef76b6ac3a",
+  "configuration_digests": {
+    "analysis_config_digest": "9701e9f80742f65d34e04591c16d01a125aaf8527e4c5ad1b21c653c0f3b58e6",
+    "calibration_config_digest": "a0e5eeed61368d04d3db97bf15a571a33a0b7ba4e84860d5ca66149d1759fbf8",
+    "cells_config_digest": "71064441bfd5894346f808124081caeb426b4e2f72265a9cc6a56f63b2fdb002",
+    "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+    "provenance_config_digest": "c9a2edfb7d602bb76c59d5fcddad4fdb639db03536ad41b33a62306de0df4c6a",
+    "runtime_config_digest": "0d3c70fef545ce0371448ef2637b7a2b265152b8769013dfe7e07a8925aa141a"
+  },
+  "evidence_effect": "none_preregistration_identity_only",
+  "identity_id": "rcae-p2-i1-cal-pre-identity-v1",
+  "measurement_identity_digest": "eff89329d93d2addd05c27e72706da59c6f96c7ad813dceb90452a37bc46fd70",
+  "provenance_profile_digest": "c9a2edfb7d602bb76c59d5fcddad4fdb639db03536ad41b33a62306de0df4c6a",
+  "provenance_profile_path": "configs/p2_i1_cal_pre_provenance.json",
+  "reconstruction": {
+    "command_profiles": [
+      {
+        "argv": [
+          ".venv/bin/python",
+          "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+          "validate-phase1"
+        ],
+        "command_id": "p2-i1-validate-phase1-v1"
+      },
+      {
+        "argv": [
+          ".venv/bin/python",
+          "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py",
+          "validate-configs"
+        ],
+        "command_id": "p2-i1-validate-configs-v1"
+      },
+      {
+        "argv": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests",
+          "-v"
+        ],
+        "command_id": "p2-i1-test-v1"
+      },
+      {
+        "argv": [
+          ".venv/bin/python",
+          "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py",
+          "build-cal-pre-identity",
+          "--output",
+          "outputs/p2-i1-cal-pre-identity.json"
+        ],
+        "command_id": "p2-i1-build-cal-pre-identity-v1"
+      },
+      {
+        "argv": [
+          ".venv/bin/python",
+          "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py",
+          "generate-matched-null",
+          "--output",
+          "outputs/p2-i1-matched-null.json"
+        ],
+        "command_id": "p2-i1-generate-matched-null-v1"
+      }
+    ],
+    "dependency_profile": {
+      "analysis_runtime_dependencies": [
+        "python_standard_library"
+      ],
+      "phase1_validation_dependencies": [
+        "jsonschema==4.26.0"
+      ],
+      "pygrc_required_for_calibration": false
+    },
+    "environment_profile": {
+      "locale_policy": "UTF-8 input and ASCII-safe canonical JSON output",
+      "python_version": ">=3.11",
+      "timezone_policy": "No wall-clock or timezone value enters canonical records"
+    },
+    "expected_artifacts": [
+      {
+        "artifact_role": "config_validation",
+        "path": "outputs/p2-i1-config-validation.json",
+        "retention_stage": "review_then_select"
+      },
+      {
+        "artifact_role": "cal_pre_identity",
+        "path": "outputs/p2-i1-cal-pre-identity.json",
+        "retention_stage": "retain_after_clean_commit"
+      },
+      {
+        "artifact_role": "matched_null",
+        "path": "outputs/p2-i1-matched-null.json",
+        "retention_stage": "cal_gate_only_after_cal_pre_pass"
+      }
+    ],
+    "resource_envelope": {
+      "max_disk_mb": 256,
+      "max_memory_mb": 512,
+      "max_runtime_seconds": 120
+    },
+    "working_directory": "."
+  },
+  "retention_eligible": true,
+  "rung_classifier_digest": "f540f6a53a6a8cecd8a4885131eedc226f34a105cb118acc6296c1ed89af4f10",
+  "runtime_harness_path": "scripts/p2_i1_runtime.py",
+  "runtime_harness_sha256": "284c11754a4682187a57fba4166d443417ab661446b1c7495a5ede38bfe9eb25",
+  "schema_version": "1.0.0",
+  "source_revision": "134b66cf6adf50e9f1e773454be25bbea53938d2",
+  "source_tree_clean": true,
+  "static_profile_identities": [
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "A",
+        "edge_id": 2,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "positive",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "aligned",
+        "opportunity_index": 0,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-a-aligned",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 2
+      },
+      "opportunity_profile_digest": "05b1c19e9ce2abbd966917a5414c33a97d8108796ad9ad8e09d601125d925cc3",
+      "profile_id": "ctx-a-aligned",
+      "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a"
+    },
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "A",
+        "edge_id": 2,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "negative",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "inverted",
+        "opportunity_index": 1,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-a-inverted",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 2
+      },
+      "opportunity_profile_digest": "14a054667ad5baa37db3ae975f8864f5dc4e4dfa7f44b3fad73ef8574bfcb735",
+      "profile_id": "ctx-a-inverted",
+      "reader_configuration_digest": "696d89ea2ebeb96c329cb8c0f419856fa12c169cdda3e2590e2114cea43c2d1a"
+    },
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "B",
+        "edge_id": 3,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "positive",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "aligned",
+        "opportunity_index": 2,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-b-aligned",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 3
+      },
+      "opportunity_profile_digest": "58a804b8ac6b948aa5252485fca5915d3c85eaddb96431fabb693a546be1c825",
+      "profile_id": "ctx-b-aligned",
+      "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777"
+    },
+    {
+      "identity": {
+        "arrival_event_time_key": null,
+        "context": "B",
+        "edge_id": 3,
+        "expected_next_channel_id": null,
+        "expected_next_route_id": null,
+        "expected_polarity": "negative",
+        "expected_source_surface_digest": "SYMBOLIC_REGISTERED_WRITER_ARRIVAL_CONTACT",
+        "feedback_threshold": 0.125,
+        "fixture_id": "rcae_p2_i1_four_node_v1",
+        "front_node_ids": [
+          1
+        ],
+        "group": "inverted",
+        "opportunity_index": 3,
+        "packet_amount": 0.125,
+        "profile_id": "ctx-b-inverted",
+        "rear_node_ids": [
+          2,
+          3
+        ],
+        "source_node_id": 0,
+        "target_node_id": 3
+      },
+      "opportunity_profile_digest": "1c785355dc84598a2e4026489f60856eadc77a3c9cf76188349bb07c610189b5",
+      "profile_id": "ctx-b-inverted",
+      "reader_configuration_digest": "a452415c49ed976a480ef4da7cb04b357d3e8ceef00eff89cf05eeccd6e7a777"
+    }
+  ],
+  "terminal_classifier_digest": "b871b6da601eb8082ddc3d159c5ee10bffeff7b98fc05b649323929824342fb1",
+  "validation_digest": "dfedb1ab315e49f2051c7c283a998ba5ac31bfb74209ae39118fc795edd65101",
+  "working_tree_change_count": 0,
+  "working_tree_status_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

@@ -15,6 +15,41 @@ These review records govern phase progression only. They are not lane reports
 or retained scientific evidence. The JSON checklist is an administrative
 review record rather than an `ae01-contract.schema.json` evidence envelope.
 
+Phase 2 gate reviews:
+
+- [P2-I1 CAL-PRE review](P2-I1-CAL-PRE-review.md) passes candidate-blind
+  calibration preregistration;
+- [P2-I1 CAL review](P2-I1-CAL-review.md) passes the retained matched-null
+  resolution freeze;
+- [P2-I1 D-020 bounded refresh](P2-I1-D020-bounded-refresh-review.md) closes
+  the bounded developmental-interpretation identity refresh; and
+- [P2-I1 REG review](P2-I1-REG-review.md) passes the retained registration
+  reconstruction while assigning unresolved causal facts to live execution.
+- [P2-I1 EXEC-FREEZE review](P2-I1-EXEC-FREEZE-review.md) verifies the exact
+  candidate-free C01 authorization and passes its tracked exact-cycle
+  mechanical boundary without executing a candidate operation.
+- [P2-I1 C01 bounded-incomplete record](P2-I1-C01-bounded-incomplete.md)
+  retains the universal W2 restoration failure, exhausted retry scope, bounded
+  diagnosis, and evidence for a separately frozen C02 correction.
+- [P2-I1 C02 EXEC-FREEZE review](P2-I1-C02-EXEC-FREEZE-review.md) verifies the
+  D-027 restoration correction, exact successor scope, and byte-identical
+  candidate-free reconstruction before tracked authorization.
+- [P2-I1 C02 result](P2-I1-C02-result.md) records the completed matrix,
+  geometric and ecology interpretation, boundary ladder, terminal disposition,
+  implementation details, blocked claims, and reconstruction commands.
+- [P2-I1 owner closeout review](P2-I1-closeout-review.md) accepts R05 as
+  bounded carrier-load invariance, records result retention and deterministic
+  post-retention validation, and passes `P2-I1-CLOSE-GATE` and `P2-I1-GATE`.
+- [R3 contract-adequacy review](R3-contract-adequacy-review.md) evaluates the
+  first completed lane without tuning it, retains the existing core record
+  set, and requires a compact lane-local control-resolution index for future
+  lane closeouts.
+
+The separately maintained
+[P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)
+preserves unselected structural and decision-set variants. It is not evidence,
+a report conclusion, a preregistration, or execution authority.
+
 Reports use either:
 
 - `generated_projection`, containing generated machine facts only; or

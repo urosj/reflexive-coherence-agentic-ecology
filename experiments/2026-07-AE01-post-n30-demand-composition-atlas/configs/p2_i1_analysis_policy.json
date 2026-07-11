@@ -1,0 +1,65 @@
+{
+  "evidence_effect": "none_analysis_policy_only",
+  "schema_version": "1.0.0",
+  "policy_id": "rcae-p2-i1-analysis-policy-v1",
+  "aggregation_policy": {
+    "opportunity_count_per_seed": 4,
+    "valid_raw_responses": [0, 1],
+    "scientific_statuses": ["observed", "inadmissible", "structurally_unavailable"],
+    "operational_statuses": ["censored_runtime", "missing_infrastructure", "blocked_by_control"],
+    "formation_status": "observed",
+    "formation_requires_complete_chain": true,
+    "operational_missingness_policy": "entire_seed_not_evaluable",
+    "scientific_denominator_policy": "fixed_registered_opportunity_count",
+    "orientation_transform": "identity",
+    "direction": "higher_is_aligned",
+    "paired_margin": {
+      "formula": "(candidate - comparator) / max(abs(candidate), abs(comparator), measurement_resolution)",
+      "measurement_resolution": 1e-12,
+      "retain_raw_coverage": true
+    },
+    "primary_comparison": {
+      "comparison_id": "writer-relative-history-content",
+      "candidate_cell": "candidate-conditioning",
+      "comparator_cell": "reference",
+      "metric_role": "primary_normalized_margin",
+      "uses_calibrated_delta": true
+    },
+    "medium_dependency_comparison": {
+      "comparison_id": "feedback-row-presence-dependency",
+      "candidate_cell": "candidate-conditioning",
+      "comparator_cell": "medium-freeze-withdrawal",
+      "metric_role": "causal_control_diagnostic",
+      "uses_calibrated_delta": false
+    },
+    "selectivity": {
+      "contexts": ["A", "B"],
+      "groups": ["aligned", "inverted"],
+      "candidate_cell": "candidate-conditioning",
+      "comparator_cell": "medium-freeze-withdrawal",
+      "minimum_margin": 0.5,
+      "threshold_source": "binary_two_pair_combinatorial_resolution",
+      "uses_calibrated_delta": false,
+      "threshold_candidate_blind": true,
+      "expected_direction": "positive",
+      "zero_interaction_relation": "generic_main_effect_or_no_effect"
+    }
+  },
+  "rung_classifier_policy": {
+    "lane_id": "AE01-L01",
+    "rungs": ["AE01-L01-R01", "AE01-L01-R02", "AE01-L01-R03", "AE01-L01-R04", "AE01-L01-R05"],
+    "machine_output": "rung_inputs_only",
+    "authoritative_terminal_claim": false,
+    "required_dimensions": ["formation_distribution", "medium_dependence", "selectivity", "causal_lineage", "shared_access", "support_contrast", "carrier_load_contrast"]
+  },
+  "terminal_classifier_input_policy": {
+    "machine_output": "terminal_inputs_only",
+    "terminal_classification_deferred": true,
+    "required_cell_ids": ["reference", "candidate-conditioning", "medium-freeze-withdrawal", "trace-shuffle", "parent-context-contrast", "susceptibility-inversion", "carrier-timescale-contrast"],
+    "required_seed_ids": [101, 211, 307],
+    "required_control_resolution": true,
+    "integrity_fail_closed": true,
+    "threshold_crossing_is_not_terminal_acceptance": true,
+    "claim_ceiling": "bounded_niche_conditioning_demand_pattern"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "record": {
+    "after_state_identity": "binding-check:not-started",
+    "before_state_identity": "binding-check:not-started",
+    "conformance_status": "passed",
+    "execution_class": "pygrc_runtime_with_rcae_producer",
+    "extensions": {
+      "x_operation_capabilities": {
+        "feedback_conditioned_packet_production": [
+          "models.LGRC9V3.set_feedback_coupled_pulse_producer",
+          "models.LGRC9V3.step"
+        ],
+        "feedback_surface_emission": [
+          "models.LGRC9V3.emit_feedback_eligibility_surface_row"
+        ],
+        "fixture_construction": [
+          "models.LGRC9V3.from_state"
+        ],
+        "p2_i1_runtime_preflight": [
+          "models.LGRC9V3.from_state",
+          "models.LGRC9V3.get_state",
+          "models.LGRC9V3.snapshot"
+        ],
+        "packet_queue_step": [
+          "models.LGRC9V3.step"
+        ],
+        "route_aspect_validation": [
+          "models.validate_lgrc9v3_route_aspect"
+        ],
+        "snapshot_round_trip": [
+          "models.LGRC9V3.snapshot",
+          "models.LGRC9V3.load"
+        ]
+      },
+      "x_preview_only": false,
+      "x_retention_eligible": true,
+      "x_source_revision": "6ca9391fff6daa82e3be4b42c11f431a961d35b8",
+      "x_source_worktree_clean": true
+    },
+    "failure": {
+      "rationale": "binding conformance passed",
+      "status": "not_applicable"
+    },
+    "graph_repository_write_observed": false,
+    "observed_capabilities": [
+      "pygrc.core",
+      "pygrc.integrations",
+      "pygrc.landscapes",
+      "pygrc.models",
+      "pygrc.telemetry",
+      "pygrc.visualization"
+    ],
+    "observed_runtime_identity": "pygrc==0.1",
+    "profile_id": "rcae-p2-i1-registered-realization-v1",
+    "receipt_id": "ae01:runtime-receipt:5c1ea774e3cfc31e",
+    "requested_operations": [
+      "p2_i1_runtime_preflight",
+      "fixture_construction",
+      "route_aspect_validation",
+      "snapshot_round_trip",
+      "packet_queue_step",
+      "feedback_surface_emission",
+      "feedback_conditioned_packet_production"
+    ],
+    "run_id": "rcae-p2-i1-registration-preflight",
+    "transition_receipt_ids": []
+  },
+  "record_type": "runtime_binding_receipt",
+  "schema_version": "1.1.0"
+}

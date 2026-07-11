@@ -1,0 +1,13 @@
+{
+  "artifact_kind": "p2_i1_c02_retry_ledger",
+  "canonical_payload_digest": "75231be9d8cef69368bb1c9ef1967c19638e007b24557d81e99d607c4c2137d2",
+  "cycle_id": "P2-I1-C02",
+  "evidence_effect": "infrastructure_only",
+  "exec_freeze_digest": "929c112f8e3109efd0ae9596a75f51917898f09fd360fe77fbfb5f1d76825b84",
+  "primary_failures": [],
+  "retries_per_cell_limit": 1,
+  "retry_authorizations": [],
+  "retry_results": [],
+  "schema_version": "1.0.0",
+  "scientific_refinement_by_retry": false
+}

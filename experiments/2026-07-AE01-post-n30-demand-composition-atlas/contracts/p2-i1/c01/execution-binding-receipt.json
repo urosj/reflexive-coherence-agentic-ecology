@@ -1,0 +1,49 @@
+{
+  "artifact_kind": "p2_i1_c01_execution_binding_receipt",
+  "binding_relation_to_registration": "strict_execution_specific_superset",
+  "candidate_operation_executed": false,
+  "candidate_outcome_observed": false,
+  "canonical_payload_digest": "4d7a93f664f22eaf62f9a1098e09e62ea9d30eaa162d919ed867e40bffa29ef0",
+  "conformance_status": "passed",
+  "cycle_id": "P2-I1-C01",
+  "evidence_effect": "none_pre_execution_binding_only",
+  "execution_class": "pygrc_runtime_with_rcae_producer",
+  "execution_policy_digest": "8e0eff657eb2c9fe35e8ab8029cf16c705178240639f865f7225491d3a7f504c",
+  "execution_specific_capabilities": {
+    "branch_snapshot_persistence": [
+      "models.LGRC9V3.save",
+      "models.LGRC9V3.load"
+    ],
+    "feedback_conditioned_packet_production": [
+      "models.LGRC9V3.produce_events"
+    ],
+    "runtime_state_audit": [
+      "models.LGRC9V3.get_state",
+      "models.LGRC9V3.snapshot"
+    ],
+    "writer_packet_scheduling": [
+      "models.LGRC9V3.schedule_packet_departure"
+    ]
+  },
+  "fallback_used": false,
+  "graph_repository_write_observed": false,
+  "graph_source_revision": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+  "machine_local_graph_path_recorded": false,
+  "machine_local_runtime_path_recorded": false,
+  "preview_only": false,
+  "registered_operation_classes": [
+    "p2_i1_runtime_preflight",
+    "fixture_construction",
+    "route_aspect_validation",
+    "snapshot_round_trip",
+    "packet_queue_step",
+    "feedback_surface_emission",
+    "feedback_conditioned_packet_production"
+  ],
+  "retention_eligible": true,
+  "runtime_identity": "pygrc==0.1",
+  "schema_version": "1.0.0",
+  "source_revision": "606bc2714bce5c6086e0c92ea363a070481b0ca8",
+  "source_status_entry_count": 0,
+  "source_worktree_clean": true
+}

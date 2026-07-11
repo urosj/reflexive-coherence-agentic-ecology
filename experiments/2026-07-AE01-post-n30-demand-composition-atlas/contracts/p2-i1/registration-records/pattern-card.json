@@ -1,0 +1,231 @@
+{
+  "record": {
+    "claim_boundary_ref": "rcae-p2-i1-registration-claim-boundary-v1",
+    "composition_refs": [],
+    "constructed_mechanism_refs": ["rcae-p2-i1-option-a-adapter-v1"],
+    "control_refs": [
+      "AE01-CTRL-01",
+      "AE01-CTRL-02",
+      "AE01-CTRL-03",
+      "AE01-CTRL-04",
+      "AE01-CTRL-05",
+      "AE01-CTRL-06",
+      "AE01-CTRL-07",
+      "AE01-CTRL-08",
+      "AE01-CTRL-09",
+      "AE01-CTRL-10",
+      "AE01-CTRL-11",
+      "AE01-CTRL-12",
+      "AE01-CTRL-13",
+      "AE01-CTRL-14",
+      "AE01-CTRL-15",
+      "AE01-CTRL-16",
+      "AE01-CTRL-17",
+      "AE01-CTRL-18",
+      "AE01-CTRL-19",
+      "AE01-L01-CTRL-01",
+      "AE01-L01-CTRL-02",
+      "AE01-L01-CTRL-03",
+      "AE01-L01-CTRL-04",
+      "AE01-L01-CTRL-05"
+    ],
+    "debt_refs": [
+      "rcae-p2-i1-naturalization-debt",
+      "rcae-p2-i1-participant-mediated-reader-debt",
+      "rcae-p2-i1-fixed-order-debt",
+      "rcae-p2-i1-parent-context-debt"
+    ],
+    "domain_role": "absent",
+    "ecology_extrapolation_refs": [
+      {
+        "claim_ceiling": "Theory brief and decision scaffold only; no result is preselected",
+        "evidence_role": "ecology_interpretation",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I1-minimal-shared-medium-niche-brief.md",
+        "reference_id": "p2_i1_niche_theory_brief"
+      }
+    ],
+    "economy_metrics": [
+      {
+        "applicability": {
+          "rationale": "Participant reserve must cover the registered one-repeat viability requirement",
+          "status": "applicable"
+        },
+        "metric_id": "p2_i1_participant_repeat_reserve",
+        "role": "reserve",
+        "threshold_rule": "Retain raw proximity and matching evidence; a narrow pass or miss remains interpretable rather than binary acceptance",
+        "unit": "native_coherence_budget",
+        "value_type": "number"
+      },
+      {
+        "applicability": {
+          "rationale": "Writer and reader packet amounts are frozen debit/load surfaces",
+          "status": "applicable"
+        },
+        "metric_id": "p2_i1_packet_load",
+        "role": "cost",
+        "threshold_rule": "Match within 1e-12 except for the declared carrier-timescale contrast",
+        "unit": "native_packet_amount",
+        "value_type": "number"
+      },
+      {
+        "applicability": {
+          "rationale": "Undeclared cross-branch or cross-worker state would invalidate isolation",
+          "status": "applicable"
+        },
+        "metric_id": "p2_i1_state_leakage",
+        "role": "leakage",
+        "threshold_rule": "No cross-branch or cross-worker state carryover is permitted",
+        "unit": "identity_mismatches",
+        "value_type": "integer"
+      }
+    ],
+    "evidence_use_tier": "registered_probe",
+    "extensions": {},
+    "failure_modes": [
+      "AE01-F01",
+      "AE01-F02",
+      "AE01-F03",
+      "AE01-F04",
+      "AE01-F05",
+      "AE01-F06",
+      "AE01-F08",
+      "AE01-F10"
+    ],
+    "field_applicability": {
+      "candidate_execution": {
+        "rationale": "Closed until REG-GATE and an exact P2-I1-EXEC-FREEZE pass",
+        "status": "not_tested"
+      },
+      "parent_basin": {
+        "rationale": "No distinct parent basin is represented in the primary cycle",
+        "status": "not_applicable"
+      },
+      "selectivity": {
+        "rationale": "Registered as a polarity-susceptibility interaction but not yet executed",
+        "status": "not_tested"
+      }
+    },
+    "lane_id": "AE01-L01",
+    "later_response": {
+      "rationale": "Four independent restored opportunity profiles per cell/seed are registered; outcomes remain absent",
+      "status": "not_tested"
+    },
+    "maturity": "candidate",
+    "medium_surface_refs": ["rcae-p2-i1-feedback-row-surface-v1"],
+    "n29_consumption_refs": [
+      {
+        "claim_ceiling": "Prototype atlas with explicit producer, composition, medium, and nativity debt; not executed P2-I1 evidence",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "1a810918df2923b5f5fe475ec9d0cc1f843fe614640b8149ea25173aab985a26",
+        "output_digest": "e139dd61fcd2b0998282033e5fe1a041891291d5db036982063e510be33f7cd2",
+        "path": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_prototype_atlas_classification_i15.json",
+        "reference_id": "n29_prototype_atlas_i15"
+      },
+      {
+        "claim_ceiling": "Bridge and probe-contract handoff only; not executed ecology runtime",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "842ba57e994bbb3e219acff741afd85c87d102bea5eec6d134f3b84f2445cb52",
+        "output_digest": "fa21662f0a69d582bfe574311110f2610a21e6e4e352991823ce47280e0e8ff5",
+        "path": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_closeout_and_ecology_handoff_i18.json",
+        "reference_id": "n29_closeout_and_ecology_handoff_i18"
+      }
+    ],
+    "n30_supported_refs": [
+      {
+        "claim_ceiling": "Replay/control-backed M2 candidate with inherited source-current runtime origin; not fresh P2-I1 evidence",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "bf29695841f87fc40b2464114129a19e8616c2f8e6efa49a09a472ed65cca264",
+        "output_digest": "46f7eba93fa206355f4dc3eb5b2ae8e70dd1126eba975030a2e2fc15f1603fec",
+        "path": "grc:experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_replay_controls_i7.json",
+        "reference_id": "n30_replay_controls_i7"
+      },
+      {
+        "claim_ceiling": "Artifact-level bounded minimal shared-medium participation candidate at P2/M2",
+        "evidence_role": "inherited_graph_evidence",
+        "file_sha256": "ade32c848cbffa4d5757bfce50eaadb72a63a8252a8ba09e5fd562c6c100718c",
+        "output_digest": "7971163b1d7bd4027f5375270cfb2445cfe4698a8869b28e26f9273d0a5b5af6",
+        "path": "grc:experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_closeout_and_spiral_handoff_i8.json",
+        "reference_id": "n30_closeout_and_spiral_handoff_i8"
+      }
+    ],
+    "n31_implication": {
+      "rationale": "One lane cannot select an N31+ direction before seven-lane synthesis",
+      "status": "not_tested"
+    },
+    "parent_basin": "absent_not_represented; parent-context-contrast is a reduced-support control only",
+    "parent_closure_relevance": {
+      "rationale": "The primary cycle does not instantiate closure or a parent-level pattern",
+      "status": "not_applicable"
+    },
+    "participant_carriers": [
+      "node P source-pole structural identity",
+      "participant lineage ID",
+      "budgeted one-repeat reserve"
+    ],
+    "participant_medium_account": "Participant continuity and model-owned feedback-row identity are separately registered; writing and reading are temporally separated, while reading remains participant-mediated and cannot support an autonomous-access claim",
+    "pattern_id": "rcae-p2-i1-l01-registered-probe",
+    "persistence_condition": "The exact feedback-row identity remains present from its committed W1 write through the W2 branch point; no general decay law is claimed",
+    "perturbation_refs": [
+      "candidate-conditioning",
+      "medium-freeze-withdrawal",
+      "trace-shuffle",
+      "parent-context-contrast",
+      "susceptibility-inversion",
+      "carrier-timescale-contrast"
+    ],
+    "placement_rationale": "The probe asks whether a substrate-visible historical medium condition changes a later local formation possibility; at registration this is a building-block candidate, not a reusable motif",
+    "possible_co_response": {
+      "rationale": "No reciprocal or joint response is required by L01",
+      "status": "not_applicable"
+    },
+    "primary_catalog_layer": "building_block",
+    "realization_profile_refs": ["rcae-p2-i1-registered-realization-v1"],
+    "requested_execution_class": "pygrc_runtime_with_rcae_producer",
+    "requirement_refs": [],
+    "runtime_binding_receipt_refs": ["ae01:runtime-receipt:5c1ea774e3cfc31e"],
+    "secondary_observations": ["primitive"],
+    "source_refs": [
+      {
+        "claim_ceiling": "Relational niche vocabulary and conceptual motivation only",
+        "evidence_role": "conceptual_motivation",
+        "file_sha256": "c2c2371525036b3a56e88a38d8ca51bf140a9b16a897378c50b01be5ec076c45",
+        "path": "papers/2026-06-TheSharedMedium.md",
+        "reference_id": "shared_medium_paper"
+      },
+      {
+        "claim_ceiling": "Method, mapping, control, and debt vocabulary only",
+        "evidence_role": "conceptual_motivation",
+        "file_sha256": "db249acdfc95a245e4fadbb90a31eec687c7550f51b59414734f4cabd57730df",
+        "path": "papers/2026-06-SharedMediumCoordination-EngineeringSpec.md",
+        "reference_id": "shared_medium_engineering_spec"
+      }
+    ],
+    "susceptibility": {
+      "rationale": "Configured aligned versus inverted polarity is the frozen selectivity discriminator",
+      "status": "applicable"
+    },
+    "terminal_ref": "rcae-p2-i1-l01-terminal-v1",
+    "trace_dynamics": {
+      "decay": {
+        "rationale": "No decay law is estimated in the primary cycle",
+        "status": "not_applicable"
+      },
+      "persistence": {
+        "rationale": "Bounded W1-to-W2 row persistence is required",
+        "status": "applicable"
+      },
+      "reinforcement": {
+        "rationale": "No repeated writing schedule is registered",
+        "status": "not_applicable"
+      },
+      "saturation": {
+        "rationale": "No accumulation or saturation claim is registered",
+        "status": "not_applicable"
+      }
+    },
+    "transfer_boundary": "Exact four-node fixture, native PyGRC 0.1 operation family, three deterministic offsets, seven registered cells, and participant-mediated configured reading only",
+    "transfer_scope": "The carrier-timescale contrast can establish bounded reader-load invariance only; all broader transfer, domain, motif, and regime claims remain blocked"
+  },
+  "record_type": "pattern_card",
+  "schema_version": "1.1.0"
+}
