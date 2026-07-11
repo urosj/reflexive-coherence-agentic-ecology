@@ -15,6 +15,17 @@ These review records govern phase progression only. They are not lane reports
 or retained scientific evidence. The JSON checklist is an administrative
 review record rather than an `ae01-contract.schema.json` evidence envelope.
 
+Phase 2 gate reviews:
+
+- [P2-I1 CAL-PRE review](P2-I1-CAL-PRE-review.md) passes candidate-blind
+  calibration preregistration;
+- [P2-I1 CAL review](P2-I1-CAL-review.md) passes the retained matched-null
+  resolution freeze;
+- [P2-I1 D-020 bounded refresh](P2-I1-D020-bounded-refresh-review.md) closes
+  the bounded developmental-interpretation identity refresh; and
+- [P2-I1 REG review](P2-I1-REG-review.md) passes the retained registration
+  reconstruction while assigning unresolved causal facts to live execution.
+
 Reports use either:
 
 - `generated_projection`, containing generated machine facts only; or

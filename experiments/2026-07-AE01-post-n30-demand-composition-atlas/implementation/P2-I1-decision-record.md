@@ -2439,7 +2439,8 @@ Reopen `P2-I1-DEC-020` if:
 
 ## 24. `P2-I1-DEC-021` — Registration representation
 
-**Status:** accepted; source materialized, retained freeze and manifest pending
+**Status:** accepted; retained freeze and manifest materialized, REG-GATE
+passed
 
 **Question IDs:** REG-GATE representation and the deferred R3 contract-adequacy
 question
@@ -2515,7 +2516,7 @@ Reopen `P2-I1-DEC-021` if:
 
 ## 25. `P2-I1-DEC-022` — Realization-profile scope
 
-**Status:** accepted; source profile materialized, retained binding receipt pending
+**Status:** accepted; retained path-free binding receipt passed conformance
 
 **Question IDs:** REG-GATE realization identity and D-033/D-034 runtime-binding
 discipline
@@ -2582,7 +2583,7 @@ Reopen `P2-I1-DEC-022` if:
 
 ## 26. `P2-I1-DEC-023` — Baseline, reset, and isolation identity
 
-**Status:** accepted; baseline tooling materialized, 21 retained identities pending
+**Status:** accepted; all 21 retained W0 identities materialized and reconstructed
 
 **Question IDs:** REG-GATE state isolation, reset, retry, and contamination
 boundary
@@ -2665,7 +2666,8 @@ Reopen `P2-I1-DEC-023` if:
 
 ## 27. `P2-I1-DEC-024` — Control lifecycle and registration meaning
 
-**Status:** accepted; exact evidence-bound control map materialized, retained freeze pending
+**Status:** accepted; retained freeze resolves the exact evidence-bound
+registration lifecycle
 
 **Question IDs:** REG-GATE control applicability, planned evidence, and the
 deferred R3 `control_outcome` contract question

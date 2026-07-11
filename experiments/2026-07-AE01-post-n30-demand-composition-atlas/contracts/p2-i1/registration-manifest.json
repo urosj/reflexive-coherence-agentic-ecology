@@ -1,0 +1,805 @@
+{
+  "record": {
+    "artifact_set_size_bytes": 139881,
+    "artifacts": [
+      {
+        "artifact_id": "rcae-p2-i1-registration-profile-registry-v1",
+        "artifact_kind": "profile_registry",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "da539c1b5e63856e33a2bc0b61ac77e420084aafcb9f121f4896865a36ab578a",
+        "expected_output_digest": "2e6e4bbb874a6d9ff83f5b4ffd49d37ec693bc9a5bdab1f62757aa61fce1db6e",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_registration_profiles.json",
+        "expected_size_bytes": 6574,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-registration-policy-v1",
+        "artifact_kind": "p2_i1_registration_policy",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "3c90344a2a9fade5f234d481b213a449d610d2d45dbc6f7b9af3af42849551e4",
+        "expected_output_digest": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i1_registration_policy.json",
+        "expected_size_bytes": 23992,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.0.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-registered-realization-v1",
+        "artifact_kind": "realization_profile",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "52fe60b2db4086c6e0044feebb336cfa4b0c9bc73fdbfa81a778316335069004",
+        "expected_output_digest": "1d416919b038dc125601d23ca1425b39b1e560848b3da8582d986b75a3758a6d",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-realization-profile.json",
+        "expected_size_bytes": 2316,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-registration-claim-boundary-v1",
+        "artifact_kind": "claim_boundary",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "49c17a4b208cf42bb38f3f6b3ed8a53f45263496bd60fdb25669a59ad2f6b3c1",
+        "expected_output_digest": "f93d0d12e46073f382f7db31802ccda8c6271c3a7e9bf9ccce58cafca108fcd2",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/claim-boundary.json",
+        "expected_size_bytes": 3508,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-option-a-adapter-v1",
+        "artifact_kind": "constructed_mechanism",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "3d597b1a0559d1f323c4f5918458672ae896f740496403db19c8e0a41e818b1d",
+        "expected_output_digest": "cf4ce442f6103bb360bc9f72892c77e3450d567b0de5c5c3e662b2a8a7dde9ed",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/constructed-mechanism.json",
+        "expected_size_bytes": 3278,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-fixed-order-debt",
+        "artifact_kind": "debt_record",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "2c35c41bc4e642113096c42936a7560d58f7afa83f8641d8a3e265919c3ce21d",
+        "expected_output_digest": "2644f04968d74d31233297db58ac2d514c821713048880be5db611c92ba69777",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/fixed-order-debt.json",
+        "expected_size_bytes": 996,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-feedback-row-surface-v1",
+        "artifact_kind": "medium_surface",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "a04171eca021ff4bb855935651d722af4c74e26ece89c56d951c5b17dcbbc517",
+        "expected_output_digest": "002b53903f581f946fff01a831741011fa35a8ca24e50b3a0679a591f35d6bdc",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/medium-surface.json",
+        "expected_size_bytes": 5077,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-naturalization-debt",
+        "artifact_kind": "debt_record",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "c5e183bc7301807548a6eb452c1b4632764feb4c0b0242b73cb340662ecf19ad",
+        "expected_output_digest": "f7750fbb031f639439b7f7cfd97af991ae84b3801435a4b1e9aef1135433806c",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/naturalization-debt.json",
+        "expected_size_bytes": 1788,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-parent-context-debt",
+        "artifact_kind": "debt_record",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "c1824052d1f4e234946088142fdade7042b8c911de2440b2193ceb0728b56415",
+        "expected_output_digest": "70102c05a7c4d5cfbe2c34a13327b661dbae7f2f19951c94e1b491d6d60778ee",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/parent-context-debt.json",
+        "expected_size_bytes": 1027,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-participant-mediated-reader-debt",
+        "artifact_kind": "debt_record",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "c22ebad1582f23d1df0892ae479bda641b93862a503880561b8518a79afd086d",
+        "expected_output_digest": "b9f9e7ac72f65c9c368c7aa564d3d43806bd7ae1e3a1ea0c22fa90513df6954b",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/participant-mediated-reader-debt.json",
+        "expected_size_bytes": 1088,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-l01-registered-probe",
+        "artifact_kind": "pattern_card",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "11af6f0f366fdfc5ba2f5eaa3e1c1e7d1afe832c0a4938f70b3b20da6757162b",
+        "expected_output_digest": "ca457306d19d7624beec2ba2d4a34bf7a3471e02e73f94ddf19f54feab206f91",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-records/pattern-card.json",
+        "expected_size_bytes": 10055,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-inherited-control-verification",
+        "artifact_kind": "p2_i1_inherited_control_verification",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-inherited-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "4d291253167dd571d7337793081369907c3980366a19b07e08741b29ddd17e7d",
+        "expected_output_digest": "b57b6479df2e5128c17dffda60a7537385738a8bffdc3c6c9d5c1ffd3dbdaecb",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json",
+        "expected_size_bytes": 5415,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.0.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "ae01:runtime-receipt:5c1ea774e3cfc31e",
+        "artifact_kind": "runtime_binding_receipt",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-runtime-receipt-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "pygrc_runtime_with_rcae_producer",
+        "expected_file_sha256": "823dd0c4e17fa4c05e257fffb3cf454674433fc1c1ae98ad8ac8a2cf79cfc32a",
+        "expected_output_digest": "eac44b2d40f30dbaba44d2a46989ebff94fe7c9d6f263db269cc0947a4a3794c",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json",
+        "expected_size_bytes": 2212,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact construction bound the registered live realization",
+          "reference_id": "rcae-p2-i1-registered-realization-v1",
+          "status": "applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.1.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-baseline-identity-registry",
+        "artifact_kind": "p2_i1_baseline_identity_registry",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-baseline-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "pygrc_runtime_with_rcae_producer",
+        "expected_file_sha256": "b886ee3a1f27ef08e75ca375470cab9eceddbfa9bc5d31afcd4c50a6aac83ac4",
+        "expected_output_digest": "e412fb45b36dd074ac556381100490a4210b24080946593274147740e20d28cd",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json",
+        "expected_size_bytes": 22227,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [
+          101,
+          211,
+          307
+        ],
+        "realization_profile": {
+          "rationale": "Artifact construction bound the registered live realization",
+          "reference_id": "rcae-p2-i1-registered-realization-v1",
+          "status": "applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.0.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      },
+      {
+        "artifact_id": "rcae-p2-i1-registration-freeze-v1",
+        "artifact_kind": "p2_i1_registration_freeze",
+        "claim_dependency_refs": [],
+        "command_profile_ref": "rcae-p2-i1-command-freeze-v1",
+        "configuration_id": "rcae-p2-i1-registration-policy-v1",
+        "dependency_profile_ref": "rcae-p2-i1-dependencies-v1",
+        "environment_profile_ref": "rcae-p2-i1-environment-v1",
+        "evidence_use_tier": "registered_probe",
+        "execution_class": "artifact_inspection",
+        "expected_file_sha256": "5b3bc38d85190e753f4acedf2510132f6d13fca404834588e11b566a58ecb593",
+        "expected_output_digest": "50de49e01008f5ca3949d62283701b0e59eeac5079466c15fa54b09f6a17644b",
+        "expected_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json",
+        "expected_size_bytes": 50328,
+        "extensions": {},
+        "input_digests": {
+          "registration_policy": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e"
+        },
+        "last_verified_status": "passed",
+        "random_seeds": [],
+        "realization_profile": {
+          "rationale": "Artifact is inspected or derived without a live PyGRC transition",
+          "status": "not_applicable"
+        },
+        "resource_profile_ref": "rcae-p2-i1-resource-v1",
+        "retention_mode": "tracked_selected_evidence",
+        "schema_version": "1.0.0",
+        "size_review": {
+          "rationale": "individual artifact is below retention review threshold",
+          "status": "not_applicable"
+        },
+        "source_revisions": {
+          "grc": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+          "rcae": "6ca9391fff6daa82e3be4b42c11f431a961d35b8"
+        },
+        "verification_command_profile_ref": "rcae-p2-i1-command-digest-v1",
+        "working_directory": "."
+      }
+    ],
+    "experiment_id": "AE01",
+    "extensions": {},
+    "fully_resolved": true,
+    "manifest_id": "rcae-p2-i1-registration-manifest-v1",
+    "profile_registry_ref": "rcae-p2-i1-registration-profile-registry-v1",
+    "resolved_realization_profiles": [
+      {
+        "allowed_scheduling_operations": [
+          "p2_i1_runtime_preflight",
+          "fixture_construction",
+          "route_aspect_validation",
+          "snapshot_round_trip",
+          "packet_queue_step",
+          "feedback_surface_emission",
+          "feedback_conditioned_packet_production"
+        ],
+        "availability": true,
+        "claim_boundary_ref": "rcae-p2-i1-registration-claim-boundary-v1",
+        "conformance_procedure": "Import installed pygrc==0.1, verify declared public capabilities and the concrete callable methods behind all seven operation classes, construct each registered W0 fixture in a fresh worker, validate route aspects, snapshot state, and require empty queue and surface logs without scheduling a candidate operation",
+        "debt_refs": [
+          "rcae-p2-i1-naturalization-debt",
+          "rcae-p2-i1-participant-mediated-reader-debt"
+        ],
+        "enabled": true,
+        "evidence_role": "constructed_ecology_mechanism",
+        "extensions": {},
+        "mechanism_contract_id": "rcae-p2-i1-option-a-adapter-v1",
+        "policy_ids": [
+          "P2-I1-DEC-001",
+          "P2-I1-DEC-020",
+          "P2-I1-DEC-022",
+          "P2-I1-DEC-023",
+          "AE01-CTRL-15",
+          "AE01-CTRL-17"
+        ],
+        "producer_transition_discipline": "No availability-driven substitution is allowed; the registered RCAE adapter remains active even if native functionality later appears, and native transition requires a new profile, cycle freeze, and rerun",
+        "profile_id": "rcae-p2-i1-registered-realization-v1",
+        "profile_version": "1.0.0",
+        "realization_class": "rcae_constructed",
+        "replay_procedure": "Recreate the locally configured environment, bind the exact PyGRC identity without recording its path, rebuild all 21 W0 baseline entries in fresh workers, and compare canonical registry and receipt digests",
+        "required_capabilities": [
+          "pygrc.core",
+          "pygrc.models"
+        ],
+        "required_pygrc_identity": "pygrc==0.1",
+        "schema_versions": {
+          "artifact": "1.0.0",
+          "input": "1.0.0",
+          "output": "1.0.0",
+          "state": "1.0.0"
+        },
+        "supported": true,
+        "transfer_scope": "P2-I1 registered Option A binding and operation classes only; scientific behavior and execution authorization are excluded",
+        "validated": true
+      }
+    ],
+    "resolved_shared_profiles": [
+      {
+        "profile_id": "rcae-p2-i1-command-baseline-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-baseline-registry",
+            "--realization-profile",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-realization-profile.json",
+            "--graph-root",
+            "LOCAL_GRAPH_CHECKOUT",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-digest-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+            "digest",
+            "--input",
+            "LOCAL_ARTIFACT"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-freeze-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-registration-freeze",
+            "--baseline-registry",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json",
+            "--inherited-verification",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json",
+            "--runtime-receipt",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-inherited-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-inherited-verification",
+            "--graph-root",
+            "LOCAL_GRAPH_CHECKOUT",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-manifest-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-registration-manifest",
+            "--baseline-registry",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/baseline-identity-registry.json",
+            "--inherited-verification",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/inherited-control-verification.json",
+            "--runtime-receipt",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json",
+            "--registration-freeze",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-freeze.json",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-manifest.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-command-runtime-receipt-v1",
+        "profile_type": "command",
+        "profile_version": "1.0.0",
+        "values": {
+          "arguments": [
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1_registration.py",
+            "build-runtime-receipt",
+            "--graph-root",
+            "LOCAL_GRAPH_CHECKOUT",
+            "--output",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/registration-runtime-binding-receipt.json"
+          ],
+          "command": ".venv/bin/python",
+          "working_directory": "."
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-dependencies-v1",
+        "profile_type": "dependency",
+        "profile_version": "1.0.0",
+        "values": {
+          "dependencies": [
+            {
+              "name": "Python standard library",
+              "source": "Python runtime",
+              "version_or_revision": ">=3.11"
+            },
+            {
+              "name": "jsonschema",
+              "source": "Python Package Index",
+              "version_or_revision": "4.26.0"
+            },
+            {
+              "name": "pygrc",
+              "source": "locally configured PyGRC distribution",
+              "version_or_revision": "0.1"
+            }
+          ]
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-environment-v1",
+        "profile_type": "environment",
+        "profile_version": "1.0.0",
+        "values": {
+          "locale_policy": "UTF-8 input and ASCII-safe canonical JSON output",
+          "operating_system_scope": "POSIX-compatible or equivalent Python subprocess and filesystem semantics",
+          "python_version": ">=3.11",
+          "timezone_policy": "No wall-clock or timezone value enters canonical records"
+        }
+      },
+      {
+        "profile_id": "rcae-p2-i1-resource-v1",
+        "profile_type": "resource",
+        "profile_version": "1.0.0",
+        "values": {
+          "hardware_class": "single local CPU; no accelerator required",
+          "max_disk_mb": 256,
+          "max_memory_mb": 512,
+          "max_runtime_seconds": 120
+        }
+      }
+    ],
+    "retention_review": {
+      "rationale": "artifact set is below retention review threshold",
+      "status": "not_applicable"
+    }
+  },
+  "record_type": "artifact_manifest",
+  "schema_version": "1.1.0"
+}

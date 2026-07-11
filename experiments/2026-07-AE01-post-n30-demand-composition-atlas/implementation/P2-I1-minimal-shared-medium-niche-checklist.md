@@ -1,14 +1,15 @@
 # P2-I1 Minimal Shared-Medium Niche Formation Checklist
 
-**Status:** active provisional lane checklist; calibration completed, no registration or candidate execution completed
+**Status:** active provisional lane checklist; registration completed, no
+candidate execution completed
 
 **Iteration:** `P2-I1`
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C00` — registration preparation
+**Current probe cycle:** `P2-I1-C01` — execution-freeze preparation
 
-**Current local gate:** `P2-I1-REG-GATE`
+**Current local gate:** `P2-I1-EXEC-FREEZE`
 
 **Acceptance ceiling:** `AE01-C2`; no lane result assigned
 
@@ -79,7 +80,7 @@ Rules:
 | `P2-I1-THEORY-GATE` | L01 meaning, distinctions, open questions, and decision timing accepted | Passed | Accepted brief and owner review disposition dated 2026-07-10 |
 | `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Passed | v2 identity refresh passed; v1 remains retained history |
 | `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Passed | D-020 regeneration is byte-identical to retained calibration |
-| `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Pending | Reviewed bundle tying every registered surface together |
+| `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Passed | Retained bundle and owner-accepted REG-GATE review dated 2026-07-11 |
 | `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | Pending | Cycle-scoped freeze with candidate outcomes absent |
 | `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Pending | Cell artifacts, receipts, control outcomes, reconstruction |
 | `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Pending | Terminal record, report, retained manifest, R3 handoff |
@@ -742,8 +743,10 @@ private_state_only_control
 - [x] If randomized, freeze the order-randomization seed before execution; if
   fixed, record order effects as an explicit control or debt.
   Evidence: [fixed-order debt](../contracts/p2-i1/registration-records/fixed-order-debt.json).
-- [ ] Freeze the baseline initial-state digest, medium reset procedure, and
-  expected reset-state digest.
+- [x] Freeze one baseline identity per exact cell/seed configuration, the
+  fresh-worker reset procedure, and the expected W0 queue/surface state.
+  Evidence: [baseline identity registry](../contracts/p2-i1/baseline-identity-registry.json)
+  and [registration policy](../configs/p2_i1_registration_policy.json).
 - [ ] Every independent cell/seed starts from that baseline unless cumulative
   history is an explicit registered feature.
 - [ ] Cross-cell and cross-seed contamination audits prove no trace from one
@@ -800,17 +803,25 @@ private_state_only_control
 
 Local artifact-validity rules:
 
-- [ ] Every retained artifact's SHA-256 matches its file contents and manifest.
+- [x] Every manifest-selected artifact's SHA-256 matches its file contents and
+  resolved manifest declaration. Evidence:
+  [registration manifest](../contracts/p2-i1/registration-manifest.json) and
+  [REG-GATE review](../reports/P2-I1-REG-review.md).
 - [ ] Positive-evidence rows identify source-current inputs and their digests.
 - [x] Portable registration inputs and existing-schema records contain no
   machine-local or absolute paths; the derived freeze revalidates this rule.
   Evidence: [registration tooling](../scripts/p2_i1_registration.py).
-- [ ] Canonical payload digest and file-content SHA-256 are both retained where
-  the record contract provides them.
+- [x] Canonical payload digest and file-content SHA-256 are both retained where
+  the record contract provides them; existing-schema receipt and manifest
+  records retain their schema IDs plus semantic and exact-file digests rather
+  than adding out-of-schema fields. Evidence:
+  [REG-GATE review](../reports/P2-I1-REG-review.md).
 - [ ] `derived_report_only=true` artifacts cannot support a positive boundary
   rung.
-- [ ] Reconstruction regenerates canonical machine content, not merely a
-  semantically similar authored report.
+- [x] Reconstruction regenerates canonical machine content, not merely a
+  semantically similar authored report. The three direct records and the
+  same-target freeze/manifest reconstruction compare byte-for-byte. Evidence:
+  [REG-GATE review](../reports/P2-I1-REG-review.md).
 
 ### 8.5 Registration evidence bundle
 
@@ -820,27 +831,35 @@ Local artifact-validity rules:
   `control_outcome` records to R3 unless concrete friction satisfies the
   reopening conditions. Evidence:
   [`P2-I1-DEC-021`](P2-I1-decision-record.md).
-- [ ] Bundle resolves the brief, hypothesis, lane registry, execution policy,
+- [x] Bundle resolves the brief, hypothesis, lane registry, execution policy,
   metric sheet, calibration, pattern card, medium surface, realization profile,
   constructions, controls, claims, debts, profiles, and expected manifest.
+  Evidence: [registration freeze](../contracts/p2-i1/registration-freeze.json)
+  and [registration manifest](../contracts/p2-i1/registration-manifest.json).
 - [x] Every common control has an explicit applicability disposition and
-  resolution stage; review of the final retained bundle remains pending.
-  Evidence: [registration policy](../configs/p2_i1_registration_policy.json).
+  resolution stage; the retained freeze derives its lifecycle only from exact
+  evidence bindings. Evidence:
+  [registration policy](../configs/p2_i1_registration_policy.json) and
+  [registration freeze](../contracts/p2-i1/registration-freeze.json).
 - [x] Every L01 control has a planned outcome artifact or the accepted D-025
   inapplicability. Evidence:
   [registration policy](../configs/p2_i1_registration_policy.json).
-- [ ] Every inherited control records source artifact, source digest, inherited
+- [x] Every inherited control records source artifact, source digest, inherited
   role, identical-scope verification, `must_not_consume_as`, and whether new
-  lane execution is required.
+  lane execution is required. Evidence:
+  [inherited control verification](../contracts/p2-i1/inherited-control-verification.json).
 - [x] Inheritance supplies only method, schema, or fixed runtime-invariant
   evidence unless identical carrier, mechanism, intervention, and claim scope
   are demonstrated; it never substitutes for lane-specific causal evidence.
   Evidence: [registration tooling](../scripts/p2_i1_registration.py).
-- [ ] The bundle contains no candidate outcome.
-- [ ] Independent review confirms `validate-phase1` success alone was not
-  treated as registration.
-- [ ] Registration review records unresolved questions and why none blocks the
-  current gate.
+- [x] The bundle contains no candidate outcome. The retained freeze records
+  `candidate_outcomes_absent=true`, candidate execution closed, and no positive
+  or negative lane evidence. Evidence:
+  [registration freeze](../contracts/p2-i1/registration-freeze.json).
+- [x] Independent review confirms `validate-phase1` success alone was not
+  treated as registration. Evidence: [REG-GATE review](../reports/P2-I1-REG-review.md).
+- [x] Registration review records unresolved execution questions and why none
+  blocks registration. Evidence: [REG-GATE review](../reports/P2-I1-REG-review.md).
 
 Focused source-safety corrections required by the REG-GATE implementation
 review:
@@ -867,11 +886,10 @@ review:
 
 ### 8.6 REG-GATE implementation record and interpretation — 2026-07-11
 
-**Record status:** source materialization complete; retained post-anchor
-registration artifacts, final reconstruction, and REG-GATE disposition remain
-pending. Everything described here has `registration-only` or infrastructure
-effect. It is not candidate execution, positive or negative L01 evidence, or a
-niche result.
+**Record status:** retained post-anchor bundle complete, exactly reconstructed,
+and accepted at REG-GATE. Everything described here has `registration-only`
+or infrastructure effect. It is not candidate execution, positive or negative
+L01 evidence, or a niche result.
 
 #### 8.6.1 What was implemented
 
@@ -914,7 +932,7 @@ frozen CAL-PRE/CAL identities
 The manifest is deliberately last: it may digest the freeze, while the freeze
 can only declare the expected manifest path. This avoids a recursive identity.
 
-The post-anchor generation step will retain five machine artifacts under
+The post-anchor generation step retained five machine artifacts under
 `contracts/p2-i1/`:
 
 | Artifact | Registration role |
@@ -950,10 +968,11 @@ P --reader_b---------------> B
 - The carrier-timescale contrast changes reader packet amount from `0.125` to
   `0.25`; it does not silently alter W0 node coherence.
 
-The candidate-free W0 preview constructed all `7 cells x 3 seeds = 21`
+The retained candidate-free W0 registry constructed all
+`7 cells x 3 seeds = 21`
 configurations in separate worker processes. It produced:
 
-| Geometric identity observation | Preview result | Meaning |
+| Geometric identity observation | Retained result | Meaning |
 | --- | ---: | --- |
 | Explicit cell/seed entries | `21` | No legitimate configuration was collapsed |
 | Composite baseline digests | `21` unique | Cell configuration remains part of identity even when native state coincides |
@@ -1030,7 +1049,7 @@ the P2/M2 evidence ceiling only; fresh L01 execution remains mandatory.
 
 #### 8.6.4 Control and claim result at registration time
 
-The preview freeze resolves `13` outcome-independent legs. Seven controls are
+The retained freeze resolves `13` outcome-independent legs. Seven controls are
 fully resolved because all their exact evidence bindings validate:
 
 ```text
@@ -1068,37 +1087,43 @@ agentic ecology success
 
 #### 8.6.5 Reproducibility, safety, and remaining work
 
-Source review exercised the inherited verification, binding receipt, all 21
-baselines, and derived freeze through explicit dirty-preview mode. Every such
-artifact records a preview-specific kind, `source_worktree_clean=false`,
-`retention_eligible=false`, and `preview_only=true`. The manifest has no dirty
-preview mode and rejects these artifacts.
+The five artifacts were generated from clean source anchor `6ca9391`, record
+`retention_eligible=true` and `preview_only=false` where those fields are
+provided, and retain no machine-local path. The graph checkout remained clean
+at verified revision `1f42cb1`.
 
-The source implementation currently passes all `75` tests, Phase 1 validation,
-P2-I1 config validation, registration-policy validation, duplicate-key checks,
-portable-path checks, and graph read-only checks. These are source-level facts,
-not the final retained reconstruction record.
+Independent regeneration reproduced the inherited verification, runtime
+receipt, and baseline registry byte-for-byte. Because the freeze deliberately
+digests portable bundle paths, an alternate-output-directory freeze correctly
+changes those paths and its canonical digest. Regeneration at the declared
+experiment-relative paths reproduced both the freeze and manifest
+byte-for-byte. The retained semantic and exact-file digests are recorded in the
+[REG-GATE review](../reports/P2-I1-REG-review.md).
 
-Before Section 8 and `P2-I1-REG-GATE` can close:
+The retained implementation passes all `75` tests, Phase 1 validation, P2-I1
+config validation, registration-policy validation, portable-path checks, exact
+reconstruction, and graph read-only checks. The manifest resolves `15`
+selected artifacts totaling `139881` bytes; the freeze digests `32` bundle
+files. Both imported measurement and realization identities match exactly.
+The freeze retains its pre-manifest
+`reg_gate_disposition=pending_review_and_manifest`; the non-recursive manifest
+and this review close those later administrative facts without rewriting the
+frozen record.
 
-1. commit the reviewed source materialization as the clean source anchor;
-2. regenerate the inherited verification, binding receipt, 21-entry baseline
-   registry, registration freeze, and manifest without preview mode;
-3. verify their canonical and file digests and reconstruct the final bundle;
-4. complete the still-open independent-medium and retained-artifact checks in
-   Sections 8.1, 8.4, and 8.5;
-5. record the bounded REG-GATE review, unresolved questions, and disposition;
-   and
-6. keep candidate execution closed until a separate exact-cycle
-   `P2-I1-EXEC-FREEZE` is retained after REG-GATE passes.
+The remaining Section 8 checks concern either live causal execution or the
+owner's bounded gate disposition. The independent-medium, ablation,
+branch-restoration, exposure-comparability, support/budget, and carryover
+questions remain explicit pending-execution obligations rather than being
+promoted into registration facts. Candidate execution stays closed until a
+separate exact-cycle `P2-I1-EXEC-FREEZE` is retained after REG-GATE passes.
 
 Exit gate `P2-I1-REG-GATE`:
 
-- [ ] Registration bundle is explicit, internally consistent, and portable.
-- [ ] Measurement and realization digest equality verifies calibration and
+- [x] Registration bundle is explicit, internally consistent, and portable.
+- [x] Measurement and realization digest equality verifies calibration and
   registration identities one-to-one.
-- [ ] Candidate execution configuration cannot drift without a new cycle.
-- [ ] No registration fact is promoted into positive lane evidence.
+- [x] Candidate execution configuration cannot drift without a new cycle.
+- [x] No registration fact is promoted into positive lane evidence.
 
 ## 9. Frozen comparison-cell readiness
 
@@ -1240,10 +1265,21 @@ Applicability rules:
   `P2-I1-CAL-GATE` passed.
 - [x] D-020 bounded v2 refresh completed without changing calibration
   realization or artifacts.
-- [ ] Cycle closed as design-only and handed to `P2-I1-C01`.
+- [x] Cycle closed as design-only and handed to `P2-I1-C01`. Evidence:
+  [REG-GATE review](../reports/P2-I1-REG-review.md).
 
-The first candidate-execution cycle will be `P2-I1-C01` unless calibration or
-registration evidence requires a design-only intermediate cycle.
+### `P2-I1-C01` — candidate-execution freeze preparation
+
+**Status:** active; no candidate operation authorized
+
+**Evidence effect:** none; pre-execution materialization only
+
+- [x] Predecessor cycle is `P2-I1-C00`.
+- [x] `P2-I1-REG-GATE` passed without resolving live causal outcomes.
+- [ ] Exact executable cell configurations and expected artifact contracts are
+  materialized.
+- [ ] One cycle-scoped freeze proves candidate outcomes were absent at freeze.
+- [ ] `P2-I1-EXEC-FREEZE` passed.
 
 ### Candidate-execution freeze template
 
@@ -1493,7 +1529,8 @@ Rules:
 
 | Cycle | Purpose | Frozen status | Execution status | Result | Successor reason |
 | --- | --- | --- | --- | --- | --- |
-| `P2-I1-C00` | Theory review and calibration preregistration | Not frozen for candidate execution | Theory gate passed; design continues | No scientific result | Complete CAL-PRE before cycle handoff |
+| `P2-I1-C00` | Theory, calibration, and registration preparation | Design-only; closed | REG-GATE passed; no candidate execution | Registration-only bundle; no scientific result | Handed exact probe boundary to `P2-I1-C01` |
+| `P2-I1-C01` | First exact candidate-execution cycle | Freeze preparation active | Not authorized or executed | None | Materialize exact cells and pass EXEC-FREEZE |
 
 Completed and superseded cycles remain in this table. Their records and
 artifacts are never replaced by the successor cycle.
@@ -1502,7 +1539,11 @@ artifacts are never replaced by the successor cycle.
 
 | Evidence ID | Cycle | Artifact role | Path or manifest ref | Reconstruction | Evidential use | Evidence effect | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | — | — | — | — | — | — | Empty; no P2-I1 evidence retained |
+| `P2-I1-REG-INHERITED` | `P2-I1-C00` | Inherited-source verification | `registration-manifest.json` | Exact | Method and scope boundary | `registration-only` | Retained |
+| `P2-I1-REG-RUNTIME` | `P2-I1-C00` | Runtime binding receipt | `registration-manifest.json` | Exact | Native operation conformance | `registration-only` | Retained |
+| `P2-I1-REG-BASELINE` | `P2-I1-C00` | W0 baseline registry | `registration-manifest.json` | Exact | Initial geometry and isolation identity | `registration-only` | Retained |
+| `P2-I1-REG-FREEZE` | `P2-I1-C00` | Registration freeze | `registration-manifest.json` | Exact at declared paths | Control lifecycle and claim closure | `registration-only` | Retained |
+| `P2-I1-REG-MANIFEST` | `P2-I1-C00` | Resolved manifest | `rcae-p2-i1-registration-manifest-v1` | Exact at declared paths | Retention and reconstruction index | `reconstruction` | Retained |
 
 Allowed evidence effects are `method`, `resolution-only`, `registration-only`,
 `positive`, `negative`, `control`, `reconstruction`, and `interpretation`.
@@ -1534,7 +1575,7 @@ without tuning its conclusion and decide:
    matched-null inputs; pass `P2-I1-CAL-PRE-GATE`.
 4. [x] Run candidate-blind calibration and pass `P2-I1-CAL-GATE`.
 5. [x] Complete the D-020 bounded v2 identity/calibration refresh.
-6. [ ] Materialize the exact L01 registration evidence bundle and pass
+6. [x] Materialize the exact L01 registration evidence bundle and pass
    `P2-I1-REG-GATE` before any candidate execution.
 7. [ ] Freeze one exact candidate cycle and pass `P2-I1-EXEC-FREEZE` before
    its first operation.

@@ -1,0 +1,106 @@
+{
+  "artifact_kind": "p2_i1_inherited_control_verification",
+  "candidate_artifacts_consumed": false,
+  "candidate_execution_performed": false,
+  "canonical_payload_digest": "a0813aef3dd7ecd05adf37410732ec1100100e80174efbb1a731f88998fe2d6d",
+  "cycle_id": "P2-I1-C00",
+  "evidence_effect": "registration_only_inherited_boundary",
+  "graph_repository_write_observed": false,
+  "graph_source_revision": "1f42cb1d1e591159afc2ca54cc656b574d41c8d3",
+  "graph_source_worktree_clean": true,
+  "lane_id": "AE01-L01",
+  "lane_specific_causal_evidence_inherited": false,
+  "new_lane_execution_required": true,
+  "preview_only": false,
+  "retention_eligible": true,
+  "schema_version": "1.0.0",
+  "source_count": 5,
+  "source_revision": "6ca9391fff6daa82e3be4b42c11f431a961d35b8",
+  "source_worktree_clean": true,
+  "sources": [
+    {
+      "file_sha256": "842ba57e994bbb3e219acff741afd85c87d102bea5eec6d134f3b84f2445cb52",
+      "identical_scope_verification": {
+        "carrier": false,
+        "claim_scope": false,
+        "identical_scope": false,
+        "intervention": false,
+        "mechanism": false,
+        "rationale": "P2-I1 uses a fresh fixture, intervention matrix, live realization, and ecology-side claim boundary"
+      },
+      "inherited_role": "claim-clean bridge, debt, and probe-contract handoff",
+      "must_not_consume_as": "executed ecology runtime, native ecology, agency, life, or Phase 8 completion",
+      "new_lane_execution_required": true,
+      "output_digest": "fa21662f0a69d582bfe574311110f2610a21e6e4e352991823ce47280e0e8ff5",
+      "reference_id": "n29_closeout_and_ecology_handoff_i18",
+      "source_path": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_closeout_and_ecology_handoff_i18.json"
+    },
+    {
+      "file_sha256": "1a810918df2923b5f5fe475ec9d0cc1f843fe614640b8149ea25173aab985a26",
+      "identical_scope_verification": {
+        "carrier": false,
+        "claim_scope": false,
+        "identical_scope": false,
+        "intervention": false,
+        "mechanism": false,
+        "rationale": "P2-I1 uses a fresh fixture, intervention matrix, live realization, and ecology-side claim boundary"
+      },
+      "inherited_role": "prototype component classification and explicit producer/composition debt",
+      "must_not_consume_as": "executed P2-I1 composition, native support, or ecology success",
+      "new_lane_execution_required": true,
+      "output_digest": "e139dd61fcd2b0998282033e5fe1a041891291d5db036982063e510be33f7cd2",
+      "reference_id": "n29_prototype_atlas_i15",
+      "source_path": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_prototype_atlas_classification_i15.json"
+    },
+    {
+      "file_sha256": "bf29695841f87fc40b2464114129a19e8616c2f8e6efa49a09a472ed65cca264",
+      "identical_scope_verification": {
+        "carrier": false,
+        "claim_scope": false,
+        "identical_scope": false,
+        "intervention": false,
+        "mechanism": false,
+        "rationale": "P2-I1 uses a fresh fixture, intervention matrix, live realization, and ecology-side claim boundary"
+      },
+      "inherited_role": "replay/control method and bounded artifact-level medium candidate",
+      "must_not_consume_as": "fresh P2-I1 runtime, final N30 closeout, or native shared-medium organization",
+      "new_lane_execution_required": true,
+      "output_digest": "46f7eba93fa206355f4dc3eb5b2ae8e70dd1126eba975030a2e2fc15f1603fec",
+      "reference_id": "n30_replay_controls_i7",
+      "source_path": "grc:experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_replay_controls_i7.json"
+    },
+    {
+      "file_sha256": "ade32c848cbffa4d5757bfce50eaadb72a63a8252a8ba09e5fd562c6c100718c",
+      "identical_scope_verification": {
+        "carrier": false,
+        "claim_scope": false,
+        "identical_scope": false,
+        "intervention": false,
+        "mechanism": false,
+        "rationale": "P2-I1 uses a fresh fixture, intervention matrix, live realization, and ecology-side claim boundary"
+      },
+      "inherited_role": "P2/M2 trace-mediated eligibility evidence and control-pattern handoff",
+      "must_not_consume_as": "niche formation, coordination, agency, parent-basin modulation, or executed agentic ecology",
+      "new_lane_execution_required": true,
+      "output_digest": "7971163b1d7bd4027f5375270cfb2445cfe4698a8869b28e26f9273d0a5b5af6",
+      "reference_id": "n30_closeout_and_spiral_handoff_i8",
+      "source_path": "grc:experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_closeout_and_spiral_handoff_i8.json"
+    },
+    {
+      "file_sha256": "8fa69faf1631256fc1ef116715ee51387b578cc6d053df9ed3e51fdfcc831bb4",
+      "identical_scope_verification": {
+        "carrier": false,
+        "claim_scope": false,
+        "identical_scope": false,
+        "intervention": false,
+        "mechanism": false,
+        "rationale": "P2-I1 uses a fresh fixture, intervention matrix, live realization, and ecology-side claim boundary"
+      },
+      "inherited_role": "current cross-project spiral direction and method",
+      "must_not_consume_as": "runtime evidence, fixed N31 selection, or a positive P2-I1 result",
+      "new_lane_execution_required": true,
+      "reference_id": "n30_plus_shared_medium_ecology_handoff",
+      "source_path": "grc:experiments/N30_plus_LGRC_SharedMediumEcologyHandoff.md"
+    }
+  ]
+}

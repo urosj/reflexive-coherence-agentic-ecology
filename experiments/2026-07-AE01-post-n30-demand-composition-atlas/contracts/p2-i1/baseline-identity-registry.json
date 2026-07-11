@@ -1,0 +1,419 @@
+{
+  "artifact_kind": "p2_i1_baseline_identity_registry",
+  "candidate_operations_executed": false,
+  "candidate_outcomes_absent": true,
+  "canonical_payload_digest": "a2fbd2b8ac86cc349e693b1665a420c39d8545fdac7dde540d97f8436f37464f",
+  "cycle_id": "P2-I1-C00",
+  "entries": [
+    {
+      "cell_configuration_digest": "43bb7b2fdade8020bb6624e35ed010b84dd56d4e1b9f952ff4dd93319635048e",
+      "cell_id": "reference",
+      "expected_composite_baseline_digest": "8b580523d8716e4c07b56b580e683283f1b39ca78310f88917d59fcd2bf9a2b7",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 0.96875,
+        "W": 1.03125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "588da4afdfd813341027cb1a13df5fa45dc9caaf7562a5c64d451335c9f096fd"
+    },
+    {
+      "cell_configuration_digest": "43bb7b2fdade8020bb6624e35ed010b84dd56d4e1b9f952ff4dd93319635048e",
+      "cell_id": "reference",
+      "expected_composite_baseline_digest": "bb3ddcf60871e83d10aa5fdaf27fef59c4a8e1a89247ff79c596be0c1beba2b5",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.0,
+        "W": 1.0
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "8bc1f0e3b2f5152e2496da48d4443077505d012e19451f336fd88accd7f60b92"
+    },
+    {
+      "cell_configuration_digest": "43bb7b2fdade8020bb6624e35ed010b84dd56d4e1b9f952ff4dd93319635048e",
+      "cell_id": "reference",
+      "expected_composite_baseline_digest": "6128f7729b46a65c5813f8157a40f8b47420ecdeeac02660d00563f35cdf3a33",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.03125,
+        "W": 0.96875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "bfcfe5fb9e318465e58059cef7dd7f81f93f005fab467cd941d5d39bce70e9fe"
+    },
+    {
+      "cell_configuration_digest": "de3c6c949deac7379ee02292d99576d35c166001442890b4a7f4bf5fa5de25c6",
+      "cell_id": "candidate-conditioning",
+      "expected_composite_baseline_digest": "d6ca652826478dbee5f9ff7d477f7efe28cd953539acc02813260763841d99a4",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 0.96875,
+        "W": 1.03125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "588da4afdfd813341027cb1a13df5fa45dc9caaf7562a5c64d451335c9f096fd"
+    },
+    {
+      "cell_configuration_digest": "de3c6c949deac7379ee02292d99576d35c166001442890b4a7f4bf5fa5de25c6",
+      "cell_id": "candidate-conditioning",
+      "expected_composite_baseline_digest": "46d1006f72ef1979e02201d4e96fb306e6fbf84b99ea0a175782bbfa949744d1",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.0,
+        "W": 1.0
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "8bc1f0e3b2f5152e2496da48d4443077505d012e19451f336fd88accd7f60b92"
+    },
+    {
+      "cell_configuration_digest": "de3c6c949deac7379ee02292d99576d35c166001442890b4a7f4bf5fa5de25c6",
+      "cell_id": "candidate-conditioning",
+      "expected_composite_baseline_digest": "e23e19ebcdd6733d16df7bb66fc53badc61d5776a052d4a27ea567dfadabb1b1",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.03125,
+        "W": 0.96875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "bfcfe5fb9e318465e58059cef7dd7f81f93f005fab467cd941d5d39bce70e9fe"
+    },
+    {
+      "cell_configuration_digest": "da4f0e93eec79fb47de8dbd21fe2860b01f72de83d5cd899b62531b91e03769b",
+      "cell_id": "medium-freeze-withdrawal",
+      "expected_composite_baseline_digest": "52e571584516b7dac47474b67661e7dd89a8a87ca88ed987b3b2a71fb8bcc329",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 0.96875,
+        "W": 1.03125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "588da4afdfd813341027cb1a13df5fa45dc9caaf7562a5c64d451335c9f096fd"
+    },
+    {
+      "cell_configuration_digest": "da4f0e93eec79fb47de8dbd21fe2860b01f72de83d5cd899b62531b91e03769b",
+      "cell_id": "medium-freeze-withdrawal",
+      "expected_composite_baseline_digest": "5908461d16909d4de637799b78e3f4829dc8bd1e14e4c3db2b10c7f6bb97c8be",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.0,
+        "W": 1.0
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "8bc1f0e3b2f5152e2496da48d4443077505d012e19451f336fd88accd7f60b92"
+    },
+    {
+      "cell_configuration_digest": "da4f0e93eec79fb47de8dbd21fe2860b01f72de83d5cd899b62531b91e03769b",
+      "cell_id": "medium-freeze-withdrawal",
+      "expected_composite_baseline_digest": "c99c53cb8df183a97c4a7570bb579eeae052ca0786304a406d5f51d8f2ac590d",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.03125,
+        "W": 0.96875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "bfcfe5fb9e318465e58059cef7dd7f81f93f005fab467cd941d5d39bce70e9fe"
+    },
+    {
+      "cell_configuration_digest": "71d76e4ea82b5df932867977fae2a86364ca11215bb644a4e27fba08402823d9",
+      "cell_id": "trace-shuffle",
+      "expected_composite_baseline_digest": "7f8bf3351d60b95bfb8a450dbc5c35792d69b44994a5344c58bf62fd63a6b120",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 0.96875,
+        "W": 1.03125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "588da4afdfd813341027cb1a13df5fa45dc9caaf7562a5c64d451335c9f096fd"
+    },
+    {
+      "cell_configuration_digest": "71d76e4ea82b5df932867977fae2a86364ca11215bb644a4e27fba08402823d9",
+      "cell_id": "trace-shuffle",
+      "expected_composite_baseline_digest": "376b0a76bbb7b37c3bcb35ceafe25b9afde447570858afcf4c503d59b46de62f",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.0,
+        "W": 1.0
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "8bc1f0e3b2f5152e2496da48d4443077505d012e19451f336fd88accd7f60b92"
+    },
+    {
+      "cell_configuration_digest": "71d76e4ea82b5df932867977fae2a86364ca11215bb644a4e27fba08402823d9",
+      "cell_id": "trace-shuffle",
+      "expected_composite_baseline_digest": "5acf8a2a0c6332e541eda3e6134f8cc5e0f4de4c98603c74d86ab044a8f7f6bf",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.03125,
+        "W": 0.96875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "bfcfe5fb9e318465e58059cef7dd7f81f93f005fab467cd941d5d39bce70e9fe"
+    },
+    {
+      "cell_configuration_digest": "769316876d7d03d3757e9041ab543da56ab0733a9d73e8d5a858215e4b62ed82",
+      "cell_id": "parent-context-contrast",
+      "expected_composite_baseline_digest": "0cd791aeeefa7827e446c1b93385f4367a0533804a6daf69cd6368f23efdac84",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.25,
+        "B": 0.25,
+        "P": 0.96875,
+        "W": 0.53125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "8a9fad4c15ec88ccc569d3b38110233b86e357d05477039dabc5b2ef5104552d"
+    },
+    {
+      "cell_configuration_digest": "769316876d7d03d3757e9041ab543da56ab0733a9d73e8d5a858215e4b62ed82",
+      "cell_id": "parent-context-contrast",
+      "expected_composite_baseline_digest": "c93e71ce4181200d724a6846129ecc8730e3caea97300b3f3bdfa0ff475c5d2a",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.25,
+        "B": 0.25,
+        "P": 1.0,
+        "W": 0.5
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "279847ea4ec4634972646347f0e846a7a1f5e9343c298d9e1ef4a5a29f737b57"
+    },
+    {
+      "cell_configuration_digest": "769316876d7d03d3757e9041ab543da56ab0733a9d73e8d5a858215e4b62ed82",
+      "cell_id": "parent-context-contrast",
+      "expected_composite_baseline_digest": "23866f84075efd748b4e33cc83a95dcebf6d4585f84c89ebbc5f6aba61d5373e",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.25,
+        "B": 0.25,
+        "P": 1.03125,
+        "W": 0.46875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "407bc5814ede68f86dd00130702fb77f9ffa074f6d834b4c7da579c7be5957ae"
+    },
+    {
+      "cell_configuration_digest": "2e8dd57cca4ec79630adf8e191e15873d23115c1b7c8715110f66bc0b8280c8b",
+      "cell_id": "susceptibility-inversion",
+      "expected_composite_baseline_digest": "eb7f907ef4ccc63af18cf737266f95a8a86f498ae0d6230bb36bd8c6a100f7d5",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 0.96875,
+        "W": 1.03125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "588da4afdfd813341027cb1a13df5fa45dc9caaf7562a5c64d451335c9f096fd"
+    },
+    {
+      "cell_configuration_digest": "2e8dd57cca4ec79630adf8e191e15873d23115c1b7c8715110f66bc0b8280c8b",
+      "cell_id": "susceptibility-inversion",
+      "expected_composite_baseline_digest": "a4b42fbe08a40fb112b797959df6d8b847973e8d408e20e2d5bcd67db76faca1",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.0,
+        "W": 1.0
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "8bc1f0e3b2f5152e2496da48d4443077505d012e19451f336fd88accd7f60b92"
+    },
+    {
+      "cell_configuration_digest": "2e8dd57cca4ec79630adf8e191e15873d23115c1b7c8715110f66bc0b8280c8b",
+      "cell_id": "susceptibility-inversion",
+      "expected_composite_baseline_digest": "b4c12df533bba3619c7fe7ded01be74048280c71b5aa3c399a3e4dca183f9a10",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.125,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.03125,
+        "W": 0.96875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "bfcfe5fb9e318465e58059cef7dd7f81f93f005fab467cd941d5d39bce70e9fe"
+    },
+    {
+      "cell_configuration_digest": "f095f18329b0157cb26cf186c058ebe1494b3528cf64e019de16761abd0f352b",
+      "cell_id": "carrier-timescale-contrast",
+      "expected_composite_baseline_digest": "8363b6bb4437fad7da8e080f725aedf3965cccc236b4ffc9a4db496929eb9243",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.25,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 0.96875,
+        "W": 1.03125
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 101,
+      "snapshot_digest": "588da4afdfd813341027cb1a13df5fa45dc9caaf7562a5c64d451335c9f096fd"
+    },
+    {
+      "cell_configuration_digest": "f095f18329b0157cb26cf186c058ebe1494b3528cf64e019de16761abd0f352b",
+      "cell_id": "carrier-timescale-contrast",
+      "expected_composite_baseline_digest": "8b55ac0f88168e26161b41520b3c1bee583c63b2dd3ad75adf97b1508fd70d00",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.25,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.0,
+        "W": 1.0
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 211,
+      "snapshot_digest": "8bc1f0e3b2f5152e2496da48d4443077505d012e19451f336fd88accd7f60b92"
+    },
+    {
+      "cell_configuration_digest": "f095f18329b0157cb26cf186c058ebe1494b3528cf64e019de16761abd0f352b",
+      "cell_id": "carrier-timescale-contrast",
+      "expected_composite_baseline_digest": "d18bdd976f4677561c41d7afb1baf6e4bb9054883ca1fcfbb443e13b57bc8245",
+      "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+      "focal_surface_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "reader_packet_amount": 0.25,
+      "resolved_node_coherences": {
+        "A": 0.5,
+        "B": 0.5,
+        "P": 1.03125,
+        "W": 0.96875
+      },
+      "route_aspect_digest": "0c3c870c508325f0e13653c339c221b1b82ab9d724356c20b62fb818e8c7a8f9",
+      "runtime_config_digest": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793",
+      "seed": 307,
+      "snapshot_digest": "bfcfe5fb9e318465e58059cef7dd7f81f93f005fab467cd941d5d39bce70e9fe"
+    }
+  ],
+  "entry_count": 21,
+  "evidence_effect": "none_registration_infrastructure_only",
+  "fresh_worker_per_entry": true,
+  "lane_id": "AE01-L01",
+  "preview_only": false,
+  "realization_profile_id": "rcae-p2-i1-registered-realization-v1",
+  "registration_policy_digest": "c641f71d378ba81fdf76d8002fb7c0b66cb267dda0f0584633785d1e7de0f07e",
+  "retention_eligible": true,
+  "schema_version": "1.0.0",
+  "source_revision": "6ca9391fff6daa82e3be4b42c11f431a961d35b8",
+  "source_worktree_clean": true
+}
