@@ -4,6 +4,11 @@
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
+**Start here:**
+[Agentic Ecology: Why AE01 Exists](AGENTIC-ECOLOGY-OVERVIEW.md) explains the
+conceptual purpose, why the detailed evidence matters, what P2-I1 established,
+and how the seven lanes build toward an agentic-ecology demand atlas.
+
 **Roadmap:**
 [Post-N30 Agentic-Ecology Demand and Composition Atlas](../Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md)
 
