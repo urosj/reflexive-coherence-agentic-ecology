@@ -1,6 +1,7 @@
 # P2-I1 Owner Closeout Review
 
-**Status:** owner interpretation accepted; ready for tracked retention
+**Status:** closed; owner interpretation accepted, result retained, and
+post-retention validation passed
 
 **Lane:** `AE01-L01`
 
@@ -59,12 +60,29 @@ P2-I1-R05 accepted as bounded carrier-load invariance
 ## 4. Disposition
 
 No additional L01 variant, local optimization, recursive review, or runtime
-execution is required. The result bundle is ready for tracked retention.
+execution is required. The result bundle was ready for tracked retention and
+is now retained as recorded below.
+
+The complete result bundle was retained in commit `b2dafd1`. Deterministic
+closeout validation was then rerun from that clean commit and reproduced:
 
 ```text
-P2-I1-CLOSE-GATE = ready_for_tracking
+analysis_digest = df72d8e5813f7fdd159974dc23812af04c4f6697b7dcf645a11443b8e7e9fb38
+developmental_semantic_digest = 380bd9ca7bc4c6d838ca3cc50f0f1352d55d3894ccd345e4fd2ce8bfcea8c2df
+terminal_semantic_digest = a4b985e1bdda87632f9dc3de18d23cc970b35487ba7d968c2971dab62b884126
+requirement_semantic_digest = b42f20f7d71bc87d9011cf996adc433c12d071de89849ccb5c0c681f3e489156
+validation_status = passed
 ```
 
-After the deterministic retention commit, rerun closeout validation and verify
-the committed artifact set. If those checks pass, record
-`P2-I1-CLOSE-GATE = passed` without reopening the accepted interpretation.
+The separately recorded
+[future alternatives](../implementation/P2-I1-future-alternatives.md) are
+dormant history only. They select no successor, reopen no C02 conclusion, and
+create no execution authority.
+
+```text
+P2-I1-CLOSE-GATE = passed
+P2-I1-GATE = passed
+```
+
+Review R3 may revise future contract practice after this first completed lane.
+It may not tune or delay the closed P2-I1 conclusion.

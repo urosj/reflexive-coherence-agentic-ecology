@@ -38,7 +38,17 @@ Phase 2 gate reviews:
   geometric and ecology interpretation, boundary ladder, terminal disposition,
   implementation details, blocked claims, and reconstruction commands.
 - [P2-I1 owner closeout review](P2-I1-closeout-review.md) accepts R05 as
-  bounded carrier-load invariance and authorizes deterministic result retention.
+  bounded carrier-load invariance, records result retention and deterministic
+  post-retention validation, and passes `P2-I1-CLOSE-GATE` and `P2-I1-GATE`.
+- [R3 contract-adequacy review](R3-contract-adequacy-review.md) evaluates the
+  first completed lane without tuning it, retains the existing core record
+  set, and requires a compact lane-local control-resolution index for future
+  lane closeouts.
+
+The separately maintained
+[P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)
+preserves unselected structural and decision-set variants. It is not evidence,
+a report conclusion, a preregistration, or execution authority.
 
 Reports use either:
 

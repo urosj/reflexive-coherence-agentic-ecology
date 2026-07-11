@@ -1,6 +1,6 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** Review R2 and P1-GATE passed; Phase 2 calibration and registration open
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 is next
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -26,12 +26,17 @@
 [Review R2 closeout](reports/R2-closeout.md) and
 [structured R2 checklist](reports/R2-review-checklist.json)
 
-**Current Phase 2 directive:**
+**First-lane contract review:**
+[Review R3](reports/R3-contract-adequacy-review.md)
+
+**First Phase 2 lane:**
 [P2-I1 minimal shared-medium niche formation brief](implementation/P2-I1-minimal-shared-medium-niche-brief.md)
 and
-[detailed living checklist](implementation/P2-I1-minimal-shared-medium-niche-checklist.md),
-with accepted
-[cumulative decision record](implementation/P2-I1-decision-record.md)
+[closed detailed checklist](implementation/P2-I1-minimal-shared-medium-niche-checklist.md),
+with its accepted
+[cumulative decision record](implementation/P2-I1-decision-record.md),
+[C02 result](reports/P2-I1-C02-result.md), and dormant
+[future alternatives history](implementation/P2-I1-future-alternatives.md)
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -101,8 +106,11 @@ Calibration authority requires reconstructable matched-null generator/input
 provenance, and registration requires an explicit reviewed evidence bundle;
 `validate-phase1` success alone supplies neither. Terminal closure additionally
 requires every mandatory control outcome and applicability disposition to
-resolve through retained evidence. Review R3 will determine whether the first
-concrete lane creates a justified need for new first-class records.
+resolve through retained evidence. P2-I1 has now closed under those boundaries.
+Review R3 found no need for new first-class registration or control-outcome
+records. It requires future lanes to emit one compact lane-local
+control-resolution index before terminal closure and defers possible core
+promotion until recurrence can be assessed at R4.
 
 ## Atlas content
 
@@ -151,7 +159,10 @@ P1-I4 hypotheses, controls, failures, ladders   passed at revision 0.24
 P1-I5 tooling, calibration, reconstruction      passed at revision 0.24
 Review R2 and P1-GATE                           passed; C1/C2 assigned
 
-P2-I1 through P2-I7                             calibration/registration open; execution lane-gated
+P2-I1                                           closed; bounded constructed L01 result retained
+Review R3                                       passed; no P2-I1 result tuning
+P2-I2                                           next; independently lane-gated
+P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis
 P3                                              ranking, promotion, and closeout

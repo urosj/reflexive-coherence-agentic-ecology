@@ -962,6 +962,10 @@ Every lane iteration below MUST complete the same minimum work:
 - [ ] Resolve every mandatory control outcome and every applicability
   disposition through retained evidence; control ID references alone do not
   satisfy terminal closure.
+- [ ] Starting after R3, generate one compact lane-local control-resolution
+  index mapping every mandatory control ID to applicability, resolution stage,
+  outcome, evidence refs, and fail-closed effect. This is a closeout projection,
+  not new evidence or a first-class core record.
 - [ ] Record failures, debt, transfer scope, and claim ceiling.
 - [ ] Generate a machine artifact and matching human-readable report.
 - [ ] Validate manifest, digest, portable paths, and unsafe-claim flags.
@@ -1088,18 +1092,22 @@ Cover checks:
 - [x] Dedicated checklist `P2-I1-THEORY-GATE` passed. Evidence: accepted owner
   review recorded in the dedicated checklist; no realization or outcome
   selected.
-- [ ] Dedicated checklist `P2-I1-CAL-PRE-GATE` passed with response,
+- [x] Dedicated checklist `P2-I1-CAL-PRE-GATE` passed with response,
   orientation, opportunity, normalization, window, matched-null, and
   calibration-realization identities, selectivity-policy separation, and
-  analysis code frozen before calibration margins exist.
-- [ ] Dedicated checklist `P2-I1-CAL-GATE` passed.
-- [ ] Dedicated checklist `P2-I1-REG-GATE` passed before candidate execution.
-- [ ] Dedicated checklist `P2-I1-EXEC-GATE` passed or has a complete valid
-  blocked/incomplete disposition.
-- [ ] Dedicated checklist `P2-I1-CLOSE-GATE` passed.
-- [ ] Every evidence-triggered checklist expansion preserves prior results,
+  analysis code frozen before calibration margins exist. Evidence: dedicated
+  checklist and `P2-I1-CAL-PRE-review.md`.
+- [x] Dedicated checklist `P2-I1-CAL-GATE` passed. Evidence: dedicated
+  checklist and `P2-I1-CAL-review.md`.
+- [x] Dedicated checklist `P2-I1-REG-GATE` passed before candidate execution.
+  Evidence: dedicated checklist and `P2-I1-REG-review.md`.
+- [x] Dedicated checklist `P2-I1-EXEC-GATE` passed with a complete C02 matrix
+  and retained C01 bounded-incomplete history.
+- [x] Dedicated checklist `P2-I1-CLOSE-GATE` passed after result retention in
+  `b2dafd1` and deterministic post-retention validation.
+- [x] Every evidence-triggered checklist expansion preserves prior results,
   records its change class and rerun scope, and freezes a new probe cycle.
-- [ ] Review R3 handoff prepared without tuning the completed conclusion.
+- [x] Review R3 handoff prepared without tuning the completed conclusion.
 
 Lane-specific boundary:
 
@@ -1110,10 +1118,11 @@ Blocked: ecological niche proof, population ecology, agency, organism, or regime
 
 Exit gate `P2-I1-GATE`:
 
-- [ ] Local `P2-I1-CLOSE-GATE` passed with one complete terminal
+- [x] Local `P2-I1-CLOSE-GATE` passed with one complete terminal
   classification and retained reconstruction evidence.
-- [ ] New requirements, debts, redirects, and missing surfaces are recorded.
-- [ ] No stronger ecological relabel or cross-lane conclusion is opened.
+- [x] New requirements, debts, redirects, missing surfaces, and dormant future
+  alternatives are recorded without authorizing successor work.
+- [x] No stronger ecological relabel or cross-lane conclusion is opened.
 
 ### P2-I2 — Shared-pool co-conditioning lane
 
@@ -1295,7 +1304,7 @@ Exit gate `P2-I7-GATE`:
 
 Entry condition:
 
-- [ ] `P2-I1-GATE` passed.
+- [x] `P2-I1-GATE` passed.
 - [ ] `P2-I2-GATE` passed.
 - [ ] `P2-I3-GATE` passed.
 - [ ] `P2-I4-GATE` passed.
@@ -1922,8 +1931,9 @@ Mandatory review points:
 - [x] Review R2 before AE01 contract freeze at `P1-GATE`. Evidence:
   `experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/R2-review-checklist.json`
   and its closeout record.
-- [ ] Review R3 after the first completed lane to assess contract adequacy
-  without tuning conclusions.
+- [x] Review R3 after the first completed lane assessed contract adequacy
+  without tuning conclusions. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/R3-contract-adequacy-review.md`.
 - [ ] Review R4 before cross-lane synthesis.
 - [ ] Review R5 before N31+ selection/non-selection.
 - [ ] Review R6 before specification promotion.
@@ -2038,19 +2048,24 @@ Change log:
 | CL-022 | 2026-07-10 | Revision 0.22 passed P1-I4 with nine preregistered hypotheses, finite outcome and stopping rules, nineteen common fail-closed controls, ten preserved failure classifications, and a bounded P1-I5 implementation handoff. No lane executed, no result was assigned, and `AE01-C0` remains the ceiling. | P1-I4-GATE onward | Superseded by CL-023 |
 | CL-023 | 2026-07-10 | Revision 0.23 passed P1-I5 with PyGRC-compatible canonicalization, semantic and schema guards, portable paths, deterministic IDs, resolved profiles and manifests, a finite 49-cell policy, runtime receipts, report assembly, validated lane projections, 28 focused tests, duplicate reconstruction, and fail-closed missing-runtime evidence. No lane executed and Review R2 remains open before P1-GATE. | P1-I5-GATE onward | Superseded by CL-024 |
 | CL-024 | 2026-07-10 | Revision 0.24 accepted D-038, preserved revision 0.23 in commit `d240269`, and reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric/calibration/interpretation records, candidate-blind resolution, exact threshold relations, lane boundary ladders, two-axis readings, classification-value and guarded-next-move semantics, 32 focused tests, and linked synthesis entry. No lane or calibration executed as evidence; `AE01-C0` remains the ceiling. | P1-I3-GATE onward | Superseded by CL-025 |
-| CL-025 | 2026-07-10 | Revision 0.25 retained the complete Review R2 disposition as a structured checklist and closeout, accepted P1-I1 through P1-I5, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Candidate-blind calibration and lane registration opened; candidate execution remains behind each lane-local gate. Calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory Phase 2 guards; R3 decides whether concrete use requires new first-class records. No positive atlas result is assigned. | P1-GATE and P2 entry | Active |
+| CL-025 | 2026-07-10 | Revision 0.25 retained the complete Review R2 disposition as a structured checklist and closeout, accepted P1-I1 through P1-I5, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Candidate-blind calibration and lane registration opened; candidate execution remains behind each lane-local gate. Calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory Phase 2 guards; R3 decides whether concrete use requires new first-class records. No positive atlas result is assigned. | P1-GATE and P2 entry | Superseded by CL-026 |
+| CL-026 | 2026-07-11 | P2-I1 closed with retained C02 evidence, `supported_bounded_candidate`, R05 bounded carrier-load invariance, explicit constructed support, and the bounded niche-conditioning demand-pattern ceiling. C01 remains bounded incomplete. Post-retention validation reproduced the controlling digests. Considered structural and decision-set alternatives are dormant history with no execution authority. R3 remains the next contract-adequacy review and may not tune the closed result. | P2-I1-GATE and R3 entry | Superseded by CL-027 |
+| CL-027 | 2026-07-11 | Review R3 passed without tuning P2-I1. Calibration provenance, registration evidence, and the Phase 1 meaning contracts proved adequate. No first-class `lane_registration` or `control_outcome` record is admitted. Concrete control-traversal friction creates one prospective requirement: future lanes emit a compact lane-local control-resolution index before terminal closure, with possible core promotion deferred to R4 after recurrence. P2-I1 remains closed and P2-I2 is next. | R3 closeout and P2-I2 entry | Active |
 
 ## 17. Current next actions
 
 The next unchecked actions in dependency order are:
 
-1. [ ] Begin candidate-blind calibration for one or more independently chosen
-   Phase 2 lanes and retain each schema-valid record plus reconstructable
-   matched-null provenance.
-2. [ ] Freeze the corresponding metric sheet and materialize an explicit
-   registration evidence bundle before any candidate cell executes; do not
-   infer registration from `validate-phase1` alone.
-3. [ ] Execute the first locally admitted lane, resolve every mandatory control
-   outcome before terminal closure, then complete Review R3 without tuning its
-   conclusion and decide whether first-class registration/control records are
-   actually required.
+1. [x] Complete the first lane's candidate-blind calibration and retain its
+   schema-valid records plus reconstructable matched-null provenance.
+2. [x] Freeze the first lane's metric sheet and materialize an explicit
+   registration evidence bundle before candidate execution.
+3. [x] Execute and close the first locally admitted lane with every mandatory
+   control outcome resolved and its bounded conclusion retained.
+4. [x] Complete Review R3 without tuning the closed P2-I1 conclusion; retain
+   existing registration records and require a compact future lane-local
+   control-resolution index without admitting a new core record.
+5. [ ] Begin P2-I2 under its own theory, candidate-blind calibration,
+   registration, control-resolution, and execution boundaries.
+6. [ ] Begin any later independently owned Phase 2 lane only under its own
+   candidate-blind calibration, registration, and execution boundaries.

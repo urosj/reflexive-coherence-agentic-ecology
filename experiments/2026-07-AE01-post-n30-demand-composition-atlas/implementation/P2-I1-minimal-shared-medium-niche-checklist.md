@@ -1,7 +1,7 @@
 # P2-I1 Minimal Shared-Medium Niche Formation Checklist
 
-**Status:** active provisional lane checklist; C02 execution and validated
-closeout records complete; owner interpretation accepted; retention pending
+**Status:** closed; C02 retained, deterministically revalidated, and accepted
+as the complete bounded P2-I1 result
 
 **Iteration:** `P2-I1`
 
@@ -9,15 +9,19 @@ closeout records complete; owner interpretation accepted; retention pending
 
 **Current probe cycle:** `P2-I1-C02` — completed validated result
 
-**Current local gate:** `P2-I1-CLOSE-GATE`
+**Current local gate:** `P2-I1-CLOSE-GATE=passed`
 
-**Acceptance ceiling:** `AE01-C2`; no lane result assigned
+**Acceptance ceiling:** `AE01-C2`; one bounded L01 result assigned without
+cross-lane or N31+ effect
 
 **Theory and observation directive:**
 [P2-I1 brief](P2-I1-minimal-shared-medium-niche-brief.md)
 
 **Cumulative lane decision record:**
 [P2-I1 cumulative decision record](P2-I1-decision-record.md)
+
+**Dormant alternatives history:**
+[P2-I1 future alternatives](P2-I1-future-alternatives.md)
 
 **Frozen authorities:**
 [L01 hypothesis](../hypotheses/lane-hypotheses.md),
@@ -83,7 +87,7 @@ Rules:
 | `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Passed | Retained bundle and owner-accepted REG-GATE review dated 2026-07-11 |
 | `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | C01 and C02 passed | C02 tracked binding receipt, cycle freeze, and `--require-tracked` validation |
 | `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Passed | 21 completed C02 runs, complete audit, zero retries, and verified execution manifest |
-| `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Ready for tracking | Owner accepted R05; terminal record, report, manifest, and R3 handoff agree |
+| `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Passed | Result retained in `b2dafd1`; post-retention validation reproduced all controlling semantic digests |
 
 `P2-I1-GATE` in the master checklist is equivalent to
 `P2-I1-CLOSE-GATE` here.
@@ -1699,7 +1703,7 @@ Exit gate `P2-I1-CLOSE-GATE`:
   exists.
 - [x] Developmental interpretation is complete and claim-safe.
 - [x] Terminal record, generated closeout manifest, reconstruction, and report
-  agree; tracked retention is pending owner review.
+  agree and are retained in commit `b2dafd1`.
 - [x] New requirements, debts, redirects, and missing surfaces are recorded.
 - [x] No claim exceeds the bounded niche-conditioning demand-pattern ceiling.
 - [x] R3 handoff is prepared without tuning the completed result.
@@ -1708,12 +1712,13 @@ Owner closeout disposition — 2026-07-11:
 
 ```text
 P2-I1-R05 accepted as bounded carrier-load invariance
-P2-I1-CLOSE-GATE = ready_for_tracking
+P2-I1-CLOSE-GATE = passed
 ```
 
 R05 does not imply timescale persistence, broad transfer, native support, or
-cross-lane recurrence. Deterministic tracked retention remains before the gate
-is recorded as passed.
+cross-lane recurrence. Post-retention closeout validation reproduced the
+controlling analysis, developmental, terminal, and requirement semantic
+digests from commit `b2dafd1`.
 
 ## 14. Evidence-triggered checklist change control
 
@@ -1759,6 +1764,11 @@ Change ledger:
 | --- | --- | --- | --- | --- | --- | --- |
 | `P2-I1-CHG-001` | C01 universal full-snapshot restoration failure | `infrastructure_correction` | Use accepted D-027 native restoration projection plus independent continuation twin in new C02 | Entire separately frozen C02 matrix | Preserves C01 as no-result integrity evidence; enables no claim until C02 completes | Complete |
 
+Post-closeout alternatives are preserved separately in the
+[future alternatives history](P2-I1-future-alternatives.md). They are not
+change-ledger entries because no alternative was selected and no new work was
+required or authorized.
+
 Rules:
 
 - An infrastructure correction repairs the registered run path without
@@ -1796,13 +1806,13 @@ artifacts are never replaced by the successor cycle.
 | `P2-I1-C01-AUDIT` | `P2-I1-C01` | Incomplete-cycle audit | `contracts/p2-i1/c01/cycle-audit.json` | Exact from retained ledger and run paths | Obligation blocking and no-scientific-result boundary | `control` | Retained |
 | `P2-I1-C02-BINDING` | `P2-I1-C02` | Successor runtime binding receipt | `contracts/p2-i1/c02/execution-binding-receipt.json` | Exact in separate clone | D-027 native callable and source identity | `registration-only` | Retained |
 | `P2-I1-C02-EXEC-FREEZE` | `P2-I1-C02` | Exact successor-cycle authorization | `contracts/p2-i1/c02/exec-freeze.json` | Exact in separate clone | Projection, continuation, cell, seed, attempt, and claim scope | `registration-only` | Retained |
-| `P2-I1-C02-RUNS` | `P2-I1-C02` | Twenty-one cell/seed run records | `contracts/p2-i1/c02/execution-manifest.json` | Exact per-run commands and digests | Raw opportunity and causal-chain evidence | `positive` and `control` | Generated; retention pending |
-| `P2-I1-C02-AUDIT` | `P2-I1-C02` | Complete structural audit | `contracts/p2-i1/c02/cycle-audit.json` | Deterministic from retained runs | Twelve obligation outcomes and cross-cell controls | `control` | Generated; retention pending |
-| `P2-I1-C02-ANALYSIS` | `P2-I1-C02` | Frozen-policy scientific analysis | `contracts/p2-i1/c02/scientific-analysis.json` | Deterministic closeout builder | Margins, selectivity, and response distributions | `positive` | Generated; retention pending |
-| `P2-I1-C02-INTERPRETATION` | `P2-I1-C02` | Developmental interpretation | `contracts/p2-i1/c02/developmental-interpretation.json` | Schema and cross-record validation | R05, support, two-axis reading, next move | `interpretation` | Generated; retention pending |
-| `P2-I1-C02-TERMINAL` | `P2-I1-C02` | Terminal classification | `contracts/p2-i1/c02/terminal-classification.json` | Schema and cross-record validation | `supported_bounded_candidate` | `interpretation` | Generated; retention pending |
-| `P2-I1-C02-DEMAND` | `P2-I1-C02` | Requirement extraction | `contracts/p2-i1/c02/requirement-extraction.json` | Schema and evidence-role validation | Building-block demand pending synthesis | `interpretation` | Generated; retention pending |
-| `P2-I1-C02-CLOSEOUT` | `P2-I1-C02` | Closeout validation and manifest | `contracts/p2-i1/c02/closeout-manifest.json` | Deterministic index | Retention and reconstruction closure | `reconstruction` | Generated; retention pending |
+| `P2-I1-C02-RUNS` | `P2-I1-C02` | Twenty-one cell/seed run records | `contracts/p2-i1/c02/execution-manifest.json` | Exact per-run commands and digests | Raw opportunity and causal-chain evidence | `positive` and `control` | Retained in `b2dafd1` |
+| `P2-I1-C02-AUDIT` | `P2-I1-C02` | Complete structural audit | `contracts/p2-i1/c02/cycle-audit.json` | Deterministic from retained runs | Twelve obligation outcomes and cross-cell controls | `control` | Retained in `b2dafd1` |
+| `P2-I1-C02-ANALYSIS` | `P2-I1-C02` | Frozen-policy scientific analysis | `contracts/p2-i1/c02/scientific-analysis.json` | Deterministic closeout builder | Margins, selectivity, and response distributions | `positive` | Retained in `b2dafd1` |
+| `P2-I1-C02-INTERPRETATION` | `P2-I1-C02` | Developmental interpretation | `contracts/p2-i1/c02/developmental-interpretation.json` | Schema and cross-record validation | R05, support, two-axis reading, next move | `interpretation` | Retained in `b2dafd1` |
+| `P2-I1-C02-TERMINAL` | `P2-I1-C02` | Terminal classification | `contracts/p2-i1/c02/terminal-classification.json` | Schema and cross-record validation | `supported_bounded_candidate` | `interpretation` | Retained in `b2dafd1` |
+| `P2-I1-C02-DEMAND` | `P2-I1-C02` | Requirement extraction | `contracts/p2-i1/c02/requirement-extraction.json` | Schema and evidence-role validation | Building-block demand pending synthesis | `interpretation` | Retained in `b2dafd1` |
+| `P2-I1-C02-CLOSEOUT` | `P2-I1-C02` | Closeout validation and manifest | `contracts/p2-i1/c02/closeout-manifest.json` | Deterministic index | Retention and reconstruction closure | `reconstruction` | Retained and post-commit validated |
 
 Allowed evidence effects are `method`, `resolution-only`, `registration-only`,
 `positive`, `negative`, `control`, `reconstruction`, and `interpretation`.
@@ -1824,6 +1834,13 @@ without tuning its conclusion and decide:
   answer;
 - whether the L01 boundary against L02–L07 remained clear; and
 - whether to continue, redirect, revise, redescribe, or stop.
+
+R3 completed on 2026-07-11. It passed the existing meaning, calibration, and
+registration contracts without tuning P2-I1; retained the decision not to add
+first-class `lane_registration` or `control_outcome` records; and required one
+compact lane-local control-resolution index for future lanes before terminal
+closure. Evidence:
+[R3 contract-adequacy review](../reports/R3-contract-adequacy-review.md).
 
 ## 18. Current next actions
 
@@ -1852,5 +1869,7 @@ without tuning its conclusion and decide:
     closeout manifest.
 14. [x] Complete owner closeout review and accept R05 as bounded invariance to
     doubled carrier load.
-15. [ ] Retain the result bundle, rerun deterministic closeout validation, and
-    pass `P2-I1-CLOSE-GATE` before starting the next lane.
+15. [x] Retain the result bundle in `b2dafd1`, rerun deterministic closeout
+    validation, and pass `P2-I1-CLOSE-GATE` before starting the next lane.
+16. [x] Preserve considered structural and decision-set alternatives as
+    dormant history without selecting or authorizing a successor probe.

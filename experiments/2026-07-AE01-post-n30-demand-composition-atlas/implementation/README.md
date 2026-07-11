@@ -82,6 +82,11 @@ doubles reader-packet load while keeping the remaining realization fixed.
 These decisions assign no evidence. Accepted primary decisions retain their
 named alternatives for later linked probe cycles rather than erasing them.
 
+The [P2-I1 future alternatives history](P2-I1-future-alternatives.md) preserves
+post-closeout structural and decision-set variants without selecting,
+preregistering, or authorizing any of them. It is a dormant history record and
+does not reopen C02 or the accepted P2-I1 decisions.
+
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,
 or lane result.

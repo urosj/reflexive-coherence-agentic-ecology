@@ -150,9 +150,10 @@ and shared-medium participation before implementation claims are made.
   engineering vocabulary.
 - [`experiments/`](experiments/README.md): bounded experiment roadmaps,
   contracts, reconstruction conventions, evidence, and closeouts. The current
-  AE01 workspace has passed Review R2 and `P1-GATE` at `AE01-C2`; Phase 2
-  candidate-blind calibration and lane registration are open, while candidate
-  execution remains lane-gated and no positive atlas evidence is assigned.
+  AE01 workspace has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is
+  closed with one bounded, explicitly constructed L01 result, and Review R3
+  passed without tuning it. P2-I2 is next; all remaining lane execution stays
+  independently gated.
 - [`implementation/`](implementation/README.md): active cross-cutting plans,
   decisions, checklists, and handoffs.
 - `README.md`: public orientation and claim boundary.
