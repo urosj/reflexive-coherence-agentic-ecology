@@ -7,9 +7,9 @@ candidate execution completed
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C01` — bounded incomplete; C02 decision pending
+**Current probe cycle:** `P2-I1-C02` — restoration-correction source materialized
 
-**Current local gate:** `P2-I1-EXEC-GATE`
+**Current local gate:** `P2-I1-EXEC-FREEZE`
 
 **Acceptance ceiling:** `AE01-C2`; no lane result assigned
 
@@ -81,7 +81,7 @@ Rules:
 | `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Passed | v2 identity refresh passed; v1 remains retained history |
 | `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Passed | D-020 regeneration is byte-identical to retained calibration |
 | `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Passed | Retained bundle and owner-accepted REG-GATE review dated 2026-07-11 |
-| `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | Passed | Tracked binding receipt, cycle freeze, and accepted review dated 2026-07-11 |
+| `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | C01 passed; C02 pending | C02 tracked binding receipt and cycle freeze with candidate outcomes absent |
 | `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Pending | Cell artifacts, receipts, control outcomes, reconstruction |
 | `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Pending | Terminal record, report, retained manifest, R3 handoff |
 
@@ -1133,13 +1133,13 @@ artifact. The table names the exact direct causal/withdrawal IDs for each cell;
 
 | Cell | Group | Exact direct controls | Implementation frozen | Expected artifacts frozen | Ready |
 | --- | --- | --- | --- | --- | --- |
-| `reference` | reference | none; registered matched baseline | [x] | [x] | [x] |
-| `candidate-conditioning` | candidate | `AE01-CTRL-04`, `AE01-CTRL-05`, `AE01-CTRL-11` | [x] | [x] | [x] |
-| `medium-freeze-withdrawal` | withdrawal | `AE01-CTRL-06`, `AE01-CTRL-08`, `AE01-L01-CTRL-01` | [x] | [x] | [x] |
-| `trace-shuffle` | lineage/source | `AE01-CTRL-06`, `AE01-L01-CTRL-02` | [x] | [x] | [x] |
-| `parent-context-contrast` | active null | `AE01-CTRL-10`, `AE01-L01-CTRL-04` | [x] | [x] | [x] |
-| `susceptibility-inversion` | budget/leakage and selectivity | `AE01-CTRL-09`, `AE01-L01-CTRL-03` | [x] | [x] | [x] |
-| `carrier-timescale-contrast` | transfer/contrast | none; registered single-axis transfer contrast | [x] | [x] | [x] |
+| `reference` | reference | none; registered matched baseline | [x] | [x] | [ ] |
+| `candidate-conditioning` | candidate | `AE01-CTRL-04`, `AE01-CTRL-05`, `AE01-CTRL-11` | [x] | [x] | [ ] |
+| `medium-freeze-withdrawal` | withdrawal | `AE01-CTRL-06`, `AE01-CTRL-08`, `AE01-L01-CTRL-01` | [x] | [x] | [ ] |
+| `trace-shuffle` | lineage/source | `AE01-CTRL-06`, `AE01-L01-CTRL-02` | [x] | [x] | [ ] |
+| `parent-context-contrast` | active null | `AE01-CTRL-10`, `AE01-L01-CTRL-04` | [x] | [x] | [ ] |
+| `susceptibility-inversion` | budget/leakage and selectivity | `AE01-CTRL-09`, `AE01-L01-CTRL-03` | [x] | [x] | [ ] |
+| `carrier-timescale-contrast` | transfer/contrast | none; registered single-axis transfer contrast | [x] | [x] | [ ] |
 
 Cell-specific freeze requirements:
 
@@ -1304,7 +1304,7 @@ native restoration-integrity boundary
 `P2-I1-DEC-026` accepted with its layered REG-to-EXEC rationale recorded. The
 clean source anchor, retained-eligible binding receipt, and retained-eligible
 EXEC-FREEZE reconstruct exactly. Tracking and final gate passage are complete;
-candidate execution remains pending.
+candidate execution was still pending at this source-materialization boundary.
 
 The C01 source adds one bounded layer above the passed registration bundle:
 
@@ -1417,6 +1417,73 @@ It requires a new C02 source anchor, tests, binding receipt, and EXEC-FREEZE;
 it cannot retroactively rescue C01. The decision will be added to the
 cumulative decision record only after these C01 artifacts are retained, so the
 historical C01 authority digest remains reconstructable.
+
+### `P2-I1-C02` — bounded native restoration correction
+
+**Status:** candidate-free source materialized; clean source anchor and retained
+EXEC-FREEZE pending
+
+**Evidence effect:** none; successor implementation only
+
+- [x] Predecessor C01 is retained as bounded incomplete in commit `daa29e3`.
+- [x] `P2-I1-DEC-027` is accepted with its evidence, alternatives, projection,
+  continuation guard, and reopening conditions recorded.
+- [x] C02 has separate policy, artifact paths, cycle identity, worker scopes,
+  run IDs, attempt budget, binding receipt, and freeze contract.
+- [x] C01 fixture, seven cells, three seeds, attempts, metrics, controls, and
+  claim ceiling are imported without scientific change.
+- [x] The shared Phase 1 analysis and registered configuration identities remain
+  byte-identical.
+- [ ] Clean C02 source-anchor commit retained.
+- [ ] Final C02 binding receipt and EXEC-FREEZE generated from that clean anchor.
+- [ ] Tracked C02 EXEC-FREEZE validation passed before any C02 operation.
+
+### C02 implementation and geometric interpretation — 2026-07-11
+
+[The C02 policy](../configs/p2_i1_c02_execution_policy.json) binds C01's
+retained retry ledger, incomplete audit, and result report as predecessor
+authorities. The runner rejects C02 if C01 no longer records 21 primary
+failures, seven deterministic retries, zero effective runs, twelve blocked
+obligations, no scientific result, and the explicit C02 successor disposition.
+
+C02 changes one RCAE predicate. Native branch identity is now the digest of:
+
+```text
+metadata
+topology + basin attributes + edge labels
+dynamics.lgrc9v3_runtime
+observables + events
+```
+
+The nested `caches.base_grc9v3_snapshot` is retained in each full raw snapshot
+but excluded from equality. Every opportunity records both raw snapshot
+digests, both restoration-projection digests, and whether native normalization
+occurred. A projection mismatch still fails before scientific evaluation.
+
+The geometry remains `P-W-A-B`. The correction does not change a node, edge,
+carrier, support value, medium row, reader profile, or causal contrast. It
+changes only which native representation owns equality after public save/load.
+The independently reconstructed medium digest remains a separate required
+check, so projection equality cannot substitute for a shared-medium result.
+
+Each opportunity also loads an independent continuation twin from the same W2
+branch point, applies the same producer configuration, invokes the same native
+producer, drains the same work, and compares production, response, and final
+restoration-projection digests. Both projection equality and equal-input
+continuation are mandatory. The primary producer count remains four and the
+four validation-twin invocations are separately reported, preventing the
+integrity probe from inflating the scientific opportunity count.
+
+No PyGRC code, state, API, or graph source is changed. There is no cache-field
+normalizer, mutation, fallback, or exception list. Any included-state or
+continuation difference fails closed and triggers D-027's reopening boundary.
+
+Source validation passes 89 tests. The additional test proves that changes
+confined to the excluded nested cache do not alter the projection while native
+runtime drift does. Execution tests now isolate candidate-result paths, so the
+suite remains usable after a prior cycle is retained. A dirty-worktree binding
+and freeze produce only non-retainable C02 preview artifacts with candidate
+authority false; no C02 writer, medium, producer, or outcome operation has run.
 
 ### Candidate-execution freeze template
 
@@ -1675,6 +1742,7 @@ Rules:
 | --- | --- | --- | --- | --- | --- |
 | `P2-I1-C00` | Theory, calibration, and registration preparation | Design-only; closed | REG-GATE passed; no candidate execution | Registration-only bundle; no scientific result | Handed exact probe boundary to `P2-I1-C01` |
 | `P2-I1-C01` | First exact candidate-execution cycle | Frozen; EXEC-FREEZE passed | Bounded incomplete: 21 primaries and 7 retries stopped at W2 restoration check | Control/integrity only; no scientific result | Disposition DEC-027 before any C02 correction |
+| `P2-I1-C02` | Correct the over-broad RCAE restoration predicate only | Source materialized; freeze pending | Not authorized or executed | None | Pass a separate tracked C02 EXEC-FREEZE |
 
 Completed and superseded cycles remain in this table. Their records and
 artifacts are never replaced by the successor cycle.
@@ -1690,8 +1758,8 @@ artifacts are never replaced by the successor cycle.
 | `P2-I1-REG-MANIFEST` | `P2-I1-C00` | Resolved manifest | `rcae-p2-i1-registration-manifest-v1` | Exact at declared paths | Retention and reconstruction index | `reconstruction` | Retained |
 | `P2-I1-C01-BINDING` | `P2-I1-C01` | Execution-specific runtime binding receipt | `contracts/p2-i1/c01/execution-binding-receipt.json` | Exact | D-026 callable conformance and runtime identity | `registration-only` | Retained |
 | `P2-I1-C01-EXEC-FREEZE` | `P2-I1-C01` | Exact-cycle execution authorization | `contracts/p2-i1/c01/exec-freeze.json` | Exact | Cell, seed, attempt, obligation, and claim scope | `registration-only` | Retained |
-| `P2-I1-C01-RETRY` | `P2-I1-C01` | Primary-failure and retry ledger | `contracts/p2-i1/c01/retry-ledger.json` | Exact from frozen cycle execution | Attempt integrity and operational failure classification | `control` | Generated; retention pending |
-| `P2-I1-C01-AUDIT` | `P2-I1-C01` | Incomplete-cycle audit | `contracts/p2-i1/c01/cycle-audit.json` | Exact from generated ledger and run paths | Obligation blocking and no-scientific-result boundary | `control` | Generated; retention pending |
+| `P2-I1-C01-RETRY` | `P2-I1-C01` | Primary-failure and retry ledger | `contracts/p2-i1/c01/retry-ledger.json` | Exact from frozen cycle execution | Attempt integrity and operational failure classification | `control` | Retained |
+| `P2-I1-C01-AUDIT` | `P2-I1-C01` | Incomplete-cycle audit | `contracts/p2-i1/c01/cycle-audit.json` | Exact from retained ledger and run paths | Obligation blocking and no-scientific-result boundary | `control` | Retained |
 
 Allowed evidence effects are `method`, `resolution-only`, `registration-only`,
 `positive`, `negative`, `control`, `reconstruction`, and `interpretation`.
@@ -1728,4 +1796,7 @@ without tuning its conclusion and decide:
 7. [x] Freeze one exact candidate cycle and pass `P2-I1-EXEC-FREEZE` before
    its first operation.
 8. [x] Accept `P2-I1-DEC-027` while preserving C01 as bounded incomplete.
-9. [ ] Materialize a separately frozen C02 restoration correction.
+9. [x] Materialize candidate-free C02 source without changing the scientific
+   matrix or shared analysis identity.
+10. [ ] Commit the C02 source anchor, generate its final binding/freeze, and
+    pass tracked `P2-I1-EXEC-FREEZE` before any C02 operation.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle-scoped execution boundary for P2-I1 C01.
+"""Cycle-scoped execution boundary for P2-I1 C02.
 
 The module has three deliberately separate responsibilities:
 
@@ -36,7 +36,6 @@ from ae01_tooling import (
 )
 from p2_i1 import CONFIG_PATHS, experiment_root, find_repository_root, validate_configs
 from p2_i1_analysis import (
-    resolved_profile_identity,
     static_profile_identities,
     validate_cross_cell_static_profile_matching,
     validate_opportunity,
@@ -53,7 +52,7 @@ from p2_i1_runtime import (
 )
 
 
-EXECUTION_POLICY_PATH = "configs/p2_i1_c01_execution_policy.json"
+EXECUTION_POLICY_PATH = "configs/p2_i1_c02_execution_policy.json"
 EXECUTION_SCRIPT_PATH = "scripts/p2_i1_execution.py"
 EXPECTED_CELLS = [
     "reference",
@@ -65,9 +64,9 @@ EXPECTED_CELLS = [
     "carrier-timescale-contrast",
 ]
 EXPECTED_SEEDS = [101, 211, 307]
-EXPECTED_OBLIGATIONS = [f"C01-OBL-{index:02d}" for index in range(1, 13)]
+EXPECTED_OBLIGATIONS = [f"C02-OBL-{index:02d}" for index in range(1, 13)]
 EXECUTION_SOURCE_PATHS = [
-    "configs/p2_i1_c01_execution_policy.json",
+    "configs/p2_i1_c02_execution_policy.json",
     "configs/p2_i1_fixture.json",
     "configs/p2_i1_cells.json",
     "configs/p2_i1_analysis_policy.json",
@@ -84,7 +83,7 @@ SCIENTIFIC_RESULT_PATH_KEYS = (
 )
 EXECUTION_BINDING_RECEIPT_PATH = (
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/"
-    "contracts/p2-i1/c01/execution-binding-receipt.json"
+    "contracts/p2-i1/c02/execution-binding-receipt.json"
 )
 
 
@@ -148,7 +147,7 @@ def _source_state(
     clean = not status
     if not clean and not allow_dirty_preview:
         raise ContractError(
-            "retained C01 freeze generation requires a clean source worktree"
+            "retained C02 freeze generation requires a clean source worktree"
         )
     return {
         "source_revision": _git_revision(),
@@ -175,7 +174,7 @@ def validate_execution_policy(
     *,
     configs: Mapping[str, Mapping[str, Any]] | None = None,
 ) -> dict[str, Any]:
-    """Validate the exact C01 executable policy without importing PyGRC."""
+    """Validate the exact C02 executable policy without importing PyGRC."""
 
     expected_top = {
         "artifact_kind",
@@ -187,6 +186,7 @@ def validate_execution_policy(
         "authorization",
         "authorities",
         "execution_identity",
+        "restoration_identity",
         "matrix",
         "window_operations",
         "cell_realizations",
@@ -194,22 +194,22 @@ def validate_execution_policy(
         "artifact_contract",
         "claim_boundary",
     }
-    _require_exact_keys(policy, expected_top, context="C01 execution policy")
+    _require_exact_keys(policy, expected_top, context="C02 execution policy")
     if not (
-        policy.get("artifact_kind") == "p2_i1_c01_execution_policy"
+        policy.get("artifact_kind") == "p2_i1_c02_execution_policy"
         and policy.get("schema_version") == "1.0.0"
         and policy.get("lane_id") == "AE01-L01"
-        and policy.get("cycle_id") == "P2-I1-C01"
-        and policy.get("predecessor_cycle_id") == "P2-I1-C00"
+        and policy.get("cycle_id") == "P2-I1-C02"
+        and policy.get("predecessor_cycle_id") == "P2-I1-C01"
         and policy.get("evidence_effect") == "none_pre_execution_policy_only"
     ):
-        raise ContractError("C01 policy identity drifted")
+        raise ContractError("C02 policy identity drifted")
 
     authorization = policy["authorization"]
     if not (
         authorization.get("candidate_execution_authorized") is False
         and authorization.get("authorization_record_kind")
-        == "p2_i1_c01_exec_freeze"
+        == "p2_i1_c02_exec_freeze"
         and authorization.get("authorization_gate") == "P2-I1-EXEC-FREEZE"
         and authorization.get("authorization_scope")
         == "exact_cycle_cell_seed_attempt_only"
@@ -218,7 +218,7 @@ def validate_execution_policy(
         and authorization.get("tracked_freeze_required_before_run") is True
         and authorization.get("fallback_execution_class") is None
     ):
-        raise ContractError("C01 authorization boundary drifted")
+        raise ContractError("C02 authorization boundary drifted")
 
     authorities = policy["authorities"]
     expected_authority_keys = {
@@ -228,6 +228,10 @@ def validate_execution_policy(
         "registration_review_marker",
         "decision_record_path",
         "decision_026_acceptance_marker",
+        "decision_027_acceptance_marker",
+        "predecessor_retry_ledger_path",
+        "predecessor_cycle_audit_path",
+        "predecessor_result_report_path",
         "calibration_freeze_path",
         "cal_pre_identity_path",
         "fixture_path",
@@ -238,7 +242,7 @@ def validate_execution_policy(
         "baseline_registry_path",
     }
     _require_exact_keys(
-        authorities, expected_authority_keys, context="C01 authorities"
+        authorities, expected_authority_keys, context="C02 authorities"
     )
     for key, value in authorities.items():
         if key.endswith("_path"):
@@ -254,7 +258,7 @@ def validate_execution_policy(
         and identity.get("graph_repository_access")
         == "read_only_fingerprint_guard"
     ):
-        raise ContractError("C01 execution identity drifted")
+        raise ContractError("C02 execution identity drifted")
     capability_paths = identity.get("execution_specific_capability_paths")
     expected_paths = {
         "writer_packet_scheduling": [
@@ -273,7 +277,30 @@ def validate_execution_policy(
         ],
     }
     if capability_paths != expected_paths:
-        raise ContractError("C01 execution-specific capability map drifted")
+        raise ContractError("C02 execution-specific capability map drifted")
+
+    restoration = policy["restoration_identity"]
+    if restoration != {
+        "policy": "declared_native_restoration_projection",
+        "included_snapshot_groups": [
+            "metadata",
+            "topology",
+            "basin_attributes",
+            "edge_labels",
+            "dynamics.lgrc9v3_runtime",
+            "observables",
+            "events",
+        ],
+        "excluded_snapshot_path": "caches.base_grc9v3_snapshot",
+        "raw_snapshot_digests_retained": True,
+        "projection_digests_must_match": True,
+        "medium_reconstruction_verified_separately": True,
+        "equal_input_continuation_required": True,
+        "normalization_is_observation_not_failure": True,
+        "pygrc_state_mutation_permitted": False,
+        "pygrc_modification_permitted": False,
+    }:
+        raise ContractError("C02 restoration identity drifted")
 
     matrix = policy["matrix"]
     if not (
@@ -289,9 +316,9 @@ def validate_execution_policy(
         and matrix.get("opportunities_per_cell_seed") == 4
         and matrix.get("expected_primary_run_count") == 21
     ):
-        raise ContractError("C01 matrix drifted")
+        raise ContractError("C02 matrix drifted")
     if list(policy["cell_realizations"]) != EXPECTED_CELLS:
-        raise ContractError("C01 cell realization order or set drifted")
+        raise ContractError("C02 cell realization order or set drifted")
     if policy["cell_realizations"]["medium-freeze-withdrawal"] != {
         "feedback_row": "not_emitted",
         "reference_delta_source": "not_applicable",
@@ -302,17 +329,17 @@ def validate_execution_policy(
         "participant_opportunity_preserved": True,
         "scaffold_withdrawal": False,
     }:
-        raise ContractError("C01 medium-freeze realization drifted")
+        raise ContractError("C02 medium-freeze realization drifted")
     if policy["cell_realizations"]["trace-shuffle"].get("broken_relation") != (
         "expected_source_digest_only"
     ):
-        raise ContractError("C01 trace-shuffle must remain single-axis")
+        raise ContractError("C02 trace-shuffle must remain single-axis")
 
     obligations = policy.get("live_obligations", [])
     if [row.get("obligation_id") for row in obligations] != EXPECTED_OBLIGATIONS:
-        raise ContractError("C01 live-obligation order or set drifted")
+        raise ContractError("C02 live-obligation order or set drifted")
     if len({row.get("meaning") for row in obligations}) != len(obligations):
-        raise ContractError("C01 live-obligation meanings must be unique")
+        raise ContractError("C02 live-obligation meanings must be unique")
     for row in obligations:
         if row.get("resolution_scope") not in {
             "per_run",
@@ -320,10 +347,10 @@ def validate_execution_policy(
             "cross_cell_seed",
             "cycle",
         }:
-            raise ContractError("C01 live-obligation resolution scope drifted")
+            raise ContractError("C02 live-obligation resolution scope drifted")
         required_fields = row.get("required_fields")
         if not isinstance(required_fields, list) or not required_fields:
-            raise ContractError("C01 live obligation requires machine fields")
+            raise ContractError("C02 live obligation requires machine fields")
 
     contract = policy["artifact_contract"]
     for key, value in contract.items():
@@ -335,7 +362,7 @@ def validate_execution_policy(
         and contract.get("derived_reports_cannot_support_positive_rung") is True
         and contract.get("candidate_result_paths_must_be_absent_at_freeze") is True
     ):
-        raise ContractError("C01 artifact contract drifted")
+        raise ContractError("C02 artifact contract drifted")
 
     claims = policy["claim_boundary"]
     if not (
@@ -356,7 +383,7 @@ def validate_execution_policy(
             )
         )
     ):
-        raise ContractError("C01 claim boundary drifted")
+        raise ContractError("C02 claim boundary drifted")
 
     resolved_configs = dict(configs or _load_configs())
     validate_configs(resolved_configs)
@@ -367,11 +394,11 @@ def validate_execution_policy(
         and registration_policy["execution_policy"]["seeds"] == EXPECTED_SEEDS
         and resolved_configs["cells"]["cycle_id"] == "P2-I1-C00"
     ):
-        raise ContractError("C01 does not import the registered design unchanged")
+        raise ContractError("C02 does not import the registered design unchanged")
     return {
-        "artifact_kind": "p2_i1_c01_execution_policy_validation",
+        "artifact_kind": "p2_i1_c02_execution_policy_validation",
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "status": "passed",
         "cell_count": 7,
         "seed_count": 3,
@@ -391,7 +418,7 @@ def _authority_records(policy: Mapping[str, Any]) -> list[dict[str, Any]]:
         portable = validate_portable_path(relative)
         path = root / portable
         if not path.is_file():
-            raise ContractError(f"missing C01 authority: {relative}")
+            raise ContractError(f"missing C02 authority: {relative}")
         records.append(
             {
                 "authority_id": authority_id.removesuffix("_path"),
@@ -421,16 +448,76 @@ def _validate_registration_authority(policy: Mapping[str, Any]) -> None:
         and freeze.get("measurement_identity_match") is True
         and freeze.get("realization_identity_match") is True
     ):
-        raise ContractError("C01 requires the retained passing registration freeze")
+        raise ContractError("C02 requires the retained passing registration freeze")
     record = manifest.get("record", {})
     if not (
         manifest.get("record_type") == "artifact_manifest"
         and record.get("manifest_id") == "rcae-p2-i1-registration-manifest-v1"
         and record.get("fully_resolved") is True
     ):
-        raise ContractError("C01 requires the fully resolved registration manifest")
+        raise ContractError("C02 requires the fully resolved registration manifest")
     if policy["authorities"]["registration_review_marker"] not in review:
-        raise ContractError("C01 requires the passed REG-GATE review marker")
+        raise ContractError("C02 requires the passed REG-GATE review marker")
+
+
+def _validate_predecessor_authority(policy: Mapping[str, Any]) -> None:
+    authorities = policy["authorities"]
+    root = experiment_root()
+    ledger = load_json(root / authorities["predecessor_retry_ledger_path"])
+    audit = load_json(root / authorities["predecessor_cycle_audit_path"])
+    report = (root / authorities["predecessor_result_report_path"]).read_text(
+        encoding="utf-8"
+    )
+    if not (
+        ledger.get("artifact_kind") == "p2_i1_c01_retry_ledger"
+        and ledger.get("cycle_id") == "P2-I1-C01"
+        and len(ledger.get("primary_failures", [])) == 21
+        and len(ledger.get("retry_authorizations", [])) == 7
+        and len(ledger.get("retry_results", [])) == 7
+        and all(
+            row.get("seed") == 101 and row.get("status") == "authorized"
+            for row in ledger.get("retry_authorizations", [])
+        )
+        and all(
+            row.get("status") == "failed"
+            for row in ledger.get("retry_results", [])
+        )
+        and len(
+            {
+                row.get("diagnostic_digest")
+                for row in ledger.get("primary_failures", [])
+                + ledger.get("retry_results", [])
+            }
+        )
+        == 1
+        and all(
+            row.get("candidate_scientific_effect") == "none_operational_only"
+            for row in ledger.get("primary_failures", [])
+            + ledger.get("retry_results", [])
+        )
+    ):
+        raise ContractError("C02 predecessor retry evidence drifted")
+    if not (
+        audit.get("artifact_kind") == "p2_i1_c01_cycle_audit"
+        and audit.get("cycle_id") == "P2-I1-C01"
+        and audit.get("audit_complete") is False
+        and audit.get("effective_run_count") == 0
+        and len(audit.get("missing_run_ids", [])) == 21
+        and audit.get("candidate_outcomes_present") is False
+        and audit.get("scientific_rung_assigned") is False
+        and audit.get("terminal_classification_opened") is False
+        and len(audit.get("obligation_results", [])) == 12
+        and all(
+            row.get("status") == "blocked_or_incomplete"
+            for row in audit.get("obligation_results", [])
+        )
+    ):
+        raise ContractError("C02 predecessor audit evidence drifted")
+    if not (
+        "P2-I1-C01 = bounded_incomplete_operational" in report
+        and "successor = P2-I1-C02" in report
+    ):
+        raise ContractError("C02 predecessor report disposition drifted")
 
 
 def _validate_decision_authority(
@@ -440,9 +527,12 @@ def _validate_decision_authority(
     decision = (
         experiment_root() / authorities["decision_record_path"]
     ).read_text(encoding="utf-8")
-    marker = authorities["decision_026_acceptance_marker"]
-    if required and marker not in decision:
-        raise ContractError("C01 requires explicit acceptance of P2-I1-DEC-026")
+    markers = [
+        authorities["decision_026_acceptance_marker"],
+        authorities["decision_027_acceptance_marker"],
+    ]
+    if required and any(marker not in decision for marker in markers):
+        raise ContractError("C02 requires accepted P2-I1-DEC-026 and DEC-027")
 
 
 def _expected_run_specs(policy: Mapping[str, Any]) -> list[dict[str, Any]]:
@@ -460,9 +550,9 @@ def _expected_run_specs(policy: Mapping[str, Any]) -> list[dict[str, Any]]:
                 {
                     **scientific_identity,
                     "attempt": 1,
-                    "run_id": f"P2-I1-C01:{cell_id}:seed-{seed}:attempt-1",
+                    "run_id": f"P2-I1-C02:{cell_id}:seed-{seed}:attempt-1",
                     "worker_scope_id": (
-                        f"P2-I1-C01-worker:{cell_id}:seed-{seed}:attempt-1"
+                        f"P2-I1-C02-worker:{cell_id}:seed-{seed}:attempt-1"
                     ),
                     "expected_path": validate_portable_path(
                         template.format(cell_id=cell_id, seed=seed)
@@ -497,14 +587,14 @@ def _require_candidate_outcomes_absent(policy: Mapping[str, Any]) -> None:
     ]
     if present:
         raise ContractError(
-            "C01 candidate outcomes must be absent at freeze: " + ", ".join(present)
+            "C02 candidate outcomes must be absent at freeze: " + ", ".join(present)
         )
 
 
 def build_execution_binding_receipt(
     *, graph_root: Path, allow_dirty_preview: bool = False
 ) -> dict[str, Any]:
-    """Bind exact C01 callables without scheduling a candidate operation."""
+    """Bind exact C02 callables without scheduling a candidate operation."""
 
     policy = load_execution_policy()
     validation = validate_execution_policy(policy)
@@ -519,18 +609,18 @@ def build_execution_binding_receipt(
     with ReadOnlyTreeGuard(graph_root):
         graph_revision = _git_revision(cwd=graph_root)
         if graph_revision != inherited["graph_source_revision"]:
-            raise ContractError("C01 binding graph revision differs from registration")
+            raise ContractError("C02 binding graph revision differs from registration")
         modules = bind_runtime(configs["runtime"], profile)
         capabilities = validate_execution_specific_capabilities(modules, policy)
     retained = source_state["retention_eligible"]
     result = {
         "artifact_kind": (
-            "p2_i1_c01_execution_binding_receipt"
+            "p2_i1_c02_execution_binding_receipt"
             if retained
-            else "p2_i1_c01_execution_binding_receipt_preview"
+            else "p2_i1_c02_execution_binding_receipt_preview"
         ),
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "evidence_effect": "none_pre_execution_binding_only",
         **source_state,
         "execution_policy_digest": validation["canonical_payload_digest"],
@@ -562,15 +652,15 @@ def validate_execution_binding_receipt(
     _verify_canonical_payload(receipt)
     preview = receipt.get("preview_only") is True
     expected_kind = (
-        "p2_i1_c01_execution_binding_receipt_preview"
+        "p2_i1_c02_execution_binding_receipt_preview"
         if preview
-        else "p2_i1_c01_execution_binding_receipt"
+        else "p2_i1_c02_execution_binding_receipt"
     )
     if preview and not allow_preview:
-        raise ContractError("C01 preview binding receipt cannot enter retained freeze")
+        raise ContractError("C02 preview binding receipt cannot enter retained freeze")
     if not (
         receipt.get("artifact_kind") == expected_kind
-        and receipt.get("cycle_id") == "P2-I1-C01"
+        and receipt.get("cycle_id") == "P2-I1-C02"
         and receipt.get("source_worktree_clean")
         is receipt.get("retention_eligible")
         and receipt.get("preview_only") is (not receipt.get("retention_eligible"))
@@ -590,7 +680,7 @@ def validate_execution_binding_receipt(
         and receipt.get("fallback_used") is False
         and receipt.get("conformance_status") == "passed"
     ):
-        raise ContractError("C01 execution binding receipt drifted")
+        raise ContractError("C02 execution binding receipt drifted")
 
 
 def build_exec_freeze(
@@ -598,11 +688,12 @@ def build_exec_freeze(
     execution_binding_path: Path,
     allow_dirty_preview: bool = False,
 ) -> dict[str, Any]:
-    """Build the exact candidate-free C01 authorization record."""
+    """Build the exact candidate-free C02 authorization record."""
 
     policy = load_execution_policy()
     validation = validate_execution_policy(policy)
     _validate_registration_authority(policy)
+    _validate_predecessor_authority(policy)
     _require_candidate_outcomes_absent(policy)
     expected_binding = policy["artifact_contract"]["execution_binding_receipt_path"]
     binding_path_value = execution_binding_path.relative_to(
@@ -613,7 +704,7 @@ def build_exec_freeze(
         receipt, policy=policy, allow_preview=allow_dirty_preview
     )
     if receipt.get("retention_eligible") is True and binding_path_value != expected_binding:
-        raise ContractError("retained C01 execution binding receipt path drifted")
+        raise ContractError("retained C02 execution binding receipt path drifted")
     source_state = _source_state(
         allow_dirty_preview=allow_dirty_preview,
         allowed_generated_paths={binding_path_value},
@@ -624,7 +715,7 @@ def build_exec_freeze(
         is source_state["retention_eligible"]
         and receipt.get("preview_only") is source_state["preview_only"]
     ):
-        raise ContractError("C01 binding receipt and freeze source states differ")
+        raise ContractError("C02 binding receipt and freeze source states differ")
     _validate_decision_authority(
         policy, required=bool(source_state["retention_eligible"])
     )
@@ -632,7 +723,7 @@ def build_exec_freeze(
     for relative in EXECUTION_SOURCE_PATHS:
         path = experiment_root() / relative
         if not path.is_file():
-            raise ContractError(f"missing C01 execution source: {relative}")
+            raise ContractError(f"missing C02 execution source: {relative}")
         source_files.append(
             {
                 "path": path.relative_to(find_repository_root()).as_posix(),
@@ -643,9 +734,9 @@ def build_exec_freeze(
     retained = source_state["retention_eligible"]
     result = {
         "artifact_kind": (
-            "p2_i1_c01_exec_freeze"
+            "p2_i1_c02_exec_freeze"
             if retained
-            else "p2_i1_c01_exec_freeze_preview"
+            else "p2_i1_c02_exec_freeze_preview"
         ),
         "schema_version": "1.0.0",
         "lane_id": policy["lane_id"],
@@ -684,7 +775,7 @@ def _verify_canonical_payload(record: Mapping[str, Any]) -> None:
     payload = dict(record)
     observed = payload.pop("canonical_payload_digest", None)
     if observed != digest_canonical_data(payload):
-        raise ContractError("C01 EXEC-FREEZE canonical payload digest mismatch")
+        raise ContractError("C02 EXEC-FREEZE canonical payload digest mismatch")
 
 
 def _tracked_head_bytes(path: Path) -> bytes:
@@ -696,7 +787,7 @@ def _tracked_head_bytes(path: Path) -> bytes:
         capture_output=True,
     )
     if result.returncode != 0:
-        raise ContractError("C01 EXEC-FREEZE must be tracked in the current HEAD")
+        raise ContractError("C02 EXEC-FREEZE must be tracked in the current HEAD")
     return result.stdout
 
 
@@ -712,9 +803,10 @@ def validate_exec_freeze(
     policy = load_execution_policy()
     validation = validate_execution_policy(policy)
     _validate_registration_authority(policy)
+    _validate_predecessor_authority(policy)
     _validate_decision_authority(policy, required=True)
     if not (
-        freeze.get("artifact_kind") == "p2_i1_c01_exec_freeze"
+        freeze.get("artifact_kind") == "p2_i1_c02_exec_freeze"
         and freeze.get("retention_eligible") is True
         and freeze.get("preview_only") is False
         and freeze.get("source_worktree_clean") is True
@@ -729,16 +821,16 @@ def validate_exec_freeze(
         and freeze.get("live_obligations") == policy["live_obligations"]
         and freeze.get("artifact_contract") == policy["artifact_contract"]
     ):
-        raise ContractError("C01 EXEC-FREEZE authorization boundary drifted")
+        raise ContractError("C02 EXEC-FREEZE authorization boundary drifted")
     current_authorities = _authority_records(policy)
     if freeze.get("authority_records") != current_authorities:
-        raise ContractError("C01 EXEC-FREEZE authority digest drifted")
+        raise ContractError("C02 EXEC-FREEZE authority digest drifted")
     binding_ref = freeze.get("execution_binding_receipt", {})
     expected_binding_path = policy["artifact_contract"][
         "execution_binding_receipt_path"
     ]
     if binding_ref.get("path") != expected_binding_path:
-        raise ContractError("C01 EXEC-FREEZE binding receipt path drifted")
+        raise ContractError("C02 EXEC-FREEZE binding receipt path drifted")
     binding_path = find_repository_root() / expected_binding_path
     binding = load_json(binding_path)
     validate_execution_binding_receipt(binding, policy=policy)
@@ -748,16 +840,16 @@ def validate_exec_freeze(
         "file_sha256": digest_file(binding_path),
         "canonical_payload_digest": binding["canonical_payload_digest"],
     }:
-        raise ContractError("C01 EXEC-FREEZE binding receipt digest drifted")
+        raise ContractError("C02 EXEC-FREEZE binding receipt digest drifted")
     if require_tracked and _tracked_head_bytes(binding_path) != binding_path.read_bytes():
         raise ContractError(
-            "C01 execution binding receipt must match its tracked HEAD record"
+            "C02 execution binding receipt must match its tracked HEAD record"
         )
     expected_sources = []
     for row in freeze.get("execution_source_files", []):
         path = find_repository_root() / validate_portable_path(row["path"])
         if not path.is_file():
-            raise ContractError("C01 frozen execution source is missing")
+            raise ContractError("C02 frozen execution source is missing")
         expected_sources.append(
             {
                 "path": row["path"],
@@ -766,19 +858,19 @@ def validate_exec_freeze(
             }
         )
     if expected_sources != freeze.get("execution_source_files"):
-        raise ContractError("C01 execution source differs from EXEC-FREEZE")
+        raise ContractError("C02 execution source differs from EXEC-FREEZE")
     if require_tracked:
         if freeze_path is None:
             raise ContractError("tracked EXEC-FREEZE validation requires its path")
         current = freeze_path.read_bytes()
         if _tracked_head_bytes(freeze_path) != current:
-            raise ContractError("C01 EXEC-FREEZE differs from the tracked HEAD record")
+            raise ContractError("C02 EXEC-FREEZE differs from the tracked HEAD record")
 
 
 def validate_execution_specific_capabilities(
     runtime_modules: Mapping[str, Any], policy: Mapping[str, Any]
 ) -> dict[str, list[str]]:
-    """Resolve the exact calls needed by C01 in addition to REG conformance."""
+    """Resolve the exact calls needed by C02 in addition to REG conformance."""
 
     resolved: dict[str, list[str]] = {}
     for operation_id, paths in policy["execution_identity"][
@@ -791,7 +883,7 @@ def validate_execution_specific_capabilities(
                 value = getattr(value, part, None)
             if not callable(value):
                 raise ContractError(
-                    f"C01 execution-specific capability unavailable: {path}"
+                    f"C02 execution-specific capability unavailable: {path}"
                 )
         resolved[operation_id] = list(paths)
     return resolved
@@ -826,7 +918,7 @@ def _drain_queue(model: Any, *, maximum_events: int = 8) -> list[dict[str, Any]]
             }
         )
     if model.get_state().packet_ledger.event_queue_records:
-        raise ContractError("C01 queue did not drain within the registered event bound")
+        raise ContractError("C02 queue did not drain within the registered event bound")
     return results
 
 
@@ -848,11 +940,38 @@ def _contact_rows(model: Any) -> list[dict[str, Any]]:
 def _base_snapshot_projection(snapshot: Mapping[str, Any]) -> Mapping[str, Any]:
     caches = snapshot.get("caches", {})
     if not isinstance(caches, Mapping):
-        raise ContractError("C01 runtime snapshot caches are unavailable")
+        raise ContractError("C02 runtime snapshot caches are unavailable")
     base = caches.get("base_grc9v3_snapshot")
     if not isinstance(base, Mapping):
-        raise ContractError("C01 runtime snapshot lacks native base snapshot")
+        raise ContractError("C02 runtime snapshot lacks native base snapshot")
     return base
+
+
+def restoration_projection(snapshot: Mapping[str, Any]) -> dict[str, Any]:
+    """Project the native state D-027 assigns to branch identity."""
+
+    metadata = snapshot.get("metadata")
+    topology = snapshot.get("topology")
+    dynamics = snapshot.get("dynamics")
+    observables = snapshot.get("observables")
+    events = snapshot.get("events")
+    if not all(
+        isinstance(value, Mapping)
+        for value in (metadata, topology, dynamics, observables)
+    ) or not isinstance(events, list):
+        raise ContractError("C02 restoration projection source shape drifted")
+    runtime = dynamics.get("lgrc9v3_runtime")
+    if not isinstance(runtime, Mapping):
+        raise ContractError("C02 restoration projection lacks LGRC runtime state")
+    return {
+        "metadata": dict(metadata),
+        "topology": dict(topology),
+        "basin_attributes": snapshot.get("basin_attributes"),
+        "edge_labels": snapshot.get("edge_labels"),
+        "dynamics": {"lgrc9v3_runtime": dict(runtime)},
+        "observables": dict(observables),
+        "events": list(events),
+    }
 
 
 def _observed_baseline_entry(
@@ -867,7 +986,7 @@ def _observed_baseline_entry(
     queue = model.get_state().packet_ledger.event_queue_records
     surfaces = model.get_state().causal_pulse_substrate_surface_log
     if queue or surfaces:
-        raise ContractError("C01 W0 must begin with empty queue and surface")
+        raise ContractError("C02 W0 must begin with empty queue and surface")
     cell = next(
         row for row in configs["cells"]["cells"] if row["cell_id"] == cell_id
     )
@@ -904,7 +1023,7 @@ def _registered_baseline(
         if row.get("cell_id") == cell_id and row.get("seed") == seed
     ]
     if len(matches) != 1:
-        raise ContractError("C01 cannot resolve one registered baseline entry")
+        raise ContractError("C02 cannot resolve one registered baseline entry")
     return matches[0]
 
 
@@ -967,7 +1086,7 @@ def _support_budget_projection(
 def _cell_by_id(cells: Mapping[str, Any], cell_id: str) -> Mapping[str, Any]:
     matches = [row for row in cells["cells"] if row["cell_id"] == cell_id]
     if len(matches) != 1:
-        raise ContractError("C01 cannot resolve exact cell configuration")
+        raise ContractError("C02 cannot resolve exact cell configuration")
     return matches[0]
 
 
@@ -1008,7 +1127,7 @@ def _runtime_source_revisions(
         experiment_root() / "contracts/p2-i1/inherited-control-verification.json"
     )
     if graph_revision != inherited["graph_source_revision"]:
-        raise ContractError("C01 graph source revision differs from registration")
+        raise ContractError("C02 graph source revision differs from registration")
     return {
         "rcae_execution_source": freeze["source_revision"],
         "rcae_current_head": _git_revision(),
@@ -1036,6 +1155,112 @@ def _producer_configuration_projection(
     }
 
 
+def _resolved_restoration_profile_identity(
+    static_profile: Mapping[str, Any],
+    *,
+    pulse_contact_surface_digest: str,
+    medium_history_digest: str,
+    branch_point_snapshot_digest: str,
+    restored_snapshot_digest: str,
+    branch_point_restoration_projection_digest: str,
+    restored_restoration_projection_digest: str,
+) -> dict[str, Any]:
+    required = {
+        "profile_id",
+        "reader_configuration_digest",
+        "opportunity_profile_digest",
+        "identity",
+    }
+    if set(static_profile) != required:
+        raise ContractError("C02 static opportunity-profile identity shape drifted")
+    values = {
+        "pulse_contact_surface_digest": pulse_contact_surface_digest,
+        "medium_history_digest": medium_history_digest,
+        "branch_point_snapshot_digest": branch_point_snapshot_digest,
+        "restored_snapshot_digest": restored_snapshot_digest,
+        "branch_point_restoration_projection_digest": (
+            branch_point_restoration_projection_digest
+        ),
+        "restored_restoration_projection_digest": (
+            restored_restoration_projection_digest
+        ),
+    }
+    if any(not isinstance(value, str) or not value for value in values.values()):
+        raise ContractError("C02 resolved profile requires non-empty digest strings")
+    if (
+        restored_restoration_projection_digest
+        != branch_point_restoration_projection_digest
+    ):
+        raise ContractError("C02 resolved profile restoration projection drifted")
+    identity = {
+        "static_opportunity_profile_digest": static_profile[
+            "opportunity_profile_digest"
+        ],
+        "reader_configuration_digest": static_profile[
+            "reader_configuration_digest"
+        ],
+        **values,
+        "raw_snapshot_equal": (
+            restored_snapshot_digest == branch_point_snapshot_digest
+        ),
+        "cross_branch_state_carryover": False,
+    }
+    return {
+        "profile_id": static_profile["profile_id"],
+        "opportunity_profile_digest": static_profile[
+            "opportunity_profile_digest"
+        ],
+        "reader_configuration_digest": static_profile[
+            "reader_configuration_digest"
+        ],
+        "resolved_opportunity_profile_digest": digest_canonical_data(identity),
+        "identity": identity,
+    }
+
+
+def _execute_reader_continuation(
+    branch: Any,
+    *,
+    producer_projection: Mapping[str, Any],
+    expected_source_digest: str,
+) -> dict[str, Any]:
+    branch.set_feedback_coupled_pulse_producer(
+        **producer_projection,
+        expected_source_surface_digest=expected_source_digest,
+    )
+    production = branch.produce_events(
+        policy="packet_departure_from_feedback_eligibility_policy"
+    )
+    production_artifact = production.to_artifact()
+    records = production_artifact.get("production_records", [])
+    if len(records) != 1:
+        raise ContractError("C02 producer must emit exactly one audit record")
+    production_record = records[0]
+    formed = (
+        production_record["reason_code"]
+        == "feedback_coupled_pulse_packet_departure_scheduled"
+    )
+    response_steps = _drain_queue(branch) if formed else []
+    if branch.get_state().packet_ledger.event_queue_records:
+        raise ContractError("C02 opportunity branch must end with empty queue")
+    final_snapshot = branch.snapshot()
+    continuation_projection = {
+        "production_artifact": production_artifact,
+        "response_steps": response_steps,
+        "final_restoration_projection_digest": digest_canonical_data(
+            restoration_projection(final_snapshot)
+        ),
+    }
+    return {
+        "production_artifact": production_artifact,
+        "production_record": production_record,
+        "formed": formed,
+        "response_steps": response_steps,
+        "continuation_projection": continuation_projection,
+        "continuation_digest": digest_canonical_data(continuation_projection),
+    }
+
+
 def _run_one_authorized(
     *,
     freeze: Mapping[str, Any],
@@ -1058,16 +1283,16 @@ def _run_one_authorized(
         and row["seed"] == seed
     ]
     if len(specs) != 1:
-        raise ContractError("C01 run is outside exact EXEC-FREEZE scope")
+        raise ContractError("C02 run is outside exact EXEC-FREEZE scope")
     primary_spec = specs[0]
     if attempt not in {1, 2}:
-        raise ContractError("C01 attempt must be primary or one conditional retry")
+        raise ContractError("C02 attempt must be primary or one conditional retry")
     if attempt == 1:
         spec = dict(primary_spec)
         expected_output = spec["expected_path"]
     else:
         if retry_ledger_path is None or not retry_ledger_path.is_file():
-            raise ContractError("C01 retry requires the cycle retry ledger")
+            raise ContractError("C02 retry requires the cycle retry ledger")
         ledger = load_json(retry_ledger_path)
         validate_retry_ledger(ledger, freeze=freeze)
         authorized = [
@@ -1079,23 +1304,23 @@ def _run_one_authorized(
             and row["status"] == "authorized"
         ]
         if len(authorized) != 1:
-            raise ContractError("C01 retry is not authorized by deterministic ledger")
+            raise ContractError("C02 retry is not authorized by deterministic ledger")
         spec = {
             **primary_spec,
             "attempt": 2,
-            "run_id": f"P2-I1-C01:{cell_id}:seed-{seed}:attempt-2",
+            "run_id": f"P2-I1-C02:{cell_id}:seed-{seed}:attempt-2",
             "worker_scope_id": (
-                f"P2-I1-C01-worker:{cell_id}:seed-{seed}:attempt-2"
+                f"P2-I1-C02-worker:{cell_id}:seed-{seed}:attempt-2"
             ),
         }
         expected_output = policy["artifact_contract"][
             "retry_run_artifact_path_template"
         ].format(cell_id=cell_id, seed=seed)
     if validate_portable_path(output_path) != expected_output:
-        raise ContractError("C01 output path differs from EXEC-FREEZE")
+        raise ContractError("C02 output path differs from EXEC-FREEZE")
     output = find_repository_root() / output_path
     if output.exists():
-        raise ContractError("C01 refuses to overwrite an existing run artifact")
+        raise ContractError("C02 refuses to overwrite an existing run artifact")
 
     configs = _load_configs()
     validate_execution_policy(policy, configs=configs)
@@ -1127,7 +1352,7 @@ def _run_one_authorized(
         )
         baseline_match = observed_baseline == registered_baseline
         if not baseline_match:
-            raise ContractError("C01 observed W0 baseline differs from registration")
+            raise ContractError("C02 observed W0 baseline differs from registration")
 
         fixture = configs["fixture"]
         model.schedule_packet_departure(
@@ -1143,7 +1368,7 @@ def _run_one_authorized(
         writer_steps = _drain_queue(model)
         contacts = _contact_rows(model)
         if len(contacts) != 2:
-            raise ContractError("C01 writer window requires departure and arrival contacts")
+            raise ContractError("C02 writer window requires departure and arrival contacts")
         departure_contact, arrival_contact = contacts
         post_writer_snapshot = model.snapshot()
         post_writer_base_state_digest = digest_canonical_data(
@@ -1167,6 +1392,9 @@ def _run_one_authorized(
         medium_history_digest = digest_canonical_data(medium_projection)
         branch_point_snapshot = model.snapshot()
         branch_point_snapshot_digest = digest_canonical_data(branch_point_snapshot)
+        branch_point_restoration_projection_digest = digest_canonical_data(
+            restoration_projection(branch_point_snapshot)
+        )
 
         static_profiles = static_profile_identities(fixture)
         static_by_id = {row["profile_id"]: row for row in static_profiles}
@@ -1194,19 +1422,28 @@ def _run_one_authorized(
         opportunities: list[dict[str, Any]] = []
         resolved_profiles: list[dict[str, Any]] = []
         production_artifacts: list[dict[str, Any]] = []
-        with tempfile.TemporaryDirectory(prefix="rcae-p2-i1-c01-") as tmp_dir:
+        with tempfile.TemporaryDirectory(prefix="rcae-p2-i1-c02-") as tmp_dir:
             branch_file = Path(tmp_dir) / "branch-point.json"
             model.save(str(branch_file))
             for profile_row in fixture["opportunity_profiles"]:
                 branch = modules["models"].LGRC9V3.load(str(branch_file))
-                restored_digest = digest_canonical_data(branch.snapshot())
-                if restored_digest != branch_point_snapshot_digest:
-                    raise ContractError("C01 branch restoration differs from W2 snapshot")
+                restored_snapshot = branch.snapshot()
+                restored_digest = digest_canonical_data(restored_snapshot)
+                restored_restoration_projection_digest = digest_canonical_data(
+                    restoration_projection(restored_snapshot)
+                )
+                if (
+                    restored_restoration_projection_digest
+                    != branch_point_restoration_projection_digest
+                ):
+                    raise ContractError(
+                        "C02 branch restoration projection differs from W2"
+                    )
                 reconstructed_feedback = _latest_feedback_artifact(branch)
                 reconstructed_projection = _medium_projection(reconstructed_feedback)
                 reconstructed_digest = digest_canonical_data(reconstructed_projection)
                 if reconstructed_digest != medium_history_digest:
-                    raise ContractError("C01 medium projection failed independent reconstruction")
+                    raise ContractError("C02 medium projection failed independent reconstruction")
 
                 polarity = _profile_polarity(profile_row, cell)
                 producer_projection = _producer_configuration_projection(
@@ -1215,31 +1452,54 @@ def _run_one_authorized(
                     expected_polarity=polarity,
                     reader_amount=reader_amount,
                 )
-                branch.set_feedback_coupled_pulse_producer(
-                    **producer_projection,
-                    expected_source_surface_digest=expected_source_digest,
+                continuation = _execute_reader_continuation(
+                    branch,
+                    producer_projection=producer_projection,
+                    expected_source_digest=expected_source_digest,
                 )
-                production = branch.produce_events(
-                    policy="packet_departure_from_feedback_eligibility_policy"
+                twin = modules["models"].LGRC9V3.load(str(branch_file))
+                twin_snapshot = twin.snapshot()
+                twin_restoration_projection_digest = digest_canonical_data(
+                    restoration_projection(twin_snapshot)
                 )
-                production_artifact = production.to_artifact()
+                if (
+                    twin_restoration_projection_digest
+                    != branch_point_restoration_projection_digest
+                ):
+                    raise ContractError(
+                        "C02 continuation twin restoration projection drifted"
+                    )
+                twin_continuation = _execute_reader_continuation(
+                    twin,
+                    producer_projection=producer_projection,
+                    expected_source_digest=expected_source_digest,
+                )
+                equal_input_continuation = (
+                    continuation["continuation_digest"]
+                    == twin_continuation["continuation_digest"]
+                )
+                if not equal_input_continuation:
+                    raise ContractError(
+                        "C02 independently restored branches continue differently"
+                    )
+                production_artifact = continuation["production_artifact"]
                 production_artifacts.append(production_artifact)
-                records = production_artifact.get("production_records", [])
-                if len(records) != 1:
-                    raise ContractError("C01 producer must emit exactly one audit record")
-                production_record = records[0]
+                production_record = continuation["production_record"]
                 reason = production_record["reason_code"]
-                formed = reason == "feedback_coupled_pulse_packet_departure_scheduled"
-                response_steps = _drain_queue(branch) if formed else []
-                if branch.get_state().packet_ledger.event_queue_records:
-                    raise ContractError("C01 opportunity branch must end with empty queue")
-                resolved = resolved_profile_identity(
+                formed = continuation["formed"]
+                response_steps = continuation["response_steps"]
+                resolved = _resolved_restoration_profile_identity(
                     static_by_id[profile_row["profile_id"]],
                     pulse_contact_surface_digest=arrival_contact["surface_digest"],
                     medium_history_digest=medium_history_digest,
                     branch_point_snapshot_digest=branch_point_snapshot_digest,
                     restored_snapshot_digest=restored_digest,
-                    cross_branch_state_carryover=False,
+                    branch_point_restoration_projection_digest=(
+                        branch_point_restoration_projection_digest
+                    ),
+                    restored_restoration_projection_digest=(
+                        restored_restoration_projection_digest
+                    ),
                 )
                 resolved_profiles.append(resolved)
                 opportunity_index = int(profile_row["opportunity_index"])
@@ -1291,6 +1551,23 @@ def _run_one_authorized(
                     "response_steps": response_steps,
                     "branch_point_snapshot_digest": branch_point_snapshot_digest,
                     "restored_snapshot_digest": restored_digest,
+                    "branch_point_restoration_projection_digest": (
+                        branch_point_restoration_projection_digest
+                    ),
+                    "restored_restoration_projection_digest": (
+                        restored_restoration_projection_digest
+                    ),
+                    "raw_snapshot_equal": (
+                        restored_digest == branch_point_snapshot_digest
+                    ),
+                    "raw_snapshot_normalization_observed": (
+                        restored_digest != branch_point_snapshot_digest
+                    ),
+                    "continuation_digest": continuation["continuation_digest"],
+                    "twin_continuation_digest": twin_continuation[
+                        "continuation_digest"
+                    ],
+                    "equal_input_continuation": equal_input_continuation,
                     "cross_branch_state_carryover": False,
                     "resolved_profile_identity": resolved,
                 }
@@ -1320,18 +1597,18 @@ def _run_one_authorized(
             "participant_reserve_positive": support_budget["participant_reserve"] > 0.0,
         }
         if not exposure_match or not all(baseline_viability.values()):
-            raise ContractError("C01 selectivity baseline or exposure audit failed")
+            raise ContractError("C02 selectivity baseline or exposure audit failed")
         graph_revision_after = _git_revision(cwd=graph_root)
         source_revisions = _runtime_source_revisions(freeze, graph_root=graph_root)
         if graph_revision_after != source_revisions["graph"]:
-            raise ContractError("C01 graph source changed during live run")
+            raise ContractError("C02 graph source changed during live run")
 
     run = {
-        "artifact_kind": "p2_i1_c01_run",
+        "artifact_kind": "p2_i1_c02_run",
         "schema_version": "1.0.0",
         "evidence_effect": "candidate_observation_pending_cycle_controls",
         "lane_id": "AE01-L01",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "run_id": spec["run_id"],
         "worker_scope_id": spec["worker_scope_id"],
         "cell_id": cell_id,
@@ -1374,6 +1651,20 @@ def _run_one_authorized(
             "passed": exposure_match,
         },
         "branch_point_snapshot_digest": branch_point_snapshot_digest,
+        "branch_point_restoration_projection_digest": (
+            branch_point_restoration_projection_digest
+        ),
+        "raw_snapshot_normalization_observed": any(
+            row["raw_snapshot_normalization_observed"] for row in opportunities
+        ),
+        "restoration_projection_match": all(
+            row["restored_restoration_projection_digest"]
+            == branch_point_restoration_projection_digest
+            for row in opportunities
+        ),
+        "equal_input_continuation_audit": all(
+            row["equal_input_continuation"] for row in opportunities
+        ),
         "cross_branch_state_carryover": False,
         "support_budget_projection": support_budget,
         "support_budget_projection_digest": digest_canonical_data(support_budget),
@@ -1386,6 +1677,7 @@ def _run_one_authorized(
         ),
         "producer_policy": "packet_departure_from_feedback_eligibility_policy",
         "producer_invocation_count": len(production_artifacts),
+        "continuation_validation_invocation_count": len(opportunities),
         "producer_configuration_except_medium_digest": digest_canonical_data(
             [
                 {
@@ -1445,10 +1737,10 @@ def validate_run_record(
 ) -> None:
     _verify_canonical_payload(record)
     if not (
-        record.get("artifact_kind") == "p2_i1_c01_run"
+        record.get("artifact_kind") == "p2_i1_c02_run"
         and record.get("schema_version") == "1.0.0"
         and record.get("lane_id") == "AE01-L01"
-        and record.get("cycle_id") == "P2-I1-C01"
+        and record.get("cycle_id") == "P2-I1-C02"
         and record.get("exec_freeze_digest") == freeze["canonical_payload_digest"]
         and record.get("cell_id") in EXPECTED_CELLS
         and record.get("seed") in EXPECTED_SEEDS
@@ -1458,11 +1750,14 @@ def validate_run_record(
         and record.get("w0_surface_empty") is True
         and record.get("cross_branch_state_carryover") is False
         and record.get("producer_invocation_count") == 4
+        and record.get("continuation_validation_invocation_count") == 4
+        and record.get("restoration_projection_match") is True
+        and record.get("equal_input_continuation_audit") is True
         and record.get("graph_repository_write_observed") is False
         and record.get("terminal_classification_opened") is False
         and record.get("rung_assignment_opened") is False
     ):
-        raise ContractError("C01 run record boundary drifted")
+        raise ContractError("C02 run record boundary drifted")
     spec = next(
         (
             row
@@ -1475,7 +1770,7 @@ def validate_run_record(
     if spec is None or record.get("execution_configuration_digest") != spec[
         "execution_configuration_digest"
     ]:
-        raise ContractError("C01 run configuration differs from EXEC-FREEZE")
+        raise ContractError("C02 run configuration differs from EXEC-FREEZE")
     policy = load_execution_policy()
     reconstruction = record.get("reconstruction", {})
     reconstruction_path = validate_portable_path(
@@ -1489,10 +1784,10 @@ def validate_run_record(
         )
     )
     if reconstruction_path != expected_reconstruction_path:
-        raise ContractError("C01 run reconstruction path differs from frozen scope")
+        raise ContractError("C02 run reconstruction path differs from frozen scope")
     opportunities = record.get("opportunity_records", [])
     if len(opportunities) != 4:
-        raise ContractError("C01 run must retain four opportunities")
+        raise ContractError("C02 run must retain four opportunities")
     for opportunity in opportunities:
         validate_opportunity(opportunity)
         if not (
@@ -1500,11 +1795,23 @@ def validate_run_record(
             and opportunity["seed"] == record["seed"]
             and opportunity["branch_point_snapshot_digest"]
             == record["branch_point_snapshot_digest"]
-            and opportunity["restored_snapshot_digest"]
-            == record["branch_point_snapshot_digest"]
+            and opportunity["branch_point_restoration_projection_digest"]
+            == record["branch_point_restoration_projection_digest"]
+            and opportunity["restored_restoration_projection_digest"]
+            == record["branch_point_restoration_projection_digest"]
+            and opportunity["raw_snapshot_equal"]
+            is (
+                opportunity["restored_snapshot_digest"]
+                == opportunity["branch_point_snapshot_digest"]
+            )
+            and opportunity["raw_snapshot_normalization_observed"]
+            is (not opportunity["raw_snapshot_equal"])
+            and opportunity["continuation_digest"]
+            == opportunity["twin_continuation_digest"]
+            and opportunity["equal_input_continuation"] is True
             and opportunity["cross_branch_state_carryover"] is False
         ):
-            raise ContractError("C01 opportunity lineage or restoration drifted")
+            raise ContractError("C02 opportunity lineage or restoration drifted")
     reconstruction_audit = record.get("medium_reconstruction", {})
     if not (
         reconstruction_audit.get("medium_projection_digest")
@@ -1513,7 +1820,7 @@ def validate_run_record(
         and reconstruction_audit.get("participant_label_input_consumed") is False
         and reconstruction_audit.get("passed") is True
     ):
-        raise ContractError("C01 independent medium reconstruction failed")
+        raise ContractError("C02 independent medium reconstruction failed")
     if not (
         record.get("baseline_viability_audit", {}).get("profile_count") == 4
         and record.get("baseline_viability_audit", {}).get(
@@ -1530,7 +1837,7 @@ def validate_run_record(
         is True
         and record.get("exposure_match_audit", {}).get("passed") is True
     ):
-        raise ContractError("C01 selectivity viability or exposure audit failed")
+        raise ContractError("C02 selectivity viability or exposure audit failed")
     runtime = record.get("runtime_binding", {})
     if not (
         runtime.get("observed_identity") == "pygrc==0.1"
@@ -1539,7 +1846,7 @@ def validate_run_record(
         and runtime.get("execution_specific_capabilities")
         == policy["execution_identity"]["execution_specific_capability_paths"]
     ):
-        raise ContractError("C01 per-run runtime binding drifted")
+        raise ContractError("C02 per-run runtime binding drifted")
     source_revisions = record.get("source_revisions", {})
     inherited = load_json(
         experiment_root() / "contracts/p2-i1/inherited-control-verification.json"
@@ -1548,7 +1855,7 @@ def validate_run_record(
         source_revisions.get("rcae_execution_source") == freeze["source_revision"]
         and source_revisions.get("graph") == inherited["graph_source_revision"]
     ):
-        raise ContractError("C01 per-run source identity drifted")
+        raise ContractError("C02 per-run source identity drifted")
     receipt = record.get("runtime_receipt", {})
     if not (
         receipt.get("run_id") == record["run_id"]
@@ -1560,7 +1867,7 @@ def validate_run_record(
         and receipt.get("conformance_status") == "passed"
         and receipt.get("fallback_used") is False
     ):
-        raise ContractError("C01 embedded runtime receipt drifted")
+        raise ContractError("C02 embedded runtime receipt drifted")
 
 
 def _retry_ledger_payload(
@@ -1591,9 +1898,9 @@ def _retry_ledger_payload(
                 }
             )
     result = {
-        "artifact_kind": "p2_i1_c01_retry_ledger",
+        "artifact_kind": "p2_i1_c02_retry_ledger",
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "evidence_effect": "infrastructure_only",
         "exec_freeze_digest": freeze["canonical_payload_digest"],
         "primary_failures": list(failures),
@@ -1610,20 +1917,20 @@ def validate_retry_ledger(
 ) -> None:
     _verify_canonical_payload(ledger)
     if not (
-        ledger.get("artifact_kind") == "p2_i1_c01_retry_ledger"
-        and ledger.get("cycle_id") == "P2-I1-C01"
+        ledger.get("artifact_kind") == "p2_i1_c02_retry_ledger"
+        and ledger.get("cycle_id") == "P2-I1-C02"
         and ledger.get("exec_freeze_digest") == freeze["canonical_payload_digest"]
         and ledger.get("retries_per_cell_limit") == 1
         and ledger.get("scientific_refinement_by_retry") is False
     ):
-        raise ContractError("C01 retry ledger boundary drifted")
+        raise ContractError("C02 retry ledger boundary drifted")
     expected = _retry_ledger_payload(
         freeze=freeze,
         failures=ledger.get("primary_failures", []),
         retry_results=ledger.get("retry_results", []),
     )
     if ledger != expected:
-        raise ContractError("C01 retry authorization is not deterministically derived")
+        raise ContractError("C02 retry authorization is not deterministically derived")
 
 
 def _load_effective_runs(
@@ -1650,7 +1957,7 @@ def _load_effective_runs(
         validate_run_record(record, freeze=freeze)
         if selected == retry:
             if ledger is None:
-                raise ContractError("C01 retry artifact lacks its authorization ledger")
+                raise ContractError("C02 retry artifact lacks its authorization ledger")
             authorizations = [
                 row
                 for row in ledger["retry_authorizations"]
@@ -1660,9 +1967,9 @@ def _load_effective_runs(
                 and row["status"] == "authorized"
             ]
             if len(authorizations) != 1 or record["attempt"] != 2:
-                raise ContractError("C01 retry artifact is outside ledger authority")
+                raise ContractError("C02 retry artifact is outside ledger authority")
         elif record["attempt"] != 1:
-            raise ContractError("C01 primary artifact carries a retry attempt")
+            raise ContractError("C02 primary artifact carries a retry attempt")
         runs.append(record)
     return runs, missing
 
@@ -1798,31 +2105,34 @@ def build_cycle_audit(
             )
 
     obligation_results = {
-        "C01-OBL-01": full_run_matrix and all(
+        "C02-OBL-01": full_run_matrix and all(
             row["medium_reconstruction"]["passed"] for row in runs
         ),
-        "C01-OBL-02": full_run_matrix
+        "C02-OBL-02": full_run_matrix
         and bool(medium_dependency)
         and all(row["structural_control_passed"] for row in medium_dependency),
-        "C01-OBL-03": full_run_matrix and all(
+        "C02-OBL-03": full_run_matrix and all(
             row["baseline_viability_audit"]["profile_count"] == 4
             and row["baseline_viability_audit"]["reader_configuration_count"] == 2
             for row in runs
         ),
-        "C01-OBL-04": full_run_matrix
+        "C02-OBL-04": full_run_matrix
         and all(row["exposure_match_audit"]["passed"] for row in runs),
-        "C01-OBL-05": full_run_matrix and baseline_matches,
-        "C01-OBL-06": full_run_matrix
+        "C02-OBL-05": full_run_matrix and baseline_matches,
+        "C02-OBL-06": full_run_matrix
         and no_reused_worker_scope
         and no_prior_trace_at_w0,
-        "C01-OBL-07": full_run_matrix and all(
-            opportunity["restored_snapshot_digest"]
-            == opportunity["branch_point_snapshot_digest"]
+        "C02-OBL-07": full_run_matrix and all(
+            opportunity["restored_restoration_projection_digest"]
+            == opportunity["branch_point_restoration_projection_digest"]
+            and opportunity["continuation_digest"]
+            == opportunity["twin_continuation_digest"]
+            and opportunity["equal_input_continuation"] is True
             and opportunity["cross_branch_state_carryover"] is False
             for run in runs
             for opportunity in run["opportunity_records"]
         ),
-        "C01-OBL-08": full_run_matrix
+        "C02-OBL-08": full_run_matrix
         and bool(support_matching)
         and all(
             row["ordinary_projection_match"]
@@ -1830,20 +2140,20 @@ def build_cycle_audit(
             and row["carrier_exception_declared"]
             for row in support_matching
         ),
-        "C01-OBL-09": full_run_matrix and all(
+        "C02-OBL-09": full_run_matrix and all(
             row["runtime_binding"]["fallback_used"] is False for row in runs
         ),
-        "C01-OBL-10": full_run_matrix
+        "C02-OBL-10": full_run_matrix
         and bool(producer_parity)
         and all(
             row["candidate_invocation_count"] == row["freeze_invocation_count"] == 4
             and row["configuration_except_medium_match"]
             for row in producer_parity
         ),
-        "C01-OBL-11": full_run_matrix
+        "C02-OBL-11": full_run_matrix
         and bool(trace_shuffle)
         and all(all(value for key, value in row.items() if key != "seed") for row in trace_shuffle),
-        "C01-OBL-12": full_run_matrix and all(
+        "C02-OBL-12": full_run_matrix and all(
             row["runtime_receipt"]["conformance_status"] == "passed"
             and row["graph_repository_write_observed"] is False
             for row in runs
@@ -1851,9 +2161,9 @@ def build_cycle_audit(
     }
     complete = full_run_matrix and all(obligation_results.values())
     result = {
-        "artifact_kind": "p2_i1_c01_cycle_audit",
+        "artifact_kind": "p2_i1_c02_cycle_audit",
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "evidence_effect": "control_and_integrity_only",
         "exec_freeze_digest": freeze["canonical_payload_digest"],
         "effective_run_count": len(runs),
@@ -1889,27 +2199,27 @@ def build_cycle_audit(
 def build_execution_manifest(
     *, policy: Mapping[str, Any], freeze: Mapping[str, Any]
 ) -> dict[str, Any]:
-    """Index retained C01 machine artifacts without interpreting outcomes."""
+    """Index retained C02 machine artifacts without interpreting outcomes."""
 
     validate_exec_freeze(freeze)
     root = find_repository_root()
     runs, missing = _load_effective_runs(policy, freeze)
     if missing:
-        raise ContractError("C01 execution manifest requires every effective run")
+        raise ContractError("C02 execution manifest requires every effective run")
     contract = policy["artifact_contract"]
     audit_path = root / contract["cycle_audit_path"]
     ledger_path = root / contract["retry_ledger_path"]
     if not audit_path.is_file() or not ledger_path.is_file():
-        raise ContractError("C01 execution manifest requires cycle audit and retry ledger")
+        raise ContractError("C02 execution manifest requires cycle audit and retry ledger")
     audit = load_json(audit_path)
     _verify_canonical_payload(audit)
     expected_audit = build_cycle_audit(policy=policy, freeze=freeze)
     if audit != expected_audit:
-        raise ContractError("C01 cycle audit does not reconstruct from retained runs")
+        raise ContractError("C02 cycle audit does not reconstruct from retained runs")
     ledger = load_json(ledger_path)
     validate_retry_ledger(ledger, freeze=freeze)
     if audit.get("exec_freeze_digest") != freeze["canonical_payload_digest"]:
-        raise ContractError("C01 audit references another EXEC-FREEZE")
+        raise ContractError("C02 audit references another EXEC-FREEZE")
 
     files: list[dict[str, Any]] = []
     for run in runs:
@@ -1927,8 +2237,8 @@ def build_execution_manifest(
             }
         )
     for artifact_id, role, path in (
-        ("P2-I1-C01-retry-ledger", "retry_ledger", ledger_path),
-        ("P2-I1-C01-cycle-audit", "cycle_audit", audit_path),
+        ("P2-I1-C02-retry-ledger", "retry_ledger", ledger_path),
+        ("P2-I1-C02-cycle-audit", "cycle_audit", audit_path),
     ):
         files.append(
             {
@@ -1942,9 +2252,9 @@ def build_execution_manifest(
             }
         )
     result = {
-        "artifact_kind": "p2_i1_c01_execution_manifest",
+        "artifact_kind": "p2_i1_c02_execution_manifest",
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "evidence_effect": "retention_index_only",
         "exec_freeze_digest": freeze["canonical_payload_digest"],
         "artifact_count": len(files),
@@ -2031,7 +2341,7 @@ def command_build_exec_freeze(args: argparse.Namespace) -> int:
     )
     expected = load_execution_policy()["artifact_contract"]["exec_freeze_path"]
     if result["retention_eligible"] is True and args.output != expected:
-        raise ContractError("retained C01 EXEC-FREEZE output path drifted")
+        raise ContractError("retained C02 EXEC-FREEZE output path drifted")
     _write_output(args.output, result)
     return 0
 
@@ -2040,7 +2350,7 @@ def command_build_execution_binding(args: argparse.Namespace) -> int:
     policy = load_execution_policy()
     expected = policy["artifact_contract"]["execution_binding_receipt_path"]
     if args.output != expected and not args.allow_dirty_preview:
-        raise ContractError("retained C01 binding receipt output path drifted")
+        raise ContractError("retained C02 binding receipt output path drifted")
     result = build_execution_binding_receipt(
         graph_root=Path(args.graph_root),
         allow_dirty_preview=args.allow_dirty_preview,
@@ -2058,9 +2368,9 @@ def command_validate_exec_freeze(args: argparse.Namespace) -> int:
         require_tracked=args.require_tracked,
     )
     result = {
-        "artifact_kind": "p2_i1_c01_exec_freeze_validation",
+        "artifact_kind": "p2_i1_c02_exec_freeze_validation",
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "status": "passed",
         "tracked_validation_required": args.require_tracked,
         "candidate_execution_authorized": freeze[
@@ -2102,7 +2412,7 @@ def command_run_cycle(args: argparse.Namespace) -> int:
     validate_exec_freeze(freeze, freeze_path=freeze_path, require_tracked=True)
     policy = load_execution_policy()
     if any(path.exists() for path in _candidate_result_paths(policy)):
-        raise ContractError("C01 cycle refuses to overwrite existing candidate artifacts")
+        raise ContractError("C02 cycle refuses to overwrite existing candidate artifacts")
     failures: list[dict[str, Any]] = []
     for spec in freeze["run_specs"]:
         command = _run_one_subprocess_command(
@@ -2176,9 +2486,9 @@ def command_run_cycle(args: argparse.Namespace) -> int:
     _write_output(ledger_path_value, final_ledger)
     validate_retry_ledger(final_ledger, freeze=freeze)
     summary = {
-        "artifact_kind": "p2_i1_c01_cycle_execution_summary",
+        "artifact_kind": "p2_i1_c02_cycle_execution_summary",
         "schema_version": "1.0.0",
-        "cycle_id": "P2-I1-C01",
+        "cycle_id": "P2-I1-C02",
         "primary_run_count": 21,
         "primary_failure_count": len(failures),
         "retry_count": len(retry_results),
@@ -2199,7 +2509,7 @@ def command_build_cycle_audit(args: argparse.Namespace) -> int:
     result = build_cycle_audit(policy=load_execution_policy(), freeze=freeze)
     expected = load_execution_policy()["artifact_contract"]["cycle_audit_path"]
     if args.output != expected:
-        raise ContractError("C01 cycle audit output differs from frozen contract")
+        raise ContractError("C02 cycle audit output differs from frozen contract")
     _write_output(args.output, result)
     return 0
 
@@ -2211,7 +2521,7 @@ def command_build_execution_manifest(args: argparse.Namespace) -> int:
     policy = load_execution_policy()
     expected = policy["artifact_contract"]["execution_manifest_path"]
     if args.output != expected:
-        raise ContractError("C01 execution manifest output differs from frozen contract")
+        raise ContractError("C02 execution manifest output differs from frozen contract")
     _write_output(
         args.output,
         build_execution_manifest(policy=policy, freeze=freeze),
@@ -2278,7 +2588,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         return int(args.handler(args))
     except (ContractError, KeyError, TypeError, ValueError, OSError) as exc:
-        sys.stderr.write(f"P2-I1 C01 execution error: {exc}\n")
+        sys.stderr.write(f"P2-I1 C02 execution error: {exc}\n")
         return 2
 
 

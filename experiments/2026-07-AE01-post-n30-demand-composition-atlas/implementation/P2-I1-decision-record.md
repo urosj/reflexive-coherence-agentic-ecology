@@ -2994,15 +2994,104 @@ Reopen `P2-I1-DEC-026` if:
 - the added binding changes the scientific fixture, cell, control, or claim
   semantics rather than merely making them executable.
 
-## 30. Current decision boundary and next work
+## 30. `P2-I1-DEC-027` — Native branch-restoration identity
 
-All scientific decision-level semantics currently required for registration
-are resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
-interpretation, and `L01-Q14` remains reserved for R3 after concrete execution.
+**Status:** accepted for a separately frozen C02 correction
 
-REG-GATE is complete under `P2-I1-DEC-021` through `DEC-025`. The immediate work
-is C01 executable materialization: exact native operations, per-run and
-cross-run obligation audits, deterministic retry handling, expected artifacts,
-and one candidate-free cycle authorization. Candidate execution remains
-blocked until `P2-I1-DEC-026` is accepted and a retained, tracked
-`P2-I1-EXEC-FREEZE` validates against the unchanged execution source.
+**Question IDs:** C01 W2 restoration, `C01-OBL-07`, and exact native
+save/load semantics
+
+### 30.1 Why the decision became necessary
+
+The exact C01 cycle attempted all 21 primaries and the seven deterministic
+retries permitted by its freeze. Every attempt stopped before producer
+invocation because the restored full snapshot digest differed from the W2
+snapshot digest. C01 consequently closed bounded incomplete with no scientific
+result and an exhausted attempt budget. The complete machine evidence and
+reconstruction instructions are retained in the
+[C01 bounded-incomplete record](../reports/P2-I1-C01-bounded-incomplete.md).
+
+Bounded native round-trip diagnosis found exact preservation of the complete
+`dynamics.lgrc9v3_runtime` artifact. The six differing leaves were confined to
+the nested cached GRC9V3 snapshot: restoration materialized budget-source,
+parameter-identity, and RNG defaults and canonicalized one undirected edge's
+endpoint ordering. Outer geometry, events, observables, and the independently
+reconstructed medium projection were equal.
+
+The failure therefore exposed an RCAE equality-predicate decision. It did not
+show that PyGRC lost the native LGRC runtime state, and it did not constitute
+negative niche evidence.
+
+### 30.2 Options considered
+
+| Option | Benefit | Cost | Disposition |
+| --- | --- | --- | --- |
+| Declare a native restoration projection | Preserves the causal and geometric state C02 uses while excluding representation-only cache normalization | Requires a new cycle, explicit projection, raw-digest retention, and continuation tests | **Accepted** |
+| Normalize the six observed cache differences before full comparison | Small local predicate change | Couples RCAE to internal cache normalization and risks silently expanding exclusions | Rejected |
+| Continue requiring full snapshot equality | Maximum representational identity | Treats a public native load as unusable even though its LGRC runtime artifact is exact | Rejected for C02; reopen if cached identity is later shown scientifically necessary |
+| Patch PyGRC or mutate the restored state | Could force byte equality | Violates graph read-only, no-fallback, and explicit-native-transition constraints | Rejected |
+
+### 30.3 Accepted C02 contract
+
+C02 preserves the C01 fixture, cells, seeds, metrics, controls, attempts, and
+claim ceiling. It changes only branch-restoration identity:
+
+```text
+native branch-restoration identity
+  = outer topology, basin attributes, and edge labels
+  + exact native LGRC runtime artifact
+  + event and observable state
+  + separately verified medium reconstruction
+```
+
+The nested `caches.base_grc9v3_snapshot` remains present in the full raw native
+snapshot but does not control restoration equality. Every opportunity retains:
+
+- pre-save and post-load full raw snapshot digests;
+- pre-save and post-load restoration-projection digests;
+- whether raw normalization was observed;
+- exact medium-reconstruction identity; and
+- an equal-input continuation comparison between independently restored
+  branches.
+
+The projection must fail closed when any included geometry, runtime, event,
+observable, or medium field drifts. Equal projections alone do not establish
+full native equivalence: the continuation comparison is also mandatory before
+the opportunity is evaluable.
+
+This is an RCAE harness correction. It authorizes no PyGRC modification,
+monkey-patch, state injection, fallback, candidate result, or scientific claim.
+If projected state or equal-input continuation differs, C02 stops and the
+native runtime question may reopen.
+
+C01 remains immutable and cannot be rescued or rerun. C02 requires its own
+source anchor, binding receipt, EXEC-FREEZE, paths, attempt scope, audit, and
+manifest.
+
+Owner acceptance is recorded by the stable machine-readable marker:
+
+```text
+P2-I1-DEC-027 accepted for C02 restoration correction
+```
+
+### 30.4 Reopening conditions
+
+Reopen `P2-I1-DEC-027` if:
+
+- a projected runtime, geometry, event, observable, or medium field differs;
+- two independently restored equal-input branches continue differently;
+- source inspection shows an excluded cached field carries scientific state
+  used by P2-I1;
+- the projection requires an expanding list of exception fields; or
+- implementation would require PyGRC modification, direct state injection, or
+  a constructed fallback.
+
+## 31. Current decision boundary and next work
+
+C01 is retained as `bounded_incomplete_operational` with no scientific result.
+`P2-I1-DEC-027` authorizes materialization of C02 as a separately frozen
+restoration correction. No C02 candidate operation is authorized until its
+source, binding receipt, and tracked EXEC-FREEZE pass.
+
+`L01-Q11` through `L01-Q13` remain open for terminal interpretation, and
+`L01-Q14` remains reserved for R3 after a concrete scientific execution.

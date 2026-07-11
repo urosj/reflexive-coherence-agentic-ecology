@@ -23,6 +23,7 @@ from p2_i1_execution import (
     build_cycle_audit,
     build_exec_freeze,
     load_execution_policy,
+    restoration_projection,
     validate_exec_freeze,
     validate_execution_policy,
     validate_execution_specific_capabilities,
@@ -61,11 +62,16 @@ class P2I1ExecutionTest(unittest.TestCase):
         self.policy = load_execution_policy()
         self._tmp = tempfile.TemporaryDirectory(dir=SCRIPTS.parents[2] / "outputs")
         self.addCleanup(self._tmp.cleanup)
+        candidate_paths = patch(
+            "p2_i1_execution._candidate_result_paths", return_value=[]
+        )
+        candidate_paths.start()
+        self.addCleanup(candidate_paths.stop)
         self.binding_path = Path(self._tmp.name) / "binding-preview.json"
         body = {
-            "artifact_kind": "p2_i1_c01_execution_binding_receipt_preview",
+            "artifact_kind": "p2_i1_c02_execution_binding_receipt_preview",
             "schema_version": "1.0.0",
-            "cycle_id": "P2-I1-C01",
+            "cycle_id": "P2-I1-C02",
             "evidence_effect": "none_pre_execution_binding_only",
             "source_revision": _git_revision(),
             "source_worktree_clean": False,
@@ -102,6 +108,30 @@ class P2I1ExecutionTest(unittest.TestCase):
         self.assertEqual(result["run_count"], 21)
         self.assertEqual(result["live_obligation_count"], 12)
         self.assertFalse(result["candidate_execution_authorized"])
+
+    def test_restoration_projection_ignores_only_nested_base_cache(self) -> None:
+        snapshot = {
+            "metadata": {"model_family": "LGRC9V3", "step_index": 2},
+            "topology": {"nodes": [0, 1], "edges": [0]},
+            "basin_attributes": {"0": {"coherence": 1.0}},
+            "edge_labels": {"0": "writer"},
+            "dynamics": {"lgrc9v3_runtime": {"scheduler_event_index": 2}},
+            "observables": {"total_energy": 1.0},
+            "events": [{"kind": "arrival"}],
+            "caches": {"base_grc9v3_snapshot": {"rng_state": None}},
+        }
+        normalized = deepcopy(snapshot)
+        normalized["caches"]["base_grc9v3_snapshot"] = {
+            "rng_state": {"engine": "python_random"},
+            "params_identity": "materialized",
+        }
+        self.assertEqual(
+            restoration_projection(snapshot), restoration_projection(normalized)
+        )
+        normalized["dynamics"]["lgrc9v3_runtime"]["scheduler_event_index"] = 3
+        self.assertNotEqual(
+            restoration_projection(snapshot), restoration_projection(normalized)
+        )
 
     def test_execution_policy_rejects_unknown_semantic_field(self) -> None:
         changed = deepcopy(self.policy)
@@ -164,7 +194,7 @@ class P2I1ExecutionTest(unittest.TestCase):
             execution_binding_path=self.binding_path,
             allow_dirty_preview=True,
         )
-        self.assertEqual(freeze["artifact_kind"], "p2_i1_c01_exec_freeze_preview")
+        self.assertEqual(freeze["artifact_kind"], "p2_i1_c02_exec_freeze_preview")
         self.assertFalse(freeze["retention_eligible"])
         self.assertTrue(freeze["preview_only"])
         self.assertFalse(freeze["candidate_execution_authorized"])
