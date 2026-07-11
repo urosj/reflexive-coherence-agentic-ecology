@@ -1,14 +1,14 @@
 # P2-I1 Minimal Shared-Medium Niche Formation Checklist
 
-**Status:** active provisional lane checklist; no calibration, registration, or candidate execution completed
+**Status:** active provisional lane checklist; calibration completed, no registration or candidate execution completed
 
 **Iteration:** `P2-I1`
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C00` — candidate-blind calibration
+**Current probe cycle:** `P2-I1-C00` — registration preparation
 
-**Current local gate:** `P2-I1-CAL-GATE`
+**Current local gate:** `P2-I1-REG-GATE`
 
 **Acceptance ceiling:** `AE01-C2`; no lane result assigned
 
@@ -73,7 +73,7 @@ Rules:
 | --- | --- | --- | --- |
 | `P2-I1-THEORY-GATE` | L01 meaning, distinctions, open questions, and decision timing accepted | Passed | Accepted brief and owner review disposition dated 2026-07-10 |
 | `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Passed | Reviewed calibration preregistration with candidate outcomes absent |
-| `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Pending | Calibration input lineage, calibration record, frozen metric sheet |
+| `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Passed | Reviewed calibration input lineage, calibration record, and frozen metric sheet |
 | `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Pending | Reviewed bundle tying every registered surface together |
 | `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Pending | Cell artifacts, receipts, control outcomes, reconstruction |
 | `P2-I1-CLOSE-GATE` | Developmental interpretation and terminal classification complete | Pending | Terminal record, report, retained manifest, R3 handoff |
@@ -516,27 +516,69 @@ Entry condition:
 
 Required calibration work:
 
-- [ ] Retain generator command/profile, dependencies, source revisions,
-  configuration identity, input digests, and resource envelope.
-- [ ] Verify the generator and input lineage contain no candidate-derived
-  outcome or post-outcome tuning.
-- [ ] Generate and retain all per-seed matched-null margins.
-- [ ] Run `freeze-resolution` once on the registered calibration input.
-- [ ] Verify `delta` equals the maximum of measurement resolution and absolute
-  matched-null margins.
-- [ ] Produce schema-valid `metric_calibration` and frozen `metric_sheet`
-  records.
-- [ ] Reconstruct calibration independently and compare canonical and file
-  digests.
-- [ ] Record calibration evidence effect as resolution-only, never lane
-  support or refutation.
+- [x] Retain generator command/profile, dependencies, source revisions,
+  configuration identity, input digests, and resource envelope. Evidence:
+  [CAL-GATE freeze](../contracts/p2-i1/calibration-freeze.json).
+- [x] Verify the generator and input lineage contain no candidate-derived
+  outcome or post-outcome tuning. Evidence: candidate-blindness projection in
+  the [CAL-GATE freeze](../contracts/p2-i1/calibration-freeze.json); independent
+  review remains the exit condition below.
+- [x] Generate and retain all per-seed matched-null margins. Evidence:
+  [matched null](../contracts/p2-i1/matched-null.json).
+- [x] Run `freeze-resolution` once on the registered calibration input.
+- [x] Verify `delta` equals the maximum of measurement resolution and absolute
+  matched-null margins. Observed values: maximum absolute null margin `0.0`,
+  measurement resolution `1e-12`, and frozen `delta=1e-12`.
+- [x] Produce schema-valid `metric_calibration` and frozen `metric_sheet`
+  records. Evidence: [metric calibration](../contracts/p2-i1/metric-calibration.json)
+  and [frozen metric sheet](../contracts/p2-i1/frozen-metric-sheet.json).
+- [x] Reconstruct calibration independently and compare canonical and file
+  digests. Evidence: reconstruction projection in the
+  [CAL-GATE freeze](../contracts/p2-i1/calibration-freeze.json).
+- [x] Record calibration evidence effect as resolution-only, never lane
+  support or refutation. Evidence: all retained CAL-GATE records.
 
 Exit gate `P2-I1-CAL-GATE`:
 
-- [ ] Matched-null provenance is complete and reconstructable.
-- [ ] Candidate blindness is reviewed rather than merely self-declared.
-- [ ] Frozen sheet references the retained calibration artifact.
-- [ ] Calibration opened no candidate outcome or lane claim.
+- [x] Matched-null provenance is complete and reconstructable.
+- [x] Candidate blindness is reviewed rather than merely self-declared.
+- [x] Frozen sheet references the retained calibration artifact.
+- [x] Calibration opened no candidate outcome or lane claim.
+
+CAL-GATE implementation progress — 2026-07-11:
+
+- [x] Retain five matched-null panels spanning every possible four-opportunity
+  formation fraction through the same aggregation and margin functions used by
+  later analysis.
+- [x] Retain zero margins for seeds `19`, `43`, `71`, `109`, and `163`, all
+  disjoint from candidate seeds `101`, `211`, and `307`.
+- [x] Freeze `delta=1e-12` from the numeric measurement floor because the
+  maximum absolute matched-null margin is `0.0`.
+- [x] Reproduce the matched null, metric calibration, and frozen metric sheet
+  byte-for-byte in a detached clean worktree with no PyGRC installed; all 57
+  tests and both validators pass.
+- [x] Obtain independent review and record the gate disposition. Review
+  packet: [P2-I1 CAL review](../reports/P2-I1-CAL-review.md).
+
+Implementation interpretation: the five equal null pairs show that the pure
+analysis path introduces no detectable difference anywhere in the discrete
+formation-fraction domain. Consequently `delta` is the numeric floor, not an
+empirical runtime-noise estimate and not a substantive effect-size boundary.
+It supports later proximity classification but cannot make a candidate result
+scientifically sufficient. Raw coverage, seed distribution, dependency,
+selectivity, causal controls, and alternate realizations remain decisive.
+Calibration consumed no PyGRC state and therefore says nothing about runtime
+formation behavior.
+
+CAL-GATE disposition — 2026-07-11:
+
+> The retained candidate-blind calibration is reconstructable, its zero null
+> margins freeze only the declared numeric resolution floor, and no candidate
+> or lane claim was opened.
+
+Disposition: `P2-I1-CAL-GATE=passed`. This opens registration work only.
+Candidate execution, selectivity evaluation, L01 rungs, and ecology claims
+remain closed.
 
 ## 8. Registration gate
 
@@ -545,7 +587,8 @@ Entry conditions:
 - [x] `P2-I1-THEORY-GATE` passed.
 - [x] `P2-I1-CAL-PRE-GATE` passed. Evidence:
   [P2-I1 CAL-PRE review](../reports/P2-I1-CAL-PRE-review.md).
-- [ ] `P2-I1-CAL-GATE` passed.
+- [x] `P2-I1-CAL-GATE` passed. Evidence:
+  [P2-I1 CAL review](../reports/P2-I1-CAL-review.md).
 
 ### 8.1 Operational identities
 
@@ -821,18 +864,20 @@ Applicability rules:
 
 ## 11. Current frozen probe cycle
 
-### `P2-I1-C00` — theory review and calibration preregistration
+### `P2-I1-C00` — design freeze, calibration, and registration preparation
 
 **Status:** active, not frozen for candidate execution
 
-**Evidence effect:** none
+**Evidence effect:** resolution only; no candidate evidence
 
 - [x] Dedicated brief drafted.
 - [x] Dedicated provisional checklist drafted.
 - [x] Brief review completed.
 - [x] `P2-I1-THEORY-GATE` passed.
-- [ ] Calibration preregistration accepted and
+- [x] Calibration preregistration accepted and
   `P2-I1-CAL-PRE-GATE` passed.
+- [x] Candidate-blind calibration independently reviewed and
+  `P2-I1-CAL-GATE` passed.
 - [ ] Cycle closed as design-only and handed to `P2-I1-C01`.
 
 The first candidate-execution cycle will be `P2-I1-C01` unless calibration or
@@ -870,7 +915,8 @@ candidate_outcomes_absent_at_freeze:
 
 Entry conditions:
 
-- [ ] `P2-I1-CAL-GATE` passed.
+- [x] `P2-I1-CAL-GATE` passed. Evidence:
+  [P2-I1 CAL review](../reports/P2-I1-CAL-review.md).
 - [ ] `P2-I1-REG-GATE` passed.
 - [ ] Active candidate-execution cycle frozen.
 
@@ -1108,9 +1154,9 @@ without tuning its conclusion and decide:
 
 1. [x] Review and accept the P2-I1 brief.
 2. [x] Pass `P2-I1-THEORY-GATE` while preserving open research questions.
-3. [ ] Freeze the response, orientation, opportunity, normalization, windows,
+3. [x] Freeze the response, orientation, opportunity, normalization, windows,
    realization, Policy A selectivity boundary, analysis identity, and
    matched-null inputs; pass `P2-I1-CAL-PRE-GATE`.
-4. [ ] Run candidate-blind calibration and pass `P2-I1-CAL-GATE`.
+4. [x] Run candidate-blind calibration and pass `P2-I1-CAL-GATE`.
 5. [ ] Materialize the exact L01 registration evidence bundle and pass
    `P2-I1-REG-GATE` before any candidate execution.

@@ -1,0 +1,391 @@
+{
+  "artifact_kind": "p2_i1_candidate_blind_matched_null",
+  "calibration_id": "rcae-p2-i1-candidate-blind-matched-null-v1",
+  "candidate_blind": true,
+  "canonical_payload_digest": "6b95026850da740fa1bcf286200a6ccda0363beae8613e0ab8bcb52d72f1873a",
+  "delta": 1e-12,
+  "evidence_effect": "resolution_only_no_candidate_evidence",
+  "measurement_resolution": 1e-12,
+  "panel_results": [
+    {
+      "null_a": {
+        "cell_id": "null_a",
+        "evaluable": true,
+        "formation_fraction": 0.0,
+        "formed_count": 0,
+        "opportunity_ids": [
+          "cal-19-null_a-0",
+          "cal-19-null_a-1",
+          "cal-19-null_a-2",
+          "cal-19-null_a-3"
+        ],
+        "oriented_response": 0.0,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 19,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "null_b": {
+        "cell_id": "null_b",
+        "evaluable": true,
+        "formation_fraction": 0.0,
+        "formed_count": 0,
+        "opportunity_ids": [
+          "cal-19-null_b-0",
+          "cal-19-null_b-1",
+          "cal-19-null_b-2",
+          "cal-19-null_b-3"
+        ],
+        "oriented_response": 0.0,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 19,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "paired": {
+        "candidate_cell_id": "null_a",
+        "candidate_fraction": 0.0,
+        "comparator_cell_id": "null_b",
+        "comparator_fraction": 0.0,
+        "normalized_margin": 0.0,
+        "raw_paired_difference": 0.0,
+        "resolution_status": "numeric_unclassified",
+        "seed": 19
+      },
+      "seed": 19
+    },
+    {
+      "null_a": {
+        "cell_id": "null_a",
+        "evaluable": true,
+        "formation_fraction": 0.25,
+        "formed_count": 1,
+        "opportunity_ids": [
+          "cal-43-null_a-0",
+          "cal-43-null_a-1",
+          "cal-43-null_a-2",
+          "cal-43-null_a-3"
+        ],
+        "oriented_response": 0.25,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 43,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "null_b": {
+        "cell_id": "null_b",
+        "evaluable": true,
+        "formation_fraction": 0.25,
+        "formed_count": 1,
+        "opportunity_ids": [
+          "cal-43-null_b-0",
+          "cal-43-null_b-1",
+          "cal-43-null_b-2",
+          "cal-43-null_b-3"
+        ],
+        "oriented_response": 0.25,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 43,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "paired": {
+        "candidate_cell_id": "null_a",
+        "candidate_fraction": 0.25,
+        "comparator_cell_id": "null_b",
+        "comparator_fraction": 0.25,
+        "normalized_margin": 0.0,
+        "raw_paired_difference": 0.0,
+        "resolution_status": "numeric_unclassified",
+        "seed": 43
+      },
+      "seed": 43
+    },
+    {
+      "null_a": {
+        "cell_id": "null_a",
+        "evaluable": true,
+        "formation_fraction": 0.5,
+        "formed_count": 2,
+        "opportunity_ids": [
+          "cal-71-null_a-0",
+          "cal-71-null_a-1",
+          "cal-71-null_a-2",
+          "cal-71-null_a-3"
+        ],
+        "oriented_response": 0.5,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 71,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "null_b": {
+        "cell_id": "null_b",
+        "evaluable": true,
+        "formation_fraction": 0.5,
+        "formed_count": 2,
+        "opportunity_ids": [
+          "cal-71-null_b-0",
+          "cal-71-null_b-1",
+          "cal-71-null_b-2",
+          "cal-71-null_b-3"
+        ],
+        "oriented_response": 0.5,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 71,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "paired": {
+        "candidate_cell_id": "null_a",
+        "candidate_fraction": 0.5,
+        "comparator_cell_id": "null_b",
+        "comparator_fraction": 0.5,
+        "normalized_margin": 0.0,
+        "raw_paired_difference": 0.0,
+        "resolution_status": "numeric_unclassified",
+        "seed": 71
+      },
+      "seed": 71
+    },
+    {
+      "null_a": {
+        "cell_id": "null_a",
+        "evaluable": true,
+        "formation_fraction": 0.75,
+        "formed_count": 3,
+        "opportunity_ids": [
+          "cal-109-null_a-0",
+          "cal-109-null_a-1",
+          "cal-109-null_a-2",
+          "cal-109-null_a-3"
+        ],
+        "oriented_response": 0.75,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 109,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "null_b": {
+        "cell_id": "null_b",
+        "evaluable": true,
+        "formation_fraction": 0.75,
+        "formed_count": 3,
+        "opportunity_ids": [
+          "cal-109-null_b-0",
+          "cal-109-null_b-1",
+          "cal-109-null_b-2",
+          "cal-109-null_b-3"
+        ],
+        "oriented_response": 0.75,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 109,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "paired": {
+        "candidate_cell_id": "null_a",
+        "candidate_fraction": 0.75,
+        "comparator_cell_id": "null_b",
+        "comparator_fraction": 0.75,
+        "normalized_margin": 0.0,
+        "raw_paired_difference": 0.0,
+        "resolution_status": "numeric_unclassified",
+        "seed": 109
+      },
+      "seed": 109
+    },
+    {
+      "null_a": {
+        "cell_id": "null_a",
+        "evaluable": true,
+        "formation_fraction": 1.0,
+        "formed_count": 4,
+        "opportunity_ids": [
+          "cal-163-null_a-0",
+          "cal-163-null_a-1",
+          "cal-163-null_a-2",
+          "cal-163-null_a-3"
+        ],
+        "oriented_response": 1.0,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 163,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "null_b": {
+        "cell_id": "null_b",
+        "evaluable": true,
+        "formation_fraction": 1.0,
+        "formed_count": 4,
+        "opportunity_ids": [
+          "cal-163-null_b-0",
+          "cal-163-null_b-1",
+          "cal-163-null_b-2",
+          "cal-163-null_b-3"
+        ],
+        "oriented_response": 1.0,
+        "planned_count": 4,
+        "profile_ids": [
+          "ctx-a-aligned",
+          "ctx-a-inverted",
+          "ctx-b-aligned",
+          "ctx-b-inverted"
+        ],
+        "seed": 163,
+        "status_counts": {
+          "blocked_by_control": 0,
+          "censored_runtime": 0,
+          "inadmissible": 0,
+          "missing_infrastructure": 0,
+          "observed": 4,
+          "structurally_unavailable": 0
+        }
+      },
+      "paired": {
+        "candidate_cell_id": "null_a",
+        "candidate_fraction": 1.0,
+        "comparator_cell_id": "null_b",
+        "comparator_fraction": 1.0,
+        "normalized_margin": 0.0,
+        "raw_paired_difference": 0.0,
+        "resolution_status": "numeric_unclassified",
+        "seed": 163
+      },
+      "seed": 163
+    }
+  ],
+  "pygrc_imported": false,
+  "runtime_execution": false,
+  "schema_version": "1.0.0",
+  "seed_margins": [
+    {
+      "matched_null_margin": 0.0,
+      "seed": 19
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 43
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 71
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 109
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 163
+    }
+  ]
+}
