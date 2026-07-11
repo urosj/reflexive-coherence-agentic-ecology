@@ -29,7 +29,9 @@
 **Current Phase 2 directive:**
 [P2-I1 minimal shared-medium niche formation brief](implementation/P2-I1-minimal-shared-medium-niche-brief.md)
 and
-[detailed living checklist](implementation/P2-I1-minimal-shared-medium-niche-checklist.md)
+[detailed living checklist](implementation/P2-I1-minimal-shared-medium-niche-checklist.md),
+with accepted
+[cumulative decision record](implementation/P2-I1-decision-record.md)
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and

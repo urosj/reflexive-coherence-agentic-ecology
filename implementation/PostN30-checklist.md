@@ -1011,6 +1011,77 @@ Detailed authority:
 - [x] Create the dedicated provisional, evidence-expandable P2-I1 checklist.
   Evidence:
   `experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I1-minimal-shared-medium-niche-checklist.md`.
+- [x] Select and record the P2-I1 realization family, considered alternatives,
+  and native/RCAE/inherited ownership without assigning evidence. Evidence:
+  `experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I1-decision-record.md`.
+- [x] Select and record the route-aspect source-pole participant carrier and
+  non-circular structural/lineage continuity fields plus the budget-derived
+  one-repeat reserve. Evidence: `P2-I1-DEC-002` in the cumulative P2-I1
+  decision record.
+- [x] Select and record the narrow ordered pulse-contact→feedback medium and
+  shared-local counterfactual access boundary. Evidence: `P2-I1-DEC-003` in
+  the cumulative P2-I1 decision record.
+- [x] Select and record formation of a later native packet-arrival opportunity
+  as the primary response family while leaving its exact raw formula and
+  aggregation open. Evidence: `P2-I1-DEC-004` in the cumulative P2-I1 decision
+  record.
+- [x] Freeze binary opportunity formation, per-seed formation-fraction
+  aggregation, and the scientific/operational missingness boundary without
+  pooling seeds. Evidence: `P2-I1-DEC-005` in the cumulative P2-I1 decision
+  record.
+- [x] Freeze four distinct-profile independent counterfactual opportunities per
+  seed, restored from one registered cell/seed branch point without state
+  carryover. Evidence: `P2-I1-DEC-006` in the cumulative P2-I1 decision record.
+- [x] Freeze two matched history-aligned/polarity-inverted susceptibility pairs,
+  their candidate-blind discrete selectivity threshold, developmental ladder,
+  inversion control, and configured-producer claim ceiling. Evidence:
+  `P2-I1-DEC-007` in the cumulative P2-I1 decision record.
+- [x] Freeze identity/higher-aligned formation orientation and the Phase 1
+  normalized paired margin while requiring raw fraction-point coverage beside
+  every normalized result. Evidence: `P2-I1-DEC-008` in the cumulative P2-I1
+  decision record.
+- [x] Freeze the W0–W4 native causal-event windows from empty baseline through
+  one bounded reader response, while reserving exact fixture event-time values
+  for the concrete profile decision. Evidence: `P2-I1-DEC-009` in the
+  cumulative P2-I1 decision record.
+- [x] Freeze the RCAE-owned symmetric four-node topology, canonical native IDs,
+  participant route aspect, feedback masks, four reader profiles,
+  static/resolved digest rule, participant-mediated relation, and mandatory
+  self-aftereffect boundary. Evidence: `P2-I1-DEC-010` in the cumulative P2-I1
+  decision record.
+- [x] Freeze the dyadic numeric base fixture and require proximity-aware reading
+  of its specific threshold-relative result, while integrity requirements
+  remain fail-closed. Evidence: `P2-I1-DEC-011` in the cumulative P2-I1
+  decision record.
+- [x] Freeze the three live seeds as small balanced `P/W` coherence offsets
+  supporting local numeric robustness only. Evidence: `P2-I1-DEC-012` in the
+  cumulative P2-I1 decision record.
+- [x] Freeze the candidate-blind matched null as identical synthetic panels
+  spanning all five formation fractions through the real RCAE analysis path,
+  with no runtime or candidate input. Evidence: `P2-I1-DEC-013` in the
+  cumulative P2-I1 decision record.
+- [x] Freeze the analysis boundary as one thin CLI, one pure no-PyGRC analysis
+  module, and one policy with aggregation/rung/terminal projections; generated
+  hashes remain implementation work. Evidence: `P2-I1-DEC-014` in the
+  cumulative P2-I1 decision record.
+- [x] Freeze participant/medium separation as an identical post-writer-state
+  comparison with the feedback row absent, while retaining the
+  participant-mediated read and self-aftereffect claim ceiling. Evidence:
+  `P2-I1-DEC-015` in the cumulative P2-I1 decision record.
+- [x] Freeze history-content causality through the neutral-content reference,
+  row-absent control, departure/arrival source-digest mismatch, and strict
+  native-order guard. Evidence: `P2-I1-DEC-016` in the cumulative P2-I1
+  decision record.
+- [x] Freeze the score-preserving reduced-support contrast and its no-parent
+  claim boundary. Evidence: `P2-I1-DEC-017` in the cumulative P2-I1 decision
+  record.
+- [x] Add a non-authoritative decision-to-execution projection mapping accepted
+  decisions into the seven cells and making unresolved cell semantics visible.
+  Evidence: section 20 of the cumulative P2-I1 decision record.
+- [x] Freeze the final cell as a doubled reader-packet carrier-load contrast
+  with no broad transfer or persistence claim. Evidence: `P2-I1-DEC-018` in
+  the cumulative P2-I1 decision record; the projection now covers all seven
+  cells.
 
 Cover checks:
 

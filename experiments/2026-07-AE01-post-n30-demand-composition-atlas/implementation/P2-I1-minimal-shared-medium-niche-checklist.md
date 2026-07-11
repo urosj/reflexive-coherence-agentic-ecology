@@ -16,6 +16,9 @@ preregistration
 **Theory and observation directive:**
 [P2-I1 brief](P2-I1-minimal-shared-medium-niche-brief.md)
 
+**Cumulative lane decision record:**
+[P2-I1 cumulative decision record](P2-I1-decision-record.md)
+
 **Frozen authorities:**
 [L01 hypothesis](../hypotheses/lane-hypotheses.md),
 [outcome and stopping contract](../hypotheses/outcome-and-stopping-contract.md),
@@ -169,20 +172,28 @@ valid outcomes.
 
 | Question ID | Question | Decision point | Current status | Evidence or disposition |
 | --- | --- | --- | --- | --- |
-| `L01-Q01` | What calibration participant carrier and continuity criterion will be used? | Calibration preregistration | Open | — |
-| `L01-Q02` | What calibration medium carrier and access scope will be used? | Calibration preregistration | Open | — |
-| `L01-Q03` | Which one response family is primary? | Calibration preregistration | Open | — |
-| `L01-Q04` | What orientation transform makes positive margin aligned? | Calibration preregistration | Open | — |
-| `L01-Q05` | What participant/compatibility discriminator tests selectivity? | Registration | Open | — |
-| `L01-Q06` | How are matched-null margins generated reproducibly? | Calibration preregistration | Open | — |
-| `L01-Q07` | What baseline and later-response windows define a margin? | Calibration preregistration | Open | — |
-| `L01-Q08` | Are participant and medium separated or co-constituted? | Controls and interpretation | Open | — |
-| `L01-Q09` | Does medium history cause the later response? | Execution and controls | Open | — |
-| `L01-Q10` | What support carries any appearance? | Withdrawal and interpretation | Open | — |
+| `L01-Q00` | Which realization family will produce fresh P2-I1 evidence? | Calibration preregistration | Decided | `P2-I1-DEC-001`: Option A feedback-conditioned packet opportunity |
+| `L01-Q01` | What calibration participant carrier and continuity criterion will be used? | Calibration preregistration | Decided | `P2-I1-DEC-002`: route-aspect source pole with structural/lineage continuity and budget-derived one-repeat reserve |
+| `L01-Q02` | What calibration medium carrier and access scope will be used? | Calibration preregistration | Decided | `P2-I1-DEC-003`: narrow ordered pulse-contact→feedback lineage with shared-local counterfactual access |
+| `L01-Q03` | Which one response family is primary? | Calibration preregistration | Decided | `P2-I1-DEC-004`: formation of a later native packet-arrival opportunity |
+| `L01-Q15` | What opportunity-level raw formation formula, units, and aggregation are primary? | Calibration preregistration | Decided | `P2-I1-DEC-005`: binary opportunity formation aggregated as a per-seed formation fraction; operational missingness invalidates rather than shrinks the seed denominator |
+| `L01-Q16` | How many later opportunities occur per seed, and are they independent, sequential, or cumulative? | Calibration preregistration | Decided | `P2-I1-DEC-006`: four distinct-profile independent counterfactual branches restored from one cell/seed branch point |
+| `L01-Q04` | What orientation transform makes positive margin aligned? | Calibration preregistration | Decided | `P2-I1-DEC-008`: identity orientation; higher formation fraction is aligned, with raw paired coverage retained beside the normalized margin |
+| `L01-Q05` | What participant/compatibility discriminator tests selectivity? | Calibration preregistration and registration import | Decided | `P2-I1-DEC-007`: two matched context pairs compare history-aligned with polarity-inverted configured susceptibility |
+| `L01-Q17` | Which exact reader, route, timing, and opportunity-profile identities instantiate the two polarity pairs? | Calibration preregistration | Decided | `P2-I1-DEC-010`: fixed node/edge/port, route-aspect, lineage, and four static/resolved profile identities; hashes remain generated outputs |
+| `L01-Q18` | What initial coherence, packet amounts, delays, feedback reference/threshold, and resulting viability values instantiate that topology? | Calibration preregistration | Decided | `P2-I1-DEC-011`: dyadic base state, analytically derived mechanism threshold, and proximity-aware reading of the specific result |
+| `L01-Q19` | How do deterministic seeds vary the base fixture, and what recurrence claim may they support? | Calibration preregistration | Decided | `P2-I1-DEC-012`: balanced `P/W` offsets `{-1/32, 0, +1/32}`; local numeric robustness only |
+| `L01-Q06` | How are matched-null margins generated reproducibly? | Calibration preregistration | Decided | `P2-I1-DEC-013`: analysis-only identical synthetic panel pairs span formation fractions `0`, `.25`, `.5`, `.75`, and `1`; expected margins are zero |
+| `L01-Q07` | What baseline and later-response windows define a margin? | Calibration preregistration | Decided | `P2-I1-DEC-009`: bounded W0–W4 native causal-event sequence, completed numerically by `P2-I1-DEC-011` |
+| `L01-Q20` | What portable analysis/generator boundary and digest surfaces freeze aggregation, rung classification, and terminal inputs? | Calibration preregistration | Decided | `P2-I1-DEC-014`: thin CLI, pure no-PyGRC analysis module, and one policy with three canonical projections; generated hashes remain implementation work |
+| `L01-Q08` | Are participant and medium separated or co-constituted? | Controls and interpretation | Decided | `P2-I1-DEC-015`: operationally separated carriers with participant-mediated reading; state-matched feedback-row absence controls private-state sufficiency |
+| `L01-Q09` | Does medium history cause the later response? | Execution and controls | Decided | `P2-I1-DEC-016`: neutral-content reference, row-absent control, departure/arrival source-digest mismatch, and strict native ordering distinguish content, presence, lineage, and order |
+| `L01-Q10` | What support carries any appearance? | Withdrawal and interpretation | Decided | `P2-I1-DEC-017`: `parent-context-contrast` is a score-preserving reduced-support active null; no actual parent basin or parent claim |
 | `L01-Q11` | Does the observed geometry justify niche-conditioning language? | Terminal interpretation | Open | — |
 | `L01-Q12` | Is another lane the better causal home? | Terminal interpretation or R3 | Open | — |
 | `L01-Q13` | Is the result reusable or generative beyond the fixture? | Classification-value reading and R3 | Open | — |
 | `L01-Q14` | Are first-class registration or control-outcome records necessary? | R3 | Open | — |
+| `L01-Q21` | Which one carrier or timescale axis does `carrier-timescale-contrast` vary, and what can it establish? | Calibration preregistration | Decided | `P2-I1-DEC-018`: double reader-packet amount from `.125` to `.25`; bounded carrier-load invariance only |
 
 An open question blocks only the gate named by its decision point. It is not a
 defect merely because the answer is unknown earlier.
@@ -199,26 +210,59 @@ Entry condition:
 
 ### 6.1 Response and realization identity
 
-- [ ] Select exactly one primary response family from `formation`,
-  `persistence`, `re-entry`, `cost`, or `susceptibility`.
-- [ ] Freeze the raw response formula, units, valid domain, and missing-value
-  semantics.
-- [ ] Freeze higher-is-aligned or lower-is-aligned orientation and the exact
-  transform from raw to oriented response.
-- [ ] Freeze calibration participant carrier, continuity criterion, medium
-  carrier, shared-access scope, and fixture/realization identity.
-- [ ] Freeze baseline window, writer window, later-opportunity window, and
-  response window.
-- [ ] Freeze normalization inputs and denominator semantics, including the
-  behavior of a zero or unavailable denominator.
-- [ ] Identify secondary responses in advance and prohibit them from replacing
-  the primary response inside the cycle.
-- [ ] Adopt selectivity Policy A: calibrated `delta` applies only to the primary
+- [x] Select the live realization family and separate native PyGRC,
+  RCAE-producer, and inherited-artifact ownership. Evidence:
+  [`P2-I1-DEC-001`](P2-I1-decision-record.md).
+- [x] Select the participant carrier and non-circular structural continuity
+  fields. Evidence: [`P2-I1-DEC-002`](P2-I1-decision-record.md).
+- [x] Freeze the participant viability floor as a budget-derived one-repeat
+  reserve evaluated at every model-owned event boundary with native
+  `epsilon_budget=1e-9`. Evidence:
+  [`P2-I1-DEC-002`](P2-I1-decision-record.md).
+- [x] Select exactly one primary response family from `formation`,
+  `persistence`, `re-entry`, `cost`, or `susceptibility`. Evidence:
+  [`P2-I1-DEC-004`](P2-I1-decision-record.md).
+- [x] Freeze the raw response formula, units, valid domain, and missing-value
+  semantics. Evidence: [`P2-I1-DEC-005`](P2-I1-decision-record.md).
+- [x] Freeze higher-is-aligned orientation and identity transformation from raw
+  to oriented response. Evidence:
+  [`P2-I1-DEC-008`](P2-I1-decision-record.md).
+- [x] Freeze the calibration participant carrier and continuity criterion.
+  Evidence: [`P2-I1-DEC-002`](P2-I1-decision-record.md).
+- [x] Freeze the medium carrier and shared-access scope. Evidence:
+  [`P2-I1-DEC-003`](P2-I1-decision-record.md).
+- [x] Freeze the RCAE-owned four-node logical fixture topology, participant
+  route aspect, shared-medium masks, and two symmetric reader-route roles.
+  Evidence: [`P2-I1-DEC-010`](P2-I1-decision-record.md).
+- [x] Freeze the dyadic numeric base state, packet amounts, native delay policy,
+  feedback reference/threshold, and budget projections. Evidence:
+  [`P2-I1-DEC-011`](P2-I1-decision-record.md).
+- [ ] Freeze the exact fixture and calibration-realization identity.
+- [x] Freeze baseline, writer, medium-materialization, later-opportunity, and
+  response windows as bounded native causal-event stages. Evidence:
+  [`P2-I1-DEC-009`](P2-I1-decision-record.md). Numeric event-time policy is
+  completed by [`P2-I1-DEC-011`](P2-I1-decision-record.md); concrete event IDs
+  remain generated outputs.
+- [x] Freeze primary-response aggregation, scientific versus operational
+  denominator semantics, and the normalized candidate/comparator denominator,
+  including zero and unavailable behavior. Evidence:
+  [`P2-I1-DEC-005`](P2-I1-decision-record.md) and
+  [`P2-I1-DEC-008`](P2-I1-decision-record.md).
+- [x] Identify secondary responses in advance and prohibit them from replacing
+  the primary response inside the cycle. Evidence:
+  [`P2-I1-DEC-005`](P2-I1-decision-record.md).
+- [x] Adopt selectivity Policy A: calibrated `delta` applies only to the primary
   candidate-versus-comparator margin; selectivity is a separate causal/control
-  gate and does not consume `delta`.
-- [ ] Freeze `selectivity_metric_uses_calibrated_delta=false`, the independent
+  gate and does not consume `delta`. Evidence:
+  [`P2-I1-DEC-007`](P2-I1-decision-record.md).
+- [x] Freeze `selectivity_metric_uses_calibrated_delta=false`, the independent
   `selectivity_threshold_source`, and
-  `selectivity_threshold_candidate_blind=true` before calibration.
+  `selectivity_threshold_candidate_blind=true` before calibration. Evidence:
+  [`P2-I1-DEC-007`](P2-I1-decision-record.md).
+- [x] Preserve threshold proximity and developmental interpretation for the
+  specific P2-I1 result rather than treating one crossing as the conclusion.
+  Evidence:
+  [`P2-I1-DEC-011`](P2-I1-decision-record.md).
 
 ### 6.2 Unit of analysis and opportunity structure
 
@@ -238,20 +282,34 @@ later_opportunity_event_id
 reader_or_local_differentiation_id
 raw_response
 oriented_response
-admissibility: admissible | inadmissible
+admissibility: admissible | inadmissible | not_evaluable
 opportunity_status: observed | inadmissible | structurally_unavailable |
   censored_runtime | missing_infrastructure | blocked_by_control
 ```
 
-- [ ] Freeze the number of later opportunities per seed.
-- [ ] Freeze whether opportunities are independent, sequential, or cumulative.
-- [ ] Freeze the aggregation from opportunity records to the seed-level
-  response and normalized margin.
-- [ ] Freeze treatment of missing, censored, and structurally unavailable
+Every feedback-threshold evaluation additionally retains observed value,
+configured threshold, signed distance, native reason, and whether the native
+transition occurred.
+
+- [x] Freeze live-seed variation as the three balanced `P/W` coherence offsets
+  in [`P2-I1-DEC-012`](P2-I1-decision-record.md), with no broad recurrence
+  claim.
+
+- [x] Freeze exactly four later opportunities per seed. Evidence:
+  [`P2-I1-DEC-006`](P2-I1-decision-record.md).
+- [x] Freeze the opportunities as independent counterfactual branches restored
+  from one registered cell/seed branch point. Evidence:
+  [`P2-I1-DEC-006`](P2-I1-decision-record.md).
+- [x] Freeze aggregation from opportunity records to the seed-level formation
+  fraction; normalized paired-margin specialization remains open. Evidence:
+  [`P2-I1-DEC-005`](P2-I1-decision-record.md).
+- [x] Freeze treatment of missing, censored, and structurally unavailable
   opportunities without silently removing them from the denominator.
-- [ ] Freeze the consistency mapping between `admissibility` and
-  `opportunity_status`, and how every status enters the denominator, seed
-  aggregate, and terminal interpretation.
+  Evidence: [`P2-I1-DEC-005`](P2-I1-decision-record.md).
+- [x] Freeze the consistency mapping between `admissibility` and
+  `opportunity_status`, and how every status enters the scientific denominator
+  and seed aggregate. Terminal interpretation remains a later gate. Evidence:
+  [`P2-I1-DEC-005`](P2-I1-decision-record.md).
 - [ ] Treat `structurally_unavailable` as potentially scientific while
   `censored_runtime` and `missing_infrastructure` remain operational and cannot
   support or refute the lane.
@@ -262,35 +320,51 @@ opportunity_status: observed | inadmissible | structurally_unavailable |
   `medium_dependency_control_refs`, joining writer, medium perturbation,
   persisted/decayed history, later opportunity, and response in machine data
   rather than authored interpretation.
-- [ ] Freeze `writer_reader_relation` as `same_carrier_later_state`,
-  `distinct_carrier`, `distinct_local_differentiation_same_basin`, or
-  `boundary_expression`.
-- [ ] Freeze whether the selected relation permits a sharedness claim, whether
-  a self-aftereffect control is mandatory, and the maximum claim available to
-  a same-carrier result.
+- [x] Freeze `writer_reader_relation` as `distinct_carrier` with
+  `participant_mediated_configured_producer` read mode. Evidence:
+  [`P2-I1-DEC-010`](P2-I1-decision-record.md).
+- [x] Freeze the four static opportunity-profile identities, canonical
+  node/edge/port mapping, portable lineage pattern, and static-versus-resolved
+  digest rule. Evidence: [`P2-I1-DEC-010`](P2-I1-decision-record.md).
+- [ ] Materialize the four static and per-run resolved profile digests with at
+  least two reader-configuration digests, exact cross-cell matching, and no
+  cross-branch state carryover.
+- [x] Freeze whether the selected relation permits a sharedness claim, whether
+  a self-aftereffect control is mandatory, and the maximum claim available.
+  Evidence: [`P2-I1-DEC-010`](P2-I1-decision-record.md): shared-local
+  counterfactual access is the ceiling, and participant-mediated reading
+  requires the self-aftereffect control.
 
 ### 6.3 Frozen analysis identity
 
+- [x] Freeze the thin-CLI, pure-analysis-module, and one-policy responsibility
+  boundary plus portable paths. Evidence:
+  [`P2-I1-DEC-014`](P2-I1-decision-record.md).
 - [ ] Freeze portable `analysis_script_path` and `analysis_script_sha256`.
 - [ ] Freeze `aggregation_policy_digest`, `rung_classifier_digest`, and
   `terminal_classifier_digest` before calibration or candidate outcomes.
 - [ ] Verify the analysis identity converts opportunity records into seed
   aggregates, margins, rung dispositions, and terminal inputs without authored
   recomputation.
-- [ ] Require a new CAL-PRE/CAL cycle if analysis code or aggregation identity
-  changes after calibration.
+- [x] Require a new CAL-PRE/CAL cycle if analysis code or scientific policy
+  identity changes after calibration. Evidence:
+  [`P2-I1-DEC-014`](P2-I1-decision-record.md).
 
 ### 6.4 Matched-null preregistration
 
-- [ ] Declare the matched-null generator, exact null configuration, and why it
-  measures resolution rather than acting as a weakened candidate.
+- [x] Declare the matched-null generator, exact null configuration, and why it
+  measures resolution rather than acting as a weakened candidate. Evidence:
+  [`P2-I1-DEC-013`](P2-I1-decision-record.md).
 - [ ] Freeze calibration input provenance, commands/profiles, dependencies,
   source revisions, input digests, resource envelope, and expected artifacts.
-- [ ] Freeze calibration seeds `19`, `43`, `71`, `109`, and `163`.
-- [ ] Verify calibration seeds are disjoint from candidate seeds `101`, `211`,
-  and `307`.
-- [ ] Declare that no candidate-derived input, candidate outcome, or
-  post-outcome tuning entered the null generator or preregistration.
+- [x] Freeze calibration seeds `19`, `43`, `71`, `109`, and `163`. Evidence:
+  [`P2-I1-DEC-013`](P2-I1-decision-record.md).
+- [x] Verify calibration seeds are disjoint from candidate seeds `101`, `211`,
+  and `307`. Evidence: [`P2-I1-DEC-013`](P2-I1-decision-record.md).
+- [x] Declare that no candidate-derived input, candidate outcome, PyGRC
+  runtime input, or post-outcome tuning enters the null generator or
+  preregistration. Evidence:
+  [`P2-I1-DEC-013`](P2-I1-decision-record.md).
 
 Exit gate `P2-I1-CAL-PRE-GATE`:
 
@@ -348,8 +422,13 @@ Entry conditions:
 - [ ] Persistence/decay and later-response windows frozen with rationale.
 - [ ] Parent context and support context declared separately from the candidate
   medium and assigned controls.
-- [ ] Participant/medium separation or co-constitution intervention plan
-  frozen.
+- [x] Freeze participant/medium separation with a state-matched
+  feedback-row-absent intervention; no co-constitution claim is made. Evidence:
+  [`P2-I1-DEC-015`](P2-I1-decision-record.md).
+
+The accepted plan controls private participant state as a sufficient cause but
+retains a participant-mediated reading ceiling. It does not claim autonomous
+reader access.
 
 If co-constitution is claimed, the plan must produce distinct outcomes for:
 
@@ -391,14 +470,20 @@ private_state_only_control
   drift.
 - [ ] Any digest mismatch fails closed and reopens CAL-PRE/CAL; prose review
   cannot waive it.
-- [ ] Participant-, compatibility-, location-, or formation-relative
-  selectivity discriminator frozen.
-- [ ] Freeze `selectivity_axis`, `selectivity_groups`, baseline viability per
-  group, expected interaction direction, minimum selectivity margin, and the
-  main-effect-versus-interaction test.
-- [ ] Import Policy A fields unchanged, demonstrate that the minimum
+- [x] Freeze configured polarity susceptibility as the compatibility-relative
+  selectivity discriminator. Evidence:
+  [`P2-I1-DEC-007`](P2-I1-decision-record.md).
+- [x] Freeze the `selectivity_axis`, aligned/inverted groups, positive expected
+  interaction direction, `0.5` minimum selectivity margin, and
+  main-effect-versus-interaction test. Concrete group profiles are fixed by
+  `P2-I1-DEC-010`; verified baseline viability remains registration work.
+  Evidence:
+  [`P2-I1-DEC-007`](P2-I1-decision-record.md).
+- [x] Import Policy A fields unchanged, demonstrate that the minimum
   selectivity margin derives from the frozen candidate-blind threshold source,
   and prohibit use of calibrated `delta` for selectivity classification.
+  Policy authority: [`P2-I1-DEC-007`](P2-I1-decision-record.md); import proof
+  remains a registration artifact.
 - [ ] Verify matched baseline opportunity and support for every selectivity
   group before the medium-history intervention.
 - [ ] Freeze `medium_history_match_fields`, exposure digest per group, trace
@@ -506,6 +591,15 @@ artifact. The table names the exact direct causal/withdrawal IDs for each cell;
 
 Cell-specific freeze requirements:
 
+- [x] Freeze the logical `reference`, `medium-freeze-withdrawal`, and
+  `trace-shuffle` interventions plus causal-order guard. Evidence:
+  [`P2-I1-DEC-015`](P2-I1-decision-record.md) and
+  [`P2-I1-DEC-016`](P2-I1-decision-record.md). Concrete configurations,
+  digests, and expected artifacts remain implementation work.
+- [x] Freeze `parent-context-contrast` as the single-axis, score-preserving
+  reduced-support transform in
+  [`P2-I1-DEC-017`](P2-I1-decision-record.md), with no parent-basin claim.
+
 - [ ] `medium-freeze-withdrawal` declares exactly one `intervention_kind` per
   probe cycle: `medium_freeze` or `scaffold_withdrawal`, plus whether
   participant opportunity, baseline support, and parent context are preserved.
@@ -521,13 +615,19 @@ Cell-specific freeze requirements:
   coherence/resource input where applicable.
 - [ ] `trace-shuffle` freezes only the source, lineage, ordering, or geometry
   relation to break, plus pre/post digests and quantity-match tolerance.
-- [ ] `carrier-timescale-contrast` varies exactly one registered axis and
-  freezes its expected interpretation; it is not an exploratory transfer
-  search.
+- [x] Freeze `carrier-timescale-contrast` as exactly one axis—reader-packet
+  amount `0.125` → `0.250`—with all other fields matched and no broad
+  transfer/timescale claim. Evidence:
+  [`P2-I1-DEC-018`](P2-I1-decision-record.md). Concrete config, digests, and
+  expected artifacts remain implementation work.
 
 No additional cell may be introduced inside a frozen cycle. Evidence may
 motivate a later preregistered cycle with a new cell, alternative, or revised
 question.
+
+Navigation: [decision-to-execution projection](P2-I1-decision-record.md#20-decision-to-execution-projection).
+All seven cells now have decision-level definitions; readiness boxes remain
+open until their configs, identities, artifacts, and reviews exist.
 
 ## 10. Control disposition and outcome tracking
 
