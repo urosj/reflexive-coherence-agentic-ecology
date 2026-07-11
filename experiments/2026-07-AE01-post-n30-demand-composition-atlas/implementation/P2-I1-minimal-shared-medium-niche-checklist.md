@@ -7,7 +7,7 @@ candidate execution completed
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C02` — restoration-correction source materialized
+**Current probe cycle:** `P2-I1-C02` — final freeze ready for tracking
 
 **Current local gate:** `P2-I1-EXEC-FREEZE`
 
@@ -1420,8 +1420,8 @@ historical C01 authority digest remains reconstructable.
 
 ### `P2-I1-C02` — bounded native restoration correction
 
-**Status:** candidate-free source materialized; clean source anchor and retained
-EXEC-FREEZE pending
+**Status:** clean source anchor committed; exact candidate-free binding and
+EXEC-FREEZE reconstructed; tracked authorization pending
 
 **Evidence effect:** none; successor implementation only
 
@@ -1434,8 +1434,10 @@ EXEC-FREEZE pending
   claim ceiling are imported without scientific change.
 - [x] The shared Phase 1 analysis and registered configuration identities remain
   byte-identical.
-- [ ] Clean C02 source-anchor commit retained.
-- [ ] Final C02 binding receipt and EXEC-FREEZE generated from that clean anchor.
+- [x] Clean C02 source-anchor commit retained as `c2def54`.
+- [x] Final C02 binding receipt and EXEC-FREEZE generated from that clean anchor
+  and reproduced byte-for-byte in a separate clone. Evidence:
+  [C02 EXEC-FREEZE review](../reports/P2-I1-C02-EXEC-FREEZE-review.md).
 - [ ] Tracked C02 EXEC-FREEZE validation passed before any C02 operation.
 
 ### C02 implementation and geometric interpretation — 2026-07-11
@@ -1484,6 +1486,14 @@ runtime drift does. Execution tests now isolate candidate-result paths, so the
 suite remains usable after a prior cycle is retained. A dirty-worktree binding
 and freeze produce only non-retainable C02 preview artifacts with candidate
 authority false; no C02 writer, medium, producer, or outcome operation has run.
+
+Final generation from clean source `c2def54` produced a retained-eligible C02
+binding receipt and EXEC-FREEZE. A separate clone regenerated both files
+byte-for-byte. The freeze binds 21 primary runs, twelve live obligations,
+fifteen authorities, nine source files, no candidate outcomes, and no executed
+candidate operation. Internal validation passes; tracked validation remains the
+last mechanical boundary. Exact identities are recorded in the
+[C02 EXEC-FREEZE review](../reports/P2-I1-C02-EXEC-FREEZE-review.md).
 
 ### Candidate-execution freeze template
 
@@ -1742,7 +1752,7 @@ Rules:
 | --- | --- | --- | --- | --- | --- |
 | `P2-I1-C00` | Theory, calibration, and registration preparation | Design-only; closed | REG-GATE passed; no candidate execution | Registration-only bundle; no scientific result | Handed exact probe boundary to `P2-I1-C01` |
 | `P2-I1-C01` | First exact candidate-execution cycle | Frozen; EXEC-FREEZE passed | Bounded incomplete: 21 primaries and 7 retries stopped at W2 restoration check | Control/integrity only; no scientific result | Disposition DEC-027 before any C02 correction |
-| `P2-I1-C02` | Correct the over-broad RCAE restoration predicate only | Source materialized; freeze pending | Not authorized or executed | None | Pass a separate tracked C02 EXEC-FREEZE |
+| `P2-I1-C02` | Correct the over-broad RCAE restoration predicate only | Source committed; final freeze ready for tracking | Not authorized or executed | None | Track exact binding/freeze and pass `--require-tracked` |
 
 Completed and superseded cycles remain in this table. Their records and
 artifacts are never replaced by the successor cycle.
@@ -1760,6 +1770,8 @@ artifacts are never replaced by the successor cycle.
 | `P2-I1-C01-EXEC-FREEZE` | `P2-I1-C01` | Exact-cycle execution authorization | `contracts/p2-i1/c01/exec-freeze.json` | Exact | Cell, seed, attempt, obligation, and claim scope | `registration-only` | Retained |
 | `P2-I1-C01-RETRY` | `P2-I1-C01` | Primary-failure and retry ledger | `contracts/p2-i1/c01/retry-ledger.json` | Exact from frozen cycle execution | Attempt integrity and operational failure classification | `control` | Retained |
 | `P2-I1-C01-AUDIT` | `P2-I1-C01` | Incomplete-cycle audit | `contracts/p2-i1/c01/cycle-audit.json` | Exact from retained ledger and run paths | Obligation blocking and no-scientific-result boundary | `control` | Retained |
+| `P2-I1-C02-BINDING` | `P2-I1-C02` | Successor runtime binding receipt | `contracts/p2-i1/c02/execution-binding-receipt.json` | Exact in separate clone | D-027 native callable and source identity | `registration-only` | Generated; retention pending |
+| `P2-I1-C02-EXEC-FREEZE` | `P2-I1-C02` | Exact successor-cycle authorization | `contracts/p2-i1/c02/exec-freeze.json` | Exact in separate clone | Projection, continuation, cell, seed, attempt, and claim scope | `registration-only` | Generated; retention pending |
 
 Allowed evidence effects are `method`, `resolution-only`, `registration-only`,
 `positive`, `negative`, `control`, `reconstruction`, and `interpretation`.
@@ -1798,5 +1810,7 @@ without tuning its conclusion and decide:
 8. [x] Accept `P2-I1-DEC-027` while preserving C01 as bounded incomplete.
 9. [x] Materialize candidate-free C02 source without changing the scientific
    matrix or shared analysis identity.
-10. [ ] Commit the C02 source anchor, generate its final binding/freeze, and
-    pass tracked `P2-I1-EXEC-FREEZE` before any C02 operation.
+10. [x] Commit the C02 source anchor and generate its byte-identical final
+    binding receipt and EXEC-FREEZE.
+11. [ ] Track those records and pass `--require-tracked` before any C02
+    operation.

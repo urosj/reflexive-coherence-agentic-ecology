@@ -31,6 +31,9 @@ Phase 2 gate reviews:
 - [P2-I1 C01 bounded-incomplete record](P2-I1-C01-bounded-incomplete.md)
   retains the universal W2 restoration failure, exhausted retry scope, bounded
   diagnosis, and evidence for a separately frozen C02 correction.
+- [P2-I1 C02 EXEC-FREEZE review](P2-I1-C02-EXEC-FREEZE-review.md) verifies the
+  D-027 restoration correction, exact successor scope, and byte-identical
+  candidate-free reconstruction before tracked authorization.
 
 Reports use either:
 
