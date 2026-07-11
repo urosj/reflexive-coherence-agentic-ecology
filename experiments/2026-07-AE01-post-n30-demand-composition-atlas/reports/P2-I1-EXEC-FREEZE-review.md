@@ -1,6 +1,6 @@
 # P2-I1 EXEC-FREEZE Review
 
-**Status:** ready for retained tracking and owner disposition
+**Status:** passed
 
 **Gate under review:** `P2-I1-EXEC-FREEZE`
 
@@ -134,39 +134,37 @@ machine fields and failure effects so execution can resolve them honestly:
 An incomplete run matrix cannot vacuously pass any obligation. Structural
 audits preserve raw observed relations and defer scientific interpretation.
 
-## 6. Remaining mechanical boundary
+## 6. Tracked mechanical boundary
 
-Untracked validation passes, proving the two records are internally valid.
-Tracked validation currently fails with the expected message:
+The reviewed binding receipt and EXEC-FREEZE were retained in commit
+`fff1690`. Validation with `--require-tracked` then passed, proving that both
+records match their current tracked `HEAD` bytes and that the frozen source
+revision, policy, paths, runtime binding, and exact cycle identities remain
+consistent.
 
-```text
-C01 EXEC-FREEZE must be tracked in the current HEAD
-```
-
-This is not an implementation failure. It is the intended last gate: candidate
-execution remains impossible until the reviewed receipt and freeze are
-committed. After that commit, rerun validation with `--require-tracked`; only a
-pass can close EXEC-FREEZE and open the 21-run cycle.
+This closes the final mechanical boundary for EXEC-FREEZE. It authorizes only
+the declared 21-run C01 matrix; it does not execute a candidate operation,
+resolve a live obligation, or open positive or negative evidence.
 
 ## 7. Allowed dispositions
 
 ```text
-ready_for_tracking
-revise_before_tracking
+pass
+revise_before_execution
 blocked_missing_pre_execution_evidence
 ```
 
-Tracking does not itself execute C01. It makes the exact cycle eligible for an
-explicit later `run-cycle` command.
+Passing the gate does not itself execute C01. It makes the exact cycle eligible
+for an explicit later `run-cycle` command.
 
 ## 8. Recommended disposition
 
-No pre-execution contract or reconstruction defect was found. The records are
-ready to be tracked.
+No pre-execution contract, reconstruction, or tracked-identity defect was
+found. The exact C01 cycle is authorized but has not been executed.
 
 ```text
-P2-I1-EXEC-FREEZE = ready_for_tracking
+P2-I1-EXEC-FREEZE = passed
 ```
 
-After tracking, one mechanical `--require-tracked` validation remains before
-the gate may be recorded as passed.
+The next gate is `P2-I1-EXEC-GATE`, beginning with the exact frozen 21-run
+matrix and no configuration drift.

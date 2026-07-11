@@ -1,0 +1,108 @@
+{
+  "artifact_kind": "p2_i1_c01_cycle_audit",
+  "audit_complete": false,
+  "baseline_matches": true,
+  "candidate_outcomes_present": false,
+  "canonical_payload_digest": "763bb080470290b4aebe8f05fa9f680385cdaa97a587e123ea7339f269941b28",
+  "cycle_id": "P2-I1-C01",
+  "duplicate_cell_seed_keys": false,
+  "effective_run_count": 0,
+  "evidence_effect": "control_and_integrity_only",
+  "exec_freeze_digest": "71080bf26c4ea5146a49d5c74aa2d0b934e77287bb7af6b310730ccad048c343",
+  "medium_dependency_audit": [],
+  "missing_run_ids": [
+    "P2-I1-C01:reference:seed-101:attempt-1",
+    "P2-I1-C01:reference:seed-211:attempt-1",
+    "P2-I1-C01:reference:seed-307:attempt-1",
+    "P2-I1-C01:candidate-conditioning:seed-101:attempt-1",
+    "P2-I1-C01:candidate-conditioning:seed-211:attempt-1",
+    "P2-I1-C01:candidate-conditioning:seed-307:attempt-1",
+    "P2-I1-C01:medium-freeze-withdrawal:seed-101:attempt-1",
+    "P2-I1-C01:medium-freeze-withdrawal:seed-211:attempt-1",
+    "P2-I1-C01:medium-freeze-withdrawal:seed-307:attempt-1",
+    "P2-I1-C01:trace-shuffle:seed-101:attempt-1",
+    "P2-I1-C01:trace-shuffle:seed-211:attempt-1",
+    "P2-I1-C01:trace-shuffle:seed-307:attempt-1",
+    "P2-I1-C01:parent-context-contrast:seed-101:attempt-1",
+    "P2-I1-C01:parent-context-contrast:seed-211:attempt-1",
+    "P2-I1-C01:parent-context-contrast:seed-307:attempt-1",
+    "P2-I1-C01:susceptibility-inversion:seed-101:attempt-1",
+    "P2-I1-C01:susceptibility-inversion:seed-211:attempt-1",
+    "P2-I1-C01:susceptibility-inversion:seed-307:attempt-1",
+    "P2-I1-C01:carrier-timescale-contrast:seed-101:attempt-1",
+    "P2-I1-C01:carrier-timescale-contrast:seed-211:attempt-1",
+    "P2-I1-C01:carrier-timescale-contrast:seed-307:attempt-1"
+  ],
+  "no_prior_trace_at_w0": true,
+  "no_reused_worker_scope": true,
+  "obligation_results": [
+    {
+      "obligation_id": "C01-OBL-01",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-02",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-03",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-04",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-05",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-06",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-07",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-08",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-09",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-10",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-11",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    },
+    {
+      "obligation_id": "C01-OBL-12",
+      "scientific_interpretation_deferred": true,
+      "status": "blocked_or_incomplete"
+    }
+  ],
+  "producer_parity_audit": [],
+  "schema_version": "1.0.0",
+  "scientific_rung_assigned": false,
+  "support_budget_matching_audit": [],
+  "terminal_classification_opened": false,
+  "thresholds_applied_as_terminal_boolean_gates": false,
+  "trace_shuffle_audit": [],
+  "worker_scope_ids": []
+}
