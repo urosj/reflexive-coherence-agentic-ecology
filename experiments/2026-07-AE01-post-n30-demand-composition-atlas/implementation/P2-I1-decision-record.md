@@ -64,7 +64,7 @@ reconstruction requirements.
 | `P2-I1-DEC-017` | What support carries formation, and how should the parent-context cell test it without inventing a parent basin? | Accepted: score-preserving reduced-support contrast | Resolves `L01-Q10`; supplies no parent-basin evidence | 2026-07-11 |
 | `P2-I1-DEC-018` | Which single carrier/timescale axis should the final contrast vary? | Accepted: double later reader-packet amount | Resolves `L01-Q21`; bounded carrier-load contrast only | 2026-07-11 |
 | `P2-I1-DEC-019` | Which comparator owns the primary normalized margin, and which comparisons remain causal controls? | Accepted: reference is primary; row absence owns medium dependency and selectivity | Resolves `L01-Q22`; completes normalized-margin specialization | 2026-07-11 |
-| `P2-I1-DEC-020` | Which gate authorizes candidate execution without making the post-execution gate circular? | Accepted: explicit cycle-scoped `EXEC-FREEZE` | Reopens only the runtime-policy identity through bounded v2 CAL-PRE/CAL refresh | 2026-07-11 |
+| `P2-I1-DEC-020` | Which gate authorizes candidate execution without making the post-execution gate circular? | Accepted: explicit cycle-scoped `EXEC-FREEZE` | Bounded v2 CAL-PRE/CAL refresh passed; REG-GATE resumed | 2026-07-11 |
 
 ## 3. `P2-I1-DEC-001` — Realization family
 
@@ -2349,7 +2349,7 @@ Reopen `P2-I1-DEC-019` if:
 
 ## 23. `P2-I1-DEC-020` — Candidate-execution authorization boundary
 
-**Status:** accepted; bounded v2 CAL-PRE/CAL refresh required
+**Status:** accepted; bounded v2 CAL-PRE/CAL refresh passed
 
 **Question IDs:** registration and execution change control; no scientific lane
 question changed
@@ -2414,7 +2414,9 @@ The correction uses a bounded v2 refresh rather than a prose waiver:
   artifacts to remain identical;
 - allow only the runtime-config and derived measurement identities to change;
   and
-- perform a targeted review before resuming REG-GATE.
+- close by exact deterministic verification after the semantic source change
+  has been reviewed; require another review only if a new decision or unknown
+  assumption appears, the declared scope expands, or a verification fails.
 
 No candidate outcome exists, and this refresh cannot open candidate evidence.
 
@@ -2436,7 +2438,6 @@ All scientific decision-level semantics currently required for registration
 are resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
 interpretation, and `L01-Q14` remains reserved for R3 after concrete execution.
 
-The immediate work is the bounded `P2-I1-DEC-020` identity refresh, followed by
-REG-GATE materialization. None of it opens candidate evidence. Candidate
-execution remains blocked until a reviewed registration and a separate exact
-cycle `P2-I1-EXEC-FREEZE` both exist.
+The bounded `P2-I1-DEC-020` identity refresh is complete. The immediate work is
+REG-GATE materialization. Candidate execution remains blocked until a reviewed
+registration and a separate exact-cycle `P2-I1-EXEC-FREEZE` both exist.

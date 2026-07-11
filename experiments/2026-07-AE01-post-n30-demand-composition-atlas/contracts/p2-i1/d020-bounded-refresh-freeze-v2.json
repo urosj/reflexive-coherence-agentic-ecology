@@ -1,0 +1,118 @@
+{
+  "artifact_kind": "p2_i1_d020_bounded_refresh_freeze",
+  "schema_version": "1.0.0",
+  "freeze_id": "rcae-p2-i1-d020-bounded-refresh-v2",
+  "decision_ref": "P2-I1-DEC-020",
+  "evidence_effect": "none_identity_correction_only",
+  "source_anchor": {
+    "revision": "1c9736dee165d44ed1d837f673f03a9a69bba113",
+    "source_tree_clean_at_identity_generation": true,
+    "candidate_outcomes_absent": true,
+    "candidate_execution_authorized": false
+  },
+  "identity_chain": {
+    "v1": {
+      "identity_id": "rcae-p2-i1-cal-pre-identity-v1",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/cal-pre-identity.json",
+      "source_revision": "134b66cf6adf50e9f1e773454be25bbea53938d2",
+      "canonical_payload_digest": "ababf1196b664e174cf182238432a6a4fbaf6a4d925c7780dc48dc1956f1655e"
+    },
+    "v2": {
+      "identity_id": "rcae-p2-i1-cal-pre-identity-v2",
+      "supersedes_identity_id": "rcae-p2-i1-cal-pre-identity-v1",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/cal-pre-identity-v2.json",
+      "source_revision": "1c9736dee165d44ed1d837f673f03a9a69bba113",
+      "canonical_payload_digest": "9f368814368d5c3c54fef62d2d06e7448431ce8b64767d3044d5e85081daea49",
+      "semantic_file_digest": "2116ef8c9f1501aafccf3734194c5da996f2b0bc813ba440ffe3b3e08b3969cf",
+      "file_sha256": "7b9dc60365eb79af08094bf605cf8c0bac633d391eee3271566360ccccca2319",
+      "size_bytes": 9314,
+      "retention_eligible": true
+    }
+  },
+  "declared_changed_identities": {
+    "runtime_policy_id": {
+      "v1": "rcae-p2-i1-runtime-policy-v1",
+      "v2": "rcae-p2-i1-runtime-policy-v2",
+      "reason": "replace circular pre-execution EXEC-GATE requirement with cycle-scoped EXEC-FREEZE"
+    },
+    "runtime_config_digest": {
+      "v1": "0d3c70fef545ce0371448ef2637b7a2b265152b8769013dfe7e07a8925aa141a",
+      "v2": "85574006a8ebb912e2a211b9a591bda7d1a4bdff13c3ff330c7bf4228b355793"
+    },
+    "measurement_identity_digest": {
+      "v1": "eff89329d93d2addd05c27e72706da59c6f96c7ad813dceb90452a37bc46fd70",
+      "v2": "853c5f10d33a1820b72cc3245e0612ff9024a7ae920833d44e81fcc22a7f2e5a"
+    },
+    "cli_sha256": {
+      "v1": "244fa47d74d270457c4be27b738d464a46577473b954958d67b509ef76b6ac3a",
+      "v2": "75abcf7c452cbd02a23352cebb0e2fb72433a2a6c68f3dc0cd80b04a8319b88a"
+    },
+    "runtime_harness_sha256": {
+      "v1": "284c11754a4682187a57fba4166d443417ab661446b1c7495a5ede38bfe9eb25",
+      "v2": "eaaca4d75d1803c6556810cbc6072c40a6eb03094f447b2208a00636e26d83c8"
+    }
+  },
+  "required_unchanged_identities": {
+    "calibration_realization_digest": {
+      "v1": "9b59988a0f5211cb32aaf531748f8a9b235540729d40544373e6ba3a04b769b8",
+      "v2": "9b59988a0f5211cb32aaf531748f8a9b235540729d40544373e6ba3a04b769b8",
+      "match": true
+    },
+    "fixture_config_digest": "1bfc4161c969263548ab4c9e7c517c45ab5df5cfcf4c905f3b1a56285d3fa476",
+    "cells_config_digest": "71064441bfd5894346f808124081caeb426b4e2f72265a9cc6a56f63b2fdb002",
+    "analysis_config_digest": "9701e9f80742f65d34e04591c16d01a125aaf8527e4c5ad1b21c653c0f3b58e6",
+    "calibration_config_digest": "a0e5eeed61368d04d3db97bf15a571a33a0b7ba4e84860d5ca66149d1759fbf8",
+    "provenance_config_digest": "c9a2edfb7d602bb76c59d5fcddad4fdb639db03536ad41b33a62306de0df4c6a",
+    "analysis_script_sha256": "962beedfe12d1cd0c9f87e608fff52aa6a938b6015d4223894843cfb600e6c40"
+  },
+  "calibration_artifact_equality": {
+    "matched_null": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/matched-null.json",
+      "semantic_file_digest": "a9cbe5e7449091c3c6f6a395a9c8db5f8e3d05890b985975c97550e1572b9629",
+      "file_sha256": "2188529b520466aabee5baa86750f1376ae5172d2be07b11192747f9e8c1cc2f",
+      "v2_regeneration": "byte_for_byte_identical"
+    },
+    "metric_calibration": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/metric-calibration.json",
+      "semantic_file_digest": "8c734e4e43131842917e423170584cf53b8c657ed3302544d5805a29f645cde9",
+      "file_sha256": "ebd6c62c8a5920c681b8e91810a4788e7dcd5591e98d0313a7225f0e63635e5a",
+      "v2_regeneration": "byte_for_byte_identical"
+    },
+    "frozen_metric_sheet": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i1/frozen-metric-sheet.json",
+      "semantic_file_digest": "68ed80f6455ec2e4ab8dc18d3a385d8d6bc9781483c90dbf1b1a9b3c5c80f043",
+      "file_sha256": "fdd2a0d78140edbe6383661804c2928f5a1ae63ef501e1aed6ca296994514563",
+      "v2_regeneration": "byte_for_byte_identical"
+    }
+  },
+  "reconstruction": {
+    "fresh_detached_worktree": true,
+    "pygrc_installed": false,
+    "phase1_validation": "passed",
+    "p2_i1_config_validation": "passed",
+    "unit_test_count": 57,
+    "unit_tests": "passed",
+    "v2_identity_exact_file_comparison": "identical",
+    "matched_null_exact_file_comparison": "identical",
+    "metric_calibration_exact_file_comparison": "identical",
+    "frozen_metric_sheet_exact_file_comparison": "identical",
+    "status": "passed"
+  },
+  "mechanical_closeout_scope": [
+    "v2_runtime_authorization_fields",
+    "v1_to_v2_identity_supersedes_chain",
+    "declared_identity_delta_and_calibration_artifact_equality"
+  ],
+  "verification_record": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-D020-bounded-refresh-review.md",
+  "closeout_basis": "the semantic source correction was already reviewed; post-commit work introduced no new assumption and passed exact deterministic verification",
+  "additional_review_required": false,
+  "refresh_status": "passed",
+  "unsafe_flags": {
+    "candidate_execution_performed": false,
+    "candidate_outcome_observed": false,
+    "calibration_meaning_changed": false,
+    "calibration_artifact_changed": false,
+    "registration_opened": false,
+    "lane_claim_opened": false
+  }
+}

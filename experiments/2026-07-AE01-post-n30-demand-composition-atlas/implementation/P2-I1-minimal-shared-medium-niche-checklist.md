@@ -6,9 +6,9 @@
 
 **Lane:** `AE01-L01`
 
-**Current probe cycle:** `P2-I1-C00` — D-020 bounded identity refresh before registration
+**Current probe cycle:** `P2-I1-C00` — registration preparation
 
-**Current local gate:** `P2-I1-CAL-PRE-GATE` — bounded v2 refresh
+**Current local gate:** `P2-I1-REG-GATE`
 
 **Acceptance ceiling:** `AE01-C2`; no lane result assigned
 
@@ -66,14 +66,19 @@ Rules:
   scientific refinement.
 - A conflict with a frozen Phase 1 authority reopens the affected contract; it
   cannot be resolved inside this checklist.
+- Review is gate-bounded, not recursive. Review a semantic or architectural
+  decision once; close its deterministic retention and reconstruction work by
+  machine verification. Require another review only when later work introduces
+  a new decision or unresolved assumption, expands the accepted scope, or
+  fails a required comparison.
 
 ## 2. Local gate dashboard
 
 | Gate | Meaning | Status | Exit evidence |
 | --- | --- | --- | --- |
 | `P2-I1-THEORY-GATE` | L01 meaning, distinctions, open questions, and decision timing accepted | Passed | Accepted brief and owner review disposition dated 2026-07-10 |
-| `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Targeted reopen | D-020 v2 identity refresh; v1 remains retained history |
-| `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Targeted reopen | Reconfirm byte-identical calibration under the D-020 source anchor |
+| `P2-I1-CAL-PRE-GATE` | Measurement, opportunity, null, calibration realization, selectivity policy, and analysis identity frozen before margins exist | Passed | v2 identity refresh passed; v1 remains retained history |
+| `P2-I1-CAL-GATE` | Candidate-blind resolution band frozen from reconstructable matched-null provenance | Passed | D-020 regeneration is byte-identical to retained calibration |
 | `P2-I1-REG-GATE` | Exact probe and registration evidence bundle accepted | Pending | Reviewed bundle tying every registered surface together |
 | `P2-I1-EXEC-FREEZE` | One exact registered candidate cycle authorized before its first operation | Pending | Cycle-scoped freeze with candidate outcomes absent |
 | `P2-I1-EXEC-GATE` | Frozen comparison matrix completed or validly bounded as blocked/incomplete | Pending | Cell artifacts, receipts, control outcomes, reconstruction |
@@ -82,11 +87,11 @@ Rules:
 `P2-I1-GATE` in the master checklist is equivalent to
 `P2-I1-CLOSE-GATE` here.
 
-The two calibration gates passed at v1. `P2-I1-DEC-020` reopens only their
-runtime-policy/measurement identity chain so the circular execution boundary
-can be corrected in machine policy. The committed v1 records remain valid
-history; REG-GATE stays blocked until the bounded v2 refresh confirms that the
-calibration realization and all calibration artifacts are unchanged.
+The two calibration gates passed at v1. `P2-I1-DEC-020` briefly reopened only
+their runtime-policy/measurement identity chain so the circular execution
+boundary could be corrected in machine policy. The bounded v2 refresh passed:
+the committed v1 records remain valid history, the calibration realization is
+unchanged, and all calibration artifacts are byte-identical.
 
 ## 3. Stable entry and claim boundaries
 
@@ -596,14 +601,20 @@ D-020 bounded refresh — 2026-07-11:
   and source anchors as versioned history.
 - [x] Change only the runtime authorization boundary and its direct
   validator, tests, and documentation.
-- [ ] Commit the bounded-refresh source anchor with candidate outcomes absent.
-- [ ] Generate and independently reconstruct the v2 CAL-PRE identity.
-- [ ] Verify the calibration-realization digest is unchanged while the runtime
+- [x] Commit the bounded-refresh source anchor with candidate outcomes absent.
+  Source revision: `1c9736dee165d44ed1d837f673f03a9a69bba113`.
+- [x] Generate and independently reconstruct the v2 CAL-PRE identity. Evidence:
+  [v2 identity](../contracts/p2-i1/cal-pre-identity-v2.json) and
+  [bounded-refresh freeze](../contracts/p2-i1/d020-bounded-refresh-freeze-v2.json).
+- [x] Verify the calibration-realization digest is unchanged while the runtime
   configuration and derived measurement identities change as declared.
-- [ ] Regenerate the matched null, metric calibration, and frozen metric sheet
-  and prove byte-for-byte equality with v1.
-- [ ] Obtain targeted refresh review and return both calibration gates to
-  passed before resuming REG-GATE.
+- [x] Regenerate the matched null, metric calibration, and frozen metric sheet
+  and prove byte-for-byte equality with v1. Evidence:
+  [bounded-refresh freeze](../contracts/p2-i1/d020-bounded-refresh-freeze-v2.json).
+- [x] Close the refresh by deterministic verification because the semantic
+  source correction was already reviewed and no new decision or unknown
+  assumption appeared afterward. Verification record:
+  [D-020 bounded refresh closeout](../reports/P2-I1-D020-bounded-refresh-review.md).
 
 ## 8. Registration gate
 
@@ -614,7 +625,8 @@ Entry conditions:
   [P2-I1 CAL-PRE review](../reports/P2-I1-CAL-PRE-review.md).
 - [x] `P2-I1-CAL-GATE` passed. Evidence:
   [P2-I1 CAL review](../reports/P2-I1-CAL-review.md).
-- [ ] `P2-I1-DEC-020` bounded v2 CAL-PRE/CAL refresh passed.
+- [x] `P2-I1-DEC-020` bounded v2 CAL-PRE/CAL refresh passed. Evidence:
+  [D-020 bounded refresh closeout](../reports/P2-I1-D020-bounded-refresh-review.md).
 
 ### 8.1 Operational identities
 
@@ -893,7 +905,7 @@ Applicability rules:
 
 ## 11. Current frozen probe cycle
 
-### `P2-I1-C00` — D-020 bounded refresh before registration preparation
+### `P2-I1-C00` — registration preparation
 
 **Status:** active, not frozen for candidate execution
 
@@ -907,7 +919,7 @@ Applicability rules:
   `P2-I1-CAL-PRE-GATE` passed.
 - [x] Candidate-blind calibration independently reviewed and
   `P2-I1-CAL-GATE` passed.
-- [ ] D-020 bounded v2 refresh completed without changing calibration
+- [x] D-020 bounded v2 refresh completed without changing calibration
   realization or artifacts.
 - [ ] Cycle closed as design-only and handed to `P2-I1-C01`.
 
@@ -1202,7 +1214,7 @@ without tuning its conclusion and decide:
    realization, Policy A selectivity boundary, analysis identity, and
    matched-null inputs; pass `P2-I1-CAL-PRE-GATE`.
 4. [x] Run candidate-blind calibration and pass `P2-I1-CAL-GATE`.
-5. [ ] Complete the D-020 bounded v2 identity/calibration refresh.
+5. [x] Complete the D-020 bounded v2 identity/calibration refresh.
 6. [ ] Materialize the exact L01 registration evidence bundle and pass
    `P2-I1-REG-GATE` before any candidate execution.
 7. [ ] Freeze one exact candidate cycle and pass `P2-I1-EXEC-FREEZE` before
