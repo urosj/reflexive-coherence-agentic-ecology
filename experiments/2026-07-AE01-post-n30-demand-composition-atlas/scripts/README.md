@@ -118,8 +118,10 @@ experiment. No command writes into the graph/PyGRC repository.
 
 `p2_i1.py` is the thin file/CLI boundary. `p2_i1_analysis.py` contains pure
 deterministic analysis and never imports PyGRC. `p2_i1_runtime.py` imports
-PyGRC only inside an explicit runtime call and contains no candidate runner
-while `P2-I1-REG-GATE` and `P2-I1-EXEC-GATE` remain closed.
+PyGRC only inside an explicit runtime call and contains no candidate runner.
+Candidate execution remains closed until `P2-I1-REG-GATE` passes and a
+cycle-scoped `P2-I1-EXEC-FREEZE` authorizes the exact frozen run;
+`P2-I1-EXEC-GATE` is the post-execution close gate.
 
 Create the ignored local environment and install a non-editable build from the
 locally configured PyGRC source plus the pinned validation dependency:

@@ -118,6 +118,19 @@ class P2I1Test(unittest.TestCase):
         self.assertEqual(result["status"], "passed")
         self.assertFalse(result["candidate_execution_authorized"])
         self.assertFalse(self.configs["runtime"]["candidate_execution_authorized"])
+        self.assertEqual(
+            self.configs["runtime"]["candidate_execution_authorization_mode"],
+            "explicit_cycle_exec_freeze_only",
+        )
+        self.assertTrue(self.configs["runtime"]["execution_freeze_required"])
+        self.assertEqual(
+            self.configs["runtime"]["execution_freeze_gate"],
+            "P2-I1-EXEC-FREEZE",
+        )
+        self.assertEqual(
+            self.configs["runtime"]["execution_close_gate"],
+            "P2-I1-EXEC-GATE",
+        )
 
     def test_parent_context_transform_preserves_score_and_reduces_support(self) -> None:
         for seed in (101, 211, 307):
@@ -406,6 +419,14 @@ class P2I1Test(unittest.TestCase):
         self.assertFalse(identity["candidate_execution_authorized"])
         self.assertTrue(identity["candidate_outcomes_absent"])
         self.assertFalse(identity["retention_eligible"])
+        self.assertEqual(
+            identity["identity_id"],
+            "rcae-p2-i1-cal-pre-identity-preview-v2",
+        )
+        self.assertEqual(
+            identity["supersedes_identity_id"],
+            "rcae-p2-i1-cal-pre-identity-v1",
+        )
         self.assertNotIn(str(ROOT), serialized)
         self.assertNotIn("graph-reflexive-coherence", serialized)
 

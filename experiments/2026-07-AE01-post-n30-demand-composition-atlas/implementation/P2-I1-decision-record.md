@@ -64,6 +64,7 @@ reconstruction requirements.
 | `P2-I1-DEC-017` | What support carries formation, and how should the parent-context cell test it without inventing a parent basin? | Accepted: score-preserving reduced-support contrast | Resolves `L01-Q10`; supplies no parent-basin evidence | 2026-07-11 |
 | `P2-I1-DEC-018` | Which single carrier/timescale axis should the final contrast vary? | Accepted: double later reader-packet amount | Resolves `L01-Q21`; bounded carrier-load contrast only | 2026-07-11 |
 | `P2-I1-DEC-019` | Which comparator owns the primary normalized margin, and which comparisons remain causal controls? | Accepted: reference is primary; row absence owns medium dependency and selectivity | Resolves `L01-Q22`; completes normalized-margin specialization | 2026-07-11 |
+| `P2-I1-DEC-020` | Which gate authorizes candidate execution without making the post-execution gate circular? | Accepted: explicit cycle-scoped `EXEC-FREEZE` | Reopens only the runtime-policy identity through bounded v2 CAL-PRE/CAL refresh | 2026-07-11 |
 
 ## 3. `P2-I1-DEC-001` — Realization family
 
@@ -2346,23 +2347,96 @@ Reopen `P2-I1-DEC-019` if:
 - calibration and live analysis cannot use the same primary comparison; or
 - a later cycle replaces the accepted medium definition or primary response.
 
-## 23. Current decision boundary and next work
+## 23. `P2-I1-DEC-020` — Candidate-execution authorization boundary
 
-All decision-level semantics currently required to implement CAL-PRE are
-resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
+**Status:** accepted; bounded v2 CAL-PRE/CAL refresh required
+
+**Question IDs:** registration and execution change control; no scientific lane
+question changed
+
+### 23.1 Decision question
+
+Which gate may authorize the first candidate operation while preserving a
+separate post-execution completion gate?
+
+The CAL-GATE review exposed a circular statement in the frozen runtime policy:
+it required `P2-I1-EXEC-GATE` to pass before candidate execution, while the
+checklist defines that gate as the exit reached only after every registered
+cell and seed has a terminal execution disposition.
+
+### 23.2 Options considered
+
+| Option | Advantage | Main problem | Disposition |
+| --- | --- | --- | --- |
+| Add a cycle-scoped `P2-I1-EXEC-FREEZE` before execution | Separates registration, exact-run authorization, and post-run closure | Requires one explicit authorization artifact and a bounded identity refresh | **Accepted** |
+| Redefine `P2-I1-EXEC-GATE` as a pre-execution gate and add another close gate | Removes the literal cycle | Renames an already clear, widely referenced post-execution contract | Rejected |
+| Let `P2-I1-REG-GATE` directly authorize execution | Minimal ceremony | Conflates a reusable registration bundle with one exact execution cycle | Rejected |
+| Leave the old runtime-policy statement and supersede it only in prose | Avoids identity refresh | Preserves conflicting machine and narrative authorities | Rejected |
+
+### 23.3 Accepted boundary
+
+Candidate execution requires all of:
+
+```text
+P2-I1-CAL-GATE = passed
+P2-I1-REG-GATE = passed
+active candidate cycle = frozen
+P2-I1-EXEC-FREEZE = passed for that exact cycle
+```
+
+`P2-I1-EXEC-FREEZE` binds the registration bundle, calibration, realization
+profile, exact configuration IDs, seeds, attempt/retry limits, resources,
+expected artifacts, control plans, claim boundary, stopping rule, candidate-
+absence assertion, and source/configuration identities. Any mismatch or later
+change invalidates that freeze and requires a new cycle-specific record.
+
+The shared runtime policy retains
+`candidate_execution_authorized=false`: it grants no blanket authority. A
+future candidate runner must additionally consume a valid cycle-scoped freeze
+record before it may schedule the first candidate operation. Registration
+alone never supplies that record.
+
+`P2-I1-EXEC-GATE` remains the post-execution exit gate. It records whether all
+registered cells, controls, receipts, failures, and reconstructions reached a
+valid completed, blocked, or incomplete disposition.
+
+### 23.4 Change-control consequence
+
+The incorrect authorization sentence participates in the retained runtime
+configuration digest and therefore in the v1 CAL-PRE measurement identity.
+The correction uses a bounded v2 refresh rather than a prose waiver:
+
+- preserve the committed v1 identity, calibration, review, and source anchor;
+- change only the authorization boundary and its validator/documentation;
+- generate a v2 CAL-PRE identity from a clean source commit;
+- rerun the candidate-blind matched null and resolution freeze;
+- require the calibration-realization digest and all three calibration
+  artifacts to remain identical;
+- allow only the runtime-config and derived measurement identities to change;
+  and
+- perform a targeted review before resuming REG-GATE.
+
+No candidate outcome exists, and this refresh cannot open candidate evidence.
+
+### 23.5 Reopening conditions
+
+Reopen `P2-I1-DEC-020` if:
+
+- the runner cannot validate a cycle-scoped freeze before its first operation;
+- authorization can drift after validation without changing the cycle identity;
+- the freeze cannot bind all execution-affecting fields listed above;
+- runtime failure occurs before a retained receipt can establish which freeze
+  authorized the attempt; or
+- the execution-close gate cannot remain distinct from terminal scientific
+  interpretation.
+
+## 24. Current decision boundary and next work
+
+All scientific decision-level semantics currently required for registration
+are resolved. `L01-Q11` through `L01-Q13` remain correctly open for terminal
 interpretation, and `L01-Q14` remains reserved for R3 after concrete execution.
 
-The decision-derived configs, pure analysis module, thin CLI, tests, and
-fail-closed runtime preflight are materialized in the current implementation
-work. The next work is freeze and review, not another semantic choice:
-
-1. validate the complete implementation and reproduce the candidate-blind
-   matched-null expectation;
-2. obtain owner review and commit approval for the implementation;
-3. generate the retained source/config/policy identities from that final
-   commit;
-4. compare independent reconstruction digests; and
-5. seek independent `P2-I1-CAL-PRE-GATE` review before calibration.
-
-None of those steps opens candidate evidence until the registered execution
-gate authorizes it.
+The immediate work is the bounded `P2-I1-DEC-020` identity refresh, followed by
+REG-GATE materialization. None of it opens candidate evidence. Candidate
+execution remains blocked until a reviewed registration and a separate exact
+cycle `P2-I1-EXEC-FREEZE` both exist.

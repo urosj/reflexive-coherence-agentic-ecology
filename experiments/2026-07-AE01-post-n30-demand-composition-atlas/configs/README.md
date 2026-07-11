@@ -44,9 +44,10 @@ record:
 - `p2_i1_cal_pre_provenance.json` freezes portable environment, dependency,
   command, resource, source/input identity, and expected-artifact profiles;
   and
-- `p2_i1_runtime_policy.json` freezes required public PyGRC capabilities and
-  the no-fallback preflight boundary while leaving candidate execution
-  unauthorized.
+- `p2_i1_runtime_policy.json` freezes required public PyGRC capabilities, the
+  no-fallback preflight boundary, and the explicit cycle-scoped
+  `P2-I1-EXEC-FREEZE` authorization mode while leaving blanket candidate
+  execution unauthorized. `P2-I1-EXEC-GATE` remains post-execution closure.
 
 These files are preregistration inputs, not candidate results. Validate them
 from the repository root with:

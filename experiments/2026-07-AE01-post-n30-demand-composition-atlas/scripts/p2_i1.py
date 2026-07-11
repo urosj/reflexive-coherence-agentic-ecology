@@ -169,6 +169,8 @@ def _validate_calibration(config: dict[str, Any]) -> None:
 
 
 def _validate_runtime_policy(config: dict[str, Any]) -> None:
+    if config.get("runtime_policy_id") != "rcae-p2-i1-runtime-policy-v2":
+        raise ContractError("runtime policy identity drifted")
     if config.get("execution_class") != "pygrc_runtime_with_rcae_producer":
         raise ContractError("runtime execution class drifted")
     if config.get("fallback_execution_class") is not None:
@@ -179,6 +181,22 @@ def _validate_runtime_policy(config: dict[str, Any]) -> None:
         raise ContractError("shared runtime policy cannot record machine-local path")
     if config.get("preflight_operation_id") != "p2_i1_runtime_preflight":
         raise ContractError("runtime preflight operation identity drifted")
+    if config.get("candidate_execution_authorization_mode") != (
+        "explicit_cycle_exec_freeze_only"
+    ):
+        raise ContractError("candidate authorization mode drifted")
+    if config.get("execution_freeze_required") is not True:
+        raise ContractError("candidate execution must require a cycle freeze")
+    if config.get("execution_freeze_gate") != "P2-I1-EXEC-FREEZE":
+        raise ContractError("execution-freeze gate identity drifted")
+    if config.get("execution_close_gate") != "P2-I1-EXEC-GATE":
+        raise ContractError("execution-close gate identity drifted")
+    if config.get("authorization_boundary") != (
+        "P2-I1-CAL-GATE and P2-I1-REG-GATE must pass and an active "
+        "P2-I1-EXEC-FREEZE record must authorize the exact frozen cycle "
+        "before candidate execution; P2-I1-EXEC-GATE is post-execution closure"
+    ):
+        raise ContractError("candidate authorization boundary drifted")
 
 
 def _validate_provenance(config: dict[str, Any]) -> None:
@@ -343,10 +361,12 @@ def build_cal_pre_identity(
         ),
         "schema_version": "1.0.0",
         "identity_id": (
-            "rcae-p2-i1-cal-pre-identity-v1"
+            "rcae-p2-i1-cal-pre-identity-v2"
             if source_tree_clean
-            else "rcae-p2-i1-cal-pre-identity-preview-v1"
+            else "rcae-p2-i1-cal-pre-identity-preview-v2"
         ),
+        "supersedes_identity_id": "rcae-p2-i1-cal-pre-identity-v1",
+        "bounded_refresh_reason": "P2-I1-DEC-020 execution authorization correction",
         "evidence_effect": "none_preregistration_identity_only",
         "source_revision": _git_revision(root),
         "source_tree_clean": source_tree_clean,

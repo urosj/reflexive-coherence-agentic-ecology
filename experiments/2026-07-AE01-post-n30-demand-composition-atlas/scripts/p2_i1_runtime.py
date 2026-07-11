@@ -52,7 +52,15 @@ def bind_runtime(
     if runtime_policy.get("fallback_execution_class") is not None:
         raise ContractError("P2-I1 runtime policy must not declare a fallback")
     if runtime_policy.get("candidate_execution_authorized") is not False:
-        raise ContractError("CAL-PRE runtime scaffold cannot authorize candidate execution")
+        raise ContractError("shared runtime policy cannot grant blanket candidate authority")
+    if not (
+        runtime_policy.get("candidate_execution_authorization_mode")
+        == "explicit_cycle_exec_freeze_only"
+        and runtime_policy.get("execution_freeze_required") is True
+        and runtime_policy.get("execution_freeze_gate") == "P2-I1-EXEC-FREEZE"
+        and runtime_policy.get("execution_close_gate") == "P2-I1-EXEC-GATE"
+    ):
+        raise ContractError("P2-I1 cycle authorization boundary drifted")
     profile = realization_profile.get("record", realization_profile)
     if not isinstance(profile, Mapping):
         raise ContractError("realization profile must be an object")
