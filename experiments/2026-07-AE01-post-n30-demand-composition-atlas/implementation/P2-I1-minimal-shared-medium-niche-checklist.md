@@ -238,7 +238,14 @@ Entry condition:
 - [x] Freeze the dyadic numeric base state, packet amounts, native delay policy,
   feedback reference/threshold, and budget projections. Evidence:
   [`P2-I1-DEC-011`](P2-I1-decision-record.md).
-- [ ] Freeze the exact fixture and calibration-realization identity.
+- [x] Materialize the exact declarative fixture and calibration-realization
+  identity projection. Evidence:
+  [`p2_i1_fixture.json`](../configs/p2_i1_fixture.json),
+  [`p2_i1_calibration_policy.json`](../configs/p2_i1_calibration_policy.json),
+  and the clean-commit identity builder in
+  [`p2_i1.py`](../scripts/p2_i1.py).
+- [ ] Retain the final fixture and calibration-realization digests from the
+  clean follow-up implementation commit.
 - [x] Freeze baseline, writer, medium-materialization, later-opportunity, and
   response windows as bounded native causal-event stages. Evidence:
   [`P2-I1-DEC-009`](P2-I1-decision-record.md). Numeric event-time policy is
@@ -315,25 +322,35 @@ transition occurred.
   `opportunity_status`, and how every status enters the scientific denominator
   and seed aggregate. Terminal interpretation remains a later gate. Evidence:
   [`P2-I1-DEC-005`](P2-I1-decision-record.md).
-- [ ] Treat `structurally_unavailable` as potentially scientific while
+- [x] Require `structurally_unavailable` to remain potentially scientific while
   `censored_runtime` and `missing_infrastructure` remain operational and cannot
-  support or refute the lane.
-- [ ] Require opportunity counts and admissibility distributions in retained
+  support or refute the lane. Evidence: status validation and fixed-denominator
+  aggregation in [`p2_i1_analysis.py`](../scripts/p2_i1_analysis.py).
+- [x] Require opportunity counts and admissibility distributions in retained
   outputs so a seed aggregate cannot conceal one-event success or unequal
-  exposure.
-- [ ] Every relation chain records `causal_order_verified` and exact
+  exposure. Evidence: `planned_count`, `formed_count`, `status_counts`, and
+  ordered opportunity/profile IDs emitted by
+  [`p2_i1_analysis.py`](../scripts/p2_i1_analysis.py).
+- [x] Require every relation chain to record `causal_order_verified` and exact
   `medium_dependency_control_refs`, joining writer, medium perturbation,
   persisted/decayed history, later opportunity, and response in machine data
-  rather than authored interpretation.
+  rather than authored interpretation. Evidence: closed opportunity-record
+  validation in [`p2_i1_analysis.py`](../scripts/p2_i1_analysis.py). Actual
+  runtime records remain an execution obligation.
 - [x] Freeze `writer_reader_relation` as `distinct_carrier` with
   `participant_mediated_configured_producer` read mode. Evidence:
   [`P2-I1-DEC-010`](P2-I1-decision-record.md).
 - [x] Freeze the four static opportunity-profile identities, canonical
   node/edge/port mapping, portable lineage pattern, and static-versus-resolved
   digest rule. Evidence: [`P2-I1-DEC-010`](P2-I1-decision-record.md).
-- [ ] Materialize the four static and per-run resolved profile digests with at
-  least two reader-configuration digests, exact cross-cell matching, and no
-  cross-branch state carryover.
+- [x] Materialize four static profile digests with exactly two reader identities
+  and freeze per-run resolved-digest construction, exact cross-cell static
+  matching, branch-point restoration equality, and no cross-branch state
+  carryover. Evidence: identity functions and negative tests in
+  [`p2_i1_analysis.py`](../scripts/p2_i1_analysis.py) and
+  [`test_p2_i1.py`](tests/test_p2_i1.py).
+- Actual resolved digest values are produced only by registered live branches
+  and are tracked under registration/execution, not CAL-PRE.
 - [x] Freeze whether the selected relation permits a sharedness claim, whether
   a self-aftereffect control is mandatory, and the maximum claim available.
   Evidence: [`P2-I1-DEC-010`](P2-I1-decision-record.md): shared-local
@@ -348,9 +365,10 @@ transition occurred.
 - [ ] Freeze portable `analysis_script_path` and `analysis_script_sha256`.
 - [ ] Freeze `aggregation_policy_digest`, `rung_classifier_digest`, and
   `terminal_classifier_digest` before calibration or candidate outcomes.
-- [ ] Verify the analysis identity converts opportunity records into seed
-  aggregates, margins, rung dispositions, and terminal inputs without authored
-  recomputation.
+- [x] Verify the analysis identity converts opportunity records into seed
+  aggregates, frozen-role margins, selectivity results, rung inputs, and
+  terminal inputs without authored recomputation. Evidence: analysis and
+  caller-override tests in [`test_p2_i1.py`](tests/test_p2_i1.py).
 - [x] Require a new CAL-PRE/CAL cycle if analysis code or scientific policy
   identity changes after calibration. Evidence:
   [`P2-I1-DEC-014`](P2-I1-decision-record.md).
@@ -360,8 +378,12 @@ transition occurred.
 - [x] Declare the matched-null generator, exact null configuration, and why it
   measures resolution rather than acting as a weakened candidate. Evidence:
   [`P2-I1-DEC-013`](P2-I1-decision-record.md).
-- [ ] Freeze calibration input provenance, commands/profiles, dependencies,
-  source revisions, input digests, resource envelope, and expected artifacts.
+- [x] Freeze portable calibration command, environment, dependency, resource,
+  source/input identity, and expected-artifact policies. Evidence:
+  [`p2_i1_cal_pre_provenance.json`](../configs/p2_i1_cal_pre_provenance.json).
+- [ ] Materialize the final clean source revision, source hashes, configuration
+  and projection digests, and reconstruction identity after the follow-up
+  implementation commit.
 - [x] Freeze calibration seeds `19`, `43`, `71`, `109`, and `163`. Evidence:
   [`P2-I1-DEC-013`](P2-I1-decision-record.md).
 - [x] Verify calibration seeds are disjoint from candidate seeds `101`, `211`,
@@ -557,6 +579,10 @@ private_state_only_control
   history is an explicit registered feature.
 - [ ] Cross-cell and cross-seed contamination audits prove no trace from one
   run remains available to another.
+- [ ] Every registered live branch emits its resolved opportunity-profile
+  digest from the frozen static profile, actual pulse-contact and medium-history
+  digests, and an exactly restored branch-point digest; cross-cell static-panel
+  matching and zero cross-branch carryover validate before interpretation.
 - [ ] Freeze support/budget matching variables and tolerances across reference,
   candidate, freeze/withdrawal, shuffle, and inversion cells.
 - [ ] Require a retained support/budget matching audit before scientific

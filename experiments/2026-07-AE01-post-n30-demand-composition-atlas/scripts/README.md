@@ -133,7 +133,7 @@ uv pip install --python .venv/bin/python LOCAL_PYGRC_SOURCE jsonschema==4.26.0
 retained runtime profile must instead record the installed `pygrc==0.1`
 identity and source revision/digests.
 
-Validate the five committed P2-I1 configs:
+Validate the six committed P2-I1 configs:
 
 ```bash
 .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py validate-configs

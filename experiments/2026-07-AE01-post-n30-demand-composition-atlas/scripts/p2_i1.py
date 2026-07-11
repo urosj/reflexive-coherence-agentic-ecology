@@ -43,6 +43,7 @@ CONFIG_PATHS = {
     "cells": "configs/p2_i1_cells.json",
     "analysis": "configs/p2_i1_analysis_policy.json",
     "calibration": "configs/p2_i1_calibration_policy.json",
+    "provenance": "configs/p2_i1_cal_pre_provenance.json",
     "runtime": "configs/p2_i1_runtime_policy.json",
 }
 
@@ -180,11 +181,80 @@ def _validate_runtime_policy(config: dict[str, Any]) -> None:
         raise ContractError("runtime preflight operation identity drifted")
 
 
+def _validate_provenance(config: dict[str, Any]) -> None:
+    expected_keys = {
+        "evidence_effect",
+        "schema_version",
+        "provenance_profile_id",
+        "working_directory",
+        "environment_profile",
+        "dependency_profile",
+        "command_profiles",
+        "resource_envelope",
+        "expected_artifacts",
+        "source_identity_policy",
+        "input_identity_policy",
+    }
+    if set(config) != expected_keys:
+        raise ContractError("CAL-PRE provenance profile shape drifted")
+    if config["working_directory"] != ".":
+        raise ContractError("CAL-PRE commands must run from repository root")
+    dependencies = config["dependency_profile"]
+    if dependencies.get("analysis_runtime_dependencies") != [
+        "python_standard_library"
+    ]:
+        raise ContractError("matched-null analysis dependency profile drifted")
+    if dependencies.get("phase1_validation_dependencies") != [
+        "jsonschema==4.26.0"
+    ]:
+        raise ContractError("Phase 1 validation dependency pin drifted")
+    if dependencies.get("pygrc_required_for_calibration") is not False:
+        raise ContractError("candidate-blind calibration must not require PyGRC")
+    command_ids = [row.get("command_id") for row in config["command_profiles"]]
+    if command_ids != [
+        "p2-i1-validate-phase1-v1",
+        "p2-i1-validate-configs-v1",
+        "p2-i1-test-v1",
+        "p2-i1-build-cal-pre-identity-v1",
+        "p2-i1-generate-matched-null-v1",
+    ]:
+        raise ContractError("CAL-PRE command profile identity drifted")
+    for command in config["command_profiles"]:
+        argv = command.get("argv")
+        if not isinstance(argv, list) or not argv or any(
+            not isinstance(item, str) or not item for item in argv
+        ):
+            raise ContractError("CAL-PRE command argv must be non-empty strings")
+        for value in argv:
+            if value.startswith("/") or "\\" in value or value.startswith("~"):
+                raise ContractError("CAL-PRE command profile contains non-portable path")
+    resources = config["resource_envelope"]
+    if resources != {
+        "max_runtime_seconds": 120,
+        "max_memory_mb": 512,
+        "max_disk_mb": 256,
+    }:
+        raise ContractError("CAL-PRE resource envelope drifted")
+    source_policy = config["source_identity_policy"]
+    if source_policy.get("dirty_preview_retention_allowed") is not False:
+        raise ContractError("dirty CAL-PRE identity previews cannot be retained")
+    input_policy = config["input_identity_policy"]
+    for field in (
+        "candidate_artifacts_allowed",
+        "candidate_seeds_allowed",
+        "pygrc_runtime_inputs_allowed",
+        "post_outcome_tuning_allowed",
+    ):
+        if input_policy.get(field) is not False:
+            raise ContractError(f"CAL-PRE provenance must prohibit {field}")
+
+
 def validate_configs(configs: dict[str, Any]) -> dict[str, Any]:
     _validate_fixture(configs["fixture"])
     _validate_cells(configs["cells"])
     validate_analysis_policy(configs["analysis"])
     _validate_calibration(configs["calibration"])
+    _validate_provenance(configs["provenance"])
     _validate_runtime_policy(configs["runtime"])
     profiles = static_profile_identities(configs["fixture"])
     if len({row["opportunity_profile_digest"] for row in profiles}) != 4:
@@ -253,6 +323,7 @@ def build_cal_pre_identity(
         "fixture_config_digest": config_digests["fixture_config_digest"],
         "analysis_config_digest": config_digests["analysis_config_digest"],
         "calibration_config_digest": config_digests["calibration_config_digest"],
+        "provenance_config_digest": config_digests["provenance_config_digest"],
         "analysis_script_sha256": digest_file(experiment / analysis_script),
         **projections,
         "static_opportunity_profile_digests": [
@@ -286,6 +357,8 @@ def build_cal_pre_identity(
         "analysis_script_sha256": calibration_projection["analysis_script_sha256"],
         "analysis_policy_path": CONFIG_PATHS["analysis"],
         "analysis_policy_digest": config_digests["analysis_config_digest"],
+        "provenance_profile_path": CONFIG_PATHS["provenance"],
+        "provenance_profile_digest": config_digests["provenance_config_digest"],
         **projections,
         "cli_path": cli_script,
         "cli_sha256": digest_file(experiment / cli_script),
@@ -299,20 +372,12 @@ def build_cal_pre_identity(
         "candidate_execution_authorized": False,
         "validation_digest": validation["canonical_payload_digest"],
         "reconstruction": {
-            "working_directory": ".",
-            "environment": "Python >=3.11; no PyGRC required",
-            "dependency": "jsonschema==4.26.0 for Phase 1 validation only",
-            "commands": [
-                "uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py validate-phase1",
-                "uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py validate-configs",
-                "uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py build-cal-pre-identity",
-                "uv run --with jsonschema==4.26.0 python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i1.py generate-matched-null"
-            ],
-            "expected_artifacts": [
-                "P2-I1 config validation summary",
-                "P2-I1 CAL-PRE identity",
-                "candidate-blind matched-null artifact"
-            ]
+            "working_directory": configs["provenance"]["working_directory"],
+            "environment_profile": configs["provenance"]["environment_profile"],
+            "dependency_profile": configs["provenance"]["dependency_profile"],
+            "command_profiles": configs["provenance"]["command_profiles"],
+            "resource_envelope": configs["provenance"]["resource_envelope"],
+            "expected_artifacts": configs["provenance"]["expected_artifacts"],
         }
     }
     return {**result, "canonical_payload_digest": digest_canonical_data(result)}

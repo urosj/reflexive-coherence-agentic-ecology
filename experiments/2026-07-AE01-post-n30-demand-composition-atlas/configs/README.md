@@ -27,7 +27,7 @@ execution; absence fails closed.
 
 ## P2-I1 configuration surfaces
 
-P2-I1 adds five experiment-local inputs derived from its cumulative decision
+P2-I1 adds six experiment-local inputs derived from its cumulative decision
 record:
 
 - `p2_i1_fixture.json` freezes the four-node topology, participant route
@@ -40,7 +40,10 @@ record:
   reference as the primary normalized margin while candidate versus medium
   absence remains the separate dependency/selectivity comparison;
 - `p2_i1_calibration_policy.json` freezes five identical matched-null panels
-  and explicitly excludes PyGRC and candidate inputs; and
+  and explicitly excludes PyGRC and candidate inputs;
+- `p2_i1_cal_pre_provenance.json` freezes portable environment, dependency,
+  command, resource, source/input identity, and expected-artifact profiles;
+  and
 - `p2_i1_runtime_policy.json` freezes required public PyGRC capabilities and
   the no-fallback preflight boundary while leaving candidate execution
   unauthorized.

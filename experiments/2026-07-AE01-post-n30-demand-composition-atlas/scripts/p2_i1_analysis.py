@@ -555,6 +555,92 @@ def static_profile_identities(
     return result
 
 
+def resolved_profile_identity(
+    static_profile: Mapping[str, Any],
+    *,
+    pulse_contact_surface_digest: str,
+    medium_history_digest: str,
+    branch_point_snapshot_digest: str,
+    restored_snapshot_digest: str,
+    cross_branch_state_carryover: bool,
+) -> dict[str, Any]:
+    """Bind one static profile to actual run lineage without changing its role."""
+
+    required = {
+        "profile_id",
+        "reader_configuration_digest",
+        "opportunity_profile_digest",
+        "identity",
+    }
+    if set(static_profile) != required:
+        raise ContractError("static opportunity-profile identity shape drifted")
+    for name, value in (
+        ("pulse_contact_surface_digest", pulse_contact_surface_digest),
+        ("medium_history_digest", medium_history_digest),
+        ("branch_point_snapshot_digest", branch_point_snapshot_digest),
+        ("restored_snapshot_digest", restored_snapshot_digest),
+    ):
+        if not isinstance(value, str) or not value:
+            raise ContractError(f"{name} must be a non-empty digest string")
+    if cross_branch_state_carryover:
+        raise ContractError("resolved profile identity prohibits cross-branch carryover")
+    if restored_snapshot_digest != branch_point_snapshot_digest:
+        raise ContractError("restored branch does not match registered branch point")
+    identity = {
+        "static_opportunity_profile_digest": static_profile[
+            "opportunity_profile_digest"
+        ],
+        "reader_configuration_digest": static_profile[
+            "reader_configuration_digest"
+        ],
+        "pulse_contact_surface_digest": pulse_contact_surface_digest,
+        "medium_history_digest": medium_history_digest,
+        "branch_point_snapshot_digest": branch_point_snapshot_digest,
+        "restored_snapshot_digest": restored_snapshot_digest,
+        "cross_branch_state_carryover": False,
+    }
+    return {
+        "profile_id": static_profile["profile_id"],
+        "opportunity_profile_digest": static_profile["opportunity_profile_digest"],
+        "reader_configuration_digest": static_profile[
+            "reader_configuration_digest"
+        ],
+        "resolved_opportunity_profile_digest": digest_canonical_data(identity),
+        "identity": identity,
+    }
+
+
+def validate_cross_cell_static_profile_matching(
+    cell_profiles: Mapping[str, Sequence[Mapping[str, Any]]],
+) -> None:
+    """Require every comparison cell to use the same ordered static panel."""
+
+    if not cell_profiles:
+        raise ContractError("cross-cell profile matching requires comparison cells")
+    expected: list[tuple[str, str, str]] | None = None
+    for cell_id, profiles in cell_profiles.items():
+        if len(profiles) != 4:
+            raise ContractError(f"{cell_id}: static panel requires four profiles")
+        projection = [
+            (
+                str(profile.get("profile_id")),
+                str(profile.get("opportunity_profile_digest")),
+                str(profile.get("reader_configuration_digest")),
+            )
+            for profile in profiles
+        ]
+        if len({row[0] for row in projection}) != 4:
+            raise ContractError(f"{cell_id}: profile IDs must be unique")
+        if len({row[1] for row in projection}) != 4:
+            raise ContractError(f"{cell_id}: static profile digests must be unique")
+        if len({row[2] for row in projection}) != 2:
+            raise ContractError(f"{cell_id}: exactly two reader identities required")
+        if expected is None:
+            expected = projection
+        elif projection != expected:
+            raise ContractError(f"{cell_id}: static opportunity panel drifted")
+
+
 def build_rung_and_terminal_inputs(
     *,
     cell_aggregates: Sequence[Mapping[str, Any]],

@@ -34,8 +34,10 @@ from p2_i1_analysis import (  # noqa: E402
     generate_matched_null,
     paired_margin,
     policy_projection_digests,
+    resolved_profile_identity,
     selectivity_interaction,
     static_profile_identities,
+    validate_cross_cell_static_profile_matching,
     validate_analysis_policy,
     validate_opportunity,
 )
@@ -189,6 +191,20 @@ class P2I1Test(unittest.TestCase):
         with self.assertRaises(ContractError):
             validate_analysis_policy(bad)
 
+    def test_calibration_provenance_prohibits_pygrc_and_candidate_inputs(self) -> None:
+        bad = deepcopy(self.configs)
+        bad["provenance"]["dependency_profile"][
+            "pygrc_required_for_calibration"
+        ] = True
+        with self.assertRaises(ContractError):
+            validate_configs(bad)
+        bad = deepcopy(self.configs)
+        bad["provenance"]["input_identity_policy"][
+            "candidate_artifacts_allowed"
+        ] = True
+        with self.assertRaises(ContractError):
+            validate_configs(bad)
+
     def test_seed_aggregation_preserves_fixed_denominator_and_counts(self) -> None:
         aggregate = aggregate_seed(
             self._panel([1, 0, 1, 0]), self.configs["analysis"]
@@ -319,6 +335,61 @@ class P2I1Test(unittest.TestCase):
         identities = static_profile_identities(self.configs["fixture"])
         self.assertEqual(len({row["opportunity_profile_digest"] for row in identities}), 4)
         self.assertEqual(len({row["reader_configuration_digest"] for row in identities}), 2)
+
+    def test_cross_cell_static_profile_matching_fails_on_drift(self) -> None:
+        identities = static_profile_identities(self.configs["fixture"])
+        panels = {
+            cell["cell_id"]: deepcopy(identities)
+            for cell in self.configs["cells"]["cells"]
+        }
+        validate_cross_cell_static_profile_matching(panels)
+        panels["trace-shuffle"][0]["opportunity_profile_digest"] = "drifted"
+        with self.assertRaises(ContractError):
+            validate_cross_cell_static_profile_matching(panels)
+
+    def test_resolved_profile_identity_binds_lineage_and_rejects_carryover(self) -> None:
+        static = static_profile_identities(self.configs["fixture"])[0]
+        first = resolved_profile_identity(
+            static,
+            pulse_contact_surface_digest="pulse-arrival",
+            medium_history_digest="medium-candidate",
+            branch_point_snapshot_digest="branch-point",
+            restored_snapshot_digest="branch-point",
+            cross_branch_state_carryover=False,
+        )
+        second = resolved_profile_identity(
+            static,
+            pulse_contact_surface_digest="pulse-arrival",
+            medium_history_digest="medium-reference",
+            branch_point_snapshot_digest="branch-point",
+            restored_snapshot_digest="branch-point",
+            cross_branch_state_carryover=False,
+        )
+        self.assertEqual(
+            first["opportunity_profile_digest"], second["opportunity_profile_digest"]
+        )
+        self.assertNotEqual(
+            first["resolved_opportunity_profile_digest"],
+            second["resolved_opportunity_profile_digest"],
+        )
+        with self.assertRaises(ContractError):
+            resolved_profile_identity(
+                static,
+                pulse_contact_surface_digest="pulse-arrival",
+                medium_history_digest="medium-candidate",
+                branch_point_snapshot_digest="branch-point",
+                restored_snapshot_digest="branch-point",
+                cross_branch_state_carryover=True,
+            )
+        with self.assertRaises(ContractError):
+            resolved_profile_identity(
+                static,
+                pulse_contact_surface_digest="pulse-arrival",
+                medium_history_digest="medium-candidate",
+                branch_point_snapshot_digest="branch-point",
+                restored_snapshot_digest="different-branch",
+                cross_branch_state_carryover=False,
+            )
 
     def test_policy_projection_digests_are_stable_and_distinct(self) -> None:
         first = policy_projection_digests(self.configs["analysis"])
