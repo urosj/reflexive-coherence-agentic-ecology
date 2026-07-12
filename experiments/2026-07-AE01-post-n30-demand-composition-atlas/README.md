@@ -85,6 +85,30 @@ constructed RCAE run.
 The exact identities, hashes, roles, precedence, and blocked claims are in the
 source inventory. Source admission supports no lane result.
 
+## N30 to P2-I1: the ecological step
+
+N30 established bounded history-conditioned eligibility through a non-private
+medium. P2-I1 did not need to prove that general relation again. Its defining
+addition was participant-relative differential possibility:
+
+```text
+N30:   medium history changes later eligibility
+P2-I1: the same medium history changes later possibilities differently
+        across matched susceptibility configurations
+```
+
+P2-I1's fresh PyGRC execution strengthens the evidence path, but selectivity is
+what gives L01 its independent ecological identity. The C02 interaction was
+positive in both matched contexts for every seed, and susceptibility inversion
+made formation follow the configured relation rather than reader identity.
+Without that interaction, a uniform result would remain generic environmental
+conditioning below the niche boundary.
+
+This is a post-closeout explanation, not a hypothesis change or result upgrade.
+The stable lane ID, frozen display name, machine artifacts, and bounded claim
+remain unchanged. The fuller comparison is in the
+[agentic-ecology overview](AGENTIC-ECOLOGY-OVERVIEW.md#why-p2-i1-is-not-n30-again).
+
 ## Stable lane projection
 
 | Stable ID | Current display name | Maximum intended result |
@@ -100,6 +124,14 @@ source inventory. Source admission supports no lane result.
 The [machine-readable registry](contracts/lane-registry.json) controls stable
 IDs, current names, order, inclusion state, and rename provenance. The roadmap
 and this README are narrative projections and must remain consistent with it.
+
+For every unexecuted lane, the
+[post-R3 ecology-discriminator amendment](hypotheses/post-r3-ecology-discriminator-amendment.md)
+now separates the inherited graph relation from the ecology-specific relation
+that must carry lane support. Reproducing only the inherited relation is
+insufficient. L03 must measure trace dynamics beyond static persistence, and
+L06 must test budget-closing circulation beyond linear transport. This
+prospective amendment does not change P2-I1 or the shared schema bundle.
 
 After P1-GATE, lanes may calibrate and register independently and may not
 consume another lane's conclusion. Candidate cells remain blocked until the

@@ -2,9 +2,9 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.25
+**Plan revision:** 0.26
 
-**Date:** 2026-07-10
+**Date:** 2026-07-12
 
 **Scope:** repository architecture, directive hierarchy, Post-N30 atlas program,
 LGRC consumption boundary, specification promotion, and implementation sequence
@@ -216,6 +216,7 @@ process in Section 17.
 | D-036 | Accepted | The known tensions among constructed exploration, implementation restraint, reproducibility, local PyGRC resolution, deferred packaging, domain placement, and bounded lane closure are operationalized as explicit Phase 1 contract and tooling obligations without reopening P0-I2. |
 | D-037 | Accepted | Evidence ceremony is graduated by evidential use, while runtime safety, graph read-only behavior, evidence-class separation, and claim ceilings remain fixed. Shared profiles and generated receipts SHOULD remove repeated manual entry; N31+ scoring remains a synthesis gate accompanied by independent qualitative rationale. |
 | D-038 | Accepted | Frozen scientific thresholds are reference surfaces and highest-rung anchors, not universal accept/reject gates. Every valid lane result preserves machine-derived threshold relation, lowest valid boundary rung, support status, expected/adjacent/unexpected properties, separate becoming/development readings, claim ceiling, and a falsifiable next move. Hard execution-validity and claim-safety gates remain fail-closed. |
+| D-039 | Accepted | Every unexecuted Phase 2 lane must distinguish its inherited graph relation from an ecology-specific discriminator before calibration. Reproducing only the inherited relation cannot satisfy the lane. L03 additionally requires measured trace dynamics beyond static persistence, and L06 requires a budget-closing depletion/replenishment or return cycle beyond linear multi-leg transport. The prospective amendment does not reopen P2-I1, shared schemas, stable lane IDs, or retained evidence. |
 
 ## 7. Target repository structure
 
@@ -1726,25 +1727,62 @@ classification-value ladder, or next-move dispositions; or the calibration
 procedure proves unable to separate measurement resolution from candidate
 behavior without leakage.
 
+### 15.13 D-039 disposition — Primitive-to-ecology discrimination
+
+**Observed tension:** P2-I1 showed that a lane can execute the correct ecology-
+specific discriminator while its high-level question still sounds like a
+repetition of N30. The same risk is stronger for L03, because N30 already
+established trace-mediated eligibility, and for L06, because N30 already
+retained an alternative circulatory M2 candidate. Ecological vocabulary alone
+cannot distinguish a new lane result from a replay or strengthening of an
+inherited graph relation.
+
+**Selected resolution:** every unexecuted lane binds, before calibration:
+
+```text
+inherited_graph_relation
+ecology_specific_discriminator
+controlled_ecology_consequence
+insufficient_repetition_case
+```
+
+Reproducing only the inherited relation cannot satisfy
+`supported_bounded_candidate`. L03 must measure at least one trace dynamic
+beyond static persistence under repeated or equivalently contrasted history.
+L06 must test a budget-closing cycle with depletion and replenishment, return,
+or another closing re-entry leg; linear multi-hop transport is insufficient.
+
+**Contract and gate effect:** the historical P1-I4 hypothesis file, common
+schema, stable IDs, and P2-I1 identities remain unchanged. A prospective
+post-R3 amendment governs L02 through L07 before their lane-local theory and
+calibration gates. L03 and L06 cannot pass calibration preregistration until
+their targeted requirements are materialized. Future lane briefs and machine
+policies must project the same discriminator.
+
+**Reopening condition:** a future lane demonstrates that its inherited
+relation and ecology discriminator cannot be separated operationally, or that
+the amendment excludes the only source-current realization without providing
+a scientifically meaningful failure or missing-surface classification.
+
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.25:
+Current dependency order after revision 0.26:
 
-1. For each Phase 2 lane, freeze candidate-blind calibration and exact
-   implementation registration before candidate execution. Retain
-   reconstructable matched-null provenance and an explicit reviewed
-   registration evidence bundle; infrastructure validation alone is not
-   registration.
-2. Execute and classify lanes independently; preserve each prior result when a
-   scientific next move requires a new preregistration, and require resolved
-   mandatory control outcomes rather than control ID references alone.
-3. Complete Review R3 after the first lane closes without tuning its
-   conclusion; decide there whether concrete use requires first-class
-   lane-registration or control-outcome records.
-4. Synthesize only after all required terminal and developmental-
-   interpretation records are comparable.
-5. Close AE01 before promoting canonical specifications or stable source
-   abstractions.
+1. Begin P2-I2 with a lane brief that binds D-039's inherited relation,
+   ecology discriminator, controlled consequence, and insufficient-repetition
+   case before candidate-blind calibration.
+2. For every future lane, freeze candidate-blind calibration and exact
+   implementation registration before candidate execution, and emit the
+   compact lane-local control-resolution index required by R3 before terminal
+   closure.
+3. Apply the targeted L03 and L06 amendments before their calibration
+   preregistration gates; static trace persistence and linear capacity
+   transport cannot satisfy those lanes.
+4. Execute and classify lanes independently; preserve each prior result and
+   never consume another lane's conclusion as evidence.
+5. Synthesize only after all required terminal and developmental-
+   interpretation records are comparable, then close AE01 before promoting
+   canonical specifications or stable source abstractions.
 
 ## 17. Conversation provenance and directive maintenance
 
@@ -1820,6 +1858,7 @@ directive.
 | 2026-07-10 | Revision 0.23: passed P1-I5 with experiment-local canonicalization, digests, schema and semantic guards, deterministic IDs, resolved manifests/profiles, finite comparison policy, strict runtime receipts, report assembly, validated lane projections, conformance fixtures, portable reconstruction commands, and focused tests. Infrastructure validation opened no lane evidence; P1-GATE and Review R2 remain open. |
 | 2026-07-10 | Revision 0.24: accepted D-038 and explicitly reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric sheets, candidate-blind calibration, machine-derived threshold relations, lane boundary ladders, two-axis developmental interpretations, classification-value and next-move discipline, and guarded local refinement. Thresholds remain frozen anchors without erasing lower or unexpected classes; no lane evidence opened. |
 | 2026-07-10 | Revision 0.25: recorded Review R2 over the complete P1-I1 through P1-I5 freeze, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Phase 2 candidate-blind calibration and lane registration are open; candidate execution remains behind each lane-local resolution/registration gate. Reconstructable calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory proportional guards, while R3 decides whether concrete use justifies new first-class records. No positive atlas result is assigned. |
+| 2026-07-12 | Revision 0.26: accepted D-039 after P2-I1/R3, requiring future lanes to name an inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. Added targeted prospective amendments for L03 trace dynamics beyond static persistence and L06 budget-closing circulation beyond linear transport. P2-I1, shared schemas, stable IDs, and retained evidence remain closed and unchanged. |
 
 ## 18. Program completion criteria
 

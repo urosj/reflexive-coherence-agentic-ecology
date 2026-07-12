@@ -1,6 +1,7 @@
 # AE01 Hypotheses
 
-**Status:** P1-I4 revision 0.24 developmental interpretation freeze complete
+**Status:** P1-I4 revision 0.24 historical freeze complete; post-R3
+prospective amendment accepted for unexecuted lanes
 
 **Acceptance state:** preregistration only; Review R2 assigned `AE01-C2` for
 the complete Phase 1 contract, not for a hypothesis result
@@ -22,6 +23,11 @@ the complete Phase 1 contract, not for a hypothesis result
 - [Developmental interpretation contract](developmental-interpretation-contract.md)
   separates hard validity/claim gates from interpretive scientific ladders,
   defines “narrow,” and freezes two-axis readings and next-move discipline.
+- [Post-R3 ecology-discriminator amendment](post-r3-ecology-discriminator-amendment.md)
+  prospectively requires future lanes to distinguish inherited graph relations
+  from ecology-specific discriminators. It adds binding pre-execution
+  requirements for L03 trace dynamics and L06 budget-closing circulation
+  without changing the historical P1-I4 file or P2-I1.
 
 These documents preserve the distinction between N29/N30 evidence, ecology
 interpretation, constructed RCAE mechanisms, observed AE01 results, missing
@@ -38,13 +44,13 @@ The sequence exposes progressively different demands:
 
 | Hypothesis | Interpreted demand |
 | --- | --- |
-| `AE01-H-L01` | A changed medium can alter later local formation or susceptibility. |
-| `AE01-H-L02` | Multiple attributable histories can co-condition one shared carrier. |
-| `AE01-H-L03` | Costly traces can persist and alter later route or continuation eligibility. |
-| `AE01-H-L04` | Earlier activity can reshape support conditions for later fragile formations. |
-| `AE01-H-L05` | Maintained boundary state can condition exchange and closure. |
-| `AE01-H-L06` | Auditable capacity history can circulate and alter later eligibility. |
-| `AE01-H-L07` | Parent-level state may require a missing distinction to modulate separable local susceptibilities. |
+| `AE01-H-L01` | The same medium history can differentially alter later possibility across matched susceptibilities. |
+| `AE01-H-L02` | Multiple attributable histories can jointly constitute one functional shared-pool state. |
+| `AE01-H-L03` | Repeated costly activity can produce trace dynamics beyond static persistence that reshape later traversal. |
+| `AE01-H-L04` | Accounted support can differentially condition matched fragile and robust formation or persistence. |
+| `AE01-H-L05` | Maintained selective interface state can condition exchange, leakage, repair, and closure. |
+| `AE01-H-L06` | Auditable capacity can complete a budget-closing depletion/replenishment or return cycle that conditions later continuation. |
+| `AE01-H-L07` | Parent-level modulation requires an operational causal distinction from copied local parameters or global control. |
 | `AE01-H-S01` | Independent lanes may expose the same operational prerequisite. |
 | `AE01-H-S02` | The atlas can close without forcing a successor when evidence is insufficient or unstable. |
 
@@ -53,6 +59,12 @@ evocative ecology metaphor. A positive-looking lane that depends on a hidden
 producer, passive storage, free budget, fixture-specific code, or semantic
 relabel is deliberately more valuable as a classified failure than as an
 inflated success.
+
+For L02 through L07, the post-R3 amendment controls this interpreted demand
+before execution. Reproducing only an inherited graph relation cannot satisfy
+the lane. The original `lane-hypotheses.md` remains the historical P1-I4
+freeze; the amendment narrows future positive interpretation without changing
+stable IDs, shared schemas, or P2-I1.
 
 Lane 7 is intentionally asymmetric. Its successful outcome may be a precise
 missing-surface classification and future discriminator. It does not seek to

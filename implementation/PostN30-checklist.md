@@ -2,9 +2,9 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.25
+**Baseline revision:** 0.26
 
-**Date:** 2026-07-10
+**Date:** 2026-07-12
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
 
@@ -46,7 +46,7 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.25 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.26 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
 | Phase 2 — Atlas execution | Open for calibration and registration | P2-GATE | Candidate execution remains lane-gated |
@@ -954,6 +954,12 @@ Every lane iteration below MUST complete the same minimum work:
   `validate-phase1` success alone does not satisfy registration.
 - [ ] Populate the complete pattern-card contract.
 - [ ] Separate N30-supported and ecology-extrapolated legs.
+- [ ] Before calibration, bind the lane's `inherited_graph_relation`,
+  `ecology_specific_discriminator`, `controlled_ecology_consequence`, and
+  `insufficient_repetition_case` under D-039 and the post-R3 amendment.
+- [ ] Ensure the candidate/control matrix can falsify the ecology discriminator
+  and that reproducing only the inherited relation cannot reach
+  `supported_bounded_candidate`.
 - [ ] Record the parent basin and effect on parent closure.
 - [ ] Record medium carrier, perturbation, cost, persistence, and susceptibility.
 - [ ] Record N29 prototype and composition dependencies.
@@ -1135,7 +1141,9 @@ Required lane work:
 - [ ] Define the shared carrier and access scope.
 - [ ] Distinguish common substrate memory from database/mailbox semantics.
 - [ ] Define accumulation, mixing, depletion, saturation, and leakage.
-- [ ] Define how multiple perturbations condition later continuation.
+- [ ] Define how multiple attributable contributions jointly constitute one
+  functional pool state/history and condition later continuation beyond
+  independent writes or a global aggregate.
 - [ ] Apply the common lane completion contract.
 
 Lane-specific boundary:
@@ -1148,6 +1156,8 @@ Blocked: collective memory, communication, resource economy, or coordination.
 Exit gate `P2-I2-GATE`:
 
 - [ ] Pool pattern and sharedness are classified.
+- [ ] Combined-state dependence is distinguished from inherited single-writer
+  medium perturbation and separate contribution success.
 - [ ] Mixing, leakage, and hidden-controller risks are recorded.
 - [ ] New requirements and debts are recorded.
 
@@ -1160,8 +1170,12 @@ Entry condition:
 Required lane work:
 
 - [ ] Define route-support aftereffect rather than symbolic trail message.
-- [ ] Define deposition cost, reinforcement, decay, saturation, and stale-trace
-  failure.
+- [ ] Define nonzero deposition/maintenance cost and at least two controlled
+  trace-history conditions involving repeated activity.
+- [ ] Require at least one measured dynamic beyond static persistence: decay,
+  reinforcement, saturation, or active maintenance.
+- [ ] Define stale-trace failure and how trace dynamics reshape later traversal
+  or continuation distributions.
 - [ ] Define susceptibility-dependent route or continuation effects.
 - [ ] Include trace shuffle, false-trace, freeze, and decay controls where
   admissible.
@@ -1179,6 +1193,8 @@ Exit gate `P2-I3-GATE`:
 
 - [ ] Trail pattern is classified.
 - [ ] Trace functionality is distinguished from labels and passive storage.
+- [ ] Static trace persistence plus one later eligibility effect is explicitly
+  insufficient for L03 support.
 - [ ] New requirements and debts are recorded.
 
 ### P2-I4 — Nursery or support field lane
@@ -1192,6 +1208,8 @@ Required lane work:
 - [ ] Define support deficit, fragile/local identity condition, and admissible
   support carrier.
 - [ ] Define how earlier activity changes later formation or stability.
+- [ ] Define a matched fragile-versus-robust discriminator under the same or
+  comparable support history.
 - [ ] Separate generative support from semantic care or cooperation.
 - [ ] Record parent-basin reserve and subsidy requirements.
 - [ ] Apply the common lane completion contract.
@@ -1207,6 +1225,8 @@ Blocked: care, altruism, cooperation, generative agency, reproduction, or life.
 Exit gate `P2-I4-GATE`:
 
 - [ ] Nursery/support pattern is classified.
+- [ ] Differential fragile formation is distinguished from generic eligibility
+  improvement and direct allocation.
 - [ ] Support transfer, subsidy, and closure requirements are recorded.
 - [ ] New requirements and debts are recorded.
 
@@ -1221,6 +1241,8 @@ Required lane work:
 - [ ] Define boundary as maintained selective coupling rather than wall.
 - [ ] Define ingress, egress, transformation, delay, and permeability surfaces.
 - [ ] Define exchange cost, leakage, rejection, and boundary repair.
+- [ ] Define the maintained boundary-state intervention that distinguishes
+  selective interface function from successful fixed transport.
 - [ ] Distinguish boundary contact from shared-medium relation.
 - [ ] Apply the common lane completion contract.
 
@@ -1235,6 +1257,8 @@ multi-basin exchange.
 Exit gate `P2-I5-GATE`:
 
 - [ ] Boundary/exchange pattern is classified.
+- [ ] Maintained boundary dependence is distinguished from one transfer,
+  routing, or inside/outside labels.
 - [ ] Permeability, leakage, and lineage requirements are recorded.
 - [ ] New requirements and debts are recorded.
 
@@ -1247,7 +1271,11 @@ Entry condition:
 Required lane work:
 
 - [ ] Define conserved or audited capacity/support surfaces.
-- [ ] Define circulation, redistribution, depletion, replenishment, and leakage.
+- [ ] Define a budget-closing cycle with at least two legs, explicit capacity
+  identity, depletion, and replenishment, return, or another closing re-entry
+  leg.
+- [ ] Define leakage and conservation over the complete cycle rather than each
+  handoff alone.
 - [ ] Define maintenance floors and surplus conditions.
 - [ ] Distinguish circulation from producer-mediated transfers and semantic
   resource exchange.
@@ -1264,6 +1292,8 @@ ecology circulation.
 Exit gate `P2-I6-GATE`:
 
 - [ ] Capacity-circulation pattern is classified.
+- [ ] Linear multi-leg transport is explicitly insufficient even when every
+  component handoff succeeds.
 - [ ] Budget, leakage, and redistribution requirements are recorded.
 - [ ] New requirements and debts are recorded.
 
@@ -1278,6 +1308,8 @@ Required lane work:
 - [ ] Define the higher-order identity and persistence condition.
 - [ ] Define reserve, pressure, cost, or affordance modulation shared across
   local differentiations.
+- [ ] Define the parent-to-local discriminator against copied local parameters,
+  a global variable, and central scheduling.
 - [ ] Define separable susceptibilities and compatible local responses.
 - [ ] Distinguish parent-basin modulation from global variables and central
   commands.
@@ -1297,6 +1329,8 @@ Exit gate `P2-I7-GATE`:
 
 - [ ] Parent-basin modulation demand and missing source-current surface are
   classified.
+- [ ] Parent-conditioned local modulation is distinguished from copied local
+  parameters, global state, and central scheduling.
 - [ ] Global-controller alternatives fail closed.
 - [ ] New requirements and debts are recorded.
 
@@ -2050,7 +2084,9 @@ Change log:
 | CL-024 | 2026-07-10 | Revision 0.24 accepted D-038, preserved revision 0.23 in commit `d240269`, and reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric/calibration/interpretation records, candidate-blind resolution, exact threshold relations, lane boundary ladders, two-axis readings, classification-value and guarded-next-move semantics, 32 focused tests, and linked synthesis entry. No lane or calibration executed as evidence; `AE01-C0` remains the ceiling. | P1-I3-GATE onward | Superseded by CL-025 |
 | CL-025 | 2026-07-10 | Revision 0.25 retained the complete Review R2 disposition as a structured checklist and closeout, accepted P1-I1 through P1-I5, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Candidate-blind calibration and lane registration opened; candidate execution remains behind each lane-local gate. Calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory Phase 2 guards; R3 decides whether concrete use requires new first-class records. No positive atlas result is assigned. | P1-GATE and P2 entry | Superseded by CL-026 |
 | CL-026 | 2026-07-11 | P2-I1 closed with retained C02 evidence, `supported_bounded_candidate`, R05 bounded carrier-load invariance, explicit constructed support, and the bounded niche-conditioning demand-pattern ceiling. C01 remains bounded incomplete. Post-retention validation reproduced the controlling digests. Considered structural and decision-set alternatives are dormant history with no execution authority. R3 remains the next contract-adequacy review and may not tune the closed result. | P2-I1-GATE and R3 entry | Superseded by CL-027 |
-| CL-027 | 2026-07-11 | Review R3 passed without tuning P2-I1. Calibration provenance, registration evidence, and the Phase 1 meaning contracts proved adequate. No first-class `lane_registration` or `control_outcome` record is admitted. Concrete control-traversal friction creates one prospective requirement: future lanes emit a compact lane-local control-resolution index before terminal closure, with possible core promotion deferred to R4 after recurrence. P2-I1 remains closed and P2-I2 is next. | R3 closeout and P2-I2 entry | Active |
+| CL-027 | 2026-07-11 | Review R3 passed without tuning P2-I1. Calibration provenance, registration evidence, and the Phase 1 meaning contracts proved adequate. No first-class `lane_registration` or `control_outcome` record is admitted. Concrete control-traversal friction creates one prospective requirement: future lanes emit a compact lane-local control-resolution index before terminal closure, with possible core promotion deferred to R4 after recurrence. P2-I1 remains closed and P2-I2 is next. | R3 closeout and P2-I2 entry | Superseded by CL-028 |
+| CL-028 | 2026-07-12 | Post-closeout N30/L01 clarification made explicit that N30 owns bounded history-conditioned eligibility while P2-I1's independent ecological discriminator is matched participant-relative differential possibility. N30's susceptibility-direction controls and P2-I1's fresh-runtime strengthening remain acknowledged. No hypothesis, stable ID, display name, artifact, terminal result, rung, or claim ceiling changed. | AE01 orientation and P2-I2 entry | Superseded by CL-029 |
+| CL-029 | 2026-07-12 | Revision 0.26 accepted D-039 and added a prospective post-R3 ecology-discriminator amendment for unexecuted lanes. Every future lane must bind its inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. L03 now requires trace dynamics beyond static persistence; L06 requires a budget-closing depletion/replenishment or return cycle beyond linear transport. Stable IDs, P2-I1, historical P1-I4 records, shared schemas, and retained evidence remain unchanged. | P2-I2 through P2-I7 pre-execution gates | Active |
 
 ## 17. Current next actions
 
@@ -2065,7 +2101,9 @@ The next unchecked actions in dependency order are:
 4. [x] Complete Review R3 without tuning the closed P2-I1 conclusion; retain
    existing registration records and require a compact future lane-local
    control-resolution index without admitting a new core record.
-5. [ ] Begin P2-I2 under its own theory, candidate-blind calibration,
+5. [x] Accept D-039 and bind the post-R3 primitive-to-ecology discriminator
+   amendment prospectively to every unexecuted lane without reopening P2-I1.
+6. [ ] Begin P2-I2 under its own theory, candidate-blind calibration,
    registration, control-resolution, and execution boundaries.
-6. [ ] Begin any later independently owned Phase 2 lane only under its own
+7. [ ] Begin any later independently owned Phase 2 lane only under its own
    candidate-blind calibration, registration, and execution boundaries.

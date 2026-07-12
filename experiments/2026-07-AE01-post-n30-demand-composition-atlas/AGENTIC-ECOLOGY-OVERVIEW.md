@@ -151,15 +151,15 @@ missing surface is not evidence that the surface exists.
 AE01 separates seven ecological questions so that one attractive result cannot
 silently answer all of them:
 
-| Lane | Plain-language question |
-| --- | --- |
-| L01 — niche conditioning | Can one participant's history change which later local formations are possible through a non-private medium? |
-| L02 — shared-pool co-conditioning | Can multiple sources alter one carrier whose combined state conditions later continuation? |
-| L03 — trail or stigmergic field | Can costly traces persist, decay, reinforce, and alter later routes without becoming messages? |
-| L04 — support field | Can earlier activity change whether fragile local identities can form or remain stable? |
-| L05 — boundary-conditioned exchange | Can a maintained boundary govern selective ingress, egress, transformation, leakage, and repair? |
-| L06 — capacity circulation | Can capacity move, deplete, replenish, and maintain floors without hidden transfers or resource semantics? |
-| L07 — parent-basin modulation | What graph distinction would let a larger basin modulate local possibilities without acting as a central controller? |
+| Lane | Inherited starting point | Ecology-specific question |
+| --- | --- | --- |
+| L01 — niche conditioning | Medium history can affect later eligibility | Can the same history create different later possibilities for matched local differentiations with different susceptibility? |
+| L02 — shared-pool co-conditioning | Participants can perturb a non-private carrier | Can multiple attributable sources jointly constitute one functional pool state rather than separate writes or global storage? |
+| L03 — trail or stigmergic field | A trace can persist and affect later eligibility | Can repeated costly activity make a trace decay, reinforce, saturate, or require maintenance so that its dynamics reshape later traversal? |
+| L04 — support field | Generative/extractive activity can change support-like conditions | Can produced, depleted, or maintained support differentially govern formation of matched fragile and robust local identities? |
+| L05 — boundary-conditioned exchange | Boundaries and transport surfaces can be represented | Can a maintained selective interface govern exchange, transformation, leakage, repair, and later closure? |
+| L06 — capacity circulation | Capacity can be transported and affect later eligibility | Can capacity complete a budget-closing depletion/replenishment or return cycle while preserving floors and exposing leakage? |
+| L07 — parent-basin modulation | Local graph states exist while parent modulation remains blocked | What missing causal surface would let parent state modulate matched local susceptibilities without copied parameters or central control? |
 
 No single lane proves an ecology. The eventual value lies in recurrence. If
 independent experiments keep requiring the same operational relation—perhaps
@@ -168,13 +168,86 @@ or capacity conservation—that recurrence may identify a useful LGRC building
 block. If the requirements do not recur, the atlas may correctly select
 nothing.
 
+The future-lane rule is now explicit: reproducing only the inherited starting
+point cannot satisfy a lane. Each lane must preregister and causally test its
+ecology-specific discriminator. L03 must go beyond static trace persistence;
+L06 must go beyond linear multi-leg transport. The binding prospective details
+are in the
+[post-R3 ecology-discriminator amendment](hypotheses/post-r3-ecology-discriminator-amendment.md).
+
+## Why P2-I1 is not N30 again
+
+N30 already established the bounded graph-side relation that makes L01
+possible:
+
+```text
+participant-attributable perturbation
+  -> non-private medium history
+  -> later eligibility depends on that history
+```
+
+N30 also used susceptibility language and reinstantiated a susceptibility-
+inversion control. It would therefore be too strong to say that N30 ignored
+participant susceptibility entirely. Its evidential unit, however, was an
+eligibility candidate plus directional false-positive controls. It did not
+compare matched later reader configurations under the same medium history and
+measure whether the medium effect differed between them.
+
+That comparative interaction is L01's ecological addition:
+
+```text
+N30:
+  medium history changes later eligibility
+
+P2-I1:
+  the effect of medium history changes with
+  participant-relative susceptibility
+```
+
+P2-I1 calculates this directly for each matched context:
+
+```text
+(candidate aligned - withdrawal aligned)
+  - (candidate inverted - withdrawal inverted)
+```
+
+The interaction was `1` in both contexts for every seed. The separate
+susceptibility-inversion cell changed the response panel from `[1,0,1,0]` to
+`[0,1,0,1]`, so the effect followed the configured susceptibility relation
+rather than the reader slot.
+
+Without that differential response, P2-I1 would still have been useful as a
+fresh-runtime strengthening of N30. N30's final evidence was artifact-level
+and recorded `n30_fresh_runtime=false`, whereas P2-I1 executed a new PyGRC
+writer-medium-reader chain through native queue processing. But a uniform
+positive effect would have remained generic environmental conditioning, not a
+supported niche-conditioning result.
+
+The relationship is therefore:
+
+```text
+N30:
+  history becomes causally available in non-private substrate state
+
+P2-I1:
+  substrate history becomes differential participant-relative possibility
+```
+
+P2-I1 is not another admitted primitive. It is the first controlled ecology-
+side specialization and composition of the N30 relation, producing an
+operational differential-possibility demand pattern under explicit constructed
+support. Its interpretive emphasis is **minimal shared-medium differential
+niche conditioning**. The stable lane ID and frozen display name remain
+unchanged.
+
 ## Why P2-I1 comes first
 
 The first lane asks for the smallest meaningful step beyond an isolated agent
 and a passive environment:
 
 > Can attributable activity by one local participant alter a shared medium so
-> that a later, distinct local differentiation has different possibilities?
+> that the same history differently conditions matched later local
+> differentiations?
 
 This is called niche conditioning, but the biological word is deliberately
 bounded. The experiment does not assume organisms, populations, adaptation,
@@ -284,8 +357,8 @@ boundary so the result can be reconstructed without trusting the author.
 
 P2-I1 contributes three things.
 
-First, it turns one conceptual statement—history shapes later possibility—into
-an executable causal pattern.
+First, it turns N30's history-conditioned eligibility relation into an
+executable participant-relative differential-possibility pattern.
 
 Second, it identifies the present construction debt. A more natural LGRC
 realization would need the relation to arise, persist, be accessed, and perhaps
@@ -310,10 +383,10 @@ does not become evidence for them.
 ## What happens next
 
 P2-I2 asks whether multiple sources can co-condition one shared carrier. That
-is a different ecological step. P2-I1 showed one participant-relative history
-changing later possibility. P2-I2 must distinguish genuinely combined medium
-state from a mailbox, database, sequence of private writes, or global
-controller.
+is a different ecological step. P2-I1 showed one history differently
+conditioning later possibilities across susceptibility. P2-I2 must distinguish
+genuinely combined medium state from a mailbox, database, sequence of private
+writes, or global controller.
 
 Later lanes examine trace dynamics, support, boundaries, circulation, and
 parent-basin demands. Only after all lanes close may the atlas compare their

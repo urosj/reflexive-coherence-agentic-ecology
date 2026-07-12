@@ -1,10 +1,11 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** Review R2 and P1-GATE passed; Phase 2 calibration and registration open
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 is next
 
 **Local experiment:** `AE01`
 
-**Acceptance state:** `AE01-C2` assigned; no positive atlas claim
+**Acceptance state:** `AE01-C2` assigned; one bounded L01 result, no cross-lane
+or N31+ claim
 
 **Source admission:**
 [AE01 P1-I1 source inventory](2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md)
@@ -236,17 +237,20 @@ identical at this freeze. IDs survive every later rename.
 
 | Stable ID | Current display name | Core question | Source motivation | Maximum intended result |
 | --- | --- | --- | --- | --- |
-| `AE01-L01` | Minimal shared-medium niche formation | Can a changed shared-medium condition alter later formation, persistence, re-entry, cost, or susceptibility within a declared support context? | N30 trace-conditioned eligibility; N29 Prototype B medium/boundary; N29 Prototype C susceptibility/re-entry; ecology niche interpretation | Bounded niche-conditioning demand pattern |
-| `AE01-L02` | Shared-pool co-conditioning | Can multiple perturbations of one auditable carrier condition later continuation without becoming a mailbox, database, or global controller? | N29 Prototype B shared-medium separation; Prototype D medium reshaping; N30 non-private surface dependency | Bounded shared-pool co-conditioning demand pattern |
-| `AE01-L03` | Trail or stigmergic field | Can costly deposition, persistence, decay, and reinforcement alter later route or continuation eligibility without message semantics? | N30 trace/eligibility chain; N29 Prototype A pressure loop; Prototype B medium surface; shared-medium paper method | Bounded trail/stigmergic demand pattern |
-| `AE01-L04` | Nursery or support field | Can earlier generative or redistributive activity alter later formation or stability of fragile local identities without care or cooperation semantics? | N29 nursery-demand debt and Prototype D; N22-style susceptibility context and N28-style generative/extractive discipline through N29; N30+ support-redistribution orientation | Bounded support-conditioned admissibility demand pattern |
-| `AE01-L05` | Boundary-conditioned exchange | Can maintained selective coupling expose ingress, egress, transformation, permeability, leakage, and repair requirements? | N29 Prototype B boundary/shared-medium unit; N30 participant/boundary guardrail context; N30+ boundary-exchange orientation | Bounded boundary-conditioned exchange demand pattern |
-| `AE01-L06` | Capacity circulation | Can audited capacity circulate, deplete, replenish, leak, and maintain floors without semantic resource exchange or hidden transfers? | N29 Prototype D circulation and multi-leg leakage debt; N28-style discipline through N29; N30 alternative circulatory evidence at its M2 ceiling | Bounded capacity-circulation demand pattern |
-| `AE01-L07` | Parent-basin modulation demand and missing-surface classification | What source-current surface would be required for parent-basin pressure or affordance to modulate separable local susceptibilities without a central command? | N30 explicitly blocks parent-basin modulation above M2; shared-medium parent-basin ontology; graph/ecology spiral demand role | Bounded demand and missing-surface classification; positive M3/M4 is not expected |
+| `AE01-L01` | Minimal shared-medium niche formation | Can the same attributable medium history differentially alter later formation, persistence, re-entry, cost, or susceptibility across matched local differentiations within a declared support context? | N30 trace-conditioned eligibility; N29 Prototype B medium/boundary; N29 Prototype C susceptibility/re-entry; ecology niche interpretation | Bounded niche-conditioning demand pattern |
+| `AE01-L02` | Shared-pool co-conditioning | Can multiple attributable sources jointly constitute one functional pool state or history on which later continuation depends, without becoming private partitions or a global aggregate? | N29 Prototype B shared-medium separation; Prototype D medium reshaping; N30 non-private surface dependency | Bounded shared-pool co-conditioning demand pattern |
+| `AE01-L03` | Trail or stigmergic field | Can repeated costly activity produce decay, reinforcement, saturation, or maintenance dynamics that reshape later traversal beyond static trace persistence? | N30 trace/eligibility chain; N29 Prototype A pressure loop; Prototype B medium surface; shared-medium paper method | Bounded trail/stigmergic demand pattern |
+| `AE01-L04` | Nursery or support field | Can produced, depleted, leaking, or maintained support differentially alter formation or stability of matched fragile and robust local identities without care or cooperation semantics? | N29 nursery-demand debt and Prototype D; N22-style susceptibility context and N28-style generative/extractive discipline through N29; N30+ support-redistribution orientation | Bounded support-conditioned admissibility demand pattern |
+| `AE01-L05` | Boundary-conditioned exchange | Can a maintained selective interface causally govern ingress, egress, transformation, permeability, leakage, repair, and later closure rather than fixed transport? | N29 Prototype B boundary/shared-medium unit; N30 participant/boundary guardrail context; N30+ boundary-exchange orientation | Bounded boundary-conditioned exchange demand pattern |
+| `AE01-L06` | Capacity circulation | Can capacity complete a budget-closing multi-leg cycle with depletion and replenishment or return, explicit floors, and leakage rather than linear transport? | N29 Prototype D circulation and multi-leg leakage debt; N28-style discipline through N29; N30 alternative circulatory evidence at its M2 ceiling | Bounded capacity-circulation demand pattern |
+| `AE01-L07` | Parent-basin modulation demand and missing-surface classification | What source-current causal surface would let parent state modulate matched separable local susceptibilities without copied parameters, a global variable, or central command? | N30 explicitly blocks parent-basin modulation above M2; shared-medium parent-basin ontology; graph/ecology spiral demand role | Bounded demand and missing-surface classification; positive M3/M4 is not expected |
 
 ### Lane-specific guards
 
-- `AE01-L01`: `niche` is an ecology interpretation, not an N30 label.
+- `AE01-L01`: `niche` is an ecology interpretation, not an N30 label. N30
+  already owns bounded history-conditioned eligibility; L01 requires a
+  participant-relative differential possibility structure rather than a
+  uniform medium effect.
 - `AE01-L02`: common storage or a global variable is not a shared pool.
 - `AE01-L03`: a trail is a functional aftereffect, not a symbolic pheromone
   message.
@@ -257,6 +261,55 @@ identical at this freeze. IDs survive every later rename.
 - `AE01-L06`: capacity circulation is not resource economy, metabolism,
   cooperation, or exploitation.
 - `AE01-L07`: demand for M3/M4 does not count as M3/M4 evidence.
+
+### Post-P2-I1 N30/L01 clarification — 2026-07-12
+
+N30 established an artifact-level bounded minimal shared-medium participation
+candidate and a trace-mediated eligibility primitive/building-block candidate.
+It also retained susceptibility-direction controls. It did not establish a
+matched same-history interaction across distinct later reader configurations.
+
+P2-I1's independent ecology-side discriminator is therefore not generic
+history-conditioned eligibility. It is:
+
+```text
+same attributable medium history
++ matched later differentiations
++ different configured susceptibility
+-> different later possibility
+```
+
+C02 observed that interaction in both matched contexts for every seed, and its
+susceptibility-inversion cell made the response follow the susceptibility
+relation rather than reader identity. P2-I1 also added fresh PyGRC execution,
+but that is an evidence-strengthening difference rather than the defining
+ecological distinction.
+
+This clarification does not rename `AE01-L01`, change its frozen hypothesis,
+alter any retained artifact or terminal result, or upgrade the result to an
+admitted primitive. It makes explicit the selectivity gate already present in
+the accepted brief, decision record, implementation, and C02 interpretation.
+
+### Future-lane primitive-to-ecology delta
+
+Decision D-039 and the
+[post-R3 amendment](2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/post-r3-ecology-discriminator-amendment.md)
+require every unexecuted lane to name the relation it inherits and the new
+ecological discriminator it must test:
+
+| Lane | Inherited relation | Ecology discriminator required for lane support |
+| --- | --- | --- |
+| L02 | Non-private carrier perturbation | Multiple attributable sources jointly constitute one functional pool state/history |
+| L03 | Persistent trace affects eligibility | Repeated costly activity produces measured decay, reinforcement, saturation, or maintenance dynamics that alter later traversal |
+| L04 | Support-like change affects eligibility | Accounted support differentially governs matched fragile versus robust formation or persistence |
+| L05 | Boundary/transport surfaces exist | Maintained selective interface state regulates exchange, leakage, repair, and later closure |
+| L06 | Capacity transport affects eligibility | A budget-closing depletion/replenishment or return cycle preserves floors and exposes leakage |
+| L07 | Parent modulation is blocked/missing | An operational parent-to-local discriminator separates distributed modulation from copied parameters or central control |
+
+Reproducing only the inherited relation cannot close a lane as
+`supported_bounded_candidate`. L03 static persistence and L06 linear multi-leg
+transport are specifically insufficient. These are prospective constraints on
+unexecuted lanes; P2-I1 and the historical P1-I4 freeze remain unchanged.
 
 ## 8. Lane independence, execution, and rename rules
 
@@ -510,5 +563,12 @@ matched-null generator/input provenance and registration must materialize an
 explicit reviewed evidence bundle; `validate-phase1` alone is not
 registration. Before terminal closure, every mandatory control outcome and
 applicability disposition must resolve through retained evidence. Review R3
-will decide whether the first concrete lane requires new first-class records
-for those relationships.
+subsequently found no need for new first-class registration or control-outcome
+records. It requires future lanes to emit one compact lane-local control-
+resolution index and defers possible core promotion until R4 can assess
+recurrence.
+
+P2-I1 is now closed with a bounded differential niche-conditioning demand
+pattern under explicit constructed support. This result does not assign
+cross-lane recurrence or raise the program beyond `AE01-C2`. P2-I2 is the next
+lane.
