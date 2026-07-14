@@ -105,17 +105,20 @@
   },
   "public_source_identity": [
     {
-      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
       "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
       "finding": "arrival assigns target_coherence + packet.amount; no arrival transform"
     },
     {
-      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/grc_9_v3_state.py",
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/grc_9_v3_state.py",
       "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
       "finding": "coherence is an untransformed float field"
     },
     {
-      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_contract.py",
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_contract.py",
       "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
       "finding": "runtime numeric helpers require finite coherence and positive finite packet amount"
     }
@@ -141,5 +144,13 @@
       "R01-R05 or L02 result",
       "mode selection or ranking"
     ]
+  },
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "repository_relative_external_source_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b"
   }
 }

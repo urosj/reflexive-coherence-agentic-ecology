@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Focused zero-execution validation of P2-I2 I04-R2 machine invariants."""
 
 from __future__ import annotations
@@ -17,7 +16,8 @@ from typing import Any, Mapping
 ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENT = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas"
 SCRIPTS = EXPERIMENT / "scripts"
-GRAPH = Path("/home/uros/Documents/RC-github/graph-reflexive-coherence")
+GRAPH_REPOSITORY_ID = "graph-reflexive-coherence"
+GRAPH = ROOT.parent / GRAPH_REPOSITORY_ID
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
@@ -55,6 +55,15 @@ def _sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def _external_source_path(row: Mapping[str, Any]) -> Path:
+    if row.get("repository_id") != GRAPH_REPOSITORY_ID:
+        raise AssertionError("external source repository identity drifted")
+    relative = Path(str(row["path"]))
+    if relative.is_absolute() or ".." in relative.parts:
+        raise AssertionError("external source path is not source-relative")
+    return GRAPH / relative
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -228,8 +237,10 @@ def validate() -> dict[str, Any]:
     )
 
     source_rows = prereg["public_source_identity"]
-    packet_source = Path(source_rows[0]["path"]).read_text(encoding="utf-8")
-    sources_exact = all(_sha256(Path(row["path"])) == row["sha256"] for row in source_rows)
+    packet_source = _external_source_path(source_rows[0]).read_text(encoding="utf-8")
+    sources_exact = all(
+        _sha256(_external_source_path(row)) == row["sha256"] for row in source_rows
+    )
     checks.append(
         _result(
             "I04R2V-06",

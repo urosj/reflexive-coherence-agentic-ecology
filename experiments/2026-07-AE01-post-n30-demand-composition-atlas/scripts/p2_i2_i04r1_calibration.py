@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Future I05 entry point for the corrected P2-I2 analysis-arithmetic null.
 
 I04-R1 freezes and validates this file but never invokes ``main`` or
@@ -25,6 +24,7 @@ from p2_i2_i04r1_analysis import (
 
 
 EXPECTED_CALIBRATION_ID = "rcae-p2-i2-shared-analysis-arithmetic-null-v2"
+ROOT = Path(__file__).resolve().parents[3]
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -40,6 +40,15 @@ def _sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def _repository_relative_identity(path: Path) -> str:
+    """Return a stable RCAE-relative identity without persisting checkout roots."""
+
+    try:
+        return path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError as exc:
+        raise ContractError(f"input path is outside the RCAE repository: {path.name}") from exc
 
 
 def validate_calibration_policy(
@@ -168,9 +177,9 @@ def build_calibration_record(
         "pygrc_imported": False,
         "calibrated_surface": "pure_analysis_arithmetic_and_serialization_only",
         "input_identities": {
-            "analysis_policy_path": str(analysis_path),
+            "analysis_policy_path": _repository_relative_identity(analysis_path),
             "analysis_policy_sha256": _sha256(analysis_path),
-            "calibration_policy_path": str(calibration_path),
+            "calibration_policy_path": _repository_relative_identity(calibration_path),
             "calibration_policy_sha256": _sha256(calibration_path),
         },
         "per_seed_order_margins": rows,

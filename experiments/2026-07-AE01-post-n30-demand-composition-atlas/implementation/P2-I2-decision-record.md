@@ -68,6 +68,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-031` | How must the pre-claim `.venv` path-resolution failure be corrected? | Accepted and committed: always use the active repository `.venv`; separate invoked command identity from resolved binary identity | Historical I05C correction enabled the later single attempt; its portability debt is now governed by DEC-032 | 2026-07-14 |
 | `P2-I2-DEC-032` | How must the newly exposed absolute-path violations be audited and corrected? | Owner-authorized audit now review-ready: 135 files scanned, 312 value-redacted violations in 70 files; an in-iteration selector correction ensures nested coverage; correction order begins with I05 | I05E correction, metric freeze, CAL-GATE, I06, and all execution remain closed pending audit acceptance | 2026-07-14 |
 | `P2-I2-DEC-033` | Does the owner accept the I05D inventory and which correction group may begin? | Accepted as the right next move: open only the exact first I05 portability correction group and return it uncommitted for review | Opens I05E group 1 only; no null rerun, later correction group, metric freeze, CAL-GATE, I06, or candidate execution | 2026-07-14 |
+| `P2-I2-DEC-034` | Does the owner accept the first correction group and which group follows its commit? | Accepted and committed at `6dd6898`; open only the exact 13-file/30-finding I04/I05 authority-dependency group under I05F | Opens I05F only; no I03/later group, metric freeze, CAL-GATE, I06, or execution | 2026-07-14 |
+| `P2-I2-DEC-035` | May the I05F static-validation ceiling deviation be closed in place without rewriting the freeze or rerunning validation? | Owner-authorized `+1`: retain an additive I05F deviation closeout accepting the process-only 13-versus-three variance | Opens closeout-record construction only; no full-package acceptance, commit, rerun, later group, CAL-GATE, I06, or execution | 2026-07-14 |
+| `P2-I2-DEC-036` | Does completed DEC-035 closeout also constitute full I05F acceptance and commit authorization? | Owner-confirmed: “when done, it is also acceptance, can be committed” | Accepts and authorizes commit of the complete I05F package after closeout; no next group, CAL-GATE, I06, or execution | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1985,7 +1988,132 @@ directs progression to the next bounded group after retention. That direction
 does not itself begin or mutate the next group before this package is
 committed.
 
-## 36. Pending decision queue
+## 36. `P2-I2-DEC-034` — First correction acceptance and I05F entry
+
+**Status:** accepted by project owner; I05F technically complete but
+process-blocked and uncommitted after commit `6dd6898`
+
+**Decision:** The project owner accepts the first I05E correction group,
+authorizes and completes its commit, and directs progression to the next group.
+The retained commit is `6dd689811949b51ef9a2e9e0d0d14c06bf7346ba`.
+Only the I05D group `i04_i05_authority_dependencies` may now begin: 30
+findings across the exact 13 files listed in checklist section 10.4D.
+
+I05F must freeze the exact historical source hashes and path-only
+transformations before editing an affected file. Accepted I04/I04R1/I04R2
+scientific and calibration semantics remain immutable historical authority.
+Current changed records must declare portable projection lineage and cannot
+impersonate raw preregistrations or validations. Raw I05 execution receipts
+retain their original I04 hashes; any current linkage is additive lineage, not
+silent substitution.
+
+No calibration builder, arithmetic null, one-shot wrapper, PyGRC model,
+candidate/control, conformance, or scientific operation is authorized. I03
+and later correction groups, metric freeze, CAL-GATE, I06, and candidate
+execution remain closed. Return I05F uncommitted for owner review.
+
+The authorized I05F group is technically complete and remains uncommitted. The
+exact thirteen-file group moves from 30 findings to zero and passes 10/10
+focused checks. Eight JSON artifacts reconstruct exactly from their `6dd6898`
+source bytes, five Python diffs are confined to the frozen portability
+surfaces, current external-source digests match, accepted I04R2 bytes remain
+addressable at `b7b008c`, and the current I05 output/claim/final bytes are
+unchanged from `6dd6898`.
+
+I05F nevertheless fails its frozen process ceiling. The freeze allowed three
+static-validation invocations; actual preparation used 13 `.venv` Python
+starts: eight JSON syntax checks, one compile check, three validator starts,
+and one scanner diagnostic. Two validator starts failed closed without output;
+the third alone wrote the passing technical result. All 13 starts were static
+and invoked no builder, null, wrapper, PyGRC model, candidate/control,
+conformance, or scientific path. The original freeze remains immutable. This
+is a process-blocked execution disposition under DEC-034, not owner acceptance
+of I05F and not commit authorization; the required process disposition was
+subsequently supplied by DEC-035, with package acceptance supplied separately
+by DEC-036.
+
+Reopen DEC-034 if the scope differs from the 13 I05D files, a transformation
+changes accepted semantics, raw receipt hashes are rewritten, a prohibited
+operation occurs, a later group begins before review, or any group finding
+remains.
+
+## 37. `P2-I2-DEC-035` — I05F in-place process-deviation closeout
+
+**Status:** complete; process deviation accepted by project owner; full-package
+acceptance supplied separately by DEC-036
+
+**Question:** May the I05F validation-count deviation be accepted as a bounded
+process-only deviation without rewriting the original freeze or rerunning the
+technical validator?
+
+**Decision:** The project owner responded `+1` to the proposed bounded
+correction. I05F may retain one additive closeout record that binds:
+
+- the immutable original ceiling of three static-validation invocations;
+- the actual 13 `.venv` Python starts: eight JSON syntax checks, one compile
+  check, three I05F validator starts, and one scanner diagnostic;
+- the two failed-closed validator starts and sole final 10/10 output;
+- zero builder, null, wrapper, PyGRC model, candidate/control, conformance, and
+  scientific operations; and
+- the unchanged historical I04R2 and I05 authority/evidence boundary.
+
+The closeout accepts only the process deviation. It does not reinterpret the
+freeze as though the ceiling had been met, authorize a Python or validator
+rerun, accept the complete I05F package, authorize commit, open a later
+portability group, freeze the metric sheet, pass CAL-GATE, open I06, or
+authorize candidate execution.
+
+After the additive record and navigation are internally consistent, I05F may
+return to uncommitted owner-review readiness. Full-package acceptance and
+commit authorization remain separate owner decisions.
+
+The additive closeout is retained as
+`contracts/p2-i2/i05f-static-validation-deviation-closeout.json`, SHA-256
+`b1473dbcd4784040f91e026b2ba9d809398bf69d6cbc4b3b533921ea6151f6a7`.
+It remains an accurate pre-package-acceptance record; DEC-036 does not rewrite
+its then-current package/commit exclusions.
+
+Reopen DEC-035 if the original freeze is edited, the actual invocation ledger
+is reduced or reclassified, another validation/runtime operation occurs, the
+technical result changes, or the closeout is treated as package acceptance or
+commit authority.
+
+## 38. `P2-I2-DEC-036` — I05F package acceptance and commit authority
+
+**Status:** accepted by project owner; commit authorized after completed
+DEC-035 closeout
+
+**Question:** Once the bounded I05F deviation closeout is complete, does that
+also constitute acceptance of the full I05F package and authorize its commit?
+
+**Decision:** The project owner stated: “when done, it is also acceptance, can
+be committed.” Completed DEC-035 closeout therefore authorizes:
+
+- full acceptance of the exact I05F thirteen-file portability correction;
+- acceptance of the additive deviation record without claiming the original
+  three-invocation ceiling was met;
+- retention of the 10/10 technical result and 30-to-zero group finding result;
+  and
+- one commit containing the complete I05F authority, correction, lineage,
+  technical-validation, deviation-closeout, acceptance, report, hypothesis,
+  decision, and checklist package.
+
+The earlier deviation record remains an accurate pre-acceptance artifact and
+is not rewritten. No Python or technical-validator rerun is authorized or
+needed. This decision does not select or open the next portability group,
+freeze the metric sheet, pass CAL-GATE, open I06, authorize candidate/control
+execution, or assign a scientific result.
+
+The separate acceptance authority is retained as
+`contracts/p2-i2/i05f-owner-acceptance-and-commit-authority.json`, SHA-256
+`4c5804ebe2c531145be40170c5832a59ecbe347092ee0760e68aa83e77cf7cb4`.
+
+Reopen DEC-036 if the committed package omits an I05F authority/correction/
+closeout artifact, changes the retained technical identities, rewrites the
+freeze or deviation ledger, includes a later group, or performs a prohibited
+operation before commit.
+
+## 39. Pending decision queue
 
 No item below is decided by this record yet:
 

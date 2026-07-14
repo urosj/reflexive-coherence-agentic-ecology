@@ -1,0 +1,47 @@
+{
+  "activity_id": "P2-I2-I05F-I04-I05-AUTHORITY-DEPENDENCY-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05F-OWNER-ACCEPTANCE-AND-COMMIT-AUTHORITY",
+  "artifact_version": "1.0.0",
+  "accepted_at": "2026-07-14",
+  "authority": {
+    "change_id": "P2-I2-CHG-029",
+    "decision_id": "P2-I2-DEC-036",
+    "owner_instruction": "when done, it is also acceptance, can be committed",
+    "parent_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba"
+  },
+  "accepted_package": {
+    "complete_I05F_package_accepted": true,
+    "commit_authorized": true,
+    "corrected_file_count": 13,
+    "final_group_violation_count": 0,
+    "initial_group_violation_count": 30,
+    "passed_checks": 10,
+    "total_checks": 10
+  },
+  "deviation_acceptance": {
+    "closeout_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05f-static-validation-deviation-closeout.json",
+    "closeout_sha256": "b1473dbcd4784040f91e026b2ba9d809398bf69d6cbc4b3b533921ea6151f6a7",
+    "original_freeze_compliance_claimed": false,
+    "original_freeze_immutable": true,
+    "process_deviation_accepted": true,
+    "technical_validation_rerun_required": false
+  },
+  "retained_technical_authority": {
+    "lineage_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05f-portable-projection-lineage.json",
+    "lineage_sha256": "bc9fad25db7f207685cebca0a32270fda2b7289395eb93c0ab0993c2909b38d1",
+    "validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05f-portability-correction-validation.json",
+    "validation_sha256": "e32e52063dc2ea1e64c520b827722fd97185b20d08e0b7109921144e06e2af11",
+    "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05f_validate.py",
+    "validator_sha256": "e7b890e16f904f7bc9e28ba459c575a9eccdd7c429e8f97fbc78021a2a52b5ce"
+  },
+  "scope_exclusions": {
+    "CAL_GATE_passed": false,
+    "I06_opened": false,
+    "candidate_or_control_execution_authorized": false,
+    "later_portability_group_authorized": false,
+    "metric_sheet_freeze_authorized": false,
+    "scientific_result": false,
+    "technical_validation_rerun_authorized": false
+  },
+  "status": "owner_accepted_commit_authorized"
+}

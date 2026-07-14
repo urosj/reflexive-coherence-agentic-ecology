@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Future I05 exact three-arm arithmetic-null entry point for P2-I2.
 
 I04-R2 validates but never invokes the record builder or ``main``.  The later
@@ -27,6 +26,7 @@ from p2_i2_i04r2_analysis import (
 
 
 EXPECTED_CALIBRATION_ID = "rcae-p2-i2-complete-three-arm-analysis-arithmetic-null-v3"
+ROOT = Path(__file__).resolve().parents[3]
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -42,6 +42,15 @@ def _sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def _repository_relative_identity(path: Path) -> str:
+    """Return a stable RCAE-relative identity without persisting checkout roots."""
+
+    try:
+        return path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError as exc:
+        raise ContractError(f"input path is outside the RCAE repository: {path.name}") from exc
 
 
 def validate_calibration_policy(
@@ -231,11 +240,11 @@ def build_calibration_record(
         "pygrc_imported": False,
         "calibrated_surface": "complete_pure_three_arm_primary_estimator_and_serialization_only",
         "input_identities": {
-            "parent_analysis_policy_path": str(parent_analysis_path),
+            "parent_analysis_policy_path": _repository_relative_identity(parent_analysis_path),
             "parent_analysis_policy_sha256": _sha256(parent_analysis_path),
-            "machine_policy_path": str(machine_policy_path),
+            "machine_policy_path": _repository_relative_identity(machine_policy_path),
             "machine_policy_sha256": _sha256(machine_policy_path),
-            "calibration_policy_path": str(calibration_path),
+            "calibration_policy_path": _repository_relative_identity(calibration_path),
             "calibration_policy_sha256": _sha256(calibration_path),
         },
         "per_seed_order_three_arm_margins": rows,

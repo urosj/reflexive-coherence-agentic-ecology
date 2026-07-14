@@ -26,10 +26,11 @@ call, zero retries, one readback, and a refused second start; its raw evidence
 is retained at `c3eabf3`, but 10.4 closeout exposed forbidden persisted paths;
 DEC-032 now retains the corrected P2-I2-wide I05D audit of 135 files with
 312 value-redacted violations in 70 files; DEC-033 accepts that inventory, and
-the first eleven-file I05E correction group is review-ready after 10/10 checks
-with zero group violations; later corrections, metric freeze, CAL-GATE, I06,
-and candidate execution remain closed pending review; all three profiles
-remain distinct and retained downstream under
+the first eleven-file I05E correction group passed 10/10 checks with zero group
+violations and is retained at `6dd6898`; DEC-034 now opens only the exact
+13-file/30-finding I05F I04/I05 authority-dependency correction group; later
+corrections, metric freeze, CAL-GATE, I06, and candidate execution remain
+closed; all three profiles remain distinct and retained downstream under
 `P2-I2-DEC-011`
 
 **Lane:** `AE01-L02`
@@ -996,6 +997,64 @@ no governed execution or scientific operation.
 Owner acceptance authorizes retention of this exact package and progression to
 the next bounded correction group only after the commit. It does not pass
 CAL-GATE or authorize a later correction before retention.
+
+#### 3.2.17 I05F I04/I05 authority-dependency portability projection
+
+After the accepted I05D/I05E package is retained at `6dd6898`, I05F may correct
+only the audit group `i04_i05_authority_dependencies`: 30 findings in 13 files.
+The group includes I04, I04R1, and I04R2 preregistration/policy/validation
+records plus their experiment-local validators and calibration-source
+surfaces. It does not reopen any accepted scientific choice or execution
+authority.
+
+Historical I04/I04R1/I04R2 bytes remain authoritative provenance identified by
+commit and SHA-256. Any changed current-tree JSON must declare itself as a
+portable projection and be mechanically reconstructable from its historical
+source through frozen path-only transformations. Repository sources become
+repository-relative POSIX identities; PyGRC sources become sibling-derived
+logical repository identities plus admitted revision/digest facts; scripts
+lose machine-selecting shebangs and remain `.venv`-invoked.
+
+The accepted I04R2 estimator, comparator, complete-arm rule, fixed response
+window, B-gain rule, calibration inputs, candidate quarantine, and CAL-PRE
+meaning cannot change. Existing raw I05 claim/output/final hashes are not
+rewritten. Consequential lineage may identify the historical I04 hashes and
+their current projections, but cannot silently substitute new hashes into raw
+receipts. I05F performs no calibration builder, arithmetic null, one-shot
+wrapper, PyGRC model, candidate/control, conformance, or scientific operation.
+It returns uncommitted for review with CAL-GATE and later groups closed.
+
+I05F is technically complete and uncommitted, but process-blocked. Its final
+`.venv` validation passes 10/10: all 13 source/current identities are bound,
+all eight JSON projections reconstruct mechanically, all five Python
+corrections are confined to frozen path-portability surfaces, current PyGRC
+source digests match, accepted I04R2 historical bytes remain addressable, and
+the I05 output projection, consumed claim projection, and raw final receipt
+remain byte-unchanged from `6dd6898`. The exact group moves from 30 findings to
+zero.
+
+However, the freeze allowed three static-validation invocations and actual
+preparation used 13 `.venv` Python starts: eight JSON syntax checks, one compile
+check, three validator starts, and one scanner diagnostic. Two validator starts
+failed closed and wrote no artifact; the third alone retained the passing
+technical result. Every start remained zero-builder and zero-runtime, but the
+numeric process ceiling was exceeded. The original freeze is not rewritten,
+and I05F requires explicit owner disposition before acceptance or commit. This
+has no operational-hypothesis or scientific effect.
+
+Under DEC-035, the project owner's `+1` authorizes one additive I05F-owned
+closeout record accepting this process-only deviation in place. The record
+must retain both the ceiling and the complete 13-start ledger; it cannot
+rewrite the freeze or trigger any Python/validator rerun. This authorization
+has no operational-hypothesis effect, does not accept the complete I05F
+package, and does not authorize commit or a later correction group.
+
+After the closeout record was retained, the project owner further directed
+that completion also constitutes full I05F acceptance and commit authorization
+under DEC-036. This changes only retention authority: the 13-versus-three
+deviation remains explicit, the original freeze remains immutable, no
+technical validation is rerun, no later group opens, and no scientific or
+operational-hypothesis conclusion follows.
 
 ### 3.3 I03A state-carried realization binding
 

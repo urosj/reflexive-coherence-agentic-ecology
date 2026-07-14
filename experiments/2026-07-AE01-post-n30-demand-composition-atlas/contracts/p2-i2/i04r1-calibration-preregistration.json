@@ -184,7 +184,13 @@
       "ambiguous",
       "fail"
     ],
-    "authority": "configs/p2_i2_i04r1_analysis_policy.json#/common_control_rules and /mode_control_rules"
+    "authority": {
+      "artifact_path": "configs/p2_i2_i04r1_analysis_policy.json",
+      "fields": [
+        "common_control_rules",
+        "mode_control_rules"
+      ]
+    }
   },
   "choice_rationale_quarantine": {
     "authorities": [
@@ -207,11 +213,13 @@
     ],
     "public_source_semantics": [
       {
-        "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_runtime.py",
+        "repository_id": "graph-reflexive-coherence",
+        "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
         "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
       },
       {
-        "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+        "repository_id": "graph-reflexive-coherence",
+        "path": "src/pygrc/models/lgrc_9_v3_packets.py",
         "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
       }
     ],
@@ -257,5 +265,13 @@
       "L02 support or falsification",
       "mode selection or ranking"
     ]
+  },
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "structured_authority_and_repository_relative_source_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "ddce7076c7170e38900197ca7bb0643d92305784daa523099041c9fc5a15d3a4"
   }
 }

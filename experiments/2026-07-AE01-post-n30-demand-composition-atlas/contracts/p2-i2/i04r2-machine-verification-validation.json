@@ -24,7 +24,8 @@
         "review": {
           "authorized_gate_effect_after_confirmation": "project_owner_may_pass_P2-I2-CAL-PRE-GATE_and_authorize_exactly_one_I05_arithmetic_null_invocation",
           "disposition": "I04R1_conceptual_blocker_resolved_acceptance_conditional_on_machine_invariant_confirmation",
-          "path": "/home/uros/.codex/attachments/5f7e5ef9-d600-4f97-a668-3b67afa14284/pasted-text.txt",
+          "attachment_id": "5f7e5ef9-d600-4f97-a668-3b67afa14284",
+          "path": "pasted-text.txt",
           "sha256": "78a49384609cdc4198a2dbce359c21d03694822fb7da96d1c2ff5f3333741d5d",
           "still_closed": [
             "CAL-PRE until explicit owner acceptance after confirmation",
@@ -114,17 +115,20 @@
       "evidence": [
         {
           "finding": "arrival assigns target_coherence + packet.amount; no arrival transform",
-          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+          "repository_id": "graph-reflexive-coherence",
+          "path": "src/pygrc/models/lgrc_9_v3_packets.py",
           "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
         },
         {
           "finding": "coherence is an untransformed float field",
-          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/grc_9_v3_state.py",
+          "repository_id": "graph-reflexive-coherence",
+          "path": "src/pygrc/models/grc_9_v3_state.py",
           "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e"
         },
         {
           "finding": "runtime numeric helpers require finite coherence and positive finite packet amount",
-          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_contract.py",
+          "repository_id": "graph-reflexive-coherence",
+          "path": "src/pygrc/models/lgrc_9_v3_contract.py",
           "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680"
         }
       ],
@@ -136,13 +140,15 @@
       "check_id": "I04R2V-07",
       "evidence": {
         "current_arrival_source": {
-          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+          "repository_id": "graph-reflexive-coherence",
+          "path": "src/pygrc/models/lgrc_9_v3_packets.py",
           "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
           "source_semantic": "target coherence is assigned target_coherence + packet.amount without clipping, saturation, projection, or arrival-time conservation adjustment"
         },
         "current_arrival_transform_id": "identity_packet_amount_addition",
         "finite_contract_source": {
-          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_contract.py",
+          "repository_id": "graph-reflexive-coherence",
+          "path": "src/pygrc/models/lgrc_9_v3_contract.py",
           "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
           "source_semantic": "packet runtime validates finite numeric coherence and positive finite packet amount"
         },
@@ -156,7 +162,8 @@
         "identity_transform_rule": "expected_native_arrival_gain equals response_packet_amount",
         "measured_gain_rule": "abs((B_after - B_before) - expected_native_arrival_gain) <= separately registered runtime_tolerance",
         "node_state_source": {
-          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/grc_9_v3_state.py",
+          "repository_id": "graph-reflexive-coherence",
+          "path": "src/pygrc/models/grc_9_v3_state.py",
           "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
           "source_semantic": "coherence is a float field with no dataclass clipping or saturation transform"
         },
@@ -416,5 +423,13 @@
     "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
     "test": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2"
   },
-  "validator_sha256": "5417b5b9e7c488b3c0b1bc2f4d39ff292697e2358378c4e00e4787a3d13c7680"
+  "validator_sha256": "5417b5b9e7c488b3c0b1bc2f4d39ff292697e2358378c4e00e4787a3d13c7680",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "stable_attachment_and_repository_relative_source_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361"
+  }
 }

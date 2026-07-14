@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Focused static validation for the P2-I2 I04-R1 correction.
 
 The validator checks only the owner-review correction surfaces.  It does not
@@ -22,7 +21,8 @@ from typing import Any, Mapping
 ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENT = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas"
 SCRIPTS = EXPERIMENT / "scripts"
-GRAPH = Path("/home/uros/Documents/RC-github/graph-reflexive-coherence")
+GRAPH_REPOSITORY_ID = "graph-reflexive-coherence"
+GRAPH = ROOT.parent / GRAPH_REPOSITORY_ID
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
@@ -65,6 +65,15 @@ def _sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def _external_source_path(row: Mapping[str, Any]) -> Path:
+    if row.get("repository_id") != GRAPH_REPOSITORY_ID:
+        raise AssertionError("external source repository identity drifted")
+    relative = Path(str(row["path"]))
+    if relative.is_absolute() or ".." in relative.parts:
+        raise AssertionError("external source path is not source-relative")
+    return GRAPH / relative
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -289,7 +298,8 @@ def validate() -> dict[str, Any]:
 
     window = analysis["measurement"]["window_protocol"]
     public_sources_exact = all(
-        _sha256(Path(row["path"])) == row["sha256"] for row in correction["public_source_semantics"]
+        _sha256(_external_source_path(row)) == row["sha256"]
+        for row in correction["public_source_semantics"]
     )
     checks.append(
         _result(

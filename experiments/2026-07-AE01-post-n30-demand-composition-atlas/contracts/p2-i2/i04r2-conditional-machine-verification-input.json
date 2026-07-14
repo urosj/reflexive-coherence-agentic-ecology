@@ -6,7 +6,8 @@
   "frozen_at": "2026-07-14",
   "evidence_effect": "candidate_free_machine_verification_input_only",
   "owner_review": {
-    "path": "/home/uros/.codex/attachments/5f7e5ef9-d600-4f97-a668-3b67afa14284/pasted-text.txt",
+    "attachment_id": "5f7e5ef9-d600-4f97-a668-3b67afa14284",
+    "path": "pasted-text.txt",
     "sha256": "78a49384609cdc4198a2dbce359c21d03694822fb7da96d1c2ff5f3333741d5d",
     "disposition": "I04R1_conceptual_blocker_resolved_acceptance_conditional_on_machine_invariant_confirmation",
     "authorized_gate_effect_after_confirmation": "project_owner_may_pass_P2-I2-CAL-PRE-GATE_and_authorize_exactly_one_I05_arithmetic_null_invocation",
@@ -140,5 +141,13 @@
     "graph_mutations_allowed": false,
     "I05_authorized": false,
     "candidate_execution_authorized": false
+  },
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "stable_attachment_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "1919cf9d99c3741363c2097a37fcfabcf0f76022e623ef9d110fa29d3a114114"
   }
 }

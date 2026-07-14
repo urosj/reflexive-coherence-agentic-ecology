@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Validate the candidate-free P2-I2 I04 calibration preregistration.
 
 This validator performs static identity, semantic, quarantine, and pure unit
@@ -465,7 +464,12 @@ def validate() -> dict[str, Any]:
         )
     )
 
-    graph_root = Path(choice["entry_authority"].get("graph_repository", "/home/uros/Documents/RC-github/graph-reflexive-coherence"))
+    graph_repository_id = choice["entry_authority"].get(
+        "graph_repository_id", "graph-reflexive-coherence"
+    )
+    if graph_repository_id != "graph-reflexive-coherence":
+        raise AssertionError("graph repository identity drifted")
+    graph_root = ROOT.parent / graph_repository_id
     graph_state = {
         "revision": _git(graph_root, "rev-parse", "HEAD"),
         "status": _git(graph_root, "status", "--porcelain=v1", "--untracked-files=all"),

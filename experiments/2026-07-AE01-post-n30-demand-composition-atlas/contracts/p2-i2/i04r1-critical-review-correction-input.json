@@ -82,7 +82,8 @@
   ],
   "public_source_semantics": [
     {
-      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_runtime.py",
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
       "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
       "used_callables": [
         "LGRC9V3.emit_feedback_eligibility_surface_row",
@@ -99,7 +100,8 @@
       ]
     },
     {
-      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
       "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
       "used_callables": [
         "process_lgrc9v3_packet_departure",
@@ -269,5 +271,13 @@
     "graph_mutations_allowed": false,
     "I05_authorized": false,
     "candidate_execution_authorized": false
+  },
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "repository_relative_external_source_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "8060d0476c02869ca5954be01b4e80ee9ca4e27f6438bbf22ea5d5a14be02c31"
   }
 }

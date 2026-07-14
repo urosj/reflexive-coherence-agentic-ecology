@@ -126,7 +126,13 @@
       "ambiguous",
       "fail"
     ],
-    "authority": "configs/p2_i2_analysis_policy.json#/common_control_rules and /mode_control_rules"
+    "authority": {
+      "artifact_path": "configs/p2_i2_analysis_policy.json",
+      "fields": [
+        "common_control_rules",
+        "mode_control_rules"
+      ]
+    }
   },
   "fixture_quarantine_disposition": {
     "registry_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
@@ -176,5 +182,13 @@
       "L02 support or falsification",
       "mode selection or ranking"
     ]
+  },
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "structured_authority_reference",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "a12fc6899c45cc2568b82f6b69bc86f0df97963d2a8d636c8e65a68770ba3221"
   }
 }
