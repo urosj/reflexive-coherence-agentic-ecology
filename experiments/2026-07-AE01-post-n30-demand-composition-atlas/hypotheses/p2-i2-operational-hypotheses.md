@@ -22,9 +22,11 @@ I04R2 as the sole progression authority and passed CAL-PRE under DEC-026;
 original I04 and I04R1 remain immutable historical artifacts; I05 remains
 unexecuted; proposed DEC-027 remains failed-closed after I05A, while the
 owner-accepted I05B safety correction passed 12/12 zero-null tests and 12/12
-machine checks and is authorized for commit under DEC-029 with 10.4 null launch
-retained as a separate authority, and all three profiles remain distinct and
-retained downstream under
+machine checks and was committed under DEC-029 with a separate 10.4 launch;
+the first final preflight then failed before claim on incorrect venv-symlink
+path handling, and owner-authorized I05C now passes 13/13 tests plus 12/12
+zero-null validation while remaining uncommitted for review; all three profiles
+remain distinct and retained downstream under
 `P2-I2-DEC-011`
 
 **Lane:** `AE01-L02`
@@ -888,6 +890,29 @@ call or response-envelope generation. No PyGRC model, candidate/control cell,
 runtime tolerance, response measurement, R01-R05 result, L02 support status, or
 mode ranking is authorized. Execution and deterministic validation return as
 `P2-I2-I05-EXECUTION-REVIEW-READY`; CAL-GATE remains closed until owner review.
+
+#### 3.2.14 I05C pre-claim interpreter-path correction projection
+
+The first final 10.4 preflight failed before claim because the accepted wrapper
+passed the repo-relative `.venv/bin/python` command path through the generic
+repository-data resolver, which rejects its legitimate resolution to
+`/usr/bin/python3.12`. This is an infrastructure-path validation defect, not a
+governed attempt: no claim, builder call, null output, final receipt, PyGRC,
+candidate, or control operation exists, so the one permitted attempt remains
+unconsumed.
+
+The project owner's explicit direction “always use venv” authorizes the bounded
+DEC-031/CHG-024 correction. It separates lexical repo-relative command-path
+validation from resolved executable identity while requiring an active venv at
+the exact repository `.venv` prefix and preserving the exact target binary
+digest, CPython version, normalized command, clean committed authority, one-
+attempt/zero-retry rule, and every scientific exclusion. It cannot change the
+I04R2 builder, estimator, null inputs, output path, or evidence effect.
+Thirteen focused tests and 12/12 byte-reconstructed machine checks now pass
+with the real active repository venv. Accepted I04R2 bytes remain exact and the
+claim, final receipt, and governed output remain absent. I05C is uncommitted and
+review-ready; no further preflight or invocation is authorized before review
+and retention of the corrected authority.
 
 ### 3.3 I03A state-carried realization binding
 

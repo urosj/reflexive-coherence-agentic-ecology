@@ -65,6 +65,22 @@ def _path(relative: str) -> Path:
     return path
 
 
+def _lexical_repo_path(relative: str) -> Path:
+    """Resolve a command path lexically without following its final symlink."""
+
+    supplied = Path(relative)
+    if supplied.is_absolute() or not relative or any(
+        part in ("", ".", "..") for part in supplied.parts
+    ):
+        raise OneShotError(f"invalid repository-relative command path: {relative}")
+    path = (ROOT / supplied).absolute()
+    try:
+        path.relative_to(ROOT.absolute())
+    except ValueError as exc:
+        raise OneShotError(f"command path escapes repository root: {relative}") from exc
+    return path
+
+
 def _git_text(*args: str) -> str:
     return subprocess.run(
         ("git", "-C", str(ROOT), *args),
@@ -118,12 +134,17 @@ def validate_repository_snapshot(snapshot: Mapping[str, Any], expected_head: str
 
 
 def interpreter_identity(executable: Path | None = None) -> dict[str, Any]:
-    resolved = (executable or Path(sys.executable)).resolve()
+    invoked = (executable or Path(sys.executable)).absolute()
+    resolved = invoked.resolve()
     return {
+        "base_prefix": str(Path(sys.base_prefix).resolve()),
         "binary_sha256": _sha256(resolved),
         "implementation": platform.python_implementation(),
+        "invoked_executable": str(invoked),
         "major_minor": [sys.version_info.major, sys.version_info.minor],
         "resolved_executable": str(resolved),
+        "venv_active": sys.prefix != sys.base_prefix,
+        "venv_prefix": str(Path(sys.prefix).resolve()),
         "version": platform.python_version(),
     }
 
@@ -133,13 +154,25 @@ def validate_interpreter(
     policy: Mapping[str, Any],
 ) -> None:
     expected = policy["interpreter"]
-    expected_path = str(_path(expected["executable_repo_relative"]).resolve())
-    if identity.get("resolved_executable") != expected_path:
-        raise OneShotError("wrong Python interpreter for governed I05 invocation")
+    expected_invoked = _lexical_repo_path(expected["executable_repo_relative"])
+    expected_venv = _lexical_repo_path(expected["venv_prefix_repo_relative"])
+    if identity.get("invoked_executable") != str(expected_invoked):
+        raise OneShotError("governed I05 invocation did not use exact .venv command path")
+    resolved = expected_invoked.resolve()
+    if identity.get("resolved_executable") != str(resolved):
+        raise OneShotError("governed I05 resolved interpreter identity drifted")
+    if identity.get("venv_active") is not True:
+        raise OneShotError("governed I05 invocation requires an active virtual environment")
+    if identity.get("venv_prefix") != str(expected_venv.resolve()):
+        raise OneShotError("governed I05 invocation used the wrong virtual environment")
+    if identity.get("base_prefix") == identity.get("venv_prefix"):
+        raise OneShotError("governed I05 virtual environment is not isolated")
     if identity.get("implementation") != expected["implementation"]:
         raise OneShotError("wrong Python implementation for governed I05 invocation")
     if identity.get("major_minor") != expected["major_minor"]:
         raise OneShotError("wrong Python version for governed I05 invocation")
+    if identity.get("binary_sha256") != _sha256(resolved):
+        raise OneShotError("reported Python binary identity is inconsistent")
     if identity.get("binary_sha256") != expected["binary_sha256"]:
         raise OneShotError("wrong Python binary identity for governed I05 invocation")
 
@@ -168,7 +201,7 @@ def validate_command(
 def validate_policy(policy: Mapping[str, Any]) -> None:
     if policy.get("artifact_id") != "P2-I2-I05B-ONE-SHOT-EXECUTION-POLICY":
         raise OneShotError("wrong I05B one-shot policy")
-    if policy.get("artifact_version") != "1.1.0":
+    if policy.get("artifact_version") != "1.2.0":
         raise OneShotError("wrong I05B policy version")
     if policy.get("iteration_id") != "P2-I2-I05B" or policy.get("lane_id") != "AE01-L02":
         raise OneShotError("wrong I05B policy scope")
@@ -209,6 +242,15 @@ def validate_policy(policy: Mapping[str, Any]) -> None:
         raise OneShotError("I05B governed paths drifted")
     if policy.get("candidate_execution_authorized") is not False:
         raise OneShotError("I05B cannot authorize candidate execution")
+    interpreter = policy.get("interpreter")
+    if not isinstance(interpreter, Mapping) or (
+        interpreter.get("executable_repo_relative") != ".venv/bin/python"
+        or interpreter.get("venv_prefix_repo_relative") != ".venv"
+        or interpreter.get("require_active_venv") is not True
+        or interpreter.get("implementation") != "CPython"
+        or interpreter.get("major_minor") != [3, 12]
+    ):
+        raise OneShotError("I05B active-.venv interpreter policy drifted")
     template = policy.get("normalized_command_template")
     expected_template = normalized_command(policy, "<OWNER_AUTHORIZED_FULL_HEAD>")
     if template != expected_template:
@@ -349,6 +391,8 @@ def validate_owner_acceptance(
         "acceptance_change_id": "P2-I2-CHG-022",
         "acceptance_decision_id": "P2-I2-DEC-029",
         "correction_decision_id": "P2-I2-DEC-028",
+        "preclaim_correction_change_id": "P2-I2-CHG-024",
+        "preclaim_correction_decision_id": "P2-I2-DEC-031",
         "owner_acceptance": True,
         "commit_authorized": True,
         "null_invocation_authorized": False,
@@ -395,6 +439,8 @@ def validate_null_launch_authorization(
         "authorized_at": "2026-07-14",
         "launch_change_id": "P2-I2-CHG-023",
         "launch_decision_id": "P2-I2-DEC-030",
+        "preclaim_correction_change_id": "P2-I2-CHG-024",
+        "preclaim_correction_decision_id": "P2-I2-DEC-031",
         "owner_acceptance_sha256": owner_acceptance_sha256,
         "null_invocation_authorized": True,
         "max_governed_attempts": 1,

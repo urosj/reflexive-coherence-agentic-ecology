@@ -132,3 +132,8 @@ tests and zero accepted-builder/null execution. DEC-029 retains exact
 `i05b-owner-acceptance.json` with commit true and null authority false; the
 separate 10.4 launch record, claim/final receipts, and governed output remain
 absent. CAL-GATE passage and candidate authority are not implied.
+`i05c-preclaim-interpreter-path-failure.json` retains the failed read-only
+preflight at launch commit `98770ae` with zero attempts. The corrected
+`i05c-zero-null-interpreter-validation.json` passes 12/12 against the exact
+active repository venv and immutable I04R2 bytes; claim/final/output remain
+absent and the correction is uncommitted for owner review.

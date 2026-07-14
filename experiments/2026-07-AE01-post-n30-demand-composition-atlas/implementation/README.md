@@ -120,6 +120,11 @@ one-shot/commit-binding/receipt blockers. I05B corrects those mechanics strictly
 inside I05 and passes 12/12 zero-null tests plus 12/12 machine checks. DEC-029
 owner-accepts the authority-package commit while a separate 10.4 launch record
 remains required; CAL-GATE, I06, and candidate execution remain closed.
+Final launch preflight failed before claim because the active repository venv's
+interpreter symlink resolves to the frozen system binary. DEC-031 I05C now
+validates the exact `.venv/bin/python` command and active venv separately from
+the resolved digest-bound target. It passes 13/13 tests and 12/12 zero-null
+checks, remains uncommitted, and consumes no attempt.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

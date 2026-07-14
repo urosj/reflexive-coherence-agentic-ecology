@@ -455,6 +455,12 @@ retained refusal accounting. The I05-owned correction subsequently passed
 is owner-accepted for retention under DEC-029 with immutable acceptance/commit
 authority separated from the future 10.4 launch record. CAL-GATE, I06, and
 candidate execution remain closed.
+After the accepted authority and launch commits, final preflight failed before
+claim because the wrapper incorrectly required the resolved target of the
+active `.venv/bin/python` symlink to stay inside the repository. DEC-031 I05C
+now requires the exact active repository venv plus the frozen target digest;
+13/13 tests and 12/12 zero-null checks pass. The correction is uncommitted for
+review, the sole attempt remains unconsumed, and no null output exists.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

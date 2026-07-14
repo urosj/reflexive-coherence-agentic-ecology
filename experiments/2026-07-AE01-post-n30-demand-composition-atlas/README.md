@@ -109,6 +109,11 @@ blockers. The owner-authorized I05B correction now passes 12/12 zero-null tests
 and 12/12 machine checks while preserving I04R2 bytes. It is owner-accepted for
 commit under DEC-029; the 10.4 launch authority remains separate and CAL-GATE,
 I06, and candidate execution remain closed.
+The first final launch preflight then failed safely before claim on a venv-
+symlink path-validation defect. Owner-authorized I05C keeps the exact active
+repository `.venv`, separates its command path from the frozen resolved binary
+identity, and passes 13/13 tests plus 12/12 zero-null checks. It is uncommitted
+for review; the one attempt remains unconsumed.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself

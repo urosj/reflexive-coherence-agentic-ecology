@@ -1,6 +1,6 @@
 {
   "artifact_id": "P2-I2-I05B-ONE-SHOT-EXECUTION-POLICY",
-  "artifact_version": "1.1.0",
+  "artifact_version": "1.2.0",
   "attempt_policy": {
     "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
     "claim_deletion_forbidden": true,
@@ -29,15 +29,19 @@
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05b-owner-acceptance.json",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-null-launch-authorization.json",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05b-zero-null-safety-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05c-preclaim-interpreter-path-failure.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05c-zero-null-interpreter-validation.json",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r2_analysis.py",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i05b_one_shot.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05C-preclaim-venv-correction.md",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_calibration.py",
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_one_shot.py",
-    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py"
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05c_validate.py"
   ],
   "claim_storage": {
     "atomicity_basis": "local ext4 O_CREAT|O_EXCL",
@@ -64,7 +68,7 @@
     "machine_policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
     "parent_analysis_policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
     "preregistration_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
-    "wrapper_sha256": "c21af416c0ec20e928aa495533c09faffc0beffa144587d4ff4c173955d912f6"
+    "wrapper_sha256": "b6cf5e3129821660fb77b2f7c3591a66d859d18930cc28681fa8096d7462220c"
   },
   "interpreter": {
     "binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
@@ -73,7 +77,9 @@
     "major_minor": [
       3,
       12
-    ]
+    ],
+    "require_active_venv": true,
+    "venv_prefix_repo_relative": ".venv"
   },
   "iteration_id": "P2-I2-I05B",
   "lane_id": "AE01-L02",
@@ -134,6 +140,13 @@
       "json.loads and canonical pretty serialization",
       "require retained, reconstructed, and original serialized bytes equal"
     ]
+  },
+  "preclaim_correction_authority": {
+    "change_id": "P2-I2-CHG-024",
+    "decision_id": "P2-I2-DEC-031",
+    "owner_direction": "always use venv",
+    "scope": "active repository .venv command-path versus resolved executable identity only",
+    "scientific_revision": false
   },
   "validation_boundary": {
     "builder_invocations": 0,

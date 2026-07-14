@@ -44,6 +44,10 @@ runtime committed-HEAD/clean-state/interpreter/command binding, one accepted-
 builder call, readback-only reconstruction, and attempt/final receipt facts.
 Its 12/12 tests and 12/12 validation support DEC-029 package retention only;
 they authorize no invocation without the separate committed 10.4 launch record.
+I05C policy version `1.2.0` corrects only pre-claim interpreter identity: the
+normalized command must remain `.venv/bin/python`, that repository venv must be
+active, and its resolved target must retain the frozen binary digest/version.
+The 13/13-test, 12/12-check correction is uncommitted pending review.
 
 ## P2-I1 configuration surfaces
 

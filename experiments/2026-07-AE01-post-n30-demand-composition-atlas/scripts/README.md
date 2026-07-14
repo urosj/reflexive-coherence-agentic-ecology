@@ -167,6 +167,13 @@ Reproduce the zero-null correction validation:
 .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py --output /tmp/p2-i2-i05b-validation.json
 ```
 
+`p2_i2_i05c_validate.py` validates the failed-before-claim active-venv path
+correction without invoking the builder or consuming authority:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05c_validate.py --output /tmp/p2-i2-i05c-validation.json
+```
+
 Validate the six committed P2-I1 configs:
 
 ```bash

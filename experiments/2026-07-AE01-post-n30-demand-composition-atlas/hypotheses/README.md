@@ -64,7 +64,9 @@ graph surfaces, and proposed graph discriminators.
   and blocks proposed DEC-027 on five one-shot/commit-binding/receipt gaps. The
   DEC-028 I05B correction passes 12/12 zero-null tests and 12/12 checks with
   immutable I04R2 bytes; DEC-029 owner-accepts its retention while keeping the
-  10.4 launch record separate. Under
+  10.4 launch record separate. DEC-031 I05C then corrects a failed-before-claim
+  active-venv symlink validation defect and passes 13/13 tests plus 12/12
+  zero-null checks; it remains uncommitted for review. Under
   owner-accepted `P2-I2-DEC-011`, all three
   profiles remain in the downstream program and realization selection occurs
   separately within each mode. Their local IDs do not extend the closed Phase

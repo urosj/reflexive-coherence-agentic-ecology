@@ -83,6 +83,10 @@ Phase 2 gate reviews:
   tests, 12/12 machine validation, byte reconstruction, immutable I04R2 hashes,
   and DEC-029 owner acceptance. Commit authority is distinct from the absent
   10.4 launch record; no null or CAL-GATE passage is assigned.
+- [P2-I2 I05C active-venv correction](P2-I2-I05C-preclaim-venv-correction.md)
+  retains the failed-before-claim launch preflight, exact active repository
+  venv correction, 13/13 tests, 12/12 zero-null validation, unchanged I04R2
+  bytes, and an unconsumed attempt. It is uncommitted pending owner review.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

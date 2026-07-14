@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.38
+**Baseline revision:** 0.39
 
 **Date:** 2026-07-14
 
@@ -2074,7 +2074,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-SOURCE-ADMISSION-GATE | Updated exact graph revision, 31 source/import/callable identities, reset-baseline persistence across save/load, restoration identity v1/v2 boundary, legacy/rebase compatibility, and later bounded-continuation duty; no realization, restoration correctness beyond generic conformance, or scientific result | 2026-07-14 | I02R2 manifest, validation/report, and DEC-009; passed after revalidation |
 | P2-I2-DISCRIMINATOR-GATE | Three retained unranked state/history/hybrid realization authorities, bounded conformance, compact family composition, exact downstream obligations, and fixture quarantine | 2026-07-14 | I03F and DEC-020; passed |
 | P2-I2-CAL-PRE-GATE | Owner-accepted I04R2 sole progression authority; complete-arm strongest-marginal comparator, exact arithmetic-only I05 path, reconstruction, fixed window, causal receipts, and no candidate/null execution at passage | 2026-07-14 | I04R2 validation and DEC-026; passed |
-| P2-I2-I05-AUTHORIZATION | Exact accepted-I04 identities; proposed DEC-027 failed closed at I05A 3/8; DEC-028 I05B correction passes 12/12 tests and 12/12 validation with one attempt/zero retries, permanent local claim, and separate launch authority | 2026-07-14 | Owner-accepted for commit under DEC-029; 10.4 launch separate; CAL-GATE closed |
+| P2-I2-I05-AUTHORIZATION | Exact accepted-I04 identities; proposed DEC-027 failed closed at I05A 3/8; DEC-028 I05B accepted/committed; DEC-031 I05C active-venv correction passes 13/13 tests and 12/12 zero-null validation | 2026-07-14 | I05C uncommitted for review; one attempt unconsumed; CAL-GATE closed |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2160,6 +2160,7 @@ Change log:
 | CL-039 | 2026-07-14 | Revision 0.36 catches the stable program cover up through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority after 16/16 checks and 7/7 pure tests corrected the raw three-arm estimator and byte reconstruction; original I04/I04R1 are immutable history. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation. No null, I06, candidate/control, or scientific result is assigned. | P2-I2 CAL-PRE closure and I05 authorization entry | Superseded by CL-040 |
 | CL-040 | 2026-07-14 | Revision 0.37 draft constructs the I05 authorization candidate; proposed DEC-027 fails closed after I05A passes 3/8. DEC-028 authorizes the I05B correction, which adds one permanent exclusive-claim wrapper and one one-shot policy, freezes one attempt/zero retries, binds committed HEAD/clean state/exact interpreter/normalized command, and retains readback-only attempt/final facts. Ten zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes. The correction is uncommitted/inactive; no acceptance record, claim/final receipt, null, delta, metric-sheet result, CAL-GATE passage, I06, candidate/control operation, or scientific result exists. | P2-I2 I05B owner review boundary | Active pending owner review |
 | CL-041 | 2026-07-14 | Revision 0.38 records DEC-029/CHG-022 owner acceptance and commit authority for the complete I05B package. Immutable acceptance has null authority false; a distinct committed 10.4 launch record is required. The permanent claim is repository-local on ext4, rejects symlink components, and treats empty/partial/broken-symlink occupation as consumed. Twelve zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes and no claim/output/builder/null/PyGRC/candidate/control operation. | P2-I2 I05B retention and 10.4 entry | Active; supersedes CL-040 after commit |
+| CL-042 | 2026-07-14 | Revision 0.39 retains the final preflight failure at launch commit `98770ae`: the active repository `.venv` was used, but its valid interpreter symlink target was incorrectly rejected by the repository-data path guard. DEC-031/CHG-024 now require exact `.venv/bin/python`, active repository venv, distinct base prefix, and the frozen resolved-target digest/version. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass with immutable I04R2 bytes; no claim/output exists and the one attempt remains unconsumed. | P2-I2 I05C correction review boundary | Active pending owner review; supersedes CL-041 for current status |
 
 ## 17. Current next actions
 

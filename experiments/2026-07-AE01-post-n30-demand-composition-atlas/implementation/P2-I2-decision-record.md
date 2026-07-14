@@ -65,6 +65,7 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-028` | May the five I05A execution-safety blockers be corrected, and under what scope? | Owner-authorized: I05-owned mechanics only; I04R2 immutable; zero-null validation; return uncommitted | Opens I05B construction/tests only; commit, null invocation, CAL-GATE, I06, and candidates remain closed | 2026-07-14 |
 | `P2-I2-DEC-029` | Does the project owner accept I05B, and which authority is committed? | Accepted: commit the complete I05/I05A/I05B package with immutable acceptance; null launch remains separate | Authorizes package retention only; 10.4 launch requires its own exact record and committed HEAD | 2026-07-14 |
 | `P2-I2-DEC-030` | After the accepted I05B commit, may 10.4 consume the single arithmetic-null attempt? | Accepted: create and commit the exact separate launch record, then execute the one-shot with zero retries | Opens one I05 arithmetic-null attempt only; CAL-GATE and I06 remain pending review | 2026-07-14 |
+| `P2-I2-DEC-031` | How must the pre-claim `.venv` path-resolution failure be corrected? | Owner-authorized: always use the active repository `.venv`; separate invoked command path from resolved binary identity | Opens I05C correction/zero-null validation only; recommit required before another preflight | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1849,7 +1850,41 @@ Reopen DEC-030 only before claim if the launch record, accepted authority,
 clean HEAD, interpreter/command, filesystem, or immutable I04R2 identities fail
 preflight. After claim, retain failure and do not reopen authority for a retry.
 
-## 33. Pending decision queue
+## 33. `P2-I2-DEC-031` — Active `.venv` pre-claim correction
+
+**Status:** correction review-ready; commit authorization pending
+
+**Decision:** Preserve the project owner's rule “always use venv.” The exact
+governed command remains `.venv/bin/python`; the process must report an active
+venv whose prefix is the repository `.venv`; and `sys.base_prefix` must differ.
+The wrapper must validate that lexical command path without following its final
+symlink, then separately resolve the target binary and require the already
+frozen CPython version and SHA-256 digest.
+
+The accepted wrapper incorrectly reused its repository-data `_path()` guard for
+the interpreter. Because the valid `.venv/bin/python` chain resolves to
+`/usr/bin/python3.12`, final preflight at launch commit `98770ae` failed with
+`OneShotError` before claim. This created no attempt claim, builder/null call,
+output, final receipt, PyGRC model, candidate/control action, or scientific
+result. The one governed attempt remains unconsumed and infrastructure retries
+remain zero.
+
+I05C may change only interpreter path/identity validation and consequential
+wrapper, policy, acceptance, launch, test, validation, governance, and report
+hashes. It must add a direct positive test using the real active repository
+venv and retain negative wrong-command/path/digest/inactive-venv checks. I04R2,
+the null builder and inputs, one-shot claim/output mechanics, estimator,
+candidate exclusion, and evidence effect are immutable.
+
+Return the zero-null correction uncommitted for review. No further preflight or
+governed invocation may occur until the corrected authority is reviewed,
+explicitly authorized for commit, committed together, and cleanly revalidated.
+
+Reopen DEC-031 if correction would permit a direct system-Python command,
+accept an inactive or different venv, weaken the target digest/version, change
+scientific bytes, or create/reuse a governed attempt.
+
+## 34. Pending decision queue
 
 No item below is decided by this record yet:
 

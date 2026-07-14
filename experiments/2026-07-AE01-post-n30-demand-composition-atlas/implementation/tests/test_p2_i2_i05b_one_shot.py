@@ -129,15 +129,35 @@ class P2I2I05BOneShotSafetyTest(unittest.TestCase):
     def test_wrong_interpreter_or_command_is_refused(self) -> None:
         identity = one_shot.interpreter_identity()
         wrong_identity = dict(identity)
-        wrong_identity["resolved_executable"] = "/wrong/python"
+        wrong_identity["invoked_executable"] = "/wrong/python"
         with self.assertRaises(one_shot.OneShotError):
             one_shot.validate_interpreter(wrong_identity, self.policy)
+
+        inactive_identity = dict(identity)
+        inactive_identity["venv_active"] = False
+        with self.assertRaises(one_shot.OneShotError):
+            one_shot.validate_interpreter(inactive_identity, self.policy)
+
+        wrong_digest = dict(identity)
+        wrong_digest["binary_sha256"] = "0" * 64
+        with self.assertRaises(one_shot.OneShotError):
+            one_shot.validate_interpreter(wrong_digest, self.policy)
 
         head = "a" * 40
         command = one_shot.normalized_command(self.policy, head)
         command[1] = "experiments/wrong-wrapper.py"
         with self.assertRaises(one_shot.OneShotError):
             one_shot.validate_command(command, self.policy, head)
+
+    def test_active_repository_venv_identity_passes(self) -> None:
+        identity = one_shot.interpreter_identity()
+        one_shot.validate_interpreter(identity, self.policy)
+        self.assertTrue(identity["venv_active"])
+        self.assertEqual(
+            identity["invoked_executable"], str((ROOT / ".venv/bin/python").absolute())
+        )
+        self.assertEqual(identity["venv_prefix"], str((ROOT / ".venv").resolve()))
+        self.assertNotEqual(identity["venv_prefix"], identity["base_prefix"])
 
     def test_existing_governed_output_is_refused(self) -> None:
         output = ROOT / self.policy["paths"]["governed_output"]
@@ -170,9 +190,13 @@ class P2I2I05BOneShotSafetyTest(unittest.TestCase):
         self.assertTrue(acceptance["owner_acceptance"])
         self.assertTrue(acceptance["commit_authorized"])
         self.assertFalse(acceptance["null_invocation_authorized"])
+        no_launch_policy = deepcopy(self.base_policy)
+        no_launch_policy["paths"]["null_launch_authorization"] = str(
+            (self.temp_path / "absent-launch.json").relative_to(ROOT)
+        )
         with self.assertRaises(one_shot.OneShotError):
             one_shot.validate_null_launch_authorization(
-                self.base_policy,
+                no_launch_policy,
                 owner_acceptance_sha256=hashlib.sha256(
                     (ROOT / self.base_policy["paths"]["owner_acceptance"]).read_bytes()
                 ).hexdigest(),
