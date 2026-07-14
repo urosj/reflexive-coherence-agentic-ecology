@@ -6,8 +6,11 @@ for staged progression with their implementation-conformance results retained;
 passed static validation, and `258/258` byte-reconstructed bounded runtime
 conformance; `P2-I2-I03CR1` passed 26/26 review checks and 17/17 acceptance
 conditions with zero blockers and eight fail-closed downstream obligations;
-I03C owner acceptance remains pending; all three profiles remain distinct and
-retained downstream under `P2-I2-DEC-011`; I04 remains unauthorized
+I03C is owner-accepted for progression and the zero-runtime `P2-I2-I03F`
+compact umbrella family closeout passed 12/12 integration checks and 9/9
+acceptance conditions with zero blockers and awaits owner gate disposition;
+all three profiles remain distinct and retained downstream under
+`P2-I2-DEC-011`; I04 remains unauthorized
 
 **Lane:** `AE01-L02`
 
@@ -475,6 +478,69 @@ scientific response, comparator, R01-R05 result, or L02 conclusion. I03C is
 acceptance-ready. If accepted, only a separately declared checklist- and
 hypothesis-governed umbrella I03 family closeout may begin; I04 cannot open
 directly.
+
+#### 3.2.5 I03F umbrella family-closeout projection
+
+The project owner accepted I03C/I03CR1 for staged progression and directed
+section 8.1 to begin. I03F is the separately declared umbrella closeout. It is
+a compact zero-runtime composition of already accepted mode reviews, not a
+repetition of their capability/source/dataflow audits, not a fourth dependence
+mode, and not a scientific comparison.
+
+I03F must retain the three profiles simultaneously:
+
+```text
+state-carried   = native P carrier; pygrc_native_candidate
+history-carried = authoritative H_P with M_H = R_H(H_P);
+                  minimally_producer_assisted
+hybrid          = native P + authoritative H_P/M_H through one native V;
+                  minimally_producer_assisted
+```
+
+These classes describe where missing implementation machinery resides. They
+do not rank ecological adequacy, assign preference, or permit one mode to
+stand in for another. Producer assistance may supply only the accepted missing
+history carrier/readout bridge; it may not calculate success, improve an
+outcome, collapse the modes, or revise a qualitative relation.
+
+The family closeout trusts the accepted mode-level findings and indexes each
+mode's exact carrier, update/write path, access mask, intervention,
+common/private relation, operational-hypothesis mapping, restoration owner,
+and producer prohibition without re-proving them. It may inspect only the
+terminal authority identities and fields needed to detect omission,
+substitution, semantic collapse, or cross-mode rewrite. Shared symbols are
+mode-qualified: P is the complete state-carried causal pool, excluded from the
+history-carried response, and only one component of the hybrid carrier. H_P
+and M_H are causal in history and hybrid but do not retroactively alter the
+accepted state-carried profile.
+
+Every OP-01..OP-09 projection must remain usable in all three modes without
+assigning R01-R05. The family registry must also consolidate, without
+discharging, all six I03BR1 and eight I03CR1 downstream obligations; bind the
+complete I03A/I03B/I03C fixture quarantine; and freeze an I04 import rule that
+retains all three profiles unchanged and mode-indexed. Exact scientific
+responses, comparators, calibration identities, parameters, topology, seeds,
+and resolution remain I04/I06 work.
+
+I03F may establish only discriminator-gate readiness. It instantiates no model
+and produces no new implementation or scientific evidence. It performs no new
+source-capability audit and cannot select a mode, reuse a conformance fixture,
+pass `P2-I2-DISCRIMINATOR-GATE`, or open I04 without a later owner disposition
+on the retained family-closeout package.
+
+The compact composition passed all twelve integration checks and all nine
+acceptance conditions with zero blockers. Eleven terminal authorities match
+the accepted baseline commit. The retained family index contains exactly three
+unranked required profiles, one pointer for each of nine OPs in each mode,
+fourteen exact source obligations mapped once into nine consolidated duties,
+the existing seven-source three-mode quarantine, and the mode-indexed I04
+import boundary. No source obligation is discharged.
+
+This result is family consistency and gate-readiness evidence only. It does
+not revise or strengthen a mode-level finding, add implementation evidence,
+assign a scientific response or comparator, pass the discriminator gate, or
+authorize I04. Those final two effects remain with explicit owner review of
+the I03F package.
 
 ### 3.3 I03A state-carried realization binding
 

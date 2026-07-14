@@ -49,10 +49,15 @@ graph surfaces, and proposed graph discriminators.
   native P, active H_P/M_H, and one native `[P,M_H]` joint response read;
   static validation and quarantined 258/258 byte-reconstructed bounded runtime
   conformance passed. I03C is review-ready and scientifically outcome-free.
-  The umbrella discriminator gate remains open pending owner review. Under
-  owner-accepted `P2-I2-DEC-011`, all three profiles remain in the downstream
-  program and realization selection occurs separately within each mode. Their local IDs
-  do not extend the closed Phase 1 hypothesis registry or schema vocabulary.
+  I03C/I03CR1 were subsequently owner-accepted for progression. The compact
+  I03F family closeout composed the accepted terminal authorities without
+  repeating their reviews and passed 12/12 integration checks and 9/9
+  acceptance conditions with zero blockers. The umbrella discriminator gate
+  is ready for owner review but is not passed, and I04 remains unauthorized.
+  Under owner-accepted `P2-I2-DEC-011`, all three profiles remain in the
+  downstream program and realization selection occurs separately within each
+  mode. Their local IDs do not extend the closed Phase 1 hypothesis registry or
+  schema vocabulary.
 
 ## Hypothesis interpretation
 

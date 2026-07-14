@@ -48,10 +48,12 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-011` | Are state-carried, history-carried, and hybrid alternatives for later selection or three retained mode-specific realizations? | Accepted by project owner: retain and test all three; select native/producer/missing-prerequisite disposition within each mode | Corrects brief/downstream singular scope; brief gate remains passed; did not itself accept DEC-010 or authorize I03B/I04 | 2026-07-14 |
 | `P2-I2-DEC-012` | May each I03 mode receive bounded runtime conformance before calibration, and what evidence boundary applies? | Accepted by project owner: I03AR1 now, then design-first conformance inside I03B/I03C | Authorizes only freeze-governed realization conformance; no I04–I08 or scientific authority | 2026-07-14 |
 | `P2-I2-DEC-013` | Does the review-ready I03A/I03AR1 package satisfy the progression boundary, and may 8B begin? | Accepted by project owner: move to 8B next | Opens design-first I03B only; I03C/I04 and scientific authority remain closed | 2026-07-14 |
-| `P2-I2-DEC-014` | Which history-carried realization and producer boundary should I03B freeze before runtime conformance? | Design-frozen minimally producer-assisted adapter; bounded runtime conformance and I03BR1 closeout revalidation passed; owner acceptance remains pending | I03B acceptance-ready; I03C/I04 remain closed | 2026-07-14 |
+| `P2-I2-DEC-014` | Which history-carried realization and producer boundary should I03B freeze before runtime conformance? | Design-frozen minimally producer-assisted adapter; bounded runtime conformance and I03BR1 closeout revalidation passed; accepted for progression under DEC-015 | I03B retained; later progression remains governed separately | 2026-07-14 |
 | `P2-I2-DEC-015` | Does I03B/I03BR1 satisfy the staged-progression boundary, and may 8C begin? | Accepted by project owner: 8C is next; retain I03B as minimally producer-assisted implementation evidence only | Opens design-first I03C under a new freeze; I04 and scientific authority remain closed | 2026-07-14 |
-| `P2-I2-DEC-016` | Which hybrid realization, separable components, joint response, and producer boundary should I03C freeze before runtime conformance? | Minimally producer-assisted hybrid frozen; static validation and 258/258 byte-reconstructed bounded runtime conformance passed; owner review pending | I03C review-ready; umbrella gate and I04 remain closed | 2026-07-14 |
-| `P2-I2-DEC-017` | Does I03C satisfy the owner-supplied causal-well-formedness and acceptance closeout checks, and what may follow? | I03CR1 audit passed 26/26 review checks and 17/17 acceptance conditions with zero blockers and eight downstream obligations; owner acceptance pending | I03C acceptance-ready only; no automatic umbrella closeout or I04 authority | 2026-07-14 |
+| `P2-I2-DEC-016` | Which hybrid realization, separable components, joint response, and producer boundary should I03C freeze before runtime conformance? | Minimally producer-assisted hybrid frozen; static validation and 258/258 byte-reconstructed bounded runtime conformance passed; accepted for progression under DEC-018 | I03C retained; umbrella gate and I04 remain governed separately | 2026-07-14 |
+| `P2-I2-DEC-017` | Does I03C satisfy the owner-supplied causal-well-formedness and acceptance closeout checks, and what may follow? | I03CR1 audit passed 26/26 review checks and 17/17 acceptance conditions with zero blockers and eight downstream obligations; accepted for progression under DEC-018 | I03C acceptance-ready boundary satisfied; opened only I03F under DEC-018 | 2026-07-14 |
+| `P2-I2-DEC-018` | Does I03C/I03CR1 satisfy staged progression, and what scope should section 8.1 use? | Accepted by project owner: move to 8.1; compose prior full reviews compactly rather than repeating them | Opens checklist/hypothesis-first I03F terminal-authority composition only; I04 remains closed | 2026-07-14 |
+| `P2-I2-DEC-019` | Does the compact three-mode family composition satisfy discriminator-gate readiness? | I03F passed 12/12 integration checks and 9/9 acceptance conditions with zero blockers; owner gate disposition pending | `P2-I2-I03F-REVIEW-READY`; does not itself pass the gate or open I04 | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1373,14 +1375,62 @@ acceptance, authorize the umbrella family closeout, pass
 the next permissible step is to declare the umbrella I03 family closeout in
 the checklist and hypotheses before performing it.
 
-## 20. Pending decision queue
+## 20. `P2-I2-DEC-018` — I03C acceptance and compact family-closeout entry
+
+**Status:** accepted by project owner
+
+**Question:** May the staged program move from the accepted hybrid package to
+section 8.1, and must that closeout repeat the prior mode reviews?
+
+**Decision:** Accept I03C/I03CR1 for staged progression and open only the
+separately checklist- and hypothesis-declared `P2-I2-I03F` family closeout.
+
+The project owner directed “we can move to 8.1 next,” then clarified that many
+full reviews had already been completed and another should occur only if
+critical. I03F therefore trusts the accepted A/B/C mode-level findings. It may
+check terminal authority identity, omission/substitution, cross-mode rewrite,
+OP coverage, obligation/quarantine loss, restoration-owner indexing, no
+ranking, and the I04 import boundary. It may not repeat capability, source,
+dataflow, restoration, or runtime conformance reviews.
+
+DEC-018 assigns no scientific status and does not pass the discriminator gate
+or open I04. I03F must freeze its compact scope first and return a retained
+gate-readiness package for owner review.
+
+## 21. `P2-I2-DEC-019` — Compact family-closeout readiness
+
+**Status:** validation passed; owner gate disposition pending
+
+**Question:** Do the three accepted mode packages compose losslessly enough to
+place `P2-I2-DISCRIMINATOR-GATE` before the owner?
+
+**Disposition:** `P2-I2-I03F-REVIEW-READY`.
+
+Eleven terminal authorities match accepted baseline commit
+`fc3fb0f638eb0b180cb05d081e6dc447f24af66b`. The compact family index retains
+exactly three required and unranked profiles, all 27 OP-mode pointers, each
+mode's accepted carrier/intervention/access/producer/restoration summary, all
+six I03BR1 and eight I03CR1 obligations copied exactly, nine consolidated
+duties covering each source obligation once, the complete three-mode fixture
+quarantine, and an unchanged mode-indexed I04 import rule.
+
+The validator passed 12/12 integration checks and 9/9 acceptance conditions
+with zero blockers. It performed no repeated source/capability review, model
+execution, runtime conformance, reconstruction, scientific selection, or
+mode ranking. No downstream obligation is discharged; the family-gate duty
+remains pending owner acceptance.
+
+DEC-019 establishes gate readiness only. It cannot pass
+`P2-I2-DISCRIMINATOR-GATE` or authorize I04 without an explicit project-owner
+disposition.
+
+## 22. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Owner acceptance of I03C and authorization to declare the umbrella family closeout | I03C owner disposition | Passed I03CR1 closeout under DEC-017 |
-| Umbrella staged-family disposition without inter-mode selection | I03 closeout | Owner-reviewed I03A, I03B, and I03C packages under DEC-011 |
+| Owner acceptance of the compact umbrella staged-family disposition without inter-mode selection | I03F owner disposition | Passed I03F compact validation under DEC-019 |
 | Per-mode raw responses/orientations and justified shared boundaries | I04 | Umbrella discriminator gate |
 | Per-mode closest primary comparators | I04 | Realization-bound insufficient-repetition alternatives |
 | Shared or mode-specific candidate-blind matched-null and analysis identities | I04 | Frozen responses/comparators |
