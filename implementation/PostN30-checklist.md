@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.35
+**Baseline revision:** 0.38
 
 **Date:** 2026-07-14
 
@@ -1182,6 +1182,12 @@ Entry condition:
   arithmetic-null invocation is authorized next; no null or candidate ran.
   Evidence:
   [I04R2 gate record](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json).
+- [x] Review and accept the DEC-028 I05B correction. I05A's 3/8 result remains
+  the failed-closed proposed-DEC-027 history; the correction now passes 12/12
+  zero-null tests and 12/12 checks for atomic permanent claims, one attempt/
+  zero retries, committed-I05/interpreter/command binding, and readback-only
+  receipts without changing I04R2. Review:
+  [I05B correction](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05B-one-shot-safety-correction.md).
 
 Required lane work:
 
@@ -2068,6 +2074,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-SOURCE-ADMISSION-GATE | Updated exact graph revision, 31 source/import/callable identities, reset-baseline persistence across save/load, restoration identity v1/v2 boundary, legacy/rebase compatibility, and later bounded-continuation duty; no realization, restoration correctness beyond generic conformance, or scientific result | 2026-07-14 | I02R2 manifest, validation/report, and DEC-009; passed after revalidation |
 | P2-I2-DISCRIMINATOR-GATE | Three retained unranked state/history/hybrid realization authorities, bounded conformance, compact family composition, exact downstream obligations, and fixture quarantine | 2026-07-14 | I03F and DEC-020; passed |
 | P2-I2-CAL-PRE-GATE | Owner-accepted I04R2 sole progression authority; complete-arm strongest-marginal comparator, exact arithmetic-only I05 path, reconstruction, fixed window, causal receipts, and no candidate/null execution at passage | 2026-07-14 | I04R2 validation and DEC-026; passed |
+| P2-I2-I05-AUTHORIZATION | Exact accepted-I04 identities; proposed DEC-027 failed closed at I05A 3/8; DEC-028 I05B correction passes 12/12 tests and 12/12 validation with one attempt/zero retries, permanent local claim, and separate launch authority | 2026-07-14 | Owner-accepted for commit under DEC-029; 10.4 launch separate; CAL-GATE closed |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2150,7 +2157,9 @@ Change log:
 | CL-036 | 2026-07-14 | Revision 0.33 records the owner-directed staged I03 program—8A state-carried, review, 8B history-carried, review, 8C hybrid, review—and brings only `P2-I2-I03A` to review-ready. The state-carried profile selects a `pygrc_native_candidate`: native packet writes/debit, one node-coherence carrier, native feedback read, and model-owned later producer, with RCAE limited to role/access declarations, orchestration, matching, and guards. Static validation passes 18 invariants over 31 admitted sources, eight selected callables, seven cells, five controls, nine OPs, and eleven CAP dispositions. No candidate/calibration operation or scientific result is assigned; the umbrella discriminator gate remains open and I03B/I04 remain unauthorized. | P2-I2 I03A owner review boundary | Superseded by CL-037 |
 | CL-037 | 2026-07-14 | Revision 0.34 records owner-accepted `P2-I2-DEC-011` and `P2-I2-CHG-008`: all three dependence modes are retained through I04–I11, while native/producer/missing-prerequisite selection occurs separately within each mode. The brief's singular wording and downstream checklist are corrected; one lane terminal classification must preserve separate mode dispositions. The original I03A entry freeze remains historical authority and affected cross-artifact validation is rerun without candidate, control, matched-null, calibration, or scientific execution. DEC-010 acceptance, I03B, and I04 remain pending. | P2-I2 three-mode downstream scope and I03A review boundary | Superseded by CL-038 |
 | CL-038 | 2026-07-14 | Revision 0.35 records owner-accepted DEC-012/CHG-009 and completes the checklist-first I03AR1 state-carried runtime-conformance package. One immutable synthetic fixture exercises native common-carrier writes, diversion/debit, order/lineage invariance, separate private reads, alternate responder access, model-owned response, save/load equal continuation, and persisted reset. The original invocation stopped without output on strict binary-float equality; I03AR1R1/CHG-010 froze the sole comparator correction (`abs_tol=1e-12`, `rel_tol=0`). Its one replacement and one reconstruction pass 136/136 and are byte-identical. This is quarantined implementation evidence only; I03B/I04 and all scientific authority remain closed pending owner review. | P2-I2 I03AR1 owner review boundary | Superseded by CL-039 |
-| CL-039 | 2026-07-14 | Revision 0.36 catches the stable program cover up through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority after 16/16 checks and 7/7 pure tests corrected the raw three-arm estimator and byte reconstruction; original I04/I04R1 are immutable history. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation. No null, I06, candidate/control, or scientific result is assigned. | P2-I2 CAL-PRE closure and I05 authorization entry | Active |
+| CL-039 | 2026-07-14 | Revision 0.36 catches the stable program cover up through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority after 16/16 checks and 7/7 pure tests corrected the raw three-arm estimator and byte reconstruction; original I04/I04R1 are immutable history. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation. No null, I06, candidate/control, or scientific result is assigned. | P2-I2 CAL-PRE closure and I05 authorization entry | Superseded by CL-040 |
+| CL-040 | 2026-07-14 | Revision 0.37 draft constructs the I05 authorization candidate; proposed DEC-027 fails closed after I05A passes 3/8. DEC-028 authorizes the I05B correction, which adds one permanent exclusive-claim wrapper and one one-shot policy, freezes one attempt/zero retries, binds committed HEAD/clean state/exact interpreter/normalized command, and retains readback-only attempt/final facts. Ten zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes. The correction is uncommitted/inactive; no acceptance record, claim/final receipt, null, delta, metric-sheet result, CAL-GATE passage, I06, candidate/control operation, or scientific result exists. | P2-I2 I05B owner review boundary | Active pending owner review |
+| CL-041 | 2026-07-14 | Revision 0.38 records DEC-029/CHG-022 owner acceptance and commit authority for the complete I05B package. Immutable acceptance has null authority false; a distinct committed 10.4 launch record is required. The permanent claim is repository-local on ext4, rejects symlink components, and treats empty/partial/broken-symlink occupation as consumed. Twelve zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes and no claim/output/builder/null/PyGRC/candidate/control operation. | P2-I2 I05B retention and 10.4 entry | Active; supersedes CL-040 after commit |
 
 ## 17. Current next actions
 
@@ -2203,7 +2212,11 @@ The next unchecked actions in dependency order are:
       profiles or retained mode-specific missing-prerequisite dispositions.
 13. [x] Complete and owner-accept I04R2 as the sole progression authority and
     pass CAL-PRE without executing the null or any candidate.
-14. [ ] Construct one exact I05 authorization freeze, then execute at most its
-    single arithmetic-null invocation and reconstruct it before CAL-GATE.
-15. [ ] Begin any later independently owned Phase 2 lane only under its own
+14. [x] Review and accept the I05B correction after 12/12
+    zero-null tests and 12/12 machine checks; do not commit or invoke it without
+    separate explicit authorization.
+15. [ ] After accepted retention, separately authorize and execute at most the
+    freeze's single arithmetic-null invocation,
+    reconstruct the retained output, and finish I05 before CAL-GATE.
+16. [ ] Begin any later independently owned Phase 2 lane only under its own
     candidate-blind calibration, registration, and execution boundaries.

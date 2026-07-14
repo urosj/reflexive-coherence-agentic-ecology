@@ -122,5 +122,13 @@ evidence.
 The original I04 and I04R1 contracts are immutable historical artifacts.
 Owner-accepted I04R2 is the sole progression authority under DEC-026, with its
 exact preregistration and 16/16 validation retained under `p2-i2/`. CAL-PRE is
-passed, but no I05 authorization or calibration output is implied by these
-contracts; that authority must be a separate one-invocation I05 freeze.
+passed. `i05-calibration-execution-freeze.json` is the separate exact
+authorization candidate encoding a one-invocation ceiling, and
+`i05-calibration-authorization-validation.json` validates it 12/12 with byte-
+identical reconstruction. `i05a-execution-safety-audit.json` passed only 3/8
+checks and blocks proposed DEC-027 historically. The DEC-028 I05B correction
+then passes 12/12 in `i05b-zero-null-safety-validation.json` with twelve focused
+tests and zero accepted-builder/null execution. DEC-029 retains exact
+`i05b-owner-acceptance.json` with commit true and null authority false; the
+separate 10.4 launch record, claim/final receipts, and governed output remain
+absent. CAL-GATE passage and candidate authority are not implied.

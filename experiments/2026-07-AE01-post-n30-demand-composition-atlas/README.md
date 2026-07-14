@@ -102,9 +102,13 @@ accepted; I03C hybrid then passed 258/258 runtime assertions and its compact
 closeout, and owner-accepted I03F passed the discriminator gate. I04R2 is now
 the sole owner-accepted calibration-preregistration progression authority
 after correcting and validating the complete three-arm estimator path 16/16
-with 7/7 pure tests. CAL-PRE is passed; I05 remains unexecuted behind a
-separate single-invocation freeze, while I06 and candidate execution remain
-closed.
+with 7/7 pure tests. CAL-PRE is passed. One exact I05 arithmetic-null
+authorization candidate passed 12/12 identity checks, but the I05A execution-
+safety audit passed only 3/8 and found five one-shot/commit-binding/receipt
+blockers. The owner-authorized I05B correction now passes 12/12 zero-null tests
+and 12/12 machine checks while preserving I04R2 bytes. It is owner-accepted for
+commit under DEC-029; the 10.4 launch authority remains separate and CAL-GATE,
+I06, and candidate execution remain closed.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself
@@ -266,7 +270,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           I04R2 owner-accepted; CAL-PRE passed; I05 authorization next
+P2-I2                                           I05B one-shot correction review-ready; no active authority or commit
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

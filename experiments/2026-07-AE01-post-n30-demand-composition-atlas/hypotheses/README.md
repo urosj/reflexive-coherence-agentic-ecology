@@ -58,7 +58,13 @@ graph surfaces, and proposed graph discriminators.
   invariants 16/16 with 7/7 pure tests after correcting the future-I05 route.
   The project owner accepted I04R2 as the sole progression authority and
   passed CAL-PRE under DEC-026. Original I04/I04R1 remain immutable history;
-  I05 remains unexecuted behind a separate one-invocation freeze. Under
+  the separate one-invocation I05 authorization candidate passed 12/12 static
+  checks and byte reconstruction but remains uncommitted and inactive pending
+  owner direction. I05A subsequently passed only 3/8 execution-safety checks
+  and blocks proposed DEC-027 on five one-shot/commit-binding/receipt gaps. The
+  DEC-028 I05B correction passes 12/12 zero-null tests and 12/12 checks with
+  immutable I04R2 bytes; DEC-029 owner-accepts its retention while keeping the
+  10.4 launch record separate. Under
   owner-accepted `P2-I2-DEC-011`, all three
   profiles remain in the downstream program and realization selection occurs
   separately within each mode. Their local IDs do not extend the closed Phase

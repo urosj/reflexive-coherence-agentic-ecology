@@ -1,0 +1,27 @@
+{
+  "artifact_id": "P2-I2-I05B-OWNER-ACCEPTANCE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I05B",
+  "lane_id": "AE01-L02",
+  "accepted_at": "2026-07-14",
+  "acceptance_change_id": "P2-I2-CHG-022",
+  "acceptance_decision_id": "P2-I2-DEC-029",
+  "correction_decision_id": "P2-I2-DEC-028",
+  "owner_acceptance": true,
+  "commit_authorized": true,
+  "null_invocation_authorized": false,
+  "authorization_sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+  "wrapper_sha256": "c21af416c0ec20e928aa495533c09faffc0beffa144587d4ff4c173955d912f6",
+  "policy_sha256": "822f8b8e61e0de8ad53f8db80ed4fa4c3d8f8bcacf496a205c4f9ccda6d67098",
+  "I04R2_hashes": {
+    "analysis_module_sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+    "calibration_entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "I04R2_owner_acceptance_sha256": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+    "I04R2_test_sha256": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+    "I04R2_validation_sha256": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361",
+    "machine_policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+    "parent_analysis_policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+    "preregistration_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b"
+  }
+}

@@ -447,8 +447,14 @@ progression while preserving both as immutable history. Its complete-arm
 comparator, exact raw three-arm I05 path, write/read byte reconstruction,
 response/window guards, and causal receipt boundaries passed 16/16 focused
 checks and 7/7 pure tests. The project owner accepted I04R2 and passed CAL-PRE.
-Only a separately frozen single I05 arithmetic-null invocation may follow;
-I06 and candidate execution remain closed.
+The separate I05 arithmetic-null candidate passed 12/12 identity checks, but
+I05A's zero-execution safety audit passed only 3/8 and found five blockers in
+attempt consumption, concurrency/retry identity, committed-I05 preflight, and
+retained refusal accounting. The I05-owned correction subsequently passed
+12/12 zero-null tests and 12/12 machine checks with immutable I04R2 bytes. It
+is owner-accepted for retention under DEC-029 with immutable acceptance/commit
+authority separated from the future 10.4 launch record. CAL-GATE, I06, and
+candidate execution remain closed.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

@@ -11,15 +11,18 @@ discriminator gate is passed; I04R2 confirmed all conditional machine
 invariants with 16/16 focused checks and 7/7 pure tests after correcting the
 future I05 estimator route; the project owner accepted I04R2 as the sole
 progression authority and passed CAL-PRE; original I04 and I04R1 are immutable
-historical artifacts, and I05 authorization/execution remains separately frozen
+historical artifacts; the I05B single-invocation authority package is
+owner-accepted, zero-execution validated 12/12, and unconsumed
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I04R2`; owner-acceptance and progression-
-authority closeout complete; I05 has not begun and candidate execution remains
-unauthorized
+**Current activity iteration:** `P2-I2-I05B`; owner-accepted I05-owned execution-
+safety correction passes 12/12 zero-null tests and 12/12 machine checks with
+byte-identical reconstruction; proposed DEC-027 remains failed-closed, the
+package commit is authorized under DEC-029, null launch remains separate, and
+accepted I04R2 scientific bytes are immutable
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -191,7 +194,9 @@ Rules:
 | `P2-I2-I04` | Three-mode calibration preregistration construction | Passed discriminator gate under owner-accepted I03F | Static package validated, but owner review withheld CAL-PRE passage and reopened the comparator/window/null boundary | Superseded for progression by I04R1; retained history only |
 | `P2-I2-I04R1` | I04-R1 comparator, order, analytic-null, fixed-window, B-purity, mode-isolation, and evidence-derived-chain correction | Owner-supplied critical review of I04 | Complete immutable historical correction; 19/19 focused checks and 15/15 pure tests | Superseded for progression by owner-accepted I04R2; no independent execution authority |
 | `P2-I2-I04R2` | Conditional two-arm estimator, diversion, response-gain, window, diagnostic, order, and causal-receipt machine verification | Owner-supplied conditional I04R1 acceptance review | Complete and owner-accepted; 16/16 focused checks and 7/7 pure tests; future I05 bypass and reconstruction enforcement corrected | Sole I04 progression authority; `P2-I2-CAL-PRE-GATE=passed`; opens only separately frozen I05 authorization |
-| `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze under the preregistered shared/mode-specific rule | Owner-accepted I04R2 and passed CAL-PRE | Ready but not begun; separate one-invocation freeze required | `P2-I2-CAL-GATE` |
+| `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze under the preregistered shared/mode-specific rule | Owner-accepted I04R2 and passed CAL-PRE | I05B authority owner-accepted and committed; unconsumed; separate 10.4 launch required | `P2-I2-CAL-GATE` |
+| `P2-I2-I05A` | Pre-acceptance one-shot consumption, committed-authority revalidation, and readback-only reconstruction safety audit | Owner-supplied three-item execution-safety review of the I05 candidate | Complete: 3/8 passed, five blockers, zero governed execution; no source correction | Proposed DEC-027 blocked; cannot open I05 execution or CAL-GATE |
+| `P2-I2-I05B` | I05-owned one-shot wrapper, policy, claim/final receipt, committed-authority preflight, and zero-null safety correction | Explicit owner authorization after I05A | Owner-accepted: 12/12 tests, 12/12 checks, byte reconstruction; I04R2 immutable; commit authorized, null launch separate | Accepted authority package committed under DEC-029/CHG-022 |
 | `P2-I2-I06` | Exact three-mode implementation registration and evidence-bundle construction | I05 | Blocked | `P2-I2-REG-GATE` |
 | `P2-I2-I07` | Mode-indexed candidate-cycle execution freeze | I06 | Blocked | `P2-I2-EXEC-FREEZE` |
 | `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | I07 | Blocked | `P2-I2-EXEC-GATE` |
@@ -1887,8 +1892,170 @@ Exit gate `P2-I2-CAL-PRE-GATE` authorizes only I05 matched-null calibration.
 
 ## 10. `P2-I2-I05` — Candidate-blind calibration
 
-**Status:** ready but not begun; CAL-PRE passed under DEC-026, and no I05
-authorization or invocation exists yet.
+**Status:** one exact authorization candidate passed identity validation; I05A
+found five execution-safety blockers and failed proposed DEC-027 closed; I05B
+resolved them and is owner-accepted for retention under DEC-029. The authority
+remains unconsumed, null launch is separate, no I05 invocation occurred, and
+CAL-GATE remains closed.
+
+### 10.1 Single-invocation authorization-freeze construction
+
+```text
+activity_id = P2-I2-I05-AUTHORIZATION-FREEZE
+purpose = construct and statically validate authority for exactly one I05
+          analysis-arithmetic matched-null invocation
+entry_authority = DEC-026 + passed CAL-PRE + accepted I04 lineage commit
+accepted_I04_commit = b7b008c402d837b529962a1a5edb062927939d28
+mutation_boundary = I05 authorization contract, focused zero-invocation
+                    validator/result, report, and navigation/governance records
+governed_invocations_during_construction = 0
+PyGRC_invocations_during_construction = 0
+candidate_or_control_invocations_during_construction = 0
+graph_repository = read_only
+evidence_effect = permission/integrity only; no calibrated delta, metric-sheet
+                  result, operational-hypothesis evidence, or scientific result
+exit = one validated, unconsumed authorization candidate returned for owner
+       review; activation and commit each require explicit owner authorization,
+       and P2-I2-CAL-GATE remains closed
+```
+
+- [x] Bind the authority to accepted I04 commit
+  `b7b008c402d837b529962a1a5edb062927939d28`, DEC-026, the owner-acceptance
+  record, and the exact active I04R2 machine/analysis/calibration/preregistration
+  identities.
+- [x] Encode a ceiling of exactly one governed invocation and set candidate
+  execution to false; this becomes active only after owner acceptance and the
+  separately authorized retention commit.
+- [x] Validate only through the frozen I04R2 authorization validator; do not
+  call the calibration builder, calibration entry point, or PyGRC.
+- [x] Verify that the governed I05 output is absent and record zero
+  matched-null, PyGRC, candidate, and control invocations.
+- [x] Reconstruct the authorization-validation result byte-identically.
+- [x] Obtain owner review and explicit acceptance/commit authorization.
+- [x] Commit the accepted, unconsumed authorization before any request to
+  execute it; do not pass `P2-I2-CAL-GATE` during this activity.
+
+### 10.2 `P2-I2-I05A` — Pre-acceptance execution-safety audit
+
+**Status:** complete and blocked; 3/8 checks passed, five execution-safety
+blockers retained, with zero governed-null, PyGRC, candidate, or control
+invocation and no source correction.
+
+```text
+entry = review-ready uncommitted I05 authorization candidate + owner review
+scope = existing entry point, freeze, validation, reconstruction policy, and
+        commit/environment/command bindings only
+mutation_boundary = checklist, hypothesis projection, audit result/report,
+                    and navigation records; no execution-source correction
+governed_null_invocations = 0
+reconstruction_generations = 0
+candidate_or_control_invocations = 0
+acceptance_effect = none until owner review of the audit disposition
+```
+
+- [x] Inspect atomic attempt-time consumption and concurrent exclusion: failed;
+  no consumption token, exclusive claim, or lock exists before governed work.
+- [x] Inspect immediate preflight binding: failed; it binds only accepted I04
+  commit/identities, not a committed I05 authority, exact launch interpreter/
+  command, or clean RCAE authority files.
+- [x] Inspect reconstruction generation: passed; the existing main path calls
+  the builder once, then reads, parses, canonicalizes, and compares retained
+  output without a second envelope generation.
+- [x] Inspect separate retained counts and refusal witness: failed; no
+  consumption receipt, generation/readback counts, or refused-second-start fact
+  is emitted.
+- [x] Inspect failure/retry semantics: failed; one governed invocation and one
+  infrastructure retry are configured without an attempt-token distinction.
+- [x] Fail proposed DEC-027 closed and return a precise
+  correction scope for owner authorization; do not implement it in I05A.
+
+### 10.3 `P2-I2-I05B` — I05-owned one-shot safety correction
+
+**Status:** owner-accepted for retention under DEC-029/CHG-022; 12/12 zero-null
+tests and 12/12 machine checks passed with byte-identical reconstruction.
+
+```text
+allowed_scope = one I05 governed wrapper + one I05 one-shot policy + atomic
+                claim/final receipt mechanics + zero-null tests/validation
+I04R2_scientific_bytes = immutable
+max_governed_attempts = 1
+max_infrastructure_retries = 0
+claim_timing = atomic and before accepted builder call
+claim_lifecycle = survives every success/failure/crash; deletion forbidden
+committed_authority_binding = runtime expected-HEAD argument + committed-blob
+                              equality + owner-acceptance presence; no
+                              self-referential hash inside the freeze
+null_invocations_during_I05B = 0
+commit_authorized = true
+CAL_GATE = closed
+exit = accepted, committed correction and byte-reconstructed zero-execution
+       validation; null launch remains a distinct 10.4 authority
+```
+
+- [x] Add one I05-owned governed wrapper and one one-shot policy without
+  changing accepted I04R2 estimator, analysis, comparator, calibration policy,
+  preregistration, or test bytes.
+- [x] Atomically create an exclusive claim receipt before any builder call;
+  never delete or reuse it, and make every later/concurrent start fail closed.
+- [x] Require one governed attempt and zero retries; a failure or crash after
+  claim remains consumed.
+- [x] Bind runtime `HEAD` supplied after the future authority commit, prove all
+  required authority/code blobs are in that commit and equal working bytes,
+  require clean index/worktree authority state, and bind interpreter plus
+  normalized command.
+- [x] Bind the existing authorization candidate, wrapper/policy identities, and
+  unchanged I04R2 hashes in the claim receipt.
+- [x] Make the future governed path call the accepted I04R2 builder exactly
+  once and reconstruct only by retained-output read/parse/canonical comparison.
+- [x] Retain final counts/status for one attempt, zero reconstruction
+  generations, one readback, consumed authority, and mechanical second-start
+  refusal.
+- [x] Demonstrate all eight owner-required refusal cases with zero accepted-
+  builder invocations during safety validation.
+- [x] Reconstruct the validation byte-identically; retain zero null/PyGRC/
+  candidate/control execution and return uncommitted for owner review.
+
+#### 10.3.1 I05B owner acceptance and commit packaging
+
+```text
+activity_id = P2-I2-I05B-ACCEPTANCE-COMMIT
+entry_authority = explicit project-owner approval of I05B and authorization
+                  to commit, dated 2026-07-14
+purpose = retain immutable owner acceptance and commit the complete reviewed
+          I05/I05A/I05B authority package without authorizing or invoking the
+          arithmetic null
+authority_split = I05B owner acceptance + commit authorization now;
+                  null-launch authorization only in separately directed 10.4
+mutation_boundary = I05B acceptance/launch authority split, machine acceptance
+                    record, zero-null validation, governance/navigation, and
+                    digest consequences only; accepted I04R2 bytes immutable
+null_invocations = 0
+candidate_or_control_invocations = 0
+CAL_GATE = closed
+exit = accepted committed I05B authority package; 10.4 remains blocked on a
+       separate explicit null-launch authorization
+```
+
+- [x] Record I05B owner acceptance and commit authorization under a new
+  decision/change identity without rewriting DEC-027 or DEC-028.
+- [x] Split immutable package acceptance (`null_invocation_authorized=false`)
+  from the future 10.4 launch authority; require both exact records before any
+  attempt claim can be created.
+- [x] Retain the permanent claim on a repository-local non-temporary path and
+  preserve `O_CREAT|O_EXCL` refusal for empty, partial, symlink, concurrent,
+  crashed, or earlier claim-path occupation.
+- [x] Recompute affected wrapper/policy/acceptance/validation identities and
+  rerun focused plus combined zero-execution tests.
+- [x] Verify accepted I04R2 bytes, graph/PyGRC cleanliness, absent claim/final/
+  governed output, zero builder/null/candidate/control operations, and closed
+  CAL-GATE immediately before retention.
+- [x] Commit the complete accepted package; do not create the separate launch
+  record or execute the null in this activity.
+
+### 10.4 Authorized arithmetic-null execution and metric-sheet freeze
+
+**Status:** authorized to begin only after the accepted I05B package commit;
+the exact launch record and committed clean launch HEAD precede the one shot.
 
 - [ ] Execute only the frozen shared pure analysis-arithmetic matched-null
   structure.
@@ -2127,6 +2294,10 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-016` | Owner-supplied critical I04 review withholding CAL-PRE passage | `scientific_preregistration_correction_before_calibration` | Add I04R1; restore quantity-matched repetition to an equivalence-permitted symmetric scope diagnostic; replace the primary required-divergence contrast; harden order, analytic-null, fixed-window, B-purity, mode-isolation, evidence-derived-chain, and quarantine semantics | Corrected package passed 19/19 focused checks and 15/15 pure tests; CAL-PRE remains pending explicit owner acceptance; original I04 retained history; zero null/candidate/runtime execution | Accepted brief/L02/D-039 authority, all three I03 modes and causal semantics, graph read-only boundary, no scientific result | Complete through corrected `P2-I2-I04-REVIEW-READY` under DEC-023 |
 | `P2-I2-CHG-017` | Owner-supplied conditional I04R1 acceptance review | `closure_only_retention_fix` plus future-null estimator-path correction | Add I04R2; verify all-or-none two-arm evaluability, route future I05 through the exact raw three-arm estimator, and harden I06 diversion/gain plus response-window receipts without executing any governed null/runtime/candidate | 16/16 focused checks and 7/7 pure tests passed; future-I05 bypass corrected; zero matched-null/PyGRC/candidate/control execution; package returned for explicit owner acceptance | I04R1 conceptual correction, three retained modes, pre-runtime rationale/quarantine, graph read-only boundary, no scientific result | Complete through `P2-I2-I04R2-ACCEPTANCE-READY` under DEC-025 |
 | `P2-I2-CHG-018` | Explicit project-owner acceptance of I04R2 and direction to pass CAL-PRE, commit, and authorize only one separately frozen I05 arithmetic-null invocation | `owner_accepted_progression_authority_and_gate_passage` plus navigation closeout | Accept I04R2 as sole progression authority; pass only CAL-PRE; mark original I04/I04R1 immutable historical; audit navigation/authority fields; keep I05 invocation, I06, and candidates closed behind separate gates | CAL-PRE passed under DEC-026; I05 ready but not begun; no authorization/output/null/runtime/candidate operation created during I04R2 closeout | Exact accepted I04R2 identities and validation, historical I04/I04R1 bytes, all three modes, tie-rule non-scientific meaning, no scientific result | Complete; opens only checklist/hypothesis-first I05 authorization construction after accepted-I04 commit |
+| `P2-I2-CHG-019` | DEC-026 direction to construct a separately frozen ceiling for one I05 arithmetic-null invocation after the accepted-I04 commit | `single_invocation_authorization_construction` | Declare and construct a commit-bound I05 authorization candidate plus focused static validation; encode exactly one governed arithmetic-null invocation with candidate execution false | Zero-invocation construction only; no calibration builder/entry point, PyGRC, null, candidate, or control call; CAL-GATE remains closed | Accepted I04R2 commit and exact identities, owner-acceptance record, one-invocation ceiling, output absence, graph read-only boundary, no scientific result | Review-ready after 12/12 byte-reconstructed validation; proposed DEC-027, acceptance, and retention commit pending explicit owner authorization |
+| `P2-I2-CHG-020` | Owner-supplied pre-acceptance review requiring genuine single-use consumption, committed-I05 binding, and readback-only reconstruction | `execution_safety_audit_before_authorization_acceptance` | Add zero-null-execution I05A audit; inspect existing mechanics without changing execution source; fail proposed DEC-027 closed if any safety item is absent | 3/8 passed with five blockers; no acceptance, commit, invocation, retry, source correction, CAL-GATE passage, or downstream authority | Exact I04R2/I05 candidate bytes, uncommitted/inactive status, one-attempt meaning, atomic-start duty, committed-authority binding, zero-generation reconstruction, graph read-only boundary | Complete and blocked; correction authorized separately under DEC-028/CHG-021 |
+| `P2-I2-CHG-021` | Explicit owner authorization of a bounded correction after I05A failed closed | `I05_owned_execution_safety_correction` | Add one governed wrapper, one one-shot policy, atomic permanent claim/final receipts, committed-HEAD/clean-state/interpreter/command binding, readback-only reconstruction accounting, and zero-null refusal tests | 10/10 tests and 12/12 checks pass; commit and null invocation unauthorized; CAL-GATE closed; returned for review | All accepted I04R2 scientific bytes and identities, candidate-free boundary, one-attempt/zero-retry limit, no self-referential commit hash, graph read-only boundary, no scientific result | Complete and owner-review-ready under DEC-028 |
+| `P2-I2-CHG-022` | Explicit owner acceptance of I05B and commit authorization, followed by direction to proceed to 10.4 after retention | `owner_acceptance_commit_and_launch_authority_split` | Retain exact machine acceptance with commit true/null launch false; require a separate committed 10.4 launch record; validate local ext4 non-temporary non-symlink claim storage and occupied-path refusal | 12/12 tests and 12/12 checks pass; accepted package committed; launch record/claim/output absent; CAL-GATE closed | I04R2 bytes, one attempt/zero retries, permanent claim, readback-only reconstruction, candidate-free/scientific quarantine | Complete under DEC-029; opens checklist/hypothesis-governed 10.4 only after commit |
 
 ## 19. Evidence ledger
 
@@ -2135,7 +2306,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B/I03C/I03CR1/I03F/I04/I04R1/I04R2 | Cumulative decision record, DEC-001 through DEC-026 | Decision authority only | Retained |
+| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B/I03C/I03CR1/I03F/I04/I04R1/I04R2/I05/I05A/I05B | Cumulative decision record through DEC-029, including failed-closed proposed DEC-027, correction authority DEC-028, and I05B owner acceptance DEC-029 | Decision authority only | Retained; 10.4 launch remains separately governed |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
 | `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
@@ -2189,6 +2360,11 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I04R2-MACHINE` | I04R2 | [Machine policy](../configs/p2_i2_i04r2_machine_policy.json), [future calibration policy](../configs/p2_i2_i04r2_calibration_policy.json), [machine preregistration](../contracts/p2-i2/i04r2-machine-verification-preregistration.json), [primary analyzer](../scripts/p2_i2_i04r2_analysis.py), and [future I05 entry point](../scripts/p2_i2_i04r2_calibration.py) | Candidate-free machine-preregistration and future-estimator identity only; no null or scientific evidence | Owner-accepted sole progression authority under DEC-026; CAL-PRE passed |
 | `P2-I2-I04R2-VALIDATION` | I04R2 | [Focused validation](../contracts/p2-i2/i04r2-machine-verification-validation.json), [validator](../scripts/p2_i2_i04r2_validate.py), 7-test suite, and [verification report](../reports/P2-I2-I04R2-conditional-machine-verification.md) | Conditional machine-integrity evidence only; 16/16 and 7/7; byte-identical reconstruction; zero PyGRC/null/candidate/control invocations | Retained and owner-accepted under DEC-026; sole progression authority |
 | `P2-I2-I04R2-ACCEPTANCE` | I04R2 | [Owner-acceptance and CAL-PRE gate record](../contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json), `P2-I2-CHG-018`, and `P2-I2-DEC-026` | Progression and CAL-PRE gate authority only; no calibration or scientific evidence | Retained; passes CAL-PRE and opens only separately frozen I05 authorization construction |
+| `P2-I2-I05-AUTHORIZATION` | I05 | [Single-invocation freeze candidate](../contracts/p2-i2/i05-calibration-execution-freeze.json), `P2-I2-CHG-019`, and proposed `P2-I2-DEC-027` | Proposed permission and exact-identity boundary only; encodes one arithmetic-null ceiling and no candidate | Uncommitted/inactive and blocked by I05A; CAL-GATE remains closed |
+| `P2-I2-I05-AUTHORIZATION-VALIDATION` | I05 | [12/12 machine validation](../contracts/p2-i2/i05-calibration-authorization-validation.json), [zero-invocation validator](../scripts/p2_i2_i05_authorization_validate.py), and [authorization report](../reports/P2-I2-I05-single-invocation-authorization-freeze.md) | Authorization-candidate identity integrity and byte reconstruction only; zero null/PyGRC/candidate/control invocations; no scientific effect | Retained as construction validation; insufficient for acceptance after I05A |
+| `P2-I2-I05A-SAFETY-AUDIT` | I05A | [3/8 machine audit](../contracts/p2-i2/i05a-execution-safety-audit.json), [static auditor](../scripts/p2_i2_i05a_safety_audit.py), and [audit report](../reports/P2-I2-I05A-execution-safety-audit.md) | One-shot/commit-binding/reconstruction safety only; zero governed execution and no scientific effect | Retained in working review package; five blockers, proposed DEC-027 fails closed |
+| `P2-I2-I05B-CORRECTION` | I05B | [One-shot policy](../configs/p2_i2_i05b_one_shot_policy.json), [governed wrapper](../scripts/p2_i2_i05b_one_shot.py), [owner acceptance](../contracts/p2-i2/i05b-owner-acceptance.json), and DEC-028/029 plus CHG-021/022 | I05 execution-safety and authority-separation mechanics only; no change to I04R2 scientific bytes or evidence | Owner-accepted and committed; launch authority remains separate |
+| `P2-I2-I05B-VALIDATION` | I05B | [12/12 zero-null validation](../contracts/p2-i2/i05b-zero-null-safety-validation.json), [validator](../scripts/p2_i2_i05b_validate.py), [12-test suite](tests/test_p2_i2_i05b_one_shot.py), and [correction report](../reports/P2-I2-I05B-one-shot-safety-correction.md) | Atomic/commit-binding/refusal/readback integrity only; zero accepted-builder/null/PyGRC/candidate/control invocations | Byte-reconstructed and owner-accepted; 10.4 launch record absent at retention |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

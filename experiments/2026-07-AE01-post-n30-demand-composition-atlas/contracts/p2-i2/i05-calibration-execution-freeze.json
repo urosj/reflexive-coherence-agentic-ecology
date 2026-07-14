@@ -1,0 +1,15 @@
+{
+  "CAL_PRE_gate": "passed_after_explicit_owner_acceptance_of_I04R2",
+  "I04R2_owner_acceptance_authority": "P2-I2-DEC-026; accepted_I04_commit=b7b008c402d837b529962a1a5edb062927939d28; owner_acceptance_record_sha256=2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+  "I04R2_preregistration_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+  "artifact_id": "P2-I2-I05-CALIBRATION-EXECUTION-FREEZE",
+  "artifact_version": "1.0.0",
+  "calibration_entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+  "calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+  "candidate_execution_authorized": false,
+  "governed_invocations_authorized": 1,
+  "iteration_id": "P2-I2-I05",
+  "lane_id": "AE01-L02",
+  "machine_policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+  "parent_analysis_policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+}

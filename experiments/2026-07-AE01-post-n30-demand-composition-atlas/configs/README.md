@@ -33,7 +33,17 @@ surfaces are `p2_i2_i04r2_machine_policy.json` and
 parent. The original `p2_i2_analysis_policy.json`/
 `p2_i2_calibration_policy.json` and I04R1 calibration policy remain immutable
 historical inputs, not parallel executable preregistrations. CAL-PRE passage
-permits only a separately frozen single I05 arithmetic-null invocation.
+has produced one separately validated, unconsumed I05 arithmetic-null
+authorization. I05A found five execution-safety blockers; the corrected I05B
+package is now owner-accepted for commit, the governed entry point has not run,
+separate 10.4 launch authority remains required, and CAL-GATE remains closed.
+
+`p2_i2_i05b_one_shot_policy.json` is the owner-authorized I05-only correction.
+It freezes one attempt, zero retries, permanent exclusive claim semantics,
+runtime committed-HEAD/clean-state/interpreter/command binding, one accepted-
+builder call, readback-only reconstruction, and attempt/final receipt facts.
+Its 12/12 tests and 12/12 validation support DEC-029 package retention only;
+they authorize no invocation without the separate committed 10.4 launch record.
 
 ## P2-I1 configuration surfaces
 

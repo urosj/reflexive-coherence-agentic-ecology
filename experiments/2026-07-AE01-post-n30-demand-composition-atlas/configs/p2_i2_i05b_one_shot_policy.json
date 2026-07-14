@@ -1,0 +1,146 @@
+{
+  "artifact_id": "P2-I2-I05B-ONE-SHOT-EXECUTION-POLICY",
+  "artifact_version": "1.1.0",
+  "attempt_policy": {
+    "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
+    "claim_deletion_forbidden": true,
+    "claim_survives_failure_and_crash": true,
+    "consume_before_builder": true,
+    "max_governed_attempts": 1,
+    "max_infrastructure_retries": 0
+  },
+  "candidate_execution_authorized": false,
+  "commit_binding": {
+    "clean_state_rule": "git status --porcelain=v1 --untracked-files=all must be empty before claim",
+    "expected_head_source": "required runtime --expected-head argument supplied only after the owner-accepted I05 authority commit exists",
+    "identity_rule": "every committed_authority_path must exist in expected HEAD and be byte-identical to the clean working file",
+    "owner_acceptance_rule": "the expected HEAD must contain the exact immutable I05B owner-acceptance record with commit authorization true and null-invocation authorization false, plus a separate exact 10.4 null-launch record with null-invocation authorization true",
+    "self_reference_rule": "no file inside the authority commit embeds that same commit hash; the wrapper resolves and records it at invocation preflight"
+  },
+  "committed_authority_paths": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_calibration_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05b_one_shot_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05b-owner-acceptance.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-null-launch-authorization.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05b-zero-null-safety-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r2_analysis.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i05b_one_shot.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_calibration.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_one_shot.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py"
+  ],
+  "claim_storage": {
+    "atomicity_basis": "local ext4 O_CREAT|O_EXCL",
+    "expected_filesystem_type": "ext4",
+    "repository_local": true,
+    "symlink_components_forbidden": true,
+    "temporary_location_forbidden": true
+  },
+  "correction_authority": {
+    "change_id": "P2-I2-CHG-021",
+    "decision_id": "P2-I2-DEC-028",
+    "owner_authorized_scope": "I05 execution-safety mechanics only",
+    "proposed_DEC_027": "failed_closed_historical_disposition",
+    "scientific_revision": false
+  },
+  "frozen_hashes": {
+    "analysis_module_sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+    "authorization_sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+    "calibration_entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "I04R2_owner_acceptance_sha256": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+    "I04R2_test_sha256": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+    "I04R2_validation_sha256": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361",
+    "machine_policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+    "parent_analysis_policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+    "preregistration_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+    "wrapper_sha256": "c21af416c0ec20e928aa495533c09faffc0beffa144587d4ff4c173955d912f6"
+  },
+  "interpreter": {
+    "binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "executable_repo_relative": ".venv/bin/python",
+    "implementation": "CPython",
+    "major_minor": [
+      3,
+      12
+    ]
+  },
+  "iteration_id": "P2-I2-I05B",
+  "lane_id": "AE01-L02",
+  "normalized_command_template": [
+    ".venv/bin/python",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_one_shot.py",
+    "--policy",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05b_one_shot_policy.json",
+    "--expected-head",
+    "<OWNER_AUTHORIZED_FULL_HEAD>"
+  ],
+  "paths": {
+    "attempt_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/i05b-attempt-claim.json",
+    "authorization": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+    "calibration_policy": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_calibration_policy.json",
+    "final_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/i05b-final-receipt.json",
+    "governed_output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json",
+    "machine_policy": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+    "null_launch_authorization": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-null-launch-authorization.json",
+    "owner_acceptance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05b-owner-acceptance.json",
+    "parent_analysis_policy": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+    "policy": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05b_one_shot_policy.json",
+    "preregistration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json",
+    "wrapper": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_one_shot.py"
+  },
+  "receipt_contract": {
+    "attempt_claim_required_facts": [
+      "authorization_consumed=true before builder",
+      "exact expected and actual HEAD",
+      "empty repository porcelain",
+      "committed/current authority hashes",
+      "interpreter identity",
+      "normalized command",
+      "wrapper/policy/authorization hashes",
+      "unchanged I04R2 hashes"
+    ],
+    "final_required_values": {
+      "accepted_builder_invocation_count": 1,
+      "authorization_consumed": true,
+      "candidate_execution_authorized": false,
+      "infrastructure_retries": 0,
+      "governed_attempt_count": 1,
+      "null_invocation_count": 1,
+      "null_reconstruction_generation_count": 0,
+      "output_readback_reconstruction_count": 1,
+      "second_invocation_refused": true
+    }
+  },
+  "reconstruction_policy": {
+    "builder_invocations_per_governed_attempt": 1,
+    "null_reconstruction_generation_count": 0,
+    "output_readback_reconstruction_count": 1,
+    "readback_only": true,
+    "route": [
+      "call immutable accepted I04R2 build_calibration_record exactly once",
+      "serialize and exclusively write governed output",
+      "read retained output once",
+      "json.loads and canonical pretty serialization",
+      "require retained, reconstructed, and original serialized bytes equal"
+    ]
+  },
+  "validation_boundary": {
+    "builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "commit_authorized": true,
+    "governed_null_invocations": 0,
+    "null_invocation_authorized": false,
+    "PyGRC_model_instantiations": 0
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "artifact_id": "P2-I2-I05B-ZERO-NULL-SAFETY-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "check_id": "I05B-01",
+      "evidence": {
+        "attempt_policy": {
+          "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
+          "claim_deletion_forbidden": true,
+          "claim_survives_failure_and_crash": true,
+          "consume_before_builder": true,
+          "max_governed_attempts": 1,
+          "max_infrastructure_retries": 0
+        },
+        "candidate_execution_authorized": false
+      },
+      "finding": "the I05-owned policy freezes one attempt, zero retries, and no candidate authority",
+      "name": "one-attempt zero-retry I05 policy",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-02",
+      "evidence": {
+        "accepted_commit": "b7b008c402d837b529962a1a5edb062927939d28",
+        "accepted_commit_hashes": {
+          "analysis_module": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+          "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+          "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+          "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+          "owner_acceptance": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+          "parent_analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+          "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+          "test": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+          "validation": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361"
+        },
+        "current_hashes": {
+          "analysis_module": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+          "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+          "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+          "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+          "owner_acceptance": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+          "parent_analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+          "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+          "test": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+          "validation": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361"
+        }
+      },
+      "finding": "all accepted I04R2 scientific/code/policy/test bytes equal commit b7b008c",
+      "name": "accepted I04R2 bytes remain immutable",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-03",
+      "evidence": {
+        "atomic_flags": "O_CREAT|O_EXCL|O_WRONLY",
+        "claim_before_builder": true,
+        "claim_deletion_surface_present": false,
+        "exclusive_open_calls": 1
+      },
+      "finding": "exclusive claim creation precedes the sole builder call and no deletion path exists",
+      "name": "atomic permanent pre-builder claim",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-04",
+      "evidence": {
+        "accepted_builder_calls_in_adapter": 1,
+        "governed_adapter_calls": 1
+      },
+      "finding": "the I05 wrapper imports/calls the immutable accepted builder only inside the post-claim function",
+      "name": "accepted builder exactly once and delayed until after claim",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-05",
+      "evidence": {
+        "preflight_calls": [
+          "_path",
+          "_path",
+          "_path",
+          "_sha256",
+          "_sha256",
+          "_sha256",
+          "collect_repository_snapshot",
+          "dict",
+          "dict",
+          "interpreter_identity",
+          "list",
+          "validate_claim_storage",
+          "validate_command",
+          "validate_committed_authority",
+          "validate_frozen_hashes",
+          "validate_interpreter",
+          "validate_null_launch_authorization",
+          "validate_owner_acceptance",
+          "validate_policy",
+          "validate_preclaim_absence",
+          "validate_repository_snapshot"
+        ],
+        "self_reference_rule": "no file inside the authority commit embeds that same commit hash; the wrapper resolves and records it at invocation preflight"
+      },
+      "finding": "runtime preflight binds post-commit HEAD, clean state, committed blobs, separate acceptance/launch authority, permanent claim storage, interpreter, command, and frozen hashes without self-reference",
+      "name": "committed authority/interpreter/command preflight",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-06",
+      "evidence": {
+        "final_required_values": {
+          "accepted_builder_invocation_count": 1,
+          "authorization_consumed": true,
+          "candidate_execution_authorized": false,
+          "governed_attempt_count": 1,
+          "infrastructure_retries": 0,
+          "null_invocation_count": 1,
+          "null_reconstruction_generation_count": 0,
+          "output_readback_reconstruction_count": 1,
+          "second_invocation_refused": true
+        },
+        "json_loads_calls": 1,
+        "read_text_calls": 1
+      },
+      "finding": "the future attempt generates once and reconstructs only from retained output with separate counts/refusal status",
+      "name": "readback-only reconstruction and final receipt facts",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-07",
+      "evidence": {
+        "required_tests": [
+          "test_builder_invocation_during_safety_validation_is_zero",
+          "test_concurrent_second_start_is_refused",
+          "test_dirty_authority_files_or_index_are_refused",
+          "test_existing_governed_output_is_refused",
+          "test_owner_acceptance_does_not_substitute_for_launch_authority",
+          "test_permanent_claim_storage_rejects_symlink_or_partial_claim",
+          "test_start_after_claimed_attempt_is_refused",
+          "test_start_after_simulated_crash_following_claim_is_refused",
+          "test_wrong_head_is_refused",
+          "test_wrong_interpreter_or_command_is_refused"
+        ],
+        "test_file_sha256": "425f161ac49d6d143fcfe6b325c35cc81b76e3e8a4d0890b9453f7aae9009a9e"
+      },
+      "finding": "all eight required zero-null safety demonstrations have named tests",
+      "name": "owner-required eight-case refusal matrix",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-08",
+      "evidence": {
+        "command": ".venv/bin/python -m unittest experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i05b_one_shot.py",
+        "tests_passed": 12
+      },
+      "finding": "twelve focused tests pass without invoking the accepted builder",
+      "name": "zero-null safety tests pass",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-09",
+      "evidence": {
+        "attempt_receipt_absent": true,
+        "final_receipt_absent": true,
+        "governed_output_absent": true,
+        "null_launch_authorization_absent": true,
+        "owner_acceptance_present": true,
+        "validation_boundary": {
+          "PyGRC_model_instantiations": 0,
+          "builder_invocations": 0,
+          "candidate_or_control_invocations": 0,
+          "commit_authorized": true,
+          "governed_null_invocations": 0,
+          "null_invocation_authorized": false
+        }
+      },
+      "finding": "owner acceptance/commit authority is exact, separate launch authority remains absent, and no claim, output, builder/null, PyGRC, candidate, or control operation exists",
+      "name": "accepted package remains launch-blocked and zero-execution",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-10",
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "graph_status": ""
+      },
+      "finding": "PyGRC remains at the admitted clean revision and was not imported or invoked",
+      "name": "graph read-only boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-11",
+      "evidence": {
+        "policy_sha256": "822f8b8e61e0de8ad53f8db80ed4fa4c3d8f8bcacf496a205c4f9ccda6d67098",
+        "wrapper_sha256": "c21af416c0ec20e928aa495533c09faffc0beffa144587d4ff4c173955d912f6"
+      },
+      "finding": "the correction adds one exact governed wrapper and one exact policy",
+      "name": "single wrapper and one-shot policy identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05B-12",
+      "evidence": {
+        "acceptance_change_id": "P2-I2-CHG-022",
+        "acceptance_decision_id": "P2-I2-DEC-029",
+        "correction_authority": {
+          "change_id": "P2-I2-CHG-021",
+          "decision_id": "P2-I2-DEC-028",
+          "owner_authorized_scope": "I05 execution-safety mechanics only",
+          "proposed_DEC_027": "failed_closed_historical_disposition",
+          "scientific_revision": false
+        }
+      },
+      "finding": "DEC-027 remains failed-closed history, DEC-028/CHG-021 own only I05 safety mechanics, and DEC-029/CHG-022 accept only package retention",
+      "name": "failed-closed lineage, correction scope, and owner acceptance",
+      "status": "passed"
+    }
+  ],
+  "disposition": {
+    "P2-I2-CAL-GATE": "closed",
+    "accepted_I04R2_bytes_immutable": true,
+    "commit_authorized": true,
+    "correction_owner_accepted": true,
+    "null_invocation_authorized": false,
+    "proposed_DEC_027": "failed_closed_historical_disposition"
+  },
+  "execution_receipt": {
+    "PyGRC_model_instantiations": 0,
+    "accepted_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "governed_null_invocations": 0,
+    "scientific_result": false
+  },
+  "input_identities": {
+    "authorization_sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+    "one_shot_policy_sha256": "822f8b8e61e0de8ad53f8db80ed4fa4c3d8f8bcacf496a205c4f9ccda6d67098",
+    "owner_acceptance_sha256": "50b4ab21acb8e6d040639894ec2796e0b6fd92e7f5ddf34a55a1c16441d606c4",
+    "test_sha256": "425f161ac49d6d143fcfe6b325c35cc81b76e3e8a4d0890b9453f7aae9009a9e",
+    "wrapper_sha256": "c21af416c0ec20e928aa495533c09faffc0beffa144587d4ff4c173955d912f6"
+  },
+  "iteration_id": "P2-I2-I05B",
+  "lane_id": "AE01-L02",
+  "passed_checks": 12,
+  "total_checks": 12,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py",
+    "sha256": "6f224c484ff6d66ecdd72629f1c1085f666693b5e30c3ed9b5578e090e2a3636"
+  }
+}

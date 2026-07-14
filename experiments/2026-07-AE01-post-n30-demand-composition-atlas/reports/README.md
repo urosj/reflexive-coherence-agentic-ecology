@@ -69,8 +69,20 @@ Phase 2 gate reviews:
 - [P2-I2 I04R2 machine verification](P2-I2-I04R2-conditional-machine-verification.md)
   confirms the eight conditional invariants 16/16 with 7/7 pure tests,
   corrects the future-I05 estimator route, and is the owner-accepted sole I04
-  progression authority under DEC-026. CAL-PRE is passed; I05 remains behind a
-  separate single-invocation freeze.
+  progression authority under DEC-026. CAL-PRE is passed.
+- [P2-I2 I05 single-invocation authorization](P2-I2-I05-single-invocation-authorization-freeze.md)
+  presents the separate exact freeze candidate, 12/12 static validation, and
+  byte reconstruction under proposed DEC-027. It remains uncommitted and
+  inactive, with no calibration or scientific effect.
+- [P2-I2 I05A execution-safety audit](P2-I2-I05A-execution-safety-audit.md)
+  checks genuine one-shot consumption, committed-I05 binding, and readback-only
+  reconstruction without running the null. It passes 3/8, retains five
+  blockers, and fails proposed DEC-027 closed.
+- [P2-I2 I05B one-shot safety correction](P2-I2-I05B-one-shot-safety-correction.md)
+  retains the DEC-028 I05-owned wrapper/policy correction, 12/12 zero-null
+  tests, 12/12 machine validation, byte reconstruction, immutable I04R2 hashes,
+  and DEC-029 owner acceptance. Commit authority is distinct from the absent
+  10.4 launch record; no null or CAL-GATE passage is assigned.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

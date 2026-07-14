@@ -140,9 +140,32 @@ identity and source revision/digests.
 `p2_i2_i04r2_analysis.py` and `p2_i2_i04r2_calibration.py` are the sole active
 P2-I2 calibration-preregistration analysis path under owner-accepted I04R2.
 The original I04 and I04R1 modules remain immutable historical inputs. The
-I04R2 calibration entry point may run only after a separate I05 freeze binds
-its exact identities and authorizes one arithmetic-null invocation; it imports
-no PyGRC and grants no candidate authority.
+separate I05 freeze binds the exact identities and encodes a one-invocation
+ceiling; its corrected I05B authority package is owner-accepted for retention.
+Validate proposed-permission integrity without running the null:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05_authorization_validate.py --output /tmp/p2-i2-i05-authorization-validation.json
+```
+
+The governed I04R2 calibration entry point imports no PyGRC and grants no
+candidate authority. I05A found that it lacks required one-shot mechanics, so
+the old direct entry point may not run. Reproduce the historical zero-execution audit with:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05a_safety_audit.py --output /tmp/p2-i2-i05a-safety-audit.json
+```
+
+`p2_i2_i05b_one_shot.py` is the sole accepted governed I05 wrapper. It claims
+the attempt atomically before importing/calling the accepted builder and binds
+the future committed authority without embedding a self-referential commit
+hash. Its machine owner-acceptance record authorizes commit but explicitly not
+the null; it cannot run until a separate exact 10.4 launch record is committed.
+Reproduce the zero-null correction validation:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py --output /tmp/p2-i2-i05b-validation.json
+```
 
 Validate the six committed P2-I1 configs:
 

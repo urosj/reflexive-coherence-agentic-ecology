@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.29
+**Plan revision:** 0.38
 
 **Date:** 2026-07-14
 
@@ -1766,16 +1766,18 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.36:
+Current dependency order after revision 0.38:
 
 1. Advance P2-I2 only through its accepted brief, evidence-expandable activity
    checklist, cumulative decision record, and subordinate operational
    hypothesis projections. I04R2 is the sole accepted progression authority;
    original I04/I04R1 are immutable history.
-2. After CAL-PRE passage under DEC-026, construct a separate I05 freeze bound
-   to the accepted I04R2 commit and exact identities. Permit at most one
-   arithmetic-null invocation, reconstruct it byte-identically, and keep I06
-   and candidate execution closed until CAL-GATE.
+2. The separate I05 authorization candidate is bound to accepted-I04 commit
+   `b7b008c` and passed 12/12 identity checks, but I05A passed only 3/8 safety
+   checks. DEC-028 authorized an I05-owned correction, which now passes 12/12
+   zero-null tests and 12/12 machine checks with immutable I04R2 bytes. DEC-029
+   owner-accepts its retention commit while keeping the 10.4 launch record
+   separate; CAL-GATE, I06, and candidates remain closed.
 3. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1868,6 +1870,8 @@ directive.
 | 2026-07-14 | Revision 0.28: completed `P2-I2-I01` under a frozen read-only capability-audit scope. Retained an eleven-question matrix, a bounded native node-coherence/packet/feedback/restoration shortlist, explicit inadequate control and pool-dynamics surfaces, exact command/source provenance, focused source-current conformance, and a clean graph checkout. Passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization selection, calibration, execution, and lane evidence remain unopened. |
 | 2026-07-14 | Revision 0.29: completed checklist-first `P2-I2-I01R1` against the owner-supplied capability-audit closeout standard. Quarantined the custom combined/single/label behavioral probe from capability and scientific evidence, revalidated surviving claims from public source contracts and pre-existing generic tests, corrected CAP-04 to inadequate, and added explicit public-support, intervention-readiness, mode-neutrality, causal-history, and restoration-ownership profiles. Re-passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization/dependence-mode selection, calibration, candidate evidence, execution, and lane results remain unopened. |
 | 2026-07-14 | Revision 0.36: synchronized stable program cover through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority; original I04/I04R1 remain immutable history. Its complete-arm strongest-marginal estimator, exact arithmetic-only I05 path, retained-output byte reconstruction, fixed window, and causal receipt guards passed 16/16 focused checks and 7/7 pure tests. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation; no null, I06, candidate/control, or result is assigned. |
+| 2026-07-14 | Revision 0.37 draft: constructed the separately required I05 authorization candidate against accepted-I04 commit `b7b008c`. Identity validation passed 12/12, but I05A passed 3/8 and failed proposed DEC-027 closed on five one-shot safety defects. DEC-028 then authorized a strictly I05-owned correction: one permanent exclusive-claim wrapper, one one-shot policy, committed-HEAD/clean-state/exact-interpreter/command binding, one attempt/zero retries, and readback-only attempt/final receipts. Ten zero-null tests and 12/12 machine checks pass with byte reconstruction and immutable I04R2 hashes. The correction is uncommitted/inactive; no owner-acceptance record, claim/final receipt, null output, delta, metric-sheet result, CAL-GATE passage, I06, candidate/control operation, or scientific result exists. |
+| 2026-07-14 | Revision 0.38: owner-accepted I05B under DEC-029 and authorized its complete authority-package commit. Acceptance and null launch are machine-separated: the immutable acceptance record sets commit true/null false, while 10.4 requires a distinct committed launch record. Local ext4 non-temporary claim storage and empty/partial/symlink occupation refusal extend the focused suite to 12/12; machine validation remains 12/12 with zero builder/null/PyGRC/candidate/control execution and immutable I04R2 bytes. The owner separately directed 10.4 after this commit; CAL-GATE remains closed until its governed output is reviewed. |
 
 ## 18. Program completion criteria
 

@@ -19,9 +19,12 @@ candidate-free `P2-I2-I04R2`, which confirmed all eight machine invariants with
 16/16 focused checks and 7/7 pure tests after correcting the future-I05 route
 to use three raw arms through the live estimator; the project owner accepted
 I04R2 as the sole progression authority and passed CAL-PRE under DEC-026;
-original I04 and I04R1 remain immutable historical artifacts, I05 remains
-unexecuted behind a separate one-invocation freeze, and all three profiles
-remain distinct and retained downstream under
+original I04 and I04R1 remain immutable historical artifacts; I05 remains
+unexecuted; proposed DEC-027 remains failed-closed after I05A, while the
+owner-accepted I05B safety correction passed 12/12 zero-null tests and 12/12
+machine checks and is authorized for commit under DEC-029 with 10.4 null launch
+retained as a separate authority, and all three profiles remain distinct and
+retained downstream under
 `P2-I2-DEC-011`
 
 **Lane:** `AE01-L02`
@@ -778,6 +781,96 @@ and calls the exact primary analyzer, then enforces governed-output readback and
 byte-identical JSON reconstruction. This is machine-preregistration integrity,
 not a calibrated resolution or operational-hypothesis outcome.
 
+#### 3.2.9 I05 single-invocation authorization projection
+
+This projection governs permission construction only. The authorization must
+bind accepted I04 commit
+`b7b008c402d837b529962a1a5edb062927939d28`, DEC-026, the owner-acceptance
+record, and the exact active I04R2 machine policy, analysis implementation,
+calibration policy, calibration entry point, and machine preregistration
+identities. It may authorize exactly one governed arithmetic-null invocation
+and must keep candidate execution false.
+
+Construction and validation have a zero-invocation budget. They may call only
+the frozen I04R2 authorization validator, not the calibration builder or entry
+point, PyGRC, a synthetic-null generator, or any candidate/control path. The
+governed output must remain absent. A byte-reconstructed validation result can
+establish only that one unconsumed permission is well formed; it cannot assign
+`analysis_arithmetic_delta`, modify the metric sheet, pass CAL-GATE, or affect
+any operational-hypothesis projection. Consuming the permission is a separate
+future action.
+
+#### 3.2.10 I05A execution-safety audit projection
+
+I05A is a pre-acceptance, zero-null-execution audit prompted by the owner review
+of the authorization candidate. It asks whether the existing machine path
+already makes the permission genuinely single-use by consuming it atomically
+before governed work, treating a failed attempt as consumed, and refusing
+concurrent or later starts. It also asks whether immediate preflight binds the
+new committed RCAE authority containing acceptance and the I05 freeze—not only
+the earlier I04 commit—together with exact code, output, environment, command,
+candidate-exclusion, and clean-authority identities.
+
+Finally, I05A distinguishes output reconstruction from null regeneration. A
+valid reconstruction path may only read, parse, canonicalize, and compare the
+retained output. It must retain separate counts for one attempted null run,
+zero reconstruction generations, one output readback, consumed authority, and
+a refused second invocation. Absence of any mechanism blocks proposed DEC-027;
+it cannot be inferred from authored booleans, repaired silently, or interpreted
+as an operational-hypothesis result. Static audit passed only the existing
+identity/output/candidate guards, one-build readback-only reconstruction, and
+zero-execution boundary. It failed attempt consumption, concurrent exclusion,
+retry identity, committed-I05 preflight, and retained consumption/count/refusal
+receipts. Proposed DEC-027 therefore fails closed. I05A changes no execution
+source and runs no null, PyGRC model, candidate, or control.
+
+#### 3.2.11 I05B one-shot correction projection
+
+DEC-028 authorizes only an I05-owned correction of the five I05A safety
+blockers. I05B may add one governed wrapper, one one-shot policy, atomic
+permanent claim/final receipts, and zero-null safety validation. Accepted I04R2
+estimator, analysis, comparator, calibration-policy, preregistration, and test
+bytes remain immutable.
+
+The corrected path must consume exactly one attempt through exclusive creation
+before calling the accepted builder, permit zero infrastructure retries, and
+leave the claim present after success, ordinary failure, or crash. At runtime
+it must accept the expected committed HEAD as a post-commit launch argument,
+prove that HEAD contains owner acceptance plus every required I05/I04 authority
+blob with current-byte equality, reject dirty index/worktree authority state,
+and record interpreter and normalized-command identity. This binds the future
+committed I05 authority without an impossible self-reference inside a file in
+that commit.
+
+The accepted builder may be called once only during a later separately
+authorized invocation. I05B validation calls it zero times. Reconstruction is
+retained-output read/parse/canonical comparison only, with distinct attempt,
+generation, readback, consumption, and second-refusal facts. I05B creates no
+null, PyGRC, candidate/control, calibration, or operational-hypothesis evidence
+and returns uncommitted for owner review. The correction passed all ten focused
+tests and 12/12 machine checks with byte-identical validation reconstruction;
+the owner-acceptance record, claim/final receipts, and governed output remain
+absent.
+
+#### 3.2.12 I05B acceptance-and-launch authority projection
+
+The project owner accepts I05B and authorizes retention of its complete
+authority package, but does not thereby authorize the arithmetic-null
+invocation. The committed package must therefore contain an immutable machine
+owner-acceptance record with `owner_acceptance=true`,
+`commit_authorized=true`, and `null_invocation_authorized=false`. A distinct
+10.4 launch record with `null_invocation_authorized=true` is required before
+the wrapper may create the permanent attempt claim or call the accepted I04R2
+builder.
+
+Both records must be committed in the exact runtime `HEAD`, byte-equal to the
+clean working tree, and bound to the authorization, wrapper, policy, and
+unchanged I04R2 identities. The split changes only execution authority
+mechanics: it does not change the one-attempt/zero-retry rule, estimator,
+comparator, calibration semantics, reconstruction route, or scientific
+status. Acceptance/commit packaging executes zero builders, nulls, PyGRC
+models, candidates, and controls; `P2-I2-CAL-GATE` remains closed.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the
@@ -1111,8 +1204,10 @@ indexed expectations and dispositions. The corrected candidate-free package
 is owner-accepted under DEC-026 as the sole I04 progression authority.
 Original I04 and I04R1 remain immutable historical artifacts rather than
 parallel active preregistrations. CAL-PRE passage opens only construction of a
-separate exact one-invocation I05 arithmetic-null freeze; no null or candidate
-operation has occurred.
+separate exact one-invocation I05 arithmetic-null freeze. CHG-019 retains a
+byte-reconstructed candidate for owner review under proposed DEC-027; no
+authority is active, no null or candidate operation has occurred, no commit is
+authorized, and CAL-GATE remains closed.
 
 Neither status transition supplies evidence for any operational projection.
 

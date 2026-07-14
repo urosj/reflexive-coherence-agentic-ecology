@@ -1,0 +1,177 @@
+{
+  "artifact_id": "P2-I2-I05-AUTHORIZATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "authorization": {
+    "governed_invocations_authorized": 1,
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+    "sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+    "status": "candidate_validated_unconsumed_pending_owner_acceptance"
+  },
+  "checks": [
+    {
+      "check_id": "AUTH-01",
+      "evidence": {
+        "accepted_I04_commit": "b7b008c402d837b529962a1a5edb062927939d28"
+      },
+      "finding": "the authorization names the exact committed accepted-I04 lineage",
+      "name": "accepted I04 commit exists",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-02",
+      "evidence": {
+        "accepted_commit_hashes": {
+          "I04R2_validation": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361",
+          "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+          "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+          "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+          "owner_acceptance": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+          "parent_analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+          "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b"
+        },
+        "current_hashes": {
+          "I04R2_validation": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361",
+          "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+          "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+          "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+          "owner_acceptance": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+          "parent_analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+          "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b"
+        }
+      },
+      "finding": "all active I04R2 inputs, validation, and acceptance bytes match the accepted commit",
+      "name": "accepted I04 identities are immutable and commit-bound",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-03",
+      "evidence": {
+        "decision_id": "P2-I2-DEC-026",
+        "historical_iterations": [
+          "P2-I2-I04",
+          "P2-I2-I04R1"
+        ],
+        "progression_status": "sole_active_I04_progression_authority",
+        "tie_scientific_meaning": "none"
+      },
+      "finding": "DEC-026 makes only I04R2 active, keeps predecessors historical, and gives the tie no scientific meaning",
+      "name": "owner-acceptance progression boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-04",
+      "evidence": {
+        "validator": "p2_i2_i04r2_calibration.validate_execution_authorization"
+      },
+      "finding": "the exact authorization passes the already-frozen I04R2 validator",
+      "name": "frozen I04R2 authorization validator",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-05",
+      "evidence": {
+        "authorization_sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+        "owner_acceptance_authority": "P2-I2-DEC-026; accepted_I04_commit=b7b008c402d837b529962a1a5edb062927939d28; owner_acceptance_record_sha256=2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf"
+      },
+      "finding": "the freeze has one exact identity and names its decision, accepted commit, and acceptance-record digest",
+      "name": "authorization identity and acceptance binding",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-06",
+      "evidence": {
+        "candidate_execution_authorized": false,
+        "governed_invocations_authorized": 1
+      },
+      "finding": "exactly one arithmetic-null invocation is authorized and no candidate execution is opened",
+      "name": "single-invocation and candidate exclusion",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-07",
+      "evidence": {
+        "imported_from_p2_i2_i04r2_calibration": [
+          "validate_execution_authorization"
+        ]
+      },
+      "finding": "this activity imports only the frozen authorization validator, never the record builder or main entry point",
+      "name": "zero-execution validator call surface",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-08",
+      "evidence": {
+        "loaded_pygrc_modules": []
+      },
+      "finding": "static authorization construction and validation did not import PyGRC",
+      "name": "PyGRC exclusion",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-09",
+      "evidence": {
+        "exists": false,
+        "governed_output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json"
+      },
+      "finding": "the authorized arithmetic-null output does not exist and the permission remains unconsumed",
+      "name": "governed output absence",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-10",
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "graph_status": ""
+      },
+      "finding": "the admitted PyGRC source remains at the exact clean revision",
+      "name": "graph source read-only boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-11",
+      "evidence": {
+        "PyGRC_model_instantiations": 0,
+        "candidate_or_control_invocations": 0,
+        "governed_matched_null_invocations": 0
+      },
+      "finding": "authorization construction ran no governed null, PyGRC, candidate, or control invocation",
+      "name": "construction invocation accounting",
+      "status": "passed"
+    },
+    {
+      "check_id": "AUTH-12",
+      "evidence": {
+        "I06_registration_authorized": false,
+        "P2-I2-CAL-GATE": "blocked_pending_authorized_I05_execution_and_reconstruction",
+        "analysis_arithmetic_delta_assigned": false,
+        "authorization_active": false,
+        "scientific_result": false
+      },
+      "finding": "the candidate encodes a one-call ceiling but activates nothing before owner review and commit authorization",
+      "name": "gate and evidence ceiling",
+      "status": "passed"
+    }
+  ],
+  "disposition": {
+    "P2-I2-CAL-GATE": "blocked_pending_authorized_I05_execution_and_reconstruction",
+    "authorization_active": false,
+    "authorization_candidate_review_ready": true,
+    "candidate_execution_authorized": false,
+    "governed_invocation_consumed": false,
+    "next_permitted_action": "owner review and explicit acceptance plus commit authorization"
+  },
+  "execution_receipt": {
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_invocations": 0,
+    "governed_matched_null_invocations": 0,
+    "scientific_result": false
+  },
+  "focused_checks_passed": 12,
+  "iteration_id": "P2-I2-I05",
+  "lane_id": "AE01-L02",
+  "validation_scope": "authorization_integrity_only",
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05_authorization_validate.py",
+    "sha256": "2765e479548132dd9c00802b80dfd85350299a1597af07150c41190e64fcb427"
+  }
+}
