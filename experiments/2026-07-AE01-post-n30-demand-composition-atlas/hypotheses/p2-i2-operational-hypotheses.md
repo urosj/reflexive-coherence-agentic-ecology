@@ -871,6 +871,24 @@ comparator, calibration semantics, reconstruction route, or scientific
 status. Acceptance/commit packaging executes zero builders, nulls, PyGRC
 models, candidates, and controls; `P2-I2-CAL-GATE` remains closed.
 
+#### 3.2.13 I05 governed arithmetic-null execution projection
+
+After accepted I05B commit
+`c1f821dfd543d10d8555ddf2b52dbd56dfa76c13`, the project owner separately
+authorizes 10.4. The activity may add and commit only the exact launch record
+already required by the accepted wrapper, then consume the permanent claim and
+call the accepted I04R2 builder once. Infrastructure retries remain zero. The
+claim, final receipt, and governed output are retained even when the result is
+arithmetic-only and scientifically outcome-free.
+
+The output may assign only the preregistered analysis/serialization resolution
+and designated frozen metric-sheet fields. Reconstruction reads, parses,
+canonicalizes, and compares that retained output without another null builder
+call or response-envelope generation. No PyGRC model, candidate/control cell,
+runtime tolerance, response measurement, R01-R05 result, L02 support status, or
+mode ranking is authorized. Execution and deterministic validation return as
+`P2-I2-I05-EXECUTION-REVIEW-READY`; CAL-GATE remains closed until owner review.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

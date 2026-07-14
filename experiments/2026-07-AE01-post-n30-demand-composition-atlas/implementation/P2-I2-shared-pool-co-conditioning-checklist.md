@@ -2054,8 +2054,51 @@ exit = accepted committed I05B authority package; 10.4 remains blocked on a
 
 ### 10.4 Authorized arithmetic-null execution and metric-sheet freeze
 
-**Status:** authorized to begin only after the accepted I05B package commit;
-the exact launch record and committed clean launch HEAD precede the one shot.
+**Status:** active under the project owner's explicit post-commit direction to
+proceed with 10.4; no governed attempt has begun.
+
+```text
+activity_id = P2-I2-I05-ARITHMETIC-NULL-EXECUTION
+entry_authority = owner direction "after commit" to proceed with 10.4;
+                  accepted I05B authority commit
+                  c1f821dfd543d10d8555ddf2b52dbd56dfa76c13
+purpose = consume the single governed arithmetic-null permission, retain and
+          reconstruct its exact output, and freeze only the preregistered
+          analysis-arithmetic resolution fields
+launch_authority = exact P2-I2-I05-NULL-LAUNCH-AUTHORIZATION under DEC-030/
+                   CHG-023, committed before the attempt and bound by the
+                   accepted I05B wrapper/policy
+max_governed_attempts = 1
+max_infrastructure_retries = 0
+accepted_builder_invocations = 1
+null_reconstruction_generation_count = 0
+output_readback_reconstruction_count = 1
+candidate_or_control_invocations = 0
+PyGRC_model_instantiations = 0
+mutation_boundary = exact launch record/commit; governed attempt/final/output;
+                    deterministic readback validation; designated frozen
+                    metric-sheet fields; checklist/hypothesis/decision/report
+evidence_effect = arithmetic/serialization resolution only; no runtime
+                  tolerance, candidate/control evidence, R01-R05 assignment,
+                  L02 support/falsification, or mode selection/ranking
+exit = P2-I2-I05-EXECUTION-REVIEW-READY with CAL-GATE still closed pending
+       owner review of exact receipts, reconstruction, and metric-sheet freeze
+```
+
+- [x] Record DEC-030/CHG-023 and create the exact separate launch record bound
+  to accepted commit `c1f821d`, owner acceptance, authorization, wrapper,
+  policy, and unchanged I04R2 hashes.
+- [x] Validate the launch record without calling the accepted builder, null,
+  PyGRC, candidate, or control path; require absent claim/final/output.
+- [ ] Commit the exact launch authority and revalidate exact HEAD, clean
+  index/worktree, committed/local byte equality, interpreter, command, local
+  ext4 claim storage, and accepted I04R2 identities immediately before start.
+- [ ] Invoke the accepted one-shot wrapper exactly once; treat any post-claim
+  failure as consumed and perform no infrastructure retry.
+- [ ] Retain the permanent claim, final receipt, and governed output with the
+  required attempt/builder/generation/readback/consumption/refusal counts.
+- [ ] Reconstruct only from retained output and require byte identity; do not
+  invoke the builder or regenerate response envelopes during validation.
 
 - [ ] Execute only the frozen shared pure analysis-arithmetic matched-null
   structure.
@@ -2298,6 +2341,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-020` | Owner-supplied pre-acceptance review requiring genuine single-use consumption, committed-I05 binding, and readback-only reconstruction | `execution_safety_audit_before_authorization_acceptance` | Add zero-null-execution I05A audit; inspect existing mechanics without changing execution source; fail proposed DEC-027 closed if any safety item is absent | 3/8 passed with five blockers; no acceptance, commit, invocation, retry, source correction, CAL-GATE passage, or downstream authority | Exact I04R2/I05 candidate bytes, uncommitted/inactive status, one-attempt meaning, atomic-start duty, committed-authority binding, zero-generation reconstruction, graph read-only boundary | Complete and blocked; correction authorized separately under DEC-028/CHG-021 |
 | `P2-I2-CHG-021` | Explicit owner authorization of a bounded correction after I05A failed closed | `I05_owned_execution_safety_correction` | Add one governed wrapper, one one-shot policy, atomic permanent claim/final receipts, committed-HEAD/clean-state/interpreter/command binding, readback-only reconstruction accounting, and zero-null refusal tests | 10/10 tests and 12/12 checks pass; commit and null invocation unauthorized; CAL-GATE closed; returned for review | All accepted I04R2 scientific bytes and identities, candidate-free boundary, one-attempt/zero-retry limit, no self-referential commit hash, graph read-only boundary, no scientific result | Complete and owner-review-ready under DEC-028 |
 | `P2-I2-CHG-022` | Explicit owner acceptance of I05B and commit authorization, followed by direction to proceed to 10.4 after retention | `owner_acceptance_commit_and_launch_authority_split` | Retain exact machine acceptance with commit true/null launch false; require a separate committed 10.4 launch record; validate local ext4 non-temporary non-symlink claim storage and occupied-path refusal | 12/12 tests and 12/12 checks pass; accepted package committed; launch record/claim/output absent; CAL-GATE closed | I04R2 bytes, one attempt/zero retries, permanent claim, readback-only reconstruction, candidate-free/scientific quarantine | Complete under DEC-029; opens checklist/hypothesis-governed 10.4 only after commit |
+| `P2-I2-CHG-023` | Project-owner direction to proceed with 10.4 after accepted I05B commit `c1f821d` | `separate_single_null_launch_authority` | Record DEC-030; create and commit the exact launch record required by the accepted wrapper; execute one attempt with zero retries; retain/reconstruct output and freeze only arithmetic resolution | No action before launch commit; one governed builder call permitted only after clean exact-HEAD preflight; return for owner review before CAL-GATE | Accepted I05B/I04R2 bytes, immutable acceptance, candidate/PyGRC exclusion, one-shot claim, no scientific interpretation | Active in 10.4 |
 
 ## 19. Evidence ledger
 

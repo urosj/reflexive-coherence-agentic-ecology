@@ -64,6 +64,7 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-027` | Is the separately frozen I05 authorization candidate exact and bounded enough to accept and commit? | Proposed but blocked: I05A passed 3/8 safety checks and found five one-shot/commit-binding/receipt blockers | No active invocation authority; acceptance, commit, CAL-GATE, I06, and candidates remain closed | 2026-07-14 |
 | `P2-I2-DEC-028` | May the five I05A execution-safety blockers be corrected, and under what scope? | Owner-authorized: I05-owned mechanics only; I04R2 immutable; zero-null validation; return uncommitted | Opens I05B construction/tests only; commit, null invocation, CAL-GATE, I06, and candidates remain closed | 2026-07-14 |
 | `P2-I2-DEC-029` | Does the project owner accept I05B, and which authority is committed? | Accepted: commit the complete I05/I05A/I05B package with immutable acceptance; null launch remains separate | Authorizes package retention only; 10.4 launch requires its own exact record and committed HEAD | 2026-07-14 |
+| `P2-I2-DEC-030` | After the accepted I05B commit, may 10.4 consume the single arithmetic-null attempt? | Accepted: create and commit the exact separate launch record, then execute the one-shot with zero retries | Opens one I05 arithmetic-null attempt only; CAL-GATE and I06 remain pending review | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1819,13 +1820,41 @@ not committed together; the claim location becomes temporary, symlinked, or
 non-atomic; accepted I04R2 bytes drift; or any execution occurs before exact
 committed launch authority and clean preflight.
 
-## 32. Pending decision queue
+## 32. `P2-I2-DEC-030` — Single arithmetic-null launch authority
+
+**Status:** accepted by project owner after I05B commit
+
+**Decision:** The project owner's clarification “after commit that is”
+explicitly directs execution of 10.4 after accepted authority commit
+`c1f821dfd543d10d8555ddf2b52dbd56dfa76c13`. Create the exact separate machine
+launch record already frozen by the accepted I05B wrapper, commit that record
+together with this checklist/hypothesis/decision authority, and then invoke the
+one-shot wrapper exactly once against that clean launch HEAD.
+
+The launch retains one governed attempt, zero infrastructure retries, candidate
+authority false, unchanged I04R2 hashes, exact interpreter/command identity,
+local ext4 permanent claim storage, and the immutable owner-acceptance digest.
+The wrapper must atomically claim before the accepted builder and retain one
+claim, one final receipt, one governed output, zero reconstruction generations,
+one readback, and a refused second start. A post-claim failure consumes the
+attempt and cannot be retried.
+
+DEC-030 authorizes only the pure analysis-arithmetic matched null and subsequent
+readback/metric-freeze validation. It does not authorize PyGRC, candidate or
+control execution, runtime/measurement tolerance, R01-R05 assignment, L02
+support/falsification, mode ranking, CAL-GATE passage, or I06. The completed
+package returns as `P2-I2-I05-EXECUTION-REVIEW-READY` for owner review.
+
+Reopen DEC-030 only before claim if the launch record, accepted authority,
+clean HEAD, interpreter/command, filesystem, or immutable I04R2 identities fail
+preflight. After claim, retain failure and do not reopen authority for a retry.
+
+## 33. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Candidate-blind matched-null delta and frozen metric sheet | I05 execution | Valid separately frozen one-invocation authorization |
 | Exact three-mode implementation and registration bundle | I06 | Frozen calibration |
 | Candidate cycle authorization | I07 | Passed registration |
 | Terminal classification and next move | I11 | Resolved controls and reconstruction |
