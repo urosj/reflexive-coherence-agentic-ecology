@@ -43,10 +43,13 @@ graph surfaces, and proposed graph discriminators.
   136/136, byte-reconstructed implementation conformance are owner-accepted
   for progression. I03B's `minimally_producer_assisted` history-carried design
   and quarantined 252/252, byte-reconstructed conformance passed the zero-
-  runtime I03BR1 closeout revalidation (21/21 checks, zero blockers) and remain
-  scientifically outcome-free. I03B is acceptance-ready but not owner-
-  accepted; I03C remains unauthorized pending owner disposition, and the
-  umbrella discriminator gate remains open. Under
+  runtime I03BR1 closeout revalidation (21/21 checks, zero blockers), were
+  owner-accepted for staged progression, and remain scientifically outcome-
+  free. I03C now freezes a `minimally_producer_assisted` hybrid design with
+  native P, active H_P/M_H, and one native `[P,M_H]` joint response read;
+  static validation and quarantined 258/258 byte-reconstructed bounded runtime
+  conformance passed. I03C is review-ready and scientifically outcome-free.
+  The umbrella discriminator gate remains open pending owner review. Under
   owner-accepted `P2-I2-DEC-011`, all three profiles remain in the downstream
   program and realization selection occurs separately within each mode. Their local IDs
   do not extend the closed Phase 1 hypothesis registry or schema vocabulary.

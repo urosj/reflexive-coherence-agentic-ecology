@@ -1,16 +1,16 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
 **Status:** active; staged `P2-I2-I03`; I03A/I03AR1 state-carried package is
-owner-accepted for progression and I03B history-carried design/runtime
-conformance passed I03BR1 closeout revalidation; owner acceptance is required
-before I03C
+owner-accepted for progression, I03B/I03BR1 is owner-accepted for staged
+progression, and I03C hybrid passed 258/258 byte-reconstructed runtime
+conformance; I03CR1 passed its 26/26, 17/17 zero-runtime closeout revalidation
+with zero blockers and awaits owner acceptance; I04 remains unauthorized
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I03BR1` complete and awaiting owner
-disposition; I03C/I04 unauthorized
+**Current activity iteration:** `P2-I2-I03CR1`; I04 unauthorized
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -105,7 +105,7 @@ Rules:
 | `P2-I2-BRIEF-GATE` | L02 semantic center, D-039 delta, dependence modes, causal factorization, controls, timing, and claim ceiling accepted | Passed after mode-family scope clarification | Owner acceptance dated 2026-07-14; `P2-I2-DEC-001`; owner-accepted three-mode retention correction `P2-I2-DEC-011`; accepted brief |
 | `P2-I2-SOURCE-AUDIT-GATE` | Source-current public PyGRC capability audit completed under one frozen audit scope | Passed after revalidation | I01R1 quarantines the custom probe, corrects CAP-04, and revalidates all claims from admissible evidence |
 | `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Passed after I02R2 revalidation | Updated revision `83e3a300426631ee4df71b661b67d4fcfdfed594`, 31 sources/callables, persisted reset baseline, v1/v2 provider boundary, legacy fail-closed policy, and `P2-I2-DEC-009` |
-| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | In progress; 8A-R1 accepted for progression, 8B passed closeout revalidation | Owner acceptance of I03B remains; I03C/I04 unauthorized |
+| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | In progress; 8A-R1 and 8B accepted for progression; 8C-R1 closeout passed | I03C owner acceptance and separate umbrella family closeout remain; I04 unauthorized |
 | `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Blocked | Requires `DISCRIMINATOR-GATE` |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Blocked | Requires `CAL-PRE-GATE` |
 | `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Blocked | Requires `CAL-GATE` |
@@ -172,9 +172,10 @@ Rules:
 | `P2-I2-I03` | Staged realization, discriminator, dependence-mode, and operational-hypothesis program | I01R1–I02R2 plus owner staging direction | In progress through I03A–I03C | `P2-I2-DISCRIMINATOR-GATE` only after all three reviewed mode freezes, or retained earlier-stop route |
 | `P2-I2-I03A` | 8A state-carried realization and operational-hypothesis freeze | I02R2 plus owner staging direction | Causal design accepted as I03AR1 baseline; runtime adequacy unassigned | `P2-I2-I03A-REVIEW-READY`; opened only I03AR1 under DEC-012 |
 | `P2-I2-I03AR1` | 8A-R1 quarantined state-carried realization runtime conformance | Owner acceptance of stronger conformance path after I03A review | Owner accepted for progression on 2026-07-14; scientific effect remains none | Opens I03B only under its own declaration/freeze; does not open I03C/I04 |
-| `P2-I2-I03B` | 8B history-carried realization, operational-hypothesis freeze, and bounded runtime conformance | Owner acceptance/progression direction after I03AR1 | Review-ready; minimally producer-assisted design and 252/252 runtime conformance reconstructed byte-identically | Owner review required; does not open I03C automatically |
-| `P2-I2-I03BR1` | I03B closeout revalidation of latest-contact dataflow, active-history identity, producer minimality, lifecycle, restoration, and quarantine | I03B plus owner-supplied validation review | Complete; 21/21 checks passed, including six with downstream obligations and zero blockers | `P2-I2-I03BR1-CLOSEOUT-PASSED`; I03B acceptance-ready but I03C/I04 remain closed |
-| `P2-I2-I03C` | 8C hybrid realization and operational-hypothesis freeze | Owner review/acceptance of I03B | Pending; not authorized | Completes staged I03 package only after owner review |
+| `P2-I2-I03B` | 8B history-carried realization, operational-hypothesis freeze, and bounded runtime conformance | Owner acceptance/progression direction after I03AR1 | Owner accepted for staged progression on 2026-07-14; minimally producer-assisted design and 252/252 runtime conformance retained | Opens I03C only under DEC-015; no scientific or I04 effect |
+| `P2-I2-I03BR1` | I03B closeout revalidation of latest-contact dataflow, active-history identity, producer minimality, lifecycle, restoration, and quarantine | I03B plus owner-supplied validation review | Complete and owner accepted for progression; 21/21 checks, six downstream obligations, zero blockers | `P2-I2-I03BR1-CLOSEOUT-PASSED`; obligations retained for I04/I06 |
+| `P2-I2-I03C` | 8C hybrid realization, operational-hypothesis freeze, and bounded runtime conformance | Owner acceptance of I03B/I03BR1 under DEC-015 | Review-ready; minimally producer-assisted design and 258/258 byte-reconstructed runtime conformance retained | Owner review; no automatic discriminator-gate or I04 pass |
+| `P2-I2-I03CR1` | 8C-R1 zero-runtime hybrid causal-well-formedness and acceptance closeout revalidation | I03C plus owner-supplied twenty-six-point/seventeen-condition review | Passed 26/26 review checks and 17/17 acceptance conditions with zero blockers; owner acceptance pending | `P2-I2-I03CR1-CLOSEOUT-PASSED`; no automatic umbrella/I04 effect |
 | `P2-I2-I04` | Three-mode calibration preregistration construction | Completed, reviewed I03A–I03C program | Blocked | `P2-I2-CAL-PRE-GATE` |
 | `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze under the preregistered shared/mode-specific rule | I04 | Blocked | `P2-I2-CAL-GATE` |
 | `P2-I2-I06` | Exact three-mode implementation registration and evidence-bundle construction | I05 | Blocked | `P2-I2-REG-GATE` |
@@ -993,9 +994,10 @@ guards, and scientific-evidence quarantine. It does not authorize I03B.
 
 ### 8B. `P2-I2-I03B` — History-carried realization freeze
 
-**Status:** review-ready. The causal design and exact runtime sub-freeze were
-retained before execution; bounded conformance passed and reconstructed byte-
-identically. I03C/I04 remain unauthorized pending owner review.
+**Status:** owner-accepted for staged progression under `P2-I2-DEC-015`. The
+causal design and exact runtime sub-freeze were retained before execution;
+bounded conformance passed and reconstructed byte-identically. I03C is open
+under its own freeze; I04 remains unauthorized.
 
 #### 8B.1 Activity declaration — 2026-07-14
 
@@ -1238,10 +1240,219 @@ decision may authorize I03C only; I04 remains blocked.
 
 ### 8C. `P2-I2-I03C` — Hybrid realization freeze
 
-**Status:** pending and unauthorized until owner review/acceptance of I03B.
+**Status:** review-ready under `P2-I2-DEC-016`; design/static validation and
+the separately frozen 258/258 byte-reconstructed runtime conformance passed.
+No hybrid source comparison, design selection, or runtime operation preceded
+this declaration/freeze sequence. I04 remains unauthorized.
 
-I03C must receive its own checklist declaration and input freeze. No hybrid
-surface comparison or binding occurs during I03A or I03B.
+#### 8C.1 Activity declaration — 2026-07-14
+
+```text
+iteration_id = P2-I2-I03C
+purpose = independently select and freeze the hybrid realization, separable
+          state/history factorization, interventions, private/access guards,
+          restoration ownership, and operational-hypothesis profile; then
+          determine bounded runtime conformance under a second freeze
+entry_authority = owner acceptance of I03B/I03BR1 for staged progression and
+                  explicit direction that 8C is next; DEC-011, DEC-012, and
+                  DEC-015; admitted PyGRC revision
+                  83e3a300426631ee4df71b661b67d4fcfdfed594
+frozen_inputs_or_input_freeze_action = first retain an I03C design/source-
+          comparison freeze; compare native, minimally producer-assisted, and
+          missing-prerequisite dispositions within hybrid mode; only then may
+          a separate exact runtime-conformance freeze authorize one bounded run
+mutation_and_repository_boundary = RCAE I03C contracts, adapter/harness if
+          selected, reports, decisions, checklist, hypotheses, and navigation
+          only; graph/PyGRC read-only; I03A/I03B artifacts immutable
+required_outputs = immutable design input freeze; native-first source/dataflow
+          comparison; hybrid realization and operational-hypothesis contract;
+          static validation; if realizable, immutable runtime input freeze,
+          deterministic harness, runtime receipt, raw conformance record,
+          byte reconstruction, narrative report, and owner-review stop
+evidence_effect = hybrid causal-design authority plus quarantined realization
+          implementation-conformance only; no calibration, L02 support/
+          falsification, control result, boundary rung, mode ranking, or
+          terminal effect
+exit_gate = P2-I2-I03C-REVIEW-READY or reviewed hybrid missing-prerequisite/
+            inadequate stop; never automatic discriminator-gate or I04 pass
+```
+
+- [x] Record I03C in the checklist before hybrid source comparison, design
+  selection, harness construction, or runtime execution.
+- [x] Project I03C's active/unbound and no-scientific-evidence status into the
+  operational hypotheses before design work.
+- [x] Retain and validate an I03C design input freeze before comparing hybrid
+  realization candidates.
+- [x] Import I03A and I03B only as fixed earlier-mode causal/governance
+  boundaries; prohibit their fixture observations from selecting I03C values,
+  response, factorization, or realization class.
+- [x] Define a genuinely hybrid factorization with separately identified
+  state and active-history causal components, one joint response read, and no
+  relabeling of either earlier mode as hybrid.
+- [x] Freeze independent history-only, state-only, joint, write-diversion,
+  label-invariance, private-partition, and alternate-access interventions that
+  distinguish hybrid dependence from state-only or history-only shortcuts.
+- [x] Apply native-first selection within `hybrid`: use admitted native
+  machinery where adequate, otherwise the minimal explicit RCAE producer, or
+  retain a missing-prerequisite disposition.
+- [x] Freeze exact ownership and permitted/forbidden inputs for native state,
+  active history, readout/materialization, joint V, audit lineage, adapter or
+  producer, and later native response.
+- [x] Preserve all seven logical cells, five L02 controls, and OP-01..OP-09
+  without rewriting the accepted state-carried or history-carried profiles.
+- [x] Freeze composite current/reset identity and paired continuation duties
+  for every external state component; retain all I03BR1 admission,
+  restoration, lifecycle, branch-identity, and quarantine obligations.
+- [x] Retain a machine contract, static validator/result, narrative design
+  report, and decision disposition before any hybrid runtime call.
+- [x] If realizable, retain and validate a separate exact runtime fixture,
+  assertions, import/source identities, one evidence invocation, one
+  reconstruction invocation, zero retries, and full scientific quarantine.
+- [x] Exercise only the frozen hybrid causal path, independent interventions,
+  guards, paired restoration/reset, and equal-input continuation boundaries.
+- [x] Reconstruct byte-for-byte and stop for owner review without beginning
+  I04 or passing the umbrella discriminator gate.
+
+Exit state `P2-I2-I03C-REVIEW-READY` is satisfied by the immutable design and
+runtime freezes, passed static validation, one `258/258` evidence invocation,
+one `258/258` byte-identical reconstruction, complete P-only/H-only joint-path
+guards, paired save/load/reset and equal-input continuation, clean graph
+guards, and scientific quarantine. Runtime SHA-256:
+`217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c`.
+This does not pass the umbrella discriminator gate or authorize I04.
+
+No hybrid surface comparison or binding occurred during I03A, I03B, or
+I03BR1. I03C may cite those artifacts only as immutable prior-mode and
+governance boundaries.
+
+### 8C-R1. `P2-I2-I03CR1` — Hybrid closeout revalidation
+
+**Status:** `P2-I2-I03CR1-CLOSEOUT-PASSED`; 26/26 review checks and 17/17
+acceptance conditions passed with zero blockers. Eight fail-closed downstream
+obligations are retained. I03C is acceptance-ready but not owner-accepted by
+this audit; the umbrella closeout and I04 remain unauthorized.
+
+#### 8C-R1.1 Activity declaration — 2026-07-14
+
+```text
+iteration_id = P2-I2-I03CR1
+purpose = revalidate the bounded hybrid package against the exact twenty-six
+          review areas and seventeen acceptance conditions; retain explicit
+          carrier/authority/factorial/admission/neutral-contact/restoration/
+          lifecycle/quarantine meanings and classify every non-blocking
+          registration duty without rewriting or rerunning I03C
+entry_authority = owner-supplied review at attachment SHA-256
+                  df1e823f2ff640713638b2b08266de45b99c5410bdd880f4380e75016e7a0298;
+                  DEC-011, DEC-012, DEC-015, DEC-016; exact retained I03C hashes
+frozen_inputs_or_input_freeze_action = retain an immutable I03CR1 input that
+          binds the review digest, I03C artifacts/source identities, all audit
+          questions, zero-runtime policy, and direct-pass/clarification/
+          downstream-obligation/blocker classification rules before audit
+mutation_and_repository_boundary = RCAE I03CR1 freeze, static validator,
+          closeout result/report, checklist, hypotheses, decision/change
+          records, and a machine quarantine/obligation registry only; no I03C
+          artifact rewrite; graph/PyGRC read-only
+required_outputs = exact review input freeze; machine-readable hybrid carrier,
+          qualitative 2x2, admission exclusion, layered identity, lifecycle,
+          and fixture-quarantine registry; static validator/result; closeout
+          report; explicit blocker count and next-authority boundary
+runtime_budget = zero model instantiations, zero candidate/control/conformance
+          branches, zero reruns, zero reconstructions, zero parameter search
+evidence_effect = retained-artifact causal-well-formedness and acceptance
+          validation only; no new implementation or scientific evidence
+exit_gate = P2-I2-I03CR1-CLOSEOUT-PASSED with owner acceptance still pending,
+            or explicit retained blocker; never automatic umbrella/I04 pass
+```
+
+- [x] Record I03CR1 and its zero-runtime boundary before auditing the review.
+- [x] Project the active closeout review and no-I04 effect into the operational
+  hypotheses before audit.
+- [x] Freeze the exact review digest, retained I03C artifact identities,
+  twenty-six review areas, seventeen acceptance tests, and classification
+  rules before source/evidence inspection.
+- [x] Establish one stable hybrid carrier identity over P, authoritative H_P,
+  M_H output-port binding, `[P,M_H]/[B_ref]` access, V, and separate L; reject
+  P/H_P/M_H/mask/adapter/feedback-row substitutions.
+- [x] Retain the bounded architectural distinction between native current-
+  state response mechanics and independently persistent/intervenable H_P;
+  explicitly reject irreducible-history or non-Markovian overclaim.
+- [x] Verify P and H_P each enter the same native V independently, neither is
+  encoded in the other, and both intervention chains preserve held-fixed
+  components rather than acting through scheduler/contact/configuration side
+  effects.
+- [x] Freeze the complete qualitative P reference/candidate × H reference/
+  candidate 2x2 for I04/I06 without importing fixture values or requiring all
+  four cells to have been executed during conformance.
+- [x] Retain raw P, R_H/M_H, native joint score/polarity, schedule decision, and
+  later continuation; prohibit threshold crossing from defining hybrid and
+  prohibit nonlinear interaction/synergy/irreducibility claims.
+- [x] Prove from exact filter/dataflow identities that only registered
+  physical S-role-to-common-P arrivals are admissible exactly once and that
+  materialization, neutral contact, debit, response, feedback, reset/load,
+  private, and diversion traffic cannot self-admit.
+- [x] Resolve unique-route adequacy for the conformance fixture and retain the
+  I06 explicit route/channel-key duty without using arbitrary labels or row/
+  packet/event digests as causal authorization.
+- [x] Validate the neutral contact's common configuration, final relative
+  position, causal neutrality, admission exclusion, empty-queue boundary,
+  latest-row role, and null digest requirement; classify absolute audit time/
+  digest differences only after proving they do not enter score/threshold.
+- [x] Validate exact-once distinct P/M_H masks, fixed B_ref, no aliases/extra
+  nodes, live-state rather than stale-cache reads, order-insensitive native
+  summation, and private-pair-only masks.
+- [x] Retain one common P/H_P/M_H pool binding and verify private native nodes,
+  adapters, cursors, baselines, masks, and no-dispatch/no-cross-pair guards;
+  carry exact cross-load rejection into I06 if not executable in conformance.
+- [x] Retain a complete layered identity over native v2, adapter current/reset,
+  code/schema/filter/readout, joint/private bindings, masks, neutral/intervention
+  policy, fixture/freeze, snapshot manifest, and evidence identities; distinguish
+  demonstrated composite equality from the still-deferred registered atomic
+  load/reset interface.
+- [x] Verify H_P is authoritative, M_H must equal registered R_H(H_P) before V,
+  and disagreement fails closed; cover pre-response, clamp/order, save/load,
+  reset, and equal-input continuation boundaries.
+- [x] Classify history length/overflow/window/truncation/saturation/leakage/
+  clamp/reset/maintenance and P/M_H bounds as implemented, fixture-bounded,
+  deferred, not applicable, or construction debt with rationale.
+- [x] Audit all nine OPs for hybrid-specific meanings without rewriting I03A
+  or I03B and without assigning R01-R05.
+- [x] Retain a machine rejection registry for every I03A/I03B/I03C fixture
+  coefficient, amount, threshold, topology/branch identity, observation,
+  comparator, assertion result, and evidence digest; require later I04/I06
+  validators to reject direct or trivial serialized reuse.
+- [x] Verify 258/258 remains machine-classified as implementation conformance
+  only, all three modes remain retained/unranked, and owner acceptance can open
+  only a separately declared umbrella I03 family closeout—not I04 directly.
+- [x] Produce a direct-pass/clarification/downstream-obligation/blocker matrix,
+  run zero-runtime validation, and stop for owner review without opening the
+  umbrella gate or I04.
+
+#### 8C-R1.2 Closeout disposition — 2026-07-14
+
+The immutable input and machine registry validated all twenty-six review areas
+and all seventeen acceptance conditions. Classification counts are seventeen
+direct passes, four closure clarifications, five downstream-obligation passes,
+and zero blockers. The audit instantiated no model, ran no retained branch,
+and left the single I03C evidence invocation and single reconstruction
+unchanged.
+
+The closeout explicitly records three bounded qualifications: I03C did not
+execute the complete future scientific 2x2; restoration authority is a
+layered package rather than one new native atomic API; and neutral-contact
+absolute scheduler slots differ after explicit intervention operations even
+though those slots do not enter the native score or threshold. Eight exact
+fail-closed I04/I06/family-closeout obligations retain the corresponding
+future work.
+
+Exit state `P2-I2-I03CR1-CLOSEOUT-PASSED` is satisfied by the
+[input freeze](../contracts/p2-i2/i03cr1-closeout-revalidation-input.json),
+[hybrid closeout registry](../contracts/p2-i2/i03cr1-hybrid-closeout-registry.json),
+[machine revalidation](../contracts/p2-i2/i03cr1-closeout-revalidation.json),
+[validator](../scripts/p2_i2_i03cr1_validate.py), and
+[closeout report](../reports/P2-I2-I03CR1-hybrid-closeout-revalidation.md).
+This makes I03C acceptance-ready only. Owner acceptance may authorize a new
+checklist-first umbrella I03 family closeout; it may not authorize I04
+directly.
 
 ### 8.1 Umbrella I03 exit boundary
 
@@ -1470,10 +1681,10 @@ valid terminal classification + reconstructed evidence
 | `L02-Q00` | Which public PyGRC surfaces could carry one pool? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: node coherence + native packet contribution + feedback response composition candidate |
 | `L02-Q01` | Is any native surface adequate to the L02 discriminator? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: composition-capable native surfaces exist; complete realization adequacy is not assigned and control gaps remain |
 | `L02-Q02` | Which graph sources and restoration provider are admitted? | I02/I02R1/I02R2 | Decided after reset revalidation | `P2-I2-DEC-009`: updated checkout-bound identities admitted; v1 current-only and v2 reset-aware providers available but unselected; legacy rebase provenance remains external; P2-I1 projection historical-only |
-| `L02-Q03` | Which realization class is selected for each staged mode? | I03A/I03AR1, then I03B, then I03C | State-carried owner-accepted; history-carried acceptance-ready after I03BR1; hybrid unauthorized | DEC-010/DEC-012: state-carried `pygrc_native_candidate`; DEC-014: history-carried `minimally_producer_assisted`; both passed bounded implementation conformance and I03B passed closeout revalidation |
-| `L02-Q04` | Which dependence-mode profiles are required, and in what order? | I03 | Decided; I03A/I03B bound | DEC-011: retain all three through execution; 8A `state_carried`, review, 8B `history_carried`, review, 8C `hybrid`, review; realization selection occurs within modes |
-| `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 concept; I06 exact | I03A/I03B concepts bound | I03A binds native P/U/L/V; I03B binds external H_P, native M_H response port, minimal adapter, and common one-node access; exact IDs remain I06 |
-| `L02-Q06` | What contribution and mixing rule constitutes common state or active history? | I03 concept; I04/I06 exact | I03A/I03B concepts bound | I03A uses additive P coherence; I03B uses ordered source-label-free physical tokens and a deterministic left-fold readout; scientific amounts/parameters remain pending |
+| `L02-Q03` | Which realization class is selected for each staged mode? | I03A/I03AR1, then I03B, then I03C | All three design classes selected and runtime-conformant; I03CR1 closeout passed and I03C owner acceptance is pending | DEC-010/DEC-012: state-carried `pygrc_native_candidate`; DEC-014: history-carried `minimally_producer_assisted`; DEC-016/DEC-017: hybrid `minimally_producer_assisted`; all passed bounded implementation conformance |
+| `L02-Q04` | Which dependence-mode profiles are required, and in what order? | I03 | Decided; all three design-bound | DEC-011: retain all three through execution; 8A `state_carried`, review, 8B `history_carried`, review, 8C `hybrid`, review; realization selection occurs within modes |
+| `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 concept; I06 exact | All three concepts bound | I03A binds native P/U/L/V; I03B binds external H_P and native M_H one-component response; I03C binds native P plus active H_P through one native `[P,M_H]` joint read; exact IDs remain I06 |
+| `L02-Q06` | What contribution and mixing rule constitutes common state or active history? | I03 concept; I04/I06 exact | All three concepts bound | I03A uses additive P coherence; I03B uses ordered source-label-free tokens/readout; I03C advances both native P and the separately causal ordered history from the same physical contributions; scientific amounts/parameters remain pending |
 | `L02-Q07` | Which one later response is primary? | I04 | Open | Discriminator gate required |
 | `L02-Q08` | Which nearest insufficient-repetition comparator owns the margin? | I04 | Open | Discriminator gate required |
 | `L02-Q09` | What matched null and resolution freeze `delta`? | I04–I05 | Open | Calibration only |
@@ -1532,7 +1743,9 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-008` | I03A owner clarification after static design validation and before I03A acceptance | `owner_accepted_mode_family_scope_correction` | Correct singular mode-selection language: retain and test all three profiles through I04–I11; select native/producer/missing-prerequisite disposition within each mode; preserve one lane terminal classification with separate mode dispositions | Brief gate remains passed under DEC-011; revalidate affected I03A cross-artifact invariants; no I03B/I04 authorization and no runtime/scientific rerun | Frozen Phase 1 L02 authority, seven cells, five controls, OP-01..OP-09, I03A causal meaning, native-first rule, original I03A entry freeze, graph read-only boundary | Complete; owner accepted 2026-07-14 |
 | `P2-I2-CHG-009` | Owner acceptance of the stronger runtime-conformance path after I03A review | `owner_accepted_precalibration_realization_conformance_scope` | Add 8A-R1 before I03B; require bounded runtime conformance inside later I03B/I03C mode freezes; distinguish conformance from I04–I08 scientific work; preserve original I03A freeze | I03AR1 active only after its own freeze; I03B/I03C/I04 remain unauthorized; failure reopens realization adequacy rather than assigning an L02 result | Accepted I03A causal meaning, all three retained modes, scientific calibration/registration/execution sequence, no-tuning rule, claim ceiling, graph read-only boundary | I03AR1 portion complete and review-ready; continues to govern I03B/I03C |
 | `P2-I2-CHG-010` | First frozen I03AR1 evidence invocation stopped before output on strict equality between derived `0.09999999999999998` and literal `0.1` | `infrastructure_assertion_representation_correction` | Add I03AR1R1; freeze absolute tolerance `1e-12` and relative tolerance `0` for derived response-delta comparisons only; issue new harness/freeze identities | Original invocation permanently invalid with no output/evidence; one replacement evidence invocation plus one reconstruction may run only after revised-freeze validation | All fixture values, branches, native calls, causal assertions, source/import identities, quarantine, no-search rule, graph read-only boundary | Complete; replacement 136/136 and reconstruction byte-identical |
-| `P2-I2-CHG-011` | I03BR1 owner-supplied twenty-one-point acceptance review | `closure_only_retention_fix` | Add a frozen zero-runtime closeout audit; retain latest-contact exclusion, functional H_P/M_H identity, exact lifecycle, layered restoration, mechanical quarantine rejection set, and six downstream obligations | No runtime rerun and no I03B artifact rewrite; 21/21 checks passed with zero blockers; I03B acceptance-ready but I03C/I04 remain unauthorized | Exact I03B hashes and invocation accounting, minimally producer-assisted class, I03A independence, no scientific evidence, graph read-only boundary | Complete pending owner progression decision |
+| `P2-I2-CHG-011` | I03BR1 owner-supplied twenty-one-point acceptance review | `closure_only_retention_fix` | Add a frozen zero-runtime closeout audit; retain latest-contact exclusion, functional H_P/M_H identity, exact lifecycle, layered restoration, mechanical quarantine rejection set, and six downstream obligations | No runtime rerun and no I03B artifact rewrite; 21/21 checks passed with zero blockers; later DEC-015 opened only I03C and kept I04 blocked | Exact I03B hashes and invocation accounting, minimally producer-assisted class, I03A independence, no scientific evidence, graph read-only boundary | Complete; owner accepted for progression under DEC-015 |
+| `P2-I2-CHG-012` | Owner progression acceptance of I03B/I03BR1 and direction that 8C is next | `owner_accepted_staged_progression_and_hybrid_entry` | Accept I03B for progression only; open checklist/hypothesis-first I03C; freeze native-first hybrid selection as native P plus active H_P/M_H under one native joint feedback read | No I03B rewrite or mode ranking; separate runtime freeze passed 258/258 and byte reconstruction; I04 and the umbrella gate remain blocked | Three retained modes, I03A/I03B identities, six I03BR1 duties, no fixture-value reuse, graph read-only and scientific quarantine boundaries | I03C review-ready pending owner disposition |
+| `P2-I2-CHG-013` | I03CR1 owner-supplied twenty-six-area/seventeen-condition hybrid acceptance review | `closure_only_retention_fix_and_acceptance_revalidation` | Add a frozen zero-runtime audit; retain exact composite-carrier authority, qualitative 2x2, admission/self-feedback exclusions, neutral-contact qualification, layered identity, lifecycle classifications, and complete fixture-quarantine registry | No I03C artifact rewrite or runtime rerun; 26/26 review checks and 17/17 acceptance conditions passed with zero blockers; eight downstream obligations retained; umbrella gate and I04 remain blocked | Exact I03C hashes/invocation accounting, minimally producer-assisted class, three unranked modes, scientific quarantine, graph read-only boundary | Complete; owner acceptance pending |
 
 ## 19. Evidence ledger
 
@@ -1541,7 +1754,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B | Cumulative decision record, DEC-001 through DEC-014 | Decision authority only | Retained |
+| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B/I03C/I03CR1 | Cumulative decision record, DEC-001 through DEC-017 | Decision authority only | Retained |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
 | `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
@@ -1571,7 +1784,17 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I03B-CONFORMANCE` | I03B | [Raw conformance record and embedded runtime receipt](../contracts/p2-i2/i03b-history-carried-runtime-conformance.json) | Quarantined realization implementation-conformance only; 252/252; no calibration or L02 result | Retained pending owner review |
 | `P2-I2-I03B-RECONSTRUCTION` | I03B | [Byte-reconstruction receipt](../contracts/p2-i2/i03b-runtime-reconstruction-receipt.json) | Invocation provenance, paired restoration witness, and byte reconstructibility only | Retained pending owner review |
 | `P2-I2-I03BR1-FREEZE` | I03BR1 | [Closeout-revalidation input freeze](../contracts/p2-i2/i03br1-closeout-revalidation-input.json) and `P2-I2-CHG-011` | Exact owner-review scope and zero-runtime audit authority only | Retained |
-| `P2-I2-I03BR1-VALIDATION` | I03BR1 | [Machine revalidation](../contracts/p2-i2/i03br1-closeout-revalidation.json), [validator](../scripts/p2_i2_i03br1_validate.py), and [closeout report](../reports/P2-I2-I03BR1-history-carried-closeout-revalidation.md) | Source/dataflow and retained-artifact acceptance validation only; 21/21, zero blockers, no scientific effect | Retained pending owner acceptance |
+| `P2-I2-I03BR1-VALIDATION` | I03BR1 | [Machine revalidation](../contracts/p2-i2/i03br1-closeout-revalidation.json), [validator](../scripts/p2_i2_i03br1_validate.py), and [closeout report](../reports/P2-I2-I03BR1-history-carried-closeout-revalidation.md) | Source/dataflow and retained-artifact acceptance validation only; 21/21, zero blockers, no scientific effect | Retained; owner accepted for progression under DEC-015 |
+| `P2-I2-I03C-DESIGN-FREEZE` | I03C | [Hybrid design input freeze](../contracts/p2-i2/i03c-hybrid-realization-freeze-input.json) and `P2-I2-CHG-012` | Exact native-first comparison, cross-mode guard, and no-runtime design authority only | Retained |
+| `P2-I2-I03C-DESIGN` | I03C | [Hybrid realization contract](../contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json), [design report](../reports/P2-I2-I03C-hybrid-realization-and-operational-hypothesis-freeze.md), and `P2-I2-DEC-016` | Minimally producer-assisted hybrid causal-design authority only; no scientific evidence | Retained pending owner review |
+| `P2-I2-I03C-VALIDATION` | I03C | [Static machine validation](../contracts/p2-i2/i03c-hybrid-realization-validation.json) and [validator](../scripts/p2_i2_i03c_validate.py) | Authority/source-dataflow/producer/restoration integrity only; no model or scientific execution | Retained |
+| `P2-I2-I03C-ENVIRONMENT` | I03C | [RCAE `.venv` and admitted-import receipt](../contracts/p2-i2/i03c-environment-receipt.json) | Environment/import identity only; no model or runtime evidence | Retained |
+| `P2-I2-I03C-RUNTIME-FREEZE` | I03C | [Immutable hybrid runtime-conformance freeze](../contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json) | Exact fresh-value twelve-branch fixture, invocation, source/import, and quarantine authority only | Retained |
+| `P2-I2-I03C-CONFORMANCE` | I03C | [Raw conformance record and embedded runtime receipt](../contracts/p2-i2/i03c-hybrid-runtime-conformance.json) | Quarantined realization implementation-conformance only; 258/258; no calibration or L02 result | Retained pending owner review |
+| `P2-I2-I03C-RECONSTRUCTION` | I03C | [Byte-reconstruction receipt](../contracts/p2-i2/i03c-runtime-reconstruction-receipt.json) | Invocation provenance, paired restoration witness, and byte reconstructibility only | Retained pending owner review |
+| `P2-I2-I03CR1-FREEZE` | I03CR1 | [Closeout-revalidation input freeze](../contracts/p2-i2/i03cr1-closeout-revalidation-input.json) and `P2-I2-CHG-013` | Exact owner-review scope, immutable I03C identities, classification rules, and zero-runtime authority only | Retained |
+| `P2-I2-I03CR1-REGISTRY` | I03CR1 | [Hybrid closeout registry](../contracts/p2-i2/i03cr1-hybrid-closeout-registry.json) | Machine carrier/factorial/admission/identity/lifecycle/quarantine authority plus eight fail-closed downstream obligations | Retained |
+| `P2-I2-I03CR1-VALIDATION` | I03CR1 | [Machine revalidation](../contracts/p2-i2/i03cr1-closeout-revalidation.json), [validator](../scripts/p2_i2_i03cr1_validate.py), and [closeout report](../reports/P2-I2-I03CR1-hybrid-closeout-revalidation.md) | Zero-runtime source/dataflow and retained-artifact acceptance validation only; 26/26 and 17/17 with zero blockers; no scientific effect | Retained pending owner acceptance |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

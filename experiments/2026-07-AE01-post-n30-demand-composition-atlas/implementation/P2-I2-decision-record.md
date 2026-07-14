@@ -49,6 +49,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-012` | May each I03 mode receive bounded runtime conformance before calibration, and what evidence boundary applies? | Accepted by project owner: I03AR1 now, then design-first conformance inside I03B/I03C | Authorizes only freeze-governed realization conformance; no I04–I08 or scientific authority | 2026-07-14 |
 | `P2-I2-DEC-013` | Does the review-ready I03A/I03AR1 package satisfy the progression boundary, and may 8B begin? | Accepted by project owner: move to 8B next | Opens design-first I03B only; I03C/I04 and scientific authority remain closed | 2026-07-14 |
 | `P2-I2-DEC-014` | Which history-carried realization and producer boundary should I03B freeze before runtime conformance? | Design-frozen minimally producer-assisted adapter; bounded runtime conformance and I03BR1 closeout revalidation passed; owner acceptance remains pending | I03B acceptance-ready; I03C/I04 remain closed | 2026-07-14 |
+| `P2-I2-DEC-015` | Does I03B/I03BR1 satisfy the staged-progression boundary, and may 8C begin? | Accepted by project owner: 8C is next; retain I03B as minimally producer-assisted implementation evidence only | Opens design-first I03C under a new freeze; I04 and scientific authority remain closed | 2026-07-14 |
+| `P2-I2-DEC-016` | Which hybrid realization, separable components, joint response, and producer boundary should I03C freeze before runtime conformance? | Minimally producer-assisted hybrid frozen; static validation and 258/258 byte-reconstructed bounded runtime conformance passed; owner review pending | I03C review-ready; umbrella gate and I04 remain closed | 2026-07-14 |
+| `P2-I2-DEC-017` | Does I03C satisfy the owner-supplied causal-well-formedness and acceptance closeout checks, and what may follow? | I03CR1 audit passed 26/26 review checks and 17/17 acceptance conditions with zero blockers and eight downstream obligations; owner acceptance pending | I03C acceptance-ready only; no automatic umbrella closeout or I04 authority | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1239,14 +1242,144 @@ be a new decision after DEC-014 that opens I03C only, retains
 `minimally_producer_assisted`, leaves history-carried scientific status
 unresolved, and keeps I04 blocked.
 
-## 17. Pending decision queue
+## 17. `P2-I2-DEC-015` — I03B progression acceptance and I03C entry
+
+**Status:** accepted by the project owner
+
+**Question:** Does the I03B/I03BR1 package satisfy the staged-progression
+boundary, and may I03C/8C begin?
+
+**Decision:** Yes. The project owner's direction that 8C is next:
+
+- accepts the I03B causal design for staged progression;
+- accepts the 252/252, byte-reconstructed runtime result as implementation-
+  conformance evidence only;
+- accepts the I03BR1 21/21 zero-blocker closeout and carries its six downstream
+  obligations forward;
+- retains `minimally_producer_assisted` for history-carried mode;
+- leaves history-carried scientific status unresolved;
+- authorizes I03C design work only after its checklist/hypothesis declaration
+  and design input freeze; and
+- keeps I04, R01-R05, calibration, registration, candidate/control execution,
+  and scientific interpretation unauthorized.
+
+I03C must apply native-first selection independently within `hybrid`. It must
+not use I03A/I03B observed fixture values or outcomes to choose its
+realization. If a realizable design is selected and statically validated, one
+separate immutable conformance freeze may authorize the bounded evidence and
+reconstruction invocations already governed by DEC-012.
+
+DEC-015 does not pass `P2-I2-DISCRIMINATOR-GATE`. I03C must return for owner
+review after design and any bounded runtime conformance; I04 remains blocked
+until the complete three-mode family has been reviewed and explicitly
+accepted under the umbrella gate.
+
+## 18. `P2-I2-DEC-016` — Hybrid realization and producer boundary
+
+**Status:** design-frozen, statically validated, and runtime-conformant;
+owner review pending
+
+**Question:** Which native-first hybrid realization, separately causal state
+and history components, joint response path, and restoration boundary should
+I03C retain?
+
+**Decision:** Select `minimally_producer_assisted` for hybrid mode.
+
+- `C_P` is live native P coherence.
+- `H_P` is one ordered source-label-free active history owned by the exact
+  pre-runtime `RCAEActiveHistoryAdapterV1` structural component.
+- `R_H(H_P)` is materialized through public native balancing packets at
+  native output node `M_H`.
+- Native PyGRC feedback reads P and M_H exactly once each in one common front
+  mask, against B_ref; the native producer owns score, threshold/polarity,
+  response scheduling, and the later packet transition.
+- A native P-only debit and an adapter history-only replacement/clamp must
+  independently affect the same joint path while holding the other component
+  fixed.
+- `expected_source_surface_digest` remains null, and a common neutral contact
+  follows all final component interventions; audit lineage cannot authorize
+  or enter the response.
+
+Complete native realization is inadequate only because admitted PyGRC has no
+active independently intervenable multi-event common-history carrier. The
+existing adapter supplies exactly that missing operation and may not read P
+for success, compute P+M_H, apply the response threshold, configure/execute
+feedback, schedule A-to-B, or inspect response/success fields. If runtime
+conformance requires any such expansion, the realization stops as
+`missing_prerequisite` rather than silently widening the producer.
+
+I03C reuses no I03A/I03B conformance coefficient, amount, timing, threshold,
+branch outcome, comparator, or evidence digest. Its separate runtime freeze
+must use new fixture-only values, one evidence invocation, one reconstruction,
+and zero retries. Native v2 and the complete adapter current/reset identity
+must be bound in one composite identity; native and adapter reset are one
+paired registered procedure.
+
+DEC-016 freezes causal-design authority only. It assigns no scientific
+response, comparator, resolution, R01-R05 outcome, mode rank, L02 support, or
+terminal class. A successful static validation authorizes construction of the
+separate conformance freeze under DEC-012; only owner review after bounded
+runtime conformance may address the umbrella gate. I04 remains blocked.
+
+The separate runtime freeze validated before the first model call. Its single
+evidence invocation and single reconstruction each passed `258/258` frozen
+assertions with byte-identical SHA-256
+`217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c`.
+Both state-only and history-only interventions changed the same native joint
+response relation while holding the other component fixed; order, label,
+write-diversion, private/access, producer-ownership, neutral-contact, paired
+restoration/reset, and equal-input continuation guards passed. This adds only
+quarantined realization implementation-conformance. I03C is review-ready;
+the umbrella gate and I04 remain blocked pending owner disposition.
+
+## 19. `P2-I2-DEC-017` — Hybrid closeout revalidation disposition
+
+**Status:** zero-runtime closeout passed; owner acceptance pending
+
+**Question:** Does the retained I03C package satisfy the exact twenty-six
+owner-review areas and seventeen acceptance conditions, and what progression
+authority follows from that audit?
+
+**Disposition:** `P2-I2-I03CR1-CLOSEOUT-PASSED`.
+
+The immutable I03CR1 review input and closeout registry bind one composite
+P/H_P/M_H carrier, independent component interventions through the same
+native V, complete future qualitative P × H factorization, exact admission
+and self-feedback exclusions, neutral-contact qualifications, common/private
+bindings, layered restoration identity, lifecycle dispositions, hybrid OP
+meanings, and complete machine fixture quarantine. The zero-runtime validator
+passed all 26 review checks and all 17 acceptance conditions with zero
+blockers. It classified 17 checks as direct passes, four as closure
+clarifications, and five as passes carrying downstream duties.
+
+Eight fail-closed obligations remain: register the full qualitative 2x2;
+bind physical admission route/type identity; match or stratify causal neutral-
+contact timing/support fields; expose and failure-test one paired restoration
+boundary; bound lifecycle/capacity semantics; mechanically reject every
+fixture value/identity/observation/outcome/digest; reject common/private
+cross-load; and perform a separate three-mode family closeout before the
+discriminator gate.
+
+The closeout retains three explicit limits. I03C did not execute the complete
+scientific 2x2. Restoration completeness is layered across native v2,
+adapter, joint binding, freeze, manifest, evidence, and reconstruction rather
+than supplied by one new atomic native API. Neutral-contact absolute scheduler
+slots differ after explicit intervention operations, although those slots do
+not enter the native score or threshold and remain an I06 matching duty.
+
+DEC-017 records acceptance readiness only. It does not assign project-owner
+acceptance, authorize the umbrella family closeout, pass
+`P2-I2-DISCRIMINATOR-GATE`, or open I04. If the project owner accepts I03C,
+the next permissible step is to declare the umbrella I03 family closeout in
+the checklist and hypotheses before performing it.
+
+## 20. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| I03B staged-progression acceptance and I03C authorization | After I03BR1 | Explicit owner disposition; may open I03C only and must keep I04 blocked |
-| Hybrid realization class and separable state/history interfaces | I03C | Owner acceptance of I03B and a new I03C freeze |
+| Owner acceptance of I03C and authorization to declare the umbrella family closeout | I03C owner disposition | Passed I03CR1 closeout under DEC-017 |
 | Umbrella staged-family disposition without inter-mode selection | I03 closeout | Owner-reviewed I03A, I03B, and I03C packages under DEC-011 |
 | Per-mode raw responses/orientations and justified shared boundaries | I04 | Umbrella discriminator gate |
 | Per-mode closest primary comparators | I04 | Realization-bound insufficient-repetition alternatives |

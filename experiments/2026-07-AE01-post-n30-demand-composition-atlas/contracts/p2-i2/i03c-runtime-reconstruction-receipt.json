@@ -1,0 +1,70 @@
+{
+  "artifact_id": "P2-I2-I03C-HYBRID-RUNTIME-RECONSTRUCTION-RECEIPT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03C",
+  "lane_id": "AE01-L02",
+  "recorded_at": "2026-07-14",
+  "status": "passed_byte_identical",
+  "invocation_accounting": {
+    "freeze_validation_invocations": 1,
+    "freeze_validation_model_instantiations": 0,
+    "evidence_invocations": 1,
+    "reconstruction_invocations": 1,
+    "retries": 0,
+    "rescue_variants": 0,
+    "parameter_searches": 0,
+    "branch_scenarios_per_runtime_invocation": 12
+  },
+  "identity": {
+    "runtime_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json",
+    "runtime_freeze_sha256": "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d",
+    "harness_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py",
+    "harness_sha256": "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191",
+    "adapter_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+    "adapter_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+    "evidence_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+    "evidence_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
+    "evidence_size_bytes": 884406,
+    "reconstruction_path": "/tmp/p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "reconstruction_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
+    "reconstruction_size_bytes": 884406,
+    "byte_identical": true
+  },
+  "commands": {
+    "evidence": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+    "reconstruction": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output /tmp/p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "comparison": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json /tmp/p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "comparison_exit_code": 0
+  },
+  "assertion_result": {
+    "evidence_passed": 258,
+    "evidence_failed": 0,
+    "reconstruction_passed": 258,
+    "reconstruction_failed": 0
+  },
+  "restoration_witness": {
+    "pre_save_and_loaded_composite_digest": "c1ff77baa3a6b9ec5ab917f431546a5923a024325a80e7cfa8090c893c6e5f8a",
+    "paired_reset_initial_composite_digest": "6e673a89a73e40babe588c63c96eee8fccaa7e24c698e0ea187b0fcc786bed99",
+    "paired_reset_equal_input_continuation_composite_digest": "1401f981ea967542f752aab6f302bb96afa5b2487ff6cfd19864ca0b8d47d2f6",
+    "manifest_validated_before_continuation": true,
+    "one_sided_reset_used": false,
+    "implicit_rebase_used": false
+  },
+  "graph_guard": {
+    "revision_before": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "revision_after": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_before": "",
+    "status_after": "",
+    "unchanged_and_clean": true
+  },
+  "claim_boundary": {
+    "evidence_effect": "quarantined hybrid realization implementation-conformance only",
+    "scientific_response_or_comparator_selected": false,
+    "calibration_or_registration_input_produced": false,
+    "AE01_H_L02_support_or_falsification_assigned": false,
+    "mode_ranking_assigned": false,
+    "discriminator_gate_passed": false,
+    "I04_authorized": false,
+    "owner_review_required": true
+  }
+}
