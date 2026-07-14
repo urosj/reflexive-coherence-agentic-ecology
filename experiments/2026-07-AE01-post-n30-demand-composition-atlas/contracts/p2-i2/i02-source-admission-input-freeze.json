@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I02-SOURCE-ADMISSION-INPUT-FREEZE",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-031",
+    "decision_id": "P2-I2-DEC-038",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "source_sha256": "0ce2cbd8315faecdc9b433f767d95a7c34aa32386f84cda9c22c1d31b32760ca"
+  },
   "artifact_version": "1.0.1",
   "iteration_id": "P2-I2-I02",
   "lane_id": "AE01-L02",
@@ -41,7 +50,7 @@
   },
   "proposed_checkout": {
     "repository_name": "graph-reflexive-coherence",
-    "local_locator_observation": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "local_locator_observation": "external-repository:graph-reflexive-coherence",
     "revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
     "required_worktree_state": "clean",
     "read_only_required": true,
@@ -165,7 +174,7 @@
     ]
   },
   "allowed_commands": {
-    "notation": "${GRC} denotes the proposed graph checkout. Generated scratch output may exist only under /tmp.",
+    "notation": "${GRC} denotes the proposed graph checkout. Generated scratch output may exist only under ${TMPDIR}.",
     "commands": [
       "git -C ${GRC} rev-parse HEAD",
       "git -C ${GRC} branch --show-current",

@@ -1,0 +1,111 @@
+{
+  "activity_id": "P2-I2-I05H-FOURTH-BOUNDED-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05H-PORTABILITY-CORRECTION-POLICY",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-031",
+    "decision_id": "P2-I2-DEC-038",
+    "owner_authorized_group": "i01_i02_source_and_identity",
+    "parent_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "return_uncommitted_for_review": true
+  },
+  "baseline_audit": {
+    "affected_file_count": 10,
+    "audit_policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+    "correction_group": "i01_i02_source_and_identity",
+    "result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "violation_count": 35,
+    "violation_classes": {
+      "embedded_machine_local_absolute_token": 24,
+      "posix_filesystem_absolute": 11
+    }
+  },
+  "correction_scope": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-audit-input-freeze.json",
+      "source_sha256": "a0dabbe125402389ea2ed7b757091ce80f5210ea5700e184711701c3a89c6b2a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-source-admission-input-freeze.json",
+      "source_sha256": "0ce2cbd8315faecdc9b433f767d95a7c34aa32386f84cda9c22c1d31b32760ca"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r1-identity-authority-validation.json",
+      "source_sha256": "243b82f3c108733320630de6d11584bd3a317d83ce1cd72a21075867323e3e7e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-reset-baseline-validation.json",
+      "source_sha256": "796f58e91958c9ef991e5218ee9804e10cdbdb298ad5c7af3b574956667696d0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-command-provenance.md",
+      "source_sha256": "f30cb5cf99e9088cc8f669b716b1481fd6d55022179bdd6fc6c4dd80fe2185af"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md",
+      "source_sha256": "4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R1-admission-closeout-revalidation.md",
+      "source_sha256": "3b48a26c0e7c95af4a3c9da19a6b04e6b9b67b72f625b5344edd2986e84b32a0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r1_validate.py",
+      "source_sha256": "1bba6f3377c8d1bf44172c6e321e960bdd306ade8f0f864aefc5e12ddb1bc3ba"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r2_build_manifest.py",
+      "source_sha256": "59dbb562932391a296eaf6265793e036024aa0ce31ae8d59f701f34fd2a97596"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r2_validate.py",
+      "source_sha256": "fd1046e58fc27f7f70ffe824bdd6c76248e47e4048e84347832cfeaf4a0770e0"
+    }
+  ],
+  "historical_authority": {
+    "current_projection_source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "history_rewrite_authorized": false,
+    "raw_I01_I02_evidence_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "representation": "commit_and_sha256_only"
+  },
+  "immutable_semantics": [
+    "all accepted I01 capability audit findings and insufficiency classifications",
+    "I01R1 source dataflow and retained-artifact closeout dispositions",
+    "I02 admitted source checkout revision public-source digests and identity authority",
+    "I02R1 validation conclusions and downstream duties",
+    "I02R2 reset-baseline restoration identity validation conclusions",
+    "all later I03 realization and conformance authorities",
+    "I04R2 estimator and I05 arithmetic-null evidence",
+    "every gate and evidence-quarantine boundary"
+  ],
+  "invocation_ceiling_after_freeze": {
+    "calibration_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "I05H_validator_entrypoint_starts": 3,
+    "null_or_one_shot_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_imports_or_model_instantiations": 0
+  },
+  "projection_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05h-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05H-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05h-portability-correction-validation.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05h_validate.py"
+  },
+  "scope_resolution_history": {
+    "affected_file_edits": 0,
+    "read_only_non_python_command_count": 8,
+    "resolved_before_policy_freeze": true,
+    "runtime_or_scientific_operations": 0
+  },
+  "transformation_rules": {
+    "command_identity": "replace historical graph-checkout and temporary-directory tokens with GRC and TMPDIR logical variables; projected historical commands are non-executable",
+    "external_repository_identity": "replace machine-local graph checkout interpreter prefix source and import locations with repository_id graph-reflexive-coherence plus source-relative path",
+    "historical_bytes": "retain every raw source byte at commit 62882ef and never substitute projection hashes into raw receipts",
+    "json_projection_label": "every changed JSON declares source commit source digest DEC-038 CHG-031 projected-command non-executability and zero scientific change",
+    "report_projection": "replace only machine-local graph or temporary-location representation and append source commit digest lineage",
+    "script_entry": "remove machine-selecting shebangs and require invocation through .venv/bin/python",
+    "temporary_directory_runtime": "replace fixed POSIX temporary roots in I02R2 static validation helpers with tempfile-managed system temporary directories without changing validation logic"
+  }
+}

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Build the effective P2-I2 I02R2 source and reset-provider manifest."""
 
 from __future__ import annotations

@@ -1099,6 +1099,58 @@ count is zero. These are portability-process facts only and have no
 operational-hypothesis or L02 evidentiary effect. I05G now stops uncommitted for
 explicit owner review; it does not authorize its own commit or a fourth group.
 
+The project owner subsequently accepted I05G, authorized its commit, and
+directed progression to the fourth bounded group. The accepted package is
+retained at `62882ef`. This changes only progression authority; it does not
+turn I05G portability validation into scientific evidence or pass CAL-GATE.
+
+#### 3.2.19 I05H fourth bounded portability correction
+
+After accepted I05G is retained at `62882ef`, the project owner directs the
+fourth accepted-audit portability group to begin. I05H initially authorizes
+only checklist/hypothesis-first read-only resolution of the exact fourth group
+and construction of its immutable input freeze. No affected file may change
+before the group identity, source paths and digests, finding classes and
+counts, transformations, historical boundary, invocation ceiling, expected
+outputs, and uncommitted review stop are retained.
+
+The accepted I05D order resolves the fourth group as
+`i01_i02_source_and_identity`: 35 findings across exactly 10 files, comprising
+24 embedded machine-local absolute tokens and 11 exact POSIX absolute values.
+The scope contains four historical I01/I02 input or validation JSON artifacts,
+three historical reports, and three I02 validation/manifest Python sources.
+
+I05H is representation-only. Raw accepted bytes remain addressable at the
+accepted parent commit and by SHA-256. Portable projections may alter only
+checkout, interpreter, command, attachment, or other machine-local location
+representation and the corresponding static path-resolution machinery. They
+cannot change an I01 capability conclusion, I02 source-admission or identity
+authority, reset-baseline result, PyGRC source meaning, restoration boundary,
+later mode realization, estimator, response, calibration, gate, or evidence
+status.
+
+No builder, arithmetic null, one-shot wrapper, PyGRC model, candidate/control,
+conformance, or scientific operation is authorized. Any Python validation must
+use `.venv/bin/python` under a separately frozen ceiling. The fifth correction
+group, metric-sheet freeze, CAL-GATE, and I06 remain closed.
+
+The completed uncommitted I05H projection passes 10/10 static checks. It binds
+all ten accepted source files to ten portable projections, closes the 35
+accepted findings to zero, and reconstructs the four JSON, three report, and
+three Python changes exactly. The only active-source changes are three
+machine-selecting shebang removals and five substitutions from a fixed POSIX
+temporary root to `tempfile`'s system-selected temporary directory. Raw I01/
+I02 bytes remain at commit `62882ef`; all source-admission, identity-authority,
+reset-baseline, capability, and quarantine meanings are unchanged.
+
+One of the three allowed `.venv` validator starts was used and passed on its
+first attempt. Every other Python, PyGRC import/model, historical validator or
+manifest-builder, candidate/control, calibration, null/wrapper, conformance,
+and scientific count is zero. These are portability-process facts only and
+have no operational-hypothesis or L02 evidentiary effect. I05H stops
+uncommitted for explicit owner review; it does not authorize its own commit or
+a fifth group.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

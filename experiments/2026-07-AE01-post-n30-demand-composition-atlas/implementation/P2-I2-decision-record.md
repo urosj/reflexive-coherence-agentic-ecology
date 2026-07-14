@@ -72,6 +72,7 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-035` | May the I05F static-validation ceiling deviation be closed in place without rewriting the freeze or rerunning validation? | Owner-authorized `+1`: retain an additive I05F deviation closeout accepting the process-only 13-versus-three variance | Opens closeout-record construction only; no full-package acceptance, commit, rerun, later group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-036` | Does completed DEC-035 closeout also constitute full I05F acceptance and commit authorization? | Owner-confirmed: “when done, it is also acceptance, can be committed” | Accepts and authorizes commit of the complete I05F package after closeout; no next group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-037` | Which portability work may begin after accepted I05F commit `99c64dd`? | Owner direction: “third group is next”; declare I05G, resolve/freeze the exact third accepted-audit group before edits, and return its bounded correction uncommitted | I05G is 10/10 review-ready with 201 to zero findings; no owner acceptance/commit authority, fourth group, CAL-GATE, I06, or execution | 2026-07-14 |
+| `P2-I2-DEC-038` | What follows owner review of I05G? | Accept and commit I05G, then open I05H for the exact fourth accepted-audit group under checklist/hypothesis-first freeze discipline | I05G retained at `62882ef`; opens I05H scope resolution/freeze only; no affected edit before freeze, fifth group, CAL-GATE, I06, or execution | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2165,7 +2166,61 @@ candidate/control/conformance/scientific operation remain zero. I05G stops
 uncommitted for review. DEC-037 does not accept or authorize committing the
 package, select the fourth group, freeze the metric sheet, or pass CAL-GATE.
 
-## 40. Pending decision queue
+## 40. `P2-I2-DEC-038` — I05G acceptance and fourth-group entry
+
+**Status:** owner-directed I05G progression complete; I05H review-ready and
+uncommitted pending explicit owner acceptance/commit authority
+
+**Question:** What may proceed after owner review of the complete I05G
+correction package?
+
+**Decision:** The project owner directs: “ok, commit, move to fourth group.”
+This accepts the complete I05G package, authorizes and results in commit
+`62882ef`, and opens I05H only. Before editing any fourth-group affected file,
+I05H must:
+
+- read the accepted I05D ordered correction-group inventory;
+- resolve the exact fourth group name, affected paths, file/finding counts,
+  violation classes, and source digests;
+- retain an immutable input freeze binding parent commit `62882ef`, allowed
+  path-only transformations, historical and consequential identities,
+  invocation ceilings, outputs, and the uncommitted review stop; and
+- update checklist/hypothesis/decision navigation with the resolved scope.
+
+Until that freeze exists, only the I05H governance scaffold and read-only scope
+resolution are authorized. I05H cannot change scientific/runtime semantics,
+rewrite historical evidence, invoke a builder/null/wrapper/PyGRC/candidate/
+control/conformance/scientific path, begin a fifth correction group, freeze the
+metric sheet, pass CAL-GATE, or open I06.
+
+**Resolved scope:** The accepted I05D policy order identifies the fourth group
+as `i01_i02_source_and_identity`, with 35 findings across exactly 10 files:
+24 embedded machine-local absolute tokens and 11 exact POSIX absolute values.
+No affected file changed during the eight-command read-only scope resolution
+and freeze preparation.
+
+**Completion:** The exact group now passes 10/10 static checks with 35 to zero
+findings. The additive lineage binds all ten source/projection pairs, and the
+four JSON, three report, and three Python projections reconstruct exactly. The
+only active-source differences are three shebang removals and five changes from
+a fixed POSIX temporary root to `tempfile`'s system-selected temporary
+directory. Historical I01/I02 evidence remains addressable at `62882ef`; all
+capability, source-admission, identity-authority, reset-baseline, quarantine,
+and gate meanings remain unchanged.
+
+One of the three admitted `.venv/bin/python` validator starts was used and
+passed on its first attempt. All other Python starts and every PyGRC import or
+model, historical validator/manifest builder, builder/null/wrapper, candidate/
+control/conformance/scientific operation remain zero. I05H stops uncommitted
+for review. DEC-038 does not accept or authorize committing I05H, select the
+fifth group, freeze the metric sheet, or pass CAL-GATE.
+
+Reopen DEC-038 if the selected group is not the exact fourth accepted I05D
+group, an affected file changes before freeze, the parent commit differs, a
+transformation exceeds path representation, a fifth group begins, or a
+prohibited operation occurs.
+
+## 41. Pending decision queue
 
 No item below is decided by this record yet:
 

@@ -20,20 +20,23 @@ violations; DEC-034 retains that group at `6dd6898`; I05F has a 10/10
 technical result and zero remaining group violations; DEC-035 accepts its
 13-versus-three process deviation in place without rewriting the freeze or
 rerunning validation; DEC-036 accepts the complete package and authorizes its
-commit at `99c64dd`; I05G has now corrected the exact third bounded group with
-10/10 static checks, all 201 findings closed to zero, and no scientific or
-runtime operation; the package is uncommitted and awaiting owner review
+commit at `99c64dd`; I05G corrected the exact third bounded group with 10/10
+static checks, all 201 findings closed to zero, and no scientific or runtime
+operation, and the owner accepted and committed it at `62882ef`; the owner now
+directs the fourth bounded portability group under I05H, which is now 10/10
+review-ready with all 35 accepted findings closed to zero and no runtime or
+scientific operation
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I05G`; the owner-accepted second
-I04/I05 authority-dependency correction group is retained at `99c64dd`; the
-exact 30-file/201-finding I03 realization/conformance portability projection
-is 10/10 review-ready and remains uncommitted pending owner review;
-metric-sheet freeze, CAL-GATE, I06, a fourth correction group, and every
-scientific or candidate operation remain closed
+**Current activity iteration:** `P2-I2-I05H`; the owner-accepted third I03
+realization/conformance correction group is retained at `62882ef`; the fourth
+bounded I01/I02 source-and-identity portability projection is 10/10
+review-ready and remains uncommitted pending owner review; metric-sheet freeze,
+CAL-GATE, I06, a fifth correction group, and every scientific or candidate
+operation remain closed
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -213,7 +216,8 @@ Rules:
 | `P2-I2-I05D` | P2-I2-wide persisted-path portability audit | Owner rule that absolute paths are never allowed | Accepted exact inventory: 312 value-redacted findings in 70 of 135 files | Opens one reviewed I05E correction group at a time |
 | `P2-I2-I05E` | First bounded historical-to-portable correction group | Owner acceptance of I05D and authorization of the I05 group | Complete and retained at `6dd6898`: 10/10 checks, zero group violations, 13/13 focused helper tests | Opens only I05F under DEC-034; CAL-GATE remains closed |
 | `P2-I2-I05F` | I04/I05 authority-dependency historical-to-portable correction | Owner acceptance/commit of I05E and direction to continue | Owner-accepted and commit-authorized: 10/10, 30 to zero findings, original freeze retained, and 13-versus-three process deviation accepted additively under DEC-035/036 | Retain complete package; no later group or CAL-GATE passage |
-| `P2-I2-I05G` | Third bounded accepted-audit portability correction group | Owner direction after accepted I05F commit `99c64dd` | Review-ready and uncommitted: 10/10 checks, 30 lineage pairs, 201 to zero findings, 105 pointer projections and 44 identical targets; zero runtime/scientific operations | Await owner review; no fourth group or CAL-GATE passage |
+| `P2-I2-I05G` | Third bounded accepted-audit portability correction group | Owner direction after accepted I05F commit `99c64dd` | Complete and retained at `62882ef`: 10/10 checks, 30 lineage pairs, 201 to zero findings, 105 pointer projections and 44 identical targets; zero runtime/scientific operations | Opens only I05H under DEC-038; CAL-GATE remains closed |
+| `P2-I2-I05H` | Fourth bounded accepted-audit portability correction group | Owner acceptance/commit of I05G and direction to move to the fourth group | Review-ready and uncommitted: 10/10 checks, 10 lineage pairs, 35 to zero findings, four exact JSON, three exact report, and three exact Python projections; zero runtime/scientific operations | Await owner review; no fifth group or CAL-GATE passage |
 | `P2-I2-I06` | Exact three-mode implementation registration and evidence-bundle construction | I05 | Blocked | `P2-I2-REG-GATE` |
 | `P2-I2-I07` | Mode-indexed candidate-cycle execution freeze | I06 | Blocked | `P2-I2-EXEC-FREEZE` |
 | `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | I07 | Blocked | `P2-I2-EXEC-GATE` |
@@ -2506,6 +2510,88 @@ starts, PyGRC imports/model instantiations, conformance/scientific operations,
 candidate/control operations, builder/null/wrapper invocations, and retries
 are all zero.
 
+#### 10.4F `P2-I2-I05H` — Fourth bounded portability correction group
+
+**Status:** exact fourth group corrected and review-ready as
+`i01_i02_source_and_identity`: 10 files, 35 to zero findings, and 10/10 static
+checks. No affected file was edited before immutable policy/freeze retention;
+the package is uncommitted pending owner review.
+
+```text
+activity_id = P2-I2-I05H-FOURTH-BOUNDED-PORTABILITY-CORRECTION
+entry = owner acceptance/commit of I05G at 62882ef plus DEC-038/CHG-031
+scope_source = accepted I05D policy order and value-redacted inventory
+resolved_group = i01_i02_source_and_identity
+resolved_scope = 35 findings across exactly 10 files
+scope_resolution = completed read-only; immutable source/transformation freeze
+                   must be retained before affected-file edits
+mutation_boundary = checklist, hypothesis, and decision scaffolding only until
+                    the exact I05H input freeze is retained
+path_rule = no persisted machine-local absolute path or machine-selecting
+            interpreter identity
+historical_boundary = retain source bytes by accepted commit and SHA-256;
+                      current corrections must be explicit portable projections
+scientific_boundary = no accepted source finding, identity authority, reset
+                      baseline, realization, restoration, calibration, gate,
+                      or evidence meaning may change
+runtime_boundary = .venv only for any later Python validation; zero builder,
+                   null, wrapper, PyGRC model, candidate/control, conformance,
+                   or scientific invocation
+gate_effect = CAL-GATE remains closed; no fifth correction group or I06 opens
+exit = exact fourth-group correction review-ready and uncommitted
+```
+
+- [x] Retain owner-accepted I05G at `62882ef` before opening I05H.
+- [x] Record the owner's acceptance/commit and direction to move to the fourth
+  bounded group under DEC-038/CHG-031.
+- [x] Resolve the exact fourth group, file count, finding count, affected
+  paths, source hashes, and violation classes from the accepted I05D inventory
+  without editing an affected file.
+- [x] Freeze the accepted parent commit, exact source hashes, allowed
+  transformations, historical identities, invocation ceilings, outputs, and
+  review stop before affected-file edits.
+- [x] Correct only the frozen fourth group and mechanically retain
+  historical-to-portable lineage.
+- [x] Demonstrate zero remaining findings in the exact group without changing
+  scientific/runtime semantics or invoking a governed/runtime path.
+- [x] Return I05H uncommitted for owner review and explicit acceptance/commit
+  authorization; do not begin a fifth group or pass CAL-GATE.
+
+The exact affected files are:
+
+- `contracts/p2-i2/i01-audit-input-freeze.json`
+- `contracts/p2-i2/i02-source-admission-input-freeze.json`
+- `contracts/p2-i2/i02r1-identity-authority-validation.json`
+- `contracts/p2-i2/i02r2-reset-baseline-validation.json`
+- `reports/P2-I2-I01-command-provenance.md`
+- `reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md`
+- `reports/P2-I2-I02R1-admission-closeout-revalidation.md`
+- `scripts/p2_i2_i02r1_validate.py`
+- `scripts/p2_i2_i02r2_build_manifest.py`
+- `scripts/p2_i2_i02r2_validate.py`
+
+The 35 accepted findings comprise 24 embedded machine-local absolute tokens
+and 11 exact POSIX absolute values. Scope resolution and freeze preparation used eight read-only,
+non-Python commands after the I05G commit and zero affected-file edits or
+runtime/scientific operations. I05H must freeze the exact transformations and
+source identities before correcting any of these files.
+
+The retained validator result is 10/10, SHA-256
+`c9090b66b3fcbc1b2db2b8fe9ee4889e06a5cb2f071918414689f8adf77cdbb4`.
+It reconstructs all ten accepted source identities, binds all ten projected
+identities through lineage SHA-256
+`4afca69931e8d876a46486561dfee222a7925375163fea055b236605ed354c7f`,
+closes the accepted 35 findings to zero, and exactly reconstructs the four
+JSON, three report, and three Python projections. The active-source diff is
+limited to three shebang removals and five system-selected `tempfile`
+temporary-directory contexts.
+
+One `.venv/bin/python` validator entry-point start was used after freeze and
+passed on its first attempt. Other Python starts, PyGRC imports/model
+instantiations, historical validator/manifest-builder execution,
+conformance/scientific operations, candidate/control operations,
+builder/null/wrapper invocations, and retries are all zero.
+
 Exit gate `P2-I2-CAL-GATE` opens registration construction only.
 
 ## 11. `P2-I2-I06` — Exact implementation registration
@@ -2739,6 +2825,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-028` | Owner `+1` authorizes the proposed I05F in-place process-deviation closeout | `I05F_additive_static_validation_deviation_closeout` | Retain one additive record binding the immutable three-invocation ceiling, actual 13-start ledger, technical 10/10 result, zero-runtime boundary, and package/commit exclusions; perform no rerun | Process deviation accepted without claiming freeze compliance; zero Python, validator, builder/null/wrapper/PyGRC/candidate/control/conformance/scientific rerun during closeout construction | Original I05F freeze/policy, technical validation and lineage hashes, complete attempt ledger, DEC-035, no full-package acceptance at closeout-record time | Complete; later full-package acceptance supplied separately by DEC-036/CHG-029 |
 | `P2-I2-CHG-029` | Owner states completed closeout is also I05F acceptance and may be committed | `I05F_owner_acceptance_and_commit_authority` | Retain separate owner-acceptance authority binding the deviation closeout and accepted technical identities; commit the complete I05F package without rerun or later-group work | Full I05F package accepted and commit-authorized; zero Python/validator/runtime/scientific rerun; later group and CAL-GATE remain closed | DEC-036, immutable closeout record, I05F validation/lineage identities, parent commit `6dd6898`, complete package boundary | Complete; package commit authorized |
 | `P2-I2-CHG-030` | Owner directs “third group is next” after accepted I05F commit `99c64dd` | `I03_realization_and_conformance_portable_projection_correction` | Add I05G checklist/hypothesis-first; resolve and freeze the exact third I05D group before edits; correct only its 30 files/201 findings, including structured JSON-pointer segments; retain lineage, validation, and report | Complete uncommitted correction: 10/10, 201 to zero findings, 30 lineage pairs, 105 pointer projections, 44 identical targets; two of three `.venv` validator starts used, first failed closed pre-output and second passed; zero other Python/runtime/scientific operations | Accepted I05D order/inventory, parent commit `99c64dd`, I03 historical bytes/semantics/evidence quarantine, no fourth group | Review-ready under DEC-037; awaits explicit owner acceptance/commit authority |
+| `P2-I2-CHG-031` | Owner accepts/commits I05G and directs progression to the fourth group | `I01_I02_source_and_identity_portable_projection_correction` | Retain I05G at `62882ef`; add I05H checklist/hypothesis-first; resolve and freeze the exact fourth I05D group before edits; correct only its 10 files/35 findings; retain lineage, validation, and report | Complete uncommitted correction: 10/10, 35 to zero findings, 10 lineage pairs, four exact JSON, three exact report, and three exact Python projections; one of three `.venv` validator starts used and passed; zero other Python/runtime/scientific operations | Accepted I05D order/inventory, parent commit `62882ef`, I01/I02 historical bytes/source/identity/reset semantics, no fifth group | Review-ready under DEC-038; awaits explicit owner acceptance/commit authority |
 
 ## 19. Evidence ledger
 
@@ -2812,7 +2899,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I05D-AUDIT` | I05D | [Audit freeze](../contracts/p2-i2/i05d-portability-audit-input-freeze.json), [accepted inventory](../contracts/p2-i2/i05d-portability-audit.json), [scanner](../scripts/p2_i2_i05d_portability_audit.py), and [report](../reports/P2-I2-I05D-portability-audit.md) | Static value-redacted current-tree portability audit only; 135 files, 312 violations, 70 affected files; zero affected-artifact correction or runtime/scientific operation | Accepted under DEC-033; opened only the first I05E correction group |
 | `P2-I2-I05E-I05-GROUP` | I05E | [Correction freeze](../contracts/p2-i2/i05e-portability-correction-input-freeze.json), [lineage manifest](../contracts/p2-i2/i05e-portable-projection-lineage.json), [10/10 validation](../contracts/p2-i2/i05e-portability-correction-validation.json), [validator](../scripts/p2_i2_i05e_validate.py), and [report](../reports/P2-I2-I05E-portability-correction.md) | Historical-to-portable projection integrity only; eleven files, zero remaining group violations, no governed execution or scientific effect | Owner-accepted and retained at `6dd6898` under DEC-033/034; opened I05F only |
 | `P2-I2-I05F-I04-I05-GROUP` | I05F | [Correction freeze](../contracts/p2-i2/i05f-portability-correction-input-freeze.json), [lineage manifest](../contracts/p2-i2/i05f-portable-projection-lineage.json), [10/10 technical validation](../contracts/p2-i2/i05f-portability-correction-validation.json), [validator](../scripts/p2_i2_i05f_validate.py), [deviation closeout](../contracts/p2-i2/i05f-static-validation-deviation-closeout.json), [owner acceptance](../contracts/p2-i2/i05f-owner-acceptance-and-commit-authority.json), and [report](../reports/P2-I2-I05F-portability-correction.md) | Historical-to-portable projection integrity only; thirteen files, 30 to zero group findings, no governed execution or scientific effect; process deviation accepted without claiming freeze compliance | Owner-accepted and commit-authorized under DEC-036; later group and CAL-GATE closed |
-| `P2-I2-I05G-I03-GROUP` | I05G | [Correction freeze](../contracts/p2-i2/i05g-portability-correction-input-freeze.json), [lineage manifest](../contracts/p2-i2/i05g-portable-projection-lineage.json), [10/10 validation](../contracts/p2-i2/i05g-portability-correction-validation.json), [validator](../scripts/p2_i2_i05g_validate.py), and [report](../reports/P2-I2-I05G-portability-correction.md) | Historical-to-portable projection integrity only; thirty files, 201 to zero findings, 105 structured pointer projections and 44 identical target resolutions; zero governed/runtime/scientific effect | Review-ready and uncommitted under DEC-037; owner acceptance/commit authority, later group, and CAL-GATE remain closed |
+| `P2-I2-I05G-I03-GROUP` | I05G | [Correction freeze](../contracts/p2-i2/i05g-portability-correction-input-freeze.json), [lineage manifest](../contracts/p2-i2/i05g-portable-projection-lineage.json), [10/10 validation](../contracts/p2-i2/i05g-portability-correction-validation.json), [validator](../scripts/p2_i2_i05g_validate.py), and [report](../reports/P2-I2-I05G-portability-correction.md) | Historical-to-portable projection integrity only; thirty files, 201 to zero findings, 105 structured pointer projections and 44 identical target resolutions; zero governed/runtime/scientific effect | Owner-accepted and retained at `62882ef` under DEC-038; opened I05H only; CAL-GATE remains closed |
+| `P2-I2-I05H-I01-I02-GROUP` | I05H | [Correction freeze](../contracts/p2-i2/i05h-portability-correction-input-freeze.json), [lineage manifest](../contracts/p2-i2/i05h-portable-projection-lineage.json), [10/10 validation](../contracts/p2-i2/i05h-portability-correction-validation.json), [validator](../scripts/p2_i2_i05h_validate.py), and [report](../reports/P2-I2-I05H-portability-correction.md) | Historical-to-portable projection integrity only; ten files, 35 to zero findings, four JSON, three report, and three Python projections; zero governed/runtime/scientific effect | Review-ready and uncommitted under DEC-038; owner acceptance/commit authority, fifth group, and CAL-GATE remain closed |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

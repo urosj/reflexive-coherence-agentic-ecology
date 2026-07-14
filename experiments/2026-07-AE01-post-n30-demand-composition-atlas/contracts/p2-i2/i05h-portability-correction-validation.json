@@ -1,0 +1,135 @@
+{
+  "activity_id": "P2-I2-I05H-FOURTH-BOUNDED-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05H-I01-I02-PORTABILITY-CORRECTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "calibration_builder_invocations": 0,
+  "candidate_or_control_invocations": 0,
+  "checks": [
+    {
+      "check_id": "I05H-01",
+      "evidence": {
+        "affected_files": 10,
+        "baseline_findings": 35,
+        "class_counts": {
+          "embedded_machine_local_absolute_token": 24,
+          "posix_filesystem_absolute": 11
+        }
+      },
+      "finding": "the scope is exactly the accepted ten-file 35-finding I01/I02 group",
+      "name": "accepted exact fourth I05D group",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-02",
+      "evidence": {
+        "source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+        "source_file_count": 10
+      },
+      "finding": "every source reconstructs from the accepted I05G commit",
+      "name": "historical source bytes",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-03",
+      "evidence": {
+        "lineage_sha256": "4afca69931e8d876a46486561dfee222a7925375163fea055b236605ed354c7f",
+        "projection_count": 10
+      },
+      "finding": "the lineage binds all historical and projected bytes",
+      "name": "portable projection lineage identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-04",
+      "evidence": {
+        "scanned_file_count": 15,
+        "violation_count": 0
+      },
+      "finding": "the ten corrected files and I05H package contain no persisted absolute paths",
+      "name": "zero corrected-group path violations",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-05",
+      "evidence": {
+        "exactly_reconstructed_json_projections": 4
+      },
+      "finding": "all four JSON files equal their frozen representation-only projections",
+      "name": "exact JSON historical-to-portable reconstruction",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-06",
+      "evidence": {
+        "exactly_reconstructed_report_projections": 3
+      },
+      "finding": "all three reports differ only on frozen location representation and additive lineage",
+      "name": "exact historical report projections",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-07",
+      "evidence": {
+        "parsed_python_files": 3,
+        "system_selected_temporary_contexts": 5
+      },
+      "finding": "three Python sources parse and differ only by shebang removal and five system-selected temporary directories",
+      "name": "bounded portable Python source corrections",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-08",
+      "evidence": {
+        "logical_external_identities": 11,
+        "scientific_change": false
+      },
+      "finding": "all eleven graph identities are logical and every JSON projection declares zero scientific change",
+      "name": "logical identities and immutable semantics",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-09",
+      "evidence": {
+        "prior_identity_count": 2,
+        "source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7"
+      },
+      "finding": "I05G commit validation and lineage identities remain exact",
+      "name": "prior accepted group authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05H-10",
+      "evidence": {
+        "candidate_or_control_invocations": 0,
+        "conformance_or_scientific_invocations": 0,
+        "other_python_process_starts": 0,
+        "pygrc_imports_or_model_instantiations": 0,
+        "scientific_result": false
+      },
+      "finding": "I05H remains static portability validation with no runtime/scientific or fifth-group authority",
+      "name": "zero-execution and progression boundary",
+      "status": "passed"
+    }
+  ],
+  "corrected_file_count": 10,
+  "corrected_group_violation_count": 0,
+  "failed_closed_pre_output_starts": 0,
+  "freeze_sha256": "e3941ae13e15fcfc0a13fb20ee8b534fda6f1b79a69e2969509aad994635c421",
+  "interpreter_identity": ".venv/bin/python",
+  "iteration_id": "P2-I2-I05H",
+  "lane_id": "AE01-L02",
+  "lineage_sha256": "4afca69931e8d876a46486561dfee222a7925375163fea055b236605ed354c7f",
+  "null_or_one_shot_wrapper_invocations": 0,
+  "other_python_process_starts": 0,
+  "passed_checks": 10,
+  "policy_sha256": "4854d270fe3de18c055585430692d97def34a33ed594a10094bc3ea86ff6eec4",
+  "pygrc_imports_or_model_instantiations": 0,
+  "result_status": "P2-I2-I05H-I01-I02-GROUP-REVIEW-READY",
+  "scientific_result": false,
+  "total_checks": 10,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05h_validate.py",
+    "sha256": "7f387fec5708bd122e1af29d15d447b59ff768124c3518546383b9fc463030fc"
+  },
+  "validator_entrypoint_starts": 1
+}

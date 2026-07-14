@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I01-AUDIT-INPUT-FREEZE",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-031",
+    "decision_id": "P2-I2-DEC-038",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "source_sha256": "a0dabbe125402389ea2ed7b757091ce80f5210ea5700e184711701c3a89c6b2a"
+  },
   "artifact_version": "1.0.1",
   "iteration_id": "P2-I2-I01",
   "lane_id": "AE01-L02",
@@ -28,7 +37,7 @@
   },
   "target_checkout": {
     "repository_name": "graph-reflexive-coherence",
-    "local_locator_observation": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "local_locator_observation": "external-repository:graph-reflexive-coherence",
     "revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
     "branch_observation": "main",
     "worktree_state": "clean",
@@ -146,7 +155,7 @@
     }
   ],
   "allowed_commands": {
-    "notation": "${GRC} denotes the target checkout; generated scratch output may exist only under /tmp.",
+    "notation": "${GRC} denotes the target checkout; generated scratch output may exist only under ${TMPDIR}.",
     "commands": [
       "git -C ${GRC} rev-parse HEAD",
       "git -C ${GRC} branch --show-current",
@@ -158,12 +167,12 @@
       "sed -n over frozen in-scope text files",
       "sha256sum over cited frozen in-scope tracked files",
       "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B -c <read-only import, introspection, or in-memory conformance probe>",
-      "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B -m pytest -p no:cacheprovider <targeted existing test or /tmp-only probe>"
+      "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B -m pytest -p no:cacheprovider <targeted existing test or ${TMPDIR}-only probe>"
     ],
     "conformance_constraints": [
       "A conformance probe must import from the exact checkout and record module __file__.",
       "A probe may call public constructors and operations in memory but may not patch, inject private state, write to the graph checkout, or act as candidate execution.",
-      "Any generated files, test temporaries, or caches must be directed to /tmp.",
+      "Any generated files, test temporaries, or caches must be directed to ${TMPDIR}.",
       "Graph HEAD and clean worktree status must be rechecked after audit activity."
     ],
     "prohibited_actions": [

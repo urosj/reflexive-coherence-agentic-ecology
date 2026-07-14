@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Reconstruct P2-I2-I02R1 identity and provider-contract validation.
 
 This validator performs generic source/import/provider checks only. It does not

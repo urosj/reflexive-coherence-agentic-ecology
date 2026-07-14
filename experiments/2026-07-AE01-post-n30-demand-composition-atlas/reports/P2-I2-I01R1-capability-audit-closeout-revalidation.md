@@ -61,7 +61,7 @@ identity.
 | `CMD-001` through `CMD-006` identity/scope commands | Admissible | Exact checkout, worktree, package-root, and scope facts |
 | Frozen static source/test/documentation reads | Admissible | Public contract facts, implementation behavior of public calls, missing-surface search |
 | Failed ambient/RCAE/`uv` import attempts | Neutral provenance | Infrastructure facts only |
-| Custom `/tmp` multi-source probe | **Quarantined** | Historical reconstructibility only; no capability or scientific support |
+| Custom `${TMPDIR}` multi-source probe | **Quarantined** | Historical reconstructibility only; no capability or scientific support |
 | Focused pre-existing PyGRC tests | Admissible | Generic public packet, feedback, restoration, serialization, and continuation conformance only |
 | Digest and final Git checks | Admissible | File integrity and unchanged checkout |
 
@@ -273,3 +273,11 @@ graph revision unchanged; graph worktree clean
 
 The corrected package re-passes `P2-I2-SOURCE-AUDIT-GATE`. I02 is ready but
 not begun. No source or restoration provider is admitted.
+
+## I05H portability projection
+
+This is a representation-only projection under `P2-I2-DEC-038` and
+`P2-I2-CHG-031`. Raw bytes remain at commit
+`62882efc5ecf3c131d21345ad89796f0b2ebccb7`, SHA-256
+`4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930`.
+No source-audit, capability, quarantine, or scientific meaning changed.

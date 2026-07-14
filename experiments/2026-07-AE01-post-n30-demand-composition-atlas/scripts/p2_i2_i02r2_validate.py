@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Validate PyGRC reset-baseline persistence without P2-I2 candidate behavior."""
 
 from __future__ import annotations
@@ -361,7 +360,7 @@ def _validation(graph_root: Path, manifest_path: Path) -> dict[str, Any]:
 
     before_v1 = digest_lgrc9v3_restoration_identity_v1(model)
     before_v2 = digest_lgrc9v3_restoration_identity_v2(model)
-    with tempfile.TemporaryDirectory(dir="/tmp") as tmp_dir:
+    with tempfile.TemporaryDirectory() as tmp_dir:
         path = Path(tmp_dir) / "model.json"
         model.save(str(path))
         restored = LGRC9V3.load(str(path))
@@ -407,7 +406,7 @@ def _validation(graph_root: Path, manifest_path: Path) -> dict[str, Any]:
     _set_index(cycle_model, 7)
     cycle_digest = digest_lgrc9v3_restoration_identity_v2(cycle_model)
     cycle_digests = [cycle_digest]
-    with tempfile.TemporaryDirectory(dir="/tmp") as tmp_dir:
+    with tempfile.TemporaryDirectory() as tmp_dir:
         for cycle in range(3):
             path = Path(tmp_dir) / f"cycle-{cycle}.json"
             cycle_model.save(str(path))
@@ -444,7 +443,7 @@ def _validation(graph_root: Path, manifest_path: Path) -> dict[str, Any]:
     _set_index(legacy_model, 3)
     legacy_snapshot = legacy_model.snapshot()
     legacy_snapshot.pop("reset_baseline")
-    with tempfile.TemporaryDirectory(dir="/tmp") as tmp_dir:
+    with tempfile.TemporaryDirectory() as tmp_dir:
         path = Path(tmp_dir) / "legacy.json"
         save_snapshot(path, legacy_snapshot)
         legacy_loaded = LGRC9V3.load(str(path))
@@ -465,7 +464,7 @@ def _validation(graph_root: Path, manifest_path: Path) -> dict[str, Any]:
     legacy_loaded.rebase_reset_baseline()
     post_rebase_digest = digest_lgrc9v3_restoration_identity_v2(legacy_loaded)
     _set_index(legacy_loaded, 8)
-    with tempfile.TemporaryDirectory(dir="/tmp") as tmp_dir:
+    with tempfile.TemporaryDirectory() as tmp_dir:
         path = Path(tmp_dir) / "rebased.json"
         legacy_loaded.save(str(path))
         legacy_restored = LGRC9V3.load(str(path))
@@ -507,7 +506,7 @@ def _validation(graph_root: Path, manifest_path: Path) -> dict[str, Any]:
     wrong_version["reset_baseline"]["reset_baseline_version"] = 999
     malformed_cases.append(("unsupported_baseline_version", wrong_version))
     malformed_results = []
-    with tempfile.TemporaryDirectory(dir="/tmp") as tmp_dir:
+    with tempfile.TemporaryDirectory() as tmp_dir:
         for case, candidate in malformed_cases:
             path = Path(tmp_dir) / f"{case}.json"
             malformed_results.append(

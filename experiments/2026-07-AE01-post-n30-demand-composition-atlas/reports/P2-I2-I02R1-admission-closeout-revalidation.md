@@ -358,7 +358,7 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src \
   ${GRC}/.venv/bin/python -B \
   experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r1_validate.py \
   --graph-root ${GRC} \
-  --output /tmp/p2-i2-i02r1-validation.json
+  --output ${TMPDIR}/p2-i2-i02r1-validation.json
 ```
 
 The retained validation record file SHA-256 is
@@ -383,3 +383,11 @@ persistence, and adds reset-aware identity v2 without redefining v1. The
 [I02R2 report](P2-I2-I02R2-reset-baseline-persistence-revalidation.md) controls
 the current prospective source/provider boundary; this I02R1 result remains
 the historical record of the gap that triggered correction.
+
+## I05H portability projection
+
+This is a representation-only projection under `P2-I2-DEC-038` and
+`P2-I2-CHG-031`. Raw bytes remain at commit
+`62882efc5ecf3c131d21345ad89796f0b2ebccb7`, SHA-256
+`3b48a26c0e7c95af4a3c9da19a6b04e6b9b67b72f625b5344edd2986e84b32a0`.
+No source-admission, identity-authority, or scientific meaning changed.

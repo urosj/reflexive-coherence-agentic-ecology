@@ -1,0 +1,63 @@
+{
+  "activity_id": "P2-I2-I05H-FOURTH-BOUNDED-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05H-PORTABILITY-CORRECTION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-031",
+    "decision_id": "P2-I2-DEC-038",
+    "owner_authorized_group": "i01_i02_source_and_identity",
+    "parent_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7"
+  },
+  "baseline_group_identity": {
+    "affected_file_count": 10,
+    "audit_policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+    "audit_result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "correction_group": "i01_i02_source_and_identity",
+    "correction_order_position": 4,
+    "violation_count": 35,
+    "violation_classes": {
+      "embedded_machine_local_absolute_token": 24,
+      "posix_filesystem_absolute": 11
+    }
+  },
+  "candidate_or_runtime_evidence_effect": "none",
+  "correction_scope_count": 10,
+  "expected_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05h-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05H-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05h-portability-correction-validation.json"
+  },
+  "historical_authority": {
+    "history_rewrite_authorized": false,
+    "projection_source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "raw_I01_I02_evidence_representation": "commit_and_sha256_only"
+  },
+  "invocation_ceiling_after_freeze": {
+    "calibration_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "I05H_validator_entrypoint_starts": 3,
+    "null_or_one_shot_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_imports_or_model_instantiations": 0
+  },
+  "iteration_id": "P2-I2-I05H",
+  "lane_id": "AE01-L02",
+  "later_correction_groups_authorized": false,
+  "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05h_portability_correction_policy.json",
+  "policy_sha256": "4854d270fe3de18c055585430692d97def34a33ed594a10094bc3ea86ff6eec4",
+  "pre_freeze_authority_identities": {
+    "checklist_sha256": "bd0298e355536f01466cc984110046ba9dd93907f768959bc07179fd0259733e",
+    "decision_record_sha256": "8f13445ff0441cb7a36c3e714de565f140a59d8ee485ac2bd273c3c66f5857d4",
+    "hypothesis_sha256": "1d0290f488c370bf50d79232b0826f54866d66de5ed4b0fb14dd4a08551f118b"
+  },
+  "prior_group_identities": {
+    "I05G_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "I05G_lineage_sha256": "ffbc846dca1e50aa4eba5339624698e7e13e117cec4d8f07ee33cb539bf4fa7f",
+    "I05G_validation_sha256": "cea397d4ca4c5fc80726fb15616a03ccd14a2054ba911309a3c6cf4a65bc8183"
+  },
+  "result_status_ceiling": "P2-I2-I05H-I01-I02-GROUP-REVIEW-READY",
+  "scientific_change_authorized": false,
+  "source_identity_rule": "policy correction_scope must equal the accepted fourth I05D group and reconstruct every source from commit 62882ef",
+  "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05h_validate.py"
+}

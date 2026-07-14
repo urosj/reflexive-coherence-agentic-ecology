@@ -93,6 +93,15 @@
     }
   ],
   "artifact_id": "P2-I2-I02R2-RESET-BASELINE-VALIDATION",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-031",
+    "decision_id": "P2-I2-DEC-038",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7",
+    "source_sha256": "796f58e91958c9ef991e5218ee9804e10cdbdb298ad5c7af3b574956667696d0"
+  },
   "artifact_version": "1.0.0",
   "callable_contracts": [
     {
@@ -541,10 +550,10 @@
   "import_provenance": {
     "all_imports_under_proposed_checkout": true,
     "ambient_or_other_checkout_used": false,
-    "core_file_raw": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/core/__init__.py",
-    "interpreter_raw": "/home/uros/Documents/RC-github/graph-reflexive-coherence/.venv/bin/python",
-    "models_file_raw": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/__init__.py",
-    "pygrc_file_raw": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/__init__.py",
+    "core_file_raw": "external-repository:graph-reflexive-coherence/src/pygrc/core/__init__.py",
+    "interpreter_raw": "external-repository:graph-reflexive-coherence/.venv/bin/python",
+    "models_file_raw": "external-repository:graph-reflexive-coherence/src/pygrc/models/__init__.py",
+    "pygrc_file_raw": "external-repository:graph-reflexive-coherence/src/pygrc/__init__.py",
     "source_root_normalized": "grc:src"
   },
   "invariants": {

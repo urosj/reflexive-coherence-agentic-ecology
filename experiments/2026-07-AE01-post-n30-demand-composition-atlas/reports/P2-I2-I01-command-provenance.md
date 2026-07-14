@@ -15,7 +15,7 @@ and scientific evidence by I01R1.
 
 The audit followed the frozen command boundary in
 [the I01 input freeze](../contracts/p2-i2/i01-audit-input-freeze.json). `${GRC}`
-below denotes `/home/uros/Documents/RC-github/graph-reflexive-coherence`.
+below denotes the logical sibling checkout `${GRC}`.
 
 ## 1. Identity and scope commands
 
@@ -81,9 +81,9 @@ The first attempts did not reach a PyGRC capability check:
 
 | ID | Exact command | Exit/result |
 | --- | --- | --- |
-| `CMD-007` | `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B /tmp/p2_i2_i01_native_pool_probe.py` | `1`; ambient Python lacked declared dependency `matplotlib` |
-| `CMD-008` | `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src ./venv/bin/python -B /tmp/p2_i2_i01_native_pool_probe.py` | `127`; no RCAE `./venv/bin/python` |
-| `CMD-009` | `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src uv run --project ${GRC} --no-sync python -B /tmp/p2_i2_i01_native_pool_probe.py` | `127`; `uv` unavailable |
+| `CMD-007` | `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B ${TMPDIR}/p2_i2_i01_native_pool_probe.py` | `1`; ambient Python lacked declared dependency `matplotlib` |
+| `CMD-008` | `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src ./venv/bin/python -B ${TMPDIR}/p2_i2_i01_native_pool_probe.py` | `127`; no RCAE `./venv/bin/python` |
+| `CMD-009` | `PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src uv run --project ${GRC} --no-sync python -B ${TMPDIR}/p2_i2_i01_native_pool_probe.py` | `127`; `uv` unavailable |
 | `CMD-010` | `test -x ${GRC}/.venv/bin/python` | `0`; existing graph-project interpreter available |
 
 These failures are infrastructure observations only. No installed-package fact
@@ -105,19 +105,19 @@ The successful exact command was:
 ```bash
 PYTHONDONTWRITEBYTECODE=1 \
 PYTHONPATH=${GRC}/src \
-${GRC}/.venv/bin/python -B /tmp/p2_i2_i01_native_pool_probe.py
+${GRC}/.venv/bin/python -B ${TMPDIR}/p2_i2_i01_native_pool_probe.py
 ```
 
 It exited `0` and recorded the imported model facade as:
 
 ```text
-/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/__init__.py
+${GRC}/src/pygrc/models/__init__.py
 ```
 
 The final probe source SHA-256 was
 `f6a421e3b3190a9c6b164b1baecde350085d188746f73ce2912ad4b97bb10384`.
 Its full source is retained here because the executed file existed only under
-`/tmp`:
+`${TMPDIR}`:
 
 ```python
 from __future__ import annotations
@@ -300,7 +300,7 @@ Exact command:
 PYTHONDONTWRITEBYTECODE=1 \
 PYTHONPATH=${GRC}/src \
 ${GRC}/.venv/bin/python -B -m pytest -q -p no:cacheprovider \
-  --basetemp=/tmp/p2-i2-i01-pytest \
+  --basetemp=${TMPDIR}/p2-i2-i01-pytest \
   tests/models/test_lgrc_9_v3_restoration.py \
   tests/models/test_lgrc_9_v3_restoration_matrix.py \
   tests/models/test_lgrc_9_v3_runtime.py::LGRC9V3RuntimeTest::test_departure_arrival_lifecycle_preserves_budget \
@@ -318,7 +318,7 @@ Result:
 ```
 
 The graph checkout remained read-only; cache creation was disabled and test
-temporaries were directed to `/tmp`. I01R1 classifies these pre-existing
+temporaries were directed to `${TMPDIR}`. I01R1 classifies these pre-existing
 generic PyGRC tests as admissible interface/restoration conformance; they do
 not instantiate a P2-I2 multi-source candidate fixture.
 
@@ -326,7 +326,7 @@ not instantiate a P2-I2 multi-source candidate fixture.
 
 I01 originally ran `sha256sum` over fifteen tracked files listed in
 [the source-digest inventory](../contracts/p2-i2/i01-source-digests.json) and
-the `/tmp` probe source. I01R1 added exact digests for the in-scope public
+the `${TMPDIR}` probe source. I01R1 added exact digests for the in-scope public
 causal-history implementation and its contract test, bringing the corrected
 inventory to seventeen tracked files. Final closure repeated:
 
@@ -373,3 +373,11 @@ matrix source/callable reference, recomputed every source digest, checked that
 no surviving matrix row cited the quarantined probe, validated local Markdown
 links, and ran `git diff --check`. The exact outcomes are retained in the
 [I01R1 report](P2-I2-I01R1-capability-audit-closeout-revalidation.md).
+
+## I05H portability projection
+
+This is a representation-only projection under `P2-I2-DEC-038` and
+`P2-I2-CHG-031`. Historical commands are non-executable provenance. Raw bytes
+remain at commit `62882efc5ecf3c131d21345ad89796f0b2ebccb7`, SHA-256
+`f30cb5cf99e9088cc8f669b716b1481fd6d55022179bdd6fc6c4dd80fe2185af`.
+No capability or scientific meaning changed.
