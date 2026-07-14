@@ -37,12 +37,15 @@ graph surfaces, and proposed graph discriminators.
 
 - [P2-I2 operational hypotheses](p2-i2-operational-hypotheses.md) project the
   frozen `AE01-H-L02` hypothesis and accepted P2-I2 brief into nine
-  realization-local falsifiable statements. I01R1 has revalidated their
-  source-audit prerequisite after quarantining candidate-shaped probe behavior
-  and correcting CAP-04 to inadequate, without binding a realization or
-  dependence mode. They remain scaffolded and outcome-free until source
-  admission, realization, and preregistration bind them. Their local IDs do
-  not extend the closed Phase 1 hypothesis registry or schema vocabulary.
+  realization-local falsifiable statements. I03 now follows review-separated
+  8A state-carried, 8B history-carried, and 8C hybrid profiles. I03A's
+  state-carried `pygrc_native_candidate` design and I03AR1's quarantined
+  136/136, byte-reconstructed implementation conformance are review-ready and
+  scientifically outcome-free; I03B/I03C remain unauthorized pending the
+  required owner reviews, and the umbrella discriminator gate remains open. Under
+  owner-accepted `P2-I2-DEC-011`, all three profiles remain in the downstream
+  program and realization selection occurs separately within each mode. Their local IDs
+  do not extend the closed Phase 1 hypothesis registry or schema vocabulary.
 
 ## Hypothesis interpretation
 

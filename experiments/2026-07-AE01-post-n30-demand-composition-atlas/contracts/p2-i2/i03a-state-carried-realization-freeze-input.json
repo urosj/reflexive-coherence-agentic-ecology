@@ -1,0 +1,187 @@
+{
+  "artifact_id": "P2-I2-I03A-STATE-CARRIED-REALIZATION-FREEZE-INPUT",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L02",
+  "iteration_id": "P2-I2-I03A",
+  "status": "frozen_before_state_carried_realization_comparison",
+  "frozen_at": "2026-07-14",
+  "purpose": "Bind the exact authority, state-carried-only questions, native-first selection discipline, mutation boundary, outputs, fail-closed effects, and owner-review stop before admitted implementation surfaces are compared for I03A.",
+  "mode_scope": {
+    "active_mode": "state_carried",
+    "later_modes": [
+      "history_carried",
+      "hybrid"
+    ],
+    "later_modes_authorized": false,
+    "later_mode_work_prohibited_in_i03a": true,
+    "sequence": "I03A state_carried -> owner review -> I03B history_carried -> owner review -> I03C hybrid -> owner review",
+    "umbrella_discriminator_gate_may_pass_in_i03a": false
+  },
+  "entry_authority": {
+    "rcae_revision": "26811d395c0662473629d5710983e3c1fdb4f58f",
+    "rcae_worktree_state_before_i03": "clean",
+    "graph_repository_id": "grc",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_required_state": "clean before and after all I03A inspection or generic conformance",
+    "graph_repository_mutation_allowed": false,
+    "entry_gates": {
+      "P2-I2-BRIEF-GATE": "passed",
+      "P2-I2-SOURCE-AUDIT-GATE": "passed_after_revalidation",
+      "P2-I2-SOURCE-ADMISSION-GATE": "passed_after_i02r2_revalidation"
+    }
+  },
+  "frozen_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "f7b5ffafcdb1c3a8a3a24fd71e132ab3fa616807d109b3efd6bef8a5c93ecb03",
+      "role": "accepted_semantic_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "sha256": "c1cc5c4ee83e80783059615e20d2c9601454ca8fa12fcdf7be419de679b32957",
+      "role": "pre_i03_activity_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "sha256": "0ea2521efc335ad2e62c85025b2c66350e2da980151b3d77545a715845f9d74a",
+      "role": "pre_i03_operational_projection_scaffold"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md",
+      "sha256": "4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930",
+      "role": "current_capability_audit_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json",
+      "sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+      "role": "current_requirement_to_surface_matrix"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md",
+      "sha256": "331a73d89299a942cd6d6636870b140198cfff1caf2b527fffde0fa214d1c623",
+      "role": "current_source_admission_narrative"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+      "sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+      "role": "current_admitted_source_and_provider_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-reset-baseline-validation.json",
+      "sha256": "796f58e91958c9ef991e5218ee9804e10cdbdb298ad5c7af3b574956667696d0",
+      "role": "current_restoration_conformance_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/lane-hypotheses.md",
+      "sha256": "2ccf3bc062cb2a5eed0cf475d35f1a32a675df91a040133fb4058119cb59a3b9",
+      "role": "frozen_l02_hypothesis_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/post-r3-ecology-discriminator-amendment.md",
+      "sha256": "173aff056fd1738d82cca82ca2892192f74e36791ff87a649976f13fa4b700b2",
+      "role": "accepted_ecology_discriminator_amendment"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/outcome-and-stopping-contract.md",
+      "sha256": "b9c0d4b4c17e48d3efae831bae3369a81eb034a193c902f907fb6dbf09096fa2",
+      "role": "frozen_outcome_and_stopping_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/developmental-interpretation-contract.md",
+      "sha256": "92fd37c18777f6b366df242a99dbdc1b556cb57b1005f7415d875f7a35a258f1",
+      "role": "frozen_developmental_interpretation_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L02.json",
+      "sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483",
+      "role": "frozen_l02_cell_control_and_metric_identity"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "sha256": "a4348fff7dfd3a671fca2cf95bd401c626219ef848d63cfb6ab662069c3a61f2",
+      "role": "pre_i03_cumulative_decision_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+      "sha256": "ed317a5f8f5729966ca43caccc60037b0c83c273f26061fd5c79d9b45ab9de09",
+      "role": "current_admitted_source_inventory"
+    }
+  ],
+  "selection_discipline": {
+    "order": [
+      "native_when_adequate",
+      "minimal_explicit_producer_when_native_is_absent_or_inadequate",
+      "reviewed_missing_prerequisite_when_no_bounded_realization_preserves_the_discriminator"
+    ],
+    "native_adequacy_rule": "A native surface is adequate only if the complete composition preserves one common non-private carrier, attributable joint constitution, selected dependence mode, mode-appropriate intervention, private-partition competitor, audit-only lineage, and all seven cells plus five controls without forbidden label or private-state bypass.",
+    "producer_minimality_rule": "A producer may supply only surfaces shown absent or inadequate by the admitted capability authority. Every producer-owned state, transition, read, write, intervention, and configuration identity must be explicit, and the producer may not compute both the pool and the later response through an inseparable shortcut.",
+    "no_assumption_rule": "Unresolved callable semantics, state ownership, causal reachability, or held-fixed feasibility blocks selection until resolved from admitted source or a generic non-candidate conformance check."
+  },
+  "review_questions": [
+    "Which complete bounded state-carried realization best satisfies the discriminator under the native-first selection discipline?",
+    "For every required surface, is native support adequate, inadequate, absent, external, or unsupported?",
+    "What exact minimal producer roles remain after native surfaces are composed?",
+    "How is pool_dependence_mode = state_carried instantiated without comparing or binding the later history-carried and hybrid profiles?",
+    "What exact state is the common carrier C_P, who owns it, and what proves non-private access?",
+    "Which operations implement U, audit_append, and V without allowing lineage labels to enter V?",
+    "Can at least two attributable source contributions jointly constitute one carrier while retaining audit lineage?",
+    "What intervention changes the common carrier or selected dependence while matching contributors, lineage, opportunity, and other causally held-fixed state?",
+    "What private-partition competitor preserves marginal contributions without one shared carrier?",
+    "How are all seven logical cells and five L02 controls realized without changing their stable identities?",
+    "For each OP-01 through OP-09, what state-carried qualitative relation, held-fixed variables, and fail-closed scientific effect are frozen?",
+    "Which numerical response, resolution, aggregation, comparator, threshold, seed, and machine-evaluation choices remain explicitly unresolved for I04?"
+  ],
+  "inspection_and_conformance_boundary": {
+    "allowed": [
+      "Read only exact sources and public callables admitted by the I02R2 manifest at the admitted graph revision.",
+      "Inspect frozen RCAE authority artifacts and historical P2-I1 structure without importing P2-I1 evidence or conclusions.",
+      "Run only minimal generic conformance needed to resolve a source-level uncertainty, using the admitted checkout, no bytecode/cache writes in graph, and no P2-I2 candidate configuration.",
+      "Construct RCAE-only declarative state-carried realization, hypothesis, decision, validation, and report artifacts."
+    ],
+    "prohibited": [
+      "Graph/PyGRC repository mutation, dependency installation, ambient-package substitution, or unadmitted source use.",
+      "Candidate, cell, control, matched-null, calibration, response-threshold, or scientific outcome execution.",
+      "Selection of numerical response, resolution, delta, aggregation, seeds, or machine pass rules owned by I04/I05.",
+      "Treating capability, source admission, generic conformance, or realization design as positive L02 evidence.",
+      "Inspecting, comparing, binding, or resolving the history-carried or hybrid realization profiles before their owner-reviewed sub-iterations."
+    ]
+  },
+  "mutation_boundary": {
+    "allowed_repository": "RCAE",
+    "allowed_surfaces": [
+      "contracts/p2-i2 I03A artifacts",
+      "hypotheses/p2-i2-operational-hypotheses.md",
+      "implementation/P2-I2 decision and checklist artifacts",
+      "reports/P2-I2-I03A artifacts",
+      "experiment navigation and master checklist"
+    ],
+    "graph_repository_read_only": true
+  },
+  "required_outputs": [
+    "contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json",
+    "hypotheses/p2-i2-operational-hypotheses.md state-carried profile freeze",
+    "reports/P2-I2-I03A-state-carried-realization-and-operational-hypothesis-freeze.md",
+    "implementation/P2-I2-decision-record.md with P2-I2-DEC-010",
+    "implementation/P2-I2-shared-pool-co-conditioning-checklist.md I03A disposition",
+    "explicit I03A owner-review stop without I03B or I04 authorization"
+  ],
+  "evidence_effect": {
+    "state_carried_realization_and_causal_preregistration_authority_possible": true,
+    "umbrella_discriminator_gate_pass_possible": false,
+    "i03b_authorized": false,
+    "calibration_authorized": false,
+    "candidate_execution_authorized": false,
+    "scientific_evidence_assigned": false,
+    "l02_result_assigned": false
+  },
+  "failure_effects": [
+    "Any missing or mismatched frozen authority blocks state-carried realization comparison until corrected under change control.",
+    "Any unresolved causal bypass, inaccessible common state carrier, inseparable producer shortcut, or unrealizable mandatory cell/control blocks I03A review-ready status.",
+    "A bounded state-carried missing-prerequisite disposition remains reviewable without opening I03B or I04.",
+    "No failed design or conformance check is a negative L02 result."
+  ],
+  "exit_gate": {
+    "review_ready": "P2-I2-I03A-REVIEW-READY; stop for owner review. The umbrella discriminator gate remains in progress, and I03B/I04 remain unauthorized.",
+    "earlier_stop": "State-carried missing-prerequisite disposition retained for owner review; umbrella discriminator gate does not pass and later work remains unauthorized."
+  }
+}

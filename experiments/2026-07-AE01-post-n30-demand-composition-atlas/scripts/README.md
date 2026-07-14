@@ -327,3 +327,18 @@ those files validate:
 The execution manifest is a retention index. It cannot assign a boundary rung
 or terminal classification, and it preserves each run's independent
 reconstruction status.
+
+## P2-I2 I03AR1 state-carried conformance
+
+`p2_i2_i03ar1_conform.py` resolves and validates the immutable I03AR1 base
+freeze plus its governed I03AR1R1 comparator revision. It checks the RCAE
+`.venv`, admitted PyGRC import root, exact graph revision/source digests,
+read-only graph status, harness identity, fixture, assertions, run limit, and
+scientific-evidence quarantine before constructing a model.
+
+The one replacement evidence invocation and one reconstruction invocation are
+already exhausted. They passed 136/136 assertions and produced byte-identical
+records. The exact historical commands remain in the freeze and
+reconstruction receipt for audit; this README grants no rerun authority. See
+the [I03AR1 report](../reports/P2-I2-I03AR1-state-carried-runtime-conformance.md)
+and [attempt receipt](../contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json).

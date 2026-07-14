@@ -1,8 +1,8 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief, corrected source-
-audit, and I02R2 reset-aware source-admission gates passed; I03 ready but not
-begun
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 I03A/I03AR1 state-carried
+design and quarantined runtime-conformance package is review-ready;
+I03B/I03C/I04 remain unauthorized or blocked
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -67,6 +67,30 @@ and confirms `selected_provider = null`. The subsequent
 admits updated graph revision `83e3a300426631ee4df71b661b67d4fcfdfed594`,
 validates persisted reset behavior, and makes separately versioned v2 identity
 available while leaving provider, realization, and dependence mode unselected.
+Owner direction then split I03 into review-separated 8A state-carried, 8B
+history-carried, and 8C hybrid profiles. The
+[I03A state-carried freeze](reports/P2-I2-I03A-state-carried-realization-and-operational-hypothesis-freeze.md)
+selects a `pygrc_native_candidate`: native packets jointly alter one
+node-coherence carrier and the native feedback/producer path supplies the
+later state-dependent transition. RCAE owns only role/access declarations,
+orchestration, matching, and control guards. Owner-accepted `P2-I2-DEC-012`
+then authorized bounded, non-scientific runtime conformance before later
+calibration. The retained
+[I03AR1 conformance report](reports/P2-I2-I03AR1-state-carried-runtime-conformance.md)
+passes 136/136 frozen assertions and reconstructs byte-identically after the
+governed I03AR1R1 floating-point assertion correction. It demonstrates native
+writes, interventions, invariances, private one-node reads, model-owned later
+response, equal save/load continuation, and persisted reset-baseline behavior.
+The original stopped invocation produced no output and is retained as
+`infrastructure_invalid`. The package is review-ready, not scientifically
+supported; no calibration, registered candidate matrix, control result, or L02
+evidence exists, the umbrella discriminator gate remains open, and I03B is not
+authorized before review.
+Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
+three modes remain in the I04–I11 program, while native/producer/missing-
+prerequisite selection occurs separately within each mode. It did not itself
+accept the I03A realization or authorize later work; the later DEC-012 path
+accepted I03A as the bounded I03AR1 conformance baseline only.
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -223,7 +247,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           brief/I01R1 audit/I02R2 reset-aware admission passed; I03 not begun
+P2-I2                                           I03A/I03AR1 state-carried package review-ready; I03B unauthorized
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

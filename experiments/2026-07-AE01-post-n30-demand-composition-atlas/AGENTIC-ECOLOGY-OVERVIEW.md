@@ -402,12 +402,33 @@ blocks reset/v2 until explicit prospective rebase. All ecology-owned state and
 bounded continuation obligations remain later composition duties. The retained native
 surfaces can compose packet contributions into one node-coherence carrier and
 a carrier-scoped feedback response with native restoration, but complete
-realization adequacy is not assigned: independent state/history intervention
-and other controls remain inadequate. The custom candidate-shaped probe is
-quarantined from capability and scientific evidence. The audit supplies no
-lane result, and source admission supplies no realization or scientific
-evidence. The next named iteration is I03 realization and operational-
-hypothesis freeze.
+realization adequacy was not assigned at audit time: independent state/history
+intervention and other controls remained inadequate as generic first-class
+surfaces. The custom candidate-shaped probe is quarantined from capability and
+scientific evidence.
+
+I03 now proceeds through owner-directed, review-separated 8A state-carried, 8B
+history-carried, and 8C hybrid profiles. I03A is review-ready with a
+`pygrc_native_candidate`: two native packet paths add into one node-coherence
+carrier, a native feedback read encounters that state, and the model-owned
+producer schedules the later packet. Native diversion and carrier debit bind
+the state intervention; RCAE owns role/access declarations, branch matching,
+and the private no-common-read guard but no causal pool or response producer.
+I03A is causal preregistration, not support evidence. Under owner-accepted
+`P2-I2-DEC-012`, I03AR1 then exercised only the frozen realization boundary on
+a synthetic conformance fixture. After a governed I03AR1R1 correction limited
+to binary floating-point delta comparison, the native candidate passed 136/136
+assertions and reconstructed byte-identically. Native writes, diversion/debit,
+order and lineage invariance, separate private reads, alternate access,
+model-owned later response, equal save/load continuation, and reset to the
+persisted baseline all conformed. This remains implementation evidence only:
+no calibration, registered scientific candidate, control result, or L02
+support/falsification was produced. The umbrella discriminator gate remains
+open and I03B is unauthorized pending owner review of I03AR1.
+Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
+and hybrid are all retained through downstream execution and interpretation;
+realization selection occurs within each mode, not among the modes. This
+changes no I03A causal claim and opens no later gate.
 
 Later lanes examine trace dynamics, support, boundaries, circulation, and
 parent-basin demands. Only after all lanes close may the atlas compare their

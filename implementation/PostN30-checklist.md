@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.32
+**Baseline revision:** 0.35
 
 **Date:** 2026-07-14
 
@@ -1143,6 +1143,11 @@ Entry condition:
   checklist, one cumulative decision record, and subordinate operational
   hypothesis projections. Evidence:
   [P2-I2 checklist](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md).
+- [x] Owner-accepted `P2-I2-DEC-011` corrects singular mode-selection wording:
+  state-carried, history-carried, and hybrid remain three mode-specific
+  realizations through execution and interpretation; native/producer/missing-
+  prerequisite selection occurs within each mode. The brief gate remains
+  passed and no scientific evidence is assigned.
 - [x] `P2-I2-SOURCE-AUDIT-GATE` passed after I01R1 revalidated the
   preregistered read-only audit, quarantined candidate-shaped custom-probe
   behavior, corrected CAP-04 to inadequate, and retained a composition-
@@ -1159,6 +1164,15 @@ Entry condition:
   [P2-I2 I02 report](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02-source-admission-and-restoration-transition.md)
   [I02R1 revalidation](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R1-admission-closeout-revalidation.md),
   and [I02R2 reset revalidation](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md).
+- [x] `P2-I2-I03A` state-carried causal design and its DEC-012-governed
+  `P2-I2-I03AR1` runtime conformance are review-ready. After checklist-first
+  I03AR1R1 corrected only strict derived floating-point delta comparison, the
+  native realization passed 136/136 assertions and reconstructed byte-for-
+  byte. The original stopped invocation remains `infrastructure_invalid` with
+  no output/evidence. This is implementation conformance only; I03B and I04
+  remain unauthorized. Evidence:
+  [I03A design](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03A-state-carried-realization-and-operational-hypothesis-freeze.md)
+  and [I03AR1 conformance](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03AR1-state-carried-runtime-conformance.md).
 
 Required lane work:
 
@@ -2040,7 +2054,7 @@ Use this section when checking a conditional item as deferred.
 | P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Accepted by Review R2; passed |
 | P1-GATE | Structured R2 checklist and closeout; `AE01-C1` and `AE01-C2` assigned; no-positive-result boundary preserved | 2026-07-10 | Project-owner-supplied Review R2 accepted; passed |
 | P2-I1-THEORY-GATE | Accepted P2-I1 brief and detailed checklist; bounded niche-conditioning meaning, anti-subsumption, negative/redirective outcomes, and open decision timing preserved | 2026-07-10 | Accepted by project owner; passed |
-| P2-I2-BRIEF-GATE | Accepted P2-I2 brief, checklist-first activity ledger, cumulative decision record, and subordinate operational-hypothesis scaffold; no source audit or scientific evidence assigned | 2026-07-14 | Accepted by project owner; passed |
+| P2-I2-BRIEF-GATE | Accepted P2-I2 brief, checklist-first activity ledger, cumulative decision record, subordinate operational-hypothesis scaffold, and owner-accepted three-mode retention correction; no source audit or scientific evidence assigned by the gate | 2026-07-14 | Accepted by project owner; passed after DEC-011 scope clarification |
 | P2-I2-SOURCE-AUDIT-GATE | Frozen audit scope, corrected eleven-question matrix, exact graph revision/source digests/command provenance, quarantined candidate-shaped probe, CAP-04 inadequate, composition-capable native candidate, explicit missing surfaces, and clean graph checkout; no source admission, realization selection, or lane result | 2026-07-14 | I01R1 retained revalidation; passed |
 | P2-I2-SOURCE-ADMISSION-GATE | Updated exact graph revision, 31 source/import/callable identities, reset-baseline persistence across save/load, restoration identity v1/v2 boundary, legacy/rebase compatibility, and later bounded-continuation duty; no realization, restoration correctness beyond generic conformance, or scientific result | 2026-07-14 | I02R2 manifest, validation/report, and DEC-009; passed after revalidation |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
@@ -2121,7 +2135,10 @@ Change log:
 | CL-032 | 2026-07-14 | Revision 0.29 completed checklist-first `P2-I2-I01R1` after owner-supplied capability-audit closeout review. It quarantines the custom combined/single/label behavioral probe from capability and scientific evidence, revalidates the audit from public source and pre-existing generic tests, corrects CAP-04 from adequate to inadequate, distinguishes public causal-history evidence overlays from active history, and retains explicit intervention/mode/restoration ownership profiles. `P2-I2-SOURCE-AUDIT-GATE` re-passes; no source, realization, dependence mode, calibration, candidate evidence, or lane result is assigned. | P2-I2 corrected source-audit closure and I02 entry | Superseded by CL-033 |
 | CL-033 | 2026-07-14 | Revision 0.30 completed checklist-first `P2-I2-I02` under a frozen read-only scope. It admits the exact current graph revision, seventeen source roles, twenty-four public symbol roles, and native LGRC9V3 restoration provider; retains the P2-I1 RCAE projection as historical-only at this revision; forbids silent provider transitions; and binds external-state composition and later bounded continuation duties. `P2-I2-CHG-004` corrects and revalidates the callable scope before admission. `P2-I2-SOURCE-ADMISSION-GATE` passes; I03 is ready with no realization, dependence mode, calibration, candidate evidence, or lane result assigned. | P2-I2 source-admission closure and I03 entry | Superseded by CL-034 |
 | CL-034 | 2026-07-14 | Revision 0.31 completed checklist-first `P2-I2-I02R1` after owner-supplied identity/authority/transition review. It corrects CHG-004 to `source_admission_scope_correction`, honestly reconstructs but does not invent byte identity for freeze 1.0.0, ties imports and all twenty-four symbol contracts to the admitted checkout, independently validates provider input/schema/canonical digest boundaries, and dispositions all continuation-relevant state. It finds private reset baseline outside current-state identity and requires reset prohibition or explicit composite identity. Provider selection remains null and configured-only; no realization, restoration correctness, candidate evidence, or L02 result is assigned. | P2-I2 source-admission revalidation and I03 entry | Superseded by CL-035 |
-| CL-035 | 2026-07-14 | Revision 0.32 completes checklist-first `P2-I2-I02R2` after the project owner reports an upstream PyGRC reset-baseline correction at clean revision `83e3a300426631ee4df71b661b67d4fcfdfed594`. Exact read-only validation admits 31 sources/callables, confirms original/restored reset equality, three-cycle persistence, explicit rebase, legacy/malformed fail-closed behavior, unchanged v1, and reset-aware v2. Provider selection remains null; no realization or scientific evidence is assigned. | P2-I2 reset-baseline source/provider revalidation and I03 entry | Active |
+| CL-035 | 2026-07-14 | Revision 0.32 completes checklist-first `P2-I2-I02R2` after the project owner reports an upstream PyGRC reset-baseline correction at clean revision `83e3a300426631ee4df71b661b67d4fcfdfed594`. Exact read-only validation admits 31 sources/callables, confirms original/restored reset equality, three-cycle persistence, explicit rebase, legacy/malformed fail-closed behavior, unchanged v1, and reset-aware v2. Provider selection remains null; no realization or scientific evidence is assigned. | P2-I2 reset-baseline source/provider revalidation and I03 entry | Superseded by CL-036 |
+| CL-036 | 2026-07-14 | Revision 0.33 records the owner-directed staged I03 program—8A state-carried, review, 8B history-carried, review, 8C hybrid, review—and brings only `P2-I2-I03A` to review-ready. The state-carried profile selects a `pygrc_native_candidate`: native packet writes/debit, one node-coherence carrier, native feedback read, and model-owned later producer, with RCAE limited to role/access declarations, orchestration, matching, and guards. Static validation passes 18 invariants over 31 admitted sources, eight selected callables, seven cells, five controls, nine OPs, and eleven CAP dispositions. No candidate/calibration operation or scientific result is assigned; the umbrella discriminator gate remains open and I03B/I04 remain unauthorized. | P2-I2 I03A owner review boundary | Superseded by CL-037 |
+| CL-037 | 2026-07-14 | Revision 0.34 records owner-accepted `P2-I2-DEC-011` and `P2-I2-CHG-008`: all three dependence modes are retained through I04–I11, while native/producer/missing-prerequisite selection occurs separately within each mode. The brief's singular wording and downstream checklist are corrected; one lane terminal classification must preserve separate mode dispositions. The original I03A entry freeze remains historical authority and affected cross-artifact validation is rerun without candidate, control, matched-null, calibration, or scientific execution. DEC-010 acceptance, I03B, and I04 remain pending. | P2-I2 three-mode downstream scope and I03A review boundary | Superseded by CL-038 |
+| CL-038 | 2026-07-14 | Revision 0.35 records owner-accepted DEC-012/CHG-009 and completes the checklist-first I03AR1 state-carried runtime-conformance package. One immutable synthetic fixture exercises native common-carrier writes, diversion/debit, order/lineage invariance, separate private reads, alternate responder access, model-owned response, save/load equal continuation, and persisted reset. The original invocation stopped without output on strict binary-float equality; I03AR1R1/CHG-010 froze the sole comparator correction (`abs_tol=1e-12`, `rel_tol=0`). Its one replacement and one reconstruction pass 136/136 and are byte-identical. This is quarantined implementation evidence only; I03B/I04 and all scientific authority remain closed pending owner review. | P2-I2 I03AR1 owner review boundary | Active |
 
 ## 17. Current next actions
 
@@ -2154,8 +2171,23 @@ The next unchecked actions in dependency order are:
 11. [x] Complete `P2-I2-I02R2` reset-baseline persistence and restoration-
     identity revalidation against the updated exact graph revision before
     restoring I03 readiness.
-12. [ ] Complete `P2-I2-I03` realization, discriminator, dependence-mode, and
-    operational-hypothesis freeze or retain a missing-prerequisite
-    classification before calibration.
+12. [ ] Complete the review-separated `P2-I2-I03` mode program before
+    calibration.
+    - [x] `8A / P2-I2-I03A`: retain a review-ready state-carried native
+      candidate package and stop without opening I03B or I04.
+    - [x] Record owner-accepted DEC-011/CHG-008: retain all three modes through
+      execution; select native/producer/missing-prerequisite realization only
+      within each mode.
+    - [x] Record owner-accepted DEC-012/CHG-009 and complete 8A-R1 runtime
+      conformance under I03AR1/I03AR1R1, including byte reconstruction and the
+      no-scientific-evidence quarantine.
+    - [ ] Owner review/acceptance or revision of the complete I03A/I03AR1
+      state-carried package.
+    - [ ] `8B / P2-I2-I03B`: after I03AR1 review, freeze the history-carried
+      profile and stop for review.
+    - [ ] `8C / P2-I2-I03C`: after I03B review, freeze the hybrid profile and
+      stop for review.
+    - [ ] Close the umbrella discriminator gate only after all three reviewed
+      profiles or retained mode-specific missing-prerequisite dispositions.
 13. [ ] Begin any later independently owned Phase 2 lane only under its own
     candidate-blind calibration, registration, and execution boundaries.

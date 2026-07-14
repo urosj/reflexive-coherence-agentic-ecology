@@ -1,7 +1,8 @@
 # P2-I2 Shared-Pool Co-Conditioning Brief
 
 **Status:** accepted P2-I2 theory, geometry, ecology, and observation directive;
-accepted by the project owner on 2026-07-14
+accepted by the project owner on 2026-07-14; three-mode retention scope
+correction accepted by the project owner on 2026-07-14
 
 **Lane:** `AE01-L02`
 
@@ -41,6 +42,23 @@ The brief is intentionally not a result, calibration record, registration
 record, realization profile, execution plan, or implementation selection. It
 prevents the first convenient multi-source representation from quietly
 becoming the theory of a shared pool.
+
+`P2-I2-DEC-011` corrects the original singular mode-selection wording. P2-I2
+retains `state_carried`, `history_carried`, and `hybrid` as three separately
+reviewed and tested causal profiles. Native, minimally producer-assisted, or
+missing-prerequisite selection occurs within each mode; no later iteration
+chooses one of the three modes as a winner. This correction changes no frozen
+Phase 1 hypothesis, cell, control, metric relation, terminal state, or claim
+ceiling.
+
+`P2-I2-DEC-012` permits a bounded, separately frozen realization-runtime-
+conformance pass before each mode is accepted for calibration. Conformance may
+exercise declared native/producer interfaces, interventions, access guards,
+restoration, reset, and equal-input continuation. It is quarantined
+implementation evidence: it cannot select scientific values, responses,
+comparators, delta, seeds, or matrix entries; cannot enter calibration; and
+cannot support or falsify L02. A failed conformance classifies realization
+inadequacy or a missing prerequisite and reopens that mode before calibration.
 
 Review R3 also constrains how the lane should be implemented. P2-I2 may reuse
 the common contract shape and evidence methods proven by P2-I1, but it should
@@ -318,7 +336,7 @@ forbidden bypass:
 ```
 
 `C_P` contains encounter state, active carrier history, or both according to
-the selected dependence mode. `q(k)` may include causal contribution
+the applicable retained dependence-mode profile. `q(k)` may include causal contribution
 properties such as amount, location, timing, or registered contribution type.
 An arbitrary source label may remain in `L`; it must not enter `V`. This
 factorization constrains causal interfaces, not code location. A centrally
@@ -375,7 +393,8 @@ A derived interaction, synergy, or order term may be retained as a secondary
 diagnostic. It cannot replace the frozen primary normalized margin or the
 causal controls.
 
-Before calibration, the lane must select exactly one dependence mode:
+Before calibration, the lane must retain and separately preregister all three
+dependence modes:
 
 ```text
 pool_dependence_mode:
@@ -384,7 +403,8 @@ pool_dependence_mode:
   hybrid
 ```
 
-The modes determine control semantics rather than claim strength:
+The modes determine control semantics rather than claim strength and are not
+ranked against one another:
 
 - `state_carried`: the complete common state at encounter time is causal.
   Order or shuffle variants that preserve that state should preserve the later
@@ -590,7 +610,7 @@ variants after candidate observation:
 | `reference-pool` | Declare carrier identity, access scope, baseline state/history, support, reserve, leakage, maintenance, and later response without the candidate combined state or active history. |
 | `individual-contributions` | Execute and preserve each attributable source contribution separately under matched opportunity and support. |
 | `combined-orders` | Constitute the candidate pool from all registered contributions in at least two frozen orders when order can matter, preserving each raw order response. |
-| `pooled-history-shuffle` | Preserve registered marginal contribution quantity and exercise the selected dependence mode: preserve complete state for an expected state-carried invariance, alter carrier history for a history-carried divergence, or separate both components for a hybrid candidate. |
+| `pooled-history-shuffle` | Preserve registered marginal contribution quantity and exercise each applicable dependence-mode profile: preserve complete state for an expected state-carried invariance, alter carrier history for a history-carried divergence, or separate both components for a hybrid candidate. |
 | `contributor-removal` | Remove one contributor or contribution while preserving the remaining source activity, pool opportunity, and later-response conditions; pair with source-label permutation. |
 | `global-state-exclusion` | Materialize the private-partition competitor and substitute or expose the nearest direct-address, scheduler, or controller-assembled global explanation; verify that none can satisfy the pool-specific causal chain. |
 | `access-capacity-contrast` | Vary one frozen capacity, contributor, or access-scope axis while preserving the causal question and recording budget/leakage consequences. |
@@ -721,12 +741,13 @@ calibration. At minimum, the calibration preregistration must freeze:
 - the inherited graph relation, ecology discriminator, controlled consequence,
   insufficient-repetition case, discriminator controls, and claim ceiling
   stated in Section 5.1;
-- the selected realization class, candidate pool meaning, dependence mode,
-  and operational test for one carrier;
+- each retained mode's selected realization class, candidate pool meaning,
+  dependence semantics, and operational test for one carrier;
 - the causal factorization, attribution-only invariance, common-state
   intervention, non-private access witness, and audit-log exclusion;
-- the exact raw later-continuation response and orientation;
-- the one primary combined-state-or-history/comparator pairing and its
+- each mode's exact raw later-continuation response and orientation, with any
+  shared definition explicitly justified rather than assumed;
+- one primary combined-state-or-history/comparator pairing per mode and each
   nearest-insufficient-alternative rationale;
 - the aggregation and paired-margin functions shared by calibration and live
   analysis;
@@ -741,8 +762,10 @@ calibration. At minimum, the calibration preregistration must freeze:
 Before candidate execution, the registration evidence bundle must additionally
 declare:
 
-- exact source carriers, source continuity criteria, and attribution fields;
-- exact pool carrier, identity boundary, access scope, and persistence window;
+- exact source carriers, source continuity criteria, and attribution fields
+  for every retained mode;
+- each mode's exact pool carrier, identity boundary, access scope, and
+  persistence window;
 - source-current native-surface audit and adequacy disposition;
 - exact contribution operations, amounts or conditions, ordering, timing,
   costs, and support contexts;
@@ -755,9 +778,9 @@ declare:
   debt, and graph-discriminator fields when applicable;
 - explicit transition to the admitted versioned PyGRC restoration provider,
   plus complete composite branch identity and continuation procedure;
-- exact realization of all seven logical cells and five L02 controls,
-  including the private-partition, factorization, clamp, jointness, and
-  quantity-matched subconfigurations; and
+- exact realization of all seven logical cells and five L02 controls for every
+  retained mode, including the private-partition, factorization, clamp,
+  jointness, and quantity-matched subconfigurations; and
 - lane-specific claim, support, debt, and stopping boundaries.
 
 The dedicated P2-I2 checklist will own common seeds, attempt/resource limits,
@@ -765,6 +788,14 @@ worker isolation, artifacts, manifests, reconstruction, validation, compact
 indexes, and closure evidence by reference to the existing common contracts.
 This brief retains their gates without duplicating the full completion
 ceremony. None of these declarations answers whether a shared pool occurs.
+
+Before calibration, the checklist may additionally require a mode-specific
+runtime-conformance fixture under DEC-012. That fixture must be frozen before
+its first runtime call, have a finite no-search run count, use identities
+separate from calibration/registration/candidate execution, and retain an
+explicit no-scientific-evidence receipt. It does not replace I04
+preregistration, I05 calibration, I06 registration, I07 authorization, or I08
+execution.
 
 ## 12. Open questions and decision timing
 
@@ -777,7 +808,7 @@ the relevant evidence or decision basis exists.
 | Is a candidate native surface adequate to joint constitution and combined-state dependence? | Native-adequacy decision before calibration | Record the precise unsuitable/missing distinction; select a minimal producer path or classify the prerequisite. |
 | What are the two or more distinguishable source carriers or lineages? | Calibration preregistration concept; exact IDs at registration | Multi-source attribution and L02-R02 remain blocked. |
 | What makes the carrier one pool rather than one container holding private records? | Calibration preregistration, verified by registration and controls | Candidate execution remains blocked. |
-| Is dependence `state_carried`, `history_carried`, or `hybrid`? | Calibration preregistration | Shuffle, order, clamp, and primary-comparator semantics remain undefined. |
+| How are `state_carried`, `history_carried`, and `hybrid` each realized without selecting among them? | Review-separated I03A–I03C profiles; calibration preregistration preserves all three | Any unbound mode retains a reviewed missing-prerequisite disposition; shuffle, order, clamp, and primary-comparator semantics remain undefined until its profile is bound. |
 | What exact combination or mixing rule constitutes pool state or active history? | Calibration preregistration | The primary metric and mode-appropriate controls are undefined. |
 | Which one later-continuation response is primary? | Calibration preregistration | Delta and candidate execution remain blocked; do not search across outcomes. |
 | Which nearest insufficient-repetition comparator owns the primary normalized margin? | Calibration preregistration | The metric remains ambiguous; expected margin size cannot choose the comparator. |
@@ -787,7 +818,7 @@ the relevant evidence or decision basis exists.
 | How are reserve, accumulation, mixing, depletion, saturation, leakage, and maintenance observed? | Registration | Measure each or retain an explicit applicability/debt disposition. |
 | What producer state is minimally necessary if native support is inadequate? | Constructed-mechanism decision before registration | No undeclared producer transition may enter the run. |
 | Does a producer compute both pool state and later success? | Construction review and withdrawal design | Treat the relation as producer-carried unless separable intervention proves otherwise. |
-| Does native restoration identity cover the selected pool state? | Realization-profile transition and registration | Compose external pool identity explicitly or block branching; never assume coverage. |
+| Does native restoration identity cover each retained mode's selected pool state and active history? | Realization-profile transition and registration | Compose external identity explicitly per mode or block that mode's branching; never assume coverage. |
 | What private-partition, direct-address, global-state, and scheduler alternatives are closest? | Calibration preregistration; exact subconfigurations at registration | Global/private exclusion is not testable and L02-R04 remains blocked. |
 | Which capacity, contributor, or access-scope axis is the one transfer contrast? | Registration | R05 remains unavailable; do not search across variants. |
 | What support or parent context carries the relation? | Registration and control completion | Preserve support dependence and block parent/ecology relabels. |
@@ -811,7 +842,8 @@ redirect, redescribe, or stop?
 The common completion contract and dedicated checklist own exhaustive result
 retention. This brief additionally requires the interpretation to preserve:
 
-- the selected dependence mode and every mode-specific control relation;
+- all three retained dependence modes and every mode-specific control
+  relation, including any reviewed missing-prerequisite disposition;
 - the common-state/audit-lineage factorization, access witness, and
   private-partition result;
 - exact native, producer-assisted, constructed, and ecology-owned state roles,
@@ -833,7 +865,8 @@ The lane-specific output spine is:
    decision record;
 3. a source-current PyGRC capability audit and explicit restoration-profile
    transition or classified fallback;
-4. frozen calibration and registration evidence for the selected realization;
+4. frozen mode-indexed calibration and registration evidence for all three
+   retained realizations or reviewed mode-specific missing prerequisites;
 5. the L02 pattern/surface and any constructed-mechanism records, with a
    compact lane-local control-resolution index; and
 6. one reconstructed terminal classification and developmental interpretation
@@ -852,7 +885,10 @@ P2-I2 closes only when the frozen attempt matrix has one complete terminal
 classification, every mandatory common and L02 control resolves through the
 compact index, retained evidence reconstructs, native and producer ownership
 are explicit, and the developmental interpretation records the lowest honest
-boundary and one bounded next move.
+boundary and one bounded next move. The one lane-level terminal classification
+must preserve separate state-carried, history-carried, and hybrid realization,
+execution, control, support, and developmental dispositions; it may not select
+or collapse them by convenience or observed outcome.
 
 The maximum handoff is a bounded shared-pool co-conditioning demand pattern
 with its native/constructed support, contribution structure, access scope,
