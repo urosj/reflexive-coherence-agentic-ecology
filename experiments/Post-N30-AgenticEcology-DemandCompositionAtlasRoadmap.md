@@ -1,6 +1,7 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 is next
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief gate passed and
+source-current capability audit pending
 
 **Local experiment:** `AE01`
 
@@ -570,5 +571,6 @@ recurrence.
 
 P2-I1 is now closed with a bounded differential niche-conditioning demand
 pattern under explicit constructed support. This result does not assign
-cross-lane recurrence or raise the program beyond `AE01-C2`. P2-I2 is the next
-lane.
+cross-lane recurrence or raise the program beyond `AE01-C2`. P2-I2 has passed
+its brief gate under a checklist-first activity boundary; its source-current
+capability audit remains pending and supplies no evidence yet.

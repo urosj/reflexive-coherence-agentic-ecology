@@ -33,6 +33,15 @@ These documents preserve the distinction between N29/N30 evidence, ecology
 interpretation, constructed RCAE mechanisms, observed AE01 results, missing
 graph surfaces, and proposed graph discriminators.
 
+## Lane-local operational projections
+
+- [P2-I2 operational hypotheses](p2-i2-operational-hypotheses.md) project the
+  frozen `AE01-H-L02` hypothesis and accepted P2-I2 brief into nine
+  realization-local falsifiable statements. They remain scaffolded and
+  outcome-free until the named source-audit, source-admission, realization,
+  and preregistration iterations bind them. Their local IDs do not extend the
+  closed Phase 1 hypothesis registry or schema vocabulary.
+
 ## Hypothesis interpretation
 
 The seven lanes are not seven attempts to simulate complete ecologies. They

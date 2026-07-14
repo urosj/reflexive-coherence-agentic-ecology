@@ -1,6 +1,7 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 is next
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief accepted and
+checklist-governed source audit pending
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -42,6 +43,14 @@ with its accepted
 [cumulative decision record](implementation/P2-I1-decision-record.md),
 [C02 result](reports/P2-I1-C02-result.md), and dormant
 [future alternatives history](implementation/P2-I1-future-alternatives.md)
+
+**Second Phase 2 lane:**
+accepted [P2-I2 shared-pool co-conditioning brief](implementation/P2-I2-shared-pool-co-conditioning-brief.md),
+[activity checklist](implementation/P2-I2-shared-pool-co-conditioning-checklist.md),
+[cumulative decision record](implementation/P2-I2-decision-record.md), and
+subordinate [operational hypotheses](hypotheses/p2-i2-operational-hypotheses.md).
+The source-current capability audit is a pending named iteration; it has not
+been executed or used to admit a source.
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -198,7 +207,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           next; independently lane-gated
+P2-I2                                           brief gate passed; source audit pending
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

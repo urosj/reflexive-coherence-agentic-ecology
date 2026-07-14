@@ -388,6 +388,12 @@ conditioning later possibilities across susceptibility. P2-I2 must distinguish
 genuinely combined medium state from a mailbox, database, sequence of private
 writes, or global controller.
 
+The P2-I2 semantic brief is now owner-accepted. Its lane-local checklist and
+subordinate operational hypotheses require every later activity to be a named,
+gated iteration with retained evidence. The next iteration is the source-
+current PyGRC capability audit; it remains pending until its exact read-only
+scope, inputs, outputs, and evidence boundary are frozen in the checklist.
+
 Later lanes examine trace dynamics, support, boundaries, circulation, and
 parent-basin demands. Only after all lanes close may the atlas compare their
 requirements. The final outcome may be:

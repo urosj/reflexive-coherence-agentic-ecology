@@ -16,8 +16,10 @@ being placed here.
 
 AE01 has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is closed with one
 bounded, explicitly constructed L01 result, and Review R3 passed without tuning
-it. P2-I2 is next. Every remaining lane retains independent calibration,
-registration, control-resolution, execution, and claim boundaries.
+it. The P2-I2 brief gate has passed, with its source-current capability audit
+pending as a named checklist iteration. Every remaining lane retains
+independent calibration, registration, control-resolution, execution, and
+claim boundaries.
 
 ## Experiment authority
 

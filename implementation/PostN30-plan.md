@@ -2,9 +2,9 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.26
+**Plan revision:** 0.27
 
-**Date:** 2026-07-12
+**Date:** 2026-07-14
 
 **Scope:** repository architecture, directive hierarchy, Post-N30 atlas program,
 LGRC consumption boundary, specification promotion, and implementation sequence
@@ -1766,21 +1766,25 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.26:
+Current dependency order after revision 0.27:
 
-1. Begin P2-I2 with a lane brief that binds D-039's inherited relation,
-   ecology discriminator, controlled consequence, and insufficient-repetition
-   case before candidate-blind calibration.
-2. For every future lane, freeze candidate-blind calibration and exact
+1. Advance P2-I2 only through its accepted brief, evidence-expandable
+   activity checklist, cumulative decision record, and subordinate operational
+   hypothesis projections. Every activity, including capability and source-
+   admission audits, is a named checklist iteration with retained evidence.
+2. Complete the P2-I2 source-current capability audit, source-admission
+   disposition, and realization-bound operational hypothesis freeze in their
+   declared order before candidate-blind calibration.
+3. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
    closure.
-3. Apply the targeted L03 and L06 amendments before their calibration
+4. Apply the targeted L03 and L06 amendments before their calibration
    preregistration gates; static trace persistence and linear capacity
    transport cannot satisfy those lanes.
-4. Execute and classify lanes independently; preserve each prior result and
+5. Execute and classify lanes independently; preserve each prior result and
    never consume another lane's conclusion as evidence.
-5. Synthesize only after all required terminal and developmental-
+6. Synthesize only after all required terminal and developmental-
    interpretation records are comparable, then close AE01 before promoting
    canonical specifications or stable source abstractions.
 
@@ -1859,6 +1863,7 @@ directive.
 | 2026-07-10 | Revision 0.24: accepted D-038 and explicitly reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric sheets, candidate-blind calibration, machine-derived threshold relations, lane boundary ladders, two-axis developmental interpretations, classification-value and next-move discipline, and guarded local refinement. Thresholds remain frozen anchors without erasing lower or unexpected classes; no lane evidence opened. |
 | 2026-07-10 | Revision 0.25: recorded Review R2 over the complete P1-I1 through P1-I5 freeze, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Phase 2 candidate-blind calibration and lane registration are open; candidate execution remains behind each lane-local resolution/registration gate. Reconstructable calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory proportional guards, while R3 decides whether concrete use justifies new first-class records. No positive atlas result is assigned. |
 | 2026-07-12 | Revision 0.26: accepted D-039 after P2-I1/R3, requiring future lanes to name an inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. Added targeted prospective amendments for L03 trace dynamics beyond static persistence and L06 budget-closing circulation beyond linear transport. P2-I1, shared schemas, stable IDs, and retained evidence remain closed and unchanged. |
+| 2026-07-14 | Revision 0.27: accepted the P2-I2 semantic brief and opened only checklist-governed artifact construction. Added one evidence-expandable P2-I2 activity checklist, one cumulative decision record, and subordinate operational-hypothesis projections; every later action, including capability and source-admission audits, must be a named retained iteration. No P2-I2 source admission, calibration, registration, execution, or result is assigned. |
 
 ## 18. Program completion criteria
 

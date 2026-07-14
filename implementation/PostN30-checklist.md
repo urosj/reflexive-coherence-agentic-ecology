@@ -2,9 +2,9 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.26
+**Baseline revision:** 0.27
 
-**Date:** 2026-07-12
+**Date:** 2026-07-14
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
 
@@ -1135,9 +1135,19 @@ Exit gate `P2-I1-GATE`:
 Entry condition:
 
 - [x] `P1-GATE` passed.
+- [x] Accepted P2-I2 semantic brief binds the D-039 discriminator,
+  one-pool factorization, mode-aware controls, decision timing, and claim
+  ceiling. Evidence:
+  [P2-I2 brief](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md).
+- [x] `P2-I2-BRIEF-GATE` passed with one evidence-expandable activity
+  checklist, one cumulative decision record, and subordinate operational
+  hypothesis projections. Evidence:
+  [P2-I2 checklist](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md).
 
 Required lane work:
 
+- [ ] Complete every P2-I2 activity as a named iteration in the lane-local
+  checklist; capability audits and source admission may not occur off-ledger.
 - [ ] Define the shared carrier and access scope.
 - [ ] Distinguish common substrate memory from database/mailbox semantics.
 - [ ] Define accumulation, mixing, depletion, saturation, and leakage.
@@ -2014,6 +2024,7 @@ Use this section when checking a conditional item as deferred.
 | P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Accepted by Review R2; passed |
 | P1-GATE | Structured R2 checklist and closeout; `AE01-C1` and `AE01-C2` assigned; no-positive-result boundary preserved | 2026-07-10 | Project-owner-supplied Review R2 accepted; passed |
 | P2-I1-THEORY-GATE | Accepted P2-I1 brief and detailed checklist; bounded niche-conditioning meaning, anti-subsumption, negative/redirective outcomes, and open decision timing preserved | 2026-07-10 | Accepted by project owner; passed |
+| P2-I2-BRIEF-GATE | Accepted P2-I2 brief, checklist-first activity ledger, cumulative decision record, and subordinate operational-hypothesis scaffold; no source audit or scientific evidence assigned | 2026-07-14 | Accepted by project owner; passed |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2086,7 +2097,8 @@ Change log:
 | CL-026 | 2026-07-11 | P2-I1 closed with retained C02 evidence, `supported_bounded_candidate`, R05 bounded carrier-load invariance, explicit constructed support, and the bounded niche-conditioning demand-pattern ceiling. C01 remains bounded incomplete. Post-retention validation reproduced the controlling digests. Considered structural and decision-set alternatives are dormant history with no execution authority. R3 remains the next contract-adequacy review and may not tune the closed result. | P2-I1-GATE and R3 entry | Superseded by CL-027 |
 | CL-027 | 2026-07-11 | Review R3 passed without tuning P2-I1. Calibration provenance, registration evidence, and the Phase 1 meaning contracts proved adequate. No first-class `lane_registration` or `control_outcome` record is admitted. Concrete control-traversal friction creates one prospective requirement: future lanes emit a compact lane-local control-resolution index before terminal closure, with possible core promotion deferred to R4 after recurrence. P2-I1 remains closed and P2-I2 is next. | R3 closeout and P2-I2 entry | Superseded by CL-028 |
 | CL-028 | 2026-07-12 | Post-closeout N30/L01 clarification made explicit that N30 owns bounded history-conditioned eligibility while P2-I1's independent ecological discriminator is matched participant-relative differential possibility. N30's susceptibility-direction controls and P2-I1's fresh-runtime strengthening remain acknowledged. No hypothesis, stable ID, display name, artifact, terminal result, rung, or claim ceiling changed. | AE01 orientation and P2-I2 entry | Superseded by CL-029 |
-| CL-029 | 2026-07-12 | Revision 0.26 accepted D-039 and added a prospective post-R3 ecology-discriminator amendment for unexecuted lanes. Every future lane must bind its inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. L03 now requires trace dynamics beyond static persistence; L06 requires a budget-closing depletion/replenishment or return cycle beyond linear transport. Stable IDs, P2-I1, historical P1-I4 records, shared schemas, and retained evidence remain unchanged. | P2-I2 through P2-I7 pre-execution gates | Active |
+| CL-029 | 2026-07-12 | Revision 0.26 accepted D-039 and added a prospective post-R3 ecology-discriminator amendment for unexecuted lanes. Every future lane must bind its inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. L03 now requires trace dynamics beyond static persistence; L06 requires a budget-closing depletion/replenishment or return cycle beyond linear transport. Stable IDs, P2-I1, historical P1-I4 records, shared schemas, and retained evidence remain unchanged. | P2-I2 through P2-I7 pre-execution gates | Superseded by CL-030 |
+| CL-030 | 2026-07-14 | Revision 0.27 accepted the P2-I2 semantic brief and passed `P2-I2-BRIEF-GATE` with a lane-local checklist, cumulative decision record, and subordinate operational-hypothesis scaffold. Every P2-I2 activity is now required to run as a named checklist iteration; the source-current capability audit remains pending and no source admission, calibration, registration, execution, or lane result is assigned. | P2-I2 entry and all lane-local activity gates | Active |
 
 ## 17. Current next actions
 
@@ -2103,7 +2115,11 @@ The next unchecked actions in dependency order are:
    control-resolution index without admitting a new core record.
 5. [x] Accept D-039 and bind the post-R3 primitive-to-ecology discriminator
    amendment prospectively to every unexecuted lane without reopening P2-I1.
-6. [ ] Begin P2-I2 under its own theory, candidate-blind calibration,
-   registration, control-resolution, and execution boundaries.
-7. [ ] Begin any later independently owned Phase 2 lane only under its own
+6. [x] Begin P2-I2 under its accepted semantic brief, checklist-first named
+   activity iterations, cumulative decision record, and subordinate
+   operational hypotheses without opening source admission or candidate work.
+7. [ ] Complete `P2-I2-I01` as a frozen source-current capability-audit
+   iteration, then advance source admission and realization decisions only
+   through their named checklist iterations.
+8. [ ] Begin any later independently owned Phase 2 lane only under its own
    candidate-blind calibration, registration, and execution boundaries.

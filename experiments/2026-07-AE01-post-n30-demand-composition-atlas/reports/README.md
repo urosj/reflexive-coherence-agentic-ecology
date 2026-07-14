@@ -44,6 +44,10 @@ Phase 2 gate reviews:
   first completed lane without tuning it, retains the existing core record
   set, and requires a compact lane-local control-resolution index for future
   lane closeouts.
+- [P2-I2 I00 validation provenance](P2-I2-I00-validation.md) retains the
+  accepted authority-package digests, command outcomes, link/identity checks,
+  and clean graph-worktree guard for the checklist bootstrap. It supplies no
+  capability, calibration, or lane evidence.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

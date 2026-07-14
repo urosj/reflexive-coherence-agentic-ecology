@@ -87,6 +87,23 @@ post-closeout structural and decision-set variants without selecting,
 preregistering, or authorizing any of them. It is a dormant history record and
 does not reopen C02 or the accepted P2-I1 decisions.
 
+The next lane is governed by the accepted
+[P2-I2 shared-pool co-conditioning brief](P2-I2-shared-pool-co-conditioning-brief.md).
+It binds L02's inherited graph relation, ecology-specific multi-source pool
+discriminator, combined-history consequence, insufficient-repetition case,
+native-first and producer-fallback posture, restoration-identity transition,
+comparison structure, decision timing, and claim ceiling. It supplies no
+calibration, registration, execution authority, or lane result.
+
+The brief was accepted by the project owner on 2026-07-14. P2-I2 work is now
+governed by one evidence-expandable
+[activity checklist](P2-I2-shared-pool-co-conditioning-checklist.md), one
+[cumulative decision record](P2-I2-decision-record.md), and subordinate
+[operational hypothesis projections](../hypotheses/p2-i2-operational-hypotheses.md).
+Every later activity, including capability and source-admission audits, must
+run as a named checklist iteration with retained evidence. The first audit
+iteration remains pending and has not been executed.
+
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,
 or lane result.
