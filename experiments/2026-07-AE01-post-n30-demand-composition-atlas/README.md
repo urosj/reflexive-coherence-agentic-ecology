@@ -1,8 +1,9 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 I03A/I03AR1 state-carried
-design and quarantined runtime-conformance package is review-ready;
-I03B/I03C/I04 remain unauthorized or blocked
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 I03A/I03AR1 is
+owner-accepted for staged progression and I03B history-carried design plus
+quarantined runtime conformance passed I03BR1 closeout revalidation; I03B
+owner acceptance remains pending and I03C/I04 remain unauthorized
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -82,10 +83,23 @@ governed I03AR1R1 floating-point assertion correction. It demonstrates native
 writes, interventions, invariances, private one-node reads, model-owned later
 response, equal save/load continuation, and persisted reset-baseline behavior.
 The original stopped invocation produced no output and is retained as
-`infrastructure_invalid`. The package is review-ready, not scientifically
-supported; no calibration, registered candidate matrix, control result, or L02
-evidence exists, the umbrella discriminator gate remains open, and I03B is not
-authorized before review.
+`infrastructure_invalid`. The package is not scientifically supported; no
+calibration, registered candidate matrix, control result, or L02 evidence
+exists. Owner acceptance for staged progression then authorized I03B. The
+[I03B history-carried freeze and conformance report](reports/P2-I2-I03B-history-carried-realization-and-operational-hypothesis-freeze.md)
+selects `minimally_producer_assisted`: one bounded RCAE adapter supplies the
+missing active, independently intervenable common-history carrier and its
+order-sensitive readout, while public native packets materialize that readout
+and the native feedback/producer path exclusively owns the later response.
+The sole evidence invocation passed 252/252 frozen assertions and the sole
+reconstruction was byte-identical. This is implementation-conformance only,
+not calibration or L02 evidence. The subsequent
+[I03BR1 closeout revalidation](reports/P2-I2-I03BR1-history-carried-closeout-revalidation.md)
+passed all 21 owner-review checks with zero blockers and no runtime operation.
+It excluded a hidden latest-contact path and confirmed H_P plus its M_H output
+port as the functional active-history pool. I03B is acceptance-ready but not
+owner-accepted; the umbrella discriminator gate remains open and I03C/I04 are
+unauthorized pending owner disposition.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself
@@ -247,7 +261,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           I03A/I03AR1 state-carried package review-ready; I03B unauthorized
+P2-I2                                           I03B passed I03BR1 closeout revalidation; owner acceptance pending
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

@@ -1,0 +1,338 @@
+{
+  "admitted_source_identity": {
+    "checks": [
+      {
+        "manifest_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+        "match": true,
+        "revision_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+        "source_id": "grc:pyproject.toml",
+        "worktree_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b"
+      },
+      {
+        "manifest_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+        "match": true,
+        "revision_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+        "source_id": "grc:src/pygrc/__init__.py",
+        "worktree_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e"
+      },
+      {
+        "manifest_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+        "match": true,
+        "revision_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+        "source_id": "grc:src/pygrc/core/__init__.py",
+        "worktree_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae"
+      },
+      {
+        "manifest_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+        "match": true,
+        "revision_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+        "source_id": "grc:src/pygrc/core/interfaces.py",
+        "worktree_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f"
+      },
+      {
+        "manifest_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+        "match": true,
+        "revision_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+        "source_id": "grc:src/pygrc/core/serialization.py",
+        "worktree_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4"
+      },
+      {
+        "manifest_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+        "match": true,
+        "revision_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+        "source_id": "grc:src/pygrc/models/__init__.py",
+        "worktree_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70"
+      },
+      {
+        "manifest_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+        "match": true,
+        "revision_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+        "source_id": "grc:src/pygrc/models/grc_9_v3.py",
+        "worktree_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e"
+      },
+      {
+        "manifest_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+        "match": true,
+        "revision_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+        "source_id": "grc:src/pygrc/models/grc_9_v3_state.py",
+        "worktree_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e"
+      },
+      {
+        "manifest_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+        "match": true,
+        "revision_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3.py",
+        "worktree_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb"
+      },
+      {
+        "manifest_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+        "match": true,
+        "revision_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_contract.py",
+        "worktree_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680"
+      },
+      {
+        "manifest_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+        "match": true,
+        "revision_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_packets.py",
+        "worktree_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      },
+      {
+        "manifest_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+        "match": true,
+        "revision_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+        "worktree_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "manifest_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+        "match": true,
+        "revision_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime_state.py",
+        "worktree_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c"
+      },
+      {
+        "manifest_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+        "match": true,
+        "revision_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+        "worktree_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931"
+      },
+      {
+        "manifest_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+        "match": true,
+        "revision_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+        "worktree_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c"
+      },
+      {
+        "manifest_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+        "match": true,
+        "revision_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+        "source_id": "grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+        "worktree_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c"
+      },
+      {
+        "manifest_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+        "match": true,
+        "revision_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_contract.py",
+        "worktree_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b"
+      },
+      {
+        "manifest_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+        "match": true,
+        "revision_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_runtime.py",
+        "worktree_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b"
+      },
+      {
+        "manifest_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+        "match": true,
+        "revision_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_restoration.py",
+        "worktree_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97"
+      },
+      {
+        "manifest_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+        "match": true,
+        "revision_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_restoration_matrix.py",
+        "worktree_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154"
+      }
+    ],
+    "source_count": 20
+  },
+  "artifact_id": "P2-I2-I03B-HISTORY-CARRIED-REALIZATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "candidate_control_calibration_or_scientific_execution": false,
+  "claim_boundary": {
+    "design_frozen": true,
+    "i03b_review_ready": false,
+    "i03c_authorized": false,
+    "i04_authorized": false,
+    "runtime_conformance_authorized_before_second_freeze": false,
+    "scientific_evidence_assigned": false
+  },
+  "coverage": {
+    "capability_dispositions": [
+      "P2-I2-CAP-01",
+      "P2-I2-CAP-02",
+      "P2-I2-CAP-03",
+      "P2-I2-CAP-04",
+      "P2-I2-CAP-05",
+      "P2-I2-CAP-06",
+      "P2-I2-CAP-07",
+      "P2-I2-CAP-08",
+      "P2-I2-CAP-09",
+      "P2-I2-CAP-10",
+      "P2-I2-CAP-11"
+    ],
+    "cells": [
+      "reference-pool",
+      "individual-contributions",
+      "combined-orders",
+      "pooled-history-shuffle",
+      "contributor-removal",
+      "global-state-exclusion",
+      "access-capacity-contrast"
+    ],
+    "controls": [
+      "AE01-L02-CTRL-01",
+      "AE01-L02-CTRL-02",
+      "AE01-L02-CTRL-03",
+      "AE01-L02-CTRL-04",
+      "AE01-L02-CTRL-05"
+    ],
+    "operational_projections": [
+      "H-L02-OP-01",
+      "H-L02-OP-02",
+      "H-L02-OP-03",
+      "H-L02-OP-04",
+      "H-L02-OP-05",
+      "H-L02-OP-06",
+      "H-L02-OP-07",
+      "H-L02-OP-08",
+      "H-L02-OP-09"
+    ]
+  },
+  "entry_authority": {
+    "checks": [
+      {
+        "current_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "entry_revision_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "expected_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json"
+      },
+      {
+        "current_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "entry_revision_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "expected_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json"
+      },
+      {
+        "current_sha256": "34d0903c746fb67abff5a1c12bb252b5cb15933d2de75e56f1232fbe7dfd0845",
+        "entry_revision_sha256": "34d0903c746fb67abff5a1c12bb252b5cb15933d2de75e56f1232fbe7dfd0845",
+        "expected_sha256": "34d0903c746fb67abff5a1c12bb252b5cb15933d2de75e56f1232fbe7dfd0845",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-freeze-input.json"
+      },
+      {
+        "current_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+        "entry_revision_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+        "expected_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json"
+      },
+      {
+        "current_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+        "entry_revision_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+        "expected_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json"
+      },
+      {
+        "current_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b",
+        "entry_revision_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b",
+        "expected_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json"
+      }
+    ],
+    "prior_artifact_count": 6,
+    "rcae_revision": "c13ccb74d3ddc7c6f8f3870a15e17e024c9200dd"
+  },
+  "graph_after": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_short": ""
+  },
+  "graph_before": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_short": ""
+  },
+  "history_carried_model_instantiations": 0,
+  "history_carried_runtime_operations": 0,
+  "input_identity": {
+    "brief_sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f",
+    "checklist_sha256": "6a831900183120a8b3e1db769505382d45ffd4729e354b9532c01eaa26ef44ee",
+    "contract_sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d",
+    "decision_record_sha256": "f7ddad99d5585edbbeb5cc342bcdb577eb8f63c5138f576ba0f078b494f20253",
+    "freeze_sha256": "1d1ab37502b9138c5c98b3048bd854ac7ed17d5775c9fd34ad8475608a0bcc7f",
+    "hypothesis_sha256": "ef690a734e0b8a9d3bd2a3f675d4f2423f82d4f4d9a891ebad16a0d393993d68",
+    "manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+    "report_sha256": "72f22fa71c8b7ef109cac40c723301e9f6cf21c8c0be7a0a9075c2450445f46c"
+  },
+  "invariants": {
+    "active_history_distinct_from_encounter_state_and_audit": true,
+    "all_twenty_frozen_source_digests_match": true,
+    "design_contract_preserved": true,
+    "design_input_freeze_preserved": true,
+    "eleven_capability_dispositions_complete": true,
+    "entry_authority_and_prior_artifact_digests_match": true,
+    "external_history_requires_composite_identity": true,
+    "five_controls_complete": true,
+    "graph_repository_unchanged": true,
+    "history_carried_only_scope": true,
+    "history_only_and_state_only_interventions_frozen": true,
+    "i03a_preserved_and_i03c_i04_unauthorized": true,
+    "lgrc0_history_is_annotation_only": true,
+    "native_feedback_reads_latest_contact_and_live_state": true,
+    "native_history_candidate_explicitly_inadequate": true,
+    "native_producer_uses_latest_feedback_row_not_history_fold": true,
+    "native_response_transition_ownership_retained": true,
+    "native_surface_rows_are_passive_evidence": true,
+    "native_v2_covers_runtime_and_reset_baseline": true,
+    "nine_operational_projections_complete": true,
+    "no_history_runtime_or_scientific_execution": true,
+    "one_minimal_rcae_history_adapter_selected": true,
+    "private_partition_no_common_read_guard_frozen": true,
+    "rcae_adapter_does_not_compute_success": true,
+    "selected_public_callables_admitted": true,
+    "separate_runtime_freeze_required": true,
+    "seven_cells_complete": true
+  },
+  "iteration_id": "P2-I2-I03B",
+  "lane_id": "AE01-L02",
+  "selected_public_callables": {
+    "all_admitted": true,
+    "symbols": [
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.step",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.LGRC9V3.reset",
+      "pygrc.models.LGRC9V3.save",
+      "pygrc.models.LGRC9V3.load",
+      "pygrc.models.lgrc9v3_restoration_identity_v2",
+      "pygrc.models.digest_lgrc9v3_restoration_identity_v2"
+    ]
+  },
+  "selection": {
+    "adapter_computes_success": false,
+    "native_disposition": "inadequate_for_history_carried",
+    "native_feedback_producer_owns_later_transition": true,
+    "pool_dependence_mode": "history_carried",
+    "selected_rcae_component": "RCAEActiveHistoryAdapterV1",
+    "selected_realization_class": "minimally_producer_assisted"
+  },
+  "source_dataflow": {
+    "feedback_derives_from_latest_route_contact": true,
+    "feedback_has_no_lineage_read": true,
+    "feedback_reads_live_node_masks": true,
+    "lgrc0_history_annotation_non_mutating": true,
+    "native_expected_digest_compares_one_source_row": true,
+    "native_producer_reads_latest_feedback_row": true,
+    "native_v2_composes_current_and_reset_identity": true,
+    "route_rows_retain_physical_amount_endpoints_order_and_time": true,
+    "runtime_artifact_serializes_ordered_surface_log": true,
+    "surface_rows_declared_passive": true
+  },
+  "status": "passed",
+  "validated_at": "2026-07-14",
+  "validation_kind": "static_authority_source_dataflow_producer_boundary_cross_artifact_and_no_runtime_only"
+}

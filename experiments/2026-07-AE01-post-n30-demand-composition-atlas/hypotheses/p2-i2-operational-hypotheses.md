@@ -1,10 +1,11 @@
 # P2-I2 Operational Hypothesis Projections
 
 **Status:** outcome-free; `P2-I2-I03A` causal design and quarantined I03AR1
-runtime conformance are review-ready after completed `P2-I2-I03AR1R1`
-infrastructure correction; I03B history-carried and I03C hybrid profiles
-remain unauthorized pending the required owner reviews; all three profiles
-are retained downstream under `P2-I2-DEC-011`
+runtime conformance are owner-accepted for progression; `P2-I2-I03B` now has
+a frozen minimally producer-assisted history-carried design and byte-
+reconstructed runtime conformance; it is review-ready but not owner-accepted;
+I03C hybrid remains unauthorized pending I03B review; all three profiles are
+retained downstream under `P2-I2-DEC-011`
 
 **Lane:** `AE01-L02`
 
@@ -49,7 +50,8 @@ I00 scaffolded
   -> I03A state_carried_bound -> owner_review_A
       -> I03AR1 -> I03AR1R1_if_infrastructure_invalid
           -> state_carried_runtime_conformed_or_inadequate -> owner_review_AR1
-        -> I03B history_carried_bound_and_runtime_conformed_or_inadequate -> owner_review_B
+        -> I03B_history_design_frozen
+          -> I03B_history_runtime_conformed_or_inadequate -> owner_review_B
           -> I03C hybrid_bound -> owner_review_C
               -> I03 staged_family_bound -> I04 preregistered
                               -> I08 executed or validly incomplete
@@ -86,26 +88,27 @@ in `L` but cannot enter `V`. Causal contribution properties such as amount,
 location, timing, or registered type may enter `U` through `q`.
 
 This notation does not by itself select a topology, carrier, update rule,
-response, or implementation architecture. I03A's state-carried mapping is
-frozen below; I03B and I03C remain deliberately unbound.
+response, or implementation architecture. I03A's state-carried mapping and
+I03B's history-carried mapping are frozen below; I03C remains deliberately
+unbound.
 
 ## 3. Unbound realization variables
 
 | Variable | Required meaning | Current state | Binding iteration |
 | --- | --- | --- | --- |
 | `graph_source_identity` | Exact admitted graph revision and relevant source digests | Bound by `P2-I2-DEC-009` and the I02R2 manifest at `83e3a300426631ee4df71b661b67d4fcfdfed594`; prior I02R1 identity remains historical authority and no realization is implied | I02R2 complete |
-| `realization_class` | Native, producer-assisted, or constructed, separately dispositioned for each mode | I03A: `pygrc_native_candidate`; I03B/I03C unauthorized | I03A, then I03B, then I03C |
-| `pool_dependence_mode` | Staged `state_carried`, `history_carried`, and admissible `hybrid` profiles | I03A: `state_carried`; later modes deliberately unopened | I03A, then owner review; I03B, then owner review; I03C |
-| `source_set` | At least two distinguishable attributable source carriers/events | I03A: symbolic native roles S1 and S2 bound; exact node IDs pending I06 | I03A concept; I06 exact |
-| `C_P` | One auditable non-private causal carrier identity | I03A: one native `GRC9V3NodeState.coherence` at role P at encounter | I03A |
-| `L` | Audit-only source lineage and attribution projection | I03A: native packet/event records; excluded from V | I03A |
-| `q` and `U` | Contribution properties and common-carrier transition | I03A: positive native packet amount and schedule/step departure-arrival chain into P | I03A concept; I04/I06 numeric/exact |
-| `V` | Carrier-scoped read, susceptibility, or continuation path | I03A: native feedback P/B_ref mask, model-owned feedback producer, and later packet path | I03A concept; I04 response and I06 exact |
-| `access_witness` | Non-private carrier access without contributor addressing | I03A: one-node P feedback mask available to any registered eligible A-role responder | I03A concept; I06 exact |
+| `realization_class` | Native, producer-assisted, or constructed, separately dispositioned for each mode | I03A: `pygrc_native_candidate`; I03B: `minimally_producer_assisted`; I03C unauthorized | I03A, then I03B, then I03C |
+| `pool_dependence_mode` | Staged `state_carried`, `history_carried`, and admissible `hybrid` profiles | I03A: `state_carried`; I03B: frozen `history_carried`; I03C unopened | I03A, then owner review; I03B, then owner review; I03C |
+| `source_set` | At least two distinguishable attributable source carriers/events | I03A/I03B: symbolic native roles S1 and S2 bound; exact node IDs pending I06 | I03A/I03B concept; I06 exact |
+| `C_P` | One auditable non-private causal carrier identity | I03A: native P coherence; I03B: one RCAE-owned ordered `H_P` plus deterministic native readout port `M_H`, while P is state-matched and excluded from V | I03A/I03B |
+| `L` | Audit-only source lineage and attribution projection | I03A/I03B: native packet/event/surface/lineage records; only I03B admission/idempotency uses row identity, never the response | I03A/I03B |
+| `q` and `U` | Contribution properties and common-carrier transition | I03A: positive native packet arrival into P; I03B: source-label-free physical token appended to one `H_P`, then native-packet materialization at `M_H` | I03A/I03B concept; I04/I06 numeric/exact |
+| `V` | Carrier-scoped read, susceptibility, or continuation path | I03A: native P/B_ref feedback path; I03B: native M_H/B_ref feedback path after the RCAE history adapter stops | I03A/I03B concept; I04 response and I06 exact |
+| `access_witness` | Non-private carrier access without contributor addressing | I03A: one-node P mask; I03B: one common H_P and one-node M_H mask available to any registered eligible A-role responder | I03A/I03B concept; I06 exact |
 | `primary_response` | One oriented raw later-continuation response | Pending | I04 |
 | `primary_comparator` | Closest insufficient-repetition alternative | Pending | I04 |
-| `control_relations` | Signed invariance/divergence and fail-closed effects | I03A qualitative relations bound; numerical equality/resolution pending | I03A, then I04 |
-| `R05_contrast` | One capacity, contributor, or access-scope variation | I03A selects access-scope axis; exact alternate responder pending | I03A concept; I06 exact |
+| `control_relations` | Signed invariance/divergence and fail-closed effects | I03A and I03B qualitative relations bound; numerical equality/resolution pending | I03A/I03B, then I03C/I04 |
+| `R05_contrast` | One capacity, contributor, or access-scope variation | I03A/I03B select the access-scope axis; exact alternate responder pending | I03A/I03B concept; I06 exact |
 
 No pending variable may be filled from candidate outcomes.
 
@@ -151,11 +154,12 @@ I03B / 8B = history_carried
 I03C / 8C = hybrid
 ```
 
-Only I03A is active. I03A may bind state-carried meanings in this artifact but
-must not pre-resolve the history-carried or hybrid profile. I03B and I03C each
-require a later checklist declaration, input freeze, and owner review. The
-umbrella realization-bound status and I04 entry remain unavailable until the
-staged family is complete and reviewed.
+I03A is owner-accepted for progression and I03B is active under its own
+checklist declaration and immutable design/source-comparison freeze. I03B may
+bind history-carried meanings in this artifact but must not pre-resolve the
+hybrid profile. I03C requires a later checklist declaration, input freeze,
+and owner review. The umbrella realization-bound status and I04 entry remain
+unavailable until the staged family is complete and reviewed.
 
 The project owner's later 2026-07-14 clarification, retained as
 `P2-I2-DEC-011`, fixes the downstream scope: all three profiles continue
@@ -195,6 +199,156 @@ This assigns `runtime_conformant` only to the bounded I03A state-carried native
 candidate implementation. It does not assign truth, support, falsification,
 effect size, calibration input, or a registered value to any operational
 hypothesis. I03B remains behind explicit owner review.
+
+The project owner's subsequent direction to move to 8B accepts the review-
+ready I03A/I03AR1 package only for staged progression and activates
+`P2-I2-I03B`. It assigns no scientific result and does not authorize I03C or
+I04. I03B must independently freeze what active common history is causal,
+what remains audit-only lineage, which response reads that history, and which
+native/producer/missing-prerequisite realization is adequate. The I03AR1
+fixture and observed values are prohibited selection inputs. Design must be
+frozen before the first history-carried runtime call, followed by a separate
+bounded conformance freeze under DEC-012.
+
+#### 3.2.1 I03B history-carried design binding
+
+Static admitted-source comparison under the I03B freeze found a precise
+native boundary. PyGRC owns an ordered, restored packet/contact log, but its
+surface rows are explicitly passive evidence. Native feedback derives from
+the latest contact plus live node state; the expected-source digest compares
+one configured row and is not a common multi-event history reducer. LGRC-0
+history artifacts are annotation-only. Therefore I03B selects
+`minimally_producer_assisted`, not a native history candidate.
+
+The selected `RCAEActiveHistoryAdapterV1` owns one missing separable
+operation: an active, independently intervenable, ordered common history
+projection over admitted native contribution rows. It stores no source IDs or
+lineage in causal tokens, computes no success field, reads no response target,
+and stops after materializing a deterministic history readout at native node
+`M_H` through public balancing packets. PyGRC owns every coherence mutation,
+the `M_H`/`B_ref` feedback read, threshold evaluation, later packet schedule,
+and packet processing. If runtime conformance requires the adapter to decide
+or schedule success, the realization fails closed as a missing prerequisite.
+
+The history-carried factorization is:
+
+```text
+native attributable arrivals to P
+  -> source-label-free physical tokens q1, q2
+  -> one ordered external H_P via RCAEActiveHistoryAdapterV1
+  -> order-sensitive readout R_H(H_P)
+  -> public native balancing packets materialize M_H
+  -> native feedback mask(M_H, B_ref)
+  -> model-owned producer and later native packet
+
+native packet/event/surface/lineage records = L, audit-only for response
+P.coherence = matched encounter state, excluded from history-mode V
+```
+
+`H_P` is an ordered token tuple rather than contributor-private slots. The
+structural readout is a source-label-invariant left fold
+`r_(j+1) = lambda * r_j + typed_amount_j`, with `0 < lambda < 1`; scientific
+numeric values remain I04/I06 work. I03B runtime conformance must use a
+separately frozen fixture-only coefficient and values that are prohibited as
+later calibration inputs.
+
+The mode-specific interventions are now qualitative authority:
+
+- physical-token order shuffle: preserve marginal token multiset and final P
+  while changing H_P, R_H/M_H, and the later response relation;
+- active-history clamp: preserve native contributions, audit, P, support, and
+  opportunity while explicitly replacing H_P and rematerializing M_H;
+- state-only separation: change P through a native intervention while H_P and
+  M_H remain fixed; the history-mode response remains invariant;
+- native write diversion: preserve source activity but prevent arrival-to-P
+  admission, leaving H_P at reference; and
+- pure lineage-label permutation: change audit identity while H_P/M_H/V remain
+  invariant.
+
+The private competitor uses separate `H1_private` and `H2_private` adapter
+instances. Each legitimate response may read one private readout only. No
+component may concatenate, compare, sum, dispatch over, or choose between
+both. The common access witness is the single H_P/M_H binding, available to
+any registered eligible responder through the same one-node mask.
+
+Native v2 identity covers the complete model, M_H, logs, producer config, and
+native reset baseline. It does not cover H_P, the consumed-row cursor,
+adapter configuration/interventions, or adapter reset baseline. I03B therefore
+requires one versioned composite identity and paired save/load/reset operation
+over native v2 plus the complete adapter current and reset state. One-sided or
+implicit-rebase reset is forbidden.
+
+This design is frozen by the
+[I03B realization contract](../contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json).
+Its exact runtime fixture, assertions, artifact paths, and conformance-only
+values were retained in a second immutable freeze before the first history-
+carried runtime call. The single evidence invocation passed `252/252` frozen
+assertions, and the single reconstruction was byte-identical at SHA-256
+`4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d`.
+
+This assigns only `runtime_conformant` to the bounded producer-assisted
+implementation. It does not assign truth, effect size, support, falsification,
+scientific response/comparator, calibration input, registration value, or a
+mode ranking. The fixture-only order, amount, coefficient, threshold, and
+response values are prohibited inputs to I04/I06. The adapter computed no
+success and scheduled no later response; the native feedback producer owned
+that transition. Paired native-v2/adapter composite save-load, reset, and
+equal-input continuations passed. I03C and I04 remain unauthorized until the
+project owner reviews I03B.
+
+#### 3.2.2 I03BR1 closeout-revalidation projection
+
+The project owner's supplied I03B review activated `P2-I2-I03BR1` as a
+separate zero-runtime acceptance audit before any progression decision. The
+audit passed all twenty-one checks—fifteen directly and six with downstream
+obligations—with zero blockers. The review and audit do not themselves accept
+the history-carried realization and do not authorize I03C or I04.
+
+I03BR1 must first exclude a hidden latest-contact path in which the adapter's
+final materialization packet, rather than H_P's persistent materialized output
+state, carries the native response difference. It must also confirm that the
+functional pool identity is H_P plus its declared M_H output port: P remains
+native intake, L remains audit, and M_H alone is not substituted for the
+active ordered history.
+
+The audit is limited to frozen-source/dataflow and retained-artifact evidence.
+It must cover the exact P/H_P/L/U_H/R_H/M_H/V factorization; physical token
+typing; admission and cursor isolation; continuation-state matching; clamp,
+state-only, diversion, private, and access controls; producer minimality;
+history lifecycle class; composite current/reset identity; branch isolation;
+and mechanical scientific quarantine. The complete I03B harness, adapter,
+runtime freeze, evidence invocation, and reconstruction remain immutable. No
+new model, evidence, reconstruction, retry, rescue, calibration, candidate, or
+control invocation is authorized.
+
+The two priority boundaries passed. A neutral contact follows materialization;
+across the order branches its route, endpoints, amount, event time, scheduler
+index, event kind, and channel match. Only node-proper-time and derived row
+digests differ, and native polarity/threshold evaluation does not read those
+differences. `expected_source_surface_digest` remains null. Separately, H_P is
+persistent and independently replaceable adapter state, while M_H is its
+native output port. The clamp replaces H_P before readout recomputation and
+native rematerialization; it does not clamp a precomputed scalar.
+
+I03BR1 also freezes the claim and lifecycle qualifications. The bounded claim
+is active ordered history retained and causally materialized through a
+deterministic scalar readout, not irreducible raw-history necessity or
+non-Markovianity. Normal H_P operation is run-bounded append-only; explicit
+whole-history replacement is implemented, while autonomous depletion, fixed
+capacity/saturation, leakage/decay, and maintenance are not selected for this
+conformance realization.
+
+The six downstream obligations do not change I03B's design or evidence: I06
+must retain a unique source-to-P admission path or register an explicit route
+key, resolve scientific access, bound lifecycle/event counts, expose only a
+paired restoration interface with explicit manifest-hash validation, and
+retain branch identity duties; I04/I06 validators must reject every
+conformance fixture value and digest. Only the pre-runtime fold family and its
+causal boundaries may be imported.
+
+`P2-I2-I03BR1-CLOSEOUT-PASSED` makes I03B acceptance-ready. A later owner
+progression decision may open I03C only; it cannot pass the umbrella
+discriminator gate, assign R01-R05, compare modes, or open I04.
 
 ### 3.3 I03A state-carried realization binding
 
@@ -487,9 +641,11 @@ I03B, and I03C are separately frozen and owner-reviewed, and when:
   dependence mode.
 - [x] I02 retains exact source-admission or non-admission dispositions.
 - [ ] Each staged mode retains its realization class and source/runtime
-  boundary.
+  boundary. I03A and I03B are bound; I03C remains unauthorized.
 - [ ] `C_P`, `L`, `q`, `U`, `V`, sources, access witness, and contribution
-  operations map to actual runtime interfaces.
+  operations map to actual runtime interfaces. I03A is runtime-conformant;
+  I03B is runtime-conformant, passed I03BR1 closeout revalidation, and awaits
+  owner acceptance; I03C is unbound.
 - [ ] All three owner-directed dependence-mode profiles are separately bound
   without rewriting one another.
 - [ ] Every projection maps to exact cells, controls, interventions, causally
@@ -498,7 +654,9 @@ I03B, and I03C are separately frozen and owner-reviewed, and when:
 - [ ] The jointness and private-partition counterfactuals are executable or the
   prerequisite is classified missing.
 - [ ] Producer necessity/minimality/withdrawal and external-state identity are
-  complete when applicable.
+  complete when applicable. I03B freezes the minimal adapter and composite
+  identity duty and passes bounded conformance; later exact registration
+  remains.
 - [ ] No primary response, comparator, or expected relation was selected from
   candidate outcomes.
 

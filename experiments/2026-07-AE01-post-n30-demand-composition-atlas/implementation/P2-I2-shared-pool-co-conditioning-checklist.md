@@ -1,14 +1,16 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
 **Status:** active; staged `P2-I2-I03`; I03A/I03AR1 state-carried package is
-review-ready after governed I03AR1R1 correction and reconstruction
+owner-accepted for progression and I03B history-carried design/runtime
+conformance passed I03BR1 closeout revalidation; owner acceptance is required
+before I03C
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** none; explicit I03AR1 owner-review stop;
-I03B unauthorized
+**Current activity iteration:** `P2-I2-I03BR1` complete and awaiting owner
+disposition; I03C/I04 unauthorized
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -103,7 +105,7 @@ Rules:
 | `P2-I2-BRIEF-GATE` | L02 semantic center, D-039 delta, dependence modes, causal factorization, controls, timing, and claim ceiling accepted | Passed after mode-family scope clarification | Owner acceptance dated 2026-07-14; `P2-I2-DEC-001`; owner-accepted three-mode retention correction `P2-I2-DEC-011`; accepted brief |
 | `P2-I2-SOURCE-AUDIT-GATE` | Source-current public PyGRC capability audit completed under one frozen audit scope | Passed after revalidation | I01R1 quarantines the custom probe, corrects CAP-04, and revalidates all claims from admissible evidence |
 | `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Passed after I02R2 revalidation | Updated revision `83e3a300426631ee4df71b661b67d4fcfdfed594`, 31 sources/callables, persisted reset baseline, v1/v2 provider boundary, legacy fail-closed policy, and `P2-I2-DEC-009` |
-| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | In progress; 8A-R1 review-ready | I03A causal design and quarantined runtime conformance are review-ready; I03B/I03C/I04 unauthorized |
+| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | In progress; 8A-R1 accepted for progression, 8B passed closeout revalidation | Owner acceptance of I03B remains; I03C/I04 unauthorized |
 | `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Blocked | Requires `DISCRIMINATOR-GATE` |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Blocked | Requires `CAL-PRE-GATE` |
 | `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Blocked | Requires `CAL-GATE` |
@@ -169,8 +171,9 @@ Rules:
 | `P2-I2-I02R2` | Updated PyGRC reset-baseline persistence and restoration-identity revalidation | I02R1 plus updated graph revision supplied by project owner | Complete; reset persistence and v2 identity validated, updated source admitted | `P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`; no scientific evidence |
 | `P2-I2-I03` | Staged realization, discriminator, dependence-mode, and operational-hypothesis program | I01R1–I02R2 plus owner staging direction | In progress through I03A–I03C | `P2-I2-DISCRIMINATOR-GATE` only after all three reviewed mode freezes, or retained earlier-stop route |
 | `P2-I2-I03A` | 8A state-carried realization and operational-hypothesis freeze | I02R2 plus owner staging direction | Causal design accepted as I03AR1 baseline; runtime adequacy unassigned | `P2-I2-I03A-REVIEW-READY`; opened only I03AR1 under DEC-012 |
-| `P2-I2-I03AR1` | 8A-R1 quarantined state-carried realization runtime conformance | Owner acceptance of stronger conformance path after I03A review | Review-ready after governed I03AR1R1 infrastructure correction | `P2-I2-I03AR1-REVIEW-READY`; does not open I03B automatically |
-| `P2-I2-I03B` | 8B history-carried realization, operational-hypothesis freeze, and bounded runtime conformance | Owner review/acceptance of I03AR1 | Pending; not authorized | Review-ready history-carried package only; does not open I03C automatically |
+| `P2-I2-I03AR1` | 8A-R1 quarantined state-carried realization runtime conformance | Owner acceptance of stronger conformance path after I03A review | Owner accepted for progression on 2026-07-14; scientific effect remains none | Opens I03B only under its own declaration/freeze; does not open I03C/I04 |
+| `P2-I2-I03B` | 8B history-carried realization, operational-hypothesis freeze, and bounded runtime conformance | Owner acceptance/progression direction after I03AR1 | Review-ready; minimally producer-assisted design and 252/252 runtime conformance reconstructed byte-identically | Owner review required; does not open I03C automatically |
+| `P2-I2-I03BR1` | I03B closeout revalidation of latest-contact dataflow, active-history identity, producer minimality, lifecycle, restoration, and quarantine | I03B plus owner-supplied validation review | Complete; 21/21 checks passed, including six with downstream obligations and zero blockers | `P2-I2-I03BR1-CLOSEOUT-PASSED`; I03B acceptance-ready but I03C/I04 remain closed |
 | `P2-I2-I03C` | 8C hybrid realization and operational-hypothesis freeze | Owner review/acceptance of I03B | Pending; not authorized | Completes staged I03 package only after owner review |
 | `P2-I2-I04` | Three-mode calibration preregistration construction | Completed, reviewed I03A–I03C program | Blocked | `P2-I2-CAL-PRE-GATE` |
 | `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze under the preregistered shared/mode-specific rule | I04 | Blocked | `P2-I2-CAL-GATE` |
@@ -990,10 +993,248 @@ guards, and scientific-evidence quarantine. It does not authorize I03B.
 
 ### 8B. `P2-I2-I03B` — History-carried realization freeze
 
-**Status:** pending and unauthorized until owner review/acceptance of I03AR1.
+**Status:** review-ready. The causal design and exact runtime sub-freeze were
+retained before execution; bounded conformance passed and reconstructed byte-
+identically. I03C/I04 remain unauthorized pending owner review.
 
-I03B must receive its own checklist declaration and input freeze. No
-history-carried surface comparison or binding occurs during I03A/I03AR1.
+#### 8B.1 Activity declaration — 2026-07-14
+
+```text
+iteration_id = P2-I2-I03B
+purpose = independently select and freeze the history-carried realization,
+          causal factorization, interventions, private/access guards, and
+          operational-hypothesis profile; then determine bounded runtime
+          conformance under a second freeze
+entry_authority = owner acceptance of the review-ready I03A/I03AR1 package and
+                  explicit direction to move to 8B; DEC-011/DEC-012; admitted
+                  PyGRC 83e3a300426631ee4df71b661b67d4fcfdfed594
+frozen_inputs_or_input_freeze_action = first retain an I03B design/source-
+          comparison freeze; select native, minimally producer-assisted, or
+          missing-prerequisite disposition within history_carried mode; only
+          then retain a separate exact runtime-conformance freeze before the
+          first history-carried runtime call
+mutation_and_repository_boundary = RCAE I03B contracts, harness, reports,
+          decisions, checklist, hypotheses, and navigation only; graph/PyGRC
+          read-only; temporary artifacts permitted under /tmp
+required_outputs = immutable design input freeze; source/dataflow comparison;
+          history-carried realization and operational-hypothesis contract;
+          static validation; if realizable, immutable runtime input freeze,
+          deterministic harness, runtime receipt, raw conformance record,
+          byte reconstruction, narrative report, decision/change disposition,
+          and explicit owner-review stop
+evidence_effect = causal-design authority plus quarantined realization
+          implementation-conformance only; no calibration, L02 support/
+          falsification, control result, boundary rung, or terminal effect
+exit_gate = P2-I2-I03B-REVIEW-READY or reviewed history-carried missing-
+            prerequisite/inadequate stop; never automatic I03C authorization
+```
+
+- [x] Record I03B in the checklist before history-carried source comparison,
+  design selection, harness construction, or runtime execution.
+- [x] Project I03B's active/unbound and no-scientific-evidence status into the
+  operational-hypothesis artifact before design work.
+- [x] Retain and validate an I03B design input freeze before comparing history-
+  carried realization candidates.
+- [x] Prohibit I03A/I03AR1 observed outputs from selecting the I03B carrier,
+  values, interventions, response, or realization class.
+- [x] Define active causal history versus audit-only lineage, including the
+  exact response read path and forbidden state-only/controller shortcuts.
+- [x] Apply native-first selection within `history_carried`: use admitted
+  native machinery when adequate, otherwise the minimal explicit RCAE
+  producer, or retain a missing-prerequisite disposition.
+- [x] Freeze source roles, common non-private access, contribution/history
+  constitution, history intervention, state-preserving history contrast,
+  private-partition competitor, restoration ownership, and producer boundary.
+- [x] Preserve all seven logical cells, five L02 controls, and OP-01..OP-09
+  without rewriting the accepted state-carried profile.
+- [x] Retain a machine contract, static validator/result, narrative design
+  report, and decision disposition before any history-carried runtime call.
+- [x] If the design is realizable, retain and validate a separate exact runtime
+  fixture, assertions, import/source identities, one evidence invocation, one
+  reconstruction invocation, zero retries, and full scientific quarantine.
+- [x] Exercise only the frozen history-carried causal path, interventions,
+  guards, restoration/reset, and equal-input continuation boundaries.
+- [x] Reconstruct byte-for-byte and stop for owner review without beginning
+  I03C or I04.
+
+#### 8B.2 Frozen design disposition
+
+`P2-I2-DEC-014` selects `minimally_producer_assisted` after static comparison
+of the three frozen dispositions. PyGRC's ordered packet/contact history is
+native, restored, and useful as audit/input authority, but its rows are
+passive evidence. Native feedback reads the latest contact plus live node
+state; neither that path nor LGRC-0 annotations supplies an active,
+independently intervenable multi-event history.
+
+The selected `RCAEActiveHistoryAdapterV1` owns one missing separable
+operation: one ordered, source-label-free, independently intervenable history
+carrier `H_P` over admitted physical contribution rows. It materializes a
+deterministic order-sensitive readout at native node `M_H` through public
+native balancing packets. It stops there. It may not mutate PyGRC state
+directly, retain source identity in causal tokens, inspect response state,
+apply the response threshold, write success, or schedule the later response.
+PyGRC owns native coherence mutation and the complete M_H-to-feedback-to-later-
+packet response path.
+
+The design freezes active-history reorder/clamp, state-only separation,
+native write diversion, pure-label invariance, separate H1/H2 private
+carriers with no common read, and one H_P/M_H access scope. Native v2 identity
+must be composed with adapter current state, cursor/configuration,
+interventions, and adapter reset baseline. Save/load/reset are paired
+composite operations; no one-sided reset or implicit rebase is permitted.
+
+Machine authority:
+[I03B contract](../contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json),
+SHA-256 `8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d`.
+No history-carried model was instantiated and no runtime operation occurred
+during this design selection.
+
+#### 8B.3 Runtime-conformance freeze
+
+The separate
+[I03B runtime freeze](../contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json),
+SHA-256 `dd0146f656f3f480d5ff3265696cacf39322fa5fe13991aed822614eee217720`,
+validated without model instantiation. It binds the adapter and harness,
+environment/import/source identities, twelve exact fixture branches,
+history/order and label guards, active-history clamp, state-only separation,
+private partitions, alternate access, paired composite save/load/reset,
+equal-input continuation, one evidence invocation, one reconstruction, zero
+retries, and the full scientific-evidence quarantine.
+
+The exact conformance values are fixture-only and prohibited from I04/I06 or
+scientific reuse. The next permitted action is the sole evidence invocation;
+failure follows the frozen realization/missing-prerequisite/infrastructure
+classification and cannot trigger tuning or a rescue branch.
+
+#### 8B.4 Runtime-conformance disposition and review stop
+
+The sole evidence invocation passed `252/252` frozen assertions. The sole
+reconstruction produced the same SHA-256
+`4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d`
+and was byte-identical to the retained
+[runtime conformance](../contracts/p2-i2/i03b-history-carried-runtime-conformance.json).
+The
+[reconstruction receipt](../contracts/p2-i2/i03b-runtime-reconstruction-receipt.json)
+records one evidence invocation, one reconstruction, zero retries, twelve
+branches per invocation, clean graph identity, and paired composite
+save/load/reset/continuation witnesses.
+
+The fixture demonstrated only implementation conformance: equal-marginal and
+equal-P physical order variants produced different H_P/readout/native-response
+branches; lineage permutation was causally invariant; active-history clamp
+changed the response with P retained; state-only P debit preserved the
+H_P/M_H response; private histories remained separately readable only; and
+alternate access used the same M_H/B_ref path. The adapter never computed or
+scheduled success, and PyGRC owned every native mutation and later response.
+
+`P2-I2-I03B-REVIEW-READY` is satisfied. No fixture value, branch outcome, or
+digest may enter I04/I06 or scientific evidence. I03C and I04 remain
+unauthorized pending explicit owner review/acceptance.
+
+No history-carried surface comparison or binding occurred during I03A/I03AR1.
+I03B may cite those artifacts only as fixed earlier-mode and governance
+boundaries, never as history-carried selection evidence.
+
+### 8B-R1. `P2-I2-I03BR1` — I03B closeout revalidation
+
+**Status:** complete; zero-runtime closeout revalidation passed with no
+blocking finding. Owner acceptance remains pending. I03C/I04 remain
+unauthorized.
+
+#### 8B-R1.1 Activity declaration — 2026-07-14
+
+```text
+iteration_id = P2-I2-I03BR1
+purpose = independently revalidate I03B against the owner-supplied twenty-one-
+          point acceptance review, prioritizing exclusion of a hidden latest-
+          contact response path and confirmation that H_P plus its M_H output
+          port is the functional active-history pool
+entry_authority = review-ready I03B package plus project-owner request for the
+                  supplied validation suggestions to be checked
+frozen_inputs_or_input_freeze_action = retain a machine-readable review/input
+          freeze before inspecting the frozen harness, native source dataflow,
+          conformance branches, identities, and control mappings
+mutation_and_repository_boundary = RCAE I03BR1 checklist, hypothesis,
+          validation contract/result, report, decision/change record, and
+          navigation only; graph/PyGRC read-only; I03B freezes, harness,
+          adapter, and retained runtime evidence immutable
+runtime_policy = zero model instantiations and zero new evidence,
+          reconstruction, retry, rescue, calibration, candidate, or control
+          invocations; exhausted I03B invocation accounting is preserved
+evidence_effect = source/dataflow and retained-artifact acceptance validation
+          only; no scientific evidence, calibration input, registration value,
+          R01-R05 assignment, mode ranking, or terminal effect
+exit_gate = P2-I2-I03BR1-CLOSEOUT-PASSED or explicit blocking finding; never
+            automatic I03C/I04 authorization
+```
+
+- [x] Record I03BR1 in the checklist before revalidation activity.
+- [x] Project I03BR1's active, zero-runtime, no-scientific-effect status into
+  the operational hypotheses before revalidation activity.
+- [x] Retain a machine-readable input freeze mapping all twenty-one review
+  sections and twelve concise acceptance statements to exact audit tests.
+- [x] Trace every field consumed by native feedback emission and production;
+  establish a matched neutral latest contact or prove differing contact fields
+  are outside V.
+- [x] Verify H_P is persistent, independently intervenable active state and
+  M_H is its declared native output port, including clamp semantics.
+- [x] Revalidate the complete P/H_P/L/U_H/R_H/M_H/V factorization, physical
+  token typing, exact admission rule, cursor/idempotency isolation, order-state
+  matching, and bounded history claim.
+- [x] Revalidate stable history clamp, state-only debit exclusion, matched
+  write diversion, private no-common-read, and alternate-access eligibility.
+- [x] Revalidate adapter forbidden/allowed operations and counterfactual
+  producer minimality against all admitted native candidates.
+- [x] Classify H_P capacity, saturation, leakage, depletion, maintenance, and
+  replacement semantics without selecting scientific numeric values.
+- [x] Revalidate complete composite current/reset identity, paired operations,
+  partial-load failure, no implicit rebase, and cursor continuation.
+- [x] Verify mechanical scientific quarantine and the complete isolated
+  twelve-branch matrix using only retained artifacts.
+- [x] Confirm I03A remains independently retained, I03C remains untouched, and
+  any later owner acceptance can authorize only I03C while I04 stays blocked.
+- [x] Retain machine validation, narrative closeout report, and governance
+  disposition; stop for owner review without beginning I03C.
+
+#### 8B-R1.2 Closeout disposition
+
+The frozen
+[I03BR1 machine revalidation](../contracts/p2-i2/i03br1-closeout-revalidation.json)
+passed all twenty-one review checks: fifteen directly and six with explicit
+downstream obligations. There were zero blockers, zero model instantiations,
+and zero runtime, reconstruction, retry, rescue, candidate, control,
+calibration, or scientific invocations. The
+[closeout report](../reports/P2-I2-I03BR1-history-carried-closeout-revalidation.md)
+retains the full source/dataflow reasoning.
+
+The two priority findings are:
+
+1. A common neutral contact follows materialization. Across the order branches
+   its physical route/contact/schedule fields match. Only node-proper-time and
+   derived digests differ; native feedback does not use those differences in
+   the polarity/threshold decision, and `expected_source_surface_digest` is
+   null. The response difference is carried by M_H.
+2. H_P is persistent adapter state and the clamp replaces H_P itself before
+   R_H recomputation and native M_H rematerialization. The functional pool is
+   H_P plus its M_H output-port binding, never P or M_H alone.
+
+The selected lifecycle is run-bounded append-only under normal admission,
+with explicit whole-history replacement and no autonomous depletion,
+saturation, leakage, or maintenance transition. The bounded claim is active
+ordered history causally materialized through a scalar readout; irreducible
+raw-history and non-Markovian claims remain prohibited.
+
+Six non-blocking duties remain explicit for later stages: I06 must preserve a
+unique source-to-P path or register a route key, resolve scientific access,
+bound lifecycle/event counts, make paired restoration the only registered
+continuation interface with manifest-hash validation, and retain branch
+identity obligations; I04/I06 validators must reject every conformance fixture
+value/digest while importing only the pre-runtime structural family.
+
+`P2-I2-I03BR1-CLOSEOUT-PASSED` is satisfied. This makes I03B acceptance-ready
+but does not itself accept I03B, authorize I03C/I04, pass the umbrella gate,
+assign R01-R05, or create scientific evidence. A new owner progression
+decision may authorize I03C only; I04 remains blocked.
 
 ### 8C. `P2-I2-I03C` — Hybrid realization freeze
 
@@ -1047,6 +1288,11 @@ qualitative causal expectation.
   pass/ambiguous/fail evaluation.
 - [ ] Freeze raw-response retention for all cells and subconfigurations.
 - [ ] Freeze analysis code/policy identity and change-control boundary.
+- [ ] Reject every I03A/I03B/I03C conformance-fixture coefficient, amount,
+  type, time, threshold, packet amount, branch ID, response observation,
+  implementation comparator, and evidence digest as calibration or scientific
+  input; import only each pre-runtime frozen structural family and causal
+  boundary.
 - [ ] Validate the preregistration without running the candidate or matched
   null.
 - [ ] Prove that no retained mode was removed or demoted by convenience,
@@ -1088,7 +1334,17 @@ Exit gate `P2-I2-CAL-GATE` opens registration construction only.
 - [ ] Freeze the primary comparator and all mandatory secondary controls.
 - [ ] Freeze contribution amounts, order/timing, mixing, support, reserve,
   leakage, maintenance, saturation, and applicability dispositions.
+- [ ] For history-carried registration, preserve one unique registered source-
+  to-P admission path or add an explicit route/channel admission key; bind
+  run/event capacity and retain or formally revise the I03BR1 lifecycle class.
 - [ ] Freeze branch-point and complete composite restoration identity.
+- [ ] Register one paired native-v2/adapter continuation interface that
+  validates manifest component hashes and the complete composite before use;
+  prohibit one-sided load/reset, implicit rebase, and fabricated legacy
+  adapter baseline.
+- [ ] Reject every I03 conformance fixture value, branch identifier,
+  comparator, response observation, and evidence/reconstruction digest as a
+  registered candidate value or evidence source.
 - [ ] Freeze seeds, attempts, one infrastructure-retry scope, resources,
   isolation, and contamination checks.
 - [ ] Freeze expected artifacts, manifests, reconstruction commands, report
@@ -1214,16 +1470,16 @@ valid terminal classification + reconstructed evidence
 | `L02-Q00` | Which public PyGRC surfaces could carry one pool? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: node coherence + native packet contribution + feedback response composition candidate |
 | `L02-Q01` | Is any native surface adequate to the L02 discriminator? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: composition-capable native surfaces exist; complete realization adequacy is not assigned and control gaps remain |
 | `L02-Q02` | Which graph sources and restoration provider are admitted? | I02/I02R1/I02R2 | Decided after reset revalidation | `P2-I2-DEC-009`: updated checkout-bound identities admitted; v1 current-only and v2 reset-aware providers available but unselected; legacy rebase provenance remains external; P2-I1 projection historical-only |
-| `L02-Q03` | Which realization class is selected for each staged mode? | I03A/I03AR1, then I03B, then I03C | State-carried design/conformance review-ready; later modes unauthorized | DEC-010/DEC-012: state-carried `pygrc_native_candidate` passed bounded implementation conformance; owner review required before I03B |
-| `L02-Q04` | Which dependence-mode profiles are required, and in what order? | I03 | Decided; I03A bound | DEC-011: retain all three through execution; 8A `state_carried`, review, 8B `history_carried`, review, 8C `hybrid`, review; realization selection occurs within modes |
-| `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 concept; I06 exact | I03A concept review-ready | DEC-010 and I03A contract bind S1/S2/P, native U/L/V, one-node access; exact node/edge IDs pending I06 |
-| `L02-Q06` | What contribution and mixing rule constitutes common state or active history? | I03 concept; I04/I06 exact | I03A concept review-ready | Positive native packets add into one P coherence scalar; exact amounts/times pending |
+| `L02-Q03` | Which realization class is selected for each staged mode? | I03A/I03AR1, then I03B, then I03C | State-carried owner-accepted; history-carried acceptance-ready after I03BR1; hybrid unauthorized | DEC-010/DEC-012: state-carried `pygrc_native_candidate`; DEC-014: history-carried `minimally_producer_assisted`; both passed bounded implementation conformance and I03B passed closeout revalidation |
+| `L02-Q04` | Which dependence-mode profiles are required, and in what order? | I03 | Decided; I03A/I03B bound | DEC-011: retain all three through execution; 8A `state_carried`, review, 8B `history_carried`, review, 8C `hybrid`, review; realization selection occurs within modes |
+| `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 concept; I06 exact | I03A/I03B concepts bound | I03A binds native P/U/L/V; I03B binds external H_P, native M_H response port, minimal adapter, and common one-node access; exact IDs remain I06 |
+| `L02-Q06` | What contribution and mixing rule constitutes common state or active history? | I03 concept; I04/I06 exact | I03A/I03B concepts bound | I03A uses additive P coherence; I03B uses ordered source-label-free physical tokens and a deterministic left-fold readout; scientific amounts/parameters remain pending |
 | `L02-Q07` | Which one later response is primary? | I04 | Open | Discriminator gate required |
 | `L02-Q08` | Which nearest insufficient-repetition comparator owns the margin? | I04 | Open | Discriminator gate required |
 | `L02-Q09` | What matched null and resolution freeze `delta`? | I04–I05 | Open | Calibration only |
-| `L02-Q10` | How do all cells and signed controls materialize? | I03 concept; I06 exact | I03A concept review-ready | Seven cells/five controls bound; exact subconfiguration matrix pending I06 |
-| `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | I03A concept review-ready | Native reserve/accumulation/mixing/depletion; saturation/leakage/maintenance not applicable in passive window |
-| `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact | I03A axis review-ready | Access-scope contrast selected; exact alternate eligible responder pending I06 |
+| `L02-Q10` | How do all cells and signed controls materialize? | I03 concept; I06 exact | I03A accepted; I03B acceptance-ready after I03BR1 | Both modes bind seven cells/five controls; exact scientific subconfiguration matrix pending I06 |
+| `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | I03A accepted; I03B lifecycle acceptance-ready after I03BR1 | I03B is run-bounded append-only with explicit replacement and no autonomous capacity/saturation/leakage/maintenance; exact registered bounds pending I06 |
+| `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact | I03A accepted; I03B access axis acceptance-ready after I03BR1 | Architectural alternate access passed conformance; scientific R05 retention and exact eligible responder remain I04/I06 work |
 
 Questions may move only through cumulative decisions. A later answer must not
 rewrite an earlier retained decision without its reopening condition.
@@ -1276,6 +1532,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-008` | I03A owner clarification after static design validation and before I03A acceptance | `owner_accepted_mode_family_scope_correction` | Correct singular mode-selection language: retain and test all three profiles through I04–I11; select native/producer/missing-prerequisite disposition within each mode; preserve one lane terminal classification with separate mode dispositions | Brief gate remains passed under DEC-011; revalidate affected I03A cross-artifact invariants; no I03B/I04 authorization and no runtime/scientific rerun | Frozen Phase 1 L02 authority, seven cells, five controls, OP-01..OP-09, I03A causal meaning, native-first rule, original I03A entry freeze, graph read-only boundary | Complete; owner accepted 2026-07-14 |
 | `P2-I2-CHG-009` | Owner acceptance of the stronger runtime-conformance path after I03A review | `owner_accepted_precalibration_realization_conformance_scope` | Add 8A-R1 before I03B; require bounded runtime conformance inside later I03B/I03C mode freezes; distinguish conformance from I04–I08 scientific work; preserve original I03A freeze | I03AR1 active only after its own freeze; I03B/I03C/I04 remain unauthorized; failure reopens realization adequacy rather than assigning an L02 result | Accepted I03A causal meaning, all three retained modes, scientific calibration/registration/execution sequence, no-tuning rule, claim ceiling, graph read-only boundary | I03AR1 portion complete and review-ready; continues to govern I03B/I03C |
 | `P2-I2-CHG-010` | First frozen I03AR1 evidence invocation stopped before output on strict equality between derived `0.09999999999999998` and literal `0.1` | `infrastructure_assertion_representation_correction` | Add I03AR1R1; freeze absolute tolerance `1e-12` and relative tolerance `0` for derived response-delta comparisons only; issue new harness/freeze identities | Original invocation permanently invalid with no output/evidence; one replacement evidence invocation plus one reconstruction may run only after revised-freeze validation | All fixture values, branches, native calls, causal assertions, source/import identities, quarantine, no-search rule, graph read-only boundary | Complete; replacement 136/136 and reconstruction byte-identical |
+| `P2-I2-CHG-011` | I03BR1 owner-supplied twenty-one-point acceptance review | `closure_only_retention_fix` | Add a frozen zero-runtime closeout audit; retain latest-contact exclusion, functional H_P/M_H identity, exact lifecycle, layered restoration, mechanical quarantine rejection set, and six downstream obligations | No runtime rerun and no I03B artifact rewrite; 21/21 checks passed with zero blockers; I03B acceptance-ready but I03C/I04 remain unauthorized | Exact I03B hashes and invocation accounting, minimally producer-assisted class, I03A independence, no scientific evidence, graph read-only boundary | Complete pending owner progression decision |
 
 ## 19. Evidence ledger
 
@@ -1284,7 +1541,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1 | Cumulative decision record, DEC-001 through DEC-012 | Decision authority only | Retained |
+| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B | Cumulative decision record, DEC-001 through DEC-014 | Decision authority only | Retained |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
 | `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
@@ -1307,6 +1564,14 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I03AR1R1-FREEZE` | I03AR1R1 | [Governed comparator freeze revision](../contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json) and `P2-I2-CHG-010` | Infrastructure correction only; one replacement plus one reconstruction authority | Retained |
 | `P2-I2-I03AR1-CONFORMANCE` | I03AR1/I03AR1R1 | [Raw conformance record and embedded runtime receipt](../contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json) and [narrative report](../reports/P2-I2-I03AR1-state-carried-runtime-conformance.md) | Quarantined realization implementation-conformance only; 136/136; no calibration or L02 result | Retained pending owner review |
 | `P2-I2-I03AR1-RECONSTRUCTION` | I03AR1R1 | [Attempt and byte-reconstruction receipt](../contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json) | Attempt provenance and reconstructibility only; original invalid invocation has no evidence effect | Retained |
+| `P2-I2-I03B-DESIGN-FREEZE` | I03B | [History-carried design input freeze](../contracts/p2-i2/i03b-history-carried-realization-freeze-input.json) | Exact native-first comparison and no-runtime design authority only | Retained |
+| `P2-I2-I03B-DESIGN` | I03B | [History-carried realization contract](../contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json), [static validation](../contracts/p2-i2/i03b-history-carried-realization-validation.json), [validator](../scripts/p2_i2_i03b_validate.py), [report](../reports/P2-I2-I03B-history-carried-realization-and-operational-hypothesis-freeze.md), and `P2-I2-DEC-014` | Minimally producer-assisted causal-design authority only; no scientific evidence | Retained pending owner review |
+| `P2-I2-I03B-ENVIRONMENT` | I03B | [RCAE `.venv` and admitted-import receipt](../contracts/p2-i2/i03b-environment-receipt.json) | Environment/import identity only; no model or runtime evidence | Retained |
+| `P2-I2-I03B-RUNTIME-FREEZE` | I03B | [Immutable history-carried runtime-conformance freeze](../contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json) | Exact twelve-branch conformance fixture/run/quarantine authority only | Retained |
+| `P2-I2-I03B-CONFORMANCE` | I03B | [Raw conformance record and embedded runtime receipt](../contracts/p2-i2/i03b-history-carried-runtime-conformance.json) | Quarantined realization implementation-conformance only; 252/252; no calibration or L02 result | Retained pending owner review |
+| `P2-I2-I03B-RECONSTRUCTION` | I03B | [Byte-reconstruction receipt](../contracts/p2-i2/i03b-runtime-reconstruction-receipt.json) | Invocation provenance, paired restoration witness, and byte reconstructibility only | Retained pending owner review |
+| `P2-I2-I03BR1-FREEZE` | I03BR1 | [Closeout-revalidation input freeze](../contracts/p2-i2/i03br1-closeout-revalidation-input.json) and `P2-I2-CHG-011` | Exact owner-review scope and zero-runtime audit authority only | Retained |
+| `P2-I2-I03BR1-VALIDATION` | I03BR1 | [Machine revalidation](../contracts/p2-i2/i03br1-closeout-revalidation.json), [validator](../scripts/p2_i2_i03br1_validate.py), and [closeout report](../reports/P2-I2-I03BR1-history-carried-closeout-revalidation.md) | Source/dataflow and retained-artifact acceptance validation only; 21/21, zero blockers, no scientific effect | Retained pending owner acceptance |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

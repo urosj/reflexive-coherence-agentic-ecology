@@ -47,6 +47,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-010` | Which state-carried realization, factorization, interventions, controls, and producer boundary should 8A freeze? | Accepted by project owner as the causal-design baseline for I03AR1; bounded runtime conformance later completed under DEC-012; scientific support unassigned | Authorizes only separately frozen I03AR1 conformance; umbrella gate remains open; I03B/I04 unauthorized | 2026-07-14 |
 | `P2-I2-DEC-011` | Are state-carried, history-carried, and hybrid alternatives for later selection or three retained mode-specific realizations? | Accepted by project owner: retain and test all three; select native/producer/missing-prerequisite disposition within each mode | Corrects brief/downstream singular scope; brief gate remains passed; did not itself accept DEC-010 or authorize I03B/I04 | 2026-07-14 |
 | `P2-I2-DEC-012` | May each I03 mode receive bounded runtime conformance before calibration, and what evidence boundary applies? | Accepted by project owner: I03AR1 now, then design-first conformance inside I03B/I03C | Authorizes only freeze-governed realization conformance; no I04–I08 or scientific authority | 2026-07-14 |
+| `P2-I2-DEC-013` | Does the review-ready I03A/I03AR1 package satisfy the progression boundary, and may 8B begin? | Accepted by project owner: move to 8B next | Opens design-first I03B only; I03C/I04 and scientific authority remain closed | 2026-07-14 |
+| `P2-I2-DEC-014` | Which history-carried realization and producer boundary should I03B freeze before runtime conformance? | Design-frozen minimally producer-assisted adapter; bounded runtime conformance and I03BR1 closeout revalidation passed; owner acceptance remains pending | I03B acceptance-ready; I03C/I04 remain closed | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1051,14 +1053,199 @@ conformance SHA-256
 This assigns bounded realization implementation-conformance only. Owner
 acceptance/revision remains pending; I03B and I04 remain unauthorized.
 
-## 15. Pending decision queue
+## 15. `P2-I2-DEC-013` — I03AR1 progression acceptance and I03B entry
+
+**Status:** accepted by project owner on 2026-07-14
+
+**Question:** Does the review-ready I03A/I03AR1 state-carried package satisfy
+its staged review boundary, and may the history-carried 8B iteration begin?
+
+### 15.1 Decision
+
+Accept the I03A causal design and quarantined I03AR1 runtime-conformance
+package for staged progression. Begin `P2-I2-I03B` under its own checklist and
+hypothesis declaration.
+
+This is progression acceptance, not scientific support. The state-carried
+profile remains fixed; its observed fixture values and outcomes may not select
+the history-carried realization. I03B must independently:
+
+- freeze its design/source-comparison inputs before comparing candidates;
+- define active common causal history separately from encounter state and
+  audit-only lineage;
+- apply native-first selection within `history_carried` mode;
+- freeze its causal design before the first mode-specific runtime call;
+- if realizable, retain a second exact runtime-conformance freeze and bounded
+  reconstruction under DEC-012; and
+- stop for owner review before I03C.
+
+### 15.2 Gate effect
+
+DEC-013 closes the I03AR1 owner-review stop and opens I03B design work only.
+It does not pass the umbrella discriminator gate, authorize I03C/I04, select a
+history-carried realization, choose scientific values, or assign an L02
+result.
+
+Reopen if I03B uses I03AR1 outputs as selection evidence, rewrites the accepted
+state-carried profile, runs before its own freezes, or is treated as permission
+for later-mode or scientific work.
+
+## 16. `P2-I2-DEC-014` — History-carried realization and producer boundary
+
+**Status:** design-frozen; bounded runtime conformance passed; owner review
+pending
+
+**Question:** Can admitted PyGRC machinery natively realize one active,
+independently intervenable common history, or what is the smallest adequate
+producer-assisted boundary for 8B?
+
+### 16.1 Source-current comparison
+
+The native runtime owns an ordered packet/contact surface log, packet ledger,
+producer configuration, snapshots, and reset-aware v2 identity. Those are
+valuable source facts and audit/restoration surfaces. They do not by
+themselves instantiate the required history-carried path:
+
+- native contact rows are explicitly passive evidence;
+- native feedback derives from the latest contact row and live node state,
+  not a registered fold over several contribution events;
+- `expected_source_surface_digest` compares one configured latest-row digest
+  and would become a controller-addressed exact-event key if treated as the
+  common history; and
+- LGRC-0 causal-history artifacts are annotation-only and non-mutating.
+
+The native option is therefore inadequate for `history_carried`. This does
+not revise I01's audit classifications or the accepted I03A native
+state-carried design.
+
+### 16.2 Selected realization
+
+Select `minimally_producer_assisted` with one bounded
+`RCAEActiveHistoryAdapterV1` component:
+
+```text
+native arrivals to P
+  -> source-label-free ordered physical tokens
+  -> one external, independently intervenable H_P
+  -> deterministic order-sensitive readout
+  -> public native balancing packets materialize M_H
+  -> native feedback/producer owns the later A-to-B transition
+```
+
+The adapter owns only the missing active-history carrier, its cursor,
+history-only interventions, readout calculation, and the request for native
+balancing packets. It may inspect admitted surface rows read-only. It may not
+mutate PyGRC state directly, retain contributor identities in causal tokens,
+read success/response state, apply the scientific response threshold, emit a
+success field, or schedule the later response. PyGRC owns every coherence
+mutation and the complete response evaluation/transition.
+
+`H_P` is one ordered token tuple, not source-private mailboxes. The readout
+family is a source-label-invariant left fold
+`r_(j+1) = lambda * r_j + typed_amount_j` with `0 < lambda < 1`. Exact
+scientific values remain I04/I06 work. A separate conformance freeze may bind
+fixture-only values that are prohibited as later calibration inputs.
+
+### 16.3 Discriminators and restoration
+
+I03B freezes:
+
+- a physical-token order shuffle that preserves marginal quantities and P at
+  encounter while changing H_P/readout/response;
+- an explicit active-history clamp with native contribution/audit/P matched;
+- a state-only P intervention with H_P/M_H fixed and expected response
+  invariance;
+- native contribution diversion that prevents H_P admission while preserving
+  source activity;
+- audit-only lineage permutation with H_P/M_H/response invariance;
+- separate H1/H2 private carriers with a strict prohibition on reading both;
+  and
+- one common H_P/M_H access scope usable by alternate eligible responders.
+
+Native v2 identity covers the model, M_H, native logs/configuration, and native
+reset baseline. It does not cover H_P, the consumed-row cursor, adapter
+configuration/interventions, or adapter reset baseline. The realization must
+therefore compose native v2 with complete current and baseline adapter
+identity. Save/load/reset are paired composite operations; one-sided reset or
+implicit rebase is forbidden.
+
+### 16.4 Gate effect and reopening
+
+DEC-014 authorizes construction and validation of one separate immutable
+I03B runtime-conformance freeze under DEC-012. It does not authorize a runtime
+call before that freeze validates, select a scientific response/comparator or
+numeric value, assign an L02 result, or open I03C/I04.
+
+Reclassify to `missing_prerequisite` before accepting runtime conformance if
+the adapter must compute/schedule success, if H_P cannot be independently
+intervened and restored, if the response path must consult contributor/audit
+identity, if private histories must be combined, or if paired composite
+save/load/reset and continuation cannot be demonstrated.
+
+### 16.5 Runtime-conformance disposition
+
+The separate freeze validated before runtime at SHA-256
+`dd0146f656f3f480d5ff3265696cacf39322fa5fe13991aed822614eee217720`.
+The sole evidence invocation passed `252/252` frozen assertions. The sole
+reconstruction was byte-identical to the retained conformance artifact at
+SHA-256
+`4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d`.
+There were zero retries, rescue variants, searches, or graph mutations.
+
+The bounded implementation demonstrated the declared separations: order
+changed H_P/readout/native response with marginal quantities and P matched;
+lineage-only permutation was invariant; active-history clamp changed the
+response with P retained; state-only P intervention preserved H_P/M_H and the
+response; private carriers remained separate; alternate access used the same
+M_H/B_ref path; and paired native-v2/adapter save-load-reset plus equal-input
+continuation matched. The adapter never computed or scheduled success. The
+native feedback producer owned the later response transition.
+
+This establishes implementation conformance only. It supplies no scientific
+effect, response/comparator, calibration input, registered value, L02 support
+or falsification, or inter-mode ranking. I03B is now review-ready. DEC-014
+does not authorize I03C/I04; explicit owner acceptance/revision is required.
+
+### 16.6 I03BR1 closeout-revalidation note
+
+The project owner's twenty-one-point acceptance review was handled under a
+separate checklist-first `P2-I2-I03BR1` audit and `P2-I2-CHG-011`; it does not
+rewrite DEC-014. The exact I03B harness, adapter, freezes, evidence invocation,
+and reconstruction remained immutable. No model or runtime operation ran.
+
+The revalidation passed all twenty-one checks with zero blockers. In
+particular:
+
+- the common neutral contact follows materialization; the two order branches
+  match its physical route/contact/schedule fields, while the remaining node-
+  proper-time and digest differences do not enter native polarity/threshold
+  evaluation and `expected_source_surface_digest` remains null; and
+- H_P is persistent independently intervenable state, R_H reads H_P, and M_H
+  is its native output port. The clamp replaces H_P before recomputation and
+  native rematerialization.
+
+Six downstream obligations are retained without changing the I03B
+disposition: unique registered source-to-P admission or an explicit route key;
+scientific access resolution; bounded lifecycle/event counts; an I06 paired-
+restoration interface with explicit manifest-component validation; branch
+identity retention; and I04/I06 rejection of every conformance fixture value
+and digest. The active-history claim remains bounded to an ordered history
+causally materialized through a deterministic scalar readout; no irreducible-
+history or non-Markovian claim is assigned.
+
+`P2-I2-I03BR1-CLOSEOUT-PASSED` makes I03B acceptance-ready. It grants no
+progression authority. Consistent with the owner's review, any acceptance must
+be a new decision after DEC-014 that opens I03C only, retains
+`minimally_producer_assisted`, leaves history-carried scientific status
+unresolved, and keeps I04 blocked.
+
+## 17. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Owner acceptance/revision of the complete DEC-010/DEC-012 state-carried profile | I03AR1 review | Review-ready I03A design plus I03AR1 conformance/reconstruction package |
-| History-carried realization class and causal interfaces | I03B | Owner acceptance of I03AR1 and a new I03B freeze |
+| I03B staged-progression acceptance and I03C authorization | After I03BR1 | Explicit owner disposition; may open I03C only and must keep I04 blocked |
 | Hybrid realization class and separable state/history interfaces | I03C | Owner acceptance of I03B and a new I03C freeze |
 | Umbrella staged-family disposition without inter-mode selection | I03 closeout | Owner-reviewed I03A, I03B, and I03C packages under DEC-011 |
 | Per-mode raw responses/orientations and justified shared boundaries | I04 | Umbrella discriminator gate |

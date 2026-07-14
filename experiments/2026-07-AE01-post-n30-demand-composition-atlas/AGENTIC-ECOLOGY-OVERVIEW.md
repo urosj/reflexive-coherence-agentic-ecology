@@ -423,8 +423,25 @@ order and lineage invariance, separate private reads, alternate access,
 model-owned later response, equal save/load continuation, and reset to the
 persisted baseline all conformed. This remains implementation evidence only:
 no calibration, registered scientific candidate, control result, or L02
-support/falsification was produced. The umbrella discriminator gate remains
-open and I03B is unauthorized pending owner review of I03AR1.
+support/falsification was produced. The owner then accepted I03A/I03AR1 for
+staged progression and authorized I03B. The history-carried native-first audit
+found that PyGRC's retained history surfaces are passive or latest-row based,
+so I03B selected a `minimally_producer_assisted` realization. One bounded RCAE
+adapter owns only an active, independently intervenable common-history carrier,
+its cursor, history-only interventions, and order-sensitive readout. Public
+native packets materialize that readout, and PyGRC exclusively owns state
+mutation, feedback evaluation, response scheduling, and the later transition.
+The sole quarantined evidence invocation passed 252/252 frozen assertions and
+its sole reconstruction was byte-identical. This is realization-conformance
+evidence only, not calibration or L02 support/falsification. I03BR1 then
+revalidated all twenty-one owner-review checks from source and retained
+artifacts without a runtime call. A common neutral contact follows
+materialization; differing latest-row proper-time/digest fields do not enter
+native polarity/threshold evaluation. H_P is persistent independently
+intervenable state and M_H is its declared native output port. The audit found
+zero blockers. I03B is acceptance-ready but not owner-accepted; the umbrella
+discriminator gate remains open and I03C/I04 are unauthorized pending owner
+disposition.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

@@ -1,0 +1,741 @@
+{
+  "artifact_id": "P2-I2-I03B-HISTORY-CARRIED-REALIZATION-AND-DISCRIMINATOR-CONTRACT",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L02",
+  "iteration_id": "P2-I2-I03B",
+  "status": "design_frozen_runtime_conformance_pending",
+  "frozen_at": "2026-07-14",
+  "evidence_effect": "history-carried causal-design authority only; no calibration, candidate execution, control outcome, L02 support result, or terminal classification",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-freeze-input.json",
+    "sha256": "1d1ab37502b9138c5c98b3048bd854ac7ed17d5775c9fd34ad8475608a0bcc7f"
+  },
+  "authority": {
+    "rcae_entry_revision": "c13ccb74d3ddc7c6f8f3870a15e17e024c9200dd",
+    "graph_repository_id": "grc",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "source_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+    "source_manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+    "graph_repository_read_only": true,
+    "entry_decision": "P2-I2-DEC-013",
+    "design_decision": "P2-I2-DEC-014"
+  },
+  "mode_scope": {
+    "pool_dependence_mode": "history_carried",
+    "encounter_pool_state_is_primary_causal_component": false,
+    "ordered_common_history_is_causal": true,
+    "audit_lineage_is_causal": false,
+    "state_carried_profile_status": "owner_accepted_for_progression_and_unchanged",
+    "hybrid_profile_status": "unauthorized_until_owner_accepts_i03b",
+    "umbrella_discriminator_gate_status": "in_progress_not_passable_by_i03b_alone"
+  },
+  "native_first_source_comparison": {
+    "native_candidate_disposition": "inadequate_for_history_carried",
+    "native_strengths": [
+      "LGRC9V3RuntimeState owns an ordered causal_pulse_substrate_surface_log and packet ledger.",
+      "Each committed packet event can emit a route_local_pulse_contact row with physical amount, endpoints, channel, event order, and time.",
+      "The exact runtime artifact, surface log, native producer configuration, and valid reset baseline are covered by the native v2 restoration identity.",
+      "Native feedback and packet producers can own the final history-derived response transition after a compatible causal readout is materialized."
+    ],
+    "native_blockers": [
+      "LGRC9V3CausalPulseSubstrateSurfaceRow is explicitly passive evidence and does not update an active common history carrier.",
+      "emit_feedback_eligibility_surface_row derives from only the latest route-local contact row and live node coherence; it does not fold a registered multi-contribution sequence.",
+      "The feedback producer reads only the latest feedback row and an optional expected digest for that row; this is not a common, independently intervenable multi-event history.",
+      "The optional LGRC-0 causal-history artifact is annotation-only and cannot mutate runtime or drive a later response.",
+      "No admitted public native operation performs a history-only reorder/clamp while preserving encounter state and audit attribution."
+    ],
+    "rejected_native_shortcuts": [
+      {
+        "shortcut": "Treat the ordered native surface log as H_P without adding an active read path.",
+        "reason": "The log remains audit evidence; no response consumes the complete registered history."
+      },
+      {
+        "shortcut": "Use expected_source_surface_digest as the history condition.",
+        "reason": "It compares one latest-row digest containing event/route identity selected by configuration, not a source-independent common-history carrier; using it as success authorization would be controller-addressed."
+      },
+      {
+        "shortcut": "Treat an LGRC-0 annotation artifact as active history.",
+        "reason": "The admitted implementation and reference guide declare it derived, annotation-only, and non-mutating."
+      }
+    ],
+    "selected_disposition": "minimally_producer_assisted"
+  },
+  "realization_selection": {
+    "realization_class": "minimally_producer_assisted",
+    "brief_class": "producer_assisted",
+    "candidate_id": "p2-i2-history-carried-active-history-adapter-v1",
+    "selected_rcae_component": "RCAEActiveHistoryAdapterV1",
+    "selection_rationale": "PyGRC supplies native attributable packet events, ordered contact evidence, packet transport, live response nodes, the model-owned feedback producer, snapshots, reset, and v2 identity. The missing separable operation is an active common-history carrier plus source-label-invariant readout materialization. One RCAE adapter owns only that carrier transition, intervention surface, cursor, and native readout bridge. It never writes a success field, reads the response target, applies the response threshold, or directly authors the later A-to-B transition.",
+    "rcae_causal_producer_selected": true,
+    "rcae_producer_computes_pool_history": true,
+    "rcae_producer_computes_success_or_later_response": false,
+    "native_feedback_producer_owns_later_response_transition": true,
+    "native_support_status": "native_history_surface_inadequate_producer_assisted_candidate_not_scientifically_supported",
+    "reclassification_trigger": "If the adapter cannot keep H_P independently restorable/intervenable, cannot materialize its readout without consulting contributor labels or response state, or must directly decide/schedule success rather than handing a carrier-scoped readout to the native response path, stop as missing_prerequisite before runtime evidence is accepted."
+  },
+  "role_registry": {
+    "S1": {
+      "role": "attributable_source_one",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06",
+      "causal_token_rule": "physical contribution amount/type/timing may enter H_P; arbitrary lineage labels may not"
+    },
+    "S2": {
+      "role": "attributable_source_two",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06",
+      "causal_token_rule": "distinct attributable audit identity; no source-address field retained in H_P"
+    },
+    "P": {
+      "role": "native_common_contribution_receiver_with_matched_encounter_state",
+      "native_type": "GRC9V3NodeState.coherence",
+      "exact_node_id": "pending_I06",
+      "history_mode_rule": "P receives both native contributions and makes their marginal physics auditable, but P.coherence is matched across the primary history contrast and is excluded from V's feedback mask"
+    },
+    "H_P": {
+      "role": "one_common_non_private_active_history_carrier",
+      "owner": "RCAEActiveHistoryAdapterV1",
+      "exact_carrier_id": "pending_I06",
+      "identity_rule": "one ordered token sequence shared by all registered contributions; no contributor-private slots, success field, or lineage-indexed substate"
+    },
+    "M_H": {
+      "role": "native_materialized_readout_port_of_H_P",
+      "native_type": "GRC9V3NodeState.coherence",
+      "exact_node_id": "pending_I06",
+      "identity_rule": "deterministic output port/cache of H_P, never an independently selected state-carried pool; response masks may read M_H but not P, S1, S2, or audit logs"
+    },
+    "R_H_plus": {
+      "role": "native_positive_balance_reservoir_for_M_H",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    },
+    "K_H": {
+      "role": "native_negative_balance_sink_for_M_H",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    },
+    "B_ref": {
+      "role": "matched_feedback_reference_node",
+      "native_type": "GRC9V3NodeState.coherence",
+      "exact_node_id": "pending_I06"
+    },
+    "E": {
+      "role": "neutral_later_encounter_trigger",
+      "native_surface": "route_local_pulse_contact row",
+      "identity_rule": "independently scheduled after H_P readout materialization; neither contributor identity nor contribution order selects E"
+    },
+    "A": {
+      "role": "eligible_native_response_packet_source",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    },
+    "B": {
+      "role": "later_native_response_packet_target",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    },
+    "H1_private": {
+      "role": "private_active_history_partition_for_S1_control_only",
+      "owner": "separate RCAEActiveHistoryAdapterV1 instance",
+      "exact_carrier_id": "pending_I06"
+    },
+    "H2_private": {
+      "role": "private_active_history_partition_for_S2_control_only",
+      "owner": "separate RCAEActiveHistoryAdapterV1 instance",
+      "exact_carrier_id": "pending_I06"
+    }
+  },
+  "causal_factorization": {
+    "C_P": {
+      "definition": "float(model.get_state().base_state.nodes[P].coherence) immediately before the neutral encounter",
+      "owner": "PyGRC",
+      "history_mode_role": "matched non-primary encounter state and audit cross-check",
+      "response_read_allowed": false
+    },
+    "q": {
+      "definition": "registered physical contribution token derived from one admitted native arrival-to-P surface row",
+      "causal_fields": [
+        "contact_amount",
+        "registered contribution operation kind when physically distinct",
+        "relative sequence position",
+        "registered inter-arrival interval when temporal structure is selected"
+      ],
+      "admission_filter_only_fields": [
+        "target_node_id equals P",
+        "pulse_event_kind equals arrival",
+        "registered contributing route membership",
+        "surface_digest not previously consumed"
+      ],
+      "forbidden_token_fields": [
+        "source_lineage_id",
+        "target_lineage_id",
+        "source_node_id",
+        "pulse_packet_id",
+        "pulse_event_id",
+        "surface_digest",
+        "contributor count",
+        "success or response label"
+      ],
+      "exact_amounts_types_and_times": "pending_I04_and_I06"
+    },
+    "U_H": {
+      "state_transition": "H_P(k+1) = append(H_P(k), canonical_history_token(q_k))",
+      "owner": "RCAEActiveHistoryAdapterV1",
+      "input_authority": "read-only admitted LGRC9V3 route-local arrival rows after the retained cursor",
+      "mixing_rule": "ordered append into one carrier identity; the sequence is common even though attribution remains separately auditable",
+      "idempotency_rule": "one native surface_digest may advance exactly one declared carrier once; consumed digests remain cursor/idempotency state but are excluded from the causal token"
+    },
+    "R_H": {
+      "definition": "source-label-invariant, order-sensitive fold over H_P: r_0 = 0; r_(j+1) = lambda * r_j + typed_amount_j, with 0 < lambda < 1",
+      "causal_role": "deterministic readout of active history, not the scientific response or success condition",
+      "structural_parameters_frozen_here": [
+        "ordered left fold",
+        "source-label exclusion",
+        "strictly interior recency coefficient",
+        "physical token values rather than row/lineage digests"
+      ],
+      "scientific_numeric_parameters": "pending_I04_and_I06",
+      "runtime_conformance_parameters": "must be separately frozen as fixture-only values forbidden as I04 inputs"
+    },
+    "M_H": {
+      "materialization": "At a declared synchronization checkpoint, the adapter compares the deterministic H_P readout with native M_H coherence and schedules only public native R_H_plus-to-M_H or M_H-to-K_H balancing packets for the exact difference; PyGRC step processes every debit/arrival.",
+      "owner_of_delta_calculation_and_packet_schedule_request": "RCAEActiveHistoryAdapterV1",
+      "owner_of_coherence_mutation_and_budget_transport": "PyGRC",
+      "cache_rule": "M_H is reconstructible from H_P and frozen readout configuration and must match it before V; it is not sufficient restoration identity on its own"
+    },
+    "L": {
+      "definition": "native packet, event, route-local surface, and lineage records retaining source node/lineage, amount, route, row digest, packet identity, and times",
+      "owner": "PyGRC",
+      "functional_role": "audit_only_for_i03b_except_admission_filter_and_idempotency_cursor",
+      "response_read_allowed": false
+    },
+    "V": {
+      "public_call_chain": [
+        "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+        "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+        "pygrc.models.LGRC9V3.produce_events",
+        "pygrc.models.LGRC9V3.step"
+      ],
+      "history_read": "feedback front mask contains M_H only; rear mask contains matched B_ref only; P, contributors, native logs, and private histories are absent",
+      "later_transition": "model-owned feedback producer evaluates the native M_H-derived polarity/threshold and schedules one native A-to-B packet",
+      "history_guard": "expected_source_surface_digest remains null; the response cannot use one latest-row digest as a hidden order controller",
+      "exact_raw_response_and_orientation": "pending_I04"
+    },
+    "forbidden_G": {
+      "prohibited_inputs_or_actions": [
+        "source_lineage_id or target_lineage_id in H_P token/readout/V",
+        "source-addressed or contributor-indexed history slots in the common carrier",
+        "reading both private histories in one response branch",
+        "controller-authored pool-present, combined, eligible, or success field",
+        "RCAE adapter reading A/B response state or applying the scientific response threshold",
+        "RCAE adapter directly writing M_H coherence or directly scheduling A-to-B success",
+        "using expected_source_surface_digest as a preauthorized exact-history success key"
+      ],
+      "failure_effect": "Any prohibited read/action reclassifies the path as controller/mailbox or missing_prerequisite; it cannot remain the selected minimally producer-assisted candidate."
+    }
+  },
+  "producer_boundary": {
+    "component": "RCAEActiveHistoryAdapterV1",
+    "single_missing_operation": "maintain and expose one independently intervenable active ordered history projection over admitted native contribution rows",
+    "owned_state": [
+      "ordered H_P token tuple",
+      "consumed native surface-digest cursor/idempotency set",
+      "history-carrier binding and readout configuration",
+      "last materialized readout and native M_H identity",
+      "explicit history-intervention record",
+      "external reset baseline for all preceding fields"
+    ],
+    "allowed_calls": [
+      "read model.get_state().causal_pulse_substrate_surface_log without mutation",
+      "compute canonical source-label-free history tokens and R_H",
+      "append, replace, reorder, or clamp H_P only through declared intervention methods",
+      "request public native balancing packets through LGRC9V3.schedule_packet_departure",
+      "invoke registered native step calls to process those packets"
+    ],
+    "forbidden_calls_or_reads": [
+      "direct mutation of LGRC9V3RuntimeState or node coherence",
+      "read response target B, success flags, or scientific outcome fields",
+      "call emit_feedback_eligibility_surface_row, produce_events, or schedule the A-to-B response from inside the adapter",
+      "write arbitrary data into PyGRC cached_quantities",
+      "collapse attribution audit into H_P or expose contributor-addressed read methods"
+    ],
+    "handoff": "The adapter stops after native M_H materialization. A separately configured native feedback/read/producer path owns the later response.",
+    "naturalization_debt": "PyGRC/LGRC lacks a first-class active common-history carrier, history intervention API, and native history-to-response readout bridge."
+  },
+  "non_private_access_witness": {
+    "witness": "All candidate contributions advance one H_P carrier, and every eligible response path reads the same native M_H output port through one registered feedback front mask, without a source address.",
+    "eligible_responder_rule": "Any registered A-role node with native reserve/route adequacy may use the same M_H/B_ref mask and native feedback policy class.",
+    "audit_check": "I06 must prove that H_P has no contributor slots, the front mask contains M_H exactly once, the mask contains neither P nor S1/S2/private ports, and adapter/producer configurations contain no contributor-lineage or success field.",
+    "failure_effect": "Absent, source-addressed, or multi-private access blocks R01/R04."
+  },
+  "history_and_state_interventions": {
+    "history_order_shuffle": {
+      "mechanism": "Execute the same two native marginal arrivals to P in two registered orders, complete both before encounter, and let the adapter append the corresponding physical tokens in observed order.",
+      "held_fixed": [
+        "marginal token multiset and source activity",
+        "complete P encounter coherence",
+        "support, opportunity, M_H baseline, and native response policy class",
+        "arbitrary lineage-label assignment"
+      ],
+      "allowed_difference": "ordered H_P token tuple, honest native event order, and deterministic R_H/M_H",
+      "expected_relation": "the two order-sensitive H_P readouts and later response relation differ under the later frozen measurement rule"
+    },
+    "active_history_clamp": {
+      "mechanism": "After the same contributions and audit trail, replace H_P through an explicit adapter intervention with the registered reference or candidate history, then rematerialize M_H using native balancing packets before the neutral encounter.",
+      "held_fixed": [
+        "native contribution activity and attribution",
+        "P encounter state",
+        "support and response opportunity",
+        "native response configuration"
+      ],
+      "allowed_difference": "declared external H_P intervention, adapter identity, balancing packets, and resulting M_H",
+      "expected_relation": "the later response tracks the clamped active history",
+      "audit_rule": "The intervention never rewrites native packet/event evidence and remains explicit in composite identity."
+    },
+    "state_only_separation": {
+      "mechanism": "Freeze H_P and its M_H readout, then use a native P-to-sink debit or matched P-state branch before encounter while keeping P outside V's mask.",
+      "held_fixed": [
+        "H_P, R_H, and M_H",
+        "contribution audit and opportunity",
+        "native response configuration"
+      ],
+      "allowed_difference": "P encounter coherence and explicit native intervention record",
+      "expected_relation": "later response remains invariant within I04 resolution; unexplained state dependence blocks history_carried"
+    },
+    "pool_write_freeze": {
+      "mechanism": "Preserve native source debits/marginal activity but divert contribution packets away from P. The adapter admits no arrival-to-P token, H_P remains reference, and M_H is materialized at its reference readout.",
+      "held_fixed": [
+        "source-side activity and marginal quantities",
+        "support and later opportunity",
+        "adapter/readout and native response policy classes"
+      ],
+      "expected_relation": "candidate history and response relation disappear or follow the reference relation"
+    },
+    "audit_only_label_permutation": {
+      "mechanism": "Permute only native source_lineage_id strings while preserving physical source nodes, contribution rows, amounts, routes, times, H_P tokens, and response configuration.",
+      "expected_relation": "H_P, R_H, M_H, and later response remain invariant; native/composite audit identity changes honestly."
+    }
+  },
+  "private_partition_competitor": {
+    "construction": "Route the same marginal native contributions to their registered physical destinations while H1_private consumes only S1's admitted contribution and H2_private consumes only S2's. Retain two separate one-carrier readout/response diagnostics.",
+    "no_common_read_guard": [
+      "No adapter instance may import or concatenate the other private carrier's tokens.",
+      "No feedback mask may contain both private readout ports.",
+      "No RCAE or PyGRC helper may sum, compare, dispatch over, or choose between both private histories.",
+      "No contributor label may select a private response branch.",
+      "Private responses remain separate raw diagnostics and are never reduced into a synthetic common response before analysis."
+    ],
+    "matching_identity_owner": "RCAE declarative branch-pair, opportunity, and no-common-read guard",
+    "causal_history_owner": "two separate RCAEActiveHistoryAdapterV1 instances",
+    "expected_relation": "Neither legitimate one-private-carrier response reproduces the candidate relation carried by one jointly constituted H_P.",
+    "failure_effect": "Any two-partition aggregation is a mailbox/controller bypass and blocks R04."
+  },
+  "logical_cells": [
+    {
+      "cell_id": "reference-pool",
+      "history_carried_binding": "Reference H_P and M_H with no candidate combined history; neutral opportunity and native response path remain available.",
+      "subconfigurations": [
+        "reference history baseline",
+        "native contribution diversion with adapter admission absent"
+      ]
+    },
+    {
+      "cell_id": "individual-contributions",
+      "history_carried_binding": "S1-only and S2-only one-token H_P histories, plus quantity-matched one-source history diagnostic.",
+      "subconfigurations": [
+        "S1 token only",
+        "S2 token only",
+        "quantity-matched one-source token sequence"
+      ]
+    },
+    {
+      "cell_id": "combined-orders",
+      "history_carried_binding": "Both native writes reach P and jointly append to one H_P in S1-S2 and S2-S1 physical-token order; final P is matched while H_P differs.",
+      "subconfigurations": [
+        "physical token q1 then q2",
+        "physical token q2 then q1"
+      ]
+    },
+    {
+      "cell_id": "pooled-history-shuffle",
+      "history_carried_binding": "Preserve marginal token multiset and P encounter state while altering active H_P order; separately permute audit-only lineage labels.",
+      "subconfigurations": [
+        "active history order shuffle",
+        "pure lineage-label permutation",
+        "explicit active-history clamp analogue"
+      ]
+    },
+    {
+      "cell_id": "contributor-removal",
+      "history_carried_binding": "Remove/divert one admitted history token while preserving remaining source activity and later opportunity.",
+      "subconfigurations": [
+        "remove S1 token",
+        "remove S2 token"
+      ]
+    },
+    {
+      "cell_id": "global-state-exclusion",
+      "history_carried_binding": "Materialize H1_private/H2_private branches, a state-only P substitution, and declared direct/controller bypasses without treating any as the candidate chain.",
+      "subconfigurations": [
+        "private H1 read",
+        "private H2 read",
+        "state-only P contrast",
+        "direct-address bypass",
+        "controller-assembled bypass"
+      ]
+    },
+    {
+      "cell_id": "access-capacity-contrast",
+      "history_carried_binding": "Vary eligible responder identity within the same non-private M_H access scope while preserving H_P, M_H, contribution physics, and policy class.",
+      "selected_axis": "access_scope",
+      "exact_responder_ids": "pending_I06"
+    }
+  ],
+  "lane_controls": [
+    {
+      "control_id": "AE01-L02-CTRL-01",
+      "name": "each contributor alone",
+      "target": "joint history constitution",
+      "held_fixed": [
+        "history baseline and token definition",
+        "neutral encounter",
+        "support and native response configuration class"
+      ],
+      "expected_relation": "each one-token history/response remains visible; neither original marginal history may fully explain the combined common-history relation",
+      "allowed_ambiguity": "one marginal history may cause a lower-level response",
+      "fail_closed_effect": "full explanation by an original single-source history blocks R03"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-02",
+      "name": "contributor deletion and label permutation",
+      "target": "active token constitution versus audit label",
+      "held_fixed": [
+        "all non-target contribution physics",
+        "P/opportunity/support",
+        "adapter/readout and native response policy classes"
+      ],
+      "expected_relation": "deletion changes H_P and the response relation; pure lineage-label permutation changes neither",
+      "allowed_ambiguity": "deletion magnitude may be resolution-limited under later I04 rules",
+      "fail_closed_effect": "label sensitivity blocks R04; no deletion relation blocks affected R02/R03"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-03",
+      "name": "pooled-history shuffle",
+      "target": "active ordered history",
+      "held_fixed": [
+        "marginal token multiset",
+        "complete P encounter state",
+        "neutral encounter, support, and native response policy class"
+      ],
+      "expected_relation": "H_P order, R_H/M_H, and later response relation diverge",
+      "allowed_ambiguity": "later divergence is judged only under I04's frozen resolution/evaluation rule",
+      "fail_closed_effect": "unexplained invariance blocks history-carried R03/R04; mode cannot change after outcome"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-04",
+      "name": "direct-address and global-state substitution",
+      "target": "private, state-only, or controller bypass",
+      "held_fixed": [
+        "marginal token quantities",
+        "timing/support/later opportunity"
+      ],
+      "expected_relation": "P-only state change is invariant when H_P/M_H are fixed; guarded private histories do not reproduce the common read; output-matched bypass lacks H_P-to-M_H-to-V",
+      "allowed_ambiguity": "output equivalence alone is non-diagnostic",
+      "fail_closed_effect": "state dependence, private aggregation, or causal indistinguishability from bypass blocks R04"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-05",
+      "name": "pool freeze with contributor activity preserved",
+      "target": "H_P admission and active-history clamp",
+      "held_fixed": [
+        "source-side native debits and marginal quantities",
+        "attribution/support/opportunity",
+        "adapter/readout and native response policy classes"
+      ],
+      "expected_relation": "native diversion leaves H_P at reference; explicit H_P clamp makes response follow the selected history while P/audit remain matched",
+      "allowed_ambiguity": "diversion and clamp intervention records differ and remain explicit",
+      "fail_closed_effect": "no active-history-dependent separation blocks R03/R04"
+    }
+  ],
+  "operational_projections": [
+    {
+      "op_id": "H-L02-OP-01",
+      "cells": [
+        "reference-pool",
+        "individual-contributions",
+        "combined-orders",
+        "global-state-exclusion"
+      ],
+      "expected_relation": "two attributable native arrivals append physical tokens to the same H_P; private branches retain distinct histories",
+      "held_fixed": [
+        "token schema",
+        "native contribution class",
+        "later opportunity"
+      ],
+      "fail_closed_effect": "no one-carrier H_P or source-addressed access blocks R01"
+    },
+    {
+      "op_id": "H-L02-OP-02",
+      "cells": [
+        "combined-orders",
+        "reference-pool",
+        "contributor-removal"
+      ],
+      "expected_relation": "V follows the H_P-derived M_H readout rather than matched P encounter state or audit labels",
+      "held_fixed": [
+        "neutral encounter",
+        "B_ref",
+        "support and native response policy class"
+      ],
+      "fail_closed_effect": "absence of history-dependent response prevents R03"
+    },
+    {
+      "op_id": "H-L02-OP-03",
+      "cells": [
+        "pooled-history-shuffle",
+        "contributor-removal"
+      ],
+      "expected_relation": "pure lineage permutation changes audit identity but not H_P/M_H/V; physical token deletion changes H_P",
+      "held_fixed": [
+        "physical routes, amounts, times, P, and opportunity"
+      ],
+      "fail_closed_effect": "label-dependent response exposes a forbidden bypass and blocks R04"
+    },
+    {
+      "op_id": "H-L02-OP-04",
+      "cells": [
+        "reference-pool",
+        "combined-orders",
+        "pooled-history-shuffle"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-05",
+        "AE01-L02-CTRL-02"
+      ],
+      "expected_relation": "contribution diversion or active-history clamp changes H_P/M_H and response; audit-only label change does not",
+      "held_fixed": [
+        "contributor activity/attribution",
+        "P where the clamp comparison requires it",
+        "support/opportunity"
+      ],
+      "fail_closed_effect": "failure to separate H_P intervention from audit/source activity blocks R03/R04"
+    },
+    {
+      "op_id": "H-L02-OP-05",
+      "cells": [
+        "individual-contributions",
+        "contributor-removal",
+        "combined-orders"
+      ],
+      "expected_relation": "each original marginal/deletion history differs from the complete H_P relation; quantity-matched one-source equivalence may limit the claim",
+      "held_fixed": [
+        "opportunity/support",
+        "token/readout and native response policy classes"
+      ],
+      "fail_closed_effect": "full explanation by an original marginal or repeated single-source history blocks supported_bounded_candidate"
+    },
+    {
+      "op_id": "H-L02-OP-06",
+      "cells": [
+        "global-state-exclusion"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-04"
+      ],
+      "expected_relation": "neither one-private-history read reproduces the complete common H_P relation; consulting both is mailbox/controller bypass",
+      "held_fixed": [
+        "marginal tokens, timing, support, and one-carrier access opportunity"
+      ],
+      "fail_closed_effect": "legitimate private reproduction or hidden aggregation blocks R04"
+    },
+    {
+      "op_id": "H-L02-OP-07",
+      "cells": [
+        "global-state-exclusion"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-04"
+      ],
+      "expected_relation": "direct/controller output equivalence does not recreate independently intervenable H_P, native M_H materialization, and native V",
+      "held_fixed": [
+        "nearest output opportunity and marginal input quantities"
+      ],
+      "fail_closed_effect": "no causal distinction between candidate and bypass blocks R04"
+    },
+    {
+      "op_id": "H-L02-OP-08",
+      "cells": [
+        "combined-orders",
+        "pooled-history-shuffle"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-03"
+      ],
+      "expected_relation": "equal-marginal/equal-P histories with different physical token order produce different H_P readouts and later response relations; pure label shuffle remains invariant",
+      "held_fixed": [
+        "P encounter state, marginal token multiset, B_ref, neutral encounter, support, and native response policy class"
+      ],
+      "fail_closed_effect": "mode-inconsistent invariance blocks history-carried R03/R04 and cannot trigger a mode switch"
+    },
+    {
+      "op_id": "H-L02-OP-09",
+      "cells": [
+        "access-capacity-contrast"
+      ],
+      "selected_contrast": "access_scope",
+      "expected_relation": "the same H_P/M_H relation is retained when an alternate eligible A-role responder uses the same non-private mask and native policy class",
+      "held_fixed": [
+        "H_P, M_H, B_ref, contribution history, route opportunity, and reserve adequacy"
+      ],
+      "fail_closed_effect": "invalid or unretained access contrast leaves R05 unavailable without invalidating lower rungs"
+    }
+  ],
+  "pool_economy_dispositions": {
+    "reserve": "native source/reservoir/M_H coherence and packet budget measured; H_P itself is an external ordered identity rather than a conserved resource",
+    "accumulation": "applicable; append admitted physical tokens to one H_P",
+    "mixing": "applicable; ordered source-label-invariant fold over the common token sequence",
+    "depletion": "applicable only as explicit active-history clamp/replacement; no autonomous deletion selected",
+    "saturation": "not_applicable; no history capacity/saturation rule selected",
+    "leakage": "not_applicable; lambda is an order-sensitive readout weight, not autonomous wall-time decay of retained H_P",
+    "maintenance": "not_applicable; no maintenance transition selected",
+    "claim_boundary": "No native history primitive, resource economy, circulation, trail maintenance, recurrence, selfhood, or agency claim follows."
+  },
+  "native_adequacy_and_gap_disposition": [
+    {
+      "capability_id": "P2-I2-CAP-01",
+      "i03b_disposition": "native_audit_history_inadequate_selected_external_active_history_carrier",
+      "note": "Native ordered rows are input evidence; one RCAE H_P is the active carrier."
+    },
+    {
+      "capability_id": "P2-I2-CAP-02",
+      "i03b_disposition": "native_contributions_plus_rcae_history_projection",
+      "note": "PyGRC owns packet contributions; the adapter admits their source-label-free physical tokens."
+    },
+    {
+      "capability_id": "P2-I2-CAP-03",
+      "i03b_disposition": "native_response_after_producer_assisted_readout",
+      "note": "Native feedback/producer machinery owns the later transition only after H_P is materialized at M_H."
+    },
+    {
+      "capability_id": "P2-I2-CAP-04",
+      "i03b_disposition": "selected_rcae_active_history_intervention",
+      "note": "No native history-only intervention exists; explicit H_P reorder/clamp remains external and independently identified."
+    },
+    {
+      "capability_id": "P2-I2-CAP-05",
+      "i03b_disposition": "native_audit_authority_retained_and_excluded_from_causal_token",
+      "note": "Native lineage remains audit-only and may be permuted without changing H_P."
+    },
+    {
+      "capability_id": "P2-I2-CAP-06",
+      "i03b_disposition": "native_diversion_plus_rcae_history_clamp",
+      "note": "Native diversion prevents admission; the exact active-history clamp is producer-assisted."
+    },
+    {
+      "capability_id": "P2-I2-CAP-07",
+      "i03b_disposition": "native_response_ports_with_external_private_history_guard",
+      "note": "Private carriers and no-common-read enforcement are RCAE-owned; native nodes/packets retain response opportunity."
+    },
+    {
+      "capability_id": "P2-I2-CAP-08",
+      "i03b_disposition": "bounded_append_and_ordered_fold_selected_missing_generic_history_dynamics",
+      "note": "No generic capacity, saturation, autonomous leakage, or maintenance primitive is added."
+    },
+    {
+      "capability_id": "P2-I2-CAP-09",
+      "i03b_disposition": "native_v2_plus_required_rcae_composite_identity",
+      "note": "Native state/reset is covered; H_P, cursor, config, interventions, and external reset baseline must be composed."
+    },
+    {
+      "capability_id": "P2-I2-CAP-10",
+      "i03b_disposition": "audit_authority_retained",
+      "note": "I03B selects a bounded producer fallback but does not rewrite I01 capability classifications."
+    },
+    {
+      "capability_id": "P2-I2-CAP-11",
+      "i03b_disposition": "one_minimal_separable_rcae_history_adapter_selected",
+      "note": "The adapter stops at H_P/M_H; PyGRC owns response evaluation and transition."
+    }
+  ],
+  "missing_native_patterns_for_later_synthesis": [
+    "first-class active common-history carrier over multiple committed native contact rows",
+    "source-label-free physical history-token schema and ordered reducer",
+    "public history append, reorder, clamp, and reset interfaces with explicit intervention provenance",
+    "native history-carrier-to-feedback readout bridge that does not require a controller-authored expected row digest",
+    "first-class common versus private history partition identity and no-common-read guard",
+    "composite restoration provider for native runtime plus ecology-owned active history, cursor, policy, and reset baseline",
+    "generic history capacity, saturation, leakage, depletion, and maintenance contracts"
+  ],
+  "restoration_profile_proposal": {
+    "native_provider": "pygrc.models.lgrc9v3_restoration_identity_v2",
+    "native_digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+    "selection_status": "composite_required_by_I03B_exact_schema_to_be_frozen_for_runtime_conformance_and_I06",
+    "native_coverage": [
+      "complete current LGRC9V3 runtime including packet/surface logs and M_H",
+      "native producer configuration and scheduler state",
+      "valid persisted native reset baseline"
+    ],
+    "rcae_external_current_state": [
+      "H_P ordered tokens",
+      "consumed surface cursor/idempotency state",
+      "carrier/role/readout/materialization configuration",
+      "last materialized readout",
+      "history intervention provenance"
+    ],
+    "rcae_external_reset_baseline": "A separately persisted baseline over the complete adapter state; reset is valid only when native v2 baseline and matching adapter baseline are both available.",
+    "composite_identity_rule": "canonical SHA-256 over a versioned object containing the complete native v2 identity artifact, complete current adapter identity, complete adapter reset-baseline identity, and experiment role/intervention binding",
+    "save_load_policy": "Persist native snapshot and adapter artifact together under one manifest; load validates both identities before continuation.",
+    "reset_policy": "A composite reset invokes native model.reset() and adapter.reset() to their paired registered baselines, then validates the composite identity before use; no implicit rebase or one-sided reset is allowed.",
+    "equal_input_continuation_requirement": "Conformance and later registration must compare original versus loaded and reset-restored branches under identical adapter calls, native schedules, and continuation inputs."
+  },
+  "deferred_to_i04": [
+    "one exact raw later-response field or family for history_carried",
+    "response orientation transform",
+    "one closest insufficient-repetition primary comparator",
+    "scientific lambda, token amounts/types/timing, native feedback threshold, and response packet amount",
+    "equality/divergence and measurement-resolution rule",
+    "paired normalized-margin implementation",
+    "aggregation and missingness rules",
+    "candidate-blind matched-null generator and seeds",
+    "machine pass, ambiguous, and fail evaluation"
+  ],
+  "deferred_to_i06": [
+    "exact node, edge, role, and carrier ids",
+    "exact topology, initial native coherence/reserves, and adapter baseline",
+    "exact event times and scheduler indexes",
+    "exact token-operation registry and native contribution-row admission bindings",
+    "exact M_H reservoirs/sink, feedback masks, neutral contact path, producer route, and policy values",
+    "exact cell/subconfiguration matrix and branch-point snapshots",
+    "complete versioned composite restoration schema and artifact paths",
+    "bounded equal-input continuation procedure",
+    "exact access-scope alternate responder identity"
+  ],
+  "runtime_conformance_transition": {
+    "design_static_validation_required": true,
+    "separate_runtime_freeze_required": true,
+    "runtime_fixture_values_must_be_fixture_only": true,
+    "allowed_runtime_scope": [
+      "native contribution rows advance one H_P",
+      "source-label invariance and physical order sensitivity",
+      "M_H native packet materialization without direct coherence writes",
+      "native later response ownership",
+      "history-only clamp and state-only separation",
+      "private no-common-read guards",
+      "composite save/load/reset identity and equal-input continuation"
+    ],
+    "one_evidence_invocation": true,
+    "one_reconstruction_invocation": true,
+    "retry_limit": 0,
+    "parameter_search_allowed": false,
+    "scientific_evidence_effect": "none"
+  },
+  "review_stop": {
+    "status": "P2-I2-I03B-DESIGN-FROZEN-RUNTIME-FREEZE-PENDING",
+    "owner_review_required_after_runtime_conformance": true,
+    "i03c_authorized": false,
+    "i04_authorized": false,
+    "calibration_authorized": false,
+    "scientific_candidate_execution_authorized": false,
+    "scientific_evidence_assigned": false
+  }
+}

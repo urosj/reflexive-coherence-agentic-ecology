@@ -40,9 +40,13 @@ graph surfaces, and proposed graph discriminators.
   realization-local falsifiable statements. I03 now follows review-separated
   8A state-carried, 8B history-carried, and 8C hybrid profiles. I03A's
   state-carried `pygrc_native_candidate` design and I03AR1's quarantined
-  136/136, byte-reconstructed implementation conformance are review-ready and
-  scientifically outcome-free; I03B/I03C remain unauthorized pending the
-  required owner reviews, and the umbrella discriminator gate remains open. Under
+  136/136, byte-reconstructed implementation conformance are owner-accepted
+  for progression. I03B's `minimally_producer_assisted` history-carried design
+  and quarantined 252/252, byte-reconstructed conformance passed the zero-
+  runtime I03BR1 closeout revalidation (21/21 checks, zero blockers) and remain
+  scientifically outcome-free. I03B is acceptance-ready but not owner-
+  accepted; I03C remains unauthorized pending owner disposition, and the
+  umbrella discriminator gate remains open. Under
   owner-accepted `P2-I2-DEC-011`, all three profiles remain in the downstream
   program and realization selection occurs separately within each mode. Their local IDs
   do not extend the closed Phase 1 hypothesis registry or schema vocabulary.
