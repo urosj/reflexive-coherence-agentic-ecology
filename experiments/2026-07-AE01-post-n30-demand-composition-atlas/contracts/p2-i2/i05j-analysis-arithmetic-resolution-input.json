@@ -1,0 +1,40 @@
+{
+  "artifact_id": "P2-I2-I05J-ANALYSIS-ARITHMETIC-RESOLUTION-INPUT",
+  "artifact_version": "1.0.0",
+  "candidate_blind": true,
+  "derivation": {
+    "estimator_preservation": "maximum over these five seed envelopes equals maximum over all ten source margins",
+    "physical_orders": [
+      "q1_then_q2",
+      "q2_then_q1"
+    ],
+    "projected_seed_count": 5,
+    "rule": "maximum absolute normalized margin across both physical orders for each seed",
+    "source_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json",
+    "source_row_count": 10,
+    "source_sha256": "87a3635324a4ccccd983d0c33db8e7dba3e4c958396252b6edda7c56ea6eba2d"
+  },
+  "evidence_effect": "analysis_arithmetic_resolution_only_no_candidate_evidence",
+  "seed_margins": [
+    {
+      "matched_null_margin": 0.0,
+      "seed": 19
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 43
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 71
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 109
+    },
+    {
+      "matched_null_margin": 0.0,
+      "seed": 163
+    }
+  ]
+}

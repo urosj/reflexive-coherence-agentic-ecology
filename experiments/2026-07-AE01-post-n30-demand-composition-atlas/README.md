@@ -1,9 +1,9 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 I03A/I03AR1 is
-owner-accepted for staged progression and I03B history-carried design plus
-quarantined runtime conformance passed I03BR1 closeout revalidation; I03B
-owner acceptance remains pending and I03C/I04 remain unauthorized
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 has passed its source,
+discriminator, and CAL-PRE gates; its sole candidate-blind I05 arithmetic-null
+attempt and all portability corrections are retained; the owner-accepted I05J/
+I05JA metric closeout passes 11/11 and CAL-GATE is passed; I06 is not begun
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -102,18 +102,21 @@ accepted; I03C hybrid then passed 258/258 runtime assertions and its compact
 closeout, and owner-accepted I03F passed the discriminator gate. I04R2 is now
 the sole owner-accepted calibration-preregistration progression authority
 after correcting and validating the complete three-arm estimator path 16/16
-with 7/7 pure tests. CAL-PRE is passed. One exact I05 arithmetic-null
-authorization candidate passed 12/12 identity checks, but the I05A execution-
-safety audit passed only 3/8 and found five one-shot/commit-binding/receipt
-blockers. The owner-authorized I05B correction now passes 12/12 zero-null tests
-and 12/12 machine checks while preserving I04R2 bytes. It is owner-accepted for
-commit under DEC-029; the 10.4 launch authority remains separate and CAL-GATE,
-I06, and candidate execution remain closed.
-The first final launch preflight then failed safely before claim on a venv-
-symlink path-validation defect. Owner-authorized I05C keeps the exact active
-repository `.venv`, separates its command path from the frozen resolved binary
-identity, and passes 13/13 tests plus 12/12 zero-null checks. It is uncommitted
-for review; the one attempt remains unconsumed.
+with 7/7 pure tests. CAL-PRE is passed. I05A's failed-closed 3/8 safety audit
+led to the owner-accepted I05B/I05C one-shot and active-venv corrections. The
+sole governed arithmetic-null attempt then completed with one builder call,
+zero retries, one readback, and a refused second start. Its historical evidence
+is retained at `c3eabf3` and its portable projections and dependencies are
+retained through I05I commit `b5d0acb`, with the complete current P2-I2 path
+scope at zero machine-local findings. I05J/I05JA project both physical orders
+to five estimator-preserving seed envelopes, retain native metric-calibration
+and frozen metric-sheet artifacts, freeze `analysis_arithmetic_delta = 1e-12`,
+and pass 11/11 byte-reconstruction checks. An owner-directed in-iteration I05J
+closure amendment retains exact process counts and synchronized navigation
+without rerunning any null, native generation, validator, candidate, runtime,
+or scientific path. The owner accepts and authorizes commit of the complete
+package. CAL-GATE is passed; I06 registration construction is authorized but
+not begun, and candidate execution remains closed.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself
@@ -275,7 +278,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           I05B one-shot correction review-ready; no active authority or commit
+P2-I2                                           I05 complete; CAL-GATE passed; I06 not begun
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

@@ -1,0 +1,72 @@
+{
+  "activity_id": "P2-I2-I05J-METRIC-CLOSEOUT",
+  "artifact_id": "P2-I2-I05J-METRIC-CLOSEOUT-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-033",
+    "decision_id": "P2-I2-DEC-040",
+    "parent_commit": "b5d0acbac6de34b0cbd40b3d16a05f6356d5b709"
+  },
+  "calibration_input_projection": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-analysis-arithmetic-resolution-input.json",
+    "sha256": "8aeb478a65879a4000d37cc05539d5552daf91000b4b355aae832ba8e5d5e26a"
+  },
+  "candidate_or_runtime_evidence_effect": "none",
+  "expected_outputs": {
+    "frozen_metric_sheet": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+    "metric_calibration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05J-metric-closeout.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-validation.json"
+  },
+  "frozen_existing_input_identities": {
+    "base_metric_sheet_sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483",
+    "I04R2_calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "governed_output_sha256": "87a3635324a4ccccd983d0c33db8e7dba3e4c958396252b6edda7c56ea6eba2d",
+    "final_receipt_sha256": "1f1694b96f22cde12b54a2e0c00ce76b58f2fdf2fc7cff1114bcc46b9a3396be",
+    "I05E_lineage_sha256": "bbceddbb5e567b8b745ec2b8f6b8f62525a592efcef258d2f221340930565ff8",
+    "I05I_validation_sha256": "7a426864e32cb695b692d67bd79ee5aed8fa409c6c38b35775dd134f433ef2b9",
+    "ae01_entrypoint_sha256": "65b9b0f9d2690fc1175d3562ead57564e4d966fd0e33517d6b0917bc7e95d817",
+    "ae01_tooling_sha256": "cccd88393a31ba98781d4cbc3d5674283969e476ad43763d34e4442cf3d334c8",
+    "schema_sha256": "eb5612c5bdbda8f8393f826d9af1b89478c4291d3e2b72279645d0226862d074"
+  },
+  "invocation_ceiling_after_freeze": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "I05J_validator_entrypoint_starts": 2,
+    "native_freeze_resolution_entrypoint_starts": 1,
+    "null_builder_or_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_imports_or_model_instantiations": 0
+  },
+  "iteration_id": "P2-I2-I05J",
+  "lane_id": "AE01-L02",
+  "later_iteration_authorized": false,
+  "native_command_identity": {
+    "interpreter": ".venv/bin/python",
+    "normalized_argv": [
+      ".venv/bin/python",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01.py",
+      "freeze-resolution",
+      "--metric-sheet",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L02.json",
+      "--calibration-input",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-analysis-arithmetic-resolution-input.json",
+      "--calibration-output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+      "--frozen-sheet-output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json"
+    ]
+  },
+  "outputs_absent_at_freeze": true,
+  "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05j_metric_closeout_policy.json",
+  "policy_sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935",
+  "pre_freeze_governance_identities": {
+    "checklist_sha256": "982cc8bbee7979106a32a8368aee05c79bbd5dd6696739fe2769292b0281eda4",
+    "decision_record_sha256": "7bd252a1be1f28300296f736a0ea3c244670d4c036c5902557460e4a81cdb27f",
+    "hypothesis_sha256": "6990d136a0473e20bc1e23d4edb714c042aed08b3a19128af34b6ed678bf92f8"
+  },
+  "result_status_ceiling": "P2-I2-I05J-METRIC-CLOSEOUT-REVIEW-READY",
+  "review_stop": "owner acceptance and commit authority remain required; CAL-GATE and I06 remain closed",
+  "scientific_change_authorized": false,
+  "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05j_validate.py"
+}

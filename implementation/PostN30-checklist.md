@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.39
+**Baseline revision:** 0.41
 
 **Date:** 2026-07-14
 
@@ -46,7 +46,7 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.26 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.40 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
 | Phase 2 — Atlas execution | Open for calibration and registration | P2-GATE | Candidate execution remains lane-gated |
@@ -1178,8 +1178,9 @@ Entry condition:
 - [x] `P2-I2-CAL-PRE-GATE` passed after owner acceptance of I04R2 as the sole
   progression authority. Original I04/I04R1 remain immutable history; I04R2
   passed 16/16 focused checks and 7/7 pure tests with the exact raw three-arm
-  estimator and byte reconstruction. Only a separately frozen single I05
-  arithmetic-null invocation is authorized next; no null or candidate ran.
+  estimator and byte reconstruction. It opened only a separately frozen single
+  I05 arithmetic-null invocation; that candidate-blind path later completed
+  without opening candidate authority.
   Evidence:
   [I04R2 gate record](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json).
 - [x] Review and accept the DEC-028 I05B correction. I05A's 3/8 result remains
@@ -1188,6 +1189,14 @@ Entry condition:
   zero retries, committed-I05/interpreter/command binding, and readback-only
   receipts without changing I04R2. Review:
   [I05B correction](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05B-one-shot-safety-correction.md).
+- [x] The sole governed I05 arithmetic null completed with one builder call,
+  zero retries, one readback, and a refused second start. Portability
+  corrections through I05I are owner-accepted and retained at `b5d0acb`.
+  I05J/I05JA retain native metric-calibration and frozen metric-sheet artifacts,
+  `analysis_arithmetic_delta = 1e-12`, and 11/11 reconstruction validation.
+  The owner accepts and authorizes commit of the amended I05J/I05JA package,
+  including exact process accounting and synchronized projections; CAL-GATE is
+  passed and I06 registration construction is authorized but not begun.
 
 Required lane work:
 
@@ -2074,7 +2083,8 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-SOURCE-ADMISSION-GATE | Updated exact graph revision, 31 source/import/callable identities, reset-baseline persistence across save/load, restoration identity v1/v2 boundary, legacy/rebase compatibility, and later bounded-continuation duty; no realization, restoration correctness beyond generic conformance, or scientific result | 2026-07-14 | I02R2 manifest, validation/report, and DEC-009; passed after revalidation |
 | P2-I2-DISCRIMINATOR-GATE | Three retained unranked state/history/hybrid realization authorities, bounded conformance, compact family composition, exact downstream obligations, and fixture quarantine | 2026-07-14 | I03F and DEC-020; passed |
 | P2-I2-CAL-PRE-GATE | Owner-accepted I04R2 sole progression authority; complete-arm strongest-marginal comparator, exact arithmetic-only I05 path, reconstruction, fixed window, causal receipts, and no candidate/null execution at passage | 2026-07-14 | I04R2 validation and DEC-026; passed |
-| P2-I2-I05-AUTHORIZATION | Exact accepted-I04 identities; proposed DEC-027 failed closed at I05A 3/8; DEC-028 I05B accepted/committed; DEC-031 I05C active-venv correction passes 13/13 tests and 12/12 zero-null validation | 2026-07-14 | I05C uncommitted for review; one attempt unconsumed; CAL-GATE closed |
+| P2-I2-I05-CLOSEOUT | Exact accepted-I04 identities; one consumed governed arithmetic-null attempt; complete I05E–I05I portability retention; amended I05J/I05JA native metric artifacts with delta `1e-12`, 11/11 reconstruction, and process/package closeout | 2026-07-14 | Owner-accepted and commit-authorized; I05 complete |
+| P2-I2-CAL-GATE | Owner-accepted I05J/I05JA metric closeout; candidate-blind delta `1e-12`; exact process/package accounting; no scientific effect | 2026-07-14 | Passed; opens unstarted I06 registration construction only |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2160,7 +2170,9 @@ Change log:
 | CL-039 | 2026-07-14 | Revision 0.36 catches the stable program cover up through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority after 16/16 checks and 7/7 pure tests corrected the raw three-arm estimator and byte reconstruction; original I04/I04R1 are immutable history. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation. No null, I06, candidate/control, or scientific result is assigned. | P2-I2 CAL-PRE closure and I05 authorization entry | Superseded by CL-040 |
 | CL-040 | 2026-07-14 | Revision 0.37 draft constructs the I05 authorization candidate; proposed DEC-027 fails closed after I05A passes 3/8. DEC-028 authorizes the I05B correction, which adds one permanent exclusive-claim wrapper and one one-shot policy, freezes one attempt/zero retries, binds committed HEAD/clean state/exact interpreter/normalized command, and retains readback-only attempt/final facts. Ten zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes. The correction is uncommitted/inactive; no acceptance record, claim/final receipt, null, delta, metric-sheet result, CAL-GATE passage, I06, candidate/control operation, or scientific result exists. | P2-I2 I05B owner review boundary | Active pending owner review |
 | CL-041 | 2026-07-14 | Revision 0.38 records DEC-029/CHG-022 owner acceptance and commit authority for the complete I05B package. Immutable acceptance has null authority false; a distinct committed 10.4 launch record is required. The permanent claim is repository-local on ext4, rejects symlink components, and treats empty/partial/broken-symlink occupation as consumed. Twelve zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes and no claim/output/builder/null/PyGRC/candidate/control operation. | P2-I2 I05B retention and 10.4 entry | Active; supersedes CL-040 after commit |
-| CL-042 | 2026-07-14 | Revision 0.39 retains the final preflight failure at launch commit `98770ae`: the active repository `.venv` was used, but its valid interpreter symlink target was incorrectly rejected by the repository-data path guard. DEC-031/CHG-024 now require exact `.venv/bin/python`, active repository venv, distinct base prefix, and the frozen resolved-target digest/version. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass with immutable I04R2 bytes; no claim/output exists and the one attempt remains unconsumed. | P2-I2 I05C correction review boundary | Active pending owner review; supersedes CL-041 for current status |
+| CL-042 | 2026-07-14 | Revision 0.39 retains the final preflight failure at launch commit `98770ae`: the active repository `.venv` was used, but its valid interpreter symlink target was incorrectly rejected by the repository-data path guard. DEC-031/CHG-024 now require exact `.venv/bin/python`, active repository venv, distinct base prefix, and the frozen resolved-target digest/version. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass with immutable I04R2 bytes; no claim/output exists and the one attempt remains unconsumed. | P2-I2 I05C correction review boundary | Superseded by CL-043 |
+| CL-043 | 2026-07-14 | Revision 0.40 synchronizes current program cover through the existing uncommitted I05J amendment. The sole governed arithmetic null completed and remains consumed; portability corrections through I05I are retained at `b5d0acb`; I05J/I05JA retain the five-seed/two-order projection, native metric artifacts, delta `1e-12`, and 11/11 reconstruction. The amendment adds exact process/package accounting without rerun and leaves CAL-GATE/I06 closed for owner review. | P2-I2 I05J closure-amendment review boundary | Active pending owner review; no scientific result |
+| CL-044 | 2026-07-14 | Revision 0.41 records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves the 11/11 reconstruction, delta `1e-12`, exact process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. | P2-I2 I05 terminal retention and CAL-GATE | Active; I05 complete, I06 not begun |
 
 ## 17. Current next actions
 
@@ -2216,8 +2228,9 @@ The next unchecked actions in dependency order are:
 14. [x] Review and accept the I05B correction after 12/12
     zero-null tests and 12/12 machine checks; do not commit or invoke it without
     separate explicit authorization.
-15. [ ] After accepted retention, separately authorize and execute at most the
-    freeze's single arithmetic-null invocation,
-    reconstruct the retained output, and finish I05 before CAL-GATE.
-16. [ ] Begin any later independently owned Phase 2 lane only under its own
+15. [x] After accepted retention, separately authorize and execute the freeze's
+    single arithmetic-null invocation and reconstruct the retained output.
+16. [x] Review and accept the amended I05J/I05JA metric closeout, authorize its
+    complete commit, and pass CAL-GATE without beginning I06 registration.
+17. [ ] Begin any later independently owned Phase 2 lane only under its own
     candidate-blind calibration, registration, and execution boundaries.

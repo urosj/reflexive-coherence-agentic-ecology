@@ -114,23 +114,19 @@ future-I05 estimator path, I06 registration duties, response-window guards,
 and receipt-derived classifications 16/16 with 7/7 pure tests. The project
 owner accepted I04R2 as the sole progression authority under DEC-026 and
 passed CAL-PRE. Original I04 and I04R1 remain immutable historical artifacts.
-The separate I05 single-invocation authorization candidate is validated 12/12
-and byte-reconstructed, but I05A passed only 3/8 safety checks and found five
-one-shot/commit-binding/receipt blockers. I05B corrects those mechanics strictly
-inside I05 and passes 12/12 zero-null tests plus 12/12 machine checks. DEC-029
-owner-accepts the authority-package commit while a separate 10.4 launch record
-remains required; CAL-GATE, I06, and candidate execution remain closed.
-Final launch preflight first failed before claim on active-venv path handling.
-DEC-031 I05C corrected that mechanism, was retained, and the single governed
-arithmetic null later completed with one builder call and zero retries. Its raw
-evidence is retained at `c3eabf3`. DEC-032/033 now govern the owner-required
-no-absolute-path audit: corrected I05D scans 135 files and retains 312
-value-redacted violations across 70 files, with the 32-violation/11-file I05
-group first. DEC-033 accepts the inventory and the first I05E group is now
-review-ready after 10/10 checks, zero remaining group violations, and 13/13
-focused helper tests. It is owner-accepted for commit; later groups remain
-closed until retention, while CAL-GATE, I06, and candidate execution remain
-closed.
+The I05 authorization history retains I05A's failed-closed 3/8 audit and the
+owner-accepted I05B/I05C one-shot and active-venv corrections. The sole
+governed arithmetic null completed with one builder call and zero retries; its
+raw evidence remains at `c3eabf3`. The owner-required no-absolute-path program
+then retained the I05D inventory and reviewed correction groups I05E through
+I05I, ending at commit `b5d0acb` with the complete current P2-I2 scope at zero
+literal or constructed machine-root findings. I05J/I05JA retain the exact
+five-seed/two-order arithmetic projection, native metric-calibration and frozen
+metric-sheet artifacts, and `analysis_arithmetic_delta = 1e-12`; reconstruction
+passes 11/11. I05J also retains exact process accounting and synchronized
+current-status projections. The owner accepts the complete I05J/I05JA package
+and authorizes its commit. CAL-GATE is passed; I06 registration construction is
+authorized but not begun, and candidate execution remains closed.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

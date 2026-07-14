@@ -447,30 +447,24 @@ progression while preserving both as immutable history. Its complete-arm
 comparator, exact raw three-arm I05 path, write/read byte reconstruction,
 response/window guards, and causal receipt boundaries passed 16/16 focused
 checks and 7/7 pure tests. The project owner accepted I04R2 and passed CAL-PRE.
-The separate I05 arithmetic-null candidate passed 12/12 identity checks, but
-I05A's zero-execution safety audit passed only 3/8 and found five blockers in
-attempt consumption, concurrency/retry identity, committed-I05 preflight, and
-retained refusal accounting. The I05-owned correction subsequently passed
-12/12 zero-null tests and 12/12 machine checks with immutable I04R2 bytes. It
-is owner-accepted for retention under DEC-029 with immutable acceptance/commit
-authority separated from the future 10.4 launch record. CAL-GATE, I06, and
-candidate execution remain closed.
-After the accepted authority and launch commits, the first final preflight
-failed before claim on interpreter-path handling. DEC-031 I05C corrected that
-mechanical defect, passed its zero-null validation, and was committed. The sole
-governed arithmetic-null attempt then completed with one builder call, zero
-retries, one readback, and a refused second start; its raw evidence is retained
-at commit `c3eabf3`. During 10.4 closeout, the project owner clarified that
-absolute paths are never allowed. DEC-032 I05D now retains a value-redacted
-P2-I2-wide audit of 135 files: 312 violations across 70 files. A recursive
-selector issue was corrected inside I05D before the inventory was retained.
-DEC-033 accepts that inventory and opens only the first eleven-file I05E group.
-That group is owner-accepted and commit-authorized after 10/10 checks, zero
-remaining group violations, and 13/13 focused helper tests. Historical raw
-execution bytes remain commit/digest evidence while current changed records
-are explicitly labelled portable projections. Later groups, metric freeze,
-CAL-GATE, I06, and candidate execution remain closed; the next correction
-group begins only after retention.
+The I05 authority history retains I05A's failed-closed 3/8 safety audit and the
+owner-accepted I05B/I05C one-shot and active-venv corrections. The sole
+governed arithmetic-null attempt completed with one builder call, zero retries,
+one readback, and a refused second start; its raw evidence remains at commit
+`c3eabf3`. The subsequent owner-required no-absolute-path program retained the
+I05D audit and reviewed correction groups I05E through I05I, ending at commit
+`b5d0acb` with the complete current P2-I2 scope at zero literal and constructed
+machine-root findings. Historical raw execution bytes remain commit/digest
+evidence while current changed records are explicit portable projections.
+I05J/I05JA then retain both physical orders through five estimator-preserving
+seed envelopes, native metric-calibration and frozen metric-sheet artifacts,
+and `analysis_arithmetic_delta = 1e-12`; byte reconstruction passes 11/11. The
+I05J includes an owner-directed closure amendment
+retaining exact dependency/native/validator accounting and synchronized current
+navigation without rerunning any governed, native-generation, candidate,
+runtime, or scientific path. The owner accepts the complete I05J/I05JA package
+and authorizes its commit. CAL-GATE is passed; I06 registration construction is
+authorized but not begun, and candidate execution remains closed.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

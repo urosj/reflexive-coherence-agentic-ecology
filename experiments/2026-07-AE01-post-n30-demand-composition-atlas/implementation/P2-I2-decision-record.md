@@ -74,6 +74,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-037` | Which portability work may begin after accepted I05F commit `99c64dd`? | Owner direction: “third group is next”; declare I05G, resolve/freeze the exact third accepted-audit group before edits, and return its bounded correction uncommitted | I05G is 10/10 review-ready with 201 to zero findings; no owner acceptance/commit authority, fourth group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-038` | What follows owner review of I05G? | Accept and commit I05G, then open I05H for the exact fourth accepted-audit group under checklist/hypothesis-first freeze discipline | I05G retained at `62882ef`; opens I05H scope resolution/freeze only; no affected edit before freeze, fifth group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-039` | What follows owner review of I05H? | Accept and commit I05H; reconcile the remaining inventory; fold the one six-file/14-finding group plus three validator constructor sources into the fifth/final I05I correction | I05H retained at `1279e17`; opens exact nine-file terminal correction only; no P2-I1 scope expansion, CAL-GATE, I06, or execution | 2026-07-14 |
+| `P2-I2-DEC-040` | What may proceed after owner acceptance and commit of I05I? | Retain I05I at `b5d0acb`; distinguish completed I05C/10.4A from the three deferred 10.4 metric obligations; open bounded I05J native metric closeout | Authorizes one frozen native `freeze-resolution` generation plus static validation only; no null rerun, runtime/candidate work, CAL-GATE passage, I06, or commit | 2026-07-14 |
+| `P2-I2-DEC-041` | What follows the first I05J native start failing before output because the repo `.venv` lacks the pinned schema dependency? | Preserve the original freeze and failed start; add I05JA; install only `jsonschema==4.26.0` into `.venv`; authorize one unchanged native retry; amend the still-uncommitted I05J package with honest process accounting | Complete package owner-accepted and commit-authorized; CAL-GATE passed; I06 registration construction authorized but not begun; zero candidate/runtime/scientific authority | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2295,7 +2297,91 @@ Reopen DEC-039 if a non-governance subject changes before freeze, the frozen
 nine-file boundary expands, source identity differs from `1279e17`, a process
 count becomes scientific evidence, or a prohibited operation occurs.
 
-## 42. Pending decision queue
+## 42. `P2-I2-DEC-040` — I05I acceptance and I05J metric-closeout authority
+
+**Status:** historical I05J preparation authority; complete package accepted
+and CAL-GATE passed later under DEC-041
+
+**Question:** After accepted I05I portability closeout, what remains in 10.4
+and 10.4A, and how may it be completed without rerunning the consumed null?
+
+**Decision:** The project owner confirms there are no remaining machine-local
+absolute paths, accepts and authorizes commit of I05I at `b5d0acb`, and then
+directs: “let's now deal with 10.4 and 10.4A.” I05C/10.4A is already complete:
+its pre-claim venv correction was accepted at `9d81f15`, and the later single
+governed attempt succeeded. The three unchecked items following that subsection
+are deferred 10.4 metric-closeout obligations rather than unresolved I05C work.
+
+I05J may freeze only `analysis_arithmetic_delta` from the retained candidate-
+blind I05 output and generate the two artifacts required by DEC-004: one
+lane-local metric-calibration record and one frozen projection of the unchanged
+base `AE01-L02` metric sheet. The accepted I04R2 estimator takes the maximum of
+the arithmetic floor and all ten absolute order-stratified null margins. The
+native common freeze interface accepts one margin per unique seed, so a frozen
+input projection takes the maximum absolute margin across both registered
+orders for each seed. This is estimator-preserving because the global maximum
+over the five seed envelopes equals the global maximum over all ten rows.
+
+Before generation, I05J must bind exact input/tool/schema/output identities and
+ceilings. It may invoke the existing native `freeze-resolution` entry point once
+through `.venv` and then run bounded static reconstruction validation. The base
+metric sheet, I04R2, governed output, one-shot receipts, and portability lineage
+remain immutable. No null regeneration, PyGRC import/model, candidate/control,
+runtime tolerance, mode selection, scientific conclusion, CAL-GATE passage, or
+I06 work is authorized by this decision. I05J returns uncommitted for explicit
+owner review, which is later supplied under DEC-041.
+
+Reopen DEC-040 if the per-seed envelope does not reconstruct all ten retained
+margins, native generation changes a non-resolution metric field, any frozen
+identity differs, or a prohibited operation occurs.
+
+## 43. `P2-I2-DEC-041` — I05JA native dependency correction
+
+**Status:** correction and in-iteration closure amendment complete; complete
+I05J/I05JA package owner-accepted and commit-authorized; CAL-GATE passed
+
+**Question:** How may I05J continue after its single frozen native start fails
+before output because the repository `.venv` lacks `jsonschema`?
+
+**Decision:** Preserve the original I05J input freeze and its one-start ceiling.
+Retain a failure record showing that both governed metric outputs remained
+absent and no null, PyGRC, candidate/control, runtime, or scientific operation
+occurred. I05JA may install exactly `jsonschema==4.26.0`, the dependency already
+required by the accepted common tooling contract, into the repository `.venv`.
+It may then authorize one retry of the exact frozen native command.
+
+The correction cannot change the calibration projection, base metric sheet,
+I04R2 estimator, governed output, native entry point or implementation, schema,
+output paths, or result interpretation. Validation must record two total native
+starts, one failed-closed pre-output start, one successful generation, and zero
+other Python/null/PyGRC/candidate/runtime/scientific operations. I05JA remains
+part of the uncommitted I05J review package and supplies no CAL-GATE or I06
+authority.
+
+The later read-only closure audit identifies one process-accounting deviation:
+the pinned install command had two process starts, not the correction freeze's
+declared one. The first was blocked at package-index DNS by the execution
+sandbox and changed no environment; the network-enabled second start installed
+and verified `jsonschema==4.26.0`. The original correction freeze is not
+rewritten. Because I05J remains uncommitted and unaccepted, the project owner
+directs an in-iteration amendment rather than a new I05 iteration. One additive
+closeout must distinguish this authored process reconstruction from generated
+machine receipts; bind both native starts, both validator starts, successful
+outputs, generated validation, final report, and non-self package inventory;
+and synchronize stale current-status projections. It authorizes no install,
+null, native generation, validator, PyGRC, candidate/control, conformance,
+runtime, or scientific rerun.
+
+The project owner subsequently accepts the complete amended I05J/I05JA package
+and authorizes its commit. That acceptance passes `P2-I2-CAL-GATE` and opens
+only unstarted I06 registration construction; it authorizes no candidate,
+control, runtime, or scientific operation.
+
+Reopen DEC-041 if either output exists before the retry, dependency identity is
+not exactly `jsonschema==4.26.0`, any frozen command/input differs, the retry
+fails, or a prohibited operation occurs.
+
+## 44. Pending decision queue
 
 No item below is decided by this record yet:
 
