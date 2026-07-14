@@ -60,6 +60,17 @@ Phase 2 gate reviews:
   applies the owner-supplied capability-audit checks, corrects CAP-04 to
   inadequate, adds public-support/mode/restoration ownership profiles, and
   re-passes only the source-audit gate.
+- [P2-I2 I04 historical preregistration](P2-I2-I04-calibration-preregistration.md)
+  retains the original candidate-free measurement package that was superseded
+  after owner review withheld CAL-PRE.
+- [P2-I2 I04R1 correction](P2-I2-I04R1-calibration-preregistration-correction.md)
+  restores the carrier-changing primary comparator and correct null/window/
+  causal boundaries without executing calibration or candidates.
+- [P2-I2 I04R2 machine verification](P2-I2-I04R2-conditional-machine-verification.md)
+  confirms the eight conditional invariants 16/16 with 7/7 pure tests,
+  corrects the future-I05 estimator route, and is the owner-accepted sole I04
+  progression authority under DEC-026. CAL-PRE is passed; I05 remains behind a
+  separate single-invocation freeze.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

@@ -6,18 +6,26 @@ progression, and I03C hybrid passed 258/258 byte-reconstructed runtime
 conformance; I03CR1 passed its 26/26, 17/17 zero-runtime closeout revalidation
 with zero blockers and is owner-accepted for progression; the separately
 declared I03F compact family closeout passed 12/12 integration checks and 9/9
-acceptance conditions with zero blockers and awaits owner review; I04 remains
-unauthorized
+acceptance conditions with zero blockers and is owner-accepted; the
+discriminator gate is passed; I04R2 confirmed all conditional machine
+invariants with 16/16 focused checks and 7/7 pure tests after correcting the
+future I05 estimator route; the project owner accepted I04R2 as the sole
+progression authority and passed CAL-PRE; original I04 and I04R1 are immutable
+historical artifacts, and I05 authorization/execution remains separately frozen
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I03F`; I04 unauthorized
+**Current activity iteration:** `P2-I2-I04R2`; owner-acceptance and progression-
+authority closeout complete; I05 has not begun and candidate execution remains
+unauthorized
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
-`P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`;
+`P2-I2-DISCRIMINATOR-GATE=passed`;
+`P2-I2-CAL-PRE-GATE=passed_after_explicit_owner_acceptance_of_I04R2`
 
 **Acceptance ceiling:** `AE01-C2`; no P2-I2 result, cross-lane recurrence, or
 N31+ effect assigned
@@ -108,8 +116,8 @@ Rules:
 | `P2-I2-BRIEF-GATE` | L02 semantic center, D-039 delta, dependence modes, causal factorization, controls, timing, and claim ceiling accepted | Passed after mode-family scope clarification | Owner acceptance dated 2026-07-14; `P2-I2-DEC-001`; owner-accepted three-mode retention correction `P2-I2-DEC-011`; accepted brief |
 | `P2-I2-SOURCE-AUDIT-GATE` | Source-current public PyGRC capability audit completed under one frozen audit scope | Passed after revalidation | I01R1 quarantines the custom probe, corrects CAP-04, and revalidates all claims from admissible evidence |
 | `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Passed after I02R2 revalidation | Updated revision `83e3a300426631ee4df71b661b67d4fcfdfed594`, 31 sources/callables, persisted reset baseline, v1/v2 provider boundary, legacy fail-closed policy, and `P2-I2-DEC-009` |
-| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | Ready for owner review; all three mode packages accepted and I03F passed compact composition | Owner disposition on I03F remains; gate not yet passed and I04 unauthorized |
-| `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Blocked | Requires `DISCRIMINATOR-GATE` |
+| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | Passed after owner acceptance of compact I03F | DEC-020; opens I04 construction only; all three modes remain retained and unranked |
+| `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Passed after explicit owner acceptance of I04R2 | DEC-026 accepts I04R2 as sole progression authority after 16/16 checks and 7/7 pure tests; opens only separately frozen single-invocation I05 arithmetic calibration; no null/runtime/candidate execution occurred at passage |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Blocked | Requires `CAL-PRE-GATE` |
 | `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Blocked | Requires `CAL-GATE` |
 | `P2-I2-EXEC-FREEZE` | One exact candidate cycle authorized before its first operation | Blocked | Requires `REG-GATE` and a cycle-specific freeze |
@@ -172,16 +180,18 @@ Rules:
 | `P2-I2-I02` | Source admission and restoration-profile transition disposition | I01R1 | Complete | `P2-I2-SOURCE-ADMISSION-GATE=passed`; no scientific evidence |
 | `P2-I2-I02R1` | Admission closeout revalidation: identity, authority, imported-package provenance, callable/provider contract, and transition boundary | I02 plus owner-supplied closeout review | Complete; governance/import/provider/coverage package revalidated | `P2-I2-SOURCE-ADMISSION-GATE=passed_after_revalidation`; no scientific evidence |
 | `P2-I2-I02R2` | Updated PyGRC reset-baseline persistence and restoration-identity revalidation | I02R1 plus updated graph revision supplied by project owner | Complete; reset persistence and v2 identity validated, updated source admitted | `P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`; no scientific evidence |
-| `P2-I2-I03` | Staged realization, discriminator, dependence-mode, and operational-hypothesis program | I01R1–I02R2 plus owner staging direction | Family closeout review-ready; owner gate disposition pending | `P2-I2-DISCRIMINATOR-GATE` only after owner acceptance of the complete family closeout, or retained earlier-stop route |
+| `P2-I2-I03` | Staged realization, discriminator, dependence-mode, and operational-hypothesis program | I01R1–I02R2 plus owner staging direction | Complete and owner-accepted through compact I03F under DEC-020 | `P2-I2-DISCRIMINATOR-GATE=passed`; opened only I04 |
 | `P2-I2-I03A` | 8A state-carried realization and operational-hypothesis freeze | I02R2 plus owner staging direction | Causal design accepted as I03AR1 baseline; runtime adequacy unassigned | `P2-I2-I03A-REVIEW-READY`; opened only I03AR1 under DEC-012 |
 | `P2-I2-I03AR1` | 8A-R1 quarantined state-carried realization runtime conformance | Owner acceptance of stronger conformance path after I03A review | Owner accepted for progression on 2026-07-14; scientific effect remains none | Opens I03B only under its own declaration/freeze; does not open I03C/I04 |
 | `P2-I2-I03B` | 8B history-carried realization, operational-hypothesis freeze, and bounded runtime conformance | Owner acceptance/progression direction after I03AR1 | Owner accepted for staged progression on 2026-07-14; minimally producer-assisted design and 252/252 runtime conformance retained | Opens I03C only under DEC-015; no scientific or I04 effect |
 | `P2-I2-I03BR1` | I03B closeout revalidation of latest-contact dataflow, active-history identity, producer minimality, lifecycle, restoration, and quarantine | I03B plus owner-supplied validation review | Complete and owner accepted for progression; 21/21 checks, six downstream obligations, zero blockers | `P2-I2-I03BR1-CLOSEOUT-PASSED`; obligations retained for I04/I06 |
 | `P2-I2-I03C` | 8C hybrid realization, operational-hypothesis freeze, and bounded runtime conformance | Owner acceptance of I03B/I03BR1 under DEC-015 | Owner accepted for staged progression on 2026-07-14; minimally producer-assisted design and 258/258 byte-reconstructed runtime conformance retained | Opens I03F only under its own declaration/freeze; no scientific or direct I04 effect |
 | `P2-I2-I03CR1` | 8C-R1 zero-runtime hybrid causal-well-formedness and acceptance closeout revalidation | I03C plus owner-supplied twenty-six-point/seventeen-condition review | Complete and owner accepted for progression; 26/26 review checks, 17/17 acceptance conditions, eight downstream obligations, zero blockers | `P2-I2-I03CR1-CLOSEOUT-PASSED`; opened I03F only |
-| `P2-I2-I03F` | 8.1 compact zero-runtime umbrella three-mode family closeout | Owner acceptance/progression direction after I03C/I03CR1 | Review-ready; 12/12 integration checks and 9/9 acceptance conditions passed with zero blockers | Owner review of `P2-I2-DISCRIMINATOR-GATE`; no automatic I04 effect |
-| `P2-I2-I04` | Three-mode calibration preregistration construction | Completed, reviewed I03A–I03C program | Blocked | `P2-I2-CAL-PRE-GATE` |
-| `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze under the preregistered shared/mode-specific rule | I04 | Blocked | `P2-I2-CAL-GATE` |
+| `P2-I2-I03F` | 8.1 compact zero-runtime umbrella three-mode family closeout | Owner acceptance/progression direction after I03C/I03CR1 | Complete and owner accepted; 12/12 integration checks and 9/9 acceptance conditions passed with zero blockers | `P2-I2-DISCRIMINATOR-GATE=passed`; opens I04 construction only |
+| `P2-I2-I04` | Three-mode calibration preregistration construction | Passed discriminator gate under owner-accepted I03F | Static package validated, but owner review withheld CAL-PRE passage and reopened the comparator/window/null boundary | Superseded for progression by I04R1; retained history only |
+| `P2-I2-I04R1` | I04-R1 comparator, order, analytic-null, fixed-window, B-purity, mode-isolation, and evidence-derived-chain correction | Owner-supplied critical review of I04 | Complete immutable historical correction; 19/19 focused checks and 15/15 pure tests | Superseded for progression by owner-accepted I04R2; no independent execution authority |
+| `P2-I2-I04R2` | Conditional two-arm estimator, diversion, response-gain, window, diagnostic, order, and causal-receipt machine verification | Owner-supplied conditional I04R1 acceptance review | Complete and owner-accepted; 16/16 focused checks and 7/7 pure tests; future I05 bypass and reconstruction enforcement corrected | Sole I04 progression authority; `P2-I2-CAL-PRE-GATE=passed`; opens only separately frozen I05 authorization |
+| `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze under the preregistered shared/mode-specific rule | Owner-accepted I04R2 and passed CAL-PRE | Ready but not begun; separate one-invocation freeze required | `P2-I2-CAL-GATE` |
 | `P2-I2-I06` | Exact three-mode implementation registration and evidence-bundle construction | I05 | Blocked | `P2-I2-REG-GATE` |
 | `P2-I2-I07` | Mode-indexed candidate-cycle execution freeze | I06 | Blocked | `P2-I2-EXEC-FREEZE` |
 | `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | I07 | Blocked | `P2-I2-EXEC-GATE` |
@@ -1000,8 +1010,9 @@ guards, and scientific-evidence quarantine. It does not authorize I03B.
 
 **Status:** owner-accepted for staged progression under `P2-I2-DEC-015`. The
 causal design and exact runtime sub-freeze were retained before execution;
-bounded conformance passed and reconstructed byte-identically. I03C is open
-under its own freeze; I04 remains unauthorized.
+bounded conformance passed and reconstructed byte-identically. At I03B close,
+only I03C opened under its own freeze; DEC-020 later opened I04 after the
+complete family closeout.
 
 #### 8B.1 Activity declaration — 2026-07-14
 
@@ -1237,17 +1248,18 @@ continuation interface with manifest-hash validation, and retain branch
 identity obligations; I04/I06 validators must reject every conformance fixture
 value/digest while importing only the pre-runtime structural family.
 
-`P2-I2-I03BR1-CLOSEOUT-PASSED` is satisfied. This makes I03B acceptance-ready
-but does not itself accept I03B, authorize I03C/I04, pass the umbrella gate,
-assign R01-R05, or create scientific evidence. A new owner progression
-decision may authorize I03C only; I04 remains blocked.
+`P2-I2-I03BR1-CLOSEOUT-PASSED` is satisfied. At that review boundary it made
+I03B acceptance-ready but did not itself accept I03B, authorize I03C/I04, pass
+the umbrella gate, assign R01-R05, or create scientific evidence. The later
+owner decisions remain separate authority.
 
 ### 8C. `P2-I2-I03C` — Hybrid realization freeze
 
-**Status:** review-ready under `P2-I2-DEC-016`; design/static validation and
-the separately frozen 258/258 byte-reconstructed runtime conformance passed.
-No hybrid source comparison, design selection, or runtime operation preceded
-this declaration/freeze sequence. I04 remains unauthorized.
+**Status:** owner-accepted for progression under `P2-I2-DEC-018`; design/static
+validation and the separately frozen 258/258 byte-reconstructed runtime
+conformance passed. No hybrid source comparison, design selection, or runtime
+operation preceded this declaration/freeze sequence. I04 opened only later
+under DEC-020 after compact family closeout.
 
 #### 8C.1 Activity declaration — 2026-07-14
 
@@ -1462,10 +1474,10 @@ directly.
 
 **Iteration:** `P2-I2-I03F`
 
-**Status:** `P2-I2-I03F-REVIEW-READY`; compact composition passed 12/12
+**Status:** complete and owner accepted; compact composition passed 12/12
 integration checks and 9/9 acceptance conditions with zero blockers. No mode
-review was repeated. Owner gate disposition remains pending and I04 is
-unauthorized.
+review was repeated. `P2-I2-DISCRIMINATOR-GATE=passed`; I04 construction is
+authorized under its own declaration.
 
 #### 8.1.1 Activity declaration — 2026-07-14
 
@@ -1548,16 +1560,18 @@ runtime review.
 The retained index contains three unranked required modes, 27 exact OP pointers,
 fourteen losslessly copied source obligations mapped exactly once into nine
 consolidated duties, the complete seven-source fixture quarantine, mode-specific
-restoration ownership, and an unchanged mode-indexed I04 import rule. No source
-obligation is discharged; the family-gate duty remains pending owner acceptance.
+restoration ownership, and an unchanged mode-indexed I04 import rule. At I03F
+freeze no source obligation was discharged and the family-gate duty remained
+pending; DEC-020 subsequently supplied that owner disposition without rewriting
+the immutable index.
 
 Exit state `P2-I2-I03F-REVIEW-READY` is satisfied by the
 [input freeze](../contracts/p2-i2/i03f-family-closeout-input.json),
 [family index](../contracts/p2-i2/i03f-family-closeout-index.json),
 [machine validation](../contracts/p2-i2/i03f-family-closeout-validation.json),
 [validator](../scripts/p2_i2_i03f_validate.py), and
-[compact report](../reports/P2-I2-I03F-family-closeout.md). The discriminator
-gate remains ready for owner review, not passed; I04 remains unauthorized.
+[compact report](../reports/P2-I2-I03F-family-closeout.md). DEC-020 subsequently
+accepted this package, passed the discriminator gate, and opened only I04.
 
 Exit gate `P2-I2-DISCRIMINATOR-GATE` requires the complete reviewed staged
 family and opens calibration preregistration only. If no bounded realization
@@ -1567,7 +1581,52 @@ L02 result.
 
 ## 9. `P2-I2-I04` — Calibration preregistration construction
 
-**Status:** blocked on `P2-I2-DISCRIMINATOR-GATE`.
+**Status:** original candidate-free package retained as validated history after
+owner review withheld CAL-PRE passage. I04R1 resolved the primary-comparator
+conflict and response/null correctness duties and passed focused validation;
+I04R2 is the owner-accepted sole progression authority under DEC-026. No
+matched-null or candidate execution occurred during I04–I04R2.
+
+### 9.1 Activity declaration — 2026-07-14
+
+```text
+iteration_id = P2-I2-I04
+purpose = freeze before any calibration or candidate outcome the exact
+          mode-indexed scientific response, orientation, closest insufficient-
+          repetition comparator, aggregation/missingness, signed control rules,
+          candidate-blind matched-null design, analysis identity, and stopping
+          policy imported unchanged from the accepted I03 family
+entry_authority = owner direction "in that case, let's continue with I04";
+                  owner-accepted I03F under DEC-020; accepted P2-I2 brief,
+                  L02 metric sheet, I03F family index, and all frozen common
+                  outcome/stopping/interpretation contracts
+frozen_inputs_or_input_freeze_action = first retain an I04 choice-resolution
+          input binding accepted semantic authorities, candidate/runtime/null
+          absence, complete I03 fixture quarantine, available response/
+          comparator options, and decision criteria; freeze the final
+          preregistration only after those choices are justified
+mutation_and_repository_boundary = RCAE I04 input, measurement/calibration
+          preregistration, pure analysis/null-generation policy or code only
+          if required, static validators/results, report, checklist,
+          hypotheses, and decisions; graph/PyGRC read-only
+required_outputs = exact per-mode response/comparator/control matrix; shared-
+          versus-mode-specific equivalence decisions; aggregation/missingness/
+          resolution rules; candidate-blind null freeze for I05; fixture-reuse
+          rejection; analysis identity; machine validation; I04 report
+execution_budget = zero candidate operations and zero matched-null calibration
+          executions; static validation and candidate-free config construction
+          only
+evidence_effect = scientific measurement and calibration-method preregistration
+          only; no resolution result, implementation registration, control
+          outcome, R01-R05 assignment, or L02 support/falsification
+exit_gate = P2-I2-CAL-PRE-GATE after owner review, or explicit retained blocker;
+            never automatic I05 execution or candidate authority
+```
+
+- [x] Record owner acceptance of I03F, pass only the discriminator gate, and
+  declare I04 before resolving any measurement choice.
+- [x] Project I04's candidate-free choice boundary into the operational
+  hypotheses before studying response/comparator options.
 
 I04 imports all three reviewed I03 causal profiles unchanged. It freezes their
 exact raw measurement, equality/resolution rule, numerical orientation,
@@ -1577,48 +1636,271 @@ comparator, or calibration identity is validly shared or must be mode-specific;
 it may not drop a mode. Numerical operationalization may not revise an I03
 qualitative causal expectation.
 
-- [ ] Freeze an exact raw later-response family and orientation for each mode,
+- [x] Freeze an exact raw later-response family and orientation for each mode,
   sharing a definition only where semantic comparability is justified.
-- [ ] Freeze each mode's primary candidate response and closest registered
+- [x] Freeze each mode's primary candidate response and closest registered
   insufficient-repetition comparator with rationale.
-- [ ] Freeze aggregation, pairing, normalized-margin, denominator-floor, and
+- [x] Freeze aggregation, pairing, normalized-margin, denominator-floor, and
   missingness policies shared by calibration and live analysis.
-- [ ] Freeze the candidate-blind matched-null generator(s), explicitly decide
+- [x] Freeze the candidate-blind matched-null generator(s), explicitly decide
   shared versus mode-specific calibration identity, and prove candidate and
   runtime exclusion.
-- [ ] Freeze calibration inputs, seeds, resource limit, expected artifacts,
+- [x] Freeze calibration inputs, seeds, resource limit, expected artifacts,
   reconstruction command, and stopping rule.
-- [ ] Convert every imported qualitative expectation and fail-closed effect
+- [x] Convert every imported qualitative expectation and fail-closed effect
   into an exact measurement, equality/resolution rule, and machine-executable
   pass/ambiguous/fail evaluation.
-- [ ] Freeze raw-response retention for all cells and subconfigurations.
-- [ ] Freeze analysis code/policy identity and change-control boundary.
-- [ ] Reject every I03A/I03B/I03C conformance-fixture coefficient, amount,
+- [x] Freeze raw-response retention for all cells and subconfigurations.
+- [x] Freeze analysis code/policy identity and change-control boundary.
+- [x] Reject every I03A/I03B/I03C conformance-fixture coefficient, amount,
   type, time, threshold, packet amount, branch ID, response observation,
   implementation comparator, and evidence digest as calibration or scientific
   input; import only each pre-runtime frozen structural family and causal
   boundary.
-- [ ] Validate the preregistration without running the candidate or matched
+- [x] Validate the preregistration without running the candidate or matched
   null.
-- [ ] Prove that no retained mode was removed or demoted by convenience,
+- [x] Prove that no retained mode was removed or demoted by convenience,
   expected margin, or anticipated implementation cost.
+
+### 9.2 Frozen substantive choices and validation
+
+The [choice-resolution input](../contracts/p2-i2/i04-choice-resolution-input.json)
+binds the accepted I03F baseline, ten controlling authorities, complete
+fixture quarantine, candidate/null absence, admissible response/comparator
+options, and decision criteria before the final choices.
+
+The frozen [calibration preregistration](../contracts/p2-i2/i04-calibration-preregistration.json)
+and [analysis policy](../configs/p2_i2_analysis_policy.json) select:
+
+```text
+response = native B-target coherence gain across one native response window
+orientation = identity; higher is aligned
+candidate = two-source combined constitution in both source-role orders
+comparator = quantity-and-timing-matched repeated contribution by one source
+primary panel = 3 seeds x 2 separately retained orders per mode
+```
+
+The response/analysis/null identity is validly shared because causal response
+meaning, unit/orientation, window, comparator role, aggregation, missingness,
+and calibration population are equal. Upstream carrier causes and controls
+remain mode-specific. State retains equal-P order invariance, history retains
+active-order divergence with P exclusion, and hybrid retains the complete
+qualitative P-by-H_P four-cell factorial without imposing synergy.
+
+Scientific no-response is zero. Operational failure leaves the complete
+mode/seed two-order primary panel not evaluable; no imputation or denominator
+removal is allowed. Every seed/order/cell/subconfiguration response remains
+raw. Nine common and 3/3/5 mode-specific rules are frozen as numerical or
+causal-chain `pass`/`ambiguous`/`fail` evaluations.
+
+The [candidate-blind calibration policy](../configs/p2_i2_calibration_policy.json)
+freezes five calibration seeds by two equal exact-rational order pairs and the
+base metric estimator. I04 froze but did not invoke the future I05 entry point;
+the entry point refuses to run without a future owner-authorized I05 freeze
+binding all I04 identities and exactly one null invocation. `delta` remains
+pending.
+
+The retained [validation](../contracts/p2-i2/i04-calibration-preregistration-validation.json)
+passed 16/16 static checks and 10/10 pure analysis tests. It confirmed all
+seven semantic-equivalence fields, all seven I03 quarantine sources, no
+fixture-value/branch/digest reuse, no PyGRC import/model, no matched-null or
+candidate invocation, and an exact clean graph checkout. The compact
+[I04 report](../reports/P2-I2-I04-calibration-preregistration.md) records the
+review surface without reopening accepted I03 mode reviews.
+
+Historical disposition: original `P2-I2-I04-REVIEW-READY` construction was not
+owner-accepted and is superseded for progression under DEC-022/DEC-023. Its
+artifacts remain byte-exact history; I05 and all candidate execution remained
+unauthorized.
+
+### 9.3 `P2-I2-I04R1` — Critical-review correction
+
+**Status:** corrected candidate-free package review-ready; owner acceptance
+pending
+
+```text
+iteration_id = P2-I2-I04R1
+purpose = correct the I04 contract conflict that promoted an equivalence-
+          permitted quantity-matched one-source scope diagnostic into a
+          required-divergence primary comparator; harden source symmetry,
+          order-conditioned interpretation, analytic-null scope, fixed
+          response window, B-purity, per-mode isolation, evidence-derived
+          causal-chain controls, and choice-rationale quarantine
+entry_authority = owner-supplied critical I04 review withholding
+                  P2-I2-CAL-PRE-GATE passage
+frozen_inputs_or_input_freeze_action = retain original I04 package and review
+          verbatim as historical inputs; revise only through a new I04R1
+          choice/correction freeze before replacing preregistration identities
+mutation_and_repository_boundary = RCAE I04R1 contracts, policies, pure
+          analysis/future-null code, validators/tests/results, report,
+          checklist, hypotheses, and decisions; admitted graph source may be
+          read for public operation semantics but remains unmodified
+required_outputs = corrected primary comparator and symmetric quantity-matched
+          diagnostic; per-order/mode disposition rules; analysis-only delta
+          meaning and I06 numeric admissibility; exact outcome-independent
+          native operation window; B-purity guards; per-mode evidence boundary;
+          evidence-derived causal-chain evaluation; quarantine provenance;
+          static validation and revised report
+execution_budget = zero PyGRC model instantiations, zero matched-null
+          invocations, and zero candidate/control invocations; static source,
+          policy, code, and pure unit validation only
+evidence_effect = correction of candidate-free measurement/calibration
+          authority only; no resolution result, control result, R01-R05,
+          L02 support/falsification, or terminal classification
+exit_gate = revised P2-I2-I04-REVIEW-READY for explicit owner review or a
+            retained blocker; never automatic CAL-PRE passage or I05 authority
+```
+
+- [x] Freeze the owner review and original I04 identities before correction.
+- [x] Restore quantity-matched repeated-S1 and repeated-S2 conditions to a
+  symmetric scope diagnostic whose valid equivalence cannot fail R03.
+- [x] Select a primary comparator that changes the mode-relevant common carrier
+  without outcome-based choice and resolve source-role symmetry.
+- [x] Separate failure of the full top signature from valid order-conditioned
+  or mixed history/hybrid relations.
+- [x] State that I05 calibrates analysis arithmetic only, keep runtime/
+  continuation tolerances separate, and freeze I06 numeric-domain admission.
+- [x] Freeze an exact outcome-independent native operation window for scheduled,
+  unscheduled, delayed, blocked, and operationally invalid responses.
+- [x] Require B-baseline matching and prove that only the registered response
+  packet may change B, or use an attributable/subtracted response instead.
+- [x] Keep primary margins, controls, metric relations, support, and rung inputs
+  independent per mode with no cross-mode compensation.
+- [x] Derive private/controller causal-chain control status from retained masks,
+  identities, calls, lineage, guards, configuration, and receipts rather than
+  authored booleans.
+- [x] Reconstruct every I04 choice rationale from pre-runtime causal contracts
+  and accepted theory without conformance observations.
+- [x] Validate the revised package without executing PyGRC, the matched null,
+  or any candidate/control cell, then return for owner review.
+
+The [correction input](../contracts/p2-i2/i04r1-critical-review-correction-input.json)
+binds the owner review, all ten original I04 identities, three pre-runtime mode
+contracts, and two admitted public-source identities. The corrected
+[preregistration](../contracts/p2-i2/i04r1-calibration-preregistration.json)
+selects the strongest symmetric leave-one common-carrier admission comparator;
+repeated-S1/S2 in both physical orders is a separate equivalence-permitted
+scope diagnostic.
+
+The response is fixed-window B gain with one feedback-row emission, one
+producer evaluation, and exactly two step calls. Scientific zero requires two
+empty-queue steps, unchanged B, and no packet. B purity, binary-like response
+semantics, per-mode isolation, evidence-derived causal status, analytic-only
+I05 delta, and I06 floor/ULP/tolerance admission are machine-frozen in the
+corrected analysis policy.
+
+The focused [validation](../contracts/p2-i2/i04r1-calibration-preregistration-validation.json)
+passed 19/19 checks and 15/15 pure tests. It repeated no I03 mode review and
+executed zero PyGRC models, matched nulls, candidates, or controls. The compact
+[correction report](../reports/P2-I2-I04R1-calibration-preregistration-correction.md)
+is the owner-review surface.
+
+Historical disposition: `P2-I2-I04-REVIEW-READY` under DEC-023. I04R1 is now
+immutable history superseded for progression by owner-accepted I04R2; it has no
+parallel calibration or execution authority.
+
+### 9.4 `P2-I2-I04R2` — Conditional machine-invariant closure
+
+**Status:** complete and explicitly owner-accepted; sole I04 progression
+authority under DEC-026
+
+```text
+iteration_id = P2-I2-I04R2
+purpose = verify and, where required, correct the machine implementation of
+          I04R1's complete two-arm comparator evaluability, exact I05 primary-
+          estimator route, I06 diversion and response-gain admissibility,
+          window-before-zero validation, non-gating scope diagnostic, order-
+          conditioned classification, and receipt-derived causal controls
+entry_authority = owner-supplied conditional I04R1 acceptance review,
+                  SHA-256 78a49384609cdc4198a2dbce359c21d03694822fb7da96d1c2ff5f3333741d5d
+frozen_inputs_or_input_freeze_action = retain the complete I04/I04R1 package
+          and conditional review as exact history; freeze an I04R2 verification
+          input before changing any corrected policy/code identity
+mutation_and_repository_boundary = RCAE I04R2 contracts, corrected policy/
+          pure analysis/future-I05 code, tests, focused validator/result,
+          report, checklist, hypotheses, and decisions; admitted PyGRC public
+          source may be inspected but graph repository remains unmodified
+required_outputs = all-or-none primary tuple rule; future I05 three-arm route;
+          exact diversion noninterference duties; B-domain/identity-gain guard;
+          step-event/evaluation contamination guards; explicit non-gating and
+          order/causal derivations; focused validation and review surface
+execution_budget = zero matched-null invocations, zero PyGRC models, and zero
+          candidate/control invocations; static inspection and pure unit tests
+          only
+evidence_effect = conditional candidate-free machine-preregistration integrity
+          only; no resolution, runtime, control, R01-R05, or L02 result
+exit_gate = I04R2 acceptance-readiness confirmation for explicit owner review,
+            or retained blocker; never automatic CAL-PRE or I05 execution
+```
+
+- [x] Freeze the conditional review and exact I04R1 identities before machine
+  verification.
+- [x] Prove candidate, leave-q1, and leave-q2 are all required before `max`,
+  and that `max` is computed only within one mode/seed/physical-order tuple.
+- [x] Route the future I05 arithmetic null through raw candidate, leave-q1,
+  and leave-q2 records and the exact live strongest-marginal estimator path.
+- [x] Freeze I06 diversion matching and inert-sink noninterference over every
+  continuation-relevant carrier, mask, policy, eligibility, and B surface.
+- [x] Require measured B gain to equal the registered native arrival gain
+  within a separate runtime tolerance, remain inside the registered native
+  coherence domain, and exclude clipping/projection/budget corrections.
+- [x] Validate evaluation, producer, exact step-event, queue, and contamination
+  identities before assigning scientific zero.
+- [x] Confirm repeated-S1/S2 equivalence has no primary, top-signature, R03, or
+  lowering effect.
+- [x] Confirm non-top order panels remain independently classifiable from raw
+  order/control/causal evidence and never imply hypothesis failure directly.
+- [x] Confirm candidate/private/controller status remains derived from exact
+  masks, arrivals, calls, lineage, guards, configurations, and receipts.
+- [x] Run only focused static validation and pure tests, reconstruct the result,
+  and return the package for explicit owner acceptance.
+
+The [I04R2 input freeze](../contracts/p2-i2/i04r2-conditional-machine-verification-input.json)
+binds the conditional review and all ten I04R1 identities. Focused inspection
+found one real machine gap: the I04R1 future calibration entry point fed an
+already paired response directly into normalized-difference arithmetic. The
+corrected [future I05 entry point](../scripts/p2_i2_i04r2_calibration.py) now
+builds raw candidate, q1-only, and q2-only response envelopes and invokes the
+same all-or-none [primary analyzer](../scripts/p2_i2_i04r2_analysis.py) used by
+the preregistered live route, then writes, reads, parses, and byte-reconstructs
+the governed output before successful exit.
+
+The [machine policy](../configs/p2_i2_i04r2_machine_policy.json) freezes
+diversion noninterference, native identity-gain/domain admission,
+window-before-zero receipts, repeated-source non-gating scope, independent
+order classification, and receipt-derived causal status. The focused
+[validation](../contracts/p2-i2/i04r2-machine-verification-validation.json)
+passed 16/16 checks and 7/7 pure tests and reconstructed byte-identically. It
+executed zero matched nulls, PyGRC models, candidate/control cells, or graph
+mutations. Its retained test receipt excludes wall-clock timing so an
+independent validator run is byte-stable. The compact
+[verification report](../reports/P2-I2-I04R2-conditional-machine-verification.md)
+is the owner-review surface.
+
+Owner disposition: accepted under DEC-026. I04R2 is the sole progression
+authority; original I04 and I04R1 remain immutable historical artifacts with
+no parallel execution authority. `P2-I2-CAL-PRE-GATE` is passed and authorizes
+only construction of a separate, exact, single-invocation I05 arithmetic-null
+freeze. It does not invoke I05 or open I06, candidate execution, or a result.
 
 Exit gate `P2-I2-CAL-PRE-GATE` authorizes only I05 matched-null calibration.
 
 ## 10. `P2-I2-I05` — Candidate-blind calibration
 
-**Status:** blocked on `P2-I2-CAL-PRE-GATE`.
+**Status:** ready but not begun; CAL-PRE passed under DEC-026, and no I05
+authorization or invocation exists yet.
 
-- [ ] Execute only the frozen shared or mode-specific matched-null calibration
+- [ ] Execute only the frozen shared pure analysis-arithmetic matched-null
   structure.
 - [ ] Retain reconstructable generator provenance and all per-seed margins.
 - [ ] Verify candidate/runtime exclusion and absence of post-hoc inputs.
-- [ ] Compute and freeze the preregistered shared or mode-specific `delta`
-  disposition under the metric-sheet estimator without selecting a mode.
+- [ ] Compute and freeze the preregistered shared `analysis_arithmetic_delta`
+  disposition under the metric-sheet estimator without selecting a mode or
+  inferring any runtime/measurement tolerance.
 - [ ] Retain a lane-local metric-calibration record and generated frozen
   metric-sheet artifact linked to the unchanged base L02 metric sheet;
-  populate only the frozen artifact's designated resolution-status, `delta`,
-  rationale, and calibration-reference fields.
+  populate only the frozen artifact's designated resolution-status,
+  `analysis_arithmetic_delta`, rationale, and calibration-reference fields.
 - [ ] Retain schema-valid calibration and provenance records.
 - [ ] Reconstruct the calibration independently and verify semantic digests.
 - [ ] Preserve narrow/robust language as relation to frozen resolution, not a
@@ -1779,9 +2061,9 @@ valid terminal classification + reconstructed evidence
 | `L02-Q04` | Which dependence-mode profiles are required, and in what order? | I03 | Decided; all three design-bound | DEC-011: retain all three through execution; 8A `state_carried`, review, 8B `history_carried`, review, 8C `hybrid`, review; realization selection occurs within modes |
 | `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 concept; I06 exact | All three concepts bound | I03A binds native P/U/L/V; I03B binds external H_P and native M_H one-component response; I03C binds native P plus active H_P through one native `[P,M_H]` joint read; exact IDs remain I06 |
 | `L02-Q06` | What contribution and mixing rule constitutes common state or active history? | I03 concept; I04/I06 exact | All three concepts bound | I03A uses additive P coherence; I03B uses ordered source-label-free tokens/readout; I03C advances both native P and the separately causal ordered history from the same physical contributions; scientific amounts/parameters remain pending |
-| `L02-Q07` | Which one later response is primary? | I04 | Open | Discriminator gate required |
-| `L02-Q08` | Which nearest insufficient-repetition comparator owns the margin? | I04 | Open | Discriminator gate required |
-| `L02-Q09` | What matched null and resolution freeze `delta`? | I04–I05 | Open | Calibration only |
+| `L02-Q07` | Which one later response is primary? | I04/I04R1/I04R2 | Accepted I04R2 progression authority; I06 registration pending | DEC-026 retains fixed six-slot/two-step native B-target coherence gain, identity-oriented, binary-like zero or one registered packet; exact identity gain/domain/window receipt guards confirmed |
+| `L02-Q08` | Which nearest insufficient-repetition comparator owns the margin? | I04/I04R1/I04R2 | Accepted under I04R2 | DEC-026 retains the all-or-none maximum of symmetric q1-only/q2-only common-carrier admission responses within one tuple; repeated-S1/S2 remains a non-failing scope diagnostic |
+| `L02-Q09` | What matched null and resolution freeze `delta`? | I04–I05 | I04R2 three-arm null route accepted; value pending I05 | DEC-026 passes CAL-PRE for one separately frozen shared pure `analysis_arithmetic_delta` invocation through the exact raw three-arm estimator; no runtime tolerance or candidate authority |
 | `L02-Q10` | How do all cells and signed controls materialize? | I03 concept; I06 exact | I03A accepted; I03B acceptance-ready after I03BR1 | Both modes bind seven cells/five controls; exact scientific subconfiguration matrix pending I06 |
 | `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | I03A accepted; I03B lifecycle acceptance-ready after I03BR1 | I03B is run-bounded append-only with explicit replacement and no autonomous capacity/saturation/leakage/maintenance; exact registered bounds pending I06 |
 | `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact | I03A accepted; I03B access axis acceptance-ready after I03BR1 | Architectural alternate access passed conformance; scientific R05 retention and exact eligible responder remain I04/I06 work |
@@ -1840,7 +2122,11 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-011` | I03BR1 owner-supplied twenty-one-point acceptance review | `closure_only_retention_fix` | Add a frozen zero-runtime closeout audit; retain latest-contact exclusion, functional H_P/M_H identity, exact lifecycle, layered restoration, mechanical quarantine rejection set, and six downstream obligations | No runtime rerun and no I03B artifact rewrite; 21/21 checks passed with zero blockers; later DEC-015 opened only I03C and kept I04 blocked | Exact I03B hashes and invocation accounting, minimally producer-assisted class, I03A independence, no scientific evidence, graph read-only boundary | Complete; owner accepted for progression under DEC-015 |
 | `P2-I2-CHG-012` | Owner progression acceptance of I03B/I03BR1 and direction that 8C is next | `owner_accepted_staged_progression_and_hybrid_entry` | Accept I03B for progression only; open checklist/hypothesis-first I03C; freeze native-first hybrid selection as native P plus active H_P/M_H under one native joint feedback read | No I03B rewrite or mode ranking; separate runtime freeze passed 258/258 and byte reconstruction; I04 and the umbrella gate remain blocked | Three retained modes, I03A/I03B identities, six I03BR1 duties, no fixture-value reuse, graph read-only and scientific quarantine boundaries | Complete; I03C later owner-accepted under DEC-018 |
 | `P2-I2-CHG-013` | I03CR1 owner-supplied twenty-six-area/seventeen-condition hybrid acceptance review | `closure_only_retention_fix_and_acceptance_revalidation` | Add a frozen zero-runtime audit; retain exact composite-carrier authority, qualitative 2x2, admission/self-feedback exclusions, neutral-contact qualification, layered identity, lifecycle classifications, and complete fixture-quarantine registry | No I03C artifact rewrite or runtime rerun; 26/26 review checks and 17/17 acceptance conditions passed with zero blockers; eight downstream obligations retained; umbrella gate and I04 remain blocked | Exact I03C hashes/invocation accounting, minimally producer-assisted class, three unranked modes, scientific quarantine, graph read-only boundary | Complete; owner accepted for progression on 2026-07-14 |
-| `P2-I2-CHG-014` | Owner acceptance of I03C/I03CR1 for progression and direction that section 8.1 is next | `owner_accepted_staged_progression_and_family_closeout_entry` | Accept I03C for progression only; declare checklist/hypothesis-first I03F; freeze a compact zero-runtime terminal-authority composition over mode/OP/restoration/obligation/quarantine/I04-import indexes without repeating mode reviews | No I03 artifact rewrite, mode ranking, source/capability re-audit, runtime rerun, discriminator-gate passage, or I04 authorization; 12/12 integration checks and 9/9 acceptance conditions passed and I03F returned for owner review | Three accepted mode identities/classes, all retained conformance and closeout boundaries, fourteen source obligations mapped exactly once into nine duties, graph read-only and scientific quarantine boundaries | Complete; I03F owner gate disposition pending |
+| `P2-I2-CHG-014` | Owner acceptance of I03C/I03CR1 for progression and direction that section 8.1 is next | `owner_accepted_staged_progression_and_family_closeout_entry` | Accept I03C for progression only; declare checklist/hypothesis-first I03F; freeze a compact zero-runtime terminal-authority composition over mode/OP/restoration/obligation/quarantine/I04-import indexes without repeating mode reviews | No I03 artifact rewrite, mode ranking, source/capability re-audit, runtime rerun, discriminator-gate passage, or I04 authorization; 12/12 integration checks and 9/9 acceptance conditions passed and I03F returned for owner review | Three accepted mode identities/classes, all retained conformance and closeout boundaries, fourteen source obligations mapped exactly once into nine duties, graph read-only and scientific quarantine boundaries | Complete; I03F owner-accepted under DEC-020 |
+| `P2-I2-CHG-015` | Owner acceptance of compact I03F and direction to continue with I04 | `owner_accepted_discriminator_gate_and_calibration_preregistration_entry` | Pass only `P2-I2-DISCRIMINATOR-GATE`; declare checklist/hypothesis-first I04; require substantive response/comparator/null/analysis choices before any calibration or candidate result | I04 construction produced a 16/16 validated candidate-free package; I05, I06, and candidate execution remain blocked pending owner review; no I03 review replay or conformance-fixture reuse | Three retained unranked modes, I03 causal meanings, fourteen source obligations/nine duties, complete quarantine, graph read-only boundary, no scientific result | Complete through `P2-I2-I04-REVIEW-READY`; CAL-PRE pending owner review |
+| `P2-I2-CHG-016` | Owner-supplied critical I04 review withholding CAL-PRE passage | `scientific_preregistration_correction_before_calibration` | Add I04R1; restore quantity-matched repetition to an equivalence-permitted symmetric scope diagnostic; replace the primary required-divergence contrast; harden order, analytic-null, fixed-window, B-purity, mode-isolation, evidence-derived-chain, and quarantine semantics | Corrected package passed 19/19 focused checks and 15/15 pure tests; CAL-PRE remains pending explicit owner acceptance; original I04 retained history; zero null/candidate/runtime execution | Accepted brief/L02/D-039 authority, all three I03 modes and causal semantics, graph read-only boundary, no scientific result | Complete through corrected `P2-I2-I04-REVIEW-READY` under DEC-023 |
+| `P2-I2-CHG-017` | Owner-supplied conditional I04R1 acceptance review | `closure_only_retention_fix` plus future-null estimator-path correction | Add I04R2; verify all-or-none two-arm evaluability, route future I05 through the exact raw three-arm estimator, and harden I06 diversion/gain plus response-window receipts without executing any governed null/runtime/candidate | 16/16 focused checks and 7/7 pure tests passed; future-I05 bypass corrected; zero matched-null/PyGRC/candidate/control execution; package returned for explicit owner acceptance | I04R1 conceptual correction, three retained modes, pre-runtime rationale/quarantine, graph read-only boundary, no scientific result | Complete through `P2-I2-I04R2-ACCEPTANCE-READY` under DEC-025 |
+| `P2-I2-CHG-018` | Explicit project-owner acceptance of I04R2 and direction to pass CAL-PRE, commit, and authorize only one separately frozen I05 arithmetic-null invocation | `owner_accepted_progression_authority_and_gate_passage` plus navigation closeout | Accept I04R2 as sole progression authority; pass only CAL-PRE; mark original I04/I04R1 immutable historical; audit navigation/authority fields; keep I05 invocation, I06, and candidates closed behind separate gates | CAL-PRE passed under DEC-026; I05 ready but not begun; no authorization/output/null/runtime/candidate operation created during I04R2 closeout | Exact accepted I04R2 identities and validation, historical I04/I04R1 bytes, all three modes, tie-rule non-scientific meaning, no scientific result | Complete; opens only checklist/hypothesis-first I05 authorization construction after accepted-I04 commit |
 
 ## 19. Evidence ledger
 
@@ -1849,7 +2135,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B/I03C/I03CR1/I03F | Cumulative decision record, DEC-001 through DEC-019 | Decision authority only | Retained |
+| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2/I03A/I03AR1/I03B/I03C/I03CR1/I03F/I04/I04R1/I04R2 | Cumulative decision record, DEC-001 through DEC-026 | Decision authority only | Retained |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
 | `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
@@ -1892,7 +2178,17 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I03CR1-VALIDATION` | I03CR1 | [Machine revalidation](../contracts/p2-i2/i03cr1-closeout-revalidation.json), [validator](../scripts/p2_i2_i03cr1_validate.py), and [closeout report](../reports/P2-I2-I03CR1-hybrid-closeout-revalidation.md) | Zero-runtime source/dataflow and retained-artifact acceptance validation only; 26/26 and 17/17 with zero blockers; no scientific effect | Retained; owner accepted for progression under DEC-018 |
 | `P2-I2-I03F-FREEZE` | I03F | [Compact family-closeout input](../contracts/p2-i2/i03f-family-closeout-input.json) and `P2-I2-CHG-014` | Exact accepted terminal-authority and no-repeated-review scope only | Retained |
 | `P2-I2-I03F-INDEX` | I03F | [Three-mode family index](../contracts/p2-i2/i03f-family-closeout-index.json) | Lossless mode/OP/restoration/obligation/quarantine/I04-import composition only | Retained |
-| `P2-I2-I03F-VALIDATION` | I03F | [Compact validation](../contracts/p2-i2/i03f-family-closeout-validation.json), [validator](../scripts/p2_i2_i03f_validate.py), and [report](../reports/P2-I2-I03F-family-closeout.md) | Terminal-authority identity and index traceability only; 12/12 and 9/9 with zero blockers; no repeated mode review or scientific effect | Retained pending owner gate disposition |
+| `P2-I2-I03F-VALIDATION` | I03F | [Compact validation](../contracts/p2-i2/i03f-family-closeout-validation.json), [validator](../scripts/p2_i2_i03f_validate.py), and [report](../reports/P2-I2-I03F-family-closeout.md) | Terminal-authority identity and index traceability only; 12/12 and 9/9 with zero blockers; no repeated mode review or scientific effect | Retained; owner-accepted under DEC-020 |
+| `P2-I2-I04-INPUT` | I04 | [Choice-resolution input](../contracts/p2-i2/i04-choice-resolution-input.json) | Candidate-free authority/options/quarantine/absence freeze only | Retained |
+| `P2-I2-I04-PREREGISTRATION` | I04 | [Calibration preregistration](../contracts/p2-i2/i04-calibration-preregistration.json), [analysis policy](../configs/p2_i2_analysis_policy.json), [calibration policy](../configs/p2_i2_calibration_policy.json), and [report](../reports/P2-I2-I04-calibration-preregistration.md) | Historical measurement, comparison, control, analysis, and future-null construction only; no calibration or scientific evidence | Retained history; superseded for progression under DEC-022/DEC-023 |
+| `P2-I2-I04-VALIDATION` | I04 | [Static validation](../contracts/p2-i2/i04-calibration-preregistration-validation.json), [validator](../scripts/p2_i2_i04_validate.py), [pure analysis module](../scripts/p2_i2_analysis.py), and 10-test suite | Historical candidate-free construction integrity only; 16/16 and 10/10; zero PyGRC/null/candidate invocations | Retained history; owner withheld CAL-PRE |
+| `P2-I2-I04R1-INPUT` | I04R1 | [Critical-review correction input](../contracts/p2-i2/i04r1-critical-review-correction-input.json) and `P2-I2-CHG-016` | Exact owner-review, historical-I04, pre-runtime-authority, public-source, correction, and zero-execution freeze only | Retained |
+| `P2-I2-I04R1-PREREGISTRATION` | I04R1 | [Corrected preregistration](../contracts/p2-i2/i04r1-calibration-preregistration.json), [analysis policy](../configs/p2_i2_i04r1_analysis_policy.json), [calibration policy](../configs/p2_i2_i04r1_calibration_policy.json), and [correction report](../reports/P2-I2-I04R1-calibration-preregistration-correction.md) | Corrected candidate-free response/comparator/scope/null-domain/window/purity/isolation/causal-analysis history only; no calibration or scientific evidence | Immutable retained history; superseded for progression by I04R2 under DEC-026 |
+| `P2-I2-I04R1-VALIDATION` | I04R1 | [Focused validation](../contracts/p2-i2/i04r1-calibration-preregistration-validation.json), [validator](../scripts/p2_i2_i04r1_validate.py), [pure analysis module](../scripts/p2_i2_i04r1_analysis.py), and 15-test suite | Candidate-free correction integrity only; 19/19 and 15/15; zero PyGRC/null/candidate/control invocations and no repeated I03 review | Immutable retained history; no independent execution authority |
+| `P2-I2-I04R2-INPUT` | I04R2 | [Conditional machine-verification input](../contracts/p2-i2/i04r2-conditional-machine-verification-input.json) and `P2-I2-CHG-017` | Exact conditional review, ten-artifact I04R1 history, admitted-source identities, correction scope, and zero-execution freeze only | Retained |
+| `P2-I2-I04R2-MACHINE` | I04R2 | [Machine policy](../configs/p2_i2_i04r2_machine_policy.json), [future calibration policy](../configs/p2_i2_i04r2_calibration_policy.json), [machine preregistration](../contracts/p2-i2/i04r2-machine-verification-preregistration.json), [primary analyzer](../scripts/p2_i2_i04r2_analysis.py), and [future I05 entry point](../scripts/p2_i2_i04r2_calibration.py) | Candidate-free machine-preregistration and future-estimator identity only; no null or scientific evidence | Owner-accepted sole progression authority under DEC-026; CAL-PRE passed |
+| `P2-I2-I04R2-VALIDATION` | I04R2 | [Focused validation](../contracts/p2-i2/i04r2-machine-verification-validation.json), [validator](../scripts/p2_i2_i04r2_validate.py), 7-test suite, and [verification report](../reports/P2-I2-I04R2-conditional-machine-verification.md) | Conditional machine-integrity evidence only; 16/16 and 7/7; byte-identical reconstruction; zero PyGRC/null/candidate/control invocations | Retained and owner-accepted under DEC-026; sole progression authority |
+| `P2-I2-I04R2-ACCEPTANCE` | I04R2 | [Owner-acceptance and CAL-PRE gate record](../contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json), `P2-I2-CHG-018`, and `P2-I2-DEC-026` | Progression and CAL-PRE gate authority only; no calibration or scientific evidence | Retained; passes CAL-PRE and opens only separately frozen I05 authorization construction |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

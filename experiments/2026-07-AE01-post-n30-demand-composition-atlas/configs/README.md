@@ -25,6 +25,16 @@ resource overrides are local inputs and are never committed. A lane-specific
 live probe must add an explicit realization profile and runtime receipt before
 execution; absence fails closed.
 
+## P2-I2 active calibration-preregistration authority
+
+Owner-accepted I04R2 is the sole P2-I2 progression authority. Its active
+surfaces are `p2_i2_i04r2_machine_policy.json` and
+`p2_i2_i04r2_calibration_policy.json`, layered over the exact I04R1 analysis
+parent. The original `p2_i2_analysis_policy.json`/
+`p2_i2_calibration_policy.json` and I04R1 calibration policy remain immutable
+historical inputs, not parallel executable preregistrations. CAL-PRE passage
+permits only a separately frozen single I05 arithmetic-null invocation.
+
 ## P2-I1 configuration surfaces
 
 P2-I1 adds six experiment-local inputs derived from its cumulative decision

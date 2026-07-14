@@ -135,6 +135,15 @@ uv pip install --python .venv/bin/python LOCAL_PYGRC_SOURCE jsonschema==4.26.0
 retained runtime profile must instead record the installed `pygrc==0.1`
 identity and source revision/digests.
 
+### P2-I2 I04/I05 authority
+
+`p2_i2_i04r2_analysis.py` and `p2_i2_i04r2_calibration.py` are the sole active
+P2-I2 calibration-preregistration analysis path under owner-accepted I04R2.
+The original I04 and I04R1 modules remain immutable historical inputs. The
+I04R2 calibration entry point may run only after a separate I05 freeze binds
+its exact identities and authorizes one arithmetic-null invocation; it imports
+no PyGRC and grants no candidate authority.
+
 Validate the six committed P2-I1 configs:
 
 ```bash

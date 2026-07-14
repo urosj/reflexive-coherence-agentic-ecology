@@ -116,3 +116,11 @@ implementation/test digests needed to distinguish evidence overlays from
 active runtime history. These are audit-control artifacts, not schema
 instances, source admission, realization selection, calibration, or lane
 evidence.
+
+## P2-I2 I04 authority lineage
+
+The original I04 and I04R1 contracts are immutable historical artifacts.
+Owner-accepted I04R2 is the sole progression authority under DEC-026, with its
+exact preregistration and 16/16 validation retained under `p2-i2/`. CAL-PRE is
+passed, but no I05 authorization or calibration output is implied by these
+contracts; that authority must be a separate one-invocation I05 freeze.

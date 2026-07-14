@@ -1,0 +1,62 @@
+{
+  "artifact_id": "P2-I2-I04R2-OWNER-ACCEPTANCE-AND-CAL-PRE-GATE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04R2",
+  "lane_id": "AE01-L02",
+  "accepted_at": "2026-07-14",
+  "decision_id": "P2-I2-DEC-026",
+  "change_id": "P2-I2-CHG-018",
+  "owner_disposition": "accept I04R2, pass P2-I2-CAL-PRE-GATE, commit the accepted lineage, and authorize only a separately frozen single I05 arithmetic-null invocation",
+  "progression_authority": {
+    "iteration_id": "P2-I2-I04R2",
+    "status": "sole_active_I04_progression_authority",
+    "machine_policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+    "parent_analysis_module_sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+    "calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "calibration_entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "preregistration_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+    "validation_sha256": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361",
+    "focused_checks_passed": 16,
+    "pure_tests_passed": 7
+  },
+  "historical_lineage": [
+    {
+      "iteration_id": "P2-I2-I04",
+      "status": "immutable_historical_superseded_for_progression",
+      "parallel_execution_authority": false
+    },
+    {
+      "iteration_id": "P2-I2-I04R1",
+      "status": "immutable_historical_superseded_for_progression",
+      "parallel_execution_authority": false
+    }
+  ],
+  "exact_tie_rule": {
+    "selected_provenance": "q1-only",
+    "applies_only_when_responses_are_numerically_equal": true,
+    "scientific_meaning": "none",
+    "interpretive_use_forbidden": true
+  },
+  "gate_effect": {
+    "P2-I2-CAL-PRE-GATE": "passed_after_explicit_owner_acceptance_of_I04R2",
+    "opens": [
+      "checklist_and_hypothesis_first_I05_authorization_construction_for_one_arithmetic_null_invocation"
+    ],
+    "does_not_open": [
+      "automatic_I05_invocation",
+      "I06_registration",
+      "PyGRC_runtime",
+      "candidate_or_control_execution",
+      "R01_R05_or_L02_interpretation",
+      "mode_selection_or_ranking"
+    ]
+  },
+  "execution_receipt": {
+    "I05_authorization_created_during_I04R2": false,
+    "matched_null_invocations": 0,
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_invocations": 0,
+    "graph_mutations": 0,
+    "scientific_result": false
+  }
+}

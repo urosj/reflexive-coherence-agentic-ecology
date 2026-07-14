@@ -1,0 +1,144 @@
+{
+  "artifact_id": "P2-I2-I04R2-CONDITIONAL-MACHINE-VERIFICATION-INPUT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04R2",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "evidence_effect": "candidate_free_machine_verification_input_only",
+  "owner_review": {
+    "path": "/home/uros/.codex/attachments/5f7e5ef9-d600-4f97-a668-3b67afa14284/pasted-text.txt",
+    "sha256": "78a49384609cdc4198a2dbce359c21d03694822fb7da96d1c2ff5f3333741d5d",
+    "disposition": "I04R1_conceptual_blocker_resolved_acceptance_conditional_on_machine_invariant_confirmation",
+    "authorized_gate_effect_after_confirmation": "project_owner_may_pass_P2-I2-CAL-PRE-GATE_and_authorize_exactly_one_I05_arithmetic_null_invocation",
+    "still_closed": [
+      "CAL-PRE until explicit owner acceptance after confirmation",
+      "I06 registration",
+      "all PyGRC candidate/control execution",
+      "R01-R05 and L02 interpretation"
+    ]
+  },
+  "retained_I04R1_history": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-critical-review-correction-input.json",
+      "sha256": "8060d0476c02869ca5954be01b4e80ee9ca4e27f6438bbf22ea5d5a14be02c31"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+      "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_calibration_policy.json",
+      "sha256": "5eb921eeb49c0fb336b5176a98bfd615482b991293afbd579263a5275a8717ad"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_analysis.py",
+      "sha256": "1b4b8ccd3bea10e79ad17fdd9646d92c747ce5c3da20da96d72834ad300dbb4c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_calibration.py",
+      "sha256": "8228dc8a483a9c5b01cbb1c0f499797b35b8eb3bf17cf6781c112b289d8826bd"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r1_analysis.py",
+      "sha256": "a96a12654f90a1837fd3f0958d4d521870bd8f30ab2f5966c1735c7fd0429b0c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration.json",
+      "sha256": "ddce7076c7170e38900197ca7bb0643d92305784daa523099041c9fc5a15d3a4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_validate.py",
+      "sha256": "8e370d265652b7af6be861479758429ec6a29a0553b65f3a4d6ef33d4992bf0d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration-validation.json",
+      "sha256": "ba9e0bb8003f6f69ca21201db380de33f453f0f3a9c9107279413c798b73efa3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I04R1-calibration-preregistration-correction.md",
+      "sha256": "7ca56eb1ae5df384363c984f7220f987ac57ec4ad2f79fa48ce1c12ba8cbba14"
+    }
+  ],
+  "verification_requirements": {
+    "complete_two_arm_evaluability": {
+      "rule": "candidate, q1-only, and q2-only must all be scientific before max; any operational arm makes the primary tuple nonevaluable",
+      "stratum": "exactly one mode, seed, physical order, pairing, opportunity, fixed window, and B baseline",
+      "cross_stratum_max_forbidden": true
+    },
+    "I05_exact_estimator_path": {
+      "required_route": [
+        "raw synthetic candidate response",
+        "raw synthetic leave-q1 response",
+        "raw synthetic leave-q2 response",
+        "live-analysis primary_margin strongest-arm selection",
+        "pairing and denominator floor",
+        "normalized margin",
+        "serialization",
+        "reconstruction"
+      ],
+      "precollapsed_comparator_input_forbidden": true,
+      "runtime_calibration_effect": "none"
+    },
+    "I06_diversion_admissibility": {
+      "must_match": [
+        "source debit and activity",
+        "physical contribution amount and type",
+        "timing slot and queue opportunity",
+        "support and capacity consequences",
+        "route cost where relevant",
+        "responder opportunity",
+        "B baseline",
+        "response policy"
+      ],
+      "sink_must_not_influence": [
+        "P",
+        "H_P",
+        "M_H",
+        "B",
+        "B_ref",
+        "feedback masks",
+        "producer eligibility",
+        "any continuation-relevant state"
+      ],
+      "mode_failure_effect": "registration blocked; weaker comparator substitution forbidden"
+    },
+    "I06_response_gain_admissibility": {
+      "measured_rule": "abs(measured_B_gain - expected_native_arrival_gain) <= separately registered runtime tolerance",
+      "domain_rule": "B_before and B_before + expected gain lie inside the registered valid native coherence domain",
+      "current_admitted_semantics": "identity packet-amount addition",
+      "forbidden_adjustments": [
+        "clipping",
+        "saturation",
+        "projection",
+        "budget correction",
+        "conservation adjustment"
+      ],
+      "semantic_change_effect": "reopen I04 response authority"
+    },
+    "window_before_zero": {
+      "required": [
+        "empty initial relevant queues",
+        "exact intended feedback-evaluation identity",
+        "one valid producer invocation identity",
+        "exact intended step-event identities or two explicit empty steps",
+        "no unrelated event or B change",
+        "empty post-window relevant queues",
+        "no contamination event"
+      ],
+      "failure_effect": "operational null, never scientific zero"
+    },
+    "scope_order_and_causal_rules": {
+      "quantity_matched_equivalence_effect": "scope reading only; no primary margin, top signature, R03 failure, or automatic lowering",
+      "not_top_effect": "not automatic operational-hypothesis failure",
+      "causal_authority": "derived masks, arrivals, calls, lineage, guards, branch configuration, runtime receipt, and forbidden-call assertions"
+    }
+  },
+  "execution_boundary": {
+    "PyGRC_model_instantiations": 0,
+    "matched_null_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "graph_mutations_allowed": false,
+    "I05_authorized": false,
+    "candidate_execution_authorized": false
+  }
+}

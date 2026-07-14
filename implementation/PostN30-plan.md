@@ -1766,17 +1766,16 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.29:
+Current dependency order after revision 0.36:
 
-1. Advance P2-I2 only through its accepted brief, evidence-expandable
-   activity checklist, cumulative decision record, and subordinate operational
-   hypothesis projections. Every activity, including capability and source-
-   admission audits, is a named checklist iteration with retained evidence.
-2. With the P2-I2 source-current capability audit now corrected by I01R1,
-   custom candidate-shaped probe behavior quarantined, and CAP-04 classified
-   inadequate, complete the I02 source-admission/restoration-provider
-   disposition and I03 realization-bound operational-hypothesis freeze in
-   order before candidate-blind calibration.
+1. Advance P2-I2 only through its accepted brief, evidence-expandable activity
+   checklist, cumulative decision record, and subordinate operational
+   hypothesis projections. I04R2 is the sole accepted progression authority;
+   original I04/I04R1 are immutable history.
+2. After CAL-PRE passage under DEC-026, construct a separate I05 freeze bound
+   to the accepted I04R2 commit and exact identities. Permit at most one
+   arithmetic-null invocation, reconstruct it byte-identically, and keep I06
+   and candidate execution closed until CAL-GATE.
 3. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1868,6 +1867,7 @@ directive.
 | 2026-07-14 | Revision 0.27: accepted the P2-I2 semantic brief and opened only checklist-governed artifact construction. Added one evidence-expandable P2-I2 activity checklist, one cumulative decision record, and subordinate operational-hypothesis projections; every later action, including capability and source-admission audits, must be a named retained iteration. No P2-I2 source admission, calibration, registration, execution, or result is assigned. |
 | 2026-07-14 | Revision 0.28: completed `P2-I2-I01` under a frozen read-only capability-audit scope. Retained an eleven-question matrix, a bounded native node-coherence/packet/feedback/restoration shortlist, explicit inadequate control and pool-dynamics surfaces, exact command/source provenance, focused source-current conformance, and a clean graph checkout. Passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization selection, calibration, execution, and lane evidence remain unopened. |
 | 2026-07-14 | Revision 0.29: completed checklist-first `P2-I2-I01R1` against the owner-supplied capability-audit closeout standard. Quarantined the custom combined/single/label behavioral probe from capability and scientific evidence, revalidated surviving claims from public source contracts and pre-existing generic tests, corrected CAP-04 to inadequate, and added explicit public-support, intervention-readiness, mode-neutrality, causal-history, and restoration-ownership profiles. Re-passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization/dependence-mode selection, calibration, candidate evidence, execution, and lane results remain unopened. |
+| 2026-07-14 | Revision 0.36: synchronized stable program cover through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority; original I04/I04R1 remain immutable history. Its complete-arm strongest-marginal estimator, exact arithmetic-only I05 path, retained-output byte reconstruction, fixed window, and causal receipt guards passed 16/16 focused checks and 7/7 pure tests. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation; no null, I06, candidate/control, or result is assigned. |
 
 ## 18. Program completion criteria
 

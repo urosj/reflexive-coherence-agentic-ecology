@@ -1,0 +1,273 @@
+{
+  "artifact_id": "P2-I2-I04R1-CRITICAL-REVIEW-CORRECTION-INPUT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04R1",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "evidence_effect": "candidate_free_preregistration_correction_input_only",
+  "owner_review": {
+    "attachment_sha256": "56372336b9cb0fa7f906de9461fd21b9be41ddf4105a04835b2eb019d82bf7ca",
+    "disposition": "do_not_pass_P2-I2-CAL-PRE-GATE_yet",
+    "primary_blocker": "quantity-matched repeated-single-source was an equivalence-permitted scope diagnostic but I04 promoted it to a required-divergence primary comparator",
+    "load_bearing_questions": [
+      "why could quantity-matched one-source repetition require divergence under source-label-invariant pool theory",
+      "what does a no-runtime matched null actually calibrate",
+      "is the response window fixed independently of arrival",
+      "can anything other than the registered response change B"
+    ]
+  },
+  "retained_I04_history": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-choice-resolution-input.json",
+      "sha256": "931bd8428a6e6fcda5ef97be04049f12aeb0dcbaddd331a5821562f81efdc5f4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_analysis_policy.json",
+      "sha256": "9ab75a6f1bc7beef14165978789353b69d1ed38503f7a131fe60a6452114ecd5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_calibration_policy.json",
+      "sha256": "e885837ced3b8818fe363381ec7b4d1968fcc6b0ec73946058663a787bd9424c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_analysis.py",
+      "sha256": "bf2674af59dbfa05074aff28b99125e9bb1c333ecd199ee3e5d9c9ebdf766428"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+      "sha256": "05a62b434fcd54a208124feff4d8b9690fc771cd949063367a83b8db65f99a46"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration.json",
+      "sha256": "a12fc6899c45cc2568b82f6b69bc86f0df97963d2a8d636c8e65a68770ba3221"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04_validate.py",
+      "sha256": "c6a76225d539fb3d883002f4a2052e2438dee05275cb4705998d5423b52fc885"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration-validation.json",
+      "sha256": "6e46e640a68c71136deebe67eeb6970e13f73151c2fa7b91b1ce9ebd95e62444"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_analysis.py",
+      "sha256": "76ef526e133d9ae3a035ecca090d329eece9cd509c6d133b2134053596c63a04"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I04-calibration-preregistration.md",
+      "sha256": "b1039cdae0b9c6dc764d03d5d3ef4ccbb9e75b1d408db0a20fb1465d855c32d4"
+    }
+  ],
+  "choice_authorities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f",
+      "role": "quantity-matched scope diagnostic, carrier-changing controls, response semantics, and claim boundary"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json",
+      "sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+      "role": "pre-runtime native P-to-response causal contract"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json",
+      "sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d",
+      "role": "pre-runtime H_P/M_H-to-response causal contract"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json",
+      "sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8",
+      "role": "pre-runtime P-plus-H_P/M_H-to-response causal contract"
+    }
+  ],
+  "public_source_semantics": [
+    {
+      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_runtime.py",
+      "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "used_callables": [
+        "LGRC9V3.emit_feedback_eligibility_surface_row",
+        "LGRC9V3.produce_events",
+        "LGRC9V3.schedule_packet_departure",
+        "LGRC9V3.step"
+      ],
+      "static_findings": [
+        "feedback-surface emission records live-state evidence and does not mutate coherence or enqueue work",
+        "produce_events schedules eligible work and does not process packet coherence changes",
+        "the feedback producer schedules exactly one departure event when eligible",
+        "step processes exactly one earliest deterministic queued event or returns an empty-queue result",
+        "arrival local update can schedule outbound routes, so B must have no causal flux route in the scientific window"
+      ]
+    },
+    {
+      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "used_callables": [
+        "process_lgrc9v3_packet_departure",
+        "process_lgrc9v3_packet_arrival",
+        "process_lgrc9v3_next_packet_event"
+      ],
+      "static_findings": [
+        "departure debits the packet source and queues its arrival",
+        "arrival adds exactly packet.amount to the target coherence",
+        "with an initially empty queue and no other producers, two step calls process the response departure then arrival"
+      ]
+    }
+  ],
+  "frozen_corrections": {
+    "primary_comparator": {
+      "id": "strongest_symmetric_leave_one_common_carrier_admission",
+      "candidate": "both physical contributions q1 and q2 enter the common carrier",
+      "branches": [
+        "q1 enters the common carrier while q2 is source-debited and diverted to a matched inert sink",
+        "q2 enters the common carrier while q1 is source-debited and diverted to a matched inert sink"
+      ],
+      "paired_comparator_response": "maximum oriented B response of the two leave-one-admitted branches within the same mode, seed, and physical order stratum",
+      "reason": "the fixed maximum tests the candidate against the strongest symmetric marginal carrier while both source activities remain matched; it changes P, H_P, or both and is not chosen post-outcome",
+      "raw_branch_retention": "both leave-one-admitted responses and the derived maximum remain visible"
+    },
+    "quantity_matched_scope_diagnostic": {
+      "required_repeating_sources": [
+        "S1",
+        "S2"
+      ],
+      "physical_order_strata": [
+        "q1_then_q2",
+        "q2_then_q1"
+      ],
+      "preserve": [
+        "q1 and q2 amount, registered type, target-carrier operation, and physical order",
+        "complete mode-relevant P and/or H_P/M_H carrier state/history",
+        "total source-side cost, depletion, support, timing, opportunity, response policy, and B baseline"
+      ],
+      "registration_duty": "prove each source can emit both operations with matched route class, cost, reserve, capacity, support, and eligibility; otherwise the diagnostic cannot register",
+      "valid_relations": [
+        "equivalent_within_frozen_resolution",
+        "divergent_with_scope_qualification"
+      ],
+      "R03_rule": "numerical equivalence alone cannot fail R03; only evidence that the actual candidate was not jointly constituted or bypassed the common carrier can establish full single-source explanation"
+    },
+    "order_interpretation": {
+      "top_aligned_signature": "all three seeds align in both physical order strata",
+      "order_conditioned_or_mixed": "at least one physical order has a resolved primary relation and the registered OP-08 order control passes while the other order is different, resolution-limited, or counter-directional",
+      "fail_closed_separation": "not_top_aligned is not identical to mode_hypothesis_failed; carrier-chain and control failures decide causal failure"
+    },
+    "null_scope": {
+      "I05_delta_name": "analysis_arithmetic_delta",
+      "calibrates": "deterministic rational parsing, float conversion, normalized-margin arithmetic, serialization, and byte reconstruction in the pure analysis pipeline",
+      "does_not_calibrate": [
+        "PyGRC floating-point execution",
+        "queue ordering or packet transport",
+        "B-coherence measurement noise",
+        "save/load/reset continuation",
+        "mode-specific arithmetic depth",
+        "runtime or continuation equality tolerance"
+      ]
+    },
+    "I06_numeric_admissibility": {
+      "raw_floor": 1e-12,
+      "binary_safety_factor": 1024,
+      "response_packet_amount_rule": "r must be at least 1024 times the raw floor and at least 1024 times max(ulp(B_before), ulp(B_before+r)) for every registered branch",
+      "roundtrip_rule": "B_before, r, and B_before+r must be finite, canonical-JSON round-trippable, and the recomputed B gain must remain positive",
+      "runtime_tolerance_rule": "every runtime/restoration/continuation tolerance is separately registered in I06, cannot be inferred from analysis_arithmetic_delta, and must be smaller than r/1024",
+      "failure_effect": "the affected configuration cannot register; changing the analysis floor or response definition reopens I04/I05"
+    },
+    "fixed_response_window": {
+      "protocol_id": "p2-i2-native-response-window-v2",
+      "preconditions": [
+        "contributions, interventions, H_P/M_H materialization, and neutral contact are complete",
+        "packet queue and boundary-birth queue are empty",
+        "B is distinct from B_ref and every front-mask carrier",
+        "B has no causal flux route, balancing operation, background update, or topology integration enabled",
+        "B baseline and full response configuration are matched within each pairing"
+      ],
+      "operation_slots": [
+        "capture B_before and queue identities",
+        "call emit_feedback_eligibility_surface_row exactly once",
+        "call produce_events with feedback-eligibility policy exactly once",
+        "call step exactly once",
+        "call step exactly once",
+        "capture B_after, queue identities, and event lineage"
+      ],
+      "scheduled_expected_steps": [
+        "packet_departure",
+        "packet_arrival"
+      ],
+      "unscheduled_or_native_block_expected_steps": [
+        "event_queue_empty",
+        "event_queue_empty"
+      ],
+      "operational_exception_rule": "an exception or incomplete slot sequence is operationally invalid and has null response; it cannot be converted to scientific zero",
+      "postconditions": [
+        "packet queue and boundary-birth queue are empty",
+        "scheduled branch has exactly one A-to-B packet and its one B arrival",
+        "unscheduled/native-block branch has no response packet or B change",
+        "no event other than the registered response arrival targets or changes B"
+      ]
+    },
+    "response_semantics": {
+      "raw_response": "B_after - B_before",
+      "admissible_values": "0 or the one fixed registered response-packet amount within a configuration",
+      "interpretation": "native response scheduling-and-arrival occurrence expressed as a receiving-substrate gain, not a graded magnitude claim",
+      "purity_failure": "if any other operation can change B, the configuration cannot register under this response; changing to packet-attributable or background-subtracted response requires reopening I04"
+    },
+    "mode_isolation": {
+      "shared_only": [
+        "response unit",
+        "fixed window protocol",
+        "orientation",
+        "response extraction",
+        "pure analysis implementation",
+        "analysis-arithmetic null identity"
+      ],
+      "independent_per_mode": [
+        "primary raw branches and six derived primary margins",
+        "scope diagnostics and controls",
+        "metric relation",
+        "support disposition",
+        "R01-R05 disposition",
+        "completeness and blocker status"
+      ],
+      "cross_mode_compensation_allowed": false
+    },
+    "causal_chain_derivation": {
+      "authored_summary_booleans_authoritative": false,
+      "required_evidence": [
+        "actual response read masks and registered common/private carrier IDs",
+        "two distinct source contribution-arrival records",
+        "native producer call and production record",
+        "scheduled packet/departure/arrival linkage",
+        "adapter call provenance and forbidden API trace",
+        "no-common-read mask derivation",
+        "branch configuration identity and runtime-binding receipt"
+      ],
+      "machine_rule": "derive candidate chain validity and private/controller exclusion from record linkage and set relations; output inequality or an authored used_common_pool/controller_bypass field is never sufficient"
+    }
+  },
+  "quarantine": {
+    "allowed_choice_sources": [
+      "accepted theory and brief",
+      "pre-runtime I03 causal contracts",
+      "admitted public PyGRC source semantics"
+    ],
+    "forbidden_choice_sources": [
+      "I03 runtime-conformance observations and response values",
+      "I03 branch outcomes, assertion results, implementation comparators, and digests",
+      "candidate or matched-null outcomes"
+    ],
+    "rationale_reconstruction": {
+      "B_response": "pre-runtime contracts freeze native later A-to-B transition; public source shows arrival changes B",
+      "fixed_window": "public source shows producer scheduling plus one departure and one arrival event",
+      "primary_comparator": "accepted brief requires carrier-changing contributor/freeze controls and permits quantity-matched equivalence",
+      "physical_orders": "accepted history/hybrid causal contracts require order-sensitive carrier tests",
+      "control_derivation": "accepted causal-factorization and mailbox/controller exclusions require evidence-linked paths"
+    }
+  },
+  "execution_boundary": {
+    "PyGRC_model_instantiations": 0,
+    "matched_null_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "graph_mutations_allowed": false,
+    "I05_authorized": false,
+    "candidate_execution_authorized": false
+  }
+}

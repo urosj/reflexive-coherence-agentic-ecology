@@ -52,12 +52,17 @@ graph surfaces, and proposed graph discriminators.
   I03C/I03CR1 were subsequently owner-accepted for progression. The compact
   I03F family closeout composed the accepted terminal authorities without
   repeating their reviews and passed 12/12 integration checks and 9/9
-  acceptance conditions with zero blockers. The umbrella discriminator gate
-  is ready for owner review but is not passed, and I04 remains unauthorized.
-  Under owner-accepted `P2-I2-DEC-011`, all three profiles remain in the
-  downstream program and realization selection occurs separately within each
-  mode. Their local IDs do not extend the closed Phase 1 hypothesis registry or
-  schema vocabulary.
+  acceptance conditions with zero blockers; owner acceptance subsequently
+  passed the discriminator gate. I04R1 corrected the primary comparator and
+  null/window boundary, and I04R2 confirmed all eight conditional machine
+  invariants 16/16 with 7/7 pure tests after correcting the future-I05 route.
+  The project owner accepted I04R2 as the sole progression authority and
+  passed CAL-PRE under DEC-026. Original I04/I04R1 remain immutable history;
+  I05 remains unexecuted behind a separate one-invocation freeze. Under
+  owner-accepted `P2-I2-DEC-011`, all three
+  profiles remain in the downstream program and realization selection occurs
+  separately within each mode. Their local IDs do not extend the closed Phase
+  1 hypothesis registry or schema vocabulary.
 
 ## Hypothesis interpretation
 

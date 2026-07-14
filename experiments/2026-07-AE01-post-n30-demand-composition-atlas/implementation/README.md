@@ -107,8 +107,15 @@ revalidated the [capability matrix](../contracts/p2-i2/i01-capability-matrix.jso
 source/command provenance through the retained
 [closeout review](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md).
 The custom candidate-shaped probe is quarantined, CAP-04 is inadequate, and
-the corrected package passes only the source-audit gate; I02 source admission
-is ready but has not begun.
+the corrected package passes only the source-audit gate. Subsequent admitted-
+source/restoration work and three retained mode realizations passed their
+separate gates. The current I04R2 package confirms the corrected comparator,
+future-I05 estimator path, I06 registration duties, response-window guards,
+and receipt-derived classifications 16/16 with 7/7 pure tests. The project
+owner accepted I04R2 as the sole progression authority under DEC-026 and
+passed CAL-PRE. Original I04 and I04R1 remain immutable historical artifacts.
+I05 remains unexecuted behind a separate single-invocation freeze; I06 and
+candidate execution remain closed.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

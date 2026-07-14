@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "rcae-p2-i2-i04r2-conditional-machine-policy-v1",
+  "iteration_id": "P2-I2-I04R2",
+  "lane_id": "AE01-L02",
+  "evidence_effect": "candidate_free_machine_preregistration_only",
+  "parent_analysis": {
+    "policy_id": "rcae-p2-i2-i04r1-three-mode-analysis-policy-v2",
+    "path": "configs/p2_i2_i04r1_analysis_policy.json",
+    "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+  },
+  "required_modes": [
+    "state_carried",
+    "history_carried",
+    "hybrid"
+  ],
+  "response_envelope": {
+    "schema_id": "p2-i2-i04r2-response-envelope-v1",
+    "base_record_field": "i04r1_response_record",
+    "window_receipt_field": "window_validity_receipt",
+    "arrival_receipt_field": "arrival_gain_receipt",
+    "base_record_validator": "p2_i2_i04r1_analysis.validate_response_record"
+  },
+  "complete_two_arm_evaluability": {
+    "candidate_branch_id": "combined-orders",
+    "leave_branch_ids": [
+      "q1_admitted_q2_diverted",
+      "q2_admitted_q1_diverted"
+    ],
+    "required_scientific_records": 3,
+    "all_or_none_rule": "if candidate, leave-q1, or leave-q2 is operationally invalid, selected comparator and primary margin are null and the exact mode/seed/physical-order tuple is nonevaluable",
+    "max_scope": "within one identical mode, seed, physical order, pairing identity, opportunity, fixed-window protocol, and B baseline only",
+    "cross_seed_order_or_mode_max_forbidden": true,
+    "tie_rule": "q1-only wins exact ties",
+    "live_estimator": "p2_i2_i04r2_analysis.primary_margin"
+  },
+  "I05_exact_estimator_path": {
+    "route": [
+      "raw synthetic candidate response envelope",
+      "raw synthetic leave-q1 response envelope",
+      "raw synthetic leave-q2 response envelope",
+      "p2_i2_i04r2_analysis.primary_margin",
+      "strongest symmetric leave-one selection",
+      "pairing and denominator floor",
+      "normalized margin",
+      "serialization",
+      "byte reconstruction"
+    ],
+    "precollapsed_comparator_input_forbidden": true,
+    "direct_normalized_difference_call_in_calibration_entrypoint_forbidden": true,
+    "calibrated_surface": "complete pure three-arm primary-estimator and serialization path only",
+    "runtime_tolerance_effect": "none"
+  },
+  "I06_diversion_admissibility": {
+    "must_match": [
+      "source debit and activity",
+      "physical contribution amount and type",
+      "timing slot",
+      "queue opportunity",
+      "support consequence",
+      "capacity consequence",
+      "route cost where relevant",
+      "responder opportunity",
+      "B baseline",
+      "response policy"
+    ],
+    "inert_sink_must_not_influence": [
+      "P",
+      "H_P",
+      "M_H",
+      "B",
+      "B_ref",
+      "feedback masks",
+      "producer eligibility",
+      "any continuation-relevant state"
+    ],
+    "required_registration_receipts": [
+      "branch configuration SHA-256",
+      "source debit/activity comparison SHA-256",
+      "timing/queue comparison SHA-256",
+      "support/capacity/route comparison SHA-256",
+      "inert-sink no-influence mask/configuration SHA-256"
+    ],
+    "failure_effect": "affected mode cannot register; weaker or surviving-arm comparator substitution is forbidden"
+  },
+  "I06_arrival_gain_admissibility": {
+    "current_arrival_transform_id": "identity_packet_amount_addition",
+    "current_arrival_source": {
+      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "source_semantic": "target coherence is assigned target_coherence + packet.amount without clipping, saturation, projection, or arrival-time conservation adjustment"
+    },
+    "node_state_source": {
+      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/grc_9_v3_state.py",
+      "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "source_semantic": "coherence is a float field with no dataclass clipping or saturation transform"
+    },
+    "finite_contract_source": {
+      "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_contract.py",
+      "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+      "source_semantic": "packet runtime validates finite numeric coherence and positive finite packet amount"
+    },
+    "registered_domain": "I06 supplies a finite closed interval inside native finite-float coherence semantics; B_before and B_after must both lie inside it",
+    "measured_gain_rule": "abs((B_after - B_before) - expected_native_arrival_gain) <= separately registered runtime_tolerance",
+    "identity_transform_rule": "expected_native_arrival_gain equals response_packet_amount",
+    "runtime_tolerance_rule": "nonnegative, less than expected_native_arrival_gain/1024, and never inferred from analysis_arithmetic_delta",
+    "forbidden_adjustment_event_kinds": [
+      "clipping",
+      "saturation",
+      "projection",
+      "budget_correction",
+      "conservation_adjustment"
+    ],
+    "semantic_change_effect": "reopen I04 response authority and do not reuse this calibration identity"
+  },
+  "window_before_scientific_zero": {
+    "protocol_id": "p2-i2-native-response-window-v2",
+    "required_receipt_fields": [
+      "feedback_evaluation_id",
+      "feedback_policy_id",
+      "producer_invocation_id",
+      "producer_invocation_receipt_sha256",
+      "pre_queue_identity_sha256",
+      "post_queue_identity_sha256",
+      "step_processed_event_ids",
+      "window_contamination_event_ids"
+    ],
+    "observed_step_event_rule": "exactly [departure_event_id, arrival_event_id]",
+    "scientific_zero_step_event_rule": "exactly [null, null] paired with two event_queue_empty step kinds",
+    "contamination_rule": "window_contamination_event_ids must be empty",
+    "queue_rule": "base record pre/post packet and boundary-birth queue lengths all zero and queue identity receipts retained",
+    "failure_effect": "operational null; never scientific zero or negative scientific result"
+  },
+  "non_gating_scope_diagnostic": {
+    "diagnostic_id": "symmetric_quantity_matched_single_source_repetition",
+    "equivalence_effect": "scope reading only; R03_failure false",
+    "forbidden_effects": [
+      "primary margin",
+      "mandatory divergence",
+      "top-signature requirement",
+      "R03 failure",
+      "automatic rung lowering"
+    ]
+  },
+  "order_conditioned_classification": {
+    "top_signature": "both order panels robust_aligned",
+    "not_top_effect": "top signature unavailable only; not automatic mode or operational-hypothesis failure",
+    "order_conditioned_inputs": [
+      "raw physical-order responses",
+      "OP-08 disposition",
+      "history/order intervention evidence",
+      "mode-specific controls",
+      "causal-chain validity"
+    ]
+  },
+  "causal_receipt_authority": {
+    "inherited_schema_id": "p2-i2-causal-chain-evidence-v1",
+    "authored_summary_booleans_authoritative": false,
+    "required_sources": [
+      "actual source-arrival records",
+      "carrier and mask identities",
+      "adapter and producer call traces",
+      "response packet lineage",
+      "no-common-read guards",
+      "branch configuration",
+      "runtime-binding receipt",
+      "forbidden-call assertions"
+    ],
+    "output_difference_sufficient": false
+  },
+  "execution_boundary": {
+    "matched_null_executed": false,
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_invocations": 0,
+    "I05_authorized": false,
+    "candidate_execution_authorized": false
+  }
+}

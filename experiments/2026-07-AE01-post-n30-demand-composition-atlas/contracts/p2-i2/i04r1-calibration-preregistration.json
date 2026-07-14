@@ -1,0 +1,261 @@
+{
+  "artifact_id": "P2-I2-I04R1-CALIBRATION-PREREGISTRATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04R1",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "corrected_candidate_free_preregistration_pending_owner_review",
+  "evidence_effect": "corrected_measurement_and_calibration_authority_only_no_scientific_result",
+  "correction_input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-critical-review-correction-input.json",
+    "sha256": "8060d0476c02869ca5954be01b4e80ee9ca4e27f6438bbf22ea5d5a14be02c31"
+  },
+  "historical_I04_disposition": {
+    "original_preregistration_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration.json",
+    "original_preregistration_sha256": "a12fc6899c45cc2568b82f6b69bc86f0df97963d2a8d636c8e65a68770ba3221",
+    "original_validation_sha256": "6e46e640a68c71136deebe67eeb6970e13f73151c2fa7b91b1ce9ebd95e62444",
+    "status": "retained_historical_but_superseded_for_progression",
+    "CAL_PRE_effect": "withheld_by_owner_review"
+  },
+  "critical_review_answers": {
+    "quantity_matched_one_source": "it cannot require divergence when the complete source-label-free carrier is preserved; repeated-S1 and repeated-S2 are mandatory scope diagnostics, and numerical equivalence alone has no R03 effect",
+    "I05_delta_scope": "analysis_arithmetic_delta calibrates exact-rational parsing, float conversion, normalized-margin arithmetic, serialization, and reconstruction only; it supplies no runtime or measurement tolerance",
+    "response_window": "the endpoint is six fixed slots with exactly one surface emission, one producer evaluation, and two step calls regardless of outcome",
+    "B_purity": "registration requires empty queues, a matched B baseline, no B causal route/background/topology integration, and one response arrival as the only permitted B-targeting event; otherwise the response cannot register"
+  },
+  "decision": {
+    "raw_response": "fixed_window_native_B_target_coherence_gain",
+    "orientation": "identity_higher_is_aligned",
+    "unit": "native_coherence_amount",
+    "value_semantics": "binary-like zero or one fixed registered response-packet amount; scheduling-and-arrival occurrence rather than graded magnitude",
+    "shared_extraction_across_modes": true,
+    "primary_candidate": "q1 and q2 both admitted to the registered common carrier within each mode, seed, and physical order",
+    "primary_comparator": "maximum oriented response of q1-admitted/q2-diverted and q2-admitted/q1-diverted symmetric leave-one branches",
+    "comparator_reason": "both source activities and physical contribution properties remain matched while each branch changes the mode-relevant common carrier; the maximum is a fixed strongest-marginal rule and is not chosen from observed effect size",
+    "scope_diagnostic": "repeated-S1 and repeated-S2 quantity-matched complete-carrier conditions in q1-then-q2 and q2-then-q1 physical orders",
+    "scope_diagnostic_equivalence": "allowed and non-failing when the complete causal carrier matches",
+    "nonlinearity_or_synergy_required": false
+  },
+  "response_window_and_purity": {
+    "protocol_id": "p2-i2-native-response-window-v2",
+    "operation_slots": [
+      "capture B_before and empty packet/boundary-birth queue identities",
+      "emit one feedback-eligibility surface row",
+      "run the feedback-eligibility producer once",
+      "step once",
+      "step once",
+      "capture B_after, queue identities, and event lineage"
+    ],
+    "scheduled_steps": [
+      "packet_departure",
+      "packet_arrival"
+    ],
+    "unscheduled_or_native_block_steps": [
+      "event_queue_empty",
+      "event_queue_empty"
+    ],
+    "scientific_zero": "only a complete fixed window with no packet, no B-targeting event, and no B change",
+    "operational_null": "any exception, incomplete slot sequence, delayed arrival, residual queue, or non-response B change",
+    "B_only_permitted_change": "the one registered response-packet arrival",
+    "purity_registration_duties": [
+      "B baseline and response configuration exactly paired",
+      "packet and boundary-birth queues empty before and after",
+      "B distinct from B_ref and every response front-mask carrier",
+      "no B causal route, balancing operation, background update, topology integration, or unrelated B-targeting event",
+      "contributions, interventions, H_P/M_H materialization, and neutral contact complete before B_before"
+    ]
+  },
+  "analysis_identity": {
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+    "policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+    "module_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_analysis.py",
+    "module_sha256": "1b4b8ccd3bea10e79ad17fdd9646d92c747ce5c3da20da96d72834ad300dbb4c",
+    "test_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r1_analysis.py",
+    "test_sha256": "a96a12654f90a1837fd3f0958d4d521870bd8f30ab2f5966c1735c7fd0429b0c",
+    "test_command": ".venv/bin/python -m unittest experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r1_analysis.py",
+    "candidate_free_test_result": "15_tests_passed",
+    "responsibility": "validate fixed-window response and B purity; select symmetric strongest leave-one; retain symmetric quantity scope; classify order/mode panels; validate I06 numeric admission; derive causal-chain status from provenance"
+  },
+  "calibration_identity": {
+    "shared_across_modes": true,
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_calibration_policy.json",
+    "policy_sha256": "5eb921eeb49c0fb336b5176a98bfd615482b991293afbd579263a5275a8717ad",
+    "entrypoint_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_calibration.py",
+    "entrypoint_sha256": "8228dc8a483a9c5b01cbb1c0f499797b35b8eb3bf17cf6781c112b289d8826bd",
+    "seeds": [
+      19,
+      43,
+      71,
+      109,
+      163
+    ],
+    "null_population": "ten equal exact-rational response pairs spanning five seeds and two physical-order strata",
+    "estimator": "max(analysis_arithmetic_floor, maximum absolute matched-null normalized margin)",
+    "analysis_arithmetic_floor": 1e-12,
+    "analysis_arithmetic_delta_status": "pending_I05_execution",
+    "runtime_tolerance_authority": "none",
+    "mechanical_I05_gate": "future entry point requires an I05 freeze recording owner acceptance of this I04R1 package, exactly one null invocation, candidate prohibition, and exact corrected identities"
+  },
+  "I06_numeric_admissibility": {
+    "response_amount_rule": "r >= 1024*1e-12 and r >= 1024*max(ulp(B_before), ulp(B_before+r)) for every branch",
+    "roundtrip_rule": "B_before, r, and B_before+r finite, canonical-JSON round-trippable, and recomputed gain positive",
+    "runtime_tolerance_rule": "every separately registered runtime/restoration/continuation tolerance is less than r/1024 and is never inferred from analysis_arithmetic_delta",
+    "failure_effect": "configuration cannot register; changing the analysis floor or response reopens I04/I05"
+  },
+  "mode_registry": [
+    {
+      "mode": "state_carried",
+      "retained": true,
+      "causal_carrier": "native P",
+      "primary_pairing": "combined P versus strongest symmetric leave-one P in both physical orders",
+      "order_interpretation": "equal-P order invariance remains a mandatory control; top signature requires both order panels"
+    },
+    {
+      "mode": "history_carried",
+      "retained": true,
+      "causal_carrier": "authoritative H_P through native M_H with P excluded from V",
+      "primary_pairing": "combined H_P/M_H versus strongest symmetric leave-one H_P/M_H in both physical orders",
+      "order_interpretation": "a valid OP-08-conditioned unequal panel may be order-conditioned or mixed and is not automatic hypothesis failure"
+    },
+    {
+      "mode": "hybrid",
+      "retained": true,
+      "causal_carrier": "native P plus authoritative H_P through native M_H",
+      "primary_pairing": "combined P+H_P/M_H versus strongest symmetric leave-one P+H_P/M_H in both physical orders",
+      "order_interpretation": "a valid OP-08-conditioned unequal panel may be order-conditioned or mixed and is not automatic hypothesis failure"
+    }
+  ],
+  "aggregation_and_decision_boundary": {
+    "candidate_seeds": [
+      101,
+      211,
+      307
+    ],
+    "physical_orders": [
+      "q1_then_q2",
+      "q2_then_q1"
+    ],
+    "primary_raw_branches_per_mode_seed_order": 3,
+    "derived_primary_margins_per_mode": 6,
+    "top_aligned_signature": "both three-seed physical-order panels robust_aligned",
+    "not_top_aligned_is_causal_failure": false,
+    "scientific_no_response": "zero only after complete fixed window",
+    "operational_missingness": "null; affected mode/seed/order tuple not evaluable; no imputation or denominator removal",
+    "cross_mode_pooling_averaging_compensation_or_drop": false,
+    "terminal_classification_deferred": true
+  },
+  "causal_chain_boundary": {
+    "authored_summary_booleans_authoritative": false,
+    "candidate_status_derived_from": [
+      "two distinct source-role arrivals into the common carrier",
+      "actual response front mask equal to the registered common carrier mask",
+      "native producer-to-packet-to-departure-to-arrival lineage",
+      "absence of forbidden direct-response and contributor-addressed response calls",
+      "configuration, runtime-binding receipt, and call-trace identities"
+    ],
+    "private_exclusion_derived_from": "each actual response mask contained in exactly one private partition with no spanning or common aggregate",
+    "controller_exclusion_derived_from": "forbidden response-phase call provenance or contributor-addressed response input",
+    "output_inequality_sufficient": false
+  },
+  "signed_control_boundary": {
+    "common_rule_count": 9,
+    "state_carried_rule_count": 3,
+    "history_carried_rule_count": 3,
+    "hybrid_rule_count": 5,
+    "corrected_common_rule_changes": [
+      "symmetric leave-one common-carrier admission owns the primary relation",
+      "quantity-matched repeated-S1/S2 is a scope diagnostic rather than aligned-all primary",
+      "private/controller exclusion uses evidence-derived causal-chain status"
+    ],
+    "numeric_machine_rules": [
+      "invariant",
+      "different_unsigned",
+      "aligned_all",
+      "access_relation_retained"
+    ],
+    "non_numeric_machine_rules": [
+      "raw_visibility",
+      "primary_relation",
+      "scope_diagnostic",
+      "causal_chain_derived"
+    ],
+    "machine_dispositions": [
+      "pass",
+      "ambiguous",
+      "fail"
+    ],
+    "authority": "configs/p2_i2_i04r1_analysis_policy.json#/common_control_rules and /mode_control_rules"
+  },
+  "choice_rationale_quarantine": {
+    "authorities": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+        "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json",
+        "sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json",
+        "sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json",
+        "sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8"
+      }
+    ],
+    "public_source_semantics": [
+      {
+        "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_runtime.py",
+        "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+        "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      }
+    ],
+    "forbidden_choice_inputs": "all I03 runtime-conformance observations, response values, assertion outcomes, branch outcomes, implementation comparators, and evidence digests",
+    "rationale_reconstructs_without_conformance": true
+  },
+  "candidate_absence_and_execution_boundary": {
+    "candidate_artifacts_present_at_freeze": false,
+    "candidate_outcomes_present_at_freeze": false,
+    "matched_null_record_present_at_freeze": false,
+    "I05_calibration_execution_freeze_present_at_freeze": false,
+    "matched_null_invocations_in_I04R1": 0,
+    "candidate_or_control_invocations_in_I04R1": 0,
+    "PyGRC_model_instantiations_in_I04R1": 0,
+    "graph_repository_mutations_in_I04R1": 0,
+    "I05_authorized_before_owner_review": false,
+    "candidate_execution_authorized": false
+  },
+  "change_control": {
+    "requires_new_I04_and_I05_cycle": [
+      "raw response, orientation, fixed window, B-purity rule, or unit",
+      "primary candidate, symmetric leave-one comparator, physical-order strata, or quantity scope-diagnostic role",
+      "aggregation, missingness, margin, classifier, per-mode isolation, or causal-chain rule",
+      "analysis module or policy semantic identity",
+      "matched-null generator, analytic calibration identity, seeds, estimator, or floor"
+    ],
+    "I06_may_bind_without_reopening_I04": [
+      "exact graph topology and role IDs",
+      "scientific contribution amounts, types, timings, thresholds, and response amount inside the numeric admissibility domain",
+      "exact route/sink matching, carrier bounds, support, reserve, restoration manifests, and runtime tolerances",
+      "exact seven-cell subconfiguration identities consistent with this preregistration"
+    ]
+  },
+  "gate_boundary": {
+    "validation_target": "P2-I2-CAL-PRE-GATE",
+    "owner_review_required": true,
+    "on_owner_acceptance": "authorize checklist- and hypothesis-first I05 matched-null execution only",
+    "does_not_authorize": [
+      "I06 registration",
+      "I07 candidate-cycle freeze",
+      "I08 candidate or control execution",
+      "R01-R05 assignment",
+      "L02 support or falsification",
+      "mode selection or ranking"
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "artifact_id": "P2-I2-I04-CALIBRATION-PREREGISTRATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "candidate_free_preregistration_pending_owner_review",
+  "evidence_effect": "measurement_and_calibration_authority_only_no_scientific_result",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-choice-resolution-input.json",
+    "sha256": "931bd8428a6e6fcda5ef97be04049f12aeb0dcbaddd331a5821562f81efdc5f4"
+  },
+  "decision": {
+    "raw_response": "native_B_target_coherence_gain",
+    "orientation": "identity_higher_is_aligned",
+    "unit": "native_coherence_amount",
+    "shared_across_modes": true,
+    "response_reason": "the native receiving-substrate gain is the bounded downstream continuation consequence common to all three accepted V paths; feedback score and scheduling status remain intermediate audit fields",
+    "primary_candidate": "two-source combined common-carrier constitution in both frozen source-role orders",
+    "primary_comparator": "quantity_and_timing_matched_single_source_repetition paired separately within each order",
+    "comparator_reason": "it preserves total contribution and the inherited one-source carrier relation while removing multi-source joint constitution, making it the closest insufficient-repetition explanation rather than the contrast expected to maximize effect size",
+    "order_rule": "both orders and all per-seed margins are retained; no canonical-order selection or scalar collapse",
+    "nonlinearity_or_synergy_required": false
+  },
+  "analysis_identity": {
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_analysis_policy.json",
+    "policy_sha256": "9ab75a6f1bc7beef14165978789353b69d1ed38503f7a131fe60a6452114ecd5",
+    "module_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_analysis.py",
+    "module_sha256": "bf2674af59dbfa05074aff28b99125e9bb1c333ecd199ee3e5d9c9ebdf766428",
+    "test_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_analysis.py",
+    "test_sha256": "76ef526e133d9ae3a035ecca090d329eece9cd509c6d133b2134053596c63a04",
+    "test_command": ".venv/bin/python -m unittest experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_analysis.py",
+    "candidate_free_test_result": "10_tests_passed",
+    "responsibility": "validate raw response records, preserve operational missingness, pair exact strata, compute normalized margins, classify relation vocabulary, and evaluate numeric machine rules"
+  },
+  "calibration_identity": {
+    "shared_across_modes": true,
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_calibration_policy.json",
+    "policy_sha256": "e885837ced3b8818fe363381ec7b4d1968fcc6b0ec73946058663a787bd9424c",
+    "entrypoint_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+    "entrypoint_sha256": "05a62b434fcd54a208124feff4d8b9690fc771cd949063367a83b8db65f99a46",
+    "seeds": [
+      19,
+      43,
+      71,
+      109,
+      163
+    ],
+    "null_population": "ten equal exact-rational response pairs spanning five seeds and two order strata",
+    "estimator": "max(measurement_resolution, maximum absolute matched-null normalized margin)",
+    "measurement_resolution": 1e-12,
+    "delta_status": "pending_I05_execution",
+    "candidate_runtime_exclusion": "entrypoint accepts only the analysis policy, calibration policy, I04 preregistration, a later owner-authorized I05 execution freeze, and output path; it imports no PyGRC and receives no candidate artifact, outcome, seed, runtime, graph, or I03 fixture input",
+    "mechanical_I05_gate": "the entrypoint refuses execution without a future I05 freeze that records owner CAL-PRE acceptance, authorizes exactly one null invocation, keeps candidate execution false, and binds the supplied I04 identities"
+  },
+  "mode_registry": [
+    {
+      "mode": "state_carried",
+      "retained": true,
+      "causal_carrier": "native P",
+      "response": "native_B_target_coherence_gain",
+      "primary_pairing": "two-source versus matched repeated-single-source in both orders",
+      "mode_specific_rules": [
+        "equal-P order/shuffle invariance",
+        "post-write P-debit divergence",
+        "audit-history-only invariance"
+      ]
+    },
+    {
+      "mode": "history_carried",
+      "retained": true,
+      "causal_carrier": "authoritative H_P through native M_H; P excluded from V",
+      "response": "native_B_target_coherence_gain",
+      "primary_pairing": "two-source versus matched repeated-single-source in both orders",
+      "mode_specific_rules": [
+        "active-history order divergence",
+        "P-only debit invariance with H_P/M_H fixed",
+        "H_P reference-clamp divergence with P fixed"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "retained": true,
+      "causal_carrier": "native P plus authoritative H_P through native M_H",
+      "response": "native_B_target_coherence_gain",
+      "primary_pairing": "two-source versus matched repeated-single-source in both orders",
+      "mode_specific_rules": [
+        "complete P-by-H_P four-cell raw factorial",
+        "P-only intervention divergence",
+        "H_P-only intervention divergence",
+        "history-order divergence with P fixed",
+        "no interaction or synergy requirement"
+      ]
+    }
+  ],
+  "aggregation_and_decision_boundary": {
+    "candidate_seeds": [
+      101,
+      211,
+      307
+    ],
+    "one_opportunity_per_registered_stratum": true,
+    "primary_margin_count_per_mode": 6,
+    "primary_signature_requires_every_margin_aligned": true,
+    "scientific_no_response": "zero retained in fixed denominator",
+    "operational_missingness": "null response; full two-order mode-seed panel not evaluable; no imputation or denominator removal",
+    "raw_records_retained": true,
+    "relation_vocabulary_source": "ae01-l02-primary-metric-v1",
+    "terminal_classification_deferred": true
+  },
+  "signed_control_boundary": {
+    "common_rule_count": 9,
+    "state_carried_rule_count": 3,
+    "history_carried_rule_count": 3,
+    "hybrid_rule_count": 5,
+    "rule_vocabulary": [
+      "invariant",
+      "different_unsigned",
+      "aligned_all",
+      "raw_visibility",
+      "causal_chain_exclusion",
+      "access_relation_retained"
+    ],
+    "machine_dispositions": [
+      "pass",
+      "ambiguous",
+      "fail"
+    ],
+    "authority": "configs/p2_i2_analysis_policy.json#/common_control_rules and /mode_control_rules"
+  },
+  "fixture_quarantine_disposition": {
+    "registry_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
+    "registry_sha256": "87232487b0937345f9f79db1b3618674ad683737672332f09ea9e3beefcee463",
+    "all_seven_registered_source_artifacts_rejected": true,
+    "null_rational_strings_absent_from_every_registered_source": true,
+    "scientific_contribution_topology_threshold_and_response_amounts_selected_in_I04": false,
+    "independent_metric_authority_exception": "measurement_resolution 1e-12 comes from the pre-I03 L02 metric sheet and is never selected from an I03 comparator",
+    "I03_source_loaded_by_analysis_or_calibration_module": false
+  },
+  "candidate_absence_and_execution_boundary": {
+    "candidate_artifacts_present_at_freeze": false,
+    "candidate_outcomes_present_at_freeze": false,
+    "matched_null_record_present_at_freeze": false,
+    "I05_calibration_execution_freeze_present_at_freeze": false,
+    "matched_null_executed_in_I04": false,
+    "delta_computed_or_frozen_in_I04": false,
+    "PyGRC_model_instantiations_in_I04": 0,
+    "graph_repository_mutations_in_I04": 0,
+    "I05_authorized_before_owner_review": false,
+    "candidate_execution_authorized": false
+  },
+  "change_control": {
+    "requires_new_I04_and_I05_cycle": [
+      "raw response, orientation, window, or unit",
+      "primary candidate, comparator, order strata, or pairing rule",
+      "aggregation, missingness, margin, classifier, or signed-control rule",
+      "analysis module or policy semantic identity",
+      "matched-null generator, calibration identity, seeds, estimator, or measurement resolution"
+    ],
+    "I06_may_bind_without_reopening_I04": [
+      "exact graph topology and role IDs",
+      "scientific contribution amounts, types, timing, thresholds, and response amount",
+      "exact route matching, carrier bounds, support, reserve, and restoration manifests",
+      "exact seven-cell subconfiguration identities consistent with this preregistration"
+    ]
+  },
+  "gate_boundary": {
+    "validation_target": "P2-I2-CAL-PRE-GATE",
+    "owner_review_required": true,
+    "on_owner_acceptance": "authorize I05 matched-null execution only",
+    "does_not_authorize": [
+      "I06 registration",
+      "I07 candidate-cycle freeze",
+      "I08 candidate or control execution",
+      "R01-R05 assignment",
+      "L02 support or falsification",
+      "mode selection or ranking"
+    ]
+  }
+}

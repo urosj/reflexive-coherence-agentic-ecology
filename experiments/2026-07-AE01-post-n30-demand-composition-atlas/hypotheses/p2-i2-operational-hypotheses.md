@@ -8,9 +8,21 @@ conformance; `P2-I2-I03CR1` passed 26/26 review checks and 17/17 acceptance
 conditions with zero blockers and eight fail-closed downstream obligations;
 I03C is owner-accepted for progression and the zero-runtime `P2-I2-I03F`
 compact umbrella family closeout passed 12/12 integration checks and 9/9
-acceptance conditions with zero blockers and awaits owner gate disposition;
-all three profiles remain distinct and retained downstream under
-`P2-I2-DEC-011`; I04 remains unauthorized
+acceptance conditions with zero blockers and is owner-accepted; the
+discriminator gate is passed and `P2-I2-I04` candidate-free measurement and
+calibration preregistration passed its original static validation, but owner
+review withheld `P2-I2-CAL-PRE-GATE` passage due a primary-comparator contract
+conflict and additional null/window duties; candidate-free `P2-I2-I04R1`
+corrected those duties and passed 19/19 focused static checks plus 15/15 pure
+tests; conditional owner review accepted the conceptual correction but opened
+candidate-free `P2-I2-I04R2`, which confirmed all eight machine invariants with
+16/16 focused checks and 7/7 pure tests after correcting the future-I05 route
+to use three raw arms through the live estimator; the project owner accepted
+I04R2 as the sole progression authority and passed CAL-PRE under DEC-026;
+original I04 and I04R1 remain immutable historical artifacts, I05 remains
+unexecuted behind a separate one-invocation freeze, and all three profiles
+remain distinct and retained downstream under
+`P2-I2-DEC-011`
 
 **Lane:** `AE01-L02`
 
@@ -107,12 +119,12 @@ are frozen below; exact scientific values remain later work.
 | `source_set` | At least two distinguishable attributable source carriers/events | I03A/I03B/I03C: symbolic native roles S1 and S2 bound; exact node IDs pending I06 | I03A/I03B/I03C concept; I06 exact |
 | `C_P` | One auditable non-private causal carrier identity | I03A: native P coherence; I03B: one RCAE-owned ordered `H_P` plus native output `M_H`, while P is excluded from V; I03C: separately causal native P plus active `H_P`, jointly read through P and `M_H` | I03A/I03B/I03C |
 | `L` | Audit-only source lineage and attribution projection | All modes: native packet/event/surface/lineage records; I03B/I03C use row identity only for active-history admission/idempotency, never as a response input | I03A/I03B/I03C |
-| `q` and `U` | Contribution properties and common-carrier transition | I03A: native arrival into P; I03B: source-label-free token append then native `M_H` materialization; I03C: the same physical contribution advances native P and the separately intervenable active history | I03A/I03B/I03C concept; I04/I06 numeric/exact |
-| `V` | Carrier-scoped read, susceptibility, or continuation path | I03A: native P/B_ref feedback; I03B: native M_H/B_ref feedback after adapter handoff; I03C: one native `[P,M_H]`/`[B_ref]` feedback path after adapter handoff | I03A/I03B/I03C concept; I04 response and I06 exact |
+| `q` and `U` | Contribution properties and common-carrier transition | I03A: native arrival into P; I03B: source-label-free token append then native `M_H` materialization; I03C: the same physical contribution advances native P and the separately intervenable active history | I03A/I03B/I03C concept; I06 numeric/exact |
+| `V` | Carrier-scoped read, susceptibility, or continuation path | I03A: native P/B_ref feedback; I03B: native M_H/B_ref feedback after adapter handoff; I03C: one native `[P,M_H]`/`[B_ref]` feedback path after adapter handoff; I04R1 freezes the shared downstream consequence as native B-target coherence gain over one fixed two-step response window | I03A/I03B/I03C causal read; corrected I04R1 response review-ready; I06 exact masks/policy |
 | `access_witness` | Non-private carrier access without contributor addressing | I03A: one-node P mask; I03B: one common H_P/M_H path; I03C: one common P+H_P identity read through `[P,M_H]`, available to any registered eligible A-role responder | I03A/I03B/I03C concept; I06 exact |
-| `primary_response` | One oriented raw later-continuation response | Pending | I04 |
-| `primary_comparator` | Closest insufficient-repetition alternative | Pending | I04 |
-| `control_relations` | Signed invariance/divergence and fail-closed effects | I03A/I03B/I03C qualitative relations bound; numerical equality/resolution pending | I03A/I03B/I03C, then I04 |
+| `primary_response` | One oriented raw later-continuation response | I04R1 freezes fixed-window native B-target coherence gain, identity-oriented with higher aligned and binary-like zero/one-packet semantics; shared extraction does not merge modes; owner review pending | I04R1 |
+| `primary_comparator` | Closest insufficient-repetition alternative | I04R1 freezes the stronger of two symmetric carrier-changing leave-one-admitted branches within each mode/seed/physical order; repeated-S1/S2 is restored to an equivalence-permitted scope diagnostic; owner review pending | I04R1 |
+| `control_relations` | Signed invariance/divergence and fail-closed effects | I03A/I03B/I03C qualitative relations plus corrected I04R1 numerical and evidence-derived causal-chain rules are frozen and review-ready; `analysis_arithmetic_delta` remains I05 | I03A/I03B/I03C, I04R1, then I05 resolution |
 | `R05_contrast` | One capacity, contributor, or access-scope variation | All three modes select the access-scope axis; exact alternate responder pending | I03A/I03B/I03C concept; I06 exact |
 
 No pending variable may be filled from candidate outcomes.
@@ -542,6 +554,230 @@ assign a scientific response or comparator, pass the discriminator gate, or
 authorize I04. Those final two effects remain with explicit owner review of
 the I03F package.
 
+The project owner subsequently accepted the I03F package and directed I04 to
+begin. This passes only `P2-I2-DISCRIMINATOR-GATE`. It assigns no mode rank,
+scientific response, comparator, calibrated resolution, control result, or L02
+outcome.
+
+#### 3.2.6 Historical I04 measurement and calibration-preregistration projection
+
+This subsection records the original candidate-free construction. The owner
+withheld CAL-PRE acceptance, and I04R1 below supersedes its comparator,
+window, null-scope, and causal-analysis identities for progression. Nothing in
+this historical subsection remains authority where it conflicts with 3.2.7.
+
+I04 is the candidate-free scientific-choice boundary. It imports all three
+accepted causal profiles unchanged and must decide, before matched-null or
+candidate execution, exactly what later consequence is measured and which
+closest insufficient-repetition alternative owns the primary margin in each
+mode.
+
+The initial choice-resolution work must compare admissible response and
+comparator options against the accepted L02 semantic center. It may share a
+response, aggregation rule, or matched-null identity across modes only after
+showing equality of causal meaning, unit/orientation, observation window,
+comparator role, missingness, and calibration population. Code convenience or
+expected effect size is not semantic equivalence.
+
+I04 must freeze:
+
+- one exact raw substrate-visible later-continuation response and numerical
+  orientation per mode;
+- one closest primary insufficient-repetition comparator per mode, with other
+  close alternatives retained as signed controls;
+- seed pairing, aggregation, normalized margin, denominator floor, missingness,
+  and raw-response retention shared by I05 and later live analysis;
+- machine equality/resolution and pass/ambiguous/fail rules for every imported
+  qualitative expectation without changing its direction;
+- one candidate-blind matched-null design, shared only where semantic
+  equivalence is demonstrated, with inputs/seeds/resources/reconstruction and
+  stopping rule for later I05 execution; and
+- complete rejection of every I03 conformance fixture value, observation,
+  comparator, branch/topology identity, assertion outcome, and digest.
+
+I04 performs neither matched-null calibration nor candidate execution. Its
+result is a preregistered question and measurement procedure, not evidence for
+an answer. I05 remains unauthorized until the complete candidate-free package
+is validated and owner-accepted.
+
+The candidate-free choice-resolution input selected the native receiving-
+substrate consequence rather than the intermediate feedback score or a
+scheduled/success flag:
+
+```text
+Y = native coherence at B after the one admitted A-to-B response window
+    - native coherence at B immediately before the native producer evaluation
+```
+
+The window contains exactly one native feedback-producer evaluation and the
+packet arrival it schedules, if any. A completed no-response window is
+scientific zero; operational failure is null and makes that mode/seed's full
+two-order panel not evaluable. Higher B gain is aligned. Packet identity,
+producer decision, A debit, B arrival, masks, and window boundaries remain
+chain evidence, not substitute response fields.
+
+This response, unit, orientation, window, comparator role, aggregation,
+missingness, and analysis-only calibration population are equal across modes,
+so I04 freezes one shared response, pure analysis identity, and candidate-blind
+null. The upstream causal carrier remains P, H_P/M_H with P excluded, or P plus
+H_P/M_H according to mode; shared measurement neither merges nor ranks them.
+
+The primary pairing is frozen separately in both source-role orders:
+
+```text
+candidate  = S1->S2 or S2->S1 two-source common-carrier constitution
+comparator = same quantity/type/timing-class sequence repeated by the first
+             source in that order
+```
+
+This comparator preserves the inherited one-source carrier relation while
+removing multi-source constitution and is therefore the closest D-039
+insufficient-repetition explanation. Outcome magnitude did not select it.
+Contributor removal, marginal sources, shuffle/order, private partitions, and
+controller substitutions remain mandatory signed or causal-chain controls.
+All three seeds and both orders remain raw; the six primary margins per mode
+cannot be averaged, selected, minimized, or maximized, and the top primary
+signature requires every margin to exceed calibrated resolution.
+
+Nine common and 3/3/5 state/history/hybrid rule sets now map the accepted
+qualitative expectations into machine `pass`, `ambiguous`, or `fail` inputs.
+State retains equal-P order invariance. History retains active-history order
+divergence and P-only intervention invariance. Hybrid retains a complete
+qualitative P-by-H_P four-cell factorial, separate P-only and H_P-only
+divergence, and history-order divergence with P fixed; no interaction,
+synergy, irreducibility, or nonlinearity condition was added.
+
+The shared future I05 null is ten equal exact-rational response pairs: five
+frozen calibration seeds by two orders. It imports no PyGRC, candidate/runtime,
+I03 fixture, or P2-I1 calibration evidence. I04 froze but did not execute the
+generator. The future entry point requires a separate I05 execution freeze
+recording owner CAL-PRE acceptance, exactly one null invocation, exact I04
+identities, and continued candidate prohibition, so `delta` remains pending.
+Static validation passed 16/16 checks and the pure analysis suite passed 10/10
+tests with zero model, null, or candidate invocations. The original package
+reached `P2-I2-I04-REVIEW-READY`, but the project owner's critical review
+withheld acceptance. I04R1 must resolve the comparator, analytic-null,
+fixed-window, B-purity, mode-isolation, evidence-derived-chain, and rationale-
+quarantine duties before the package can return for review.
+
+#### 3.2.7 I04R1 critical-review projection
+
+I04R1 is a candidate-free preregistration correction, not a calibration or
+scientific retry. It retains the original I04 identities and the owner review
+as historical inputs while reopening only the load-bearing measurement and
+analysis choices identified by that review.
+
+The quantity-matched one-source replacement must return to its accepted role as
+a source-plurality scope diagnostic. Both repeated-S1 and repeated-S2 branches
+must be retained over physical q1->q2 and q2->q1 order strata unless exact
+source-role symmetry is independently demonstrated. Equality is valid when the
+complete mode-relevant carrier is equal and cannot by itself fail R03; full
+single-source explanation requires causal evidence, not output equality.
+
+The revised primary comparator must change the common carrier while preserving
+the nearest source activity, timing, support, opportunity, and response
+conditions. Its identity cannot be selected from an observed margin. Per-order
+relations remain independent: failure of the complete top signature is not
+automatic falsification of a valid history- or hybrid-order relation.
+
+I05 may calibrate only pure analysis-arithmetic resolution. It cannot assign a
+runtime, save/load, queue, B-measurement, or mode-specific continuation
+tolerance. I04R1 must therefore freeze a separate I06 numerical-admissibility
+rule and keep every runtime/continuation tolerance explicitly registered.
+
+The response window must be a fixed sequence and count of public native
+operations whose endpoint is identical whether a response is scheduled,
+unscheduled, delayed, blocked, or operationally invalid. B gain is valid only
+when B starts matched and retained evidence proves that the registered response
+packet is its sole permitted change; otherwise the response must use attributable
+packet arrival or a matched-background subtraction.
+
+Shared response/analysis identity covers extraction semantics only. Each mode
+must retain its own primary margins, controls, metric relation, support, and
+rung inputs. Private/controller control status must be derived from masks,
+carrier/source identities, call provenance, lineage, guards, branch
+configuration, and runtime receipts, never trusted from authored booleans.
+Every corrected choice rationale must reconstruct from accepted theory and
+pre-runtime causal contracts without importing conformance observations.
+
+The corrected package now freezes the strongest symmetric leave-one common-
+carrier admission comparison. Both source activities remain matched: in one
+arm q1 enters the common carrier while q2 is debited and diverted to an inert
+sink; the second arm reverses admission. Their maximum oriented response is
+the predeclared comparator. Both raw arms remain visible. Repeated-S1 and
+repeated-S2 remain a separate four-branch-per-mode/seed diagnostic over both
+physical orders, and equal complete carriers may validly yield equal response.
+
+The response protocol is now exact and outcome-independent: capture matched
+`B_before` with empty queues, emit one feedback row, run the feedback producer
+once, call `step` twice, and capture `B_after` plus queues and lineage. One
+departure followed by one arrival is an observed response; two empty-queue
+steps with unchanged B is scientific no-response. Any exception, delayed or
+incomplete chain, residual queue, or other B change is operational null. B has
+no causal flux route, background update, balancing operation, or topology
+integration during this window.
+
+Future I05 freezes only `analysis_arithmetic_delta`. I06 must independently
+admit a response amount at least 1024 times both the `1e-12` floor and the
+largest relevant ULP, require finite canonical-JSON roundtrip, and keep every
+runtime/restoration/continuation tolerance below `r/1024`.
+
+The corrected pure analyzer accepts one mode at a time and derives candidate,
+private, and controller causal status from masks, source arrivals, call
+provenance, native packet lineage, configurations, and receipts. It never
+trusts authored pool/controller booleans. Focused validation passed 19/19
+checks and 15/15 pure tests with zero PyGRC model, null, candidate/control, or
+graph mutation. `P2-I2-I04-REVIEW-READY` is restored, but owner acceptance and
+CAL-PRE passage remained pending at the historical I04R1 boundary. I04R2 and
+DEC-026 now own progression and gate passage.
+
+#### 3.2.8 I04R2 conditional machine-invariant projection
+
+I04R2 is a candidate-free integrity closure, not another conceptual comparator
+review and not an I05 execution. The conditional owner review accepts I04R1's
+semantic correction subject to exact machine confirmation.
+
+For every mode/seed/physical-order tuple, candidate, leave-q1, and leave-q2
+must all be scientifically valid before the strongest-marginal comparator can
+be selected. One invalid arm makes the tuple nonevaluable; no surviving arm may
+stand in. Future I05 must exercise this same route from three raw synthetic
+responses through max selection, pairing, denominator floor, normalized
+margin, serialization, and reconstruction.
+
+I06 must prove every diverted contribution preserves source debit/activity,
+amount/type, timing and queue opportunity, support/capacity consequence, route
+cost where applicable, responder opportunity, B baseline, and response policy.
+The inert sink must be absent from P, H_P, M_H, B, B_ref, response masks,
+producer eligibility, and every continuation-relevant state. A mode unable to
+realize this boundary cannot register a weaker comparator.
+
+The registered response gain must equal the expected native arrival gain
+within a separately registered runtime tolerance. B_before and B_after must lie
+inside a registered native coherence domain, and retained configuration/source
+receipts must exclude clipping, saturation, projection, budget correction, or
+other arrival transformation. The current admitted source semantics are
+identity packet-amount addition; changing that semantic reopens I04.
+
+Scientific zero remains available only after evaluation ID, producer
+invocation, exact two step-event identities, empty pre/post queues, absence of
+window contamination, unchanged B, and absent response lineage all validate.
+Repeated-S1/S2 stays non-gating; non-top order panels stay independently
+classifiable; and causal status remains receipt-derived. I04R2 performs only
+static validation and pure tests and returns for explicit owner acceptance.
+
+The focused I04R2 verification passed 16/16 checks and 7/7 pure tests, with a
+byte-identical reconstruction and zero PyGRC, matched-null, candidate, or
+control invocations. It confirmed all-or-none three-arm evaluability,
+within-tuple maximum scope, diversion/noninterference duties, identity arrival
+gain inside an I06-registered finite domain, window-before-zero receipts,
+non-gating repetition, independent order classification, and receipt-derived
+causal status. It also found and corrected one substantive implementation gap:
+the I04R1 future calibration entry point had bypassed the strongest-marginal
+path. The I04R2 entry point now builds raw candidate/q1-only/q2-only envelopes
+and calls the exact primary analyzer, then enforces governed-output readback and
+byte-identical JSON reconstruction. This is machine-preregistration integrity,
+not a calibrated resolution or operational-hypothesis outcome.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the
@@ -783,11 +1019,15 @@ unavailable; lower completed rungs and observations remain classifiable.
 This diagnostic is not a tenth operational support hypothesis and is not an
 automatic pass/fail gate.
 
-One contributor supplies the combined registered quantity while support,
-encounter state, and opportunity remain matched where possible:
+Repeated-S1 and repeated-S2 each supply both registered q operations, and each
+branch is retained separately in q1-then-q2 and q2-then-q1 physical order.
+Contribution physics, source-side cost/depletion, support, encounter state,
+opportunity, B baseline, and the complete mode-relevant carrier are matched
+where source-role physics permits. I06 must prove each source can emit both q
+operations under the frozen symmetry duties before this diagnostic registers:
 
-- equivalence may support only the bounded statement that several contributors
-  can populate a common pool;
+- complete-carrier equivalence is valid under a source-label-free realization
+  and cannot alone fail R03;
 - divergence may support a bounded contribution-structure observation; and
 - neither relation establishes source complementarity, cooperation, or
   coordination without separately authorized evidence.
@@ -836,11 +1076,13 @@ I03B, and I03C are separately frozen and owner-reviewed, and when:
   boundary. I03A is native; I03B and I03C are minimally producer-assisted,
   with distinct one-component and joint-response boundaries.
 - [ ] `C_P`, `L`, `q`, `U`, `V`, sources, access witness, and contribution
-  operations map to actual runtime interfaces. I03A is runtime-conformant;
-  I03B is runtime-conformant and owner-accepted for progression; I03C is
-  runtime-conformant and awaits owner review.
+  operations map to exact scientific runtime interfaces. All three I03 modes
+  are runtime-conformant and owner-accepted, while exact topology,
+  contribution values, routes, response configuration, and cell bindings
+  remain I06 work.
 - [x] All three owner-directed dependence-mode profiles are separately bound
-  without rewriting one another; only I03C owner/umbrella review remains.
+  and owner-accepted without rewriting one another; compact I03F was accepted
+  under DEC-020.
 - [ ] Every projection maps to exact cells, controls, interventions, causally
   held-fixed variables, qualitative expected relations, allowed scientific
   ambiguity, and fail-closed effects.
@@ -851,16 +1093,26 @@ I03B, and I03C are separately frozen and owner-reviewed, and when:
   identity duty and passes bounded conformance; I03C freezes the same minimal
   missing operation inside a distinct joint P+H_P design, with runtime proof
   and later exact registration still pending.
-- [ ] No primary response, comparator, or expected relation was selected from
-  candidate outcomes.
+- [x] I04R1 corrected and selected the primary response, symmetric carrier-
+  changing comparator, non-failing scope diagnostic, and evidence-derived
+  machine relations from frozen semantic authorities before any matched-null
+  or candidate outcome; candidate outcomes remain absent.
+- [x] I04R2 confirmed the complete machine projection 16/16 with 7/7 pure
+  tests, corrected the future-I05 entry point to traverse the raw three-arm
+  primary estimator, and retained zero calibration or scientific effect.
 
-I04 may change the artifact to `preregistered` only after umbrella I03 passes.
-It must import all three I03 causal profiles unchanged, then freeze each
-profile's raw measurement, equality/resolution rule, numerical orientation,
-closest primary comparator, aggregation, missingness, machine
-pass/ambiguous/fail evaluation, candidate-blind null, and stopping rule through
-the calibration preregistration. Shared identities require explicit semantic
-justification and may not erase mode-specific expectations.
+Umbrella I03 passed under DEC-020. I04R1 imports all three causal profiles
+unchanged and freezes their corrected fixed-window measurement, analysis-only
+resolution rule, numerical orientation, symmetric strongest-leave-one primary
+comparator, non-failing quantity scope diagnostic, aggregation, missingness,
+evidence-derived control evaluation, candidate-blind arithmetic null, and
+stopping rule. Shared extraction identities preserve independently mode-
+indexed expectations and dispositions. The corrected candidate-free package
+is owner-accepted under DEC-026 as the sole I04 progression authority.
+Original I04 and I04R1 remain immutable historical artifacts rather than
+parallel active preregistrations. CAL-PRE passage opens only construction of a
+separate exact one-invocation I05 arithmetic-null freeze; no null or candidate
+operation has occurred.
 
 Neither status transition supplies evidence for any operational projection.
 

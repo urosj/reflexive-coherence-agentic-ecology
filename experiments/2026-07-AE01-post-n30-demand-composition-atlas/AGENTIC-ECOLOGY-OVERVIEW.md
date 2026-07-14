@@ -439,13 +439,21 @@ artifacts without a runtime call. A common neutral contact follows
 materialization; differing latest-row proper-time/digest fields do not enter
 native polarity/threshold evaluation. H_P is persistent independently
 intervenable state and M_H is its declared native output port. The audit found
-zero blockers. I03B is acceptance-ready but not owner-accepted; the umbrella
-discriminator gate remains open and I03C/I04 are unauthorized pending owner
-disposition.
+zero blockers. I03B was subsequently owner-accepted. I03C hybrid then passed
+258/258 bounded runtime assertions and its closeout; compact I03F passed its
+integration and acceptance checks and was owner-accepted, passing the
+discriminator gate. I04R2 now supersedes original I04 and I04R1 for
+progression while preserving both as immutable history. Its complete-arm
+comparator, exact raw three-arm I05 path, write/read byte reconstruction,
+response/window guards, and causal receipt boundaries passed 16/16 focused
+checks and 7/7 pure tests. The project owner accepted I04R2 and passed CAL-PRE.
+Only a separately frozen single I05 arithmetic-null invocation may follow;
+I06 and candidate execution remain closed.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This
-changes no I03A causal claim and opens no later gate.
+changes no I03A causal claim; later gate effects are owned by DEC-020 and
+DEC-026.
 
 Later lanes examine trace dynamics, support, boundaries, circulation, and
 parent-basin demands. Only after all lanes close may the atlas compare their

@@ -1,0 +1,420 @@
+{
+  "artifact_id": "P2-I2-I04R2-MACHINE-VERIFICATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "check_id": "I04R2V-01",
+      "evidence": {
+        "analysis_module": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+        "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+        "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+        "input": "1919cf9d99c3741363c2097a37fcfabcf0f76022e623ef9d110fa29d3a114114",
+        "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+        "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+        "test": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2"
+      },
+      "finding": "Every I04-R2 input, machine, future-calibration, code, test, and preregistration identity matches.",
+      "name": "frozen_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-02",
+      "evidence": {
+        "history_count": 10,
+        "review": {
+          "authorized_gate_effect_after_confirmation": "project_owner_may_pass_P2-I2-CAL-PRE-GATE_and_authorize_exactly_one_I05_arithmetic_null_invocation",
+          "disposition": "I04R1_conceptual_blocker_resolved_acceptance_conditional_on_machine_invariant_confirmation",
+          "path": "/home/uros/.codex/attachments/5f7e5ef9-d600-4f97-a668-3b67afa14284/pasted-text.txt",
+          "sha256": "78a49384609cdc4198a2dbce359c21d03694822fb7da96d1c2ff5f3333741d5d",
+          "still_closed": [
+            "CAL-PRE until explicit owner acceptance after confirmation",
+            "I06 registration",
+            "all PyGRC candidate/control execution",
+            "R01-R05 and L02 interpretation"
+          ]
+        }
+      },
+      "finding": "The conditional owner review and complete I04-R1 package remain exact historical inputs.",
+      "name": "conditional_review_and_parent_history",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-03",
+      "evidence": {
+        "all_or_none_rule": "if candidate, leave-q1, or leave-q2 is operationally invalid, selected comparator and primary margin are null and the exact mode/seed/physical-order tuple is nonevaluable",
+        "candidate_branch_id": "combined-orders",
+        "cross_seed_order_or_mode_max_forbidden": true,
+        "leave_branch_ids": [
+          "q1_admitted_q2_diverted",
+          "q2_admitted_q1_diverted"
+        ],
+        "live_estimator": "p2_i2_i04r2_analysis.primary_margin",
+        "max_scope": "within one identical mode, seed, physical order, pairing identity, opportunity, fixed-window protocol, and B baseline only",
+        "required_scientific_records": 3,
+        "tie_rule": "q1-only wins exact ties"
+      },
+      "finding": "Candidate and both leave-one arms are mandatory; one invalid arm nulls comparator/margin within the exact tuple.",
+      "name": "complete_two_arm_all_or_none",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-04",
+      "evidence": {
+        "generator_kind": "equal_raw_three_arm_response_envelopes_over_two_physical_order_strata",
+        "json_reconstruction_call_count": 2,
+        "primary_margin_call_count": 1,
+        "raw_builder_call_count": 3,
+        "retained_output_readback_call_count": 2,
+        "serialization_call_count": 2
+      },
+      "finding": "Future I05 builds three raw envelopes, invokes primary_margin, and byte-reconstructs retained serialization; no precollapsed/direct-margin route remains.",
+      "name": "future_I05_exact_primary_estimator_route",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-05",
+      "evidence": {
+        "failure_effect": "affected mode cannot register; weaker or surviving-arm comparator substitution is forbidden",
+        "inert_sink_must_not_influence": [
+          "P",
+          "H_P",
+          "M_H",
+          "B",
+          "B_ref",
+          "feedback masks",
+          "producer eligibility",
+          "any continuation-relevant state"
+        ],
+        "must_match": [
+          "source debit and activity",
+          "physical contribution amount and type",
+          "timing slot",
+          "queue opportunity",
+          "support consequence",
+          "capacity consequence",
+          "route cost where relevant",
+          "responder opportunity",
+          "B baseline",
+          "response policy"
+        ],
+        "required_registration_receipts": [
+          "branch configuration SHA-256",
+          "source debit/activity comparison SHA-256",
+          "timing/queue comparison SHA-256",
+          "support/capacity/route comparison SHA-256",
+          "inert-sink no-influence mask/configuration SHA-256"
+        ]
+      },
+      "finding": "I06 must match all source/activity/physics/opportunity consequences and prove inert-sink noninterference or fail the mode registration.",
+      "name": "I06_diversion_noninterference",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-06",
+      "evidence": [
+        {
+          "finding": "arrival assigns target_coherence + packet.amount; no arrival transform",
+          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+          "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+        },
+        {
+          "finding": "coherence is an untransformed float field",
+          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/grc_9_v3_state.py",
+          "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e"
+        },
+        {
+          "finding": "runtime numeric helpers require finite coherence and positive finite packet amount",
+          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_contract.py",
+          "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680"
+        }
+      ],
+      "finding": "Exact admitted source adds packet.amount to target coherence with no arrival transform; a semantic change reopens I04.",
+      "name": "native_arrival_identity_semantics",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-07",
+      "evidence": {
+        "current_arrival_source": {
+          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_packets.py",
+          "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+          "source_semantic": "target coherence is assigned target_coherence + packet.amount without clipping, saturation, projection, or arrival-time conservation adjustment"
+        },
+        "current_arrival_transform_id": "identity_packet_amount_addition",
+        "finite_contract_source": {
+          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_contract.py",
+          "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+          "source_semantic": "packet runtime validates finite numeric coherence and positive finite packet amount"
+        },
+        "forbidden_adjustment_event_kinds": [
+          "clipping",
+          "saturation",
+          "projection",
+          "budget_correction",
+          "conservation_adjustment"
+        ],
+        "identity_transform_rule": "expected_native_arrival_gain equals response_packet_amount",
+        "measured_gain_rule": "abs((B_after - B_before) - expected_native_arrival_gain) <= separately registered runtime_tolerance",
+        "node_state_source": {
+          "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/models/grc_9_v3_state.py",
+          "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+          "source_semantic": "coherence is a float field with no dataclass clipping or saturation transform"
+        },
+        "registered_domain": "I06 supplies a finite closed interval inside native finite-float coherence semantics; B_before and B_after must both lie inside it",
+        "runtime_tolerance_rule": "nonnegative, less than expected_native_arrival_gain/1024, and never inferred from analysis_arithmetic_delta",
+        "semantic_change_effect": "reopen I04 response authority and do not reuse this calibration identity"
+      },
+      "finding": "Observed response must equal expected native gain within separate tolerance, stay inside the registered domain, and carry no adjustment event.",
+      "name": "measured_gain_domain_and_adjustment_guards",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-08",
+      "evidence": {
+        "contamination_rule": "window_contamination_event_ids must be empty",
+        "failure_effect": "operational null; never scientific zero or negative scientific result",
+        "observed_step_event_rule": "exactly [departure_event_id, arrival_event_id]",
+        "protocol_id": "p2-i2-native-response-window-v2",
+        "queue_rule": "base record pre/post packet and boundary-birth queue lengths all zero and queue identity receipts retained",
+        "required_receipt_fields": [
+          "feedback_evaluation_id",
+          "feedback_policy_id",
+          "producer_invocation_id",
+          "producer_invocation_receipt_sha256",
+          "pre_queue_identity_sha256",
+          "post_queue_identity_sha256",
+          "step_processed_event_ids",
+          "window_contamination_event_ids"
+        ],
+        "scientific_zero_step_event_rule": "exactly [null, null] paired with two event_queue_empty step kinds"
+      },
+      "finding": "Evaluation, producer, queue, exact step-event, and contamination receipts are checked before observed response or scientific zero.",
+      "name": "window_validity_before_zero",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-09",
+      "evidence": {
+        "overlay": {
+          "diagnostic_id": "symmetric_quantity_matched_single_source_repetition",
+          "equivalence_effect": "scope reading only; R03_failure false",
+          "forbidden_effects": [
+            "primary margin",
+            "mandatory divergence",
+            "top-signature requirement",
+            "R03 failure",
+            "automatic rung lowering"
+          ]
+        },
+        "parent": {
+          "R03_effect": "numerical equivalence alone has none; full single-source explanation requires evidence that the actual candidate lacked two-source constitution or bypassed the common carrier",
+          "cell": "individual-contributions",
+          "diagnostic_id": "symmetric_quantity_matched_single_source_repetition",
+          "divergence_relation": "retained as a source-role/contribution-structure scope qualification and checked against carrier equality",
+          "equivalence_relation": "allowed and expected when the complete causal carrier is identical",
+          "not_primary_metric": true,
+          "physical_order_strata": [
+            "q1_then_q2",
+            "q2_then_q1"
+          ],
+          "preserve": [
+            "q1 and q2 amount, type, target-carrier operation, and physical order",
+            "total source-side cost/depletion, support, timing, opportunity, policy, and B baseline",
+            "complete mode-relevant carrier when source-role physics permits"
+          ],
+          "repeating_sources": [
+            "S1",
+            "S2"
+          ],
+          "required_branch_count_per_mode_seed": 4,
+          "source_symmetry_registration": "each source must independently emit both q operations with matched route class, cost, reserve, capacity, support, and eligibility"
+        }
+      },
+      "finding": "Repeated-S1/S2 equivalence remains scope-only with no primary, top-signature, R03, or lowering effect.",
+      "name": "quantity_matched_non_gating",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-10",
+      "evidence": {
+        "overlay": {
+          "not_top_effect": "top signature unavailable only; not automatic mode or operational-hypothesis failure",
+          "order_conditioned_inputs": [
+            "raw physical-order responses",
+            "OP-08 disposition",
+            "history/order intervention evidence",
+            "mode-specific controls",
+            "causal-chain validity"
+          ],
+          "top_signature": "both order panels robust_aligned"
+        },
+        "parent": {
+          "causal_failure_separation": "not_top_aligned never by itself means mode_hypothesis_failed; carrier-chain and mandatory-control evidence decide causal failure",
+          "delta_name": "analysis_arithmetic_delta",
+          "delta_status": "pending_I05",
+          "mixed_direction": "at least one margin exceeds delta and at least one is below negative delta",
+          "narrow_aligned": "at least one margin exceeds delta, none is below negative delta, and not all exceed delta",
+          "narrow_counter": "at least one margin is below negative delta, none exceeds delta, and not all are below negative delta",
+          "not_applicable": "only by separately reviewed control rationale",
+          "order_conditioned_or_mixed": "at least one order has a resolved non-resolution relation and OP-08 passes while the other differs, is resolution-limited, or is counter-directional",
+          "per_mode_panel": "six margins retained as two separate per-order panels",
+          "per_order_seed_panel": "three margins within one mode and physical order",
+          "resolution_limited": "every absolute margin is at most delta",
+          "resolution_unknown": "delta unavailable or a required response operationally not evaluable",
+          "robust_aligned": "every margin exceeds delta",
+          "robust_counter": "every margin is below negative delta",
+          "top_aligned_signature": "both per-order panels are robust_aligned"
+        }
+      },
+      "finding": "Not-top remains a metric disposition; raw orders, OP-08, interventions, controls, and causal validity govern history/hybrid interpretation.",
+      "name": "order_conditioned_not_failure",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-11",
+      "evidence": {
+        "authored_summary_booleans_authoritative": false,
+        "inherited_schema_id": "p2-i2-causal-chain-evidence-v1",
+        "output_difference_sufficient": false,
+        "required_sources": [
+          "actual source-arrival records",
+          "carrier and mask identities",
+          "adapter and producer call traces",
+          "response packet lineage",
+          "no-common-read guards",
+          "branch configuration",
+          "runtime-binding receipt",
+          "forbidden-call assertions"
+        ]
+      },
+      "finding": "Candidate/private/controller status remains derived from retained masks, arrivals, calls, lineage, guards, configuration, and receipts.",
+      "name": "receipt_derived_causal_status",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-12",
+      "evidence": {
+        "exact_rationals": [
+          "1/23",
+          "2/23",
+          "3/23",
+          "4/23",
+          "5/23",
+          "6/23",
+          "7/23",
+          "8/23",
+          "9/23",
+          "10/23"
+        ],
+        "source_count": 7
+      },
+      "finding": "The unchanged exact-rational arithmetic panels remain absent from all seven registered I03 conformance sources.",
+      "name": "fixture_quarantine_retained",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-13",
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "imports": {
+          "analysis": [
+            "__future__",
+            "ae01_tooling",
+            "collections",
+            "hashlib",
+            "math",
+            "p2_i2_i04r1_analysis",
+            "re",
+            "typing"
+          ],
+          "calibration": [
+            "__future__",
+            "ae01_tooling",
+            "argparse",
+            "fractions",
+            "hashlib",
+            "json",
+            "p2_i2_i04r2_analysis",
+            "pathlib",
+            "sys",
+            "typing"
+          ]
+        }
+      },
+      "finding": "I04-R2 code imports no PyGRC; accepted RCAE/graph revisions are exact and the graph checkout remains clean.",
+      "name": "code_and_graph_boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-14",
+      "evidence": {
+        "command": ".venv/bin/python -m unittest experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r2_analysis.py",
+        "status": "OK",
+        "tests_run": 7
+      },
+      "finding": "Seven focused pure tests pass without replaying the accepted I03/I04R1 reviews.",
+      "name": "focused_pure_machine_tests",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-15",
+      "evidence": {
+        "I05_execution_freeze_present": false,
+        "PyGRC_model_instantiations_in_I04R2": 0,
+        "analysis_arithmetic_delta_computed": false,
+        "calibration_record_present": false,
+        "candidate_execution_authorized": false,
+        "candidate_or_control_invocations_in_I04R2": 0,
+        "graph_repository_mutations_in_I04R2": 0,
+        "matched_null_invocations_in_I04R2": 0
+      },
+      "finding": "No null, model, candidate/control, authorization, output, or graph mutation occurred in I04-R2.",
+      "name": "zero_execution_and_I05_gate",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R2V-16",
+      "evidence": {
+        "does_not_authorize": [
+          "automatic I05 invocation",
+          "I06 registration",
+          "candidate or control execution",
+          "R01-R05 or L02 result",
+          "mode selection or ranking"
+        ],
+        "on_explicit_owner_acceptance": "pass P2-I2-CAL-PRE-GATE and open checklist/hypothesis-first I05 authorization construction for exactly one governed arithmetic-null invocation",
+        "owner_acceptance_required": true,
+        "validation_target": "I04R2_acceptance_readiness"
+      },
+      "finding": "Focused validation can establish readiness only; explicit owner acceptance is still required before CAL-PRE or I05 authorization construction.",
+      "name": "conditional_acceptance_boundary",
+      "status": "passed"
+    }
+  ],
+  "disposition": "P2-I2-I04R2-ACCEPTANCE-READY_pending_explicit_owner_acceptance",
+  "evidence_effect": "candidate_free_machine_integrity_only",
+  "iteration_id": "P2-I2-I04R2",
+  "lane_id": "AE01-L02",
+  "status": "passed",
+  "summary": {
+    "CAL_PRE_gate_passed": false,
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_invocations": 0,
+    "checks_failed": 0,
+    "checks_passed": 16,
+    "focused_pure_tests_passed": 7,
+    "graph_mutations": 0,
+    "matched_null_invocations": 0
+  },
+  "validated_at": "2026-07-14",
+  "validated_identities": {
+    "analysis_module": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+    "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "input": "1919cf9d99c3741363c2097a37fcfabcf0f76022e623ef9d110fa29d3a114114",
+    "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+    "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+    "test": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2"
+  },
+  "validator_sha256": "5417b5b9e7c488b3c0b1bc2f4d39ff292697e2358378c4e00e4787a3d13c7680"
+}
