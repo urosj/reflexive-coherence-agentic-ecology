@@ -1,0 +1,118 @@
+{
+  "artifact_id": "P2-I2-I02R2-RESET-BASELINE-REVALIDATION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I02R2",
+  "lane_id": "AE01-L02",
+  "status": "frozen_before_source_inspection",
+  "frozen_at": "2026-07-14",
+  "purpose": "Validate the owner-reported PyGRC reset-baseline persistence correction and its restoration-identity consequences before re-admitting the updated graph revision.",
+  "evidence_effect": "Generic source/import/reset/provider conformance only; no realization, dependence mode, candidate behavior, restoration claim beyond the tested contract, or scientific evidence.",
+  "rcae_entry_authority": {
+    "head_revision": "10c18fad2ba8ecac9ddacb0f0bc55813e6356c60",
+    "branch": "p2-i2-experiment",
+    "identity_rule": "Committed RCAE HEAD plus exact SHA-256 of each pre-validation worktree artifact; separate from both graph revisions.",
+    "artifacts": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json",
+        "sha256": "97e36345050924cc339ae738f220aaed2f767ead3b93f038862a4840aaf0c805"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r1-identity-authority-validation.json",
+        "sha256": "243b82f3c108733320630de6d11584bd3a317d83ce1cd72a21075867323e3e7e"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R1-admission-closeout-revalidation.md",
+        "sha256": "6bbc85dd26a9ddcb12434913561ab8227a7876439685316f288bdc35d71d7b8d"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+        "sha256": "3bca1405f0e17717d6266eeed39fa160840e10cd0fbe187cf3a3519377be78c4"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+        "sha256": "e9e4400c829cf9c2732640e70f4294e31ebb8063459dc300a311f0da90a15bff"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+        "sha256": "b242df309ce5f4ed3606883c8c80b4a44fc0f1bf2c836f98ca10b074395910a8"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+        "sha256": "ed5a0c5907c633d78e8bf79d86bab9b51e841ce49c58e714d6f9f198bc57b644"
+      },
+      {
+        "path": "implementation/PostN30-checklist.md",
+        "sha256": "1e54376a13fe1afaeefb7a488fa4b2c917cd3182f813ab07ce963d96ee30e9c6"
+      }
+    ]
+  },
+  "graph_revision_transition": {
+    "repository_id": "grc",
+    "repository_name": "graph-reflexive-coherence",
+    "previous_admitted_revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+    "proposed_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "observed_branch": "main",
+    "required_worktree_state": "clean before and after every inspection, import, or dynamic check",
+    "read_only": true,
+    "portable_identity_rule": "Repository ID plus full revision plus repository-relative path plus SHA-256; local checkout path is raw provenance only."
+  },
+  "changed_scope_discovery": {
+    "source": "git diff --name-status and exact file diffs between previous_admitted_revision and proposed_revision",
+    "included": [
+      "Every changed path between the two exact revisions",
+      "Every prior admitted source whose bytes or public contract changed",
+      "Every new source, test, contract, documentation, closeout, or public export used to support the reset correction",
+      "LGRC9V3 construction, reset, state replacement, snapshot, save, load, restoration identity, and digest callables",
+      "Any shared GRC9V3 or snapshot machinery changed by the correction"
+    ],
+    "new_path_rule": "Record the path and role under P2-I2-CHG-006 before treating it as authority.",
+    "new_callable_rule": "Record its public identity, source, signature, accepted/unsupported shape, causal relevance, and claim boundary before admission."
+  },
+  "validation_questions": [
+    "What exact serialized artifact owns the reset baseline, and is it non-recursive and complete?",
+    "Does native save/load preserve both current restoration identity and reset outcome?",
+    "Can two models with equal current state but different reset baselines still share restoration identity?",
+    "Do reset-baseline-only differences change the identity document and digest?",
+    "Do repeated save/load cycles preserve the same baseline and reset outcome?",
+    "Does set_state preserve or rebase the reset baseline, and is any rebase operation explicit?",
+    "What provider artifact schema/version now governs the result?",
+    "What happens for legacy snapshots without an explicit reset-baseline artifact?",
+    "Do malformed, partial, wrong-family, or unsupported-version baseline payloads fail explicitly without fallback?",
+    "Are imports and every affected callable tied to the proposed checkout?",
+    "Does the graph worktree remain clean and unchanged?",
+    "Does the correction leave provider and realization selection to I03/I06?"
+  ],
+  "generic_dynamic_check_boundary": {
+    "allowed": [
+      "Force imports from the proposed checkout using PYTHONDONTWRITEBYTECODE=1 and PYTHONPATH=${GRC}/src.",
+      "Construct minimal generic LGRC9V3 states with no P2-I2 source set, pool, cell, control, comparator, or response.",
+      "Mutate only generic current-state and reset-baseline markers needed to distinguish identity and reset behavior.",
+      "Run focused upstream reset/restoration tests with pytest cache disabled and temporary files outside the graph repository.",
+      "Independently recompute canonical identity digests and exact reset-state equality."
+    ],
+    "prohibited": [
+      "Dependency installation, download, editable install, ambient package substitution, or graph-repository write.",
+      "Any P2-I2 combined-versus-single, label, access, carrier, pool, cell, control, calibration, candidate, or response behavior.",
+      "Fallback after provider or compatibility error.",
+      "Use of generic conformance output as realization adequacy or scientific evidence."
+    ]
+  },
+  "required_outputs": {
+    "source_transition": "Machine-readable exact old/new changed-source and contract record",
+    "validator": "Retained generic reset-baseline/provider validator",
+    "validation_record": "Machine-readable checkout/import/reset/identity/compatibility results",
+    "report": "Narrative I02R2 revalidation and gate disposition",
+    "admission_update": "Updated exact manifest or retained failed re-admission record",
+    "governance": "DEC-009, CHG-006, checklist/evidence/source-inventory/hypothesis/master/navigation updates"
+  },
+  "failure_effects": {
+    "source_or_import_failure": "Do not admit the proposed revision; retain prior admission as historical only and keep I03 blocked.",
+    "reset_persistence_failure": "Retain reset as unsupported_blocks_branching; do not claim the upstream gap closed; keep I03 blocked pending explicit disposition.",
+    "identity_coverage_failure": "Block reset-dependent branch comparison and fail source admission for the proposed provider contract.",
+    "compatibility_ambiguity": "Do not infer a legacy policy; retain the exact ambiguity and keep the gate open or failed.",
+    "graph_mutation": "Stop, retain the dirty-state failure, and assign no scientific effect.",
+    "i03_leakage": "Remove or quarantine the leaked choice and reopen every affected later gate."
+  },
+  "exit_gate": "P2-I2-SOURCE-ADMISSION-GATE",
+  "exit_rule": "All exact source/import/reset/save/load/identity/schema/compatibility checks pass and the graph remains clean, or the precise failed condition is retained with I03 blocked."
+}

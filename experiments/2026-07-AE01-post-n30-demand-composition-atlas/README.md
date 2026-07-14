@@ -1,7 +1,8 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief and I01R1-corrected
-source-audit gates passed, with source admission ready but not begun
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief, corrected source-
+audit, and I02R2 reset-aware source-admission gates passed; I03 ready but not
+begun
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -54,7 +55,18 @@ and [machine-readable matrix](contracts/p2-i2/i01-capability-matrix.json), as
 corrected by the [I01R1 closeout revalidation](reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md),
 pass the audit gate with a composition-capable native candidate and explicit
 missing control surfaces. The historical custom probe is quarantined, CAP-04
-is inadequate, and no graph source or restoration provider has been admitted.
+is inadequate, and the
+[I02 source-admission report](reports/P2-I2-I02-source-admission-and-restoration-transition.md)
+admits the exact current graph identities and native restoration provider with
+external-state and continuation limits. The
+[I02R1 closeout revalidation](reports/P2-I2-I02R1-admission-closeout-revalidation.md)
+ties imports to the admitted checkout, corrects CHG-004 governance, retains
+complete callable/identity coverage including the reset-baseline limitation,
+and confirms `selected_provider = null`. The subsequent
+[I02R2 reset-baseline revalidation](reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md)
+admits updated graph revision `83e3a300426631ee4df71b661b67d4fcfdfed594`,
+validates persisted reset behavior, and makes separately versioned v2 identity
+available while leaving provider, realization, and dependence mode unselected.
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -211,7 +223,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           brief/I01R1 source-audit gates passed; source admission not begun
+P2-I2                                           brief/I01R1 audit/I02R2 reset-aware admission passed; I03 not begun
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

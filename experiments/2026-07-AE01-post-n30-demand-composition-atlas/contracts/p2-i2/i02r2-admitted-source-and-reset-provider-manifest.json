@@ -1,0 +1,814 @@
+{
+  "admission_disposition": {
+    "calibration_opened": false,
+    "candidate_execution_opened": false,
+    "dependence_mode_selected": false,
+    "provider_selected": false,
+    "realization_selected": false,
+    "reset_aware_v2_provider_admitted": true,
+    "reset_baseline_persistence_contract_admitted": true,
+    "scientific_evidence_assigned": false,
+    "source_admission_gate": "passed_after_i02r2_revalidation",
+    "updated_source_admitted": true
+  },
+  "admitted_at": "2026-07-14",
+  "artifact_id": "P2-I2-I02R2-ADMITTED-SOURCE-AND-RESET-PROVIDER-MANIFEST",
+  "artifact_version": "1.0.0",
+  "callable_contract_profiles": {
+    "bounded_queue_run": {
+      "causal_relevance": "Processes serialized pending packet/topology work for a caller-bounded number of events.",
+      "claim_boundary": "Bounded queue processing does not establish bounded restoration continuation for P2-I2.",
+      "unsupported_argument_shape": "Non-integer or negative max_events is rejected."
+    },
+    "construction": {
+      "causal_relevance": "Constructs current native runtime state; params identity is represented, but the private reset baseline is not separately covered by restoration identity.",
+      "claim_boundary": "Construction is available only; I03 must select a compatible profile and later continuation must disposition reset.",
+      "unsupported_argument_shape": "Wrong state/params combinations, malformed mappings, or unsupported state families fail explicitly."
+    },
+    "feedback_surface": {
+      "causal_relevance": "Reads current native coherence through declared masks and commits a feedback eligibility surface row.",
+      "claim_boundary": "Availability does not select this response or prove carrier dependence.",
+      "unsupported_argument_shape": "Missing masks or invalid threshold/reference/expected route fields are rejected."
+    },
+    "history_evidence_overlay": {
+      "causal_relevance": "Builds or attaches derived causal-history evidence overlays; it does not execute or mutate active LGRC9V3 runtime history.",
+      "claim_boundary": "Supporting boundary only; never an admitted active-history runtime or selected pool carrier.",
+      "unsupported_argument_shape": "Arguments must satisfy the exact public annotation/artifact helper signature; malformed evidence inputs fail under that helper contract."
+    },
+    "load": {
+      "causal_relevance": "Restores supported current native state and sets the loaded current state as a new private reset baseline.",
+      "claim_boundary": "Provider identity does not cover equivalence of pre-load and post-load reset baselines.",
+      "unsupported_argument_shape": "Wrong family/version, malformed snapshot, missing runtime/base state, or inaccessible path fails explicitly."
+    },
+    "packet_contribution": {
+      "causal_relevance": "Schedules attributable packet contribution state into the native queue and ledger.",
+      "claim_boundary": "Availability does not prove a common pool or multi-source jointness.",
+      "unsupported_argument_shape": "Missing required source/target/edge/amount fields or invalid values are rejected by the public method."
+    },
+    "producer_configuration": {
+      "causal_relevance": "Stores current native producer configuration in runtime cached quantities covered by current-state identity.",
+      "claim_boundary": "The semantic selection of producer configuration remains external and I03/I06-owned.",
+      "unsupported_argument_shape": "Missing IDs/amount/threshold or invalid polarity/value constraints are rejected."
+    },
+    "production": {
+      "causal_relevance": "May enqueue native work from covered native configuration and committed surfaces.",
+      "claim_boundary": "Producer availability does not authorize or support a P2-I2 realization.",
+      "unsupported_argument_shape": "Unsupported policy names or invalid runtime eligibility fail explicitly."
+    },
+    "queue_step": {
+      "causal_relevance": "Consumes pending native queue state and changes scheduler, checkpoint, events, observables, and later continuation.",
+      "claim_boundary": "Public queue execution is not P2-I2 candidate evidence.",
+      "unsupported_argument_shape": "No arguments beyond self; invalid or absent queued work follows the public runtime contract."
+    },
+    "reset": {
+      "causal_relevance": "Restores the persisted construction or explicitly rebased baseline represented by reset-aware identity v2.",
+      "claim_boundary": "Reset conformance does not select a P2-I2 branch point or prove unrestricted continuation equivalence.",
+      "unsupported_argument_shape": "No arguments beyond self; unavailable legacy baseline raises SnapshotCompatibilityError."
+    },
+    "reset_group_builder": {
+      "causal_relevance": "Builds the versioned native lifecycle group persisted by save/load.",
+      "claim_boundary": "Artifact construction alone does not establish family-valid restoration.",
+      "unsupported_argument_shape": "Requires a non-empty model family and exactly one available baseline snapshot or unavailable reason."
+    },
+    "reset_group_reader": {
+      "causal_relevance": "Separates available reset state from legacy/unavailable state without inventing provenance.",
+      "claim_boundary": "A missing return does not authorize implicit rebase or fallback.",
+      "unsupported_argument_shape": "Requires a valid snapshot and expected family; legacy or explicitly unavailable data returns no baseline."
+    },
+    "reset_group_validator": {
+      "causal_relevance": "Guards the baseline lifecycle artifact before load or provider use.",
+      "claim_boundary": "Shape validation is not behavioral replay.",
+      "unsupported_argument_shape": "Malformed, recursive, wrong-family, unsupported-version, or inconsistent status payloads fail explicitly."
+    },
+    "reset_rebase": {
+      "causal_relevance": "Explicitly replaces the future reset baseline with current native state.",
+      "claim_boundary": "Rebase is prospective and does not recover legacy construction provenance; RCAE must record rebase provenance separately.",
+      "unsupported_argument_shape": "No arguments beyond self."
+    },
+    "restoration_digest": {
+      "causal_relevance": "Returns SHA-256 over UTF-8 canonical JSON bytes of the versioned restoration identity document.",
+      "claim_boundary": "This is not a raw snapshot digest or evidence of behavioral equivalence.",
+      "unsupported_argument_shape": "Same supported-input boundary and failures as restoration_identity."
+    },
+    "restoration_digest_v2": {
+      "causal_relevance": "Digests canonical reset-aware identity v2.",
+      "claim_boundary": "Digest equality is not raw snapshot equality, behavioral replay, or scientific evidence.",
+      "unsupported_argument_shape": "Same input boundary as restoration_identity_v2; unsupported input fails without fallback."
+    },
+    "restoration_identity": {
+      "causal_relevance": "Projects canonical current PyGRC-owned state needed for native branch identity.",
+      "claim_boundary": "Identity availability/equality is not restoration correctness, a complete composite branch identity, or continuation equivalence.",
+      "unsupported_argument_shape": "Only an LGRC9V3 model/subclass or complete supported LGRC9V3 Mapping is accepted; other objects, raw digests, RCAE projections, wrong families/versions, and malformed/partial mappings fail explicitly."
+    },
+    "restoration_identity_v2": {
+      "causal_relevance": "Composes current-state identity v1 and reset-baseline identity v1 into reset-aware identity v2.",
+      "claim_boundary": "Equality covers declared current/reset native state, not construction history, RCAE-owned state, or unrestricted continuation.",
+      "unsupported_argument_shape": "Requires a supported LGRC9V3 model/snapshot with an available valid reset-baseline group."
+    },
+    "route_configuration": {
+      "causal_relevance": "Changes future continuation and is serialized in causal_flux_routes within native runtime identity.",
+      "claim_boundary": "Configuration availability does not select routes or establish causal adequacy.",
+      "unsupported_argument_shape": "Malformed route mappings, missing target/edge fields, or negative values are rejected."
+    },
+    "runtime_model_type": {
+      "causal_relevance": "Concrete model family accepted by the native restoration provider.",
+      "claim_boundary": "Model availability does not select a P2-I2 realization.",
+      "unsupported_argument_shape": "Construction outside the exact params and LGRC9V3RuntimeState signature."
+    },
+    "runtime_state_type": {
+      "causal_relevance": "Owns serialized scheduler, queue, route, history, cached configuration, and native runtime state.",
+      "claim_boundary": "Runtime-state availability does not establish ecological adequacy.",
+      "unsupported_argument_shape": "Values rejected by the exact runtime-state dataclass and restoration contract."
+    },
+    "save": {
+      "causal_relevance": "Serializes snapshot state; all provider-covered current state is reached through snapshot().",
+      "claim_boundary": "Successful serialization does not prove later load or continuation equivalence.",
+      "unsupported_argument_shape": "Invalid or inaccessible filesystem path fails; path identity is external and not part of restoration identity."
+    },
+    "snapshot": {
+      "causal_relevance": "Builds the complete supported LGRC9V3 snapshot consumed by the identity provider and native loader.",
+      "claim_boundary": "Snapshot availability and raw snapshot digest are not restoration identity or correctness.",
+      "unsupported_argument_shape": "No arguments beyond self."
+    },
+    "state_contract_type": {
+      "causal_relevance": "Represents native state fields that may enter restoration identity when present in a supported LGRC9V3 snapshot.",
+      "claim_boundary": "Type admission does not select a carrier, pool role, or ecology meaning.",
+      "unsupported_argument_shape": "Values rejected by the exact public dataclass/type contract."
+    },
+    "state_read": {
+      "causal_relevance": "Exposes current native runtime state for identity/reconstruction boundaries.",
+      "claim_boundary": "State access is not an ecology-adequate intervention.",
+      "unsupported_argument_shape": "No arguments beyond self."
+    },
+    "state_replace": {
+      "causal_relevance": "Replaces current native state and reorders its queue; the resulting current state is identity-covered.",
+      "claim_boundary": "Reconstruction availability is not a native pool clamp or scientific intervention.",
+      "unsupported_argument_shape": "Anything other than LGRC9V3RuntimeState is rejected."
+    }
+  },
+  "callable_entries": [
+    {
+      "contract_profile": "state_contract_type",
+      "implementation_source": "grc:src/pygrc/models/grc_9_v3_state.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.GRC9V3NodeState"
+    },
+    {
+      "contract_profile": "state_contract_type",
+      "implementation_source": "grc:src/pygrc/models/grc_9_v3_state.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.GRC9V3State"
+    },
+    {
+      "contract_profile": "runtime_model_type",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3"
+    },
+    {
+      "contract_profile": "runtime_state_type",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime_state.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3RuntimeState"
+    },
+    {
+      "contract_profile": "construction",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.from_state"
+    },
+    {
+      "contract_profile": "queue_step",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.step"
+    },
+    {
+      "contract_profile": "bounded_queue_run",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.run_event_queue"
+    },
+    {
+      "contract_profile": "packet_contribution",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.schedule_packet_departure"
+    },
+    {
+      "contract_profile": "feedback_surface",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row"
+    },
+    {
+      "contract_profile": "producer_configuration",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer"
+    },
+    {
+      "contract_profile": "production",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.produce_events"
+    },
+    {
+      "contract_profile": "route_configuration",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.set_causal_flux_routes"
+    },
+    {
+      "contract_profile": "state_read",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.get_state"
+    },
+    {
+      "contract_profile": "state_replace",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.set_state"
+    },
+    {
+      "contract_profile": "reset",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.reset"
+    },
+    {
+      "contract_profile": "snapshot",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.snapshot"
+    },
+    {
+      "contract_profile": "save",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.save"
+    },
+    {
+      "contract_profile": "load",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.load"
+    },
+    {
+      "contract_profile": "restoration_identity",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_restoration_callable",
+      "symbol": "pygrc.models.lgrc9v3_restoration_identity_v1"
+    },
+    {
+      "contract_profile": "restoration_digest",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_restoration_callable",
+      "symbol": "pygrc.models.digest_lgrc9v3_restoration_identity_v1"
+    },
+    {
+      "contract_profile": "history_evidence_overlay",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "supporting_boundary_only",
+      "symbol": "pygrc.models.annotate_lgrc9v3_causal_history"
+    },
+    {
+      "contract_profile": "history_evidence_overlay",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "supporting_boundary_only",
+      "symbol": "pygrc.models.build_lgrc9v3_causal_history_artifact"
+    },
+    {
+      "contract_profile": "history_evidence_overlay",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "supporting_boundary_only",
+      "symbol": "pygrc.models.attach_lgrc9v3_causal_history_artifact"
+    },
+    {
+      "contract_profile": "history_evidence_overlay",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "supporting_boundary_only",
+      "symbol": "pygrc.models.extract_lgrc9v3_causal_history_artifact"
+    },
+    {
+      "contract_profile": "reset_rebase",
+      "implementation_source": "grc:src/pygrc/core/interfaces.py",
+      "public_export_source": "grc:src/pygrc/core/__init__.py",
+      "role": "admitted_contract_callable",
+      "symbol": "pygrc.core.GRCModel.rebase_reset_baseline"
+    },
+    {
+      "contract_profile": "reset_group_builder",
+      "implementation_source": "grc:src/pygrc/core/serialization.py",
+      "public_export_source": "grc:src/pygrc/core/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.core.build_reset_baseline_group"
+    },
+    {
+      "contract_profile": "reset_group_validator",
+      "implementation_source": "grc:src/pygrc/core/serialization.py",
+      "public_export_source": "grc:src/pygrc/core/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.core.validate_reset_baseline_group"
+    },
+    {
+      "contract_profile": "reset_group_reader",
+      "implementation_source": "grc:src/pygrc/core/serialization.py",
+      "public_export_source": "grc:src/pygrc/core/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.core.reset_baseline_snapshot"
+    },
+    {
+      "contract_profile": "reset_rebase",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_runtime_callable",
+      "symbol": "pygrc.models.LGRC9V3.rebase_reset_baseline"
+    },
+    {
+      "contract_profile": "restoration_identity_v2",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_restoration_callable",
+      "symbol": "pygrc.models.lgrc9v3_restoration_identity_v2"
+    },
+    {
+      "contract_profile": "restoration_digest_v2",
+      "implementation_source": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+      "public_export_source": "grc:src/pygrc/models/__init__.py",
+      "role": "admitted_restoration_callable",
+      "symbol": "pygrc.models.digest_lgrc9v3_restoration_identity_v2"
+    }
+  ],
+  "change_control": {
+    "change_id": "P2-I2-CHG-006",
+    "governance_class": "source_admission_revision_update",
+    "reopening_conditions": [
+      "Updated revision/path/digest/import/export/signature fails reconstruction",
+      "Reset baseline does not persist across save/load or repeated cycles",
+      "V2 does not distinguish reset-baseline-only differences",
+      "Legacy or malformed input does not fail according to the admitted policy",
+      "A different provider/schema or reset-rebase provenance is proposed",
+      "A later profile requires source or state outside this manifest"
+    ]
+  },
+  "evidence_effect": "Exact updated source and reset-aware provider admission only; no realization, calibration, candidate behavior, restoration claim beyond tested generic conformance, or scientific evidence.",
+  "historical_authority": {
+    "historical_record_rewritten": false,
+    "previous_graph_revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+    "previous_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json",
+    "previous_manifest_sha256_at_i02r2_entry": "97e36345050924cc339ae738f220aaed2f767ead3b93f038862a4840aaf0c805",
+    "previous_provider": "pygrc.models.lgrc9v3_restoration_identity_v1",
+    "previous_reset_boundary": "Reset baseline not represented; reset-dependent branching prohibited or externally composed."
+  },
+  "identity_coverage": {
+    "all_continuation_relevant_components_dispositioned": true,
+    "current_native_state": "covered_by_v1_and_v2_current_component",
+    "rcae_external_state": "external_composition_required_as_in_historical_manifest",
+    "reset_baseline": {
+      "explicit_rebase": "covered_prospectively_with_external_rebase_provenance_required",
+      "legacy_without_rebase": "unsupported_blocks_branching",
+      "owner": "PyGRC",
+      "v1_disposition": "not_covered_current_state_only",
+      "v2_disposition": "covered_by_native_provider"
+    }
+  },
+  "iteration_id": "P2-I2-I02R2",
+  "lane_id": "AE01-L02",
+  "rcae_entry_authority": {
+    "committed_head_revision": "10c18fad2ba8ecac9ddacb0f0bc55813e6356c60",
+    "input_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-reset-baseline-revalidation-input-freeze.json",
+    "separate_from_graph_revision": true
+  },
+  "repository": {
+    "branch_observed": "main",
+    "complete_transitive_dependency_lock": false,
+    "dependency_boundary": "This manifest binds the effective prior P2-I2 source scope plus every new reset-correction authority. I06 must still bind the complete executable environment it registers.",
+    "local_checkout_is_identity": false,
+    "portable_identity_rule": "grc:<repository-relative path> at full revision plus SHA-256",
+    "read_only": true,
+    "repository_id": "grc",
+    "repository_name": "graph-reflexive-coherence",
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "worktree_state_at_admission": "clean"
+  },
+  "restoration_providers": {
+    "current_plus_reset_v2": {
+      "accepted_input": "Supported LGRC9V3 model or complete version-1 snapshot with valid available reset-baseline group",
+      "artifact_kind": "lgrc9v3_restoration_identity",
+      "artifact_schema_version": "lgrc9v3_restoration_identity_v2",
+      "digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+      "digest_rule": "SHA-256 over UTF-8 pygrc.core.canonical_json_dumps(identity_document)",
+      "included_state": [
+        "current_state_restoration_identity_v1",
+        "reset_baseline_restoration_identity_v1"
+      ],
+      "provider": "pygrc.models.lgrc9v3_restoration_identity_v2",
+      "status": "admitted_for_conditional_later_selection",
+      "unsupported_behavior": "SnapshotCompatibilityError or strict snapshot validation error; no fallback",
+      "unsupported_input": "Legacy/unavailable baseline, wrong family/version, malformed/partial/recursive group, raw digest, RCAE projection, or arbitrary object"
+    },
+    "current_state_v1": {
+      "artifact_schema_version": "lgrc9v3_restoration_identity_v1",
+      "digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v1",
+      "provider": "pygrc.models.lgrc9v3_restoration_identity_v1",
+      "redefined_by_i02r2": false,
+      "reset_aware": false,
+      "status": "admitted_current_state_provider_not_selected"
+    },
+    "provider_mismatch_blocks_comparison": true,
+    "provider_selection_is_runtime_recovery": false,
+    "selected_provider": null,
+    "selection_stage": "I03 proposes a compatible provider; I06 freezes exact provider/schema and reset-baseline provenance before branch comparison."
+  },
+  "snapshot_reset_contract": {
+    "available_baseline_is_complete_same_family_snapshot": true,
+    "explicit_rebase_callable": "pygrc.models.LGRC9V3.rebase_reset_baseline",
+    "historical_baseline_recovered_by_rebase": false,
+    "legacy_missing_baseline": "current state loads; reset and v2 identity fail until explicit prospective rebase",
+    "nested_reset_baseline_forbidden": true,
+    "params_hash_must_match_outer_snapshot": true,
+    "reset_baseline_schema": "pygrc.reset_baseline",
+    "reset_baseline_version": 1,
+    "set_state_rebases_baseline": false,
+    "snapshot_schema": "pygrc.snapshot",
+    "snapshot_version": 1
+  },
+  "source_entries": [
+    {
+      "path": "pyproject.toml",
+      "purpose": "Package identity and src package-root declaration",
+      "role": "admitted_package_identity",
+      "sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+      "source_classifications": [
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:pyproject.toml"
+    },
+    {
+      "path": "src/pygrc/__init__.py",
+      "purpose": "Root public-surface policy",
+      "role": "admitted_package_identity",
+      "sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+      "source_classifications": [
+        "public_api_source"
+      ],
+      "source_id": "grc:src/pygrc/__init__.py"
+    },
+    {
+      "path": "src/pygrc/models/__init__.py",
+      "purpose": "Stable public model, runtime, history-boundary, and restoration exports",
+      "role": "admitted_package_identity",
+      "sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+      "source_classifications": [
+        "public_api_source"
+      ],
+      "source_id": "grc:src/pygrc/models/__init__.py"
+    },
+    {
+      "path": "src/pygrc/models/grc_9_v3_state.py",
+      "purpose": "Node-coherence carrier and substrate state fields",
+      "role": "admitted_runtime_source",
+      "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/models/grc_9_v3_state.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3.py",
+      "purpose": "Stable LGRC9V3 compatibility facade",
+      "role": "admitted_runtime_source",
+      "sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_contract.py",
+      "purpose": "Packet, surface, producer, and control record contracts",
+      "role": "admitted_runtime_source",
+      "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3_contract.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+      "purpose": "Attributable packet paths, additive arrival, debit, queue, and ledger semantics",
+      "role": "admitted_runtime_source",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3_packets.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+      "purpose": "Public LGRC9V3 construction, queue, feedback, routing, state, persistence, and reset surfaces",
+      "role": "admitted_runtime_source",
+      "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_runtime_state.py",
+      "purpose": "Composed runtime-state identity and serialization coverage",
+      "role": "admitted_runtime_source",
+      "sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime_state.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+      "purpose": "Versioned native LGRC9V3 restoration identity and identity digest",
+      "role": "admitted_restoration_provider_source",
+      "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3_restoration.py"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_timing.py",
+      "purpose": "Derived causal-history annotation/artifact helpers; not active runtime history or a selected pool surface",
+      "role": "supporting_boundary_only",
+      "sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+      "source_classifications": [
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/models/lgrc_9_v3_timing.py"
+    },
+    {
+      "path": "docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+      "purpose": "Documented stable imports, runtime semantics, and claim boundary",
+      "role": "supporting_evidence_only",
+      "sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+      "source_classifications": [
+        "documentation_only"
+      ],
+      "source_id": "grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_contract.py",
+      "purpose": "Generic public causal-history annotation/artifact contract tests",
+      "role": "supporting_evidence_only",
+      "sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/models/test_lgrc_9_v3_contract.py"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_runtime.py",
+      "purpose": "Generic queue, feedback, route, and snapshot conformance tests",
+      "role": "supporting_evidence_only",
+      "sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/models/test_lgrc_9_v3_runtime.py"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_restoration.py",
+      "purpose": "Generic restoration API, sensitivity, and round-trip conformance tests",
+      "role": "supporting_evidence_only",
+      "sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/models/test_lgrc_9_v3_restoration.py"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_restoration_matrix.py",
+      "purpose": "Generic restoration identity matrix and bounded continuation conformance tests",
+      "role": "supporting_evidence_only",
+      "sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/models/test_lgrc_9_v3_restoration_matrix.py"
+    },
+    {
+      "path": "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json",
+      "purpose": "Graph-project restoration closeout and downstream composition boundary",
+      "role": "supporting_evidence_only",
+      "sha256": "e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe",
+      "source_classifications": [
+        "evidence_or_closeout_source"
+      ],
+      "source_id": "grc:implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json"
+    },
+    {
+      "path": "src/pygrc/core/__init__.py",
+      "purpose": "Public reset-baseline serialization exports",
+      "role": "admitted_package_identity",
+      "sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+      "source_classifications": [
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/core/__init__.py"
+    },
+    {
+      "path": "src/pygrc/core/interfaces.py",
+      "purpose": "Common public rebase_reset_baseline lifecycle interface",
+      "role": "admitted_runtime_source",
+      "sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/core/interfaces.py"
+    },
+    {
+      "path": "src/pygrc/core/serialization.py",
+      "purpose": "Versioned non-recursive reset-baseline snapshot group, validation, and legacy boundary",
+      "role": "admitted_runtime_source",
+      "sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source",
+        "schema_or_contract_source"
+      ],
+      "source_id": "grc:src/pygrc/core/serialization.py"
+    },
+    {
+      "path": "src/pygrc/models/grc_9_v3.py",
+      "purpose": "Embedded GRC9V3 snapshot and reset-baseline persistence used by LGRC9V3",
+      "role": "admitted_runtime_source",
+      "sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+      "source_classifications": [
+        "runtime_source",
+        "public_api_source"
+      ],
+      "source_id": "grc:src/pygrc/models/grc_9_v3.py"
+    },
+    {
+      "path": "specs/grc-common-interface.md",
+      "purpose": "Common lifecycle method contract",
+      "role": "supporting_boundary_only",
+      "sha256": "3ccc27250a3ddb2ecccdf27984436e3dee2b10b3f71de610bfbbbcd084ae7be6",
+      "source_classifications": [
+        "schema_or_contract_source",
+        "documentation_only"
+      ],
+      "source_id": "grc:specs/grc-common-interface.md"
+    },
+    {
+      "path": "specs/grc-reset-baseline-persistence.md",
+      "purpose": "Normative reset-baseline persistence and compatibility contract",
+      "role": "supporting_boundary_only",
+      "sha256": "20a75f525b1a46e97afaa3aa9e16f63adddc754ded088fa38cd666272ddc8891",
+      "source_classifications": [
+        "schema_or_contract_source",
+        "documentation_only"
+      ],
+      "source_id": "grc:specs/grc-reset-baseline-persistence.md"
+    },
+    {
+      "path": "specs/lgrc-9-v3-restoration-identity.md",
+      "purpose": "LGRC9V3 restoration identity v1/v2 boundary",
+      "role": "supporting_boundary_only",
+      "sha256": "08c3ee95a9b76016648e14d028120bdebc88d2a109387874c32e4a462b037458",
+      "source_classifications": [
+        "schema_or_contract_source",
+        "documentation_only"
+      ],
+      "source_id": "grc:specs/lgrc-9-v3-restoration-identity.md"
+    },
+    {
+      "path": "specs/lgrc-9-v3-spec.md",
+      "purpose": "LGRC9V3 reset lifecycle integration boundary",
+      "role": "supporting_boundary_only",
+      "sha256": "a272102d8463359c2f9d7a40ce63b3be52509b517da67579127ab6845ff36dc4",
+      "source_classifications": [
+        "schema_or_contract_source",
+        "documentation_only"
+      ],
+      "source_id": "grc:specs/lgrc-9-v3-spec.md"
+    },
+    {
+      "path": "tests/core/test_interfaces.py",
+      "purpose": "Common interface conformance",
+      "role": "supporting_evidence_only",
+      "sha256": "702c67b6cc8d98c8ae87e586f7270e5afab65d8c2178527b651a14effbc98e69",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/core/test_interfaces.py"
+    },
+    {
+      "path": "tests/core/test_serialization_contract.py",
+      "purpose": "Reset-baseline serialization and malformed-input conformance",
+      "role": "supporting_evidence_only",
+      "sha256": "f19f762830853ed35d243ab7390dc3e7337ee1c7fb05922b0c2742f3062c7bcc",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/core/test_serialization_contract.py"
+    },
+    {
+      "path": "tests/models/test_reset_baseline_persistence.py",
+      "purpose": "Cross-family reset persistence, legacy, and LGRC9V3 identity-v2 conformance",
+      "role": "supporting_evidence_only",
+      "sha256": "6236748f6bc7995dda86f7a207ccce373b33d1b7ecd90849106839baa305f01a",
+      "source_classifications": [
+        "test_or_conformance_source"
+      ],
+      "source_id": "grc:tests/models/test_reset_baseline_persistence.py"
+    },
+    {
+      "path": "implementation/corrections/PyGRC-ResetBaselinePersistenceChecklist.md",
+      "purpose": "Upstream correction checklist",
+      "role": "supporting_evidence_only",
+      "sha256": "caccab6dbfeb845893762f5c7e9d8774e16de6317e8c409f56c53baa05e65d31",
+      "source_classifications": [
+        "evidence_or_closeout_source"
+      ],
+      "source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistenceChecklist.md"
+    },
+    {
+      "path": "implementation/corrections/PyGRC-ResetBaselinePersistenceCloseout.md",
+      "purpose": "Upstream correction closeout and claim boundary",
+      "role": "supporting_evidence_only",
+      "sha256": "ef9b116f2c1724516960e0e6799c2816e4b178a4da2db4899c5f598180de6ad3",
+      "source_classifications": [
+        "evidence_or_closeout_source"
+      ],
+      "source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistenceCloseout.md"
+    },
+    {
+      "path": "implementation/corrections/PyGRC-ResetBaselinePersistencePlan.md",
+      "purpose": "Upstream correction plan and intended validation scope",
+      "role": "supporting_evidence_only",
+      "sha256": "1ee265d39b6cabe56ac6e77bb4643aff502dd645e459be98bc76a075c1fb501f",
+      "source_classifications": [
+        "evidence_or_closeout_source"
+      ],
+      "source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistencePlan.md"
+    }
+  ],
+  "source_role_taxonomy": {
+    "allowed_classifications": [
+      "runtime_source",
+      "public_api_source",
+      "schema_or_contract_source",
+      "evidence_or_closeout_source",
+      "test_or_conformance_source",
+      "documentation_only"
+    ],
+    "rule": "Each file has one admission role and one or more orthogonal source classifications. Executable source establishes implementation/import contracts, tests establish generic conformance only, documentation and closeout establish declared boundaries only, and none establishes ecological adequacy."
+  },
+  "status": "admitted_after_i02r2_revalidation",
+  "validation_authority": {
+    "focused_upstream_tests": "68 passed and 32 subtests passed; cache disabled; temporary files outside graph repository",
+    "source_transition": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-graph-source-transition.json",
+    "validation_record": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-reset-baseline-validation.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r2_validate.py"
+  }
+}

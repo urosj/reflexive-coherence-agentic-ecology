@@ -389,14 +389,25 @@ genuinely combined medium state from a mailbox, database, sequence of private
 writes, or global controller.
 
 The P2-I2 semantic brief is owner-accepted, and its source-current capability
-audit has been corrected and revalidated under I01R1. The retained native
+audit has been corrected and revalidated under I01R1. I02 then admitted the
+exact current graph sources and made the native versioned restoration provider
+available for conditional later selection. I02R1 tied executable imports to
+that checkout, corrected the callable-scope governance, and retained complete
+native/external/unsupported identity coverage, including the then-uncovered
+reset baseline. I02R2 subsequently admitted updated graph revision
+`83e3a300426631ee4df71b661b67d4fcfdfed594` and independently validated that
+new snapshots preserve reset baseline across save/load. V1 remains current-
+state-only; reset-aware v2 is available but unselected. Legacy state still
+blocks reset/v2 until explicit prospective rebase. All ecology-owned state and
+bounded continuation obligations remain later composition duties. The retained native
 surfaces can compose packet contributions into one node-coherence carrier and
 a carrier-scoped feedback response with native restoration, but complete
 realization adequacy is not assigned: independent state/history intervention
 and other controls remain inadequate. The custom candidate-shaped probe is
 quarantined from capability and scientific evidence. The audit supplies no
-lane result and admits no source. The next named iteration is I02 source
-admission and restoration-provider transition.
+lane result, and source admission supplies no realization or scientific
+evidence. The next named iteration is I03 realization and operational-
+hypothesis freeze.
 
 Later lanes examine trace dynamics, support, boundaries, circulation, and
 parent-basin demands. Only after all lanes close may the atlas compare their

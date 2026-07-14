@@ -83,7 +83,7 @@ interfaces before these projections freeze.
 
 | Variable | Required meaning | Current state | Binding iteration |
 | --- | --- | --- | --- |
-| `graph_source_identity` | Exact admitted graph revision and relevant source digests | Pending | I02 |
+| `graph_source_identity` | Exact admitted graph revision and relevant source digests | Bound by `P2-I2-DEC-009` and the I02R2 manifest at `83e3a300426631ee4df71b661b67d4fcfdfed594`; prior I02R1 identity remains historical authority and no realization is implied | I02R2 complete |
 | `realization_class` | Native, producer-assisted, or constructed | Pending | I03 |
 | `pool_dependence_mode` | `state_carried`, `history_carried`, or admissible `hybrid` | Pending | I03 |
 | `source_set` | At least two distinguishable attributable source carriers/events | Pending | I03 |
@@ -98,6 +98,37 @@ interfaces before these projections freeze.
 | `R05_contrast` | One capacity, contributor, or access-scope variation | Pending | I03/I06 |
 
 No pending variable may be filled from candidate outcomes.
+
+### 3.1 I02 source prerequisite
+
+`P2-I2-I02`, as corrected and revalidated by I02R1, historically admits graph revision
+`3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5`, its exact relevant source and
+public-callable identities, and makes the native
+`lgrc9v3_restoration_identity_v1` provider available for conditional later
+selection under the
+[I02 manifest](../contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json).
+The historical P2-I1 RCAE projection is not an automatic fallback at this
+revision. Native identity must later be composed with all selected RCAE-owned
+state and followed by a separately frozen bounded equal-input continuation
+check. Provider selection remains `null`. At that revision the private reset
+baseline is not separately covered, so the historical restriction requires a
+later continuation to forbid reset or compose an explicit reset-baseline
+identity.
+
+`P2-I2-I02R2` admits clean updated graph revision
+`83e3a300426631ee4df71b661b67d4fcfdfed594`, the versioned
+`pygrc.reset_baseline` group, and
+`lgrc9v3_restoration_identity_v2` for conditional later selection. V1 remains
+current-state-only; v2 adds reset-baseline identity. Provider selection remains
+`null`. A valid persisted baseline no longer requires the historical blanket
+reset prohibition under a later v2 registration. Legacy/unavailable baseline
+state still blocks reset and v2 until explicit prospective rebase, whose
+provenance remains externally composed and never recovers historical
+construction state.
+
+I02R2 re-closes only the `graph_source_identity` prerequisite. It does not bind
+a realization class, carrier, dependence mode, operational projection,
+response, comparator, or outcome. Those remain I03/I04 work.
 
 ## 4. `H-L02-OP-01` — Common-pool constitution
 

@@ -1,0 +1,219 @@
+{
+  "artifact_id": "P2-I2-I02-SOURCE-ADMISSION-INPUT-FREEZE",
+  "artifact_version": "1.0.1",
+  "iteration_id": "P2-I2-I02",
+  "lane_id": "AE01-L02",
+  "status": "frozen",
+  "frozen_at": "2026-07-14",
+  "purpose": "Decide whether to admit the exact source-current PyGRC revision and native restoration provider for later P2-I2 realization review, while binding all external-state and continuation limits.",
+  "evidence_effect": "Source and restoration-provider admission only; no realization, dependence-mode, response, comparator, calibration, candidate, control, boundary-rung, or L02-result effect.",
+  "entry_authority": {
+    "rcae_revision": "10c18fad2ba8ecac9ddacb0f0bc55813e6356c60",
+    "accepted_brief": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "f7b5ffafcdb1c3a8a3a24fd71e132ab3fa616807d109b3efd6bef8a5c93ecb03"
+    },
+    "entry_checklist": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "sha256": "ee32bce413dac51f60c99d7ca6f8f8399b26ab0afc7eec424b8f59ebf29dd43d"
+    },
+    "entry_decision_record": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "sha256": "93f0cab19d279b9b6f26c296ad72b93f2d8e04e924dac693f4df638492b80afb"
+    },
+    "i01r1_capability_matrix": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json",
+      "sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad"
+    },
+    "i01r1_source_digests": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-source-digests.json",
+      "sha256": "90aecd45aebb8821abe2e66c51024452343c7a4d9a5a829a56038756e35326f6"
+    },
+    "i01r1_revalidation": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md",
+      "sha256": "4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930"
+    },
+    "source_inventory": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+      "sha256": "2d2c5587a46260119ee8029c14e67351f19fe438e2538ce755181aebc5bbf3b2"
+    },
+    "decision": "P2-I2-DEC-006"
+  },
+  "proposed_checkout": {
+    "repository_name": "graph-reflexive-coherence",
+    "local_locator_observation": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+    "required_worktree_state": "clean",
+    "read_only_required": true,
+    "identity_rule": "Admission identity is repository name plus full revision plus repository-relative file path plus SHA-256. The local locator is command provenance only and may not enter the admitted manifest identity."
+  },
+  "proposed_source_scope": {
+    "package_identity": [
+      "pyproject.toml",
+      "src/pygrc/__init__.py",
+      "src/pygrc/models/__init__.py"
+    ],
+    "runtime_and_contract_candidates": [
+      "src/pygrc/models/grc_9_v3_state.py",
+      "src/pygrc/models/lgrc_9_v3.py",
+      "src/pygrc/models/lgrc_9_v3_contract.py",
+      "src/pygrc/models/lgrc_9_v3_packets.py",
+      "src/pygrc/models/lgrc_9_v3_runtime.py",
+      "src/pygrc/models/lgrc_9_v3_runtime_state.py"
+    ],
+    "restoration_provider_candidates": [
+      "src/pygrc/models/lgrc_9_v3_restoration.py"
+    ],
+    "history_boundary_candidates": [
+      "src/pygrc/models/lgrc_9_v3_timing.py"
+    ],
+    "supporting_evidence_candidates": [
+      "docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+      "tests/models/test_lgrc_9_v3_contract.py",
+      "tests/models/test_lgrc_9_v3_runtime.py",
+      "tests/models/test_lgrc_9_v3_restoration.py",
+      "tests/models/test_lgrc_9_v3_restoration_matrix.py",
+      "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json"
+    ],
+    "scope_rule": "Every proposed path must receive one admission role. Supporting evidence may justify an admission but cannot silently become a runtime dependency. A new path requires P2-I2 change control before inspection."
+  },
+  "proposed_callable_scope": {
+    "public_types": [
+      "pygrc.models.GRC9V3NodeState",
+      "pygrc.models.GRC9V3State",
+      "pygrc.models.LGRC9V3",
+      "pygrc.models.LGRC9V3RuntimeState"
+    ],
+    "public_runtime_methods": [
+      "pygrc.models.LGRC9V3.from_state",
+      "pygrc.models.LGRC9V3.step",
+      "pygrc.models.LGRC9V3.run_event_queue",
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.LGRC9V3.set_causal_flux_routes",
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.set_state",
+      "pygrc.models.LGRC9V3.reset",
+      "pygrc.models.LGRC9V3.snapshot",
+      "pygrc.models.LGRC9V3.save",
+      "pygrc.models.LGRC9V3.load"
+    ],
+    "public_restoration_callables": [
+      "pygrc.models.lgrc9v3_restoration_identity_v1",
+      "pygrc.models.digest_lgrc9v3_restoration_identity_v1"
+    ],
+    "history_boundary_callables": [
+      "pygrc.models.annotate_lgrc9v3_causal_history",
+      "pygrc.models.build_lgrc9v3_causal_history_artifact",
+      "pygrc.models.attach_lgrc9v3_causal_history_artifact",
+      "pygrc.models.extract_lgrc9v3_causal_history_artifact"
+    ],
+    "callable_rule": "Each callable receives an admitted runtime, admitted provider, supporting boundary, not admitted, or unresolved role. Public export and implementation identity must both be bound. No callable is a selected realization merely because it is admitted."
+  },
+  "classification_contract": {
+    "allowed_source_roles": [
+      "admitted_package_identity",
+      "admitted_runtime_source",
+      "admitted_restoration_provider_source",
+      "supporting_evidence_only",
+      "supporting_boundary_only",
+      "not_admitted",
+      "unresolved"
+    ],
+    "allowed_callable_roles": [
+      "admitted_runtime_callable",
+      "admitted_restoration_callable",
+      "supporting_boundary_only",
+      "not_admitted",
+      "unresolved"
+    ],
+    "admission_rule": "Admission means only that the exact identity may be consumed by later P2-I2 decisions within its recorded role and limitations.",
+    "fail_closed_rule": "Dirty or changed checkout state, digest mismatch, missing public export, unsupported provider input, unresolved external-state ownership, or unbounded continuation wording blocks the affected admission. It cannot become a negative L02 result."
+  },
+  "restoration_provider_questions": {
+    "native_candidate": "pygrc.models.lgrc9v3_restoration_identity_v1",
+    "native_digest_candidate": "pygrc.models.digest_lgrc9v3_restoration_identity_v1",
+    "accepted_input_candidates": [
+      "Concrete LGRC9V3 model at the admitted revision",
+      "Complete LGRC9V3 pygrc.snapshot version-1 mapping at the admitted revision"
+    ],
+    "unsupported_input_candidates": [
+      "Plain GRC9V3 model or snapshot",
+      "Raw snapshot digest string",
+      "RCAE restoration projection",
+      "Wrong-family, partial, malformed, or unsupported-version snapshot"
+    ],
+    "identity_distinctions": [
+      "Restoration identity document is not raw snapshot byte identity.",
+      "Digest helper digests the canonical restoration identity document; it is not a raw snapshot digest.",
+      "Identity equality is necessary but does not establish unrestricted or equal-input continuation equivalence.",
+      "Native identity covers only supported PyGRC-owned state represented by the provider contract."
+    ],
+    "prior_or_fallback_question": "Identify the exact P2-I1 RCAE restoration projection and decide whether it is an explicit fallback for helper-unavailable revisions, a historical provider only, or not admitted for P2-I2. Silent native/fallback upgrade or downgrade is forbidden.",
+    "external_state_question": "List every RCAE-owned role, access, pool, producer, intervention, configuration, schedule, matching, analysis, and constructed-state component that remains outside native identity and must be composed if later selected."
+  },
+  "bounded_continuation_obligation": {
+    "execution_in_i02": false,
+    "minimum_later_obligation": "For every selected restorable branch point, independently restore equal admitted native identity plus separately composed external identity, apply exactly equal registered future inputs for one bounded registered horizon, and compare the registered continuation projection under a fail-closed equality rule.",
+    "required_separations": [
+      "Identity equality and identity-digest equality are checked before continuation but do not replace it.",
+      "Raw snapshot byte or digest equality is diagnostic only unless a later registration explicitly requires it.",
+      "The exact fixture, horizon, future inputs, projection, tolerance, and failure effect belong to later realization/registration/reconstruction gates.",
+      "No unrestricted behavioral equivalence, identity acceptance, ecology, agency, selfhood, or shared-medium claim follows."
+    ]
+  },
+  "allowed_commands": {
+    "notation": "${GRC} denotes the proposed graph checkout. Generated scratch output may exist only under /tmp.",
+    "commands": [
+      "git -C ${GRC} rev-parse HEAD",
+      "git -C ${GRC} branch --show-current",
+      "git -C ${GRC} status --short",
+      "git -C ${GRC} show HEAD:<frozen-proposed-path>",
+      "sha256sum over frozen proposed paths",
+      "rg -n over frozen proposed paths and RCAE admission precedents",
+      "sed -n over frozen proposed paths and RCAE admission precedents",
+      "dependency-free JSON, digest, path, callable-reference, and Markdown-link validation"
+    ],
+    "dynamic_import_or_test_needed": false,
+    "reason": "I01/I01R1 already established checkout import identity and generic public conformance. I02 binds exact static identities and provider limits; it must not instantiate candidate behavior.",
+    "prohibited_actions": [
+      "Any graph-repository write, package installation, build, generator, formatter, or Git mutation.",
+      "Any new dynamic probe, candidate fixture, combined-versus-single comparison, calibration, or control execution.",
+      "Any source inspection outside the frozen proposed paths without prior P2-I2 change control.",
+      "Any source admission inferred from a local absolute path or ambient installed package."
+    ]
+  },
+  "required_outputs": {
+    "admitted_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json",
+    "narrative_report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02-source-admission-and-restoration-transition.md",
+    "source_inventory": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+    "decision_record": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+    "activity_checklist": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md"
+  },
+  "change_control": {
+    "rule": "Any new source path, callable, provider, input family, output, or admission role requires a P2-I2 change-ledger entry before inspection or disposition.",
+    "rerun_rule": "Recompute every affected digest/reference and rerun all affected admission checks; preserve prior provenance and no-evidence boundaries."
+  },
+  "scope_corrections": [
+    {
+      "change_id": "P2-I2-CHG-004",
+      "trigger": "The first in-scope LGRC9V3 runtime read showed that the frozen callable list named load and the response producer but omitted the matching public construction, queue-processing, save, reset, and route-configuration surfaces already required or bounded by the I01R1 native-chain and control audit.",
+      "correction": "Add LGRC9V3.from_state, step, run_event_queue, set_causal_flux_routes, reset, and save to the callable-review scope. No source path or evidence effect changes.",
+      "timing": "Recorded before any source or callable received an admission role and before any provider transition was decided.",
+      "rerun_scope": "Rerun the complete public runtime-callable export/definition review and every callable-manifest validation.",
+      "preserved_boundary": "Exact revisions, source paths, graph read-only rule, no dynamic import/test rule, output paths, classification contract, and no-realization/no-evidence effect remain unchanged."
+    }
+  ],
+  "exit_gate": "P2-I2-SOURCE-ADMISSION-GATE",
+  "exit_requirements": [
+    "Every proposed source and callable has exactly one allowed role and exact portable identity.",
+    "Native restoration callable, digest, accepted inputs, unsupported inputs, identity limits, and graph closeout boundary are explicit.",
+    "Prior/fallback provider and silent-transition policy are explicit.",
+    "External RCAE-owned state and bounded later continuation obligations are explicit.",
+    "Source inventory and cumulative decision/checklist/evidence records agree.",
+    "Graph revision is unchanged and worktree remains clean.",
+    "No realization, dependence mode, calibration, candidate evidence, control result, or lane result is assigned."
+  ]
+}

@@ -41,6 +41,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-004` | How are I03 causal expectations separated from I04 machine rules, and how is calibrated resolution retained? | Derived and accepted from the common metric contract and I00R1 review | Constrains I03–I05; no calibration performed | 2026-07-14 |
 | `P2-I2-DEC-005` | Which source-current public PyGRC surfaces are adequate or inadequate for the L02 discriminator? | Original I01 audit disposition; corrected by `P2-I2-DEC-006` | Historical gate pass reopened by I01R1 | 2026-07-14 |
 | `P2-I2-DEC-006` | Does I01 satisfy the capability-audit closeout boundary after excluding candidate-shaped behavior? | I01R1 complete: probe quarantined; CAP-04 corrected to inadequate; package revalidated | Re-passes `P2-I2-SOURCE-AUDIT-GATE`; I02 ready but not begun | 2026-07-14 |
+| `P2-I2-DEC-007` | Which exact graph sources and restoration provider may P2-I2 consume, and how does the P2-I1 provider transition? | Historical I02 disposition; clarified and revalidated by `P2-I2-DEC-008` | Original gate pass reopened by I02R1 | 2026-07-14 |
+| `P2-I2-DEC-008` | Does I02 satisfy exact identity, import authority, callable/provider coverage, and conditional-transition closeout? | Historical I02R1 admission at graph revision `3d3d2ef`; reset limitation later updated by `P2-I2-DEC-009` | Historical gate pass reopened by I02R2 | 2026-07-14 |
+| `P2-I2-DEC-009` | Does updated PyGRC preserve reset baseline across restoration and represent it in exact identity? | I02R2 complete: updated source admitted, reset persistence validated, v2 provider admitted but unselected | Re-passes `P2-I2-SOURCE-ADMISSION-GATE`; I03 ready but not begun | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -441,13 +444,323 @@ CAP-04 is upgraded without a public independent-intervention surface, the
 admitted source differs from the audited revision, or a cited public contract,
 digest, supported-input boundary, or graph worktree assertion fails validation.
 
-## 9. Pending decision queue
+## 9. `P2-I2-DEC-007` — Exact source admission and restoration transition
+
+**Status:** historical I02 admission disposition; clarified and revalidated by
+`P2-I2-DEC-008`
+
+**Question ID:** `L02-Q02`
+
+**Question:** Which exact graph source and public callable identities may later
+P2-I2 iterations consume, which restoration provider governs supported native
+branch identity, and what is the allowed relationship to the historical P2-I1
+provider?
+
+### 9.1 Admitted decision
+
+Admit the clean graph revision
+`3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5` and the exact seventeen source
+identities in the
+[I02 machine manifest](../contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json).
+The manifest assigns separate package, runtime, restoration-provider,
+supporting-boundary, and supporting-evidence roles and binds every public
+symbol to both its stable export source and implementation source.
+
+Admit the following native restoration provider for any later P2-I2 profile
+that selects supported `LGRC9V3`:
+
+```text
+identity provider
+  = pygrc.models.lgrc9v3_restoration_identity_v1
+
+identity digest provider
+  = pygrc.models.digest_lgrc9v3_restoration_identity_v1
+
+accepted input
+  = concrete LGRC9V3 model at the admitted revision
+    or complete LGRC9V3 pygrc.snapshot version-1 mapping
+```
+
+Wrong-family, plain GRC9V3, raw digest, RCAE projection, partial, malformed,
+and unsupported-version inputs are not accepted. The identity digest is a
+digest of the versioned native identity document, not a raw snapshot digest.
+
+The P2-I1 C02 `restoration_projection` is retained at RCAE source revision
+`c2def54c3721c506c28fc9f14390b1ba683a98ec`, source SHA-256
+`d09955bf48b986729dc01acd283fdbe14f7515e9b5e8785c404f34ea53effa07`.
+It remains P2-I1 historical authority and is not admitted as an automatic
+fallback for P2-I2 at the current graph revision. If a future proposed older
+revision lacks the helper, I02 must reopen and explicitly admit a fallback
+before use. The RCAE projection cannot be relabeled as native. Silent upgrade,
+downgrade, or provider substitution is forbidden.
+
+### 9.2 External-state and continuation consequence
+
+Native identity covers only supported PyGRC-owned state. Every selected later
+branch identity must compose, without duplication:
+
+```text
+native restoration identity and digest
+  + RCAE role, access, matching, and control identity
+  + any selected ecology-owned pool/history/constructed state
+  + intervention, producer, configuration, and future-input identity
+  + fixture, analysis, metric, calibration, registration, and policy identity
+```
+
+For every selected restorable branch point, equal native and external identity
+must be followed by independently restored, exactly equal registered future
+inputs and one bounded fail-closed continuation comparison. Identity equality
+does not replace continuation, and neither establishes unrestricted behavioral
+equivalence.
+
+### 9.3 Gate and evidence effect
+
+`P2-I2-SOURCE-ADMISSION-GATE=passed`. I03 may now decide whether the admitted
+native surfaces are adequate for one complete discriminator-preserving
+realization and which minimal explicit producer or constructed transitions are
+needed.
+
+This decision does not select a realization, carrier, pool, response,
+dependence mode, producer, intervention, comparator, or measurement. It does
+not authorize calibration, registration, or candidate execution and supplies
+no P2-I2 scientific evidence or result. The graph restoration closeout's
+negative claim boundary remains controlling.
+
+### 9.4 Reopening conditions
+
+Reopen if:
+
+- the graph revision, worktree assertion, source digest, export, or callable
+  definition changes or fails;
+- I03 needs a source, callable, input family, or role outside the manifest;
+- the native provider fails its admitted supported-input or identity boundary;
+- a fallback provider is proposed; or
+- the external-state composition or bounded-continuation obligation cannot be
+  represented without changing this decision.
+
+## 10. `P2-I2-DEC-008` — Admission closeout correction and revalidation
+
+**Status:** accepted from retained I02R1 evidence
+
+**Question ID:** `L02-Q02`
+
+**Question:** Does the I02 package make every admitted dependency exact and
+reproducible, tie executable imports to the admitted checkout, define complete
+callable/provider/identity coverage, and preserve conditional authority without
+turning admission into realization selection or restoration correctness?
+
+### 10.1 Trigger and corrections
+
+The owner-supplied closeout review reopened the source-admission gate. I02R1
+found and corrected:
+
+1. `P2-I2-CHG-004` used `audit_scope_correction`, which was not allowed after
+   I01. Its corrected class is `source_admission_scope_correction`.
+2. The untracked `1.0.0` freeze bytes were not retained before `1.0.1`
+   replaced them. I02R1 retains an honest semantic reconstruction and digest,
+   not a fabricated predecessor file SHA.
+3. The provider covers current serialized native state but not private
+   `_initial_state` as a separate reset baseline. A registered continuation
+   must forbid reset or compose and compare an explicit reset-baseline
+   identity.
+
+Evidence:
+
+- [I02R1 revalidation](../reports/P2-I2-I02R1-admission-closeout-revalidation.md);
+- [identity/authority validation](../contracts/p2-i2/i02r1-identity-authority-validation.json);
+- [CHG-004 transition](../contracts/p2-i2/i02r1-chg-004-freeze-transition.json);
+  and
+- corrected [admission manifest](../contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json).
+
+### 10.2 Revalidated decision
+
+Retain the exact graph revision, seventeen source identities, and twenty-four
+public symbols admitted by DEC-007. Every source now has granular runtime,
+public-API, contract/schema, evidence/closeout, test/conformance, or
+documentation roles as applicable. Every symbol has an exact imported module,
+qualified name, signature, implementation source/digest, argument boundary,
+causal relevance, and claim ceiling.
+
+The separate RCAE review-entry authority is committed HEAD
+`10c18fad2ba8ecac9ddacb0f0bc55813e6356c60`, with the ten reviewed I02
+worktree artifacts bound by exact SHA-256 values in the I02R1 input freeze.
+That RCAE authority is not the graph revision and does not substitute for any
+graph source identity.
+
+Raw imported provenance establishes that `pygrc`, `pygrc.models`, and all
+symbol implementation modules came from the admitted checkout, not an ambient
+wheel, old editable install, or other checkout. All seventeen manifest,
+revision, and worktree digests match and the graph worktree remained clean.
+
+The native provider is **available for conditional later selection**; it is
+not selected by I02:
+
+```text
+selected_provider = null
+
+compatible I03 profile may propose provider
+I06 must freeze provider ID/version as configuration
+provider selection is not runtime recovery behavior
+provider mismatch blocks branch comparison
+exception or unsupported input cannot trigger fallback
+```
+
+The provider accepts an `LGRC9V3` model/subclass or complete supported
+version-1 LGRC9V3 `Mapping`. Unsupported inputs fail with
+`SnapshotCompatibilityError` and no fallback. Its identity is deterministic
+under equal supported state and mapping reordering. Its digest is:
+
+```text
+SHA256(UTF8(pygrc.core.canonical_json_dumps(identity_document)))
+```
+
+This is distinct from raw snapshot digest and from bounded continuation.
+
+### 10.3 Complete identity boundary
+
+Current topology/allocation/tombstones, physical state, resolved parameter
+identity, routes, pending queues, scheduler/checkpoint/event-time cursors, RNG,
+native runtime logs/history, native attribution fields, events, observables,
+and current native producer configuration are represented by native identity.
+
+RCAE role/access semantics, derived evidence overlays, ecology-owned state,
+interventions, controls/matching, future inputs, fixture/cycle, metric,
+calibration, analysis, registration, and execution identity remain externally
+composed. Private reset baseline is unsupported unless explicitly composed;
+otherwise reset-dependent branching is blocked.
+
+### 10.4 Gate and evidence effect
+
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_revalidation`. I03 may use exact
+admitted contracts to select or reject a realization, but it must itself decide
+the realization class, carrier, dependence mode, composite identity, provider
+configuration, response, and controls.
+
+Source admission proves permitted dependency identity. Provider admission
+proves an available identity contract. Digest agreement proves canonical
+identity consistency. None proves restoration correctness, a pool, causal
+adequacy, ecological support, a boundary rung, or an L02 result.
+
+### 10.5 Reopening conditions
+
+Reopen DEC-008 if:
+
+- any admitted revision/path/digest/import/signature no longer reconstructs;
+- a provider input is accepted or rejected outside the retained contract;
+- any continuation-relevant component lacks native, external, or unsupported
+  disposition;
+- later work uses reset without the registered restriction/composite identity;
+- provider choice changes without realization/registration configuration;
+- fallback occurs after an exception or provider mismatch;
+- identity equality is promoted to restoration correctness or continuation; or
+- I03 meaning, candidate behavior, or scientific evidence is attributed to
+  I02/I02R1.
+
+## 11. `P2-I2-DEC-009` — Updated reset-baseline source and provider admission
+
+**Status:** accepted from retained I02R2 evidence
+
+**Question ID:** `L02-Q02`
+
+**Question:** Does updated PyGRC preserve the declared `reset()` baseline
+across snapshot/save/load, represent baseline-only differences in a distinct
+restoration identity, and fail closed for legacy or malformed data without
+opening I03 scientific choices?
+
+### 11.1 Authority and validation
+
+Admit clean graph revision
+`83e3a300426631ee4df71b661b67d4fcfdfed594` under the exact 31-source and
+31-public-callable scope in the
+[I02R2 manifest](../contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json).
+The prior revision
+`3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5`, DEC-007/008, and the I02R1
+reset restriction remain historical authority; they are not rewritten.
+
+Evidence:
+
+- [I02R2 revalidation](../reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md);
+- [machine validation](../contracts/p2-i2/i02r2-reset-baseline-validation.json);
+- [exact source transition](../contracts/p2-i2/i02r2-graph-source-transition.json);
+  and
+- [I02R2 input freeze](../contracts/p2-i2/i02r2-reset-baseline-revalidation-input-freeze.json).
+
+Imports and every manifest callable resolve under the admitted checkout. All
+manifest, revision, and worktree SHA-256 values match. Focused upstream checks
+passed with 68 tests and 32 subtests; the independent validator retained no
+candidate behavior and the graph repository remained clean.
+
+### 11.2 Reset lifecycle decision
+
+Admit the following native lifecycle contract:
+
+```text
+set_state(state)        preserves the existing baseline
+rebase_reset_baseline() explicitly adopts current state as baseline
+reset()                 restores the available declared baseline
+save/load               preserves current state and declared baseline
+```
+
+The baseline is serialized as non-recursive `pygrc.reset_baseline` version 1
+state with the same family and parameter hash as the outer snapshot. Original
+and loaded models reset identically, and three repeated save/load cycles retain
+the baseline.
+
+Legacy absence is not silently converted into a checkpoint baseline. Current
+state loads, but reset and v2 identity raise `SnapshotCompatibilityError`
+until explicit rebase. Rebase begins a prospective declared lifecycle and does
+not recover historical construction provenance. Any RCAE use of that route
+must externally retain `explicit_rebase_from_legacy_checkpoint` and
+`historical_construction_baseline_recovered=false`.
+
+### 11.3 Provider transition
+
+Retain v1 unchanged as current-state identity and admit v2 as available for
+conditional later selection:
+
+```text
+v1 = current native state
+v2 = current-state identity v1 + reset-baseline identity v1
+
+selected_provider = null
+```
+
+Generic equal-current-state models with different reset baselines retained
+equal v1 digests and different v2 digests. V2 fails closed when baseline state
+is unavailable or malformed. Its digest is SHA-256 over UTF-8 PyGRC canonical
+JSON and matched independent recomputation.
+
+I03 may propose v2 only for a compatible realization. I06 must freeze exact
+provider/schema, persisted-versus-rebased baseline provenance, and all RCAE
+external identity before branch comparison. Provider choice remains
+configuration, never exception recovery.
+
+### 11.4 Gate and evidence effect
+
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`. The I02R1
+blanket reset prohibition is removed only for valid persisted-baseline state
+under a later registered v2 policy. Legacy/unavailable state remains blocked
+until explicit registered rebase.
+
+This decision validates a native persistence and identity contract. It does
+not select a realization, provider, carrier, dependence mode, response,
+comparator, control, or branch point; does not cover RCAE-owned state; and does
+not establish unrestricted continuation equivalence or scientific evidence.
+
+### 11.5 Reopening conditions
+
+Reopen if the updated revision/path/digest/import/signature fails, reset
+diverges across save/load, v2 fails to distinguish reset baselines, v1 is
+silently redefined, legacy/malformed data no longer fails closed, rebase is
+treated as historical recovery, provider selection changes silently, or I03
+meaning/scientific evidence is attributed to I02R2.
+
+## 12. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Source admission and restoration-provider transition | I02 | I01R1 revalidated audit |
 | Realization class and native/producer boundary | I03 | I01R1–I02 dispositions |
 | Dependence mode and causal interfaces | I03 | Selected realization |
 | Primary raw response and orientation | I04 | Discriminator gate |

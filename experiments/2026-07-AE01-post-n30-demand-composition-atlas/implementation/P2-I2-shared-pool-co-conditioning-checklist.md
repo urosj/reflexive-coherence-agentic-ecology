@@ -1,18 +1,18 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
-**Status:** active; I01R1 capability-audit revalidation complete; I02 source
-admission ready but not begun
+**Status:** active; I02R2 reset-baseline source/provider revalidation passed;
+I03 ready but not begun
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I01R1` — complete;
-`P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`
+**Current activity iteration:** none; `P2-I2-I02R2` complete and
+`P2-I2-I03` ready but not begun
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
-`P2-I2-SOURCE-ADMISSION-GATE=ready_not_begun`
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`
 
 **Acceptance ceiling:** `AE01-C2`; no P2-I2 result, cross-lane recurrence, or
 N31+ effect assigned
@@ -102,8 +102,8 @@ Rules:
 | --- | --- | --- | --- |
 | `P2-I2-BRIEF-GATE` | L02 semantic center, D-039 delta, dependence modes, causal factorization, controls, timing, and claim ceiling accepted | Passed | Owner acceptance dated 2026-07-14; `P2-I2-DEC-001`; accepted brief |
 | `P2-I2-SOURCE-AUDIT-GATE` | Source-current public PyGRC capability audit completed under one frozen audit scope | Passed after revalidation | I01R1 quarantines the custom probe, corrects CAP-04, and revalidates all claims from admissible evidence |
-| `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Ready; not begun | I01R1 passed; I02 has not admitted any source |
-| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | Blocked | Requires source audit and admission dispositions |
+| `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Passed after I02R2 revalidation | Updated revision `83e3a300426631ee4df71b661b67d4fcfdfed594`, 31 sources/callables, persisted reset baseline, v1/v2 provider boundary, legacy fail-closed policy, and `P2-I2-DEC-009` |
+| `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | Ready; not begun | I01R1 audit and I02R2 source/provider admission passed; requires named I03 input freeze and disposition |
 | `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Blocked | Requires `DISCRIMINATOR-GATE` |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Blocked | Requires `CAL-PRE-GATE` |
 | `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Blocked | Requires `CAL-GATE` |
@@ -137,9 +137,12 @@ Rules:
 - [x] Native support is preferred when adequate; a minimal explicit producer
   or constructed mechanism remains allowed when native support is absent or
   inadequate.
-- [x] Candidate graph revision
-  `3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5` is only a proposed admission
-  input, not an AE01 dependency.
+- [x] Graph revision
+  `3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5` is the exact historical I02R1
+  admission and remains retained provenance.
+- [x] Updated graph revision
+  `83e3a300426631ee4df71b661b67d4fcfdfed594` is the exact I02R2 admission;
+  this source identity alone selects no provider or realization.
 - [x] No source audit, source admission, realization selection, calibration,
   registration, candidate execution, control outcome, or P2-I2 result is
   inferred from brief preparation.
@@ -155,8 +158,10 @@ Rules:
 | `P2-I2-I00R1` | Post-bootstrap artifact review, provenance correction, and compact validation retention | I00 plus external review | Complete | `P2-I2-CHG-001`; brief gate remains passed |
 | `P2-I2-I01` | Source-current PyGRC capability audit | I00R1 | Complete as executed; corrected by I01R1 | Historical audit disposition retained; current gate effect owned by I01R1 |
 | `P2-I2-I01R1` | Capability-audit closeout revalidation and candidate-probe quarantine review | I01 plus owner-supplied closeout review | Complete; probe quarantined, CAP-04 corrected, static audit revalidated | `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation` |
-| `P2-I2-I02` | Source admission and restoration-profile transition disposition | I01R1 | Ready; not begun | `P2-I2-SOURCE-ADMISSION-GATE` |
-| `P2-I2-I03` | Realization, discriminator, dependence-mode, and operational-hypothesis freeze or missing-prerequisite classification | I01R1–I02 | Blocked | `P2-I2-DISCRIMINATOR-GATE` or retained earlier-stop route |
+| `P2-I2-I02` | Source admission and restoration-profile transition disposition | I01R1 | Complete | `P2-I2-SOURCE-ADMISSION-GATE=passed`; no scientific evidence |
+| `P2-I2-I02R1` | Admission closeout revalidation: identity, authority, imported-package provenance, callable/provider contract, and transition boundary | I02 plus owner-supplied closeout review | Complete; governance/import/provider/coverage package revalidated | `P2-I2-SOURCE-ADMISSION-GATE=passed_after_revalidation`; no scientific evidence |
+| `P2-I2-I02R2` | Updated PyGRC reset-baseline persistence and restoration-identity revalidation | I02R1 plus updated graph revision supplied by project owner | Complete; reset persistence and v2 identity validated, updated source admitted | `P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`; no scientific evidence |
+| `P2-I2-I03` | Realization, discriminator, dependence-mode, and operational-hypothesis freeze or missing-prerequisite classification | I01R1–I02R2 | Ready; not begun | `P2-I2-DISCRIMINATOR-GATE` or retained earlier-stop route |
 | `P2-I2-I04` | Candidate-blind calibration preregistration construction | I03 | Blocked | `P2-I2-CAL-PRE-GATE` |
 | `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze | I04 | Blocked | `P2-I2-CAL-GATE` |
 | `P2-I2-I06` | Exact implementation registration and evidence-bundle construction | I05 | Blocked | `P2-I2-REG-GATE` |
@@ -468,36 +473,269 @@ all thirteen review areas + all ten final closeout conditions
 
 ## 7. `P2-I2-I02` — Source admission and restoration transition
 
-**Status:** ready; not begun. I01R1 re-passed
-`P2-I2-SOURCE-AUDIT-GATE`; no source or restoration-provider transition has
-been admitted.
+**Status:** complete as executed; corrected and revalidated by I02R1;
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_revalidation`.
 
 **Purpose:** admit only the source identities relevant to the selected next
 decision and define any explicit restoration-provider transition.
 
-- [ ] Select the exact graph revision proposed for admission from I01 evidence.
-- [ ] Recompute and retain admitted file digests from that revision.
-- [ ] Bind repository revision, source files, runtime/package identity, and
+**Iteration ID:** `P2-I2-I02`
+
+**Entry authority:** accepted P2-I2 brief; corrected I01/I01R1 audit package;
+`P2-I2-DEC-006`; RCAE entry revision
+`10c18fad2ba8ecac9ddacb0f0bc55813e6356c60`.
+
+**Frozen-input action:** construct and validate
+[the I02 source-admission input freeze](../contracts/p2-i2/i02-source-admission-input-freeze.json)
+from retained I01R1 evidence before recomputing a graph digest, rereading a
+graph source/callable for admission, importing PyGRC, or writing an admission
+disposition.
+
+**Mutation and repository boundary:** RCAE P2-I2 contract, report, decision,
+checklist, hypothesis-prerequisite, source-inventory, navigation, and master-
+governance artifacts only. The graph repository remains read-only. Generated
+temporary validation output may exist only under `/tmp`.
+
+**Required outputs:** frozen I02 input contract; admitted-source digest and
+callable manifest or reviewed non-admission record; narrative source-admission
+and restoration-transition report; source-inventory update; cumulative
+decision; checklist/evidence/change ledgers; integrity validation.
+
+**Evidence effect:** exact source and provider admission only. No realization,
+dependence-mode, response, comparator, calibration, candidate, control,
+boundary-rung, or L02-result effect.
+
+### 7.1 Input freeze before admission activity
+
+- [x] Bind the exact RCAE entry revision, proposed graph revision, clean
+  worktree requirement, and repository-relative identity rule.
+- [x] Freeze the I01R1-derived proposed runtime-source, evidence-source, and
+  public-callable scopes without treating them as admitted.
+- [x] Freeze native-provider inputs, unsupported inputs, identity/digest
+  distinction, external-state boundary, and prior/fallback-provider question.
+- [x] Freeze the bounded equal-input continuation obligation separately from
+  identity equality; do not execute it in I02.
+- [x] Freeze read-only commands, output paths, classification values, change
+  control, and fail-closed/non-evidence rules.
+- [x] Validate the input-freeze JSON and record that only the freeze may be
+  constructed before all preceding checks are complete.
+
+Passing Section 7.1 authorizes only the exact read-only source-admission review
+frozen there. It does not itself admit a source or provider.
+
+The first in-scope runtime read exposed omitted public construction, queue-
+processing, save, reset, and route-configuration callables before any admission
+role or provider decision was assigned. `P2-I2-CHG-004` updates the freeze to
+version `1.0.1`; the complete callable review was rerun before admission
+closure.
+
+### 7.2 Admission and provider disposition
+
+- [x] Select the exact graph revision proposed for admission from I01 evidence.
+- [x] Recompute and retain admitted file digests from that revision.
+- [x] Bind repository revision, source files, runtime/package identity, and
   public callable identity without machine-local paths.
-- [ ] Bind native restoration identity and digest callables when applicable.
-- [ ] State accepted input scope and unsupported inputs.
-- [ ] Declare ecology-owned pool, producer, intervention, and configuration
+- [x] Bind native restoration identity and digest callables when applicable.
+- [x] State accepted input scope and unsupported inputs.
+- [x] Declare ecology-owned pool, producer, intervention, and configuration
   state outside native identity.
-- [ ] Declare the prior/fallback identity provider and its allowed scope.
-- [ ] Forbid silent provider upgrade or downgrade.
-- [ ] Define bounded equal-input continuation obligations separately from
+- [x] Declare the prior/fallback identity provider and its allowed scope.
+- [x] Forbid silent provider upgrade or downgrade.
+- [x] Define bounded equal-input continuation obligations separately from
   restoration-identity equality.
-- [ ] Preserve the graph closeout claim boundary.
-- [ ] Update the AE01 source inventory or retain a reviewed non-admission
+- [x] Preserve the graph closeout claim boundary.
+- [x] Update the AE01 source inventory or retain a reviewed non-admission
   disposition.
+
+### 7.3 Outputs and exit
+
+- [x] Retain the admitted-source digest/callable manifest or reviewed non-
+  admission record.
+- [x] Retain the narrative source-admission and restoration-transition report.
+- [x] Record all I02 decisions and evidence/change-ledger additions.
+- [x] Validate JSON, portable paths, callable/source references, digests,
+  Markdown links, graph revision/status, and no-I03-overreach.
 
 Exit gate `P2-I2-SOURCE-ADMISSION-GATE` requires exact admitted identities or a
 reviewed absence/inadequacy disposition. It grants no calibration or execution
 authority.
 
+## 7A. `P2-I2-I02R1` — Admission closeout revalidation
+
+**Status:** complete;
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_revalidation`.
+
+**Trigger:** owner-supplied I02 closeout review received 2026-07-14.
+
+**Change ID:** `P2-I2-CHG-005`
+
+**Purpose:** independently revalidate I02 as an exact identity, authority, and
+provider-transition result; correct any retention/governance defects without
+selecting an I03 realization or treating restoration identity as restoration
+correctness.
+
+**Entry authority:** accepted P2-I2 brief; I01R1 audit package; I02 freeze,
+manifest, report, source-inventory update, `P2-I2-DEC-007`, and checklist state
+at review entry; owner-supplied I02 closeout review.
+
+**Frozen-input action:** retain and validate an I02R1 closeout-review input
+freeze that binds all entry artifact digests, the exact graph revision, the
+review's fourteen areas and twelve gate conditions, read-only commands,
+environment-bootstrap boundary, required outputs, and no-I03/no-evidence
+rules before inspecting new graph source ranges, importing PyGRC, or running a
+provider conformance check.
+
+**Mutation and repository boundary:** RCAE P2-I2 contracts, reports,
+validation script, decisions, checklist, hypothesis prerequisite, source
+inventory, navigation, master governance, ignored local `.venv`, and `/tmp`
+validation artifacts only. The graph repository remains read-only.
+
+**Required outputs:** frozen I02R1 input contract; CHG-004 predecessor/current
+freeze transition record; corrected admitted-source/provider manifest;
+retained generic validator plus import-provenance and provider-contract
+validation record; complete identity-coverage table; I02R1 narrative
+revalidation; corrected source inventory, decision/checklist/change/evidence
+ledgers, and navigation; integrity validation.
+
+**Evidence effect:** admission integrity and provider-contract authority only.
+No realization, dependence mode, response, comparator, calibration, candidate,
+control, boundary-rung, restoration-correctness, or L02-result effect.
+
+### 7A.1 Input freeze
+
+- [x] Bind exact RCAE review-entry artifact digests separately from graph
+  revision and graph file digests.
+- [x] Freeze all review questions, source/callable/provider/coverage checks,
+  CHG-004 governance checks, cross-artifact checks, and I03-leakage scan.
+- [x] Freeze a generic imported-package provenance check that cannot execute
+  candidate behavior.
+- [x] Authorize ignored RCAE `.venv` creation only if needed for the frozen
+  generic checks; forbid dependency substitution and graph-repository writes.
+- [x] Freeze outputs, classification values, failure effects, and change
+  control.
+- [x] Parse and validate the I02R1 input contract before new review activity.
+
+### 7A.2 Identity, authority, and provider checks
+
+- [x] Reconstruct exact source identity, revision existence, clean/unchanged
+  worktree, repository-relative paths, digests, and separate RCAE entry state.
+- [x] Classify every source by runtime, public API, contract/schema, evidence/
+  closeout, test/conformance, or documentation role as applicable.
+- [x] Tie raw imported `pygrc` and callable provenance to the admitted checkout
+  and normalize only the stable manifest identity.
+- [x] Reconstruct CHG-004's predecessor scope, correct its governance class,
+  retain predecessor/current semantic and file digests, and rerun the complete
+  callable review without retaining an incomplete-scope conclusion.
+- [x] Bind every public symbol's signature/accepted shape, source digest,
+  supported/unsupported scope, causal relevance, and claim boundary.
+- [x] Independently validate restoration-provider input rejection, identity
+  determinism/canonicality, digest algorithm/encoding/recomputation, and raw-
+  snapshot distinction without claiming restoration correctness.
+- [x] Retain complete continuation-relevant native/external/unsupported
+  identity coverage and block later branching on any unresolved component.
+- [x] Revalidate conditional admission, configured provider selection,
+  no-silent-fallback, provider-match, and identity-versus-continuation rules.
+- [x] Revalidate lane-scoped non-retroactive source inventory and cross-
+  artifact agreement.
+- [x] Confirm no I03 scientific choice or positive evidence leaked into I02.
+
+### 7A.3 Outputs and exit
+
+- [x] Retain all required corrected machine and narrative artifacts.
+- [x] Record `P2-I2-DEC-008`, CHG-005, evidence-ledger additions, and any
+  exact correction to DEC-007 without erasing its historical disposition.
+- [x] Run final JSON, digest, import/callable, provider, path/link, checklist,
+  claim-boundary, graph-read-only, and `git diff --check` validation.
+- [x] Re-pass `P2-I2-SOURCE-ADMISSION-GATE` or retain the exact failed
+  condition and keep I03 blocked.
+
+## 7B. `P2-I2-I02R2` — Reset-baseline persistence revalidation
+
+**Status:** complete;
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`.
+
+**Trigger:** project owner reports that PyGRC has been updated to correct the
+reset-baseline persistence gap retained by I02R1.
+
+**Change ID:** `P2-I2-CHG-006`
+
+**Purpose:** determine whether updated PyGRC preserves the public `reset()`
+baseline across native snapshot/save/load restoration and covers that baseline
+in the restoration identity, without selecting an I03 realization or treating
+generic restoration conformance as scientific evidence.
+
+**Entry authority:** accepted P2-I2 brief; I01R1 audit; I02/I02R1 admission
+package and `P2-I2-DEC-008`; clean updated graph revision
+`83e3a300426631ee4df71b661b67d4fcfdfed594`; owner request dated 2026-07-14.
+
+**Frozen-input action:** before inspecting changed graph source or executing a
+reset check, retain and validate an I02R2 input freeze binding the old and new
+graph revisions, clean/read-only worktree, RCAE entry authority, changed-path
+discovery rule, reset/snapshot/save/load/provider contract questions, generic
+fixtures, legacy-compatibility checks, required outputs, and no-I03/no-evidence
+boundary.
+
+**Mutation and repository boundary:** RCAE P2-I2 contracts, validator, report,
+decision, checklist, hypothesis prerequisite, source inventory, navigation,
+and master governance only. PyGRC remains read-only. Generated validation
+artifacts may be retained in RCAE or written temporarily under `/tmp`.
+
+**Required outputs:** I02R2 input freeze; exact old-to-new graph source and
+public-contract transition; checkout-bound reset/provider validator and
+machine record; narrative revalidation; updated or failed admission manifest;
+source inventory, decision, checklist/change/evidence ledgers, hypothesis
+prerequisite, navigation, and integrity checks.
+
+**Evidence effect:** source/provider restoration conformance only. No
+realization, carrier, dependence mode, response, comparator, calibration,
+candidate, control, restoration correctness beyond the tested generic reset
+contract, boundary rung, or L02 result.
+
+### 7B.1 Input freeze
+
+- [x] Bind exact RCAE entry authority and old/new graph revisions separately.
+- [x] Require graph worktree cleanliness before and after every check.
+- [x] Freeze changed-path discovery plus affected source/callable/provider
+  scope before reading changed implementation ranges.
+- [x] Freeze generic reset-baseline fixtures and prohibit P2-I2 candidate
+  behavior.
+- [x] Freeze output paths, failure effects, change control, and I03 blocking.
+- [x] Parse and validate the I02R2 freeze before source inspection or runtime
+  validation.
+
+### 7B.2 Reset and identity validation
+
+- [x] Verify exact changed source/test/contract identities and checkout-bound
+  imports at the updated revision.
+- [x] Determine the declared reset-baseline serialization schema, provider
+  schema/version transition, and legacy snapshot policy.
+- [x] Show that a model and its native save/load restoration have equal current
+  identity and equal `reset()` outcomes.
+- [x] Show that reset-baseline-only differences change restoration identity or
+  otherwise fail closed before branch comparison.
+- [x] Show that repeated save/load cycles preserve the reset baseline.
+- [x] Verify `set_state()` and any explicit rebasing operation follow their
+  declared baseline semantics without silent rebasing.
+- [x] Verify malformed or unsupported reset-baseline payloads fail according
+  to the declared compatibility contract, with no fallback.
+- [x] Confirm the old I02R1 reset restriction is removed only if every affected
+  contract passes and the new source revision is admitted.
+
+### 7B.3 Outputs and exit
+
+- [x] Retain machine and narrative validation with exact source/import/test
+  provenance and no candidate behavior.
+- [x] Record `P2-I2-DEC-009`, CHG-006, source-inventory/manifest transition,
+  and all affected hypothesis/checklist/navigation updates.
+- [x] Run JSON, digest, import/provider, link/path, claim-boundary,
+  graph-read-only, and `git diff --check` validation.
+- [x] Re-pass `P2-I2-SOURCE-ADMISSION-GATE` or retain the exact failed
+  condition and keep I03 blocked.
+
 ## 8. `P2-I2-I03` — Realization and operational-hypothesis freeze
 
-**Status:** blocked on I01 and the applicable I02 disposition.
+**Status:** ready but not begun; requires its own recorded input freeze before
+realization work.
 
 **Purpose:** choose one bounded realization and instantiate the subordinate
 operational hypotheses without changing `AE01-H-L02`.
@@ -716,7 +954,7 @@ valid terminal classification + reconstructed evidence
 | --- | --- | --- | --- | --- |
 | `L02-Q00` | Which public PyGRC surfaces could carry one pool? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: node coherence + native packet contribution + feedback response composition candidate |
 | `L02-Q01` | Is any native surface adequate to the L02 discriminator? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: composition-capable native surfaces exist; complete realization adequacy is not assigned and control gaps remain |
-| `L02-Q02` | Which graph sources and restoration provider are admitted? | I02 | Open | I01R1 passed; admission not begun |
+| `L02-Q02` | Which graph sources and restoration provider are admitted? | I02/I02R1/I02R2 | Decided after reset revalidation | `P2-I2-DEC-009`: updated checkout-bound identities admitted; v1 current-only and v2 reset-aware providers available but unselected; legacy rebase provenance remains external; P2-I1 projection historical-only |
 | `L02-Q03` | Which realization class is selected? | I03 | Open | I01R1–I02 required |
 | `L02-Q04` | Which dependence mode applies? | I03 | Open | Realization required |
 | `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 | Open | Realization required |
@@ -750,6 +988,10 @@ status
 Allowed change classes are:
 
 - `audit_scope_correction` before I01 completion;
+- `source_admission_scope_correction` before the affected admission closes or
+  during a named admission revalidation;
+- `source_admission_revision_update` during a named revalidation when an
+  upstream admitted dependency revision changes;
 - `audit_evidence_quarantine` preserving historical provenance;
 - `infrastructure_correction` with no scientific change;
 - `scientific_refinement` requiring new preregistration/cycle;
@@ -768,6 +1010,9 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-001` | I00R1 owner-supplied artifact-stack review | `closure_only_retention_fix` plus pre-execution clarification | Acceptance provenance/status roles; I01 authorization wording; I03/I04 boundary; I05 metric artifact policy; I08 matrix quantification; OP-09 falsifiability; compact validation evidence | No gate reopened; no rerun; `BRIEF-GATE` remains passed and I01 source inspection remains unopened | Accepted brief, frozen L02/D-039 authorities, no P2-I2 evidence, graph read-only boundary | Complete |
 | `P2-I2-CHG-002` | I01 in-scope `pyproject.toml` package-root declaration | `audit_scope_correction` | Add tracked `src/pygrc/**`; bind checkout-only imports to `${GRC}/src` | No gate reopened; no rerun because no package source or capability classification preceded the correction | Exact graph revision, read-only boundary, public-surface/classification/output contracts, no-evidence effect | Complete |
 | `P2-I2-CHG-003` | I01R1 owner-supplied capability-audit closeout review | `audit_evidence_quarantine` plus `closure_only_retention_fix` | Quarantine candidate-shaped custom probe; rerun classifications from admissible static/generic-test evidence; correct CAP-04 to inadequate; add mode-neutral, public-support, intervention, causal-history, and restoration-ownership checks | Source-audit gate reopened during I01R1 and re-passed after corrected static revalidation; no candidate rerun | Full historical probe provenance, exact graph revision, graph read-only boundary, no source admission/realization/calibration/result | Complete |
+| `P2-I2-CHG-004` | I02 first in-scope LGRC9V3 runtime read | `source_admission_scope_correction` (corrected by I02R1 before re-passing the admission gate) | Add public construction, queue-processing, save, reset, and route-configuration methods omitted from the frozen callable list; no source path added | Complete 24-symbol review rerun before original disposition and enriched I02R1 review; predecessor semantics/current file retained under explicit limits | Exact revisions/source paths, graph read-only and no-candidate rules, output/classification contracts, no-realization/no-evidence effect | Complete after I02R1 revalidation |
+| `P2-I2-CHG-005` | I02R1 owner-supplied identity/authority/transition closeout review | `closure_only_retention_fix` plus `source_admission_scope_correction` | Reopen admission gate; correct CHG-004 governance; retain imported-package provenance, granular roles/callable contracts, provider validation, identity coverage, explicit invariants, and cross-artifact/no-I03 checks | All fourteen review areas and twelve gate conditions passed; source-admission gate re-passed; I03 ready | Historical I02 provenance and DEC-007, exact graph revision, read-only boundary, conditional authority, no restoration-correctness/scientific evidence | Complete |
+| `P2-I2-CHG-006` | I02R2 owner-reported upstream PyGRC reset-baseline correction at revision `83e3a300426631ee4df71b661b67d4fcfdfed594` | `source_admission_revision_update` | Reopen exact graph source/provider admission; validate reset-baseline persistence, identity coverage, schema transition, and compatibility policy before re-admission | Full affected/effective source/import/callable/provider review, 68 tests plus 32 subtests, and generic reset-conformance rerun passed; I03 readiness restored | Historical I02/I02R1 provenance, graph read-only boundary, provider remains unselected, no realization/scientific evidence | Complete |
 
 ## 19. Evidence ledger
 
@@ -776,7 +1021,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1 | Cumulative decision record, DEC-001 through DEC-006 | Decision authority only | Retained |
+| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1/I02/I02R1/I02R2 | Cumulative decision record, DEC-001 through DEC-009 | Decision authority only | Retained |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
 | `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
@@ -784,6 +1029,13 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I01-MATRIX` | I01 | [Capability matrix](../contracts/p2-i2/i01-capability-matrix.json) | Compact native adequacy and producer-demand projection only | Retained |
 | `P2-I2-I01-PROVENANCE` | I01 | [Command provenance](../reports/P2-I2-I01-command-provenance.md) and [source digests](../contracts/p2-i2/i01-source-digests.json) | Reconstructibility and integrity only | Retained |
 | `P2-I2-I01R1-REVALIDATION` | I01R1 | [Capability-audit closeout revalidation](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md), `P2-I2-CHG-003`, and `P2-I2-DEC-006` | Audit validity/process correction only; quarantined probe has no capability or scientific effect | Retained |
+| `P2-I2-I02-FREEZE` | I02 | [Source-admission input freeze](../contracts/p2-i2/i02-source-admission-input-freeze.json) version 1.0.1 and `P2-I2-CHG-004` | Preregistered source/provider review scope and scope correction only | Retained |
+| `P2-I2-I02-ADMISSION` | I02 | [Admitted-source and restoration manifest](../contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json), [transition report](../reports/P2-I2-I02-source-admission-and-restoration-transition.md), source-inventory update, and `P2-I2-DEC-007` | Exact source/provider admission only; no realization or scientific evidence | Retained |
+| `P2-I2-I02R1-FREEZE` | I02R1 | [Closeout-review input freeze](../contracts/p2-i2/i02r1-closeout-review-input-freeze.json) | Preregistered identity/authority/provider review only | Retained |
+| `P2-I2-I02R1-VALIDATION` | I02R1 | [CHG-004 transition](../contracts/p2-i2/i02r1-chg-004-freeze-transition.json), [validator output](../contracts/p2-i2/i02r1-identity-authority-validation.json), and [revalidation report](../reports/P2-I2-I02R1-admission-closeout-revalidation.md) | Admission integrity/provider-contract authority only; reset boundary retained; no restoration correctness or scientific evidence | Retained |
+| `P2-I2-I02R2-FREEZE` | I02R2 | [Reset-baseline revalidation input freeze](../contracts/p2-i2/i02r2-reset-baseline-revalidation-input-freeze.json) | Preregistered updated-source/reset/provider review only | Retained |
+| `P2-I2-I02R2-SOURCE` | I02R2 | [Exact graph source transition](../contracts/p2-i2/i02r2-graph-source-transition.json) and [updated admission manifest](../contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json) | Exact updated source/provider authority only | Retained |
+| `P2-I2-I02R2-VALIDATION` | I02R2 | [Machine reset validation](../contracts/p2-i2/i02r2-reset-baseline-validation.json), [validator](../scripts/p2_i2_i02r2_validate.py), and [revalidation report](../reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md) | Generic reset/provider conformance only; no realization or scientific evidence | Retained |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.
