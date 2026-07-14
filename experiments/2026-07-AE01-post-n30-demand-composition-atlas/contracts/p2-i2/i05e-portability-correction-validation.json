@@ -1,0 +1,136 @@
+{
+  "activity_id": "P2-I2-I05E-BOUNDED-PORTABLE-PATH-CORRECTION",
+  "artifact_id": "P2-I2-I05E-I05-PORTABILITY-CORRECTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "candidate_or_control_invocations": 0,
+  "checks": [
+    {
+      "check_id": "I05E-01",
+      "evidence": {
+        "affected_files": 11,
+        "baseline_violations": 32
+      },
+      "finding": "the correction scope is exactly the accepted eleven-file thirty-two-finding I05D group",
+      "name": "accepted exact I05D group",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-02",
+      "evidence": {
+        "historical_commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+        "source_file_count": 11
+      },
+      "finding": "every source digest reconstructs from the frozen historical commit",
+      "name": "historical source bytes",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-03",
+      "evidence": {
+        "lineage_sha256": "bbceddbb5e567b8b745ec2b8f6b8f62525a592efcef258d2f221340930565ff8",
+        "projection_count": 11
+      },
+      "finding": "the lineage manifest binds every historical and current byte without a machine location",
+      "name": "portable projection lineage identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-04",
+      "evidence": {
+        "scanned_file_count": 16,
+        "violation_count": 0
+      },
+      "finding": "all corrected files and I05E package inputs contain zero persisted absolute-path violations",
+      "name": "zero corrected-group path violations",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-05",
+      "evidence": {
+        "exactly_reconstructed_json_projections": 4
+      },
+      "finding": "all changed JSON records equal the frozen field-only transformation of their historical bytes",
+      "name": "exact historical-to-portable reconstruction",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-06",
+      "evidence": {
+        "builder_invocation_count": 1,
+        "final_receipt_sha256": "1f1694b96f22cde12b54a2e0c00ce76b58f2fdf2fc7cff1114bcc46b9a3396be",
+        "governed_attempt_count": 1,
+        "infrastructure_retries": 0,
+        "second_invocation_refused": true
+      },
+      "finding": "the byte-identical final receipt preserves one attempt one builder call zero retries readback-only reconstruction and second-start refusal",
+      "name": "immutable raw execution receipt",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-07",
+      "evidence": {
+        "authorization_consumed": true,
+        "claim_deletion_forbidden": true,
+        "max_governed_attempts": 1,
+        "writable": false
+      },
+      "finding": "the read-only current claim projection remains present and permanently blocks another start",
+      "name": "permanent consumed-claim guard",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-08",
+      "evidence": {
+        "I04R2_identity_count": 9,
+        "analysis_arithmetic_delta": 1e-12,
+        "analysis_arithmetic_floor": 1e-12,
+        "scientific_change": false
+      },
+      "finding": "accepted I04R2 bytes and every I05 arithmetic/scientific boundary remain unchanged",
+      "name": "scientific and arithmetic invariants",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-09",
+      "evidence": {
+        "builder_call_line": 703,
+        "claim_call_line": 688,
+        "parsed_python_files": 6
+      },
+      "finding": "portable source remains parseable, is non-executable, and preserves historical exclusive consume-before-builder mechanics plus authority binding",
+      "name": "portable one-shot source safety",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05E-10",
+      "evidence": {
+        "candidate_or_control_invocations": 0,
+        "governed_null_or_wrapper_invocations": 0,
+        "interpreter": ".venv/bin/python",
+        "pygrc_model_instantiations": 0,
+        "scientific_result": false
+      },
+      "finding": "I05E requires the repository venv and authorizes no governed null wrapper PyGRC candidate control or scientific operation",
+      "name": "venv and zero-execution boundary",
+      "status": "passed"
+    }
+  ],
+  "corrected_file_count": 11,
+  "corrected_group_violation_count": 0,
+  "freeze_sha256": "a9d5b442a244bfb958faf134be40cef98c16ff0e7e19c399c5af3675fbf60cf3",
+  "governed_null_or_wrapper_invocations": 0,
+  "historical_execution_commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+  "iteration_id": "P2-I2-I05E",
+  "lane_id": "AE01-L02",
+  "lineage_sha256": "bbceddbb5e567b8b745ec2b8f6b8f62525a592efcef258d2f221340930565ff8",
+  "passed_checks": 10,
+  "policy_sha256": "3030fe2cae3eb7561272522aa171f34b173bc13dc94a85a270528673c5465544",
+  "pygrc_model_instantiations": 0,
+  "result_status": "P2-I2-I05E-I05-GROUP-REVIEW-READY",
+  "scientific_result": false,
+  "total_checks": 10,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05e_validate.py",
+    "sha256": "c37aae4bfc9ac71e0ea9fc64d673eff639c0abf14180fa00bb5e035027472a8a"
+  }
+}

@@ -86,7 +86,17 @@ Phase 2 gate reviews:
 - [P2-I2 I05C active-venv correction](P2-I2-I05C-preclaim-venv-correction.md)
   retains the failed-before-claim launch preflight, exact active repository
   venv correction, 13/13 tests, 12/12 zero-null validation, unchanged I04R2
-  bytes, and an unconsumed attempt. It is uncommitted pending owner review.
+  bytes, and the then-unconsumed attempt. The correction was subsequently
+  approved and committed before the single governed arithmetic-null attempt.
+- [P2-I2 I05D portability audit](P2-I2-I05D-portability-audit.md) retains the
+  DEC-032 P2-I2-wide value-redacted inventory after an in-iteration recursive
+  selector correction: 312 violations in 70 of 135 scanned files. DEC-033
+  accepts it and authorizes only the first I05 correction group.
+- [P2-I2 I05E portability correction](P2-I2-I05E-portability-correction.md)
+  retains the first eleven-file historical-to-portable correction, 10/10
+  validation, zero group violations, immutable raw execution lineage, and zero
+  governed or scientific execution. It is owner-accepted for commit; later
+  groups remain closed until retention, and CAL-GATE remains closed.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

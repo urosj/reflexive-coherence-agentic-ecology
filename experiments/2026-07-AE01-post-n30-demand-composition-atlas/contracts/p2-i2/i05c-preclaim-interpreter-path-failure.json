@@ -1,17 +1,17 @@
 {
   "artifact_id": "P2-I2-I05C-PRECLAIM-INTERPRETER-PATH-FAILURE",
-  "artifact_version": "1.0.0",
+  "artifact_version": "1.1.0",
   "iteration_id": "P2-I2-I05C",
   "activity_id": "P2-I2-I05-ARITHMETIC-NULL-EXECUTION",
   "lane_id": "AE01-L02",
   "observed_at": "2026-07-14",
   "launch_head": "98770ae4860ddc269a9ed21bb4803ec75682fc34",
   "normalized_command_interpreter": ".venv/bin/python",
-  "invoked_executable": "/home/uros/Documents/RC-github/reflexive-coherence-agentic-ecology/.venv/bin/python",
-  "venv_prefix": "/home/uros/Documents/RC-github/reflexive-coherence-agentic-ecology/.venv",
-  "base_prefix": "/usr",
+  "invoked_executable_repo_relative": ".venv/bin/python",
+  "venv_prefix_repo_relative": ".venv",
+  "base_runtime_separated": true,
   "venv_active": true,
-  "resolved_executable": "/usr/bin/python3.12",
+  "resolved_binary_identity": "sha256:1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
   "failure_type": "OneShotError",
   "failure_message": "path escapes repository root: .venv/bin/python",
   "direct_cause": "the generic repository-data path guard follows the valid .venv interpreter symlink and incorrectly requires its resolved system binary target to remain inside the repository",
@@ -26,5 +26,13 @@
   "final_receipt_created": false,
   "governed_output_created": false,
   "CAL_GATE": "closed",
-  "scientific_result": false
+  "scientific_result": false,
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-026",
+    "decision_id": "P2-I2-DEC-033",
+    "projection_kind": "historical_record_portable_projection",
+    "scientific_change": false,
+    "source_commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+    "source_sha256": "0a1bff47797a23e18ef143b2418d3d0b697615c88ac121a547450e7234ce3fed"
+  }
 }

@@ -19,13 +19,16 @@ candidate-free `P2-I2-I04R2`, which confirmed all eight machine invariants with
 16/16 focused checks and 7/7 pure tests after correcting the future-I05 route
 to use three raw arms through the live estimator; the project owner accepted
 I04R2 as the sole progression authority and passed CAL-PRE under DEC-026;
-original I04 and I04R1 remain immutable historical artifacts; I05 remains
-unexecuted; proposed DEC-027 remains failed-closed after I05A, while the
-owner-accepted I05B safety correction passed 12/12 zero-null tests and 12/12
-machine checks and was committed under DEC-029 with a separate 10.4 launch;
-the first final preflight then failed before claim on incorrect venv-symlink
-path handling, and owner-authorized I05C now passes 13/13 tests plus 12/12
-zero-null validation while remaining uncommitted for review; all three profiles
+original I04 and I04R1 remain immutable historical artifacts; proposed
+DEC-027 remains failed-closed after I05A; I05B/I05C were owner-approved and
+committed, and the single governed arithmetic null completed with one builder
+call, zero retries, one readback, and a refused second start; its raw evidence
+is retained at `c3eabf3`, but 10.4 closeout exposed forbidden persisted paths;
+DEC-032 now retains the corrected P2-I2-wide I05D audit of 135 files with
+312 value-redacted violations in 70 files; DEC-033 accepts that inventory, and
+the first eleven-file I05E correction group is review-ready after 10/10 checks
+with zero group violations; later corrections, metric freeze, CAL-GATE, I06,
+and candidate execution remain closed pending review; all three profiles
 remain distinct and retained downstream under
 `P2-I2-DEC-011`
 
@@ -913,6 +916,86 @@ with the real active repository venv. Accepted I04R2 bytes remain exact and the
 claim, final receipt, and governed output remain absent. I05C is uncommitted and
 review-ready; no further preflight or invocation is authorized before review
 and retention of the corrected authority.
+
+#### 3.2.15 I05D persisted-path portability-audit projection
+
+The committed I05 execution evidence exposed filesystem-absolute path values,
+and the project owner clarified that absolute paths are never allowed. This is
+not limited to the newly observed output: I05D must statically audit the entire
+current-tree P2-I2 artifact and implementation surface under the AE01
+experiment before any portability correction is accepted. Filesystem-absolute
+POSIX paths, drive-prefixed paths, home-expanded paths, and machine-local
+absolute tokens embedded in persisted commands, values, receipts, reports,
+tests, or source literals are violations. Normalized repository-relative POSIX
+identities, stable logical external-repository IDs, content digests, and
+non-path URIs remain valid.
+
+I05D is an audit iteration, not an implicit repair. It freezes its scanner and
+classification policy before inspection, uses the repository `.venv`, and
+retains only repository-relative affected-file identities, field/line
+locations, violation classes, counts, and digests. It must not reproduce a
+forbidden path value in the new audit artifacts. Git history is not rewritten;
+historical bytes are referenced only by commit and SHA-256. The audit performs
+no null-builder, one-shot-wrapper, PyGRC-model, conformance, candidate/control,
+calibration, response-envelope, or scientific operation. Its result returns as
+`P2-I2-I05D-PORTABILITY-AUDIT-REVIEW-READY`; CAL-GATE stays closed.
+
+The corrected audit is now review-ready: it scans 135 files and retains 312
+value-redacted violations across 70 files. The dependency order is I05 active
+execution/closeout first (32 violations, 11 files), I04/I05 authority next
+(30, 13), I03 realization/conformance (201, 30), I01/I02 source/identity
+(35, 10), then governance/navigation/shared projections (14, 6). No affected
+artifact was corrected and no runtime or scientific path was invoked.
+
+During I05D construction, the first discovery pass showed that the recursive
+contracts and outputs selectors selected directories rather than nested files.
+The selector form and explicit nested-file coverage guards were corrected
+inside I05D before the retained inventory was created. This was not a separate
+iteration and changed no classification, value-redaction, correction-group,
+historical-boundary, runtime, scientific, or gate rule.
+
+#### 3.2.16 I05E bounded portable-path correction projection
+
+After owner acceptance of the exact I05D inventory, I05E may correct one
+dependency-frozen group at a time, starting with the active I05 execution and
+closeout package and returning every group for review before the next begins.
+Repository locations become normalized repository-relative POSIX identities.
+External repositories, interpreters, mounts, and environments are represented
+by stable logical IDs plus exact digest, version, filesystem-capability, or
+admission facts, never by persisted absolute locations or prefixes.
+
+The original governed attempt, arithmetic-null output, and final-receipt bytes
+remain historical evidence in Git and are referenced only by commit and digest.
+Any current-tree portable derivative must identify itself as a projection and
+must not impersonate the raw receipt. The permanent consumed-attempt guard,
+one-attempt/zero-retry result, exact accepted I04R2 estimator, three-arm values,
+per-seed/order margins, arithmetic delta, and candidate/runtime/PyGRC exclusions
+cannot change. No second null invocation, reconstruction generation, or
+scientific execution is permitted. CAL-GATE remains closed until the required
+correction groups and I05 post-run metric artifacts are separately reviewed.
+
+The project owner accepts the I05D inventory as the right next move and opens
+only the first I05 correction group. It binds the eleven affected I05 files
+listed in checklist section 10.4C plus consequential I05 identity/projection
+records. The correction may normalize persisted locations, remove hard-coded
+machine paths and shebangs, and create an explicit historical-to-portable
+lineage. It cannot change the retained scientific numbers, reopen authority,
+or begin the next correction group before review.
+
+The first group is owner-accepted and commit-authorized. An exact input freeze
+binds its eleven historical source hashes and 32 I05D findings. The current
+tree uses repository-relative artifact identities, digest-bound logical
+interpreter identity, logical repository-worktree mount identity, sibling-
+derived PyGRC lookup, and shebang-free `.venv` invocation. Explicit projection
+metadata and a lineage manifest connect changed current records to historical
+Git bytes. Validation passes 10/10 with zero corrected-group violations; the
+focused helper suite passes 13/13. The historical final receipt remains byte-
+unchanged, the consumed claim remains present and read-only, and I05E performs
+no governed execution or scientific operation.
+
+Owner acceptance authorizes retention of this exact package and progression to
+the next bounded correction group only after the commit. It does not pass
+CAL-GATE or authorize a later correction before retention.
 
 ### 3.3 I03A state-carried realization binding
 

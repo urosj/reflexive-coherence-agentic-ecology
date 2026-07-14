@@ -129,7 +129,7 @@ class P2I2I05BOneShotSafetyTest(unittest.TestCase):
     def test_wrong_interpreter_or_command_is_refused(self) -> None:
         identity = one_shot.interpreter_identity()
         wrong_identity = dict(identity)
-        wrong_identity["invoked_executable"] = "/wrong/python"
+        wrong_identity["invoked_executable_repo_relative"] = "wrong/python"
         with self.assertRaises(one_shot.OneShotError):
             one_shot.validate_interpreter(wrong_identity, self.policy)
 
@@ -154,10 +154,10 @@ class P2I2I05BOneShotSafetyTest(unittest.TestCase):
         one_shot.validate_interpreter(identity, self.policy)
         self.assertTrue(identity["venv_active"])
         self.assertEqual(
-            identity["invoked_executable"], str((ROOT / ".venv/bin/python").absolute())
+            identity["invoked_executable_repo_relative"], ".venv/bin/python"
         )
-        self.assertEqual(identity["venv_prefix"], str((ROOT / ".venv").resolve()))
-        self.assertNotEqual(identity["venv_prefix"], identity["base_prefix"])
+        self.assertEqual(identity["venv_prefix_repo_relative"], ".venv")
+        self.assertTrue(identity["base_runtime_separated"])
 
     def test_existing_governed_output_is_refused(self) -> None:
         output = ROOT / self.policy["paths"]["governed_output"]

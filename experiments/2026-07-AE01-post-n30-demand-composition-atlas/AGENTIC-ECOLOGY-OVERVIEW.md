@@ -455,12 +455,22 @@ retained refusal accounting. The I05-owned correction subsequently passed
 is owner-accepted for retention under DEC-029 with immutable acceptance/commit
 authority separated from the future 10.4 launch record. CAL-GATE, I06, and
 candidate execution remain closed.
-After the accepted authority and launch commits, final preflight failed before
-claim because the wrapper incorrectly required the resolved target of the
-active `.venv/bin/python` symlink to stay inside the repository. DEC-031 I05C
-now requires the exact active repository venv plus the frozen target digest;
-13/13 tests and 12/12 zero-null checks pass. The correction is uncommitted for
-review, the sole attempt remains unconsumed, and no null output exists.
+After the accepted authority and launch commits, the first final preflight
+failed before claim on interpreter-path handling. DEC-031 I05C corrected that
+mechanical defect, passed its zero-null validation, and was committed. The sole
+governed arithmetic-null attempt then completed with one builder call, zero
+retries, one readback, and a refused second start; its raw evidence is retained
+at commit `c3eabf3`. During 10.4 closeout, the project owner clarified that
+absolute paths are never allowed. DEC-032 I05D now retains a value-redacted
+P2-I2-wide audit of 135 files: 312 violations across 70 files. A recursive
+selector issue was corrected inside I05D before the inventory was retained.
+DEC-033 accepts that inventory and opens only the first eleven-file I05E group.
+That group is owner-accepted and commit-authorized after 10/10 checks, zero
+remaining group violations, and 13/13 focused helper tests. Historical raw
+execution bytes remain commit/digest evidence while current changed records
+are explicitly labelled portable projections. Later groups, metric freeze,
+CAL-GATE, I06, and candidate execution remain closed; the next correction
+group begins only after retention.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

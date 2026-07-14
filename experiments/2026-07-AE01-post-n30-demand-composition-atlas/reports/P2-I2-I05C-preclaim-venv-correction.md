@@ -1,11 +1,16 @@
 # P2-I2 I05C Pre-Claim Active-Venv Correction
 
+This current-tree report is a portability projection under DEC-033/CHG-026.
+Its historical source is retained at commit `c3eabf3` with SHA-256
+`da49ff8a7c430dcc1a8568fe00d698ddd2af7a771625f029a3b2500ecc2b1f3c`;
+no scientific or execution fact changes here.
+
 ## Disposition
 
 The first final 10.4 preflight failed closed before claim creation because the
 accepted wrapper treated the valid `.venv/bin/python` symlink as a repository
 data file. The command did use the active repository venv; only its resolved
-target, `/usr/bin/python3.12`, is outside the repository.
+digest-bound host Python 3.12 target is outside the repository.
 
 DEC-031/CHG-024 correct only this identity distinction. Thirteen focused tests
 and 12/12 machine checks pass with zero governed attempt, accepted-builder/null,
@@ -22,9 +27,9 @@ venv/base prefixes, resolved target, exception, and zero execution counts.
 normalized command interpreter = .venv/bin/python
 sys.executable = <repository>/.venv/bin/python
 sys.prefix = <repository>/.venv
-sys.base_prefix = /usr
+sys.base_prefix = separated host base runtime; location not persisted
 venv active = true
-resolved target = /usr/bin/python3.12
+resolved target identity = sha256:1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118
 failure stage = read-only final preflight before claim
 attempt claim = absent
 authority consumed = false
@@ -47,8 +52,9 @@ The wrapper now requires all of the following independently:
 - resolved target digest equal to the frozen Python binary SHA-256;
 - CPython major/minor version remains 3.12.
 
-This does not permit direct `/usr/bin/python3.12` invocation. The system path is
-only the frozen target behind the active venv command.
+This does not permit direct host-Python invocation. The target is admitted only
+by the frozen digest behind the active venv command; its location is not
+persisted.
 
 The accepted I04R2 builder, estimator, calibration inputs, output path,
 one-attempt/zero-retry policy, atomic claim, reconstruction, and scientific

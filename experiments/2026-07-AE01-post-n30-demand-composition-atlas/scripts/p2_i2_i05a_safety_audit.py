@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Static, zero-execution audit of the proposed P2-I2 I05 authority path."""
 
 from __future__ import annotations

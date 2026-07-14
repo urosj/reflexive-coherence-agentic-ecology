@@ -33,10 +33,10 @@ surfaces are `p2_i2_i04r2_machine_policy.json` and
 parent. The original `p2_i2_analysis_policy.json`/
 `p2_i2_calibration_policy.json` and I04R1 calibration policy remain immutable
 historical inputs, not parallel executable preregistrations. CAL-PRE passage
-has produced one separately validated, unconsumed I05 arithmetic-null
-authorization. I05A found five execution-safety blockers; the corrected I05B
-package is now owner-accepted for commit, the governed entry point has not run,
-separate 10.4 launch authority remains required, and CAL-GATE remains closed.
+produced one separately validated I05 arithmetic-null authorization. I05A found
+five execution-safety blockers; corrected I05B/I05C authority was accepted and
+committed, and the single governed attempt later completed with zero retries.
+CAL-GATE remains closed on portability and metric-sheet closeout.
 
 `p2_i2_i05b_one_shot_policy.json` is the owner-authorized I05-only correction.
 It freezes one attempt, zero retries, permanent exclusive claim semantics,
@@ -47,7 +47,14 @@ they authorize no invocation without the separate committed 10.4 launch record.
 I05C policy version `1.2.0` corrects only pre-claim interpreter identity: the
 normalized command must remain `.venv/bin/python`, that repository venv must be
 active, and its resolved target must retain the frozen binary digest/version.
-The 13/13-test, 12/12-check correction is uncommitted pending review.
+The 13/13-test, 12/12-check correction was accepted before the single attempt.
+
+`p2_i2_i05d_portability_audit_policy.json` freezes the accepted P2-I2-wide
+value-redacted portability inventory. `p2_i2_i05e_portability_correction_policy.json`
+binds only its first eleven-file I05 historical-to-portable correction group.
+That group passes 10/10 with zero remaining group violations and is owner-
+accepted for commit; the policy grants no pre-commit later group, null rerun,
+metric freeze, or candidate authority.
 
 ## P2-I1 configuration surfaces
 

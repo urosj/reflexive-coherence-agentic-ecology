@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Validate the unconsumed P2-I2 I05 single-invocation authority.
 
 This validator calls only the frozen I04R2 authorization validator.  It never
@@ -21,7 +20,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENT = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas"
 SCRIPTS = EXPERIMENT / "scripts"
-GRAPH = Path("/home/uros/Documents/RC-github/graph-reflexive-coherence")
+GRAPH = ROOT.parent / "graph-reflexive-coherence"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 

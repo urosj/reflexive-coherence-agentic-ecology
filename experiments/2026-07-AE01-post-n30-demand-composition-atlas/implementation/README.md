@@ -120,11 +120,17 @@ one-shot/commit-binding/receipt blockers. I05B corrects those mechanics strictly
 inside I05 and passes 12/12 zero-null tests plus 12/12 machine checks. DEC-029
 owner-accepts the authority-package commit while a separate 10.4 launch record
 remains required; CAL-GATE, I06, and candidate execution remain closed.
-Final launch preflight failed before claim because the active repository venv's
-interpreter symlink resolves to the frozen system binary. DEC-031 I05C now
-validates the exact `.venv/bin/python` command and active venv separately from
-the resolved digest-bound target. It passes 13/13 tests and 12/12 zero-null
-checks, remains uncommitted, and consumes no attempt.
+Final launch preflight first failed before claim on active-venv path handling.
+DEC-031 I05C corrected that mechanism, was retained, and the single governed
+arithmetic null later completed with one builder call and zero retries. Its raw
+evidence is retained at `c3eabf3`. DEC-032/033 now govern the owner-required
+no-absolute-path audit: corrected I05D scans 135 files and retains 312
+value-redacted violations across 70 files, with the 32-violation/11-file I05
+group first. DEC-033 accepts the inventory and the first I05E group is now
+review-ready after 10/10 checks, zero remaining group violations, and 13/13
+focused helper tests. It is owner-accepted for commit; later groups remain
+closed until retention, while CAL-GATE, I06, and candidate execution remain
+closed.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

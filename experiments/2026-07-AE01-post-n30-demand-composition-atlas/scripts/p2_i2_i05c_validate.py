@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Zero-null validation of the P2-I2 I05C active-.venv correction."""
 
 from __future__ import annotations
@@ -16,7 +15,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENT = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas"
 SCRIPTS = EXPERIMENT / "scripts"
-GRAPH = Path("/home/uros/Documents/RC-github/graph-reflexive-coherence")
+GRAPH = ROOT.parent / "graph-reflexive-coherence"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
@@ -198,10 +197,9 @@ def validate() -> dict[str, Any]:
             "I05C-03",
             "real repository venv passes exact identity",
             identity["venv_active"] is True
-            and identity["invoked_executable"]
-            == str((ROOT / ".venv/bin/python").absolute())
-            and identity["venv_prefix"] == str((ROOT / ".venv").resolve())
-            and identity["base_prefix"] != identity["venv_prefix"]
+            and identity["invoked_executable_repo_relative"] == ".venv/bin/python"
+            and identity["venv_prefix_repo_relative"] == ".venv"
+            and identity["base_runtime_separated"] is True
             and identity["binary_sha256"] == policy["interpreter"]["binary_sha256"],
             "the actual command uses the active repository venv while retaining exact target digest/version",
             identity,

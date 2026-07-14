@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """I05-owned one-shot wrapper around the immutable accepted I04R2 builder.
 
 The wrapper consumes authority by exclusive claim creation before importing or
@@ -17,12 +16,15 @@ import platform
 import re
 import subprocess
 import sys
+import tempfile
 from typing import Any, Callable, Mapping, Sequence
 
 
 ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENT = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas"
 SCRIPTS = EXPERIMENT / "scripts"
+HISTORICAL_AUTHORITY_COMMIT = "9d81f156bd1a4d1f0283a408d1684f2491425cfe"
+PORTABLE_PROJECTION_EXECUTION_AUTHORIZED = False
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
@@ -136,15 +138,22 @@ def validate_repository_snapshot(snapshot: Mapping[str, Any], expected_head: str
 def interpreter_identity(executable: Path | None = None) -> dict[str, Any]:
     invoked = (executable or Path(sys.executable)).absolute()
     resolved = invoked.resolve()
+    venv_prefix = Path(sys.prefix).resolve()
+    try:
+        invoked_relative = invoked.relative_to(ROOT.absolute()).as_posix()
+        venv_relative = venv_prefix.relative_to(ROOT.resolve()).as_posix()
+    except ValueError as exc:
+        raise OneShotError("interpreter command or venv is outside the repository") from exc
+    binary_sha256 = _sha256(resolved)
     return {
-        "base_prefix": str(Path(sys.base_prefix).resolve()),
-        "binary_sha256": _sha256(resolved),
+        "base_runtime_separated": venv_prefix != Path(sys.base_prefix).resolve(),
+        "binary_sha256": binary_sha256,
         "implementation": platform.python_implementation(),
-        "invoked_executable": str(invoked),
+        "invoked_executable_repo_relative": invoked_relative,
         "major_minor": [sys.version_info.major, sys.version_info.minor],
-        "resolved_executable": str(resolved),
+        "resolved_binary_identity": f"sha256:{binary_sha256}",
         "venv_active": sys.prefix != sys.base_prefix,
-        "venv_prefix": str(Path(sys.prefix).resolve()),
+        "venv_prefix_repo_relative": venv_relative,
         "version": platform.python_version(),
     }
 
@@ -156,22 +165,28 @@ def validate_interpreter(
     expected = policy["interpreter"]
     expected_invoked = _lexical_repo_path(expected["executable_repo_relative"])
     expected_venv = _lexical_repo_path(expected["venv_prefix_repo_relative"])
-    if identity.get("invoked_executable") != str(expected_invoked):
+    if (
+        identity.get("invoked_executable_repo_relative")
+        != expected["executable_repo_relative"]
+    ):
         raise OneShotError("governed I05 invocation did not use exact .venv command path")
     resolved = expected_invoked.resolve()
-    if identity.get("resolved_executable") != str(resolved):
+    resolved_digest = _sha256(resolved)
+    if identity.get("resolved_binary_identity") != f"sha256:{resolved_digest}":
         raise OneShotError("governed I05 resolved interpreter identity drifted")
     if identity.get("venv_active") is not True:
         raise OneShotError("governed I05 invocation requires an active virtual environment")
-    if identity.get("venv_prefix") != str(expected_venv.resolve()):
+    if identity.get("venv_prefix_repo_relative") != expected["venv_prefix_repo_relative"]:
         raise OneShotError("governed I05 invocation used the wrong virtual environment")
-    if identity.get("base_prefix") == identity.get("venv_prefix"):
+    if Path(sys.prefix).resolve() != expected_venv.resolve():
+        raise OneShotError("active virtual environment does not match repository .venv")
+    if identity.get("base_runtime_separated") is not True:
         raise OneShotError("governed I05 virtual environment is not isolated")
     if identity.get("implementation") != expected["implementation"]:
         raise OneShotError("wrong Python implementation for governed I05 invocation")
     if identity.get("major_minor") != expected["major_minor"]:
         raise OneShotError("wrong Python version for governed I05 invocation")
-    if identity.get("binary_sha256") != _sha256(resolved):
+    if identity.get("binary_sha256") != resolved_digest:
         raise OneShotError("reported Python binary identity is inconsistent")
     if identity.get("binary_sha256") != expected["binary_sha256"]:
         raise OneShotError("wrong Python binary identity for governed I05 invocation")
@@ -281,7 +296,8 @@ def validate_claim_storage(policy: Mapping[str, Any]) -> dict[str, Any]:
     """Validate the permanent claim location without creating the claim."""
 
     claim = _path(policy["paths"]["attempt_receipt"])
-    if str(claim).startswith("/tmp/") or str(claim).startswith("/var/tmp/"):
+    temporary_root = Path(tempfile.gettempdir()).resolve()
+    if claim == temporary_root or temporary_root in claim.parents:
         raise OneShotError("I05 claim cannot use temporary storage")
     relative_parts = claim.relative_to(ROOT).parts
     cursor = ROOT
@@ -308,7 +324,7 @@ def validate_claim_storage(policy: Mapping[str, Any]) -> dict[str, Any]:
         "claim_path": str(claim.relative_to(ROOT)),
         "filesystem_type": fields[0],
         "mount_options": fields[2],
-        "mount_target": fields[1],
+        "mount_identity": "repository_worktree",
         "nearest_existing_ancestor": str(ancestor.relative_to(ROOT)),
         "repository_local": True,
         "symlink_components_present": False,
@@ -362,7 +378,12 @@ def validate_frozen_hashes(policy: Mapping[str, Any]) -> dict[str, str]:
         "machine_policy_sha256": _sha256(_path(paths["machine_policy"])),
         "parent_analysis_policy_sha256": _sha256(_path(paths["parent_analysis_policy"])),
         "preregistration_sha256": _sha256(_path(paths["preregistration"])),
-        "wrapper_sha256": _sha256(_path(paths["wrapper"])),
+        "wrapper_sha256": _sha256_bytes(
+            _git_bytes(
+                "show",
+                f"{HISTORICAL_AUTHORITY_COMMIT}:{paths['wrapper']}",
+            )
+        ),
     }
     if actual != policy["frozen_hashes"]:
         raise OneShotError("I05B or accepted I04R2 frozen hashes drifted")
@@ -639,6 +660,8 @@ def governed_run(
     expected_head: str,
     command: Sequence[str],
 ) -> dict[str, Any]:
+    if PORTABLE_PROJECTION_EXECUTION_AUTHORIZED is not True:
+        raise OneShotError("portable projection wrapper has no execution authority")
     preflight_receipt = preflight(
         policy,
         expected_head=expected_head,

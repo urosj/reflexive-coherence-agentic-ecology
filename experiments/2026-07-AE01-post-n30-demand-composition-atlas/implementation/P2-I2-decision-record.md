@@ -65,7 +65,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-028` | May the five I05A execution-safety blockers be corrected, and under what scope? | Owner-authorized: I05-owned mechanics only; I04R2 immutable; zero-null validation; return uncommitted | Opens I05B construction/tests only; commit, null invocation, CAL-GATE, I06, and candidates remain closed | 2026-07-14 |
 | `P2-I2-DEC-029` | Does the project owner accept I05B, and which authority is committed? | Accepted: commit the complete I05/I05A/I05B package with immutable acceptance; null launch remains separate | Authorizes package retention only; 10.4 launch requires its own exact record and committed HEAD | 2026-07-14 |
 | `P2-I2-DEC-030` | After the accepted I05B commit, may 10.4 consume the single arithmetic-null attempt? | Accepted: create and commit the exact separate launch record, then execute the one-shot with zero retries | Opens one I05 arithmetic-null attempt only; CAL-GATE and I06 remain pending review | 2026-07-14 |
-| `P2-I2-DEC-031` | How must the pre-claim `.venv` path-resolution failure be corrected? | Owner-authorized: always use the active repository `.venv`; separate invoked command path from resolved binary identity | Opens I05C correction/zero-null validation only; recommit required before another preflight | 2026-07-14 |
+| `P2-I2-DEC-031` | How must the pre-claim `.venv` path-resolution failure be corrected? | Accepted and committed: always use the active repository `.venv`; separate invoked command identity from resolved binary identity | Historical I05C correction enabled the later single attempt; its portability debt is now governed by DEC-032 | 2026-07-14 |
+| `P2-I2-DEC-032` | How must the newly exposed absolute-path violations be audited and corrected? | Owner-authorized audit now review-ready: 135 files scanned, 312 value-redacted violations in 70 files; an in-iteration selector correction ensures nested coverage; correction order begins with I05 | I05E correction, metric freeze, CAL-GATE, I06, and all execution remain closed pending audit acceptance | 2026-07-14 |
+| `P2-I2-DEC-033` | Does the owner accept the I05D inventory and which correction group may begin? | Accepted as the right next move: open only the exact first I05 portability correction group and return it uncommitted for review | Opens I05E group 1 only; no null rerun, later correction group, metric freeze, CAL-GATE, I06, or candidate execution | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1852,7 +1854,8 @@ preflight. After claim, retain failure and do not reopen authority for a retry.
 
 ## 33. `P2-I2-DEC-031` — Active `.venv` pre-claim correction
 
-**Status:** correction review-ready; commit authorization pending
+**Status:** correction owner-approved and committed; historical authority for
+the later single governed attempt
 
 **Decision:** Preserve the project owner's rule “always use venv.” The exact
 governed command remains `.venv/bin/python`; the process must report an active
@@ -1884,7 +1887,105 @@ Reopen DEC-031 if correction would permit a direct system-Python command,
 accept an inactive or different venv, weaken the target digest/version, change
 scientific bytes, or create/reuse a governed attempt.
 
-## 34. Pending decision queue
+## 34. `P2-I2-DEC-032` — P2-I2-wide persisted-path portability audit
+
+**Status:** audit review-ready; correction blocked on owner acceptance of the
+exact inventory
+
+**Decision:** The project owner states that absolute paths are never allowed
+and accepts the proposed P2-I2-wide portability audit/correction freeze. I05D
+must first audit the complete current-tree P2-I2 artifact and implementation
+surface under the AE01 experiment using a deterministic policy frozen before
+inspection. The audit must classify filesystem-absolute, drive-prefixed,
+home-expanded, and embedded machine-local path tokens as violations wherever
+they are persisted in data, commands, receipts, reports, tests, or source.
+
+The inventory may retain only repository-relative affected-file identities,
+field or line locations, violation classes, counts, and digests. It must not
+copy a forbidden value into its own records. Non-path URIs and mathematical
+slash notation are not filesystem paths. Historical Git objects remain
+immutable and are referenced only by commit and SHA-256; history is not
+rewritten.
+
+I05D authorizes static audit construction and execution with the repository
+`.venv` only. It authorizes no affected-artifact correction, null builder,
+one-shot wrapper, PyGRC model, candidate/control, conformance, calibration,
+response-envelope, or scientific operation. The audit must group violations
+into dependency-aware correction batches beginning with the active I05 package
+and return uncommitted for review.
+
+I05E remains blocked until the owner accepts that exact inventory. Future
+correction groups must preserve historical execution lineage by commit/digest,
+label portable projections honestly, preserve the consumed one-attempt/
+zero-retry fact, and never rerun the null. Every group returns for review before
+the next begins. CAL-GATE and I06 remain closed.
+
+Reopen DEC-032 if the audit scope omits a P2-I2 persisted surface, reproduces a
+forbidden value, treats machine provenance as an exception, edits an affected
+artifact before audit acceptance, rewrites history, or invokes any runtime or
+scientific path.
+
+**Audit result:** The corrected scanner inspected 135 files and retained 312
+value-redacted violations in 70 files. The frozen correction order is I05
+active execution/closeout first, followed by I04/I05 authority dependencies,
+I03 realization/conformance, I01/I02 source/identity, and governance/navigation/
+shared projections. No affected artifact was corrected and every runtime or
+scientific invocation count is zero.
+
+During I05D construction, the first discovery pass showed that two recursive
+selectors selected directories rather than nested files. Their form and
+explicit nested-file coverage guards were corrected inside I05D before the
+review inventory was retained. This was not a separate iteration and changed
+no classification, redaction, grouping, historical, runtime, scientific, or
+gate rule.
+
+## 35. `P2-I2-DEC-033` — I05D acceptance and first I05 correction group
+
+**Status:** accepted by project owner; first I05 correction group accepted and
+commit-authorized
+
+**Decision:** The project owner's statement that proceeding is the right move
+accepts the exact I05D inventory and opens only the first I05E correction
+group. The group is the eleven affected I05 files listed in checklist section
+10.4C plus consequential I05 authority/projection identities required to keep
+historical raw evidence and current portable derivatives explicit.
+
+The group may replace persisted repository locations with normalized relative
+identities, replace external locations with stable logical IDs plus existing
+digest/version/capability facts, remove hard-coded machine paths and shebangs,
+and create a portable-lineage manifest. Original raw execution bytes remain
+historical Git evidence referenced only by commit and SHA-256. Current portable
+derivatives must identify themselves as projections and cannot impersonate the
+raw receipts.
+
+The correction must preserve the permanent consumed-attempt guard, one
+attempt, one builder call, zero retries, one readback, refused second start,
+accepted I04R2 estimator, three-arm values, ten margins, arithmetic delta, and
+candidate/runtime/PyGRC exclusions. It may invoke no null builder, one-shot
+wrapper, PyGRC model, candidate/control, conformance, calibration, or scientific
+path. Return the group uncommitted for owner review. Later correction groups,
+metric freeze, CAL-GATE, I06, and candidate execution remain closed.
+
+Reopen DEC-033 if the group expands beyond exact consequential identities,
+changes scientific or one-shot facts, loses historical lineage, leaves an I05
+absolute-path violation, invokes a prohibited path, or begins a later group
+before review.
+
+**Outcome:** The exact group passed review and is commit-authorized. Its frozen
+validator passes 10/10 with zero path violations across all eleven corrected
+files; the focused helper suite passes 13/13 under `.venv`. The raw execution
+output, claim, and final receipt reconstruct at `c3eabf3`; the current output
+and claim identify themselves as portable projections; the final receipt is
+byte-unchanged; the read-only consumed claim remains present. No governed null,
+wrapper entry point, builder, PyGRC, candidate/control, conformance,
+calibration, or scientific operation occurred in I05E.
+
+The project owner explicitly accepts this result, authorizes its commit, and
+directs progression to the next bounded group after retention. That direction
+does not itself begin or mutate the next group before this package is
+committed.
+
+## 36. Pending decision queue
 
 No item below is decided by this record yet:
 

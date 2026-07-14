@@ -65,8 +65,13 @@ graph surfaces, and proposed graph discriminators.
   DEC-028 I05B correction passes 12/12 zero-null tests and 12/12 checks with
   immutable I04R2 bytes; DEC-029 owner-accepts its retention while keeping the
   10.4 launch record separate. DEC-031 I05C then corrects a failed-before-claim
-  active-venv symlink validation defect and passes 13/13 tests plus 12/12
-  zero-null checks; it remains uncommitted for review. Under
+  active-venv validation defect, after which the one governed arithmetic null
+  completes with zero retries. DEC-032/033 retain the owner-required
+  P2-I2-wide no-absolute-path audit: 312 value-redacted violations in 70 of 135
+  files, with I05 first. DEC-033 accepts the inventory; its first eleven-file
+  I05E group passes 10/10 with zero group violations and is owner-accepted for
+  commit. Later groups remain closed until retention, and CAL-GATE remains
+  closed. Under
   owner-accepted `P2-I2-DEC-011`, all three
   profiles remain in the downstream program and realization selection occurs
   separately within each mode. Their local IDs do not extend the closed Phase

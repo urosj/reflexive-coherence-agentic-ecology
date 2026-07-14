@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Zero-null validation of the P2-I2 I05B one-shot correction."""
 
 from __future__ import annotations
@@ -16,7 +15,7 @@ from typing import Any, Mapping
 ROOT = Path(__file__).resolve().parents[3]
 EXPERIMENT = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas"
 SCRIPTS = EXPERIMENT / "scripts"
-GRAPH = Path("/home/uros/Documents/RC-github/graph-reflexive-coherence")
+GRAPH = ROOT.parent / "graph-reflexive-coherence"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
