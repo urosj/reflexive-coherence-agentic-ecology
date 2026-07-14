@@ -1,14 +1,23 @@
 {
   "artifact_id": "P2-I2-I03B-ENVIRONMENT-RECEIPT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "e2c8d84c8f50a35c4a017234ad81d47f5f27552d5739d0745b67240560952b6f"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03B",
   "recorded_at": "2026-07-14",
   "purpose": "Bind the RCAE virtual environment and exact admitted PyGRC checkout before the history-carried runtime-conformance freeze.",
   "environment": {
     "invoked_python": ".venv/bin/python",
-    "sys_executable": "/home/uros/Documents/RC-github/reflexive-coherence-agentic-ecology/.venv/bin/python",
-    "sys_prefix": "/home/uros/Documents/RC-github/reflexive-coherence-agentic-ecology/.venv",
-    "base_prefix": "/usr",
+    "sys_executable": ".venv/bin/python",
+    "sys_prefix": ".venv",
+    "base_prefix": "base-runtime:system",
     "venv_active": true,
     "python_implementation": "CPython",
     "python_version": "3.12.3",
@@ -16,11 +25,11 @@
     "ambient_or_system_package_substitution_allowed": false
   },
   "admitted_graph_checkout": {
-    "path": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "path": "external-repository:graph-reflexive-coherence",
     "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "read_only_required": true,
-    "pythonpath": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src",
-    "pygrc_import_file": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/__init__.py",
+    "pythonpath": "external-repository:graph-reflexive-coherence/src",
+    "pygrc_import_file": "external-repository:graph-reflexive-coherence/src/pygrc/__init__.py",
     "pyproject_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
     "uv_lock_sha256": "8935f5c29dd72daf9755b5c495be6e1af5fbbd933e9ce9c6f226a02027c3d3f7"
   },
@@ -31,7 +40,7 @@
     "PyYAML": "6.0.3"
   },
   "verification": {
-    "command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python -c <environment-and-import-check>",
+    "command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python -c <environment-and-import-check>",
     "exit_code": 0,
     "direct_dependency_versions_match": true,
     "pygrc_import_is_under_admitted_checkout": true,

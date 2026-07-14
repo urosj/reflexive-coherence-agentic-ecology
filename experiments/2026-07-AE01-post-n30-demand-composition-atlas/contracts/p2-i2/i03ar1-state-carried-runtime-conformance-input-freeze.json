@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03AR1-STATE-CARRIED-RUNTIME-CONFORMANCE-INPUT-FREEZE",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "d21cc390ab6655ce98c7dbf6827a73d9b3d537c9d90cb98b81f8e2da510a1d94"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03AR1",
   "lane_id": "AE01-L02",
@@ -13,7 +22,7 @@
     "change_record": "P2-I2-CHG-009",
     "accepted_design_decision": "P2-I2-DEC-010",
     "rcae_entry_revision": "26811d395c0662473629d5710983e3c1fdb4f58f",
-    "graph_repository": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "graph_repository_read_only": true,
     "source_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
@@ -121,7 +130,7 @@
     "python_version": "3.12.3",
     "pythonhashseed": "0",
     "pythondontwritebytecode": "1",
-    "pythonpath": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src",
+    "pythonpath": "external-repository:graph-reflexive-coherence/src",
     "direct_dependencies": {
       "matplotlib": "3.10.9",
       "networkx": "3.6.1",
@@ -256,9 +265,9 @@
     "scientific_response_selected": false,
     "scientific_comparator_selected": false,
     "calibration_delta_selected": false,
-    "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
-    "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json --output /tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
-    "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json /tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json"
+    "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+    "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json --output temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+    "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json"
   },
   "quarantine": {
     "evidence_effect": "realization implementation-conformance only",
@@ -280,7 +289,7 @@
   "outputs": {
     "environment_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-environment-receipt.json",
     "raw_conformance_record_and_runtime_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
-    "reconstruction_temporary_output": "/tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+    "reconstruction_temporary_output": "temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
     "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03AR1-state-carried-runtime-conformance.md"
   }
 }

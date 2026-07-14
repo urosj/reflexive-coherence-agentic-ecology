@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Zero-runtime closeout revalidation for P2-I2-I03B.
 
 This validator imports no PyGRC module and instantiates no model. It inspects

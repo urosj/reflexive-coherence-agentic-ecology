@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Zero-runtime causal-well-formedness closeout for P2-I2-I03C.
 
 This validator imports no PyGRC package and instantiates no model. It inspects

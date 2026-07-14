@@ -1,0 +1,59 @@
+{
+  "activity_id": "P2-I2-I05G-THIRD-BOUNDED-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05G-PORTABILITY-CORRECTION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "owner_authorized_group": "i03_realization_and_conformance",
+    "parent_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50"
+  },
+  "baseline_group_identity": {
+    "affected_file_count": 30,
+    "audit_policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+    "audit_result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "correction_group": "i03_realization_and_conformance",
+    "correction_order_position": 3,
+    "violation_count": 201
+  },
+  "candidate_or_runtime_evidence_effect": "none",
+  "correction_scope_count": 30,
+  "expected_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05g-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05G-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05g-portability-correction-validation.json"
+  },
+  "historical_authority": {
+    "history_rewrite_authorized": false,
+    "projection_source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "raw_I03_evidence_representation": "commit_and_sha256_only"
+  },
+  "invocation_ceiling_after_freeze": {
+    "calibration_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "I05G_validator_entrypoint_starts": 3,
+    "null_or_one_shot_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_model_instantiations": 0
+  },
+  "iteration_id": "P2-I2-I05G",
+  "lane_id": "AE01-L02",
+  "later_correction_groups_authorized": false,
+  "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05g_portability_correction_policy.json",
+  "policy_sha256": "121f5d6701957fdbcd7d7ae9649ffcd102dc4d99a734b68e203f7186011b5e5b",
+  "pre_freeze_authority_identities": {
+    "checklist_sha256": "c750a62d7b18ccaf284e9c3bd285881f6c3f8fa49cacd2febe79f016d8f0606e",
+    "decision_record_sha256": "ee72cf924a8ba336d3b9155e43167f691452bad1d27ab0fe611a10e5bb3d7a5d",
+    "hypothesis_sha256": "65b467e96c5a2147020270f3499a547cffc3484d508b77d50b25ae8eaba83b2f"
+  },
+  "prior_group_identities": {
+    "I05F_acceptance_sha256": "4c5804ebe2c531145be40170c5832a59ecbe347092ee0760e68aa83e77cf7cb4",
+    "I05F_lineage_sha256": "bc9fad25db7f207685cebca0a32270fda2b7289395eb93c0ab0993c2909b38d1",
+    "I05F_validation_sha256": "e32e52063dc2ea1e64c520b827722fd97185b20d08e0b7109921144e06e2af11"
+  },
+  "result_status_ceiling": "P2-I2-I05G-I03-GROUP-REVIEW-READY",
+  "scientific_change_authorized": false,
+  "source_identity_rule": "policy correction_scope must equal the accepted third I05D group and reconstruct every source from commit 99c64dd",
+  "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05g_validate.py"
+}

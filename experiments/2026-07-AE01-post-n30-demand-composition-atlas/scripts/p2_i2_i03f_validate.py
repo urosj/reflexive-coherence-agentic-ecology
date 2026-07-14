@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Validate the compact P2-I2 I03 family-closeout index.
 
 This is intentionally an index/traceability validator. It imports no PyGRC,
@@ -81,12 +80,18 @@ def _result(check_id: str, name: str, condition: bool, finding: str, evidence: A
     }
 
 
-def _pointer(document: Mapping[str, Any], pointer: str) -> Any:
+def _pointer(document: Mapping[str, Any], pointer: Mapping[str, Any]) -> Any:
+    if set(pointer) != {"segments"} or not isinstance(pointer["segments"], list):
+        raise AssertionError("pointer must be a structured ordered segment list")
     value: Any = document
-    for part in pointer.strip("/").split("/"):
+    for part in pointer["segments"]:
         if isinstance(value, list):
-            value = value[int(part)]
+            if not isinstance(part, int):
+                raise AssertionError("list pointer segment must be an integer")
+            value = value[part]
         else:
+            if not isinstance(part, str):
+                raise AssertionError("mapping pointer segment must be a string")
             value = value[part]
     return value
 
@@ -223,7 +228,7 @@ def validate(input_path: Path, index_path: Path) -> dict[str, Any]:
     for position, row in enumerate(op_index):
         for mode in MODES:
             pointer = row[f"{mode}_pointer"]
-            if pointer != f"/operational_projections/{position}":
+            if pointer != {"segments": ["operational_projections", position]}:
                 op_complete = False
             elif _pointer(contracts[mode], pointer)["op_id"] != row["op_id"]:
                 op_complete = False

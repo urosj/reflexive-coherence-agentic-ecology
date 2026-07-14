@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03AR1R1-RUNTIME-RECONSTRUCTION-RECEIPT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03AR1R1",
   "recorded_at": "2026-07-14",
@@ -52,12 +61,12 @@
       "assertions_total": 136,
       "assertions_passed": 136,
       "assertions_failed": 0,
-      "temporary_output_path": "/tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+      "temporary_output_path": "temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
       "output_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0"
     }
   ],
   "byte_comparison": {
-    "command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json /tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+    "command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
     "exit_code": 0,
     "byte_identical": true
   },

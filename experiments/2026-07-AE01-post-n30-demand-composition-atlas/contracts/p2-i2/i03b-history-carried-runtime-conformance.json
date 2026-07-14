@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03B-HISTORY-CARRIED-RUNTIME-CONFORMANCE",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d"
+  },
   "artifact_version": "1.0.0",
   "assertion_summary": {
     "failed": 0,
@@ -22149,14 +22158,14 @@
   "run_policy": {
     "adaptive_branching_allowed": false,
     "branch_scenarios_per_invocation": 12,
-    "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json /tmp/p2-i2-i03b-history-carried-runtime-conformance.reconstructed.json",
+    "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json temporary-output:p2-i2-i03b-history-carried-runtime-conformance.reconstructed.json",
     "calibration_delta_selected": false,
     "each_branch_executed_exactly_once_per_invocation": true,
-    "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+    "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
     "evidence_invocations": 1,
     "infrastructure_retry_requires_new_change_record": true,
     "parameter_search_allowed": false,
-    "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json --output /tmp/p2-i2-i03b-history-carried-runtime-conformance.reconstructed.json",
+    "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json --output temporary-output:p2-i2-i03b-history-carried-runtime-conformance.reconstructed.json",
     "reconstruction_invocations": 1,
     "rescue_variants_allowed": false,
     "retry_limit": 0,
@@ -22197,11 +22206,11 @@
     },
     "harness_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
     "harness_sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec",
-    "pygrc_import_file": "/home/uros/Documents/RC-github/graph-reflexive-coherence/src/pygrc/__init__.py",
+    "pygrc_import_file": "external-repository:graph-reflexive-coherence/src/pygrc/__init__.py",
     "python_implementation": "CPython",
     "python_version": "3.12.3",
-    "sys_executable": "/home/uros/Documents/RC-github/reflexive-coherence-agentic-ecology/.venv/bin/python",
-    "sys_prefix": "/home/uros/Documents/RC-github/reflexive-coherence-agentic-ecology/.venv"
+    "sys_executable": ".venv/bin/python",
+    "sys_prefix": ".venv"
   },
   "scientific_evidence_assigned": false,
   "status": "runtime_conformant"

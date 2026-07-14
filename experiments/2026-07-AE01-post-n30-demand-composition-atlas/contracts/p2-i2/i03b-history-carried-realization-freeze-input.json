@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03B-HISTORY-CARRIED-REALIZATION-FREEZE-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "1d1ab37502b9138c5c98b3048bd854ac7ed17d5775c9fd34ad8475608a0bcc7f"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03B",
   "lane_id": "AE01-L02",
@@ -11,7 +20,7 @@
     "owner_direction": "Accept the review-ready I03A/I03AR1 package for staged progression and move to 8B next.",
     "owner_direction_effect": "Authorizes design-first P2-I2-I03B only; no I03C, I04, calibration, registration, scientific candidate, control result, or L02 conclusion.",
     "rcae_entry_revision": "c13ccb74d3ddc7c6f8f3870a15e17e024c9200dd",
-    "graph_repository": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "graph_repository_read_only": true,
     "decisions": [

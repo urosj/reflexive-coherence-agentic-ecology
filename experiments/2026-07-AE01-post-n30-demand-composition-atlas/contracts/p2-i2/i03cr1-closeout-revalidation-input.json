@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03CR1-CLOSEOUT-REVALIDATION-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "81e8b72be0df84cc757e2ff2d1b0dc398daabef4a8422de3b525897d19ff1dba"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03CR1",
   "lane_id": "AE01-L02",
@@ -7,10 +16,10 @@
   "status": "frozen_before_i03cr1_source_dataflow_and_retained_artifact_audit",
   "purpose": "Revalidate the review-ready I03C bounded hybrid implementation-conformance package against the exact project-owner-supplied causal-well-formedness and progression review without changing or rerunning any I03C design or runtime artifact.",
   "authority": {
-    "owner_review_path": "/home/uros/.codex/attachments/b9e2a79f-b3d2-480d-a019-f78701836a7b/pasted-text.txt",
+    "owner_review_path": "attachment:b9e2a79f-b3d2-480d-a019-f78701836a7b/pasted-text.txt",
     "owner_review_sha256": "df1e823f2ff640713638b2b08266de45b99c5410bdd880f4380e75016e7a0298",
     "rcae_entry_revision": "9332a67558764043d6f6adf67dc82a19187871db",
-    "graph_repository": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "graph_repository_read_only": true,
     "decisions": ["P2-I2-DEC-011", "P2-I2-DEC-012", "P2-I2-DEC-015", "P2-I2-DEC-016"],

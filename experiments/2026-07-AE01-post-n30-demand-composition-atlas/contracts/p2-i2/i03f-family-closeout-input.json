@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03F-FAMILY-CLOSEOUT-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "0593c7821370ce138db4fba9bbbc5fd0bbd50f88788e22618acb6b421b2401e3"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03F",
   "lane_id": "AE01-L02",
@@ -18,7 +27,7 @@
     ],
     "accepted_baseline_commit": "fc3fb0f638eb0b180cb05d081e6dc447f24af66b",
     "accepted_baseline_tree": "83e86f767e5822ca8c65c69e7c748683cb28a8b7",
-    "graph_repository": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "graph_required_clean": true
   },

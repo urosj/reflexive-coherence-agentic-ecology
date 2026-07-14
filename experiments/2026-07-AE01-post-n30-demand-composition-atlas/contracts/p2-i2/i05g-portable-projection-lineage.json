@@ -1,0 +1,170 @@
+{
+  "artifact_id": "P2-I2-I05G-PORTABLE-PROJECTION-LINEAGE",
+  "artifact_version": "1.0.0",
+  "activity_id": "P2-I2-I05G-THIRD-BOUNDED-PORTABILITY-CORRECTION",
+  "authority": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "parent_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50"
+  },
+  "correction_group": "i03_realization_and_conformance",
+  "file_count": 30,
+  "historical_evidence": {
+    "history_rewritten": false,
+    "representation": "source_commit_and_source_sha256",
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50"
+  },
+  "projection_rows": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-environment-receipt.json",
+      "source_sha256": "9c03de03258790d5781e506764348fb08a9893269bfbb05013b4e2d7bdcc1fe0",
+      "projection_sha256": "6b86dbbab2ca99855b7251105d7b932119adbd3e1852cfbed699d13c72cbf2c5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json",
+      "source_sha256": "d21cc390ab6655ce98c7dbf6827a73d9b3d537c9d90cb98b81f8e2da510a1d94",
+      "projection_sha256": "b2b274904d0441c209a8341e89cc9be98ec639d96bf35b5042e95685274065c9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+      "source_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+      "projection_sha256": "3a9dbabef3b33fb650d6332d7f44a429b7abb8480a1bd8f21f3b34e51276bb91"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json",
+      "source_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b",
+      "projection_sha256": "4a40a80210384771fe6c0722d97b6d64679ee2a15fdf34d18e02297c0b425f3e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json",
+      "source_sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c",
+      "projection_sha256": "8ebf7f598a686ad82420235d229d13c79b9bbad7daf995485d424b6b26fe145a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-environment-receipt.json",
+      "source_sha256": "e2c8d84c8f50a35c4a017234ad81d47f5f27552d5739d0745b67240560952b6f",
+      "projection_sha256": "2622e4a6557d4d9f15dde64866848553dd735e921df82fdddb3a7f1fd9543bd6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-freeze-input.json",
+      "source_sha256": "1d1ab37502b9138c5c98b3048bd854ac7ed17d5775c9fd34ad8475608a0bcc7f",
+      "projection_sha256": "31c000bb83855a0ed5d4ef4ad43e1da02dc1321bd5a8052ff3e41196054c972a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json",
+      "source_sha256": "dd0146f656f3f480d5ff3265696cacf39322fa5fe13991aed822614eee217720",
+      "projection_sha256": "f097699be59cb9078a5b96cfaaa7330eb1ba598a235bdf8658ecec630d746d0f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+      "source_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+      "projection_sha256": "af59b00a29fa8e90e4098fbedac862f3e1fd64d23b2e6a3573a552f39c0e5fc3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-runtime-reconstruction-receipt.json",
+      "source_sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9",
+      "projection_sha256": "577dcdcade520d233d3cd5e4b382792e8790d608af35e14ed65a0837dc8ebdd3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation-input.json",
+      "source_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca",
+      "projection_sha256": "845c583a0bddd2b2de2c4822cf644d3fc1d342c77bce6f22f62bbb60fe31616f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-environment-receipt.json",
+      "source_sha256": "2375d0167bc3ab4c3ff175b0083a2df4f97099b5bdcde6e17b0efe86b20849ff",
+      "projection_sha256": "c416c9e32b6e333c58364b0280e44c64e62d74d05708cdc1b1c3cb50ef0de184"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-freeze-input.json",
+      "source_sha256": "1d69dedf481aba2ad996388d35e03e65e7a7e5cc39276feaf8d92b730208c353",
+      "projection_sha256": "d3afef6804e57fb0c5731f15cbd8c074f1a0f5919c5f559e343ef859a82671dc"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json",
+      "source_sha256": "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d",
+      "projection_sha256": "ad96ccb6c473688bdb8b8abf15eb98e88b98b7f4d47cccf19f60e5ec9f3234c4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+      "source_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
+      "projection_sha256": "3c866b52232cf2a3826c15315578f7340b6c7dd86174cd246111db42de85d00e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-runtime-reconstruction-receipt.json",
+      "source_sha256": "a81a119d9f5efbf50e543efbbe5b7c85b013f8b9c36015fdf4050f1069936516",
+      "projection_sha256": "a373ebf940876f2a8280c8947ed8c11b237d496795e280376cffb7a0060ef590"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-closeout-revalidation-input.json",
+      "source_sha256": "81e8b72be0df84cc757e2ff2d1b0dc398daabef4a8422de3b525897d19ff1dba",
+      "projection_sha256": "19edf94dea564a636c6f241dcfbdf09623d457576ff216ec9d5c412e6d6844c8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-index.json",
+      "source_sha256": "f9c8591a9d3c30a90097548b359e399b3a9e73b01f06ea7cd63d5971ceeb3fa6",
+      "projection_sha256": "19edd25c9dc073da44d37dfa2ec678958a03850eafc431134ef9c82fc2e929c0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-input.json",
+      "source_sha256": "0593c7821370ce138db4fba9bbbc5fd0bbd50f88788e22618acb6b421b2401e3",
+      "projection_sha256": "aedf84c6d8edc2972700e8385c3ad132822958776a5dcc99364f86b00192c817"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-validation.json",
+      "source_sha256": "44b2db8e49b603ddd2b59f3e5bc2f367708b5b93b8b1e9e19e5b8c062cb93c9e",
+      "projection_sha256": "574db3cca8d2788480c3e62dc292d092a04bb891766a3f44820d1743fd3ef502"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03AR1-state-carried-runtime-conformance.md",
+      "source_sha256": "3806791733b1170116eb3020701d0dc2151b4151b19f73d3bf961cb2c79410b8",
+      "projection_sha256": "564a6fcf4ca3cc28d73887fe8691498bd60fffe1412c8d0643a862353fc1d770"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03a_validate.py",
+      "source_sha256": "4e84a78eefe72daa6bcd8acab04765dec96189df68e5bbcec18e6ecc4d0153e1",
+      "projection_sha256": "2cb42f26591e2468fef31fbf4375471a235fc7dbe433b9f4988ab3cf3e2a9bbd"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py",
+      "source_sha256": "616fd3b9c6a884ca785f60c075505e808c564f8975e3791fb21241f250024060",
+      "projection_sha256": "48994b328af2fc48e4c921850bbb399e85c17e5dabfd9fded6286e674fc62e0f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
+      "source_sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec",
+      "projection_sha256": "d2e7109978d9a35d4d031a9b935fe433d6953e13f0e02b8b24f1b6af9a431276"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_validate.py",
+      "source_sha256": "9f8fb8404c739f7fc8e50c40abde718af6450bb6e2e1ea32f6e7d038e541593d",
+      "projection_sha256": "ed0de288c96dd5cc06818b80917946f473a78c3f82ca9d7cf9b2abb84f3ebac7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03br1_validate.py",
+      "source_sha256": "04012330987d4c4b0f2676b33f18f526ae82125bc58cd5663d37bfe131a5ea42",
+      "projection_sha256": "49a580d4b3a42f4a4a2c790b43cfffdf74382d343381245597b20f61e13f66c7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py",
+      "source_sha256": "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191",
+      "projection_sha256": "2ac806caa79a4f5f0842e7fe0f5aa420276576f2e317aa6cf288115c25686767"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_validate.py",
+      "source_sha256": "df31dbe76fc53146d6b165a8d76ceee4c0363ec5a01c98e713936252ca1a94bb",
+      "projection_sha256": "f56054b351caa07c3f4c339f96f6b183a65ecdffc00f8af2ada6a7815568e5f3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03cr1_validate.py",
+      "source_sha256": "6ea869b440f5a9102685a55e524ec976046d764570ee9d5ea512446016d5423e",
+      "projection_sha256": "97da386f26f792026ddd543f0705767fdd91b5ed2200396303e28eb5f938a687"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03f_validate.py",
+      "source_sha256": "9bcc9e1cddd0844b8415f77399df6204e17f3dbe0170a8d88003beaf211e2a21",
+      "projection_sha256": "77624411afdbce3389809462e1fc322ac90d12a68dae33b552c199f42aef6482"
+    }
+  ],
+  "scientific_change": false
+}

@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03C-HYBRID-RUNTIME-RECONSTRUCTION-RECEIPT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "a81a119d9f5efbf50e543efbbe5b7c85b013f8b9c36015fdf4050f1069936516"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03C",
   "lane_id": "AE01-L02",
@@ -25,15 +34,15 @@
     "evidence_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
     "evidence_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
     "evidence_size_bytes": 884406,
-    "reconstruction_path": "/tmp/p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "reconstruction_path": "temporary-output:p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
     "reconstruction_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
     "reconstruction_size_bytes": 884406,
     "byte_identical": true
   },
   "commands": {
-    "evidence": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
-    "reconstruction": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output /tmp/p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
-    "comparison": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json /tmp/p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "evidence": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+    "reconstruction": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output temporary-output:p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "comparison": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json temporary-output:p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
     "comparison_exit_code": 0
   },
   "assertion_result": {

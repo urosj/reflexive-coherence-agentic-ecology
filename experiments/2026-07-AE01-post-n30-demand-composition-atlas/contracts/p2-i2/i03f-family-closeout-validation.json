@@ -83,6 +83,15 @@
     "total": 9
   },
   "artifact_id": "P2-I2-I03F-FAMILY-CLOSEOUT-VALIDATION",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "44b2db8e49b603ddd2b59f3e5bc2f367708b5b93b8b1e9e19e5b8c062cb93c9e"
+  },
   "artifact_version": "1.0.0",
   "check_summary": {
     "blocking_findings": 0,
@@ -200,11 +209,11 @@
       "evidence": [
         {
           "authority_pointers": [
-            "/causal_factorization",
-            "/native_interventions",
-            "/non_private_access_witness",
-            "/private_partition_competitor",
-            "/restoration_profile_proposal"
+            {"segments": ["causal_factorization"]},
+            {"segments": ["native_interventions"]},
+            {"segments": ["non_private_access_witness"]},
+            {"segments": ["private_partition_competitor"]},
+            {"segments": ["restoration_profile_proposal"]}
           ],
           "carrier": "one native P coherence scalar is the complete causal C_P",
           "causal_history_role": "none; ordered packet/surface lineage L is audit-only",
@@ -228,12 +237,12 @@
         },
         {
           "authority_pointers": [
-            "/causal_factorization",
-            "/history_and_state_interventions",
-            "/non_private_access_witness",
-            "/private_partition_competitor",
-            "/producer_boundary",
-            "/restoration_profile_proposal"
+            {"segments": ["causal_factorization"]},
+            {"segments": ["history_and_state_interventions"]},
+            {"segments": ["non_private_access_witness"]},
+            {"segments": ["private_partition_competitor"]},
+            {"segments": ["producer_boundary"]},
+            {"segments": ["restoration_profile_proposal"]}
           ],
           "carrier": "authoritative active H_P plus its declared native M_H = R_H(H_P) output-port binding",
           "causal_state_role": "P is matched non-primary encounter/audit state and cannot enter V",
@@ -257,12 +266,12 @@
         },
         {
           "authority_pointers": [
-            "/causal_factorization",
-            "/hybrid_discriminators",
-            "/common_access_witness",
-            "/private_partition_competitor",
-            "/producer_boundary",
-            "/restoration_profile_proposal"
+            {"segments": ["causal_factorization"]},
+            {"segments": ["hybrid_discriminators"]},
+            {"segments": ["common_access_witness"]},
+            {"segments": ["private_partition_competitor"]},
+            {"segments": ["producer_boundary"]},
+            {"segments": ["restoration_profile_proposal"]}
           ],
           "carrier": "one composite native P plus authoritative H_P with M_H = R_H(H_P)",
           "causal_component_rule": "P and H_P/M_H are separately intervenable through the same V; nonlinearity, interaction, synergy, and irreducibility are not required",
@@ -328,66 +337,66 @@
       "evidence": [
         {
           "family_distinction": "one P versus one H_P/M_H versus one composite P+H_P/M_H",
-          "history_carried_pointer": "/operational_projections/0",
-          "hybrid_pointer": "/operational_projections/0",
+          "history_carried_pointer": {"segments": ["operational_projections", 0]},
+          "hybrid_pointer": {"segments": ["operational_projections", 0]},
           "op_id": "H-L02-OP-01",
-          "state_carried_pointer": "/operational_projections/0"
+          "state_carried_pointer": {"segments": ["operational_projections", 0]}
         },
         {
           "family_distinction": "V follows P versus M_H versus the joint live P/M_H relation",
-          "history_carried_pointer": "/operational_projections/1",
-          "hybrid_pointer": "/operational_projections/1",
+          "history_carried_pointer": {"segments": ["operational_projections", 1]},
+          "hybrid_pointer": {"segments": ["operational_projections", 1]},
           "op_id": "H-L02-OP-02",
-          "state_carried_pointer": "/operational_projections/1"
+          "state_carried_pointer": {"segments": ["operational_projections", 1]}
         },
         {
           "family_distinction": "lineage remains audit-only while physical state/history roles stay mode-specific",
-          "history_carried_pointer": "/operational_projections/2",
-          "hybrid_pointer": "/operational_projections/2",
+          "history_carried_pointer": {"segments": ["operational_projections", 2]},
+          "hybrid_pointer": {"segments": ["operational_projections", 2]},
           "op_id": "H-L02-OP-03",
-          "state_carried_pointer": "/operational_projections/2"
+          "state_carried_pointer": {"segments": ["operational_projections", 2]}
         },
         {
           "family_distinction": "native P intervention versus active H_P intervention versus both independent component interventions",
-          "history_carried_pointer": "/operational_projections/3",
-          "hybrid_pointer": "/operational_projections/3",
+          "history_carried_pointer": {"segments": ["operational_projections", 3]},
+          "hybrid_pointer": {"segments": ["operational_projections", 3]},
           "op_id": "H-L02-OP-04",
-          "state_carried_pointer": "/operational_projections/3"
+          "state_carried_pointer": {"segments": ["operational_projections", 3]}
         },
         {
           "family_distinction": "mode-specific marginal and insufficient-repetition alternatives remain unresolved until I04",
-          "history_carried_pointer": "/operational_projections/4",
-          "hybrid_pointer": "/operational_projections/4",
+          "history_carried_pointer": {"segments": ["operational_projections", 4]},
+          "hybrid_pointer": {"segments": ["operational_projections", 4]},
           "op_id": "H-L02-OP-05",
-          "state_carried_pointer": "/operational_projections/4"
+          "state_carried_pointer": {"segments": ["operational_projections", 4]}
         },
         {
           "family_distinction": "private one-node, one-history, or one-pair reads cannot aggregate across partitions",
-          "history_carried_pointer": "/operational_projections/5",
-          "hybrid_pointer": "/operational_projections/5",
+          "history_carried_pointer": {"segments": ["operational_projections", 5]},
+          "hybrid_pointer": {"segments": ["operational_projections", 5]},
           "op_id": "H-L02-OP-06",
-          "state_carried_pointer": "/operational_projections/5"
+          "state_carried_pointer": {"segments": ["operational_projections", 5]}
         },
         {
           "family_distinction": "direct/controller equivalence cannot replace the registered mode-specific causal path",
-          "history_carried_pointer": "/operational_projections/6",
-          "hybrid_pointer": "/operational_projections/6",
+          "history_carried_pointer": {"segments": ["operational_projections", 6]},
+          "hybrid_pointer": {"segments": ["operational_projections", 6]},
           "op_id": "H-L02-OP-07",
-          "state_carried_pointer": "/operational_projections/6"
+          "state_carried_pointer": {"segments": ["operational_projections", 6]}
         },
         {
           "family_distinction": "equal-P order invariance versus history order sensitivity versus matched-P hybrid history-component sensitivity",
-          "history_carried_pointer": "/operational_projections/7",
-          "hybrid_pointer": "/operational_projections/7",
+          "history_carried_pointer": {"segments": ["operational_projections", 7]},
+          "hybrid_pointer": {"segments": ["operational_projections", 7]},
           "op_id": "H-L02-OP-08",
-          "state_carried_pointer": "/operational_projections/7"
+          "state_carried_pointer": {"segments": ["operational_projections", 7]}
         },
         {
           "family_distinction": "alternate eligible responder uses the same mode-specific non-private mask; R05 remains unresolved",
-          "history_carried_pointer": "/operational_projections/8",
-          "hybrid_pointer": "/operational_projections/8",
+          "history_carried_pointer": {"segments": ["operational_projections", 8]},
+          "hybrid_pointer": {"segments": ["operational_projections", 8]},
           "op_id": "H-L02-OP-09",
-          "state_carried_pointer": "/operational_projections/8"
+          "state_carried_pointer": {"segments": ["operational_projections", 8]}
         }
       ],
       "finding": "All nine OPs have an exact pointer into each of the three accepted contracts (27 entries) without reassessing mode evidence.",
@@ -399,33 +408,33 @@
       "evidence": [
         {
           "authority_pointers": [
-            "/causal_factorization",
-            "/native_interventions",
-            "/non_private_access_witness",
-            "/private_partition_competitor",
-            "/restoration_profile_proposal"
+            {"segments": ["causal_factorization"]},
+            {"segments": ["native_interventions"]},
+            {"segments": ["non_private_access_witness"]},
+            {"segments": ["private_partition_competitor"]},
+            {"segments": ["restoration_profile_proposal"]}
           ],
           "mode": "state_carried"
         },
         {
           "authority_pointers": [
-            "/causal_factorization",
-            "/history_and_state_interventions",
-            "/non_private_access_witness",
-            "/private_partition_competitor",
-            "/producer_boundary",
-            "/restoration_profile_proposal"
+            {"segments": ["causal_factorization"]},
+            {"segments": ["history_and_state_interventions"]},
+            {"segments": ["non_private_access_witness"]},
+            {"segments": ["private_partition_competitor"]},
+            {"segments": ["producer_boundary"]},
+            {"segments": ["restoration_profile_proposal"]}
           ],
           "mode": "history_carried"
         },
         {
           "authority_pointers": [
-            "/causal_factorization",
-            "/hybrid_discriminators",
-            "/common_access_witness",
-            "/private_partition_competitor",
-            "/producer_boundary",
-            "/restoration_profile_proposal"
+            {"segments": ["causal_factorization"]},
+            {"segments": ["hybrid_discriminators"]},
+            {"segments": ["common_access_witness"]},
+            {"segments": ["private_partition_competitor"]},
+            {"segments": ["producer_boundary"]},
+            {"segments": ["restoration_profile_proposal"]}
           ],
           "mode": "hybrid"
         }

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Static validator for the P2-I2-I03A state-carried freeze.
 
 This script validates retained authority and admitted source dataflow only. It

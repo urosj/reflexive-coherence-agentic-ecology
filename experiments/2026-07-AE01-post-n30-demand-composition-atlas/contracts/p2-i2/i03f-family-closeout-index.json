@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03F-FAMILY-CLOSEOUT-INDEX",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "f9c8591a9d3c30a90097548b359e399b3a9e73b01f06ea7cd63d5971ceeb3fa6"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03F",
   "lane_id": "AE01-L02",
@@ -26,7 +35,7 @@
       "private_binding": "separate native P1 and P2 one-node reads with no common read or aggregate",
       "producer_boundary": "RCAE declares roles/schedules/guards only; native PyGRC owns every causal pool and later-response transition",
       "restoration_owner": "native LGRC9V3 restoration identity v2 plus external declarative role/access/intervention binding",
-      "authority_pointers": ["/causal_factorization", "/native_interventions", "/non_private_access_witness", "/private_partition_competitor", "/restoration_profile_proposal"]
+      "authority_pointers": [{"segments": ["causal_factorization"]}, {"segments": ["native_interventions"]}, {"segments": ["non_private_access_witness"]}, {"segments": ["private_partition_competitor"]}, {"segments": ["restoration_profile_proposal"]}]
     },
     {
       "mode": "history_carried",
@@ -43,7 +52,7 @@
       "private_binding": "separate H1/M_H1 and H2/M_H2 carriers/readouts with no shared reducer or aggregate",
       "producer_boundary": "RCAEActiveHistoryAdapterV1 owns only H_P admission/intervention/readout materialization; native PyGRC owns score, threshold, scheduling, and later response",
       "restoration_owner": "paired native-v2 plus adapter current/reset identity under one manifest and external role/intervention binding",
-      "authority_pointers": ["/causal_factorization", "/history_and_state_interventions", "/non_private_access_witness", "/private_partition_competitor", "/producer_boundary", "/restoration_profile_proposal"]
+      "authority_pointers": [{"segments": ["causal_factorization"]}, {"segments": ["history_and_state_interventions"]}, {"segments": ["non_private_access_witness"]}, {"segments": ["private_partition_competitor"]}, {"segments": ["producer_boundary"]}, {"segments": ["restoration_profile_proposal"]}]
     },
     {
       "mode": "hybrid",
@@ -60,7 +69,7 @@
       "private_binding": "separate P1/H1/M_H1 and P2/H2/M_H2 pairs with pair-local masks and no aggregate",
       "producer_boundary": "adapter owns only active history/readout materialization; native PyGRC owns live joint score, threshold, scheduling, and later response",
       "restoration_owner": "layered paired native-v2 plus adapter current/reset identity plus exact joint/private mask and role binding",
-      "authority_pointers": ["/causal_factorization", "/hybrid_discriminators", "/common_access_witness", "/private_partition_competitor", "/producer_boundary", "/restoration_profile_proposal"]
+      "authority_pointers": [{"segments": ["causal_factorization"]}, {"segments": ["hybrid_discriminators"]}, {"segments": ["common_access_witness"]}, {"segments": ["private_partition_competitor"]}, {"segments": ["producer_boundary"]}, {"segments": ["restoration_profile_proposal"]}]
     }
   ],
   "cross_mode_symbol_qualification": {
@@ -83,15 +92,15 @@
     "rewrite_rule": "a later mode may reuse symbols and structural machinery but cannot change an earlier mode's causal roles, masks, interventions, or accepted realization class"
   },
   "operational_hypothesis_index": [
-    {"op_id": "H-L02-OP-01", "state_carried_pointer": "/operational_projections/0", "history_carried_pointer": "/operational_projections/0", "hybrid_pointer": "/operational_projections/0", "family_distinction": "one P versus one H_P/M_H versus one composite P+H_P/M_H"},
-    {"op_id": "H-L02-OP-02", "state_carried_pointer": "/operational_projections/1", "history_carried_pointer": "/operational_projections/1", "hybrid_pointer": "/operational_projections/1", "family_distinction": "V follows P versus M_H versus the joint live P/M_H relation"},
-    {"op_id": "H-L02-OP-03", "state_carried_pointer": "/operational_projections/2", "history_carried_pointer": "/operational_projections/2", "hybrid_pointer": "/operational_projections/2", "family_distinction": "lineage remains audit-only while physical state/history roles stay mode-specific"},
-    {"op_id": "H-L02-OP-04", "state_carried_pointer": "/operational_projections/3", "history_carried_pointer": "/operational_projections/3", "hybrid_pointer": "/operational_projections/3", "family_distinction": "native P intervention versus active H_P intervention versus both independent component interventions"},
-    {"op_id": "H-L02-OP-05", "state_carried_pointer": "/operational_projections/4", "history_carried_pointer": "/operational_projections/4", "hybrid_pointer": "/operational_projections/4", "family_distinction": "mode-specific marginal and insufficient-repetition alternatives remain unresolved until I04"},
-    {"op_id": "H-L02-OP-06", "state_carried_pointer": "/operational_projections/5", "history_carried_pointer": "/operational_projections/5", "hybrid_pointer": "/operational_projections/5", "family_distinction": "private one-node, one-history, or one-pair reads cannot aggregate across partitions"},
-    {"op_id": "H-L02-OP-07", "state_carried_pointer": "/operational_projections/6", "history_carried_pointer": "/operational_projections/6", "hybrid_pointer": "/operational_projections/6", "family_distinction": "direct/controller equivalence cannot replace the registered mode-specific causal path"},
-    {"op_id": "H-L02-OP-08", "state_carried_pointer": "/operational_projections/7", "history_carried_pointer": "/operational_projections/7", "hybrid_pointer": "/operational_projections/7", "family_distinction": "equal-P order invariance versus history order sensitivity versus matched-P hybrid history-component sensitivity"},
-    {"op_id": "H-L02-OP-09", "state_carried_pointer": "/operational_projections/8", "history_carried_pointer": "/operational_projections/8", "hybrid_pointer": "/operational_projections/8", "family_distinction": "alternate eligible responder uses the same mode-specific non-private mask; R05 remains unresolved"}
+    {"op_id": "H-L02-OP-01", "state_carried_pointer": {"segments": ["operational_projections", 0]}, "history_carried_pointer": {"segments": ["operational_projections", 0]}, "hybrid_pointer": {"segments": ["operational_projections", 0]}, "family_distinction": "one P versus one H_P/M_H versus one composite P+H_P/M_H"},
+    {"op_id": "H-L02-OP-02", "state_carried_pointer": {"segments": ["operational_projections", 1]}, "history_carried_pointer": {"segments": ["operational_projections", 1]}, "hybrid_pointer": {"segments": ["operational_projections", 1]}, "family_distinction": "V follows P versus M_H versus the joint live P/M_H relation"},
+    {"op_id": "H-L02-OP-03", "state_carried_pointer": {"segments": ["operational_projections", 2]}, "history_carried_pointer": {"segments": ["operational_projections", 2]}, "hybrid_pointer": {"segments": ["operational_projections", 2]}, "family_distinction": "lineage remains audit-only while physical state/history roles stay mode-specific"},
+    {"op_id": "H-L02-OP-04", "state_carried_pointer": {"segments": ["operational_projections", 3]}, "history_carried_pointer": {"segments": ["operational_projections", 3]}, "hybrid_pointer": {"segments": ["operational_projections", 3]}, "family_distinction": "native P intervention versus active H_P intervention versus both independent component interventions"},
+    {"op_id": "H-L02-OP-05", "state_carried_pointer": {"segments": ["operational_projections", 4]}, "history_carried_pointer": {"segments": ["operational_projections", 4]}, "hybrid_pointer": {"segments": ["operational_projections", 4]}, "family_distinction": "mode-specific marginal and insufficient-repetition alternatives remain unresolved until I04"},
+    {"op_id": "H-L02-OP-06", "state_carried_pointer": {"segments": ["operational_projections", 5]}, "history_carried_pointer": {"segments": ["operational_projections", 5]}, "hybrid_pointer": {"segments": ["operational_projections", 5]}, "family_distinction": "private one-node, one-history, or one-pair reads cannot aggregate across partitions"},
+    {"op_id": "H-L02-OP-07", "state_carried_pointer": {"segments": ["operational_projections", 6]}, "history_carried_pointer": {"segments": ["operational_projections", 6]}, "hybrid_pointer": {"segments": ["operational_projections", 6]}, "family_distinction": "direct/controller equivalence cannot replace the registered mode-specific causal path"},
+    {"op_id": "H-L02-OP-08", "state_carried_pointer": {"segments": ["operational_projections", 7]}, "history_carried_pointer": {"segments": ["operational_projections", 7]}, "hybrid_pointer": {"segments": ["operational_projections", 7]}, "family_distinction": "equal-P order invariance versus history order sensitivity versus matched-P hybrid history-component sensitivity"},
+    {"op_id": "H-L02-OP-09", "state_carried_pointer": {"segments": ["operational_projections", 8]}, "history_carried_pointer": {"segments": ["operational_projections", 8]}, "hybrid_pointer": {"segments": ["operational_projections", 8]}, "family_distinction": "alternate eligible responder uses the same mode-specific non-private mask; R05 remains unresolved"}
   ],
   "source_obligations": [
     {"source_id": "I03BR1-OBL-01", "source_check": "RV-03", "duty": "I06 must preserve the frozen fixture's unique registered source-to-P path or add an explicit route/channel admission key; source/target membership is the current exact adapter filter.", "owner_iteration": "I06", "status": "retained_undischarged"},

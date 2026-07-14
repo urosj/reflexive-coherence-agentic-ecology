@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03BR1-CLOSEOUT-REVALIDATION-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03BR1",
   "lane_id": "AE01-L02",
@@ -7,10 +16,10 @@
   "status": "frozen_before_i03br1_source_dataflow_and_retained_artifact_audit",
   "purpose": "Revalidate the review-ready I03B package against the project-owner-supplied acceptance review without changing or rerunning any I03B design or runtime artifact.",
   "authority": {
-    "owner_review_path": "/home/uros/.codex/attachments/050693b2-7c8a-4ad4-8506-0f39985a0a7a/pasted-text.txt",
+    "owner_review_path": "attachment:050693b2-7c8a-4ad4-8506-0f39985a0a7a/pasted-text.txt",
     "owner_review_sha256": "cd9d84e5b1785a57d46e2ed38747939e4c56984838900cf99524ff1cadcf2ec1",
     "rcae_entry_revision": "c13ccb74d3ddc7c6f8f3870a15e17e024c9200dd",
-    "graph_repository": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "graph_repository_read_only": true
   },

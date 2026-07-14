@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Static validator for the P2-I2-I03C hybrid design freeze.
 
 This validator checks authority, admitted-source identity, native joint-read

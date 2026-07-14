@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Frozen P2-I2-I03AR1 state-carried implementation conformance harness.
 
 This is quarantined implementation evidence. It must not be used for I04/I05
@@ -40,7 +39,7 @@ from pygrc.models import (
 
 
 ROOT = Path(__file__).resolve().parents[3]
-GRAPH_ROOT = Path("/home/uros/Documents/RC-github/graph-reflexive-coherence")
+GRAPH_ROOT = ROOT.parent / "graph-reflexive-coherence"
 GRAPH_SOURCE_ROOT = GRAPH_ROOT / "src"
 SCRIPT_RELATIVE_PATH = (
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/"
@@ -207,11 +206,14 @@ def _validate_freeze(freeze: Mapping[str, Any], freeze_path: Path) -> dict[str, 
         "harness_sha256": _sha256(Path(__file__)),
         "graph_before": graph_before,
         "graph_source_digests": source_digests,
-        "pygrc_import_file": str(actual_import),
+        "pygrc_import_identity": {
+            "repository_id": "graph-reflexive-coherence",
+            "path": "src/pygrc/__init__.py",
+        },
         "python_version": platform.python_version(),
         "python_implementation": platform.python_implementation(),
-        "sys_executable": sys.executable,
-        "sys_prefix": sys.prefix,
+        "invoked_executable_repo_relative": ".venv/bin/python",
+        "venv_prefix_repo_relative": ".venv",
         "direct_dependency_versions": dependency_versions,
     }
 

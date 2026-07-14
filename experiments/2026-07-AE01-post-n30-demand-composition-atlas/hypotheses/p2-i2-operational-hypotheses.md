@@ -1056,6 +1056,49 @@ deviation remains explicit, the original freeze remains immutable, no
 technical validation is rerun, no later group opens, and no scientific or
 operational-hypothesis conclusion follows.
 
+#### 3.2.18 I05G third bounded portability correction
+
+After accepted I05F is retained at `99c64dd`, the project owner directs the
+third bounded portability group to begin. I05G initially authorizes only a
+read-only resolution of the exact third correction group from the accepted
+I05D inventory and construction of its immutable input freeze. No affected
+file may change before the group name, paths, counts, source digests, allowed
+transformations, historical boundary, invocation ceilings, outputs, and review
+stop are retained.
+
+The accepted policy order resolves the group as
+`i03_realization_and_conformance`, with 201 findings across exactly 30 files.
+Its slash-leading I03F authority and operational-projection values are JSON
+pointers rather than filesystem locations. Their portable projection must use
+explicit segment arrays with byte-equivalent target resolution. Historical
+checkout, environment, command, temporary-output, attachment, report, and
+script identities become repository-relative or logical identities while the
+raw I03 conformance bytes remain addressable at parent commit `99c64dd`.
+
+I05G is representation-only. It cannot change an accepted realization,
+restoration identity, estimator, comparator, response, calibration value,
+gate, evidence meaning, operational profile, or scientific status. Any current
+changed artifact must remain mechanically linked to accepted historical bytes.
+No builder, arithmetic null, one-shot wrapper, PyGRC model, candidate/control,
+conformance, or scientific operation is authorized. The fourth correction
+group, metric-sheet freeze, CAL-GATE, and I06 remain closed.
+
+The completed uncommitted I05G projection passes 10/10 static checks. It binds
+all 30 accepted source files to 30 portable projections, closes the 201
+accepted path findings to zero, reconstructs the 20 JSON and 10 text changes
+exactly, converts 105 pointer occurrences to ordered segment structures, and
+proves identical resolution for all 44 indexed contract targets. The raw I03
+bytes remain at commit `99c64dd`; no accepted realization or conformance
+meaning is rewritten.
+
+Two of the three allowed `.venv` validator starts were used. The first failed
+closed before output on an incomplete validator-only attachment mapping; the
+second passed and alone retained a result. Every other Python, PyGRC, model,
+conformance, candidate/control, calibration, null/wrapper, and scientific
+count is zero. These are portability-process facts only and have no
+operational-hypothesis or L02 evidentiary effect. I05G now stops uncommitted for
+explicit owner review; it does not authorize its own commit or a fourth group.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

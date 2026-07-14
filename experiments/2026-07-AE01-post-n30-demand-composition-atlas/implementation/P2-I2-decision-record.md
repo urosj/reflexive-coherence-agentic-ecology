@@ -71,6 +71,7 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-034` | Does the owner accept the first correction group and which group follows its commit? | Accepted and committed at `6dd6898`; open only the exact 13-file/30-finding I04/I05 authority-dependency group under I05F | Opens I05F only; no I03/later group, metric freeze, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-035` | May the I05F static-validation ceiling deviation be closed in place without rewriting the freeze or rerunning validation? | Owner-authorized `+1`: retain an additive I05F deviation closeout accepting the process-only 13-versus-three variance | Opens closeout-record construction only; no full-package acceptance, commit, rerun, later group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-036` | Does completed DEC-035 closeout also constitute full I05F acceptance and commit authorization? | Owner-confirmed: “when done, it is also acceptance, can be committed” | Accepts and authorizes commit of the complete I05F package after closeout; no next group, CAL-GATE, I06, or execution | 2026-07-14 |
+| `P2-I2-DEC-037` | Which portability work may begin after accepted I05F commit `99c64dd`? | Owner direction: “third group is next”; declare I05G, resolve/freeze the exact third accepted-audit group before edits, and return its bounded correction uncommitted | I05G is 10/10 review-ready with 201 to zero findings; no owner acceptance/commit authority, fourth group, CAL-GATE, I06, or execution | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2113,7 +2114,58 @@ closeout artifact, changes the retained technical identities, rewrites the
 freeze or deviation ledger, includes a later group, or performs a prohibited
 operation before commit.
 
-## 39. Pending decision queue
+## 39. `P2-I2-DEC-037` — Third bounded portability-group entry
+
+**Status:** owner-directed activity complete; I05G review-ready and
+uncommitted pending explicit owner acceptance/commit authority
+
+**Question:** Which bounded portability activity may begin after the accepted
+I05F package is retained at `99c64dd`?
+
+**Decision:** The project owner directs: “third group is next.” P2-I2 may open
+I05G only. Before editing any affected file, I05G must:
+
+- read the accepted I05D ordered correction-group inventory;
+- resolve the exact third group name, affected paths, file/finding counts, and
+  source digests;
+- retain an immutable input freeze binding parent commit `99c64dd`, allowed
+  path-only transformations, historical and consequential identities,
+  invocation ceilings, outputs, and the uncommitted review stop; and
+- update checklist/hypothesis/decision navigation with the resolved scope.
+
+Until that freeze exists, only the I05G governance scaffold and read-only scope
+resolution are authorized. I05G cannot change scientific/runtime semantics,
+rewrite historical evidence, invoke a builder/null/wrapper/PyGRC/candidate/
+control/conformance/scientific path, begin a fourth correction group, freeze
+the metric sheet, pass CAL-GATE, or open I06.
+
+Reopen DEC-037 if the selected group is not the exact next accepted I05D group,
+an affected file changes before freeze, the parent commit differs, a
+transformation exceeds path representation, a later group begins, or a
+prohibited operation occurs.
+
+**Resolved scope:** The accepted I05D policy order identifies the third group
+as `i03_realization_and_conformance`, with 201 findings across exactly 30
+files. The read-only resolution also distinguishes slash-leading I03F JSON
+pointers from filesystem paths; they must become structured segment arrays
+with identical target resolution. No affected file changed during resolution.
+
+**Completion:** The exact group now passes 10/10 static checks with 201 to zero
+findings. The additive lineage binds all 30 source/projection pairs; all 20
+JSON and 10 text projections reconstruct exactly; 105 pointer occurrences
+retain ordered-segment identity; and all 44 indexed targets resolve
+identically. Historical I03 evidence remains addressable at `99c64dd`, and no
+scientific/runtime semantics changed.
+
+Two of the three admitted `.venv/bin/python` validator starts were used. The
+first failed closed before output because the validator-only projector omitted
+one admitted owner-attachment identity; the second passed and alone retained
+the result. All other Python starts and every builder/null/wrapper/PyGRC/model/
+candidate/control/conformance/scientific operation remain zero. I05G stops
+uncommitted for review. DEC-037 does not accept or authorize committing the
+package, select the fourth group, freeze the metric sheet, or pass CAL-GATE.
+
+## 40. Pending decision queue
 
 No item below is decided by this record yet:
 

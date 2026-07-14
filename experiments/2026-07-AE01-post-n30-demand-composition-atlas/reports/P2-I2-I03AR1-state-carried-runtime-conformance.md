@@ -90,7 +90,7 @@ quarantine rules. The stopped invocation is permanently classified
 
 ## Reconstruction and gate effect
 
-The retained conformance artifact and `/tmp` reconstruction both have SHA-256
+The retained conformance artifact and the logical temporary-output reconstruction both have SHA-256
 `a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0`;
 `cmp --silent` returned zero.
 

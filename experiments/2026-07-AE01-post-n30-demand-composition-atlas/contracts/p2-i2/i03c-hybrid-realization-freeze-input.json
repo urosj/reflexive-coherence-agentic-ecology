@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03C-HYBRID-REALIZATION-FREEZE-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "1d69dedf481aba2ad996388d35e03e65e7a7e5cc39276feaf8d92b730208c353"
+  },
   "artifact_version": "1.0.0",
   "iteration_id": "P2-I2-I03C",
   "lane_id": "AE01-L02",
@@ -11,7 +20,7 @@
     "owner_direction": "Accept I03B/I03BR1 for staged progression and move to 8C next.",
     "owner_direction_effect": "Authorizes design-first P2-I2-I03C only; no discriminator-gate pass, I04, calibration, registration, scientific candidate, control result, or L02 conclusion.",
     "rcae_entry_revision": "9332a67558764043d6f6adf67dc82a19187871db",
-    "graph_repository": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "graph_repository_read_only": true,
     "decisions": [

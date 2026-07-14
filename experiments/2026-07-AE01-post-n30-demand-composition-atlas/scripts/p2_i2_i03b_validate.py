@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Static validator for the P2-I2-I03B history-carried design freeze.
 
 This script validates retained authority, admitted source dataflow, producer

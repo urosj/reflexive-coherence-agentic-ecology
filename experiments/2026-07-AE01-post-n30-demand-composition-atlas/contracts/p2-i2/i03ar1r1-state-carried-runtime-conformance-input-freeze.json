@@ -1,5 +1,14 @@
 {
   "artifact_id": "P2-I2-I03AR1R1-STATE-CARRIED-RUNTIME-CONFORMANCE-INPUT-FREEZE-REVISION",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c"
+  },
   "artifact_version": "1.0.0",
   "correction_iteration_id": "P2-I2-I03AR1R1",
   "frozen_at": "2026-07-14",
@@ -46,9 +55,9 @@
       "reconstruction_invocations": 1,
       "retry_limit": 0,
       "additional_invocations_after_reconstruction": 0,
-      "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
-      "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=/home/uros/Documents/RC-github/graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json --output /tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
-      "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json /tmp/p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json"
+      "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+      "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json --output temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+      "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json"
     }
   },
   "evidence_effect": "governed infrastructure correction only; no realization, calibration, control, or scientific evidence"
