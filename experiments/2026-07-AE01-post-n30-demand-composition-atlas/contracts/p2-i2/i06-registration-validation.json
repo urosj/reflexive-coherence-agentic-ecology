@@ -1,0 +1,263 @@
+{
+  "artifact_id": "P2-I2-I06-REGISTRATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "check_id": "I06-01",
+      "evidence": {
+        "dependency_versions": {
+          "PyYAML": "6.0.3",
+          "jsonschema": "4.26.0",
+          "matplotlib": "3.10.9",
+          "networkx": "3.6.1",
+          "pyvis": "0.3.2"
+        },
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "graph_worktree_clean": true,
+        "public_callables_passed": 31,
+        "pygrc_import_file": "external-repository:graph-reflexive-coherence/src/pygrc/__init__.py",
+        "python_version": "3.12.3",
+        "source_hashes_passed": 31
+      },
+      "name": "accepted authority and environment binding",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-02",
+      "evidence": {
+        "adapter_sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7",
+        "quarantined_comparator_literal_absent": true
+      },
+      "name": "registration-owned minimal adapter revision",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-03",
+      "evidence": {
+        "edges": 16,
+        "nodes": 23,
+        "required_modes": 3
+      },
+      "name": "exact three-mode role topology and masks",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-04",
+      "evidence": {
+        "analysis_delta": 1e-12,
+        "response_packet_amount": 0.125,
+        "runtime_tolerance": 2.842170943040401e-14
+      },
+      "name": "response numeric and tolerance admissibility",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-05",
+      "evidence": {
+        "physical_orders": 2,
+        "unique_source_to_P_routes": 2
+      },
+      "name": "exact contribution timing and unique admission",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-06",
+      "evidence": {
+        "cells": 7,
+        "common_analysis_controls": 9,
+        "lane_controls": 5,
+        "mode_analysis_controls": {
+          "history_carried": 3,
+          "hybrid": 5,
+          "state_carried": 3
+        },
+        "subconfigurations": 26
+      },
+      "name": "seven-cell five-control complete materialization",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-07",
+      "evidence": {
+        "inert_exclusions": 8,
+        "matching_dimensions": 10,
+        "primary_arms": 3,
+        "receipt_templates": 5
+      },
+      "name": "complete-arm comparator and diversion matching",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-08",
+      "evidence": {
+        "B_closed_interval": [
+          4.25,
+          4.375
+        ],
+        "M_H_closed_interval": [
+          0.0,
+          1.109375
+        ],
+        "P_closed_interval": [
+          0.75,
+          2.25
+        ],
+        "max_common_history_tokens": 2,
+        "max_pending_queue_records": 1,
+        "max_private_history_tokens": 1,
+        "max_processed_packet_events_per_branch": 12,
+        "max_scheduled_packets_per_branch": 6,
+        "max_surface_rows_per_branch": 24,
+        "minimum_history_reservoir_after_materialization": 6.390625,
+        "minimum_response_source_after_window": 7.375,
+        "overflow_effect": "operational_invalid_never_scientific_negative"
+      },
+      "name": "pool lifecycle and capacity bounds",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-09",
+      "evidence": {
+        "fixture_branch_overlap": 0,
+        "fixture_numeric_overlap": 0,
+        "fixture_topology_reused": false
+      },
+      "name": "complete fixture quarantine",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-10",
+      "evidence": {
+        "history_carried": {
+          "adapter_v2_digest": "b17e9285cfe9b36f56a9a594f342c98c71cf48afeecebd71908273080ac4abc4",
+          "component_manifest": {
+            "adapter_file": "adapter.json",
+            "adapter_sha256": "8ba480f089f0211060b83f8f9a77d6edf4676ed0f32359415129cd113840994a",
+            "expected_composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+            "mode": "history_carried",
+            "native_file": "native.json",
+            "native_sha256": "268142f01b044c31d9a68977470d1bb02f96c3fe580fa1de6f2018bce683bc1e"
+          },
+          "composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+          "loaded_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+          "native_v2_digest": "06a5862fdbc3bd88ee612933804c54b1b82a3f399f6f084f5c34e0152ff627c2",
+          "registered_baseline_only": true,
+          "reset_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96"
+        },
+        "hybrid": {
+          "adapter_v2_digest": "6b4625f7ed7d9488a0cdd27fd7b60de5e088b5cbebdf08f22a2014b6c533b2ef",
+          "component_manifest": {
+            "adapter_file": "adapter.json",
+            "adapter_sha256": "1649209e02bdcfd099338481827a315a19a82a0f544a0ea96c0f163ad891ec48",
+            "expected_composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+            "mode": "hybrid",
+            "native_file": "native.json",
+            "native_sha256": "9e324807cb8fb4139daa9f4b2035d8e969fb7365653c6246008b0945d83104ea"
+          },
+          "composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+          "loaded_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+          "native_v2_digest": "47cefe14da2333940282eafb69d3a313368e7032ff9ad399abbbe445db70812c",
+          "registered_baseline_only": true,
+          "reset_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59"
+        },
+        "state_carried": {
+          "adapter_v2_digest": null,
+          "component_manifest": {
+            "adapter_file": null,
+            "adapter_sha256": null,
+            "expected_composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+            "mode": "state_carried",
+            "native_file": "native.json",
+            "native_sha256": "e3af1e27e16587ffcb77b2585da2c5f3ece6d227abc5f9e16b9992276cbd5fe9"
+          },
+          "composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+          "loaded_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+          "native_v2_digest": "c0546e87efd72c51f6b3b2af80b5db6a977e3cde17f0446bdac51fbd9c83bd00",
+          "registered_baseline_only": true,
+          "reset_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f"
+        }
+      },
+      "name": "native-v2 and composite baseline identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-11",
+      "evidence": {
+        "component_hash_mismatch_refused": true,
+        "cross_pair_refused": true,
+        "one_sided_load_refused": true,
+        "one_sided_reset_refused": true,
+        "partial_manifest_refused": true,
+        "repeated_reset_refused": true,
+        "stale_readout_refused": true,
+        "wrong_baseline_refused": true,
+        "wrong_mask_refused": true
+      },
+      "name": "paired continuation refusal boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-12",
+      "evidence": {
+        "bound_file_count": 5,
+        "manifest_id": "P2-I2-I06-REGISTRATION-MANIFEST"
+      },
+      "name": "artifact manifest and reconstruction identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-13",
+      "evidence": {
+        "control_index_entries": 15,
+        "machine_local_paths": 0,
+        "observed_outcomes": 0
+      },
+      "name": "portable outcome-free control-index projection",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06-14",
+      "evidence": {
+        "I07_authorized": false,
+        "REG_GATE_passed": false,
+        "active_history_token_admissions": 0,
+        "candidate_contribution_operations": 0,
+        "candidate_or_control_cells": 0,
+        "model_instantiations": 6,
+        "neutral_contacts": 0,
+        "response_evaluations": 0,
+        "scientific_windows": 0
+      },
+      "name": "candidate-free review stop",
+      "status": "passed"
+    }
+  ],
+  "evidence_effect": "registration_integrity_only_no_candidate_or_scientific_evidence",
+  "gate_effect": {
+    "I07_authorized": false,
+    "REG_GATE_passed": false,
+    "commit_authorized": false,
+    "owner_review_required": true
+  },
+  "iteration_id": "P2-I2-I06",
+  "lane_id": "AE01-L02",
+  "passed_checks": 14,
+  "process_accounting": {
+    "PyGRC_model_instantiations_in_final_start": 6,
+    "active_history_token_admissions": 0,
+    "adapter_static_import_check_starts": 1,
+    "candidate_contribution_operations": 0,
+    "candidate_or_control_cell_invocations": 0,
+    "comparator_or_scientific_windows": 0,
+    "final_output_producing_registration_starts": 1,
+    "graph_repository_mutations": 0,
+    "native_baseline_constructions": 3,
+    "native_pair_loads": 3,
+    "neutral_contact_operations": 0,
+    "preflight_process_starts": 2,
+    "response_evaluations": 0
+  },
+  "result_status": "P2-I2-I06-REGISTRATION-REVIEW-READY",
+  "scientific_result": false,
+  "total_checks": 14
+}

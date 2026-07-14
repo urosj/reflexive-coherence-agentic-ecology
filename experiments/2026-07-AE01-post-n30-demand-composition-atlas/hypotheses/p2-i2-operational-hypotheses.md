@@ -11,10 +11,17 @@ native metric-calibration and frozen metric-sheet artifacts,
 `analysis_arithmetic_delta = 1e-12`, and 11/11 reconstruction validation. I05J
 has completed an owner-directed closure amendment for exact process accounting
 and current-status synchronization. The owner accepts the complete I05J/I05JA
-package and authorizes its commit; CAL-GATE is passed and I06 registration
-construction is authorized but not begun. Candidate/control execution and every
-scientific result remain closed; all three profiles remain distinct downstream
-under `P2-I2-DEC-011`.
+package and authorizes its commit; CAL-GATE is passed. I06 now retains an exact
+three-mode registration package with 14/14 baseline-only validation, stable
+save/load/reset composite identities for every mode, and nine negative
+continuation refusals. I06A now also passes 14/14 no-model owner-review checks,
+resolving AdapterV2 conformance and exact two-stage provenance while confirming
+tolerance, admission/diversion, mode isolation, and retry boundaries. The
+owner accepts the complete I06/I06A package and authorizes its checkpoint
+amendment under `P2-I2-DEC-042`; REG-GATE is passed and I07 freeze construction
+is authorized. Candidate-cycle execution remains unauthorized. No
+candidate/control execution or scientific result exists, and all three profiles
+remain distinct downstream under `P2-I2-DEC-011`.
 
 **Lane:** `AE01-L02`
 
@@ -109,7 +116,7 @@ are frozen below; exact scientific values remain later work.
 | `graph_source_identity` | Exact admitted graph revision and relevant source digests | Bound by `P2-I2-DEC-009` and the I02R2 manifest at `83e3a300426631ee4df71b661b67d4fcfdfed594`; prior I02R1 identity remains historical authority and no realization is implied | I02R2 complete |
 | `realization_class` | Native, producer-assisted, or constructed, separately dispositioned for each mode | I03A: `pygrc_native_candidate`; I03B/I03C: `minimally_producer_assisted` | I03A, then I03B, then I03C |
 | `pool_dependence_mode` | Staged `state_carried`, `history_carried`, and admissible `hybrid` profiles | I03A: `state_carried`; I03B: `history_carried`; I03C: design-frozen `hybrid` | I03A, then owner review; I03B, then owner review; I03C |
-| `source_set` | At least two distinguishable attributable source carriers/events | I03A/I03B/I03C: symbolic native roles S1 and S2 bound; exact node IDs pending I06 | I03A/I03B/I03C concept; I06 exact |
+| `source_set` | At least two distinguishable attributable source carriers/events | Owner-accepted I06 registration binds exact native S1/S2 node and route IDs while preserving source-attributable receipts | I03A/I03B/I03C concept; accepted DEC-042 exact registration |
 | `C_P` | One auditable non-private causal carrier identity | I03A: native P coherence; I03B: one RCAE-owned ordered `H_P` plus native output `M_H`, while P is excluded from V; I03C: separately causal native P plus active `H_P`, jointly read through P and `M_H` | I03A/I03B/I03C |
 | `L` | Audit-only source lineage and attribution projection | All modes: native packet/event/surface/lineage records; I03B/I03C use row identity only for active-history admission/idempotency, never as a response input | I03A/I03B/I03C |
 | `q` and `U` | Contribution properties and common-carrier transition | I03A: native arrival into P; I03B: source-label-free token append then native `M_H` materialization; I03C: the same physical contribution advances native P and the separately intervenable active history | I03A/I03B/I03C concept; I06 numeric/exact |
@@ -1262,6 +1269,135 @@ The owner subsequently accepts the complete amended I05J/I05JA package and
 authorizes its commit. That acceptance passes `P2-I2-CAL-GATE` and authorizes
 only the construction of I06 registration artifacts; it does not begin I06 or
 authorize any candidate, control, conformance, runtime, or scientific execution.
+
+#### 3.2.23 I06 exact three-mode registration declaration
+
+The owner now directs I06 under the passed CAL-GATE. I06 must retain and
+register state-carried, history-carried, and hybrid as three distinct required
+modes. It may select no winner, drop no mode, import no conformance outcome, and
+collapse no mode-specific causal or restoration identity into a shared scalar.
+
+I06 begins with a read-only source/runtime preflight. It must bind the current
+clean PyGRC checkout, active repository `.venv`, imported package source,
+accepted I02R2 restoration providers, and the exact structural active-history
+adapter before selecting or materializing registration values. Source drift,
+dirty state, unavailable public calls, or an inadequate restoration boundary
+fails closed for review rather than silently changing the admitted realization.
+
+That preflight is complete. One initial diagnostic start omitted the already
+declared external-checkout `PYTHONPATH` and therefore failed to import PyGRC;
+it changed no environment and instantiated no model. The corrected declared
+binding passes at admitted revision `83e3a3...` with a clean checkout, 31/31
+source hashes, 31/31 public callables, active `.venv`, and exact locked direct
+dependencies. PyGRC remains source-bound from the admitted checkout rather than
+installed into the environment.
+
+The structural adapter audit finds one prohibited implementation carryover:
+`RCAEActiveHistoryAdapterV1` hardcodes the I03 fixture comparator
+`math.isclose(..., abs_tol=1e-12)` in readout materialization. I03 quarantine
+explicitly rejects that comparator, while I04 requires every runtime tolerance
+to be independently registered rather than inferred from analysis delta. I06
+therefore may create one minimal adapter revision that adds an explicit
+materialization-tolerance configuration/restoration field. The revision must
+otherwise preserve the accepted token schema, fold, intervention, native packet
+handoff, and no-response-production boundary. Any broader causal change reopens
+I03 rather than entering registration silently.
+
+The compact I06 artifact stack is one policy/input freeze, one exact three-mode
+registration bundle, one manifest, one control-resolution-index template, one
+validator/validation artifact, and one report. The bundle must bind per-mode
+roles, topology, carrier/write/read mapping, exact seven-cell/five-control
+matrix, response/comparator, numeric domain and runtime tolerance, contribution
+physics, timing/opportunity matching, pool-economy dispositions, seeds,
+attempts/resources, contamination checks, branch points, and complete native-v2
+or native-v2-plus-adapter restoration identity.
+
+Native PyGRC owns every adequate state, packet, feedback-response, scheduling,
+and restoration transition. Only the already accepted minimal active-history
+adapter may produce the missing common-history carrier and native readout for
+history-carried and hybrid. If exact registration requires that adapter to read
+success/response state, compute the joint response, schedule the later response,
+or hide a one-sided restoration operation, the affected realization fails
+closed and I03 must be reopened.
+
+Every exact I03 conformance value, branch/topology identity, response
+observation, outcome, comparator, and evidence/restoration digest is prohibited
+as I06 registration input, including trivial serialized reuse. Structural code,
+causal form, public APIs, and accepted producer/restoration obligations may be
+imported. I06 may perform only baseline-only composite restoration binding and
+negative mismatch checks after its exact freeze; it may not admit an S1/S2
+contribution, active-history token, neutral encounter, response evaluation,
+candidate/control cell, comparator window, or scientific operation.
+
+I06 initially returns uncommitted for explicit owner review. Its exact package retains
+all three unranked modes on one matched 23-node/16-edge opportunity topology,
+with separate carriers/masks, seven cells, 26 exact subconfigurations, five lane
+controls, complete response/comparator identities, and an outcome-free control
+index. The I06-owned history-adapter revision changes only the quarantined
+hardcoded materialization comparator: tolerance is an explicit configuration
+and restoration-identity field, while the accepted token fold, intervention,
+native handoff, and no-response-production boundary remain unchanged.
+
+The sole output-producing baseline-only validation passes 14/14. Original,
+loaded, and reset composite digests agree independently for state-carried,
+history-carried, and hybrid, and all nine registered mismatch/one-sided/repeat
+cases refuse. The run admits no contribution, active-history token, neutral
+contact, response evaluation, candidate/control cell, comparator, or scientific
+window. A terminal scan then corrects only the validator's portability guard,
+replacing literal rejection patterns with generic absolute-token and `*_ROOT`
+placeholder detection; one no-model static check passes and the consumed
+baseline validation is not rerun. It therefore changes no OP/R01–R05
+disposition and supplies no L02 result. REG-GATE remains closed and I07 remains
+unauthorized until explicit owner acceptance.
+
+#### 3.2.24 I06A registration review-closeout declaration
+
+Owner review of the uncommitted I06 package identifies two potential blockers:
+the registered AdapterV2 requires conformance authority relative to I03-tested
+AdapterV1, and the final manifest must preserve exact two-stage provenance
+across the portability-guard correction rather than imply that current source
+produced the historical 14/14 output.
+
+I06A may retain source/AST equivalence, pure no-model adapter tests, exact
+historical-byte reconstruction, static manifest transition proof, and bounded
+confirmation of tolerance domain, diversion/admission purity, mode isolation,
+and retry semantics. It may add only provenance/validation artifacts and
+clarifying bundle fields that do not change I06 causal or numeric semantics. It
+may not construct a PyGRC model, rerun baseline validation, admit a contribution
+or history token, evaluate a response, execute any cell/control/comparator, or
+assign scientific evidence. REG-GATE remains closed and I07 unauthorized until
+the complete I06/I06A package receives explicit owner acceptance.
+
+The first I06A no-model validation start subsequently fails closed before any
+output. The frozen retry policy correctly names six byte-identical retry-input
+classes, but the authored validator asserts seven. Before that assertion it
+uses eight fake packet-interface instances and imports no PyGRC; it reaches no
+candidate, control, baseline rerun, response, comparator, or scientific work.
+The failure and output absence are retained, infrastructure retries remain zero,
+and the one-line corrected validator remains unexecuted. REG-GATE stays closed;
+one replacement static start requires explicit owner direction.
+
+After retaining that failed-closed checkpoint at commit `7761d3e`, the owner
+explicitly directs I06A to continue. One separately bound replacement no-model
+validation start is therefore authorized against the corrected validator and
+the retained failure record. It is not an infrastructure retry, permits no
+PyGRC import/model or candidate/scientific operation, and is consumed by any
+failure. REG-GATE remains closed pending the retained result and later owner
+review.
+
+That replacement passes 14/14. AdapterV2 inherits 13 tested V1 members exactly;
+its normalized materialization AST is equal, nine pure cases pass, and response
+reads/schedules remain absent. The historical execution manifest and validator
+reconstruct byte-exactly, while only `_assert_portable` and two required imports
+differ in current source; all 24 remaining validation functions are unchanged.
+The registered tolerance domain, twelve comparator arm tuples, two unique H_P
+admission edges/seven excluded traffic classes, positive mode isolation, and
+per-entry outcome-independent retry semantics all pass. Final manifest v1.1.1
+binds historical producer and current reconstruction roles separately. No
+scientific disposition changes. The owner accepts the complete I06/I06A package,
+authorizes amendment into the retained checkpoint, passes REG-GATE, and opens
+only I07 candidate-cycle freeze construction. Candidate execution remains
+unauthorized until the exact cycle receives its own authority.
 
 ### 3.3 I03A state-carried realization binding
 

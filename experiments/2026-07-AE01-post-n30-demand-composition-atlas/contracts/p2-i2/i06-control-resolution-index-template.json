@@ -1,0 +1,34 @@
+{
+  "artifact_id": "P2-I2-I06-CONTROL-RESOLUTION-INDEX-TEMPLATE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06",
+  "lane_id": "AE01-L02",
+  "status": "registered_projection_template_no_observations",
+  "source_registration": "P2-I2-I06-EXACT-THREE-MODE-REGISTRATION",
+  "projection_only": true,
+  "introduces_evidence_or_schema_authority": false,
+  "allowed_resolution_stages": ["registration_guard", "execution_comparison", "terminal_interpretation"],
+  "allowed_dispositions": ["pass", "ambiguous", "fail", "not_applicable", "blocked", "not_run"],
+  "entries": [
+    {"mode": "state_carried", "control_id": "AE01-L02-CTRL-01", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["s1_only_registered", "s2_only_registered", "combined-orders"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "state_carried", "control_id": "AE01-L02-CTRL-02", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["q1_admitted_q2_diverted", "q2_admitted_q1_diverted", "pure_source_label_permutation"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "state_carried", "control_id": "AE01-L02-CTRL-03", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["physical_order_reverse", "post_write_native_P_debit", "audit_lineage_label_permutation"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "state_carried", "control_id": "AE01-L02-CTRL-04", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["private_partition_one", "private_partition_two", "direct_address_bypass", "controller_assembled_bypass"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "state_carried", "control_id": "AE01-L02-CTRL-05", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["reference_pool_write_frozen", "both_common_writes_diverted", "post_write_native_P_debit"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "history_carried", "control_id": "AE01-L02-CTRL-01", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["s1_only_registered", "s2_only_registered", "combined-orders"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "history_carried", "control_id": "AE01-L02-CTRL-02", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["q1_admitted_q2_diverted", "q2_admitted_q1_diverted", "pure_source_label_permutation"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "history_carried", "control_id": "AE01-L02-CTRL-03", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["physical_order_reverse", "history_mode_P_only_debit", "history_reference_clamp"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "history_carried", "control_id": "AE01-L02-CTRL-04", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["private_partition_one", "private_partition_two", "direct_address_bypass", "controller_assembled_bypass"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "history_carried", "control_id": "AE01-L02-CTRL-05", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["reference_pool_write_frozen", "both_common_writes_diverted", "history_reference_clamp"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "hybrid", "control_id": "AE01-L02-CTRL-01", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["s1_only_registered", "s2_only_registered", "combined-orders"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "hybrid", "control_id": "AE01-L02-CTRL-02", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["q1_admitted_q2_diverted", "q2_admitted_q1_diverted", "pure_source_label_permutation"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "hybrid", "control_id": "AE01-L02-CTRL-03", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["physical_order_reverse", "hybrid_reference_P_candidate_H", "hybrid_candidate_P_reference_H", "hybrid_reference_components"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "hybrid", "control_id": "AE01-L02-CTRL-04", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["private_partition_one", "private_partition_two", "direct_address_bypass", "controller_assembled_bypass"], "observed_disposition": null, "evidence_refs": [], "notes": null},
+    {"mode": "hybrid", "control_id": "AE01-L02-CTRL-05", "planned_applicability": "applicable", "resolution_stage": "execution_comparison", "registered_branches": ["reference_pool_write_frozen", "both_common_writes_diverted", "post_write_native_P_debit", "history_reference_clamp"], "observed_disposition": null, "evidence_refs": [], "notes": null}
+  ],
+  "execution_boundary": {
+    "candidate_or_control_invocations": 0,
+    "observed_control_outcomes": 0,
+    "scientific_result": false
+  }
+}

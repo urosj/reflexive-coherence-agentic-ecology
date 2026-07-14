@@ -1,0 +1,243 @@
+{
+  "artifact_id": "P2-I2-I06A-REGISTRATION-REVIEW-POLICY",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06A",
+  "lane_id": "AE01-L02",
+  "status": "frozen_before_no_model_validation",
+  "adapter_conformance_authority": {
+    "tested_parent": {
+      "class": "RCAEActiveHistoryAdapterV1",
+      "source_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+      "I03B_runtime_assertions": 252,
+      "I03C_runtime_assertions": 258
+    },
+    "registered_child": {
+      "class": "RCAEActiveHistoryAdapterV2",
+      "source_sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7"
+    },
+    "exact_inherited_members": [
+      "_empty_state",
+      "carrier_id",
+      "tokens",
+      "readout_node_id",
+      "readout",
+      "ingest_new_rows",
+      "replace_history",
+      "_validate_state",
+      "current_identity_digest",
+      "restoration_identity_digest",
+      "snapshot",
+      "save",
+      "reset"
+    ],
+    "allowed_overrides": [
+      "__init__",
+      "materialization_tolerance",
+      "materialize_readout",
+      "current_identity_artifact",
+      "restoration_identity_artifact",
+      "load"
+    ],
+    "normalized_materialization_delta": [
+      "replace both V1 hardcoded 1e-12 absolute tolerances with self.materialization_tolerance",
+      "add materialization_tolerance to the returned audit record"
+    ],
+    "pure_cases": [
+      "inherited_two-row_ordered_ingest_and_idempotent_cursor",
+      "inherited_fold_and_history_replacement_intervention",
+      "V1_V2_equal_packet_construction_at_equal_tolerance",
+      "configured_deadband_no_packet_at_or_below_tolerance",
+      "configured_positive_and_negative_native_handoff",
+      "tolerance_in_current_and_reset_identity",
+      "tolerance_digest_sensitivity",
+      "V2_save_load_reset_roundtrip",
+      "no_response_read_compute_or_schedule_surface"
+    ]
+  },
+  "validator_transition": {
+    "historical_execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-execution-manifest.json",
+    "historical_execution_manifest_sha256": "3665e746d62afc602ab286d006465dd97ec674c7db30b611379a92ac89236613",
+    "historical_execution_validator_sha256": "f0b3f019bd3871876aa26f2a184887826900bb5b515a50de1bf41f844aeaca94",
+    "current_validator_sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a",
+    "historical_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+    "historical_validation_sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99",
+    "allowed_source_change": "imports required by _assert_portable plus _assert_portable body only",
+    "required_unchanged_functions": [
+      "_require",
+      "_load",
+      "_canonical_bytes",
+      "_pretty_bytes",
+      "_digest",
+      "_sha256",
+      "_git",
+      "_resolve_symbol",
+      "_validate_authority_and_environment",
+      "_roles",
+      "_edges",
+      "_build_model",
+      "_binding",
+      "_composite_identity",
+      "_ensure_operation",
+      "_pair_manifest",
+      "_validate_pair_manifest",
+      "_load_pair",
+      "_reset_pair_once",
+      "_validate_static_registration",
+      "_validate_manifest",
+      "_baseline_restoration_validation",
+      "validate",
+      "main"
+    ],
+    "retained_validation_producer_role": "historical_execution_validator_only",
+    "current_validator_role": "future_reconstruction_source_after_guard_only_correction",
+    "corrected_validator_claimed_as_historical_producer": false
+  },
+  "tolerance_domain": {
+    "closed_native_domain": [0.0, 9.25],
+    "runtime_tolerance": 2.842170943040401e-14,
+    "derivation": "16_times_max_binary64_ULP_over_closed_native_domain",
+    "history_recency_coefficient": 0.375,
+    "contribution_amounts": [0.625, 0.875],
+    "maximum_common_history_length": 2,
+    "maximum_private_history_length": 1,
+    "required_common_fold_values": [0.0, 0.625, 0.875, 0.953125, 1.109375],
+    "required_private_fold_values": [0.0, 0.625, 0.875],
+    "registered_M_H_interval": [0.0, 1.109375],
+    "history_reservoir_before": 7.5,
+    "minimum_history_reservoir_after": 6.390625,
+    "B_before": 4.25,
+    "response_gain": 0.125,
+    "B_after": 4.375,
+    "analysis_arithmetic_delta": 1e-12,
+    "required_inequalities": [
+      "runtime_tolerance < response_gain / 1024",
+      "response_gain >= 1024 * analysis_arithmetic_delta",
+      "all nonzero registered history-materialization deltas > runtime_tolerance",
+      "B_before and B_after are inside the closed native domain"
+    ],
+    "scientific_metric_threshold": "analysis_arithmetic_delta_only",
+    "materialization_deadband_may_decide_registered_response": false
+  },
+  "diversion_and_admission": {
+    "modes": ["state_carried", "history_carried", "hybrid"],
+    "physical_orders": ["q1_then_q2", "q2_then_q1"],
+    "leave_one_arms": [
+      {
+        "branch": "q1_admitted_q2_diverted",
+        "admitted": "q1",
+        "diverted": "q2",
+        "diversion_target": "K_DIV_Q2"
+      },
+      {
+        "branch": "q2_admitted_q1_diverted",
+        "admitted": "q2",
+        "diverted": "q1",
+        "diversion_target": "K_DIV_Q1"
+      }
+    ],
+    "must_match_exactly": [
+      "source debit and activity",
+      "physical contribution amount and type",
+      "timing slot",
+      "queue opportunity",
+      "support consequence",
+      "capacity consequence",
+      "route cost where relevant",
+      "responder opportunity",
+      "B baseline",
+      "response policy"
+    ],
+    "only_allowed_difference": "common_carrier_admission",
+    "H_P_positive_filter": {
+      "surface_kind": "route_local_pulse_contact",
+      "pulse_event_kind": "lgrc9v3_packet_arrival",
+      "target_role": "P",
+      "source_roles": ["S1", "S2"]
+    },
+    "H_P_excluded_event_classes": [
+      "diversion traffic",
+      "P-only debits",
+      "M_H materialization packets",
+      "neutral contacts",
+      "feedback or response packets",
+      "reset or load activity",
+      "private-control traffic"
+    ]
+  },
+  "positive_mode_isolation": {
+    "shared_topology_is_authority": false,
+    "shared_topology_role": "matched physical opportunity only",
+    "branch_configuration_must_explicitly_authorize_operations": true,
+    "unregistered_edge_or_producer_use": "operational_invalid",
+    "modes": {
+      "state_carried": {
+        "adapter_allowed": false,
+        "response_front_mask": ["P"],
+        "response_rear_mask": ["B_REF"],
+        "private_masks": [["P1_PRIVATE"], ["P2_PRIVATE"]]
+      },
+      "history_carried": {
+        "adapter_required": true,
+        "response_front_mask": ["M_H"],
+        "response_rear_mask": ["B_REF"],
+        "P_in_response_mask": false,
+        "private_masks": [["M_H1"], ["M_H2"]]
+      },
+      "hybrid": {
+        "adapter_required": true,
+        "response_front_mask": ["P", "M_H"],
+        "response_rear_mask": ["B_REF"],
+        "private_masks": [["P1_PRIVATE", "M_H1"], ["P2_PRIVATE", "M_H2"]]
+      }
+    },
+    "cross_mode_aliasing": false,
+    "fresh_complete_branch_identity_per_mode": true,
+    "fresh_model_and_adapter_baseline_per_matrix_entry": true,
+    "cross_mode_state_carry": false
+  },
+  "infrastructure_retry": {
+    "scope": "per_matrix_entry",
+    "ceiling": 1,
+    "qualifying_failure_phase": "before model or adapter construction and before candidate authority consumption",
+    "required_zero_state": [
+      "no model or adapter constructed",
+      "no candidate or control operation",
+      "no contribution or history admission",
+      "no response or comparator window",
+      "no governed output"
+    ],
+    "failed_attempt_consumes_scientific_authority": false,
+    "any_post_construction_failure_consumes_entry": true,
+    "failed_scientific_or_control_result_retryable": false,
+    "byte_identical_retry_inputs": [
+      "committed HEAD",
+      "registration manifest and bundle",
+      "validator and runner",
+      "mode seed order cell and branch identity",
+      "environment and normalized command",
+      "resource envelope"
+    ],
+    "required_failed_attempt_receipt": [
+      "entry identity",
+      "attempt index",
+      "failure phase and exception class",
+      "all byte-identity digests",
+      "zero-state counters",
+      "output absence",
+      "mechanical retry-eligibility disposition"
+    ],
+    "eligibility_inputs_may_include_outcomes": false,
+    "I07_duty": "instantiate these exact semantics without revision"
+  },
+  "validation_boundary": {
+    "use_repository_venv": true,
+    "PyGRC_imports": 0,
+    "PyGRC_model_instantiations": 0,
+    "baseline_validation_reruns": 0,
+    "candidate_or_control_operations": 0,
+    "scientific_evidence": false,
+    "REG_GATE_passed": false,
+    "I07_authorized": false,
+    "commit_authorized": false
+  }
+}

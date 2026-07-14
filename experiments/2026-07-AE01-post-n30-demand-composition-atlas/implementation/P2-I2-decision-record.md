@@ -76,6 +76,7 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-039` | What follows owner review of I05H? | Accept and commit I05H; reconcile the remaining inventory; fold the one six-file/14-finding group plus three validator constructor sources into the fifth/final I05I correction | I05H retained at `1279e17`; opens exact nine-file terminal correction only; no P2-I1 scope expansion, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-040` | What may proceed after owner acceptance and commit of I05I? | Retain I05I at `b5d0acb`; distinguish completed I05C/10.4A from the three deferred 10.4 metric obligations; open bounded I05J native metric closeout | Authorizes one frozen native `freeze-resolution` generation plus static validation only; no null rerun, runtime/candidate work, CAL-GATE passage, I06, or commit | 2026-07-14 |
 | `P2-I2-DEC-041` | What follows the first I05J native start failing before output because the repo `.venv` lacks the pinned schema dependency? | Preserve the original freeze and failed start; add I05JA; install only `jsonschema==4.26.0` into `.venv`; authorize one unchanged native retry; amend the still-uncommitted I05J package with honest process accounting | Complete package owner-accepted and commit-authorized; CAL-GATE passed; I06 registration construction authorized but not begun; zero candidate/runtime/scientific authority | 2026-07-14 |
+| `P2-I2-DEC-042` | Which exact three-mode implementations, identities, cells, controls, and continuation boundary should I06 register? | Owner-accepted after I06A: retain all three unranked modes; native PyGRC owns adequate transitions; AdapterV2 conformance and exact historical/current provenance are machine-closed; I06 and I06A each pass 14/14 | Authorizes amendment into checkpoint `7761d3e`, passes REG-GATE, and opens I07 freeze construction only; candidate-cycle execution remains unauthorized and candidate/scientific counts remain zero | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2381,13 +2382,80 @@ Reopen DEC-041 if either output exists before the retry, dependency identity is
 not exactly `jsonschema==4.26.0`, any frozen command/input differs, the retry
 fails, or a prohibited operation occurs.
 
-## 44. Pending decision queue
+## 44. `P2-I2-DEC-042` — Exact three-mode implementation registration
+
+**Status:** accepted by project owner; checkpoint amendment authorized
+
+**Question:** Which exact implementations, numeric identities, cells, controls,
+and restoration boundary should I06 register for the three retained modes?
+
+**Decision:** Retain `state_carried`, `history_carried`, and `hybrid`
+as three required, unranked execution modes on one matched physical-opportunity
+topology. Public PyGRC owns every adequate native state, packet, scheduling,
+feedback-response, and reset-aware restoration transition. State-carried is
+native. History-carried and hybrid use the accepted minimal active-history
+producer only for source-label-free token state and native `M_H`
+materialization; it may not read response state, decide success, or schedule the
+later response.
+
+The I03 adapter's hardcoded `1e-12` materialization comparator is prohibited by
+fixture quarantine and cannot be registered. The I06-owned revision therefore
+makes the independently derived runtime tolerance an explicit configuration and
+restoration-identity field without changing the accepted causal dataflow. The
+exact package freezes 23 nodes, 16 edges, seven cells, 26 subconfigurations,
+five lane controls, complete comparator/diversion receipts, numeric domain,
+seeds/resources, pool-economy bounds, and paired composite continuation.
+
+The sole output-producing validation is baseline-only and passes 14/14. Three
+fresh plus three loaded models preserve mode-specific composite identity across
+save/load/reset; nine mismatch, cross-pair, one-sided, repeated-reset, wrong-
+binding, and stale-readout cases refuse. No contribution, history admission,
+neutral contact, response, cell, comparator, or scientific window occurs.
+
+A terminal portability scan finds one source-only defect: the validator's own
+rejection guard contains literal absolute/legacy-root patterns. Manifest v1.0.1
+retains the pre/post validator hashes and replaces only that guard with generic
+POSIX/Windows absolute-token and `*_ROOT` placeholder detection. Two no-model
+static starts pass the corrected document/hash/refusal checks and the accepted
+I05D scanner over all eight I06 package files at zero findings. The consumed
+baseline validation is not rerun, and its projected 14/14 result is unchanged.
+
+Owner review then identifies AdapterV2 conformance authority and exact
+historical/current validator-manifest provenance as potential blockers. I06A
+freezes those two questions plus tolerance-domain, diversion/H_P-admission,
+positive mode-isolation, and retry-semantics confirmations. The first no-model
+start stops on an authored seven-versus-six cardinality assertion before output
+and is retained at checkpoint `7761d3e`. The owner separately authorizes one
+corrected replacement, not an infrastructure retry; it passes 14/14.
+
+I06A proves 13 inherited AdapterV1 members exact, normalized materialization AST
+equality, nine pure adapter cases, eight decoy admission exclusions, and zero
+response authority. It reconstructs the exact five-file execution manifest and
+historical validator hash, identifies only `_assert_portable` plus two imports
+as changed, and confirms all 24 other validation functions exact. Final
+manifest v1.1.1 binds historical producer and current reconstruction roles
+separately. All four confirmation groups pass. I06A imports/instantiates no
+PyGRC and performs no baseline rerun, candidate/control operation, or scientific
+work.
+
+This decision supplies registration-integrity evidence only. It does not assign
+R01–R05 or select a mode. The owner accepts the complete I06/I06A package and
+authorizes the successful closeout to amend the failed-closed checkpoint at
+`7761d3e`. That acceptance passes REG-GATE and opens only checklist/hypothesis-
+first I07 candidate-cycle freeze construction. It does not authorize candidate-
+cycle execution; candidate and scientific operation counts remain zero.
+
+Reopen DEC-042 if any registered identity drifts, a mode is collapsed or
+ranked, the adapter acquires response authority, a fixture value/identity is
+reused, a composite component can be restored one-sidedly, or any prohibited
+candidate/scientific operation is found.
+
+## 45. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Exact three-mode implementation and registration bundle | I06 | Frozen calibration |
 | Candidate cycle authorization | I07 | Passed registration |
 | Terminal classification and next move | I11 | Resolved controls and reconstruction |
 

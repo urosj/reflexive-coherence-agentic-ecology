@@ -1,0 +1,272 @@
+{
+  "artifact_id": "P2-I2-I06-REGISTRATION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "exact_inputs_frozen_before_registration_construction",
+  "entry_authority": {
+    "parent_commit": "3be90739990d32af6cd2c9f1f07d2ef735ff3a2f",
+    "CAL_GATE": "passed_after_explicit_owner_acceptance_of_I05J_closeout",
+    "owner_direction": "let's do I06",
+    "candidate_execution_authorized": false,
+    "REG_GATE_passed": false
+  },
+  "authority_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+      "role": "admitted_source_and_restoration_provider_boundary",
+      "sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-index.json",
+      "role": "accepted_three_mode_family_projection",
+      "sha256": "19edd25c9dc073da44d37dfa2ec678958a03850eafc431134ef9c82fc2e929c0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-validation.json",
+      "role": "accepted_family_integration_validation",
+      "sha256": "574db3cca8d2788480c3e62dc292d092a04bb891766a3f44820d1743fd3ef502"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
+      "role": "complete_fixture_quarantine_registry",
+      "sha256": "87232487b0937345f9f79db1b3618674ad683737672332f09ea9e3beefcee463"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration.json",
+      "role": "accepted_parent_measurement_and_numeric_admissibility",
+      "sha256": "21f120cfe4f501281f814bc3f8bc2e130f6a4671cfbb7b2662f1dda22b300ff2"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+      "role": "exact_response_control_and_analysis_policy",
+      "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json",
+      "role": "sole_machine_measurement_progression_authority",
+      "sha256": "b8955378506e079f5a9e3299b803da7e376f53c2fa2df34c95bba163289bd8c0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+      "role": "complete_arm_diversion_arrival_and_window_policy",
+      "sha256": "079ba0be50946199a90201eb57cf79e19fb1faf53aa665437752d376a1ebe11c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json",
+      "role": "owner_accepted_I04_progression_identity",
+      "sha256": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+      "role": "frozen_L02_metric_sheet",
+      "sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+      "role": "candidate_blind_analysis_resolution",
+      "sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-process-and-projection-closeout.json",
+      "role": "owner_accepted_CAL_GATE_closeout",
+      "sha256": "de43ee9fa0b33722ac1e0a94e3ee5c1dcfc17e427bbdd26d744fd82672dfc548"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+      "role": "accepted_structural_adapter_parent_not_directly_registrable",
+      "sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+      "role": "registration_ready_minimal_history_adapter_revision",
+      "sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/schemas/ae01-contract.schema.json",
+      "role": "shared_AE01_record_schema",
+      "sha256": "eb5612c5bdbda8f8393f826d9af1b89478c4291d3e2b72279645d0226862d074"
+    }
+  ],
+  "source_runtime_preflight": {
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_clean": true,
+    "admitted_source_hashes_passed": 31,
+    "admitted_public_callables_passed": 31,
+    "invoked_python": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "pygrc_import_mechanism": "PYTHONPATH=external-repository:graph-reflexive-coherence/src",
+    "pygrc_import_file": "external-repository:graph-reflexive-coherence/src/pygrc/__init__.py",
+    "pygrc_init_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+    "direct_dependencies": {
+      "matplotlib": "3.10.9",
+      "networkx": "3.6.1",
+      "pyvis": "0.3.2",
+      "PyYAML": "6.0.3",
+      "jsonschema": "4.26.0"
+    },
+    "process_starts": [
+      {
+        "index": 1,
+        "status": "failed_closed_diagnostic_omitted_declared_PYTHONPATH",
+        "environment_changed": false,
+        "pygrc_imported": false,
+        "model_instantiated": false
+      },
+      {
+        "index": 2,
+        "status": "passed_exact_declared_binding",
+        "environment_changed": false,
+        "pygrc_imported": true,
+        "model_instantiated": false
+      }
+    ],
+    "adapter_static_import_check_starts": 1,
+    "adapter_static_import_check_result": "passed_without_model_instantiation"
+  },
+  "registration_value_policy": {
+    "choice_basis": "binary-exact values derived prospectively from accepted state/history/joint causal geometry and I04 numeric admissibility; no conformance outcome or response observation used",
+    "candidate_seeds": [101, 211, 307],
+    "physical_orders": ["q1_then_q2", "q2_then_q1"],
+    "attempts_per_matrix_entry": 1,
+    "contributions": {
+      "q1": 0.625,
+      "q2": 0.875,
+      "operation_kind": "native_arrival_contact_amount",
+      "token_type_id": "p2-i2-i06-native-arrival-token-v1"
+    },
+    "history_fold": {
+      "family": "r_next=lambda*r_previous+contact_amount",
+      "recency_coefficient": 0.375
+    },
+    "native_numeric_domain": {
+      "closed_interval": [0.0, 9.25],
+      "B_before": 4.25,
+      "response_packet_amount": 0.125,
+      "B_after_if_observed": 4.375,
+      "response_gain_tolerance": 2.842170943040401e-14,
+      "history_materialization_tolerance": 2.842170943040401e-14,
+      "equal_input_continuation_tolerance": 2.842170943040401e-14,
+      "tolerance_basis": "16 times the maximum binary64 ULP over the registered finite domain; independently registered and not analysis_arithmetic_delta",
+      "analysis_arithmetic_delta": 1e-12
+    },
+    "common_native_values": {
+      "dt": 0.25,
+      "initial_source_reserve": 7.5,
+      "initial_pool_coherence": 0.75,
+      "initial_feedback_reference_coherence": 0.25,
+      "initial_history_reservoir_coherence": 7.5,
+      "initial_neutral_source_coherence": 3.25,
+      "initial_neutral_target_coherence": 0.25,
+      "initial_response_source_coherence": 7.5,
+      "neutral_contact_amount": 0.03125,
+      "state_debit_amount": 0.4375,
+      "reference_delta": 0.0625,
+      "edge_conductance": 1.5,
+      "edge_geometric_length": 0.75,
+      "edge_temporal_delay": 0.625,
+      "edge_flux_coupling": 0.0
+    },
+    "mode_response_thresholds": {
+      "state_carried": {
+        "threshold": 1.625,
+        "basis": "midpoint between strongest one-source state score 1.3125 and equal-order combined state score 1.9375"
+      },
+      "history_carried": {
+        "threshold": 0.71875,
+        "basis": "midpoint between prospectively computed ordered combined history scores 0.796875 and 0.640625; strongest one-source score is 0.5625"
+      },
+      "hybrid": {
+        "threshold": 2.96875,
+        "basis": "midpoint between prospectively computed ordered combined joint scores 3.046875 and 2.890625; strongest one-source score is 2.1875"
+      }
+    },
+    "schedule": {
+      "first_departure_event_time_key": 10.25,
+      "arrival_offset": 0.625,
+      "reserved_slot_increment": 1.25,
+      "first_scheduler_event_index": 10,
+      "first_packet_index": 10,
+      "materialization_slot_index": 2,
+      "neutral_contact_slot_index": 3,
+      "response_arrival_event_time_key": 15.625
+    }
+  },
+  "registration_structure": {
+    "required_modes": ["state_carried", "history_carried", "hybrid"],
+    "required_logical_cells": [
+      "reference-pool",
+      "individual-contributions",
+      "combined-orders",
+      "pooled-history-shuffle",
+      "contributor-removal",
+      "global-state-exclusion",
+      "access-capacity-contrast"
+    ],
+    "required_lane_controls": [
+      "AE01-L02-CTRL-01",
+      "AE01-L02-CTRL-02",
+      "AE01-L02-CTRL-03",
+      "AE01-L02-CTRL-04",
+      "AE01-L02-CTRL-05"
+    ],
+    "primary_candidate_branch": "combined-orders",
+    "primary_leave_one_branches": [
+      "q1_admitted_q2_diverted",
+      "q2_admitted_q1_diverted"
+    ],
+    "runtime_window_protocol": "p2-i2-native-response-window-v2",
+    "native_restoration_provider": "pygrc.models.lgrc9v3_restoration_identity_v2",
+    "native_restoration_digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+    "history_adapter_class": "RCAEActiveHistoryAdapterV2",
+    "history_adapter_schema": "p2_i2_i06_active_history_adapter_v2",
+    "mode_ranking_or_selection_allowed": false
+  },
+  "fixture_quarantine": {
+    "authority_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
+    "reject": [
+      "all exact I03 fixture numeric inputs and observations",
+      "all I03 branch and topology identities",
+      "all I03 implementation comparators",
+      "all I03 conformance outcomes and response values",
+      "all I03 evidence, reconstruction, restoration, and source digests",
+      "direct equality and trivial serialized reuse"
+    ],
+    "allowed": [
+      "accepted causal structures",
+      "public PyGRC APIs",
+      "source-label-free ordered-fold family",
+      "minimal producer and composite-restoration obligations"
+    ]
+  },
+  "execution_boundary": {
+    "final_output_producing_registration_start_ceiling": 1,
+    "allowed_model_instantiations_in_final_start": 6,
+    "allowed_runtime_scope": "baseline-only native-v2 and composite identity, save/load/reset, repeated-reset refusal, and static mismatch/cross-pair refusal",
+    "candidate_contribution_operations": 0,
+    "active_history_token_admissions": 0,
+    "neutral_contact_operations": 0,
+    "response_evaluations": 0,
+    "candidate_or_control_cell_invocations": 0,
+    "comparator_or_scientific_windows": 0,
+    "scientific_result": false,
+    "graph_repository_mutations": 0
+  },
+  "expected_outputs": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-control-resolution-index-template.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06-exact-registration.md"
+  ],
+  "review_stop": {
+    "result_status": "P2-I2-I06-REGISTRATION-REVIEW-READY",
+    "owner_review_required": true,
+    "commit_authorized": false,
+    "REG_GATE_passed": false,
+    "I07_authorized": false
+  },
+  "evidence_effect": "exact_registration_only_no_candidate_or_scientific_evidence"
+}
