@@ -1,0 +1,142 @@
+{
+  "activity_id": "P2-I2-I05I-FIFTH-FINAL-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05I-TERMINAL-PORTABILITY-CORRECTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "calibration_builder_invocations": 0,
+  "candidate_or_control_invocations": 0,
+  "checks": [
+    {
+      "check_id": "I05I-01",
+      "evidence": {
+        "accepted_audit_files": 6,
+        "baseline_findings": 14,
+        "constructed_root_surfaces": 3,
+        "constructed_shebang_surfaces": 1,
+        "correction_files": 9,
+        "owner_identified_validators": 2,
+        "remaining_groups": 1,
+        "validator_identified_sources": 1
+      },
+      "finding": "the accepted six-file/14-finding group is supplemented by three validators with four constructed absolute surfaces",
+      "name": "accepted terminal I05D group plus owner-identified constructor supplement",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-02",
+      "evidence": {
+        "source_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11",
+        "source_file_count": 9
+      },
+      "finding": "every terminal-group source reconstructs from the accepted I05H commit",
+      "name": "historical source bytes",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-03",
+      "evidence": {
+        "lineage_sha256": "e2d570822356f93cb47614e6225189f68e90dffd8b07c08f3598d5cd670d0ba8",
+        "projection_count": 9
+      },
+      "finding": "the lineage binds all nine historical and projected bytes",
+      "name": "portable projection lineage identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-04",
+      "evidence": {
+        "constructed_absolute_binding_count": 0,
+        "scanned_file_count": 166,
+        "violation_count": 0
+      },
+      "finding": "the complete current accepted P2-I2 scope contains zero literal or constructed absolute-path findings",
+      "name": "complete current P2-I2 audit scope is portable",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-05",
+      "evidence": {
+        "exact_projection_count": 3,
+        "historical_constructed_binding_count": 8,
+        "validator_projection_count": 3
+      },
+      "finding": "three ordinary projections are exact and all three validator sources replace constructed absolute constants with retained-source-driven logic",
+      "name": "exact projections and constructed-root removal",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-06",
+      "evidence": {
+        "bounded_governance_files": 3
+      },
+      "finding": "all self-governance diff hunks are confined to I05H acceptance I05I/DEC-039/CHG-032 closeout owner-identified scope correction or frozen path substitutions",
+      "name": "bounded self-governance projections",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-07",
+      "evidence": {
+        "scientific_change": false
+      },
+      "finding": "the complete I03-and-later operational hypothesis body is byte-unchanged",
+      "name": "scientific hypothesis body unchanged",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-08",
+      "evidence": {
+        "interpreter_identity": ".venv/bin/python",
+        "module_imported": false
+      },
+      "finding": "the calibration source is parsed but not imported and requires explicit repository-venv invocation",
+      "name": "portable explicit-venv script boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-09",
+      "evidence": {
+        "prior_identity_count": 2,
+        "source_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11"
+      },
+      "finding": "I05H commit validation and lineage identities remain exact",
+      "name": "prior accepted group authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05I-10",
+      "evidence": {
+        "candidate_or_control_invocations": 0,
+        "conformance_or_scientific_invocations": 0,
+        "other_python_process_starts": 0,
+        "pygrc_imports_or_model_instantiations": 0,
+        "scientific_result": false
+      },
+      "finding": "I05I remains static portability validation with no runtime/scientific or automatic CAL-GATE authority",
+      "name": "zero-execution and progression boundary",
+      "status": "passed"
+    }
+  ],
+  "complete_current_scope_violation_count": 0,
+  "constructed_absolute_binding_count": 0,
+  "constructor_correction_source_count": 3,
+  "corrected_file_count": 9,
+  "corrected_group_violation_count": 0,
+  "failed_closed_pre_output_starts": 2,
+  "freeze_sha256": "696fc0d071003c6ec3387f02e1f389e55f6b0d56bfe5bd7d5046f8c0e29c83cf",
+  "interpreter_identity": ".venv/bin/python",
+  "iteration_id": "P2-I2-I05I",
+  "lane_id": "AE01-L02",
+  "lineage_sha256": "e2d570822356f93cb47614e6225189f68e90dffd8b07c08f3598d5cd670d0ba8",
+  "null_or_one_shot_wrapper_invocations": 0,
+  "other_python_process_starts": 0,
+  "passed_checks": 10,
+  "policy_sha256": "9a738f6e0173f5f753c774a1c07f0dc7871d5757223e6660b8f673bae789bdf2",
+  "pygrc_imports_or_model_instantiations": 0,
+  "result_status": "P2-I2-I05I-TERMINAL-GROUP-REVIEW-READY",
+  "scientific_result": false,
+  "total_checks": 10,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05i_validate.py",
+    "sha256": "ecd6730e161562b351f25ed7dc4e4afb41316295d462bbf2a77c1dbe4ea8663a"
+  },
+  "validator_entrypoint_starts": 3
+}

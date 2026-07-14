@@ -900,7 +900,7 @@ mode ranking is authorized. Execution and deterministic validation return as
 The first final 10.4 preflight failed before claim because the accepted wrapper
 passed the repo-relative `.venv/bin/python` command path through the generic
 repository-data resolver, which rejects its legitimate resolution to
-`/usr/bin/python3.12`. This is an infrastructure-path validation defect, not a
+`system-interpreter:python3.12`. This is an infrastructure-path validation defect, not a
 governed attempt: no claim, builder call, null output, final receipt, PyGRC,
 candidate, or control operation exists, so the one permitted attempt remains
 unconsumed.
@@ -1150,6 +1150,66 @@ and scientific count is zero. These are portability-process facts only and
 have no operational-hypothesis or L02 evidentiary effect. I05H stops
 uncommitted for explicit owner review; it does not authorize its own commit or
 a fifth group.
+
+The project owner subsequently accepts I05H, authorizes its commit, and asks
+for an exact remaining-file check before deciding whether two residual groups
+should be combined. The accepted package is retained at `1279e17`.
+
+#### 3.2.20 I05I fifth/final portability correction
+
+The accepted I05D order and current P2-I2 audit boundary agree that only one
+residual group exists: `p2_i2_governance_navigation_and_shared_projections`,
+with 14 embedded machine-local tokens across six files. There are not two
+residual groups to combine. The project owner directs that this check be folded
+into the fifth/final correction instead of creating a standalone review.
+
+Before the first I05I validator start, owner inspection identifies two more
+source files that the literal-token scanner could not classify:
+`p2_i2_i05g_validate.py` reconstructs the historical RCAE and graph roots, and
+`p2_i2_i05h_validate.py` reconstructs the historical graph root. These three
+constructed-root surfaces are equally forbidden. They are added to the same
+final correction, not a new iteration. The second failed-closed I05I start then
+shows that the expanded guard also detects a constructed historical shebang in
+`p2_i2_i05f_validate.py`. That ninth source is admitted before the final
+validator start. I05I therefore binds nine historical sources at commit
+`1279e17`. The three
+self-governance files necessarily receive checklist/hypothesis/decision
+declaration before freeze, but their correction source remains the accepted
+commit bytes and no non-governance affected file may change before the exact
+freeze. The final projections may change only absolute-path, interpreter,
+temporary-output, graph-checkout, command, or portable path-resolution
+representation plus additive lineage/governance needed to describe the
+correction.
+
+I05I cannot change any hypothesis, decision, calibration, gate, source,
+realization, reset, restoration, evidence, or navigation meaning. It cannot
+import PyGRC, execute a model, invoke a historical validator, run a candidate/
+control/conformance/scientific path, freeze the metric sheet, pass CAL-GATE, or
+edit older P2-I1/shared AE01 files outside the accepted P2-I2 boundary. Static
+validation must use `.venv/bin/python` under a frozen ceiling. The completed
+correction must stop uncommitted for owner review.
+
+The completed uncommitted I05I projection passes 10/10 static checks. It binds
+the six accepted-audit sources plus three validator constructor sources to
+nine portable projections, closes the terminal 14 literal findings and four
+constructed absolute surfaces to zero, and scans the complete current P2-I2 audit
+scope to zero findings. The three ordinary non-governance projections
+reconstruct exactly; all three validator sources contain no constructed absolute
+binding; the three
+self-governance diffs are bounded to the I05H acceptance, DEC-039/CHG-032/I05I
+declaration/closeout, and frozen path substitutions. Raw source bytes remain
+at commit `1279e17`.
+
+All three allowed `.venv` validator starts are used. The first fails
+closed before output because the initial policy carried three stale pre-I05H
+governance digests instead of the exact `1279e17` source bytes; the policy,
+freeze, and lineage are corrected in place. The second fails closed at I05I-04
+after finding the I05F constructed shebang; that source is added and corrected.
+The third passes. Every
+other Python, PyGRC import/model, historical validator/manifest-builder,
+candidate/control, calibration, null/wrapper, conformance, and scientific count
+is zero. These facts have no operational-hypothesis or L02 evidentiary effect.
+I05I stops uncommitted for owner review and does not itself pass CAL-GATE.
 
 ### 3.3 I03A state-carried realization binding
 

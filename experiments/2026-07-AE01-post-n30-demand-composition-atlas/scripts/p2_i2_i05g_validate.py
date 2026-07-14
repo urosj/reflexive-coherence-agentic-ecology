@@ -30,15 +30,8 @@ LINEAGE = EXPERIMENT / "contracts/p2-i2/i05g-portable-projection-lineage.json"
 REPORT = EXPERIMENT / "reports/P2-I2-I05G-portability-correction.md"
 SOURCE_COMMIT = "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50"
 GRAPH_REPOSITORY_ID = "graph-reflexive-coherence"
+RCAE_REPOSITORY_ID = "reflexive-coherence-agentic-ecology"
 SEP = chr(47)
-PORTABLE_SHEBANG = "#!" + SEP + "usr/bin/env python3"
-OLD_RCAE_ROOT = SEP + SEP.join(
-    ("home", "uros", "Documents", "RC-github", "reflexive-coherence-agentic-ecology")
-)
-OLD_GRAPH_ROOT = SEP + SEP.join(
-    ("home", "uros", "Documents", "RC-github", GRAPH_REPOSITORY_ID)
-)
-OLD_TEMP_PREFIX = SEP + "tmp" + SEP
 ATTACHMENTS = (
     "050693b2-7c8a-4ad4-8506-0f39985a0a7a",
     "b9e2a79f-b3d2-480d-a019-f78701836a7b",
@@ -112,30 +105,87 @@ def _structured_pointer(value: str) -> dict[str, Any]:
     }
 
 
+def _absolute_token_span(value: str, marker: str) -> tuple[int, int]:
+    marker_start = value.find(marker)
+    if marker_start < 0:
+        raise AssertionError(f"historical token marker absent: {marker}")
+    boundaries = set(" \t\n\r\"'`=([{<,!")
+    start = marker_start
+    while start > 0 and value[start - 1] not in boundaries:
+        start -= 1
+    end = marker_start + len(marker)
+    while end < len(value) and value[end] not in boundaries and value[end] not in "),]}>;":
+        end += 1
+    if value[start:start + 1] != SEP:
+        raise AssertionError(f"historical marker is not inside an absolute token: {marker}")
+    return start, end
+
+
+def _replace_absolute_root(value: str, marker: str, replacement: str) -> str:
+    start, _ = _absolute_token_span(value, marker)
+    marker_end = value.find(marker, start) + len(marker)
+    return value[:start] + replacement + value[marker_end:]
+
+
+def _replace_absolute_token(value: str, marker: str, replacement: str) -> str:
+    start, end = _absolute_token_span(value, marker)
+    return value[:start] + replacement + value[end:]
+
+
+def _replace_temporary_tokens(value: str) -> str:
+    projected = value
+    while True:
+        starts = [
+            index
+            for index, character in enumerate(projected)
+            if character == SEP
+            and (index == 0 or projected[index - 1] in " \t\n\r\"'`=([{<,!")
+        ]
+        replaced = False
+        for start in starts:
+            name_start = start + 1
+            name_end = name_start + len("tmp")
+            next_character = projected[name_end:name_end + 1]
+            if (
+                projected[name_start:name_end] == "tmp"
+                and next_character == SEP
+            ):
+                prefix_end = name_end + 1
+                projected = projected[:start] + "temporary-output:" + projected[prefix_end:]
+                replaced = True
+                break
+        if not replaced:
+            return projected
+
+
+def _remove_historical_shebang(value: str, label: str) -> str:
+    lines = value.splitlines(keepends=True)
+    if not lines or not lines[0].startswith("#!"):
+        raise AssertionError(f"historical shebang absent: {label}")
+    return "".join(lines[1:])
+
+
 def _project_string(value: str) -> Any:
     projected = value
-    projected = projected.replace(
-        OLD_RCAE_ROOT + SEP + ".venv" + SEP + "bin" + SEP + "python",
-        ".venv/bin/python",
-    )
-    projected = projected.replace(OLD_RCAE_ROOT + SEP + ".venv", ".venv")
-    projected = projected.replace(
-        OLD_GRAPH_ROOT,
-        "external-repository:" + GRAPH_REPOSITORY_ID,
-    )
-    projected = projected.replace(OLD_TEMP_PREFIX, "temporary-output:")
+    if RCAE_REPOSITORY_ID in projected and ".venv" in projected:
+        projected = _replace_absolute_root(projected, RCAE_REPOSITORY_ID, "")
+        if projected.startswith(SEP + ".venv"):
+            projected = projected[1:]
+    if GRAPH_REPOSITORY_ID in projected:
+        projected = _replace_absolute_root(
+            projected,
+            GRAPH_REPOSITORY_ID,
+            "external-repository:" + GRAPH_REPOSITORY_ID,
+        )
+    projected = _replace_temporary_tokens(projected)
     for attachment_id in ATTACHMENTS:
-        old = (
-            SEP
-            + SEP.join(("home", "uros", ".codex", "attachments", attachment_id))
-            + SEP
-            + "pasted-text.txt"
-        )
-        projected = projected.replace(
-            old,
-            "attachment:" + attachment_id + SEP + "pasted-text.txt",
-        )
-    if projected == SEP + "usr":
+        if attachment_id in projected:
+            projected = _replace_absolute_token(
+                projected,
+                attachment_id,
+                "attachment:" + attachment_id + SEP + "pasted-text.txt",
+            )
+    if projected.startswith(SEP) and projected[1:].split(SEP) == ["usr"]:
         projected = "base-runtime:system"
     if projected.startswith(SEP):
         return _structured_pointer(projected)
@@ -167,21 +217,21 @@ def _replace_once(value: str, old: str, new: str, label: str) -> str:
 
 
 def _expected_script(relative: str, historical: str) -> str:
-    value = _replace_once(
-        historical,
-        PORTABLE_SHEBANG + "\n",
-        "",
-        relative + " shebang",
-    )
+    value = _remove_historical_shebang(historical, relative)
     name = Path(relative).name
     if name in {
         "p2_i2_i03ar1_conform.py",
         "p2_i2_i03b_conform.py",
         "p2_i2_i03c_conform.py",
     }:
+        old_graph_line = next(
+            line
+            for line in value.splitlines()
+            if line.startswith("GRAPH_ROOT = Path(") and GRAPH_REPOSITORY_ID in line
+        )
         value = _replace_once(
             value,
-            'GRAPH_ROOT = Path("' + OLD_GRAPH_ROOT + '")',
+            old_graph_line,
             'GRAPH_ROOT = ROOT.parent / "graph-reflexive-coherence"',
             name + " graph root",
         )
@@ -256,10 +306,11 @@ def _expected_script(relative: str, historical: str) -> str:
 
 
 def _expected_report(historical: str) -> str:
-    old = (
-        "The retained conformance artifact and `"
-        + SEP
-        + "tmp` reconstruction both have SHA-256"
+    old = next(
+        line
+        for line in historical.splitlines()
+        if line.startswith("The retained conformance artifact and `")
+        and "reconstruction both have SHA-256" in line
     )
     new = (
         "The retained conformance artifact and the logical temporary-output "

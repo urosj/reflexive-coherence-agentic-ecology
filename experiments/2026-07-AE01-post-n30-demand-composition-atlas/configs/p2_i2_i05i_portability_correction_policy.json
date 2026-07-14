@@ -1,0 +1,132 @@
+{
+  "activity_id": "P2-I2-I05I-FIFTH-FINAL-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05I-PORTABILITY-CORRECTION-POLICY",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-032",
+    "decision_id": "P2-I2-DEC-039",
+    "owner_authorized_group": "p2_i2_governance_navigation_and_shared_projections",
+    "parent_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11",
+    "return_uncommitted_for_review": true
+  },
+  "baseline_audit": {
+    "affected_file_count": 6,
+    "audit_policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+    "correction_group": "p2_i2_governance_navigation_and_shared_projections",
+    "remaining_group_count": 1,
+    "result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "violation_count": 14,
+    "violation_classes": {
+      "embedded_machine_local_absolute_token": 14
+    }
+  },
+  "combination_disposition": {
+    "groups_combined": false,
+    "reason": "the accepted order and current P2-I2 audit boundary contain one residual group rather than two"
+  },
+  "correction_scope": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "source_sha256": "f73618ef0dde512ee0c7a5b4a68e362677b306c090936abb5e8973e314e1d249"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "source_sha256": "41667fc81fd9e1fb99a628268da118cd6802ce44eb7f7b8fb0ff299f06e60dd9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "source_sha256": "6a2998f8d1feb4f9ea860ba59db171747e688563832e6790402d2be15c02097e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I00-validation.md",
+      "source_sha256": "47fbd01b02327ac8ff08a0bc9e98431e92e3beaea121debe2c1e71e089f3c8b7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/README.md",
+      "source_sha256": "94a0882655376b95a4618af861c712e86d587a88c36ee136e1057c00ab2aa11e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+      "source_sha256": "05a62b434fcd54a208124feff4d8b9690fc771cd949063367a83b8db65f99a46"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05f_validate.py",
+      "source_sha256": "e7b890e16f904f7bc9e28ba459c575a9eccdd7c429e8f97fbc78021a2a52b5ce"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05g_validate.py",
+      "source_sha256": "f3123ec89a48203abf082e6cc4350cd80a086a92f3ec06bc97488b74e0e352f0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05h_validate.py",
+      "source_sha256": "7f387fec5708bd122e1af29d15d447b59ff768124c3518546383b9fc463030fc"
+    }
+  ],
+  "historical_authority": {
+    "current_projection_source_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11",
+    "history_rewrite_authorized": false,
+    "raw_governance_navigation_evidence_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11",
+    "representation": "commit_and_sha256_only"
+  },
+  "immutable_semantics": [
+    "all P2-I2 hypotheses and operational projections",
+    "all decisions changes acceptance authorities and gate dispositions",
+    "all checklist iteration evidence and navigation meanings",
+    "I00 validation conclusions and historical graph-worktree result",
+    "script documentation command purposes and safety boundaries",
+    "calibration module arithmetic and estimator behavior",
+    "I05F I05G and I05H validator authority checks and accepted validation outputs",
+    "all I01 through I05 accepted evidence and quarantine boundaries"
+  ],
+  "invocation_ceiling_after_freeze": {
+    "calibration_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "I05I_validator_entrypoint_starts": 3,
+    "null_or_one_shot_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_imports_or_model_instantiations": 0
+  },
+  "projection_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05i-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05I-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05i-portability-correction-validation.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05i_validate.py"
+  },
+  "owner_identified_constructed_root_supplement": {
+    "constructed_root_surface_count": 3,
+    "discovered_before_validation": true,
+    "paths": [
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05g_validate.py",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05h_validate.py"
+    ],
+    "reason": "the accepted text scanner detected literal tokens but not validators that reconstructed machine-specific repository roots from path components"
+  },
+  "validator_identified_constructed_absolute_supplement": {
+    "constructed_absolute_surface_count": 1,
+    "discovered_by_failed_closed_I05I_04_before_output": true,
+    "paths": [
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05f_validate.py"
+    ],
+    "reason": "the expanded constructor guard detected a historical shebang constant assembled from a separator and interpreter components"
+  },
+  "scope_resolution_history": {
+    "non_governance_affected_file_edits_before_freeze": 0,
+    "owner_identified_constructor_files": 2,
+    "validator_identified_constructor_files": 1,
+    "remaining_group_count": 1,
+    "resolved_before_policy_freeze": true,
+    "runtime_or_scientific_operations": 0,
+    "self_governance_declaration_files": 3
+  },
+  "transformation_rules": {
+    "governance_self_declaration": "retain DEC-039 CHG-032 checklist and hypothesis declarations while binding all correction sources to commit 1279e17",
+    "graph_command_identity": "replace machine-local graph checkout in historical I00 command provenance with logical GRC checkout identity and mark it historical non-executable provenance",
+    "historical_bytes": "retain every raw source byte at commit 1279e17 and never substitute projection hashes into raw evidence",
+    "interpreter_identity": "replace historical system interpreter absolute locations with logical system-interpreter identity without changing the recorded failure meaning",
+    "report_projection": "replace only machine-local command/location representation and append source commit digest lineage",
+    "script_entry": "remove the machine-selecting calibration shebang and require invocation through .venv/bin/python",
+    "temporary_output_identity": "replace fixed POSIX temporary-output tokens in governance and script documentation with TMPDIR logical identities",
+    "validator_historical_projection": "replace the constructed historical shebang in I05F and machine-specific root constants in I05G and I05H with retained-source-driven parsing; preserve their accepted outputs and authority semantics"
+  }
+}

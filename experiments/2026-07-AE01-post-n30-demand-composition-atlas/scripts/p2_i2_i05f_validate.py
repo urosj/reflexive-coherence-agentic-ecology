@@ -35,7 +35,6 @@ GRAPH_REPOSITORY_ID = "graph-reflexive-coherence"
 GRAPH = ROOT.parent / GRAPH_REPOSITORY_ID
 ATTACHMENT_ID = "5f7e5ef9-d600-4f97-a668-3b67afa14284"
 SEP = chr(47)
-PORTABLE_SHEBANG = "#!" + SEP + "usr/bin/env python3"
 
 JSON_PROJECTION_KINDS = {
     "configs/p2_i2_i04r2_machine_policy.json": (
@@ -210,6 +209,10 @@ def _external_source_rows(value: Any) -> list[dict[str, Any]]:
 
 
 def _script_diff_allowed(relative: str, historical: str, current: str) -> bool:
+    historical_lines = historical.splitlines()
+    if not historical_lines or not historical_lines[0].startswith("#!"):
+        raise AssertionError(f"historical shebang absent: {relative}")
+    historical_shebang = historical_lines[0]
     removed: list[str] = []
     added: list[str] = []
     for line in difflib.ndiff(historical.splitlines(), current.splitlines()):
@@ -220,7 +223,7 @@ def _script_diff_allowed(relative: str, historical: str, current: str) -> bool:
 
     def allowed_removed(line: str) -> bool:
         return (
-            line == PORTABLE_SHEBANG
+            line == historical_shebang
             or GRAPH_REPOSITORY_ID in line
             or "str(analysis_path)" in line
             or "str(calibration_path)" in line
@@ -267,8 +270,8 @@ def _script_diff_allowed(relative: str, historical: str, current: str) -> bool:
             or any(fragment in line for fragment in allowed_addition_fragments)
         )
 
-    required = [PORTABLE_SHEBANG]
-    current_requirements = [PORTABLE_SHEBANG]
+    required = [historical_shebang]
+    current_requirements = [historical_shebang]
     if relative.endswith("i04_validate.py"):
         required.append("graph_repository")
         current_requirements.extend(("graph_repository_id", "ROOT.parent"))

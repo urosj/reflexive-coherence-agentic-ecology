@@ -31,11 +31,6 @@ REPORT = EXPERIMENT / "reports/P2-I2-I05H-portability-correction.md"
 SOURCE_COMMIT = "62882efc5ecf3c131d21345ad89796f0b2ebccb7"
 GRAPH_REPOSITORY_ID = "graph-reflexive-coherence"
 SEP = chr(47)
-OLD_GRAPH_ROOT = SEP + SEP.join(
-    ("home", "uros", "Documents", "RC-github", GRAPH_REPOSITORY_ID)
-)
-OLD_TEMP_ROOT = SEP + "tmp"
-PORTABLE_SHEBANG = "#!" + SEP + "usr/bin/env python3"
 
 
 def _sha256_bytes(value: bytes) -> str:
@@ -98,12 +93,88 @@ def _metadata(source_sha256: str) -> dict[str, Any]:
     }
 
 
+def _absolute_token_span(value: str, marker: str) -> tuple[int, int]:
+    marker_start = value.find(marker)
+    if marker_start < 0:
+        raise AssertionError(f"historical token marker absent: {marker}")
+    boundaries = set(" \t\n\r\"'`=([{<,!")
+    start = marker_start
+    while start > 0 and value[start - 1] not in boundaries:
+        start -= 1
+    end = marker_start + len(marker)
+    while end < len(value) and value[end] not in boundaries and value[end] not in "),]}>;":
+        end += 1
+    if value[start:start + 1] != SEP:
+        raise AssertionError(f"historical marker is not inside an absolute token: {marker}")
+    return start, end
+
+
+def _replace_absolute_root(value: str, marker: str, replacement: str) -> str:
+    start, _ = _absolute_token_span(value, marker)
+    marker_end = value.find(marker, start) + len(marker)
+    return value[:start] + replacement + value[marker_end:]
+
+
+def _replace_temporary_tokens(value: str) -> str:
+    projected = value
+    while True:
+        starts = [
+            index
+            for index, character in enumerate(projected)
+            if character == SEP
+            and (index == 0 or projected[index - 1] in " \t\n\r\"'`=([{<,!")
+        ]
+        replaced = False
+        for start in starts:
+            name_start = start + 1
+            name_end = name_start + len("tmp")
+            next_character = projected[name_end:name_end + 1]
+            if (
+                projected[name_start:name_end] == "tmp"
+                and (not next_character or next_character == SEP or next_character in " \t\n\r\"'`),]}>;:")
+            ):
+                prefix_end = name_end
+                projected = projected[:start] + "${TMPDIR}" + projected[prefix_end:]
+                replaced = True
+                break
+        if not replaced:
+            return projected
+
+
+def _replace_graph_roots(value: str, replacement: str) -> str:
+    projected = value
+    search_from = 0
+    while True:
+        marker_start = projected.find(GRAPH_REPOSITORY_ID, search_from)
+        if marker_start < 0:
+            return projected
+        boundaries = set(" \t\n\r\"'`=([{<,!")
+        token_start = marker_start
+        while token_start > 0 and projected[token_start - 1] not in boundaries:
+            token_start -= 1
+        if projected[token_start:token_start + 1] != SEP:
+            search_from = marker_start + len(GRAPH_REPOSITORY_ID)
+            continue
+        marker_end = marker_start + len(GRAPH_REPOSITORY_ID)
+        projected = projected[:token_start] + replacement + projected[marker_end:]
+        search_from = token_start + len(replacement)
+
+
+def _remove_historical_shebang(value: str, label: str) -> str:
+    lines = value.splitlines(keepends=True)
+    if not lines or not lines[0].startswith("#!"):
+        raise AssertionError(f"historical shebang absent: {label}")
+    return "".join(lines[1:])
+
+
 def _project_nested(value: Any) -> Any:
     if isinstance(value, str):
-        return value.replace(
-            OLD_GRAPH_ROOT,
-            "external-repository:" + GRAPH_REPOSITORY_ID,
-        ).replace(OLD_TEMP_ROOT, "${TMPDIR}")
+        return _replace_temporary_tokens(
+            _replace_graph_roots(
+                value,
+                "external-repository:" + GRAPH_REPOSITORY_ID,
+            )
+        )
     if isinstance(value, list):
         return [_project_nested(item) for item in value]
     if isinstance(value, dict):
@@ -164,25 +235,31 @@ def _expected_report(relative: str, historical: str, source_sha256: str) -> str:
     name = Path(relative).name
     value = historical
     if name == "P2-I2-I01-command-provenance.md":
-        old = "below denotes `" + OLD_GRAPH_ROOT + "`."
+        old = next(
+            line
+            for line in value.splitlines()
+            if line.startswith("below denotes `") and GRAPH_REPOSITORY_ID in line
+        )
         new = "below denotes the logical sibling checkout `${GRC}`."
         value = _replace_once(value, old, new, name + " graph notation")
-    value = value.replace(OLD_GRAPH_ROOT, "${GRC}")
-    value = value.replace(OLD_TEMP_ROOT, "${TMPDIR}")
+    value = _replace_graph_roots(value, "${GRC}")
+    value = _replace_temporary_tokens(value)
     return value + _report_suffix(name, source_sha256)
 
 
 def _expected_script(relative: str, historical: str) -> str:
-    value = _replace_once(
-        historical,
-        PORTABLE_SHEBANG + "\n",
-        "",
-        relative + " shebang",
-    )
+    value = _remove_historical_shebang(historical, relative)
     if Path(relative).name == "p2_i2_i02r2_validate.py":
-        old = 'tempfile.TemporaryDirectory(dir="' + OLD_TEMP_ROOT + '")'
-        if value.count(old) != 5:
+        old_lines = [
+            line
+            for line in value.splitlines()
+            if "tempfile.TemporaryDirectory(dir=" in line
+        ]
+        if len(old_lines) != 5 or len(set(old_lines)) != 1:
             raise AssertionError("expected five fixed temporary-directory surfaces")
+        call_start = old_lines[0].index("tempfile.TemporaryDirectory(")
+        call_end = old_lines[0].index(")", call_start) + 1
+        old = old_lines[0][call_start:call_end]
         value = value.replace(old, "tempfile.TemporaryDirectory()")
     return value
 

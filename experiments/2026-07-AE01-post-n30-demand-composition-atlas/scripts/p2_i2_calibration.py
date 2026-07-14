@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Execute the frozen P2-I2 candidate-blind matched null in I05.
 
 I04 freezes and validates this entry point but does not invoke it. The script

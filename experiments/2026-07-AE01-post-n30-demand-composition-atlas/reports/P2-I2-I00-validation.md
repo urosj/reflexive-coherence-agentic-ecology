@@ -74,7 +74,7 @@ were run from the RCAE repository root.
 | Required structure | Require I00/I00R1/I01–I11, OP-01–OP-09, DEC-001–DEC-004, frozen L02 cells/controls/rungs, D-039 bindings, and revision `0.27` projections | `0` | All required identities present |
 | Trailing whitespace | Fail if `[[:blank:]]+$` occurs in any checked file | `0` | No matches |
 | Tracked diff integrity | `git diff --check` | `0` | No whitespace/error diagnostics |
-| Graph worktree guard | `git -C /home/uros/Documents/RC-github/graph-reflexive-coherence status --short` | `0` | Empty output; graph worktree clean |
+| Graph worktree guard | `git -C ${GRC} status --short` | `0` | Empty output; graph worktree clean |
 
 ## 4. Boundary verification
 
@@ -94,3 +94,11 @@ Validation confirmed:
 
 This record reconstructs I00/I00R1 integrity. It does not pass
 `P2-I2-SOURCE-AUDIT-GATE` or any later gate.
+
+## I05I portability projection
+
+This representation-only projection is governed by `P2-I2-DEC-039` and
+`P2-I2-CHG-032`. The graph command is historical non-executable provenance.
+Raw bytes remain at commit `1279e177d6691417a1d692dd8fdfc5cf50060e11`,
+SHA-256 `47fbd01b02327ac8ff08a0bc9e98431e92e3beaea121debe2c1e71e089f3c8b7`.
+No validation or gate meaning changed.

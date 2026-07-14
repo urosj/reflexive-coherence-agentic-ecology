@@ -73,6 +73,7 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-036` | Does completed DEC-035 closeout also constitute full I05F acceptance and commit authorization? | Owner-confirmed: “when done, it is also acceptance, can be committed” | Accepts and authorizes commit of the complete I05F package after closeout; no next group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-037` | Which portability work may begin after accepted I05F commit `99c64dd`? | Owner direction: “third group is next”; declare I05G, resolve/freeze the exact third accepted-audit group before edits, and return its bounded correction uncommitted | I05G is 10/10 review-ready with 201 to zero findings; no owner acceptance/commit authority, fourth group, CAL-GATE, I06, or execution | 2026-07-14 |
 | `P2-I2-DEC-038` | What follows owner review of I05G? | Accept and commit I05G, then open I05H for the exact fourth accepted-audit group under checklist/hypothesis-first freeze discipline | I05G retained at `62882ef`; opens I05H scope resolution/freeze only; no affected edit before freeze, fifth group, CAL-GATE, I06, or execution | 2026-07-14 |
+| `P2-I2-DEC-039` | What follows owner review of I05H? | Accept and commit I05H; reconcile the remaining inventory; fold the one six-file/14-finding group plus three validator constructor sources into the fifth/final I05I correction | I05H retained at `1279e17`; opens exact nine-file terminal correction only; no P2-I1 scope expansion, CAL-GATE, I06, or execution | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -1871,7 +1872,7 @@ frozen CPython version and SHA-256 digest.
 
 The accepted wrapper incorrectly reused its repository-data `_path()` guard for
 the interpreter. Because the valid `.venv/bin/python` chain resolves to
-`/usr/bin/python3.12`, final preflight at launch commit `98770ae` failed with
+`system-interpreter:python3.12`, final preflight at launch commit `98770ae` failed with
 `OneShotError` before claim. This created no attempt claim, builder/null call,
 output, final receipt, PyGRC model, candidate/control action, or scientific
 result. The one governed attempt remains unconsumed and infrastructure retries
@@ -2220,7 +2221,81 @@ group, an affected file changes before freeze, the parent commit differs, a
 transformation exceeds path representation, a fifth group begins, or a
 prohibited operation occurs.
 
-## 41. Pending decision queue
+## 41. `P2-I2-DEC-039` — I05H acceptance and remaining-inventory reconciliation
+
+**Status:** owner-directed I05H progression complete; exact fifth/final I05I
+review-ready and uncommitted pending explicit owner acceptance/commit authority
+
+**Question:** What may proceed after owner review of I05H, and should two
+remaining groups be combined?
+
+**Decision:** The project owner directs: “accept and commit, then I think we
+should check how many files have left, maybe combine the two groups as one.”
+This accepts I05H, authorizes and results in commit `1279e17`, and initially
+opens a read-only comparison of:
+
+- the accepted I05D correction-group order and remaining group/file/finding
+  inventory; and
+- the actual current P2-I2 files still carrying an absolute-path finding after
+  I05E–I05H.
+
+The comparison resolves one residual accepted group, not two: six files and 14
+findings under `p2_i2_governance_navigation_and_shared_projections`. The
+current P2-I2 boundary identifies the same six files. The owner's follow-up—
+“don't overcomplicate with I05I ... there's no need for just a review”—directs
+the comparison to become the entry step of the fifth/final I05I correction.
+No group combination is needed or possible.
+
+Before I05I validation begins, owner inspection identifies constructed
+machine-specific repository roots in `p2_i2_i05g_validate.py` and
+`p2_i2_i05h_validate.py`: two historical graph-root constructors and one RCAE-
+root constructor across the two files. The accepted audit did not report them
+because it scans persisted literal tokens rather than dynamically assembled
+paths. Absolute paths remain forbidden regardless of representation, so these
+two sources are admitted to I05I before validation. This corrects the same
+final portability boundary; it does not create I05I-A or another group.
+
+Before any non-governance affected file changes, I05I must retain an immutable
+freeze binding commit `1279e17`, all six source hashes, permitted
+representation-only transformations, the self-governance declaration
+boundary, invocation ceilings, outputs, and the uncommitted review stop. The
+three governance files necessarily carry this checklist/hypothesis/decision
+declaration before freeze, but their historical correction source remains the
+accepted commit bytes. The freeze additionally binds the two owner-identified
+validator source hashes and the I05F source identified by the expanded
+constructor guard, for nine correction sources in total.
+
+I05I cannot expand into older P2-I1/shared AE01 files, change scientific or
+governance meaning, import PyGRC, invoke a historical validator or manifest
+builder, run any runtime/scientific path, freeze the metric sheet, pass
+CAL-GATE, or open I06.
+
+**Completion:** The terminal correction passes 10/10 static checks with 14
+literal findings and four constructed absolute surfaces reduced to zero. All
+nine source/projection pairs are retained; the three ordinary non-governance
+projections reconstruct exactly; all three validator projections contain no
+constructed absolute binding; the three self-governance
+diffs are bounded to I05H acceptance, DEC-039/CHG-032/I05I declaration and
+closeout, and frozen path substitutions. The complete current P2-I2 audit
+scope has zero findings. Historical source bytes remain addressable at
+`1279e17`, and no hypothesis, decision, gate, calibration, source,
+realization, evidence, or navigation meaning changes.
+
+All three admitted `.venv/bin/python` validator starts are used. The
+first fails closed at I05I-02 before output because three governance source
+digests predate I05H; the exact `1279e17` digests are corrected in the policy,
+freeze, and lineage. The second fails closed at I05I-04 before output because
+the expanded guard finds a constructed I05F historical shebang; that ninth
+source is frozen and corrected, and the third start passes. All other Python starts and every PyGRC import/model, historical
+validator/manifest builder, builder/null/wrapper, candidate/control/
+conformance/scientific operation remain zero. I05I stops uncommitted for
+review. DEC-039 does not accept or authorize committing I05I or pass CAL-GATE.
+
+Reopen DEC-039 if a non-governance subject changes before freeze, the frozen
+nine-file boundary expands, source identity differs from `1279e17`, a process
+count becomes scientific evidence, or a prohibited operation occurs.
+
+## 42. Pending decision queue
 
 No item below is decided by this record yet:
 
