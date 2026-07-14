@@ -154,9 +154,11 @@ and shared-medium participation before implementation claims are made.
   contracts, reconstruction conventions, evidence, and closeouts. The current
   AE01 workspace has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is
   closed with one bounded, explicitly constructed L01 result, and Review R3
-  passed without tuning it. The P2-I2 brief gate has passed; its checklist-
-  governed source audit remains pending, and all remaining lane execution stays
-  independently gated. New readers can begin with
+  passed without tuning it. The P2-I2 brief gate and corrected I01R1 source-
+  audit gate have passed; the revalidation quarantines candidate-shaped probe
+  behavior and retains a composition-capable but control-incomplete native
+  candidate. Source admission is ready but not begun, and all remaining lane
+  execution stays independently gated. New readers can begin with
   [why AE01 matters for agentic ecology](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
 - [`implementation/`](implementation/README.md): active cross-cutting plans,
   decisions, checklists, and handoffs.

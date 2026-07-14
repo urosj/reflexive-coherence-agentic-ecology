@@ -37,10 +37,12 @@ graph surfaces, and proposed graph discriminators.
 
 - [P2-I2 operational hypotheses](p2-i2-operational-hypotheses.md) project the
   frozen `AE01-H-L02` hypothesis and accepted P2-I2 brief into nine
-  realization-local falsifiable statements. They remain scaffolded and
-  outcome-free until the named source-audit, source-admission, realization,
-  and preregistration iterations bind them. Their local IDs do not extend the
-  closed Phase 1 hypothesis registry or schema vocabulary.
+  realization-local falsifiable statements. I01R1 has revalidated their
+  source-audit prerequisite after quarantining candidate-shaped probe behavior
+  and correcting CAP-04 to inadequate, without binding a realization or
+  dependence mode. They remain scaffolded and outcome-free until source
+  admission, realization, and preregistration bind them. Their local IDs do
+  not extend the closed Phase 1 hypothesis registry or schema vocabulary.
 
 ## Hypothesis interpretation
 

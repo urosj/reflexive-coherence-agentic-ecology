@@ -48,6 +48,18 @@ Phase 2 gate reviews:
   accepted authority-package digests, command outcomes, link/identity checks,
   and clean graph-worktree guard for the checklist bootstrap. It supplies no
   capability, calibration, or lane evidence.
+- [P2-I2 I01 source-current capability audit](P2-I2-I01-source-current-capability-audit.md)
+  classifies the corrected composition-capable native shortlist and missing
+  control/semantic surfaces without admitting a source or selecting a
+  realization.
+- [P2-I2 I01 command provenance](P2-I2-I01-command-provenance.md) retains the
+  exact read-only discovery, focused-test, digest, graph-cleanliness, and
+  historical custom-probe commands. I01R1 quarantines the custom probe from
+  capability and scientific evidence.
+- [P2-I2 I01R1 closeout revalidation](P2-I2-I01R1-capability-audit-closeout-revalidation.md)
+  applies the owner-supplied capability-audit checks, corrects CAP-04 to
+  inadequate, adds public-support/mode/restoration ownership profiles, and
+  re-passes only the source-audit gate.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

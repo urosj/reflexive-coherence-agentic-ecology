@@ -1,7 +1,7 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief accepted and
-checklist-governed source audit pending
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief and I01R1-corrected
+source-audit gates passed, with source admission ready but not begun
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -49,8 +49,12 @@ accepted [P2-I2 shared-pool co-conditioning brief](implementation/P2-I2-shared-p
 [activity checklist](implementation/P2-I2-shared-pool-co-conditioning-checklist.md),
 [cumulative decision record](implementation/P2-I2-decision-record.md), and
 subordinate [operational hypotheses](hypotheses/p2-i2-operational-hypotheses.md).
-The source-current capability audit is a pending named iteration; it has not
-been executed or used to admit a source.
+The retained [source-current capability audit](reports/P2-I2-I01-source-current-capability-audit.md)
+and [machine-readable matrix](contracts/p2-i2/i01-capability-matrix.json), as
+corrected by the [I01R1 closeout revalidation](reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md),
+pass the audit gate with a composition-capable native candidate and explicit
+missing control surfaces. The historical custom probe is quarantined, CAP-04
+is inadequate, and no graph source or restoration provider has been admitted.
 
 **Program authority:**
 [master plan](../../implementation/PostN30-plan.md) and
@@ -207,7 +211,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           brief gate passed; source audit pending
+P2-I2                                           brief/I01R1 source-audit gates passed; source admission not begun
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

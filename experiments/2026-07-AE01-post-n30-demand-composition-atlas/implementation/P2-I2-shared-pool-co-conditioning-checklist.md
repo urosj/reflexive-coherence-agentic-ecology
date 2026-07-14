@@ -1,18 +1,18 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
-**Status:** active; authority bootstrap complete, source-current capability
-audit not begun
+**Status:** active; I01R1 capability-audit revalidation complete; I02 source
+admission ready but not begun
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I01` — input-freeze construction
-authorized; source inspection and capability audit not yet authorized or
-performed
+**Current activity iteration:** `P2-I2-I01R1` — complete;
+`P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
-`P2-I2-SOURCE-AUDIT-GATE=pending`
+`P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
+`P2-I2-SOURCE-ADMISSION-GATE=ready_not_begun`
 
 **Acceptance ceiling:** `AE01-C2`; no P2-I2 result, cross-lane recurrence, or
 N31+ effect assigned
@@ -101,8 +101,8 @@ Rules:
 | Gate | Meaning | Status | Exit evidence or blocker |
 | --- | --- | --- | --- |
 | `P2-I2-BRIEF-GATE` | L02 semantic center, D-039 delta, dependence modes, causal factorization, controls, timing, and claim ceiling accepted | Passed | Owner acceptance dated 2026-07-14; `P2-I2-DEC-001`; accepted brief |
-| `P2-I2-SOURCE-AUDIT-GATE` | Source-current public PyGRC capability audit completed under one frozen audit scope | Pending; not begun | `P2-I2-I01` inputs and outputs remain unchecked |
-| `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Blocked | Requires `SOURCE-AUDIT-GATE` |
+| `P2-I2-SOURCE-AUDIT-GATE` | Source-current public PyGRC capability audit completed under one frozen audit scope | Passed after revalidation | I01R1 quarantines the custom probe, corrects CAP-04, and revalidates all claims from admissible evidence |
+| `P2-I2-SOURCE-ADMISSION-GATE` | Exact graph sources and any restoration-profile transition admitted for lane use | Ready; not begun | I01R1 passed; I02 has not admitted any source |
 | `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | Blocked | Requires source audit and admission dispositions |
 | `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Blocked | Requires `DISCRIMINATOR-GATE` |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Blocked | Requires `CAL-PRE-GATE` |
@@ -153,9 +153,10 @@ Rules:
 | --- | --- | --- | --- | --- |
 | `P2-I2-I00` | Authority bootstrap: brief acceptance, checklist, operational-hypothesis scaffold, and cumulative decision record | Owner acceptance | Complete | `P2-I2-BRIEF-GATE=passed`; no scientific evidence |
 | `P2-I2-I00R1` | Post-bootstrap artifact review, provenance correction, and compact validation retention | I00 plus external review | Complete | `P2-I2-CHG-001`; brief gate remains passed |
-| `P2-I2-I01` | Source-current PyGRC capability audit | I00R1 | Input-freeze construction authorized; source inspection not begun | `P2-I2-SOURCE-AUDIT-GATE` |
-| `P2-I2-I02` | Source admission and restoration-profile transition disposition | I01 | Blocked | `P2-I2-SOURCE-ADMISSION-GATE` |
-| `P2-I2-I03` | Realization, discriminator, dependence-mode, and operational-hypothesis freeze or missing-prerequisite classification | I01–I02 | Blocked | `P2-I2-DISCRIMINATOR-GATE` or retained earlier-stop route |
+| `P2-I2-I01` | Source-current PyGRC capability audit | I00R1 | Complete as executed; corrected by I01R1 | Historical audit disposition retained; current gate effect owned by I01R1 |
+| `P2-I2-I01R1` | Capability-audit closeout revalidation and candidate-probe quarantine review | I01 plus owner-supplied closeout review | Complete; probe quarantined, CAP-04 corrected, static audit revalidated | `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation` |
+| `P2-I2-I02` | Source admission and restoration-profile transition disposition | I01R1 | Ready; not begun | `P2-I2-SOURCE-ADMISSION-GATE` |
+| `P2-I2-I03` | Realization, discriminator, dependence-mode, and operational-hypothesis freeze or missing-prerequisite classification | I01R1–I02 | Blocked | `P2-I2-DISCRIMINATOR-GATE` or retained earlier-stop route |
 | `P2-I2-I04` | Candidate-blind calibration preregistration construction | I03 | Blocked | `P2-I2-CAL-PRE-GATE` |
 | `P2-I2-I05` | Matched-null calibration execution and metric-sheet freeze | I04 | Blocked | `P2-I2-CAL-GATE` |
 | `P2-I2-I06` | Exact implementation registration and evidence-bundle construction | I05 | Blocked | `P2-I2-REG-GATE` |
@@ -264,9 +265,8 @@ This opens only the input-freeze work for I01.
 
 ## 6. `P2-I2-I01` — Source-current capability audit
 
-**Status:** input-freeze construction authorized; source inspection, API
-invocation, conformance checks, and capability classification remain
-unauthorized until Section 6.1 is retained as frozen.
+**Status:** complete; Section 6.1 input freeze preceded source inspection, all
+questions and outputs are retained, and the graph checkout remained unchanged.
 
 **Purpose:** determine which public surfaces of one exact source-current PyGRC
 revision can natively express the accepted L02 discriminator and which are
@@ -283,52 +283,89 @@ checked with retained evidence.
 
 ### 6.1 Input freeze before audit activity
 
-- [ ] Record the exact graph repository revision and worktree state to audit.
-- [ ] Freeze the repository-relative file/API scope and audit questions.
-- [ ] Freeze allowed read-only commands and any non-mutating conformance checks.
-- [ ] Declare whether installed-package inspection is needed and how package
+Frozen artifact:
+[I01 audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json).
+
+- [x] Record the exact graph repository revision and worktree state to audit.
+  Evidence: clean `main` checkout at
+  `3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5`.
+- [x] Freeze the repository-relative file/API scope and audit questions.
+- [x] Freeze allowed read-only commands and any non-mutating conformance checks.
+- [x] Declare whether installed-package inspection is needed and how package
   identity will be separated from checkout identity.
-- [ ] Freeze output paths for the narrative audit, machine-readable capability
+- [x] Freeze output paths for the narrative audit, machine-readable capability
   matrix if needed, command provenance, and file-digest inventory.
-- [ ] Record that audit failure or absence cannot become a negative L02 result.
+- [x] Record that audit failure or absence cannot become a negative L02 result.
+
+The freeze fixes eleven question IDs (`P2-I2-CAP-01` through
+`P2-I2-CAP-11`), the `adequate` / `inadequate` / `absent` / `unresolved`
+classification contract, checkout-only package identity, graph read-only
+boundaries, fixed output paths, and the change-control rule for any audit-scope
+correction. Its entry-authority digests bind the accepted state at RCAE commit
+`430f77206790c2d27b8283e58d4b8a58737a7ad3` before this checklist advanced
+I01 to source inspection.
+
+The first in-scope packaging-manifest read showed that the checkout package
+root is `src/pygrc/**`. `P2-I2-CHG-002` added that exact tracked path and fixed
+checkout import root before any package source file was read or any capability
+was classified. No rerun was required.
 
 ### 6.2 Required capability questions
 
-- [ ] Is there a public native non-private carrier with reconstructible
-  identity and declared access scope?
-- [ ] Can at least two attributable contribution paths alter one carrier
-  without source-private response reads?
-- [ ] Is there a carrier-scoped read, susceptibility, or eligibility path that
-  does not require contributor addressing?
-- [ ] Can encounter state, active history, or both persist and be intervened on
-  independently of audit metadata?
-- [ ] Can the audit-only label permutation and common-carrier intervention be
-  expressed without causal bypass?
-- [ ] Can pool write freeze and mode-relevant clamp interventions be expressed?
-- [ ] Can a private-partition counterfactual preserve marginal contributions
-  and opportunity without recreating a common state?
-- [ ] Are reserve, accumulation, mixing, depletion, saturation, leakage, and
-  maintenance observable or classifiably inapplicable?
-- [ ] What native state is covered by restoration identity, and what ecology
-  pool/intervention state would remain external?
-- [ ] Does each candidate surface classify as `adequate`, `inadequate`,
+- [x] Is there a public native non-private carrier with reconstructible
+  identity and declared access scope? Disposition: one declared node-coherence
+  carrier is `adequate`; pool role/access semantics remain RCAE declarations.
+- [x] Can at least two attributable contribution paths alter one carrier
+  without source-private response reads? Disposition: `adequate` through
+  multiple native packets crediting one target while lineage stays in the
+  separate packet ledger.
+- [x] Is there a carrier-scoped read, susceptibility, or eligibility path that
+  does not require contributor addressing? Disposition: `adequate` through the
+  native feedback-eligibility surface and feedback producer.
+- [x] Can encounter state, active history, or both persist and be intervened on
+  independently of audit metadata? Disposition: `adequate` for encounter-state
+  mode; no native aggregate pool-history object was established.
+- [x] Can the audit-only label permutation and common-carrier intervention be
+  expressed without causal bypass? Disposition: `adequate`; the audit probe
+  retained invariant causal projections under swapped lineage labels.
+- [x] Can pool write freeze and mode-relevant clamp interventions be expressed?
+  Disposition: `inadequate` as a complete native surface; route/producer
+  withdrawal is available, but no atomic pool-specific gate/clamp exists.
+- [x] Can a private-partition counterfactual preserve marginal contributions
+  and opportunity without recreating a common state? Disposition: native
+  topology primitives exist, but the matched-control/no-common-read contract
+  is `inadequate` and remains RCAE-orchestrated.
+- [x] Are reserve, accumulation, mixing, depletion, saturation, leakage, and
+  maintenance observable or classifiably inapplicable? Disposition: reserve,
+  accumulation/mixing, and depletion are native; generic capacity/saturation,
+  leakage, and maintenance are `inadequate` beyond passive conserved mode.
+- [x] What native state is covered by restoration identity, and what ecology
+  pool/intervention state would remain external? Disposition: native node,
+  queue, ledger, routes, histories, producer configuration, events, and
+  observables are covered; RCAE roles, controls, schedules, and any constructed
+  state remain external.
+- [x] Does each candidate surface classify as `adequate`, `inadequate`,
   `absent`, or `unresolved`, with a precise reason and evidence reference?
-- [ ] What is the smallest producer or constructed transition needed for each
-  otherwise promising inadequate surface?
+  Evidence: [capability matrix](../contracts/p2-i2/i01-capability-matrix.json).
+- [x] What is the smallest producer or constructed transition needed for each
+  otherwise promising inadequate surface? Evidence: CAP-06 through CAP-11 and
+  the narrative audit's minimal-demand table; no fallback is selected.
 
 ### 6.3 Audit outputs and exit
 
-- [ ] Retain one narrative capability-audit report.
-- [ ] Retain one compact requirement-to-surface matrix or explicitly justify
+- [x] Retain one [narrative capability-audit report](../reports/P2-I2-I01-source-current-capability-audit.md).
+- [x] Retain one compact requirement-to-surface matrix or explicitly justify
   why the report itself is the compact projection.
-- [ ] Retain exact source revision, source paths, callable names, relevant file
+- [x] Retain exact source revision, source paths, callable names, relevant file
   digests, and command provenance.
-- [ ] Separate public API facts, inferred adequacy, missing surfaces, and open
+- [x] Separate public API facts, inferred adequacy, missing surfaces, and open
   questions.
-- [ ] Record a bounded shortlist or a classified absence without selecting the
+- [x] Record a bounded shortlist or a classified absence without selecting the
   P2-I2 realization.
-- [ ] Record all audit-derived decisions in the cumulative decision record.
-- [ ] Validate that no graph-repository file changed.
+- [x] Record all audit-derived decisions in the cumulative decision record.
+  Evidence: `P2-I2-DEC-005`.
+- [x] Validate that no graph-repository file changed. Evidence: frozen revision
+  unchanged and final `git status --short` empty.
 
 Exit gate `P2-I2-SOURCE-AUDIT-GATE`:
 
@@ -339,9 +376,101 @@ frozen audit scope + complete capability matrix + exact provenance
 = passed
 ```
 
+Disposition: `P2-I2-I01=complete` and
+`P2-I2-SOURCE-AUDIT-GATE=passed` at original closeout. I01R1 has since
+reopened that gate for fail-closed review; this historical disposition is not
+the current gate state.
+
+## 6A. `P2-I2-I01R1` — Capability-audit closeout revalidation
+
+**Status:** complete; this subsection was frozen before any revalidation
+inspection or classification beyond reading the owner-supplied review that
+triggered the iteration.
+
+**Iteration ID:** `P2-I2-I01R1`
+
+**Purpose:** test the I01 package against the supplied capability-audit
+closeout standard, quarantine any inadmissible candidate behavior from I01
+evidence, and determine whether the source-audit gate can be re-passed from
+admissible source-current evidence alone.
+
+**Entry authority:** accepted P2-I2 brief, I01 input freeze and retained
+outputs, cumulative decisions through `P2-I2-DEC-005`, and the owner-supplied
+I01 closeout review received 2026-07-14.
+
+**Frozen inputs and scope:** exact graph revision
+`3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5`; the retained I01 freeze,
+narrative, matrix, provenance, source digests, decision, checklist, and
+operational-hypothesis projection; and the thirteen review sections plus ten
+final closeout conditions in the supplied review. Static read-only inspection
+may revisit only the I01-frozen graph scope. No new dynamic candidate,
+combined-versus-single, response, calibration, or boundary-rung probe is
+authorized.
+
+**Mutation and repository boundary:** RCAE P2-I2 governance, audit, matrix,
+provenance, and revalidation-report artifacts only. The graph repository
+remains read-only. Existing commands and outputs may be retained for
+historical provenance while being explicitly excluded from capability or
+scientific evidence.
+
+**Required outputs:** one retained I01R1 revalidation report; an admissibility
+disposition for every I01 command/evidence class; corrected audit, matrix,
+decision, checklist, hypotheses, and navigation where required; exact
+integrity validation; and either a re-passed source-audit gate or a retained
+precise blocker.
+
+**Evidence effect:** capability-audit validity and process correction only.
+No source admission, realization or dependence-mode choice, calibration,
+candidate evidence, control outcome, or L02 result.
+
+### 6A.1 Frozen revalidation checks
+
+- [x] Verify exact revision/worktree, path/callable/command scope, package
+  identity, scope corrections, and the separation from brief preparation.
+- [x] Validate the complete native causal composition without treating a bag
+  of APIs or ecology-side reduction/injection as adequate.
+- [x] Recheck the one-pool, attribution-only, public-support, intervention,
+  and active-runtime-versus-audit-log boundaries.
+- [x] Recheck state/history-mode neutrality without binding a realization or
+  dependence mode.
+- [x] Recheck restoration callable/digest/input/ownership/continuation
+  boundaries and retain a state-ownership table.
+- [x] Revalidate all eleven classifications under exactly the four frozen
+  values and distinguish source facts, audit inferences, adequacy judgments,
+  and open questions.
+- [x] Revalidate minimal producer/constructed demands without selecting a
+  design, response, comparator, or control matrix.
+- [x] Confirm the shortlist remains bounded and non-selective.
+- [x] Classify every executable I01 check as admissible interface evidence or
+  quarantined candidate behavior; candidate behavior cannot support I01.
+- [x] Cross-check narrative/matrix/provenance/digests/decisions/checklist,
+  portable identities, stable IDs, reopening conditions, and graph status.
+
+### 6A.2 Exit disposition
+
+- [x] Retain the [I01R1 revalidation report](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md)
+  and all required corrections.
+- [x] Demonstrate that every surviving capability claim is supported without
+  quarantined candidate behavior.
+- [x] Re-pass `P2-I2-SOURCE-AUDIT-GATE` or record the exact failed condition
+  and keep I02 blocked.
+
+Exit rule:
+
+```text
+all thirteen review areas + all ten final closeout conditions
++ candidate-behavior quarantine
++ capability matrix support from admissible evidence alone
++ no later-gate decision or evidence
++ unchanged graph worktree
+= source-audit gate re-passed; otherwise fail closed
+```
+
 ## 7. `P2-I2-I02` — Source admission and restoration transition
 
-**Status:** blocked on `P2-I2-SOURCE-AUDIT-GATE`.
+**Status:** ready; not begun. I01R1 re-passed
+`P2-I2-SOURCE-AUDIT-GATE`; no source or restoration-provider transition has
+been admitted.
 
 **Purpose:** admit only the source identities relevant to the selected next
 decision and define any explicit restoration-provider transition.
@@ -585,10 +714,10 @@ valid terminal classification + reconstructed evidence
 
 | Question ID | Question | Earliest iteration | Status | Decision/evidence |
 | --- | --- | --- | --- | --- |
-| `L02-Q00` | Which public PyGRC surfaces could carry one pool? | I01 | Open | Source audit pending |
-| `L02-Q01` | Is any native surface adequate to the L02 discriminator? | I01 | Open | Source audit pending |
-| `L02-Q02` | Which graph sources and restoration provider are admitted? | I02 | Open | I01 required |
-| `L02-Q03` | Which realization class is selected? | I03 | Open | I01–I02 required |
+| `L02-Q00` | Which public PyGRC surfaces could carry one pool? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: node coherence + native packet contribution + feedback response composition candidate |
+| `L02-Q01` | Is any native surface adequate to the L02 discriminator? | I01/I01R1 | Decided for audit | `P2-I2-DEC-006`: composition-capable native surfaces exist; complete realization adequacy is not assigned and control gaps remain |
+| `L02-Q02` | Which graph sources and restoration provider are admitted? | I02 | Open | I01R1 passed; admission not begun |
+| `L02-Q03` | Which realization class is selected? | I03 | Open | I01R1–I02 required |
 | `L02-Q04` | Which dependence mode applies? | I03 | Open | Realization required |
 | `L02-Q05` | What are the exact sources, carrier, factorization, and access witness? | I03 | Open | Realization required |
 | `L02-Q06` | What contribution and mixing rule constitutes common state or active history? | I03 | Open | Realization required |
@@ -621,6 +750,7 @@ status
 Allowed change classes are:
 
 - `audit_scope_correction` before I01 completion;
+- `audit_evidence_quarantine` preserving historical provenance;
 - `infrastructure_correction` with no scientific change;
 - `scientific_refinement` requiring new preregistration/cycle;
 - `control_or_measurement_expansion` with explicit gate/rerun effect;
@@ -636,6 +766,8 @@ result. No checklist expansion may serve only to obtain support.
 | Change ID | Triggering iteration/evidence | Class | Revision | Gate/rerun effect | Preserved boundary | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | `P2-I2-CHG-001` | I00R1 owner-supplied artifact-stack review | `closure_only_retention_fix` plus pre-execution clarification | Acceptance provenance/status roles; I01 authorization wording; I03/I04 boundary; I05 metric artifact policy; I08 matrix quantification; OP-09 falsifiability; compact validation evidence | No gate reopened; no rerun; `BRIEF-GATE` remains passed and I01 source inspection remains unopened | Accepted brief, frozen L02/D-039 authorities, no P2-I2 evidence, graph read-only boundary | Complete |
+| `P2-I2-CHG-002` | I01 in-scope `pyproject.toml` package-root declaration | `audit_scope_correction` | Add tracked `src/pygrc/**`; bind checkout-only imports to `${GRC}/src` | No gate reopened; no rerun because no package source or capability classification preceded the correction | Exact graph revision, read-only boundary, public-surface/classification/output contracts, no-evidence effect | Complete |
+| `P2-I2-CHG-003` | I01R1 owner-supplied capability-audit closeout review | `audit_evidence_quarantine` plus `closure_only_retention_fix` | Quarantine candidate-shaped custom probe; rerun classifications from admissible static/generic-test evidence; correct CAP-04 to inadequate; add mode-neutral, public-support, intervention, causal-history, and restoration-ownership checks | Source-audit gate reopened during I01R1 and re-passed after corrected static revalidation; no candidate rerun | Full historical probe provenance, exact graph revision, graph read-only boundary, no source admission/realization/calibration/result | Complete |
 
 ## 19. Evidence ledger
 
@@ -644,10 +776,14 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00/I00R1 | Cumulative decision record, DEC-001 through DEC-004 | Decision authority only | Retained |
+| `P2-I2-I00-DECISIONS` | I00/I00R1/I01/I01R1 | Cumulative decision record, DEC-001 through DEC-006 | Decision authority only | Retained |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
-| `P2-I2-I01-PENDING` | I01 | No capability-audit artifact yet | None | Pending |
+| `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
+| `P2-I2-I01-AUDIT` | I01 | [Narrative audit](../reports/P2-I2-I01-source-current-capability-audit.md) | Public capability and missing-surface classification only | Retained |
+| `P2-I2-I01-MATRIX` | I01 | [Capability matrix](../contracts/p2-i2/i01-capability-matrix.json) | Compact native adequacy and producer-demand projection only | Retained |
+| `P2-I2-I01-PROVENANCE` | I01 | [Command provenance](../reports/P2-I2-I01-command-provenance.md) and [source digests](../contracts/p2-i2/i01-source-digests.json) | Reconstructibility and integrity only | Retained |
+| `P2-I2-I01R1-REVALIDATION` | I01R1 | [Capability-audit closeout revalidation](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md), `P2-I2-CHG-003`, and `P2-I2-DEC-006` | Audit validity/process correction only; quarantined probe has no capability or scientific effect | Retained |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.27
+**Baseline revision:** 0.29
 
 **Date:** 2026-07-14
 
@@ -1143,6 +1143,13 @@ Entry condition:
   checklist, one cumulative decision record, and subordinate operational
   hypothesis projections. Evidence:
   [P2-I2 checklist](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md).
+- [x] `P2-I2-SOURCE-AUDIT-GATE` passed after I01R1 revalidated the
+  preregistered read-only audit, quarantined candidate-shaped custom-probe
+  behavior, corrected CAP-04 to inadequate, and retained a composition-
+  capable but control-incomplete native candidate with exact source digests
+  and no source admission or lane result. Evidence:
+  [P2-I2 I01 audit](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-source-current-capability-audit.md)
+  and [I01R1 revalidation](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md).
 
 Required lane work:
 
@@ -2025,6 +2032,7 @@ Use this section when checking a conditional item as deferred.
 | P1-GATE | Structured R2 checklist and closeout; `AE01-C1` and `AE01-C2` assigned; no-positive-result boundary preserved | 2026-07-10 | Project-owner-supplied Review R2 accepted; passed |
 | P2-I1-THEORY-GATE | Accepted P2-I1 brief and detailed checklist; bounded niche-conditioning meaning, anti-subsumption, negative/redirective outcomes, and open decision timing preserved | 2026-07-10 | Accepted by project owner; passed |
 | P2-I2-BRIEF-GATE | Accepted P2-I2 brief, checklist-first activity ledger, cumulative decision record, and subordinate operational-hypothesis scaffold; no source audit or scientific evidence assigned | 2026-07-14 | Accepted by project owner; passed |
+| P2-I2-SOURCE-AUDIT-GATE | Frozen audit scope, corrected eleven-question matrix, exact graph revision/source digests/command provenance, quarantined candidate-shaped probe, CAP-04 inadequate, composition-capable native candidate, explicit missing surfaces, and clean graph checkout; no source admission, realization selection, or lane result | 2026-07-14 | I01R1 retained revalidation; passed |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2098,7 +2106,9 @@ Change log:
 | CL-027 | 2026-07-11 | Review R3 passed without tuning P2-I1. Calibration provenance, registration evidence, and the Phase 1 meaning contracts proved adequate. No first-class `lane_registration` or `control_outcome` record is admitted. Concrete control-traversal friction creates one prospective requirement: future lanes emit a compact lane-local control-resolution index before terminal closure, with possible core promotion deferred to R4 after recurrence. P2-I1 remains closed and P2-I2 is next. | R3 closeout and P2-I2 entry | Superseded by CL-028 |
 | CL-028 | 2026-07-12 | Post-closeout N30/L01 clarification made explicit that N30 owns bounded history-conditioned eligibility while P2-I1's independent ecological discriminator is matched participant-relative differential possibility. N30's susceptibility-direction controls and P2-I1's fresh-runtime strengthening remain acknowledged. No hypothesis, stable ID, display name, artifact, terminal result, rung, or claim ceiling changed. | AE01 orientation and P2-I2 entry | Superseded by CL-029 |
 | CL-029 | 2026-07-12 | Revision 0.26 accepted D-039 and added a prospective post-R3 ecology-discriminator amendment for unexecuted lanes. Every future lane must bind its inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. L03 now requires trace dynamics beyond static persistence; L06 requires a budget-closing depletion/replenishment or return cycle beyond linear transport. Stable IDs, P2-I1, historical P1-I4 records, shared schemas, and retained evidence remain unchanged. | P2-I2 through P2-I7 pre-execution gates | Superseded by CL-030 |
-| CL-030 | 2026-07-14 | Revision 0.27 accepted the P2-I2 semantic brief and passed `P2-I2-BRIEF-GATE` with a lane-local checklist, cumulative decision record, and subordinate operational-hypothesis scaffold. Every P2-I2 activity is now required to run as a named checklist iteration; the source-current capability audit remains pending and no source admission, calibration, registration, execution, or lane result is assigned. | P2-I2 entry and all lane-local activity gates | Active |
+| CL-030 | 2026-07-14 | Revision 0.27 accepted the P2-I2 semantic brief and passed `P2-I2-BRIEF-GATE` with a lane-local checklist, cumulative decision record, and subordinate operational-hypothesis scaffold. Every P2-I2 activity is now required to run as a named checklist iteration; the source-current capability audit remains pending and no source admission, calibration, registration, execution, or lane result is assigned. | P2-I2 entry and all lane-local activity gates | Superseded by CL-031 |
+| CL-031 | 2026-07-14 | Revision 0.28 completed `P2-I2-I01` under a frozen read-only scope and passed `P2-I2-SOURCE-AUDIT-GATE`. The audit retains a bounded native node-coherence/packet/feedback/restoration shortlist plus explicit private-partition, history-shuffle, freeze/clamp, access-role, and pool-dynamics gaps. It records `P2-I2-CHG-002`, exact source/command provenance, focused conformance, and a clean graph worktree. No source is admitted, no realization is selected, and no lane evidence or result is assigned. | P2-I2 I01 closure and I02 entry | Superseded by CL-032 |
+| CL-032 | 2026-07-14 | Revision 0.29 completed checklist-first `P2-I2-I01R1` after owner-supplied capability-audit closeout review. It quarantines the custom combined/single/label behavioral probe from capability and scientific evidence, revalidates the audit from public source and pre-existing generic tests, corrects CAP-04 from adequate to inadequate, distinguishes public causal-history evidence overlays from active history, and retains explicit intervention/mode/restoration ownership profiles. `P2-I2-SOURCE-AUDIT-GATE` re-passes; no source, realization, dependence mode, calibration, candidate evidence, or lane result is assigned. | P2-I2 corrected source-audit closure and I02 entry | Active |
 
 ## 17. Current next actions
 
@@ -2118,8 +2128,13 @@ The next unchecked actions in dependency order are:
 6. [x] Begin P2-I2 under its accepted semantic brief, checklist-first named
    activity iterations, cumulative decision record, and subordinate
    operational hypotheses without opening source admission or candidate work.
-7. [ ] Complete `P2-I2-I01` as a frozen source-current capability-audit
-   iteration, then advance source admission and realization decisions only
-   through their named checklist iterations.
-8. [ ] Begin any later independently owned Phase 2 lane only under its own
+7. [x] Complete `P2-I2-I01` as a frozen source-current capability-audit
+   iteration with a bounded native shortlist, explicit missing surfaces, and
+   no source admission or scientific result.
+8. [x] Complete `P2-I2-I01R1` as a fail-closed capability-audit revalidation,
+   quarantine candidate-shaped probe behavior, and correct classifications
+   without opening later-gate evidence.
+9. [ ] Complete `P2-I2-I02` source admission and restoration-provider
+   transition before any I03 realization selection.
+10. [ ] Begin any later independently owned Phase 2 lane only under its own
    candidate-blind calibration, registration, and execution boundaries.

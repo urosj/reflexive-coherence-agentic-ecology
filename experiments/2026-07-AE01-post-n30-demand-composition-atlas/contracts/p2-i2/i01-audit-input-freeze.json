@@ -1,0 +1,208 @@
+{
+  "artifact_id": "P2-I2-I01-AUDIT-INPUT-FREEZE",
+  "artifact_version": "1.0.1",
+  "iteration_id": "P2-I2-I01",
+  "lane_id": "AE01-L02",
+  "status": "frozen",
+  "frozen_at": "2026-07-14T08:31:33+02:00",
+  "purpose": "Determine which public surfaces of one exact source-current PyGRC revision can natively express the accepted L02 discriminator and which are absent or inadequate.",
+  "evidence_effect": "Capability and missing-surface classification only; no source admission, realization selection, calibration, lane result, or scientific negative.",
+  "entry_authority": {
+    "rcae_revision": "430f77206790c2d27b8283e58d4b8a58737a7ad3",
+    "accepted_brief": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "f7b5ffafcdb1c3a8a3a24fd71e132ab3fa616807d109b3efd6bef8a5c93ecb03"
+    },
+    "entry_checklist": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "sha256": "67edaa4b5ca266181bc326211d1fb991b440d69f64dcebc9cb94767426e0a209"
+    },
+    "entry_decision_record": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "sha256": "acc769b465acaa78d83cc8a00e0cd0590146568e98e33c2a8288b421c2227411"
+    },
+    "entry_operational_hypotheses": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "sha256": "54c6cd8c2acec4b0ddc685aab4c11a8f6e7370c059c88386942c9c1c31ff38a0"
+    }
+  },
+  "target_checkout": {
+    "repository_name": "graph-reflexive-coherence",
+    "local_locator_observation": "/home/uros/Documents/RC-github/graph-reflexive-coherence",
+    "revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+    "branch_observation": "main",
+    "worktree_state": "clean",
+    "identity_rule": "The audited object is the clean tracked checkout at the exact revision. Every cited source file is additionally bound by repository-relative path and SHA-256 in the retained source-digest inventory.",
+    "read_only_required": true
+  },
+  "scope": {
+    "tracked_file_scope": [
+      "Tracked Python packaging manifests at repository root that define the pygrc import namespace.",
+      "Tracked implementation files under src/pygrc/**, pygrc/**, or any tracked implementation/**/pygrc/** package root selected by the packaging manifests.",
+      "Tracked public tests, examples, and documentation that import, export, construct, or exercise an in-scope pygrc surface.",
+      "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json and tracked files it directly identifies as the restoration implementation or contract.",
+      "Tracked schema or closeout artifacts directly referenced by an in-scope public surface when needed to determine state identity, restoration coverage, or access scope."
+    ],
+    "api_scope": [
+      "Symbols exported from the pygrc package or its public submodules.",
+      "Non-underscore methods, properties, constructor parameters, and returned state records on publicly exported classes.",
+      "Documented or test-demonstrated public call sequences needed to construct, observe, intervene on, snapshot, restore, or digest a candidate carrier.",
+      "Public model-owned transition surfaces for topology, support, capacity, flux, causal pulses, packets, event history, eligibility, and restoration when relevant to a frozen capability question."
+    ],
+    "evidence_exclusions": [
+      "Untracked graph-repository files and ambient editor or cache state.",
+      "Underscore-prefixed implementation details unless required only to explain why no public surface exposes an observed internal distinction.",
+      "Direct mutation of model internals, monkey-patching, copied PyGRC implementation, or private-state injection as evidence of native adequacy.",
+      "RCAE candidate outcomes, calibration results, or later realization preferences.",
+      "Network sources or a different graph revision."
+    ],
+    "public_surface_rule": "A surface counts as public only when it is exported, non-private on an exported object, or demonstrated as supported by tracked public documentation/tests. Internal state may establish that a distinction exists but cannot by itself establish native public adequacy.",
+    "native_rule": "A capability is native when PyGRC owns the causally relevant carrier state or transition and exposes the required observation/intervention through the public surface. RCAE construction and orchestration may invoke a native operation but may not compute the claimed combined state or later response and relabel it native.",
+    "audit_scope_change_rule": "Any scope correction before I01 closure requires a retained P2-I2 change-ledger entry that states the trigger, exact revision, affected questions, and rerun scope. No unrecorded widening is allowed."
+  },
+  "scope_corrections": [
+    {
+      "change_id": "P2-I2-CHG-002",
+      "recorded_at": "2026-07-14T08:34:35+02:00",
+      "trigger": "The in-scope root pyproject.toml declares package-dir = {\"\" = \"src\"} and package discovery under src, so the public checkout package is src/pygrc/**.",
+      "correction": "Add tracked src/pygrc/** to the implementation-file scope and use ${GRC}/src as the checkout-only PYTHONPATH root.",
+      "affected_questions": [
+        "P2-I2-CAP-01",
+        "P2-I2-CAP-02",
+        "P2-I2-CAP-03",
+        "P2-I2-CAP-04",
+        "P2-I2-CAP-05",
+        "P2-I2-CAP-06",
+        "P2-I2-CAP-07",
+        "P2-I2-CAP-08",
+        "P2-I2-CAP-09",
+        "P2-I2-CAP-10",
+        "P2-I2-CAP-11"
+      ],
+      "rerun_scope": "None: the correction was recorded after reading only the already in-scope packaging manifest and before reading any src/pygrc source file or classifying any capability.",
+      "preserved_boundary": "Exact graph revision, read-only boundary, public-surface rule, classification contract, output contract, and no-evidence effect remain unchanged."
+    }
+  ],
+  "classification_contract": {
+    "allowed_values": [
+      "adequate",
+      "inadequate",
+      "absent",
+      "unresolved"
+    ],
+    "definitions": {
+      "adequate": "A public native surface satisfies the capability question and preserves the accepted L02 causal boundary without an RCAE-owned substitute for the relevant state or transition.",
+      "inadequate": "A public native surface exists and is relevant, but a named missing distinction, intervention, identity, or causal boundary prevents it from satisfying the capability question.",
+      "absent": "No qualifying public native surface was found within the frozen tracked-file and API scope at the exact revision.",
+      "unresolved": "The frozen evidence cannot distinguish adequacy, inadequacy, or absence without work outside the audit boundary."
+    },
+    "producer_rule": "For every promising inadequate or absent capability, describe the smallest explicit RCAE producer, constructed transition, or ecology-owned state that could expose the missing relation. This is a demand description, not realization selection or authorization.",
+    "fail_closed_rule": "Audit failure, absence, inadequacy, or unresolved status cannot become a negative L02 result."
+  },
+  "capability_questions": [
+    {
+      "id": "P2-I2-CAP-01",
+      "question": "Is there a public native non-private carrier with reconstructible identity and declared access scope?"
+    },
+    {
+      "id": "P2-I2-CAP-02",
+      "question": "Can at least two attributable contribution paths alter one carrier without source-private response reads?"
+    },
+    {
+      "id": "P2-I2-CAP-03",
+      "question": "Is there a carrier-scoped read, susceptibility, or eligibility path that does not require contributor addressing?"
+    },
+    {
+      "id": "P2-I2-CAP-04",
+      "question": "Can encounter state, active history, or both persist and be intervened on independently of audit metadata?"
+    },
+    {
+      "id": "P2-I2-CAP-05",
+      "question": "Can the audit-only label permutation and common-carrier intervention be expressed without causal bypass?"
+    },
+    {
+      "id": "P2-I2-CAP-06",
+      "question": "Can pool write freeze and mode-relevant clamp interventions be expressed?"
+    },
+    {
+      "id": "P2-I2-CAP-07",
+      "question": "Can a private-partition counterfactual preserve marginal contributions and opportunity without recreating a common state?"
+    },
+    {
+      "id": "P2-I2-CAP-08",
+      "question": "Are reserve, accumulation, mixing, depletion, saturation, leakage, and maintenance observable or classifiably inapplicable?"
+    },
+    {
+      "id": "P2-I2-CAP-09",
+      "question": "What native state is covered by restoration identity, and what ecology pool/intervention state would remain external?"
+    },
+    {
+      "id": "P2-I2-CAP-10",
+      "question": "Does each candidate surface classify as adequate, inadequate, absent, or unresolved, with a precise reason and evidence reference?"
+    },
+    {
+      "id": "P2-I2-CAP-11",
+      "question": "What is the smallest producer or constructed transition needed for each otherwise promising inadequate surface?"
+    }
+  ],
+  "allowed_commands": {
+    "notation": "${GRC} denotes the target checkout; generated scratch output may exist only under /tmp.",
+    "commands": [
+      "git -C ${GRC} rev-parse HEAD",
+      "git -C ${GRC} branch --show-current",
+      "git -C ${GRC} status --short",
+      "git -C ${GRC} ls-files with frozen in-scope pathspecs",
+      "git -C ${GRC} show HEAD:<in-scope-repository-relative-path>",
+      "rg --files over frozen in-scope tracked directories",
+      "rg -n with capability terms over frozen in-scope files",
+      "sed -n over frozen in-scope text files",
+      "sha256sum over cited frozen in-scope tracked files",
+      "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B -c <read-only import, introspection, or in-memory conformance probe>",
+      "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src python -B -m pytest -p no:cacheprovider <targeted existing test or /tmp-only probe>"
+    ],
+    "conformance_constraints": [
+      "A conformance probe must import from the exact checkout and record module __file__.",
+      "A probe may call public constructors and operations in memory but may not patch, inject private state, write to the graph checkout, or act as candidate execution.",
+      "Any generated files, test temporaries, or caches must be directed to /tmp.",
+      "Graph HEAD and clean worktree status must be rechecked after audit activity."
+    ],
+    "prohibited_actions": [
+      "Any graph-repository file write, formatter, generator, build output, package installation, or dependency update.",
+      "Git checkout, switch, reset, clean, commit, stash, merge, rebase, or other graph-repository mutation.",
+      "Network access or inspection of a different revision as substitute evidence.",
+      "Candidate execution, calibration, source admission, or realization selection."
+    ]
+  },
+  "package_identity_policy": {
+    "installed_package_inspection_needed": false,
+    "reason": "I01 audits the exact checkout rather than an ambient installation. Any dynamic inspection must force the checkout package root through PYTHONPATH, disable bytecode writes, and record the imported module path.",
+    "separation_rule": "If checkout import proves impossible and an installed package becomes necessary, stop and record an audit-scope correction before inspecting it; never merge installed-package facts with checkout facts."
+  },
+  "required_outputs": {
+    "narrative_audit": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-source-current-capability-audit.md",
+    "capability_matrix": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json",
+    "command_provenance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-command-provenance.md",
+    "source_digest_inventory": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-source-digests.json",
+    "matrix_required_fields": [
+      "capability_question_id",
+      "candidate_surface_id",
+      "classification",
+      "public_api_facts",
+      "adequacy_inference",
+      "evidence_references",
+      "missing_or_unsuitable_distinction",
+      "minimal_producer_or_constructed_transition",
+      "restoration_coverage",
+      "open_questions"
+    ]
+  },
+  "exit_gate": "P2-I2-SOURCE-AUDIT-GATE",
+  "exit_requirements": [
+    "Frozen audit scope retained before source inspection.",
+    "All capability questions resolved into a complete compact matrix.",
+    "Exact revision, cited source paths and digests, and command provenance retained.",
+    "Public API facts separated from inferred adequacy, missing surfaces, and open questions.",
+    "Bounded native shortlist or classified absence retained without source admission or realization selection.",
+    "Graph revision unchanged and worktree clean after the audit."
+  ]
+}

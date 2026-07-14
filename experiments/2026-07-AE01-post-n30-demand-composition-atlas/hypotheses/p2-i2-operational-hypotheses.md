@@ -291,7 +291,13 @@ The diagnostic and its interpretation must freeze before candidate outcomes.
 
 I03 may change this artifact from `scaffolded` to `realization_bound` only when:
 
-- [ ] I01 retains the source-current capability audit.
+- [x] I01/I01R1 retain the corrected source-current capability audit. Evidence:
+  [I01 audit](../reports/P2-I2-I01-source-current-capability-audit.md) and
+  [capability matrix](../contracts/p2-i2/i01-capability-matrix.json), with the
+  [I01R1 closeout revalidation](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md).
+  The custom candidate-shaped probe is quarantined, CAP-04 is inadequate, and
+  this checks the audit prerequisite only; it does not bind a realization or
+  dependence mode.
 - [ ] I02 retains exact source-admission or non-admission dispositions.
 - [ ] One realization class and exact source/runtime boundary are selected.
 - [ ] `C_P`, `L`, `q`, `U`, `V`, sources, access witness, and contribution

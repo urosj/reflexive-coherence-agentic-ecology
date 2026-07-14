@@ -101,8 +101,14 @@ governed by one evidence-expandable
 [cumulative decision record](P2-I2-decision-record.md), and subordinate
 [operational hypothesis projections](../hypotheses/p2-i2-operational-hypotheses.md).
 Every later activity, including capability and source-admission audits, must
-run as a named checklist iteration with retained evidence. The first audit
-iteration remains pending and has not been executed.
+run as a named checklist iteration with retained evidence. `P2-I2-I01R1` has
+revalidated the [capability matrix](../contracts/p2-i2/i01-capability-matrix.json),
+[narrative audit](../reports/P2-I2-I01-source-current-capability-audit.md), and
+source/command provenance through the retained
+[closeout review](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md).
+The custom candidate-shaped probe is quarantined, CAP-04 is inadequate, and
+the corrected package passes only the source-audit gate; I02 source admission
+is ready but has not begun.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

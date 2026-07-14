@@ -1,0 +1,339 @@
+{
+  "artifact_id": "P2-I2-I01-CAPABILITY-MATRIX",
+  "artifact_version": "1.1.0",
+  "iteration_id": "P2-I2-I01",
+  "lane_id": "AE01-L02",
+  "status": "revalidated_by_P2-I2-I01R1",
+  "graph_revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+  "input_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-audit-input-freeze.json",
+  "source_digest_inventory": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-source-digests.json",
+  "command_provenance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-command-provenance.md",
+  "classification_values": [
+    "adequate",
+    "inadequate",
+    "absent",
+    "unresolved"
+  ],
+  "candidate_surfaces": [
+    {
+      "candidate_surface_id": "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "classification": "adequate",
+      "bounded_role": "One declared GRC9V3 node-coherence value as a common encounter-state carrier, changed through native LGRC9V3 packet arrivals and debits.",
+      "claim_boundary": "Native scalar carrier and transition only; PyGRC does not assign ecology pool meaning, a first-class access-scope role, or a public state-only clamp independent of audit history."
+    },
+    {
+      "candidate_surface_id": "P2-I2-SURFACE-02-FEEDBACK-RESPONSE",
+      "classification": "adequate",
+      "bounded_role": "Native feedback-eligibility surface derived from current node coherence, followed by the model-owned feedback producer and packet queue.",
+      "claim_boundary": "Adequate for one bounded encounter-state response; front/rear masks, threshold, and response opportunity remain registered experiment inputs."
+    },
+    {
+      "candidate_surface_id": "P2-I2-SURFACE-03-RESTORATION-IDENTITY",
+      "classification": "adequate",
+      "bounded_role": "Versioned LGRC9V3 restoration identity over embedded GRC9V3 state, runtime state, events, observables, and cached producer configuration.",
+      "claim_boundary": "Does not cover RCAE-owned role maps, intervention schedules, control pairing, or any external constructed pool state."
+    },
+    {
+      "candidate_surface_id": "P2-I2-SURFACE-04-PACKET-LEDGER-AS-POOL",
+      "classification": "inadequate",
+      "bounded_role": "Attributable per-packet audit history and in-flight budget evidence.",
+      "claim_boundary": "The ledger remains source/target/edge/lineage partitioned; consulting it as the later response would reproduce the insufficient private-record case."
+    },
+    {
+      "candidate_surface_id": "P2-I2-SURFACE-05-CONTROL-BUNDLE",
+      "classification": "inadequate",
+      "bounded_role": "Public route replacement, producer enable/disable configuration, topology construction, and snapshot branching.",
+      "claim_boundary": "No first-class pool access identity, matched private-partition control, selective history shuffle, or atomic pool value/history clamp is exposed."
+    },
+    {
+      "candidate_surface_id": "P2-I2-SURFACE-06-MULTI-BASIN-LEAKAGE",
+      "classification": "inadequate",
+      "bounded_role": "Native topology-specific multi-basin flow and merge/leakage evidence.",
+      "claim_boundary": "It is not a generic shared-pool contribution/read surface and cannot substitute for the L02 carrier."
+    }
+  ],
+  "capability_matrix": [
+    {
+      "capability_question_id": "P2-I2-CAP-01",
+      "candidate_surface_id": "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "classification": "adequate",
+      "public_api_facts": [
+        "pygrc.models exports GRC9V3NodeState, GRC9V3State, LGRC9V3, and LGRC9V3RuntimeState.",
+        "LGRC9V3.get_state(), snapshot(), save(), and load() expose and reconstruct the composed runtime state.",
+        "A topology node carries one scalar coherence value independently of packet source-lineage labels."
+      ],
+      "adequacy_inference": "One topology node can serve as one non-private encounter-state carrier when the registered fixture gives at least two contributors and the later response access to that node. Native state and transitions are sufficient; the ecology role and access declaration remain experiment-owned metadata.",
+      "evidence_references": [
+        "src/pygrc/models/grc_9_v3_state.py:GRC9V3NodeState",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.get_state"
+      ],
+      "missing_or_unsuitable_distinction": "PyGRC has no first-class pool role or public/private/access-scope field.",
+      "minimal_producer_or_constructed_transition": "No producer is needed for the carrier transition. RCAE must only register the node role, access witness, and fixture topology.",
+      "restoration_coverage": "The node state is inside the embedded GRC9V3 component of lgrc9v3_restoration_identity_v1.",
+      "open_questions": [
+        "I03 must decide whether this encounter-state carrier is the selected realization."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-02",
+      "candidate_surface_id": "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "classification": "adequate",
+      "public_api_facts": [
+        "LGRC9V3.schedule_packet_departure() accepts source node, target node, edge, amount, and optional source/target lineage.",
+        "Packet departure debits the source; packet arrival credits the target by the packet amount.",
+        "Multiple packet records may target the same node while retaining separate source-node and source-lineage evidence."
+      ],
+      "adequacy_inference": "At least two attributable native packet paths can jointly alter one target-node carrier. The carrier stores their scalar sum, while the packet ledger retains attribution separately.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_packets.py:schedule_lgrc9v3_packet_departure",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_departure",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_arrival",
+        "tests/models/test_lgrc_9_v3_runtime.py:test_departure_arrival_lifecycle_preserves_budget"
+      ],
+      "missing_or_unsuitable_distinction": "Initial source activation is not automatically supplied for an arbitrary P2-I2 fixture.",
+      "minimal_producer_or_constructed_transition": "If no source-current autonomous route naturally supplies the contributions, an RCAE experimental writer schedules the two initial native packet departures; it does not compute the pool state or later response.",
+      "restoration_coverage": "Packet queue, packet ledger, node coherence, clocks, and lineage are included in native restoration identity.",
+      "open_questions": [
+        "I03 must select direct experimental writer calls or a native upstream route as the contribution source."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-03",
+      "candidate_surface_id": "P2-I2-SURFACE-02-FEEDBACK-RESPONSE",
+      "classification": "adequate",
+      "public_api_facts": [
+        "LGRC9V3.emit_feedback_eligibility_surface_row() derives front_mass, rear_mass, and boundary_polarity_score from current node coherence.",
+        "LGRC9V3.set_feedback_coupled_pulse_producer() serializes a thresholded response policy.",
+        "LGRC9V3.produce_events() reads the committed feedback row and the native producer schedules later packet work; it does not consult packet source-lineage labels."
+      ],
+      "adequacy_inference": "The later response can read one declared carrier node through a native state-derived surface and schedule a native queue transition without contributor addressing.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.emit_feedback_eligibility_surface_row",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.set_feedback_coupled_pulse_producer",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.produce_events",
+        "tests/models/test_lgrc_9_v3_runtime.py:test_feedback_surface_and_producer_schedule_via_packet_queue_only"
+      ],
+      "missing_or_unsuitable_distinction": "The front/rear masks and threshold are declared experiment configuration, not an intrinsic PyGRC pool role.",
+      "minimal_producer_or_constructed_transition": "No RCAE causal-response producer is needed for this bounded response path; RCAE registers masks, threshold, and opportunity timing.",
+      "restoration_coverage": "Feedback rows, cached producer configuration, production records, events, and node state are included.",
+      "open_questions": [
+        "I03 must justify the response mask and ensure the latest contact trigger does not reintroduce a source-specific bypass."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-04",
+      "candidate_surface_id": "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "classification": "inadequate",
+      "public_api_facts": [
+        "Target coherence persists after arrivals until a later native debit or other admitted transition.",
+        "Packet ledger lineage and surface logs persist separately from node coherence.",
+        "Native packet arrival and departure alter carrier state through public model operations, but those operations also append or update native packet/event evidence.",
+        "Public causal-history annotation/artifact helpers are explicitly evidence overlays that do not execute or mutate the LGRC runtime."
+      ],
+      "adequacy_inference": "Encounter-state persistence is native, but the frozen question also requires intervention independently of audit metadata. No public state-only clamp was found that varies the carrier while holding its native audit projection fixed, and no active aggregate-history intervention surface was found. The surface is therefore inadequate for the full question without selecting a dependence mode.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_runtime_state.py:LGRC9V3RuntimeState",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_arrival",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_departure",
+        "src/pygrc/models/lgrc_9_v3_timing.py:annotate_lgrc9v3_causal_history",
+        "src/pygrc/models/lgrc_9_v3_timing.py:attach_lgrc9v3_causal_history_artifact",
+        "tests/models/test_lgrc_9_v3_contract.py:test_optional_causal_history_preserves_old_snapshot_readers"
+      ],
+      "missing_or_unsuitable_distinction": "There is no public state-only carrier clamp independent of native audit records and no native aggregate pool-history object with a selective history-only intervention.",
+      "minimal_producer_or_constructed_transition": "For a later state-carried selection, first test whether native route/producer withdrawal supplies the required matched intervention; otherwise add one declared RCAE carrier-write gate or projection clamp. A history-carried selection would require an explicitly producer-assisted active-history projection and intervention.",
+      "restoration_coverage": "Encounter state and native histories are included in the restoration identity.",
+      "open_questions": [
+        "I03 must select encounter-state, active-history, or combined dependence and cannot treat persistence alone as intervention readiness for any mode."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-05",
+      "candidate_surface_id": "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "classification": "adequate",
+      "public_api_facts": [
+        "source_lineage_id and target_lineage_id are packet audit fields but are absent from deterministic packet-id construction.",
+        "Packet arrival state mutation uses target node and amount rather than source_lineage_id or target_lineage_id.",
+        "The public feedback surface derives its score from declared node masks and current node coherence; the public producer consumes the committed feedback row and serialized response configuration rather than packet lineage labels."
+      ],
+      "adequacy_inference": "Audit-only label permutation and common-carrier alteration by native packet transitions can be expressed without routing the later response through contributor labels.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_packets.py:build_lgrc9v3_packet_id",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_arrival",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.emit_feedback_eligibility_surface_row",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.produce_events"
+      ],
+      "missing_or_unsuitable_distinction": "Restoration identity correctly changes when audit lineage changes even though the causal response projection remains invariant.",
+      "minimal_producer_or_constructed_transition": "RCAE orchestration permutes only the registered lineage strings and compares the causal projection; no causal producer is needed.",
+      "restoration_coverage": "Both causal state and audit lineage are covered, so branch identity remains exact rather than label-blind.",
+      "open_questions": []
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-06",
+      "candidate_surface_id": "P2-I2-SURFACE-05-CONTROL-BUNDLE",
+      "classification": "inadequate",
+      "public_api_facts": [
+        "set_causal_flux_routes() can replace native arrival-triggered routes and producer configuration exposes enabled flags.",
+        "reset(), snapshot(), load(), get_state(), and set_state() expose branch/reset surfaces.",
+        "No public API names a pool-specific write gate or value/history clamp that preserves all unrelated contributor activity."
+      ],
+      "adequacy_inference": "Native configuration can support some write-withdrawal designs, but it is not a complete atomic freeze/clamp surface. Direct state replacement is excluded as native adequacy evidence.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.set_causal_flux_routes",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.set_feedback_coupled_pulse_producer",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.reset",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.set_state"
+      ],
+      "missing_or_unsuitable_distinction": "Missing first-class selective pool-write freeze and mode-relevant carrier/history clamp with contributor activity preserved.",
+      "minimal_producer_or_constructed_transition": "First try a registered native route/producer withdrawal that leaves source-side activity intact. If it cannot preserve the matched boundary, use one RCAE control wrapper that gates only the two pool-write calls or holds one declared carrier projection, with withdrawal and construction debt recorded.",
+      "restoration_coverage": "Native configuration is covered; any RCAE gate/clamp state must be composed externally.",
+      "open_questions": [
+        "I03 must determine whether native route withdrawal is adequate for the selected contribution path before authorizing a constructed clamp."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-07",
+      "candidate_surface_id": "P2-I2-SURFACE-05-CONTROL-BUNDLE",
+      "classification": "inadequate",
+      "public_api_facts": [
+        "Native topology construction can provide two distinct target nodes and native packets can preserve each source contribution separately.",
+        "The feedback surface can sum arbitrary front masks, but using that sum as the private control would recreate a common aggregate.",
+        "No public private-partition control contract binds equal marginal contribution and opportunity while prohibiting common-state reconstruction."
+      ],
+      "adequacy_inference": "PyGRC supplies the substrate primitives but not the matched counterfactual semantics or guard. The control remains RCAE-orchestrated.",
+      "evidence_references": [
+        "src/pygrc/models/grc_9_v3_state.py:GRC9V3State",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.emit_feedback_eligibility_surface_row"
+      ],
+      "missing_or_unsuitable_distinction": "Missing first-class private-partition identity, equal-opportunity matcher, and no-common-read guard.",
+      "minimal_producer_or_constructed_transition": "RCAE constructs two native partition nodes, schedules the same marginal native contributions, exposes matched later opportunities separately, and compares their outputs without summing or dispatching over contributor slots.",
+      "restoration_coverage": "Each native branch is covered; branch-pair matching and the no-common-read assertion remain external experiment identity.",
+      "open_questions": [
+        "I03/I04 must define the private-control response without introducing a central aggregator."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-08",
+      "candidate_surface_id": "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "classification": "inadequate",
+      "public_api_facts": [
+        "Node coherence and the conserved packet budget expose reserve, additive accumulation/mixing, and depletion by native debit.",
+        "The bounded scalar carrier has no generic capacity limit, saturation rule, autonomous leakage/decay rule, or pool-maintenance transition.",
+        "Topology-specific multi-basin merge/leakage records exist but are not generic pool dynamics."
+      ],
+      "adequacy_inference": "The core conservative scalar accounting is observable, but a realization that claims capacity, saturation, leakage, or maintenance would exceed the native surface. Those dimensions may be declared inapplicable only for a selected passive conserved-carrier mode.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_packets.py:LGRC9V3PacketLedger",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_arrival",
+        "src/pygrc/models/lgrc_9_v3_packets.py:process_lgrc9v3_packet_departure",
+        "src/pygrc/models/lgrc_9_v3_runtime.py:LGRC9V3.validate_multi_basin_merge_leakage_controls"
+      ],
+      "missing_or_unsuitable_distinction": "Missing generic pool capacity/saturation, leakage/decay, and maintenance state and transitions.",
+      "minimal_producer_or_constructed_transition": "Prefer a passive conserved-carrier realization and classify the missing dimensions inapplicable. If I03 requires one of them, add only the selected scalar capacity/leakage/maintenance transition as explicit ecology-owned state with its own observables and withdrawal control.",
+      "restoration_coverage": "Native reserve and ledger state are covered; any added ecology dynamics must be composed externally.",
+      "open_questions": [
+        "OP-09 cannot select a capacity contrast under a native-only realization unless a native capacity interpretation is justified; contributor-count or access-scope contrasts remain available."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-09",
+      "candidate_surface_id": "P2-I2-SURFACE-03-RESTORATION-IDENTITY",
+      "classification": "adequate",
+      "public_api_facts": [
+        "pygrc.models exports lgrc9v3_restoration_identity_v1 and digest_lgrc9v3_restoration_identity_v1.",
+        "The identity canonicalizes embedded GRC9V3 continuation state plus the native runtime artifact, events, and observables.",
+        "Runtime serialization includes queues, packet ledgers, causal routes, surface and topology logs, cached producer configuration, and causal modes.",
+        "The focused restoration and runtime suite passed 38 tests and 8 subtests at the frozen revision."
+      ],
+      "adequacy_inference": "All PyGRC-owned state needed by the bounded native shortlist is covered by versioned native identity. A node-coherence pool selected from native state must not be double-counted as external pool state.",
+      "evidence_references": [
+        "src/pygrc/models/lgrc_9_v3_restoration.py:lgrc9v3_restoration_identity_v1",
+        "src/pygrc/models/lgrc_9_v3_runtime_state.py:LGRC9V3RuntimeState.to_artifact",
+        "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json",
+        "tests/models/test_lgrc_9_v3_restoration.py",
+        "tests/models/test_lgrc_9_v3_restoration_matrix.py"
+      ],
+      "missing_or_unsuitable_distinction": "RCAE role/access declarations, intervention schedule, control pairing, analysis identity, and any constructed control state are outside native identity.",
+      "minimal_producer_or_constructed_transition": "No restoration producer is needed for native state. I02 must compose a separate digest for only the external experiment-owned state actually selected.",
+      "restoration_coverage": "Adequate for the complete native shortlist under pygrc.snapshot version 1 and the closeout's bounded-continuation claim.",
+      "open_questions": [
+        "I02 must explicitly admit the helper and transition away from the P2-I1 RCAE projection; silent upgrade is forbidden."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-10",
+      "candidate_surface_id": "P2-I2-I01-AUDIT-CLASSIFICATION",
+      "classification": "adequate",
+      "public_api_facts": [
+        "Six candidate-surface classes are recorded with one allowed classification each.",
+        "Public API facts, adequacy inferences, missing distinctions, evidence, restoration coverage, producer demand, and open questions are separated in every capability row."
+      ],
+      "adequacy_inference": "The audit classification requirement is satisfied without selecting a realization or admitting the graph revision.",
+      "evidence_references": [
+        "This capability matrix",
+        "P2-I2-I01-source-current-capability-audit.md"
+      ],
+      "missing_or_unsuitable_distinction": "None at the audit-record level.",
+      "minimal_producer_or_constructed_transition": "Not applicable; this row records audit completeness rather than a runtime producer.",
+      "restoration_coverage": "Not applicable.",
+      "open_questions": []
+    },
+    {
+      "capability_question_id": "P2-I2-CAP-11",
+      "candidate_surface_id": "P2-I2-I01-PRODUCER-DEMAND-PROJECTION",
+      "classification": "adequate",
+      "public_api_facts": [
+        "The native core does not require an RCAE-computed pool state or later response.",
+        "The inadequate control and ecology-semantic surfaces are individually bounded in CAP-06 through CAP-08."
+      ],
+      "adequacy_inference": "The audit identifies the smallest fallback for each promising inadequate surface, including the CAP-04 intervention gap, while leaving realization and dependence-mode selection to I03.",
+      "evidence_references": [
+        "P2-I2-CAP-04",
+        "P2-I2-CAP-06",
+        "P2-I2-CAP-07",
+        "P2-I2-CAP-08"
+      ],
+      "missing_or_unsuitable_distinction": "Native gaps are control/semantic surfaces, not the core scalar carrier, joint contribution transition, bounded response, or restoration identity.",
+      "minimal_producer_or_constructed_transition": "Use experiment-only writer scheduling if native upstream activity is unsuitable; an RCAE access/role registry; a matched private-partition harness; a selective history-shuffle projection if active-history mode is selected; and a pool-specific gate/clamp only if native route withdrawal fails. Add capacity/leakage/maintenance state only if the selected realization requires it.",
+      "restoration_coverage": "Every selected external state component must be composed with the native restoration digest and receive its own withdrawal/control identity.",
+      "open_questions": [
+        "No fallback is authorized until I02 admits sources and I03 selects the realization and dependence mode."
+      ]
+    }
+  ],
+  "quarantined_i01_probe": {
+    "admissibility": "excluded_from_capability_and_scientific_evidence_by_P2-I2-I01R1",
+    "probe_script_sha256": "f6a421e3b3190a9c6b164b1baecde350085d188746f73ce2912ad4b97bb10384",
+    "historical_provenance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-command-provenance.md",
+    "reason": "The probe instantiated a candidate-shaped multi-source common-carrier chain and compared combined, single-source, and label-permuted behavior. That exceeds the I01 interface-conformance boundary even though no lane result was assigned.",
+    "surviving_fact": "The recorded checkout import path is retained only as command provenance; no probe output supports a capability classification."
+  },
+  "revalidation": {
+    "iteration_id": "P2-I2-I01R1",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md",
+    "candidate_probe_evidence_used": false,
+    "new_dynamic_probe_executed": false,
+    "classification_change": "P2-I2-CAP-04 adequate -> inadequate",
+    "mode_selection_made": false
+  },
+  "disposition": {
+    "bounded_native_composition_candidate_available": true,
+    "composition_capable_native_surfaces": [
+      "P2-I2-SURFACE-01-NODE-COHERENCE-CARRIER",
+      "P2-I2-SURFACE-02-FEEDBACK-RESPONSE",
+      "P2-I2-SURFACE-03-RESTORATION-IDENTITY"
+    ],
+    "control_and_semantic_gaps": [
+      "first-class pool role and access-scope identity",
+      "matched private-partition control contract",
+      "selective pooled-history shuffle/permutation surface",
+      "atomic pool-specific write freeze and value/history clamp",
+      "generic pool capacity/saturation, leakage/decay, and maintenance dynamics"
+    ],
+    "source_admitted": false,
+    "realization_selected": false,
+    "lane_result_assigned": false,
+    "complete_realization_adequacy_assigned": false,
+    "next_gate": "P2-I2-SOURCE-ADMISSION-GATE",
+    "next_iteration": "P2-I2-I02"
+  }
+}

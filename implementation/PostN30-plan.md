@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.27
+**Plan revision:** 0.29
 
 **Date:** 2026-07-14
 
@@ -1766,15 +1766,17 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.27:
+Current dependency order after revision 0.29:
 
 1. Advance P2-I2 only through its accepted brief, evidence-expandable
    activity checklist, cumulative decision record, and subordinate operational
    hypothesis projections. Every activity, including capability and source-
    admission audits, is a named checklist iteration with retained evidence.
-2. Complete the P2-I2 source-current capability audit, source-admission
-   disposition, and realization-bound operational hypothesis freeze in their
-   declared order before candidate-blind calibration.
+2. With the P2-I2 source-current capability audit now corrected by I01R1,
+   custom candidate-shaped probe behavior quarantined, and CAP-04 classified
+   inadequate, complete the I02 source-admission/restoration-provider
+   disposition and I03 realization-bound operational-hypothesis freeze in
+   order before candidate-blind calibration.
 3. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1864,6 +1866,8 @@ directive.
 | 2026-07-10 | Revision 0.25: recorded Review R2 over the complete P1-I1 through P1-I5 freeze, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Phase 2 candidate-blind calibration and lane registration are open; candidate execution remains behind each lane-local resolution/registration gate. Reconstructable calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory proportional guards, while R3 decides whether concrete use justifies new first-class records. No positive atlas result is assigned. |
 | 2026-07-12 | Revision 0.26: accepted D-039 after P2-I1/R3, requiring future lanes to name an inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. Added targeted prospective amendments for L03 trace dynamics beyond static persistence and L06 budget-closing circulation beyond linear transport. P2-I1, shared schemas, stable IDs, and retained evidence remain closed and unchanged. |
 | 2026-07-14 | Revision 0.27: accepted the P2-I2 semantic brief and opened only checklist-governed artifact construction. Added one evidence-expandable P2-I2 activity checklist, one cumulative decision record, and subordinate operational-hypothesis projections; every later action, including capability and source-admission audits, must be a named retained iteration. No P2-I2 source admission, calibration, registration, execution, or result is assigned. |
+| 2026-07-14 | Revision 0.28: completed `P2-I2-I01` under a frozen read-only capability-audit scope. Retained an eleven-question matrix, a bounded native node-coherence/packet/feedback/restoration shortlist, explicit inadequate control and pool-dynamics surfaces, exact command/source provenance, focused source-current conformance, and a clean graph checkout. Passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization selection, calibration, execution, and lane evidence remain unopened. |
+| 2026-07-14 | Revision 0.29: completed checklist-first `P2-I2-I01R1` against the owner-supplied capability-audit closeout standard. Quarantined the custom combined/single/label behavioral probe from capability and scientific evidence, revalidated surviving claims from public source contracts and pre-existing generic tests, corrected CAP-04 to inadequate, and added explicit public-support, intervention-readiness, mode-neutrality, causal-history, and restoration-ownership profiles. Re-passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization/dependence-mode selection, calibration, candidate evidence, execution, and lane results remain unopened. |
 
 ## 18. Program completion criteria
 

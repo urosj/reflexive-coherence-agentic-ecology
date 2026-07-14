@@ -39,6 +39,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-002` | How must P2-I2 activities be planned and retained? | Owner-directed and accepted: checklist-first named iterations; no off-ledger work | Constrains every P2-I2 activity and gate | 2026-07-14 |
 | `P2-I2-DEC-003` | What authority and lifecycle do the operational hypothesis artifacts have? | Derived and accepted under DEC-001/002: subordinate scaffold now, realization binding after audit/admission | Constrains I00, I03, and I04; creates no second hypothesis | 2026-07-14 |
 | `P2-I2-DEC-004` | How are I03 causal expectations separated from I04 machine rules, and how is calibrated resolution retained? | Derived and accepted from the common metric contract and I00R1 review | Constrains I03–I05; no calibration performed | 2026-07-14 |
+| `P2-I2-DEC-005` | Which source-current public PyGRC surfaces are adequate or inadequate for the L02 discriminator? | Original I01 audit disposition; corrected by `P2-I2-DEC-006` | Historical gate pass reopened by I01R1 | 2026-07-14 |
+| `P2-I2-DEC-006` | Does I01 satisfy the capability-audit closeout boundary after excluding candidate-shaped behavior? | I01R1 complete: probe quarantined; CAP-04 corrected to inadequate; package revalidated | Re-passes `P2-I2-SOURCE-AUDIT-GATE`; I02 ready but not begun | 2026-07-14 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -141,8 +143,9 @@ treated as the I01 capability audit.
 
 - `P2-I2-I00` owns the authority bootstrap and may close after its artifacts
   and navigation validate.
-- `P2-I2-I01` is the first capability-audit iteration and remains pending until
-  its input scope is frozen in the checklist and this record.
+- `P2-I2-I01` is the first capability-audit iteration. It remained pending
+  until its input scope was frozen and is now complete under that retained
+  freeze; see `P2-I2-DEC-005`.
 - No unrecorded command, inspection, implementation, or run may satisfy a
   later checkbox or gate.
 - A new evidence need expands the checklist through `P2-I2-CHG-NNN` before the
@@ -276,15 +279,176 @@ artifact semantics are formally revised before I04 closes, or if validation
 shows that the designated frozen-sheet fields cannot represent the accepted
 calibration without changing semantic identity.
 
-## 7. Pending decision queue
+## 7. `P2-I2-DEC-005` — Source-current native adequacy disposition
+
+**Status:** historical audit-derived disposition; corrected by
+`P2-I2-DEC-006`; not owner selection of a realization
+
+**Question IDs:** `L02-Q00`, `L02-Q01`
+
+**Question:** Which public surfaces at the exact source-current PyGRC revision
+can carry the accepted L02 relation, which are inadequate, and what minimal
+producer demands remain?
+
+### 7.1 Audit basis
+
+`P2-I2-I01` froze and audited the clean graph revision
+`3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5`. The package-root correction
+`P2-I2-CHG-002` was recorded after the in-scope packaging manifest identified
+`src/pygrc/**` and before package source inspection or classification.
+
+Retained evidence:
+
+- [narrative capability audit](../reports/P2-I2-I01-source-current-capability-audit.md);
+- [capability matrix](../contracts/p2-i2/i01-capability-matrix.json);
+- [source digests](../contracts/p2-i2/i01-source-digests.json); and
+- [command provenance](../reports/P2-I2-I01-command-provenance.md).
+
+### 7.2 Derived decision
+
+Retain this bounded native shortlist for I02/I03 consideration:
+
+```text
+native common carrier candidate
+  = one declared target node's GRC9V3 coherence
+
+native joint contribution transition
+  = at least two attributable LGRC9V3 packet paths credit that same node
+
+native later response candidate
+  = feedback-eligibility surface over current node coherence
+    -> model-owned feedback producer
+    -> native event-queue processing
+
+native branch identity
+  = lgrc9v3_restoration_identity_v1
+    + digest_lgrc9v3_restoration_identity_v1
+```
+
+The source facts identify a composition-capable encounter-state candidate, not
+an adequate complete realization and not a selected `state_carried` mode. The
+packet ledger retains source attribution but is inadequate as the claimed pool
+because it remains partitioned by source, target, edge, and lineage. The later
+feedback path reads current carrier state rather than those lineage labels.
+
+The audit-derived native gaps are:
+
+```text
+first-class pool role and access-scope identity
+matched private-partition control and no-common-read guard
+selective pooled-history shuffle/permutation
+state/history intervention independent of native audit evidence
+atomic pool-specific write freeze and value/history clamp
+generic pool capacity/saturation, leakage/decay, and maintenance dynamics
+```
+
+Native route/producer withdrawal and distinct native topology nodes must be
+tested first for the applicable controls. If they are inadequate, I03 may
+authorize only the smallest explicit RCAE writer, registry, matched-control
+harness, history projection, gate/clamp, or selected ecology-state transition.
+No bundled resource economy or controller may be introduced by convenience.
+
+### 7.3 Gate and authority effect
+
+This decision originally passed `P2-I2-SOURCE-AUDIT-GATE`. I01R1 reopened that
+gate after identifying the candidate-shaped custom probe and CAP-04
+overclassification. `P2-I2-DEC-006` controls the current disposition. DEC-005
+continues to record which surfaces were found and where native support is
+inadequate. It does not:
+
+- admit the graph revision or restoration helper;
+- select the native shortlist as the realization;
+- choose `state_carried`, `history_carried`, or `hybrid` dependence;
+- authorize a producer or constructed control;
+- freeze the response, comparator, calibration, or registration; or
+- assign a lane result.
+
+I02 must decide exact source admission and the restoration-profile transition.
+I03 must then decide whether the bounded native core satisfies the complete
+discriminator and which minimal producer/control boundaries are necessary.
+
+### 7.4 Reopening conditions
+
+Reopen this audit disposition if:
+
+- I02 proposes a different graph revision;
+- a cited public surface or digest does not match the admitted checkout;
+- an I03 conformance check contradicts an I01 public-capability fact;
+- the selected dependence mode requires a surface classified inadequate or
+  absent here; or
+- a scope defect is found that requires `audit_scope_correction` change
+  control and explicit question reruns.
+
+## 8. `P2-I2-DEC-006` — Capability-audit closeout correction
+
+**Status:** I01R1 correction retained and validated
+
+**Question IDs:** `L02-Q00`, `L02-Q01`
+
+**Question:** Does the I01 package satisfy the capability-audit boundary when
+candidate behavior is excluded, and what classifications change?
+
+### 8.1 Trigger and correction
+
+The owner-supplied closeout review requires executable I01 checks to remain
+interface/capability conformance only. The custom I01 probe instantiated a
+multi-source common-carrier fixture and compared combined, single-source, and
+label-permuted later responses. I01R1 therefore:
+
+- quarantines the probe source and output from capability and scientific
+  evidence while retaining full historical provenance;
+- reruns the audit judgments from static public-source contracts and
+  pre-existing generic PyGRC tests only;
+- changes CAP-04 from `adequate` to `inadequate` because persistence exists but
+  no public state-only or active-history intervention independent of audit
+  evidence was established; and
+- replaces realization-suggestive `state_carried` adequacy wording with a
+  mode-neutral composition-capable-candidate disposition.
+
+Evidence:
+
+- [I01R1 closeout revalidation](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md);
+- corrected [narrative audit](../reports/P2-I2-I01-source-current-capability-audit.md);
+- corrected [capability matrix](../contracts/p2-i2/i01-capability-matrix.json);
+  and
+- corrected [command provenance](../reports/P2-I2-I01-command-provenance.md).
+
+### 8.2 Retained source-current disposition
+
+The exact revision still exposes a public, composition-capable native
+candidate: multiple attributable packet paths can credit one node-coherence
+carrier; a feedback surface and producer can read current node state and
+schedule native work without consulting lineage labels; and native restoration
+identity covers the supported PyGRC-owned branch state.
+
+This is not complete native-realization adequacy. Public control gaps remain
+for state/history intervention independent of audit evidence, atomic pool
+freeze/clamp, matched private partition, selective pooled-history intervention,
+access-role identity, and generic pool dynamics. I02 may consider source
+admission only after I01R1 re-passes the source-audit gate. I03 alone may select
+or reject a realization and dependence mode.
+
+### 8.3 Gate effect
+
+The corrected package re-passes `P2-I2-SOURCE-AUDIT-GATE`. I02 is ready but
+not begun. No source admission, realization selection, calibration, candidate
+evidence, control result, or lane result is assigned.
+
+### 8.4 Reopening conditions
+
+Reopen this correction if quarantined output reappears as capability evidence,
+CAP-04 is upgraded without a public independent-intervention surface, the
+admitted source differs from the audited revision, or a cited public contract,
+digest, supported-input boundary, or graph worktree assertion fails validation.
+
+## 9. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| I01 audit scope and exact source-current identity | I01 | I00R1 closure |
-| Source admission and restoration-provider transition | I02 | I01 retained audit |
-| Realization class and native/producer boundary | I03 | I01–I02 dispositions |
+| Source admission and restoration-provider transition | I02 | I01R1 revalidated audit |
+| Realization class and native/producer boundary | I03 | I01R1–I02 dispositions |
 | Dependence mode and causal interfaces | I03 | Selected realization |
 | Primary raw response and orientation | I04 | Discriminator gate |
 | Closest primary comparator | I04 | Realization-bound insufficient-repetition alternatives |

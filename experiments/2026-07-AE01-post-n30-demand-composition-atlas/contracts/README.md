@@ -100,3 +100,19 @@ the Phase 1 shapes in use; they do not add `lane_registration` or
 identity used by registration. The derived registration freeze and manifest
 are generated only after their source implementation is committed, so their
 source revision and digests cannot accidentally identify an earlier commit.
+
+## P2-I2 source-current audit controls
+
+`p2-i2/i01-audit-input-freeze.json` preregisters the exact graph revision,
+scope, questions, classifications, commands, package-identity rule, and output
+paths before capability inspection. `P2-I2-CHG-002` records the manifest-led
+addition of `src/pygrc/**` before package source was read.
+
+`p2-i2/i01-capability-matrix.json` is the compact requirement-to-surface
+projection. `p2-i2/i01-source-digests.json` binds its cited source-current
+files. I01R1 excludes the historical custom probe from capability evidence,
+classifies CAP-04 as inadequate, and adds the public causal-history
+implementation/test digests needed to distinguish evidence overlays from
+active runtime history. These are audit-control artifacts, not schema
+instances, source admission, realization selection, calibration, or lane
+evidence.
