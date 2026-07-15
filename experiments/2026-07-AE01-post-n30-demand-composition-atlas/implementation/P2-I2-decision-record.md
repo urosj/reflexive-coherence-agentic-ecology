@@ -111,6 +111,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-074` | Does the owner accept the bounded APP-A2 result, close Appendix A, and authorize its retention commit? | Yes: `ok, do close appendix and commit`; exact reviewed result accepted and Appendix A closed | One containing result/closeout commit authorized; main P2-I2 result unchanged and later synthesis/selection remain closed | 2026-07-15 |
 | `P2-I2-DEC-075` | May Appendix B test the same abstract G/E/P composition through all three accepted P2-I2 modes under one compact autonomous authority? | Yes: owner supplies detailed design, authorizes brief/checklist, and waives stepwise authorization inside their frozen scope | Opens APP-B0–B2 with Appendix A outcome quarantine, at most one pre-run authority commit, one campaign, zero scientific retry; final result acceptance/commit closed | 2026-07-15 |
 | `P2-I2-DEC-076` | Does APP-B1 satisfy the accepted-source, exact-freeze, outcome-quarantine, estimator, and response-free conformance boundary? | Complete inside DEC-075: eleven grouped final checks pass; three-mode response-free conformance passes; one 99-arm authority is exact | Authorizes the one permitted pre-run authority commit and then exact APP-B2 clean-HEAD campaign/reconstruction; result acceptance/commit closed | 2026-07-15 |
+| `P2-I2-DEC-077` | What does the consumed APP-B2 first-child failure establish, and may the campaign retry autonomously? | Failed closed: venv launcher dereference and missing child-failure receipt; zero retained arm receipts; no retry under current authority | Stops APP-B2; additive correction and exactly one replacement claim require explicit owner authority | 2026-07-15 |
+| `P2-I2-DEC-078` | May APP-B2 correct the venv launcher/failure receipt and use one replacement claim? | Yes: owner requires repository `.venv` always and forbids global Python | Opens in-place infrastructure correction, zero-science validation, necessary authority commit, and one unchanged replacement campaign; result acceptance/commit closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3936,9 +3938,75 @@ This decision assigns no Appendix B result, cross-appendix recurrence,
 participant complementarity, native-history claim, main P2-I2 revision, or
 result-commit authority.
 
-## 79. Pending decision queue
+## 79. `P2-I2-DEC-077` — Retain consumed APP-B2 failed start and stop
 
-APP-B1 is complete under DEC-075/076 and CHG-080/081. The one pre-run authority
-commit and exact APP-B2 campaign/reconstruction are next. Final Appendix B
-result acceptance/commit, cross-appendix synthesis, graph mutation, N31+
-selection, and any next move remain closed.
+**Status:** failed closed; owner direction required before any correction or
+replacement
+
+The exact clean-HEAD preflight at authority commit `40fd9be` passed and the
+sole APP-B2 claim was atomically retained. The first child,
+`primary:state_carried:reference:seed-101`, then exited one before returning a
+receipt. No later child, aggregate output, or per-arm output exists.
+
+Static diagnosis identifies an infrastructure launcher defect. The parent was
+correctly started through `.venv/bin/python`, but its child command used
+`Path(sys.executable).resolve()`. That dereferenced the venv launcher to the
+system-interpreter target before invocation, so the child could not discover
+the repository venv. The binary digest matches; the invocation and environment
+identity do not. This repeats the already prohibited class of bypassing the
+repository `.venv`.
+
+The parent also used a check-raising subprocess call without persisting its
+captured stderr or a final failure receipt. It is therefore not possible to
+prove whether the failed child imported PyGRC, constructed a model, or reached
+any packet/feedback/producer call. Those counts are null/unobservable, not
+zero. There is no retained scientific evidence and no evaluable Appendix B
+matrix or mode disposition.
+
+**Decision:** preserve the claim permanently, preserve governed-output
+absence, record the failed start, and stop autonomous progression. Do not
+delete/reuse the claim, correct the runner, launch a diagnostic child, or
+create a replacement campaign under DEC-075. The existing zero-retry policy
+and explicit consumed-failure stop condition control.
+
+The technically bounded recovery would leave every scientific byte unchanged,
+invoke children through the lexical repository `.venv/bin/python` path,
+persist child failure receipts before deciding continuation, candidate-free
+validate that correction, and use exactly one new replacement claim. That
+recovery is a proposal only and requires explicit owner authority.
+
+## 80. `P2-I2-DEC-078` — Authorize venv-only APP-B2 recovery
+
+**Status:** owner-authorized; bounded in-place infrastructure correction and
+one replacement campaign may proceed
+
+In response to the exact recovery proposal, the owner states: `yes, always use
+.venv, never global python`.
+
+**Decision:** every Appendix B Python process—including parent, validation,
+conformance, reconstruction, and all 99 scientific children—must be invoked
+lexically through the repository `.venv`. Resolving that launcher to a global
+interpreter path is forbidden even when both paths share identical binary
+bytes. Each child must mechanically verify the active venv before importing
+PyGRC or constructing a model.
+
+Preserve the original consumed claim and failed-start artifacts permanently.
+Correct only the child launcher and aggregate failure-receipt/continuation
+mechanics. Any nonzero or malformed child must produce a retained aggregate
+failure receipt before later frozen rows continue; no child may retry. Validate
+the correction without PyGRC models or scientific arms. Retain the correction
+in the necessary clean-HEAD authority commit, then consume exactly one distinct
+replacement claim and execute the unchanged 99-arm campaign once.
+
+No physical operation, quantity, timing, threshold, mode, row, control,
+estimator, response, result rule, or claim ceiling may change. The replacement
+campaign may produce new scientific evidence; the correction validation may
+not. Result acceptance and result commit remain owner-only.
+
+## 81. Pending decision queue
+
+APP-B2 bounded recovery is active under DEC-078/CHG-083. Correction,
+candidate-free validation, necessary commit, one replacement campaign, and
+retained-only reconstruction are next. Final Appendix B result acceptance/
+commit, cross-appendix synthesis, graph mutation, N31+ selection, and any next
+move remain closed.

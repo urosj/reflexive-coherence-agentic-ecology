@@ -1,0 +1,43 @@
+{
+  "artifact_id": "P2-I2-APP-B2-RECOVERY-CANDIDATE-FREE-VALIDATION",
+  "canonical_payload_digest": "e74ed99f64967a4f1ddd730b80aa1748eaae1071e8c46e781776b5c969e62ab3",
+  "checks": {
+    "authority_and_failed_start_hashes": true,
+    "failure_does_not_break_matrix_schedule": true,
+    "failure_receipt_precedes_later_row_continuation": true,
+    "lexical_venv_child_launcher_present": true,
+    "live_model_free_venv_child_probe": {
+      "dont_write_bytecode": true,
+      "lexical_executable": true,
+      "venv_prefix": true
+    },
+    "original_claim_preserved": true,
+    "portable_authority": true,
+    "pure_failure_receipt_readback": true,
+    "replacement_claim_and_output_absent": true,
+    "resolved_global_child_launcher_absent": true,
+    "scientific_function_digests_unchanged": {
+      "_appendix_adapter": "12b807ed155b79df2818ac21b3aef6605138aa4268a40ddb6471324e2fb96a72",
+      "_build_envelope": "f274a551fd0d4d0271438965351cedb4f25109ff3166c2429756d27063c57dea",
+      "_drain": "f5a24aff7b56d648f24e96cf332ce3c9bfd75b62d7228eada73279bd0167cbbf",
+      "_history_receipt": "f39e4018a82a4e137298fa446a17813adee09c512733ef630afdf99731435397",
+      "_operation_route": "51bc3e9828454631551cb4dd6e439fc29121df3593a5fd7f3826ca483757a438",
+      "_pair_identity": "15bf4f0a2d134afd8ee1c44fca3793c2dfe080238a1cffa1f117f3076f290f9d",
+      "_participant_lineage": "ab6dcf2f6b64bf00173f60a57997d6270597641c0318e2d6ee3a08560a75ce70",
+      "_schedule_packet": "115c3bbb299dbd592a8fee70247b140c84c7af72c6d76960aef55d00752e7bf4",
+      "_total_coherence": "826dfa032bbb230b9c036bb096277f724a377ff0fb4d7724c6b3e586b8047031",
+      "execute_arm": "280731abd29d76f47243427a0a7fd244d62c74f160e1c7d331a802a8a0bc1f4d"
+    },
+    "worker_venv_guard_precedes_model_path": true
+  },
+  "execution_counts": {
+    "PyGRC_imports": 0,
+    "candidate_arms": 0,
+    "child_processes": 1,
+    "control_arms": 0,
+    "models": 0,
+    "response_calls": 0,
+    "validator_processes_this_start": 1
+  },
+  "status": "passed_no_model_or_scientific_execution"
+}

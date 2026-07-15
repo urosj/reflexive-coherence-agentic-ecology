@@ -1,0 +1,54 @@
+{
+  "artifact_id": "P2-I2-APP-B2-FAILED-START",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-B2",
+  "status": "failed_closed_after_claim_before_first_arm_receipt",
+  "authority": {
+    "authority_head": "40fd9beecce8dfcc77c288c3f4d7f6f04eb3a765",
+    "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-campaign-claim.json",
+    "claim_sha256": "1e13178b2686e0d1437fef12e22d72654f0201440295147c16f20510e04d6b06",
+    "authorization_consumed": true,
+    "scientific_retries_allowed": 0,
+    "infrastructure_retries_allowed": 0
+  },
+  "failed_start": {
+    "campaign_parent_starts": 1,
+    "child_starts": 1,
+    "failed_arm_id": "primary:state_carried:reference:seed-101",
+    "child_exit_code": 1,
+    "child_receipt_retained": false,
+    "child_stderr_retained": false,
+    "later_child_starts": 0,
+    "governed_runtime_output_present": false,
+    "per_arm_output_present": false
+  },
+  "diagnosis": {
+    "defect_class": "infrastructure_launcher_and_failure_receipt_implementation",
+    "intended_child_interpreter": ".venv/bin/python",
+    "observed_child_launcher_class": "resolved_system_interpreter_target_outside_repository_venv",
+    "interpreter_binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "runner_sha256": "14f06d634bb68bcb2f4c781ae555165fe4ea5cf579060536d640f972bcf51423",
+    "source_location": "p2_i2_app_b_run.py parent_main child subprocess launcher",
+    "mechanism": "Path(sys.executable).resolve() dereferenced the repository-venv launcher before child invocation",
+    "secondary_defect": "check-raising subprocess path did not persist captured child stderr or a final failure receipt",
+    "scientific_value_or_design_defect_observed": false
+  },
+  "unobservable_after_failed_child": {
+    "PyGRC_import_count": null,
+    "fresh_model_count": null,
+    "operation_packet_count": null,
+    "feedback_surface_call_count": null,
+    "producer_call_count": null,
+    "response_packet_count": null
+  },
+  "evidence_disposition": {
+    "matrix_evaluable": false,
+    "Appendix_B_result_assigned": false,
+    "mode_disposition_assigned": false,
+    "retained_scientific_evidence": false,
+    "claim_may_be_deleted_or_reused": false,
+    "retry_permitted_under_current_authority": false,
+    "autonomous_progression_stopped": true
+  },
+  "required_owner_decision": "whether to authorize an additive launcher/failure-receipt correction and exactly one replacement campaign claim"
+}

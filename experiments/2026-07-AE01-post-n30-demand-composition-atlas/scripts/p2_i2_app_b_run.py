@@ -596,8 +596,12 @@ def execute_arm(root: Path, graph_root: Path, freeze: Mapping[str, Any], row: Ma
 
 
 def _preflight(args: argparse.Namespace, freeze: Mapping[str, Any], graph_root: Path) -> dict[str, Any]:
-    require(all(portable_relative(value) for value in (args.freeze, args.claim, args.output, args.graph_root)), "absolute path refused")
+    path_arguments = [args.freeze, args.claim, args.output, args.graph_root]
+    if args.recovery_authority is not None:
+        path_arguments.append(args.recovery_authority)
+    require(all(portable_relative(value) for value in path_arguments), "absolute path refused")
     require(Path(sys.prefix).resolve() == (ROOT / ".venv").resolve(), "repository .venv inactive")
+    require(Path(sys.executable) == ROOT / ".venv/bin/python", "parent was not invoked through lexical repository .venv")
     require(sys.dont_write_bytecode, "-B is required")
     head = git(ROOT, "rev-parse", "HEAD")
     require(head == args.expected_head, "authority HEAD drifted")
@@ -611,21 +615,42 @@ def _preflight(args: argparse.Namespace, freeze: Mapping[str, Any], graph_root: 
     require(not (ROOT / output_rel).exists(), "governed output already exists")
     for item in freeze["authority_inputs"]:
         require(sha256(ROOT / item["path"]) == item["sha256"], f"authority drift: {item['path']}")
-    for relative, expected in freeze["implementation_sha256"].items():
-        require(sha256(ROOT / relative) == expected, f"implementation drift: {relative}")
+    recovery = None
+    if args.recovery_authority is None:
+        for relative, expected in freeze["implementation_sha256"].items():
+            require(sha256(ROOT / relative) == expected, f"implementation drift: {relative}")
+    else:
+        recovery = load_json(ROOT / args.recovery_authority)
+        require(recovery["base_freeze"]["path"] == args.freeze, "recovery base-freeze path drifted")
+        require(sha256(ROOT / args.freeze) == recovery["base_freeze"]["sha256"], "recovery base-freeze hash drifted")
+        for item in recovery["permanent_failed_start_inputs"]:
+            require(sha256(ROOT / item["path"]) == item["sha256"], f"failed-start input drift: {item['path']}")
+        for relative, expected in recovery["implementation_sha256"].items():
+            require(sha256(ROOT / relative) == expected, f"recovery implementation drift: {relative}")
+        require(recovery["execution"]["replacement_claim_path"] == args.claim, "replacement claim path drifted")
+        require(recovery["execution"]["replacement_output_path"] == args.output, "replacement output path drifted")
     executable = Path(sys.executable).resolve()
     require(sha256(executable) == freeze["environment"]["interpreter_sha256"], "interpreter drift")
     normalized = [
         ".venv/bin/python", "-B", RUNNER_REL,
         "--freeze", args.freeze,
+    ]
+    if args.recovery_authority is not None:
+        normalized.extend(["--recovery-authority", args.recovery_authority])
+    normalized.extend([
         "--claim", args.claim,
         "--output", args.output,
         "--expected-head", args.expected_head,
         "--graph-root", args.graph_root,
-    ]
+    ])
+    command_template = (
+        freeze["execution"]["normalized_command_template"]
+        if recovery is None
+        else recovery["execution"]["normalized_command_template"]
+    )
     expected_command = [
         args.expected_head if item == "{AUTHORITY_HEAD}" else item
-        for item in freeze["execution"]["normalized_command_template"]
+        for item in command_template
     ]
     require(normalized == expected_command, "command drifted")
     return {
@@ -634,6 +659,9 @@ def _preflight(args: argparse.Namespace, freeze: Mapping[str, Any], graph_root: 
         "graph_commit": freeze["environment"]["graph_commit"],
         "graph_clean": True,
         "interpreter_sha256": freeze["environment"]["interpreter_sha256"],
+        "lexical_interpreter": ".venv/bin/python",
+        "global_interpreter_forbidden": True,
+        "recovery_authority": args.recovery_authority,
         "normalized_command": normalized,
     }
 
@@ -650,13 +678,72 @@ def _claim(path: Path, receipt: Mapping[str, Any]) -> None:
         raise
 
 
+def _write_cumulative(path: Path, value: Mapping[str, Any]) -> None:
+    temporary = path.with_name(f".{path.name}.next")
+    temporary.write_bytes(canonical_bytes(value))
+    os.replace(temporary, path)
+
+
+def _child_failure(
+    row: Mapping[str, Any],
+    index: int,
+    *,
+    failure_kind: str,
+    returncode: int,
+    stdout: str,
+    stderr: str,
+    detail: str,
+) -> dict[str, Any]:
+    return {
+        "arm_id": row["arm_id"],
+        "arm_index": index,
+        "arm_row_digest": digest_value(row),
+        "attempt": 1,
+        "child_interpreter": ".venv/bin/python",
+        "failure_kind": failure_kind,
+        "returncode": returncode,
+        "stdout_sha256": hashlib.sha256(stdout.encode("utf-8")).hexdigest(),
+        "stderr_sha256": hashlib.sha256(stderr.encode("utf-8")).hexdigest(),
+        "stdout_line_count": len(stdout.splitlines()),
+        "stderr_line_count": len(stderr.splitlines()),
+        "stderr_present": bool(stderr),
+        "diagnostic_detail": detail,
+        "absolute_diagnostic_paths_retained": False,
+        "retry_eligible": False,
+    }
+
+
+def _progress_artifact(
+    claim: Mapping[str, Any],
+    rows: list[dict[str, Any]],
+    receipts: list[dict[str, Any]],
+    failures: list[dict[str, Any]],
+    next_arm_index: int,
+) -> dict[str, Any]:
+    return {
+        "artifact_id": "P2-I2-APP-B2-CUMULATIVE-RUNTIME-PROGRESS",
+        "artifact_version": "1.0",
+        "status": "campaign_in_progress",
+        "authority": claim,
+        "arm_count_expected": len(rows),
+        "arm_attempts_completed": next_arm_index,
+        "next_arm_index": next_arm_index,
+        "successful_receipts": receipts,
+        "failure_receipts": failures,
+        "child_retry_count": 0,
+        "analysis": None,
+        "scientific_interpretation": None,
+    }
+
+
 def parent_main(args: argparse.Namespace) -> int:
     freeze = load_json(ROOT / args.freeze)
     graph_root = (ROOT / args.graph_root).resolve()
     preflight = _preflight(args, freeze, graph_root)
     rows = build_arm_registry(freeze["arm_registry_specification"])
+    replacement = args.recovery_authority is not None
     claim = {
-        "artifact_id": "P2-I2-APP-B2-CAMPAIGN-CLAIM",
+        "artifact_id": "P2-I2-APP-B2-REPLACEMENT-CAMPAIGN-CLAIM" if replacement else "P2-I2-APP-B2-CAMPAIGN-CLAIM",
         "authorization_consumed": True,
         "governed_attempt": 1,
         "scientific_retries_allowed": 0,
@@ -665,28 +752,84 @@ def parent_main(args: argparse.Namespace) -> int:
         "freeze_sha256": sha256(ROOT / args.freeze),
         "arm_registry_digest": digest_value(rows),
         "output_path": args.output,
+        "recovery_authority": args.recovery_authority,
+        "original_claim_preserved": replacement,
     }
     _claim(ROOT / args.claim, claim)
     receipts: list[dict[str, Any]] = []
+    failures: list[dict[str, Any]] = []
+    output = ROOT / args.output
     for index, row in enumerate(rows):
         worker = subprocess.run(
             [
-                str(Path(sys.executable).resolve()), "-B", str(ROOT / RUNNER_REL),
+                ".venv/bin/python", "-B", RUNNER_REL,
                 "--worker", "--freeze", args.freeze,
                 "--graph-root", args.graph_root,
                 "--row-json", json.dumps(row, sort_keys=True, separators=(",", ":")),
             ],
             cwd=ROOT,
-            check=True,
+            check=False,
             capture_output=True,
             text=True,
             env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1"},
         )
-        receipt = json.loads(worker.stdout)
-        require(receipt["arm_id"] == row["arm_id"], "worker returned wrong arm")
-        receipts.append(receipt)
+        if worker.returncode != 0:
+            failures.append(
+                _child_failure(
+                    row,
+                    index,
+                    failure_kind="nonzero_child_exit",
+                    returncode=worker.returncode,
+                    stdout=worker.stdout,
+                    stderr=worker.stderr,
+                    detail="child exited nonzero; exact diagnostics retained by digest only",
+                )
+            )
+        else:
+            try:
+                receipt = json.loads(worker.stdout)
+                require(receipt["arm_id"] == row["arm_id"], "worker returned wrong arm")
+            except (json.JSONDecodeError, AssertionError, KeyError) as error:
+                failures.append(
+                    _child_failure(
+                        row,
+                        index,
+                        failure_kind="malformed_child_receipt",
+                        returncode=worker.returncode,
+                        stdout=worker.stdout,
+                        stderr=worker.stderr,
+                        detail=f"{type(error).__name__}: child receipt rejected",
+                    )
+                )
+            else:
+                receipts.append(receipt)
+        _write_cumulative(
+            output,
+            _progress_artifact(claim, rows, receipts, failures, index + 1),
+        )
         if (index + 1) % 10 == 0:
             print(f"completed {index + 1}/{len(rows)} arms", file=sys.stderr, flush=True)
+    if failures:
+        result = {
+            "artifact_id": "P2-I2-APP-B2-INCOMPLETE-RUNTIME-EVIDENCE",
+            "artifact_version": "1.0",
+            "status": "nonevaluable_child_failures_retained",
+            "authority": claim,
+            "arm_count_expected": len(rows),
+            "arm_attempt_count": len(rows),
+            "successful_receipt_count": len(receipts),
+            "failure_receipt_count": len(failures),
+            "receipts": receipts,
+            "failure_receipts": failures,
+            "analysis": None,
+            "runtime_invocation_count": 1,
+            "child_retry_count": 0,
+            "scientific_result_assigned": False,
+        }
+        result["canonical_payload_digest"] = digest_value(result)
+        _write_cumulative(output, result)
+        print(json.dumps({"status": result["status"], "failures": len(failures)}))
+        return 1
     machine = load_json(ROOT / MACHINE_POLICY_REL)
     parent = load_json(ROOT / PARENT_POLICY_REL)
     analysis = analyze_receipts(receipts, freeze, machine, parent)
@@ -703,8 +846,7 @@ def parent_main(args: argparse.Namespace) -> int:
         "graph_repository_mutation_count": 0,
     }
     result["canonical_payload_digest"] = digest_value(result)
-    output = ROOT / args.output
-    output.write_bytes(canonical_bytes(result))
+    _write_cumulative(output, result)
     require(load_json(output) == result, "governed output readback mismatch")
     print(json.dumps({"status": "complete", "arms": len(receipts), "analysis": analysis["terminal_classification"]}))
     return 0
@@ -712,6 +854,9 @@ def parent_main(args: argparse.Namespace) -> int:
 
 def worker_main(args: argparse.Namespace) -> int:
     require(args.row_json is not None, "worker row is required")
+    require(Path(sys.prefix).resolve() == (ROOT / ".venv").resolve(), "worker repository .venv inactive")
+    require(Path(sys.executable) == ROOT / ".venv/bin/python", "worker was not invoked through lexical repository .venv")
+    require(sys.dont_write_bytecode, "worker requires -B")
     freeze = load_json(ROOT / args.freeze)
     row = json.loads(args.row_json)
     receipt = execute_arm(ROOT, (ROOT / args.graph_root).resolve(), freeze, row)
@@ -722,6 +867,7 @@ def worker_main(args: argparse.Namespace) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--freeze", required=True)
+    parser.add_argument("--recovery-authority")
     parser.add_argument("--claim")
     parser.add_argument("--output")
     parser.add_argument("--expected-head")
