@@ -1,0 +1,130 @@
+{
+  "artifact_id": "P2-I2-I08A-C02-ACTIVATION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "cycle_id": "P2-I2-C02",
+  "status": "frozen_before_owner_accepted_activation_validation",
+  "starting_authority": {
+    "branch": "p2-i2-experiment",
+    "commit": "c265279b2690fbd262e59248b0d84bfa3dc81ba1",
+    "decision_id": "P2-I2-DEC-051",
+    "change_id": "P2-I2-CHG-048"
+  },
+  "owner_authority": {
+    "acceptance_direction": "i accept I08A, continue with step 2 and 3 and 4",
+    "no_duplicate_review_direction": "step 3 is not needed IMHO",
+    "authorized_sequence": [
+      "deterministic activation record",
+      "one candidate-free activation validation",
+      "complete package commit",
+      "one read-only exact post-commit preflight",
+      "one corrected sequence-entry-001 invocation",
+      "stop before entry 2"
+    ]
+  },
+  "reviewed_package": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i08-entry-001-native-termination-audit.json",
+      "sha256": "b6f556ce25f2560dd74e20778b7e946b52e7ab51b1072e79fe196e507daeb175"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+      "sha256": "faa37843dea342b0760dd90200f6ec8fa5dfb0fbfd4567bb798c22f8fa10b72f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c02_execution_policy.json",
+      "sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
+      "sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py",
+      "sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_validate.py",
+      "sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-c02-input-freeze.json",
+      "sha256": "ea62691439b1bdd49f533071784285c2e15b12c1e9ba862afc6bf9adc487f0e5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json",
+      "sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-binding-receipt.json",
+      "sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/exec-freeze.json",
+      "sha256": "fe8722ac99de9d546c7f2d3db6f6da9c200a6a7dce56b525a664e50101954414"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-focused-tests-receipt.json",
+      "sha256": "15b6d8979385261a80398054e91e837991b58205a9b7614d2cb3478a4e57ba9e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-candidate-free-validation.json",
+      "sha256": "9e5089f9c4b653a3c7b0db5faff9d88626eca0da98d532397b82a3e6a7832981"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I08A-C02-resource-supervisor-correction.md",
+      "sha256": "dbe9f3d50046bdc7492755af3296e20c1d4937bd2c88f84fb70e67207b7f4711"
+    }
+  ],
+  "live_technical_hashes": {
+    "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792",
+    "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
+    "test_sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280",
+    "validator_sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c",
+    "input_freeze_sha256": "ea62691439b1bdd49f533071784285c2e15b12c1e9ba862afc6bf9adc487f0e5",
+    "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
+    "binding_receipt_sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe",
+    "inactive_exec_freeze_sha256": "fe8722ac99de9d546c7f2d3db6f6da9c200a6a7dce56b525a664e50101954414"
+  },
+  "preparation_source_hashes": {
+    "activation_validator_sha256": "6981e447cb0df09abf49bf8192ea09c30fb9e12acd8bbb756f10c5fdacd521be",
+    "postcommit_preflight_sha256": "c01496399ce58885b8e8eef0d0ccb6faf785932604584fe651ff1499c8e515f3"
+  },
+  "runtime_identity": {
+    "interpreter_command": ".venv/bin/python",
+    "interpreter_flags": [
+      "-B"
+    ],
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "runtime_source_relative": "src/pygrc/models/lgrc_9_v3_runtime.py",
+    "runtime_source_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+  },
+  "process_budget": {
+    "candidate_free_activation_validation_starts": 1,
+    "activation_validation_command": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_activation_validate.py"
+    ],
+    "infrastructure_retries": 0,
+    "failure_effect": "stop_without_commit_or_execution"
+  },
+  "postcommit_sequence": {
+    "preflight_source": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_postcommit_preflight.py",
+    "preflight_starts": 1,
+    "entry_starts": 1,
+    "entry_sequence_index": 1,
+    "stop_before_sequence_index": 2
+  },
+  "forbidden_before_commit": [
+    "PyGRC import",
+    "model or adapter construction",
+    "C02 claim, failure, retry, or output creation",
+    "candidate or control operation",
+    "scientific window",
+    "execution manifest",
+    "scientific interpretation"
+  ]
+}

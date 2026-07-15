@@ -462,9 +462,16 @@ and `analysis_arithmetic_delta = 1e-12`; byte reconstruction passes 11/11. The
 I05J includes an owner-directed closure amendment
 retaining exact dependency/native/validator accounting and synchronized current
 navigation without rerunning any governed, native-generation, candidate,
-runtime, or scientific path. The owner accepts the complete I05J/I05JA package
-and authorizes its commit. CAL-GATE is passed; I06 registration construction is
-authorized but not begun, and candidate execution remains closed.
+runtime, or scientific path. The owner accepted the complete I05J/I05JA
+package. I06/I06A/I06B subsequently passed registration and I07/I07A froze the
+exact 234-entry matrix. C01 closed bounded incomplete after its first native
+start, with no scientific result. I08A now returns an inactive C02 successor
+that preserves all scientific projections, removes only the 512 MiB address-
+space cap, externalizes native-exit receipt ownership, and passes 8/8 focused
+tests plus 18/18 candidate-free validation. DEC-051 records owner acceptance
+without a duplicate activation review; deterministic activation passes 19/19
+and authorizes the complete package commit. Corrected entry 1 still requires
+the resulting full HEAD and exact post-commit preflight.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

@@ -1706,6 +1706,55 @@ unchanged. The activation becomes live only from the resulting committed full
 HEAD and an exact post-commit preflight. Acceptance and commit do not themselves
 create a claim, execute an entry, build the manifest, or assign evidence.
 
+#### 3.2.32 I08 C01 bounded-incomplete and I08A successor declaration
+
+The exact post-commit preflight passes at full HEAD `c265279`. The first frozen
+entry then consumes its permanent attempt-1 claim and terminates in the common
+registration/PyGRC import path with an OpenBLAS memory-allocation error. No
+governed output or failure receipt is created. Attempt 2 is mechanically
+unauthorized because the exact same-entry failure receipt and zero-state
+counters do not exist; source-level phase inference cannot replace them.
+
+This event supplies no response, comparison, control, mode, OP/R01–R05, or L02
+evidence and is not a negative result. C01 is retained bounded incomplete with
+one claimed, zero evaluable, and 233 unattempted entries. No later C01 claim is
+consumed.
+
+The owner states that a 512 MiB space limit is unnecessary on the 128 GB host.
+DEC-050/CHG-047 therefore open I08A construction of C02. C02 must preserve the
+234 scientific entry projections byte-semantically while assigning new cycle
+and artifact identities. It removes only `RLIMIT_AS` enforcement and retains the
+180-second runtime ceiling, 512 MiB file-size ceiling, single-local-CPU rule,
+`.venv/bin/python -B`, graph read-only/cache isolation, restoration, and retry
+semantics.
+
+C02 must place native worker termination outside the evidence-loss boundary:
+an external supervisor owns the permanent claim and final success/failure
+receipt. A missing child attestation or unknown failure phase is conservatively
+non-retryable. Construction and candidate-free native-exit tests cannot import
+PyGRC, execute a registered entry, assign evidence, pass C02 EXEC-FREEZE, or
+authorize commit without separate review.
+
+I08A construction now satisfies that candidate-free projection. C02 contains
+the exact 234 C01 scientific rows under new cycle/governed paths with zero
+scientific projection changes. The worker applies no `RLIMIT_AS` cap while
+retaining the 180-second runtime and 512 MiB file-size ceilings. A fresh
+external supervisor owns claims and terminal receipts, and unknown/native
+termination remains non-retryable. Focused tests pass 8/8, including actual
+child native-exit observation; final validation passes 18/18 with zero blockers,
+PyGRC imports, models/adapters, candidate/control operations, or scientific
+windows. This is implementation-authority evidence only. C02 remains inactive,
+uncommitted, and unauthorized for candidate execution pending owner review.
+
+The owner now accepts I08A and rejects a duplicate activation-review step.
+DEC-051/CHG-048 authorize a deterministic activation record bound to the
+reviewed I08A hashes, one candidate-free activation validation, one complete
+package commit, one exact read-only post-commit preflight, and corrected I08
+entry 1. Activation and commit do not supply evidence. Entry 1 may supply only
+its registered raw/control receipts; it cannot assign OP/R01–R05, L02 support,
+or a terminal result before the complete registered matrix and later gates.
+Execution must stop after entry 1 for retained-outcome review before entry 2.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

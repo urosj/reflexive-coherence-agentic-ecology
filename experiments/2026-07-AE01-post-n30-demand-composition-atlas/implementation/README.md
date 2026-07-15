@@ -124,9 +124,15 @@ literal or constructed machine-root findings. I05J/I05JA retain the exact
 five-seed/two-order arithmetic projection, native metric-calibration and frozen
 metric-sheet artifacts, and `analysis_arithmetic_delta = 1e-12`; reconstruction
 passes 11/11. I05J also retains exact process accounting and synchronized
-current-status projections. The owner accepts the complete I05J/I05JA package
-and authorizes its commit. CAL-GATE is passed; I06 registration construction is
-authorized but not begun, and candidate execution remains closed.
+current-status projections. The owner accepted and retained the complete
+I05J/I05JA package. I06/I06A/I06B subsequently passed registration, and
+I07/I07A froze the exact 234-entry execution surface. C01 is retained bounded
+incomplete after one native start with no scientific result. The inactive I08A
+C02 successor removes only the 512 MiB address-space cap, externalizes native-
+exit receipts, and is review-ready after 8/8 tests and 18/18 candidate-free
+validation. DEC-051 records owner acceptance; deterministic activation passes
+19/19 and authorizes the package commit. Corrected entry 1 still requires the
+resulting full HEAD and exact preflight.
 
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,

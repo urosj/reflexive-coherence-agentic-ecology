@@ -1,0 +1,71 @@
+{
+  "artifact_id": "P2-I2-C02-OWNER-ACCEPTED-EXECUTION-AUTHORIZATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C02",
+  "status": "owner_accepted_activation",
+  "construction_authority": {
+    "decision_id": "P2-I2-DEC-050",
+    "change_id": "P2-I2-CHG-047",
+    "owner_direction": "there is no need for 512MiB space limit on 128GB RAM machine"
+  },
+  "acceptance_authority": {
+    "decision_id": "P2-I2-DEC-051",
+    "change_id": "P2-I2-CHG-048",
+    "owner_direction": "i accept I08A, continue with step 2 and 3 and 4",
+    "duplicate_activation_review_required": false
+  },
+  "owner_acceptance": true,
+  "candidate_execution_authorized": true,
+  "I08_authorized": true,
+  "commit_authorized": true,
+  "activation_commit_head": null,
+  "expected_head_source": "separately_owner_authorized_normalized_command_argument",
+  "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792",
+  "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
+  "test_sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280",
+  "validator_sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c",
+  "input_freeze_sha256": "ea62691439b1bdd49f533071784285c2e15b12c1e9ba862afc6bf9adc487f0e5",
+  "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
+  "binding_receipt_sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe",
+  "inactive_exec_freeze_sha256": "fe8722ac99de9d546c7f2d3db6f6da9c200a6a7dce56b525a664e50101954414",
+  "preparation_bindings": {
+    "accepted_parent_commit": "c265279b2690fbd262e59248b0d84bfa3dc81ba1",
+    "activation_input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-activation-input-freeze.json",
+    "activation_input_freeze_sha256": "e91d291b6ea5e54fa2851fe592682d19a6b261f9c7f9df30261ad71eec7728b1",
+    "accepted_i08a_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-candidate-free-validation.json",
+    "accepted_i08a_validation_sha256": "9e5089f9c4b653a3c7b0db5faff9d88626eca0da98d532397b82a3e6a7832981",
+    "activation_validator_sha256": "6981e447cb0df09abf49bf8192ea09c30fb9e12acd8bbb756f10c5fdacd521be",
+    "postcommit_preflight_sha256": "c01496399ce58885b8e8eef0d0ccb6faf785932604584fe651ff1499c8e515f3",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
+  },
+  "eventual_live_scope": {
+    "scientific_campaign": "P2-I2-I08",
+    "technical_authority_revision": "P2-I2-C02",
+    "primary_entry_count": 234,
+    "execution_order": "ascending_frozen_sequence_index",
+    "fresh_process_and_registered_baseline_per_attempt": true,
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "parallel_workers": 0,
+    "same_entry_preconstruction_retry_only": true,
+    "scientific_or_control_outcome_retryable": false,
+    "prior_entry_outcome_reads": false,
+    "rescue_variants": false
+  },
+  "current_boundary": {
+    "activation_record_is_owner_accepted": true,
+    "activation_record_becomes_live_only_when_committed_and_bound_by_full_head": true,
+    "governed_claims_or_outputs_permitted_only_after_commit_and_exact_preflight": true,
+    "owner_review_required": false,
+    "authorized_next_entry_sequence_index": 1,
+    "stop_before_entry_sequence_index": 2,
+    "execution_manifest_permitted": false,
+    "scientific_evidence": false
+  }
+}

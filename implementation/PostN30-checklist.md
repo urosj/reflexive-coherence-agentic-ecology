@@ -2,9 +2,9 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.41
+**Baseline revision:** 0.42
 
-**Date:** 2026-07-14
+**Date:** 2026-07-15
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
 
@@ -1241,6 +1241,19 @@ Entry condition:
   hashes while leaving the full live HEAD to the normalized command argument.
   No matrix claim or output enters the activation commit; execution starts only
   after exact post-commit preflight.
+- [x] Retain C01 bounded incomplete after the exact post-commit preflight and
+  first permanent claim. Native OpenBLAS termination produced no governed
+  terminal receipt, so attempt 2 is mechanically unauthorized; 0/234 entries
+  are evaluable and no scientific result exists.
+- [x] Complete owner-directed I08A candidate-free construction of inactive C02.
+  All 234 scientific projections are preserved; only `RLIMIT_AS` enforcement
+  is removed; runtime/file-size ceilings remain; and an external supervisor
+  owns native-exit receipts. Focused tests pass 8/8 and final validation passes
+  18/18 with zero blockers or candidate/scientific activity. DEC-051 records
+  owner acceptance and omits a duplicate activation review; deterministic
+  activation passes 19/19 and authorizes the complete package commit. Live use
+  still requires the resulting full HEAD and exact post-commit preflight. Evidence:
+  [I08A review](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I08A-C02-resource-supervisor-correction.md).
 
 Required lane work:
 
@@ -2129,6 +2142,8 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-CAL-PRE-GATE | Owner-accepted I04R2 sole progression authority; complete-arm strongest-marginal comparator, exact arithmetic-only I05 path, reconstruction, fixed window, causal receipts, and no candidate/null execution at passage | 2026-07-14 | I04R2 validation and DEC-026; passed |
 | P2-I2-I05-CLOSEOUT | Exact accepted-I04 identities; one consumed governed arithmetic-null attempt; complete I05E–I05I portability retention; amended I05J/I05JA native metric artifacts with delta `1e-12`, 11/11 reconstruction, and process/package closeout | 2026-07-14 | Owner-accepted and commit-authorized; I05 complete |
 | P2-I2-CAL-GATE | Owner-accepted I05J/I05JA metric closeout; candidate-blind delta `1e-12`; exact process/package accounting; no scientific effect | 2026-07-14 | Passed; opens unstarted I06 registration construction only |
+| P2-I2-REG-GATE | Owner-accepted I06/I06A three-mode registration plus I06B execution-readiness overlay; exact restoration, causal-receipt, runtime-tolerance, and registration boundaries | 2026-07-15 | Passed; accepted I07/I07A freeze construction followed |
+| P2-I2-EXEC-FREEZE | Accepted I07A inactive C01 freeze and activation history; C01 later bounded incomplete; I08A preserves all 234 projections and passes 8/8, 18/18 correction validation, and 19/19 activation validation | 2026-07-15 | C01 consumed/bounded incomplete; C02 correction/activation owner-accepted and commit-authorized; full committed HEAD and exact preflight still required |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2217,6 +2232,7 @@ Change log:
 | CL-042 | 2026-07-14 | Revision 0.39 retains the final preflight failure at launch commit `98770ae`: the active repository `.venv` was used, but its valid interpreter symlink target was incorrectly rejected by the repository-data path guard. DEC-031/CHG-024 now require exact `.venv/bin/python`, active repository venv, distinct base prefix, and the frozen resolved-target digest/version. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass with immutable I04R2 bytes; no claim/output exists and the one attempt remains unconsumed. | P2-I2 I05C correction review boundary | Superseded by CL-043 |
 | CL-043 | 2026-07-14 | Revision 0.40 synchronizes current program cover through the existing uncommitted I05J amendment. The sole governed arithmetic null completed and remains consumed; portability corrections through I05I are retained at `b5d0acb`; I05J/I05JA retain the five-seed/two-order projection, native metric artifacts, delta `1e-12`, and 11/11 reconstruction. The amendment adds exact process/package accounting without rerun and leaves CAL-GATE/I06 closed for owner review. | P2-I2 I05J closure-amendment review boundary | Active pending owner review; no scientific result |
 | CL-044 | 2026-07-14 | Revision 0.41 records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves the 11/11 reconstruction, delta `1e-12`, exact process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. | P2-I2 I05 terminal retention and CAL-GATE | Active; I05 complete, I06 not begun |
+| CL-045 | 2026-07-15 | Revision 0.42 synchronizes P2-I2 through I08A acceptance. C01 remains bounded incomplete at one claim and 0/234 evaluable with no result. C02 preserves all 234 projections, removes only `RLIMIT_AS`, externalizes native-exit receipts, passes 8/8 plus 18/18 correction validation, and passes 19/19 deterministic activation validation under DEC-051. | P2-I2 I08A activation/commit boundary | Active; complete package commit authorized; corrected entry 1 requires resulting full HEAD and exact preflight |
 
 ## 17. Current next actions
 

@@ -1,57 +1,31 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
-**Status:** active; staged `P2-I2-I03`; I03A/I03AR1 state-carried package is
-owner-accepted for progression, I03B/I03BR1 is owner-accepted for staged
-progression, and I03C hybrid passed 258/258 byte-reconstructed runtime
-conformance; I03CR1 passed its 26/26, 17/17 zero-runtime closeout revalidation
-with zero blockers and is owner-accepted for progression; the separately
-declared I03F compact family closeout passed 12/12 integration checks and 9/9
-acceptance conditions with zero blockers and is owner-accepted; the
-discriminator gate is passed; I04R2 confirmed all conditional machine
-invariants with 16/16 focused checks and 7/7 pure tests after correcting the
-future I05 estimator route; the project owner accepted I04R2 as the sole
-progression authority and passed CAL-PRE; original I04 and I04R1 are immutable
-historical artifacts; the I05B/I05C authority was owner-approved and committed;
-the single governed arithmetic null completed once with zero retries; DEC-032
-retains the corrected I05D portability audit of 135 files with 312
-value-redacted violations in 70 files; DEC-033 now has the first eleven-file
-I05 portability group review-ready with 10/10 checks and zero remaining group
-violations; DEC-034 retains that group at `6dd6898`; I05F has a 10/10
-technical result and zero remaining group violations; DEC-035 accepts its
-13-versus-three process deviation in place without rewriting the freeze or
-rerunning validation; DEC-036 accepts the complete package and authorizes its
-commit at `99c64dd`; I05G corrected the exact third bounded group with 10/10
-static checks, all 201 findings closed to zero, and no scientific or runtime
-operation, and the owner accepted and committed it at `62882ef`; the owner now
-directs the fourth bounded portability group under I05H, which is now 10/10
-review-ready with all 35 accepted findings closed to zero and no runtime or
-scientific operation; the owner accepts and commits it at `1279e17` and
-authorizes the exact fifth/final portability correction under I05I after the
-remaining-inventory check shows one residual group, six files, and 14 findings;
-before validation the owner identifies two validator files with three
-constructed machine-root surfaces missed by the literal scanner; the expanded
-guard then finds one constructed shebang in a third validator; I05I binds all
-nine sources and is 10/10 review-ready with the complete P2-I2 audit scope
-at zero literal and constructed-root findings; the owner accepts and commits
-I05I at `b5d0acb` and opens only the bounded I05J metric closeout. I05J is
-accepted at `3be9073`; I06/I06A are accepted at `49c74e1`; and I06B now returns
-review-ready with its exact additive three-primitive overlay, 15/15
-candidate-free checks, zero blockers, immutable accepted bytes, and zero
-PyGRC/model/packet/scientific activity. The owner now explicitly accepts I06B,
-restoring REG-GATE and authorizing resumption of the already-declared I07 freeze
-construction. I07 remains candidate-free and EXEC-FREEZE remains closed pending
-its own review.
+**Status:** active at `P2-I2-I08A` and resumed `P2-I2-I08`. C01 is retained bounded incomplete after
+entry 1 consumed its permanent claim and terminated natively with 0/234
+evaluable entries and no scientific result. The owner-directed C02 successor
+package is now candidate-free review-ready: the exact 234 scientific
+projections are unchanged, `RLIMIT_AS` is removed, the 180-second runtime and
+512 MiB file-size ceilings remain, native-exit receipt ownership is external,
+focused tests pass 8/8, and final validation passes 18/18 with zero blockers.
+The owner now accepts I08A and authorizes deterministic activation, commit,
+exact post-commit preflight, and corrected entry-001 execution without a second
+activation review. Activation validation passes 19/19 with zero blockers and
+zero candidate/scientific activity; the complete package is ready to commit.
+
+Historical I00–I07 gate and iteration detail remains retained below.
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I08`; activation owner-accepted and
-commit-authorized, candidate execution not yet started. The accepted
-I06B/I07/I07A checkpoint is retained at `5c2c248`. The owner accepts the 18/18
-zero-blocker preactivation package under DEC-049/CHG-045 and authorizes its
-retention. The activation becomes usable only from the resulting committed full
-HEAD after exact post-commit preflight; this commit contains no matrix claim.
+**Current activity iteration:** `P2-I2-I08A` activation/commit followed by
+resumed `P2-I2-I08` entry 1. Exact post-commit C01 preflight passed
+at `c265279`, but entry 1 terminated in native OpenBLAS import after its
+permanent claim and before success/failure output. C02 preserves the 234-row
+scientific projection while removing only the unnecessary address-space cap
+and externalizing native-exit receipts. Candidate-free validation passes 18/18.
+DEC-051/CHG-048 record owner acceptance and authorize the deterministic
+activation, commit, post-commit preflight, and one exact corrected entry start.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -60,7 +34,7 @@ HEAD after exact post-commit preflight; this commit contains no matrix claim.
 `P2-I2-CAL-PRE-GATE=passed_after_explicit_owner_acceptance_of_I04R2`;
 `P2-I2-CAL-GATE=passed_after_explicit_owner_acceptance_of_I05J_closeout`;
 `P2-I2-REG-GATE=passed_after_explicit_owner_acceptance_of_I06B`;
-`P2-I2-EXEC-FREEZE=passed_for_exact_inactive_I07A_cycle`
+`P2-I2-EXEC-FREEZE=C01_consumed_bounded_incomplete_C02_review_pending`
 
 **Acceptance ceiling:** `AE01-C2`; no P2-I2 result, cross-lane recurrence, or
 N31+ effect assigned
@@ -155,8 +129,8 @@ Rules:
 | `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Passed after explicit owner acceptance of I04R2 | DEC-026 accepts I04R2 as sole progression authority after 16/16 checks and 7/7 pure tests; opens only separately frozen single-invocation I05 arithmetic calibration; no null/runtime/candidate execution occurred at passage |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Passed after explicit owner acceptance of I05J/I05JA | Complete I05 closeout; delta `1e-12`; 11/11 validation; exact process/package accounting; no scientific effect; opens I06 construction only |
 | `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Passed after explicit I06B owner acceptance | Accepted I06/I06A remain immutable; accepted I06B closes all three I07-found execution-readiness gaps with 15/15 candidate-free checks and zero blockers; opens only resumed I07 freeze construction |
-| `P2-I2-EXEC-FREEZE` | One exact candidate cycle authorized before its first operation | Passed; exact I08 activation owner-accepted for commit | DEC-047 inactive freeze plus DEC-049 activation; live commands must bind the resulting full commit HEAD |
-| `P2-I2-EXEC-GATE` | Frozen finite matrix completes or closes validly blocked/incomplete | Open/incomplete; 0/234 entries run | Requires post-commit preflight and the exact 234-entry completion or a retained valid blocked/incomplete closeout |
+| `P2-I2-EXEC-FREEZE` | One exact candidate cycle authorized before its first operation | C01 consumed and bounded incomplete; C02 correction/activation owner-accepted and 19/19 validated | Complete package commit is authorized; live use still requires resulting full HEAD and exact preflight |
+| `P2-I2-EXEC-GATE` | Frozen finite matrix completes or closes validly blocked/incomplete | Blocked/incomplete; C01 has 1 claim and 0/234 evaluable | C02 has preserved the matrix and corrected only resource/receipt mechanics; no C02 entry is authorized yet |
 | `P2-I2-CONTROL-GATE` | Every mandatory common and L02 control receives a retained fail-closed disposition | Blocked | Requires the relevant registered executions |
 | `P2-I2-RECON-GATE` | Retained evidence, identities, and reports reconstruct independently | Blocked | Requires execution/control artifacts or a valid earlier blocked bundle |
 | `P2-I2-INTERPRET-GATE` | Boundary rungs, metric relation, support, two-axis reading, debts, and next move resolve | Blocked | Requires reconstruction |
@@ -243,7 +217,8 @@ Rules:
 | `P2-I2-I06B` | Additive execution-readiness registration correction | I07 authority audit plus explicit owner `+1` on DEC-043 recommendation | Complete and owner-accepted: exact overlay freezes all three missing primitives; 15/15 checks, zero blockers, immutable accepted bytes, zero PyGRC/model/packet/scientific work | REG-GATE restored under DEC-044/CHG-038; resumed I07 only; commit and candidate execution unauthorized |
 | `P2-I2-I07` | Mode-indexed candidate-cycle execution freeze | Owner-accepted I06B and restored REG-GATE | Retained reviewed history: exact 234-entry matrix; 7/7 focused tests; 25/25 final validation; CHG-041 later found four cross-entry-isolation blockers | Superseded for progression by I07A; no candidate/scientific effect |
 | `P2-I2-I07A` | Cross-entry-isolation correction | DEC-046/CHG-042 owner direction after CHG-041 audit | Owner-accepted: all four blockers closed; 234 entries unchanged; 21 bound files; 15/15 focused tests; 17/17 final validation; zero PyGRC/model/packet/candidate/scientific activity | DEC-047 passes inactive `P2-I2-EXEC-FREEZE` and authorizes checkpoint commit; live activation, I08, and candidate execution remain closed |
-| `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | Owner-accepted I07A EXEC-FREEZE plus separate owner direction | Activation owner-accepted and commit-authorized; 18/18 preactivation checks; 0/234 entries | Resulting full commit HEAD and exact post-commit preflight precede the first entry; then complete `P2-I2-EXEC-GATE` |
+| `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | Owner-accepted C01 activation | Bounded incomplete: entry 1 claimed, no success/failure output, 0/234 evaluable, 233 unattempted | Retained operational history only; no retry or scientific result |
+| `P2-I2-I08A` | C02 native-exit supervisor and resource-envelope correction | DEC-050 owner direction after C01 entry-001 native termination | Owner-accepted: 8/8 tests, 18/18 correction validation, and 19/19 activation validation | Complete package commit and exact post-commit preflight open under DEC-051; no second activation review |
 | `P2-I2-I09` | Mode-specific control resolution and compact index generation | I08 or valid earlier stop | Blocked | `P2-I2-CONTROL-GATE` |
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | I08–I09 or valid earlier stop | Blocked | `P2-I2-RECON-GATE` |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | I09–I10 | Blocked | `P2-I2-INTERPRET-GATE`, then `P2-I2-CLOSE-GATE` |
@@ -3203,10 +3178,10 @@ by DEC-047/CHG-043; no candidate/control operation is authorized.
 
 ## 13. `P2-I2-I08` — Finite matrix execution
 
-**Status:** activation-package construction authorized under DEC-048/CHG-044;
-candidate execution remains blocked on explicit review, acceptance, and commit
-of that exact activation package. The inactive cycle-scoped
-`P2-I2-EXEC-FREEZE` is passed and retained at `5c2c248`.
+**Status:** C01 bounded incomplete under DEC-050; no scientific result. Exact
+post-commit preflight passed at `c265279`, but entry 1 terminated natively after
+its permanent claim and before either governed output. Attempt 2 is mechanically
+unauthorized and 233 entries remain unattempted.
 
 **Activation boundary:** the owner states `ok, let's do I08`. This is the
 separate direction required by DEC-047 and opens I08 preparation, including the
@@ -3244,14 +3219,25 @@ before the package returns for review.
   cumulative decision index from DEC-045 through the already-retained DEC-049
   sections and amend the activation commit. This changes no decision text,
   authority, activation hash, matrix byte, output, or scientific boundary.
-- [ ] After the accepted activation commit, bind its full HEAD through every
+- [x] After the accepted activation commit, bind its full HEAD through every
   normalized entry command and revalidate clean authority/index/graph state,
   committed/local byte equality, cache absence, and empty current-entry paths
-  immediately before the first claim.
+  immediately before the first claim. Exact preflight passed at `c265279`.
+- [x] Invoke sequence entry 1 exactly once and retain its permanent claim.
+  Native OpenBLAS termination during the common import path emits neither
+  success output nor the required failure receipt.
+- [x] Refuse attempt 2 because the exact failure receipt and zero-state counters
+  required by the frozen retry predicate do not exist; do not delete or rewrite
+  the attempt-1 claim.
+- [x] Stop before sequence entry 2, retain 0/234 evaluable and no scientific
+  result, and close C01 bounded incomplete after owner direction. Evidence:
+  [entry-001 audit](../contracts/p2-i2/c01/i08-entry-001-native-termination-audit.json)
+  and [failed-start review](../reports/P2-I2-I08-entry-001-failed-start.md).
 - [ ] Execute primary entries in ascending frozen `sequence_index`, each in a
   fresh `.venv/bin/python -B` process with a fresh/restored registered composite
-  baseline. Do not use parallel workers or allow a prior outcome to change a
-  later entry's parameters, order, eligibility, or branch.
+  baseline under a separately accepted successor cycle. Do not use parallel
+  workers or allow a prior outcome to change a later entry's parameters, order,
+  eligibility, or branch.
 
 - [ ] Execute every registered matrix entry—mode × cell × subconfiguration ×
   seed × allowed attempt—exactly once, except for its one preregistered
@@ -3268,6 +3254,63 @@ before the package returns for review.
 
 Exit gate `P2-I2-EXEC-GATE` records completion state only; it does not assign
 the terminal class.
+
+## 13A. `P2-I2-I08A` — C02 native-exit and resource correction
+
+**Status:** candidate-free construction complete and review-ready; C02
+activation, execution, and commit remain closed.
+
+**Authority:** after the C01 entry-001 audit, the owner states that there is no
+need for a 512 MiB space limit on a 128 GB RAM machine. DEC-050/CHG-047 retain
+C01 as bounded incomplete and authorize only the successor construction below.
+
+- [x] Open I08A in the checklist and hypotheses before changing any execution
+  machinery or constructing C02 authority.
+- [x] Retain C01, its accepted activation, permanent claim, missing-output
+  facts, and 0/234 evaluable disposition byte-exactly as historical authority.
+- [x] Freeze C02 with new cycle, claim, failure, output, manifest, binding, and
+  activation identities while preserving all 234 scientific entry projections,
+  ordering, seeds, modes, cells, branches, registered values, and controls.
+  Evidence: [C02 run matrix](../contracts/p2-i2/c02/run-matrix.json), 234 rows
+  and zero scientific projection changes.
+- [x] Remove only `RLIMIT_AS` enforcement. Retain the 180-second runtime ceiling,
+  512 MiB file-size ceiling, single-local-CPU rule, `.venv/bin/python -B`, and
+  graph read-only/cache-free boundaries. Evidence:
+  [C02 policy](../configs/p2_i2_c02_execution_policy.json).
+- [x] Put permanent claim and final success/failure receipt ownership in an
+  external supervisor process. A native worker exit must retain exact exit code,
+  bounded stderr digest/text, phase boundary, output absence, and conservative
+  retry disposition even when Python cleanup cannot run. Evidence:
+  [C02 execution source](../scripts/p2_i2_c02_execution.py).
+- [x] Preserve receipt-derived retry: only a supervisor-proven pre-model,
+  pre-adapter, pre-candidate failure may authorize attempt 2; unknown phase or
+  missing child attestation consumes the entry and is not retryable.
+- [x] Candidate-free validate C01 immutability, C02 matrix equivalence, unique
+  paths, no absolute paths, supervisor native-exit behavior, no address-space
+  cap, retained runtime/file ceilings, restoration, isolation, and fail-closed
+  completion without importing PyGRC or running a scientific entry.
+  Evidence: [focused tests](../contracts/p2-i2/c02/i08a-focused-tests-receipt.json)
+  pass 8/8 and [final validation](../contracts/p2-i2/c02/i08a-candidate-free-validation.json)
+  passes 18/18 with zero blockers.
+- [x] Return the complete C02 freeze uncommitted for owner review. No C02 claim,
+  activation, commit, or scientific evidence may be inferred from construction.
+  Evidence: [I08A review](../reports/P2-I2-I08A-C02-resource-supervisor-correction.md).
+- [x] Record the owner's explicit I08A acceptance and direction to continue
+  through deterministic activation, commit, post-commit preflight, and entry 1
+  without a duplicate activation review. Evidence: DEC-051/CHG-048.
+- [x] Construct the owner-accepted C02 activation record from the reviewed
+  hashes, candidate-free validate it in `.venv/bin/python -B`, and fail closed
+  on any drift without executing a matrix entry. Evidence:
+  [activation](../contracts/p2-i2/c02/owner-accepted-execution-authorization.json)
+  and [19/19 validation](../contracts/p2-i2/c02/i08a-activation-validation.json).
+- [ ] Commit the complete I08A/activation package, including the permanent C01
+  claim and bounded-incomplete history, before live use.
+- [ ] Run the read-only exact post-commit preflight against the resulting full
+  HEAD, clean authority/index/graph state, committed/local byte equality,
+  cache-free import roots, and absent current C02 claim/output/failure paths.
+- [ ] Invoke only corrected I08 sequence entry 1 under its exact normalized
+  command. Retain either the externally supervised success output or failure
+  receipt and stop for review before entry 2.
 
 ## 14. `P2-I2-I09` — Control resolution
 
@@ -3443,6 +3486,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-044` | Owner states `ok, let's do I08` after retained commit `5c2c248` | `I08_inactive_activation_preparation` | Open I08 checklist/hypothesis-first; freeze exact inactive activation inputs; remove only frozen ignored import caches; candidate-free validate the proposed activation; return uncommitted | Complete: exact 207-to-zero cache inventory, no tracked-byte change, 18/18 checks, two `.venv/bin/python -B` starts, zero retries, zero PyGRC/model/packet/candidate/scientific activity | Accepted I07A technical hashes, exact 234 entries, inactive flags, no self-referential HEAD, no output/manifest, no commit without review | Review-ready; activation remains false/uncommitted and no matrix entry is authorized |
 | `P2-I2-CHG-045` | Owner states `+1 and make a commit` after the complete I08 activation preflight handoff | `I08_owner_acceptance_and_live_activation_commit` | Accept candidate hash `52d420b`; transition only artifact version/status and acceptance/authorization fields; bind preparation hashes; commit the exact package | Activation hash `f46ebd3`; all accepted live technical hashes unchanged; no output/manifest/claim; 0/234 entries | DEC-049, exact 18/18 validation, 207-to-zero cleanup receipt, self-reference-free full-HEAD command rule | Owner-accepted and commit-authorized; live use begins only from resulting committed HEAD after exact preflight |
 | `P2-I2-CHG-046` | Owner identifies that the cumulative decision index stops at DEC-045 although DEC-046–049 sections are retained, then directs update and amend | `I08_navigation_only_index_reconciliation` | Add DEC-046–049 index rows and amend the activation commit | No decision body, activation, authority, matrix, output, or scientific byte changes | Existing DEC-046–049 sections and accepted I08 activation package | Complete; navigation projection synchronized through DEC-049 |
+| `P2-I2-CHG-047` | C01 entry 1 terminates natively after its permanent claim; owner states the 512 MiB space limit is unnecessary on the 128 GB host | `I08_C01_bounded_incomplete_and_I08A_C02_resource_supervisor_correction` | Retain C01 at 1 claim/0 evaluable; remove only successor `RLIMIT_AS`; externalize native-exit receipt capture; preserve the exact scientific matrix | Complete uncommitted correction: 234 unchanged projections, 29 bound files, 8/8 tests, 18/18 validation, zero blockers and zero candidate/scientific activity | C01 claim/authority/history, 234 scientific projections, receipt-derived retry, runtime/file ceilings, graph/venv/isolation boundaries | Review-ready; no C02 activation, execution, commit, or scientific evidence |
+| `P2-I2-CHG-048` | Owner accepts I08A and directs steps 2–4, explicitly omitting a duplicate activation-review checkpoint | `I08A_owner_acceptance_deterministic_activation_commit_and_entry_001_resumption` | Create one hash-bound activation, validate candidate-free, commit the complete package, run exact post-commit preflight, then invoke only corrected entry 1 | Activation passes 19/19 with zero blockers and zero candidate/scientific activity; commit, preflight, and one live entry remain | Accepted I08A hashes, C01 bounded-incomplete history, no-second-review direction, full-HEAD command rule, external supervisor | Commit authorized; no entry 2, manifest, interpretation, or result commit |
 
 ## 19. Evidence ledger
 
@@ -3529,6 +3574,9 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I07A-OWNER-ACCEPTANCE` | I07A | [Owner acceptance and inactive EXEC-FREEZE](../contracts/p2-i2/c01/i07a-owner-acceptance-and-exec-freeze.json), DEC-047, and CHG-043 | Acceptance, inactive gate passage, and checkpoint-commit authority only; no activation or candidate/scientific evidence | Owner-accepted and commit-authorized; live activation and I08 remain closed |
 | `P2-I2-I08-PREACTIVATION` | I08 | [Input freeze](../contracts/p2-i2/c01/i08-activation-input-freeze.json), [cache-cleanup receipt](../contracts/p2-i2/c01/i08-import-cache-cleanup-receipt.json), inactive candidate hash `52d420b`, [18/18 validation](../contracts/p2-i2/c01/i08-preactivation-validation.json), [cleanup source](../scripts/p2_i2_i08_cleanup_import_caches.py), [validator](../scripts/p2_i2_i08_preactivation_validate.py), and [review](../reports/P2-I2-I08-activation-preflight.md) | Candidate-free activation readiness only; 207 ignored cache artifacts removed, zero tracked-byte changes, no PyGRC/model/packet/candidate/control/scientific operation | Historical inactive preactivation passed; exact candidate subsequently accepted by the following entry |
 | `P2-I2-I08-LIVE-ACTIVATION` | I08 | [Owner-accepted execution authorization](../contracts/p2-i2/c01/owner-accepted-execution-authorization.json), DEC-049, and CHG-045 | Exact cycle activation and commit authority only; live HEAD remains command-bound rather than self-referential; no candidate/scientific result | Owner-accepted and commit-authorized; 0/234 entries; first claim requires resulting committed HEAD and exact preflight |
+| `P2-I2-I08-ENTRY-001-FAILED-START` | I08 | [Permanent claim](../outputs/p2-i2/c01/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json), [native-termination audit](../contracts/p2-i2/c01/i08-entry-001-native-termination-audit.json), and [review](../reports/P2-I2-I08-entry-001-failed-start.md) | Operational failure evidence only; no governed response, retry authority, OP/R01–R05 evidence, or scientific result | C01 bounded incomplete; 1 claimed, 0/234 evaluable, 233 unattempted; I08A construction authorized |
+| `P2-I2-I08A-C02-CORRECTION` | I08A | [Input freeze](../contracts/p2-i2/c02/i08a-c02-input-freeze.json), [policy](../configs/p2_i2_c02_execution_policy.json), [external supervisor](../scripts/p2_i2_c02_execution.py), [234-row matrix](../contracts/p2-i2/c02/run-matrix.json), [binding](../contracts/p2-i2/c02/execution-binding-receipt.json), [inactive freeze](../contracts/p2-i2/c02/exec-freeze.json), [8/8 test receipt](../contracts/p2-i2/c02/i08a-focused-tests-receipt.json), [18/18 validation](../contracts/p2-i2/c02/i08a-candidate-free-validation.json), and [review](../reports/P2-I2-I08A-C02-resource-supervisor-correction.md) | Infrastructure-only C02 correction: no address-space cap, retained runtime/file ceilings, external native-exit receipt boundary, exact scientific projection | Owner-accepted under DEC-051; zero blockers, PyGRC imports, models/adapters, candidate/control operations, or scientific windows; activation separately validated below |
+| `P2-I2-I08A-C02-ACTIVATION` | I08A | [Activation input freeze](../contracts/p2-i2/c02/i08a-activation-input-freeze.json), [owner-accepted activation](../contracts/p2-i2/c02/owner-accepted-execution-authorization.json), [19/19 validation](../contracts/p2-i2/c02/i08a-activation-validation.json), [validator](../scripts/p2_i2_i08a_activation_validate.py), and [post-commit preflight](../scripts/p2_i2_c02_postcommit_preflight.py) | Acceptance, deterministic activation, commit, and one-entry progression authority only; no scientific evidence | Owner-accepted and commit-authorized under DEC-051; zero blockers and zero candidate/scientific activity; live use requires resulting full HEAD and exact preflight |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

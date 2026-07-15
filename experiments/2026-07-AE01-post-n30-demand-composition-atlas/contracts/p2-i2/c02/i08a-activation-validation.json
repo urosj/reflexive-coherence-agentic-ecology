@@ -1,0 +1,135 @@
+{
+  "artifact_id": "P2-I2-I08A-C02-ACTIVATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blockers": [],
+  "check_count": 19,
+  "checks": [
+    {
+      "check_id": "I08A-ACT-01",
+      "detail": "repository .venv with -B",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-02",
+      "detail": "accepted starting HEAD",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-03",
+      "detail": "index clean before activation commit",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-04",
+      "detail": "reviewed I08A package hashes exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-05",
+      "detail": "234 unchanged scientific projections",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-06",
+      "detail": "inactive freeze remains immutable",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-07",
+      "detail": "owner-accepted activation fields exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-08",
+      "detail": "activation binds every live technical hash",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-09",
+      "detail": "activation avoids self-reference",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-10",
+      "detail": "owner acceptance authority exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-11",
+      "detail": "activation input freeze bound",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-12",
+      "detail": "interpreter digest exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-13",
+      "detail": "graph revision and worktree exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-14",
+      "detail": "graph runtime source exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-15",
+      "detail": "live import roots cache-free",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-16",
+      "detail": "C02 outputs and manifest absent",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-17",
+      "detail": "activation artifacts contain no absolute paths",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-18",
+      "detail": "activation validation budget exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-ACT-19",
+      "detail": "activation validation imports no PyGRC",
+      "error": null,
+      "passed": true
+    }
+  ],
+  "cycle_id": "P2-I2-C02",
+  "disposition": "commit_authorized_package_ready",
+  "iteration_id": "P2-I2-I08A",
+  "passed_count": 19,
+  "process_accounting": {
+    "candidate_free_python_starts": 1,
+    "candidate_or_control_operations": 0,
+    "infrastructure_retries": 0,
+    "models_or_adapters_constructed": 0,
+    "pygrc_imports": 0,
+    "scientific_windows": 0
+  },
+  "status": "passed_candidate_free"
+}

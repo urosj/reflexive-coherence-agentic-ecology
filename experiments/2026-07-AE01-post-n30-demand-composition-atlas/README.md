@@ -1,9 +1,11 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 has passed its source,
-discriminator, and CAL-PRE gates; its sole candidate-blind I05 arithmetic-null
-attempt and all portability corrections are retained; the owner-accepted I05J/
-I05JA metric closeout passes 11/11 and CAL-GATE is passed; I06 is not begun
+**Status:** P2-I1 closed and Review R3 passed; P2-I2 has passed source,
+discriminator, calibration, and registration gates. C01 is bounded incomplete
+at one claim and 0/234 evaluable with no result. Owner-directed I08A has an
+owner-accepted C02 correction at 8/8 focused tests, 18/18 correction
+validation, and 19/19 activation validation. Its package commit is authorized;
+corrected entry 1 still requires the resulting full HEAD and exact preflight.
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -114,9 +116,15 @@ and frozen metric-sheet artifacts, freeze `analysis_arithmetic_delta = 1e-12`,
 and pass 11/11 byte-reconstruction checks. An owner-directed in-iteration I05J
 closure amendment retains exact process counts and synchronized navigation
 without rerunning any null, native generation, validator, candidate, runtime,
-or scientific path. The owner accepts and authorizes commit of the complete
-package. CAL-GATE is passed; I06 registration construction is authorized but
-not begun, and candidate execution remains closed.
+or scientific path. The owner accepted and retained the complete package.
+CAL-GATE passed; I06, I06A, and I06B subsequently established accepted
+registration and execution-readiness authority, and I07/I07A froze the exact
+234-entry matrix. C01 then closed bounded incomplete after its first native
+start. I08A now returns an inactive C02 correction that removes only
+`RLIMIT_AS` and externalizes native-exit receipts; it passes 8/8 focused tests
+and 18/18 final validation without candidate or scientific work. DEC-051 then
+records owner acceptance and no duplicate activation review; deterministic
+activation passes 19/19 and authorizes the package commit.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself
@@ -278,7 +286,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           I05 complete; CAL-GATE passed; I06 not begun
+P2-I2                                           I08A accepted; activation 19/19; commit authorized
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

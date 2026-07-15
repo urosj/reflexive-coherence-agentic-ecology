@@ -84,6 +84,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-047` | Does the owner accept I07A and pass the exact inactive execution freeze? | Accepted: retain the zero-blocker I07A package and accumulated I06B/I07 checkpoint | Passes inactive `P2-I2-EXEC-FREEZE` and authorizes commit; live activation, cache cleanup, I08, and candidate execution remain closed | 2026-07-15 |
 | `P2-I2-DEC-048` | May I08 activation preparation and its required import-cache cleanup begin? | Owner opens checklist/hypothesis-first inactive activation construction, exact cache cleanup, and candidate-free validation | Produces an 18/18 review-ready inactive activation candidate; no commit, claim, matrix entry, or scientific effect | 2026-07-15 |
 | `P2-I2-DEC-049` | Does the owner accept and authorize commit of the exact I08 activation? | Accepted: bind candidate `52d420b`, retain accepted activation `f46ebd3`, and commit the complete activation package | Opens live I08 only from the resulting committed full HEAD after exact preflight; the activation commit contains no matrix claim or result | 2026-07-15 |
+| `P2-I2-DEC-050` | What follows C01 entry 1 terminating natively after claim under the 512 MiB address-space cap? | Owner directs C01 bounded-incomplete retention and I08A/C02 construction without `RLIMIT_AS`, plus external native-exit receipt capture | I08A review-ready at 8/8 and 18/18; C01 has no result; C02 activation, execution, and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-051` | Does accepted I08A require a second activation review before corrected entry 1? | No; owner accepts I08A and authorizes deterministic activation, commit, exact post-commit preflight, and entry 1 | One candidate-free activation check, one commit, one preflight, one entry start; stop before entry 2 | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2674,7 +2676,88 @@ Reopen DEC-049 if the commit changes an accepted live technical hash, includes
 a governed claim/output/failure/manifest, or the first normalized preflight
 does not reproduce the accepted authority and clean-runtime boundary.
 
-## 52. Pending decision queue
+## 52. `P2-I2-DEC-050` — C01 bounded incomplete and C02 resource/supervisor correction
+
+**Status:** decided by observed live failure and explicit owner direction
+
+At committed HEAD `c265279`, the full I08 preflight passes and sequence entry 1
+creates its permanent attempt-1 claim. The process then emits an OpenBLAS
+memory-allocation error and terminates without either governed success output or
+the required failure receipt.
+
+Attempt 1 is consumed. Attempt 2 is unauthorized because receipt-derived
+zero-state eligibility cannot be reconstructed. The event supplies no
+scientific evidence. The remaining 233 entries are left unclaimed rather than
+repeating a failure in the common import path.
+
+The owner states: `there is no need for 512MiB space limit on 128GB RAM
+machine`.
+
+**Decision:** retain C01 as bounded incomplete with one claim, zero evaluable
+entries, and no result. Open checklist/hypothesis-first I08A construction of a
+new C02 that:
+
+- preserves every scientific matrix projection and registered value;
+- uses new cycle and governed artifact identities;
+- does not apply `RLIMIT_AS`;
+- retains the 180-second runtime and 512 MiB file-size ceilings;
+- keeps the single-local-CPU, `.venv -B`, graph read-only, cache-isolation, and
+  fresh-baseline boundaries; and
+- places permanent claim plus native-exit success/failure receipt ownership in
+  an external supervisor process.
+
+An unknown child phase or missing child attestation is non-retryable. I08A may
+construct and candidate-free validate C02 only. It may not execute a C02 entry,
+pass C02 EXEC-FREEZE, or commit without explicit review.
+
+**Construction result:** the inactive C02 package preserves all 234 scientific
+entry projections with zero scientific changes, removes only `RLIMIT_AS`,
+retains the runtime/file-size and environment boundaries, and externalizes
+permanent-claim plus terminal-receipt ownership. Focused candidate-free tests
+pass 8/8 and final validation passes 18/18 with zero blockers and zero
+PyGRC/model/candidate/scientific activity. The package is returned uncommitted
+for owner review; this result does not itself accept, activate, or execute C02.
+
+Reopen DEC-050 if the retained C01 claim/output facts are wrong, removing
+`RLIMIT_AS` changes a scientific value rather than infrastructure enforcement,
+or an external supervisor cannot preserve fresh-process and exact-command
+identity.
+
+## 53. `P2-I2-DEC-051` — I08A acceptance and no-duplicate-review activation
+
+**Status:** decided by explicit owner acceptance and execution direction
+
+The owner accepts I08A, states that a separate activation-review step is not
+needed, and directs continuation through activation/commit, exact post-commit
+preflight, and the first corrected entry.
+
+**Decision:** the reviewed I08A correction is accepted. One deterministic C02
+activation record may set owner acceptance, candidate execution, I08, and
+commit authorization true while binding the exact reviewed technical hashes.
+It receives one candidate-free `.venv/bin/python -B` validation and may then be
+committed with the complete C01 history and I08A package. No second activation
+review is required unless validation exposes a substantive mismatch.
+
+After commit, one read-only preflight must bind the resulting full HEAD, clean
+authority/index/graph state, committed/local byte equality, exact interpreter
+and graph identities, cache-free import roots, and absent current-entry C02
+claim/output/failure paths. If it passes, corrected I08 entry 1 is authorized
+under its exact normalized command. Execution then stops before entry 2 for
+retained-outcome review.
+
+Activation, commit, and preflight have no scientific effect. Entry 1 cannot by
+itself assign OP/R01–R05, L02 support, a terminal class, or a lane result.
+
+Reopen DEC-051 if activation changes a reviewed technical hash, validation or
+preflight fails, the resulting commit is dirty or incomplete, or the live start
+does not retain exactly one supervised claim plus success/failure terminal.
+
+**Activation result:** the deterministic activation binds all eight live
+technical hashes and passes 19/19 candidate-free checks with zero blockers,
+retries, PyGRC imports, models/adapters, candidate/control operations, or
+scientific windows. The complete package is ready for its authorized commit.
+
+## 54. Pending decision queue
 
 No item below is decided by this record yet:
 

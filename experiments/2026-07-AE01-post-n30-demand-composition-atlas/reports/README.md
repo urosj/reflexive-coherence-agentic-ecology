@@ -117,6 +117,18 @@ Phase 2 gate reviews:
   owner acceptance and commit authority; no output or manifest exists, and the
   resulting full commit HEAD plus exact preflight are required before the first
   matrix claim.
+- [P2-I2 I08 entry-001 failed start](P2-I2-I08-entry-001-failed-start.md)
+  retains C01's permanent first claim, native OpenBLAS termination before a
+  governed terminal receipt, mechanically unavailable retry, 0/234 evaluable
+  disposition, and no scientific result.
+- [P2-I2 I08A C02 resource/supervisor correction](P2-I2-I08A-C02-resource-supervisor-correction.md)
+  preserves all 234 scientific projections while removing only the 512 MiB
+  address-space cap and placing native-exit receipt ownership in an external
+  supervisor. Focused tests pass 8/8 and final candidate-free validation passes
+  18/18 with zero blockers. DEC-051 records owner acceptance; deterministic
+  activation then passes 19/19 candidate-free checks and authorizes the complete
+  package commit. Live use still requires the resulting full HEAD and exact
+  post-commit preflight.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)
