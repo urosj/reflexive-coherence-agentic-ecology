@@ -509,11 +509,13 @@ P2-I2 state, history, and hybrid carriers without importing Appendix A
 outcomes. Its 99 fresh PyGRC models technically support proper-subset
 composition only in the history-carried realization: current state makes E
 suppressive, active history makes E necessary, and the frozen hybrid makes E
-redundant. APP-B3 confirms exact event admission and limits the result to a
-scaffold-dependent history-carried candidate because no matched three-event
-alternative was run. APP-B4 now retains an inactive 75-arm cardinality/dose/
-order discriminator plus a candidate-free validated activation package; it
-has not executed. The complete geometry, mechanisms,
+redundant. APP-B3 confirms exact event admission and identifies the missing
+matched three-event discriminator. APP-B4 supplies it with 75 fresh PyGRC
+arms: all executable triples ending in P respond and every feasible G/E ending
+is zero at all three seeds. Thus raw cardinality and GEP uniqueness are
+excluded; the bounded history mechanism is a three-admission terminal-P gate,
+not distinct-operation complementarity. DEC-094 owner-accepts and closes this
+APP-B4 result at that exact ceiling. The complete geometry, mechanisms,
 functions, evidence statuses, and prospective foundations are described in
 the [P2-I2 interpretative synthesis](reports/P2-I2-interpretative-synthesis.md).
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,

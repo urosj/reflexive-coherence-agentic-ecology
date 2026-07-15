@@ -42,19 +42,23 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-B4` activation is owner-accepted
-under DEC-091/CHG-096. The bounded activation-binding correction and
-candidate-free validation pass; the direct inactive-start test refuses before
-claim. The scientific freeze is immutable. One containing authority commit is
-now authorized, followed by the exact clean-HEAD 75-arm campaign.
-`P2-I2-INT-01` is included in the reviewed containing package.
+**Current activity iteration:** `P2-I2-APP-B4` is owner-accepted and closed
+under DEC-094/CHG-099, with one containing result commit authorized. The
+authority package is retained at `51be51f`; its single claim produced 75/75
+valid fresh-process arms with zero child failure/retry. The post-write JSON
+seed-key mismatch was corrected retained-only under DEC-092/CHG-097 without a
+campaign rerun. Reconstruction is canonical-byte-identical and closeout
+passes. The accepted result is terminal-P selection over the executable
+three-token domain; operation complementarity and every broader claim remain
+closed.
 
 `P2-I2-APP-B4` inactive 75-arm freeze is retained at commit `863d73c` under
 DEC-086/CHG-091 plus the owner's containing-commit direction. It contains the
 24 unchanged-baseline executable triples plus one reference across three
 seeds. EEG, EEE, and EEP remain outside the executable domain. Candidate-free
-validation passes with zero PyGRC/model/producer/arm/response activity;
-activation, campaign claim, runtime, and result remain closed.
+freeze validation passed with zero PyGRC/model/producer/arm/response activity.
+That historical inactive lifecycle was subsequently activated at `51be51f`;
+the complete technical result is projected above.
 
 `P2-I2-APP-B2` is technically complete under DEC-080/CHG-085 and awaits owner
 result review. After the retained DEC-077
@@ -281,7 +285,7 @@ Rules:
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
 | `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 retained at `1f69816`; APP-A2 activation retained at `e61dacc`; 19/19 valid arms, byte-identical reconstruction, primary/causal relations passed, closeout 53/53 | Owner-accepted and closed under DEC-074/CHG-079; one containing closeout commit authorized |
-| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0/B1 complete; original APP-B2 start retained failed-closed; venv-only replacement completes 99/99 fresh PyGRC arms; APP-B3 passes implication-boundary audit; APP-B4 inactive 75-arm ordered-token discriminator freeze validates candidate-free | APP-B2 result remains technically review-ready under DEC-082/CHG-087; APP-B4 freeze is review-ready under DEC-086/CHG-091; operation complementarity unresolved; commit/activation/next runtime closed |
+| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0/B1 complete; original APP-B2 start retained failed-closed; venv-only replacement completes 99/99 fresh PyGRC arms; APP-B3 passes implication-boundary audit; APP-B4 completes 75/75 fresh arms and retained-only closeout | APP-B2 and APP-B4 results technically review-ready; APP-B4 resolves the feasible landscape to a terminal-P history gate; operation complementarity not claimed; result acceptance/commit closed |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3972,6 +3976,9 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-094` | Owner states `i think B4 should be completed` after reviewing the interpretative synthesis | `appendix_b4_completion_and_activation_binding_correction_entry` | Reopen APP-B4 only to finish its frozen scientific panel; audit activation readiness; correct impossible self-referential HEAD binding through tracked-byte/ancestor binding; construct and candidate-free validate exact activation; return uncommitted | Base freeze and every scientific byte immutable; one read-only `.venv` activation-pattern audit so far; zero PyGRC/model/producer/arm/response; no commit or claim before exact package review | DEC-086/CHG-091, retained freeze commit `863d73c`, accepted Appendix A activation pattern, owner completion direction | APP-B4 activation preparation active; containing commit, claim, campaign, reconstruction, result, and result commit remain closed |
 | `P2-I2-CHG-095` | APP-B4 activation correction and candidate-free readiness validation complete | `appendix_b4_activation_binding_correction_and_readiness_result` | Retain immutable implementation ancestry plus exact invocation HEAD and tracked authority bytes; bind one `.venv` campaign, permanent exclusive claim, zero retry, cumulative output, and retained-only closeout | Twelve `.venv` preparation starts: 3 read-only inspections, 3 syntax/static checks, 1 builder, 4 validators, 1 inactive refusal; one validator-only assertion failure and one superseded receipt retained in ledger; zero PyGRC/model/producer/arm/response; no claim/output | DEC-089/CHG-094, correction/activation/validation, corrected runner, closeout validator, readiness report | Technically complete and review-ready uncommitted; owner acceptance/containing commit required before the single campaign; result acceptance/commit closed |
 | `P2-I2-CHG-096` | Owner responds `continu with B4` to the exact activation-readiness handoff | `appendix_b4_activation_acceptance_and_containing_commit_authority` | Accept reviewed activation/INT package; add canonical owner overlay; authorize one containing commit and then the single exact clean-HEAD campaign | Two `.venv` owner-overlay processes: digest projection and canonical/identity/zero-runtime validation; zero PyGRC/model/producer/arm/response; no claim/output before commit | DEC-090/CHG-095, owner direction, owner-acceptance overlay, exact candidate package | Containing commit and subsequent single campaign authorized; runtime result acceptance/commit remain closed |
+| `P2-I2-CHG-097` | The single APP-B4 campaign completes all 75 arms, then parent exits at post-write object equality | `appendix_b4_complete_aggregate_integer_seed_key_readback_correction` | Preserve claim and aggregate; prove canonical byte equality; normalize reconstructed analysis across the JSON seed-key boundary; correct future readback to canonical bytes; never rerun an arm | Parent 1, children 75/75 successful, failures/retries 0; runtime output complete and matrix valid; one retained-only diagnostic proves only demonstrated mismatch is integer-to-string JSON key normalization; diagnostic imports zero PyGRC and runs zero model/arm | DEC-091/CHG-096, permanent claim, complete aggregate, exact exit assertion, retained-only diagnostic | In-place APP-B4 closeout correction active; campaign retry prohibited; reconstruction/closeout/result review pending |
+| `P2-I2-CHG-098` | APP-B4 retained-only reconstruction and closeout validation complete | `appendix_b4_terminal_p_ordered_quantitative_history_result` | Bind exact claim/aggregate/correction/reconstruction; classify full feasible landscape; interpret geometry, mechanism, function, and claim ceiling; update synthesis | One reconstruction and two closeout-validator starts after diagnostic/correction checks; zero regenerated PyGRC/model/producer/arm/response; 75/75 runtime arms valid; 24 gain-0.125 and 51 zero; response iff terminal P over 24 feasible triples at all seeds | DEC-092/CHG-097, retained aggregate, reconstruction, closeout validation, result report, updated synthesis | Technically complete and review-ready uncommitted; owner result acceptance/commit closed; operation complementarity not claimed |
+| `P2-I2-CHG-099` | Owner directs `commit changes` after reviewing the APP-B4 result and reconciled interpretative synthesis | `appendix_b4_result_acceptance_closeout_and_retention` | Accept exact terminal-P result, retained-only correction/closeout, and synthesis update; authorize one containing result commit; close APP-B4 | Governance/retention only; zero new PyGRC/model/producer/arm/response and zero rerun; all DEC-093 scientific bytes unchanged | DEC-093/CHG-098, complete claim/runtime/reconstruction/validation/report/synthesis package, owner direction | APP-B4 owner-accepted and closed; one result commit authorized; operation complementarity, APP-B2 acceptance, cross-appendix recurrence, and new work remain closed |
 
 ## 19. Evidence ledger
 
@@ -4859,12 +4866,15 @@ APP-B4 completion re-entry:
   acceptance, claim, output, and reconstruction remain absent.
 - [x] Return the complete uncommitted package for owner review and containing-
   commit authorization.
-- [ ] After the containing commit, pass exact clean-HEAD preflight and consume
+- [x] After the containing commit, pass exact clean-HEAD preflight and consume
   at most one permanent campaign claim.
-- [ ] Execute all 75 frozen arms once in fresh `.venv` processes/models,
+- [x] Execute all 75 frozen arms once in fresh `.venv` processes/models,
   continuing after any failed row and failing matrix completion closed.
-- [ ] Reconstruct from retained aggregate only, validate the exact result, and
+- [x] Reconstruct from retained aggregate only, validate the exact result, and
   return it uncommitted for owner result review.
+- [x] Record owner acceptance of the terminal-P result and authorization for
+  one containing result commit; close APP-B4 without promoting operation
+  complementarity or opening new work.
 
 APP-B4 completion counts at re-entry:
 
@@ -4881,6 +4891,30 @@ activation / claim / runtime / reconstruction = 0/0/0/0
 new PyGRC imports / models / producers / arms / responses = 0/0/0/0/0
 ```
 
+APP-B4 governed runtime and readback disposition:
+
+```text
+activation commit = 51be51f
+campaign parent / claims = 1/1
+fresh child processes attempted / successful / failed = 75/75/0
+scientific / infrastructure retries = 0/0
+retained receipts / matrix-valid arms = 75/75
+parent exit = nonzero after complete aggregate write
+readback diagnostic starts = 1 retained-only `.venv` process
+canonical rebuilt/retained analysis bytes identical = true
+new PyGRC imports / models / arms in diagnosis = 0/0/0
+campaign rerun authorized or required = false/false
+retained-only processes after parent exit = 6
+  diagnostic / correction digest / correction validation = 1/1/1
+  reconstruction / closeout validators = 1/2
+reconstruction PyGRC / models / producers / arms / responses = 0/0/0/0/0
+runtime PyGRC fresh processes/models / producer calls / response envelopes = 75/75/75/75
+gain-0.125 / scientific-zero arms = 24/51
+responsive rule = terminal P iff, over 24 executable triples at all 3 seeds
+raw cardinality sufficient / GEP unique / exact order effect = false/false/true
+closeout status = passed_runtime_complete_owner_result_review_pending
+```
+
 Evidence: [activation-binding correction](../contracts/p2-i2/app-b4-activation-binding-correction.json),
 [prospective activation](../contracts/p2-i2/app-b4-live-activation.json),
 [owner acceptance](../contracts/p2-i2/app-b4-activation-owner-acceptance.json),
@@ -4889,6 +4923,13 @@ Evidence: [activation-binding correction](../contracts/p2-i2/app-b4-activation-b
 [activation validator](../scripts/p2_i2_app_b4_activation_validate.py),
 [precommitted closeout validator](../scripts/p2_i2_app_b4_closeout_validate.py), and
 [readiness report](../reports/P2-I2-APP-B4-activation-readiness.md).
+
+Runtime evidence: [permanent claim](../contracts/p2-i2/app-b4-campaign-claim.json),
+[complete aggregate](../contracts/p2-i2/app-b4-runtime-evidence.json),
+[post-write correction](../contracts/p2-i2/app-b4-postwrite-readback-correction.json),
+[retained-only reconstruction](../contracts/p2-i2/app-b4-reconstruction-and-closeout.json),
+[closeout validation](../contracts/p2-i2/app-b4-closeout-validation.json), and
+[runtime result](../reports/P2-I2-APP-B4-runtime-result.md).
 
 ### 21.6 Stop and reopen conditions
 
@@ -4920,8 +4961,8 @@ Stop autonomous progression if any of the following occurs:
 - [x] Explain Appendix A's different four-axis live-carrier geometry, complete
   subset matrix, causal controls, accepted result, and claim ceiling.
 - [x] Explain Appendix B's P2-I2-grounded G/E/P projection, separate mode
-  results, active-history debt, APP-B3 implication boundary, and unrun APP-B4
-  discriminator.
+  results, active-history debt, APP-B3 implication boundary, and complete
+  APP-B4 terminal-P discriminator.
 - [x] Separate for every major case: observed geometry, mechanism shown,
   bounded functionality unlocked, and plausible future foundation.
 - [x] Mark every statement as retained observation, warranted interpretation,
@@ -4929,7 +4970,8 @@ Stop autonomous progression if any of the following occurs:
 - [x] Validate links, status projections, portability, and zero-runtime process
   accounting, then return the synthesis uncommitted for owner review.
 
-INT-01 process boundary:
+INT-01 original construction process boundary (before the APP-B4 update now
+owned by DEC-093/CHG-098):
 
 ```text
 retained evidence files read = existing only

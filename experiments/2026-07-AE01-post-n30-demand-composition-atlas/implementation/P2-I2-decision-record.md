@@ -126,6 +126,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-089` | Should APP-B4 remain an inactive design? | No: owner directs that B4 be completed; first correct the impossible self-referential activation-HEAD binding without changing the scientific freeze | Opens bounded activation correction/candidate-free validation and uncommitted handoff; commit, claim, runtime, reconstruction, and result remain closed pending exact review | 2026-07-15 |
 | `P2-I2-DEC-090` | Is the corrected APP-B4 activation package ready for a containing authority commit and one campaign? | Technically yes: candidate-free validation passes, all scientific bytes remain unchanged, and an inactive start refuses before claim | Review-ready uncommitted; owner acceptance/containing commit required before the single zero-retry campaign; result acceptance/commit remain closed | 2026-07-15 |
 | `P2-I2-DEC-091` | Does the owner accept the APP-B4 activation package and authorize continuation? | Yes: `continu with B4`; retain canonical owner overlay, commit the reviewed package, then run the single exact campaign | One containing authority commit and one clean-HEAD zero-retry campaign authorized; result acceptance/commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-092` | Does the APP-B4 parent post-write readback failure require a campaign rerun? | No: all 75 children succeeded and the complete matrix-valid aggregate is retained; canonical analysis bytes are identical and only integer seed-key types differ before JSON normalization | Preserve claim/aggregate; correct serialization readback and reconstruct retained-only in APP-B4; campaign retry prohibited | 2026-07-15 |
+| `P2-I2-DEC-093` | What does the complete APP-B4 response landscape establish? | At all seeds and over all 24 executable triples, response is 0.125 iff P is terminal; raw cardinality and GEP uniqueness are false, exact order effect is true | Technically complete terminal-P ordered quantitative-history gate; operation complementarity not claimed; owner result acceptance/commit pending | 2026-07-15 |
+| `P2-I2-DEC-094` | Does the owner accept the APP-B4 terminal-P result and authorize its containing result commit? | Yes: `commit changes`; accept the exact claim/runtime/reconstruction/closeout/report/synthesis package and close APP-B4 | One containing result commit authorized; operation complementarity, APP-B2 acceptance, cross-appendix recurrence, and new work remain closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -4371,9 +4374,81 @@ without PyGRC or runtime regeneration and independently closeout-validated.
 The resulting scientific evidence must return uncommitted for owner result
 review; acceptance and result commit are not pre-authorized.
 
-## 94. Pending decision queue
+## 94. `P2-I2-DEC-092` — Retain complete APP-B4 aggregate; correct readback only
 
-APP-B4 containing commit and one campaign are open under DEC-091/CHG-096.
-APP-B2/B3 result acceptance, APP-B4 result acceptance/commit, operation
-complementarity, cross-lane synthesis, graph mutation, N31+ selection, and any
-new scientific move remain closed.
+**Status:** retained-only closeout correction active; no campaign retry
+
+The exact `51be51f` campaign consumes its permanent claim and executes all 75
+frozen fresh-process arms successfully with zero child failure or retry. The
+runner writes a complete aggregate whose analysis reports a complete,
+operationally valid 75-arm matrix. It then exits nonzero only because the
+post-write assertion compares its in-memory analysis, whose seed map has
+integer keys, to JSON readback, whose object keys are strings.
+
+A retained-only `.venv` diagnostic reruns no model or arm and imports no PyGRC.
+It proves that direct object equality fails, canonical rebuilt and retained
+analysis bytes are identical, and JSON-normalizing the rebuilt analysis makes
+it exactly equal to the retained analysis. The scientific campaign therefore
+must not be retried.
+
+APP-B4 may correct the runner's future post-write check to canonical-byte
+equality and normalize the reconstructor across this JSON boundary. The
+original claim, runtime aggregate, activation commit, responses, analysis
+semantics, and classifier bytes remain immutable. Reconstruct once from the
+retained aggregate, run the precommitted closeout validator, and return the
+result uncommitted for review.
+
+## 95. `P2-I2-DEC-093` — APP-B4 terminal-P result disposition
+
+**Status:** technically complete; owner result review pending
+
+The single retained APP-B4 campaign contains 75/75 valid fresh-process PyGRC
+arms, zero child failure/retry, 24 native gain-0.125 responses, and 51 valid
+scientific zeros. Retained-only reconstruction is canonical-byte-identical and
+closeout validation passes without PyGRC or scientific regeneration.
+
+Across every executable three-token sequence and seeds 101, 211, and 307, the
+response is positive exactly when P occupies the third history position. GGP,
+GEP, GPP, EGP, EPP, PGP, PEP, and PPP respond; all 16 feasible G/E-terminal
+triples and all references are zero. EEG, EEE, and EEP remain physically
+excluded and are not assigned zero.
+
+Therefore raw three-event cardinality is insufficient, GEP is not uniquely
+positive, and within-dose-multiset order is load-bearing. Combined with
+APP-B2's zero single-/proper-subset controls, the bounded mechanism is a
+three-admission terminal-P-qualified quantitative-history gate. Distinct G/E/P
+identities are not necessary because repeated/missing-operation triples such
+as PPP and GGP respond. Operation complementarity is not claimed.
+
+The registered history fold, recency, native operation amounts, and threshold
+remain coupled. APP-B4 supports the terminal-P equivalence over its feasible
+domain but does not separately identify which of those coupled quantities is
+exclusively causal. The result is technically complete and returned
+uncommitted for owner review.
+
+## 96. `P2-I2-DEC-094` — Accept and close APP-B4
+
+**Status:** owner accepted; one containing result commit authorized
+
+After reviewing the complete APP-B4 runtime result and the end-to-end
+interpretative-synthesis reconciliation, the owner directs `commit changes`.
+This accepts the exact 75-arm terminal-P result, permanent claim, retained
+aggregate, post-write readback correction, canonical-byte-identical
+reconstruction, closeout validation, result report, and updated synthesis.
+
+APP-B4 closes at the DEC-093 claim ceiling: over the 24 executable triples and
+three seeds, response is positive exactly for terminal P; raw cardinality and
+GEP uniqueness are excluded; operation complementarity is not claimed; EEG,
+EEE, and EEP remain physical exclusions rather than zeros. The one result
+commit adds no new execution or scientific conclusion.
+
+This acceptance does not silently accept APP-B2/B3 as a separate result,
+establish cross-appendix recurrence, authorize graph mutation, or open another
+experiment.
+
+## 97. Pending decision queue
+
+APP-B4 is owner-accepted and closed under DEC-094/CHG-099; its one result
+commit is authorized. APP-B2/B3 result acceptance, operation complementarity,
+cross-lane synthesis, graph mutation, N31+ selection, and any new scientific
+move remain closed.

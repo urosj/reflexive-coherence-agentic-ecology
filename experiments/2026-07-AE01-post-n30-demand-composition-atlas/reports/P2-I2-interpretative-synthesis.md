@@ -1,11 +1,11 @@
 # P2-I2 Interpretative Synthesis
 
-**Status:** documentation-only retained-evidence synthesis; review-ready and
-uncommitted
+**Status:** retained-evidence synthesis updated through owner-accepted APP-B4
+under DEC-094/CHG-099; containing result commit authorized
 
 **Scope:** the accepted main P2-I2 result, accepted Appendix A, the retained
-technical Appendix B result and implication audit, and the inactive unrun
-APP-B4 discriminator
+technical Appendix B result and implication audit, and the complete APP-B4
+ordered-three-token discriminator
 
 ## 1. How to read this document
 
@@ -17,8 +17,8 @@ evidence status:
 | Main P2-I2 | Owner-accepted fresh-runtime result | Bounded shared-pool co-conditioning demand pattern through state, active history, and hybrid carriers |
 | Appendix A | Owner-accepted fresh-runtime result | Bounded functional complementarity of G/E/P operations through a distinct live four-axis carrier |
 | APP-B1 | Retained source audit, freeze, and response-free conformance | The three P2-I2 carrier architectures can execute the registered G/E/P paths; no scientific response conclusion |
-| APP-B2 and APP-B3 | Technically complete retained runtime result and implication audit; owner result acceptance still pending | History-carried proper-subset composition is observed; state and hybrid are negative in their frozen realizations; operation complementarity remains unresolved |
-| APP-B4 | Retained inactive freeze only | A precise future 75-arm discriminator exists; no APP-B4 simulation or result exists |
+| APP-B2 and APP-B3 | Technically complete retained runtime result and implication audit; owner result acceptance still pending | History-carried proper-subset composition is observed; state and hybrid are negative in their frozen realizations; operation complementarity was unresolved at this boundary and is resolved against promotion by APP-B4 |
+| APP-B4 | Owner-accepted 75-arm fresh-runtime result; closed under DEC-094/CHG-099 | Ordered quantitative history selects exactly the executable terminal-P triples; raw cardinality and GEP uniqueness are excluded |
 
 Four kinds of statement are kept separate throughout:
 
@@ -55,6 +55,14 @@ Quantity-matched repetitions by S1 alone or S2 alone reproduce the response.
 The load-bearing fact is therefore the constitution of one carrier by the two
 registered contribution operations—not the plurality, identity, intention, or
 functional diversity of their original sources.
+
+The appendices sharpen a second distinction. Appendix A shows a separate live
+carrier in which three physically different operations are jointly necessary
+for one bounded functional envelope. Appendix B initially reproduces a
+proper-subset-positive GEP relation through P2-I2 active history, but APP-B4
+shows that this relation belongs to a broader three-admission terminal-P class.
+Carrier composition and operation complementarity are therefore separable:
+one can be real while the other is absent.
 
 ## 3. Main P2-I2 geometry
 
@@ -579,7 +587,7 @@ The 99 fresh models give one especially revealing comparison:
 | Mode | GEP | Strongest proper subset | Margin | Interpretation |
 | --- | ---: | --- | ---: | --- |
 | State-carried | `0.0` | GP = `0.125` | `-1` | E removes enough current P to suppress a response already reached by GP |
-| History-carried | `0.125` | all seven subsets = `0.0` | `1` | Complete ordered GEP history is necessary and sufficient in the frozen response boundary |
+| History-carried | `0.125` | all seven subsets = `0.0` | `1` | GEP is sufficient and every registered proper subset is insufficient; matched three-token alternatives are deferred to APP-B4 |
 | Hybrid | `0.125` | P and GP = `0.125` | `0` | The hybrid responds, but E is nonessential; irreducibility fails |
 
 All results repeat across the three frozen seeds.
@@ -591,20 +599,25 @@ representation changes.
 
 - In **current state**, E is subtractive. GP leaves a stronger present `P`
   condition than GEP, so adding E destroys rather than completes the response.
-- In **active history**, E is not only a debit. It is an admitted event in an
-  ordered three-operation formation pattern. Without E, the materialized
-  history does not reach the response condition.
+- In **active history**, E is not only a debit. It is an admitted event in the
+  ordered GEP formation pattern. Deleting E from that registered candidate
+  leaves GP, whose two-token materialized history does not reach the response
+  condition. This establishes proper-subset dependence, not yet identity-
+  specific necessity.
 - In the **hybrid**, the P operation or GP already supplies enough joint
   state/history signal. Adding E does not create an irreducible dependency.
 
-This is the most important Appendix B mechanism result:
+At the APP-B2 boundary, the important mechanism result is:
 
-> Irreducibility is not a fixed property of the operation names. It depends on
-> what the carrier preserves about those operations.
+> A proper-subset relation is not a fixed property of the physical operations.
+> It depends on what the carrier preserves and which matched alternatives the
+> comparator includes.
 
-The history mode turns a physically subtractive operation into a necessary
-temporal constituent. The state mode treats it as suppression. The registered
-hybrid treats it as redundant at the chosen response boundary.
+Relative to the registered deletion subsets, history turns a physically
+subtractive E event into an apparently necessary temporal constituent. State
+treats E as suppression, and the registered hybrid treats it as redundant.
+APP-B4 then shows that E identity is not globally necessary in the history
+fixture: GGP, GPP, PGP, PEP, and PPP can also respond.
 
 ### 9.5 Controls and scope
 
@@ -618,8 +631,10 @@ In the supported history realization:
 - controller-authored response is causally excluded; and
 - one-source, cyclic role rotations, and label permutation reproduce it.
 
-The result therefore concerns the three physical operation types inside one
-active shared history. Participant plurality remains non-load-bearing.
+At this boundary, the result concerns GEP versus its seven proper subsets
+inside one active shared history. Participant plurality remains non-load-
+bearing. Whether all three operation identities are necessary is deliberately
+left to the matched-cardinality APP-B4 panel.
 
 ### 9.6 APP-B3: the exact implication boundary
 
@@ -639,15 +654,22 @@ GGP, or PEP. Thus APP-B2 establishes proper-subset composition, but not that
 the distinct operation identities are necessary rather than generic event
 cardinality, total dose, or ordered quantitative history.
 
-The honest technical result is therefore a **bounded history-carried,
-scaffold-dependent three-operation shared-pool composition candidate**.
-Operation complementarity remains unresolved.
+At the APP-B3 boundary, the honest technical result was therefore a **bounded
+history-carried, scaffold-dependent three-operation shared-pool composition
+candidate**. Operation complementarity was unresolved there; APP-B4 supplies
+the matched-cardinality evidence that resolves that ambiguity below.
 
-### 9.7 APP-B4: the frozen but unrun three-token discriminator
+### 9.7 APP-B4: the executed three-token discriminator
 
-APP-B4 addresses that missing comparison prospectively. It freezes the 24
-ordered three-token sequences that can execute from the unchanged baseline,
-plus one reference, at three seeds: 75 future arms.
+APP-B4 addresses that missing comparison directly. It executes the 24 ordered
+three-token sequences that can run from the unchanged baseline, plus one
+reference, at three seeds: 75 fresh PyGRC arms.
+
+All 75 arms are operationally valid, with zero child failure or retry. The
+complete aggregate was retained before a final Python/JSON seed-key equality
+assertion made the parent exit nonzero. Canonical rebuilt and retained analysis
+bytes are identical; retained-only reconstruction and closeout pass without a
+campaign rerun or scientific regeneration.
 
 ```text
 all G/E/P triples = 27
@@ -660,23 +682,42 @@ The exclusions are geometric rather than outcome-based. Pool `P` begins at
 cannot withdraw its registered amount. Those rows are outside the physical
 domain and cannot be treated as zeros.
 
-If eventually authorized and run, the panel can distinguish:
+The observed rule is exact across the executable domain and all three seeds:
 
-| Future pattern | Warranted reading |
+```text
+positive = GGP, GEP, GPP, EGP, EPP, PGP, PEP, PPP
+zero     = every feasible triple ending in G or E, plus reference
+
+response = 0.125 if and only if the third token is P
+```
+
+Thus raw three-event cardinality is insufficient, GEP is not uniquely
+positive, and equal-multiset permutations differ. The exact G/E/P permutation
+group makes the order effect visible: GEP and EGP respond, while GPE, EPG,
+PGE, and PEG do not. The same terminal-P split appears in GGP, GPP, and EPP
+multiset families. Repeated PPP is positive.
+
+Geometrically, ordered source-label-free G/E/P admissions are folded through
+the scaffolded active history and materialized at `M_H`. The frozen native
+feedback threshold then schedules the B packet only for the terminal-P class.
+The result is consistent with a quantitative recency gate in which the newest
+high-dose P token crosses threshold after a filled three-admission context.
+APP-B2's single P and tested one-/two-operation proper subsets remain zero, so
+P alone is not sufficient in those contexts.
+
+The resulting function is a bounded terminal-token-qualified temporal gate,
+not distinct-operation complementarity. APP-B4 does not independently
+intervene on recency coefficient, dose, fold formula, or threshold, and it
+does not impute an outcome to excluded terminal-P sequence EEP.
+
+| Interpretative axis | APP-B4 disposition |
 | --- | --- |
-| All feasible triples reproduce GEP | Raw three-event cardinality is sufficient |
-| Responses vary between dose multisets | Cardinality alone is insufficient; quantitative composition matters |
-| Permutations of one multiset differ | Order matters within the same quantities |
-| GEP is uniquely positive | A specific ordered quantitative-history pattern is selected within the feasible domain |
-
-Even the last pattern would not by itself prove operation complementarity.
-No repeated three-token sequence has the same total native dose as GEP; the
-three-event integer solution at that dose necessarily contains one G, one E,
-and one P. APP-B4 can isolate cardinality, dose multiset, and order much more
-strongly, but not operation identity independently of dose/history encoding.
-
-No APP-B4 runtime has occurred. It unlocks a well-posed next experiment, not a
-new finding.
+| Geometry | Three native operation arrivals enter one ordered, source-label-free history carrier; 24 executable triples and reference are rebuilt fresh at each seed |
+| Mechanism | Quantitative recency folding materializes at `M_H`; the frozen feedback threshold selects exactly executable histories whose newest token is P |
+| Function unlocked | A filled three-admission shared history can implement a deterministic terminal-token-qualified response gate |
+| Alternative removed | Raw event cardinality, GEP uniqueness, and the necessity of all three distinct operation identities |
+| Remaining coupling | Token count, P dose, recency coefficient, fold, and threshold are not independently intervened |
+| Possible foundation | Native finite-history eligibility, last-event-qualified triggers, and controlled temporal filters, subject to naturalization and transfer tests |
 
 ## 10. How the main result and appendices fit together
 
@@ -686,7 +727,7 @@ The three bodies of work answer progressively different questions:
 | --- | --- | --- |
 | Main P2-I2 | Can multiple contributions constitute one later-relevant carrier? | Yes, through present state, ordered active history, or both; the exact response relation depends on carrier temporality |
 | Appendix A | Can three different carrier operations be jointly functional when no subset is? | Yes, in a separate native four-axis live carrier with a bounded gate signature |
-| Appendix B | Can the same abstract G/E/P roles compose through the accepted P2-I2 carrier architectures? | Technically yes only in the frozen history-carried realization; the stronger operation-complementarity reading remains unresolved |
+| Appendix B | Can the same abstract G/E/P roles compose through the accepted P2-I2 carrier architectures, and what explains the history result? | Proper-subset composition occurs only in the frozen history realization; APP-B4 resolves it as a three-admission terminal-P history gate rather than distinct-operation complementarity |
 
 This is not yet scientific recurrence. Appendix A and Appendix B use different
 geometries, measurements, and authorities. Their descriptive convergence is a
@@ -697,9 +738,12 @@ carrier organization determines which combinations become functional
 ```
 
 Appendix A shows a multi-axis present carrier in which opposing operations
-jointly land inside a functional envelope. Appendix B shows an active temporal
-carrier in which the same abstract operation types gain or lose necessity
-depending on what the carrier remembers.
+jointly land inside a functional envelope and remain individually necessary
+under its causal controls. Appendix B shows an active temporal carrier in
+which a deletion-subset result initially makes E appear necessary, while the
+matched-cardinality panel reveals a simpler terminal-P temporal rule. The
+difference is mechanistic evidence, not a conflict: the carriers compute
+different functions.
 
 ## 11. Functionality now demonstrated
 
@@ -715,8 +759,8 @@ bounded functional vocabulary:
 | Private storage and carrier-scoped state are causally distinguishable | Main private-partition controls |
 | Identical outputs can be separated by causal provenance | Main direct/controller exclusions |
 | Distinct generative, extractive, and redistributive operations jointly satisfy a functional carrier envelope | Accepted Appendix A |
-| Carrier temporality changes whether an operation is necessary, suppressive, or redundant | Retained APP-B2/B3 technical result |
-| A finite cardinality/dose/order discriminator is ready for execution | Inactive APP-B4 only |
+| Carrier temporality changes an operation's role relative to registered deletion-subset comparisons | Retained APP-B2/B3 technical result, qualified by APP-B4 |
+| A shared history carrier can select a terminal-token class after a filled three-admission context | Technically complete APP-B4 result |
 
 ## 12. What could legitimately be based on this
 
@@ -742,8 +786,8 @@ synthesis must precede implementation priority.
 
 - **Naturalization:** replace `RCAEActiveHistoryAdapterV2` with a graph-native
   carrier while preserving all main history/hybrid controls.
-- **APP-B4 runtime:** execute the frozen 75-arm panel to distinguish event
-  cardinality, dose composition, and order.
+- **APP-B4 mechanism intervention:** vary recency, P dose, token count, fold,
+  and threshold separately to identify which coupled feature is load-bearing.
 - **Scale:** increase contributors, operation types, or eligible responders
   while keeping source labels out of the causal read.
 - **Economy:** add explicit reserve depletion, replenishment, leakage,
@@ -797,9 +841,11 @@ The immediate implementation lesson is precise: native current-state
 composition is already adequate in the bounded fixture; active shared history
 is the recurring missing causal leg inside main P2-I2 and Appendix B. The
 immediate scientific lesson is equally precise: carrier organization can
-change a physical operation from suppressive, to necessary, to redundant.
-That is a strong basis for subsequent controlled work, while remaining below
-claims of cooperation, ecology organization, or life.
+change a physical operation from suppressive, to deletion-subset-necessary,
+to redundant—and matched-cardinality evidence can reveal that apparent
+necessity as a terminal-token rule instead. That is a strong basis for
+subsequent controlled work, while remaining below claims of cooperation,
+ecology organization, or life.
 
 ## 14. Evidence map
 
@@ -820,3 +866,8 @@ Primary retained sources:
 - [Appendix B implication-boundary audit](P2-I2-APP-B3-implication-boundary-audit.md)
 - [APP-B4 capability audit](P2-I2-APP-B4-capability-audit.md)
 - [APP-B4 inactive freeze](P2-I2-APP-B4-inactive-freeze.md)
+- [APP-B4 runtime result](P2-I2-APP-B4-runtime-result.md)
+- [APP-B4 retained runtime evidence](../contracts/p2-i2/app-b4-runtime-evidence.json)
+- [APP-B4 post-write correction](../contracts/p2-i2/app-b4-postwrite-readback-correction.json)
+- [APP-B4 retained-only reconstruction](../contracts/p2-i2/app-b4-reconstruction-and-closeout.json)
+- [APP-B4 closeout validation](../contracts/p2-i2/app-b4-closeout-validation.json)

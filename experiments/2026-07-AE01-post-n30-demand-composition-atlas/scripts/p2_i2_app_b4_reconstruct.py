@@ -53,12 +53,14 @@ def main() -> int:
     without_digest = {key: value for key, value in retained.items() if key != "canonical_payload_digest"}
     require(digest_value(without_digest) == retained["canonical_payload_digest"], "retained digest drifted")
     require((ROOT / args.input).read_bytes() == canonical_bytes(retained), "retained output noncanonical")
-    reconstructed = analyze_receipts(
+    reconstructed_native = analyze_receipts(
         retained["receipts"],
         freeze,
         load_json(ROOT / MACHINE_REL),
         load_json(ROOT / PARENT_REL),
     )
+    reconstructed = json.loads(canonical_bytes(reconstructed_native))
+    require(canonical_bytes(reconstructed_native) == canonical_bytes(retained["analysis"]), "APP-B4 canonical analysis bytes differ")
     require(reconstructed == retained["analysis"], "APP-B4 analysis reconstruction differs")
     result = {
         "artifact_id": "P2-I2-APP-B4-RECONSTRUCTION-AND-CLOSEOUT",
@@ -66,6 +68,7 @@ def main() -> int:
         "retained_input": {"path": args.input, "sha256": sha256(ROOT / args.input)},
         "freeze": {"path": args.freeze, "sha256": sha256(ROOT / args.freeze)},
         "analysis_reconstruction_byte_identical": canonical_bytes(reconstructed) == canonical_bytes(retained["analysis"]),
+        "json_seed_key_normalization_applied": True,
         "arm_count_reconstructed": len(retained["receipts"]),
         "runtime_generation_count": 0,
         "PyGRC_import_count": 0,

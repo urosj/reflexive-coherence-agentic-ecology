@@ -316,7 +316,7 @@ def parent_main(args: argparse.Namespace) -> int:
     }
     result["canonical_payload_digest"] = digest_value(result)
     write_cumulative(output, result)
-    require(load_json(output) == result, "APP-B4 output readback drifted")
+    require(output.read_bytes() == canonical_bytes(result), "APP-B4 canonical output readback drifted")
     print(json.dumps({"status": "complete", "arms": 75}))
     return 0
 

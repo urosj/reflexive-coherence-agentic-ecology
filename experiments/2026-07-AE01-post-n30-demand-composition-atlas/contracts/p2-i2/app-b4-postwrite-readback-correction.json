@@ -1,0 +1,68 @@
+{
+  "activation_commit": "51be51fbb81eb186d64b28820149236564cd37be",
+  "artifact_id": "P2-I2-APP-B4-POSTWRITE-READBACK-CORRECTION",
+  "artifact_version": "1.0",
+  "authority": {
+    "campaign_retry_authorized": false,
+    "change": "P2-I2-CHG-097",
+    "decision": "P2-I2-DEC-092",
+    "retained_only_reconstruction_authorized": true
+  },
+  "campaign_claim": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+    "sha256": "50e3f3df15f905fdf1756782a302f85fa7f80a8524d84b38b5c8c609848e6b47"
+  },
+  "canonical_payload_digest": "a06e0a29e09d7d54c07f6223de5c6e22e3615835f6a22bf0f05cfca4c42d5866",
+  "complete_runtime_aggregate": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+    "sha256": "f6baccbf270c28c810e6922fe4a4161d0f632aeffc0414ce95bf97698c3e67f3"
+  },
+  "corrected_sources": {
+    "reconstructor": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_reconstruct.py",
+      "sha256": "b790a617de62dff6d535921e6e1625b313f329a05332c53b72b6c0234f73e8d8"
+    },
+    "runner": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+      "sha256": "e63a869cfdad5b171206e50c5b47cb3df6c7742d05a6d11743e451cb41e6fecd"
+    }
+  },
+  "defect": {
+    "failed_assertion": "APP-B4 output readback drifted",
+    "only_demonstrated_mismatch": "in-memory integer response seed keys versus JSON string object keys",
+    "parent_exit_code": 1,
+    "phase": "after_complete_aggregate_write"
+  },
+  "diagnostic": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "canonical_rebuilt_and_retained_analysis_bytes_identical": true,
+    "json_normalized_rebuilt_analysis_exactly_equal": true,
+    "models": 0,
+    "responses": 0,
+    "retained_arms": 75
+  },
+  "iteration_id": "P2-I2-APP-B4",
+  "original_sources": {
+    "reconstructor": {
+      "commit": "51be51fbb81eb186d64b28820149236564cd37be",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_reconstruct.py",
+      "sha256": "9c6b44a961daa922418d59a5f1060277109799349716098132a91b4c6acd397f"
+    },
+    "runner": {
+      "commit": "51be51fbb81eb186d64b28820149236564cd37be",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+      "sha256": "145a509837d73396d7c4421e65edb7a342f9feb1cb9fa9e2ada5420a699e8c53"
+    }
+  },
+  "scientific_invariance": {
+    "analysis_semantics_changed": false,
+    "campaign_rerun": false,
+    "claim_changed": false,
+    "classifier_changed": false,
+    "new_scientific_execution": false,
+    "receipts_changed": false,
+    "runtime_aggregate_changed": false
+  },
+  "status": "active_for_single_retained_reconstruction"
+}

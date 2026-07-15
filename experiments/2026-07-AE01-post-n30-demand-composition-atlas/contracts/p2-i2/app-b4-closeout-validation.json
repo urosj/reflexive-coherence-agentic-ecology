@@ -1,0 +1,843 @@
+{
+  "artifact_id": "P2-I2-APP-B4-CLOSEOUT-VALIDATION",
+  "artifact_version": "1.0",
+  "canonical_payload_digest": "d02b79b5322c2b76b449ff42a3b4a2c837553795b7c13c123dabd72d617be905",
+  "checks": {
+    "excluded_sequences_not_scientific_zero": true,
+    "fresh_process_model_arms": 75,
+    "matrix_complete": true,
+    "operation_complementarity_claimed": false,
+    "operationally_valid_arms": 75,
+    "permanent_claim_consumed_once": true,
+    "reconstruction_byte_identical": true,
+    "runtime_invocations": 1,
+    "scientific_and_infrastructure_retries": 0
+  },
+  "classification": {
+    "GEP_unique_positive_within_feasible_panel": false,
+    "claim_ceiling": "ordered quantitative-history pattern within the unchanged-baseline feasible domain",
+    "classification_digest": "b151414f53e77208369ae05623467dd2f4ab49cabfe7371c0f27a179224c4bfc",
+    "exact_total_order_effect": true,
+    "exact_total_permutation_responses_by_seed": {
+      "101": {
+        "EGP": 0.125,
+        "EPG": 0.0,
+        "GEP": 0.125,
+        "GPE": 0.0,
+        "PEG": 0.0,
+        "PGE": 0.0
+      },
+      "211": {
+        "EGP": 0.125,
+        "EPG": 0.0,
+        "GEP": 0.125,
+        "GPE": 0.0,
+        "PEG": 0.0,
+        "PGE": 0.0
+      },
+      "307": {
+        "EGP": 0.125,
+        "EPG": 0.0,
+        "GEP": 0.125,
+        "GPE": 0.0,
+        "PEG": 0.0,
+        "PGE": 0.0
+      }
+    },
+    "nonresponsive_sequences": [
+      "GGG",
+      "GGE",
+      "GEG",
+      "GEE",
+      "GPG",
+      "GPE",
+      "EGG",
+      "EGE",
+      "EPG",
+      "EPE",
+      "PGG",
+      "PGE",
+      "PEG",
+      "PEE",
+      "PPG",
+      "PPE"
+    ],
+    "operation_complementarity_claimed": false,
+    "other_response_sequences": [],
+    "per_seed": {
+      "101": {
+        "GEP_response": 0.125,
+        "GEP_unique_positive_within_feasible_panel": false,
+        "exact_total_order_effect": true,
+        "exact_total_permutation_responses": {
+          "EGP": 0.125,
+          "EPG": 0.0,
+          "GEP": 0.125,
+          "GPE": 0.0,
+          "PEG": 0.0,
+          "PGE": 0.0
+        },
+        "nonresponsive_sequences": [
+          "GGG",
+          "GGE",
+          "GEG",
+          "GEE",
+          "GPG",
+          "GPE",
+          "EGG",
+          "EGE",
+          "EPG",
+          "EPE",
+          "PGG",
+          "PGE",
+          "PEG",
+          "PEE",
+          "PPG",
+          "PPE"
+        ],
+        "other_response_sequences": [],
+        "raw_three_event_cardinality_excluded_within_feasible_domain": true,
+        "raw_three_event_cardinality_sufficient": false,
+        "reference_response": 0.0,
+        "responsive_sequences": [
+          "GGP",
+          "GEP",
+          "GPP",
+          "EGP",
+          "EPP",
+          "PGP",
+          "PEP",
+          "PPP"
+        ],
+        "within_multiset_order_effects": {
+          "EEG": {
+            "complete_permutation_group": false,
+            "order_effect": false,
+            "responses": {
+              "EGE": 0.0,
+              "GEE": 0.0
+            },
+            "sequences": [
+              "GEE",
+              "EGE"
+            ]
+          },
+          "EEP": {
+            "complete_permutation_group": false,
+            "order_effect": false,
+            "responses": {
+              "EPE": 0.0,
+              "PEE": 0.0
+            },
+            "sequences": [
+              "EPE",
+              "PEE"
+            ]
+          },
+          "EGG": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "EGG": 0.0,
+              "GEG": 0.0,
+              "GGE": 0.0
+            },
+            "sequences": [
+              "GGE",
+              "GEG",
+              "EGG"
+            ]
+          },
+          "EGP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "EGP": 0.125,
+              "EPG": 0.0,
+              "GEP": 0.125,
+              "GPE": 0.0,
+              "PEG": 0.0,
+              "PGE": 0.0
+            },
+            "sequences": [
+              "GEP",
+              "GPE",
+              "EGP",
+              "EPG",
+              "PGE",
+              "PEG"
+            ]
+          },
+          "EPP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "EPP": 0.125,
+              "PEP": 0.125,
+              "PPE": 0.0
+            },
+            "sequences": [
+              "EPP",
+              "PEP",
+              "PPE"
+            ]
+          },
+          "GGG": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "GGG": 0.0
+            },
+            "sequences": [
+              "GGG"
+            ]
+          },
+          "GGP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "GGP": 0.125,
+              "GPG": 0.0,
+              "PGG": 0.0
+            },
+            "sequences": [
+              "GGP",
+              "GPG",
+              "PGG"
+            ]
+          },
+          "GPP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "GPP": 0.125,
+              "PGP": 0.125,
+              "PPG": 0.0
+            },
+            "sequences": [
+              "GPP",
+              "PGP",
+              "PPG"
+            ]
+          },
+          "PPP": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "PPP": 0.125
+            },
+            "sequences": [
+              "PPP"
+            ]
+          }
+        }
+      },
+      "211": {
+        "GEP_response": 0.125,
+        "GEP_unique_positive_within_feasible_panel": false,
+        "exact_total_order_effect": true,
+        "exact_total_permutation_responses": {
+          "EGP": 0.125,
+          "EPG": 0.0,
+          "GEP": 0.125,
+          "GPE": 0.0,
+          "PEG": 0.0,
+          "PGE": 0.0
+        },
+        "nonresponsive_sequences": [
+          "GGG",
+          "GGE",
+          "GEG",
+          "GEE",
+          "GPG",
+          "GPE",
+          "EGG",
+          "EGE",
+          "EPG",
+          "EPE",
+          "PGG",
+          "PGE",
+          "PEG",
+          "PEE",
+          "PPG",
+          "PPE"
+        ],
+        "other_response_sequences": [],
+        "raw_three_event_cardinality_excluded_within_feasible_domain": true,
+        "raw_three_event_cardinality_sufficient": false,
+        "reference_response": 0.0,
+        "responsive_sequences": [
+          "GGP",
+          "GEP",
+          "GPP",
+          "EGP",
+          "EPP",
+          "PGP",
+          "PEP",
+          "PPP"
+        ],
+        "within_multiset_order_effects": {
+          "EEG": {
+            "complete_permutation_group": false,
+            "order_effect": false,
+            "responses": {
+              "EGE": 0.0,
+              "GEE": 0.0
+            },
+            "sequences": [
+              "GEE",
+              "EGE"
+            ]
+          },
+          "EEP": {
+            "complete_permutation_group": false,
+            "order_effect": false,
+            "responses": {
+              "EPE": 0.0,
+              "PEE": 0.0
+            },
+            "sequences": [
+              "EPE",
+              "PEE"
+            ]
+          },
+          "EGG": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "EGG": 0.0,
+              "GEG": 0.0,
+              "GGE": 0.0
+            },
+            "sequences": [
+              "GGE",
+              "GEG",
+              "EGG"
+            ]
+          },
+          "EGP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "EGP": 0.125,
+              "EPG": 0.0,
+              "GEP": 0.125,
+              "GPE": 0.0,
+              "PEG": 0.0,
+              "PGE": 0.0
+            },
+            "sequences": [
+              "GEP",
+              "GPE",
+              "EGP",
+              "EPG",
+              "PGE",
+              "PEG"
+            ]
+          },
+          "EPP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "EPP": 0.125,
+              "PEP": 0.125,
+              "PPE": 0.0
+            },
+            "sequences": [
+              "EPP",
+              "PEP",
+              "PPE"
+            ]
+          },
+          "GGG": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "GGG": 0.0
+            },
+            "sequences": [
+              "GGG"
+            ]
+          },
+          "GGP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "GGP": 0.125,
+              "GPG": 0.0,
+              "PGG": 0.0
+            },
+            "sequences": [
+              "GGP",
+              "GPG",
+              "PGG"
+            ]
+          },
+          "GPP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "GPP": 0.125,
+              "PGP": 0.125,
+              "PPG": 0.0
+            },
+            "sequences": [
+              "GPP",
+              "PGP",
+              "PPG"
+            ]
+          },
+          "PPP": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "PPP": 0.125
+            },
+            "sequences": [
+              "PPP"
+            ]
+          }
+        }
+      },
+      "307": {
+        "GEP_response": 0.125,
+        "GEP_unique_positive_within_feasible_panel": false,
+        "exact_total_order_effect": true,
+        "exact_total_permutation_responses": {
+          "EGP": 0.125,
+          "EPG": 0.0,
+          "GEP": 0.125,
+          "GPE": 0.0,
+          "PEG": 0.0,
+          "PGE": 0.0
+        },
+        "nonresponsive_sequences": [
+          "GGG",
+          "GGE",
+          "GEG",
+          "GEE",
+          "GPG",
+          "GPE",
+          "EGG",
+          "EGE",
+          "EPG",
+          "EPE",
+          "PGG",
+          "PGE",
+          "PEG",
+          "PEE",
+          "PPG",
+          "PPE"
+        ],
+        "other_response_sequences": [],
+        "raw_three_event_cardinality_excluded_within_feasible_domain": true,
+        "raw_three_event_cardinality_sufficient": false,
+        "reference_response": 0.0,
+        "responsive_sequences": [
+          "GGP",
+          "GEP",
+          "GPP",
+          "EGP",
+          "EPP",
+          "PGP",
+          "PEP",
+          "PPP"
+        ],
+        "within_multiset_order_effects": {
+          "EEG": {
+            "complete_permutation_group": false,
+            "order_effect": false,
+            "responses": {
+              "EGE": 0.0,
+              "GEE": 0.0
+            },
+            "sequences": [
+              "GEE",
+              "EGE"
+            ]
+          },
+          "EEP": {
+            "complete_permutation_group": false,
+            "order_effect": false,
+            "responses": {
+              "EPE": 0.0,
+              "PEE": 0.0
+            },
+            "sequences": [
+              "EPE",
+              "PEE"
+            ]
+          },
+          "EGG": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "EGG": 0.0,
+              "GEG": 0.0,
+              "GGE": 0.0
+            },
+            "sequences": [
+              "GGE",
+              "GEG",
+              "EGG"
+            ]
+          },
+          "EGP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "EGP": 0.125,
+              "EPG": 0.0,
+              "GEP": 0.125,
+              "GPE": 0.0,
+              "PEG": 0.0,
+              "PGE": 0.0
+            },
+            "sequences": [
+              "GEP",
+              "GPE",
+              "EGP",
+              "EPG",
+              "PGE",
+              "PEG"
+            ]
+          },
+          "EPP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "EPP": 0.125,
+              "PEP": 0.125,
+              "PPE": 0.0
+            },
+            "sequences": [
+              "EPP",
+              "PEP",
+              "PPE"
+            ]
+          },
+          "GGG": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "GGG": 0.0
+            },
+            "sequences": [
+              "GGG"
+            ]
+          },
+          "GGP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "GGP": 0.125,
+              "GPG": 0.0,
+              "PGG": 0.0
+            },
+            "sequences": [
+              "GGP",
+              "GPG",
+              "PGG"
+            ]
+          },
+          "GPP": {
+            "complete_permutation_group": true,
+            "order_effect": true,
+            "responses": {
+              "GPP": 0.125,
+              "PGP": 0.125,
+              "PPG": 0.0
+            },
+            "sequences": [
+              "GPP",
+              "PGP",
+              "PPG"
+            ]
+          },
+          "PPP": {
+            "complete_permutation_group": true,
+            "order_effect": false,
+            "responses": {
+              "PPP": 0.125
+            },
+            "sequences": [
+              "PPP"
+            ]
+          }
+        }
+      }
+    },
+    "raw_three_event_cardinality_excluded_within_feasible_domain": true,
+    "raw_three_event_cardinality_sufficient": false,
+    "responsive_sequences": [
+      "GGP",
+      "GEP",
+      "GPP",
+      "EGP",
+      "EPP",
+      "PGP",
+      "PEP",
+      "PPP"
+    ],
+    "seed_invariant": true,
+    "seed_pattern_invariant": true,
+    "within_multiset_order_effects": {
+      "EEG": {
+        "complete_permutation_group": false,
+        "order_effect_all_seeds": false,
+        "responses_by_seed": {
+          "101": {
+            "EGE": 0.0,
+            "GEE": 0.0
+          },
+          "211": {
+            "EGE": 0.0,
+            "GEE": 0.0
+          },
+          "307": {
+            "EGE": 0.0,
+            "GEE": 0.0
+          }
+        },
+        "sequences": [
+          "GEE",
+          "EGE"
+        ]
+      },
+      "EEP": {
+        "complete_permutation_group": false,
+        "order_effect_all_seeds": false,
+        "responses_by_seed": {
+          "101": {
+            "EPE": 0.0,
+            "PEE": 0.0
+          },
+          "211": {
+            "EPE": 0.0,
+            "PEE": 0.0
+          },
+          "307": {
+            "EPE": 0.0,
+            "PEE": 0.0
+          }
+        },
+        "sequences": [
+          "EPE",
+          "PEE"
+        ]
+      },
+      "EGG": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": false,
+        "responses_by_seed": {
+          "101": {
+            "EGG": 0.0,
+            "GEG": 0.0,
+            "GGE": 0.0
+          },
+          "211": {
+            "EGG": 0.0,
+            "GEG": 0.0,
+            "GGE": 0.0
+          },
+          "307": {
+            "EGG": 0.0,
+            "GEG": 0.0,
+            "GGE": 0.0
+          }
+        },
+        "sequences": [
+          "GGE",
+          "GEG",
+          "EGG"
+        ]
+      },
+      "EGP": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": true,
+        "responses_by_seed": {
+          "101": {
+            "EGP": 0.125,
+            "EPG": 0.0,
+            "GEP": 0.125,
+            "GPE": 0.0,
+            "PEG": 0.0,
+            "PGE": 0.0
+          },
+          "211": {
+            "EGP": 0.125,
+            "EPG": 0.0,
+            "GEP": 0.125,
+            "GPE": 0.0,
+            "PEG": 0.0,
+            "PGE": 0.0
+          },
+          "307": {
+            "EGP": 0.125,
+            "EPG": 0.0,
+            "GEP": 0.125,
+            "GPE": 0.0,
+            "PEG": 0.0,
+            "PGE": 0.0
+          }
+        },
+        "sequences": [
+          "GEP",
+          "GPE",
+          "EGP",
+          "EPG",
+          "PGE",
+          "PEG"
+        ]
+      },
+      "EPP": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": true,
+        "responses_by_seed": {
+          "101": {
+            "EPP": 0.125,
+            "PEP": 0.125,
+            "PPE": 0.0
+          },
+          "211": {
+            "EPP": 0.125,
+            "PEP": 0.125,
+            "PPE": 0.0
+          },
+          "307": {
+            "EPP": 0.125,
+            "PEP": 0.125,
+            "PPE": 0.0
+          }
+        },
+        "sequences": [
+          "EPP",
+          "PEP",
+          "PPE"
+        ]
+      },
+      "GGG": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": false,
+        "responses_by_seed": {
+          "101": {
+            "GGG": 0.0
+          },
+          "211": {
+            "GGG": 0.0
+          },
+          "307": {
+            "GGG": 0.0
+          }
+        },
+        "sequences": [
+          "GGG"
+        ]
+      },
+      "GGP": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": true,
+        "responses_by_seed": {
+          "101": {
+            "GGP": 0.125,
+            "GPG": 0.0,
+            "PGG": 0.0
+          },
+          "211": {
+            "GGP": 0.125,
+            "GPG": 0.0,
+            "PGG": 0.0
+          },
+          "307": {
+            "GGP": 0.125,
+            "GPG": 0.0,
+            "PGG": 0.0
+          }
+        },
+        "sequences": [
+          "GGP",
+          "GPG",
+          "PGG"
+        ]
+      },
+      "GPP": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": true,
+        "responses_by_seed": {
+          "101": {
+            "GPP": 0.125,
+            "PGP": 0.125,
+            "PPG": 0.0
+          },
+          "211": {
+            "GPP": 0.125,
+            "PGP": 0.125,
+            "PPG": 0.0
+          },
+          "307": {
+            "GPP": 0.125,
+            "PGP": 0.125,
+            "PPG": 0.0
+          }
+        },
+        "sequences": [
+          "GPP",
+          "PGP",
+          "PPG"
+        ]
+      },
+      "PPP": {
+        "complete_permutation_group": true,
+        "order_effect_all_seeds": false,
+        "responses_by_seed": {
+          "101": {
+            "PPP": 0.125
+          },
+          "211": {
+            "PPP": 0.125
+          },
+          "307": {
+            "PPP": 0.125
+          }
+        },
+        "sequences": [
+          "PPP"
+        ]
+      }
+    }
+  },
+  "iteration_id": "P2-I2-APP-B4",
+  "owner_result_acceptance_required": true,
+  "process_counts": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "models": 0,
+    "producers": 0,
+    "responses": 0,
+    "validator_processes_this_start": 1
+  },
+  "result_commit_authorized": false,
+  "retained": {
+    "activation": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-live-activation.json",
+      "sha256": "65687828d4ea1e4e019b75335c04d8adbef7470054ef6803f9d24f8e1a008729"
+    },
+    "claim": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+      "sha256": "50e3f3df15f905fdf1756782a302f85fa7f80a8524d84b38b5c8c609848e6b47"
+    },
+    "freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+      "sha256": "77025e8b2eabc63298485746790ab0dc78e67cf507856357c2d575d7595214f8"
+    },
+    "reconstruction": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-reconstruction-and-closeout.json",
+      "sha256": "be50f3469f526b44299323e83bf19b32981f57859f801076f0091ec845e6ab9c"
+    },
+    "runtime": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+      "sha256": "f6baccbf270c28c810e6922fe4a4161d0f632aeffc0414ce95bf97698c3e67f3"
+    }
+  },
+  "status": "passed_runtime_complete_owner_result_review_pending"
+}

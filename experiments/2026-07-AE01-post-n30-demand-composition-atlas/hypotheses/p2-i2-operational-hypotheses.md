@@ -3176,7 +3176,12 @@ scientific completion under DEC-089/CHG-094; bounded activation-binding
 correction and candidate-free readiness validation technically complete under
 DEC-090/CHG-095; owner accepts the exact activation package under
 DEC-091/CHG-096 and authorizes its containing commit plus one campaign; runtime
-has not yet begun
+completes 75/75 fresh-process arms with zero child failure/retry, but parent
+exits after writing the complete aggregate at a JSON integer-key readback
+assertion; retained-only correction, reconstruction, and closeout complete
+without rerun under DEC-092–093/CHG-097–098; technical terminal-P result is
+owner-accepted and APP-B4 closed under DEC-094/CHG-099; one containing result
+commit authorized
 
 APP-B4 asks whether the supported history-carried response is explained by
 three admitted events alone or depends on their native dose composition and
@@ -3268,8 +3273,9 @@ ceilings, and scientific claim boundary remain immutable.
 
 ### 18.11 `P2-I2-INT-H01` — Retained-evidence interpretative sufficiency
 
-**Status:** technically complete under DEC-088/CHG-093; owner review and
-containing commit pending; no new scientific execution or claim authority
+**Status:** original synthesis retained under DEC-088/CHG-093; updated through
+owner-accepted APP-B4 under DEC-093–094/CHG-098–099; containing result commit
+authorized
 
 The retained P2-I2 evidence stack should be sufficient to explain, in one
 coherent account, what geometry was constructed, which causal mechanism each
@@ -3283,14 +3289,15 @@ work could legitimately build on it. The synthesis must cover:
   quantity-matched scope results;
 - Appendix A's distinct live four-axis carrier and accepted 19-arm result;
 - Appendix B's P2-I2-grounded G/E/P geometry, technically complete APP-B2/B3
-  result boundary, and inactive unrun APP-B4 discriminator; and
+  result boundary, and complete APP-B4 terminal-P discriminator; and
 - the exact difference between observed evidence, mechanism interpretation,
   unlocked bounded function, and prospective foundation.
 
 The synthesis fails its purpose if it collapses the three modes, treats an
 output-equivalent bypass as causal evidence, converts repeated-source
 equivalence into cooperation, imports Appendix A outcomes into Appendix B,
-reports APP-B4 as executed, or promotes a possible future application into a
-P2-I2 result. It may reorganize retained evidence for understanding but may
+promotes APP-B4 to operation complementarity, or converts a possible future
+application into a P2-I2 result. It may reorganize retained evidence for
+understanding but may
 not assign a new rung, support class, recurrence, native implementation
 priority, semantic relabel, or scientific conclusion.

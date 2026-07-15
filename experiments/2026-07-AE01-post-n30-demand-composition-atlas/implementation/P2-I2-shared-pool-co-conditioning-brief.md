@@ -6,9 +6,9 @@ correction accepted by the project owner on 2026-07-14; Appendix A accepted
 and closed under DEC-074/CHG-079 on 2026-07-15 after one complete APP-A2
 runtime/reconstruction cycle; prospective Appendix B compact-cycle authority
 accepted under DEC-075/CHG-080 on 2026-07-15; APP-B2/B3 technically complete
-with owner result acceptance pending; APP-B4 inactive 75-arm freeze retained
-at `863d73c`, activation readiness technically validated under DEC-090/CHG-095,
-and zero APP-B4 runtime so far
+with owner result acceptance pending; APP-B4 completes its 75-arm runtime,
+retained-only reconstruction, and closeout under DEC-092–093/CHG-097–098 and
+is owner-accepted/closed under DEC-094/CHG-099
 
 **Lane:** `AE01-L02`
 
@@ -1175,7 +1175,8 @@ opening any blocked claim or subsequent work.
 
 **Status:** semantic and process authority owner-accepted under
 DEC-075/CHG-080; APP-B1 complete; APP-B2/B3 technically complete with owner
-result acceptance pending; APP-B4 inactive and unrun
+result acceptance pending; APP-B4 technically complete with owner result
+accepted and closed under DEC-094/CHG-099
 
 ### B.1 Exact question
 
