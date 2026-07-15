@@ -2,7 +2,8 @@
 
 **Status:** accepted P2-I2 theory, geometry, ecology, and observation directive;
 accepted by the project owner on 2026-07-14; three-mode retention scope
-correction accepted by the project owner on 2026-07-14
+correction accepted by the project owner on 2026-07-14; prospective Appendix A
+semantic extension owner-accepted under DEC-063/CHG-068 on 2026-07-15
 
 **Lane:** `AE01-L02`
 
@@ -900,3 +901,252 @@ native pool primitive, ecology motif, ecology regime, life, cross-lane
 recurrence, or N31+ selection. A precise missing or unsuitable LGRC surface is
 an admissible and useful result, but it remains ecology-side demand until a
 later graph experiment tests it under graph-side authority.
+
+## Appendix A — Grounded three-operation shared-carrier composition extension
+
+**Status:** prospective and owner-accepted at APP-A0 under DEC-063/CHG-068;
+containing commit authorized; unexecuted. This appendix does not reopen,
+revise, or strengthen the accepted I11 result or any passed main P2-I2 gate.
+
+### A.1 Exact question and evidence boundary
+
+Appendix A asks one narrower extension question:
+
+> Can physically distinct generative enrichment (`G`), leakage-gated
+> extraction (`E`), and processor redistribution/buffering (`P`) operations
+> compose with subset-bounded irreducibility through one non-private live
+> carrier, relative to one frozen gate signature, so that a later response
+> (`R`) depends on the complete operation composition rather than on any valid
+> proper subset?
+
+This question is grounded in retained source relations; it is not already
+answered by them:
+
+| Appendix role | Portable source | Bound meaning | Unresolved here |
+| --- | --- | --- | --- |
+| `G` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_generative_enrichment_runtime_i141.json` | generative enrichment changes the phase-aligned medium | contribution inside one three-operation live carrier |
+| `E` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_extractive_clean_constructed_runtime_i1423.json` | leakage-gated extraction depletes the generator-changed medium | contribution inside the complete composition |
+| `P` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_processor_redistribution_runtime_i143.json` | processor redistribution buffers the extractor-changed medium | irreducible contribution rather than generic stabilization |
+| `R` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_buffered_generator_extractor_feedback_i1452_artifact.json` | later generator consumes the buffered changed medium | later response from a live three-operation carrier |
+
+N29 I14.5-2 is producer-mediated bridge evidence with replay and stress
+support. It is not native composition or three-participant evidence. N30
+grounds only the bounded changed-medium to later-eligibility relation. The
+accepted main P2-I2 campaign grounds shared-carrier factorization,
+attribution, intervention, restoration, fresh-entry isolation, reconstruction,
+and bounded claim discipline. Appendix A adds the complete live composition
+test rather than inferring it from those artifacts.
+
+The primary source-backed realization is hybrid: both the changed carrier and
+the ordered operation handoff are load-bearing. The accepted P2-I2 state-only
+and history-only interventions are reused as decomposition controls, not
+rerun as three full candidate campaigns. This does not rank or reclassify the
+three main P2-I2 modes.
+
+### A.2 Fresh-runtime requirement
+
+Artifact manipulation is not Appendix A evidence. Each scientific arm must:
+
+- start in a fresh process from one exact registered model and baseline;
+- construct or restore one live non-private carrier through source-current
+  PyGRC;
+- execute the arm's selected `G`, `E`, and `P` operations against that live
+  carrier in the frozen order;
+- retain operation-level receipts showing that each selected operation was
+  invoked through the registered live-carrier path rather than against a
+  detached analysis object, while recording a positive, negative, or exactly
+  zero carrier delta;
+- prove one unbroken carrier lineage: each operation receives the exact carrier
+  identity emitted by its predecessor, and `R` receives the exact final
+  identity, with no copied, substituted, or controller-computed carrier;
+- execute the later `R` response from the resulting live carrier state and
+  history;
+- retain raw before/after carrier identities, event/packet traces, response
+  records, intervention receipts, and post-run restoration identities; and
+- reconstruct the evidence and conclusion deterministically from the retained
+  runtime records.
+
+Replay-only evidence, arithmetic over N29 or P2-I2 outputs, synthetic assembly
+of expected envelopes, and report generation cannot satisfy the hypothesis.
+They may validate provenance or reconstruction only.
+
+Native PyGRC is preferred for every load-bearing transition. If native
+machinery is absent or inadequate, APP-A1 may freeze the smallest explicit
+producer that drives the missing live transition. Its state, call path,
+withdrawal, restoration, and necessity must remain observable. A producer
+that merely calculates an expected value or assembles the final response is
+not an admissible realization.
+
+### A.3 Complete-subset test and causal controls
+
+The primary fresh-runtime matrix is fixed as:
+
+```text
+reference
+G
+E
+P
+G+E
+G+P
+E+P
+G+E+P
+```
+
+The primary contributors are physically distinct `S_G`, `S_E`, and `S_P`;
+`R` is a later noncontributor with carrier-scoped access. Each missing-
+operation participant remains active and pays the registered cost while its
+operation is diverted from the carrier through a verified no-influence path.
+Timing, opportunity, and operation slots remain matched. Every single and pair
+arm must be operationally valid; an incomplete proper-subset arm makes the
+full tuple nonevaluable. Operational validity requires the registered live-
+carrier call, matched opportunity/cost/timing/path, and complete receipts. It
+does not require a nonzero effect. For example, valid `E`-only extraction or
+`P`-only redistribution may produce exactly zero because the prerequisite
+carrier condition is absent; that zero is a scientific result, not an invalid
+arm. The reference arm is valid only when the exact baseline is restored, all
+operation routes are verifiably diverted, and matched participant activity
+and receipts remain present.
+
+There is no scalar maximum across heterogeneous gates and no outcome-selected
+strongest pair. `GE`, `GP`, and `EP` are the nearest comparison family and are
+considered jointly. APP-A1 must freeze this signature for every arm:
+
+```text
+GateSignature(X) = {
+  environment_feedback_gate,
+  support_feedback_gate,
+  phase_residual_gate,
+  merge_leakage_gate,
+  retention_configuration_condition
+}
+```
+
+The first four members are measured functional gates. The retention condition
+is the fixed fixture identity `buffered_feedback_retention_factor = 0.82`; it
+is not an independent measured success observation. Every arm must satisfy
+that same condition; a mismatch makes the arm nonevaluable and cannot count as
+proper-subset failure.
+
+The exact composition relation requires:
+
+```text
+GEP satisfies the fixed retention condition and passes all four measured gates
+and
+every valid proper subset in {reference, G, E, P, GE, GP, EP}
+satisfies the same retention condition but fails at least one of the same four
+measured gates
+and
+for each X in {G, E, P}, withdrawing X either changes R directly
+or changes a registered mediator whose independent intervention changes R
+and
+freezing or clamping the common carrier removes or changes R
+```
+
+Direct and mediated paths must be derived from runtime receipts, not authored
+causal booleans. The resulting property is named only **subset-bounded
+irreducibility relative to the frozen gate signature**. It does not imply
+general or out-of-fixture irreducibility.
+
+The candidate N29 I14.5-2 measured gates are:
+
+```text
+later environment feedback delta >= 0.04
+later support feedback delta >= 0.02
+maximum phase residual <= 0.015
+merge leakage <= 0.025
+```
+
+APP-A1 may reuse those values as pass/fail authority only after comparing the
+raw metric definitions, units/orientation, reference and candidate meanings,
+temporal windows, normalization and denominator rules, topology/scaling,
+leakage accounting, phase-residual construction, response target, and runtime
+numeric domain. Reuse requires:
+
+```text
+metric_semantics_equivalent = true
+AND
+measurement_domain_equivalent = true
+```
+
+If either is false, the N29 numbers remain context or diagnostics only and
+APP-A1 fails its execution-freeze boundary closed until separately reviewed
+Appendix A gate authority exists. If both are true, APP-A1 binds the exact
+machine projection and runtime tolerance once without search. Appendix A
+performs no matched-null or threshold-search campaign.
+
+One capacity-relaxed source must also perform the same `G -> E -> P`
+operations. If it reproduces the complete relation, operation composition may
+remain supported while physical participant plurality is classified as non-
+load-bearing. If it does not reproduce the relation, participant plurality
+remains unresolved unless APP-A1 proves matched capacity, access, operation
+authority, timing, initialization, and cost and freezes at least one complete-
+`GEP` contributor-to-operation role rotation. Any resulting plurality
+classification also requires that APP-A2 execute that rotation and reproduce
+the complete relation and operation-to-`R` paths; it remains bounded to that
+fixture. Source-label permutation guards against label causation; the role
+rotation guards against fixed participant identity. Full six-way rotation is
+unnecessary.
+
+The order diagnostics are the two adjacent inversions:
+
+```text
+E -> G -> P
+G -> P -> E
+```
+
+Only if both valid inversions lose the complete relation may the bounded full
+`G -> E -> P` sequence be called load-bearing. If only one does, the result is
+limited to at least one source-grounded handoff being order-sensitive.
+Private partitions, direct contributor-addressed reads, controller-computed
+aggregates, repeated same-operation quantity, carrier freeze/clamp, and the
+two adjacent inversions remain bounded controls or scope diagnostics.
+
+### A.4 Compact evidence cycle
+
+Appendix A builds on accepted P2-I2 machinery and therefore uses only:
+
+```text
+APP-A0 = source/semantic/hypothesis binding and owner review
+APP-A1 = source/delta audit
+         -> native/producer realization selection
+         -> metric-semantic and measurement-domain equivalence decision
+         -> exact fixture, gate signature, and controls
+         -> candidate-free conformance if new machinery is introduced
+         -> execution freeze
+         -> owner review
+APP-A2 = one bounded fresh-runtime matrix + deterministic reconstruction/
+         control resolution + one closeout conclusion
+```
+
+This removes repeated ceremony, not runtime evidence. There is no new I04
+arithmetic-null campaign, no separate calibration search, and no split I09,
+I10, or I11 closeout sequence. Interfaces reused without changed scientific
+meaning remain bound to accepted P2-I2 machinery; all Appendix A deltas are
+made explicit once in APP-A1. APP-A2 produces one cumulative runtime evidence
+and closeout package and then stops for owner review. APP-A1's internal order
+is hard even though it is one named stage: implementation observations cannot
+retrospectively select designs, values, thresholds, or controls.
+
+### A.5 Interpretation ceiling
+
+The strongest admissible positive statement is:
+
+```text
+bounded generator-extractor-redistributor shared-carrier
+composition candidate
+```
+
+The capacity-relaxed one-source arm has asymmetric force: reproduction makes
+participant plurality non-load-bearing, while non-reproduction alone leaves
+plurality unresolved. It cannot convert operation composition into a coalition
+claim. A positive primary result supports bounded functional complementarity
+of operations through the common carrier only because no registered valid
+proper subset reproduces the gate signature and every operation has a retained
+causal path to `R`. Coalition, functional cooperation, coordination, resource
+economy, agency, collective identity, native composition while any load-
+bearing producer remains, ecology motif/regime, cross-lane recurrence, and
+N31+ selection remain blocked.
+
+APP-A0 semantic review grants no APP-A1 capability audit or APP-A2 runtime
+authority. Each later stage opens only after the preceding exact package is
+reviewed and retained. Until then, Appendix A has no result.

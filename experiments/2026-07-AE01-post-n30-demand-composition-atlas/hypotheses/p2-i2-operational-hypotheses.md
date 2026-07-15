@@ -1,25 +1,19 @@
 # P2-I2 Operational Hypothesis Projections
 
-**Status:** evidence-bearing through owner-accepted and retained I09A/I10.
-I09A corrects the I10-found estimator bypass at 24/24 with no raw-evidence or
-control-disposition change; I10 independently reconstructs the retained bundle
-at 24/24. CONTROL-GATE and RECON-GATE are passed. I11 retained-evidence
-interpretation construction is open under DEC-060/CHG-064; no conclusion is
-assigned by this declaration.
-The accepted C02 manifest retains 234/234 evaluable mode-indexed terminals.
-I09 resolves only the already-frozen common and L02 control relations from
-those retained receipts. The three modes remain separate and unranked;
-`R01`–`R05`, the lane support status, and terminal interpretation remain
-unassigned until their later declared stages.
+**Status:** the main P2-I2 hypothesis family is resolved through owner-accepted
+I11 under DEC-061/CHG-065. Appendix A now adds one prospective subordinate
+three-operation composition projection under DEC-062/CHG-066, corrected by
+CHG-067 and owner-accepted as APP-A0 under DEC-063/CHG-068. It has no runtime
+evidence or result and does not reopen or reinterpret the accepted main-lane
+terminal. APP-A1 is ready only after retention and remains unstarted.
 
 **Lane:** `AE01-L02`
 
 **Frozen hypothesis authority:** `AE01-H-L02`
 
-**Evidence effect:** subordinate projection plus retained realization
-conformance, candidate-blind arithmetic resolution, registered I08 raw
-evidence, and I09 control resolution; no L02 support/falsification, mode
-ranking, terminal interpretation, or lane scientific result
+**Evidence effect:** retains the owner-accepted main P2-I2 evidence and
+terminal without reinterpretation; the prospective Appendix A projection adds
+no runtime evidence, support/falsification disposition, or result
 
 **Semantic authority:**
 [accepted P2-I2 brief](../implementation/P2-I2-shared-pool-co-conditioning-brief.md)
@@ -2394,3 +2388,273 @@ fails closeout closed rather than being interpreted as a scientific null.
 The resulting package must be returned uncommitted for owner review. Neither
 technical construction nor validation passes `P2-I2-CLOSE-GATE`, accepts a
 terminal result, authorizes a commit, or starts the declared next move.
+
+## 17. `P2-I2-APP-A-H01` — Three-operation shared-carrier composition
+
+This is a prospective local projection under the existing `AE01-H-L02`
+authority, not a new stable Phase 1 hypothesis and not a revision of the
+accepted I11 result.
+
+The exact question is:
+
+> Can physically distinct generative enrichment (`G`), leakage-gated
+> extraction (`E`), and processor redistribution/buffering (`P`) operations
+> compose with subset-bounded irreducibility through one non-private live
+> carrier, relative to one frozen gate signature, so that a later generator
+> response (`R`) depends on the complete `G -> E -> P` composition rather than
+> on any complete valid proper operation subset?
+
+### 17.1 Source-grounded operation semantics
+
+Appendix A binds, without semantic relabeling or parameter search:
+
+| Appendix role | Retained source | Inherited meaning |
+| --- | --- | --- |
+| `G` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_generative_enrichment_runtime_i141.json` | generative enrichment changes the phase-aligned medium |
+| `E` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_extractive_clean_constructed_runtime_i1423.json` | leakage-gated extraction depletes the generator-changed medium |
+| `P` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_processor_redistribution_runtime_i143.json` | processor redistribution buffers the extractor-changed medium |
+| `R` | `grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_buffered_generator_extractor_feedback_i1452_artifact.json` | a later generator consumes the buffered changed medium |
+
+N29 I14.5-2 is producer-mediated bridge evidence, not native composition or
+three-participant evidence. N30 supplies only the bounded changed-medium to
+later-eligibility relation. Accepted P2-I2 supplies the shared-carrier,
+attribution, intervention, restoration, isolation, and claim-control pattern.
+
+The Appendix A primary source-backed dependence is hybrid: a live changed
+carrier and its ordered operation handoff are both load-bearing. Accepted
+P2-I2 state-only and history-only interventions are reused as decomposition
+controls rather than repeated as three complete candidate campaigns. No mode
+is retroactively ranked or reclassified.
+
+### 17.2 Complete-subset relation and operational validity
+
+The primary matrix is fixed as:
+
+```text
+reference
+G
+E
+P
+G+E
+G+P
+E+P
+G+E+P
+```
+
+Every operation retains its physical time slot. In a missing-operation arm,
+the corresponding participant remains active and pays the registered cost,
+while the operation is diverted from the common carrier through a verified
+no-influence path.
+
+Operational validity is separate from scientific effect:
+
+```text
+operationally_valid(operation, arm) =
+  registered live-carrier path invoked
+  AND opportunity/cost/timing/path matched
+  AND complete before/after and call receipts retained
+
+operationally_valid(reference, arm) =
+  registered baseline restored
+  AND all operation routes verifiably diverted
+  AND matched participant activity and receipts retained
+
+scientific_effect(operation, arm) =
+  recorded carrier delta, which may be positive, negative, or exactly zero
+```
+
+An `E`-only arm may validly extract zero because no prior enrichment exists;
+a `P`-only arm may validly redistribute zero because no relevant input exists.
+Neither arm is nonevaluable for that reason. A proper-subset arm is
+nonevaluable only if its invocation or audit trail is invalid or incomplete.
+Every proper subset must be operationally valid before the full tuple can be
+evaluated.
+
+There is no heterogeneous-gate scalarization or outcome-selected strongest
+pair. The pair arms remain the nearest comparison family, considered jointly.
+For every arm `X`, APP-A1 must freeze:
+
+```text
+GateSignature(X) = {
+  environment_feedback_gate,
+  support_feedback_gate,
+  phase_residual_gate,
+  merge_leakage_gate,
+  retention_configuration_condition
+}
+```
+
+The first four members are measured functional gates. The retention member is
+the fixed mechanism/configuration identity `buffered_feedback_retention_factor
+= 0.82`; it is required for fixture identity but is not counted as independent
+measured evidence. Every arm must satisfy that same configuration condition;
+a mismatch makes the arm nonevaluable and cannot count as proper-subset
+failure.
+
+The complete composition relation is supported only if:
+
+```text
+GEP satisfies the fixed retention condition and passes all four measured gates
+and
+every valid proper subset in {reference, G, E, P, GE, GP, EP}
+satisfies the same retention condition but fails at least one of the same four
+measured gates
+and
+for each operation X in {G, E, P}, withdrawing X either changes R directly
+or changes a registered mediator whose independent intervention changes R
+and
+freezing/clamping the common carrier removes or changes R
+```
+
+Every direct or mediated path must be established by retained runtime receipts,
+not an authored causal boolean. This property is named only:
+
+> subset-bounded irreducibility relative to the frozen gate signature
+
+It does not imply general, metaphysical, or out-of-fixture irreducibility.
+
+### 17.3 N29 gate transportability
+
+The candidate N29 I14.5-2 measured gates are:
+
+```text
+later environment feedback delta >= 0.04
+later support feedback delta >= 0.02
+maximum phase residual <= 0.015
+merge leakage <= 0.025
+```
+
+Their reuse as Appendix A pass/fail authority is conditional rather than
+presumed. APP-A1 must compare, from retained source bytes:
+
+- raw metric definitions;
+- units and orientation;
+- reference and candidate meanings;
+- temporal windows;
+- normalization and denominator rules;
+- topology and scaling assumptions;
+- leakage accounting;
+- phase-residual construction;
+- response target; and
+- runtime numeric domain.
+
+Threshold reuse is allowed only when:
+
+```text
+metric_semantics_equivalent = true
+AND
+measurement_domain_equivalent = true
+```
+
+The exact machine projection and numeric tolerance must then be bound once in
+APP-A1 without search. If either equivalence is false, the N29 values remain
+source context or diagnostics only; APP-A1 fails the execution-freeze boundary
+closed until separately reviewed Appendix A gate authority exists. The fixed
+retention factor `0.82` remains a configuration parameter, not a fifth
+measured success observation. Appendix A performs no matched-null or threshold
+search.
+
+### 17.4 Participant, identity, order, and alternative explanations
+
+The primary attribution is:
+
+```text
+S_G performs G
+S_E performs E
+S_P performs P
+R is a later noncontributor with carrier-scoped access
+```
+
+One capacity-relaxed source must also perform the same `G -> E -> P`
+operations. If that arm reproduces the complete relation, operation
+composition may still be supported while participant plurality is explicitly
+non-load-bearing. If that arm does not reproduce the relation, participant
+plurality remains unresolved unless APP-A1 also proves matched capacity,
+carrier access, operation authority, timing, initialization, and cost and
+freezes at least one complete-`GEP` contributor-to-operation role rotation.
+APP-A2 must then execute that rotation and reproduce the complete relation and
+operation-to-`R` paths before any bounded plurality-load-bearing
+classification. Even then, the statement remains bounded to the registered
+fixture.
+
+A source-label permutation remains a guard against label causation. The role
+rotation guards against fixed participant identity: its exact cyclic
+assignment is frozen in APP-A1, and full six-way rotation is not required.
+Appendix A does not claim coalition, cooperation, or coordination.
+
+Two adjacent inversions are required:
+
+```text
+E -> G -> P
+G -> P -> E
+```
+
+If both valid inversions lose the complete relation, the bounded ordered
+`G -> E -> P` sequence may be classified as load-bearing. If only one does,
+the conclusion is limited to at least one source-grounded handoff being
+order-sensitive. No claim about all six permutations is allowed.
+
+Private partitions, direct contributor-addressed reads, controller-computed
+aggregates, repeated same-operation quantity, carrier freeze/clamp, and the
+two adjacent inversions remain bounded controls or scope diagnostics. They
+reuse accepted P2-I2 machinery wherever the causal interface is unchanged.
+
+### 17.5 Fresh-runtime evidence requirement
+
+Appendix A cannot be supported by artifact arithmetic, replay-only evidence,
+or report assembly. APP-A2 must, for every scientific arm:
+
+- start a fresh process from one exact registered baseline;
+- construct or restore one live carrier through source-current PyGRC;
+- execute live `G`, `E`, and `P` operations in the arm's frozen sequence;
+- retain operation-level receipts proving that each selected operation was
+  invoked through its registered live-carrier path rather than against a
+  detached analysis object, while recording positive, negative, or zero delta;
+- prove one unbroken carrier lineage: each operation receives the exact carrier
+  identity emitted by its predecessor, and `R` receives the exact final
+  identity, with no copied, substituted, or controller-computed carrier;
+- execute the later `R` response from the live carrier state/history;
+- retain raw before/after carrier identities, event/packet traces, response
+  records, intervention receipts, and post-run restoration identities; and
+- reconstruct the resulting evidence and conclusion deterministically from
+  the retained runtime records.
+
+If native PyGRC is inadequate, the smallest explicit producer may drive the
+missing live transition, but its state, call path, withdrawal, restoration,
+and necessity must remain visible. A producer that merely calculates the
+expected result or assembles the final response cannot support the hypothesis.
+
+### 17.6 Compact evidence cycle and claim ceiling
+
+The appendix uses only:
+
+```text
+APP-A0 source/semantic/hypothesis binding
+APP-A1 source/delta audit
+       -> native/producer realization selection
+       -> metric-semantic and measurement-domain equivalence decision
+       -> exact fixture, gate signature, and controls
+       -> candidate-free conformance if new machinery is introduced
+       -> execution freeze
+       -> owner review
+APP-A2 bounded fresh-runtime matrix + reconstruction + one closeout
+```
+
+APP-A1 remains one named stage, but its order is hard: no implementation
+observation may retrospectively select a design, value, threshold, or control.
+
+The strongest admissible positive statement is:
+
+```text
+bounded generator-extractor-redistributor shared-carrier
+composition candidate
+```
+
+A positive result supports bounded functional complementarity of operations
+through the common carrier only in the sense that no registered valid proper
+subset reproduces the complete gate signature and every operation has a
+retained causal path to `R`.
+
+Blocked relabels remain: coalition, functional cooperation, coordination,
+resource economy, native composition unless every load-bearing transition is
+native, ecology motif/regime, cross-lane recurrence, and N31+ selection.

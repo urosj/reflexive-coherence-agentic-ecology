@@ -24,14 +24,22 @@ zero blockers or scientific/runtime operations. Under DEC-061/CHG-065 the
 owner accepts the exact reviewed package, passes CLOSE-GATE, and authorizes one
 containing commit without opening cross-lane synthesis or the next move.
 
+Post-closeout `P2-I2-APP-A` is now accepted under DEC-063/CHG-068 as an
+additive, source-grounded three-operation shared-carrier composition appendix.
+Its semantic and hypothesis scaffold is complete; APP-A1 becomes ready only
+after retention and remains unstarted. The accepted I11 result and every
+passed main P2-I2 gate remain unchanged; Appendix A execution is not
+authorized.
+
 Historical I00–I07 gate and iteration detail remains retained below.
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I11` is complete and owner-accepted
-under DEC-061/CHG-065; the containing commit is authorized.
+**Current activity iteration:** `P2-I2-APP-A0` semantic construction is
+owner-accepted under DEC-063/CHG-068; its containing commit is authorized.
+APP-A1 remains unstarted and APP-A2 remains unauthorized.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -234,6 +242,7 @@ Rules:
 | `P2-I2-I09A` | Additive normalized-estimator control-projection correction | DEC-056 finding plus explicit owner `+1` under DEC-057 | Owner-accepted: 24/24, zero blockers, exact reconstruction, no downstream disposition change | DEC-059 passes CONTROL-GATE and authorizes containing commit |
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
+| `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 semantic brief/checklist/hypothesis/decision scaffold owner-accepted; zero runtime | Main P2-I2 result remains closed; containing commit authorized; APP-A1 ready after retention but unstarted; APP-A2 and evidence unauthorized |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3785,6 +3794,7 @@ valid terminal classification + reconstructed evidence
 | `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | Owner-accepted exact registration | I06 registers reserves, accumulation/mixing/depletion, no-window leakage/maintenance/saturation dispositions, token/event/queue bounds, finite coherence intervals, and fail-closed overflow semantics |
 | `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact; I11 interpretation | Accepted retained-evidence disposition | DEC-042 registers the `A_ALTERNATE` access-scope contrast; accepted I11 finds the mode-specific relation retained in all three modes and reaches R05 without inferring broader transfer |
 | `L02-Q13` | What is the lane terminal class, support boundary, and next move? | I11 | Decided and owner-accepted | DEC-061 accepts `supported_bounded_candidate` through R05, lane-wide `scaffold_dependent`, `T3_operational_class`; state is native-expression candidate, history/hybrid share active-history naturalization debt; one future native substitution probe is named but not started |
+| `L02-Q14` | Can the N29 generator/extractor/processor operations compose with subset-bounded irreducibility through one P2-I2 shared carrier? | APP-A0–APP-A2 | APP-A0 owner-accepted; no evidence | DEC-063 accepts the corrected gate-signature, operational-validity, causal-path, transportability, plurality, order, and compact-cycle boundaries; APP-A1 is ready after retention but unstarted; APP-A2 remains unauthorized |
 
 Questions may move only through cumulative decisions. A later answer must not
 rewrite an earlier retained decision without its reopening condition.
@@ -3892,6 +3902,9 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-063` | Owner states `commit all` after the complete combined I09A/I10 handoff | `I09A_I10_owner_acceptance_CONTROL_RECON_gate_passage_and_retention_commit` | Bind all fifteen reviewed technical artifacts byte-exactly; accept I09A and I10; pass CONTROL-GATE and RECON-GATE; authorize one containing commit | Explicit owner acceptance; I09A and I10 each pass 24/24 twice with zero blockers; no technical byte changes after review | DEC-059, exact acceptance-record hashes, unassigned R01–R05/support/ranking/terminal meaning, I11 common-guard duty | Complete; containing commit authorized; I11 ready only after retention and remains unstarted |
 | `P2-I2-CHG-064` | Owner states `now the last one, I11` after retained I09A/I10 commit `b28ef17` | `I11_retained_evidence_interpretation_and_closeout_construction` | Bind exact accepted authorities and retained evidence; construct one mode-preserving lane interpretation, requirement extraction, terminal record, closeout report/manifest, and independent reconstruction | Checklist/hypothesis declaration precedes every I11 artifact and builder start; zero PyGRC/model/C02/scientific runtime permitted | DEC-060, passed CONTROL/RECON gates, accepted C02/I09A/I10, frozen terminal/developmental vocabularies | Technically complete at 30/30 build/reconstruction with zero blockers; review-ready uncommitted; CLOSE-GATE and owner acceptance pending |
 | `P2-I2-CHG-065` | Owner states `commit changes` after the complete I11 review handoff | `I11_owner_acceptance_CLOSE_GATE_passage_and_retention_commit` | Bind the eight reviewed technical artifacts byte-exactly; accept the terminal/developmental/requirement interpretation; pass CLOSE-GATE; authorize one containing commit and final navigation projections | Explicit owner acceptance and commit authorization; reviewed technical hashes unchanged; additive acceptance record distinguishes reviewed versus final navigation status | DEC-061, 30/30 validation, five byte-identical reconstructed outputs, R01–R05, scaffold-dependent/T3 boundary, exact blocked claims and next-move falsifier | Complete; containing commit authorized; P2-I2 closed; cross-lane synthesis, naturalization probe, and N31+ remain unopened |
+| `P2-I2-CHG-066` | Owner identifies the grounded three-operation composition question as still P2-I2, directs it into Appendix A, requests a simplified evidence-focused cycle, and requires runtime evidence rather than artifact manipulation | `post_closeout_appendix_semantic_extension` | Add checklist/hypothesis authority first; append one N29-grounded prospective design to the accepted brief; reuse accepted P2-I2 machinery through APP-A0–APP-A2 instead of repeating I00–I11; require one fresh-runtime complete-subset campaign | Documentation construction only; main I11 result/gates immutable; zero capability/runtime/scientific work now | N29 I14.1/I14.2-3/I14.3/I14.5-2, N30 changed-medium eligibility, accepted P2-I2 controls/restoration/reconstruction/claim boundaries | Review-ready uncommitted; Appendix A acceptance, APP-A1, APP-A2, evidence, and commit unauthorized |
+| `P2-I2-CHG-067` | Owner-supplied APP-A0 review accepts the overall direction conditionally and identifies four critical semantic corrections plus plurality/order/process tightening | `preacceptance_semantic_correction` | Replace strongest-pair scalarization with a complete gate-signature conjunction over every proper subset; separate operational validity from scientific effect; require every operation's retained causal path to `R`; gate N29 threshold reuse on semantic/domain equivalence; make plurality inference asymmetric; require two adjacent inversions; hard-order APP-A1 internally | APP-A0 documentation correction only; zero capability/runtime/scientific work; no threshold, fixture, realization, or result selected | DEC-062/CHG-066, exact N29 source roles, accepted P2-I2 machinery, compact APP-A0–APP-A2 boundary, main I11 result/gates | Corrected package review-ready uncommitted; owner acceptance, commit, APP-A1, APP-A2, and evidence unauthorized |
+| `P2-I2-CHG-068` | Owner states `great. this should be commited.` after the corrected APP-A0 review handoff | `appendix_a0_owner_acceptance_and_retention_commit` | Accept the exact four-artifact semantic stack; close APP-A0; authorize one containing commit; make APP-A1 ready only after retention without starting it | Acceptance/retention only; zero capability/runtime/scientific work; no APP-A1 audit, realization, fixture, threshold, conformance, execution freeze, or evidence | DEC-063, CHG-066/067 corrected semantics, main I11 result and passed gates, compact APP-A0–APP-A2 cycle | Complete; containing commit authorized; APP-A1 ready after retention but unstarted; APP-A2 and evidence unauthorized |
 
 ## 19. Evidence ledger
 
@@ -3988,6 +4001,157 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I10-RECONSTRUCTION` | I10 | [v1 freeze](../contracts/p2-i2/i10-reconstruction-input-freeze.json), [v2 freeze](../contracts/p2-i2/i10-reconstruction-input-freeze-v2.json), failed starts [001](../contracts/p2-i2/i10-reconstruction-failed-start.json), [002](../contracts/p2-i2/i10-reconstruction-failed-start-002.json), and [003](../contracts/p2-i2/i10-reconstruction-failed-start-003.json), [manifest](../contracts/p2-i2/i10-reconstruction-manifest.json), [24/24 validation](../contracts/p2-i2/i10-reconstruction-validation.json), [builder](../scripts/p2_i2_i10_reconstruct.py), and [report](../reports/P2-I2-I10-reconstruction-and-identity.md) | Independent retained-evidence reconstruction plus candidate-free three-mode restoration identity, raw normalization classification, equal-input no-packet continuation, and paired reset; no new scientific evidence | Owner-accepted under DEC-059; RECON-GATE passed; containing commit authorized; I11 ready after retention |
 | `P2-I2-I09A-I10-OWNER-ACCEPTANCE` | I09A/I10 | [Combined acceptance and gate record](../contracts/p2-i2/i09a-i10-owner-acceptance-and-gates.json), DEC-059, and CHG-063 | Exact technical-byte acceptance, CONTROL/RECON gate passage, and one retention-commit authority only; no interpretation | Owner-accepted by `commit all`; commit head intentionally self-reference-free; I11 remains unstarted |
 | `P2-I2-I11-TERMINAL-CLOSEOUT` | I11 | [Input freeze](../contracts/p2-i2/i11-interpretation-input-freeze.json), [developmental interpretation](../contracts/p2-i2/i11-developmental-interpretation.json), [requirement extraction](../contracts/p2-i2/i11-requirement-extraction.json), [terminal classification](../contracts/p2-i2/i11-terminal-classification.json), [manifest](../contracts/p2-i2/i11-closeout-manifest.json), [30/30 validation](../contracts/p2-i2/i11-closeout-validation.json), [owner acceptance](../contracts/p2-i2/i11-owner-acceptance-and-close-gate.json), [builder](../scripts/p2_i2_i11_closeout.py), and [report](../reports/P2-I2-I11-terminal-closeout.md) | Retained-evidence interpretation only: R01–R05 reached; one mode-preserving terminal record; explicit support/realization/debt/demand boundaries; 30/30 terminal guards; zero new scientific or graph runtime | Owner-accepted under DEC-061/CHG-065; CLOSE-GATE passed; containing commit authorized; cross-lane synthesis and next-move execution remain unopened |
+| `P2-I2-APP-A-SEMANTIC-SCAFFOLD` | APP-A0 | [Brief Appendix A](P2-I2-shared-pool-co-conditioning-brief.md#appendix-a--grounded-three-operation-shared-carrier-composition-extension), checklist section 20, operational-hypothesis section 17, DEC-062/063, and CHG-066–068 | Prospective within-lane semantic/source binding and correction only; zero Appendix A evidence | Owner-accepted; containing commit authorized; main P2-I2 closeout unchanged; APP-A1 ready after retention but unstarted; APP-A2 unauthorized |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.
+
+## 20. `P2-I2-APP-A` — Three-operation shared-carrier composition
+
+**Status:** APP-A0 semantic scaffold owner-accepted under DEC-063/CHG-068;
+containing commit authorized; no Appendix A evidence exists.
+
+**Purpose:** test one exact extension of the accepted P2-I2 relation:
+
+> Can physically distinct generator, extractor, and processor operations
+> compose with subset-bounded irreducibility through one non-private carrier,
+> relative to one frozen gate signature, so that a later response depends on
+> the complete ordered composition rather than on any valid proper operation
+> subset?
+
+Appendix A inherits its operations from N29 I14.1, I14.2-3, I14.3, and the
+producer-mediated I14.5-2 buffered bridge. It inherits N30's changed-medium to
+later-eligibility relation and P2-I2's carrier factorization, attribution,
+intervention, restoration, isolation, reconstruction, and claim controls.
+It does not reinterpret N29/N30 as three-participant evidence.
+
+The compact cycle is intentionally limited to:
+
+```text
+APP-A0 = source/semantic/hypothesis binding and owner review
+APP-A1 = one combined native-first delta audit, exact realization/fixture
+         registration, and execution freeze
+APP-A2 = one bounded fresh-PyGRC-runtime complete-subset execution followed
+         by deterministic reconstruction, control resolution, and one
+         conclusion
+```
+
+Appendix A does not repeat I04–I11 calibration, null, registration ceremony,
+separate control-resolution iteration, or separate reconstruction iteration.
+Accepted P2-I2 machinery is reused byte-exactly where applicable; every
+necessary delta is frozen once in APP-A1. N29's numerical gates may be reused
+without tuning only after APP-A1 proves metric-semantic and measurement-domain
+equivalence. The fixed `0.82` buffered-feedback retention factor is a
+configuration identity, not an independent measured gate. APP-A2 returns one
+cumulative evidence and closeout package for review. Artifact arithmetic,
+replay-only evidence, or report assembly cannot satisfy APP-A2.
+
+APP-A1 has this internal hard order while remaining one named stage:
+
+```text
+source/delta audit
+-> native/producer realization selection
+-> metric-semantic and measurement-domain equivalence decision
+-> exact fixture, gate signature, and controls
+-> candidate-free implementation conformance if new machinery is introduced
+-> execution freeze
+-> owner review
+```
+
+No implementation observation may retrospectively select a design, value,
+threshold, or control.
+
+```text
+iteration_id = P2-I2-APP-A
+entry_authority = owner direction to retain the extension inside P2-I2 as
+                  Appendix A and simplify the cycle around evidence of the
+                  exact composition claim
+current_scope = semantic/hypothesis/checklist/decision construction only
+source_operations = G generative enrichment; E leakage-gated extraction;
+                    P processor redistribution/buffering; R later generator
+                    response to the changed medium
+primary_matrix = reference, G, E, P, GE, GP, EP, GEP
+nearest_comparison_family = GE, GP, EP considered together without scalar
+                            ranking or outcome-selected strongest pair
+gate_signature = four measured gates: environment feedback; support feedback;
+                 phase residual; merge leakage; plus fixed retention
+                 configuration identity required identically in every arm
+proper_subset_rule = every valid member of reference/G/E/P/GE/GP/EP satisfies
+                     the same retention configuration but fails at least one
+                     of the four measured gates; configuration drift makes an
+                     arm nonevaluable and cannot establish insufficiency
+operational_validity = registered live-carrier invocation plus matched
+                       opportunity/cost/timing/path and complete receipts;
+                       recorded carrier effect may be positive, negative, or
+                       zero without invalidating the arm; reference requires
+                       exact baseline plus verified diversion and matched
+                       participant activity/receipts
+transportability_gate = metric_semantics_equivalent AND
+                        measurement_domain_equivalent; otherwise N29 values
+                        are diagnostic context only and execution freeze fails
+transportability_dimensions = raw definitions; units/orientation; reference/
+                        candidate meanings; windows; normalization/
+                        denominators; topology/scaling; leakage accounting;
+                        phase residual; R target; runtime numeric domain
+participant_projection = S_G performs G, S_E performs E, S_P performs P;
+                         one later noncontributor R reads only the carrier
+required_scope_diagnostic = one capacity-relaxed source performs GEP; success
+                            makes plurality non-load-bearing; failure alone
+                            leaves plurality unresolved
+role_identity_guard = prove matched capacity/access/authority/timing/
+                      initialization/cost and freeze at least one complete-GEP
+                      contributor-to-operation role rotation; APP-A2 must
+                      reproduce the complete relation and operation-to-R paths
+                      before any bounded plurality-load-bearing classification
+required_causal_controls = missing operations diverted with activity/cost/
+                           timing/opportunity matched; each G/E/P withdrawal
+                           changes R directly or changes a registered mediator
+                           whose independent intervention changes R; carrier
+                           freeze/clamp changes R; direct/private/controller
+                           read exclusion
+required_order_controls = E->G->P and G->P->E adjacent inversions; both are
+                          needed for a complete ordered-sequence claim; one
+                          alone supports only some handoff order-sensitivity
+reused_guards = repository .venv only; no absolute paths; exact restoration;
+                fresh-process isolation; deterministic reconstruction;
+                accepted claim ceilings
+required_runtime_evidence = one fresh process/model/baseline per arm; live
+                source-current PyGRC carrier; live selected-G/E/P invocations
+                and R response; exact predecessor-to-successor carrier-
+                identity continuity; operation/event/packet/intervention/
+                restoration receipts; deterministic readback reconstruction
+evidence_effect_now = none
+forbidden_now = capability/runtime audit; implementation selection; fixture
+                construction; calibration; execution; Appendix A result;
+                cooperation/coordination/resource-economy claim; N31+
+exit_now = uncommitted semantic package returned for owner review
+```
+
+Checklist:
+
+- [x] Record Appendix A as a named P2-I2 activity before constructing its
+  semantic appendix.
+- [x] Declare its subordinate operational hypothesis before any capability,
+  realization, fixture, or runtime activity.
+- [x] Bind the exact N29/N30/P2-I2 provenance and producer/native debts.
+- [x] Define the simplified APP-A0–APP-A2 cycle and prohibit a duplicate
+  I00–I11 process.
+- [x] Preserve the accepted P2-I2 result and all main-lane gate states.
+- [x] Apply the owner-supplied APP-A0 critical review without starting a new
+  iteration: gate-vector conjunction, valid scientific zeros, operation-to-`R`
+  causal paths, threshold transportability, asymmetric plurality, adjacent
+  inversions, and APP-A1 hard ordering.
+- [x] Obtain owner acceptance of the corrected Appendix A semantic package and
+  containing-commit authorization under DEC-063/CHG-068.
+- [ ] Open APP-A1 only after acceptance; perform one source-current native-
+  first delta audit in the frozen internal order; prove or reject N29 metric/
+  domain transportability; freeze realization, gate signature, fixture,
+  controls, role-rotation identity, and any candidate-free conformance.
+- [ ] Open APP-A2 only after the APP-A1 freeze is reviewed and retained.
+- [ ] Execute the complete eight-subset matrix and bounded diagnostics once
+  through fresh live PyGRC runtimes, retain operation-level and carrier/
+  response/intervention/restoration receipts, reconstruct the runtime evidence
+  deterministically, resolve the exact claim, and stop.
+
+No Appendix A conclusion can strengthen the accepted main P2-I2 terminal.
+It is an additive within-lane extension with its own bounded disposition.
