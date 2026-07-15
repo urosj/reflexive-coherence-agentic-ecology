@@ -1648,6 +1648,64 @@ acceptance does not remove ignored caches, create the activation record, open
 I08, run a matrix entry, create the execution manifest, or assign scientific
 evidence; those actions remain separately governed.
 
+#### 3.2.31 I08 activation and finite-execution declaration
+
+After the accepted I06B/I07/I07A checkpoint is retained at `5c2c248`, the owner
+states `ok, let's do I08`. DEC-048/CHG-044 treats this as the separate direction
+needed to open I08 activation-package construction. It authorizes the
+checklist/hypothesis-first activation preparation and the frozen import-cache
+cleanup prerequisite, but it cannot accept activation bytes that do not yet
+exist and does not authorize an uncommitted matrix entry.
+
+The activation candidate must initially remain inactive. It binds the exact
+committed inactive freeze, policy, execution source, validator, tests,
+resumption freeze, I07A input and validation, matrix, binding receipt, graph
+revision/source, repository `.venv` interpreter, and relative normalized
+command surface. It records `owner_acceptance=false`,
+`candidate_execution_authorized=false`, and `I08_authorized=false` until the
+complete candidate-free package returns for explicit review. The eventual live
+HEAD is supplied only after the accepted activation is committed, through the
+normalized command argument, so the activation record contains no
+self-referential commit identity.
+
+Preparation may remove only ignored Python bytecode/import-cache artifacts
+beneath the two frozen import roots and must retain the before/after inventory.
+It performs no PyGRC import, model or adapter construction, packet operation,
+candidate/control response, comparator, or scientific window. Validation must
+fail closed on an authority/hash/revision/interpreter/command mismatch, dirty
+tracked repository, remaining import cache, pre-existing governed artifact, or
+non-unique/incomplete 234-row matrix.
+
+If the activation is later explicitly accepted and committed, each primary row
+runs in ascending frozen `sequence_index` in its own `.venv/bin/python -B`
+process with a fresh/restored registered composite baseline. No parallel worker,
+shared mutable process state, earlier outcome read, parameter derivation, or
+outcome-conditioned branch is allowed. Attempt 2 exists only when the same
+entry's permanent attempt-1 claim and exact pre-construction failure receipt
+mechanically establish the already-frozen infrastructure eligibility. A
+scientific/control outcome is never retried. Missing, ambiguous, malformed, or
+nonevaluable terminal evidence remains incomplete and prevents creation of the
+execution manifest; it is not converted into negative evidence.
+
+The bounded preparation completes without opening that live boundary. The
+cleanup start retains an exact 207-item before inventory and zero-item after
+inventory across the two frozen import roots, while both tracked repositories
+remain unchanged. The second and final preparation start passes 18/18 checks
+with zero blockers. All 234 matrix rows and accepted technical hashes match;
+the output root and execution manifest remain absent; and PyGRC imports, models,
+packets, candidate/control operations, and scientific windows all remain zero.
+The activation candidate is therefore review-ready but still records all three
+acceptance/authorization booleans as false and remains uncommitted.
+
+The owner then states `+1 and make a commit`. DEC-049/CHG-045 accept the exact
+inactive candidate at SHA-256 `52d420b49029e32f007119a3f888ca9fc05ca545a4a75b3e775f8c69c23eac6b`
+and authorize its declared transition and retention. The accepted activation
+has SHA-256 `f46ebd323499423715107c3b337963c3787404ed257c56be880808617cb09cc3`;
+all accepted scientific, matrix, policy, source, and runtime identities remain
+unchanged. The activation becomes live only from the resulting committed full
+HEAD and an exact post-commit preflight. Acceptance and commit do not themselves
+create a claim, execute an entry, build the manifest, or assign evidence.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

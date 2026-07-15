@@ -1,0 +1,129 @@
+{
+  "artifact_id": "P2-I2-I08-PREACTIVATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blockers": [],
+  "check_count": 18,
+  "checks": [
+    {
+      "check_id": "I08-PRE-01",
+      "detail": ".venv Python runs with -B",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-02",
+      "detail": "repository .venv and frozen interpreter digest match",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-03",
+      "detail": "accepted parent HEAD matches",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-04",
+      "detail": "index is clean",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-05",
+      "detail": "all accepted live technical bytes equal the accepted commit",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-06",
+      "detail": "graph revision and tracked worktree match",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-07",
+      "detail": "graph runtime source digest matches",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-08",
+      "detail": "cache cleanup receipt retains nonempty before and zero after inventory",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-09",
+      "detail": "both frozen live import roots are cache-free",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-10",
+      "detail": "activation candidate is exact kind and remains inactive",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-11",
+      "detail": "activation candidate binds every live-validator technical hash",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-12",
+      "detail": "activation avoids self-referential HEAD",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-13",
+      "detail": "input freeze binds accepted start and exact preparation budget",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-14",
+      "detail": "matrix has exactly 234 unique entries in complete frozen order",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-15",
+      "detail": "all frozen claim and output paths are unique",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-16",
+      "detail": "governed output root and execution manifest are absent",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-17",
+      "detail": "new machine artifacts persist no absolute paths",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08-PRE-18",
+      "detail": "candidate-free validation imports no PyGRC",
+      "error": null,
+      "passed": true
+    }
+  ],
+  "cycle_id": "P2-I2-C01",
+  "disposition": "return_uncommitted_for_owner_review",
+  "iteration_id": "P2-I2-I08",
+  "passed_count": 18,
+  "process_accounting": {
+    "candidate_free_python_starts": 2,
+    "candidate_or_control_operations": 0,
+    "infrastructure_retries": 0,
+    "models_or_adapters_constructed": 0,
+    "pygrc_imports": 0,
+    "scientific_windows": 0
+  },
+  "status": "passed_candidate_free"
+}

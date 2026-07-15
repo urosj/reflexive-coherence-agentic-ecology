@@ -1230,6 +1230,17 @@ Entry condition:
   PyGRC/model/packet/candidate/scientific activity. DEC-047/CHG-043 record owner
   acceptance and checkpoint-commit authority; the exact inactive EXEC-FREEZE is
   passed while live activation and I08 remain separately closed.
+- [x] Prepare the separately owner-directed I08 activation candidate without
+  starting the matrix. The accepted I06B/I07/I07A checkpoint is retained at
+  `5c2c248`; exact live-import cleanup removes 207 ignored artifacts with zero
+  tracked-byte changes; and candidate-free preactivation validation passes
+  18/18 in two `.venv/bin/python -B` starts with zero retries. All live flags
+  remain false and the package is uncommitted pending explicit review.
+- [x] Accept and authorize commit of the exact I08 activation under
+  DEC-049/CHG-045. The transition binds the reviewed candidate and preparation
+  hashes while leaving the full live HEAD to the normalized command argument.
+  No matrix claim or output enters the activation commit; execution starts only
+  after exact post-commit preflight.
 
 Required lane work:
 

@@ -110,6 +110,13 @@ Phase 2 gate reviews:
   focused tests pass 15/15 and final validation passes 17/17 with zero candidate
   or scientific activity. DEC-047/CHG-043 accept the exact inactive freeze and
   authorize its checkpoint commit; live activation and I08 remain closed.
+- [P2-I2 I08 activation preflight](P2-I2-I08-activation-preflight.md)
+  retains the exact inactive activation candidate, 207-to-zero ignored import-
+  cache cleanup, and 18/18 candidate-free validation. The 234-entry matrix and
+  accepted live technical hashes are unchanged. DEC-049/CHG-045 now record
+  owner acceptance and commit authority; no output or manifest exists, and the
+  resulting full commit HEAD plus exact preflight are required before the first
+  matrix claim.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

@@ -1,0 +1,112 @@
+{
+  "artifact_id": "P2-I2-I08-ACTIVATION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "frozen_at": "2026-07-15",
+  "status": "frozen_before_cache_cleanup_and_activation_candidate",
+  "authority": {
+    "decision_id": "P2-I2-DEC-048",
+    "change_id": "P2-I2-CHG-044",
+    "owner_direction": "ok, let's do I08",
+    "effect": "activation_package_construction_and_exact_import_cache_cleanup_only"
+  },
+  "starting_authority": {
+    "branch": "p2-i2-experiment",
+    "commit": "5c2c248647e78526474210649c0a7ba84fcef13d",
+    "commit_subject": "Complete P2-I2 execution freeze",
+    "inactive_exec_freeze_passed": true,
+    "activation_record_present_at_start": false,
+    "execution_manifest_present_at_start": false,
+    "governed_output_root_present_at_start": false
+  },
+  "accepted_live_authority_hashes": {
+    "inactive_exec_freeze_sha256": "8e4533d37f3de3140dca84aaf3683989988d25a79fcc4aff4e88ca686a90ab22",
+    "policy_sha256": "773b9fc231942f59e7d5b74a49ad8ce722471badcc554afd74d5cfaadb4327d3",
+    "execution_source_sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe",
+    "validator_sha256": "e304b542a2e4d0b350c3605e376caaad306e7dfa878f65b97eaf8379cb54a162",
+    "test_sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420",
+    "resumption_freeze_sha256": "c73b4c814a33bfd80c3fbb072928b4f4f9f59de5ba9dbe3bf8c424526a261c98",
+    "i07a_validation_sha256": "32f69dadc8cd10db3bb57fa7f837be921f91da2315369b2842e37d2737d9997c",
+    "i07a_input_freeze_sha256": "d375f66e6d739ddcaad159bb6f29e82b7e2fcbb28bc74e14d24c7e30c9a2c93b",
+    "run_matrix_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+    "binding_receipt_sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479"
+  },
+  "preparation_source_hashes": {
+    "cache_cleanup_source_sha256": "18fd1c125479d0480adaf9bb69feb1a6aa280558bd7a72890ad0efe0482c0769",
+    "preactivation_validator_sha256": "02863e17721c75b1dbf057e4f243cf8488d376045bcb5cad20605aebbbede346"
+  },
+  "runtime_identity": {
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "python_version": "3.12.3",
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_runtime_source_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+    "absolute_or_ambient_fallback": false
+  },
+  "matrix_scope": {
+    "primary_entries": 234,
+    "maximum_same_entry_conditional_retries": 234,
+    "execution_order": "ascending_sequence_index_1_through_234",
+    "fresh_process_per_attempt": true,
+    "parallel_workers": 0,
+    "prior_entry_outcome_reads": false
+  },
+  "cache_cleanup_scope": {
+    "frozen_roots": [
+      "experiment_scripts",
+      "pygrc_source"
+    ],
+    "allowed_kinds": [
+      "__pycache__ directory",
+      ".pyc file",
+      ".pyo file"
+    ],
+    "observed_before_item_count": 207,
+    "exact_before_and_after_inventory_required": true,
+    "tracked_bytes_may_change": false
+  },
+  "process_budget": {
+    "candidate_free_python_starts": 2,
+    "commands": [
+      [
+        ".venv/bin/python",
+        "-B",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08_cleanup_import_caches.py"
+      ],
+      [
+        ".venv/bin/python",
+        "-B",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08_preactivation_validate.py"
+      ]
+    ],
+    "infrastructure_retries": 0,
+    "failed_start_effect": "stop_for_owner_direction"
+  },
+  "activation_candidate_contract": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/owner-accepted-execution-authorization.json",
+    "owner_acceptance": false,
+    "candidate_execution_authorized": false,
+    "I08_authorized": false,
+    "activation_commit_head": null,
+    "expected_head_source": "separately_owner_authorized_normalized_command_argument",
+    "review_and_commit_required_before_live_use": true
+  },
+  "forbidden": [
+    "PyGRC import",
+    "model or adapter construction",
+    "packet scheduling or processing",
+    "governed claim, failure, retry, or output creation",
+    "candidate or control operation",
+    "response, comparator, or scientific-window evaluation",
+    "execution-manifest creation",
+    "scientific interpretation",
+    "commit without explicit review and authorization"
+  ],
+  "exit": "exact inactive candidate_free activation package returned uncommitted for owner review"
+}

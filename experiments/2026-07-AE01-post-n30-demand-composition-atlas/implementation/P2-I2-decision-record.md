@@ -80,6 +80,10 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-043` | May I07 invent missing hybrid intervention timing/value and direct/controller primitives, or must exact registration reopen? | Owner accepts the recommended bounded checklist/hypothesis-first I06B correction; I07 may not invent the missing primitives | I06B construction completes at 15/15 with zero blockers; package acceptance/commit remain pending, REG-GATE remains reopened, and I07/EXEC-FREEZE/I08/candidate execution remain closed | 2026-07-15 |
 | `P2-I2-DEC-044` | Does the review-ready I06B package restore registration progression authority? | Owner explicitly accepts I06B; retain exact accepted overlay and validation, restore REG-GATE, and resume the existing I07 freeze from its paused audit | Opens only candidate-free I07 construction/validation; commit, EXEC-FREEZE, I08, and candidate execution remain unauthorized | 2026-07-15 |
 | `P2-I2-DEC-045` | Does missing `pytest` require I07A or an in-place I07 environment correction? | Owner directs no I07A: install into `.venv`, preserve failed start, update I07 process accounting, refresh derived bindings, and continue once | Opens only bounded candidate-free I07 continuation; commit, EXEC-FREEZE, I08, and candidate execution remain unauthorized | 2026-07-15 |
+| `P2-I2-DEC-046` | Do the four cross-entry-isolation blockers belong to I07A, and what may that correction change? | Owner directs one bounded I07A correction for safe governed I/O, import-cache isolation, same-entry retry reconstruction, and fail-closed completion | I07A passes 15/15 tests and 17/17 checks; acceptance, commit, EXEC-FREEZE passage, I08, and candidate execution remain separately governed | 2026-07-15 |
+| `P2-I2-DEC-047` | Does the owner accept I07A and pass the exact inactive execution freeze? | Accepted: retain the zero-blocker I07A package and accumulated I06B/I07 checkpoint | Passes inactive `P2-I2-EXEC-FREEZE` and authorizes commit; live activation, cache cleanup, I08, and candidate execution remain closed | 2026-07-15 |
+| `P2-I2-DEC-048` | May I08 activation preparation and its required import-cache cleanup begin? | Owner opens checklist/hypothesis-first inactive activation construction, exact cache cleanup, and candidate-free validation | Produces an 18/18 review-ready inactive activation candidate; no commit, claim, matrix entry, or scientific effect | 2026-07-15 |
+| `P2-I2-DEC-049` | Does the owner accept and authorize commit of the exact I08 activation? | Accepted: bind candidate `52d420b`, retain accepted activation `f46ebd3`, and commit the complete activation package | Opens live I08 only from the resulting committed full HEAD after exact preflight; the activation commit contains no matrix claim or result | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2614,13 +2618,68 @@ Reopen DEC-047 if a committed technical hash differs from the acceptance
 record, an activation/candidate artifact enters this commit, or EXEC-FREEZE is
 treated as live execution authority.
 
-## 50. Pending decision queue
+## 50. `P2-I2-DEC-048` — Open I08 activation-package construction
+
+**Status:** decided by separate owner direction
+
+After commit `5c2c248` retains the accepted inactive I06B/I07/I07A authority,
+the owner states: `ok, let's do I08`.
+
+**Decision:** open I08 only far enough to freeze and validate its exact
+activation candidate. This includes the previously withheld cleanup of ignored
+`__pycache__`, `.pyc`, and `.pyo` artifacts beneath the two frozen live import
+roots, with before/after accounting. The activation candidate must remain
+inactive and uncommitted while under review. No matrix claim, PyGRC import,
+model, packet, candidate/control response, or scientific window is authorized.
+
+Explicit review must precede setting `owner_acceptance`,
+`candidate_execution_authorized`, and `I08_authorized` true. The resulting live
+activation must then be committed before any normalized entry command may bind
+that commit's full HEAD. No commit is authorized by this decision.
+
+The bounded preparation completes as declared: 207 ignored cache artifacts are
+retained in the before inventory and zero remain; no tracked graph or RCAE byte
+changes; and preactivation validation passes 18/18 with two candidate-free
+`.venv/bin/python -B` starts, zero retries, and zero PyGRC/model/packet/
+candidate/scientific activity. The activation candidate remains inactive and
+uncommitted for owner review.
+
+Reopen DEC-048 if preparation changes an accepted I07A technical byte, touches
+a tracked graph byte, creates a governed claim/output/failure/manifest, leaves
+an import cache in either live root, or requires a scientific change.
+
+## 51. `P2-I2-DEC-049` — Accept and commit the exact I08 activation
+
+**Status:** decided by explicit owner acceptance and commit direction
+
+After the inactive I08 activation package passes 18/18 checks with zero
+blockers and returns uncommitted, the owner states: `+1 and make a commit`.
+
+**Decision:** accept candidate SHA-256
+`52d420b49029e32f007119a3f888ca9fc05ca545a4a75b3e775f8c69c23eac6b`,
+apply only its prereviewed activation transition, and authorize committing the
+complete I08 activation package. The accepted activation SHA-256 is
+`f46ebd323499423715107c3b337963c3787404ed257c56be880808617cb09cc3`.
+It binds the preparation artifacts and unchanged live-validator hashes while
+retaining `activation_commit_head=null` and the normalized-command full-HEAD
+source, avoiding self-reference.
+
+This decision opens live I08 only after the activation is committed and the
+exact resulting full HEAD passes the frozen repository, graph, interpreter,
+cache, command, and current-entry preflight. It does not authorize a claim or
+matrix entry inside the activation commit itself. No additional activation
+review is required if those exact preconditions pass.
+
+Reopen DEC-049 if the commit changes an accepted live technical hash, includes
+a governed claim/output/failure/manifest, or the first normalized preflight
+does not reproduce the accepted authority and clean-runtime boundary.
+
+## 52. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Live I08 activation | I08 | Accepted I07A commit, cache-free preclaim state, exact committed activation record, and separate owner direction |
 | Terminal classification and next move | I11 | Resolved controls and reconstruction |
 
 Pending items may not be answered by convenience, code availability, or

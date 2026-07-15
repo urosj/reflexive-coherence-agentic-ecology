@@ -1,0 +1,70 @@
+{
+  "artifact_id": "P2-I2-C01-OWNER-ACCEPTED-EXECUTION-AUTHORIZATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "status": "owner_accepted_activation",
+  "construction_authority": {
+    "decision_id": "P2-I2-DEC-048",
+    "change_id": "P2-I2-CHG-044",
+    "owner_direction": "ok, let's do I08",
+    "direction_is_exact_byte_acceptance": false
+  },
+  "acceptance_authority": {
+    "decision_id": "P2-I2-DEC-049",
+    "change_id": "P2-I2-CHG-045",
+    "owner_direction": "+1 and make a commit",
+    "accepted_candidate_sha256": "52d420b49029e32f007119a3f888ca9fc05ca545a4a75b3e775f8c69c23eac6b"
+  },
+  "owner_acceptance": true,
+  "candidate_execution_authorized": true,
+  "I08_authorized": true,
+  "commit_authorized": true,
+  "activation_commit_head": null,
+  "expected_head_source": "separately_owner_authorized_normalized_command_argument",
+  "inactive_exec_freeze_sha256": "8e4533d37f3de3140dca84aaf3683989988d25a79fcc4aff4e88ca686a90ab22",
+  "policy_sha256": "773b9fc231942f59e7d5b74a49ad8ce722471badcc554afd74d5cfaadb4327d3",
+  "execution_source_sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe",
+  "validator_sha256": "e304b542a2e4d0b350c3605e376caaad306e7dfa878f65b97eaf8379cb54a162",
+  "test_sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420",
+  "resumption_freeze_sha256": "c73b4c814a33bfd80c3fbb072928b4f4f9f59de5ba9dbe3bf8c424526a261c98",
+  "i07a_validation_sha256": "32f69dadc8cd10db3bb57fa7f837be921f91da2315369b2842e37d2737d9997c",
+  "i07a_input_freeze_sha256": "d375f66e6d739ddcaad159bb6f29e82b7e2fcbb28bc74e14d24c7e30c9a2c93b",
+  "run_matrix_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+  "binding_receipt_sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479",
+  "preparation_bindings": {
+    "accepted_parent_commit": "5c2c248647e78526474210649c0a7ba84fcef13d",
+    "activation_input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i08-activation-input-freeze.json",
+    "activation_input_freeze_sha256": "931be4ecb70fb1bfa4b4cd10382a98558987a54509f27e809e7722318b5780ef",
+    "cache_cleanup_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i08-import-cache-cleanup-receipt.json",
+    "cache_cleanup_receipt_sha256": "3030cae7af90f0c0eae312b0f54c77238f582e5987af094177aaddb362ae7466",
+    "preactivation_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i08-preactivation-validation.json",
+    "preactivation_validation_sha256": "47e7463b39f057d57140b49c711dc5385e0b7c8bbb7beb17de027d835b473f0f",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
+  },
+  "eventual_live_scope": {
+    "primary_entry_count": 234,
+    "execution_order": "ascending_frozen_sequence_index",
+    "fresh_process_and_registered_baseline_per_attempt": true,
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "parallel_workers": 0,
+    "same_entry_preconstruction_retry_only": true,
+    "scientific_or_control_outcome_retryable": false,
+    "prior_entry_outcome_reads": false,
+    "rescue_variants": false
+  },
+  "current_boundary": {
+    "activation_record_is_owner_accepted": true,
+    "activation_record_becomes_live_only_when_committed_and_bound_by_full_head": true,
+    "governed_claims_or_outputs_permitted_only_after_commit_and_exact_preflight": true,
+    "execution_manifest_permitted": false,
+    "scientific_evidence": false,
+    "owner_review_required": false
+  }
+}
