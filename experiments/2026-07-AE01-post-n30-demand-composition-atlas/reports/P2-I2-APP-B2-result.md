@@ -14,8 +14,9 @@ history_carried: supported bounded composition
 hybrid:          not supported in the frozen realization
 
 terminal = supported_bounded_candidate
-bounded claim = bounded P2-I2-grounded three-operation shared-pool
-                composition candidate
+bounded claim = bounded history-carried P2-I2-grounded three-operation
+                shared-pool composition candidate
+support_status = scaffold_dependent
 ```
 
 This result comes from 99 newly executed fresh-process PyGRC models. It is not
@@ -59,6 +60,12 @@ owns ordered source-label-free H_C admission, while PyGRC owns every coherence
 transition, M_H materialization packet, feedback evaluation, producer decision,
 and B response packet. A fully native-history claim remains blocked.
 
+The frozen matrix does not contain a quantity- and cardinality-matched
+repeated-operation three-admission alternative. The result therefore supports
+bounded proper-subset composition but does not yet support the stronger phrase
+`operation complementarity`. That distinction and the exact H_C/fail-open
+audits are retained in APP-B3.
+
 ## Runtime and reconstruction
 
 ```text
@@ -91,6 +98,7 @@ producer, arm, or response regeneration.
 The supported statement is fixture-, mode-, threshold-, and response-window-
 bounded. It does not establish cross-appendix recurrence, generic participant
 ecology, participant complementarity, cooperation, coalition, a fully native
-history mechanism, unbounded irreducibility, or a revision of the accepted
-main P2-I2 conclusion. Result acceptance and a result commit require owner
-direction.
+history mechanism, operation complementarity, unbounded irreducibility, or a
+revision of the accepted main P2-I2 conclusion. State-carried and hybrid
+negatives apply only to their frozen realizations. Result acceptance and a
+result commit require owner direction.

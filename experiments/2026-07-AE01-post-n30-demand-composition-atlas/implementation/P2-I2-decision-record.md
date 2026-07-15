@@ -115,6 +115,12 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-078` | May APP-B2 correct the venv launcher/failure receipt and use one replacement claim? | Yes: owner requires repository `.venv` always and forbids global Python | Opens in-place infrastructure correction, zero-science validation, necessary authority commit, and one unchanged replacement campaign; result acceptance/commit closed | 2026-07-15 |
 | `P2-I2-DEC-079` | Can the first replacement aggregate analysis support a conclusion despite operational-validity projection defects? | No: runtime is complete, but original analysis is internally fail-open; additive retained-only correction required | Preserves all runtime bytes; opens zero-runtime validity/terminal correction and closeout validation only; result review/commit closed | 2026-07-15 |
 | `P2-I2-DEC-080` | What does corrected retained-only APP-B2 closeout establish? | Review-ready bounded positive in history-carried mode only: 99/99 valid fresh PyGRC arms; state and hybrid unsupported; closeout validation passes | Technical result only; owner result acceptance and result commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-081` | What validation is required before APP-B2 result acceptance? | Run one retained-evidence/source APP-B3 audit of matched cardinality, fail-open isolation, exact H_C admission, and mode-/support-specific wording | Zero runtime/regeneration; absence of a matched control blocks operation-complementarity wording but does not invalidate proper-subset composition | 2026-07-15 |
+| `P2-I2-DEC-082` | What does the APP-B3 implication-boundary audit establish? | Isolation and H_C reconciliation pass; no matched repeated-operation three-admission control exists; strongest claim is history-carried and scaffold-dependent | Review-ready bounded proper-subset composition; operation complementarity unresolved; owner acceptance/commit and next runtime closed | 2026-07-15 |
+| `P2-I2-DEC-083` | Should the missing ordered three-token alternative be added? | Yes: owner directs `ok, then add it`; open APP-B4 with checklist/hypothesis first and unchanged-baseline capability audit before freeze/runtime | Prospective 84-arm history-only panel; stop on any physical-budget blocker; runtime and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-084` | Can the complete 27-triple panel execute from the unchanged baseline? | No: 24 feasible; EEG/EEE/EEP fail at second E with P short by 0.125 | Stops before freeze; returns 75-arm unchanged, 87-arm pre-funded, and incomplete 84-arm choices; recommends 75-arm panel | 2026-07-15 |
+| `P2-I2-DEC-085` | Which APP-B4 panel should be frozen? | Owner selects recommended option A with `yes`: 24 feasible triples plus reference across three seeds | Opens inactive 75-arm freeze and candidate-free validation only; commit, activation, runtime, and result remain closed | 2026-07-15 |
+| `P2-I2-DEC-086` | Does the owner-selected APP-B4 panel have an exact executable inactive freeze? | Yes: deterministic 75-row registry, transitive identities, accepted envelope projection, bounded classifiers, and inactive lifecycle pass candidate-free validation | Technically review-ready uncommitted; no PyGRC/model/arm/response ran; commit, activation, claim, runtime, and result remain closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -4087,9 +4093,171 @@ the accepted main P2-I2 conclusion remain blocked.
 This technical disposition does not infer owner acceptance or authorize a
 result commit.
 
-## 83. Pending decision queue
+## 83. `P2-I2-DEC-081` — Open APP-B3 implication-boundary audit
 
-APP-B2 is technically complete under DEC-080/CHG-085 and returned uncommitted
-for owner result review. Final Appendix B result acceptance/commit,
-cross-appendix synthesis, graph mutation, N31+ selection, and any next move
-remain closed.
+**Status:** owner-directed retained-evidence audit active
+
+The owner-supplied review identifies four pre-acceptance validations: exclude
+or disclose a generic three-event/cardinality explanation; prove the fail-open
+analysis defect was isolated to post-run projection; reconcile every active-
+history admission exactly; and make the strongest positive wording explicitly
+history-carried and scaffold-dependent.
+
+**Decision:** APP-B3 may inspect committed source, the accepted freeze, the
+one retained 99-arm aggregate, original/corrected analyses, and governance. It
+may construct one pure `.venv` validator and one audit artifact/report. It may
+not import PyGRC, construct a model, call a producer, run or regenerate an arm
+or response, modify any APP-B2 evidence byte, or commit a result.
+
+If no quantity/cardinality-matched three-admission alternative was registered,
+APP-B3 must say so and must not retrofit it. The existing bounded proper-subset
+composition claim remains evaluable; `operation complementarity` remains
+blocked and the missing discriminator becomes a possible separately frozen
+next test. Result acceptance and commit remain owner-only.
+
+## 84. `P2-I2-DEC-082` — APP-B3 implication-boundary disposition
+
+**Status:** technically complete; owner result review pending; uncommitted
+
+The pure `.venv` audit establishes that the original fail-open analysis was
+strictly post-run: its only parent call occurs after the complete fixed child
+loop, neither children nor loop body call it, and 99 exact frozen rows complete
+in 99 unique processes with zero retry or adaptive choice. The correction is
+bound to the unchanged runtime hash; responses, estimator values, and controls
+do not change; corrected validity reads receipts and no authored `valid` field.
+
+Active history reconciles exactly. There are 123/123 registered physical
+admissions—41 each of G/E/P—with zero unexpected, duplicate, or route/amount/
+event mismatch. Four frozen history-clearing interventions remove 12 admitted
+tokens, leaving 111/111 expected final active tokens. Ingestion is confined to
+the physical-operation loop, so materialization, neutral, response/controller,
+diversion, state intervention, private partition, and save/load/reset activity
+admit zero tokens. Recursive history self-support is excluded.
+
+The registry contains no quantity-, timing-, and history-length-matched
+repeated-operation three-admission alternative. APP-B2 therefore supports
+bounded proper-subset composition but does not resolve or claim operation
+complementarity.
+
+**Decision:** retain appendix terminal `supported_bounded_candidate`; project
+the strongest statement as `bounded history-carried P2-I2-grounded
+three-operation shared-pool composition candidate` with
+`support_status=scaffold_dependent`. State-carried and hybrid remain not
+supported only in their frozen realizations. Hybrid is a causal negative: its
+carrier operates, but E is nonessential at the registered response boundary.
+
+APP-B3 generates zero PyGRC/model/producer/arm/response activity. Owner result
+acceptance, commit, and any matched-cardinality runtime test remain closed.
+
+## 85. `P2-I2-DEC-083` — Open APP-B4 ordered three-token discriminator
+
+**Status:** owner-directed capability/budget audit active; runtime closed
+
+The owner accepts the recommendation to add the missing three-token
+alternative. APP-B4 first records its operational hypothesis and checklist,
+then audits all 27 ordered triples in `{G,E,P}^3` against the unchanged
+accepted baseline, physical routes, native operation amounts, and history
+admission. The prospective complete matrix adds one reference and three seeds,
+for 84 fresh history-carried arms.
+
+No repeated native triple can exactly match GEP's total amount; GEP is the only
+three-symbol multiset satisfying the accepted native-dose total. APP-B4 can
+therefore distinguish raw event cardinality, native-dose multiset, and ordering
+but cannot establish operation identity independent of dose. Operation
+complementarity remains blocked.
+
+**Decision:** perform the source/config/budget audit without PyGRC model or
+response execution. If any triple cannot execute unchanged, stop before freeze
+and return exact provisioning or reduced-panel choices. Do not add reservoir
+funding, change baseline/dose/admission, reduce the panel, construct a campaign
+claim, or run science without further owner direction. If all triples are
+natively feasible, an exact inactive freeze may be constructed and returned
+for review; live runtime and commit remain closed.
+
+## 86. `P2-I2-DEC-084` — Stop APP-B4 before freeze on physical budget blocker
+
+**Status:** capability audit complete; owner choice required; runtime closed
+
+The pure `.venv` audit enumerates all 27 ordered triples against the accepted
+initial coherences and native routes/amounts. Twenty-four are physically
+executable. EEG, EEE, and EEP fail at the second consecutive E: P starts at
+0.75, the first 0.4375 debit leaves 0.3125, and the next debit is short by
+0.125. These are operationally infeasible rows, never scientific zeros.
+
+Every feasible triple stays inside the native coherence domain. All six G/E/P
+permutations with exact total 31/16 are feasible. No repeated-operation triple
+matches that total.
+
+**Decision:** stop before freeze and present three choices:
+
+1. recommended: 24 unchanged-baseline triples plus reference across three
+   seeds, 75 arms; retain the three E-heavy rows outside the tested domain;
+2. uniformly pre-fund P by 0.5625 through a native H_C-excluded prehistory
+   packet, add unfunded GEP anchors, and run 87 arms with new scaffold controls;
+3. retain an 84-arm registry with three preregistered operationally infeasible
+   rows, accepting that the response landscape cannot be complete.
+
+The audit used two `.venv` processes and zero PyGRC/model/producer/arm/response
+activity. No choice, freeze, runtime, or commit is inferred.
+
+## 87. `P2-I2-DEC-085` — Select unchanged-baseline APP-B4 panel
+
+**Status:** owner-selected inactive freeze construction active
+
+The owner responds `yes` to the recommended option A. APP-B4 may freeze the 24
+unchanged-baseline executable triples plus one reference at seeds 101, 211,
+and 307: 75 arms in exact deterministic order. EEG, EEE, and EEP remain
+explicitly outside the executable domain and are neither expected outputs nor
+scientific zeros.
+
+The freeze must retain the accepted history-carried topology, initial
+coherences, operation routes/amounts, three slots, source-label-free admission,
+M_H materialization, feedback threshold, response window, contamination and
+restoration rules, `.venv` process identity, cumulative output, one claim, and
+zero retry. It must add no pre-funding, new producer, baseline/dose/admission
+change, or APP-B2 outcome reuse.
+
+Candidate-free validation may construct and inspect registry/arithmetic/source
+bytes but may not import PyGRC, build a model, invoke a producer, generate a
+response, claim the campaign, or assign an APP-B4 result. Return the inactive
+uncommitted package for owner review. Commit and live activation remain closed.
+
+## 88. `P2-I2-DEC-086` — APP-B4 inactive 75-arm freeze disposition
+
+**Status:** technically complete and review-ready uncommitted
+
+The owner-selected 24 feasible ordered triples plus one fresh reference at
+each of seeds 101, 211, and 307 are frozen as one deterministic 75-row
+history-carried registry. EEG, EEE, and EEP remain outside the executable
+unchanged-baseline domain and are neither expected outputs nor scientific
+zeros.
+
+The inactive package binds the accepted routes, amounts, history realization,
+response/estimator, restoration/contamination guards, fresh process/model
+boundary, cumulative output, retained-only reconstruction, lexical repository
+`.venv`, one claim, and zero retry. It preserves the accepted I04 physical-
+order identity and carries each actual APP-B4 operation sequence in a separate
+subordinate projection field. The analysis can distinguish raw cardinality,
+dose-multiset, and within-multiset order effects, but cannot assign operation
+complementarity.
+
+Candidate-free validation passes the 75 rows and inactive lifecycle. The
+construction ledger retains six freeze-builder starts, nine validator starts
+(eight pass and one pre-runtime self-scan failure), one failed focused pure
+identity-projection check, removal of seven inherited absolute shebangs, and
+correction of a seed-101-only aggregate classifier to require all-seed pattern
+agreement before final identity regeneration. Across all of them, PyGRC
+imports, models, producers, arms, responses, claims, and runtime retries remain
+zero.
+
+This is a technical freeze result only. Owner review is required before a
+containing commit. Activation artifact construction, campaign claim, live
+PyGRC simulation, result assignment, and scientific interpretation remain
+closed.
+
+## 89. Pending decision queue
+
+APP-B4 inactive 75-arm freeze is review-ready under DEC-086/CHG-091. APP-B3
+result acceptance/commit, APP-B4 commit/activation/runtime, operation
+complementarity, cross-appendix synthesis, graph mutation, N31+ selection, and
+any next move remain closed.

@@ -3116,3 +3116,138 @@ minimally producer-assisted. Cross-appendix recurrence, participant
 complementarity/cooperation, fully native history, unbounded irreducibility,
 and revision of the main P2-I2 conclusion remain blocked. Owner result
 acceptance and result commit remain pending.
+
+### 18.9 `P2-I2-APP-B3` — Result implication-boundary audit
+
+**Status:** technically complete under DEC-082/CHG-087; owner result review
+pending; no new runtime or retrofitted APP-B2 control
+
+Before APP-B2 result acceptance, four implications are checked from the
+accepted freeze, retained 99-arm aggregate, source/dataflow, and additive
+closeout only:
+
+1. determine whether the frozen matrix already contains a three-admission,
+   quantity-, timing-, and history-length-matched alternative to `GEP`;
+2. establish that the fail-open analysis was post-run only and influenced no
+   scheduling, continuation, arm receipt, retry, response, or runtime byte;
+3. reconcile every active-history token one-to-one with the exact registered
+   physical G/E/P arrival receipt and prove zero unexpected or duplicate
+   admission; and
+4. project the strongest positive claim as mode-specific and
+   `scaffold_dependent`, while retaining state/hybrid as realization-bounded
+   negatives.
+
+Absence of the matched three-token alternative does not invalidate the frozen
+proper-subset result and must not be repaired inside APP-B2. It blocks
+`operation complementarity` and records the matched-cardinality discriminator
+as the highest-priority possible next test. APP-B3 may parse retained output
+and inspect source, but it may not import PyGRC, construct a model, call a
+producer, regenerate an arm or response, change an APP-B2 byte, or commit a
+result.
+
+The audit passes the fail-open isolation, active-history reconciliation, and
+claim-projection checks. Analysis is called once only after the complete
+campaign loop; no child or loop body calls it; all 99 fixed rows remain in
+exact order with zero retry; and corrected responses, estimators, and controls
+are unchanged from the retained embedded values. Corrected validity reads
+native receipts and no authored validity boolean.
+
+Active history contains 123/123 expected physical admissions, exactly 41 each
+of G/E/P, with zero unexpected, duplicate, or route/amount/event provenance
+mismatch. Twelve admissions are removed by four frozen history-clearing
+interventions, leaving 111/111 expected final active tokens. Ingestion occurs
+only inside the physical-operation loop, so materialization, neutral,
+response/controller, diversion, state-intervention, private-partition, and
+save/load/reset activity admit zero tokens.
+
+No matched repeated-operation three-admission control exists. Therefore the
+supported projection is `bounded history-carried P2-I2-grounded
+three-operation shared-pool composition candidate`, with
+`support_status=scaffold_dependent`; operation complementarity remains
+unresolved and unclaimed. State and hybrid remain unsupported only in their
+frozen realizations. The hybrid is a causal negative—its carrier operates, but
+E is nonessential at the registered response boundary—not an implementation
+failure.
+
+### 18.10 `P2-I2-APP-B4-H01` — Ordered three-token discriminator
+
+**Status:** exact inactive 75-arm freeze technically complete under
+DEC-086/CHG-091; owner review, commit, activation, and APP-B4 runtime remain
+closed
+
+APP-B4 asks whether the supported history-carried response is explained by
+three admitted events alone or depends on their native dose composition and
+ordering. The prospective complete panel is the ordered product
+`{G,E,P}^3`, with the accepted native operation amount attached to each
+symbol, identical three event slots, the accepted history realization and
+response boundary, and fresh seeds 101, 211, and 307. Fresh reference rows are
+included. A full freeze would therefore contain 84 arms: 27 ordered triples
+plus one reference, each at three seeds.
+
+No repeated native triple can simultaneously match the GEP total amount:
+
+```text
+G = 10/16, E = 7/16, P = 14/16, GEP = 31/16
+n_G + n_E + n_P = 3 and 10 n_G + 7 n_E + 14 n_P = 31
+implies n_G = n_E = n_P = 1
+```
+
+Accordingly the panel can test raw cardinality, native dose multiset, and
+within-multiset ordering, but cannot by itself establish operation identity
+independent of dose/history encoding. `operation complementarity` remains
+blocked regardless of outcome.
+
+Before freezing or running the panel, APP-B4 must audit whether every repeated
+physical sequence is executable from the unchanged accepted baseline and
+native budgets. If any sequence requires added reservoir funding, baseline
+change, altered operation dose, new history admission, or other scaffold, work
+stops after the audit and returns the exact options for owner direction. No
+silent provisioning or reduced panel is allowed.
+
+If a complete unchanged-baseline panel is feasible, one separately committed
+one-claim/zero-retry fresh-runtime campaign may be constructed using only the
+repository `.venv`. Interpretation is bounded:
+
+- response invariant across repeated and distinct triples supports a raw
+  three-event/cardinality explanation;
+- response variation between native-dose multisets excludes raw cardinality
+  but may reflect quantity composition;
+- variation among permutations of one multiset establishes order dependence;
+- uniqueness of GEP supports a specific ordered quantitative-history pattern,
+  not operation complementarity.
+
+APP-B4 may not modify or retry APP-B2, reinterpret state/hybrid modes, claim
+generic impossibility, or begin runtime before its capability audit and exact
+freeze are complete.
+
+The pure unchanged-baseline audit finds 24 executable triples and three
+physical budget failures: EEG, EEE, and EEP. After the first E, P falls from
+0.75 to 0.3125; a consecutive second E requires 0.4375 and is short by 0.125.
+Those rows are operationally outside the unchanged-baseline domain and cannot
+be treated as scientific zeros. Every other triple stays within the native
+coherence interval; all six exact-total G/E/P permutations are feasible.
+
+The owner selects the unchanged-baseline panel. APP-B4 may now freeze exactly
+the 24 feasible ordered triples plus one reference across seeds 101, 211, and
+307, for 75 arms. EEG, EEE, and EEP remain explicitly outside the executable
+domain and cannot appear as zeros or missing expected outputs. No pre-funding,
+baseline change, dose change, new admission rule, or APP-B2 evidence reuse is
+allowed. Freeze construction and candidate-free validation remain
+non-scientific; activation, claim consumption, and runtime require the frozen
+package to be retained at a clean commit.
+
+The inactive freeze and candidate-free validator now satisfy that boundary.
+They bind 72 feasible-triple rows and three fresh references, all accepted
+history/response/restoration machinery, one campaign attempt, zero retry,
+fresh process/model per arm, cumulative output, retained-only reconstruction,
+repository-relative paths, and lexical `.venv/bin/python` parent/child
+launching. The accepted I04 physical-order identity remains unchanged; each
+actual three-token sequence is carried separately as subordinate APP-B4
+measurement-projection identity. Activation, claim, output, and reconstruction
+are absent. The construction generated zero PyGRC import, model, producer,
+arm, or response and assigns no result.
+
+All aggregate discriminator booleans fail closed unless the categorical
+response pattern agrees across seeds 101, 211, and 307. Exact numeric response
+invariance is reported separately and cannot be inferred from categorical
+agreement.

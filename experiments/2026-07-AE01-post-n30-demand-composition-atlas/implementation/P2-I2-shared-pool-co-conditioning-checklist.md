@@ -42,8 +42,15 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-B2` is technically complete under
-DEC-080/CHG-085 and awaits owner result review. After the retained DEC-077
+**Current activity iteration:** `P2-I2-APP-B4` inactive 75-arm freeze is
+technically complete and review-ready under DEC-086/CHG-091. It contains the
+24 unchanged-baseline executable triples plus one reference across three
+seeds. EEG, EEE, and EEP remain outside the executable domain. Candidate-free
+validation passes with zero PyGRC/model/producer/arm/response activity;
+activation, commit, campaign claim, runtime, and result remain closed.
+
+`P2-I2-APP-B2` is technically complete under DEC-080/CHG-085 and awaits owner
+result review. After the retained DEC-077
 failure, the owner-authorized venv-only recovery was retained at `eb2d480`.
 Every parent, validator, child, reconstruction, and correction process used the
 lexical repository `.venv/bin/python`; no global Python invocation was
@@ -267,7 +274,7 @@ Rules:
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
 | `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 retained at `1f69816`; APP-A2 activation retained at `e61dacc`; 19/19 valid arms, byte-identical reconstruction, primary/causal relations passed, closeout 53/53 | Owner-accepted and closed under DEC-074/CHG-079; one containing closeout commit authorized |
-| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0/B1 complete; original APP-B2 start retained failed-closed; venv-only replacement completes 99/99 fresh PyGRC arms; retained-only corrected closeout supports history mode only | Technically complete under DEC-080/CHG-085; owner result acceptance and result commit closed |
+| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0/B1 complete; original APP-B2 start retained failed-closed; venv-only replacement completes 99/99 fresh PyGRC arms; APP-B3 passes implication-boundary audit; APP-B4 inactive 75-arm ordered-token discriminator freeze validates candidate-free | APP-B2 result remains technically review-ready under DEC-082/CHG-087; APP-B4 freeze is review-ready under DEC-086/CHG-091; operation complementarity unresolved; commit/activation/next runtime closed |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3947,6 +3954,12 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-083` | Owner responds `yes, always use .venv, never global python` to the exact bounded recovery proposal | `appendix_b2_in_place_venv_launcher_failure_receipt_correction_and_single_replacement` | Preserve original claim/failure; invoke every parent/validator/child lexically through `.venv/bin/python`; prohibit resolved/global launch; persist aggregate child-failure receipts before continuation; candidate-free validate; create necessary clean-HEAD correction commit; permit one replacement claim | Scientific operations/values/matrix/thresholds/estimator/controls/claim ceiling unchanged; correction validation must run zero model/arm/response; replacement has 99 one-attempt children and zero child retry | DEC-077, owner instruction, accepted base freeze, original permanent claim/failure, repository `.venv`, graph read-only | Recovery authorized in place inside APP-B2; replacement result acceptance/commit remain closed |
 | `P2-I2-CHG-084` | First retained-output closeout audit finds all 99 child receipts present but the operational validator assumes reduced event lists, trusts non-append-ordered `packet_records[-1]`, and fails to gate terminal support on matrix validity | `appendix_b2_retained_only_operational_projection_and_terminal_gate_correction` | Preserve aggregate and original reconstruction; validate operation execution from native step-bookkeeping processed kinds/IDs plus frozen route/amount identities; classify legacy packet-record projection non-authoritative; require matrix completeness/all-arm validity before any supported mode/terminal; reconstruct additively with zero PyGRC/runtime regeneration | Runtime campaign remains 99/99 fresh models, zero child retry/failure; original analysis reports matrix/all-arm false and therefore has no valid conclusion authority; correction may change only validity and terminal projection from retained receipts, not responses, estimator values, controls, or runtime bytes | DEC-078/CHG-083, replacement aggregate, original reconstruction, frozen operation registry, accepted PyGRC bookkeeping schema | Active in APP-B2; corrected retained-only closeout/validation required before owner result review; no rerun or result commit |
 | `P2-I2-CHG-085` | Corrected retained-only projection and independent closeout validation complete | `appendix_b2_runtime_result_and_corrected_closeout` | Bind the one replacement aggregate, historical reconstruction, additive corrected closeout, exact mode-separated responses/controls, runtime counts, and claim ceiling; synchronize checklist, hypothesis, report, and decision projections | 99/99 fresh models and operationally valid arms; zero child failure/retry; history-carried margin 1 and supported; state-carried margin -1 and hybrid margin 0, both unsupported; closeout regenerates zero PyGRC/model/producer/arm/response | DEC-079/CHG-084, replacement claim/aggregate, original reconstruction, corrected analysis source/closeout, closeout validation | Technically complete and review-ready uncommitted; owner result acceptance and result commit closed |
+| `P2-I2-CHG-086` | Owner supplies four serious pre-acceptance validation issues for APP-B2 | `appendix_b3_retained_evidence_implication_boundary_audit` | Audit frozen matched-cardinality alternatives; prove fail-open analysis isolation; reconcile H_C token admission exactly; narrow positive wording to mode-specific scaffold dependence | Retained-evidence/source inspection only; zero PyGRC/model/producer/arm/response generation; APP-B2 runtime and corrected scientific bytes immutable | DEC-080/CHG-085, owner review, committed APP-B2 freeze/runtime/correction/closeout | APP-B3 active; acceptance, commit, and any matched-cardinality runtime remain closed |
+| `P2-I2-CHG-087` | APP-B3 pure retained-evidence audit completes all four review dispositions | `appendix_b3_implication_boundary_result` | Retain exact isolation/H_C reconciliation; disclose absent matched-cardinality alternative; project history-carried scaffold-dependent claim and frozen-realization negatives | 123/123 physical admissions, 111/111 final tokens, zero unexpected/duplicate/excluded admissions; fail-open post-run only; zero PyGRC/model/producer/arm/response generation | DEC-081/CHG-086, APP-B3 validator/audit/report, unchanged APP-B2 hashes | Technically complete and review-ready uncommitted; owner acceptance/commit and possible next discriminator closed |
+| `P2-I2-CHG-088` | Owner directs addition of the proposed ordered three-token alternative | `appendix_b4_ordered_three_token_discriminator_entry` | Add hypothesis/checklist first; audit unchanged-baseline feasibility and budgets for all `{G,E,P}^3`; freeze 84 fresh history arms only if complete panel is natively executable | Documentation plus capability/source/budget audit only initially; zero APP-B4 model/arm/response; no silent funding, dose change, reduced panel, or APP-B2 retrofit | DEC-082/CHG-087, accepted APP-B1 freeze and APP-B2 history realization, user direction `ok, then add it` | APP-B4 capability audit active; freeze/runtime/commit and operation-complementarity claim closed |
+| `P2-I2-CHG-089` | APP-B4 unchanged-baseline capability audit finds three physical budget failures | `appendix_b4_panel_feasibility_blocker_and_owner_choice` | Retain exact 27-sequence arithmetic; classify EEG/EEE/EEP operationally infeasible; return unchanged 75-arm, pre-funded 87-arm, and incomplete 84-arm options without choosing | Two pure `.venv` audit starts; 24 feasible, 3 infeasible; zero PyGRC/model/producer/arm/response; no freeze/runtime | DEC-083/CHG-088, accepted registration/baseline/routes/amounts, APP-B4 capability artifact/report | Stopped before freeze; owner panel choice required; recommendation is unchanged-baseline 75-arm panel |
+| `P2-I2-CHG-090` | Owner responds `yes` to freezing the recommended option A | `appendix_b4_unchanged_baseline_75_arm_freeze_authority` | Freeze exactly 24 executable triples plus reference across three seeds; bind exclusions, accepted machinery, one-shot lifecycle, and bounded analysis; candidate-free validate and return inactive package | Freeze/validation only; zero PyGRC/model/producer/arm/response; no pre-funding, baseline/dose/admission change, or APP-B2 runtime reuse | DEC-084/CHG-089, capability artifact/report, owner selection | Inactive freeze construction active; commit/activation/runtime/result remain closed |
+| `P2-I2-CHG-091` | APP-B4 exact inactive freeze construction and candidate-free validation complete | `appendix_b4_inactive_75_arm_freeze_result` | Bind deterministic 75-row registry, accepted machinery and envelope identity, transitive hashes, one-shot lifecycle, all-seed fail-closed classifiers, and explicit excluded domain; retain all construction diagnostics | Six freeze-builder starts; nine validator starts with one pre-runtime self-scan failure; one focused pure projection failure, seven absolute shebangs, and one seed-101-only classifier projection corrected before runtime; final inactive validation passes; zero PyGRC/model/producer/arm/response | DEC-085/CHG-090, inactive freeze/validation, exact sources and report, unchanged accepted authorities | Technically complete and review-ready uncommitted; commit/activation/claim/runtime/result remain closed |
 
 ## 19. Evidence ledger
 
@@ -4717,7 +4730,109 @@ Evidence: [APP-B2 result report](../reports/P2-I2-APP-B2-result.md),
 [corrected retained-only closeout](../contracts/p2-i2/app-b2-corrected-analysis-and-closeout.json),
 and [closeout validation](../contracts/p2-i2/app-b2-closeout-validation.json).
 
-### 21.4 Stop and reopen conditions
+### 21.4 `P2-I2-APP-B3` — Pre-acceptance implication-boundary audit
+
+- [x] Record the owner review as DEC-081/CHG-086 before running the audit.
+- [x] Prove whether a frozen three-admission, quantity/timing/history-length-
+  matched alternative to GEP exists; do not retrofit one if absent.
+- [x] Prove the original fail-open projection was post-run only and could not
+  affect arm scheduling, continuation, retry, receipt retention, or outcomes.
+- [x] Derive corrected validity from native identities, registered routes and
+  amounts, queue/contamination/restoration receipts, never authored validity.
+- [x] Reconcile expected physical G/E/P admissions to actual H_C provenance
+  one-to-one across all 99 arms, with zero unexpected and duplicate admissions.
+- [x] Prove materialization, neutral, response, controller, diversion, state-
+  intervention, private-partition, and save/load/reset activity cannot enter
+  H_C.
+- [x] Freeze the strongest positive wording as bounded history-carried P2-I2-
+  grounded three-operation shared-pool composition candidate with
+  `support_status=scaffold_dependent`.
+- [x] Retain state/hybrid negatives as frozen-realization statements and record
+  the hybrid result as causal rather than an implementation failure.
+- [x] Return one uncommitted audit artifact/report with zero PyGRC/model/
+  producer/arm/response generation.
+
+APP-B3 result:
+
+```text
+matched three-admission alternative registered = false
+operation complementarity = unresolved / not claimed
+fail-open analysis stage = after all 99 child attempts
+arms retried, removed, or outcome-reclassified = 0
+corrected authored-valid reads = 0
+
+expected/actual physical H_C admissions = 123/123
+G/E/P admissions = 41/41/41
+unexpected/duplicate admissions = 0/0
+route-or-event provenance mismatches = 0
+explicitly cleared admissions = 12
+expected/actual final active tokens = 111/111
+excluded-activity admissions = 0
+
+strongest positive claim = bounded history-carried P2-I2-grounded
+                           three-operation shared-pool composition candidate
+support_status = scaffold_dependent
+APP-B3 PyGRC/models/producers/arms/responses = 0/0/0/0/0
+validator starts = 6 (2 check-only, 4 artifact generation)
+superseded uncommitted audit artifacts = 3
+```
+
+Evidence: [APP-B3 implication-boundary audit](../contracts/p2-i2/app-b3-implication-boundary-audit.json),
+[validator](../scripts/p2_i2_app_b3_validate.py), and
+[audit report](../reports/P2-I2-APP-B3-implication-boundary-audit.md).
+
+### 21.5 `P2-I2-APP-B4` — Ordered three-token discriminator
+
+- [x] Record DEC-083/CHG-088 and APP-B4-H01 before capability work.
+- [x] Audit unchanged-baseline native coherence budgets and route reuse for all
+  27 ordered G/E/P triples without constructing a model or response.
+- [x] Prove whether every triple can execute using the accepted native
+  operation amounts, three slots, topology, and history admission unchanged.
+- [x] If any triple is infeasible, stop before freeze/runtime and return exact
+  provisioning versus reduced-panel choices; do not silently choose.
+- [x] Record owner selection of the unchanged-baseline feasible panel before
+  freeze construction.
+- [x] Freeze exactly 24 feasible triples plus reference across three seeds as
+  one 75-arm history-only campaign with fresh process/model per arm.
+- [x] Reuse accepted response, history, restoration, contamination, one-shot,
+  cumulative-output, and retained-only reconstruction machinery.
+- [x] Classify raw cardinality, dose-multiset, and within-multiset ordering
+  separately; never infer operation complementarity from this panel.
+- [x] Return the uncommitted freeze or capability blocker for owner review
+  before any live APP-B4 campaign.
+
+APP-B4 entry counts:
+
+```text
+capability/budget audit starts = 2 (1 check-only, 1 retained output)
+ordered triples audited / feasible / infeasible = 27/24/3
+infeasible = EEG, EEE, EEP
+frozen triples / arms = 24/75
+freeze-builder starts = 6
+freeze-validator starts = 9 (8 passed, 1 failed before runtime)
+focused pure identity-projection tests = 1 failed before runtime
+campaign claims / parents / children = 0/0/0
+PyGRC imports / models / producers / arms / responses = 0/0/0/0/0
+APP-B2 or APP-B3 bytes changed by APP-B4 freeze construction = 0
+```
+
+Owner choices:
+
+```text
+A (recommended): unchanged baseline, 24 triples + reference x 3 seeds = 75 arms
+B: uniform native P pre-funding 0.5625, full panel + anchors = 87 arms
+C: 84-arm registry with 3 preregistered operationally infeasible rows
+```
+
+Evidence: [APP-B4 capability audit](../contracts/p2-i2/app-b4-unchanged-baseline-capability-audit.json),
+[capability validator](../scripts/p2_i2_app_b4_capability_audit.py),
+[capability report](../reports/P2-I2-APP-B4-capability-audit.md),
+[inactive freeze](../contracts/p2-i2/app-b4-inactive-75-arm-freeze.json),
+[inactive validation](../contracts/p2-i2/app-b4-inactive-freeze-validation.json),
+[freeze validator](../scripts/p2_i2_app_b4_validate.py), and
+[inactive-freeze report](../reports/P2-I2-APP-B4-inactive-freeze.md).
+
+### 21.6 Stop and reopen conditions
 
 Stop autonomous progression if any of the following occurs:
 

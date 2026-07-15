@@ -1,0 +1,38 @@
+{
+  "artifact_id": "P2-I2-APP-B4-INACTIVE-FREEZE-VALIDATION",
+  "artifact_version": "1.0",
+  "canonical_payload_digest": "fa5267eea4053e523687274158da514f189364dd861889810614ff4b35a58fc0",
+  "checks": {
+    "accepted_envelope_identity_projection_cases": 1,
+    "authority_and_implementation_hashes": 15,
+    "candidate_free_source_files": 3,
+    "canonical_freeze_and_digest": true,
+    "excluded_infeasible_sequences": 3,
+    "exclusive_claim_required": true,
+    "feasible_sequences": 24,
+    "lexical_venv_parent_and_child": true,
+    "operation_complementarity_blocked": true,
+    "ordered_three_token_rows": 72,
+    "outcome_quarantine": true,
+    "output_absence": true,
+    "pure_classifier_cases": 4,
+    "reference_rows": 3,
+    "registry_rows": 75,
+    "separate_activation_required": true
+  },
+  "lifecycle": {
+    "campaign_authorized": false,
+    "commit_authorized": false,
+    "freeze_active": false,
+    "owner_review_required": true
+  },
+  "process_counts": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "models": 0,
+    "producers": 0,
+    "responses": 0,
+    "validator_processes_this_start": 1
+  },
+  "status": "passed_inactive_owner_review_pending"
+}
