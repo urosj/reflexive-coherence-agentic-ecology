@@ -134,6 +134,10 @@ Phase 2 gate reviews:
   and corrects the nested worker launch in place under existing I08A/I08. The
   child venv/dependency suite passes 8/8 and final candidate-free validation
   passes 18/18; no new iteration, cycle, or scientific projection is created.
+- [P2-I2 I08 cumulative execution ledger](P2-I2-I08-execution.md)
+  is the single narrative campaign record rather than one report per entry.
+  It currently retains the accepted state-carried reference-empty scientific
+  zero at 1/234 evaluable; interpretation remains closed.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

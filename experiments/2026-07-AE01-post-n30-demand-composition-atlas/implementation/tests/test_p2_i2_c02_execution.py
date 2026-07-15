@@ -5,6 +5,8 @@ import os
 from pathlib import Path
 import sys
 
+import pytest
+
 
 ROOT = Path(__file__).resolve().parents[4]
 SCRIPTS = ROOT / "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts"
@@ -111,3 +113,25 @@ def test_c01_claim_and_outputs_are_not_mutated_by_translation() -> None:
     assert audit["mechanical_disposition"]["matrix_entries_evaluable"] == 0
     assert audit["continuation_boundary"]["successor_cycle_id"] == "P2-I2-C02"
     assert (ROOT / c02.C01_CLAIM_REL).is_file()
+
+
+def test_only_exact_accepted_entry_001_checkpoint_crosses_execution_head() -> None:
+    activation = c02.load_json(ROOT / c02.ACTIVATION_REL)
+    entry = c02.load_json(ROOT / c02.MATRIX_REL)["entries"][0]
+    output_relative = entry["retry_output_path"]
+    record = c02.load_json(ROOT / output_relative)
+    assert c02._validate_terminal_execution_authority(
+        ROOT, activation, entry, 2, "f" * 40, output_relative, record,
+    ) == "accepted_checkpoint_head"
+    c02._validate_retry(
+        ROOT,
+        entry,
+        "f" * 40,
+        record["runtime_binding_receipt"]["execution_source_sha256"],
+    )
+    drifted = json.loads(json.dumps(record))
+    drifted["runtime_binding_receipt"]["owner_authorized_full_HEAD"] = "0" * 40
+    with pytest.raises(c02.ContractError, match="historical HEAD not explicitly admitted"):
+        c02._validate_terminal_execution_authority(
+            ROOT, activation, entry, 2, "f" * 40, output_relative, drifted,
+        )

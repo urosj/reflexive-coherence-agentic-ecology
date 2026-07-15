@@ -1,7 +1,7 @@
 {
   "C01_scientific_projection_change_count": 0,
   "artifact_id": "P2-I2-C02-EXECUTION-BINDING-RECEIPT",
-  "artifact_version": "1.1.0",
+  "artifact_version": "1.2.0",
   "bound_file_count": 34,
   "bound_files": [
     {
@@ -137,12 +137,12 @@
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
       "role": "C02_external_supervisor_and_worker",
-      "sha256": "dd49fa01af1697327a5ee22ab77cf9f90a94c9371a841a98ebd059d7503f5d40"
+      "sha256": "f316c5c9f90037b2a8a8fb79a677640d0ba3aa382f343e8f3d91faa9484d0606"
     },
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py",
       "role": "C02_candidate_free_tests",
-      "sha256": "4e97b419fe5482b341b6f0079af1793969049c6ddbd5878cd14f93d5e58b4392"
+      "sha256": "f376ac308b92a87e5155ab65431dc8d3f7334d2d48cb8782c4b7c1f77e083940"
     },
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_validate.py",
@@ -175,10 +175,10 @@
       "sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db"
     }
   ],
-  "canonical_payload_digest": "51baa5d3d1695090cb65f3b05305cc7d40bd18ba31cfb2e809afeeed65eba871",
+  "canonical_payload_digest": "15db799bbbfc9f4c871f5527f177d6e64490eff2974ebc12c9f6dec23d3f2f42",
   "cycle_id": "P2-I2-C02",
   "iteration_id": "P2-I2-I08A",
   "run_matrix_semantic_digest": "3023ce84aa8c894b5fb4a32c0f9bdbea53d6828ef57f1be8be474503f8ffa052",
   "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
-  "status": "active_in_place_venv_corrected_binding"
+  "status": "active_checkpoint_continuation_binding"
 }

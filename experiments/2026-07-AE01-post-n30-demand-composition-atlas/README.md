@@ -130,7 +130,10 @@ retained as an eligible pre-model infrastructure failure caused by resolving
 the nested worker command out of the active repository venv. CHG-050 corrects
 that launcher in place under existing I08A/I08: 8/8 child-focused tests and
 18/18 candidate-free validation pass, with the exact correction commit and
-same-entry attempt-2 preflight next.
+same-entry attempt-2 preflight next. Commit `6b920fb` binds the correction; the
+preflight and only eligible retry then succeed through `.venv`, yielding a
+valid scientific-zero terminal for the state-carried reference-empty row.
+C02 is 1/234 evaluable and stopped before entry 2 with interpretation null.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself

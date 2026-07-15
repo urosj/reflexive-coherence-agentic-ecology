@@ -1787,6 +1787,26 @@ candidate-free checks. The retained attempt-1 bytes and all zero-state counters
 remain exact; no PyGRC, model, candidate, control, or scientific-window
 operation occurs. This is infrastructure conformance evidence only.
 
+Commit `6b920fb` binds that correction. The exact attempt-2 preflight passes,
+and the sole same-entry retry completes under `.venv/bin/python -B`. The
+retained state-carried `reference_pool_empty`, seed-101 terminal is evaluable:
+the response window is valid, queues are empty, measured B gain equals the
+registered native packet gain at `0.0`, and the record assigns scientific zero.
+This is one registered row of evidence, not a mode or hypothesis conclusion;
+`R01`–`R05` and scientific interpretation remain unassigned until the frozen
+downstream stages.
+
+The owner accepts this terminal and directs that narrative reporting be
+cumulative rather than one file per entry. Because acceptance precedes the
+continuation commit, the existing manifest's one-global-HEAD equality must be
+corrected without broadening scientific authority. Existing I08 may admit only
+this exact checkpoint by entry, attempt, old HEAD, claim/output hashes, source,
+and policy; entries 2–234 must share the next committed authority HEAD. Any
+unlisted historical head or byte mismatch remains nonevaluable and fails
+closed. No further checkpoint commit occurs before the cumulative manifest.
+The exact admission and historical retry-provenance path pass 9/9 focused
+tests through `.venv`, including fail-closed rejection of an unlisted old HEAD.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

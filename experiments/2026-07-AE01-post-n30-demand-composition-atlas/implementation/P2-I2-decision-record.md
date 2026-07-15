@@ -2787,6 +2787,22 @@ and no scientific window. The only remaining live step is the exact committed
 attempt-2 preflight followed by the already-frozen same-entry retry; entry 2
 remains closed.
 
+Commit `6b920fb` retains the exact correction. Its attempt-2 preflight passes
+and the only eligible same-entry retry succeeds through the repository venv.
+The resulting reference-empty terminal has a valid zero-gain response window
+and null scientific interpretation. CHG-050 is complete at 1/234 evaluable;
+entry 2 remains closed for review and no new iteration or cycle was created.
+
+The owner accepts entry 1 and rejects one narrative report per matrix entry.
+CHG-051 therefore keeps the preregistered machine receipt paths but uses one
+cumulative I08 execution ledger. Since the accepted checkpoint necessarily
+precedes the continuation commit, the manifest may admit only that exact
+entry-001 attempt-2 terminal by old HEAD and immutable claim/output/source/
+policy hashes. Entries 2–234 must bind one new current execution HEAD; unknown
+historical heads fail closed. This is an in-place continuation rule, not I08B.
+The implementation passes 9/9 focused `.venv` tests, including exact accepted
+checkpoint reconstruction and refusal of an unknown historical HEAD.
+
 ## 54. Pending decision queue
 
 No item below is decided by this record yet:

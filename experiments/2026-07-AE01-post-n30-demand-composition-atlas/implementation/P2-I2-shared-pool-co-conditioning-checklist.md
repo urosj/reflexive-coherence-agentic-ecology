@@ -18,7 +18,9 @@ failure: the new supervisor resolved the lexical `.venv/bin/python` symlink to
 the system interpreter for its child. The owner requires an in-place
 infrastructure correction under existing I08A/I08, not a new iteration. That
 correction now passes 8/8 focused tests and 18/18 candidate-free validation;
-the exact correction commit, attempt-2 preflight, and same-entry retry remain.
+commit `6b920fb` retains it, the exact attempt-2 preflight passes, and the
+same-entry retry yields the first valid C02 terminal. Entry 1 is therefore
+1/234 evaluable; work stops before entry 2 for review.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -3323,9 +3325,11 @@ actual commit `12ff83be7…`; no claim or entry operation occurs. Evidence:
   HEAD is an operator fault unrelated to the experiment. One corrected
   read-only preflight is authorized; the failed command remains retained and
   is not treated as a successful preflight.
-- [ ] Invoke only corrected I08 sequence entry 1 under its exact normalized
+- [x] Invoke only corrected I08 sequence entry 1 under its exact normalized
   command. Retain either the externally supervised success output or failure
-  receipt and stop for review before entry 2.
+  receipt and stop for review before entry 2. Attempt 2 succeeds with an
+  attested child, valid fixed window, empty queues, measured/registered gain
+  `0.0`, and `scientific_zero=true`; interpretation remains null.
 - [x] Retain the corrected-preflight entry-001 attempt-1 claim and external
   failure receipt: `ModuleNotFoundError: matplotlib`, all pre-model counters
   zero, output absent, and receipt-derived retry eligibility true.
@@ -3343,8 +3347,24 @@ actual commit `12ff83be7…`; no claim or entry operation occurs. Evidence:
 - [x] Candidate-free validate the in-place correction: 8/8 focused tests and
   18/18 validation checks pass with zero PyGRC, model, candidate, control, or
   scientific-window activity and zero infrastructure retries.
-- [ ] Commit the exact correction package, exact-preflight attempt 2, and
-  consume no more than the already-frozen same-entry retry.
+- [x] Commit the exact correction package at `6b920fb`, exact-preflight attempt
+  2, and consume no more than the already-frozen same-entry retry. Retain claim
+  SHA-256 `6a8e429d…` and success SHA-256 `ece9e4df…`; stop before entry 2.
+- [x] Record owner acceptance of entry 1 and the direction not to create one
+  narrative file per entry. Keep the preregistered governed claim/output path
+  per matrix entry, but maintain one cumulative I08 execution ledger.
+- [x] Admit the accepted entry-001 checkpoint across the necessary authority
+  commit by exact old HEAD, entry/attempt, claim hash, output hash, source hash,
+  and policy hash; do not weaken current-head authority for entries 2–234.
+- [x] Replace the manifest's global single-HEAD assumption with the exact
+  admitted-checkpoint rule. Unknown or mismatched historical heads fail closed.
+- [x] Candidate-free test the continuation authority and historical retry
+  provenance path: 9/9 focused tests pass through `.venv`, including refusal of
+  an unlisted historical HEAD.
+- [ ] Commit the continuation authority, then run
+  entries 2–234 at that one committed HEAD without per-entry commits. Stop on
+  the first terminal failure/nonevaluable result; build the cumulative manifest
+  only when all 234 exact terminals are evaluable.
 
 ## 14. `P2-I2-I09` — Control resolution
 
@@ -3523,7 +3543,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-047` | C01 entry 1 terminates natively after its permanent claim; owner states the 512 MiB space limit is unnecessary on the 128 GB host | `I08_C01_bounded_incomplete_and_I08A_C02_resource_supervisor_correction` | Retain C01 at 1 claim/0 evaluable; remove only successor `RLIMIT_AS`; externalize native-exit receipt capture; preserve the exact scientific matrix | Complete uncommitted correction: 234 unchanged projections, 29 bound files, 8/8 tests, 18/18 validation, zero blockers and zero candidate/scientific activity | C01 claim/authority/history, 234 scientific projections, receipt-derived retry, runtime/file ceilings, graph/venv/isolation boundaries | Review-ready; no C02 activation, execution, commit, or scientific evidence |
 | `P2-I2-CHG-048` | Owner accepts I08A and directs steps 2–4, explicitly omitting a duplicate activation-review checkpoint | `I08A_owner_acceptance_deterministic_activation_commit_and_entry_001_resumption` | Create one hash-bound activation, validate candidate-free, commit the complete package, run exact post-commit preflight, then invoke only corrected entry 1 | Activation passes 19/19 with zero blockers and zero candidate/scientific activity; commit, preflight, and one live entry remain | Accepted I08A hashes, C01 bounded-incomplete history, no-second-review direction, full-HEAD command rule, external supervisor | Commit authorized; no entry 2, manifest, interpretation, or result commit |
 | `P2-I2-CHG-049` | First post-commit C02 preflight is supplied a transcribed full HEAD that differs from the actual resulting commit | `I08A_postcommit_preflight_failed_start` | Retain exact command/error and prove zero claim/output/failure/PyGRC/candidate activity; retry only after owner direction | Failed closed at HEAD equality check; owner classifies it as unrelated operator fault and authorizes one immediate corrected preflight | DEC-051, committed activation, exact output absence, zero runtime counters, owner retry direction | Corrected read-only preflight authorized; entry 1 remains untouched until it passes |
-| `P2-I2-CHG-050` | Corrected-preflight entry 1 proves the C02 child launcher resolves `.venv/bin/python` to system Python, repeating the I05C anti-pattern | `I08A_in_place_active_venv_child_launcher_regression_correction` | No new iteration/cycle; preserve eligible failure; apply I05C lexical-command/resolved-identity separation to every governed Python child; validate and bridge only the frozen retry | Attempt 1 retained exactly; 8/8 focused tests and 18/18 candidate-free validation pass with all scientific/runtime counters zero | I05C accepted invariant, C02 claim/failure, same 234 projections, no scientific change, everything-through-venv direction | Exact correction commit and attempt-2 preflight pending; entry 2, manifest, interpretation, and result commit remain closed |
+| `P2-I2-CHG-050` | Corrected-preflight entry 1 proves the C02 child launcher resolves `.venv/bin/python` to system Python, repeating the I05C anti-pattern | `I08A_in_place_active_venv_child_launcher_regression_correction` | No new iteration/cycle; preserve eligible failure; apply I05C lexical-command/resolved-identity separation to every governed Python child; validate and bridge only the frozen retry | Attempt 1 retained exactly; 8/8 tests and 18/18 validation pass; commit `6b920fb`, attempt-2 preflight, and retry yield one valid evaluable terminal | I05C accepted invariant, C02 attempt-1 claim/failure, attempt-2 claim/success, same 234 projections, everything-through-venv direction | CHG-050 complete; 1/234 evaluable, entry 2 and manifest closed pending review; interpretation remains null |
+| `P2-I2-CHG-051` | Owner accepts entry 1 and rejects one narrative report per entry; the accepted checkpoint necessarily precedes the continuation execution HEAD | `I08_exact_checkpoint_admission_and_cumulative_reporting` | No new iteration/cycle; admit only the exact accepted entry-001 terminal across the continuation commit; bind entries 2–234 to one current HEAD; use one cumulative I08 ledger | Exact checkpoint admission implemented; 9/9 focused tests pass, including unknown historical-HEAD refusal | Accepted entry-001 claim/output hashes, manifest fail-closed completion rule, exact matrix, owner acceptance | Commit pending; entries 2–234 and manifest remain closed |
 
 ## 19. Evidence ledger
 

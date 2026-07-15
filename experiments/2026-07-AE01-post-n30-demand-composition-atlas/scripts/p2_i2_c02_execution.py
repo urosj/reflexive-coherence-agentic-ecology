@@ -387,7 +387,12 @@ def _relative_failure(entry: Mapping[str, Any], attempt: int) -> str:
     )
 
 
-def _validate_retry(root: Path, entry: Mapping[str, Any], expected_head: str) -> None:
+def _validate_retry(
+    root: Path,
+    entry: Mapping[str, Any],
+    expected_head: str,
+    retry_execution_source_sha256: str | None = None,
+) -> None:
     helpers = _safe_helpers(root)
     failure_path = _relative_failure(entry, 1)
     failure = helpers._read_governed_json(root, failure_path)
@@ -414,7 +419,7 @@ def _validate_retry(root: Path, entry: Mapping[str, Any], expected_head: str) ->
             correction["corrected_authority"]["expected_head_source"]
             == "current_committed_normalized_retry_command"
             and correction["corrected_authority"]["execution_source_sha256"]
-            == sha256(root / SOURCE_REL)
+            == (retry_execution_source_sha256 or sha256(root / SOURCE_REL))
             and activation["infrastructure_correction_sha256"]
             == sha256(root / INFRA_CORRECTION_REL),
             "C02 retry correction authority drift",
@@ -424,6 +429,58 @@ def _validate_retry(root: Path, entry: Mapping[str, Any], expected_head: str) ->
     require(failure["zero_state_counters"]["model_or_adapter_construction_started"] == 0, "C02 retry after model start")
     require(helpers._governed_leaf_exists(root, entry["primary_claim_path"]), "C02 primary claim absent")
     require(helpers._governed_leaf_absent(root, entry["primary_output_path"]), "C02 primary output exists")
+
+
+def _validate_terminal_execution_authority(
+    root: Path,
+    activation: Mapping[str, Any],
+    entry: Mapping[str, Any],
+    attempt: int,
+    expected_head: str,
+    output_relative: str,
+    record: Mapping[str, Any],
+) -> str:
+    binding = record.get("runtime_binding_receipt", {})
+    recorded_head = binding.get("owner_authorized_full_HEAD")
+    require(isinstance(recorded_head, str) and re.fullmatch(r"[0-9a-f]{40}", recorded_head) is not None, "C02 terminal execution HEAD invalid")
+    if recorded_head == expected_head:
+        require(
+            binding.get("execution_source_sha256") == activation["execution_source_sha256"]
+            and binding.get("policy_sha256") == activation["policy_sha256"],
+            "C02 current-head terminal authority drift",
+        )
+        return "current_execution_head"
+    continuation = activation.get("continuation_authority", {})
+    admitted = continuation.get("admitted_prior_terminals", [])
+    require(
+        continuation.get("new_iteration_or_cycle") is False
+        and continuation.get("scientific_change_count") == 0
+        and len(admitted) == 1,
+        "C02 prior-terminal continuation authority absent or broad",
+    )
+    matches = [
+        row for row in admitted
+        if row.get("entry_id") == entry["entry_id"]
+        and row.get("attempt") == attempt
+        and row.get("owner_authorized_full_HEAD") == recorded_head
+        and row.get("output_path") == output_relative
+    ]
+    require(len(matches) == 1, "C02 terminal historical HEAD not explicitly admitted")
+    admission = matches[0]
+    claim_relative = entry["primary_claim_path"] if attempt == 1 else entry["retry_claim_path"]
+    helpers = _safe_helpers(root)
+    require(admission.get("claim_path") == claim_relative, "C02 admitted checkpoint claim path drift")
+    require(
+        helpers._governed_sha256(root, claim_relative) == admission.get("claim_sha256")
+        and helpers._governed_sha256(root, output_relative) == admission.get("output_sha256"),
+        "C02 admitted checkpoint governed byte drift",
+    )
+    require(
+        binding.get("execution_source_sha256") == admission.get("execution_source_sha256")
+        and binding.get("policy_sha256") == admission.get("policy_sha256"),
+        "C02 admitted checkpoint authority byte drift",
+    )
+    return "accepted_checkpoint_head"
 
 
 def _claim_document(root: Path, entry: Mapping[str, Any], attempt: int, head: str, argv: Sequence[str]) -> dict[str, Any]:
@@ -701,16 +758,20 @@ def build_manifest(root: Path, expected_head: str) -> dict[str, Any]:
         if primary:
             require(helpers._governed_leaf_absent(root, entry["retry_claim_path"]), "C02 retry claim exists after primary success")
             require(helpers._governed_leaf_absent(root, _relative_failure(entry, 2)), "C02 retry failure exists after primary success")
-        else:
-            _validate_retry(root, entry, expected_head)
         record = helpers._read_governed_json(root, relative)
+        if not primary:
+            _validate_retry(
+                root,
+                entry,
+                expected_head,
+                record.get("runtime_binding_receipt", {}).get("execution_source_sha256"),
+            )
         identity = record.get("entry_identity", {})
         for key in ("entry_id", "mode", "cell_id", "branch_id", "physical_order_id", "seed"):
             require(identity.get(key) == entry[key], f"C02 terminal identity drift: {key}")
         require(identity.get("attempt") == attempt, "C02 terminal attempt drift")
-        require(
-            record.get("runtime_binding_receipt", {}).get("owner_authorized_full_HEAD") == expected_head,
-            "C02 terminal HEAD drift",
+        execution_authority_kind = _validate_terminal_execution_authority(
+            root, activation, entry, attempt, expected_head, relative, record,
         )
         raw = record.get("raw_response_record", {})
         window = record.get("window_validity_receipt", {})
@@ -718,7 +779,15 @@ def build_manifest(root: Path, expected_head: str) -> dict[str, Any]:
         require(record.get("cycle_id") == CYCLE_ID, "C02 terminal cycle drift")
         require(raw.get("operational_null") is False and window.get("valid") is True, "C02 nonevaluable terminal")
         require(isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(float(value)), "C02 nonnumeric terminal")
-        terminals.append({"entry_id": entry["entry_id"], "attempt": attempt, "output_path": relative, "output_sha256": helpers._governed_sha256(root, relative), "raw_response_value": float(value)})
+        terminals.append({
+            "entry_id": entry["entry_id"],
+            "attempt": attempt,
+            "output_path": relative,
+            "output_sha256": helpers._governed_sha256(root, relative),
+            "raw_response_value": float(value),
+            "execution_authority_kind": execution_authority_kind,
+            "execution_head": record["runtime_binding_receipt"]["owner_authorized_full_HEAD"],
+        })
     require(len(terminals) == 234, "C02 matrix incomplete")
     document = {
         "artifact_id": "P2-I2-C02-EXECUTION-MANIFEST",
@@ -736,6 +805,7 @@ def build_manifest(root: Path, expected_head: str) -> dict[str, Any]:
         "ambiguous_entry_count": 0,
         "terminals": terminals,
         "completion_rule": "exact_matrix_paths_only_all_234_exactly_one_terminal_and_all_evaluable",
+        "execution_head_rule": "current_execution_head_except_exact_owner_accepted_entry_001_checkpoint",
         "scientific_interpretation": None,
     }
     document["canonical_payload_digest"] = digest(document)
