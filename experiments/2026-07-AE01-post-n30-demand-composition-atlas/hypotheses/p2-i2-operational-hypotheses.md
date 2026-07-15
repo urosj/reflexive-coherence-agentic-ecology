@@ -3067,3 +3067,52 @@ The strongest allowed positive conclusion is `bounded P2-I2-grounded
 three-operation shared-pool composition candidate`, with mode-separated
 dispositions and the Appendix B brief's blocked claims. Cross-appendix
 recurrence is never assigned inside Appendix B.
+
+### 18.8 APP-B2 fresh-runtime result
+
+The single replacement campaign authorized after the retained infrastructure
+failure executes the exact frozen 99-arm matrix in 99 fresh repository
+`.venv` child processes and 99 fresh PyGRC models. Every arm is operationally
+valid, every child has a unique process identity, all save/load/reset receipts
+pass, and no child fails or retries. This is new runtime evidence; it does not
+analyze or reuse Appendix A runtime outcomes.
+
+The three seeds reproduce the same mode-separated responses:
+
+```text
+state_carried:   R_GEP = 0,     S = 0.125 (GP), normalized margin = -1
+history_carried: R_GEP = 0.125, S = 0,           normalized margin = 1
+hybrid:          R_GEP = 0.125, S = 0.125 (P),  normalized margin = 0
+```
+
+History-carried mode alone satisfies the complete primary relation, all three
+operation-necessity tests, carrier clamp, private-partition and controller
+controls, identity controls, and its equal-final-C history discriminator.
+State-carried and hybrid modes remain valid negative realizations: state has a
+stronger `GP` proper subset than `GEP`, while hybrid's `P` and `GP` proper
+subsets already reproduce `GEP`, making E non-necessary despite a passing
+factorial discriminator.
+
+The retained aggregate's first embedded analysis is historical only because
+its operational projection reports an invalid matrix while assigning support.
+DEC-079/CHG-084 preserve those bytes and correct only the retained-receipt
+projection: native step-bookkeeping event identities plus frozen route/amount
+receipts establish 99/99 valid arms, and matrix validity becomes a mandatory
+terminal gate. No response, estimator, control, runtime receipt, PyGRC model,
+producer decision, or arm is regenerated.
+
+The technically review-ready terminal is:
+
+```text
+terminal = supported_bounded_candidate
+supported modes = history_carried only
+claim = bounded P2-I2-grounded three-operation shared-pool composition
+        candidate
+```
+
+Participant-lineage plurality is non-load-bearing in the frozen diagnostics;
+physical operation reservoirs remain fixed. History admission remains
+minimally producer-assisted. Cross-appendix recurrence, participant
+complementarity/cooperation, fully native history, unbounded irreducibility,
+and revision of the main P2-I2 conclusion remain blocked. Owner result
+acceptance and result commit remain pending.

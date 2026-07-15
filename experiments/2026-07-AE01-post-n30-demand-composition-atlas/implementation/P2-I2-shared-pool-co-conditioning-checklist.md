@@ -42,26 +42,28 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-B2` bounded infrastructure recovery
-is owner-authorized under DEC-078/CHG-083 after the retained DEC-077 failure.
-Every Python parent/validator/child must use the lexical repository
-`.venv/bin/python`; a resolved/global interpreter path is forbidden even when
-its binary digest matches. The original claim remains permanent. One additive
-launcher/failure-receipt correction, candidate-free validation, necessary
-clean-HEAD commit, and exactly one replacement claim are authorized with all
-scientific bytes unchanged. Final result acceptance and result commit remain
-closed.
+**Current activity iteration:** `P2-I2-APP-B2` is technically complete under
+DEC-080/CHG-085 and awaits owner result review. After the retained DEC-077
+failure, the owner-authorized venv-only recovery was retained at `eb2d480`.
+Every parent, validator, child, reconstruction, and correction process used the
+lexical repository `.venv/bin/python`; no global Python invocation was
+accepted. The one replacement campaign completed 99/99 fresh-process PyGRC
+arms with zero failure or retry. Additive retained-only correction and closeout
+validation establish 99/99 operationally valid arms and history-carried-only
+bounded support. State-carried and hybrid realizations are valid negative
+results. Final result acceptance and result commit remain closed.
 
-Historical failed-start context: `P2-I2-APP-B2` stopped failed-closed under
+Historical failed-start context: `P2-I2-APP-B2` first stopped failed-closed under
 DEC-075/CHG-080. Exact accepted-source audit, response/estimator reuse, the
 99-arm freeze, static outcome quarantine, pure estimator validation, and
 response-free three-mode PyGRC conformance are retained. One validator-only
 syntax diagnostic was corrected in place; no APP-B1 scientific response ran.
 The clean APP-B2 preflight consumed its sole claim, but the first child exited
 before a receipt because the parent dereferenced `.venv/bin/python` to its
-system target. No later arm started and no runtime aggregate exists. DEC-077/
-CHG-082 retain the failure; correction/replacement, final result acceptance,
-and result commit remain closed pending owner direction.
+system target. No later arm started and no runtime aggregate existed in that
+attempt. DEC-077/CHG-082 retain that permanent history. DEC-078/CHG-083 then
+authorized the bounded in-place recovery and one distinct replacement claim;
+the original claim was neither deleted nor reused.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -265,7 +267,7 @@ Rules:
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
 | `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 retained at `1f69816`; APP-A2 activation retained at `e61dacc`; 19/19 valid arms, byte-identical reconstruction, primary/causal relations passed, closeout 53/53 | Owner-accepted and closed under DEC-074/CHG-079; one containing closeout commit authorized |
-| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0/B1 complete; sole APP-B2 claim consumed; first child failed before receipt due venv launcher dereference; no aggregate/result | Failed-closed under DEC-077/CHG-082; additive correction and replacement claim require owner authority; final result acceptance/commit closed |
+| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0/B1 complete; original APP-B2 start retained failed-closed; venv-only replacement completes 99/99 fresh PyGRC arms; retained-only corrected closeout supports history mode only | Technically complete under DEC-080/CHG-085; owner result acceptance and result commit closed |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3943,6 +3945,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-081` | APP-B1 source audit, exact freeze, implementation, pure validation, and response-free conformance complete inside the owner-waived checkpoint boundary | `appendix_b1_audit_freeze_and_response_free_conformance` | Bind exact accepted sources; retain native G/E/P mappings, mode realizations, seven-proper-subset estimator, 99-arm registry, one-shot runner, read-only reconstructor, and candidate-free validation; create the one permitted pre-run authority commit | Final validation passes eleven grouped checks; response-free conformance uses three models, nine operation packets, two materialization packets, and zero feedback/producer/response calls; one validator-only AST diagnostic corrected; zero scientific response tuple/result | DEC-075/CHG-080, accepted I04R2/I05J/I06/I09A/I10/I11, graph `83e3a300`, repository `.venv`, strict prior-appendix outcome quarantine | APP-B1 complete; one pre-run authority commit authorized; APP-B2 one-claim/zero-retry campaign follows only from clean committed HEAD; result acceptance/commit closed |
 | `P2-I2-CHG-082` | APP-B2 clean preflight consumes the sole claim; first child exits before receipt after the parent dereferences the venv launcher to its system target | `appendix_b2_failed_closed_venv_child_launcher_and_missing_failure_receipt` | Preserve the permanent claim and output absence; retain exact failed arm/exit; record model/import/packet/response counts as unobservable; stop without correction or retry | Parent starts 1; child starts 1; child exit 1; retained arm receipts 0; later children 0; aggregate 0; scientific result 0; child stderr/final receipt absent | DEC-075/076, authority HEAD `40fd9be`, permanent claim, exact runner source, repository `.venv` rule | Failed-closed; correction and a replacement claim require explicit owner authority; final result acceptance/commit closed |
 | `P2-I2-CHG-083` | Owner responds `yes, always use .venv, never global python` to the exact bounded recovery proposal | `appendix_b2_in_place_venv_launcher_failure_receipt_correction_and_single_replacement` | Preserve original claim/failure; invoke every parent/validator/child lexically through `.venv/bin/python`; prohibit resolved/global launch; persist aggregate child-failure receipts before continuation; candidate-free validate; create necessary clean-HEAD correction commit; permit one replacement claim | Scientific operations/values/matrix/thresholds/estimator/controls/claim ceiling unchanged; correction validation must run zero model/arm/response; replacement has 99 one-attempt children and zero child retry | DEC-077, owner instruction, accepted base freeze, original permanent claim/failure, repository `.venv`, graph read-only | Recovery authorized in place inside APP-B2; replacement result acceptance/commit remain closed |
+| `P2-I2-CHG-084` | First retained-output closeout audit finds all 99 child receipts present but the operational validator assumes reduced event lists, trusts non-append-ordered `packet_records[-1]`, and fails to gate terminal support on matrix validity | `appendix_b2_retained_only_operational_projection_and_terminal_gate_correction` | Preserve aggregate and original reconstruction; validate operation execution from native step-bookkeeping processed kinds/IDs plus frozen route/amount identities; classify legacy packet-record projection non-authoritative; require matrix completeness/all-arm validity before any supported mode/terminal; reconstruct additively with zero PyGRC/runtime regeneration | Runtime campaign remains 99/99 fresh models, zero child retry/failure; original analysis reports matrix/all-arm false and therefore has no valid conclusion authority; correction may change only validity and terminal projection from retained receipts, not responses, estimator values, controls, or runtime bytes | DEC-078/CHG-083, replacement aggregate, original reconstruction, frozen operation registry, accepted PyGRC bookkeeping schema | Active in APP-B2; corrected retained-only closeout/validation required before owner result review; no rerun or result commit |
+| `P2-I2-CHG-085` | Corrected retained-only projection and independent closeout validation complete | `appendix_b2_runtime_result_and_corrected_closeout` | Bind the one replacement aggregate, historical reconstruction, additive corrected closeout, exact mode-separated responses/controls, runtime counts, and claim ceiling; synchronize checklist, hypothesis, report, and decision projections | 99/99 fresh models and operationally valid arms; zero child failure/retry; history-carried margin 1 and supported; state-carried margin -1 and hybrid margin 0, both unsupported; closeout regenerates zero PyGRC/model/producer/arm/response | DEC-079/CHG-084, replacement claim/aggregate, original reconstruction, corrected analysis source/closeout, closeout validation | Technically complete and review-ready uncommitted; owner result acceptance and result commit closed |
 
 ## 19. Evidence ledger
 
@@ -4595,18 +4599,18 @@ Evidence: [APP-B1 audit/freeze/conformance report](../reports/P2-I2-APP-B1-audit
 - [x] Revalidate exact committed/local authority, clean tree, output absence,
   `.venv`, graph identity/cleanliness, and one-shot claim before execution.
 - [x] Atomically consume one campaign claim before the first scientific model.
-- [ ] Execute every frozen arm once in a fresh `.venv` child/model, with no
+- [x] Execute every frozen arm once in a fresh `.venv` child/model, with no
   adaptation, outcome scan, cross-arm state, or scientific retry.
-- [ ] Fail matrix evaluation closed on any missing, invalid, contaminated, or
+- [x] Fail matrix evaluation closed on any missing, invalid, contaminated, or
   cross-tuple receipt while preserving later scheduled attempts.
-- [ ] Retain one cumulative runtime aggregate and no per-arm narrative files.
-- [ ] Reconstruct and resolve controls only from the retained aggregate with
+- [x] Retain one cumulative runtime aggregate and no per-arm narrative files.
+- [x] Reconstruct and resolve controls only from the retained aggregate with
   zero PyGRC/model/producer/scientific regeneration.
-- [ ] Assign separate state/history/hybrid dispositions and one claim-ceiling-
+- [x] Assign separate state/history/hybrid dispositions and one claim-ceiling-
   compliant Appendix B conclusion.
-- [ ] Validate exact output identity, completeness, estimator reconstruction,
+- [x] Validate exact output identity, completeness, estimator reconstruction,
   controls, restoration, portability, blocked claims, and process counts.
-- [ ] Return the complete uncommitted result for owner review; do not infer
+- [x] Return the complete uncommitted result for owner review; do not infer
   cross-appendix recurrence or create a result commit.
 
 APP-B2 failed-start counts:
@@ -4646,7 +4650,7 @@ APP-B2 bounded recovery checklist:
   process identity, failure retention, later-row continuation, one replacement
   attempt, zero child retry, output absence, portability, and graph read-only.
 - [x] Retain the correction in the necessary clean-HEAD authority commit.
-- [ ] Execute the exact replacement campaign once, reconstruct retained output
+- [x] Execute the exact replacement campaign once, reconstruct retained output
   without PyGRC regeneration, and return the uncommitted result for review.
 
 Recovery-readiness counts:
@@ -4664,6 +4668,54 @@ replacement campaigns started = 0
 
 Evidence: [APP-B2 recovery-readiness report](../reports/P2-I2-APP-B2-recovery-readiness.md),
 `app-b2-recovery-authority.json`, and `app-b2-recovery-validation.json`.
+
+APP-B2 retained-only closeout correction:
+
+- [x] Retain the complete 99-arm replacement aggregate and original
+  reconstruction without modifying or rerunning either.
+- [x] Record the first audit finding before editing analysis code.
+- [x] Replace reduced event-list assumptions with exact native step-
+  bookkeeping departure/arrival identities and frozen route/amount checks.
+- [x] Treat the runner's legacy last-ledger packet projection as
+  non-authoritative while retaining it unchanged as historical output.
+- [x] Gate every supported mode and terminal claim on complete matrix order,
+  uniqueness, and all-arm operational validity.
+- [x] Reconstruct corrected analysis only from retained receipts with zero
+  PyGRC/model/producer/arm regeneration.
+- [x] Validate response envelopes, estimator tuples, causal/discriminator
+  controls, process isolation, restoration, portability, blocked claims, and
+  exact runtime/reconstruction counts.
+- [x] Return the corrected uncommitted result for owner review; do not commit
+  or infer cross-appendix recurrence.
+
+APP-B2 final technical counts and disposition:
+
+```text
+replacement parent campaigns = 1
+fresh .venv child processes/models = 99/99
+child failures/retries = 0/0
+operationally valid arms = 99/99
+accepted response envelopes = 99/99
+operation/history-materialization/state-intervention packets = 297/55/6
+neutral/response/total native packets = 99/27/484
+native packet departure/arrival events = 968
+active history tokens = 111
+save/load/reset identity receipts = 99/99
+graph mutations = 0
+corrected-closeout PyGRC imports/models/arms/responses = 0/0/0/0
+
+state_carried = not supported; normalized margin -1
+history_carried = supported bounded composition; normalized margin 1
+hybrid = not supported; normalized margin 0
+terminal = supported_bounded_candidate
+```
+
+Evidence: [APP-B2 result report](../reports/P2-I2-APP-B2-result.md),
+[replacement campaign claim](../contracts/p2-i2/app-b2-replacement-campaign-claim.json),
+[99-arm runtime aggregate](../contracts/p2-i2/app-b2-replacement-runtime-evidence.json),
+[historical byte-identical reconstruction](../contracts/p2-i2/app-b2-replacement-reconstruction-and-closeout.json),
+[corrected retained-only closeout](../contracts/p2-i2/app-b2-corrected-analysis-and-closeout.json),
+and [closeout validation](../contracts/p2-i2/app-b2-closeout-validation.json).
 
 ### 21.4 Stop and reopen conditions
 

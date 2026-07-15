@@ -256,7 +256,12 @@ def strongest_proper_subset_margin(
     }
 
 
-def _validity(receipt: Mapping[str, Any], row: Mapping[str, Any], tolerance: float) -> dict[str, Any]:
+def _validity(
+    receipt: Mapping[str, Any],
+    row: Mapping[str, Any],
+    tolerance: float,
+    freeze: Mapping[str, Any],
+) -> dict[str, Any]:
     predicates: list[dict[str, Any]] = []
 
     def add(check_id: str, passed: bool, observed: Any = None) -> None:
@@ -274,18 +279,73 @@ def _validity(receipt: Mapping[str, Any], row: Mapping[str, Any], tolerance: flo
     operations = receipt.get("operation_receipts", [])
     add("three_slots", len(operations) == 3, len(operations))
     add("operation_order", [item.get("operation") for item in operations] == list(row.get("operation_order", [])), operations)
+    operation_registry = freeze["operation_registry"]
+    schedule = freeze["schedule"]
+    private = str(row.get("arm_id", "")).endswith(":private_partition")
     for index, operation in enumerate(operations):
-        selected = operation.get("operation") in set(row.get("common_operations", []))
+        operation_id = str(operation.get("operation"))
+        selected = operation_id in set(row.get("common_operations", []))
+        registered = operation_registry[operation_id]
+        if selected:
+            expected_route = registered["common_route"]
+        elif private and operation_id in {"G", "P"}:
+            expected_route = registered["private_route"]
+        elif operation_id == "E":
+            expected_route = registered["diversion_and_private_matched_route"]
+        else:
+            expected_route = registered["diversion_route"]
         add(f"operation_{index}_selection", operation.get("selected_common") is selected, operation)
-        add(f"operation_{index}_events", operation.get("processed_event_kinds") == ["lgrc9v3_packet_departure", "lgrc9v3_packet_arrival"], operation)
-        packet = operation.get("packet_record", {})
-        add(f"operation_{index}_arrived", packet.get("packet_state") == "arrived", packet)
-        add(f"operation_{index}_amount", close(packet.get("amount", -1.0), operation.get("amount", -2.0), tolerance), packet.get("amount"))
+        add(
+            f"operation_{index}_route",
+            [operation.get("source_role"), operation.get("target_role"), operation.get("edge_role")]
+            == expected_route,
+            [operation.get("source_role"), operation.get("target_role"), operation.get("edge_role")],
+        )
+        add(
+            f"operation_{index}_amount",
+            close(operation.get("amount", -1.0), registered["amount"], tolerance),
+            operation.get("amount"),
+        )
+        steps = operation.get("steps", [])
+        bookkeeping = [step.get("bookkeeping", {}) for step in steps]
+        processed_kinds = [item.get("processed_event_kind") for item in bookkeeping]
+        processed_ids = [item.get("processed_event_id") for item in bookkeeping]
+        add(
+            f"operation_{index}_native_steps",
+            len(steps) == 2
+            and processed_kinds == ["lgrc9v3_packet_departure", "lgrc9v3_packet_arrival"]
+            and all(isinstance(item, str) and item for item in processed_ids)
+            and len(set(processed_ids)) == 2,
+            {"processed_kinds": processed_kinds, "processed_ids": processed_ids},
+        )
+        add(
+            f"operation_{index}_native_timing",
+            len(bookkeeping) == 2
+            and close(bookkeeping[0].get("event_time_key", -1.0), schedule["operation_departures"][index], tolerance)
+            and close(bookkeeping[1].get("event_time_key", -1.0), schedule["operation_arrivals"][index], tolerance)
+            and bookkeeping[0].get("queue_length_after") == 1
+            and bookkeeping[1].get("queue_length_after") == 0,
+            bookkeeping,
+        )
         add(f"operation_{index}_budget", abs(float(operation.get("max_abs_budget_error", math.inf))) <= tolerance, operation.get("max_abs_budget_error"))
     history = receipt.get("history_receipt", {})
     expected_tokens = len(row.get("history_operations", [])) if row.get("mode") != "state_carried" else 0
     add("history_token_count", len(history.get("tokens", [])) == expected_tokens, history)
     add("history_source_label_free", all("actor" not in token and "source_label" not in token for token in history.get("tokens", [])), history)
+    expected_admissions = (
+        []
+        if row.get("mode") == "state_carried"
+        else [
+            operation
+            for operation in row.get("operation_order", [])
+            if operation in set(row.get("common_operations", []))
+        ]
+    )
+    observed_admissions = [
+        item.get("physical_operation")
+        for item in history.get("physical_admission_receipts", [])
+    ]
+    add("history_physical_admissions", observed_admissions == expected_admissions, observed_admissions)
     response = receipt.get("response_receipt", {})
     add("window_valid", response.get("window_valid") is True, response)
     add("gain_matches", response.get("gain_matches") is True, response)
@@ -326,7 +386,7 @@ def analyze_receipts(
     row_by_id = {str(row["arm_id"]): row for row in rows}
     tolerance = float(freeze["response_authority"]["runtime_tolerance"])
     validity = {
-        arm_id: _validity(by_id[arm_id], row_by_id[arm_id], tolerance)
+        arm_id: _validity(by_id[arm_id], row_by_id[arm_id], tolerance, freeze)
         if arm_id in by_id
         else {"derived_from_receipts": True, "valid": False, "failed_checks": ["missing_arm"], "predicate_count": 1, "predicates": []}
         for arm_id in expected_ids
@@ -422,7 +482,7 @@ def analyze_receipts(
         causal_pass = all(operation_necessity.values()) and common["carrier_clamp_changes_response"]
         discriminator_pass = all(discriminator.values())
         controls[mode] = {"common": common, "discriminator": discriminator}
-        supported = primary_pass and causal_pass and discriminator_pass and common["private_partition_does_not_reproduce"] and identity_pass
+        supported = matrix_complete and primary_pass and causal_pass and discriminator_pass and common["private_partition_does_not_reproduce"] and identity_pass
         mode_dispositions[mode] = {
             "primary_complete": primary_complete,
             "primary_passed": primary_pass,

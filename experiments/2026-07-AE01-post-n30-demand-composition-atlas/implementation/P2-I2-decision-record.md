@@ -113,6 +113,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-076` | Does APP-B1 satisfy the accepted-source, exact-freeze, outcome-quarantine, estimator, and response-free conformance boundary? | Complete inside DEC-075: eleven grouped final checks pass; three-mode response-free conformance passes; one 99-arm authority is exact | Authorizes the one permitted pre-run authority commit and then exact APP-B2 clean-HEAD campaign/reconstruction; result acceptance/commit closed | 2026-07-15 |
 | `P2-I2-DEC-077` | What does the consumed APP-B2 first-child failure establish, and may the campaign retry autonomously? | Failed closed: venv launcher dereference and missing child-failure receipt; zero retained arm receipts; no retry under current authority | Stops APP-B2; additive correction and exactly one replacement claim require explicit owner authority | 2026-07-15 |
 | `P2-I2-DEC-078` | May APP-B2 correct the venv launcher/failure receipt and use one replacement claim? | Yes: owner requires repository `.venv` always and forbids global Python | Opens in-place infrastructure correction, zero-science validation, necessary authority commit, and one unchanged replacement campaign; result acceptance/commit closed | 2026-07-15 |
+| `P2-I2-DEC-079` | Can the first replacement aggregate analysis support a conclusion despite operational-validity projection defects? | No: runtime is complete, but original analysis is internally fail-open; additive retained-only correction required | Preserves all runtime bytes; opens zero-runtime validity/terminal correction and closeout validation only; result review/commit closed | 2026-07-15 |
+| `P2-I2-DEC-080` | What does corrected retained-only APP-B2 closeout establish? | Review-ready bounded positive in history-carried mode only: 99/99 valid fresh PyGRC arms; state and hybrid unsupported; closeout validation passes | Technical result only; owner result acceptance and result commit remain closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -4003,10 +4005,91 @@ estimator, response, result rule, or claim ceiling may change. The replacement
 campaign may produce new scientific evidence; the correction validation may
 not. Result acceptance and result commit remain owner-only.
 
-## 81. Pending decision queue
+## 81. `P2-I2-DEC-079` — Withhold fail-open projection and correct retained analysis
 
-APP-B2 bounded recovery is active under DEC-078/CHG-083. Correction,
-candidate-free validation, necessary commit, one replacement campaign, and
-retained-only reconstruction are next. Final Appendix B result acceptance/
-commit, cross-appendix synthesis, graph mutation, N31+ selection, and any next
-move remain closed.
+**Status:** original replacement analysis has no conclusion authority;
+retained-only correction active
+
+The replacement campaign completes all 99 fresh `.venv` PyGRC children with
+zero failure and zero retry. The original reconstructor reproduces the embedded
+analysis byte-identically. First closeout inspection nevertheless finds
+`matrix_complete=false` and `all_arms_operationally_valid=false` while the same
+analysis assigns `supported_bounded_candidate`. That terminal is fail-open and
+cannot be accepted.
+
+Two receipt-projection assumptions cause the false invalidity. First, the
+validator expects each two-step operation receipt's flattened events to equal
+only packet departure and arrival, but accepted PyGRC also emits surface,
+arrival-eligibility, and local-update events. The exact processed event kind
+and ID are separately retained in each step's native bookkeeping. Second, the
+runner records `packet_records[-1]` as the just-scheduled packet even though
+the ledger's record ordering is not append ordering. The scheduled operation
+route/amount, exact two native processed-event bookkeeping records, budget,
+carrier effects, history admissions, and response receipts remain retained.
+
+**Decision:** preserve the aggregate and original reconstruction byte-for-
+byte. Correct only operational projection: validate exact frozen operation
+route/amount identities and the native departure/arrival bookkeeping kinds and
+IDs; retain but do not trust the legacy last-ledger projection. Require exact
+matrix order/uniqueness and every arm valid before a mode or terminal can be
+supported. Reconstruct and validate additively with zero PyGRC/model/arm/
+producer regeneration.
+
+No response, margin, threshold, control, operation, or runtime receipt may be
+changed. If corrected validation does not make the matrix complete, Appendix B
+remains nonevaluable. Even if it does, the corrected result remains
+uncommitted and requires owner review.
+
+## 82. `P2-I2-DEC-080` — APP-B2 bounded runtime disposition
+
+**Status:** technically complete and closeout-validated; owner result review
+pending; uncommitted
+
+The single replacement campaign completes the exact 99-arm registry through
+99 distinct repository `.venv` child processes and 99 fresh PyGRC models.
+Every arm is operationally valid, every response envelope is accepted, all
+save/load/reset receipts pass, the graph remains clean, and no child fails or
+retries. This is fresh simulation evidence rather than analysis of prior runs.
+
+The same mode-separated primary result holds across seeds 101, 211, and 307:
+
+```text
+state_carried:   R_GEP = 0,     S = 0.125 from GP, margin = -1
+history_carried: R_GEP = 0.125, S = 0,             margin = 1
+hybrid:          R_GEP = 0.125, S = 0.125 from P,  margin = 0
+```
+
+History-carried mode also passes G/E/P necessity, carrier clamp, private
+partition, controller exclusion, identity, and equal-final-C history
+discrimination. It therefore supports the frozen bounded composition claim.
+State-carried mode is a valid negative because `GP` exceeds `GEP`. Hybrid is a
+valid negative because `P` and `GP` equal `GEP`, so E is not necessary; its
+passing factorial discriminator does not override that primary failure.
+
+The original reconstruction remains byte-identical to the aggregate's
+embedded analysis but has no conclusion authority: it reports an invalid
+matrix while assigning support. The additive corrected closeout validates
+operation execution from native step-bookkeeping event IDs and frozen
+route/amount receipts, treats the non-append-ordered last-ledger projection as
+historical only, and gates support on exact complete-matrix validity. It
+reconstructs from retained output with zero PyGRC import, model, producer, arm,
+or response regeneration.
+
+**Decision:** the review-ready terminal is
+`supported_bounded_candidate`, with history-carried as the sole supported mode
+and exact claim `bounded P2-I2-grounded three-operation shared-pool composition
+candidate`. Participant-lineage plurality is non-load-bearing in this fixture;
+physical operation reservoirs remain fixed. History remains minimally
+producer-assisted. Cross-appendix recurrence, participant complementarity or
+cooperation, fully native history, unbounded irreducibility, and revision of
+the accepted main P2-I2 conclusion remain blocked.
+
+This technical disposition does not infer owner acceptance or authorize a
+result commit.
+
+## 83. Pending decision queue
+
+APP-B2 is technically complete under DEC-080/CHG-085 and returned uncommitted
+for owner result review. Final Appendix B result acceptance/commit,
+cross-appendix synthesis, graph mutation, N31+ selection, and any next move
+remain closed.
