@@ -103,6 +103,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-066` | Does the owner accept `app_a_live_packet_coherence_delta_v1` for continued APP-A1 construction? | Accepted by `+1`; exact reviewed proposal and failed-transport boundary retained | Activates only the APP-A1 fixture/control freeze and post-freeze candidate-free conformance; commit, APP-A1 acceptance, APP-A2, and scientific runtime remain closed | 2026-07-15 |
 | `P2-I2-DEC-067` | May the consumed APP-A1 conformance start receive a same-iteration packet-ledger-rebase correction and one replacement? | Accepted by `+1`; corrected replacement passes 29/29 and reconstruction is byte-identical | Preserves the failed start/base freeze; completes candidate-free conformance only; APP-A2, science, commit, and acceptance remain closed | 2026-07-15 |
 | `P2-I2-DEC-068` | Does the owner accept APP-A1, and is its retention commit authorized before requested APP-A2 progression? | Yes: explicit acceptance; commit authorized only because the frozen APP-A2 entry condition requires it | One containing APP-A1 retention commit; APP-A2 may be declared only afterward; no APP-A2 runtime or result is authorized by acceptance | 2026-07-15 |
+| `P2-I2-DEC-069` | What APP-A2 work opens after retained APP-A1 and the owner's renewed direction? | Checklist/hypothesis-first implementation complete; inactive package passes 96/96 with zero science and awaits owner activation disposition | Exact inactive activation boundary reached; campaign, arms, gates, interpretation, acceptance, and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-070` | Does the owner accept the exact inactive APP-A2 package and authorize retention plus activation-authority construction? | Yes: exact 96/96 package accepted; one containing commit authorized; activation record construction follows the commit | Commit only now; activation authorization commit and campaign remain separately closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3585,8 +3587,99 @@ Reopen if any accepted technical hash changes before commit, retention omits an
 APP-A1 artifact, APP-A2 work precedes retention, or acceptance is represented
 as Appendix scientific support.
 
-## 71. Pending decision queue
+## 71. `P2-I2-DEC-069` — Open APP-A2 implementation construction
 
-APP-A1 is owner-accepted and its one necessary retention commit is authorized.
-APP-A2 remains unopened until that commit completes. Appendix interpretation,
-cross-lane synthesis, and any native substitution probe remain closed.
+**Status:** construction technically complete at 96/96; owner activation
+disposition pending and scientific activation closed
+
+APP-A1 was retained successfully at commit `1f69816`. The owner then states
+`ok, now you can do APP-A2`.
+
+**Decision:** open `P2-I2-APP-A2` checklist/hypothesis-first. Bind the exact
+retained APP-A1 execution freeze and owner-acceptance bytes, graph revision,
+repository `.venv`, checkout-only PyGRC source, absent future outputs, and clean
+entry state before implementation. Construct only the runner, read-only
+reconstructor, inactive activation freeze, static/focused tests, validation,
+and one cumulative APP-A2 report scaffold.
+
+The implementation may realize only the frozen 19-arm order, topology,
+scientific vectors, matched references, interventions, gates, controls,
+resource envelope, one-attempt/zero-retry policy, fresh-process isolation,
+single aggregate output, read-only reconstruction, and claim ceiling. It may
+not select, tune, or change them. Every parent and child Python process must be
+the repository `.venv`; PyGRC must resolve to the retained checkout.
+
+No scientific process may start until the exact runner/reconstructor hashes,
+normalized commands, entry identities, output absence, child isolation, and
+fail-closed matrix behavior are bound in an inactive activation artifact and
+pass zero-science validation. This decision does not pass that activation
+boundary, authorize a commit, execute an arm, evaluate a gate, or assign an
+Appendix result.
+
+Reopen if retained APP-A1 bytes drift, implementation requires a new scientific
+choice, a child can observe earlier results, per-arm files are introduced, an
+ambient interpreter or PyGRC install is used, or validation must construct a
+scientific model.
+
+The completed inactive implementation binds exact analysis, runner,
+reconstructor, validator, graph, `.venv`, APP-A1, command, and output
+identities. During static isolation review, the parent was corrected before
+activation so one incomplete arm cannot suppress later frozen attempts; all
+19 attempts remain independent while matrix completion still fails closed.
+Operation packet records, response source/target routes, native producer
+reasons, registered intervention targets, public ledger rebase, and
+restoration receipts are mechanically required.
+
+The first check-only validator start reported 87/89 because its own generic
+path-sentinel text failed its portability rule and an output-serialization
+write loop was misclassified as an adaptive retry. Neither finding implicated
+runner behavior and neither produced an artifact. After correcting those
+static rules, validation passed 89/89. A final cache audit then found four
+ignored bytecode files created by explicit compilation checks; they were
+removed, cache absence became a required preflight, and the final authority
+review also made the future runner and reconstructor require the retained
+passing static-validation artifact. A final portability check then made all
+three APP-A2 entry points reject absolute CLI arguments outright, including
+normalization of temporary roots in any persisted failed-closed message. The
+final retained validation passes 96/96. Across all APP-A2 construction probes
+there were zero
+PyGRC imports, scientific models, child arms, gate signatures, runtime outputs,
+or Appendix results.
+
+This technical completion does not accept APP-A2, authorize a commit, create
+the future activation record, or start the campaign. Activation requires
+explicit owner disposition and retention of the exact implementation package.
+
+## 72. `P2-I2-DEC-070` — Accept and retain the inactive APP-A2 package
+
+**Status:** decided by explicit owner confirmation; containing commit
+authorized
+
+After the review handoff, the owner states `continue`. Asked explicitly whether
+that means acceptance of the 96/96 inactive APP-A2 package, authorization of
+its containing commit, and subsequent construction of the activation
+authorization while the campaign remains closed, the owner answers `yes`.
+
+**Decision:** accept the exact reviewed APP-A2 inactive technical package and
+authorize one containing commit. The acceptance overlay binds the entry
+freeze, inactive activation freeze, 96/96 retained validation, analysis,
+runner, reconstructor, validator, and reviewed pre-acceptance report hashes.
+
+After successful retention, construct one exact activation authorization
+against the resulting implementation commit. This decision does not authorize
+that second commit, the exclusive campaign claim, a child arm, gate-signature
+evaluation, reconstruction, or an Appendix conclusion. Those remain closed
+until the activation package is constructed and returned for review.
+
+Reopen if any accepted technical hash changes before retention, the containing
+commit omits an accepted artifact, activation construction begins before
+commit success, or acceptance is represented as scientific evidence.
+
+## 73. Pending decision queue
+
+APP-A2 implementation construction and zero-science activation validation are
+complete and owner-accepted under DEC-069/070 and CHG-074/075 at 96/96. The one
+containing implementation commit is authorized. After it succeeds, activation
+authorization construction may begin. The activation commit, single campaign,
+Appendix interpretation, cross-lane synthesis, and native substitution remain
+closed.

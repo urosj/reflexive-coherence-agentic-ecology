@@ -2810,3 +2810,67 @@ against the retained 19-arm registry. Its implementation bytes and `.venv`
 commands must be hash-bound and validated before the single campaign starts.
 Until those APP-A2-local conditions are satisfied, scientific runtime and the
 Appendix result remain unassigned.
+
+### 17.12 Active APP-A2 fresh-runtime projection
+
+APP-A1 is retained at commit `1f69816`. The owner now directs APP-A2. This
+opens implementation and candidate-free activation validation against the
+unchanged 19-arm execution freeze; it does not yet start a scientific arm.
+
+APP-A2 must realize exactly this causal projection:
+
+```text
+for each frozen arm in frozen order, in one fresh child process/model:
+  execute every G/E/P slot through its selected common or matched-diversion
+    native packet path
+  preserve exact carrier identity continuity between operation slots
+  apply only the arm's frozen post-operation intervention, if any
+  execute native carrier-only R production after the final operation slot
+  retain public-call, packet/event, state, intervention, budget, restoration,
+    and operational-validity receipts
+after all 19 arms exist and are evaluable:
+  derive matched-reference gate signatures and causal/control comparisons
+  reconstruct and interpret by reading the retained aggregate only
+```
+
+The runner may not read prior arm outputs, choose a parameter, retry, reorder,
+inject an `R` amount, author a causal boolean, persist one file per arm, or
+weaken the nonevaluable rule. Every Python parent and child must use the
+repository `.venv`; PyGRC remains bound to the accepted checkout only.
+
+Implementation source, the read-only reconstructor, normalized commands,
+committed APP-A1 identities, output absence, environment identity, and
+cross-arm isolation must be frozen and statically validated before activation.
+Until that occurs, APP-A2 campaign starts, child arms, scientific gate
+signatures, and results remain zero.
+
+The implementation projection is now frozen inactive and passes 96/96
+zero-science checks. The runner uses one exclusive aggregate claim, starts one
+fresh `.venv` child and native model for each exact arm row, carries only that
+row over stdin, and retains no per-arm file. A failed, timed-out, malformed, or
+nonevaluable earlier arm does not suppress later frozen attempts; the complete
+matrix nevertheless fails closed. Packet routes, native producer reasons,
+intervention targets and ledger rebases, carrier continuity, budgets,
+restoration, continuation, and reset are derived from retained receipts rather
+than an authored validity or causal result.
+
+The separate reconstructor imports no PyGRC and invokes no subprocess, model,
+producer, or scientific generation path. It can derive a closeout only from
+the retained aggregate and requires its analysis projection to be byte-
+identical. APP-A2 activation still requires owner acceptance, a containing
+implementation commit, and one exact retained activation authorization. No
+arm, model, gate signature, Appendix result, or scientific conclusion has run.
+
+### 17.13 APP-A2 inactive-package acceptance
+
+The owner confirms that `yes` means acceptance of the exact 96/96 inactive
+package, authorization of its containing commit, and authority to construct
+the separate activation authorization afterward. Acceptance changes no
+implementation, fixture, gate, arm, control, command, or claim byte. The
+containing commit performs no scientific work.
+
+After successful retention, APP-A2 may create one activation authorization
+binding that exact implementation commit and the already-frozen commands. The
+campaign remains closed until that authorization is itself validated and
+retained. Acceptance therefore supplies progression authority, not scientific
+evidence.

@@ -1,0 +1,79 @@
+{
+  "artifact_id": "P2-I2-APP-A2-OWNER-ACCEPTANCE-AND-RETENTION",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "iteration_id": "P2-I2-APP-A2",
+  "recorded_at": "2026-07-15T00:00:00+02:00",
+  "status": "owner_accepted_containing_commit_authorized",
+  "authority": {
+    "decision_id": "P2-I2-DEC-070",
+    "change_id": "P2-I2-CHG-075",
+    "owner_exchange": [
+      "continue",
+      "Does continue mean you accept the 96/96 inactive APP-A2 package and authorize its containing commit, followed by creation of the activation authorization? The campaign would still wait until that authorization is committed.",
+      "yes"
+    ],
+    "inactive_package_accepted": true,
+    "containing_commit_authorized": true,
+    "activation_authorization_construction_after_commit_authorized": true,
+    "activation_authorization_commit_authorized": false,
+    "campaign_authorized": false,
+    "reconstruction_authorized": false,
+    "Appendix_result_authorized": false
+  },
+  "accepted_technical_artifacts": [
+    {
+      "role": "entry_freeze",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json",
+      "sha256": "f87bda63615cc2ef9224d7b967d3f07dca94d41e3d45a2a25cf65b59d4db5dd6"
+    },
+    {
+      "role": "inactive_activation_freeze",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-activation-freeze.json",
+      "sha256": "d6dda99b6460f8d30f491a20436015fa7ce15d1b32968e9b57a2dc7a71c8f301"
+    },
+    {
+      "role": "inactive_static_validation",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-static-validation.json",
+      "sha256": "2d23652e2342fa1120f0f2eabe0d82f80e1fb23bdfbf73ef3f5944eb7058600e"
+    },
+    {
+      "role": "analysis",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_analysis.py",
+      "sha256": "f273caddee68eea142b0c83b22380df969c7065a1510bb1e577441b19eb51e7a"
+    },
+    {
+      "role": "runner",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py",
+      "sha256": "f15c2f6b07fb3488a4e0e0471077d582d90af82f683695c6c73891260a2ab3af"
+    },
+    {
+      "role": "reconstructor",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_reconstruct.py",
+      "sha256": "0af95ee22a8819ceab7675afdb02cff066d52c60f801b1192ad822a8367ce2f4"
+    },
+    {
+      "role": "validator",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_validate.py",
+      "sha256": "43457a6dd6f46a206396f1ff9f2111936eefba5be1cac9842f6a757607e71c4a"
+    },
+    {
+      "role": "reviewed_report_pre_acceptance",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-A2-fresh-runtime-matrix-and-closeout.md",
+      "sha256": "e3e522e62cb9509018ad401d464a77d2d9e5ae39f1aa482988cbe6f57cfdbe55"
+    }
+  ],
+  "validation_disposition": {
+    "checks_passed": 96,
+    "checks_total": 96,
+    "failed_checks": 0,
+    "pygrc_imports": 0,
+    "scientific_models": 0,
+    "child_arm_starts": 0,
+    "scientific_gate_signatures": 0,
+    "runtime_outputs_created": 0,
+    "Appendix_results_assigned": 0
+  },
+  "retention_rule": "Commit this exact accepted technical package and acceptance overlay once. The commit performs no activation or scientific work.",
+  "next_allowed_action_after_commit": "Construct one exact activation authorization bound to the resulting containing commit and return it for validation; do not start the campaign."
+}

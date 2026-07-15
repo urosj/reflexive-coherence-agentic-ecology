@@ -40,15 +40,11 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-A1` is complete and owner-accepted;
-this containing commit is its required retention point. The base freeze passed
-48/48 before models; the retained first
-start stopped on a harness intervention defect; the owner-authorized correction
-passed 60/60 before replacement; one corrected conformance and one
-reconstruction pass 29/29 with byte-identical output. Complete package
-validation passes 53/53. APP-A2 remains unopened until this retention commit
-succeeds; scientific gate evaluation and Appendix interpretation remain
-unauthorized.
+**Current activity iteration:** `P2-I2-APP-A2` inactive implementation is
+complete, passes 96/96, and is owner-accepted under DEC-070/CHG-075. One
+containing implementation commit is authorized. Only after commit success may
+the separate activation authorization be constructed; campaign starts, child
+arms, scientific gate evaluation, and Appendix interpretation remain closed.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -3919,6 +3915,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-071` | Owner responds `+1` to the explicit review question for `app_a_live_packet_coherence_delta_v1` | `appendix_a1_gate_authority_acceptance` | Bind the exact reviewed proposal and audit context; activate its prospective live packet/coherence metrics; continue only to exact fixture/control/conformance freeze in the accepted hard order | Acceptance record only; zero model, conformance, APP-A2 arm, scientific runtime, result, or commit authority | DEC-066, accepted proposal hash, failed N29 transportability retained, native-transition selection, `.venv` plus checkout-only PyGRC binding | Active at fixture/control freeze construction; conformance only after freeze; APP-A2 and commit unauthorized |
 | `P2-I2-CHG-072` | First frozen APP-A1 candidate-free invocation stops before output because the carrier-clamp state edit retains a stale packet-ledger total; owner responds `+1` to the disclosed public-builder correction | `appendix_a1_same_iteration_intervention_ledger_rebase_correction` | Preserve the immutable base freeze and consumed failed start; after the unchanged clamp edit, rebuild the packet ledger through public `build_lgrc9v3_packet_ledger`, preserving history/policies/flags and recomputing totals; authorize one replacement plus one reconstruction, zero retry | Correction freeze passes 60/60 before any replacement model; corrected conformance passes 29/29 and reconstructs byte-identically; no scientific value, APP-A2 arm, result, acceptance, or commit authority | DEC-067, exact failed-start and owner-authorization records, unchanged fixture/gate/clamp semantics, `.venv`, checkout-only PyGRC, graph read-only | Complete; APP-A1 review-ready uncommitted; APP-A2 and commit remain closed |
 | `P2-I2-CHG-073` | Owner directs APP-A2, explicitly accepts APP-A1, and permits a commit only if needed; the frozen APP-A2 entry condition requires retention | `appendix_a1_owner_acceptance_and_necessary_retention` | Bind the exact reviewed technical hashes; accept APP-A1; authorize one containing retention commit because it is necessary for APP-A2 progression; perform no APP-A2 work inside retention | Acceptance/navigation only; reviewed technical bytes unchanged; zero APP-A2 arm, scientific gate, or result | DEC-068, 53/53 complete validation, 29/29 byte-reconstructed conformance, inactive execution freeze | Active through the one authorized retention commit; APP-A2 may be declared only afterward |
+| `P2-I2-CHG-074` | APP-A1 retention succeeds at `1f69816`; owner states `ok, now you can do APP-A2` | `appendix_a2_checklist_hypothesis_first_implementation_entry` | Declare APP-A2 before implementation; bind retained APP-A1 and environment; construct exact fresh-process runner, read-only reconstructor, inactive activation freeze, and zero-science validation only | Final inactive validation 96/96; zero PyGRC import/model/arm/gate/result; no value/control/claim change | DEC-069, retained 19-arm execution freeze, owner acceptance, `.venv`, checkout-only PyGRC, graph read-only | Construction complete and review-ready; scientific activation, acceptance, and commit closed |
+| `P2-I2-CHG-075` | Owner confirms `yes` to explicit inactive-package acceptance, containing-commit authorization, and post-commit activation-authority construction | `appendix_a2_inactive_package_acceptance_and_retention` | Bind exact reviewed technical hashes in one acceptance overlay; authorize one containing commit; after success open activation-authorization construction only | Acceptance/retention only; 96/96 bytes unchanged; zero campaign/model/arm/gate/result | DEC-070, accepted technical hashes, inactive validation, reviewed report | Active through containing commit; activation commit and campaign remain closed |
 
 ## 19. Evidence ledger
 
@@ -4170,7 +4168,7 @@ Checklist:
   first delta audit in the frozen internal order; prove or reject N29 metric/
   domain transportability; freeze realization, gate signature, fixture,
   controls, role-rotation identity, and any candidate-free conformance.
-- [ ] Open APP-A2 only after the APP-A1 freeze is reviewed and retained.
+- [x] Open APP-A2 only after the APP-A1 freeze is reviewed and retained.
 - [ ] Execute the complete eight-subset matrix and bounded diagnostics once
   through fresh live PyGRC runtimes, retain operation-level and carrier/
   response/intervention/restoration receipts, reconstruct the runtime evidence
@@ -4267,4 +4265,100 @@ APP-A2 execution contract = exact and inactive
 complete package validation = 53/53 on final third static start; first failed
                               only on a status lexeme and second already passed
 APP-A2/scientific runs = 0
+```
+
+### 20.2 `P2-I2-APP-A2` — Frozen fresh-runtime matrix and closeout
+
+**Status:** inactive implementation package complete, 96/96 validated, and
+owner-accepted under DEC-070; containing commit authorized, scientific
+activation closed.
+
+```text
+iteration_id = P2-I2-APP-A2
+purpose = realize the exact retained 19-arm contract once through fresh native
+          PyGRC runtimes, reconstruct only from the retained aggregate, and
+          resolve the bounded Appendix claim without adding a second ceremony
+entry_authority = owner direction "ok, now you can do APP-A2" plus retained
+                  APP-A1 commit 1f69816 and DEC-069/CHG-074
+construction_boundary = exact runner, read-only reconstructor, inactive
+                        activation freeze, static/focused validation, and one
+                        cumulative report scaffold only
+runtime_boundary = zero scientific model/arm/gate/result until implementation
+                   hashes, commands, outputs, environment, and isolation pass
+                   the inactive activation gate
+campaign_boundary = one aggregate campaign; 19 fresh child processes/models;
+                    one attempt each; zero retry; frozen order; no adaptation
+reconstruction_boundary = retained aggregate read only; zero PyGRC/model/
+                          producer regeneration
+evidence_effect_before_activation = none
+exit = one aggregate runtime evidence artifact, one read-only reconstruction/
+       closeout artifact, validation, cumulative report, and owner review
+```
+
+APP-A2 checklist:
+
+- [x] Record DEC-069/CHG-074 and this hypothesis projection before runner,
+  reconstructor, activation-freeze, or scientific work.
+- [x] Capture exact retained APP-A1 commit/artifact hashes, graph identity,
+  `.venv` identity, checkout-only PyGRC binding, clean-state boundary, and
+  absence of both frozen APP-A2 outputs.
+- [x] Implement the exact 19-arm runner with one fresh supervised child process
+  and model per frozen arm, canonical stdout child transport, and no per-arm
+  persisted file.
+- [x] Mechanically prove that a child receives only the freeze plus its arm row,
+  cannot read prior results, cannot share mutable state, and cannot adapt,
+  retry, reorder, or satisfy another arm's receipt.
+- [x] Implement the read-only reconstructor so it imports no PyGRC and invokes
+  no model, child, producer, or scientific generation path.
+- [x] Bind runner/reconstructor hashes, normalized `.venv` parent/child
+  commands, output paths/absence, resource bounds, and one-attempt policy in an
+  inactive activation freeze.
+- [x] Run static/focused zero-science validation; require zero PyGRC imports,
+  models, child arms, scientific gates, outputs, and results.
+- [x] Stop for the exact activation disposition before the one campaign.
+- [x] Obtain explicit owner acceptance of the exact inactive package and
+  authorization for its containing implementation commit.
+- [ ] Retain the accepted package in one containing commit, then construct and
+  validate the exact commit-bound activation authorization without running the
+  campaign.
+- [ ] If activated, execute exactly 19 arms once, fail closed on any missing or
+  nonevaluable arm, and retain only the one aggregate runtime artifact.
+- [ ] Reconstruct and interpret only from that retained aggregate; validate the
+  exact conclusion and stop for owner review without an unreviewed commit.
+
+Current APP-A2 counts:
+
+```text
+campaign starts = 0
+child arm starts = 0
+scientific models = 0
+scientific gate signatures = 0
+Appendix results = 0
+entry identity probes = 1
+compile/static syntax processes = 4
+environment identity probes = 1
+validator diagnostic processes = 1
+validator starts = 11 (87/89 check-only; 89/89 check-only + retained;
+                      90/90 cache-aware check-only + retained;
+                      92/92 authority-chain check-only + retained;
+                      95/95 relative-path check-only + retained;
+                      96/96 failure-path check-only + retained)
+total APP-A2 Python construction processes = 18
+PyGRC imports across those processes = 0
+generated APP-A2 bytecode caches retained = 0
+```
+
+Isolation closeout:
+
+```text
+earlier incomplete arm suppresses later attempt = false
+all 19 frozen attempts remain scheduled = true
+missing/failed/invalid arm makes matrix evaluable = false
+prior result scans = 0
+per-arm persistent outputs = 0
+shared mutable adapter/cache/temp/RNG across arms = false
+aggregate and reconstruction outputs currently present = false
+inactive validation = 96/96 passed
+activation authorization present = false
+campaign authorized = false
 ```

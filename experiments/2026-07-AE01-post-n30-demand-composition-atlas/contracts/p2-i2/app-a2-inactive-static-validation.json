@@ -1,0 +1,698 @@
+{
+  "activation_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-activation-freeze.json",
+    "sha256": "d6dda99b6460f8d30f491a20436015fa7ce15d1b32968e9b57a2dc7a71c8f301"
+  },
+  "artifact_id": "p2_i2_app_a2_inactive_static_validation",
+  "artifact_version": "1.0",
+  "authority_effect": "Inactive implementation-conformance evidence only; APP-A2 campaign remains unauthorized.",
+  "checks": [
+    {
+      "check_id": "entry.artifact",
+      "observed": "P2-I2-APP-A2-ENTRY-FREEZE",
+      "passed": true
+    },
+    {
+      "check_id": "activation.artifact",
+      "observed": "P2-I2-APP-A2-INACTIVE-ACTIVATION-FREEZE",
+      "passed": true
+    },
+    {
+      "check_id": "activation.inactive_status",
+      "observed": "validated_inactive_pending_owner_activation",
+      "passed": true
+    },
+    {
+      "check_id": "activation.entry_path",
+      "observed": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json",
+      "passed": true
+    },
+    {
+      "check_id": "activation.entry_hash",
+      "observed": "f87bda63615cc2ef9224d7b967d3f07dca94d41e3d45a2a25cf65b59d4db5dd6",
+      "passed": true
+    },
+    {
+      "check_id": "environment.repository_venv",
+      "observed": ".venv/bin/python",
+      "passed": true
+    },
+    {
+      "check_id": "environment.python",
+      "observed": "3.12.3",
+      "passed": true
+    },
+    {
+      "check_id": "environment.interpreter",
+      "observed": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "passed": true
+    },
+    {
+      "check_id": "environment.logical_executable",
+      "observed": ".venv/bin/python",
+      "passed": true
+    },
+    {
+      "check_id": "environment.pythonpath",
+      "observed": "external-repository:graph-reflexive-coherence/src",
+      "passed": true
+    },
+    {
+      "check_id": "entry.commit",
+      "observed": "1f698168549cab8a214043ffd0a8cc3c5504baf7",
+      "passed": true
+    },
+    {
+      "check_id": "entry.branch",
+      "observed": "p2-i2-experiment",
+      "passed": true
+    },
+    {
+      "check_id": "graph.commit",
+      "observed": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "passed": true
+    },
+    {
+      "check_id": "graph.clean",
+      "observed": "",
+      "passed": true
+    },
+    {
+      "check_id": "graph.read_only",
+      "observed": false,
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/__init__.py",
+      "observed": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/models/lgrc_9_v3_runtime.py",
+      "observed": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/models/lgrc_9_v3_packets.py",
+      "observed": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/models/lgrc_9_v3_restoration.py",
+      "observed": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "passed": true
+    },
+    {
+      "check_id": "app_a1.execution_freeze",
+      "observed": "26579a0ed51761777d028e4209431f72ac1b7281b9ac6c5a5132a06d3844c9e5",
+      "passed": true
+    },
+    {
+      "check_id": "app_a1.fixture_freeze",
+      "observed": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3",
+      "passed": true
+    },
+    {
+      "check_id": "app_a1.owner_acceptance",
+      "observed": "7fbbfb4c0644246633c22fd51ce42b7d9631096a8cc659de5e22fad1bf67ca35",
+      "passed": true
+    },
+    {
+      "check_id": "registry.exact_order",
+      "observed": [
+        "reference",
+        "G",
+        "E",
+        "P",
+        "GE",
+        "GP",
+        "EP",
+        "GEP",
+        "one_source_reference",
+        "one_source_GEP",
+        "cyclic_rotation_GEP",
+        "order_EGP",
+        "order_GPE",
+        "label_permuted_reference",
+        "label_permuted_GEP",
+        "carrier_clamp_GEP",
+        "mediator_restore_G",
+        "mediator_restore_E",
+        "mediator_restore_P"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "registry.count",
+      "observed": 19,
+      "passed": true
+    },
+    {
+      "check_id": "policy.one_campaign",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "policy.zero_campaign_retry",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "policy.one_arm_attempt",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "policy.zero_arm_retry",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "policy.fresh_process",
+      "observed": 19,
+      "passed": true
+    },
+    {
+      "check_id": "policy.packet_bound",
+      "observed": 32,
+      "passed": true
+    },
+    {
+      "check_id": "policy.queue_bound",
+      "observed": 4,
+      "passed": true
+    },
+    {
+      "check_id": "policy.topology_bound",
+      "observed": [
+        12,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "policy.no_address_space_limit",
+      "observed": "none",
+      "passed": true
+    },
+    {
+      "check_id": "output.aggregate.parent",
+      "observed": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+      "passed": true
+    },
+    {
+      "check_id": "output.aggregate.json_only",
+      "observed": ".json",
+      "passed": true
+    },
+    {
+      "check_id": "output.aggregate.absent",
+      "observed": false,
+      "passed": true
+    },
+    {
+      "check_id": "output.aggregate.not_module_or_config",
+      "observed": ".json",
+      "passed": true
+    },
+    {
+      "check_id": "output.reconstruction.parent",
+      "observed": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+      "passed": true
+    },
+    {
+      "check_id": "output.reconstruction.json_only",
+      "observed": ".json",
+      "passed": true
+    },
+    {
+      "check_id": "output.reconstruction.absent",
+      "observed": false,
+      "passed": true
+    },
+    {
+      "check_id": "output.reconstruction.not_module_or_config",
+      "observed": ".json",
+      "passed": true
+    },
+    {
+      "check_id": "output.distinct",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "output.no_per_arm_directory",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.analysis.hash",
+      "observed": "f273caddee68eea142b0c83b22380df969c7065a1510bb1e577441b19eb51e7a",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.analysis.portable",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.runner.hash",
+      "observed": "f15c2f6b07fb3488a4e0e0471077d582d90af82f683695c6c73891260a2ab3af",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.runner.portable",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.reconstructor.hash",
+      "observed": "0af95ee22a8819ceab7675afdb02cff066d52c60f801b1192ad822a8367ce2f4",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.reconstructor.portable",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.validator.hash",
+      "observed": "43457a6dd6f46a206396f1ff9f2111936eefba5be1cac9842f6a757607e71c4a",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.validator.portable",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.roles",
+      "observed": [
+        "analysis",
+        "reconstructor",
+        "runner",
+        "validator"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "portability.runner_rejects_absolute_arguments",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "portability.reconstructor_rejects_absolute_arguments",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "portability.validator_rejects_absolute_arguments",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "runner.pygrc_import",
+      "observed": [
+        "__future__",
+        "argparse",
+        "copy",
+        "hashlib",
+        "importlib",
+        "json",
+        "math",
+        "os",
+        "p2_i2_app_a2_analysis",
+        "pathlib",
+        "platform",
+        "pygrc",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "runner.subprocess_import",
+      "observed": [
+        "__future__",
+        "argparse",
+        "copy",
+        "hashlib",
+        "importlib",
+        "json",
+        "math",
+        "os",
+        "p2_i2_app_a2_analysis",
+        "pathlib",
+        "platform",
+        "pygrc",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "analysis.no_pygrc",
+      "observed": [
+        "__future__",
+        "hashlib",
+        "json",
+        "math",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "reconstructor.no_pygrc",
+      "observed": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "p2_i2_app_a2_analysis",
+        "pathlib",
+        "platform",
+        "sys",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "reconstructor.no_subprocess",
+      "observed": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "os",
+        "p2_i2_app_a2_analysis",
+        "pathlib",
+        "platform",
+        "sys",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "validator.no_pygrc",
+      "observed": [
+        "__future__",
+        "argparse",
+        "ast",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "platform",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_result_scans",
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_break",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_shared_runtime",
+      "observed": [
+        "__future__",
+        "argparse",
+        "copy",
+        "hashlib",
+        "importlib",
+        "json",
+        "math",
+        "os",
+        "p2_i2_app_a2_analysis",
+        "pathlib",
+        "platform",
+        "pygrc",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "typing"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_app_a2_import_cache",
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "isolation.worker_input_arm_only",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.exact_frozen_row",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.fresh_model",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.all_attempts_retained",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_adaptive_retry_loop",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.aggregate_exclusive_claim",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "activation.runner_requires_static_validation",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "activation.reconstructor_requires_static_validation",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_per_arm_persist",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.portable_failure",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.temporary_failure_path_normalized",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "isolation.matrix_fails_closed",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "native.operations",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "native.response",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "native.intervention",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "native.restoration",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "receipts.packet_records",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "receipts.native_producer",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "receipts.target_roles",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "reconstruction.no_process_calls",
+      "observed": [
+        "ArgumentParser",
+        "add_argument",
+        "close",
+        "dumps",
+        "exists",
+        "fsync",
+        "hexdigest",
+        "is_absolute",
+        "is_file",
+        "is_relative_to",
+        "loads",
+        "mkdir",
+        "open",
+        "parse_args",
+        "pop",
+        "python_version",
+        "read",
+        "read_text",
+        "relative_to",
+        "resolve",
+        "sha256",
+        "update",
+        "values",
+        "write"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "reconstruction.analysis_from_receipts",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "reconstruction.byte_identity",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "reconstruction.exclusive_output",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "freeze.no_scientific_literals_duplicated",
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "commands.campaign_venv",
+      "observed": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=../graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --campaign --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+      "passed": true
+    },
+    {
+      "check_id": "commands.worker_venv",
+      "observed": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --worker --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+      "passed": true
+    },
+    {
+      "check_id": "commands.reconstruction_venv",
+      "observed": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_reconstruct.py --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --input experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+      "passed": true
+    },
+    {
+      "check_id": "commands.no_absolute_paths",
+      "observed": {
+        "campaign": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=../graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --campaign --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+        "reconstruction": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_reconstruct.py --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --input experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+        "validation": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_validate.py --entry-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json --activation-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-activation-freeze.json",
+        "worker": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --worker --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "activation.future_only",
+      "observed": {
+        "campaign_authorized_now": false,
+        "containing_commit_required": true,
+        "owner_acceptance_required": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+        "present_now": false,
+        "required_authority_fields": [
+          "owner_acceptance=true",
+          "implementation_commit=<containing commit>",
+          "campaign_authorized=true",
+          "campaign_invocations=1",
+          "campaign_retry_limit=0",
+          "attempts_per_arm=1",
+          "arm_retry_limit=0",
+          "normalized_campaign_command=<exact frozen command>",
+          "normalized_worker_command=<exact frozen command>",
+          "normalized_reconstruction_command=<exact frozen command>"
+        ],
+        "retention_before_campaign_required": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "activation.owner_required",
+      "observed": {
+        "campaign_authorized_now": false,
+        "containing_commit_required": true,
+        "owner_acceptance_required": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+        "present_now": false,
+        "required_authority_fields": [
+          "owner_acceptance=true",
+          "implementation_commit=<containing commit>",
+          "campaign_authorized=true",
+          "campaign_invocations=1",
+          "campaign_retry_limit=0",
+          "attempts_per_arm=1",
+          "arm_retry_limit=0",
+          "normalized_campaign_command=<exact frozen command>",
+          "normalized_worker_command=<exact frozen command>",
+          "normalized_reconstruction_command=<exact frozen command>"
+        ],
+        "retention_before_campaign_required": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "activation.authorization_absent",
+      "observed": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+      "passed": true
+    }
+  ],
+  "checks_passed": 96,
+  "checks_total": 96,
+  "entry_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json",
+    "sha256": "f87bda63615cc2ef9224d7b967d3f07dca94d41e3d45a2a25cf65b59d4db5dd6"
+  },
+  "experiment_id": "2026-07-AE01",
+  "failed_checks": [],
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A2",
+  "output_digest": "3a4f93e4251a61a8d5453f2887d39375ba61487926587c83765a543a6b850418",
+  "status": "passed",
+  "zero_science_receipt": {
+    "Appendix_results_assigned": 0,
+    "child_arm_starts": 0,
+    "pygrc_imports": 0,
+    "runtime_outputs_created": 0,
+    "scientific_gate_signatures": 0,
+    "scientific_models": 0
+  }
+}
