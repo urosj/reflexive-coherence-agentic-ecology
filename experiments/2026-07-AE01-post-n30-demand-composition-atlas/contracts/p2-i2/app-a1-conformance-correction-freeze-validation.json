@@ -1,0 +1,45 @@
+{
+  "artifact_id": "P2-I2-APP-A1-CONFORMANCE-CORRECTION-FREEZE-VALIDATION",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "validated_at": "2026-07-15T00:00:00+02:00",
+  "status": "passed",
+  "inputs": {
+    "freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-correction-freeze.json",
+    "freeze_sha256": "50ab8d8d8b6bd1e826ecc906bdcd68e656c961e776644a7b9ce8e49f1194f996",
+    "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_freeze_validate.py",
+    "validator_sha256": "883cbc941371dfa78f6d95802573f42e811d30ea5cc1f5850609860f17fb0f36",
+    "normalized_command": "env PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_freeze_validate.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-correction-freeze.json"
+  },
+  "result": {
+    "checks_passed": 60,
+    "checks_total": 60,
+    "failure_count": 0,
+    "failures": [],
+    "correction_freeze": true,
+    "pygrc_imports": 0,
+    "models_constructed": 0,
+    "app_a2_arms_executed": 0
+  },
+  "pre_runtime_process_ledger": {
+    "syntax_validation_starts": 2,
+    "static_freeze_validation_starts": 1,
+    "pygrc_model_starts": 0,
+    "replacement_conformance_starts": 0,
+    "scientific_starts": 0
+  },
+  "validated_boundaries": [
+    "immutable base-freeze hash",
+    "consumed failed-start hash",
+    "owner correction-authorization hash",
+    "same APP-A1 iteration",
+    "one replacement plus one reconstruction and zero retry",
+    "public packet-ledger rebase before set_state",
+    "unchanged fixture and gate definitions",
+    "APP-A2 and scientific runtime closed",
+    "repository .venv command",
+    "portable checkout-only PyGRC binding",
+    "zero persisted machine-specific path"
+  ],
+  "authority_effect": "The owner-authorized replacement candidate-free invocation may begin once. This validation supplies no scientific evidence and does not open APP-A2 or commit authority."
+}

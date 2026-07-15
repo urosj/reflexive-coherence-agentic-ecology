@@ -26,10 +26,13 @@ containing commit without opening cross-lane synthesis or the next move.
 
 Post-closeout `P2-I2-APP-A` is now accepted under DEC-063/CHG-068 as an
 additive, source-grounded three-operation shared-carrier composition appendix.
-Its semantic and hypothesis scaffold is complete; APP-A1 becomes ready only
-after retention and remains unstarted. The accepted I11 result and every
-passed main P2-I2 gate remain unchanged; Appendix A execution is not
-authorized.
+Its semantic and hypothesis scaffold is retained. APP-A1 has completed its
+hard-ordered audit/freeze/conformance cycle under DEC-064–067/CHG-069–072.
+N29 threshold transport remains rejected; the separate live-domain authority
+is accepted; corrected candidate-free conformance passes 29/29 and reconstructs
+byte-identically; the exact APP-A2 execution contract is frozen but inactive.
+The accepted I11 result and every passed main P2-I2 gate remain unchanged;
+Appendix A execution is not authorized.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -37,9 +40,15 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-A0` semantic construction is
-owner-accepted under DEC-063/CHG-068; its containing commit is authorized.
-APP-A1 remains unstarted and APP-A2 remains unauthorized.
+**Current activity iteration:** `P2-I2-APP-A1` is complete and owner-accepted;
+this containing commit is its required retention point. The base freeze passed
+48/48 before models; the retained first
+start stopped on a harness intervention defect; the owner-authorized correction
+passed 60/60 before replacement; one corrected conformance and one
+reconstruction pass 29/29 with byte-identical output. Complete package
+validation passes 53/53. APP-A2 remains unopened until this retention commit
+succeeds; scientific gate evaluation and Appendix interpretation remain
+unauthorized.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -242,7 +251,7 @@ Rules:
 | `P2-I2-I09A` | Additive normalized-estimator control-projection correction | DEC-056 finding plus explicit owner `+1` under DEC-057 | Owner-accepted: 24/24, zero blockers, exact reconstruction, no downstream disposition change | DEC-059 passes CONTROL-GATE and authorizes containing commit |
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
-| `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 semantic brief/checklist/hypothesis/decision scaffold owner-accepted; zero runtime | Main P2-I2 result remains closed; containing commit authorized; APP-A1 ready after retention but unstarted; APP-A2 and evidence unauthorized |
+| `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 owner-accepted at 53/53; native path selected; N29 threshold transport rejected; candidate-free conformance 29/29 and byte-identical | This containing commit is the required APP-A1 retention point; APP-A2 remains unopened and zero Appendix scientific arms/results exist |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3794,7 +3803,7 @@ valid terminal classification + reconstructed evidence
 | `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | Owner-accepted exact registration | I06 registers reserves, accumulation/mixing/depletion, no-window leakage/maintenance/saturation dispositions, token/event/queue bounds, finite coherence intervals, and fail-closed overflow semantics |
 | `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact; I11 interpretation | Accepted retained-evidence disposition | DEC-042 registers the `A_ALTERNATE` access-scope contrast; accepted I11 finds the mode-specific relation retained in all three modes and reaches R05 without inferring broader transfer |
 | `L02-Q13` | What is the lane terminal class, support boundary, and next move? | I11 | Decided and owner-accepted | DEC-061 accepts `supported_bounded_candidate` through R05, lane-wide `scaffold_dependent`, `T3_operational_class`; state is native-expression candidate, history/hybrid share active-history naturalization debt; one future native substitution probe is named but not started |
-| `L02-Q14` | Can the N29 generator/extractor/processor operations compose with subset-bounded irreducibility through one P2-I2 shared carrier? | APP-A0–APP-A2 | APP-A0 owner-accepted; no evidence | DEC-063 accepts the corrected gate-signature, operational-validity, causal-path, transportability, plurality, order, and compact-cycle boundaries; APP-A1 is ready after retention but unstarted; APP-A2 remains unauthorized |
+| `L02-Q14` | Can the N29 generator/extractor/processor operations compose with subset-bounded irreducibility through one P2-I2 shared carrier? | APP-A0–APP-A2 | APP-A0 retained; APP-A1 owner-accepted: native transition realization, separate live authority, exact 19-arm freeze, and 29/29 candidate-free conformance; no Appendix scientific evidence | DEC-068 authorizes the necessary APP-A1 retention commit; APP-A2 remains inactive until it succeeds |
 
 Questions may move only through cumulative decisions. A later answer must not
 rewrite an earlier retained decision without its reopening condition.
@@ -3905,6 +3914,11 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-066` | Owner identifies the grounded three-operation composition question as still P2-I2, directs it into Appendix A, requests a simplified evidence-focused cycle, and requires runtime evidence rather than artifact manipulation | `post_closeout_appendix_semantic_extension` | Add checklist/hypothesis authority first; append one N29-grounded prospective design to the accepted brief; reuse accepted P2-I2 machinery through APP-A0–APP-A2 instead of repeating I00–I11; require one fresh-runtime complete-subset campaign | Documentation construction only; main I11 result/gates immutable; zero capability/runtime/scientific work now | N29 I14.1/I14.2-3/I14.3/I14.5-2, N30 changed-medium eligibility, accepted P2-I2 controls/restoration/reconstruction/claim boundaries | Review-ready uncommitted; Appendix A acceptance, APP-A1, APP-A2, evidence, and commit unauthorized |
 | `P2-I2-CHG-067` | Owner-supplied APP-A0 review accepts the overall direction conditionally and identifies four critical semantic corrections plus plurality/order/process tightening | `preacceptance_semantic_correction` | Replace strongest-pair scalarization with a complete gate-signature conjunction over every proper subset; separate operational validity from scientific effect; require every operation's retained causal path to `R`; gate N29 threshold reuse on semantic/domain equivalence; make plurality inference asymmetric; require two adjacent inversions; hard-order APP-A1 internally | APP-A0 documentation correction only; zero capability/runtime/scientific work; no threshold, fixture, realization, or result selected | DEC-062/CHG-066, exact N29 source roles, accepted P2-I2 machinery, compact APP-A0–APP-A2 boundary, main I11 result/gates | Corrected package review-ready uncommitted; owner acceptance, commit, APP-A1, APP-A2, and evidence unauthorized |
 | `P2-I2-CHG-068` | Owner states `great. this should be commited.` after the corrected APP-A0 review handoff | `appendix_a0_owner_acceptance_and_retention_commit` | Accept the exact four-artifact semantic stack; close APP-A0; authorize one containing commit; make APP-A1 ready only after retention without starting it | Acceptance/retention only; zero capability/runtime/scientific work; no APP-A1 audit, realization, fixture, threshold, conformance, execution freeze, or evidence | DEC-063, CHG-066/067 corrected semantics, main I11 result and passed gates, compact APP-A0–APP-A2 cycle | Complete; containing commit authorized; APP-A1 ready after retention but unstarted; APP-A2 and evidence unauthorized |
+| `P2-I2-CHG-069` | Owner states `Let's run APP-A1 next` after accepted APP-A0 retention commit `851c3dc` | `appendix_a1_hard_ordered_audit_and_freeze_entry` | Declare APP-A1 before source work; capture exact source identities; audit N29 semantics and source-current PyGRC deltas; only then decide realization and metric/domain transportability, freeze fixture/gates/controls, and run candidate-free conformance if new machinery is introduced | Opens APP-A1 only; zero APP-A2/scientific evidence authority; graph repository read-only; repository `.venv` for every Python process | DEC-064, accepted APP-A0, exact hard ordering, native-first/minimal-producer boundary, no-retrospective-selection rule | Active at source/delta audit; later APP-A1 steps remain conditional on preceding retained dispositions; commit and APP-A2 unauthorized |
+| `P2-I2-CHG-070` | APP-A1 retained-source and PyGRC audit finds native packet transitions adequate but N29 measurement semantics/domain non-equivalent | `appendix_a1_failed_closed_transportability_and_separate_gate_proposal` | Retain exact audit and identities; select native G/E/P/carrier/R transition paths only after audit; fail N29 threshold transport closed; propose an inactive live packet/coherence gate authority for separate owner review | 38/38 partial-package validation; zero model construction, conformance, APP-A2 arm, or scientific runtime; initial plain-import diagnostic is explicitly classified as omission of the already accepted checkout-only PYTHONPATH binding, not a PyGRC/venv defect | DEC-065, accepted P2-I2 checkout-only PyGRC import, exact N29 builder/artifact bytes, source-current graph commit, APP-A0 two-part transportability rule | Source/delta portion complete; fixture/control/conformance freeze blocked pending owner review; commit and APP-A2 unauthorized |
+| `P2-I2-CHG-071` | Owner responds `+1` to the explicit review question for `app_a_live_packet_coherence_delta_v1` | `appendix_a1_gate_authority_acceptance` | Bind the exact reviewed proposal and audit context; activate its prospective live packet/coherence metrics; continue only to exact fixture/control/conformance freeze in the accepted hard order | Acceptance record only; zero model, conformance, APP-A2 arm, scientific runtime, result, or commit authority | DEC-066, accepted proposal hash, failed N29 transportability retained, native-transition selection, `.venv` plus checkout-only PyGRC binding | Active at fixture/control freeze construction; conformance only after freeze; APP-A2 and commit unauthorized |
+| `P2-I2-CHG-072` | First frozen APP-A1 candidate-free invocation stops before output because the carrier-clamp state edit retains a stale packet-ledger total; owner responds `+1` to the disclosed public-builder correction | `appendix_a1_same_iteration_intervention_ledger_rebase_correction` | Preserve the immutable base freeze and consumed failed start; after the unchanged clamp edit, rebuild the packet ledger through public `build_lgrc9v3_packet_ledger`, preserving history/policies/flags and recomputing totals; authorize one replacement plus one reconstruction, zero retry | Correction freeze passes 60/60 before any replacement model; corrected conformance passes 29/29 and reconstructs byte-identically; no scientific value, APP-A2 arm, result, acceptance, or commit authority | DEC-067, exact failed-start and owner-authorization records, unchanged fixture/gate/clamp semantics, `.venv`, checkout-only PyGRC, graph read-only | Complete; APP-A1 review-ready uncommitted; APP-A2 and commit remain closed |
+| `P2-I2-CHG-073` | Owner directs APP-A2, explicitly accepts APP-A1, and permits a commit only if needed; the frozen APP-A2 entry condition requires retention | `appendix_a1_owner_acceptance_and_necessary_retention` | Bind the exact reviewed technical hashes; accept APP-A1; authorize one containing retention commit because it is necessary for APP-A2 progression; perform no APP-A2 work inside retention | Acceptance/navigation only; reviewed technical bytes unchanged; zero APP-A2 arm, scientific gate, or result | DEC-068, 53/53 complete validation, 29/29 byte-reconstructed conformance, inactive execution freeze | Active through the one authorized retention commit; APP-A2 may be declared only afterward |
 
 ## 19. Evidence ledger
 
@@ -4001,15 +4015,24 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I10-RECONSTRUCTION` | I10 | [v1 freeze](../contracts/p2-i2/i10-reconstruction-input-freeze.json), [v2 freeze](../contracts/p2-i2/i10-reconstruction-input-freeze-v2.json), failed starts [001](../contracts/p2-i2/i10-reconstruction-failed-start.json), [002](../contracts/p2-i2/i10-reconstruction-failed-start-002.json), and [003](../contracts/p2-i2/i10-reconstruction-failed-start-003.json), [manifest](../contracts/p2-i2/i10-reconstruction-manifest.json), [24/24 validation](../contracts/p2-i2/i10-reconstruction-validation.json), [builder](../scripts/p2_i2_i10_reconstruct.py), and [report](../reports/P2-I2-I10-reconstruction-and-identity.md) | Independent retained-evidence reconstruction plus candidate-free three-mode restoration identity, raw normalization classification, equal-input no-packet continuation, and paired reset; no new scientific evidence | Owner-accepted under DEC-059; RECON-GATE passed; containing commit authorized; I11 ready after retention |
 | `P2-I2-I09A-I10-OWNER-ACCEPTANCE` | I09A/I10 | [Combined acceptance and gate record](../contracts/p2-i2/i09a-i10-owner-acceptance-and-gates.json), DEC-059, and CHG-063 | Exact technical-byte acceptance, CONTROL/RECON gate passage, and one retention-commit authority only; no interpretation | Owner-accepted by `commit all`; commit head intentionally self-reference-free; I11 remains unstarted |
 | `P2-I2-I11-TERMINAL-CLOSEOUT` | I11 | [Input freeze](../contracts/p2-i2/i11-interpretation-input-freeze.json), [developmental interpretation](../contracts/p2-i2/i11-developmental-interpretation.json), [requirement extraction](../contracts/p2-i2/i11-requirement-extraction.json), [terminal classification](../contracts/p2-i2/i11-terminal-classification.json), [manifest](../contracts/p2-i2/i11-closeout-manifest.json), [30/30 validation](../contracts/p2-i2/i11-closeout-validation.json), [owner acceptance](../contracts/p2-i2/i11-owner-acceptance-and-close-gate.json), [builder](../scripts/p2_i2_i11_closeout.py), and [report](../reports/P2-I2-I11-terminal-closeout.md) | Retained-evidence interpretation only: R01–R05 reached; one mode-preserving terminal record; explicit support/realization/debt/demand boundaries; 30/30 terminal guards; zero new scientific or graph runtime | Owner-accepted under DEC-061/CHG-065; CLOSE-GATE passed; containing commit authorized; cross-lane synthesis and next-move execution remain unopened |
-| `P2-I2-APP-A-SEMANTIC-SCAFFOLD` | APP-A0 | [Brief Appendix A](P2-I2-shared-pool-co-conditioning-brief.md#appendix-a--grounded-three-operation-shared-carrier-composition-extension), checklist section 20, operational-hypothesis section 17, DEC-062/063, and CHG-066–068 | Prospective within-lane semantic/source binding and correction only; zero Appendix A evidence | Owner-accepted; containing commit authorized; main P2-I2 closeout unchanged; APP-A1 ready after retention but unstarted; APP-A2 unauthorized |
+| `P2-I2-APP-A-SEMANTIC-SCAFFOLD` | APP-A0 | [Brief Appendix A](P2-I2-shared-pool-co-conditioning-brief.md#appendix-a--grounded-three-operation-shared-carrier-composition-extension), checklist section 20, operational-hypothesis section 17, DEC-062/063, and CHG-066–068 | Prospective within-lane semantic/source binding and correction only; zero Appendix A evidence | Owner-accepted and retained at `851c3dc`; main P2-I2 closeout unchanged; APP-A1 now governed by DEC-064/065; APP-A2 unauthorized |
+| `P2-I2-APP-A1-SOURCE-DELTA` | APP-A1 | [Source/delta audit](../contracts/p2-i2/app-a1-source-delta-audit.json), [gate proposal](../contracts/p2-i2/app-a1-gate-authority-proposal.json), [owner acceptance](../contracts/p2-i2/app-a1-gate-authority-acceptance.json), [38/38 validation](../contracts/p2-i2/app-a1-validation.json), [validator](../scripts/p2_i2_app_a1_validate.py), and [cumulative review](../reports/P2-I2-APP-A1-source-delta-and-gate-authority-review.md) | Implementation/measurement-readiness only: native transition path identified, N29 threshold transport rejected, separate live-domain authority accepted | Included in owner-accepted APP-A1; this containing commit is its retention point; APP-A2 scientific runtime closed |
+| `P2-I2-APP-A1-FREEZE` | APP-A1 | [Immutable fixture/control freeze](../contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json), [48/48 base validation](../contracts/p2-i2/app-a1-freeze-validation.json), and [static validator](../scripts/p2_i2_app_a1_freeze_validate.py) | Exact 19-arm future registry plus candidate-free sentinel conformance authority; no APP-A2 execution | Retained; original single conformance attempt consumed by recorded harness intervention defect |
+| `P2-I2-APP-A1-CONFORMANCE-CORRECTION` | APP-A1 | [Failed start](../contracts/p2-i2/app-a1-conformance-failed-start-001.json), [owner correction authority](../contracts/p2-i2/app-a1-conformance-correction-authorization.json), [additive correction freeze](../contracts/p2-i2/app-a1-conformance-correction-freeze.json), [60/60 zero-model validation](../contracts/p2-i2/app-a1-conformance-correction-freeze-validation.json), [29/29 runtime record](../contracts/p2-i2/app-a1-runtime-conformance.json), and [attempt/reconstruction receipt](../contracts/p2-i2/app-a1-conformance-run-receipt.json) | Same-iteration intervention-ledger-rebase mechanics and quarantined candidate-free conformance only | Complete: one replacement, one byte-identical reconstruction, zero retry and zero APP-A2/scientific execution |
+| `P2-I2-APP-A1-EXECUTION-FREEZE` | APP-A1 | [Inactive exact APP-A2 execution freeze](../contracts/p2-i2/app-a1-app-a2-execution-freeze.json), [53/53 complete validation](../contracts/p2-i2/app-a1-complete-validation.json), [complete validator](../scripts/p2_i2_app_a1_complete_validate.py), and [cumulative report](../reports/P2-I2-APP-A1-source-delta-and-gate-authority-review.md) | Exact future 19-arm runtime, receipt, isolation, evaluation, reconstruction, and interpretation contract only | Owner-accepted; included in the authorized retention commit; all APP-A2 runtime/results remain unauthorized until commit success and APP-A2 declaration |
+| `P2-I2-APP-A1-OWNER-ACCEPTANCE` | APP-A1 | [Owner acceptance and necessary-retention authority](../contracts/p2-i2/app-a1-owner-acceptance-and-retention.json), DEC-068, and CHG-073 | Exact APP-A1 acceptance plus one retention-commit authority only | Owner-accepted; commit necessary and authorized; APP-A2 opens only afterward and no scientific runtime/result is assigned |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.
 
 ## 20. `P2-I2-APP-A` — Three-operation shared-carrier composition
 
-**Status:** APP-A0 semantic scaffold owner-accepted under DEC-063/CHG-068;
-containing commit authorized; no Appendix A evidence exists.
+**Status:** APP-A0 is retained. APP-A1 is complete and owner-accepted under
+DEC-064–067/CHG-069–072: N29 transport remains rejected, the separate live
+authority is accepted, the exact 19-arm future registry is frozen, and
+candidate-free conformance passes 29/29 with byte-identical reconstruction.
+No Appendix scientific evidence exists; this containing commit is the required
+APP-A1 retention point and APP-A2 remains unopened until it succeeds.
 
 **Purpose:** test one exact extension of the accepted P2-I2 relation:
 
@@ -4143,7 +4166,7 @@ Checklist:
   inversions, and APP-A1 hard ordering.
 - [x] Obtain owner acceptance of the corrected Appendix A semantic package and
   containing-commit authorization under DEC-063/CHG-068.
-- [ ] Open APP-A1 only after acceptance; perform one source-current native-
+- [x] Open APP-A1 only after acceptance; perform one source-current native-
   first delta audit in the frozen internal order; prove or reject N29 metric/
   domain transportability; freeze realization, gate signature, fixture,
   controls, role-rotation identity, and any candidate-free conformance.
@@ -4155,3 +4178,93 @@ Checklist:
 
 No Appendix A conclusion can strengthen the accepted main P2-I2 terminal.
 It is an additive within-lane extension with its own bounded disposition.
+
+### 20.1 `P2-I2-APP-A1` — Hard-ordered source/delta audit and freeze
+
+**Status:** complete and owner-accepted. The hard-ordered audit,
+separate gate-authority acceptance, exact fixture/control registration,
+candidate-free correction/conformance/reconstruction, inactive APP-A2 execution
+freeze, and 53/53 complete validation are included in the authorized containing
+retention commit. APP-A2 remains unopened until commit success.
+
+```text
+iteration_id = P2-I2-APP-A1
+purpose = determine whether and how the accepted N29 G/E/P/R relation can be
+          realized and measured in source-current PyGRC without semantic
+          invention, then freeze the exact Appendix A fixture and execution
+          boundary
+entry_authority = accepted APP-A0 commit 851c3dc plus owner direction
+                  "Let's run APP-A1 next"
+frozen_input_action = capture exact RCAE HEAD/clean state, graph HEAD/clean
+                      state, retained N29 source/report/artifact identities,
+                      accepted APP-A0 identities, and repository .venv identity
+hard_order = source/delta audit -> native/producer realization selection ->
+             metric/domain equivalence decision -> fixture/gate/control freeze
+             -> candidate-free conformance only if new machinery is introduced
+             -> execution freeze -> owner review
+mutation_boundary = RCAE APP-A1 checklist/hypothesis/decision, portable
+                    contracts, scripts, and one cumulative report only;
+                    graph repository read-only
+runtime_boundary = repository .venv only; source/capability inspection and
+                   candidate-free implementation conformance only when frozen;
+                   zero APP-A2 matrix/response/conclusion work
+required_outputs = portable input/source identity freeze; source/delta and
+                   transportability audit; exact realization/fixture/gate/
+                   control/execution freeze; conditional conformance receipt;
+                   validation; one cumulative APP-A1 report
+evidence_effect = implementation/measurement readiness only; zero support,
+                  falsification, gate-signature result, or Appendix conclusion
+exit_gate = exact APP-A1 package returned uncommitted for owner review; APP-A2
+            remains closed
+```
+
+APP-A1 checklist:
+
+- [x] Record DEC-064/CHG-069 and the APP-A1 hypothesis projection before any
+  source/delta audit.
+- [x] Capture and retain the exact entry identities and dirty-state boundary.
+- [x] Audit retained N29 metric/operation semantics and current PyGRC public
+  machinery without selecting a realization in advance.
+- [x] Classify every load-bearing operation/interface as native adequate,
+  minimally producer-assisted, or missing prerequisite with exact evidence.
+- [x] Decide metric-semantic and measurement-domain equivalence before binding
+  any N29 threshold as Appendix A authority.
+- [x] Fail the APP-A1 execution-freeze boundary closed after both equivalence
+  terms resolve false; retain N29 values as diagnostic/source anchors only.
+- [x] Construct a separate inactive live packet/coherence gate-authority
+  proposal and return it for owner review without freezing a fixture.
+- [x] Obtain explicit owner acceptance of the exact live-domain proposal and
+  bind that acceptance without reopening the failed N29 transportability gate.
+- [x] Freeze the exact fixture, gate signature, valid-zero semantics, causal
+  paths to `R`, diversion, role rotation, adjacent inversions, restoration,
+  isolation, and finite APP-A2 execution boundary.
+- [x] Freeze bounded candidate-free implementation conformance after all design
+  values are fixed; retain the first consumed failed start and obtain explicit
+  authority for the statically validated same-iteration ledger-rebase
+  correction.
+- [x] Execute the single corrected conformance replacement and deterministic
+  reconstruction; retain the exact runtime and attempt receipts.
+- [x] Validate the complete package, verify zero APP-A2/scientific execution,
+  and return it uncommitted for owner review.
+
+Current audit disposition:
+
+```text
+native G/E/P/carrier/R transition path = identified
+load-bearing external producer = not required
+read-only experiment observer = required for semantic labels and metrics
+metric_semantics_equivalent = false
+measurement_domain_equivalent = false
+N29 threshold authority = diagnostic only
+live-domain gate authority = owner accepted under DEC-066
+exact fixture/control freeze = complete; 48/48 base validation
+first conformance attempt = consumed, no output; harness defect retained
+correction freeze = 60/60, zero model construction
+PyGRC models constructed in failed start = 4
+candidate-free conformance starts = 1 failed + 1 replacement + 1 reconstruction
+candidate-free conformance result = 29/29; byte-identical
+APP-A2 execution contract = exact and inactive
+complete package validation = 53/53 on final third static start; first failed
+                              only on a status lexeme and second already passed
+APP-A2/scientific runs = 0
+```

@@ -98,6 +98,11 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-061` | Does the owner accept the exact I11 terminal package and close P2-I2? | Accepted by `commit changes`: exact reviewed bytes bound; CLOSE-GATE passes; one containing commit authorized | Closes P2-I2 at bounded R05/scaffold-dependent/T3 ceiling; does not start synthesis, naturalization, ranking, or N31+ | 2026-07-15 |
 | `P2-I2-DEC-062` | How should the grounded three-operation shared-carrier extension be placed and evidenced? | Owner-directed semantic construction, corrected under CHG-067 and accepted under DEC-063 | Historical APP-A0 construction authority; main I11 result and passed gates remain accepted and unchanged | 2026-07-15 |
 | `P2-I2-DEC-063` | Does the owner accept corrected APP-A0 and authorize its retention? | Accepted by `great. this should be commited.`; exact four-artifact semantic stack and one containing commit authorized | Closes APP-A0; APP-A1 ready only after retention but unstarted; APP-A2 and evidence remain unauthorized | 2026-07-15 |
+| `P2-I2-DEC-064` | What exact work may APP-A1 perform after accepted APP-A0 retention? | Owner directs `Let's run APP-A1 next`; hard-ordered audit/freeze stage declared before source work | Opens APP-A1 source/delta audit and conditional downstream freeze steps only; APP-A2, scientific evidence, acceptance, and commit remain unauthorized | 2026-07-15 |
+| `P2-I2-DEC-065` | Can N29 numerical gates govern the selected native APP-A realization, and what follows if not? | No: both accepted equivalence terms are false; retain an inactive prospective live-domain gate authority for separate owner review | Source/delta portion complete; exact fixture/control/conformance freeze, APP-A2, acceptance, and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-066` | Does the owner accept `app_a_live_packet_coherence_delta_v1` for continued APP-A1 construction? | Accepted by `+1`; exact reviewed proposal and failed-transport boundary retained | Activates only the APP-A1 fixture/control freeze and post-freeze candidate-free conformance; commit, APP-A1 acceptance, APP-A2, and scientific runtime remain closed | 2026-07-15 |
+| `P2-I2-DEC-067` | May the consumed APP-A1 conformance start receive a same-iteration packet-ledger-rebase correction and one replacement? | Accepted by `+1`; corrected replacement passes 29/29 and reconstruction is byte-identical | Preserves the failed start/base freeze; completes candidate-free conformance only; APP-A2, science, commit, and acceptance remain closed | 2026-07-15 |
+| `P2-I2-DEC-068` | Does the owner accept APP-A1, and is its retention commit authorized before requested APP-A2 progression? | Yes: explicit acceptance; commit authorized only because the frozen APP-A2 entry condition requires it | One containing APP-A1 retention commit; APP-A2 may be declared only afterward; no APP-A2 runtime or result is authorized by acceptance | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3350,8 +3355,238 @@ Reopen DEC-063 if any of the four accepted files changes before the containing
 commit, the commit omits a file, APP-A1 activity occurs inside retention, or
 acceptance is represented as scientific support.
 
-## 66. Pending decision queue
+## 66. `P2-I2-DEC-064` — Open hard-ordered APP-A1
 
-After the authorized APP-A0 retention commit, APP-A1 is ready but unstarted.
-APP-A2 remains closed. Cross-lane synthesis and any native substitution probe
-belong to separately opened later work.
+**Status:** decided for construction by explicit owner progression direction;
+active at source/delta audit only
+
+After accepted APP-A0 retention commit `851c3dc`, the owner states: `Let's run
+APP-A1 next`.
+
+**Decision:** open APP-A1 under the exact order accepted in DEC-063:
+
+```text
+source/delta audit
+-> native/producer realization selection
+-> metric-semantic and measurement-domain equivalence decision
+-> exact fixture, gate signature, and controls
+-> candidate-free implementation conformance if new machinery is introduced
+-> execution freeze
+-> owner review
+```
+
+Before source inspection, APP-A1 must declare its checklist/hypothesis scope
+and then capture exact RCAE, graph, retained N29, accepted APP-A0, and
+repository-venv identities plus clean/dirty boundaries. The graph repository
+is read-only. Every Python process, including any nested process, must use the
+active RCAE repository `.venv`. No persisted machine-specific absolute path is
+allowed.
+
+The source/delta audit must not presume that `G`, `E`, `P`, or `R` is native,
+producer-backed, transportable, or executable. It must classify each exact
+load-bearing interface as native adequate, minimally producer-assisted, or a
+missing prerequisite from public source and retained source semantics. Only
+after that disposition may APP-A1 select a realization. Only after realization
+selection may it decide the accepted two-part threshold-transportability gate.
+
+APP-A1 may then freeze the exact fixture, gate signature, operationally valid
+zero semantics, operation-to-`R` causal paths, carrier continuity, matched
+diversions, capacity-relaxed one-source arm, conditional role rotation, two
+adjacent inversions, private/direct/controller exclusions, restoration,
+fresh-process isolation, resource bounds, attempts, and deterministic
+reconstruction. If new APP-A machinery is introduced, one separately frozen
+candidate-free conformance may test only interface execution, receipts,
+withdrawal, isolation, restoration, and reconstruction after all design values
+are fixed.
+
+APP-A1 may create portable identity/source audit, transportability,
+registration/freeze, conditional conformance, validation, and one cumulative
+report artifact. It may not execute any APP-A2 subset arm or response window,
+compare a scientific gate signature, assign support/falsification or a result,
+change accepted main P2-I2 evidence, mutate PyGRC, select N31+, or perform
+cross-lane synthesis.
+
+The completed exact APP-A1 package must return uncommitted for explicit owner
+review. Construction, audit, and conformance do not accept APP-A1, authorize a
+commit, or open APP-A2.
+
+Reopen DEC-064 if entry identities cannot be captured exactly, the graph tree
+is dirty in a way that affects inspected bytes, source semantics cannot be
+mapped without invention, realization is selected before audit completion,
+transportability is presumed, implementation observations select values
+retrospectively, or any APP-A2/scientific operation occurs.
+
+## 67. `P2-I2-DEC-065` — Reject N29 threshold transport and request separate gate-authority review
+
+**Status:** technical disposition complete; owner review pending for the
+separate prospective gate authority
+
+The hard-ordered audit binds exact APP-A0, N29, graph, PyGRC source, and venv
+identities. It finds that source-current PyGRC can express the load-bearing
+carrier and `G/E/P/R` transitions natively through public packet, causal-flux,
+event, and restoration surfaces. A thin read-only experiment observer is still
+needed for participant/operation labels and metric calculation, but no
+load-bearing external producer is selected.
+
+The retained N29 sources do not measure those runtime quantities. I14.1 and
+I14.3 project retained N28 capacity traces, I14.2-3 applies an explicit
+producer leakage factor, and I14.5-2 calculates later feedback and phase
+residual from artifact deltas while recording a declared leakage constant.
+Every accepted transportability dimension differs from the proposed live
+coherence/packet domain.
+
+**Decision:** resolve:
+
+```text
+metric_semantics_equivalent = false
+measurement_domain_equivalent = false
+transportability_gate_passed = false
+N29 numeric gate authority for APP-A = false
+```
+
+The N29 values remain exact source context. They may not silently become
+Appendix pass/fail thresholds. Under accepted APP-A0 semantics, this closes the
+fixture/control/conformance and execution-freeze boundary until a separately
+reviewed Appendix gate authority exists.
+
+The audit therefore retains one inactive proposal,
+`app_a_live_packet_coherence_delta_v1`. It measures matched-reference response
+packet deltas, live pre-R-to-R residual, and registered-route/budget leakage,
+while retaining `0.82` as a configuration identity. Its first three numeric
+anchors are explicitly prospective source-grounded choices rather than
+transported N29 equivalence. Its acceptance would authorize only the remaining
+APP-A1 fixture/control freeze and candidate-free conformance. It would not
+accept APP-A1, authorize a commit, or open APP-A2.
+
+The initial plain-venv import diagnostic omitted P2-I2's already accepted
+checkout-only `PYTHONPATH` binding. It is retained as a nonconforming diagnostic
+and is not a PyGRC availability, venv, or experiment failure. The corrected
+probe used the established portable checkout binding and the same repository
+`.venv`.
+
+Validation passes 38/38 with zero PyGRC models constructed, conformance runs,
+APP-A2 arms, or scientific runtimes. The graph remained clean and read-only.
+The package returns uncommitted.
+
+Reopen DEC-065 if any audited source identity changes, N29 live-runtime
+semantics are shown contrary to retained builders, the native realization
+requires a load-bearing hidden producer, or the owner chooses a different live
+measurement authority.
+
+## 68. `P2-I2-DEC-066` — Accept the prospective live-domain gate authority
+
+**Status:** decided by explicit owner acceptance; APP-A1 freeze construction
+active
+
+After review of the failed N29 transportability result and the inactive
+`app_a_live_packet_coherence_delta_v1` proposal, the owner responds `+1`.
+
+**Decision:** accept the exact proposal hash bound in the additive acceptance
+record. The live packet/coherence domain becomes the prospective Appendix A
+measurement authority. Its environment, support, phase-residual, and
+registered-route leakage rules and its `0.82` configuration identity may now
+be frozen into the exact fixture and controls.
+
+This acceptance does not reverse DEC-065: the N29 metric/domain equivalence
+terms remain false, and the source numbers are not relabelled as native N29
+observables. It authorizes only the rest of the already-open APP-A1 sequence:
+
+```text
+exact fixture/gate/control/identity freeze
+-> bounded candidate-free interface conformance
+-> deterministic conformance reconstruction
+-> complete APP-A1 validation
+-> owner review
+```
+
+No APP-A2 arm, scientific response comparison, support/falsification result,
+Appendix conclusion, acceptance, or commit is authorized. The graph repository
+remains read-only, and every Python process must use the RCAE `.venv` with the
+accepted checkout-only PyGRC source binding.
+
+Reopen DEC-066 if the accepted proposal bytes change, the fixture changes its
+measurement domain or claim ceiling, conformance selects scientific values, or
+any model is constructed before the exact freeze is complete.
+
+## 69. `P2-I2-DEC-067` — Correct the carrier-clamp ledger projection inside APP-A1
+
+**Status:** decided and technically complete; APP-A1 review pending
+
+The first candidate-free conformance invocation constructed four models and
+completed the common, diverted, and label-permuted branches. It stopped before
+writing output when the carrier-clamp branch restored four carrier node
+coherences through `set_state` while retaining the packet ledger's
+pre-intervention `node_coherence_total`. PyGRC correctly raised
+`InvalidStateTransitionError` before producing the clamped `R` response. The
+single original evidence invocation is consumed and cannot be retried under
+its immutable zero-retry freeze.
+
+After disclosure of the stopped invocation and the proposed smallest public-
+API correction, the owner responds `+1`.
+
+**Decision:** retain the base freeze and failed-start receipt byte-for-byte.
+Inside the same `P2-I2-APP-A1` iteration, permit only this intervention
+construction correction: after imposing the already-frozen clamp coherences
+and before `set_state`, call public
+`pygrc.models.build_lgrc9v3_packet_ledger` with the retained packet records,
+packet-event records, empty queue, policies, causal/runtime/evidence modes,
+and fixed-topology/acceptance flags. Recompute node coherence, conserved
+budget, and before/after budget totals for the imposed post-intervention state,
+and retain that rebase receipt.
+
+This changes no clamp meaning, topology, fixture, sentinel vector, scientific
+vector, gate, threshold, branch, response route, restoration rule, or claim.
+The additive correction freeze must pass candidate-free static validation
+before any replacement model exists. It then authorizes exactly one corrected
+replacement evidence invocation and one deterministic reconstruction, with
+zero retry, rescue, or parameter search, through `.venv` and the accepted
+checkout-only PyGRC binding.
+
+The correction freeze passed 60/60 with zero PyGRC imports or models before the
+replacement. The one replacement then passed 29/29. Its public-builder receipt
+preserves packet and packet-event history across the clamp, requires the empty
+queue, and records rebased budget error `0.0`. The separately authorized
+reconstruction produced byte-identical output. Save/load identity, empty-step
+continuation, original reset, and loaded reset all return the declared results.
+Complete package validation passes 53/53 after one zero-model validator-status
+lexeme correction. No APP-A2 arm or scientific gate signature was executed.
+
+APP-A2, scientific gate evaluation, Appendix support/falsification, APP-A1
+acceptance, commit authority, and graph mutation remain closed. Reopen if the
+rebase changes packet/event history or runtime policies, occurs with a nonempty
+queue, hides rather than receipts the imposed budget change, requires another
+attempt, or affects any scientific definition.
+
+## 70. `P2-I2-DEC-068` — Accept and retain APP-A1 before APP-A2
+
+**Status:** decided by explicit owner acceptance and necessary-commit
+clarification
+
+After the complete APP-A1 review handoff, the owner states `let's do APP-A2`,
+then clarifies `no commit, just acceptance`, followed by `unless commit is
+needed`. The accepted execution freeze explicitly requires both APP-A1 owner
+acceptance and a retention commit before APP-A2 can open. The commit is
+therefore necessary for the requested progression.
+
+**Decision:** accept the exact reviewed APP-A1 technical package: failed N29
+transport, accepted separate live-domain authority, native G/E/P/carrier/R
+realization, exact 19-arm future registry, retained failed start, corrected
+29/29 candidate-free conformance, byte-identical reconstruction, inactive
+APP-A2 execution freeze, and 53/53 complete validation. Authorize one
+containing retention commit without changing the reviewed technical bytes.
+
+The commit itself performs no APP-A2 construction, activation, child arm,
+scientific gate evaluation, or interpretation. After successful retention,
+APP-A2 may be declared checklist/hypothesis-first. Its exact implementation and
+normalized `.venv` commands must still be statically validated and hash-bound
+before the one frozen campaign may start.
+
+Reopen if any accepted technical hash changes before commit, retention omits an
+APP-A1 artifact, APP-A2 work precedes retention, or acceptance is represented
+as Appendix scientific support.
+
+## 71. Pending decision queue
+
+APP-A1 is owner-accepted and its one necessary retention commit is authorized.
+APP-A2 remains unopened until that commit completes. Appendix interpretation,
+cross-lane synthesis, and any native substitution probe remain closed.

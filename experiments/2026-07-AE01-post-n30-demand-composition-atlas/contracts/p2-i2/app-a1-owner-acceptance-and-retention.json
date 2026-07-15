@@ -1,0 +1,69 @@
+{
+  "artifact_id": "P2-I2-APP-A1-OWNER-ACCEPTANCE-AND-RETENTION",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "recorded_at": "2026-07-15T00:00:00+02:00",
+  "owner_direction": [
+    "let's do APP-A2",
+    "no commit, just acceptance",
+    "unless commit is needed"
+  ],
+  "interpretation": "APP-A1 is explicitly accepted. The retention commit is necessary because the reviewed execution freeze makes retained APP-A1 bytes a prerequisite for APP-A2, so the owner's final clarification authorizes that one required commit.",
+  "authority": {
+    "decision_id": "P2-I2-DEC-068",
+    "change_id": "P2-I2-CHG-073",
+    "app_a1_accepted": true,
+    "one_containing_retention_commit_authorized": true,
+    "commit_was_necessary_for_requested_app_a2_progression": true,
+    "app_a2_may_open_only_after_successful_retention_commit": true,
+    "app_a2_runtime_authorized_by_this_record": false,
+    "scientific_result_assigned": false
+  },
+  "accepted_review_package": [
+    {
+      "role": "inactive_app_a2_execution_freeze",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-app-a2-execution-freeze.json",
+      "sha256": "26579a0ed51761777d028e4209431f72ac1b7281b9ac6c5a5132a06d3844c9e5"
+    },
+    {
+      "role": "complete_app_a1_validation",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-complete-validation.json",
+      "sha256": "16787b789b8c10bbc9b242d22bc343258155eb0b2ff98611318d0e4653be8466"
+    },
+    {
+      "role": "candidate_free_runtime_conformance",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-runtime-conformance.json",
+      "sha256": "9d981d50e94bbc8eca2d9e75ca4e85a6b5603d7975492bcfd1cc214c746bc843"
+    },
+    {
+      "role": "conformance_attempt_and_reconstruction_receipt",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-run-receipt.json",
+      "sha256": "dab00c5ba76db2b5c2f4a2daf5fecf5fecf219f8ea0652ae484449115836a8db"
+    },
+    {
+      "role": "cumulative_app_a1_review",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-A1-source-delta-and-gate-authority-review.md",
+      "sha256": "4a2a6d7ded80ff58682fc1ae754c9604e99d965fc4940b48627777ad6ea0289f"
+    }
+  ],
+  "accepted_findings": {
+    "n29_metric_semantics_equivalent": false,
+    "n29_measurement_domain_equivalent": false,
+    "native_G_E_P_carrier_R_transition_path": true,
+    "load_bearing_external_producer_required": false,
+    "separate_live_domain_authority_accepted": true,
+    "candidate_free_conformance": "passed_29_of_29_and_byte_identical",
+    "complete_validation": "passed_53_of_53",
+    "app_a2_scientific_arms_executed": 0,
+    "appendix_result_assigned": false
+  },
+  "retention_boundary": {
+    "accepted_technical_bytes_must_not_change_before_commit": true,
+    "acceptance_navigation_may_be_added_without_rewriting_reviewed_artifacts": true,
+    "graph_repository_remains_read_only": true,
+    "repository_venv_required_for_future_python": true,
+    "persisted_machine_specific_absolute_paths_allowed": false,
+    "commit_does_not_execute_app_a2": true
+  },
+  "post_commit_effect": "APP-A2 may be declared checklist/hypothesis-first against the exact retained APP-A1 package. Runner construction, activation, and scientific execution remain separately governed inside APP-A2."
+}

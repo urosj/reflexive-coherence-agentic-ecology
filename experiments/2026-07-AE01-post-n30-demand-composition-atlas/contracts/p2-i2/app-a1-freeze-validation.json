@@ -1,0 +1,52 @@
+{
+  "artifact_id": "p2_i2_app_a1_freeze_validation",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A1",
+  "status": "passed_before_any_model_construction",
+  "command": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_freeze_validate.py",
+  "checks_passed": 48,
+  "checks_total": 48,
+  "failure_count": 0,
+  "failures": [],
+  "identities": {
+    "freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json",
+      "sha256": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3"
+    },
+    "validator": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_freeze_validate.py",
+      "sha256": "fdbd91649c75a3f658bdd013a082005029f272571d087ebad18f1e5720e8de28"
+    },
+    "conformance_harness": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py",
+      "sha256": "7727ed2dd5150c0eaef9886e1502259c52ec6fc3057da5562cdc1cea053094be"
+    }
+  },
+  "validated_scope": {
+    "topology_nodes": 12,
+    "topology_edges": 28,
+    "maximum_node_degree": 8,
+    "future_app_a2_arms_registered": 19,
+    "primary_subsets_registered": 8,
+    "one_source_pair_registered": true,
+    "cyclic_rotation_registered": true,
+    "adjacent_inversions_registered": 2,
+    "label_pair_registered": true,
+    "carrier_clamp_registered": true,
+    "mediator_restores_registered": 3,
+    "sentinel_values_disjoint_from_scientific_vectors": true,
+    "repository_venv_bound": true,
+    "checkout_only_pygrc_binding_bound": true,
+    "machine_specific_paths_persisted": false
+  },
+  "execution_counts": {
+    "pygrc_imports": 0,
+    "models_constructed": 0,
+    "conformance_invocations": 0,
+    "app_a2_arms_executed": 0,
+    "scientific_runtimes": 0
+  },
+  "next_authorized_action": "Run exactly one sentinel conformance invocation and one byte-reconstruction invocation under the frozen command and zero-retry policy."
+}

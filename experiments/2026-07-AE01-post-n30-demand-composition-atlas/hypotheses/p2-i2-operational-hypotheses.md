@@ -2658,3 +2658,155 @@ retained causal path to `R`.
 Blocked relabels remain: coalition, functional cooperation, coordination,
 resource economy, native composition unless every load-bearing transition is
 native, ecology motif/regime, cross-lane recurrence, and N31+ selection.
+
+### 17.7 Active APP-A1 projection
+
+APP-A1 is active under DEC-064/CHG-069 after accepted APP-A0 retention commit
+`851c3dc`. Its first act is exact identity capture followed by a read-only
+source/delta audit. No realization, producer, fixture value, threshold
+transportability disposition, control implementation, or conformance fixture
+is selected by this declaration.
+
+The active causal projection is conditional:
+
+```text
+if source-current native PyGRC adequately expresses a load-bearing operation:
+  select and bind the native route
+elif the operation can be expressed only by the smallest explicit live
+producer without changing the accepted semantics:
+  bind that producer and its necessity/withdrawal/restoration boundary
+else:
+  classify a missing prerequisite and fail APP-A1 progression closed
+```
+
+Threshold authority is likewise conditional on the already accepted
+`metric_semantics_equivalent AND measurement_domain_equivalent` gate. Source
+inspection or conformance output may not retrospectively choose a favorable
+operation, value, threshold, control, or interpretation.
+
+APP-A1 may produce only source/identity, readiness, transportability,
+registration, candidate-free conformance, validation, and cumulative-report
+artifacts. It may not execute any APP-A2 subset arm, later-response scientific
+window, gate-signature comparison, support/falsification assignment, or
+Appendix A conclusion. Its exact package returns uncommitted for owner review.
+
+### 17.8 APP-A1 source/delta disposition and inactive gate proposal
+
+The retained-source audit resolves the conditional realization projection as
+follows:
+
+```text
+carrier = native LGRC9V3 packet/event/state/restoration surfaces
+G = native packet transfer from distinct S_G source into carrier axes
+E = native packet transfer from carrier axes to distinct S_E sink
+P = native packet handoff through distinct S_P hub and redistribution to the
+    same carrier axes
+R = native causal-flux amount_fraction=0.82 response from carrier-only state
+    to a passive noncontributor target
+load-bearing external producer required = false
+read-only semantic/measurement observer required = true
+```
+
+The selected observer may orchestrate public calls, bind participant/node and
+operation/event identities, and calculate metrics from native receipts. It may
+not mutate model state directly, calculate an expected response for injection,
+or author a causal result.
+
+The accepted transportability predicate resolves false. N29 I14.1/I14.3 are
+projections of retained N28 capacity traces, I14.2-3 adds an explicit producer
+leakage factor, and I14.5-2 composes those artifact deltas arithmetically. Those
+definitions, units, reference meanings, windows, normalization, topology,
+leakage, residual, response target, and numeric domain are not equivalent to
+live LGRC9V3 coherence and packet receipts.
+
+Therefore:
+
+```text
+metric_semantics_equivalent = false
+measurement_domain_equivalent = false
+N29 values as APP-A pass/fail authority = prohibited
+APP-A1 fixture/control/conformance freeze = closed
+APP-A2 = closed
+```
+
+An inactive proposal named `app_a_live_packet_coherence_delta_v1` is retained
+for separate owner review. It preserves the four source-grounded axis roles and
+the `0.82` configuration identity while measuring matched-reference R packet
+deltas, pre-R-to-R phase residual, and registered-route/budget leakage in the
+live domain. Until explicit acceptance, it has no authority and no fixture or
+runtime consequence.
+
+### 17.9 Accepted live-domain authority and active freeze projection
+
+The owner response `+1` accepts the exact
+`app_a_live_packet_coherence_delta_v1` proposal under DEC-066/CHG-071. The
+failed N29 transportability result remains immutable; acceptance makes the
+prospective live-domain definitions authoritative only for the Appendix A
+fixture now to be frozen.
+
+The active projection is:
+
+```text
+freeze source-grounded operation vectors and one common native topology
+freeze all proper-subset diversions and valid-zero semantics
+freeze R as carrier-only native amount_fraction=0.82 production
+freeze matched references, one-source, role-rotation, label, order, carrier,
+  mediator, private/direct/controller, restoration, and isolation controls
+freeze distinct sentinel conformance values and exact invocation counts
+then and only then construct candidate-free conformance models
+```
+
+Conformance may establish only that the frozen public interfaces, causal
+receipts, diversion paths, label/role guards, restoration, reset, and
+reconstruction execute as declared. It may not use the scientific operation
+vectors, evaluate the 19-arm Appendix matrix, calculate the accepted gate
+signature, or assign an Appendix result. APP-A2 remains closed.
+
+### 17.10 APP-A1 conformance correction projection
+
+The exact fixture/control freeze preceded all APP-A1 model construction. Its
+single authorized candidate-free invocation was consumed before output when
+the carrier-clamp control edited four node coherences but retained the
+pre-intervention packet-ledger total. PyGRC rejected the inconsistent state.
+This is an implementation-harness intervention defect, not evidence for or
+against the operational hypothesis.
+
+The owner response `+1` authorizes one bounded correction inside the same
+APP-A1 iteration:
+
+```text
+preserve immutable base freeze and consumed failed start
+preserve exact clamp, fixture, gate, sentinel, and quarantine semantics
+after the explicit coherence edit and before set_state:
+  rebuild the ledger with public build_lgrc9v3_packet_ledger
+  preserve packet/event history, empty queue, policies, and runtime flags
+  recompute node coherence and conserved-budget totals
+retain a receipt for the imposed-total change and zero rebased budget error
+run one replacement plus one deterministic reconstruction, retry limit zero
+```
+
+The correction may establish only candidate-free native-interface
+conformance. Scientific vectors, APP-A2 arms, gate-signature evaluation,
+support/falsification, APP-A1 acceptance, and commit remain closed.
+
+The corrected freeze passed 60/60 before replacement construction. The one
+replacement passed 29/29, and the one reconstruction was byte-identical. This
+retains native common/diverted paths, label invariance, valid-zero history,
+carrier-only response, the corrected clamp receipt, save/load identity,
+continuation, and reset as implementation-conformance evidence only. The exact
+19-arm APP-A2 execution contract is now frozen inactive; complete APP-A1
+validation passes 53/53, while every scientific and acceptance boundary above
+remains closed pending owner review.
+
+### 17.11 APP-A1 acceptance and APP-A2 retention precondition
+
+The owner explicitly accepts APP-A1 and clarifies that its commit should occur
+only if needed. The accepted execution freeze makes retention a necessary
+precondition for APP-A2, so one containing APP-A1 retention commit is
+authorized. Acceptance does not itself execute or interpret an APP-A2 arm.
+
+After that commit only, APP-A2 may be declared checklist/hypothesis-first
+against the retained 19-arm registry. Its implementation bytes and `.venv`
+commands must be hash-bound and validated before the single campaign starts.
+Until those APP-A2-local conditions are satisfied, scientific runtime and the
+Appendix result remain unassigned.

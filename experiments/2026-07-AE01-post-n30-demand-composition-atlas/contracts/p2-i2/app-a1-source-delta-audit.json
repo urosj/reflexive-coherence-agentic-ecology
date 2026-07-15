@@ -1,0 +1,281 @@
+{
+  "artifact_id": "p2_i2_app_a1_source_delta_audit",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A1",
+  "status": "audit_complete_execution_freeze_failed_closed_pending_gate_authority_review",
+  "authority": {
+    "accepted_app_a0_commit": "851c3dcfac4673822404f0f8863719ba44ab878b",
+    "decision_id": "P2-I2-DEC-064",
+    "change_id": "P2-I2-CHG-069",
+    "owner_direction": "Let's run APP-A1 next",
+    "scientific_execution_authorized": false
+  },
+  "entry_identities": {
+    "rcae": {
+      "commit": "851c3dcfac4673822404f0f8863719ba44ab878b",
+      "branch": "p2-i2-experiment",
+      "clean_before_app_a1_declaration": true,
+      "subsequent_dirty_state_owned_by_app_a1": true
+    },
+    "graph": {
+      "commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "branch": "main",
+      "clean_at_audit": true,
+      "mutation_allowed": false,
+      "locator": "grc:"
+    },
+    "python": {
+      "logical_executable": ".venv/bin/python",
+      "lexical_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "version": "3.12.3",
+      "cache_tag": "cpython-312",
+      "bytecode_disabled_for_app_a1_commands": true
+    },
+    "import_probe_history": [
+      {
+        "attempt": 1,
+        "command": ".venv/bin/python -B -c <source-current import probe>",
+        "result": "nonconforming_diagnostic",
+        "failure": "ModuleNotFoundError after omitting the experiment's established checkout-only PYTHONPATH binding",
+        "interpretation": "not a PyGRC availability defect and not the governed P2-I2 import mechanism",
+        "runtime_or_scientific_work_performed": false
+      },
+      {
+        "attempt": 2,
+        "command": "PYTHONPATH=../graph-reflexive-coherence/src .venv/bin/python -B -c <source-current import probe>",
+        "result": "passed",
+        "interpretation": "matches the accepted P2-I2 checkout-only import mechanism PYTHONPATH=external-repository:graph-reflexive-coherence/src",
+        "imported_source_id": "grc:src/pygrc",
+        "model_module": "pygrc.models.lgrc_9_v3_runtime",
+        "runtime_or_scientific_work_performed": false
+      }
+    ]
+  },
+  "accepted_app_a0_identities": [
+    {
+      "locator": "rcae:experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md@851c3dc",
+      "sha256": "4ca36aeaa1c4bf12b924ca516bad2c1ee4f36ebc4d3a1d0a96d875567933b648"
+    },
+    {
+      "locator": "rcae:experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md@851c3dc",
+      "sha256": "032d4a2fd156f8c37838151e587328ae1c9f8df7bade03d6d7ac4d2cef03d643"
+    },
+    {
+      "locator": "rcae:experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md@851c3dc",
+      "sha256": "f8b5d08e8f612f1e400a125b8d2d8d0afe906a103ec382e75016e61a3a2a0433"
+    },
+    {
+      "locator": "rcae:experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md@851c3dc",
+      "sha256": "8b9bd1cad037bbde0e28f8bc1eff5e6dd532de051d618f19040255481d4e9e20"
+    }
+  ],
+  "retained_n29_sources": [
+    {
+      "role": "G_generative_enrichment",
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_generative_enrichment_runtime_i141.json",
+      "sha256": "7e8e9a611fee0ad75543e8fff0439dfcbe8f7b235ce65cb5cf23ace9cb736c65",
+      "source_semantics": "N28 neighborhood-capacity trace projected into an N29 direct-runtime-candidate artifact"
+    },
+    {
+      "role": "E_leakage_gated_extraction",
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_extractive_clean_constructed_runtime_i1423.json",
+      "sha256": "b3bb324dc7de43203ca5f519e16a96057e950ad808a6e0ff98ffe6797df815cc",
+      "source_semantics": "producer-mediated preservation of N28 capacity deltas plus an authored 0.5 leakage gate factor"
+    },
+    {
+      "role": "P_processor_redistribution",
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_processor_redistribution_runtime_i143.json",
+      "sha256": "680158947cf6df711b9bb019e0564e50f77a0b600dbc50a1a8c0b15c5a30beb5",
+      "source_semantics": "N28 opposed-lobe competitive-redistribution trace projected into an N29 direct-runtime-candidate artifact"
+    },
+    {
+      "role": "R_buffered_later_feedback_and_gate_context",
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_buffered_generator_extractor_feedback_i1452_artifact.json",
+      "sha256": "6e8b7d270cda2ea55fe6893384f7fd97d6ee299b520ece970c5653f1cd796a3d",
+      "source_semantics": "artifact arithmetic over G+E+P axis deltas followed by max(0, available)*0.82"
+    },
+    {
+      "role": "R_retained_report",
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_buffered_generator_extractor_feedback_i1452.md",
+      "sha256": "ddeb8156a6af6d95fdd0c5240888b43c8f8bbc82e7f3bd489fbeae101aa4790e"
+    }
+  ],
+  "source_builder_identities": [
+    {
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_generative_extractive_direct_runtime_i141_i143.py",
+      "sha256": "1883a165b945d24adfde7501adb75452c75264d8ebec91ceccd4dea970fa6ed4"
+    },
+    {
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_extractive_clean_constructed_i1423.py",
+      "sha256": "a94dddf5eb2931c0efec9069ec01639615e7c14ee44873767281b09b1993c0d5"
+    },
+    {
+      "locator": "grc:experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_buffered_generator_extractor_feedback_i1452.py",
+      "sha256": "eb0debd7347916e15d8ffbaa00c7af6208a3d002718e93ab1a63906e5bc8aebe"
+    }
+  ],
+  "pygrc_source_identities": [
+    {
+      "locator": "grc:src/pygrc/models/lgrc_9_v3.py",
+      "sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb"
+    },
+    {
+      "locator": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+    },
+    {
+      "locator": "grc:src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+    },
+    {
+      "locator": "grc:src/pygrc/models/lgrc_9_v3_identity.py",
+      "sha256": "02a7b9dddb16b925042e014725aa13f66883f16f05f04ca754883dd002fc4ac2"
+    },
+    {
+      "locator": "grc:tests/models/test_lgrc_9_v3_runtime.py",
+      "sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b"
+    },
+    {
+      "locator": "grc:tests/models/test_lgrc_9_v3_restoration_matrix.py",
+      "sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154"
+    }
+  ],
+  "source_audit_findings": {
+    "n29_i14_1_and_i14_3_are_live_pygrc_runs": false,
+    "n29_i14_2_3_is_live_pygrc_run": false,
+    "n29_i14_5_2_is_live_pygrc_run": false,
+    "n29_i14_5_2_formula": {
+      "available_axis": "G_axis_delta + E_axis_delta + P_axis_delta",
+      "later_feedback_axis": "max(0, available_axis) * 0.82",
+      "phase_residual_axis": "available_axis - later_feedback_axis",
+      "merge_leakage_value": "declared constant 0.018"
+    },
+    "pygrc_native_surfaces": [
+      "model-owned packet/event ledger",
+      "public packet departure scheduling and deterministic step processing",
+      "arrival-triggered local updates and causal flux routes",
+      "autonomous causal-flux producer with source-coherence amount_fraction",
+      "feedback-eligibility surface and feedback-coupled packet producer",
+      "snapshot/save/load/restoration identity/reset-baseline persistence"
+    ],
+    "pygrc_missing_n29_measurement_surfaces": [
+      "environment basin-forming capacity delta",
+      "neighbor support-floor delta",
+      "N29 four-axis phase residual",
+      "N29 basin merge-leakage accounting",
+      "first-class G/E/P semantic operation labels"
+    ]
+  },
+  "realization_selection_after_audit": {
+    "selection_status": "selected_native_transition_thin_read_only_experiment_observer",
+    "carrier": {
+      "classification": "native_adequate",
+      "surface": "one LGRC9V3 model with registered shared-carrier nodes, packet ledger, event queue, and restoration identity"
+    },
+    "operations": [
+      {
+        "operation": "G",
+        "classification": "native_adequate",
+        "path": "registered S_G source node -> native packet departure/arrival -> registered shared-carrier axes"
+      },
+      {
+        "operation": "E",
+        "classification": "native_adequate",
+        "path": "registered shared-carrier axes -> native packet departure/arrival -> registered S_E extraction sink"
+      },
+      {
+        "operation": "P",
+        "classification": "native_adequate",
+        "path": "registered carrier/processor handoff through the distinct S_P hub -> native redistribution packets -> registered shared-carrier axes"
+      },
+      {
+        "operation": "R",
+        "classification": "native_adequate",
+        "path": "after G/E/P, native causal-flux producer reads only registered carrier-node coherence and schedules 0.82 amount_fraction packets to passive noncontributor R"
+      }
+    ],
+    "load_bearing_external_producer_required": false,
+    "observer_boundary": "experiment code may orchestrate public calls and compute read-only metrics from native state/packet receipts; it may not mutate coherence, synthesize an expected response, or write causal outcomes",
+    "native_gap_exposed": "PyGRC lacks the N29 semantic measurement layer and operation labels, but no missing native carrier transition blocks the proposed live realization"
+  },
+  "transportability_audit": {
+    "dimensions": [
+      {
+        "dimension": "raw_metric_definitions",
+        "equivalent": false,
+        "reason": "N29 uses retained N28 capacity-score traces and authored bridge arithmetic; PyGRC exposes coherence, packets, events, and budgets"
+      },
+      {
+        "dimension": "units_and_orientation",
+        "equivalent": false,
+        "reason": "dimensionless capacity-score changes are not native packet-coherence amounts"
+      },
+      {
+        "dimension": "reference_and_candidate_meanings",
+        "equivalent": false,
+        "reason": "N29 compares source rows; Appendix A requires fresh matched-reference runtimes"
+      },
+      {
+        "dimension": "temporal_windows",
+        "equivalent": false,
+        "reason": "N29 I14.5-2 has no live response window; Appendix A requires ordered event-time windows"
+      },
+      {
+        "dimension": "normalization_and_denominators",
+        "equivalent": false,
+        "reason": "N29 composes already-normalized trace deltas; native PyGRC records conserved coherence and packet mass"
+      },
+      {
+        "dimension": "topology_and_scaling",
+        "equivalent": false,
+        "reason": "N29 rows come from distinct N28 neighborhood fixtures rather than one shared live carrier topology"
+      },
+      {
+        "dimension": "leakage_accounting",
+        "equivalent": false,
+        "reason": "N29 I14.5-2 records an authored 0.018 constant; PyGRC can measure route/budget leakage from native receipts"
+      },
+      {
+        "dimension": "phase_residual",
+        "equivalent": false,
+        "reason": "N29 residual is arithmetic available-minus-retained capacity score; PyGRC has no equivalent native observable"
+      },
+      {
+        "dimension": "R_target",
+        "equivalent": false,
+        "reason": "N29 R is a derived later-generator axis vector; proposed native R is a passive packet receiver driven by carrier state"
+      },
+      {
+        "dimension": "runtime_numeric_domain",
+        "equivalent": false,
+        "reason": "artifact-level decimal score arithmetic is not the live LGRC9V3 coherence/event domain"
+      }
+    ],
+    "metric_semantics_equivalent": false,
+    "measurement_domain_equivalent": false,
+    "transportability_gate_passed": false,
+    "n29_numeric_gates_authoritative_for_app_a": false,
+    "n29_values_retained_as_diagnostic_context_only": true
+  },
+  "failed_closed_disposition": {
+    "app_a1_source_delta_audit_complete": true,
+    "realization_selected": true,
+    "execution_freeze_open": false,
+    "fixture_freeze_allowed": false,
+    "candidate_free_conformance_allowed": false,
+    "app_a2_allowed": false,
+    "next_required_authority": "separate owner review of a prospective Appendix A live-runtime gate authority",
+    "proposal_locator": "rcae:experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-gate-authority-proposal.json",
+    "scientific_runtime_count": 0,
+    "candidate_free_conformance_count": 0
+  },
+  "claim_boundary": {
+    "source_current_native_transition_candidate_identified": true,
+    "n29_thresholds_transported": false,
+    "implementation_conformance_established": false,
+    "appendix_hypothesis_supported_or_falsified": false,
+    "main_p2_i2_result_changed": false
+  }
+}

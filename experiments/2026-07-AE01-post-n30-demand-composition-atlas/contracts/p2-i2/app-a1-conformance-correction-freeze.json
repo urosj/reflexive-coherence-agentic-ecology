@@ -1,0 +1,83 @@
+{
+  "artifact_id": "P2-I2-APP-A1-CONFORMANCE-CORRECTION-FREEZE",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "frozen_at": "2026-07-15T00:00:00+02:00",
+  "status": "frozen_before_replacement_model_construction",
+  "base_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json",
+    "sha256": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3",
+    "immutability": "Retained byte-for-byte as the authority for the consumed failed start."
+  },
+  "correction": {
+    "decision_id": "P2-I2-DEC-067",
+    "change_id": "P2-I2-CHG-072",
+    "same_iteration": true,
+    "original_attempt_consumed": true,
+    "original_retry_allowed": false,
+    "replacement_attempt_authorized": true,
+    "replacement_reconstruction_authorized": true,
+    "intervention_semantics_changed": false,
+    "fixture_or_gate_changed": false,
+    "app_a2_authorized": false,
+    "failed_start": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-failed-start-001.json",
+      "sha256": "11b982fe31b22ca023cdb12cbad745102db60e748fa6653efcf60c612fb484a0"
+    },
+    "owner_authorization": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-correction-authorization.json",
+      "sha256": "80dbf1b5b0900d8fec050a91f1224fc0b080be292646662ce0e347d09d8dca46"
+    },
+    "implementation": {
+      "public_callable": "pygrc.models.build_lgrc9v3_packet_ledger",
+      "timing": "after the explicit carrier coherence edit and before model.set_state",
+      "precondition": "event queue empty",
+      "preserve_packet_and_event_history": true,
+      "preserve_runtime_policies_and_flags": true,
+      "recompute_node_and_conserved_totals": true,
+      "receipt_required": true
+    }
+  },
+  "overrides": {
+    "artifact_version": "1.1",
+    "status": "frozen_before_any_model_construction",
+    "authority": {
+      "decision_id": "P2-I2-DEC-067",
+      "change_id": "P2-I2-CHG-072",
+      "harness": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py",
+        "sha256": "6af9bbbb3e69bca187d9d53e8d5ea740c60e2c1b2945d012c55f90e4634d64f7"
+      }
+    },
+    "conformance": {
+      "carrier_clamp_intervention": {
+        "semantics": "restore all four carrier axes to the registered conformance baseline after G/E/P sentinel operations and before R",
+        "state_edit_kind": "explicit_control_intervention_not_packet_transport",
+        "ledger_rebase_callable": "pygrc.models.build_lgrc9v3_packet_ledger",
+        "ledger_rebase_required_before_set_state": true,
+        "packet_and_event_history_must_be_preserved": true,
+        "queue_must_be_empty": true,
+        "runtime_policies_and_flags_must_be_preserved": true,
+        "node_and_conserved_totals_must_be_recomputed": true,
+        "post_rebase_budget_error_tolerance": 1e-12
+      },
+      "run_policy": {
+        "original_failed_invocations": 1,
+        "original_invocation_consumed": true,
+        "evidence_invocations": 1,
+        "evidence_invocation_kind": "owner_authorized_replacement_after_retained_harness_failure",
+        "reconstruction_invocations": 1,
+        "retry_limit": 0,
+        "rescue_variants": 0,
+        "parameter_search": false,
+        "scientific_values_allowed": false,
+        "app_a2_arms_allowed": 0,
+        "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-correction-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-runtime-conformance.json",
+        "reconstruction_command": "same command with output temporary-output:p2-i2-app-a1-runtime-conformance.reconstructed.json",
+        "byte_comparison": "cmp retained conformance bytes with reconstructed bytes",
+        "post_run_additional_invocations": 0
+      }
+    }
+  },
+  "evidence_effect": "Candidate-free implementation conformance only. The correction changes no fixture, gate, APP-A2 arm, scientific value, or claim."
+}
