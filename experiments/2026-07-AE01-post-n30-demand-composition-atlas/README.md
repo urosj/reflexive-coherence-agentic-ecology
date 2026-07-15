@@ -125,6 +125,12 @@ start. I08A now returns an inactive C02 correction that removes only
 and 18/18 final validation without candidate or scientific work. DEC-051 then
 records owner acceptance and no duplicate activation review; deterministic
 activation passes 19/19 and authorizes the package commit.
+The corrected preflight then reaches C02 entry-001, whose first attempt is
+retained as an eligible pre-model infrastructure failure caused by resolving
+the nested worker command out of the active repository venv. CHG-050 corrects
+that launcher in place under existing I08A/I08: 8/8 child-focused tests and
+18/18 candidate-free validation pass, with the exact correction commit and
+same-entry attempt-2 preflight next.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself

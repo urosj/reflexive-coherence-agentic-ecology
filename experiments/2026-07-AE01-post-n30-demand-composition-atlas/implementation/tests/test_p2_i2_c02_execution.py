@@ -52,7 +52,7 @@ def test_c02_policy_removes_only_address_space_enforcement() -> None:
 
 
 def test_external_supervisor_observes_native_exit_without_attestation() -> None:
-    command = [os.fspath(Path(sys.executable).resolve()), "-B", "-c", "import os; os._exit(77)"]
+    command = [os.fspath(c02._venv_python(ROOT)), "-B", "-c", "import os; os._exit(77)"]
     result = c02._run_child_process(command, ROOT, os.environ, 10)
     assert result["timed_out"] is False
     assert result["returncode"] == 77
@@ -61,10 +61,19 @@ def test_external_supervisor_observes_native_exit_without_attestation() -> None:
 
 def test_external_supervisor_reads_success_attestation() -> None:
     envelope = {"artifact_id": "P2-I2-C02-WORKER-ENVELOPE", "status": "success", "result": {}}
-    code = "import json; print(json.dumps(" + repr(envelope) + "))"
-    result = c02._run_child_process([os.fspath(Path(sys.executable).resolve()), "-B", "-c", code], ROOT, os.environ, 10)
+    code = (
+        "import json, pathlib, sys; import matplotlib; "
+        "value=" + repr(envelope) + "; "
+        "value['child_sys_executable']=sys.executable; value['child_sys_prefix']=sys.prefix; "
+        "value['matplotlib_version']=matplotlib.__version__; print(json.dumps(value))"
+    )
+    result = c02._run_child_process([os.fspath(c02._venv_python(ROOT)), "-B", "-c", code], ROOT, os.environ, 10)
     assert result["returncode"] == 0
-    assert c02._child_envelope(result["stdout"]) == envelope
+    observed = c02._child_envelope(result["stdout"])
+    assert observed is not None
+    assert observed["child_sys_executable"] == os.fspath(ROOT / ".venv/bin/python")
+    assert Path(observed["child_sys_prefix"]).resolve() == (ROOT / ".venv").resolve()
+    assert observed["matplotlib_version"] == "3.10.9"
 
 
 def test_unknown_or_native_phase_is_conservatively_nonretryable() -> None:
@@ -75,6 +84,8 @@ def test_unknown_or_native_phase_is_conservatively_nonretryable() -> None:
     assert '"C02 manifest activation hash drift"' in source
     assert '"C02 manifest committed byte drift"' in source
     assert '"C02 terminal output and failure both exist"' in source
+    assert "Path(sys.executable).resolve()), \"-B\"" not in source
+    assert "os.fspath(_venv_python(root)), \"-B\"" in source
 
 
 def test_c02_paths_are_relative_and_unique() -> None:

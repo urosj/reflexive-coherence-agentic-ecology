@@ -129,6 +129,11 @@ Phase 2 gate reviews:
   activation then passes 19/19 candidate-free checks and authorizes the complete
   package commit. Live use still requires the resulting full HEAD and exact
   post-commit preflight.
+- [P2-I2 I08A repository-venv infrastructure correction](P2-I2-I08A-venv-infrastructure-correction.md)
+  retains entry-001 attempt 1 as an eligible pre-model infrastructure failure
+  and corrects the nested worker launch in place under existing I08A/I08. The
+  child venv/dependency suite passes 8/8 and final candidate-free validation
+  passes 18/18; no new iteration, cycle, or scientific projection is created.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

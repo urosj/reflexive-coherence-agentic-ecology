@@ -1766,6 +1766,27 @@ operator fault unrelated to the experiment, and authorizes one corrected
 preflight using the actual resulting full HEAD. This changes no scientific,
 matrix, activation, retry, or evidence rule.
 
+The corrected preflight passes, but entry-001 attempt 1 then produces a
+supervised, attested pre-model failure. `.venv` already contains
+`matplotlib==3.10.9`; the C02 launcher instead resolved `sys.executable` to the
+host binary before spawning its child, so the child had no active repository
+venv. Claim and failure receipt are retained, output is absent, all model/
+adapter/candidate counters are zero, and the frozen retry predicate is true.
+
+The owner directs no I08B or new scientific rerun authority: this is an in-place
+I08A/I08 infrastructure regression correction. The accepted I05C invariant is
+projected to every governed Python subprocess: invoke lexical
+`.venv/bin/python`, require repository-venv `sys.prefix`, and use the resolved
+host binary only for digest identity. Only the already-frozen eligible
+same-entry retry may cross the exact committed correction bridge; no matrix,
+hypothesis, response, control, or evidence rule changes.
+
+The in-place correction passes 8/8 focused tests, including an actual child
+dependency import under the lexical repository-venv command, and 18/18 final
+candidate-free checks. The retained attempt-1 bytes and all zero-state counters
+remain exact; no PyGRC, model, candidate, control, or scientific-window
+operation occurs. This is infrastructure conformance evidence only.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the

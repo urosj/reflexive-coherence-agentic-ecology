@@ -33,6 +33,12 @@ C01_AUDIT_REL = EXPERIMENT / "contracts/p2-i2/c01/i08-entry-001-native-terminati
 C01_CLAIM_REL = EXPERIMENT / "outputs/p2-i2/c01/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json"
 TEST_REL = EXPERIMENT / "implementation/tests/test_p2_i2_c02_execution.py"
 VALIDATOR_REL = EXPERIMENT / "scripts/p2_i2_i08a_validate.py"
+INFRA_INPUT_REL = EXPERIMENT / "contracts/p2-i2/c02/i08a-venv-infrastructure-correction-input.json"
+INFRA_CORRECTION_REL = EXPERIMENT / "contracts/p2-i2/c02/i08a-venv-infrastructure-correction.json"
+INFRA_TEST_RECEIPT_REL = EXPERIMENT / "contracts/p2-i2/c02/i08a-venv-infrastructure-tests.json"
+INFRA_VALIDATOR_REL = EXPERIMENT / "scripts/p2_i2_i08a_venv_infrastructure_validate.py"
+INFRA_VALIDATION_REL = EXPERIMENT / "contracts/p2-i2/c02/i08a-venv-infrastructure-validation.json"
+POSTCOMMIT_PREFLIGHT_REL = EXPERIMENT / "scripts/p2_i2_c02_postcommit_preflight.py"
 OUTPUT_ROOT_REL = EXPERIMENT / "outputs/p2-i2/c02"
 CYCLE_ID = "P2-I2-C02"
 C01_CYCLE_ID = "P2-I2-C01"
@@ -328,6 +334,16 @@ def validate_activation(
         "run_matrix_sha256": sha256(root / MATRIX_REL),
         "binding_receipt_sha256": sha256(root / BINDING_REL),
         "inactive_exec_freeze_sha256": sha256(root / FREEZE_REL),
+        "infrastructure_input_sha256": sha256(root / INFRA_INPUT_REL),
+        "infrastructure_correction_sha256": sha256(root / INFRA_CORRECTION_REL),
+        "infrastructure_test_receipt_sha256": sha256(root / INFRA_TEST_RECEIPT_REL),
+        "infrastructure_validator_sha256": sha256(root / INFRA_VALIDATOR_REL),
+        "postcommit_preflight_sha256": sha256(root / POSTCOMMIT_PREFLIGHT_REL),
+        "infrastructure_input_sha256": sha256(root / INFRA_INPUT_REL),
+        "infrastructure_correction_sha256": sha256(root / INFRA_CORRECTION_REL),
+        "infrastructure_test_receipt_sha256": sha256(root / INFRA_TEST_RECEIPT_REL),
+        "infrastructure_validator_sha256": sha256(root / INFRA_VALIDATOR_REL),
+        "postcommit_preflight_sha256": sha256(root / POSTCOMMIT_PREFLIGHT_REL),
     }
     require(all(activation[key] == value for key, value in expected_hashes.items()), "C02 activation hash drift")
     require(git(root, "rev-parse", "HEAD") == expected_head, "C02 HEAD drift")
@@ -338,6 +354,12 @@ def validate_activation(
         TEST_REL.as_posix(), VALIDATOR_REL.as_posix(), INPUT_FREEZE_REL.as_posix(),
         MATRIX_REL.as_posix(), BINDING_REL.as_posix(), FREEZE_REL.as_posix(),
         C01_AUDIT_REL.as_posix(), C01_CLAIM_REL.as_posix(),
+        INFRA_INPUT_REL.as_posix(), INFRA_CORRECTION_REL.as_posix(),
+        INFRA_TEST_RECEIPT_REL.as_posix(), INFRA_VALIDATOR_REL.as_posix(),
+        INFRA_VALIDATION_REL.as_posix(), POSTCOMMIT_PREFLIGHT_REL.as_posix(),
+        INFRA_INPUT_REL.as_posix(), INFRA_CORRECTION_REL.as_posix(),
+        INFRA_TEST_RECEIPT_REL.as_posix(), INFRA_VALIDATOR_REL.as_posix(),
+        INFRA_VALIDATION_REL.as_posix(), POSTCOMMIT_PREFLIGHT_REL.as_posix(),
     ]
     require(all(_committed_equal(root, expected_head, relative) for relative in committed), "C02 committed byte drift")
     for pointer in binding["bound_files"]:
@@ -347,6 +369,7 @@ def validate_activation(
     require(git(graph, "status", "--porcelain=v1", "--untracked-files=all") == "", "graph worktree dirty")
     require(sha256(graph / runtime["runtime_source_relative"]) == runtime["runtime_source_sha256"], "runtime source drift")
     require(Path(sys.prefix).resolve() == (root / ".venv").resolve(), "repository .venv inactive")
+    require(Path(sys.executable).absolute() == (root / ".venv/bin/python").absolute(), "exact .venv command path inactive")
     require(sys.dont_write_bytecode, "C02 requires -B")
     require(sha256(Path(sys.executable).resolve()) == runtime["interpreter_executable_sha256"], "interpreter drift")
     require(not _cache_artifacts(root, graph), "C02 import cache present")
@@ -369,7 +392,33 @@ def _validate_retry(root: Path, entry: Mapping[str, Any], expected_head: str) ->
     failure_path = _relative_failure(entry, 1)
     failure = helpers._read_governed_json(root, failure_path)
     require(failure["entry_id"] == entry["entry_id"] and failure["attempt"] == 1, "C02 retry predecessor drift")
-    require(failure["owner_authorized_full_HEAD"] == expected_head, "C02 retry HEAD drift")
+    if failure["owner_authorized_full_HEAD"] != expected_head:
+        correction = load_json(root / INFRA_CORRECTION_REL)
+        activation = load_json(root / ACTIVATION_REL)
+        require(
+            correction["artifact_id"] == "P2-I2-I08A-VENV-INFRASTRUCTURE-CORRECTION"
+            and correction["scope"]["scientific_change_count"] == 0
+            and correction["scope"]["new_iteration_or_cycle"] is False,
+            "C02 retry correction kind drift",
+        )
+        require(
+            correction["predecessor_attempt"]["owner_authorized_full_HEAD"]
+            == failure["owner_authorized_full_HEAD"]
+            and correction["predecessor_attempt"]["claim_sha256"]
+            == helpers._governed_sha256(root, entry["primary_claim_path"])
+            and correction["predecessor_attempt"]["failure_sha256"]
+            == helpers._governed_sha256(root, failure_path),
+            "C02 retry correction predecessor drift",
+        )
+        require(
+            correction["corrected_authority"]["expected_head_source"]
+            == "current_committed_normalized_retry_command"
+            and correction["corrected_authority"]["execution_source_sha256"]
+            == sha256(root / SOURCE_REL)
+            and activation["infrastructure_correction_sha256"]
+            == sha256(root / INFRA_CORRECTION_REL),
+            "C02 retry correction authority drift",
+        )
     require(failure["retry_eligibility"] is True, "C02 retry not mechanically eligible")
     require(failure["child_attestation_present"] is True, "C02 retry lacks child attestation")
     require(failure["zero_state_counters"]["model_or_adapter_construction_started"] == 0, "C02 retry after model start")
@@ -394,9 +443,15 @@ def _claim_document(root: Path, entry: Mapping[str, Any], attempt: int, head: st
     }
 
 
-def _worker_command(entry: Mapping[str, Any], attempt: int, head: str, graph_argument: str) -> list[str]:
+def _venv_python(root: Path) -> Path:
+    executable = (root / ".venv/bin/python").absolute()
+    require(executable.exists() and not executable.is_dir(), "repository .venv Python absent")
+    return executable
+
+
+def _worker_command(root: Path, entry: Mapping[str, Any], attempt: int, head: str, graph_argument: str) -> list[str]:
     return [
-        os.fspath(Path(sys.executable).resolve()), "-B", SOURCE_REL.as_posix(), "worker-entry",
+        os.fspath(_venv_python(root)), "-B", SOURCE_REL.as_posix(), "worker-entry",
         "--expected-head", head, "--graph-root", graph_argument,
         "--mode", str(entry["mode"]), "--cell-id", str(entry["cell_id"]),
         "--branch-id", str(entry["branch_id"]), "--physical-order-id", str(entry["physical_order_id"]),
@@ -464,7 +519,7 @@ def supervise_entry(
     require(helpers._governed_leaf_absent(root, claim_relative), "C02 attempt already claimed or unsafe")
     require(helpers._governed_leaf_absent(root, failure_relative), "C02 failure exists or unsafe")
     helpers._exclusive_json(root, claim_relative, _claim_document(root, entry, attempt, head, actual_argv))
-    command = _worker_command(entry, attempt, head, policy["runtime_invocation_identity"]["graph_root_argument"])
+    command = _worker_command(root, entry, attempt, head, policy["runtime_invocation_identity"]["graph_root_argument"])
     environment = os.environ.copy()
     environment["P2_I2_C02_SUPERVISED_ENTRY_ID"] = entry["entry_id"]
     environment["P2_I2_C02_SUPERVISED_HEAD"] = head
@@ -539,6 +594,8 @@ def supervise_entry(
 
 
 def worker_entry(root: Path, graph: Path, identity: Mapping[str, Any], attempt: int, head: str) -> dict[str, Any]:
+    require(Path(sys.executable).absolute() == _venv_python(root), "C02 worker bypassed repository .venv command")
+    require(Path(sys.prefix).resolve() == (root / ".venv").resolve(), "C02 worker repository .venv inactive")
     require(os.environ.get("P2_I2_C02_SUPERVISED_HEAD") == head, "C02 worker lacks supervisor HEAD")
     matrix = load_json(root / MATRIX_REL)
     entry = _find_entry(matrix, identity)
@@ -626,6 +683,7 @@ def build_manifest(root: Path, expected_head: str) -> dict[str, Any]:
     require(all(_committed_equal(root, expected_head, relative) for relative in committed), "C02 manifest committed byte drift")
     runtime = load_json(root / INPUT_FREEZE_REL)["runtime_identity"]
     require(Path(sys.prefix).resolve() == (root / ".venv").resolve(), "repository .venv inactive")
+    require(Path(sys.executable).absolute() == (root / ".venv/bin/python").absolute(), "exact .venv command path inactive")
     require(sha256(Path(sys.executable).resolve()) == runtime["interpreter_executable_sha256"], "manifest interpreter drift")
     matrix = load_json(root / MATRIX_REL)
     helpers = _safe_helpers(root)

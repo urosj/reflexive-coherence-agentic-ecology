@@ -13,7 +13,12 @@ activation review. Activation validation passes 19/19 with zero blockers and
 zero candidate/scientific activity; the complete package is retained at
 `12ff83b`. The first read-only preflight then failed closed on an incorrectly
 supplied full HEAD before any claim, PyGRC import, or entry operation. Entry 1
-remains unstarted pending explicit corrected-preflight authority.
+later starts under corrected preflight and retains an eligible pre-model
+failure: the new supervisor resolved the lexical `.venv/bin/python` symlink to
+the system interpreter for its child. The owner requires an in-place
+infrastructure correction under existing I08A/I08, not a new iteration. That
+correction now passes 8/8 focused tests and 18/18 candidate-free validation;
+the exact correction commit, attempt-2 preflight, and same-entry retry remain.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -3321,6 +3326,25 @@ actual commit `12ff83be7…`; no claim or entry operation occurs. Evidence:
 - [ ] Invoke only corrected I08 sequence entry 1 under its exact normalized
   command. Retain either the externally supervised success output or failure
   receipt and stop for review before entry 2.
+- [x] Retain the corrected-preflight entry-001 attempt-1 claim and external
+  failure receipt: `ModuleNotFoundError: matplotlib`, all pre-model counters
+  zero, output absent, and receipt-derived retry eligibility true.
+- [x] Diagnose the failure as an I05C regression, not a missing dependency:
+  `matplotlib==3.10.9` is already in `.venv`, while `_worker_command` used
+  `Path(sys.executable).resolve()` and launched the resolved host interpreter.
+- [x] Correct the existing I08A/I08 infrastructure in place—no I08B, C03, or
+  scientific revision—so every governed Python process uses lexical
+  `.venv/bin/python`; resolved targets remain digest identity only.
+- [x] Add a child-process regression check for exact `sys.executable`, active
+  repository `sys.prefix`, declared dependency import, and no direct system-
+  Python launch; audit all P2-I2 governed Python subprocess launch sites.
+- [x] Preserve attempt-1 claim/failure bytes and explicitly bridge its frozen
+  eligible retry across only the committed infrastructure-source correction.
+- [x] Candidate-free validate the in-place correction: 8/8 focused tests and
+  18/18 validation checks pass with zero PyGRC, model, candidate, control, or
+  scientific-window activity and zero infrastructure retries.
+- [ ] Commit the exact correction package, exact-preflight attempt 2, and
+  consume no more than the already-frozen same-entry retry.
 
 ## 14. `P2-I2-I09` — Control resolution
 
@@ -3499,6 +3523,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-047` | C01 entry 1 terminates natively after its permanent claim; owner states the 512 MiB space limit is unnecessary on the 128 GB host | `I08_C01_bounded_incomplete_and_I08A_C02_resource_supervisor_correction` | Retain C01 at 1 claim/0 evaluable; remove only successor `RLIMIT_AS`; externalize native-exit receipt capture; preserve the exact scientific matrix | Complete uncommitted correction: 234 unchanged projections, 29 bound files, 8/8 tests, 18/18 validation, zero blockers and zero candidate/scientific activity | C01 claim/authority/history, 234 scientific projections, receipt-derived retry, runtime/file ceilings, graph/venv/isolation boundaries | Review-ready; no C02 activation, execution, commit, or scientific evidence |
 | `P2-I2-CHG-048` | Owner accepts I08A and directs steps 2–4, explicitly omitting a duplicate activation-review checkpoint | `I08A_owner_acceptance_deterministic_activation_commit_and_entry_001_resumption` | Create one hash-bound activation, validate candidate-free, commit the complete package, run exact post-commit preflight, then invoke only corrected entry 1 | Activation passes 19/19 with zero blockers and zero candidate/scientific activity; commit, preflight, and one live entry remain | Accepted I08A hashes, C01 bounded-incomplete history, no-second-review direction, full-HEAD command rule, external supervisor | Commit authorized; no entry 2, manifest, interpretation, or result commit |
 | `P2-I2-CHG-049` | First post-commit C02 preflight is supplied a transcribed full HEAD that differs from the actual resulting commit | `I08A_postcommit_preflight_failed_start` | Retain exact command/error and prove zero claim/output/failure/PyGRC/candidate activity; retry only after owner direction | Failed closed at HEAD equality check; owner classifies it as unrelated operator fault and authorizes one immediate corrected preflight | DEC-051, committed activation, exact output absence, zero runtime counters, owner retry direction | Corrected read-only preflight authorized; entry 1 remains untouched until it passes |
+| `P2-I2-CHG-050` | Corrected-preflight entry 1 proves the C02 child launcher resolves `.venv/bin/python` to system Python, repeating the I05C anti-pattern | `I08A_in_place_active_venv_child_launcher_regression_correction` | No new iteration/cycle; preserve eligible failure; apply I05C lexical-command/resolved-identity separation to every governed Python child; validate and bridge only the frozen retry | Attempt 1 retained exactly; 8/8 focused tests and 18/18 candidate-free validation pass with all scientific/runtime counters zero | I05C accepted invariant, C02 claim/failure, same 234 projections, no scientific change, everything-through-venv direction | Exact correction commit and attempt-2 preflight pending; entry 2, manifest, interpretation, and result commit remain closed |
 
 ## 19. Evidence ledger
 

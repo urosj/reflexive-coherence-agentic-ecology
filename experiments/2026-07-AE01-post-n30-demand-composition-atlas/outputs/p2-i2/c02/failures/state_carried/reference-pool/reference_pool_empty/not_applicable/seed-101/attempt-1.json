@@ -1,0 +1,32 @@
+{
+  "address_space_limit_applied": false,
+  "artifact_id": "P2-I2-C02-SUPERVISOR-FAILURE-RECEIPT",
+  "artifact_version": "1.0.0",
+  "attempt": 1,
+  "child_attestation_present": true,
+  "child_returncode": 20,
+  "child_timed_out": false,
+  "claim_retained": true,
+  "cycle_id": "P2-I2-C02",
+  "entry_id": "P2-I2-C02:state_carried:reference-pool:reference_pool_empty:not_applicable:seed-101",
+  "exception_class": "ModuleNotFoundError",
+  "exception_message": "No module named 'matplotlib'",
+  "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
+  "failure_phase": "worker_execute_entry",
+  "output_absent": true,
+  "owner_authorized_full_HEAD": "dafec5789d513ca6476814a7d8d2dd2cceb94d4c",
+  "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792",
+  "retry_eligibility": true,
+  "retry_unknown_phase_is_refused": false,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_text": "",
+  "stderr_truncated": false,
+  "stdout_sha256": "ec8a1617788df19896ae62f8214dee2866f42f47b93f5eb1d2041a8194bf88ce",
+  "zero_state_counters": {
+    "adapters_constructed": 0,
+    "candidate_or_control_operations_started": 0,
+    "model_or_adapter_construction_started": 0,
+    "models_constructed": 0,
+    "pygrc_imports": 0
+  }
+}

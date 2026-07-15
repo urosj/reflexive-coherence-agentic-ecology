@@ -1,8 +1,8 @@
 {
   "C01_scientific_projection_change_count": 0,
   "artifact_id": "P2-I2-C02-EXECUTION-BINDING-RECEIPT",
-  "artifact_version": "1.0.0",
-  "bound_file_count": 29,
+  "artifact_version": "1.1.0",
+  "bound_file_count": 34,
   "bound_files": [
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-cycle-input-freeze.json",
@@ -137,23 +137,48 @@
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
       "role": "C02_external_supervisor_and_worker",
-      "sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29"
+      "sha256": "dd49fa01af1697327a5ee22ab77cf9f90a94c9371a841a98ebd059d7503f5d40"
     },
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py",
       "role": "C02_candidate_free_tests",
-      "sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280"
+      "sha256": "4e97b419fe5482b341b6f0079af1793969049c6ddbd5878cd14f93d5e58b4392"
     },
     {
       "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_validate.py",
       "role": "I08A_candidate_free_validator",
       "sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-venv-infrastructure-correction-input.json",
+      "role": "I08A_in_place_venv_correction_input_freeze",
+      "sha256": "65f342a6d954df2d7dc2d4acbe110f6b0c8320ef9366958fe9a59b915d861bf1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-venv-infrastructure-correction.json",
+      "role": "I08A_in_place_venv_correction_and_retry_bridge",
+      "sha256": "c60b9c1453253cc846aa5dfbff09f4396029537a55fdd6919326940ea47b32d3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-venv-infrastructure-tests.json",
+      "role": "I08A_repository_venv_child_regression_tests",
+      "sha256": "07812b67d6d6a7e29eae14e2e3b8bd3c4b67558603f4720f35d1cd2f1980fcf9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_venv_infrastructure_validate.py",
+      "role": "I08A_candidate_free_venv_infrastructure_validator",
+      "sha256": "ddb4de37bab687fabed37e9e0efa03a9b25a5edfb9206cdc06988cfdc894cc59"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_postcommit_preflight.py",
+      "role": "C02_exact_attempt_aware_postcommit_preflight",
+      "sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db"
     }
   ],
-  "canonical_payload_digest": "53a25f9ab5752c35a6e93ab5daa63c16f06b21751869e1552dcdcbff3b5a85d9",
+  "canonical_payload_digest": "51baa5d3d1695090cb65f3b05305cc7d40bd18ba31cfb2e809afeeed65eba871",
   "cycle_id": "P2-I2-C02",
   "iteration_id": "P2-I2-I08A",
   "run_matrix_semantic_digest": "3023ce84aa8c894b5fb4a32c0f9bdbea53d6828ef57f1be8be474503f8ffa052",
   "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
-  "status": "inactive_candidate_free_binding"
+  "status": "active_in_place_venv_corrected_binding"
 }

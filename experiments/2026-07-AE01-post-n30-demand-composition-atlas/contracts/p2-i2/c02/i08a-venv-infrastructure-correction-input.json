@@ -1,0 +1,99 @@
+{
+  "artifact_id": "P2-I2-I08A-VENV-INFRASTRUCTURE-CORRECTION-INPUT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "scientific_campaign": "P2-I2-I08",
+  "cycle_id": "P2-I2-C02",
+  "change_id": "P2-I2-CHG-050",
+  "status": "frozen_candidate_free_in_place_correction_input",
+  "starting_authority": {
+    "branch": "p2-i2-experiment",
+    "commit": "dafec5789d513ca6476814a7d8d2dd2cceb94d4c"
+  },
+  "owner_authority": {
+    "classification": "infrastructure_implementation_failure",
+    "new_iteration_or_cycle": false,
+    "everything_through_repository_venv": true,
+    "same_entry_attempt_2_after_commit_and_preflight": true
+  },
+  "frozen_predecessor": {
+    "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+    "claim_sha256": "f2b0e5a236c773d6b45b485e05e60d5229e57f630d19e8958940ab610f9c343a",
+    "failure_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/failures/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+    "failure_sha256": "0ee2c8691126580479c66a748589a72ed2fbfa3832e91ec5762ccf6384000776",
+    "activation_sha256": "c98e91986b9bb24468133dabdca83aa9ee7127a4c5949011a1c25d643602fe0f",
+    "binding_sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe"
+  },
+  "correction_receipt": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-venv-infrastructure-correction.json",
+    "sha256": "c60b9c1453253cc846aa5dfbff09f4396029537a55fdd6919326940ea47b32d3"
+  },
+  "corrected_source_hashes": {
+    "execution_source_sha256": "dd49fa01af1697327a5ee22ab77cf9f90a94c9371a841a98ebd059d7503f5d40",
+    "test_sha256": "4e97b419fe5482b341b6f0079af1793969049c6ddbd5878cd14f93d5e58b4392",
+    "postcommit_preflight_sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db",
+    "validator_sha256": "ddb4de37bab687fabed37e9e0efa03a9b25a5edfb9206cdc06988cfdc894cc59"
+  },
+  "accepted_I05C_bindings": {
+    "failure_record_sha256": "4781a89e1b0d0c509445637a5e479afd810253455537bea7dcf405069e0d124e",
+    "validation_sha256": "76b0105bba418c97cc787e3d94afe3f84f44def74e6489948e1c3c1baf14e6fb",
+    "interpreter_command": ".venv/bin/python",
+    "interpreter_flags": [
+      "-B"
+    ],
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "identity_rule": "lexical command path and resolved target digest remain separate"
+  },
+  "launch_audit": {
+    "scope": "P2-I2 governed Python subprocess command construction",
+    "resolved_system_python_as_command_count_before": 3,
+    "resolved_system_python_as_command_count_after": 0,
+    "corrected_sites": [
+      "C02 worker command",
+      "C02 native-exit child regression",
+      "C02 successful-attestation child regression"
+    ],
+    "resolved_interpreter_uses_remaining": "identity_checks_only"
+  },
+  "process_budget": {
+    "top_level_python_starts": 2,
+    "top_level_sequence": [
+      "eight focused C02 tests",
+      "one candidate-free infrastructure validator"
+    ],
+    "test_child_python_starts": 2,
+    "test_child_sequence": [
+      "native exit through repository venv",
+      "successful dependency attestation through repository venv"
+    ],
+    "infrastructure_retries": 0,
+    "failure_effect": "stop_without_commit_or_live_retry"
+  },
+  "test_command": [
+    ".venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py"
+  ],
+  "validation_command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_venv_infrastructure_validate.py"
+  ],
+  "candidate_free_boundaries": {
+    "pygrc_imports": 0,
+    "model_or_adapter_construction": 0,
+    "candidate_or_control_operations": 0,
+    "scientific_windows": 0,
+    "live_attempt_2_before_commit_and_preflight": false,
+    "entry_2": false,
+    "execution_manifest": false
+  },
+  "expected_outputs": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-venv-infrastructure-tests.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-venv-infrastructure-validation.json"
+  ],
+  "post_validation_disposition": "commit_exact_correction_package_then_attempt_2_read_only_preflight"
+}

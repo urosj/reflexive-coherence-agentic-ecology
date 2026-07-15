@@ -1,0 +1,130 @@
+{
+  "artifact_id": "P2-I2-I08A-VENV-INFRASTRUCTURE-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blockers": [],
+  "check_count": 18,
+  "checks": [
+    {
+      "check_id": "I08A-VENV-01",
+      "detail": "validator uses exact active repository .venv",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-02",
+      "detail": "starting commit and index exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-03",
+      "detail": "all corrected sources match freeze",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-04",
+      "detail": "worker launcher keeps lexical venv command",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-05",
+      "detail": "child regression test covers command, prefix, and dependency",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-06",
+      "detail": "attempt-1 failure remains mechanically retry-eligible",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-07",
+      "detail": "all attempt-1 construction and candidate counters remain zero",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-08",
+      "detail": "attempt-1 claim and failure bytes exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-09",
+      "detail": "correction is infrastructure-only and exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-10",
+      "detail": "focused tests pass through active child venv",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-11",
+      "detail": "updated live binding exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-12",
+      "detail": "activation binds corrected infrastructure",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-13",
+      "detail": "234 scientific projections unchanged",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-14",
+      "detail": "attempt-2 paths remain absent",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-15",
+      "detail": "all three new C02 resolved-command launch sites corrected",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-16",
+      "detail": "machine artifacts persist no absolute paths",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-17",
+      "detail": "candidate-free correction process budget exact",
+      "error": null,
+      "passed": true
+    },
+    {
+      "check_id": "I08A-VENV-18",
+      "detail": "validator imports no PyGRC",
+      "error": null,
+      "passed": true
+    }
+  ],
+  "cycle_id": "P2-I2-C02",
+  "disposition": "commit_then_exact_preflight_attempt_2",
+  "iteration_id": "P2-I2-I08A",
+  "passed_count": 18,
+  "process_accounting": {
+    "candidate_or_control_operations": 0,
+    "infrastructure_retries": 0,
+    "models_or_adapters_constructed": 0,
+    "pygrc_imports": 0,
+    "scientific_windows": 0,
+    "test_child_python_starts": 2,
+    "top_level_python_starts": 2
+  },
+  "status": "passed_candidate_free"
+}

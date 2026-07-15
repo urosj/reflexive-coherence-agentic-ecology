@@ -472,6 +472,12 @@ tests plus 18/18 candidate-free validation. DEC-051 records owner acceptance
 without a duplicate activation review; deterministic activation passes 19/19
 and authorizes the complete package commit. Corrected entry 1 still requires
 the resulting full HEAD and exact post-commit preflight.
+That preflight later passes and entry-001 attempt 1 is retained as an eligible
+pre-model infrastructure failure: its nested worker command escaped the active
+repository venv through symlink resolution. CHG-050 corrects the launcher in
+place under existing I08A/I08, not a new iteration; 8/8 focused tests and
+18/18 candidate-free validation pass. The exact correction commit and
+attempt-2 preflight now gate only the frozen same-entry retry.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

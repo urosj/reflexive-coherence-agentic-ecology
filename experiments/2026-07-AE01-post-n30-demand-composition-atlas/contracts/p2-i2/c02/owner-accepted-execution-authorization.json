@@ -1,10 +1,10 @@
 {
   "artifact_id": "P2-I2-C02-OWNER-ACCEPTED-EXECUTION-AUTHORIZATION",
-  "artifact_version": "1.0.0",
+  "artifact_version": "1.1.0",
   "iteration_id": "P2-I2-I08A",
   "lane_id": "AE01-L02",
   "cycle_id": "P2-I2-C02",
-  "status": "owner_accepted_activation",
+  "status": "owner_accepted_activation_with_in_place_venv_correction",
   "construction_authority": {
     "decision_id": "P2-I2-DEC-050",
     "change_id": "P2-I2-CHG-047",
@@ -16,6 +16,15 @@
     "owner_direction": "i accept I08A, continue with step 2 and 3 and 4",
     "duplicate_activation_review_required": false
   },
+  "infrastructure_correction_authority": {
+    "change_id": "P2-I2-CHG-050",
+    "owner_direction": "don't create new I08B or something, this is infrastructure implementation failure, not reruns based on decisions. everything needs to go through .venv",
+    "new_iteration_or_cycle": false,
+    "scientific_change_count": 0,
+    "retained_attempt_1_claim_sha256": "f2b0e5a236c773d6b45b485e05e60d5229e57f630d19e8958940ab610f9c343a",
+    "retained_attempt_1_failure_sha256": "0ee2c8691126580479c66a748589a72ed2fbfa3832e91ec5762ccf6384000776",
+    "authorized_same_entry_attempt": 2
+  },
   "owner_acceptance": true,
   "candidate_execution_authorized": true,
   "I08_authorized": true,
@@ -23,13 +32,18 @@
   "activation_commit_head": null,
   "expected_head_source": "separately_owner_authorized_normalized_command_argument",
   "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792",
-  "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
-  "test_sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280",
+  "execution_source_sha256": "dd49fa01af1697327a5ee22ab77cf9f90a94c9371a841a98ebd059d7503f5d40",
+  "test_sha256": "4e97b419fe5482b341b6f0079af1793969049c6ddbd5878cd14f93d5e58b4392",
   "validator_sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c",
   "input_freeze_sha256": "ea62691439b1bdd49f533071784285c2e15b12c1e9ba862afc6bf9adc487f0e5",
   "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
-  "binding_receipt_sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe",
+  "binding_receipt_sha256": "5bdbf5050175730172ff25e02610fe4c5686609ccf88777c7351c967b76fd990",
   "inactive_exec_freeze_sha256": "fe8722ac99de9d546c7f2d3db6f6da9c200a6a7dce56b525a664e50101954414",
+  "infrastructure_input_sha256": "65f342a6d954df2d7dc2d4acbe110f6b0c8320ef9366958fe9a59b915d861bf1",
+  "infrastructure_correction_sha256": "c60b9c1453253cc846aa5dfbff09f4396029537a55fdd6919326940ea47b32d3",
+  "infrastructure_test_receipt_sha256": "07812b67d6d6a7e29eae14e2e3b8bd3c4b67558603f4720f35d1cd2f1980fcf9",
+  "infrastructure_validator_sha256": "ddb4de37bab687fabed37e9e0efa03a9b25a5edfb9206cdc06988cfdc894cc59",
+  "postcommit_preflight_sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db",
   "preparation_bindings": {
     "accepted_parent_commit": "c265279b2690fbd262e59248b0d84bfa3dc81ba1",
     "activation_input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-activation-input-freeze.json",
@@ -37,7 +51,7 @@
     "accepted_i08a_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-candidate-free-validation.json",
     "accepted_i08a_validation_sha256": "9e5089f9c4b653a3c7b0db5faff9d88626eca0da98d532397b82a3e6a7832981",
     "activation_validator_sha256": "6981e447cb0df09abf49bf8192ea09c30fb9e12acd8bbb756f10c5fdacd521be",
-    "postcommit_preflight_sha256": "c01496399ce58885b8e8eef0d0ccb6faf785932604584fe651ff1499c8e515f3",
+    "postcommit_preflight_sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db",
     "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
     "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
   },
@@ -64,6 +78,8 @@
     "governed_claims_or_outputs_permitted_only_after_commit_and_exact_preflight": true,
     "owner_review_required": false,
     "authorized_next_entry_sequence_index": 1,
+    "authorized_attempt": 2,
+    "attempt_1_retained_as_eligible_infrastructure_failure": true,
     "stop_before_entry_sequence_index": 2,
     "execution_manifest_permitted": false,
     "scientific_evidence": false

@@ -2768,6 +2768,25 @@ with the experiment`. One corrected read-only preflight using the actual full
 HEAD is therefore authorized. The original failed start remains retained as
 operator provenance and changes no experiment identity, matrix, or evidence.
 
+That corrected preflight passes. Entry-001 attempt 1 then retains an externally
+supervised, retry-eligible pre-model failure because the new child launcher
+resolved the active `.venv` command symlink into direct system-Python
+invocation. The dependency is already present inside `.venv`.
+
+The owner explicitly rejects a new I08B or decision-based rerun framing and
+requires every process to use `.venv`. CHG-050 therefore owns an in-place
+infrastructure implementation correction under existing I08A/I08: project the
+accepted I05C lexical-command/resolved-identity distinction onto the child
+launcher, add a child-prefix/dependency regression guard, preserve attempt-1
+bytes, and bridge only its already-eligible same-entry retry across the exact
+correction commit. This changes no scientific authority.
+
+The bounded correction passes 8/8 focused tests and 18/18 candidate-free
+validation with no blockers, no PyGRC import, no model/candidate/control work,
+and no scientific window. The only remaining live step is the exact committed
+attempt-2 preflight followed by the already-frozen same-entry retry; entry 2
+remains closed.
+
 ## 54. Pending decision queue
 
 No item below is decided by this record yet:
