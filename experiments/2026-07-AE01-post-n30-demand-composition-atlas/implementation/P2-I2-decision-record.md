@@ -2755,7 +2755,18 @@ does not retain exactly one supervised claim plus success/failure terminal.
 **Activation result:** the deterministic activation binds all eight live
 technical hashes and passes 19/19 candidate-free checks with zero blockers,
 retries, PyGRC imports, models/adapters, candidate/control operations, or
-scientific windows. The complete package is ready for its authorized commit.
+scientific windows. The complete package is retained at commit `12ff83b`.
+
+**Post-commit result:** the first read-only preflight supplies a transcribed
+full HEAD that differs from the resulting commit. The exact HEAD guard fails
+before claim or runtime import, so entry 1 remains unstarted with no scientific
+effect. DEC-051's reopen condition is met; a corrected preflight is not inferred
+from the original authority.
+
+The owner then directs `just retry, that was a fault that has nothing to do
+with the experiment`. One corrected read-only preflight using the actual full
+HEAD is therefore authorized. The original failed start remains retained as
+operator provenance and changes no experiment identity, matrix, or evidence.
 
 ## 54. Pending decision queue
 

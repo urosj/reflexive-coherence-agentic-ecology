@@ -1755,6 +1755,17 @@ its registered raw/control receipts; it cannot assign OP/R01–R05, L02 support,
 or a terminal result before the complete registered matrix and later gates.
 Execution must stop after entry 1 for retained-outcome review before entry 2.
 
+The first post-commit preflight start does not pass: the command supplies
+`12ff83b30…`, while the resulting committed authority is `12ff83be7…`. The
+exact HEAD guard fails before any C02 claim, PyGRC import, model/adapter,
+candidate/control operation, or scientific window. Entry 1 remains unstarted.
+The failed start cannot be rewritten as a successful preflight or silently
+retried; one corrected read-only preflight requires explicit owner authority.
+The owner supplies that authority immediately, classifies the mismatch as an
+operator fault unrelated to the experiment, and authorizes one corrected
+preflight using the actual resulting full HEAD. This changes no scientific,
+matrix, activation, retry, or evidence rule.
+
 ### 3.3 I03A state-carried realization binding
 
 The review-ready state-carried authority is the
