@@ -1,0 +1,734 @@
+{
+  "CLOSE_GATE": "review_ready_pending_owner_acceptance",
+  "artifact_count": 8,
+  "artifact_id": "P2-I2-I11-CLOSEOUT-MANIFEST",
+  "artifact_inventory": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-interpretation-input-freeze.json",
+      "sha256": "e31ae01228be00f72f3184c26b21464d2e87799c2532f90d602d5ba913d3a7d3",
+      "size_bytes": 5539
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-developmental-interpretation.json",
+      "sha256": "adc9a6f34966c8e0e58a611186cf1b87bbd7ba511f96065899691a9207b0f9b6",
+      "size_bytes": 28773
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-requirement-extraction.json",
+      "sha256": "5f3670e4cffba7af1c6e15c26c705ed8b85c6e539950d0c8b5f1dda31333edc7",
+      "size_bytes": 5867
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-terminal-classification.json",
+      "sha256": "c019bcd4bce4fe67fddb78143a4709b8411b6eb95ac6b3eee2219bcead93d567",
+      "size_bytes": 8471
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I11-terminal-closeout.md",
+      "sha256": "e80bffac6e778939c4a402747abe12504248582d59603a887bd9077e40077d60",
+      "size_bytes": 7104
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i11_closeout.py",
+      "sha256": "04c03c66773d893cfa0827a90293e6220c53de62faca6671a244d1bf2f4b2851",
+      "size_bytes": 60868
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
+      "sha256": "ce4f0c58e1f715e0f6000217d9cce09daa2a71a259e92073da900d033398833f",
+      "size_bytes": 20612
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md",
+      "sha256": "75a5fe8c104e0d208c5155e1b6fe22958096c64ce2ab0af7270f28df07a2796c",
+      "size_bytes": 30583
+    }
+  ],
+  "artifact_version": "1.0.0",
+  "canonical_payload_digest": "319aae4ed81799d7952b8d65bb3415f4e5fb6f8610664801998d4fc867450038",
+  "classification_value": "T3_operational_class",
+  "commit_authorized": false,
+  "control_summary": {
+    "comparison_rules": {
+      "pass": 38
+    },
+    "lane_controls": {
+      "pass": 15
+    },
+    "program_common_mode_results": {
+      "not_applicable": 1,
+      "pass": 56
+    }
+  },
+  "execution_boundary": {
+    "accepted_artifact_mutations": 0,
+    "adapter_constructions": 0,
+    "c02_worker_invocations": 0,
+    "graph_mutations": 0,
+    "matrix_entry_regenerations": 0,
+    "mode_rankings": 0,
+    "model_constructions": 0,
+    "n31_selections": 0,
+    "new_scientific_inputs": 0,
+    "packet_constructions": 0,
+    "persisted_absolute_paths": 0,
+    "pygrc_imports": 0,
+    "response_or_control_invocations": 0,
+    "retained_files_parsed": true
+  },
+  "frozen_input_verification": {
+    "input_count": 18,
+    "verified": true
+  },
+  "highest_valid_rung": "AE01-L02-R05",
+  "independent_reconstruction_required": true,
+  "iteration_id": "P2-I2-I11",
+  "lane_id": "AE01-L02",
+  "lane_support_status": "scaffold_dependent",
+  "metric_relation_configuration_index": [
+    {
+      "mode": "state_carried",
+      "relation": "robust_aligned",
+      "rows": [
+        {
+          "candidate_response": 0.125,
+          "mode": "state_carried",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 101,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "state_carried",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 211,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "state_carried",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 307,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "state_carried",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 101,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "state_carried",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 211,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "state_carried",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 307,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        }
+      ],
+      "threshold_passed": true
+    },
+    {
+      "mode": "history_carried",
+      "relation": "mixed_direction",
+      "rows": [
+        {
+          "candidate_response": 0.125,
+          "mode": "history_carried",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 101,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "history_carried",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 211,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "history_carried",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 307,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.0,
+          "mode": "history_carried",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 0.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 101,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "at_or_below_delta"
+        },
+        {
+          "candidate_response": 0.0,
+          "mode": "history_carried",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 0.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 211,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "at_or_below_delta"
+        },
+        {
+          "candidate_response": 0.0,
+          "mode": "history_carried",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 0.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 307,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "at_or_below_delta"
+        }
+      ],
+      "threshold_passed": false
+    },
+    {
+      "mode": "hybrid",
+      "relation": "mixed_direction",
+      "rows": [
+        {
+          "candidate_response": 0.125,
+          "mode": "hybrid",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 101,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "hybrid",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 211,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.125,
+          "mode": "hybrid",
+          "physical_order_id": "q1_then_q2",
+          "primary_margin": 1.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 307,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "above_delta"
+        },
+        {
+          "candidate_response": 0.0,
+          "mode": "hybrid",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 0.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 101,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "at_or_below_delta"
+        },
+        {
+          "candidate_response": 0.0,
+          "mode": "hybrid",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 0.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 211,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "at_or_below_delta"
+        },
+        {
+          "candidate_response": 0.0,
+          "mode": "hybrid",
+          "physical_order_id": "q2_then_q1",
+          "primary_margin": 0.0,
+          "q1_only_response": 0.0,
+          "q2_only_response": 0.0,
+          "seed": 307,
+          "strongest_leave_one_provenance": "q1-only",
+          "strongest_leave_one_response": 0.0,
+          "threshold_relation": "at_or_below_delta"
+        }
+      ],
+      "threshold_passed": false
+    }
+  ],
+  "mode_dispositions": [
+    {
+      "boundary_rungs": {
+        "AE01-L02-R01": "reached",
+        "AE01-L02-R02": "reached",
+        "AE01-L02-R03": "reached",
+        "AE01-L02-R04": "reached",
+        "AE01-L02-R05": "reached"
+      },
+      "causal_support": "passed_mode_specific_registered_relation",
+      "metric_relation": "robust_aligned",
+      "mode": "state_carried",
+      "mode_ranking": null,
+      "producer_boundary": "PyGRC",
+      "realization_class": "pygrc_native_candidate",
+      "restoration_class": "native_v2_plus_declarative_binding",
+      "support_status": "native_expression_candidate",
+      "threshold_passed": true
+    },
+    {
+      "boundary_rungs": {
+        "AE01-L02-R01": "reached",
+        "AE01-L02-R02": "reached",
+        "AE01-L02-R03": "reached",
+        "AE01-L02-R04": "reached",
+        "AE01-L02-R05": "reached"
+      },
+      "causal_support": "passed_mode_specific_registered_relation",
+      "metric_relation": "mixed_direction",
+      "mode": "history_carried",
+      "mode_ranking": null,
+      "producer_boundary": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for response",
+      "realization_class": "minimally_producer_assisted",
+      "restoration_class": "paired_native_v2_adapter_v2_composite",
+      "support_status": "scaffold_dependent",
+      "threshold_passed": false
+    },
+    {
+      "boundary_rungs": {
+        "AE01-L02-R01": "reached",
+        "AE01-L02-R02": "reached",
+        "AE01-L02-R03": "reached",
+        "AE01-L02-R04": "reached",
+        "AE01-L02-R05": "reached"
+      },
+      "causal_support": "passed_mode_specific_registered_relation",
+      "metric_relation": "mixed_direction",
+      "mode": "hybrid",
+      "mode_ranking": null,
+      "producer_boundary": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for joint response",
+      "realization_class": "minimally_producer_assisted",
+      "restoration_class": "paired_native_v2_adapter_v2_joint_composite",
+      "support_status": "scaffold_dependent",
+      "threshold_passed": false
+    }
+  ],
+  "owner_acceptance": false,
+  "source_input_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-interpretation-input-freeze.json",
+  "source_input_freeze_sha256": "e31ae01228be00f72f3184c26b21464d2e87799c2532f90d602d5ba913d3a7d3",
+  "status": "review_ready_closeout_complete",
+  "strongest_valid_claim": "bounded shared-pool co-conditioning demand pattern",
+  "terminal_classification": "supported_bounded_candidate",
+  "terminal_guard_revalidation": {
+    "failed_mode_result_count": 0,
+    "passed_mode_result_count": 30,
+    "required_control_count": 10,
+    "required_mode_result_count": 30,
+    "results": [
+      {
+        "control_id": "AE01-CTRL-02",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-02",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-02",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-03",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-03",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-03",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-07",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-07",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-07",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-10",
+        "derived_predicates": {
+          "motif_and_regime_blocked": true,
+          "parent_modulation_claim_absent": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-10",
+        "derived_predicates": {
+          "motif_and_regime_blocked": true,
+          "parent_modulation_claim_absent": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-10",
+        "derived_predicates": {
+          "motif_and_regime_blocked": true,
+          "parent_modulation_claim_absent": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-12",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-12",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-12",
+        "derived_predicates": {
+          "bounded_claim_exact": true,
+          "unsafe_relabels_blocked": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-13",
+        "derived_predicates": {
+          "mode_ranking_absent": true,
+          "selection_not_run": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-13",
+        "derived_predicates": {
+          "mode_ranking_absent": true,
+          "selection_not_run": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-13",
+        "derived_predicates": {
+          "mode_ranking_absent": true,
+          "selection_not_run": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-14",
+        "derived_predicates": {
+          "demand_separate_from_substrate_evidence": true,
+          "surface_status_is_missing_not_graph_success": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-14",
+        "derived_predicates": {
+          "demand_separate_from_substrate_evidence": true,
+          "surface_status_is_missing_not_graph_success": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-14",
+        "derived_predicates": {
+          "demand_separate_from_substrate_evidence": true,
+          "surface_status_is_missing_not_graph_success": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-15",
+        "derived_predicates": {
+          "realization_class_explicit": true,
+          "support_status_explicit": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-15",
+        "derived_predicates": {
+          "realization_class_explicit": true,
+          "support_status_explicit": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-15",
+        "derived_predicates": {
+          "realization_class_explicit": true,
+          "support_status_explicit": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-18",
+        "derived_predicates": {
+          "domain_promotion_absent": true,
+          "motif_regime_life_blocked": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-18",
+        "derived_predicates": {
+          "domain_promotion_absent": true,
+          "motif_regime_life_blocked": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-18",
+        "derived_predicates": {
+          "domain_promotion_absent": true,
+          "motif_regime_life_blocked": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-19",
+        "derived_predicates": {
+          "execution_completed": true,
+          "historical_incomplete_not_scientific_negative": true,
+          "manifest_complete": true,
+          "missing_nonevaluable_ambiguous_zero": true
+        },
+        "mode": "state_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-19",
+        "derived_predicates": {
+          "execution_completed": true,
+          "historical_incomplete_not_scientific_negative": true,
+          "manifest_complete": true,
+          "missing_nonevaluable_ambiguous_zero": true
+        },
+        "mode": "history_carried",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      },
+      {
+        "control_id": "AE01-CTRL-19",
+        "derived_predicates": {
+          "execution_completed": true,
+          "historical_incomplete_not_scientific_negative": true,
+          "manifest_complete": true,
+          "missing_nonevaluable_ambiguous_zero": true
+        },
+        "mode": "hybrid",
+        "observed_disposition": "pass",
+        "revalidated_from_final_records": true,
+        "source_I09A_disposition": "pass"
+      }
+    ]
+  },
+  "validation_output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-closeout-validation.json"
+}

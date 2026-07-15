@@ -482,16 +482,38 @@ succeeds through `.venv` and retains a valid scientific-zero terminal for the
 state-carried reference-empty row. C02 then completes 234/234 evaluable
 terminals under commit `180a1bf`; the cumulative manifest passes with 132
 zero-gain and 102 gain-0.125 rows and no seed-varying matched configuration.
-I09 now passes 21/21 deterministic checks over the retained evidence: all 38
-comparison rules and 15 mode-local controls pass, while the program controls
-resolve to 56 mode-level passes plus one explicit not-applicable. Scientific
-interpretation remains null pending I10 reconstruction and I11; the owner
-accepts I09 and passes CONTROL-GATE without assigning a rung or terminal result.
+Accepted I09A corrects the normalized estimator over the retained evidence:
+all 38 comparison rules and 15 mode-local controls still pass, while the
+program controls retain 56 mode-level passes plus one explicit
+not-applicable. Accepted I10 independently reconstructs all 234 terminals,
+470 governed paths, 18 margins, and all three restoration/continuation/reset
+boundaries at 24/24. I11 then interprets only those retained bytes. Its
+review-ready closeout reaches R01–R05 and classifies L02 as a
+`supported_bounded_candidate` at a `scaffold_dependent`,
+`T3_operational_class` boundary. The owner accepted the exact reviewed
+package, passed CLOSE-GATE, and authorized its containing commit under
+DEC-061.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This
 changes no I03A causal claim; later gate effects are owned by DEC-020 and
 DEC-026.
+
+The scientific shape is mode-specific rather than a single scalar. The
+state-carried realization is natively expressed and robust aligned in both
+orders. History-carried and hybrid are producer-assisted and preserve the
+expected order-conditioned mixed relation: one order is aligned and the other
+is zero for every seed. All causal controls pass, so that mixed metric label is
+not itself a hypothesis failure. Quantity-matched repeated-source equivalence
+remains non-gating and blocks source-diversity, synergy, cooperation, and
+coordination readings.
+
+The strongest valid statement is a bounded shared-pool co-conditioning demand
+pattern. The concrete LGRC implication is narrower: state-carried behavior is
+already expressible on the native causal path, while history-carried and hybrid
+share one missing native active-history function currently supplied by the
+RCAE adapter. Any graph-side implementation priority waits for cross-experiment
+synthesis and a new preregistration.
 
 Later lanes examine trace dynamics, support, boundaries, circulation, and
 parent-basin demands. Only after all lanes close may the atlas compare their

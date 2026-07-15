@@ -1,11 +1,11 @@
 # AE01 — Post-N30 Demand and Composition Atlas
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 has passed source,
-discriminator, calibration, and registration gates. C01 is bounded incomplete
-at one claim and 0/234 evaluable with no result. Owner-directed I08A has an
-owner-accepted C02 correction at 8/8 focused tests, 18/18 correction
-validation, and 19/19 activation validation. Its package commit is authorized;
-corrected entry 1 still requires the resulting full HEAD and exact preflight.
+**Status:** P2-I1 is closed and Review R3 passed. P2-I2 has completed its
+accepted 234-entry C02 cycle, corrected control resolution, and independent
+reconstruction. Its I11 closeout candidate classifies L02 as
+`supported_bounded_candidate` through R05 at a `scaffold_dependent`,
+`T3_operational_class` boundary. The owner accepted the exact reviewed package,
+passed CLOSE-GATE, and authorized its containing commit.
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -135,12 +135,17 @@ preflight and only eligible retry then succeed through `.venv`, yielding a
 valid scientific-zero terminal for the state-carried reference-empty row.
 C02 subsequently completes 234/234 evaluable terminals under commit `180a1bf`:
 132 have gain 0.0 and 102 have gain 0.125, with no seed-varying matched
-configuration. The cumulative manifest passes and interpretation remains null
-pending I11. I09 now derives the compact retained-evidence control index:
-21/21 checks pass, all 38 comparison rules and 15 mode-local controls pass, and
-the 19 program controls resolve to 56 mode-level passes plus one explicit
-state-carried not-applicable. The owner accepts I09 and passes CONTROL-GATE;
-no `R01`–`R05` or terminal result is assigned, and I10 remains unstarted.
+configuration. Accepted I09A corrects the normalized estimator without
+changing any of the 38 comparison, 15 lane-control, or 57 program-mode
+dispositions. Accepted I10 independently reconstructs the retained bundle and
+all three restoration/continuation/reset boundaries at 24/24. The
+[I11 closeout candidate](reports/P2-I2-I11-terminal-closeout.md) preserves all
+18 mode/order/seed margins, assigns R01–R05, revalidates all 30 terminal-guard
+mode results, and closes at the bounded claim ceiling. It identifies native
+state-carried expression and one common missing native active-history function
+behind the history/hybrid adapters. DEC-061 records exact owner acceptance,
+CLOSE-GATE passage, and containing-commit authority without starting the
+naturalization probe or cross-lane synthesis.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself
@@ -302,7 +307,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
-P2-I2                                           I08A accepted; activation 19/19; commit authorized
+P2-I2                                           closed; accepted bounded L02 result retained for commit
 P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

@@ -1,9 +1,11 @@
 # P2-I2 Operational Hypothesis Projections
 
-**Status:** evidence-bearing through owner-accepted I09; review-ready I09A
-corrects the I10-found estimator bypass at 24/24 with no raw-evidence or
-control-disposition change. CONTROL-GATE awaits owner reconciliation and
-RECON-GATE remains closed; no scientific interpretation is assigned.
+**Status:** evidence-bearing through owner-accepted and retained I09A/I10.
+I09A corrects the I10-found estimator bypass at 24/24 with no raw-evidence or
+control-disposition change; I10 independently reconstructs the retained bundle
+at 24/24. CONTROL-GATE and RECON-GATE are passed. I11 retained-evidence
+interpretation construction is open under DEC-060/CHG-064; no conclusion is
+assigned by this declaration.
 The accepted C02 manifest retains 234/234 evaluable mode-indexed terminals.
 I09 resolves only the already-frozen common and L02 control relations from
 those retained receipts. The three modes remain separate and unranked;
@@ -2366,3 +2368,29 @@ bounded shared-pool co-conditioning demand pattern
 The family cannot establish collective memory, communication, resource
 economy, cooperation, coordination, agency, organism identity, a native shared
 pool primitive, motif, regime, life, cross-lane recurrence, or N31+ selection.
+
+## 16. I11 retained-evidence interpretation declaration
+
+The owner's direction `now the last one, I11` opens exactly one terminal
+interpretation pass after accepted retention commit `b28ef17`. I11 may assign
+the five frozen L02 rungs, per-mode support and realization readings, one
+lane-level support status, one T-classification, and one terminal state only by
+derivation from the accepted C02/I09A/I10 record.
+
+The three modes remain separate and unranked. State-carried order invariance
+and history/hybrid order dependence must be evaluated against their own frozen
+causal expectations. The arithmetic threshold relation is not a substitute
+for the causal receipts, and the non-gating repeated-source equivalence cannot
+be promoted to source-diversity, synergy, cooperation, or coordination.
+
+I11 may use only retained parsing, schema validation, deterministic report
+assembly, hashing, and independent byte reconstruction. It may not import or
+construct PyGRC models, adapters, packets, or C02 workers; execute a response
+or control; introduce an input; alter accepted evidence; select a mode; perform
+cross-lane synthesis; or select N31+. Any missing authority, unresolved
+mandatory control, reconstruction mismatch, schema failure, or unsafe claim
+fails closeout closed rather than being interpreted as a scientific null.
+
+The resulting package must be returned uncommitted for owner review. Neither
+technical construction nor validation passes `P2-I2-CLOSE-GATE`, accepts a
+terminal result, authorizes a commit, or starts the declared next move.

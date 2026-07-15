@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.42
+**Baseline revision:** 0.43
 
 **Date:** 2026-07-15
 
@@ -1254,18 +1254,26 @@ Entry condition:
   activation passes 19/19 and authorizes the complete package commit. Live use
   still requires the resulting full HEAD and exact post-commit preflight. Evidence:
   [I08A review](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I08A-C02-resource-supervisor-correction.md).
+- [x] Complete the corrected C02 matrix and the I09-I11 retained-evidence
+  closeout sequence. C02 is complete at 234/234; I09A resolves every required
+  control through the accepted I04R2 estimator; I10 independently reconstructs
+  retained calibration, registration, execution, and control identities; and
+  owner-accepted I11 passes 30/30 terminal checks without new scientific or
+  graph runtime. Evidence:
+  [I11 terminal closeout](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I11-terminal-closeout.md)
+  and [I11 acceptance](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-owner-acceptance-and-close-gate.json).
 
 Required lane work:
 
-- [ ] Complete every P2-I2 activity as a named iteration in the lane-local
+- [x] Complete every P2-I2 activity as a named iteration in the lane-local
   checklist; capability audits and source admission may not occur off-ledger.
-- [ ] Define the shared carrier and access scope.
-- [ ] Distinguish common substrate memory from database/mailbox semantics.
-- [ ] Define accumulation, mixing, depletion, saturation, and leakage.
-- [ ] Define how multiple attributable contributions jointly constitute one
+- [x] Define the shared carrier and access scope.
+- [x] Distinguish common substrate memory from database/mailbox semantics.
+- [x] Define accumulation, mixing, depletion, saturation, and leakage.
+- [x] Define how multiple attributable contributions jointly constitute one
   functional pool state/history and condition later continuation beyond
   independent writes or a global aggregate.
-- [ ] Apply the common lane completion contract.
+- [x] Apply the common lane completion contract.
 
 Lane-specific boundary:
 
@@ -1276,11 +1284,18 @@ Blocked: collective memory, communication, resource economy, or coordination.
 
 Exit gate `P2-I2-GATE`:
 
-- [ ] Pool pattern and sharedness are classified.
-- [ ] Combined-state dependence is distinguished from inherited single-writer
+- [x] Pool pattern and sharedness are classified.
+- [x] Combined-state dependence is distinguished from inherited single-writer
   medium perturbation and separate contribution success.
-- [ ] Mixing, leakage, and hidden-controller risks are recorded.
-- [ ] New requirements and debts are recorded.
+- [x] Mixing, leakage, and hidden-controller risks are recorded.
+- [x] New requirements and debts are recorded.
+
+`P2-I2-GATE` passed under owner-accepted DEC-061. The retained terminal is
+`supported_bounded_candidate` through `AE01-L02-R05`, with lane-wide
+`scaffold_dependent` support and `T3_operational_class`. The state-carried mode
+is a native-expression candidate; history-carried and hybrid retain the common
+active-history naturalization debt. The maximum claim remains the bounded
+shared-pool co-conditioning demand pattern.
 
 ### P2-I3 — Trail or stigmergic field lane
 
@@ -1460,7 +1475,7 @@ Exit gate `P2-I7-GATE`:
 Entry condition:
 
 - [x] `P2-I1-GATE` passed.
-- [ ] `P2-I2-GATE` passed.
+- [x] `P2-I2-GATE` passed.
 - [ ] `P2-I3-GATE` passed.
 - [ ] `P2-I4-GATE` passed.
 - [ ] `P2-I5-GATE` passed.
@@ -2144,6 +2159,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-CAL-GATE | Owner-accepted I05J/I05JA metric closeout; candidate-blind delta `1e-12`; exact process/package accounting; no scientific effect | 2026-07-14 | Passed; opens unstarted I06 registration construction only |
 | P2-I2-REG-GATE | Owner-accepted I06/I06A three-mode registration plus I06B execution-readiness overlay; exact restoration, causal-receipt, runtime-tolerance, and registration boundaries | 2026-07-15 | Passed; accepted I07/I07A freeze construction followed |
 | P2-I2-EXEC-FREEZE | Accepted I07A inactive C01 freeze and activation history; C01 later bounded incomplete; I08A preserves all 234 projections and passes 8/8, 18/18 correction validation, and 19/19 activation validation | 2026-07-15 | C01 consumed/bounded incomplete; C02 correction/activation owner-accepted and commit-authorized; full committed HEAD and exact preflight still required |
+| P2-I2-GATE | Complete 234/234 C02 evidence, corrected I09A control projection, I10 retained-evidence reconstruction, and owner-accepted 30/30 I11 terminal closeout | 2026-07-15 | DEC-061; passed with `supported_bounded_candidate`, `AE01-L02-R05`, `scaffold_dependent`, and `T3_operational_class`; synthesis and native-substitution work remain unopened |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2232,7 +2248,8 @@ Change log:
 | CL-042 | 2026-07-14 | Revision 0.39 retains the final preflight failure at launch commit `98770ae`: the active repository `.venv` was used, but its valid interpreter symlink target was incorrectly rejected by the repository-data path guard. DEC-031/CHG-024 now require exact `.venv/bin/python`, active repository venv, distinct base prefix, and the frozen resolved-target digest/version. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass with immutable I04R2 bytes; no claim/output exists and the one attempt remains unconsumed. | P2-I2 I05C correction review boundary | Superseded by CL-043 |
 | CL-043 | 2026-07-14 | Revision 0.40 synchronizes current program cover through the existing uncommitted I05J amendment. The sole governed arithmetic null completed and remains consumed; portability corrections through I05I are retained at `b5d0acb`; I05J/I05JA retain the five-seed/two-order projection, native metric artifacts, delta `1e-12`, and 11/11 reconstruction. The amendment adds exact process/package accounting without rerun and leaves CAL-GATE/I06 closed for owner review. | P2-I2 I05J closure-amendment review boundary | Active pending owner review; no scientific result |
 | CL-044 | 2026-07-14 | Revision 0.41 records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves the 11/11 reconstruction, delta `1e-12`, exact process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. | P2-I2 I05 terminal retention and CAL-GATE | Active; I05 complete, I06 not begun |
-| CL-045 | 2026-07-15 | Revision 0.42 synchronizes P2-I2 through I08A acceptance. C01 remains bounded incomplete at one claim and 0/234 evaluable with no result. C02 preserves all 234 projections, removes only `RLIMIT_AS`, externalizes native-exit receipts, passes 8/8 plus 18/18 correction validation, and passes 19/19 deterministic activation validation under DEC-051. | P2-I2 I08A activation/commit boundary | Active; complete package commit authorized; corrected entry 1 requires resulting full HEAD and exact preflight |
+| CL-045 | 2026-07-15 | Revision 0.42 synchronizes P2-I2 through I08A acceptance. C01 remains bounded incomplete at one claim and 0/234 evaluable with no result. C02 preserves all 234 projections, removes only `RLIMIT_AS`, externalizes native-exit receipts, passes 8/8 plus 18/18 correction validation, and passes 19/19 deterministic activation validation under DEC-051. | P2-I2 I08A activation/commit boundary | Superseded by CL-046 |
+| CL-046 | 2026-07-15 | Revision 0.43 closes P2-I2 under owner-accepted DEC-061. C02 completes 234/234; I09A and I10 pass their corrected control and reconstruction gates; I11 passes 30/30 and retains a mode-separated `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries. No new scientific runtime, mode ranking, synthesis, native substitution, or N31+ selection occurs in closeout. | P2-I2 terminal retention and lane gate | Active; P2-I2 complete, later lanes and synthesis remain separately gated |
 
 ## 17. Current next actions
 
@@ -2292,5 +2309,8 @@ The next unchecked actions in dependency order are:
     single arithmetic-null invocation and reconstruct the retained output.
 16. [x] Review and accept the amended I05J/I05JA metric closeout, authorize its
     complete commit, and pass CAL-GATE without beginning I06 registration.
-17. [ ] Begin any later independently owned Phase 2 lane only under its own
+17. [x] Complete P2-I2 through corrected C02 execution, I09A control
+    resolution, I10 reconstruction, and owner-accepted I11 interpretation;
+    pass `P2-I2-GATE` without opening cross-lane synthesis or successor work.
+18. [ ] Begin any later independently owned Phase 2 lane only under its own
     candidate-blind calibration, registration, and execution boundaries.

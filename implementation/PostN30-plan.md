@@ -2,9 +2,9 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.41
+**Plan revision:** 0.43
 
-**Date:** 2026-07-14
+**Date:** 2026-07-15
 
 **Scope:** repository architecture, directive hierarchy, Post-N30 atlas program,
 LGRC consumption boundary, specification promotion, and implementation sequence
@@ -1766,32 +1766,23 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.41:
+Current dependency order after revision 0.43:
 
-1. Advance P2-I2 only through its accepted brief, evidence-expandable activity
-   checklist, cumulative decision record, and subordinate operational
-   hypothesis projections. I04R2 is the sole accepted progression authority;
-   original I04/I04R1 are immutable history.
-2. I05A's failed-closed 3/8 audit and the owner-accepted I05B/I05C corrections
-   remain historical authority. The sole governed arithmetic-null attempt is
-   consumed and retained with one builder call, zero retries, one readback, and
-   a refused second start. Portability corrections through I05I are retained at
-   `b5d0acb`. I05J/I05JA retain the exact five-seed/two-order projection, native
-   metric-calibration and frozen metric-sheet artifacts, delta `1e-12`, and
-   11/11 reconstruction. The owner-accepted I05J closeout also retains exact
-   process/package accounting and synchronized current status. CAL-GATE is
-   passed; I06 registration construction is authorized but not begun, and
-   candidates remain closed.
-3. For every future lane, freeze candidate-blind calibration and exact
+1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
+   I09A control projection, I10 reconstruction, and I11 terminal closeout
+   support only the bounded shared-pool co-conditioning demand pattern. The
+   three modes remain separate; cross-lane synthesis, active-history native
+   substitution, mode ranking, and N31+ selection remain unopened.
+2. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
    closure.
-4. Apply the targeted L03 and L06 amendments before their calibration
+3. Apply the targeted L03 and L06 amendments before their calibration
    preregistration gates; static trace persistence and linear capacity
    transport cannot satisfy those lanes.
-5. Execute and classify lanes independently; preserve each prior result and
+4. Execute and classify lanes independently; preserve each prior result and
    never consume another lane's conclusion as evidence.
-6. Synthesize only after all required terminal and developmental-
+5. Synthesize only after all required terminal and developmental-
    interpretation records are comparable, then close AE01 before promoting
    canonical specifications or stable source abstractions.
 
@@ -1879,6 +1870,8 @@ directive.
 | 2026-07-14 | Revision 0.39: retained the failed-before-claim final preflight at launch commit `98770ae`. The governed command used the active repository `.venv`, but the accepted wrapper incorrectly sent its symlink through the repository-data resolver and rejected the resolved `system-interpreter:python3.12` target. DEC-031/CHG-024 separates exact lexical `.venv/bin/python` command/active-venv identity from the resolved digest-bound binary. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass; I04R2 is unchanged, no attempt/output exists, and the correction is uncommitted pending owner review. |
 | 2026-07-14 | Revision 0.40: synchronized current program cover through the existing uncommitted I05J amendment. The sole governed arithmetic null is consumed; all I05 portability groups are retained through I05I commit `b5d0acb`; I05J/I05JA retain the estimator-preserving projection, native metric artifacts, delta `1e-12`, and 11/11 reconstruction. The amendment records exact dependency/native/validator process history and package hashes without rerun. CAL-GATE, I06, candidate execution, and scientific results remain closed pending owner review. |
 | 2026-07-14 | Revision 0.41: records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves 11/11 reconstruction, delta `1e-12`, complete process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. |
+| 2026-07-15 | Revision 0.42: synchronized the master checklist through owner-accepted I08A. C01 remains bounded incomplete; C02 preserves all 234 projections while replacing only the inadequate process-address-space ceiling with external native-exit supervision and retained runtime/file-size bounds. |
+| 2026-07-15 | Revision 0.43: closes P2-I2 under owner-accepted DEC-061 after complete 234/234 C02 execution, corrected I09A control projection, I10 retained-evidence reconstruction, and 30/30 I11 interpretation validation. The terminal is `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries; no mode ranking, synthesis, native substitution, or N31+ work is opened. |
 
 ## 18. Program completion criteria
 

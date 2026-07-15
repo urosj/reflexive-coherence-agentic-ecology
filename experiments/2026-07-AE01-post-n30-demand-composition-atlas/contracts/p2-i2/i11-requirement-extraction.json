@@ -1,0 +1,98 @@
+{
+  "record": {
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "composition_leverage": "The surface would compose attributable multi-source events into a restorable active carrier usable by later native response paths, removing the same minimal producer-owned leg from both history-carried and hybrid realizations.",
+    "construction_refs": [
+      "RCAEActiveHistoryAdapterV2",
+      "p2-i2-i06-history-H_P-common",
+      "p2-i2-i06-hybrid-H_P-common",
+      "P2-I2-I06-THREE-MODE-REGISTRATION"
+    ],
+    "counterfactual": "If a graph-native carrier cannot reproduce the registered order/clamp and hybrid factorial relations after adapter withdrawal, or if adapter withdrawal does not selectively remove the history-bearing relation, the proposed surface is not the missing function identified here.",
+    "debt_refs": [
+      "p2-i2-debt-native-control-surface",
+      "p2-i2-debt-native-active-history",
+      "p2-i2-debt-producer-assisted-history",
+      "p2-i2-debt-explicit-construction",
+      "p2-i2-debt-medium-economy",
+      "p2-i2-debt-leakage-window",
+      "p2-i2-debt-transfer",
+      "p2-i2-debt-measurement-order-conditioning",
+      "p2-i2-debt-composition-recurrence",
+      "p2-i2-debt-semantic-relabel",
+      "p2-i2-debt-claim-ceiling"
+    ],
+    "evidence_refs": [
+      {
+        "claim_ceiling": "complete retained execution evidence; no interpretation by itself",
+        "evidence_role": "observed_ae01_result",
+        "file_sha256": "d84935e75f75211aee03a8b62afc68dd37725b101ec3aedd117747f970487f3a",
+        "output_digest": "69864b8ff2aa6124b8d44ae7000b3a4e3733e205a1773285d56c15b8868ca8c0",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json",
+        "reference_id": "P2-I2-C02-EXECUTION-MANIFEST"
+      },
+      {
+        "claim_ceiling": "mode-separated control and normalized-margin projection only",
+        "evidence_role": "observed_ae01_result",
+        "file_sha256": "dd339ffc39645bcabbe81f7d5f6a28bcee5ee0031066bed92d85c0382e9613a5",
+        "output_digest": "4feef398e25cc32f5cb9ec7adeaffa46745b551b261b59f32c9ba9cc3773a501",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+        "reference_id": "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+      },
+      {
+        "claim_ceiling": "retention, reconstruction, and restoration-conformance evidence only",
+        "evidence_role": "observed_ae01_result",
+        "file_sha256": "5e02b64a5464c64a517de70b74c0b0db3b2a3a0c0fcb46d257d3edcb95a192b8",
+        "output_digest": "ad36e6be2ad99be1afd4f6f054023b2c5e69ba4a2f545b59a5f47ffa5f04a8da",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-manifest.json",
+        "reference_id": "P2-I2-I10-RECONSTRUCTION-MANIFEST"
+      },
+      {
+        "claim_ceiling": "registered implementation identity and causal ownership only",
+        "evidence_role": "constructed_ecology_mechanism",
+        "file_sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d",
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+        "reference_id": "P2-I2-I06-THREE-MODE-REGISTRATION"
+      }
+    ],
+    "extensions": {
+      "x_lgrc_demand_implication": "candidate native active-history building block for later cross-experiment synthesis",
+      "x_mode_surface_dispositions": {
+        "history_carried": {
+          "boundary": "active H_P/M_H causal leg owned by RCAEActiveHistoryAdapterV2",
+          "status": "missing"
+        },
+        "hybrid": {
+          "boundary": "same active H_P/M_H leg missing; native PyGRC joint response is adequate",
+          "status": "missing"
+        },
+        "state_carried": {
+          "boundary": "native causal P response; experiment-composed audit/control conveniences remain debt",
+          "status": "apparently_adequate"
+        }
+      },
+      "x_native_implementation_priority_assigned": false,
+      "x_observed_relation": "bounded shared-pool co-conditioning demand pattern"
+    },
+    "future_discriminator": "Under a new preregistration, withdraw RCAEActiveHistoryAdapterV2 and substitute one graph-native active-history carrier while preserving exact contribution operations, orders, interventions, response masks, controls, and restoration identities.",
+    "lane_ids": [
+      "AE01-L02"
+    ],
+    "origin": "introduce",
+    "prerequisite_ids": [
+      "lgrc-attributable-source-lineage",
+      "lgrc-source-label-independent-common-carrier",
+      "lgrc-native-restoration-and-reset-identity-v2",
+      "lgrc-native-carrier-scoped-response"
+    ],
+    "ranking_eligibility": "pending_synthesis",
+    "requirement_id": "p2-i2-l02-native-active-shared-history-carrier",
+    "source_tension": "PyGRC natively supplies the state-carried P response and the final response machinery for all modes, but it does not own the active H_P/M_H function required by history-carried and hybrid; the experiment therefore supplies that one causal leg through RCAEActiveHistoryAdapterV2.",
+    "surface_description": "A graph-native source-label-independent active shared-history carrier that exposes bounded contribution admission and idempotency, ordered mixing, intervention/clamp, native readout materialization, audit lineage separation, paired restoration, and reset.",
+    "surface_status": "missing",
+    "target_catalog_layer": "building_block",
+    "transfer_scope": "Demand abstraction only within AE01 pending cross-experiment synthesis and a separately registered substitution probe; no P2-I2 margin, rung, support status, or terminal class transfers as graph evidence."
+  },
+  "record_type": "requirement_extraction",
+  "schema_version": "1.1.0"
+}

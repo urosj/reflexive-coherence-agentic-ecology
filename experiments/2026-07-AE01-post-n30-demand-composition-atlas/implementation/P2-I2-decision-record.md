@@ -94,6 +94,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-057` | May the bounded I09A normalized-estimator correction begin? | Owner responds `+1`; completed package passes 24/24 twice, corrects 12 positive margins to `1.0`, retains six zeros, and changes no disposition | I09A is review-ready uncommitted; accepted bytes immutable; acceptance, commit, CONTROL-GATE passage, I10 retry, and I11 remain closed | 2026-07-15 |
 | `P2-I2-DEC-058` | Must work stop for separate I09A acceptance, or should active I10 be completed against exact correction bytes? | Owner directs I10 be finished or its tasks properly marked done; bind uncommitted I09A by hash in additive v2 and return one combined review package | Resumes I10 construction/runtime only; no I09A acceptance, commit, CONTROL/RECON gate passage, I11, or scientific interpretation is inferred | 2026-07-15 |
 | `P2-I2-DEC-059` | Does the owner accept the combined I09A/I10 package and authorize retention? | Accepted by “commit all”: exact technical hashes bound; CONTROL-GATE and RECON-GATE pass; one containing commit authorized | Makes I11 ready but unstarted; R01–R05, support, ranking, terminal classification, and interpretation remain unassigned | 2026-07-15 |
+| `P2-I2-DEC-060` | What exact work may the final I11 iteration perform? | Owner-directed construction is technically complete at 30/30; one mode-preserving closeout is review-ready | Technical conclusion only; CLOSE-GATE, owner acceptance, commit, next-move execution, and N31+ remain closed | 2026-07-15 |
+| `P2-I2-DEC-061` | Does the owner accept the exact I11 terminal package and close P2-I2? | Accepted by `commit changes`: exact reviewed bytes bound; CLOSE-GATE passes; one containing commit authorized | Closes P2-I2 at bounded R05/scaffold-dependent/T3 ceiling; does not start synthesis, naturalization, ranking, or N31+ | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3070,13 +3072,114 @@ containing commit omits a bound artifact, either gate is represented as a
 scientific result, I11 begins inside the commit operation, or any interpretation
 boundary is weakened.
 
-## 62. Pending decision queue
+## 62. `P2-I2-DEC-060` — Open final I11 interpretation and closeout
 
-No item below is decided by this record yet:
+**Status:** decided for construction by explicit owner progression direction;
+technical package complete and review-ready; terminal acceptance, CLOSE-GATE
+passage, and commit remain pending
 
-| Proposed decision | Earliest iteration | Prerequisite |
-| --- | --- | --- |
-| Terminal classification and next move | I11 | Resolved controls and reconstruction |
+After accepted I09A/I10 retention commit `b28ef17`, the owner states:
+`now the last one, I11`.
 
-Pending items may not be answered by convenience, code availability, or
-candidate outcomes outside their named iteration.
+**Decision:** open checklist- and hypothesis-first I11. Bind the exact accepted
+semantic contracts, metric/calibration authority, three-mode registration,
+complete C02 evidence, corrected I09A control index, I10 reconstruction, and
+schema/profile authorities before constructing any interpretation artifact.
+Assign one lane terminal class while preserving separate state-carried,
+history-carried, and hybrid metric, causal, support, realization, control, and
+developmental dispositions. Revalidate the ten I09A terminal guards against
+the final machine records and claims.
+
+I11 may parse retained files, validate schemas, assemble a deterministic human
+report, compute digests, and independently reconstruct its outputs through the
+repository `.venv`. It may not run PyGRC, construct a model/adapter/packet,
+invoke a C02 worker or response/control path, change an accepted byte, add a
+scientific input, select or rank a mode, collapse mode/seed/order relations,
+perform cross-lane synthesis, or select N31+.
+
+The completed package must return uncommitted for explicit owner review.
+Technical completion alone does not pass CLOSE-GATE, accept the terminal
+classification, authorize a commit, or execute the bounded next move.
+
+Reopen this decision if a frozen input drifts, any retained evidence is
+regenerated or overwritten, a scientific or graph runtime operation occurs,
+mode-specific evidence is collapsed, a threshold is substituted for causal
+evidence, a blocked relabel is asserted, an absolute path is persisted, or an
+I11 conclusion is treated as accepted before owner review.
+
+Construction completed once from the exact 18-input portable freeze and was
+independently reconstructed in memory. All 30 validation checks pass with zero
+blockers, all three schema-governed records validate, and all five primary
+outputs are byte-identical. The package derives:
+
+```text
+terminal = supported_bounded_candidate
+highest_rung = AE01-L02-R05
+lane_support = scaffold_dependent
+classification_value = T3_operational_class
+state_carried = native_expression_candidate / robust_aligned
+history_carried = scaffold_dependent / mixed_direction_order_conditioned
+hybrid = scaffold_dependent / mixed_direction_order_conditioned
+terminal_guard_mode_results = 30/30 pass
+strongest_claim = bounded shared-pool co-conditioning demand pattern
+```
+
+The history/hybrid zero reverse-order margins remain the preregistered
+order-conditioned relation rather than an automatic support failure. Repeated-
+source equivalence remains non-gating and blocks source-diversity, synergy,
+cooperation, and coordination relabels. I11 names a future graph-native active-
+history substitution probe only as the falsifiable next move after cross-
+experiment synthesis; it neither prioritizes nor starts that work.
+
+I11 imported no PyGRC, constructed no model/adapter/packet, invoked no C02
+worker/response/control, added no scientific input, changed no accepted byte,
+ranked no mode, selected no N31+, and persisted no absolute path. These
+technical facts do not constitute owner acceptance or CLOSE-GATE passage.
+
+## 63. `P2-I2-DEC-061` — I11 owner acceptance and P2-I2 closeout
+
+**Status:** decided by explicit owner acceptance and commit direction
+
+After the complete I11 review handoff, the owner states: `commit changes`.
+
+**Decision:** accept the exact reviewed I11 input freeze, developmental
+interpretation, requirement extraction, terminal classification, closeout
+manifest, 30/30 validation, deterministic builder, and human report. Bind
+those bytes in one additive self-reference-free acceptance record, pass
+`P2-I2-CLOSE-GATE`, and authorize one containing commit with synchronized
+governance and navigation projections.
+
+The accepted result is:
+
+```text
+terminal = supported_bounded_candidate
+highest_rung = AE01-L02-R05
+lane_support = scaffold_dependent
+classification_value = T3_operational_class
+state_carried = native_expression_candidate / robust_aligned
+history_carried = scaffold_dependent / mixed_direction_order_conditioned
+hybrid = scaffold_dependent / mixed_direction_order_conditioned
+strongest_claim = bounded shared-pool co-conditioning demand pattern
+```
+
+The reviewed technical bytes remain unchanged. The reviewed manifest and
+report retain their pre-acceptance `pending owner review` projection as exact
+historical handoff evidence; the additive acceptance record and final
+navigation/governance projections carry the authoritative acceptance and gate
+state. This avoids rewriting reviewed scientific or validation artifacts.
+
+Acceptance does not rank the three modes, promote the missing active-history
+surface to graph evidence, start the proposed naturalization probe, perform
+cross-lane synthesis, select N31+, or mutate PyGRC. Those actions require
+their own later authorities.
+
+Reopen DEC-061 if any reviewed technical hash differs from the acceptance
+record, the containing commit omits a bound artifact, the bounded claim is
+strengthened, the expected history/hybrid mixed relation is recast as scalar
+robust support, repeated-source equivalence is given synergy meaning, or the
+acceptance is represented as authority for synthesis or implementation.
+
+## 64. Pending decision queue
+
+No P2-I2 decision remains pending. Cross-lane synthesis and any native
+substitution probe belong to separately opened later work.

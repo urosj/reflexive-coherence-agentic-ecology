@@ -1,0 +1,116 @@
+{
+  "artifact_id": "P2-I2-I11-INTERPRETATION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "base_commit": "b28ef173a70edde0c1f3e034cac9c9c183c6ce95",
+  "entry_authority": "P2-I2-DEC-060",
+  "evidence_effect": "retained_evidence_interpretation_inputs_only",
+  "forbidden_operations": [
+    "pygrc_import_or_model_construction",
+    "adapter_or_packet_construction",
+    "c02_worker_or_response_execution",
+    "new_scientific_input",
+    "accepted_evidence_mutation",
+    "mode_selection_or_ranking",
+    "cross_lane_synthesis_or_n31_selection",
+    "persisted_absolute_path"
+  ],
+  "input_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/lane-hypotheses.md",
+      "sha256": "2ccf3bc062cb2a5eed0cf475d35f1a32a675df91a040133fb4058119cb59a3b9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/outcome-and-stopping-contract.md",
+      "sha256": "b9c0d4b4c17e48d3efae831bae3369a81eb034a193c902f907fb6dbf09096fa2"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/developmental-interpretation-contract.md",
+      "sha256": "92fd37c18777f6b366df242a99dbdc1b556cb57b1005f7415d875f7a35a258f1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "sha256": "3aeb48d1e355138f4fa72833091722976230691ebcc55b50a2e2583b3e5a52fb"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p1_i4_developmental_interpretation_policy.json",
+      "sha256": "7974bb9846fe66f58ed93a55b73798600901a7ee20de69bcbe8b5174e4dd5147"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/schemas/ae01-contract.schema.json",
+      "sha256": "eb5612c5bdbda8f8393f826d9af1b89478c4291d3e2b72279645d0226862d074"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+      "sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+      "sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+      "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-owner-acceptance-and-reg-gate.json",
+      "sha256": "1083b5def31b5006b68758a75d49c31ee05284d964fc9d2862843e3e86e1eb2e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json",
+      "sha256": "d84935e75f75211aee03a8b62afc68dd37725b101ec3aedd117747f970487f3a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+      "sha256": "dd339ffc39645bcabbe81f7d5f6a28bcee5ee0031066bed92d85c0382e9613a5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-validation.json",
+      "sha256": "e57803f14800ac63f2bfb75c4b3a7fa036e55632465aa59c22e562a8510d9f6d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-manifest.json",
+      "sha256": "5e02b64a5464c64a517de70b74c0b0db3b2a3a0c0fcb46d257d3edcb95a192b8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-validation.json",
+      "sha256": "eba9d8fe24914832af318a5c5fd93ce3fd8c950b284b3c008d08aee820a647b4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-i10-owner-acceptance-and-gates.json",
+      "sha256": "d696003aa77dbb59936aac9342e420e6b9d4faffdff8eb18e5ecdb33cef44dbc"
+    }
+  ],
+  "input_identity_count": 18,
+  "interpretation_rules": {
+    "mode_ranking": false,
+    "modes": [
+      "state_carried",
+      "history_carried",
+      "hybrid"
+    ],
+    "one_lane_terminal_record": true,
+    "preserve_per_seed_order_relations": true,
+    "repeated_source_equivalence_is_non_gating": true,
+    "threshold_does_not_select_terminal": true
+  },
+  "iteration_id": "P2-I2-I11",
+  "lane_id": "AE01-L02",
+  "required_outputs": [
+    "contracts/p2-i2/i11-developmental-interpretation.json",
+    "contracts/p2-i2/i11-requirement-extraction.json",
+    "contracts/p2-i2/i11-terminal-classification.json",
+    "contracts/p2-i2/i11-closeout-manifest.json",
+    "contracts/p2-i2/i11-closeout-validation.json",
+    "reports/P2-I2-I11-terminal-closeout.md"
+  ],
+  "runtime_boundary": "retained_file_parsing_schema_validation_report_assembly_digesting_and_independent_byte_reconstruction_only",
+  "status": "frozen_for_uncommitted_closeout_construction"
+}

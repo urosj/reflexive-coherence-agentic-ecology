@@ -1,10 +1,10 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
-**Status:** bounded `P2-I2-I09A` and `P2-I2-I10` are owner-accepted under
-DEC-059/CHG-063. I09A passes 24/24 with zero blockers. I10 generation and
-independent byte reconstruction each pass 24/24 with zero blockers.
-CONTROL-GATE and RECON-GATE are passed, and the complete package is authorized
-for one containing commit. CHG-062 corrected the v2 raw-witness
+**Status:** bounded `P2-I2-I09A` and `P2-I2-I10` are owner-accepted and
+retained at commit `b28ef17` under DEC-059/CHG-063. I09A passes 24/24 with
+zero blockers. I10 generation and independent byte reconstruction each pass
+24/24 with zero blockers. CONTROL-GATE and RECON-GATE are passed. CHG-062
+corrected the v2 raw-witness
 criterion to the admitted native contract after a state-only diagnostic found
 exactly the deterministic normalization surface declared and tested by
 PyGRC; identity, continuation, reset, exact adapter bytes, and refusal of every
@@ -14,11 +14,15 @@ commit `625a411`; C02 contains 234/234 evaluable terminals, no missing,
 nonevaluable, or ambiguous matrix entry, and one cumulative mechanical ledger.
 Historical I09 derived the compact mode-separated control-resolution index
 required by R3 and was accepted at commit `cfa19fe`. I10 later found its
-primary-margin estimator bypass, reopening CONTROL-GATE. Review-ready I09A now
+primary-margin estimator bypass, reopening CONTROL-GATE. Accepted I09A
 recomputes the corrected margins and confirms that all 38 comparison rules and
 15 mode-local controls still pass while the 19 program controls still resolve
-to 56 mode-level passes and one explicit not-applicable. That reconciliation
-has not yet been owner-accepted or committed.
+to 56 mode-level passes and one explicit not-applicable. I11 retained-evidence
+interpretation construction is technically complete under DEC-060/CHG-064.
+The retained-evidence build and independent reconstruction pass 30/30 with
+zero blockers or scientific/runtime operations. Under DEC-061/CHG-065 the
+owner accepts the exact reviewed package, passes CLOSE-GATE, and authorizes one
+containing commit without opening cross-lane synthesis or the next move.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -26,9 +30,8 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I10` is complete and owner-accepted
-under DEC-059. The containing commit is authorized; I11 becomes ready after
-retention but is not started by acceptance or commit.
+**Current activity iteration:** `P2-I2-I11` is complete and owner-accepted
+under DEC-061/CHG-065; the containing commit is authorized.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -40,11 +43,12 @@ retention but is not started by acceptance or commit.
 `P2-I2-EXEC-FREEZE=passed_for_accepted_C02`;
 `P2-I2-EXEC-GATE=passed_234_of_234_evaluable`;
 `P2-I2-CONTROL-GATE=passed_after_explicit_owner_acceptance_of_I09A`;
-`P2-I2-RECON-GATE=passed_after_explicit_owner_acceptance_of_I10`
+`P2-I2-RECON-GATE=passed_after_explicit_owner_acceptance_of_I10`;
+`P2-I2-CLOSE-GATE=passed_after_explicit_owner_acceptance_of_I11`
 
-**Acceptance ceiling:** `AE01-C2`; registered I08 raw responses and I09
-control projections may exist, but no `R01`–`R05` disposition, interpreted
-lane result, cross-lane recurrence, or N31+ effect is assigned
+**Acceptance ceiling:** `AE01-C2`; the bounded L02 result is accepted exactly
+at R05 under scaffold dependence. No cross-lane recurrence, N31+ selection,
+native implementation priority, or next-move execution is assigned.
 
 **Semantic authority:**
 [accepted P2-I2 brief](P2-I2-shared-pool-co-conditioning-brief.md)
@@ -140,8 +144,8 @@ Rules:
 | `P2-I2-EXEC-GATE` | Frozen finite matrix completes or closes validly blocked/incomplete | Passed at 234/234 evaluable | Accepted C02 manifest; zero missing, nonevaluable, or ambiguous terminals; no terminal interpretation |
 | `P2-I2-CONTROL-GATE` | Every mandatory common and L02 control receives a retained fail-closed disposition | Passed after explicit I09A owner acceptance | DEC-059 accepts I09A's exact 24/24 correction: 18 margins through I04R2, 38 comparison, 15 lane-control, and 57 program-mode dispositions, with no disposition change |
 | `P2-I2-RECON-GATE` | Retained evidence, identities, and reports reconstruct independently | Passed after explicit I10 owner acceptance | DEC-059 accepts I10's two 24/24 passes, 234 terminals/470 paths, three-mode restoration/continuation/reset checks, zero blockers, and zero scientific operation |
-| `P2-I2-INTERPRET-GATE` | Boundary rungs, metric relation, support, two-axis reading, debts, and next move resolve | Ready after containing retention commit; not started | I11 must assign every interpretation field and revalidate program-common guards without changing accepted evidence |
-| `P2-I2-CLOSE-GATE` | One terminal classification and compact control-resolution index close the lane | Blocked | Requires all applicable prior gates |
+| `P2-I2-INTERPRET-GATE` | Boundary rungs, metric relation, support, two-axis reading, debts, and next move resolve | Passed after explicit I11 owner acceptance | DEC-061 accepts all five rungs, three mode dispositions, support/T-classification, observation/debt ledgers, two-axis reading, claim ceiling, and next-move falsifier |
+| `P2-I2-CLOSE-GATE` | One terminal classification and compact control-resolution index close the lane | Passed after explicit I11 owner acceptance | DEC-061 accepts the exact 30/30 I11 package, bounded R05/scaffold-dependent terminal result, next-move falsifier, and claim ceiling |
 
 `P2-I2-GATE` in the master checklist is equivalent to
 `P2-I2-CLOSE-GATE` here.
@@ -229,7 +233,7 @@ Rules:
 | `P2-I2-I09` | Mode-specific control resolution and compact index generation | Accepted I08 commit `625a411` | Owner-accepted and retained: 21/21 checks; 38/38 comparison rules; 15/15 L02 mode-controls | `P2-I2-CONTROL-GATE=passed_after_explicit_owner_acceptance`; I10 ready but unstarted |
 | `P2-I2-I09A` | Additive normalized-estimator control-projection correction | DEC-056 finding plus explicit owner `+1` under DEC-057 | Owner-accepted: 24/24, zero blockers, exact reconstruction, no downstream disposition change | DEC-059 passes CONTROL-GATE and authorizes containing commit |
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
-| `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Ready after retention; not started | `P2-I2-INTERPRET-GATE`, then `P2-I2-CLOSE-GATE` |
+| `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3666,28 +3670,93 @@ bundle or a valid earlier blocked/incomplete bundle.
 
 ## 16. `P2-I2-I11` — Interpretation and closeout
 
-**Status:** ready after the DEC-059 containing retention commit; not started.
-Passed CONTROL-GATE/RECON-GATE authorize interpretation construction only
-after retention and do not preassign any interpretation.
+**Status:** complete and owner-accepted under DEC-061/CHG-065 after retained
+commit `b28ef17`. Build and independent reconstruction pass 30/30 with zero
+blockers; CLOSE-GATE is passed and one containing commit is authorized. The
+next move, cross-lane synthesis, and N31+ remain unopened.
 
-- [ ] Assign all five L02 boundary-rung dispositions.
-- [ ] Preserve separate state-carried, history-carried, and hybrid realization,
+```text
+iteration_id = P2-I2-I11
+purpose = classify the complete retained L02 evidence once, preserving all
+          three dependence modes inside one lane terminal record, and close
+          P2-I2 at the lowest honest boundary
+entry_authority = owner direction "now the last one, I11" after accepted and
+                  retained I09A/I10 commit b28ef17
+frozen_inputs_or_input_freeze_action = bind the accepted brief, hypothesis and
+                  interpretation contracts, metric sheet and calibration,
+                  exact registration, complete C02 manifest, corrected I09A
+                  index, I10 reconstruction, and governing schemas before
+                  constructing a classification
+allowed_runtime = deterministic retained-file parsing, schema validation,
+                  report assembly, digesting, and one independent byte
+                  reconstruction through repository .venv
+forbidden = PyGRC/model/adapter/packet construction; C02 worker or response
+            execution; new seed/value/branch/control; accepted-byte mutation;
+            mode selection or scalar collapse; cross-lane synthesis/ranking;
+            N31+ selection; graph mutation; system Python; persisted absolute
+            path
+required_outputs = one input freeze, one developmental interpretation, one
+                   requirement extraction, one terminal classification, one
+                   closeout manifest, one validation, one human report, one
+                   deterministic closeout builder, and synchronized atlas
+                   navigation/governance projections
+evidence_effect = interpretation of accepted retained evidence only; no new
+                  scientific observation
+exit = complete uncommitted package returned for owner review; CLOSE-GATE,
+       acceptance, commit, and any future naturalization work remain closed
+```
+
+- [x] Record DEC-060/CHG-064 and open I11 in the checklist and operational-
+  hypothesis projection before constructing any I11 machine artifact or
+  invoking the closeout builder.
+- [x] Retain one portable, exact I11 input freeze and verify every accepted
+  authority and retained-evidence identity before construction.
+- [x] Build and validate only from retained files, with zero scientific or
+  graph runtime operation and zero accepted-evidence mutation.
+- [x] Revalidate the ten I09A program-common terminal guards against the final
+  machine records and report claims; do not copy an authored pass boolean.
+
+- [x] Assign all five L02 boundary-rung dispositions. R01–R05 are each reached
+  in all three modes; the lane-wide support ceiling remains separate.
+- [x] Preserve separate state-carried, history-carried, and hybrid realization,
   support, control, and developmental dispositions inside the one lane-level
   terminal classification.
-- [ ] Preserve every per-seed metric relation without scalar collapse.
-- [ ] Assign support status, T0–T4 classification value, realization class,
+- [x] Preserve every per-seed and physical-order metric relation without
+  scalar collapse: state is six `1.0`; history and hybrid each retain three
+  `1.0` and three `0.0` margins.
+- [x] Assign support status, T0–T4 classification value, realization class,
   and one terminal state independently.
-- [ ] Record expected, adjacent, unexpected, null, mixed, and counter-
+- [x] Record expected, adjacent, unexpected, null, mixed, and counter-
   directional observations.
-- [ ] Record separate becoming and development readings.
-- [ ] Preserve native, producer, construction, medium, leakage, transfer,
+- [x] Record separate becoming and development readings.
+- [x] Preserve native, producer, construction, medium, leakage, transfer,
   measurement, composition, semantic, and claim debts as applicable.
-- [ ] Separate the observed relation from the LGRC demand implication.
-- [ ] State the strongest valid claim and every blocked relabel.
-- [ ] Record one next move with a falsifier under D-038.
-- [ ] Retain a human-readable report, machine terminal records, updated atlas
+- [x] Separate the observed relation from the LGRC demand implication.
+- [x] State the strongest valid claim and every blocked relabel.
+- [x] Record one next move with a falsifier under D-038.
+- [x] Retain a human-readable report, machine terminal records, updated atlas
   projections, and the compact control-resolution index.
-- [ ] Stop P2-I2 after one complete terminal classification.
+- [x] Stop P2-I2 after one complete terminal classification. No mode ranking,
+  N31+ selection, naturalization start, or scientific rerun occurred.
+
+Technical disposition returned for review:
+
+```text
+terminal classification = supported_bounded_candidate
+highest valid rung = AE01-L02-R05
+lane support status = scaffold_dependent
+classification value = T3_operational_class
+state_carried = native_expression_candidate / robust_aligned
+history_carried = scaffold_dependent / mixed_direction_order_conditioned
+hybrid = scaffold_dependent / mixed_direction_order_conditioned
+strongest valid claim = bounded shared-pool co-conditioning demand pattern
+terminal guard revalidation = 30/30 pass
+schema and independent byte reconstruction = 30/30 pass
+scientific/runtime operations = 0
+owner acceptance = accepted under DEC-061
+P2-I2-CLOSE-GATE = passed_after_explicit_owner_acceptance
+commit authorization = one containing commit authorized
+```
 
 Exit gate `P2-I2-CLOSE-GATE`:
 
@@ -3714,7 +3783,8 @@ valid terminal classification + reconstructed evidence
 | `L02-Q09` | What matched null and resolution freeze `delta`? | I04–I05 | Decided and owner-accepted: governed arithmetic-null output and complete portability closeout are retained; I05J freezes `analysis_arithmetic_delta = 1e-12` into byte-reconstructed lane-local metric artifacts | DEC-030 consumed exactly one attempt with zero retries; DEC-040/041 bind the accepted native metric closeout and dependency correction; no runtime tolerance or candidate authority |
 | `L02-Q10` | How do all cells and signed controls materialize? | I03 concept; I06 exact | Owner-accepted exact registration | I06 binds seven cells, 26 unique subconfigurations, five controls, nine common analysis-control mappings, and 3/3/5 mode-specific mappings; the control index remains outcome-free |
 | `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | Owner-accepted exact registration | I06 registers reserves, accumulation/mixing/depletion, no-window leakage/maintenance/saturation dispositions, token/event/queue bounds, finite coherence intervals, and fail-closed overflow semantics |
-| `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact | Owner-accepted exact registration | DEC-042 retains the access-scope axis and registers `A_ALTERNATE` with a matched native response route; R05 remains scientifically unassigned until execution/control resolution |
+| `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact; I11 interpretation | Accepted retained-evidence disposition | DEC-042 registers the `A_ALTERNATE` access-scope contrast; accepted I11 finds the mode-specific relation retained in all three modes and reaches R05 without inferring broader transfer |
+| `L02-Q13` | What is the lane terminal class, support boundary, and next move? | I11 | Decided and owner-accepted | DEC-061 accepts `supported_bounded_candidate` through R05, lane-wide `scaffold_dependent`, `T3_operational_class`; state is native-expression candidate, history/hybrid share active-history naturalization debt; one future native substitution probe is named but not started |
 
 Questions may move only through cumulative decisions. A later answer must not
 rewrite an earlier retained decision without its reopening condition.
@@ -3820,6 +3890,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-061` | Provenance-corrected I10 replacement matches state-carried composite identity after save/load but not the separate raw snapshot | `I10_state_carried_raw_load_witness_diagnosis` | Retain failed start 003; run one state-carried-only save/load structural diff; inspect exact fields before changing raw witness or loader criterion | Prior layers pass; current/historical I06 witnesses pass; six I06 plus two state-pair models; zero no-packet step, output, candidate, or scientific action | Failed-start receipt, accepted registration/build/load/composite identity, raw-witness separation, read-only graph | Diagnostic only inside I10; further replacement, acceptance, commit, gates, I11 closed |
 | `P2-I2-CHG-062` | CHG-061 state-only diagnostic plus admitted PyGRC source/test contract classify all 20 differences as deterministic load normalization | `I10_in_place_native_restoration_contract_alignment` | Amend only unaccepted I10 v2: exact adapter raw equality; closed-set native raw classification; exact native restoration identity, equal-input continuation, and paired reset; refuse every unexpected raw difference | Complete: generation and independent byte reconstruction each pass 24/24; all three modes each retain exactly 20 classified differences at load/post-step/reset and zero unexpected differences; six native no-packet steps per pass; zero scientific operation | Failed start 003, graph revision `83e3a300`, admitted v1/v2 restoration identities, native restoration-matrix expectation that raw digest is not a fixed point | Complete and review-ready inside I10; no new iteration, PyGRC mutation, witness waiver, acceptance, commit, gate passage, I11, or interpretation |
 | `P2-I2-CHG-063` | Owner states `commit all` after the complete combined I09A/I10 handoff | `I09A_I10_owner_acceptance_CONTROL_RECON_gate_passage_and_retention_commit` | Bind all fifteen reviewed technical artifacts byte-exactly; accept I09A and I10; pass CONTROL-GATE and RECON-GATE; authorize one containing commit | Explicit owner acceptance; I09A and I10 each pass 24/24 twice with zero blockers; no technical byte changes after review | DEC-059, exact acceptance-record hashes, unassigned R01–R05/support/ranking/terminal meaning, I11 common-guard duty | Complete; containing commit authorized; I11 ready only after retention and remains unstarted |
+| `P2-I2-CHG-064` | Owner states `now the last one, I11` after retained I09A/I10 commit `b28ef17` | `I11_retained_evidence_interpretation_and_closeout_construction` | Bind exact accepted authorities and retained evidence; construct one mode-preserving lane interpretation, requirement extraction, terminal record, closeout report/manifest, and independent reconstruction | Checklist/hypothesis declaration precedes every I11 artifact and builder start; zero PyGRC/model/C02/scientific runtime permitted | DEC-060, passed CONTROL/RECON gates, accepted C02/I09A/I10, frozen terminal/developmental vocabularies | Technically complete at 30/30 build/reconstruction with zero blockers; review-ready uncommitted; CLOSE-GATE and owner acceptance pending |
+| `P2-I2-CHG-065` | Owner states `commit changes` after the complete I11 review handoff | `I11_owner_acceptance_CLOSE_GATE_passage_and_retention_commit` | Bind the eight reviewed technical artifacts byte-exactly; accept the terminal/developmental/requirement interpretation; pass CLOSE-GATE; authorize one containing commit and final navigation projections | Explicit owner acceptance and commit authorization; reviewed technical hashes unchanged; additive acceptance record distinguishes reviewed versus final navigation status | DEC-061, 30/30 validation, five byte-identical reconstructed outputs, R01–R05, scaffold-dependent/T3 boundary, exact blocked claims and next-move falsifier | Complete; containing commit authorized; P2-I2 closed; cross-lane synthesis, naturalization probe, and N31+ remain unopened |
 
 ## 19. Evidence ledger
 
@@ -3915,6 +3987,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I09A-NORMALIZED-CORRECTION` | I09A | [Input freeze](../contracts/p2-i2/i09a-control-resolution-input-freeze.json), [failed start](../contracts/p2-i2/i09a-failed-start-001.json), [corrected index](../contracts/p2-i2/i09a-control-resolution-index.json), [24/24 validation](../contracts/p2-i2/i09a-control-resolution-validation.json), [builder](../scripts/p2_i2_i09a_control_resolution.py), and [report](../reports/P2-I2-I09A-normalized-estimator-correction.md) | Corrects 18 derived margins through accepted I04R2; raw evidence unchanged; every dependent disposition recomputed and unchanged | Owner-accepted under DEC-059; CONTROL-GATE passed; containing commit authorized |
 | `P2-I2-I10-RECONSTRUCTION` | I10 | [v1 freeze](../contracts/p2-i2/i10-reconstruction-input-freeze.json), [v2 freeze](../contracts/p2-i2/i10-reconstruction-input-freeze-v2.json), failed starts [001](../contracts/p2-i2/i10-reconstruction-failed-start.json), [002](../contracts/p2-i2/i10-reconstruction-failed-start-002.json), and [003](../contracts/p2-i2/i10-reconstruction-failed-start-003.json), [manifest](../contracts/p2-i2/i10-reconstruction-manifest.json), [24/24 validation](../contracts/p2-i2/i10-reconstruction-validation.json), [builder](../scripts/p2_i2_i10_reconstruct.py), and [report](../reports/P2-I2-I10-reconstruction-and-identity.md) | Independent retained-evidence reconstruction plus candidate-free three-mode restoration identity, raw normalization classification, equal-input no-packet continuation, and paired reset; no new scientific evidence | Owner-accepted under DEC-059; RECON-GATE passed; containing commit authorized; I11 ready after retention |
 | `P2-I2-I09A-I10-OWNER-ACCEPTANCE` | I09A/I10 | [Combined acceptance and gate record](../contracts/p2-i2/i09a-i10-owner-acceptance-and-gates.json), DEC-059, and CHG-063 | Exact technical-byte acceptance, CONTROL/RECON gate passage, and one retention-commit authority only; no interpretation | Owner-accepted by `commit all`; commit head intentionally self-reference-free; I11 remains unstarted |
+| `P2-I2-I11-TERMINAL-CLOSEOUT` | I11 | [Input freeze](../contracts/p2-i2/i11-interpretation-input-freeze.json), [developmental interpretation](../contracts/p2-i2/i11-developmental-interpretation.json), [requirement extraction](../contracts/p2-i2/i11-requirement-extraction.json), [terminal classification](../contracts/p2-i2/i11-terminal-classification.json), [manifest](../contracts/p2-i2/i11-closeout-manifest.json), [30/30 validation](../contracts/p2-i2/i11-closeout-validation.json), [owner acceptance](../contracts/p2-i2/i11-owner-acceptance-and-close-gate.json), [builder](../scripts/p2_i2_i11_closeout.py), and [report](../reports/P2-I2-I11-terminal-closeout.md) | Retained-evidence interpretation only: R01–R05 reached; one mode-preserving terminal record; explicit support/realization/debt/demand boundaries; 30/30 terminal guards; zero new scientific or graph runtime | Owner-accepted under DEC-061/CHG-065; CLOSE-GATE passed; containing commit authorized; cross-lane synthesis and next-move execution remain unopened |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.
