@@ -1196,7 +1196,40 @@ Entry condition:
   `analysis_arithmetic_delta = 1e-12`, and 11/11 reconstruction validation.
   The owner accepts and authorizes commit of the amended I05J/I05JA package,
   including exact process accounting and synchronized projections; CAL-GATE is
-  passed and I06 registration construction is authorized but not begun.
+  passed.
+- [x] I06/I06A exact three-mode registration is owner-accepted at `49c74e1`:
+  both stages pass 14/14, all three composite baselines retain save/load/reset
+  identity, and no candidate/scientific operation occurred.
+- [x] I06B is owner-accepted after the I07 authority audit exposed three missing
+  execution-readiness primitives. Its additive overlay preserves accepted
+  I06/I06A bytes and passes 15/15 candidate-free checks with zero blockers and
+  zero PyGRC/model/packet/scientific activity. REG-GATE is restored and the
+  already-declared I07 freeze resumes from its retained audit; EXEC-FREEZE and
+  candidate execution remain closed. Evidence:
+  [I06B report](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06B-execution-readiness-correction.md).
+- [x] Complete I07 candidate-free construction and return it for owner review.
+  Its exact freeze construction
+  generated 234 primary entries and a 20-file binding. The second frozen
+  `.venv` start failed before test collection because `pytest` was absent. The
+  owner directs an in-place I07 install/accounting correction rather than I07A:
+  install only in `.venv`, preserve the failure, refresh derived bindings, then
+  use one replacement test start and one final validator start. That continuation
+  completes with `pytest 9.1.1`, 7/7 tests, 25/25 validation, and zero blockers.
+  No PyGRC/model/packet/candidate/control/scientific activity occurred and
+  EXEC-FREEZE remains closed pending explicit owner acceptance.
+- [x] Complete the owner-requested I07 cross-entry-isolation audit before
+  acceptance. Row-local dataflow and 1,404 unique relative governed paths pass;
+  unchecked parent symlinks, shared ignored bytecode caches, non-reconstructed
+  retry-ledger eligibility, and absent fail-closed 234-entry completion remain
+  blockers. No Python, PyGRC, candidate, or scientific operation ran.
+- [x] Correct the four CHG-041 isolation blockers as owner-directed I07A.
+  Beneath-root no-symlink I/O, `-B` import-cache refusal, current-entry-only
+  retry reconstruction, and exact-path fail-closed 234-entry completion pass
+  15/15 focused tests and 17/17 final checks. All matrix entries remain
+  unchanged; three candidate-free starts pass with zero retries and zero
+  PyGRC/model/packet/candidate/scientific activity. DEC-047/CHG-043 record owner
+  acceptance and checkpoint-commit authority; the exact inactive EXEC-FREEZE is
+  passed while live activation and I08 remain separately closed.
 
 Required lane work:
 

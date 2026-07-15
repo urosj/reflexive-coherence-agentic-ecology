@@ -1,0 +1,218 @@
+{
+  "artifact_hashes": {
+    "binding_receipt_sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479",
+    "execution_source_sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe",
+    "focused_test_receipt_sha256": "c59f96399569fcb8186bb74953e5f7b7809ab49a0dddf844c99eac0f262e4da6",
+    "focused_tests_sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420",
+    "inactive_exec_freeze_sha256": "8e4533d37f3de3140dca84aaf3683989988d25a79fcc4aff4e88ca686a90ab22",
+    "input_freeze_sha256": "d375f66e6d739ddcaad159bb6f29e82b7e2fcbb28bc74e14d24c7e30c9a2c93b",
+    "policy_sha256": "773b9fc231942f59e7d5b74a49ad8ce722471badcc554afd74d5cfaadb4327d3",
+    "refresh_receipt_sha256": "17fa02851499cfaadb2837e933ca3bd1bd2f6f8e7406da28bc47724b0948d227",
+    "run_matrix_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+    "validator_sha256": "e304b542a2e4d0b350c3605e376caaad306e7dfa878f65b97eaf8379cb54a162"
+  },
+  "artifact_id": "P2-I2-I07A-CANDIDATE-FREE-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blockers": 0,
+  "checks": [
+    {
+      "check_id": "I07A-01",
+      "claim": "the additive input freeze preserves every reviewed I07 identity",
+      "error": null,
+      "evidence": {
+        "reviewed_identity_count": 8
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-02",
+      "claim": "I07A changes only the declared isolation mechanics",
+      "error": null,
+      "evidence": {
+        "allowed_corrections": [
+          "beneath-root no-symlink-component governed artifact creation",
+          "repository and PyGRC import-cache isolation under .venv/bin/python -B",
+          "current-entry-only mechanical attempt-2 eligibility reconstruction",
+          "exact-matrix-path fail-closed complete and evaluable manifest construction",
+          "consequential policy matrix binding freeze test validator and report identities"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-03",
+      "claim": "all 1,404 governed paths are unique relative and beneath the exact C01 root",
+      "error": null,
+      "evidence": {
+        "governed_paths": 1404,
+        "matrix_entries": 234
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-04",
+      "claim": "governed artifact I/O is beneath-root and no-symlink-component",
+      "error": null,
+      "evidence": {
+        "focused_symlink_tests_passed": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-05",
+      "claim": "live execution requires -B and rejects shared project or PyGRC import caches",
+      "error": null,
+      "evidence": {
+        "cache_test_passed": true,
+        "python_flags": [
+          "-B"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-06",
+      "claim": "attempt 2 reconstructs only its own predecessor without a shared ledger",
+      "error": null,
+      "evidence": {
+        "retry_tests_passed": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-07",
+      "claim": "completion enumerates exact matrix paths and fails closed on missing null or duplicate terminals",
+      "error": null,
+      "evidence": {
+        "completion_tests_passed": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-08",
+      "claim": "the exact 234-row matrix reconstructs and preserves every reviewed entry",
+      "error": null,
+      "evidence": {
+        "matrix_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+        "semantic_digest": "8beb624a625e5026b573c1053bd502dc42d9a3f582701a55c09ef88ad88fe5ba"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-09",
+      "claim": "binding and inactive freeze reconstruct exactly after the bounded refresh",
+      "error": null,
+      "evidence": {
+        "binding_sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479",
+        "freeze_sha256": "8e4533d37f3de3140dca84aaf3683989988d25a79fcc4aff4e88ca686a90ab22"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-10",
+      "claim": "I07A source tests and validator parse without top-level PyGRC import",
+      "error": null,
+      "evidence": {
+        "source_sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe",
+        "test_sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-11",
+      "claim": "focused tests pass under the frozen repository venv -B command",
+      "error": null,
+      "evidence": {
+        "tests_failed": 0,
+        "tests_passed": 15
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-12",
+      "claim": "no activation candidate output failure retry or execution manifest exists",
+      "error": null,
+      "evidence": {
+        "activation_present": false,
+        "output_root_present": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-13",
+      "claim": "all correction authorities and generated identities remain portable",
+      "error": null,
+      "evidence": {
+        "absolute_machine_local_paths": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-14",
+      "claim": "the external PyGRC authority remains exact and clean",
+      "error": null,
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-15",
+      "claim": "validation uses the exact repository virtual environment with -B active",
+      "error": null,
+      "evidence": {
+        "python_command": [
+          ".venv/bin/python",
+          "-B"
+        ],
+        "python_version": "3.12.3"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-16",
+      "claim": "the three-start candidate-free budget is exact and contains no retry",
+      "error": null,
+      "evidence": {
+        "final_validator_start_index": 3,
+        "infrastructure_retries": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07A-17",
+      "claim": "I07A remains candidate-free and cannot activate itself",
+      "error": null,
+      "evidence": {
+        "candidate_or_control_operations": 0,
+        "models_constructed": 0,
+        "pygrc_imports": 0,
+        "scientific_windows": 0
+      },
+      "passed": true
+    }
+  ],
+  "checks_passed": 17,
+  "checks_total": 17,
+  "cycle_id": "P2-I2-C01",
+  "gate_boundary": {
+    "I08_authorized": false,
+    "P2-I2-EXEC-FREEZE": "closed_pending_owner_review",
+    "candidate_execution_authorized": false,
+    "commit_authorized": false
+  },
+  "iteration_id": "P2-I2-I07A",
+  "lane_id": "AE01-L02",
+  "process_ledger": {
+    "candidate_or_control_operations": 0,
+    "infrastructure_retries": 0,
+    "models_constructed": 0,
+    "packets_scheduled_or_processed": 0,
+    "pygrc_imports": 0,
+    "python_starts": 3,
+    "response_evaluations": 0,
+    "scientific_windows": 0
+  },
+  "status": "passed_candidate_free_isolation_correction_pending_owner_review",
+  "validated_at": "2026-07-15"
+}

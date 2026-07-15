@@ -1,0 +1,56 @@
+{
+  "artifact_id": "P2-I2-I07A-DERIVED-REFRESH-RECEIPT",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-042",
+    "decision_id": "P2-I2-DEC-046"
+  },
+  "corrected_hashes": {
+    "binding_receipt_sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479",
+    "execution_source_sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe",
+    "focused_tests_sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420",
+    "inactive_exec_freeze_sha256": "8e4533d37f3de3140dca84aaf3683989988d25a79fcc4aff4e88ca686a90ab22",
+    "policy_sha256": "773b9fc231942f59e7d5b74a49ad8ce722471badcc554afd74d5cfaadb4327d3",
+    "run_matrix_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+    "validator_sha256": "e304b542a2e4d0b350c3605e376caaad306e7dfa878f65b97eaf8379cb54a162"
+  },
+  "gate_boundary": {
+    "I08_authorized": false,
+    "P2-I2-EXEC-FREEZE": "closed",
+    "candidate_execution_authorized": false,
+    "commit_authorized": false
+  },
+  "historical_reviewed_hashes": {
+    "binding": "c73276a0de176ce250691fbc03740a9011d938ea46acbf46510bcf5fed9811e6",
+    "freeze": "c703eca51bc6155f44c5a3164c938361285b1f11dda506515fd4bc2fd4c93f1d",
+    "matrix": "57953a5fc93e8e05a95cdb7ca260c72bc28ea9388fd0804b064c1279ce8c48e8",
+    "policy": "9a0649f18e99dff3c3f5bc7f8927ea8b369adde17e5160013a508e045c7d047e",
+    "source": "42b8486908831a928535f9594c7a15cc0d634c0025391d28ce32fc3b75fb6a61",
+    "test": "927f48c72e96bb6a8a49cd683a5c581d26de12a3435aebb02c6d585cd29f6ea2"
+  },
+  "iteration_id": "P2-I2-I07A",
+  "lane_id": "AE01-L02",
+  "matrix_projection": {
+    "conditional_retry_ceiling": 234,
+    "corrected_semantic_digest": "8beb624a625e5026b573c1053bd502dc42d9a3f582701a55c09ef88ad88fe5ba",
+    "entries_byte_semantic_unchanged": true,
+    "old_semantic_digest": "da68dcd10a195c17ad68cb9663b4d3f6d71e067200de75f46d86e5eb3a030334",
+    "primary_entry_count": 234
+  },
+  "process_ledger": {
+    "candidate_or_control_operations": 0,
+    "infrastructure_retries": 0,
+    "models_constructed": 0,
+    "pygrc_imports": 0,
+    "python_command": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07a_refresh.py"
+    ],
+    "scientific_windows": 0,
+    "start_index": 1,
+    "status": "passed"
+  },
+  "refreshed_at": "2026-07-15",
+  "status": "candidate_free_isolation_correction_refresh_complete"
+}

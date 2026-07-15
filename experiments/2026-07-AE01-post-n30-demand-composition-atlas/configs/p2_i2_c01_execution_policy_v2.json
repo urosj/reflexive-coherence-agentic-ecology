@@ -1,0 +1,398 @@
+{
+  "artifact_id": "P2-I2-C01-EXECUTION-POLICY-SUCCESSOR",
+  "artifact_version": "2.1.0",
+  "iteration_id": "P2-I2-I07A",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "status": "inactive_exact_policy_pending_candidate_free_validation_and_owner_acceptance",
+  "evidence_effect": "none_pre_execution_policy_only",
+  "composition": {
+    "base_blocked_policy": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c01_execution_policy.json",
+      "sha256": "328d21ef994885dc13a011b5f0f066321b3ce2d5a56c96b6a5c80e8864d3231c",
+      "role": "immutable_branch_matrix_retry_receipt_and_artifact_draft"
+    },
+    "resumption_input_freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-cycle-resumption-input-freeze.json",
+      "sha256": "c73b4c814a33bfd80c3fbb072928b4f4f9f59de5ba9dbe3bf8c424526a261c98"
+    },
+    "I07A_cross_entry_isolation_input_freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07a-cross-entry-isolation-input-freeze.json",
+      "sha256": "d375f66e6d739ddcaad159bb6f29e82b7e2fcbb28bc74e14d24c7e30c9a2c93b"
+    },
+    "accepted_I06B_overlay": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+      "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"
+    },
+    "accepted_I06B_authority": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-owner-acceptance-and-reg-gate.json",
+      "sha256": "1083b5def31b5006b68758a75d49c31ee05284d964fc9d2862843e3e86e1eb2e"
+    },
+    "effective_policy_rule": "load exact blocked base, replace blocker/status/input-freeze fields only as declared here, add I06B schedule/intervention/bypass authority plus I07A isolation mechanics, and inherit every unlisted scientific field byte-semantically"
+  },
+  "blocker_dispositions": [
+    {
+      "blocker_id": "I07-BLK-01",
+      "status": "closed_by_accepted_I06B",
+      "primitive": "matched slot 3 native P intervention after slot 2 history materialization and before slot 4 neutral contact"
+    },
+    {
+      "blocker_id": "I07-BLK-02",
+      "status": "closed_by_accepted_I06B",
+      "primitive": "exact full-reference P debit 1.5 distinct from diagnostic debit 0.4375"
+    },
+    {
+      "blocker_id": "I07-BLK-03",
+      "status": "closed_by_accepted_I06B",
+      "primitive": "exact public native contributor-mask feedback and receipt-derived controller packet calls"
+    }
+  ],
+  "effective_authorities": {
+    "base_registration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+    "execution_readiness_overlay": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+    "registration_acceptance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-owner-acceptance-and-reg-gate.json",
+    "measurement_preregistration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json",
+    "analysis_policy": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+    "analysis_module": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+    "metric_sheet": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+    "model_builder": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py",
+    "history_adapter": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py"
+  },
+  "execution_schedule": {
+    "source": "accepted_I06B_overlay.matched_event_schedule",
+    "slot_count": 5,
+    "contribution_slots": [
+      0,
+      1
+    ],
+    "history_materialization_slot": 2,
+    "native_P_intervention_slot": 3,
+    "neutral_contact_slot": 4,
+    "response_arrival_event_time_key": 16.875,
+    "unused_slot_disposition": "explicit_no_op_receipt_no_packet",
+    "branch_opportunity_matching": "all branches retain identical absolute slots"
+  },
+  "contribution_operations": {
+    "q1_common": {
+      "q_id": "q1",
+      "source_role": "S1",
+      "target_role": "P",
+      "edge_role": "S1_TO_P",
+      "amount": 0.625,
+      "slot_kind": "q1"
+    },
+    "q2_common": {
+      "q_id": "q2",
+      "source_role": "S2",
+      "target_role": "P",
+      "edge_role": "S2_TO_P",
+      "amount": 0.875,
+      "slot_kind": "q2"
+    },
+    "q1_diverted": {
+      "q_id": "q1",
+      "source_role": "S1",
+      "target_role": "K_DIV_Q1",
+      "edge_role": "S1_TO_K_DIV_Q1",
+      "amount": 0.625,
+      "slot_kind": "q1"
+    },
+    "q2_diverted": {
+      "q_id": "q2",
+      "source_role": "S2",
+      "target_role": "K_DIV_Q2",
+      "edge_role": "S2_TO_K_DIV_Q2",
+      "amount": 0.875,
+      "slot_kind": "q2"
+    },
+    "q1_from_s1_common": {
+      "q_id": "q1",
+      "source_role": "S1",
+      "target_role": "P",
+      "edge_role": "S1_TO_P",
+      "amount": 0.625,
+      "slot_kind": "q1"
+    },
+    "q2_from_s1_common": {
+      "q_id": "q2",
+      "source_role": "S1",
+      "target_role": "P",
+      "edge_role": "S1_TO_P",
+      "amount": 0.875,
+      "slot_kind": "q2"
+    },
+    "q1_from_s2_common": {
+      "q_id": "q1",
+      "source_role": "S2",
+      "target_role": "P",
+      "edge_role": "S2_TO_P",
+      "amount": 0.625,
+      "slot_kind": "q1"
+    },
+    "q2_from_s2_common": {
+      "q_id": "q2",
+      "source_role": "S2",
+      "target_role": "P",
+      "edge_role": "S2_TO_P",
+      "amount": 0.875,
+      "slot_kind": "q2"
+    },
+    "q1_private_one": {
+      "q_id": "q1",
+      "source_role": "S1",
+      "target_role": "P1_PRIVATE",
+      "edge_role": "S1_TO_P1_PRIVATE",
+      "amount": 0.625,
+      "slot_kind": "q1"
+    },
+    "q2_private_two": {
+      "q_id": "q2",
+      "source_role": "S2",
+      "target_role": "P2_PRIVATE",
+      "edge_role": "S2_TO_P2_PRIVATE",
+      "amount": 0.875,
+      "slot_kind": "q2"
+    }
+  },
+  "order_resolution": {
+    "q1_then_q2": [
+      "q1",
+      "q2"
+    ],
+    "q2_then_q1": [
+      "q2",
+      "q1"
+    ],
+    "not_applicable": [
+      "q1",
+      "q2"
+    ],
+    "not_applicable_is_order_invariant": true,
+    "order_id_is_never_inferred_from_outcome": true
+  },
+  "carrier_action_resolution": {
+    "none": {
+      "history_action": "materialize_admitted_history_when_mode_requires_it",
+      "slot_3": "explicit_no_op"
+    },
+    "registered_state_debit": {
+      "history_action": "materialize_admitted_history_when_mode_requires_it",
+      "slot_3": "lookup exact mode/branch debit in accepted I06B overlay"
+    },
+    "state_to_derived_reference": {
+      "history_action": "materialize_admitted_history",
+      "slot_3": "native P_TO_K_P debit 1.5"
+    },
+    "history_to_reference": {
+      "history_action": "replace admitted active history with empty reference before slot 2 materialization",
+      "slot_3": "explicit_no_op"
+    },
+    "state_and_history_to_derived_reference": {
+      "history_action": "replace admitted active history with empty reference before slot 2 materialization",
+      "slot_3": "native P_TO_K_P debit 1.5"
+    }
+  },
+  "private_profile_resolution": {
+    "private_partition_one": "history_private_one_or_hybrid_private_one",
+    "private_partition_two": "history_private_two_or_hybrid_private_two",
+    "all_other_history_or_hybrid_branches": "history_common_or_hybrid_common",
+    "state_carried_adapter": null
+  },
+  "response_path_resolution": {
+    "registered_common_primary": {
+      "front_mask": "base_registration.mode_registry[mode].response_front_mask",
+      "rear_mask": [
+        "B_REF"
+      ],
+      "producer": "A_PRIMARY_TO_B",
+      "candidate_chain": true
+    },
+    "registered_common_alternate": {
+      "front_mask": "base_registration.mode_registry[mode].response_front_mask",
+      "rear_mask": [
+        "B_REF"
+      ],
+      "producer": "A_ALTERNATE_TO_B",
+      "candidate_chain": true
+    },
+    "registered_private_one_primary": {
+      "front_masks_by_mode": {
+        "state_carried": [
+          "P1_PRIVATE"
+        ],
+        "history_carried": [
+          "M_H1"
+        ],
+        "hybrid": [
+          "P1_PRIVATE",
+          "M_H1"
+        ]
+      },
+      "rear_mask": [
+        "B_REF"
+      ],
+      "producer": "A_PRIMARY_TO_B",
+      "candidate_chain": false
+    },
+    "registered_private_two_primary": {
+      "front_masks_by_mode": {
+        "state_carried": [
+          "P2_PRIVATE"
+        ],
+        "history_carried": [
+          "M_H2"
+        ],
+        "hybrid": [
+          "P2_PRIVATE",
+          "M_H2"
+        ]
+      },
+      "rear_mask": [
+        "B_REF"
+      ],
+      "producer": "A_PRIMARY_TO_B",
+      "candidate_chain": false
+    },
+    "diagnostic_direct_contributor_mask": {
+      "authority_pointer": "accepted_I06B_overlay.direct_address_bypass",
+      "candidate_chain": false
+    },
+    "diagnostic_controller_authored_schedule": {
+      "authority_pointer": "accepted_I06B_overlay.controller_assembled_bypass",
+      "candidate_chain": false
+    }
+  },
+  "runtime_receipt_guards": {
+    "contribution_receipt_required_before_adapter_ingest": true,
+    "history_and_materialization_receipts_required_when_applicable": true,
+    "slot_disposition_receipt_required_for_slots_2_and_3": true,
+    "neutral_contact_must_be_latest_committed_contact_before_feedback": true,
+    "controller_predicate_inputs": "exact q1/q2 committed arrival receipts only",
+    "controller_forbidden_reads": [
+      "P",
+      "M_H",
+      "active_history",
+      "native_feedback_surface"
+    ],
+    "response_gain_must_equal_registered_packet_gain_within_runtime_tolerance": true,
+    "scientific_zero_requires_complete_uncontaminated_window": true,
+    "causal_status_is_receipt_derived": true,
+    "authored_causal_success_boolean_allowed": false
+  },
+  "matrix": {
+    "mode_branch_order_counts": {
+      "state_carried": 24,
+      "history_carried": 25,
+      "hybrid": 29
+    },
+    "mode_branch_order_total": 78,
+    "seeds": [
+      101,
+      211,
+      307
+    ],
+    "primary_entry_count": 234,
+    "maximum_conditional_retry_count": 234,
+    "maximum_total_attempt_count": 468,
+    "fresh_process_and_fresh_registered_composite_baseline_per_attempt": true,
+    "worker_reuse": false,
+    "prior_entry_result_reads": false,
+    "all_governed_artifact_paths_unique_and_beneath_C01_root": true
+  },
+  "runtime_invocation_identity": {
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "dont_write_bytecode_required": true,
+    "project_and_PyGRC_import_cache_must_be_absent_before_and_after_entry": true,
+    "execution_source": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py",
+    "subcommand": "run-entry",
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "graph_root_argument_must_be_relative": true,
+    "expected_head_argument": "<OWNER_AUTHORIZED_FULL_HEAD>",
+    "argument_order": [
+      "run-entry",
+      "--expected-head",
+      "{expected_head}",
+      "--graph-root",
+      "../graph-reflexive-coherence",
+      "--mode",
+      "{mode}",
+      "--cell-id",
+      "{cell_id}",
+      "--branch-id",
+      "{branch_id}",
+      "--physical-order-id",
+      "{physical_order_id}",
+      "--seed",
+      "{seed}",
+      "--attempt",
+      "{attempt}",
+      "--output",
+      "{output_path}"
+    ],
+    "head_binding_rule": "the owner-accepted activation record is committed first; the separately authorized full HEAD is supplied by the normalized command and must contain byte-identical committed authority files, avoiding self-reference",
+    "ambient_or_absolute_path_fallback": false
+  },
+  "artifact_contract": {
+    "run_matrix_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json",
+    "binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/exec-freeze.json",
+    "activation_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/owner-accepted-execution-authorization.json",
+    "activation_record_must_be_absent_during_I07A": true,
+    "claim_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/claims/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-{attempt}.json",
+    "claim_semantics": "permanent beneath-root no-symlink-component atomic O_CREAT|O_EXCL claim before any runtime import or model construction; never delete to permit a repeat",
+    "primary_output_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/runs/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-1.json",
+    "retry_output_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/retries/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-2.json",
+    "failure_receipt_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/failures/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-{attempt}.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-manifest.json"
+  },
+  "retry_policy": {
+    "primary_attempt": 1,
+    "conditional_retry_attempt": 2,
+    "ceiling_per_entry": 1,
+    "retry_only_if": "the same entry retains an exact attempt-1 claim and mechanically eligible failure receipt from before model or adapter construction and before any candidate or control operation, with zero output and byte-identical inputs; owner activation conditionally authorizes that exact attempt 2 and the primary claim remains consumed",
+    "post_model_failure_consumes_entry": true,
+    "scientific_or_control_outcome_retryable": false,
+    "infrastructure_retry_eligibility_uses_outcome": false,
+    "retry_must_bind_same_owner_authorized_full_HEAD": true,
+    "primary_claim_is_never_deleted": true,
+    "shared_retry_ledger": false,
+    "other_entry_claim_failure_or_output_reads": false,
+    "eligibility_reconstruction_inputs": [
+      "current entry frozen row",
+      "current entry exact attempt-1 permanent claim",
+      "current entry exact attempt-1 failure receipt and zero-state counters",
+      "common accepted activation and inactive freeze"
+    ]
+  },
+  "cross_entry_isolation": {
+    "governed_output_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01",
+    "path_rule": "normalized relative beneath-root path with every parent opened O_DIRECTORY|O_NOFOLLOW and every leaf opened O_NOFOLLOW",
+    "claim_output_failure_paths_all_unique": true,
+    "shared_adapter_cache_temporary_queue_or_RNG_state": false,
+    "entry_reads_prior_result_directories": false
+  },
+  "completion_policy": {
+    "builder_subcommand": "build-execution-manifest",
+    "matrix_enumeration": "exact 234 frozen rows and their exact artifact paths; no result-directory scan",
+    "required_terminal_outputs_per_row": 1,
+    "operational_null_is_evaluable": false,
+    "missing_ambiguous_malformed_or_nonevaluable_effect": "fail_closed_without_execution_manifest",
+    "execution_manifest_created_only_after_all_234_evaluable": true
+  },
+  "activation_and_gate_boundary": {
+    "authorization_gate": "P2-I2-EXEC-FREEZE",
+    "authorization_scope": "exact_cycle_mode_cell_branch_order_seed_attempt_resource_only",
+    "inactive_exec_freeze": true,
+    "future_owner_activation_record_required": true,
+    "activation_must_be_committed_and_the_normalized_command_must_bind_full_HEAD_clean_authority_tree_policy_source_matrix_binding_exec_freeze_and_passed_I07A_validation": true,
+    "candidate_execution_authorized": false,
+    "I08_authorized": false,
+    "commit_authorized": false,
+    "fallback_permitted": false,
+    "mode_selection_or_ranking": false,
+    "scientific_result": false
+  }
+}

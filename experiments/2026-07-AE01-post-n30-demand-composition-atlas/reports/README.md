@@ -97,6 +97,19 @@ Phase 2 gate reviews:
   validation, zero group violations, immutable raw execution lineage, and zero
   governed or scientific execution. It is owner-accepted for commit; later
   groups remain closed until retention, and CAL-GATE remains closed.
+- [P2-I2 I07 inactive EXEC-FREEZE review](P2-I2-I07-EXEC-FREEZE-review.md)
+  retains the exact 234-entry three-mode cycle, 20-file binding, 7/7 focused
+  tests, 25/25 candidate-free validation, the DEC-045 in-place `.venv`
+  dependency correction, and the CHG-041 cross-entry-isolation audit. Four
+  enforcement blockers keep it inactive, uncommitted, and review-blocked; no
+  candidate or scientific operation occurred.
+- [P2-I2 I07A cross-entry-isolation correction](P2-I2-I07A-cross-entry-isolation-correction.md)
+  closes those four blockers through beneath-root no-symlink artifact I/O,
+  `-B` import-cache refusal, current-entry-only retry reconstruction, and
+  exact-path fail-closed completion. The 234 entry objects are unchanged;
+  focused tests pass 15/15 and final validation passes 17/17 with zero candidate
+  or scientific activity. DEC-047/CHG-043 accept the exact inactive freeze and
+  authorize its checkpoint commit; live activation and I08 remain closed.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

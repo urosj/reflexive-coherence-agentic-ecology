@@ -33,21 +33,25 @@ constructed machine-root surfaces missed by the literal scanner; the expanded
 guard then finds one constructed shebang in a third validator; I05I binds all
 nine sources and is 10/10 review-ready with the complete P2-I2 audit scope
 at zero literal and constructed-root findings; the owner accepts and commits
-I05I at `b5d0acb` and opens only the bounded I05J metric closeout
+I05I at `b5d0acb` and opens only the bounded I05J metric closeout. I05J is
+accepted at `3be9073`; I06/I06A are accepted at `49c74e1`; and I06B now returns
+review-ready with its exact additive three-primitive overlay, 15/15
+candidate-free checks, zero blockers, immutable accepted bytes, and zero
+PyGRC/model/packet/scientific activity. The owner now explicitly accepts I06B,
+restoring REG-GATE and authorizing resumption of the already-declared I07 freeze
+construction. I07 remains candidate-free and EXEC-FREEZE remains closed pending
+its own review.
 
 **Iteration:** `P2-I2`
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I06A`; the bounded owner-review closeout
-is complete and owner-accepted. Its separately authorized replacement no-model validation
-passes 14/14: AdapterV2 conformance authority and exact two-stage validator/
-manifest provenance are machine-closed, and tolerance domain, diversion/H_P
-admission, positive mode isolation, and per-entry retry semantics all pass.
-Across I06A there were zero PyGRC imports/models, baseline reruns, candidate/
-control operations, or scientific effects. The owner authorizes amendment into
-the I06 checkpoint, passes REG-GATE, and opens I07 freeze construction only;
-candidate-cycle execution remains unauthorized.
+**Current activity iteration:** `P2-I2-I07A`; owner-accepted and commit-authorized. The
+CHG-041 isolation audit remains retained history. I07A closes all four findings,
+preserves all 234 entry objects, passes 15/15 focused tests and 17/17 final
+candidate-free checks, and uses exactly three successful `.venv/bin/python -B`
+starts with zero retries. The exact inactive EXEC-FREEZE is passed and awaits
+its retention commit; live activation and I08 remain separately closed.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -55,7 +59,8 @@ candidate-cycle execution remains unauthorized.
 `P2-I2-DISCRIMINATOR-GATE=passed`;
 `P2-I2-CAL-PRE-GATE=passed_after_explicit_owner_acceptance_of_I04R2`;
 `P2-I2-CAL-GATE=passed_after_explicit_owner_acceptance_of_I05J_closeout`;
-`P2-I2-REG-GATE=passed_after_explicit_owner_acceptance_of_I06_I06A`
+`P2-I2-REG-GATE=passed_after_explicit_owner_acceptance_of_I06B`;
+`P2-I2-EXEC-FREEZE=passed_for_exact_inactive_I07A_cycle`
 
 **Acceptance ceiling:** `AE01-C2`; no P2-I2 result, cross-lane recurrence, or
 N31+ effect assigned
@@ -149,8 +154,8 @@ Rules:
 | `P2-I2-DISCRIMINATOR-GATE` | Realization, dependence mode, factorization, access witness, and subordinate operational hypotheses frozen | Passed after owner acceptance of compact I03F | DEC-020; opens I04 construction only; all three modes remain retained and unranked |
 | `P2-I2-CAL-PRE-GATE` | Candidate-blind null, response, comparator, signed controls, and analysis identity preregistered | Passed after explicit owner acceptance of I04R2 | DEC-026 accepts I04R2 as sole progression authority after 16/16 checks and 7/7 pure tests; opens only separately frozen single-invocation I05 arithmetic calibration; no null/runtime/candidate execution occurred at passage |
 | `P2-I2-CAL-GATE` | Reconstructable matched-null calibration freezes `delta` without candidate input | Passed after explicit owner acceptance of I05J/I05JA | Complete I05 closeout; delta `1e-12`; 11/11 validation; exact process/package accounting; no scientific effect; opens I06 construction only |
-| `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Passed by explicit owner acceptance | I06 and I06A both pass 14/14; AdapterV2 and exact two-stage provenance blockers are resolved; all critical confirmations pass; owner-authorized checkpoint amendment retains the accepted package |
-| `P2-I2-EXEC-FREEZE` | One exact candidate cycle authorized before its first operation | Blocked | Requires `REG-GATE` and a cycle-specific freeze |
+| `P2-I2-REG-GATE` | Exact realization, cells, controls, identities, artifacts, and reconstruction bundle accepted | Passed after explicit I06B owner acceptance | Accepted I06/I06A remain immutable; accepted I06B closes all three I07-found execution-readiness gaps with 15/15 candidate-free checks and zero blockers; opens only resumed I07 freeze construction |
+| `P2-I2-EXEC-FREEZE` | One exact candidate cycle authorized before its first operation | I07 resumed; closed | Requires complete I07 cycle freeze, candidate-free validation, and explicit owner review |
 | `P2-I2-EXEC-GATE` | Frozen finite matrix completes or closes validly blocked/incomplete | Blocked | Requires `EXEC-FREEZE` |
 | `P2-I2-CONTROL-GATE` | Every mandatory common and L02 control receives a retained fail-closed disposition | Blocked | Requires the relevant registered executions |
 | `P2-I2-RECON-GATE` | Retained evidence, identities, and reports reconstruct independently | Blocked | Requires execution/control artifacts or a valid earlier blocked bundle |
@@ -235,8 +240,10 @@ Rules:
 | `P2-I2-I05JA` | Failed-closed native dependency correction | First I05J native start reports missing pinned `jsonschema` before output | Complete and accepted with I05J: failed start retained, exact `jsonschema==4.26.0` installed/verified in `.venv`, and one unchanged native retry succeeded | Retained inside accepted I05 package; no independent scientific effect |
 | `P2-I2-I06` | Exact three-mode implementation registration and evidence-bundle construction | Passed CAL-GATE and explicit owner direction | Owner-accepted: exact three-mode bundle; 7 cells/26 subconfigurations; 5 lane controls; 14/14 validation; three save/load/reset-stable baselines; nine refusal checks; zero candidate/scientific operations | Accepted with I06A under DEC-042; REG-GATE passed; I07 freeze construction authorized |
 | `P2-I2-I06A` | Owner-review conformance/provenance closeout | Owner-supplied I06 review identifies two potential blockers and four critical confirmations | Complete and owner-accepted: separately authorized replacement passes 14/14; both blockers resolved; four confirmation groups pass; zero PyGRC/baseline/candidate/scientific work | Checkpoint amendment authorized; REG-GATE passed; I07 freeze construction authorized; candidate execution unauthorized |
-| `P2-I2-I07` | Mode-indexed candidate-cycle execution freeze | Accepted I06/I06A and passed REG-GATE | Authorized for freeze construction; candidate execution unauthorized | `P2-I2-EXEC-FREEZE` |
-| `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | I07 | Blocked | `P2-I2-EXEC-GATE` |
+| `P2-I2-I06B` | Additive execution-readiness registration correction | I07 authority audit plus explicit owner `+1` on DEC-043 recommendation | Complete and owner-accepted: exact overlay freezes all three missing primitives; 15/15 checks, zero blockers, immutable accepted bytes, zero PyGRC/model/packet/scientific work | REG-GATE restored under DEC-044/CHG-038; resumed I07 only; commit and candidate execution unauthorized |
+| `P2-I2-I07` | Mode-indexed candidate-cycle execution freeze | Owner-accepted I06B and restored REG-GATE | Retained reviewed history: exact 234-entry matrix; 7/7 focused tests; 25/25 final validation; CHG-041 later found four cross-entry-isolation blockers | Superseded for progression by I07A; no candidate/scientific effect |
+| `P2-I2-I07A` | Cross-entry-isolation correction | DEC-046/CHG-042 owner direction after CHG-041 audit | Owner-accepted: all four blockers closed; 234 entries unchanged; 21 bound files; 15/15 focused tests; 17/17 final validation; zero PyGRC/model/packet/candidate/scientific activity | DEC-047 passes inactive `P2-I2-EXEC-FREEZE` and authorizes checkpoint commit; live activation, I08, and candidate execution remain closed |
+| `P2-I2-I08` | Finite live three-mode candidate/control matrix execution | Owner-accepted I07A EXEC-FREEZE plus separate activation | Blocked | `P2-I2-EXEC-GATE` |
 | `P2-I2-I09` | Mode-specific control resolution and compact index generation | I08 or valid earlier stop | Blocked | `P2-I2-CONTROL-GATE` |
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | I08–I09 or valid earlier stop | Blocked | `P2-I2-RECON-GATE` |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | I09–I10 | Blocked | `P2-I2-INTERPRET-GATE`, then `P2-I2-CLOSE-GATE` |
@@ -2969,28 +2976,235 @@ gate_effect = accepted; amend checkpoint; REG-GATE passed; I07 freeze authorized
   authorization to amend it into the checkpoint. Pass REG-GATE and authorize
   only I07 candidate-cycle freeze construction; do not execute a candidate.
 
+### 11.2 `P2-I2-I06B` — Execution-readiness registration correction
+
+**Status:** complete and explicitly owner-accepted under DEC-044/CHG-038. This
+additive three-primitives-only correction passes 15/15 candidate-free checks
+with zero blockers. It does not rewrite accepted I06/I06A artifacts or execute
+a model. Acceptance restores REG-GATE and resumes I07 freeze construction only;
+commit and candidate execution remain unauthorized.
+
+```text
+activity_id = P2-I2-I06B-EXECUTION-READINESS-REGISTRATION-CORRECTION
+entry = I07 authority audit + owner +1 on DEC-043 recommendation
+purpose = freeze the three exact primitives I07 cannot lawfully invent
+frozen_inputs = accepted I06/I06A identities; blocked I07 audit; DEC-043;
+                exact source-current public call signatures read-only
+mutation_boundary = additive I06B freeze/overlay/manifest/validator/validation/
+                    report plus governance projections only
+allowed = hash/schema/arithmetic/signature/matrix/refusal validation under
+          repository .venv; no-model source inspection
+forbidden = modifying accepted I06/I06A bytes; PyGRC import/model; packet
+            scheduling or stepping; contribution/history admission; response,
+            cell/control/comparator/scientific operation; tuning or mode ranking
+required_outputs = exact input freeze; additive execution-readiness overlay;
+                   progression manifest; candidate-free validation; report
+evidence_effect = implementation-registration readiness only; no OP/R01-R05
+exit = uncommitted package returned for explicit owner review; REG-GATE remains
+       reopened and I07/EXEC-FREEZE/I08 remain closed
+```
+
+- [x] Record DEC-043/CHG-037 and the owner's explicit `+1` construction
+  authorization before I06B artifact construction.
+- [x] Freeze the correction as exactly three missing primitives and prohibit a
+  fourth primitive or any accepted-I06/I06A byte change.
+- [x] Bind exact accepted I06/I06A, blocked-I07, source/runtime, `.venv`, and
+  governance input identities in an additive input freeze.
+- [x] Freeze one order-invariant reserved intervention slot after history
+  materialization and before neutral contact; preserve contribution timing and
+  the neutral-arrival-to-response-arrival lag; require explicit no-op use when
+  a branch does not intervene.
+- [x] Freeze the full reference-P native debit as exact registered `q1 + q2`,
+  distinct from the accepted diagnostic debit, with exact applicable branches
+  and native P-to-K_P route.
+- [x] Freeze exact direct-address and controller-assembled public-call
+  primitives while retaining both as diagnostic causal exclusions outside the
+  candidate chain.
+- [x] Bind overlay precedence narrowly: it supersedes only I06 execution timing
+  and the three absent primitives for future I07/I08; accepted historical
+  registration evidence and all other I06 semantics remain unchanged.
+- [x] Candidate-free validate hashes, exact arithmetic, matched schedule,
+  branch applicability, public-call signatures, bounds, overlay completeness,
+  absence of absolute paths, immutable accepted inputs, and closed gates under
+  `.venv` without importing PyGRC or constructing a model: 15/15 checks pass,
+  all nine accepted and two blocked-I07 inputs reconstruct, and zero blockers
+  remain.
+- [x] Retain exact process counts proving zero PyGRC imports/models, packet
+  operations, candidate/control/response/comparator/scientific operations, and
+  return the complete package uncommitted for explicit owner review in the
+  [I06B report](../reports/P2-I2-I06B-execution-readiness-correction.md).
+- [x] Record the owner's explicit I06B acceptance, restore REG-GATE, and
+  authorize only resumption of the already-declared candidate-free I07 freeze.
+- [x] Retain a [machine acceptance record](../contracts/p2-i2/i06b-owner-acceptance-and-reg-gate.json)
+  binding the exact accepted I06B
+  package hashes and the still-closed commit/EXEC-FREEZE/I08 boundaries.
+
+I06B did not pass REG-GATE by its own output. Explicit owner acceptance restores
+the gate; commit authority remains separate and absent.
+
 ## 12. `P2-I2-I07` — Candidate-cycle execution freeze
 
-**Status:** authorized for checklist/hypothesis-first freeze construction;
-candidate-cycle execution remains unauthorized.
+**Status:** review-ready, candidate-free, inactive, and uncommitted. The exact
+234-entry matrix, binding receipt, and inactive freeze reconstruct; focused
+tests pass 7/7 and final validation passes 25/25. The missing-`pytest` start is
+retained, and the owner-directed in-place I07 continuation is fully accounted
+under DEC-045/CHG-040. EXEC-FREEZE and candidate execution remain unauthorized
+pending explicit owner acceptance.
 
-- [ ] Assign a unique candidate cycle ID.
-- [ ] Bind the exact tracked source/runtime, registration, calibration, policy,
+```text
+activity_id = P2-I2-I07-CANDIDATE-CYCLE-EXECUTION-FREEZE
+entry = accepted I06/I06A at 49c74e1 + passed P2-I2-REG-GATE
+cycle_scope = one exact P2-I2 mode-indexed candidate/control cycle
+allowed = read-only accepted-authority audit; exact cycle/policy/binding freeze;
+          candidate-free static/schema/hash/matrix/refusal validation; compact
+          review report and authority projections
+forbidden = PyGRC model construction for a candidate/control cell; contribution
+            or history admission; response evaluation; comparator/scientific
+            window; result, ranking, tuning, or candidate-derived correction
+retry_boundary = one preregistered infrastructure retry per matrix entry only;
+                 scientific/control outcomes are never retryable
+authority_boundary = I07 may prepare EXEC-FREEZE for owner review; it may not
+                     pass the gate or authorize I08 by its own output
+exit = complete exact-cycle package returned uncommitted for owner review
+```
+
+- [x] Assign unique candidate cycle ID `P2-I2-C01`.
+- [x] Bind the exact tracked source/runtime, registration, calibration, policy,
   code, and manifest identities.
-- [ ] Freeze the finite mode × cell × subconfiguration × seed × attempt ×
+- [x] Freeze the finite mode × cell × subconfiguration × seed × attempt ×
   resource matrix, retaining valid mode-specific missing-prerequisite entries.
-- [ ] Freeze infrastructure-retry eligibility separately from scientific
+- [x] Freeze infrastructure-retry eligibility separately from scientific
   change.
-- [ ] Freeze stop conditions, expected receipts, graph read-only guard, and
+- [x] Freeze stop conditions, expected receipts, graph read-only guard, and
   candidate-effect boundary.
-- [ ] Verify that no candidate operation preceded this freeze.
-- [ ] Retain a cycle-scoped authorization review.
+- [x] Verify that no candidate operation preceded this freeze.
+- [x] Retain a cycle-scoped authorization review. Evidence:
+  [I07 inactive EXEC-FREEZE review](../reports/P2-I2-I07-EXEC-FREEZE-review.md).
+- [x] Record the owner direction and I07 candidate-free scope before executable-
+  policy inspection. The initial orientation read only located existing I07 and
+  P2-I1 EXEC-FREEZE surfaces; it constructed no model and selected no value.
+- [x] Record DEC-044/CHG-038 owner acceptance of I06B, restore REG-GATE, and
+  resume this existing I07 iteration without granting commit or execution.
+- [x] Preserve both blocked I07 draft files byte-exact because accepted I06B
+  binds their audit hashes; construct versioned successor freeze/policy files
+  rather than rewriting that retained history.
+- [x] Freeze 16 accepted authority inputs plus the registered three-mode/cell/
+  seed/resource/retry projection.
+- [x] Audit whether every registered branch can be instantiated without new
+  semantics. Stop before execution-source construction on three blockers:
+  (1) no registered event/index slot for a hybrid native P debit after M_H
+  materialization and before neutral contact; (2) the registered `0.4375` debit
+  does not implement full reference P, which requires derived `q1+q2 = 1.5`;
+  (3) direct/controller bypasses lack exact execution-call primitives.
+- [x] Confirm PyGRC supplies no public state-only intervention that removes the
+  scheduling gap. The admitted native mechanism remains packet debit, so the
+  gap belongs to exact registration rather than runtime availability.
+- [x] Obtain owner direction on a bounded upstream registration correction.
+  I06B passed 15/15 with zero blockers and is explicitly owner-accepted;
+  REG-GATE is restored and the retained draft may now be corrected, completed,
+  and candidate-free validated under I07.
+- [x] Execute authorized construction start 1 under `.venv`; generate exactly
+  234 primary entries, 234 conditional-retry ceilings, a 20-file binding
+  receipt, and an inactive freeze with candidate execution false.
+- [x] Retain authorized validation start 2 as failed before collection:
+  `.venv/bin/python -m pytest` reports `No module named pytest`. No test module,
+  PyGRC, model builder, packet, candidate/control operation, response, or
+  scientific window ran. Evidence: [failed-start receipt](../contracts/p2-i2/c01/i07-focused-tests-failed-start.json).
+- [x] Obtain explicit owner direction before installing the missing dependency
+  or authorizing any replacement test/validator start. The owner states that
+  installing `pytest` does not require I07A and directs installation plus an
+  in-place I07 update. DEC-045/CHG-040 preserve the failed start and authorize
+  only the bounded candidate-free continuation.
+- [x] Install `pytest` into `.venv` and retain its exact resolved version.
+  Evidence: [environment receipt](../contracts/p2-i2/c01/i07-pytest-environment-receipt.json).
+- [x] Refresh only validator process accounting and the derived binding/freeze
+  hashes; preserve policy, execution semantics, matrix, tests, and all accepted
+  upstream authorities. Evidence: [refresh receipt](../contracts/p2-i2/c01/i07-binding-refresh-receipt.json).
+- [x] Run the one authorized replacement focused-test start and one final
+  validator start. The unchanged suite passes 7/7 and the validator passes
+  25/25 with zero blockers. Evidence: [final validation](../contracts/p2-i2/c01/i07-candidate-free-validation.json).
+- [x] Record the owner-requested post-validation cross-entry-isolation audit
+  before inspection. Scope: earlier-output dataflow, fresh process/baseline,
+  unique and non-shadowing paths, mutable cache/temp/queue/RNG isolation,
+  per-entry claim authorization, incomplete-entry independence, retry derivation,
+  and fail-closed complete/evaluable matrix closure. This is read-only I07
+  review work; it authorizes no runtime correction or candidate execution.
+- [x] Complete the cross-entry-isolation audit and disposition every requested
+  invariant before I07 acceptance. The row-local read set, fresh-process guard,
+  fresh registered construction, branch/parameter independence, textual path
+  uniqueness, entry-local primary preflight, incomplete-earlier-entry
+  independence, and adapter/temporary/queue/RNG boundaries pass. Four
+  enforcement blockers remain: output-root ancestor symlinks are not rejected;
+  ignored shared Python bytecode caches may cross entries; retry authorization
+  trusts a committed ledger boolean without reconstructing eligibility from the
+  same entry's retained primary failure receipt; and no implemented manifest
+  closeout fails closed over all 234 missing or nonevaluable entries. Evidence:
+  [I07 inactive EXEC-FREEZE review](../reports/P2-I2-I07-EXEC-FREEZE-review.md).
+- [x] Obtain owner direction before correcting the four cross-entry-isolation
+  blockers. No frozen source, policy, matrix, binding, validation, or activation
+  authority may change under the audit alone; EXEC-FREEZE and I08 remain closed.
+  The owner assigns the bounded correction to I07A under DEC-046/CHG-042.
 
 Exit gate `P2-I2-EXEC-FREEZE` authorizes only the named exact cycle.
 
+## 12A. `P2-I2-I07A` — Cross-entry-isolation correction
+
+**Status:** owner-accepted; candidate-free; commit-authorized; inactive.
+
+**Authority:** the owner explicitly directs that CHG-041's four substantive
+post-review blockers be corrected as `P2-I2-I07A`. That construction authority
+opened only the bounded execution-safety correction below and did not accept
+I07A or open I08. Acceptance and inactive-gate passage are supplied separately
+by DEC-047/CHG-043; no candidate/control operation is authorized.
+
+- [x] Name I07A and freeze its checklist/hypothesis scope before changing any
+  frozen runner, policy, test, validator, matrix, binding, or freeze byte.
+- [x] Retain an I07A input freeze binding the reviewed I07 policy, source,
+  tests, matrix, binding, inactive freeze, validation, and CHG-041 audit report.
+  Evidence: [I07A input freeze](../contracts/p2-i2/c01/i07a-cross-entry-isolation-input-freeze.json).
+- [x] Replace leaf-only output checks with beneath-root, no-symlink-component
+  traversal and exclusive creation for every claim, output, and failure receipt;
+  require every current-entry artifact leaf to have its frozen unique role.
+- [x] Bind live execution to `.venv/bin/python -B`; reject any project/PyGRC
+  import cache before local runtime import and after execution, so ignored
+  `__pycache__`, `.pyc`, or `.pyo` state cannot cross entries.
+- [x] Remove shared retry-ledger dataflow. A conditional attempt 2 may read only
+  its own frozen row, exact retained attempt-1 claim/failure receipt, and common
+  accepted authorities; it must mechanically reconstruct pre-construction
+  eligibility and may not inspect another entry's receipt or outcome.
+- [x] Implement an exact-path cycle-completion builder that enumerates the 234
+  frozen rows rather than directories, accepts exactly one evaluable terminal
+  output per row, and creates no execution manifest if any row is missing,
+  ambiguous, malformed, or operationally null.
+- [x] Add focused candidate-free positive and negative tests for ancestor
+  symlinks, physical containment, occupied receipt leaves, cache refusal,
+  row-local retry reconstruction, cross-entry receipt refusal, and missing/null/
+  duplicate completion states. Evidence:
+  [focused-test receipt](../contracts/p2-i2/c01/i07a-focused-tests-receipt.json),
+  15/15 passed.
+- [x] Use at most three candidate-free Python starts, all through `.venv` with
+  `-B`: one derived I07A refresh, one focused pytest start, and one final I07A
+  validator start. Any failed start stops for owner direction; no replacement is
+  inferred. Exactly three passed starts and zero retries are retained.
+- [x] Preserve the exact 234-row scientific matrix, I04R2/I05J/I06–I06B
+  semantics, registered values, mode retention, resource ceilings, and zero-
+  candidate boundary. Only isolation mechanics and consequential hashes change;
+  all 234 entry objects reconstruct byte-semantically unchanged.
+- [x] Return the complete uncommitted I07A package for owner review with
+  EXEC-FREEZE and I08 still closed. Evidence:
+  [I07A validation](../contracts/p2-i2/c01/i07a-candidate-free-validation.json),
+  17/17 passed with zero blockers, and
+  [I07A review](../reports/P2-I2-I07A-cross-entry-isolation-correction.md).
+- [x] Record explicit owner acceptance and commit authorization under
+  DEC-047/CHG-043. The exact inactive EXEC-FREEZE passes; live activation,
+  I08, cache cleanup, candidate execution, and scientific evidence remain
+  separately closed. Evidence:
+  [owner acceptance](../contracts/p2-i2/c01/i07a-owner-acceptance-and-exec-freeze.json).
+
 ## 13. `P2-I2-I08` — Finite matrix execution
 
-**Status:** blocked on a cycle-scoped `P2-I2-EXEC-FREEZE`.
+**Status:** blocked on a separately owner-authorized committed activation record;
+the inactive cycle-scoped `P2-I2-EXEC-FREEZE` is passed.
 
 - [ ] Execute every registered matrix entry—mode × cell × subconfiguration ×
   seed × allowed attempt—exactly once, except for its one preregistered
@@ -3171,6 +3385,14 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-033` | Owner accepts/commits I05I and directs return to 10.4/10.4A, then directs closure findings to amend I05J in place | `I05_analysis_arithmetic_resolution_metric_sheet_and_closure_amendment` | Retain I05I at `b5d0acb`; reconcile completed I05C from deferred metric obligations; freeze exact inputs; derive one estimator-preserving margin per seed from both orders; retain one successful native freeze generation under the I05JA correction; validate generated metric artifacts; add process/package closeout and synchronize current projections without rerun | Owner-accepted and commit-authorized: 11/11 generated checks; native outputs reconstruct byte-exactly; delta `1e-12`; complete non-self package inventory and exact process reconstruction retained; zero null rerun, PyGRC, candidate/control, runtime, or scientific operation | Accepted I04R2 estimator, governed I05 output/receipts, I05E lineage, I05I validation, unchanged base AE01-L02 metric sheet, native tooling/schema, immutable I05J/I05JA freezes/outputs/validation | Complete; CAL-GATE passed; I06 construction authorized but not begun |
 | `P2-I2-CHG-034` | Original I05J native start fails before output because `.venv` lacks the pinned schema dependency | `I05JA_failed_closed_native_dependency_correction` | Preserve original freeze and failure; install only `jsonschema==4.26.0` into `.venv`; bind one unchanged native retry; extend validation accounting without changing metric semantics | Complete and accepted with I05J: two dependency-install process starts are honestly retained as one sandbox-blocked/no-change start plus one successful install; two native starts comprise one pre-output failure and one successful generation; the second of two validator starts passes 11/11; zero null/PyGRC/candidate/runtime/scientific activity | Original I05J freeze, common tooling dependency profile, exact failure/output absence, unchanged command/input/output identities, additive I05J process closeout | Retained inside accepted I05 package; no independent gate or scientific effect |
 | `P2-I2-CHG-035` | Owner accepts the complete I06/I06A package and authorizes amendment into the last checkpoint commit | `I06_I06A_owner_acceptance_and_progression_authority` | Retain the successful 14/14 I06A closeout with the already committed I06 checkpoint; mark DEC-042 accepted; pass REG-GATE; open only I07 checklist/hypothesis-first freeze construction | Accepted package contains one I06 baseline validation and the honestly retained I06A failed/replacement starts; zero candidate/control/scientific operations; no rerun during acceptance/amendment | Exact I06/I06A artifacts and identities, checkpoint `7761d3e`, unchanged three unranked modes, candidate-execution prohibition | Complete; commit amendment authorized; I07 freeze construction authorized, candidate-cycle execution unauthorized |
+| `P2-I2-CHG-036` | Owner directs I07 as the last preparation before actual runs | `exact_mode_indexed_candidate_cycle_freeze_construction` | Activate checklist/hypothesis-first I07; audit accepted I03–I06 and prior P2-I1 mechanics; construct one exact policy, binding receipt, cycle freeze, candidate-free validation, and review | Stopped before execution source: exact 234-entry projection identified, but three registration gaps prohibit a faithful runner; zero PyGRC imports/models and zero candidate/control/response/scientific operations | Accepted DEC-042/REG-GATE, all three unranked modes, exact I04R2/I05J/I06 identities, per-entry retry boundary, graph read-only rule, `.venv`, portability | Paused; owner authorized I06B under CHG-037 and its candidate is review-ready; EXEC-FREEZE closed |
+| `P2-I2-CHG-037` | Owner `+1` accepts DEC-043's recommendation for bounded I06B | `additive_execution_readiness_registration_correction` | Pause I07; preserve accepted I06/I06A bytes; freeze only the missing native intervention schedule, full reference-P debit identity, and exact direct/controller bypass primitives; candidate-free validate under `.venv` | Review-ready at 15/15 with zero blockers; one validation start, zero retries, no PyGRC import/model, packet, candidate/control/response/comparator/scientific operation; REG-GATE reopened and EXEC-FREEZE closed | Accepted I06/I06A identities, blocked I07 audit, three-gap ceiling, native-first rule, graph read-only boundary, portability | Complete construction; uncommitted package awaits explicit owner acceptance |
+| `P2-I2-CHG-038` | Owner states `sure, i accept` after confirming I06B permits return to I07 | `I06B_owner_acceptance_REG_GATE_restoration_and_I07_resumption` | Bind the exact six-file I06B package in a machine acceptance record; restore REG-GATE; resume existing I07 from its retained audit and 234-entry projection | I06B accepted with 15/15 and zero blockers; no rerun or candidate/scientific operation; commit, EXEC-FREEZE, I08, and live execution remain closed | Exact I06B hashes, immutable accepted I06/I06A, DEC-044, retained blocked I07 drafts | Complete; I07 candidate-free construction resumed |
+| `P2-I2-CHG-039` | Execute the owner-authorized resumed I07 candidate-free construction/validation boundary | `I07_exact_freeze_construction_and_failed_validation_start` | Freeze final policy/source/tests/validator; use only the three declared `.venv` starts with zero retries | Start 1 generated 234 entries, 20 bound files, and inactive EXEC-FREEZE; start 2 failed before collection because `.venv` lacks `pytest`; start 3 unused; zero PyGRC/model/packet/candidate/control/scientific activity | DEC-044/CHG-038, I07 resumption freeze, accepted I06B, frozen zero-retry process boundary | Failed closed pending owner direction; no install, replacement, validator, commit, EXEC-FREEZE passage, or I08 authority |
+| `P2-I2-CHG-040` | Owner: `installing pytest doesnt need I07A, just install it and udate I07 after it is installed` | `I07_environment_prerequisite_install_and_in_place_validation_continuation` | Preserve CHG-039 failure; install `pytest` only in `.venv`; update honest I07 process accounting; candidate-free refresh derived binding/freeze hashes; authorize one replacement focused-test start and one final validator start | Complete: pytest 9.1.1 installed; policy/source/tests/matrix byte-exact; binding refresh passed; tests 7/7; final validation 25/25; six starts honestly retained; zero PyGRC/model/packet/candidate/control/scientific activity | Exact CHG-039 failed-start receipt; unchanged scientific/execution policy, run matrix, tests, upstream authorities, no-candidate boundary, portability | Review-ready inside I07; no I07A, commit, EXEC-FREEZE passage, I08, or candidate execution authority |
+| `P2-I2-CHG-041` | Owner requests a mechanical guarantee that earlier C01 outputs cannot influence later entries | `I07_cross_entry_isolation_audit` | Audit exact source dataflow, process/baseline construction, all derived claim/output/failure paths, cache/temp/queue/RNG state, entry-local authorization, retry derivation, and complete/evaluable matrix closeout; make no runtime correction | Row-local semantics pass and 1,404/1,404 governed paths are unique, relative, and under the declared output root; four enforcement blockers remain: ancestor-symlink containment, shared ignored bytecode caches, receipt-derived retry eligibility, and implemented fail-closed completion | Existing frozen I07 bytes, read-only shell/static inspection, no Python/runtime/candidate/scientific start, no inferred correction authority | Audit complete; EXEC-FREEZE and I08 remain closed pending owner direction |
+| `P2-I2-CHG-042` | Owner states that CHG-041's four blockers can be I07A | `I07A_bounded_cross_entry_isolation_correction` | Add checklist/hypothesis-first I07A; preserve reviewed I07 hashes; correct only safe artifact containment, import-cache isolation, current-entry retry reconstruction, and exact-path fail-closed completion; use at most three `.venv/bin/python -B` starts | Complete uncommitted candidate: 15/15 focused tests and 17/17 final checks; 234 entry objects unchanged; three passed starts, zero retries, zero PyGRC/model/packet/candidate/scientific activity | DEC-046, CHG-041 audit, exact reviewed I07 hashes, immutable upstream scientific/registration semantics, zero-candidate boundary | Review-ready with zero technical blockers; EXEC-FREEZE/I08/commit remain closed pending owner acceptance |
+| `P2-I2-CHG-043` | Owner states `ok, time to commit` after the complete I07A handoff | `I07A_owner_acceptance_inactive_EXEC_FREEZE_passage_and_checkpoint_commit` | Bind the exact zero-blocker I07A package in an additive acceptance record; pass only the inactive EXEC-FREEZE; commit the complete accumulated I06B/I07/I07A checkpoint | Owner-accepted: 15/15 tests, 17/17 checks, 234 entries unchanged, three passed starts, zero retries, zero runtime/scientific activity; acceptance artifact retained | DEC-047, exact I07A technical hashes, absent activation/output/manifest, branch `p2-i2-experiment`, parent `49c74e1` | Commit authorized; live activation, cache cleanup, I08, candidate execution, and scientific evidence remain closed |
 
 ## 19. Evidence ledger
 
@@ -3179,7 +3401,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I00-BRIEF` | I00 | Accepted P2-I2 brief | Semantic authority only | Retained |
 | `P2-I2-I00-CHECKLIST` | I00 | This checklist | Process and gate authority only | Retained |
 | `P2-I2-I00-OPHYP` | I00 | [Operational-hypothesis scaffold](../hypotheses/p2-i2-operational-hypotheses.md) | Subordinate projection only | Retained |
-| `P2-I2-I00-DECISIONS` | I00–I06 | Cumulative decision record through accepted DEC-042, including the accepted I05 closeout/CAL-GATE passage and the accepted exact three-mode I06/I06A registration disposition | Decision authority only | Retained; REG-GATE passed and I07 freeze construction authorized |
+| `P2-I2-I00-DECISIONS` | I00–I07 | Cumulative decision record through decided DEC-044, including accepted I06/I06A/I06B and resumed candidate-free I07 | Decision authority only | Retained; REG-GATE passed, I07 resumed, EXEC-FREEZE closed |
 | `P2-I2-I00-VALIDATION` | I00R1 | [Compact validation provenance](../reports/P2-I2-I00-validation.md) | Integrity/process only | Retained |
 | `P2-I2-I00R1-REVIEW` | I00R1 | Section 5.2 review disposition and `P2-I2-CHG-001` | Process correction only | Retained |
 | `P2-I2-I01-FREEZE` | I01 | [Audit-input freeze](../contracts/p2-i2/i01-audit-input-freeze.json) | Preregistered capability-audit scope and process only | Retained |
@@ -3251,6 +3473,10 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I05JA-DEPENDENCY-CORRECTION` | I05JA | [Original failed-start record](../contracts/p2-i2/i05ja-native-dependency-failure.json) and [additive correction freeze](../contracts/p2-i2/i05ja-native-dependency-correction-freeze.json) | Native tooling environment correction only; exact pinned dependency plus one unchanged retry; zero scientific effect | Complete and accepted inside I05J package |
 | `P2-I2-I06-REGISTRATION` | I06 | [Input freeze](../contracts/p2-i2/i06-registration-input-freeze.json), [exact three-mode bundle](../contracts/p2-i2/i06-three-mode-registration.json), [manifest](../contracts/p2-i2/i06-registration-manifest.json), [outcome-free control index](../contracts/p2-i2/i06-control-resolution-index-template.json), [14/14 validation](../contracts/p2-i2/i06-registration-validation.json), [adapter revision](../scripts/p2_i2_i06_history_adapter.py), [validator](../scripts/p2_i2_i06_registration.py), and [report](../reports/P2-I2-I06-exact-registration.md) | Exact implementation/identity/control/restoration registration integrity only; baseline-only save/load/reset checks; zero candidate or scientific evidence | Owner-accepted with I06A under DEC-042; REG-GATE passed; I07 freeze construction authorized |
 | `P2-I2-I06A-REVIEW-CLOSEOUT` | I06A | [Review freeze](../contracts/p2-i2/i06a-registration-review-input-freeze.json), [policy](../contracts/p2-i2/i06a-registration-review-policy.json), [historical execution manifest](../contracts/p2-i2/i06-registration-execution-manifest.json), [post-portability manifest](../contracts/p2-i2/i06-registration-post-portability-manifest.json), [failed-start receipt](../contracts/p2-i2/i06a-validation-failed-start.json), [replacement authority](../contracts/p2-i2/i06a-replacement-validation-authorization.json), [14/14 validation](../contracts/p2-i2/i06a-registration-review-validation.json), [validator](../scripts/p2_i2_i06a_validate.py), final manifest v1.1.1, and the amended [report](../reports/P2-I2-I06-exact-registration.md) | AdapterV2 implementation-conformance and exact registration-provenance integrity only; pure no-model confirmation of tolerance, admission/diversion, isolation, and retry semantics; no scientific evidence | Owner-accepted; both review blockers resolved; checkpoint amendment authorized; REG-GATE passed; I07 freeze construction authorized, candidate execution unauthorized |
+| `P2-I2-I06B-EXECUTION-READINESS` | I06B | [Input freeze](../contracts/p2-i2/i06b-execution-readiness-correction-input-freeze.json), [additive overlay](../contracts/p2-i2/i06b-execution-readiness-overlay.json), [manifest](../contracts/p2-i2/i06b-execution-readiness-manifest.json), [15/15 validation](../contracts/p2-i2/i06b-execution-readiness-validation.json), [validator](../scripts/p2_i2_i06b_validate.py), [report](../reports/P2-I2-I06B-execution-readiness-correction.md), [owner acceptance](../contracts/p2-i2/i06b-owner-acceptance-and-reg-gate.json), and DEC-043/044 plus CHG-037/038 | Implementation-registration readiness and progression authority only; accepted I06/I06A bytes exact; no scientific evidence | Owner-accepted with zero blockers; REG-GATE passed; I07 resumed candidate-free; EXEC-FREEZE closed |
+| `P2-I2-I07-EXEC-FREEZE-CANDIDATE` | I07 | [Resumption freeze](../contracts/p2-i2/c01/i07-candidate-cycle-resumption-input-freeze.json), [25/25 historical validation](../contracts/p2-i2/c01/i07-candidate-free-validation.json), [review and CHG-041 audit](../reports/P2-I2-I07-EXEC-FREEZE-review.md), and the reviewed hashes preserved by the [I07A input freeze](../contracts/p2-i2/c01/i07a-cross-entry-isolation-input-freeze.json) | Historical candidate-free cycle freeze and cross-entry-isolation audit only; no candidate or scientific evidence | Retained history; four blockers superseded for progression by I07A |
+| `P2-I2-I07A-ISOLATED-EXEC-FREEZE-CANDIDATE` | I07A | [Input freeze](../contracts/p2-i2/c01/i07a-cross-entry-isolation-input-freeze.json), [corrected policy](../configs/p2_i2_c01_execution_policy_v2.json), [execution source](../scripts/p2_i2_execution.py), [run matrix](../contracts/p2-i2/c01/run-matrix.json), [binding](../contracts/p2-i2/c01/execution-binding-receipt.json), [inactive freeze](../contracts/p2-i2/c01/exec-freeze.json), [refresh receipt](../contracts/p2-i2/c01/i07a-derived-refresh-receipt.json), [15/15 test receipt](../contracts/p2-i2/c01/i07a-focused-tests-receipt.json), [17/17 validation](../contracts/p2-i2/c01/i07a-candidate-free-validation.json), and [review](../reports/P2-I2-I07A-cross-entry-isolation-correction.md) | Beneath-root artifact safety, import-cache isolation, row-local retry reconstruction, and exact-path fail-closed completion authority only; no candidate or scientific evidence | Zero-blocker technical package accepted by DEC-047 and the following acceptance entry; inactive EXEC-FREEZE passed |
+| `P2-I2-I07A-OWNER-ACCEPTANCE` | I07A | [Owner acceptance and inactive EXEC-FREEZE](../contracts/p2-i2/c01/i07a-owner-acceptance-and-exec-freeze.json), DEC-047, and CHG-043 | Acceptance, inactive gate passage, and checkpoint-commit authority only; no activation or candidate/scientific evidence | Owner-accepted and commit-authorized; live activation and I08 remain closed |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

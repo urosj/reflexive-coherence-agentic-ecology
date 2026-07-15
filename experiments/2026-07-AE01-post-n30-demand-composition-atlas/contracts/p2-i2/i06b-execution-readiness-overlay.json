@@ -1,0 +1,275 @@
+{
+  "artifact_id": "P2-I2-I06B-EXECUTION-READINESS-OVERLAY",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06B",
+  "lane_id": "AE01-L02",
+  "status": "additive_overlay_frozen_pending_candidate_free_validation_and_owner_review",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-correction-input-freeze.json",
+    "sha256": "4ada5141c550d478ee36d8a3be069bcbb0a040bddff235ad65bd707e74fc685c"
+  },
+  "base_registration": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+    "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+  },
+  "overlay_precedence": {
+    "future_progression_scope": [
+      "P2-I2-I07",
+      "P2-I2-I08"
+    ],
+    "supersedes_only": [
+      "contribution_and_schedule.schedule.neutral_contact_slot_index",
+      "contribution_and_schedule.schedule.response_arrival_event_time_key",
+      "future exact scheduler and packet slot layout",
+      "future branch-specific native P-debit amount and call",
+      "future direct_address_bypass exact call",
+      "future controller_assembled_bypass exact call"
+    ],
+    "historical_I06_I06A_bytes_changed": false,
+    "historical_I06_I06A_validation_reinterpreted": false,
+    "all_unlisted_I06_fields": "inherit_byte_authoritatively_from_base_registration",
+    "fourth_primitive_allowed": false
+  },
+  "matched_event_schedule": {
+    "slot_policy": "all branches share the same absolute opportunities; an unused slot is retained as an explicit no-op disposition and schedules no packet",
+    "first_departure_event_time_key": 10.25,
+    "arrival_offset": 0.625,
+    "reserved_slot_increment": 1.25,
+    "first_departure_scheduler_event_index": 10,
+    "scheduler_index_increment_per_packet_slot": 2,
+    "first_packet_index": 10,
+    "slots": [
+      {
+        "slot_index": 0,
+        "purpose": "first_physical_contribution_or_matched_diversion_or_absence",
+        "departure_event_time_key": 10.25,
+        "arrival_event_time_key": 10.875,
+        "departure_scheduler_event_index": 10,
+        "arrival_scheduler_event_index": 11,
+        "packet_index_if_used": 10
+      },
+      {
+        "slot_index": 1,
+        "purpose": "second_physical_contribution_or_matched_diversion_or_absence",
+        "departure_event_time_key": 11.5,
+        "arrival_event_time_key": 12.125,
+        "departure_scheduler_event_index": 12,
+        "arrival_scheduler_event_index": 13,
+        "packet_index_if_used": 11
+      },
+      {
+        "slot_index": 2,
+        "purpose": "history_materialization_or_explicit_no_op",
+        "departure_event_time_key": 12.75,
+        "arrival_event_time_key": 13.375,
+        "departure_scheduler_event_index": 14,
+        "arrival_scheduler_event_index": 15,
+        "packet_index_if_used": 12
+      },
+      {
+        "slot_index": 3,
+        "purpose": "native_P_intervention_or_explicit_no_op",
+        "departure_event_time_key": 14.0,
+        "arrival_event_time_key": 14.625,
+        "departure_scheduler_event_index": 16,
+        "arrival_scheduler_event_index": 17,
+        "packet_index_if_used": 13
+      },
+      {
+        "slot_index": 4,
+        "purpose": "matched_neutral_contact",
+        "departure_event_time_key": 15.25,
+        "arrival_event_time_key": 15.875,
+        "departure_scheduler_event_index": 18,
+        "arrival_scheduler_event_index": 19,
+        "packet_index_if_used": 14
+      }
+    ],
+    "response": {
+      "neutral_arrival_to_response_arrival_lag": 1.0,
+      "native_or_direct_address_departure_event_time_key": 15.875,
+      "controller_matched_departure_event_time_key": 15.875,
+      "arrival_event_time_key": 16.875,
+      "feedback_surface_scheduler_event_index": 20,
+      "native_producer_scheduler_event_index": 21,
+      "packet_departure_scheduler_event_index": 22,
+      "packet_arrival_scheduler_event_index": 23,
+      "packet_index": "len(retained_packet_records_after_neutral_contact)",
+      "packet_amount": 0.125
+    },
+    "matched_invariants": [
+      "q1 and q2 amounts, order mapping, departure spacing, and arrival offset unchanged",
+      "history materialization remains before any native P intervention",
+      "native P intervention completes before neutral contact",
+      "neutral contact completes before any response call",
+      "neutral-arrival-to-response-arrival lag remains exactly 1.0",
+      "every branch retains slots 2 and 3 through used or explicit_no_op dispositions"
+    ]
+  },
+  "native_P_intervention": {
+    "method": "LGRC9V3.schedule_packet_departure",
+    "source_role": "P",
+    "target_role": "K_P",
+    "edge_role": "P_TO_K_P",
+    "slot_index": 3,
+    "call": {
+      "source_node_id": "role_ids[P]",
+      "target_node_id": "role_ids[K_P]",
+      "edge_id": "edge_ids[P_TO_K_P]",
+      "amount": "branch_registered_P_debit_amount",
+      "departure_event_time_key": 14.0,
+      "arrival_event_time_key": 14.625,
+      "scheduler_event_index": 16,
+      "packet_index": 13,
+      "source_lineage_id": "lineage:p2-i2:i06b:P-debit-source",
+      "target_lineage_id": "lineage:p2-i2:i06b:K-P-debit-target"
+    },
+    "branch_amounts": [
+      {
+        "mode": "state_carried",
+        "subconfiguration_id": "post_write_native_P_debit",
+        "amount": 0.4375,
+        "amount_identity": "accepted_I06_diagnostic_state_debit"
+      },
+      {
+        "mode": "hybrid",
+        "subconfiguration_id": "post_write_native_P_debit",
+        "amount": 0.4375,
+        "amount_identity": "accepted_I06_diagnostic_state_debit"
+      },
+      {
+        "mode": "history_carried",
+        "subconfiguration_id": "history_mode_P_only_debit",
+        "amount": 0.4375,
+        "amount_identity": "accepted_I06_diagnostic_state_debit"
+      },
+      {
+        "mode": "hybrid",
+        "subconfiguration_id": "hybrid_reference_P_candidate_H",
+        "amount": 1.5,
+        "amount_identity": "exact_q1_plus_q2_full_reference_P_debit"
+      },
+      {
+        "mode": "hybrid",
+        "subconfiguration_id": "hybrid_reference_components",
+        "amount": 1.5,
+        "amount_identity": "exact_q1_plus_q2_full_reference_P_debit"
+      }
+    ],
+    "full_reference_P_identity": {
+      "expression": "0.625 + 0.875",
+      "amount": 1.5,
+      "amount_hex": "0x1.8000000000000p+0",
+      "candidate_P_before_debit": 2.25,
+      "reference_P_after_debit": 0.75,
+      "runtime_tolerance_not_used_to_choose_amount": true
+    },
+    "all_other_mode_subconfiguration_pairs": "slot_3_explicit_no_op",
+    "state_only_private_write_or_external_pool_state": false
+  },
+  "direct_address_bypass": {
+    "subconfiguration_id": "direct_address_bypass",
+    "classification": "diagnostic_contributor_addressed_causal_exclusion_outside_candidate_chain",
+    "preconditions": [
+      "normal registered contribution/diversion activity retained",
+      "mode-required history materialization retained",
+      "slot_3 explicit_no_op",
+      "matched neutral contact committed"
+    ],
+    "feedback_surface_call": {
+      "method": "LGRC9V3.emit_feedback_eligibility_surface_row",
+      "front_node_ids": [
+        "role_ids[S1]",
+        "role_ids[S2]"
+      ],
+      "rear_node_ids": [
+        "role_ids[B_REF]"
+      ],
+      "reference_delta": 0.0625,
+      "feedback_threshold": "base_registration.mode_registry[mode].feedback_threshold",
+      "expected_next_route_id": null,
+      "expected_next_channel_id": null
+    },
+    "native_producer_call": {
+      "method": "LGRC9V3.set_feedback_coupled_pulse_producer",
+      "source_node_id": "role_ids[A_PRIMARY]",
+      "target_node_id": "role_ids[B]",
+      "edge_id": "edge_ids[A_PRIMARY_TO_B]",
+      "threshold": "base_registration.mode_registry[mode].feedback_threshold",
+      "packet_amount": 0.125,
+      "expected_polarity": "positive",
+      "expected_source_surface_digest": null,
+      "expected_next_route_id": null,
+      "expected_next_channel_id": null,
+      "arrival_event_time_key": 16.875,
+      "enabled": true
+    },
+    "forbidden_reads": [
+      "P",
+      "M_H",
+      "active_history_carrier"
+    ],
+    "required_receipt": "front mask, rear mask, threshold, reference, source surface, producer call, scheduled response lineage, and candidate_chain=false"
+  },
+  "controller_assembled_bypass": {
+    "subconfiguration_id": "controller_assembled_bypass",
+    "classification": "diagnostic_controller_authored_causal_exclusion_outside_candidate_chain",
+    "controller_predicate": {
+      "expression": "q1_arrival_receipt.valid and q2_arrival_receipt.valid",
+      "receipt_validation": [
+        "exact registered source role",
+        "exact registered target or diversion role",
+        "exact amount",
+        "exact physical slot and committed arrival",
+        "no authored success label accepted as an input"
+      ],
+      "common_carrier_reads": [],
+      "active_history_reads": [],
+      "native_feedback_surface_reads": []
+    },
+    "direct_native_packet_call_if_true": {
+      "method": "LGRC9V3.schedule_packet_departure",
+      "source_node_id": "role_ids[A_PRIMARY]",
+      "target_node_id": "role_ids[B]",
+      "edge_id": "edge_ids[A_PRIMARY_TO_B]",
+      "amount": 0.125,
+      "departure_event_time_key": 15.875,
+      "arrival_event_time_key": 16.875,
+      "scheduler_event_index": 22,
+      "packet_index": "branch_receipt.packet_record_count_after_neutral_contact",
+      "source_lineage_id": null,
+      "target_lineage_id": null
+    },
+    "direct_native_packet_call_if_false": "none",
+    "output_matching": {
+      "candidate_response_source_role": "A_PRIMARY",
+      "candidate_response_target_role": "B",
+      "candidate_response_edge_role": "A_PRIMARY_TO_B",
+      "candidate_response_amount": 0.125,
+      "candidate_response_departure_event_time_key": 15.875,
+      "candidate_response_arrival_event_time_key": 16.875
+    },
+    "required_receipt": "validated q1/q2 receipt identities, predicate result, exact call or no-call, scheduled response lineage, forbidden-read audit, and candidate_chain=false"
+  },
+  "bounds_and_restoration": {
+    "maximum_packets_in_any_branch": 6,
+    "maximum_processed_packet_events_in_any_branch": 12,
+    "base_registered_maximum_packets": 6,
+    "base_registered_maximum_processed_packet_events": 12,
+    "new_topology_roles_or_edges": 0,
+    "new_restoration_components": 0,
+    "intervention_and_bypass_receipts_are_continuation_identity_inputs": true,
+    "one_sided_or_implicit_rebase_allowed": false
+  },
+  "evidence_and_gate_boundary": {
+    "candidate_or_control_execution": false,
+    "scientific_evidence": false,
+    "R01_through_R05": "unassigned",
+    "mode_selection_or_ranking": false,
+    "REG_GATE": "reopened_pending_I06B_validation_and_explicit_owner_acceptance",
+    "I07": "paused",
+    "EXEC_FREEZE": "closed",
+    "I08": "unauthorized",
+    "commit_authorized": false
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "artifact_id": "P2-I2-I07-CANDIDATE-CYCLE-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I07",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "frozen_at": "2026-07-15",
+  "status": "exact_candidate_free_inputs_frozen_before_execution_source_construction",
+  "entry_authority": {
+    "accepted_parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+    "owner_direction": "one more preparation before actual runs, let's do I07",
+    "REG_GATE_passed": true,
+    "I07_construction_authorized": true,
+    "EXEC_FREEZE_passed": false,
+    "candidate_execution_authorized": false
+  },
+  "authority_inputs": [
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md", "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f", "role": "accepted_semantic_authority"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json", "sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4", "role": "accepted_source_and_reset_provider_authority"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-index.json", "sha256": "19edd25c9dc073da44d37dfa2ec678958a03850eafc431134ef9c82fc2e929c0", "role": "accepted_three_mode_realization_family"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-validation.json", "sha256": "574db3cca8d2788480c3e62dc292d092a04bb891766a3f44820d1743fd3ef502", "role": "accepted_three_mode_family_validation"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration.json", "sha256": "21f120cfe4f501281f814bc3f8bc2e130f6a4671cfbb7b2662f1dda22b300ff2", "role": "accepted_measurement_control_and_causal_semantics"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json", "sha256": "b8955378506e079f5a9e3299b803da7e376f53c2fa2df34c95bba163289bd8c0", "role": "sole_progression_estimator_and_machine_overlay"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json", "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d", "role": "signed_control_and_mode_analysis_policy"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py", "sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24", "role": "complete_three_envelope_estimator"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json", "sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3", "role": "accepted_candidate_blind_arithmetic_calibration"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json", "sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692", "role": "accepted_metric_and_analysis_delta"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-process-and-projection-closeout.json", "sha256": "de43ee9fa0b33722ac1e0a94e3ee5c1dcfc17e427bbdd26d744fd82672dfc548", "role": "accepted_CAL_GATE_closeout"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-input-freeze.json", "sha256": "b198fa71f312a43ef9df2a706cef19c00d8916c078912a6dbea6f8566d79e8bf", "role": "exact_registration_input_authority"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json", "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d", "role": "exact_three_mode_execution_registration"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json", "sha256": "83f2889ebd7b83f65a3a194065f07f0cb850c8a779fc50d75ceaec60a1bc6eaf", "role": "owner_accepted_REG_GATE_authority"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json", "sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99", "role": "retained_baseline_registration_validation"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json", "sha256": "aca1815418e18254cd63d4b78d56033090b1f7e22eaae16189d63151d99fa26d", "role": "retained_adapter_and_provenance_closeout_validation"}
+  ],
+  "runtime_identity": {
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_required": "clean",
+    "python_command": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "pygrc_import": "PYTHONPATH=external-repository:graph-reflexive-coherence/src",
+    "ambient_or_installed_pygrc_fallback": false,
+    "graph_repository_access": "read_only_guard_per_runtime_attempt"
+  },
+  "matrix_projection": {
+    "required_modes": ["state_carried", "history_carried", "hybrid"],
+    "required_cells": ["reference-pool", "individual-contributions", "combined-orders", "pooled-history-shuffle", "contributor-removal", "global-state-exclusion", "access-capacity-contrast"],
+    "registered_subconfiguration_count": 26,
+    "candidate_seeds": [101, 211, 307],
+    "physical_orders": ["q1_then_q2", "q2_then_q1"],
+    "order_expansion": {
+      "explicit_registration": ["combined-orders", "physical_order_reverse"],
+      "I04R2_complete_arm_lift": ["q1_admitted_q2_diverted", "q2_admitted_q1_diverted"],
+      "all_other_applicable_subconfigurations": "not_applicable",
+      "rationale": "Preserve both complete primary tuples and every registered order-bearing control without duplicating order-invariant branches."
+    },
+    "applicable_mode_branch_order_entries": 78,
+    "primary_matrix_entries": 234,
+    "primary_attempt_index": 1,
+    "maximum_conditional_retry_attempts": 234,
+    "maximum_total_attempts": 468,
+    "missing_prerequisite_policy": "retain the exact entry with a pre-operation blocked receipt; never drop, impute, or transfer it across modes"
+  },
+  "retry_policy": {
+    "scope": "per_matrix_entry",
+    "ceiling": 1,
+    "qualifying_failure_phase": "before model or adapter construction and before candidate authority consumption",
+    "required_zero_state": ["no model or adapter constructed", "no candidate or control operation", "no contribution or history admission", "no response or comparator window", "no governed output"],
+    "any_post_construction_failure_consumes_entry": true,
+    "failed_scientific_or_control_result_retryable": false,
+    "byte_identical_retry_inputs": ["committed HEAD", "registration manifest and bundle", "validator and runner", "mode seed order cell and branch identity", "environment and normalized command", "resource envelope"],
+    "required_failed_attempt_receipt": ["entry identity", "attempt index", "failure phase and exception class", "all byte-identity digests", "zero-state counters", "output absence", "mechanical retry-eligibility disposition"],
+    "eligibility_inputs_may_include_outcomes": false
+  },
+  "resource_envelope_per_entry": {
+    "max_runtime_seconds": 180,
+    "max_memory_mb": 512,
+    "max_disk_mb": 512,
+    "hardware": "single_local_CPU_no_accelerator"
+  },
+  "construction_boundary": {
+    "allowed": ["execution policy and source", "pure tests", "candidate-free binding receipt", "inactive review freeze", "static validation", "review report"],
+    "PyGRC_imports_for_public_runtime_binding": 1,
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_operations": 0,
+    "contribution_or_history_admissions": 0,
+    "response_evaluations": 0,
+    "comparator_or_scientific_windows": 0,
+    "scientific_result": false,
+    "graph_repository_mutations": 0
+  },
+  "expected_outputs": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c01_execution_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07_validate.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/exec-freeze.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-free-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I07-EXEC-FREEZE-review.md"
+  ],
+  "review_stop": {
+    "result_status": "P2-I2-I07-EXEC-FREEZE-REVIEW-READY",
+    "owner_review_required": true,
+    "commit_authorized": false,
+    "EXEC_FREEZE_passed": false,
+    "I08_authorized": false,
+    "candidate_execution_authorized": false
+  },
+  "evidence_effect": "pre_execution_identity_and_authorization_integrity_only_no_candidate_or_scientific_evidence"
+}

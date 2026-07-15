@@ -1,0 +1,151 @@
+{
+  "artifact_id": "P2-I2-I06B-EXECUTION-READINESS-CORRECTION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06B",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-15",
+  "status": "exact_three_primitive_inputs_frozen_before_overlay_construction",
+  "entry_authority": {
+    "parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+    "decision_id": "P2-I2-DEC-043",
+    "change_id": "P2-I2-CHG-037",
+    "owner_direction": "+1",
+    "meaning": "authorize the recommended bounded checklist/hypothesis-first I06B correction",
+    "package_acceptance": false,
+    "commit_authorized": false,
+    "candidate_execution_authorized": false
+  },
+  "accepted_immutable_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-input-freeze.json",
+      "role": "accepted_I06_input_freeze",
+      "sha256": "b198fa71f312a43ef9df2a706cef19c00d8916c078912a6dbea6f8566d79e8bf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "role": "accepted_exact_three_mode_registration",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json",
+      "role": "accepted_final_I06_manifest_v1_1_1",
+      "sha256": "83f2889ebd7b83f65a3a194065f07f0cb850c8a779fc50d75ceaec60a1bc6eaf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+      "role": "accepted_I06_baseline_only_validation",
+      "sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-input-freeze.json",
+      "role": "accepted_I06A_review_freeze",
+      "sha256": "86e7a0ce5be079edb0462d783a30cf50df96409137aac78c1d7d8c024090d414"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-policy.json",
+      "role": "accepted_I06A_review_policy",
+      "sha256": "ec25da968681f5256b4f3bb4e97aec3a7540b6a268784f133f5f68c2b1eb6ba6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json",
+      "role": "accepted_I06A_no_model_validation",
+      "sha256": "aca1815418e18254cd63d4b78d56033090b1f7e22eaae16189d63151d99fa26d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-replacement-validation-authorization.json",
+      "role": "accepted_I06A_replacement_authority",
+      "sha256": "e01f4595754e73e589e70beed04c757bd9d3ba569262af918c70c5da956d73ef"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-post-portability-manifest.json",
+      "role": "accepted_two_stage_provenance_manifest",
+      "sha256": "cb6f2d86d43839e64cf768683c1417b4ba6c9195266fad19f5344ade36d8ef54"
+    }
+  ],
+  "blocked_I07_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-cycle-input-freeze.json",
+      "role": "blocked_authority_audit_and_234_entry_projection",
+      "sha256": "024ddf1488b0e81c2151e007367420667c9d7730fcd0b37d346a25a8f1428f68"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c01_execution_policy.json",
+      "role": "blocked_non_authoritative_policy_draft",
+      "sha256": "328d21ef994885dc13a011b5f0f066321b3ce2d5a56c96b6a5c80e8864d3231c"
+    }
+  ],
+  "source_runtime_identity": {
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_clean_at_freeze": true,
+    "runtime_source": "external-repository:graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_runtime.py",
+    "runtime_source_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+    "required_public_methods": [
+      "LGRC9V3.emit_feedback_eligibility_surface_row",
+      "LGRC9V3.set_feedback_coupled_pulse_producer",
+      "LGRC9V3.schedule_packet_departure"
+    ],
+    "validation_interpreter_command": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
+  },
+  "correction_ceiling": {
+    "primitive_count": 3,
+    "primitives": [
+      "native_post_materialization_P_debit_schedule",
+      "full_reference_P_debit_identity",
+      "direct_address_and_controller_assembled_bypass_calls"
+    ],
+    "accepted_I06_I06A_file_mutations": 0,
+    "new_mode_or_cell": false,
+    "new_scientific_value_or_comparator": false,
+    "mode_ranking_or_selection": false,
+    "I07_source_construction": false
+  },
+  "frozen_derivations": {
+    "full_reference_P_debit": {
+      "expression": "q1 + q2",
+      "q1": 0.625,
+      "q2": 0.875,
+      "result": 1.5,
+      "result_hex": "0x1.8000000000000p+0",
+      "reference_P_before_contributions": 0.75,
+      "candidate_P_after_both_contributions": 2.25,
+      "reference_P_after_debit": 0.75
+    },
+    "schedule": {
+      "accepted_first_departure": 10.25,
+      "accepted_arrival_offset": 0.625,
+      "accepted_slot_increment": 1.25,
+      "accepted_old_neutral_slot": 3,
+      "accepted_old_neutral_arrival": 14.625,
+      "accepted_old_response_arrival": 15.625,
+      "preserved_neutral_to_response_arrival_lag": 1.0,
+      "reserved_intervention_slot": 3,
+      "corrected_neutral_slot": 4,
+      "corrected_neutral_arrival": 15.875,
+      "corrected_response_arrival": 16.875
+    }
+  },
+  "validation_boundary": {
+    "output_producing_validation_start_ceiling": 1,
+    "infrastructure_retries": 0,
+    "allowed": [
+      "read and hash repository-relative authority artifacts",
+      "read and AST-inspect source-current runtime without importing PyGRC",
+      "exact binary arithmetic and schedule derivation",
+      "static overlay, applicability, bounds, portability, and gate checks"
+    ],
+    "prohibited_counts": {
+      "pygrc_imports": 0,
+      "models_constructed": 0,
+      "packets_scheduled_or_processed": 0,
+      "candidate_operations": 0,
+      "control_operations": 0,
+      "response_evaluations": 0,
+      "comparator_or_scientific_windows": 0
+    },
+    "failure_effect": "retain failure and stop for owner direction; no unregistered replacement start",
+    "review_stop": "return complete uncommitted package; REG-GATE remains reopened and I07 remains paused"
+  }
+}

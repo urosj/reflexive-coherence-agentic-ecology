@@ -77,6 +77,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-040` | What may proceed after owner acceptance and commit of I05I? | Retain I05I at `b5d0acb`; distinguish completed I05C/10.4A from the three deferred 10.4 metric obligations; open bounded I05J native metric closeout | Authorizes one frozen native `freeze-resolution` generation plus static validation only; no null rerun, runtime/candidate work, CAL-GATE passage, I06, or commit | 2026-07-14 |
 | `P2-I2-DEC-041` | What follows the first I05J native start failing before output because the repo `.venv` lacks the pinned schema dependency? | Preserve the original freeze and failed start; add I05JA; install only `jsonschema==4.26.0` into `.venv`; authorize one unchanged native retry; amend the still-uncommitted I05J package with honest process accounting | Complete package owner-accepted and commit-authorized; CAL-GATE passed; I06 registration construction authorized but not begun; zero candidate/runtime/scientific authority | 2026-07-14 |
 | `P2-I2-DEC-042` | Which exact three-mode implementations, identities, cells, controls, and continuation boundary should I06 register? | Owner-accepted after I06A: retain all three unranked modes; native PyGRC owns adequate transitions; AdapterV2 conformance and exact historical/current provenance are machine-closed; I06 and I06A each pass 14/14 | Authorizes amendment into checkpoint `7761d3e`, passes REG-GATE, and opens I07 freeze construction only; candidate-cycle execution remains unauthorized and candidate/scientific counts remain zero | 2026-07-15 |
+| `P2-I2-DEC-043` | May I07 invent missing hybrid intervention timing/value and direct/controller primitives, or must exact registration reopen? | Owner accepts the recommended bounded checklist/hypothesis-first I06B correction; I07 may not invent the missing primitives | I06B construction completes at 15/15 with zero blockers; package acceptance/commit remain pending, REG-GATE remains reopened, and I07/EXEC-FREEZE/I08/candidate execution remain closed | 2026-07-15 |
+| `P2-I2-DEC-044` | Does the review-ready I06B package restore registration progression authority? | Owner explicitly accepts I06B; retain exact accepted overlay and validation, restore REG-GATE, and resume the existing I07 freeze from its paused audit | Opens only candidate-free I07 construction/validation; commit, EXEC-FREEZE, I08, and candidate execution remain unauthorized | 2026-07-15 |
+| `P2-I2-DEC-045` | Does missing `pytest` require I07A or an in-place I07 environment correction? | Owner directs no I07A: install into `.venv`, preserve failed start, update I07 process accounting, refresh derived bindings, and continue once | Opens only bounded candidate-free I07 continuation; commit, EXEC-FREEZE, I08, and candidate execution remain unauthorized | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2450,13 +2453,174 @@ ranked, the adapter acquires response authority, a fixture value/identity is
 reused, a composite component can be restored one-sidedly, or any prohibited
 candidate/scientific operation is found.
 
-## 45. Pending decision queue
+## 45. `P2-I2-DEC-043` — I07-found exact-registration blocker
+
+**Status:** decided; owner authorizes the bounded I06B correction
+
+**Question:** May I07 choose execution semantics that I06 did not freeze, or
+must exact registration reopen before candidate-cycle source is constructed?
+
+The I07 authority audit assigns `P2-I2-C01`, binds sixteen accepted authority
+inputs, and projects 78 applicable mode/branch/order combinations across three
+seeds for 234 primary entries. It then identifies three blockers:
+
+1. hybrid P-only/reference-P branches require a native P debit after M_H
+   materialization and before the neutral contact, but I06 freezes no event
+   time or scheduler/packet index for that operation;
+2. full reference P requires a derived `q1+q2 = 1.5` debit, while I06 registers
+   only the distinct `0.4375` diagnostic debit; and
+3. direct-address and controller-assembled bypasses have accepted exclusion
+   semantics but no exact call primitives.
+
+PyGRC exposes no public state-only intervention that removes the first gap; the
+accepted native mechanism is packet debit. Choosing an interstitial packet
+time, full debit, contributor mask, or controller-authored response schedule in
+I07 would revise I06 rather than instantiate it.
+
+**Decision:** open one bounded checklist/hypothesis-first `P2-I2-I06B`
+registration correction. Freeze only the missing intervention amount/schedule
+and bypass primitives, candidate-free revalidate their compatibility with the
+accepted I06/I06A package, and return uncommitted for review. Preserve accepted
+I06/I06A bytes, all modes, other values, response semantics, comparators,
+seeds, controls, and scientific boundaries. Resume I07 only after corrected
+REG-GATE acceptance.
+
+The owner explicitly accepts this recommendation with `+1`. This supplies
+construction authority only: it does not accept an eventual I06B package, pass
+REG-GATE, resume I07, authorize a commit, or authorize candidate execution.
+
+The resulting additive overlay freezes one matched five-slot schedule, exact
+diagnostic `0.4375` and full-reference `q1+q2=1.5` native P debits, and exact
+public PyGRC call primitives for both already registered bypass exclusions.
+The single `.venv` validation start passes 15/15 with zero blockers, reconstructs
+all nine accepted I06/I06A inputs and both blocked I07 drafts, and records zero
+PyGRC imports/models, packet operations, candidate/control/response/comparator/
+scientific operations, or retries. Accepted I06/I06A bytes are unchanged.
+
+This is a review candidate, not self-acceptance. REG-GATE remains reopened and
+I07 remains paused until explicit owner acceptance; commit authority is absent.
+
+No PyGRC import/model, contribution/history admission, response, comparator, or
+scientific operation occurred in this audit. The drafted I07 policy is marked
+non-authoritative and blocked; EXEC-FREEZE and I08 remain closed.
+
+Reopen DEC-043 if I06B needs any fourth primitive, changes accepted scientific
+semantics, or static validation cannot show exact compatibility with I06/I06A.
+
+## 46. `P2-I2-DEC-044` — I06B acceptance and I07 resumption
+
+**Status:** decided by explicit owner acceptance
+
+The owner states `sure, i accept` after reviewing the complete I06B result and
+confirming that acceptance permits return to I07. This accepts the exact I06B
+input freeze, additive overlay, manifest, validator, 15/15 validation, report,
+and their zero-execution boundary. Accepted I06/I06A bytes remain unchanged.
+
+REG-GATE is restored. The already-declared I07 iteration resumes from its
+retained authority audit and exact `P2-I2-C01`/234-entry projection; it does not
+restart or discard the blocked drafts. I07 may correct and complete those drafts
+only by binding accepted I06B, then perform candidate-free static validation and
+return uncommitted for separate owner review.
+
+This acceptance does not authorize a commit, pass EXEC-FREEZE, accept an I07
+cycle, open I08, or authorize any model, packet, candidate, control, response,
+comparator, or scientific operation.
+
+Reopen DEC-044 if any accepted I06B byte changes, the acceptance record fails to
+bind the exact package, or I07 requires registration semantics beyond I06B.
+
+## 47. `P2-I2-DEC-045` — Missing test dependency remains an I07 correction
+
+**Status:** decided by explicit owner direction
+
+The first I07 construction start completed, while the second `.venv` start
+failed before test collection solely because `pytest` was absent. The owner
+states: `installing pytest doesnt need I07A, just install it and udate I07 after
+it is installed`.
+
+**Decision:** do not open I07A. Preserve the CHG-039 failed-start receipt and
+continue inside I07 under CHG-040. Install `pytest` only into the repository
+`.venv`; record the exact resolved dependency; update the validator's process
+accounting honestly; candidate-free refresh only the derived binding/freeze
+hashes; then allow one replacement focused-test start and one final validator
+start. Any additional failure stops for owner direction.
+
+The continuation completes as authorized: `pytest 9.1.1` is installed only in
+`.venv`, the derived refresh preserves policy/source/tests/matrix identities,
+the unchanged focused suite passes 7/7, and final candidate-free validation
+passes 25/25 with zero blockers. Six starts are retained honestly and no PyGRC,
+model, packet, candidate/control, response, comparator, or scientific operation
+occurs.
+
+The accepted upstream authorities, execution policy and causal semantics,
+234-entry matrix, focused tests, candidate prohibition, and scientific-evidence
+boundary remain unchanged. This decision does not authorize a commit, pass
+EXEC-FREEZE, open I08, or execute a candidate/control operation.
+
+## 48. `P2-I2-DEC-046` — Cross-entry-isolation blockers belong to I07A
+
+**Status:** decided by explicit owner direction
+
+After the CHG-041 audit identifies four substantive execution-safety gaps, the
+owner states: `These can actually be I07A`.
+
+**Decision:** open `P2-I2-I07A` for only the four audited corrections: safe
+beneath-root no-symlink artifact creation; project/PyGRC bytecode-cache
+isolation; current-entry-only mechanical retry reconstruction without a shared
+ledger; and exact-path fail-closed 234-entry completion. Preserve the reviewed
+I07 identities in an additive input freeze before changing consequential bytes.
+
+I07A may refresh the effective policy, runner, focused tests, validator,
+matrix, binding, inactive freeze, and related reports only as required by those
+mechanics. Accepted I04R2/I05J/I06–I06B semantics, three-mode retention,
+registered values, retry ceiling, candidate prohibition, and scientific
+boundaries remain immutable. Use at most three candidate-free
+`.venv/bin/python -B` starts. Return uncommitted for review.
+
+This direction does not accept the eventual I07A package, pass EXEC-FREEZE,
+authorize a commit, open I08, or authorize model, packet, candidate/control,
+response, comparator, or scientific execution.
+
+The authorized candidate completes with all 234 entry objects unchanged, 15/15
+focused tests, and 17/17 final candidate-free checks. Exactly three `-B` starts
+pass with zero retries and no PyGRC/model/packet/candidate/scientific activity.
+All four audited blockers are mechanically closed. This result remains
+uncommitted and awaits explicit owner acceptance; the gate boundary above is
+unchanged.
+
+Reopen DEC-046 if a fifth semantic or execution correction is required, any
+accepted upstream authority must change, or a candidate-free start fails.
+
+## 49. `P2-I2-DEC-047` — I07A acceptance, inactive EXEC-FREEZE passage, and commit
+
+**Status:** decided by explicit owner acceptance and commit direction
+
+After receiving the complete I07A result—15/15 focused tests, 17/17 final
+candidate-free checks, zero blockers, all 234 entry objects unchanged, and zero
+PyGRC/model/packet/candidate/scientific activity—the owner states: `ok, time to
+commit`.
+
+**Decision:** accept the exact I07A package, pass `P2-I2-EXEC-FREEZE` for its
+inactive cycle only, and authorize committing the complete accumulated
+I06B/I07/I07A checkpoint on `p2-i2-experiment`. The machine acceptance record
+binds the exact technical artifacts and their hashes.
+
+This acceptance does not create or authorize the live activation record, open
+I08, execute a matrix entry, remove ignored import caches, build the execution
+manifest, or assign scientific evidence. Each remains subject to a separate
+owner direction after the accepted commit.
+
+Reopen DEC-047 if a committed technical hash differs from the acceptance
+record, an activation/candidate artifact enters this commit, or EXEC-FREEZE is
+treated as live execution authority.
+
+## 50. Pending decision queue
 
 No item below is decided by this record yet:
 
 | Proposed decision | Earliest iteration | Prerequisite |
 | --- | --- | --- |
-| Candidate cycle authorization | I07 | Passed registration |
+| Live I08 activation | I08 | Accepted I07A commit, cache-free preclaim state, exact committed activation record, and separate owner direction |
 | Terminal classification and next move | I11 | Resolved controls and reconstruction |
 
 Pending items may not be answered by convenience, code availability, or

@@ -1,0 +1,121 @@
+{
+  "I08_authorized": false,
+  "activation_record": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/owner-accepted-execution-authorization.json",
+    "present_at_freeze": false,
+    "required_absent_during_I07A": true,
+    "required_before_any_run": true
+  },
+  "artifact_id": "P2-I2-C01-INACTIVE-EXEC-FREEZE",
+  "artifact_version": "1.1.0",
+  "authorization_gate": "P2-I2-EXEC-FREEZE",
+  "authorization_scope": "exact_cycle_mode_cell_branch_order_seed_attempt_resource_only",
+  "bound_identity": {
+    "binding_receipt_file_sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479",
+    "binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+    "binding_receipt_payload_digest": "1e05d8751f60ea9bce6fa2e13ea0ae4ffdc821b1ad1e084890d544b0dfaf2404",
+    "execution_source_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py",
+    "execution_source_sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe",
+    "i07a_input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07a-cross-entry-isolation-input-freeze.json",
+    "i07a_input_freeze_sha256": "d375f66e6d739ddcaad159bb6f29e82b7e2fcbb28bc74e14d24c7e30c9a2c93b",
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c01_execution_policy_v2.json",
+    "policy_sha256": "773b9fc231942f59e7d5b74a49ad8ce722471badcc554afd74d5cfaadb4327d3",
+    "resumption_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-cycle-resumption-input-freeze.json",
+    "resumption_freeze_sha256": "c73b4c814a33bfd80c3fbb072928b4f4f9f59de5ba9dbe3bf8c424526a261c98",
+    "run_matrix_file_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+    "run_matrix_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json",
+    "run_matrix_semantic_digest": "8beb624a625e5026b573c1053bd502dc42d9a3f582701a55c09ef88ad88fe5ba",
+    "test_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+    "test_sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420",
+    "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07a_validate.py",
+    "validator_sha256": "e304b542a2e4d0b350c3605e376caaad306e7dfa878f65b97eaf8379cb54a162"
+  },
+  "candidate_execution_authorized": false,
+  "canonical_payload_digest": "66e2e6b211bbc45565d845aa92d7101cac2b0a0ef4bee963b8412f5c437bf79d",
+  "claim_policy": {
+    "claim_before_runtime_import_or_model": true,
+    "claim_survives_every_failure": true,
+    "semantics": "permanent beneath-root no-symlink-component atomic O_CREAT|O_EXCL claim before any runtime import or model construction; never delete to permit a repeat",
+    "template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/claims/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-{attempt}.json"
+  },
+  "commit_authorized": false,
+  "cycle_id": "P2-I2-C01",
+  "evidence_effect": "none_pre_execution_authorization_only",
+  "future_activation_requirements": [
+    "explicit owner acceptance of this exact inactive freeze",
+    "separate tracked activation record",
+    "activation record is committed before execution",
+    "full committed HEAD is supplied through the separately owner-authorized normalized command to avoid self-reference",
+    "runtime HEAD and clean authority tree/index match that command binding",
+    "activation binds policy, source, validator, matrix, binding, and inactive freeze hashes",
+    "activation binds the passed I07A candidate-free validation hash",
+    "repository and PyGRC import roots contain no bytecode cache and the live interpreter has -B active",
+    "exact entry is present in run matrix",
+    "primary or mechanically eligible current-entry-only conditional retry attempt",
+    "permanent atomic claim and governed output both absent before start",
+    "every claim, output, and failure path is opened beneath the governed root without following symlink components",
+    "graph checkout exact and clean before and after attempt"
+  ],
+  "iteration_id": "P2-I2-I07A",
+  "lane_id": "AE01-L02",
+  "matrix": {
+    "maximum_conditional_retry_count": 234,
+    "maximum_total_attempt_count": 468,
+    "mode_branch_order_counts": {
+      "history_carried": 25,
+      "hybrid": 29,
+      "state_carried": 24
+    },
+    "primary_entry_count": 234,
+    "seeds": [
+      101,
+      211,
+      307
+    ]
+  },
+  "output_contract": {
+    "activation_record_must_be_absent_during_I07A": true,
+    "activation_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/owner-accepted-execution-authorization.json",
+    "binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+    "claim_semantics": "permanent beneath-root no-symlink-component atomic O_CREAT|O_EXCL claim before any runtime import or model construction; never delete to permit a repeat",
+    "claim_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/claims/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-{attempt}.json",
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/exec-freeze.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-manifest.json",
+    "failure_receipt_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/failures/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-{attempt}.json",
+    "primary_output_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/runs/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-1.json",
+    "retry_output_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/retries/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-2.json",
+    "run_matrix_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json"
+  },
+  "resource_envelope_per_entry": {
+    "hardware": "single_local_CPU_no_accelerator",
+    "max_disk_mb": 512,
+    "max_memory_mb": 512,
+    "max_runtime_seconds": 180
+  },
+  "retry_policy": {
+    "ceiling_per_entry": 1,
+    "conditional_retry_attempt": 2,
+    "eligibility_reconstruction_inputs": [
+      "current entry frozen row",
+      "current entry exact attempt-1 permanent claim",
+      "current entry exact attempt-1 failure receipt and zero-state counters",
+      "common accepted activation and inactive freeze"
+    ],
+    "infrastructure_retry_eligibility_uses_outcome": false,
+    "other_entry_claim_failure_or_output_reads": false,
+    "post_model_failure_consumes_entry": true,
+    "primary_attempt": 1,
+    "primary_claim_is_never_deleted": true,
+    "retry_must_bind_same_owner_authorized_full_HEAD": true,
+    "retry_only_if": "the same entry retains an exact attempt-1 claim and mechanically eligible failure receipt from before model or adapter construction and before any candidate or control operation, with zero output and byte-identical inputs; owner activation conditionally authorizes that exact attempt 2 and the primary claim remains consumed",
+    "scientific_or_control_outcome_retryable": false,
+    "shared_retry_ledger": false
+  },
+  "review_boundary": {
+    "I07_returns_uncommitted": true,
+    "candidate_outcomes_absent_required": true,
+    "owner_review_required": true,
+    "validation_can_activate": false
+  },
+  "status": "inactive_pending_candidate_free_validation_and_explicit_owner_acceptance"
+}
