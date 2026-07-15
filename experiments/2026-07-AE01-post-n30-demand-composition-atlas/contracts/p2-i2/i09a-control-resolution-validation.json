@@ -1,0 +1,216 @@
+{
+  "CONTROL_GATE": "review_ready_pending_owner_acceptance",
+  "I10_retry_authorized": false,
+  "artifact_id": "P2-I2-I09A-CONTROL-RESOLUTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blocker_count": 0,
+  "candidate_or_control_invocations": 0,
+  "canonical_payload_digest": "2d540eb625f172a69f09e24198b11030e2477bdc43763a776337e7a2eb1c98f6",
+  "check_count": 24,
+  "checks": [
+    {
+      "check_id": "I09A-01",
+      "claim": "all frozen input identities are exact",
+      "observed": 13,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-02",
+      "claim": "the authorized builder identity is exact",
+      "observed": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+        "sha256": "947678094916c8e7af0a371bd6dcbeb8fc09b94dd34eadd6866e6ce9268ece43"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-03",
+      "claim": "accepted I09 index reconstructs byte-identically before correction",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-04",
+      "claim": "accepted I09 validation reconstructs byte-identically before correction",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-05",
+      "claim": "accepted I09 report reconstructs byte-identically before correction",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-06",
+      "claim": "all accepted I09 artifacts retain their frozen hashes",
+      "observed": [
+        "accepted_i09_builder",
+        "accepted_i09_index",
+        "accepted_i09_input_freeze",
+        "accepted_i09_owner_acceptance",
+        "accepted_i09_report",
+        "accepted_i09_validation"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "I09A-07",
+      "claim": "all eighteen retained primary tuples are represented",
+      "observed": 18,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-08",
+      "claim": "every tuple records the accepted exact three-arm estimator path",
+      "observed": 3,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-09",
+      "claim": "twelve positive margins normalize to one and six remain zero",
+      "observed": {
+        "0.0": 6,
+        "1.0": 12
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-10",
+      "claim": "retained raw responses and tie provenance are unchanged",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-11",
+      "claim": "all 38 comparison rules are recomputed and pass",
+      "observed": {
+        "pass": 38
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-12",
+      "claim": "all 15 lane controls are recomputed and pass",
+      "observed": {
+        "pass": 15
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-13",
+      "claim": "all 57 program-mode dispositions are recomputed",
+      "observed": 57,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-14",
+      "claim": "program-mode dispositions remain 56 pass and one not-applicable",
+      "observed": {
+        "not_applicable": 1,
+        "pass": 56
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-15",
+      "claim": "no matched branch configuration varies by seed",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-16",
+      "claim": "the corrected projection remains a CONTROL-GATE candidate",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-17",
+      "claim": "the calibration delta remains exactly 1e-12",
+      "observed": 1e-12,
+      "passed": true
+    },
+    {
+      "check_id": "I09A-18",
+      "claim": "the projection assigns no R01-R05 or terminal result",
+      "observed": {
+        "I11_common_guard_revalidation_required": true,
+        "R01_through_R05": "unassigned_until_I11",
+        "cross_mode_scalar_aggregation": false,
+        "lane_support_status": null,
+        "mode_ranking": false,
+        "scientific_result": false,
+        "terminal_classification": null
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-19",
+      "claim": "the projection creates no new evidence or schema authority",
+      "observed": {
+        "projection_only": true,
+        "schema_authority": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-20",
+      "claim": "the correction boundary records zero runtime operations",
+      "observed": {
+        "R01_through_R05_assignment": false,
+        "accepted_artifact_mutations": 0,
+        "candidate_or_control_invocations": 0,
+        "matrix_entry_regenerations": 0,
+        "mode_ranking": false,
+        "model_or_adapter_constructions": 0,
+        "new_scientific_inputs": 0,
+        "persisted_absolute_paths": 0,
+        "pygrc_imports": 0,
+        "schema_authority": false,
+        "scientific_runtime_invocations": 0,
+        "support_or_terminal_assignment": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-21",
+      "claim": "the corrected index contains no absolute paths",
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "I09A-22",
+      "claim": "the corrected index canonical digest reconstructs exactly",
+      "observed": "4feef398e25cc32f5cb9ec7adeaffa46745b551b261b59f32c9ba9cc3773a501",
+      "passed": true
+    },
+    {
+      "check_id": "I09A-23",
+      "claim": "the accepted I09 authority is retained as immutable history",
+      "observed": {
+        "commit": "cfa19fe66118ad949fa914e0988c6652079d2d54",
+        "index_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-index.json",
+        "index_sha256": "a40c3529fca8d7c037be8c2120a940c7ef3bdc037c0ec409c908bbed7d0de048",
+        "reconstructed_byte_identically_before_correction": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09A-24",
+      "claim": "no corrected output shadows an input path",
+      "observed": [
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-validation.json",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09A-normalized-estimator-correction.md"
+      ],
+      "passed": true
+    }
+  ],
+  "estimator_invocation_count": 18,
+  "iteration_id": "P2-I2-I09A",
+  "matrix_entry_regenerations": 0,
+  "passed_check_count": 24,
+  "pygrc_imports": 0,
+  "scientific_interpretation": false,
+  "status": "passed"
+}

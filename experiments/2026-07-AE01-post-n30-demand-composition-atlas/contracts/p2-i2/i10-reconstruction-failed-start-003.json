@@ -1,0 +1,109 @@
+{
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-FAILED-START-003",
+  "artifact_version": "1.1.0",
+  "iteration_id": "P2-I2-I10",
+  "change_id": "P2-I2-CHG-061",
+  "status": "failed_closed_before_output",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "build",
+    "--graph-root",
+    "../graph-reflexive-coherence"
+  ],
+  "authority": {
+    "v2_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze-v2.json",
+    "v2_freeze_sha256_at_start": "4596d30abfe5879e19a998e943cb9d17423ebe1854ba12023d504a67a58da698",
+    "builder_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "builder_sha256_at_start": "f689ce2893635745783af23f7355a85bc579b02101579432a6f3a99dd8a70672"
+  },
+  "failure": {
+    "exception_class": "AssertionError",
+    "message": "load raw observation mismatch: state_carried",
+    "phase": "state_carried_registered_baseline_pair_after_composite_identity_match_before_no_packet_continuation",
+    "composite_identity_match": true,
+    "raw_snapshot_match": false
+  },
+  "completed_before_failure": {
+    "frozen_input_artifacts_verified": 47,
+    "calibration_rows_reconstructed_through_I04R2": 10,
+    "c02_manifest_and_governed_paths_reconstructed": true,
+    "primary_margins_reconstructed_through_I04R2": 18,
+    "current_i06_validation_checks": "14/14",
+    "historical_i06_validation_reconstructed_byte_identically": true,
+    "i06_validation_model_instantiations": 6,
+    "i10_state_carried_pair_model_instantiations": 2,
+    "i10_no_packet_steps": 0,
+    "i10_outputs_created": 0
+  },
+  "authorized_state_only_diagnostic": {
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+      "diagnose-load",
+      "--graph-root",
+      "../graph-reflexive-coherence",
+      "--mode",
+      "state_carried"
+    ],
+    "status": "complete_without_persisted_diagnostic_output",
+    "composite_identity_match": true,
+    "raw_snapshot_match": false,
+    "difference_count": 20,
+    "difference_categories": {
+      "current_and_reset_baseline_each": {
+        "deterministic_budget_source_materialization": 1,
+        "deterministic_params_identity_materialization": 1,
+        "deterministic_rng_state_materialization": 2,
+        "undirected_zero_flux_port_edge_endpoint_fields_canonicalized": 6
+      },
+      "unexpected_categories": 0
+    },
+    "model_instantiations": 2,
+    "native_steps": 0,
+    "candidate_or_scientific_operations": 0,
+    "graph_unchanged": true
+  },
+  "native_contract_classification": {
+    "change_id": "P2-I2-CHG-062",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "source_evidence": [
+      {
+        "identity": "external-repository:graph-reflexive-coherence/src/pygrc/models/grc_9_v3.py",
+        "sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e"
+      },
+      {
+        "identity": "external-repository:graph-reflexive-coherence/src/pygrc/models/lgrc_9_v3_runtime.py",
+        "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "identity": "external-repository:graph-reflexive-coherence/tests/models/test_lgrc_9_v3_restoration_matrix.py",
+        "sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154"
+      }
+    ],
+    "finding": "the admitted native contract intentionally canonicalizes these deterministic fields on load and explicitly does not require the raw full-snapshot digest to be a fixed point",
+    "required_i10_correction": "retain raw snapshots as separate witnesses, fail on any difference outside the closed native normalization set, require exact adapter raw equality, and continue to require native restoration identity, equal-input continuation, and reset equivalence",
+    "raw_witness_waived": false,
+    "pygrc_source_modified": false
+  },
+  "effect": {
+    "candidate_or_control_contributions": 0,
+    "active_history_token_admissions": 0,
+    "neutral_contacts": 0,
+    "response_or_comparator_windows": 0,
+    "c02_entry_worker_invocations": 0,
+    "matrix_entry_regenerations": 0,
+    "new_scientific_inputs": 0,
+    "accepted_artifact_mutations": 0,
+    "scientific_result": null
+  },
+  "gate_effect": {
+    "CONTROL_GATE": "pending_combined_owner_acceptance",
+    "RECON_GATE": "closed",
+    "I11_authorized": false,
+    "commit_authorized": false
+  },
+  "disposition": "retain permanently inside I10; diagnostic completed and classified under CHG-062; corrected unaccepted I10 v2 may proceed only under the closed native-normalization contract"
+}

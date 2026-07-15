@@ -1,0 +1,179 @@
+{
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-INPUT-FREEZE-V2",
+  "artifact_version": "2.3.0",
+  "iteration_id": "P2-I2-I10",
+  "lane_id": "AE01-L02",
+  "status": "frozen_for_governed_v2_resume",
+  "entry_authority": {
+    "decision_id": "P2-I2-DEC-058",
+    "change_id": "P2-I2-CHG-058",
+    "owner_direction": "I10 needs to be finished or properly marked tasks done",
+    "restoration_contract_change_id": "P2-I2-CHG-062",
+    "combined_review": true,
+    "i09a_commit_or_separate_acceptance_inferred": false
+  },
+  "base_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze.json",
+    "sha256": "c28ae30e79c754acb1ec854b64a1c62c58b7b509ace5d92b96d6251c30207c24",
+    "committed_input_artifact_count": 41,
+    "retained_unchanged": true
+  },
+  "failed_start_001": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-failed-start.json",
+    "sha256": "8b0a8546deddc84a4e9ca157d18398ddcab76c2a2553789a0715bf765641ae3b",
+    "retained_unchanged": true
+  },
+  "failed_start_002": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-failed-start-002.json",
+    "sha256": "de1e80c7816c68bd8579a7f96189151654fdb5a0dc1c144f777547fc014db048",
+    "retained_unchanged": true,
+    "correction_change_id": "P2-I2-CHG-060"
+  },
+  "failed_start_003": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-failed-start-003.json",
+    "sha256": "2ef34539276186ff521a060f306cb6d23b9c19361a4f60df5a3054afa5328816",
+    "retained_unchanged": true,
+    "diagnostic_change_id": "P2-I2-CHG-061"
+  },
+  "local_correction_artifacts": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-input-freeze.json",
+      "role": "hash_bound_i09a_input_freeze",
+      "sha256": "970e9ca31d23a922005f0625925c680f044f3b37e1469ceff7f25f33dc730eeb"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-failed-start-001.json",
+      "role": "hash_bound_i09a_failed_start",
+      "sha256": "54ff3c4b36596f21fa7aef4b009952b692433bdb596fcc1e692a4a65786bbb81"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+      "role": "hash_bound_i09a_corrected_index",
+      "sha256": "dd339ffc39645bcabbe81f7d5f6a28bcee5ee0031066bed92d85c0382e9613a5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-validation.json",
+      "role": "hash_bound_i09a_validation",
+      "sha256": "e57803f14800ac63f2bfb75c4b3a7fa036e55632465aa59c22e562a8510d9f6d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+      "role": "hash_bound_i09a_builder",
+      "sha256": "947678094916c8e7af0a371bd6dcbeb8fc09b94dd34eadd6866e6ce9268ece43"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09A-normalized-estimator-correction.md",
+      "role": "hash_bound_i09a_report",
+      "sha256": "cd87a3dbbfc9235594ee55bc839642b6d9b5b838193dfe27e8c76ae6bcfdc44b"
+    }
+  ],
+  "builder_identity": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "sha256": "22b8fec156ae1f0cf988e3f0eb4287057536cdf07b9b71ee7001f3b1091f26e0"
+  },
+  "authorized_commands": [
+    [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+      "build",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ],
+    [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+      "validate",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ],
+    [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+      "diagnose-load",
+      "--graph-root",
+      "../graph-reflexive-coherence",
+      "--mode",
+      "state_carried"
+    ]
+  ],
+  "corrected_reconstruction_targets": {
+    "historical_i09_reconstructs_byte_identically": true,
+    "i09a_reconstructs_byte_identically": true,
+    "primary_margin_authority": "hash-bound I09A corrected index through accepted p2_i2_i04r2_analysis.primary_margin",
+    "required_primary_tuple_count": 18,
+    "required_margin_distribution": {
+      "0.0": 6,
+      "1.0": 12
+    },
+    "required_downstream_dispositions": {
+      "comparison_rule_pass": 38,
+      "lane_control_pass": 15,
+      "program_mode_not_applicable": 1,
+      "program_mode_pass": 56
+    }
+  },
+  "restoration_continuation_policy": {
+    "active_history_token_admissions": 0,
+    "candidate_or_control_contributions": 0,
+    "comparator_or_scientific_windows": 0,
+    "modes": [
+      "state_carried",
+      "history_carried",
+      "hybrid"
+    ],
+    "native_steps_per_branch_per_mode": 1,
+    "neutral_contacts": 0,
+    "pair_operations": [
+      "construct_registered_baseline",
+      "save_pair",
+      "load_pair",
+      "validate_native_restoration_identity",
+      "compare_adapter_raw_exactly",
+      "classify_native_raw_normalization_closed_set",
+      "identical_no_packet_step",
+      "reset_pair_once",
+      "validate_native_restoration_identity"
+    ],
+    "response_evaluations": 0,
+    "runtime_tolerance": 2.842170943040401e-14,
+    "adapter_raw_snapshot_policy": "exact_within_registered_runtime_tolerance",
+    "native_raw_snapshot_policy": "separate_non_identity_witness_with_closed_normalization_set",
+    "allowed_native_normalization_categories": [
+      "deterministic_budget_source_materialization",
+      "deterministic_params_identity_materialization",
+      "deterministic_rng_state_materialization",
+      "undirected_zero_flux_port_edge_canonicalization"
+    ],
+    "unexpected_native_raw_difference_limit": 0,
+    "continuation_and_reset_equivalence_required": true,
+    "raw_witness_waived": false,
+    "classification_basis": "admitted PyGRC source and restoration-matrix contract at graph revision 83e3a300426631ee4df71b661b67d4fcfdfed594"
+  },
+  "v2_process_boundary": {
+    "prior_v1_failed_starts": 1,
+    "v2_failed_generation_starts": 2,
+    "diagnostic_launcher_failures_before_import": 1,
+    "successful_i06_difference_diagnostics": 1,
+    "v2_successful_generation_starts_before_chg062": 0,
+    "v2_independent_validation_starts_before_chg062": 0,
+    "authorized_chg062_replacement_generation_starts": 1,
+    "authorized_chg062_independent_validation_starts": 1,
+    "restoration_continuation_checks_per_v2_start": 3,
+    "native_no_packet_steps_per_v2_start": 6,
+    "diagnostic_import_path_corrections": 1,
+    "evidence_driven_reconstruction_corrections": 1,
+    "state_carried_load_diagnostics": 1,
+    "scientific_retries": 0
+  },
+  "v2_gate_boundary": {
+    "package_uncommitted_for_combined_review": true,
+    "CONTROL_GATE": "pending_combined_owner_acceptance",
+    "RECON_GATE": "pending_combined_owner_acceptance",
+    "commit_authorized": false,
+    "I11_authorized": false,
+    "scientific_interpretation": false
+  }
+}

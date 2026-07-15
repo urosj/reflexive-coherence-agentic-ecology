@@ -1,0 +1,175 @@
+{
+  "artifact_id": "P2-I2-I09A-CONTROL-RESOLUTION-INPUT-FREEZE",
+  "artifact_version": "1.1.0",
+  "iteration_id": "P2-I2-I09A",
+  "lane_id": "AE01-L02",
+  "status": "in_place_machine_policy_binding_corrected_after_retained_failed_start_001",
+  "entry_authority": {
+    "decision_id": "P2-I2-DEC-057",
+    "change_id": "P2-I2-CHG-056",
+    "owner_direction": "+1",
+    "finding": "P2-I2-DEC-056"
+  },
+  "accepted_authority": {
+    "i09_commit": "cfa19fe66118ad949fa914e0988c6652079d2d54",
+    "accepted_i09_remains_immutable_history": true,
+    "control_gate_status": "reopened_pending_I09A_reconciliation",
+    "i10_failed_start_001_remains_immutable": true
+  },
+  "input_artifacts": [
+    {
+      "role": "accepted_i09_input_freeze",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-input-freeze.json",
+      "sha256": "bad4d310197291c7341f434088ab957ea2a9f6434f6d4eb05f3e889b2904d707"
+    },
+    {
+      "role": "accepted_i09_index",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-index.json",
+      "sha256": "a40c3529fca8d7c037be8c2120a940c7ef3bdc037c0ec409c908bbed7d0de048"
+    },
+    {
+      "role": "accepted_i09_validation",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-validation.json",
+      "sha256": "1ceb846b180ba617fd5f7c480fc019e07ffcdf451b67b8259824db05340a9abf"
+    },
+    {
+      "role": "accepted_i09_builder",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09_control_resolution.py",
+      "sha256": "a3dd168b41deac6dbbffba0c76c7d834185c109985ec37d30911c1d86d368e37"
+    },
+    {
+      "role": "accepted_i09_report",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09-control-resolution.md",
+      "sha256": "e00077c967d16db7bae808efbdedda52286deeb2d5dd0a60c2aa9095e5a78a98"
+    },
+    {
+      "role": "accepted_i09_owner_acceptance",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-owner-acceptance-and-control-gate.json",
+      "sha256": "522cb811c229dc2bd9009ac4fb510ba29b6719dc9749edba76753c5eefcc7e26"
+    },
+    {
+      "role": "accepted_i04r2_estimator",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+      "sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24"
+    },
+    {
+      "role": "accepted_i04r1_estimator_parent",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_analysis.py",
+      "sha256": "1b4b8ccd3bea10e79ad17fdd9646d92c747ce5c3da20da96d72834ad300dbb4c"
+    },
+    {
+      "role": "accepted_i04r2_machine_policy",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+      "sha256": "079ba0be50946199a90201eb57cf79e19fb1faf53aa665437752d376a1ebe11c"
+    },
+    {
+      "role": "accepted_i04r1_analysis_policy",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+      "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+    },
+    {
+      "role": "accepted_i05_metric_calibration",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+      "sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3"
+    },
+    {
+      "role": "accepted_i08_run_matrix",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json",
+      "sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103"
+    },
+    {
+      "role": "accepted_i08_execution_manifest",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json",
+      "sha256": "d84935e75f75211aee03a8b62afc68dd37725b101ec3aedd117747f970487f3a"
+    }
+  ],
+  "authorized_builder": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+    "sha256": "947678094916c8e7af0a371bd6dcbeb8fc09b94dd34eadd6866e6ce9268ece43"
+  },
+  "authorized_commands": [
+    [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+      "build"
+    ],
+    [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+      "validate"
+    ]
+  ],
+  "estimator_correction": {
+    "entrypoint": "p2_i2_i04r2_analysis.primary_margin",
+    "path_id": "p2-i2-i04r2-exact-three-arm-primary-estimator-v1",
+    "tuple_axes": [
+      "mode",
+      "physical_order_id",
+      "seed"
+    ],
+    "modes": [
+      "state_carried",
+      "history_carried",
+      "hybrid"
+    ],
+    "physical_orders": [
+      "q1_then_q2",
+      "q2_then_q1"
+    ],
+    "seeds": [
+      101,
+      211,
+      307
+    ],
+    "required_tuple_count": 18,
+    "required_arms_per_tuple": 3,
+    "cross_tuple_max_forbidden": true,
+    "exact_tie_provenance": "q1-only",
+    "exact_tie_has_scientific_meaning": false,
+    "analysis_arithmetic_delta": 1e-12
+  },
+  "required_recomputation": {
+    "historical_i09_byte_reconstruction_before_correction": true,
+    "comparison_rules": 38,
+    "lane_controls": 15,
+    "program_control_mode_dispositions": 57,
+    "copy_authored_dispositions_forbidden": true
+  },
+  "allowed_outputs": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-failed-start-001.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09A-normalized-estimator-correction.md"
+  ],
+  "process_ceiling": {
+    "builder_starts": 2,
+    "failed_builder_starts": 1,
+    "successful_builder_generations": 1,
+    "independent_byte_reconstructions": 1,
+    "in_place_infrastructure_correction_retries": 1,
+    "scientific_retries": 0
+  },
+  "correction_boundary": {
+    "pygrc_imports": 0,
+    "model_or_adapter_constructions": 0,
+    "candidate_or_control_invocations": 0,
+    "matrix_entry_regenerations": 0,
+    "scientific_runtime_invocations": 0,
+    "new_scientific_inputs": 0,
+    "accepted_artifact_mutations": 0,
+    "mode_ranking": false,
+    "R01_through_R05_assignment": false,
+    "support_or_terminal_assignment": false,
+    "schema_authority": false,
+    "persisted_absolute_paths": 0
+  },
+  "exit_boundary": {
+    "package_uncommitted_for_owner_review": true,
+    "CONTROL_GATE": "reopened_pending_owner_acceptance",
+    "I10_retry_authorized": false,
+    "RECON_GATE": "closed",
+    "I11": "closed"
+  }
+}

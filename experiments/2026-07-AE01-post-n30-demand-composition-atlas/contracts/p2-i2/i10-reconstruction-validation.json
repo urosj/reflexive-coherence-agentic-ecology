@@ -1,0 +1,287 @@
+{
+  "RECON_GATE": "review_ready_pending_owner_acceptance",
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blocker_count": 0,
+  "candidate_or_control_invocations": 0,
+  "canonical_payload_digest": "b16ffc0ccc35fb345c7b55730a98e71e50e9d85a31302886b05467e1b9a522b0",
+  "check_count": 24,
+  "checks": [
+    {
+      "check_id": "I10-01",
+      "claim": "all historical committed and additive correction inputs equal their frozen bytes",
+      "observed": {
+        "all_committed_bytes_equal": true,
+        "all_frozen_bytes_exact": true,
+        "all_hash_bound_local_correction_bytes_equal": true,
+        "committed_input_artifact_count": 41,
+        "input_artifact_count": 47,
+        "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+        "interpreter_identity": ".venv/bin/python",
+        "local_correction_artifact_count": 6,
+        "retained_byte_authority": "cfa19fe66118ad949fa914e0988c6652079d2d54"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-02",
+      "claim": "repository venv and exact interpreter identity match",
+      "observed": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "passed": true
+    },
+    {
+      "check_id": "I10-03",
+      "claim": "admitted graph revision remains clean and unchanged",
+      "observed": {
+        "graph_identity": "external-repository:graph-reflexive-coherence",
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "graph_worktree_clean": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-04",
+      "claim": "resolved registration/control manifests are complete",
+      "observed": {
+        "all_reached_paths_exact": true,
+        "distinct_reached_path_count": 31,
+        "resolved_manifests": [
+          {
+            "all_files_exact": true,
+            "file_count": 15,
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json"
+          },
+          {
+            "all_files_exact": true,
+            "file_count": 3,
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-manifest.json"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-05",
+      "claim": "calibration reconstructs through the accepted estimator",
+      "observed": "p2-i2-i04r2-exact-three-arm-primary-estimator-v1",
+      "passed": true
+    },
+    {
+      "check_id": "I10-06",
+      "claim": "metric calibration and frozen sheet pass accepted JSON Schema",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I10-07",
+      "claim": "candidate-blind delta reconstructs exactly",
+      "observed": 1e-12,
+      "passed": true
+    },
+    {
+      "check_id": "I10-08",
+      "claim": "current I06 validates 14/14 over 15 files and the historical five-file validation reconstructs byte-identically",
+      "observed": {
+        "active_history_token_admissions": 0,
+        "candidate_or_control_contributions": 0,
+        "continuation_checks": 3,
+        "continuation_model_instantiations": 6,
+        "current_final_manifest_file_count": 15,
+        "current_registration_validation_checks": "14/14",
+        "historical_current_provenance_separate": true,
+        "historical_execution_manifest_file_count": 5,
+        "historical_registration_validation_byte_identical": true,
+        "native_steps": 6,
+        "neutral_contacts": 0,
+        "registration_validation_model_instantiations": 6,
+        "response_or_comparator_windows": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-09",
+      "claim": "all three paired restoration identities load exactly",
+      "observed": [
+        "state_carried",
+        "history_carried",
+        "hybrid"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "I10-10",
+      "claim": "restoration identity and raw observations remain separate witnesses, with only the exact admitted native normalization surface",
+      "observed": 3,
+      "passed": true
+    },
+    {
+      "check_id": "I10-11",
+      "claim": "all three equal-input no-packet continuations pass",
+      "observed": 3,
+      "passed": true
+    },
+    {
+      "check_id": "I10-12",
+      "claim": "all three paired resets return to registered baseline",
+      "observed": 3,
+      "passed": true
+    },
+    {
+      "check_id": "I10-13",
+      "claim": "C02 exact paths retain 234 evaluable terminals",
+      "observed": {
+        "accepted_retry_successes": 1,
+        "distinct_governed_paths_verified": 470,
+        "evaluable_terminals": 234,
+        "manifest_byte_identical": true,
+        "matrix_entries": 234,
+        "permanent_claims": 235,
+        "primary_successes": 233,
+        "retained_failures": 1,
+        "unsafe_terminal_claims": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-14",
+      "claim": "C02 execution manifest reconstructs byte-identically",
+      "observed": "69864b8ff2aa6124b8d44ae7000b3a4e3733e205a1773285d56c15b8868ca8c0",
+      "passed": true
+    },
+    {
+      "check_id": "I10-15",
+      "claim": "terminal receipts retain no rung or interpretation assignment",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "I10-16",
+      "claim": "historical I09 and corrected I09A index validation and report reconstruct byte-identically",
+      "observed": {
+        "comparison_rules": 38,
+        "corrected_i09a_index_byte_identical": true,
+        "corrected_i09a_report_byte_identical": true,
+        "corrected_i09a_validation_byte_identical": true,
+        "historical_i09_index_byte_identical": true,
+        "historical_i09_report_byte_identical": true,
+        "historical_i09_validation_byte_identical": true,
+        "lane_controls": 15,
+        "normalized_primary_margin_distribution": {
+          "0.0": 6,
+          "1.0": 12
+        },
+        "program_common_controls": 19,
+        "terminal_interpretation_assigned": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-17",
+      "claim": "calibration registration execution and control reports agree with machine facts",
+      "observed": {
+        "deterministic_i09_and_i09a_report_byte_reconstruction": true,
+        "semantic_claims": {
+          "i05_delta_and_validation": true,
+          "i06_registration_validation": true,
+          "i06b_overlay_validation": true,
+          "i08_causal_status_distribution": true,
+          "i08_cell_distribution": true,
+          "i08_interpretation_boundary": true,
+          "i08_mode_distribution": true,
+          "i08_producer_reason_distribution": true,
+          "i08_response_distribution": true,
+          "i08_terminal_inventory": true,
+          "i09a_normalized_margin_correction": true
+        },
+        "verified_report_count": 6
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-18",
+      "claim": "all eighteen mode-order-seed margins reconstruct",
+      "observed": 18,
+      "passed": true
+    },
+    {
+      "check_id": "I10-19",
+      "claim": "recomputed margins equal the hash-bound corrected I09A projection",
+      "observed": {
+        "0.0": 6,
+        "1.0": 12
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-20",
+      "claim": "threshold relations use only accepted delta",
+      "observed": {
+        "above_delta": 12,
+        "at_or_below_delta": 6
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-21",
+      "claim": "the complete reached bundle contains no absolute path",
+      "observed": {
+        "absolute_path_finding_count": 0,
+        "scanned_json_count": 515,
+        "scanned_path_count": 532
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-22",
+      "claim": "no scientific entry or new scientific input was generated",
+      "observed": {
+        "R01_through_R05": "unassigned_until_I11",
+        "accepted_artifact_overwrites": 0,
+        "active_history_token_admissions": 0,
+        "c02_entry_worker_invocations": 0,
+        "candidate_or_control_contributions": 0,
+        "lane_support_status": null,
+        "matrix_entry_regenerations": 0,
+        "mode_ranking": false,
+        "neutral_contacts": 0,
+        "new_scientific_inputs": 0,
+        "response_or_comparator_windows": 0,
+        "scientific_result": false,
+        "terminal_classification": null
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-23",
+      "claim": "I10 assigns no rung support ranking or terminal result",
+      "observed": {
+        "R01_through_R05": "unassigned_until_I11",
+        "accepted_artifact_overwrites": 0,
+        "active_history_token_admissions": 0,
+        "c02_entry_worker_invocations": 0,
+        "candidate_or_control_contributions": 0,
+        "lane_support_status": null,
+        "matrix_entry_regenerations": 0,
+        "mode_ranking": false,
+        "neutral_contacts": 0,
+        "new_scientific_inputs": 0,
+        "response_or_comparator_windows": 0,
+        "scientific_result": false,
+        "terminal_classification": null
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I10-24",
+      "claim": "manifest canonical payload digest reconstructs",
+      "observed": "ad36e6be2ad99be1afd4f6f054023b2c5e69ba4a2f545b59a5f47ffa5f04a8da",
+      "passed": true
+    }
+  ],
+  "duplicate_reconstruction_required": true,
+  "iteration_id": "P2-I2-I10",
+  "matrix_entry_regenerations": 0,
+  "passed_check_count": 24,
+  "scientific_interpretation": false,
+  "status": "passed"
+}

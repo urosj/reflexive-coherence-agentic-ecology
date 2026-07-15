@@ -1,0 +1,47 @@
+{
+  "artifact_id": "P2-I2-I09A-FAILED-START-001",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I09A",
+  "change_id": "P2-I2-CHG-057",
+  "status": "failed_closed_before_output",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+    "build"
+  ],
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-input-freeze.json",
+    "sha256_at_start": "0263872f4bc17b4a61fe304582777ed11a16a5a916ae6bc0edafd86d840f44fc"
+  },
+  "builder": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+    "sha256_at_start": "b2d224849a5ff6eb5438a8d347af3262c6c5d1e1b63fae97f41830f6b091dbe1"
+  },
+  "failure": {
+    "type": "ae01_tooling.ContractError",
+    "message": "I04-R2 machine policy identity drifted",
+    "stage": "first retained primary tuple before estimator evaluation",
+    "cause": "the I09A builder supplied the I04R2 machine-verification preregistration document where the accepted estimator requires configs/p2_i2_i04r2_machine_policy.json"
+  },
+  "completed_before_failure": {
+    "frozen_input_identities_verified": 13,
+    "accepted_i09_index_reconstructed_byte_identically": true,
+    "accepted_i09_validation_reconstructed_byte_identically": true,
+    "accepted_i09_report_reconstructed_byte_identically": true,
+    "retained_branch_configurations_loaded": 78,
+    "retained_matrix_entries_read": 234
+  },
+  "effect": {
+    "i09a_output_files_created": 0,
+    "accepted_estimator_invocations_completed": 0,
+    "pygrc_imports": 0,
+    "model_or_adapter_constructions": 0,
+    "candidate_or_control_invocations": 0,
+    "matrix_entry_regenerations": 0,
+    "scientific_runtime_invocations": 0,
+    "accepted_artifact_mutations": 0,
+    "scientific_result": null
+  },
+  "disposition": "retain permanently; correct only the machine-policy input binding in place within I09A; count the corrected build as a separate infrastructure start; do not create a new experiment iteration"
+}

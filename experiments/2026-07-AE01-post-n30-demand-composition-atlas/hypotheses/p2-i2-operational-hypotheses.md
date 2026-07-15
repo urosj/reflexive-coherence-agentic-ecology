@@ -1,7 +1,9 @@
 # P2-I2 Operational Hypothesis Projections
 
-**Status:** evidence-bearing through owner-accepted I09 with CONTROL-GATE
-passed; I10 is ready after the containing retention commit and remains unstarted.
+**Status:** evidence-bearing through owner-accepted I09; review-ready I09A
+corrects the I10-found estimator bypass at 24/24 with no raw-evidence or
+control-disposition change. CONTROL-GATE awaits owner reconciliation and
+RECON-GATE remains closed; no scientific interpretation is assigned.
 The accepted C02 manifest retains 234/234 evaluable mode-indexed terminals.
 I09 resolves only the already-frozen common and L02 control relations from
 those retained receipts. The three modes remain separate and unranked;
@@ -1850,6 +1852,159 @@ The owner subsequently states `please commit`, accepting this exact projection
 and its 21/21 validation. DEC-054 passes CONTROL-GATE and authorizes the
 containing retention commit. The acceptance adds no rung or terminal meaning;
 I10 remains unstarted, and the I11 revalidation duty is unchanged.
+
+#### 3.2.34 I09A normalized-estimator correction declaration
+
+The owner responds `+1` to the bounded DEC-056 proposal. DEC-057/CHG-056
+therefore authorize only an additive I09A correction over retained evidence.
+Accepted I09 remains immutable history, and I04R2, I05, I06, I08, their raw
+responses, scientific zeros, causal receipts, rules, registration, and matrix
+cannot change.
+
+I09A must first prove the accepted I09 projection reconstructs byte-exactly.
+It then replaces only the derived raw-difference `primary_margin` path in
+memory with the accepted I04R2 exact three-arm estimator for all eighteen
+mode/order/seed tuples. Candidate, q1-only, and q2-only envelopes must be
+complete and scientifically valid, the maximum must remain within each tuple,
+and exact ties retain deterministic `q1-only` provenance without scientific
+meaning. Every comparison, lane-control, and program-control disposition must
+be recomputed from the corrected projection rather than copied.
+
+This is a correction to derived control evidence, not a candidate execution or
+new scientific input. I09A imports no PyGRC, constructs no model, regenerates
+no C02 entry, assigns no mode ranking, rung, support, or terminal class, and
+persists no absolute path. Its outputs remain uncommitted and CONTROL-GATE
+remains reopened until explicit owner review. I10 remains paused and may later
+receive only an additive v2 freeze after accepted I09A retention.
+
+The first I09A build start fails closed before output or estimator evaluation:
+the builder supplied the I04R2 machine-verification preregistration document
+where `primary_margin` requires the separately accepted machine-policy JSON.
+CHG-057 retains the failure and corrects only that input binding in place,
+without creating another iteration. The start reconstructed accepted I09 bytes
+and read retained evidence but imported no PyGRC and performed no model,
+candidate/control, matrix-regeneration, or scientific-runtime operation.
+
+The corrected generation and independent reconstruction then each pass 24/24.
+All eighteen retained tuples traverse the accepted I04R2 entrypoint: the twelve
+positive normalized margins are `1.0`, and the six zero margins are `0.0`.
+State-carried retains an order-invariant `1.0/1.0` relation; history-carried
+and hybrid retain their order-conditioned `1.0/0.0` relation. The underlying
+responses remain `0.125/0.0`. Recomputing all dependent layers leaves every
+disposition unchanged: 38 comparison passes, 15 lane-control passes, and 56
+program-mode passes plus one not-applicable. This is review-ready corrected
+control evidence only; owner acceptance, CONTROL-GATE passage, commit, and I10
+resumption remain pending.
+
+#### 3.2.35 I10 reconstruction and identity-verification declaration
+
+After accepted I09 commit `cfa19fe`, the owner directs I10. DEC-055/CHG-054
+open only independent retained-evidence reconstruction and registered identity
+verification. I10 introduces no new operational hypothesis and may not alter
+an OP-01 through OP-09 projection, response, control, mode, or scientific
+input.
+
+I10 must freeze exact accepted I05J calibration, I06/I06A/I06B registration,
+I08/C02 execution, and I09 control identities before its first governed start.
+It reconstructs derived bytes only from those retained inputs, using memory or
+temporary paths and refusing to overwrite accepted artifacts. C02 execution is
+reconstructed from the frozen matrix and retained claims, failures, and
+terminal outputs; no matrix-entry worker or scientific branch may run.
+
+Restoration identity and raw snapshots remain distinct witnesses. The bounded
+runtime allowance is one check per retained mode in each declared pass: build
+the exact registered baseline, pair-save/load every owned component, verify
+the composite restoration identity, apply one identical no-packet native step
+to both branches, compare continuation result, composite identity, and raw
+observations within the separately registered runtime tolerance, then reset
+both branches and reverify the registered baseline. This is candidate-free
+identity conformance. It admits no contribution, history token, neutral
+contact, response evaluation, comparator window, seed, or L02 evidence.
+
+Any missing input, digest/path/schema drift, unsafe claim, graph mutation,
+restoration mismatch, continuation mismatch, margin mismatch, or non-byte-
+identical deterministic projection fails RECON-GATE closed. It cannot become a
+scientific null and cannot be repaired by regenerating a C02 entry or selecting
+new inputs. I10 may return only a compact reconstruction manifest, validation,
+and cumulative report for explicit review. `R01` through `R05`, support,
+terminal classification, mode ranking, I11, and CLOSE-GATE remain unopened.
+
+The first exact I10 pass fails at that boundary before output or PyGRC import.
+I09 computes `candidate - strongest` directly, whereas the accepted I04R2
+estimator divides that difference by the maximum absolute candidate,
+comparator, and arithmetic floor. Thus the twelve positive mode/order/seed
+rows reconstruct as normalized margin `1.0`, while I09 records `0.125`; the six
+zero rows remain `0.0`. This is a derived-control projection defect, not a
+change in I08 raw responses. I04R2, I05, I06, and I08 remain immutable. A
+bounded I09A correction is now complete and review-ready under DEC-057 but
+remains unaccepted and uncommitted; I10 cannot resume from technical completion
+alone.
+
+The owner then directs that I10 must be finished or have its tasks properly
+marked done. DEC-058/CHG-058 resume I10 without inventing an I10A or inferring
+commit authority. A v2 freeze may bind the exact local I09A hashes alongside
+the immutable committed lineage, and I10 may complete its previously frozen
+reconstruction/restoration passes for one combined review. CONTROL-GATE and
+RECON-GATE remain pending that review; I11 and scientific interpretation stay
+closed.
+
+The first v2 generation then fails closed before I10 output or continuation
+checks because the live accepted I06 validator result is not byte-identical to
+its retained validation. It had already verified all 47 frozen inputs,
+reconstructed calibration, C02, and the 18 corrected margins, and invoked only
+the candidate-free six-model I06 validation. CHG-059 permits one exact-field
+diagnostic before any criterion change or replacement generation.
+
+The diagnostic finds one field only: retained `I06-12.bound_file_count` is `5`
+while the live current validator reports `15`. Accepted I06A already classifies
+this exact provenance transition: the retained validation was produced by the
+historical five-file execution manifest/validator, whereas the final 15-file
+manifest binds both historical and current roles and explicitly does not claim
+the current validator as historical producer. CHG-060 therefore requires both
+witnesses—live current 14/14 validation and byte-exact reconstruction of the
+historical five-file projection. No semantic check, baseline digest, refusal,
+or gate field may differ.
+
+The provenance-corrected replacement then reaches the intended restoration
+boundary. State-carried composite identity matches after paired save/load, but
+the separately required raw snapshot does not, before any no-packet step.
+CHG-061 retains failed start 003 and permits one state-only structural diff.
+Neither composite identity nor raw observation may be waived or redefined from
+the failure alone.
+
+That diagnostic resolves the ambiguity before any further runtime. All 20
+differences are the duplicated current/reset-baseline instances of four native
+normalizations: deterministic budget-source, parameter-identity, and RNG-state
+materialization, plus canonical orientation of three undirected zero-flux
+edges. At the admitted revision, PyGRC's restoration matrix explicitly
+requires restoration-identity and equal-input-continuation stability while
+expecting the raw full-snapshot digest not to be a fixed point. CHG-062
+therefore corrects only unaccepted I10 v2: adapter raw state must remain exact,
+native raw state remains a separately retained witness with an exact closed
+normalization set, every unexpected native difference fails closed, and
+identity, equal-input continuation, and paired reset remain mandatory in all
+three modes. No raw witness is erased, no PyGRC byte is changed, and no
+scientific claim or input is introduced.
+
+The exact CHG-062 replacement generation and independent byte reconstruction
+now each pass 24/24 with zero blockers. In all three modes, load, post-step,
+and reset comparisons contain exactly the same 20 admitted native
+normalization differences and zero unexpected differences; adapter state is
+exact, restoration identities match, equal-input no-packet continuation
+matches, and paired reset returns to the registered identity. Each pass uses
+six candidate-free native no-packet steps and zero contribution, history-token,
+neutral-contact, response/comparator, C02-worker, or new scientific operation.
+All 18 corrected margins, 234 terminals, 470 governed paths, calibration,
+registration provenance, historical I09, and corrected I09A bytes reconstruct.
+This makes I09A/I10 review-ready together but does not pass CONTROL-GATE or
+RECON-GATE, accept/commit either package, authorize I11, or interpret L02.
+
+The owner then states `commit all`. DEC-059/CHG-063 accept the exact combined
+I09A/I10 hashes, pass CONTROL-GATE and RECON-GATE, and authorize one containing
+retention commit. This acceptance changes no technical byte and assigns no
+`R01`–`R05` disposition, support status, mode ranking, terminal classification,
+or scientific interpretation. I11 becomes ready only after retention and must
+still revalidate the program-common guards before assigning terminal meaning.
 
 ### 3.3 I03A state-carried realization binding
 

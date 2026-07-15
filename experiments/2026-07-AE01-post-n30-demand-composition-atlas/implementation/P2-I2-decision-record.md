@@ -89,6 +89,11 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-052` | Does the owner accept the complete 234/234 I08 package and authorize its cumulative commit? | Accepted and retained at `625a411`; I08 evidence only, with controls and interpretation still unassigned | Passes EXEC-GATE; opens I09 only after the commit | 2026-07-15 |
 | `P2-I2-DEC-053` | What may I09 resolve after accepted I08, and where must interpretation stop? | Owner directs I09 next; derive one compact mode-separated index from retained evidence only | I09 passes 21/21 and is review-ready; CONTROL-GATE, commit, I10, and R01–R05 remain pending owner review | 2026-07-15 |
 | `P2-I2-DEC-054` | Does the owner accept I09, pass CONTROL-GATE, and authorize the retention commit? | Accepted: bind the reviewed technical hashes unchanged and commit the complete I09 package | Passes CONTROL-GATE; I10 becomes ready after retention but remains unstarted | 2026-07-15 |
+| `P2-I2-DEC-055` | What exact reconstruction and identity-verification work may I10 perform after retained I09? | Owner directs I10; freeze retained evidence, reconstruct deterministically, and permit only candidate-free registered restoration checks | Opens I10 construction; RECON-GATE, I11, interpretation, and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-056` | What does I10 failed start 001 establish about the accepted I09 primary-margin projection? | Retained finding: I09 bypasses the accepted normalized I04R2 estimator; twelve positive margins are `1.0`, not `0.125` | Reopens CONTROL-GATE, stops I10 before output, and proposes bounded additive I09A | 2026-07-15 |
+| `P2-I2-DEC-057` | May the bounded I09A normalized-estimator correction begin? | Owner responds `+1`; completed package passes 24/24 twice, corrects 12 positive margins to `1.0`, retains six zeros, and changes no disposition | I09A is review-ready uncommitted; accepted bytes immutable; acceptance, commit, CONTROL-GATE passage, I10 retry, and I11 remain closed | 2026-07-15 |
+| `P2-I2-DEC-058` | Must work stop for separate I09A acceptance, or should active I10 be completed against exact correction bytes? | Owner directs I10 be finished or its tasks properly marked done; bind uncommitted I09A by hash in additive v2 and return one combined review package | Resumes I10 construction/runtime only; no I09A acceptance, commit, CONTROL/RECON gate passage, I11, or scientific interpretation is inferred | 2026-07-15 |
+| `P2-I2-DEC-059` | Does the owner accept the combined I09A/I10 package and authorize retention? | Accepted by “commit all”: exact technical hashes bound; CONTROL-GATE and RECON-GATE pass; one containing commit authorized | Makes I11 ready but unstarted; R01–R05, support, ranking, terminal classification, and interpretation remain unassigned | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2893,7 +2898,179 @@ omits part of the accepted package, CONTROL-GATE is represented as scientific
 support, I10 begins inside the commit operation, or an interpretation boundary
 is weakened.
 
-## 57. Pending decision queue
+## 57. `P2-I2-DEC-055` — Open bounded I10 reconstruction
+
+**Status:** decided for construction by explicit owner progression direction;
+RECON-GATE passage, acceptance, and commit remain pending
+
+After accepted I09 commit `cfa19fe`, the owner states: `I'd do I10 next`.
+
+**Decision:** open checklist- and hypothesis-first I10. Before any governed
+reconstruction or continuation start, bind the exact accepted calibration,
+registration, execution, control, report, schema/profile, interpreter, and
+admitted graph inputs. Reconstruct derived artifacts from retained evidence in
+memory or temporary paths and compare them to accepted bytes. Reconstruct C02
+only from its matrix and retained receipts; never invoke a matrix-entry worker
+or replace missing evidence.
+
+I10 may run one bounded registered-baseline restoration-continuation check per
+mode in each declared build/validation pass. It must pair-save/load every owned
+component, compare composite restoration identity separately from raw
+observations, apply one identical no-packet native step, compare continuation,
+and pair-reset. Candidate/control contributions, active-history admissions,
+neutral contacts, responses, comparator windows, new scientific inputs, mode
+selection, and interpretation are forbidden.
+
+The complete compact package must return uncommitted for explicit owner review.
+I10 cannot pass RECON-GATE or authorize I11 by its own output.
+
+Reopen this decision if an accepted input drifts, reconstruction overwrites an
+accepted artifact, a C02 worker or scientific operation runs, an absolute path
+is persisted, graph bytes change, a missing artifact is regenerated, or I10
+assigns any rung, support, ranking, or terminal meaning.
+
+## 58. `P2-I2-DEC-056` — I10-found I09 estimator bypass
+
+**Status:** finding retained; correction not yet authorized
+
+The first exact DEC-055 reconstruction pass verifies all 41 frozen inputs,
+reconstructs the ten arithmetic-null rows through accepted I04R2, and rebuilds
+the 234-terminal C02 manifest in memory from 470 governed paths. It then fails
+closed before output or PyGRC import.
+
+**Finding:** accepted I09 computes `candidate - strongest` directly and stores
+that raw response difference as `primary_margin`. The accepted I04R2 estimator
+is normalized:
+
+```text
+(candidate - strongest_leave_one)
+/
+max(abs(candidate), abs(strongest_leave_one), analysis_arithmetic_floor)
+```
+
+Consequently, twelve positive rows reconstruct as `1.0`, not `0.125`; six zero
+rows remain `0.0`. I08 raw evidence is unchanged. The impact on all control
+dispositions has not yet been recomputed, so prior CONTROL-GATE passage cannot
+govern progression until reconciled.
+
+**Proposed decision:** authorize checklist/hypothesis-first I09A to replace
+only the estimator bypass, rebuild the I09 index/validation/report, and
+re-evaluate every disposition. I04R2, I05, I06, I08, and all raw receipts
+remain immutable. I09A must return uncommitted for review. If accepted and
+retained, I10 may add a v2 input freeze while preserving failed start 001.
+
+No correction, retry, commit, RECON-GATE passage, or I11 authority follows from
+this finding alone.
+
+## 59. `P2-I2-DEC-057` — I09A construction authorization
+
+**Status:** accepted construction direction; package review-ready, not accepted
+
+The owner responds `+1` to DEC-056's explicit recommendation. I09A may bind
+the accepted inputs, construct one additive corrected control projection, route
+all eighteen retained primary tuples through the accepted I04R2 estimator,
+recompute every dependent disposition, and validate exact reconstruction.
+
+Accepted I09 files remain immutable historical authority. I04R2, I05, I06,
+I08, raw response/receipt bytes, rules, registration, and matrix also remain
+immutable. I09A may add only its freeze, deterministic builder/validator,
+corrected compact index, validation, cumulative correction report, and
+synchronized ledgers. It may perform no PyGRC/model/adapter/packet/C02-worker
+operation and may assign no scientific result, mode ranking, boundary rung,
+support status, or terminal class.
+
+The completed package must return uncommitted for explicit owner review.
+CONTROL-GATE remains reopened; I10 retry, RECON-GATE, I11, acceptance, and
+commit are not authorized by this decision.
+
+Reopen this decision if any accepted byte changes, the correction does not use
+the exact three-arm I04R2 entrypoint, a disposition is copied rather than
+recomputed, a new scientific input is introduced, or a runtime operation
+occurs.
+
+Construction completes after one retained in-place infrastructure failure.
+The corrected generation and independent byte reconstruction each pass 24/24.
+All eighteen tuples use the exact I04R2 entrypoint; twelve margins are `1.0`
+and six are `0.0`. All raw values and accepted bytes remain exact, and complete
+recomputation leaves all comparison, lane-control, and program-mode
+dispositions unchanged. This technical completion does not itself accept the
+package or restore CONTROL-GATE.
+
+## 60. `P2-I2-DEC-058` — Resume and finish I10
+
+**Status:** owner-directed; I10 v2 construction and bounded execution authorized
+
+After the complete I09A review handoff, the owner states: “well, I10 needs to
+be finished or properly marked tasks done.” The active work therefore does not
+stop at the correction substep. I10 may retain its v1 freeze and failed start
+001 unchanged, create one additive v2 freeze binding exact local I09A hashes,
+correct its control/margin reconstruction targets, and run its already-declared
+generation and independent-validation passes through repository `.venv`.
+
+This direction does not silently accept or commit I09A. It authorizes I10 to
+validate the hash-bound correction as part of one combined package. Every I10
+checkbox may be checked only from retained evidence produced by the applicable
+pass. Accepted I04R2/I05/I06/I08/I09 bytes remain immutable, no C02 worker or
+scientific entry may run, and the graph repository remains read-only.
+
+The completed package must return uncommitted for combined review.
+CONTROL-GATE and RECON-GATE remain pending; I11, `R01`–`R05`, support, mode
+ranking, terminal classification, scientific interpretation, and commit remain
+unauthorized.
+
+The resumed work later reaches a raw-snapshot mismatch after native composite
+identity passes. CHG-061 retains that failed start and permits one state-only
+diagnostic. The diagnostic and admitted PyGRC restoration-matrix contract show
+that raw full-snapshot digests are intentionally not a load fixed point:
+deterministic default materialization and undirected zero-flux edge
+canonicalization account for the complete difference. CHG-062 may therefore
+amend only unaccepted I10 v2 to enforce the native contract directly: exact
+adapter raw equality, closed-set native raw-difference classification, exact
+restoration identity, equal-input continuation, and paired reset. Any
+unexpected raw difference still fails closed. This adds no new iteration,
+scientific input, PyGRC mutation, acceptance, or commit authority.
+
+The CHG-062 replacement generation and independent reconstruction each pass
+24/24 with zero blockers. All three modes pass exact native restoration
+identity, closed-set raw normalization classification, equal-input no-packet
+continuation, and paired reset. All retained calibration, registration,
+234-terminal execution, historical I09, corrected I09A, and report projections
+reconstruct without a C02 worker or scientific operation. The complete I09A
+plus I10 package is therefore returned uncommitted for the combined review
+already required above; technical completion does not itself reconcile either
+gate or authorize I11.
+
+## 61. `P2-I2-DEC-059` — Combined I09A/I10 acceptance and retention
+
+**Status:** decided by explicit owner acceptance and commit direction
+
+After the complete combined review handoff, the owner states: `commit all`.
+
+**Decision:** accept the exact I09A correction and I10 reconstruction packages
+bound by
+[the combined acceptance record](../contracts/p2-i2/i09a-i10-owner-acceptance-and-gates.json).
+I09A's 24/24 generation and reconstruction correct twelve positive normalized
+margins to `1.0`, retain six zeros, and change no comparison, lane-control, or
+program-control disposition. I10's 24/24 generation and independent
+reconstruction retain all failed starts, reconstruct 234 terminals and 470
+governed paths, and pass the registered three-mode native restoration,
+closed-set raw-normalization, continuation, and reset boundary.
+
+Pass `P2-I2-CONTROL-GATE` under the corrected I09A projection and pass
+`P2-I2-RECON-GATE` under accepted I10. Authorize one containing commit of the
+complete package and synchronized governance projections. I11 becomes ready
+only after retention and remains unstarted by this decision or commit.
+
+Acceptance assigns no `R01`–`R05` disposition, support status, mode ranking,
+terminal classification, or scientific interpretation. The exact program-
+common guard revalidation remains an I11 obligation.
+
+Reopen DEC-059 if a technical hash differs from the acceptance record, the
+containing commit omits a bound artifact, either gate is represented as a
+scientific result, I11 begins inside the commit operation, or any interpretation
+boundary is weakened.
+
+## 62. Pending decision queue
 
 No item below is decided by this record yet:
 
