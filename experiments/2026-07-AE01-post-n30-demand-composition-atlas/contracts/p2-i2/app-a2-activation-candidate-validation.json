@@ -1,0 +1,360 @@
+{
+  "artifact_id": "p2_i2_app_a2_activation_candidate_validation",
+  "artifact_version": "1.0",
+  "authority_effect": "Candidate validation only; activation commit and campaign remain unauthorized.",
+  "authorization": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+    "sha256": "eedef4bc95812d6f61f3f982110e83ed460fc3553eeee9d4b2f905b958677925"
+  },
+  "checks": [
+    {
+      "check_id": "authority.artifact",
+      "observed": "P2-I2-APP-A2-ACTIVATION-AUTHORIZATION",
+      "passed": true
+    },
+    {
+      "check_id": "authority.runtime_status",
+      "observed": "active_for_single_campaign",
+      "passed": true
+    },
+    {
+      "check_id": "authority.candidate_no_effect",
+      "observed": {
+        "Appendix_results": 0,
+        "activation_commit_authorized": false,
+        "campaign_start_authorized": false,
+        "campaign_starts": 0,
+        "candidate_uncommitted": true,
+        "child_arm_starts": 0,
+        "runtime_outputs": 0,
+        "scientific_gate_signatures": 0,
+        "scientific_models": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "rcae.exact_head",
+      "observed": "c435b00472b97020041783c8b89d6cb7135edbb3",
+      "passed": true
+    },
+    {
+      "check_id": "rcae.branch",
+      "observed": "p2-i2-experiment",
+      "passed": true
+    },
+    {
+      "check_id": "rcae.exact_candidate_dirty_scope",
+      "observed": [
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_activation_validate.py"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "authority.uncommitted",
+      "observed": false,
+      "passed": true
+    },
+    {
+      "check_id": "freeze.hash",
+      "observed": "d6dda99b6460f8d30f491a20436015fa7ce15d1b32968e9b57a2dc7a71c8f301",
+      "passed": true
+    },
+    {
+      "check_id": "freeze.status",
+      "observed": "validated_inactive_pending_owner_activation",
+      "passed": true
+    },
+    {
+      "check_id": "freeze.authorization_path",
+      "observed": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+      "passed": true
+    },
+    {
+      "check_id": "freeze.implementation_commit",
+      "observed": "c435b00472b97020041783c8b89d6cb7135edbb3",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.analysis.frozen_hash",
+      "observed": "f273caddee68eea142b0c83b22380df969c7065a1510bb1e577441b19eb51e7a",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.analysis.committed_byte_equal",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.runner.frozen_hash",
+      "observed": "f15c2f6b07fb3488a4e0e0471077d582d90af82f683695c6c73891260a2ab3af",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.runner.committed_byte_equal",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.reconstructor.frozen_hash",
+      "observed": "0af95ee22a8819ceab7675afdb02cff066d52c60f801b1192ad822a8367ce2f4",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.reconstructor.committed_byte_equal",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "implementation.validator.frozen_hash",
+      "observed": "43457a6dd6f46a206396f1ff9f2111936eefba5be1cac9842f6a757607e71c4a",
+      "passed": true
+    },
+    {
+      "check_id": "implementation.validator.committed_byte_equal",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "inactive.hash",
+      "observed": "2d23652e2342fa1120f0f2eabe0d82f80e1fb23bdfbf73ef3f5944eb7058600e",
+      "passed": true
+    },
+    {
+      "check_id": "inactive.committed_byte_equal",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "inactive.passed",
+      "observed": [
+        96,
+        96
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "inactive.digest",
+      "observed": "3a4f93e4251a61a8d5453f2887d39375ba61487926587c83765a543a6b850418",
+      "passed": true
+    },
+    {
+      "check_id": "inactive.zero_science",
+      "observed": {
+        "Appendix_results_assigned": 0,
+        "child_arm_starts": 0,
+        "pygrc_imports": 0,
+        "runtime_outputs_created": 0,
+        "scientific_gate_signatures": 0,
+        "scientific_models": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "owner.hash",
+      "observed": "f1830ac8d40bbc8312965760b3eba69a76986255429d55c72e37a8c3ee954ced",
+      "passed": true
+    },
+    {
+      "check_id": "owner.committed_byte_equal",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "owner.accepted",
+      "observed": "owner_accepted_containing_commit_authorized",
+      "passed": true
+    },
+    {
+      "check_id": "policy.owner_acceptance",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "policy.one_campaign",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "policy.zero_campaign_retry",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "policy.one_arm_attempt",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "policy.zero_arm_retry",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "policy.commands",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "outputs.match_freeze",
+      "observed": {
+        "aggregate_absent": true,
+        "aggregate_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+        "claim_survives_failure": true,
+        "exclusive_aggregate_claim_consumes_authorization": true,
+        "reconstruction_absent": true,
+        "reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+        "second_campaign_start_refused": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "outputs.absent",
+      "observed": [
+        false,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "outputs.exclusive_permanent_claim",
+      "observed": {
+        "aggregate_absent": true,
+        "aggregate_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+        "claim_survives_failure": true,
+        "exclusive_aggregate_claim_consumes_authorization": true,
+        "reconstruction_absent": true,
+        "reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+        "second_campaign_start_refused": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "outputs.relative",
+      "observed": {
+        "aggregate_absent": true,
+        "aggregate_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+        "claim_survives_failure": true,
+        "exclusive_aggregate_claim_consumes_authorization": true,
+        "reconstruction_absent": true,
+        "reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+        "second_campaign_start_refused": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "environment.venv",
+      "observed": ".venv/bin/python",
+      "passed": true
+    },
+    {
+      "check_id": "environment.python",
+      "observed": "3.12.3",
+      "passed": true
+    },
+    {
+      "check_id": "environment.interpreter",
+      "observed": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+      "passed": true
+    },
+    {
+      "check_id": "environment.dependencies",
+      "observed": {
+        "PyYAML": "6.0.3",
+        "matplotlib": "3.10.9",
+        "networkx": "3.6.1",
+        "pyvis": "0.3.2"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "environment.commands_relative",
+      "observed": {
+        "campaign": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=../graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --campaign --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+        "reconstruction": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_reconstruct.py --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --input experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+        "validation": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_validate.py --entry-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json --activation-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-activation-freeze.json",
+        "worker": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --worker --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "graph.commit",
+      "observed": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "passed": true
+    },
+    {
+      "check_id": "graph.clean",
+      "observed": "",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/__init__.py",
+      "observed": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/models/lgrc_9_v3_runtime.py",
+      "observed": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/models/lgrc_9_v3_packets.py",
+      "observed": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "passed": true
+    },
+    {
+      "check_id": "graph.source.src/pygrc/models/lgrc_9_v3_restoration.py",
+      "observed": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "passed": true
+    },
+    {
+      "check_id": "isolation.no_app_a2_cache",
+      "observed": [],
+      "passed": true
+    },
+    {
+      "check_id": "portability.no_absolute_paths",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "counts.zero",
+      "observed": {
+        "Appendix_results": 0,
+        "activation_commit_authorized": false,
+        "campaign_start_authorized": false,
+        "campaign_starts": 0,
+        "candidate_uncommitted": true,
+        "child_arm_starts": 0,
+        "runtime_outputs": 0,
+        "scientific_gate_signatures": 0,
+        "scientific_models": 0
+      },
+      "passed": true
+    }
+  ],
+  "checks_passed": 51,
+  "checks_total": 51,
+  "experiment_id": "2026-07-AE01",
+  "failed_checks": [],
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "implementation_commit": "c435b00472b97020041783c8b89d6cb7135edbb3",
+  "iteration_id": "P2-I2-APP-A2",
+  "output_digest": "a82ba5e6a3856085f08804367b3b4a9106cc6889f792021481c55fdc7a61b027",
+  "status": "passed",
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_activation_validate.py",
+    "sha256": "dd7760a9f6369cfb3f98080c031cf6fd3ffa983fe66d224ff4355c7d0181f35e"
+  },
+  "zero_science_receipt": {
+    "Appendix_results_assigned": 0,
+    "child_arm_starts": 0,
+    "pygrc_imports": 0,
+    "runtime_outputs_created": 0,
+    "scientific_gate_signatures": 0,
+    "scientific_models": 0
+  }
+}

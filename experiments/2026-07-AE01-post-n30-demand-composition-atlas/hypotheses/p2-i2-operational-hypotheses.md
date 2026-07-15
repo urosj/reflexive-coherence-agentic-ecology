@@ -2874,3 +2874,42 @@ binding that exact implementation commit and the already-frozen commands. The
 campaign remains closed until that authorization is itself validated and
 retained. Acceptance therefore supplies progression authority, not scientific
 evidence.
+
+### 17.14 Commit-bound activation-construction projection
+
+The accepted inactive package is retained at commit `c435b00`. Activation
+construction may now create one proposed authorization whose bytes bind that
+exact implementation commit, inactive freeze, retained 96/96 validation,
+repository `.venv`, checkout-only PyGRC identity, normalized commands, absent
+outputs, one campaign attempt, 19 one-attempt arms, and zero retry.
+
+The proposed authorization has no effect while uncommitted. A zero-science
+validator must prove its exact fields, committed/local implementation-byte
+equality, clean retained base commit, output and import-cache absence, and
+unchanged graph/environment identities without importing PyGRC or constructing
+a model. This substage may return the candidate for owner review; it may not
+commit the authorization, claim the aggregate, start a child, evaluate a gate,
+or assign an Appendix result.
+
+The exact candidate is now constructed against commit `c435b00` and passes
+51/51 activation checks. Its runtime-shaped `active_for_single_campaign` and
+`campaign_authorized=true` fields are prospective bytes for review, not
+current authority: the candidate remains untracked in HEAD, records current
+commit/campaign authority as false, and is mechanically refused by the runner.
+All four activation-validation processes used the repository `.venv`, imported
+no PyGRC, and constructed no model. No scientific count changed.
+
+### 17.15 Activation acceptance and live projection
+
+The owner states `accept, continue`, accepting the exact 51/51 commit-bound
+activation candidate, authorizing its containing commit, and authorizing the
+single frozen campaign from the resulting clean HEAD. The prospective active
+fields become effective only after successful retention and the runner's exact
+preflight.
+
+The live projection is unchanged: one exclusive aggregate claim, all 19 frozen
+arm attempts in order, one fresh `.venv` child/model per arm, zero retry or
+adaptive choice, fail-closed completeness, and one retained aggregate. After
+that aggregate exists, the already-frozen PyGRC-free reconstructor is
+authorized to derive byte-identical analysis and one closeout. Result
+acceptance and result commit remain closed pending owner review.

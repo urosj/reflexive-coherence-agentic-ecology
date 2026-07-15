@@ -41,10 +41,11 @@ Historical I00–I07 gate and iteration detail remains retained below.
 **Lane:** `AE01-L02`
 
 **Current activity iteration:** `P2-I2-APP-A2` inactive implementation is
-complete, passes 96/96, and is owner-accepted under DEC-070/CHG-075. One
-containing implementation commit is authorized. Only after commit success may
-the separate activation authorization be constructed; campaign starts, child
-arms, scientific gate evaluation, and Appendix interpretation remain closed.
+retained at `c435b00`. DEC-071/CHG-076 authorize one commit-bound activation
+candidate and zero-science validation only; that candidate now passes 51/51
+and is owner-accepted under DEC-072/CHG-077. One activation commit, exact
+clean-HEAD preflight, single campaign, and read-only reconstruction are
+authorized. Result acceptance and result commit remain closed.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -3917,6 +3918,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-073` | Owner directs APP-A2, explicitly accepts APP-A1, and permits a commit only if needed; the frozen APP-A2 entry condition requires retention | `appendix_a1_owner_acceptance_and_necessary_retention` | Bind the exact reviewed technical hashes; accept APP-A1; authorize one containing retention commit because it is necessary for APP-A2 progression; perform no APP-A2 work inside retention | Acceptance/navigation only; reviewed technical bytes unchanged; zero APP-A2 arm, scientific gate, or result | DEC-068, 53/53 complete validation, 29/29 byte-reconstructed conformance, inactive execution freeze | Active through the one authorized retention commit; APP-A2 may be declared only afterward |
 | `P2-I2-CHG-074` | APP-A1 retention succeeds at `1f69816`; owner states `ok, now you can do APP-A2` | `appendix_a2_checklist_hypothesis_first_implementation_entry` | Declare APP-A2 before implementation; bind retained APP-A1 and environment; construct exact fresh-process runner, read-only reconstructor, inactive activation freeze, and zero-science validation only | Final inactive validation 96/96; zero PyGRC import/model/arm/gate/result; no value/control/claim change | DEC-069, retained 19-arm execution freeze, owner acceptance, `.venv`, checkout-only PyGRC, graph read-only | Construction complete and review-ready; scientific activation, acceptance, and commit closed |
 | `P2-I2-CHG-075` | Owner confirms `yes` to explicit inactive-package acceptance, containing-commit authorization, and post-commit activation-authority construction | `appendix_a2_inactive_package_acceptance_and_retention` | Bind exact reviewed technical hashes in one acceptance overlay; authorize one containing commit; after success open activation-authorization construction only | Acceptance/retention only; 96/96 bytes unchanged; zero campaign/model/arm/gate/result | DEC-070, accepted technical hashes, inactive validation, reviewed report | Active through containing commit; activation commit and campaign remain closed |
+| `P2-I2-CHG-076` | Accepted inactive package is retained at clean commit `c435b00` | `appendix_a2_commit_bound_activation_candidate` | Construct one exact prospective activation authorization and one PyGRC-free validator; bind the containing commit, frozen commands, outputs, graph, `.venv`, and zero-retry policy; return uncommitted | 51/51 after one validator-only status-parser correction; zero campaign/model/arm/gate/result; candidate has no effect while uncommitted | DEC-071, commit `c435b00`, inactive freeze and 96/96 validation, owner acceptance overlay | Complete and review-ready; activation commit and campaign closed |
+| `P2-I2-CHG-077` | Owner states `accept, continue` after the exact 51/51 activation handoff | `appendix_a2_activation_acceptance_and_single_campaign` | Bind exact activation hashes; authorize one containing activation commit, exact clean-HEAD preflight, one exclusive-claim campaign, and retained-aggregate-only reconstruction | Acceptance bytes only before commit; runtime may begin only after clean committed preflight; zero retry | DEC-072, activation authorization/validation/validator hashes, implementation commit `c435b00`, frozen commands | Active through commit/campaign/reconstruction; result acceptance and commit closed |
 
 ## 19. Evidence ledger
 
@@ -4269,9 +4272,9 @@ APP-A2/scientific runs = 0
 
 ### 20.2 `P2-I2-APP-A2` — Frozen fresh-runtime matrix and closeout
 
-**Status:** inactive implementation package complete, 96/96 validated, and
-owner-accepted under DEC-070; containing commit authorized, scientific
-activation closed.
+**Status:** activation candidate accepted under DEC-072; activation commit,
+single campaign, and read-only reconstruction authorized; result acceptance
+closed.
 
 ```text
 iteration_id = P2-I2-APP-A2
@@ -4318,9 +4321,13 @@ APP-A2 checklist:
 - [x] Stop for the exact activation disposition before the one campaign.
 - [x] Obtain explicit owner acceptance of the exact inactive package and
   authorization for its containing implementation commit.
-- [ ] Retain the accepted package in one containing commit, then construct and
-  validate the exact commit-bound activation authorization without running the
-  campaign.
+- [x] Retain the accepted package in one containing commit (`c435b00`).
+- [x] Construct and validate the exact commit-bound activation authorization
+  without running the campaign; return it uncommitted for owner review.
+- [x] Obtain explicit owner acceptance of the exact 51/51 activation candidate
+  and authority for one containing activation commit and single campaign.
+- [ ] Commit the accepted activation package, verify the exact clean committed
+  HEAD, and invoke the one governed campaign through `.venv`.
 - [ ] If activated, execute exactly 19 arms once, fail closed on any missing or
   nonevaluable arm, and retain only the one aggregate runtime artifact.
 - [ ] Reconstruct and interpret only from that retained aggregate; validate the
@@ -4361,4 +4368,25 @@ aggregate and reconstruction outputs currently present = false
 inactive validation = 96/96 passed
 activation authorization present = false
 campaign authorized = false
+```
+
+Activation-candidate counts:
+
+```text
+activation candidate files = 1
+activation validator files = 1
+activation validation artifacts = 1
+activation validator starts = 3 (50/51 check-only; corrected 51/51
+                                 check-only + retained)
+activation validator diagnostics = 1
+total activation Python processes = 4
+PyGRC imports = 0
+scientific models = 0
+child arm starts = 0
+scientific gate signatures = 0
+runtime outputs = 0
+Appendix results = 0
+activation candidate tracked in HEAD = false
+activation commit authorized = false
+campaign authorized now = false
 ```

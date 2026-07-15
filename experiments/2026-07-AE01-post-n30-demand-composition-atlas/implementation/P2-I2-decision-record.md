@@ -105,6 +105,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-068` | Does the owner accept APP-A1, and is its retention commit authorized before requested APP-A2 progression? | Yes: explicit acceptance; commit authorized only because the frozen APP-A2 entry condition requires it | One containing APP-A1 retention commit; APP-A2 may be declared only afterward; no APP-A2 runtime or result is authorized by acceptance | 2026-07-15 |
 | `P2-I2-DEC-069` | What APP-A2 work opens after retained APP-A1 and the owner's renewed direction? | Checklist/hypothesis-first implementation complete; inactive package passes 96/96 with zero science and awaits owner activation disposition | Exact inactive activation boundary reached; campaign, arms, gates, interpretation, acceptance, and commit remain closed | 2026-07-15 |
 | `P2-I2-DEC-070` | Does the owner accept the exact inactive APP-A2 package and authorize retention plus activation-authority construction? | Yes: exact 96/96 package accepted; one containing commit authorized; activation record construction follows the commit | Commit only now; activation authorization commit and campaign remain separately closed | 2026-07-15 |
+| `P2-I2-DEC-071` | What exact activation work opens after implementation retention commit `c435b00`? | Commit-bound candidate constructed; activation validation passes 51/51 after one validator-only parser correction | Candidate review-ready uncommitted; activation commit and campaign remain closed | 2026-07-15 |
+| `P2-I2-DEC-072` | Does the owner accept the 51/51 activation candidate and authorize live progression? | Yes: `accept, continue`; one activation commit and one clean-HEAD campaign authorized, followed by read-only reconstruction | Opens exact commit/preflight/campaign/reconstruction only; result acceptance and commit remain closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3675,11 +3677,83 @@ Reopen if any accepted technical hash changes before retention, the containing
 commit omits an accepted artifact, activation construction begins before
 commit success, or acceptance is represented as scientific evidence.
 
-## 73. Pending decision queue
+## 73. `P2-I2-DEC-071` — Construct the commit-bound activation candidate
+
+**Status:** candidate construction complete at 51/51; owner review pending,
+activation commit and campaign closed
+
+The accepted APP-A2 implementation package was retained cleanly at commit
+`c435b00`. DEC-070 authorizes the next construction step but not its retention
+or use.
+
+**Decision:** construct one proposed activation authorization binding the full
+implementation commit, exact inactive freeze, retained validation, accepted
+owner overlay, `.venv` and checkout-only graph identities, normalized parent,
+worker, and reconstruction commands, absent outputs, and exact one-campaign,
+19-arm, one-attempt, zero-retry policy. Its runtime-shaped active fields are
+prospective only: the existing runner mechanically refuses the record unless
+it is owner-accepted, tracked in HEAD, byte-equal to HEAD, and invoked from a
+clean authority tree.
+
+Create one activation-specific validator that imports no PyGRC and constructs
+no model. It must validate committed/local technical-byte equality, candidate
+fields, environment, graph, output/cache absence, and the retained 96/96
+inactive validation. Return the candidate and validation uncommitted.
+
+This decision authorizes no activation commit, aggregate claim, child arm,
+scientific gate, reconstruction, or Appendix classification. Reopen if the
+base commit is dirty or drifts, a runtime-shaped field differs from the frozen
+contract, validation requires PyGRC, or any output appears.
+
+The proposed authorization binds commit `c435b00`, the exact frozen commands,
+one campaign, 19 single-attempt arms, and zero retry. It retains runtime-shaped
+active fields so accepted bytes will not change before a possible activation
+commit, but records its present effect as uncommitted and unauthorized. The
+runner refuses it because it is not tracked in HEAD.
+
+The first check-only validator start reported 50/51 solely because its helper
+trimmed the leading status column from the first `git status --short` row. One
+PyGRC-free diagnostic isolated that parser defect. Replacing whole-output
+`strip` with trailing-only `rstrip` preserved the status column; the corrected
+check-only and retained validations both pass 51/51. Across all four processes,
+PyGRC imports, models, child arms, gate signatures, runtime outputs, and
+Appendix results remained zero.
+
+## 74. `P2-I2-DEC-072` — Accept activation and authorize the single campaign
+
+**Status:** decided by explicit owner direction; activation commit and one
+campaign authorized
+
+After the exact activation candidate and 51/51 validation are returned, the
+owner states `accept, continue`.
+
+**Decision:** accept the exact authorization, activation validator, and
+retained validation hashes. Authorize one containing activation commit. From
+that resulting clean HEAD only, invoke the exact frozen campaign command. Its
+preflight must revalidate tracked/local authorization equality, implementation
+ancestry and hashes, retained 96/96 validation, graph/environment identities,
+output absence, and clean authority state before atomically claiming the sole
+aggregate path.
+
+The claim consumes the one campaign authorization even if the campaign fails.
+Every one of the 19 frozen rows receives one fresh child/model attempt and zero
+retry; an incomplete arm cannot suppress later attempts, but any missing or
+invalid receipt makes the matrix nonevaluable. After the aggregate is retained,
+authorize only the frozen read-only reconstruction. Return the resulting
+uncommitted evidence and closeout for owner review.
+
+This decision does not accept a future result, authorize a result commit,
+change a gate/control/value, permit a retry, or open cross-lane synthesis or
+N31+. Reopen if accepted activation bytes drift before commit, the post-commit
+tree is dirty, preflight fails before claim, or any execution departs from the
+frozen command or attempt policy.
+
+## 75. Pending decision queue
 
 APP-A2 implementation construction and zero-science activation validation are
-complete and owner-accepted under DEC-069/070 and CHG-074/075 at 96/96. The one
-containing implementation commit is authorized. After it succeeds, activation
-authorization construction may begin. The activation commit, single campaign,
-Appendix interpretation, cross-lane synthesis, and native substitution remain
-closed.
+complete, owner-accepted, and retained at `c435b00`. DEC-071/CHG-076 produced
+one exact activation candidate with 51/51 zero-science validation. Owner review
+accepts that candidate under DEC-072/CHG-077. One activation commit, exact
+post-commit preflight, single campaign, and read-only reconstruction are now
+authorized. Result acceptance/commit, cross-lane synthesis, and native
+substitution remain closed.

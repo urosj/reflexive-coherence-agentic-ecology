@@ -19,7 +19,9 @@ reconstruction/closeout:                absent
 Appendix result:                        unassigned
 inactive validation:                    96/96 passed
 owner acceptance:                       granted under DEC-070
-containing implementation commit:       authorized, pending
+containing implementation commit:       retained at c435b00
+activation candidate validation:         51/51 passed
+activation candidate tracked in HEAD:    false
 ```
 
 ## Implemented causal path
@@ -104,3 +106,24 @@ authorization may be constructed against it and returned for validation. Only
 a later explicitly accepted and retained activation may make the exclusive
 campaign claim. The campaign, scientific gates, reconstruction, and bounded
 Appendix classification remain closed now.
+
+The implementation package is now retained at `c435b00`. The separately
+constructed activation candidate binds that full commit and passes 51/51
+zero-science checks. Its active-shaped runtime fields are deliberately
+prospective: the candidate remains uncommitted, its present-effect fields deny
+activation/campaign authority, and the runner refuses an authorization not
+tracked byte-identically in HEAD.
+
+The first activation-validator check-only start stopped at 50/51 because the
+validator stripped the first `git status` row's leading status column. One
+PyGRC-free diagnostic identified that parser defect; the corrected check-only
+and retained runs pass 51/51. These four `.venv` processes imported no PyGRC,
+constructed no model, and created no runtime output. Owner review of the exact
+authorization and validation is now required before any activation commit or
+campaign start.
+
+The owner now states `accept, continue`. DEC-072 accepts the exact 51/51
+activation bytes and authorizes their containing commit, the runner's exact
+clean-HEAD preflight and exclusive claim, the single 19-arm campaign, and the
+frozen retained-aggregate-only reconstruction. Result acceptance and result
+commit remain closed until the resulting evidence is returned for review.
