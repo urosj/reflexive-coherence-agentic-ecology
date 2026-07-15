@@ -1,0 +1,79 @@
+{
+  "artifact_id": "P2-I2-I02R1-CHG-004-FREEZE-TRANSITION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I02R1",
+  "change_id": "P2-I2-CHG-004",
+  "status": "reconstructed_and_revalidated",
+  "governance_class": "source_admission_scope_correction",
+  "governance_correction": "The original audit_scope_correction label was not allowed after I01. I02R1 corrects the class without changing the historical trigger, timing, source paths, callable expansion, or no-evidence effect.",
+  "canonical_semantic_digest_rule": "SHA-256 over UTF-8 JSON serialized with sorted keys, comma/colon separators, and ensure_ascii=false",
+  "predecessor": {
+    "artifact_version": "1.0.0",
+    "byte_exact_file_retained": false,
+    "file_sha256_available": false,
+    "honest_boundary": "The original untracked 1.0.0 file bytes were overwritten before retention. No byte-exact file digest is claimed.",
+    "semantic_reconstruction_complete": true,
+    "semantic_reconstruction_rule": "Start from retained 1.0.1; set artifact_version to 1.0.0; replace public_runtime_methods with original_public_runtime_methods in the recorded order; set scope_corrections to an empty list; leave every other field unchanged.",
+    "reconstructed_semantic_sha256": "e9c4a6f135724eccdd7713dfb40377cd72cfd1fff6fa5f069b52d123a42b2e9a",
+    "original_public_runtime_methods": [
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.set_state",
+      "pygrc.models.LGRC9V3.snapshot",
+      "pygrc.models.LGRC9V3.load"
+    ]
+  },
+  "current": {
+    "artifact_version": "1.0.1",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-source-admission-input-freeze.json",
+    "file_sha256": "0ce2cbd8315faecdc9b433f767d95a7c34aa32386f84cda9c22c1d31b32760ca",
+    "semantic_sha256": "7ba3446c412c705423547ba8de123f4cf6b493429a7ad65d5388a33f7ecb8296",
+    "public_runtime_method_count": 14
+  },
+  "added_public_runtime_methods": [
+    {
+      "symbol": "pygrc.models.LGRC9V3.from_state",
+      "relevance": "Public construction from supported state; constructor parameters and the reset baseline require explicit identity coverage."
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.step",
+      "relevance": "Consumes pending native queue state and changes continuation."
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.run_event_queue",
+      "relevance": "Bounded queue processing changes continuation from serialized pending operations."
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.set_causal_flux_routes",
+      "relevance": "Route configuration changes future packet continuation and must be represented in native runtime identity."
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.reset",
+      "relevance": "Replaces current state with a private construction/load baseline that is not separately represented by the native identity; later registered continuation must forbid reset or compose an explicit reset-baseline identity."
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.save",
+      "relevance": "Serializes the native snapshot consumed by the provider; filesystem location is external and non-causal to identity."
+    }
+  ],
+  "timing": {
+    "trigger": "First in-scope I02 runtime read exposed the omitted public counterparts.",
+    "before_any_admission_role": true,
+    "before_provider_disposition": true,
+    "source_path_added": false,
+    "conclusion_from_incomplete_scope_retained": false,
+    "expansion_driven_by_source_completeness": true,
+    "expansion_driven_by_desired_realization": false
+  },
+  "rerun": {
+    "original_complete_review_rerun": true,
+    "i02r1_enriched_complete_review_required": true,
+    "new_rows_only_is_sufficient": false,
+    "expected_symbol_count": 24,
+    "expected_runtime_method_count": 14
+  },
+  "claim_boundary": "This transition reconstructs and governs callable scope only. It does not select or validate a realization, provider adoption, restoration correctness, continuation equivalence, or L02 result."
+}

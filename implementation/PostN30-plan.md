@@ -2,9 +2,9 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.26
+**Plan revision:** 0.43
 
-**Date:** 2026-07-12
+**Date:** 2026-07-15
 
 **Scope:** repository architecture, directive hierarchy, Post-N30 atlas program,
 LGRC consumption boundary, specification promotion, and implementation sequence
@@ -1766,11 +1766,13 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.26:
+Current dependency order after revision 0.43:
 
-1. Begin P2-I2 with a lane brief that binds D-039's inherited relation,
-   ecology discriminator, controlled consequence, and insufficient-repetition
-   case before candidate-blind calibration.
+1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
+   I09A control projection, I10 reconstruction, and I11 terminal closeout
+   support only the bounded shared-pool co-conditioning demand pattern. The
+   three modes remain separate; cross-lane synthesis, active-history native
+   substitution, mode ranking, and N31+ selection remain unopened.
 2. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1859,6 +1861,17 @@ directive.
 | 2026-07-10 | Revision 0.24: accepted D-038 and explicitly reopened/refroze P1-I3 through P1-I5 with schema `1.1.0`, first-class metric sheets, candidate-blind calibration, machine-derived threshold relations, lane boundary ladders, two-axis developmental interpretations, classification-value and next-move discipline, and guarded local refinement. Thresholds remain frozen anchors without erasing lower or unexpected classes; no lane evidence opened. |
 | 2026-07-10 | Revision 0.25: recorded Review R2 over the complete P1-I1 through P1-I5 freeze, assigned `AE01-C1` and `AE01-C2`, and passed `P1-GATE`. Phase 2 candidate-blind calibration and lane registration are open; candidate execution remains behind each lane-local resolution/registration gate. Reconstructable calibration provenance, explicit registration evidence, and resolved control outcomes are mandatory proportional guards, while R3 decides whether concrete use justifies new first-class records. No positive atlas result is assigned. |
 | 2026-07-12 | Revision 0.26: accepted D-039 after P2-I1/R3, requiring future lanes to name an inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. Added targeted prospective amendments for L03 trace dynamics beyond static persistence and L06 budget-closing circulation beyond linear transport. P2-I1, shared schemas, stable IDs, and retained evidence remain closed and unchanged. |
+| 2026-07-14 | Revision 0.27: accepted the P2-I2 semantic brief and opened only checklist-governed artifact construction. Added one evidence-expandable P2-I2 activity checklist, one cumulative decision record, and subordinate operational-hypothesis projections; every later action, including capability and source-admission audits, must be a named retained iteration. No P2-I2 source admission, calibration, registration, execution, or result is assigned. |
+| 2026-07-14 | Revision 0.28: completed `P2-I2-I01` under a frozen read-only capability-audit scope. Retained an eleven-question matrix, a bounded native node-coherence/packet/feedback/restoration shortlist, explicit inadequate control and pool-dynamics surfaces, exact command/source provenance, focused source-current conformance, and a clean graph checkout. Passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization selection, calibration, execution, and lane evidence remain unopened. |
+| 2026-07-14 | Revision 0.29: completed checklist-first `P2-I2-I01R1` against the owner-supplied capability-audit closeout standard. Quarantined the custom combined/single/label behavioral probe from capability and scientific evidence, revalidated surviving claims from public source contracts and pre-existing generic tests, corrected CAP-04 to inadequate, and added explicit public-support, intervention-readiness, mode-neutrality, causal-history, and restoration-ownership profiles. Re-passed only `P2-I2-SOURCE-AUDIT-GATE`; source admission, realization/dependence-mode selection, calibration, candidate evidence, execution, and lane results remain unopened. |
+| 2026-07-14 | Revision 0.36: synchronized stable program cover through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority; original I04/I04R1 remain immutable history. Its complete-arm strongest-marginal estimator, exact arithmetic-only I05 path, retained-output byte reconstruction, fixed window, and causal receipt guards passed 16/16 focused checks and 7/7 pure tests. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation; no null, I06, candidate/control, or result is assigned. |
+| 2026-07-14 | Revision 0.37 draft: constructed the separately required I05 authorization candidate against accepted-I04 commit `b7b008c`. Identity validation passed 12/12, but I05A passed 3/8 and failed proposed DEC-027 closed on five one-shot safety defects. DEC-028 then authorized a strictly I05-owned correction: one permanent exclusive-claim wrapper, one one-shot policy, committed-HEAD/clean-state/exact-interpreter/command binding, one attempt/zero retries, and readback-only attempt/final receipts. Ten zero-null tests and 12/12 machine checks pass with byte reconstruction and immutable I04R2 hashes. The correction is uncommitted/inactive; no owner-acceptance record, claim/final receipt, null output, delta, metric-sheet result, CAL-GATE passage, I06, candidate/control operation, or scientific result exists. |
+| 2026-07-14 | Revision 0.38: owner-accepted I05B under DEC-029 and authorized its complete authority-package commit. Acceptance and null launch are machine-separated: the immutable acceptance record sets commit true/null false, while 10.4 requires a distinct committed launch record. Local ext4 non-temporary claim storage and empty/partial/symlink occupation refusal extend the focused suite to 12/12; machine validation remains 12/12 with zero builder/null/PyGRC/candidate/control execution and immutable I04R2 bytes. The owner separately directed 10.4 after this commit; CAL-GATE remains closed until its governed output is reviewed. |
+| 2026-07-14 | Revision 0.39: retained the failed-before-claim final preflight at launch commit `98770ae`. The governed command used the active repository `.venv`, but the accepted wrapper incorrectly sent its symlink through the repository-data resolver and rejected the resolved `system-interpreter:python3.12` target. DEC-031/CHG-024 separates exact lexical `.venv/bin/python` command/active-venv identity from the resolved digest-bound binary. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass; I04R2 is unchanged, no attempt/output exists, and the correction is uncommitted pending owner review. |
+| 2026-07-14 | Revision 0.40: synchronized current program cover through the existing uncommitted I05J amendment. The sole governed arithmetic null is consumed; all I05 portability groups are retained through I05I commit `b5d0acb`; I05J/I05JA retain the estimator-preserving projection, native metric artifacts, delta `1e-12`, and 11/11 reconstruction. The amendment records exact dependency/native/validator process history and package hashes without rerun. CAL-GATE, I06, candidate execution, and scientific results remain closed pending owner review. |
+| 2026-07-14 | Revision 0.41: records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves 11/11 reconstruction, delta `1e-12`, complete process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. |
+| 2026-07-15 | Revision 0.42: synchronized the master checklist through owner-accepted I08A. C01 remains bounded incomplete; C02 preserves all 234 projections while replacing only the inadequate process-address-space ceiling with external native-exit supervision and retained runtime/file-size bounds. |
+| 2026-07-15 | Revision 0.43: closes P2-I2 under owner-accepted DEC-061 after complete 234/234 C02 execution, corrected I09A control projection, I10 retained-evidence reconstruction, and 30/30 I11 interpretation validation. The terminal is `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries; no mode ranking, synthesis, native substitution, or N31+ work is opened. |
 
 ## 18. Program completion criteria
 

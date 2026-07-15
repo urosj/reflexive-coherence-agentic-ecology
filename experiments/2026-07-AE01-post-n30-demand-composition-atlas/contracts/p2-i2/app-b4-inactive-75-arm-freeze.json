@@ -1,0 +1,288 @@
+{
+  "analysis_policy": {
+    "dose_multiset": "compare response groups by sorted three-symbol multiset",
+    "exact_total_permutations": [
+      "GEP",
+      "GPE",
+      "EGP",
+      "EPG",
+      "PGE",
+      "PEG"
+    ],
+    "maximum_positive_claim": "ordered quantitative-history pattern within the unchanged-baseline feasible domain",
+    "operation_complementarity_claimed": false,
+    "ordering": "compare permutations only within the same native-dose multiset",
+    "raw_cardinality": "all 24 feasible triples reproduce positive GEP response",
+    "raw_cardinality_exclusion": "at least one valid feasible triple is zero while GEP is positive",
+    "seed_replication": "positive aggregate classifiers require the same categorical response pattern at all three frozen seeds; exact numeric invariance is reported separately",
+    "state_and_hybrid_reinterpreted": false
+  },
+  "artifact_id": "P2-I2-APP-B4-INACTIVE-75-ARM-FREEZE",
+  "artifact_version": "1.0",
+  "authority": {
+    "change": "P2-I2-CHG-090",
+    "construction_source": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_freeze.py",
+      "sha256": "da2ea5bf6a3b619113726a9a06add3d08275506c144085b24a9840fda460e366"
+    },
+    "decision": "P2-I2-DEC-085",
+    "owner_selection": "unchanged_baseline_24_sequence_panel"
+  },
+  "authority_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "role": "registration",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+      "role": "machine_policy",
+      "sha256": "079ba0be50946199a90201eb57cf79e19fb1faf53aa665437752d376a1ebe11c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+      "role": "parent_policy",
+      "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-unchanged-baseline-capability-audit.json",
+      "role": "capability",
+      "sha256": "318ce3a25d17fbb3a004a31f52fbdc9ef5e550468a5fca0b9be054c5fe1caf00"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "role": "base_freeze",
+      "sha256": "3e1f0c4bf0a8c8417f8e730c47c35ec1aaca11aa0e9bb76b3b87c2675656547e"
+    }
+  ],
+  "candidate_free_sources": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_analysis.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_reconstruct.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_validate.py"
+  ],
+  "canonical_payload_digest": "07f118723ebdb51cd5da5f65bab0d6fcad6b4b4e909c261b9e077153e14fe71e",
+  "environment": {
+    "absolute_persisted_paths_forbidden": true,
+    "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_read_only": true,
+    "graph_repository": "../graph-reflexive-coherence",
+    "graph_source": "../graph-reflexive-coherence/src",
+    "interpreter": ".venv/bin/python",
+    "interpreter_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "python_version": "3.12.3"
+  },
+  "execution": {
+    "activation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-live-activation.json",
+    "campaign_attempts": 1,
+    "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+    "cumulative_single_output": true,
+    "fresh_model_per_arm": true,
+    "fresh_process_per_arm": true,
+    "infrastructure_retries": 0,
+    "normalized_command_template": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+      "--freeze",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+      "--activation",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-live-activation.json",
+      "--claim",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+      "--expected-head",
+      "{AUTHORITY_HEAD}",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ],
+    "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+    "reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-reconstruction-and-closeout.json",
+    "reconstructor_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_reconstruct.py",
+    "runner_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+    "scientific_retries": 0,
+    "validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-freeze-validation.json"
+  },
+  "fixture_and_scaffold": {
+    "APP_B2_runtime_outcomes_used_to_select_panel": false,
+    "M_H_materialization_unchanged": true,
+    "accepted_topology_and_initial_coherence_unchanged": true,
+    "feedback_threshold_and_response_window_unchanged": true,
+    "history_admission_and_fold_unchanged": true,
+    "new_producer_added": false,
+    "operation_routes_and_amounts_unchanged": true,
+    "pre_funding_added": false
+  },
+  "implementation_sha256": {
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_analysis.py": "41006ca1ca70fcdff66f86f11a2b5033ed63c84b74ab5aff4ab89be620cbe182",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_reconstruct.py": "9c6b44a961daa922418d59a5f1060277109799349716098132a91b4c6acd397f",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py": "aac3381d6f273f9bd6035c9b0477db68b616348b1a06a39525bdb10514f1212e",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_validate.py": "09464395f590bdd1b564681aaed6b33f8037f47396f97a4d5f07e1c7d873d3d3",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_analysis.py": "232ae62be2adaff00374d0cd08bb61c9164ae8d58d9d188fce1dd4fad0d6cf0c",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_history_adapter.py": "a7d9772f4b22bec81e370e28eeae9bb5d4d4d3353a80d9516c950e3e9c166f8e",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py": "dfa1985af280561e62250623bc872b1acf6d997d620f4eb6df645cfc882abd07",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a"
+  },
+  "iteration_id": "P2-I2-APP-B4",
+  "lifecycle": {
+    "activation_artifact_exists": false,
+    "campaign_authorized": false,
+    "claim_consumed": false,
+    "commit_authorized": false,
+    "freeze_active": false,
+    "owner_review_required": true,
+    "result_assigned": false,
+    "runtime_generation_count": 0
+  },
+  "mode_realizations": {
+    "history_carried": {
+      "carrier": "source-label-free ordered active H_C with native M_H materialization",
+      "feedback_threshold": 0.8056640625,
+      "realization_class": "accepted_minimally_producer_assisted_role_extended_to_G_E_P_routes",
+      "recency_coefficient": 0.375,
+      "response_front": [
+        "M_H"
+      ]
+    }
+  },
+  "operation_registry": {
+    "E": {
+      "amount": 0.4375,
+      "common_route": [
+        "P",
+        "K_P",
+        "P_TO_K_P"
+      ],
+      "diversion_and_private_matched_route": [
+        "E_SOURCE",
+        "E_TARGET",
+        "E_SOURCE_TO_E_TARGET"
+      ]
+    },
+    "G": {
+      "amount": 0.625,
+      "common_route": [
+        "S1",
+        "P",
+        "S1_TO_P"
+      ],
+      "diversion_route": [
+        "S1",
+        "K_DIV_Q1",
+        "S1_TO_K_DIV_Q1"
+      ],
+      "private_route": [
+        "S1",
+        "P1_PRIVATE",
+        "S1_TO_P1_PRIVATE"
+      ]
+    },
+    "P": {
+      "amount": 0.875,
+      "common_route": [
+        "S2",
+        "P",
+        "S2_TO_P"
+      ],
+      "diversion_route": [
+        "S2",
+        "K_DIV_Q2",
+        "S2_TO_K_DIV_Q2"
+      ],
+      "private_route": [
+        "S2",
+        "P2_PRIVATE",
+        "S2_TO_P2_PRIVATE"
+      ]
+    }
+  },
+  "panel": {
+    "arm_count": 75,
+    "excluded_operationally_infeasible_sequences": [
+      "EEG",
+      "EEE",
+      "EEP"
+    ],
+    "excluded_sequences_are_not_expected_outputs": true,
+    "excluded_sequences_are_not_scientific_zero": true,
+    "expanded_registry_digest": "593c1b60d5712a005d5f521467044245cff8dcca22f81a823139b0d366dd4aca",
+    "feasible_sequence_count": 24,
+    "feasible_sequences": [
+      "GGG",
+      "GGE",
+      "GGP",
+      "GEG",
+      "GEE",
+      "GEP",
+      "GPG",
+      "GPE",
+      "GPP",
+      "EGG",
+      "EGE",
+      "EGP",
+      "EPG",
+      "EPE",
+      "EPP",
+      "PGG",
+      "PGE",
+      "PGP",
+      "PEG",
+      "PEE",
+      "PEP",
+      "PPG",
+      "PPE",
+      "PPP"
+    ],
+    "mode": "history_carried",
+    "reference_per_seed": 1,
+    "seeds": [
+      101,
+      211,
+      307
+    ]
+  },
+  "response_authority": {
+    "all_eight_arms_required": true,
+    "analysis_arithmetic_delta": 1e-12,
+    "analysis_arithmetic_floor": 1e-12,
+    "cross_mode_seed_or_order_max_forbidden": true,
+    "primary_comparator": "strongest_of_all_seven_proper_subsets_within_mode_seed_order_tuple",
+    "response_id": "fixed_window_native_B_target_coherence_gain",
+    "response_packet_amount": 0.125,
+    "runtime_tolerance": 2.842170943040401e-14,
+    "unit": "native_coherence_amount"
+  },
+  "schedule": {
+    "history_materialization": [
+      14.0,
+      14.625
+    ],
+    "neutral_contact": [
+      15.25,
+      15.875
+    ],
+    "operation_arrivals": [
+      10.875,
+      12.125,
+      13.375
+    ],
+    "operation_departures": [
+      10.25,
+      11.5,
+      12.75
+    ],
+    "operation_order": [
+      "G",
+      "E",
+      "P"
+    ],
+    "optional_state_intervention": [
+      14.75,
+      15.0
+    ],
+    "response_arrival": 16.875
+  },
+  "status": "inactive_owner_review_pending"
+}

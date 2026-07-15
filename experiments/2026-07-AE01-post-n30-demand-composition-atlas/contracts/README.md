@@ -100,3 +100,49 @@ the Phase 1 shapes in use; they do not add `lane_registration` or
 identity used by registration. The derived registration freeze and manifest
 are generated only after their source implementation is committed, so their
 source revision and digests cannot accidentally identify an earlier commit.
+
+## P2-I2 source-current audit controls
+
+`p2-i2/i01-audit-input-freeze.json` preregisters the exact graph revision,
+scope, questions, classifications, commands, package-identity rule, and output
+paths before capability inspection. `P2-I2-CHG-002` records the manifest-led
+addition of `src/pygrc/**` before package source was read.
+
+`p2-i2/i01-capability-matrix.json` is the compact requirement-to-surface
+projection. `p2-i2/i01-source-digests.json` binds its cited source-current
+files. I01R1 excludes the historical custom probe from capability evidence,
+classifies CAP-04 as inadequate, and adds the public causal-history
+implementation/test digests needed to distinguish evidence overlays from
+active runtime history. These are audit-control artifacts, not schema
+instances, source admission, realization selection, calibration, or lane
+evidence.
+
+## P2-I2 I04 authority lineage
+
+The original I04 and I04R1 contracts are immutable historical artifacts.
+Owner-accepted I04R2 is the sole progression authority under DEC-026, with its
+exact preregistration and 16/16 validation retained under `p2-i2/`. CAL-PRE is
+passed. `i05-calibration-execution-freeze.json` is the separate exact
+authorization candidate encoding a one-invocation ceiling, and
+`i05-calibration-authorization-validation.json` validates it 12/12 with byte-
+identical reconstruction. `i05a-execution-safety-audit.json` passed only 3/8
+checks and blocks proposed DEC-027 historically. The DEC-028 I05B correction
+then passes 12/12 in `i05b-zero-null-safety-validation.json` with twelve focused
+tests and zero accepted-builder/null execution. DEC-029 retains exact
+`i05b-owner-acceptance.json` with commit true and null authority false. A later
+separate launch consumed the single attempt and retained raw claim/output/final
+evidence at commit `c3eabf3`; CAL-GATE passage and candidate authority are not
+implied.
+`i05c-preclaim-interpreter-path-failure.json` retains the failed read-only
+preflight at launch commit `98770ae` with zero attempts. The corrected
+`i05c-zero-null-interpreter-validation.json` passed 12/12, was retained, and the
+single governed null later completed. DEC-032 now governs I05D:
+`i05d-portability-audit-input-freeze.json` binds the corrected recursive scope,
+policy, scanner, and zero-runtime ceiling. The accepted inventory reports 312
+value-redacted violations in 70 of 135 files. DEC-033 opens only its first I05
+group. `i05e-portability-correction-input-freeze.json`,
+`i05e-portable-projection-lineage.json`, and
+`i05e-portability-correction-validation.json` retain the eleven-file portable
+projection correction: 10/10 checks and zero remaining group violations. The
+package is owner-accepted for commit; later groups remain closed until
+retention, and CAL-GATE remains closed.

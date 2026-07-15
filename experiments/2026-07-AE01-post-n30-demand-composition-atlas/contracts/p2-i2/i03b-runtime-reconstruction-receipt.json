@@ -1,0 +1,68 @@
+{
+  "artifact_id": "P2-I2-I03B-HISTORY-CARRIED-RUNTIME-RECONSTRUCTION-RECEIPT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9"
+  },
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03B",
+  "lane_id": "AE01-L02",
+  "reconstructed_at": "2026-07-14",
+  "status": "passed_byte_identical",
+  "evidence_effect": "runtime-conformance reconstruction only; no scientific evidence, calibration input, registered value, support result, or mode ranking",
+  "authority": {
+    "runtime_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json",
+    "runtime_freeze_sha256": "dd0146f656f3f480d5ff3265696cacf39322fa5fe13991aed822614eee217720",
+    "harness_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
+    "harness_sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec",
+    "adapter_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+    "adapter_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_clean_before_and_after": true
+  },
+  "invocation_accounting": {
+    "freeze_only_validation_invocations": 1,
+    "evidence_invocations": 1,
+    "reconstruction_invocations": 1,
+    "retry_invocations": 0,
+    "rescue_or_parameter_search_invocations": 0,
+    "branch_scenarios_per_evidence_or_reconstruction_invocation": 12
+  },
+  "retained_evidence": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+    "sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+    "assertions_total": 252,
+    "assertions_passed": 252,
+    "assertions_failed": 0
+  },
+  "reconstruction": {
+    "temporary_path": "temporary-output:p2-i2-i03b-history-carried-runtime-conformance.reconstructed.json",
+    "sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+    "byte_comparison": "identical",
+    "temporary_output_retained_as_authority": false
+  },
+  "restoration_witness": {
+    "initial_composite_digest": "01c5fce9e9da72888101c854c10663eb5831b892e4d55fac6037fac243f32850",
+    "pre_save_composite_digest": "4e8ae26852f0ac7cc953fde1e7ffa4bc0d02cee79b93e9d9cfb900d435a451dd",
+    "loaded_composite_digest": "4e8ae26852f0ac7cc953fde1e7ffa4bc0d02cee79b93e9d9cfb900d435a451dd",
+    "paired_save_load_identity_equal": true,
+    "paired_reset_returns_to_initial_composite_identity": true,
+    "equal_input_continuation_after_load": true,
+    "equal_input_continuation_after_reset": true
+  },
+  "claim_boundary": {
+    "realization_disposition": "history_carried_minimally_producer_assisted_runtime_conformant_pending_owner_review",
+    "adapter_computed_success": false,
+    "adapter_scheduled_later_response": false,
+    "native_feedback_producer_owned_later_transition": true,
+    "i03c_authorized": false,
+    "i04_authorized": false,
+    "scientific_evidence_assigned": false,
+    "owner_review_required": true
+  }
+}

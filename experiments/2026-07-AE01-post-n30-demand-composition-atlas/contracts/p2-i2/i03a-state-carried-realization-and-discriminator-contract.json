@@ -1,0 +1,631 @@
+{
+  "artifact_id": "P2-I2-I03A-STATE-CARRIED-REALIZATION-AND-DISCRIMINATOR-CONTRACT",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L02",
+  "iteration_id": "P2-I2-I03A",
+  "status": "review_ready",
+  "frozen_at": "2026-07-14",
+  "evidence_effect": "state-carried causal preregistration authority only; no calibration, candidate execution, control outcome, support result, or terminal classification",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-freeze-input.json",
+    "sha256": "34d0903c746fb67abff5a1c12bb252b5cb15933d2de75e56f1232fbe7dfd0845"
+  },
+  "authority": {
+    "rcae_entry_revision": "26811d395c0662473629d5710983e3c1fdb4f58f",
+    "graph_repository_id": "grc",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "source_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+    "source_manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+    "graph_repository_read_only": true
+  },
+  "mode_scope": {
+    "pool_dependence_mode": "state_carried",
+    "encounter_state_is_causal": true,
+    "ordered_contribution_history_is_causal": false,
+    "audit_lineage_is_causal": false,
+    "history_carried_profile_status": "unauthorized_until_owner_accepts_i03a",
+    "hybrid_profile_status": "unauthorized_until_owner_accepts_i03b",
+    "umbrella_discriminator_gate_status": "in_progress_not_passable_by_i03a"
+  },
+  "realization_selection": {
+    "realization_class": "pygrc_native_candidate",
+    "brief_class": "native",
+    "candidate_id": "p2-i2-state-carried-native-node-pool-v1",
+    "selection_rationale": "Every causal pool mutation and response transition is performed by admitted public PyGRC operations. RCAE declares roles, access scope, schedules registered native calls, pairs branches, and asserts control guards, but it does not reduce contributor records into the pool, author the later response, or retain an external causal pool variable.",
+    "rcae_causal_producer_selected": false,
+    "rcae_constructed_pool_state_selected": false,
+    "native_feedback_producer_is_model_owned": true,
+    "native_support_status": "candidate_not_scientifically_supported",
+    "reclassification_trigger": "If I06 cannot realize native write diversion, carrier debit, or private-partition matching without an RCAE causal state transition, reopen I03A and reclassify before calibration or execution."
+  },
+  "role_registry": {
+    "S1": {
+      "role": "attributable_source_one",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06",
+      "requirements": [
+        "positive registered contribution reserve",
+        "native edge to P and matched diversion/private target",
+        "source_lineage_id retained only in audit state"
+      ]
+    },
+    "S2": {
+      "role": "attributable_source_two",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06",
+      "requirements": [
+        "distinct from S1",
+        "positive registered contribution reserve",
+        "native edge to P and matched diversion/private target",
+        "source_lineage_id retained only in audit state"
+      ]
+    },
+    "P": {
+      "role": "one_common_non_private_pool_carrier",
+      "native_type": "GRC9V3NodeState.coherence",
+      "exact_node_id": "pending_I06",
+      "identity_rule": "one fixed topology-node identity; no contributor slots or lineage-indexed substate",
+      "access_scope": "eligible later responders use the same declared one-node feedback mask without source addressing"
+    },
+    "B_ref": {
+      "role": "matched_feedback_reference_node",
+      "native_type": "GRC9V3NodeState.coherence",
+      "exact_node_id": "pending_I06",
+      "held_fixed_rule": "coherence and support remain fixed across candidate and controls unless a later registered control explicitly targets this role"
+    },
+    "E": {
+      "role": "neutral_later_encounter_trigger",
+      "native_surface": "route_local_pulse_contact row",
+      "identity_rule": "one independently scheduled matched contact after pool constitution; contributor identities and contribution order do not select the trigger"
+    },
+    "A": {
+      "role": "eligible_response_packet_source",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06",
+      "requirements": [
+        "adequate native reserve",
+        "registered route to B",
+        "no contributor-addressed read"
+      ]
+    },
+    "B": {
+      "role": "later_response_packet_target",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    },
+    "K": {
+      "role": "native_carrier_debit_or_write_diversion_sink",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06",
+      "causal_boundary": "receives native intervention flux but is absent from V's feedback mask"
+    },
+    "P1_private": {
+      "role": "private_partition_for_S1_control_only",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    },
+    "P2_private": {
+      "role": "private_partition_for_S2_control_only",
+      "native_type": "GRC9V3NodeState",
+      "exact_node_id": "pending_I06"
+    }
+  },
+  "causal_factorization": {
+    "C_P": {
+      "definition": "float(model.get_state().base_state.nodes[P].coherence) at the registered encounter checkpoint immediately before feedback-row emission",
+      "owner": "PyGRC",
+      "restoration_coverage": "inside LGRC9V3 current state and therefore inside v1 and v2 current-state component",
+      "excluded_components": [
+        "source_lineage_id",
+        "target_lineage_id",
+        "packet ledger ordering",
+        "surface history ordering",
+        "contributor count label",
+        "success label"
+      ]
+    },
+    "q": {
+      "definition": "registered positive packet amount plus native source node, target P, edge, departure/arrival ordering, and physical contribution timing",
+      "arbitrary_source_label_is_physics": false,
+      "exact_amounts_and_times": "pending_I04_and_I06"
+    },
+    "U": {
+      "public_call_chain": [
+        "pygrc.models.LGRC9V3.schedule_packet_departure",
+        "pygrc.models.LGRC9V3.step"
+      ],
+      "native_transition": "departure debits S_i; arrival adds q_i to the same P.coherence scalar",
+      "mixing_rule": "additive accumulation in one scalar native node state",
+      "rcae_computation_of_pool": false
+    },
+    "L": {
+      "definition": "native packet records and event records retaining source_node_id, source_lineage_id, amount, edge, packet id, and event times",
+      "owner": "PyGRC",
+      "functional_role": "audit_only_for_i03a",
+      "response_read_allowed": false
+    },
+    "V": {
+      "public_call_chain": [
+        "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+        "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+        "pygrc.models.LGRC9V3.produce_events",
+        "pygrc.models.LGRC9V3.step"
+      ],
+      "state_read": "feedback front mask contains P only; rear mask contains matched B_ref only; boundary_polarity_score is derived from current native coherence at encounter",
+      "later_transition": "model-owned producer schedules one native A-to-B packet when the registered state-derived relation is eligible",
+      "state_carried_guard": "expected_source_surface_digest remains null; the neutral encounter row supplies temporal opportunity but contribution-history identity is not a response condition",
+      "exact_raw_response_and_orientation": "pending_I04"
+    },
+    "forbidden_G": {
+      "prohibited_inputs": [
+        "source_lineage_id",
+        "target_lineage_id",
+        "contributor-indexed slots",
+        "contributor count as a success condition",
+        "controller-authored pool-present or success field"
+      ],
+      "static_dataflow_basis": "packet lineage is absent from packet id and coherence mutation; feedback score reads declared node masks and coherence; producer reads the committed score and serialized policy rather than contributor lineage"
+    }
+  },
+  "non_private_access_witness": {
+    "witness": "The later response encounters P through one registered feedback front mask containing P, with no source address or source-specific branch in the read path.",
+    "eligible_responder_rule": "Any registered A-role node with adequate reserve and route may use the same P/B_ref mask and producer policy class.",
+    "audit_check": "I06 must prove the mask contains P exactly once, contains neither S1/S2 nor P1_private/P2_private, and the producer configuration contains no contributor lineage field.",
+    "failure_effect": "Absent or source-addressed access blocks R01 and the I03A profile."
+  },
+  "native_interventions": {
+    "pool_write_freeze": {
+      "mechanism": "Schedule and process the same native source debits, amounts, and times, but route each contribution to registered diversion sink K rather than P; P stays at the reference condition and V still receives the matched neutral encounter.",
+      "native_operations": [
+        "LGRC9V3.schedule_packet_departure",
+        "LGRC9V3.step"
+      ],
+      "held_fixed": [
+        "source-side contribution activity and debit",
+        "registered marginal amounts",
+        "source attribution fields",
+        "support and response opportunity",
+        "P baseline and response configuration"
+      ],
+      "allowed_difference": "target route and intervention identity",
+      "expected_relation": "candidate common-state response relation disappears or follows the reference relation",
+      "producer_needed": false
+    },
+    "carrier_state_debit": {
+      "mechanism": "After matched candidate contributions arrive, schedule and process a native P-to-K packet debit before the neutral encounter so P reaches the registered lower/reference state.",
+      "held_fixed": [
+        "both contributor operations and lineage",
+        "pre-intervention combined state",
+        "later opportunity",
+        "feedback masks and response policy class"
+      ],
+      "allowed_difference": "declared intervention packet and resulting P state",
+      "expected_relation": "later response tracks the post-debit P state rather than the unchanged contributor audit lineage",
+      "limitation": "PyGRC has no byte-identical-audit state-only clamp; the intervention trace changes and remains explicitly identified."
+    },
+    "audit_only_label_permutation": {
+      "mechanism": "Permute only registered source_lineage_id strings while preserving source nodes, targets, edges, amounts, event times, packet indexes, P state, and response configuration.",
+      "expected_relation": "C_P and later response invariant; restoration identity differs because audit state is honestly retained."
+    },
+    "state_preserving_order_shuffle": {
+      "mechanism": "Execute S1 then S2 and S2 then S1 with identical positive marginal amounts and complete both arrivals before the same neutral encounter checkpoint.",
+      "expected_relation": "final P coherence and later response invariant; native ledger order may differ but is non-causal in I03A.",
+      "failure_effect": "unexplained response divergence under equal encounter state blocks the state-carried profile."
+    }
+  },
+  "private_partition_competitor": {
+    "construction": "Route q1 to P1_private and q2 to P2_private using native packets. Expose two separately retained one-node response opportunities, one per partition, with the same mask shape and policy class as the candidate.",
+    "no_common_read_guard": [
+      "No feedback front or rear mask may contain both private nodes.",
+      "No RCAE or PyGRC response helper may sum, concatenate, dispatch over, or choose between both partitions.",
+      "No contributor label may select a private response path.",
+      "Both partition responses remain raw paired diagnostics; they are never reduced into a synthetic common response before analysis."
+    ],
+    "matching_identity_owner": "RCAE declarative branch-pair and guard identity",
+    "causal_state_owner": "PyGRC native node and packet state",
+    "expected_relation": "A legitimate single-carrier read cannot reproduce the common P relation from two separate marginal partitions.",
+    "failure_effect": "Any two-partition aggregation is a mailbox/controller bypass and blocks R04."
+  },
+  "logical_cells": [
+    {
+      "cell_id": "reference-pool",
+      "state_carried_binding": "P at registered baseline with no combined contribution; neutral encounter and native response path remain available.",
+      "subconfigurations": [
+        "reference baseline",
+        "native pool-write freeze/diversion"
+      ]
+    },
+    {
+      "cell_id": "individual-contributions",
+      "state_carried_binding": "S1-only and S2-only native writes to P, separately retained under matched opportunity.",
+      "subconfigurations": [
+        "S1 only",
+        "S2 only",
+        "quantity-matched one-source diagnostic"
+      ]
+    },
+    {
+      "cell_id": "combined-orders",
+      "state_carried_binding": "Both writes reach P in S1-S2 and S2-S1 order; complete encounter state is equal before V.",
+      "subconfigurations": [
+        "S1 then S2",
+        "S2 then S1"
+      ]
+    },
+    {
+      "cell_id": "pooled-history-shuffle",
+      "state_carried_binding": "Permute order and audit-only lineage while preserving complete P state; expect response invariance.",
+      "subconfigurations": [
+        "order shuffle",
+        "pure lineage-label permutation"
+      ]
+    },
+    {
+      "cell_id": "contributor-removal",
+      "state_carried_binding": "Remove or divert one marginal write while preserving remaining source activity and later opportunity.",
+      "subconfigurations": [
+        "remove S1 contribution",
+        "remove S2 contribution"
+      ]
+    },
+    {
+      "cell_id": "global-state-exclusion",
+      "state_carried_binding": "Materialize guarded P1_private/P2_private branches and a declared direct/controller bypass without treating either as the candidate chain.",
+      "subconfigurations": [
+        "private P1 read",
+        "private P2 read",
+        "direct-address bypass",
+        "controller-assembled bypass"
+      ]
+    },
+    {
+      "cell_id": "access-capacity-contrast",
+      "state_carried_binding": "Vary eligible responder identity within the same non-private P access scope while preserving P, B_ref, contribution physics, and policy class.",
+      "selected_axis": "access_scope",
+      "exact_responder_ids": "pending_I06"
+    }
+  ],
+  "lane_controls": [
+    {
+      "control_id": "AE01-L02-CTRL-01",
+      "name": "each contributor alone",
+      "target": "joint constitution",
+      "held_fixed": [
+        "P baseline",
+        "marginal contribution definition",
+        "neutral encounter",
+        "response configuration class"
+      ],
+      "expected_relation": "each marginal state and response remain visible; neither original marginal contribution may fully explain the combined-state relation",
+      "allowed_ambiguity": "one marginal contribution may itself cause a lower-level response",
+      "fail_closed_effect": "full explanation by an original marginal single-source relation blocks R03"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-02",
+      "name": "contributor deletion and label permutation",
+      "target": "joint write versus audit label",
+      "held_fixed": [
+        "all non-target contribution physics",
+        "later opportunity",
+        "support",
+        "response policy class"
+      ],
+      "expected_relation": "deletion changes P and the response relation; pure label permutation changes neither",
+      "allowed_ambiguity": "deletion magnitude may be resolution-limited under later I04 rules",
+      "fail_closed_effect": "label sensitivity blocks R04; no deletion relation blocks affected R02/R03"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-03",
+      "name": "pooled-history shuffle",
+      "target": "non-causal audit/order history",
+      "held_fixed": [
+        "complete P encounter state",
+        "marginal amounts",
+        "neutral encounter",
+        "feedback masks and response policy class"
+      ],
+      "expected_relation": "state and response invariant",
+      "allowed_ambiguity": "later equality is judged only under I04's frozen resolution rule",
+      "fail_closed_effect": "unexplained non-invariance blocks state-carried R03/R04; mode cannot change post-outcome"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-04",
+      "name": "direct-address and global-state substitution",
+      "target": "private or controller bypass",
+      "held_fixed": [
+        "marginal source quantities",
+        "timing and support",
+        "later output opportunity"
+      ],
+      "expected_relation": "a bypass may reproduce an output but cannot reproduce the source-to-one-P-to-V causal chain; guarded private partitions do not reproduce the valid common read",
+      "allowed_ambiguity": "output equivalence alone is non-diagnostic",
+      "fail_closed_effect": "inability to causally distinguish candidate and bypass blocks R04"
+    },
+    {
+      "control_id": "AE01-L02-CTRL-05",
+      "name": "pool freeze with contributor activity preserved",
+      "target": "P write and post-constitution P state",
+      "held_fixed": [
+        "source-side native debits",
+        "marginal amounts and lineage",
+        "support",
+        "neutral encounter and response opportunity"
+      ],
+      "expected_relation": "native diversion leaves P at reference and removes the candidate relation; native P debit makes response follow post-debit state",
+      "allowed_ambiguity": "native intervention records differ and are explicitly retained",
+      "fail_closed_effect": "no state-dependent separation blocks R03/R04"
+    }
+  ],
+  "operational_projections": [
+    {
+      "op_id": "H-L02-OP-01",
+      "cells": [
+        "reference-pool",
+        "individual-contributions",
+        "combined-orders",
+        "global-state-exclusion"
+      ],
+      "expected_relation": "two attributable native arrivals alter the same P scalar; private branches retain two distinct scalars",
+      "held_fixed": [
+        "registered topology class",
+        "marginal amounts",
+        "later opportunity"
+      ],
+      "fail_closed_effect": "no one-node P or source-addressed access blocks R01"
+    },
+    {
+      "op_id": "H-L02-OP-02",
+      "cells": [
+        "combined-orders",
+        "reference-pool",
+        "contributor-removal"
+      ],
+      "expected_relation": "V's state-derived eligibility follows P encounter coherence; complete combined P differs qualitatively from reference and each original marginal P state",
+      "held_fixed": [
+        "neutral encounter",
+        "B_ref",
+        "response policy class",
+        "support"
+      ],
+      "fail_closed_effect": "absence of state-dependent response prevents R03"
+    },
+    {
+      "op_id": "H-L02-OP-03",
+      "cells": [
+        "pooled-history-shuffle",
+        "contributor-removal"
+      ],
+      "expected_relation": "pure source-lineage permutation changes native audit identity but not P or V",
+      "held_fixed": [
+        "source nodes and physical routes",
+        "amounts",
+        "times",
+        "P",
+        "opportunity"
+      ],
+      "fail_closed_effect": "label-dependent response exposes a forbidden bypass and blocks R04"
+    },
+    {
+      "op_id": "H-L02-OP-04",
+      "cells": [
+        "reference-pool",
+        "combined-orders"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-05",
+        "AE01-L02-CTRL-02"
+      ],
+      "expected_relation": "native write diversion or post-write P debit changes the response relation; audit-only label change does not",
+      "held_fixed": [
+        "contributor activity",
+        "contributor attribution",
+        "unrelated opportunity",
+        "support"
+      ],
+      "fail_closed_effect": "failure to separate state intervention from matched contributor activity blocks R03/R04"
+    },
+    {
+      "op_id": "H-L02-OP-05",
+      "cells": [
+        "individual-contributions",
+        "contributor-removal",
+        "combined-orders"
+      ],
+      "expected_relation": "each original marginal and removal branch differs from the complete combined P relation; a quantity-matched one-source replacement may remain invariant and then limits the claim to multi-source population of one pool",
+      "held_fixed": [
+        "opportunity",
+        "support",
+        "response policy class"
+      ],
+      "fail_closed_effect": "full explanation by an original marginal or repeated single-source relation blocks supported_bounded_candidate"
+    },
+    {
+      "op_id": "H-L02-OP-06",
+      "cells": [
+        "global-state-exclusion"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-04"
+      ],
+      "expected_relation": "neither guarded one-node private read reproduces the complete common P relation; consulting both is explicitly classified mailbox/controller bypass",
+      "held_fixed": [
+        "marginal writes",
+        "timing",
+        "support",
+        "one-node access opportunity"
+      ],
+      "fail_closed_effect": "legitimate private reproduction or hidden aggregation blocks R04"
+    },
+    {
+      "op_id": "H-L02-OP-07",
+      "cells": [
+        "global-state-exclusion"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-04"
+      ],
+      "expected_relation": "direct/controller output equivalence does not recreate independently intervenable P or the native U-to-V chain",
+      "held_fixed": [
+        "nearest output opportunity",
+        "marginal input quantities"
+      ],
+      "fail_closed_effect": "no causal distinction between candidate and bypass blocks R04"
+    },
+    {
+      "op_id": "H-L02-OP-08",
+      "cells": [
+        "combined-orders",
+        "pooled-history-shuffle"
+      ],
+      "controls": [
+        "AE01-L02-CTRL-03"
+      ],
+      "expected_relation": "S1-S2, S2-S1, and audit-shuffled variants with equal P at encounter have invariant V response",
+      "held_fixed": [
+        "complete P state",
+        "marginal quantities",
+        "B_ref",
+        "neutral encounter",
+        "response policy class"
+      ],
+      "fail_closed_effect": "mode-inconsistent divergence blocks state-carried R03/R04 and cannot trigger a mode switch"
+    },
+    {
+      "op_id": "H-L02-OP-09",
+      "cells": [
+        "access-capacity-contrast"
+      ],
+      "selected_contrast": "access_scope",
+      "expected_relation": "the same P relation is retained when an alternate eligible A-role responder uses the same non-private mask and policy class",
+      "held_fixed": [
+        "P and B_ref state",
+        "contribution history",
+        "response policy class",
+        "route opportunity and reserve adequacy"
+      ],
+      "fail_closed_effect": "invalid or unretained access contrast leaves R05 unavailable without invalidating lower rungs"
+    }
+  ],
+  "pool_economy_dispositions": {
+    "reserve": "native node coherence and conserved packet budget measured",
+    "accumulation": "applicable; native additive arrivals to P",
+    "mixing": "applicable; scalar addition in one P coherence value",
+    "depletion": "applicable; native P-to-K packet debit",
+    "saturation": "not_applicable; no capacity or saturation rule selected",
+    "leakage": "not_applicable within the registered passive persistence window; no autonomous decay selected",
+    "maintenance": "not_applicable; passive conserved carrier with no maintenance transition",
+    "claim_boundary": "No resource economy, circulation, trail maintenance, or native pool primitive claim follows from these dispositions."
+  },
+  "native_adequacy_and_gap_disposition": [
+    {
+      "capability_id": "P2-I2-CAP-01",
+      "i03a_disposition": "selected_native",
+      "note": "P.coherence is the one common encounter-state carrier; role/access declaration remains RCAE metadata."
+    },
+    {
+      "capability_id": "P2-I2-CAP-02",
+      "i03a_disposition": "selected_native_with_experiment_orchestration",
+      "note": "RCAE schedules admitted public packet calls but does not compute the pool."
+    },
+    {
+      "capability_id": "P2-I2-CAP-03",
+      "i03a_disposition": "selected_native",
+      "note": "Feedback score reads P/B_ref state and model-owned producer schedules the later native packet."
+    },
+    {
+      "capability_id": "P2-I2-CAP-04",
+      "i03a_disposition": "broad_capability_remains_inadequate_selected_native_intervention_is_bounded",
+      "note": "Native diversion/debit provides the selected causal state intervention, but no public state-only byte-identical-audit clamp exists."
+    },
+    {
+      "capability_id": "P2-I2-CAP-05",
+      "i03a_disposition": "selected_native_plus_rcae_label_orchestration",
+      "note": "Labels remain audit-only and may be permuted without a causal producer."
+    },
+    {
+      "capability_id": "P2-I2-CAP-06",
+      "i03a_disposition": "broad_capability_remains_inadequate_native_diversion_selected",
+      "note": "No generic atomic pool freeze exists; the exact state-carried path uses matched native target diversion and carrier debit."
+    },
+    {
+      "capability_id": "P2-I2-CAP-07",
+      "i03a_disposition": "native_substrate_with_external_noncausal_guard",
+      "note": "Private nodes and packets are native; RCAE owns matching and the prohibition on reading both partitions."
+    },
+    {
+      "capability_id": "P2-I2-CAP-08",
+      "i03a_disposition": "passive_native_carrier_selected_missing_dynamics_not_applicable",
+      "note": "Capacity, saturation, autonomous leakage, and maintenance are not added."
+    },
+    {
+      "capability_id": "P2-I2-CAP-09",
+      "i03a_disposition": "native_v2_proposed_for_later_registration",
+      "note": "Native current state and reset baseline are covered; RCAE role/control identity remains external."
+    },
+    {
+      "capability_id": "P2-I2-CAP-10",
+      "i03a_disposition": "audit_authority_retained",
+      "note": "No capability row is reclassified by I03A."
+    },
+    {
+      "capability_id": "P2-I2-CAP-11",
+      "i03a_disposition": "no_rcae_causal_producer_selected",
+      "note": "Role registry, branch pairing, and guards are external identity; future failure of native intervention feasibility reopens realization class."
+    }
+  ],
+  "missing_native_patterns_for_later_synthesis": [
+    "first-class pool role and non-private access-scope registry",
+    "atomic pool-specific write gate preserving matched contributor activity",
+    "selective carrier clamp with independently controlled audit projection",
+    "private-partition identity, equal-opportunity matcher, and no-common-read guard",
+    "generic capacity, saturation, leakage, and maintenance contracts",
+    "one declarative composite restoration identity for RCAE role, schedule, intervention, and branch-pair state"
+  ],
+  "restoration_profile_proposal": {
+    "provider": "pygrc.models.lgrc9v3_restoration_identity_v2",
+    "digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+    "selection_status": "proposed_by_I03A_not_frozen_until_I06",
+    "baseline_requirement": "valid persisted pygrc.reset_baseline version-1 group; no legacy fallback",
+    "external_identity_components": [
+      "RCAE role and non-private access registry",
+      "cell/subconfiguration identity",
+      "native call schedule and expected causal order",
+      "feedback masks and native producer configuration selection",
+      "intervention and diversion/debit identity",
+      "private-partition branch pairing and no-common-read guard",
+      "analysis and calibration identities when later frozen"
+    ],
+    "reset_policy": "reset allowed only under the later registered v2 profile with valid persisted baseline; explicit rebase provenance must be externally composed if ever used"
+  },
+  "deferred_to_i04": [
+    "one exact raw later-response field or family",
+    "response orientation transform",
+    "one closest insufficient-repetition primary comparator",
+    "numerical amounts, timing, threshold, and packet response amount",
+    "equality and measurement-resolution rule",
+    "paired normalized-margin implementation",
+    "aggregation and missingness rules",
+    "candidate-blind matched-null generator and seeds",
+    "machine pass, ambiguous, and fail evaluation"
+  ],
+  "deferred_to_i06": [
+    "exact node and edge ids",
+    "exact topology and initial coherence/reserve values",
+    "exact event times and scheduler indexes",
+    "exact feedback masks, neutral contact path, producer route, and policy values",
+    "exact cell/subconfiguration matrix and branch-point snapshots",
+    "complete v2 plus RCAE composite restoration identity",
+    "bounded equal-input continuation procedure",
+    "exact access-scope alternate responder identity"
+  ],
+  "review_stop": {
+    "status": "P2-I2-I03A-REVIEW-READY",
+    "owner_review_required": true,
+    "i03b_authorized": false,
+    "i03c_authorized": false,
+    "i04_authorized": false,
+    "calibration_authorized": false,
+    "candidate_execution_authorized": false,
+    "scientific_evidence_assigned": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "calibration_id": "rcae-p2-i2-complete-three-arm-analysis-arithmetic-null-v3",
+  "iteration_authorized_to_execute": "P2-I2-I05_only_after_explicit_owner_acceptance_of_I04R2",
+  "evidence_effect": "complete_primary_estimator_analysis_arithmetic_resolution_only_no_runtime_or_candidate_evidence",
+  "candidate_blind": true,
+  "runtime_execution": false,
+  "pygrc_imported": false,
+  "shared_across_modes": true,
+  "parent_calibration_history": {
+    "path": "configs/p2_i2_i04r1_calibration_policy.json",
+    "sha256": "5eb921eeb49c0fb336b5176a98bfd615482b991293afbd579263a5275a8717ad",
+    "disposition": "superseded_for_I05_execution_because_it_bypassed_the_three_arm_max_path"
+  },
+  "analysis_inputs": {
+    "parent_analysis_policy_ref": "configs/p2_i2_i04r1_analysis_policy.json",
+    "parent_analysis_policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+    "machine_policy_ref": "configs/p2_i2_i04r2_machine_policy.json",
+    "estimator_entrypoint": "p2_i2_i04r2_analysis.primary_margin"
+  },
+  "analysis_arithmetic_floor": 1e-12,
+  "delta_field": "analysis_arithmetic_delta",
+  "delta_status": "pending_I05_execution",
+  "calibrates": [
+    "three raw synthetic response-envelope validation paths",
+    "all-or-none candidate/leave-q1/leave-q2 evaluability",
+    "strongest symmetric leave-one max selection",
+    "pairing and denominator-floor normalized-margin arithmetic",
+    "calibration-record serialization and byte reconstruction"
+  ],
+  "does_not_calibrate": [
+    "PyGRC floating-point execution",
+    "queue ordering or packet transport",
+    "B-coherence measurement noise",
+    "save/load/reset continuation",
+    "mode-specific arithmetic depth",
+    "runtime, restoration, or continuation equality tolerance"
+  ],
+  "calibration_seeds": [
+    19,
+    43,
+    71,
+    109,
+    163
+  ],
+  "candidate_seeds_excluded": [
+    101,
+    211,
+    307
+  ],
+  "physical_order_strata": [
+    "q1_then_q2",
+    "q2_then_q1"
+  ],
+  "matched_null_generator": {
+    "kind": "equal_raw_three_arm_response_envelopes_over_two_physical_order_strata",
+    "value_representation": "exact_rational_string",
+    "arms_per_tuple": [
+      "combined-orders",
+      "q1_admitted_q2_diverted",
+      "q2_admitted_q1_diverted"
+    ],
+    "panels": [
+      {
+        "seed": 19,
+        "q1_then_q2": "1/23",
+        "q2_then_q1": "2/23"
+      },
+      {
+        "seed": 43,
+        "q1_then_q2": "3/23",
+        "q2_then_q1": "4/23"
+      },
+      {
+        "seed": 71,
+        "q1_then_q2": "5/23",
+        "q2_then_q1": "6/23"
+      },
+      {
+        "seed": 109,
+        "q1_then_q2": "7/23",
+        "q2_then_q1": "8/23"
+      },
+      {
+        "seed": 163,
+        "q1_then_q2": "9/23",
+        "q2_then_q1": "10/23"
+      }
+    ],
+    "tuple_rule": "candidate, leave-q1, and leave-q2 receive the same exact rational raw response as three separate envelopes, then the live primary_margin path derives max and normalized margin",
+    "precollapsed_comparator_supplied": false,
+    "selection_provenance": "unchanged rank-derived rational sequence with prime denominator 23, selected without I03/candidate/runtime input",
+    "scientific_interpretation": "none"
+  },
+  "estimator": "maximum of analysis_arithmetic_floor and every absolute normalized margin produced by the exact complete three-arm primary estimator",
+  "serialization_and_reconstruction": {
+    "serializer": "ae01_tooling.pretty_json_dumps",
+    "reconstructor": "json.loads",
+    "route": [
+      "serialize the complete calibration record",
+      "write the exact serialized text to the governed output path",
+      "read and parse that retained text",
+      "reserialize the reconstructed object",
+      "require byte equality with the retained text before successful exit"
+    ],
+    "byte_equality_required": true,
+    "failure_effect": "I05 is invalid or incomplete and analysis_arithmetic_delta remains unavailable"
+  },
+  "forbidden_inputs": [
+    "candidate artifacts, outcomes, or seeds",
+    "PyGRC imports, models, snapshots, graph values, or response-window records",
+    "precollapsed comparator responses",
+    "I03 conformance fixtures, observations, outcomes, branches, or digests",
+    "P2-I1 calibration panels, delta, metrics, or evidence",
+    "post-outcome tuning"
+  ],
+  "execution_policy": {
+    "python": ".venv/bin/python",
+    "entrypoint": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_calibration.py",
+    "command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_calibration.py --parent-analysis-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json --machine-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json --calibration-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_calibration_policy.json --preregistration experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json",
+    "working_directory": "repository_root",
+    "dependencies": [
+      "Python 3.12 standard library"
+    ],
+    "max_governed_invocations": 1,
+    "max_infrastructure_retries": 1,
+    "resource_envelope": {
+      "max_runtime_seconds": 120,
+      "max_memory_mb": 512,
+      "max_disk_mb": 256
+    },
+    "failure_rule": "any invalid arm, identity/schema/quarantine mismatch, output failure, or reconstruction mismatch leaves I05 invalid or incomplete; no arm removal, parameter adaptation, or retry with changed scientific input"
+  },
+  "authorization_requirement": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+    "must_be_absent_in_I04R2": true,
+    "required_artifact_id": "P2-I2-I05-CALIBRATION-EXECUTION-FREEZE",
+    "required_iteration_id": "P2-I2-I05",
+    "required_CAL_PRE_gate": "passed_after_explicit_owner_acceptance_of_I04R2",
+    "required_governed_invocations": 1,
+    "identity_rule": "future I05 freeze binds exact I04R2 preregistration, parent analysis, machine policy, calibration policy, and entrypoint identities"
+  },
+  "required_I05_artifacts": [
+    "identity-binding I05 execution freeze with explicit owner-acceptance authority",
+    "complete raw three-arm per-seed/order calibration record",
+    "retained-output byte-reconstruction receipt",
+    "lane-local metric-sheet freeze populated only from the reconstructed analysis_arithmetic_delta"
+  ],
+  "I04R2_execution_boundary": {
+    "matched_null_executed": false,
+    "calibration_record_created": false,
+    "analysis_arithmetic_delta_computed_or_frozen": false,
+    "candidate_execution_authorized": false
+  }
+}

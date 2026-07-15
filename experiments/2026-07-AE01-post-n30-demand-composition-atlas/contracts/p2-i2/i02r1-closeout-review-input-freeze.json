@@ -1,0 +1,191 @@
+{
+  "artifact_id": "P2-I2-I02R1-CLOSEOUT-REVIEW-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I02R1",
+  "lane_id": "AE01-L02",
+  "status": "frozen",
+  "frozen_at": "2026-07-14",
+  "purpose": "Independently revalidate I02 as an exact identity, authority, imported-package provenance, callable/provider-contract, and explicit transition-boundary result without selecting an I03 realization or treating restoration identity as restoration correctness.",
+  "evidence_effect": "Admission integrity and provider-contract authority only; no realization, dependence mode, response, comparator, calibration, candidate, control, boundary-rung, restoration-correctness, or L02-result effect.",
+  "rcae_review_entry": {
+    "head_revision": "10c18fad2ba8ecac9ddacb0f0bc55813e6356c60",
+    "worktree_state": "I02 package present as uncommitted reviewed changes on branch p2-i2-experiment",
+    "identity_rule": "Review entry is the committed RCAE HEAD plus the exact SHA-256 of every reviewed I02 worktree artifact; it is separate from graph source identity.",
+    "owner_review": {
+      "external_locator_role": "conversation attachment only; not a stable repository identity",
+      "sha256": "84f32671dbd69fc2cf8507c30fdd4fd1fe9cd2805fc2405949fe6b2310c6393f"
+    },
+    "reviewed_artifacts": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-source-admission-input-freeze.json",
+        "sha256": "0ce2cbd8315faecdc9b433f767d95a7c34aa32386f84cda9c22c1d31b32760ca"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json",
+        "sha256": "1a9b9c4db4e88cd42309f82e683e8865330c2eb93965ffb21689e77e4ac1b5cd"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02-source-admission-and-restoration-transition.md",
+        "sha256": "04042ada06c7c2f1f169eac7758945be33ed721b07af0d5cd314a59b9acce075"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+        "sha256": "b09d9492ec9e60f76ac1cc0ffc1d75212a7fb7952f646ca5e253e374ef9e2950"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+        "sha256": "46fb7c48ccf87a7d657e128ac3691edf6ce58ea6310e2ffd91cde7b3284c693e"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+        "sha256": "eeebbf3173e6027c4521a8b4607fb664bc5078ca7f9e5254298e681c05aaf755"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+        "sha256": "dcad2f5e6bccf261153a624c0322bef730ce80ead24a83f7115d4ee9131c9124"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
+        "sha256": "5622e72ab550a5b02aa48e7ad370f637db34b56fe54b3d35544b07614d04f549"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md",
+        "sha256": "f5089fb65c888b97c8a513f01e5ba91a544500568604ec39c2dc7d0f66ef587d"
+      },
+      {
+        "path": "implementation/PostN30-checklist.md",
+        "sha256": "5cb5bad38b47a080a909aaadfd191ae4c5b5f24846cba41d42de20db781aab82"
+      }
+    ]
+  },
+  "graph_identity": {
+    "repository_id": "grc",
+    "repository_name": "graph-reflexive-coherence",
+    "revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+    "required_worktree_state": "clean before and after every dynamic check",
+    "read_only": true,
+    "stable_identity": "repository name plus full revision plus repository-relative path plus SHA-256",
+    "local_locator_is_raw_provenance_only": true
+  },
+  "review_areas": [
+    "Exact admitted source identity and explicit digest-match invariant",
+    "Granular runtime/public-API/contract/evidence/test/documentation roles",
+    "Imported checkout and package identity equivalence",
+    "CHG-004 predecessor/current scope, timing, governance, and full rerun",
+    "Complete public symbol signatures, accepted shapes, roles, causal relevance, and limits",
+    "Restoration-provider input rejection and subclass/version boundary",
+    "Identity-document schema, determinism, canonicality, and nondeterminism exclusions",
+    "Digest algorithm, encoding, independent recomputation, and raw-snapshot distinction",
+    "Complete continuation-relevant native/external/unsupported identity coverage",
+    "Conditional admission versus later configured provider adoption",
+    "No-silent fallback/transition and provider-match requirements",
+    "Identity equality versus bounded equal-input continuation",
+    "Lane-scoped non-retroactive source inventory and cross-artifact consistency",
+    "No I03 decision leakage and admission-as-non-evidence"
+  ],
+  "gate_conditions": [
+    "Every admitted source is exact, portable, and digest verified.",
+    "Runtime imports are tied to the admitted checkout.",
+    "Runtime, public API, contract, evidence, test, and documentation roles are distinct.",
+    "The complete public callable review is reconstructible after CHG-004.",
+    "Provider input, output, schema, digest, and unsupported-input boundaries are exact.",
+    "Continuation-relevant state coverage and external composition are explicit.",
+    "Prior/native provider selection cannot change silently.",
+    "Identity equality is not represented as continuation equivalence.",
+    "The source inventory is lane scoped and non-retroactive.",
+    "Admission remains conditional authority, not realization selection.",
+    "No I03, calibration, execution, restoration-correctness, or L02-result decision appears.",
+    "The graph repository remained read only and clean."
+  ],
+  "chg_004_reconstruction_contract": {
+    "predecessor_version": "1.0.0",
+    "current_version": "1.0.1",
+    "known_predecessor_file_bytes_retained": false,
+    "required_honest_disposition": "Retain a semantic predecessor reconstruction, explicitly state that byte-exact predecessor recovery is unavailable, bind its canonical semantic digest, bind current file and semantic digests, and verify that only the declared callable scope plus correction record changed before admission disposition.",
+    "original_public_runtime_methods": [
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.set_state",
+      "pygrc.models.LGRC9V3.snapshot",
+      "pygrc.models.LGRC9V3.load"
+    ],
+    "added_public_runtime_methods": [
+      "pygrc.models.LGRC9V3.from_state",
+      "pygrc.models.LGRC9V3.step",
+      "pygrc.models.LGRC9V3.run_event_queue",
+      "pygrc.models.LGRC9V3.set_causal_flux_routes",
+      "pygrc.models.LGRC9V3.reset",
+      "pygrc.models.LGRC9V3.save"
+    ],
+    "allowed_governance_class": "source_admission_scope_correction",
+    "timing_requirement": "The correction must precede every admission role and provider disposition.",
+    "full_rerun_required": true,
+    "desired_realization_may_drive_expansion": false
+  },
+  "generic_dynamic_check_boundary": {
+    "candidate_behavior_allowed": false,
+    "allowed": [
+      "Create ignored RCAE .venv with the system Python standard-library venv module.",
+      "Force checkout import with PYTHONDONTWRITEBYTECODE=1 and PYTHONPATH=${GRC}/src.",
+      "Record sys.path, package/module __file__, package version when available, callable __module__, __qualname__, and inspect.signature.",
+      "Run deterministic generic restoration-provider construction and digest checks on a minimal non-P2-I2 LGRC9V3 model/snapshot.",
+      "Run unsupported-input rejection checks without fallback.",
+      "Independently recompute SHA-256 over PyGRC canonical JSON bytes of the identity document.",
+      "Parse sources statically for exact continuation-relevant coverage."
+    ],
+    "prohibited": [
+      "Package installation, dependency download, editable install, ambient package substitution, or graph write.",
+      "Any multi-source pool, combined-versus-single, label-permutation, P2-I2 cell, control, calibration, candidate, or scientific response check.",
+      "Any fallback after provider error.",
+      "Any use of generated behavior as evidence of ecological or realization adequacy."
+    ],
+    "venv_creation_rule": "Create .venv only because imported-package provenance is now a frozen I02R1 gate condition. The ignored environment is infrastructure, not an artifact or identity."
+  },
+  "source_and_symbol_scope": {
+    "source_paths_from": "i02-admitted-source-and-restoration-manifest.json source_entries",
+    "symbols_from": "i02-admitted-source-and-restoration-manifest.json callable_entries",
+    "new_graph_path_rule": "A new graph source path requires a new change entry before inspection.",
+    "new_symbol_rule": "A new public symbol requires a new change entry before disposition.",
+    "source_classifications": [
+      "runtime_source",
+      "public_api_source",
+      "schema_or_contract_source",
+      "evidence_or_closeout_source",
+      "test_or_conformance_source",
+      "documentation_only"
+    ],
+    "coverage_dispositions": [
+      "covered_by_native_provider",
+      "external_composition_required",
+      "unsupported_blocks_branching",
+      "not_continuation_relevant"
+    ]
+  },
+  "required_outputs": {
+    "freeze_transition": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r1-chg-004-freeze-transition.json",
+    "corrected_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-admitted-source-and-restoration-manifest.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r1_validate.py",
+    "validation_record": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r1-identity-authority-validation.json",
+    "revalidation_report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R1-admission-closeout-revalidation.md",
+    "source_inventory": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+    "decision_record": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+    "checklist": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md"
+  },
+  "failure_effects": {
+    "source_or_import_identity_failure": "Do not admit the affected executable dependency; keep source-admission gate failed and I03 blocked.",
+    "provider_contract_failure": "Do not admit the provider for executable use; no fallback; keep I03 blocked until explicit disposition.",
+    "coverage_unresolved": "Mark unsupported_blocks_branching and forbid a later restorable branch that depends on the component.",
+    "i03_leakage": "Remove or quarantine the leaked decision, reopen every affected later gate, and retain no scientific effect.",
+    "graph_mutation_or_dirty_state": "Stop the review and fail the gate without converting the condition into scientific evidence."
+  },
+  "change_control": {
+    "change_id": "P2-I2-CHG-005",
+    "rule": "Any new graph path, public symbol, provider/input family, coverage component, dynamic behavior, or output requires checklist change control before inspection or execution.",
+    "rerun_rule": "Rerun every affected source, symbol, provider, coverage, cross-artifact, and gate-condition check; preserve historical I02 provenance and DEC-007."
+  },
+  "exit_gate": "P2-I2-SOURCE-ADMISSION-GATE",
+  "exit_rule": "All fourteen review areas and twelve gate conditions pass from retained exact evidence; CHG-004 governance and predecessor/current scope are honest and reconstructible; graph remains clean/read-only; no I03 or scientific effect; otherwise fail closed."
+}

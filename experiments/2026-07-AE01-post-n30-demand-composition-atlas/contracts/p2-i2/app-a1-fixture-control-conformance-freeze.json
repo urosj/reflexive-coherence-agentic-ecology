@@ -1,0 +1,393 @@
+{
+  "artifact_id": "P2-I2-APP-A1-FIXTURE-CONTROL-CONFORMANCE-FREEZE",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "frozen_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A1",
+  "status": "frozen_before_any_model_construction",
+  "authority": {
+    "decision_id": "P2-I2-DEC-066",
+    "change_id": "P2-I2-CHG-071",
+    "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_must_be_clean": true,
+    "graph_mutation_allowed": false,
+    "candidate_free_conformance_authorized": true,
+    "app_a2_authorized": false,
+    "scientific_runtime_authorized": false,
+    "app_a1_acceptance_granted": false,
+    "commit_authorized": false,
+    "bound_rcae_files": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-source-delta-audit.json",
+        "sha256": "b19ee29612cd13c04e4adec3624a714ae9d5e4b42470552d228cc2d9b0b1666b"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-gate-authority-proposal.json",
+        "sha256": "87e2e84e320097e87e442cb9451cb75b9805df49311ae630d6cfa1ffc416cf10"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-gate-authority-acceptance.json",
+        "sha256": "a699ce20c734fb5b873b2e7e87b79529021a025490a31dc17c09f50c6d7137b9"
+      }
+    ],
+    "harness": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py",
+      "sha256": "7727ed2dd5150c0eaef9886e1502259c52ec6fc3057da5562cdc1cea053094be"
+    },
+    "bound_graph_files": [
+      {
+        "path": "src/pygrc/core/__init__.py",
+        "sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae"
+      },
+      {
+        "path": "src/pygrc/core/storage.py",
+        "sha256": "a73d30238bc81dc3c366f04f3e8d5e8a266d0a683e7db88560196930d279c397"
+      },
+      {
+        "path": "src/pygrc/models/__init__.py",
+        "sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70"
+      },
+      {
+        "path": "src/pygrc/models/grc_9_state.py",
+        "sha256": "b3d979fe4bffbc86fe256f71ff4894c3da03fd4af706457a281f650242ca26b7"
+      },
+      {
+        "path": "src/pygrc/models/grc_9_v3_state.py",
+        "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_contract.py",
+        "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+        "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+        "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_runtime_state.py",
+        "sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+        "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931"
+      }
+    ]
+  },
+  "environment": {
+    "python_invocation": ".venv/bin/python -B",
+    "python_version": "3.12.3",
+    "pythonhashseed": "0",
+    "pythondontwritebytecode": "1",
+    "pythonpath": "external-repository:graph-reflexive-coherence/src",
+    "direct_dependencies": {
+      "matplotlib": "3.10.9",
+      "networkx": "3.6.1",
+      "pyvis": "0.3.2",
+      "PyYAML": "6.0.3"
+    },
+    "ambient_or_system_package_substitution_allowed": false
+  },
+  "measurement_authority": {
+    "domain_id": "app_a_live_packet_coherence_delta_v1",
+    "carrier_axes": [
+      "environment",
+      "support",
+      "distinguishability",
+      "boundary"
+    ],
+    "retention_fraction": 0.82,
+    "retention_role": "configuration_identity_not_measured_gate",
+    "runtime_tolerance": 1e-12,
+    "gates": {
+      "environment_feedback": {
+        "definition": "arm R packet mass minus matched-reference R packet mass on environment axis",
+        "relation": ">=",
+        "threshold": 0.04
+      },
+      "support_feedback": {
+        "definition": "arm R packet mass minus matched-reference R packet mass on support axis",
+        "relation": ">=",
+        "threshold": 0.02
+      },
+      "phase_residual": {
+        "definition": "max axis abs((arm pre-R carrier minus reference pre-R carrier) minus (arm R packet mass minus reference R packet mass))",
+        "relation": "<=",
+        "threshold": 0.015
+      },
+      "registered_route_merge_leakage": {
+        "definition": "(unregistered shared-carrier packet mass plus absolute native budget error) / max(1, total registered common-carrier packet mass)",
+        "relation": "<=",
+        "threshold": 1e-12
+      }
+    },
+    "n29_metric_equivalence_claimed": false,
+    "scientific_zero_rule": "A selected operation with complete native invocation, opportunity, timing, path, and receipts remains operationally valid even when its measured carrier effect is zero."
+  },
+  "topology": {
+    "topology_id": "app_a_universal_access_shared_and_diversion_axes_v1",
+    "node_count": 12,
+    "edge_count": 28,
+    "maximum_node_degree": 8,
+    "nodes": [
+      {"node_id": 0, "role": "s_g", "kind": "participant"},
+      {"node_id": 1, "role": "s_e", "kind": "participant"},
+      {"node_id": 2, "role": "s_p", "kind": "participant"},
+      {"node_id": 3, "role": "c_environment", "kind": "shared_carrier"},
+      {"node_id": 4, "role": "c_support", "kind": "shared_carrier"},
+      {"node_id": 5, "role": "c_distinguishability", "kind": "shared_carrier"},
+      {"node_id": 6, "role": "c_boundary", "kind": "shared_carrier"},
+      {"node_id": 7, "role": "d_environment", "kind": "isolated_diversion"},
+      {"node_id": 8, "role": "d_support", "kind": "isolated_diversion"},
+      {"node_id": 9, "role": "d_distinguishability", "kind": "isolated_diversion"},
+      {"node_id": 10, "role": "d_boundary", "kind": "isolated_diversion"},
+      {"node_id": 11, "role": "r", "kind": "passive_noncontributor_response"}
+    ],
+    "edges": [
+      {"edge_id": 0, "left": "s_g", "right": "c_environment", "edge_role": "c_environment__s_g"},
+      {"edge_id": 1, "left": "s_g", "right": "c_support", "edge_role": "c_support__s_g"},
+      {"edge_id": 2, "left": "s_g", "right": "c_distinguishability", "edge_role": "c_distinguishability__s_g"},
+      {"edge_id": 3, "left": "s_g", "right": "c_boundary", "edge_role": "c_boundary__s_g"},
+      {"edge_id": 4, "left": "s_g", "right": "d_environment", "edge_role": "d_environment__s_g"},
+      {"edge_id": 5, "left": "s_g", "right": "d_support", "edge_role": "d_support__s_g"},
+      {"edge_id": 6, "left": "s_g", "right": "d_distinguishability", "edge_role": "d_distinguishability__s_g"},
+      {"edge_id": 7, "left": "s_g", "right": "d_boundary", "edge_role": "d_boundary__s_g"},
+      {"edge_id": 8, "left": "s_e", "right": "c_environment", "edge_role": "c_environment__s_e"},
+      {"edge_id": 9, "left": "s_e", "right": "c_support", "edge_role": "c_support__s_e"},
+      {"edge_id": 10, "left": "s_e", "right": "c_distinguishability", "edge_role": "c_distinguishability__s_e"},
+      {"edge_id": 11, "left": "s_e", "right": "c_boundary", "edge_role": "c_boundary__s_e"},
+      {"edge_id": 12, "left": "s_e", "right": "d_environment", "edge_role": "d_environment__s_e"},
+      {"edge_id": 13, "left": "s_e", "right": "d_support", "edge_role": "d_support__s_e"},
+      {"edge_id": 14, "left": "s_e", "right": "d_distinguishability", "edge_role": "d_distinguishability__s_e"},
+      {"edge_id": 15, "left": "s_e", "right": "d_boundary", "edge_role": "d_boundary__s_e"},
+      {"edge_id": 16, "left": "s_p", "right": "c_environment", "edge_role": "c_environment__s_p"},
+      {"edge_id": 17, "left": "s_p", "right": "c_support", "edge_role": "c_support__s_p"},
+      {"edge_id": 18, "left": "s_p", "right": "c_distinguishability", "edge_role": "c_distinguishability__s_p"},
+      {"edge_id": 19, "left": "s_p", "right": "c_boundary", "edge_role": "c_boundary__s_p"},
+      {"edge_id": 20, "left": "s_p", "right": "d_environment", "edge_role": "d_environment__s_p"},
+      {"edge_id": 21, "left": "s_p", "right": "d_support", "edge_role": "d_support__s_p"},
+      {"edge_id": 22, "left": "s_p", "right": "d_distinguishability", "edge_role": "d_distinguishability__s_p"},
+      {"edge_id": 23, "left": "s_p", "right": "d_boundary", "edge_role": "d_boundary__s_p"},
+      {"edge_id": 24, "left": "c_environment", "right": "r", "edge_role": "c_environment__r"},
+      {"edge_id": 25, "left": "c_support", "right": "r", "edge_role": "c_support__r"},
+      {"edge_id": 26, "left": "c_distinguishability", "right": "r", "edge_role": "c_distinguishability__r"},
+      {"edge_id": 27, "left": "c_boundary", "right": "r", "edge_role": "c_boundary__r"}
+    ],
+    "access_guard": "All three participant nodes have identical bidirectional topology access to every shared and diversion axis; only the frozen actor assignment selects an operation source/sink/hub.",
+    "r_read_guard": "R has edges only to the four shared-carrier axes and no participant or diversion edge."
+  },
+  "scientific_fixture": {
+    "fixture_id": "app_a_n29_shape_live_packet_embedding_v1",
+    "initial_coherence": {
+      "s_g": 1.0,
+      "s_e": 1.0,
+      "s_p": 1.0,
+      "c_environment": 0.2,
+      "c_support": 0.2,
+      "c_distinguishability": 0.2,
+      "c_boundary": 0.2,
+      "d_environment": 0.2,
+      "d_support": 0.2,
+      "d_distinguishability": 0.2,
+      "d_boundary": 0.2,
+      "r": 0.1
+    },
+    "one_source_capacity_override": {
+      "s_g": 2.0
+    },
+    "operation_vectors": {
+      "G": {
+        "environment": 0.123,
+        "support": 0.082,
+        "distinguishability": 0.133,
+        "boundary": 0.126
+      },
+      "E": {
+        "environment": 0.069,
+        "support": 0.063,
+        "distinguishability": 0.077,
+        "boundary": 0.081
+      },
+      "P": {
+        "environment": 0.003,
+        "support": 0.008,
+        "distinguishability": 0.016,
+        "boundary_out": 0.01
+      }
+    },
+    "vector_interpretation": {
+      "G": "participant sends four positive source-anchored amounts to the shared carrier",
+      "E": "shared carrier sends four positive removal amounts to the extractor sink",
+      "P": "boundary carrier sends boundary_out to the processor hub, which sends the three positive redistribution amounts to the other axes",
+      "embedding_claim": "prospective source-grounded operation geometry only; not native replication of N29 capacity scores"
+    },
+    "actor_assignments": {
+      "primary": {"G": "s_g", "E": "s_e", "P": "s_p"},
+      "cyclic_rotation": {"G": "s_p", "E": "s_g", "P": "s_e"},
+      "one_source": {"G": "s_g", "E": "s_g", "P": "s_g"}
+    },
+    "label_permutation": {
+      "s_g": "participant_gamma",
+      "s_e": "participant_alpha",
+      "s_p": "participant_beta"
+    },
+    "event_schedule": {
+      "operation_position_1_pair_indices": [0, 1, 2, 3],
+      "operation_position_2_pair_indices": [4, 5, 6, 7],
+      "operation_position_3_pair_indices": [8, 9, 10, 11],
+      "pair_rule": "departure_event_time_key=2*pair_index+1; arrival_event_time_key=2*pair_index+2; scheduler_event_index=departure_event_time_key",
+      "operation_packet_count": 4,
+      "response_packet_count": 4,
+      "response_occurs_only_after_all_three_operation_positions": true
+    },
+    "omission_rule": "Every omitted operation executes the same actor, amount, packet count, pair positions, event times, and opportunity against the corresponding isolated diversion axes.",
+    "common_rule": "Every selected operation executes against the four shared-carrier axes through public native packet scheduling and step processing.",
+    "r_rule": "After the final operation position, native causal-flux production schedules four source_coherence_fraction packets from the shared axes to passive R with amount_fraction=0.82.",
+    "intervention_rule": "Carrier clamp and mediator restore use a copied LGRC9V3 runtime state plus public set_state; before/after restoration identities and exact target carrier values are retained."
+  },
+  "arm_registry": [
+    {"arm_id": "reference", "matched_reference": "self", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": [], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "G", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "E", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["E"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "P", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "GE", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "E"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "GP", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "EP", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["E", "P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "GEP", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "E", "P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "one_source_reference", "matched_reference": "self", "actors": "one_source", "sequence": ["G", "E", "P"], "common_operations": [], "labels": "canonical", "initial_override": "one_source_capacity_override", "intervention": "none"},
+    {"arm_id": "one_source_GEP", "matched_reference": "one_source_reference", "actors": "one_source", "sequence": ["G", "E", "P"], "common_operations": ["G", "E", "P"], "labels": "canonical", "initial_override": "one_source_capacity_override", "intervention": "none"},
+    {"arm_id": "cyclic_rotation_GEP", "matched_reference": "reference", "actors": "cyclic_rotation", "sequence": ["G", "E", "P"], "common_operations": ["G", "E", "P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "order_EGP", "matched_reference": "reference", "actors": "primary", "sequence": ["E", "G", "P"], "common_operations": ["G", "E", "P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "order_GPE", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "P", "E"], "common_operations": ["G", "E", "P"], "labels": "canonical", "intervention": "none"},
+    {"arm_id": "label_permuted_reference", "matched_reference": "self", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": [], "labels": "label_permutation", "intervention": "none"},
+    {"arm_id": "label_permuted_GEP", "matched_reference": "label_permuted_reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "E", "P"], "labels": "label_permutation", "intervention": "none"},
+    {"arm_id": "carrier_clamp_GEP", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "E", "P"], "labels": "canonical", "intervention": "clamp_all_carrier_axes_to_matched_reference_pre_r"},
+    {"arm_id": "mediator_restore_G", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["E", "P"], "labels": "canonical", "intervention": "restore_all_carrier_axes_to_registered_GEP_pre_r"},
+    {"arm_id": "mediator_restore_E", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "P"], "labels": "canonical", "intervention": "restore_all_carrier_axes_to_registered_GEP_pre_r"},
+    {"arm_id": "mediator_restore_P", "matched_reference": "reference", "actors": "primary", "sequence": ["G", "E", "P"], "common_operations": ["G", "E"], "labels": "canonical", "intervention": "restore_all_carrier_axes_to_registered_GEP_pre_r"}
+  ],
+  "controls": {
+    "proper_subset_conjunction": "All seven valid proper subsets must retain configuration identity and each fail at least one measured gate; nonevaluable never counts as insufficiency.",
+    "private_partition": "The reference arm routes all three matched operations through isolated diversion axes; R remains connected only to shared axes.",
+    "direct_read_exclusion": "Topology contains no participant-to-R or diversion-to-R edge, and every native R production record must identify one shared-carrier source node.",
+    "controller_exclusion": "The executor may configure public routes and read receipts but may not calculate or schedule R packet amounts; amount_fraction resolution belongs to native produce_events.",
+    "carrier_clamp": "GEP carrier axes are clamped to matched-reference pre-R values before native R production.",
+    "mediator_restores": "Each leave-one arm receives the exact registered GEP pre-R carrier vector through an explicit state intervention before R.",
+    "source_label_guard": "Canonical and cyclic participant labels use distinct matched references and must reconstruct the same numeric relation before any label-independent statement.",
+    "role_rotation_guard": "All participants have identical topology access, initial capacity, operation authority, timing, and event opportunity; cyclic rotation changes only contributor-to-operation assignment.",
+    "one_source_scope_diagnostic": "One source with increased reserve performs all three operations. Success makes participant plurality non-load-bearing; failure alone leaves plurality unresolved.",
+    "order_controls": ["E->G->P", "G->P->E"],
+    "valid_zero": "Operational validity derives from complete public-call and packet/event receipts, never from a required nonzero measured delta."
+  },
+  "execution_policy": {
+    "future_stage": "P2-I2-APP-A2",
+    "arm_count": 19,
+    "fresh_process_per_arm": true,
+    "fresh_model_per_arm": true,
+    "single_aggregate_persisted_output": true,
+    "per_arm_narrative_files": false,
+    "child_transport": "canonical JSON over captured stdout; no persistent per-arm output",
+    "attempts_per_arm": 1,
+    "retry_limit": 0,
+    "adaptive_branching": false,
+    "parameter_search": false,
+    "outcome_dependent_order": false,
+    "maximum_packet_events_per_arm": 32,
+    "maximum_queue_length": 4,
+    "maximum_nodes": 12,
+    "maximum_edges": 28,
+    "maximum_wall_seconds_per_arm": 30,
+    "address_space_limit": "none",
+    "incomplete_arm_rule": "Any missing, failed, invalid, or nonevaluable required arm fails matrix completion closed.",
+    "reconstruction": "Read retained aggregate output only; no child/model/producer regeneration; canonical bytes and conclusion must reconstruct exactly.",
+    "app_a2_activation_requires": "separate owner acceptance and retention of the completed APP-A1 package"
+  },
+  "conformance": {
+    "evidence_class": "candidate_free_native_interface_conformance_only",
+    "initial_coherence": {
+      "s_g": 0.8,
+      "s_e": 0.8,
+      "s_p": 0.8,
+      "c_environment": 0.4,
+      "c_support": 0.4,
+      "c_distinguishability": 0.4,
+      "c_boundary": 0.4,
+      "d_environment": 0.4,
+      "d_support": 0.4,
+      "d_distinguishability": 0.4,
+      "d_boundary": 0.4,
+      "r": 0.2
+    },
+    "sentinel_vectors": {
+      "G": {
+        "environment": 0.031,
+        "support": 0.032,
+        "distinguishability": 0.033,
+        "boundary": 0.034
+      },
+      "E": {
+        "environment": 0.011,
+        "support": 0.012,
+        "distinguishability": 0.013,
+        "boundary": 0.014
+      },
+      "P": {
+        "environment": 0.0025,
+        "support": 0.0035,
+        "distinguishability": 0.0045,
+        "boundary_out": 0.007
+      }
+    },
+    "zero_net_round_trip_amount": 0.009,
+    "label_permutation": {
+      "s_g": "sentinel_gamma",
+      "s_e": "sentinel_alpha",
+      "s_p": "sentinel_beta"
+    },
+    "branches": [
+      "native_common",
+      "all_diverted",
+      "label_permuted",
+      "carrier_clamped",
+      "valid_zero_round_trip",
+      "save_load_empty_step_reset"
+    ],
+    "run_policy": {
+      "evidence_invocations": 1,
+      "reconstruction_invocations": 1,
+      "retry_limit": 0,
+      "rescue_variants": 0,
+      "parameter_search": false,
+      "scientific_values_allowed": false,
+      "app_a2_arms_allowed": 0,
+      "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-runtime-conformance.json",
+      "reconstruction_command": "same command with output temporary-output:p2-i2-app-a1-runtime-conformance.reconstructed.json",
+      "byte_comparison": "cmp retained conformance bytes with reconstructed bytes",
+      "post_run_additional_invocations": 0
+    }
+  },
+  "claim_boundary": {
+    "conformance_can_establish": [
+      "public native G/E/P/R packet paths execute",
+      "diversion and R isolation execute",
+      "label permutation preserves numeric behavior",
+      "carrier state intervention changes native R input",
+      "valid zero retains operation receipts",
+      "save/load/continuation/reset preserve restoration contract",
+      "conformance output reconstructs byte-identically"
+    ],
+    "conformance_cannot_establish": [
+      "any scientific gate pass or failure",
+      "proper-subset irreducibility",
+      "participant plurality",
+      "order dependence",
+      "Appendix support or falsification",
+      "APP-A1 acceptance",
+      "APP-A2 authorization"
+    ],
+    "maximum_future_positive_label": "bounded generator-extractor-redistributor shared-carrier composition candidate"
+  }
+}

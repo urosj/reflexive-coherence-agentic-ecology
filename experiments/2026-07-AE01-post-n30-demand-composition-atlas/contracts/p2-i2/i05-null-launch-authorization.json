@@ -1,0 +1,31 @@
+{
+  "artifact_id": "P2-I2-I05-NULL-LAUNCH-AUTHORIZATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I05",
+  "activity_id": "P2-I2-I05-ARITHMETIC-NULL-EXECUTION",
+  "lane_id": "AE01-L02",
+  "authorized_at": "2026-07-14",
+  "launch_change_id": "P2-I2-CHG-023",
+  "launch_decision_id": "P2-I2-DEC-030",
+  "preclaim_correction_change_id": "P2-I2-CHG-024",
+  "preclaim_correction_decision_id": "P2-I2-DEC-031",
+  "owner_acceptance_sha256": "fb1eedf30a477e938339366d380f30e263b19b73efc7881c41df97170cd3acb3",
+  "null_invocation_authorized": true,
+  "max_governed_attempts": 1,
+  "max_infrastructure_retries": 0,
+  "candidate_execution_authorized": false,
+  "authorization_sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+  "wrapper_sha256": "b6cf5e3129821660fb77b2f7c3591a66d859d18930cc28681fa8096d7462220c",
+  "policy_sha256": "71dddb9f89a1d195e84899555ebdadbda45041405d04cbcbe03628ab536b932a",
+  "I04R2_hashes": {
+    "analysis_module_sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+    "calibration_entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "I04R2_owner_acceptance_sha256": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+    "I04R2_test_sha256": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+    "I04R2_validation_sha256": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361",
+    "machine_policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+    "parent_analysis_policy_sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+    "preregistration_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b"
+  }
+}

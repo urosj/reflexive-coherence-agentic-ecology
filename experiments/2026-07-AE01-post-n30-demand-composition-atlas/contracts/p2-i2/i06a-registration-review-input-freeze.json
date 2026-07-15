@@ -1,0 +1,112 @@
+{
+  "artifact_id": "P2-I2-I06A-REGISTRATION-REVIEW-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06A",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-15",
+  "status": "frozen_before_i06a_proof_construction",
+  "entry_authority": {
+    "committed_parent": "3be90739990d32af6cd2c9f1f07d2ef735ff3a2f",
+    "branch": "p2-i2-experiment",
+    "owner_review_sha256": "31cfb67ee67c250640e085ee0f015161bc5aa795519e688a62fce5a18386cffe",
+    "owner_review_disposition": "two_potential_correctness_blockers_plus_four_critical_confirmations",
+    "REG_GATE_passed": false,
+    "I07_authorized": false,
+    "commit_authorized": false
+  },
+  "exact_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+      "role": "I03_tested_AdapterV1_source",
+      "sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+      "role": "I06_registered_AdapterV2_source",
+      "sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py",
+      "role": "current_post_portability_validator_source",
+      "sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-input-freeze.json",
+      "role": "I06_exact_input_authority",
+      "sha256": "b198fa71f312a43ef9df2a706cef19c00d8916c078912a6dbea6f8566d79e8bf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "role": "I06_exact_registration_bundle",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-post-portability-manifest.json",
+      "role": "I06_pre_review_final_manifest_v1_0_1",
+      "sha256": "cb6f2d86d43839e64cf768683c1417b4ba6c9195266fad19f5344ade36d8ef54"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+      "role": "retained_historical_14_of_14_validation",
+      "sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+      "role": "I03B_AdapterV1_runtime_conformance",
+      "sha256": "af59b00a29fa8e90e4098fbedac862f3e1fd64d23b2e6a3573a552f39c0e5fc3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+      "role": "I03C_AdapterV1_runtime_conformance",
+      "sha256": "3c866b52232cf2a3826c15315578f7340b6c7dd86174cd246111db42de85d00e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation.json",
+      "role": "accepted_I03B_closeout",
+      "sha256": "6878ae36894737e61a814a19d08c2f4360164f4c812ceb66a1cefa5a1fd67aa2"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-closeout-revalidation.json",
+      "role": "accepted_I03C_closeout",
+      "sha256": "4a263f507a9112cd58073daa6389c7895f7310da190de7e0c59c5a6f37f11ec8"
+    }
+  ],
+  "blocker_resolution": {
+    "adapter_v2": "exact inherited-method identity plus normalized materialization AST equivalence and pure fake-native configured-tolerance/identity/packet/save-load-reset tests",
+    "validator_manifest": "retain byte-identical historical five-file manifest, reconstruct historical validator to exact execution hash, prove current transition is guard-only, and bind historical/current roles separately"
+  },
+  "critical_confirmation_scope": [
+    "complete registered tolerance domain and gain inequalities",
+    "leave-one diversion matching and H_P admission exclusions",
+    "positive per-mode isolation in shared topology",
+    "per-matrix-entry infrastructure retry semantics"
+  ],
+  "execution_boundary": {
+    "python": ".venv/bin/python",
+    "prevalidation_syntax_json_starts": 1,
+    "output_producing_static_validation_start_ceiling": 1,
+    "infrastructure_retries": 0,
+    "PyGRC_imports": 0,
+    "PyGRC_model_instantiations": 0,
+    "baseline_validation_reruns": 0,
+    "candidate_or_control_operations": 0,
+    "active_history_candidate_admissions": 0,
+    "response_evaluations": 0,
+    "comparator_or_scientific_windows": 0,
+    "scientific_result": false
+  },
+  "expected_outputs": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-execution-manifest.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06a_validate.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06-exact-registration.md"
+  ],
+  "review_stop": {
+    "return_uncommitted": true,
+    "REG_GATE_passed": false,
+    "I07_authorized": false,
+    "owner_acceptance_required": true
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "CLOSE_GATE": "review_ready_pending_owner_acceptance",
+  "artifact_id": "P2-I2-I11-CLOSEOUT-VALIDATION",
+  "artifact_version": "1.0.0",
+  "canonical_payload_digest": "0e051d87808f06a394dd9d9089f1c6216f8625e84418f39091ee132a334071a0",
+  "checks": [
+    {
+      "check_id": "I11-01",
+      "claim": "all 18 frozen input identities are exact",
+      "observed": 18,
+      "passed": true
+    },
+    {
+      "check_id": "I11-02",
+      "claim": "repository venv and Python -B govern construction",
+      "observed": {
+        "dont_write_bytecode": true,
+        "interpreter": ".venv/bin/python"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-03",
+      "claim": "C02 is complete with 234 evaluable terminals and zero missing or nonevaluable entry",
+      "observed": {
+        "ambiguous": 0,
+        "evaluable": 234,
+        "missing": 0,
+        "nonevaluable": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-04",
+      "claim": "I09A retains 38 comparison passes and 15 lane-control passes",
+      "observed": {
+        "comparison_pass": 38,
+        "lane_control_pass": 15
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-05",
+      "claim": "all 57 program-control mode dispositions remain resolved",
+      "observed": {
+        "not_applicable": 1,
+        "pass": 56
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-06",
+      "claim": "I10 retained-evidence reconstruction remains 24/24 passed",
+      "observed": 24,
+      "passed": true
+    },
+    {
+      "check_id": "I11-07",
+      "claim": "all 18 mode-order-seed primary margins are preserved",
+      "observed": 18,
+      "passed": true
+    },
+    {
+      "check_id": "I11-08",
+      "claim": "state-carried is robust aligned for both physical orders",
+      "observed": "robust_aligned",
+      "passed": true
+    },
+    {
+      "check_id": "I11-09",
+      "claim": "history-carried preserves the order-conditioned mixed relation",
+      "observed": "mixed_direction",
+      "passed": true
+    },
+    {
+      "check_id": "I11-10",
+      "claim": "hybrid preserves the order-conditioned mixed relation",
+      "observed": "mixed_direction",
+      "passed": true
+    },
+    {
+      "check_id": "I11-11",
+      "claim": "AE01-L02-R01 is assigned from retained mode-specific evidence",
+      "observed": "reached",
+      "passed": true
+    },
+    {
+      "check_id": "I11-12",
+      "claim": "AE01-L02-R02 is assigned from retained mode-specific evidence",
+      "observed": "reached",
+      "passed": true
+    },
+    {
+      "check_id": "I11-13",
+      "claim": "AE01-L02-R03 is assigned from retained mode-specific evidence",
+      "observed": "reached",
+      "passed": true
+    },
+    {
+      "check_id": "I11-14",
+      "claim": "AE01-L02-R04 is assigned from retained mode-specific evidence",
+      "observed": "reached",
+      "passed": true
+    },
+    {
+      "check_id": "I11-15",
+      "claim": "AE01-L02-R05 is assigned from retained mode-specific evidence",
+      "observed": "reached",
+      "passed": true
+    },
+    {
+      "check_id": "I11-16",
+      "claim": "all three realization classes remain explicit and unranked",
+      "observed": {
+        "history_carried": {
+          "rank": null,
+          "realization": "minimally_producer_assisted"
+        },
+        "hybrid": {
+          "rank": null,
+          "realization": "minimally_producer_assisted"
+        },
+        "state_carried": {
+          "rank": null,
+          "realization": "pygrc_native_candidate"
+        }
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-17",
+      "claim": "lane-wide support uses the lowest honest scaffold-dependent boundary",
+      "observed": "scaffold_dependent",
+      "passed": true
+    },
+    {
+      "check_id": "I11-18",
+      "claim": "developmental value is T3 operational and not T4 theoretical",
+      "observed": "T3_operational_class",
+      "passed": true
+    },
+    {
+      "check_id": "I11-19",
+      "claim": "terminal class follows the frozen decision procedure",
+      "observed": "supported_bounded_candidate",
+      "passed": true
+    },
+    {
+      "check_id": "I11-20",
+      "claim": "all 30 terminal-sensitive program-guard mode results are derived and pass",
+      "observed": {
+        "pass": 30
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-21",
+      "claim": "repeated-source equivalence remains non-gating and claim-limiting",
+      "observed": {
+        "gating": false,
+        "negative_signature_count": 2
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-22",
+      "claim": "observed relation and LGRC demand implication remain separate",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I11-23",
+      "claim": "all required debt categories remain explicit",
+      "observed": [
+        "native",
+        "native",
+        "producer",
+        "construction",
+        "medium",
+        "leakage",
+        "transfer",
+        "measurement",
+        "composition",
+        "semantic",
+        "claim"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "I11-24",
+      "claim": "the strongest claim equals the frozen L02 ceiling and stronger relabels are blocked",
+      "observed": {
+        "blocked_count": 9,
+        "claim": "bounded shared-pool co-conditioning demand pattern"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-25",
+      "claim": "one bounded next move has an explicit falsifier and requires new preregistration",
+      "observed": {
+        "disposition": "new_boundary_or_naturalization_probe",
+        "new_preregistration_required": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-26",
+      "claim": "developmental, requirement, and terminal records pass accepted JSON Schema",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I11-27",
+      "claim": "all primary closeout artifacts independently reconstruct byte-identically",
+      "observed": {
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-closeout-manifest.json": true,
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-developmental-interpretation.json": true,
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-requirement-extraction.json": true,
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-terminal-classification.json": true,
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I11-terminal-closeout.md": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-28",
+      "claim": "the complete generated closeout contains no absolute path",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I11-29",
+      "claim": "I11 performs zero PyGRC, model, adapter, packet, C02, response, control, or scientific runtime operation",
+      "observed": {
+        "accepted_artifact_mutations": 0,
+        "adapter_constructions": 0,
+        "c02_worker_invocations": 0,
+        "graph_mutations": 0,
+        "matrix_entry_regenerations": 0,
+        "mode_rankings": 0,
+        "model_constructions": 0,
+        "n31_selections": 0,
+        "new_scientific_inputs": 0,
+        "packet_constructions": 0,
+        "persisted_absolute_paths": 0,
+        "pygrc_imports": 0,
+        "response_or_control_invocations": 0,
+        "retained_files_parsed": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I11-30",
+      "claim": "manifest canonical payload digest reconstructs",
+      "observed": "319aae4ed81799d7952b8d65bb3415f4e5fb6f8610664801998d4fc867450038",
+      "passed": true
+    }
+  ],
+  "commit_authorized": false,
+  "independent_reconstruction": {
+    "all_byte_identical": true,
+    "byte_identical_output_count": 5,
+    "generated_scientific_operation_count": 0,
+    "reconstructed_output_count": 5
+  },
+  "iteration_id": "P2-I2-I11",
+  "lane_id": "AE01-L02",
+  "manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-closeout-manifest.json",
+  "manifest_sha256": "bf5a530de7cc41137befb29a2864a77a53ecc57aadebdb89d0f92f99aac7ab0a",
+  "owner_acceptance": false,
+  "source_input_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-interpretation-input-freeze.json",
+  "source_input_freeze_sha256": "e31ae01228be00f72f3184c26b21464d2e87799c2532f90d602d5ba913d3a7d3",
+  "status": "passed",
+  "summary": {
+    "blockers": 0,
+    "check_count": 30,
+    "failed": 0,
+    "passed": 30
+  }
+}

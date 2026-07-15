@@ -1,0 +1,54 @@
+{
+  "artifact_id": "P2-I2-APP-B4-LIVE-ACTIVATION",
+  "artifact_version": "1.0",
+  "authorization_consumed": false,
+  "campaign_attempts": 1,
+  "campaign_authorized": true,
+  "candidate_current_effect": {
+    "campaign_start_authorized": false,
+    "claim_created": false,
+    "containing_commit_authorized": false,
+    "owner_acceptance_artifact_exists": false,
+    "runtime_generation_count": 0
+  },
+  "canonical_payload_digest": "7c3aeca5c7730175c4344f329a254fb8a924538c06649d9140671bb8292825a5",
+  "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+  "execution_correction": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-activation-binding-correction.json",
+    "sha256": "2f7a85dec9dbff8a2f79a8e0805657f650db4d88836bf43fca38cc4700c09d93"
+  },
+  "freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+    "sha256": "77025e8b2eabc63298485746790ab0dc78e67cf507856357c2d575d7595214f8"
+  },
+  "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "graph_repository": "../graph-reflexive-coherence",
+  "implementation_commit": "863d73c956286efb631d7a6fdd579837325dc2c0",
+  "infrastructure_retries": 0,
+  "interpreter": ".venv/bin/python",
+  "iteration_id": "P2-I2-APP-B4",
+  "normalized_command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+    "--freeze",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+    "--activation",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-live-activation.json",
+    "--claim",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+    "--output",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+    "--expected-head",
+    "{ACTIVATION_HEAD}",
+    "--graph-root",
+    "../graph-reflexive-coherence"
+  ],
+  "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+  "owner_acceptance": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-activation-owner-acceptance.json"
+  },
+  "reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-reconstruction-and-closeout.json",
+  "scientific_retries": 0,
+  "status": "active_for_single_campaign_after_owner_acceptance"
+}

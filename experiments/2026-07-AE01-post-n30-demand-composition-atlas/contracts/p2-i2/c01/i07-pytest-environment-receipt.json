@@ -1,0 +1,47 @@
+{
+  "artifact_id": "P2-I2-I07-PYTEST-ENVIRONMENT-RECEIPT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I07",
+  "lane_id": "AE01-L02",
+  "observed_at": "2026-07-15",
+  "status": "owner_authorized_repository_venv_dependency_installed",
+  "authority": {
+    "decision_id": "P2-I2-DEC-045",
+    "change_id": "P2-I2-CHG-040",
+    "continuation_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-dependency-install-and-validation-continuation.json"
+  },
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "pytest"
+  ],
+  "resolved_packages": [
+    {
+      "name": "pytest",
+      "version": "9.1.1",
+      "metadata_path": ".venv/lib/python3.12/site-packages/pytest-9.1.1.dist-info/METADATA",
+      "metadata_sha256": "c5d032518012789cabc870d46589aca3aeda36cf9fa4399ee88bda3d10438451"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.0",
+      "metadata_path": ".venv/lib/python3.12/site-packages/iniconfig-2.3.0.dist-info/METADATA",
+      "metadata_sha256": "40d773f84e4e112f495bbf4f1be9cbd2d456c0aeb6ef5311f75d1bf322f2165b"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.6.0",
+      "metadata_path": ".venv/lib/python3.12/site-packages/pluggy-1.6.0.dist-info/METADATA",
+      "metadata_sha256": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c"
+    }
+  ],
+  "installation_result": {
+    "exit_code": 0,
+    "repository_venv_used": true,
+    "global_environment_targeted": false,
+    "candidate_or_scientific_code_imported": false
+  },
+  "evidence_effect": "candidate_free_environment_tooling_only"
+}

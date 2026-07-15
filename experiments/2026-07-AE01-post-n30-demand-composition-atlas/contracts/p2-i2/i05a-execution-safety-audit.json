@@ -1,0 +1,137 @@
+{
+  "artifact_id": "P2-I2-I05A-EXECUTION-SAFETY-AUDIT",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "acceptance_blocker": "a crash or assertion failure leaves the same authorization reusable",
+      "check_id": "SAFE-01",
+      "evidence": {
+        "build_call_count_in_main": 1,
+        "consumption_surface_present": false,
+        "governed_invocations_authorized": 1
+      },
+      "finding": "the current entry point validates a reusable JSON freeze but never consumes a separate attempt token before governed work",
+      "name": "attempt-time single-use consumption",
+      "status": "failed"
+    },
+    {
+      "acceptance_blocker": "two concurrent processes can both observe absent output and begin",
+      "check_id": "SAFE-02",
+      "evidence": {
+        "exclusive_create_or_lock_present": false,
+        "output_exists_check_count": 1,
+        "output_write_count": 1
+      },
+      "finding": "output existence is checked before work, but no exclusive claim/lock atomically consumes permission",
+      "name": "atomic concurrent-start exclusion",
+      "status": "failed"
+    },
+    {
+      "acceptance_blocker": "one attempted execution is not mechanically distinguished from an unregistered retry",
+      "check_id": "SAFE-03",
+      "evidence": {
+        "attempt_consumption_present": false,
+        "max_governed_invocations": 1,
+        "max_infrastructure_retries": 1
+      },
+      "finding": "the policy freezes one infrastructure retry but defines no consumed-attempt identity or retry token distinct from the one governed invocation",
+      "name": "failed-attempt and retry semantics",
+      "status": "failed"
+    },
+    {
+      "acceptance_blocker": "validation-to-execution drift remains possible after the I05 commit",
+      "check_id": "SAFE-04",
+      "evidence": {
+        "accepted_I04_commit_bound": true,
+        "accepted_I05_commit_bound": false,
+        "clean_RCAE_authority_check": false,
+        "execution_command_digest_check": false,
+        "python_executable_check": false
+      },
+      "finding": "the current validator binds accepted I04 commit b7b008c only; it does not bind a future commit containing I05 acceptance/freeze, interpreter/command identity, or clean authority files",
+      "name": "committed I05 authority and immediate preflight binding",
+      "status": "failed"
+    },
+    {
+      "acceptance_blocker": null,
+      "check_id": "SAFE-05",
+      "evidence": {
+        "authorization_validation_calls": 1,
+        "candidate_execution_authorized": false,
+        "governed_output_absent": true
+      },
+      "finding": "the entry point does validate I04R2 identities, reject an existing governed output, and keep candidate authority false",
+      "name": "existing identity/output/candidate guards",
+      "status": "passed"
+    },
+    {
+      "acceptance_blocker": null,
+      "check_id": "SAFE-06",
+      "evidence": {
+        "build_calls": 1,
+        "json_loads_calls": 1,
+        "readback_calls": 1,
+        "write_calls": 1
+      },
+      "finding": "the current main path builds once, writes once, then reconstructs by retained-output read/parse/reserialize without a second null generation",
+      "name": "readback-only reconstruction within the governed call",
+      "status": "passed"
+    },
+    {
+      "acceptance_blocker": "the required post-run safety facts cannot be reconstructed from retained machine records",
+      "check_id": "SAFE-07",
+      "evidence": {
+        "authorization_consumed": false,
+        "null_invocation_count": false,
+        "null_reconstruction_generation_count": false,
+        "output_readback_reconstruction_count": false,
+        "second_invocation_refused": false
+      },
+      "finding": "the entry point emits the calibration record only; it retains no consumption receipt, separate counts, or second-invocation refusal witness",
+      "name": "retained attempt/reconstruction/refusal accounting",
+      "status": "failed"
+    },
+    {
+      "acceptance_blocker": null,
+      "check_id": "SAFE-08",
+      "evidence": {
+        "PyGRC_model_instantiations": 0,
+        "candidate_or_control_invocations": 0,
+        "governed_null_invocations": 0,
+        "governed_output_absent": true,
+        "reconstruction_generations": 0
+      },
+      "finding": "I05A parsed source and contracts only; no governed output exists",
+      "name": "zero-execution audit boundary",
+      "status": "passed"
+    }
+  ],
+  "disposition": {
+    "acceptance_ready": false,
+    "active_I05_invocation_authority": false,
+    "proposed_DEC_027": "blocked_pending_execution_safety_correction",
+    "source_correction_performed": false
+  },
+  "execution_receipt": {
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_invocations": 0,
+    "governed_null_invocations": 0,
+    "reconstruction_generations": 0,
+    "scientific_result": false
+  },
+  "failed_checks": 5,
+  "input_identities": {
+    "authorization_sha256": "97a78f7f5e8b1119ec059b82a7a5b6c14c573efc55411ac4392ff6cf2703545a",
+    "authorization_validator_sha256": "2765e479548132dd9c00802b80dfd85350299a1597af07150c41190e64fcb427",
+    "calibration_entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "calibration_policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe"
+  },
+  "iteration_id": "P2-I2-I05A",
+  "lane_id": "AE01-L02",
+  "passed_checks": 3,
+  "total_checks": 8,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05a_safety_audit.py",
+    "sha256": "8fc8155ba914150f926813038c5e92b761c9ff546fde07e0e86d0decfd745fd7"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "activity_id": "P2-I2-I05F-I04-I05-AUTHORITY-DEPENDENCY-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05F-STATIC-VALIDATION-DEVIATION-CLOSEOUT",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-028",
+    "decision_id": "P2-I2-DEC-035",
+    "owner_authorization": "+1",
+    "owner_authorized_at": "2026-07-14",
+    "scope": "I05F-owned in-place process-deviation closeout only"
+  },
+  "closeout_disposition": {
+    "complete_I05F_package_accepted": false,
+    "commit_authorized": false,
+    "later_correction_group_authorized": false,
+    "metric_sheet_freeze_authorized": false,
+    "original_freeze_compliance_claimed": false,
+    "process_deviation_accepted": true,
+    "technical_validation_rerun_authorized": false
+  },
+  "deviation": {
+    "actual_python_process_starts": 13,
+    "classification": "process_ceiling_exceeded_with_runtime_and_scientific_boundaries_intact",
+    "frozen_static_validation_invocation_ceiling": 3,
+    "variance": 10
+  },
+  "execution_ledger": {
+    "compile_check_process_starts": 1,
+    "governed_I05F_validator_process_starts": 3,
+    "json_syntax_check_process_starts": 8,
+    "scanner_diagnostic_process_starts": 1,
+    "total_python_process_starts": 13,
+    "validator_attempts": [
+      {
+        "attempt": 1,
+        "artifact_written": false,
+        "disposition": "failed_closed",
+        "failure_check": "I05F-04",
+        "finding": "validator-local historical-shebang literals triggered three portability findings"
+      },
+      {
+        "attempt": 2,
+        "artifact_written": false,
+        "disposition": "failed_closed",
+        "failure_check": "I05F-06",
+        "finding": "path-only source-diff whitelist omitted two syntax-only added lines"
+      },
+      {
+        "attempt": 3,
+        "artifact_written": true,
+        "disposition": "passed",
+        "passed_checks": 10,
+        "total_checks": 10
+      }
+    ]
+  },
+  "frozen_authority": {
+    "input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05f-portability-correction-input-freeze.json",
+    "input_freeze_sha256": "f622034565f81bb58c9d32769ec5abe2cc53d6b04457c78e8f50d2edeac5ce2b",
+    "original_freeze_immutable": true,
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05f_portability_correction_policy.json",
+    "policy_sha256": "42b4b816ba0a838b9c511496793f59917ce92403e3e04d95221be90533bec320"
+  },
+  "technical_result": {
+    "corrected_file_count": 13,
+    "final_group_violation_count": 0,
+    "initial_group_violation_count": 30,
+    "lineage_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05f-portable-projection-lineage.json",
+    "lineage_sha256": "bc9fad25db7f207685cebca0a32270fda2b7289395eb93c0ab0993c2909b38d1",
+    "passed_checks": 10,
+    "total_checks": 10,
+    "validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05f-portability-correction-validation.json",
+    "validation_sha256": "e32e52063dc2ea1e64c520b827722fd97185b20d08e0b7109921144e06e2af11",
+    "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05f_validate.py",
+    "validator_sha256": "e7b890e16f904f7bc9e28ba459c575a9eccdd7c429e8f97fbc78021a2a52b5ce"
+  },
+  "zero_operation_boundary": {
+    "calibration_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "null_or_one_shot_wrapper_invocations": 0,
+    "pygrc_model_instantiations": 0,
+    "scientific_result": false
+  },
+  "result_status": "P2-I2-I05F-PROCESS-DEVIATION-ACCEPTED-PACKAGE-REVIEW-PENDING"
+}

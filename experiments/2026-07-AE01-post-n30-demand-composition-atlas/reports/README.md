@@ -44,6 +44,107 @@ Phase 2 gate reviews:
   first completed lane without tuning it, retains the existing core record
   set, and requires a compact lane-local control-resolution index for future
   lane closeouts.
+- [P2-I2 I00 validation provenance](P2-I2-I00-validation.md) retains the
+  accepted authority-package digests, command outcomes, link/identity checks,
+  and clean graph-worktree guard for the checklist bootstrap. It supplies no
+  capability, calibration, or lane evidence.
+- [P2-I2 I01 source-current capability audit](P2-I2-I01-source-current-capability-audit.md)
+  classifies the corrected composition-capable native shortlist and missing
+  control/semantic surfaces without admitting a source or selecting a
+  realization.
+- [P2-I2 I01 command provenance](P2-I2-I01-command-provenance.md) retains the
+  exact read-only discovery, focused-test, digest, graph-cleanliness, and
+  historical custom-probe commands. I01R1 quarantines the custom probe from
+  capability and scientific evidence.
+- [P2-I2 I01R1 closeout revalidation](P2-I2-I01R1-capability-audit-closeout-revalidation.md)
+  applies the owner-supplied capability-audit checks, corrects CAP-04 to
+  inadequate, adds public-support/mode/restoration ownership profiles, and
+  re-passes only the source-audit gate.
+- [P2-I2 I04 historical preregistration](P2-I2-I04-calibration-preregistration.md)
+  retains the original candidate-free measurement package that was superseded
+  after owner review withheld CAL-PRE.
+- [P2-I2 I04R1 correction](P2-I2-I04R1-calibration-preregistration-correction.md)
+  restores the carrier-changing primary comparator and correct null/window/
+  causal boundaries without executing calibration or candidates.
+- [P2-I2 I04R2 machine verification](P2-I2-I04R2-conditional-machine-verification.md)
+  confirms the eight conditional invariants 16/16 with 7/7 pure tests,
+  corrects the future-I05 estimator route, and is the owner-accepted sole I04
+  progression authority under DEC-026. CAL-PRE is passed.
+- [P2-I2 I05 single-invocation authorization](P2-I2-I05-single-invocation-authorization-freeze.md)
+  presents the separate exact freeze candidate, 12/12 static validation, and
+  byte reconstruction under proposed DEC-027. It remains uncommitted and
+  inactive, with no calibration or scientific effect.
+- [P2-I2 I05A execution-safety audit](P2-I2-I05A-execution-safety-audit.md)
+  checks genuine one-shot consumption, committed-I05 binding, and readback-only
+  reconstruction without running the null. It passes 3/8, retains five
+  blockers, and fails proposed DEC-027 closed.
+- [P2-I2 I05B one-shot safety correction](P2-I2-I05B-one-shot-safety-correction.md)
+  retains the DEC-028 I05-owned wrapper/policy correction, 12/12 zero-null
+  tests, 12/12 machine validation, byte reconstruction, immutable I04R2 hashes,
+  and DEC-029 owner acceptance. Commit authority is distinct from the absent
+  10.4 launch record; no null or CAL-GATE passage is assigned.
+- [P2-I2 I05C active-venv correction](P2-I2-I05C-preclaim-venv-correction.md)
+  retains the failed-before-claim launch preflight, exact active repository
+  venv correction, 13/13 tests, 12/12 zero-null validation, unchanged I04R2
+  bytes, and the then-unconsumed attempt. The correction was subsequently
+  approved and committed before the single governed arithmetic-null attempt.
+- [P2-I2 I05D portability audit](P2-I2-I05D-portability-audit.md) retains the
+  DEC-032 P2-I2-wide value-redacted inventory after an in-iteration recursive
+  selector correction: 312 violations in 70 of 135 scanned files. DEC-033
+  accepts it and authorizes only the first I05 correction group.
+- [P2-I2 I05E portability correction](P2-I2-I05E-portability-correction.md)
+  retains the first eleven-file historical-to-portable correction, 10/10
+  validation, zero group violations, immutable raw execution lineage, and zero
+  governed or scientific execution. It is owner-accepted for commit; later
+  groups remain closed until retention, and CAL-GATE remains closed.
+- [P2-I2 I07 inactive EXEC-FREEZE review](P2-I2-I07-EXEC-FREEZE-review.md)
+  retains the exact 234-entry three-mode cycle, 20-file binding, 7/7 focused
+  tests, 25/25 candidate-free validation, the DEC-045 in-place `.venv`
+  dependency correction, and the CHG-041 cross-entry-isolation audit. Four
+  enforcement blockers keep it inactive, uncommitted, and review-blocked; no
+  candidate or scientific operation occurred.
+- [P2-I2 I07A cross-entry-isolation correction](P2-I2-I07A-cross-entry-isolation-correction.md)
+  closes those four blockers through beneath-root no-symlink artifact I/O,
+  `-B` import-cache refusal, current-entry-only retry reconstruction, and
+  exact-path fail-closed completion. The 234 entry objects are unchanged;
+  focused tests pass 15/15 and final validation passes 17/17 with zero candidate
+  or scientific activity. DEC-047/CHG-043 accept the exact inactive freeze and
+  authorize its checkpoint commit; live activation and I08 remain closed.
+- [P2-I2 I08 activation preflight](P2-I2-I08-activation-preflight.md)
+  retains the exact inactive activation candidate, 207-to-zero ignored import-
+  cache cleanup, and 18/18 candidate-free validation. The 234-entry matrix and
+  accepted live technical hashes are unchanged. DEC-049/CHG-045 now record
+  owner acceptance and commit authority; no output or manifest exists, and the
+  resulting full commit HEAD plus exact preflight are required before the first
+  matrix claim.
+- [P2-I2 I08 entry-001 failed start](P2-I2-I08-entry-001-failed-start.md)
+  retains C01's permanent first claim, native OpenBLAS termination before a
+  governed terminal receipt, mechanically unavailable retry, 0/234 evaluable
+  disposition, and no scientific result.
+- [P2-I2 I08A C02 resource/supervisor correction](P2-I2-I08A-C02-resource-supervisor-correction.md)
+  preserves all 234 scientific projections while removing only the 512 MiB
+  address-space cap and placing native-exit receipt ownership in an external
+  supervisor. Focused tests pass 8/8 and final candidate-free validation passes
+  18/18 with zero blockers. DEC-051 records owner acceptance; deterministic
+  activation then passes 19/19 candidate-free checks and authorizes the complete
+  package commit. Live use still requires the resulting full HEAD and exact
+  post-commit preflight.
+- [P2-I2 I08A repository-venv infrastructure correction](P2-I2-I08A-venv-infrastructure-correction.md)
+  retains entry-001 attempt 1 as an eligible pre-model infrastructure failure
+  and corrects the nested worker launch in place under existing I08A/I08. The
+  child venv/dependency suite passes 8/8 and final candidate-free validation
+  passes 18/18; no new iteration, cycle, or scientific projection is created.
+- [P2-I2 I08 cumulative execution ledger](P2-I2-I08-execution.md)
+  is the single narrative campaign record rather than one report per entry.
+  I08 is now 234/234 evaluable with 132 zero-gain and 102 gain-0.125 rows, no
+  seed-varying matched configuration, and null interpretation pending the
+  downstream gates.
+- [P2-I2 I09 control resolution](P2-I2-I09-control-resolution.md)
+  is the compact R3-required projection over retained evidence. It passes
+  21/21 checks, resolves all 38 comparison rules and 15 mode-local controls,
+  and preserves program-common outcomes separately by mode without assigning
+  `R01`–`R05` or a terminal result. The owner accepts the package and passes
+  CONTROL-GATE under DEC-054.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

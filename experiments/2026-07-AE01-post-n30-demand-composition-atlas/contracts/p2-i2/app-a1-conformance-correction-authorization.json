@@ -1,0 +1,31 @@
+{
+  "artifact_id": "P2-I2-APP-A1-CONFORMANCE-CORRECTION-AUTHORIZATION",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "authorized_at": "2026-07-15T00:00:00+02:00",
+  "owner_response": "+1",
+  "context": "Owner authorization after disclosure that the first frozen candidate-free invocation was consumed by a carrier-clamp packet-ledger inconsistency and after proposal of the public-ledger-rebase correction.",
+  "authority": {
+    "decision_id": "P2-I2-DEC-067",
+    "change_id": "P2-I2-CHG-072",
+    "failed_start_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-failed-start-001.json",
+    "base_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json",
+    "base_freeze_sha256": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3"
+  },
+  "allowed_scope": {
+    "same_iteration": true,
+    "new_iteration_or_suffix": false,
+    "harness_intervention_ledger_rebase": true,
+    "additive_correction_freeze": true,
+    "static_freeze_validation": true,
+    "replacement_evidence_invocations": 1,
+    "replacement_reconstruction_invocations": 1,
+    "replacement_retry_limit": 0,
+    "fixture_changes": false,
+    "gate_changes": false,
+    "scientific_values_allowed": false,
+    "app_a2_authorized": false,
+    "commit_authorized": false
+  },
+  "required_boundary": "Preserve the failed start and immutable base freeze, validate the correction before any replacement model construction, use .venv plus the accepted checkout-only PyGRC binding, run at most one replacement and one deterministic reconstruction, then return APP-A1 uncommitted for review."
+}

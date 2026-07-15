@@ -1,0 +1,84 @@
+{
+  "artifact_id": "P2-I2-I03AR1R1-RUNTIME-RECONSTRUCTION-RECEIPT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b"
+  },
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03AR1R1",
+  "recorded_at": "2026-07-14",
+  "status": "replacement_evidence_and_reconstruction_complete",
+  "base_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json",
+    "sha256": "d21cc390ab6655ce98c7dbf6827a73d9b3d537c9d90cb98b81f8e2da510a1d94"
+  },
+  "revised_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json",
+    "sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c"
+  },
+  "harness": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py",
+    "failed_attempt_sha256": "3d2a12345343cd71e830a7dad6fc02bd6665cda60712f937d0ace4ce58fb5332",
+    "revised_sha256": "616fd3b9c6a884ca785f60c075505e808c564f8975e3791fb21241f250024060"
+  },
+  "attempt_ledger": [
+    {
+      "attempt_id": "P2-I2-I03AR1-EVIDENCE-ORIGINAL",
+      "kind": "evidence",
+      "freeze_sha256": "d21cc390ab6655ce98c7dbf6827a73d9b3d537c9d90cb98b81f8e2da510a1d94",
+      "harness_sha256": "3d2a12345343cd71e830a7dad6fc02bd6665cda60712f937d0ace4ce58fb5332",
+      "exit_code": 1,
+      "classification": "infrastructure_invalid",
+      "failed_check": "combined_s1_s2.response_delta",
+      "observed": 0.09999999999999998,
+      "expected": 0.1,
+      "output_written": false,
+      "evidence_assigned": false
+    },
+    {
+      "attempt_id": "P2-I2-I03AR1R1-EVIDENCE-REPLACEMENT",
+      "kind": "replacement_evidence_after_governed_infrastructure_correction",
+      "freeze_sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c",
+      "harness_sha256": "616fd3b9c6a884ca785f60c075505e808c564f8975e3791fb21241f250024060",
+      "exit_code": 0,
+      "assertions_total": 136,
+      "assertions_passed": 136,
+      "assertions_failed": 0,
+      "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+      "output_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0"
+    },
+    {
+      "attempt_id": "P2-I2-I03AR1R1-RECONSTRUCTION",
+      "kind": "authorized_reconstruction",
+      "freeze_sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c",
+      "harness_sha256": "616fd3b9c6a884ca785f60c075505e808c564f8975e3791fb21241f250024060",
+      "exit_code": 0,
+      "assertions_total": 136,
+      "assertions_passed": 136,
+      "assertions_failed": 0,
+      "temporary_output_path": "temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+      "output_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0"
+    }
+  ],
+  "byte_comparison": {
+    "command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+    "exit_code": 0,
+    "byte_identical": true
+  },
+  "graph_guard": {
+    "revision_before": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "revision_after": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_before": "",
+    "status_after": "",
+    "ten_bound_source_digests_unchanged": true,
+    "graph_repository_write_observed": false
+  },
+  "disposition": "P2-I2-I03AR1-REVIEW-READY",
+  "I03B_authorized": false,
+  "evidence_effect": "quarantined state-carried realization implementation-conformance only; no calibration, control result, L02 support/falsification, or scientific evidence"
+}

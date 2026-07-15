@@ -1,0 +1,450 @@
+{
+  "admitted_source_identity": {
+    "checks": [
+      {
+        "manifest_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+        "match": true,
+        "revision_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+        "source_id": "grc:pyproject.toml",
+        "worktree_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b"
+      },
+      {
+        "manifest_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+        "match": true,
+        "revision_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+        "source_id": "grc:src/pygrc/__init__.py",
+        "worktree_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e"
+      },
+      {
+        "manifest_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+        "match": true,
+        "revision_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+        "source_id": "grc:src/pygrc/models/__init__.py",
+        "worktree_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70"
+      },
+      {
+        "manifest_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+        "match": true,
+        "revision_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+        "source_id": "grc:src/pygrc/models/grc_9_v3_state.py",
+        "worktree_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e"
+      },
+      {
+        "manifest_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+        "match": true,
+        "revision_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3.py",
+        "worktree_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb"
+      },
+      {
+        "manifest_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+        "match": true,
+        "revision_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_contract.py",
+        "worktree_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680"
+      },
+      {
+        "manifest_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+        "match": true,
+        "revision_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_packets.py",
+        "worktree_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      },
+      {
+        "manifest_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+        "match": true,
+        "revision_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+        "worktree_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "manifest_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+        "match": true,
+        "revision_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime_state.py",
+        "worktree_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c"
+      },
+      {
+        "manifest_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+        "match": true,
+        "revision_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+        "worktree_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931"
+      },
+      {
+        "manifest_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+        "match": true,
+        "revision_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+        "worktree_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c"
+      },
+      {
+        "manifest_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+        "match": true,
+        "revision_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+        "source_id": "grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+        "worktree_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c"
+      },
+      {
+        "manifest_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+        "match": true,
+        "revision_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_contract.py",
+        "worktree_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b"
+      },
+      {
+        "manifest_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+        "match": true,
+        "revision_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_runtime.py",
+        "worktree_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b"
+      },
+      {
+        "manifest_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+        "match": true,
+        "revision_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_restoration.py",
+        "worktree_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97"
+      },
+      {
+        "manifest_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+        "match": true,
+        "revision_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_restoration_matrix.py",
+        "worktree_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154"
+      },
+      {
+        "manifest_sha256": "e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe",
+        "match": true,
+        "revision_sha256": "e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe",
+        "source_id": "grc:implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json",
+        "worktree_sha256": "e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe"
+      },
+      {
+        "manifest_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+        "match": true,
+        "revision_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+        "source_id": "grc:src/pygrc/core/__init__.py",
+        "worktree_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae"
+      },
+      {
+        "manifest_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+        "match": true,
+        "revision_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+        "source_id": "grc:src/pygrc/core/interfaces.py",
+        "worktree_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f"
+      },
+      {
+        "manifest_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+        "match": true,
+        "revision_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+        "source_id": "grc:src/pygrc/core/serialization.py",
+        "worktree_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4"
+      },
+      {
+        "manifest_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+        "match": true,
+        "revision_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+        "source_id": "grc:src/pygrc/models/grc_9_v3.py",
+        "worktree_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e"
+      },
+      {
+        "manifest_sha256": "3ccc27250a3ddb2ecccdf27984436e3dee2b10b3f71de610bfbbbcd084ae7be6",
+        "match": true,
+        "revision_sha256": "3ccc27250a3ddb2ecccdf27984436e3dee2b10b3f71de610bfbbbcd084ae7be6",
+        "source_id": "grc:specs/grc-common-interface.md",
+        "worktree_sha256": "3ccc27250a3ddb2ecccdf27984436e3dee2b10b3f71de610bfbbbcd084ae7be6"
+      },
+      {
+        "manifest_sha256": "20a75f525b1a46e97afaa3aa9e16f63adddc754ded088fa38cd666272ddc8891",
+        "match": true,
+        "revision_sha256": "20a75f525b1a46e97afaa3aa9e16f63adddc754ded088fa38cd666272ddc8891",
+        "source_id": "grc:specs/grc-reset-baseline-persistence.md",
+        "worktree_sha256": "20a75f525b1a46e97afaa3aa9e16f63adddc754ded088fa38cd666272ddc8891"
+      },
+      {
+        "manifest_sha256": "08c3ee95a9b76016648e14d028120bdebc88d2a109387874c32e4a462b037458",
+        "match": true,
+        "revision_sha256": "08c3ee95a9b76016648e14d028120bdebc88d2a109387874c32e4a462b037458",
+        "source_id": "grc:specs/lgrc-9-v3-restoration-identity.md",
+        "worktree_sha256": "08c3ee95a9b76016648e14d028120bdebc88d2a109387874c32e4a462b037458"
+      },
+      {
+        "manifest_sha256": "a272102d8463359c2f9d7a40ce63b3be52509b517da67579127ab6845ff36dc4",
+        "match": true,
+        "revision_sha256": "a272102d8463359c2f9d7a40ce63b3be52509b517da67579127ab6845ff36dc4",
+        "source_id": "grc:specs/lgrc-9-v3-spec.md",
+        "worktree_sha256": "a272102d8463359c2f9d7a40ce63b3be52509b517da67579127ab6845ff36dc4"
+      },
+      {
+        "manifest_sha256": "702c67b6cc8d98c8ae87e586f7270e5afab65d8c2178527b651a14effbc98e69",
+        "match": true,
+        "revision_sha256": "702c67b6cc8d98c8ae87e586f7270e5afab65d8c2178527b651a14effbc98e69",
+        "source_id": "grc:tests/core/test_interfaces.py",
+        "worktree_sha256": "702c67b6cc8d98c8ae87e586f7270e5afab65d8c2178527b651a14effbc98e69"
+      },
+      {
+        "manifest_sha256": "f19f762830853ed35d243ab7390dc3e7337ee1c7fb05922b0c2742f3062c7bcc",
+        "match": true,
+        "revision_sha256": "f19f762830853ed35d243ab7390dc3e7337ee1c7fb05922b0c2742f3062c7bcc",
+        "source_id": "grc:tests/core/test_serialization_contract.py",
+        "worktree_sha256": "f19f762830853ed35d243ab7390dc3e7337ee1c7fb05922b0c2742f3062c7bcc"
+      },
+      {
+        "manifest_sha256": "6236748f6bc7995dda86f7a207ccce373b33d1b7ecd90849106839baa305f01a",
+        "match": true,
+        "revision_sha256": "6236748f6bc7995dda86f7a207ccce373b33d1b7ecd90849106839baa305f01a",
+        "source_id": "grc:tests/models/test_reset_baseline_persistence.py",
+        "worktree_sha256": "6236748f6bc7995dda86f7a207ccce373b33d1b7ecd90849106839baa305f01a"
+      },
+      {
+        "manifest_sha256": "caccab6dbfeb845893762f5c7e9d8774e16de6317e8c409f56c53baa05e65d31",
+        "match": true,
+        "revision_sha256": "caccab6dbfeb845893762f5c7e9d8774e16de6317e8c409f56c53baa05e65d31",
+        "source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistenceChecklist.md",
+        "worktree_sha256": "caccab6dbfeb845893762f5c7e9d8774e16de6317e8c409f56c53baa05e65d31"
+      },
+      {
+        "manifest_sha256": "ef9b116f2c1724516960e0e6799c2816e4b178a4da2db4899c5f598180de6ad3",
+        "match": true,
+        "revision_sha256": "ef9b116f2c1724516960e0e6799c2816e4b178a4da2db4899c5f598180de6ad3",
+        "source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistenceCloseout.md",
+        "worktree_sha256": "ef9b116f2c1724516960e0e6799c2816e4b178a4da2db4899c5f598180de6ad3"
+      },
+      {
+        "manifest_sha256": "1ee265d39b6cabe56ac6e77bb4643aff502dd645e459be98bc76a075c1fb501f",
+        "match": true,
+        "revision_sha256": "1ee265d39b6cabe56ac6e77bb4643aff502dd645e459be98bc76a075c1fb501f",
+        "source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistencePlan.md",
+        "worktree_sha256": "1ee265d39b6cabe56ac6e77bb4643aff502dd645e459be98bc76a075c1fb501f"
+      }
+    ],
+    "source_count": 31
+  },
+  "artifact_id": "P2-I2-I03A-STATE-CARRIED-REALIZATION-VALIDATION",
+  "artifact_version": "1.1.0",
+  "candidate_or_calibration_execution": false,
+  "claim_boundary": {
+    "all_three_modes_retained_through_execution": true,
+    "i03a_review_ready": true,
+    "i03b_authorized": false,
+    "i04_authorized": false,
+    "inter_mode_winner_selection_allowed": false,
+    "scientific_evidence_assigned": false,
+    "umbrella_discriminator_gate_passed": false
+  },
+  "coverage": {
+    "capability_dispositions": [
+      "P2-I2-CAP-01",
+      "P2-I2-CAP-02",
+      "P2-I2-CAP-03",
+      "P2-I2-CAP-04",
+      "P2-I2-CAP-05",
+      "P2-I2-CAP-06",
+      "P2-I2-CAP-07",
+      "P2-I2-CAP-08",
+      "P2-I2-CAP-09",
+      "P2-I2-CAP-10",
+      "P2-I2-CAP-11"
+    ],
+    "cells": [
+      "reference-pool",
+      "individual-contributions",
+      "combined-orders",
+      "pooled-history-shuffle",
+      "contributor-removal",
+      "global-state-exclusion",
+      "access-capacity-contrast"
+    ],
+    "controls": [
+      "AE01-L02-CTRL-01",
+      "AE01-L02-CTRL-02",
+      "AE01-L02-CTRL-03",
+      "AE01-L02-CTRL-04",
+      "AE01-L02-CTRL-05"
+    ],
+    "operational_projections": [
+      "H-L02-OP-01",
+      "H-L02-OP-02",
+      "H-L02-OP-03",
+      "H-L02-OP-04",
+      "H-L02-OP-05",
+      "H-L02-OP-06",
+      "H-L02-OP-07",
+      "H-L02-OP-08",
+      "H-L02-OP-09"
+    ]
+  },
+  "entry_authority": {
+    "artifact_count": 15,
+    "checks": [
+      {
+        "entry_revision_sha256": "f7b5ffafcdb1c3a8a3a24fd71e132ab3fa616807d109b3efd6bef8a5c93ecb03",
+        "expected_sha256": "f7b5ffafcdb1c3a8a3a24fd71e132ab3fa616807d109b3efd6bef8a5c93ecb03",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md"
+      },
+      {
+        "entry_revision_sha256": "c1cc5c4ee83e80783059615e20d2c9601454ca8fa12fcdf7be419de679b32957",
+        "expected_sha256": "c1cc5c4ee83e80783059615e20d2c9601454ca8fa12fcdf7be419de679b32957",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md"
+      },
+      {
+        "entry_revision_sha256": "0ea2521efc335ad2e62c85025b2c66350e2da980151b3d77545a715845f9d74a",
+        "expected_sha256": "0ea2521efc335ad2e62c85025b2c66350e2da980151b3d77545a715845f9d74a",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md"
+      },
+      {
+        "entry_revision_sha256": "4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930",
+        "expected_sha256": "4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md"
+      },
+      {
+        "entry_revision_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "expected_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json"
+      },
+      {
+        "entry_revision_sha256": "331a73d89299a942cd6d6636870b140198cfff1caf2b527fffde0fa214d1c623",
+        "expected_sha256": "331a73d89299a942cd6d6636870b140198cfff1caf2b527fffde0fa214d1c623",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md"
+      },
+      {
+        "entry_revision_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "expected_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json"
+      },
+      {
+        "entry_revision_sha256": "796f58e91958c9ef991e5218ee9804e10cdbdb298ad5c7af3b574956667696d0",
+        "expected_sha256": "796f58e91958c9ef991e5218ee9804e10cdbdb298ad5c7af3b574956667696d0",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-reset-baseline-validation.json"
+      },
+      {
+        "entry_revision_sha256": "2ccf3bc062cb2a5eed0cf475d35f1a32a675df91a040133fb4058119cb59a3b9",
+        "expected_sha256": "2ccf3bc062cb2a5eed0cf475d35f1a32a675df91a040133fb4058119cb59a3b9",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/lane-hypotheses.md"
+      },
+      {
+        "entry_revision_sha256": "173aff056fd1738d82cca82ca2892192f74e36791ff87a649976f13fa4b700b2",
+        "expected_sha256": "173aff056fd1738d82cca82ca2892192f74e36791ff87a649976f13fa4b700b2",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/post-r3-ecology-discriminator-amendment.md"
+      },
+      {
+        "entry_revision_sha256": "b9c0d4b4c17e48d3efae831bae3369a81eb034a193c902f907fb6dbf09096fa2",
+        "expected_sha256": "b9c0d4b4c17e48d3efae831bae3369a81eb034a193c902f907fb6dbf09096fa2",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/outcome-and-stopping-contract.md"
+      },
+      {
+        "entry_revision_sha256": "92fd37c18777f6b366df242a99dbdc1b556cb57b1005f7415d875f7a35a258f1",
+        "expected_sha256": "92fd37c18777f6b366df242a99dbdc1b556cb57b1005f7415d875f7a35a258f1",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/developmental-interpretation-contract.md"
+      },
+      {
+        "entry_revision_sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483",
+        "expected_sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L02.json"
+      },
+      {
+        "entry_revision_sha256": "a4348fff7dfd3a671fca2cf95bd401c626219ef848d63cfb6ab662069c3a61f2",
+        "expected_sha256": "a4348fff7dfd3a671fca2cf95bd401c626219ef848d63cfb6ab662069c3a61f2",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md"
+      },
+      {
+        "entry_revision_sha256": "ed317a5f8f5729966ca43caccc60037b0c83c273f26061fd5c79d9b45ab9de09",
+        "expected_sha256": "ed317a5f8f5729966ca43caccc60037b0c83c273f26061fd5c79d9b45ab9de09",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md"
+      }
+    ],
+    "rcae_revision": "26811d395c0662473629d5710983e3c1fdb4f58f"
+  },
+  "graph_after": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_short": ""
+  },
+  "graph_before": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_short": ""
+  },
+  "input_identity": {
+    "brief_sha256": "dd9d0eefbeaa94f0c0a1b064a77ebc63b07dfafb97a77baa017d0d15bc241d21",
+    "checklist_sha256": "b89e31e15a06e1d40b46d0a5ce833a1371b9a5754c6b6ff389b876a88f94538d",
+    "contract_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+    "decision_record_sha256": "2f88d299d7ddce350309612bd990b1d9454e205efc3401dfd22c2149b8bac100",
+    "freeze_sha256": "34d0903c746fb67abff5a1c12bb252b5cb15933d2de75e56f1232fbe7dfd0845",
+    "hypothesis_sha256": "89c1c449773f9abc754dee79803534fe01321ca13b96e9f3040c2cd9def7eb2b",
+    "manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4"
+  },
+  "invariants": {
+    "all_admitted_source_digests_match": true,
+    "arrival_mutates_common_state_additively": true,
+    "eleven_capability_dispositions_complete": true,
+    "entry_authority_digests_match": true,
+    "feedback_reads_node_state_without_lineage": true,
+    "five_controls_complete": true,
+    "graph_repository_unchanged": true,
+    "i04_measurement_choices_deferred": true,
+    "later_modes_unauthorized": true,
+    "lineage_excluded_from_packet_identity": true,
+    "native_candidate_without_rcae_causal_producer": true,
+    "native_producer_reads_state_derived_score_without_lineage": true,
+    "nine_operational_projections_complete": true,
+    "no_candidate_or_calibration_execution": true,
+    "original_i03a_freeze_preserved": true,
+    "realization_selection_occurs_within_modes": true,
+    "selected_public_callables_admitted": true,
+    "seven_cells_complete": true,
+    "state_carried_only_scope": true,
+    "three_modes_retained_downstream": true,
+    "v2_provider_proposed_not_frozen": true
+  },
+  "iteration_id": "P2-I2-I03A",
+  "lane_id": "AE01-L02",
+  "selected_public_callables": {
+    "all_admitted": true,
+    "symbols": [
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.step",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.lgrc9v3_restoration_identity_v2",
+      "pygrc.models.digest_lgrc9v3_restoration_identity_v2"
+    ]
+  },
+  "source_dataflow": {
+    "arrival_adds_packet_amount_to_target_coherence": true,
+    "arrival_retains_lineage_in_audit_record": true,
+    "feedback_has_no_lineage_read": true,
+    "feedback_sums_declared_node_coherence_masks": true,
+    "lineage_absent_from_packet_id": true,
+    "packet_id_keyword_arguments": [
+      "source_node_id",
+      "target_node_id",
+      "edge_id",
+      "amount",
+      "departure_event_time_key",
+      "arrival_event_time_key",
+      "packet_index"
+    ],
+    "producer_has_no_lineage_read": true,
+    "producer_reads_boundary_polarity_score": true
+  },
+  "status": "passed",
+  "validated_at": "2026-07-14",
+  "validation_kind": "static_authority_source_dataflow_cross_artifact_and_scope_transition_only"
+}

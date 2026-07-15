@@ -1,0 +1,121 @@
+{
+  "artifact_id": "P2-I2-C02-EXECUTION-POLICY",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C02",
+  "status": "inactive_candidate_free_successor_policy",
+  "predecessor": {
+    "cycle_id": "P2-I2-C01",
+    "disposition": "bounded_incomplete_operational_no_scientific_result",
+    "claimed_entries": 1,
+    "evaluable_entries": 0,
+    "unattempted_entries": 233,
+    "entry_001_claim_permanent": true
+  },
+  "scientific_projection": {
+    "predecessor_matrix_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json",
+    "predecessor_matrix_sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427",
+    "primary_entry_count": 234,
+    "semantic_change_count": 0,
+    "preserved": [
+      "mode",
+      "cell_id",
+      "branch_id",
+      "physical_order_id",
+      "seed",
+      "attempt ceiling",
+      "analysis_role",
+      "candidate_chain",
+      "all registered scientific values and controls"
+    ],
+    "changed_only": [
+      "cycle and governed artifact identities",
+      "address-space enforcement",
+      "external native-exit receipt ownership"
+    ]
+  },
+  "resource_envelope_per_worker": {
+    "max_runtime_seconds": 180,
+    "max_file_size_mb": 512,
+    "address_space_limit": null,
+    "RLIMIT_AS_applied": false,
+    "hardware": "single_local_CPU_no_accelerator"
+  },
+  "runtime_invocation_identity": {
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "execution_source": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
+    "subcommand": "run-entry",
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "expected_head_argument": "<OWNER_AUTHORIZED_FULL_HEAD>",
+    "argument_order_inherited_byte_semantically_from_C01": true,
+    "absolute_or_ambient_fallback": false
+  },
+  "supervisor_contract": {
+    "claim_owner": "external_supervisor",
+    "success_output_owner": "external_supervisor",
+    "failure_receipt_owner": "external_supervisor",
+    "worker_process": "fresh_child_per_attempt",
+    "worker_may_write_governed_artifact": false,
+    "native_exit_captured_by_parent": true,
+    "stderr_max_retained_bytes": 16384,
+    "native_or_unattested_failure_retryable": false,
+    "attested_python_failure_retryable_only_before_model_adapter_candidate": true,
+    "claim_never_deleted": true
+  },
+  "retry_policy": {
+    "primary_attempt": 1,
+    "conditional_retry_attempt": 2,
+    "ceiling_per_entry": 1,
+    "same_entry_only": true,
+    "requires_supervisor_failure_receipt": true,
+    "requires_child_attestation": true,
+    "unknown_phase_retryable": false,
+    "scientific_or_control_outcome_retryable": false
+  },
+  "cross_entry_isolation": {
+    "fresh_supervisor_command_per_attempt": true,
+    "fresh_worker_process_per_attempt": true,
+    "fresh_registered_composite_baseline_per_attempt": true,
+    "parallel_workers": 0,
+    "prior_entry_result_reads": false,
+    "governed_output_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02"
+  },
+  "artifact_contract": {
+    "run_matrix_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json",
+    "binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-binding-receipt.json",
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/exec-freeze.json",
+    "activation_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/owner-accepted-execution-authorization.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json",
+    "claim_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/claims",
+    "primary_output_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/runs",
+    "retry_output_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/retries",
+    "failure_receipt_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/failures"
+  },
+  "completion_policy": {
+    "exact_matrix_paths_only": true,
+    "required_evaluable_terminals": 234,
+    "missing_ambiguous_malformed_or_nonevaluable_effect": "fail_closed_without_manifest",
+    "scientific_interpretation": null
+  },
+  "future_activation_requirements": [
+    "candidate-free I08A validation passes",
+    "explicit owner review and acceptance",
+    "separate tracked C02 activation record",
+    "activation and exact C02 freeze committed before execution",
+    "normalized command supplies resulting full HEAD",
+    "clean committed authority and graph worktrees",
+    "cache-free import roots",
+    "exact current-entry claim/output/failure paths absent"
+  ],
+  "authorization": {
+    "candidate_execution_authorized": false,
+    "I08_authorized": false,
+    "commit_authorized": false,
+    "fallback_permitted": false,
+    "scientific_result": false
+  }
+}

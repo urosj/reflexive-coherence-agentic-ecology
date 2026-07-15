@@ -1,0 +1,39 @@
+{
+  "activation_sha256": "65687828d4ea1e4e019b75335c04d8adbef7470054ef6803f9d24f8e1a008729",
+  "arm_registry_digest": "593c1b60d5712a005d5f521467044245cff8dcca22f81a823139b0d366dd4aca",
+  "artifact_id": "P2-I2-APP-B4-CAMPAIGN-CLAIM",
+  "authorization_consumed": true,
+  "freeze_sha256": "77025e8b2eabc63298485746790ab0dc78e67cf507856357c2d575d7595214f8",
+  "governed_attempt": 1,
+  "infrastructure_retries_allowed": 0,
+  "preflight": {
+    "activation_sha256": "65687828d4ea1e4e019b75335c04d8adbef7470054ef6803f9d24f8e1a008729",
+    "authority_clean_before_claim": true,
+    "authority_head": "51be51fbb81eb186d64b28820149236564cd37be",
+    "execution_correction_sha256": "2f7a85dec9dbff8a2f79a8e0805657f650db4d88836bf43fca38cc4700c09d93",
+    "graph_clean": true,
+    "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "immutable_implementation_commit": "863d73c956286efb631d7a6fdd579837325dc2c0",
+    "lexical_interpreter": ".venv/bin/python",
+    "normalized_command": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+      "--freeze",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+      "--activation",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-live-activation.json",
+      "--claim",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-campaign-claim.json",
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-runtime-evidence.json",
+      "--expected-head",
+      "51be51fbb81eb186d64b28820149236564cd37be",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ],
+    "owner_acceptance_sha256": "156961c36d14cf6fd74a65a2b880ea1c5fba610b10933af637130e7995a911b6",
+    "tracked_authorities_exact": true
+  },
+  "scientific_retries_allowed": 0
+}

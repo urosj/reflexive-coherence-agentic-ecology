@@ -1,0 +1,110 @@
+{
+  "activity_id": "P2-I2-I05E-BOUNDED-PORTABLE-PATH-CORRECTION",
+  "artifact_id": "P2-I2-I05E-I05-PORTABILITY-CORRECTION-POLICY",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-026",
+    "decision_id": "P2-I2-DEC-033",
+    "owner_accepted_i05d_inventory": true,
+    "return_uncommitted_for_review": true
+  },
+  "baseline_audit": {
+    "affected_file_count": 11,
+    "correction_group": "i05_active_execution_and_closeout",
+    "freeze_sha256": "854df41e753f0e91579319a7ad1918ea397ac2221f31a2990161d1468a40074a",
+    "policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+    "result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "scanner_sha256": "aab820ffd7985d03412c6f1e5528ccc2eff72b9b8591eced12f39b020de29abc",
+    "violation_count": 32
+  },
+  "correction_scope": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05c-preclaim-interpreter-path-failure.json",
+      "source_sha256": "0a1bff47797a23e18ef143b2418d3d0b697615c88ac121a547450e7234ce3fed"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05c-zero-null-interpreter-validation.json",
+      "source_sha256": "71cc9d8b32448cc228259e166f03888cdb771e92f3be229a4c8823189030e8b7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i05b_one_shot.py",
+      "source_sha256": "12f890e622772b9d5d0d6e61fef33c8f9fef3cbcba8a66e4e11b3bec23ec53d8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json",
+      "source_sha256": "20cf095f03ac7ef7b932f52e6e79b35a3e962db42b583999f44bf81f373582b6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/i05b-attempt-claim.json",
+      "source_sha256": "16f17846449072140f8fafc8222c214fbe93ca3b99000ccaf43efad1bd449ea4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05C-preclaim-venv-correction.md",
+      "source_sha256": "da49ff8a7c430dcc1a8568fe00d698ddd2af7a771625f029a3b2500ecc2b1f3c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05_authorization_validate.py",
+      "source_sha256": "2765e479548132dd9c00802b80dfd85350299a1597af07150c41190e64fcb427"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05a_safety_audit.py",
+      "source_sha256": "8fc8155ba914150f926813038c5e92b761c9ff546fde07e0e86d0decfd745fd7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_one_shot.py",
+      "source_sha256": "b6cf5e3129821660fb77b2f7c3591a66d859d18930cc28681fa8096d7462220c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py",
+      "source_sha256": "6f224c484ff6d66ecdd72629f1c1085f666693b5e30c3ed9b5578e090e2a3636"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05c_validate.py",
+      "source_sha256": "ef933f921d1feda1000aa41ecedc1e7b4ea59dbfdae184c54e182aa60f8246b7"
+    }
+  ],
+  "historical_evidence": {
+    "commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+    "final_receipt_sha256": "1f1694b96f22cde12b54a2e0c00ce76b58f2fdf2fc7cff1114bcc46b9a3396be",
+    "governed_output_sha256": "20cf095f03ac7ef7b932f52e6e79b35a3e962db42b583999f44bf81f373582b6",
+    "permanent_claim_sha256": "16f17846449072140f8fafc8222c214fbe93ca3b99000ccaf43efad1bd449ea4",
+    "representation": "commit_and_sha256_only"
+  },
+  "immutable_facts": {
+    "analysis_arithmetic_delta": 1e-12,
+    "analysis_arithmetic_floor": 1e-12,
+    "authorization_consumed": true,
+    "builder_invocation_count": 1,
+    "candidate_execution_authorized": false,
+    "governed_attempt_count": 1,
+    "infrastructure_retries": 0,
+    "null_invocation_count": 1,
+    "null_reconstruction_generation_count": 0,
+    "output_readback_reconstruction_count": 1,
+    "scientific_result": false,
+    "second_invocation_refused": true
+  },
+  "invocation_ceiling": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "null_builder_or_wrapper_invocations": 0,
+    "pygrc_model_instantiations": 0,
+    "static_validation_invocations": 3
+  },
+  "projection_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05e-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05E-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05e-portability-correction-validation.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05e_validate.py"
+  },
+  "transformation_rules": {
+    "external_repository_locator": "derive the sibling repository at runtime from the RCAE root and retain only its stable logical ID and admitted revision",
+    "historical_bytes": "never rewrite Git history; bind original bytes only by commit and SHA-256",
+    "interpreter_identity": "retain the normalized .venv command, relative venv identity, implementation, version, and binary digest; do not persist resolved machine locations or prefixes",
+    "mount_identity": "retain filesystem type, options, repository-local status, and logical repository-worktree identity; do not persist the mount location",
+    "projection_label": "every changed historical record or execution artifact must declare its source commit, source SHA-256, decision, change, and zero-scientific-change status",
+    "repository_paths": "normalize current-tree repository locations to repository-relative POSIX identities",
+    "script_entry": "scripts are invoked only through .venv/bin/python and retain no machine-selecting shebang",
+    "source_literals": "construct runtime-only machine paths from admitted relative roots or platform APIs without persisting them"
+  }
+}

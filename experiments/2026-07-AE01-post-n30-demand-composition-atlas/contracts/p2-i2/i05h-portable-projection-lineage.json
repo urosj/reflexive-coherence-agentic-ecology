@@ -1,0 +1,70 @@
+{
+  "artifact_id": "P2-I2-I05H-PORTABLE-PROJECTION-LINEAGE",
+  "artifact_version": "1.0.0",
+  "activity_id": "P2-I2-I05H-FOURTH-BOUNDED-PORTABILITY-CORRECTION",
+  "authority": {
+    "change_id": "P2-I2-CHG-031",
+    "decision_id": "P2-I2-DEC-038",
+    "parent_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7"
+  },
+  "correction_group": "i01_i02_source_and_identity",
+  "file_count": 10,
+  "historical_evidence": {
+    "history_rewritten": false,
+    "representation": "source_commit_and_source_sha256",
+    "source_commit": "62882efc5ecf3c131d21345ad89796f0b2ebccb7"
+  },
+  "projection_rows": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-audit-input-freeze.json",
+      "source_sha256": "a0dabbe125402389ea2ed7b757091ce80f5210ea5700e184711701c3a89c6b2a",
+      "projection_sha256": "a420f66af39a3e844d403e1bb98d9e3d1efbc1baed1c6e9ad7214183b492441f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02-source-admission-input-freeze.json",
+      "source_sha256": "0ce2cbd8315faecdc9b433f767d95a7c34aa32386f84cda9c22c1d31b32760ca",
+      "projection_sha256": "e107907abc602c449406954730a0b4d3bc5371f50c700222277f668109f49ed4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r1-identity-authority-validation.json",
+      "source_sha256": "243b82f3c108733320630de6d11584bd3a317d83ce1cd72a21075867323e3e7e",
+      "projection_sha256": "639e60484fff24e610f8e4dd6e0b4b4b71f9af5414ecaf88ea6f67a16d3c8889"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-reset-baseline-validation.json",
+      "source_sha256": "796f58e91958c9ef991e5218ee9804e10cdbdb298ad5c7af3b574956667696d0",
+      "projection_sha256": "4e11194b76883beec33a0ad73dc53b18864e5ba83fc466ac69bcfd30d776699c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-command-provenance.md",
+      "source_sha256": "f30cb5cf99e9088cc8f669b716b1481fd6d55022179bdd6fc6c4dd80fe2185af",
+      "projection_sha256": "34e1a879ddb544eec0ea909a66510698d6fb517a88f18e51a5fd899d6a3d3f17"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md",
+      "source_sha256": "4d6cdbf2d897dc234bbf45c2cade5f18be774ae4c9160123f2bb223140cf2930",
+      "projection_sha256": "9c60ee11d30d7bff1f8fed8ada544818e1aa7ec42b743d06382bb94615a28ebd"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R1-admission-closeout-revalidation.md",
+      "source_sha256": "3b48a26c0e7c95af4a3c9da19a6b04e6b9b67b72f625b5344edd2986e84b32a0",
+      "projection_sha256": "6ffe7ee1d4b159db4240750d84698f0e9d9ded69493ad4af685dd236a7ab9383"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r1_validate.py",
+      "source_sha256": "1bba6f3377c8d1bf44172c6e321e960bdd306ade8f0f864aefc5e12ddb1bc3ba",
+      "projection_sha256": "475793436814030fbba413cfe87ce3d54f55f6dacab1926f3a84a35581cb118b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r2_build_manifest.py",
+      "source_sha256": "59dbb562932391a296eaf6265793e036024aa0ce31ae8d59f701f34fd2a97596",
+      "projection_sha256": "a13af412ba7f431d5f54e9fcd9379b4a6dbaaae78f00c546e376d1cf80038975"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i02r2_validate.py",
+      "source_sha256": "fd1046e58fc27f7f70ffe824bdd6c76248e47e4048e84347832cfeaf4a0770e0",
+      "projection_sha256": "3eddffa5b41479d17e4452cf76fa18032bf6511e2303eb639d00ec327f1d6a86"
+    }
+  ],
+  "scientific_change": false
+}

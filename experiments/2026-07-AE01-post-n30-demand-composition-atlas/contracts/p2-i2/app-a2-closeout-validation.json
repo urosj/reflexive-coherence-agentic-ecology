@@ -1,0 +1,408 @@
+{
+  "artifact_id": "p2_i2_app_a2_closeout_validation",
+  "artifact_version": "1.0",
+  "authority_effect": "Read-only result validation; owner result acceptance and commit remain pending.",
+  "bounded_claim": "bounded generator-extractor-redistributor shared-carrier composition candidate",
+  "checks": [
+    {
+      "check_id": "rcae.activation_commit",
+      "observed": "e61daccd9258d5511394112b2be7fb5ece310852",
+      "passed": true
+    },
+    {
+      "check_id": "rcae.exact_closeout_dirty_scope",
+      "observed": [
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_closeout_validate.py"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "aggregate.artifact",
+      "observed": "p2_i2_app_a2_runtime_evidence",
+      "passed": true
+    },
+    {
+      "check_id": "aggregate.status",
+      "observed": "complete",
+      "passed": true
+    },
+    {
+      "check_id": "aggregate.digest",
+      "observed": "f618fe3d3b661593e4227627e36860515297ef4869f670512bf61a505a63528d",
+      "passed": true
+    },
+    {
+      "check_id": "aggregate.activation_commit",
+      "observed": "e61daccd9258d5511394112b2be7fb5ece310852",
+      "passed": true
+    },
+    {
+      "check_id": "aggregate.attempt_consumed",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "campaign.one_invocation",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "campaign.zero_retry",
+      "observed": [
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "campaign.nineteen_starts",
+      "observed": 19,
+      "passed": true
+    },
+    {
+      "check_id": "campaign.fresh_processes",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "campaign.all_receipts_accepted",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "campaign.no_per_arm_files",
+      "observed": [
+        0,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "receipts.nineteen",
+      "observed": 19,
+      "passed": true
+    },
+    {
+      "check_id": "receipts.unique",
+      "observed": [
+        "reference",
+        "G",
+        "E",
+        "P",
+        "GE",
+        "GP",
+        "EP",
+        "GEP",
+        "one_source_reference",
+        "one_source_GEP",
+        "cyclic_rotation_GEP",
+        "order_EGP",
+        "order_GPE",
+        "label_permuted_reference",
+        "label_permuted_GEP",
+        "carrier_clamp_GEP",
+        "mediator_restore_G",
+        "mediator_restore_E",
+        "mediator_restore_P"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "receipts.digest",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "receipts.fresh_model",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "receipts.resource_bounds",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "analysis.digest",
+      "observed": "72cc13e5c1ffb5ff61e53207de8715f1d9d473de5f82608ce901be193ebc98fe",
+      "passed": true
+    },
+    {
+      "check_id": "analysis.complete",
+      "observed": [
+        19,
+        19
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "analysis.operational_validity",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "analysis.signatures",
+      "observed": 19,
+      "passed": true
+    },
+    {
+      "check_id": "analysis.proper_subsets",
+      "observed": {
+        "E": true,
+        "EP": true,
+        "G": true,
+        "GE": true,
+        "GP": true,
+        "P": true,
+        "reference": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "analysis.primary",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "analysis.operation_causality",
+      "observed": {
+        "E": {
+          "causal_requirement_passed": true,
+          "direct_response_changed": true,
+          "mediator_intervention_changed_response": true,
+          "mediator_restore_arm": "mediator_restore_E",
+          "withdrawal_arm": "GP"
+        },
+        "G": {
+          "causal_requirement_passed": true,
+          "direct_response_changed": true,
+          "mediator_intervention_changed_response": true,
+          "mediator_restore_arm": "mediator_restore_G",
+          "withdrawal_arm": "EP"
+        },
+        "P": {
+          "causal_requirement_passed": true,
+          "direct_response_changed": true,
+          "mediator_intervention_changed_response": true,
+          "mediator_restore_arm": "mediator_restore_P",
+          "withdrawal_arm": "GE"
+        }
+      },
+      "passed": true
+    },
+    {
+      "check_id": "analysis.clamp",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "analysis.causal",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "gates.configuration",
+      "observed": 0.82,
+      "passed": true
+    },
+    {
+      "check_id": "gates.environment",
+      "observed": 0.046739999999999976,
+      "passed": true
+    },
+    {
+      "check_id": "gates.support",
+      "observed": 0.02214000000000002,
+      "passed": true
+    },
+    {
+      "check_id": "gates.phase",
+      "observed": 0.01296,
+      "passed": true
+    },
+    {
+      "check_id": "gates.leakage",
+      "observed": 5.538584076652357e-16,
+      "passed": true
+    },
+    {
+      "check_id": "controls.one_source",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "controls.rotation",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "controls.label",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "controls.orders",
+      "observed": {
+        "order_EGP": true,
+        "order_GPE": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "controls.private_and_carrier",
+      "observed": {
+        "cyclic_role_rotation_reproduces": true,
+        "label_permutation_invariant": true,
+        "one_source_reproduces": true,
+        "order_inversion_gate_passes": {
+          "order_EGP": true,
+          "order_GPE": true
+        },
+        "order_resolution": "tested_adjacent_inversions_do_not_make_order_load_bearing",
+        "reference_all_diverted": true,
+        "response_sources_carrier_only": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "closeout.artifact",
+      "observed": "p2_i2_app_a2_reconstruction_and_closeout",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.status",
+      "observed": "complete",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.digest",
+      "observed": "bf28cdece08c3f28b6dfc3e85c3446b7a259e083d73b4b8697f5045ea77ecc6a",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.aggregate_hash",
+      "observed": "5e09447215a05134fb5dfe7e2e8947b0b313950d950f963e748cdd6d14cd9b87",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.analysis_byte_equal",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "closeout.read_once",
+      "observed": 1,
+      "passed": true
+    },
+    {
+      "check_id": "closeout.zero_regeneration",
+      "observed": {
+        "analysis_byte_identical": true,
+        "analysis_digest": "72cc13e5c1ffb5ff61e53207de8715f1d9d473de5f82608ce901be193ebc98fe",
+        "child_process_invocations": 0,
+        "model_invocations": 0,
+        "producer_invocations": 0,
+        "pygrc_imports": 0,
+        "retained_aggregate_reads": 1,
+        "scientific_regeneration_invocations": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "closeout.terminal",
+      "observed": "supported_bounded_candidate",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.claim",
+      "observed": "bounded generator-extractor-redistributor shared-carrier composition candidate",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.plurality",
+      "observed": "physical_participant_plurality_non_load_bearing_in_frozen_fixture",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.order",
+      "observed": "tested_adjacent_inversions_do_not_make_order_load_bearing",
+      "passed": true
+    },
+    {
+      "check_id": "closeout.main_unchanged",
+      "observed": {
+        "cross_lane_recurrence_claimed": false,
+        "fixture_bounded": true,
+        "gate_signature_bounded": true,
+        "main_p2_i2_terminal_changed": false,
+        "n29_metric_equivalence_claimed": false,
+        "n31_plus_selected": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "closeout.blocked_claims",
+      "observed": [
+        "coalition",
+        "functional cooperation",
+        "coordination",
+        "resource economy",
+        "agency",
+        "collective identity",
+        "ecology motif or regime",
+        "cross-lane recurrence",
+        "N31+ selection"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "portability.no_absolute_paths",
+      "observed": null,
+      "passed": true
+    },
+    {
+      "check_id": "validator.repository_venv",
+      "observed": ".venv/bin/python",
+      "passed": true
+    },
+    {
+      "check_id": "validator.no_pygrc",
+      "observed": null,
+      "passed": true
+    }
+  ],
+  "checks_passed": 53,
+  "checks_total": 53,
+  "experiment_id": "2026-07-AE01",
+  "failed_checks": [],
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A2",
+  "output_digest": "6090c9bfd05628f817d528e06532fac91411723ebc86abf995caedc6577cca59",
+  "sources": {
+    "aggregate": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+      "sha256": "5e09447215a05134fb5dfe7e2e8947b0b313950d950f963e748cdd6d14cd9b87"
+    },
+    "closeout": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+      "sha256": "e197917b2934f8cbd5d0a79a4688f520f76e680bac4c29328ea15ae13517b739"
+    }
+  },
+  "status": "passed",
+  "terminal_classification": "supported_bounded_candidate",
+  "validation_execution": {
+    "child_arm_invocations": 0,
+    "model_invocations": 0,
+    "producer_invocations": 0,
+    "pygrc_imports": 0,
+    "retained_aggregate_reads": 1,
+    "retained_closeout_reads": 1,
+    "scientific_regeneration_invocations": 0
+  },
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_closeout_validate.py",
+    "sha256": "0bba0341af2a4bd20f3f6ae6f55c340a24fb83631f64369f78b3b7992d9a7c5a"
+  }
+}

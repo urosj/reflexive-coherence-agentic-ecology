@@ -135,6 +135,45 @@ uv pip install --python .venv/bin/python LOCAL_PYGRC_SOURCE jsonschema==4.26.0
 retained runtime profile must instead record the installed `pygrc==0.1`
 identity and source revision/digests.
 
+### P2-I2 I04/I05 authority
+
+`p2_i2_i04r2_analysis.py` and `p2_i2_i04r2_calibration.py` are the sole active
+P2-I2 calibration-preregistration analysis path under owner-accepted I04R2.
+The original I04 and I04R1 modules remain immutable historical inputs. The
+separate I05 freeze binds the exact identities and encodes a one-invocation
+ceiling; its corrected I05B authority package is owner-accepted for retention.
+Validate proposed-permission integrity without running the null:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05_authorization_validate.py --output ${TMPDIR}/p2-i2-i05-authorization-validation.json
+```
+
+The governed I04R2 calibration entry point imports no PyGRC and grants no
+candidate authority. I05A found that it lacks required one-shot mechanics, so
+the old direct entry point may not run. Reproduce the historical zero-execution audit with:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05a_safety_audit.py --output ${TMPDIR}/p2-i2-i05a-safety-audit.json
+```
+
+`p2_i2_i05b_one_shot.py` is the sole accepted governed I05 wrapper. It claims
+the attempt atomically before importing/calling the accepted builder and binds
+the future committed authority without embedding a self-referential commit
+hash. Its machine owner-acceptance record authorizes commit but explicitly not
+the null; it cannot run until a separate exact 10.4 launch record is committed.
+Reproduce the zero-null correction validation:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05b_validate.py --output ${TMPDIR}/p2-i2-i05b-validation.json
+```
+
+`p2_i2_i05c_validate.py` validates the failed-before-claim active-venv path
+correction without invoking the builder or consuming authority:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05c_validate.py --output ${TMPDIR}/p2-i2-i05c-validation.json
+```
+
 Validate the six committed P2-I1 configs:
 
 ```bash
@@ -327,3 +366,43 @@ those files validate:
 The execution manifest is a retention index. It cannot assign a boundary rung
 or terminal classification, and it preserves each run's independent
 reconstruction status.
+
+## P2-I2 I03AR1 state-carried conformance
+
+`p2_i2_i03ar1_conform.py` resolves and validates the immutable I03AR1 base
+freeze plus its governed I03AR1R1 comparator revision. It checks the RCAE
+`.venv`, admitted PyGRC import root, exact graph revision/source digests,
+read-only graph status, harness identity, fixture, assertions, run limit, and
+scientific-evidence quarantine before constructing a model.
+
+The one replacement evidence invocation and one reconstruction invocation are
+already exhausted. They passed 136/136 assertions and produced byte-identical
+records. The exact historical commands remain in the freeze and
+reconstruction receipt for audit; this README grants no rerun authority. See
+the [I03AR1 report](../reports/P2-I2-I03AR1-state-carried-runtime-conformance.md)
+and [attempt receipt](../contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json).
+
+## I05I portability projection
+
+Historical commands in this README are non-executable documentation. This
+representation-only projection is governed by `P2-I2-DEC-039` and
+`P2-I2-CHG-032`. Raw bytes remain at commit
+`1279e177d6691417a1d692dd8fdfc5cf50060e11`, SHA-256
+`94a0882655376b95a4618af861c712e86d587a88c36ee136e1057c00ab2aa11e`.
+No command authority, runtime, or scientific meaning changed.
+
+## P2-I2 I09 retained-evidence control resolution
+
+`p2_i2_i09_control_resolution.py` derives the compact control index solely
+from the frozen I03/I04/I06 authorities and accepted I08 receipts. It does not
+import PyGRC, construct a model, or regenerate a matrix entry. The retained
+index, validation, and report reconstruct byte-identically through the
+repository venv:
+
+```bash
+.venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09_control_resolution.py validate
+```
+
+The command is read-only with respect to retained artifacts. It validates
+control projection only; it cannot assign `R01`–`R05`, pass CONTROL-GATE by
+itself, or authorize I10.

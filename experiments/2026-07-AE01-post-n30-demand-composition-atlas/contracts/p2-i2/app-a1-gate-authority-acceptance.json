@@ -1,0 +1,43 @@
+{
+  "artifact_id": "p2_i2_app_a1_gate_authority_acceptance",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A1",
+  "decision_id": "P2-I2-DEC-066",
+  "change_id": "P2-I2-CHG-071",
+  "owner_response": "+1",
+  "accepted_authority": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-gate-authority-proposal.json",
+    "sha256": "87e2e84e320097e87e442cb9451cb75b9805df49311ae630d6cfa1ffc416cf10",
+    "domain_id": "app_a_live_packet_coherence_delta_v1"
+  },
+  "accepted_review_context": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-source-delta-audit.json",
+      "sha256": "b19ee29612cd13c04e4adec3624a714ae9d5e4b42470552d228cc2d9b0b1666b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-validation.json",
+      "sha256": "de0109868fcf56d2913fa62b19816a9d07564147cb9193c33a9f0c59db310cfd"
+    }
+  ],
+  "authorization": {
+    "gate_authority_active": true,
+    "exact_fixture_and_control_freeze_allowed": true,
+    "candidate_free_conformance_allowed_only_after_freeze": true,
+    "app_a1_execution_freeze_construction_allowed": true,
+    "app_a1_acceptance_granted": false,
+    "commit_authorized": false,
+    "app_a2_authorized": false,
+    "scientific_runtime_authorized": false
+  },
+  "retained_interpretation": {
+    "n29_metric_transportability_gate_passed": false,
+    "n29_numbers_relabelled_as_native_observables": false,
+    "live_domain_is_prospective_appendix_authority": true,
+    "retention_factor_is_configuration_not_measured_gate": true,
+    "main_p2_i2_result_changed": false
+  },
+  "next_step": "Freeze the exact APP-A1 live fixture, operation vectors, controls, identities, conformance fixture, and bounded execution/reconstruction policy before any model construction."
+}

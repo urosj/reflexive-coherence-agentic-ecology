@@ -1,0 +1,58 @@
+{
+  "artifact_id": "P2-I2-APP-A2-ACTIVATION-OWNER-ACCEPTANCE",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "iteration_id": "P2-I2-APP-A2",
+  "recorded_at": "2026-07-15T00:00:00+02:00",
+  "status": "owner_accepted_activation_commit_and_single_campaign_authorized",
+  "authority": {
+    "decision_id": "P2-I2-DEC-072",
+    "change_id": "P2-I2-CHG-077",
+    "owner_direction": "accept, continue",
+    "activation_candidate_accepted": true,
+    "activation_containing_commit_authorized": true,
+    "single_campaign_authorized_after_clean_commit": true,
+    "campaign_invocations": 1,
+    "campaign_retry_limit": 0,
+    "attempts_per_arm": 1,
+    "arm_retry_limit": 0,
+    "read_only_reconstruction_authorized_after_retained_aggregate": true,
+    "result_acceptance_authorized": false,
+    "result_commit_authorized": false
+  },
+  "implementation_authority": {
+    "commit": "c435b00472b97020041783c8b89d6cb7135edbb3",
+    "branch": "p2-i2-experiment"
+  },
+  "accepted_activation_artifacts": [
+    {
+      "role": "activation_authorization",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+      "sha256": "eedef4bc95812d6f61f3f982110e83ed460fc3553eeee9d4b2f905b958677925"
+    },
+    {
+      "role": "activation_candidate_validation",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-candidate-validation.json",
+      "sha256": "f315f4b76a0f55dbac6f04adb39394c77e1d51b9be7ba2581a4d19291a4ae423"
+    },
+    {
+      "role": "activation_validator",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_activation_validate.py",
+      "sha256": "dd7760a9f6369cfb3f98080c031cf6fd3ffa983fe66d224ff4355c7d0181f35e"
+    }
+  ],
+  "accepted_disposition": {
+    "checks_passed": 51,
+    "checks_total": 51,
+    "failed_checks": 0,
+    "pygrc_imports": 0,
+    "scientific_models": 0,
+    "child_arm_starts": 0,
+    "scientific_gate_signatures": 0,
+    "runtime_outputs_created": 0,
+    "Appendix_results_assigned": 0
+  },
+  "activation_rule": "Commit the accepted activation package once. From the resulting clean full HEAD, execute the exact normalized campaign command once. The runner's preflight and exclusive output claim consume the authorization even on failure.",
+  "reconstruction_rule": "After the retained aggregate exists, invoke the frozen read-only reconstructor once; it may read retained receipts only and must not import PyGRC or regenerate a model, child, producer, or scientific response.",
+  "stop_rule": "After reconstruction and closeout validation, return the uncommitted scientific result for owner review."
+}

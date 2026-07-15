@@ -33,6 +33,50 @@ These documents preserve the distinction between N29/N30 evidence, ecology
 interpretation, constructed RCAE mechanisms, observed AE01 results, missing
 graph surfaces, and proposed graph discriminators.
 
+## Lane-local operational projections
+
+- [P2-I2 operational hypotheses](p2-i2-operational-hypotheses.md) project the
+  frozen `AE01-H-L02` hypothesis and accepted P2-I2 brief into nine
+  realization-local falsifiable statements. I03 now follows review-separated
+  8A state-carried, 8B history-carried, and 8C hybrid profiles. I03A's
+  state-carried `pygrc_native_candidate` design and I03AR1's quarantined
+  136/136, byte-reconstructed implementation conformance are owner-accepted
+  for progression. I03B's `minimally_producer_assisted` history-carried design
+  and quarantined 252/252, byte-reconstructed conformance passed the zero-
+  runtime I03BR1 closeout revalidation (21/21 checks, zero blockers), were
+  owner-accepted for staged progression, and remain scientifically outcome-
+  free. I03C now freezes a `minimally_producer_assisted` hybrid design with
+  native P, active H_P/M_H, and one native `[P,M_H]` joint response read;
+  static validation and quarantined 258/258 byte-reconstructed bounded runtime
+  conformance passed. I03C is review-ready and scientifically outcome-free.
+  I03C/I03CR1 were subsequently owner-accepted for progression. The compact
+  I03F family closeout composed the accepted terminal authorities without
+  repeating their reviews and passed 12/12 integration checks and 9/9
+  acceptance conditions with zero blockers; owner acceptance subsequently
+  passed the discriminator gate. I04R1 corrected the primary comparator and
+  null/window boundary, and I04R2 confirmed all eight conditional machine
+  invariants 16/16 with 7/7 pure tests after correcting the future-I05 route.
+  The project owner accepted I04R2 as the sole progression authority and
+  passed CAL-PRE under DEC-026. Original I04/I04R1 remain immutable history;
+  the separate one-invocation I05 authorization candidate passed 12/12 static
+  checks and byte reconstruction but remains uncommitted and inactive pending
+  owner direction. I05A subsequently passed only 3/8 execution-safety checks
+  and blocks proposed DEC-027 on five one-shot/commit-binding/receipt gaps. The
+  DEC-028 I05B correction passes 12/12 zero-null tests and 12/12 checks with
+  immutable I04R2 bytes; DEC-029 owner-accepts its retention while keeping the
+  10.4 launch record separate. DEC-031 I05C then corrects a failed-before-claim
+  active-venv validation defect, after which the one governed arithmetic null
+  completes with zero retries. DEC-032/033 retain the owner-required
+  P2-I2-wide no-absolute-path audit: 312 value-redacted violations in 70 of 135
+  files, with I05 first. DEC-033 accepts the inventory; its first eleven-file
+  I05E group passes 10/10 with zero group violations and is owner-accepted for
+  commit. Later groups remain closed until retention, and CAL-GATE remains
+  closed. Under
+  owner-accepted `P2-I2-DEC-011`, all three
+  profiles remain in the downstream program and realization selection occurs
+  separately within each mode. Their local IDs do not extend the closed Phase
+  1 hypothesis registry or schema vocabulary.
+
 ## Hypothesis interpretation
 
 The seven lanes are not seven attempts to simulate complete ecologies. They

@@ -1,0 +1,165 @@
+{
+  "artifact_id": "P2-I2-I04-CHOICE-RESOLUTION-INPUT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "evidence_effect": "candidate_free_scientific_choice_input_only",
+  "entry_authority": {
+    "owner_direction": "in that case, let's continue with I04",
+    "accepted_rcae_commit": "6d0fdf8e7405b45cb509c5a0e323fa10149d2cf2",
+    "accepted_rcae_tree": "16aef10e5329124a5155a2ae3c4cf1ea93b7469a",
+    "accepted_i03f_disposition": "owner_accepted_without_mode_selection",
+    "gate_effect": "P2-I2-DISCRIMINATOR-GATE passed; I04 construction only",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594"
+  },
+  "frozen_authorities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f",
+      "role": "accepted_lane_semantics"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/lane-hypotheses.md",
+      "sha256": "2ccf3bc062cb2a5eed0cf475d35f1a32a675df91a040133fb4058119cb59a3b9",
+      "role": "frozen_L02_hypothesis"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/post-r3-ecology-discriminator-amendment.md",
+      "sha256": "173aff056fd1738d82cca82ca2892192f74e36791ff87a649976f13fa4b700b2",
+      "role": "D_039_ecology_discriminator"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/outcome-and-stopping-contract.md",
+      "sha256": "b9c0d4b4c17e48d3efae831bae3369a81eb034a193c902f907fb6dbf09096fa2",
+      "role": "outcome_and_stopping"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/developmental-interpretation-contract.md",
+      "sha256": "92fd37c18777f6b366df242a99dbdc1b556cb57b1005f7415d875f7a35a258f1",
+      "role": "interpretation_ceiling"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L02.json",
+      "sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483",
+      "role": "metric_and_resolution_authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p1_i5_execution_policy.json",
+      "sha256": "b161d8e1f07889b6121032aacae501ebcd0669bd017aa9c1caf91d2f9a38234d",
+      "role": "seed_attempt_resource_and_top_rung_policy"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-index.json",
+      "sha256": "f9c8591a9d3c30a90097548b359e399b3a9e73b01f06ea7cd63d5971ceeb3fa6",
+      "role": "accepted_three_mode_import_boundary"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-validation.json",
+      "sha256": "44b2db8e49b603ddd2b59f3e5bc2f367708b5b93b8b1e9e19e5b8c062cb93c9e",
+      "role": "accepted_family_closeout_validation"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
+      "sha256": "87232487b0937345f9f79db1b3618674ad683737672332f09ea9e3beefcee463",
+      "role": "complete_I03_fixture_quarantine_registry"
+    }
+  ],
+  "required_modes": [
+    "state_carried",
+    "history_carried",
+    "hybrid"
+  ],
+  "decision_criteria": [
+    "the raw response is a substrate-visible later continuation rather than an authored pool or success label",
+    "the same response is shared only if causal meaning, unit, orientation, window, aggregation, missingness, and calibration population are equal",
+    "the primary comparator is the closest insufficient-repetition explanation rather than the contrast expected to maximize the margin",
+    "both combined source orders remain visible; no successful order or scalar average may stand in for the distribution",
+    "all I03 qualitative causal expectations remain unchanged and become machine rules without importing conformance values",
+    "the matched null measures analysis resolution only and contains no candidate, PyGRC runtime, or I03 fixture input"
+  ],
+  "response_options": [
+    {
+      "option_id": "native_B_target_coherence_gain",
+      "admissibility": "preferred",
+      "reason": "direct downstream substrate change caused by the registered native A-to-B continuation packet"
+    },
+    {
+      "option_id": "native_response_packet_arrival_amount",
+      "admissibility": "admissible_audit_equivalent",
+      "reason": "native and downstream, but less direct than measuring the receiving substrate and retained as chain evidence"
+    },
+    {
+      "option_id": "native_feedback_score_or_polarity",
+      "admissibility": "rejected_as_primary",
+      "reason": "carrier-scoped but intermediate; it is not the later continuation consequence"
+    },
+    {
+      "option_id": "scheduled_or_success_boolean",
+      "admissibility": "rejected_as_primary",
+      "reason": "authored decision surface and weaker than the native downstream state transition"
+    }
+  ],
+  "comparator_options": [
+    {
+      "option_id": "quantity_and_timing_matched_single_source_repetition",
+      "admissibility": "preferred_closest",
+      "reason": "preserves the inherited single-source carrier relation and total physical contribution while removing multi-source joint constitution"
+    },
+    {
+      "option_id": "original_single_source_marginal",
+      "admissibility": "mandatory_signed_diagnostic",
+      "reason": "removes a source and total contribution, so it is less closely matched"
+    },
+    {
+      "option_id": "contributor_removal",
+      "admissibility": "mandatory_signed_control",
+      "reason": "tests dependence but confounds joint constitution with deleted contribution quantity"
+    },
+    {
+      "option_id": "shuffle_or_reverse_order",
+      "admissibility": "mandatory_mode_specific_control",
+      "reason": "its expected relation changes by mode and an invariant state shuffle cannot own a positive primary contrast"
+    },
+    {
+      "option_id": "private_or_controller_substitution",
+      "admissibility": "mandatory_causal_chain_control",
+      "reason": "tests mailbox or bypass exclusion; raw output equality alone neither proves nor refutes the registered causal chain"
+    }
+  ],
+  "candidate_and_calibration_absence": {
+    "candidate_artifacts_present": false,
+    "candidate_execution_performed": false,
+    "matched_null_artifacts_present": false,
+    "matched_null_execution_performed": false,
+    "candidate_seeds_forbidden_from_calibration": [
+      101,
+      211,
+      307
+    ]
+  },
+  "fixture_quarantine": {
+    "registry_pointer": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json#/fixture_quarantine_registry",
+    "reject_every_registered_source_scope": true,
+    "reject_direct_and_trivially_serialized_value_reuse": true,
+    "allowed_imports": [
+      "accepted pre-runtime causal structures",
+      "structural adapter implementation under its exact source identity",
+      "mode-specific producer, restoration, and downstream obligations"
+    ],
+    "independent_prior_authority_exception": {
+      "measurement_resolution": 1e-12,
+      "source": "AE01-L02 metric sheet",
+      "rule": "exact equality with an I03 comparator value is not fixture reuse when the value and provenance are fixed by the pre-I03 metric authority; no I03 source may be loaded to select it"
+    }
+  },
+  "scope_boundary": {
+    "matched_null_execution_authorized": false,
+    "candidate_execution_authorized": false,
+    "scientific_numeric_fixture_selection_authorized": false,
+    "exact_topology_or_contribution_values_selected": false,
+    "mode_ranking_or_removal_allowed": false,
+    "graph_repository_mutation_allowed": false,
+    "I05_authorized": false
+  }
+}

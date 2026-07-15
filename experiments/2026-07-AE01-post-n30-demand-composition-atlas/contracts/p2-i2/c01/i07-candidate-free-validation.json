@@ -1,0 +1,316 @@
+{
+  "artifact_hashes": {
+    "binding_receipt_sha256": "c73276a0de176ce250691fbc03740a9011d938ea46acbf46510bcf5fed9811e6",
+    "binding_refresh_receipt_sha256": "c284db9a4f203379f5493a7004ce298ced1023dfcc0826c40e8db488987c3fbc",
+    "binding_refresh_source_sha256": "db88646f89da28f6bf7f9d6d5e1fa53858acb399afd0512c410e2b8b8ca320c6",
+    "continuation_freeze_sha256": "387eabee161f1fb4de394906a63a5d4f9c582b795b2ca1e3f2d514c7a643488b",
+    "execution_source_sha256": "42b8486908831a928535f9594c7a15cc0d634c0025391d28ce32fc3b75fb6a61",
+    "failed_start_sha256": "179243b2dfe5c057484ccf478aff15e89d8c763906e60074ec30188cc9e13688",
+    "focused_tests_sha256": "927f48c72e96bb6a8a49cd683a5c581d26de12a3435aebb02c6d585cd29f6ea2",
+    "inactive_exec_freeze_sha256": "c703eca51bc6155f44c5a3164c938361285b1f11dda506515fd4bc2fd4c93f1d",
+    "pytest_environment_receipt_sha256": "693667ba58b2b9263ca9a6fa2f0ec96548c7028bdd087c14760b87fa8e7707f3",
+    "resumption_input_freeze_sha256": "c73b4c814a33bfd80c3fbb072928b4f4f9f59de5ba9dbe3bf8c424526a261c98",
+    "run_matrix_sha256": "57953a5fc93e8e05a95cdb7ca260c72bc28ea9388fd0804b064c1279ce8c48e8",
+    "successor_policy_sha256": "9a0649f18e99dff3c3f5bc7f8927ea8b369adde17e5160013a508e045c7d047e",
+    "validator_sha256": "7c519260a2e7ab4e07af0ce4b663a9026a2cb07d903832c8a0e427942373a4cd"
+  },
+  "artifact_id": "P2-I2-I07-CANDIDATE-FREE-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blockers": 0,
+  "checks": [
+    {
+      "check_id": "I07-01",
+      "claim": "retained pre-I06B drafts remain byte-exact immutable history",
+      "error": null,
+      "evidence": {
+        "retained_draft_count": 2
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-02",
+      "claim": "every accepted progression authority remains byte-exact",
+      "error": null,
+      "evidence": {
+        "progression_authority_count": 13
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-03",
+      "claim": "accepted I06B restores REG-GATE without authorizing execution",
+      "error": null,
+      "evidence": {
+        "change_id": "P2-I2-CHG-038",
+        "decision_id": "P2-I2-DEC-044"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-04",
+      "claim": "successor composes the blocked draft and accepted I06B only",
+      "error": null,
+      "evidence": {
+        "closed_blockers": [
+          "I07-BLK-01",
+          "I07-BLK-02",
+          "I07-BLK-03"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-04A",
+      "claim": "owner-authorized in-place I07 continuation preserves the failed start",
+      "error": null,
+      "evidence": {
+        "I07A_opened": false,
+        "failed_start_sha256": "179243b2dfe5c057484ccf478aff15e89d8c763906e60074ec30188cc9e13688"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-04B",
+      "claim": "pytest is installed only in the repository venv with exact retained metadata",
+      "error": null,
+      "evidence": {
+        "environment_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-pytest-environment-receipt.json",
+        "pytest_version": "9.1.1"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-05",
+      "claim": "execution source and tests parse and have no top-level PyGRC import",
+      "error": null,
+      "evidence": {
+        "source_sha256": "42b8486908831a928535f9594c7a15cc0d634c0025391d28ce32fc3b75fb6a61",
+        "test_sha256": "927f48c72e96bb6a8a49cd683a5c581d26de12a3435aebb02c6d585cd29f6ea2"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-04C",
+      "claim": "derived binding refresh changes only validator/process-bound hashes",
+      "error": null,
+      "evidence": {
+        "candidate_execution_authorized": false,
+        "refresh_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-binding-refresh-receipt.json"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-06",
+      "claim": "native runtime imports are confined to the future live execution function",
+      "error": null,
+      "evidence": {
+        "models_constructed": 0,
+        "pygrc_imports_during_validation": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-07",
+      "claim": "matrix reconstructs byte-semantically from the frozen policy",
+      "error": null,
+      "evidence": {
+        "primary_entries": 234,
+        "semantic_digest": "da68dcd10a195c17ad68cb9663b4d3f6d71e067200de75f46d86e5eb3a030334"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-08",
+      "claim": "matrix contains the exact 234 unique mode-branch-order-seed entries",
+      "error": null,
+      "evidence": {
+        "mode_entry_counts": {
+          "history_carried": 75,
+          "hybrid": 87,
+          "state_carried": 72
+        }
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-09",
+      "claim": "all governed output and claim paths are unique and repository-relative",
+      "error": null,
+      "evidence": {
+        "absolute_paths": 0,
+        "unique_paths": 936
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-10",
+      "claim": "normalized commands bind relative graph root, entry identity, attempt, and output",
+      "error": null,
+      "evidence": {
+        "command_template_count": 468
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-11",
+      "claim": "binding receipt reconstructs exactly and binds every source authority",
+      "error": null,
+      "evidence": {
+        "bound_files": 20,
+        "payload_digest": "d2399b73b10609fc7fe64064989a3cfd88da1638076925340101f769361b1510"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-12",
+      "claim": "inactive exec freeze reconstructs exactly and closes all execution gates",
+      "error": null,
+      "evidence": {
+        "authorization_gate": "P2-I2-EXEC-FREEZE",
+        "status": "inactive_pending_candidate_free_validation_and_explicit_owner_acceptance"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-13",
+      "claim": "freeze byte-binds policy, source, validator, tests, matrix, and binding",
+      "error": null,
+      "evidence": {
+        "bound_identity_fields": 16
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-14",
+      "claim": "permanent exclusive claim precedes every runtime import or construction",
+      "error": null,
+      "evidence": {
+        "claim_semantics": "permanent atomic O_CREAT|O_EXCL claim before any runtime import or model construction; never delete to permit a repeat"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-15",
+      "claim": "retry is pre-construction-only, outcome-blind, and separately authorized",
+      "error": null,
+      "evidence": {
+        "maximum_conditional_retries": 234
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-16",
+      "claim": "no activation, retry ledger, execution manifest, claim, output, or failure exists",
+      "error": null,
+      "evidence": {
+        "activation_present": false,
+        "output_root_present": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-17",
+      "claim": "all I07 authority and generated artifacts are portable",
+      "error": null,
+      "evidence": {
+        "absolute_machine_local_paths": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-18",
+      "claim": "external PyGRC checkout remains exact and clean",
+      "error": null,
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-19",
+      "claim": "validation uses the frozen repository virtual environment",
+      "error": null,
+      "evidence": {
+        "python_command": ".venv/bin/python",
+        "python_version": "3.12.3"
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-20",
+      "claim": "I07 remains on its accepted parent commit before owner review",
+      "error": null,
+      "evidence": {
+        "HEAD": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+        "commit_authorized": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-21",
+      "claim": "construction and validation remained candidate-free",
+      "error": null,
+      "evidence": {
+        "candidate_free_python_starts": 6,
+        "candidate_or_control_operations": 0,
+        "infrastructure_retries": 0,
+        "models_constructed": 0,
+        "packets_scheduled_or_processed": 0,
+        "pygrc_imports": 0,
+        "response_evaluations": 0,
+        "scientific_windows": 0
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I07-22",
+      "claim": "future run and failure artifacts cover every registered receipt field",
+      "error": null,
+      "evidence": {
+        "failure_receipt_fields": 8,
+        "per_attempt_receipts": 12
+      },
+      "passed": true
+    }
+  ],
+  "checks_passed": 25,
+  "checks_total": 25,
+  "cycle_id": "P2-I2-C01",
+  "evidence_effect": "pre_execution_identity_and_authorization_integrity_only_no_candidate_or_scientific_evidence",
+  "gate_disposition": {
+    "EXEC_FREEZE": "closed_pending_explicit_owner_acceptance_of_I07",
+    "I08_authorized": false,
+    "REG_GATE": "passed_after_explicit_owner_acceptance_of_I06B",
+    "candidate_execution_authorized": false,
+    "commit_authorized": false
+  },
+  "iteration_id": "P2-I2-I07",
+  "lane_id": "AE01-L02",
+  "process_accounting": {
+    "candidate_free_python_starts": 6,
+    "candidate_or_control_operations": 0,
+    "commands": [
+      ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py build-freeze",
+      ".venv/bin/python -m pytest -q experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+      ".venv/bin/python -m pip install pytest",
+      ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07_refresh.py",
+      ".venv/bin/python -m pytest -q experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+      ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07_validate.py"
+    ],
+    "infrastructure_retries": 0,
+    "models_constructed": 0,
+    "original_start_ceiling": 3,
+    "owner_corrected_start_ceiling": 6,
+    "packets_scheduled_or_processed": 0,
+    "pygrc_imports": 0,
+    "scientific_evidence": false
+  },
+  "reconstruction": {
+    "binding_receipt_byte_semantic_reconstruction": true,
+    "inactive_exec_freeze_byte_semantic_reconstruction": true,
+    "run_matrix_byte_semantic_reconstruction": true,
+    "validation_output_readback_byte_identical": true
+  },
+  "status": "passed_candidate_free_inactive_exec_freeze_pending_owner_review",
+  "validated_at": "2026-07-15"
+}

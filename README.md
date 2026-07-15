@@ -36,6 +36,25 @@ Every remaining message scaffold is medium debt.
 | Implementation shortcut | Producer scaffold or message scaffold |
 | Remaining scaffold | Naturalization debt or medium debt |
 
+## Mechanisms now visible in controlled evidence
+
+AE01 has begun to expose operational mechanisms beneath several familiar
+ecological concepts. The ecological name identifies the direction of the
+question; the experiment result establishes only the bounded mechanism and
+function shown here.
+
+| Ecological concept | Operational mechanism exposed | Function demonstrated | Evidence | Claim ceiling |
+| --- | --- | --- | --- | --- |
+| Niche conditioning | Shared attributable history interacts with matched local susceptibility | The same medium history creates different later formation possibilities | [P2-I1 C02 result](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I1-C02-result.md) | Bounded niche-conditioning demand pattern; not autonomous niche formation |
+| Shared-pool co-conditioning | Multiple physical contributions constitute one non-private current-state, ordered-history, or hybrid carrier | Later response depends on the jointly constituted carrier and its causal organization | [P2-I2 I11 closeout](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I11-terminal-closeout.md) | Scaffold-dependent `T3_operational_class`; not a general pool ecology, cooperation, or metabolism |
+| Functional complementarity | Generator, extractor, and redistributor operations jointly move a live multi-axis carrier into one functional region | The full operation set supplies a carrier function that every proper subset lacks | [P2-I2 Appendix A closeout](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-A2-fresh-runtime-matrix-and-closeout.md) | Fixture-level operation complementarity; not organization or a general ecological motif |
+| Temporal memory and gating | Three ordered quantitative admissions are folded into active history with a terminal-P condition | Later native response depends on how the carrier was formed, not only on a current amount | [P2-I2 APP-B4 result](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-B4-runtime-result.md) | Fixed three-admission temporal gate; not semantic memory or distinct-operation complementarity |
+
+The [AE01 Agentic-Ecology View](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
+interprets how these mechanisms fit together. The
+[P2-I2 Interpretative Synthesis](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-interpretative-synthesis.md)
+provides the detailed L02 case and control account.
+
 This repository develops that transition as both theory and engineering method.
 It is intended for readers and implementers moving from I/O state machines,
 agent-based models, and multi-agent simulations toward Reflexive Coherence
@@ -71,6 +90,10 @@ This repository is intended for:
   signaling, language, or multi-agent coordination.
 - Read `Shared-Medium Coordination` if you want engineering vocabulary for
   traces, pressure fields, co-response, resonance, and medium debt.
+- Read [Agentic Ecology: From Theory to Controlled Experiments](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
+  for the method that turns those concepts into bounded evidence.
+- Read the [AE01 Agentic-Ecology View](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
+  for the current P2-I1, P2-I2, and appendix results and their limits.
 
 ## What this repository is
 
@@ -93,10 +116,13 @@ It provides:
 ## Status and claim boundary
 
 This is a conceptual and bounded experiment repository, not a reusable runtime
-package. The Post-N30 workspace now contains one retained, explicitly
-constructed P2-I1 result at the bounded niche-conditioning demand-pattern
-ceiling. That result does not establish an admitted ecology primitive or a
-complete agentic ecology.
+package. The Post-N30 AE01 workspace contains owner-accepted bounded L01 and
+L02 results. P2-I1 establishes a differential niche-conditioning demand
+pattern. P2-I2 includes an accepted 234-entry main cycle, an accepted Appendix
+A operation-complementarity result, and an accepted Appendix B terminal-P
+temporal discriminator. These results do not establish an admitted ecology
+primitive or a complete agentic ecology; AE01 remains at `AE01-C2`, with
+L03–L07 and cross-lane synthesis unexecuted.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -132,6 +158,8 @@ The papers deliberately distinguish:
 | 2 | [RC Agentic Ecology](papers/2026-06-RC-AgenticEcology.md) | Specification draft for translating state-rule agents into RC agentic ecologies, with RC-Ant Colony as the detailed worked example. |
 | 3 | [The Shared Medium](papers/2026-06-TheSharedMedium.md) | Transition essay for readers moving from direct communication and message-passing models toward shared-medium participation, co-response, trace, resonance, and field-mediated coordination. |
 | 4 | [Shared-Medium Coordination](papers/2026-06-SharedMediumCoordination-EngineeringSpec.md) | Engineering specification for translating communication, signaling, stigmergy, and multi-agent relation into shared medium, perturbation, trace, pressure, susceptibility, co-response, resonance, and medium debt. |
+| 5 | [Agentic Ecology: From Theory to Controlled Experiments](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md) | General bridge from the conceptual ontology and graph mechanisms to controlled ecology-side evidence. |
+| 6 | [AE01 Agentic-Ecology View](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md) | Experiment-specific interpretation of the accepted P2-I1, P2-I2, and appendix evidence, remaining debt, and open lanes. |
 
 ## Relation to other repositories
 
@@ -152,11 +180,14 @@ and shared-medium participation before implementation claims are made.
   engineering vocabulary.
 - [`experiments/`](experiments/README.md): bounded experiment roadmaps,
   contracts, reconstruction conventions, evidence, and closeouts. The current
-  AE01 workspace has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is
-  closed with one bounded, explicitly constructed L01 result, and Review R3
-  passed without tuning it. P2-I2 is next; all remaining lane execution stays
-  independently gated. New readers can begin with
-  [why AE01 matters for agentic ecology](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
+  AE01 workspace remains at `AE01-C2`. P2-I1 is closed with an accepted bounded
+  L01 result. P2-I2 is closed with an accepted 234-entry L02 main result,
+  independent reconstruction, an Appendix A operation-complementarity result,
+  and an Appendix B terminal-P temporal discriminator. L03–L07 and cross-lane
+  synthesis remain unexecuted. New readers can begin with the
+  [general experiment bridge](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
+  and then read the
+  [AE01-specific view](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
 - [`implementation/`](implementation/README.md): active cross-cutting plans,
   decisions, checklists, and handoffs.
 - `README.md`: public orientation and claim boundary.
@@ -167,9 +198,10 @@ and shared-medium participation before implementation claims are made.
 
 ## Claim boundary
 
-Positive claims in this repository are conceptual unless a future document
-explicitly links to implementation evidence. In particular, the current papers
-support the following bounded claim:
+Claims in the conceptual papers remain conceptual. Experiment claims apply
+only where their own contracts, reports, retained evidence, and owner decisions
+explicitly establish them. In particular, the current papers support the
+following bounded claim:
 
 ```text
 RC-Agentic-Ecology provides a vocabulary and engineering method for translating

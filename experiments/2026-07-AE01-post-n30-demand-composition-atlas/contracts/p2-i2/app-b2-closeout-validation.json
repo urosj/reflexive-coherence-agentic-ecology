@@ -1,0 +1,66 @@
+{
+  "artifact_id": "P2-I2-APP-B2-CLOSEOUT-VALIDATION",
+  "canonical_payload_digest": "24c5d14860f713ee56e871bb1d84ccc4dbfcd4ea4d61e764bfe59b9e3db19f3e",
+  "checks": {
+    "accepted_response_envelopes": 99,
+    "blocked_claims_retained": [
+      "cross-appendix recurrence",
+      "generic participant ecology",
+      "participant complementarity",
+      "fully native history realization",
+      "unbounded three-operation irreducibility",
+      "main P2-I2 conclusion revision"
+    ],
+    "canonical_and_digest_inputs": 3,
+    "controller_responses": 3,
+    "corrected_analysis_reconstructed": true,
+    "fresh_processes_and_models": 99,
+    "graph_clean": true,
+    "history_tokens": 111,
+    "materialization_packets": 55,
+    "matrix_complete": true,
+    "mode_arm_counts": {
+      "history_carried": 33,
+      "hybrid": 34,
+      "state_carried": 32
+    },
+    "operation_packets": 297,
+    "operationally_valid_arms": 99,
+    "portable_retained_artifacts": true,
+    "primary_margins": {
+      "history_carried": 1.0,
+      "hybrid": 0.0,
+      "state_carried": -1.0
+    },
+    "pure_closeout_sources": 4,
+    "response_packets": 27,
+    "save_load_reset_receipts": 99,
+    "state_intervention_packets": 6,
+    "supported_modes": [
+      "history_carried"
+    ],
+    "total_native_packets": 484
+  },
+  "process_counts": {
+    "closeout_PyGRC_imports_models_arms_responses": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "closeout_validation_processes_this_start": 1,
+    "corrected_closeout_processes": 1,
+    "original_reconstruction_processes": 1,
+    "replacement_campaign_parents": 1,
+    "replacement_child_processes": 99,
+    "replacement_child_retries": 0,
+    "replacement_fresh_models": 99
+  },
+  "status": "passed_owner_result_review_pending",
+  "terminal": {
+    "bounded_claim": "bounded P2-I2-grounded three-operation shared-pool composition candidate",
+    "classification": "supported_bounded_candidate",
+    "owner_acceptance_required": true,
+    "result_commit_authorized": false
+  }
+}

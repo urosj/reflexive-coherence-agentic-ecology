@@ -1,0 +1,42 @@
+{
+  "artifact_id": "P2-I2-I06A-REPLACEMENT-VALIDATION-AUTHORIZATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06A",
+  "lane_id": "AE01-L02",
+  "authorized_at": "2026-07-15",
+  "status": "active_single_replacement_start_authority",
+  "owner_direction": "i missed it. let's continue I06A",
+  "committed_checkpoint": "7761d3e49e2c9534edbc8c6f45509b9e8da20c5d",
+  "exact_inputs": {
+    "input_freeze_sha256": "86e7a0ce5be079edb0462d783a30cf50df96409137aac78c1d7d8c024090d414",
+    "policy_sha256": "ec25da968681f5256b4f3bb4e97aec3a7540b6a268784f133f5f68c2b1eb6ba6",
+    "failed_start_record_sha256": "4880d0292a353e16e6799221a8f591e189cfe2e774bf844dabd9aab382e636da",
+    "corrected_validator_sha256": "ff206d9cdd404294eaad2cb9e4d37f4ee3434332db2ca65bf6f7cc830480287e"
+  },
+  "command": {
+    "python": ".venv/bin/python",
+    "script": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06a_validate.py",
+    "arguments": [
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json"
+    ]
+  },
+  "authorization": {
+    "replacement_output_producing_starts": 1,
+    "infrastructure_retries": 0,
+    "failure_consumes_replacement_authority": true,
+    "output_must_be_absent_before_start": true,
+    "corrected_cardinality_assertion_only": true,
+    "PyGRC_imports": 0,
+    "PyGRC_model_instantiations": 0,
+    "baseline_validation_reruns": 0,
+    "candidate_or_control_operations": 0,
+    "scientific_result": false
+  },
+  "gate_effect": {
+    "REG_GATE_passed": false,
+    "I07_authorized": false,
+    "commit_authorized": false,
+    "owner_review_required_after_success": true
+  }
+}

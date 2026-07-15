@@ -1,0 +1,93 @@
+{
+  "artifact_id": "P2-I2-APP-A1-COMPLETE-VALIDATION",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "validated_at": "2026-07-15T00:00:00+02:00",
+  "status": "passed_review_ready_uncommitted",
+  "checks_passed": 53,
+  "checks_total": 53,
+  "failure_count": 0,
+  "failures": [],
+  "inputs": {
+    "execution_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-app-a2-execution-freeze.json",
+    "execution_freeze_sha256": "26579a0ed51761777d028e4209431f72ac1b7281b9ac6c5a5132a06d3844c9e5",
+    "cumulative_report_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-A1-source-delta-and-gate-authority-review.md",
+    "cumulative_report_sha256": "4a2a6d7ded80ff58682fc1ae754c9604e99d965fc4940b48627777ad6ea0289f",
+    "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_complete_validate.py",
+    "validator_sha256": "4a788f60cc10dcc131b1cb92d009e64923e3fe478cfe8b04c7d1fa9d4d0d2839",
+    "normalized_command": "env PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_complete_validate.py"
+  },
+  "attempt_ledger": {
+    "complete_validation_starts": 3,
+    "start_001": {
+      "status": "failed_pre_output_retention",
+      "checks_passed": 52,
+      "checks_total": 53,
+      "failure": "base_static_validation",
+      "classification": "validator_expected_status_lexeme_mismatch",
+      "observed_retained_status": "passed_before_any_model_construction",
+      "expected_by_start_001": "passed",
+      "pygrc_imports": 0,
+      "models_constructed": 0,
+      "app_a2_arms_executed": 0
+    },
+    "start_002": {
+      "status": "passed",
+      "checks_passed": 53,
+      "checks_total": 53,
+      "failure_count": 0,
+      "failures": [],
+      "pygrc_imports": 0,
+      "models_constructed": 0,
+      "app_a2_arms_executed": 0,
+      "scientific_gate_signatures_evaluated": 0
+    },
+    "start_003": {
+      "status": "passed_after_cumulative_report_accuracy_correction",
+      "checks_passed": 53,
+      "checks_total": 53,
+      "failure_count": 0,
+      "failures": [],
+      "correction": "Replace an unsupported phrase claiming order independence with the conformance-demonstrated label-permutation invariance; no runtime or frozen authority changed.",
+      "pygrc_imports": 0,
+      "models_constructed": 0,
+      "app_a2_arms_executed": 0,
+      "scientific_gate_signatures_evaluated": 0
+    },
+    "correction_scope": "Only recognize the exact retained successful base-validation status lexeme; no input, scientific, runtime, gate, or acceptance rule changed."
+  },
+  "validated_groups": {
+    "source_and_transportability": "passed",
+    "accepted_live_domain_authority": "passed",
+    "base_fixture_gate_control_freeze": "passed",
+    "consumed_failed_start_and_same_iteration_correction": "passed",
+    "corrected_freeze_and_authority_hashes": "passed",
+    "29_of_29_runtime_conformance": "passed",
+    "byte_identical_reconstruction": "passed",
+    "packet_ledger_rebase_receipt": "passed",
+    "save_load_continuation_and_reset": "passed",
+    "19_arm_future_registry_and_intervention_targets": "passed",
+    "fresh_process_cross_arm_isolation_contract": "passed",
+    "inactive_app_a2_execution_and_interpretation_contract": "passed",
+    "zero_app_a2_scientific_activity": "passed",
+    "portable_paths_and_checkout_only_binding": "passed",
+    "graph_clean_and_read_only": "passed"
+  },
+  "current_authority": {
+    "app_a1_review_ready": true,
+    "app_a1_accepted": false,
+    "commit_authorized": false,
+    "app_a2_authorized": false,
+    "scientific_runtime_authorized": false,
+    "appendix_result_assigned": false
+  },
+  "execution_counts": {
+    "original_candidate_free_failed_starts": 1,
+    "corrected_candidate_free_replacement_starts": 1,
+    "candidate_free_reconstruction_starts": 1,
+    "app_a2_campaign_starts": 0,
+    "app_a2_arm_starts": 0,
+    "scientific_gate_signature_evaluations": 0
+  },
+  "disposition": "Complete APP-A1 package is review-ready and uncommitted. APP-A2 remains inactive pending explicit owner acceptance and retention."
+}

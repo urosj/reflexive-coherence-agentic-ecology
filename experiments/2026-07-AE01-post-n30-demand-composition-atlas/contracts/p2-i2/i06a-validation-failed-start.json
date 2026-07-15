@@ -1,0 +1,80 @@
+{
+  "artifact_id": "P2-I2-I06A-VALIDATION-FAILED-START",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06A",
+  "lane_id": "AE01-L02",
+  "observed_at": "2026-07-15",
+  "status": "failed_closed_before_output",
+  "invocation": {
+    "python": ".venv/bin/python",
+    "script": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06a_validate.py",
+    "output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json",
+    "attempt_index": 1,
+    "output_created": false
+  },
+  "exact_attempt_inputs": {
+    "input_freeze_sha256": "86e7a0ce5be079edb0462d783a30cf50df96409137aac78c1d7d8c024090d414",
+    "policy_sha256": "ec25da968681f5256b4f3bb4e97aec3a7540b6a268784f133f5f68c2b1eb6ba6",
+    "validator_sha256": "5eca993773ed338258f089a63e011d095ad9b85b1afe67ed13922cbbef8e745e"
+  },
+  "failure": {
+    "exception_class": "AssertionError",
+    "message": "retry identity incomplete",
+    "location": "_retry_validation",
+    "cause": "The frozen retry policy correctly contains six byte-identical input classes, while the authored validator asserted a cardinality of seven.",
+    "scientific_or_registration_design_defect": false,
+    "output_or_evidence_interpretable": false
+  },
+  "completed_before_failure_without_retained_validation_output": [
+    "exact input hash checks",
+    "I03 AdapterV1 runtime-authority linkage",
+    "AdapterV1/V2 inheritance and normalized AST proof",
+    "nine pure adapter cases using fake packet-interface doubles",
+    "tolerance-domain arithmetic",
+    "diversion and H_P admission checks",
+    "positive mode-isolation checks"
+  ],
+  "not_reached": [
+    "validator transition reconstruction",
+    "historical manifest and retained-validation provenance checks",
+    "14-check result assembly",
+    "validation output write or readback"
+  ],
+  "process_accounting": {
+    "prevalidation_syntax_json_starts": 1,
+    "failed_output_intended_validation_starts": 1,
+    "validation_outputs": 0,
+    "infrastructure_retries": 0,
+    "pure_fake_native_instances": 8,
+    "PyGRC_imports": 0,
+    "PyGRC_model_instantiations": 0,
+    "baseline_validation_reruns": 0,
+    "candidate_or_control_operations": 0,
+    "active_history_candidate_admissions": 0,
+    "response_evaluations": 0,
+    "comparator_or_scientific_windows": 0
+  },
+  "authority_effect": {
+    "original_start_consumed": true,
+    "retry_authorized": false,
+    "replacement_start_authorized": false,
+    "REG_GATE_passed": false,
+    "I07_authorized": false,
+    "commit_authorized": false,
+    "owner_direction_required": true
+  },
+  "corrected_unexecuted_candidate": {
+    "validator_sha256": "ff206d9cdd404294eaad2cb9e4d37f4ee3434332db2ca65bf6f7cc830480287e",
+    "correction_scope": "Change only the byte-identical retry-input cardinality assertion from seven to the frozen policy's actual six classes; update future retained process accounting to preserve the failed start separately from a replacement start.",
+    "policy_changed": false,
+    "proof_or_validation_executed_after_correction": false,
+    "replacement_start_authorized": false
+  },
+  "subsequent_owner_direction": {
+    "direction": "commit it",
+    "checkpoint_commit_authorized": true,
+    "replacement_validation_start_authorized": false,
+    "REG_GATE_passed": false,
+    "I07_authorized": false
+  }
+}

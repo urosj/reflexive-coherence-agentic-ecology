@@ -1,0 +1,118 @@
+{
+  "artifact_id": "P2-I2-I08A-C02-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "cycle_id": "P2-I2-C02",
+  "status": "frozen_candidate_free_validation_input",
+  "parent_authority": {
+    "RCAE_parent_commit": "c265279b2690fbd262e59248b0d84bfa3dc81ba1",
+    "decision_id": "DEC-050",
+    "change_id": "CHG-047",
+    "owner_direction_verbatim": "there is no need for 512MiB space limit on 128GB RAM machine",
+    "interpretation": "retain C01 as bounded incomplete and construct C02 without an RLIMIT_AS cap; retain runtime and file-size ceilings and add external native-exit receipt ownership"
+  },
+  "scope": {
+    "scientific_projection_change_count": 0,
+    "C01_claim_mutation_authorized": false,
+    "C01_retry_authorized": false,
+    "C02_candidate_execution_authorized": false,
+    "C02_activation_authorized": false,
+    "commit_authorized": false,
+    "allowed": [
+      "exact C01-to-C02 cycle and governed-path projection",
+      "remove only the worker address-space cap",
+      "retain the 180-second worker runtime ceiling",
+      "retain the 512-MiB governed file-size ceiling",
+      "external supervisor ownership of permanent claim and terminal receipt",
+      "candidate-free source, contract, and child-process conformance validation"
+    ],
+    "forbidden": [
+      "PyGRC import",
+      "model or adapter construction",
+      "candidate or control operation",
+      "scientific response window",
+      "C01 retry",
+      "C02 activation",
+      "C02 entry execution",
+      "scientific interpretation",
+      "commit"
+    ]
+  },
+  "frozen_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json",
+      "role": "accepted_C01_exact_scientific_matrix",
+      "sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/owner-accepted-execution-authorization.json",
+      "role": "accepted_C01_activation_history",
+      "sha256": "f46ebd323499423715107c3b337963c3787404ed257c56be880808617cb09cc3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i08-entry-001-native-termination-audit.json",
+      "role": "C01_bounded_incomplete_audit",
+      "sha256": "b6f556ce25f2560dd74e20778b7e946b52e7ab51b1072e79fe196e507daeb175"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+      "role": "permanent_C01_entry_001_claim",
+      "sha256": "faa37843dea342b0760dd90200f6ec8fa5dfb0fbfd4567bb798c22f8fa10b72f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c02_execution_policy.json",
+      "role": "inactive_C02_successor_policy",
+      "sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
+      "role": "C02_external_supervisor_and_worker_source",
+      "sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py",
+      "role": "C02_candidate_free_focused_tests",
+      "sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_validate.py",
+      "role": "I08A_candidate_free_validator",
+      "sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c"
+    }
+  ],
+  "runtime_identity": {
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "runtime_source_relative": "src/pygrc/models/lgrc_9_v3_runtime.py",
+    "runtime_source_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+    "interpreter_command": ".venv/bin/python",
+    "interpreter_flags": [
+      "-B"
+    ],
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "persisted_absolute_paths_permitted": false
+  },
+  "process_budget": {
+    "top_level_python_starts": 3,
+    "top_level_sequence": [
+      "C02 inactive-freeze construction",
+      "eight focused candidate-free pytest cases",
+      "I08A final candidate-free validator"
+    ],
+    "test_child_python_starts": 2,
+    "test_child_sequence": [
+      "native exit without child attestation",
+      "successful child envelope attestation"
+    ],
+    "infrastructure_retries": 0,
+    "failed_top_level_disposition": "stop_without_retry"
+  },
+  "expected_candidate_free_outputs": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-binding-receipt.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/exec-freeze.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-focused-tests-receipt.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-candidate-free-validation.json"
+  ],
+  "return_disposition": "uncommitted_for_owner_review"
+}

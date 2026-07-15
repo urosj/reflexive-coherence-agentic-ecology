@@ -1,0 +1,86 @@
+{
+  "artifact_id": "P2-I2-I09-CONTROL-RESOLUTION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I09",
+  "lane_id": "AE01-L02",
+  "status": "inputs_frozen_before_index_construction",
+  "entry_authority": {
+    "accepted_i08_commit": "625a41186cc1b30e1f180ceefbce385618295026",
+    "owner_direction": "I09 is next"
+  },
+  "input_artifacts": [
+    {"role": "state_realization", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json", "sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473"},
+    {"role": "history_realization", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json", "sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d"},
+    {"role": "hybrid_realization", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json", "sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8"},
+    {"role": "analysis_policy", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json", "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"},
+    {"role": "i04r2_machine_authority", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json", "sha256": "b8955378506e079f5a9e3299b803da7e376f53c2fa2df34c95bba163289bd8c0"},
+    {"role": "i04r2_owner_acceptance", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json", "sha256": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf"},
+    {"role": "exact_registration", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json", "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"},
+    {"role": "lane_control_template", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-control-resolution-index-template.json", "sha256": "b5a307e84e38ac0be1c7b7736a32d7681f39ffcfa6d3c22f318076f074145e18"},
+    {"role": "direct_controller_registration_overlay", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json", "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"},
+    {"role": "run_matrix", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json", "sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103"},
+    {"role": "execution_manifest", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json", "sha256": "d84935e75f75211aee03a8b62afc68dd37725b101ec3aedd117747f970487f3a"},
+    {"role": "c01_bounded_incomplete_audit", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i08-entry-001-native-termination-audit.json", "sha256": "b6f556ce25f2560dd74e20778b7e946b52e7ab51b1072e79fe196e507daeb175"},
+    {"role": "program_control_register", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/control-and-failure-register.md", "sha256": "a32f8f879280be222ae6d3c92a8b54d3d8a44b5696b76a34c38541768a55d2e3"},
+    {"role": "post_r3_discriminator", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/post-r3-ecology-discriminator-amendment.md", "sha256": "173aff056fd1738d82cca82ca2892192f74e36791ff87a649976f13fa4b700b2"},
+    {"role": "accepted_brief", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md", "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f"},
+    {"role": "r3_representation_requirement", "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/R3-contract-adequacy-review.md", "sha256": "9358f2903083dd95cc55a8b08b486861aebde52e6200b23038bbafb7120129bb"}
+  ],
+  "frozen_counts": {
+    "modes": 3,
+    "program_common_controls": 19,
+    "common_comparison_rules_per_mode": 9,
+    "mode_specific_comparison_rules": {"state_carried": 3, "history_carried": 3, "hybrid": 5},
+    "lane_controls_per_mode": 5,
+    "matrix_entries": 234,
+    "seeds": [101, 211, 307]
+  },
+  "allowed_resolution_stages": ["registration_guard", "execution_comparison", "terminal_interpretation"],
+  "allowed_dispositions": ["pass", "ambiguous", "fail", "not_applicable", "blocked", "not_run"],
+  "resolution_semantics": {
+    "pass": "retained evidence satisfies the frozen control rule; it does not imply a positive primary margin, an assigned boundary rung, mode preference, or lane support",
+    "raw_visibility": "complete uncontaminated retention passes the control even when the retained value is zero or scientifically non-gating",
+    "causal_chain_derived": "receipt-derived causal eligibility or exclusion controls the disposition; numerical equality or inequality alone cannot",
+    "seed_variation": "a matched configuration varying across registered seeds is ambiguous unless the frozen rule independently classifies it as fail",
+    "missing_or_invalid": "any missing branch, invalid window, identity mismatch, or nonevaluable terminal blocks the affected control",
+    "terminal_guard": "program-common terminal/report guards are resolved against the I09 artifact boundary and must be revalidated at I11"
+  },
+  "program_common_control_policy": [
+    {"control_id": "AE01-CTRL-01", "stage": "registration_guard", "predicate_ids": ["input_identities_exact", "conceptual_sources_not_runtime_evidence"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-02", "stage": "registration_guard", "predicate_ids": ["claim_boundary_safe"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-03", "stage": "registration_guard", "predicate_ids": ["claim_boundary_safe"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-04", "stage": "execution_comparison", "predicate_ids": ["common_carrier_controls_pass", "later_response_receipts_valid"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-05", "stage": "execution_comparison", "predicate_ids": ["private_partition_control_pass", "direct_controller_control_pass"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-06", "stage": "execution_comparison", "predicate_ids": ["label_invariance_pass", "carrier_intervention_pass"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-07", "stage": "registration_guard", "predicate_ids": ["claim_boundary_safe"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-08", "stage": "execution_comparison", "predicate_ids": ["producer_and_handoff_receipts_valid", "direct_controller_control_pass"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-09", "stage": "execution_comparison", "predicate_ids": ["budget_capacity_and_leakage_receipts_valid"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-10", "stage": "registration_guard", "predicate_ids": ["parent_claim_absent"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-11", "stage": "registration_guard", "predicate_ids": ["participant_carrier_roles_separate"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-12", "stage": "terminal_interpretation", "predicate_ids": ["claim_boundary_safe"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-13", "stage": "terminal_interpretation", "predicate_ids": ["selection_not_run"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-14", "stage": "terminal_interpretation", "predicate_ids": ["demand_not_substrate_evidence"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-15", "stage": "registration_guard", "predicate_ids": ["realization_class_explicit"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-16", "stage": "registration_guard", "predicate_ids": ["constructed_profile_complete"], "not_applicable_modes": ["state_carried"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-17", "stage": "execution_comparison", "predicate_ids": ["live_runtime_receipts_valid", "manifest_complete"], "i11_revalidation": false},
+    {"control_id": "AE01-CTRL-18", "stage": "terminal_interpretation", "predicate_ids": ["domain_promotion_absent"], "i11_revalidation": true},
+    {"control_id": "AE01-CTRL-19", "stage": "execution_comparison", "predicate_ids": ["manifest_complete", "incomplete_predecessor_not_scientific_negative"], "i11_revalidation": true}
+  ],
+  "lane_control_rule_mapping": {
+    "AE01-L02-CTRL-01": ["each_original_source_alone", "symmetric_leave_one_common_carrier_admission"],
+    "AE01-L02-CTRL-02": ["pure_source_label_permutation", "contribution_operation_reassignment", "symmetric_leave_one_common_carrier_admission"],
+    "AE01-L02-CTRL-03": ["MODE_SPECIFIC_ALL"],
+    "AE01-L02-CTRL-04": ["private_partition_substitution", "direct_or_controller_substitution"],
+    "AE01-L02-CTRL-05": ["pool_write_diversion_or_freeze", "MODE_SPECIFIC_CARRIER_INTERVENTIONS"]
+  },
+  "execution_boundary": {
+    "pygrc_imports": 0,
+    "model_or_adapter_constructions": 0,
+    "candidate_or_control_invocations": 0,
+    "matrix_entry_regenerations": 0,
+    "scientific_interpretation": false,
+    "R01_through_R05_assignment": false,
+    "mode_ranking": false,
+    "schema_authority": false
+  }
+}

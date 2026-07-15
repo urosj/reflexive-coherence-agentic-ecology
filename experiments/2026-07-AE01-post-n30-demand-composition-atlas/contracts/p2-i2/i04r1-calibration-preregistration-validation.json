@@ -1,0 +1,676 @@
+{
+  "artifact_id": "P2-I2-I04R1-CALIBRATION-PREREGISTRATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "check_id": "I04R1V-01",
+      "evidence": {
+        "analysis_module": "1b4b8ccd3bea10e79ad17fdd9646d92c747ce5c3da20da96d72834ad300dbb4c",
+        "analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+        "calibration_entrypoint": "8228dc8a483a9c5b01cbb1c0f499797b35b8eb3bf17cf6781c112b289d8826bd",
+        "calibration_policy": "5eb921eeb49c0fb336b5176a98bfd615482b991293afbd579263a5275a8717ad",
+        "input": "8060d0476c02869ca5954be01b4e80ee9ca4e27f6438bbf22ea5d5a14be02c31",
+        "preregistration": "ddce7076c7170e38900197ca7bb0643d92305784daa523099041c9fc5a15d3a4",
+        "test": "a96a12654f90a1837fd3f0958d4d521870bd8f30ab2f5966c1735c7fd0429b0c"
+      },
+      "finding": "Every corrected freeze, policy, code, test, and preregistration identity matches.",
+      "name": "corrected_artifact_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-02",
+      "evidence": [
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-choice-resolution-input.json",
+          "sha256": "931bd8428a6e6fcda5ef97be04049f12aeb0dcbaddd331a5821562f81efdc5f4"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_analysis_policy.json",
+          "sha256": "9ab75a6f1bc7beef14165978789353b69d1ed38503f7a131fe60a6452114ecd5"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_calibration_policy.json",
+          "sha256": "e885837ced3b8818fe363381ec7b4d1968fcc6b0ec73946058663a787bd9424c"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_analysis.py",
+          "sha256": "bf2674af59dbfa05074aff28b99125e9bb1c333ecd199ee3e5d9c9ebdf766428"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+          "sha256": "05a62b434fcd54a208124feff4d8b9690fc771cd949063367a83b8db65f99a46"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration.json",
+          "sha256": "a12fc6899c45cc2568b82f6b69bc86f0df97963d2a8d636c8e65a68770ba3221"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04_validate.py",
+          "sha256": "c6a76225d539fb3d883002f4a2052e2438dee05275cb4705998d5423b52fc885"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration-validation.json",
+          "sha256": "6e46e640a68c71136deebe67eeb6970e13f73151c2fa7b91b1ce9ebd95e62444"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_analysis.py",
+          "sha256": "76ef526e133d9ae3a035ecca090d329eece9cd509c6d133b2134053596c63a04"
+        },
+        {
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I04-calibration-preregistration.md",
+          "sha256": "b1039cdae0b9c6dc764d03d5d3ef4ccbb9e75b1d408db0a20fb1465d855c32d4"
+        }
+      ],
+      "finding": "The original ten-artifact I04 package remains byte-exact history and cannot govern progression.",
+      "name": "historical_I04_retention",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-03",
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "modes": [
+          "state_carried",
+          "history_carried",
+          "hybrid"
+        ],
+        "rcae_commit": "6d0fdf8e7405b45cb509c5a0e323fa10149d2cf2",
+        "rcae_tree": "16aef10e5329124a5155a2ae3c4cf1ea93b7469a"
+      },
+      "finding": "The accepted RCAE/PyGRC baselines are exact and all three unranked modes remain retained.",
+      "name": "accepted_baseline_and_three_modes",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-04",
+      "evidence": {
+        "candidate_cell": "combined-orders",
+        "comparator_cell": "contributor-removal",
+        "comparator_id": "strongest_symmetric_leave_one_common_carrier_admission",
+        "derived_comparator": "maximum oriented response of both leave-one branches within mode, seed, and physical order",
+        "derived_primary_margins_per_mode": 6,
+        "expected_direction": "candidate_minus_strongest_leave_one_greater_than_zero_is_aligned",
+        "leave_one_branches": [
+          {
+            "branch_id": "q1_admitted_q2_diverted",
+            "common_carrier_content": "q1 only",
+            "matched_source_activity": "q2 source debit/activity preserved through matched inert-sink diversion"
+          },
+          {
+            "branch_id": "q2_admitted_q1_diverted",
+            "common_carrier_content": "q2 only",
+            "matched_source_activity": "q1 source debit/activity preserved through matched inert-sink diversion"
+          }
+        ],
+        "matching_duties": [
+          "q1 and q2 physical amount, type, event-relative timing, cost, and source debit",
+          "route class, latency, capacity, support, neutral contact, opportunity, response policy, and B baseline",
+          "only common-carrier admission versus matched inert-sink diversion differs"
+        ],
+        "metric_id": "combined_pool_history_normalized_margin",
+        "physical_order_strata": [
+          "q1_then_q2",
+          "q2_then_q1"
+        ],
+        "raw_retention": "candidate, both leave-one responses, selected maximum, and margin retained per mode/seed/order",
+        "reason": "fixed strongest-marginal comparison resolves source asymmetry, preserves both source activities, changes the mode-relevant carrier, and is not selected from observed effect size"
+      },
+      "finding": "The primary contrast changes the carrier, retains both symmetric leave-one arms, and uses a frozen strongest-marginal rule.",
+      "name": "carrier_changing_symmetric_primary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-05",
+      "evidence": {
+        "R03_effect": "numerical equivalence alone has none; full single-source explanation requires evidence that the actual candidate lacked two-source constitution or bypassed the common carrier",
+        "cell": "individual-contributions",
+        "diagnostic_id": "symmetric_quantity_matched_single_source_repetition",
+        "divergence_relation": "retained as a source-role/contribution-structure scope qualification and checked against carrier equality",
+        "equivalence_relation": "allowed and expected when the complete causal carrier is identical",
+        "not_primary_metric": true,
+        "physical_order_strata": [
+          "q1_then_q2",
+          "q2_then_q1"
+        ],
+        "preserve": [
+          "q1 and q2 amount, type, target-carrier operation, and physical order",
+          "total source-side cost/depletion, support, timing, opportunity, policy, and B baseline",
+          "complete mode-relevant carrier when source-role physics permits"
+        ],
+        "repeating_sources": [
+          "S1",
+          "S2"
+        ],
+        "required_branch_count_per_mode_seed": 4,
+        "source_symmetry_registration": "each source must independently emit both q operations with matched route class, cost, reserve, capacity, support, and eligibility"
+      },
+      "finding": "Repeated-S1 and repeated-S2 remain physical-order-indexed scope diagnostics; equivalence cannot fail R03.",
+      "name": "symmetric_nonfailing_scope_diagnostic",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-06",
+      "evidence": {
+        "causal_failure_separation": "not_top_aligned never by itself means mode_hypothesis_failed; carrier-chain and mandatory-control evidence decide causal failure",
+        "delta_name": "analysis_arithmetic_delta",
+        "delta_status": "pending_I05",
+        "mixed_direction": "at least one margin exceeds delta and at least one is below negative delta",
+        "narrow_aligned": "at least one margin exceeds delta, none is below negative delta, and not all exceed delta",
+        "narrow_counter": "at least one margin is below negative delta, none exceeds delta, and not all are below negative delta",
+        "not_applicable": "only by separately reviewed control rationale",
+        "order_conditioned_or_mixed": "at least one order has a resolved non-resolution relation and OP-08 passes while the other differs, is resolution-limited, or is counter-directional",
+        "per_mode_panel": "six margins retained as two separate per-order panels",
+        "per_order_seed_panel": "three margins within one mode and physical order",
+        "resolution_limited": "every absolute margin is at most delta",
+        "resolution_unknown": "delta unavailable or a required response operationally not evaluable",
+        "robust_aligned": "every margin exceeds delta",
+        "robust_counter": "every margin is below negative delta",
+        "top_aligned_signature": "both per-order panels are robust_aligned"
+      },
+      "finding": "A nonaligned history/hybrid order can retain an order-conditioned or mixed metric relation without automatic causal failure.",
+      "name": "order_conditioned_metric_separation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-07",
+      "evidence": {
+        "calibrates": [
+          "deterministic exact-rational parsing and float conversion",
+          "normalized-margin arithmetic",
+          "calibration-record serialization",
+          "byte reconstruction through the same pure entry point"
+        ],
+        "does_not_calibrate": [
+          "PyGRC floating-point execution",
+          "queue ordering or packet transport",
+          "B-coherence measurement noise",
+          "save/load/reset continuation",
+          "mode-specific arithmetic depth",
+          "runtime, restoration, or continuation equality tolerance"
+        ]
+      },
+      "finding": "The future I05 null calibrates only pure analysis arithmetic/serialization and explicitly excludes runtime/measurement tolerance.",
+      "name": "analysis_only_null_scope",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-08",
+      "evidence": {
+        "binary_safety_factor": 1024,
+        "failure_effect": "configuration cannot register; analysis-floor or response changes reopen I04/I05",
+        "packet_amount_rule": "r >= 1024*raw_floor and r >= 1024*max(ulp(B_before), ulp(B_before+r)) for every branch",
+        "raw_floor": 1e-12,
+        "roundtrip_rule": "B_before, r, and B_before+r finite and canonical-JSON round-trippable; recomputed gain positive",
+        "runtime_tolerance_rule": "every separately registered runtime/restoration/continuation tolerance is less than r/1024 and is never inferred from analysis_arithmetic_delta"
+      },
+      "finding": "I06 must reject response configurations outside the floor/ULP/roundtrip/separate-tolerance domain.",
+      "name": "I06_numeric_domain",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-09",
+      "evidence": {
+        "public_sources": [
+          {
+            "repository_id": "graph-reflexive-coherence",
+            "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+            "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+            "static_findings": [
+              "feedback-surface emission records live-state evidence and does not mutate coherence or enqueue work",
+              "produce_events schedules eligible work and does not process packet coherence changes",
+              "the feedback producer schedules exactly one departure event when eligible",
+              "step processes exactly one earliest deterministic queued event or returns an empty-queue result",
+              "arrival local update can schedule outbound routes, so B must have no causal flux route in the scientific window"
+            ],
+            "used_callables": [
+              "LGRC9V3.emit_feedback_eligibility_surface_row",
+              "LGRC9V3.produce_events",
+              "LGRC9V3.schedule_packet_departure",
+              "LGRC9V3.step"
+            ]
+          },
+          {
+            "repository_id": "graph-reflexive-coherence",
+            "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+            "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+            "static_findings": [
+              "departure debits the packet source and queues its arrival",
+              "arrival adds exactly packet.amount to the target coherence",
+              "with an initially empty queue and no other producers, two step calls process the response departure then arrival"
+            ],
+            "used_callables": [
+              "process_lgrc9v3_packet_departure",
+              "process_lgrc9v3_packet_arrival",
+              "process_lgrc9v3_next_packet_event"
+            ]
+          }
+        ],
+        "window": {
+          "feedback_surface_calls": 1,
+          "operation_slots": [
+            "capture_B_before_and_empty_queue_identities",
+            "emit_feedback_eligibility_surface_row_once",
+            "produce_feedback_eligibility_events_once",
+            "step_once",
+            "step_once",
+            "capture_B_after_queue_identities_and_event_lineage"
+          ],
+          "operational_exception_policy": "null response and operationally invalid; never scientific zero",
+          "outcome_independent_endpoint": true,
+          "producer_calls": 1,
+          "protocol_id": "p2-i2-native-response-window-v2",
+          "scheduled_step_kinds": [
+            "packet_departure",
+            "packet_arrival"
+          ],
+          "step_calls": 2,
+          "unscheduled_or_native_block_step_kinds": [
+            "event_queue_empty",
+            "event_queue_empty"
+          ]
+        }
+      },
+      "finding": "Exact admitted public-source semantics support one producer evaluation plus two fixed steps for every outcome.",
+      "name": "outcome_independent_native_window",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-10",
+      "evidence": {
+        "definition": "native B coherence after the fixed six-slot response protocol minus matched native B coherence before that protocol",
+        "direction": "higher_is_aligned",
+        "orientation_transform": "identity",
+        "purity_failure": "registration blocked; changing to packet-attributable or background-subtracted response reopens I04/I05",
+        "purity_postconditions": [
+          "packet and boundary-birth queues empty after the window",
+          "scheduled response has exactly one linked A-to-B departure and B arrival",
+          "unscheduled/native-block response has no response packet and no B change",
+          "no other event targets or changes B"
+        ],
+        "purity_preconditions": [
+          "packet and boundary-birth queues empty before the window",
+          "B distinct from B_ref and every response front-mask carrier",
+          "B baseline and response configuration exactly paired",
+          "B has no causal flux route, balancing operation, background update, or topology integration",
+          "neutral contact and M_H materialization complete before B_before"
+        ],
+        "response_id": "fixed_window_native_B_target_coherence_gain",
+        "scientific_no_response_value": 0.0,
+        "unit": "native_coherence_amount",
+        "value_semantics": "0 or one fixed registered response-packet amount; this measures native response scheduling-and-arrival occurrence rather than graded magnitude",
+        "window_protocol": {
+          "feedback_surface_calls": 1,
+          "operation_slots": [
+            "capture_B_before_and_empty_queue_identities",
+            "emit_feedback_eligibility_surface_row_once",
+            "produce_feedback_eligibility_events_once",
+            "step_once",
+            "step_once",
+            "capture_B_after_queue_identities_and_event_lineage"
+          ],
+          "operational_exception_policy": "null response and operationally invalid; never scientific zero",
+          "outcome_independent_endpoint": true,
+          "producer_calls": 1,
+          "protocol_id": "p2-i2-native-response-window-v2",
+          "scheduled_step_kinds": [
+            "packet_departure",
+            "packet_arrival"
+          ],
+          "step_calls": 2,
+          "unscheduled_or_native_block_step_kinds": [
+            "event_queue_empty",
+            "event_queue_empty"
+          ]
+        }
+      },
+      "finding": "B gain is a binary-like response occurrence measure and can register only when the response arrival is B's sole possible change.",
+      "name": "B_purity_and_binary_response",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-11",
+      "evidence": {
+        "analysis_entrypoint_accepts_exactly_one_mode": true,
+        "cross_mode_pooling_averaging_compensation_or_drop": false,
+        "independent_per_mode": [
+          "six primary margins and raw branches",
+          "quantity-matched scope diagnostic",
+          "control resolutions",
+          "metric relation",
+          "support disposition",
+          "R01-R05 disposition",
+          "completeness/blocker status"
+        ],
+        "shared_surfaces": [
+          "response unit",
+          "fixed-window protocol",
+          "orientation",
+          "response extraction",
+          "pure analysis implementation",
+          "analysis-arithmetic null identity"
+        ]
+      },
+      "finding": "Shared extraction identity does not pool, average, compensate, drop, or jointly verdict the three modes.",
+      "name": "per_mode_evidence_isolation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-12",
+      "evidence": {
+        "authored_summary_booleans_authoritative": false,
+        "candidate_requirements": [
+          "two distinct source-role arrivals target the registered common carrier",
+          "response front mask equals the registered mode-specific common carrier mask and excludes source roles/private cross-reads",
+          "native feedback producer record links to one A-to-B packet departure and arrival",
+          "RCAE/adapter response-phase calls contain no forbidden direct response or contributor-addressed read"
+        ],
+        "controller_exclusion": "recorded response-phase calls or inputs expose direct scheduling, contributor-slot reads, authored success, or controller aggregation",
+        "forbidden_response_phase_calls": [
+          "rcae.schedule_packet_departure",
+          "adapter.schedule_response",
+          "adapter.read_response_target",
+          "controller.read_contributor_slots",
+          "controller.author_success"
+        ],
+        "private_exclusion": "each legitimate response mask is contained in exactly one registered private partition; no mask spans partitions or common aggregate",
+        "required_identity_refs": [
+          "branch configuration SHA-256",
+          "runtime-binding receipt SHA-256",
+          "call-trace SHA-256"
+        ],
+        "schema_id": "p2-i2-causal-chain-evidence-v1"
+      },
+      "finding": "Candidate/private/controller status is derived from masks, arrivals, calls, packet lineage, configuration, and receipts\u2014not authored success booleans or output inequality.",
+      "name": "evidence_derived_causal_controls",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-13",
+      "evidence": {
+        "common": [
+          {
+            "cell": "individual-contributions",
+            "control_id": "each_original_source_alone",
+            "effect": "both marginal responses remain visible; neither may be silently promoted to the combined response",
+            "held_fixed": "opportunity, support, fixed response window, response policy, and the retained source's registered contribution operation",
+            "rule": "raw_visibility"
+          },
+          {
+            "cell": "contributor-removal",
+            "control_id": "pure_source_label_permutation",
+            "effect": "failure blocks attribution-only invariance and R04",
+            "held_fixed": "all contribution physics, causal carrier state/history, physical order, routes, support, opportunity, and response configuration",
+            "rule": "invariant"
+          },
+          {
+            "cell": "contributor-removal",
+            "control_id": "contribution_operation_reassignment",
+            "effect": "divergence is diagnostic and cannot be called label-control failure",
+            "held_fixed": "explicitly not a pure-label intervention; changed amount, location, timing, type, or route is retained",
+            "rule": "raw_visibility"
+          },
+          {
+            "cell": "contributor-removal",
+            "control_id": "symmetric_leave_one_common_carrier_admission",
+            "effect": "owns the corrected primary margin; a non-top metric relation is retained separately from carrier-chain or mode-hypothesis failure",
+            "held_fixed": "both source activities/debits, q1/q2 physics and physical order, route class, support, opportunity, response policy, and B baseline; one q is diverted to a matched inert sink in each symmetric arm",
+            "rule": "primary_relation"
+          },
+          {
+            "cell": "global-state-exclusion",
+            "control_id": "pool_write_diversion_or_freeze",
+            "effect": "failure to remove or change the candidate carrier relation blocks the affected R03/R04 causal claim",
+            "held_fixed": "source activity/debit, lineage, support, opportunity, and response configuration while common-carrier admission is prevented",
+            "rule": "different_unsigned"
+          },
+          {
+            "cell": "global-state-exclusion",
+            "control_id": "private_partition_substitution",
+            "effect": "a mask spanning private partitions or reading a common aggregate blocks R04",
+            "held_fixed": "marginal writes, route class, timing, support, and access opportunity; each legitimate private response mask remains within one partition",
+            "rule": "causal_chain_derived"
+          },
+          {
+            "cell": "global-state-exclusion",
+            "control_id": "direct_or_controller_substitution",
+            "effect": "forbidden scheduling, contributor-addressed read, or authored-success provenance excludes the branch even if outputs match or differ",
+            "held_fixed": "nearest output opportunity and complete raw response retention",
+            "rule": "causal_chain_derived"
+          },
+          {
+            "cell": "individual-contributions",
+            "control_id": "quantity_matched_single_source_repetition",
+            "effect": "carrier-matched equivalence is valid and cannot alone fail R03; divergence qualifies source-role/contribution scope",
+            "held_fixed": "q1/q2 physics and physical order, full carrier when source-role physics permits, total source cost/depletion, support, opportunity, response policy, and B baseline; repeated-S1 and repeated-S2 both retained",
+            "rule": "scope_diagnostic"
+          },
+          {
+            "cell": "access-capacity-contrast",
+            "control_id": "alternate_eligible_responder",
+            "effect": "pass permits bounded R05 access retention only",
+            "held_fixed": "common carrier, contributions, support, policy class, fixed response window, and non-private mask; responder role and registered reserve/route are the contrast",
+            "rule": "access_relation_retained"
+          }
+        ],
+        "mode_specific": {
+          "history_carried": [
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "active_history_order_reversal",
+              "relation": "equal marginal quantities with different ordered H_P produce different later responses",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "P_only_debit_with_H_P_M_H_fixed",
+              "relation": "P is excluded from the history-carried V path",
+              "rule": "invariant"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "H_P_reference_clamp_with_P_fixed",
+              "relation": "response tracks active H_P through native M_H",
+              "rule": "different_unsigned"
+            }
+          ],
+          "hybrid": [
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "complete_P_by_H_P_component_factorial",
+              "relation": "retain raw responses for candidate_P/candidate_H, reference_P/candidate_H, candidate_P/reference_H, and reference_P/reference_H with exact held-fixed component identities",
+              "rule": "raw_visibility"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "P_only_reference_intervention",
+              "relation": "full candidate differs from reference_P/candidate_H while H_P/M_H remains fixed",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "H_P_only_reference_intervention",
+              "relation": "full candidate differs from candidate_P/reference_H while P remains fixed",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "history_order_reversal_with_P_fixed",
+              "relation": "equal P with different active H_P/M_H changes the same native joint response",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "interaction_or_synergy",
+              "relation": "retain any interaction diagnostic but impose no nonlinearity, synergy, irreducibility, or superadditivity requirement",
+              "rule": "raw_visibility"
+            }
+          ],
+          "state_carried": [
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "equal_P_order_and_shuffle",
+              "relation": "responses are invariant when complete native P state is equal",
+              "rule": "invariant"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "post_write_P_debit",
+              "relation": "response tracks the intervened native P state",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "audit_history_only_change",
+              "relation": "audit order and lineage cannot enter V",
+              "rule": "invariant"
+            }
+          ]
+        }
+      },
+      "finding": "All nine common and 3/3/5 mode-specific controls retain exact machine rules; the two corrected common roles changed without losing any imported control.",
+      "name": "complete_machine_control_registry",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-14",
+      "evidence": {
+        "B_response": "pre-runtime contracts freeze native later A-to-B transition; public source shows arrival changes B",
+        "control_derivation": "accepted causal-factorization and mailbox/controller exclusions require evidence-linked paths",
+        "fixed_window": "public source shows producer scheduling plus one departure and one arrival event",
+        "physical_orders": "accepted history/hybrid causal contracts require order-sensitive carrier tests",
+        "primary_comparator": "accepted brief requires carrier-changing contributor/freeze controls and permits quantity-matched equivalence"
+      },
+      "finding": "Every corrected choice reconstructs from accepted theory, pre-runtime causal contracts, and admitted public-source semantics.",
+      "name": "pre_runtime_choice_rationale",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-15",
+      "evidence": {
+        "null_exact_rationals": [
+          "1/23",
+          "2/23",
+          "3/23",
+          "4/23",
+          "5/23",
+          "6/23",
+          "7/23",
+          "8/23",
+          "9/23",
+          "10/23"
+        ],
+        "source_count": 7
+      },
+      "finding": "All seven registered I03 sources reject exact null values, branch identities, conformance hashes, and observed outcomes as I04-R1 inputs.",
+      "name": "I03_fixture_quarantine",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-16",
+      "evidence": {
+        "analysis_imports": [
+          "__future__",
+          "ae01_tooling",
+          "collections",
+          "json",
+          "math",
+          "re",
+          "typing"
+        ],
+        "calibration_imports": [
+          "__future__",
+          "ae01_tooling",
+          "argparse",
+          "fractions",
+          "hashlib",
+          "json",
+          "p2_i2_i04r1_analysis",
+          "pathlib",
+          "sys",
+          "typing"
+        ]
+      },
+      "finding": "Corrected code has no PyGRC import/model and only defines\u2014not invokes during validation\u2014the future governed null builder.",
+      "name": "candidate_and_runtime_code_exclusion",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-17",
+      "evidence": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.002s\n\nOK",
+      "finding": "Fifteen candidate-free unit tests pass across comparator, diagnostic, window, isolation, control-rule, numeric-domain, and causal-chain corrections.",
+      "name": "focused_pure_analysis_tests",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-18",
+      "evidence": {
+        "I05_authorized_before_owner_review": false,
+        "I05_calibration_execution_freeze_present_at_freeze": false,
+        "PyGRC_model_instantiations_in_I04R1": 0,
+        "candidate_artifacts_present_at_freeze": false,
+        "candidate_execution_authorized": false,
+        "candidate_or_control_invocations_in_I04R1": 0,
+        "candidate_outcomes_present_at_freeze": false,
+        "graph_repository_mutations_in_I04R1": 0,
+        "matched_null_invocations_in_I04R1": 0,
+        "matched_null_record_present_at_freeze": false
+      },
+      "finding": "No null/runtime/candidate artifact exists; the future entry point remains mechanically closed until owner-accepted I04-R1 authority.",
+      "name": "zero_execution_and_mechanical_I05_gate",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04R1V-19",
+      "evidence": {
+        "does_not_authorize": [
+          "I06 registration",
+          "I07 candidate-cycle freeze",
+          "I08 candidate or control execution",
+          "R01-R05 assignment",
+          "L02 support or falsification",
+          "mode selection or ranking"
+        ],
+        "on_owner_acceptance": "authorize checklist- and hypothesis-first I05 matched-null execution only",
+        "owner_review_required": true,
+        "validation_target": "P2-I2-CAL-PRE-GATE"
+      },
+      "finding": "Validation can return only a corrected review-ready package; CAL-PRE, I05, registration, candidate execution, and scientific interpretation remain owner-gated.",
+      "name": "review_ready_gate_boundary",
+      "status": "passed"
+    }
+  ],
+  "disposition": "P2-I2-I04-REVIEW-READY_pending_owner_acceptance",
+  "evidence_effect": "candidate_free_correction_integrity_only",
+  "iteration_id": "P2-I2-I04R1",
+  "lane_id": "AE01-L02",
+  "status": "passed",
+  "summary": {
+    "PyGRC_model_instantiations": 0,
+    "candidate_or_control_invocations": 0,
+    "checks_failed": 0,
+    "checks_passed": 19,
+    "graph_mutations": 0,
+    "matched_null_invocations": 0,
+    "owner_gate_passed": false,
+    "pure_tests_passed": 15
+  },
+  "validated_at": "2026-07-14",
+  "validated_identities": {
+    "analysis_module": "1b4b8ccd3bea10e79ad17fdd9646d92c747ce5c3da20da96d72834ad300dbb4c",
+    "analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+    "calibration_entrypoint": "8228dc8a483a9c5b01cbb1c0f499797b35b8eb3bf17cf6781c112b289d8826bd",
+    "calibration_policy": "5eb921eeb49c0fb336b5176a98bfd615482b991293afbd579263a5275a8717ad",
+    "input": "8060d0476c02869ca5954be01b4e80ee9ca4e27f6438bbf22ea5d5a14be02c31",
+    "preregistration": "ddce7076c7170e38900197ca7bb0643d92305784daa523099041c9fc5a15d3a4",
+    "test": "a96a12654f90a1837fd3f0958d4d521870bd8f30ab2f5966c1735c7fd0429b0c"
+  },
+  "validator_sha256": "8e370d265652b7af6be861479758429ec6a29a0553b65f3a4d6ef33d4992bf0d",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "repository_relative_external_source_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "ba9e0bb8003f6f69ca21201db380de33f453f0f3a9c9107279413c798b73efa3"
+  }
+}

@@ -1,0 +1,1832 @@
+{
+  "artifact_id": "P2-I2-APP-B4-UNCHANGED-BASELINE-CAPABILITY-AUDIT",
+  "artifact_version": "1.0",
+  "authority_boundary": {
+    "commit_authorized": false,
+    "freeze_authorized": false,
+    "owner_choice_required": true,
+    "runtime_authorized": false
+  },
+  "canonical_payload_digest": "e0a997f5772406039876bfc9da38c5af929a89dcd875155f89f1a0344e9d132a",
+  "inputs": {
+    "app_b1_freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "sha256": "3e1f0c4bf0a8c8417f8e730c47c35ec1aaca11aa0e9bb76b3b87c2675656547e"
+    },
+    "registration": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    }
+  },
+  "owner_choice": {
+    "option_A": {
+      "arm_count": 75,
+      "description": "Freeze 24 feasible triples plus reference across three seeds",
+      "id": "unchanged_baseline_24_sequence_panel",
+      "tradeoff": "native and closest to APP-B2, but EEG/EEE/EEP remain operationally outside the tested domain"
+    },
+    "option_B": {
+      "description": "Add a frozen prehistory native P funding packet of 0.5625 to every arm, excluded from H_C, plus unfunded GEP anchors",
+      "id": "uniform_native_prefunding_full_27_sequence_panel",
+      "minimum_prefunding": 0.5625,
+      "prospective_arm_count_with_three_unfunded_GEP_anchors": 87,
+      "tradeoff": "complete sequence space, but adds a new scaffold and requires explicit inertness/admission controls"
+    },
+    "option_C": {
+      "arm_count": 84,
+      "description": "Retain all 27 triples but preregister EEG/EEE/EEP as operationally infeasible rather than scientific negatives",
+      "id": "accept_operationally_infeasible_rows_in_84_arm_registry",
+      "tradeoff": "preserves complete registry but cannot evaluate a complete three-token response landscape"
+    },
+    "selection_made": false
+  },
+  "process_counts": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "capability_audit_processes_this_start": 1,
+    "models": 0,
+    "producers": 0,
+    "responses": 0
+  },
+  "prospective_panel": {
+    "baseline_changed": false,
+    "complete_arm_count": 84,
+    "history_admission_changed": false,
+    "mode": "history_carried",
+    "operation_amounts_changed": false,
+    "ordered_triple_count": 27,
+    "reference_rows_per_seed": 1,
+    "seeds": [
+      101,
+      211,
+      307
+    ]
+  },
+  "quantity_and_order_structure": {
+    "GEP_native_total": 1.9375,
+    "cardinality_only_and_quantity_matched_simultaneously": false,
+    "exact_total_sequences": [
+      "GEP",
+      "GPE",
+      "EGP",
+      "EPG",
+      "PGE",
+      "PEG"
+    ],
+    "exact_total_sequences_are_only_GEP_permutations": true,
+    "repeated_operation_exact_total_sequence_exists": false
+  },
+  "status": "blocked_before_freeze_owner_choice_required",
+  "unchanged_baseline_audit": {
+    "all_sources_and_targets_inside_native_domain_for_feasible_sequences": true,
+    "feasible_sequence_count": 24,
+    "feasible_sequences": [
+      "GGG",
+      "GGE",
+      "GGP",
+      "GEG",
+      "GEE",
+      "GEP",
+      "GPG",
+      "GPE",
+      "GPP",
+      "EGG",
+      "EGE",
+      "EGP",
+      "EPG",
+      "EPE",
+      "EPP",
+      "PGG",
+      "PGE",
+      "PGP",
+      "PEG",
+      "PEE",
+      "PEP",
+      "PPG",
+      "PPE",
+      "PPP"
+    ],
+    "infeasible_reason": "second consecutive E requires 0.4375 from P after first E leaves 0.3125",
+    "infeasible_sequence_count": 3,
+    "infeasible_sequences": [
+      "EEG",
+      "EEE",
+      "EEP"
+    ],
+    "initial_coherence": {
+      "P": 0.75,
+      "S1": 7.5,
+      "S2": 7.5
+    },
+    "maximum_feasible_final_P": 3.375,
+    "maximum_feasible_history_readout": 1.326171875,
+    "native_closed_coherence_interval": [
+      0.0,
+      9.25
+    ],
+    "rows": [
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.625,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.947265625,
+        "native_amount_total": 1.875,
+        "operation_counts": {
+          "E": 0,
+          "G": 3,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GGG",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.0,
+            "target_before": 1.375,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 5.625,
+            "source_before": 6.25,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.625,
+            "target_before": 2.0,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "G",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 1.5625,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.759765625,
+        "native_amount_total": 1.6875,
+        "operation_counts": {
+          "E": 1,
+          "G": 2,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GGE",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.0,
+            "target_before": 1.375,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 1.5625,
+            "source_before": 2.0,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "G",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.875,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.197265625,
+        "native_amount_total": 2.125,
+        "operation_counts": {
+          "E": 0,
+          "G": 2,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GGP",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.0,
+            "target_before": 1.375,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.875,
+            "target_before": 2.0,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "G",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 1.5625,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.876953125,
+        "native_amount_total": 1.6875,
+        "operation_counts": {
+          "E": 1,
+          "G": 2,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GEG",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 1,
+            "source_after": 0.9375,
+            "source_before": 1.375,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.5625,
+            "target_before": 0.9375,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "E",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 0.5,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.689453125,
+        "native_amount_total": 1.5,
+        "operation_counts": {
+          "E": 2,
+          "G": 1,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GEE",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 1,
+            "source_after": 0.9375,
+            "source_before": 1.375,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 0.5,
+            "source_before": 0.9375,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.875,
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "E",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": true,
+        "final_P_if_feasible": 1.8125,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.126953125,
+        "native_amount_total": 1.9375,
+        "operation_counts": {
+          "E": 1,
+          "G": 1,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": true,
+        "sequence": "GEP",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 1,
+            "source_after": 0.9375,
+            "source_before": 1.375,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.8125,
+            "target_before": 0.9375,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "E",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.875,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.041015625,
+        "native_amount_total": 2.125,
+        "operation_counts": {
+          "E": 0,
+          "G": 2,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GPG",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.25,
+            "target_before": 1.375,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.875,
+            "target_before": 2.25,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "P",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": true,
+        "final_P_if_feasible": 1.8125,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.853515625,
+        "native_amount_total": 1.9375,
+        "operation_counts": {
+          "E": 1,
+          "G": 1,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": true,
+        "sequence": "GPE",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.25,
+            "target_before": 1.375,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 1.8125,
+            "source_before": 2.25,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "P",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 3.125,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.291015625,
+        "native_amount_total": 2.375,
+        "operation_counts": {
+          "E": 0,
+          "G": 1,
+          "P": 2
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "GPP",
+        "steps": [
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 0,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.375,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.25,
+            "target_before": 1.375,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 3.125,
+            "target_before": 2.25,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "G",
+          "P",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 1.5625,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.9208984375,
+        "native_amount_total": 1.6875,
+        "operation_counts": {
+          "E": 1,
+          "G": 2,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "EGG",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 0.9375,
+            "target_before": 0.3125,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.5625,
+            "target_before": 0.9375,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "G",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 0.5,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.7333984375,
+        "native_amount_total": 1.5,
+        "operation_counts": {
+          "E": 2,
+          "G": 1,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "EGE",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 0.9375,
+            "target_before": 0.3125,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 0.5,
+            "source_before": 0.9375,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.875,
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "G",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": true,
+        "final_P_if_feasible": 1.8125,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.1708984375,
+        "native_amount_total": 1.9375,
+        "operation_counts": {
+          "E": 1,
+          "G": 1,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": true,
+        "sequence": "EGP",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 0.9375,
+            "target_before": 0.3125,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.8125,
+            "target_before": 0.9375,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "G",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": null,
+        "first_failure": {
+          "operation": "E",
+          "required_amount": 0.4375,
+          "shortfall": 0.125,
+          "slot": 1,
+          "source_before": 0.3125,
+          "source_role": "P"
+        },
+        "history_readout_if_feasible": null,
+        "native_amount_total": 1.5,
+        "operation_counts": {
+          "E": 2,
+          "G": 1,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": false,
+        "same_total_as_GEP": false,
+        "sequence": "EEG",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "operation": "E",
+            "shortfall": 0.125,
+            "slot": 1,
+            "source_before": 0.3125,
+            "source_budget_sufficient": false,
+            "source_role": "P",
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "E",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": null,
+        "first_failure": {
+          "operation": "E",
+          "required_amount": 0.4375,
+          "shortfall": 0.125,
+          "slot": 1,
+          "source_before": 0.3125,
+          "source_role": "P"
+        },
+        "history_readout_if_feasible": null,
+        "native_amount_total": 1.3125,
+        "operation_counts": {
+          "E": 3,
+          "G": 0,
+          "P": 0
+        },
+        "operationally_feasible_unchanged_baseline": false,
+        "same_total_as_GEP": false,
+        "sequence": "EEE",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "operation": "E",
+            "shortfall": 0.125,
+            "slot": 1,
+            "source_before": 0.3125,
+            "source_budget_sufficient": false,
+            "source_role": "P",
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "E",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": null,
+        "first_failure": {
+          "operation": "E",
+          "required_amount": 0.4375,
+          "shortfall": 0.125,
+          "slot": 1,
+          "source_before": 0.3125,
+          "source_role": "P"
+        },
+        "history_readout_if_feasible": null,
+        "native_amount_total": 1.75,
+        "operation_counts": {
+          "E": 2,
+          "G": 0,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": false,
+        "same_total_as_GEP": false,
+        "sequence": "EEP",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "operation": "E",
+            "shortfall": 0.125,
+            "slot": 1,
+            "source_before": 0.3125,
+            "source_budget_sufficient": false,
+            "source_role": "P",
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "E",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": true,
+        "final_P_if_feasible": 1.8125,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.0146484375,
+        "native_amount_total": 1.9375,
+        "operation_counts": {
+          "E": 1,
+          "G": 1,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": true,
+        "sequence": "EPG",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.1875,
+            "target_before": 0.3125,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.8125,
+            "target_before": 1.1875,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "P",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 0.75,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.8271484375,
+        "native_amount_total": 1.75,
+        "operation_counts": {
+          "E": 2,
+          "G": 0,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "EPE",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.1875,
+            "target_before": 0.3125,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 0.75,
+            "source_before": 1.1875,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.875,
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "P",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.0625,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.2646484375,
+        "native_amount_total": 2.1875,
+        "operation_counts": {
+          "E": 1,
+          "G": 0,
+          "P": 2
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "EPP",
+        "steps": [
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 0,
+            "source_after": 0.3125,
+            "source_before": 0.75,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.1875,
+            "target_before": 0.3125,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.0625,
+            "target_before": 1.1875,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "E",
+          "P",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.875,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.982421875,
+        "native_amount_total": 2.125,
+        "operation_counts": {
+          "E": 0,
+          "G": 2,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PGG",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.25,
+            "target_before": 1.625,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.25,
+            "source_before": 6.875,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.875,
+            "target_before": 2.25,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "G",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": true,
+        "final_P_if_feasible": 1.8125,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.794921875,
+        "native_amount_total": 1.9375,
+        "operation_counts": {
+          "E": 1,
+          "G": 1,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": true,
+        "sequence": "PGE",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.25,
+            "target_before": 1.625,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 1.8125,
+            "source_before": 2.25,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "G",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 3.125,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.232421875,
+        "native_amount_total": 2.375,
+        "operation_counts": {
+          "E": 0,
+          "G": 1,
+          "P": 2
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PGP",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 1,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 2.25,
+            "target_before": 1.625,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 3.125,
+            "target_before": 2.25,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "G",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": true,
+        "final_P_if_feasible": 1.8125,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.912109375,
+        "native_amount_total": 1.9375,
+        "operation_counts": {
+          "E": 1,
+          "G": 1,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": true,
+        "sequence": "PEG",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 1,
+            "source_after": 1.1875,
+            "source_before": 1.625,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 1.8125,
+            "target_before": 1.1875,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "E",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 0.75,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.724609375,
+        "native_amount_total": 1.75,
+        "operation_counts": {
+          "E": 2,
+          "G": 0,
+          "P": 1
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PEE",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 1,
+            "source_after": 1.1875,
+            "source_before": 1.625,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 0.75,
+            "source_before": 1.1875,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.875,
+            "target_before": 0.4375,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "E",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.0625,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.162109375,
+        "native_amount_total": 2.1875,
+        "operation_counts": {
+          "E": 1,
+          "G": 0,
+          "P": 2
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PEP",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 1,
+            "source_after": 1.1875,
+            "source_before": 1.625,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.0625,
+            "target_before": 1.1875,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "E",
+          "P"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 3.125,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.076171875,
+        "native_amount_total": 2.375,
+        "operation_counts": {
+          "E": 0,
+          "G": 1,
+          "P": 2
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PPG",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.5,
+            "target_before": 1.625,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.625,
+            "edge_role": "S1_TO_P",
+            "native_domain_after": true,
+            "operation": "G",
+            "slot": 2,
+            "source_after": 6.875,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S1",
+            "target_after": 3.125,
+            "target_before": 2.5,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "P",
+          "G"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 2.0625,
+        "first_failure": null,
+        "history_readout_if_feasible": 0.888671875,
+        "native_amount_total": 2.1875,
+        "operation_counts": {
+          "E": 1,
+          "G": 0,
+          "P": 2
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PPE",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.5,
+            "target_before": 1.625,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.4375,
+            "edge_role": "P_TO_K_P",
+            "native_domain_after": true,
+            "operation": "E",
+            "slot": 2,
+            "source_after": 2.0625,
+            "source_before": 2.5,
+            "source_budget_sufficient": true,
+            "source_role": "P",
+            "target_after": 0.4375,
+            "target_before": 0.0,
+            "target_role": "K_P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "P",
+          "E"
+        ]
+      },
+      {
+        "all_three_operation_types_present": false,
+        "final_P_if_feasible": 3.375,
+        "first_failure": null,
+        "history_readout_if_feasible": 1.326171875,
+        "native_amount_total": 2.625,
+        "operation_counts": {
+          "E": 0,
+          "G": 0,
+          "P": 3
+        },
+        "operationally_feasible_unchanged_baseline": true,
+        "same_total_as_GEP": false,
+        "sequence": "PPP",
+        "steps": [
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 0,
+            "source_after": 6.625,
+            "source_before": 7.5,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 1.625,
+            "target_before": 0.75,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 1,
+            "source_after": 5.75,
+            "source_before": 6.625,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 2.5,
+            "target_before": 1.625,
+            "target_role": "P"
+          },
+          {
+            "amount": 0.875,
+            "edge_role": "S2_TO_P",
+            "native_domain_after": true,
+            "operation": "P",
+            "slot": 2,
+            "source_after": 4.875,
+            "source_before": 5.75,
+            "source_budget_sufficient": true,
+            "source_role": "S2",
+            "target_after": 3.375,
+            "target_before": 2.5,
+            "target_role": "P"
+          }
+        ],
+        "symbols": [
+          "P",
+          "P",
+          "P"
+        ]
+      }
+    ],
+    "shortfall_per_infeasible_sequence": 0.125
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "activity_id": "P2-I2-I05D-PERSISTED-PATH-PORTABILITY-AUDIT",
+  "artifact_id": "P2-I2-I05D-PORTABILITY-AUDIT-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "audit_baseline_commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+  "authority": {
+    "change_id": "P2-I2-CHG-025",
+    "decision_id": "P2-I2-DEC-032",
+    "owner_authorized": true,
+    "owner_direction": "absolute paths are never allowed; +1 on the P2-I2-wide audit/correction freeze"
+  },
+  "candidate_or_runtime_evidence_effect": "none",
+  "construction_static_scan_invocations": 2,
+  "correction_authorized": false,
+  "expected_output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05d-portability-audit.json",
+  "expected_scope_file_count": 135,
+  "governance_pre_scan_identities": {
+    "checklist_sha256": "6fd3581a5c19a3788b666c745b3efe372dc2b434edb58e0c8c0aa600851aa7b4",
+    "decision_record_sha256": "95a0f8c686cefbe34c246669ef4382e6e335da7cb2de1244e26a67740838f001",
+    "hypothesis_sha256": "1e00b91ed2100de823e4dd722db190a11e4195b12bf9de735388f073709a496e"
+  },
+  "historical_boundary": {
+    "forbidden_value_retention": "digest_and_length_only",
+    "history_rewrite_authorized": false,
+    "historical_identity_format": "commit_and_sha256_only"
+  },
+  "invocation_ceiling": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "max_static_scan_invocations": 3,
+    "null_builder_or_wrapper_invocations": 0,
+    "pygrc_model_instantiations": 0
+  },
+  "iteration_id": "P2-I2-I05D",
+  "lane_id": "AE01-L02",
+  "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05d_portability_audit_policy.json",
+  "policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+  "report_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05D-portability-audit.md",
+  "report_sha256": "3e973aef41cf115be0e45fa1c0ffe0eb0fb2004e05664a5d4b95c395cfdce2b3",
+  "result_status_ceiling": "P2-I2-I05D-PORTABILITY-AUDIT-REVIEW-READY",
+  "scanner_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05d_portability_audit.py",
+  "scanner_sha256": "aab820ffd7985d03412c6f1e5528ccc2eff72b9b8591eced12f39b020de29abc",
+  "retained_static_scan_invocations_authorized": 1
+}

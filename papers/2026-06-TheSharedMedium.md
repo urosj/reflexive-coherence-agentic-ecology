@@ -6,6 +6,12 @@
 **Purpose:** transition essay for readers moving from direct communication and message-passing models toward shared-medium participation, co-response, trace, resonance, and field-mediated coordination  
 **Scope:** theoretical transition and vocabulary bridge; no implementation claims  
 
+**Experimental bridge:** This paper remains conceptual. For the controlled
+theory-to-evidence method, see [Agentic Ecology: From Theory to Controlled
+Experiments](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
+For current bounded evidence, see the [AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
+
 Copyright © 2026 Uroš Jovanovič, CC BY-SA 4.0.
 
 ---
@@ -323,6 +329,15 @@ Two people in a city may never meet. Yet road geometry, law, price, weather, sch
 The medium carries relation before messages are exchanged.
 
 This does not mean that relation is vague. It means that relation is often written into geometry rather than transported as content.
+
+**Controlled evidence note — AE01:** P2-I1 tests a bounded version of this
+claim by making the same attributable shared history alter later formation
+possibility differently across matched susceptibilities. P2-I2 tests whether
+multiple contributions become one non-private state/history carrier on which a
+later response depends. Direct addressing, private storage, arbitrary labels,
+and controller-authored success are controlled alternatives rather than hidden
+inside the interpretation. See the [AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
 
 ---
 

@@ -1,0 +1,190 @@
+{
+  "activity_id": "P2-I2-I05G-THIRD-BOUNDED-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05G-PORTABILITY-CORRECTION-POLICY",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "owner_authorized_group": "i03_realization_and_conformance",
+    "parent_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "return_uncommitted_for_review": true
+  },
+  "baseline_audit": {
+    "affected_file_count": 30,
+    "audit_policy_sha256": "d6d54d52cd4bf7793a801ebb24fce7d26d77ce60d8ea6d9f68b774331bacbbee",
+    "correction_group": "i03_realization_and_conformance",
+    "result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "violation_count": 201
+  },
+  "correction_scope": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-environment-receipt.json",
+      "source_sha256": "9c03de03258790d5781e506764348fb08a9893269bfbb05013b4e2d7bdcc1fe0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json",
+      "source_sha256": "d21cc390ab6655ce98c7dbf6827a73d9b3d537c9d90cb98b81f8e2da510a1d94"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+      "source_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json",
+      "source_sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json",
+      "source_sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-environment-receipt.json",
+      "source_sha256": "e2c8d84c8f50a35c4a017234ad81d47f5f27552d5739d0745b67240560952b6f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-freeze-input.json",
+      "source_sha256": "1d1ab37502b9138c5c98b3048bd854ac7ed17d5775c9fd34ad8475608a0bcc7f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json",
+      "source_sha256": "dd0146f656f3f480d5ff3265696cacf39322fa5fe13991aed822614eee217720"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+      "source_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-runtime-reconstruction-receipt.json",
+      "source_sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation-input.json",
+      "source_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-environment-receipt.json",
+      "source_sha256": "2375d0167bc3ab4c3ff175b0083a2df4f97099b5bdcde6e17b0efe86b20849ff"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-freeze-input.json",
+      "source_sha256": "1d69dedf481aba2ad996388d35e03e65e7a7e5cc39276feaf8d92b730208c353"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json",
+      "source_sha256": "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+      "source_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-runtime-reconstruction-receipt.json",
+      "source_sha256": "a81a119d9f5efbf50e543efbbe5b7c85b013f8b9c36015fdf4050f1069936516"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-closeout-revalidation-input.json",
+      "source_sha256": "81e8b72be0df84cc757e2ff2d1b0dc398daabef4a8422de3b525897d19ff1dba"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-index.json",
+      "source_sha256": "f9c8591a9d3c30a90097548b359e399b3a9e73b01f06ea7cd63d5971ceeb3fa6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-input.json",
+      "source_sha256": "0593c7821370ce138db4fba9bbbc5fd0bbd50f88788e22618acb6b421b2401e3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-validation.json",
+      "source_sha256": "44b2db8e49b603ddd2b59f3e5bc2f367708b5b93b8b1e9e19e5b8c062cb93c9e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03AR1-state-carried-runtime-conformance.md",
+      "source_sha256": "3806791733b1170116eb3020701d0dc2151b4151b19f73d3bf961cb2c79410b8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03a_validate.py",
+      "source_sha256": "4e84a78eefe72daa6bcd8acab04765dec96189df68e5bbcec18e6ecc4d0153e1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py",
+      "source_sha256": "616fd3b9c6a884ca785f60c075505e808c564f8975e3791fb21241f250024060"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
+      "source_sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_validate.py",
+      "source_sha256": "9f8fb8404c739f7fc8e50c40abde718af6450bb6e2e1ea32f6e7d038e541593d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03br1_validate.py",
+      "source_sha256": "04012330987d4c4b0f2676b33f18f526ae82125bc58cd5663d37bfe131a5ea42"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py",
+      "source_sha256": "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_validate.py",
+      "source_sha256": "df31dbe76fc53146d6b165a8d76ceee4c0363ec5a01c98e713936252ca1a94bb"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03cr1_validate.py",
+      "source_sha256": "6ea869b440f5a9102685a55e524ec976046d764570ee9d5ea512446016d5423e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03f_validate.py",
+      "source_sha256": "9bcc9e1cddd0844b8415f77399df6204e17f3dbe0170a8d88003beaf211e2a21"
+    }
+  ],
+  "historical_authority": {
+    "history_rewrite_authorized": false,
+    "raw_I03_evidence_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "representation": "commit_and_sha256_only",
+    "current_projection_source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50"
+  },
+  "immutable_semantics": [
+    "accepted state-carried history-carried and hybrid realization classes",
+    "all I03 causal factorization carrier intervention and private-partition meanings",
+    "native versus producer boundary for each retained mode",
+    "restoration identity and continuation evidence meanings",
+    "raw conformance assertion counts branch outcomes and byte-reconstruction facts",
+    "I03 evidence quarantine from calibration registration and scientific claims",
+    "I03F family composition and all nine operational-profile targets",
+    "passed discriminator gate and every later gate boundary"
+  ],
+  "invocation_ceiling_after_freeze": {
+    "calibration_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "I05G_validator_entrypoint_starts": 3,
+    "null_or_one_shot_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_model_instantiations": 0
+  },
+  "projection_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05g-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05G-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05g-portability-correction-validation.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05g_validate.py"
+  },
+  "scope_resolution_history": {
+    "affected_file_edits": 0,
+    "read_only_non_python_command_count": 8,
+    "resolved_before_policy_freeze": true,
+    "runtime_or_scientific_operations": 0
+  },
+  "transformation_rules": {
+    "attachment_identity": "replace machine-local owner-review locations with stable attachment ID relative artifact name and unchanged digest",
+    "command_identity": "replace checkout-root and temporary-output tokens inside historical command strings with repository-relative or explicit logical tokens; label projected commands non-executable",
+    "environment_identity": "replace resolved interpreter prefix base-prefix graph checkout import and pythonpath locations with repository-relative or logical identities while retaining version revision and digests",
+    "external_repository_identity": "replace graph checkout locations with repository_id graph-reflexive-coherence plus source-relative paths and unchanged revision or digest",
+    "historical_bytes": "retain every raw source byte at commit 99c64dd and never substitute projection hashes into raw receipts",
+    "json_pointer_identity": "replace slash-leading JSON-pointer strings with structured ordered segment arrays and prove identical target resolution",
+    "projection_label": "every changed JSON declares source commit source digest DEC-037 CHG-030 and zero scientific change",
+    "report_projection": "replace only machine-local command or location representation and append historical projection lineage",
+    "script_entry": "remove machine-selecting shebangs and require invocation through .venv/bin/python",
+    "script_path_resolution": "derive RCAE and sibling graph roots from __file__ and serialize only repository-relative or logical environment source and temporary identities"
+  }
+}

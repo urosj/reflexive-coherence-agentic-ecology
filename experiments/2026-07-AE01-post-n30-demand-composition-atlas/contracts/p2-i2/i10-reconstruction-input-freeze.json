@@ -1,0 +1,299 @@
+{
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I10",
+  "lane_id": "AE01-L02",
+  "status": "frozen_before_governed_start",
+  "entry_authority": {
+    "accepted_i09_commit": "cfa19fe66118ad949fa914e0988c6652079d2d54",
+    "decision_id": "P2-I2-DEC-055",
+    "owner_direction": "I'd do I10 next"
+  },
+  "accepted_lineage_commits": {
+    "i05_metric_closeout": "3be90739990d32af6cd2c9f1f07d2ef735ff3a2f",
+    "i06_registration_closeout": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+    "i06b_i07_checkpoint": "5c2c248647e78526474210649c0a7ba84fcef13d",
+    "i08_execution_closeout": "625a41186cc1b30e1f180ceefbce385618295026",
+    "i09_control_closeout": "cfa19fe66118ad949fa914e0988c6652079d2d54"
+  },
+  "retained_byte_authority": {
+    "commit": "cfa19fe66118ad949fa914e0988c6652079d2d54",
+    "rule": "every frozen input path must equal its retained byte at this commit and its listed SHA-256"
+  },
+  "input_artifacts": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_analysis_policy.json",
+      "role": "accepted_primary_analysis_policy",
+      "sha256": "9ab75a6f1bc7beef14165978789353b69d1ed38503f7a131fe60a6452114ecd5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+      "role": "accepted_i04r2_estimator_parent_policy",
+      "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+      "role": "accepted_i04r2_machine_estimator_policy",
+      "sha256": "079ba0be50946199a90201eb57cf79e19fb1faf53aa665437752d376a1ebe11c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/ae01_tooling.py",
+      "role": "accepted_analysis_tooling",
+      "sha256": "cccd88393a31ba98781d4cbc3d5674283969e476ad43763d34e4442cf3d334c8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_analysis.py",
+      "role": "accepted_i04r2_estimator_parent_source",
+      "sha256": "1b4b8ccd3bea10e79ad17fdd9646d92c747ce5c3da20da96d72834ad300dbb4c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+      "role": "accepted_i04r2_estimator_source",
+      "sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05j_metric_closeout_policy.json",
+      "role": "accepted_calibration_closeout_policy",
+      "sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-analysis-arithmetic-resolution-input.json",
+      "role": "retained_calibration_projection_input",
+      "sha256": "8aeb478a65879a4000d37cc05539d5552daf91000b4b355aae832ba8e5d5e26a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-input-freeze.json",
+      "role": "accepted_calibration_input_freeze",
+      "sha256": "c5fdf5e65b65c1f162f3baf414d4c6d562d10a54b2d19726cb4ba72c6b0bcc74"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-validation.json",
+      "role": "accepted_calibration_validation",
+      "sha256": "23d389ad765201ceefa329836aad8b45bb6619006abef514030464970f3ae091"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-process-and-projection-closeout.json",
+      "role": "accepted_calibration_process_closeout",
+      "sha256": "de43ee9fa0b33722ac1e0a94e3ee5c1dcfc17e427bbdd26d744fd82672dfc548"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+      "role": "accepted_metric_calibration",
+      "sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+      "role": "accepted_frozen_metric_sheet",
+      "sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05J-metric-closeout.md",
+      "role": "accepted_calibration_report",
+      "sha256": "005f550b9975c58482eac7e2eb11fab730ebd18ec1be4cb3d555ac3a82f7c5d7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json",
+      "role": "retained_governed_arithmetic_null_output",
+      "sha256": "87a3635324a4ccccd983d0c33db8e7dba3e4c958396252b6edda7c56ea6eba2d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/i05b-attempt-claim.json",
+      "role": "retained_governed_arithmetic_null_claim",
+      "sha256": "7e6d37ae6281e6f7c305a332a082b9bfcf1254f8acba8815da8b48b0cfc76109"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/i05b-final-receipt.json",
+      "role": "retained_governed_arithmetic_null_final_receipt",
+      "sha256": "1f1694b96f22cde12b54a2e0c00ce76b58f2fdf2fc7cff1114bcc46b9a3396be"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/schemas/ae01-contract.schema.json",
+      "role": "accepted_persisted_record_schema",
+      "sha256": "eb5612c5bdbda8f8393f826d9af1b89478c4291d3e2b72279645d0226862d074"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-input-freeze.json",
+      "role": "accepted_registration_input_freeze",
+      "sha256": "b198fa71f312a43ef9df2a706cef19c00d8916c078912a6dbea6f8566d79e8bf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "role": "accepted_exact_registration",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-control-resolution-index-template.json",
+      "role": "accepted_lane_control_template",
+      "sha256": "b5a307e84e38ac0be1c7b7736a32d7681f39ffcfa6d3c22f318076f074145e18"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json",
+      "role": "accepted_registration_resolved_manifest",
+      "sha256": "83f2889ebd7b83f65a3a194065f07f0cb850c8a779fc50d75ceaec60a1bc6eaf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+      "role": "accepted_registration_validation",
+      "sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json",
+      "role": "accepted_registration_review_validation",
+      "sha256": "aca1815418e18254cd63d4b78d56033090b1f7e22eaae16189d63151d99fa26d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+      "role": "accepted_registration_execution_overlay",
+      "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-manifest.json",
+      "role": "accepted_registration_execution_manifest",
+      "sha256": "9bf6bf64d2072cb96b0ea2bb9fb58fc169bd821480b1a10a06c07e3979379323"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py",
+      "role": "accepted_registration_builder",
+      "sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+      "role": "accepted_history_adapter",
+      "sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06-exact-registration.md",
+      "role": "accepted_registration_report",
+      "sha256": "339dbb1fb856bf9649bcbdb30f6d65c1cf42802b273fa55d4122b4b71c4851e0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06B-execution-readiness-correction.md",
+      "role": "accepted_registration_overlay_report",
+      "sha256": "e28391e50df71e9b4f4018c9d8a23ca49f46949702750eec738885d4abd841ef"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c02_execution_policy.json",
+      "role": "accepted_execution_policy",
+      "sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json",
+      "role": "accepted_execution_matrix",
+      "sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json",
+      "role": "accepted_execution_manifest",
+      "sha256": "d84935e75f75211aee03a8b62afc68dd37725b101ec3aedd117747f970487f3a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
+      "role": "accepted_execution_builder",
+      "sha256": "f316c5c9f90037b2a8a8fb79a677640d0ba3aa382f343e8f3d91faa9484d0606"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I08-execution.md",
+      "role": "accepted_execution_report",
+      "sha256": "06bf5f78a992b64a0054a18f71b0ead2d74297cb702d39edd91e15747dc0daf9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-input-freeze.json",
+      "role": "accepted_control_input_freeze",
+      "sha256": "bad4d310197291c7341f434088ab957ea2a9f6434f6d4eb05f3e889b2904d707"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-index.json",
+      "role": "accepted_control_index",
+      "sha256": "a40c3529fca8d7c037be8c2120a940c7ef3bdc037c0ec409c908bbed7d0de048"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-validation.json",
+      "role": "accepted_control_validation",
+      "sha256": "1ceb846b180ba617fd5f7c480fc019e07ffcdf451b67b8259824db05340a9abf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09_control_resolution.py",
+      "role": "accepted_control_builder",
+      "sha256": "a3dd168b41deac6dbbffba0c76c7d834185c109985ec37d30911c1d86d368e37"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09-control-resolution.md",
+      "role": "accepted_control_report",
+      "sha256": "e00077c967d16db7bae808efbdedda52286deeb2d5dd0a60c2aa9095e5a78a98"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-owner-acceptance-and-control-gate.json",
+      "role": "accepted_control_gate_authority",
+      "sha256": "522cb811c229dc2bd9009ac4fb510ba29b6719dc9749edba76753c5eefcc7e26"
+    }
+  ],
+  "builder_identity": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "sha256": "f4ba3e90441368e509247cb1f2983e7e7cbf45034223b34350a1b1bc19a3f2f4"
+  },
+  "runtime_identity": {
+    "command_prefix": [
+      ".venv/bin/python",
+      "-B"
+    ],
+    "graph_checkout_argument": "<local-graph-checkout>",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "python_version": "3.12.3",
+    "pygrc_import_identity": "external-repository:graph-reflexive-coherence/src/pygrc/__init__.py"
+  },
+  "reconstruction_plan": {
+    "calibration": "recompute retained five-seed arithmetic-null envelopes and accepted delta/frozen-sheet relation from accepted raw calibration inputs",
+    "registration": "revalidate the resolved registration manifest and reconstruct the accepted registration validation from exact registered baseline inputs",
+    "execution": "rebuild the C02 manifest in memory from the exact matrix and retained governed paths without invoking a worker",
+    "controls": "rebuild I09 index, validation, and deterministic report bytes from retained C02 outputs",
+    "reports": "byte-reconstruct the deterministic I09 report and verify every machine-derived I08 report fact against the rebuilt C02 manifest",
+    "margins": "recompute every mode/order/seed primary margin through the accepted I04R2 strongest-leave-one estimator",
+    "restoration": "separately compare composite identities and raw observations around paired save/load, one identical no-packet native step, and paired reset for all three modes"
+  },
+  "restoration_continuation_policy": {
+    "active_history_token_admissions": 0,
+    "candidate_or_control_contributions": 0,
+    "comparator_or_scientific_windows": 0,
+    "modes": [
+      "state_carried",
+      "history_carried",
+      "hybrid"
+    ],
+    "native_steps_per_branch_per_mode": 1,
+    "neutral_contacts": 0,
+    "pair_operations": [
+      "construct_registered_baseline",
+      "save_pair",
+      "load_pair",
+      "validate_pair",
+      "identical_no_packet_step",
+      "reset_pair_once",
+      "validate_pair"
+    ],
+    "response_evaluations": 0,
+    "runtime_tolerance": 2.842170943040401e-14
+  },
+  "output_paths": {
+    "manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-manifest.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I10-reconstruction-and-identity.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-validation.json"
+  },
+  "execution_boundary": {
+    "accepted_artifact_overwrite_allowed": false,
+    "absolute_paths_persisted": false,
+    "candidate_or_control_execution_allowed": false,
+    "c02_entry_worker_invocations_allowed": false,
+    "graph_mutation_allowed": false,
+    "i11_or_terminal_interpretation_allowed": false,
+    "new_scientific_inputs_allowed": false,
+    "reconstruction_outputs_may_support_only": "P2-I2-RECON-GATE review",
+    "RECON_GATE_passed": false
+  },
+  "process_accounting_before_governed_start": {
+    "pre_declaration_read_only_python_parse_failures": 1,
+    "pygrc_imports": 0,
+    "governed_output_reads": 0,
+    "writes": 0
+  }
+}

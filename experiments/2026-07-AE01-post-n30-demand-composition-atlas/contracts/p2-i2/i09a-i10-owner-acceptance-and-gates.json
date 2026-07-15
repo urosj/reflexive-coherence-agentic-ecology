@@ -1,0 +1,126 @@
+{
+  "artifact_id": "P2-I2-I09A-I10-OWNER-ACCEPTANCE-AND-GATES",
+  "artifact_version": "1.0.0",
+  "iteration_ids": [
+    "P2-I2-I09A",
+    "P2-I2-I10"
+  ],
+  "lane_id": "AE01-L02",
+  "accepted_at": "2026-07-15",
+  "status": "owner_accepted_control_and_recon_gates_passed_commit_authorized",
+  "authority": {
+    "decision_id": "P2-I2-DEC-059",
+    "change_id": "P2-I2-CHG-063",
+    "owner_statement": "commit all",
+    "accepted_meaning": "accept the complete combined I09A/I10 package, reconcile CONTROL-GATE and RECON-GATE, authorize one containing commit, and make I11 ready but unstarted",
+    "parent_commit": "cfa19fe66118ad949fa914e0988c6652079d2d54"
+  },
+  "accepted_package": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-input-freeze.json",
+      "role": "i09a_input_freeze",
+      "sha256": "970e9ca31d23a922005f0625925c680f044f3b37e1469ceff7f25f33dc730eeb"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-failed-start-001.json",
+      "role": "i09a_failed_closed_start",
+      "sha256": "54ff3c4b36596f21fa7aef4b009952b692433bdb596fcc1e692a4a65786bbb81"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+      "role": "i09a_corrected_control_index",
+      "sha256": "dd339ffc39645bcabbe81f7d5f6a28bcee5ee0031066bed92d85c0382e9613a5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-validation.json",
+      "role": "i09a_passed_24_of_24_validation",
+      "sha256": "e57803f14800ac63f2bfb75c4b3a7fa036e55632465aa59c22e562a8510d9f6d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09a_control_resolution.py",
+      "role": "i09a_builder_validator",
+      "sha256": "947678094916c8e7af0a371bd6dcbeb8fc09b94dd34eadd6866e6ce9268ece43"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09A-normalized-estimator-correction.md",
+      "role": "i09a_review_report",
+      "sha256": "cd87a3dbbfc9235594ee55bc839642b6d9b5b838193dfe27e8c76ae6bcfdc44b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze.json",
+      "role": "i10_v1_input_freeze",
+      "sha256": "c28ae30e79c754acb1ec854b64a1c62c58b7b509ace5d92b96d6251c30207c24"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-failed-start.json",
+      "role": "i10_failed_start_001",
+      "sha256": "8b0a8546deddc84a4e9ca157d18398ddcab76c2a2553789a0715bf765641ae3b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze-v2.json",
+      "role": "i10_v2_input_freeze",
+      "sha256": "6b9646ab62cba0c28c50fb89e38199a749a71faf0034eb6d33f715488283314d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-failed-start-002.json",
+      "role": "i10_failed_start_002",
+      "sha256": "de1e80c7816c68bd8579a7f96189151654fdb5a0dc1c144f777547fc014db048"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-failed-start-003.json",
+      "role": "i10_failed_start_003_and_diagnostic",
+      "sha256": "2ef34539276186ff521a060f306cb6d23b9c19361a4f60df5a3054afa5328816"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-manifest.json",
+      "role": "i10_reconstruction_manifest",
+      "sha256": "5e02b64a5464c64a517de70b74c0b0db3b2a3a0c0fcb46d257d3edcb95a192b8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-validation.json",
+      "role": "i10_passed_24_of_24_validation",
+      "sha256": "eba9d8fe24914832af318a5c5fd93ce3fd8c950b284b3c008d08aee820a647b4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+      "role": "i10_builder_validator",
+      "sha256": "22b8fec156ae1f0cf988e3f0eb4287057536cdf07b9b71ee7001f3b1091f26e0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I10-reconstruction-and-identity.md",
+      "role": "i10_review_report",
+      "sha256": "40dabd10866a2ca9f451de2b7c9fc8b95d23fbd05d6620ab105bd1997ec737ce"
+    }
+  ],
+  "accepted_result": {
+    "i09a_validation": "24_of_24_passed_zero_blockers_twice",
+    "normalized_primary_margins": {
+      "1.0": 12,
+      "0.0": 6
+    },
+    "downstream_control_dispositions_changed": 0,
+    "i10_validation": "24_of_24_passed_zero_blockers_twice",
+    "restoration_modes_passed": 3,
+    "c02_terminals_reconstructed": 234,
+    "governed_paths_reconstructed": 470,
+    "candidate_or_scientific_operations": 0,
+    "absolute_path_findings": 0
+  },
+  "gate_effect": {
+    "P2-I2-CONTROL-GATE": "passed_after_explicit_owner_acceptance_of_I09A",
+    "P2-I2-RECON-GATE": "passed_after_explicit_owner_acceptance_of_I10",
+    "P2-I2-I11": "ready_but_not_started",
+    "commit_authorized": true,
+    "commit_head": null
+  },
+  "preserved_boundary": {
+    "R01_through_R05": "unassigned_until_I11",
+    "lane_support_status": null,
+    "terminal_classification": null,
+    "mode_ranking": false,
+    "scientific_interpretation": false,
+    "I11_common_guard_revalidation_required": true,
+    "technical_package_bytes_unchanged_after_review": true
+  },
+  "self_reference_rule": "commit_head remains null; retention identity is supplied by the containing Git commit"
+}

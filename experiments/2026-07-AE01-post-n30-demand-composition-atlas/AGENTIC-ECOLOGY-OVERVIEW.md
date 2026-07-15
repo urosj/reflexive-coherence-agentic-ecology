@@ -1,16 +1,18 @@
-# Agentic Ecology: Why AE01 Exists
+# Agentic Ecology: From Theory to Controlled Experiments
 
-**Audience:** readers who want to understand the project before entering its
-contracts, decisions, code, or evidence artifacts
+**Audience:** readers who want to understand how this repository moves from
+agentic-ecology concepts to bounded LGRC-backed evidence
 
-**Role:** narrative orientation only; controlling claims remain in retained
-machine records and closeout reports
+**Role:** general narrative orientation; controlling scientific claims remain
+in experiment contracts, retained evidence, closeouts, and owner decisions
+
+**Current program:** [AE01 agentic-ecology view](AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
 
 ## The short version
 
 Most agent systems begin with already-formed agents. Each agent has internal
-state, receives information, decides, acts, and communicates with other agents.
-The environment is usually the stage on which those agents operate.
+state, receives information, decides, acts, and communicates. The environment
+is usually the stage on which those agents operate.
 
 Agentic ecology begins one level earlier:
 
@@ -19,7 +21,7 @@ Agentic ecology begins one level earlier:
 
 In this view, an agent is not first a sealed object with a state machine. It is
 a local differentiation that persists within a larger field of support,
-boundaries, costs, traces, routes, susceptibilities, and history. The
+boundaries, costs, traces, routes, susceptibilities, reserve, and history. The
 environment is not passive background. It carries conditions that shape what
 can form, continue, interact, or fail next.
 
@@ -35,48 +37,35 @@ we also ask:
 What shared medium can A alter?
 How does that alteration persist and remain attributable?
 Why does it change B's later possibilities?
-Why does B respond from its own local condition rather than obeying a command?
+Why does B respond from its own geometry rather than obeying a command?
 What does maintaining that relation cost?
 ```
 
-AE01 is where those questions become controlled experiments.
-
-## The whole arc at a glance
-
-```text
-agentic-ecology idea
-  -> seven distinct operational questions
-  -> independently controlled lane experiments
-  -> classified results, construction debt, and missing surfaces
-  -> cross-lane recurring demands or explicit non-selection
-  -> possible future graph-side LGRC experiment
-  -> later explicit ecology-side consumption of any admitted native surface
-```
-
-AE01 currently sits in the independently controlled lane-experiment stage.
-P2-I1 is complete; the remaining lanes and cross-lane recurrence are not.
+The experiments in this repository turn those questions into frozen
+comparisons, causal controls, reproducible runtime evidence, bounded
+interpretations, and explicit implementation debt.
 
 ## What “agentic” and “ecology” mean here
 
 “Agentic” does not mean that the project begins by assigning choice,
-intention, or consciousness to an object. It points toward the capacity of a
-local or higher-order identity to continue through perturbation by using and
-reshaping available support, boundaries, coupling, memory-like aftereffects,
-and reserve. P2-I1 does not itself establish that full capacity.
+intention, goals, or consciousness to an object. It points toward the capacity
+of a local or higher-order identity to continue through perturbation by using
+and reshaping available support, boundaries, coupling, memory-like
+aftereffects, and reserve.
 
 “Ecology” does not mean merely placing many agents in one simulation. It means
 that local continuations become mutually conditioned through a shared economy
-of geometry, support, cost, trace, capacity, and history. The participants and
-their environment cannot be fully explained as independent objects plus
-messages between them.
+of geometry, support, cost, trace, capacity, and history. Participants and
+environment cannot be fully explained as independent objects plus messages
+between them.
 
 An agentic ecology is therefore not “a multi-agent system with richer state.”
 It is a system in which participant-like identities and their relations are
-carried increasingly by the same evolving substrate. The atlas asks which
-parts of that statement can be made operational and which remain theory,
-scaffolding, or missing substrate demand.
+carried increasingly by the same evolving substrate. Controlled experiments
+ask which parts of that statement can be made operational and which remain
+theory, scaffolding, or missing substrate demand.
 
-## Why theory and graph evidence are not enough by themselves
+## The theory-to-evidence bridge
 
 The conceptual papers define a target ontology. They translate familiar agent
 language into coherence geometry:
@@ -85,362 +74,168 @@ language into coherence geometry:
 | --- | --- |
 | agent state | basin or boundary condition, support, reserve, susceptibility |
 | action | costly transformation of geometry, coupling, support, or flux |
-| memory | persistent geometry or aftereffect |
+| memory | persistent geometry, event history, or aftereffect |
 | communication | participation through a shared medium |
 | coordination | coupled local responses through shared conditions |
 | environment | active nested ecology rather than passive background |
 
-That ontology is useful, but a vocabulary is not evidence. Renaming a message
-bus as a field, a global variable as a parent basin, or a state machine as a
+That ontology is useful, but vocabulary is not evidence. Renaming a message
+bus as a field, a global variable as a parent basin, or a state machine as
 coherence geometry does not create an agentic ecology.
 
-The graph project supplies the other side: LGRC implementations and controlled
+The graph project supplies another layer: PyGRC implementations and controlled
 evidence about graph-native transport, event histories, local differentiation,
-route selection, traces, eligibility, and bounded shared-medium participation.
-But graph evidence does not automatically say which ecology-scale functions
-those mechanisms can support. A trace is not yet a niche, a shared pool, a
-nursery, a maintained boundary, or a circulation regime.
+route selection, traces, eligibility, restoration, and bounded shared-medium
+participation. But graph evidence does not automatically establish an
+ecology-scale function. A trace is not yet a niche; common storage is not yet
+a functional shared pool; a packet route is not yet circulation.
 
-AE01 sits between them:
+The ecology experiments sit between them:
 
 ```text
 agentic-ecology theory
   -> names a functional ecological relation
 
-graph/LGRC evidence
+graph/PyGRC evidence
   -> supplies admitted mechanisms, limits, and debts
 
-AE01 experiment
-  -> asks whether the relation can actually be constructed and discriminated
+ecology experiment
+  -> constructs and discriminates the relation
 
 classified result
-  -> says what appeared, what remained scaffolded, and what is missing
+  -> records what appeared, what remained scaffolded, and what is missing
 
 future graph experiment
   -> may test a recurring substrate demand natively
 ```
 
-This is a spiral, not a one-way dependency. AE01 consumes what LGRC can already
-express, but it may also construct an honest ecology-side probe when a needed
-relation does not yet exist. The resulting tension can then motivate later
-graph work. A future native implementation never retroactively upgrades an
-earlier constructed result.
+This is a spiral rather than a one-way dependency. Ecology experiments consume
+what PyGRC can already express, but they may also use a declared producer or
+adapter when the required relation is missing. That construction can expose a
+precise graph-side need. A later native implementation does not retroactively
+upgrade earlier scaffolded evidence.
 
-## How to read the project’s claims
+## How to read the claims
 
-The project keeps several kinds of statement separate because moving between
-them requires new evidence. They form a claim/evidence ladder, not a sequence
-that completes automatically:
+The project keeps several statement types separate because moving between
+them requires new evidence:
 
-| Layer | What it means | P2-I1 status |
-| --- | --- | --- |
-| Conceptual motivation | The papers identify a meaningful agentic-ecology relation and vocabulary | Present; motivates the niche-conditioning question but supplies no runtime evidence |
-| Inherited graph evidence | N29/N30 and source-current LGRC establish bounded substrate capabilities, controls, and debts | Present at their original claim ceilings; not relabeled as P2-I1 evidence |
-| Constructed ecology mechanism | RCAE explicitly assembles a probe from admitted runtime surfaces plus declared scaffolding | Present; the P2-I1 writer-medium-reader realization is explicitly constructed |
-| Observed experiment result | Frozen execution and controls show what happened in that constructed realization | Present; selective later formation depends on medium presence, history, and configured susceptibility |
-| Ecology interpretation | The observed relation is given bounded ecological meaning | Present as a bounded niche-conditioning demand pattern |
-| Admitted reusable or native mechanism | The relation exists as an accepted substrate abstraction with its own native evidence | **Not reached**; no ecology primitive, native niche mechanism, or reusable runtime is admitted |
-
-Most of the project’s caution comes from this ladder. A useful ecology
-interpretation does not make its constructed mechanism native. A native LGRC
-operation does not make the whole ecology relation native. A demand for a
-missing surface is not evidence that the surface exists.
-
-## What the atlas is looking for
-
-AE01 separates seven ecological questions so that one attractive result cannot
-silently answer all of them:
-
-| Lane | Inherited starting point | Ecology-specific question |
-| --- | --- | --- |
-| L01 — niche conditioning | Medium history can affect later eligibility | Can the same history create different later possibilities for matched local differentiations with different susceptibility? |
-| L02 — shared-pool co-conditioning | Participants can perturb a non-private carrier | Can multiple attributable sources jointly constitute one functional pool state rather than separate writes or global storage? |
-| L03 — trail or stigmergic field | A trace can persist and affect later eligibility | Can repeated costly activity make a trace decay, reinforce, saturate, or require maintenance so that its dynamics reshape later traversal? |
-| L04 — support field | Generative/extractive activity can change support-like conditions | Can produced, depleted, or maintained support differentially govern formation of matched fragile and robust local identities? |
-| L05 — boundary-conditioned exchange | Boundaries and transport surfaces can be represented | Can a maintained selective interface govern exchange, transformation, leakage, repair, and later closure? |
-| L06 — capacity circulation | Capacity can be transported and affect later eligibility | Can capacity complete a budget-closing depletion/replenishment or return cycle while preserving floors and exposing leakage? |
-| L07 — parent-basin modulation | Local graph states exist while parent modulation remains blocked | What missing causal surface would let parent state modulate matched local susceptibilities without copied parameters or central control? |
-
-No single lane proves an ecology. The eventual value lies in recurrence. If
-independent experiments keep requiring the same operational relation—perhaps
-auditable medium history, maintained selective access, support redistribution,
-or capacity conservation—that recurrence may identify a useful LGRC building
-block. If the requirements do not recur, the atlas may correctly select
-nothing.
-
-The future-lane rule is now explicit: reproducing only the inherited starting
-point cannot satisfy a lane. Each lane must preregister and causally test its
-ecology-specific discriminator. L03 must go beyond static trace persistence;
-L06 must go beyond linear multi-leg transport. The binding prospective details
-are in the
-[post-R3 ecology-discriminator amendment](hypotheses/post-r3-ecology-discriminator-amendment.md).
-
-## Why P2-I1 is not N30 again
-
-N30 already established the bounded graph-side relation that makes L01
-possible:
-
-```text
-participant-attributable perturbation
-  -> non-private medium history
-  -> later eligibility depends on that history
-```
-
-N30 also used susceptibility language and reinstantiated a susceptibility-
-inversion control. It would therefore be too strong to say that N30 ignored
-participant susceptibility entirely. Its evidential unit, however, was an
-eligibility candidate plus directional false-positive controls. It did not
-compare matched later reader configurations under the same medium history and
-measure whether the medium effect differed between them.
-
-That comparative interaction is L01's ecological addition:
-
-```text
-N30:
-  medium history changes later eligibility
-
-P2-I1:
-  the effect of medium history changes with
-  participant-relative susceptibility
-```
-
-P2-I1 calculates this directly for each matched context:
-
-```text
-(candidate aligned - withdrawal aligned)
-  - (candidate inverted - withdrawal inverted)
-```
-
-The interaction was `1` in both contexts for every seed. The separate
-susceptibility-inversion cell changed the response panel from `[1,0,1,0]` to
-`[0,1,0,1]`, so the effect followed the configured susceptibility relation
-rather than the reader slot.
-
-Without that differential response, P2-I1 would still have been useful as a
-fresh-runtime strengthening of N30. N30's final evidence was artifact-level
-and recorded `n30_fresh_runtime=false`, whereas P2-I1 executed a new PyGRC
-writer-medium-reader chain through native queue processing. But a uniform
-positive effect would have remained generic environmental conditioning, not a
-supported niche-conditioning result.
-
-The relationship is therefore:
-
-```text
-N30:
-  history becomes causally available in non-private substrate state
-
-P2-I1:
-  substrate history becomes differential participant-relative possibility
-```
-
-P2-I1 is not another admitted primitive. It is the first controlled ecology-
-side specialization and composition of the N30 relation, producing an
-operational differential-possibility demand pattern under explicit constructed
-support. Its interpretive emphasis is **minimal shared-medium differential
-niche conditioning**. The stable lane ID and frozen display name remain
-unchanged.
-
-## Why P2-I1 comes first
-
-The first lane asks for the smallest meaningful step beyond an isolated agent
-and a passive environment:
-
-> Can attributable activity by one local participant alter a shared medium so
-> that the same history differently conditions matched later local
-> differentiations?
-
-This is called niche conditioning, but the biological word is deliberately
-bounded. The experiment does not assume organisms, populations, adaptation,
-competition, or a complete ecological niche. It separates three things:
-
-```text
-medium state
-  = something in the shared substrate has changed
-
-niche-conditioning relation
-  = that history changes a later participant-relative possibility
-
-niche formation
-  = a stronger ecological process not established here
-```
-
-The minimal P2-I1 geometry is:
-
-```text
-P --writes--> W --conditions later access--> A or B
-```
-
-- `P` is a bounded participant carrier.
-- `W` is a non-private medium surface outside the participant identity.
-- `A` and `B` are later reader configurations with different explicitly
-  configured local susceptibility.
-- The writer does not address a future reader or write a success label.
-- The later opportunity is completed by native PyGRC event processing, not by
-  an authored claim.
-
-In the completed C02 experiment, one writer history produced an ordered native
-contact-to-feedback medium. The same retained history then allowed aligned
-reader profiles to form and rejected inverted profiles. Removing the medium
-removed formation. Preserving its content but changing the expected source
-order also removed formation. Swapping reader susceptibility reversed which
-profiles formed. The relation remained under a reduced support-scale contrast
-and a doubled reader carrier load.
-
-In plain language:
-
-> What happened earlier through one participant changed what could happen
-> later for other local configurations, through shared state that was neither
-> private memory nor a direct message, and the effect depended on the later
-> configuration's configured susceptibility.
-
-That is the first operational shape needed by agentic ecology. History has
-become part of the possibility landscape.
-
-## What P2-I1 did—and did not—establish
-
-P2-I1 established a bounded constructed relation:
-
-```text
-attributable participant history
-  -> reconstructable non-private medium state
-  -> source- and order-sensitive eligibility
-  -> selective later local formation
-```
-
-This matters because it is more than environmental change. The medium carried
-specific history, was causally necessary, remained accessible across distinct
-reader branches, and interacted with local susceptibility.
-
-It is not yet an admitted ecological primitive. The fixture, feedback surface,
-producer configuration, reader profiles, and orchestration were explicitly
-constructed. The experiment did not establish:
-
-- endogenous or autonomous niche formation;
-- persistence across an extended timescale;
-- multiple writers co-conditioning one shared pool;
-- repeated access in one continuous ecology;
-- broad transfer across geometries or runtimes;
-- coordination, agency, organism, motif, or regime; or
-- a selected future graph experiment.
-
-The result is valuable precisely because both sides are explicit: a real
-operational relation appeared, and the remaining scaffolding is still visible.
-
-## Why all the detailed evidence is necessary
-
-Shared-medium language is easy to imitate. Many ordinary architectures can be
-made to look ecological by changing their names. The detailed evidence exists
-to separate the intended relation from those false positives.
-
-| Easier explanation | What must rule it out |
+| Layer | Meaning |
 | --- | --- |
-| The writer sent a disguised message to a reader | The medium contains no reader address or success label; distinct readers access the same frozen history |
-| The writer merely changed its own private state | Participant state is matched while the external medium is withdrawn |
-| Any environmental improvement would help | Aligned and inverted readers respond differently under comparable exposure |
-| One reader identity was privileged | Susceptibility inversion makes the effect follow the relation rather than the reader slot |
-| Merely having a row activates the producer | Neutral-content and medium-withdrawal comparisons separate row presence from writer-relative content |
-| Any historical row would work | Source-order shuffling preserves content but breaks the registered lineage relation |
-| The result is a threshold or seed accident | Candidate-blind calibration, multiple seeds, raw distributions, support contrast, and carrier-load contrast retain the scale of the observation |
-| The harness manufactured success | Runtime receipts, native queue processing, graph read-only guards, reconstruction, and explicit producer ownership preserve the native/constructed boundary |
-| The experiment kept changing until it passed | The scientific matrix was frozen before execution; C02 changed only an over-broad restoration equality after C01 closed with no scientific result |
+| Conceptual motivation | A paper identifies a meaningful relation and vocabulary |
+| Inherited graph evidence | Existing PyGRC work establishes bounded substrate capabilities and limits |
+| Constructed ecology mechanism | RCAE assembles an explicit probe from admitted surfaces plus declared scaffolding |
+| Observed experiment result | Frozen execution and controls establish what happened in that realization |
+| Ecology interpretation | The observed relation receives bounded ecological meaning |
+| Admitted reusable/native mechanism | A substrate abstraction has independent native evidence and an explicit admission decision |
 
-Without these controls, “the medium mattered” would be an interpretation that
-many incompatible mechanisms could satisfy. With them, the project can say
-which relation carried the result and where the claim stops.
+These layers are not automatic maturity stages. A useful ecology
+interpretation does not make its constructed mechanism native. A native
+packet or feedback operation does not make the entire ecology relation native.
+A request for a missing surface is not evidence that the surface exists.
 
-Reproducibility serves the same purpose. The retained artifacts are not there
-only to prove that code once ran. They preserve the exact runtime identity,
-inputs, causal lineage, attempts, controls, raw responses, analysis, and claim
-boundary so the result can be reconstructed without trusting the author.
+## What a controlled agentic-ecology experiment must expose
 
-## What this contributes to agentic ecology
+A useful experiment must identify more than a successful output. It should
+make the following relationships inspectable:
 
-P2-I1 contributes three things.
+1. **Physical opportunity:** which participants, routes, costs, boundaries,
+   and shared surfaces exist before the candidate relation.
+2. **Carrier:** where the proposed ecological condition actually lives—current
+   state, ordered history, trace, support, boundary condition, reserve, or a
+   declared composite.
+3. **Later consequence:** what formation, continuation, access, response,
+   susceptibility, or failure changes afterward.
+4. **Causal intervention:** what happens when the carrier is withdrawn,
+   clamped, shuffled, diverted, privatized, or replaced.
+5. **Alternative explanations:** whether direct addressing, a global
+   variable, arbitrary labels, a controller, quantity alone, or fixture logic
+   can reproduce the output.
+6. **Provenance:** which native events, producer actions, and adapter-owned
+   state carried each causal leg.
+7. **Restoration and reconstruction:** whether save/load/reset and retained-
+   only analysis preserve the declared identity and result.
+8. **Claim ceiling:** what the evidence supports and which attractive names
+   remain prohibited.
 
-First, it turns N30's history-conditioned eligibility relation into an
-executable participant-relative differential-possibility pattern.
+This is why the experiment workspaces contain more than scripts and summary
+tables. The detailed contracts and receipts separate similar outputs produced
+by different causal architectures.
 
-Second, it identifies the present construction debt. A more natural LGRC
-realization would need the relation to arise, persist, be accessed, and perhaps
-be maintained with less explicit configuration.
+## Native machinery, producers, and debt
 
-Third, it supplies a reusable experimental method:
+The project follows a native-first rule:
 
 ```text
-name the ecological relation
-  -> identify its geometric carrier
-  -> separate participant from medium
-  -> define a later participant-relative consequence
-  -> withdraw and shuffle the proposed cause
-  -> invert susceptibility
-  -> preserve raw outcomes and support conditions
-  -> classify both the result and the remaining debt
+try the relation with admitted native machinery
+  -> if adequate, retain the native causal path
+  -> if missing or inadequate, use the smallest explicit producer/adapter
+  -> record exactly what that scaffold owns
+  -> extract the missing native requirement only after evidence
 ```
 
-That method can inform later lanes. Their outcomes remain independent; P2-I1
-does not become evidence for them.
+Producer assistance is not automatically failure. It is useful when it makes
+an otherwise missing causal relation executable without hiding the boundary.
+The failure would be to call scaffold-owned behavior native, let the producer
+author the scientific answer, or erase the debt after a positive result.
 
-## What happens next
+Repeated missing machinery across independently controlled experiments may
+justify a new graph-side implementation proposal. One attractive fixture does
+not.
 
-P2-I2 asks whether multiple sources can co-condition one shared carrier. That
-is a different ecological step. P2-I1 showed one history differently
-conditioning later possibilities across susceptibility. P2-I2 must distinguish
-genuinely combined medium state from a mailbox, database, sequence of private
-writes, or global controller.
+## What the evidence can contribute
 
-Later lanes examine trace dynamics, support, boundaries, circulation, and
-parent-basin demands. Only after all lanes close may the atlas compare their
-requirements. The final outcome may be:
+Controlled agentic-ecology work can contribute at least four distinct things:
 
-- one recurring substrate demand worth a graph-side experiment;
-- several ranked but still immature demands;
-- precise missing-surface contracts; or
-- explicit non-selection.
+- a bounded ecological relation that survives registered causal controls;
+- a negative or mode-specific result that reveals which geometry does not
+  carry the function;
+- a reusable experimental discriminator for distinguishing lookalike
+  mechanisms; and
+- a precise naturalization or medium debt that later work can compare across
+  experiments.
 
-All are useful results. The purpose is not to prove that agentic ecology
-already exists. It is to discover which operational relations would make it
-possible, which are already expressible, and which remain only attractive
-language.
+The work does not need to prove a complete ecology to be valuable. It can show
+that shared history changes participant-relative possibility, that several
+events constitute one later-relevant carrier, that present state and formation
+history compute different functions, or that an apparent operation-composition
+effect is really a simpler temporal rule.
+
+## Current experimental program: AE01
+
+AE01 is the Post-N30 Demand and Composition Atlas. It separates seven
+ecology-scale questions—niche conditioning, shared-pool co-conditioning,
+trace dynamics, support, boundary-conditioned exchange, capacity circulation,
+and parent-basin modulation—so that success in one cannot silently answer the
+others.
+
+Its first two lanes now provide controlled results:
+
+- P2-I1 establishes a bounded shared-medium differential niche-conditioning
+  demand pattern.
+- P2-I2 establishes bounded shared-pool co-conditioning through state,
+  scaffolded active history, and hybrid carriers, followed by appendices that
+  distinguish live operation complementarity from a terminal-token temporal
+  gate.
+
+AE01 as a whole remains at `AE01-C2`; the remaining five lanes and cross-lane
+recurrence/non-selection stages have not been completed. Read the
+[AE01-specific agentic-ecology overview](AE01-AGENTIC-ECOLOGY-OVERVIEW.md) for
+the current geometry, results, limits, and next questions. For the complete
+P2-I2 case-by-case interpretation, use the
+[P2-I2 interpretative synthesis](reports/P2-I2-interpretative-synthesis.md).
 
 ## Reading paths
 
-### How much detail do you need?
+| Goal | Read |
+| --- | --- |
+| Learn the conceptual ontology | [RC Agentic Ecology](../../papers/2026-06-RC-AgenticEcology.md) |
+| Understand shared-medium relation | [The Shared Medium](../../papers/2026-06-TheSharedMedium.md) and [Shared-Medium Coordination](../../papers/2026-06-SharedMediumCoordination-EngineeringSpec.md) |
+| Understand how concepts become controlled evidence | This overview |
+| Understand the current experiment and its two completed lanes | [AE01 agentic-ecology view](AE01-AGENTIC-ECOLOGY-OVERVIEW.md) |
+| Understand every P2-I2 case and appendix | [P2-I2 interpretative synthesis](reports/P2-I2-interpretative-synthesis.md) |
+| Audit experiment authority | [AE01 workspace README](README.md), lane briefs, checklists, decisions, contracts, and retained reports |
 
-| Your goal | Read | Safe to skip initially |
-| --- | --- | --- |
-| Understand why the project exists | This overview | Contracts, configs, schemas, manifests, scripts, and raw runs |
-| Understand what P2-I1 found | This overview and the C02 result | Registration machinery, individual run JSON, and most checklist history |
-| Evaluate whether the interpretation is justified | C02 result, owner closeout, and R3 review | Source code and raw artifacts unless a reported fact is in doubt |
-| Understand why a design choice was made | Theory brief and the relevant decision-record section | Unrelated decisions, runtime receipts, and raw runs |
-| Reproduce the experiment | C02 reconstruction instructions, scripts README, manifests, and frozen configs | Most conceptual discussion after the claim boundary is understood |
-| Audit every claim and execution boundary | Checklist, decision record, retained manifests, controls, and machine artifacts | Nothing in the relevant evidence chain |
-
-You do not need to read the full checklist, the cumulative decision record, or
-the retained JSON corpus to understand the scientific idea. Those materials
-exist so a reader can escalate from understanding to evaluation,
-reconstruction, or full audit without trusting a compressed summary.
-
-For a conceptual introduction:
-
-1. read [RC Agentic Ecology](../../papers/2026-06-RC-AgenticEcology.md);
-2. then read [The Shared Medium](../../papers/2026-06-TheSharedMedium.md).
-
-For the five-minute experimental result:
-
-1. read this overview;
-2. then read the [P2-I1 C02 result](reports/P2-I1-C02-result.md).
-
-For the scientific design:
-
-1. read the [P2-I1 theory brief](implementation/P2-I1-minimal-shared-medium-niche-brief.md);
-2. inspect the [decision record](implementation/P2-I1-decision-record.md);
-3. use the [closed checklist](implementation/P2-I1-minimal-shared-medium-niche-checklist.md) as the execution map.
-
-For reconstruction and audit:
-
-1. start with the [owner closeout](reports/P2-I1-closeout-review.md);
-2. follow the C02 report's reconstruction commands;
-3. use the closeout manifest to reach retained machine evidence.
-
-The order matters. The evidence details are easier to understand once the
-ecological question they protect is visible.
+The reading order matters. First understand the ecological relation, then its
+constructed geometry, then the causal evidence, and only then the detailed
+governance and machine receipts that protect the claim.

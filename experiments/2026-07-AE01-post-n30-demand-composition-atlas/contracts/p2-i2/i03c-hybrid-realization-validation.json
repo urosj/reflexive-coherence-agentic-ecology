@@ -1,0 +1,361 @@
+{
+  "admitted_source_identity": {
+    "checks": [
+      {
+        "manifest_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+        "match": true,
+        "revision_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+        "source_id": "grc:pyproject.toml",
+        "worktree_sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b"
+      },
+      {
+        "manifest_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+        "match": true,
+        "revision_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+        "source_id": "grc:src/pygrc/__init__.py",
+        "worktree_sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e"
+      },
+      {
+        "manifest_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+        "match": true,
+        "revision_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+        "source_id": "grc:src/pygrc/core/__init__.py",
+        "worktree_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae"
+      },
+      {
+        "manifest_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+        "match": true,
+        "revision_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+        "source_id": "grc:src/pygrc/core/interfaces.py",
+        "worktree_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f"
+      },
+      {
+        "manifest_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+        "match": true,
+        "revision_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+        "source_id": "grc:src/pygrc/core/serialization.py",
+        "worktree_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4"
+      },
+      {
+        "manifest_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+        "match": true,
+        "revision_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+        "source_id": "grc:src/pygrc/models/__init__.py",
+        "worktree_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70"
+      },
+      {
+        "manifest_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+        "match": true,
+        "revision_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+        "source_id": "grc:src/pygrc/models/grc_9_v3.py",
+        "worktree_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e"
+      },
+      {
+        "manifest_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+        "match": true,
+        "revision_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+        "source_id": "grc:src/pygrc/models/grc_9_v3_state.py",
+        "worktree_sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e"
+      },
+      {
+        "manifest_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+        "match": true,
+        "revision_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3.py",
+        "worktree_sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb"
+      },
+      {
+        "manifest_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+        "match": true,
+        "revision_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_contract.py",
+        "worktree_sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680"
+      },
+      {
+        "manifest_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+        "match": true,
+        "revision_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_packets.py",
+        "worktree_sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      },
+      {
+        "manifest_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+        "match": true,
+        "revision_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+        "worktree_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "manifest_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+        "match": true,
+        "revision_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime_state.py",
+        "worktree_sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c"
+      },
+      {
+        "manifest_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+        "match": true,
+        "revision_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+        "worktree_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931"
+      },
+      {
+        "manifest_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+        "match": true,
+        "revision_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+        "source_id": "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+        "worktree_sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c"
+      },
+      {
+        "manifest_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+        "match": true,
+        "revision_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+        "source_id": "grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+        "worktree_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c"
+      },
+      {
+        "manifest_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+        "match": true,
+        "revision_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_contract.py",
+        "worktree_sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b"
+      },
+      {
+        "manifest_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+        "match": true,
+        "revision_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_runtime.py",
+        "worktree_sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b"
+      },
+      {
+        "manifest_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+        "match": true,
+        "revision_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_restoration.py",
+        "worktree_sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97"
+      },
+      {
+        "manifest_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+        "match": true,
+        "revision_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+        "source_id": "grc:tests/models/test_lgrc_9_v3_restoration_matrix.py",
+        "worktree_sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154"
+      }
+    ],
+    "source_count": 20
+  },
+  "artifact_id": "P2-I2-I03C-HYBRID-REALIZATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "candidate_control_calibration_or_scientific_execution": false,
+  "claim_boundary": {
+    "design_frozen": true,
+    "discriminator_gate_passed": false,
+    "i03c_review_ready": false,
+    "i04_authorized": false,
+    "runtime_conformance_authorized_before_second_freeze": false,
+    "scientific_evidence_assigned": false
+  },
+  "coverage": {
+    "carried_i03br1_obligations": [
+      "preserve unique registered source-to-P admission or add explicit route/channel key",
+      "leave scientific alternate-access/R05 retention unresolved",
+      "bound lifecycle and event counts at I06",
+      "expose paired restoration as the only registered continuation interface with manifest hash validation",
+      "retain branch identity and isolation duties",
+      "mechanically reject every conformance fixture value and digest from I04/I06"
+    ],
+    "cells": [
+      "reference-pool",
+      "individual-contributions",
+      "combined-orders",
+      "pooled-history-shuffle",
+      "contributor-removal",
+      "global-state-exclusion",
+      "access-capacity-contrast"
+    ],
+    "controls": [
+      "AE01-L02-CTRL-01",
+      "AE01-L02-CTRL-02",
+      "AE01-L02-CTRL-03",
+      "AE01-L02-CTRL-04",
+      "AE01-L02-CTRL-05"
+    ],
+    "operational_projections": [
+      "H-L02-OP-01",
+      "H-L02-OP-02",
+      "H-L02-OP-03",
+      "H-L02-OP-04",
+      "H-L02-OP-05",
+      "H-L02-OP-06",
+      "H-L02-OP-07",
+      "H-L02-OP-08",
+      "H-L02-OP-09"
+    ]
+  },
+  "entry_authority": {
+    "checks": [
+      {
+        "current_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "entry_revision_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "expected_sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json"
+      },
+      {
+        "current_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "entry_revision_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "expected_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json"
+      },
+      {
+        "current_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+        "entry_revision_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+        "expected_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json"
+      },
+      {
+        "current_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+        "entry_revision_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+        "expected_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json"
+      },
+      {
+        "current_sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d",
+        "entry_revision_sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d",
+        "expected_sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json"
+      },
+      {
+        "current_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+        "entry_revision_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+        "expected_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json"
+      },
+      {
+        "current_sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9",
+        "entry_revision_sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9",
+        "expected_sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-runtime-reconstruction-receipt.json"
+      },
+      {
+        "current_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca",
+        "entry_revision_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca",
+        "expected_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation-input.json"
+      },
+      {
+        "current_sha256": "6878ae36894737e61a814a19d08c2f4360164f4c812ceb66a1cefa5a1fd67aa2",
+        "entry_revision_sha256": "6878ae36894737e61a814a19d08c2f4360164f4c812ceb66a1cefa5a1fd67aa2",
+        "expected_sha256": "6878ae36894737e61a814a19d08c2f4360164f4c812ceb66a1cefa5a1fd67aa2",
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation.json"
+      }
+    ],
+    "prior_artifact_count": 9,
+    "rcae_revision": "9332a67558764043d6f6adf67dc82a19187871db"
+  },
+  "graph_after": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_short": ""
+  },
+  "graph_before": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_short": ""
+  },
+  "hybrid_model_instantiations": 0,
+  "hybrid_runtime_operations": 0,
+  "input_identity": {
+    "adapter_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+    "brief_sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f",
+    "checklist_sha256": "07293ca437a78bc07f0e67b1444c240c8b6a9fe2c841615c53f97cc228573761",
+    "contract_sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8",
+    "decision_record_sha256": "07d84d1fe10cfd1364636851d8c3d5e12674eb492f80cdb7d16fb6be6d0157e7",
+    "freeze_sha256": "1d69dedf481aba2ad996388d35e03e65e7a7e5cc39276feaf8d92b730208c353",
+    "hypothesis_sha256": "dbca3b2c87e43db3e013b5b44335a35e81dc5f231f3229a420b47b26afcfe7c6",
+    "manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+    "report_sha256": "9ab66cab3929281abe9f9d5e65b862c89406204e7fd6d53fa202b68c6dc62a01"
+  },
+  "invariants": {
+    "adapter_does_not_compute_joint_success_or_response": true,
+    "all_twenty_frozen_source_digests_match": true,
+    "design_contract_preserved": true,
+    "design_input_freeze_preserved": true,
+    "entry_authority_and_nine_prior_artifact_digests_match": true,
+    "external_history_requires_composite_paired_identity": true,
+    "five_controls_complete": true,
+    "graph_repository_unchanged": true,
+    "hybrid_only_scope_and_cross_mode_guards_preserved": true,
+    "joint_contrast_and_nonrequired_nonlinearity_frozen": true,
+    "lgrc0_history_is_annotation_only": true,
+    "minimal_active_history_adapter_selected": true,
+    "native_complete_hybrid_explicitly_inadequate": true,
+    "native_feedback_sums_multi_node_live_masks": true,
+    "native_joint_evaluation_and_later_transition_retained": true,
+    "native_producer_uses_native_score_threshold_and_packet_path": true,
+    "native_surface_rows_are_passive_not_active_history": true,
+    "native_v2_covers_current_and_reset_identity": true,
+    "nine_operational_projections_complete": true,
+    "no_hybrid_runtime_or_scientific_execution": true,
+    "private_partition_and_alternate_access_guards_frozen": true,
+    "selected_public_callables_admitted": true,
+    "separate_new_value_runtime_freeze_required": true,
+    "seven_cells_complete": true,
+    "six_i03br1_obligations_carried": true,
+    "state_and_active_history_components_separately_causal": true,
+    "state_only_and_history_only_interventions_frozen": true
+  },
+  "iteration_id": "P2-I2-I03C",
+  "lane_id": "AE01-L02",
+  "selected_public_callables": {
+    "all_admitted": true,
+    "symbols": [
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.step",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.LGRC9V3.reset",
+      "pygrc.models.LGRC9V3.save",
+      "pygrc.models.LGRC9V3.load",
+      "pygrc.models.lgrc9v3_restoration_identity_v2",
+      "pygrc.models.digest_lgrc9v3_restoration_identity_v2"
+    ]
+  },
+  "selection": {
+    "adapter_computes_joint_success": false,
+    "history_component": "RCAEActiveHistoryAdapterV1.H_P",
+    "history_output_port": "native_M_H_coherence",
+    "joint_native_front_mask": [
+      "P",
+      "M_H"
+    ],
+    "native_disposition": "inadequate_for_complete_hybrid",
+    "native_feedback_producer_owns_later_transition": true,
+    "pool_dependence_mode": "hybrid",
+    "selected_realization_class": "minimally_producer_assisted",
+    "state_component": "native_P_coherence"
+  },
+  "source_dataflow": {
+    "adapter_has_no_feedback_or_later_response_call": true,
+    "adapter_ingests_physical_amount_without_lineage_token": true,
+    "adapter_materializes_only_through_public_native_packets": true,
+    "lgrc0_history_annotation_non_mutating": true,
+    "native_front_mask_accepts_and_sums_multiple_live_nodes": true,
+    "native_joint_mask_has_no_lineage_read": true,
+    "native_latest_contact_is_trigger_audit_not_joint_score_input": true,
+    "native_producer_reads_native_feedback_score_and_threshold": true,
+    "native_v2_composes_current_and_reset_identity": true,
+    "surface_rows_declared_passive": true
+  },
+  "status": "passed",
+  "validated_at": "2026-07-14",
+  "validation_kind": "static_authority_source_dataflow_producer_boundary_cross_mode_restoration_and_no_runtime_only"
+}

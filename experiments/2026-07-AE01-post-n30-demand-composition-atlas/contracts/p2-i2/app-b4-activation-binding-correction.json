@@ -1,0 +1,69 @@
+{
+  "artifact_id": "P2-I2-APP-B4-ACTIVATION-BINDING-CORRECTION",
+  "artifact_version": "1.0",
+  "authority": {
+    "change": "P2-I2-CHG-094",
+    "decision": "P2-I2-DEC-089",
+    "owner_direction": "complete APP-B4"
+  },
+  "base_freeze": {
+    "canonical_payload_digest": "07f118723ebdb51cd5da5f65bab0d6fcad6b4b4e909c261b9e077153e14fe71e",
+    "implementation_commit": "863d73c956286efb631d7a6fdd579837325dc2c0",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+    "sha256": "77025e8b2eabc63298485746790ab0dc78e67cf507856357c2d575d7595214f8"
+  },
+  "canonical_payload_digest": "fbcaab1603d6d7471e62fcb63bbdfed5e8cb1edac1933f88af291230eb6e2dc9",
+  "corrected_binding": {
+    "activation_correction_and_acceptance_must_be_tracked_byte_exact": true,
+    "activation_head_template_token": "{ACTIVATION_HEAD}",
+    "authority_worktree_must_be_clean": true,
+    "graph_commit_and_cleanliness_unchanged": true,
+    "immutable_implementation_commit_must_be_ancestor": true,
+    "invocation_head_must_equal_command_head": true
+  },
+  "corrected_runner": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+    "sha256": "145a509837d73396d7c4421e65edb7a342f9feb1cb9fa9e2ada5420a699e8c53"
+  },
+  "defect": {
+    "explanation": "An activation file cannot contain the hash of the same commit that first contains that file.",
+    "failed_scientific_attempts": 0,
+    "kind": "impossible_self_referential_activation_head",
+    "original_template_token": "{AUTHORITY_HEAD}"
+  },
+  "iteration_id": "P2-I2-APP-B4",
+  "original_runner": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_run.py",
+    "sha256": "aac3381d6f273f9bd6035c9b0477db68b616348b1a06a39525bdb10514f1212e"
+  },
+  "process_receipt": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "builder_processes_this_start": 1,
+    "models": 0,
+    "producers": 0,
+    "responses": 0
+  },
+  "scientific_invariance": {
+    "accepted_scientific_implementation_files_changed": 0,
+    "amounts_changed": false,
+    "attempt_or_retry_policy_changed": false,
+    "classifiers_or_claim_ceiling_changed": false,
+    "operation_registry_changed": false,
+    "registry_rows_changed": 0,
+    "response_or_estimator_changed": false,
+    "schedule_changed": false
+  },
+  "status": "candidate_free_owner_review_pending",
+  "unchanged_frozen_implementation_sha256": {
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_analysis.py": "41006ca1ca70fcdff66f86f11a2b5033ed63c84b74ab5aff4ab89be620cbe182",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_reconstruct.py": "9c6b44a961daa922418d59a5f1060277109799349716098132a91b4c6acd397f",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_validate.py": "09464395f590bdd1b564681aaed6b33f8037f47396f97a4d5f07e1c7d873d3d3",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_analysis.py": "232ae62be2adaff00374d0cd08bb61c9164ae8d58d9d188fce1dd4fad0d6cf0c",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_history_adapter.py": "a7d9772f4b22bec81e370e28eeae9bb5d4d4d3353a80d9516c950e3e9c166f8e",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py": "dfa1985af280561e62250623bc872b1acf6d997d620f4eb6df645cfc882abd07",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a"
+  }
+}

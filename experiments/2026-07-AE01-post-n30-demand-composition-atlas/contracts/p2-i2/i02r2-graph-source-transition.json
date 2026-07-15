@@ -1,0 +1,371 @@
+{
+  "artifact_id": "P2-I2-I02R2-GRAPH-SOURCE-TRANSITION",
+  "artifact_version": "1.0.0",
+  "authority_path_count": 17,
+  "changed_path_count": 35,
+  "changed_paths": [
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "documentation_or_navigation_context",
+      "new_sha256": "f8e15303e335579d70708baec5ed7d12c2a6c080bda895e7901cdea6ddd05c4e",
+      "old_sha256": "3649c33f7258f5f6cc51f20729c5fb4b3f905cac03540b87bbc6bf59ddd19eec",
+      "path": "CHANGELOG.md",
+      "portable_source_id": "grc:CHANGELOG.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "documentation_or_navigation_context",
+      "new_sha256": "775e195e609b0f0eba0ce25349e493c98d27bd017c94153ec1514754ed152f47",
+      "old_sha256": "84f7942303ac25c558e316f6dcdb9771f19b1e249a9e7f86b929b6507b4d8e74",
+      "path": "README.md",
+      "portable_source_id": "grc:README.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "documentation_or_navigation_context",
+      "new_sha256": "edf3bd3ac94890f1ff7527b8a1cad485c2814e27c3ee0676fecba77190266032",
+      "old_sha256": "51273843e9e473f0776ba646aa0980d53912d9c5938348b8f767983bf8ea7864",
+      "path": "docs/README.md",
+      "portable_source_id": "grc:docs/README.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "documentation_or_navigation_context",
+      "new_sha256": "b8169b152bd892c4e840c4deff8000601be842378e281759d3e6c033d15b877b",
+      "old_sha256": "d7e2ce743bbd30a4a35b6c9851789a7dbf5c8e793d0bcfecd00155e7fdc94844",
+      "path": "docs/reference/ClaimBoundaryIndex.md",
+      "portable_source_id": "grc:docs/reference/ClaimBoundaryIndex.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "documentation_or_navigation_context",
+      "new_sha256": "8f41f1a8b98cfe8dc1269ebdb74b13e28dcf00cb1ea619b374651f4518acf9b8",
+      "old_sha256": "13a6355033d6176b4029d4ab4fb73281b37cefceac6dabcc92ab8e4123ad0c24",
+      "path": "docs/reference/GRC-Runtime-ReferenceGuide.md",
+      "portable_source_id": "grc:docs/reference/GRC-Runtime-ReferenceGuide.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "documentation_or_navigation_context",
+      "new_sha256": "c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c",
+      "old_sha256": "32277916241b2059d80645f9fc64d9c693bc66701ec63ccd89dc46eff961837d",
+      "path": "docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+      "portable_source_id": "grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "supporting_implementation_context",
+      "new_sha256": "29e314699582b88d27f491b65c2485af7248ed1ee199d1aed005987e43931b60",
+      "old_sha256": "faff276c9a4c8e1e4a342d460ba0b543b2c019f5ee97a9fd84d1b962117250e0",
+      "path": "implementation/ImplementationPhases.md",
+      "portable_source_id": "grc:implementation/ImplementationPhases.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "supporting_implementation_context",
+      "new_sha256": "88da1337125c572dfe5ded9d57e3f239fd0fb6d254917f91a2358ba1777a3361",
+      "old_sha256": "efbf2c0e2ab19c4b24235ae3b2b6b985d9a927e8235602ec3b38a4dd6ca83838",
+      "path": "implementation/Phase-8-LGRC9-Handoff.md",
+      "portable_source_id": "grc:implementation/Phase-8-LGRC9-Handoff.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "supporting_implementation_context",
+      "new_sha256": "6835593e59edc24095186fde5585b02ffc7f4a05fd9ae89f39160443f277ca03",
+      "old_sha256": "85750644d8d866c451bec6c2a4093cfee15e4cf365f593d1170c6757688ea122",
+      "path": "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.md",
+      "portable_source_id": "grc:implementation/Phase-8-LGRC9-RestorationIdentityCloseout.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_implementation_closeout_authority",
+      "new_sha256": "caccab6dbfeb845893762f5c7e9d8774e16de6317e8c409f56c53baa05e65d31",
+      "old_sha256": null,
+      "path": "implementation/corrections/PyGRC-ResetBaselinePersistenceChecklist.md",
+      "portable_source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistenceChecklist.md",
+      "status": "A",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_implementation_closeout_authority",
+      "new_sha256": "ef9b116f2c1724516960e0e6799c2816e4b178a4da2db4899c5f598180de6ad3",
+      "old_sha256": null,
+      "path": "implementation/corrections/PyGRC-ResetBaselinePersistenceCloseout.md",
+      "portable_source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistenceCloseout.md",
+      "status": "A",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_implementation_closeout_authority",
+      "new_sha256": "1ee265d39b6cabe56ac6e77bb4643aff502dd645e459be98bc76a075c1fb501f",
+      "old_sha256": null,
+      "path": "implementation/corrections/PyGRC-ResetBaselinePersistencePlan.md",
+      "portable_source_id": "grc:implementation/corrections/PyGRC-ResetBaselinePersistencePlan.md",
+      "status": "A",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "supporting_implementation_context",
+      "new_sha256": "28a5aeabb837feecafccfe9ec59335c82ca225f244a912a7d9c867a12deb7931",
+      "old_sha256": null,
+      "path": "implementation/corrections/README.md",
+      "portable_source_id": "grc:implementation/corrections/README.md",
+      "status": "A",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "supporting_contract_context",
+      "new_sha256": "507342a89925b1bd51f2bff2860a3d68ac2b9d6ab0cfdb2fc44477ebccaad8a7",
+      "old_sha256": "67df164a1d21c76ef675ad94e3c2d0728f5407f91e0b7f76581d39cd55fcc270",
+      "path": "specs/README.md",
+      "portable_source_id": "grc:specs/README.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_schema_or_contract_authority",
+      "new_sha256": "3ccc27250a3ddb2ecccdf27984436e3dee2b10b3f71de610bfbbbcd084ae7be6",
+      "old_sha256": "1e6a4d7eea2c5d9009446a979616539f8649a26cfc9d422ad383247fa0210669",
+      "path": "specs/grc-common-interface.md",
+      "portable_source_id": "grc:specs/grc-common-interface.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_schema_or_contract_authority",
+      "new_sha256": "20a75f525b1a46e97afaa3aa9e16f63adddc754ded088fa38cd666272ddc8891",
+      "old_sha256": null,
+      "path": "specs/grc-reset-baseline-persistence.md",
+      "portable_source_id": "grc:specs/grc-reset-baseline-persistence.md",
+      "status": "A",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_schema_or_contract_authority",
+      "new_sha256": "08c3ee95a9b76016648e14d028120bdebc88d2a109387874c32e4a462b037458",
+      "old_sha256": "1b2c7dcb4254468c39c2328c5365714813d5fef8bd2d443e4dcdd5f34283afc6",
+      "path": "specs/lgrc-9-v3-restoration-identity.md",
+      "portable_source_id": "grc:specs/lgrc-9-v3-restoration-identity.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_schema_or_contract_authority",
+      "new_sha256": "a272102d8463359c2f9d7a40ce63b3be52509b517da67579127ab6845ff36dc4",
+      "old_sha256": "02f7b8a6a4f1313d3137af2298e718f7a2456d4e327100dec4e8a39af39443ef",
+      "path": "specs/lgrc-9-v3-spec.md",
+      "portable_source_id": "grc:specs/lgrc-9-v3-spec.md",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae",
+      "old_sha256": "a4c0c7cc475ccc6e9e21f160b1e2cf35bbe3635f9c7f7429ed646d9fc66b445c",
+      "path": "src/pygrc/core/__init__.py",
+      "portable_source_id": "grc:src/pygrc/core/__init__.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+      "old_sha256": "fea39d221746e54313e51208ec5d48e1efdf9a6d272aa64987535ea142a5d019",
+      "path": "src/pygrc/core/interfaces.py",
+      "portable_source_id": "grc:src/pygrc/core/interfaces.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4",
+      "old_sha256": "6d3de4bc62e28d53301ae8c10d772f68672c61626f54cb9711056f1e9c81d874",
+      "path": "src/pygrc/core/serialization.py",
+      "portable_source_id": "grc:src/pygrc/core/serialization.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+      "old_sha256": "31f7105365214c83f76f53aa7be1f1e0fcfc484bb96a88ab04729c1635df74dc",
+      "path": "src/pygrc/models/__init__.py",
+      "portable_source_id": "grc:src/pygrc/models/__init__.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_implementation_context",
+      "new_sha256": "e5e2a310def994b0583ba0185e3243253095a5a919804da2fce860df1911eeff",
+      "old_sha256": "32d528d857bb251a09de16ff90e1405f9badbe1aa3206f105656c0330ccdff06",
+      "path": "src/pygrc/models/_base.py",
+      "portable_source_id": "grc:src/pygrc/models/_base.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_implementation_context",
+      "new_sha256": "a857f41ea919bb311d283681a13609e4bac6c5295d975ab61e57559454131de1",
+      "old_sha256": "5c3e244c1ead352e1624f3238a772b4edeaecb5de0bd9c297ccc782bc350aaf9",
+      "path": "src/pygrc/models/grc_9.py",
+      "portable_source_id": "grc:src/pygrc/models/grc_9.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+      "old_sha256": "6552dbb711b03ce5e2a2fe15815d9c6c6de464d7b06afb2dc677e4704fbfe42f",
+      "path": "src/pygrc/models/grc_9_v3.py",
+      "portable_source_id": "grc:src/pygrc/models/grc_9_v3.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_implementation_context",
+      "new_sha256": "949bbb90766193934c96e4c4cbb84d3838e175b92968d93f9650477cce9e925e",
+      "old_sha256": "25424f8c458ad39c55e16f7cba1ddfd764dd0a6ce1c51b69da5913d0df6b79a4",
+      "path": "src/pygrc/models/grc_v2.py",
+      "portable_source_id": "grc:src/pygrc/models/grc_v2.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_implementation_context",
+      "new_sha256": "01081bc3f2b394a0797d93c38539a3d6139c6bb412323f6eda09a4fe7c66b473",
+      "old_sha256": "bc639e7c927ab0fde538b2bde35b9f9278b4d75a1d63cf191f43db54b8292ac6",
+      "path": "src/pygrc/models/grc_v3.py",
+      "portable_source_id": "grc:src/pygrc/models/grc_v3.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "old_sha256": "57693baaa431ff5de9f299322cf80cb82f2114055ade4b27b06c52b36e9339df",
+      "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+      "portable_source_id": "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_runtime_or_public_api_authority",
+      "new_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "old_sha256": "40e886cd4310b45881c5e9ca22c0594cbb73f1241a63ddfd5ce57ea1373d6552",
+      "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+      "portable_source_id": "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_generic_conformance_authority",
+      "new_sha256": "702c67b6cc8d98c8ae87e586f7270e5afab65d8c2178527b651a14effbc98e69",
+      "old_sha256": "31f7866f2bdb8168e5c1568b6d7cef5e7e661df3c0d4d83755cde46832ffedff",
+      "path": "tests/core/test_interfaces.py",
+      "portable_source_id": "grc:tests/core/test_interfaces.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_generic_conformance_authority",
+      "new_sha256": "f19f762830853ed35d243ab7390dc3e7337ee1c7fb05922b0c2742f3062c7bcc",
+      "old_sha256": "f3dd8024666e16fb669094341e0613abddabd40bddaea32d461bd054aa19e4a2",
+      "path": "tests/core/test_serialization_contract.py",
+      "portable_source_id": "grc:tests/core/test_serialization_contract.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_regression_context",
+      "new_sha256": "68693ccd01da4760a6d099d9cd5e4e52a6d5084b03b684eee1847fe972fa9c9d",
+      "old_sha256": "7ec58dfd406985a38aa784a879b43181898d8bdd99d18e1e87f7f24e14f9e5c4",
+      "path": "tests/models/test_family_stubs.py",
+      "portable_source_id": "grc:tests/models/test_family_stubs.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_regression_context",
+      "new_sha256": "962d266938a06c1894361e9f3d97cdea59ba048ba8a8c6e43cc5832c001a9e05",
+      "old_sha256": "1d2179b41dd5334c367bb20ee24ae4f3471924e5b3791d650a6c7e9979c7cdea",
+      "path": "tests/models/test_grc_9_step.py",
+      "portable_source_id": "grc:tests/models/test_grc_9_step.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": false,
+      "i02r2_role": "cross_family_regression_context",
+      "new_sha256": "29d3016512f8bf75f9c318c382a6c9f11a689f17ffabd3e7788f9d238bbb319e",
+      "old_sha256": "b3ab637086df08ce0c2cefca2b09d69ddd454682f96d80cffb0855621723a52c",
+      "path": "tests/models/test_grc_v2_runtime_persistence.py",
+      "portable_source_id": "grc:tests/models/test_grc_v2_runtime_persistence.py",
+      "status": "M",
+      "worktree_matches_proposed_revision": true
+    },
+    {
+      "admission_authority_for_reset_revalidation": true,
+      "i02r2_role": "affected_generic_conformance_authority",
+      "new_sha256": "6236748f6bc7995dda86f7a207ccce373b33d1b7ecd90849106839baa305f01a",
+      "old_sha256": null,
+      "path": "tests/models/test_reset_baseline_persistence.py",
+      "portable_source_id": "grc:tests/models/test_reset_baseline_persistence.py",
+      "status": "A",
+      "worktree_matches_proposed_revision": true
+    }
+  ],
+  "claim_boundary": "Exact upstream source transition and generic conformance authority only; context paths are not runtime dependencies by this record, and no realization or scientific evidence is assigned.",
+  "iteration_id": "P2-I2-I02R2",
+  "lane_id": "AE01-L02",
+  "previous_admitted_revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+  "proposed_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "provider_transition": {
+    "added_reset_aware_digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+    "added_reset_aware_provider": "pygrc.models.lgrc9v3_restoration_identity_v2",
+    "provider_selected_for_p2_i2": false,
+    "retained_current_state_provider": "pygrc.models.lgrc9v3_restoration_identity_v1",
+    "v1_redefined": false
+  },
+  "status": "exact_transition_reconstructed"
+}

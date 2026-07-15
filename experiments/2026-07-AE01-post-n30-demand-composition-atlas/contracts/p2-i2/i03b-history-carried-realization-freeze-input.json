@@ -1,0 +1,194 @@
+{
+  "artifact_id": "P2-I2-I03B-HISTORY-CARRIED-REALIZATION-FREEZE-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "1d1ab37502b9138c5c98b3048bd854ac7ed17d5775c9fd34ad8475608a0bcc7f"
+  },
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03B",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "frozen_before_history_carried_source_comparison",
+  "pool_dependence_mode": "history_carried",
+  "purpose": "Independently compare admitted history-carried realization options, select native/minimally producer-assisted/missing-prerequisite disposition within this mode, and freeze the causal design before any history-carried runtime call.",
+  "entry_authority": {
+    "owner_direction": "Accept the review-ready I03A/I03AR1 package for staged progression and move to 8B next.",
+    "owner_direction_effect": "Authorizes design-first P2-I2-I03B only; no I03C, I04, calibration, registration, scientific candidate, control result, or L02 conclusion.",
+    "rcae_entry_revision": "c13ccb74d3ddc7c6f8f3870a15e17e024c9200dd",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_repository_read_only": true,
+    "decisions": [
+      "P2-I2-DEC-011",
+      "P2-I2-DEC-012"
+    ]
+  },
+  "bound_prior_artifacts": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i01-capability-matrix.json",
+      "sha256": "a3a75ad59e947718729d6e0874ec91ac9b934895cd10eec59273b1b29317c6ad",
+      "allowed_use": "historical capability questions and dispositions only"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+      "sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+      "allowed_use": "exact admitted source/public callable/provider authority"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-freeze-input.json",
+      "sha256": "34d0903c746fb67abff5a1c12bb252b5cb15933d2de75e56f1232fbe7dfd0845",
+      "allowed_use": "fixed earlier-mode boundary only"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json",
+      "sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+      "allowed_use": "prevent silent rewrite of the accepted state-carried profile"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+      "sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+      "allowed_use": "provenance and no-cross-mode-reuse guard only; observed values and branch outcomes are forbidden I03B selection inputs"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-runtime-reconstruction-receipt.json",
+      "sha256": "42389c5b78754e2f91a71235fd692f7f6420ac5c34efeccdd38c1a331b4a8c1b",
+      "allowed_use": "owner-review/progression provenance only"
+    }
+  ],
+  "admitted_source_scope": {
+    "manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+    "manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+    "source_ids": [
+      "grc:pyproject.toml",
+      "grc:src/pygrc/__init__.py",
+      "grc:src/pygrc/core/__init__.py",
+      "grc:src/pygrc/core/interfaces.py",
+      "grc:src/pygrc/core/serialization.py",
+      "grc:src/pygrc/models/__init__.py",
+      "grc:src/pygrc/models/grc_9_v3.py",
+      "grc:src/pygrc/models/grc_9_v3_state.py",
+      "grc:src/pygrc/models/lgrc_9_v3.py",
+      "grc:src/pygrc/models/lgrc_9_v3_contract.py",
+      "grc:src/pygrc/models/lgrc_9_v3_packets.py",
+      "grc:src/pygrc/models/lgrc_9_v3_runtime.py",
+      "grc:src/pygrc/models/lgrc_9_v3_runtime_state.py",
+      "grc:src/pygrc/models/lgrc_9_v3_restoration.py",
+      "grc:src/pygrc/models/lgrc_9_v3_timing.py",
+      "grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+      "grc:tests/models/test_lgrc_9_v3_contract.py",
+      "grc:tests/models/test_lgrc_9_v3_runtime.py",
+      "grc:tests/models/test_lgrc_9_v3_restoration.py",
+      "grc:tests/models/test_lgrc_9_v3_restoration_matrix.py"
+    ],
+    "new_graph_source_admission_allowed": false,
+    "unadmitted_private_symbol_use_allowed": false,
+    "generic_existing_tests_allowed_as_supporting_evidence": true,
+    "new_history_carried_runtime_probe_allowed_during_design_comparison": false
+  },
+  "comparison_questions": [
+    {
+      "question_id": "I03B-Q01",
+      "question": "Which exact model-owned or producer-owned object would be the active common causal history H_P, distinct from encounter state C_P and audit-only lineage L?"
+    },
+    {
+      "question_id": "I03B-Q02",
+      "question": "Can two attributable contributions jointly constitute H_P without preserving contributor-private mailboxes or a controller-authored success field?"
+    },
+    {
+      "question_id": "I03B-Q03",
+      "question": "Does the later response read H_P through one common non-private access path while encounter-time carrier state is matched?"
+    },
+    {
+      "question_id": "I03B-Q04",
+      "question": "Can a history-only intervention alter H_P and the later response while preserving registered marginal contributions, encounter state, support, opportunity, and audit attribution?"
+    },
+    {
+      "question_id": "I03B-Q05",
+      "question": "Can a state-only intervention alter encounter state without changing H_P, so history dependence is separated from the accepted state-carried profile?"
+    },
+    {
+      "question_id": "I03B-Q06",
+      "question": "Which history components are active causal inputs, which are audit-only, and which forbidden labels/controller fields are absent from the response path?"
+    },
+    {
+      "question_id": "I03B-Q07",
+      "question": "Does native restoration identity cover the selected active history and reset baseline, or what explicit RCAE composite identity is required?"
+    },
+    {
+      "question_id": "I03B-Q08",
+      "question": "Are native public interfaces adequate; if not, what is the minimal separable RCAE producer boundary, or which prerequisite is missing?"
+    },
+    {
+      "question_id": "I03B-Q09",
+      "question": "How do all seven logical cells, five L02 controls, OP-01..OP-09, private partitions, access witness, and equal-input continuation project into history_carried mode without rewriting state_carried?"
+    }
+  ],
+  "candidate_dispositions": [
+    {
+      "realization_class": "pygrc_native_candidate",
+      "admission_rule": "Every active-history mutation, common-history read, response transition, intervention, and restoration-relevant state is owned by admitted public PyGRC machinery; RCAE supplies declarative roles/orchestration/guards only."
+    },
+    {
+      "realization_class": "minimally_producer_assisted",
+      "admission_rule": "PyGRC lacks one necessary active-history transition or read, and one explicitly frozen RCAE producer supplies only that missing separable operation without computing both pool history and success."
+    },
+    {
+      "realization_class": "missing_prerequisite",
+      "admission_rule": "No bounded native or separable producer-assisted realization can preserve common history, matched state, history intervention, access, restoration, and no-controller guards."
+    }
+  ],
+  "selection_order": [
+    "pygrc_native_candidate",
+    "minimally_producer_assisted",
+    "missing_prerequisite"
+  ],
+  "history_carried_minimum_contract": {
+    "encounter_state_matched_across_primary_history_contrast": true,
+    "ordered_or_structured_common_history_is_causal": true,
+    "audit_lineage_alone_is_not_causal_history": true,
+    "later_response_reads_common_history_without_source_address": true,
+    "history_only_intervention_required": true,
+    "state_only_separation_required": true,
+    "private_partition_no_common_read_guard_required": true,
+    "restoration_and_equal_continuation_disposition_required": true,
+    "controller_authored_success_forbidden": true
+  },
+  "cross_mode_contamination_guards": {
+    "i03ar1_observed_values_may_select_i03b_values": false,
+    "i03ar1_branch_outcomes_may_select_i03b_realization": false,
+    "state_carried_response_read_may_be_relabelled_history_carried": false,
+    "audit_packet_order_may_be_relabelled_active_history_without_response_read": false,
+    "i03b_may_rewrite_i03a_contract": false,
+    "i03b_may_rank_modes": false
+  },
+  "design_phase_run_policy": {
+    "history_carried_model_instantiations": 0,
+    "history_carried_runtime_operations": 0,
+    "candidate_or_control_executions": 0,
+    "source_comparison": "static admitted source/dataflow plus pre-existing generic tests only",
+    "parameter_search_allowed": false,
+    "scientific_response_or_comparator_selection_allowed": false,
+    "calibration_or_registration_value_selection_allowed": false
+  },
+  "required_design_outputs": {
+    "contract": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-validation.json",
+    "validator": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_validate.py",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03B-history-carried-realization-and-operational-hypothesis-freeze.md",
+    "decision": "P2-I2-DEC-014 or explicit missing-prerequisite disposition"
+  },
+  "runtime_transition_rule": {
+    "runtime_allowed_before_design_contract_and_static_validation": false,
+    "separate_runtime_freeze_required": true,
+    "one_evidence_invocation": true,
+    "one_reconstruction_invocation": true,
+    "retry_limit": 0,
+    "scientific_evidence_effect": "none"
+  },
+  "evidence_effect": "design/source-comparison authority only; no realization is selected by this freeze and no implementation or scientific evidence is produced"
+}

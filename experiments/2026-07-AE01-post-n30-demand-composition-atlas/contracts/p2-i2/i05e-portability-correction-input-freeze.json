@@ -1,0 +1,51 @@
+{
+  "activity_id": "P2-I2-I05E-BOUNDED-PORTABLE-PATH-CORRECTION",
+  "artifact_id": "P2-I2-I05E-I05-PORTABILITY-CORRECTION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-026",
+    "decision_id": "P2-I2-DEC-033",
+    "owner_accepted_i05d_inventory": true,
+    "owner_authorized_first_group": true
+  },
+  "baseline_audit_identity": {
+    "affected_file_count": 11,
+    "correction_group": "i05_active_execution_and_closeout",
+    "result_sha256": "e089ada21a0942e8d7db88e661e3119c0875f81452dda23e587bfd27101a07cf",
+    "violation_count": 32
+  },
+  "candidate_or_runtime_evidence_effect": "none",
+  "correction_scope_count": 11,
+  "expected_outputs": {
+    "lineage_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05e-portable-projection-lineage.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05E-portability-correction.md",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05e-portability-correction-validation.json"
+  },
+  "historical_execution_identity": {
+    "commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+    "final_receipt_sha256": "1f1694b96f22cde12b54a2e0c00ce76b58f2fdf2fc7cff1114bcc46b9a3396be",
+    "governed_output_sha256": "20cf095f03ac7ef7b932f52e6e79b35a3e962db42b583999f44bf81f373582b6",
+    "permanent_claim_sha256": "16f17846449072140f8fafc8222c214fbe93ca3b99000ccaf43efad1bd449ea4"
+  },
+  "invocation_ceiling": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "null_builder_or_wrapper_invocations": 0,
+    "pygrc_model_instantiations": 0,
+    "static_validation_invocations": 3
+  },
+  "iteration_id": "P2-I2-I05E",
+  "lane_id": "AE01-L02",
+  "later_correction_groups_authorized": false,
+  "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05e_portability_correction_policy.json",
+  "policy_sha256": "3030fe2cae3eb7561272522aa171f34b173bc13dc94a85a270528673c5465544",
+  "pre_correction_authority_identities": {
+    "checklist_sha256": "a9c7a5d52945676302f44fadee9f9c11d09c326a10362eb42341e6f226a8cfd1",
+    "decision_record_sha256": "9e38814399571025132e0c264d68745f86fb855fa341c6d5315b8e9dd5e8da74",
+    "hypothesis_sha256": "c005d9e64b6e0d0b5784435ef7d10dc286b1aa2660dcc72c53f7927e55f9b045"
+  },
+  "result_status_ceiling": "P2-I2-I05E-I05-GROUP-REVIEW-READY",
+  "scientific_change_authorized": false,
+  "source_identity_rule": "the policy correction_scope binds every pre-correction current-tree byte and must match the I05D group exactly",
+  "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05e_validate.py"
+}

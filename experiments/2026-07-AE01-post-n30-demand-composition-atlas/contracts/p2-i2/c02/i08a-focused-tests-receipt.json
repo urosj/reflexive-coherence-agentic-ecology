@@ -1,0 +1,30 @@
+{
+  "artifact_id": "P2-I2-I08A-C02-FOCUSED-TESTS-RECEIPT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "cycle_id": "P2-I2-C02",
+  "status": "passed",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py"
+  ],
+  "passed": 8,
+  "failed": 0,
+  "reported_runtime_seconds": 0.14,
+  "test_source_sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280",
+  "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
+  "native_exit_child_process_starts": 1,
+  "success_attestation_child_process_starts": 1,
+  "total_test_child_python_starts": 2,
+  "infrastructure_retries": 0,
+  "pygrc_imports": 0,
+  "models_or_adapters_constructed": 0,
+  "candidate_or_control_operations": 0,
+  "scientific_windows": 0,
+  "C01_claim_mutated": false,
+  "C02_candidate_execution_occurred": false
+}

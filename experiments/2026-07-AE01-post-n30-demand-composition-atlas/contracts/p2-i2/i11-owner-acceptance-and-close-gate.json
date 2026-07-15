@@ -1,0 +1,116 @@
+{
+  "acceptance_authority": {
+    "decision_id": "P2-I2-DEC-061",
+    "owner_direction": "commit changes",
+    "owner_direction_effect": "explicit_acceptance_CLOSE_GATE_passage_and_one_containing_commit_authorization"
+  },
+  "accepted_result": {
+    "classification_value": "T3_operational_class",
+    "highest_valid_rung": "AE01-L02-R05",
+    "lane_support_status": "scaffold_dependent",
+    "mode_dispositions": {
+      "history_carried": "scaffold_dependent_mixed_direction_order_conditioned",
+      "hybrid": "scaffold_dependent_mixed_direction_order_conditioned",
+      "state_carried": "native_expression_candidate_robust_aligned"
+    },
+    "strongest_valid_claim": "bounded shared-pool co-conditioning demand pattern",
+    "terminal_classification": "supported_bounded_candidate"
+  },
+  "artifact_id": "P2-I2-I11-OWNER-ACCEPTANCE-AND-CLOSE-GATE",
+  "artifact_version": "1.0.0",
+  "base_commit": "b28ef173a70edde0c1f3e034cac9c9c183c6ce95",
+  "commit_authority": {
+    "authorized": true,
+    "containing_commit_count": 1,
+    "resulting_HEAD_self_reference": "intentionally_not_embedded",
+    "scope": "complete_I11_reviewed_package_acceptance_record_and_final_governance_navigation"
+  },
+  "final_navigation_and_governance_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
+      "sha256": "8238eecee3662f3e60941ee98eae10e2ae314315a2bf90280aec9c3b2e35e259"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md",
+      "sha256": "1cdd315485a66b0b882542f636f77129ce2fb0d2e8796b8697c3c052412a6b78"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "sha256": "ab96f7e3933c74a046e5b01285adbebb0ae181120ea20df1722c6ccd0239468d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "sha256": "4522170e7950c90c6462a1e374bae31cef99c4b76c518cc81ece9d612114d03a"
+    },
+    {
+      "path": "implementation/PostN30-checklist.md",
+      "sha256": "7fa22f181239ef3c1b0ac527f40c139aa9d72257f8d6ce42444463817ce18e3b"
+    },
+    {
+      "path": "implementation/PostN30-plan.md",
+      "sha256": "5bd89018e0ae787321cbec825674d1ca413bdcf7fe39c4ad81d174c437143dcd"
+    }
+  ],
+  "gate_disposition": {
+    "P2-I2-CLOSE-GATE": "passed_after_explicit_owner_acceptance",
+    "P2-I2-INTERPRET-GATE": "passed_after_explicit_owner_acceptance",
+    "prior_gate_status": "unchanged_and_passed"
+  },
+  "iteration_id": "P2-I2-I11",
+  "lane_id": "AE01-L02",
+  "preserved_boundaries": {
+    "cross_lane_synthesis_authorized": false,
+    "mode_ranking_authorized": false,
+    "n31_selection_authorized": false,
+    "native_implementation_priority_assigned": false,
+    "naturalization_probe_authorized": false,
+    "next_move_executed": false,
+    "pygrc_mutation_authorized": false,
+    "reviewed_technical_bytes_changed_after_review": false
+  },
+  "reviewed_navigation_handoff_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
+      "sha256": "ce4f0c58e1f715e0f6000217d9cce09daa2a71a259e92073da900d033398833f"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md",
+      "sha256": "75a5fe8c104e0d208c5155e1b6fe22958096c64ce2ab0af7270f28df07a2796c"
+    }
+  ],
+  "reviewed_technical_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-interpretation-input-freeze.json",
+      "sha256": "e31ae01228be00f72f3184c26b21464d2e87799c2532f90d602d5ba913d3a7d3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-developmental-interpretation.json",
+      "sha256": "adc9a6f34966c8e0e58a611186cf1b87bbd7ba511f96065899691a9207b0f9b6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-requirement-extraction.json",
+      "sha256": "5f3670e4cffba7af1c6e15c26c705ed8b85c6e539950d0c8b5f1dda31333edc7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-terminal-classification.json",
+      "sha256": "c019bcd4bce4fe67fddb78143a4709b8411b6eb95ac6b3eee2219bcead93d567"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-closeout-manifest.json",
+      "sha256": "bf5a530de7cc41137befb29a2864a77a53ecc57aadebdb89d0f92f99aac7ab0a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-closeout-validation.json",
+      "sha256": "573078213ccef2e57bc919b6f770c50d21a1fb7d419e97aaa2322480e63e62ea"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I11-terminal-closeout.md",
+      "sha256": "e80bffac6e778939c4a402747abe12504248582d59603a887bd9077e40077d60"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i11_closeout.py",
+      "sha256": "04c03c66773d893cfa0827a90293e6220c53de62faca6671a244d1bf2f4b2851"
+    }
+  ],
+  "status": "owner_accepted_CLOSE_GATE_passed_commit_authorized"
+}

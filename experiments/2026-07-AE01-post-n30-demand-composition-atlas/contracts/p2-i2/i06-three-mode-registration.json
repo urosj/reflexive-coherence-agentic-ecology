@@ -1,0 +1,357 @@
+{
+  "artifact_id": "P2-I2-I06-EXACT-THREE-MODE-REGISTRATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06",
+  "lane_id": "AE01-L02",
+  "status": "exact_registration_frozen_pending_static_and_baseline_only_validation",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-input-freeze.json",
+    "sha256": "b198fa71f312a43ef9df2a706cef19c00d8916c078912a6dbea6f8566d79e8bf"
+  },
+  "mode_family": {
+    "required_modes": ["state_carried", "history_carried", "hybrid"],
+    "selection_or_ranking": false,
+    "cross_mode_pooling": false,
+    "shared_topology": true,
+    "shared_topology_meaning": "matched physical opportunity only; causal carrier and response masks remain mode-specific",
+    "state_carried_realization": "pygrc_native_candidate",
+    "history_carried_realization": "minimally_producer_assisted",
+    "hybrid_realization": "minimally_producer_assisted"
+  },
+  "runtime_identity": {
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_required": "clean",
+    "python_command": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "pygrc_import": "PYTHONPATH=external-repository:graph-reflexive-coherence/src",
+    "ambient_or_installed_pygrc_fallback": false,
+    "native_restoration_provider": "pygrc.models.lgrc9v3_restoration_identity_v2",
+    "native_restoration_digest_provider": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+    "history_adapter": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+      "sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7",
+      "class": "RCAEActiveHistoryAdapterV2",
+      "schema": "p2_i2_i06_active_history_adapter_v2",
+      "causal_scope": "active source-label-free H_P, intervention, ordered fold, and native M_H materialization only",
+      "response_state_read_or_response_schedule": false
+    }
+  },
+  "topology": {
+    "topology_id": "p2-i2-i06-l02-shared-opportunity-topology-v1",
+    "params": {
+      "dt": 0.25,
+      "edge_conductance": 1.5,
+      "edge_geometric_length": 0.75,
+      "edge_temporal_delay": 0.625,
+      "edge_flux_coupling": 0.0,
+      "causal_modes": {
+        "causal_layer_mode": "packetized_fixed_topology",
+        "lgrc_runtime_level": "lgrc2",
+        "lapse_policy": "unit_lapse",
+        "edge_delay_policy": "constant_delay",
+        "event_time_policy": "explicit_event_time_key",
+        "proper_time_accumulation_policy": "local_event_frontier",
+        "causal_pulse_substrate_surface_enabled": true,
+        "causal_pulse_substrate_surface_policy": "emit_rows",
+        "causal_pulse_substrate_surface_validated": false
+      }
+    },
+    "nodes": [
+      {"node_id": 0, "role": "S1", "initial_coherence": 7.5},
+      {"node_id": 1, "role": "S2", "initial_coherence": 7.5},
+      {"node_id": 2, "role": "P", "initial_coherence": 0.75},
+      {"node_id": 3, "role": "K_DIV_Q1", "initial_coherence": 0.0},
+      {"node_id": 4, "role": "K_DIV_Q2", "initial_coherence": 0.0},
+      {"node_id": 5, "role": "K_P", "initial_coherence": 0.0},
+      {"node_id": 6, "role": "P1_PRIVATE", "initial_coherence": 0.75},
+      {"node_id": 7, "role": "P2_PRIVATE", "initial_coherence": 0.75},
+      {"node_id": 8, "role": "M_H", "initial_coherence": 0.0},
+      {"node_id": 9, "role": "R_H_PLUS", "initial_coherence": 7.5},
+      {"node_id": 10, "role": "K_H", "initial_coherence": 0.0},
+      {"node_id": 11, "role": "M_H1", "initial_coherence": 0.0},
+      {"node_id": 12, "role": "R_H1_PLUS", "initial_coherence": 7.5},
+      {"node_id": 13, "role": "K_H1", "initial_coherence": 0.0},
+      {"node_id": 14, "role": "M_H2", "initial_coherence": 0.0},
+      {"node_id": 15, "role": "R_H2_PLUS", "initial_coherence": 7.5},
+      {"node_id": 16, "role": "K_H2", "initial_coherence": 0.0},
+      {"node_id": 17, "role": "B_REF", "initial_coherence": 0.25},
+      {"node_id": 18, "role": "E_SOURCE", "initial_coherence": 3.25},
+      {"node_id": 19, "role": "E_TARGET", "initial_coherence": 0.25},
+      {"node_id": 20, "role": "A_PRIMARY", "initial_coherence": 7.5},
+      {"node_id": 21, "role": "A_ALTERNATE", "initial_coherence": 7.5},
+      {"node_id": 22, "role": "B", "initial_coherence": 4.25}
+    ],
+    "edges": [
+      {"edge_id": 0, "edge_role": "S1_TO_P", "source": "S1", "target": "P"},
+      {"edge_id": 1, "edge_role": "S2_TO_P", "source": "S2", "target": "P"},
+      {"edge_id": 2, "edge_role": "S1_TO_K_DIV_Q1", "source": "S1", "target": "K_DIV_Q1"},
+      {"edge_id": 3, "edge_role": "S2_TO_K_DIV_Q2", "source": "S2", "target": "K_DIV_Q2"},
+      {"edge_id": 4, "edge_role": "P_TO_K_P", "source": "P", "target": "K_P"},
+      {"edge_id": 5, "edge_role": "S1_TO_P1_PRIVATE", "source": "S1", "target": "P1_PRIVATE"},
+      {"edge_id": 6, "edge_role": "S2_TO_P2_PRIVATE", "source": "S2", "target": "P2_PRIVATE"},
+      {"edge_id": 7, "edge_role": "R_H_PLUS_TO_M_H", "source": "R_H_PLUS", "target": "M_H"},
+      {"edge_id": 8, "edge_role": "M_H_TO_K_H", "source": "M_H", "target": "K_H"},
+      {"edge_id": 9, "edge_role": "R_H1_PLUS_TO_M_H1", "source": "R_H1_PLUS", "target": "M_H1"},
+      {"edge_id": 10, "edge_role": "M_H1_TO_K_H1", "source": "M_H1", "target": "K_H1"},
+      {"edge_id": 11, "edge_role": "R_H2_PLUS_TO_M_H2", "source": "R_H2_PLUS", "target": "M_H2"},
+      {"edge_id": 12, "edge_role": "M_H2_TO_K_H2", "source": "M_H2", "target": "K_H2"},
+      {"edge_id": 13, "edge_role": "E_SOURCE_TO_E_TARGET", "source": "E_SOURCE", "target": "E_TARGET"},
+      {"edge_id": 14, "edge_role": "A_PRIMARY_TO_B", "source": "A_PRIMARY", "target": "B"},
+      {"edge_id": 15, "edge_role": "A_ALTERNATE_TO_B", "source": "A_ALTERNATE", "target": "B"}
+    ],
+    "unique_history_admission_paths": [
+      {"source_role": "S1", "target_role": "P", "edge_role": "S1_TO_P", "route_count": 1},
+      {"source_role": "S2", "target_role": "P", "edge_role": "S2_TO_P", "route_count": 1}
+    ],
+    "B_purity": {
+      "B_role": "B",
+      "distinct_from": ["B_REF", "P", "M_H", "P1_PRIVATE", "P2_PRIVATE", "M_H1", "M_H2"],
+      "incoming_edges": ["A_PRIMARY_TO_B", "A_ALTERNATE_TO_B"],
+      "outgoing_edges": [],
+      "causal_flux_routes": [],
+      "background_or_balancing_updates": false
+    }
+  },
+  "contribution_and_schedule": {
+    "contributions": [
+      {"contribution_id": "q1", "source_role": "S1", "common_target_role": "P", "common_edge_role": "S1_TO_P", "diversion_target_role": "K_DIV_Q1", "diversion_edge_role": "S1_TO_K_DIV_Q1", "private_target_role": "P1_PRIVATE", "private_edge_role": "S1_TO_P1_PRIVATE", "amount": 0.625, "token_type_id": "p2-i2-i06-native-arrival-token-v1"},
+      {"contribution_id": "q2", "source_role": "S2", "common_target_role": "P", "common_edge_role": "S2_TO_P", "diversion_target_role": "K_DIV_Q2", "diversion_edge_role": "S2_TO_K_DIV_Q2", "private_target_role": "P2_PRIVATE", "private_edge_role": "S2_TO_P2_PRIVATE", "amount": 0.875, "token_type_id": "p2-i2-i06-native-arrival-token-v1"}
+    ],
+    "physical_orders": {
+      "q1_then_q2": ["q1", "q2"],
+      "q2_then_q1": ["q2", "q1"]
+    },
+    "schedule": {
+      "first_departure_event_time_key": 10.25,
+      "arrival_offset": 0.625,
+      "reserved_slot_increment": 1.25,
+      "first_scheduler_event_index": 10,
+      "first_packet_index": 10,
+      "materialization_slot_index": 2,
+      "neutral_contact_slot_index": 3,
+      "response_arrival_event_time_key": 15.625,
+      "slot_assignment_is_order_invariant": true
+    },
+    "neutral_contact": {"source_role": "E_SOURCE", "target_role": "E_TARGET", "edge_role": "E_SOURCE_TO_E_TARGET", "amount": 0.03125, "matched_fields": ["amount", "edge", "departure_time", "arrival_time", "scheduler_index", "packet_index", "support", "queue_state"]},
+    "state_debit": {"source_role": "P", "target_role": "K_P", "edge_role": "P_TO_K_P", "amount": 0.4375}
+  },
+  "history_adapter_profiles": {
+    "history_common": {"carrier_id": "p2-i2-i06-history-H_P-common", "pool_target_role": "P", "registered_source_roles": ["S1", "S2"], "readout_role": "M_H", "positive_reservoir_role": "R_H_PLUS", "negative_sink_role": "K_H", "positive_edge_role": "R_H_PLUS_TO_M_H", "negative_edge_role": "M_H_TO_K_H", "recency_coefficient": 0.375, "materialization_tolerance": 2.842170943040401e-14, "max_tokens": 2},
+    "history_private_one": {"carrier_id": "p2-i2-i06-history-H1-private", "pool_target_role": "P1_PRIVATE", "registered_source_roles": ["S1"], "readout_role": "M_H1", "positive_reservoir_role": "R_H1_PLUS", "negative_sink_role": "K_H1", "positive_edge_role": "R_H1_PLUS_TO_M_H1", "negative_edge_role": "M_H1_TO_K_H1", "recency_coefficient": 0.375, "materialization_tolerance": 2.842170943040401e-14, "max_tokens": 1},
+    "history_private_two": {"carrier_id": "p2-i2-i06-history-H2-private", "pool_target_role": "P2_PRIVATE", "registered_source_roles": ["S2"], "readout_role": "M_H2", "positive_reservoir_role": "R_H2_PLUS", "negative_sink_role": "K_H2", "positive_edge_role": "R_H2_PLUS_TO_M_H2", "negative_edge_role": "M_H2_TO_K_H2", "recency_coefficient": 0.375, "materialization_tolerance": 2.842170943040401e-14, "max_tokens": 1},
+    "hybrid_common": {"carrier_id": "p2-i2-i06-hybrid-H_P-common", "pool_target_role": "P", "registered_source_roles": ["S1", "S2"], "readout_role": "M_H", "positive_reservoir_role": "R_H_PLUS", "negative_sink_role": "K_H", "positive_edge_role": "R_H_PLUS_TO_M_H", "negative_edge_role": "M_H_TO_K_H", "recency_coefficient": 0.375, "materialization_tolerance": 2.842170943040401e-14, "max_tokens": 2},
+    "hybrid_private_one": {"carrier_id": "p2-i2-i06-hybrid-H1-private", "pool_target_role": "P1_PRIVATE", "registered_source_roles": ["S1"], "readout_role": "M_H1", "positive_reservoir_role": "R_H1_PLUS", "negative_sink_role": "K_H1", "positive_edge_role": "R_H1_PLUS_TO_M_H1", "negative_edge_role": "M_H1_TO_K_H1", "recency_coefficient": 0.375, "materialization_tolerance": 2.842170943040401e-14, "max_tokens": 1},
+    "hybrid_private_two": {"carrier_id": "p2-i2-i06-hybrid-H2-private", "pool_target_role": "P2_PRIVATE", "registered_source_roles": ["S2"], "readout_role": "M_H2", "positive_reservoir_role": "R_H2_PLUS", "negative_sink_role": "K_H2", "positive_edge_role": "R_H2_PLUS_TO_M_H2", "negative_edge_role": "M_H2_TO_K_H2", "recency_coefficient": 0.375, "materialization_tolerance": 2.842170943040401e-14, "max_tokens": 1}
+  },
+  "mode_registry": {
+    "state_carried": {
+      "realization_class": "pygrc_native_candidate",
+      "causal_carrier": {"state_roles": ["P"], "history_carriers": [], "audit_only": ["native packet/event/surface lineage"]},
+      "response_front_mask": ["P"],
+      "response_rear_mask": ["B_REF"],
+      "feedback_threshold": 1.625,
+      "expected_polarity": "positive",
+      "expected_source_surface_digest": null,
+      "producer_owner": "PyGRC",
+      "RCAE_causal_producer": false,
+      "restoration_class": "native_v2_plus_declarative_binding"
+    },
+    "history_carried": {
+      "realization_class": "minimally_producer_assisted",
+      "causal_carrier": {"state_roles": ["M_H"], "history_carriers": ["p2-i2-i06-history-H_P-common"], "excluded_from_response": ["P", "S1", "S2", "native audit lineage"]},
+      "response_front_mask": ["M_H"],
+      "response_rear_mask": ["B_REF"],
+      "feedback_threshold": 0.71875,
+      "expected_polarity": "positive",
+      "expected_source_surface_digest": null,
+      "producer_owner": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for response",
+      "RCAE_computes_success_or_response": false,
+      "restoration_class": "paired_native_v2_adapter_v2_composite"
+    },
+    "hybrid": {
+      "realization_class": "minimally_producer_assisted",
+      "causal_carrier": {"state_roles": ["P", "M_H"], "history_carriers": ["p2-i2-i06-hybrid-H_P-common"], "joint_read": "live native sum over P and M_H exactly once each", "audit_only": ["native lineage"]},
+      "response_front_mask": ["P", "M_H"],
+      "response_rear_mask": ["B_REF"],
+      "feedback_threshold": 2.96875,
+      "expected_polarity": "positive",
+      "expected_source_surface_digest": null,
+      "producer_owner": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for joint response",
+      "RCAE_computes_success_or_response": false,
+      "restoration_class": "paired_native_v2_adapter_v2_joint_composite"
+    }
+  },
+  "response_registration": {
+    "response_id": "fixed_window_native_B_target_coherence_gain",
+    "B_role": "B",
+    "B_before": 4.25,
+    "response_packet_amount": 0.125,
+    "B_after_if_observed": 4.375,
+    "orientation": "identity_higher_is_aligned",
+    "native_closed_coherence_interval": [0.0, 9.25],
+    "response_gain_tolerance": 2.842170943040401e-14,
+    "numeric_admission": {"minimum_from_analysis_floor": 1.024e-9, "response_exceeds_floor_requirement": true, "response_exceeds_1024_ULP_requirement": true, "canonical_JSON_roundtrip_required": true},
+    "producer_primary": {"source_role": "A_PRIMARY", "target_role": "B", "edge_role": "A_PRIMARY_TO_B", "packet_amount": 0.125},
+    "producer_alternate": {"source_role": "A_ALTERNATE", "target_role": "B", "edge_role": "A_ALTERNATE_TO_B", "packet_amount": 0.125},
+    "reference_delta": 0.0625,
+    "window_protocol": {
+      "protocol_id": "p2-i2-native-response-window-v2",
+      "slots": ["capture_B_before_and_empty_queue_identities", "emit_feedback_eligibility_surface_row_once", "produce_feedback_eligibility_events_once", "step_once", "step_once", "capture_B_after_queue_identities_and_event_lineage"],
+      "observed_step_kinds": ["packet_departure", "packet_arrival"],
+      "scientific_zero_step_kinds": ["event_queue_empty", "event_queue_empty"],
+      "contamination_event_ids_required": [],
+      "operational_exception_effect": "null_never_scientific_zero"
+    },
+    "tolerance_separation": {"analysis_arithmetic_delta": 1e-12, "runtime_tolerance_source": "16x_binary64_ULP_over_registered_domain", "runtime_tolerance_inferred_from_delta": false, "runtime_tolerance_less_than_response_over_1024": true}
+  },
+  "primary_comparator": {
+    "candidate_cell": "combined-orders",
+    "branch_ids": ["combined-orders", "q1_admitted_q2_diverted", "q2_admitted_q1_diverted"],
+    "derived_comparator": "maximum oriented response of both complete valid leave-one arms within one mode/seed/physical-order tuple",
+    "tie_rule": "q1-only provenance only when responses are numerically equal; no scientific meaning",
+    "all_or_none_evaluability": true,
+    "weaker_or_surviving_arm_substitution": false,
+    "must_match": ["source debit and activity", "physical contribution amount and type", "timing slot", "queue opportunity", "support consequence", "capacity consequence", "route cost where relevant", "responder opportunity", "B baseline", "response policy"],
+    "inert_sink_exclusions": ["P", "H_P", "M_H", "B", "B_REF", "feedback masks", "producer eligibility", "continuation-relevant state"],
+    "required_receipts": ["branch_configuration_sha256", "source_debit_activity_comparison_sha256", "timing_queue_comparison_sha256", "support_capacity_route_comparison_sha256", "inert_sink_no_influence_configuration_sha256"]
+  },
+  "cell_registry": [
+    {"cell_id": "reference-pool", "subconfigurations": [
+      {"id": "reference_pool_empty", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "no contribution; matched neutral opportunity and response window"},
+      {"id": "reference_pool_write_frozen", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "both source debits routed to inert diversion sinks; common state/history remains reference"}
+    ]},
+    {"cell_id": "individual-contributions", "subconfigurations": [
+      {"id": "s1_only_registered", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "q1 admitted; q2 absent"},
+      {"id": "s2_only_registered", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "q2 admitted; q1 absent"},
+      {"id": "repeat_s1_quantity_matched", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "S1 supplies q1 and q2 physical slots with total debit matched"},
+      {"id": "repeat_s2_quantity_matched", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "S2 supplies q1 and q2 physical slots with total debit matched"}
+    ]},
+    {"cell_id": "combined-orders", "subconfigurations": [
+      {"id": "combined-orders", "modes": ["state_carried", "history_carried", "hybrid"], "physical_orders": ["q1_then_q2", "q2_then_q1"], "operations": "both contributions admitted to the common carrier"}
+    ]},
+    {"cell_id": "pooled-history-shuffle", "subconfigurations": [
+      {"id": "physical_order_reverse", "modes": ["state_carried", "history_carried", "hybrid"], "physical_orders": ["q1_then_q2", "q2_then_q1"], "operations": "same quantities and slots; physical order reversed"},
+      {"id": "audit_lineage_label_permutation", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "arbitrary source lineage strings permuted; physical carrier unchanged"}
+    ]},
+    {"cell_id": "contributor-removal", "subconfigurations": [
+      {"id": "q1_admitted_q2_diverted", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "q1 common admission; q2 matched source debit to K_DIV_Q2"},
+      {"id": "q2_admitted_q1_diverted", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "q2 common admission; q1 matched source debit to K_DIV_Q1"},
+      {"id": "pure_source_label_permutation", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "source lineage labels only are permuted"}
+    ]},
+    {"cell_id": "global-state-exclusion", "subconfigurations": [
+      {"id": "both_common_writes_diverted", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "both source debits reach matched inert sinks"},
+      {"id": "post_write_native_P_debit", "modes": ["state_carried", "hybrid"], "operations": "P-to-K_P native debit after constitution; H_P/M_H fixed in hybrid"},
+      {"id": "history_reference_clamp", "modes": ["history_carried", "hybrid"], "operations": "H_P replaced by registered empty reference and M_H rematerialized; P fixed"},
+      {"id": "history_mode_P_only_debit", "modes": ["history_carried"], "operations": "P native debit with H_P/M_H fixed and P excluded from V"},
+      {"id": "hybrid_full_components", "modes": ["hybrid"], "operations": "candidate P plus candidate H_P/M_H"},
+      {"id": "hybrid_reference_P_candidate_H", "modes": ["hybrid"], "operations": "reference P plus candidate H_P/M_H"},
+      {"id": "hybrid_candidate_P_reference_H", "modes": ["hybrid"], "operations": "candidate P plus reference H_P/M_H"},
+      {"id": "hybrid_reference_components", "modes": ["hybrid"], "operations": "reference P plus reference H_P/M_H"},
+      {"id": "private_partition_one", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "one P1 or H1/M_H1 or P1+H1/M_H1 mask only; no cross-partition aggregate"},
+      {"id": "private_partition_two", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "one P2 or H2/M_H2 or P2+H2/M_H2 mask only; no cross-partition aggregate"},
+      {"id": "direct_address_bypass", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "diagnostic direct contributor-addressed response provenance; excluded from candidate chain"},
+      {"id": "controller_assembled_bypass", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "diagnostic controller-authored aggregate/success provenance; excluded from candidate chain"}
+    ]},
+    {"cell_id": "access-capacity-contrast", "subconfigurations": [
+      {"id": "primary_eligible_responder", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "A_PRIMARY uses the registered mode-specific common mask"},
+      {"id": "alternate_eligible_responder", "modes": ["state_carried", "history_carried", "hybrid"], "operations": "A_ALTERNATE uses the same common mask, policy, reserve class, target, and window"}
+    ]}
+  ],
+  "lane_control_materialization": [
+    {"control_id": "AE01-L02-CTRL-01", "name": "each contributor alone", "branches": ["s1_only_registered", "s2_only_registered", "combined-orders"], "held_fixed": ["opportunity", "support", "window", "response policy", "retained contribution physics"]},
+    {"control_id": "AE01-L02-CTRL-02", "name": "contributor deletion and label permutation", "branches": ["q1_admitted_q2_diverted", "q2_admitted_q1_diverted", "pure_source_label_permutation"], "held_fixed": ["non-target physics", "source debit/activity", "support", "opportunity", "response policy"]},
+    {"control_id": "AE01-L02-CTRL-03", "name": "mode-specific history or component relation", "branches": ["physical_order_reverse", "post_write_native_P_debit", "history_reference_clamp", "history_mode_P_only_debit", "hybrid_reference_P_candidate_H", "hybrid_candidate_P_reference_H"], "held_fixed": ["mode-specific non-target components", "support", "opportunity", "response policy"]},
+    {"control_id": "AE01-L02-CTRL-04", "name": "private and controller substitution", "branches": ["private_partition_one", "private_partition_two", "direct_address_bypass", "controller_assembled_bypass"], "held_fixed": ["quantities", "timing", "support", "opportunity"]},
+    {"control_id": "AE01-L02-CTRL-05", "name": "pool or component freeze with source activity preserved", "branches": ["reference_pool_write_frozen", "both_common_writes_diverted", "post_write_native_P_debit", "history_reference_clamp"], "held_fixed": ["source debit/activity", "amounts", "lineage", "support", "opportunity", "response policy"]}
+  ],
+  "analysis_control_mapping": {
+    "common": {
+      "each_original_source_alone": ["s1_only_registered", "s2_only_registered"],
+      "pure_source_label_permutation": ["pure_source_label_permutation", "audit_lineage_label_permutation"],
+      "contribution_operation_reassignment": ["q1_admitted_q2_diverted", "q2_admitted_q1_diverted"],
+      "symmetric_leave_one_common_carrier_admission": ["combined-orders", "q1_admitted_q2_diverted", "q2_admitted_q1_diverted"],
+      "pool_write_diversion_or_freeze": ["both_common_writes_diverted"],
+      "private_partition_substitution": ["private_partition_one", "private_partition_two"],
+      "direct_or_controller_substitution": ["direct_address_bypass", "controller_assembled_bypass"],
+      "quantity_matched_single_source_repetition": ["repeat_s1_quantity_matched", "repeat_s2_quantity_matched"],
+      "alternate_eligible_responder": ["primary_eligible_responder", "alternate_eligible_responder"]
+    },
+    "state_carried": {
+      "equal_P_order_and_shuffle": ["physical_order_reverse"],
+      "post_write_P_debit": ["post_write_native_P_debit"],
+      "audit_history_only_change": ["audit_lineage_label_permutation"]
+    },
+    "history_carried": {
+      "active_history_order_reversal": ["physical_order_reverse"],
+      "P_only_debit_with_H_P_M_H_fixed": ["history_mode_P_only_debit"],
+      "H_P_reference_clamp_with_P_fixed": ["history_reference_clamp"]
+    },
+    "hybrid": {
+      "complete_P_by_H_P_component_factorial": ["hybrid_full_components", "hybrid_reference_P_candidate_H", "hybrid_candidate_P_reference_H", "hybrid_reference_components"],
+      "P_only_reference_intervention": ["hybrid_reference_P_candidate_H"],
+      "H_P_only_reference_intervention": ["hybrid_candidate_P_reference_H"],
+      "history_order_reversal_with_P_fixed": ["physical_order_reverse"],
+      "interaction_or_synergy": ["hybrid_full_components", "hybrid_reference_P_candidate_H", "hybrid_candidate_P_reference_H", "hybrid_reference_components"]
+    }
+  },
+  "pool_economy_and_capacity": {
+    "state_carried": {"reserve": "native node coherence and packet budget", "accumulation": "additive arrivals", "mixing": "one P scalar", "depletion": "explicit native P-to-K_P debit", "saturation": "not_applicable", "leakage": "not_applicable_in_registered_window", "maintenance": "not_applicable"},
+    "history_carried": {"reserve": "native source and M_H reservoir coherence", "accumulation": "run-bounded append-only H_P", "mixing": "ordered source-label-free fold", "depletion": "explicit whole-history replacement only", "saturation": "not_applicable", "leakage": "not_applicable", "maintenance": "not_applicable"},
+    "hybrid": {"reserve": "native P and M_H reservoir coherence", "accumulation": "native P plus run-bounded append-only H_P", "mixing": "additive P and ordered fold H_P", "depletion": "separate explicit P debit and H_P replacement", "saturation": "not_applicable", "leakage": "not_applicable", "maintenance": "not_applicable"},
+    "bounds": {"max_common_history_tokens": 2, "max_private_history_tokens": 1, "max_scheduled_packets_per_branch": 6, "max_processed_packet_events_per_branch": 12, "max_surface_rows_per_branch": 24, "max_pending_queue_records": 1, "P_closed_interval": [0.75, 2.25], "M_H_closed_interval": [0.0, 1.109375], "B_closed_interval": [4.25, 4.375], "minimum_history_reservoir_after_materialization": 6.390625, "minimum_response_source_after_window": 7.375, "overflow_effect": "operational_invalid_never_scientific_negative"}
+  },
+  "restoration_registration": {
+    "schema": "p2_i2_i06_composite_restoration_identity_v1",
+    "branch_points": ["fresh_registered_baseline", "pre_contribution", "post_constitution_pre_neutral", "post_neutral_pre_response_window"],
+    "state_carried_components": ["native_v2_current_and_reset_identity", "mode_role_topology_masks_schedule_intervention_binding"],
+    "history_and_hybrid_components": ["native_v2_current_and_reset_identity", "adapter_v2_current_and_reset_identity", "mode_role_topology_masks_schedule_intervention_binding"],
+    "composite_digest": "SHA-256 over UTF-8 canonical JSON plus newline",
+    "only_registered_interface": ["save_pair", "load_pair", "reset_pair_once", "validate_pair"],
+    "manifest_component_hash_validation_before_use": true,
+    "equal_input_continuation_tolerance": 2.842170943040401e-14,
+    "forbidden": ["native_only_load", "adapter_only_load", "native_only_reset", "adapter_only_reset", "implicit_rebase", "fabricated_legacy_baseline", "cross_mode_pairing", "wrong_role_or_mask_binding", "stale_M_H"],
+    "negative_validation_cases": ["partial_manifest", "component_hash_mismatch", "history_hybrid_cross_pair", "one_sided_load_request", "one_sided_reset_request", "repeated_reset_transaction", "wrong_baseline_digest", "wrong_response_mask", "stale_readout_binding"],
+    "baseline_only_I06_validation": true,
+    "candidate_branch_restoration_deferred_to_execution": true
+  },
+  "execution_registration": {
+    "candidate_seeds": [101, 211, 307],
+    "physical_orders": ["q1_then_q2", "q2_then_q1"],
+    "attempts_per_matrix_entry": 1,
+    "fresh_worker_per_entry": true,
+    "worker_reuse": false,
+    "infrastructure_retry_ceiling": 1,
+    "infrastructure_retry_eligibility": "only a pre-model pre-candidate failure with zero output under unchanged committed identities; any candidate operation consumes the entry",
+    "scientific_retry_or_refinement": false,
+    "resource_envelope_per_entry": {"max_runtime_seconds": 180, "max_memory_mb": 512, "max_disk_mb": 512, "hardware": "single_local_CPU_no_accelerator"},
+    "isolation": ["fresh process", "fresh model and adapter baseline", "no cross-mode state", "empty packet and boundary-birth queues", "graph checkout read-only"],
+    "contamination_checks": ["unexpected queue/event IDs", "B-targeting non-response event", "wrong mask", "wrong adapter carrier", "wrong restoration pair", "dirty graph", "ambient PyGRC import", "fixture identity reuse"]
+  },
+  "expected_artifacts_and_receipts": {
+    "per_live_run": ["runtime_binding_receipt", "initial_composite_identity", "branch_configuration", "source_debit_activity_receipt", "timing_queue_receipt", "support_capacity_route_receipt", "inert_sink_no_influence_receipt", "window_validity_receipt", "arrival_gain_receipt", "causal_chain_call_trace", "raw_response_record", "post_run_composite_identity"],
+    "per_mode_seed_order_primary_tuple": ["candidate_response_envelope", "q1_only_response_envelope", "q2_only_response_envelope", "strongest_leave_one_provenance", "normalized_margin_or_null"],
+    "registration": ["input_freeze", "exact_three_mode_registration", "registration_manifest", "control_resolution_index_template", "registration_validation", "compact_report"],
+    "reconstruction": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py validate --graph-root LOCAL_GRAPH_CHECKOUT --output LOCAL_VALIDATION_OUTPUT",
+    "report_assembly": "static projection from retained registration and validation only; no candidate result"
+  },
+  "fixture_quarantine": {
+    "forbidden_I03B_scientific_values": [0.01, 0.1, 0.2, 0.3, 0.4, 0.45, 0.5],
+    "forbidden_I03C_scientific_values": [0.013, 0.073, 0.16, 0.17, 0.31, 0.32, 0.34, 0.3715, 0.4205, 0.48, 0.62, 0.65, 0.7405, 0.8515, 0.88, 0.9005],
+    "registered_scientific_selection_values": [0.03125, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.625, 0.71875, 0.75, 0.875, 1.625, 2.96875, 3.25, 4.25, 4.375, 7.5, 9.25, 2.842170943040401e-14],
+    "forbidden_branch_ids": ["reference", "q1_only", "q2_only", "combined_q1_q2", "combined_q2_q1", "lineage_permuted", "write_diversion", "history_only_clamp", "state_only_debit", "private_partition", "alternate_responder", "restoration_continuation"],
+    "forbidden_comparator": {"method": "math.isclose", "absolute_tolerance": 1e-12, "relative_tolerance": 0.0},
+    "registered_comparator": {"method": "math.isclose", "absolute_tolerance": 2.842170943040401e-14, "relative_tolerance": 0.0, "basis": "registered domain ULP"},
+    "direct_or_trivial_serialized_reuse": false,
+    "conformance_outcome_or_digest_used": false
+  },
+  "claim_and_gate_boundary": {
+    "registration_evidence_effect": "implementation_identity_and_future_execution_obligation_only",
+    "candidate_or_control_execution": false,
+    "R01_through_R05_disposition": "unassigned",
+    "scientific_result": false,
+    "mode_selection_or_ranking": false,
+    "REG_GATE": "closed_pending_validation_and_owner_review",
+    "I07": "unauthorized"
+  }
+}

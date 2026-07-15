@@ -1,0 +1,39 @@
+{
+  "arm_registry_digest": "432a4c6d470b9e3e2bb3ba29ccf52544d14e5364848cca0fa27e1683f5994045",
+  "artifact_id": "P2-I2-APP-B2-REPLACEMENT-CAMPAIGN-CLAIM",
+  "authorization_consumed": true,
+  "freeze_sha256": "3e1f0c4bf0a8c8417f8e730c47c35ec1aaca11aa0e9bb76b3b87c2675656547e",
+  "governed_attempt": 1,
+  "infrastructure_retries_allowed": 0,
+  "original_claim_preserved": true,
+  "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-runtime-evidence.json",
+  "preflight": {
+    "authority_clean_before_claim": true,
+    "authority_head": "eb2d480c54e351979fe9efaa1df863d50e1eed1d",
+    "global_interpreter_forbidden": true,
+    "graph_clean": true,
+    "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "interpreter_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "lexical_interpreter": ".venv/bin/python",
+    "normalized_command": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py",
+      "--freeze",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "--recovery-authority",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-recovery-authority.json",
+      "--claim",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-campaign-claim.json",
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-runtime-evidence.json",
+      "--expected-head",
+      "eb2d480c54e351979fe9efaa1df863d50e1eed1d",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ],
+    "recovery_authority": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-recovery-authority.json"
+  },
+  "recovery_authority": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-recovery-authority.json",
+  "scientific_retries_allowed": 0
+}

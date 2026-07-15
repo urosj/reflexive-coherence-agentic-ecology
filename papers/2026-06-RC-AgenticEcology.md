@@ -5,6 +5,12 @@
 **Draft status:** conceptual specification, no implementation claims.
 **Intended role:** educational blueprint for designing agentic ecologies through geometry, flux, coherence reserve, basin hierarchy, and producer-naturalization discipline.
 
+**Experimental bridge:** This paper remains conceptual. For the controlled
+theory-to-evidence method, see [Agentic Ecology: From Theory to Controlled
+Experiments](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
+For current bounded evidence, see the [AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
+
 Copyright © 2026 Uroš Jovanovič, CC BY-SA 4.0.
 
 ---
@@ -492,6 +498,15 @@ A useful minimum definition is:
 This definition includes agency, but it does not reduce agency to choice. The essays directory frames the interpretive extension around abundance, agency, persistence, sentience, and read-back; its agency summary specifically describes agency as persistence capacity of an identity basin across perturbation, withdrawal, substrate change, and proxy pressure, rather than merely choice. ([GitHub][4])
 
 That is the standard used here. An ant colony is agentic not because each ant contains a symbolic chooser, but because the colony basin persists through uncertain, costly, distributed coupling.
+
+**Controlled evidence note — AE01:** The completed L01 and L02 lanes do not
+establish an RC ecology under this full definition. They expose smaller
+load-bearing relations beneath it: shared history interacting with
+susceptibility, several physical contributions constituting a non-private
+carrier, distinct operations jointly satisfying a live carrier function, and
+ordered active history gating a later native response. See the
+[AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
 
 ---
 

@@ -1,0 +1,95 @@
+{
+  "artifact_id": "P2-I2-I08A-VENV-INFRASTRUCTURE-CORRECTION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08A",
+  "scientific_campaign": "P2-I2-I08",
+  "cycle_id": "P2-I2-C02",
+  "change_id": "P2-I2-CHG-050",
+  "status": "in_place_infrastructure_correction",
+  "owner_authority": {
+    "direction": "don't create new I08B or something, this is infrastructure implementation failure, not reruns based on decisions. everything needs to go through .venv",
+    "new_iteration_authorized": false,
+    "same_entry_mechanical_retry_only": true
+  },
+  "scope": {
+    "new_iteration_or_cycle": false,
+    "scientific_change_count": 0,
+    "matrix_change_count": 0,
+    "response_or_estimator_change_count": 0,
+    "control_change_count": 0,
+    "allowed": [
+      "replace resolved-host worker invocation with lexical repository .venv invocation",
+      "require exact child command and active repository venv prefix",
+      "bind the immutable attempt-1 failure to its frozen eligible attempt-2 path",
+      "candidate-free child-process regression validation"
+    ],
+    "forbidden": [
+      "new I08 iteration or execution cycle",
+      "attempt-1 claim or failure mutation",
+      "matrix, parameter, comparator, estimator, or evidence change",
+      "entry 2 or execution-manifest operation",
+      "scientific interpretation"
+    ]
+  },
+  "predecessor_attempt": {
+    "owner_authorized_full_HEAD": "dafec5789d513ca6476814a7d8d2dd2cceb94d4c",
+    "entry_id": "P2-I2-C02:state_carried:reference-pool:reference_pool_empty:not_applicable:seed-101",
+    "attempt": 1,
+    "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+    "claim_sha256": "f2b0e5a236c773d6b45b485e05e60d5229e57f630d19e8958940ab610f9c343a",
+    "failure_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/failures/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+    "failure_sha256": "0ee2c8691126580479c66a748589a72ed2fbfa3832e91ec5762ccf6384000776",
+    "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
+    "activation_sha256": "c98e91986b9bb24468133dabdca83aa9ee7127a4c5949011a1c25d643602fe0f",
+    "binding_sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe",
+    "output_absent": true,
+    "child_attestation_present": true,
+    "retry_eligibility": true,
+    "zero_state_counters": {
+      "pygrc_imports": 0,
+      "model_or_adapter_construction_started": 0,
+      "models_constructed": 0,
+      "adapters_constructed": 0,
+      "candidate_or_control_operations_started": 0
+    }
+  },
+  "accepted_I05C_invariant": {
+    "failure_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05c-preclaim-interpreter-path-failure.json",
+    "failure_record_sha256": "4781a89e1b0d0c509445637a5e479afd810253455537bea7dcf405069e0d124e",
+    "validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05c-zero-null-interpreter-validation.json",
+    "validation_sha256": "76b0105bba418c97cc787e3d94afe3f84f44def74e6489948e1c3c1baf14e6fb",
+    "lexical_command": ".venv/bin/python",
+    "resolved_target_use": "digest_identity_only"
+  },
+  "corrected_authority": {
+    "execution_source_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_execution.py",
+    "execution_source_sha256": "dd49fa01af1697327a5ee22ab77cf9f90a94c9371a841a98ebd059d7503f5d40",
+    "test_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_c02_execution.py",
+    "test_sha256": "4e97b419fe5482b341b6f0079af1793969049c6ddbd5878cd14f93d5e58b4392",
+    "postcommit_preflight_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_c02_postcommit_preflight.py",
+    "postcommit_preflight_sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db",
+    "validator_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08a_venv_infrastructure_validate.py",
+    "validator_sha256": "ddb4de37bab687fabed37e9e0efa03a9b25a5edfb9206cdc06988cfdc894cc59",
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "expected_head_source": "current_committed_normalized_retry_command",
+    "authorized_attempt": 2,
+    "stop_before_sequence_index": 2
+  },
+  "retry_bridge": {
+    "from_attempt": 1,
+    "to_attempt": 2,
+    "from_head": "dafec5789d513ca6476814a7d8d2dd2cceb94d4c",
+    "to_head": "exact_commit_containing_this_correction_package",
+    "required_preconditions": [
+      "predecessor claim and failure hashes exact",
+      "predecessor retry eligibility true",
+      "all predecessor zero-state counters zero",
+      "corrected authority committed and clean",
+      "exact attempt-2 post-commit preflight passes"
+    ],
+    "infrastructure_retries_remaining_after_attempt_2": 0
+  }
+}

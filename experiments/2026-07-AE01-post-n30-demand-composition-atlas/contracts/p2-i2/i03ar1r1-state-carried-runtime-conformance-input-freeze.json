@@ -1,0 +1,64 @@
+{
+  "artifact_id": "P2-I2-I03AR1R1-STATE-CARRIED-RUNTIME-CONFORMANCE-INPUT-FREEZE-REVISION",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "90929f30de7dec17e812dd98087b1ba8b497445439680fdbe50b2f70d1fa333c"
+  },
+  "artifact_version": "1.0.0",
+  "correction_iteration_id": "P2-I2-I03AR1R1",
+  "frozen_at": "2026-07-14",
+  "status": "frozen_before_replacement_runtime_invocation",
+  "base_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance-input-freeze.json",
+    "sha256": "d21cc390ab6655ce98c7dbf6827a73d9b3d537c9d90cb98b81f8e2da510a1d94",
+    "immutability": "retained byte-for-byte as the authority for the stopped original invocation"
+  },
+  "original_invalid_invocation": {
+    "classification": "infrastructure_invalid",
+    "exit_code": 1,
+    "failed_check": "combined_s1_s2.response_delta",
+    "observed": 0.09999999999999998,
+    "expected": 0.1,
+    "conformance_output_written": false,
+    "realization_disposition_assigned": false,
+    "scientific_evidence_assigned": false,
+    "retry_under_original_freeze_allowed": false
+  },
+  "override_scope": "Only the derived response-delta comparison policy, harness identity, freeze identity, and invocation provenance/commands change. All fixture values, branches, native calls, causal assertions, quarantine rules, imports, graph sources, and source identities remain inherited from the immutable base freeze.",
+  "overrides": {
+    "artifact_version": "1.1.0",
+    "status": "revised_freeze_validated_before_replacement_runtime_invocation",
+    "authority": {
+      "harness": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py",
+        "sha256": "616fd3b9c6a884ca785f60c075505e808c564f8975e3791fb21241f250024060"
+      }
+    },
+    "assertions": {
+      "derived_response_delta_comparator": {
+        "comparison": "math.isclose",
+        "absolute_tolerance": 1e-12,
+        "relative_tolerance": 0.0,
+        "scope": "derived target_coherence_after minus target_coherence_before assertions only",
+        "all_other_scalar_and_identity_assertions_remain_exact": true
+      }
+    },
+    "run_policy": {
+      "original_invalid_invocations": 1,
+      "evidence_invocations": 1,
+      "evidence_invocation_kind": "replacement_after_separately_recorded_infrastructure_invalid_stop",
+      "reconstruction_invocations": 1,
+      "retry_limit": 0,
+      "additional_invocations_after_reconstruction": 0,
+      "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+      "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03ar1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json --output temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json",
+      "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json temporary-output:p2-i2-i03ar1-state-carried-runtime-conformance.reconstructed.json"
+    }
+  },
+  "evidence_effect": "governed infrastructure correction only; no realization, calibration, control, or scientific evidence"
+}

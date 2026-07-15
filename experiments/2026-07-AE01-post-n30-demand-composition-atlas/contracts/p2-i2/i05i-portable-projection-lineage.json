@@ -1,0 +1,66 @@
+{
+  "artifact_id": "P2-I2-I05I-PORTABLE-PROJECTION-LINEAGE",
+  "artifact_version": "1.0.0",
+  "activity_id": "P2-I2-I05I-FIFTH-FINAL-PORTABILITY-CORRECTION",
+  "authority": {
+    "change_id": "P2-I2-CHG-032",
+    "decision_id": "P2-I2-DEC-039",
+    "parent_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11"
+  },
+  "correction_group": "p2_i2_governance_navigation_and_shared_projections",
+  "file_count": 9,
+  "historical_evidence": {
+    "history_rewritten": false,
+    "representation": "source_commit_and_source_sha256",
+    "source_commit": "1279e177d6691417a1d692dd8fdfc5cf50060e11"
+  },
+  "projection_rows": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "source_sha256": "f73618ef0dde512ee0c7a5b4a68e362677b306c090936abb5e8973e314e1d249",
+      "projection_sha256": "20bc1a8d57fc2b694cad30fa6eb77c796417c00cbadef4344ee5f709da61a9d0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "source_sha256": "41667fc81fd9e1fb99a628268da118cd6802ce44eb7f7b8fb0ff299f06e60dd9",
+      "projection_sha256": "bfc961b65213236d983f9103d6aea465e735ebd1b7acbe9dacd73c49d463aae0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "source_sha256": "6a2998f8d1feb4f9ea860ba59db171747e688563832e6790402d2be15c02097e",
+      "projection_sha256": "77112558bd27b2fbbe1a473ff1802dbf44fb14f416b014095490001d7aec08e9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I00-validation.md",
+      "source_sha256": "47fbd01b02327ac8ff08a0bc9e98431e92e3beaea121debe2c1e71e089f3c8b7",
+      "projection_sha256": "b412035a880f55df059b06c250044646a20c3014f1839cbb8496da6d528795d4"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/README.md",
+      "source_sha256": "94a0882655376b95a4618af861c712e86d587a88c36ee136e1057c00ab2aa11e",
+      "projection_sha256": "d42ca98a9bc7723065f019e8ecf5f8e6f7d8be5c9d46ecba8bc149f44a4ac119"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+      "source_sha256": "05a62b434fcd54a208124feff4d8b9690fc771cd949063367a83b8db65f99a46",
+      "projection_sha256": "7f9caa4ede9f59ad985b2a7bbba29f7a11e8a036f80b433ec85c25f204c0aec3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05f_validate.py",
+      "source_sha256": "e7b890e16f904f7bc9e28ba459c575a9eccdd7c429e8f97fbc78021a2a52b5ce",
+      "projection_sha256": "2091feb385f3c5334b55c845457102a02a953ab46e1aa09d249f1d486b72acfd"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05g_validate.py",
+      "source_sha256": "f3123ec89a48203abf082e6cc4350cd80a086a92f3ec06bc97488b74e0e352f0",
+      "projection_sha256": "8c01bbb3266a4e0adaadda7e7599594efe50aa80c427085715dd6c3d0f53eaf0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05h_validate.py",
+      "source_sha256": "7f387fec5708bd122e1af29d15d447b59ff768124c3518546383b9fc463030fc",
+      "projection_sha256": "1e5d9e6b0f939ffff078407a5999280970bb0750c32eebbf730b0adb19639791"
+    }
+  ],
+  "scientific_change": false,
+  "terminal_audit_expectation": "complete_current_P2_I2_scope_zero_findings"
+}

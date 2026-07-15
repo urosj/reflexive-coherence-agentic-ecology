@@ -1,0 +1,156 @@
+{
+  "artifact_id": "P2-I2-I04R2-MACHINE-VERIFICATION-PREREGISTRATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I04R2",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "candidate_free_machine_correction_pending_focused_validation",
+  "evidence_effect": "conditional_machine_preregistration_integrity_only_no_scientific_result",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-conditional-machine-verification-input.json",
+    "sha256": "1919cf9d99c3741363c2097a37fcfabcf0f76022e623ef9d110fa29d3a114114"
+  },
+  "parent_I04R1_authority": {
+    "preregistration_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration.json",
+    "preregistration_sha256": "ddce7076c7170e38900197ca7bb0643d92305784daa523099041c9fc5a15d3a4",
+    "validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration-validation.json",
+    "validation_sha256": "ba9e0bb8003f6f69ca21201db380de33f453f0f3a9c9107279413c798b73efa3",
+    "disposition": "semantic correction retained; machine overlay supersedes only exact estimator/window/arrival/diversion execution identities"
+  },
+  "conditional_review_disposition": {
+    "attachment_sha256": "78a49384609cdc4198a2dbce359c21d03694822fb7da96d1c2ff5f3333741d5d",
+    "conceptual_items_passed": 10,
+    "remaining_machine_requirements": 8,
+    "CAL_PRE_status": "blocked_until_focused_validation_and_explicit_owner_acceptance"
+  },
+  "machine_findings": {
+    "complete_two_arm_evaluability": {
+      "status": "enforced",
+      "implementation": "p2_i2_i04r2_analysis.primary_margin validates all three envelopes before delegating to the exact I04R1 strongest-arm estimator; any operational record returns null comparator and margin",
+      "within_tuple_fields": [
+        "mode",
+        "seed",
+        "physical_order_id",
+        "pairing_identity",
+        "opportunity_id",
+        "window_protocol_id",
+        "B_before"
+      ],
+      "cross_tuple_max": "forbidden"
+    },
+    "I05_exact_estimator_path": {
+      "status": "corrected",
+      "superseded_behavior": "I04R1 future entrypoint directly called normalized_paired_difference on one equal pair",
+      "corrected_behavior": "I04R2 future entrypoint builds separate raw candidate, q1-only, and q2-only response envelopes, calls p2_i2_i04r2_analysis.primary_margin, then writes, reads, parses, and byte-reconstructs the complete record",
+      "precollapsed_comparator": "absent",
+      "runtime_calibration_effect": "none"
+    },
+    "diversion_admissibility": {
+      "status": "I06_fail_closed_duties_frozen",
+      "matching_dimensions": 10,
+      "inert_sink_exclusions": 8,
+      "failure_effect": "affected mode cannot register and cannot substitute a weaker comparator"
+    },
+    "arrival_gain_and_domain": {
+      "status": "enforced_at_analysis_boundary_and_I06_registration",
+      "current_native_transform": "identity_packet_amount_addition",
+      "measured_rule": "abs(raw B gain - expected native arrival gain) <= separately registered runtime tolerance",
+      "domain_rule": "B_before and B_after inside one I06-registered finite closed native-coherence interval",
+      "adjustment_rule": "no clipping, saturation, projection, budget correction, conservation adjustment, or other arrival adjustment event"
+    },
+    "window_before_zero": {
+      "status": "enforced",
+      "observed_response_steps": "exact departure_event_id then arrival_event_id",
+      "scientific_zero_steps": "exact null/null IDs with two empty-queue step kinds",
+      "additional_receipts": "feedback evaluation, policy, producer invocation, producer receipt, pre/post queue identities, and zero contamination IDs",
+      "failure_effect": "operational null"
+    },
+    "quantity_matched_scope": {
+      "status": "confirmed_non_gating",
+      "forbidden_effects": 5,
+      "R03_equivalence_effect": "none"
+    },
+    "order_conditioned_classification": {
+      "status": "confirmed",
+      "not_top_effect": "top signature unavailable only; no direct hypothesis-failure mapping"
+    },
+    "causal_receipts": {
+      "status": "confirmed_in_parent_and_rebound",
+      "required_sources": 8,
+      "authored_summary_booleans_authoritative": false,
+      "output_difference_sufficient": false
+    }
+  },
+  "machine_identity": {
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+    "policy_sha256": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+    "analysis_module_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+    "analysis_module_sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+    "test_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r2_analysis.py",
+    "test_sha256": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+    "test_command": ".venv/bin/python -m unittest experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_i04r2_analysis.py",
+    "test_result": "7_tests_passed"
+  },
+  "future_calibration_identity": {
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_calibration_policy.json",
+    "policy_sha256": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+    "entrypoint_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_calibration.py",
+    "entrypoint_sha256": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+    "generator": "five seeds by two physical orders by three separate equal raw response envelopes",
+    "estimator_entrypoint": "p2_i2_i04r2_analysis.primary_margin",
+    "serialization_reconstruction": "governed output write/read, JSON reconstruction, and byte-identical reserialization in the same I05 invocation",
+    "analysis_arithmetic_delta_status": "pending_I05_execution",
+    "runtime_tolerance_authority": "none",
+    "authorization": "one future invocation only after explicit owner acceptance of I04R2 and an identity-binding I05 freeze"
+  },
+  "public_source_identity": [
+    {
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "finding": "arrival assigns target_coherence + packet.amount; no arrival transform"
+    },
+    {
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/grc_9_v3_state.py",
+      "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "finding": "coherence is an untransformed float field"
+    },
+    {
+      "repository_id": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_contract.py",
+      "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+      "finding": "runtime numeric helpers require finite coherence and positive finite packet amount"
+    }
+  ],
+  "execution_boundary": {
+    "matched_null_invocations_in_I04R2": 0,
+    "PyGRC_model_instantiations_in_I04R2": 0,
+    "candidate_or_control_invocations_in_I04R2": 0,
+    "graph_repository_mutations_in_I04R2": 0,
+    "I05_execution_freeze_present": false,
+    "calibration_record_present": false,
+    "analysis_arithmetic_delta_computed": false,
+    "candidate_execution_authorized": false
+  },
+  "gate_boundary": {
+    "validation_target": "I04R2_acceptance_readiness",
+    "owner_acceptance_required": true,
+    "on_explicit_owner_acceptance": "pass P2-I2-CAL-PRE-GATE and open checklist/hypothesis-first I05 authorization construction for exactly one governed arithmetic-null invocation",
+    "does_not_authorize": [
+      "automatic I05 invocation",
+      "I06 registration",
+      "candidate or control execution",
+      "R01-R05 or L02 result",
+      "mode selection or ranking"
+    ]
+  },
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-027",
+    "decision_id": "P2-I2-DEC-034",
+    "projection_kind": "repository_relative_external_source_identity",
+    "scientific_change": false,
+    "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+    "source_sha256": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b"
+  }
+}

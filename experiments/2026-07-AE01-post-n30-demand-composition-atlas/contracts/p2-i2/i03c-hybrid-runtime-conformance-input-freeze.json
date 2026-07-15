@@ -1,0 +1,293 @@
+{
+  "artifact_id": "P2-I2-I03C-HYBRID-RUNTIME-CONFORMANCE-INPUT-FREEZE",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d"
+  },
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03C",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "frozen_before_first_hybrid_runtime_operation",
+  "runtime_authorized": true,
+  "pool_dependence_mode": "hybrid",
+  "realization_class": "minimally_producer_assisted",
+  "purpose": "Determine whether the frozen I03C native-P plus active-H_P/M_H joint response executes both component interventions, order/label/private/access guards, native response ownership, paired restoration/reset, and equal-input continuation without producing scientific evidence.",
+  "authority": {
+    "owner_accepted_runtime_conformance_decision": "P2-I2-DEC-012",
+    "i03c_entry_decision": "P2-I2-DEC-015",
+    "hybrid_design_decision": "P2-I2-DEC-016",
+    "rcae_entry_revision": "9332a67558764043d6f6adf67dc82a19187871db",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_repository_read_only": true,
+    "source_manifest": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+    "source_manifest_sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4",
+    "bound_rcae_artifacts": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+        "sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-freeze-input.json",
+        "sha256": "1d69dedf481aba2ad996388d35e03e65e7a7e5cc39276feaf8d92b730208c353"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json",
+        "sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-validation.json",
+        "sha256": "c3bc1ef93383a499601edee25f3a11c670bd2cf963d8171c681fcab387c372a7"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-environment-receipt.json",
+        "sha256": "2375d0167bc3ab4c3ff175b0083a2df4f97099b5bdcde6e17b0efe86b20849ff"
+      }
+    ],
+    "harness": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py",
+      "sha256": "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191",
+      "role": "I03C-specific hybrid masks, branches, assertions, composite identity, and output"
+    },
+    "base_construction_harness": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
+      "sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec",
+      "role": "pre-existing deterministic model construction, native scheduling, adapter construction, materialization, and response-execution helpers only; no I03B branch assertion or observed value is imported"
+    },
+    "adapter": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+      "sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+      "class": "RCAEActiveHistoryAdapterV1",
+      "producer_boundary": "active history, cursor, history intervention, readout, and public native materialization request only; no P read for success, joint score, threshold, or later-response scheduling"
+    },
+    "bound_graph_sources": [
+      {"path": "src/pygrc/core/__init__.py", "sha256": "1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae", "role": "public construction export"},
+      {"path": "src/pygrc/core/storage.py", "sha256": "a73d30238bc81dc3c366f04f3e8d5e8a266d0a683e7db88560196930d279c397", "role": "fixture topology construction plumbing"},
+      {"path": "src/pygrc/models/__init__.py", "sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70", "role": "admitted public model exports"},
+      {"path": "src/pygrc/models/grc_9_state.py", "sha256": "b3d979fe4bffbc86fe256f71ff4894c3da03fd4af706457a281f650242ca26b7", "role": "fixture edge-state construction plumbing"},
+      {"path": "src/pygrc/models/grc_9_v3_state.py", "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e", "role": "admitted node and state contracts"},
+      {"path": "src/pygrc/models/lgrc_9_v3_contract.py", "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680", "role": "admitted surface and producer contracts"},
+      {"path": "src/pygrc/models/lgrc_9_v3_packets.py", "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f", "role": "admitted packet transition implementation"},
+      {"path": "src/pygrc/models/lgrc_9_v3_runtime.py", "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4", "role": "admitted LGRC9V3 runtime and multi-node feedback"},
+      {"path": "src/pygrc/models/lgrc_9_v3_runtime_state.py", "sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c", "role": "admitted runtime-state contract"},
+      {"path": "src/pygrc/models/lgrc_9_v3_restoration.py", "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931", "role": "admitted reset-aware restoration identity provider"}
+    ],
+    "admitted_imports": [
+      "pygrc.core.PortGraphBackend",
+      "pygrc.models.GRC9V3NodeState",
+      "pygrc.models.GRC9V3State",
+      "pygrc.models.PortEdge",
+      "pygrc.models.LGRC9V3",
+      "pygrc.models.LGRC9V3.from_state",
+      "pygrc.models.LGRC9V3.get_state",
+      "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "pygrc.models.LGRC9V3.step",
+      "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "pygrc.models.LGRC9V3.produce_events",
+      "pygrc.models.LGRC9V3.save",
+      "pygrc.models.LGRC9V3.load",
+      "pygrc.models.LGRC9V3.reset",
+      "pygrc.models.lgrc9v3_restoration_identity_v2",
+      "pygrc.models.digest_lgrc9v3_restoration_identity_v2"
+    ]
+  },
+  "environment": {
+    "environment_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-environment-receipt.json",
+    "environment_receipt_sha256": "2375d0167bc3ab4c3ff175b0083a2df4f97099b5bdcde6e17b0efe86b20849ff",
+    "python_invocation": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "pythonhashseed": "0",
+    "pythondontwritebytecode": "1",
+    "pythonpath": "external-repository:graph-reflexive-coherence/src",
+    "direct_dependencies": {"matplotlib": "3.10.9", "networkx": "3.6.1", "pyvis": "0.3.2", "PyYAML": "6.0.3"},
+    "ambient_or_system_package_substitution_allowed": false
+  },
+  "fixture": {
+    "fixture_id": "p2-i2-i03c-hybrid-native-state-active-history-conformance-v1",
+    "fixture_class": "synthetic_deterministic_implementation_conformance_only",
+    "fixture_values_may_be_reused_for_I04_I06_or_science": false,
+    "dt": 1.0,
+    "causal_modes": {
+      "causal_layer_mode": "packetized_fixed_topology",
+      "lgrc_runtime_level": "lgrc2",
+      "lapse_policy": "unit_lapse",
+      "edge_delay_policy": "constant_delay",
+      "event_time_policy": "explicit_event_time_key",
+      "proper_time_accumulation_policy": "local_event_frontier",
+      "causal_pulse_substrate_surface_enabled": true,
+      "causal_pulse_substrate_surface_policy": "emit_rows",
+      "causal_pulse_substrate_surface_validated": false
+    },
+    "nodes": [
+      {"node_id": 0, "role": "S1", "initial_coherence": 1.73},
+      {"node_id": 1, "role": "S2", "initial_coherence": 1.91},
+      {"node_id": 2, "role": "P", "initial_coherence": 0.0},
+      {"node_id": 3, "role": "M_H", "initial_coherence": 0.0},
+      {"node_id": 4, "role": "R_H_plus", "initial_coherence": 4.37},
+      {"node_id": 5, "role": "K_H", "initial_coherence": 0.0},
+      {"node_id": 6, "role": "B_ref", "initial_coherence": 0.0},
+      {"node_id": 7, "role": "E_source", "initial_coherence": 0.83},
+      {"node_id": 8, "role": "E_target", "initial_coherence": 0.79},
+      {"node_id": 9, "role": "A", "initial_coherence": 0.93},
+      {"node_id": 10, "role": "B", "initial_coherence": 0.0},
+      {"node_id": 11, "role": "K_P", "initial_coherence": 0.0},
+      {"node_id": 12, "role": "P1", "initial_coherence": 0.0},
+      {"node_id": 13, "role": "M_H1", "initial_coherence": 0.0},
+      {"node_id": 14, "role": "R_H1_plus", "initial_coherence": 4.11},
+      {"node_id": 15, "role": "K_H1", "initial_coherence": 0.0},
+      {"node_id": 16, "role": "P2", "initial_coherence": 0.0},
+      {"node_id": 17, "role": "M_H2", "initial_coherence": 0.0},
+      {"node_id": 18, "role": "R_H2_plus", "initial_coherence": 4.23},
+      {"node_id": 19, "role": "K_H2", "initial_coherence": 0.0},
+      {"node_id": 20, "role": "A_alt", "initial_coherence": 0.97},
+      {"node_id": 21, "role": "B_alt", "initial_coherence": 0.0}
+    ],
+    "edges": [
+      {"edge_id": 0, "edge_role": "S1_to_P", "source": "S1", "target": "P"},
+      {"edge_id": 1, "edge_role": "S2_to_P", "source": "S2", "target": "P"},
+      {"edge_id": 2, "edge_role": "S1_to_K_P", "source": "S1", "target": "K_P"},
+      {"edge_id": 3, "edge_role": "S2_to_K_P", "source": "S2", "target": "K_P"},
+      {"edge_id": 4, "edge_role": "P_to_K_P", "source": "P", "target": "K_P"},
+      {"edge_id": 5, "edge_role": "R_H_plus_to_M_H", "source": "R_H_plus", "target": "M_H"},
+      {"edge_id": 6, "edge_role": "M_H_to_K_H", "source": "M_H", "target": "K_H"},
+      {"edge_id": 7, "edge_role": "E_source_to_E_target", "source": "E_source", "target": "E_target"},
+      {"edge_id": 8, "edge_role": "A_to_B", "source": "A", "target": "B"},
+      {"edge_id": 9, "edge_role": "S1_to_P1", "source": "S1", "target": "P1"},
+      {"edge_id": 10, "edge_role": "S2_to_P2", "source": "S2", "target": "P2"},
+      {"edge_id": 11, "edge_role": "R_H1_plus_to_M_H1", "source": "R_H1_plus", "target": "M_H1"},
+      {"edge_id": 12, "edge_role": "M_H1_to_K_H1", "source": "M_H1", "target": "K_H1"},
+      {"edge_id": 13, "edge_role": "R_H2_plus_to_M_H2", "source": "R_H2_plus", "target": "M_H2"},
+      {"edge_id": 14, "edge_role": "M_H2_to_K_H2", "source": "M_H2", "target": "K_H2"},
+      {"edge_id": 15, "edge_role": "A_alt_to_B_alt", "source": "A_alt", "target": "B_alt"}
+    ],
+    "adapter_profiles": {
+      "common": {"carrier_id": "H_P_hybrid", "pool_target_role": "P", "registered_source_roles": ["S1", "S2"], "readout_role": "M_H", "positive_reservoir_role": "R_H_plus", "negative_sink_role": "K_H", "positive_edge_role": "R_H_plus_to_M_H", "negative_edge_role": "M_H_to_K_H", "recency_coefficient": 0.65},
+      "private_one": {"carrier_id": "H1_private_hybrid", "pool_target_role": "P1", "registered_source_roles": ["S1"], "readout_role": "M_H1", "positive_reservoir_role": "R_H1_plus", "negative_sink_role": "K_H1", "positive_edge_role": "R_H1_plus_to_M_H1", "negative_edge_role": "M_H1_to_K_H1", "recency_coefficient": 0.65},
+      "private_two": {"carrier_id": "H2_private_hybrid", "pool_target_role": "P2", "registered_source_roles": ["S2"], "readout_role": "M_H2", "positive_reservoir_role": "R_H2_plus", "negative_sink_role": "K_H2", "positive_edge_role": "R_H2_plus_to_M_H2", "negative_edge_role": "M_H2_to_K_H2", "recency_coefficient": 0.65}
+    },
+    "contribution_sequences": {
+      "reference": [],
+      "q1_only": [{"source": "S1", "target": "P", "edge_role": "S1_to_P", "amount": 0.17, "source_lineage_id": "lineage:hybrid-alpha", "target_lineage_id": "lineage:hybrid-common"}],
+      "q2_only": [{"source": "S2", "target": "P", "edge_role": "S2_to_P", "amount": 0.31, "source_lineage_id": "lineage:hybrid-beta", "target_lineage_id": "lineage:hybrid-common"}],
+      "combined_q1_q2": [
+        {"source": "S1", "target": "P", "edge_role": "S1_to_P", "amount": 0.17, "source_lineage_id": "lineage:hybrid-alpha", "target_lineage_id": "lineage:hybrid-common"},
+        {"source": "S2", "target": "P", "edge_role": "S2_to_P", "amount": 0.31, "source_lineage_id": "lineage:hybrid-beta", "target_lineage_id": "lineage:hybrid-common"}
+      ],
+      "combined_q2_q1": [
+        {"source": "S2", "target": "P", "edge_role": "S2_to_P", "amount": 0.31, "source_lineage_id": "lineage:hybrid-beta", "target_lineage_id": "lineage:hybrid-common"},
+        {"source": "S1", "target": "P", "edge_role": "S1_to_P", "amount": 0.17, "source_lineage_id": "lineage:hybrid-alpha", "target_lineage_id": "lineage:hybrid-common"}
+      ],
+      "lineage_permuted": [
+        {"source": "S1", "target": "P", "edge_role": "S1_to_P", "amount": 0.17, "source_lineage_id": "lineage:hybrid-beta", "target_lineage_id": "lineage:hybrid-common"},
+        {"source": "S2", "target": "P", "edge_role": "S2_to_P", "amount": 0.31, "source_lineage_id": "lineage:hybrid-alpha", "target_lineage_id": "lineage:hybrid-common"}
+      ],
+      "write_diversion": [
+        {"source": "S1", "target": "K_P", "edge_role": "S1_to_K_P", "amount": 0.17, "source_lineage_id": "lineage:hybrid-alpha", "target_lineage_id": "lineage:hybrid-diversion"},
+        {"source": "S2", "target": "K_P", "edge_role": "S2_to_K_P", "amount": 0.31, "source_lineage_id": "lineage:hybrid-beta", "target_lineage_id": "lineage:hybrid-diversion"}
+      ],
+      "private_combined": [
+        {"source": "S1", "target": "P1", "edge_role": "S1_to_P1", "amount": 0.17, "source_lineage_id": "lineage:hybrid-alpha", "target_lineage_id": "lineage:hybrid-private-one"},
+        {"source": "S2", "target": "P2", "edge_role": "S2_to_P2", "amount": 0.31, "source_lineage_id": "lineage:hybrid-beta", "target_lineage_id": "lineage:hybrid-private-two"}
+      ]
+    },
+    "state_only_debit": {"source": "P", "target": "K_P", "edge_role": "P_to_K_P", "amount": 0.16, "source_lineage_id": "lineage:hybrid-state-debit", "target_lineage_id": "lineage:hybrid-state-sink"},
+    "neutral_contact": {"source": "E_source", "target": "E_target", "edge_role": "E_source_to_E_target", "amount": 0.013, "source_lineage_id": "lineage:hybrid-neutral-source", "target_lineage_id": "lineage:hybrid-neutral-target"},
+    "response": {"front_mask": ["P", "M_H"], "rear_mask": ["B_ref"], "reference_delta": 0.0, "threshold": 0.88, "packet_amount": 0.073, "expected_polarity": "positive", "expected_source_surface_digest": null, "value_status": "new fixture-only hybrid conformance discriminator; prohibited from scientific calibration or registration"},
+    "joint_intervention_relation": {"canonical_scheduled": true, "state_only_scheduled": false, "history_only_scheduled": false, "meaning": "both independently changed components affect the same exact native joint mask under this fixture only"},
+    "schedule_policy": {"initial_departure_event_time_key": 1.0, "initial_scheduler_event_index": 1, "initial_packet_index": 0, "each_reserved_slot_departure_time_increment": 2.0, "arrival_minus_departure": 1.0, "scheduler_event_index_increment": 2, "packet_index_increment": 1, "materialization_reserves_one_slot_even_when_no_packet_is_needed": true},
+    "composite_identity_binding": {"schema": "p2_i2_i03c_hybrid_composite_restoration_identity_v1", "adapter_class": "RCAEActiveHistoryAdapterV1", "native_provider": "lgrc9v3_restoration_identity_v2", "state_role": "P", "history_carrier_role": "H_P_hybrid", "history_output_role": "M_H", "joint_front_mask": ["P", "M_H"], "rear_mask": ["B_ref"], "private_pairs": [["P1", "H1_private_hybrid", "M_H1"], ["P2", "H2_private_hybrid", "M_H2"]], "one_sided_reset_allowed": false, "implicit_rebase_allowed": false, "manifest_validation_before_continuation_required": true}
+  },
+  "assertions": {
+    "float_comparator": {"method": "math.isclose", "absolute_tolerance": 1e-12, "relative_tolerance": 0.0, "scope": "fixture-only derived floats; no scientific measurement resolution"},
+    "branches": {
+      "reference": {"token_amounts": [], "readout": 0.0, "front_mass": 0.0, "score": 0.0, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"P": 0.0, "M_H": 0.0, "B": 0.0}},
+      "q1_only": {"token_amounts": [0.17], "readout": 0.17, "front_mass": 0.34, "score": 0.34, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"S1": 1.56, "P": 0.17, "M_H": 0.17, "B": 0.0}},
+      "q2_only": {"token_amounts": [0.31], "readout": 0.31, "front_mass": 0.62, "score": 0.62, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"S2": 1.6, "P": 0.31, "M_H": 0.31, "B": 0.0}},
+      "combined_q1_q2": {"token_amounts": [0.17, 0.31], "readout": 0.4205, "front_mass": 0.9005, "score": 0.9005, "reason_code": "feedback_coupled_pulse_packet_departure_scheduled", "scheduled": true, "response_delta": 0.073, "coherences": {"S1": 1.56, "S2": 1.6, "P": 0.48, "M_H": 0.4205, "R_H_plus": 3.9495, "B": 0.073}},
+      "combined_q2_q1": {"token_amounts": [0.31, 0.17], "readout": 0.3715, "front_mass": 0.8515, "score": 0.8515, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"S1": 1.56, "S2": 1.6, "P": 0.48, "M_H": 0.3715, "R_H_plus": 3.9985, "B": 0.0}},
+      "lineage_permuted": {"token_amounts": [0.17, 0.31], "readout": 0.4205, "front_mass": 0.9005, "score": 0.9005, "reason_code": "feedback_coupled_pulse_packet_departure_scheduled", "scheduled": true, "response_delta": 0.073, "coherences": {"P": 0.48, "M_H": 0.4205, "B": 0.073}},
+      "write_diversion": {"token_amounts": [], "readout": 0.0, "front_mass": 0.0, "score": 0.0, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"S1": 1.56, "S2": 1.6, "P": 0.0, "K_P": 0.48, "M_H": 0.0, "B": 0.0}},
+      "history_only_clamp": {"token_amounts": [], "readout": 0.0, "front_mass": 0.48, "score": 0.48, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"P": 0.48, "M_H": 0.0, "K_H": 0.4205, "B": 0.0}},
+      "state_only_debit": {"token_amounts": [0.17, 0.31], "readout": 0.4205, "front_mass": 0.7405, "score": 0.7405, "reason_code": "feedback_coupled_pulse_subthreshold", "scheduled": false, "response_delta": 0.0, "coherences": {"P": 0.32, "K_P": 0.16, "M_H": 0.4205, "B": 0.0}},
+      "private_partition": {"token_amounts": [[0.17], [0.31]], "scores": [0.34, 0.62], "reason_codes": ["feedback_coupled_pulse_subthreshold", "feedback_coupled_pulse_subthreshold"]},
+      "alternate_responder": {"token_amounts": [0.17, 0.31], "readout": 0.4205, "front_mass": 0.9005, "score": 0.9005, "reason_code": "feedback_coupled_pulse_packet_departure_scheduled", "scheduled": true, "response_delta": 0.073, "coherences": {"P": 0.48, "M_H": 0.4205, "B_alt": 0.073}}
+    },
+    "cross_branch": [
+      "q1-q2 and q2-q1 preserve marginal multiset and P but differ in H_P/readout/response",
+      "lineage permutation changes native audit lineage but not P/H_P/M_H/joint response",
+      "write diversion preserves source debits while preventing both common components",
+      "history-only clamp preserves P and changes H_P/M_H/joint response",
+      "state-only debit preserves H_P/M_H and changes P/joint response",
+      "canonical responds while both one-component interventions do not under the exact same native joint mask",
+      "each private response reads one P_i/M_H_i pair only and no result aggregates pairs",
+      "alternate responder uses the same P/M_H/B_ref common access and relation",
+      "adapter never computes joint score/success or schedules the later response",
+      "native feedback producer owns the later transition",
+      "paired composite save/load and paired reset preserve identity and equal-input continuation"
+    ]
+  },
+  "mechanical_cross_mode_rejection": {
+    "method": "freeze validator rejects exact serialized prior fixture signatures and binds prohibited prior evidence identities",
+    "forbidden_exact_serialized_values": [
+      "p2-i2-i03b-history-carried-producer-assisted-conformance-v1",
+      "\"recency_coefficient\": 0.5",
+      "\"threshold\": 0.45",
+      "\"packet_amount\": 0.1",
+      "\"amount\": 0.2,",
+      "\"amount\": 0.4,",
+      "\"amount\": 0.3,",
+      "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+      "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0"
+    ],
+    "i03a_runtime_evidence_sha256": "a7601bb1a7d335cfefc9d21aa365e3f5732ae0ebdfabe6bb7d168a7194ed0db0",
+    "i03b_runtime_evidence_sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d",
+    "reuse_allowed": false,
+    "future_I04_I06_rejection_rule": "reject every I03A/I03B/I03C conformance fixture coefficient, amount, initial state, time, threshold, packet amount, branch ID, observation, comparator, and evidence digest"
+  },
+  "run_policy": {
+    "evidence_invocations": 1,
+    "reconstruction_invocations": 1,
+    "retry_limit": 0,
+    "infrastructure_retry_requires_new_change_record": true,
+    "parameter_search_allowed": false,
+    "rescue_variants_allowed": false,
+    "adaptive_branching_allowed": false,
+    "branch_scenarios_per_invocation": 12,
+    "each_branch_executed_exactly_once_per_invocation": true,
+    "scientific_seed_matrix_selected": false,
+    "scientific_response_selected": false,
+    "scientific_comparator_selected": false,
+    "calibration_delta_selected": false,
+    "evidence_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+    "reconstruction_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json --output temporary-output:p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "byte_comparison_command": "cmp --silent experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json temporary-output:p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json"
+  },
+  "quarantine": {
+    "evidence_effect": "realization implementation-conformance only",
+    "may_support_or_falsify_AE01_H_L02": false,
+    "may_enter_I04_or_I05_calibration": false,
+    "may_supply_I06_or_I07_registered_values": false,
+    "may_replace_I08_scientific_execution": false,
+    "may_rank_dependence_modes": false,
+    "observed_values_may_be_reused_scientifically": false,
+    "failure_classes": ["realization_inadequate", "missing_prerequisite", "infrastructure_invalid"],
+    "scientific_failure_class_allowed": false,
+    "discriminator_gate_passed_by_runtime_completion": false,
+    "I04_authorized_by_runtime_completion": false,
+    "owner_review_required": true
+  },
+  "outputs": {
+    "environment_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-environment-receipt.json",
+    "raw_conformance_record_and_runtime_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+    "reconstruction_temporary_output": "temporary-output:p2-i2-i03c-hybrid-runtime-conformance.reconstructed.json",
+    "reconstruction_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-runtime-reconstruction-receipt.json",
+    "report": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03C-hybrid-realization-and-operational-hypothesis-freeze.md"
+  }
+}

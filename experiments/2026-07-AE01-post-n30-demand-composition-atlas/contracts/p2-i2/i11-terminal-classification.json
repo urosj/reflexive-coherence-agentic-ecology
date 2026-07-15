@@ -1,0 +1,179 @@
+{
+  "record": {
+    "attempted_work": [
+      "Bound and executed all 234 registered C02 matrix entries across three modes, two physical orders, three seeds, seven logical cells, and five lane controls",
+      "Resolved all 38 comparison rules, all 15 lane controls, and all 57 program-control mode dispositions from retained receipts",
+      "Corrected and reconstructed all 18 primary margins through the accepted I04R2 estimator without changing any control disposition",
+      "Independently reconstructed the complete execution/control bundle and verified restoration, continuation, and reset for all three modes",
+      "Interpreted all five L02 boundary rungs and all mode-specific metric, causal, support, realization, and developmental relations once"
+    ],
+    "blocked_signatures": [
+      "collective_memory_or_communication",
+      "cooperation_coordination_agency_or_organism",
+      "functional_source_diversity_or_synergy",
+      "native_reusable_shared_pool_primitive",
+      "general_resource_economy",
+      "general_transfer_or_cross_lane_recurrence",
+      "ecology_motif_regime_life_or_T4",
+      "mode_ranking_or_N31_selection"
+    ],
+    "claim_impact": "Supports AE01-H-L02 through R05 as a bounded shared-pool co-conditioning demand pattern, with state-carried native expression and history/hybrid scaffold dependence; every stronger relabel remains blocked.",
+    "classification": "supported_bounded_candidate",
+    "control_refs": [
+      "AE01-CTRL-01",
+      "AE01-CTRL-02",
+      "AE01-CTRL-03",
+      "AE01-CTRL-04",
+      "AE01-CTRL-05",
+      "AE01-CTRL-06",
+      "AE01-CTRL-07",
+      "AE01-CTRL-08",
+      "AE01-CTRL-09",
+      "AE01-CTRL-10",
+      "AE01-CTRL-11",
+      "AE01-CTRL-12",
+      "AE01-CTRL-13",
+      "AE01-CTRL-14",
+      "AE01-CTRL-15",
+      "AE01-CTRL-16",
+      "AE01-CTRL-17",
+      "AE01-CTRL-18",
+      "AE01-CTRL-19",
+      "AE01-L02-CTRL-01",
+      "AE01-L02-CTRL-02",
+      "AE01-L02-CTRL-03",
+      "AE01-L02-CTRL-04",
+      "AE01-L02-CTRL-05"
+    ],
+    "debt_refs": [
+      "p2-i2-debt-native-control-surface",
+      "p2-i2-debt-native-active-history",
+      "p2-i2-debt-producer-assisted-history",
+      "p2-i2-debt-explicit-construction",
+      "p2-i2-debt-medium-economy",
+      "p2-i2-debt-leakage-window",
+      "p2-i2-debt-transfer",
+      "p2-i2-debt-measurement-order-conditioning",
+      "p2-i2-debt-composition-recurrence",
+      "p2-i2-debt-semantic-relabel",
+      "p2-i2-debt-claim-ceiling"
+    ],
+    "developmental_interpretation_ref": "p2-i2-i11-developmental-interpretation",
+    "execution_status": "completed",
+    "extensions": {
+      "x_blocked_relabels": [
+        "collective memory or communication",
+        "cooperation, coordination, agency, or organism identity",
+        "functional source diversity, complementarity, or synergy",
+        "a native reusable shared-pool or active-history primitive",
+        "a general resource economy, leakage law, saturation law, or maintenance law",
+        "general transfer, cross-lane recurrence, or compositional recurrence",
+        "an ecology motif, ecology regime, life, or T4 theoretical class",
+        "ranking among the three retained dependence modes",
+        "N31+ selection"
+      ],
+      "x_classification_value": "T3_operational_class",
+      "x_highest_valid_rung": "AE01-L02-R05",
+      "x_lane_support_status": "scaffold_dependent",
+      "x_mode_dispositions": [
+        {
+          "boundary_rungs": {
+            "AE01-L02-R01": "reached",
+            "AE01-L02-R02": "reached",
+            "AE01-L02-R03": "reached",
+            "AE01-L02-R04": "reached",
+            "AE01-L02-R05": "reached"
+          },
+          "causal_support": "passed_mode_specific_registered_relation",
+          "metric_relation": "robust_aligned",
+          "mode": "state_carried",
+          "mode_ranking": null,
+          "producer_boundary": "PyGRC",
+          "realization_class": "pygrc_native_candidate",
+          "restoration_class": "native_v2_plus_declarative_binding",
+          "support_status": "native_expression_candidate",
+          "threshold_passed": true
+        },
+        {
+          "boundary_rungs": {
+            "AE01-L02-R01": "reached",
+            "AE01-L02-R02": "reached",
+            "AE01-L02-R03": "reached",
+            "AE01-L02-R04": "reached",
+            "AE01-L02-R05": "reached"
+          },
+          "causal_support": "passed_mode_specific_registered_relation",
+          "metric_relation": "mixed_direction",
+          "mode": "history_carried",
+          "mode_ranking": null,
+          "producer_boundary": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for response",
+          "realization_class": "minimally_producer_assisted",
+          "restoration_class": "paired_native_v2_adapter_v2_composite",
+          "support_status": "scaffold_dependent",
+          "threshold_passed": false
+        },
+        {
+          "boundary_rungs": {
+            "AE01-L02-R01": "reached",
+            "AE01-L02-R02": "reached",
+            "AE01-L02-R03": "reached",
+            "AE01-L02-R04": "reached",
+            "AE01-L02-R05": "reached"
+          },
+          "causal_support": "passed_mode_specific_registered_relation",
+          "metric_relation": "mixed_direction",
+          "mode": "hybrid",
+          "mode_ranking": null,
+          "producer_boundary": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for joint response",
+          "realization_class": "minimally_producer_assisted",
+          "restoration_class": "paired_native_v2_adapter_v2_joint_composite",
+          "support_status": "scaffold_dependent",
+          "threshold_passed": false
+        }
+      ],
+      "x_mode_ranking": null,
+      "x_n31_selection_status": "not_run",
+      "x_realization_family": {
+        "history_carried": "minimally_producer_assisted",
+        "hybrid": "minimally_producer_assisted",
+        "state_carried": "pygrc_native_candidate"
+      },
+      "x_repeated_source_equivalence_gating": false,
+      "x_strongest_valid_claim": "bounded shared-pool co-conditioning demand pattern"
+    },
+    "forces_n31_non_selection": false,
+    "lane_id": "AE01-L02",
+    "missing_information": [
+      "Whether the active-history function recurs as the same missing native pattern across independent experiments",
+      "Whether a graph-native active-history carrier can replace the RCAE adapter while retaining all causal and restoration relations",
+      "Whether the bounded relation transfers beyond the registered alternate-responder access contrast",
+      "Whether leakage, saturation, maintenance, and longer-horizon resource economy become applicable outside the fixed response window",
+      "Whether the demand pattern recurs independently in another AE01 lane"
+    ],
+    "negative_signatures": [
+      "History-carried and hybrid q2-then-q1 margins are 0.0 for every seed, yielding expected mode-conditioned mixed_direction aggregate metric relations rather than a causal-support failure",
+      "Quantity-matched repeated-S1 and repeated-S2 responses equal the candidate, so functional source diversity, complementarity, synergy, cooperation, and coordination are not supported"
+    ],
+    "positive_signatures": [
+      "One auditable non-private source-label-free common carrier is retained in every mode",
+      "S1 and S2 remain attributable while all single-source and leave-one responses are zero",
+      "State-carried response is robust aligned and invariant across equal-P physical orders",
+      "History-carried response follows active H_P/M_H order and clamp rather than P-only state",
+      "Hybrid response requires separately intervenable P and H_P components",
+      "All comparison, lane-control, program-control, access-contrast, reconstruction, restoration, continuation, and reset obligations pass"
+    ],
+    "reconstruction_status": "verified",
+    "record_complete": true,
+    "retained_evidence_refs": [
+      "P2-I2-C02-EXECUTION-MANIFEST",
+      "P2-I2-I09A-CONTROL-RESOLUTION-INDEX",
+      "P2-I2-I10-RECONSTRUCTION-MANIFEST",
+      "P2-I2-I11-CLOSEOUT-MANIFEST"
+    ],
+    "stopping_condition": "Stop after one complete mode-preserving terminal classification of the fixed 234-entry matrix without rescue, mode selection, margin optimization, or scientific rerun.",
+    "stopping_condition_reached": true,
+    "terminal_record_id": "p2-i2-i11-terminal-classification"
+  },
+  "record_type": "terminal_classification",
+  "schema_version": "1.1.0"
+}

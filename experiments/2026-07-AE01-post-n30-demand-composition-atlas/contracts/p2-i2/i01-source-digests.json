@@ -1,0 +1,100 @@
+{
+  "artifact_id": "P2-I2-I01-SOURCE-DIGEST-INVENTORY",
+  "artifact_version": "1.1.0",
+  "iteration_id": "P2-I2-I01",
+  "revalidated_by": "P2-I2-I01R1",
+  "graph_repository": "graph-reflexive-coherence",
+  "graph_revision": "3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5",
+  "worktree_state_before_audit": "clean",
+  "worktree_state_after_audit": "clean",
+  "worktree_state_after_revalidation": "clean",
+  "digest_algorithm": "sha256",
+  "files": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+      "evidence_role": "Package identity and src package-root declaration"
+    },
+    {
+      "path": "src/pygrc/__init__.py",
+      "sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e",
+      "evidence_role": "Root public-surface policy"
+    },
+    {
+      "path": "src/pygrc/models/__init__.py",
+      "sha256": "31f7105365214c83f76f53aa7be1f1e0fcfc484bb96a88ab04729c1635df74dc",
+      "evidence_role": "Stable model and restoration exports"
+    },
+    {
+      "path": "src/pygrc/models/grc_9_v3_state.py",
+      "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "evidence_role": "Node-coherence carrier and substrate state fields"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3.py",
+      "sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+      "evidence_role": "Stable LGRC9V3 compatibility facade"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_contract.py",
+      "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+      "evidence_role": "Packet, surface, producer, and control record contracts"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "evidence_role": "Attributable packet paths, additive arrival, debit, queue, and ledger semantics"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+      "sha256": "40e886cd4310b45881c5e9ca22c0594cbb73f1241a63ddfd5ce57ea1373d6552",
+      "evidence_role": "Public runtime, feedback surface/producer, configuration, and intervention surfaces"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_runtime_state.py",
+      "sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+      "evidence_role": "Composed runtime-state identity and serialization coverage"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_timing.py",
+      "sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+      "evidence_role": "Public causal-history annotation and artifact helpers; evidence-only rather than active runtime history"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+      "sha256": "57693baaa431ff5de9f299322cf80cb82f2114055ade4b27b06c52b36e9339df",
+      "evidence_role": "Versioned native restoration identity and digest"
+    },
+    {
+      "path": "docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md",
+      "sha256": "32277916241b2059d80645f9fc64d9c693bc66701ec63ccd89dc46eff961837d",
+      "evidence_role": "Documented stable imports, runtime semantics, and claim boundary"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_runtime.py",
+      "sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+      "evidence_role": "Focused queue, feedback, route, and snapshot conformance"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_contract.py",
+      "sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+      "evidence_role": "Public causal-history annotation/artifact contract and optional attachment behavior"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_restoration.py",
+      "sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+      "evidence_role": "Restoration API, sensitivity, and round-trip conformance"
+    },
+    {
+      "path": "tests/models/test_lgrc_9_v3_restoration_matrix.py",
+      "sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+      "evidence_role": "Restoration identity matrix and bounded continuation conformance"
+    },
+    {
+      "path": "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json",
+      "sha256": "e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe",
+      "evidence_role": "Graph-project restoration closeout and downstream composition boundary"
+    }
+  ],
+  "boundary": "These digests bind source-current capability evidence only. They do not admit the graph revision into AE01 or establish an L02 result."
+}

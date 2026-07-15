@@ -9,6 +9,12 @@
 
 **Scope:** theoretical transition, engineering posture, and vocabulary bridge; no implementation claims
 
+**Experimental bridge:** This paper remains conceptual. For the controlled
+theory-to-evidence method, see [Agentic Ecology: From Theory to Controlled
+Experiments](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
+For current bounded evidence, see the [AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
+
 Copyright © 2026 Uroš Jovanovič, CC BY-SA 4.0.
 
 ---
@@ -658,6 +664,15 @@ This is a central sentence.
 It lets us see pheromones, roads, habits, tools, laws, nests, tunnels, and institutions as members of one family: persistent geometry that changes future continuation.
 
 This is why the passive-environment frame is too small. The environment is not merely read by agents. It is written by coherence flow.
+
+**Controlled evidence note — AE01:** P2-I1 supplies a bounded instance of this
+transition: attributable shared-medium history changes later formation
+possibility differently across matched susceptibilities. Main P2-I2 then
+separates what the carrier holds now from the ordered history of how it formed.
+These results expose mechanisms by which prior activity becomes future
+possibility; they do not establish an autonomous co-created world. See the
+[AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
 
 ---
 

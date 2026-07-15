@@ -1,0 +1,22 @@
+{
+  "accepted_builder_invocation_count": 1,
+  "artifact_id": "P2-I2-I05B-FINAL-RECEIPT",
+  "artifact_version": "1.0.0",
+  "authorization_consumed": true,
+  "builder_invocation_count": 1,
+  "candidate_execution_authorized": false,
+  "claim_receipt_sha256": "16f17846449072140f8fafc8222c214fbe93ca3b99000ccaf43efad1bd449ea4",
+  "failure": null,
+  "governed_attempt_count": 1,
+  "infrastructure_retries": 0,
+  "iteration_id": "P2-I2-I05B",
+  "lane_id": "AE01-L02",
+  "null_invocation_count": 1,
+  "null_reconstruction_generation_count": 0,
+  "output_readback_reconstruction_count": 1,
+  "output_sha256": "20cf095f03ac7ef7b932f52e6e79b35a3e962db42b583999f44bf81f373582b6",
+  "policy_id": "P2-I2-I05B-ONE-SHOT-EXECUTION-POLICY",
+  "scientific_result": false,
+  "second_invocation_refused": true,
+  "status": "completed"
+}

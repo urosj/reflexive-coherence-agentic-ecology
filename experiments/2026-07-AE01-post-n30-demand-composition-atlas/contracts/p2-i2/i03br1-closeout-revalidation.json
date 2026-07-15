@@ -1,0 +1,577 @@
+{
+  "artifact_id": "P2-I2-I03BR1-CLOSEOUT-REVALIDATION",
+  "artifact_version": "1.0.0",
+  "blocking_findings": [],
+  "candidate_control_calibration_or_scientific_execution": 0,
+  "checks": [
+    {
+      "check_id": "RV-01",
+      "evidence": {
+        "canonical_M_H": 0.5,
+        "canonical_score": 0.5,
+        "differing_latest_contact_fields": [
+          "node_proper_time",
+          "surface_digest",
+          "surface_state_digest"
+        ],
+        "matched_latest_contact_fields": {
+          "contact_amount": 0.01,
+          "event_time_key": 8.0,
+          "pulse_channel_id": "edge:7",
+          "pulse_event_kind": "lgrc9v3_packet_arrival",
+          "route_aspect_id": "unbound_lgrc2_packet_contact",
+          "scheduler_event_index": 9,
+          "source_node_id": 7,
+          "target_node_id": 8
+        },
+        "native_emit_source": "src/pygrc/models/lgrc_9_v3_runtime.py",
+        "reversed_M_H": 0.4,
+        "reversed_score": 0.4
+      },
+      "finding": "A common neutral contact follows materialization in every standard branch. Across the two order branches its route, endpoints, amount, event time, scheduler index, event kind, and channel match. Only node-proper-time and derived row digests differ; native polarity is computed solely from M_H/B_ref live masses and the producer's decision reads that polarity with expected_source_surface_digest null.",
+      "name": "exclude_hidden_latest_contact_path",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-02",
+      "evidence": {
+        "H_P_role": {
+          "exact_carrier_id": "pending_I06",
+          "identity_rule": "one ordered token sequence shared by all registered contributions; no contributor-private slots, success field, or lineage-indexed substate",
+          "owner": "RCAEActiveHistoryAdapterV1",
+          "role": "one_common_non_private_active_history_carrier"
+        },
+        "M_H_role": {
+          "exact_node_id": "pending_I06",
+          "identity_rule": "deterministic output port/cache of H_P, never an independently selected state-carried pool; response masks may read M_H but not P, S1, S2, or audit logs",
+          "native_type": "GRC9V3NodeState.coherence",
+          "role": "native_materialized_readout_port_of_H_P"
+        },
+        "clamp_intervention": {
+          "after_current_identity_digest": "150cffcd5afe6a92a8b791f8d938e86bfd816ee32cacae57425c36c37bbe5c31",
+          "after_token_digest": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "before_current_identity_digest": "1063ee266530a34474f5f7ccfd82136e786775e5ee598aa77593a9f3e1b88c50",
+          "intervention_id": "i03b-conformance-clamp-to-reference",
+          "native_audit_rewritten": false,
+          "reason": "fixture-only history clamp with native contribution audit preserved",
+          "success_or_response_written": false
+        },
+        "clamp_tokens": []
+      },
+      "finding": "H_P is persisted adapter state with independent replacement/reset semantics; R_H reads H_P and public native packets materialize M_H. The machine contract identifies the functional pool as H_P plus M_H output-port binding, not P or M_H alone.",
+      "name": "confirm_active_H_P_and_M_H_output_port",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-03",
+      "evidence": {
+        "admission_method": "RCAEActiveHistoryAdapterV1.ingest_new_rows",
+        "factorization_keys": [
+          "C_P",
+          "L",
+          "M_H",
+          "R_H",
+          "U_H",
+          "V",
+          "forbidden_G",
+          "q"
+        ]
+      },
+      "finding": "P/C_P, H_P, L, U_H, R_H, M_H, V, and forbidden G are machine-bound with ownership, inputs, causal/audit status, and restoration duties. U_H admits only unseen route-local native arrivals from a registered source-node set to P.",
+      "name": "complete_history_carried_factorization",
+      "qualification_or_downstream_obligation": "I06 must preserve the frozen fixture's unique registered source-to-P path or add an explicit route/channel admission key; source/target membership is the current exact adapter filter.",
+      "status": "passed_with_downstream_obligation"
+    },
+    {
+      "check_id": "RV-04",
+      "evidence": {
+        "operation_kinds": [
+          "native_arrival_contact_amount"
+        ],
+        "token_fields": [
+          "contact_amount",
+          "inter_arrival_interval",
+          "operation_kind",
+          "sequence_index"
+        ]
+      },
+      "finding": "operation_kind is the same physical native-arrival operation for both sources; amount and interval come from contact physics. No source, lineage, packet, event, route digest, or contributor slot enters a token or R_H.",
+      "name": "physical_token_type_excludes_contributor_identity",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-05",
+      "evidence": {
+        "lineage_permutation_causal_signature_equal": true,
+        "paired_load_continuation": true,
+        "paired_reset_continuation": true
+      },
+      "finding": "scan_index and consumed surface digests gate admission only; R_H reads tokens only. They are persisted in current/reset adapter identity, clamp/reorder does not rewind them, and paired load/reset continuation passed.",
+      "name": "cursor_and_idempotency_isolation",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-06",
+      "evidence": {
+        "latest_contact_audit": {
+          "contact_amount": 0.01,
+          "event_time_key": 8.0,
+          "pulse_channel_id": "edge:7",
+          "pulse_event_kind": "lgrc9v3_packet_arrival",
+          "route_aspect_id": "unbound_lgrc2_packet_contact",
+          "scheduler_event_index": 9,
+          "source_node_id": 7,
+          "target_node_id": 8
+        },
+        "post_response_coherence_differences": {
+          "A": [
+            0.9,
+            1.0
+          ],
+          "B": [
+            0.1,
+            0.0
+          ],
+          "M_H": [
+            0.5,
+            0.4
+          ],
+          "P": [
+            1.6,
+            1.5999999999999999
+          ],
+          "R_H_plus": [
+            4.5,
+            4.6
+          ]
+        }
+      },
+      "finding": "The branches use fresh identical fixtures and equal operation counts. Before V, P matches within the frozen implementation tolerance and the response-visible neutral contact/configuration match; M_H and its balancing-reservoir consequence are the declared history-path differences. Post-response A/B differ only because V fired in one branch.",
+      "name": "order_contrast_continuation_state_matching",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-07",
+      "evidence": {
+        "readout_rule": "source-label-invariant, order-sensitive fold over H_P: r_0 = 0; r_(j+1) = lambda * r_j + typed_amount_j, with 0 < lambda < 1"
+      },
+      "finding": "I03B claims an active ordered history and deterministic scalar readout, not irreducible raw-history necessity or non-Markovianity.",
+      "name": "bounded_non_irreducibility_claim",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-08",
+      "evidence": {
+        "clamp_identity_digest": "ebdf6ef63a85625de2fb7d9a98ba56bfcd8396467a3343f0d4d2c6b0db993859",
+        "intervention": {
+          "after_current_identity_digest": "150cffcd5afe6a92a8b791f8d938e86bfd816ee32cacae57425c36c37bbe5c31",
+          "after_token_digest": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "before_current_identity_digest": "1063ee266530a34474f5f7ccfd82136e786775e5ee598aa77593a9f3e1b88c50",
+          "intervention_id": "i03b-conformance-clamp-to-reference",
+          "native_audit_rewritten": false,
+          "reason": "fixture-only history clamp with native contribution audit preserved",
+          "success_or_response_written": false
+        }
+      },
+      "finding": "The clamp replaces H_P itself, preserves native audit/P, retains the consumed-row cursor, rematerializes M_H, performs no later ingest before V, and carries explicit intervention provenance in adapter/composite identity.",
+      "name": "active_history_clamp_stability",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-09",
+      "evidence": {
+        "P_values": [
+          1.6,
+          1.3
+        ],
+        "state_debit": {
+          "amount": 0.3,
+          "edge_role": "P_to_K_P",
+          "source": "P",
+          "source_lineage_id": "lineage:common-pool-state-only-debit",
+          "target": "K_P",
+          "target_lineage_id": "lineage:state-only-sink"
+        }
+      },
+      "finding": "The P-to-K_P debit cannot satisfy the adapter's registered-source-to-P arrival filter. It occurs before the common neutral contact, leaves H_P/M_H and producer configuration fixed, and the retained response record matches canonical.",
+      "name": "state_only_debit_exclusion",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-10",
+      "evidence": {
+        "diversion_specs": [
+          {
+            "amount": 0.2,
+            "edge_role": "S1_to_K_P",
+            "source": "S1",
+            "source_lineage_id": "lineage:source-one",
+            "target": "K_P",
+            "target_lineage_id": "lineage:diversion-sink"
+          },
+          {
+            "amount": 0.4,
+            "edge_role": "S2_to_K_P",
+            "source": "S2",
+            "source_lineage_id": "lineage:source-two",
+            "target": "K_P",
+            "target_lineage_id": "lineage:diversion-sink"
+          }
+        ],
+        "source_coherences": [
+          1.8,
+          1.6
+        ]
+      },
+      "finding": "Both source debits and deterministic contribution slots are retained, but packets terminate at K_P outside the H_P admission boundary. No token is admitted and the same neutral response opportunity follows.",
+      "name": "write_diversion_source_activity_matching",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-11",
+      "evidence": {
+        "aggregation_performed": false,
+        "front_masks": [
+          [
+            12
+          ],
+          [
+            15
+          ]
+        ]
+      },
+      "finding": "Two separate adapter instances materialize two separate ports; each feedback mask reads one port, no aggregate is returned or fed back, and the branch runs in a fresh isolated model.",
+      "name": "private_partition_no_common_read",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-12",
+      "evidence": {
+        "alternate_front": [
+          3
+        ],
+        "alternate_rear": [
+          6
+        ],
+        "contributors": [
+          "S1",
+          "S2"
+        ]
+      },
+      "finding": "A_alt is not a contributor and uses the same M_H/B_ref feedback class without source lineage or contributor address. This proves architectural accessibility only.",
+      "name": "alternate_access_role_eligibility",
+      "qualification_or_downstream_obligation": "R05 retention, capacity, and scientific access comparison remain I04/I06 and execution work.",
+      "status": "passed_with_downstream_obligation"
+    },
+    {
+      "check_id": "RV-13",
+      "evidence": {
+        "allowed_model_calls": [
+          "get_state",
+          "schedule_packet_departure",
+          "step"
+        ],
+        "forbidden_terms_absent": [
+          "emit_feedback_eligibility_surface_row",
+          "produce_events",
+          "set_feedback_coupled_pulse_producer",
+          "cached_quantities",
+          "feedback_threshold"
+        ]
+      },
+      "finding": "Static source inspection confirms the adapter reads rows, maintains/intervenes on H_P, computes R_H, and requests public balancing packets only. It contains no feedback/producer invocation, response threshold, cached-quantity mutation, success computation, or later-response schedule.",
+      "name": "adapter_stops_at_declared_boundary",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-14",
+      "evidence": {
+        "native_blockers": [
+          "LGRC9V3CausalPulseSubstrateSurfaceRow is explicitly passive evidence and does not update an active common history carrier.",
+          "emit_feedback_eligibility_surface_row derives from only the latest route-local contact row and live node coherence; it does not fold a registered multi-contribution sequence.",
+          "The feedback producer reads only the latest feedback row and an optional expected digest for that row; this is not a common, independently intervenable multi-event history.",
+          "The optional LGRC-0 causal-history artifact is annotation-only and cannot mutate runtime or drive a later response.",
+          "No admitted public native operation performs a history-only reorder/clamp while preserving encounter state and audit attribution."
+        ],
+        "native_candidate_disposition": "inadequate_for_history_carried",
+        "native_strengths": [
+          "LGRC9V3RuntimeState owns an ordered causal_pulse_substrate_surface_log and packet ledger.",
+          "Each committed packet event can emit a route_local_pulse_contact row with physical amount, endpoints, channel, event order, and time.",
+          "The exact runtime artifact, surface log, native producer configuration, and valid reset baseline are covered by the native v2 restoration identity.",
+          "Native feedback and packet producers can own the final history-derived response transition after a compatible causal readout is materialized."
+        ],
+        "rejected_native_shortcuts": [
+          {
+            "reason": "The log remains audit evidence; no response consumes the complete registered history.",
+            "shortcut": "Treat the ordered native surface log as H_P without adding an active read path."
+          },
+          {
+            "reason": "It compares one latest-row digest containing event/route identity selected by configuration, not a source-independent common-history carrier; using it as success authorization would be controller-addressed.",
+            "shortcut": "Use expected_source_surface_digest as the history condition."
+          },
+          {
+            "reason": "The admitted implementation and reference guide declare it derived, annotation-only, and non-mutating.",
+            "shortcut": "Treat an LGRC-0 annotation artifact as active history."
+          }
+        ],
+        "selected_disposition": "minimally_producer_assisted"
+      },
+      "finding": "The admitted native log remains passive/latest-row based without an active multi-event history or history-only intervention. The selected adapter adds only that carrier/readout bridge; native mutation and response remain intact.",
+      "name": "counterfactual_producer_minimality",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-15",
+      "evidence": {
+        "accumulation": "applicable; append admitted physical tokens to one H_P",
+        "claim_boundary": "No native history primitive, resource economy, circulation, trail maintenance, recurrence, selfhood, or agency claim follows.",
+        "depletion": "applicable only as explicit active-history clamp/replacement; no autonomous deletion selected",
+        "leakage": "not_applicable; lambda is an order-sensitive readout weight, not autonomous wall-time decay of retained H_P",
+        "maintenance": "not_applicable; no maintenance transition selected",
+        "mixing": "applicable; ordered source-label-invariant fold over the common token sequence",
+        "reserve": "native source/reservoir/M_H coherence and packet budget measured; H_P itself is an external ordered identity rather than a conserved resource",
+        "saturation": "not_applicable; no history capacity/saturation rule selected"
+      },
+      "finding": "The selected implementation is run-bounded append-only under normal admission, explicitly whole-history replaceable by intervention, with no autonomous deletion, fixed capacity, saturation, leakage/decay, or maintenance transition. Those absences are explicit rather than ecologically inferred.",
+      "name": "history_lifecycle_semantics",
+      "qualification_or_downstream_obligation": "I06 must bound branch/event counts and either retain these not-applicable lifecycle classes or register a new reviewed construction; no conformance fixture capacity may become scientific calibration.",
+      "status": "passed_with_downstream_obligation"
+    },
+    {
+      "check_id": "RV-16",
+      "evidence": {
+        "adapter_code_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+        "adapter_identity_terms": [
+          "artifact_schema_version",
+          "configuration",
+          "current_state",
+          "reset_baseline_state",
+          "tokens",
+          "scan_index",
+          "consumed_surface_digests",
+          "last_materialized_readout",
+          "last_materialization",
+          "interventions"
+        ],
+        "composite_binding": {
+          "adapter_class": "RCAEActiveHistoryAdapterV1",
+          "carrier_role": "H_P",
+          "implicit_rebase_allowed": false,
+          "native_provider": "lgrc9v3_restoration_identity_v2",
+          "one_sided_reset_allowed": false,
+          "readout_role": "M_H",
+          "response_front_mask_excludes": [
+            "P",
+            "S1",
+            "S2",
+            "H1_private",
+            "H2_private"
+          ],
+          "schema": "p2_i2_i03b_composite_restoration_identity_v1"
+        }
+      },
+      "finding": "Continuation state is layered: native v2 plus complete adapter current/reset identity and fixture role binding form the composite; the immutable runtime freeze additionally binds adapter code, token/admission semantics, harness, and graph source digests. Materialization is synchronous and drains its native queue, so no adapter-side pending operation exists.",
+      "name": "complete_composite_identity",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-17",
+      "evidence": {
+        "equal_input_continuation_after_load": true,
+        "equal_input_continuation_after_reset": true,
+        "initial_composite_digest": "01c5fce9e9da72888101c854c10663eb5831b892e4d55fac6037fac243f32850",
+        "loaded_composite_digest": "4e8ae26852f0ac7cc953fde1e7ffa4bc0d02cee79b93e9d9cfb900d435a451dd",
+        "paired_reset_returns_to_initial_composite_identity": true,
+        "paired_save_load_identity_equal": true,
+        "pre_save_composite_digest": "4e8ae26852f0ac7cc953fde1e7ffa4bc0d02cee79b93e9d9cfb900d435a451dd"
+      },
+      "finding": "The harness uses a manifest-coordinated native+adapter save, validates both loaders and the complete loaded composite before continuation, invokes only paired resets, forbids implicit rebase in the binding, and demonstrates equal continuation after load/reset. Missing/corrupt component loads or mismatched composite identity raise before response continuation.",
+      "name": "paired_save_load_reset_fail_closed",
+      "qualification_or_downstream_obligation": "I06 must expose the paired procedure as the only registered continuation interface and validate manifest component hashes explicitly; the conformance harness proves the governed path, not a generic atomic transaction API.",
+      "status": "passed_with_downstream_obligation"
+    },
+    {
+      "check_id": "RV-18",
+      "evidence": {
+        "I03C_authorized_by_runtime_completion": false,
+        "I04_authorized_by_runtime_completion": false,
+        "evidence_effect": "realization implementation-conformance only",
+        "failure_classes": [
+          "realization_inadequate",
+          "missing_prerequisite",
+          "infrastructure_invalid"
+        ],
+        "may_enter_I04_or_I05_calibration": false,
+        "may_rank_dependence_modes": false,
+        "may_replace_I08_scientific_execution": false,
+        "may_supply_I06_or_I07_registered_values": false,
+        "may_support_or_falsify_AE01_H_L02": false,
+        "observed_values_may_be_reused_scientifically": false,
+        "owner_review_required": true,
+        "scientific_failure_class_allowed": false
+      },
+      "finding": "Machine booleans prohibit scientific support/falsification, calibration entry, registration reuse, execution replacement, mode ranking, and downstream authorization. I03BR1 adds an explicit downstream rejection set without changing the frozen conformance artifact.",
+      "name": "mechanical_scientific_quarantine",
+      "qualification_or_downstream_obligation": "I04 and I06 validators must reject the I03B fixture coefficient, amounts/types/times, threshold, packet amount, branch IDs, response values, comparator, and evidence digest; only the pre-runtime fold family may be imported.",
+      "status": "passed_with_downstream_obligation"
+    },
+    {
+      "check_id": "RV-19",
+      "evidence": {
+        "branch_ids": [
+          "active_history_clamp",
+          "alternate_responder",
+          "combined_q1_q2",
+          "combined_q2_q1",
+          "lineage_permuted",
+          "private_partition",
+          "q1_only",
+          "q2_only",
+          "reference",
+          "restoration_continuation",
+          "state_only_separation",
+          "write_diversion"
+        ],
+        "initial_identity_witness": "01c5fce9e9da72888101c854c10663eb5831b892e4d55fac6037fac243f32850",
+        "invocation_accounting": {
+          "branch_scenarios_per_evidence_or_reconstruction_invocation": 12,
+          "evidence_invocations": 1,
+          "freeze_only_validation_invocations": 1,
+          "reconstruction_invocations": 1,
+          "rescue_or_parameter_search_invocations": 0,
+          "retry_invocations": 0
+        }
+      },
+      "finding": "All twelve frozen branch IDs are retained. Each standard branch constructs a fresh model and adapter; private/restoration branches construct their own fresh state. The single matrix invocation and single independent reconstruction each ran all branches, with zero retries and byte-identical output.",
+      "name": "complete_isolated_twelve_branch_matrix",
+      "qualification_or_downstream_obligation": "The common-profile initial composite digest is retained once as the deterministic fresh-fixture witness rather than duplicated per standard branch; private profiles are identified by their separate frozen configurations and fresh construction.",
+      "status": "passed_with_downstream_obligation"
+    },
+    {
+      "check_id": "RV-20",
+      "evidence": {
+        "audit_lineage_is_causal": false,
+        "encounter_pool_state_is_primary_causal_component": false,
+        "hybrid_profile_status": "unauthorized_until_owner_accepts_i03b",
+        "ordered_common_history_is_causal": true,
+        "pool_dependence_mode": "history_carried",
+        "state_carried_profile_status": "owner_accepted_for_progression_and_unchanged",
+        "umbrella_discriminator_gate_status": "in_progress_not_passable_by_i03b_alone"
+      },
+      "finding": "I03B is mode-local, leaves I03A accepted and unchanged, performs no performance comparison, and treats native history inadequacy as specific to history_carried.",
+      "name": "preserve_i03a_independently",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-21",
+      "evidence": {
+        "i03c_automatic_authorization": false,
+        "i04_authorized": false,
+        "new_progression_decision_required": true
+      },
+      "finding": "I03BR1 itself opens nothing. A new owner progression decision may accept I03B implementation evidence and authorize I03C only; I04 remains blocked on the complete reviewed three-mode discriminator gate.",
+      "name": "owner_progression_opens_only_i03c",
+      "qualification_or_downstream_obligation": null,
+      "status": "passed"
+    }
+  ],
+  "claim_boundary": {
+    "I03C_authorized": false,
+    "I04_authorized": false,
+    "boundary_rung_effect": "none",
+    "calibration_input_allowed": false,
+    "control_result_effect": "none",
+    "fixture_scope": "implementation_conformance_only",
+    "history_claim": "active ordered history retained and causally materialized into a later native response path through a deterministic scalar readout",
+    "irreducible_raw_history_claim": false,
+    "non_markovian_claim": false,
+    "registration_value_reuse_allowed": false,
+    "scientific_evidence": false,
+    "terminal_effect": "none"
+  },
+  "downstream_rejection_requirements": {
+    "may_import": [
+      "pre-runtime frozen ordered-fold structural family",
+      "source-label exclusion rule",
+      "active-history and output-port factorization",
+      "producer-minimality and restoration obligations"
+    ],
+    "reject_from_I04_I06": [
+      "fixture recency coefficient lambda",
+      "fixture token amounts, operation values, and event times",
+      "fixture native feedback threshold and response packet amount",
+      "fixture branch identifiers and observed response values",
+      "fixture floating-point comparator",
+      "retained conformance or reconstruction digest as candidate evidence"
+    ]
+  },
+  "functional_pool_identity": {
+    "audit_projection": "L",
+    "native_intake_not_pool": "P",
+    "output_port_not_complete_pool": "M_H",
+    "pool": "H_P plus its declared M_H native output-port binding"
+  },
+  "graph_after": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_porcelain": ""
+  },
+  "graph_before": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_porcelain": ""
+  },
+  "history_lifecycle": {
+    "autonomous_depletion": "not_applicable",
+    "fixed_capacity_or_saturation": "not_selected_and_not_applicable_to_i03b_conformance",
+    "leakage_or_decay": "not_applicable",
+    "maintenance_transition": "not_applicable",
+    "normal_operation": "run_bounded_append_only",
+    "scientific_capacity_values": "deferred_to_I04_I06_without_fixture_reuse",
+    "whole_history_replacement": "implemented_as_explicit_intervention"
+  },
+  "input_identity": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation-input.json",
+    "sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca"
+  },
+  "iteration_id": "P2-I2-I03BR1",
+  "lane_id": "AE01-L02",
+  "model_instantiations": 0,
+  "owner_acceptance_boundary": {
+    "I04_remains_blocked": true,
+    "bounded_runtime_conformance_remains_implementation_evidence_only": true,
+    "history_carried_scientific_status": "unresolved",
+    "i03b_causal_design_may_be_accepted_for_staged_progression": true,
+    "new_progression_decision_required": true,
+    "owner_may_authorize_next": "I03C only",
+    "realization_class": "minimally_producer_assisted"
+  },
+  "review_summary": {
+    "all_twelve_acceptance_statements_defensible": true,
+    "blocking_findings": 0,
+    "passed": 15,
+    "passed_with_downstream_obligation": 6,
+    "review_checks_total": 21
+  },
+  "runtime_evidence_invocations": 0,
+  "runtime_reconstruction_invocations": 0,
+  "status": "passed_after_revalidation",
+  "validated_at": "2026-07-14",
+  "validation_kind": "zero_runtime_source_dataflow_and_retained_artifact_acceptance_audit",
+  "validator_identity": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03br1_validate.py",
+    "sha256": "04012330987d4c4b0f2676b33f18f526ae82125bc58cd5663d37bfe131a5ea42"
+  }
+}

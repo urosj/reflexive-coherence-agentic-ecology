@@ -1,0 +1,692 @@
+{
+  "artifact_id": "P2-I2-I04-CALIBRATION-PREREGISTRATION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "check_id": "I04V-01",
+      "evidence": {
+        "analysis_module": "bf2674af59dbfa05074aff28b99125e9bb1c333ecd199ee3e5d9c9ebdf766428",
+        "analysis_policy": "9ab75a6f1bc7beef14165978789353b69d1ed38503f7a131fe60a6452114ecd5",
+        "calibration_entrypoint": "05a62b434fcd54a208124feff4d8b9690fc771cd949063367a83b8db65f99a46",
+        "calibration_policy": "e885837ced3b8818fe363381ec7b4d1968fcc6b0ec73946058663a787bd9424c",
+        "input": "931bd8428a6e6fcda5ef97be04049f12aeb0dcbaddd331a5821562f81efdc5f4",
+        "preregistration": "a12fc6899c45cc2568b82f6b69bc86f0df97963d2a8d636c8e65a68770ba3221",
+        "test": "76ef526e133d9ae3a035ecca090d329eece9cd509c6d133b2134053596c63a04"
+      },
+      "finding": "All frozen I04 input, policy, code, test, and preregistration identities match.",
+      "name": "frozen_artifact_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-02",
+      "evidence": {
+        "authorities": [
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+            "sha256": "e77ee473d0a00923a50d9063f5c5240dafdb0e51317bb8f5e08676c10c53d98f"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/lane-hypotheses.md",
+            "sha256": "2ccf3bc062cb2a5eed0cf475d35f1a32a675df91a040133fb4058119cb59a3b9"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/post-r3-ecology-discriminator-amendment.md",
+            "sha256": "173aff056fd1738d82cca82ca2892192f74e36791ff87a649976f13fa4b700b2"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/outcome-and-stopping-contract.md",
+            "sha256": "b9c0d4b4c17e48d3efae831bae3369a81eb034a193c902f907fb6dbf09096fa2"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/developmental-interpretation-contract.md",
+            "sha256": "92fd37c18777f6b366df242a99dbdc1b556cb57b1005f7415d875f7a35a258f1"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L02.json",
+            "sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p1_i5_execution_policy.json",
+            "sha256": "b161d8e1f07889b6121032aacae501ebcd0669bd017aa9c1caf91d2f9a38234d"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-index.json",
+            "sha256": "f9c8591a9d3c30a90097548b359e399b3a9e73b01f06ea7cd63d5971ceeb3fa6"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-validation.json",
+            "sha256": "44b2db8e49b603ddd2b59f3e5bc2f367708b5b93b8b1e9e19e5b8c062cb93c9e"
+          },
+          {
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
+            "sha256": "87232487b0937345f9f79db1b3618674ad683737672332f09ea9e3beefcee463"
+          }
+        ],
+        "baseline_commit": "6d0fdf8e7405b45cb509c5a0e323fa10149d2cf2"
+      },
+      "finding": "The accepted I03F baseline and all ten semantic/input authorities remain exact.",
+      "name": "accepted_authority_and_baseline",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-03",
+      "evidence": [
+        {
+          "causal_carrier": "native P",
+          "mode": "state_carried",
+          "mode_specific_rules": [
+            "equal-P order/shuffle invariance",
+            "post-write P-debit divergence",
+            "audit-history-only invariance"
+          ],
+          "primary_pairing": "two-source versus matched repeated-single-source in both orders",
+          "response": "native_B_target_coherence_gain",
+          "retained": true
+        },
+        {
+          "causal_carrier": "authoritative H_P through native M_H; P excluded from V",
+          "mode": "history_carried",
+          "mode_specific_rules": [
+            "active-history order divergence",
+            "P-only debit invariance with H_P/M_H fixed",
+            "H_P reference-clamp divergence with P fixed"
+          ],
+          "primary_pairing": "two-source versus matched repeated-single-source in both orders",
+          "response": "native_B_target_coherence_gain",
+          "retained": true
+        },
+        {
+          "causal_carrier": "native P plus authoritative H_P through native M_H",
+          "mode": "hybrid",
+          "mode_specific_rules": [
+            "complete P-by-H_P four-cell raw factorial",
+            "P-only intervention divergence",
+            "H_P-only intervention divergence",
+            "history-order divergence with P fixed",
+            "no interaction or synergy requirement"
+          ],
+          "primary_pairing": "two-source versus matched repeated-single-source in both orders",
+          "response": "native_B_target_coherence_gain",
+          "retained": true
+        }
+      ],
+      "finding": "Owner acceptance opens I04 only; all three unranked modes remain present and candidate execution stays closed.",
+      "name": "owner_gate_and_three_mode_retention",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-04",
+      "evidence": {
+        "definition": "native coherence at the registered response target B after completion of the one admitted A-to-B response-packet arrival window minus native coherence at B immediately before the corresponding native feedback-producer evaluation",
+        "direction": "higher_is_aligned",
+        "orientation_transform": "identity",
+        "primary_field_rule": "B coherence gain is primary; scheduled flags, feedback score, packet amount, and A debit are retained chain evidence and cannot replace it",
+        "required_native_chain_evidence": [
+          "feedback surface identity and live front/rear mask",
+          "native producer decision record",
+          "scheduled A-to-B packet identity when present",
+          "A debit and B arrival coherence deltas",
+          "window boundary snapshots and event ordering"
+        ],
+        "response_id": "native_B_target_coherence_gain",
+        "scientific_no_response_value": 0.0,
+        "unit": "native_coherence_amount",
+        "valid_domain": "finite_nonnegative",
+        "window": {
+          "end": "after every packet scheduled by that one producer evaluation has either arrived or the evaluation has registered no response, and before any other B-affecting operation",
+          "forbidden_events": [
+            "any unrelated B-affecting packet or direct coherence mutation",
+            "a second feedback-producer evaluation",
+            "an RCAE-authored success or response transition"
+          ],
+          "producer_evaluations": 1,
+          "registered_later_opportunities_per_cell_seed_subconfiguration_order": 1,
+          "start": "after all registered contributions, interventions, active-history materialization, and the matched neutral contact are complete; immediately before exactly one native feedback-producer evaluation"
+        }
+      },
+      "finding": "The primary field is one bounded native receiving-substrate consequence, not an intermediate score or success label.",
+      "name": "downstream_substrate_response",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-05",
+      "evidence": {
+        "candidate_cell": "combined-orders",
+        "comparator_cell": "individual-contributions",
+        "comparator_subconfiguration": "quantity_and_timing_matched_single_source_repetition",
+        "expected_primary_direction": "candidate_minus_comparator_greater_than_zero_is_aligned",
+        "metric_id": "combined_pool_history_normalized_margin",
+        "order_policy": "compute and retain one margin per seed and order stratum; do not choose a canonical order and do not average, minimize, maximize, or otherwise scalar-collapse orders",
+        "order_strata": [
+          {
+            "candidate": "S1 supplies q1, then S2 supplies q2",
+            "comparator": "S1 supplies q1, then S1 supplies the matched q2 operation",
+            "order_id": "source_role_1_then_source_role_2"
+          },
+          {
+            "candidate": "S2 supplies q2, then S1 supplies q1",
+            "comparator": "S2 supplies q2, then S2 supplies the matched q1 operation",
+            "order_id": "source_role_2_then_source_role_1"
+          }
+        ],
+        "rationale": "this is the nearest insufficient-repetition explanation because it preserves total contribution quantity, operation sequence, timing class, support, opportunity, and carrier baseline while replacing two attributable sources with repeated writes from one source",
+        "registration_matching_duty": "I06 must match contribution type, quantity sequence, relative timing, target, route class, cost, latency, support, carrier baseline, neutral contact, response policy, responder, and opportunity; only source continuity and the necessarily corresponding source-route identity may differ, and any unmatched route property blocks the pairing",
+        "scope_effect_of_equivalence": "resolution-limited equivalence retains a multi-source common-carrier observation if its causal controls pass but prevents the preserved single-source relation from being reported as combined-state or combined-history support"
+      },
+      "finding": "The closest repeated-single-source comparator is paired separately in both orders; six raw per-mode margins remain required.",
+      "name": "closest_comparator_and_distribution",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-06",
+      "evidence": {
+        "candidate_seeds": [
+          101,
+          211,
+          307
+        ],
+        "fixed_denominator_policy": "one registered opportunity per cell, seed, subconfiguration, and applicable order stratum",
+        "operational_missingness_policy": "raw and oriented response are null; the complete two-order primary panel for that mode and seed is not evaluable; no zero imputation or denominator removal",
+        "operational_statuses": [
+          "censored_runtime",
+          "missing_infrastructure",
+          "blocked_by_control"
+        ],
+        "opportunity_count_per_registered_stratum": 1,
+        "raw_retention": "retain every response and chain record for every cell, subconfiguration, seed, order, intervention, private diagnostic, and alternate responder",
+        "scalar_collapse": "forbidden_across_seeds_orders_modes_and_private_partitions",
+        "scientific_no_response_policy": "completed valid window with no native A-to-B response has raw and oriented response 0.0",
+        "scientific_statuses": [
+          "observed_response",
+          "scientific_no_response"
+        ],
+        "seed_pairing": "same mode, seed, order stratum, frozen configuration, support, and pairing identity"
+      },
+      "finding": "Fixed-denominator one-opportunity strata, scientific zero, operational null, full mode-seed invalidation, and raw retention are exact.",
+      "name": "aggregation_pairing_and_missingness",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-07",
+      "evidence": {
+        "proof": {
+          "aggregation": "one opportunity per registered stratum with every seed and order retained",
+          "calibration_population": "candidate-free equal synthetic response pairs exercise only the shared paired-margin analysis",
+          "causal_response_meaning": "all three accepted V paths terminate in the same native A-to-B continuation and the same receiving-substrate change at B",
+          "comparator_role": "two-source common-carrier constitution versus quantity-and-timing-matched repetition by one source",
+          "missingness": "scientific no-response is zero; any operationally incomplete primary record makes the full mode-seed panel not evaluable",
+          "time_window": "one matched native producer evaluation and its resulting arrival window",
+          "unit_and_orientation": "native coherence amount with identity orientation and higher aligned"
+        },
+        "shared_analysis_identity": true,
+        "shared_calibration_identity": true,
+        "shared_response_definition": true,
+        "upstream_non_equivalence_retained": "P, H_P/M_H, and P plus H_P/M_H remain distinct mode-specific causes and controls; sharing the downstream measurement does not merge or rank them"
+      },
+      "finding": "Shared downstream analysis/calibration is justified across all seven required equivalence fields without merging upstream carriers.",
+      "name": "shared_identity_semantic_equivalence",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-08",
+      "evidence": {
+        "classifier": {
+          "delta_source": "P2-I2-I05 candidate-blind metric calibration; pending",
+          "mixed_direction": "at least one margin is greater than delta and at least one is less than negative delta",
+          "narrow_aligned": "at least one margin is greater than delta, none is less than negative delta, and not every margin is greater than delta",
+          "narrow_counter": "at least one margin is less than negative delta, none is greater than delta, and not every margin is less than negative delta",
+          "not_applicable": "allowed only by a separately reviewed control-specific rationale",
+          "panel_scope": "complete primary margin panel or exact registered control panel",
+          "resolution_limited": "every evaluable margin has absolute value less than or equal to delta",
+          "resolution_unknown": "one or more required records are operationally not evaluable or delta is not frozen",
+          "robust_aligned": "every evaluable margin is greater than delta",
+          "robust_counter": "every evaluable margin is less than negative delta",
+          "top_primary_signature": "both order strata and all three seeds must exceed delta; a single order or seed never passes the signature"
+        },
+        "paired_margin": {
+          "denominator_floor_source": "ae01-l02-primary-metric-v1",
+          "formula": "(candidate - comparator) / max(abs(candidate), abs(comparator), measurement_resolution)",
+          "measurement_resolution": 1e-12,
+          "pairing": "paired_by_mode_seed_order_and_frozen_configuration",
+          "retain_per_seed_margins": true,
+          "retain_raw_coverage": true,
+          "zero_denominator_policy": "use measurement_resolution as denominator and classify a complete equal-zero pair within the resolution band"
+        }
+      },
+      "finding": "The frozen L02 denominator, unresolved I05 delta, complete relation vocabulary, and all-order top signature are coherent.",
+      "name": "margin_and_relation_classifier",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-09",
+      "evidence": {
+        "common": [
+          {
+            "cell": "individual-contributions",
+            "control_id": "each_original_source_alone",
+            "effect": "both marginal responses remain visible; neither may be silently promoted to the combined response",
+            "held_fixed": "opportunity, support, response window, response policy, and the retained source's registered contribution operation",
+            "rule": "raw_visibility"
+          },
+          {
+            "cell": "contributor-removal",
+            "control_id": "pure_source_label_permutation",
+            "effect": "failure blocks attribution-only invariance and R04",
+            "held_fixed": "all contribution physics, causal carrier state/history, times, routes, support, opportunity, and response configuration",
+            "rule": "invariant"
+          },
+          {
+            "cell": "contributor-removal",
+            "control_id": "contribution_operation_reassignment",
+            "effect": "divergence is diagnostic and cannot be called label-control failure",
+            "held_fixed": "explicitly not a pure-label intervention; changed amount, location, timing, type, or route is retained",
+            "rule": "raw_visibility"
+          },
+          {
+            "cell": "contributor-removal",
+            "control_id": "contributor_deletion",
+            "effect": "unchanged response blocks the affected combined-carrier dependence",
+            "held_fixed": "remaining activity, unrelated schedule, support, opportunity, and response measurement",
+            "rule": "different_unsigned"
+          },
+          {
+            "cell": "global-state-exclusion",
+            "control_id": "pool_write_diversion_or_freeze",
+            "effect": "failure to remove or change the candidate relation blocks R03/R04",
+            "held_fixed": "source activity and debit, lineage, support, opportunity, and response configuration while common-carrier admission is prevented",
+            "rule": "different_unsigned"
+          },
+          {
+            "cell": "global-state-exclusion",
+            "control_id": "private_partition_substitution",
+            "effect": "consulting both partitions is mailbox dependence and blocks R04",
+            "held_fixed": "marginal writes, route class, timing, support, and access opportunity; each private response remains separate",
+            "rule": "causal_chain_exclusion"
+          },
+          {
+            "cell": "global-state-exclusion",
+            "control_id": "direct_or_controller_substitution",
+            "effect": "failure to distinguish the bypass blocks R04 even if outputs differ or match",
+            "held_fixed": "nearest output opportunity and raw response retention",
+            "rule": "causal_chain_exclusion"
+          },
+          {
+            "cell": "individual-contributions",
+            "control_id": "quantity_matched_single_source_repetition",
+            "effect": "owns the primary margin; non-alignment prevents the preserved single-source relation from supporting R03",
+            "held_fixed": "the primary_pairing registration-matching duty",
+            "rule": "aligned_all"
+          },
+          {
+            "cell": "access-capacity-contrast",
+            "control_id": "alternate_eligible_responder",
+            "effect": "pass permits bounded R05 access retention only",
+            "held_fixed": "common carrier, contributions, support, policy class, response window, and non-private mask; responder role and its registered reserve/route are the contrast",
+            "rule": "access_relation_retained"
+          }
+        ],
+        "logical_cell_coverage": [
+          "access-capacity-contrast",
+          "contributor-removal",
+          "global-state-exclusion",
+          "individual-contributions",
+          "pooled-history-shuffle"
+        ],
+        "mode_specific": {
+          "history_carried": [
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "active_history_order_reversal",
+              "relation": "equal marginal quantities with different ordered H_P produce different later responses",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "P_only_debit_with_H_P_M_H_fixed",
+              "relation": "P is excluded from the history-carried V path",
+              "rule": "invariant"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "H_P_reference_clamp_with_P_fixed",
+              "relation": "response tracks active H_P through native M_H",
+              "rule": "different_unsigned"
+            }
+          ],
+          "hybrid": [
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "complete_P_by_H_P_component_factorial",
+              "relation": "retain raw responses for candidate_P/candidate_H, reference_P/candidate_H, candidate_P/reference_H, and reference_P/reference_H with exact held-fixed component identities",
+              "rule": "raw_visibility"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "P_only_reference_intervention",
+              "relation": "full candidate differs from reference_P/candidate_H while H_P/M_H remains fixed",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "H_P_only_reference_intervention",
+              "relation": "full candidate differs from candidate_P/reference_H while P remains fixed",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "history_order_reversal_with_P_fixed",
+              "relation": "equal P with different active H_P/M_H changes the same native joint response",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "interaction_or_synergy",
+              "relation": "retain any interaction diagnostic but impose no nonlinearity, synergy, irreducibility, or superadditivity requirement",
+              "rule": "raw_visibility"
+            }
+          ],
+          "state_carried": [
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "equal_P_order_and_shuffle",
+              "relation": "responses are invariant when complete native P state is equal",
+              "rule": "invariant"
+            },
+            {
+              "cell": "global-state-exclusion",
+              "control_id": "post_write_P_debit",
+              "relation": "response tracks the intervened native P state",
+              "rule": "different_unsigned"
+            },
+            {
+              "cell": "pooled-history-shuffle",
+              "control_id": "audit_history_only_change",
+              "relation": "audit order and lineage cannot enter V",
+              "rule": "invariant"
+            }
+          ]
+        }
+      },
+      "finding": "Every common and mode-specific qualitative expectation has a machine rule; the complete hybrid four-cell factorial is retained without a synergy requirement.",
+      "name": "signed_controls_and_hybrid_factorial",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-10",
+      "evidence": {
+        "I04_execution_boundary": {
+          "calibration_record_created": false,
+          "candidate_execution_authorized": false,
+          "delta_computed_or_frozen": false,
+          "matched_null_executed": false
+        },
+        "analysis_policy_ref": "configs/p2_i2_analysis_policy.json",
+        "authorization_requirement": {
+          "identity_rule": "the later I05 freeze must bind the exact I04 preregistration, analysis policy, and calibration policy SHA-256 identities supplied to the entry point",
+          "must_be_absent_in_I04": true,
+          "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+          "required_CAL_PRE_gate": "passed_after_owner_acceptance",
+          "required_artifact_id": "P2-I2-I05-CALIBRATION-EXECUTION-FREEZE",
+          "required_governed_invocations": 1,
+          "required_iteration_id": "P2-I2-I05"
+        },
+        "calibration_id": "rcae-p2-i2-shared-candidate-blind-matched-null-v1",
+        "calibration_seeds": [
+          19,
+          43,
+          71,
+          109,
+          163
+        ],
+        "candidate_blind": true,
+        "candidate_seeds_excluded": [
+          101,
+          211,
+          307
+        ],
+        "delta_status": "pending_I05_execution",
+        "estimator": "maximum of measurement_resolution and the maximum absolute matched-null normalized margin across all seeds and both order strata",
+        "evidence_effect": "resolution_only_no_candidate_evidence_when_executed_in_I05",
+        "execution_policy": {
+          "command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py --analysis-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_analysis_policy.json --calibration-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_calibration_policy.json --preregistration experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration.json --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/matched-null-calibration.json",
+          "dependencies": [
+            "Python 3.12 standard library"
+          ],
+          "entrypoint": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+          "failure_rule": "a config, identity, schema, candidate-exclusion, quarantine, output, or reconstruction failure leaves I05 invalid or incomplete; no parameter adaptation is permitted",
+          "max_governed_invocations": 1,
+          "max_infrastructure_retries": 1,
+          "python": ".venv/bin/python",
+          "resource_envelope": {
+            "max_disk_mb": 256,
+            "max_memory_mb": 512,
+            "max_runtime_seconds": 120
+          },
+          "working_directory": "repository_root"
+        },
+        "expected_I05_artifacts": [
+          "owner-authorized I05 calibration-execution freeze binding exact I04 identities",
+          "matched-null calibration record with every raw pair and per-order per-seed margin",
+          "calibration input and analysis identities",
+          "frozen lane-local metric sheet with populated delta status, value, rationale, and calibration reference only",
+          "reconstruction receipt proving byte-identical governed output"
+        ],
+        "forbidden_inputs": [
+          "candidate artifacts or outcomes",
+          "candidate seeds",
+          "PyGRC imports, models, snapshots, runtime records, or graph values",
+          "I03 conformance fixture values, observations, branches, topologies, comparators, outcomes, or digests",
+          "P2-I1 calibration panels, delta, metric results, or evidence",
+          "post-outcome tuning"
+        ],
+        "iteration_authorized_to_execute": "P2-I2-I05_only_after_owner_acceptance_of_I04",
+        "matched_null_generator": {
+          "kind": "equal_synthetic_response_pairs_over_two_order_strata",
+          "pair_rule": "for each seed and order stratum, null_candidate and null_comparator receive the same exact rational response",
+          "panels": [
+            {
+              "seed": 19,
+              "source_role_1_then_source_role_2": "1/23",
+              "source_role_2_then_source_role_1": "2/23"
+            },
+            {
+              "seed": 43,
+              "source_role_1_then_source_role_2": "3/23",
+              "source_role_2_then_source_role_1": "4/23"
+            },
+            {
+              "seed": 71,
+              "source_role_1_then_source_role_2": "5/23",
+              "source_role_2_then_source_role_1": "6/23"
+            },
+            {
+              "seed": 109,
+              "source_role_1_then_source_role_2": "7/23",
+              "source_role_2_then_source_role_1": "8/23"
+            },
+            {
+              "seed": 163,
+              "source_role_1_then_source_role_2": "9/23",
+              "source_role_2_then_source_role_1": "10/23"
+            }
+          ],
+          "scientific_interpretation": "none; the panels exercise numerical symmetry and analysis resolution only",
+          "selection_provenance": "fixed rank-derived rational sequence with prime denominator 23; selected without loading any I03 source or candidate/runtime value",
+          "value_representation": "exact_rational_string"
+        },
+        "measurement_resolution": 1e-12,
+        "measurement_resolution_source": "contracts/metric-sheets/AE01-L02.json#/record/resolution_policy/measurement_resolution",
+        "order_strata": [
+          "source_role_1_then_source_role_2",
+          "source_role_2_then_source_role_1"
+        ],
+        "pygrc_imported": false,
+        "quarantine_proof": {
+          "i03_registry_ref": "contracts/p2-i2/i03cr1-hybrid-closeout-registry.json#/fixture_quarantine_registry",
+          "i03_sources_loaded_by_generator": false,
+          "null_rational_strings_absent_from_registered_I03_sources": true,
+          "only_equal_numeric_value_allowed": "measurement_resolution 1e-12 from the independently frozen pre-I03 L02 metric sheet"
+        },
+        "runtime_execution": false,
+        "schema_version": "1.0.0",
+        "shared_across_modes": true,
+        "shared_identity_rationale": "all retained modes use the same downstream B-coherence-gain unit, identity orientation, one-opportunity aggregation, two-order pairing family, missingness policy, and normalized paired-margin calculation; the null exercises only that analysis surface and no upstream carrier"
+      },
+      "finding": "A shared ten-pair exact-rational null, disjoint seeds, estimator, resource envelope, command, and I04 non-execution boundary are frozen.",
+      "name": "candidate_blind_null_preregistration",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-11",
+      "evidence": {
+        "allowed_resolution": 1e-12,
+        "branch_intersection": [],
+        "null_values": [
+          "1/23",
+          "2/23",
+          "3/23",
+          "4/23",
+          "5/23",
+          "6/23",
+          "7/23",
+          "8/23",
+          "9/23",
+          "10/23"
+        ],
+        "numeric_intersection": [],
+        "source_count": 7
+      },
+      "finding": "All seven registered I03 sources are rejected; null values/strings, branch IDs, and conformance hashes are absent, with only the independently authoritative metric resolution retained.",
+      "name": "complete_I03_fixture_quarantine",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-12",
+      "evidence": {
+        "analysis_module": [
+          "__future__",
+          "ae01_tooling",
+          "collections",
+          "math",
+          "typing"
+        ],
+        "calibration_entrypoint": [
+          "__future__",
+          "ae01_tooling",
+          "argparse",
+          "fractions",
+          "hashlib",
+          "json",
+          "p2_i2_analysis",
+          "pathlib",
+          "sys",
+          "typing"
+        ]
+      },
+      "finding": "The analysis and future I05 entry point import no PyGRC and load no I03 source or candidate/runtime artifact.",
+      "name": "analysis_and_null_code_boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-13",
+      "evidence": {
+        "I05_authorization_exists": false,
+        "downstream_paths": [],
+        "matched_null_output_exists": false
+      },
+      "finding": "No I05-I08 artifact, matched-null output, candidate outcome, or PyGRC model invocation exists in I04.",
+      "name": "candidate_calibration_and_runtime_absence",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-14",
+      "evidence": {
+        "command": ".venv/bin/python -m unittest experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_analysis.py",
+        "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.002s\n\nOK"
+      },
+      "finding": "Ten pure analysis tests pass without generating the registered null or executing a runtime.",
+      "name": "candidate_free_analysis_unit_tests",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-15",
+      "evidence": {
+        "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "status": ""
+      },
+      "finding": "The admitted PyGRC checkout remains exact, clean, and unmodified.",
+      "name": "graph_read_only_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I04V-16",
+      "evidence": {
+        "change_control": {
+          "I06_may_bind_without_reopening_I04": [
+            "exact graph topology and role IDs",
+            "scientific contribution amounts, types, timing, thresholds, and response amount",
+            "exact route matching, carrier bounds, support, reserve, and restoration manifests",
+            "exact seven-cell subconfiguration identities consistent with this preregistration"
+          ],
+          "requires_new_I04_and_I05_cycle": [
+            "raw response, orientation, window, or unit",
+            "primary candidate, comparator, order strata, or pairing rule",
+            "aggregation, missingness, margin, classifier, or signed-control rule",
+            "analysis module or policy semantic identity",
+            "matched-null generator, calibration identity, seeds, estimator, or measurement resolution"
+          ]
+        },
+        "gate": {
+          "does_not_authorize": [
+            "I06 registration",
+            "I07 candidate-cycle freeze",
+            "I08 candidate or control execution",
+            "R01-R05 assignment",
+            "L02 support or falsification",
+            "mode selection or ranking"
+          ],
+          "on_owner_acceptance": "authorize I05 matched-null execution only",
+          "owner_review_required": true,
+          "validation_target": "P2-I2-CAL-PRE-GATE"
+        }
+      },
+      "finding": "I04 is review-ready only; owner acceptance may open I05 alone, and every scientific/analysis change restarts I04/I05.",
+      "name": "gate_and_change_control_boundary",
+      "status": "passed"
+    }
+  ],
+  "evidence_effect": "static_candidate_free_preregistration_validation_only",
+  "gate_disposition": {
+    "I05_authorized": false,
+    "P2-I2-CAL-PRE-GATE": "pending_owner_review",
+    "candidate_execution_authorized": false,
+    "disposition": "P2-I2-I04-REVIEW-READY"
+  },
+  "iteration_id": "P2-I2-I04",
+  "lane_id": "AE01-L02",
+  "preregistration": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration.json",
+    "sha256": "a12fc6899c45cc2568b82f6b69bc86f0df97963d2a8d636c8e65a68770ba3221"
+  },
+  "status": "passed_pending_owner_review",
+  "summary": {
+    "candidate_invocations": 0,
+    "checks_failed": 0,
+    "checks_passed": 16,
+    "checks_total": 16,
+    "graph_mutations": 0,
+    "matched_null_invocations": 0,
+    "model_instantiations": 0,
+    "retained_modes": [
+      "state_carried",
+      "history_carried",
+      "hybrid"
+    ],
+    "unit_tests_passed": 10
+  },
+  "validated_at": "2026-07-14",
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04_validate.py",
+    "sha256": "c6a76225d539fb3d883002f4a2052e2438dee05275cb4705998d5423b52fc885"
+  }
+}

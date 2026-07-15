@@ -1,0 +1,383 @@
+{
+  "evidence_effect": "none_corrected_analysis_and_measurement_policy_only",
+  "schema_version": "1.0.0",
+  "policy_id": "rcae-p2-i2-i04r1-three-mode-analysis-policy-v2",
+  "lane_id": "AE01-L02",
+  "required_modes": [
+    "state_carried",
+    "history_carried",
+    "hybrid"
+  ],
+  "measurement": {
+    "response_id": "fixed_window_native_B_target_coherence_gain",
+    "definition": "native B coherence after the fixed six-slot response protocol minus matched native B coherence before that protocol",
+    "unit": "native_coherence_amount",
+    "orientation_transform": "identity",
+    "direction": "higher_is_aligned",
+    "value_semantics": "0 or one fixed registered response-packet amount; this measures native response scheduling-and-arrival occurrence rather than graded magnitude",
+    "scientific_no_response_value": 0.0,
+    "window_protocol": {
+      "protocol_id": "p2-i2-native-response-window-v2",
+      "operation_slots": [
+        "capture_B_before_and_empty_queue_identities",
+        "emit_feedback_eligibility_surface_row_once",
+        "produce_feedback_eligibility_events_once",
+        "step_once",
+        "step_once",
+        "capture_B_after_queue_identities_and_event_lineage"
+      ],
+      "feedback_surface_calls": 1,
+      "producer_calls": 1,
+      "step_calls": 2,
+      "scheduled_step_kinds": [
+        "packet_departure",
+        "packet_arrival"
+      ],
+      "unscheduled_or_native_block_step_kinds": [
+        "event_queue_empty",
+        "event_queue_empty"
+      ],
+      "operational_exception_policy": "null response and operationally invalid; never scientific zero",
+      "outcome_independent_endpoint": true
+    },
+    "purity_preconditions": [
+      "packet and boundary-birth queues empty before the window",
+      "B distinct from B_ref and every response front-mask carrier",
+      "B baseline and response configuration exactly paired",
+      "B has no causal flux route, balancing operation, background update, or topology integration",
+      "neutral contact and M_H materialization complete before B_before"
+    ],
+    "purity_postconditions": [
+      "packet and boundary-birth queues empty after the window",
+      "scheduled response has exactly one linked A-to-B departure and B arrival",
+      "unscheduled/native-block response has no response packet and no B change",
+      "no other event targets or changes B"
+    ],
+    "purity_failure": "registration blocked; changing to packet-attributable or background-subtracted response reopens I04/I05"
+  },
+  "primary_pairing": {
+    "metric_id": "combined_pool_history_normalized_margin",
+    "candidate_cell": "combined-orders",
+    "comparator_cell": "contributor-removal",
+    "comparator_id": "strongest_symmetric_leave_one_common_carrier_admission",
+    "physical_order_strata": [
+      "q1_then_q2",
+      "q2_then_q1"
+    ],
+    "leave_one_branches": [
+      {
+        "branch_id": "q1_admitted_q2_diverted",
+        "common_carrier_content": "q1 only",
+        "matched_source_activity": "q2 source debit/activity preserved through matched inert-sink diversion"
+      },
+      {
+        "branch_id": "q2_admitted_q1_diverted",
+        "common_carrier_content": "q2 only",
+        "matched_source_activity": "q1 source debit/activity preserved through matched inert-sink diversion"
+      }
+    ],
+    "derived_comparator": "maximum oriented response of both leave-one branches within mode, seed, and physical order",
+    "reason": "fixed strongest-marginal comparison resolves source asymmetry, preserves both source activities, changes the mode-relevant carrier, and is not selected from observed effect size",
+    "matching_duties": [
+      "q1 and q2 physical amount, type, event-relative timing, cost, and source debit",
+      "route class, latency, capacity, support, neutral contact, opportunity, response policy, and B baseline",
+      "only common-carrier admission versus matched inert-sink diversion differs"
+    ],
+    "raw_retention": "candidate, both leave-one responses, selected maximum, and margin retained per mode/seed/order",
+    "derived_primary_margins_per_mode": 6,
+    "expected_direction": "candidate_minus_strongest_leave_one_greater_than_zero_is_aligned"
+  },
+  "quantity_matched_scope_diagnostic": {
+    "cell": "individual-contributions",
+    "diagnostic_id": "symmetric_quantity_matched_single_source_repetition",
+    "repeating_sources": [
+      "S1",
+      "S2"
+    ],
+    "physical_order_strata": [
+      "q1_then_q2",
+      "q2_then_q1"
+    ],
+    "required_branch_count_per_mode_seed": 4,
+    "preserve": [
+      "q1 and q2 amount, type, target-carrier operation, and physical order",
+      "total source-side cost/depletion, support, timing, opportunity, policy, and B baseline",
+      "complete mode-relevant carrier when source-role physics permits"
+    ],
+    "source_symmetry_registration": "each source must independently emit both q operations with matched route class, cost, reserve, capacity, support, and eligibility",
+    "equivalence_relation": "allowed and expected when the complete causal carrier is identical",
+    "divergence_relation": "retained as a source-role/contribution-structure scope qualification and checked against carrier equality",
+    "R03_effect": "numerical equivalence alone has none; full single-source explanation requires evidence that the actual candidate lacked two-source constitution or bypassed the common carrier",
+    "not_primary_metric": true
+  },
+  "aggregation_and_missingness": {
+    "candidate_seeds": [
+      101,
+      211,
+      307
+    ],
+    "opportunity_count_per_registered_branch": 1,
+    "scientific_statuses": [
+      "observed_response",
+      "scientific_no_response"
+    ],
+    "operational_statuses": [
+      "censored_runtime",
+      "missing_infrastructure",
+      "blocked_by_control",
+      "invalid_window_protocol"
+    ],
+    "scientific_no_response_policy": "only a complete fixed window with zero response packet and zero B change may record 0",
+    "operational_missingness_policy": "raw/oriented response null; affected mode/seed/order primary tuple not evaluable; no imputation or denominator removal",
+    "raw_retention": "every branch, source role, physical order, seed, response, event link, and diagnostic remains visible",
+    "scalar_collapse_forbidden": [
+      "seeds",
+      "physical orders",
+      "modes",
+      "scope-diagnostic branches",
+      "private partitions"
+    ]
+  },
+  "paired_margin": {
+    "formula": "(candidate - max(leave_one_q1, leave_one_q2)) / max(abs(candidate), abs(max_leave_one), analysis_arithmetic_floor)",
+    "analysis_arithmetic_floor": 1e-12,
+    "pairing": "same mode, seed, physical order, B baseline, fixed-window protocol, and frozen configuration",
+    "retain_per_seed_order_margins": true,
+    "runtime_tolerance_source": "none; all runtime and continuation tolerances are separate I06 registrations"
+  },
+  "I06_numeric_admissibility": {
+    "raw_floor": 1e-12,
+    "binary_safety_factor": 1024,
+    "packet_amount_rule": "r >= 1024*raw_floor and r >= 1024*max(ulp(B_before), ulp(B_before+r)) for every branch",
+    "roundtrip_rule": "B_before, r, and B_before+r finite and canonical-JSON round-trippable; recomputed gain positive",
+    "runtime_tolerance_rule": "every separately registered runtime/restoration/continuation tolerance is less than r/1024 and is never inferred from analysis_arithmetic_delta",
+    "failure_effect": "configuration cannot register; analysis-floor or response changes reopen I04/I05"
+  },
+  "relation_classifier": {
+    "delta_name": "analysis_arithmetic_delta",
+    "delta_status": "pending_I05",
+    "per_order_seed_panel": "three margins within one mode and physical order",
+    "per_mode_panel": "six margins retained as two separate per-order panels",
+    "robust_aligned": "every margin exceeds delta",
+    "narrow_aligned": "at least one margin exceeds delta, none is below negative delta, and not all exceed delta",
+    "resolution_limited": "every absolute margin is at most delta",
+    "mixed_direction": "at least one margin exceeds delta and at least one is below negative delta",
+    "narrow_counter": "at least one margin is below negative delta, none exceeds delta, and not all are below negative delta",
+    "robust_counter": "every margin is below negative delta",
+    "resolution_unknown": "delta unavailable or a required response operationally not evaluable",
+    "not_applicable": "only by separately reviewed control rationale",
+    "top_aligned_signature": "both per-order panels are robust_aligned",
+    "order_conditioned_or_mixed": "at least one order has a resolved non-resolution relation and OP-08 passes while the other differs, is resolution-limited, or is counter-directional",
+    "causal_failure_separation": "not_top_aligned never by itself means mode_hypothesis_failed; carrier-chain and mandatory-control evidence decide causal failure"
+  },
+  "machine_rule_vocabulary": {
+    "invariant": "all absolute normalized differences at most delta",
+    "different_unsigned": "all absolute normalized differences exceed delta",
+    "aligned_all": "all oriented normalized differences exceed delta",
+    "raw_visibility": "all required raw records present without unauthorized reduction",
+    "primary_relation": "derive and retain the corrected candidate-minus-strongest-symmetric-leave-one margin and per-order relation; metric nonalignment alone never assigns causal failure",
+    "scope_diagnostic": "equivalent and divergent outcomes both retained; matching and carrier-equality status determine scope reading, never automatic R03 failure",
+    "causal_chain_derived": "candidate and substitute status derived from linked masks, arrivals, calls, packet events, configurations, and receipts",
+    "access_relation_retained": "at least two of three alternate-responder margins aligned per order with no counter-direction"
+  },
+  "causal_chain_evidence": {
+    "schema_id": "p2-i2-causal-chain-evidence-v1",
+    "authored_summary_booleans_authoritative": false,
+    "candidate_requirements": [
+      "two distinct source-role arrivals target the registered common carrier",
+      "response front mask equals the registered mode-specific common carrier mask and excludes source roles/private cross-reads",
+      "native feedback producer record links to one A-to-B packet departure and arrival",
+      "RCAE/adapter response-phase calls contain no forbidden direct response or contributor-addressed read"
+    ],
+    "private_exclusion": "each legitimate response mask is contained in exactly one registered private partition; no mask spans partitions or common aggregate",
+    "controller_exclusion": "recorded response-phase calls or inputs expose direct scheduling, contributor-slot reads, authored success, or controller aggregation",
+    "required_identity_refs": [
+      "branch configuration SHA-256",
+      "runtime-binding receipt SHA-256",
+      "call-trace SHA-256"
+    ],
+    "forbidden_response_phase_calls": [
+      "rcae.schedule_packet_departure",
+      "adapter.schedule_response",
+      "adapter.read_response_target",
+      "controller.read_contributor_slots",
+      "controller.author_success"
+    ]
+  },
+  "mode_isolation": {
+    "shared_surfaces": [
+      "response unit",
+      "fixed-window protocol",
+      "orientation",
+      "response extraction",
+      "pure analysis implementation",
+      "analysis-arithmetic null identity"
+    ],
+    "independent_per_mode": [
+      "six primary margins and raw branches",
+      "quantity-matched scope diagnostic",
+      "control resolutions",
+      "metric relation",
+      "support disposition",
+      "R01-R05 disposition",
+      "completeness/blocker status"
+    ],
+    "cross_mode_pooling_averaging_compensation_or_drop": false,
+    "analysis_entrypoint_accepts_exactly_one_mode": true
+  },
+  "common_control_rules": [
+    {
+      "control_id": "each_original_source_alone",
+      "cell": "individual-contributions",
+      "rule": "raw_visibility",
+      "held_fixed": "opportunity, support, fixed response window, response policy, and the retained source's registered contribution operation",
+      "effect": "both marginal responses remain visible; neither may be silently promoted to the combined response"
+    },
+    {
+      "control_id": "pure_source_label_permutation",
+      "cell": "contributor-removal",
+      "rule": "invariant",
+      "held_fixed": "all contribution physics, causal carrier state/history, physical order, routes, support, opportunity, and response configuration",
+      "effect": "failure blocks attribution-only invariance and R04"
+    },
+    {
+      "control_id": "contribution_operation_reassignment",
+      "cell": "contributor-removal",
+      "rule": "raw_visibility",
+      "held_fixed": "explicitly not a pure-label intervention; changed amount, location, timing, type, or route is retained",
+      "effect": "divergence is diagnostic and cannot be called label-control failure"
+    },
+    {
+      "control_id": "symmetric_leave_one_common_carrier_admission",
+      "cell": "contributor-removal",
+      "rule": "primary_relation",
+      "held_fixed": "both source activities/debits, q1/q2 physics and physical order, route class, support, opportunity, response policy, and B baseline; one q is diverted to a matched inert sink in each symmetric arm",
+      "effect": "owns the corrected primary margin; a non-top metric relation is retained separately from carrier-chain or mode-hypothesis failure"
+    },
+    {
+      "control_id": "pool_write_diversion_or_freeze",
+      "cell": "global-state-exclusion",
+      "rule": "different_unsigned",
+      "held_fixed": "source activity/debit, lineage, support, opportunity, and response configuration while common-carrier admission is prevented",
+      "effect": "failure to remove or change the candidate carrier relation blocks the affected R03/R04 causal claim"
+    },
+    {
+      "control_id": "private_partition_substitution",
+      "cell": "global-state-exclusion",
+      "rule": "causal_chain_derived",
+      "held_fixed": "marginal writes, route class, timing, support, and access opportunity; each legitimate private response mask remains within one partition",
+      "effect": "a mask spanning private partitions or reading a common aggregate blocks R04"
+    },
+    {
+      "control_id": "direct_or_controller_substitution",
+      "cell": "global-state-exclusion",
+      "rule": "causal_chain_derived",
+      "held_fixed": "nearest output opportunity and complete raw response retention",
+      "effect": "forbidden scheduling, contributor-addressed read, or authored-success provenance excludes the branch even if outputs match or differ"
+    },
+    {
+      "control_id": "quantity_matched_single_source_repetition",
+      "cell": "individual-contributions",
+      "rule": "scope_diagnostic",
+      "held_fixed": "q1/q2 physics and physical order, full carrier when source-role physics permits, total source cost/depletion, support, opportunity, response policy, and B baseline; repeated-S1 and repeated-S2 both retained",
+      "effect": "carrier-matched equivalence is valid and cannot alone fail R03; divergence qualifies source-role/contribution scope"
+    },
+    {
+      "control_id": "alternate_eligible_responder",
+      "cell": "access-capacity-contrast",
+      "rule": "access_relation_retained",
+      "held_fixed": "common carrier, contributions, support, policy class, fixed response window, and non-private mask; responder role and registered reserve/route are the contrast",
+      "effect": "pass permits bounded R05 access retention only"
+    }
+  ],
+  "mode_control_rules": {
+    "state_carried": [
+      {
+        "control_id": "equal_P_order_and_shuffle",
+        "cell": "pooled-history-shuffle",
+        "rule": "invariant",
+        "relation": "responses are invariant when complete native P state is equal"
+      },
+      {
+        "control_id": "post_write_P_debit",
+        "cell": "global-state-exclusion",
+        "rule": "different_unsigned",
+        "relation": "response tracks the intervened native P state"
+      },
+      {
+        "control_id": "audit_history_only_change",
+        "cell": "pooled-history-shuffle",
+        "rule": "invariant",
+        "relation": "audit order and lineage cannot enter V"
+      }
+    ],
+    "history_carried": [
+      {
+        "control_id": "active_history_order_reversal",
+        "cell": "pooled-history-shuffle",
+        "rule": "different_unsigned",
+        "relation": "equal marginal quantities with different ordered H_P produce different later responses"
+      },
+      {
+        "control_id": "P_only_debit_with_H_P_M_H_fixed",
+        "cell": "global-state-exclusion",
+        "rule": "invariant",
+        "relation": "P is excluded from the history-carried V path"
+      },
+      {
+        "control_id": "H_P_reference_clamp_with_P_fixed",
+        "cell": "global-state-exclusion",
+        "rule": "different_unsigned",
+        "relation": "response tracks active H_P through native M_H"
+      }
+    ],
+    "hybrid": [
+      {
+        "control_id": "complete_P_by_H_P_component_factorial",
+        "cell": "global-state-exclusion",
+        "rule": "raw_visibility",
+        "relation": "retain raw responses for candidate_P/candidate_H, reference_P/candidate_H, candidate_P/reference_H, and reference_P/reference_H with exact held-fixed component identities"
+      },
+      {
+        "control_id": "P_only_reference_intervention",
+        "cell": "global-state-exclusion",
+        "rule": "different_unsigned",
+        "relation": "full candidate differs from reference_P/candidate_H while H_P/M_H remains fixed"
+      },
+      {
+        "control_id": "H_P_only_reference_intervention",
+        "cell": "global-state-exclusion",
+        "rule": "different_unsigned",
+        "relation": "full candidate differs from candidate_P/reference_H while P remains fixed"
+      },
+      {
+        "control_id": "history_order_reversal_with_P_fixed",
+        "cell": "pooled-history-shuffle",
+        "rule": "different_unsigned",
+        "relation": "equal P with different active H_P/M_H changes the same native joint response"
+      },
+      {
+        "control_id": "interaction_or_synergy",
+        "cell": "global-state-exclusion",
+        "rule": "raw_visibility",
+        "relation": "retain any interaction diagnostic but impose no nonlinearity, synergy, irreducibility, or superadditivity requirement"
+      }
+    ]
+  },
+  "terminal_input_boundary": {
+    "machine_output": "mode_indexed_measurement_control_metric_and_rung_inputs_only",
+    "terminal_classification_deferred": true,
+    "required_cell_ids": [
+      "reference-pool",
+      "individual-contributions",
+      "combined-orders",
+      "pooled-history-shuffle",
+      "contributor-removal",
+      "global-state-exclusion",
+      "access-capacity-contrast"
+    ],
+    "threshold_crossing_is_not_terminal_acceptance": true,
+    "claim_ceiling": "bounded_shared_pool_co_conditioning_demand_pattern",
+    "mode_selection_or_ranking_forbidden": true
+  }
+}

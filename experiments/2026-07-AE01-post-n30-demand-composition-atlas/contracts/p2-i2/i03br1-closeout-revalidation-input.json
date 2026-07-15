@@ -1,0 +1,118 @@
+{
+  "artifact_id": "P2-I2-I03BR1-CLOSEOUT-REVALIDATION-INPUT",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "eeb875e7057f6840fcc1f189e36f9f3e6bf107ff91ed639e45f12e9db4dc93ca"
+  },
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03BR1",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "frozen_before_i03br1_source_dataflow_and_retained_artifact_audit",
+  "purpose": "Revalidate the review-ready I03B package against the project-owner-supplied acceptance review without changing or rerunning any I03B design or runtime artifact.",
+  "authority": {
+    "owner_review_path": "attachment:050693b2-7c8a-4ad4-8506-0f39985a0a7a/pasted-text.txt",
+    "owner_review_sha256": "cd9d84e5b1785a57d46e2ed38747939e4c56984838900cf99524ff1cadcf2ec1",
+    "rcae_entry_revision": "c13ccb74d3ddc7c6f8f3870a15e17e024c9200dd",
+    "graph_repository": "external-repository:graph-reflexive-coherence",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_repository_read_only": true
+  },
+  "immutable_i03b_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json",
+      "sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-validation.json",
+      "sha256": "7b2659dcfff2dfc2c9ede9647d132bd30781577cc724ab3cd1b8c21151a8ca95"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json",
+      "sha256": "dd0146f656f3f480d5ff3265696cacf39322fa5fe13991aed822614eee217720"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+      "sha256": "4465ff2174d285d26ffa8a6cb4bebaf644b150d24bea0d69563eb5f51d8c177d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-runtime-reconstruction-receipt.json",
+      "sha256": "88c70e70efc7a4388d697e4d92ccfb9b93d2c3b0c3e71dcf890326920078d7c9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+      "sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
+      "sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec"
+    }
+  ],
+  "review_checks": [
+    {"id": "RV-01", "name": "exclude_hidden_latest_contact_path", "priority": "potentially_blocking"},
+    {"id": "RV-02", "name": "confirm_active_H_P_and_M_H_output_port", "priority": "potentially_blocking"},
+    {"id": "RV-03", "name": "complete_history_carried_factorization", "priority": "required"},
+    {"id": "RV-04", "name": "physical_token_type_excludes_contributor_identity", "priority": "required"},
+    {"id": "RV-05", "name": "cursor_and_idempotency_isolation", "priority": "required"},
+    {"id": "RV-06", "name": "order_contrast_continuation_state_matching", "priority": "required"},
+    {"id": "RV-07", "name": "bounded_non_irreducibility_claim", "priority": "required"},
+    {"id": "RV-08", "name": "active_history_clamp_stability", "priority": "required"},
+    {"id": "RV-09", "name": "state_only_debit_exclusion", "priority": "required"},
+    {"id": "RV-10", "name": "write_diversion_source_activity_matching", "priority": "required"},
+    {"id": "RV-11", "name": "private_partition_no_common_read", "priority": "required"},
+    {"id": "RV-12", "name": "alternate_access_role_eligibility", "priority": "required"},
+    {"id": "RV-13", "name": "adapter_stops_at_declared_boundary", "priority": "required"},
+    {"id": "RV-14", "name": "counterfactual_producer_minimality", "priority": "required"},
+    {"id": "RV-15", "name": "history_lifecycle_semantics", "priority": "required"},
+    {"id": "RV-16", "name": "complete_composite_identity", "priority": "required"},
+    {"id": "RV-17", "name": "paired_save_load_reset_fail_closed", "priority": "required"},
+    {"id": "RV-18", "name": "mechanical_scientific_quarantine", "priority": "required"},
+    {"id": "RV-19", "name": "complete_isolated_twelve_branch_matrix", "priority": "required"},
+    {"id": "RV-20", "name": "preserve_i03a_independently", "priority": "required"},
+    {"id": "RV-21", "name": "owner_progression_opens_only_i03c", "priority": "governance"}
+  ],
+  "acceptance_statements": [
+    "The native response difference is not carried by the latest materialization contact or another unmatched native state.",
+    "H_P is persistent independently intervenable common causal history and M_H is its native output port.",
+    "Labels and source-private identities do not enter token content, admission order, readout, or response.",
+    "The exactly-once cursor affects only admission and idempotency and is fully restored.",
+    "Order branches match all causally required native conditions outside the declared active-history path.",
+    "History clamp, state-only separation, and write diversion are stable and cannot cross-admit unintended rows.",
+    "Private histories have no hidden common read or analysis-to-runtime bypass.",
+    "The adapter owns only the missing history carrier and readout operation; PyGRC owns native mutation and later response.",
+    "Capacity, saturation, leakage, depletion, and maintenance semantics are explicitly classified.",
+    "Native and adapter current and reset identities are complete and paired.",
+    "Conformance values are mechanically quarantined from I04, I06, and scientific interpretation.",
+    "I03A remains independently retained, I03C remains untouched, and later owner acceptance may open only I03C."
+  ],
+  "audit_policy": {
+    "model_instantiations": 0,
+    "runtime_evidence_invocations": 0,
+    "runtime_reconstruction_invocations": 0,
+    "retries": 0,
+    "rescue_variants": 0,
+    "parameter_search": false,
+    "candidate_or_control_execution": false,
+    "scientific_calibration_or_registration": false,
+    "permitted_methods": [
+      "read_only_source_and_artifact_inspection",
+      "static_ast_and_text_dataflow_checks",
+      "hash_and_identity_verification",
+      "retained_conformance_assertion_analysis"
+    ],
+    "unproved_required_statement_effect": "blocking_finding"
+  },
+  "claim_boundary": {
+    "may_accept_or_reject_scientific_hypothesis": false,
+    "may_assign_R01_through_R05": false,
+    "may_compare_dependence_modes": false,
+    "may_open_I03C_automatically": false,
+    "may_open_I04": false,
+    "owner_review_required": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "artifact_id": "p2_i2_app_a1_validation",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A1",
+  "status": "passed_partial_app_a1_failed_closed_package",
+  "command": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_validate.py",
+  "checks_passed": 38,
+  "checks_total": 38,
+  "failure_count": 0,
+  "failures": [],
+  "package_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-source-delta-audit.json",
+      "sha256": "b19ee29612cd13c04e4adec3624a714ae9d5e4b42470552d228cc2d9b0b1666b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-gate-authority-proposal.json",
+      "sha256": "87e2e84e320097e87e442cb9451cb75b9805df49311ae630d6cfa1ffc416cf10"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-A1-source-delta-and-gate-authority-review.md",
+      "sha256": "14c6c22ba75cc6820032b490c84d1be4f0df2d645bd5cd9251118a9ecfc6d07c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_validate.py",
+      "sha256": "8eaa6c65598be1a05abb1701d1404a756b50eb00e51233cf6e587a96dcca7811"
+    }
+  ],
+  "validated_disposition": {
+    "entry_and_source_identities_match": true,
+    "accepted_app_a0_identities_match": true,
+    "retained_n29_identities_match": true,
+    "pygrc_source_identities_match": true,
+    "graph_clean_and_read_only": true,
+    "native_realization_selected": true,
+    "load_bearing_external_producer_required": false,
+    "transportability_gate_passed": false,
+    "proposal_active": false,
+    "fixture_freeze_allowed": false,
+    "candidate_free_conformance_allowed": false,
+    "app_a2_allowed": false,
+    "machine_specific_paths_persisted": false
+  },
+  "execution_counts": {
+    "source_import_probes": 2,
+    "pygrc_models_constructed": 0,
+    "candidate_free_conformance_runs": 0,
+    "scientific_runtime_runs": 0,
+    "app_a2_matrix_arms": 0
+  },
+  "review_boundary": "Owner review of app-a1-gate-authority-proposal.json is required before the remaining APP-A1 fixture/control/conformance freeze may begin."
+}

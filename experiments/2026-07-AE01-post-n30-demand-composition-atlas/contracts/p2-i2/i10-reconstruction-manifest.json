@@ -1,0 +1,823 @@
+{
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-MANIFEST",
+  "artifact_version": "1.0.0",
+  "builder_identity": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "sha256": "22b8fec156ae1f0cf988e3f0eb4287057536cdf07b9b71ee7001f3b1091f26e0"
+  },
+  "calibration_reconstruction": {
+    "analysis_arithmetic_delta": 1e-12,
+    "arithmetic_null_row_count": 10,
+    "estimator_path_id": "p2-i2-i04r2-exact-three-arm-primary-estimator-v1",
+    "frozen_metric_sheet_schema_valid": true,
+    "metric_calibration_schema_valid": true,
+    "reconstructed_rows": [
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q1_then_q2",
+        "seed": 19
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q2_then_q1",
+        "seed": 19
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q1_then_q2",
+        "seed": 43
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q2_then_q1",
+        "seed": 43
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q1_then_q2",
+        "seed": 71
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q2_then_q1",
+        "seed": 71
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q1_then_q2",
+        "seed": 109
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q2_then_q1",
+        "seed": 109
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q1_then_q2",
+        "seed": 163
+      },
+      {
+        "normalized_margin": 0.0,
+        "physical_order_id": "q2_then_q1",
+        "seed": 163
+      }
+    ],
+    "seed_margins": [
+      {
+        "matched_null_margin": 0.0,
+        "seed": 19
+      },
+      {
+        "matched_null_margin": 0.0,
+        "seed": 43
+      },
+      {
+        "matched_null_margin": 0.0,
+        "seed": 71
+      },
+      {
+        "matched_null_margin": 0.0,
+        "seed": 109
+      },
+      {
+        "matched_null_margin": 0.0,
+        "seed": 163
+      }
+    ]
+  },
+  "canonical_payload_digest": "ad36e6be2ad99be1afd4f6f054023b2c5e69ba4a2f545b59a5f47ffa5f04a8da",
+  "control_reconstruction": {
+    "comparison_rules": 38,
+    "corrected_i09a_index_byte_identical": true,
+    "corrected_i09a_report_byte_identical": true,
+    "corrected_i09a_validation_byte_identical": true,
+    "historical_i09_index_byte_identical": true,
+    "historical_i09_report_byte_identical": true,
+    "historical_i09_validation_byte_identical": true,
+    "lane_controls": 15,
+    "normalized_primary_margin_distribution": {
+      "0.0": 6,
+      "1.0": 12
+    },
+    "program_common_controls": 19,
+    "terminal_interpretation_assigned": false
+  },
+  "execution_boundary": {
+    "R01_through_R05": "unassigned_until_I11",
+    "accepted_artifact_overwrites": 0,
+    "active_history_token_admissions": 0,
+    "c02_entry_worker_invocations": 0,
+    "candidate_or_control_contributions": 0,
+    "lane_support_status": null,
+    "matrix_entry_regenerations": 0,
+    "mode_ranking": false,
+    "neutral_contacts": 0,
+    "new_scientific_inputs": 0,
+    "response_or_comparator_windows": 0,
+    "scientific_result": false,
+    "terminal_classification": null
+  },
+  "execution_reconstruction": {
+    "accepted_retry_successes": 1,
+    "distinct_governed_paths_verified": 470,
+    "evaluable_terminals": 234,
+    "manifest_byte_identical": true,
+    "matrix_entries": 234,
+    "permanent_claims": 235,
+    "primary_successes": 233,
+    "retained_failures": 1,
+    "unsafe_terminal_claims": 0
+  },
+  "frozen_input_verification": {
+    "all_committed_bytes_equal": true,
+    "all_frozen_bytes_exact": true,
+    "all_hash_bound_local_correction_bytes_equal": true,
+    "committed_input_artifact_count": 41,
+    "input_artifact_count": 47,
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "interpreter_identity": ".venv/bin/python",
+    "local_correction_artifact_count": 6,
+    "retained_byte_authority": "cfa19fe66118ad949fa914e0988c6652079d2d54"
+  },
+  "gate_effect": {
+    "I11_authorized": false,
+    "RECON_GATE": "review_ready_pending_owner_acceptance",
+    "commit_authorized": false
+  },
+  "graph_read_only_verification": {
+    "after": {
+      "graph_identity": "external-repository:graph-reflexive-coherence",
+      "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "graph_worktree_clean": true
+    },
+    "before": {
+      "graph_identity": "external-repository:graph-reflexive-coherence",
+      "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "graph_worktree_clean": true
+    },
+    "unchanged": true
+  },
+  "iteration_id": "P2-I2-I10",
+  "lane_id": "AE01-L02",
+  "per_seed_order_primary_margins": [
+    {
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 101,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 211,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 307,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 101,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 211,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 307,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "history_carried",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 101,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "history_carried",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 211,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "history_carried",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 307,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.0,
+      "mode": "history_carried",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 0.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 101,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "at_or_below_delta"
+    },
+    {
+      "candidate_response": 0.0,
+      "mode": "history_carried",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 0.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 211,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "at_or_below_delta"
+    },
+    {
+      "candidate_response": 0.0,
+      "mode": "history_carried",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 0.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 307,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "at_or_below_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "hybrid",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 101,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "hybrid",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 211,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.125,
+      "mode": "hybrid",
+      "physical_order_id": "q1_then_q2",
+      "primary_margin": 1.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 307,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "above_delta"
+    },
+    {
+      "candidate_response": 0.0,
+      "mode": "hybrid",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 0.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 101,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "at_or_below_delta"
+    },
+    {
+      "candidate_response": 0.0,
+      "mode": "hybrid",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 0.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 211,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "at_or_below_delta"
+    },
+    {
+      "candidate_response": 0.0,
+      "mode": "hybrid",
+      "physical_order_id": "q2_then_q1",
+      "primary_margin": 0.0,
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "seed": 307,
+      "strongest_leave_one_provenance": "q1-only",
+      "strongest_leave_one_response": 0.0,
+      "threshold_relation": "at_or_below_delta"
+    }
+  ],
+  "portable_path_verification": {
+    "absolute_path_finding_count": 0,
+    "scanned_json_count": 515,
+    "scanned_path_count": 532
+  },
+  "process_accounting_per_declared_pass": {
+    "c02_entry_worker_invocations": 0,
+    "continuation_model_instantiations": 6,
+    "matrix_entry_regenerations": 0,
+    "native_no_packet_steps": 6,
+    "python_entrypoint_starts": 1,
+    "registration_validation_model_instantiations": 6,
+    "restoration_continuation_mode_checks": 3
+  },
+  "registration_reconstruction": {
+    "active_history_token_admissions": 0,
+    "candidate_or_control_contributions": 0,
+    "continuation_checks": 3,
+    "continuation_model_instantiations": 6,
+    "current_final_manifest_file_count": 15,
+    "current_registration_validation_checks": "14/14",
+    "historical_current_provenance_separate": true,
+    "historical_execution_manifest_file_count": 5,
+    "historical_registration_validation_byte_identical": true,
+    "native_steps": 6,
+    "neutral_contacts": 0,
+    "registration_validation_model_instantiations": 6,
+    "response_or_comparator_windows": 0
+  },
+  "report_reconstruction": {
+    "deterministic_i09_and_i09a_report_byte_reconstruction": true,
+    "semantic_claims": {
+      "i05_delta_and_validation": true,
+      "i06_registration_validation": true,
+      "i06b_overlay_validation": true,
+      "i08_causal_status_distribution": true,
+      "i08_cell_distribution": true,
+      "i08_interpretation_boundary": true,
+      "i08_mode_distribution": true,
+      "i08_producer_reason_distribution": true,
+      "i08_response_distribution": true,
+      "i08_terminal_inventory": true,
+      "i09a_normalized_margin_correction": true
+    },
+    "verified_report_count": 6
+  },
+  "resolved_manifest_verification": {
+    "all_reached_paths_exact": true,
+    "distinct_reached_path_count": 31,
+    "resolved_manifests": [
+      {
+        "all_files_exact": true,
+        "file_count": 15,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json"
+      },
+      {
+        "all_files_exact": true,
+        "file_count": 3,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-manifest.json"
+      }
+    ]
+  },
+  "restoration_and_continuation": [
+    {
+      "equal_input_no_packet_step_valid": true,
+      "identity_and_raw_observations_compared_separately": true,
+      "initial_composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+      "initial_raw_observation_digest": "651bc61da53031ad4cc71814ef58cada08089bddc6e29b42f15d20b740644ab6",
+      "loaded_composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+      "loaded_post_step_composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+      "loaded_post_step_raw_observation_digest": "3f86f11728d80a398b676b77fbd32e7d9b3487fe4a5b3bc6329fa34b03068783",
+      "loaded_raw_observation_digest": "3f86f11728d80a398b676b77fbd32e7d9b3487fe4a5b3bc6329fa34b03068783",
+      "loaded_reset_raw_observation_digest": "3f86f11728d80a398b676b77fbd32e7d9b3487fe4a5b3bc6329fa34b03068783",
+      "mode": "state_carried",
+      "pair_save_load_valid": true,
+      "paired_reset_valid": true,
+      "post_step_composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+      "post_step_raw_observation_digest": "651bc61da53031ad4cc71814ef58cada08089bddc6e29b42f15d20b740644ab6",
+      "raw_observation_contract": {
+        "load": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        },
+        "post_step": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        },
+        "reset": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        }
+      },
+      "reset_composite_digest": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+      "reset_raw_observation_digest": "651bc61da53031ad4cc71814ef58cada08089bddc6e29b42f15d20b740644ab6"
+    },
+    {
+      "equal_input_no_packet_step_valid": true,
+      "identity_and_raw_observations_compared_separately": true,
+      "initial_composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+      "initial_raw_observation_digest": "e68ebb895a19c4e78d6e05dd2e9730a916e97febe8f9aa444f898959eadb3a26",
+      "loaded_composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+      "loaded_post_step_composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+      "loaded_post_step_raw_observation_digest": "e3a14fc70cbc5bae028001c28befd66d67b9eab60a01d47982326937a81b132d",
+      "loaded_raw_observation_digest": "e3a14fc70cbc5bae028001c28befd66d67b9eab60a01d47982326937a81b132d",
+      "loaded_reset_raw_observation_digest": "e3a14fc70cbc5bae028001c28befd66d67b9eab60a01d47982326937a81b132d",
+      "mode": "history_carried",
+      "pair_save_load_valid": true,
+      "paired_reset_valid": true,
+      "post_step_composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+      "post_step_raw_observation_digest": "e68ebb895a19c4e78d6e05dd2e9730a916e97febe8f9aa444f898959eadb3a26",
+      "raw_observation_contract": {
+        "load": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        },
+        "post_step": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        },
+        "reset": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        }
+      },
+      "reset_composite_digest": "f1dd074f5c140b0868255418283f5c293b24b0a66cd7755dd1f2c10fde5f8a96",
+      "reset_raw_observation_digest": "e68ebb895a19c4e78d6e05dd2e9730a916e97febe8f9aa444f898959eadb3a26"
+    },
+    {
+      "equal_input_no_packet_step_valid": true,
+      "identity_and_raw_observations_compared_separately": true,
+      "initial_composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+      "initial_raw_observation_digest": "caed368e6861e7ca6837d7b3cf1e16c43e0a024903a2b10ea17dadfc4ecb64fc",
+      "loaded_composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+      "loaded_post_step_composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+      "loaded_post_step_raw_observation_digest": "e57dad35ee2e975302e68b143d9315aa40b51ee180eca991ce8a46c83df183d6",
+      "loaded_raw_observation_digest": "e57dad35ee2e975302e68b143d9315aa40b51ee180eca991ce8a46c83df183d6",
+      "loaded_reset_raw_observation_digest": "e57dad35ee2e975302e68b143d9315aa40b51ee180eca991ce8a46c83df183d6",
+      "mode": "hybrid",
+      "pair_save_load_valid": true,
+      "paired_reset_valid": true,
+      "post_step_composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+      "post_step_raw_observation_digest": "caed368e6861e7ca6837d7b3cf1e16c43e0a024903a2b10ea17dadfc4ecb64fc",
+      "raw_observation_contract": {
+        "load": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        },
+        "post_step": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        },
+        "reset": {
+          "adapter_raw_exact": true,
+          "native_difference_count": 20,
+          "native_difference_digest": "aa2114f53acd7f0ebef2253fdcef247bfd5b67a428dcb4909f8979637909cbfa",
+          "native_difference_paths": [
+            "$.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.caches.base_grc9v3_snapshot.metadata.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.cached_quantities.budget_target_source",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.params_identity",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.11.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.7.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_u",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.port_edges.9.node_v",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.dynamics.state.rng_state",
+            "$.reset_baseline.snapshot.caches.base_grc9v3_snapshot.metadata.rng_state"
+          ],
+          "native_normalization_categories": [
+            "deterministic_budget_source_materialization",
+            "deterministic_params_identity_materialization",
+            "deterministic_rng_state_materialization",
+            "undirected_zero_flux_port_edge_canonicalization"
+          ],
+          "native_raw_equal": false,
+          "unexpected_native_differences": 0
+        }
+      },
+      "reset_composite_digest": "3dd25d8e8dbc65a23a991ccfcf623cf0733fb15da6b13daf8ce50d3c5f4fcc59",
+      "reset_raw_observation_digest": "caed368e6861e7ca6837d7b3cf1e16c43e0a024903a2b10ea17dadfc4ecb64fc"
+    }
+  ],
+  "source_input_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze-v2.json",
+  "source_input_freeze_sha256": "6b9646ab62cba0c28c50fb89e38199a749a71faf0034eb6d33f715488283314d",
+  "status": "review_ready_reconstruction_complete"
+}

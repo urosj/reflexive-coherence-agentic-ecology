@@ -1,0 +1,130 @@
+{
+  "activity_id": "P2-I2-I05F-I04-I05-AUTHORITY-DEPENDENCY-PORTABILITY-CORRECTION",
+  "artifact_id": "P2-I2-I05F-I04-I05-AUTHORITY-DEPENDENCY-PORTABILITY-CORRECTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "calibration_builder_invocations": 0,
+  "candidate_or_control_invocations": 0,
+  "checks": [
+    {
+      "check_id": "I05F-01",
+      "evidence": {
+        "affected_files": 13,
+        "baseline_violations": 30
+      },
+      "finding": "the scope is exactly the accepted thirteen-file thirty-finding I04/I05 dependency group",
+      "name": "accepted exact I05D group",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-02",
+      "evidence": {
+        "source_commit": "6dd689811949b51ef9a2e9e0d0d14c06bf7346ba",
+        "source_file_count": 13
+      },
+      "finding": "every correction source reconstructs from the accepted I05E commit",
+      "name": "historical source bytes",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-03",
+      "evidence": {
+        "lineage_sha256": "bc9fad25db7f207685cebca0a32270fda2b7289395eb93c0ab0993c2909b38d1",
+        "projection_count": 13
+      },
+      "finding": "the lineage binds every historical and current byte without a checkout location",
+      "name": "portable projection lineage identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-04",
+      "evidence": {
+        "scanned_file_count": 18,
+        "violation_count": 0
+      },
+      "finding": "the corrected group and I05F package contain no persisted absolute-path violations",
+      "name": "zero corrected-group path violations",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-05",
+      "evidence": {
+        "exactly_reconstructed_json_projections": 8
+      },
+      "finding": "all eight JSON artifacts equal their frozen path-only projection",
+      "name": "exact JSON historical-to-portable reconstruction",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-06",
+      "evidence": {
+        "parsed_python_files": 5,
+        "scientific_code_changes": 0
+      },
+      "finding": "all five Python files parse and differ from history only on frozen path-portability surfaces",
+      "name": "bounded portable Python source corrections",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-07",
+      "evidence": {
+        "repository_id": "graph-reflexive-coherence",
+        "verified_source_rows": 18
+      },
+      "finding": "all projected PyGRC source identities resolve from the logical sibling repository and retain their accepted digests",
+      "name": "external source identity and current bytes",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-08",
+      "evidence": {
+        "accepted_commit": "b7b008c402d837b529962a1a5edb062927939d28",
+        "verified_authority_files": 5
+      },
+      "finding": "the accepted I04R2 estimator measurement calibration and progression authority remains byte-addressable at its accepted commit",
+      "name": "accepted I04R2 historical authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-09",
+      "evidence": {
+        "authorization_consumed": true,
+        "builder_invocation_count": 1,
+        "governed_attempt_count": 1,
+        "second_invocation_refused": true
+      },
+      "finding": "the I05 output projection claim projection and raw final receipt remain byte-unchanged with one consumed attempt and no retry",
+      "name": "immutable I05 execution evidence",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-10",
+      "evidence": {
+        "calibration_builder_invocations": 0,
+        "candidate_or_control_invocations": 0,
+        "null_or_one_shot_wrapper_invocations": 0,
+        "pygrc_model_instantiations": 0,
+        "scientific_result": false
+      },
+      "finding": "accepted I05E authority is exact and I05F authorizes no builder wrapper PyGRC candidate control conformance or scientific operation",
+      "name": "prior acceptance and zero-execution boundary",
+      "status": "passed"
+    }
+  ],
+  "corrected_file_count": 13,
+  "corrected_group_violation_count": 0,
+  "freeze_sha256": "f622034565f81bb58c9d32769ec5abe2cc53d6b04457c78e8f50d2edeac5ce2b",
+  "iteration_id": "P2-I2-I05F",
+  "lane_id": "AE01-L02",
+  "lineage_sha256": "bc9fad25db7f207685cebca0a32270fda2b7289395eb93c0ab0993c2909b38d1",
+  "null_or_one_shot_wrapper_invocations": 0,
+  "passed_checks": 10,
+  "policy_sha256": "42b4b816ba0a838b9c511496793f59917ce92403e3e04d95221be90533bec320",
+  "pygrc_model_instantiations": 0,
+  "result_status": "P2-I2-I05F-I04-I05-GROUP-REVIEW-READY",
+  "scientific_result": false,
+  "total_checks": 10,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05f_validate.py",
+    "sha256": "e7b890e16f904f7bc9e28ba459c575a9eccdd7c429e8f97fbc78021a2a52b5ce"
+  }
+}

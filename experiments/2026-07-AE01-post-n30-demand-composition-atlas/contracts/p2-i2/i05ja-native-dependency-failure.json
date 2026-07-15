@@ -1,0 +1,30 @@
+{
+  "activity_id": "P2-I2-I05J-METRIC-CLOSEOUT",
+  "artifact_id": "P2-I2-I05JA-NATIVE-DEPENDENCY-FAILURE",
+  "artifact_version": "1.0.0",
+  "attempt": {
+    "command_identity": "exact_original_I05J_native_freeze_resolution_command",
+    "failed_closed_pre_output": true,
+    "native_entrypoint_start_index": 1
+  },
+  "failure": {
+    "class": "missing_pinned_native_tooling_dependency",
+    "dependency": "jsonschema==4.26.0",
+    "message": "jsonschema is required; use the pinned repository command"
+  },
+  "iteration_id": "P2-I2-I05JA",
+  "lane_id": "AE01-L02",
+  "outputs": {
+    "frozen_metric_sheet_exists": false,
+    "metric_calibration_exists": false
+  },
+  "process_counts": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "native_freeze_resolution_entrypoint_starts": 1,
+    "null_builder_or_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_imports_or_model_instantiations": 0
+  },
+  "scientific_result": false
+}

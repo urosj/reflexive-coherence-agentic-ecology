@@ -1,0 +1,65 @@
+{
+  "artifact_id": "P2-I2-I07-DEPENDENCY-INSTALL-AND-VALIDATION-CONTINUATION",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I07",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "frozen_at": "2026-07-15",
+  "status": "owner_authorized_candidate_free_I07_continuation",
+  "authority": {
+    "decision_id": "P2-I2-DEC-045",
+    "change_id": "P2-I2-CHG-040",
+    "owner_statement": "installing pytest doesnt need I07A, just install it and udate I07 after it is installed",
+    "iteration_disposition": "continue_inside_I07_not_I07A",
+    "parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871"
+  },
+  "retained_failed_start": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-focused-tests-failed-start.json",
+    "sha256": "179243b2dfe5c057484ccf478aff15e89d8c763906e60074ec30188cc9e13688",
+    "disposition": "immutable_process_history_not_a_candidate_or_scientific_operation"
+  },
+  "pre_correction_identities": {
+    "successor_policy_sha256": "9a0649f18e99dff3c3f5bc7f8927ea8b369adde17e5160013a508e045c7d047e",
+    "execution_source_sha256": "42b8486908831a928535f9594c7a15cc0d634c0025391d28ce32fc3b75fb6a61",
+    "focused_tests_sha256": "927f48c72e96bb6a8a49cd683a5c581d26de12a3435aebb02c6d585cd29f6ea2",
+    "original_validator_sha256": "01286bc609e655ab243331cbcad83bd6f78f65e700eb2963af560fd1d6f0202a",
+    "run_matrix_sha256": "57953a5fc93e8e05a95cdb7ca260c72bc28ea9388fd0804b064c1279ce8c48e8",
+    "original_binding_receipt_sha256": "9e85703bbb055758c15c6082a28fb1ec4d8e9f08323ffa82db31c866d3141a1d",
+    "original_inactive_exec_freeze_sha256": "d416750ed938a3e2307a4e9d2d8fa586b8322c63d3c9e392f104718f60e35ff8"
+  },
+  "allowed_changes": [
+    "install pytest into the existing repository .venv and record its resolved version",
+    "add one candidate-free I07 binding-refresh utility",
+    "update only final-validator process accounting and continuation checks",
+    "refresh execution-binding-receipt and inactive exec-freeze derived hashes without changing run-matrix semantics",
+    "run the unchanged focused tests exactly once after installation",
+    "run the corrected final candidate-free validator exactly once"
+  ],
+  "immutable_surfaces": [
+    "accepted I03 through I06B authorities",
+    "p2_i2_c01_execution_policy_v2.json",
+    "p2_i2_execution.py execution and causal semantics",
+    "test_p2_i2_execution_freeze.py",
+    "run-matrix semantic digest and all 234 entries",
+    "mode, cell, branch, order, seed, attempt, resource, retry, claim, output, and response semantics",
+    "candidate-free and scientific-evidence boundaries"
+  ],
+  "continued_process_plan": {
+    "candidate_free_python_start_ceiling": 6,
+    "python_start_1": "completed initial build-freeze",
+    "python_start_2": "retained failed pytest launch before collection",
+    "python_start_3": ".venv/bin/python -m pip install pytest",
+    "python_start_4": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07_refresh.py",
+    "python_start_5": ".venv/bin/python -m pytest -q experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+    "python_start_6": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07_validate.py",
+    "further_failure_effect": "stop_for_owner_direction",
+    "additional_retries": 0
+  },
+  "gate_boundary": {
+    "candidate_execution_authorized": false,
+    "EXEC_FREEZE": "closed",
+    "I08_authorized": false,
+    "commit_authorized": false,
+    "scientific_evidence": false
+  }
+}

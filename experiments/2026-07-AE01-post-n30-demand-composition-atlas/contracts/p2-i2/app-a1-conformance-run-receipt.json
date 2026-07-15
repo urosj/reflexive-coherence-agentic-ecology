@@ -1,0 +1,69 @@
+{
+  "artifact_id": "P2-I2-APP-A1-CONFORMANCE-RUN-RECEIPT",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "recorded_at": "2026-07-15T00:00:00+02:00",
+  "authority": {
+    "decision_id": "P2-I2-DEC-067",
+    "change_id": "P2-I2-CHG-072",
+    "correction_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-correction-freeze.json",
+    "correction_freeze_sha256": "50ab8d8d8b6bd1e826ecc906bdcd68e656c961e776644a7b9ce8e49f1194f996",
+    "failed_start_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-failed-start-001.json",
+    "failed_start_sha256": "11b982fe31b22ca023cdb12cbad745102db60e748fa6653efcf60c612fb484a0"
+  },
+  "attempt_ledger": {
+    "original_failed_evidence_starts": 1,
+    "original_failed_output_count": 0,
+    "owner_authorized_replacement_starts": 1,
+    "replacement_retry_count": 0,
+    "deterministic_reconstruction_starts": 1,
+    "post_reconstruction_additional_starts": 0,
+    "app_a2_campaign_starts": 0,
+    "app_a2_arm_starts": 0,
+    "scientific_gate_evaluations": 0
+  },
+  "replacement": {
+    "normalized_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-conformance-correction-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-runtime-conformance.json",
+    "exit_code": 0,
+    "status": "passed",
+    "checks_passed": 29,
+    "checks_total": 29,
+    "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-runtime-conformance.json",
+    "output_sha256": "9d981d50e94bbc8eca2d9e75ca4e85a6b5603d7975492bcfd1cc214c746bc843",
+    "embedded_output_digest": "e0e432f28b8e98a22bf29b0a9bb6325b37ce2252076b9d4d83ea9d953d2cbf74"
+  },
+  "reconstruction": {
+    "normalized_command": "same governed command with output temporary-output:p2-i2-app-a1-runtime-conformance.reconstructed.json",
+    "exit_code": 0,
+    "status": "passed",
+    "checks_passed": 29,
+    "checks_total": 29,
+    "reconstructed_sha256": "9d981d50e94bbc8eca2d9e75ca4e85a6b5603d7975492bcfd1cc214c746bc843",
+    "byte_comparison_exit_code": 0,
+    "byte_identical_to_retained_output": true,
+    "retained_temporary_output": false
+  },
+  "native_interface_result": {
+    "common_operation_and_response_path": "passed",
+    "matched_diversion_path": "passed",
+    "label_permutation_invariance": "passed",
+    "carrier_clamp_after_public_ledger_rebase": "passed",
+    "valid_zero_round_trip_and_history_retention": "passed",
+    "carrier_only_response_sources": "passed",
+    "save_load_identity": "passed",
+    "empty_step_continuation": "passed",
+    "original_and_loaded_reset_to_baseline": "passed",
+    "packet_and_packet_event_history_preserved_across_clamp": true,
+    "clamp_rebased_budget_error": 0.0
+  },
+  "quarantine": {
+    "scientific_vectors_used": false,
+    "app_a2_arms_executed": 0,
+    "scientific_gate_signatures_evaluated": 0,
+    "support_or_falsification_assigned": false,
+    "app_a1_accepted": false,
+    "commit_authorized": false,
+    "graph_mutated": false
+  },
+  "evidence_effect": "Candidate-free implementation conformance only. The receipt does not activate APP-A2 or assign an Appendix result."
+}

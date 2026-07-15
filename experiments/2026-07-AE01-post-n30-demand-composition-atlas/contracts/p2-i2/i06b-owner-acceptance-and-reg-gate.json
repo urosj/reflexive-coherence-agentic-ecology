@@ -1,0 +1,72 @@
+{
+  "artifact_id": "P2-I2-I06B-OWNER-ACCEPTANCE-AND-REG-GATE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06B",
+  "lane_id": "AE01-L02",
+  "accepted_at": "2026-07-15",
+  "status": "owner_accepted_registration_progression_authority",
+  "authority": {
+    "decision_id": "P2-I2-DEC-044",
+    "change_id": "P2-I2-CHG-038",
+    "owner_statement": "sure, i accept",
+    "accepted_meaning": "accept complete I06B and return to the already-declared I07 freeze",
+    "parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871"
+  },
+  "accepted_package": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-correction-input-freeze.json",
+      "role": "exact_three_primitive_input_freeze",
+      "sha256": "4ada5141c550d478ee36d8a3be069bcbb0a040bddff235ad65bd707e74fc685c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+      "role": "accepted_additive_registration_overlay",
+      "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-manifest.json",
+      "role": "pre_validation_manifest",
+      "sha256": "9bf6bf64d2072cb96b0ea2bb9fb58fc169bd821480b1a10a06c07e3979379323"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06b_validate.py",
+      "role": "candidate_free_validator",
+      "sha256": "ae0b5d3b52b1f66749031d5f49fe61e4f7ee23f24da04ba1a590e275799b670c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-validation.json",
+      "role": "passed_15_of_15_validation",
+      "sha256": "2bbffec5c72d78f565ac9830ed2b236bb934aa76042d7f8d67911681ac261857"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06B-execution-readiness-correction.md",
+      "role": "accepted_human_review_report",
+      "sha256": "e28391e50df71e9b4f4018c9d8a23ca49f46949702750eec738885d4abd841ef"
+    }
+  ],
+  "accepted_result": {
+    "checks_passed": 15,
+    "checks_total": 15,
+    "blockers": 0,
+    "accepted_I06_I06A_byte_changes": 0,
+    "pygrc_imports": 0,
+    "models_constructed": 0,
+    "packets_scheduled_or_processed": 0,
+    "candidate_or_control_operations": 0,
+    "scientific_evidence": false
+  },
+  "progression_effect": {
+    "P2-I2-REG-GATE": "passed_after_explicit_owner_acceptance_of_I06B",
+    "P2-I2-I07": "resumed_candidate_free_from_retained_authority_audit",
+    "P2-I2-EXEC-FREEZE": "closed_pending_complete_I07_and_explicit_owner_acceptance",
+    "P2-I2-I08": "unauthorized",
+    "candidate_execution_authorized": false,
+    "commit_authorized": false
+  },
+  "immutability": {
+    "accepted_I06_I06A_bytes": "unchanged",
+    "accepted_I06B_package_bytes": "frozen_by_sha256_above",
+    "I07_may_revise_I06B": false,
+    "I07_may_invent_additional_registration_semantics": false
+  }
+}

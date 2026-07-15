@@ -1,0 +1,222 @@
+{
+  "activity_id": "P2-I2-I05J-METRIC-CLOSEOUT",
+  "artifact_id": "P2-I2-I05J-PROCESS-AND-PROJECTION-CLOSEOUT",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_ids": [
+      "P2-I2-CHG-033",
+      "P2-I2-CHG-034"
+    ],
+    "decision_ids": [
+      "P2-I2-DEC-040",
+      "P2-I2-DEC-041"
+    ],
+    "owner_direction": "amend P2-I2-I05J in place rather than open another I05 iteration",
+    "owner_acceptance": {
+      "accepted": true,
+      "commit_authorized": true,
+      "date": "2026-07-14",
+      "scope": "complete amended I05J/I05JA package; pass CAL-GATE; authorize unstarted I06 registration construction only"
+    },
+    "parent_commit": "b5d0acbac6de34b0cbd40b3d16a05f6356d5b709"
+  },
+  "evidence_classification": {
+    "authored_process_reconstruction": true,
+    "generated_machine_evidence": [
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-validation.json",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json"
+    ],
+    "limitation": "process-start history is reconstructed from observed activity and retained artifacts; it is not relabelled as a machine-generated execution receipt",
+    "scientific_evidence_effect": "none"
+  },
+  "final_report": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05J-metric-closeout.md",
+    "sha256": "005f550b9975c58482eac7e2eb11fab730ebd18ec1be4cb3d555ac3a82f7c5d7"
+  },
+  "gate_effect": {
+    "CAL_GATE_passed": true,
+    "I06_opened": true,
+    "commit_authorized": true,
+    "owner_review_required": false
+  },
+  "immutable_generated_artifacts": {
+    "frozen_metric_sheet_sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692",
+    "I05JA_correction_freeze_sha256": "08b90cfd501b2d565e7a1f0e2ecfca72c03558d1903d938d3fac9935e1e6b4ca",
+    "I05JA_dependency_failure_sha256": "e122889b4e9aa19b4eedfb87087d71161dd4d9036ebebde2c9b8c0b6202a58bf",
+    "I05J_input_freeze_sha256": "c5fdf5e65b65c1f162f3baf414d4c6d562d10a54b2d19726cb4ba72c6b0bcc74",
+    "I05J_validation_sha256": "23d389ad765201ceefa329836aad8b45bb6619006abef514030464970f3ae091",
+    "metric_calibration_sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3",
+    "validator_sha256": "fcaf58995eb2de27123de4ad387f81342d44b898434e296b18d92b734e705bb8"
+  },
+  "iteration_id": "P2-I2-I05J",
+  "lane_id": "AE01-L02",
+  "package_inventory": {
+    "complete_non_self_file_count": 18,
+    "files": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md",
+        "role": "experiment_overview_current_projection",
+        "sha256": "d2cc50bc16468cfc1ec5afcec3bdf4faed1659fb933d87b791908e89028afb2b"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/README.md",
+        "role": "experiment_navigation_current_projection",
+        "sha256": "e08bce903ce6ed05ffb0550b8b8de446a0c56a65a71e5770a9f07b7c706efcc7"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05j_metric_closeout_policy.json",
+        "role": "metric_closeout_policy",
+        "sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+        "role": "native_frozen_metric_sheet",
+        "sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-analysis-arithmetic-resolution-input.json",
+        "role": "five_seed_two_order_projection",
+        "sha256": "8aeb478a65879a4000d37cc05539d5552daf91000b4b355aae832ba8e5d5e26a"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-input-freeze.json",
+        "role": "original_I05J_input_freeze",
+        "sha256": "c5fdf5e65b65c1f162f3baf414d4c6d562d10a54b2d19726cb4ba72c6b0bcc74"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-validation.json",
+        "role": "generated_11_of_11_validation",
+        "sha256": "23d389ad765201ceefa329836aad8b45bb6619006abef514030464970f3ae091"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05ja-native-dependency-correction-freeze.json",
+        "role": "additive_native_dependency_correction_freeze",
+        "sha256": "08b90cfd501b2d565e7a1f0e2ecfca72c03558d1903d938d3fac9935e1e6b4ca"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05ja-native-dependency-failure.json",
+        "role": "first_native_start_failure_record",
+        "sha256": "e122889b4e9aa19b4eedfb87087d71161dd4d9036ebebde2c9b8c0b6202a58bf"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+        "role": "native_metric_calibration",
+        "sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+        "role": "operational_hypothesis_current_projection",
+        "sha256": "f78b6b5d32dc85189699fd672bc5dbdf31a7cb0cfea19f8c020e5648c7a41541"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+        "role": "decision_authority_and_amendment_disposition",
+        "sha256": "298fae07c7826b14c1f8088ff94c123833abd8516dbf0dea3d321658114b11b9"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+        "role": "lane_activity_and_gate_current_projection",
+        "sha256": "4008b0c78f1a1f7f0502ae9c1052707c21842039fe2b509a0f85daffc6800f82"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/README.md",
+        "role": "implementation_navigation_current_projection",
+        "sha256": "13fbc5e27652c3008e3198b8c2492d458fec0e0df2d7c1552c24be433416831d"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05J-metric-closeout.md",
+        "role": "final_human_readable_closeout",
+        "sha256": "005f550b9975c58482eac7e2eb11fab730ebd18ec1be4cb3d555ac3a82f7c5d7"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05j_validate.py",
+        "role": "generated_validation_source",
+        "sha256": "fcaf58995eb2de27123de4ad387f81342d44b898434e296b18d92b734e705bb8"
+      },
+      {
+        "path": "implementation/PostN30-checklist.md",
+        "role": "master_checklist_current_projection",
+        "sha256": "2a85ffd7a8e2bc82291ff607d656248049145facad68b00487e41068b1e6601c"
+      },
+      {
+        "path": "implementation/PostN30-plan.md",
+        "role": "master_plan_current_projection",
+        "sha256": "49bb884acfd7f64eefc91331e2996b972967c8f9bfa5358cafc307bde267e943"
+      }
+    ],
+    "self_identity": {
+      "hash_recorded_externally_at_review": true,
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-process-and-projection-closeout.json"
+    }
+  },
+  "process_history": {
+    "amendment_activity": {
+      "dependency_install_process_starts": 0,
+      "native_freeze_resolution_entrypoint_starts": 0,
+      "null_builder_or_wrapper_invocations": 0,
+      "pygrc_imports_or_model_instantiations": 0,
+      "candidate_or_control_invocations": 0,
+      "conformance_or_scientific_invocations": 0,
+      "validator_entrypoint_starts": 0
+    },
+    "dependency_install": {
+      "actual_process_starts": 2,
+      "declared_process_start_ceiling": 1,
+      "deviation_from_freeze": true,
+      "exact_dependency": "jsonschema==4.26.0",
+      "starts": [
+        {
+          "environment_changed": false,
+          "index": 1,
+          "status": "sandbox_package_index_dns_blocked"
+        },
+        {
+          "environment_changed": true,
+          "index": 2,
+          "installed_version": "4.26.0",
+          "status": "successful_after_network_authorization"
+        }
+      ]
+    },
+    "native_freeze_resolution": {
+      "actual_entrypoint_starts": 2,
+      "starts": [
+        {
+          "failure_record_sha256": "e122889b4e9aa19b4eedfb87087d71161dd4d9036ebebde2c9b8c0b6202a58bf",
+          "index": 1,
+          "outputs_written": false,
+          "status": "failed_closed_missing_dependency"
+        },
+        {
+          "command_identity": "unchanged native command from P2-I2-I05J-METRIC-CLOSEOUT-INPUT-FREEZE",
+          "frozen_metric_sheet_sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692",
+          "index": 2,
+          "metric_calibration_sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3",
+          "outputs_written": true,
+          "status": "successful"
+        }
+      ]
+    },
+    "validator": {
+      "actual_entrypoint_starts": 2,
+      "starts": [
+        {
+          "failure_check_id": "I05J-08",
+          "index": 1,
+          "output_written": false,
+          "status": "failed_closed_report_phrase_line_break"
+        },
+        {
+          "index": 2,
+          "output_sha256": "23d389ad765201ceefa329836aad8b45bb6619006abef514030464970f3ae091",
+          "passed_checks": 11,
+          "status": "passed",
+          "total_checks": 11
+        }
+      ]
+    }
+  },
+  "result_status": "P2-I2-I05J-OWNER-ACCEPTED-CAL-GATE-PASSED",
+  "scientific_result": false
+}

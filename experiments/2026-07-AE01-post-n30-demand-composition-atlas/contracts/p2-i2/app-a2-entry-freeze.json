@@ -1,0 +1,116 @@
+{
+  "artifact_id": "P2-I2-APP-A2-ENTRY-FREEZE",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A2",
+  "frozen_at": "2026-07-15T00:00:00+02:00",
+  "status": "frozen_before_runner_or_reconstructor_creation",
+  "authority": {
+    "decision_id": "P2-I2-DEC-069",
+    "change_id": "P2-I2-CHG-074",
+    "owner_direction": "ok, now you can do APP-A2",
+    "implementation_construction_authorized": true,
+    "static_validation_authorized": true,
+    "scientific_activation_authorized": false,
+    "campaign_authorized": false,
+    "commit_authorized": false
+  },
+  "retained_rcae_entry": {
+    "commit": "1f698168549cab8a214043ffd0a8cc3c5504baf7",
+    "branch": "p2-i2-experiment",
+    "entry_commit_clean": true,
+    "current_preimplementation_dirty_scope": [
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md"
+    ],
+    "dirty_scope_interpretation": "Only checklist/hypothesis/decision APP-A2 declaration bytes created before this freeze; no implementation or runtime output existed."
+  },
+  "retained_app_a1": [
+    {
+      "role": "accepted_execution_contract",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-app-a2-execution-freeze.json",
+      "sha256": "26579a0ed51761777d028e4209431f72ac1b7281b9ac6c5a5132a06d3844c9e5",
+      "committed_sha256": "26579a0ed51761777d028e4209431f72ac1b7281b9ac6c5a5132a06d3844c9e5"
+    },
+    {
+      "role": "owner_acceptance_and_retention",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-owner-acceptance-and-retention.json",
+      "sha256": "7fbbfb4c0644246633c22fd51ce42b7d9631096a8cc659de5e22fad1bf67ca35"
+    },
+    {
+      "role": "fixture_gate_control_arm_registry",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json",
+      "sha256": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3"
+    }
+  ],
+  "graph_entry": {
+    "repository_id": "graph-reflexive-coherence",
+    "commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "clean": true,
+    "mutation_allowed": false,
+    "pythonpath": "external-repository:graph-reflexive-coherence/src",
+    "source_identities": [
+      {
+        "path": "src/pygrc/__init__.py",
+        "sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+        "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+        "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+        "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931"
+      }
+    ]
+  },
+  "environment": {
+    "logical_executable": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "interpreter_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "python_flags": [
+      "-B"
+    ],
+    "pythonhashseed": "0",
+    "pythondontwritebytecode": "1",
+    "ambient_interpreter_allowed": false,
+    "ambient_pygrc_allowed": false,
+    "entry_probe_starts": 1,
+    "entry_probe_pygrc_imports": 0,
+    "entry_probe_models": 0
+  },
+  "output_preconditions": {
+    "aggregate_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+    "aggregate_absent": true,
+    "reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+    "reconstruction_absent": true,
+    "per_arm_output_directory": null,
+    "per_arm_persisted_files_allowed": false
+  },
+  "frozen_imports": {
+    "arm_count": 19,
+    "campaign_attempts": 1,
+    "campaign_retries": 0,
+    "attempts_per_arm": 1,
+    "arm_retries": 0,
+    "fresh_process_per_arm": true,
+    "fresh_model_per_arm": true,
+    "reconstruction_reads_retained_aggregate_only": true,
+    "scientific_values_or_controls_may_change": false
+  },
+  "counts_at_freeze": {
+    "runner_files": 0,
+    "reconstructor_files": 0,
+    "activation_artifacts": 0,
+    "campaign_starts": 0,
+    "child_arm_starts": 0,
+    "scientific_models": 0,
+    "scientific_gate_signatures": 0,
+    "Appendix_results": 0
+  },
+  "next_allowed_action": "Create the exact runner and read-only reconstructor, then statically validate and hash-bind them without importing PyGRC or constructing a scientific model."
+}

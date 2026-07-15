@@ -1,0 +1,120 @@
+{
+  "artifact_id": "P2-I2-C02-OWNER-ACCEPTED-EXECUTION-AUTHORIZATION",
+  "artifact_version": "1.2.0",
+  "iteration_id": "P2-I2-I08A",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C02",
+  "status": "owner_accepted_checkpoint_continuation",
+  "construction_authority": {
+    "decision_id": "P2-I2-DEC-050",
+    "change_id": "P2-I2-CHG-047",
+    "owner_direction": "there is no need for 512MiB space limit on 128GB RAM machine"
+  },
+  "acceptance_authority": {
+    "decision_id": "P2-I2-DEC-051",
+    "change_id": "P2-I2-CHG-048",
+    "owner_direction": "i accept I08A, continue with step 2 and 3 and 4",
+    "duplicate_activation_review_required": false
+  },
+  "infrastructure_correction_authority": {
+    "change_id": "P2-I2-CHG-050",
+    "owner_direction": "don't create new I08B or something, this is infrastructure implementation failure, not reruns based on decisions. everything needs to go through .venv",
+    "new_iteration_or_cycle": false,
+    "scientific_change_count": 0,
+    "retained_attempt_1_claim_sha256": "f2b0e5a236c773d6b45b485e05e60d5229e57f630d19e8958940ab610f9c343a",
+    "retained_attempt_1_failure_sha256": "0ee2c8691126580479c66a748589a72ed2fbfa3832e91ec5762ccf6384000776",
+    "authorized_same_entry_attempt": 2
+  },
+  "continuation_authority": {
+    "change_id": "P2-I2-CHG-051",
+    "owner_direction": "i accept -- i wouldn't create one file per entry though.",
+    "new_iteration_or_cycle": false,
+    "scientific_change_count": 0,
+    "narrative_reporting": "one_cumulative_I08_execution_ledger",
+    "governed_receipts_remain_per_frozen_matrix_path": true,
+    "admitted_prior_terminals": [
+      {
+        "entry_id": "P2-I2-C02:state_carried:reference-pool:reference_pool_empty:not_applicable:seed-101",
+        "attempt": 2,
+        "owner_authorized_full_HEAD": "6b920fb03b33c3d10d84ed23af3efa29bc5ee9da",
+        "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-2.json",
+        "claim_sha256": "6a8e429dbff126c9ccc16bdfa58eec2e409350c5b944858a522a2eba9b37502a",
+        "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/retries/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-2.json",
+        "output_sha256": "ece9e4df21d9c2ab6e9d93e2359f45dd12fdb596a7d31ff15563a344f514acad",
+        "execution_source_sha256": "dd49fa01af1697327a5ee22ab77cf9f90a94c9371a841a98ebd059d7503f5d40",
+        "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792"
+      }
+    ],
+    "continuation_entries": [
+      2,
+      234
+    ],
+    "continuation_head_source": "exact_commit_containing_accepted_checkpoint_and_this_authority",
+    "further_checkpoint_commits_before_manifest": false,
+    "unknown_historical_head_effect": "fail_closed"
+  },
+  "owner_acceptance": true,
+  "candidate_execution_authorized": true,
+  "I08_authorized": true,
+  "commit_authorized": true,
+  "activation_commit_head": null,
+  "expected_head_source": "separately_owner_authorized_normalized_command_argument",
+  "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792",
+  "execution_source_sha256": "f316c5c9f90037b2a8a8fb79a677640d0ba3aa382f343e8f3d91faa9484d0606",
+  "test_sha256": "f376ac308b92a87e5155ab65431dc8d3f7334d2d48cb8782c4b7c1f77e083940",
+  "validator_sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c",
+  "input_freeze_sha256": "ea62691439b1bdd49f533071784285c2e15b12c1e9ba862afc6bf9adc487f0e5",
+  "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
+  "binding_receipt_sha256": "24c24c2eb0b9b10b53bbb18b4fbcd41dd7195fc5858f79d6a4ab9fbe60f4c184",
+  "inactive_exec_freeze_sha256": "fe8722ac99de9d546c7f2d3db6f6da9c200a6a7dce56b525a664e50101954414",
+  "infrastructure_input_sha256": "65f342a6d954df2d7dc2d4acbe110f6b0c8320ef9366958fe9a59b915d861bf1",
+  "infrastructure_correction_sha256": "c60b9c1453253cc846aa5dfbff09f4396029537a55fdd6919326940ea47b32d3",
+  "infrastructure_test_receipt_sha256": "07812b67d6d6a7e29eae14e2e3b8bd3c4b67558603f4720f35d1cd2f1980fcf9",
+  "infrastructure_validator_sha256": "ddb4de37bab687fabed37e9e0efa03a9b25a5edfb9206cdc06988cfdc894cc59",
+  "postcommit_preflight_sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db",
+  "preparation_bindings": {
+    "accepted_parent_commit": "c265279b2690fbd262e59248b0d84bfa3dc81ba1",
+    "activation_input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-activation-input-freeze.json",
+    "activation_input_freeze_sha256": "e91d291b6ea5e54fa2851fe592682d19a6b261f9c7f9df30261ad71eec7728b1",
+    "accepted_i08a_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/i08a-candidate-free-validation.json",
+    "accepted_i08a_validation_sha256": "9e5089f9c4b653a3c7b0db5faff9d88626eca0da98d532397b82a3e6a7832981",
+    "activation_validator_sha256": "6981e447cb0df09abf49bf8192ea09c30fb9e12acd8bbb756f10c5fdacd521be",
+    "postcommit_preflight_sha256": "3df4c9386c8e9be610248a9d2db862023e70090626b7af4e13383ac91eae41db",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "interpreter_executable_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
+  },
+  "eventual_live_scope": {
+    "scientific_campaign": "P2-I2-I08",
+    "technical_authority_revision": "P2-I2-C02",
+    "primary_entry_count": 234,
+    "execution_order": "ascending_frozen_sequence_index",
+    "fresh_process_and_registered_baseline_per_attempt": true,
+    "python_command": ".venv/bin/python",
+    "python_flags": [
+      "-B"
+    ],
+    "graph_root_argument": "../graph-reflexive-coherence",
+    "parallel_workers": 0,
+    "same_entry_preconstruction_retry_only": true,
+    "scientific_or_control_outcome_retryable": false,
+    "prior_entry_outcome_reads": false,
+    "rescue_variants": false
+  },
+  "current_boundary": {
+    "activation_record_is_owner_accepted": true,
+    "activation_record_becomes_live_only_when_committed_and_bound_by_full_head": true,
+    "governed_claims_or_outputs_permitted_only_after_commit_and_exact_preflight": true,
+    "owner_review_required": false,
+    "authorized_next_entry_sequence_index": 2,
+    "authorized_remaining_entry_sequence_indices": [
+      2,
+      234
+    ],
+    "entry_1_retained_as_accepted_evaluable_checkpoint": true,
+    "stop_before_entry_sequence_index": 235,
+    "further_checkpoint_commits_before_manifest": false,
+    "cumulative_execution_ledger": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I08-execution.md",
+    "execution_manifest_permitted": false,
+    "scientific_evidence": false
+  }
+}

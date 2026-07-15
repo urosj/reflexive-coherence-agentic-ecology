@@ -1,0 +1,75 @@
+{
+  "artifact_id": "P2-I2-I08-ENTRY-001-NATIVE-TERMINATION-AUDIT",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I08",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "audited_at": "2026-07-15",
+  "status": "bounded_incomplete_owner_directed_successor_construction",
+  "authority": {
+    "committed_head": "c265279b2690fbd262e59248b0d84bfa3dc81ba1",
+    "activation_sha256": "f46ebd323499423715107c3b337963c3787404ed257c56be880808617cb09cc3",
+    "entry_sequence_index": 1,
+    "entry_id": "P2-I2-C01:state_carried:reference-pool:reference_pool_empty:not_applicable:seed-101",
+    "attempt": 1
+  },
+  "retained_claim": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/claims/state_carried/reference-pool/reference_pool_empty/not_applicable/seed-101/attempt-1.json",
+    "sha256": "faa37843dea342b0760dd90200f6ec8fa5dfb0fbfd4567bb798c22f8fa10b72f",
+    "permanent": true,
+    "may_be_deleted_for_retry": false
+  },
+  "observed_process_disposition": {
+    "success_contract_satisfied": false,
+    "expected_success_json_emitted": false,
+    "exact_exit_code_retained_by_repository": false,
+    "stderr_lines": [
+      "OpenBLAS error: Memory allocation still failed after 10 retries, giving up."
+    ],
+    "governed_primary_output_present": false,
+    "governed_failure_receipt_present": false,
+    "retry_output_present": false,
+    "execution_manifest_present": false
+  },
+  "mechanical_disposition": {
+    "attempt_1_consumed": true,
+    "attempt_2_authorized": false,
+    "reason": "the frozen retry predicate requires this entry's exact attempt-1 failure receipt and zero-state counters; native termination left neither",
+    "evaluable_terminal_output_count": 0,
+    "matrix_entries_claimed": 1,
+    "matrix_entries_evaluable": 0,
+    "matrix_entries_unattempted": 233,
+    "P2-I2-EXEC-GATE": "blocked_incomplete"
+  },
+  "bounded_diagnosis": {
+    "classification": "common_runtime_import_infrastructure_failure",
+    "inferred_phase": "after permanent claim and RLIMIT_AS application, during registration/PyGRC import, before model construction",
+    "inference_is_retry_authority": false,
+    "frozen_address_space_limit_mb": 512,
+    "ambient_BLAS_thread_environment_variables_present": false,
+    "runner_failure_receipt_boundary_catches_native_process_termination": false,
+    "tracked_RCAE_or_graph_bytes_changed": false,
+    "import_cache_artifacts_created": false
+  },
+  "evidence_effect": {
+    "scientific_result": null,
+    "operational_hypothesis_evidence": false,
+    "negative_scientific_result": false,
+    "mode_comparison": false,
+    "calibration_effect": false
+  },
+  "continuation_boundary": {
+    "later_entry_claims_consumed_after_failure": 0,
+    "unchanged_attempt_2_permitted": false,
+    "unregistered_environment_or_resource_change_permitted": false,
+    "remaining_C01_entries_automatically_authorized_by_this_audit": false,
+    "C01_bounded_incomplete_closeout_decided": true,
+    "successor_cycle_decided": true,
+    "successor_cycle_id": "P2-I2-C02",
+    "successor_iteration_id": "P2-I2-I08A",
+    "owner_direction_required": false,
+    "owner_direction": "there is no need for 512MiB space limit on 128GB RAM machine",
+    "successor_resource_direction": "do not apply RLIMIT_AS; retain the frozen runtime and file-size ceilings",
+    "successor_receipt_direction": "capture child native termination in an external supervisor receipt before any retry decision"
+  }
+}

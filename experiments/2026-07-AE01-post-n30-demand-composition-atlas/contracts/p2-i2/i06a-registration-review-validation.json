@@ -1,0 +1,353 @@
+{
+  "artifact_id": "P2-I2-I06A-REGISTRATION-REVIEW-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blocker_disposition": {
+    "AdapterV2_conformance_authority": "resolved_by_exact_inheritance_normalized_AST_and_pure_tests",
+    "validator_manifest_provenance": "resolved_by_byte_exact_two_stage_authority"
+  },
+  "checks": [
+    {
+      "check_id": "I06A-01",
+      "evidence": {
+        "input_count": 11,
+        "owner_review_sha256": "31cfb67ee67c250640e085ee0f015161bc5aa795519e688a62fce5a18386cffe"
+      },
+      "name": "exact owner-review and I06/I03 authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-02",
+      "evidence": {
+        "I03B_assertions": 252,
+        "I03C_assertions": 258,
+        "adapter_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c"
+      },
+      "name": "I03 AdapterV1 runtime-conformance authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-03",
+      "evidence": {
+        "allowed_override_set_exact": true,
+        "exact_inherited_member_count": 13,
+        "exact_inherited_members": [
+          "_empty_state",
+          "_validate_state",
+          "carrier_id",
+          "current_identity_digest",
+          "ingest_new_rows",
+          "readout",
+          "readout_node_id",
+          "replace_history",
+          "reset",
+          "restoration_identity_digest",
+          "save",
+          "snapshot",
+          "tokens"
+        ],
+        "model_call_surface": [
+          "get_state",
+          "schedule_packet_departure",
+          "step"
+        ],
+        "normalized_materialization_ast_equal": true
+      },
+      "name": "exact inherited adapter behavior",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-04",
+      "evidence": {
+        "allowed_override_set_exact": true,
+        "exact_inherited_member_count": 13,
+        "exact_inherited_members": [
+          "_empty_state",
+          "_validate_state",
+          "carrier_id",
+          "current_identity_digest",
+          "ingest_new_rows",
+          "readout",
+          "readout_node_id",
+          "replace_history",
+          "reset",
+          "restoration_identity_digest",
+          "save",
+          "snapshot",
+          "tokens"
+        ],
+        "model_call_surface": [
+          "get_state",
+          "schedule_packet_departure",
+          "step"
+        ],
+        "normalized_materialization_ast_equal": true
+      },
+      "name": "normalized materialization implementation equivalence",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-05",
+      "evidence": {
+        "PyGRC_imported": false,
+        "PyGRC_model_instantiations": 0,
+        "configured_deadband_checked": true,
+        "decoy_admission_classes_rejected": 8,
+        "fake_native_instances": 8,
+        "identity_and_save_load_reset_checked": true,
+        "positive_and_negative_packet_construction_equal": true,
+        "pure_cases_passed": 9,
+        "valid_tokens_admitted": 2
+      },
+      "name": "configured-tolerance pure adapter conformance",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-06",
+      "evidence": {
+        "model_call_surface": [
+          "get_state",
+          "schedule_packet_departure",
+          "step"
+        ],
+        "response_reads_or_schedules": 0
+      },
+      "name": "forbidden response authority absent",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-07",
+      "evidence": {
+        "all_values_and_roundtrips_inside_domain": true,
+        "closed_native_domain": [
+          0.0,
+          9.25
+        ],
+        "common_fold_values": [
+          0.0,
+          0.625,
+          0.875,
+          0.953125,
+          1.109375
+        ],
+        "deadband_changes_registered_response": false,
+        "derived_16x_max_ULP": 2.842170943040401e-14,
+        "minimum_nonzero_materialization_delta": 0.078125,
+        "private_fold_values": [
+          0.0,
+          0.625,
+          0.875
+        ],
+        "response_gain_over_analysis_delta": 125000000000.0,
+        "response_gain_over_tolerance": 4398046511104.0,
+        "runtime_tolerance": 2.842170943040401e-14
+      },
+      "name": "complete tolerance domain and separation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-08",
+      "evidence": {
+        "excluded_event_classes": [
+          "diversion traffic",
+          "P-only debits",
+          "M_H materialization packets",
+          "neutral contacts",
+          "feedback or response packets",
+          "reset or load activity",
+          "private-control traffic"
+        ],
+        "leave_one_arms": [
+          "q1_admitted_q2_diverted",
+          "q2_admitted_q1_diverted"
+        ],
+        "matching_dimensions": 10,
+        "mode_order_arm_tuples": 12,
+        "only_allowed_difference": "common_carrier_admission",
+        "unique_admission_edges": [
+          "S1_TO_P",
+          "S2_TO_P"
+        ]
+      },
+      "name": "leave-one diversion matching",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-09",
+      "evidence": {
+        "excluded_event_classes": [
+          "diversion traffic",
+          "P-only debits",
+          "M_H materialization packets",
+          "neutral contacts",
+          "feedback or response packets",
+          "reset or load activity",
+          "private-control traffic"
+        ],
+        "leave_one_arms": [
+          "q1_admitted_q2_diverted",
+          "q2_admitted_q1_diverted"
+        ],
+        "matching_dimensions": 10,
+        "mode_order_arm_tuples": 12,
+        "only_allowed_difference": "common_carrier_admission",
+        "unique_admission_edges": [
+          "S1_TO_P",
+          "S2_TO_P"
+        ]
+      },
+      "name": "unique H_P admission and exclusions",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-10",
+      "evidence": {
+        "cross_pair_refused": true,
+        "distinct_composite_identities": 3,
+        "explicit_operation_authority_required": true,
+        "mode_front_masks": {
+          "history_carried": [
+            "M_H"
+          ],
+          "hybrid": [
+            "P",
+            "M_H"
+          ],
+          "state_carried": [
+            "P"
+          ]
+        },
+        "private_masks": {
+          "history_carried": [
+            [
+              "M_H1"
+            ],
+            [
+              "M_H2"
+            ]
+          ],
+          "hybrid": [
+            [
+              "P1_PRIVATE",
+              "M_H1"
+            ],
+            [
+              "P2_PRIVATE",
+              "M_H2"
+            ]
+          ],
+          "state_carried": [
+            [
+              "P1_PRIVATE"
+            ],
+            [
+              "P2_PRIVATE"
+            ]
+          ]
+        },
+        "unregistered_operation_effect": "operational_invalid"
+      },
+      "name": "positive shared-topology mode isolation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-11",
+      "evidence": {
+        "byte_identical_input_classes": 6,
+        "failed_attempt_receipt_fields": 7,
+        "failed_scientific_or_control_result_retryable": false,
+        "infrastructure_retry_ceiling": 1,
+        "outcome_independent_eligibility": true,
+        "qualifying_phase": "before model or adapter construction and before candidate authority consumption",
+        "scientific_attempts_per_entry": 1,
+        "scope": "per_matrix_entry"
+      },
+      "name": "exact per-entry infrastructure retry semantics",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-12",
+      "evidence": {
+        "changed_functions": [
+          "_assert_portable"
+        ],
+        "current_validator_claimed_as_producer": false,
+        "current_validator_sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a",
+        "fourteen_check_projection_unchanged": true,
+        "historical_execution_manifest_file_count": 5,
+        "historical_execution_manifest_sha256": "3665e746d62afc602ab286d006465dd97ec674c7db30b611379a92ac89236613",
+        "historical_execution_validator_reconstructed_sha256": "f0b3f019bd3871876aa26f2a184887826900bb5b515a50de1bf41f844aeaca94",
+        "model_construction_function_unchanged": true,
+        "replaced_function": "_assert_portable",
+        "replaced_import_surfaces": 2,
+        "restoration_function_unchanged": true,
+        "retained_validation_producer": "historical_execution_validator",
+        "retained_validation_sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99",
+        "unchanged_registration_validation_functions": 24
+      },
+      "name": "byte-exact historical execution manifest and validator",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-13",
+      "evidence": {
+        "changed_functions": [
+          "_assert_portable"
+        ],
+        "current_validator_claimed_as_producer": false,
+        "current_validator_sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a",
+        "fourteen_check_projection_unchanged": true,
+        "historical_execution_manifest_file_count": 5,
+        "historical_execution_manifest_sha256": "3665e746d62afc602ab286d006465dd97ec674c7db30b611379a92ac89236613",
+        "historical_execution_validator_reconstructed_sha256": "f0b3f019bd3871876aa26f2a184887826900bb5b515a50de1bf41f844aeaca94",
+        "model_construction_function_unchanged": true,
+        "replaced_function": "_assert_portable",
+        "replaced_import_surfaces": 2,
+        "restoration_function_unchanged": true,
+        "retained_validation_producer": "historical_execution_validator",
+        "retained_validation_sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99",
+        "unchanged_registration_validation_functions": 24
+      },
+      "name": "guard-only validator transition",
+      "status": "passed"
+    },
+    {
+      "check_id": "I06A-14",
+      "evidence": {
+        "I07_authorized": false,
+        "REG_GATE_passed": false,
+        "retained_validation_producer": "historical_execution_validator",
+        "retained_validation_sha256": "1808a370c043055020ee34b7d30cc4bb27670009196b7c9ea8b2310537819c99"
+      },
+      "name": "honest retained 14/14 provenance and review stop",
+      "status": "passed"
+    }
+  ],
+  "evidence_effect": "implementation_conformance_and_registration_provenance_only",
+  "gate_effect": {
+    "I07_authorized": false,
+    "REG_GATE_passed": false,
+    "commit_authorized": false,
+    "owner_acceptance_required": true
+  },
+  "iteration_id": "P2-I2-I06A",
+  "lane_id": "AE01-L02",
+  "passed_checks": 14,
+  "process_accounting": {
+    "PyGRC_imports": 0,
+    "PyGRC_model_instantiations": 0,
+    "active_history_candidate_admissions": 0,
+    "baseline_validation_reruns": 0,
+    "candidate_or_control_operations": 0,
+    "comparator_or_scientific_windows": 0,
+    "failed_closed_static_validation_starts_before_retained_output": 1,
+    "infrastructure_retries": 0,
+    "prevalidation_syntax_json_starts": 1,
+    "pure_fake_native_instances": 8,
+    "response_evaluations": 0,
+    "retained_output_producing_static_validation_starts": 1,
+    "total_static_validation_starts": 2
+  },
+  "scientific_result": false,
+  "status": "P2-I2-I06A-REVIEW-READY",
+  "total_checks": 14
+}

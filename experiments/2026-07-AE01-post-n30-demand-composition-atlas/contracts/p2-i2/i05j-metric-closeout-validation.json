@@ -1,0 +1,165 @@
+{
+  "I05JA_correction_freeze_sha256": "08b90cfd501b2d565e7a1f0e2ecfca72c03558d1903d938d3fac9935e1e6b4ca",
+  "I05JA_dependency_failure_sha256": "e122889b4e9aa19b4eedfb87087d71161dd4d9036ebebde2c9b8c0b6202a58bf",
+  "activity_id": "P2-I2-I05J-METRIC-CLOSEOUT",
+  "analysis_arithmetic_delta": 1e-12,
+  "artifact_id": "P2-I2-I05J-METRIC-CLOSEOUT-VALIDATION",
+  "artifact_version": "1.0.0",
+  "base_metric_sheet_sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483",
+  "candidate_or_control_invocations": 0,
+  "checks": [
+    {
+      "check_id": "I05J-01",
+      "evidence": {
+        "frozen_input_count": 9,
+        "parent_commit": "b5d0acbac6de34b0cbd40b3d16a05f6356d5b709",
+        "policy_sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935"
+      },
+      "finding": "I05J binds the committed I05I parent and every accepted input/tool byte",
+      "name": "committed authority and frozen identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05JA-01",
+      "evidence": {
+        "correction_freeze_sha256": "08b90cfd501b2d565e7a1f0e2ecfca72c03558d1903d938d3fac9935e1e6b4ca",
+        "failed_closed_pre_output_starts": 1,
+        "installed_jsonschema_version": "4.26.0"
+      },
+      "finding": "I05JA preserves the failed first start and installs only the pinned native dependency",
+      "name": "failed-start and exact dependency correction authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-02",
+      "evidence": {
+        "base_metric_sheet_sha256": "ee2da56fa5a496703f3de1ccae3f487258922a250a77d74a1c058f8f59495483"
+      },
+      "finding": "the base AE01-L02 sheet remains pending and byte-identical",
+      "name": "unchanged pending base metric sheet",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-03",
+      "evidence": {
+        "builder_invocation_count": 1,
+        "governed_attempt_count": 1,
+        "infrastructure_retries": 0,
+        "second_invocation_refused": true
+      },
+      "finding": "retained portable evidence authorizes closeout without another null invocation",
+      "name": "consumed one-shot and portable output authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-04",
+      "evidence": {
+        "projected_seed_count": 5,
+        "required_orders": [
+          "q1_then_q2",
+          "q2_then_q1"
+        ],
+        "source_row_count": 10
+      },
+      "finding": "both required physical orders project to one maximum-absolute envelope per seed",
+      "name": "exact ten-row to five-seed projection",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-05",
+      "evidence": {
+        "analysis_arithmetic_delta": 1e-12,
+        "maximum_absolute_matched_null_margin": 0.0
+      },
+      "finding": "the seed-envelope projection preserves the complete registered maximum exactly",
+      "name": "registered estimator preservation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-06",
+      "evidence": {
+        "frozen_metric_sheet_sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692",
+        "metric_calibration_sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3"
+      },
+      "finding": "both retained artifacts reconstruct exactly through the native freeze implementation",
+      "name": "byte-exact native generation reconstruction",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-07",
+      "evidence": {
+        "changed_paths": [
+          "record/resolution_policy/delta/calibration_artifact_ref",
+          "record/resolution_policy/delta/rationale",
+          "record/resolution_policy/delta/status",
+          "record/resolution_policy/delta/value",
+          "record/resolution_policy/status"
+        ]
+      },
+      "finding": "native outputs are schema-valid and only the five designated resolution paths changed",
+      "name": "schema and designated-field boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-08",
+      "evidence": {
+        "candidate_evidence_effect": "none",
+        "runtime_tolerance_authority": "none",
+        "scientific_result": false
+      },
+      "finding": "narrow/robust language remains relational and calibration assigns no scientific verdict",
+      "name": "resolution-only interpretation boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-09",
+      "evidence": {
+        "CAL_GATE_passed": false,
+        "I06_opened": false,
+        "pygrc_imports_or_model_instantiations": 0
+      },
+      "finding": "metric closeout consumes no candidate/runtime evidence and opens no later gate",
+      "name": "candidate and runtime quarantine",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05J-10",
+      "evidence": {
+        "failed_closed_pre_output_starts": 1,
+        "native_freeze_resolution_entrypoint_starts": 2,
+        "native_successful_generation_starts": 1,
+        "null_builder_or_wrapper_invocations": 0,
+        "owner_review_required": true,
+        "validator_entrypoint_starts": 2
+      },
+      "finding": "I05J/I05JA retain one failed start, one native generation, and static reconstruction before owner review",
+      "name": "bounded invocation and review stop",
+      "status": "passed"
+    }
+  ],
+  "conformance_or_scientific_invocations": 0,
+  "failed_closed_pre_output_starts": 1,
+  "failed_closed_validator_starts": 1,
+  "frozen_metric_sheet_sha256": "73ea768783b8466ee57c64b215ca784e7b4347b722d6f739f66bffd1cfce4692",
+  "installed_jsonschema_version": "4.26.0",
+  "interpreter_identity": ".venv/bin/python",
+  "iteration_id": "P2-I2-I05J",
+  "lane_id": "AE01-L02",
+  "metric_calibration_sha256": "1f8dd4b5e7f0efd947ee0d9d674942cfcc5f8c679a844fed1287e2f0efe29ba3",
+  "native_freeze_resolution_entrypoint_starts": 2,
+  "native_successful_generation_starts": 1,
+  "null_builder_or_wrapper_invocations": 0,
+  "other_python_process_starts": 0,
+  "passed_checks": 11,
+  "policy_sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935",
+  "projection_sha256": "8aeb478a65879a4000d37cc05539d5552daf91000b4b355aae832ba8e5d5e26a",
+  "pygrc_imports_or_model_instantiations": 0,
+  "result_status": "P2-I2-I05J-METRIC-CLOSEOUT-REVIEW-READY",
+  "scientific_result": false,
+  "total_checks": 11,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05j_validate.py",
+    "sha256": "fcaf58995eb2de27123de4ad387f81342d44b898434e296b18d92b734e705bb8"
+  },
+  "validator_entrypoint_starts": 2
+}

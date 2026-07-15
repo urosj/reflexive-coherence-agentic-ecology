@@ -1,0 +1,98 @@
+{
+  "artifact_id": "p2_i2_app_a1_gate_authority_proposal",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "generated_at": "2026-07-15T00:00:00+02:00",
+  "iteration_id": "P2-I2-APP-A1",
+  "status": "proposal_only_requires_separate_owner_review",
+  "reason_required": "The accepted two-part N29 transportability gate failed in app-a1-source-delta-audit.json.",
+  "authority_effect_now": {
+    "gate_authority_active": false,
+    "fixture_freeze_allowed": false,
+    "conformance_allowed": false,
+    "app_a2_allowed": false,
+    "commit_authorized": false
+  },
+  "grounding_boundary": {
+    "source_roles": {
+      "G": "N29 I14.1 positive environment/support/distinguishability/boundary capacity changes",
+      "E": "N29 I14.2-3 negative capacity changes with explicit leakage-gated producer debt retained",
+      "P": "N29 I14.3 opposed redistribution/buffering role",
+      "R": "N29 I14.5-2 later 0.82 retained response to the G+E+P changed medium"
+    },
+    "proposed_use_of_n29_numbers": "prospective source-grounded operational embedding, not transported measurement equivalence or independent replication",
+    "required_disclosure_if_accepted": "A positive APP-A2 result would demonstrate the executable shared-carrier composition of the frozen source-grounded operation geometry; it would not convert the N29 artifact gates into native LGRC observables."
+  },
+  "proposed_measurement_domain": {
+    "domain_id": "app_a_live_packet_coherence_delta_v1",
+    "runtime": "one fresh source-current LGRC9V3 model per arm",
+    "carrier_axes": [
+      "environment",
+      "support",
+      "distinguishability",
+      "boundary"
+    ],
+    "reference_rule": "Each arm is compared only with its matched reference runtime at the same registered pre-R and post-R event frontiers.",
+    "response_rule": "R is a passive noncontributor target. Native causal-flux production reads only registered carrier-node coherence and schedules amount_fraction=0.82 packets after the operation sequence.",
+    "metric_observer_rule": "Read-only experiment analysis derives metrics exclusively from native state snapshots, packet/event receipts, and the matched reference; it cannot schedule, mutate, or synthesize R."
+  },
+  "proposed_gate_signature": {
+    "retention_configuration_identity": {
+      "value": 0.82,
+      "role": "required identical configuration in every evaluable arm, not a measured success gate"
+    },
+    "environment_feedback": {
+      "definition": "environment-axis R packet mass in arm minus matched-reference environment-axis R packet mass",
+      "orientation": "larger_is_more_feedback",
+      "proposed_threshold": ">= 0.04",
+      "source_anchor": "N29 I14.5-2 minimum environment feedback delta",
+      "native_n29_equivalence_claimed": false
+    },
+    "support_feedback": {
+      "definition": "support-axis R packet mass in arm minus matched-reference support-axis R packet mass",
+      "orientation": "larger_is_more_feedback",
+      "proposed_threshold": ">= 0.02",
+      "source_anchor": "N29 I14.5-2 minimum support feedback delta",
+      "native_n29_equivalence_claimed": false
+    },
+    "phase_residual": {
+      "definition": "maximum over the four axes of abs((arm pre-R carrier coherence minus matched-reference pre-R carrier coherence) minus (arm R packet mass minus matched-reference R packet mass))",
+      "orientation": "smaller_is_more_retained",
+      "proposed_threshold": "<= 0.015",
+      "source_anchor": "N29 I14.5-2 maximum buffered phase residual",
+      "native_n29_equivalence_claimed": false
+    },
+    "registered_route_merge_leakage": {
+      "definition": "(unregistered packet mass touching the shared-carrier scope plus absolute native budget error) divided by max(1, total registered common-carrier packet mass)",
+      "orientation": "smaller_is_cleaner",
+      "proposed_threshold": "<= registered_runtime_tolerance",
+      "proposed_runtime_tolerance": 1e-12,
+      "source_anchor": "N29 bounded merge/leakage guard, redefined prospectively for the live packet domain",
+      "native_n29_equivalence_claimed": false
+    }
+  },
+  "proposed_scientific_rule_if_accepted": {
+    "complete_arm": "GEP must be operationally valid, preserve the retention configuration identity, and pass all four live-domain gates.",
+    "proper_subsets": "Every operationally valid member of reference/G/E/P/GE/GP/EP must preserve the same retention configuration identity and fail at least one live-domain gate.",
+    "nonevaluable_rule": "Invalid operation receipts, configuration drift, missing matched reference, missing carrier continuity, or incomplete gate data make an arm nonevaluable and cannot establish subset insufficiency.",
+    "causal_rule": "Each G/E/P withdrawal must alter R directly or alter a registered mediator whose independent intervention alters R; carrier clamp must alter R.",
+    "runtime_requirement": "Only fresh live PyGRC runtime receipts can satisfy the rule. Source arithmetic and deterministic prediction are design context, not evidence."
+  },
+  "review_choice": {
+    "acceptance_effect": "Authorize APP-A1 to bind this gate authority, then proceed to the exact fixture/control freeze and candidate-free conformance in the already accepted hard order.",
+    "rejection_effect": "Keep APP-A1 failed closed and revise or abandon the prospective live-domain gate authority without runtime execution.",
+    "no_implicit_acceptance": true
+  },
+  "claim_ceiling": {
+    "maximum_future_positive_label": "bounded generator-extractor-redistributor shared-carrier composition candidate",
+    "blocked": [
+      "native N29 metric replication",
+      "coalition",
+      "cooperation",
+      "coordination",
+      "resource economy",
+      "ecology motif or regime",
+      "N31+ selection"
+    ]
+  }
+}

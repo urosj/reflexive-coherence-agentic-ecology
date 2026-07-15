@@ -1,0 +1,677 @@
+{
+  "record": {
+    "becoming_reading": {
+      "appearance": "Two attributable contributions constituted one non-private carrier whose later native response depended on complete common state, active order-bearing history, or both, according to the preregistered mode.",
+      "claim_ceiling": "bounded shared-pool co-conditioning demand pattern",
+      "classification_status": "R01 through R05 reached; state-carried is robust aligned, history-carried and hybrid are expected order-conditioned mixed_direction relations, and all mandatory causal controls pass.",
+      "live_boundary": "Whether the active-history leg can become graph-native, recur independently across lanes, or retain function across broader transfer axes remains open.",
+      "support_dependence": "State-carried uses a native PyGRC causal path; history-carried and hybrid require the minimal RCAE H_P/M_H adapter while PyGRC owns the response. The lane-wide lowest honest support status is scaffold_dependent."
+    },
+    "blocked_claims": [
+      "collective memory or communication",
+      "cooperation, coordination, agency, or organism identity",
+      "functional source diversity, complementarity, or synergy",
+      "a native reusable shared-pool or active-history primitive",
+      "a general resource economy, leakage law, saturation law, or maintenance law",
+      "general transfer, cross-lane recurrence, or compositional recurrence",
+      "an ecology motif, ecology regime, life, or T4 theoretical class",
+      "ranking among the three retained dependence modes",
+      "N31+ selection"
+    ],
+    "boundary_rungs": [
+      {
+        "evidence_refs": [
+          "P2-I2-I06-THREE-MODE-REGISTRATION",
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "name": "One non-private pool",
+        "rationale": "Each mode exposes one registered source-label-free common carrier to an eligible responder; private partitions cannot satisfy the candidate path.",
+        "rung_id": "AE01-L02-R01",
+        "status": "reached"
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-C02-EXECUTION-MANIFEST",
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "name": "Multiple attributable sources",
+        "rationale": "S1 and S2 lineage is retained for audit, both source-specific single-contribution responses are zero, and both valid leave-one carrier-admission arms are zero in every mode, order, and seed.",
+        "rung_id": "AE01-L02-R02",
+        "status": "reached"
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX",
+          "P2-I2-I10-RECONSTRUCTION-MANIFEST"
+        ],
+        "name": "Combined-history dependence",
+        "rationale": "State-carried response follows complete P and changes under P debit; history-carried response follows active H_P/M_H and changes under order/clamp but not P-only debit; hybrid response requires both P and H_P components under factorial interventions.",
+        "rung_id": "AE01-L02-R03",
+        "status": "reached"
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX",
+          "P2-I2-I10-RECONSTRUCTION-MANIFEST"
+        ],
+        "name": "Mailbox, controller, and shuffle controls",
+        "rationale": "All 38 comparison rules and all 15 lane controls pass; label-only changes are invariant, private partitions remain isolated, and direct/controller substitutions are causally excluded from the candidate chain.",
+        "rung_id": "AE01-L02-R04",
+        "status": "reached"
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-C02-EXECUTION-MANIFEST",
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "name": "Capacity, contributor, or access variation",
+        "rationale": "The preregistered alternate-eligible-responder access-scope contrast retains the mode-specific relation in all three modes; no broader transfer is inferred.",
+        "rung_id": "AE01-L02-R05",
+        "status": "reached"
+      }
+    ],
+    "claim_boundary_ref": "ae01-phase1-developmental-interpretation-claim",
+    "classification_value": {
+      "organizes_next_iteration": true,
+      "rationale": "The result defines an executable three-mode shared-pool probe, its causal controls, restoration boundary, and a specific missing native active-history function; it does not revise theory at T4.",
+      "rung": "T3_operational_class"
+    },
+    "debt_refs": [
+      "p2-i2-debt-native-control-surface",
+      "p2-i2-debt-native-active-history",
+      "p2-i2-debt-producer-assisted-history",
+      "p2-i2-debt-explicit-construction",
+      "p2-i2-debt-medium-economy",
+      "p2-i2-debt-leakage-window",
+      "p2-i2-debt-transfer",
+      "p2-i2-debt-measurement-order-conditioning",
+      "p2-i2-debt-composition-recurrence",
+      "p2-i2-debt-semantic-relabel",
+      "p2-i2-debt-claim-ceiling"
+    ],
+    "development_reading": {
+      "aim_effect": "supports",
+      "condition_revealed": "A reusable shared-pool probe needs an attributable but source-label-free common carrier, separately intervenable state/history components, private and controller exclusions, bounded access variation, and complete restoration ownership.",
+      "measurement_question": "Can a future graph-native active-history carrier reproduce the registered admission, order, clamp, materialization, restoration, and control relations after withdrawing RCAEActiveHistoryAdapterV2?",
+      "organization_implication": "Retain all three modes as distinct operational realizations. Treat the native state path as adequate for this bounded function and the active-history adapter boundary as the concrete graph-side naturalization demand.",
+      "stewardship_implication": "Do not optimize the observed margins, rank modes, or broaden claims. Preserve the complete evidence and move only through a separately preregistered native-history substitution probe after cross-experiment pattern synthesis."
+    },
+    "expressed_properties": [
+      {
+        "evidence_refs": [
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "expectedness": "expected",
+        "name": "State-carried robust aligned and order-invariant response",
+        "property_id": "p2-i2-i11-state-order-invariant-response",
+        "rationale": "Both state-carried physical orders yield margin 1.0 for all three seeds and equal-P order/shuffle controls pass."
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "expectedness": "expected",
+        "name": "History-carried order-conditioned response",
+        "property_id": "p2-i2-i11-history-order-conditioned-response",
+        "rationale": "The active-history order reversal changes the response for every seed while P-only debit is invariant and H_P clamp changes the response."
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "expectedness": "expected",
+        "name": "Hybrid separately intervenable joint P and H_P response",
+        "property_id": "p2-i2-i11-hybrid-joint-response",
+        "rationale": "Only the full P plus H_P component factorial yields 0.125; either registered reference component yields zero, and order reversal remains visible."
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-I09A-CONTROL-RESOLUTION-INDEX"
+        ],
+        "expectedness": "adjacent",
+        "name": "Quantity-matched repeated-source equivalence",
+        "property_id": "p2-i2-i11-repeated-source-equivalence",
+        "rationale": "Repeated-S1 and repeated-S2 each equal the candidate response. This is a preregistered non-gating scope diagnostic and blocks source-diversity, synergy, cooperation, and coordination readings."
+      },
+      {
+        "evidence_refs": [
+          "P2-I2-I10-RECONSTRUCTION-MANIFEST"
+        ],
+        "expectedness": "adjacent",
+        "name": "Native load normalization with exact identity and continuation",
+        "property_id": "p2-i2-i11-native-load-normalization",
+        "rationale": "Raw native snapshots normalize through the admitted closed set while restoration identity, adapter bytes, equal-input continuation, and paired reset remain exact."
+      }
+    ],
+    "extensions": {
+      "x_debt_ledger": [
+        {
+          "category": "native",
+          "debt_id": "p2-i2-debt-native-control-surface",
+          "disposition": "State mode is native on the causal path, but atomic pool-write gates, auditable clamps, and first-class private-role guards remain experiment-composed.",
+          "status": "open"
+        },
+        {
+          "category": "native",
+          "debt_id": "p2-i2-debt-native-active-history",
+          "disposition": "PyGRC lacks a first-class source-label-independent active shared-history carrier with admission, intervention, readout materialization, and restoration/reset.",
+          "status": "open"
+        },
+        {
+          "category": "producer",
+          "debt_id": "p2-i2-debt-producer-assisted-history",
+          "disposition": "History-carried and hybrid depend causally on RCAEActiveHistoryAdapterV2 for H_P/M_H; PyGRC still owns the response.",
+          "status": "open"
+        },
+        {
+          "category": "construction",
+          "debt_id": "p2-i2-debt-explicit-construction",
+          "disposition": "Topology, schedules, roles, contribution operations, and controls are explicitly registered experiment construction.",
+          "status": "open"
+        },
+        {
+          "category": "medium",
+          "debt_id": "p2-i2-debt-medium-economy",
+          "disposition": "Reserve, accumulation, mixing, and explicit depletion are audited only inside the registered fixture and window.",
+          "status": "bounded"
+        },
+        {
+          "category": "leakage",
+          "debt_id": "p2-i2-debt-leakage-window",
+          "disposition": "Leakage, saturation, and maintenance are registered not applicable; no general economy is measured.",
+          "status": "not_applicable_in_window"
+        },
+        {
+          "category": "transfer",
+          "debt_id": "p2-i2-debt-transfer",
+          "disposition": "R05 establishes only alternate-responder access-scope retention, not geometry, timescale, runtime, domain, or cross-lane transfer.",
+          "status": "open"
+        },
+        {
+          "category": "measurement",
+          "debt_id": "p2-i2-debt-measurement-order-conditioning",
+          "disposition": "History and hybrid aggregate margins are mixed_direction because the frozen physical orders intentionally differ; no scalar collapse is allowed.",
+          "status": "retained"
+        },
+        {
+          "category": "composition",
+          "debt_id": "p2-i2-debt-composition-recurrence",
+          "disposition": "No cross-lane recurrence or composition has been tested; three within-lane modes are not three independent lane recurrences.",
+          "status": "open"
+        },
+        {
+          "category": "semantic",
+          "debt_id": "p2-i2-debt-semantic-relabel",
+          "disposition": "Pool, history, and co-conditioning labels remain operational and cannot be relabeled as memory, communication, cooperation, coordination, agency, motif, regime, or life.",
+          "status": "guarded"
+        },
+        {
+          "category": "claim",
+          "debt_id": "p2-i2-debt-claim-ceiling",
+          "disposition": "The strongest valid claim remains exactly: bounded shared-pool co-conditioning demand pattern.",
+          "status": "guarded"
+        }
+      ],
+      "x_metric_relation_configuration_index": [
+        {
+          "mode": "state_carried",
+          "relation": "robust_aligned",
+          "rows": [
+            {
+              "candidate_response": 0.125,
+              "mode": "state_carried",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 101,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "state_carried",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 211,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "state_carried",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 307,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "state_carried",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 101,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "state_carried",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 211,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "state_carried",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 307,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            }
+          ],
+          "threshold_passed": true
+        },
+        {
+          "mode": "history_carried",
+          "relation": "mixed_direction",
+          "rows": [
+            {
+              "candidate_response": 0.125,
+              "mode": "history_carried",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 101,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "history_carried",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 211,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "history_carried",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 307,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.0,
+              "mode": "history_carried",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 0.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 101,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "at_or_below_delta"
+            },
+            {
+              "candidate_response": 0.0,
+              "mode": "history_carried",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 0.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 211,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "at_or_below_delta"
+            },
+            {
+              "candidate_response": 0.0,
+              "mode": "history_carried",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 0.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 307,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "at_or_below_delta"
+            }
+          ],
+          "threshold_passed": false
+        },
+        {
+          "mode": "hybrid",
+          "relation": "mixed_direction",
+          "rows": [
+            {
+              "candidate_response": 0.125,
+              "mode": "hybrid",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 101,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "hybrid",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 211,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.125,
+              "mode": "hybrid",
+              "physical_order_id": "q1_then_q2",
+              "primary_margin": 1.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 307,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "above_delta"
+            },
+            {
+              "candidate_response": 0.0,
+              "mode": "hybrid",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 0.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 101,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "at_or_below_delta"
+            },
+            {
+              "candidate_response": 0.0,
+              "mode": "hybrid",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 0.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 211,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "at_or_below_delta"
+            },
+            {
+              "candidate_response": 0.0,
+              "mode": "hybrid",
+              "physical_order_id": "q2_then_q1",
+              "primary_margin": 0.0,
+              "q1_only_response": 0.0,
+              "q2_only_response": 0.0,
+              "seed": 307,
+              "strongest_leave_one_provenance": "q1-only",
+              "strongest_leave_one_response": 0.0,
+              "threshold_relation": "at_or_below_delta"
+            }
+          ],
+          "threshold_passed": false
+        }
+      ],
+      "x_mode_dispositions": [
+        {
+          "boundary_rungs": {
+            "AE01-L02-R01": "reached",
+            "AE01-L02-R02": "reached",
+            "AE01-L02-R03": "reached",
+            "AE01-L02-R04": "reached",
+            "AE01-L02-R05": "reached"
+          },
+          "causal_support": "passed_mode_specific_registered_relation",
+          "metric_relation": "robust_aligned",
+          "mode": "state_carried",
+          "mode_ranking": null,
+          "producer_boundary": "PyGRC",
+          "realization_class": "pygrc_native_candidate",
+          "restoration_class": "native_v2_plus_declarative_binding",
+          "support_status": "native_expression_candidate",
+          "threshold_passed": true
+        },
+        {
+          "boundary_rungs": {
+            "AE01-L02-R01": "reached",
+            "AE01-L02-R02": "reached",
+            "AE01-L02-R03": "reached",
+            "AE01-L02-R04": "reached",
+            "AE01-L02-R05": "reached"
+          },
+          "causal_support": "passed_mode_specific_registered_relation",
+          "metric_relation": "mixed_direction",
+          "mode": "history_carried",
+          "mode_ranking": null,
+          "producer_boundary": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for response",
+          "realization_class": "minimally_producer_assisted",
+          "restoration_class": "paired_native_v2_adapter_v2_composite",
+          "support_status": "scaffold_dependent",
+          "threshold_passed": false
+        },
+        {
+          "boundary_rungs": {
+            "AE01-L02-R01": "reached",
+            "AE01-L02-R02": "reached",
+            "AE01-L02-R03": "reached",
+            "AE01-L02-R04": "reached",
+            "AE01-L02-R05": "reached"
+          },
+          "causal_support": "passed_mode_specific_registered_relation",
+          "metric_relation": "mixed_direction",
+          "mode": "hybrid",
+          "mode_ranking": null,
+          "producer_boundary": "RCAEActiveHistoryAdapterV2 for H_P/M_H only; PyGRC for joint response",
+          "realization_class": "minimally_producer_assisted",
+          "restoration_class": "paired_native_v2_adapter_v2_joint_composite",
+          "support_status": "scaffold_dependent",
+          "threshold_passed": false
+        }
+      ],
+      "x_observation_class_ledger": {
+        "adjacent": [
+          "quantity-matched repeated-source equivalence",
+          "native load normalization"
+        ],
+        "counter_directional": [],
+        "expected": [
+          "state order invariance",
+          "history order dependence",
+          "hybrid joint component dependence"
+        ],
+        "mixed": [
+          "history_carried aggregate metric relation",
+          "hybrid aggregate metric relation"
+        ],
+        "null": [
+          "all single-source and leave-one responses",
+          "history/hybrid q2-then-q1 candidate response"
+        ],
+        "unexpected": []
+      },
+      "x_observed_relation_is_not_lgrc_demand": true,
+      "x_realization_family_ranked": false
+    },
+    "highest_valid_rung": {
+      "rationale": "All five cumulative L02 boundaries are reached in every retained mode, with lane-wide support limited by the producer-assisted active-history scaffold and access-scope-only transfer contrast.",
+      "reference_id": "AE01-L02-R05",
+      "status": "applicable"
+    },
+    "interpretation_id": "p2-i2-i11-developmental-interpretation",
+    "lane_id": "AE01-L02",
+    "local_optimization_guard": {
+      "advances": [
+        "native_expression"
+      ],
+      "falsifiable": true,
+      "function_not_proxy": true,
+      "one_bounded_change": true,
+      "preserves_prior_result": true,
+      "rationale": "The next move substitutes one identified missing carrier function, preserves this result, and is falsified by failure to retain the registered causal and restoration relations without the adapter.",
+      "same_causal_question": true,
+      "status": "applicable"
+    },
+    "metric_relations": [
+      {
+        "calibration_artifact_ref": "ae01:metric-calibration:bf15f254da8c8de1",
+        "delta": 1e-12,
+        "metric_sheet_ref": "ae01-l02-primary-metric-v1",
+        "rationale": "Both physical orders yield normalized margin 1.0 for seeds 101, 211, and 307, matching the frozen state-carried order-invariance relation.",
+        "relation": "robust_aligned",
+        "resolution_status": "frozen",
+        "seed_margins": [
+          {
+            "margin": 1.0,
+            "seed": 101
+          },
+          {
+            "margin": 1.0,
+            "seed": 211
+          },
+          {
+            "margin": 1.0,
+            "seed": 307
+          },
+          {
+            "margin": 1.0,
+            "seed": 101
+          },
+          {
+            "margin": 1.0,
+            "seed": 211
+          },
+          {
+            "margin": 1.0,
+            "seed": 307
+          }
+        ],
+        "threshold_passed": true
+      },
+      {
+        "calibration_artifact_ref": "ae01:metric-calibration:bf15f254da8c8de1",
+        "delta": 1e-12,
+        "metric_sheet_ref": "ae01-l02-primary-metric-v1",
+        "rationale": "The q1-then-q2 order yields normalized margin 1.0 and q2-then-q1 yields 0.0 for every seed. The aggregate metric relation is mixed_direction, while the order-conditioned causal relation matches the frozen active-history expectation.",
+        "relation": "mixed_direction",
+        "resolution_status": "frozen",
+        "seed_margins": [
+          {
+            "margin": 1.0,
+            "seed": 101
+          },
+          {
+            "margin": 1.0,
+            "seed": 211
+          },
+          {
+            "margin": 1.0,
+            "seed": 307
+          },
+          {
+            "margin": 0.0,
+            "seed": 101
+          },
+          {
+            "margin": 0.0,
+            "seed": 211
+          },
+          {
+            "margin": 0.0,
+            "seed": 307
+          }
+        ],
+        "threshold_passed": false
+      },
+      {
+        "calibration_artifact_ref": "ae01:metric-calibration:bf15f254da8c8de1",
+        "delta": 1e-12,
+        "metric_sheet_ref": "ae01-l02-primary-metric-v1",
+        "rationale": "The q1-then-q2 order yields normalized margin 1.0 and q2-then-q1 yields 0.0 for every seed. The aggregate metric relation is mixed_direction, while the order-conditioned causal relation matches the frozen active-history expectation.",
+        "relation": "mixed_direction",
+        "resolution_status": "frozen",
+        "seed_margins": [
+          {
+            "margin": 1.0,
+            "seed": 101
+          },
+          {
+            "margin": 1.0,
+            "seed": 211
+          },
+          {
+            "margin": 1.0,
+            "seed": 307
+          },
+          {
+            "margin": 0.0,
+            "seed": 101
+          },
+          {
+            "margin": 0.0,
+            "seed": 211
+          },
+          {
+            "margin": 0.0,
+            "seed": 307
+          }
+        ],
+        "threshold_passed": false
+      }
+    ],
+    "next_move": {
+      "disposition": "new_boundary_or_naturalization_probe",
+      "falsifier": "The proposed native replacement is inadequate if, under a new preregistration, it cannot reproduce exact admission/idempotency, source-label exclusion, order and clamp relations, joint-component separation, paired restoration/reset, and the retained controls after the RCAE active-history adapter is withdrawn.",
+      "new_preregistration_required": true,
+      "rationale": "The state-carried causal path is native, while both history-bearing modes expose the same minimal missing native function. A substitution probe advances native expression without rerunning or optimizing P2-I2.",
+      "target_function": "After cross-experiment synthesis, test one graph-native source-label-independent active shared-history carrier that owns bounded admission, intervention/clamp, readout materialization, restoration, and reset, replacing RCAEActiveHistoryAdapterV2 in the retained history and hybrid causal paths."
+    },
+    "source_result_refs": [
+      "P2-I2-C02-EXECUTION-MANIFEST",
+      "P2-I2-I09A-CONTROL-RESOLUTION-INDEX",
+      "P2-I2-I10-RECONSTRUCTION-MANIFEST",
+      "P2-I2-I06-THREE-MODE-REGISTRATION"
+    ],
+    "support_status": "scaffold_dependent"
+  },
+  "record_type": "developmental_interpretation",
+  "schema_version": "1.1.0"
+}

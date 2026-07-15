@@ -1,0 +1,1316 @@
+{
+  "acceptance_results": [
+    {
+      "acceptance_id": "AT-01",
+      "statement": "The hybrid carrier is the bound P plus authoritative H_P/M_H output-port composite and common access relation, not an ad hoc query.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-01",
+        "RV-16"
+      ]
+    },
+    {
+      "acceptance_id": "AT-02",
+      "statement": "H_P remains persistent and authoritative and M_H is a verified output port, so the architecture is not silently reduced to state-only P/M_H.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-02",
+        "RV-04",
+        "RV-19"
+      ]
+    },
+    {
+      "acceptance_id": "AT-03",
+      "statement": "P enters the native joint path independently and is not encoded in R_H.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-03",
+        "RV-12",
+        "RV-13"
+      ]
+    },
+    {
+      "acceptance_id": "AT-04",
+      "statement": "H_P enters independently through R_H/M_H and is unchanged by the P-only intervention.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-04",
+        "RV-14"
+      ]
+    },
+    {
+      "acceptance_id": "AT-05",
+      "statement": "A complete qualitative P-reference/candidate by H-reference/candidate causal structure is frozen.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-05",
+        "RV-15"
+      ]
+    },
+    {
+      "acceptance_id": "AT-06",
+      "statement": "Hybrid meaning does not depend only on the conformance threshold.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-06",
+        "RV-07"
+      ]
+    },
+    {
+      "acceptance_id": "AT-07",
+      "statement": "The neutral contact is common, causally neutral, inadmissible to H_P, latest before feedback, and has no digest authorization role.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-11"
+      ]
+    },
+    {
+      "acceptance_id": "AT-08",
+      "statement": "Materialization, debit, neutral, feedback, response, reset/load, private, and diversion traffic cannot self-admit into H_P.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-08",
+        "RV-09"
+      ]
+    },
+    {
+      "acceptance_id": "AT-09",
+      "statement": "Token type and admission keys do not encode arbitrary contributor identity.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-10"
+      ]
+    },
+    {
+      "acceptance_id": "AT-10",
+      "statement": "The private competitor has no hidden common read or cross-pairing.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-17"
+      ]
+    },
+    {
+      "acceptance_id": "AT-11",
+      "statement": "The adapter never computes P plus M_H, threshold, success, or later scheduling.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-03",
+        "RV-04",
+        "RV-15"
+      ]
+    },
+    {
+      "acceptance_id": "AT-12",
+      "statement": "Layered identity binds both components, joint/private masks, neutral-contact policy, adapter current/reset state, code/configuration, fixture/freeze, and paired native reset baseline.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-16",
+        "RV-18",
+        "RV-20"
+      ]
+    },
+    {
+      "acceptance_id": "AT-13",
+      "statement": "H_P-to-M_H consistency is verified before response and continuation and disagreement fails closed.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-04",
+        "RV-19"
+      ]
+    },
+    {
+      "acceptance_id": "AT-14",
+      "statement": "Capacity and lifecycle obligations have explicit dispositions.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-21"
+      ]
+    },
+    {
+      "acceptance_id": "AT-15",
+      "statement": "All conformance values and outcomes are machine-registered for later rejection and remain quarantined.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-23",
+        "RV-24"
+      ]
+    },
+    {
+      "acceptance_id": "AT-16",
+      "statement": "I03A and I03B remain unchanged, separately retained, and unranked.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-25"
+      ]
+    },
+    {
+      "acceptance_id": "AT-17",
+      "statement": "Owner acceptance may open only a separately declared umbrella I03 family closeout; I04 remains closed until that closeout passes.",
+      "status": "passed",
+      "supporting_review_checks": [
+        "RV-26"
+      ]
+    }
+  ],
+  "acceptance_summary": {
+    "failed": 0,
+    "passed": 17,
+    "total": 17
+  },
+  "artifact_id": "P2-I2-I03CR1-CLOSEOUT-REVALIDATION",
+  "artifact_version": "1.0.0",
+  "claim_boundary": {
+    "I04_authorized": false,
+    "R01_through_R05_assigned": false,
+    "discriminator_gate_passed": false,
+    "i03c_closeout_acceptance_ready": true,
+    "mode_ranking_assigned": false,
+    "owner_acceptance_assigned": false,
+    "scientific_evidence_assigned": false,
+    "umbrella_family_closeout_authorized": false
+  },
+  "closeout_gate": "P2-I2-I03CR1-CLOSEOUT-PASSED",
+  "disposition": "I03C causally well formed as a bounded minimally producer-assisted hybrid implementation-conformance package; owner acceptance may open only a separately declared umbrella I03 family closeout, with eight fail-closed downstream obligations retained",
+  "downstream_obligation_count": 8,
+  "downstream_obligations": [
+    {
+      "duty": "operationalize/register the complete qualitative 2x2 with exact held-fixed rules and no inherited conformance values",
+      "fail_closed_effect": "I04/I06 gate cannot pass",
+      "obligation_id": "I03CR1-OBL-01",
+      "owner_iteration": "I04/I06"
+    },
+    {
+      "duty": "retain unique physical source-to-P routes or explicit non-label/non-digest route/channel admission key and bound token type identity",
+      "fail_closed_effect": "registration stops as missing prerequisite",
+      "obligation_id": "I03CR1-OBL-02",
+      "owner_iteration": "I06"
+    },
+    {
+      "duty": "register neutral-contact matching across all scientifically relevant timing/support/opportunity fields or explicit stratification",
+      "fail_closed_effect": "affected controls cannot register",
+      "obligation_id": "I03CR1-OBL-03",
+      "owner_iteration": "I06"
+    },
+    {
+      "duty": "expose only one manifest-validating paired load/reset continuation interface; add failure checks for partial/mismatched load, cross-pairing, one-sided/repeated reset, stale M_H, and wrong baseline/mask",
+      "fail_closed_effect": "registration/continuation rejected",
+      "obligation_id": "I03CR1-OBL-04",
+      "owner_iteration": "I06"
+    },
+    {
+      "duty": "bound history/event counts, overflow, P capacity, M_H/readout bounds, and native reservoir adequacy while retaining or separately reviewing lifecycle classes",
+      "fail_closed_effect": "registration stops or retains construction debt without execution",
+      "obligation_id": "I03CR1-OBL-05",
+      "owner_iteration": "I06"
+    },
+    {
+      "duty": "implement machine rejection from every registry source/scope, exact value, branch/topology identity, observation, comparator, outcome, and digest including trivial serialization reuse",
+      "fail_closed_effect": "I04/I06 gate cannot pass",
+      "obligation_id": "I03CR1-OBL-06",
+      "owner_iteration": "I04/I06"
+    },
+    {
+      "duty": "bind exact common/private role identity and reject P/H_P/M_H or adapter-baseline cross-load before continuation",
+      "fail_closed_effect": "private/common registration rejected",
+      "obligation_id": "I03CR1-OBL-07",
+      "owner_iteration": "I06"
+    },
+    {
+      "duty": "verify all three accepted profiles, OP mappings, restoration ownership, quarantine, no ranking, mode-indexed I04, and semantic-equivalence requirements before passing only the discriminator gate",
+      "fail_closed_effect": "I04 remains unauthorized",
+      "obligation_id": "I03CR1-OBL-08",
+      "owner_iteration": "I03-family-closeout"
+    }
+  ],
+  "graph_after": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_porcelain": ""
+  },
+  "graph_before": {
+    "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "status_porcelain": ""
+  },
+  "important_qualifications": {
+    "complete_qualitative_2x2_now_frozen": true,
+    "complete_scientific_2x2_executed_in_i03c": false,
+    "failure_injection_deferred_to_i06": true,
+    "neutral_absolute_indices_are_score_or_threshold_inputs": false,
+    "neutral_absolute_scheduler_indices_matched": false,
+    "restoration_identity_is_layered_package_identity": true,
+    "single_new_native_atomic_restoration_api_claimed": false
+  },
+  "input_identity": {
+    "immutable_i03c_input_count": 13,
+    "immutable_i03c_inputs": [
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-freeze-input.json",
+        "sha256": "1d69dedf481aba2ad996388d35e03e65e7a7e5cc39276feaf8d92b730208c353"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json",
+        "sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-validation.json",
+        "sha256": "c3bc1ef93383a499601edee25f3a11c670bd2cf963d8171c681fcab387c372a7"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-environment-receipt.json",
+        "sha256": "2375d0167bc3ab4c3ff175b0083a2df4f97099b5bdcde6e17b0efe86b20849ff"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json",
+        "sha256": "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+        "sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-runtime-reconstruction-receipt.json",
+        "sha256": "a81a119d9f5efbf50e543efbbe5b7c85b013f8b9c36015fdf4050f1069936516"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_validate.py",
+        "sha256": "df31dbe76fc53146d6b165a8d76ceee4c0363ec5a01c98e713936252ca1a94bb"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03c_conform.py",
+        "sha256": "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_conform.py",
+        "sha256": "f511f96c314d7f40362043f094ba41036a3355ef24cb6a68db07a4dd143bfaec"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i03b_history_adapter.py",
+        "sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03C-hybrid-realization-and-operational-hypothesis-freeze.md",
+        "sha256": "bb271df41f196cf4d19bb7767c99f4a79a2fbe354d56818d52dfd318fbf6e2df"
+      },
+      {
+        "match": true,
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json",
+        "sha256": "457703fb563accd8c69b8a4fc5e35071afbd71f3dd649ef03f56ab6a27d6ebe4"
+      }
+    ],
+    "input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-closeout-revalidation-input.json",
+    "input_freeze_sha256": "81e8b72be0df84cc757e2ff2d1b0dc398daabef4a8422de3b525897d19ff1dba",
+    "owner_review_sha256": "df1e823f2ff640713638b2b08266de45b99c5410bdd880f4380e75016e7a0298",
+    "registry_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json",
+    "registry_sha256": "87232487b0937345f9f79db1b3618674ad683737672332f09ea9e3beefcee463"
+  },
+  "iteration_id": "P2-I2-I03CR1",
+  "lane_id": "AE01-L02",
+  "review_results": [
+    {
+      "check_id": "RV-01",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "bounded_architectural_claim": "The native response mechanism reads two current node values, while the hybrid ecological architecture additionally contains an independently persistent, intervenable, save/load/reset H_P whose verified output is M_H.",
+        "carrier_id_class": "one_bound_common_composite_carrier",
+        "components": {
+          "H_P": "persistent source-label-free ordered active history; independently intervenable; authoritative for history state",
+          "L": "native packet/event/contact/lineage attribution and audit; admission/idempotency input only where declared; never a response input",
+          "M_H": "native coherence output port/cache materialized from R_H(H_P); never authoritative over H_P and never the complete pool",
+          "P": "native accumulated common current state; independently intervenable; read exactly once by V",
+          "V": "one native live-state feedback and producer path reading P and M_H jointly against B_ref"
+        },
+        "identity": "native P current-state component + authoritative active H_P + declared native M_H output-port binding + one common [P,M_H]/[B_ref] access relation to native V",
+        "one_pool_binding_rule": "P, H_P, M_H, masks, admission profile, neutral-contact policy, and responder role are bound by one fixture/registration identity; cross-pool P/H_P pairing is invalid.",
+        "prohibited_claims": [
+          "irreducible raw-history necessity",
+          "non-Markovianity",
+          "nonlinear interaction",
+          "synergy",
+          "superadditivity",
+          "source complementarity",
+          "emergent integration",
+          "irreducibility of the additive sum",
+          "hybrid superiority"
+        ],
+        "prohibited_substitutes": [
+          "P alone",
+          "H_P alone",
+          "M_H alone",
+          "the [P,M_H] node mask alone",
+          "RCAEActiveHistoryAdapterV1",
+          "a native feedback row",
+          "latest-contact identity",
+          "a controller-computed P plus R_H scalar"
+        ]
+      },
+      "finding": "One stable bound P + authoritative H_P/M_H + common-access carrier is explicit; all single-component/query/controller substitutes are rejected.",
+      "name": "exact_hybrid_composite_carrier_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-02",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "adapter_chain": [
+          "replace/reorder/clamp H_P",
+          "recompute R_H from current H_P",
+          "request public native balancing packet",
+          "native step changes M_H",
+          "verify M_H equals R_H",
+          "common neutral contact",
+          "native V"
+        ],
+        "authority": "H_P",
+        "claim_limit": "The verified output-port relation supports hybrid architecture, not irreducible history dependence.",
+        "disagreement_effect": "fail closed before feedback/continuation; rematerialize from H_P or reject the branch; never treat stale M_H as authoritative",
+        "output_port": "M_H",
+        "readout": "R_H(H_P) = ordered source-label-invariant fold",
+        "required_invariant": "M_H equals registered_materialization(R_H(H_P)) under the conformance or later registered comparator before V",
+        "verified_boundaries": [
+          "every standard branch before feedback",
+          "history-only clamp after rematerialization",
+          "both order branches",
+          "pre-save",
+          "post-load by complete composite equality",
+          "post-reset at empty H_P/M_H baseline",
+          "equal-input post-reset continuation"
+        ]
+      },
+      "finding": "Native V reads current P/M_H, but persistent independently intervenable/restorable H_P remains authoritative and M_H is a verified output port; claim is architectural and not irreducible-history.",
+      "name": "not_merely_two_node_state_carried",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-03",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "P_only": {
+          "M_H": 0.4205,
+          "P": 0.31999999999999995,
+          "score": 0.7404999999999999
+        },
+        "canonical": {
+          "M_H": 0.4205,
+          "P": 0.48,
+          "score": 0.9005
+        }
+      },
+      "finding": "P is in the exact native mask once; adapter R_H never reads P; same H_P/M_H with changed P changes the raw native score.",
+      "name": "P_independent_nonredundant_native_input",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-04",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "H_only": {
+          "M_H": 0.0,
+          "P": 0.48,
+          "tokens": []
+        },
+        "canonical": {
+          "M_H": 0.4205,
+          "P": 0.48,
+          "tokens": [
+            {
+              "contact_amount": 0.17,
+              "inter_arrival_interval": 0.0,
+              "operation_kind": "native_arrival_contact_amount",
+              "sequence_index": 0
+            },
+            {
+              "contact_amount": 0.31,
+              "inter_arrival_interval": 2.0,
+              "operation_kind": "native_arrival_contact_amount",
+              "sequence_index": 1
+            }
+          ]
+        }
+      },
+      "finding": "H-only clamp changes authoritative H_P, recomputes/materializes M_H through native packets, preserves P, and then changes the same native score.",
+      "name": "H_P_authoritative_nonredundant_chain",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-05",
+      "classification": "closure_clarification",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-01"
+      ],
+      "evidence": {
+        "cells": [
+          {
+            "cell_id": "P_reference__H_reference",
+            "i03c_conformance_witness": "reference",
+            "meaning": "full component reference",
+            "required_components": [
+              "P reference",
+              "H_P/R_H/M_H reference"
+            ]
+          },
+          {
+            "cell_id": "P_candidate__H_reference",
+            "i03c_conformance_witness": "history_only_clamp demonstrates feasibility but is not a scientific cell",
+            "meaning": "state-only component",
+            "required_components": [
+              "P candidate",
+              "H_P/R_H/M_H reference"
+            ]
+          },
+          {
+            "cell_id": "P_reference__H_candidate",
+            "i03c_conformance_witness": "not executed as a full-reference runtime cell; state_only_debit demonstrates P-only intervention purity but remains nonzero P",
+            "meaning": "history-only component",
+            "required_components": [
+              "P reference",
+              "H_P/R_H/M_H candidate"
+            ]
+          },
+          {
+            "cell_id": "P_candidate__H_candidate",
+            "i03c_conformance_witness": "combined_q1_q2",
+            "meaning": "joint hybrid condition",
+            "required_components": [
+              "P candidate",
+              "H_P/R_H/M_H candidate"
+            ]
+          }
+        ],
+        "i03c_runtime_scope": "independent perturbation feasibility and same-V conformance only; not a complete scientific 2x2 execution",
+        "i04_i06_rule": "I04 must operationalize and I06 must register all four qualitative cells with exact held-fixed rules; neither iteration may invent, delete, or infer a scientific relation from I03C fixture threshold outcomes.",
+        "same_V_required": true,
+        "scientific_values_selected": false,
+        "status": "frozen_closure_clarification_before_science"
+      },
+      "finding": "The full qualitative 2x2 is now frozen before science. I03C demonstrated perturbation feasibility, not a complete scientific 2x2; the P-reference/H-candidate cell remains an exact I04/I06 duty.",
+      "name": "complete_qualitative_two_component_factorial",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-06",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "family": "J(P,H_P) = P + R_H(H_P) through native live-state mask [P,M_H]",
+        "interaction_diagnostic_status": "optional later secondary diagnostic only; cannot be a requirement or replace the primary registered response",
+        "nonlinearity_required": false,
+        "raw_fields_required_for_later_retention": [
+          "P",
+          "H_P identity",
+          "R_H",
+          "M_H",
+          "native front_mass/joint score",
+          "feedback polarity/eligibility",
+          "producer scheduled/reason code",
+          "later native continuation response"
+        ],
+        "required_meaning": "both separately causal components contribute through the same native V",
+        "threshold_rule": "binary fixture threshold crossing is conformance scaffolding only and cannot define hybrid or become the primary scientific metric by inheritance"
+      },
+      "finding": "Raw P, H_P/R_H/M_H, native score, producer decision, and continuation remain distinct; fixture threshold crossing cannot define hybrid or be inherited scientifically.",
+      "name": "hybrid_not_defined_by_threshold_crossing",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-07",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": [
+        "irreducible raw-history necessity",
+        "non-Markovianity",
+        "nonlinear interaction",
+        "synergy",
+        "superadditivity",
+        "source complementarity",
+        "emergent integration",
+        "irreducibility of the additive sum",
+        "hybrid superiority"
+      ],
+      "finding": "I03C requires two causal components in one V, not nonlinearity, interaction, synergy, superadditivity, or irreducibility.",
+      "name": "nonlinearity_interaction_and_synergy_not_required",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-08",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": [
+        {
+          "excluded_by": "target is not P and source is not a registered S node",
+          "source_target": "R_H_plus->M_H or M_H->K_H",
+          "traffic": "M_H materialization"
+        },
+        {
+          "excluded_by": "target is not P and source is not registered",
+          "source_target": "E_source->E_target",
+          "traffic": "common neutral contact"
+        },
+        {
+          "excluded_by": "target is not P and source is not registered",
+          "source_target": "P->K_P",
+          "traffic": "P-only debit"
+        },
+        {
+          "excluded_by": "target is not P and source is not registered",
+          "source_target": "A->B or A_alt->B_alt",
+          "traffic": "native response"
+        },
+        {
+          "excluded_by": "surface kind is not route_local_pulse_contact",
+          "source_target": "derived passive row",
+          "traffic": "feedback eligibility row"
+        },
+        {
+          "excluded_by": "no admissible packet-arrival row",
+          "source_target": "restoration operation without packet arrival",
+          "traffic": "reset/load"
+        },
+        {
+          "excluded_by": "common adapter target is P; private adapters have distinct target/configuration",
+          "source_target": "S1->P1, S2->P2, private M_H paths",
+          "traffic": "private contribution/materialization"
+        },
+        {
+          "excluded_by": "target is not P",
+          "source_target": "S1/S2->K_P",
+          "traffic": "write diversion"
+        }
+      ],
+      "finding": "Exact filter conjunction excludes materialization, neutral, debit, response, feedback, reset/load, private, and diversion traffic; unseen suffix plus digest set provides exactly-once admission.",
+      "name": "adapter_self_admission_and_recursive_growth_excluded",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-09",
+      "classification": "downstream_obligation",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-02"
+      ],
+      "evidence": {
+        "fixture": "adequate: common S1->P and S2->P are exact unique fixture edges; no unrelated traffic from registered S nodes targets common P",
+        "later": "retain unique registered source-to-P routes or add one explicit physical role/channel key; arbitrary labels and packet/event/row digests cannot authorize causal admission"
+      },
+      "finding": "Fixture common S-to-P paths are unique and role-physical; exact scientific route/channel identity remains an I06 registration duty and cannot use labels/digests.",
+      "name": "unique_physical_admission_route_or_explicit_key",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-10",
+      "classification": "downstream_obligation",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-02"
+      ],
+      "evidence": {
+        "token_fields": [
+          "contact_amount",
+          "inter_arrival_interval",
+          "operation_kind",
+          "sequence_index"
+        ],
+        "typed_amount_guard": "I06 may use a physical operation type only when independently causally justified; a contributor-unique immutable type or amount may not serve as a disguised arbitrary source label."
+      },
+      "finding": "Tokens contain only sequence, physical amount/type, and interval. I06 must reject contributor-unique types/amounts used solely as disguised identity.",
+      "name": "token_schema_excludes_disguised_source_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-11",
+      "classification": "downstream_obligation",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-03"
+      ],
+      "evidence": {
+        "configuration": {
+          "amount": 0.013,
+          "edge_role": "E_source_to_E_target",
+          "expected_source_surface_digest": null,
+          "route": "E_source->E_target",
+          "type": "native packet arrival contact"
+        },
+        "qualification": "branches with explicit debit or rematerialization reserve extra native slots, so absolute event/scheduler indices are not identical; admitted source proves they do not enter front_mass, polarity score, expected polarity, or threshold comparison, and every queue is empty before feedback",
+        "response_slots": {
+          "combined_q1_q2": {
+            "arrival_event_time_key": 10.0,
+            "departure_event_time_key": 9.0,
+            "packet_index": 4,
+            "scheduler_event_index": 9
+          },
+          "history_only_clamp": {
+            "arrival_event_time_key": 12.0,
+            "departure_event_time_key": 11.0,
+            "packet_index": 5,
+            "scheduler_event_index": 11
+          },
+          "state_only_debit": {
+            "arrival_event_time_key": 12.0,
+            "departure_event_time_key": 11.0,
+            "packet_index": 5,
+            "scheduler_event_index": 11
+          }
+        }
+      },
+      "finding": "Every response branch uses the same neutral route/type/amount in final relative position, excluded from H_P, with empty queue and null digest authorization. Absolute audit slots differ after explicit operations but do not enter live-state score/polarity/threshold; I06 must match any scientifically causal timing fields.",
+      "name": "common_neutral_contact_fully_qualified",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-12",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "aliases_forbidden": true,
+        "common_front": [
+          "P",
+          "M_H"
+        ],
+        "common_rear": [
+          "B_ref"
+        ],
+        "distinct_nodes_required": true,
+        "exact_once": true,
+        "extra_nodes_forbidden": true,
+        "mask_order": "semantic set/order registry is fixed; native addition is not a selector and a permutation may not add/remove/duplicate a node",
+        "native_dataflow": "front_mass is the sum of live coherence for each declared front node; rear_mass is the corresponding live rear sum; no cached aggregate or lineage value enters",
+        "private_common_cross_mask_forbidden": true,
+        "private_masks": [
+          [
+            "P1",
+            "M_H1"
+          ],
+          [
+            "P2",
+            "M_H2"
+          ]
+        ]
+      },
+      "finding": "P and M_H are distinct live nodes read exactly once, B_ref is the only rear node, no cached aggregate enters, and private reads use only their own pairs.",
+      "name": "exact_distinct_multi_node_mask_and_live_read",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-13",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "admission_exclusion": "P->K_P debit cannot satisfy source-in-registered-S and target-P predicate",
+        "allowed_differences": [
+          "P coherence",
+          "K_P coherence",
+          "native debit audit",
+          "absolute scheduler/audit identity"
+        ],
+        "chain": "common contributions -> H_P admission -> M_H materialization -> native P->K_P debit -> common neutral contact -> same native V",
+        "evidence_relation": "same H_P/M_H; different P; different native front_mass/joint score; no response under fixture threshold",
+        "held_fixed": [
+          "H_P tokens",
+          "R_H",
+          "M_H",
+          "adapter cursor/idempotency/current identity before response",
+          "original contribution audit",
+          "B_ref",
+          "response configuration",
+          "neutral-contact configuration",
+          "joint masks"
+        ]
+      },
+      "finding": "Native P debit preserves H_P/R_H/M_H, adapter identity, contribution audit, B_ref/config/masks, and follows with the common neutral contact; score changes through P.",
+      "name": "P_only_intervention_purity",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-14",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "allowed_differences": [
+          "H_P/R_H/M_H",
+          "native balancing audit",
+          "explicit external intervention provenance",
+          "absolute scheduler/audit identity"
+        ],
+        "chain": "identical common contributions -> replace H_P -> recompute R_H -> native rematerialize M_H -> common neutral contact -> same native V",
+        "direct_scalar_clamp_forbidden": true,
+        "evidence_relation": "same P; different H_P/M_H; different native front_mass/joint score; no response under fixture threshold",
+        "held_fixed": [
+          "P",
+          "original native contribution rows",
+          "B_ref",
+          "response configuration",
+          "neutral-contact configuration",
+          "joint masks"
+        ]
+      },
+      "finding": "Explicit H_P replacement/rematerialization preserves P and native contributions; adapter cannot scalar-clamp M_H or alter response configuration.",
+      "name": "H_only_intervention_purity",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-15",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "V": "identical [P,M_H]/[B_ref] native feedback/producer path",
+        "construction": "same native P contribution path plus same adapter H_P admission/materialization path used by component interventions; no special joint calculator",
+        "evidence_scope": "fixture shows both perturbations affect the same raw native score and binary response; it does not establish interaction or scientific necessity"
+      },
+      "finding": "Joint and component-intervention branches share the same contribution/adapter construction and exact native V; only named component state differs.",
+      "name": "joint_branch_uses_same_component_constructions_and_V",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-16",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "history": "H_P_hybrid",
+        "mask": [
+          "P",
+          "M_H"
+        ],
+        "output": "M_H",
+        "responder_class": "registered eligible A-role",
+        "state": "P",
+        "writers": [
+          "S1",
+          "S2"
+        ]
+      },
+      "finding": "Both writers constitute one bound P/H_P/M_H surface and alternate responders use the same common mask without contributor address.",
+      "name": "one_common_composite_pool_binding",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-17",
+      "classification": "downstream_obligation",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-04",
+        "I03CR1-OBL-07"
+      ],
+      "evidence": {
+        "guards": [
+          "separate native nodes",
+          "separate adapter instances/configurations/cursors/baselines",
+          "no shared front mask",
+          "no reducer or dispatcher combines/selects private scores",
+          "no analysis result returns to runtime",
+          "B_ref is a fixed comparator and not an aggregation surface"
+        ],
+        "private": [
+          {
+            "history": "H1_private_hybrid",
+            "mask": [
+              "P1",
+              "M_H1"
+            ],
+            "output": "M_H1",
+            "state": "P1",
+            "writer": "S1"
+          },
+          {
+            "history": "H2_private_hybrid",
+            "mask": [
+              "P2",
+              "M_H2"
+            ],
+            "output": "M_H2",
+            "state": "P2",
+            "writer": "S2"
+          }
+        ]
+      },
+      "finding": "Private nodes, adapters, histories, masks, and responses are isolated with no aggregate/dispatcher. Exact manifest cross-load failure injection remains I06.",
+      "name": "private_competitor_isolated_and_no_cross_pair",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-18",
+      "classification": "closure_clarification",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-04",
+        "I03CR1-OBL-07"
+      ],
+      "evidence": {
+        "demonstrated": [
+          "paired native/adapter snapshot save and internal artifact validation",
+          "loaded composite equals pre-save composite",
+          "paired native/adapter reset equals initial composite",
+          "equal-input continuation matches",
+          "byte-identical full reconstruction"
+        ],
+        "exact_package_hashes": {
+          "adapter_sha256": "b1040726aaa524538911c6022f16a820091ac6a5c6ec006860d2b321faab2d2c",
+          "harness_sha256": "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191",
+          "reconstruction_receipt_sha256": "a81a119d9f5efbf50e543efbbe5b7c85b013f8b9c36015fdf4050f1069936516",
+          "runtime_evidence_sha256": "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
+          "runtime_freeze_sha256": "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d"
+        },
+        "fail_closed_rules": [
+          "wrong P/H_P/M_H role or mask binding rejects identity",
+          "wrong adapter/native reset baseline rejects identity",
+          "stale M_H versus H_P rejects continuation",
+          "one-sided load/reset is not a governed continuation",
+          "different neutral/admission/fixture freeze rejects package identity",
+          "manifest mismatch rejects continuation"
+        ],
+        "identity_kind": "package-layered composite identity; not a claim of one new native atomic API",
+        "layers": [
+          "native restoration identity v2 including native current state and persisted reset baseline",
+          "adapter restoration identity including H_P tokens, cursor/idempotency, configuration/readout rule, last materialization/intervention, and reset baseline",
+          "joint experiment binding including P/H_P/M_H roles, common/private masks, one-sided-reset and implicit-rebase prohibitions",
+          "runtime freeze identity binding adapter/harness/source/environment hashes, token/admission profile, neutral contact, interventions, fixture topology, comparator, and run policy",
+          "paired save manifest binding native and adapter snapshot hashes plus pre-save composite identity",
+          "runtime evidence and reconstruction receipt binding freeze, evidence, reconstruction, invocation accounting, restoration witnesses, and graph guards"
+        ],
+        "not_demonstrated_and_deferred": [
+          "one public atomic transaction API",
+          "failure-injection for missing/partial/mismatched snapshot manifest",
+          "private H1/P2 cross-load rejection",
+          "repeated-reset token-duplication matrix"
+        ],
+        "restoration_witnesses": {
+          "equal_post_reset_continuation_composite": "1401f981ea967542f752aab6f302bb96afa5b2487ff6cfd19864ca0b8d47d2f6",
+          "paired_reset_initial_composite": "6e673a89a73e40babe588c63c96eee8fccaa7e24c698e0ea187b0fcc786bed99",
+          "pre_save_loaded_composite": "c1ff77baa3a6b9ec5ab917f431546a5923a024325a80e7cfa8090c893c6e5f8a"
+        }
+      },
+      "finding": "Completeness is explicitly layered across native v2, adapter current/reset, joint binding, runtime freeze, paired manifest, evidence, and reconstruction\u2014not claimed as one native atomic API.",
+      "name": "complete_layered_hybrid_identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-19",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "adapter_chain": [
+          "replace/reorder/clamp H_P",
+          "recompute R_H from current H_P",
+          "request public native balancing packet",
+          "native step changes M_H",
+          "verify M_H equals R_H",
+          "common neutral contact",
+          "native V"
+        ],
+        "authority": "H_P",
+        "claim_limit": "The verified output-port relation supports hybrid architecture, not irreducible history dependence.",
+        "disagreement_effect": "fail closed before feedback/continuation; rematerialize from H_P or reject the branch; never treat stale M_H as authoritative",
+        "output_port": "M_H",
+        "readout": "R_H(H_P) = ordered source-label-invariant fold",
+        "required_invariant": "M_H equals registered_materialization(R_H(H_P)) under the conformance or later registered comparator before V",
+        "verified_boundaries": [
+          "every standard branch before feedback",
+          "history-only clamp after rematerialization",
+          "both order branches",
+          "pre-save",
+          "post-load by complete composite equality",
+          "post-reset at empty H_P/M_H baseline",
+          "equal-input post-reset continuation"
+        ]
+      },
+      "finding": "Adapter fails closed unless native M_H equals R_H(H_P); branch, clamp/order, load/reset, and continuation identities retain the relation.",
+      "name": "H_P_to_M_H_coherence_invariant",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-20",
+      "classification": "downstream_obligation",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-04"
+      ],
+      "evidence": {
+        "deferred": [
+          "one public atomic transaction API",
+          "failure-injection for missing/partial/mismatched snapshot manifest",
+          "private H1/P2 cross-load rejection",
+          "repeated-reset token-duplication matrix"
+        ],
+        "demonstrated": [
+          "paired native/adapter snapshot save and internal artifact validation",
+          "loaded composite equals pre-save composite",
+          "paired native/adapter reset equals initial composite",
+          "equal-input continuation matches",
+          "byte-identical full reconstruction"
+        ]
+      },
+      "finding": "Paired save/load/reset and equal-input continuation passed. One atomic public interface plus partial/mismatch/cross-load/repeated-reset failure injection remains I06.",
+      "name": "paired_save_load_reset_atomic_boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-21",
+      "classification": "closure_clarification",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-05"
+      ],
+      "evidence": [
+        {
+          "i06": "register exact scientific branch/event maximum or explicit capacity",
+          "property": "maximum H_P length",
+          "rationale": "at most two common contribution tokens per I03C conformance branch",
+          "status": "fixture_bounded"
+        },
+        {
+          "i06": "fail closed or register explicit capacity policy",
+          "property": "overflow behavior",
+          "rationale": "no overflow occurs in bounded conformance",
+          "status": "deferred_I06"
+        },
+        {
+          "i06": "retain or separately review a window",
+          "property": "token retention window",
+          "rationale": "run-bounded append-only H_P",
+          "status": "not_selected"
+        },
+        {
+          "i06": "retain or separately review",
+          "property": "truncation",
+          "rationale": "no automatic token deletion",
+          "status": "not_selected"
+        },
+        {
+          "i06": "define if scientific capacity requires it",
+          "property": "saturation",
+          "rationale": "no saturation mechanism selected",
+          "status": "not_applicable_to_conformance"
+        },
+        {
+          "i06": "do not reinterpret lambda as decay",
+          "property": "leakage/decay",
+          "rationale": "lambda weights order; it is not wall-time leakage",
+          "status": "not_applicable"
+        },
+        {
+          "property": "replacement/clamp",
+          "rationale": "explicit whole-history replacement with provenance; no audit rewrite",
+          "status": "implemented"
+        },
+        {
+          "property": "reset",
+          "rationale": "adapter returns to persisted empty baseline only in registered paired reset",
+          "status": "implemented_bounded"
+        },
+        {
+          "i06": "construction debt if later ecological economy claim requires cost",
+          "property": "maintenance cost",
+          "rationale": "no autonomous maintenance process selected",
+          "status": "not_applicable_to_conformance"
+        },
+        {
+          "property": "P capacity/bounds",
+          "rationale": "native packet conservation applies but no scientific capacity ceiling selected",
+          "status": "deferred_I06"
+        },
+        {
+          "i06": "register scientific bounds/reserve adequacy",
+          "property": "M_H bounds",
+          "rationale": "bounded by fixture tokens/readout and native reservoir in conformance",
+          "status": "fixture_bounded"
+        }
+      ],
+      "finding": "All requested lifecycle/economy properties now have explicit implemented, fixture-bounded, deferred, not-selected, or not-applicable dispositions and rationale.",
+      "name": "bounded_history_and_pool_lifecycle_semantics",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-22",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": [
+        {
+          "meaning": "S1/S2 jointly constitute one bound P/H_P/M_H common pool and one common access identity",
+          "op_id": "H-L02-OP-01"
+        },
+        {
+          "meaning": "both P and H_P-derived M_H contribute to the same native V; exact scientific response remains I04",
+          "op_id": "H-L02-OP-02"
+        },
+        {
+          "meaning": "arbitrary attribution labels leave P, H_P, M_H, masks, score, and response invariant",
+          "op_id": "H-L02-OP-03"
+        },
+        {
+          "meaning": "separate P-only, H-only, and joint component meanings affect the same V while held-fixed variables remain explicit",
+          "op_id": "H-L02-OP-04"
+        },
+        {
+          "meaning": "state-only and history-only explanations remain insufficient-repetition alternatives; exact comparator remains I04",
+          "op_id": "H-L02-OP-05"
+        },
+        {
+          "meaning": "private P1/H1 and P2/H2 pairs cannot be combined into a legitimate common read",
+          "op_id": "H-L02-OP-06"
+        },
+        {
+          "meaning": "an RCAE/controller P+R_H calculation or direct-address output is causally insufficient even if numerically matched",
+          "op_id": "H-L02-OP-07"
+        },
+        {
+          "meaning": "order reversal holds P fixed while H_P/M_H and joint response may differ; independent P intervention remains required",
+          "op_id": "H-L02-OP-08"
+        },
+        {
+          "meaning": "alternate eligible responder retains the same common P/M_H/B_ref access axis; R05 remains unresolved",
+          "op_id": "H-L02-OP-09"
+        }
+      ],
+      "finding": "OP-01..OP-09 each retain hybrid-specific composite, intervention, exclusion, order, and access meanings without assigning R01-R05.",
+      "name": "all_nine_OPs_have_hybrid_specific_semantics",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-23",
+      "classification": "closure_clarification",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-06"
+      ],
+      "evidence": {
+        "assertion_outcome_rule": "258/258 and every individual passed assertion are implementation-conformance provenance only and cannot be treated as a scientific control result or robustness estimate",
+        "i03c_comparator": {
+          "absolute_tolerance": 1e-12,
+          "method": "math.isclose",
+          "relative_tolerance": 0.0
+        },
+        "i03c_exact_branch_ids": [
+          "reference",
+          "q1_only",
+          "q2_only",
+          "combined_q1_q2",
+          "combined_q2_q1",
+          "lineage_permuted",
+          "write_diversion",
+          "history_only_clamp",
+          "state_only_debit",
+          "private_partition",
+          "alternate_responder",
+          "restoration_continuation"
+        ],
+        "i03c_exact_numeric_inputs_and_observations": [
+          0.013,
+          0.073,
+          0.16,
+          0.17,
+          0.31,
+          0.32,
+          0.34,
+          0.3715,
+          0.4205,
+          0.48,
+          0.62,
+          0.65,
+          0.7405,
+          0.8515,
+          0.88,
+          0.9005
+        ],
+        "i03c_hashes": [
+          "e19be7110597252517f3531a1eddb82dc2e5fdf9a16fcb1c07ec1b9921ed6f5d",
+          "217c8972e8e1199409343fb72b0eca12b2ba24dceb6a1f213c97af9143f0e96c",
+          "a81a119d9f5efbf50e543efbbe5b7c85b013f8b9c36015fdf4050f1069936516",
+          "fa4523fcb50d16f6774edfe572b85f3421f21b16d5bb5b8b05cf1a6d1fb1e191"
+        ],
+        "i03c_topology_identity": {
+          "edge_ids": "0..15",
+          "fixture_id": "p2-i2-i03c-hybrid-native-state-active-history-conformance-v1",
+          "node_ids": "0..21",
+          "role_and_edge_registry": "entire fixture.nodes and fixture.edges arrays"
+        },
+        "later_validator_action": "I04 and I06 validators must recursively reject direct or trivially serialized reuse from every source artifact/pointer below; structural adapter code and pre-runtime causal fold family are the only reusable elements.",
+        "source_artifacts": [
+          {
+            "mode": "state_carried",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1r1-state-carried-runtime-conformance-input-freeze.json",
+            "reject_scopes": [
+              "fixture",
+              "assertions",
+              "run_policy implementation comparator",
+              "outputs and evidence identities"
+            ]
+          },
+          {
+            "mode": "state_carried",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03ar1-state-carried-runtime-conformance.json",
+            "reject_scopes": [
+              "fixture observations",
+              "branches",
+              "assertions",
+              "response values",
+              "digests"
+            ]
+          },
+          {
+            "mode": "history_carried",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance-input-freeze.json",
+            "reject_scopes": [
+              "fixture",
+              "assertions",
+              "branch IDs",
+              "implementation comparator",
+              "outputs and evidence identities"
+            ]
+          },
+          {
+            "mode": "history_carried",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-runtime-conformance.json",
+            "reject_scopes": [
+              "fixture observations",
+              "branches",
+              "assertions",
+              "response values",
+              "digests"
+            ]
+          },
+          {
+            "mode": "hybrid",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance-input-freeze.json",
+            "reject_scopes": [
+              "fixture",
+              "assertions",
+              "mechanical_cross_mode_rejection",
+              "branch IDs",
+              "implementation comparator",
+              "outputs and evidence identities"
+            ]
+          },
+          {
+            "mode": "hybrid",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-runtime-conformance.json",
+            "reject_scopes": [
+              "fixture observations",
+              "branches",
+              "assertions",
+              "response values",
+              "digests"
+            ]
+          },
+          {
+            "mode": "hybrid",
+            "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-runtime-reconstruction-receipt.json",
+            "reject_scopes": [
+              "all conformance hashes",
+              "assertion outcomes",
+              "restoration witness digests"
+            ]
+          }
+        ],
+        "trivial_reuse_detection": [
+          "canonical numeric equality",
+          "string/decimal equality",
+          "JSON serialization equality",
+          "copying branch/topology identifiers",
+          "copying evidence/restoration digests",
+          "loading any rejected scope as a value-selection source"
+        ]
+      },
+      "finding": "A recursive seven-source rejection registry covers all three modes and explicitly indexes every I03C numeric value, branch/topology identity, comparator, observation/outcome, and digest for direct/trivial-copy rejection.",
+      "name": "complete_machine_fixture_quarantine_registry",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-24",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": {
+        "evidence_class": "quarantined_realization_implementation_conformance",
+        "quarantine": {
+          "I04_authorized_by_runtime_completion": false,
+          "discriminator_gate_passed_by_runtime_completion": false,
+          "evidence_effect": "realization implementation-conformance only",
+          "failure_classes": [
+            "realization_inadequate",
+            "missing_prerequisite",
+            "infrastructure_invalid"
+          ],
+          "may_enter_I04_or_I05_calibration": false,
+          "may_rank_dependence_modes": false,
+          "may_replace_I08_scientific_execution": false,
+          "may_supply_I06_or_I07_registered_values": false,
+          "may_support_or_falsify_AE01_H_L02": false,
+          "observed_values_may_be_reused_scientifically": false,
+          "owner_review_required": true,
+          "scientific_failure_class_allowed": false
+        },
+        "summary": {
+          "failed": 0,
+          "passed": 258,
+          "total": 258
+        }
+      },
+      "finding": "258/258 is machine-visible only as synthetic implementation conformance; it assigns no robustness, scientific control passage, R03/R04, support, calibration, or lane result.",
+      "name": "258_of_258_claim_boundary_machine_visible",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-25",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [],
+      "evidence": [
+        "state_carried: pygrc_native_candidate",
+        "history_carried: minimally_producer_assisted",
+        "hybrid: minimally_producer_assisted"
+      ],
+      "finding": "State, history, and hybrid remain separately retained with their own realization classes; no preference, supersession, or rank is assigned.",
+      "name": "three_modes_retained_without_ranking",
+      "status": "passed"
+    },
+    {
+      "check_id": "RV-26",
+      "classification": "direct_pass",
+      "downstream_obligation_ids": [
+        "I03CR1-OBL-08"
+      ],
+      "evidence": {
+        "I03C_owner_acceptance_effect": "may authorize only a separately checklist/hypothesis-declared umbrella I03 family closeout",
+        "I04_authorized": false,
+        "discriminator_gate_passed": false,
+        "family_closeout_required": true,
+        "later_shared_artifact_rule": "Any I04/I05 artifact shared across modes requires explicit semantic-equivalence proof; otherwise it remains mode-indexed.",
+        "retained_modes": [
+          "state_carried: pygrc_native_candidate",
+          "history_carried: minimally_producer_assisted",
+          "hybrid: minimally_producer_assisted"
+        ],
+        "selection_or_ranking_performed": false
+      },
+      "finding": "I03C owner acceptance may open only a separately declared umbrella family closeout. That action may pass only the discriminator gate and open I04; I04 is currently closed.",
+      "name": "separate_umbrella_I03_family_closeout_required",
+      "status": "passed"
+    }
+  ],
+  "review_summary": {
+    "blocking_findings": 0,
+    "classification_counts": {
+      "closure_clarification": 4,
+      "direct_pass": 17,
+      "downstream_obligation": 5
+    },
+    "passed": 26,
+    "total": 26
+  },
+  "runtime_accounting": {
+    "model_instantiations": 0,
+    "parameter_search": false,
+    "retained_i03c_evidence_invocations_unchanged": 1,
+    "retained_i03c_reconstruction_invocations_unchanged": 1,
+    "retries": 0,
+    "runtime_evidence_invocations": 0,
+    "runtime_reconstruction_invocations": 0
+  },
+  "status": "passed_with_downstream_obligations",
+  "validated_at": "2026-07-14",
+  "validation_kind": "zero_runtime_owner_review_source_dataflow_retained_artifact_causal_well_formedness_and_closure_registry_audit"
+}

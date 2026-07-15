@@ -1,0 +1,61 @@
+{
+  "I08_authorized": false,
+  "activation_record_present": false,
+  "artifact_contract": {
+    "activation_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/owner-accepted-execution-authorization.json",
+    "binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-binding-receipt.json",
+    "claim_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/claims",
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/exec-freeze.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/execution-manifest.json",
+    "failure_receipt_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/failures",
+    "primary_output_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/runs",
+    "retry_output_root": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c02/retries",
+    "run_matrix_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c02/run-matrix.json"
+  },
+  "artifact_id": "P2-I2-C02-EXEC-FREEZE",
+  "artifact_version": "1.0.0",
+  "binding_receipt_sha256": "37be94059ca0ad55de16c4cfa9fd653289eae80a44aa37517b594cb83261d3fe",
+  "bound_file_count": 29,
+  "candidate_execution_authorized": false,
+  "canonical_payload_digest": "edb2439edf9b14ba1dc75f894ddfc0072df2ef22611318955f63ae67116488b4",
+  "cycle_id": "P2-I2-C02",
+  "execution_source_sha256": "64f97048cefe7a8f34b3cfdae94407ee3658dfe18e04363b2bc884a192999b29",
+  "future_activation_requirements": [
+    "candidate-free I08A validation passes",
+    "explicit owner review and acceptance",
+    "separate tracked C02 activation record",
+    "activation and exact C02 freeze committed before execution",
+    "normalized command supplies resulting full HEAD",
+    "clean committed authority and graph worktrees",
+    "cache-free import roots",
+    "exact current-entry claim/output/failure paths absent"
+  ],
+  "input_freeze_sha256": "ea62691439b1bdd49f533071784285c2e15b12c1e9ba862afc6bf9adc487f0e5",
+  "iteration_id": "P2-I2-I08A",
+  "policy_sha256": "169c9d5420c8e1d4e6be4b3ad0c82a78532d08cf533e9dad3135a4be0c0d1792",
+  "primary_entry_count": 234,
+  "resource_envelope_per_worker": {
+    "RLIMIT_AS_applied": false,
+    "address_space_limit": null,
+    "hardware": "single_local_CPU_no_accelerator",
+    "max_file_size_mb": 512,
+    "max_runtime_seconds": 180
+  },
+  "run_matrix_sha256": "03f498c5d72caa0834ce18225e7284d5b0e19b9864839ee092c8663d2b74f103",
+  "scientific_projection_change_count": 0,
+  "status": "inactive_pending_candidate_free_validation_and_owner_acceptance",
+  "supervisor_contract": {
+    "attested_python_failure_retryable_only_before_model_adapter_candidate": true,
+    "claim_never_deleted": true,
+    "claim_owner": "external_supervisor",
+    "failure_receipt_owner": "external_supervisor",
+    "native_exit_captured_by_parent": true,
+    "native_or_unattested_failure_retryable": false,
+    "stderr_max_retained_bytes": 16384,
+    "success_output_owner": "external_supervisor",
+    "worker_may_write_governed_artifact": false,
+    "worker_process": "fresh_child_per_attempt"
+  },
+  "test_sha256": "051a95a9cacbb123c886e9ceef11c162c5812256a52520dfcb68503373821280",
+  "validator_sha256": "b822cefe5e705519c98e41f151da347837eae67bdf05565676e5876bf351399c"
+}

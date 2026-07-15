@@ -1,0 +1,71 @@
+{
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-FAILED-START-002",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I10",
+  "change_id": "P2-I2-CHG-059",
+  "status": "failed_closed_before_output",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "build",
+    "--graph-root",
+    "../graph-reflexive-coherence"
+  ],
+  "authority": {
+    "v2_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze-v2.json",
+    "v2_freeze_sha256_at_start": "e991dd762ea044663497e26f4d34fde1c57c9fff46fec71e73d787128b742efe",
+    "builder_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "builder_sha256_at_start": "ddb8e43cede3d3d811601346d9e2286373b5084e40c1b925c27c3d52ac2a3a05"
+  },
+  "failure": {
+    "exception_class": "AssertionError",
+    "message": "I06 validation byte reconstruction drift",
+    "phase": "registered_I06_validation_reconstruction_before_I10_continuation_checks"
+  },
+  "completed_before_failure": {
+    "frozen_historical_inputs_verified": 41,
+    "hash_bound_i09a_inputs_verified": 6,
+    "calibration_rows_reconstructed_through_I04R2": 10,
+    "c02_manifest_reconstructed_in_memory": true,
+    "governed_c02_paths_verified": 470,
+    "primary_margins_reconstructed_through_I04R2": 18,
+    "primary_margin_distribution": {
+      "0.0": 6,
+      "1.0": 12
+    },
+    "i06_validation_model_instantiations": 6,
+    "i10_continuation_model_instantiations": 0,
+    "i10_outputs_created": 0
+  },
+  "effect": {
+    "pygrc_imports": 1,
+    "candidate_or_control_contributions": 0,
+    "active_history_token_admissions": 0,
+    "neutral_contacts": 0,
+    "response_or_comparator_windows": 0,
+    "c02_entry_worker_invocations": 0,
+    "matrix_entry_regenerations": 0,
+    "new_scientific_inputs": 0,
+    "accepted_artifact_mutations": 0,
+    "scientific_result": null
+  },
+  "gate_effect": {
+    "CONTROL_GATE": "pending_combined_owner_acceptance",
+    "RECON_GATE": "closed",
+    "I11_authorized": false,
+    "commit_authorized": false
+  },
+  "diagnostic": {
+    "initial_launcher_failure_before_pygrc_import": "standalone I06 validator lacked the external graph src import path; no output or model was created",
+    "successful_candidate_free_diagnostic_checks": "14/14",
+    "exact_differing_field_count": 1,
+    "exact_difference": {
+      "field": "checks[I06-12].evidence.bound_file_count",
+      "retained_historical_validation": 5,
+      "live_current_validator": 15
+    },
+    "accepted_i06a_classification": "retained validation belongs to the historical five-file execution manifest and historical validator; the current accepted 15-file manifest binds historical and current producer roles separately; all other validation bytes are unchanged"
+  },
+  "disposition": "retain permanently inside I10; reconstruct both accepted provenance layers under CHG-060: live current 15-file validation plus byte-exact historical five-file projection"
+}

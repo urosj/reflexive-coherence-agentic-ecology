@@ -1,0 +1,1066 @@
+{
+  "after_count": 0,
+  "after_inventory": [],
+  "artifact_id": "P2-I2-I08-IMPORT-CACHE-CLEANUP-RECEIPT",
+  "artifact_version": "1.0.0",
+  "before_count": 207,
+  "before_inventory": [
+    {
+      "kind": "cache_directory",
+      "path": "__pycache__",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/ae01_tooling.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_analysis.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_calibration.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_execution.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i02r1_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04r1_analysis.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04r1_calibration.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04r1_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04r2_analysis.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04r2_calibration.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i04r2_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05_authorization_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05a_safety_audit.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05b_one_shot.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05b_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05c_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05d_portability_audit.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "__pycache__/p2_i2_i05e_validate.cpython-312.pyc",
+      "root": "experiment_scripts"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/cli/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grc9_landscape_visuals.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grc9_representative_visuals.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grc9v3_representative_visuals.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grcv2_representative_experiment.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grcv2_representative_graphs.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grcv2_representative_visuals.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grcv3_landscape_visuals.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/cli/__pycache__/grcv3_representative_visuals.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/core/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/backends.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/capabilities.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/digests.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/errors.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/events.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/graph.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/ids.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/interfaces.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/mutations.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/observables.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/params.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/serialization.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/storage.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/core/__pycache__/types.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/discovery/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_checkpoint_visual_index.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_corrected_growth_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_discovery_runner.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_grcl9_handoff.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_hypothesis_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_manifest.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_mechanism_ledger.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_reviewed_motif_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_seed_generator.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_selector_feedback.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9_selector_validation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_catalog_breadth_expansion.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_discovery_runner.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_hessian_comparator_review.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_hypothesis_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_mechanism_ledger.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_reviewed_motif_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_seed_generator.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_selector_validation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_source_handoff.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/discovery/__pycache__/grc9v3_visual_review.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/integrations/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/integrations/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/integrations/__pycache__/graph_adapter_boundary.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/landscapes/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/equivalence.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_basin.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_compare.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_junction.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_kg.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_loader.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_pheromone.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_revival.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_ridge.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_substrate.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/inference_valley.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/io.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_boundary.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_coherence.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_examples.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_identity.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_interpretation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_landscape_bridge.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_loader.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_representative.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_seed_examples.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/motion_topological.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/pde_translation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/seed.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/__pycache__/validation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/landscapes/extensions/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/__pycache__/grcv3.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/landscapes/extensions/grcl9/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9/__pycache__/examples.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9/__pycache__/fixtures.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9/__pycache__/manifest.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9/__pycache__/schema.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__/examples.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__/fixtures.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__/manifest.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__/schema.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/landscapes/extensions/grcl9v3/__pycache__/selector_expansions.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/models/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/_base.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_checkpoints.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_coarse.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_expansion.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_grcl9_lowering.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_grcl9_provenance.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_landscape.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_ports.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_state.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3_choice.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3_grcl9v3_lowering.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3_grcl9v3_provenance.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3_runtime.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3_sparks.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_9_v3_state.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v2.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v2_checkpoints.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v2_landscape.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v2_state.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v3.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v3_checkpoints.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v3_differential.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v3_landscape.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v3_landscape_native.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/grc_v3_state.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_construction.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_contract.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_identity.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_packets.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_restoration.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_runtime.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_runtime_state.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_timing.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/models/__pycache__/lgrc_9_v3_topology.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/telemetry/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_experiment_defaults.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_experiment_results.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grc9_extensions.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grc9v3_extensions.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grcv3_collapse_traces.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grcv3_extensions.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grcv3_failure_traces.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grcv3_lane_runner.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grcv3_settlement_traces.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_grcv3_trace_utils.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/_telemetry_utils.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/compare.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/experiments.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grc9_contract.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grc9_grcl9_growth_record_classification.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grc9_grcl9_growth_supersession_summary.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grc9v3_contract.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9_corrected_growth_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9_lowered_motif_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9_replay.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9_selector_validation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9v3_lowered_motif_catalog.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9v3_replay.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcl9v3_selector_validation.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcv3_contract.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcv3_pressure_boundary_evidence.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/grcv3_pressure_boundary_selectors.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/io.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/lgrc9v3_contract.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/pressure_boundary_complex_source_comparison.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/pressure_boundary_cross_family.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/recorder.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/reports.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/telemetry/__pycache__/schema.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/utils/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/utils/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "cache_directory",
+      "path": "pygrc/visualization/__pycache__",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/__init__.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/graph_render.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/grcl9_lowering.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/grcl9v3_lowering.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/layout.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/motion.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/render.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/representative.cpython-312.pyc",
+      "root": "pygrc_source"
+    },
+    {
+      "kind": "bytecode_file",
+      "path": "pygrc/visualization/__pycache__/representative_graphs.cpython-312.pyc",
+      "root": "pygrc_source"
+    }
+  ],
+  "candidate_or_control_operations": 0,
+  "cleanup_source_sha256": "18fd1c125479d0480adaf9bb69feb1a6aa280558bd7a72890ad0efe0482c0769",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i08_cleanup_import_caches.py"
+  ],
+  "cycle_id": "P2-I2-C01",
+  "graph_revision_before_and_after": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "graph_tracked_status_after": "",
+  "graph_tracked_status_before": "",
+  "input_freeze_sha256": "931be4ecb70fb1bfa4b4cd10382a98558987a54509f27e809e7722318b5780ef",
+  "iteration_id": "P2-I2-I08",
+  "models_or_adapters_constructed": 0,
+  "pygrc_imports": 0,
+  "roots": [
+    "experiment_scripts",
+    "pygrc_source"
+  ],
+  "scientific_windows": 0,
+  "status": "complete_candidate_free",
+  "tracked_bytes_changed": 0
+}

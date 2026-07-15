@@ -1,0 +1,103 @@
+{
+  "artifact_id": "P2-I2-I07A-OWNER-ACCEPTANCE-AND-EXEC-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I07A",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "accepted_at": "2026-07-15",
+  "status": "owner_accepted_inactive_exec_freeze_and_commit_authority",
+  "authority": {
+    "decision_id": "P2-I2-DEC-047",
+    "change_id": "P2-I2-CHG-043",
+    "owner_direction": "ok, time to commit"
+  },
+  "accepted_artifacts": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07a-cross-entry-isolation-input-freeze.json",
+      "role": "I07A_input_freeze",
+      "sha256": "d375f66e6d739ddcaad159bb6f29e82b7e2fcbb28bc74e14d24c7e30c9a2c93b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c01_execution_policy_v2.json",
+      "role": "corrected_effective_policy",
+      "sha256": "773b9fc231942f59e7d5b74a49ad8ce722471badcc554afd74d5cfaadb4327d3"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py",
+      "role": "isolated_execution_and_completion_source",
+      "sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+      "role": "focused_isolation_tests",
+      "sha256": "22df990af1d4d45729263e5740cc41b2990819fab8e3d64a2ed138eb19846420"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i07a_validate.py",
+      "role": "candidate_free_I07A_validator",
+      "sha256": "e304b542a2e4d0b350c3605e376caaad306e7dfa878f65b97eaf8379cb54a162"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json",
+      "role": "unchanged_234_entry_projection",
+      "sha256": "5e9130bddb3fc888a8376100dcfccc4984a4435310cd0432e5096d29629cd427"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+      "role": "21_file_execution_binding",
+      "sha256": "99a474836b25014b31a887861c065e568a91d5ad2a0a58338cffc14aceb64479"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/exec-freeze.json",
+      "role": "inactive_EXEC_FREEZE",
+      "sha256": "8e4533d37f3de3140dca84aaf3683989988d25a79fcc4aff4e88ca686a90ab22"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07a-derived-refresh-receipt.json",
+      "role": "derived_identity_refresh",
+      "sha256": "17fa02851499cfaadb2837e933ca3bd1bd2f6f8e7406da28bc47724b0948d227"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07a-focused-tests-receipt.json",
+      "role": "15_of_15_focused_tests",
+      "sha256": "c59f96399569fcb8186bb74953e5f7b7809ab49a0dddf844c99eac0f262e4da6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07a-candidate-free-validation.json",
+      "role": "17_of_17_final_validation",
+      "sha256": "32f69dadc8cd10db3bb57fa7f837be921f91da2315369b2842e37d2737d9997c"
+    }
+  ],
+  "accepted_disposition": {
+    "cross_entry_isolation_blockers": 0,
+    "focused_tests": "15/15",
+    "candidate_free_validation": "17/17",
+    "matrix_entry_objects_changed": 0,
+    "primary_entry_count": 234,
+    "conditional_retry_ceiling": 234,
+    "python_starts": 3,
+    "infrastructure_retries": 0,
+    "pygrc_imports": 0,
+    "models_constructed": 0,
+    "packets_scheduled_or_processed": 0,
+    "candidate_or_control_operations": 0,
+    "scientific_windows": 0
+  },
+  "progression_effect": {
+    "P2-I2-EXEC-FREEZE": "passed_for_the_exact_inactive_I07A_cycle",
+    "commit_authorized": true,
+    "candidate_execution_authorized": false,
+    "I08_authorized": false,
+    "activation_record_creation_authorized": false,
+    "cache_cleanup_authorized": false,
+    "next_step_requires_separate_owner_direction": true
+  },
+  "commit_scope": {
+    "branch": "p2-i2-experiment",
+    "parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+    "package": "complete_uncommitted_I06B_I07_I07A_checkpoint",
+    "include_activation_record": false,
+    "include_candidate_outputs": false,
+    "include_execution_manifest": false
+  }
+}

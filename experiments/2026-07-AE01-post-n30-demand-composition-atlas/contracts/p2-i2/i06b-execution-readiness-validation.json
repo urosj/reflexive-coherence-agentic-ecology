@@ -1,0 +1,242 @@
+{
+  "artifact_id": "P2-I2-I06B-EXECUTION-READINESS-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": [
+    {
+      "check_id": "I06B-01",
+      "details": {
+        "decision_id": "P2-I2-DEC-043",
+        "primitive_count": 3
+      },
+      "name": "owner authority and three-primitive ceiling",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-02",
+      "details": {
+        "all_exact": true,
+        "files": 9
+      },
+      "name": "accepted I06 and I06A bytes remain exact",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-03",
+      "details": {
+        "files": 2,
+        "policy_status": "blocked_draft_not_execution_authority_pending_registration_correction"
+      },
+      "name": "blocked I07 drafts remain exact and non-authoritative",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-04",
+      "details": {
+        "graph_clean": true,
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "pygrc_imported": false,
+        "signatures": {
+          "emit_feedback_eligibility_surface_row": [
+            "front_node_ids",
+            "rear_node_ids",
+            "reference_delta",
+            "feedback_threshold",
+            "expected_next_route_id",
+            "expected_next_channel_id"
+          ],
+          "schedule_packet_departure": [
+            "source_node_id",
+            "target_node_id",
+            "edge_id",
+            "amount",
+            "departure_event_time_key",
+            "arrival_event_time_key",
+            "scheduler_event_index",
+            "packet_index",
+            "source_lineage_id",
+            "target_lineage_id"
+          ],
+          "set_feedback_coupled_pulse_producer": [
+            "source_node_id",
+            "target_node_id",
+            "edge_id",
+            "threshold",
+            "packet_amount",
+            "expected_polarity",
+            "expected_source_surface_digest",
+            "expected_next_route_id",
+            "expected_next_channel_id",
+            "arrival_event_time_key",
+            "enabled"
+          ]
+        }
+      },
+      "name": "source-current public calls and graph identity are exact without importing PyGRC",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-05",
+      "details": {
+        "all_exact": true,
+        "files": 3
+      },
+      "name": "I06B input, overlay, and validator manifest reconstruct exactly",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-06",
+      "details": {
+        "fourth_primitive_allowed": false,
+        "superseded_fields": 6
+      },
+      "name": "overlay precedence is additive and exactly bounded",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-07",
+      "details": {
+        "neutral_arrival": 15.875,
+        "response_arrival": 16.875,
+        "slots": 5
+      },
+      "name": "matched five-slot schedule and native response path are exact",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-08",
+      "details": {
+        "branch_amounts": 5,
+        "diagnostic_amount": 0.4375,
+        "full_reference_amount": 1.5
+      },
+      "name": "diagnostic and full reference-P debit identities are exact and distinct",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-09",
+      "details": {
+        "applicable_pairs": 5,
+        "new_topology_roles_or_edges": 0
+      },
+      "name": "native intervention branch applicability and topology are registered",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-10",
+      "details": {
+        "arrival": 16.875,
+        "front_mask": [
+          "role_ids[S1]",
+          "role_ids[S2]"
+        ]
+      },
+      "name": "direct-address bypass has exact contributor-addressed native calls",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-11",
+      "details": {
+        "arrival": 16.875,
+        "departure": 15.875,
+        "predicate": "q1_arrival_receipt.valid and q2_arrival_receipt.valid"
+      },
+      "name": "controller bypass is receipt-derived, carrier-blind, and output-matched",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-12",
+      "details": {
+        "modes": [
+          "state_carried",
+          "history_carried",
+          "hybrid"
+        ],
+        "subconfigurations": 26,
+        "thresholds": {
+          "history_carried": 0.71875,
+          "hybrid": 2.96875,
+          "state_carried": 1.625
+        }
+      },
+      "name": "all three unranked modes inherit unchanged thresholds, response, cells, controls, and seeds",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-13",
+      "details": {
+        "max_events": 12,
+        "max_packets": 6
+      },
+      "name": "packet/event bounds and composite restoration duties remain adequate",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-14",
+      "details": {
+        "json_artifacts": 3,
+        "portable": true,
+        "validator_scanned": true
+      },
+      "name": "new authority artifacts and validator contain no machine-local paths",
+      "passed": true
+    },
+    {
+      "check_id": "I06B-15",
+      "details": {
+        "EXEC_FREEZE": "closed",
+        "I08": "unauthorized",
+        "REG_GATE": "reopened_pending_I06B_validation_and_explicit_owner_acceptance",
+        "pygrc_imported": false
+      },
+      "name": "validation is candidate-free and all progression gates remain closed",
+      "passed": true
+    }
+  ],
+  "evidence_effect": "implementation_registration_readiness_only_no_scientific_evidence",
+  "gate_effect": {
+    "EXEC_FREEZE": "closed",
+    "I07": "paused",
+    "I08": "unauthorized",
+    "REG_GATE": "reopened_pending_explicit_owner_acceptance_of_I06B",
+    "commit_authorized": false
+  },
+  "identities": {
+    "base_registration_sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d",
+    "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "input_freeze_sha256": "4ada5141c550d478ee36d8a3be069bcbb0a040bddff235ad65bd707e74fc685c",
+    "interpreter_command": ".venv/bin/python",
+    "manifest_sha256": "9bf6bf64d2072cb96b0ea2bb9fb58fc169bd821480b1a10a06c07e3979379323",
+    "overlay_sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694",
+    "python_version": "3.12.3",
+    "runtime_source_sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+    "validator_sha256": "ae0b5d3b52b1f66749031d5f49fe61e4f7ee23f24da04ba1a590e275799b670c"
+  },
+  "iteration_id": "P2-I2-I06B",
+  "process_accounting": {
+    "candidate_operations": 0,
+    "comparator_or_scientific_windows": 0,
+    "control_operations": 0,
+    "infrastructure_retries": 0,
+    "models_constructed": 0,
+    "output_producing_validation_starts": 1,
+    "packets_scheduled_or_processed": 0,
+    "pygrc_imports": 0,
+    "read_only_source_control_subprocesses": 2,
+    "response_evaluations": 0,
+    "validation_start_ceiling": 1
+  },
+  "reconstruction": {
+    "canonical_JSON_roundtrip": true,
+    "output_regeneration_count": 0,
+    "retained_output_readback_byte_identical": true
+  },
+  "status": "passed_candidate_free_pending_explicit_owner_review",
+  "validation_summary": {
+    "I06B_manifest_files_reconstructed": 3,
+    "accepted_input_files_reconstructed": 9,
+    "blocked_I07_files_reconstructed": 2,
+    "blockers": 0,
+    "checks_passed": 15,
+    "checks_total": 15
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "artifact_id": "P2-I2-C01-EXECUTION-POLICY",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I07",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "status": "blocked_draft_not_execution_authority_pending_registration_correction",
+  "evidence_effect": "none_pre_execution_policy_only",
+  "known_registration_blockers": [
+    {
+      "blocker_id": "I07-BLK-01",
+      "scope": "hybrid native P intervention after active-history materialization",
+      "finding": "The accepted schedule reserves contribution slots 0/1, history materialization slot 2, neutral-contact slot 3, and fixed response arrival 15.625. A hybrid P-only debit after M_H materialization has no exact registered event time or scheduler/packet index before neutral contact.",
+      "effect": "I07 cannot instantiate post_write_native_P_debit or hybrid reference-P branches without inventing timing."
+    },
+    {
+      "blocker_id": "I07-BLK-02",
+      "scope": "hybrid reference-P component value",
+      "finding": "I06 registers a 0.4375 diagnostic P debit, while reference P after q1+q2 requires a derived full 1.5 debit. The branch is named and semantically required, but that exact native intervention amount is not registered.",
+      "effect": "I07 cannot claim an exact hybrid component factorial from accepted bytes alone."
+    },
+    {
+      "blocker_id": "I07-BLK-03",
+      "scope": "direct and controller bypass execution primitives",
+      "finding": "I03/I04/I06 define their causal exclusion and required provenance but do not freeze whether the direct diagnostic uses a contributor mask and whether the output-matched controller directly schedules the native A-to-B packet.",
+      "effect": "I07 cannot bind exact call traces for two registered subconfigurations without choosing new semantics."
+    }
+  ],
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-cycle-input-freeze.json",
+    "sha256": "024ddf1488b0e81c2151e007367420667c9d7730fcd0b37d346a25a8f1428f68"
+  },
+  "authorities": {
+    "registration_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+    "registration_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-manifest.json",
+    "registration_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+    "registration_closeout_validation_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06a-registration-review-validation.json",
+    "measurement_preregistration_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration.json",
+    "machine_overlay_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json",
+    "analysis_policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+    "analysis_module_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+    "metric_calibration_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/metric-calibration.json",
+    "metric_sheet_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/frozen-metric-sheet.json",
+    "source_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json"
+  },
+  "execution_identity": {
+    "execution_class": "pygrc_native_with_minimal_active_history_adapter_for_registered_modes",
+    "required_graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "required_python_command": ".venv/bin/python",
+    "ambient_pygrc_fallback": false,
+    "graph_repository_access": "read_only_guard",
+    "native_operation_paths": [
+      "models.LGRC9V3.schedule_packet_departure",
+      "models.LGRC9V3.step",
+      "models.LGRC9V3.emit_feedback_eligibility_surface_row",
+      "models.LGRC9V3.set_feedback_coupled_pulse_producer",
+      "models.LGRC9V3.produce_events",
+      "models.LGRC9V3.save",
+      "models.LGRC9V3.load",
+      "models.LGRC9V3.reset",
+      "models.lgrc9v3_restoration_identity_v2",
+      "models.digest_lgrc9v3_restoration_identity_v2"
+    ],
+    "adapter_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+    "adapter_class": "RCAEActiveHistoryAdapterV2",
+    "binding_relation_to_registration": "exact_registered_runtime_plus_execution_orchestration_only"
+  },
+  "matrix": {
+    "mode_order": ["state_carried", "history_carried", "hybrid"],
+    "cell_order": ["reference-pool", "individual-contributions", "combined-orders", "pooled-history-shuffle", "contributor-removal", "global-state-exclusion", "access-capacity-contrast"],
+    "seeds": [101, 211, 307],
+    "physical_orders": ["q1_then_q2", "q2_then_q1"],
+    "not_applicable_order_id": "not_applicable",
+    "canonical_order_for_order_invariant_branches": "q1_then_q2",
+    "primary_attempt": 1,
+    "conditional_retry_attempt": 2,
+    "fresh_worker_per_attempt": true,
+    "worker_reuse_allowed": false,
+    "expected_mode_branch_order_counts": {"state_carried": 24, "history_carried": 25, "hybrid": 29},
+    "expected_primary_run_count": 234,
+    "maximum_conditional_retry_count": 234
+  },
+  "branch_plans": [
+    {"cell_id":"reference-pool","branch_id":"reference_pool_empty","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":[],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"reference_empty","candidate_chain":"eligible"},
+    {"cell_id":"reference-pool","branch_id":"reference_pool_write_frozen","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_diverted","q2_diverted"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"pool_write_freeze","candidate_chain":"eligible"},
+
+    {"cell_id":"individual-contributions","branch_id":"s1_only_registered","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"source_one_marginal","candidate_chain":"eligible"},
+    {"cell_id":"individual-contributions","branch_id":"s2_only_registered","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"source_two_marginal","candidate_chain":"eligible"},
+    {"cell_id":"individual-contributions","branch_id":"repeat_s1_quantity_matched","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_from_s1_common","q2_from_s1_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"quantity_matched_scope_diagnostic","candidate_chain":"eligible"},
+    {"cell_id":"individual-contributions","branch_id":"repeat_s2_quantity_matched","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_from_s2_common","q2_from_s2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"quantity_matched_scope_diagnostic","candidate_chain":"eligible"},
+
+    {"cell_id":"combined-orders","branch_id":"combined-orders","modes":["state_carried","history_carried","hybrid"],"order_scope":"explicit_registration","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"primary_candidate","candidate_chain":"eligible"},
+
+    {"cell_id":"pooled-history-shuffle","branch_id":"physical_order_reverse","modes":["state_carried","history_carried","hybrid"],"order_scope":"explicit_registration","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"physical_order_control","candidate_chain":"eligible"},
+    {"cell_id":"pooled-history-shuffle","branch_id":"audit_lineage_label_permutation","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"lineage_policy":"permuted_audit_labels","carrier_action":"none","response_path":"registered_common_primary","analysis_role":"audit_label_invariance","candidate_chain":"eligible"},
+
+    {"cell_id":"contributor-removal","branch_id":"q1_admitted_q2_diverted","modes":["state_carried","history_carried","hybrid"],"order_scope":"I04R2_complete_arm_lift","contributions":["q1_common","q2_diverted"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"primary_leave_one_q1","candidate_chain":"eligible"},
+    {"cell_id":"contributor-removal","branch_id":"q2_admitted_q1_diverted","modes":["state_carried","history_carried","hybrid"],"order_scope":"I04R2_complete_arm_lift","contributions":["q1_diverted","q2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"primary_leave_one_q2","candidate_chain":"eligible"},
+    {"cell_id":"contributor-removal","branch_id":"pure_source_label_permutation","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"lineage_policy":"permuted_audit_labels","carrier_action":"none","response_path":"registered_common_primary","analysis_role":"pure_label_invariance","candidate_chain":"eligible"},
+
+    {"cell_id":"global-state-exclusion","branch_id":"both_common_writes_diverted","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_diverted","q2_diverted"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"common_write_diversion","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"post_write_native_P_debit","modes":["state_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"registered_state_debit","response_path":"registered_common_primary","analysis_role":"state_component_debit","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"history_reference_clamp","modes":["history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"history_to_reference","response_path":"registered_common_primary","analysis_role":"history_component_reference","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"history_mode_P_only_debit","modes":["history_carried"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"registered_state_debit","response_path":"registered_common_primary","analysis_role":"excluded_P_debit","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"hybrid_full_components","modes":["hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"hybrid_factorial_candidate_P_candidate_H","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"hybrid_reference_P_candidate_H","modes":["hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"state_to_derived_reference","response_path":"registered_common_primary","analysis_role":"hybrid_factorial_reference_P_candidate_H","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"hybrid_candidate_P_reference_H","modes":["hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"history_to_reference","response_path":"registered_common_primary","analysis_role":"hybrid_factorial_candidate_P_reference_H","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"hybrid_reference_components","modes":["hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"state_and_history_to_derived_reference","response_path":"registered_common_primary","analysis_role":"hybrid_factorial_reference_P_reference_H","candidate_chain":"eligible"},
+    {"cell_id":"global-state-exclusion","branch_id":"private_partition_one","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_private_one"],"carrier_action":"none","response_path":"registered_private_one_primary","analysis_role":"private_partition_one","candidate_chain":"private_exclusion"},
+    {"cell_id":"global-state-exclusion","branch_id":"private_partition_two","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q2_private_two"],"carrier_action":"none","response_path":"registered_private_two_primary","analysis_role":"private_partition_two","candidate_chain":"private_exclusion"},
+    {"cell_id":"global-state-exclusion","branch_id":"direct_address_bypass","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"diagnostic_direct_contributor_mask","analysis_role":"forbidden_direct_address_provenance","candidate_chain":"excluded"},
+    {"cell_id":"global-state-exclusion","branch_id":"controller_assembled_bypass","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"diagnostic_controller_authored_schedule","analysis_role":"forbidden_controller_success_provenance","candidate_chain":"excluded"},
+
+    {"cell_id":"access-capacity-contrast","branch_id":"primary_eligible_responder","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"registered_common_primary","analysis_role":"primary_access","candidate_chain":"eligible"},
+    {"cell_id":"access-capacity-contrast","branch_id":"alternate_eligible_responder","modes":["state_carried","history_carried","hybrid"],"order_scope":"not_applicable","contributions":["q1_common","q2_common"],"carrier_action":"none","response_path":"registered_common_alternate","analysis_role":"alternate_access","candidate_chain":"eligible"}
+  ],
+  "derived_interventions": {
+    "state_to_reference": {
+      "route": "P_TO_K_P",
+      "amount_rule": "sum of admitted common q1 and q2 amounts",
+      "expected_amount": 1.5,
+      "independent_tuning_value": false,
+      "registration_status": "derived_candidate_only_not_yet_I06_registered",
+      "execution_authority": false
+    },
+    "history_to_reference": {
+      "adapter_operation": "replace_history",
+      "replacement": [],
+      "native_readout_rematerialization_required": true
+    }
+  },
+  "window_protocol": {
+    "protocol_id": "p2-i2-native-response-window-v2",
+    "pre_window_requirements": ["all contributions and interventions complete", "history readout materialized where applicable", "neutral contact complete", "B baseline exact", "packet and boundary-birth queues empty"],
+    "operations": ["capture B_before and queue identities", "emit one feedback eligibility row unless controller diagnostic", "invoke native producer once unless controller diagnostic", "step once", "step once", "capture B_after, queues, lineage, and contamination IDs"],
+    "scientific_zero": "only after a complete uncontaminated fixed window with two empty-queue steps, no B-targeting event, and no B change",
+    "operational_null": "any exception, incomplete sequence, residual queue, delayed arrival, contamination, or non-response B change"
+  },
+  "retry_policy": {
+    "scope": "per_matrix_entry",
+    "ceiling": 1,
+    "qualifying_failure_phase": "before model or adapter construction and before candidate authority consumption",
+    "required_zero_state": ["no model or adapter constructed", "no candidate or control operation", "no contribution or history admission", "no response or comparator window", "no governed output"],
+    "any_post_construction_failure_consumes_entry": true,
+    "failed_scientific_or_control_result_retryable": false,
+    "byte_identical_retry_inputs": ["committed HEAD", "registration manifest and bundle", "validator and runner", "mode seed order cell and branch identity", "environment and normalized command", "resource envelope"],
+    "required_failed_attempt_receipt": ["entry identity", "attempt index", "failure phase and exception class", "all byte-identity digests", "zero-state counters", "output absence", "mechanical retry-eligibility disposition"],
+    "eligibility_inputs_may_include_outcomes": false
+  },
+  "resource_envelope_per_entry": {"max_runtime_seconds":180,"max_memory_mb":512,"max_disk_mb":512,"hardware":"single_local_CPU_no_accelerator"},
+  "required_receipts": {
+    "per_attempt": ["runtime_binding_receipt","initial_composite_identity","branch_configuration","source_debit_activity_receipt","timing_queue_receipt","support_capacity_route_receipt","inert_sink_no_influence_receipt","window_validity_receipt","arrival_gain_receipt","causal_chain_call_trace","raw_response_record","post_run_composite_identity"],
+    "per_primary_tuple": ["candidate_response_envelope","q1_only_response_envelope","q2_only_response_envelope","strongest_leave_one_provenance","normalized_margin_or_null"],
+    "failure_receipt_fields": ["entry_identity","attempt_index","failure_phase","exception_class","byte_identity_digests","zero_state_counters","output_absence","retry_eligibility"]
+  },
+  "artifact_contract": {
+    "binding_receipt_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+    "exec_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/exec-freeze.json",
+    "activation_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/owner-accepted-execution-authorization.json",
+    "primary_output_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/runs/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-1.json",
+    "retry_output_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/retries/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-2.json",
+    "failure_receipt_template": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/c01/failures/{mode}/{cell_id}/{branch_id}/{physical_order_id}/seed-{seed}/attempt-{attempt}.json",
+    "retry_ledger_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/retry-ledger.json",
+    "execution_manifest_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-manifest.json"
+  },
+  "stop_conditions": ["graph revision or cleanliness drift", "tracked authority or execution source drift", "activation record absent or invalid", "output already exists", "matrix entry outside freeze", "resource envelope exceeded", "restoration identity mismatch", "contamination receipt", "cross-entry worker reuse", "unregistered fallback"],
+  "authorization": {
+    "authorization_gate": "P2-I2-EXEC-FREEZE",
+    "authorization_scope": "exact_cycle_mode_cell_branch_order_seed_attempt_resource_only",
+    "owner_acceptance_required": true,
+    "tracked_activation_record_required": true,
+    "candidate_execution_authorized": false,
+    "I08_authorized": false,
+    "fallback_permitted": false,
+    "mode_selection_or_ranking": false,
+    "scientific_result": false
+  }
+}

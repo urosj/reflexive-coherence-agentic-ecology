@@ -1,0 +1,101 @@
+{
+  "activity_id": "P2-I2-I05D-PERSISTED-PATH-PORTABILITY-AUDIT",
+  "artifact_id": "P2-I2-I05D-PORTABILITY-AUDIT-POLICY",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-025",
+    "decision_id": "P2-I2-DEC-032",
+    "owner_direction": "absolute paths are never allowed; +1 on the P2-I2-wide audit/correction freeze"
+  },
+  "classification": {
+    "allowed": [
+      "normalized repository-relative POSIX identity",
+      "stable logical external-repository or interpreter identity",
+      "content digest, version, capability, or admission fact",
+      "non-path URI",
+      "mathematical slash notation"
+    ],
+    "invalid_classes": [
+      "posix_filesystem_absolute",
+      "drive_prefixed_filesystem_absolute",
+      "home_expanded_filesystem_path",
+      "embedded_machine_local_absolute_token"
+    ],
+    "machine_location_exception": false,
+    "persisted_surface_rule": "data values, commands, receipts, reports, tests, and source literals are all in scope"
+  },
+  "correction_group_order": [
+    "i05_active_execution_and_closeout",
+    "i04_i05_authority_dependencies",
+    "i03_realization_and_conformance",
+    "i01_i02_source_and_identity",
+    "p2_i2_governance_navigation_and_shared_projections"
+  ],
+  "exclusions": {
+    "generated_audit_paths": [
+      "contracts/p2-i2/i05d-portability-audit.json",
+      "reports/P2-I2-I05D-portability-audit.md"
+    ],
+    "rule": "generated I05D result/report are excluded from the audited subject to avoid self-reference and are separately required to contain no violation",
+    "uri_schemes": [
+      "doi",
+      "http",
+      "https",
+      "mailto",
+      "urn"
+    ]
+  },
+  "historical_boundary": {
+    "copy_forbidden_values_into_audit": false,
+    "history_rewrite_authorized": false,
+    "lineage_representation": "commit and SHA-256 only"
+  },
+  "invocation_ceiling": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "max_static_scan_invocations": 3,
+    "null_builder_or_wrapper_invocations": 0,
+    "pygrc_model_instantiations": 0
+  },
+  "reporting": {
+    "include_file_sha256": true,
+    "include_field_or_line_locator": true,
+    "include_forbidden_value": false,
+    "include_forbidden_value_length": true,
+    "include_forbidden_value_sha256": true,
+    "path_identity_format": "repository-relative POSIX"
+  },
+  "scope": {
+    "allowed_suffixes": [
+      ".json",
+      ".md",
+      ".py",
+      ".sh",
+      ".toml",
+      ".txt",
+      ".yaml",
+      ".yml"
+    ],
+    "selectors": [
+      "AGENTIC-ECOLOGY-OVERVIEW.md",
+      "configs/README.md",
+      "configs/p2_i2_*",
+      "contracts/README.md",
+      "contracts/p2-i2/**/*",
+      "hypotheses/README.md",
+      "hypotheses/p2-i2-operational-hypotheses.md",
+      "implementation/README.md",
+      "implementation/P2-I2-*",
+      "implementation/tests/test_p2_i2_*",
+      "outputs/p2-i2/**/*",
+      "reports/P2-I2-*",
+      "scripts/README.md",
+      "scripts/p2_i2_*"
+    ],
+    "required_coverage": [
+      "contracts/p2-i2/i01-audit-input-freeze.json",
+      "outputs/p2-i2/i05/complete-three-arm-analysis-arithmetic-calibration.json",
+      "outputs/p2-i2/i05/i05b-attempt-claim.json"
+    ]
+  }
+}

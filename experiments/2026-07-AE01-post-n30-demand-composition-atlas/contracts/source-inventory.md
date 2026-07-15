@@ -283,3 +283,212 @@ roadmap may be used as positive substrate evidence.
 `P1-I1-GATE` is supported by this record. Review R2 accepted these source and
 consumption boundaries and assigned `AE01-C1` when P1-GATE passed. The
 assignment opens no positive AE01 evidence.
+
+## 10. P2-I2 lane-local source and restoration-provider admission
+
+**Admission date:** 2026-07-14
+
+**Lane-local gate:** `P2-I2-SOURCE-ADMISSION-GATE=passed`
+
+**RCAE review-entry authority:** committed HEAD
+`10c18fad2ba8ecac9ddacb0f0bc55813e6356c60`, separately from the graph
+revision; the I02R1 input freeze binds the ten reviewed uncommitted I02
+artifacts by exact SHA-256.
+
+P2-I2 I02 adds a later lane-local admission without rewriting the historical
+P1-I1 verification baseline in Section 2. The admitted graph identity is:
+
+| Repository ID | Admitted Git revision | Worktree state | Scope |
+| --- | --- | --- | --- |
+| `grc` | `3d3d2ef25903d4210a67980f11fdd3ec21e9b6e5` | clean | Exact P2-I2-relevant package, runtime, restoration-provider, history-boundary, and supporting-evidence identities |
+
+The controlling machine record is the
+[I02 admitted-source and restoration manifest](p2-i2/i02-admitted-source-and-restoration-manifest.json),
+with rationale and transition details in the
+[I02 report](../reports/P2-I2-I02-source-admission-and-restoration-transition.md).
+It binds seventeen repository-relative paths and twenty-four public symbols.
+The file set is the reviewed P2-I2 admission scope, not a complete transitive
+execution dependency lock; a later registration must bind the complete source
+identity it executes.
+
+The source-role totals are:
+
+| Role | Count | Consumption boundary |
+| --- | ---: | --- |
+| `admitted_package_identity` | 3 | Package root and stable export identity only |
+| `admitted_runtime_source` | 6 | May be considered by later P2-I2 realization/registration decisions; admission is not realization selection |
+| `admitted_restoration_provider_source` | 1 | Native versioned branch identity for supported LGRC9V3 inputs only |
+| `supporting_boundary_only` | 1 | Derived causal-history overlay boundary; not active runtime history |
+| `supporting_evidence_only` | 6 | May justify admission and limits; not runtime dependencies by role |
+
+### 10.1 Restoration-provider transition
+
+At the admitted revision, P2-I2 makes the following native provider available
+for conditional later selection:
+
+```text
+pygrc.models.lgrc9v3_restoration_identity_v1
+pygrc.models.digest_lgrc9v3_restoration_identity_v1
+```
+
+The provider accepts a concrete `LGRC9V3` model or complete LGRC9V3
+`pygrc.snapshot` version-1 mapping. It does not accept plain GRC9V3, raw digest,
+RCAE projection, wrong-family, partial, malformed, or unsupported-version
+inputs. The identity digest is a digest of the canonical versioned restoration
+identity; it is not raw snapshot byte identity.
+
+P2-I1 C02's `restoration_projection` remains historical evidence at RCAE
+revision `c2def54c3721c506c28fc9f14390b1ba683a98ec`, source SHA-256
+`d09955bf48b986729dc01acd283fdbe14f7515e9b5e8785c404f34ea53effa07`.
+It is not an automatic P2-I2 fallback at the current graph revision. An older
+revision or unavailable native helper must reopen I02 and explicitly admit a
+fallback before use. Silent upgrade, downgrade, provider substitution, and
+native relabeling of the RCAE projection are forbidden.
+
+### 10.2 Composition and claim boundary
+
+Native identity covers supported PyGRC-owned state only. A later complete
+branch identity must separately compose selected RCAE role/access, pool or
+active-history state not already native, producer/configuration, intervention,
+matching/control, schedule, fixture, analysis, metric, calibration,
+registration, and execution identities. Identity equality does not replace a
+registered bounded equal-input continuation check.
+
+This admission opens I03 realization review only. It does not select a native
+or producer-assisted realization, choose a dependence mode, authorize a
+candidate run, or support shared pooling, ecology, agency, identity acceptance,
+organism/life, a cross-lane recurrence, or an N31+ candidate.
+
+### 10.3 I02R1 identity and authority revalidation
+
+The owner-supplied I02 closeout review reopened and re-passed the lane-local
+admission gate under `P2-I2-I02R1`. The controlling
+[I02R1 revalidation](../reports/P2-I2-I02R1-admission-closeout-revalidation.md)
+and [machine validation](p2-i2/i02r1-identity-authority-validation.json)
+establish these additional boundaries:
+
+- all seventeen manifest, revision, and worktree file SHA-256 values match;
+- imported `pygrc`, `pygrc.models`, and all twenty-four public symbol modules
+  resolve under the admitted checkout's `grc:src` at the exact graph revision;
+- each source now carries one or more granular `runtime_source`,
+  `public_api_source`, `schema_or_contract_source`,
+  `evidence_or_closeout_source`, `test_or_conformance_source`, or
+  `documentation_only` classifications in addition to its admission role;
+- every public symbol has a retained signature, implementation digest,
+  accepted/unsupported shape, causal relevance, and claim ceiling;
+- the provider schema remains `lgrc9v3_restoration_identity_v1`, and its
+  digest is SHA-256 over UTF-8 canonical JSON for the identity document;
+- provider selection remains `null` until a compatible I03 profile proposes
+  it and I06 freezes it as registered configuration; and
+- current native state is covered, but private `_initial_state` reset baseline
+  is not separately covered. A later continuation must forbid reset or compose
+  and compare an explicit reset-baseline identity.
+
+`P2-I2-CHG-004` is correctly classified as
+`source_admission_scope_correction`. Its byte-exact untracked `1.0.0` file was
+not retained; the transition record therefore preserves an explicit semantic
+reconstruction and digest rather than inventing a predecessor file hash.
+
+The lane-local exact digest inventory is:
+
+| Portable source | SHA-256 |
+| --- | --- |
+| `grc:pyproject.toml` | `b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b` |
+| `grc:src/pygrc/__init__.py` | `3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e` |
+| `grc:src/pygrc/models/__init__.py` | `31f7105365214c83f76f53aa7be1f1e0fcfc484bb96a88ab04729c1635df74dc` |
+| `grc:src/pygrc/models/grc_9_v3_state.py` | `4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e` |
+| `grc:src/pygrc/models/lgrc_9_v3.py` | `37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb` |
+| `grc:src/pygrc/models/lgrc_9_v3_contract.py` | `b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680` |
+| `grc:src/pygrc/models/lgrc_9_v3_packets.py` | `14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f` |
+| `grc:src/pygrc/models/lgrc_9_v3_runtime.py` | `40e886cd4310b45881c5e9ca22c0594cbb73f1241a63ddfd5ce57ea1373d6552` |
+| `grc:src/pygrc/models/lgrc_9_v3_runtime_state.py` | `ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c` |
+| `grc:src/pygrc/models/lgrc_9_v3_restoration.py` | `57693baaa431ff5de9f299322cf80cb82f2114055ade4b27b06c52b36e9339df` |
+| `grc:src/pygrc/models/lgrc_9_v3_timing.py` | `3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c` |
+| `grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md` | `32277916241b2059d80645f9fc64d9c693bc66701ec63ccd89dc46eff961837d` |
+| `grc:tests/models/test_lgrc_9_v3_contract.py` | `38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b` |
+| `grc:tests/models/test_lgrc_9_v3_runtime.py` | `19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b` |
+| `grc:tests/models/test_lgrc_9_v3_restoration.py` | `881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97` |
+| `grc:tests/models/test_lgrc_9_v3_restoration_matrix.py` | `b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154` |
+| `grc:implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json` | `e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe` |
+
+This is lane-scoped prospective authority. It does not replace Section 2's
+historical P1-I1 baseline, reinterpret P2-I1 through the native provider,
+admit every graph file, establish restoration correctness, or open ecological
+evidence.
+
+## 11. P2-I2 reset-baseline persistence re-admission
+
+**Admission date:** 2026-07-14
+
+**Iteration/decision:** `P2-I2-I02R2`; `P2-I2-DEC-009`
+
+**Lane-local gate:**
+`P2-I2-SOURCE-ADMISSION-GATE=passed_after_i02r2_revalidation`
+
+**RCAE review-entry authority:** committed HEAD
+`10c18fad2ba8ecac9ddacb0f0bc55813e6356c60`, separately from graph revision
+`83e3a300426631ee4df71b661b67d4fcfdfed594` and the exact frozen RCAE
+worktree artifacts.
+
+I02R2 supersedes the prospective P2-I2 graph dependency in Section 10 without
+rewriting its historical evidence. The controlling
+[I02R2 manifest](p2-i2/i02r2-admitted-source-and-reset-provider-manifest.json),
+[machine validation](p2-i2/i02r2-reset-baseline-validation.json), and
+[revalidation report](../reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md)
+bind 31 exact source identities and 31 public callable contracts.
+
+The reset-aware provider is available but unselected:
+
+```text
+current-only provider = pygrc.models.lgrc9v3_restoration_identity_v1
+reset-aware provider  = pygrc.models.lgrc9v3_restoration_identity_v2
+reset group schema    = pygrc.reset_baseline version 1
+selected_provider     = null
+```
+
+V1 remains current-state-only. V2 contains current identity v1 plus reset-
+baseline identity v1. New snapshots preserve construction or explicit-rebase
+baseline across save/load. Legacy snapshots load current state but block reset
+and v2 until explicit prospective rebase; historical construction state is not
+recovered. RCAE must retain rebase provenance separately if that route is used.
+
+The effective lane-local digest inventory is:
+
+| Portable source | SHA-256 | Role |
+| --- | --- | --- |
+| `grc:pyproject.toml` | `b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b` | `admitted_package_identity` |
+| `grc:src/pygrc/__init__.py` | `3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e` | `admitted_package_identity` |
+| `grc:src/pygrc/models/__init__.py` | `23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70` | `admitted_package_identity` |
+| `grc:src/pygrc/models/grc_9_v3_state.py` | `4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/lgrc_9_v3.py` | `37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/lgrc_9_v3_contract.py` | `b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/lgrc_9_v3_packets.py` | `14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/lgrc_9_v3_runtime.py` | `55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/lgrc_9_v3_runtime_state.py` | `ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/lgrc_9_v3_restoration.py` | `e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931` | `admitted_restoration_provider_source` |
+| `grc:src/pygrc/models/lgrc_9_v3_timing.py` | `3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c` | `supporting_boundary_only` |
+| `grc:docs/reference/LGRC9V3-CausalHistory-ReferenceGuide.md` | `c167362ce35c314a53b0d1e712c1fa9fc2aff91e2d82f278819b574221edb56c` | `supporting_evidence_only` |
+| `grc:tests/models/test_lgrc_9_v3_contract.py` | `38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b` | `supporting_evidence_only` |
+| `grc:tests/models/test_lgrc_9_v3_runtime.py` | `19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b` | `supporting_evidence_only` |
+| `grc:tests/models/test_lgrc_9_v3_restoration.py` | `881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97` | `supporting_evidence_only` |
+| `grc:tests/models/test_lgrc_9_v3_restoration_matrix.py` | `b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154` | `supporting_evidence_only` |
+| `grc:implementation/Phase-8-LGRC9-RestorationIdentityCloseout.json` | `e9799e4b9a877e09ae71d93a4e76288237da219cfc1454821555f14ef7dfa9fe` | `supporting_evidence_only` |
+| `grc:src/pygrc/core/__init__.py` | `1de90ece2242642584f399b744240207a15f1d56b1ee62247bfb1389647ec7ae` | `admitted_package_identity` |
+| `grc:src/pygrc/core/interfaces.py` | `551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f` | `admitted_runtime_source` |
+| `grc:src/pygrc/core/serialization.py` | `a1ce1489870962af1032b8e69acc09ba8b9dcbcefaf86ea97250fc9a47009cf4` | `admitted_runtime_source` |
+| `grc:src/pygrc/models/grc_9_v3.py` | `d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e` | `admitted_runtime_source` |
+| `grc:specs/grc-common-interface.md` | `3ccc27250a3ddb2ecccdf27984436e3dee2b10b3f71de610bfbbbcd084ae7be6` | `supporting_boundary_only` |
+| `grc:specs/grc-reset-baseline-persistence.md` | `20a75f525b1a46e97afaa3aa9e16f63adddc754ded088fa38cd666272ddc8891` | `supporting_boundary_only` |
+| `grc:specs/lgrc-9-v3-restoration-identity.md` | `08c3ee95a9b76016648e14d028120bdebc88d2a109387874c32e4a462b037458` | `supporting_boundary_only` |
+| `grc:specs/lgrc-9-v3-spec.md` | `a272102d8463359c2f9d7a40ce63b3be52509b517da67579127ab6845ff36dc4` | `supporting_boundary_only` |
+| `grc:tests/core/test_interfaces.py` | `702c67b6cc8d98c8ae87e586f7270e5afab65d8c2178527b651a14effbc98e69` | `supporting_evidence_only` |
+| `grc:tests/core/test_serialization_contract.py` | `f19f762830853ed35d243ab7390dc3e7337ee1c7fb05922b0c2742f3062c7bcc` | `supporting_evidence_only` |
+| `grc:tests/models/test_reset_baseline_persistence.py` | `6236748f6bc7995dda86f7a207ccce373b33d1b7ecd90849106839baa305f01a` | `supporting_evidence_only` |
+| `grc:implementation/corrections/PyGRC-ResetBaselinePersistenceChecklist.md` | `caccab6dbfeb845893762f5c7e9d8774e16de6317e8c409f56c53baa05e65d31` | `supporting_evidence_only` |
+| `grc:implementation/corrections/PyGRC-ResetBaselinePersistenceCloseout.md` | `ef9b116f2c1724516960e0e6799c2816e4b178a4da2db4899c5f598180de6ad3` | `supporting_evidence_only` |
+| `grc:implementation/corrections/PyGRC-ResetBaselinePersistencePlan.md` | `1ee265d39b6cabe56ac6e77bb4643aff502dd645e459be98bc76a075c1fb501f` | `supporting_evidence_only` |
+
+This remains lane-scoped prospective dependency authority. It does not alter
+P2-I1, admit every changed graph file as runtime, select v2 for P2-I2, recover
+legacy construction provenance, cover RCAE-owned state, or establish an
+ecological result.

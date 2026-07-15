@@ -1,0 +1,138 @@
+{
+  "evidence_effect": "analysis_arithmetic_resolution_only_no_candidate_or_runtime_evidence_when_executed_in_I05",
+  "schema_version": "1.0.0",
+  "calibration_id": "rcae-p2-i2-shared-analysis-arithmetic-null-v2",
+  "iteration_authorized_to_execute": "P2-I2-I05_only_after_owner_acceptance_of_I04R1",
+  "candidate_blind": true,
+  "runtime_execution": false,
+  "pygrc_imported": false,
+  "shared_across_modes": true,
+  "shared_identity_rationale": "the null exercises only rational parsing, float conversion, normalized-margin arithmetic, serialization, and reconstruction in the shared pure analysis surface; it does not exercise any upstream carrier, native runtime, response window, or mode-specific arithmetic depth",
+  "analysis_policy_ref": "configs/p2_i2_i04r1_analysis_policy.json",
+  "analysis_arithmetic_floor": 1e-12,
+  "calibrates": [
+    "deterministic exact-rational parsing and float conversion",
+    "normalized-margin arithmetic",
+    "calibration-record serialization",
+    "byte reconstruction through the same pure entry point"
+  ],
+  "does_not_calibrate": [
+    "PyGRC floating-point execution",
+    "queue ordering or packet transport",
+    "B-coherence measurement noise",
+    "save/load/reset continuation",
+    "mode-specific arithmetic depth",
+    "runtime, restoration, or continuation equality tolerance"
+  ],
+  "calibration_seeds": [
+    19,
+    43,
+    71,
+    109,
+    163
+  ],
+  "candidate_seeds_excluded": [
+    101,
+    211,
+    307
+  ],
+  "physical_order_strata": [
+    "q1_then_q2",
+    "q2_then_q1"
+  ],
+  "matched_null_generator": {
+    "kind": "equal_synthetic_response_pairs_over_two_physical_order_strata",
+    "value_representation": "exact_rational_string",
+    "panels": [
+      {
+        "seed": 19,
+        "q1_then_q2": "1/23",
+        "q2_then_q1": "2/23"
+      },
+      {
+        "seed": 43,
+        "q1_then_q2": "3/23",
+        "q2_then_q1": "4/23"
+      },
+      {
+        "seed": 71,
+        "q1_then_q2": "5/23",
+        "q2_then_q1": "6/23"
+      },
+      {
+        "seed": 109,
+        "q1_then_q2": "7/23",
+        "q2_then_q1": "8/23"
+      },
+      {
+        "seed": 163,
+        "q1_then_q2": "9/23",
+        "q2_then_q1": "10/23"
+      }
+    ],
+    "pair_rule": "for each seed and physical-order stratum, null-left and null-right receive the same exact rational response",
+    "selection_provenance": "fixed rank-derived rational sequence with prime denominator 23, selected without loading any I03 source or candidate/runtime value",
+    "scientific_interpretation": "none; equal panels exercise pure analysis arithmetic and serialization only"
+  },
+  "estimator": "maximum of analysis_arithmetic_floor and the maximum absolute matched-null normalized margin across all seeds and both physical-order strata",
+  "delta_field": "analysis_arithmetic_delta",
+  "delta_status": "pending_I05_execution",
+  "I06_domain_relation": {
+    "policy_ref": "configs/p2_i2_i04r1_analysis_policy.json#/I06_numeric_admissibility",
+    "runtime_tolerance_inference_from_delta_forbidden": true,
+    "registration_failure_effect": "the configuration cannot register outside the frozen response-amount, ULP, roundtrip, and separate-tolerance domain"
+  },
+  "forbidden_inputs": [
+    "candidate artifacts or outcomes",
+    "candidate seeds",
+    "PyGRC imports, models, snapshots, runtime records, graph values, or response-window records",
+    "I03 conformance fixture values, observations, branches, topologies, comparators, outcomes, or digests",
+    "P2-I1 calibration panels, delta, metric results, or evidence",
+    "post-outcome tuning"
+  ],
+  "quarantine_proof": {
+    "i03_registry_ref": "contracts/p2-i2/i03cr1-hybrid-closeout-registry.json#/fixture_quarantine_registry",
+    "null_rational_strings_absent_from_registered_I03_sources": true,
+    "only_equal_numeric_value_allowed": "analysis_arithmetic_floor 1e-12 from the independently frozen pre-I03 L02 metric sheet",
+    "i03_sources_loaded_by_generator": false
+  },
+  "execution_policy": {
+    "python": ".venv/bin/python",
+    "entrypoint": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_calibration.py",
+    "command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r1_calibration.py --analysis-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json --calibration-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_calibration_policy.json --preregistration experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r1-calibration-preregistration.json --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/matched-null-analysis-arithmetic-calibration.json",
+    "working_directory": "repository_root",
+    "dependencies": [
+      "Python 3.12 standard library"
+    ],
+    "max_governed_invocations": 1,
+    "max_infrastructure_retries": 1,
+    "resource_envelope": {
+      "max_runtime_seconds": 120,
+      "max_memory_mb": 512,
+      "max_disk_mb": 256
+    },
+    "failure_rule": "a config, identity, schema, candidate-exclusion, quarantine, output, or reconstruction failure leaves I05 invalid or incomplete; no parameter adaptation is permitted"
+  },
+  "authorization_requirement": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+    "must_be_absent_in_I04R1": true,
+    "required_artifact_id": "P2-I2-I05-CALIBRATION-EXECUTION-FREEZE",
+    "required_iteration_id": "P2-I2-I05",
+    "required_CAL_PRE_gate": "passed_after_owner_acceptance_of_I04R1",
+    "required_governed_invocations": 1,
+    "identity_rule": "the later I05 freeze must bind the exact I04R1 preregistration, corrected analysis policy, and corrected calibration policy SHA-256 identities supplied to the entry point"
+  },
+  "expected_I05_artifacts": [
+    "owner-authorized I05 execution freeze binding exact I04R1 identities",
+    "analysis-arithmetic calibration record with every raw equal pair and per-order per-seed margin",
+    "calibration input and analysis identities",
+    "frozen lane-local metric sheet populated only with analysis_arithmetic_delta status, value, rationale, and calibration reference",
+    "reconstruction receipt proving byte-identical governed output"
+  ],
+  "I04R1_execution_boundary": {
+    "matched_null_executed": false,
+    "calibration_record_created": false,
+    "analysis_arithmetic_delta_computed_or_frozen": false,
+    "candidate_execution_authorized": false
+  }
+}

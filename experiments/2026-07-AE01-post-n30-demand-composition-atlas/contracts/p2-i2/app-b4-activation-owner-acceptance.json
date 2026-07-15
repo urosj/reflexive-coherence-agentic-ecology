@@ -1,0 +1,43 @@
+{
+  "activation": {
+    "canonical_payload_digest": "7c3aeca5c7730175c4344f329a254fb8a924538c06649d9140671bb8292825a5",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-live-activation.json",
+    "sha256": "65687828d4ea1e4e019b75335c04d8adbef7470054ef6803f9d24f8e1a008729"
+  },
+  "artifact_id": "P2-I2-APP-B4-ACTIVATION-OWNER-ACCEPTANCE",
+  "artifact_version": "1.0",
+  "authority": {
+    "change": "P2-I2-CHG-096",
+    "decision": "P2-I2-DEC-091",
+    "reviewed_readiness": "P2-I2-DEC-090/P2-I2-CHG-095"
+  },
+  "candidate_validation": {
+    "canonical_payload_digest": "3efd28a0d7649d0902836fc9ecfdb0b6b3dfa8d45867ab64a131ecbb04612ebd",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-activation-candidate-validation.json",
+    "sha256": "c4be16d7526aca817a7bfaa999c449cca6e3a755b033f633f4d97545ca0dcede"
+  },
+  "canonical_payload_digest": "74f83b1c1ff14565a5a8ab16d60df8c0f0c9eb957b925c8b09f511a134f3cba5",
+  "containing_commit_authorized": true,
+  "execution_correction": {
+    "canonical_payload_digest": "fbcaab1603d6d7471e62fcb63bbdfed5e8cb1edac1933f88af291230eb6e2dc9",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-activation-binding-correction.json",
+    "sha256": "2f7a85dec9dbff8a2f79a8e0805657f650db4d88836bf43fca38cc4700c09d93"
+  },
+  "freeze": {
+    "canonical_payload_digest": "07f118723ebdb51cd5da5f65bab0d6fcad6b4b4e909c261b9e077153e14fe71e",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b4-inactive-75-arm-freeze.json",
+    "sha256": "77025e8b2eabc63298485746790ab0dc78e67cf507856357c2d575d7595214f8"
+  },
+  "immutable_implementation_commit": "863d73c956286efb631d7a6fdd579837325dc2c0",
+  "iteration_id": "P2-I2-APP-B4",
+  "owner_direction": "continue with B4",
+  "scientific_invariance": {
+    "attempts": 1,
+    "frozen_arm_rows_changed": 0,
+    "infrastructure_retries": 0,
+    "scientific_retries": 0,
+    "scientific_semantics_changed": false
+  },
+  "single_campaign_authorized": true,
+  "status": "owner_accepted_containing_commit_and_single_campaign"
+}

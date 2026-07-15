@@ -1,0 +1,117 @@
+{
+  "active_history_reconciliation": {
+    "actual_final_active_tokens": 111,
+    "actual_physical_admission_rows": 123,
+    "admitted_operation_counts": {
+      "E": 41,
+      "G": 41,
+      "P": 41
+    },
+    "duplicate_admissions": 0,
+    "excluded_activity_admissions": {
+      "diversion": 0,
+      "history_materialization": 0,
+      "neutral_contact": 0,
+      "private_partition": 0,
+      "response_or_controller": 0,
+      "save_load_reset": 0,
+      "state_intervention": 0
+    },
+    "expected_final_active_tokens": 111,
+    "expected_physical_admission_rows": 123,
+    "explicitly_cleared_admissions": 12,
+    "final_token_provenance_mismatches": 0,
+    "operation_route_or_event_provenance_mismatches": 0,
+    "recursive_history_self_support": false,
+    "unexpected_admitted_rows": 0
+  },
+  "artifact_id": "P2-I2-APP-B3-IMPLICATION-BOUNDARY-AUDIT",
+  "artifact_version": "1.0",
+  "canonical_payload_digest": "80c47f1a14602549a3dd46d8552f3313299289ebfb707d9ed9819333f954710c",
+  "cardinality_quantity_boundary": {
+    "highest_priority_possible_next_discriminator": "frozen quantity-timing-history-length-matched repeated-operation three-admission panel",
+    "operation_complementarity_status": "unresolved_missing_matched_three_admission_control",
+    "operation_complementarity_supported": false,
+    "proper_subset_irreducibility_retained": true,
+    "quantity_cardinality_matched_alternative_registered": false,
+    "repeated_operation_three_admission_rows": [],
+    "retrofit_into_app_b2": false,
+    "three_admission_rows_observed": 19
+  },
+  "claim_projection": {
+    "history_carried": "supported_bounded_composition",
+    "hybrid": "not_supported_in_the_frozen_realization",
+    "hybrid_interpretation": "carrier_operational_but_E_nonessential_at_registered_response_boundary",
+    "operation_complementarity_claimed": false,
+    "state_carried": "not_supported_in_the_frozen_realization",
+    "strongest_positive_claim": "bounded history-carried P2-I2-grounded three-operation shared-pool composition candidate",
+    "support_status": "scaffold_dependent",
+    "terminal": "supported_bounded_candidate"
+  },
+  "fail_open_isolation": {
+    "arms_retried_removed_or_outcome_reclassified": 0,
+    "corrected_validity_authored_boolean_reads": 0,
+    "corrected_validity_derived_from_receipts": true,
+    "historical_embedded_conclusion_quarantined": true,
+    "primary_response_estimator_or_control_values_changed": false,
+    "projection_stage": "post_run_after_all_99_child_attempts",
+    "receipt_validity_predicates_verified_per_arm": 39,
+    "runtime_arms_fixed_and_completed": 99,
+    "runtime_bytes_changed": false,
+    "source_flow": {
+      "analysis_calls_inside_campaign_loop": 0,
+      "audit_pygrc_imports": 0,
+      "campaign_loop_precedes_analysis": true,
+      "corrected_validity_authored_valid_reads": 0,
+      "duplicate_surface_admission_refused": true,
+      "exact_route_edge_amount_arrival_filter": true,
+      "history_ingest_calls": 1,
+      "history_ingest_only_inside_operation_loop": true,
+      "post_operation_excluded_activity_has_no_later_ingest": true,
+      "source_sha256": {
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_analysis.py": "232ae62be2adaff00374d0cd08bb61c9164ae8d58d9d188fce1dd4fad0d6cf0c",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_history_adapter.py": "a7d9772f4b22bec81e370e28eeae9bb5d4d4d3353a80d9516c950e3e9c166f8e",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py": "dfa1985af280561e62250623bc872b1acf6d997d620f4eb6df645cfc882abd07"
+      },
+      "worker_analysis_calls": 0
+    },
+    "unique_fresh_child_processes": 99
+  },
+  "inputs": {
+    "corrected_closeout": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-corrected-analysis-and-closeout.json",
+      "sha256": "9519e7d59c8892d123babe5b51d456bf99f3633126306c6ca24e93fe621ff9e0"
+    },
+    "freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "sha256": "3e1f0c4bf0a8c8417f8e730c47c35ec1aaca11aa0e9bb76b3b87c2675656547e"
+    },
+    "original_reconstruction": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-reconstruction-and-closeout.json",
+      "sha256": "cdc3338fbcb3ac7e62e60e612034a40bdeb4c7d1f3d9d8840fa7660f7f8996f0"
+    },
+    "runtime": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-runtime-evidence.json",
+      "sha256": "105918cc0ee1fb3550d904d555efcb2a6c75598f2ebd9f4b3d8f6e660ec77d51"
+    }
+  },
+  "owner_boundary": {
+    "matched_cardinality_runtime_authorized": false,
+    "result_acceptance_required": true,
+    "result_commit_authorized": false
+  },
+  "process_counts": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "artifact_generation_validator_processes": 4,
+    "check_only_validator_processes": 2,
+    "models": 0,
+    "producers": 0,
+    "responses": 0,
+    "retained_runtime_reads_this_start": 1,
+    "retained_runtime_reads_through_final_artifact": 6,
+    "superseded_uncommitted_audit_artifacts": 3,
+    "validator_processes_through_final_artifact": 6
+  },
+  "status": "passed_with_matched_cardinality_discriminator_absent_owner_review_pending"
+}

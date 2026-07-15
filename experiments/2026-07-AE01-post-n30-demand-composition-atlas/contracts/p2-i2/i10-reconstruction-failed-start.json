@@ -1,0 +1,80 @@
+{
+  "artifact_id": "P2-I2-I10-RECONSTRUCTION-FAILED-START-001",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I10",
+  "lane_id": "AE01-L02",
+  "status": "failed_closed_before_output",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "build",
+    "--graph-root",
+    "../graph-reflexive-coherence"
+  ],
+  "authority": {
+    "head": "cfa19fe66118ad949fa914e0988c6652079d2d54",
+    "input_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-input-freeze.json",
+    "input_freeze_sha256": "c28ae30e79c754acb1ec854b64a1c62c58b7b509ace5d92b96d6251c30207c24",
+    "reconstructor_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i10_reconstruct.py",
+    "reconstructor_sha256": "f4ba3e90441368e509247cb1f2983e7e7cbf45034223b34350a1b1bc19a3f2f4"
+  },
+  "failure": {
+    "exception_class": "AssertionError",
+    "message": "I09 primary margin projection drift: state_carried",
+    "phase": "accepted_I04R2_primary_margin_reconstruction_against_I09_index",
+    "first_observed_mismatch": {
+      "accepted_I09_primary_margin": 0.125,
+      "candidate_response": 0.125,
+      "mode": "state_carried",
+      "physical_order_id": "q1_then_q2",
+      "q1_only_response": 0.0,
+      "q2_only_response": 0.0,
+      "reconstructed_I04R2_normalized_margin": 1.0,
+      "seed": 101
+    },
+    "root_cause": "I09 computes candidate_response minus strongest_leave_one_response directly and labels it primary_margin instead of invoking the accepted normalized I04R2 strongest-leave-one estimator",
+    "source_observation": {
+      "accepted_estimator_formula": "(candidate - strongest_leave_one) / max(abs(candidate), abs(strongest_leave_one), analysis_arithmetic_floor)",
+      "i09_bypass_expression": "candidate - strongest",
+      "mismatching_positive_rows_projected": 12,
+      "matching_zero_rows_projected": 6
+    }
+  },
+  "completed_before_failure": {
+    "c02_entry_worker_invocations": 0,
+    "c02_manifest_reconstructed_in_memory": true,
+    "calibration_rows_reconstructed_through_I04R2": 10,
+    "frozen_input_artifacts_verified": 41,
+    "governed_c02_paths_verified": 470,
+    "i10_outputs_created": 0,
+    "matrix_entry_regenerations": 0,
+    "new_scientific_inputs": 0,
+    "pygrc_imports": 0,
+    "registration_or_restoration_models_constructed": 0
+  },
+  "not_reached": [
+    "I06 byte reconstruction",
+    "registered restoration-continuation checks",
+    "I09 byte reconstruction",
+    "report semantic reconstruction",
+    "complete portability scan",
+    "I10 manifest validation and report creation"
+  ],
+  "gate_effect": {
+    "CONTROL_GATE_requires_reconciliation": true,
+    "I11_authorized": false,
+    "RECON_GATE": "closed",
+    "commit_authorized": false,
+    "scientific_result": false
+  },
+  "correction_boundary": {
+    "I04R2_estimator_bytes_may_change": false,
+    "I05_calibration_bytes_may_change": false,
+    "I06_registration_bytes_may_change": false,
+    "I08_raw_evidence_bytes_may_change": false,
+    "I09_derived_index_validation_report_require_correction": true,
+    "correction_authorized": false,
+    "suggested_iteration": "P2-I2-I09A"
+  }
+}

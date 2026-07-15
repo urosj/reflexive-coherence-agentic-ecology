@@ -1,0 +1,41 @@
+{
+  "artifact_id": "P2-I2-I06B-EXECUTION-READINESS-MANIFEST",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06B",
+  "lane_id": "AE01-L02",
+  "status": "frozen_before_single_candidate_free_validation_start",
+  "parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+  "files": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-correction-input-freeze.json",
+      "role": "exact_three_primitive_input_freeze",
+      "sha256": "4ada5141c550d478ee36d8a3be069bcbb0a040bddff235ad65bd707e74fc685c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+      "role": "additive_execution_readiness_registration_overlay",
+      "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06b_validate.py",
+      "role": "candidate_free_static_validator",
+      "sha256": "ae0b5d3b52b1f66749031d5f49fe61e4f7ee23f24da04ba1a590e275799b670c"
+    }
+  ],
+  "validation_authority": {
+    "command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06b_validate.py validate --graph-root ../graph-reflexive-coherence --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-validation.json",
+    "output_producing_start_ceiling": 1,
+    "infrastructure_retries": 0,
+    "pygrc_imports_or_models": 0,
+    "packet_or_candidate_operations": 0,
+    "failure_effect": "retain failed start and stop for owner direction"
+  },
+  "review_boundary": {
+    "validation_can_accept_package": false,
+    "REG_GATE": "reopened_pending_explicit_owner_acceptance",
+    "I07": "paused",
+    "EXEC_FREEZE": "closed",
+    "I08": "unauthorized",
+    "commit_authorized": false
+  }
+}

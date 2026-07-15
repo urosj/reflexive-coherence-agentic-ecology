@@ -1,0 +1,263 @@
+{
+  "artifact_id": "P2-I2-I05C-ZERO-NULL-INTERPRETER-VALIDATION",
+  "artifact_version": "1.1.0",
+  "checks": [
+    {
+      "check_id": "I05C-01",
+      "evidence": {
+        "interpreter": {
+          "binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+          "executable_repo_relative": ".venv/bin/python",
+          "implementation": "CPython",
+          "major_minor": [
+            3,
+            12
+          ],
+          "require_active_venv": true,
+          "venv_prefix_repo_relative": ".venv"
+        },
+        "preclaim_correction_authority": {
+          "change_id": "P2-I2-CHG-024",
+          "decision_id": "P2-I2-DEC-031",
+          "owner_direction": "always use venv",
+          "scientific_revision": false,
+          "scope": "active repository .venv command-path versus resolved executable identity only"
+        }
+      },
+      "finding": "policy requires the exact active repository .venv and bounds DEC-031 scope",
+      "name": "bounded active-.venv correction policy",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-02",
+      "evidence": {
+        "PyGRC_model_instantiations": 0,
+        "accepted_builder_invocations": 0,
+        "attempt_claim_created": false,
+        "candidate_or_control_invocations": 0,
+        "failure_message": "path escapes repository root: .venv/bin/python",
+        "final_receipt_created": false,
+        "governed_null_invocations": 0,
+        "governed_output_created": false,
+        "null_reconstruction_generation_count": 0
+      },
+      "finding": "the valid active venv was rejected before claim and all governed counts remain zero",
+      "name": "failed preflight retained before claim",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-03",
+      "evidence": {
+        "base_runtime_separated": true,
+        "binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+        "implementation": "CPython",
+        "invoked_executable_repo_relative": ".venv/bin/python",
+        "major_minor": [
+          3,
+          12
+        ],
+        "resolved_binary_identity": "sha256:1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+        "venv_active": true,
+        "venv_prefix_repo_relative": ".venv",
+        "version": "3.12.3"
+      },
+      "finding": "the actual command uses the active repository venv while retaining exact target digest/version",
+      "name": "real repository venv passes exact identity",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-04",
+      "evidence": {
+        "validate_interpreter_calls": [
+          "_lexical_repo_path",
+          "_lexical_repo_path",
+          "resolve",
+          "get",
+          "str",
+          "OneShotError",
+          "get",
+          "str",
+          "OneShotError",
+          "get",
+          "OneShotError",
+          "get",
+          "str",
+          "OneShotError",
+          "get",
+          "get",
+          "OneShotError",
+          "get",
+          "OneShotError",
+          "get",
+          "OneShotError",
+          "get",
+          "_sha256",
+          "OneShotError",
+          "get",
+          "OneShotError",
+          "resolve"
+        ]
+      },
+      "finding": "interpreter validation no longer routes the venv command symlink through the repository-data path guard",
+      "name": "lexical command and resolved binary identities are separate",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-05",
+      "evidence": {
+        "acceptance_sha256": "fb1eedf30a477e938339366d380f30e263b19b73efc7881c41df97170cd3acb3",
+        "launch_sha256": "a8f1434190e875d39569c2a6b2ed670d606a98717950e0b8707f083a7823bb7a"
+      },
+      "finding": "immutable package acceptance remains distinct from the corrected launch authority",
+      "name": "consequential acceptance and launch identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-06",
+      "evidence": {
+        "accepted_commit": "b7b008c402d837b529962a1a5edb062927939d28",
+        "current_hashes": {
+          "analysis_module": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24",
+          "calibration_entrypoint": "8a0ef5569705ea0619a628b3b5a25d9dc80448a273a68a92d131ce775793b61a",
+          "calibration_policy": "57dc32d02b828bb21caf069c5690bf4fcfc240848faefcd8412a6505bba849fe",
+          "machine_policy": "277dfc22c9e98268e950cb634ed1174b9ad4f0f654a72984b365655815c3a9ce",
+          "owner_acceptance": "2ade4d6255c42044621489e1132d1030f48266e851bea614a11f1100c4f7dacf",
+          "parent_analysis_policy": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+          "preregistration": "dee89df45b4a5ece93d1d7ce461d2c0cb8f028ff44aa32b3f4e45e88a1b09e9b",
+          "test": "75de8f69c2e1433618303a8338d4899be272527c3af9b4c7c7476448f5ccfaf2",
+          "validation": "637c07cc7d31824f4806459f7b4e8ddd1262eec3c5cc874b009ea7767b59d361"
+        }
+      },
+      "finding": "all accepted I04R2 scientific/code/policy/test bytes remain exact",
+      "name": "accepted I04R2 bytes immutable",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-07",
+      "evidence": {
+        "required_tests": [
+          "test_active_repository_venv_identity_passes",
+          "test_concurrent_second_start_is_refused",
+          "test_owner_acceptance_does_not_substitute_for_launch_authority",
+          "test_start_after_simulated_crash_following_claim_is_refused",
+          "test_wrong_interpreter_or_command_is_refused"
+        ],
+        "tests_passed": 13
+      },
+      "finding": "thirteen zero-null tests include a real active-venv pass and wrong/inactive/digest refusals",
+      "name": "positive and negative active-.venv tests",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-08",
+      "evidence": {
+        "attempt_absent": true,
+        "claim_storage": {
+          "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
+          "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/i05b-attempt-claim.json",
+          "filesystem_type": "ext4",
+          "mount_options": "rw,nosuid,nodev,relatime,errors=remount-ro",
+          "mount_identity": "repository_worktree",
+          "nearest_existing_ancestor": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs",
+          "repository_local": true,
+          "symlink_components_present": false,
+          "temporary_location": false
+        },
+        "final_absent": true,
+        "output_absent": true
+      },
+      "finding": "claim/final/output remain absent and the permanent local claim boundary is unchanged",
+      "name": "authority remains unconsumed",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-09",
+      "evidence": {
+        "attempt_policy": {
+          "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
+          "claim_deletion_forbidden": true,
+          "claim_survives_failure_and_crash": true,
+          "consume_before_builder": true,
+          "max_governed_attempts": 1,
+          "max_infrastructure_retries": 0
+        },
+        "candidate_execution_authorized": false
+      },
+      "finding": "the correction changes no execution count or scientific authority",
+      "name": "one-attempt zero-retry and scientific quarantine",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-10",
+      "evidence": {
+        "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+        "graph_status": ""
+      },
+      "finding": "PyGRC remains at the admitted clean revision and was not invoked",
+      "name": "graph read-only boundary",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-11",
+      "evidence": {
+        "policy_sha256": "71dddb9f89a1d195e84899555ebdadbda45041405d04cbcbe03628ab536b932a",
+        "wrapper_sha256": "b6cf5e3129821660fb77b2f7c3591a66d859d18930cc28681fa8096d7462220c"
+      },
+      "finding": "policy, acceptance, and launch all bind the exact corrected wrapper/policy",
+      "name": "corrected wrapper and policy identities",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05C-12",
+      "evidence": {
+        "PyGRC_model_instantiations": 0,
+        "accepted_builder_invocations": 0,
+        "candidate_or_control_invocations": 0,
+        "governed_null_invocations": 0,
+        "scientific_result": false
+      },
+      "finding": "validation imports no builder and executes zero null, PyGRC, candidate, or control operations",
+      "name": "zero-execution correction boundary",
+      "status": "passed"
+    }
+  ],
+  "disposition": {
+    "P2-I2-CAL-GATE": "closed",
+    "authority_consumed": false,
+    "commit_authorized": false,
+    "correction_review_ready": true,
+    "governed_attempts": 0,
+    "infrastructure_retries": 0
+  },
+  "execution_receipt": {
+    "PyGRC_model_instantiations": 0,
+    "accepted_builder_invocations": 0,
+    "candidate_or_control_invocations": 0,
+    "governed_null_invocations": 0,
+    "scientific_result": false
+  },
+  "input_identities": {
+    "failure_sha256": "0a1bff47797a23e18ef143b2418d3d0b697615c88ac121a547450e7234ce3fed",
+    "launch_authorization_sha256": "a8f1434190e875d39569c2a6b2ed670d606a98717950e0b8707f083a7823bb7a",
+    "owner_acceptance_sha256": "fb1eedf30a477e938339366d380f30e263b19b73efc7881c41df97170cd3acb3",
+    "policy_sha256": "71dddb9f89a1d195e84899555ebdadbda45041405d04cbcbe03628ab536b932a",
+    "test_sha256": "12f890e622772b9d5d0d6e61fef33c8f9fef3cbcba8a66e4e11b3bec23ec53d8",
+    "wrapper_sha256": "b6cf5e3129821660fb77b2f7c3591a66d859d18930cc28681fa8096d7462220c"
+  },
+  "iteration_id": "P2-I2-I05C",
+  "lane_id": "AE01-L02",
+  "passed_checks": 12,
+  "total_checks": 12,
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-026",
+    "decision_id": "P2-I2-DEC-033",
+    "projection_kind": "historical_validation_portable_projection",
+    "scientific_change": false,
+    "source_commit": "c3eabf30c9214055b43d7d2fbe86c3bc903be844",
+    "source_sha256": "71cc9d8b32448cc228259e166f03888cdb771e92f3be229a4c8823189030e8b7"
+  },
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i05c_validate.py",
+    "sha256": "ef933f921d1feda1000aa41ecedc1e7b4ea59dbfdae184c54e182aa60f8246b7"
+  }
+}

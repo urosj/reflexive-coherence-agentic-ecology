@@ -87,6 +87,53 @@ post-closeout structural and decision-set variants without selecting,
 preregistering, or authorizing any of them. It is a dormant history record and
 does not reopen C02 or the accepted P2-I1 decisions.
 
+The next lane is governed by the accepted
+[P2-I2 shared-pool co-conditioning brief](P2-I2-shared-pool-co-conditioning-brief.md).
+It binds L02's inherited graph relation, ecology-specific multi-source pool
+discriminator, combined-history consequence, insufficient-repetition case,
+native-first and producer-fallback posture, restoration-identity transition,
+comparison structure, decision timing, and claim ceiling. It supplies no
+calibration, registration, execution authority, or lane result.
+
+The brief was accepted by the project owner on 2026-07-14. P2-I2 work is now
+governed by one evidence-expandable
+[activity checklist](P2-I2-shared-pool-co-conditioning-checklist.md), one
+[cumulative decision record](P2-I2-decision-record.md), and subordinate
+[operational hypothesis projections](../hypotheses/p2-i2-operational-hypotheses.md).
+Every later activity, including capability and source-admission audits, must
+run as a named checklist iteration with retained evidence. `P2-I2-I01R1` has
+revalidated the [capability matrix](../contracts/p2-i2/i01-capability-matrix.json),
+[narrative audit](../reports/P2-I2-I01-source-current-capability-audit.md), and
+source/command provenance through the retained
+[closeout review](../reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md).
+The custom candidate-shaped probe is quarantined, CAP-04 is inadequate, and
+the corrected package passes only the source-audit gate. Subsequent admitted-
+source/restoration work and three retained mode realizations passed their
+separate gates. The current I04R2 package confirms the corrected comparator,
+future-I05 estimator path, I06 registration duties, response-window guards,
+and receipt-derived classifications 16/16 with 7/7 pure tests. The project
+owner accepted I04R2 as the sole progression authority under DEC-026 and
+passed CAL-PRE. Original I04 and I04R1 remain immutable historical artifacts.
+The I05 authorization history retains I05A's failed-closed 3/8 audit and the
+owner-accepted I05B/I05C one-shot and active-venv corrections. The sole
+governed arithmetic null completed with one builder call and zero retries; its
+raw evidence remains at `c3eabf3`. The owner-required no-absolute-path program
+then retained the I05D inventory and reviewed correction groups I05E through
+I05I, ending at commit `b5d0acb` with the complete current P2-I2 scope at zero
+literal or constructed machine-root findings. I05J/I05JA retain the exact
+five-seed/two-order arithmetic projection, native metric-calibration and frozen
+metric-sheet artifacts, and `analysis_arithmetic_delta = 1e-12`; reconstruction
+passes 11/11. I05J also retains exact process accounting and synchronized
+current-status projections. The owner accepted and retained the complete
+I05J/I05JA package. I06/I06A/I06B subsequently passed registration, and
+I07/I07A froze the exact 234-entry execution surface. C01 is retained bounded
+incomplete after one native start with no scientific result. The inactive I08A
+C02 successor removes only the 512 MiB address-space cap, externalizes native-
+exit receipts, and is review-ready after 8/8 tests and 18/18 candidate-free
+validation. DEC-051 records owner acceptance; deterministic activation passes
+19/19 and authorizes the package commit. Corrected entry 1 still requires the
+resulting full HEAD and exact preflight.
+
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,
 or lane result.

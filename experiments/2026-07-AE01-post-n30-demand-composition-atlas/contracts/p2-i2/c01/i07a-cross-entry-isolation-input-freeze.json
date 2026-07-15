@@ -1,0 +1,114 @@
+{
+  "artifact_id": "P2-I2-I07A-CROSS-ENTRY-ISOLATION-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I07A",
+  "lane_id": "AE01-L02",
+  "cycle_id": "P2-I2-C01",
+  "frozen_at": "2026-07-15",
+  "status": "owner_authorized_candidate_free_correction_input_freeze",
+  "authority": {
+    "decision_id": "P2-I2-DEC-046",
+    "change_id": "P2-I2-CHG-042",
+    "owner_direction": "These can actually be I07A"
+  },
+  "entry_authority": {
+    "parent_commit": "49c74e176b1acb0266316e0c0467c4a8cf426871",
+    "branch": "p2-i2-experiment",
+    "working_package_uncommitted": true
+  },
+  "reviewed_i07_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_c01_execution_policy_v2.json",
+      "role": "reviewed_effective_policy",
+      "sha256": "9a0649f18e99dff3c3f5bc7f8927ea8b369adde17e5160013a508e045c7d047e"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py",
+      "role": "reviewed_execution_source",
+      "sha256": "42b8486908831a928535f9594c7a15cc0d634c0025391d28ce32fc3b75fb6a61"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i2_execution_freeze.py",
+      "role": "reviewed_focused_tests",
+      "sha256": "927f48c72e96bb6a8a49cd683a5c581d26de12a3435aebb02c6d585cd29f6ea2"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/run-matrix.json",
+      "role": "reviewed_run_matrix",
+      "sha256": "57953a5fc93e8e05a95cdb7ca260c72bc28ea9388fd0804b064c1279ce8c48e8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/execution-binding-receipt.json",
+      "role": "reviewed_execution_binding",
+      "sha256": "c73276a0de176ce250691fbc03740a9011d938ea46acbf46510bcf5fed9811e6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/exec-freeze.json",
+      "role": "reviewed_inactive_exec_freeze",
+      "sha256": "c703eca51bc6155f44c5a3164c938361285b1f11dda506515fd4bc2fd4c93f1d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/c01/i07-candidate-free-validation.json",
+      "role": "reviewed_candidate_free_validation",
+      "sha256": "f0e4d6da3b5ce12c5ab41a410fd18427c35d45493f988f9d56a2405306867141"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I07-EXEC-FREEZE-review.md",
+      "role": "CHG_041_cross_entry_isolation_audit",
+      "sha256": "833d8cfea79665b2f30f13ccdd6aa386081739c5bcfec12438a6341fdd1dc8cf"
+    }
+  ],
+  "governance_declaration_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+      "role": "I07A_checklist_declaration_at_freeze",
+      "sha256": "d99ed235a5df644bfa2d9ae2b69ba9bf44fd7c46d3d32e928469f8c81fa04722"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "role": "I07A_hypothesis_declaration_at_freeze",
+      "sha256": "7617ecf58093ec63b960ece7f8def80b8edc96173fbbffa4e1059312d325174c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-decision-record.md",
+      "role": "DEC_046_authority_at_freeze",
+      "sha256": "f14b1d671f619203b34f1d66eca50d1bc8a81292563f110470fdd79094ce3b76"
+    }
+  ],
+  "allowed_corrections": [
+    "beneath-root no-symlink-component governed artifact creation",
+    "repository and PyGRC import-cache isolation under .venv/bin/python -B",
+    "current-entry-only mechanical attempt-2 eligibility reconstruction",
+    "exact-matrix-path fail-closed complete and evaluable manifest construction",
+    "consequential policy matrix binding freeze test validator and report identities"
+  ],
+  "immutable": [
+    "accepted I04R2 measurement and comparator semantics",
+    "accepted I05J arithmetic resolution",
+    "accepted I06 I06A and I06B registration semantics and values",
+    "three retained unranked dependence modes",
+    "234 primary matrix entries and one conditional retry ceiling per entry",
+    "resource envelopes and no-fallback boundary",
+    "candidate and scientific execution prohibition during I07A"
+  ],
+  "python_start_budget": {
+    "command_prefix": [
+      ".venv/bin/python",
+      "-B"
+    ],
+    "maximum_starts": 3,
+    "authorized_starts": [
+      "derived I07A binding and freeze refresh",
+      "focused pytest validation",
+      "final I07A validator"
+    ],
+    "replacement_after_failure": false
+  },
+  "gate_boundary": {
+    "candidate_execution_authorized": false,
+    "P2-I2-EXEC-FREEZE": "closed",
+    "I08_authorized": false,
+    "commit_authorized": false,
+    "owner_review_required": true
+  }
+}

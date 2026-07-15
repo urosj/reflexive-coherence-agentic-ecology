@@ -10,14 +10,20 @@ being placed here.
 
 - [Post-N30 Agentic-Ecology Demand and Composition Atlas roadmap](Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md)
 - [AE01 experiment workspace](2026-07-AE01-post-n30-demand-composition-atlas/README.md)
-- [Why AE01 matters for agentic ecology](2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
+- [Agentic Ecology: From Theory to Controlled Experiments](2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
+- [AE01 Agentic-Ecology View](2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
+- [P2-I2 Interpretative Synthesis](2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-interpretative-synthesis.md)
 - [Master program plan](../implementation/PostN30-plan.md)
 - [Master program checklist](../implementation/PostN30-checklist.md)
 
-AE01 has passed Review R2 and `P1-GATE` at `AE01-C2`. P2-I1 is closed with one
-bounded, explicitly constructed L01 result, and Review R3 passed without tuning
-it. P2-I2 is next. Every remaining lane retains independent calibration,
-registration, control-resolution, execution, and claim boundaries.
+AE01 remains at `AE01-C2`. P2-I1 is closed with an owner-accepted bounded L01
+result. P2-I2 is closed with an owner-accepted 234-entry main L02 result,
+corrected control resolution, and independent reconstruction. Its accepted
+Appendix A establishes bounded operation complementarity in a distinct live
+carrier; Appendix B/APP-B4 instead identifies a terminal-P temporal gate in
+P2-I2 active history. L03–L07 and cross-lane synthesis remain unexecuted, and
+every lane retains independent calibration, registration, control-resolution,
+execution, and claim boundaries.
 
 ## Experiment authority
 

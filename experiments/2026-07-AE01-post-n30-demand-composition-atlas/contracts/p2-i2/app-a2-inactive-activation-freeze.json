@@ -1,0 +1,186 @@
+{
+  "artifact_id": "P2-I2-APP-A2-INACTIVE-ACTIVATION-FREEZE",
+  "artifact_version": "1.0",
+  "experiment_id": "2026-07-AE01",
+  "iteration_id": "P2-I2-APP-A2",
+  "frozen_at": "2026-07-15T00:00:00+02:00",
+  "status": "validated_inactive_pending_owner_activation",
+  "authority": {
+    "decision_id": "P2-I2-DEC-069",
+    "change_id": "P2-I2-CHG-074",
+    "construction_authorized": true,
+    "static_validation_authorized": true,
+    "owner_acceptance_recorded": false,
+    "commit_authorized": false,
+    "campaign_authorized": false,
+    "reconstruction_authorized": false,
+    "scientific_result_authorized": false
+  },
+  "entry_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json",
+    "sha256": "f87bda63615cc2ef9224d7b967d3f07dca94d41e3d45a2a25cf65b59d4db5dd6"
+  },
+  "retained_rcae_entry": {
+    "commit": "1f698168549cab8a214043ffd0a8cc3c5504baf7",
+    "branch": "p2-i2-experiment",
+    "interpretation": "Last retained authority before APP-A2 construction; activation authorization must bind a later containing implementation commit without changing these APP-A1 bytes."
+  },
+  "retained_app_a1": {
+    "execution_freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-app-a2-execution-freeze.json",
+      "sha256": "26579a0ed51761777d028e4209431f72ac1b7281b9ac6c5a5132a06d3844c9e5"
+    },
+    "fixture_freeze": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json",
+      "sha256": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3"
+    },
+    "owner_acceptance": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-owner-acceptance-and-retention.json",
+      "sha256": "7fbbfb4c0644246633c22fd51ce42b7d9631096a8cc659de5e22fad1bf67ca35"
+    }
+  },
+  "implementation_files": [
+    {
+      "role": "analysis",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_analysis.py",
+      "sha256": "f273caddee68eea142b0c83b22380df969c7065a1510bb1e577441b19eb51e7a"
+    },
+    {
+      "role": "runner",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py",
+      "sha256": "f15c2f6b07fb3488a4e0e0471077d582d90af82f683695c6c73891260a2ab3af"
+    },
+    {
+      "role": "reconstructor",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_reconstruct.py",
+      "sha256": "0af95ee22a8819ceab7675afdb02cff066d52c60f801b1192ad822a8367ce2f4"
+    },
+    {
+      "role": "validator",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_validate.py",
+      "sha256": "43457a6dd6f46a206396f1ff9f2111936eefba5be1cac9842f6a757607e71c4a"
+    }
+  ],
+  "graph": {
+    "repository_id": "graph-reflexive-coherence",
+    "commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "clean": true,
+    "mutation_allowed": false,
+    "source_identities": [
+      {
+        "path": "src/pygrc/__init__.py",
+        "sha256": "3b1571b7cd4c8b11c014968c7255fca3ce54d16b3d06ef26df557357202b697e"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+        "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+        "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f"
+      },
+      {
+        "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+        "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931"
+      }
+    ]
+  },
+  "environment": {
+    "logical_executable": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "interpreter_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "python_flags": [
+      "-B"
+    ],
+    "pythonhashseed": "0",
+    "pythondontwritebytecode": "1",
+    "pythonpath": "external-repository:graph-reflexive-coherence/src",
+    "direct_dependencies": {
+      "matplotlib": "3.10.9",
+      "networkx": "3.6.1",
+      "pyvis": "0.3.2",
+      "PyYAML": "6.0.3"
+    },
+    "ambient_interpreter_allowed": false,
+    "ambient_pygrc_allowed": false
+  },
+  "normalized_commands": {
+    "campaign": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=../graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --campaign --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+    "worker": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_run.py --worker --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+    "reconstruction": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_reconstruct.py --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json --input experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+    "validation": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_validate.py --entry-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-entry-freeze.json --activation-freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-activation-freeze.json"
+  },
+  "entry_isolation": {
+    "fresh_supervised_child_process_per_arm": true,
+    "fresh_model_and_registered_baseline_per_arm": true,
+    "worker_input_keys": [
+      "arm"
+    ],
+    "worker_stdout_only": true,
+    "per_arm_persisted_files": 0,
+    "earlier_result_reads": 0,
+    "shared_mutable_adapter_cache_queue_or_rng": false,
+    "adaptive_branch_or_parameter_change": false,
+    "outcome_dependent_retry": false,
+    "outcome_dependent_order": false,
+    "all_frozen_arm_attempts_continue_after_an_incomplete_arm": true,
+    "another_arm_claim_or_output_may_satisfy_current_arm": false,
+    "matrix_completion_fails_closed": true
+  },
+  "campaign_policy": {
+    "campaign_invocations": 1,
+    "campaign_retry_limit": 0,
+    "arm_count": 19,
+    "attempts_per_arm": 1,
+    "arm_retry_limit": 0,
+    "maximum_child_processes": 19,
+    "maximum_packet_events_per_arm": 32,
+    "maximum_queue_length": 4,
+    "maximum_nodes": 12,
+    "maximum_edges": 28,
+    "maximum_wall_seconds_per_arm": 30,
+    "address_space_limit": "none",
+    "single_aggregate_output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+    "read_only_reconstruction_output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+    "outputs_absent_now": true,
+    "aggregate_exclusive_claim_consumes_campaign": true,
+    "failed_claim_is_permanent": true
+  },
+  "future_activation_authorization": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-activation-authorization.json",
+    "present_now": false,
+    "campaign_authorized_now": false,
+    "owner_acceptance_required": true,
+    "containing_commit_required": true,
+    "retention_before_campaign_required": true,
+    "required_authority_fields": [
+      "owner_acceptance=true",
+      "implementation_commit=<containing commit>",
+      "campaign_authorized=true",
+      "campaign_invocations=1",
+      "campaign_retry_limit=0",
+      "attempts_per_arm=1",
+      "arm_retry_limit=0",
+      "normalized_campaign_command=<exact frozen command>",
+      "normalized_worker_command=<exact frozen command>",
+      "normalized_reconstruction_command=<exact frozen command>"
+    ]
+  },
+  "static_validation_policy": {
+    "output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-inactive-static-validation.json",
+    "pygrc_imports": 0,
+    "scientific_models": 0,
+    "child_arm_starts": 0,
+    "scientific_gate_signatures": 0,
+    "runtime_outputs_created": 0,
+    "Appendix_results_assigned": 0
+  },
+  "current_counts": {
+    "campaign_starts": 0,
+    "child_arm_starts": 0,
+    "scientific_models": 0,
+    "scientific_gate_signatures": 0,
+    "Appendix_results": 0
+  },
+  "evidence_effect_now": "Validated inactive implementation freeze only. No APP-A2 scientific activity or conclusion is authorized."
+}

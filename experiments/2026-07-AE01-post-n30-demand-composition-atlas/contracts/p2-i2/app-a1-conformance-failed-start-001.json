@@ -1,0 +1,71 @@
+{
+  "artifact_id": "P2-I2-APP-A1-CONFORMANCE-FAILED-START-001",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-A1",
+  "recorded_at": "2026-07-15T00:00:00+02:00",
+  "classification": "implementation_harness_intervention_defect",
+  "authority": {
+    "base_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json",
+    "base_freeze_sha256": "64f1f780192ab65b14ae2de2c4630abd7ac7e83d121c3196579b18da4be052c3",
+    "base_harness_sha256": "7727ed2dd5150c0eaef9886e1502259c52ec6fc3057da5562cdc1cea053094be",
+    "normalized_command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=external-repository:graph-reflexive-coherence/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a1_conform.py --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-fixture-control-conformance-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a1-runtime-conformance.json",
+    "repository_head": "851c3dcfac4673822404f0f8863719ba44ab878b",
+    "graph_head": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "invoked_executable": ".venv/bin/python",
+    "pygrc_binding": "external-repository:graph-reflexive-coherence/src"
+  },
+  "attempt": {
+    "evidence_invocations_started": 1,
+    "evidence_invocations_consumed": 1,
+    "exit_code": 1,
+    "governed_output_written": false,
+    "reconstruction_invocations": 0,
+    "retry_under_base_freeze_allowed": false,
+    "models_constructed_before_stop": 4,
+    "fully_completed_candidate_free_branches": [
+      "native_common",
+      "all_diverted",
+      "label_permuted"
+    ],
+    "stopped_branch": "carrier_clamped",
+    "stopped_before_response_production_record": true
+  },
+  "failure": {
+    "exception_type": "InvalidStateTransitionError",
+    "message": "LGRC-2 packet ledger node_coherence_total does not match state",
+    "location": "carrier-clamp response production after model.set_state",
+    "cause": "The harness changed four carrier node coherences through an explicit control intervention but retained the pre-intervention packet-ledger conserved-total projection.",
+    "pygrc_disposition": "PyGRC correctly rejected an internally inconsistent runtime state.",
+    "scientific_disposition": "No scientific result; the failure concerns construction of a candidate-free control intervention only."
+  },
+  "quarantine": {
+    "scientific_fixture_values_used": false,
+    "app_a2_arms_executed": 0,
+    "scientific_gate_signatures_evaluated": 0,
+    "support_or_falsification_assigned": false,
+    "app_a1_accepted": false,
+    "commit_authorized": false,
+    "graph_mutated": false
+  },
+  "required_correction": {
+    "scope": "same APP-A1 conformance harness only",
+    "mechanism": "Rebuild the packet ledger through public pygrc.models.build_lgrc9v3_packet_ledger after the imposed coherence edit and before model.set_state.",
+    "preserve": [
+      "packet records",
+      "packet-event records",
+      "empty event queue",
+      "packet policies",
+      "causal/runtime/evidence modes",
+      "fixed-topology and acceptance flags"
+    ],
+    "recompute": [
+      "node_coherence_total",
+      "conserved_budget_total",
+      "budget_before",
+      "budget_after",
+      "budget_error"
+    ],
+    "fixture_or_gate_change": false,
+    "replacement_requires_separate_owner_authorization": true
+  }
+}

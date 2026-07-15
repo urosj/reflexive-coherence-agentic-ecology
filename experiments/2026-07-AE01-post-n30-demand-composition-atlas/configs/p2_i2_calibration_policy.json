@@ -1,0 +1,119 @@
+{
+  "evidence_effect": "resolution_only_no_candidate_evidence_when_executed_in_I05",
+  "schema_version": "1.0.0",
+  "calibration_id": "rcae-p2-i2-shared-candidate-blind-matched-null-v1",
+  "iteration_authorized_to_execute": "P2-I2-I05_only_after_owner_acceptance_of_I04",
+  "candidate_blind": true,
+  "runtime_execution": false,
+  "pygrc_imported": false,
+  "shared_across_modes": true,
+  "shared_identity_rationale": "all retained modes use the same downstream B-coherence-gain unit, identity orientation, one-opportunity aggregation, two-order pairing family, missingness policy, and normalized paired-margin calculation; the null exercises only that analysis surface and no upstream carrier",
+  "analysis_policy_ref": "configs/p2_i2_analysis_policy.json",
+  "measurement_resolution": 1e-12,
+  "measurement_resolution_source": "contracts/metric-sheets/AE01-L02.json#/record/resolution_policy/measurement_resolution",
+  "calibration_seeds": [
+    19,
+    43,
+    71,
+    109,
+    163
+  ],
+  "candidate_seeds_excluded": [
+    101,
+    211,
+    307
+  ],
+  "order_strata": [
+    "source_role_1_then_source_role_2",
+    "source_role_2_then_source_role_1"
+  ],
+  "matched_null_generator": {
+    "kind": "equal_synthetic_response_pairs_over_two_order_strata",
+    "value_representation": "exact_rational_string",
+    "panels": [
+      {
+        "seed": 19,
+        "source_role_1_then_source_role_2": "1/23",
+        "source_role_2_then_source_role_1": "2/23"
+      },
+      {
+        "seed": 43,
+        "source_role_1_then_source_role_2": "3/23",
+        "source_role_2_then_source_role_1": "4/23"
+      },
+      {
+        "seed": 71,
+        "source_role_1_then_source_role_2": "5/23",
+        "source_role_2_then_source_role_1": "6/23"
+      },
+      {
+        "seed": 109,
+        "source_role_1_then_source_role_2": "7/23",
+        "source_role_2_then_source_role_1": "8/23"
+      },
+      {
+        "seed": 163,
+        "source_role_1_then_source_role_2": "9/23",
+        "source_role_2_then_source_role_1": "10/23"
+      }
+    ],
+    "pair_rule": "for each seed and order stratum, null_candidate and null_comparator receive the same exact rational response",
+    "selection_provenance": "fixed rank-derived rational sequence with prime denominator 23; selected without loading any I03 source or candidate/runtime value",
+    "scientific_interpretation": "none; the panels exercise numerical symmetry and analysis resolution only"
+  },
+  "estimator": "maximum of measurement_resolution and the maximum absolute matched-null normalized margin across all seeds and both order strata",
+  "delta_status": "pending_I05_execution",
+  "forbidden_inputs": [
+    "candidate artifacts or outcomes",
+    "candidate seeds",
+    "PyGRC imports, models, snapshots, runtime records, or graph values",
+    "I03 conformance fixture values, observations, branches, topologies, comparators, outcomes, or digests",
+    "P2-I1 calibration panels, delta, metric results, or evidence",
+    "post-outcome tuning"
+  ],
+  "quarantine_proof": {
+    "i03_registry_ref": "contracts/p2-i2/i03cr1-hybrid-closeout-registry.json#/fixture_quarantine_registry",
+    "null_rational_strings_absent_from_registered_I03_sources": true,
+    "only_equal_numeric_value_allowed": "measurement_resolution 1e-12 from the independently frozen pre-I03 L02 metric sheet",
+    "i03_sources_loaded_by_generator": false
+  },
+  "execution_policy": {
+    "python": ".venv/bin/python",
+    "entrypoint": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py",
+    "command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_calibration.py --analysis-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_analysis_policy.json --calibration-policy experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_calibration_policy.json --preregistration experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04-calibration-preregistration.json --authorization experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i2/i05/matched-null-calibration.json",
+    "working_directory": "repository_root",
+    "dependencies": [
+      "Python 3.12 standard library"
+    ],
+    "max_governed_invocations": 1,
+    "max_infrastructure_retries": 1,
+    "resource_envelope": {
+      "max_runtime_seconds": 120,
+      "max_memory_mb": 512,
+      "max_disk_mb": 256
+    },
+    "failure_rule": "a config, identity, schema, candidate-exclusion, quarantine, output, or reconstruction failure leaves I05 invalid or incomplete; no parameter adaptation is permitted"
+  },
+  "authorization_requirement": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05-calibration-execution-freeze.json",
+    "must_be_absent_in_I04": true,
+    "required_artifact_id": "P2-I2-I05-CALIBRATION-EXECUTION-FREEZE",
+    "required_iteration_id": "P2-I2-I05",
+    "required_CAL_PRE_gate": "passed_after_owner_acceptance",
+    "required_governed_invocations": 1,
+    "identity_rule": "the later I05 freeze must bind the exact I04 preregistration, analysis policy, and calibration policy SHA-256 identities supplied to the entry point"
+  },
+  "expected_I05_artifacts": [
+    "owner-authorized I05 calibration-execution freeze binding exact I04 identities",
+    "matched-null calibration record with every raw pair and per-order per-seed margin",
+    "calibration input and analysis identities",
+    "frozen lane-local metric sheet with populated delta status, value, rationale, and calibration reference only",
+    "reconstruction receipt proving byte-identical governed output"
+  ],
+  "I04_execution_boundary": {
+    "matched_null_executed": false,
+    "calibration_record_created": false,
+    "delta_computed_or_frozen": false,
+    "candidate_execution_authorized": false
+  }
+}

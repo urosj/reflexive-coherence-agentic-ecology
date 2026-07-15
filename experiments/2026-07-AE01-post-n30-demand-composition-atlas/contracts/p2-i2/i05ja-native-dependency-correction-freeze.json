@@ -1,0 +1,52 @@
+{
+  "activity_id": "P2-I2-I05JA-NATIVE-DEPENDENCY-CORRECTION",
+  "artifact_id": "P2-I2-I05JA-NATIVE-DEPENDENCY-CORRECTION-FREEZE",
+  "artifact_version": "1.0.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-034",
+    "decision_id": "P2-I2-DEC-041",
+    "parent_commit": "b5d0acbac6de34b0cbd40b3d16a05f6356d5b709"
+  },
+  "correction_scope": {
+    "dependency_install": "jsonschema==4.26.0",
+    "original_I05J_freeze_immutable": true,
+    "retry": "one unchanged retry of the exact original I05J native freeze-resolution command",
+    "scientific_or_estimator_change": false
+  },
+  "dependency_install_command_identity": {
+    "normalized_argv": [
+      ".venv/bin/pip",
+      "install",
+      "jsonschema==4.26.0"
+    ],
+    "target_environment": ".venv"
+  },
+  "frozen_pre_correction_identities": {
+    "failure_record_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05ja-native-dependency-failure.json",
+    "failure_record_sha256": "e122889b4e9aa19b4eedfb87087d71161dd4d9036ebebde2c9b8c0b6202a58bf",
+    "original_I05J_freeze_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-metric-closeout-input-freeze.json",
+    "original_I05J_freeze_sha256": "c5fdf5e65b65c1f162f3baf414d4c6d562d10a54b2d19726cb4ba72c6b0bcc74",
+    "policy_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05j_metric_closeout_policy.json",
+    "policy_sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935"
+  },
+  "invocation_ceiling_after_correction": {
+    "candidate_or_control_invocations": 0,
+    "conformance_or_scientific_invocations": 0,
+    "dependency_install_starts": 1,
+    "I05J_validator_entrypoint_starts": 2,
+    "native_freeze_resolution_entrypoint_starts_total": 2,
+    "native_retry_starts": 1,
+    "null_builder_or_wrapper_invocations": 0,
+    "other_python_process_starts": 0,
+    "pygrc_imports_or_model_instantiations": 0
+  },
+  "iteration_id": "P2-I2-I05JA",
+  "lane_id": "AE01-L02",
+  "native_retry_command_identity": "the unchanged native_command_identity frozen by P2-I2-I05J-METRIC-CLOSEOUT-INPUT-FREEZE",
+  "outputs_absent_before_correction": {
+    "frozen_metric_sheet": true,
+    "metric_calibration": true
+  },
+  "review_stop": "dependency installation and one unchanged native retry only; owner review and commit authority remain required; CAL-GATE and I06 remain closed",
+  "scientific_result": false
+}

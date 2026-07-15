@@ -2,9 +2,9 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.26
+**Baseline revision:** 0.43
 
-**Date:** 2026-07-12
+**Date:** 2026-07-15
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
 
@@ -46,7 +46,7 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.26 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.40 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
 | Phase 2 — Atlas execution | Open for calibration and registration | P2-GATE | Candidate execution remains lane-gated |
@@ -1135,16 +1135,145 @@ Exit gate `P2-I1-GATE`:
 Entry condition:
 
 - [x] `P1-GATE` passed.
+- [x] Accepted P2-I2 semantic brief binds the D-039 discriminator,
+  one-pool factorization, mode-aware controls, decision timing, and claim
+  ceiling. Evidence:
+  [P2-I2 brief](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md).
+- [x] `P2-I2-BRIEF-GATE` passed with one evidence-expandable activity
+  checklist, one cumulative decision record, and subordinate operational
+  hypothesis projections. Evidence:
+  [P2-I2 checklist](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md).
+- [x] Owner-accepted `P2-I2-DEC-011` corrects singular mode-selection wording:
+  state-carried, history-carried, and hybrid remain three mode-specific
+  realizations through execution and interpretation; native/producer/missing-
+  prerequisite selection occurs within each mode. The brief gate remains
+  passed and no scientific evidence is assigned.
+- [x] `P2-I2-SOURCE-AUDIT-GATE` passed after I01R1 revalidated the
+  preregistered read-only audit, quarantined candidate-shaped custom-probe
+  behavior, corrected CAP-04 to inadequate, and retained a composition-
+  capable but control-incomplete native candidate with exact source digests
+  and no source admission or lane result. Evidence:
+  [P2-I2 I01 audit](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01-source-current-capability-audit.md)
+  and [I01R1 revalidation](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I01R1-capability-audit-closeout-revalidation.md).
+- [x] `P2-I2-SOURCE-ADMISSION-GATE` re-passed after I02R2 admitted updated
+  graph revision `83e3a300426631ee4df71b661b67d4fcfdfed594`, validated 31 exact sources
+  and public callables, confirmed persisted reset baseline across save/load,
+  admitted separately versioned reset-aware identity v2, retained v1 unchanged,
+  and bound legacy fail-closed/explicit-rebase provenance. Provider selection
+  remains null and no scientific evidence is assigned. Evidence:
+  [P2-I2 I02 report](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02-source-admission-and-restoration-transition.md)
+  [I02R1 revalidation](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R1-admission-closeout-revalidation.md),
+  and [I02R2 reset revalidation](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I02R2-reset-baseline-persistence-revalidation.md).
+- [x] `P2-I2-I03A` state-carried causal design and its DEC-012-governed
+  `P2-I2-I03AR1` runtime conformance were accepted. After checklist-first
+  I03AR1R1 corrected only strict derived floating-point delta comparison, the
+  native realization passed 136/136 assertions and reconstructed byte-for-
+  byte. The original stopped invocation remains `infrastructure_invalid` with
+  no output/evidence. This is implementation conformance only. Evidence:
+  [I03A design](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03A-state-carried-realization-and-operational-hypothesis-freeze.md)
+  and [I03AR1 conformance](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I03AR1-state-carried-runtime-conformance.md).
+- [x] `P2-I2-DISCRIMINATOR-GATE` passed after owner-accepted state-carried,
+  history-carried, and hybrid realizations plus compact I03F composition. All
+  three modes remain retained and unranked.
+- [x] `P2-I2-CAL-PRE-GATE` passed after owner acceptance of I04R2 as the sole
+  progression authority. Original I04/I04R1 remain immutable history; I04R2
+  passed 16/16 focused checks and 7/7 pure tests with the exact raw three-arm
+  estimator and byte reconstruction. It opened only a separately frozen single
+  I05 arithmetic-null invocation; that candidate-blind path later completed
+  without opening candidate authority.
+  Evidence:
+  [I04R2 gate record](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-owner-acceptance-and-cal-pre-gate.json).
+- [x] Review and accept the DEC-028 I05B correction. I05A's 3/8 result remains
+  the failed-closed proposed-DEC-027 history; the correction now passes 12/12
+  zero-null tests and 12/12 checks for atomic permanent claims, one attempt/
+  zero retries, committed-I05/interpreter/command binding, and readback-only
+  receipts without changing I04R2. Review:
+  [I05B correction](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I05B-one-shot-safety-correction.md).
+- [x] The sole governed I05 arithmetic null completed with one builder call,
+  zero retries, one readback, and a refused second start. Portability
+  corrections through I05I are owner-accepted and retained at `b5d0acb`.
+  I05J/I05JA retain native metric-calibration and frozen metric-sheet artifacts,
+  `analysis_arithmetic_delta = 1e-12`, and 11/11 reconstruction validation.
+  The owner accepts and authorizes commit of the amended I05J/I05JA package,
+  including exact process accounting and synchronized projections; CAL-GATE is
+  passed.
+- [x] I06/I06A exact three-mode registration is owner-accepted at `49c74e1`:
+  both stages pass 14/14, all three composite baselines retain save/load/reset
+  identity, and no candidate/scientific operation occurred.
+- [x] I06B is owner-accepted after the I07 authority audit exposed three missing
+  execution-readiness primitives. Its additive overlay preserves accepted
+  I06/I06A bytes and passes 15/15 candidate-free checks with zero blockers and
+  zero PyGRC/model/packet/scientific activity. REG-GATE is restored and the
+  already-declared I07 freeze resumes from its retained audit; EXEC-FREEZE and
+  candidate execution remain closed. Evidence:
+  [I06B report](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06B-execution-readiness-correction.md).
+- [x] Complete I07 candidate-free construction and return it for owner review.
+  Its exact freeze construction
+  generated 234 primary entries and a 20-file binding. The second frozen
+  `.venv` start failed before test collection because `pytest` was absent. The
+  owner directs an in-place I07 install/accounting correction rather than I07A:
+  install only in `.venv`, preserve the failure, refresh derived bindings, then
+  use one replacement test start and one final validator start. That continuation
+  completes with `pytest 9.1.1`, 7/7 tests, 25/25 validation, and zero blockers.
+  No PyGRC/model/packet/candidate/control/scientific activity occurred and
+  EXEC-FREEZE remains closed pending explicit owner acceptance.
+- [x] Complete the owner-requested I07 cross-entry-isolation audit before
+  acceptance. Row-local dataflow and 1,404 unique relative governed paths pass;
+  unchecked parent symlinks, shared ignored bytecode caches, non-reconstructed
+  retry-ledger eligibility, and absent fail-closed 234-entry completion remain
+  blockers. No Python, PyGRC, candidate, or scientific operation ran.
+- [x] Correct the four CHG-041 isolation blockers as owner-directed I07A.
+  Beneath-root no-symlink I/O, `-B` import-cache refusal, current-entry-only
+  retry reconstruction, and exact-path fail-closed 234-entry completion pass
+  15/15 focused tests and 17/17 final checks. All matrix entries remain
+  unchanged; three candidate-free starts pass with zero retries and zero
+  PyGRC/model/packet/candidate/scientific activity. DEC-047/CHG-043 record owner
+  acceptance and checkpoint-commit authority; the exact inactive EXEC-FREEZE is
+  passed while live activation and I08 remain separately closed.
+- [x] Prepare the separately owner-directed I08 activation candidate without
+  starting the matrix. The accepted I06B/I07/I07A checkpoint is retained at
+  `5c2c248`; exact live-import cleanup removes 207 ignored artifacts with zero
+  tracked-byte changes; and candidate-free preactivation validation passes
+  18/18 in two `.venv/bin/python -B` starts with zero retries. All live flags
+  remain false and the package is uncommitted pending explicit review.
+- [x] Accept and authorize commit of the exact I08 activation under
+  DEC-049/CHG-045. The transition binds the reviewed candidate and preparation
+  hashes while leaving the full live HEAD to the normalized command argument.
+  No matrix claim or output enters the activation commit; execution starts only
+  after exact post-commit preflight.
+- [x] Retain C01 bounded incomplete after the exact post-commit preflight and
+  first permanent claim. Native OpenBLAS termination produced no governed
+  terminal receipt, so attempt 2 is mechanically unauthorized; 0/234 entries
+  are evaluable and no scientific result exists.
+- [x] Complete owner-directed I08A candidate-free construction of inactive C02.
+  All 234 scientific projections are preserved; only `RLIMIT_AS` enforcement
+  is removed; runtime/file-size ceilings remain; and an external supervisor
+  owns native-exit receipts. Focused tests pass 8/8 and final validation passes
+  18/18 with zero blockers or candidate/scientific activity. DEC-051 records
+  owner acceptance and omits a duplicate activation review; deterministic
+  activation passes 19/19 and authorizes the complete package commit. Live use
+  still requires the resulting full HEAD and exact post-commit preflight. Evidence:
+  [I08A review](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I08A-C02-resource-supervisor-correction.md).
+- [x] Complete the corrected C02 matrix and the I09-I11 retained-evidence
+  closeout sequence. C02 is complete at 234/234; I09A resolves every required
+  control through the accepted I04R2 estimator; I10 independently reconstructs
+  retained calibration, registration, execution, and control identities; and
+  owner-accepted I11 passes 30/30 terminal checks without new scientific or
+  graph runtime. Evidence:
+  [I11 terminal closeout](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I11-terminal-closeout.md)
+  and [I11 acceptance](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-owner-acceptance-and-close-gate.json).
 
 Required lane work:
 
-- [ ] Define the shared carrier and access scope.
-- [ ] Distinguish common substrate memory from database/mailbox semantics.
-- [ ] Define accumulation, mixing, depletion, saturation, and leakage.
-- [ ] Define how multiple attributable contributions jointly constitute one
+- [x] Complete every P2-I2 activity as a named iteration in the lane-local
+  checklist; capability audits and source admission may not occur off-ledger.
+- [x] Define the shared carrier and access scope.
+- [x] Distinguish common substrate memory from database/mailbox semantics.
+- [x] Define accumulation, mixing, depletion, saturation, and leakage.
+- [x] Define how multiple attributable contributions jointly constitute one
   functional pool state/history and condition later continuation beyond
   independent writes or a global aggregate.
-- [ ] Apply the common lane completion contract.
+- [x] Apply the common lane completion contract.
 
 Lane-specific boundary:
 
@@ -1155,11 +1284,18 @@ Blocked: collective memory, communication, resource economy, or coordination.
 
 Exit gate `P2-I2-GATE`:
 
-- [ ] Pool pattern and sharedness are classified.
-- [ ] Combined-state dependence is distinguished from inherited single-writer
+- [x] Pool pattern and sharedness are classified.
+- [x] Combined-state dependence is distinguished from inherited single-writer
   medium perturbation and separate contribution success.
-- [ ] Mixing, leakage, and hidden-controller risks are recorded.
-- [ ] New requirements and debts are recorded.
+- [x] Mixing, leakage, and hidden-controller risks are recorded.
+- [x] New requirements and debts are recorded.
+
+`P2-I2-GATE` passed under owner-accepted DEC-061. The retained terminal is
+`supported_bounded_candidate` through `AE01-L02-R05`, with lane-wide
+`scaffold_dependent` support and `T3_operational_class`. The state-carried mode
+is a native-expression candidate; history-carried and hybrid retain the common
+active-history naturalization debt. The maximum claim remains the bounded
+shared-pool co-conditioning demand pattern.
 
 ### P2-I3 — Trail or stigmergic field lane
 
@@ -1339,7 +1475,7 @@ Exit gate `P2-I7-GATE`:
 Entry condition:
 
 - [x] `P2-I1-GATE` passed.
-- [ ] `P2-I2-GATE` passed.
+- [x] `P2-I2-GATE` passed.
 - [ ] `P2-I3-GATE` passed.
 - [ ] `P2-I4-GATE` passed.
 - [ ] `P2-I5-GATE` passed.
@@ -2014,6 +2150,16 @@ Use this section when checking a conditional item as deferred.
 | P1-I5-GATE | Revision 0.24 tooling contract, execution/interpretation policies, seven metric sheets, seven valid/four invalid fixtures, calibration and relation commands, 32 focused tests, duplicate reconstruction, and missing-runtime receipt | 2026-07-10 | Accepted by Review R2; passed |
 | P1-GATE | Structured R2 checklist and closeout; `AE01-C1` and `AE01-C2` assigned; no-positive-result boundary preserved | 2026-07-10 | Project-owner-supplied Review R2 accepted; passed |
 | P2-I1-THEORY-GATE | Accepted P2-I1 brief and detailed checklist; bounded niche-conditioning meaning, anti-subsumption, negative/redirective outcomes, and open decision timing preserved | 2026-07-10 | Accepted by project owner; passed |
+| P2-I2-BRIEF-GATE | Accepted P2-I2 brief, checklist-first activity ledger, cumulative decision record, subordinate operational-hypothesis scaffold, and owner-accepted three-mode retention correction; no source audit or scientific evidence assigned by the gate | 2026-07-14 | Accepted by project owner; passed after DEC-011 scope clarification |
+| P2-I2-SOURCE-AUDIT-GATE | Frozen audit scope, corrected eleven-question matrix, exact graph revision/source digests/command provenance, quarantined candidate-shaped probe, CAP-04 inadequate, composition-capable native candidate, explicit missing surfaces, and clean graph checkout; no source admission, realization selection, or lane result | 2026-07-14 | I01R1 retained revalidation; passed |
+| P2-I2-SOURCE-ADMISSION-GATE | Updated exact graph revision, 31 source/import/callable identities, reset-baseline persistence across save/load, restoration identity v1/v2 boundary, legacy/rebase compatibility, and later bounded-continuation duty; no realization, restoration correctness beyond generic conformance, or scientific result | 2026-07-14 | I02R2 manifest, validation/report, and DEC-009; passed after revalidation |
+| P2-I2-DISCRIMINATOR-GATE | Three retained unranked state/history/hybrid realization authorities, bounded conformance, compact family composition, exact downstream obligations, and fixture quarantine | 2026-07-14 | I03F and DEC-020; passed |
+| P2-I2-CAL-PRE-GATE | Owner-accepted I04R2 sole progression authority; complete-arm strongest-marginal comparator, exact arithmetic-only I05 path, reconstruction, fixed window, causal receipts, and no candidate/null execution at passage | 2026-07-14 | I04R2 validation and DEC-026; passed |
+| P2-I2-I05-CLOSEOUT | Exact accepted-I04 identities; one consumed governed arithmetic-null attempt; complete I05E–I05I portability retention; amended I05J/I05JA native metric artifacts with delta `1e-12`, 11/11 reconstruction, and process/package closeout | 2026-07-14 | Owner-accepted and commit-authorized; I05 complete |
+| P2-I2-CAL-GATE | Owner-accepted I05J/I05JA metric closeout; candidate-blind delta `1e-12`; exact process/package accounting; no scientific effect | 2026-07-14 | Passed; opens unstarted I06 registration construction only |
+| P2-I2-REG-GATE | Owner-accepted I06/I06A three-mode registration plus I06B execution-readiness overlay; exact restoration, causal-receipt, runtime-tolerance, and registration boundaries | 2026-07-15 | Passed; accepted I07/I07A freeze construction followed |
+| P2-I2-EXEC-FREEZE | Accepted I07A inactive C01 freeze and activation history; C01 later bounded incomplete; I08A preserves all 234 projections and passes 8/8, 18/18 correction validation, and 19/19 activation validation | 2026-07-15 | C01 consumed/bounded incomplete; C02 correction/activation owner-accepted and commit-authorized; full committed HEAD and exact preflight still required |
+| P2-I2-GATE | Complete 234/234 C02 evidence, corrected I09A control projection, I10 retained-evidence reconstruction, and owner-accepted 30/30 I11 terminal closeout | 2026-07-15 | DEC-061; passed with `supported_bounded_candidate`, `AE01-L02-R05`, `scaffold_dependent`, and `T3_operational_class`; synthesis and native-substitution work remain unopened |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2086,7 +2232,24 @@ Change log:
 | CL-026 | 2026-07-11 | P2-I1 closed with retained C02 evidence, `supported_bounded_candidate`, R05 bounded carrier-load invariance, explicit constructed support, and the bounded niche-conditioning demand-pattern ceiling. C01 remains bounded incomplete. Post-retention validation reproduced the controlling digests. Considered structural and decision-set alternatives are dormant history with no execution authority. R3 remains the next contract-adequacy review and may not tune the closed result. | P2-I1-GATE and R3 entry | Superseded by CL-027 |
 | CL-027 | 2026-07-11 | Review R3 passed without tuning P2-I1. Calibration provenance, registration evidence, and the Phase 1 meaning contracts proved adequate. No first-class `lane_registration` or `control_outcome` record is admitted. Concrete control-traversal friction creates one prospective requirement: future lanes emit a compact lane-local control-resolution index before terminal closure, with possible core promotion deferred to R4 after recurrence. P2-I1 remains closed and P2-I2 is next. | R3 closeout and P2-I2 entry | Superseded by CL-028 |
 | CL-028 | 2026-07-12 | Post-closeout N30/L01 clarification made explicit that N30 owns bounded history-conditioned eligibility while P2-I1's independent ecological discriminator is matched participant-relative differential possibility. N30's susceptibility-direction controls and P2-I1's fresh-runtime strengthening remain acknowledged. No hypothesis, stable ID, display name, artifact, terminal result, rung, or claim ceiling changed. | AE01 orientation and P2-I2 entry | Superseded by CL-029 |
-| CL-029 | 2026-07-12 | Revision 0.26 accepted D-039 and added a prospective post-R3 ecology-discriminator amendment for unexecuted lanes. Every future lane must bind its inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. L03 now requires trace dynamics beyond static persistence; L06 requires a budget-closing depletion/replenishment or return cycle beyond linear transport. Stable IDs, P2-I1, historical P1-I4 records, shared schemas, and retained evidence remain unchanged. | P2-I2 through P2-I7 pre-execution gates | Active |
+| CL-029 | 2026-07-12 | Revision 0.26 accepted D-039 and added a prospective post-R3 ecology-discriminator amendment for unexecuted lanes. Every future lane must bind its inherited graph relation, ecology-specific discriminator, controlled consequence, and insufficient-repetition case before calibration. L03 now requires trace dynamics beyond static persistence; L06 requires a budget-closing depletion/replenishment or return cycle beyond linear transport. Stable IDs, P2-I1, historical P1-I4 records, shared schemas, and retained evidence remain unchanged. | P2-I2 through P2-I7 pre-execution gates | Superseded by CL-030 |
+| CL-030 | 2026-07-14 | Revision 0.27 accepted the P2-I2 semantic brief and passed `P2-I2-BRIEF-GATE` with a lane-local checklist, cumulative decision record, and subordinate operational-hypothesis scaffold. Every P2-I2 activity is now required to run as a named checklist iteration; the source-current capability audit remains pending and no source admission, calibration, registration, execution, or lane result is assigned. | P2-I2 entry and all lane-local activity gates | Superseded by CL-031 |
+| CL-031 | 2026-07-14 | Revision 0.28 completed `P2-I2-I01` under a frozen read-only scope and passed `P2-I2-SOURCE-AUDIT-GATE`. The audit retains a bounded native node-coherence/packet/feedback/restoration shortlist plus explicit private-partition, history-shuffle, freeze/clamp, access-role, and pool-dynamics gaps. It records `P2-I2-CHG-002`, exact source/command provenance, focused conformance, and a clean graph worktree. No source is admitted, no realization is selected, and no lane evidence or result is assigned. | P2-I2 I01 closure and I02 entry | Superseded by CL-032 |
+| CL-032 | 2026-07-14 | Revision 0.29 completed checklist-first `P2-I2-I01R1` after owner-supplied capability-audit closeout review. It quarantines the custom combined/single/label behavioral probe from capability and scientific evidence, revalidates the audit from public source and pre-existing generic tests, corrects CAP-04 from adequate to inadequate, distinguishes public causal-history evidence overlays from active history, and retains explicit intervention/mode/restoration ownership profiles. `P2-I2-SOURCE-AUDIT-GATE` re-passes; no source, realization, dependence mode, calibration, candidate evidence, or lane result is assigned. | P2-I2 corrected source-audit closure and I02 entry | Superseded by CL-033 |
+| CL-033 | 2026-07-14 | Revision 0.30 completed checklist-first `P2-I2-I02` under a frozen read-only scope. It admits the exact current graph revision, seventeen source roles, twenty-four public symbol roles, and native LGRC9V3 restoration provider; retains the P2-I1 RCAE projection as historical-only at this revision; forbids silent provider transitions; and binds external-state composition and later bounded continuation duties. `P2-I2-CHG-004` corrects and revalidates the callable scope before admission. `P2-I2-SOURCE-ADMISSION-GATE` passes; I03 is ready with no realization, dependence mode, calibration, candidate evidence, or lane result assigned. | P2-I2 source-admission closure and I03 entry | Superseded by CL-034 |
+| CL-034 | 2026-07-14 | Revision 0.31 completed checklist-first `P2-I2-I02R1` after owner-supplied identity/authority/transition review. It corrects CHG-004 to `source_admission_scope_correction`, honestly reconstructs but does not invent byte identity for freeze 1.0.0, ties imports and all twenty-four symbol contracts to the admitted checkout, independently validates provider input/schema/canonical digest boundaries, and dispositions all continuation-relevant state. It finds private reset baseline outside current-state identity and requires reset prohibition or explicit composite identity. Provider selection remains null and configured-only; no realization, restoration correctness, candidate evidence, or L02 result is assigned. | P2-I2 source-admission revalidation and I03 entry | Superseded by CL-035 |
+| CL-035 | 2026-07-14 | Revision 0.32 completes checklist-first `P2-I2-I02R2` after the project owner reports an upstream PyGRC reset-baseline correction at clean revision `83e3a300426631ee4df71b661b67d4fcfdfed594`. Exact read-only validation admits 31 sources/callables, confirms original/restored reset equality, three-cycle persistence, explicit rebase, legacy/malformed fail-closed behavior, unchanged v1, and reset-aware v2. Provider selection remains null; no realization or scientific evidence is assigned. | P2-I2 reset-baseline source/provider revalidation and I03 entry | Superseded by CL-036 |
+| CL-036 | 2026-07-14 | Revision 0.33 records the owner-directed staged I03 program—8A state-carried, review, 8B history-carried, review, 8C hybrid, review—and brings only `P2-I2-I03A` to review-ready. The state-carried profile selects a `pygrc_native_candidate`: native packet writes/debit, one node-coherence carrier, native feedback read, and model-owned later producer, with RCAE limited to role/access declarations, orchestration, matching, and guards. Static validation passes 18 invariants over 31 admitted sources, eight selected callables, seven cells, five controls, nine OPs, and eleven CAP dispositions. No candidate/calibration operation or scientific result is assigned; the umbrella discriminator gate remains open and I03B/I04 remain unauthorized. | P2-I2 I03A owner review boundary | Superseded by CL-037 |
+| CL-037 | 2026-07-14 | Revision 0.34 records owner-accepted `P2-I2-DEC-011` and `P2-I2-CHG-008`: all three dependence modes are retained through I04–I11, while native/producer/missing-prerequisite selection occurs separately within each mode. The brief's singular wording and downstream checklist are corrected; one lane terminal classification must preserve separate mode dispositions. The original I03A entry freeze remains historical authority and affected cross-artifact validation is rerun without candidate, control, matched-null, calibration, or scientific execution. DEC-010 acceptance, I03B, and I04 remain pending. | P2-I2 three-mode downstream scope and I03A review boundary | Superseded by CL-038 |
+| CL-038 | 2026-07-14 | Revision 0.35 records owner-accepted DEC-012/CHG-009 and completes the checklist-first I03AR1 state-carried runtime-conformance package. One immutable synthetic fixture exercises native common-carrier writes, diversion/debit, order/lineage invariance, separate private reads, alternate responder access, model-owned response, save/load equal continuation, and persisted reset. The original invocation stopped without output on strict binary-float equality; I03AR1R1/CHG-010 froze the sole comparator correction (`abs_tol=1e-12`, `rel_tol=0`). Its one replacement and one reconstruction pass 136/136 and are byte-identical. This is quarantined implementation evidence only; I03B/I04 and all scientific authority remain closed pending owner review. | P2-I2 I03AR1 owner review boundary | Superseded by CL-039 |
+| CL-039 | 2026-07-14 | Revision 0.36 catches the stable program cover up through owner-accepted I03B/I03C/I03F and I04R2. The discriminator gate is passed. I04R2 is the sole progression authority after 16/16 checks and 7/7 pure tests corrected the raw three-arm estimator and byte reconstruction; original I04/I04R1 are immutable history. DEC-026 passes CAL-PRE and opens only a separately frozen single I05 arithmetic-null invocation. No null, I06, candidate/control, or scientific result is assigned. | P2-I2 CAL-PRE closure and I05 authorization entry | Superseded by CL-040 |
+| CL-040 | 2026-07-14 | Revision 0.37 draft constructs the I05 authorization candidate; proposed DEC-027 fails closed after I05A passes 3/8. DEC-028 authorizes the I05B correction, which adds one permanent exclusive-claim wrapper and one one-shot policy, freezes one attempt/zero retries, binds committed HEAD/clean state/exact interpreter/normalized command, and retains readback-only attempt/final facts. Ten zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes. The correction is uncommitted/inactive; no acceptance record, claim/final receipt, null, delta, metric-sheet result, CAL-GATE passage, I06, candidate/control operation, or scientific result exists. | P2-I2 I05B owner review boundary | Active pending owner review |
+| CL-041 | 2026-07-14 | Revision 0.38 records DEC-029/CHG-022 owner acceptance and commit authority for the complete I05B package. Immutable acceptance has null authority false; a distinct committed 10.4 launch record is required. The permanent claim is repository-local on ext4, rejects symlink components, and treats empty/partial/broken-symlink occupation as consumed. Twelve zero-null tests and 12/12 byte-reconstructed checks pass with immutable I04R2 bytes and no claim/output/builder/null/PyGRC/candidate/control operation. | P2-I2 I05B retention and 10.4 entry | Active; supersedes CL-040 after commit |
+| CL-042 | 2026-07-14 | Revision 0.39 retains the final preflight failure at launch commit `98770ae`: the active repository `.venv` was used, but its valid interpreter symlink target was incorrectly rejected by the repository-data path guard. DEC-031/CHG-024 now require exact `.venv/bin/python`, active repository venv, distinct base prefix, and the frozen resolved-target digest/version. Thirteen tests and 12/12 byte-reconstructed zero-null checks pass with immutable I04R2 bytes; no claim/output exists and the one attempt remains unconsumed. | P2-I2 I05C correction review boundary | Superseded by CL-043 |
+| CL-043 | 2026-07-14 | Revision 0.40 synchronizes current program cover through the existing uncommitted I05J amendment. The sole governed arithmetic null completed and remains consumed; portability corrections through I05I are retained at `b5d0acb`; I05J/I05JA retain the five-seed/two-order projection, native metric artifacts, delta `1e-12`, and 11/11 reconstruction. The amendment adds exact process/package accounting without rerun and leaves CAL-GATE/I06 closed for owner review. | P2-I2 I05J closure-amendment review boundary | Active pending owner review; no scientific result |
+| CL-044 | 2026-07-14 | Revision 0.41 records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves the 11/11 reconstruction, delta `1e-12`, exact process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. | P2-I2 I05 terminal retention and CAL-GATE | Active; I05 complete, I06 not begun |
+| CL-045 | 2026-07-15 | Revision 0.42 synchronizes P2-I2 through I08A acceptance. C01 remains bounded incomplete at one claim and 0/234 evaluable with no result. C02 preserves all 234 projections, removes only `RLIMIT_AS`, externalizes native-exit receipts, passes 8/8 plus 18/18 correction validation, and passes 19/19 deterministic activation validation under DEC-051. | P2-I2 I08A activation/commit boundary | Superseded by CL-046 |
+| CL-046 | 2026-07-15 | Revision 0.43 closes P2-I2 under owner-accepted DEC-061. C02 completes 234/234; I09A and I10 pass their corrected control and reconstruction gates; I11 passes 30/30 and retains a mode-separated `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries. No new scientific runtime, mode ranking, synthesis, native substitution, or N31+ selection occurs in closeout. | P2-I2 terminal retention and lane gate | Active; P2-I2 complete, later lanes and synthesis remain separately gated |
 
 ## 17. Current next actions
 
@@ -2103,7 +2266,51 @@ The next unchecked actions in dependency order are:
    control-resolution index without admitting a new core record.
 5. [x] Accept D-039 and bind the post-R3 primitive-to-ecology discriminator
    amendment prospectively to every unexecuted lane without reopening P2-I1.
-6. [ ] Begin P2-I2 under its own theory, candidate-blind calibration,
-   registration, control-resolution, and execution boundaries.
-7. [ ] Begin any later independently owned Phase 2 lane only under its own
-   candidate-blind calibration, registration, and execution boundaries.
+6. [x] Begin P2-I2 under its accepted semantic brief, checklist-first named
+   activity iterations, cumulative decision record, and subordinate
+   operational hypotheses without opening source admission or candidate work.
+7. [x] Complete `P2-I2-I01` as a frozen source-current capability-audit
+   iteration with a bounded native shortlist, explicit missing surfaces, and
+   no source admission or scientific result.
+8. [x] Complete `P2-I2-I01R1` as a fail-closed capability-audit revalidation,
+   quarantine candidate-shaped probe behavior, and correct classifications
+   without opening later-gate evidence.
+9. [x] Complete `P2-I2-I02` source admission and restoration-provider
+   transition before any I03 realization selection.
+10. [x] Complete `P2-I2-I02R1` as identity/authority/provider-transition
+    closeout revalidation before restoring I03 readiness.
+11. [x] Complete `P2-I2-I02R2` reset-baseline persistence and restoration-
+    identity revalidation against the updated exact graph revision before
+    restoring I03 readiness.
+12. [x] Complete the review-separated `P2-I2-I03` mode program before
+    calibration.
+    - [x] `8A / P2-I2-I03A`: retain a review-ready state-carried native
+      candidate package and stop without opening I03B or I04.
+    - [x] Record owner-accepted DEC-011/CHG-008: retain all three modes through
+      execution; select native/producer/missing-prerequisite realization only
+      within each mode.
+    - [x] Record owner-accepted DEC-012/CHG-009 and complete 8A-R1 runtime
+      conformance under I03AR1/I03AR1R1, including byte reconstruction and the
+      no-scientific-evidence quarantine.
+    - [x] Owner review/acceptance or revision of the complete I03A/I03AR1
+      state-carried package.
+    - [x] `8B / P2-I2-I03B`: after I03AR1 review, freeze the history-carried
+      profile and stop for review.
+    - [x] `8C / P2-I2-I03C`: after I03B review, freeze the hybrid profile and
+      stop for review.
+    - [x] Close the umbrella discriminator gate only after all three reviewed
+      profiles or retained mode-specific missing-prerequisite dispositions.
+13. [x] Complete and owner-accept I04R2 as the sole progression authority and
+    pass CAL-PRE without executing the null or any candidate.
+14. [x] Review and accept the I05B correction after 12/12
+    zero-null tests and 12/12 machine checks; do not commit or invoke it without
+    separate explicit authorization.
+15. [x] After accepted retention, separately authorize and execute the freeze's
+    single arithmetic-null invocation and reconstruct the retained output.
+16. [x] Review and accept the amended I05J/I05JA metric closeout, authorize its
+    complete commit, and pass CAL-GATE without beginning I06 registration.
+17. [x] Complete P2-I2 through corrected C02 execution, I09A control
+    resolution, I10 reconstruction, and owner-accepted I11 interpretation;
+    pass `P2-I2-GATE` without opening cross-lane synthesis or successor work.
+18. [ ] Begin any later independently owned Phase 2 lane only under its own
+    candidate-blind calibration, registration, and execution boundaries.

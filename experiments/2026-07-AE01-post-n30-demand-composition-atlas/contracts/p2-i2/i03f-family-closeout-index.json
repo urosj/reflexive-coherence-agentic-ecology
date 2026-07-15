@@ -1,0 +1,166 @@
+{
+  "artifact_id": "P2-I2-I03F-FAMILY-CLOSEOUT-INDEX",
+  "portability_projection": {
+    "change_id": "P2-I2-CHG-030",
+    "decision_id": "P2-I2-DEC-037",
+    "projected_commands_executable": false,
+    "projection_kind": "historical_portability_projection",
+    "scientific_change": false,
+    "source_commit": "99c64dd20db1cf83b79e8bfdf2ac956f7ec46b50",
+    "source_sha256": "f9c8591a9d3c30a90097548b359e399b3a9e73b01f06ea7cd63d5971ceeb3fa6"
+  },
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I03F",
+  "lane_id": "AE01-L02",
+  "retained_at": "2026-07-14",
+  "status": "compact_index_pending_static_validation",
+  "effect": "lossless composition of accepted mode authorities only; no repeated review or new evidence",
+  "input_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03f-family-closeout-input.json",
+    "sha256": "0593c7821370ce138db4fba9bbbc5fd0bbd50f88788e22618acb6b421b2401e3"
+  },
+  "mode_registry": [
+    {
+      "mode": "state_carried",
+      "required_downstream": true,
+      "realization_class": "pygrc_native_candidate",
+      "owner_acceptance_authority": "P2-I2-DEC-013",
+      "contract_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03a-state-carried-realization-and-discriminator-contract.json",
+      "contract_sha256": "aab25571bb5faa71c3213d3c1a27fa5659c3d4d2427a9b3fad8d087df71cc473",
+      "carrier": "one native P coherence scalar is the complete causal C_P",
+      "write_update": "registered native source packets arrive at the same P through public schedule_packet_departure plus step",
+      "response_access": "one native feedback front mask [P] against rear mask [B_ref]; expected source digest is null",
+      "causal_history_role": "none; ordered packet/surface lineage L is audit-only",
+      "intervention_family": ["native write diversion away from P", "native post-write P debit", "audit-only label permutation", "equal-P order shuffle"],
+      "private_binding": "separate native P1 and P2 one-node reads with no common read or aggregate",
+      "producer_boundary": "RCAE declares roles/schedules/guards only; native PyGRC owns every causal pool and later-response transition",
+      "restoration_owner": "native LGRC9V3 restoration identity v2 plus external declarative role/access/intervention binding",
+      "authority_pointers": [{"segments": ["causal_factorization"]}, {"segments": ["native_interventions"]}, {"segments": ["non_private_access_witness"]}, {"segments": ["private_partition_competitor"]}, {"segments": ["restoration_profile_proposal"]}]
+    },
+    {
+      "mode": "history_carried",
+      "required_downstream": true,
+      "realization_class": "minimally_producer_assisted",
+      "owner_acceptance_authority": "P2-I2-DEC-015",
+      "contract_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03b-history-carried-realization-and-discriminator-contract.json",
+      "contract_sha256": "8fc575089017c0e429f04bb221092493634bba4a6adcd4fc22ca36a5b238c38d",
+      "carrier": "authoritative active H_P plus its declared native M_H = R_H(H_P) output-port binding",
+      "write_update": "adapter admits source-label-free tokens from registered native arrivals, appends H_P, computes R_H, and requests public native packets to materialize M_H",
+      "response_access": "one native feedback front mask [M_H] against rear mask [B_ref]; P and lineage are excluded",
+      "causal_state_role": "P is matched non-primary encounter/audit state and cannot enter V",
+      "intervention_family": ["native contribution diversion", "explicit H_P replacement/clamp and rematerialization", "history order reversal", "audit-only label permutation"],
+      "private_binding": "separate H1/M_H1 and H2/M_H2 carriers/readouts with no shared reducer or aggregate",
+      "producer_boundary": "RCAEActiveHistoryAdapterV1 owns only H_P admission/intervention/readout materialization; native PyGRC owns score, threshold, scheduling, and later response",
+      "restoration_owner": "paired native-v2 plus adapter current/reset identity under one manifest and external role/intervention binding",
+      "authority_pointers": [{"segments": ["causal_factorization"]}, {"segments": ["history_and_state_interventions"]}, {"segments": ["non_private_access_witness"]}, {"segments": ["private_partition_competitor"]}, {"segments": ["producer_boundary"]}, {"segments": ["restoration_profile_proposal"]}]
+    },
+    {
+      "mode": "hybrid",
+      "required_downstream": true,
+      "realization_class": "minimally_producer_assisted",
+      "owner_acceptance_authority": "owner direction opening section 8.1 after P2-I2-DEC-017",
+      "contract_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03c-hybrid-realization-and-discriminator-contract.json",
+      "contract_sha256": "eed0a4a84fbcf3da35c222347d3dd913d6dd5bc8bc8e4906e0fb8eea5d1e3fc8",
+      "carrier": "one composite native P plus authoritative H_P with M_H = R_H(H_P)",
+      "write_update": "each admitted native contribution updates P and supplies one H_P token; adapter materializes M_H without reading P for success",
+      "response_access": "one native feedback front mask [P,M_H] against rear mask [B_ref] reads both live components exactly once",
+      "causal_component_rule": "P and H_P/M_H are separately intervenable through the same V; nonlinearity, interaction, synergy, and irreducibility are not required",
+      "intervention_family": ["native P-only debit with H_P/M_H fixed", "H_P-only clamp/rematerialization with P fixed", "joint component contrast", "history order reversal", "write diversion", "audit-only label permutation"],
+      "private_binding": "separate P1/H1/M_H1 and P2/H2/M_H2 pairs with pair-local masks and no aggregate",
+      "producer_boundary": "adapter owns only active history/readout materialization; native PyGRC owns live joint score, threshold, scheduling, and later response",
+      "restoration_owner": "layered paired native-v2 plus adapter current/reset identity plus exact joint/private mask and role binding",
+      "authority_pointers": [{"segments": ["causal_factorization"]}, {"segments": ["hybrid_discriminators"]}, {"segments": ["common_access_witness"]}, {"segments": ["private_partition_competitor"]}, {"segments": ["producer_boundary"]}, {"segments": ["restoration_profile_proposal"]}]
+    }
+  ],
+  "cross_mode_symbol_qualification": {
+    "P": {
+      "state_carried": "complete causal pool and response input",
+      "history_carried": "matched non-primary encounter/audit state excluded from V",
+      "hybrid": "one independently causal component of the composite carrier and V"
+    },
+    "H_P": {
+      "state_carried": "not a causal carrier; L remains audit-only",
+      "history_carried": "authoritative active causal carrier",
+      "hybrid": "authoritative active history component"
+    },
+    "M_H": {
+      "state_carried": "absent from the accepted response mask",
+      "history_carried": "native output port of H_P and sole front-mask component",
+      "hybrid": "native output port of H_P and one of two front-mask components"
+    },
+    "L": "audit-only in every mode except non-causal admission/idempotency filtering for H_P updates",
+    "rewrite_rule": "a later mode may reuse symbols and structural machinery but cannot change an earlier mode's causal roles, masks, interventions, or accepted realization class"
+  },
+  "operational_hypothesis_index": [
+    {"op_id": "H-L02-OP-01", "state_carried_pointer": {"segments": ["operational_projections", 0]}, "history_carried_pointer": {"segments": ["operational_projections", 0]}, "hybrid_pointer": {"segments": ["operational_projections", 0]}, "family_distinction": "one P versus one H_P/M_H versus one composite P+H_P/M_H"},
+    {"op_id": "H-L02-OP-02", "state_carried_pointer": {"segments": ["operational_projections", 1]}, "history_carried_pointer": {"segments": ["operational_projections", 1]}, "hybrid_pointer": {"segments": ["operational_projections", 1]}, "family_distinction": "V follows P versus M_H versus the joint live P/M_H relation"},
+    {"op_id": "H-L02-OP-03", "state_carried_pointer": {"segments": ["operational_projections", 2]}, "history_carried_pointer": {"segments": ["operational_projections", 2]}, "hybrid_pointer": {"segments": ["operational_projections", 2]}, "family_distinction": "lineage remains audit-only while physical state/history roles stay mode-specific"},
+    {"op_id": "H-L02-OP-04", "state_carried_pointer": {"segments": ["operational_projections", 3]}, "history_carried_pointer": {"segments": ["operational_projections", 3]}, "hybrid_pointer": {"segments": ["operational_projections", 3]}, "family_distinction": "native P intervention versus active H_P intervention versus both independent component interventions"},
+    {"op_id": "H-L02-OP-05", "state_carried_pointer": {"segments": ["operational_projections", 4]}, "history_carried_pointer": {"segments": ["operational_projections", 4]}, "hybrid_pointer": {"segments": ["operational_projections", 4]}, "family_distinction": "mode-specific marginal and insufficient-repetition alternatives remain unresolved until I04"},
+    {"op_id": "H-L02-OP-06", "state_carried_pointer": {"segments": ["operational_projections", 5]}, "history_carried_pointer": {"segments": ["operational_projections", 5]}, "hybrid_pointer": {"segments": ["operational_projections", 5]}, "family_distinction": "private one-node, one-history, or one-pair reads cannot aggregate across partitions"},
+    {"op_id": "H-L02-OP-07", "state_carried_pointer": {"segments": ["operational_projections", 6]}, "history_carried_pointer": {"segments": ["operational_projections", 6]}, "hybrid_pointer": {"segments": ["operational_projections", 6]}, "family_distinction": "direct/controller equivalence cannot replace the registered mode-specific causal path"},
+    {"op_id": "H-L02-OP-08", "state_carried_pointer": {"segments": ["operational_projections", 7]}, "history_carried_pointer": {"segments": ["operational_projections", 7]}, "hybrid_pointer": {"segments": ["operational_projections", 7]}, "family_distinction": "equal-P order invariance versus history order sensitivity versus matched-P hybrid history-component sensitivity"},
+    {"op_id": "H-L02-OP-09", "state_carried_pointer": {"segments": ["operational_projections", 8]}, "history_carried_pointer": {"segments": ["operational_projections", 8]}, "hybrid_pointer": {"segments": ["operational_projections", 8]}, "family_distinction": "alternate eligible responder uses the same mode-specific non-private mask; R05 remains unresolved"}
+  ],
+  "source_obligations": [
+    {"source_id": "I03BR1-OBL-01", "source_check": "RV-03", "duty": "I06 must preserve the frozen fixture's unique registered source-to-P path or add an explicit route/channel admission key; source/target membership is the current exact adapter filter.", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03BR1-OBL-02", "source_check": "RV-12", "duty": "R05 retention, capacity, and scientific access comparison remain I04/I06 and execution work.", "owner_iteration": "I04/I06/I08", "status": "retained_undischarged"},
+    {"source_id": "I03BR1-OBL-03", "source_check": "RV-15", "duty": "I06 must bound branch/event counts and either retain these not-applicable lifecycle classes or register a new reviewed construction; no conformance fixture capacity may become scientific calibration.", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03BR1-OBL-04", "source_check": "RV-17", "duty": "I06 must expose the paired procedure as the only registered continuation interface and validate manifest component hashes explicitly; the conformance harness proves the governed path, not a generic atomic transaction API.", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03BR1-OBL-05", "source_check": "RV-18", "duty": "I04 and I06 validators must reject the I03B fixture coefficient, amounts/types/times, threshold, packet amount, branch IDs, response values, comparator, and evidence digest; only the pre-runtime fold family may be imported.", "owner_iteration": "I04/I06", "status": "retained_undischarged"},
+    {"source_id": "I03BR1-OBL-06", "source_check": "RV-19", "duty": "The common-profile initial composite digest is retained once as the deterministic fresh-fixture witness rather than duplicated per standard branch; private profiles are identified by their separate frozen configurations and fresh construction.", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-01", "source_check": "RV-05", "duty": "operationalize/register the complete qualitative 2x2 with exact held-fixed rules and no inherited conformance values", "owner_iteration": "I04/I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-02", "source_check": "RV-09/RV-10", "duty": "retain unique physical source-to-P routes or explicit non-label/non-digest route/channel admission key and bound token type identity", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-03", "source_check": "RV-11", "duty": "register neutral-contact matching across all scientifically relevant timing/support/opportunity fields or explicit stratification", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-04", "source_check": "RV-18/RV-20", "duty": "expose only one manifest-validating paired load/reset continuation interface; add failure checks for partial/mismatched load, cross-pairing, one-sided/repeated reset, stale M_H, and wrong baseline/mask", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-05", "source_check": "RV-21", "duty": "bound history/event counts, overflow, P capacity, M_H/readout bounds, and native reservoir adequacy while retaining or separately reviewing lifecycle classes", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-06", "source_check": "RV-23", "duty": "implement machine rejection from every registry source/scope, exact value, branch/topology identity, observation, comparator, outcome, and digest including trivial serialization reuse", "owner_iteration": "I04/I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-07", "source_check": "RV-17/RV-18", "duty": "bind exact common/private role identity and reject P/H_P/M_H or adapter-baseline cross-load before continuation", "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"source_id": "I03CR1-OBL-08", "source_check": "RV-26", "duty": "verify all three accepted profiles, OP mappings, restoration ownership, quarantine, no ranking, mode-indexed I04, and semantic-equivalence requirements before passing only the discriminator gate", "owner_iteration": "I03-family-closeout", "status": "in_progress_pending_I03F_validation_and_owner_acceptance"}
+  ],
+  "consolidated_duties": [
+    {"duty_id": "I03F-DUTY-01", "name": "physical_history_admission", "source_ids": ["I03BR1-OBL-01", "I03CR1-OBL-02"], "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-02", "name": "scientific_access_and_R05", "source_ids": ["I03BR1-OBL-02"], "owner_iteration": "I04/I06/I08", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-03", "name": "lifecycle_capacity_and_bounds", "source_ids": ["I03BR1-OBL-03", "I03CR1-OBL-05"], "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-04", "name": "paired_restoration_and_cross_load_failure", "source_ids": ["I03BR1-OBL-04", "I03CR1-OBL-04", "I03CR1-OBL-07"], "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-05", "name": "complete_fixture_quarantine", "source_ids": ["I03BR1-OBL-05", "I03CR1-OBL-06"], "owner_iteration": "I04/I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-06", "name": "fresh_matrix_and_private_identity", "source_ids": ["I03BR1-OBL-06"], "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-07", "name": "complete_hybrid_component_factorial", "source_ids": ["I03CR1-OBL-01"], "owner_iteration": "I04/I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-08", "name": "neutral_contact_scientific_matching", "source_ids": ["I03CR1-OBL-03"], "owner_iteration": "I06", "status": "retained_undischarged"},
+    {"duty_id": "I03F-DUTY-09", "name": "umbrella_family_gate_closeout", "source_ids": ["I03CR1-OBL-08"], "owner_iteration": "I03F owner disposition", "status": "in_progress_pending_owner_acceptance"}
+  ],
+  "fixture_quarantine": {
+    "primary_machine_authority": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03cr1-hybrid-closeout-registry.json#/fixture_quarantine_registry",
+    "covered_modes": ["state_carried", "history_carried", "hybrid"],
+    "covered_source_artifact_count": 7,
+    "history_exact_rejection_authority": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i03br1-closeout-revalidation.json#/downstream_rejection_requirements",
+    "reject_recursive_scopes": ["fixture inputs", "assertion specifications and outcomes", "branch and topology identities", "implementation comparators", "runtime observations and response values", "run policy", "evidence, reconstruction, restoration, and source digests", "direct equality and trivial serialized reuse"],
+    "allowed_imports": ["accepted pre-runtime causal structures", "structural adapter code under exact source identity", "mode-specific producer/restoration obligations"],
+    "scientific_value_selection_performed": false
+  },
+  "i04_import_boundary": {
+    "required_modes": ["state_carried", "history_carried", "hybrid"],
+    "import_unchanged": true,
+    "mode_ranking_or_selection_allowed": false,
+    "mode_removal_allowed": false,
+    "causal_semantic_revision_allowed": false,
+    "fixture_value_or_outcome_import_allowed": false,
+    "I04_may_freeze": ["mode-specific raw response and orientation", "primary comparator", "shared or mode-specific matched-null identity", "aggregation and missingness", "machine pass/ambiguous/fail rule"],
+    "shared_artifact_rule": "shared I04/I05 artifacts require explicit semantic-equivalence proof; otherwise they remain mode-indexed",
+    "semantic_equivalence_minimum_fields": ["causal response meaning", "units and orientation", "time window", "comparator role", "aggregation", "missingness", "calibration population"],
+    "scientific_fields_selected_in_I03F": false
+  },
+  "program_boundary": {
+    "retained_mode_count": 3,
+    "selection_or_ranking_performed": false,
+    "repeated_mode_review_performed": false,
+    "source_capability_reaudit_performed": false,
+    "runtime_or_reconstruction_performed": false,
+    "scientific_evidence_assigned": false,
+    "R01_through_R05_assigned": false,
+    "discriminator_gate_readiness_may_be_validated": true,
+    "discriminator_gate_passed": false,
+    "owner_acceptance_required": true,
+    "I04_authorized": false
+  }
+}

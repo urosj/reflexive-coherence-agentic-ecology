@@ -1,0 +1,49 @@
+{
+  "artifact_id": "P2-I2-I06-REGISTRATION-MANIFEST",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I06",
+  "lane_id": "AE01-L02",
+  "frozen_at": "2026-07-14",
+  "status": "frozen_before_single_baseline_only_validation",
+  "entry_commit": "3be90739990d32af6cd2c9f1f07d2ef735ff3a2f",
+  "manifest_scope": "Complete non-self I06 registration authority required by the baseline-only validator; validation, report, checklist, and hypotheses are downstream projections and are intentionally excluded to avoid circular identity.",
+  "files": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-input-freeze.json",
+      "role": "exact_registration_input_authority",
+      "sha256": "b198fa71f312a43ef9df2a706cef19c00d8916c078912a6dbea6f8566d79e8bf"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "role": "exact_three_mode_registration_bundle",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-control-resolution-index-template.json",
+      "role": "outcome_free_lane_control_projection",
+      "sha256": "b5a307e84e38ac0be1c7b7736a32d7681f39ffcfa6d3c22f318076f074145e18"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+      "role": "registration_owned_minimal_history_adapter_revision",
+      "sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py",
+      "role": "static_and_baseline_only_registration_validator",
+      "sha256": "f0b3f019bd3871876aa26f2a184887826900bb5b515a50de1bf41f844aeaca94"
+    }
+  ],
+  "excluded_downstream_projections": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-registration-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I06-exact-registration.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-checklist.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md"
+  ],
+  "candidate_or_control_execution": false,
+  "scientific_result": false,
+  "REG_GATE_passed": false,
+  "I07_authorized": false,
+  "owner_review_required": true,
+  "commit_authorized": false
+}

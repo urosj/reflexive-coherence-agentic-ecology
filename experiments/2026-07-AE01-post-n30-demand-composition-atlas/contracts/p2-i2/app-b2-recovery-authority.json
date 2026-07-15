@@ -1,0 +1,110 @@
+{
+  "artifact_id": "P2-I2-APP-B2-RECOVERY-AUTHORITY",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-B2",
+  "status": "owner_authorized_candidate_free_validation_pending",
+  "authority": {
+    "decision_id": "P2-I2-DEC-078",
+    "change_id": "P2-I2-CHG-083",
+    "owner_instruction": "always use repository .venv; never global Python",
+    "scientific_change_authorized": false,
+    "replacement_campaigns_authorized": 1,
+    "result_acceptance_and_commit_authorized": false
+  },
+  "base_freeze": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+    "sha256": "3e1f0c4bf0a8c8417f8e730c47c35ec1aaca11aa0e9bb76b3b87c2675656547e"
+  },
+  "permanent_failed_start_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-campaign-claim.json",
+      "sha256": "1e13178b2686e0d1437fef12e22d72654f0201440295147c16f20510e04d6b06",
+      "role": "permanent_consumed_original_claim"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-failed-start.json",
+      "sha256": "01cf3de129656e02cfa320989790dd7c3d9ad1dbac337279c6c13031ff22f1f1",
+      "role": "failed_closed_original_start"
+    }
+  ],
+  "implementation_sha256": {
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py": "dfa1985af280561e62250623bc872b1acf6d997d620f4eb6df645cfc882abd07",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_recovery_validate.py": "04a84025d3008899a7b9ff02a517dbd2d65e31314e7a9a7a8b2855698cea8673",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_analysis.py": "63804bc70e412a76813cda49455c9b72e8e2fe83589f3816ac842d3a7861cb8b",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_history_adapter.py": "a7d9772f4b22bec81e370e28eeae9bb5d4d4d3353a80d9516c950e3e9c166f8e",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_reconstruct.py": "f8fb3b04ab19f1cc7e7cf552d5676d579211faebc86a3da2b55c4afa1d75c84a"
+  },
+  "scientific_invariance": {
+    "comparison_head": "40fd9beecce8dfcc77c288c3f4d7f6f04eb3a765",
+    "exact_unchanged_runtime_functions": [
+      "_total_coherence",
+      "_drain",
+      "_schedule_packet",
+      "_appendix_adapter",
+      "_operation_route",
+      "_participant_lineage",
+      "_pair_identity",
+      "_history_receipt",
+      "_build_envelope",
+      "execute_arm"
+    ],
+    "operation_values_modes_rows_thresholds_estimator_controls_and_claim_ceiling_unchanged": true,
+    "expanded_arm_registry_digest": "432a4c6d470b9e3e2bb3ba29ccf52544d14e5364848cca0fa27e1683f5994045"
+  },
+  "process_policy": {
+    "parent_interpreter": ".venv/bin/python",
+    "validator_interpreter": ".venv/bin/python",
+    "child_interpreter": ".venv/bin/python",
+    "reconstructor_interpreter": ".venv/bin/python",
+    "resolved_or_global_interpreter_launch_forbidden": true,
+    "child_venv_guard_before_PyGRC_import": true,
+    "failure_receipt_must_precede_later_row_continuation": true,
+    "failure_diagnostic_absolute_paths_retained": false,
+    "one_cumulative_output": true,
+    "per_arm_files": 0
+  },
+  "execution": {
+    "replacement_attempts": 1,
+    "child_attempts_per_row": 1,
+    "child_retries": 0,
+    "child_interpreter": ".venv/bin/python",
+    "original_claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-campaign-claim.json",
+    "replacement_claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-campaign-claim.json",
+    "replacement_output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-runtime-evidence.json",
+    "replacement_reconstruction_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-reconstruction-and-closeout.json",
+    "normalized_command_template": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py",
+      "--freeze",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "--recovery-authority",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-recovery-authority.json",
+      "--claim",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-campaign-claim.json",
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-runtime-evidence.json",
+      "--expected-head",
+      "{AUTHORITY_HEAD}",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ],
+    "reconstruction_command": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_reconstruct.py",
+      "--freeze",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "--input",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-runtime-evidence.json",
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-replacement-reconstruction-and-closeout.json"
+    ]
+  },
+  "evidence_boundary": {
+    "correction_validation_models_or_scientific_arms": 0,
+    "replacement_campaign_is_real_fresh_PyGRC_runtime": true,
+    "analysis_only_after_new_runtime_aggregate": true,
+    "final_owner_result_review_required": true
+  }
+}
