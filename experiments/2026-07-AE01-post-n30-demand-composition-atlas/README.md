@@ -9,13 +9,19 @@ passed CLOSE-GATE, and retained its containing commit. Its additive Appendix A
 is also closed and owner-accepted: a 19-arm native shared-carrier campaign
 supports bounded three-operation composition with byte-identical
 reconstruction and 53/53 closeout validation.
+Appendix B is likewise closed and owner-accepted. Its APP-B4 campaign retains
+75/75 valid fresh PyGRC arms and identifies a bounded three-admission terminal-P
+quantitative-history gate rather than distinct-operation complementarity.
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
 **Start here:**
-[Agentic Ecology: Why AE01 Exists](AGENTIC-ECOLOGY-OVERVIEW.md) explains the
-conceptual purpose, why the detailed evidence matters, what P2-I1 established,
-and how the seven lanes build toward an agentic-ecology demand atlas.
+[Agentic Ecology: From Theory to Controlled Experiments](AGENTIC-ECOLOGY-OVERVIEW.md)
+explains the general theory-to-evidence method. The
+[AE01 Agentic-Ecology View](AE01-AGENTIC-ECOLOGY-OVERVIEW.md) interprets the
+current P2-I1, P2-I2, and appendix evidence across the seven-lane atlas. The
+[P2-I2 Interpretative Synthesis](reports/P2-I2-interpretative-synthesis.md)
+provides the detailed L02 case and mechanism account.
 
 **Roadmap:**
 [Post-N30 Agentic-Ecology Demand and Composition Atlas](../Post-N30-AgenticEcology-DemandCompositionAtlasRoadmap.md)
@@ -226,7 +232,7 @@ conditioning below the niche boundary.
 This is a post-closeout explanation, not a hypothesis change or result upgrade.
 The stable lane ID, frozen display name, machine artifacts, and bounded claim
 remain unchanged. The fuller comparison is in the
-[agentic-ecology overview](AGENTIC-ECOLOGY-OVERVIEW.md#why-p2-i1-is-not-n30-again).
+[AE01 agentic-ecology view](AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
 
 ## Stable lane projection
 

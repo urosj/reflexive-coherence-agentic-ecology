@@ -6,6 +6,12 @@
 **Purpose:** engineering companion to *The Shared Medium: From Message Passing to Field Participation in RC-Agentic-Ecology*  
 **Scope:** definitions, mapping rules, design discipline, ant-colony examples, substrate-facing targets, claim boundaries  
 
+**Experimental bridge:** This paper remains conceptual. For the controlled
+theory-to-evidence method, see [Agentic Ecology: From Theory to Controlled
+Experiments](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md).
+For current bounded evidence, see the [AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
+
 Copyright © 2026 Uroš Jovanovič, CC BY-SA 4.0.
 
 ---
@@ -1170,6 +1176,18 @@ Gradually reduce producer/message scaffolds. If behavior persists through substr
 ## 14.10 Cost accounting
 
 Measure whether traces, movement, signaling, and maintenance consume support. Free relation may indicate hidden scaffold.
+
+**Controlled evidence note — AE01:** P2-I1 and P2-I2 operationalize several of
+these diagnostics with susceptibility inversion, carrier withdrawal and
+clamping, source-order perturbation, private partitioning, diversion, label and
+participant rotation, controller substitution, restoration, and retained-only
+reconstruction. The resulting evidence supports bounded niche-conditioning,
+shared-pool co-conditioning, operation-complementarity, and temporal-gating
+mechanisms—not native shared-medium organization. See the
+[AE01 Agentic-Ecology
+View](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
+and [P2-I2 Interpretative
+Synthesis](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-interpretative-synthesis.md).
 
 ---
 
