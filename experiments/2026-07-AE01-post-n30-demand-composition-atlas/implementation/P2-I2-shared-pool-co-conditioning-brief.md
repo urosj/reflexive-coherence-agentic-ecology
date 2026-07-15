@@ -2,8 +2,9 @@
 
 **Status:** accepted P2-I2 theory, geometry, ecology, and observation directive;
 accepted by the project owner on 2026-07-14; three-mode retention scope
-correction accepted by the project owner on 2026-07-14; prospective Appendix A
-semantic extension owner-accepted under DEC-063/CHG-068 on 2026-07-15
+correction accepted by the project owner on 2026-07-14; Appendix A accepted
+and closed under DEC-074/CHG-079 on 2026-07-15 after one complete APP-A2
+runtime/reconstruction cycle
 
 **Lane:** `AE01-L02`
 
@@ -904,9 +905,10 @@ later graph experiment tests it under graph-side authority.
 
 ## Appendix A — Grounded three-operation shared-carrier composition extension
 
-**Status:** prospective and owner-accepted at APP-A0 under DEC-063/CHG-068;
-containing commit authorized; unexecuted. This appendix does not reopen,
-revise, or strengthen the accepted I11 result or any passed main P2-I2 gate.
+**Status:** owner-accepted and closed under DEC-074/CHG-079; APP-A2 establishes
+the bounded positive result at the A.5 claim ceiling. This appendix does not
+reopen, revise, or strengthen the accepted I11 result or any passed main P2-I2
+gate.
 
 ### A.1 Exact question and evidence boundary
 
@@ -1150,3 +1152,17 @@ N31+ selection remain blocked.
 APP-A0 semantic review grants no APP-A1 capability audit or APP-A2 runtime
 authority. Each later stage opens only after the preceding exact package is
 reviewed and retained. Until then, Appendix A has no result.
+
+### A.6 Accepted closeout
+
+APP-A2 completed all 19 frozen fresh-runtime arms with zero retry. Every arm
+was operationally valid; `GEP` passed the complete signature; every proper
+subset was insufficient; each operation and the common carrier retained its
+registered causal path to `R`; and retained-only reconstruction was byte-
+identical. Closeout validation passed 53/53.
+
+The accepted result is `supported_bounded_candidate` at exactly the A.5
+ceiling. Physical participant plurality and tested operation order are non-
+load-bearing in the frozen fixture, and no external producer is load-bearing.
+The main P2-I2 result is unchanged. DEC-074/CHG-079 close Appendix A without
+opening any blocked claim or subsequent work.

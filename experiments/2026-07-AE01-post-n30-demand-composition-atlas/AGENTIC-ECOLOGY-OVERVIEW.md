@@ -493,6 +493,17 @@ review-ready closeout reaches R01–R05 and classifies L02 as a
 `T3_operational_class` boundary. The owner accepted the exact reviewed
 package, passed CLOSE-GATE, and authorized its containing commit under
 DEC-061.
+Appendix A then asked the narrower extension question: can physically distinct
+generator, extractor, and redistributor operations compose irreducibly through
+one carrier? One frozen 19-arm native PyGRC campaign answered positively at
+the bounded fixture/gate ceiling: all arms were valid, `GEP` passed, every
+proper subset was insufficient, and operation-specific plus carrier causal
+tests passed. Retained-only reconstruction was byte-identical and closeout
+validation passed 53/53. DEC-074 accepts this result and closes Appendix A.
+The effect belongs to the three operation types: participant plurality and the
+two tested adjacent order inversions are non-load-bearing, and no external
+producer is load-bearing. The main P2-I2 terminal and all blocked broader
+claims remain unchanged.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

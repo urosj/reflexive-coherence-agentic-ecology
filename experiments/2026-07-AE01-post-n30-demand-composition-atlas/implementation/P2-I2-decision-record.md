@@ -107,6 +107,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-070` | Does the owner accept the exact inactive APP-A2 package and authorize retention plus activation-authority construction? | Yes: exact 96/96 package accepted; one containing commit authorized; activation record construction follows the commit | Commit only now; activation authorization commit and campaign remain separately closed | 2026-07-15 |
 | `P2-I2-DEC-071` | What exact activation work opens after implementation retention commit `c435b00`? | Commit-bound candidate constructed; activation validation passes 51/51 after one validator-only parser correction | Candidate review-ready uncommitted; activation commit and campaign remain closed | 2026-07-15 |
 | `P2-I2-DEC-072` | Does the owner accept the 51/51 activation candidate and authorize live progression? | Yes: `accept, continue`; one activation commit and one clean-HEAD campaign authorized, followed by read-only reconstruction | Opens exact commit/preflight/campaign/reconstruction only; result acceptance and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-073` | What does the single APP-A2 campaign and retained-only reconstruction establish? | Review-ready bounded positive: complete 19/19 matrix, primary and causal relations pass, closeout validates 53/53 | Technical result only; owner result acceptance and commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-074` | Does the owner accept the bounded APP-A2 result, close Appendix A, and authorize its retention commit? | Yes: `ok, do close appendix and commit`; exact reviewed result accepted and Appendix A closed | One containing result/closeout commit authorized; main P2-I2 result unchanged and later synthesis/selection remain closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3748,12 +3750,100 @@ N31+. Reopen if accepted activation bytes drift before commit, the post-commit
 tree is dirty, preflight fails before claim, or any execution departs from the
 frozen command or attempt policy.
 
-## 75. Pending decision queue
+## 75. `P2-I2-DEC-073` — APP-A2 bounded runtime disposition
 
-APP-A2 implementation construction and zero-science activation validation are
-complete, owner-accepted, and retained at `c435b00`. DEC-071/CHG-076 produced
-one exact activation candidate with 51/51 zero-science validation. Owner review
-accepts that candidate under DEC-072/CHG-077. One activation commit, exact
-post-commit preflight, single campaign, and read-only reconstruction are now
-authorized. Result acceptance/commit, cross-lane synthesis, and native
-substitution remain closed.
+**Status:** technical result complete and 53/53 validated; owner result review
+pending
+
+Activation was retained cleanly at commit `e61dacc`. The exact normalized
+campaign command made one exclusive claim and returned exit code zero after all
+19 frozen child attempts. There were 19 fresh models, zero retries, zero failed
+or refused receipts, zero per-arm files, 608 native packet events, and maximum
+queue length four. All arms pass their derived operational-validity predicates.
+
+The retained analysis resolves:
+
+```text
+matrix_complete = true
+all_arms_operationally_valid = true
+all seven proper subsets insufficient = true
+GEP full measured signature = passed
+primary_relation_passed = true
+G/E/P direct withdrawal changes R = true/true/true
+G/E/P mediator restore changes R = true/true/true
+carrier clamp changes R = true
+causal_relation_passed = true
+terminal_classification = supported_bounded_candidate
+```
+
+GEP's measured values are environment feedback `0.04674` against `>=0.04`,
+support feedback `0.02214` against `>=0.02`, phase residual `0.01296` against
+`<=0.015`, and registered-route merge leakage
+`5.538584076652357e-16` against `<=1e-12`, with the exact `0.82`
+configuration identity.
+
+The one-source and cyclic role-rotation controls reproduce the complete
+relation, label permutation is invariant, both tested adjacent inversions pass,
+the reference is fully diverted, and response sources are carrier-only.
+Therefore physical participant plurality is non-load-bearing in the frozen
+fixture, and the tested operation order is not load-bearing. These scope
+diagnostics do not weaken the primary proper-subset result: the three operation
+types remain functionally necessary for the registered complete signature.
+
+The PyGRC-free reconstructor reads the retained aggregate once and reproduces
+the analysis byte-identically with zero model, child, producer, or scientific
+regeneration. Its bounded claim is `bounded generator-extractor-redistributor
+shared-carrier composition candidate`, described only as fixture/gate-bounded
+functional complementarity through the common carrier. Closeout validation
+passes 53/53 after one validator-only self-sentinel correction; neither runtime
+artifact changed.
+
+The main P2-I2 terminal remains unchanged. N29 metric equivalence, coalition,
+functional cooperation, coordination, resource economy, agency, collective
+identity, ecology motif/regime, cross-lane recurrence, and N31+ selection
+remain explicitly blocked. This technical result does not itself authorize
+owner acceptance or a result commit.
+
+Reopen if an aggregate/closeout digest changes, any arm receipt is missing or
+invalid, byte-identical reconstruction fails, a blocked claim is introduced,
+or owner review identifies a mismatch between the frozen claim ceiling and the
+reported disposition.
+
+## 76. `P2-I2-DEC-074` — Accept APP-A2 and close Appendix A
+
+**Status:** owner-accepted; one containing closeout commit authorized
+
+After reviewing the complete APP-A2 result, the owner states `ok, do close
+appendix and commit`. This accepts the exact runtime aggregate, byte-identical
+reconstruction, 53/53 validation, bounded disposition, and declared claim
+ceiling retained under DEC-073/CHG-078.
+
+**Decision:** accept `supported_bounded_candidate` with the strongest statement
+`bounded generator-extractor-redistributor shared-carrier composition
+candidate`; close `P2-I2-APP-A`; and authorize one containing commit for the
+accepted evidence, closeout validator, acceptance record, and synchronized
+governance/navigation projections.
+
+The closeout-integrity check passes 9/9 after one diagnostic corrects only
+lexical-versus-resolved `.venv` interpreter comparison. All three check/
+diagnostic processes use `.venv`; no PyGRC, model, child, producer, or
+scientific regeneration path runs.
+
+Acceptance retains the result's asymmetric controls: the three operation types
+are necessary relative to the frozen signature, while physical participant
+plurality and the tested operation order are not load-bearing. No external
+producer is load-bearing. The result does not alter the accepted main P2-I2
+terminal or admit N29 metric equivalence, coalition/cooperation/coordination,
+resource economy, agency, collective identity, ecology motif/regime,
+cross-lane recurrence, N31+ selection, graph mutation, or a next move.
+
+Reopen Appendix A only if a retained technical digest changes, accepted result
+projection diverges from DEC-073, or a later separately authorized synthesis
+supplies contradictory evidence. The containing commit closes Appendix A; it
+does not begin another iteration.
+
+## 77. Pending decision queue
+
+DEC-074/CHG-079 accept APP-A2 and close Appendix A. One containing closeout
+commit is authorized. Cross-lane synthesis, graph mutation, native
+substitution work, N31+ selection, and any next move remain closed.

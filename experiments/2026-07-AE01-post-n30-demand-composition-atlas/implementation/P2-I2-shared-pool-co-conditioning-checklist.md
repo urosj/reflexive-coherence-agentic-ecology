@@ -30,9 +30,10 @@ Its semantic and hypothesis scaffold is retained. APP-A1 has completed its
 hard-ordered audit/freeze/conformance cycle under DEC-064–067/CHG-069–072.
 N29 threshold transport remains rejected; the separate live-domain authority
 is accepted; corrected candidate-free conformance passes 29/29 and reconstructs
-byte-identically; the exact APP-A2 execution contract is frozen but inactive.
-The accepted I11 result and every passed main P2-I2 gate remain unchanged;
-Appendix A execution is not authorized.
+byte-identically. APP-A2 then completed its one 19-arm campaign and retained-
+only reconstruction; the bounded primary and causal relations pass and
+closeout validates 53/53. The accepted I11 result and every passed main P2-I2
+gate remain unchanged; the Appendix result awaits owner acceptance.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -40,12 +41,12 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-A2` inactive implementation is
-retained at `c435b00`. DEC-071/CHG-076 authorize one commit-bound activation
-candidate and zero-science validation only; that candidate now passes 51/51
-and is owner-accepted under DEC-072/CHG-077. One activation commit, exact
-clean-HEAD preflight, single campaign, and read-only reconstruction are
-authorized. Result acceptance and result commit remain closed.
+**Current activity iteration:** `P2-I2-APP-A2` is owner-accepted and Appendix A
+is closed under DEC-074/CHG-079. The accepted `supported_bounded_candidate`
+result retains 19/19 valid fresh-runtime arms, zero retry, byte-identical
+reconstruction, and 53/53 closeout validation. One containing closeout commit
+is authorized; later synthesis, selection, graph mutation, and next-move work
+remain closed.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -248,7 +249,7 @@ Rules:
 | `P2-I2-I09A` | Additive normalized-estimator control-projection correction | DEC-056 finding plus explicit owner `+1` under DEC-057 | Owner-accepted: 24/24, zero blockers, exact reconstruction, no downstream disposition change | DEC-059 passes CONTROL-GATE and authorizes containing commit |
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
-| `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 owner-accepted at 53/53; native path selected; N29 threshold transport rejected; candidate-free conformance 29/29 and byte-identical | This containing commit is the required APP-A1 retention point; APP-A2 remains unopened and zero Appendix scientific arms/results exist |
+| `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 retained at `1f69816`; APP-A2 activation retained at `e61dacc`; 19/19 valid arms, byte-identical reconstruction, primary/causal relations passed, closeout 53/53 | Owner-accepted and closed under DEC-074/CHG-079; one containing closeout commit authorized |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3800,7 +3801,7 @@ valid terminal classification + reconstructed evidence
 | `L02-Q11` | How are pool economy properties observed or dispositioned? | I03 concept; I06 exact | Owner-accepted exact registration | I06 registers reserves, accumulation/mixing/depletion, no-window leakage/maintenance/saturation dispositions, token/event/queue bounds, finite coherence intervals, and fail-closed overflow semantics |
 | `L02-Q12` | Which capacity, contributor, or access contrast tests R05? | I03 concept; I06 exact; I11 interpretation | Accepted retained-evidence disposition | DEC-042 registers the `A_ALTERNATE` access-scope contrast; accepted I11 finds the mode-specific relation retained in all three modes and reaches R05 without inferring broader transfer |
 | `L02-Q13` | What is the lane terminal class, support boundary, and next move? | I11 | Decided and owner-accepted | DEC-061 accepts `supported_bounded_candidate` through R05, lane-wide `scaffold_dependent`, `T3_operational_class`; state is native-expression candidate, history/hybrid share active-history naturalization debt; one future native substitution probe is named but not started |
-| `L02-Q14` | Can the N29 generator/extractor/processor operations compose with subset-bounded irreducibility through one P2-I2 shared carrier? | APP-A0–APP-A2 | APP-A0 retained; APP-A1 owner-accepted: native transition realization, separate live authority, exact 19-arm freeze, and 29/29 candidate-free conformance; no Appendix scientific evidence | DEC-068 authorizes the necessary APP-A1 retention commit; APP-A2 remains inactive until it succeeds |
+| `L02-Q14` | Can the N29 generator/extractor/processor operations compose with subset-bounded irreducibility through one P2-I2 shared carrier? | APP-A0–APP-A2 | Owner-accepted bounded positive: 19/19 valid arms; GEP passes while every proper subset is insufficient; each operation and the carrier satisfy the frozen causal tests; reconstruction is byte-identical | DEC-074/CHG-079 close Appendix A at fixture/gate-bounded operation complementarity through one carrier; plurality/order are non-load-bearing here |
 
 Questions may move only through cumulative decisions. A later answer must not
 rewrite an earlier retained decision without its reopening condition.
@@ -3920,6 +3921,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-075` | Owner confirms `yes` to explicit inactive-package acceptance, containing-commit authorization, and post-commit activation-authority construction | `appendix_a2_inactive_package_acceptance_and_retention` | Bind exact reviewed technical hashes in one acceptance overlay; authorize one containing commit; after success open activation-authorization construction only | Acceptance/retention only; 96/96 bytes unchanged; zero campaign/model/arm/gate/result | DEC-070, accepted technical hashes, inactive validation, reviewed report | Active through containing commit; activation commit and campaign remain closed |
 | `P2-I2-CHG-076` | Accepted inactive package is retained at clean commit `c435b00` | `appendix_a2_commit_bound_activation_candidate` | Construct one exact prospective activation authorization and one PyGRC-free validator; bind the containing commit, frozen commands, outputs, graph, `.venv`, and zero-retry policy; return uncommitted | 51/51 after one validator-only status-parser correction; zero campaign/model/arm/gate/result; candidate has no effect while uncommitted | DEC-071, commit `c435b00`, inactive freeze and 96/96 validation, owner acceptance overlay | Complete and review-ready; activation commit and campaign closed |
 | `P2-I2-CHG-077` | Owner states `accept, continue` after the exact 51/51 activation handoff | `appendix_a2_activation_acceptance_and_single_campaign` | Bind exact activation hashes; authorize one containing activation commit, exact clean-HEAD preflight, one exclusive-claim campaign, and retained-aggregate-only reconstruction | Acceptance bytes only before commit; runtime may begin only after clean committed preflight; zero retry | DEC-072, activation authorization/validation/validator hashes, implementation commit `c435b00`, frozen commands | Active through commit/campaign/reconstruction; result acceptance and commit closed |
+| `P2-I2-CHG-078` | Accepted APP-A2 activation is retained at `e61dacc`; the single campaign and retained-only reconstruction complete | `appendix_a2_runtime_reconstruction_and_closeout` | Retain one 19-arm aggregate, reconstruct its analysis byte-identically without scientific regeneration, and validate the exact bounded disposition | 19/19 operationally valid; zero campaign/arm retry; primary and causal relations pass; all seven proper subsets are insufficient; 53/53 closeout validation | DEC-073, retained APP-A1/APP-A2 authorities, one consumed campaign claim, aggregate/reconstruction/validation identities, frozen claim ceiling | Result review-ready uncommitted; main P2-I2 closeout unchanged; owner result acceptance and commit closed |
+| `P2-I2-CHG-079` | Owner states `ok, do close appendix and commit` after review of DEC-073/CHG-078 | `appendix_a2_result_acceptance_appendix_closeout_and_retention` | Bind the five exact reviewed identities; accept the bounded result; close Appendix A; synchronize governance/navigation; authorize one containing commit | Acceptance only: final integrity check passes 9/9 after one string-versus-resolved interpreter-identity diagnostic; no runtime, reconstruction, scientific regeneration, gate, control, or result-byte change | DEC-074, exact aggregate/reconstruction/validation/validator/report hashes, unchanged main P2-I2 terminal and blocked claims | Complete through authorized containing commit; later work closed |
 
 ## 19. Evidence ledger
 
@@ -4022,18 +4025,19 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-APP-A1-CONFORMANCE-CORRECTION` | APP-A1 | [Failed start](../contracts/p2-i2/app-a1-conformance-failed-start-001.json), [owner correction authority](../contracts/p2-i2/app-a1-conformance-correction-authorization.json), [additive correction freeze](../contracts/p2-i2/app-a1-conformance-correction-freeze.json), [60/60 zero-model validation](../contracts/p2-i2/app-a1-conformance-correction-freeze-validation.json), [29/29 runtime record](../contracts/p2-i2/app-a1-runtime-conformance.json), and [attempt/reconstruction receipt](../contracts/p2-i2/app-a1-conformance-run-receipt.json) | Same-iteration intervention-ledger-rebase mechanics and quarantined candidate-free conformance only | Complete: one replacement, one byte-identical reconstruction, zero retry and zero APP-A2/scientific execution |
 | `P2-I2-APP-A1-EXECUTION-FREEZE` | APP-A1 | [Inactive exact APP-A2 execution freeze](../contracts/p2-i2/app-a1-app-a2-execution-freeze.json), [53/53 complete validation](../contracts/p2-i2/app-a1-complete-validation.json), [complete validator](../scripts/p2_i2_app_a1_complete_validate.py), and [cumulative report](../reports/P2-I2-APP-A1-source-delta-and-gate-authority-review.md) | Exact future 19-arm runtime, receipt, isolation, evaluation, reconstruction, and interpretation contract only | Owner-accepted; included in the authorized retention commit; all APP-A2 runtime/results remain unauthorized until commit success and APP-A2 declaration |
 | `P2-I2-APP-A1-OWNER-ACCEPTANCE` | APP-A1 | [Owner acceptance and necessary-retention authority](../contracts/p2-i2/app-a1-owner-acceptance-and-retention.json), DEC-068, and CHG-073 | Exact APP-A1 acceptance plus one retention-commit authority only | Owner-accepted; commit necessary and authorized; APP-A2 opens only afterward and no scientific runtime/result is assigned |
+| `P2-I2-APP-A2-IMPLEMENTATION` | APP-A2 | [Entry freeze](../contracts/p2-i2/app-a2-entry-freeze.json), [inactive activation freeze](../contracts/p2-i2/app-a2-inactive-activation-freeze.json), [96/96 validation](../contracts/p2-i2/app-a2-inactive-static-validation.json), [runner](../scripts/p2_i2_app_a2_run.py), [analysis](../scripts/p2_i2_app_a2_analysis.py), [reconstructor](../scripts/p2_i2_app_a2_reconstruct.py), and [validator](../scripts/p2_i2_app_a2_validate.py) | Exact fresh-process 19-arm implementation and inactive boundary only | Owner-accepted and retained at `c435b00`; zero scientific runtime in construction |
+| `P2-I2-APP-A2-ACTIVATION` | APP-A2 | [Activation authorization](../contracts/p2-i2/app-a2-activation-authorization.json), [owner acceptance](../contracts/p2-i2/app-a2-activation-owner-acceptance.json), [51/51 validation](../contracts/p2-i2/app-a2-activation-candidate-validation.json), and [validator](../scripts/p2_i2_app_a2_activation_validate.py) | One commit-bound campaign attempt and retained-only reconstruction authority | Owner-accepted and retained at `e61dacc`; one campaign claim consumed; zero retry |
+| `P2-I2-APP-A2-RUNTIME` | APP-A2 | [19-arm aggregate](../contracts/p2-i2/app-a2-runtime-evidence.json), [read-only reconstruction and disposition](../contracts/p2-i2/app-a2-reconstruction-and-closeout.json), [53/53 closeout validation](../contracts/p2-i2/app-a2-closeout-validation.json), [closeout validator](../scripts/p2_i2_app_a2_closeout_validate.py), [owner acceptance and Appendix closeout](../contracts/p2-i2/app-a2-result-owner-acceptance-and-appendix-closeout.json), and [cumulative report](../reports/P2-I2-APP-A2-fresh-runtime-matrix-and-closeout.md) | One bounded positive runtime result: complete proper-subset insufficiency plus operation-specific and carrier causal paths; explicit plurality/order limitations and blocked claims | Owner-accepted under DEC-074/CHG-079; Appendix A closed; containing closeout commit authorized |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.
 
 ## 20. `P2-I2-APP-A` — Three-operation shared-carrier composition
 
-**Status:** APP-A0 is retained. APP-A1 is complete and owner-accepted under
-DEC-064–067/CHG-069–072: N29 transport remains rejected, the separate live
-authority is accepted, the exact 19-arm future registry is frozen, and
-candidate-free conformance passes 29/29 with byte-identical reconstruction.
-No Appendix scientific evidence exists; this containing commit is the required
-APP-A1 retention point and APP-A2 remains unopened until it succeeds.
+**Status:** closed and owner-accepted under DEC-074/CHG-079. APP-A2 completed
+its single governed campaign and retained-only reconstruction: 19/19 arms are
+valid, the primary and causal relations pass, and closeout validates 53/53.
+One containing closeout commit is authorized; later work remains closed.
 
 **Purpose:** test one exact extension of the accepted P2-I2 relation:
 
@@ -4172,7 +4176,7 @@ Checklist:
   domain transportability; freeze realization, gate signature, fixture,
   controls, role-rotation identity, and any candidate-free conformance.
 - [x] Open APP-A2 only after the APP-A1 freeze is reviewed and retained.
-- [ ] Execute the complete eight-subset matrix and bounded diagnostics once
+- [x] Execute the complete eight-subset matrix and bounded diagnostics once
   through fresh live PyGRC runtimes, retain operation-level and carrier/
   response/intervention/restoration receipts, reconstruct the runtime evidence
   deterministically, resolve the exact claim, and stop.
@@ -4186,7 +4190,8 @@ It is an additive within-lane extension with its own bounded disposition.
 separate gate-authority acceptance, exact fixture/control registration,
 candidate-free correction/conformance/reconstruction, inactive APP-A2 execution
 freeze, and 53/53 complete validation are included in the authorized containing
-retention commit. APP-A2 remains unopened until commit success.
+retention commit. That retention later succeeded at `1f69816`; APP-A2 is now
+complete and separately governed by DEC-069–073/CHG-074–078.
 
 ```text
 iteration_id = P2-I2-APP-A1
@@ -4272,9 +4277,8 @@ APP-A2/scientific runs = 0
 
 ### 20.2 `P2-I2-APP-A2` — Frozen fresh-runtime matrix and closeout
 
-**Status:** activation candidate accepted under DEC-072; activation commit,
-single campaign, and read-only reconstruction authorized; result acceptance
-closed.
+**Status:** result owner-accepted and Appendix A closed under DEC-074/CHG-079;
+one containing closeout commit authorized.
 
 ```text
 iteration_id = P2-I2-APP-A2
@@ -4326,14 +4330,23 @@ APP-A2 checklist:
   without running the campaign; return it uncommitted for owner review.
 - [x] Obtain explicit owner acceptance of the exact 51/51 activation candidate
   and authority for one containing activation commit and single campaign.
-- [ ] Commit the accepted activation package, verify the exact clean committed
+- [x] Commit the accepted activation package (`e61dacc`), verify the exact clean committed
   HEAD, and invoke the one governed campaign through `.venv`.
-- [ ] If activated, execute exactly 19 arms once, fail closed on any missing or
+- [x] If activated, execute exactly 19 arms once, fail closed on any missing or
   nonevaluable arm, and retain only the one aggregate runtime artifact.
-- [ ] Reconstruct and interpret only from that retained aggregate; validate the
+- [x] Reconstruct and interpret only from that retained aggregate; validate the
   exact conclusion and stop for owner review without an unreviewed commit.
+- [x] Validate the aggregate, reconstruction, bounded conclusion, process
+  counts, portability, and zero-regeneration boundary; retain one 53/53
+  closeout-validation artifact.
+- [x] Obtain explicit owner acceptance of the exact bounded result, close
+  Appendix A, and authorize one containing closeout commit.
+- [x] Run one `.venv`-bound, non-scientific acceptance/identity integrity
+  check over the exact reviewed hashes and closeout record.
+- [x] Retain the complete accepted APP-A2 result and Appendix A closeout in the
+  one authorized commit.
 
-Current APP-A2 counts:
+Preactivation APP-A2 construction counts:
 
 ```text
 campaign starts = 0
@@ -4355,7 +4368,7 @@ PyGRC imports across those processes = 0
 generated APP-A2 bytecode caches retained = 0
 ```
 
-Isolation closeout:
+Preactivation isolation closeout:
 
 ```text
 earlier incomplete arm suppresses later attempt = false
@@ -4370,7 +4383,7 @@ activation authorization present = false
 campaign authorized = false
 ```
 
-Activation-candidate counts:
+Historical activation-candidate counts before DEC-072 acceptance:
 
 ```text
 activation candidate files = 1
@@ -4389,4 +4402,64 @@ Appendix results = 0
 activation candidate tracked in HEAD = false
 activation commit authorized = false
 campaign authorized now = false
+```
+
+APP-A2 runtime and closeout counts:
+
+```text
+activation commit = e61dacc
+campaign claims consumed = 1
+campaign invocations = 1
+campaign retries = 0
+child arm starts = 19
+child arm retries = 0
+fresh scientific models = 19
+operationally valid arms = 19/19
+scientific gate signatures = 19
+operation packets = 228
+response packets = 76
+native packet events = 608
+maximum queue length = 4
+per-arm persisted files = 0
+aggregate runtime artifacts = 1
+reconstruction invocations = 1
+retained aggregate reads = 1
+analysis reconstruction byte-identical = true
+reconstruction PyGRC/model/child/producer/scientific regeneration = 0/0/0/0/0
+closeout validator starts = 3 (52/53 check-only; corrected 53/53 check-only
+                              + retained)
+closeout validator diagnostics = 1
+closeout validation = 53/53 passed
+closeout-validation PyGRC/model/child/producer/scientific regeneration = 0/0/0/0/0
+Appendix results = 1
+terminal classification = supported_bounded_candidate
+owner result acceptance = granted under DEC-074/CHG-079
+Appendix A status = closed
+result commit = authorized and pending
+acceptance-integrity Python starts = 3 (8/9 initial; one diagnostic;
+                                        corrected 9/9 final)
+initial-only mismatch = lexical sys.executable versus resolved `.venv` path
+acceptance-integrity PyGRC/model/child/producer/scientific regeneration = 0/0/0/0/0
+```
+
+Bounded result:
+
+```text
+complete matrix = true
+all arms operationally valid = true
+all seven proper subsets insufficient = true
+full GEP gate signature passed = true
+primary relation passed = true
+G, E, and P direct-withdrawal/mediator-restoration paths passed = true
+carrier-clamp causal relation passed = true
+load-bearing external producer = false
+one-source reproduction = true
+cyclic role-rotation reproduction = true
+label invariance = true
+tested EGP and GPE adjacent inversions pass = true
+physical participant plurality load-bearing = false
+tested operation order load-bearing = false
+bounded claim = bounded generator-extractor-redistributor shared-carrier
+                composition candidate
+main P2-I2 terminal classification changed = false
 ```

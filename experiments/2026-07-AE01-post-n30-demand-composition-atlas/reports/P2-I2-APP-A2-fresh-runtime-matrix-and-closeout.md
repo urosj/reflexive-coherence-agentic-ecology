@@ -2,26 +2,35 @@
 
 ## Current disposition
 
-APP-A2 implementation construction is complete and review-ready. The exact
-19-arm runner, pure receipt analysis, read-only reconstructor, inactive
-activation freeze, and zero-science validator are frozen. Final inactive
-validation passes 96/96. The scientific campaign has not started.
+APP-A2 completed its one authorized 19-arm fresh-runtime campaign and
+retained-aggregate-only reconstruction. All arms are operationally valid, the
+frozen primary and causal relations pass, reconstruction is byte-identical,
+and closeout validation passes 53/53. The exact bounded result is review-ready
+and owner-accepted under DEC-074/CHG-079. Appendix A is closed and one
+containing closeout commit is authorized.
 
 ```text
 retained APP-A1 authority:              commit 1f69816
 frozen arms:                            19
-campaign attempts authorized now:       0
-child arm starts:                       0
-scientific models:                      0
-scientific gate signatures:             0
-runtime aggregate:                      absent
-reconstruction/closeout:                absent
-Appendix result:                        unassigned
+activation authority:                   retained at e61dacc
+campaign claims consumed:               1
+campaign invocations/retries:            1/0
+child arm starts/retries:                19/0
+fresh scientific models:                19
+operationally valid arms:                19/19
+scientific gate signatures:             19
+runtime aggregate:                      retained uncommitted
+reconstruction/closeout:                retained uncommitted
+Appendix result:                        supported_bounded_candidate
 inactive validation:                    96/96 passed
-owner acceptance:                       granted under DEC-070
+implementation owner acceptance:        granted under DEC-070
 containing implementation commit:       retained at c435b00
 activation candidate validation:         51/51 passed
-activation candidate tracked in HEAD:    false
+activation commit:                       e61dacc
+closeout validation:                     53/53 passed
+owner result acceptance:                 granted under DEC-074
+Appendix A:                              closed
+result commit:                           authorized and pending
 ```
 
 ## Implemented causal path
@@ -122,8 +131,103 @@ constructed no model, and created no runtime output. Owner review of the exact
 authorization and validation is now required before any activation commit or
 campaign start.
 
-The owner now states `accept, continue`. DEC-072 accepts the exact 51/51
+The owner then stated `accept, continue`. DEC-072 accepted the exact 51/51
 activation bytes and authorizes their containing commit, the runner's exact
 clean-HEAD preflight and exclusive claim, the single 19-arm campaign, and the
 frozen retained-aggregate-only reconstruction. Result acceptance and result
-commit remain closed until the resulting evidence is returned for review.
+commit remained closed until the resulting evidence was returned for review.
+
+## Runtime execution
+
+The accepted activation was retained at `e61dacc`. Its exact clean-HEAD
+preflight passed and the campaign atomically consumed its only claim before
+starting the first child. It completed all 19 frozen rows once through fresh
+processes and fresh 12-node/28-edge PyGRC models. There were no campaign or
+child retries and no per-arm files.
+
+```text
+campaign invocations/retries:    1/0
+child starts/retries:            19/0
+fresh models:                    19
+valid arms:                      19/19
+operation packets:               228
+response packets:                76
+native packet events:            608
+maximum queue length:            4
+per-arm files:                   0
+aggregate files:                 1
+```
+
+The full `GEP` arm passes the complete registered signature:
+
+| Gate | Observed | Registered bound | Result |
+| --- | ---: | ---: | --- |
+| environment feedback | `0.046739999999999976` | `>= 0.04` | pass |
+| support feedback | `0.02214000000000002` | `>= 0.02` | pass |
+| phase residual | `0.01296` | `<= 0.015` | pass |
+| route-merge leakage | `5.538584076652357e-16` | `<= 1e-12` | pass |
+| configuration retention | `0.82` | exact registered value | pass |
+
+Reference, `G`, `E`, `P`, `GE`, `GP`, and `EP` are all valid arms and all fail
+the complete measured signature. The full-composition versus every-proper-
+subset primary relation therefore passes without treating invalid execution as
+scientific insufficiency.
+
+## Causal and control resolution
+
+The causal relation also passes. Removing each of `G`, `E`, and `P` changes
+the later response, each corresponding mediator-restoration intervention
+changes that response, and clamping the shared carrier changes the response.
+Native response sources are carrier-only and the reference is fully diverted.
+No external producer is load-bearing in the realized relation; the operation,
+carrier, and later-response paths use the accepted native PyGRC machinery.
+
+The one-source and cyclic contributor-role controls reproduce the relation,
+and label permutation is invariant. Both tested adjacent order inversions,
+`EGP` and `GPE`, pass. These controls resolve two tempting overclaims:
+physical participant plurality is not load-bearing in this frozen fixture, and
+the tested operation order is not load-bearing. The result concerns the three
+physically distinct operations composing through the carrier, not a necessary
+three-agent coalition or a unique sequence.
+
+## Reconstruction and bounded disposition
+
+The reconstructor read the retained aggregate exactly once, regenerated no
+scientific state, and reproduced the analysis byte-identically. It made zero
+PyGRC imports, model calls, child starts, producer calls, or scientific
+generation calls. The corrected closeout validator passes 53/53 with the same
+zero-regeneration boundary. Its first check-only start reported 52/53 only
+because its source sentinel matched its own literal `import pygrc`; one
+PyGRC-free diagnostic localized that self-match and the in-place sentinel
+correction produced both passing check-only and retained runs.
+
+```text
+terminal classification = supported_bounded_candidate
+bounded claim = bounded generator-extractor-redistributor shared-carrier
+                composition candidate
+functional scope = bounded functional complementarity through the common
+                   carrier relative only to the frozen fixture and gates
+main P2-I2 terminal changed = false
+N29 metric equivalence claimed = false
+```
+
+The evidence does not establish coalition, functional cooperation,
+coordination, resource economy, agency, collective identity, an ecology motif
+or regime, cross-lane recurrence, or N31+ selection. DEC-073/CHG-078 retain
+that exact claim ceiling.
+
+## Owner acceptance and Appendix closeout
+
+The owner states `ok, do close appendix and commit`. DEC-074/CHG-079 bind the
+exact reviewed runtime, reconstruction, validation, validator, and pre-
+acceptance report identities; accept the bounded result; close Appendix A; and
+authorize one containing closeout commit. Acceptance changes no technical
+result byte and opens no later synthesis, selection, graph mutation, or next
+move.
+
+The acceptance-integrity check initially reported 8/9 because it compared the
+interpreter's lexical path with the resolved `.venv` path. One `.venv`-only
+diagnostic showed every substantive identity check passed and isolated that
+normalization mismatch. The corrected resolved-path check passes 9/9. Across
+all three acceptance-integrity Python starts there were zero PyGRC imports,
+models, children, producers, or scientific regeneration calls.

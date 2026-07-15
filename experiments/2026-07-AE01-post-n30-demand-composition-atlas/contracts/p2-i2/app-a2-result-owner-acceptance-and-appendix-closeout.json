@@ -1,0 +1,95 @@
+{
+  "acceptance_authority": {
+    "change_id": "P2-I2-CHG-079",
+    "decision_id": "P2-I2-DEC-074",
+    "owner_direction": "ok, do close appendix and commit",
+    "owner_direction_effect": "explicit_APP_A2_result_acceptance_Appendix_A_closeout_and_one_containing_commit_authorization"
+  },
+  "accepted_result": {
+    "all_arms_operationally_valid": true,
+    "bounded_claim": "bounded generator-extractor-redistributor shared-carrier composition candidate",
+    "causal_relation_passed": true,
+    "functional_description": "bounded functional complementarity of operations through the common carrier relative only to the frozen fixture and gate signature",
+    "load_bearing_external_producer": false,
+    "order_resolution": "tested_adjacent_inversions_do_not_make_order_load_bearing",
+    "plurality_resolution": "physical_participant_plurality_non_load_bearing_in_frozen_fixture",
+    "primary_relation_passed": true,
+    "proper_subsets_insufficient": [
+      "reference",
+      "G",
+      "E",
+      "P",
+      "GE",
+      "GP",
+      "EP"
+    ],
+    "terminal_classification": "supported_bounded_candidate"
+  },
+  "appendix_closeout": {
+    "appendix_id": "P2-I2-APP-A",
+    "closed": true,
+    "main_p2_i2_terminal_changed": false,
+    "result_accepted": true,
+    "result_retention_commit_authorized": true
+  },
+  "artifact_id": "P2-I2-APP-A2-RESULT-OWNER-ACCEPTANCE-AND-APPENDIX-CLOSEOUT",
+  "artifact_version": "1.0",
+  "base_commit": "e61daccd9258d5511394112b2be7fb5ece310852",
+  "commit_authority": {
+    "authorized": true,
+    "containing_commit_count": 1,
+    "resulting_HEAD_self_reference": "intentionally_not_embedded",
+    "scope": "accepted_APP_A2_runtime_reconstruction_validation_closeout_governance_and_navigation"
+  },
+  "experiment_id": "2026-07-AE01",
+  "iteration_id": "P2-I2-APP-A2",
+  "preserved_boundaries": {
+    "agency_or_collective_identity_claimed": false,
+    "coalition_cooperation_or_coordination_claimed": false,
+    "cross_lane_recurrence_claimed": false,
+    "ecology_motif_or_regime_claimed": false,
+    "main_p2_i2_result_changed": false,
+    "n29_metric_equivalence_claimed": false,
+    "n31_selection_authorized": false,
+    "next_move_authorized": false,
+    "participant_plurality_load_bearing": false,
+    "pygrc_mutation_authorized": false,
+    "resource_economy_claimed": false,
+    "tested_operation_order_load_bearing": false
+  },
+  "reviewed_technical_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-runtime-evidence.json",
+      "role": "single_19_arm_runtime_aggregate",
+      "sha256": "5e09447215a05134fb5dfe7e2e8947b0b313950d950f963e748cdd6d14cd9b87"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-reconstruction-and-closeout.json",
+      "role": "retained_only_reconstruction_and_bounded_disposition",
+      "sha256": "e197917b2934f8cbd5d0a79a4688f520f76e680bac4c29328ea15ae13517b739"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-a2-closeout-validation.json",
+      "role": "53_of_53_closeout_validation",
+      "sha256": "eedb7edcffe80337093210e378a190f8577ee245f65e2a09342ccabb329c1ec9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_a2_closeout_validate.py",
+      "role": "closeout_validator",
+      "sha256": "0bba0341af2a4bd20f3f6ae6f55c340a24fb83631f64369f78b3b7992d9a7c5a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-APP-A2-fresh-runtime-matrix-and-closeout.md",
+      "role": "reviewed_report_before_acceptance_projection",
+      "sha256": "cfcb50aa4675becb57297fac5c09d7f8570ed56cb7066bc02bd4c308ef8bcae1"
+    }
+  ],
+  "status": "owner_accepted_Appendix_A_closed_commit_authorized",
+  "validation_disposition": {
+    "analysis_reconstruction_byte_identical": true,
+    "checks_passed": 53,
+    "checks_total": 53,
+    "failed_checks": 0,
+    "scientific_regeneration_invocations": 0
+  }
+}

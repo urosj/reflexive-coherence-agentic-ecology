@@ -2913,3 +2913,54 @@ adaptive choice, fail-closed completeness, and one retained aggregate. After
 that aggregate exists, the already-frozen PyGRC-free reconstructor is
 authorized to derive byte-identical analysis and one closeout. Result
 acceptance and result commit remain closed pending owner review.
+
+### 17.16 APP-A2 runtime result
+
+The single authorized campaign was claimed from clean activation commit
+`e61dacc` and completed all 19 frozen arms through fresh `.venv` children and
+native LGRC9V3 models. Every arm is operationally valid; all seven registered
+proper subsets fail at least one measured gate; GEP passes the full signature;
+each G/E/P withdrawal changes `R` directly and each registered mediator restore
+also changes it; and the carrier clamp changes `R`. The bounded primary and
+causal relations therefore both pass.
+No external producer is load-bearing in the realized relation.
+
+The exact positive disposition is:
+
+```text
+terminal = supported_bounded_candidate
+claim = bounded generator-extractor-redistributor shared-carrier composition
+        candidate
+functional description = bounded functional complementarity of operations
+        through the common carrier relative only to the frozen fixture and
+        gate signature
+```
+
+The capacity-relaxed one-source arm and cyclic contributor-role rotation both
+reproduce the relation, so physical participant plurality is non-load-bearing
+in this fixture. Both tested adjacent order inversions also pass, so the tested
+`G -> E -> P` ordering is not load-bearing. Label permutation is invariant,
+the reference is fully diverted, and every response source is carrier-only.
+
+The PyGRC-free reconstructor reads the retained aggregate once and reproduces
+analysis byte-identically with zero model, child, producer, or scientific
+regeneration. Closeout validation passes 53/53. This does not claim N29 metric
+equivalence, alter the main P2-I2 terminal, establish cross-lane recurrence,
+select N31+, or admit coalition/cooperation/coordination/resource-economy/
+agency/collective-identity/ecology-regime language. Result acceptance and
+commit remain pending owner review.
+
+### 17.17 APP-A2 acceptance and Appendix A closeout
+
+The owner states `ok, do close appendix and commit`. DEC-074/CHG-079 therefore
+accept the exact DEC-073 bounded result, close `P2-I2-APP-A`, and authorize one
+containing closeout commit. No hypothesis, gate, control, receipt, measured
+value, or reviewed technical artifact changes through acceptance.
+
+The accepted result establishes fixture/gate-bounded functional
+complementarity of G, E, and P through one shared carrier. It also retains the
+negative scope resolutions: participant plurality and tested operation order
+are non-load-bearing, no external producer is load-bearing, and every blocked
+claim remains blocked. Main P2-I2 interpretation and every prior gate remain
+unchanged. Appendix A is closed; later synthesis or selection requires separate
+authority.

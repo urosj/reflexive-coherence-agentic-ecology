@@ -5,7 +5,10 @@ accepted 234-entry C02 cycle, corrected control resolution, and independent
 reconstruction. Its I11 closeout candidate classifies L02 as
 `supported_bounded_candidate` through R05 at a `scaffold_dependent`,
 `T3_operational_class` boundary. The owner accepted the exact reviewed package,
-passed CLOSE-GATE, and authorized its containing commit.
+passed CLOSE-GATE, and retained its containing commit. Its additive Appendix A
+is also closed and owner-accepted: a 19-arm native shared-carrier campaign
+supports bounded three-operation composition with byte-identical
+reconstruction and 53/53 closeout validation.
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
@@ -146,6 +149,13 @@ state-carried expression and one common missing native active-history function
 behind the history/hybrid adapters. DEC-061 records exact owner acceptance,
 CLOSE-GATE passage, and containing-commit authority without starting the
 naturalization probe or cross-lane synthesis.
+The subsequent [Appendix A runtime closeout](reports/P2-I2-APP-A2-fresh-runtime-matrix-and-closeout.md)
+tests a distinct generator/extractor/redistributor composition through one
+carrier. All 19 fresh-runtime arms are valid; `GEP` passes while every proper
+subset is insufficient; operation-specific and carrier causal tests pass; and
+retained-only reconstruction is byte-identical. DEC-074 accepts the bounded
+result and closes Appendix A. Participant plurality and tested operation order
+are explicitly non-load-bearing, and no external producer is load-bearing.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself
