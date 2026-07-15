@@ -4,8 +4,11 @@
 accepted by the project owner on 2026-07-14; three-mode retention scope
 correction accepted by the project owner on 2026-07-14; Appendix A accepted
 and closed under DEC-074/CHG-079 on 2026-07-15 after one complete APP-A2
-runtime/reconstruction cycle; prospective Appendix B compact-cycle authority accepted under
-DEC-075/CHG-080 on 2026-07-15
+runtime/reconstruction cycle; prospective Appendix B compact-cycle authority
+accepted under DEC-075/CHG-080 on 2026-07-15; APP-B2/B3 technically complete
+with owner result acceptance pending; APP-B4 inactive 75-arm freeze retained
+at `863d73c`, activation readiness technically validated under DEC-090/CHG-095,
+and zero APP-B4 runtime so far
 
 **Lane:** `AE01-L02`
 
@@ -1171,7 +1174,8 @@ opening any blocked claim or subsequent work.
 ## Appendix B — P2-I2-grounded three-operation shared-pool composition
 
 **Status:** semantic and process authority owner-accepted under
-DEC-075/CHG-080; APP-B0 active before source or implementation work
+DEC-075/CHG-080; APP-B1 complete; APP-B2/B3 technically complete with owner
+result acceptance pending; APP-B4 inactive and unrun
 
 ### B.1 Exact question
 

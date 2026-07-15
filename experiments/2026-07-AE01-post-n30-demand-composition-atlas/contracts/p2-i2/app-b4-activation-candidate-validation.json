@@ -1,0 +1,40 @@
+{
+  "artifact_id": "P2-I2-APP-B4-ACTIVATION-CANDIDATE-VALIDATION",
+  "artifact_version": "1.0",
+  "canonical_payload_digest": "3efd28a0d7649d0902836fc9ecfdb0b6b3dfa8d45867ab64a131ecbb04612ebd",
+  "checks": {
+    "absolute_persisted_paths": 0,
+    "canonical_authorities_and_digests": 3,
+    "claim_output_and_reconstruction_absent": true,
+    "corrected_runner_matches_correction": true,
+    "exclusive_claim_and_zero_retry_guards_present": true,
+    "immutable_implementation_ancestor": true,
+    "normalized_venv_command_exact": true,
+    "original_runner_matches_inactive_freeze": true,
+    "owner_acceptance_absent": true,
+    "scientific_rows_changed": 0,
+    "tracked_byte_and_clean_head_guards_present": true,
+    "unchanged_frozen_implementation_files": 9
+  },
+  "iteration_id": "P2-I2-APP-B4",
+  "lifecycle": {
+    "campaign_start_authorized": false,
+    "candidate_uncommitted": true,
+    "containing_commit_authorized": false,
+    "owner_review_required": true,
+    "runtime_generation_count": 0
+  },
+  "process_counts": {
+    "PyGRC_imports": 0,
+    "arms": 0,
+    "models": 0,
+    "producers": 0,
+    "responses": 0,
+    "validator_processes_this_start": 1
+  },
+  "status": "passed_candidate_free_owner_review_pending",
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b4_activation_validate.py",
+    "sha256": "56eb32b25beb25e4a54f67ff860571b5ecbaf6e9cb9c142be66edb98bb73b4ec"
+  }
+}

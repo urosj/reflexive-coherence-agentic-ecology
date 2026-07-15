@@ -504,6 +504,18 @@ The effect belongs to the three operation types: participant plurality and the
 two tested adjacent order inversions are non-load-bearing, and no external
 producer is load-bearing. The main P2-I2 terminal and all blocked broader
 claims remain unchanged.
+Appendix B then projected the same abstract G/E/P roles back into the accepted
+P2-I2 state, history, and hybrid carriers without importing Appendix A
+outcomes. Its 99 fresh PyGRC models technically support proper-subset
+composition only in the history-carried realization: current state makes E
+suppressive, active history makes E necessary, and the frozen hybrid makes E
+redundant. APP-B3 confirms exact event admission and limits the result to a
+scaffold-dependent history-carried candidate because no matched three-event
+alternative was run. APP-B4 now retains an inactive 75-arm cardinality/dose/
+order discriminator plus a candidate-free validated activation package; it
+has not executed. The complete geometry, mechanisms,
+functions, evidence statuses, and prospective foundations are described in
+the [P2-I2 interpretative synthesis](reports/P2-I2-interpretative-synthesis.md).
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This
@@ -548,6 +560,7 @@ language.
 | --- | --- | --- |
 | Understand why the project exists | This overview | Contracts, configs, schemas, manifests, scripts, and raw runs |
 | Understand what P2-I1 found | This overview and the C02 result | Registration machinery, individual run JSON, and most checklist history |
+| Understand all P2-I2 cases and appendices | [P2-I2 interpretative synthesis](reports/P2-I2-interpretative-synthesis.md) | Iteration ceremony, individual run JSON, and most machine receipts |
 | Evaluate whether the interpretation is justified | C02 result, owner closeout, and R3 review | Source code and raw artifacts unless a reported fact is in doubt |
 | Understand why a design choice was made | Theory brief and the relevant decision-record section | Unrelated decisions, runtime receipts, and raw runs |
 | Reproduce the experiment | C02 reconstruction instructions, scripts README, manifests, and frozen configs | Most conceptual discussion after the claim boundary is understood |
@@ -567,6 +580,16 @@ For the five-minute experimental result:
 
 1. read this overview;
 2. then read the [P2-I1 C02 result](reports/P2-I1-C02-result.md).
+
+For P2-I2 geometry, mechanisms, and appendices:
+
+1. read the [P2-I2 interpretative synthesis](reports/P2-I2-interpretative-synthesis.md);
+2. then use the [P2-I2 terminal closeout](reports/P2-I2-I11-terminal-closeout.md),
+   [Appendix A result](reports/P2-I2-APP-A2-fresh-runtime-matrix-and-closeout.md),
+   and [Appendix B result](reports/P2-I2-APP-B2-result.md) for exact evidence;
+3. consult the [P2-I2 brief](implementation/P2-I2-shared-pool-co-conditioning-brief.md)
+   and [checklist](implementation/P2-I2-shared-pool-co-conditioning-checklist.md)
+   when auditing claim boundaries.
 
 For the scientific design:
 

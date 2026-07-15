@@ -3171,9 +3171,12 @@ failure.
 
 ### 18.10 `P2-I2-APP-B4-H01` — Ordered three-token discriminator
 
-**Status:** exact inactive 75-arm freeze technically complete under
-DEC-086/CHG-091; owner review, commit, activation, and APP-B4 runtime remain
-closed
+**Status:** exact inactive 75-arm freeze retained at `863d73c`; owner directs
+scientific completion under DEC-089/CHG-094; bounded activation-binding
+correction and candidate-free readiness validation technically complete under
+DEC-090/CHG-095; owner accepts the exact activation package under
+DEC-091/CHG-096 and authorizes its containing commit plus one campaign; runtime
+has not yet begun
 
 APP-B4 asks whether the supported history-carried response is explained by
 three admitted events alone or depends on their native dose composition and
@@ -3251,3 +3254,43 @@ All aggregate discriminator booleans fail closed unless the categorical
 response pattern agrees across seeds 101, 211, and 307. Exact numeric response
 invariance is reported separately and cannot be inferred from categorical
 agreement.
+
+The owner subsequently directs that APP-B4 be completed rather than left as an
+inactive design. A source audit finds that the frozen runner's prospective
+activation check requires an activation artifact to contain the hash of the
+same commit that contains that artifact. That self-reference cannot be
+satisfied. APP-B4 may correct only this authority-binding mechanism by using
+the accepted Appendix A pattern: bind immutable implementation commit
+`863d73c`, require the activation and correction bytes to be tracked
+byte-identically in the clean invocation HEAD, and require that HEAD explicitly
+at invocation. The panel, response, operations, classifiers, attempt/retry
+ceilings, and scientific claim boundary remain immutable.
+
+### 18.11 `P2-I2-INT-H01` — Retained-evidence interpretative sufficiency
+
+**Status:** technically complete under DEC-088/CHG-093; owner review and
+containing commit pending; no new scientific execution or claim authority
+
+The retained P2-I2 evidence stack should be sufficient to explain, in one
+coherent account, what geometry was constructed, which causal mechanism each
+case isolates, what bounded functionality was demonstrated, and what future
+work could legitimately build on it. The synthesis must cover:
+
+- the shared 23-node opportunity geometry and all three main dependence modes;
+- all seven main logical cells and their registered perturbation/control
+  families;
+- stability, restoration, access, private-partition, label, controller, and
+  quantity-matched scope results;
+- Appendix A's distinct live four-axis carrier and accepted 19-arm result;
+- Appendix B's P2-I2-grounded G/E/P geometry, technically complete APP-B2/B3
+  result boundary, and inactive unrun APP-B4 discriminator; and
+- the exact difference between observed evidence, mechanism interpretation,
+  unlocked bounded function, and prospective foundation.
+
+The synthesis fails its purpose if it collapses the three modes, treats an
+output-equivalent bypass as causal evidence, converts repeated-source
+equivalence into cooperation, imports Appendix A outcomes into Appendix B,
+reports APP-B4 as executed, or promotes a possible future application into a
+P2-I2 result. It may reorganize retained evidence for understanding but may
+not assign a new rung, support class, recurrence, native implementation
+priority, semantic relabel, or scientific conclusion.

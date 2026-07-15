@@ -121,6 +121,11 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-084` | Can the complete 27-triple panel execute from the unchanged baseline? | No: 24 feasible; EEG/EEE/EEP fail at second E with P short by 0.125 | Stops before freeze; returns 75-arm unchanged, 87-arm pre-funded, and incomplete 84-arm choices; recommends 75-arm panel | 2026-07-15 |
 | `P2-I2-DEC-085` | Which APP-B4 panel should be frozen? | Owner selects recommended option A with `yes`: 24 feasible triples plus reference across three seeds | Opens inactive 75-arm freeze and candidate-free validation only; commit, activation, runtime, and result remain closed | 2026-07-15 |
 | `P2-I2-DEC-086` | Does the owner-selected APP-B4 panel have an exact executable inactive freeze? | Yes: deterministic 75-row registry, transitive identities, accepted envelope projection, bounded classifiers, and inactive lifecycle pass candidate-free validation | Technically review-ready uncommitted; no PyGRC/model/arm/response ran; commit, activation, claim, runtime, and result remain closed | 2026-07-15 |
+| `P2-I2-DEC-087` | What work opens after APP-B3/B4 retention at `863d73c`? | One documentation-only interpretative synthesis of all main cases and appendices, organized by geometry, mechanism, bounded function, and legitimate foundation | Opens INT-01 checklist/hypothesis/report only; no runtime, reanalysis, new conclusion, semantic relabel, or commit | 2026-07-15 |
+| `P2-I2-DEC-088` | Does INT-01 provide a proper status-safe interpretation of all P2-I2 cases and appendices? | Yes: one causal account covers common geometry, three modes, seven cells, perturbation/stability, Appendix A, APP-B1–B4, bounded functions, and prospective foundations | Technically review-ready uncommitted; adds no evidence or scientific conclusion; owner acceptance/commit and every new runtime remain closed | 2026-07-15 |
+| `P2-I2-DEC-089` | Should APP-B4 remain an inactive design? | No: owner directs that B4 be completed; first correct the impossible self-referential activation-HEAD binding without changing the scientific freeze | Opens bounded activation correction/candidate-free validation and uncommitted handoff; commit, claim, runtime, reconstruction, and result remain closed pending exact review | 2026-07-15 |
+| `P2-I2-DEC-090` | Is the corrected APP-B4 activation package ready for a containing authority commit and one campaign? | Technically yes: candidate-free validation passes, all scientific bytes remain unchanged, and an inactive start refuses before claim | Review-ready uncommitted; owner acceptance/containing commit required before the single zero-retry campaign; result acceptance/commit remain closed | 2026-07-15 |
+| `P2-I2-DEC-091` | Does the owner accept the APP-B4 activation package and authorize continuation? | Yes: `continu with B4`; retain canonical owner overlay, commit the reviewed package, then run the single exact campaign | One containing authority commit and one clean-HEAD zero-retry campaign authorized; result acceptance/commit remain closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -4255,9 +4260,120 @@ containing commit. Activation artifact construction, campaign claim, live
 PyGRC simulation, result assignment, and scientific interpretation remain
 closed.
 
-## 89. Pending decision queue
+## 89. `P2-I2-DEC-087` — Open retained-evidence interpretative synthesis
 
-APP-B4 inactive 75-arm freeze is review-ready under DEC-086/CHG-091. APP-B3
-result acceptance/commit, APP-B4 commit/activation/runtime, operation
-complementarity, cross-appendix synthesis, graph mutation, N31+ selection, and
-any next move remain closed.
+**Status:** documentation-only synthesis active
+
+After retaining the APP-B3 audit and APP-B4 inactive freeze at `863d73c`, the
+owner requests a proper description of all P2-I2 cases and appendices from an
+interpretative perspective: what happens geometrically, what mechanism each
+case shows, what functionality it unlocks, and what could be based on it.
+
+INT-01 must begin with checklist and hypothesis artifacts, then build one
+readable synthesis from retained evidence. It must distinguish accepted main
+P2-I2 and Appendix A runtime results, the technically complete but not yet
+owner-accepted APP-B2/B3 result stack, and the candidate-free unrun APP-B4
+freeze. “Could be based on it” is prospective engineering interpretation, not
+new evidence or authority.
+
+This iteration may read and reorganize retained artifacts only. It may not
+import PyGRC, construct a model, invoke a producer, regenerate an arm or
+response, recompute a scientific result, activate APP-B4, assign recurrence or
+implementation priority, or exceed any existing claim ceiling. Return the
+uncommitted synthesis for owner review.
+
+## 90. `P2-I2-DEC-088` — INT-01 interpretative synthesis disposition
+
+**Status:** technically complete and review-ready uncommitted
+
+INT-01 produces one evidence-linked account of the entire P2-I2 stack. It
+explains the 23-node main geometry, the state/history/hybrid causal
+distinctions, all seven logical cells, exact perturbation and stability scope,
+the accepted Appendix A live four-axis operation composition, the technically
+complete APP-B2/B3 mode-separated result, and the inactive unrun APP-B4
+discriminator. Each major section separates observed geometry, warranted
+mechanism, bounded function, and prospective foundation.
+
+Mechanical retained-evidence validation binds the report to 234 main
+terminals, 19 Appendix A arms, 99 APP-B2 arms, APP-B4's 75-arm inactive and
+zero-runtime lifecycle, and 15/15 resolving report links. Eleven repository
+`.venv` processes performed read-only inspection or validation. PyGRC imports,
+models, producers, arms, responses, scientific regeneration, and new result
+assignments remain zero.
+
+The synthesis adds no cross-appendix recurrence, scientific conclusion,
+semantic relabel, graph implementation priority, or APP-B4 authority. It is
+returned for owner review before any containing commit.
+
+## 91. `P2-I2-DEC-089` — Direct APP-B4 scientific completion
+
+**Status:** bounded activation preparation active
+
+The owner states `i think B4 should be completed`. APP-B4 should therefore not
+remain only an inactive discriminator. Its exact 75-arm history-carried panel
+is retained at `863d73c` and may progress toward one clean-HEAD campaign and
+retained-only reconstruction.
+
+Activation audit finds one infrastructure blocker in the prospective runner:
+it requires an activation artifact to embed `authority_head` equal to the same
+commit that contains that artifact. Such a commit hash is self-referential and
+cannot be frozen honestly. Correct only that binding using the already accepted
+Appendix A mechanism: immutable implementation commit ancestry, activation and
+correction bytes tracked exactly in invocation HEAD, clean worktree/index, and
+explicit invocation-HEAD equality. The original freeze remains immutable and
+the correction must retain its original runner hash plus the corrected source
+hash.
+
+This direction authorizes construction and candidate-free validation of the
+bounded correction and prospective activation. Standing review discipline
+still prohibits an unreviewed containing commit. No campaign claim, model,
+producer, arm, response, reconstruction, or APP-B4 result may occur before the
+exact package is reviewed and retained.
+
+## 92. `P2-I2-DEC-090` — APP-B4 activation-readiness disposition
+
+**Status:** technically complete; owner review pending
+
+The exact APP-B4 correction replaces only the impossible self-referential
+activation-HEAD requirement. It retains implementation commit `863d73c` as an
+immutable ancestor, requires the exact invocation HEAD supplied by the
+command, and requires activation, correction, and owner-acceptance bytes to be
+tracked byte-identically in a clean worktree before the permanent claim.
+
+Candidate-free validation binds canonical authority bytes, the original and
+corrected runner hashes, every unchanged frozen implementation hash, exact
+relative `.venv` command, clean/tracked authority guards, one attempt, zero
+retry, and absent claim/output/reconstruction. A direct start without the
+owner-acceptance overlay refuses before claim. Twelve repository `.venv`
+preparation processes are retained honestly, including one validator-only
+assertion failure and one superseded retained validation receipt. They import
+zero PyGRC and construct zero model, producer, arm, or response.
+
+The package is ready for owner review. Acceptance may authorize an additive
+owner-acceptance overlay and one containing commit. Only the resulting exact
+clean HEAD may consume the single APP-B4 campaign claim. Runtime,
+reconstruction, closeout, scientific result acceptance, and result commit
+remain separate downstream states.
+
+## 93. `P2-I2-DEC-091` — Accept APP-B4 activation and continue
+
+**Status:** owner accepted; containing commit and single campaign authorized
+
+After reviewing the exact readiness handoff, the owner directs `continu with
+B4`. This accepts the candidate-free activation correction and its containing
+package, including the pending interpretative synthesis, and authorizes the
+canonical owner-acceptance overlay plus one containing commit.
+
+After that commit, the runner may bind the exact clean HEAD and consume one
+permanent claim for the unchanged 75-arm campaign. There are zero scientific
+and infrastructure retries. The retained aggregate may be reconstructed once
+without PyGRC or runtime regeneration and independently closeout-validated.
+The resulting scientific evidence must return uncommitted for owner result
+review; acceptance and result commit are not pre-authorized.
+
+## 94. Pending decision queue
+
+APP-B4 containing commit and one campaign are open under DEC-091/CHG-096.
+APP-B2/B3 result acceptance, APP-B4 result acceptance/commit, operation
+complementarity, cross-lane synthesis, graph mutation, N31+ selection, and any
+new scientific move remain closed.

@@ -57,6 +57,22 @@ def git(directory: Path, *arguments: str) -> str:
     ).stdout.strip()
 
 
+def committed_bytes(relative: str) -> bytes:
+    process = subprocess.run(
+        ["git", "show", f"HEAD:{relative}"],
+        check=True,
+        capture_output=True,
+    )
+    return process.stdout
+
+
+def require_tracked_exact(relative: str) -> None:
+    require(portable_relative(relative), "absolute tracked authority path refused")
+    local = ROOT / relative
+    require(local.is_file(), f"tracked authority missing: {relative}")
+    require(committed_bytes(relative) == local.read_bytes(), f"tracked authority differs from HEAD: {relative}")
+
+
 def portable_relative(value: str) -> bool:
     return not PurePosixPath(value).is_absolute() and not PureWindowsPath(value).is_absolute()
 
@@ -115,14 +131,43 @@ def preflight(args: argparse.Namespace, freeze: Mapping[str, Any], activation: M
     require(Path(sys.prefix).resolve() == (ROOT / ".venv").resolve(), "repository .venv inactive")
     require(sys.dont_write_bytecode, "-B required")
     require(activation["artifact_id"] == "P2-I2-APP-B4-LIVE-ACTIVATION", "wrong activation artifact")
-    require(activation["status"] == "owner_accepted_committed_single_campaign", "APP-B4 activation inactive")
+    require(activation["status"] == "active_for_single_campaign_after_owner_acceptance", "APP-B4 activation inactive")
     require(activation["campaign_authorized"] is True, "APP-B4 campaign unauthorized")
     require(activation["authorization_consumed"] is False, "APP-B4 activation already consumed")
     require(activation["freeze"]["path"] == args.freeze, "activation freeze path drifted")
     require(activation["freeze"]["sha256"] == sha256(ROOT / args.freeze), "activation freeze hash drifted")
+    correction_ref = activation["execution_correction"]
+    acceptance_ref = activation["owner_acceptance"]
+    for item in (correction_ref, acceptance_ref):
+        require(portable_relative(item["path"]), "absolute activation authority path refused")
+    correction = load_json(ROOT / correction_ref["path"])
+    acceptance = load_json(ROOT / acceptance_ref["path"])
+    require(correction["artifact_id"] == "P2-I2-APP-B4-ACTIVATION-BINDING-CORRECTION", "wrong execution correction")
+    require(correction_ref["sha256"] == sha256(ROOT / correction_ref["path"]), "execution correction hash drifted")
+    require(correction["base_freeze"]["sha256"] == activation["freeze"]["sha256"], "correction freeze identity drifted")
+    require(acceptance["artifact_id"] == "P2-I2-APP-B4-ACTIVATION-OWNER-ACCEPTANCE", "wrong owner acceptance")
+    require(acceptance["status"] == "owner_accepted_containing_commit_and_single_campaign", "owner acceptance inactive")
+    require(acceptance["activation"]["sha256"] == sha256(ROOT / args.activation), "accepted activation hash drifted")
+    require(acceptance["execution_correction"]["sha256"] == correction_ref["sha256"], "accepted correction hash drifted")
+    require(acceptance["single_campaign_authorized"] is True, "single campaign not owner-authorized")
+    require(acceptance["containing_commit_authorized"] is True, "activation containing commit unauthorized")
     head = git(ROOT, "rev-parse", "HEAD")
-    require(head == args.expected_head == activation["authority_head"], "authority HEAD drifted")
+    require(head == args.expected_head, "invocation HEAD drifted")
+    implementation_commit = activation["implementation_commit"]
+    require(
+        subprocess.run(
+            ["git", "merge-base", "--is-ancestor", implementation_commit, "HEAD"],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+        ).returncode == 0,
+        "immutable implementation commit is not an ancestor of invocation HEAD",
+    )
     require(git(ROOT, "status", "--porcelain=v1", "--untracked-files=all") == "", "authority worktree dirty")
+    activation_relative = str((ROOT / args.activation).relative_to(ROOT))
+    require_tracked_exact(activation_relative)
+    require_tracked_exact(correction_ref["path"])
+    require_tracked_exact(acceptance_ref["path"])
     graph_root = (ROOT / args.graph_root).resolve()
     require(git(graph_root, "rev-parse", "HEAD") == freeze["environment"]["graph_commit"], "graph HEAD drifted")
     require(git(graph_root, "status", "--porcelain=v1", "--untracked-files=all") == "", "graph worktree dirty")
@@ -130,7 +175,12 @@ def preflight(args: argparse.Namespace, freeze: Mapping[str, Any], activation: M
     require(not (ROOT / args.output).exists(), "APP-B4 output already exists")
     require(activation["claim_path"] == args.claim and activation["output_path"] == args.output, "activation output identity drifted")
     for relative, expected in freeze["implementation_sha256"].items():
-        require(sha256(ROOT / relative) == expected, f"implementation drift: {relative}")
+        if relative == RUNNER_REL:
+            require(correction["original_runner"]["sha256"] == expected, "original runner freeze identity drifted")
+            require(correction["corrected_runner"]["path"] == relative, "corrected runner path drifted")
+            require(sha256(ROOT / relative) == correction["corrected_runner"]["sha256"], "corrected runner drifted")
+        else:
+            require(sha256(ROOT / relative) == expected, f"implementation drift: {relative}")
     for item in freeze["authority_inputs"]:
         require(sha256(ROOT / item["path"]) == item["sha256"], f"authority drift: {item['path']}")
     normalized = [
@@ -142,11 +192,16 @@ def preflight(args: argparse.Namespace, freeze: Mapping[str, Any], activation: M
         "--expected-head", args.expected_head,
         "--graph-root", args.graph_root,
     ]
-    expected = [args.expected_head if value == "{AUTHORITY_HEAD}" else value for value in activation["normalized_command"]]
+    expected = [args.expected_head if value == "{ACTIVATION_HEAD}" else value for value in activation["normalized_command"]]
     require(normalized == expected, "activation command drifted")
     return {
         "authority_head": head,
+        "immutable_implementation_commit": implementation_commit,
         "authority_clean_before_claim": True,
+        "activation_sha256": sha256(ROOT / args.activation),
+        "execution_correction_sha256": correction_ref["sha256"],
+        "owner_acceptance_sha256": sha256(ROOT / acceptance_ref["path"]),
+        "tracked_authorities_exact": True,
         "graph_commit": freeze["environment"]["graph_commit"],
         "graph_clean": True,
         "lexical_interpreter": ".venv/bin/python",
