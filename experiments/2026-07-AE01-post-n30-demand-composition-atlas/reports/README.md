@@ -137,7 +137,14 @@ Phase 2 gate reviews:
 - [P2-I2 I08 cumulative execution ledger](P2-I2-I08-execution.md)
   is the single narrative campaign record rather than one report per entry.
   I08 is now 234/234 evaluable with 132 zero-gain and 102 gain-0.125 rows, no
-  seed-varying matched configuration, and null interpretation pending I09.
+  seed-varying matched configuration, and null interpretation pending the
+  downstream gates.
+- [P2-I2 I09 control resolution](P2-I2-I09-control-resolution.md)
+  is the compact R3-required projection over retained evidence. It passes
+  21/21 checks, resolves all 38 comparison rules and 15 mode-local controls,
+  and preserves program-common outcomes separately by mode without assigning
+  `R01`–`R05` or a terminal result. The owner accepts the package and passes
+  CONTROL-GATE under DEC-054.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)

@@ -1,42 +1,21 @@
 # P2-I2 Operational Hypothesis Projections
 
-**Status:** outcome-free; all three I03 realization profiles and the compact
-family closeout are owner-accepted, `P2-I2-DISCRIMINATOR-GATE` is passed, and
-I04R2 is the sole owner-accepted calibration authority with
-`P2-I2-CAL-PRE-GATE` passed. The sole governed I05 arithmetic-null attempt
-completed with one builder call, zero retries, one readback, and a refused
-second start. The owner-required portability program is retained through I05I
-at `b5d0acb`. I05J/I05JA now retain the candidate-blind five-seed projection,
-native metric-calibration and frozen metric-sheet artifacts,
-`analysis_arithmetic_delta = 1e-12`, and 11/11 reconstruction validation. I05J
-has completed an owner-directed closure amendment for exact process accounting
-and current-status synchronization. The owner accepts the complete I05J/I05JA
-package and authorizes its commit; CAL-GATE is passed. I06 now retains an exact
-three-mode registration package with 14/14 baseline-only validation, stable
-save/load/reset composite identities for every mode, and nine negative
-continuation refusals. I06A now also passes 14/14 no-model owner-review checks,
-resolving AdapterV2 conformance and exact two-stage provenance while confirming
-tolerance, admission/diversion, mode isolation, and retry boundaries. The
-owner accepts the complete I06/I06A package and authorizes its checkpoint
-amendment under `P2-I2-DEC-042`. I07 then stops before execution-source
-construction on three exact-registration gaps. The owner authorizes bounded
-checklist/hypothesis-first I06B to add only those missing execution-readiness
-primitives while preserving accepted I06/I06A bytes. I06B now passes 15/15
-candidate-free checks with zero blockers and zero PyGRC/model/packet/scientific
-activity. The owner now explicitly accepts I06B, restoring REG-GATE and
-resuming the existing I07 freeze from its retained audit. No cycle freeze is
-valid yet, and candidate-cycle execution remains unauthorized. No
-candidate/control execution or scientific result exists, and all three profiles
-remain distinct downstream under `P2-I2-DEC-011`.
+**Status:** evidence-bearing through owner-accepted I09 with CONTROL-GATE
+passed; I10 is ready after the containing retention commit and remains unstarted.
+The accepted C02 manifest retains 234/234 evaluable mode-indexed terminals.
+I09 resolves only the already-frozen common and L02 control relations from
+those retained receipts. The three modes remain separate and unranked;
+`R01`–`R05`, the lane support status, and terminal interpretation remain
+unassigned until their later declared stages.
 
 **Lane:** `AE01-L02`
 
 **Frozen hypothesis authority:** `AE01-H-L02`
 
-**Evidence effect:** subordinate projection plus quarantined realization
-implementation-conformance and candidate-blind arithmetic/serialization
-resolution only; no candidate/control outcome, L02 support/falsification,
-runtime tolerance, mode ranking, or scientific result
+**Evidence effect:** subordinate projection plus retained realization
+conformance, candidate-blind arithmetic resolution, registered I08 raw
+evidence, and I09 control resolution; no L02 support/falsification, mode
+ranking, terminal interpretation, or lane scientific result
 
 **Semantic authority:**
 [accepted P2-I2 brief](../implementation/P2-I2-shared-pool-co-conditioning-brief.md)
@@ -1818,6 +1797,59 @@ are mechanical I08 observations only, not control resolution or L02 support.
 The owner accepts the complete I08 mechanical package and authorizes its
 cumulative commit. This acceptance freezes the raw evidence and manifest; it
 does not assign `R01`–`R05`, resolve a control, or begin I09 interpretation.
+
+#### 3.2.33 I09 retained-evidence control-resolution declaration
+
+The owner directs I09 after accepting and retaining the complete I08 package.
+I09 is a deterministic projection stage, not a new hypothesis, execution
+cycle, calibration, or terminal interpretation. Before constructing its
+machine index, it must bind the exact accepted I04R2 analysis rules, I06
+registration and fifteen-entry lane-control template, I08 run matrix and
+234/234 manifest, all nineteen program-common control meanings, the OP-01
+through OP-09 fail-closed effects, and the R3 compact-index requirement.
+
+The index must retain three distinct layers without conflating them:
+
+1. every program-common `AE01-CTRL-01` through `AE01-CTRL-19` guard, with an
+   explicit applicability and outcome for each mode;
+2. every frozen common and mode-specific comparison rule, with exact
+   subconfiguration, seed, response, causal-status, and relation provenance;
+3. every `AE01-L02-CTRL-01` through `AE01-L02-CTRL-05` disposition separately
+   for state-carried, history-carried, and hybrid.
+
+`pass` means only that retained evidence satisfies the frozen control rule. It
+does not mean the primary scientific margin is positive or that a boundary
+rung is supported. `not_applicable`, `ambiguous`, `fail`, `blocked`, and
+`not_run` remain first-class fail-closed outcomes. Raw-visibility and scope-
+diagnostic rules may pass through complete, uncontaminated retention even when
+their response relation is zero or non-gating. Direct/controller branches are
+resolved by receipt-derived causal exclusion rather than numerical inequality.
+
+I09 may not alter a response, regenerate an entry, import or run PyGRC, select
+among modes, collapse mode-specific results, assign `R01`–`R05`, determine L02
+support, or create schema authority. Program-common terminal/report guards are
+resolved only against the artifact set that exists at I09 and must be
+revalidated against the eventual I11 closeout. Any missing registered branch,
+invalid window, seed variation, causal-receipt mismatch, or changed frozen
+identity fails the affected control closed rather than being repaired or
+interpreted away.
+
+The resulting retained-evidence projection is review-ready. It passes 21/21
+deterministic checks and byte-identical reconstruction: all 38 frozen
+comparison rules and all 15 mode-local L02 controls pass, while all 19 program-
+common controls resolve separately by mode to 56 passes and one explicit
+state-carried `AE01-CTRL-16` not-applicable. No matched branch varies across
+seeds. State-carried retains order-invariant responses and primary margins of
+`0.125/0.125`; history-carried and hybrid retain order-conditioned responses
+and primary margins of `0.125/0.0`. This is control evidence, not a rung or
+terminal interpretation. At the construction handoff, CONTROL-GATE remains
+pending owner acceptance; every frozen terminal/report guard remains subject
+to I11 revalidation.
+
+The owner subsequently states `please commit`, accepting this exact projection
+and its 21/21 validation. DEC-054 passes CONTROL-GATE and authorizes the
+containing retention commit. The acceptance adds no rung or terminal meaning;
+I10 remains unstarted, and the I11 revalidation duty is unchanged.
 
 ### 3.3 I03A state-carried realization binding
 

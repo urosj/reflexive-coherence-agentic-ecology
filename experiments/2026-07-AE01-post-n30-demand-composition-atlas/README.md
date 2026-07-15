@@ -136,7 +136,11 @@ valid scientific-zero terminal for the state-carried reference-empty row.
 C02 subsequently completes 234/234 evaluable terminals under commit `180a1bf`:
 132 have gain 0.0 and 102 have gain 0.125, with no seed-varying matched
 configuration. The cumulative manifest passes and interpretation remains null
-pending I09 control resolution.
+pending I11. I09 now derives the compact retained-evidence control index:
+21/21 checks pass, all 38 comparison rules and 15 mode-local controls pass, and
+the 19 program controls resolve to 56 mode-level passes plus one explicit
+state-carried not-applicable. The owner accepts I09 and passes CONTROL-GATE;
+no `R01`–`R05` or terminal result is assigned, and I10 remains unstarted.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself

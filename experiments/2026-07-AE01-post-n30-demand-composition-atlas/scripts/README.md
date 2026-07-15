@@ -390,3 +390,19 @@ representation-only projection is governed by `P2-I2-DEC-039` and
 `1279e177d6691417a1d692dd8fdfc5cf50060e11`, SHA-256
 `94a0882655376b95a4618af861c712e86d587a88c36ee136e1057c00ab2aa11e`.
 No command authority, runtime, or scientific meaning changed.
+
+## P2-I2 I09 retained-evidence control resolution
+
+`p2_i2_i09_control_resolution.py` derives the compact control index solely
+from the frozen I03/I04/I06 authorities and accepted I08 receipts. It does not
+import PyGRC, construct a model, or regenerate a matrix entry. The retained
+index, validation, and report reconstruct byte-identically through the
+repository venv:
+
+```bash
+.venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09_control_resolution.py validate
+```
+
+The command is read-only with respect to retained artifacts. It validates
+control projection only; it cannot assign `R01`–`R05`, pass CONTROL-GATE by
+itself, or authorize I10.

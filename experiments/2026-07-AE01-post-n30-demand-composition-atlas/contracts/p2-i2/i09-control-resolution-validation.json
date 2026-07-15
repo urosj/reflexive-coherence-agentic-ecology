@@ -1,0 +1,185 @@
+{
+  "CONTROL_GATE": "review_ready_pending_owner_acceptance",
+  "artifact_id": "P2-I2-I09-CONTROL-RESOLUTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "blocker_count": 0,
+  "candidate_or_control_invocations": 0,
+  "canonical_payload_digest": "981dad6bb4091d5ea8cc1b30c55ec8d96e87f749913c4f40816e70a25fd50096",
+  "check_count": 21,
+  "checks": [
+    {
+      "check_id": "I09-01",
+      "claim": "all frozen input identities reconstruct exactly",
+      "observed": 16,
+      "passed": true
+    },
+    {
+      "check_id": "I09-02",
+      "claim": "all 234 registered terminals are evaluable",
+      "observed": 234,
+      "passed": true
+    },
+    {
+      "check_id": "I09-03",
+      "claim": "the normalized branch index has exact three-seed coverage",
+      "observed": 78,
+      "passed": true
+    },
+    {
+      "check_id": "I09-04",
+      "claim": "no matched branch configuration varies across seeds",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "check_id": "I09-05",
+      "claim": "all frozen common and mode comparison rules are represented",
+      "observed": 38,
+      "passed": true
+    },
+    {
+      "check_id": "I09-06",
+      "claim": "all comparison rules resolve without forced ambiguity",
+      "observed": {
+        "pass": 38
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09-07",
+      "claim": "all fifteen mode-local L02 controls are represented",
+      "observed": 15,
+      "passed": true
+    },
+    {
+      "check_id": "I09-08",
+      "claim": "all mode-local L02 controls pass their frozen rules",
+      "observed": {
+        "pass": 15
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09-09",
+      "claim": "all nineteen program-common controls are represented",
+      "observed": 19,
+      "passed": true
+    },
+    {
+      "check_id": "I09-10",
+      "claim": "program controls resolve separately for every mode",
+      "observed": 57,
+      "passed": true
+    },
+    {
+      "check_id": "I09-11",
+      "claim": "only native state CTRL-16 is explicitly not applicable",
+      "observed": {
+        "not_applicable": 1,
+        "pass": 56
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09-12",
+      "claim": "direct/controller output equivalence is resolved by causal receipts",
+      "observed": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "passed": true
+    },
+    {
+      "check_id": "I09-13",
+      "claim": "quantity-matched repetition remains non-gating",
+      "observed": 3,
+      "passed": true
+    },
+    {
+      "check_id": "I09-14",
+      "claim": "history and hybrid order dependence remains mode-local",
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "check_id": "I09-15",
+      "claim": "state order invariance remains mode-local",
+      "observed": "pass",
+      "passed": true
+    },
+    {
+      "check_id": "I09-16",
+      "claim": "the index assigns no R01-R05 or terminal result",
+      "observed": {
+        "I11_common_guard_revalidation_required": true,
+        "R01_through_R05": "unassigned_until_I11",
+        "cross_mode_scalar_aggregation": false,
+        "lane_support_status": null,
+        "mode_ranking": false,
+        "scientific_result": false,
+        "terminal_classification": null
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09-17",
+      "claim": "the index creates no evidence or schema authority",
+      "observed": {
+        "projection_only": true,
+        "schema_authority": false
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09-18",
+      "claim": "all terminal/report guards retain the exact frozen I11 revalidation duty",
+      "observed": {
+        "AE01-CTRL-01": false,
+        "AE01-CTRL-02": true,
+        "AE01-CTRL-03": true,
+        "AE01-CTRL-04": false,
+        "AE01-CTRL-05": false,
+        "AE01-CTRL-06": false,
+        "AE01-CTRL-07": true,
+        "AE01-CTRL-08": false,
+        "AE01-CTRL-09": false,
+        "AE01-CTRL-10": true,
+        "AE01-CTRL-11": false,
+        "AE01-CTRL-12": true,
+        "AE01-CTRL-13": true,
+        "AE01-CTRL-14": true,
+        "AE01-CTRL-15": true,
+        "AE01-CTRL-16": false,
+        "AE01-CTRL-17": false,
+        "AE01-CTRL-18": true,
+        "AE01-CTRL-19": true
+      },
+      "passed": true
+    },
+    {
+      "check_id": "I09-19",
+      "claim": "CONTROL-GATE candidate fails closed on any unresolved mandatory control",
+      "observed": true,
+      "passed": true
+    },
+    {
+      "check_id": "I09-20",
+      "claim": "canonical payload digest reconstructs exactly",
+      "observed": "aa7e17b4257970497715a59cedf7d28f24f2ed117fedb3e3b168bc127febe428",
+      "passed": true
+    },
+    {
+      "check_id": "I09-21",
+      "claim": "the retained index contains no absolute paths",
+      "observed": [],
+      "passed": true
+    }
+  ],
+  "iteration_id": "P2-I2-I09",
+  "matrix_entry_regenerations": 0,
+  "passed_check_count": 21,
+  "pygrc_imports": 0,
+  "scientific_interpretation": false,
+  "status": "passed"
+}

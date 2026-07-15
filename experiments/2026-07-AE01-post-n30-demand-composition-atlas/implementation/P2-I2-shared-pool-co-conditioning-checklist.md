@@ -1,29 +1,14 @@
 # P2-I2 Shared-Pool Co-Conditioning Checklist
 
-**Status:** active at `P2-I2-I08A` and resumed `P2-I2-I08`. C01 is retained bounded incomplete after
-entry 1 consumed its permanent claim and terminated natively with 0/234
-evaluable entries and no scientific result. The owner-directed C02 successor
-package is now candidate-free review-ready: the exact 234 scientific
-projections are unchanged, `RLIMIT_AS` is removed, the 180-second runtime and
-512 MiB file-size ceilings remain, native-exit receipt ownership is external,
-focused tests pass 8/8, and final validation passes 18/18 with zero blockers.
-The owner now accepts I08A and authorizes deterministic activation, commit,
-exact post-commit preflight, and corrected entry-001 execution without a second
-activation review. Activation validation passes 19/19 with zero blockers and
-zero candidate/scientific activity; the complete package is retained at
-`12ff83b`. The first read-only preflight then failed closed on an incorrectly
-supplied full HEAD before any claim, PyGRC import, or entry operation. Entry 1
-later starts under corrected preflight and retains an eligible pre-model
-failure: the new supervisor resolved the lexical `.venv/bin/python` symlink to
-the system interpreter for its child. The owner requires an in-place
-infrastructure correction under existing I08A/I08, not a new iteration. That
-correction passes 8/8 focused tests and 18/18 candidate-free validation; commit
-`6b920fb` retains it and the exact same-entry retry succeeds. The accepted
-checkpoint continuation at `180a1bf` then completes entries 2–234 without
-further retries. The exact manifest passes 234/234 evaluable, and one aggregate
-I08 mechanical closeout is now review-ready with interpretation still null.
-The owner accepts the complete I08 package and authorizes its cumulative
-checkpoint commit; I09 remains unstarted.
+**Status:** owner-accepted at `P2-I2-I09`. The owner-accepted I08 package is retained at
+commit `625a411`; C02 contains 234/234 evaluable terminals, no missing,
+nonevaluable, or ambiguous matrix entry, and one cumulative mechanical ledger.
+I09 derives the compact mode-separated control-resolution index required by R3
+and passes 21/21 deterministic checks plus byte-identical reconstruction. All
+38 comparison rules and 15 mode-local controls pass; the 19 program controls
+resolve to 56 mode-level passes and one explicit not-applicable. The owner now
+accepts the package and authorizes its commit; CONTROL-GATE is passed, and I10
+becomes ready only after the containing retention commit.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -31,12 +16,9 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I08` mechanically complete after the
-accepted I08A/C02 infrastructure correction and exact checkpoint continuation.
-C02 preserves all 234 registered projections; 233 primary continuations plus
-the accepted entry-001 retry yield 234/234 evaluable terminals. The cumulative
-manifest and one aggregate ledger are retained uncommitted for owner review;
-I09 and scientific interpretation remain closed.
+**Current activity iteration:** `P2-I2-I09` control resolution is complete,
+owner-accepted, and commit-authorized. The package is additive and read-only
+with respect to raw scientific evidence; I10 is not begun.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -45,11 +27,13 @@ I09 and scientific interpretation remain closed.
 `P2-I2-CAL-PRE-GATE=passed_after_explicit_owner_acceptance_of_I04R2`;
 `P2-I2-CAL-GATE=passed_after_explicit_owner_acceptance_of_I05J_closeout`;
 `P2-I2-REG-GATE=passed_after_explicit_owner_acceptance_of_I06B`;
-`P2-I2-EXEC-FREEZE=C02_complete_234_of_234_review_pending`
+`P2-I2-EXEC-FREEZE=passed_for_accepted_C02`;
+`P2-I2-EXEC-GATE=passed_234_of_234_evaluable`;
+`P2-I2-CONTROL-GATE=passed_after_explicit_owner_acceptance`
 
-**Acceptance ceiling:** `AE01-C2`; registered I08 raw responses exist, but no
-P2-I2 control resolution, interpreted result, cross-lane recurrence, or N31+
-effect is assigned
+**Acceptance ceiling:** `AE01-C2`; registered I08 raw responses and I09
+control projections may exist, but no `R01`–`R05` disposition, interpreted
+lane result, cross-lane recurrence, or N31+ effect is assigned
 
 **Semantic authority:**
 [accepted P2-I2 brief](P2-I2-shared-pool-co-conditioning-brief.md)
@@ -3381,27 +3365,77 @@ actual commit `12ff83be7…`; no claim or entry operation occurs. Evidence:
 
 ## 14. `P2-I2-I09` — Control resolution
 
-**Status:** blocked on registered control evidence or a valid earlier stop.
+**Status:** owner-accepted; CONTROL-GATE passed and commit authorized under
+DEC-054. I10 remains unstarted until the containing commit is retained.
 
-- [ ] Resolve every applicable common control separately by mode.
-- [ ] Resolve all five L02 controls and every required subconfiguration for
+```text
+iteration_id = P2-I2-I09
+purpose = resolve retained common and L02 control projections separately by mode
+entry_authority = accepted I08 commit 625a411 plus explicit owner direction
+frozen_inputs_or_input_freeze_action = bind exact accepted I04R2 analysis,
+  I06 registration/template, I08 matrix/manifest, common-control register,
+  operational hypotheses, and R3 representation requirement before building
+mutation_and_repository_boundary = additive I09 contracts/script/report and
+  synchronized cumulative ledgers only; no accepted authority/evidence rewrite,
+  PyGRC/model/adapter/packet/runtime invocation, or output regeneration
+required_outputs = input freeze, deterministic builder/validator, compact
+  control-resolution index, validation receipt, and one cumulative report
+evidence_effect = control_projection_over_retained_evidence_only
+exit_gate = owner review of P2-I2-CONTROL-GATE; no commit or I10 authority
+```
+
+- [x] Open I09 in the checklist and operational hypotheses before constructing
+  its freeze, builder, index, validation receipt, or report.
+- [x] Audit the P2-I1/R3 precedent and the accepted I04R2, I06, and I08 evidence
+  shape. Retain one compact index rather than one file per control; cover all
+  nineteen program-common controls, the frozen common/mode comparison rules,
+  and all five L02 controls separately for each mode.
+- [x] Freeze exact input paths and hashes, allowed outcomes/stages, derivation
+  rules, no-new-evidence boundary, and the I09/I11 interpretation separation.
+- [x] Build and validate the index solely by reading retained artifacts.
+- [x] Retain exact per-mode/per-seed response relations and causal receipts
+  without scalar mode aggregation or outcome-dependent rule changes.
+
+- [x] Resolve every applicable common control separately by mode.
+- [x] Resolve all five L02 controls and every required subconfiguration for
   each retained mode.
-- [ ] Distinguish planned applicability, resolution stage, observed outcome,
+- [x] Distinguish planned applicability, resolution stage, observed outcome,
   and fail-closed effect.
-- [ ] Preserve mode-specific invariance and divergence expectations.
-- [ ] Preserve cross-mode differences without ranking the modes or collapsing
+- [x] Preserve mode-specific invariance and divergence expectations.
+- [x] Preserve cross-mode differences without ranking the modes or collapsing
   them into one aggregate pass/fail result.
-- [ ] Preserve ambiguous outcomes rather than forcing pass/fail.
-- [ ] Generate one compact lane-local control-resolution index from retained
+- [x] Preserve ambiguous outcomes rather than forcing pass/fail. No matched
+  configuration is seed-varying, so none is assigned in the retained result.
+- [x] Generate one compact lane-local control-resolution index from retained
   evidence.
-- [ ] Verify that the index introduces no new evidence or schema authority.
+- [x] Verify that the index introduces no new evidence or schema authority.
 
-Exit gate `P2-I2-CONTROL-GATE` fails closed on every unresolved mandatory
-control.
+Process accounting is retained honestly inside I09: build start 1 failed
+before output on the C01 audit's nested no-result fields; build start 2 emitted
+a 16/20 failed-closed candidate because the validator incorrectly required one
+role rather than one private partition in hybrid; the in-place schema and
+single-partition corrections changed no frozen rule or evidence. Final build
+and independent reconstruction each pass 21/21 through `.venv/bin/python -B`.
+Across all starts there are zero PyGRC imports, models/adapters, candidate or
+control invocations, matrix regenerations, or scientific interpretations.
+Evidence: [input freeze](../contracts/p2-i2/i09-control-resolution-input-freeze.json),
+[compact index](../contracts/p2-i2/i09-control-resolution-index.json),
+[21/21 validation](../contracts/p2-i2/i09-control-resolution-validation.json),
+[builder/validator](../scripts/p2_i2_i09_control_resolution.py), and
+[cumulative report](../reports/P2-I2-I09-control-resolution.md).
+
+- [x] Record the owner's `please commit` as explicit I09 acceptance, pass
+  CONTROL-GATE, bind the reviewed technical hashes in the
+  [acceptance record](../contracts/p2-i2/i09-owner-acceptance-and-control-gate.json),
+  and authorize the containing commit without assigning interpretation.
+
+Exit gate `P2-I2-CONTROL-GATE` passes under DEC-054 with every mandatory
+control resolved; it continues to fail closed on any later identity drift or
+I11 terminal-guard violation.
 
 ## 15. `P2-I2-I10` — Reconstruction and identity verification
 
-**Status:** blocked on retained evidence.
+**Status:** ready after the owner-accepted I09 retention commit; not begun.
 
 - [ ] Reconstruct calibration, registration, execution, controls, and reports
   from the resolved manifest.
@@ -3559,6 +3593,7 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-050` | Corrected-preflight entry 1 proves the C02 child launcher resolves `.venv/bin/python` to system Python, repeating the I05C anti-pattern | `I08A_in_place_active_venv_child_launcher_regression_correction` | No new iteration/cycle; preserve eligible failure; apply I05C lexical-command/resolved-identity separation to every governed Python child; validate and bridge only the frozen retry | Attempt 1 retained exactly; 8/8 tests and 18/18 validation pass; commit `6b920fb`, attempt-2 preflight, and retry yield one valid evaluable terminal | I05C accepted invariant, C02 attempt-1 claim/failure, attempt-2 claim/success, same 234 projections, everything-through-venv direction | CHG-050 complete; 1/234 evaluable, entry 2 and manifest closed pending review; interpretation remains null |
 | `P2-I2-CHG-051` | Owner accepts entry 1 and rejects one narrative report per entry; the accepted checkpoint necessarily precedes the continuation execution HEAD | `I08_exact_checkpoint_admission_and_cumulative_reporting` | No new iteration/cycle; admit only the exact accepted entry-001 terminal across the continuation commit; bind entries 2–234 to one current HEAD; use one cumulative I08 ledger | Commit `180a1bf`; entries 2–234 all succeed on primary attempt 1; manifest passes 234/234; aggregate mechanical closeout retained | Accepted entry-001 claim/output hashes, manifest fail-closed completion rule, exact matrix, owner acceptance | I08 review-ready uncommitted; I09 closed and interpretation null |
 | `P2-I2-CHG-052` | Owner states that it is time to commit after reviewing the complete cumulative I08 closeout | `I08_complete_package_acceptance_and_checkpoint_commit` | Accept 234/234 mechanical completion and commit the complete cumulative package without starting I09 or assigning interpretation | Owner acceptance and commit authorization explicit | Exact manifest, all governed receipts, one cumulative ledger, synchronized checklist/hypothesis/decision projections | Commit authorized; I09 remains unstarted |
+| `P2-I2-CHG-053` | Owner states `please commit` after the complete I09 review handoff | `I09_owner_acceptance_CONTROL_GATE_passage_and_retention_commit` | Bind the five reviewed technical artifacts byte-exactly, pass CONTROL-GATE, and commit the complete I09 package without starting I10 or assigning `R01`–`R05` | Owner acceptance and commit authorization explicit; reviewed technical hashes unchanged | DEC-054, 21/21 validation, 38/38 comparison rules, 15/15 L02 controls, 56 pass plus one not-applicable program-mode results, I11 revalidation duty | Complete; containing commit authorized; I10 ready only after retention |
 
 ## 19. Evidence ledger
 
@@ -3649,6 +3684,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-I08A-C02-CORRECTION` | I08A | [Input freeze](../contracts/p2-i2/c02/i08a-c02-input-freeze.json), [policy](../configs/p2_i2_c02_execution_policy.json), [external supervisor](../scripts/p2_i2_c02_execution.py), [234-row matrix](../contracts/p2-i2/c02/run-matrix.json), [binding](../contracts/p2-i2/c02/execution-binding-receipt.json), [inactive freeze](../contracts/p2-i2/c02/exec-freeze.json), [8/8 test receipt](../contracts/p2-i2/c02/i08a-focused-tests-receipt.json), [18/18 validation](../contracts/p2-i2/c02/i08a-candidate-free-validation.json), and [review](../reports/P2-I2-I08A-C02-resource-supervisor-correction.md) | Infrastructure-only C02 correction: no address-space cap, retained runtime/file ceilings, external native-exit receipt boundary, exact scientific projection | Owner-accepted under DEC-051; zero blockers, PyGRC imports, models/adapters, candidate/control operations, or scientific windows; activation separately validated below |
 | `P2-I2-I08A-C02-ACTIVATION` | I08A | [Activation input freeze](../contracts/p2-i2/c02/i08a-activation-input-freeze.json), [owner-accepted activation](../contracts/p2-i2/c02/owner-accepted-execution-authorization.json), [19/19 validation](../contracts/p2-i2/c02/i08a-activation-validation.json), [validator](../scripts/p2_i2_i08a_activation_validate.py), and [post-commit preflight](../scripts/p2_i2_c02_postcommit_preflight.py) | Acceptance, deterministic activation, commit, and one-entry progression authority only; no scientific evidence | Owner-accepted and commit-authorized under DEC-051; zero blockers and zero candidate/scientific activity; live use requires resulting full HEAD and exact preflight |
 | `P2-I2-I08A-C02-PREFLIGHT-FAILED-START` | I08A | [Failed-start receipt](../contracts/p2-i2/c02/i08a-postcommit-preflight-failed-start.json) | Exact post-commit command/HEAD failure provenance only; no runtime or scientific evidence | Failed closed before claim; owner authorizes one corrected read-only preflight as an operator-only correction |
+| `P2-I2-I08-C02-EXECUTION` | I08 | [Exact 234/234 manifest](../contracts/p2-i2/c02/execution-manifest.json), governed machine receipts under `outputs/p2-i2/c02/`, and [one cumulative ledger](../reports/P2-I2-I08-execution.md) | Registered raw response and causal/control receipt evidence; no control resolution or terminal interpretation | Owner-accepted and retained at `625a411`; EXEC-GATE passed; opened I09 |
+| `P2-I2-I09-CONTROL-RESOLUTION` | I09 | [Input freeze](../contracts/p2-i2/i09-control-resolution-input-freeze.json), [compact index](../contracts/p2-i2/i09-control-resolution-index.json), [21/21 validation](../contracts/p2-i2/i09-control-resolution-validation.json), [builder/validator](../scripts/p2_i2_i09_control_resolution.py), [cumulative report](../reports/P2-I2-I09-control-resolution.md), and [owner acceptance](../contracts/p2-i2/i09-owner-acceptance-and-control-gate.json) | Deterministic control projection over retained evidence; 38/38 comparison rules, 15/15 L02 mode-controls, and 56 pass plus one not-applicable program-mode dispositions; no R01–R05 or terminal result | Owner-accepted under DEC-054; CONTROL-GATE passed and containing commit authorized; I10 not begun |
 
 The ledger expands only when a named iteration retains evidence. It never
 lists an intended artifact as though it already exists.

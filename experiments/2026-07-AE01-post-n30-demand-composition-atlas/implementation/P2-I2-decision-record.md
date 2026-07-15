@@ -86,6 +86,9 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-049` | Does the owner accept and authorize commit of the exact I08 activation? | Accepted: bind candidate `52d420b`, retain accepted activation `f46ebd3`, and commit the complete activation package | Opens live I08 only from the resulting committed full HEAD after exact preflight; the activation commit contains no matrix claim or result | 2026-07-15 |
 | `P2-I2-DEC-050` | What follows C01 entry 1 terminating natively after claim under the 512 MiB address-space cap? | Owner directs C01 bounded-incomplete retention and I08A/C02 construction without `RLIMIT_AS`, plus external native-exit receipt capture | I08A review-ready at 8/8 and 18/18; C01 has no result; C02 activation, execution, and commit remain closed | 2026-07-15 |
 | `P2-I2-DEC-051` | Does accepted I08A require a second activation review before corrected entry 1? | No; owner accepts I08A and authorizes deterministic activation, commit, exact post-commit preflight, and entry 1 | One candidate-free activation check, one commit, one preflight, one entry start; stop before entry 2 | 2026-07-15 |
+| `P2-I2-DEC-052` | Does the owner accept the complete 234/234 I08 package and authorize its cumulative commit? | Accepted and retained at `625a411`; I08 evidence only, with controls and interpretation still unassigned | Passes EXEC-GATE; opens I09 only after the commit | 2026-07-15 |
+| `P2-I2-DEC-053` | What may I09 resolve after accepted I08, and where must interpretation stop? | Owner directs I09 next; derive one compact mode-separated index from retained evidence only | I09 passes 21/21 and is review-ready; CONTROL-GATE, commit, I10, and R01–R05 remain pending owner review | 2026-07-15 |
+| `P2-I2-DEC-054` | Does the owner accept I09, pass CONTROL-GATE, and authorize the retention commit? | Accepted: bind the reviewed technical hashes unchanged and commit the complete I09 package | Passes CONTROL-GATE; I10 becomes ready after retention but remains unstarted | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -2831,7 +2834,66 @@ Reopen DEC-052 if the staged package differs from the reviewed manifest counts,
 contains a missing/ambiguous/nonevaluable terminal, creates a per-entry
 narrative report series, or includes I09 interpretation.
 
-## 55. Pending decision queue
+## 55. `P2-I2-DEC-053` — I09 retained-evidence control-resolution scope
+
+**Status:** decided by explicit owner progression direction; result is
+review-ready and not yet accepted
+
+After retaining the complete I08 package, the owner states: `ok, I09 is next`.
+
+**Decision:** open checklist/hypothesis-first I09. Bind the accepted I04R2
+analysis rules, I06 registration/template, I08 matrix/manifest, program-common
+control register, OP fail-closed effects, and R3 compact-index requirement
+before constructing one deterministic lane-local control projection.
+
+The index must resolve all nineteen program-common controls separately by
+mode, all frozen common and mode-specific comparison rules, and all five L02
+controls for each mode. It must preserve raw values, seed relations, causal
+receipt authority, explicit not-applicability, and ambiguity. It may not run or
+import PyGRC, regenerate an entry, rank or collapse modes, assign `R01`–`R05`,
+determine L02 support, or create schema authority. Terminal/report guards must
+remain marked for I11 revalidation.
+
+**Construction result:** the compact projection passes 21/21 deterministic
+checks and byte-identical reconstruction. Thirty-eight comparison rules and
+all fifteen L02 mode-controls pass. The nineteen program controls produce 56
+mode-level passes and one explicit state-carried `AE01-CTRL-16` not-applicable.
+No matched branch varies across seeds. Two earlier build starts are retained in
+the checklist as failed-closed validator/schema corrections with zero runtime
+or evidence effect.
+
+This result makes CONTROL-GATE review-ready only. Owner acceptance, gate
+passage, commit, and I10 remain separately governed.
+
+Reopen DEC-053 if an input hash drifts, a registered terminal becomes missing
+or nonevaluable, a comparison rule changes after outcomes, a causal exclusion
+is inferred from value alone, a mode is aggregated or ranked, or the index
+assigns a rung or terminal result.
+
+## 56. `P2-I2-DEC-054` — I09 acceptance, CONTROL-GATE passage, and commit
+
+**Status:** decided by explicit owner acceptance and commit direction
+
+After reviewing the complete I09 handoff, the owner states: `please commit`.
+
+**Decision:** accept the exact I09 input freeze, compact index, 21/21
+validation, builder/validator, and cumulative report at the hashes bound by the
+additive owner-acceptance record. Pass `P2-I2-CONTROL-GATE` and authorize one
+containing retention commit with the synchronized checklist, hypotheses,
+decision record, and navigation projections.
+
+Acceptance changes no reviewed technical byte and does not assign `R01`–
+`R05`, L02 support, mode ranking, or a terminal result. The I11 revalidation
+duty remains active for program-common terminal/report guards. I10 becomes
+ready only after the containing commit and is not started by acceptance or the
+commit operation.
+
+Reopen DEC-054 if a reviewed technical hash changes, the containing commit
+omits part of the accepted package, CONTROL-GATE is represented as scientific
+support, I10 begins inside the commit operation, or an interpretation boundary
+is weakened.
+
+## 57. Pending decision queue
 
 No item below is decided by this record yet:
 

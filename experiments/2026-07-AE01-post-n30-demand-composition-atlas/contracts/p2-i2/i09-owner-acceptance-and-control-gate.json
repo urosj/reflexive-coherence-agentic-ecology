@@ -1,0 +1,39 @@
+{
+  "artifact_id": "P2-I2-I09-OWNER-ACCEPTANCE-AND-CONTROL-GATE",
+  "artifact_version": "1.0.0",
+  "iteration_id": "P2-I2-I09",
+  "lane_id": "AE01-L02",
+  "status": "owner_accepted_control_gate_passed_commit_authorized",
+  "owner_direction": "please commit",
+  "accepted_package": [
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-input-freeze.json", "sha256": "bad4d310197291c7341f434088ab957ea2a9f6434f6d4eb05f3e889b2904d707"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-index.json", "sha256": "a40c3529fca8d7c037be8c2120a940c7ef3bdc037c0ec409c908bbed7d0de048"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09-control-resolution-validation.json", "sha256": "1ceb846b180ba617fd5f7c480fc019e07ffcdf451b67b8259824db05340a9abf"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i09_control_resolution.py", "sha256": "a3dd168b41deac6dbbffba0c76c7d834185c109985ec37d30911c1d86d368e37"},
+    {"path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I2-I09-control-resolution.md", "sha256": "e00077c967d16db7bae808efbdedda52286deeb2d5dd0a60c2aa9095e5a78a98"}
+  ],
+  "accepted_disposition": {
+    "comparison_rules": {"pass": 38},
+    "lane_controls": {"pass": 15},
+    "program_common_mode_dispositions": {"pass": 56, "not_applicable": 1},
+    "seed_varying_branch_configurations": 0,
+    "validation": "21_of_21_passed_zero_blockers"
+  },
+  "gate_effect": {
+    "P2-I2-CONTROL-GATE": "passed_after_explicit_owner_acceptance",
+    "P2-I2-I10": "ready_after_retention_commit_but_not_started",
+    "P2-I2-I11": "closed_pending_I10",
+    "commit_authorized": true,
+    "commit_head": null
+  },
+  "preserved_boundary": {
+    "R01_through_R05": "unassigned_until_I11",
+    "lane_support_status": null,
+    "terminal_classification": null,
+    "mode_ranking": false,
+    "scientific_result": false,
+    "I11_common_guard_revalidation_required": true,
+    "technical_package_bytes_unchanged_after_review": true
+  },
+  "self_reference_rule": "commit_head remains null; retention identity is supplied by the containing Git commit"
+}
