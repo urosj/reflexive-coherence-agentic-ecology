@@ -17,10 +17,13 @@ later starts under corrected preflight and retains an eligible pre-model
 failure: the new supervisor resolved the lexical `.venv/bin/python` symlink to
 the system interpreter for its child. The owner requires an in-place
 infrastructure correction under existing I08A/I08, not a new iteration. That
-correction now passes 8/8 focused tests and 18/18 candidate-free validation;
-commit `6b920fb` retains it, the exact attempt-2 preflight passes, and the
-same-entry retry yields the first valid C02 terminal. Entry 1 is therefore
-1/234 evaluable; work stops before entry 2 for review.
+correction passes 8/8 focused tests and 18/18 candidate-free validation; commit
+`6b920fb` retains it and the exact same-entry retry succeeds. The accepted
+checkpoint continuation at `180a1bf` then completes entries 2–234 without
+further retries. The exact manifest passes 234/234 evaluable, and one aggregate
+I08 mechanical closeout is now review-ready with interpretation still null.
+The owner accepts the complete I08 package and authorizes its cumulative
+checkpoint commit; I09 remains unstarted.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -28,14 +31,12 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-I08A` activation/commit followed by
-resumed `P2-I2-I08` entry 1. Exact post-commit C01 preflight passed
-at `c265279`, but entry 1 terminated in native OpenBLAS import after its
-permanent claim and before success/failure output. C02 preserves the 234-row
-scientific projection while removing only the unnecessary address-space cap
-and externalizing native-exit receipts. Candidate-free validation passes 18/18.
-DEC-051/CHG-048 record owner acceptance and authorize the deterministic
-activation, commit, post-commit preflight, and one exact corrected entry start.
+**Current activity iteration:** `P2-I2-I08` mechanically complete after the
+accepted I08A/C02 infrastructure correction and exact checkpoint continuation.
+C02 preserves all 234 registered projections; 233 primary continuations plus
+the accepted entry-001 retry yield 234/234 evaluable terminals. The cumulative
+manifest and one aggregate ledger are retained uncommitted for owner review;
+I09 and scientific interpretation remain closed.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
 `P2-I2-SOURCE-AUDIT-GATE=passed_after_revalidation`;
@@ -44,10 +45,11 @@ activation, commit, post-commit preflight, and one exact corrected entry start.
 `P2-I2-CAL-PRE-GATE=passed_after_explicit_owner_acceptance_of_I04R2`;
 `P2-I2-CAL-GATE=passed_after_explicit_owner_acceptance_of_I05J_closeout`;
 `P2-I2-REG-GATE=passed_after_explicit_owner_acceptance_of_I06B`;
-`P2-I2-EXEC-FREEZE=C01_consumed_bounded_incomplete_C02_review_pending`
+`P2-I2-EXEC-FREEZE=C02_complete_234_of_234_review_pending`
 
-**Acceptance ceiling:** `AE01-C2`; no P2-I2 result, cross-lane recurrence, or
-N31+ effect assigned
+**Acceptance ceiling:** `AE01-C2`; registered I08 raw responses exist, but no
+P2-I2 control resolution, interpreted result, cross-lane recurrence, or N31+
+effect is assigned
 
 **Semantic authority:**
 [accepted P2-I2 brief](P2-I2-shared-pool-co-conditioning-brief.md)
@@ -3361,10 +3363,21 @@ actual commit `12ff83be7…`; no claim or entry operation occurs. Evidence:
 - [x] Candidate-free test the continuation authority and historical retry
   provenance path: 9/9 focused tests pass through `.venv`, including refusal of
   an unlisted historical HEAD.
-- [ ] Commit the continuation authority, then run
+- [x] Commit the continuation authority at `180a1bf`, then run
   entries 2–234 at that one committed HEAD without per-entry commits. Stop on
   the first terminal failure/nonevaluable result; build the cumulative manifest
-  only when all 234 exact terminals are evaluable.
+  only when all 234 exact terminals are evaluable. All continuation entries
+  succeed on primary attempt 1; the manifest passes at 234/234 evaluable.
+- [x] Produce one aggregate I08 mechanical closeout from the manifest and
+  frozen matrix. Report exact response/receipt distributions without assigning
+  `R01`–`R05`, resolving controls, or drawing an L02 conclusion. Evidence:
+  [cumulative execution ledger](../reports/P2-I2-I08-execution.md).
+- [x] Return the complete I08 output set, manifest, and cumulative ledger
+  uncommitted for owner review. Do not start I09 or commit results yet.
+- [x] Record owner acceptance of the complete 234/234 I08 package and explicit
+  commit authorization. Commit the manifest, governed receipts, cumulative
+  ledger, and synchronized authority records together; do not start I09 in the
+  commit operation.
 
 ## 14. `P2-I2-I09` — Control resolution
 
@@ -3544,7 +3557,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-048` | Owner accepts I08A and directs steps 2–4, explicitly omitting a duplicate activation-review checkpoint | `I08A_owner_acceptance_deterministic_activation_commit_and_entry_001_resumption` | Create one hash-bound activation, validate candidate-free, commit the complete package, run exact post-commit preflight, then invoke only corrected entry 1 | Activation passes 19/19 with zero blockers and zero candidate/scientific activity; commit, preflight, and one live entry remain | Accepted I08A hashes, C01 bounded-incomplete history, no-second-review direction, full-HEAD command rule, external supervisor | Commit authorized; no entry 2, manifest, interpretation, or result commit |
 | `P2-I2-CHG-049` | First post-commit C02 preflight is supplied a transcribed full HEAD that differs from the actual resulting commit | `I08A_postcommit_preflight_failed_start` | Retain exact command/error and prove zero claim/output/failure/PyGRC/candidate activity; retry only after owner direction | Failed closed at HEAD equality check; owner classifies it as unrelated operator fault and authorizes one immediate corrected preflight | DEC-051, committed activation, exact output absence, zero runtime counters, owner retry direction | Corrected read-only preflight authorized; entry 1 remains untouched until it passes |
 | `P2-I2-CHG-050` | Corrected-preflight entry 1 proves the C02 child launcher resolves `.venv/bin/python` to system Python, repeating the I05C anti-pattern | `I08A_in_place_active_venv_child_launcher_regression_correction` | No new iteration/cycle; preserve eligible failure; apply I05C lexical-command/resolved-identity separation to every governed Python child; validate and bridge only the frozen retry | Attempt 1 retained exactly; 8/8 tests and 18/18 validation pass; commit `6b920fb`, attempt-2 preflight, and retry yield one valid evaluable terminal | I05C accepted invariant, C02 attempt-1 claim/failure, attempt-2 claim/success, same 234 projections, everything-through-venv direction | CHG-050 complete; 1/234 evaluable, entry 2 and manifest closed pending review; interpretation remains null |
-| `P2-I2-CHG-051` | Owner accepts entry 1 and rejects one narrative report per entry; the accepted checkpoint necessarily precedes the continuation execution HEAD | `I08_exact_checkpoint_admission_and_cumulative_reporting` | No new iteration/cycle; admit only the exact accepted entry-001 terminal across the continuation commit; bind entries 2–234 to one current HEAD; use one cumulative I08 ledger | Exact checkpoint admission implemented; 9/9 focused tests pass, including unknown historical-HEAD refusal | Accepted entry-001 claim/output hashes, manifest fail-closed completion rule, exact matrix, owner acceptance | Commit pending; entries 2–234 and manifest remain closed |
+| `P2-I2-CHG-051` | Owner accepts entry 1 and rejects one narrative report per entry; the accepted checkpoint necessarily precedes the continuation execution HEAD | `I08_exact_checkpoint_admission_and_cumulative_reporting` | No new iteration/cycle; admit only the exact accepted entry-001 terminal across the continuation commit; bind entries 2–234 to one current HEAD; use one cumulative I08 ledger | Commit `180a1bf`; entries 2–234 all succeed on primary attempt 1; manifest passes 234/234; aggregate mechanical closeout retained | Accepted entry-001 claim/output hashes, manifest fail-closed completion rule, exact matrix, owner acceptance | I08 review-ready uncommitted; I09 closed and interpretation null |
+| `P2-I2-CHG-052` | Owner states that it is time to commit after reviewing the complete cumulative I08 closeout | `I08_complete_package_acceptance_and_checkpoint_commit` | Accept 234/234 mechanical completion and commit the complete cumulative package without starting I09 or assigning interpretation | Owner acceptance and commit authorization explicit | Exact manifest, all governed receipts, one cumulative ledger, synchronized checklist/hypothesis/decision projections | Commit authorized; I09 remains unstarted |
 
 ## 19. Evidence ledger
 

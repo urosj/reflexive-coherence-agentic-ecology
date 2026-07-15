@@ -1806,6 +1806,18 @@ unlisted historical head or byte mismatch remains nonevaluable and fails
 closed. No further checkpoint commit occurs before the cumulative manifest.
 The exact admission and historical retry-provenance path pass 9/9 focused
 tests through `.venv`, including fail-closed rejection of an unlisted old HEAD.
+Commit `180a1bf` binds the continuation. Entries 2–234 all complete on primary
+attempt 1 through fresh repository-venv processes, and the cumulative manifest
+accepts exactly 234/234 evaluable terminals. This closes I08 execution only;
+scientific interpretation remains null and `R01`–`R05` remain unassigned.
+The raw registered response inventory contains 132 scientific-zero rows and
+102 rows at gain 0.125. All matched configurations are invariant across the
+three seeds. State-carried is invariant across both registered physical orders;
+history-carried and hybrid retain an order-conditioned 0.125/0.0 split. These
+are mechanical I08 observations only, not control resolution or L02 support.
+The owner accepts the complete I08 mechanical package and authorizes its
+cumulative commit. This acceptance freezes the raw evidence and manifest; it
+does not assign `R01`–`R05`, resolve a control, or begin I09 interpretation.
 
 ### 3.3 I03A state-carried realization binding
 

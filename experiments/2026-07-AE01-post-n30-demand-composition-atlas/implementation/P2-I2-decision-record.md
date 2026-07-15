@@ -2802,8 +2802,36 @@ policy hashes. Entries 2–234 must bind one new current execution HEAD; unknown
 historical heads fail closed. This is an in-place continuation rule, not I08B.
 The implementation passes 9/9 focused `.venv` tests, including exact accepted
 checkpoint reconstruction and refusal of an unknown historical HEAD.
+Commit `180a1bf` binds this continuation. All entries 2–234 succeed on primary
+attempt 1, and the exact completion manifest passes with 234/234 evaluable
+terminals. I08 is mechanically complete; control resolution and scientific
+interpretation remain closed pending aggregate closeout and owner review.
+The aggregate closeout records 132 zero-gain and 102 gain-0.125 rows, with no
+seed-varying matched configuration. State-carried is order-invariant while
+history-carried and hybrid retain the registered 0.125/0.0 order split. These
+remain descriptive I08 facts; `R01`–`R05` and L02 interpretation are untouched.
 
-## 54. Pending decision queue
+## 54. `P2-I2-DEC-052` — I08 complete-package acceptance and commit
+
+**Status:** decided by explicit owner acceptance and commit direction
+
+The owner reviews the cumulative 234/234 I08 closeout and states that it is
+time to commit.
+
+**Decision:** accept the complete I08 mechanical evidence package. Commit the
+exact execution manifest, 235 permanent claims, 233 primary success records,
+one accepted retry success, one retained pre-model failure, the single
+cumulative execution ledger, and synchronized authority projections together.
+
+This acceptance freezes I08 execution evidence only. It assigns no `R01`–
+`R05`, control result, mode ranking, L02 conclusion, or terminal class. I09
+remains the next iteration and is not started by this commit.
+
+Reopen DEC-052 if the staged package differs from the reviewed manifest counts,
+contains a missing/ambiguous/nonevaluable terminal, creates a per-entry
+narrative report series, or includes I09 interpretation.
+
+## 55. Pending decision queue
 
 No item below is decided by this record yet:
 

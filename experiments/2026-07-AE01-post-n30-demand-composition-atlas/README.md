@@ -133,7 +133,10 @@ that launcher in place under existing I08A/I08: 8/8 child-focused tests and
 same-entry attempt-2 preflight next. Commit `6b920fb` binds the correction; the
 preflight and only eligible retry then succeed through `.venv`, yielding a
 valid scientific-zero terminal for the state-carried reference-empty row.
-C02 is 1/234 evaluable and stopped before entry 2 with interpretation null.
+C02 subsequently completes 234/234 evaluable terminals under commit `180a1bf`:
+132 have gain 0.0 and 102 have gain 0.125, with no seed-varying matched
+configuration. The cumulative manifest passes and interpretation remains null
+pending I09 control resolution.
 Owner-accepted `P2-I2-DEC-011` additionally fixes the downstream scope: all
 three modes remain in the I04–I11 program, while native/producer/missing-
 prerequisite selection occurs separately within each mode. It did not itself

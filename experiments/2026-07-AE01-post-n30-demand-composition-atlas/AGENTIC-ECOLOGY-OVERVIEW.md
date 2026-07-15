@@ -479,8 +479,10 @@ place under existing I08A/I08, not a new iteration; 8/8 focused tests and
 18/18 candidate-free validation pass. The exact correction commit and
 attempt-2 preflight then bind commit `6b920fb`; the frozen same-entry retry
 succeeds through `.venv` and retains a valid scientific-zero terminal for the
-state-carried reference-empty row. C02 is 1/234 evaluable and stops before
-entry 2 with scientific interpretation still null.
+state-carried reference-empty row. C02 then completes 234/234 evaluable
+terminals under commit `180a1bf`; the cumulative manifest passes with 132
+zero-gain and 102 gain-0.125 rows and no seed-varying matched configuration.
+Scientific interpretation remains null pending I09.
 Owner-accepted `P2-I2-DEC-011` clarifies that state-carried, history-carried,
 and hybrid are all retained through downstream execution and interpretation;
 realization selection occurs within each mode, not among the modes. This

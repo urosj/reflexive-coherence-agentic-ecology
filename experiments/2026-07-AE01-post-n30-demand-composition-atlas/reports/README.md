@@ -136,8 +136,8 @@ Phase 2 gate reviews:
   passes 18/18; no new iteration, cycle, or scientific projection is created.
 - [P2-I2 I08 cumulative execution ledger](P2-I2-I08-execution.md)
   is the single narrative campaign record rather than one report per entry.
-  It currently retains the accepted state-carried reference-empty scientific
-  zero at 1/234 evaluable; interpretation remains closed.
+  I08 is now 234/234 evaluable with 132 zero-gain and 102 gain-0.125 rows, no
+  seed-varying matched configuration, and null interpretation pending I09.
 
 The separately maintained
 [P2-I1 future alternatives history](../implementation/P2-I1-future-alternatives.md)
