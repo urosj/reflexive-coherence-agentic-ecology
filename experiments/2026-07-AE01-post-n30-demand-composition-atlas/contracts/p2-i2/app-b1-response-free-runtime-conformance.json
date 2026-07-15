@@ -1,0 +1,124 @@
+{
+  "artifact_id": "P2-I2-APP-B1-RESPONSE-FREE-RUNTIME-CONFORMANCE",
+  "canonical_payload_digest": "adb5a5737bfaafe6e506991b85dc570e953b449bdc322b4110a415890ed34359",
+  "evidence_effect": "implementation_conformance_only_not_Appendix_B_result",
+  "execution_counts": {
+    "candidate_response_tuples": 0,
+    "control_response_tuples": 0,
+    "feedback_surface_calls": 0,
+    "fresh_models": 3,
+    "materialization_packets": 2,
+    "operation_packets": 9,
+    "process_starts": 1,
+    "producer_calls": 0,
+    "response_packets": 0
+  },
+  "modes": [
+    {
+      "admitted_history_operations": [],
+      "baseline_identity": "555bbd2d1a984509e0f003f94392cd0b59e83fa462df472a5df0b9971d7cdd8f",
+      "feedback_surface_calls": 0,
+      "materialization": null,
+      "mode": "state_carried",
+      "operation_budget_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operation_event_pairs": 3,
+      "producer_calls": 0,
+      "reset_identity": true,
+      "response_packets": 0,
+      "save_load_identity": true
+    },
+    {
+      "admitted_history_operations": [
+        "G",
+        "E",
+        "P"
+      ],
+      "baseline_identity": "3af81a7a8d5c60a99b7efcf0ad979b0376b538c930479d4ca0bd4f8ff786068f",
+      "feedback_surface_calls": 0,
+      "materialization": {
+        "carrier_id": "p2-i2-app-b-history_carried-H_C",
+        "direct_native_state_mutation": false,
+        "history_current_identity_digest": "639d5e467b76bf9724b2a98afba049658df8db3405a07ba07467a1372c107cfa",
+        "history_token_digest": "e5425ed7d63c1ff5c973374eb324be1d27d33f2f029d436c039dfe7214c8f8a6",
+        "later_response_scheduled": false,
+        "materialization_tolerance": 2.842170943040401e-14,
+        "native_transfer": {
+          "amount": 1.126953125,
+          "arrival_event_time_key": 14.625,
+          "departure_event_time_key": 14.0,
+          "direction": "positive_reservoir_to_readout",
+          "edge_id": 7,
+          "packet_index": 23,
+          "scheduler_event_index": 23,
+          "source_node_id": 9,
+          "target_node_id": 8
+        },
+        "packet_scheduled": true,
+        "readout_after": 1.126953125,
+        "readout_before": 0.0,
+        "readout_target": 1.126953125,
+        "success_or_response_computed": false
+      },
+      "mode": "history_carried",
+      "operation_budget_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operation_event_pairs": 3,
+      "producer_calls": 0,
+      "reset_identity": true,
+      "response_packets": 0,
+      "save_load_identity": true
+    },
+    {
+      "admitted_history_operations": [
+        "G",
+        "E",
+        "P"
+      ],
+      "baseline_identity": "7e00ae09fb50084d04d82537df0ad71e0f7cbac3e7bcb10da3304055276afd12",
+      "feedback_surface_calls": 0,
+      "materialization": {
+        "carrier_id": "p2-i2-app-b-hybrid-H_C",
+        "direct_native_state_mutation": false,
+        "history_current_identity_digest": "9b8057b06c0ad7a72e8740084fc2381f28f3e8b45e6f2447350b66709b206f53",
+        "history_token_digest": "e5425ed7d63c1ff5c973374eb324be1d27d33f2f029d436c039dfe7214c8f8a6",
+        "later_response_scheduled": false,
+        "materialization_tolerance": 2.842170943040401e-14,
+        "native_transfer": {
+          "amount": 1.126953125,
+          "arrival_event_time_key": 14.625,
+          "departure_event_time_key": 14.0,
+          "direction": "positive_reservoir_to_readout",
+          "edge_id": 7,
+          "packet_index": 23,
+          "scheduler_event_index": 23,
+          "source_node_id": 9,
+          "target_node_id": 8
+        },
+        "packet_scheduled": true,
+        "readout_after": 1.126953125,
+        "readout_before": 0.0,
+        "readout_target": 1.126953125,
+        "success_or_response_computed": false
+      },
+      "mode": "hybrid",
+      "operation_budget_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "operation_event_pairs": 3,
+      "producer_calls": 0,
+      "reset_identity": true,
+      "response_packets": 0,
+      "save_load_identity": true
+    }
+  ],
+  "status": "passed_no_scientific_response_invoked"
+}

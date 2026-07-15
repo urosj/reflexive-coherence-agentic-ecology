@@ -32,8 +32,9 @@ N29 threshold transport remains rejected; the separate live-domain authority
 is accepted; corrected candidate-free conformance passes 29/29 and reconstructs
 byte-identically. APP-A2 then completed its one 19-arm campaign and retained-
 only reconstruction; the bounded primary and causal relations pass and
-closeout validates 53/53. The accepted I11 result and every passed main P2-I2
-gate remain unchanged; the Appendix result awaits owner acceptance.
+closeout validates 53/53. Appendix A is owner-accepted and closed under
+DEC-074/CHG-079. The accepted I11 result and every passed main P2-I2 gate
+remain unchanged.
 
 Historical I00–I07 gate and iteration detail remains retained below.
 
@@ -41,11 +42,13 @@ Historical I00–I07 gate and iteration detail remains retained below.
 
 **Lane:** `AE01-L02`
 
-**Current activity iteration:** `P2-I2-APP-A2` is owner-accepted and Appendix A
-is closed under DEC-074/CHG-079. The accepted `supported_bounded_candidate`
-result retains 19/19 valid fresh-runtime arms, zero retry, byte-identical
-reconstruction, and 53/53 closeout validation. One containing closeout commit
-is authorized; later synthesis, selection, graph mutation, and next-move work
+**Current activity iteration:** `P2-I2-APP-B2` is active under
+DEC-075/CHG-080. Exact accepted-source audit, response/estimator reuse, the
+99-arm freeze, static outcome quarantine, pure estimator validation, and
+response-free three-mode PyGRC conformance are retained. One validator-only
+syntax diagnostic was corrected in place; no scientific response ran. The
+single pre-run authority commit has been created and APP-B2 may proceed only
+from its final clean amended HEAD. Final result acceptance and result commit
 remain closed.
 
 **Current local gate:** `P2-I2-BRIEF-GATE=passed`;
@@ -250,6 +253,7 @@ Rules:
 | `P2-I2-I10` | Retained-evidence reconstruction and identity verification | Accepted I09 commit `cfa19fe`, CHG-055 failure, I09A correction, and DEC-058 completion direction | Owner-accepted: generation and independent reconstruction each pass 24/24; zero blockers; three modes pass native restoration/continuation/reset contract | DEC-059 passes RECON-GATE and authorizes containing commit; I11 ready after retention but unstarted |
 | `P2-I2-I11` | Developmental interpretation, terminal classification, and lane closeout | Accepted I09A/I10 and passed CONTROL/RECON gates | Complete and owner-accepted at 30/30 | CLOSE-GATE passed; containing commit authorized |
 | `P2-I2-APP-A` | Grounded three-operation shared-carrier composition appendix | Owner direction after accepted I11 closeout | APP-A0 retained at `851c3dc`; APP-A1 retained at `1f69816`; APP-A2 activation retained at `e61dacc`; 19/19 valid arms, byte-identical reconstruction, primary/causal relations passed, closeout 53/53 | Owner-accepted and closed under DEC-074/CHG-079; one containing closeout commit authorized |
+| `P2-I2-APP-B` | P2-I2-grounded mode-indexed three-operation shared-pool composition appendix | Owner-supplied design and up-front compact-cycle authority | APP-B0 complete; APP-B1 audit/freeze/pure validation and response-free conformance complete; 99-arm one-shot authority ready for retention | APP-B2 exact clean-HEAD campaign/reconstruction next under DEC-075/CHG-080; final result acceptance/commit closed |
 
 No iteration may be marked complete merely because a later iteration produced
 an artifact that should have been created earlier. Missing iteration evidence
@@ -3923,6 +3927,8 @@ result. No checklist expansion may serve only to obtain support.
 | `P2-I2-CHG-077` | Owner states `accept, continue` after the exact 51/51 activation handoff | `appendix_a2_activation_acceptance_and_single_campaign` | Bind exact activation hashes; authorize one containing activation commit, exact clean-HEAD preflight, one exclusive-claim campaign, and retained-aggregate-only reconstruction | Acceptance bytes only before commit; runtime may begin only after clean committed preflight; zero retry | DEC-072, activation authorization/validation/validator hashes, implementation commit `c435b00`, frozen commands | Active through commit/campaign/reconstruction; result acceptance and commit closed |
 | `P2-I2-CHG-078` | Accepted APP-A2 activation is retained at `e61dacc`; the single campaign and retained-only reconstruction complete | `appendix_a2_runtime_reconstruction_and_closeout` | Retain one 19-arm aggregate, reconstruct its analysis byte-identically without scientific regeneration, and validate the exact bounded disposition | 19/19 operationally valid; zero campaign/arm retry; primary and causal relations pass; all seven proper subsets are insufficient; 53/53 closeout validation | DEC-073, retained APP-A1/APP-A2 authorities, one consumed campaign claim, aggregate/reconstruction/validation identities, frozen claim ceiling | Result review-ready uncommitted; main P2-I2 closeout unchanged; owner result acceptance and commit closed |
 | `P2-I2-CHG-079` | Owner states `ok, do close appendix and commit` after review of DEC-073/CHG-078 | `appendix_a2_result_acceptance_appendix_closeout_and_retention` | Bind the five exact reviewed identities; accept the bounded result; close Appendix A; synchronize governance/navigation; authorize one containing commit | Acceptance only: final integrity check passes 9/9 after one string-versus-resolved interpreter-identity diagnostic; no runtime, reconstruction, scientific regeneration, gate, control, or result-byte change | DEC-074, exact aggregate/reconstruction/validation/validator/report hashes, unchanged main P2-I2 terminal and blocked claims | Complete through authorized containing commit; later work closed |
+| `P2-I2-CHG-080` | Owner proposes Appendix B, supplies its detailed design, authorizes the brief/checklist, and waives stepwise authorization inside the frozen compact cycle | `appendix_b_semantic_process_and_autonomous_cycle_authority` | Add Appendix B brief, section 21 checklist, hypothesis 18, and DEC-075 before audit; retain all three modes; quarantine every Appendix A outcome; authorize APP-B1/B2 audit, candidate-free validation, one pre-run commit if needed, one zero-retry campaign, and retained-only reconstruction without intermediate review | Documentation/authority only at entry; zero Appendix B source audit, implementation, PyGRC/model, arm, response, or result | Accepted P2-I2 I04R2/I05J/I06–I11 machinery, abstract pre-outcome G/E/P semantics, attached owner design, repository `.venv`, graph read-only | APP-B0 active; final result acceptance/commit and authority-expanding changes closed |
+| `P2-I2-CHG-081` | APP-B1 source audit, exact freeze, implementation, pure validation, and response-free conformance complete inside the owner-waived checkpoint boundary | `appendix_b1_audit_freeze_and_response_free_conformance` | Bind exact accepted sources; retain native G/E/P mappings, mode realizations, seven-proper-subset estimator, 99-arm registry, one-shot runner, read-only reconstructor, and candidate-free validation; create the one permitted pre-run authority commit | Final validation passes eleven grouped checks; response-free conformance uses three models, nine operation packets, two materialization packets, and zero feedback/producer/response calls; one validator-only AST diagnostic corrected; zero scientific response tuple/result | DEC-075/CHG-080, accepted I04R2/I05J/I06/I09A/I10/I11, graph `83e3a300`, repository `.venv`, strict prior-appendix outcome quarantine | APP-B1 complete; one pre-run authority commit authorized; APP-B2 one-claim/zero-retry campaign follows only from clean committed HEAD; result acceptance/commit closed |
 
 ## 19. Evidence ledger
 
@@ -4463,3 +4469,144 @@ bounded claim = bounded generator-extractor-redistributor shared-carrier
                 composition candidate
 main P2-I2 terminal classification changed = false
 ```
+
+## 21. `P2-I2-APP-B` — Mode-indexed P2-I2 three-operation composition
+
+**Status:** APP-B1 audit/freeze/conformance retained in the one pre-run
+authority commit; APP-B2 active from its final clean amended HEAD
+
+```text
+appendix_id = P2-I2-APP-B
+cycle = APP-B0 -> APP-B1 -> APP-B2
+entry_base_commit = 188fc1276faafe2ed7aa330a6c3081ec1a9cd39e
+modes = state_carried, history_carried, hybrid
+primary subsets per mode = reference, G, E, P, GE, GP, EP, GEP
+Appendix A outcome authority = none
+Python authority = repository .venv only
+PyGRC authority = accepted checkout-only source binding; graph read-only
+scientific campaign claims = 1
+scientific retries = 0
+intermediate owner checkpoints = waived inside frozen DEC-075 scope
+pre-execution authority commits = at most 1 if clean-HEAD binding requires it
+result acceptance and result commit = owner-only and closed
+```
+
+### 21.1 `P2-I2-APP-B0` — Semantic, hypothesis, and process authority
+
+- [x] Read the complete owner proposal before defining Appendix B.
+- [x] Record DEC-075/CHG-080 before source audit or implementation work.
+- [x] Add the accepted Appendix B brief before source audit.
+- [x] Add operational hypothesis section 18 before source audit.
+- [x] Retain all three accepted P2-I2 dependence modes without selecting among
+  them.
+- [x] Define the complete-subset scalar comparator within mode/seed/order only.
+- [x] Require response irreducibility, operation necessity, and carrier
+  specificity rather than threshold crossing alone.
+- [x] Require state/history/hybrid discriminators, one-source asymmetry, cyclic
+  role rotations, label invariance, private/controller controls, and matched
+  diversion.
+- [x] Quarantine Appendix A runtime outcomes, quantities, thresholds,
+  realization choices, and conclusions.
+- [x] Freeze the compact autonomy boundary: recorded candidate-blind
+  corrections may proceed; scientific/claim expansion may not; one campaign,
+  zero scientific retry; final result review remains owner-only.
+
+APP-B0 entry counts:
+
+```text
+source audit starts = 0
+implementation files = 0
+candidate-free validator starts = 0
+PyGRC imports = 0
+models = 0
+scientific arms = 0
+scientific response tuples = 0
+Appendix B results = 0
+```
+
+### 21.2 `P2-I2-APP-B1` — Accepted-source audit and exact execution freeze
+
+- [x] Bind exact accepted I04R2/I05J/I06/I09A/I10/I11 source and artifact
+  identities plus current graph and `.venv` identities.
+- [x] Audit native-first G/E/P mappings for each mode from accepted sources;
+  use the minimal producer only where accepted P2-I2 already requires it.
+- [x] Prove through static source/dataflow checks that no Appendix A outcome
+  artifact can enter design, execution, calibration, or analysis.
+- [x] Decide I04R2/I05J reuse item by item: response unit/window, numeric
+  domain, normalized estimator, arithmetic resolution, and runtime tolerance.
+- [x] Implement and pure-test the seven-proper-subset maximum without reading
+  candidate values or invoking a matched-null builder.
+- [x] Freeze physical operation identities, quantities, slots, costs,
+  diversions, history-token admission, response path, and restoration boundary
+  before candidate execution.
+- [x] Freeze the exact mode-indexed primary matrix and causal/control/
+  discriminator arms with fresh-process isolation and unique receipts.
+- [x] Candidate-free conform every new or reused intervention, history token,
+  response route, save/load/reset, and refusal boundary.
+- [x] Validate exact commands, relative paths, hashes, resource ceilings,
+  output absence, one-shot claim, zero retry, and graph read-only state.
+- [x] If clean-HEAD one-shot binding requires it, create the single
+  pre-authorized pre-execution authority commit after all zero-science checks.
+
+APP-B1 may correct implementation-only defects in place when all scientific
+values, arms, controls, claims, and attempt ceilings remain frozen. Every
+failed start, diagnostic, replacement, and process count must be retained in
+this checklist/report. A design or scientific change exceeds DEC-075 and must
+stop for owner direction.
+
+APP-B1 retained evidence:
+
+```text
+source/realization/estimator audit artifacts = 1
+exact frozen arms = 99 (72 primary + 21 common-control + 6 discriminator)
+validator starts = 8 (seven passed, one validator-only AST diagnostic)
+retained validation artifacts = 3 (two historical + final-v2)
+response-free conformance starts = 1
+fresh conformance models = 3
+operation/materialization packets = 9/2
+feedback surface / producer / response packet calls = 0/0/0
+candidate/control response tuples = 0/0
+scientific results = 0
+graph mutations = 0
+```
+
+Evidence: [APP-B1 audit/freeze/conformance report](../reports/P2-I2-APP-B1-audit-freeze-and-conformance.md),
+`app-b1-source-realization-estimator-audit.json`,
+`app-b1-runtime-input-freeze.json`,
+`app-b1-response-free-runtime-conformance.json`, and
+`app-b1-candidate-free-validation-final-v2.json`.
+
+### 21.3 `P2-I2-APP-B2` — Finite campaign, reconstruction, and conclusion
+
+- [ ] Revalidate exact committed/local authority, clean tree, output absence,
+  `.venv`, graph identity/cleanliness, and one-shot claim before execution.
+- [ ] Atomically consume one campaign claim before the first scientific model.
+- [ ] Execute every frozen arm once in a fresh `.venv` child/model, with no
+  adaptation, outcome scan, cross-arm state, or scientific retry.
+- [ ] Fail matrix evaluation closed on any missing, invalid, contaminated, or
+  cross-tuple receipt while preserving later scheduled attempts.
+- [ ] Retain one cumulative runtime aggregate and no per-arm narrative files.
+- [ ] Reconstruct and resolve controls only from the retained aggregate with
+  zero PyGRC/model/producer/scientific regeneration.
+- [ ] Assign separate state/history/hybrid dispositions and one claim-ceiling-
+  compliant Appendix B conclusion.
+- [ ] Validate exact output identity, completeness, estimator reconstruction,
+  controls, restoration, portability, blocked claims, and process counts.
+- [ ] Return the complete uncommitted result for owner review; do not infer
+  cross-appendix recurrence or create a result commit.
+
+### 21.4 Stop and reopen conditions
+
+Stop autonomous progression if any of the following occurs:
+
+- accepted P2-I2 response/estimator semantics are not reusable and a new
+  scientific metric or calibration campaign would be required;
+- no physical G/E/P mapping exists without importing Appendix A outcome-
+  selected machinery;
+- a load-bearing new producer beyond accepted P2-I2 history/hybrid machinery
+  is required;
+- a scientific value, subset, control, discriminator, attempt ceiling, or
+  claim boundary must change after candidate execution begins;
+- the campaign claim is consumed and execution fails;
+- graph mutation, cross-appendix synthesis, N31+ selection, or a result commit
+  becomes necessary.

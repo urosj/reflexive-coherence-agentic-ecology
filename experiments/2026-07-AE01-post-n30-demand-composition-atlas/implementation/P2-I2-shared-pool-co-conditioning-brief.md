@@ -4,7 +4,8 @@
 accepted by the project owner on 2026-07-14; three-mode retention scope
 correction accepted by the project owner on 2026-07-14; Appendix A accepted
 and closed under DEC-074/CHG-079 on 2026-07-15 after one complete APP-A2
-runtime/reconstruction cycle
+runtime/reconstruction cycle; prospective Appendix B compact-cycle authority accepted under
+DEC-075/CHG-080 on 2026-07-15
 
 **Lane:** `AE01-L02`
 
@@ -1166,3 +1167,185 @@ ceiling. Physical participant plurality and tested operation order are non-
 load-bearing in the frozen fixture, and no external producer is load-bearing.
 The main P2-I2 result is unchanged. DEC-074/CHG-079 close Appendix A without
 opening any blocked claim or subsequent work.
+
+## Appendix B — P2-I2-grounded three-operation shared-pool composition
+
+**Status:** semantic and process authority owner-accepted under
+DEC-075/CHG-080; APP-B0 active before source or implementation work
+
+### B.1 Exact question
+
+> Can physically distinct generative, extractive, and redistributive operations
+> act through one accepted P2-I2 common carrier so that complete GEP produces a
+> later native response not reproduced by any valid proper subset—and which of
+> current state, active ordered history, or their hybrid carries that relation?
+
+Appendix B tests whether Appendix A's abstract operation composition can be
+realized through the already accepted P2-I2 state-carried, history-carried, and
+hybrid causal architectures. It is a parallel experiment, not a replication
+or synthesis of Appendix A.
+
+### B.2 Outcome quarantine and inherited authority
+
+Appendix B may inherit only the pre-outcome abstract G/E/P meanings,
+participant/operation separation, complete-subset structure, one-source and
+role-rotation diagnostics, fresh-runtime discipline, and carrier-lineage
+requirements. It may not read or use Appendix A runtime evidence,
+reconstruction, measured values, successful quantities, thresholds,
+realization choices, or conclusions in design, calibration, execution, or
+analysis.
+
+The accepted P2-I2 authorities—not Appendix A outcomes—own the three carrier
+temporalities, response semantics, restoration identities, controls, runtime
+tolerance, and normalized-margin estimator. APP-B1 must bind exact source
+identities and decide reuse item by item. Estimator reuse requires unchanged
+response unit/window, numeric domain, normalization, floor, and tolerance. The
+move from two leave-one comparators to seven proper subsets requires a new
+candidate-free pure-analysis extension even if no new matched-null invocation
+is needed.
+
+### B.3 Mode-indexed causal projections
+
+All modes use the same physical G/E/P operations, quantities, timing slots,
+participant roles, subset rows, response target/window, diversion semantics,
+and cost policy wherever admitted machinery permits. Only the causal carrier
+read changes:
+
+```text
+state_carried:
+  G/E/P alter one live common carrier C
+  R reads complete current C only
+  operation history is audit-only
+
+history_carried:
+  native committed G/E/P rows enter one active source-label-free H_C
+  R reads H_C through M_H only
+  current C is excluded from the response path
+
+hybrid:
+  G/E/P alter C and H_C
+  R reads [C, M_H] through one common native response path
+```
+
+Operations must be grounded in committed physical runtime events. History
+tokens derive from frozen operation properties such as channel, direction, or
+transfer kind—not participant identity. Admission excludes diversion,
+materialization, neutral-contact, response, control-debit, reset/load, and
+private-partition traffic.
+
+### B.4 Primary matrix and estimator
+
+Each mode executes the same eight valid rows:
+
+```text
+reference, G, E, P, GE, GP, EP, GEP
+```
+
+An omitted operation's participant remains active and pays matched cost, but
+its operation follows a verified no-influence diversion. Valid zero-effect
+rows are scientific zeros. Every proper subset must be operationally valid
+before evaluation.
+
+Within one frozen `mode x seed x operation_order` tuple:
+
+```text
+strongest_proper_subset_response = max(reference, G, E, P, GE, GP, EP)
+primary_margin = accepted normalized response margin of
+                 GEP versus strongest_proper_subset_response
+```
+
+The maximum may not cross mode, seed, or physical-order boundaries. APP-B1
+must freeze the exact positive resolution without inspecting candidate
+outcomes.
+
+### B.5 Required causal and discriminator layers
+
+A positive mode disposition requires all three layers:
+
+1. `GEP` exceeds every valid proper subset under the frozen normalized rule.
+2. Withdrawing each operation changes `R`, or changes a registered mediator
+   whose independent intervention changes `R`.
+3. Carrier clamp/freeze, private partitions, and controller substitution show
+   that the relation is carried by the registered common path.
+
+Mode-specific requirements are:
+
+```text
+state_carried:
+  different valid histories + equal complete final C -> equal R
+
+history_carried:
+  equal relevant final C + different active H_C -> different R
+  history clamp changes R
+  state-only C intervention does not
+
+hybrid:
+  execute the complete 2 x 2 factorial of reference/candidate C and H_C
+  both component interventions affect the same response path
+```
+
+No nonlinear synergy is required. The state discriminator distinguishes
+current-condition composition from history dependence; the history and hybrid
+discriminators identify whether formation history is load-bearing.
+
+### B.6 Participant, operation, and controls
+
+Retain one capacity-relaxed source performing `G -> E -> P` and three cyclic
+participant-to-operation assignments. Reproduction by one source makes
+participant plurality non-load-bearing; non-reproduction alone leaves it
+unresolved. The relation must follow physical operation type rather than fixed
+participant identity. Source-label permutation remains mandatory.
+
+Private partitions, direct participant-addressed reads, controller-computed
+aggregates, carrier/history clamps, matched diversions, operation withdrawals,
+one-source execution, and cyclic role rotations are controls or scope
+diagnostics. They do not authorize cooperation, coalition, or participant
+complementarity language.
+
+### B.7 Compact authorized cycle
+
+```text
+APP-B0:
+  this semantic authority + checklist + mode-indexed hypothesis + claim ceiling
+
+APP-B1:
+  native-first accepted-source audit
+  -> exact physical G/E/P mapping in all three modes
+  -> Appendix A outcome-quarantine proof
+  -> metric/estimator reuse decision and seven-subset pure extension
+  -> realization, controls, conformance, finite matrix, and execution freeze
+
+APP-B2:
+  one finite fresh-runtime mode-indexed campaign
+  -> retained-only reconstruction and control resolution
+  -> one mode-separated Appendix B conclusion
+```
+
+DEC-075 waives intermediate owner checkpoints inside this exact cycle.
+Candidate-blind implementation corrections and pre-model infrastructure
+diagnostics may proceed if recorded under APP-B1/B2 and if they do not change
+scientific values, controls, claim semantics, or attempt ceilings. One
+pre-execution authority commit is permitted if required for clean-HEAD
+one-shot binding. There is one scientific campaign claim and zero scientific
+retry. A consumed campaign cannot be rerun without new owner authority.
+Final result acceptance and the result commit remain separate owner actions.
+
+### B.8 Interpretation ceiling
+
+The strongest positive result is:
+
+```text
+bounded P2-I2-grounded three-operation shared-pool composition candidate
+```
+
+Mode dispositions remain separate: `state_carried composition`,
+`history_carried composition`, and `hybrid composition`. “Bounded operation-
+complementarity through a common carrier” is allowed only where every proper
+subset is valid and insufficient and every operation retains a causal path to
+`R`.
+
+Cooperation, coordination, coalition, participant complementarity, agency,
+resource economy, native history composition while the adapter is
+load-bearing, motif/regime, cross-appendix recurrence, cross-lane recurrence,
+and N31+ selection remain blocked. Appendix B cannot alter the accepted main
+P2-I2 or Appendix A results.

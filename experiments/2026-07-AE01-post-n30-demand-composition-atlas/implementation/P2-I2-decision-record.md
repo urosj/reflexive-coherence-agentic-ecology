@@ -109,6 +109,8 @@ inferred from an activity performed outside its named checklist iteration.
 | `P2-I2-DEC-072` | Does the owner accept the 51/51 activation candidate and authorize live progression? | Yes: `accept, continue`; one activation commit and one clean-HEAD campaign authorized, followed by read-only reconstruction | Opens exact commit/preflight/campaign/reconstruction only; result acceptance and commit remain closed | 2026-07-15 |
 | `P2-I2-DEC-073` | What does the single APP-A2 campaign and retained-only reconstruction establish? | Review-ready bounded positive: complete 19/19 matrix, primary and causal relations pass, closeout validates 53/53 | Technical result only; owner result acceptance and commit remain closed | 2026-07-15 |
 | `P2-I2-DEC-074` | Does the owner accept the bounded APP-A2 result, close Appendix A, and authorize its retention commit? | Yes: `ok, do close appendix and commit`; exact reviewed result accepted and Appendix A closed | One containing result/closeout commit authorized; main P2-I2 result unchanged and later synthesis/selection remain closed | 2026-07-15 |
+| `P2-I2-DEC-075` | May Appendix B test the same abstract G/E/P composition through all three accepted P2-I2 modes under one compact autonomous authority? | Yes: owner supplies detailed design, authorizes brief/checklist, and waives stepwise authorization inside their frozen scope | Opens APP-B0–B2 with Appendix A outcome quarantine, at most one pre-run authority commit, one campaign, zero scientific retry; final result acceptance/commit closed | 2026-07-15 |
+| `P2-I2-DEC-076` | Does APP-B1 satisfy the accepted-source, exact-freeze, outcome-quarantine, estimator, and response-free conformance boundary? | Complete inside DEC-075: eleven grouped final checks pass; three-mode response-free conformance passes; one 99-arm authority is exact | Authorizes the one permitted pre-run authority commit and then exact APP-B2 clean-HEAD campaign/reconstruction; result acceptance/commit closed | 2026-07-15 |
 
 ## 3. `P2-I2-DEC-001` — Brief acceptance and frozen boundaries
 
@@ -3842,8 +3844,101 @@ projection diverges from DEC-073, or a later separately authorized synthesis
 supplies contradictory evidence. The containing commit closes Appendix A; it
 does not begin another iteration.
 
-## 77. Pending decision queue
+## 77. `P2-I2-DEC-075` — Open autonomous Appendix B compact cycle
 
-DEC-074/CHG-079 accept APP-A2 and close Appendix A. One containing closeout
-commit is authorized. Cross-lane synthesis, graph mutation, native
-substitution work, N31+ selection, and any next move remain closed.
+**Status:** owner-authorized; APP-B0 active before source audit
+
+The owner asks whether Appendix A's abstract three-operation composition can be
+realized through the mechanisms already established by P2-I2 and supplies a
+detailed Appendix B proposal. The owner explicitly authorizes the brief and
+checklist and asks that the subsequent cycle run without authorization at every
+step.
+
+**Decision:** accept the Appendix B brief, checklist section 21, and operational
+hypothesis section 18 as the up-front authority for one compact APP-B0–B2
+cycle. Retain all three accepted P2-I2 modes. APP-B1 must audit and freeze the
+exact native-first physical G/E/P mapping, estimator reuse, seven-subset pure
+extension, controls, discriminators, conformance, and finite matrix. APP-B2 may
+then execute one fresh-runtime campaign and one retained-only reconstruction/
+control resolution without intermediate owner review.
+
+Because Appendix A already ran, the proposed ideal pre-A chronology is
+unavailable. Replace it with strict outcome quarantine: Appendix B may inherit
+only abstract pre-outcome G/E/P and structural-control semantics. Appendix A
+runtime artifacts, measured values, successful quantities, thresholds,
+realization choices, and conclusions have no Appendix B design or analysis
+authority and must be mechanically excluded.
+
+Within the frozen scope, candidate-blind implementation corrections,
+candidate-free diagnostics, and pre-model infrastructure fixes may proceed if
+fully recorded and if they change no scientific value, arm, control,
+discriminator, attempt ceiling, estimator meaning, or claim boundary. At most
+one pre-execution authority commit is authorized if clean-HEAD one-shot binding
+requires it. The scientific campaign has one claim and zero retry. A consumed
+campaign failure, a new metric/calibration requirement, a new load-bearing
+producer beyond accepted P2-I2 machinery, graph mutation, or any authority-
+expanding change stops progression.
+
+The strongest possible result is `bounded P2-I2-grounded three-operation
+shared-pool composition candidate`, with separate mode dispositions. This
+authority cannot assign cross-appendix recurrence, change main P2-I2 or
+Appendix A results, accept the final result, or authorize its commit.
+
+## 78. `P2-I2-DEC-076` — Complete APP-B1 and open exact committed APP-B2
+
+**Status:** APP-B1 complete under the owner-waived intermediate-checkpoint
+boundary; pre-run authority commit and exact APP-B2 progression authorized
+
+The accepted-source audit binds the unchanged I04R2/I05J response,
+normalization, arithmetic floor/delta, numeric domain, and runtime tolerance.
+It grounds G, E, and P in the accepted q1 contribution, native P debit, and q2
+contribution packets. State reads native P. History and hybrid extend only the
+accepted active-history adapter's physical-route admission boundary; PyGRC
+continues to own all coherence changes, feedback evaluation, and response.
+
+The freeze expands to 99 exact fresh-process arms: 72 primary subset rows, 21
+common controls, and six mode discriminators. The prior appendix's runtime
+evidence, measured values, selected quantities, thresholds, realization, and
+conclusion have no input route. The pure eight-arm estimator requires all
+seven proper subsets, fails closed on incomplete tuples, and refuses
+cross-seed pairing.
+
+Final candidate-free validation passes eleven grouped checks. One historical
+retained validation predates response-free conformance. The final validation
+supersedes it for progression. A validator-only start failed because source
+was lowercased before `ast.parse`; the corrected validator parses original
+source and lowercases only a separate scan copy. No runtime freeze or
+scientific byte changed.
+
+Final source review also found that the prospective one-source arm retained a
+slot-specific lineage suffix. The corrected runner preserves every accepted
+operation reservoir and changes only native packet source-lineage assignment:
+one-source now uses one lineage for G/E/P, while cyclic A/B/C use three exact
+rotations. Final-v2 validation rebinds the runner and passes. This is a
+candidate-blind correction to the already frozen participant control, not a
+new arm, value, or claim.
+
+One response-free conformance process constructs three fresh models, executes
+nine physical operation packets and two native M_H materialization packets,
+admits exact G/E/P histories in history/hybrid, and proves save/load/reset
+identity. It makes zero feedback-surface, producer, response-packet,
+candidate-response-tuple, or control-response-tuple calls.
+
+**Decision:** APP-B1 satisfies DEC-075 without reopening any metric,
+realization, scientific value, control, attempt ceiling, or claim boundary.
+Create the one pre-authorized containing authority commit. From that exact
+clean HEAD, APP-B2 may atomically consume its sole campaign claim and execute
+the exact 99-arm fresh-process matrix once, followed by retained-only
+reconstruction. There is no scientific or infrastructure retry. A consumed
+failure stops progression.
+
+This decision assigns no Appendix B result, cross-appendix recurrence,
+participant complementarity, native-history claim, main P2-I2 revision, or
+result-commit authority.
+
+## 79. Pending decision queue
+
+APP-B1 is complete under DEC-075/076 and CHG-080/081. The one pre-run authority
+commit and exact APP-B2 campaign/reconstruction are next. Final Appendix B
+result acceptance/commit, cross-appendix synthesis, graph mutation, N31+
+selection, and any next move remain closed.

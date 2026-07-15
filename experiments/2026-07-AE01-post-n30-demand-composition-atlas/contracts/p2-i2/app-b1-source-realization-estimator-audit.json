@@ -1,0 +1,207 @@
+{
+  "artifact_id": "P2-I2-APP-B1-SOURCE-REALIZATION-ESTIMATOR-AUDIT",
+  "artifact_version": "1.0",
+  "authority": {
+    "change_id": "P2-I2-CHG-080",
+    "decision_id": "P2-I2-DEC-075",
+    "entry_base_commit": "188fc1276faafe2ed7aa330a6c3081ec1a9cd39e",
+    "owner_stepwise_review_waived_inside_frozen_scope": true
+  },
+  "environment": {
+    "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_read_only": true,
+    "graph_worktree_clean_at_audit": true,
+    "interpreter": ".venv/bin/python",
+    "interpreter_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "pygrc_binding": "checkout_only_relative_PYTHONPATH"
+  },
+  "experiment_id": "2026-07-AE01",
+  "input_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i04r2-machine-verification-preregistration.json",
+      "role": "accepted_response_and_estimator_machine_authority",
+      "sha256": "b8955378506e079f5a9e3299b803da7e376f53c2fa2df34c95bba163289bd8c0"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+      "role": "accepted_response_envelope_and_complete_arm_policy",
+      "sha256": "079ba0be50946199a90201eb57cf79e19fb1faf53aa665437752d376a1ebe11c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i04r2_analysis.py",
+      "role": "accepted_envelope_validation_and_estimator_route",
+      "sha256": "2abc4c2040d4fff3467931feeedb0e2423a5fca71a3bc3a921aa4ca3e9b22a24"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i05j-process-and-projection-closeout.json",
+      "role": "accepted_arithmetic_resolution_closeout",
+      "sha256": "de43ee9fa0b33722ac1e0a94e3ee5c1dcfc17e427bbdd26d744fd82672dfc548"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i05j_metric_closeout_policy.json",
+      "role": "accepted_analysis_delta_and_floor",
+      "sha256": "fc32de1feb43a6f86f90a7be99588d0c25f80431f70a5031cca2003600716935"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "role": "accepted_three_mode_topology_operations_response_and_restoration",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06b-execution-readiness-overlay.json",
+      "role": "accepted_native_P_debit_and_exact_schedule",
+      "sha256": "72d70a4c3e2a8b1dd8186a0b4de74a2212d33956c1e89f5d35bccc9f42e05694"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_history_adapter.py",
+      "role": "accepted_active_history_adapter_base",
+      "sha256": "89ec28f0e2ede1987d27a419a26b0b60c4226f9a52f00d15458fb347a30e9ff7"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py",
+      "role": "accepted_model_and_restoration_construction",
+      "sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i09a-control-resolution-index.json",
+      "role": "accepted_control_meaning",
+      "sha256": "dd339ffc39645bcabbe81f7d5f6a28bcee5ee0031066bed92d85c0382e9613a5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i10-reconstruction-manifest.json",
+      "role": "accepted_restoration_and_reconstruction_boundary",
+      "sha256": "5e02b64a5464c64a517de70b74c0b0db3b2a3a0c0fcb46d257d3edcb95a192b8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i11-terminal-classification.json",
+      "role": "accepted_main_P2_I2_claim_boundary",
+      "sha256": "c019bcd4bce4fe67fddb78143a4709b8411b6eb95ac6b3eee2219bcead93d567"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_execution.py",
+      "role": "accepted_live_three_mode_execution_reference",
+      "sha256": "9a92d90997ba80a0ae626fcfe3549fb77a49c108b9c4e84149aecf35fb1336fe"
+    }
+  ],
+  "iteration_id": "P2-I2-APP-B1",
+  "mode_realizations": {
+    "history_carried": {
+      "carrier": "ordered active H_C with native M_H materialization",
+      "new_surface": "same accepted adapter role extended only to classify the committed G/E/P physical routes",
+      "realization_class": "minimally_producer_assisted",
+      "response_front": [
+        "M_H"
+      ]
+    },
+    "hybrid": {
+      "carrier": "joint native sum over current P and materialized M_H",
+      "new_surface": "same accepted adapter-role extension as history_carried",
+      "realization_class": "minimally_producer_assisted",
+      "response_front": [
+        "P",
+        "M_H"
+      ]
+    },
+    "state_carried": {
+      "carrier": "current native P coherence",
+      "new_surface": null,
+      "realization_class": "pygrc_native_candidate",
+      "response_front": [
+        "P"
+      ]
+    }
+  },
+  "operation_mapping": {
+    "E": {
+      "accepted_source": "I06 state_debit",
+      "amount": 0.4375,
+      "effect_on_current_P": "debit",
+      "full_route": "P_TO_K_P",
+      "matched_diversion_route": "E_SOURCE_TO_E_TARGET",
+      "physical_meaning": "extract from the common carrier into the registered inert sink"
+    },
+    "G": {
+      "accepted_source": "I06 q1",
+      "amount": 0.625,
+      "effect_on_current_P": "credit",
+      "full_route": "S1_TO_P",
+      "matched_diversion_route": "S1_TO_K_DIV_Q1",
+      "physical_meaning": "generative contribution into the common carrier"
+    },
+    "P": {
+      "accepted_source": "I06 q2",
+      "amount": 0.875,
+      "effect_on_current_P": "credit",
+      "full_route": "S2_TO_P",
+      "matched_diversion_route": "S2_TO_K_DIV_Q2",
+      "physical_meaning": "buffered redistribution into the common carrier"
+    }
+  },
+  "outcome_quarantine": {
+    "abstract_APP_A0_semantics_only": true,
+    "appendix_A_result_used": false,
+    "forbidden_design_inputs": [
+      "app-a2-runtime-evidence.json",
+      "app-a2-reconstruction-and-closeout.json",
+      "app-a2-closeout-validation.json",
+      "APP-A2-fresh-runtime-matrix-and-closeout.md",
+      "Appendix A measured values",
+      "Appendix A successful quantities",
+      "Appendix A realization choices",
+      "Appendix A conclusion"
+    ],
+    "runner_analysis_adapter_reconstructor_must_contain_app_a_reference": false
+  },
+  "response_and_estimator_reuse": {
+    "analysis_arithmetic_delta": 1e-12,
+    "analysis_arithmetic_floor": 1e-12,
+    "matched_null_rerun_required": false,
+    "normalized_formula": "(GEP - max(all seven proper subsets)) / max(abs(GEP), abs(max_subset), floor)",
+    "response_numeric_domain_unchanged": true,
+    "response_packet_amount": 0.125,
+    "response_target_and_unit_unchanged": true,
+    "response_target_role": "B",
+    "response_unit": "native_coherence_amount",
+    "response_window_protocol": "p2-i2-native-response-window-v2",
+    "response_window_unchanged": true,
+    "runtime_tolerance": 2.842170943040401e-14,
+    "runtime_tolerance_adequate": true,
+    "seven_subset_extension_required": true,
+    "strongest_max_scope": "within identical mode seed operation_order pairing opportunity B_baseline and window only"
+  },
+  "schedule_mapping": {
+    "E_slot": 1,
+    "G_slot": 0,
+    "P_slot": 2,
+    "arrival_offset": 0.625,
+    "first_departure_event_time_key": 10.25,
+    "history_materialization_slot": 3,
+    "neutral_contact_slot": 4,
+    "operation_order": [
+      "G",
+      "E",
+      "P"
+    ],
+    "reserved_slot_increment": 1.25,
+    "response_arrival_event_time_key": 16.875
+  },
+  "status": "audit_complete_exact_freeze_construction_authorized",
+  "threshold_registration": {
+    "history_carried": {
+      "candidate_GEP_boundary_score": 0.814453125,
+      "rationale": "midpoint of frozen GEP and strongest proper GP active-history boundary scores",
+      "strongest_proper_GP_boundary_score": 0.796875,
+      "threshold": 0.8056640625
+    },
+    "hybrid": {
+      "candidate_C_and_H_boundary_score": 2.626953125,
+      "largest_single_component_boundary_score": 1.564453125,
+      "rationale": "midpoint separating the frozen candidate CxH factorial full cell from both single-component cells; primary proper subsets remain independently evaluated",
+      "threshold": 2.095703125
+    },
+    "state_carried": {
+      "rationale": "unchanged accepted I06 state threshold; the E debit is allowed to make GP structurally stronger than GEP",
+      "threshold": 1.625
+    }
+  }
+}

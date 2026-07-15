@@ -1,0 +1,205 @@
+{
+  "artifact_id": "P2-I2-APP-B1-RUNTIME-INPUT-FREEZE",
+  "artifact_version": "1.0",
+  "iteration_id": "P2-I2-APP-B1",
+  "status": "exact_candidate_and_control_freeze_no_runtime_yet",
+  "authority": {
+    "decision_id": "P2-I2-DEC-075",
+    "change_id": "P2-I2-CHG-080",
+    "entry_base_commit": "188fc1276faafe2ed7aa330a6c3081ec1a9cd39e",
+    "owner_accepted_brief_and_checklist": true,
+    "intermediate_owner_checkpoints_waived": true,
+    "final_result_acceptance_required": true
+  },
+  "authority_inputs": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I2-shared-pool-co-conditioning-brief.md",
+      "sha256": "0b889eb6c2aafbf29e32999a5ce6f85a4a29160d460162d0ae5fa0eb1f90fe30",
+      "role": "accepted_semantic_brief"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/hypotheses/p2-i2-operational-hypotheses.md",
+      "sha256": "6c6d14e7e439ba2f367cb526f42eaa18a19ce0d1b1a399dd6235d262466761a2",
+      "role": "accepted_operational_hypothesis"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-source-realization-estimator-audit.json",
+      "sha256": "08d00fd30fb5cb531c5c513f1f6c96f014019ff8424e623fcf70a78efca76136",
+      "role": "accepted_source_realization_estimator_audit"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/i06-three-mode-registration.json",
+      "sha256": "11c5557da9b0bf575c72c5adca9eccd6da2910b1c9951485c32ad909f3cc245d",
+      "role": "accepted_topology_operation_response_and_restoration"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_i06_registration.py",
+      "sha256": "19317ab74cae850a92d3ed06c0e49c9deb63ac881dae3563cf9a9e9611e0844a",
+      "role": "accepted_model_construction"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r1_analysis_policy.json",
+      "sha256": "91b8bd50633a19333935ec115bdd005697abdef5381ef59f4ceab21db08c090d",
+      "role": "accepted_measurement_and_arithmetic_parent"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i2_i04r2_machine_policy.json",
+      "sha256": "079ba0be50946199a90201eb57cf79e19fb1faf53aa665437752d376a1ebe11c",
+      "role": "accepted_envelope_and_window_policy"
+    }
+  ],
+  "implementation_sha256": {
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_analysis.py": "63804bc70e412a76813cda49455c9b72e8e2fe83589f3816ac842d3a7861cb8b",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_history_adapter.py": "a7d9772f4b22bec81e370e28eeae9bb5d4d4d3353a80d9516c950e3e9c166f8e",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py": "14f06d634bb68bcb2f4c781ae555165fe4ea5cf579060536d640f972bcf51423",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_validate.py": "f675f08419fc360cefeeee6e0f3f05d39427723c1ea29f7b470c3aa47d0bfa1d",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_reconstruct.py": "f8fb3b04ab19f1cc7e7cf552d5676d579211faebc86a3da2b55c4afa1d75c84a",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_conformance.py": "65ab5403528a4fee8752eb8536f48ce93fd42c1916ec5242b57da69d642cda23"
+  },
+  "environment": {
+    "interpreter": ".venv/bin/python",
+    "interpreter_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "python_version": "3.12.3",
+    "graph_repository": "../graph-reflexive-coherence",
+    "graph_commit": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_source": "../graph-reflexive-coherence/src",
+    "graph_read_only": true,
+    "absolute_persisted_paths_forbidden": true
+  },
+  "operation_registry": {
+    "G": {
+      "common_route": ["S1", "P", "S1_TO_P"],
+      "diversion_route": ["S1", "K_DIV_Q1", "S1_TO_K_DIV_Q1"],
+      "private_route": ["S1", "P1_PRIVATE", "S1_TO_P1_PRIVATE"],
+      "amount": 0.625
+    },
+    "E": {
+      "common_route": ["P", "K_P", "P_TO_K_P"],
+      "diversion_and_private_matched_route": ["E_SOURCE", "E_TARGET", "E_SOURCE_TO_E_TARGET"],
+      "amount": 0.4375
+    },
+    "P": {
+      "common_route": ["S2", "P", "S2_TO_P"],
+      "diversion_route": ["S2", "K_DIV_Q2", "S2_TO_K_DIV_Q2"],
+      "private_route": ["S2", "P2_PRIVATE", "S2_TO_P2_PRIVATE"],
+      "amount": 0.875
+    }
+  },
+  "schedule": {
+    "operation_order": ["G", "E", "P"],
+    "operation_departures": [10.25, 11.5, 12.75],
+    "operation_arrivals": [10.875, 12.125, 13.375],
+    "history_materialization": [14.0, 14.625],
+    "optional_state_intervention": [14.75, 15.0],
+    "neutral_contact": [15.25, 15.875],
+    "response_arrival": 16.875
+  },
+  "participant_identity": {
+    "physical_operation_reservoirs_remain_fixed": true,
+    "participant_identity_field": "native_packet_source_lineage_id",
+    "cyclic_A": {"G": "actor-1", "E": "actor-2", "P": "actor-3"},
+    "one_source": {"G": "actor-1", "E": "actor-1", "P": "actor-1"},
+    "rotation_B": {"G": "actor-2", "E": "actor-3", "P": "actor-1"},
+    "rotation_C": {"G": "actor-3", "E": "actor-1", "P": "actor-2"},
+    "label_permutation": {"G": "label-z", "E": "label-x", "P": "label-y"},
+    "participant_identity_excluded_from_history_tokens": true
+  },
+  "mode_realizations": {
+    "state_carried": {
+      "carrier": "current native P coherence",
+      "response_front": ["P"],
+      "feedback_threshold": 1.625,
+      "realization_class": "pygrc_native_candidate"
+    },
+    "history_carried": {
+      "carrier": "source-label-free ordered active H_C with native M_H materialization",
+      "response_front": ["M_H"],
+      "feedback_threshold": 0.8056640625,
+      "recency_coefficient": 0.375,
+      "realization_class": "accepted_minimally_producer_assisted_role_extended_to_G_E_P_routes"
+    },
+    "hybrid": {
+      "carrier": "joint native current P plus materialized M_H",
+      "response_front": ["P", "M_H"],
+      "feedback_threshold": 2.095703125,
+      "recency_coefficient": 0.375,
+      "realization_class": "accepted_minimally_producer_assisted_role_extended_to_G_E_P_routes"
+    }
+  },
+  "arm_registry_specification": {
+    "modes": ["state_carried", "history_carried", "hybrid"],
+    "subsets": ["reference", "G", "E", "P", "GE", "GP", "EP", "GEP"],
+    "seeds": [101, 211, 307],
+    "operation_order": ["G", "E", "P"],
+    "common_controls": [
+      "one_source",
+      "rotation_B",
+      "rotation_C",
+      "label_permutation",
+      "private_partition",
+      "controller_substitution",
+      "carrier_clamp"
+    ],
+    "mode_discriminators": {
+      "state_carried": ["equal_C_GPE"],
+      "history_carried": ["equal_C_GPE", "state_only_intervention"],
+      "hybrid": ["factorial_ref_C_ref_H", "factorial_candidate_C_ref_H", "factorial_ref_C_candidate_H"]
+    },
+    "expected_arm_count": 99,
+    "expanded_registry_digest": "432a4c6d470b9e3e2bb3ba29ccf52544d14e5364848cca0fa27e1683f5994045"
+  },
+  "response_authority": {
+    "response_id": "fixed_window_native_B_target_coherence_gain",
+    "unit": "native_coherence_amount",
+    "response_packet_amount": 0.125,
+    "runtime_tolerance": 2.842170943040401e-14,
+    "analysis_arithmetic_delta": 1e-12,
+    "analysis_arithmetic_floor": 1e-12,
+    "primary_comparator": "strongest_of_all_seven_proper_subsets_within_mode_seed_order_tuple",
+    "all_eight_arms_required": true,
+    "cross_mode_seed_or_order_max_forbidden": true
+  },
+  "execution": {
+    "campaign_attempts": 1,
+    "scientific_retries": 0,
+    "infrastructure_retries": 0,
+    "fresh_process_per_arm": true,
+    "fresh_model_per_arm": true,
+    "one_aggregate_output_not_one_file_per_arm": true,
+    "claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-campaign-claim.json",
+    "output_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-runtime-evidence.json",
+    "normalized_command_template": [
+      ".venv/bin/python",
+      "-B",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i2_app_b_run.py",
+      "--freeze",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b1-runtime-input-freeze.json",
+      "--claim",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-campaign-claim.json",
+      "--output",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i2/app-b2-runtime-evidence.json",
+      "--expected-head",
+      "{AUTHORITY_HEAD}",
+      "--graph-root",
+      "../graph-reflexive-coherence"
+    ]
+  },
+  "outcome_quarantine": {
+    "allowed_cross_appendix_input": "abstract_pre_outcome_G_E_P_semantics_only",
+    "prior_appendix_runtime_or_conclusion_used": false,
+    "static_code_reference_to_prior_appendix_forbidden": true,
+    "candidate_parameter_search_count": 0
+  },
+  "claim_ceiling": {
+    "maximum_positive_claim": "bounded P2-I2-grounded three-operation shared-pool composition candidate",
+    "mode_separated": true,
+    "blocked_claims": [
+      "cross-appendix recurrence",
+      "generic participant ecology",
+      "participant complementarity",
+      "fully native history realization",
+      "unbounded three-operation irreducibility",
+      "main P2-I2 conclusion revision"
+    ]
+  }
+}

@@ -2964,3 +2964,106 @@ are non-load-bearing, no external producer is load-bearing, and every blocked
 claim remains blocked. Main P2-I2 interpretation and every prior gate remain
 unchanged. Appendix A is closed; later synthesis or selection requires separate
 authority.
+
+## 18. `P2-I2-APP-B-H01` — Mode-indexed three-operation composition
+
+**Status:** owner-accepted prospective operational hypothesis under
+DEC-075/CHG-080; zero Appendix B source audit, model, arm, or result at entry
+
+### 18.1 Hypothesis
+
+For at least one accepted P2-I2 dependence mode, physically committed G, E,
+and P operations can act through one registered common carrier so that the
+complete `GEP` row has a positive frozen normalized response margin over the
+strongest valid proper subset, every operation retains a causal path to the
+later native response, and common-carrier controls localize the relation to
+the declared state/history path.
+
+The three mode hypotheses are independent:
+
+```text
+H_B_state:
+  current common C is sufficient and history is not load-bearing
+
+H_B_history:
+  active ordered H_C is sufficient while relevant final C is matched
+
+H_B_hybrid:
+  current C and active H_C both affect the same response path
+```
+
+Failure or support in one mode does not determine another mode.
+
+### 18.2 Evaluability and primary rule
+
+For each frozen `mode x seed x operation_order` tuple, reference and all seven
+operation subsets must be operationally valid. A valid zero is evaluable. Any
+missing, invalid, contaminated, or cross-tuple comparator makes the tuple
+nonevaluable.
+
+```text
+S = max(R_reference, R_G, R_E, R_P, R_GE, R_GP, R_EP)
+M = accepted P2-I2 normalized margin of R_GEP over S
+primary_pass = M >= delta_B
+```
+
+APP-B1 must establish that `R`, the window, normalization, numeric domain,
+floor, runtime tolerance, and arithmetic resolution are semantically unchanged
+before reusing accepted I04R2/I05J machinery. It freezes `delta_B` before any
+candidate arm. The seven-subset maximum receives candidate-free pure tests and
+byte-identical serialization tests.
+
+### 18.3 Causal requirements
+
+A mode can pass only if:
+
+- withdrawing each of G, E, and P changes `R` or a registered mediator whose
+  independent intervention changes `R`;
+- clamping/freezing the declared common carrier changes `R`;
+- matched diversion remains causally inert;
+- private partitions and controller substitution cannot reproduce the relation;
+- response provenance reaches the accepted native later-response target/window.
+
+History tokens must be source-label-free projections of admitted physical
+operation events. Excluded traffic can neither enter `H_C` nor satisfy an
+operation receipt.
+
+### 18.4 Mode discriminators
+
+State-carried support additionally requires equal `R` for distinct valid
+histories with equal complete final `C`. History-carried support requires
+different `R` for different admitted histories at equal relevant final `C`, a
+load-bearing history clamp, and a non-load-bearing state-only intervention.
+Hybrid support requires the frozen reference/candidate `C x H_C` factorial and
+separate effects of both components on the same response path.
+
+### 18.5 Participant and identity controls
+
+The one-source GEP diagnostic is asymmetric: reproduction excludes participant
+plurality as load-bearing; non-reproduction leaves it unresolved. Three cyclic
+participant-to-operation assignments and source-label permutation require the
+result to follow physical operation structure rather than participant identity.
+
+### 18.6 Outcome quarantine
+
+Appendix B design and analysis must not import, read, hash-select, or branch on
+Appendix A runtime/reconstruction/validation/result artifacts. Abstract APP-A0
+semantics may be cited, but Appendix A numerical values, thresholds,
+realization choices, and results have zero authority. Static source/dataflow
+validation must enforce this before the campaign.
+
+### 18.7 Results and claim ceiling
+
+At entry:
+
+```text
+Appendix B model starts = 0
+Appendix B scientific arms = 0
+Appendix B results = 0
+mode dispositions = unassigned/unassigned/unassigned
+```
+
+The strongest allowed positive conclusion is `bounded P2-I2-grounded
+three-operation shared-pool composition candidate`, with mode-separated
+dispositions and the Appendix B brief's blocked claims. Cross-appendix
+recurrence is never assigned inside Appendix B.

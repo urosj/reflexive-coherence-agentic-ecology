@@ -1,0 +1,68 @@
+{
+  "artifact_id": "P2-I2-APP-B1-CANDIDATE-FREE-VALIDATION",
+  "canonical_payload_digest": "114450364698234c1eefa8fcfc6f978c206960baec25c1f774215eae92568fcd",
+  "checks": {
+    "adapter_pure_conformance": {
+      "admitted_operations": [
+        "G",
+        "E",
+        "P"
+      ],
+      "diversion_admitted": false,
+      "readout": 1.126953125,
+      "reset_to_empty": true,
+      "save_load_identity": true
+    },
+    "arm_registry": {
+      "class_counts": {
+        "common_controls": 21,
+        "mode_discriminators": 6,
+        "primary": 72
+      },
+      "count": 99,
+      "digest": "432a4c6d470b9e3e2bb3ba29ccf52544d14e5364848cca0fa27e1683f5994045"
+    },
+    "authority_hashes": 7,
+    "claim_absent": true,
+    "governed_output_absent": true,
+    "implementation_hashes": 5,
+    "parent_imports_pygrc": false,
+    "portable_freeze": true,
+    "pure_estimator": {
+      "cross_seed_refused": true,
+      "incomplete_refused": true,
+      "positive_margin": 1.0
+    },
+    "static_outcome_quarantine": {
+      "p2_i2_app_b_analysis.py": {
+        "prior_appendix_reference_absent": true,
+        "syntax_valid": true
+      },
+      "p2_i2_app_b_history_adapter.py": {
+        "prior_appendix_reference_absent": true,
+        "syntax_valid": true
+      },
+      "p2_i2_app_b_reconstruct.py": {
+        "prior_appendix_reference_absent": true,
+        "syntax_valid": true
+      },
+      "p2_i2_app_b_run.py": {
+        "prior_appendix_reference_absent": true,
+        "syntax_valid": true
+      },
+      "p2_i2_app_b_validate.py": {
+        "prior_appendix_reference_absent": true,
+        "syntax_valid": true
+      }
+    },
+    "threshold_derivations": true
+  },
+  "execution_counts": {
+    "PyGRC_model_instantiations": 0,
+    "campaign_claims": 0,
+    "candidate_arms": 0,
+    "control_arms": 0,
+    "scientific_outputs": 0
+  },
+  "status": "passed_runtime_not_started"
+}
