@@ -193,9 +193,9 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   assigns every later activity to I00–I11. `P2-I3-BRIEF-GATE` has passed;
   Q-001 and the exact I01 input freeze are accepted through DEC-016.
 - The [cumulative decision record](implementation/P2-I3-decision-record.md)
-  retains all twenty accepted semantic, process, source, and substrate
-  decisions plus the remaining implementation questions at their legitimate
-  decision points.
+  retains all twenty-three accepted semantic, process, source, substrate, and
+  cross-project-handoff decisions plus the remaining implementation questions
+  at their legitimate decision points.
 - The accepted
   [I01 capability-audit input freeze](contracts/p2-i3/i01-capability-audit-input-freeze.json)
   fixes fifteen capability questions, ten operation dispositions, exact
@@ -212,8 +212,10 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   [reconstruction result](contracts/p2-i3/i02-admission-validation.json)
   admit 26 graph files, 40 public callables, 24 pre-existing tests, eight
   theory/method files, and two digest-bound precedent inventories. DEC-019
-  resolves Q-002 and passes `P2-I3-SOURCE-ADMISSION-GATE`; I03 is open but no
-  realization is selected.
+  resolves Q-002 and passes `P2-I3-SOURCE-ADMISSION-GATE`. DEC-021 begins I03
+  by selecting route-exclusive intermediate-node coherence as the minimum
+  carrier. DEC-022 fixes mixed native-LGRC/RCAE ownership; no dynamic or
+  complete realization is selected.
 - Owner-directed DEC-020 fixes `LGRC9V3` as the only eligible core substrate.
   Synchronous `GRC9V3` evolution is comparative-only: an interesting GRC
   result cannot replace an LGRC implementation or satisfy the L03 core.
@@ -224,8 +226,19 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   become explicit RCAE producer requirements and LGRC naturalization debt
   rather than reasons to weaken the experiment.
 - I01 supplies source-current capability evidence and I02 supplies exact
-  source-role authority. No P2-I3 realization, calibration, registration,
-  execution authority, or scientific result exists yet.
+  source-role authority. I03 currently supplies only a carrier choice; no
+  complete realization, calibration, registration, execution authority, or
+  scientific result exists yet.
+- The [Q-005 decay interpretation study](reports/P2-I3-Q005-decay-interpretation-study.md)
+  separates release-efficacy attenuation, coherence-conserving source
+  leakage, and constructed susceptibility relaxation. DEC-023 now preserves
+  those meanings as input to graph-project N31 rather than selecting two local
+  RCAE implementations.
+- The accepted [N31 handoff and return contract](implementation/P2-I3-N31-decay-primitive-handoff.md)
+  intentionally pauses P2-I3 at Q-005. It fixes the required N31 output roles,
+  repository boundary, outcome-specific return paths, bounded source
+  transition, and exact order for reopening carrier/ownership and resuming
+  Q-005 through Q-008. No P2-I3 realization or scientific evidence exists.
 
 ## Program authority
 
@@ -384,7 +397,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
 P2-I2                                           closed; accepted bounded L02 result retained for commit
-P2-I3                                           I02 source admission accepted; I03 open
+P2-I3                                           I03 paused at Q-005; N31 handoff active
 P2-I4 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

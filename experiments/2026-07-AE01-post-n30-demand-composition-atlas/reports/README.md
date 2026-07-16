@@ -73,6 +73,11 @@ Phase 2 gate reviews:
   source transitions, producer boundary, LGRC9V3-only core substrate,
   comparative-only GRC9V3 role, and reconstruction. DEC-019 passes the
   source-admission gate without selecting a realization.
+- [P2-I3 Q-005 decay interpretation study](P2-I3-Q005-decay-interpretation-study.md)
+  distinguishes release-efficacy attenuation, coherence-conserving source
+  leakage, and route-susceptibility relaxation. DEC-023 consumes it only as
+  the demand input to graph-project N31; it is not a P2-I3 realization or
+  scientific result.
 - [P2-I2 I04 historical preregistration](P2-I2-I04-calibration-preregistration.md)
   retains the original candidate-free measurement package that was superseded
   after owner review withheld CAL-PRE.

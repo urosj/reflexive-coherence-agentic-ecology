@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.53 draft
+**Baseline revision:** 0.57 draft
 
 **Date:** 2026-07-16
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.53 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.57 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I02 accepted, I03 open | P2-GATE | P2-I3 source-admission gate passed; realization and execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I03 paused at N31 handoff | P2-GATE | DEC-023 defers Q-005 to graph/LGRC; return admission, dynamics, encounter, and execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -2307,7 +2307,11 @@ Change log:
 | CL-053 | 2026-07-16 | Revision 0.50 records the grounded eleven-artifact I01 review passage after bounded CHG-014 machine-role/citation clarification. DEC-018 accepts the complete I01 package and passes SOURCE-AUDIT-GATE; all native classifications, producer-feasibility boundaries, source identities, test results, quarantine, and claim ceilings remain unchanged. | P2-I3 I01 acceptance and I02 entry | Superseded by CL-054 when the I02 proposal was constructed |
 | CL-054 | 2026-07-16 | Revision 0.51 draft constructs the review-ready P2-I3 I02 exact source-admission proposal. DEC-019 binds 26 graph files, 40 public callables, 24 pre-existing tests, eight theory/method sources, and 76 grouped N29/N30/predecessor sources; records current RCAE-paper transitions and the RCAE-producer/PyGRC non-mutation boundary; and passes independent static reconstruction. | P2-I3 I02 owner-review boundary | Superseded by CL-055 after the substrate-role correction |
 | CL-055 | 2026-07-16 | Revision 0.52 draft records owner-directed DEC-020/CHG-017. LGRC9V3 is the sole eligible core substrate; synchronous GRC9V3 class/continuity/step identities are comparative-only and cannot replace or bridge LGRC execution because their step/evolution/relaxation semantics differ. Source scope and counts remain unchanged and exact reconstruction is rerun. | P2-I3 corrected I02 owner-review boundary | Superseded by CL-056 after visibility correction and owner acceptance |
-| CL-056 | 2026-07-16 | Revision 0.53 draft adds validator-bound visibility for the admitted N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 lineage without copying its 44 source records, then records owner acceptance of corrected DEC-019. Q-002 is resolved and SOURCE-ADMISSION-GATE passes; I03 opens with no realization, runtime, calibration, or scientific effect. | P2-I3 I02 acceptance and I03 entry | Active; Q-003 through Q-008 now own realization selection |
+| CL-056 | 2026-07-16 | Revision 0.53 draft adds validator-bound visibility for the admitted N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 lineage without copying its 44 source records, then records owner acceptance of corrected DEC-019. Q-002 is resolved and SOURCE-ADMISSION-GATE passes; I03 opens with no realization, runtime, calibration, or scientific effect. | P2-I3 I02 acceptance and I03 entry | Superseded by CL-057 after Q-003 carrier selection |
+| CL-057 | 2026-07-16 | Revision 0.54 draft records DEC-021: route-exclusive intermediate-node coherence is the minimum core carrier. Native LGRC9V3 owns state and packet transitions; RCAE may later own only explicitly selected missing lifecycle/encounter operations. Edge and corridor alternatives remain separately rerunnable with new identities and downstream reruns. | P2-I3 I03 carrier decision | Superseded by CL-058 after Q-004 ownership acceptance |
+| CL-058 | 2026-07-16 | Revision 0.55 draft records DEC-022 mixed ownership. LGRC9V3 retains adequate carrier, packet, timing, and native restoration transitions; RCAE completion remains explicit for missing lifecycle, encounter, intervention, role, and composite-state functions; unsuitable nearby operations cannot be relabeled. | P2-I3 I03 ownership decision | Superseded by CL-059 after Q-005 interpretation work; DEC-022 remains historical authority pending N31 return |
+| CL-059 | 2026-07-16 | Revision 0.56 draft retains a thorough Q-005 study of release-efficacy attenuation, coherence-conserving source leakage, and constructed susceptibility relaxation. Leakage and susceptibility are separate causal realizations and may not be presumed to share topology; protocol/artifact reuse remains allowed above carrier semantics. | P2-I3 Q-005 pre-decision evidence | Superseded prospectively by CL-060 before any implementation; the interpretation study remains active input |
+| CL-060 | 2026-07-16 | Revision 0.57 draft records DEC-023 and the detailed N31 handoff/return contract. P2-I3 is intentionally paused at Q-005; graph-project N31 receives all three decay meanings and may select one, multiple, a producer-only candidate, no primitive, or a new taxonomy. Return requires graph reconstruction, a bounded RCAE source transition, explicit carrier/ownership retention or reopening, and ordered Q-005-through-Q-008 resumption. | P2-I3 cross-project spiral boundary | Owner-accepted and authorized for retention; after commit switch scope explicitly to graph N31, with no P2-I3 implementation or scientific effect |
 
 ## 17. Current next actions
 
@@ -2384,3 +2388,7 @@ The next unchecked actions in dependency order are:
     resolves Q-002, and passes only `P2-I3-SOURCE-ADMISSION-GATE`; I03 remains
     separately gated. DEC-020 already fixes LGRC9V3 as the core substrate and
     GRC9V3 as comparative-only.
+22. [x] Review and retain the P2-I3 Q-005 interpretation study, DEC-023, and
+    detailed N31 handoff/return contract as one bounded package. After its
+    commit, keep P2-I3 paused and switch scope explicitly to graph-project N31;
+    do not begin P2-I3 implementation or calibration.

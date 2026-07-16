@@ -2,7 +2,8 @@
 
 **Status:** active cumulative lane decision record; initial governance package
 accepted, `P2-I3-BRIEF-GATE`, `P2-I3-SOURCE-AUDIT-GATE`, and
-`P2-I3-SOURCE-ADMISSION-GATE` passed; I03 realization questions are open
+`P2-I3-SOURCE-ADMISSION-GATE` passed; I03 intentionally paused at Q-005 for
+the N31 graph-side decay-primitive handoff
 
 **Lane:** `AE01-L03`
 
@@ -82,6 +83,9 @@ No decision may be inferred from:
 | `P2-I3-DEC-018` | Does the complete grounded I01 package pass the source-audit gate? | Accepted by project owner after grounded artifact review and bounded CHG-014 clarification | Passes source-audit gate and opens only I02 exact source admission and Q-002 | 2026-07-16 |
 | `P2-I3-DEC-019` | Which exact theory, graph, callable, test, and precedent identities resolve Q-002? | Accepted exact I02 bundle after bounded substrate and visibility corrections | Passes source-admission gate and opens only I03 realization questions | 2026-07-16 |
 | `P2-I3-DEC-020` | May synchronous GRC9V3 evolution replace or bridge the required LGRC9V3 substrate? | No; LGRC9V3 is the core substrate and GRC9V3 is comparative-only | Corrects I02 roles and prevents a GRC result from satisfying or substituting for the L03 core | 2026-07-16 |
+| `P2-I3-DEC-021` | Which route-local surface carries the minimum core field under Q-003? | Route-exclusive intermediate-node coherence, with edge and external-corridor alternatives retained | Fixes the carrier only; opens Q-004 ownership comparison without selecting a dynamic, equation, encounter, or result | 2026-07-16 |
+| `P2-I3-DEC-022` | Which required functions are native, producer-assisted, constructed, unsuitable, or missing under Q-004? | Mixed ownership: native LGRC state/packet/restoration core plus explicit RCAE completion and controls | Fixes ownership truth and naturalization debt; opens Q-005 without selecting the dynamic or equation | 2026-07-16 |
+| `P2-I3-DEC-023` | Should RCAE choose a decay implementation locally or return the missing primitive question to graph/LGRC? | Pause P2-I3 at Q-005 and select an N31 decay-semantic/native-primitive experiment through the cross-project spiral | Replaces the local two-implementation proposal with a graph handoff and exact P2-I3 return contract; Q-005 remains unresolved | 2026-07-16 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -1021,7 +1025,361 @@ source-current LGRC9V3 implementation natively incorporates an operation with
 the required semantics. The latter changes LGRC9V3 capability classification;
 it does not make a historical GRC9V3 result equivalent retroactively.
 
-## 23. Open decision register
+## 23. `P2-I3-DEC-021` — Minimum core field carrier
+
+### Question
+
+Which route-local surface carries the minimum P2-I3 core field under
+`P2-I3-Q-003`?
+
+### Considered alternatives
+
+#### Option A — route-exclusive intermediate-node coherence
+
+Each matched route contains one exclusive intermediate node. Its public
+LGRC9V3 node-coherence value is the route-local carrier. Native packet arrivals
+can form and repeatedly accumulate the carrier through attributable,
+budget-conserving transfers; departures can withdraw quantity. Native runtime
+state, events, clocks, packet lineage, and continuation are restorable.
+
+This option has the smallest current ownership gap, but node coherence is not
+a native trail abstraction. RCAE must still declare the carrier-node mask,
+field interpretation, lifecycle boundary, interventions, and local encounter.
+Q-005/Q-006 decide whether coherence is the complete field value or the native
+substrate beneath an additional RCAE-owned law. Q-007 decides how a later
+traverser consumes it without a route label or global ranker.
+
+#### Option B — edge-local base conductance
+
+Edge conductance is geometrically intuitive and closest to a conventional
+trail-support surface. N22 provides a strong precedent for a declared-state
+producer that changes experiment-owned conductance while preserving native
+snapshot, replay, reentry, and controls.
+
+The source-current LGRC9V3 event runtime does not natively update conductance
+as a consequence of traversal. Selecting it would therefore make formation,
+reinforcement, and other chosen dynamics producer-owned from the beginning,
+with more composite-state and naturalization debt than Option A.
+
+#### Option C — explicit RCAE corridor field
+
+A corridor-owned scalar or structured field would make route extent, equation,
+relocation, false-trace insertion, and lifecycle semantics explicit without
+overloading node coherence or conductance. It is also the most constructed
+option: RCAE would own the carrier state, update law, serialization,
+restoration wrapper, intervention surface, and graph-side naturalization debt.
+It is retained for a later campaign if native-state coupling proves
+scientifically distorting or too restrictive.
+
+#### Option D — passive pulse/evidence surface
+
+Rejected as a carrier. Pulse-surface rows record contact, timing, lineage, and
+before/after evidence but do not carry mutable persistent field state. Their
+producer configurations also name explicit packet endpoints and edges. They
+may support receipts or conformance, never the causal field itself.
+
+A node-plus-edge or other composite carrier was not selected. Under
+`P2-I3-DEC-012`, added carrier breadth requires demonstrated necessity rather
+than convenience.
+
+### Selected resolution
+
+Select Option A: route-exclusive intermediate-node coherence is the minimum
+core carrier.
+
+The core topology will later register two baseline-matched routes with one
+exclusive intermediate carrier node per route. Formation may use explicit
+addresses to deliver native packet work, but formation addresses, route names,
+packet lineage, and success labels are excluded from the later traversal
+input. The later encounter may consume only the registered local carrier state
+and other inputs explicitly admitted by Q-007.
+
+LGRC9V3 owns node-coherence storage and every native packet transition. RCAE
+owns only the role/mask declaration and any later lifecycle, intervention, or
+encounter operation explicitly selected under Q-004 through Q-007. Calling
+the carrier a field is an ecology-side operational interpretation until the
+complete causal chain is implemented and tested.
+
+### Why this option was selected
+
+- It maximizes semantically adequate native LGRC9V3 ownership.
+- Attributable costly formation and repeated accumulation already have public,
+  source-backed native transitions.
+- Carrier and formation history enter native restoration and causal receipts.
+- It confines construction to the operations I01 actually found missing:
+  lifecycle, intervention, participant roles, and local encounter.
+- It gives a strict test of whether an existing LGRC surface can support the
+  ecology discriminator before introducing a wholly external field object.
+
+This is a proportional starting choice, not a claim that node coherence is the
+universally best or most natural trail carrier.
+
+### Gate effect
+
+Q-003 is resolved. Q-004 may now classify ownership for the selected node
+carrier and its still-missing operations. No dynamic, equation, field units,
+encounter policy, dependence mode, conformance fixture, calibration value, or
+scientific outcome is selected. `P2-I3-DISCRIMINATOR-GATE` remains open.
+
+### Reopening and alternative-campaign rule
+
+Reopen Q-003 before the discriminator gate if Q-005 through Q-007 or bounded
+conformance demonstrates that node coherence cannot express an independently
+intervenable field lifecycle and local encounter without changing LGRC9V3
+semantics, hiding a route selector, conflating participant capacity with field
+state, or preventing complete restoration and relocation controls.
+
+An edge-conductance or explicit-corridor alternative may also be executed
+later even if the node realization succeeds. Such work must receive a new
+realization and campaign identity, restart every affected I03-and-later
+contract and gate, and retain the node realization rather than silently
+replacing it. A different candidate outcome or aesthetic preference alone
+does not rewrite this decision; it motivates a separately traceable
+alternative experiment.
+
+## 24. `P2-I3-DEC-022` — Realization ownership map
+
+### Question
+
+For every function required by the node-carried realization, is the operation
+native LGRC9V3, minimally producer-assisted, explicitly constructed,
+unsuitable, or scientifically missing under `P2-I3-Q-004`?
+
+### Considered ownership strategies
+
+#### Option A — call the complete realization native
+
+Rejected. Public LGRC9V3 owns node coherence, packet transfers, queue/event
+time, and native restoration, but it does not own a trail-field lifecycle,
+fixed-topology field interventions, participant roles, or a compliant local
+carrier-to-traversal response. Calling the composition native would erase the
+main graph-side demand exposed by the experiment.
+
+#### Option B — construct the whole realization in RCAE
+
+Rejected as disproportionate. It would duplicate adequate LGRC9V3 state,
+packet, timing, accounting, and restoration functions and weaken the test of
+what the admitted substrate can already carry.
+
+#### Option C — mixed native core with explicit RCAE completion
+
+Selected. Adequate public LGRC9V3 operations retain transition ownership.
+RCAE owns only the missing eligibility, lifecycle, intervention, role, and
+composite-identity functions demonstrated necessary by later decisions.
+Producer assistance never upgrades the underlying native capability class.
+
+#### Option D — silently bridge nearby operations
+
+Rejected. Synchronous GRC9V3 evolution, global route arbitration,
+topology-lineage transport, passive pulse rows, and post-hoc pheromone
+inference answer different causal questions and cannot be relabeled as the
+missing LGRC9V3 field operations.
+
+### Accepted ownership map
+
+| Function | Accepted ownership/disposition | Boundary |
+| --- | --- | --- |
+| Node-coherence carrier storage and readback | native LGRC9V3 | RCAE supplies only the declared route-node role/mask and interpretation |
+| Costly attributable deposition | native LGRC9V3 packet departure/arrival | formation addresses and lineage cannot enter the later response |
+| Repeated node accumulation | native LGRC9V3 repeated arrivals | adequate only for node-state accumulation; Q-005 decides whether it is the selected dynamic |
+| Conserved withdrawal | native LGRC9V3 departure debit | control or transfer only; it is not autonomous decay |
+| Queue ordering, event time, packet budget, and causal receipts | native LGRC9V3 | evidence and accounting do not become field state |
+| Decay | native operation absent; RCAE producer required if selected | prefer a request producer plus native transfer when Q-006 semantics permit; otherwise declare the exact non-native transition |
+| Costly maintenance | native operation absent; RCAE producer required if selected | must respond to the selected loss dynamic and cannot rename ordinary deposits |
+| Saturation or field-response cap | native operation absent; RCAE policy/producer required if selected | source-budget rejection is not field saturation |
+| Later local carrier-to-traversal encounter | native path inadequate; bounded RCAE request producer required | producer may read only registered local opportunity/carrier inputs and must hand transition work back to LGRC9V3; Q-007 fixes factorization |
+| False-trace insertion, clamp, state/history shuffle | constructed RCAE controls | typed interventions only; never hidden candidate tuning |
+| Fixed-topology carrier relocation | constructed RCAE control | topology refinement/reabsorption is unsuitable; Q-013/Q-015 fix equality and identity |
+| Native snapshot, load, and reset | native LGRC9V3 | covers only native state |
+| Complete save/load/reset/branch/equal continuation | native restoration plus RCAE composite wrapper | every selected producer, policy, intervention, and external state must be included or the operation fails closed |
+| Participant roles, access, depositor/probe episodes, and direct-address exclusion | constructed RCAE manifests and guards | orchestration metadata cannot author the traversal response |
+
+No required function is yet classified `scientifically_missing`. Native
+decay, maintenance, saturation, fixed-topology relocation, and local encounter
+surfaces are absent or inadequate, but admitted producer/control precedents
+make bounded completion plausible. Q-005 through Q-007 and conformance must
+still demonstrate that the selected completion preserves the experiment. A
+failed adequate binding may later become a precise missing-surface result; it
+must not be disguised as a scientific negative.
+
+### Naturalization debt
+
+The initial graph-side debt is:
+
+- an LGRC-integrated route-local field lifecycle if a non-native dynamic is
+  selected and remains load-bearing;
+- a local carrier-to-traversal opportunity interface without explicit outcome
+  addresses, route labels, or global ranking;
+- fixed-topology field intervention and relocation surfaces if they remain
+  essential controls; and
+- composite restoration support for any producer/policy state that cannot be
+  reduced to native LGRC9V3 identity.
+
+Debt is specialized after Q-005 through Q-007; this decision does not claim
+that every possible optional operation must be naturalized.
+
+### Gate effect
+
+Q-004 is resolved. Q-005 may now select one non-static dynamic from this
+ownership map. Q-006 still owns the exact law, units, ordering, invariants,
+and any request-versus-declared-state producer choice. Q-007 still owns the
+local encounter. No implementation, conformance, calibration, registration,
+or scientific execution is authorized. `P2-I3-DISCRIMINATOR-GATE` remains
+open.
+
+### Reopening condition
+
+Reopen the affected ownership row if an admitted or later explicitly
+transitioned PyGRC revision adds a semantically adequate native operation; if
+Q-005/Q-006 requires a state effect that cannot be expressed through the
+recorded ownership path; if Q-007 cannot avoid an outcome-writing producer; or
+if complete composite restoration cannot be demonstrated. A native transition
+requires a new source/realization identity and rerun; it never silently
+replaces retained RCAE behavior.
+
+### Pre-decision Q-005 interpretation evidence
+
+The owner-directed
+[Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md)
+retains three non-equivalent meanings:
+
+```text
+release-efficacy attenuation
+coherence-conserving source leakage
+constructed route-susceptibility relaxation
+```
+
+It corrects one unsafe early reuse assumption: the leakage and susceptibility
+realizations may share semantic protocol and artifact infrastructure, but they
+must not be presumed to share a concrete topology. Leakage likely requires a
+closed receiver/reservoir relation around the node carrier; susceptibility
+likely requires edge/corridor coupling and a different complete-state and
+local-encounter contract.
+
+The report originally recommended leakage as the DEC-021-compatible core
+direction and susceptibility as a separate RCAE-constructed realization.
+DEC-023 supersedes that local implementation direction before either
+realization was selected or built. The three meanings now serve as N31 input,
+and Q-005 remains intentionally unresolved pending the graph-side return.
+
+## 25. `P2-I3-DEC-023` — N31 decay-primitive spiral handoff
+
+### Question
+
+Should P2-I3 select and implement decay locally from the three Q-005
+interpretations, or should it return the unresolved primitive to the graph
+project before continuing ecology composition?
+
+### Trigger
+
+The Q-005 study established:
+
+```text
+release-efficacy attenuation
+!= coherence-conserving source leakage
+!= route-susceptibility relaxation
+```
+
+Current RC theory, LGRC specification, and PyGRC implementation do not select
+one of these as the decay primitive. Native packet mechanics strongly support
+conserved transfer, but not an autonomous leak law. RC-Distance supports
+instantaneous state/flux-derived geometry, but not slow susceptibility
+relaxation. N08 records native route-conductance memory as missing, and N22
+retains a producer-mediated susceptibility candidate with naturalization debt.
+
+### Considered paths
+
+#### Option A — implement leakage and susceptibility inside P2-I3
+
+This would preserve ecology momentum and permit two explicit constructed
+realizations. It would also make RCAE responsible for resolving a substrate-
+level semantic distinction before graph/LGRC had tested or specified it.
+Different carrier, topology, invariant, restoration, and encounter contracts
+would create two full scientific programs rather than a small lifecycle
+choice.
+
+#### Option B — select only conserved leakage inside P2-I3
+
+This is the smallest path consistent with DEC-021 and current native packet
+mechanics. It still requires RCAE to invent the autonomous source-emission law
+and might prematurely naturalize “decay” as redistribution without comparing
+the relational alternative at graph level.
+
+#### Option C — return the primitive question to graph/LGRC as N31
+
+N30's closeout explicitly established a cross-project spiral:
+
+```text
+N30 graph result
+-> agentic-ecology demand pass
+-> selected N31+ primitive/building-block probe
+```
+
+The N30+ direction catalog already includes slow-memory conductance trace but
+leaves N31 unfixed pending ecology demand. P2-I3 now supplies a concrete demand
+that is broader than conductance: discriminate decay semantics and naturalize
+the best warranted LGRC9V3 primitive, permitting plurality or non-selection.
+
+### Selected resolution
+
+Select Option C.
+
+Pause P2-I3 at Q-005. Preserve all three interpretations as the input to a
+small graph-side experiment provisionally titled:
+
+```text
+N31 — LGRC9V3 Decay Semantics and Native Primitive
+```
+
+N31 should use candidate-specific minimal fixtures, source-current evidence,
+internal-time and invariant audits, local causal readout, restoration, and
+controls. It may select one primitive, distinct multiple primitives, a
+producer-only candidate, no primitive, or a new taxonomy.
+
+The exact departure, graph return bundle, outcome branches, RCAE source
+transition, and resumption order are fixed in the
+[N31 handoff and return contract](P2-I3-N31-decay-primitive-handoff.md).
+
+### What remains frozen
+
+- All historical decisions and admitted source classifications remain intact.
+- The graph and geometric-theory repositories remain read-only in RCAE scope.
+- Q-005 is deferred, not answered.
+- Q-006 through Q-008 and all I04-and-later work remain unopened.
+- No P2-I3 implementation or conformance may proceed during N31.
+- N31 demand is not evidence and cannot support L03.
+
+### Return boundary
+
+P2-I3 resumes only after:
+
+1. N31 closes with a committed, reconstructable return bundle;
+2. RCAE admits the exact N31 revision through a bounded source transition;
+3. affected DEC-021 carrier and DEC-022 ownership rows are explicitly retained
+   or reopened;
+4. Q-005 is resolved from the graph result and unchanged ecology need; and
+5. Q-006 through Q-008 continue under the handoff's ordered procedure.
+
+N31 does not discharge the P2-I3 topology, local ecology encounter,
+calibration, lane controls, execution, or terminal interpretation.
+
+### Gate effect
+
+`P2-I3-DISCRIMINATOR-GATE` remains pending. I03 is intentionally paused at a
+cross-project dependency, not invalidated and not scientifically negative.
+Only completion and retention of the RCAE handoff package is authorized before
+the workspace switches to graph-project N31 work.
+
+### Reopening condition
+
+Reconsider this handoff if the graph project rejects or indefinitely defers
+N31; N31 closes without a return bundle usable by RCAE; a source-current
+native primitive appears independently and is admitted through a new
+transition; or the owner explicitly chooses an RCAE-constructed exploration
+despite the unresolved native surface. Any such path receives a new decision
+and does not erase the handoff history.
+
+## 26. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -1030,9 +1388,9 @@ governance contract; answers cannot be taken from candidate outcomes.
 | --- | --- | --- | --- |
 | `P2-I3-Q-001` | What exact read-only capability-audit scope examines route-local field, timing, distance, packet, route, intervention, and restoration surfaces? | I01 input freeze | Resolved by `P2-I3-DEC-016`; no longer blocks audit |
 | `P2-I3-Q-002` | Which exact theory and graph revisions, files, public callables, and evidence roles are admitted? | I02 source admission | Resolved by `P2-I3-DEC-019`; no longer blocks I03 |
-| `P2-I3-Q-003` | Is the field carrier edge-, node-, corridor-, or another route-local surface? | I03 realization selection | Blocks discriminator freeze |
-| `P2-I3-Q-004` | Is each required function native, minimally producer-assisted, constructed, unsuitable, or missing? | I03 after I01/I02 | Blocks realization acceptance |
-| `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze | Blocks operational hypotheses |
+| `P2-I3-Q-003` | Is the field carrier edge-, node-, corridor-, or another route-local surface? | I03 realization selection | Resolved by `P2-I3-DEC-021`; alternative campaigns remain permitted under new identities |
+| `P2-I3-Q-004` | Is each required function native, minimally producer-assisted, constructed, unsuitable, or missing? | I03 after I01/I02 | Resolved by `P2-I3-DEC-022`; conformance may reopen affected rows |
+| `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze after N31 return | Deferred by DEC-023; three interpretations form the N31 demand input and no local answer may be selected before the return transition |
 | `P2-I3-Q-006` | What exact field equation/update law, units, update order, and invariants apply? | I03 realization freeze | Blocks conformance and calibration preregistration |
 | `P2-I3-Q-007` | How does traversal encounter the local field without a hidden global selector? | I03 causal factorization | Blocks discriminator gate |
 | `P2-I3-Q-008` | Is current field state sufficient, is active history load-bearing, or must multiple modes remain? | I03 discriminator freeze | Blocks downstream cell semantics |
@@ -1049,7 +1407,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 
-## 24. Decision protocol for subsequent work
+## 27. Decision protocol for subsequent work
 
 For each open question:
 
@@ -1067,15 +1425,18 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 25. Current boundary
+## 28. Current boundary
 
-Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-020` define semantic and
+Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-023` define semantic and
 process boundaries, accept the exact I01 read-only capability audit and I02
 source bundle, pass `P2-I3-SOURCE-AUDIT-GATE` and
-`P2-I3-SOURCE-ADMISSION-GATE`, and restrict the core substrate to LGRC9V3.
-They assign no runtime carrier, equation, exact registered values, calibration,
-registration, execution, result, appendix activation, or specification-
-promotion authority.
+`P2-I3-SOURCE-ADMISSION-GATE`, restrict the core substrate to LGRC9V3, and
+select route-exclusive intermediate-node coherence as the minimum carrier,
+and fix its mixed native/RCAE ownership boundary. DEC-023 then pauses I03 at
+Q-005 and selects the N31 decay-primitive handoff. These decisions assign no
+selected dynamic, complete realization, equation, exact registered values,
+calibration, registration, execution, result, appendix activation, or
+specification-promotion authority.
 
 The frozen I01 environment preflight and read-only audit are complete. The
 accepted I02 package fixes exact source identities and roles but does not
@@ -1093,9 +1454,9 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted action is I03 realization work and recorded resolution of
-Q-003 through Q-008. I03 must compare admitted LGRC9V3-native and explicit
-RCAE-producer completion paths without silently upgrading producer precedents
-to native capability or weakening the dynamic-field-to-local-traversal
-discriminator. No runtime conformance, calibration, candidate execution, or
-scientific activity is authorized merely by source-admission passage.
+The next permitted RCAE action is review and retention of the DEC-023 handoff
+package. After its commit, work switches explicitly to graph-project N31
+scope. P2-I3 resumes only through the handoff's reconstruction, source-
+transition, carrier/ownership, and Q-005 return sequence. No runtime
+conformance, calibration, candidate execution, or scientific activity is
+authorized in P2-I3 while N31 is active.
