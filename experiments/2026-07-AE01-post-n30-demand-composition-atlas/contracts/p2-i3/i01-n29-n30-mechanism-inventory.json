@@ -1,0 +1,325 @@
+{
+  "artifact_id": "P2-I3-I01-N29-N30-MECHANISM-INVENTORY",
+  "artifact_version": "1.0.0",
+  "status": "accepted",
+  "iteration_id": "P2-I3-I01",
+  "change_id": "P2-I3-CHG-012",
+  "scope_extension_id": "P2-I3-I01-N29-N30-SCOPE-EXTENSION",
+  "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "summary": {
+    "mechanism_record_count": 12,
+    "exact_added_source_count": 32,
+    "direct_pygrc_runtime_family_count": 1,
+    "direct_pygrc_runtime_family": "N29 I11/I11.1 route-aspect-surplus packet loop",
+    "n30_fresh_pygrc_runtime_count": 0,
+    "capability_classification_changes": 0,
+    "capability_classification_enrichments": [
+      "P2-I3-CAP-05",
+      "P2-I3-CAP-06",
+      "P2-I3-CAP-08",
+      "P2-I3-CAP-09",
+      "P2-I3-CAP-10",
+      "P2-I3-CAP-14",
+      "P2-I3-CAP-15"
+    ],
+    "primary_result": "N29 contributes one live producer-assisted current-state pressure loop plus causal-lineage validation and a no-decay limitation. N30 contributes artifact-level surface, metric, control, and claim-boundary patterns, not a fresh runtime field mechanism.",
+    "predecessor_lineage_followup": "N29 is an index into earlier mechanisms rather than their substitute. P2-I3-I01-PREDECESSOR-MECHANISM-LINEAGE separately follows the relevant N05/N08/N09/N22 implementation chain and supporting experiments."
+  },
+  "mechanisms": [
+    {
+      "mechanism_id": "P2-I3-XM-001",
+      "source_experiment": "N29",
+      "mechanism_name": "route_aspect_surplus_packet_loop",
+      "ownership_class": "public_pygrc_producer_assisted",
+      "runtime_status": "direct_LGRC9V3_execution",
+      "mechanism_summary": "A configured route aspect defines poles, channels, references, thresholds, packet amount, and addressed hops. The public route-surplus producer reads current pole mass, schedules a native packet departure, and LGRC9V3.step processes the event.",
+      "p2_i3_relevance": "Supplies a tested formation/reinforcement/withdrawal loop, event ordering, idempotency, budget accounting, two-pole and three-pole fixtures, and a useful producer-assisted comparison surface.",
+      "cannot_supply": "It cannot satisfy the P2-I3 local encounter because route aspect, eligible channel, source, target, and edge are explicit causal inputs. Producer success cannot become native trail-field or ecology evidence.",
+      "affected_capabilities": [
+        "P2-I3-CAP-04",
+        "P2-I3-CAP-05",
+        "P2-I3-CAP-08"
+      ],
+      "disposition": "Retain for I02/I03 comparison and negative-control design; do not select or relabel it in I01.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-004",
+        "P2-I3-XN-SRC-005",
+        "P2-I3-XN-SRC-007",
+        "P2-I3-XN-SRC-008",
+        "P2-I3-XN-SRC-009",
+        "P2-I3-XN-SRC-011",
+        "P2-I3-XN-SRC-012",
+        "P2-I3-XN-SRC-013",
+        "P2-I3-SRC-011#LGRC9V3.set_route_aspect_surplus_trigger",
+        "P2-I3-SRC-011#LGRC9V3.produce_events"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-002",
+      "source_experiment": "N29",
+      "mechanism_name": "self_rearm_causal_lineage_validation",
+      "ownership_class": "public_pygrc_evidence_only",
+      "runtime_status": "native_event_and_producer_artifact_validation",
+      "mechanism_summary": "Public self-rearm evidence joins a parent arrival, post-arrival surplus producer record, and processed child departure in route-aspect order with budget checks.",
+      "p2_i3_relevance": "Provides a strong reusable pattern for machine-level repeated-event causal chains and for separating scheduled candidate evidence from completed departure evidence.",
+      "cannot_supply": "The lineage validator is evidence, not a carrier update or traversal policy. The producer schedules from current pole mass; parent-arrival lineage does not by itself prove that active history is a distinct causal input under complete-state matching.",
+      "affected_capabilities": [
+        "P2-I3-CAP-04",
+        "P2-I3-CAP-09"
+      ],
+      "disposition": "Candidate I02 evidence utility; preserve evidence-only status and require a separate state/history discriminator.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-004",
+        "P2-I3-XN-SRC-008",
+        "P2-I3-XN-SRC-012",
+        "P2-I3-SRC-011#validate_lgrc9v3_self_rearm_evidence_artifacts"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-003",
+      "source_experiment": "N29",
+      "mechanism_name": "bounded_no_decay_trace_window",
+      "ownership_class": "limitation_evidence",
+      "runtime_status": "direct_runtime_stress_observation",
+      "mechanism_summary": "Two-pole and three-pole trace/pressure loops survived bounded noop-delay, replay, and snapshot/load checks, while the experiment explicitly recorded that the runtime has no trace-decay law.",
+      "p2_i3_relevance": "Confirms that persistence under replay or a bounded no-op window must not be promoted into a decay curve or general trail-field persistence.",
+      "cannot_supply": "No autonomous decay, maintenance, saturation, leakage, or general persistence relation was executed.",
+      "affected_capabilities": [
+        "P2-I3-CAP-06",
+        "P2-I3-CAP-07"
+      ],
+      "disposition": "Retain as limitation and design constraint; classifications remain inadequate/absent.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-006",
+        "P2-I3-XN-SRC-007",
+        "P2-I3-XN-SRC-010"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-004",
+      "source_experiment": "N29",
+      "mechanism_name": "boundary_shared_medium_unit_extraction",
+      "ownership_class": "inherited_artifact_projection",
+      "runtime_status": "N25_2_artifact_extraction_not_fresh_N29_execution",
+      "mechanism_summary": "Prototype B extracted basin-side, shared/adjacent-medium, counterpart, packet, flux, and leakage fields from prior N25.2 artifacts and retained a zero-leakage fail-closed boundary.",
+      "p2_i3_relevance": "Offers medium/participant separation vocabulary, active-medium evidence fields, and leakage-control structure.",
+      "cannot_supply": "The N29 builder does not import or run PyGRC; it cannot establish a P2-I3 carrier, dynamic, local encounter, or fresh control result.",
+      "affected_capabilities": [
+        "P2-I3-CAP-02",
+        "P2-I3-CAP-10"
+      ],
+      "disposition": "Use as an interpretation/control template only unless exact upstream native surfaces are separately admitted.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-014",
+        "P2-I3-XN-SRC-015"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-005",
+      "source_experiment": "N29",
+      "mechanism_name": "generative_extractive_processor_medium_reshaping",
+      "ownership_class": "inherited_artifact_projection",
+      "runtime_status": "N28_artifact_projection_not_fresh_N29_execution",
+      "mechanism_summary": "Prototype D projected generative enrichment, extractive depletion, and opposed route-lobe redistribution from N28 artifacts into N29 runtime-candidate records, with leakage and producer debt retained.",
+      "p2_i3_relevance": "Provides alternative geometric response axes and a two-lobe redistribution pattern that may inform later field and perturbation comparisons.",
+      "cannot_supply": "Despite runtime-candidate naming, the builder performs JSON extraction and writes new artifacts without importing PyGRC. It is not a live field update, local traversal encounter, or native relocation operation.",
+      "affected_capabilities": [
+        "P2-I3-CAP-06",
+        "P2-I3-CAP-10",
+        "P2-I3-CAP-15"
+      ],
+      "disposition": "Preserve as an alternative mechanism family and debt record, not as source-current P2-I3 runtime adequacy.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-017",
+        "P2-I3-XN-SRC-018"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-006",
+      "source_experiment": "N29",
+      "mechanism_name": "prototype_composition_and_spiral_handoff",
+      "ownership_class": "contract_only",
+      "runtime_status": "composition_not_executed",
+      "mechanism_summary": "N29 classified A-D bridge exemplars and composition contracts while explicitly recording the missing composed runtime harness, cross-prototype state handoff, native medium coupling, and role-control matrix.",
+      "p2_i3_relevance": "Supplies the correct ownership discipline for composing native, producer-assisted, inherited, and constructed mechanisms without retroactive nativity upgrades.",
+      "cannot_supply": "No A+B, A+D, or full ecology runtime was executed; contract readiness is not P2-I3 evidence.",
+      "affected_capabilities": [
+        "P2-I3-CAP-14",
+        "P2-I3-CAP-15"
+      ],
+      "disposition": "Carry forward the debt and provider-transition rules only.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-001",
+        "P2-I3-XN-SRC-002",
+        "P2-I3-XN-SRC-003",
+        "P2-I3-XN-SRC-016",
+        "P2-I3-XN-SRC-019"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-007",
+      "source_experiment": "N30",
+      "mechanism_name": "M1_medium_surface_families",
+      "ownership_class": "inherited_artifact_projection",
+      "runtime_status": "inherited_N28_source_current_artifacts_no_fresh_N30_runtime",
+      "mechanism_summary": "N30 identified single-shell, split-shell, and circulatory shared-local medium surfaces through distinguishability, support, boundary, capacity, and lobe-exchange fields.",
+      "p2_i3_relevance": "Provides candidate carrier/measurement families and a useful mechanism-diversity rule: retain the primary row and add alternatives without overwriting it.",
+      "cannot_supply": "The surfaces were inherited from N28; N30 did not execute formation, update, or later traversal in PyGRC.",
+      "affected_capabilities": [
+        "P2-I3-CAP-02",
+        "P2-I3-CAP-03",
+        "P2-I3-CAP-11"
+      ],
+      "disposition": "Use as source-admission context and alternative carrier vocabulary, not as the P2-I3 realization.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-020",
+        "P2-I3-XN-SRC-021",
+        "P2-I3-XN-SRC-023"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-008",
+      "source_experiment": "N30",
+      "mechanism_name": "replay_persistence_without_temporal_dynamics",
+      "ownership_class": "limitation_evidence",
+      "runtime_status": "artifact_replay_and_stress_variant_only",
+      "mechanism_summary": "I5/I5-B retained stable artifact, duplicate, snapshot-load, and stress-variant readings but explicitly recorded no measured decay curve, longer temporal window, slow trace, or medium memory.",
+      "p2_i3_relevance": "Directly supports the P2-I3 rule that static persistence and reconstruction stability cannot satisfy the ecology-specific dynamic-field discriminator.",
+      "cannot_supply": "No non-static carrier trajectory was measured.",
+      "affected_capabilities": [
+        "P2-I3-CAP-06",
+        "P2-I3-CAP-07"
+      ],
+      "disposition": "Retain as a hard insufficiency case and calibration/interpretation warning.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-024",
+        "P2-I3-XN-SRC-030",
+        "P2-I3-XN-SRC-031"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-009",
+      "source_experiment": "N30",
+      "mechanism_name": "derived_later_eligibility_threshold_relation",
+      "ownership_class": "inherited_artifact_projection",
+      "runtime_status": "derived_metric_over_N28_transition_artifacts",
+      "mechanism_summary": "I6 normalized inherited transition-axis values by predeclared surface thresholds and classified a later eligibility relation against neutral and extractive counterfactual artifacts.",
+      "p2_i3_relevance": "Offers a disciplined metric/counterfactual pattern and preserves narrow-margin versus contrast-margin semantics.",
+      "cannot_supply": "The script does not import PyGRC or execute a later participant. It computes a score over retained artifacts, so it cannot satisfy the P2-I3 local carrier-to-traversal encounter.",
+      "affected_capabilities": [
+        "P2-I3-CAP-08",
+        "P2-I3-CAP-11"
+      ],
+      "disposition": "Use as analysis precedent only; require fresh registered runtime response for P2-I3.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-025",
+        "P2-I3-XN-SRC-028"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-010",
+      "source_experiment": "N30",
+      "mechanism_name": "active_null_and_replay_control_vocabulary",
+      "ownership_class": "synthetic_or_artifact_control_template",
+      "runtime_status": "prepositive_synthetic_nulls_and_artifact_reinstantiation",
+      "mechanism_summary": "N30 names message-removal, trace ablation, wrong-surface, time reversal, freeze, shuffle, false-trace, decay, susceptibility inversion, hidden producer/controller, and relabel controls. I7 reloads JSON artifacts, recomputes metrics, and records the synthetic null conditions as failed closed for each row.",
+      "p2_i3_relevance": "Provides a strong control-ID vocabulary and demonstrates that every positive family needs the same relation-chain audit.",
+      "cannot_supply": "The I3 fail reasons are declared synthetic conditions, I7 snapshot/load is JSON artifact loading, and control reinstantiation is not live candidate intervention. These records cannot resolve P2-I3 controls by themselves.",
+      "affected_capabilities": [
+        "P2-I3-CAP-09",
+        "P2-I3-CAP-10",
+        "P2-I3-CAP-14"
+      ],
+      "disposition": "Map applicable control identities forward, but implement and execute P2-I3-specific interventions later.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-022",
+        "P2-I3-XN-SRC-026",
+        "P2-I3-XN-SRC-029",
+        "P2-I3-XN-SRC-032"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-011",
+      "source_experiment": "N30",
+      "mechanism_name": "minimal_shared_medium_closeout_boundary",
+      "ownership_class": "claim_boundary",
+      "runtime_status": "artifact_level_closeout",
+      "mechanism_summary": "N30 closes at bounded minimal shared-medium participation and trace-mediated eligibility using original generative and alternative circulatory artifact families.",
+      "p2_i3_relevance": "Fixes the inherited relation that P2-I3 must go beyond: attributable medium history can condition later eligibility.",
+      "cannot_supply": "N30 does not establish repeated trail formation, a measured non-static dynamic, fresh traversal through a field, or a trail/stigmergic claim.",
+      "affected_capabilities": [
+        "P2-I3-CAP-15"
+      ],
+      "disposition": "Treat as inherited evidence and claim floor, never as P2-I3 success.",
+      "evidence_references": [
+        "P2-I3-XN-SRC-020",
+        "P2-I3-XN-SRC-027"
+      ]
+    },
+    {
+      "mechanism_id": "P2-I3-XM-012",
+      "source_experiment": "N29_and_N30",
+      "mechanism_name": "P2_I3_demand_synthesis",
+      "ownership_class": "audit_synthesis",
+      "runtime_status": "no_new_execution",
+      "mechanism_summary": "Within N29/N30, the strongest direct implementation seed is N29's live route-surplus packet loop, while the strongest semantic/control seed is N30's artifact-level medium dependency and null vocabulary. The predecessor-lineage artifact supplies the broader mechanism synthesis.",
+      "p2_i3_relevance": "I02/I03 should compare route-local node coherence, explicit route-surplus production, synchronous GRC continuity, and a bounded constructed field/encounter bridge while preserving N30 control identities and N29 causal-lineage validation. It must also consume the separately retained predecessor-lineage findings before selecting ownership.",
+      "cannot_supply": "Neither experiment supplies an LGRC-integrated non-static route field that fresh traversal encounters without route labels or addressed outcome policy.",
+      "affected_capabilities": [
+        "P2-I3-CAP-02",
+        "P2-I3-CAP-05",
+        "P2-I3-CAP-06",
+        "P2-I3-CAP-08",
+        "P2-I3-CAP-09",
+        "P2-I3-CAP-10",
+        "P2-I3-CAP-15"
+      ],
+      "disposition": "Expose these alternatives and insufficiency cases at I02/I03; select none in I01.",
+      "evidence_references": [
+        "P2-I3-XM-001",
+        "P2-I3-XM-002",
+        "P2-I3-XM-003",
+        "P2-I3-XM-007",
+        "P2-I3-XM-008",
+        "P2-I3-XM-009",
+        "P2-I3-XM-010",
+        "P2-I3-XM-011"
+      ]
+    }
+  ],
+  "sources": [
+    {"source_id":"P2-I3-XN-SRC-001","experiment":"roadmap","path":"experiments/N20-N29-LGRC-BecomingAgencyEcologyRoadmap.md","sha256":"911c5055d8cfcb87dc9e810b8b6a24f109bff83e809edb71549dcba57908e70e"},
+    {"source_id":"P2-I3-XN-SRC-002","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/README.md","sha256":"0259600a4e537e01f9eaaefb2583ba7c17583346d01de837d2a651a0dfe789fd"},
+    {"source_id":"P2-I3-XN-SRC-003","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/implementation/AgenticEcologyConvergenceBridgeImplementationPlan.md","sha256":"db740d1c6c1f899924548a283c9286470bfe2a14e0c43affc6910b3f7728c419"},
+    {"source_id":"P2-I3-XN-SRC-004","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_trace_pressure_loop_runtime_i11a.md","sha256":"9442a760f114c5b2ddfdf3a0c639537d6cce3c60e2a58681799ea7d7a2166b09"},
+    {"source_id":"P2-I3-XN-SRC-005","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_trace_pressure_loop_runtime_controls_i11b.md","sha256":"7e886670f02ec3ac2c58ae19d7b065a826295b3b163ba7d480d6f0d5f0845ee5"},
+    {"source_id":"P2-I3-XN-SRC-006","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_trace_pressure_loop_replay_stress_i11c.md","sha256":"34e454438ba53518d5ffe00f60793d04c301fbfe44c08dfa301e3f1b88cdfab7"},
+    {"source_id":"P2-I3-XN-SRC-007","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_trace_pressure_loop_stronger_replay_stress_i111c.md","sha256":"5e9047bffa9c66d9518dea4af978cd4e82c245dafd2540e1241a46ff411ca17a"},
+    {"source_id":"P2-I3-XN-SRC-008","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_trace_pressure_loop_runtime_i11a.py","sha256":"9c635bc70b3f06644138ae7a65d2632c851ba9c3f1e84395297cfb4350306904"},
+    {"source_id":"P2-I3-XN-SRC-009","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_trace_pressure_loop_runtime_controls_i11b.py","sha256":"e31075e1d9298a7acc1019b854e14ab8cc63205aa10592ef268b670a8baa76a3"},
+    {"source_id":"P2-I3-XN-SRC-010","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_trace_pressure_loop_replay_stress_i11c.py","sha256":"21ed9192144ed4b7139bbf3d7176b87a7078a208438d42e4c9e95df65bf75b1f"},
+    {"source_id":"P2-I3-XN-SRC-011","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_trace_pressure_loop_stronger_i111.py","sha256":"a712537f57511aaa8efc5b87127c9a0c86e19b5a6609a4146c2f7fd210805c84"},
+    {"source_id":"P2-I3-XN-SRC-012","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_trace_pressure_loop_runtime_i11a_runtime_artifact.json","sha256":"be5a214194b94b2858b4f5ca0e11616ed2f81e84b178971ba6a9c1061f2df389"},
+    {"source_id":"P2-I3-XN-SRC-013","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/outputs/n29_trace_pressure_loop_stronger_runtime_i111a_runtime_artifact.json","sha256":"b702dd8158692710569f570a4f95cd6647fa937143e5591af3f731541114e051"},
+    {"source_id":"P2-I3-XN-SRC-014","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_boundary_shared_medium_active_replay_stress_i122c.md","sha256":"cb6aa07ba6945959e7dd7b09d8354a6cb55eba7c93ea0892bd91a247d72c2c62"},
+    {"source_id":"P2-I3-XN-SRC-015","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_boundary_shared_medium_unit_i12abc.py","sha256":"027e43ca949dec52a65cb7a3fbc99965f611e8b0a945bf81027cc7945801aac7"},
+    {"source_id":"P2-I3-XN-SRC-016","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_prototype_atlas_classification_i15.md","sha256":"3796ab8f0ca9587deb45b1a86b90f15e903ab3d96738dc4e05d381bf5ba4f596"},
+    {"source_id":"P2-I3-XN-SRC-017","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_generative_extractive_medium_reshaping_synthesis_i14x.md","sha256":"f6fb5e3ffc3562edbdba5aab2dc40f8f82b2aee15d8ab1121a0a26c9ca0caf58"},
+    {"source_id":"P2-I3-XN-SRC-018","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/scripts/build_n29_generative_extractive_direct_runtime_i141_i143.py","sha256":"1883a165b945d24adfde7501adb75452c75264d8ebec91ceccd4dea970fa6ed4"},
+    {"source_id":"P2-I3-XN-SRC-019","experiment":"N29","path":"experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/reports/n29_closeout_and_ecology_handoff_i18.md","sha256":"257b20d7c741211d64db9758cd70f69d23238c69afe2e9f2287af174910401c4"},
+    {"source_id":"P2-I3-XN-SRC-020","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/README.md","sha256":"d94a46602c6892296fa5f42befe4dd70f0f242277de704d02daf1bf7d7c3e8a7"},
+    {"source_id":"P2-I3-XN-SRC-021","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/implementation/MinimalSharedMediumParticipationImplementationPlan.md","sha256":"a214025175ec0f1b62ed7812c308f321496d787065ec77e4592b9b5a7f72d21c"},
+    {"source_id":"P2-I3-XN-SRC-022","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/reports/n30_active_nulls_i3.md","sha256":"c03e4ad8c0a67cb7fae8624c08035524883b8b54bd1826611a6402e4374857e9"},
+    {"source_id":"P2-I3-XN-SRC-023","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/reports/n30_medium_surface_trace_i5.md","sha256":"d0c3e526746739b38c2dd57a6e9fdab63171e3eab8826df5b4f04b30dd515209"},
+    {"source_id":"P2-I3-XN-SRC-024","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/reports/n30_medium_surface_scope_window_i5b.md","sha256":"8c22b325e97c3cd977ed79cc9f6595d79b023dd38b813e2694d21184d40013f4"},
+    {"source_id":"P2-I3-XN-SRC-025","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/reports/n30_later_eligibility_i6.md","sha256":"b32247ba17fc6bd3fa669d19235e5c5d13b570448328d4ff4322e91ae08e96fb"},
+    {"source_id":"P2-I3-XN-SRC-026","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/reports/n30_replay_controls_i7.md","sha256":"5f8edbc0ed39ec3ef338a12f588e5796ac163ecc959fb6ff669b47d8218c2f01"},
+    {"source_id":"P2-I3-XN-SRC-027","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/reports/n30_closeout_and_spiral_handoff_i8.md","sha256":"17bf54e74a0941eafbd0c7fb65d4fb3dcf10033246fc353a588a22c007571365"},
+    {"source_id":"P2-I3-XN-SRC-028","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/scripts/build_n30_later_eligibility_i6.py","sha256":"742c38ba8fc5b4a45b8797f34e3d00b29653572b2e01101d4b213a2e40cac9a8"},
+    {"source_id":"P2-I3-XN-SRC-029","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/scripts/build_n30_replay_controls_i7.py","sha256":"7f6e2692d5b63f1fdc5de415bbe9f82150e6cda4c6ec9ac013cdab1365a3a62e"},
+    {"source_id":"P2-I3-XN-SRC-030","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_medium_surface_trace_i5_artifacts/trace_persistence_or_decay.json","sha256":"f248b84ed0c1c8c6c1f1a952299355c915eaa6450e403b74b609a969ac9a33b9"},
+    {"source_id":"P2-I3-XN-SRC-031","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_medium_surface_scope_window_i5b_artifacts/medium_surface_persistence_decay_limit.json","sha256":"3a599d7643962a6bf9e0cd092b5d340d55d6d49f602c4e440cb96901f2b1f917"},
+    {"source_id":"P2-I3-XN-SRC-032","experiment":"N30","path":"experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/outputs/n30_replay_controls_i7_artifacts/i7_replay_control_matrix.json","sha256":"df8887b333924f4718e9888eaf756bb39b7c24b8617ee9163fcbb78526f5966f"}
+  ],
+  "claim_boundary": "This inventory establishes what N29/N30 implemented, projected, controlled, or left missing at the frozen graph revision. It does not admit a P2-I3 source, select a realization, rerun either experiment, or provide P2-I3 scientific evidence."
+}

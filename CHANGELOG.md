@@ -41,6 +41,15 @@ All notable changes to this project will be documented in this file.
   roadmap, lane registry, source inventory, common contracts, hypothesis
   directory, evidence tiers, reconstruction rules, and independent gate
   structure.
+- Added the complete P2-I3 pre-execution source package: fifteen capability
+  dispositions, ten operation dispositions, exact source/command provenance,
+  N29/N30 and predecessor-mechanism inventories, 24 passing admitted PyGRC
+  tests, and an independently reconstructable I02 source-admission manifest.
+- Added the P2-I3 Q-005 decay interpretation study and DEC-023 N31 handoff.
+  The study separates release-efficacy attenuation, coherence-conserving
+  source leakage, and route-susceptibility relaxation; the handoff fixes the
+  graph-side demand, required N31 return roles, outcome-specific branches, and
+  exact RCAE resumption procedure.
 - Added the AE01 experiment workspace and advanced it to `AE01-C2`, with L01
   and L02 accepted and L03–L07 plus cross-lane synthesis still unexecuted.
 - Added native-first capability and source-admission audits that distinguish
@@ -67,6 +76,10 @@ All notable changes to this project will be documented in this file.
 - Expanded the repository from a conceptual paper archive into a conceptual
   and bounded experiment-evidence workspace; conceptual papers remain
   non-implementation authorities.
+- Advanced P2-I3 through its brief, source-audit, and source-admission gates,
+  then intentionally paused I03 at Q-005. The provisional two-RCAE-decay-
+  realization direction was superseded before implementation so graph-project
+  N31 can test and possibly naturalize the unresolved primitive first.
 - Updated the root, papers, experiments, and AE01 navigation so accepted
   experiment mechanisms and their limits are visible from the primary reading
   paths.

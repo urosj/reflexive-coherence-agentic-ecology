@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.46
+**Plan revision:** 0.58 draft
 
 **Date:** 2026-07-16
 
@@ -1766,27 +1766,36 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.46:
+Current dependency order after revision 0.58 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
    support only the bounded shared-pool co-conditioning demand pattern. The
    three modes remain separate; cross-lane synthesis, active-history native
    substitution, mode ranking, and N31+ selection remain unopened.
-2. Retain the accepted P2-I3 semantic brief, cumulative decision record, and
-   evidence-expandable checklist under DEC-014. `P2-I3-BRIEF-GATE` passes and
-   opens only construction and review of the exact I01 capability-audit input
-   freeze; it does not perform the audit or admit a source.
-3. For every future lane, freeze candidate-blind calibration and exact
+2. Retain accepted P2-I3 I02 authority under DEC-019. It binds 26 graph files,
+   40 callables, 24 pre-existing tests, eight theory/method files, and two
+   exact grouped precedent inventories. Q-002 is resolved and the source-
+   admission gate is passed. DEC-020 fixes LGRC9V3 as the only eligible core
+   substrate; GRC9V3 is comparative-only. No complete realization or
+   lifecycle law is selected.
+3. Retain P2-I3 at its DEC-023 cross-project pause. The Q-005 interpretation
+   study separates release attenuation, conserved leakage, and constructed
+   susceptibility relaxation; the N31 handoff now returns that unresolved
+   primitive question to graph/LGRC. Retain the committed RCAE demand state,
+   switch scope explicitly for N31, and resume P2-I3 only through the
+   handoff's exact graph reconstruction, bounded source transition,
+   carrier/ownership review, and Q-005-through-Q-008 return sequence.
+4. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
    closure.
-4. Apply the targeted L03 and L06 amendments before their calibration
+5. Apply the targeted L03 and L06 amendments before their calibration
    preregistration gates; static trace persistence and linear capacity
    transport cannot satisfy those lanes.
-5. Execute and classify lanes independently; preserve each prior result and
+6. Execute and classify lanes independently; preserve each prior result and
    never consume another lane's conclusion as evidence.
-6. Synthesize only after all required terminal and developmental-
+7. Synthesize only after all required terminal and developmental-
    interpretation records are comparable, then close AE01 before promoting
    canonical specifications or stable source abstractions.
 
@@ -1879,6 +1888,18 @@ directive.
 | 2026-07-16 | Revision 0.44: records owner acceptance of the P2-I3 semantic brief and constructs its review-ready cumulative decision record and evidence-expandable I00–I11 checklist. Eleven semantic/process decisions are retained while twenty runtime, equation, source, metric, numeric, gate, and execution questions remain assigned to later decision points. The brief gate remains pending owner acceptance of the governance package; no source audit, admission, realization, calibration, registration, execution, or L03 evidence is assigned. |
 | 2026-07-16 | Revision 0.45: applies the owner-authorized bounded P2-I3 governance-review correction. DEC-012 fixes one realization plus one complete-state-matched history discriminator as the proportional default; DEC-013 defines repetition as at least two attributable events while leaving exact cardinality to registration. The brief now projects R05 only through geometry/timescale variation, and the checklist corrects I01 freeze authority, declared-effect ownership, scientific-outcome-free conformance, typed control evidence, split question handoffs, and related execution boundaries. `P2-I3-BRIEF-GATE` remains pending; no source or scientific evidence is assigned. |
 | 2026-07-16 | Revision 0.46: records owner acceptance of the corrected P2-I3 governance package as DEC-014/CHG-005 and passes `P2-I3-BRIEF-GATE`. The final non-blocking clarification keeps I03 dynamics operationally observable but scientifically unmeasured until I08 and requires I01 to separate public-source facts, synthetic interface conformance, and candidate-shaped behavior. Only I01 input-freeze construction and review open; Q-001, the audit, source admission, realization, and all scientific gates remain closed. |
+| 2026-07-16 | Revision 0.47: records DEC-015's correction-driven iteration-review convention and constructs the review-ready P2-I3 I01 input-freeze candidate. The candidate fixes exact clean graph/theory identities, fifteen capability questions, ten operation dispositions, allowed read-only commands, output contracts, and a public-source/synthetic/candidate-shaped evidence partition with synthetic probes disabled. Q-001 and the freeze remain pending review; no source classification, API invocation, test, conformance probe, audit evidence, or later authority is assigned. |
+| 2026-07-16 | Revision 0.48: records DEC-016 acceptance of the exact P2-I3 I01 input freeze, owner-authorized restoration of the missing pytest prerequisite, and the complete review-ready read-only audit. The package retains fifteen capability and ten operation dispositions, 27 exact source digests, 24 passing targeted pre-existing tests, distinct geometry/runtime roles, a bounded native shortlist, and explicit missing field-lifecycle, intervention, participant-role, and local traversal-response surfaces. Evidence effect is source-current capability only; source admission, realization, calibration, execution, and L03 evidence remain closed. |
+| 2026-07-16 | Revision 0.49: follows N29's index into the relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanism lineage and records DEC-017. Semantically adequate native PyGRC capability has priority, while absent or unsuitable native operations become explicit RCAE request-producer or declared-state-producer obligations plus graph-side naturalization debt; the experiment is never weakened to fit native coverage. Native capability classifications remain unchanged, 44 predecessor source identities are retained, no earlier experiment is rerun, and source admission, realization selection, and L03 evidence remain closed. |
+| 2026-07-16 | Revision 0.50: records grounded eleven-artifact I01 review passage through DEC-018 after one bounded CHG-014 clarification. All fifteen capability, ten operation, source-lineage, provenance, quarantine, and digest claims are accepted; SOURCE-AUDIT-GATE passes and opens only I02 exact source admission and Q-002. No source is admitted, no realization is selected, and no conformance, calibration, candidate, or scientific execution is authorized. |
+| 2026-07-16 | Revision 0.51 draft: constructs the review-ready P2-I3 I02 source-admission proposal and DEC-019. The bundle binds 26 exact graph files, 40 public callable identities, 24 exact pre-existing tests, eight exact theory/method sources, and 76 N29/N30/predecessor sources through two digest-bound inventories. Static reconstruction passes; Q-002 and SOURCE-ADMISSION-GATE remain open pending correction-driven owner review. No realization, producer, equation, runtime transition, or L03 evidence is assigned. |
+| 2026-07-16 | Revision 0.52 draft: applies the owner-directed bounded I02 substrate correction as DEC-020/CHG-017. LGRC9V3 is the sole eligible core substrate; synchronous GRC9V3 class/continuity/step identities are comparative-only because their per-step evolution and relaxation semantics differ and cannot replace or bridge LGRC execution. Source scope and counts remain unchanged; reconstruction is rerun with no realization or scientific effect. |
+| 2026-07-16 | Revision 0.53 draft: adds validator-bound predecessor experiment visibility without duplicating the digest-bound source authority, then records owner acceptance of corrected DEC-019. Q-002 is resolved and `P2-I3-SOURCE-ADMISSION-GATE` passes over 26 graph files, 40 callables, 24 tests, eight theory/method files, and 76 grouped precedent sources. I03 realization questions open; no carrier, equation, producer, runtime conformance, calibration, execution, or L03 result is selected. |
+| 2026-07-16 | Revision 0.54 draft: records owner-accepted DEC-021. Route-exclusive intermediate-node coherence is the minimum core carrier because it preserves native LGRC9V3 packet formation, accumulation, state, and restoration while confining construction to missing lifecycle and encounter operations. Edge-conductance and explicit-corridor alternatives remain separately rerunnable under new identities; Q-004 through Q-008 and all runtime/scientific authority remain open. |
+| 2026-07-16 | Revision 0.55 draft: records owner-accepted DEC-022. The node-carried realization has a mixed ownership boundary: LGRC9V3 owns carrier state, packet formation/accumulation/withdrawal, event time, and native restoration; RCAE owns only explicitly selected missing lifecycle, local-encounter, intervention, role, and composite-identity functions. Nearby GRC, arbitration, topology-transport, pulse-row, and post-hoc inference surfaces remain unsuitable substitutions. Q-005 is next; no implementation or scientific authority follows. |
+| 2026-07-16 | Revision 0.56 draft: retains the owner-directed Q-005 decay interpretation study. Release-efficacy attenuation, coherence-conserving node-source leakage, and constructed route-susceptibility relaxation are distinct causal ontologies. The desired leakage and susceptibility implementations must use separate realization/campaign and topology contracts; only protocol and artifact infrastructure may be shared before concrete equivalence is demonstrated. Q-005 and campaign authority remain open. |
+| 2026-07-16 | Revision 0.57 draft: records DEC-023 and the detailed P2-I3-to-N31 handoff. The provisional two-RCAE-realization direction is superseded before implementation. P2-I3 pauses at Q-005 while graph-project N31 discriminates decay semantics and may naturalize one, multiple, or no primitives. The handoff fixes N31 return roles, outcome branches, reconstruction, bounded source transition, affected carrier/ownership review, and the exact Q-005-through-Q-008 resumption order. |
+| 2026-07-16 | Revision 0.58 draft: synchronizes the repository's public and master status surfaces with the committed P2-I3 state. Root, experiment, AE01-view, implementation, changelog, and release-note navigation now distinguish passed P2-I3 source gates and the DEC-023 N31 handoff from an executed L03 result. The scientific and continuation boundaries are unchanged. |
 
 ## 18. Program completion criteria
 

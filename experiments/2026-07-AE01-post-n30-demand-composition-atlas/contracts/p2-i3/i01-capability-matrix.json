@@ -1,0 +1,498 @@
+{
+  "artifact_id": "P2-I3-I01-CAPABILITY-MATRIX",
+  "artifact_version": "1.0.0",
+  "status": "accepted",
+  "iteration_id": "P2-I3-I01",
+  "lane_id": "AE01-L03",
+  "input_freeze_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+  "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "evidence_effect": "source_current_capability_only",
+  "classification_summary": {
+    "adequate": 9,
+    "inadequate": 5,
+    "absent": 1,
+    "unsuitable": 0,
+    "unresolved": 0
+  },
+  "record_role_contract": {
+    "candidate_surface_id_semantics": "The identifier names the exact capability or operation-family target being audited. It does not assert that the target exists; classification is the sole existence/adequacy disposition.",
+    "runtime_capability_question_ids": [
+      "P2-I3-CAP-01",
+      "P2-I3-CAP-02",
+      "P2-I3-CAP-03",
+      "P2-I3-CAP-04",
+      "P2-I3-CAP-05",
+      "P2-I3-CAP-06",
+      "P2-I3-CAP-07",
+      "P2-I3-CAP-08",
+      "P2-I3-CAP-09",
+      "P2-I3-CAP-10",
+      "P2-I3-CAP-11",
+      "P2-I3-CAP-12",
+      "P2-I3-CAP-13"
+    ],
+    "compound_target_clarifications": {
+      "P2-I3-CAP-06": "Audits native withdrawal together with autonomous evolution or decay. Withdrawal exists, but the compound target is inadequate because the qualifying integrated lifecycle and autonomous decay do not.",
+      "P2-I3-CAP-07": "Audits the required maintenance, saturation or bounded accumulation, and leakage operation family. An absent classification means no qualifying native family exists."
+    },
+    "meta_question_roles": {
+      "P2-I3-CAP-14": "audit_coverage_meta_record",
+      "P2-I3-CAP-15": "minimal_assistance_demand_synthesis"
+    }
+  },
+  "producer_completion_summary": {
+    "authority": "P2-I3-DEC-017",
+    "classification_boundary": "Native capability classification and producer-completion feasibility are independent. An absent or inadequate native surface remains absent or inadequate even when a bounded producer path is source-backed.",
+    "scientific_blocker_rule": "Native absence alone is not a scientific blocker. A realization blocks only if neither an adequate native path nor a reconstructable producer completion can preserve the accepted causal relation.",
+    "source_lineage_artifact": "P2-I3-I01-PREDECESSOR-MECHANISM-LINEAGE",
+    "precedent_legend": {
+      "P2-I3-PM-001": "N05 request producer followed by native packet transition.",
+      "P2-I3-PM-003": "N06 explicit arbitration and hidden-selector control precedent; unsuitable as local response.",
+      "P2-I3-PM-004": "N07 neutral-reservoir accounting precedent.",
+      "P2-I3-PM-005": "N08 serialized route-memory lifecycle precedent.",
+      "P2-I3-PM-007": "N09 typed schedule request followed by native step; outcome-directed policy excluded.",
+      "P2-I3-PM-009": "N10/N11 route-memory naturalization-demand precedent.",
+      "P2-I3-PM-010": "N22 native packet susceptibility, reentry, and restoration precedent.",
+      "P2-I3-PM-011": "N22 declared-state producer with native snapshot, readback, reentry, and controls."
+    },
+    "capability_dispositions": [
+      {
+        "capability_question_id": "P2-I3-CAP-05",
+        "producer_completion_feasibility": "not_required_for_repeated_native_packet_accumulation",
+        "precedents": ["P2-I3-PM-001", "P2-I3-PM-007"],
+        "boundary": "Producer scheduling may request repeated native updates but cannot author the later traversal result."
+      },
+      {
+        "capability_question_id": "P2-I3-CAP-06",
+        "producer_completion_feasibility": "source_backed_if_decay_or_relaxation_is_selected",
+        "precedents": ["P2-I3-PM-004", "P2-I3-PM-005", "P2-I3-PM-011"],
+        "boundary": "N08 supplies lifecycle semantics and N22 supplies explicit state-transition ownership; P2-I3 must select and register its own equation, budget destination, and ordering."
+      },
+      {
+        "capability_question_id": "P2-I3-CAP-07",
+        "producer_completion_feasibility": "source_backed_but_not_selected",
+        "precedents": ["P2-I3-PM-005", "P2-I3-PM-009", "P2-I3-PM-011"],
+        "boundary": "A bounded RCAE field lifecycle is permitted when native operators are missing; success remains constructed and exports the load-bearing pattern as LGRC naturalization debt."
+      },
+      {
+        "capability_question_id": "P2-I3-CAP-08",
+        "producer_completion_feasibility": "interface_pattern_exists_but_scientific_mechanism_remains_open",
+        "precedents": ["P2-I3-PM-003", "P2-I3-PM-007"],
+        "boundary": "N09 demonstrates typed producer requests, but its goal-directed route selection is unsuitable. I03 still needs an outcome-neutral local encounter without route labels or global ranking."
+      },
+      {
+        "capability_question_id": "P2-I3-CAP-09",
+        "producer_completion_feasibility": "strong_for_composite_state_intervention",
+        "precedents": ["P2-I3-PM-010", "P2-I3-PM-011"],
+        "boundary": "Native snapshots plus explicit RCAE field state can support complete-state matching only after composite identity and equality are frozen."
+      },
+      {
+        "capability_question_id": "P2-I3-CAP-10",
+        "producer_completion_feasibility": "strong_for_typed_pure_controls",
+        "precedents": ["P2-I3-PM-003", "P2-I3-PM-004", "P2-I3-PM-010", "P2-I3-PM-011"],
+        "boundary": "Every control must identify its target fields and prove equality of all continuation-relevant non-target state."
+      },
+      {
+        "capability_question_id": "P2-I3-CAP-12",
+        "producer_completion_feasibility": "straightforward_registration_layer",
+        "precedents": ["P2-I3-PM-010"],
+        "boundary": "Participant roles may map to native identities but cannot place the desired route or outcome in the later probe input."
+      }
+    ]
+  },
+  "records": [
+    {
+      "capability_question_id": "P2-I3-CAP-01",
+      "candidate_surface_id": "P2-I3-SURFACE-TOPOLOGY-ROUTES",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "GRC9V3State exposes a port topology with live node and edge identities.",
+        "lgrc9v3_graph_routes_for_current_topology derives directed neighbor routes from the current topology.",
+        "LGRC9V3RouteAspect validates explicit contiguous channels and rejects invalid route geometry."
+      ],
+      "adequacy_inference": "A two-route kernel can be represented as registered topology without a preferred-route field. Route-aspect labels may validate a declared test geometry but cannot supply the later causal preference.",
+      "evidence_references": [
+        "P2-I3-SRC-004#GRC9V3State.topology",
+        "P2-I3-SRC-007#lgrc9v3_graph_routes_for_current_topology",
+        "P2-I3-SRC-008#LGRC9V3RouteAspect",
+        "P2-I3-SRC-016#test_route_generation_and_broad_seed_priming_are_library_owned",
+        "P2-I3-SRC-019#test_route_aspect_validates_against_state_and_compiles_to_routes"
+      ],
+      "missing_or_unsuitable_distinction": "No topology capability is missing. A hidden route-preference label or route label used as outcome evidence would be unsuitable even though explicit route identities are available for registration and validation.",
+      "minimal_assistance_or_constructed_demand": "RCAE need only register a symmetric two-route topology and prove that route identity is annotation, not a preferred-outcome input.",
+      "restoration_coverage": "Topology and route configuration are included in native snapshots and restoration identity.",
+      "open_questions": [
+        "I03 must decide whether route-aspect contracts are used only for geometry validation or omitted from the primary response path."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-02",
+      "candidate_surface_id": "P2-I3-SURFACE-ROUTE-NODE-COHERENCE",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "GRC9V3State exposes node coherence and edge-local base conductance, geometric length, temporal delay, and flux coupling.",
+        "LGRC9V3.get_state exposes the runtime state and native packet operations alter node coherence through declared debit and credit transitions.",
+        "Runtime snapshots retain the base state, packet ledger, clocks, routes, logs, and cached producer state."
+      ],
+      "adequacy_inference": "Route-exclusive intermediate-node coherence is a public, reconstructibly identified route-local carrier candidate. This does not yet make it a trail field or select it over an edge- or corridor-owned construction.",
+      "evidence_references": [
+        "P2-I3-SRC-005#GRC9V3State",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_departure",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_arrival",
+        "P2-I3-SRC-011#LGRC9V3.get_state",
+        "P2-I3-SRC-012#LGRC9V3RuntimeState"
+      ],
+      "missing_or_unsuitable_distinction": "The native node carrier exists, but there is no dedicated trail-field abstraction, access-scope object, or field lifecycle. The passive causal-pulse surface row is evidence about contact, not a mutable field carrier.",
+      "minimal_assistance_or_constructed_demand": "If I03 selects node coherence, RCAE must declare the route-node mask, field interpretation, invariants, and ownership without copying PyGRC state or treating passive rows as carrier state.",
+      "restoration_coverage": "Native node and edge state are covered. Any RCAE field law, mask, or interpretation policy remains externally owned until explicitly registered.",
+      "open_questions": [
+        "Q-003 must select node, edge, corridor, or another carrier.",
+        "Q-006 must define whether the native conserved node quantity is the field itself or only the substrate under an RCAE-owned field state."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-03",
+      "candidate_surface_id": "P2-I3-SURFACE-PACKET-FORMATION",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "schedule_packet_departure creates deterministic packet and event identities with explicit source, target, edge, amount, event-time, scheduler index, and optional lineage.",
+        "Departure debits source coherence and arrival credits target coherence while preserving the node-plus-in-flight budget.",
+        "Committed packet events and proper-time updates are retained in runtime state and event logs."
+      ],
+      "adequacy_inference": "Native packet transport can make repeated formation attributable and costly as a nonzero source debit or transfer. The retained carrier change is public substrate state rather than a private message, provided later response is not read from the packet address itself.",
+      "evidence_references": [
+        "P2-I3-SRC-009#schedule_lgrc9v3_packet_departure",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_departure",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_arrival",
+        "P2-I3-SRC-017#test_lgrc2_departure_arrival_cycle_round_trips_and_preserves_budget",
+        "P2-I3-SRC-022#test_departure_arrival_lifecycle_preserves_budget"
+      ],
+      "missing_or_unsuitable_distinction": "Using packet target, edge, lineage, or route label as the later response discriminator would be unsuitable. Only the deposited shared state may carry the later relation.",
+      "minimal_assistance_or_constructed_demand": "RCAE must separate formation-address metadata from the later probe input and audit that the later response consumes only allowed local carrier state.",
+      "restoration_coverage": "Packets, event queue, per-event records, node coherence, clocks, and logs are native restoration state.",
+      "open_questions": [
+        "I03 must define the exact formation episode and how its addressing data is excluded from later traversal."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-04",
+      "candidate_surface_id": "P2-I3-SURFACE-ORDERED-REPEATED-FORMATION",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "The packet ledger orders queued events deterministically by explicit event and scheduler identities.",
+        "Multiple packets may traverse one edge and repeated arrivals may update one target node.",
+        "Every packet and event retains independent canonical identifiers, timing, amount, endpoints, and lineage fields."
+      ],
+      "adequacy_inference": "More than one attributable formation event can update the same candidate carrier in deterministic order with reconstructible provenance.",
+      "evidence_references": [
+        "P2-I3-SRC-009#LGRC9V3PacketLedger",
+        "P2-I3-SRC-012#ordered_lgrc9v3_event_queue",
+        "P2-I3-SRC-017#test_lgrc2_multiple_packets_on_one_edge_have_deterministic_order",
+        "P2-I3-SRC-017#test_lgrc2_packet_ledger_orders_queue_events_deterministically"
+      ],
+      "missing_or_unsuitable_distinction": "Deterministic repeated transport is not by itself a non-static trail dynamic; the dynamic must be separately selected and measured.",
+      "minimal_assistance_or_constructed_demand": "RCAE must register the repetition count, spacing, attribution rule, and carrier update observation without inferring reinforcement merely from event count.",
+      "restoration_coverage": "The ordered queue, packet records, local updates, clocks, and event log are included in runtime restoration state.",
+      "open_questions": [
+        "Q-005 and Q-006 must select the non-static dynamic and exact update law."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-05",
+      "candidate_surface_id": "P2-I3-SURFACE-REPEATED-NODE-ACCUMULATION",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "Each committed packet arrival adds its positive amount to target-node coherence.",
+        "Repeated independently identified arrivals therefore produce activity-dependent accumulation on the same public node carrier.",
+        "The accumulation is budget-conserving transfer rather than source-free creation."
+      ],
+      "adequacy_inference": "The current runtime can express native reinforcement of a node-carried candidate through repeated activity. It does not provide a general reinforcement operator for arbitrary field carriers.",
+      "evidence_references": [
+        "P2-I3-SRC-009#process_lgrc9v3_packet_arrival",
+        "P2-I3-SRC-017#test_lgrc2_packet_arrival_credits_target_and_removes_in_flight",
+        "P2-I3-SRC-017#test_lgrc2_multiple_packets_on_one_edge_have_deterministic_order"
+      ],
+      "missing_or_unsuitable_distinction": "A static authored high-coherence route or post-hoc pheromone classifier would be unsuitable as formation evidence. Native reinforcement here is limited to repeated conserved packet transfer.",
+      "minimal_assistance_or_constructed_demand": "RCAE must expose reinforcement as a named registered relation over the selected carrier and distinguish it from merely scheduling a larger single deposit.",
+      "restoration_coverage": "Accumulated node coherence and all contributing packet events are native restoration state.",
+      "open_questions": [
+        "I03 must decide whether this conserved accumulation is sufficient for the minimum mode or whether an explicit field state is required."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-06",
+      "candidate_surface_id": "P2-I3-SURFACE-WITHDRAWAL-WITHOUT-DECAY",
+      "classification": "inadequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "Packet departure can withdraw coherence from a selected node by moving it into an in-flight packet.",
+        "Public GRC9V3.apply_continuity updates node coherence by minus dt times current flux divergence, and the synchronous GRC9V3.step invokes continuity within a full hybrid substrate step.",
+        "LGRC9V3 owns a deterministic event-queue step and explicitly does not call synchronous GRC9V3.step.",
+        "No public native operation autonomously decays a route-local carrier after formation traffic stops.",
+        "Pulse-substrate surface rows are passive evidence and explicitly do not mutate coherence or other support state."
+      ],
+      "adequacy_inference": "Native withdrawal and synchronous GRC coherence redistribution exist, but the compound capability is inadequate because no admitted operation integrates a route-local lifecycle with LGRC event time, and autonomous decay remains absent.",
+      "evidence_references": [
+        "P2-I3-SRC-004#GRC9V3.apply_continuity",
+        "P2-I3-SRC-004#GRC9V3.step",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_departure",
+        "P2-I3-SRC-011#LGRC9V3-runtime-boundary",
+        "P2-I3-SRC-008#LGRC9V3CausalPulseSubstrateSurfaceRow",
+        "P2-I3-SRC-023#scheduling/evidence-infrastructure-only-boundary"
+      ],
+      "missing_or_unsuitable_distinction": "Withdrawal is transfer to a declared target, not autonomous decay. Synchronous GRC continuity is a relevant native dynamic, but silently invoking the full hybrid step inside LGRC would obscure provider ownership, event ordering, and unrelated state effects.",
+      "minimal_assistance_or_constructed_demand": "I03 must either admit and explicitly compose a suitable native GRC evolution operation or construct the selected lifecycle. Either path needs declared units, update order, conservation or loss accounting, state effects, and snapshot identity; native packet withdrawal may remain the formation-withdrawal control.",
+      "restoration_coverage": "Native packet and GRC state are restorable. Any RCAE composition phase, dynamic policy, external clock, or constructed field state must enter the composite restoration identity.",
+      "open_questions": [
+        "Q-005 must select decay or another non-static dynamic.",
+        "Q-006 must define the loss destination or conservation rule."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-07",
+      "candidate_surface_id": "P2-I3-SURFACE-FIELD-LIFECYCLE-OPERATORS",
+      "classification": "absent",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "No in-scope public LGRC9V3 operation implements trail-field maintenance, saturation, bounded accumulation, or field leakage.",
+        "Budget bounds reject overdraw but do not cap a field or maintain it against decay.",
+        "Multi-basin merge/leakage controls concern topology/refinement evidence, not a route-local field lifecycle."
+      ],
+      "adequacy_inference": "The current source has no qualifying native field-lifecycle surface for maintenance, saturation, or leakage.",
+      "evidence_references": [
+        "P2-I3-SRC-009#packet-budget-validation",
+        "P2-I3-SRC-011#public-LGRC9V3-method-surface",
+        "P2-I3-SRC-008#multi-basin-merge-leakage-control-boundary"
+      ],
+      "missing_or_unsuitable_distinction": "A saturated test fixture, an overdraw rejection, or multi-basin leakage metric is not a saturation or leakage operation on a trail field.",
+      "minimal_assistance_or_constructed_demand": "RCAE must construct only the selected lifecycle functions actually needed by the primary realization, with explicit caps, costs, leakage destinations, and update ordering. It should not add every possible dynamic pre-emptively.",
+      "restoration_coverage": "No native lifecycle state exists to restore. Any selected lifecycle parameters and state must be included in the RCAE realization profile and continuation identity.",
+      "open_questions": [
+        "I03 must choose one primary non-static dynamic and justify whether maintenance or saturation is necessary now or remains a future alternative."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-08",
+      "candidate_surface_id": "P2-I3-SURFACE-LOCAL-TRAVERSAL-RESPONSE",
+      "classification": "inadequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "Native packet traversal is scheduled with explicit source, target, and edge identifiers.",
+        "Static causal_flux_routes and route-aspect producers require declared routes or addressed edges.",
+        "Feedback and pulse-substrate producers read committed evidence but still schedule explicitly addressed packet work; passive surface rows do not themselves alter traversal.",
+        "Native route arbitration ranks candidate topology events and is not a local packet-traversal response or semantic choice claim."
+      ],
+      "adequacy_inference": "Relevant scheduling and feedback infrastructure exists, but no public native operation lets a later probe encounter local carrier state and change traversal without an explicit route/address policy or outcome-writing producer.",
+      "evidence_references": [
+        "P2-I3-SRC-011#LGRC9V3.set_causal_flux_routes",
+        "P2-I3-SRC-011#LGRC9V3.set_feedback_coupled_pulse_producer",
+        "P2-I3-SRC-011#LGRC9V3.produce_events",
+        "P2-I3-SRC-018#test_existing_static_route_autonomy_is_not_d2_3_equivalent",
+        "P2-I3-SRC-022#test_feedback_surface_and_producer_schedule_via_packet_queue_only",
+        "P2-I3-SRC-025#route-arbitration-claim-boundary"
+      ],
+      "missing_or_unsuitable_distinction": "Using a global ranker, route label, target address, preselected sink, or producer that directly writes the desired outcome is unsuitable. The source is inadequate rather than wholly absent because native local-state evidence and scheduling boundaries are reusable.",
+      "minimal_assistance_or_constructed_demand": "RCAE needs a narrow declared local encounter policy that reads only the selected carrier at an opportunity boundary and hands one native packet scheduling request back to PyGRC. Its inputs, output, and no-route-label proof must be recorded.",
+      "restoration_coverage": "Native producer configurations and scheduled work are restored. The proposed local encounter policy and its state would remain RCAE-owned unless later naturalized.",
+      "open_questions": [
+        "Q-007 must define the local encounter factorization.",
+        "I03 must determine whether the minimal producer-assisted bridge can avoid explicit route identity as a causal input."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-09",
+      "candidate_surface_id": "P2-I3-SURFACE-STATE-HISTORY-SEPARATION",
+      "classification": "inadequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "LGRC9V3RuntimeState separately serializes base state, packet ledger, clocks, causal routes, event logs, local updates, pulse-surface rows, lineage records, and cached producer state.",
+        "Restoration identity is sensitive to queue, clock, ledger, route, topology-history, producer, and source-current surface changes.",
+        "set_state replaces a complete validated runtime state but there is no public field-specific state/history intervention API."
+      ],
+      "adequacy_inference": "Current and historical surfaces can be enumerated and restored, but native APIs do not construct a complete-state-matched history intervention or declare which history is causally active for a selected field realization.",
+      "evidence_references": [
+        "P2-I3-SRC-012#LGRC9V3RuntimeState",
+        "P2-I3-SRC-010#lgrc9v3_restoration_identity_v1",
+        "P2-I3-SRC-011#LGRC9V3.set_state",
+        "P2-I3-SRC-021#test_lgrc_queue_clock_ledger_route_topology_and_producer_sensitivity"
+      ],
+      "missing_or_unsuitable_distinction": "Audit lineage and passive evidence logs cannot be declared causally active merely because restoration identity includes them. Direct mutation of dataclass fields would be unsuitable as native intervention evidence.",
+      "minimal_assistance_or_constructed_demand": "RCAE needs a typed intervention builder over complete native snapshots plus explicitly owned constructed state. It must state which fields change, which remain identical, and which logs are evidence-only.",
+      "restoration_coverage": "Native continuation state is broad and sensitive. Any RCAE field state, intervention descriptor, and history-mode choice must be added to a composite restoration identity.",
+      "open_questions": [
+        "Q-008 must decide whether current state is sufficient or active history is load-bearing.",
+        "Q-015 must freeze the complete continuation identity."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-10",
+      "candidate_surface_id": "P2-I3-SURFACE-FIELD-CAUSAL-CONTROLS",
+      "classification": "inadequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "Native packet departure can withdraw carrier quantity under conserved accounting.",
+        "No public fixed-topology operation performs trace shuffle, false-trace insertion, field clamp, or route-local carrier relocation while preserving unrelated opportunity.",
+        "LGRC3 surface-lineage transport and topology-state reabsorption handle committed topology changes, not a state-matched fixed-topology relocation control."
+      ],
+      "adequacy_inference": "One control leg is native, while the causal-control family required by P2-I3 is not.",
+      "evidence_references": [
+        "P2-I3-SRC-009#process_lgrc9v3_packet_departure",
+        "P2-I3-SRC-011#surface-lineage-and-topology-reabsorption-methods",
+        "P2-I3-SRC-014#topology-lineage-transport"
+      ],
+      "missing_or_unsuitable_distinction": "Topology-lineage transport cannot be relabeled as fixed-topology trace relocation. Direct internal-state editing would be unsuitable and non-reconstructible as a native control.",
+      "minimal_assistance_or_constructed_demand": "RCAE needs explicit pure transformations over a frozen composite state for shuffle, false trace, clamp, and relocation, each with equality checks for every non-target field.",
+      "restoration_coverage": "Native withdrawal is restored. Constructed control transformations and composite before/after identities remain RCAE-owned.",
+      "open_questions": [
+        "I03 and I04 must assign separate stable control identities and exact evidence rules."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-11",
+      "candidate_surface_id": "P2-I3-SURFACE-DISTANCE-AND-RESPONSE-SEPARATION",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "GRC9V3State retains registered topology, geometric_length, base_conductance, flux_coupling, and temporal_delay as distinct fields.",
+        "Public LGRC timing functions compute geometric, functional, and causal shortest-path distances from distinct edge-cost inputs.",
+        "The shared shortest-path helper walks symmetric incident edges; these distance annotations are not a directed live-influence result.",
+        "Node proper time, packet event time, arrival eligibility, local updates, and node-state response are distinct live runtime observations.",
+        "RC-Distance v4 derives geometric and operational distance from coherence support and dynamics; it does not assert that PyGRC labels are the continuum objects or supply a runtime causal estimator."
+      ],
+      "adequacy_inference": "The source is adequate for keeping registered structure, three discrete distance families, runtime timing, and live response observation distinct. Experimental causal influence must still be estimated by a registered intervention contrast rather than read from a distance label.",
+      "evidence_references": [
+        "P2-I3-SRC-005#GRC9V3State",
+        "P2-I3-SRC-013#compute_lgrc9v3_geometric_distances",
+        "P2-I3-SRC-013#compute_lgrc9v3_functional_distances",
+        "P2-I3-SRC-013#compute_lgrc9v3_causal_distances",
+        "P2-I3-SRC-017#test_three_distance_surfaces_are_not_conflated",
+        "P2-I3-SRC-027#Sections-4-5-and-10"
+      ],
+      "missing_or_unsuitable_distinction": "PyGRC shortest-path annotations are not automatically the induced continuum metric or operational distance of RC-Distance v4. The current symmetric causal-distance annotation is not directed packet influence, and a distance change is not experimental causal influence without intervention and response evidence.",
+      "minimal_assistance_or_constructed_demand": "RCAE must register a five-surface metric sheet: structure, geometric distance, functional distance, causal/proper-time distance, and experimental response, with explicit unavailable or annotation-only dispositions where appropriate.",
+      "restoration_coverage": "Native edge labels, clocks, packet events, and response state are restored. Derived metric sheets and intervention-response estimates remain RCAE analysis artifacts.",
+      "open_questions": [
+        "Q-010 must select measured, annotation-only, inapplicable, and unavailable statuses for each surface."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-12",
+      "candidate_surface_id": "P2-I3-SURFACE-PARTICIPANT-EPISODE-IDENTITY",
+      "classification": "inadequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "Packets have source and target node identities plus optional source and target lineage IDs.",
+        "Runtime logs distinguish packets, events, nodes, and topology lineage.",
+        "No public primitive separately represents depositor participant, fresh nondepositor probe, alternate eligibility, and direct-address exclusion as one episode contract."
+      ],
+      "adequacy_inference": "Native identities can support attribution, but participant-role separation and the fresh-probe/no-address condition require a lane-local episode contract.",
+      "evidence_references": [
+        "P2-I3-SRC-009#LGRC9V3PacketRecord",
+        "P2-I3-SRC-009#create_lgrc9v3_packet_record",
+        "P2-I3-SRC-012#LGRC9V3RuntimeState"
+      ],
+      "missing_or_unsuitable_distinction": "Packet endpoint or lineage identity is not automatically participant identity. Encoding the desired route in the probe address would be unsuitable.",
+      "minimal_assistance_or_constructed_demand": "RCAE needs an immutable participant-episode manifest that maps roles to native node/lineage identities and proves the later probe receives no depositor-private or route-label input.",
+      "restoration_coverage": "Native node, packet, and lineage identities are restored. Participant-role manifests and eligibility assignments remain RCAE-owned registration state.",
+      "open_questions": [
+        "I03 must define participant carrier, depositor/probe episodes, and direct-address exclusion."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-13",
+      "candidate_surface_id": "P2-I3-SURFACE-NATIVE-RESTORATION",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "LGRC9V3 exposes from_state, load, get_state, set_state, reset, rebase_reset_baseline, snapshot, and save through public surfaces.",
+        "Snapshot payloads contain embedded GRC9V3 state, full LGRC runtime state, observables, events, and reset-baseline identity.",
+        "Restoration identity v1 covers current state and v2 covers both current state and reset baseline.",
+        "Pre-existing tests verify repeated load fixed points, continuation, and sensitivity to queue, clock, ledger, route, topology, producer, and surface changes."
+      ],
+      "adequacy_inference": "Native state and restoration coverage are strong enough to anchor branching and equal-input continuation, provided every RCAE-owned field, policy, and intervention is separately included in the composite identity.",
+      "evidence_references": [
+        "P2-I3-SRC-002#GRCModel",
+        "P2-I3-SRC-010#lgrc9v3_restoration_identity_v1",
+        "P2-I3-SRC-010#lgrc9v3_restoration_identity_v2",
+        "P2-I3-SRC-011#LGRC9V3.snapshot",
+        "P2-I3-SRC-011#LGRC9V3.load",
+        "P2-I3-SRC-020#public-restoration-tests",
+        "P2-I3-SRC-021#restoration-sensitivity-matrix",
+        "P2-I3-SRC-022#native-runtime-snapshot-continuation-tests"
+      ],
+      "missing_or_unsuitable_distinction": "Native restoration cannot cover a future RCAE object that is not included in the registered composite snapshot. Reconstructing only PyGRC while silently regenerating a field policy would be inadequate.",
+      "minimal_assistance_or_constructed_demand": "RCAE must wrap native restoration identity with exact hashes and serialization for every constructed carrier, dynamic, intervention, and participant-role artifact.",
+      "restoration_coverage": "Native coverage is adequate and reset-baseline aware; external constructed state remains explicitly outside it until composite registration.",
+      "open_questions": [
+        "Q-015 must enumerate the final composite identity and equal-input continuation checks."
+      ]
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-14",
+      "candidate_surface_id": "P2-I3-SURFACE-AUDIT-COVERAGE",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "All fifteen frozen capability questions have one exact classification and evidence-separated record.",
+        "All ten frozen operation requirements have one exact classification and ownership record.",
+        "Every cited source is bound to one frozen revision, repository-relative path, and SHA-256 digest."
+      ],
+      "adequacy_inference": "The I01 package satisfies the frozen audit-coverage requirement without converting inference into public fact.",
+      "evidence_references": [
+        "P2-I3-I01-CAPABILITY-MATRIX",
+        "P2-I3-I01-OPERATION-DISPOSITIONS",
+        "P2-I3-I01-SOURCE-DIGESTS"
+      ],
+      "missing_or_unsuitable_distinction": "Audit completeness is not source admission or realization adequacy. A complete matrix may validly contain inadequate or absent capabilities.",
+      "minimal_assistance_or_constructed_demand": "None for I01 coverage. Later iterations must consume the classifications without silently upgrading them.",
+      "restoration_coverage": "Not a runtime-state claim; audit artifacts are retained as repository evidence.",
+      "open_questions": []
+    },
+    {
+      "capability_question_id": "P2-I3-CAP-15",
+      "candidate_surface_id": "P2-I3-SURFACE-MINIMAL-DEMAND-SUMMARY",
+      "classification": "adequate",
+      "evidence_class": "public_source_fact",
+      "public_source_facts": [
+        "The native shortlist covers topology, a node-coherence carrier candidate, attributable repeated packet transfer, discrete distance/timing surfaces, and complete restoration.",
+        "The principal missing surfaces are a non-static field lifecycle, a compliant local carrier-to-traversal response, field-specific state/history interventions, participant-role separation, and fixed-topology relocation controls.",
+        "Post-hoc landscape pheromone inference classifies observed paths and emits seed markers; it is not a live carrier or dynamics implementation."
+      ],
+      "adequacy_inference": "The smallest plausible future RCAE assistance is a narrow field-lifecycle and local-encounter layer over native PyGRC topology, packet transport, clocks, and restoration—not a copied runtime or a second routing system.",
+      "evidence_references": [
+        "P2-I3-SRC-009#native-packet-transfer",
+        "P2-I3-SRC-011#native-runtime-boundary",
+        "P2-I3-SRC-013#distance-surfaces",
+        "P2-I3-SRC-015#infer_landscape_pheromone_seed",
+        "P2-I3-SRC-023#scheduling-evidence-only-boundary"
+      ],
+      "missing_or_unsuitable_distinction": "The demand summary does not select node coherence, an equation, or a producer. It excludes post-hoc classifiers, global rankers, copied PyGRC behavior, and direct outcome writers from the primary causal role.",
+      "minimal_assistance_or_constructed_demand": "Later I03 may consider: one explicit route-local field state/update law; one pure intervention layer; one local encounter adapter that issues native scheduling requests; and one composite restoration wrapper. Only demonstrated necessities should be implemented.",
+      "restoration_coverage": "Native state remains PyGRC-owned; every added RCAE component must have an explicit realization profile, version, digest, and composite restoration identity.",
+      "open_questions": [
+        "Q-003 through Q-008 remain intentionally open for I03 after exact source admission."
+      ]
+    }
+  ],
+  "native_shortlist": [
+    "Registered PyGRC port topology and route validation",
+    "Route-exclusive intermediate-node coherence as a carrier candidate",
+    "Deterministic budget-conserving packet formation and reinforcement",
+    "Distinct geometric, functional, causal, and proper-time annotations",
+    "Complete native snapshot, load, reset, and restoration identity"
+  ],
+  "classified_missing_or_inadequate_surfaces": [
+    "Autonomous field decay and selected non-static lifecycle",
+    "Maintenance, saturation, and leakage operators",
+    "Local carrier-to-traversal response without labels, addresses, or global ranking",
+    "Complete-state-matched history and field intervention API",
+    "Shuffle, false-trace, clamp, and fixed-topology relocation controls",
+    "Participant-role and fresh-probe episode contract"
+  ],
+  "claim_boundary": "This matrix is a source-current audit. It does not admit a source, select a carrier or equation, authorize conformance or candidate execution, or support or refute AE01-H-L03."
+}

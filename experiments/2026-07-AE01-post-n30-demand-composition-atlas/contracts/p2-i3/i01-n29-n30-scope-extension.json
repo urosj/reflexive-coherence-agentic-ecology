@@ -1,0 +1,48 @@
+{
+  "artifact_id": "P2-I3-I01-N29-N30-SCOPE-EXTENSION",
+  "artifact_version": "1.0.0",
+  "status": "completed",
+  "iteration_id": "P2-I3-I01",
+  "change_id": "P2-I3-CHG-012",
+  "parent_input_freeze_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+  "authorized_at": "2026-07-16",
+  "trigger": "Owner direction to examine the graph repository N29 and N30 experiments thoroughly for mechanisms relevant to P2-I3 before closing I01.",
+  "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "read_only_required": true,
+  "added_scope": [
+    "experiments/N20-N29-LGRC-BecomingAgencyEcologyRoadmap.md",
+    "experiments/2026-06-N29-lgrc-agentic-ecology-convergence-bridge/**",
+    "experiments/2026-07-N30-lgrc-minimal-shared-medium-participation/**"
+  ],
+  "audit_questions": [
+    "Which N29 or N30 runtime, producer, carrier, trace, pressure, persistence, decay, reinforcement, relocation, replay, and control mechanisms are relevant to the P2-I3 causal kernel?",
+    "Which mechanisms call current public PyGRC surfaces, which remain experiment-local constructions, and which are evidence or interpretation only?",
+    "Which mechanisms alter the existing capability or operation dispositions, and which instead become bounded I02/I03 alternatives or warnings?",
+    "What exact experiment files and retained outputs support each finding?"
+  ],
+  "evidence_effect": "Source-current experiment-mechanism audit only. Experiment-local scripts and outputs cannot upgrade a public PyGRC capability to native, cannot be admitted automatically, and provide no P2-I3 scientific evidence.",
+  "classification_boundary": {
+    "public_pygrc_surface": "May affect a native capability disposition only when the mechanism resolves to a qualifying public surface at the frozen graph revision.",
+    "experiment_local_mechanism": "May become an I02/I03 constructed or producer-assisted alternative, with its original claim limits retained.",
+    "retained_experiment_evidence": "May establish what N29/N30 executed or classified, but not what P2-I3 has executed.",
+    "interpretive_or_debt_record": "May guide demand extraction but cannot establish runtime adequacy."
+  },
+  "allowed_activity": [
+    "Read-only filename and term searches over the added tracked paths.",
+    "Read-only inspection of plans, checklists, hypotheses, reports, scripts, configs, and retained JSON outputs.",
+    "Exact SHA-256 binding of every added file cited in the final I01 package.",
+    "Targeted static reconstruction of mechanism ownership and public-call paths without executing an N29/N30 candidate."
+  ],
+  "prohibited_activity": [
+    "Writing to or rerunning either external experiment.",
+    "Treating an experiment-local producer, fixture, adapter, or derived artifact as a native PyGRC surface.",
+    "Selecting the P2-I3 carrier, dynamic, equation, response, or realization.",
+    "Using N29/N30 outcomes as P2-I3 candidate, calibration, registration, or scientific evidence."
+  ],
+  "required_outputs": [
+    "A machine-readable N29/N30 mechanism inventory with exact ownership and relevance dispositions.",
+    "Exact added source digests and command provenance.",
+    "A narrative audit section stating what changes and what does not change in I01."
+  ],
+  "rerun_scope": "No existing candidate or scientific run. Revalidate the expanded I01 matrices, digests, narrative, provenance, quarantine, and external-checkout integrity after the read-only examination."
+}

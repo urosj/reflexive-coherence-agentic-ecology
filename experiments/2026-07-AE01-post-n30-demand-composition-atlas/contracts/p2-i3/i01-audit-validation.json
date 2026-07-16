@@ -1,0 +1,180 @@
+{
+  "artifact_id": "P2-I3-I01-AUDIT-VALIDATION",
+  "artifact_version": "1.0.0",
+  "status": "accepted",
+  "iteration_id": "P2-I3-I01",
+  "lane_id": "AE01-L03",
+  "validation_result": "passed",
+  "gate": {
+    "gate_id": "P2-I3-SOURCE-AUDIT-GATE",
+    "status": "passed",
+    "acceptance_decision_id": "P2-I3-DEC-018",
+    "remaining_action": null
+  },
+  "input_authority": {
+    "artifact_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+    "status": "accepted_frozen",
+    "acceptance_decision_id": "P2-I3-DEC-016",
+    "sha256": "109deafa964467da01dbaeb2d62d65177f034c3dd8e4f8a7da9d4a973de1180a",
+    "predated_capability_classification": true
+  },
+  "owner_directed_scope_extensions": [
+    {
+      "artifact_id": "P2-I3-I01-N29-N30-SCOPE-EXTENSION",
+      "change_id": "P2-I3-CHG-012",
+      "sha256": "bf5819955b932f0dd9e73047b3dcf87590e31584016b003ecd4da9c12418bfee"
+    },
+    {
+      "artifact_id": "P2-I3-I01-PREDECESSOR-SCOPE-EXTENSION",
+      "change_id": "P2-I3-CHG-013",
+      "decision_id": "P2-I3-DEC-017",
+      "sha256": "b61b1528dc75a0a1352a105d70237b7972d77d3e272eb80d998c95aaa68f8f8a"
+    }
+  ],
+  "environment": {
+    "preflight_status": "passed_after_owner_authorized_pytest_installation",
+    "python": "3.12.3",
+    "packages": {
+      "matplotlib": "3.11.0",
+      "networkx": "3.6.1",
+      "pyvis": "0.3.2",
+      "PyYAML": "6.0.3",
+      "jsonschema": "4.26.0",
+      "pytest": "9.1.1",
+      "iniconfig": "2.3.0",
+      "pluggy": "1.6.0"
+    },
+    "global_python_used": false,
+    "ambient_pygrc_installation_used": false,
+    "checkout_import_forced": true
+  },
+  "coverage": {
+    "capability_question_expected": 15,
+    "capability_question_actual": 15,
+    "capability_question_ids_unique": true,
+    "capability_required_fields_complete": true,
+    "operation_expected": 10,
+    "operation_actual": 10,
+    "operation_ids_unique": true,
+    "operation_required_fields_complete": true,
+    "classifications_within_frozen_vocabulary": true,
+    "evidence_classes_within_frozen_vocabulary": true,
+    "public_facts_separated_from_adequacy_inference": true,
+    "minimal_demand_recorded_for_missing_or_inadequate_surfaces": true,
+    "source_reference_count": 27,
+    "source_paths_repository_relative": true,
+    "source_digests_complete": true,
+    "n29_n30_mechanism_record_count": 12,
+    "n29_n30_exact_source_count": 32,
+    "predecessor_mechanism_record_count": 14,
+    "predecessor_exact_source_count": 44,
+    "predecessor_source_digests_recomputed": true,
+    "native_classifications_preserved": true,
+    "producer_completion_feasibility_separate_from_native_classification": true,
+    "n29_treated_as_index_not_transitive_substitute": true,
+    "candidate_surface_ids_declared_as_audit_targets_not_existence_claims": true,
+    "cap_14_and_cap_15_meta_roles_declared": true,
+    "op_07_nearest_nonqualifying_callables_distinguished_from_empty_qualifying_set": true,
+    "producer_precedent_legend_complete_for_capability_summary": true
+  },
+  "test_execution": {
+    "invocation_count": 6,
+    "passed": 24,
+    "deselected": 333,
+    "failed": 0,
+    "errors": 0,
+    "cache_provider_disabled": true,
+    "bytecode_disabled": true,
+    "temporary_output_only": true,
+    "preexisting_generic_tests_only": true
+  },
+  "checkout_integrity": {
+    "graph_revision_before": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_revision_after": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+    "graph_worktree_before": "clean",
+    "graph_worktree_after": "clean",
+    "theory_revision_before": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+    "theory_revision_after": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+    "theory_worktree_before": "clean",
+    "theory_worktree_after": "clean",
+    "external_source_mutation_performed": false
+  },
+  "quarantine": {
+    "synthetic_probe_authorized": false,
+    "synthetic_probe_executed": false,
+    "candidate_shaped_behavior_executed": false,
+    "source_admitted": false,
+    "realization_selected": false,
+    "conformance_fixture_executed": false,
+    "calibration_executed": false,
+    "candidate_execution_performed": false,
+    "lane_support_or_refutation_assigned": false,
+    "scientific_evidence_effect": false
+  },
+  "output_digests": [
+    {
+      "artifact_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-capability-audit-input-freeze.json",
+      "sha256": "109deafa964467da01dbaeb2d62d65177f034c3dd8e4f8a7da9d4a973de1180a"
+    },
+    {
+      "artifact_id": "P2-I3-I01-CAPABILITY-MATRIX",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-capability-matrix.json",
+      "sha256": "b3e4de5abbfc7459a4237fa19ce215e11425316a549326bb251077dc2ff2ba08"
+    },
+    {
+      "artifact_id": "P2-I3-I01-OPERATION-DISPOSITIONS",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-operation-dispositions.json",
+      "sha256": "78fc64d85318653f1969a710833572a4472965ca7a5b588650335e4363b71ac4"
+    },
+    {
+      "artifact_id": "P2-I3-I01-SOURCE-DIGESTS",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-source-digests.json",
+      "sha256": "cdf914a1c496fa13215c5a6cedb7fded9d689bd805f3f554015abc37b455c94e"
+    },
+    {
+      "artifact_id": "P2-I3-I01-N29-N30-SCOPE-EXTENSION",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-n29-n30-scope-extension.json",
+      "sha256": "bf5819955b932f0dd9e73047b3dcf87590e31584016b003ecd4da9c12418bfee"
+    },
+    {
+      "artifact_id": "P2-I3-I01-N29-N30-MECHANISM-INVENTORY",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-n29-n30-mechanism-inventory.json",
+      "sha256": "4eab3a414ed50cc411018aa004c10b36f6c58040e0cb69c0713d5e26d1cd8920"
+    },
+    {
+      "artifact_id": "P2-I3-I01-PREDECESSOR-SCOPE-EXTENSION",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-predecessor-scope-extension.json",
+      "sha256": "b61b1528dc75a0a1352a105d70237b7972d77d3e272eb80d998c95aaa68f8f8a"
+    },
+    {
+      "artifact_id": "P2-I3-I01-PREDECESSOR-MECHANISM-LINEAGE",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-predecessor-mechanism-lineage.json",
+      "sha256": "84e82d5b28b017e437a8bd19ba8b7a80d6b37fe94bca707394efc3f759d91769"
+    },
+    {
+      "artifact_id": "P2-I3-I01-NARRATIVE-AUDIT",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I01-source-current-capability-audit.md",
+      "sha256": "435b705b3c940e36f7c86cae41ffaa35ddc5e53b954213cf86e11bbe5290e698"
+    },
+    {
+      "artifact_id": "P2-I3-I01-COMMAND-PROVENANCE",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I01-command-provenance.md",
+      "sha256": "f09b380b8d6403cc33c10db52ace2eaffbd259da883460a87be8a306d2f71e8e"
+    }
+  ],
+  "exit_requirements": {
+    "accepted_freeze_predates_classification": true,
+    "all_capabilities_and_operations_resolved": true,
+    "exact_revisions_paths_digests_imports_and_commands_retained": true,
+    "facts_and_inferences_separated": true,
+    "native_shortlist_or_absence_retained": true,
+    "relevant_predecessor_lineage_retained": true,
+    "producer_completion_does_not_upgrade_native_classification": true,
+    "native_absence_not_treated_as_scientific_blocker": true,
+    "naturalization_debt_preserved": true,
+    "external_checkouts_unchanged_and_clean": true,
+    "later_authority_not_assigned": true
+  },
+  "claim_boundary": "Validation plus owner acceptance establishes I01 audit-package completeness and passes only the source-audit gate. It does not admit a source, select a realization, or create scientific evidence."
+}

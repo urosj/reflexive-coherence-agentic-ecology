@@ -94,6 +94,8 @@ This repository is intended for:
   for the method that turns those concepts into bounded evidence.
 - Read the [AE01 Agentic-Ecology View](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
   for the current P2-I1, P2-I2, and appendix results and their limits.
+- Read the [P2-I3 to N31 decay-primitive handoff](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
+  for the active graph/ecology spiral boundary and exact return procedure.
 
 ## What this repository is
 
@@ -123,6 +125,15 @@ A operation-complementarity result, and an accepted Appendix B terminal-P
 temporal discriminator. These results do not establish an admitted ecology
 primitive or a complete agentic ecology; AE01 remains at `AE01-C2`, with
 L03–L07 and cross-lane synthesis unexecuted.
+
+P2-I3 has nevertheless advanced through pre-execution source and realization-
+design work. Its source-audit and source-admission gates passed; Q-003/Q-004
+selected the provisional node carrier and mixed native/RCAE ownership
+available before a decay primitive was defined. The Q-005 study then showed
+that release attenuation, conserved leakage, and susceptibility relaxation
+are different substrate meanings. DEC-023 therefore pauses P2-I3 and hands
+that primitive question to graph-project N31. This is a demand and
+continuation state, not an L03 result or native decay evidence.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -183,8 +194,10 @@ and shared-medium participation before implementation claims are made.
   AE01 workspace remains at `AE01-C2`. P2-I1 is closed with an accepted bounded
   L01 result. P2-I2 is closed with an accepted 234-entry L02 main result,
   independent reconstruction, an Appendix A operation-complementarity result,
-  and an Appendix B terminal-P temporal discriminator. L03–L07 and cross-lane
-  synthesis remain unexecuted. New readers can begin with the
+  and an Appendix B terminal-P temporal discriminator. P2-I3 has passed its
+  source audit/admission work and is intentionally paused at Q-005 under the
+  N31 decay-primitive handoff; no L03 candidate has executed. L04–L07 and
+  cross-lane synthesis remain unexecuted. New readers can begin with the
   [general experiment bridge](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
   and then read the
   [AE01-specific view](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).

@@ -148,13 +148,74 @@ Appendices A and B as dormant topology extensions, and defers Appendix C.
 The initial [P2-I3 checklist](P2-I3-trail-or-stigmergic-field-checklist.md)
 and [cumulative decision record](P2-I3-decision-record.md) are owner-accepted,
 and `P2-I3-BRIEF-GATE` has passed.
-They make I00–I11, twenty open implementation questions, environment
-completeness, evidence-responsive expansion, and explicit gate ownership
-visible without answering those questions prematurely. The accepted
-proportionality and repetition decisions default to one realization plus one
-complete-state-matched history discriminator and define repeated formation as
-at least two attributable events while deferring exact values. Brief
+They originally assign twenty implementation questions across I00–I11 and
+make environment completeness, evidence-responsive expansion, and explicit
+gate ownership visible without answering those questions prematurely. The
+accepted proportionality and repetition decisions default to one realization
+plus one complete-state-matched history discriminator and define repeated
+formation as at least two attributable events while deferring exact values. Brief
 acceptance and governance construction assign no source admission, runtime
 realization, calibration, registration, execution authority, or L03 evidence.
-Only I01 capability-audit input-freeze construction and review are open; the
-audit remains unauthorized until Q-001 and the freeze are accepted.
+Q-001 and the exact I01 input freeze are accepted through DEC-016. DEC-017
+adds the native-priority/producer-completion rule: absent or inadequate native
+coverage is recorded honestly but does not block a correct experiment when a
+bounded RCAE-owned producer can preserve the causal requirement. The frozen
+read-only audit has completed, passed grounded artifact review through
+DEC-018, and is accepted. `P2-I3-SOURCE-AUDIT-GATE` is passed. The accepted
+[I02 admission report](../reports/P2-I3-I02-exact-source-admission.md),
+[source manifest](../contracts/p2-i3/i02-source-admission-manifest.json), and
+[validation result](../contracts/p2-i3/i02-admission-validation.json) now make
+the exact identities and roles reconstructible. DEC-019 resolves Q-002,
+passes the source-admission gate, and opens only I03 realization questions.
+DEC-020 narrows the eligible substrate before admission: the core realization
+must use LGRC9V3. GRC9V3 class/continuity/step identities remain available only
+for a separately governed comparative result and cannot replace or bridge an
+LGRC9V3 implementation.
+
+The accepted
+[I01 capability-audit input freeze](../contracts/p2-i3/i01-capability-audit-input-freeze.json)
+contains fifteen capability questions, ten operation dispositions, exact
+read-only source identities, and a strict public-source/synthetic/
+candidate-shaped evidence separation. Synthetic probes are disabled by
+default. The resulting [capability matrix](../contracts/p2-i3/i01-capability-matrix.json),
+[operation dispositions](../contracts/p2-i3/i01-operation-dispositions.json),
+[source digests](../contracts/p2-i3/i01-source-digests.json),
+[N29/N30 mechanism inventory](../contracts/p2-i3/i01-n29-n30-mechanism-inventory.json),
+[predecessor mechanism lineage](../contracts/p2-i3/i01-predecessor-mechanism-lineage.json),
+[narrative audit](../reports/P2-I3-I01-source-current-capability-audit.md), and
+[command provenance](../reports/P2-I3-I01-command-provenance.md) are retained
+with machine validation. They identify native topology, node-coherence,
+packet, timing, and restoration surfaces plus missing field lifecycle,
+field-intervention, participant-role, and local traversal-response surfaces.
+The predecessor lineage separates native classification from producer
+feasibility: N05/N09 supply request-producer patterns, N08 supplies the field-
+lifecycle precursor and native gap, and N22 supplies a declared-state producer
+with native snapshot/reentry/control discipline.
+DEC-015 makes review correction-driven without weakening gate or execution
+authority. DEC-018 records the accepted I01 package and source-audit gate
+passage. The accepted I02 bundle binds 26 graph files, 40 callables, 24 exact tests,
+eight theory/method files, and 76 exact grouped precedent sources. It also
+records the prospective RCAE-paper identity transitions and the explicit
+RCAE-producer/PyGRC non-mutation boundary. The bounded CHG-017 correction also
+marks synchronous GRC9V3 evolution comparative-only while retaining
+GRC9V3State as LGRC9V3's public base-state type. The source-admission gate is
+passed, but no realization or scientific result is assigned.
+
+I03 then selected route-exclusive intermediate-node coherence as the
+provisional minimum carrier through DEC-021 and classified its mixed
+native-LGRC/RCAE operation ownership through DEC-022. Those decisions did not
+select a lifecycle law. The retained
+[Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md)
+shows that release-efficacy attenuation, coherence-conserving source leakage,
+and route-susceptibility relaxation are distinct causal ontologies with
+different carrier, topology, invariant, restoration, and claim contracts.
+
+DEC-023 therefore supersedes the provisional plan to implement two RCAE decay
+realizations before either was built. P2-I3 is intentionally paused at Q-005
+under the accepted
+[N31 decay-primitive handoff and return contract](P2-I3-N31-decay-primitive-handoff.md).
+N31 may select one primitive, distinct multiple primitives, a producer-only
+candidate, no primitive, or a new taxonomy. On return, P2-I3 must reconstruct
+and admit the exact graph revision, explicitly retain or reopen DEC-021/022,
+resolve Q-005, and continue Q-006 through Q-008 in order. No I03 conformance,
+calibration, registration, candidate execution, or L03 result exists yet.

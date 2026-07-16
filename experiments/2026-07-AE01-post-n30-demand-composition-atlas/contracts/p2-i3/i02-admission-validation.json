@@ -1,0 +1,55 @@
+{
+  "artifact_id": "P2-I3-I02-ADMISSION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "checks": {
+    "evidence_class_separation": "passed",
+    "external_checkouts_clean": "passed",
+    "lgrc9v3_substrate_authority": "passed",
+    "no_realization_or_scientific_effect": "passed",
+    "portable_identities": "passed",
+    "predecessor_experiment_visibility": "passed",
+    "preexisting_test_identities": "passed",
+    "public_callable_identities": "passed",
+    "source_digests": "passed",
+    "source_role_completeness": "passed",
+    "source_transitions": "passed",
+    "validator_identity": "passed"
+  },
+  "claim_boundary": {
+    "candidate_or_control_executed": false,
+    "grc9v3_substitution_authorized": false,
+    "pygrc_transition_invoked": false,
+    "realization_selected": false,
+    "scientific_evidence_produced": false,
+    "source_admission_accepted": true,
+    "source_admission_gate_passed": true,
+    "source_admission_proposed": true
+  },
+  "counts": {
+    "evidence_classes": 5,
+    "frozen_i01_inputs": 9,
+    "graph_sources": 26,
+    "grouped_graph_sources": 76,
+    "grouped_source_inventories": 2,
+    "preexisting_tests": 24,
+    "public_callables": 40,
+    "source_transitions": 4,
+    "theory_sources": 8
+  },
+  "iteration_id": "P2-I3-I02",
+  "manifest_sha256": "c1194085c6a55e783ce739f5a22a75e89b9eb1ab237f6bec3199853426ab343f",
+  "manifest_status": "accepted",
+  "repository_checks": {
+    "geometric_theory": {
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "worktree": "clean"
+    },
+    "graph": {
+      "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "worktree": "clean"
+    },
+    "rcae_revision_available": true
+  },
+  "validation_result": "passed",
+  "validator_sha256": "abe0e467429ce81b262be0d438d25e423087a1a6fd79d381a94699702a560ec8"
+}

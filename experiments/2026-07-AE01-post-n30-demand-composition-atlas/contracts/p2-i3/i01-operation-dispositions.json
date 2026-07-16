@@ -1,0 +1,272 @@
+{
+  "artifact_id": "P2-I3-I01-OPERATION-DISPOSITIONS",
+  "artifact_version": "1.0.0",
+  "status": "accepted",
+  "iteration_id": "P2-I3-I01",
+  "input_freeze_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+  "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "classification_summary": {
+    "adequate": 6,
+    "inadequate": 1,
+    "absent": 3,
+    "unsuitable": 0,
+    "unresolved": 0
+  },
+  "producer_completion_policy": {
+    "authority": "P2-I3-DEC-017",
+    "native_priority": "Use an adequate public PyGRC operation when it preserves the exact registered causal function.",
+    "fallback": "When native support is absent, inadequate, or unsuitable, use the smallest explicit RCAE-owned request producer or declared-state producer that preserves the experiment.",
+    "claim_boundary": "Producer feasibility never upgrades the native classification and does not select an operation, equation, carrier, or realization in I01.",
+    "source_lineage_artifact": "P2-I3-I01-PREDECESSOR-MECHANISM-LINEAGE"
+  },
+  "producer_completion_dispositions": [
+    {"operation_id":"P2-I3-OP-01","status":"native_preferred","precedents":["P2-I3-PM-010"],"condition":"Selected carrier can be formed by native packet transfer without changing its semantics."},
+    {"operation_id":"P2-I3-OP-02","status":"native_preferred_for_node_accumulation_otherwise_producer","precedents":["P2-I3-PM-001","P2-I3-PM-005"],"condition":"I03 must bind the selected reinforcement variable and update law."},
+    {"operation_id":"P2-I3-OP-03","status":"native_preferred_for_conserved_withdrawal","precedents":["P2-I3-PM-004","P2-I3-PM-010"],"condition":"The registered control must name the destination and preserve matched opportunity."},
+    {"operation_id":"P2-I3-OP-04","status":"producer_required_if_selected","precedents":["P2-I3-PM-004","P2-I3-PM-005","P2-I3-PM-011"],"condition":"Freeze equation, units, update order, conservation or loss accounting, restoration identity, and no-activity behavior."},
+    {"operation_id":"P2-I3-OP-05","status":"producer_required_if_selected","precedents":["P2-I3-PM-001","P2-I3-PM-005","P2-I3-PM-007"],"condition":"Maintenance must be a charged response to the selected loss dynamic, not repeated deposits renamed maintenance."},
+    {"operation_id":"P2-I3-OP-06","status":"producer_required_if_selected","precedents":["P2-I3-PM-005"],"condition":"A registered field cap or response nonlinearity must be distinct from source-budget rejection."},
+    {"operation_id":"P2-I3-OP-07","status":"constructed_control_required_if_selected","precedents":["P2-I3-PM-011"],"condition":"Use a typed fixed-topology state transformation and prove equality of every non-target field; topology-lineage transport remains unsuitable."},
+    {"operation_id":"P2-I3-OP-08","status":"native_plus_composite_wrapper","precedents":["P2-I3-PM-010","P2-I3-PM-011"],"condition":"Include every RCAE-owned field, producer, policy, and intervention object."},
+    {"operation_id":"P2-I3-OP-09","status":"native_plus_composite_wrapper","precedents":["P2-I3-PM-010","P2-I3-PM-011"],"condition":"Reconstruct both native and RCAE-owned state before equal continuation."},
+    {"operation_id":"P2-I3-OP-10","status":"native_plus_composite_wrapper","precedents":["P2-I3-PM-010","P2-I3-PM-011"],"condition":"Reset must be atomic across the composite state or fail closed."}
+  ],
+  "records": [
+    {
+      "operation_id": "P2-I3-OP-01",
+      "operation": "form",
+      "classification": "adequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.schedule_packet_departure",
+        "pygrc.models.LGRC9V3.step",
+        "pygrc.models.prime_lgrc9v3_packet_departures"
+      ],
+      "ownership": "native_pygrc_packet_transfer_over_candidate_node_carrier",
+      "declared_state_effects": [
+        "A committed departure debits source-node coherence and creates in-flight packet state.",
+        "A committed arrival credits target-node coherence and records packet, event, timing, and budget provenance.",
+        "Topology is unchanged in LGRC2 fixed-topology operation."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-007#prime_lgrc9v3_packet_departures",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_departure",
+        "P2-I3-SRC-009#process_lgrc9v3_packet_arrival",
+        "P2-I3-SRC-017#packet-departure-arrival-tests"
+      ],
+      "missing_or_unsuitable_distinction": "Adequacy is limited to forming a node-carried candidate by conserved transfer. Static authored state or a post-hoc marker is not formation.",
+      "open_questions": [
+        "I03 must decide whether the selected field is identical to node coherence or only coupled to it."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-02",
+      "operation": "reinforce",
+      "classification": "adequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.schedule_packet_departure",
+        "pygrc.models.LGRC9V3.step"
+      ],
+      "ownership": "native_pygrc_repeated_arrival_accumulation",
+      "declared_state_effects": [
+        "Each additional committed arrival adds its amount to the same target-node coherence.",
+        "Each addition remains separately attributable through packet and event identities.",
+        "Accumulation is budget-conserving transfer, not source-free growth."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-009#process_lgrc9v3_packet_arrival",
+        "P2-I3-SRC-017#test_lgrc2_multiple_packets_on_one_edge_have_deterministic_order",
+        "P2-I3-SRC-017#test_lgrc2_packet_arrival_credits_target_and_removes_in_flight"
+      ],
+      "missing_or_unsuitable_distinction": "There is no general native reinforcement callable for arbitrary field state. This disposition applies only to repeated native node-state transfer.",
+      "open_questions": [
+        "I03 must name the reinforcement variable and rule explicitly."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-03",
+      "operation": "withdraw",
+      "classification": "adequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.schedule_packet_departure",
+        "pygrc.models.LGRC9V3.step"
+      ],
+      "ownership": "native_pygrc_packet_departure_debit",
+      "declared_state_effects": [
+        "Departure subtracts a positive amount from the source-node carrier.",
+        "The withdrawn amount becomes in-flight packet state and is not destroyed.",
+        "Destination, edge, timing, and budget remain explicit."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-009#process_lgrc9v3_packet_departure",
+        "P2-I3-SRC-017#test_lgrc2_packet_departure_debits_source_and_adds_in_flight"
+      ],
+      "missing_or_unsuitable_distinction": "Withdrawal is adequate as a conserved transfer control, not as autonomous decay or deletion.",
+      "open_questions": [
+        "I04 must decide which withdrawal control preserves matched opportunity and where transferred quantity is held."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-04",
+      "operation": "decay",
+      "classification": "absent",
+      "public_callables": [],
+      "ownership": "native_surface_absent_producer_required_if_selected",
+      "declared_state_effects": [],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-011#public-LGRC9V3-method-surface",
+        "P2-I3-SRC-008#LGRC9V3CausalPulseSubstrateSurfaceRow-passive-boundary",
+        "P2-I3-SRC-023#native-surface-scheduling-evidence-only-boundary"
+      ],
+      "missing_or_unsuitable_distinction": "Packet withdrawal is not decay, and passive surface-row evolution is evidence replay rather than carrier decay.",
+      "open_questions": [
+        "Q-005 must decide whether decay is the selected non-static dynamic.",
+        "Q-006 must define units, update order, and conservation or loss accounting if constructed."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-05",
+      "operation": "maintain",
+      "classification": "absent",
+      "public_callables": [],
+      "ownership": "native_surface_absent_producer_required_if_selected",
+      "declared_state_effects": [],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-011#public-LGRC9V3-method-surface"
+      ],
+      "missing_or_unsuitable_distinction": "Repeated deposits may replenish state but no public operation measures or charges maintenance against an autonomous loss process.",
+      "open_questions": [
+        "I03 should add maintenance only if the selected dynamic makes it causally necessary."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-06",
+      "operation": "saturate",
+      "classification": "absent",
+      "public_callables": [],
+      "ownership": "native_surface_absent_producer_required_if_selected",
+      "declared_state_effects": [],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-009#budget-overdraw-validation",
+        "P2-I3-SRC-011#public-LGRC9V3-method-surface"
+      ],
+      "missing_or_unsuitable_distinction": "A source-budget bound, overdraw rejection, or fixture named saturated_sink is not a carrier saturation operator.",
+      "open_questions": [
+        "I03 must justify whether a cap is required for the minimum realization or deferred as an alternative."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-07",
+      "operation": "relocate",
+      "classification": "inadequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.process_causal_collapse_reabsorption",
+        "pygrc.models.transport_lgrc9v3_packets_through_refinement"
+      ],
+      "public_callable_role": "nearest_inspected_nonqualifying_topology_lineage_operations",
+      "qualifying_public_callables": [],
+      "ownership": "native_topology_lineage_only_fixed_topology_field_relocation_missing",
+      "declared_state_effects": [
+        "Native topology operations can transport or reabsorb packet and surface lineage across committed topology change.",
+        "They do not relocate one current field state between matched fixed-topology route carriers."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-011#LGRC9V3.process_causal_collapse_reabsorption",
+        "P2-I3-SRC-014#transport_lgrc9v3_packets_through_refinement",
+        "P2-I3-SRC-014#process_lgrc9v3_collapse_reabsorption"
+      ],
+      "missing_or_unsuitable_distinction": "Topology-lineage transport is causally different from the P2-I3 current-state relocation control and cannot be substituted for it.",
+      "open_questions": [
+        "Q-013 and Q-015 must bind the fixed-topology relocation identity and complete-state equality rule."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-08",
+      "operation": "snapshot_or_save",
+      "classification": "adequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.snapshot",
+        "pygrc.models.LGRC9V3.save"
+      ],
+      "ownership": "native_pygrc_restoration",
+      "declared_state_effects": [
+        "snapshot returns a serialization-safe representation without advancing the runtime.",
+        "save writes that snapshot to the caller-selected path.",
+        "Current state and reset baseline are both represented when available."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-011#LGRC9V3.snapshot",
+        "P2-I3-SRC-011#LGRC9V3.save",
+        "P2-I3-SRC-022#test_snapshot_serializes_runtime_queue_and_events"
+      ],
+      "missing_or_unsuitable_distinction": "Native snapshot does not automatically include future RCAE-owned field or intervention objects.",
+      "open_questions": [
+        "Q-015 must define the composite wrapper for external state."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-09",
+      "operation": "restore_or_load",
+      "classification": "adequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.from_state",
+        "pygrc.models.LGRC9V3.load",
+        "pygrc.models.lgrc9v3_restoration_identity_v1",
+        "pygrc.models.lgrc9v3_restoration_identity_v2"
+      ],
+      "ownership": "native_pygrc_restoration",
+      "declared_state_effects": [
+        "load restores a native LGRC9V3 snapshot and its reset baseline when present.",
+        "from_state constructs from validated state and parameters.",
+        "Restoration identities cover current runtime state and, in v2, reset baseline."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-010#lgrc9v3_restoration_identity_v1",
+        "P2-I3-SRC-010#lgrc9v3_restoration_identity_v2",
+        "P2-I3-SRC-011#LGRC9V3.load",
+        "P2-I3-SRC-020#native-load-tests",
+        "P2-I3-SRC-021#composite-fixed-point-tests"
+      ],
+      "missing_or_unsuitable_distinction": "An RCAE realization cannot claim complete restoration unless its external state is restored and checked alongside native identity.",
+      "open_questions": [
+        "Q-015 must freeze equal-input continuation across the complete composite state."
+      ]
+    },
+    {
+      "operation_id": "P2-I3-OP-10",
+      "operation": "reset",
+      "classification": "adequate",
+      "public_callables": [
+        "pygrc.models.LGRC9V3.reset",
+        "pygrc.models.LGRC9V3.rebase_reset_baseline"
+      ],
+      "ownership": "native_pygrc_reset_baseline",
+      "declared_state_effects": [
+        "reset restores the explicit construction or loaded baseline.",
+        "rebase_reset_baseline explicitly replaces the future reset baseline with current native state.",
+        "Missing legacy reset baseline fails closed until explicit rebase."
+      ],
+      "evidence_class": "public_source_fact",
+      "evidence_references": [
+        "P2-I3-SRC-002#GRCModel.reset",
+        "P2-I3-SRC-002#GRCModel.rebase_reset_baseline",
+        "P2-I3-SRC-011#LGRC9V3.reset",
+        "P2-I3-SRC-011#LGRC9V3.rebase_reset_baseline",
+        "P2-I3-SRC-010#lgrc9v3_restoration_identity_v2"
+      ],
+      "missing_or_unsuitable_distinction": "Resetting native state while leaving constructed field or policy state unchanged would be incomplete and unsuitable for registered controls.",
+      "open_questions": [
+        "Q-015 must define atomic composite reset behavior."
+      ]
+    }
+  ],
+  "claim_boundary": "Operation adequacy is source-current and realization-neutral. Producer-completion feasibility is recorded separately under DEC-017. Neither selects a carrier, authorizes implementation or conformance, or establishes that an operation satisfies a scientific control."
+}
