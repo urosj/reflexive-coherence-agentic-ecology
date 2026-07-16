@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.57 draft
+**Plan revision:** 0.58 draft
 
 **Date:** 2026-07-16
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.57 draft:
+Current dependency order after revision 0.58 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1777,14 +1777,15 @@ Current dependency order after revision 0.57 draft:
    40 callables, 24 pre-existing tests, eight theory/method files, and two
    exact grouped precedent inventories. Q-002 is resolved and the source-
    admission gate is passed. DEC-020 fixes LGRC9V3 as the only eligible core
-   substrate; GRC9V3 is comparative-only. No realization is selected.
+   substrate; GRC9V3 is comparative-only. No complete realization or
+   lifecycle law is selected.
 3. Retain P2-I3 at its DEC-023 cross-project pause. The Q-005 interpretation
    study separates release attenuation, conserved leakage, and constructed
    susceptibility relaxation; the N31 handoff now returns that unresolved
-   primitive question to graph/LGRC. Commit the RCAE demand state, switch
-   scope explicitly for N31, and resume P2-I3 only through the handoff's exact
-   graph reconstruction, bounded source transition, carrier/ownership review,
-   and Q-005-through-Q-008 return sequence.
+   primitive question to graph/LGRC. Retain the committed RCAE demand state,
+   switch scope explicitly for N31, and resume P2-I3 only through the
+   handoff's exact graph reconstruction, bounded source transition,
+   carrier/ownership review, and Q-005-through-Q-008 return sequence.
 4. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1898,6 +1899,7 @@ directive.
 | 2026-07-16 | Revision 0.55 draft: records owner-accepted DEC-022. The node-carried realization has a mixed ownership boundary: LGRC9V3 owns carrier state, packet formation/accumulation/withdrawal, event time, and native restoration; RCAE owns only explicitly selected missing lifecycle, local-encounter, intervention, role, and composite-identity functions. Nearby GRC, arbitration, topology-transport, pulse-row, and post-hoc inference surfaces remain unsuitable substitutions. Q-005 is next; no implementation or scientific authority follows. |
 | 2026-07-16 | Revision 0.56 draft: retains the owner-directed Q-005 decay interpretation study. Release-efficacy attenuation, coherence-conserving node-source leakage, and constructed route-susceptibility relaxation are distinct causal ontologies. The desired leakage and susceptibility implementations must use separate realization/campaign and topology contracts; only protocol and artifact infrastructure may be shared before concrete equivalence is demonstrated. Q-005 and campaign authority remain open. |
 | 2026-07-16 | Revision 0.57 draft: records DEC-023 and the detailed P2-I3-to-N31 handoff. The provisional two-RCAE-realization direction is superseded before implementation. P2-I3 pauses at Q-005 while graph-project N31 discriminates decay semantics and may naturalize one, multiple, or no primitives. The handoff fixes N31 return roles, outcome branches, reconstruction, bounded source transition, affected carrier/ownership review, and the exact Q-005-through-Q-008 resumption order. |
+| 2026-07-16 | Revision 0.58 draft: synchronizes the repository's public and master status surfaces with the committed P2-I3 state. Root, experiment, AE01-view, implementation, changelog, and release-note navigation now distinguish passed P2-I3 source gates and the DEC-023 N31 handoff from an executed L03 result. The scientific and continuation boundaries are unchanged. |
 
 ## 18. Program completion criteria
 

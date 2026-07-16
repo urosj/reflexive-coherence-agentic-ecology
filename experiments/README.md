@@ -21,9 +21,15 @@ result. P2-I2 is closed with an owner-accepted 234-entry main L02 result,
 corrected control resolution, and independent reconstruction. Its accepted
 Appendix A establishes bounded operation complementarity in a distinct live
 carrier; Appendix B/APP-B4 instead identifies a terminal-P temporal gate in
-P2-I2 active history. L03–L07 and cross-lane synthesis remain unexecuted, and
-every lane retains independent calibration, registration, control-resolution,
-execution, and claim boundaries.
+P2-I2 active history. P2-I3 has passed its brief, source-audit, and exact
+source-admission gates. I03 selected a provisional node carrier and mixed
+native/RCAE ownership, then paused at Q-005 after its decay interpretation
+study exposed a graph-side primitive question. DEC-023 and the
+[N31 handoff](2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
+return that question to graph/LGRC with an exact RCAE resumption contract.
+No L03 candidate has executed; L04–L07 and cross-lane synthesis also remain
+unexecuted, and every lane retains independent calibration, registration,
+control-resolution, execution, and claim boundaries.
 
 ## Experiment authority
 

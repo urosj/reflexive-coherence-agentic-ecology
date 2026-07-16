@@ -148,12 +148,12 @@ Appendices A and B as dormant topology extensions, and defers Appendix C.
 The initial [P2-I3 checklist](P2-I3-trail-or-stigmergic-field-checklist.md)
 and [cumulative decision record](P2-I3-decision-record.md) are owner-accepted,
 and `P2-I3-BRIEF-GATE` has passed.
-They make I00–I11, twenty open implementation questions, environment
-completeness, evidence-responsive expansion, and explicit gate ownership
-visible without answering those questions prematurely. The accepted
-proportionality and repetition decisions default to one realization plus one
-complete-state-matched history discriminator and define repeated formation as
-at least two attributable events while deferring exact values. Brief
+They originally assign twenty implementation questions across I00–I11 and
+make environment completeness, evidence-responsive expansion, and explicit
+gate ownership visible without answering those questions prematurely. The
+accepted proportionality and repetition decisions default to one realization
+plus one complete-state-matched history discriminator and define repeated
+formation as at least two attributable events while deferring exact values. Brief
 acceptance and governance construction assign no source admission, runtime
 realization, calibration, registration, execution authority, or L03 evidence.
 Q-001 and the exact I01 input freeze are accepted through DEC-016. DEC-017
@@ -200,3 +200,22 @@ RCAE-producer/PyGRC non-mutation boundary. The bounded CHG-017 correction also
 marks synchronous GRC9V3 evolution comparative-only while retaining
 GRC9V3State as LGRC9V3's public base-state type. The source-admission gate is
 passed, but no realization or scientific result is assigned.
+
+I03 then selected route-exclusive intermediate-node coherence as the
+provisional minimum carrier through DEC-021 and classified its mixed
+native-LGRC/RCAE operation ownership through DEC-022. Those decisions did not
+select a lifecycle law. The retained
+[Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md)
+shows that release-efficacy attenuation, coherence-conserving source leakage,
+and route-susceptibility relaxation are distinct causal ontologies with
+different carrier, topology, invariant, restoration, and claim contracts.
+
+DEC-023 therefore supersedes the provisional plan to implement two RCAE decay
+realizations before either was built. P2-I3 is intentionally paused at Q-005
+under the accepted
+[N31 decay-primitive handoff and return contract](P2-I3-N31-decay-primitive-handoff.md).
+N31 may select one primitive, distinct multiple primitives, a producer-only
+candidate, no primitive, or a new taxonomy. On return, P2-I3 must reconstruct
+and admit the exact graph revision, explicitly retain or reopen DEC-021/022,
+resolve Q-005, and continue Q-006 through Q-008 in order. No I03 conformance,
+calibration, registration, candidate execution, or L03 result exists yet.

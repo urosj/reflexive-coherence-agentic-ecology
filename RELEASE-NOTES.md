@@ -1,5 +1,44 @@
 # Release Notes
 
+## P2-I3 decay-primitive spiral handoff — 2026-07-16
+
+P2-I3 has completed its semantic governance, source-current capability audit,
+and exact source admission without executing an L03 candidate. I03 selected a
+provisional node-coherence carrier and recorded the mixed native/RCAE ownership
+available in the admitted pre-N31 LGRC9V3 substrate.
+
+Q-005 then exposed a substrate-level ambiguity:
+
+```text
+release-efficacy attenuation
+coherence-conserving source leakage
+route-susceptibility relaxation
+```
+
+These are not interchangeable decay parameters. They differ in carrier,
+topology, invariants, continuation state, local causal action, restoration,
+and claim ceiling. DEC-023 therefore pauses P2-I3 and selects a graph-side N31
+decay-semantics/native-primitive experiment through the N30 cross-project
+spiral.
+
+The [Q-005 interpretation study](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-Q005-decay-interpretation-study.md)
+retains the three meanings and their source boundaries. The
+[N31 handoff and return contract](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
+defines the required graph return bundle, six admissible outcome paths,
+bounded RCAE source transition, affected carrier/ownership review, and exact
+Q-005-through-Q-008 resumption sequence.
+
+### Evidence boundary
+
+- `P2-I3-BRIEF-GATE`, `P2-I3-SOURCE-AUDIT-GATE`, and
+  `P2-I3-SOURCE-ADMISSION-GATE` have passed.
+- `P2-I3-DISCRIMINATOR-GATE` remains pending.
+- No P2-I3 runtime conformance, calibration, registration, candidate
+  execution, control result, or L03 scientific result exists.
+- The N31 handoff is ecology demand and continuation authority, not graph
+  evidence or a native decay claim.
+- AE01 remains at `AE01-C2`.
+
 ## AE01 controlled-evidence update — 2026-07-15
 
 AE01 moves the repository beyond a conceptual-only snapshot while preserving

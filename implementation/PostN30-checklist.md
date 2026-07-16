@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.57 draft
+**Baseline revision:** 0.58 draft
 
 **Date:** 2026-07-16
 
@@ -46,7 +46,7 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.57 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.58 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
 | Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I03 paused at N31 handoff | P2-GATE | DEC-023 defers Q-005 to graph/LGRC; return admission, dynamics, encounter, and execution remain lane-gated |
@@ -1347,6 +1347,31 @@ Entry condition:
   replace, bridge, or satisfy the L03 core.
 - [x] Owner reviews I02 and resolves Q-002. Do not select a realization or
   promote producer precedent to native capability.
+- [x] Record DEC-021: route-exclusive intermediate-node coherence is the
+  provisional minimum carrier under the admitted pre-N31 substrate, with
+  edge/corridor alternatives retained under separate identities.
+- [x] Record DEC-022: native LGRC9V3 owns node state, packet transfer,
+  internal time, and native restoration; RCAE owns only explicit missing
+  lifecycle, encounter, intervention, role, and composite-state functions.
+- [x] Retain the
+  [Q-005 decay interpretation study](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-Q005-decay-interpretation-study.md),
+  separating release-efficacy attenuation, coherence-conserving source
+  leakage, and route-susceptibility relaxation without selecting one.
+- [x] Record DEC-023 and the
+  [N31 handoff/return contract](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md).
+  P2-I3 I03 is intentionally paused at Q-005; no implementation,
+  conformance, calibration, registration, execution, or L03 result exists.
+
+Current continuation:
+
+```text
+committed RCAE P2-I3 demand state
+-> explicit graph-project N31 scope
+-> reconstructable N31 closeout and return bundle
+-> bounded RCAE source transition
+-> explicitly retain/reopen DEC-021 and DEC-022
+-> resolve Q-005 and resume Q-006 through Q-008
+```
 
 Required lane work:
 
@@ -2312,6 +2337,7 @@ Change log:
 | CL-058 | 2026-07-16 | Revision 0.55 draft records DEC-022 mixed ownership. LGRC9V3 retains adequate carrier, packet, timing, and native restoration transitions; RCAE completion remains explicit for missing lifecycle, encounter, intervention, role, and composite-state functions; unsuitable nearby operations cannot be relabeled. | P2-I3 I03 ownership decision | Superseded by CL-059 after Q-005 interpretation work; DEC-022 remains historical authority pending N31 return |
 | CL-059 | 2026-07-16 | Revision 0.56 draft retains a thorough Q-005 study of release-efficacy attenuation, coherence-conserving source leakage, and constructed susceptibility relaxation. Leakage and susceptibility are separate causal realizations and may not be presumed to share topology; protocol/artifact reuse remains allowed above carrier semantics. | P2-I3 Q-005 pre-decision evidence | Superseded prospectively by CL-060 before any implementation; the interpretation study remains active input |
 | CL-060 | 2026-07-16 | Revision 0.57 draft records DEC-023 and the detailed N31 handoff/return contract. P2-I3 is intentionally paused at Q-005; graph-project N31 receives all three decay meanings and may select one, multiple, a producer-only candidate, no primitive, or a new taxonomy. Return requires graph reconstruction, a bounded RCAE source transition, explicit carrier/ownership retention or reopening, and ordered Q-005-through-Q-008 resumption. | P2-I3 cross-project spiral boundary | Owner-accepted and authorized for retention; after commit switch scope explicitly to graph N31, with no P2-I3 implementation or scientific effect |
+| CL-061 | 2026-07-16 | Revision 0.58 draft synchronizes root, experiment, AE01-view, implementation, changelog, release-note, and master-lane status with the retained P2-I3 source-gate and N31-handoff state. | Repository public/current-state projection | Active; documentation-only synchronization, with no gate, evidence, implementation, or claim change |
 
 ## 17. Current next actions
 
@@ -2392,3 +2418,10 @@ The next unchecked actions in dependency order are:
     detailed N31 handoff/return contract as one bounded package. After its
     commit, keep P2-I3 paused and switch scope explicitly to graph-project N31;
     do not begin P2-I3 implementation or calibration.
+23. [x] Synchronize root, experiment, AE01-view, implementation, changelog,
+    release-note, and master-lane status so the repository visibly distinguishes
+    passed P2-I3 source gates and the N31 handoff from an executed L03 result.
+24. [ ] Complete graph-project N31 under an explicitly separate graph-repository
+    scope and return its reconstructable closeout bundle. P2-I3 remains paused;
+    this RCAE repository records the dependency but does not authorize graph
+    changes from within the RCAE project.
