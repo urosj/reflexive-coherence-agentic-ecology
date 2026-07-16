@@ -137,3 +137,24 @@ resulting full HEAD and exact preflight.
 The implementation remains experiment-local under `scripts/`; it is not an
 installable distribution, reusable ecology source surface, admitted mechanism,
 or lane result.
+
+P2-I3 theory preparation begins with the accepted
+[trail or stigmergic field brief](P2-I3-trail-or-stigmergic-field-brief.md).
+It retains one two-route causal kernel while separating registered structure,
+state-derived geometry, functional coupling, causal/proper-time distance, and
+intervention-established causal influence. It also binds the post-R3 dynamic-
+field discriminator, preserves the exact Phase 1 R01–R05 ladder, records
+Appendices A and B as dormant topology extensions, and defers Appendix C.
+The initial [P2-I3 checklist](P2-I3-trail-or-stigmergic-field-checklist.md)
+and [cumulative decision record](P2-I3-decision-record.md) are owner-accepted,
+and `P2-I3-BRIEF-GATE` has passed.
+They make I00–I11, twenty open implementation questions, environment
+completeness, evidence-responsive expansion, and explicit gate ownership
+visible without answering those questions prematurely. The accepted
+proportionality and repetition decisions default to one realization plus one
+complete-state-matched history discriminator and define repeated formation as
+at least two attributable events while deferring exact values. Brief
+acceptance and governance construction assign no source admission, runtime
+realization, calibration, registration, execution authority, or L03 evidence.
+Only I01 capability-audit input-freeze construction and review are open; the
+audit remains unauthorized until Q-001 and the freeze are accepted.

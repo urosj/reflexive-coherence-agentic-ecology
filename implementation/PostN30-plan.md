@@ -2,9 +2,9 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.43
+**Plan revision:** 0.46
 
-**Date:** 2026-07-15
+**Date:** 2026-07-16
 
 **Scope:** repository architecture, directive hierarchy, Post-N30 atlas program,
 LGRC consumption boundary, specification promotion, and implementation sequence
@@ -1766,23 +1766,27 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.43:
+Current dependency order after revision 0.46:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
    support only the bounded shared-pool co-conditioning demand pattern. The
    three modes remain separate; cross-lane synthesis, active-history native
    substitution, mode ranking, and N31+ selection remain unopened.
-2. For every future lane, freeze candidate-blind calibration and exact
+2. Retain the accepted P2-I3 semantic brief, cumulative decision record, and
+   evidence-expandable checklist under DEC-014. `P2-I3-BRIEF-GATE` passes and
+   opens only construction and review of the exact I01 capability-audit input
+   freeze; it does not perform the audit or admit a source.
+3. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
    closure.
-3. Apply the targeted L03 and L06 amendments before their calibration
+4. Apply the targeted L03 and L06 amendments before their calibration
    preregistration gates; static trace persistence and linear capacity
    transport cannot satisfy those lanes.
-4. Execute and classify lanes independently; preserve each prior result and
+5. Execute and classify lanes independently; preserve each prior result and
    never consume another lane's conclusion as evidence.
-5. Synthesize only after all required terminal and developmental-
+6. Synthesize only after all required terminal and developmental-
    interpretation records are comparable, then close AE01 before promoting
    canonical specifications or stable source abstractions.
 
@@ -1872,6 +1876,9 @@ directive.
 | 2026-07-14 | Revision 0.41: records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves 11/11 reconstruction, delta `1e-12`, complete process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. |
 | 2026-07-15 | Revision 0.42: synchronized the master checklist through owner-accepted I08A. C01 remains bounded incomplete; C02 preserves all 234 projections while replacing only the inadequate process-address-space ceiling with external native-exit supervision and retained runtime/file-size bounds. |
 | 2026-07-15 | Revision 0.43: closes P2-I2 under owner-accepted DEC-061 after complete 234/234 C02 execution, corrected I09A control projection, I10 retained-evidence reconstruction, and 30/30 I11 interpretation validation. The terminal is `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries; no mode ranking, synthesis, native substitution, or N31+ work is opened. |
+| 2026-07-16 | Revision 0.44: records owner acceptance of the P2-I3 semantic brief and constructs its review-ready cumulative decision record and evidence-expandable I00–I11 checklist. Eleven semantic/process decisions are retained while twenty runtime, equation, source, metric, numeric, gate, and execution questions remain assigned to later decision points. The brief gate remains pending owner acceptance of the governance package; no source audit, admission, realization, calibration, registration, execution, or L03 evidence is assigned. |
+| 2026-07-16 | Revision 0.45: applies the owner-authorized bounded P2-I3 governance-review correction. DEC-012 fixes one realization plus one complete-state-matched history discriminator as the proportional default; DEC-013 defines repetition as at least two attributable events while leaving exact cardinality to registration. The brief now projects R05 only through geometry/timescale variation, and the checklist corrects I01 freeze authority, declared-effect ownership, scientific-outcome-free conformance, typed control evidence, split question handoffs, and related execution boundaries. `P2-I3-BRIEF-GATE` remains pending; no source or scientific evidence is assigned. |
+| 2026-07-16 | Revision 0.46: records owner acceptance of the corrected P2-I3 governance package as DEC-014/CHG-005 and passes `P2-I3-BRIEF-GATE`. The final non-blocking clarification keeps I03 dynamics operationally observable but scientifically unmeasured until I08 and requires I01 to separate public-source facts, synthetic interface conformance, and candidate-shaped behavior. Only I01 input-freeze construction and review open; Q-001, the audit, source admission, realization, and all scientific gates remain closed. |
 
 ## 18. Program completion criteria
 

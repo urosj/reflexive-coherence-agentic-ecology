@@ -183,6 +183,22 @@ program. Native, producer-assisted, or missing-prerequisite status is selected
 separately within each mode. DEC-011 did not accept I03A or authorize later
 work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
 
+### P2-I3 — trail or stigmergic field
+
+- The accepted [P2-I3 semantic brief](implementation/P2-I3-trail-or-stigmergic-field-brief.md)
+  defines the two-route causal kernel, RC-Distance source posture,
+  five-surface distance boundary, dynamic-field discriminator, exact frozen
+  R01–R05 projection, dormant topology extensions, and claim ceiling.
+- The accepted [evidence-expandable checklist](implementation/P2-I3-trail-or-stigmergic-field-checklist.md)
+  assigns every later activity to I00–I11. `P2-I3-BRIEF-GATE` has passed and
+  opens only construction and review of the I01 input freeze.
+- The [cumulative decision record](implementation/P2-I3-decision-record.md)
+  retains fourteen accepted semantic/process decisions and twenty unresolved
+  implementation questions at their legitimate decision points.
+- Brief and governance-package construction supply no P2-I3 source admission,
+  realization, calibration, registration, execution authority, or scientific
+  result.
+
 ## Program authority
 
 - [Master plan](../../implementation/PostN30-plan.md)
@@ -340,7 +356,8 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
 P2-I2                                           closed; accepted bounded L02 result retained for commit
-P2-I3 through P2-I7                             unopened or lane-local; execution lane-gated
+P2-I3                                           brief/governance accepted; I01 input-freeze construction open
+P2-I4 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis
 P3                                              ranking, promotion, and closeout

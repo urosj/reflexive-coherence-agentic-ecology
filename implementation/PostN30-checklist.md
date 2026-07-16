@@ -2,9 +2,9 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.43
+**Baseline revision:** 0.46
 
-**Date:** 2026-07-15
+**Date:** 2026-07-16
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.40 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.46 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | Open for calibration and registration | P2-GATE | Candidate execution remains lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 brief gate passed | P2-GATE | P2-I3 I01 input-freeze construction open; audit and execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1302,6 +1302,21 @@ shared-pool co-conditioning demand pattern.
 Entry condition:
 
 - [x] `P1-GATE` passed.
+- [x] The project owner accepted the
+  [P2-I3 semantic brief](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-brief.md)
+  on 2026-07-16. Acceptance fixes semantic meaning but no source,
+  realization, calibration, registration, execution, or result authority.
+- [x] Construct one
+  [cumulative decision record](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-decision-record.md)
+  and one
+  [evidence-expandable checklist](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-checklist.md)
+  with named I00–I11 activity boundaries.
+- [x] Record owner-accepted `P2-I3-DEC-012` and `P2-I3-DEC-013`:
+  one selected realization plus one complete-state-matched history
+  discriminator is the proportional default, and repeated formation contains
+  at least two attributable events while exact cardinality remains deferred.
+- [x] Project owner accepts the initial decision/checklist package and passes
+  `P2-I3-BRIEF-GATE`; only the I01 capability-audit input freeze opens.
 
 Required lane work:
 
@@ -2160,6 +2175,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-REG-GATE | Owner-accepted I06/I06A three-mode registration plus I06B execution-readiness overlay; exact restoration, causal-receipt, runtime-tolerance, and registration boundaries | 2026-07-15 | Passed; accepted I07/I07A freeze construction followed |
 | P2-I2-EXEC-FREEZE | Accepted I07A inactive C01 freeze and activation history; C01 later bounded incomplete; I08A preserves all 234 projections and passes 8/8, 18/18 correction validation, and 19/19 activation validation | 2026-07-15 | C01 consumed/bounded incomplete; C02 correction/activation owner-accepted and commit-authorized; full committed HEAD and exact preflight still required |
 | P2-I2-GATE | Complete 234/234 C02 evidence, corrected I09A control projection, I10 retained-evidence reconstruction, and owner-accepted 30/30 I11 terminal closeout | 2026-07-15 | DEC-061; passed with `supported_bounded_candidate`, `AE01-L02-R05`, `scaffold_dependent`, and `T3_operational_class`; synthesis and native-substitution work remain unopened |
+| P2-I3-BRIEF-GATE | Accepted and R05-corrected P2-I3 semantic brief plus owner-accepted cumulative decision record and evidence-expandable checklist through DEC-014/CHG-005 | 2026-07-16 | Passed; opens only I01 input-freeze construction and review, with no source audit, admission, realization, calibration, registration, execution, or evidence effect |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2250,6 +2266,9 @@ Change log:
 | CL-044 | 2026-07-14 | Revision 0.41 records explicit owner acceptance and commit authorization for the complete amended I05J/I05JA package. The accepted closeout preserves the 11/11 reconstruction, delta `1e-12`, exact process/package accounting, and zero scientific effect. CAL-GATE is passed and opens only unstarted I06 registration construction; candidate, control, runtime, and scientific execution remain closed. | P2-I2 I05 terminal retention and CAL-GATE | Active; I05 complete, I06 not begun |
 | CL-045 | 2026-07-15 | Revision 0.42 synchronizes P2-I2 through I08A acceptance. C01 remains bounded incomplete at one claim and 0/234 evaluable with no result. C02 preserves all 234 projections, removes only `RLIMIT_AS`, externalizes native-exit receipts, passes 8/8 plus 18/18 correction validation, and passes 19/19 deterministic activation validation under DEC-051. | P2-I2 I08A activation/commit boundary | Superseded by CL-046 |
 | CL-046 | 2026-07-15 | Revision 0.43 closes P2-I2 under owner-accepted DEC-061. C02 completes 234/234; I09A and I10 pass their corrected control and reconstruction gates; I11 passes 30/30 and retains a mode-separated `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries. No new scientific runtime, mode ranking, synthesis, native substitution, or N31+ selection occurs in closeout. | P2-I2 terminal retention and lane gate | Active; P2-I2 complete, later lanes and synthesis remain separately gated |
+| CL-047 | 2026-07-16 | Revision 0.44 records owner acceptance of the P2-I3 semantic brief and constructs a review-ready cumulative decision record plus evidence-expandable I00–I11 checklist. The package retains eleven accepted semantic/process decisions and twenty deliberately open implementation questions, including source, runtime carrier, equation, metric, numeric registration, gate, environment, and execution boundaries. | P2-I3 brief and governance entry | Superseded by CL-048 before brief-gate passage |
+| CL-048 | 2026-07-16 | Revision 0.45 applies the owner-authorized bounded governance-review correction. DEC-012/013 add the proportional realization default and logical repetition floor; the brief corrects R05 to geometry/timescale only; and the checklist corrects I01 freeze authority, declared-effect ownership, scientific-outcome-free conformance, typed controls, split handoffs, cadence, quarantine, and appendix/runtime boundaries. | P2-I3 governance review correction | Superseded by CL-049 after owner acceptance |
+| CL-049 | 2026-07-16 | Revision 0.46 records owner acceptance of the corrected P2-I3 governance package as DEC-014/CHG-005, passes BRIEF-GATE, clarifies I03 operational observability versus I08 scientific measurement, and freezes the required I01 public-source/synthetic-conformance/candidate-shaped evidence distinction. | P2-I3 brief gate and I01 freeze-construction entry | Active; only I01 input-freeze construction/review open, with audit and all evidence gates closed |
 
 ## 17. Current next actions
 
@@ -2312,5 +2331,8 @@ The next unchecked actions in dependency order are:
 17. [x] Complete P2-I2 through corrected C02 execution, I09A control
     resolution, I10 reconstruction, and owner-accepted I11 interpretation;
     pass `P2-I2-GATE` without opening cross-lane synthesis or successor work.
-18. [ ] Begin any later independently owned Phase 2 lane only under its own
-    candidate-blind calibration, registration, and execution boundaries.
+18. [x] Review and accept the corrected P2-I3 cumulative decision
+    record and evidence-expandable checklist; pass `P2-I3-BRIEF-GATE` without
+    starting the source audit.
+19. [ ] Construct and review the exact P2-I3 I01 capability-audit input freeze
+    before any read-only audit activity.
