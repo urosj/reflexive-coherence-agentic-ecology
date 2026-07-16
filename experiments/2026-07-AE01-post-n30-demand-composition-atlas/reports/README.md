@@ -60,6 +60,19 @@ Phase 2 gate reviews:
   applies the owner-supplied capability-audit checks, corrects CAP-04 to
   inadequate, adds public-support/mode/restoration ownership profiles, and
   re-passes only the source-audit gate.
+- [P2-I3 I01 source-current capability audit](P2-I3-I01-source-current-capability-audit.md)
+  retains the accepted native shortlist, missing field/lifecycle/response
+  surfaces, and producer-completion feasibility without admitting a source or
+  selecting a realization.
+- [P2-I3 I01 command provenance](P2-I3-I01-command-provenance.md) records the
+  exact environment, read-only source inspection, 24 passing pre-existing
+  tests, public-identity checks, N29/N30 and predecessor traversal, and
+  external-checkout cleanliness.
+- [P2-I3 I02 exact source admission](P2-I3-I02-exact-source-admission.md)
+  explains the accepted exact graph/callable/test/theory/precedent bundle,
+  source transitions, producer boundary, LGRC9V3-only core substrate,
+  comparative-only GRC9V3 role, and reconstruction. DEC-019 passes the
+  source-admission gate without selecting a realization.
 - [P2-I2 I04 historical preregistration](P2-I2-I04-calibration-preregistration.md)
   retains the original candidate-free measurement package that was superseded
   after owner review withheld CAL-PRE.

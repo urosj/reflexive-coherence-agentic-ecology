@@ -193,8 +193,9 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   assigns every later activity to I00–I11. `P2-I3-BRIEF-GATE` has passed;
   Q-001 and the exact I01 input freeze are accepted through DEC-016.
 - The [cumulative decision record](implementation/P2-I3-decision-record.md)
-  retains seventeen accepted semantic/process decisions and nineteen unresolved
-  implementation questions at their legitimate decision points.
+  retains all twenty accepted semantic, process, source, and substrate
+  decisions plus the remaining implementation questions at their legitimate
+  decision points.
 - The accepted
   [I01 capability-audit input freeze](contracts/p2-i3/i01-capability-audit-input-freeze.json)
   fixes fifteen capability questions, ten operation dispositions, exact
@@ -205,17 +206,26 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   identify a native topology/node-coherence/packet/timing/restoration shortlist
   plus missing field-lifecycle, local traversal-response, intervention, and
   participant-role surfaces. The grounded artifact review passed through
-  DEC-018, so `P2-I3-SOURCE-AUDIT-GATE` is passed and I02 exact source
-  admission is open at Q-002.
+  DEC-018, so `P2-I3-SOURCE-AUDIT-GATE` is passed.
+- The accepted [I02 admission report](reports/P2-I3-I02-exact-source-admission.md),
+  [exact manifest](contracts/p2-i3/i02-source-admission-manifest.json), and
+  [reconstruction result](contracts/p2-i3/i02-admission-validation.json)
+  admit 26 graph files, 40 public callables, 24 pre-existing tests, eight
+  theory/method files, and two digest-bound precedent inventories. DEC-019
+  resolves Q-002 and passes `P2-I3-SOURCE-ADMISSION-GATE`; I03 is open but no
+  realization is selected.
+- Owner-directed DEC-020 fixes `LGRC9V3` as the only eligible core substrate.
+  Synchronous `GRC9V3` evolution is comparative-only: an interesting GRC
+  result cannot replace an LGRC implementation or satisfy the L03 core.
 - The [N29/N30 mechanism inventory](contracts/p2-i3/i01-n29-n30-mechanism-inventory.json)
   and [predecessor mechanism lineage](contracts/p2-i3/i01-predecessor-mechanism-lineage.json)
   follow N29 back through the relevant N05/N08/N09/N22 mechanism chain. Under
   DEC-017, adequate native operations have priority, while missing operations
   become explicit RCAE producer requirements and LGRC naturalization debt
   rather than reasons to weaken the experiment.
-- I01 supplies source-current capability evidence only: no P2-I3 source
-  admission, realization, calibration, registration, execution authority, or
-  scientific result.
+- I01 supplies source-current capability evidence and I02 supplies exact
+  source-role authority. No P2-I3 realization, calibration, registration,
+  execution authority, or scientific result exists yet.
 
 ## Program authority
 
@@ -374,7 +384,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
 P2-I2                                           closed; accepted bounded L02 result retained for commit
-P2-I3                                           source-audit gate passed; I02 source admission open
+P2-I3                                           I02 source admission accepted; I03 open
 P2-I4 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

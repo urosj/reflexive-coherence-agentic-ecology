@@ -161,8 +161,16 @@ adds the native-priority/producer-completion rule: absent or inadequate native
 coverage is recorded honestly but does not block a correct experiment when a
 bounded RCAE-owned producer can preserve the causal requirement. The frozen
 read-only audit has completed, passed grounded artifact review through
-DEC-018, and is accepted. `P2-I3-SOURCE-AUDIT-GATE` is passed; only I02 exact
-source admission and Q-002 are open.
+DEC-018, and is accepted. `P2-I3-SOURCE-AUDIT-GATE` is passed. The accepted
+[I02 admission report](../reports/P2-I3-I02-exact-source-admission.md),
+[source manifest](../contracts/p2-i3/i02-source-admission-manifest.json), and
+[validation result](../contracts/p2-i3/i02-admission-validation.json) now make
+the exact identities and roles reconstructible. DEC-019 resolves Q-002,
+passes the source-admission gate, and opens only I03 realization questions.
+DEC-020 narrows the eligible substrate before admission: the core realization
+must use LGRC9V3. GRC9V3 class/continuity/step identities remain available only
+for a separately governed comparative result and cannot replace or bridge an
+LGRC9V3 implementation.
 
 The accepted
 [I01 capability-audit input freeze](../contracts/p2-i3/i01-capability-audit-input-freeze.json)
@@ -185,5 +193,10 @@ lifecycle precursor and native gap, and N22 supplies a declared-state producer
 with native snapshot/reentry/control discipline.
 DEC-015 makes review correction-driven without weakening gate or execution
 authority. DEC-018 records the accepted I01 package and source-audit gate
-passage. No source is admitted and no realization or scientific result is
-assigned until later gates.
+passage. The accepted I02 bundle binds 26 graph files, 40 callables, 24 exact tests,
+eight theory/method files, and 76 exact grouped precedent sources. It also
+records the prospective RCAE-paper identity transitions and the explicit
+RCAE-producer/PyGRC non-mutation boundary. The bounded CHG-017 correction also
+marks synchronous GRC9V3 evolution comparative-only while retaining
+GRC9V3State as LGRC9V3's public base-state type. The source-admission gate is
+passed, but no realization or scientific result is assigned.

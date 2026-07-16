@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.50
+**Plan revision:** 0.53 draft
 
 **Date:** 2026-07-16
 
@@ -1766,30 +1766,31 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.50:
+Current dependency order after revision 0.53 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
    support only the bounded shared-pool co-conditioning demand pattern. The
    three modes remain separate; cross-lane synthesis, active-history native
    substitution, mode ranking, and N31+ selection remain unopened.
-2. Perform P2-I3 I02 exact source admission and resolve Q-002. DEC-018 accepts
-   the complete grounded I01 audit and passes the source-audit gate; DEC-017
-   still requires semantically adequate native capability first and explicit
-   RCAE producer completion where native coverage is absent or unsuitable.
-   I02 must bind exact revisions, files, public callables, evidence roles, and
-   digests without selecting a realization or upgrading producer precedents to
-   native capability.
-3. For every future lane, freeze candidate-blind calibration and exact
+2. Retain accepted P2-I3 I02 authority under DEC-019. It binds 26 graph files,
+   40 callables, 24 pre-existing tests, eight theory/method files, and two
+   exact grouped precedent inventories. Q-002 is resolved and the source-
+   admission gate is passed. DEC-020 fixes LGRC9V3 as the only eligible core
+   substrate; GRC9V3 is comparative-only. No realization is selected.
+3. Resolve P2-I3 Q-003 through Q-008 under I03 and choose
+   the smallest semantically adequate native/producer ownership path without
+   weakening the dynamic-field-to-local-traversal discriminator.
+4. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
    closure.
-4. Apply the targeted L03 and L06 amendments before their calibration
+5. Apply the targeted L03 and L06 amendments before their calibration
    preregistration gates; static trace persistence and linear capacity
    transport cannot satisfy those lanes.
-5. Execute and classify lanes independently; preserve each prior result and
+6. Execute and classify lanes independently; preserve each prior result and
    never consume another lane's conclusion as evidence.
-6. Synthesize only after all required terminal and developmental-
+7. Synthesize only after all required terminal and developmental-
    interpretation records are comparable, then close AE01 before promoting
    canonical specifications or stable source abstractions.
 
@@ -1886,6 +1887,9 @@ directive.
 | 2026-07-16 | Revision 0.48: records DEC-016 acceptance of the exact P2-I3 I01 input freeze, owner-authorized restoration of the missing pytest prerequisite, and the complete review-ready read-only audit. The package retains fifteen capability and ten operation dispositions, 27 exact source digests, 24 passing targeted pre-existing tests, distinct geometry/runtime roles, a bounded native shortlist, and explicit missing field-lifecycle, intervention, participant-role, and local traversal-response surfaces. Evidence effect is source-current capability only; source admission, realization, calibration, execution, and L03 evidence remain closed. |
 | 2026-07-16 | Revision 0.49: follows N29's index into the relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanism lineage and records DEC-017. Semantically adequate native PyGRC capability has priority, while absent or unsuitable native operations become explicit RCAE request-producer or declared-state-producer obligations plus graph-side naturalization debt; the experiment is never weakened to fit native coverage. Native capability classifications remain unchanged, 44 predecessor source identities are retained, no earlier experiment is rerun, and source admission, realization selection, and L03 evidence remain closed. |
 | 2026-07-16 | Revision 0.50: records grounded eleven-artifact I01 review passage through DEC-018 after one bounded CHG-014 clarification. All fifteen capability, ten operation, source-lineage, provenance, quarantine, and digest claims are accepted; SOURCE-AUDIT-GATE passes and opens only I02 exact source admission and Q-002. No source is admitted, no realization is selected, and no conformance, calibration, candidate, or scientific execution is authorized. |
+| 2026-07-16 | Revision 0.51 draft: constructs the review-ready P2-I3 I02 source-admission proposal and DEC-019. The bundle binds 26 exact graph files, 40 public callable identities, 24 exact pre-existing tests, eight exact theory/method sources, and 76 N29/N30/predecessor sources through two digest-bound inventories. Static reconstruction passes; Q-002 and SOURCE-ADMISSION-GATE remain open pending correction-driven owner review. No realization, producer, equation, runtime transition, or L03 evidence is assigned. |
+| 2026-07-16 | Revision 0.52 draft: applies the owner-directed bounded I02 substrate correction as DEC-020/CHG-017. LGRC9V3 is the sole eligible core substrate; synchronous GRC9V3 class/continuity/step identities are comparative-only because their per-step evolution and relaxation semantics differ and cannot replace or bridge LGRC execution. Source scope and counts remain unchanged; reconstruction is rerun with no realization or scientific effect. |
+| 2026-07-16 | Revision 0.53 draft: adds validator-bound predecessor experiment visibility without duplicating the digest-bound source authority, then records owner acceptance of corrected DEC-019. Q-002 is resolved and `P2-I3-SOURCE-ADMISSION-GATE` passes over 26 graph files, 40 callables, 24 tests, eight theory/method files, and 76 grouped precedent sources. I03 realization questions open; no carrier, equation, producer, runtime conformance, calibration, execution, or L03 result is selected. |
 
 ## 18. Program completion criteria
 

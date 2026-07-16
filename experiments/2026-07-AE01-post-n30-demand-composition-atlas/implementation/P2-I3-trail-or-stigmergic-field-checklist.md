@@ -1,18 +1,19 @@
 # P2-I3 Trail or Stigmergic Field Checklist
 
-**Status:** initial evidence-expandable governance package accepted;
-`P2-I3-BRIEF-GATE` passed
+**Status:** I02 exact source admission accepted;
+`P2-I3-SOURCE-ADMISSION-GATE` passed; I03 open
 
 **Iteration:** `P2-I3`
 
 **Lane:** `AE01-L03`
 
 **Current activity iteration:** `P2-I3-I00` complete; `P2-I3-I01` audit
-accepted and complete; `P2-I3-I02` exact source admission is open at Q-002
+accepted and complete; `P2-I3-I02` exact source admission accepted and
+complete; `P2-I3-I03` open at Q-003 through Q-008
 
-**Current evidence effect:** source-current capability evidence only; no
-source admission, realization, calibration, registration, execution, or
-scientific result
+**Current evidence effect:** source-current capability evidence plus exact
+accepted source-role authority; no realization, calibration, registration,
+execution, or scientific result
 
 **Semantic authority:**
 [accepted P2-I3 brief](P2-I3-trail-or-stigmergic-field-brief.md)
@@ -130,7 +131,7 @@ state, never negative evidence or a missing substrate surface.
 | --- | --- | --- | --- |
 | `P2-I3-BRIEF-GATE` | Accepted semantic brief is projected into an owner-accepted checklist and cumulative decision record | Passed | `P2-I3-DEC-014`; opens only I01 input-freeze construction and review |
 | `P2-I3-SOURCE-AUDIT-GATE` | One frozen, source-current, read-only audit answers the accepted capability questions | Passed | Owner-passed grounded artifact review; `P2-I3-DEC-018` |
-| `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Open | Resolve `P2-I3-Q-002`; no source is admitted by I01 passage |
+| `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Passed | Owner-accepted DEC-019, exact manifest, and reconstruction; opens only I03 realization questions |
 | `P2-I3-DISCRIMINATOR-GATE` | Field realization, dynamic, causal chain, observation boundary, mode family, and operational hypotheses are frozen | Unopened | Requires source admission and decisions resolving `P2-I3-Q-003` through `P2-I3-Q-008`, `Q-013`, and design part of `Q-015` |
 | `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Unopened | Requires passed discriminator gate and `P2-I3-Q-009` through `Q-012`, plus `Q-016` |
 | `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | Requires accepted CAL-PRE package and an explicitly authorized calibration invocation |
@@ -157,6 +158,10 @@ state, never negative evidence or a missing substrate surface.
 - [x] The accepted prospective post-R3 D-039 amendment applies: reproducing a
   persistent trace is inherited substrate evidence, not sufficient ecology
   evidence.
+- [x] The core P2-I3 substrate is `LGRC9V3`. Synchronous `GRC9V3` behavior is
+  comparative-only and cannot replace, bridge, or satisfy the core
+  realization because its step/evolution/relaxation semantics differ.
+  Evidence: `P2-I3-DEC-020`.
 - [x] The project owner accepted the P2-I3 brief on 2026-07-16 as semantic
   authority. Evidence: `P2-I3-DEC-001`.
 - [x] L03 asks whether repeated costly formation creates an evolving,
@@ -189,8 +194,8 @@ state, never negative evidence or a missing substrate surface.
 | --- | --- | --- | --- | --- |
 | `P2-I3-I00` | Accepted-brief projection, cumulative decision record, and evidence-expandable checklist | Owner-accepted semantic brief | Complete and owner-accepted | `P2-I3-BRIEF-GATE=passed`; no scientific evidence |
 | `P2-I3-I01` | Source-current read-only capability audit | Passed brief gate plus accepted Q-001 freeze | Complete and owner-accepted | `P2-I3-SOURCE-AUDIT-GATE=passed` through DEC-018; no source admission or scientific evidence |
-| `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Open at Q-002 | May pass `P2-I3-SOURCE-ADMISSION-GATE`; no realization |
-| `P2-I3-I03` | Field realization, dynamics, causal factorization, operational hypotheses, and bounded runtime conformance | Passed source-admission gate | Unopened | May pass `P2-I3-DISCRIMINATOR-GATE`; no calibration or candidate evidence |
+| `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Complete and owner-accepted | `P2-I3-SOURCE-ADMISSION-GATE=passed` through DEC-019; no realization |
+| `P2-I3-I03` | Field realization, dynamics, causal factorization, operational hypotheses, and bounded runtime conformance | Passed source-admission gate | Open; decisions not yet selected | May pass `P2-I3-DISCRIMINATOR-GATE`; no calibration or candidate evidence |
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Unopened | May pass `P2-I3-CAL-PRE-GATE`; no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Unopened | May pass `P2-I3-CAL-GATE`; no candidate execution |
 | `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Unopened | May pass `P2-I3-REG-GATE`; no candidate execution |
@@ -441,7 +446,7 @@ Geometric and runtime interpretation:
 native registered topology
 + route-exclusive node coherence candidate
 + deterministic packet formation/reinforcement/withdrawal
-+ separate synchronous GRC coherence continuity
++ separate synchronous GRC coherence continuity, comparative-only
 + distinct geometric/functional/causal timing surfaces
 + complete native restoration
 
@@ -502,27 +507,88 @@ source repositories remain read-only.
 
 **Evidence effect:** source identity and role authority only.
 
-- [ ] Resolve `P2-I3-Q-002` through an accepted decision.
-- [ ] Admit the exact graph/PyGRC revision, files, public callables, and
+- [x] Resolve `P2-I3-Q-002` through accepted `P2-I3-DEC-019`.
+- [x] Admit the exact graph/PyGRC revision, files, public callables, and
   pre-existing tests by digest and evidence role.
-- [ ] Admit the exact RC-Distance source revision and file, with its role
+- [x] Admit the exact RC-Distance source revision and file, with its role
   bounded to theory/interpretation unless an operational source is separately
   demonstrated.
-- [ ] Admit every other theory source by exact revision, path, digest, and
+- [x] Admit every other theory source by exact revision, path, digest, and
   role; reject vague directory-level authority.
-- [ ] Distinguish inherited evidence, ecology interpretation, constructed
+- [x] Distinguish inherited evidence, ecology interpretation, constructed
   mechanism, missing surface, and proposed discriminator.
-- [ ] Record whether existing extension patterns permit RCAE-owned producers
+- [x] Record whether existing extension patterns permit RCAE-owned producers
   without changing PyGRC.
-- [ ] Record any source transition from historical audit identity to current
+- [x] Record any source transition from historical audit identity to current
   admitted identity.
-- [ ] Validate source digests and public callable identities.
-- [ ] Independently reconstruct the admission record.
-- [ ] Owner accepts the source bundle and passes
+- [x] Validate source digests and public callable identities.
+- [x] Independently reconstruct the admission record.
+- [x] Owner accepts the source bundle and passes
   `P2-I3-SOURCE-ADMISSION-GATE`.
 
 The admission bundle selects no field carrier, equation, realization, metric,
 or candidate outcome.
+
+### 7.1 I02 construction and review evidence
+
+- [x] Construct one exact
+  [source-admission manifest](../contracts/p2-i3/i02-source-admission-manifest.json)
+  from the accepted I01 bundle without widening the graph audit scope.
+- [x] Assign all 26 audited graph files exactly one bounded admission role.
+- [x] Bind 40 public callable identities to their exact implementation source
+  and classify them as later options, supporting implementation, or
+  explicitly nonqualifying boundary references.
+- [x] Bind all 24 accepted I01 generic-test definitions by exact file and
+  name without rerunning them or consuming their fixture values.
+- [x] Bind eight exact theory/method files: RC-Distance, four current RCAE
+  conceptual sources, and three becoming/development sources.
+- [x] Record four prospective RCAE-paper digest transitions from historical
+  P1 admission to the current I02 entry revision without rewriting P1.
+- [x] Admit the 32-source N29/N30 and 44-source predecessor inventories as
+  exact grouped projections with inherited-evidence and constructed-
+  precedent roles respectively.
+- [x] Expose the predecessor experiment names and compact primary/supporting/
+  projection-only roles in the manifest without copying source records or
+  creating a second authority; validate both projections against the exact
+  predecessor inventory.
+- [x] Record the source-backed RCAE request/declared-state producer option,
+  graph-repository non-mutation boundary, explicit native-transition rule,
+  and graph-side naturalization debt.
+- [x] Record `P2-I3-DEC-020` and reclassify synchronous `GRC9V3`,
+  `apply_continuity()`, and `step()` as comparative-only. Preserve
+  `GRC9V3State` solely as the public base-state type used by LGRC9V3.
+- [x] Reconstruct source hashes, group inventories, callable identities, test
+  definitions, role completeness, evidence classes, and external-checkout
+  cleanliness with the retained
+  [validator](../scripts/p2_i3_i02_validate.py).
+- [x] Retain the [validation result](../contracts/p2-i3/i02-admission-validation.json)
+  and [I02 report](../reports/P2-I3-I02-exact-source-admission.md).
+- [x] Apply concrete owner-review corrections and accept DEC-019 under the
+  correction-driven review convention.
+
+Implementation interpretation:
+
+```text
+26 exact graph files
++ 40 public callable identities
++ 24 exact pre-existing tests
++ 8 exact theory/method files
++ 76 exact N29/N30 and predecessor sources through two digest-bound groups
+= one accepted reconstructible later-use authority
+!= one selected realization
+```
+
+The grouped projections avoid copying 76 path/digest records while remaining
+fully dereferenceable: the validator verifies both inventory digests and every
+underlying graph source at the admitted revision. Public imports are resolved
+from the sibling graph checkout using the existing repository `.venv`; no
+callable is invoked.
+
+The eligible core substrate is narrower than the admitted PyGRC source set.
+Only LGRC9V3 may carry the core realization. GRC9V3 source remains admitted so
+its distinct dynamics can be understood and, if separately governed, compared;
+it cannot rescue a missing LGRC9V3 lifecycle or produce a positive L03 core
+classification.
 
 ## 8. `P2-I3-I03` — Realization, dynamics, and operational hypotheses
 
@@ -948,7 +1014,7 @@ from appearing earlier than its evidence permits.
 | Questions | Owning iteration | Current status |
 | --- | --- | --- |
 | `P2-I3-Q-001` | I01 audit input freeze | Resolved by `P2-I3-DEC-016`; audit active |
-| `P2-I3-Q-002` | I02 source admission | Open; blocks realization |
+| `P2-I3-Q-002` | I02 source admission | Resolved by `P2-I3-DEC-019`; no longer blocks I03 |
 | `P2-I3-Q-003`–`P2-I3-Q-008` | I03 realization and dynamics | Open; block discriminator gate |
 | `P2-I3-Q-009`–`P2-I3-Q-012` | I04 calibration preregistration | Open; block CAL-PRE |
 | `P2-I3-Q-013` | I03 assigns separate stable identities; I04 binds their measurement semantics | Open; blocks registration |
@@ -1007,6 +1073,10 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-013` | Owner correction that N29 indexes earlier work, plus direction that missing native PyGRC support must not weaken or block correct execution | Record DEC-017; activate the exact [predecessor-lineage scope extension](../contracts/p2-i3/i01-predecessor-scope-extension.json); inspect relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanisms; preserve native classifications while adding producer-completion feasibility and graph-side naturalization debt | Complete and validated; read-only source evidence only, no source admission, realization selection, experiment execution, or L03 result |
 | `P2-I3-CHG-014` | Grounded artifact review identified low-risk machine-role and citation ambiguities | Clarify that candidate-surface IDs name audit targets rather than asserting existence; mark CAP-14/15 as meta roles; mark OP-07 callables as nonqualifying topology-lineage comparisons; add precedent legend and exact scope/filter citations | Complete after targeted structural/digest validation; no classification, authority, source scope, test, execution, or scientific-effect change |
 | `P2-I3-CHG-015` | Project owner explicitly passed the grounded I01 review | Record DEC-018, accept the retained I01 package, pass SOURCE-AUDIT-GATE, and open only I02 exact source admission and Q-002 | Complete; governance status only, with no source admission, realization, execution, or scientific effect |
+| `P2-I3-CHG-016` | Passed source-audit gate and owner direction to perform I02 | Construct DEC-019 proposal, exact source/callable/test/theory manifest, static reconstruction validator, validation result, and narrative report without widening I01 or selecting a realization | Review-ready; Q-002 and SOURCE-ADMISSION-GATE remain open pending correction-driven owner review |
+| `P2-I3-CHG-017` | Owner clarified during I02 review that only LGRC9V3 is the target substrate and synchronous GRC9V3 has materially different per-step relaxation/evolution | Record DEC-020; reclassify GRC9V3 class/continuity/step identities as comparative-only; forbid substitution or bridge relabeling; rerun exact manifest reconstruction | Complete as bounded I02 correction; no source scope, realization, runtime, or scientific-effect change |
+| `P2-I3-CHG-018` | Owner found that the compact manifest exposed N29/N30 but hid the exact earlier experiment lineage behind a generic predecessor group | Add a validator-bound `included_experiments` projection and compact role summary while retaining the digest-bound inventory as sole source-level authority | Complete as discoverability correction; no duplicated source records, admission widening, role change, realization, runtime, or scientific effect |
+| `P2-I3-CHG-019` | Project owner accepts the corrected I02 manifest | Accept DEC-019, resolve Q-002, pass SOURCE-ADMISSION-GATE, and open only I03 realization questions | Complete; exact source-role authority only, with no realization, runtime conformance, calibration, execution, or scientific effect |
 
 ## 19. Evidence ledger
 
@@ -1026,9 +1096,13 @@ and evidence effect are retained.
 | `P2-I3-EV-009` | [I01 narrative audit](../reports/P2-I3-I01-source-current-capability-audit.md) | I01 | Human interpretation of source facts and missing surfaces | Accepted; no source admission or scientific result |
 | `P2-I3-EV-010` | [I01 audit validation](../contracts/p2-i3/i01-audit-validation.json) | I01 | Package-completeness and quarantine validation only | Accepted; machine validation and source-audit gate passed through DEC-018 |
 | `P2-I3-EV-011` | [N29/N30 mechanism inventory](../contracts/p2-i3/i01-n29-n30-mechanism-inventory.json) and [predecessor mechanism lineage](../contracts/p2-i3/i01-predecessor-mechanism-lineage.json) | I01 | Source-current experiment-mechanism and producer-feasibility evidence only | Accepted under original claim ceilings; cannot upgrade native capability or select P2-I3 realization |
+| `P2-I3-EV-012` | [I02 source-admission manifest](../contracts/p2-i3/i02-source-admission-manifest.json) | I02 | Exact accepted source and role authority only | Accepted; 26 graph files, 40 callables, 24 tests, 8 theory sources, and 76 grouped precedents |
+| `P2-I3-EV-013` | [I02 validation](../contracts/p2-i3/i02-admission-validation.json) and [report](../reports/P2-I3-I02-exact-source-admission.md) | I02 | Reconstruction and human interpretation of the admission bundle | Passed reconstruction; SOURCE-ADMISSION-GATE passed with no realization, runtime, or scientific effect |
+| `P2-I3-EV-014` | Owner substrate clarification retained as DEC-020/CHG-017 | I02 | Eligible-substrate and interpretation boundary only | Accepted: LGRC9V3 core, GRC9V3 comparative-only; no realization selected |
 
-No source admission, realization, calibration, registration, runtime,
-control, reconstruction, or scientific evidence exists yet for P2-I3.
+No realization, calibration, registration, runtime, control, or scientific
+evidence exists yet for P2-I3. Accepted I02 authority is limited to exact
+source identities and roles.
 
 ## 20. Current stop and next permitted action
 
@@ -1044,11 +1118,16 @@ accepted semantic brief
 + environment preflight passed after owner-authorized pytest installation
 + complete source-current audit package retained and validated
 = P2-I3-SOURCE-AUDIT-GATE passed
-!= owner review complete or gate passed
++ exact I02 source/callable/test/theory authority retained
++ I02 source and public-identity reconstruction passed
++ LGRC9V3 core / GRC9V3 comparative-only boundary fixed by DEC-020
++ P2-I3-Q-002 resolved by DEC-019
+= P2-I3-SOURCE-ADMISSION-GATE passed
+!= field realization or discriminator gate passed
 ```
 
-The next permitted action is owner review of the bounded I01 package. Concrete
-comments trigger one correction pass; absent a concrete objection, a direction
-to continue records the audit as accepted and passes only
-`P2-I3-SOURCE-AUDIT-GATE` under DEC-015. I02 source admission must still
-resolve Q-002 separately.
+The next permitted action is I03 realization work: resolve Q-003 through Q-008
+and the I03 portions of Q-013 and Q-015 from the admitted LGRC9V3-native and
+explicit RCAE-producer options. Source-admission passage does not itself select
+a carrier, equation, dynamic, response, producer, or mode, and authorizes no
+calibration or scientific execution.

@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.50
+**Baseline revision:** 0.53 draft
 
 **Date:** 2026-07-16
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.50 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.53 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 source-audit gate passed | P2-GATE | P2-I3 I02 exact source admission open; realization and execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I02 accepted, I03 open | P2-GATE | P2-I3 source-admission gate passed; realization and execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1337,8 +1337,16 @@ Entry condition:
 - [x] Owner passes the grounded eleven-artifact I01 review after bounded
   CHG-014 clarification. Evidence: `P2-I3-DEC-018`; source-audit gate passed
   at revision 0.50 with no source admission or realization selection.
-- [ ] Complete I02 exact source admission and resolve Q-002. Do not select a
-  realization or promote producer precedent to native capability.
+- [x] Construct and accept the exact I02 source-admission bundle and
+  retain DEC-019, 26 exact graph source roles, 40 callable identities, 24
+  exact pre-existing tests, eight theory/method identities, two digest-bound
+  precedent inventories, and independent reconstruction. Evidence: accepted
+  DEC-019; source-admission gate passed at revision 0.53.
+- [x] Record owner-directed DEC-020: LGRC9V3 is the sole eligible core
+  substrate; synchronous GRC9V3 evolution is comparative-only and cannot
+  replace, bridge, or satisfy the L03 core.
+- [x] Owner reviews I02 and resolves Q-002. Do not select a realization or
+  promote producer precedent to native capability.
 
 Required lane work:
 
@@ -2199,6 +2207,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-GATE | Complete 234/234 C02 evidence, corrected I09A control projection, I10 retained-evidence reconstruction, and owner-accepted 30/30 I11 terminal closeout | 2026-07-15 | DEC-061; passed with `supported_bounded_candidate`, `AE01-L02-R05`, `scaffold_dependent`, and `T3_operational_class`; synthesis and native-substitution work remain unopened |
 | P2-I3-BRIEF-GATE | Accepted and R05-corrected P2-I3 semantic brief plus owner-accepted cumulative decision record and evidence-expandable checklist through DEC-014/CHG-005 | 2026-07-16 | Passed; opens only I01 input-freeze construction and review, with no source audit, admission, realization, calibration, registration, execution, or evidence effect |
 | P2-I3-SOURCE-AUDIT-GATE | Accepted DEC-016 input freeze; DEC-017 native-priority/producer-completion rule; 15 capability and 10 operation dispositions; 27 exact public/theory sources, 32 N29/N30 mechanism sources, and 44 predecessor-lineage sources; 24 passing targeted pre-existing tests; bounded native shortlist, producer feasibility, and classified naturalization debt; no source admission or scientific result | 2026-07-16 | Passed through grounded review and DEC-018; opens only I02 exact source admission and Q-002 |
+| P2-I3-SOURCE-ADMISSION-GATE | Exact I02 graph, callable, test, theory, and precedent identities with one bounded role each; source transitions, RCAE-producer/PyGRC non-mutation boundary, DEC-020 LGRC9V3-only core boundary, and validator-bound predecessor visibility explicit; no realization or scientific effect | 2026-07-16 | Accepted DEC-019 manifest reconstructs after CHG-017/018; Q-002 resolved and gate passed |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2295,7 +2304,10 @@ Change log:
 | CL-050 | 2026-07-16 | Revision 0.47 records DEC-015's correction-driven review convention and constructs the review-ready P2-I3 I01 input-freeze candidate with exact clean graph/theory identities, fifteen capability questions, ten operation dispositions, allowed commands, output contracts, and synthetic probes disabled. | P2-I3 I01 input-freeze review | Superseded by CL-051 after freeze acceptance and audit execution |
 | CL-051 | 2026-07-16 | Revision 0.48 records DEC-016 acceptance of Q-001 and the exact input freeze, owner-authorized installation of the missing pytest prerequisite into RCAE `.venv`, and the complete P2-I3 I01 read-only audit. The review-ready package resolves 15 capability and 10 operation dispositions, binds 27 exact sources, passes 24 targeted pre-existing tests, separates passive evidence from field state, and retains a bounded native shortlist plus explicit missing lifecycle, intervention, participant-role, and local-response surfaces. | P2-I3 I01 source-audit review | Superseded by CL-052 after mechanism-lineage expansion |
 | CL-052 | 2026-07-16 | Revision 0.49 follows the owner-corrected N29 index into relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanisms and records DEC-017. Native classifications remain unchanged; semantically adequate native support has priority, while absent or unsuitable native operations become explicit RCAE request-producer or declared-state-producer obligations plus graph-side naturalization debt. Exact N29/N30 and 44-source predecessor inventories are retained and validated without rerunning an experiment or assigning source admission, realization, or L03 evidence. | P2-I3 I01 bounded mechanism-lineage correction | Superseded by CL-053 after grounded review and acceptance |
-| CL-053 | 2026-07-16 | Revision 0.50 records the grounded eleven-artifact I01 review passage after bounded CHG-014 machine-role/citation clarification. DEC-018 accepts the complete I01 package and passes SOURCE-AUDIT-GATE; all native classifications, producer-feasibility boundaries, source identities, test results, quarantine, and claim ceilings remain unchanged. | P2-I3 I01 acceptance and I02 entry | Active; I01 complete, I02 exact source admission open, with no source yet admitted or realization selected |
+| CL-053 | 2026-07-16 | Revision 0.50 records the grounded eleven-artifact I01 review passage after bounded CHG-014 machine-role/citation clarification. DEC-018 accepts the complete I01 package and passes SOURCE-AUDIT-GATE; all native classifications, producer-feasibility boundaries, source identities, test results, quarantine, and claim ceilings remain unchanged. | P2-I3 I01 acceptance and I02 entry | Superseded by CL-054 when the I02 proposal was constructed |
+| CL-054 | 2026-07-16 | Revision 0.51 draft constructs the review-ready P2-I3 I02 exact source-admission proposal. DEC-019 binds 26 graph files, 40 public callables, 24 pre-existing tests, eight theory/method sources, and 76 grouped N29/N30/predecessor sources; records current RCAE-paper transitions and the RCAE-producer/PyGRC non-mutation boundary; and passes independent static reconstruction. | P2-I3 I02 owner-review boundary | Superseded by CL-055 after the substrate-role correction |
+| CL-055 | 2026-07-16 | Revision 0.52 draft records owner-directed DEC-020/CHG-017. LGRC9V3 is the sole eligible core substrate; synchronous GRC9V3 class/continuity/step identities are comparative-only and cannot replace or bridge LGRC execution because their step/evolution/relaxation semantics differ. Source scope and counts remain unchanged and exact reconstruction is rerun. | P2-I3 corrected I02 owner-review boundary | Superseded by CL-056 after visibility correction and owner acceptance |
+| CL-056 | 2026-07-16 | Revision 0.53 draft adds validator-bound visibility for the admitted N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 lineage without copying its 44 source records, then records owner acceptance of corrected DEC-019. Q-002 is resolved and SOURCE-ADMISSION-GATE passes; I03 opens with no realization, runtime, calibration, or scientific effect. | P2-I3 I02 acceptance and I03 entry | Active; Q-003 through Q-008 now own realization selection |
 
 ## 17. Current next actions
 
@@ -2364,6 +2376,11 @@ The next unchecked actions in dependency order are:
 19. [x] Review the constructed P2-I3 I01 capability-audit input freeze,
     resolve Q-001 through DEC-016, and accept it before any read-only audit
     activity.
-20. [ ] Review the complete P2-I3 I01 source-current capability package. A
+20. [x] Review the complete P2-I3 I01 source-current capability package. A
     direction to continue with no concrete correction passes only
     `P2-I3-SOURCE-AUDIT-GATE` under DEC-015 and opens I02/Q-002.
+21. [x] Review the complete P2-I3 I02 exact source-admission proposal. A
+    direction to continue with no concrete correction accepts DEC-019,
+    resolves Q-002, and passes only `P2-I3-SOURCE-ADMISSION-GATE`; I03 remains
+    separately gated. DEC-020 already fixes LGRC9V3 as the core substrate and
+    GRC9V3 as comparative-only.

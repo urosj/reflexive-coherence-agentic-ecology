@@ -1,8 +1,8 @@
 # P2-I3 Decision Record
 
 **Status:** active cumulative lane decision record; initial governance package
-accepted, `P2-I3-BRIEF-GATE` and `P2-I3-SOURCE-AUDIT-GATE` passed, and I02
-source admission open
+accepted, `P2-I3-BRIEF-GATE`, `P2-I3-SOURCE-AUDIT-GATE`, and
+`P2-I3-SOURCE-ADMISSION-GATE` passed; I03 realization questions are open
 
 **Lane:** `AE01-L03`
 
@@ -80,6 +80,8 @@ No decision may be inferred from:
 | `P2-I3-DEC-016` | What exact scope resolves Q-001 and authorizes I01 audit activity? | Accept the review-ready I01 input freeze without correction | Opens only the frozen read-only capability audit | 2026-07-16 |
 | `P2-I3-DEC-017` | Does missing native PyGRC coverage block a scientifically correct P2-I3 realization? | No: use semantically adequate native capability first and complete missing functions through explicit RCAE-owned producers | Converts native gaps into producer requirements and graph-side naturalization demands without weakening the experiment | 2026-07-16 |
 | `P2-I3-DEC-018` | Does the complete grounded I01 package pass the source-audit gate? | Accepted by project owner after grounded artifact review and bounded CHG-014 clarification | Passes source-audit gate and opens only I02 exact source admission and Q-002 | 2026-07-16 |
+| `P2-I3-DEC-019` | Which exact theory, graph, callable, test, and precedent identities resolve Q-002? | Accepted exact I02 bundle after bounded substrate and visibility corrections | Passes source-admission gate and opens only I03 realization questions | 2026-07-16 |
+| `P2-I3-DEC-020` | May synchronous GRC9V3 evolution replace or bridge the required LGRC9V3 substrate? | No; LGRC9V3 is the core substrate and GRC9V3 is comparative-only | Corrects I02 roles and prevents a GRC result from satisfying or substituting for the L03 core | 2026-07-16 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -897,7 +899,129 @@ shows that a load-bearing I01 fact was classified from the wrong revision or
 evidence class. A new implementation preference or producer alternative does
 not reopen I01.
 
-## 21. Open decision register
+## 21. `P2-I3-DEC-019` — Exact I02 source admission
+
+### Question
+
+Which exact theory and graph revisions, files, public callables, pre-existing
+tests, producer precedents, and evidence roles may P2-I3 realization work
+consume?
+
+### Accepted resolution
+
+Admit the exact
+[I02 source manifest](../contracts/p2-i3/i02-source-admission-manifest.json)
+after correction-driven owner review. The accepted bundle binds:
+
+- graph/PyGRC revision
+  `83e3a300426631ee4df71b661b67d4fcfdfed594`, all 26 graph files in the
+  accepted I01 source-digest inventory, 40 public callable identities, and 24
+  exact pre-existing generic tests;
+- geometric-theory revision
+  `e0d25bf69b8bf681eb8d092ba416497030e5d88e` with the exact RC-Distance and
+  three becoming/development files named by the brief;
+- RCAE revision `8f09ae2f9abf734829f8f046b9be2015ae007458` with the four
+  current conceptual/method papers named by the brief;
+- the exact 32-source N29/N30 inventory as inherited evidence and orientation
+  only; and
+- the exact 44-source predecessor inventory as constructed-producer/control
+  precedent only.
+
+Every graph source receives exactly one package, interface, runtime-option,
+measurement-option, restoration-option, conformance, claim-boundary, or
+comparative/exclusion role. Public callables are admitted only as later options,
+supporting implementation identities, or explicitly nonqualifying boundary
+references. Their presence does not select or prove a complete realization.
+
+DEC-020 further constrains the bundle: P2-I3 targets `LGRC9V3`. The
+`GRC9V3` class, `apply_continuity()`, and synchronous `step()` are retained
+only as comparative-substrate identities. Their distinct full-step evolution
+and relaxation semantics cannot replace an LGRC9V3 realization or discharge
+an LGRC9V3 missing surface. `GRC9V3State` remains admitted because it is the
+public base-state type used by LGRC9V3, not because synchronous GRC execution
+is an eligible core path.
+
+The four RCAE conceptual files have changed since their historical P1-I1
+admission. I02 therefore records both the P1 digest and the current committed
+I02 digest. This prospective lane-local transition neither rewrites the P1
+inventory nor changes an earlier claim.
+
+Under DEC-017, the admitted predecessor sources establish that an RCAE-owned
+request or declared-state producer is a permissible later option without any
+PyGRC-repository change. Such a producer remains constructed, may invoke only
+admitted public native operations, may not author the desired outcome or hide
+a global selector, and exports every load-bearing missing native pattern as
+naturalization debt. Native replacement later requires an explicit source and
+realization transition plus rerun.
+
+The five evidence classes remain distinct: graph and prior-experiment facts
+are inherited evidence; theory sources constrain ecology interpretation;
+producer precedents support only a constructed mechanism; I01 gaps remain
+missing surfaces; and the brief remains a proposed discriminator rather than
+evidence.
+
+### Gate effect
+
+The project owner accepted the corrected manifest on 2026-07-16. DEC-019
+therefore resolves Q-002 and passes `P2-I3-SOURCE-ADMISSION-GATE`, opening only
+I03 questions Q-003 through Q-008. It does not select a source combination for
+execution, carrier, dynamic, equation, producer, response, metric, or result.
+
+### Reopening condition
+
+A later realization needs an unadmitted source or callable; a new graph
+revision changes a load-bearing operation, restoration identity, or missing-
+surface classification; a theory-source change alters lane meaning; an
+admitted producer pattern cannot be reconstructed from the exact inventory;
+or a native transition is proposed for a retained RCAE producer.
+
+## 22. `P2-I3-DEC-020` — LGRC9V3 substrate authority
+
+### Question
+
+May P2-I3 use synchronous `GRC9V3` evolution as a replacement, bridge, or
+equivalent implementation of the required `LGRC9V3` substrate?
+
+### Selected resolution
+
+No. The project owner clarified that P2-I3 is interested in the `LGRC9V3`
+substrate. `GRC9V3` and `LGRC9V3` have different step ownership and different
+per-step evolution/relaxation semantics. In particular, the public LGRC9V3
+runtime processes one deterministic queue event and explicitly does not call
+synchronous `GRC9V3.step()`.
+
+Therefore:
+
+- the core P2-I3 realization must execute over `LGRC9V3`;
+- native-priority under DEC-017 means semantically adequate native LGRC9V3
+  capability, not any operation exported by the broader PyGRC package;
+- an RCAE producer may complete missing LGRC9V3 functions but may not call a
+  GRC9V3 step and relabel the result as LGRC9V3 behavior;
+- a separately described GRC9V3 result may be retained as interesting
+  comparative evidence; and
+- a GRC9V3-only positive result leaves the L03 core unsupported or blocked by
+  a missing LGRC9V3 surface, according to the registered execution state.
+
+This decision does not choose a route-local carrier, field dynamic, equation,
+producer, response, or metric. It fixes only the eligible substrate family
+and interpretation boundary.
+
+### Gate effect
+
+I02 must classify `GRC9V3`, `GRC9V3.apply_continuity()`, and
+`GRC9V3.step()` as `supporting_comparative_substrate_only`. I03 cannot select
+them as the core realization or use them to close Q-004. A future GRC9V3
+comparative study requires a separately governed scope and cannot pass the
+core P2-I3 discriminator or lane gate.
+
+### Reopening condition
+
+The project owner explicitly changes the primary substrate, or a future
+source-current LGRC9V3 implementation natively incorporates an operation with
+the required semantics. The latter changes LGRC9V3 capability classification;
+it does not make a historical GRC9V3 result equivalent retroactively.
+
+## 23. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -905,7 +1029,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | Question ID | Question | Earliest decision point | Blocking effect |
 | --- | --- | --- | --- |
 | `P2-I3-Q-001` | What exact read-only capability-audit scope examines route-local field, timing, distance, packet, route, intervention, and restoration surfaces? | I01 input freeze | Resolved by `P2-I3-DEC-016`; no longer blocks audit |
-| `P2-I3-Q-002` | Which exact theory and graph revisions, files, public callables, and evidence roles are admitted? | I02 source admission | Blocks realization selection |
+| `P2-I3-Q-002` | Which exact theory and graph revisions, files, public callables, and evidence roles are admitted? | I02 source admission | Resolved by `P2-I3-DEC-019`; no longer blocks I03 |
 | `P2-I3-Q-003` | Is the field carrier edge-, node-, corridor-, or another route-local surface? | I03 realization selection | Blocks discriminator freeze |
 | `P2-I3-Q-004` | Is each required function native, minimally producer-assisted, constructed, unsuitable, or missing? | I03 after I01/I02 | Blocks realization acceptance |
 | `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze | Blocks operational hypotheses |
@@ -925,7 +1049,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 
-## 22. Decision protocol for subsequent work
+## 24. Decision protocol for subsequent work
 
 For each open question:
 
@@ -943,24 +1067,25 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 23. Current boundary
+## 25. Current boundary
 
-Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-018` define semantic and
-process boundaries, accept the exact I01 read-only capability audit, and pass
-`P2-I3-SOURCE-AUDIT-GATE`.
-They assign no source admission, runtime carrier, equation, exact registered
-values, calibration, registration, execution, result, appendix activation, or
-specification-promotion authority.
+Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-020` define semantic and
+process boundaries, accept the exact I01 read-only capability audit and I02
+source bundle, pass `P2-I3-SOURCE-AUDIT-GATE` and
+`P2-I3-SOURCE-ADMISSION-GATE`, and restrict the core substrate to LGRC9V3.
+They assign no runtime carrier, equation, exact registered values, calibration,
+registration, execution, result, appendix activation, or specification-
+promotion authority.
 
 The frozen I01 environment preflight and read-only audit are complete. The
-accepted package classifies source-current capabilities only; it does not
-resolve Q-002 or assign source admission, carrier, dynamic, equation, response,
-conformance, calibration, execution, or L03 evidence.
+accepted I02 package fixes exact source identities and roles but does not
+assign a carrier, dynamic, equation, response, conformance result, calibration,
+execution, or L03 evidence.
 
 The audit distinguishes public synchronous `GRC9V3` coherence continuity
-from the separate `LGRC9V3` queue-event runtime. This preserves the native
-dynamic as an I02/I03 option without silently selecting a bridge, conflating
-execution ownership, or claiming a native LGRC-integrated field lifecycle.
+from the separate `LGRC9V3` queue-event runtime. DEC-020 now fixes the former
+as comparative-only: it cannot become an I03 core option or silently bridge
+the missing LGRC-integrated field lifecycle.
 
 Missing or inadequate native coverage is not a reason to weaken or stop the
 P2-I3 causal question. Under `P2-I3-DEC-017`, I01 records the native gap and
@@ -968,8 +1093,9 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted action is I02 exact source admission and resolution of
-`P2-I3-Q-002`. I02 must choose exact source files, public callables, evidence
-roles, revisions, and digests from the accepted audit without silently
-upgrading producer precedents to native capability. No realization or
-scientific activity is yet open.
+The next permitted action is I03 realization work and recorded resolution of
+Q-003 through Q-008. I03 must compare admitted LGRC9V3-native and explicit
+RCAE-producer completion paths without silently upgrading producer precedents
+to native capability or weakening the dynamic-field-to-local-traversal
+discriminator. No runtime conformance, calibration, candidate execution, or
+scientific activity is authorized merely by source-admission passage.

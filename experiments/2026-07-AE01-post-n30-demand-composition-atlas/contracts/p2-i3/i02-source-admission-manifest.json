@@ -1,0 +1,492 @@
+{
+  "artifact_id": "P2-I3-I02-SOURCE-ADMISSION-MANIFEST",
+  "artifact_version": "1.0.0",
+  "status": "accepted",
+  "iteration_id": "P2-I3-I02",
+  "lane_id": "AE01-L03",
+  "question_id": "P2-I3-Q-002",
+  "decision_id": "P2-I3-DEC-019",
+  "controlling_decision_ids": ["P2-I3-DEC-017", "P2-I3-DEC-020"],
+  "purpose": "Fix the exact theory, graph, public-callable, pre-existing-test, and producer-precedent identities that later P2-I3 realization work may consume, without selecting a realization or upgrading source evidence.",
+  "evidence_effect": "Accepted exact source identity and bounded role authority only. P2-I3-SOURCE-ADMISSION-GATE is passed; no realization or scientific authority follows.",
+  "acceptance": {
+    "accepted_by": "project_owner",
+    "accepted_on": "2026-07-16",
+    "gate": "P2-I3-SOURCE-ADMISSION-GATE",
+    "gate_status": "passed",
+    "opens": ["P2-I3-I03", "P2-I3-Q-003", "P2-I3-Q-004", "P2-I3-Q-005", "P2-I3-Q-006", "P2-I3-Q-007", "P2-I3-Q-008"],
+    "does_not_authorize": ["realization_selection_without_I03_decisions", "runtime_conformance", "calibration", "registration", "candidate_execution", "scientific_interpretation"]
+  },
+  "repository_identities": {
+    "reflexive_coherence_agentic_ecology": {
+      "repository_name": "reflexive-coherence-agentic-ecology",
+      "portable_locator": "current-repository",
+      "revision": "8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "role": "I02 entry authority and current RCAE theory-source identity"
+    },
+    "rcae_theory": {
+      "repository_name": "reflexive-coherence-agentic-ecology",
+      "portable_locator": "current-repository",
+      "revision": "8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "role": "Exact committed identity for the four RCAE conceptual sources"
+    },
+    "graph_runtime": {
+      "repository_name": "graph-reflexive-coherence",
+      "portable_locator": "external-repository:graph-reflexive-coherence",
+      "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "required_worktree_state": "clean",
+      "read_only_required": true
+    },
+    "geometric_theory": {
+      "repository_name": "geometric-reflexive-coherence",
+      "portable_locator": "external-repository:geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "required_worktree_state": "clean",
+      "read_only_required": true
+    }
+  },
+  "frozen_i01_inputs": [
+    {
+      "artifact_id": "P2-I3-I01-AUDIT-VALIDATION",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-audit-validation.json",
+      "sha256": "a6449d7f12a0fb570e619a3a237f17669990d2f4317a9f302e77a144a7a06444"
+    },
+    {
+      "artifact_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-capability-audit-input-freeze.json",
+      "sha256": "109deafa964467da01dbaeb2d62d65177f034c3dd8e4f8a7da9d4a973de1180a"
+    },
+    {
+      "artifact_id": "P2-I3-I01-CAPABILITY-MATRIX",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-capability-matrix.json",
+      "sha256": "b3e4de5abbfc7459a4237fa19ce215e11425316a549326bb251077dc2ff2ba08"
+    },
+    {
+      "artifact_id": "P2-I3-I01-OPERATION-DISPOSITIONS",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-operation-dispositions.json",
+      "sha256": "78fc64d85318653f1969a710833572a4472965ca7a5b588650335e4363b71ac4"
+    },
+    {
+      "artifact_id": "P2-I3-I01-SOURCE-DIGESTS",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-source-digests.json",
+      "sha256": "cdf914a1c496fa13215c5a6cedb7fded9d689bd805f3f554015abc37b455c94e"
+    },
+    {
+      "artifact_id": "P2-I3-I01-N29-N30-MECHANISM-INVENTORY",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-n29-n30-mechanism-inventory.json",
+      "sha256": "4eab3a414ed50cc411018aa004c10b36f6c58040e0cb69c0713d5e26d1cd8920"
+    },
+    {
+      "artifact_id": "P2-I3-I01-PREDECESSOR-MECHANISM-LINEAGE",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-predecessor-mechanism-lineage.json",
+      "sha256": "84e82d5b28b017e437a8bd19ba8b7a80d6b37fe94bca707394efc3f759d91769"
+    },
+    {
+      "artifact_id": "P2-I3-I01-NARRATIVE-AUDIT",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I01-source-current-capability-audit.md",
+      "sha256": "435b705b3c940e36f7c86cae41ffaa35ddc5e53b954213cf86e11bbe5290e698"
+    },
+    {
+      "artifact_id": "P2-I3-I01-COMMAND-PROVENANCE",
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I01-command-provenance.md",
+      "sha256": "f09b380b8d6403cc33c10db52ace2eaffbd259da883460a87be8a306d2f71e8e"
+    }
+  ],
+  "historical_source_authority": {
+    "artifact_id": "AE01-P1-I1-SOURCE-INVENTORY",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md",
+    "sha256": "ed317a5f8f5729966ca43caccc60037b0c83c273f26061fd5c79d9b45ab9de09",
+    "role": "Ground the four historical P1 RCAE-paper digests without changing their original admission or claims."
+  },
+  "graph_source_admissions": [
+    {
+      "admission_role": "admitted_package_identity",
+      "source_ids": ["P2-I3-SRC-001", "P2-I3-SRC-003", "P2-I3-SRC-006"],
+      "consumption_boundary": "Package metadata, public exports, and compatibility facade only; these identities do not select an implementation."
+    },
+    {
+      "admission_role": "admitted_interface_source",
+      "source_ids": ["P2-I3-SRC-002"],
+      "consumption_boundary": "Common state, snapshot, save, reset, and rebase contracts only."
+    },
+    {
+      "admission_role": "admitted_runtime_option_source",
+      "source_ids": [
+        "P2-I3-SRC-005",
+        "P2-I3-SRC-007",
+        "P2-I3-SRC-008",
+        "P2-I3-SRC-009",
+        "P2-I3-SRC-011",
+        "P2-I3-SRC-012",
+        "P2-I3-SRC-014"
+      ],
+      "consumption_boundary": "May constrain or supply a later registered native option. Admission does not bridge synchronous GRC and event-time LGRC, select a carrier, or make a missing lifecycle native."
+    },
+    {
+      "admission_role": "supporting_comparative_substrate_only",
+      "source_ids": ["P2-I3-SRC-004"],
+      "consumption_boundary": "GRC9V3 full-step and continuity behavior may support a separately identified comparative or interesting result only. Its different per-step evolution and relaxation semantics cannot replace, bridge, or satisfy the required LGRC9V3 realization."
+    },
+    {
+      "admission_role": "admitted_measurement_option_source",
+      "source_ids": ["P2-I3-SRC-013"],
+      "consumption_boundary": "Distance and timing surfaces are later measurement options. They are not traversal response and do not establish an operational shortcut."
+    },
+    {
+      "admission_role": "admitted_restoration_option_source",
+      "source_ids": ["P2-I3-SRC-010"],
+      "consumption_boundary": "Native restoration identity may cover admitted PyGRC state only. Any RCAE field, producer, intervention, or policy state remains externally composed."
+    },
+    {
+      "admission_role": "supporting_exclusion_only",
+      "source_ids": ["P2-I3-SRC-015"],
+      "consumption_boundary": "The post-hoc pheromone classifier is admitted only as an explicit non-live-field exclusion and cannot enter realization or response."
+    },
+    {
+      "admission_role": "supporting_conformance_only",
+      "source_ids": [
+        "P2-I3-SRC-016",
+        "P2-I3-SRC-017",
+        "P2-I3-SRC-018",
+        "P2-I3-SRC-019",
+        "P2-I3-SRC-020",
+        "P2-I3-SRC-021",
+        "P2-I3-SRC-022"
+      ],
+      "consumption_boundary": "Pre-existing generic conformance only; no test fixture or outcome becomes P2-I3 calibration, candidate evidence, or a registered value."
+    },
+    {
+      "admission_role": "supporting_claim_boundary_only",
+      "source_ids": ["P2-I3-SRC-023", "P2-I3-SRC-024", "P2-I3-SRC-025", "P2-I3-SRC-026"],
+      "consumption_boundary": "Accepted graph claim boundaries only; no closeout prose upgrades a missing field, local response, intervention, or participant-role surface."
+    }
+  ],
+  "theory_source_admissions": [
+    {
+      "source_id": "P2-I3-I02-TH-001",
+      "repository": "geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "path": "investigations/2026-01-RC-Distance-v4.md",
+      "sha256": "85c34229212c7ef0a67dd9baaa50ea755ba45701f7a99b60e4112f1a33b4ef70",
+      "evidence_class": "ecology_interpretation",
+      "role": "Support-derived space, induced geometry, state-indexed distance, and geometric-versus-operational separation",
+      "consumption_boundary": "Theory and interpretation only; no runtime capability, equation, traversal response, or L03 result."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-002",
+      "repository": "reflexive-coherence-agentic-ecology",
+      "revision": "8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "path": "papers/2026-06-FromStateToBecoming.md",
+      "sha256": "0c5b29ffa5c2f80f9d23cb3a3e0b0c3b520de553503467fe07e97de119438a47",
+      "evidence_class": "ecology_interpretation",
+      "role": "State-to-geometry transition and observation-first developmental method",
+      "consumption_boundary": "May guide interpretation and next moves; cannot fix a predicted class or runtime mechanism."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-003",
+      "repository": "reflexive-coherence-agentic-ecology",
+      "revision": "8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "path": "papers/2026-06-RC-AgenticEcology.md",
+      "sha256": "016772843c51abab0209ef0fb2ceaa971d18a24f127f35f64fa55b8c86cd3f9e",
+      "evidence_class": "ecology_interpretation",
+      "role": "Local differentiation, support, ecology, and claim-boundary vocabulary",
+      "consumption_boundary": "No native agency, collective identity, implemented ecology, or domain runtime follows."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-004",
+      "repository": "reflexive-coherence-agentic-ecology",
+      "revision": "8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "path": "papers/2026-06-TheSharedMedium.md",
+      "sha256": "912ef88f5815581d0f1d2e9922575c611ee41246a07f19f99975a6deb22a232e",
+      "evidence_class": "ecology_interpretation",
+      "role": "Medium as condition of routes, traces, boundaries, and later possibilities",
+      "consumption_boundary": "Does not supply implemented stigmergy, coordination, or a live field."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-005",
+      "repository": "reflexive-coherence-agentic-ecology",
+      "revision": "8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "path": "papers/2026-06-SharedMediumCoordination-EngineeringSpec.md",
+      "sha256": "025d59e2464cf8e678a88abe4484b2d8c6b19d808469e3ffa2047f3f941f2e46",
+      "evidence_class": "ecology_interpretation",
+      "role": "Surface, perturbation, persistence, saturation, withdrawal, and hidden-controller method",
+      "consumption_boundary": "Method source only; not a PyGRC runtime specification or proof of an adequate trail field."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-006",
+      "repository": "geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "path": "arc-of-becoming/2026-05-ClassificationOfBecoming.md",
+      "sha256": "3893fcf20ec8c9596dd2540b812774d53f5aef308e2da6f017f4bbc241fdcc25",
+      "evidence_class": "ecology_interpretation",
+      "role": "Observation-first classification",
+      "consumption_boundary": "Cannot force the predicted developmental or scientific class."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-007",
+      "repository": "geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "path": "arc-of-becoming/2026-05-InterrogationofBecoming.md",
+      "sha256": "c6b5bb55bbb928668ec75e17bf7bf29bb01d3e015aaaae5086aa95ff3894f763",
+      "evidence_class": "ecology_interpretation",
+      "role": "Lowest-honest-boundary discipline",
+      "consumption_boundary": "Cannot authorize a rung above retained evidence."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-008",
+      "repository": "geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "path": "reflexive-coherence-development/2026-06-BecomingAndDevelopment-TwoAxisGuide.md",
+      "sha256": "a388fb87d26d263625d94023604fb8b5a9e338d4cf6ce682db3477dd6a1ab629",
+      "evidence_class": "ecology_interpretation",
+      "role": "Separate observed appearance from the next condition to change",
+      "consumption_boundary": "Does not predefine the next developmental answer or permit post-outcome threshold tuning."
+    }
+  ],
+  "source_transitions": [
+    {
+      "source_id": "P2-I3-I02-TH-002",
+      "historical_authority": "P1-I1 source inventory",
+      "historical_sha256": "1d1c956150c45950a5ac2ec9ed0034bb5bcfb5fdd90cfad1ced7f6d709b71055",
+      "admitted_sha256": "0c5b29ffa5c2f80f9d23cb3a3e0b0c3b520de553503467fe07e97de119438a47",
+      "effect": "P2-I3 consumes the current committed theory text; P1 historical admission and claims remain unchanged."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-003",
+      "historical_authority": "P1-I1 source inventory",
+      "historical_sha256": "2a297086ae9de709a840b385910433136440d920a092c290fafc62e3560021a3",
+      "admitted_sha256": "016772843c51abab0209ef0fb2ceaa971d18a24f127f35f64fa55b8c86cd3f9e",
+      "effect": "P2-I3 consumes the current committed theory text; P1 historical admission and claims remain unchanged."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-004",
+      "historical_authority": "P1-I1 source inventory",
+      "historical_sha256": "c2c2371525036b3a56e88a38d8ca51bf140a9b16a897378c50b01be5ec076c45",
+      "admitted_sha256": "912ef88f5815581d0f1d2e9922575c611ee41246a07f19f99975a6deb22a232e",
+      "effect": "P2-I3 consumes the current committed theory text; P1 historical admission and claims remain unchanged."
+    },
+    {
+      "source_id": "P2-I3-I02-TH-005",
+      "historical_authority": "P1-I1 source inventory",
+      "historical_sha256": "db249acdfc95a245e4fadbb90a31eec687c7550f51b59414734f4cabd57730df",
+      "admitted_sha256": "025d59e2464cf8e678a88abe4484b2d8c6b19d808469e3ffa2047f3f941f2e46",
+      "effect": "P2-I3 consumes the current committed method text; P1 historical admission and claims remain unchanged."
+    }
+  ],
+  "grouped_source_admissions": [
+    {
+      "group_id": "P2-I3-I02-GROUP-N29-N30",
+      "inventory_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-n29-n30-mechanism-inventory.json",
+      "inventory_sha256": "4eab3a414ed50cc411018aa004c10b36f6c58040e0cb69c0713d5e26d1cd8920",
+      "source_count": 32,
+      "admission_role": "inherited_evidence_and_orientation_only",
+      "evidence_class": "inherited_evidence",
+      "consumption_boundary": "Exact retained N29/N30 identities may motivate mechanisms and claims only at their original scope; they supply no repeated trail dynamics or L03 result."
+    },
+    {
+      "group_id": "P2-I3-I02-GROUP-PREDECESSORS",
+      "inventory_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-predecessor-mechanism-lineage.json",
+      "inventory_sha256": "84e82d5b28b017e437a8bd19ba8b7a80d6b37fe94bca707394efc3f759d91769",
+      "source_count": 44,
+      "admission_role": "constructed_producer_precedent_only",
+      "evidence_class": "constructed_mechanism",
+      "included_experiments": ["N05", "N06", "N07", "N08", "N09", "N10", "N11", "N22", "N25.2", "N28"],
+      "experiment_role_summary": {
+        "primary_mechanism_precedent": ["N05", "N08", "N09", "N22"],
+        "supporting_mechanism_or_control_precedent": ["N06", "N07", "N10", "N11", "N25.2"],
+        "projection_only_precedent": ["N28"]
+      },
+      "visibility_boundary": "These experiment labels are a validator-checked projection for discoverability. The digest-bound predecessor inventory remains the sole authority for mechanisms, source identities, paths, hashes, roles, and claim boundaries.",
+      "consumption_boundary": "Exact source-backed producer and control patterns may guide an RCAE-owned completion. They cannot upgrade native capability or be copied without P2-I3-specific ownership, identity, and controls."
+    }
+  ],
+  "producer_extension_disposition": {
+    "decision_authority": "P2-I3-DEC-017",
+    "admission_result": "permitted_as_later_option_not_selected",
+    "extension_pattern": "An RCAE request producer may observe declared LGRC9V3 runtime-visible state and request public LGRC9V3 work; a declared-state producer may own only explicitly registered RCAE state and transitions. LGRC9V3 continues to own every invoked native transition.",
+    "repository_boundary": "No producer may edit, monkey-patch, subclass in place, or mutate the graph/PyGRC repository. RCAE bridging code lives and is versioned only in RCAE.",
+    "transition_boundary": "A later native PyGRC implementation does not silently replace a retained RCAE producer. Native substitution requires an explicit source transition, new realization identity, and rerun.",
+    "scientific_boundary": "Producer completion is allowed only if it preserves the accepted dynamic-field-to-local-traversal question. A producer may not write the desired route, choose the successful outcome, or hide a global selector.",
+    "naturalization_debt": "Every load-bearing RCAE-owned state, lifecycle, local-response, relocation, or participant-role pattern remains explicit graph-side naturalization debt."
+  },
+  "substrate_authority": {
+    "primary_substrate": "LGRC9V3",
+    "decision_id": "P2-I3-DEC-020",
+    "grc9v3_role": "supporting_comparative_substrate_only",
+    "boundary": "GRC9V3 and LGRC9V3 have distinct step ownership and per-step evolution/relaxation semantics. A GRC9V3 result may be retained as an interesting comparative result but cannot replace an LGRC9V3 implementation, satisfy the core L03 discriminator, or discharge an LGRC9V3 missing-surface obligation.",
+    "bridge_rule": "Calling GRC9V3.step or apply_continuity from an RCAE bridge does not turn that transition into LGRC9V3 behavior and is ineligible as a core realization.",
+    "state_type_rule": "GRC9V3State remains admitted because it is the public base-state type used by LGRC9V3; this does not admit synchronous GRC9V3 execution as the lane substrate."
+  },
+  "callable_admissions": [
+    {"symbol": "pygrc.models.GRC9V3", "implementation_source_id": "P2-I3-SRC-004", "admission_role": "supporting_comparative_substrate_only"},
+    {"symbol": "pygrc.models.GRC9V3.apply_continuity", "implementation_source_id": "P2-I3-SRC-004", "admission_role": "supporting_comparative_substrate_only"},
+    {"symbol": "pygrc.models.GRC9V3.step", "implementation_source_id": "P2-I3-SRC-004", "admission_role": "supporting_comparative_substrate_only"},
+    {"symbol": "pygrc.models.GRC9V3State", "implementation_source_id": "P2-I3-SRC-005", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.from_state", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.step", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.run_event_queue", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.schedule_packet_departure", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.emit_feedback_eligibility_surface_row", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "supporting_nonqualifying_boundary_only"},
+    {"symbol": "pygrc.models.LGRC9V3.set_feedback_coupled_pulse_producer", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "supporting_nonqualifying_boundary_only"},
+    {"symbol": "pygrc.models.LGRC9V3.produce_events", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.set_causal_flux_routes", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "supporting_nonqualifying_boundary_only"},
+    {"symbol": "pygrc.models.LGRC9V3.get_state", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3.set_state", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.LGRC9V3.process_causal_collapse_reabsorption", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "supporting_nonqualifying_boundary_only"},
+    {"symbol": "pygrc.models.LGRC9V3.reset", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.LGRC9V3.rebase_reset_baseline", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.LGRC9V3.snapshot", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.LGRC9V3.save", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.LGRC9V3.load", "implementation_source_id": "P2-I3-SRC-011", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.LGRC9V3RuntimeState", "implementation_source_id": "P2-I3-SRC-012", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3PacketRecord", "implementation_source_id": "P2-I3-SRC-009", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.LGRC9V3PacketLedger", "implementation_source_id": "P2-I3-SRC-009", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.create_lgrc9v3_packet_record", "implementation_source_id": "P2-I3-SRC-009", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.process_lgrc9v3_packet_departure", "implementation_source_id": "P2-I3-SRC-009", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.process_lgrc9v3_packet_arrival", "implementation_source_id": "P2-I3-SRC-009", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.lgrc9v3_graph_routes_for_current_topology", "implementation_source_id": "P2-I3-SRC-007", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.prime_lgrc9v3_packet_departures", "implementation_source_id": "P2-I3-SRC-007", "admission_role": "admitted_runtime_option"},
+    {"symbol": "pygrc.models.LGRC9V3RouteAspect", "implementation_source_id": "P2-I3-SRC-008", "admission_role": "supporting_implementation_only"},
+    {"symbol": "pygrc.models.LGRC9V3CausalPulseSubstrateSurfaceRow", "implementation_source_id": "P2-I3-SRC-008", "admission_role": "supporting_nonqualifying_boundary_only"},
+    {"symbol": "pygrc.models.compute_lgrc9v3_geometric_distances", "implementation_source_id": "P2-I3-SRC-013", "admission_role": "admitted_measurement_option"},
+    {"symbol": "pygrc.models.compute_lgrc9v3_functional_distances", "implementation_source_id": "P2-I3-SRC-013", "admission_role": "admitted_measurement_option"},
+    {"symbol": "pygrc.models.compute_lgrc9v3_causal_distances", "implementation_source_id": "P2-I3-SRC-013", "admission_role": "admitted_measurement_option"},
+    {"symbol": "pygrc.models.lgrc9v3_restoration_identity_v1", "implementation_source_id": "P2-I3-SRC-010", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.digest_lgrc9v3_restoration_identity_v1", "implementation_source_id": "P2-I3-SRC-010", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.lgrc9v3_restoration_identity_v2", "implementation_source_id": "P2-I3-SRC-010", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.digest_lgrc9v3_restoration_identity_v2", "implementation_source_id": "P2-I3-SRC-010", "admission_role": "admitted_restoration_option"},
+    {"symbol": "pygrc.models.transport_lgrc9v3_packets_through_refinement", "implementation_source_id": "P2-I3-SRC-014", "admission_role": "supporting_nonqualifying_boundary_only"},
+    {"symbol": "pygrc.models.ordered_lgrc9v3_event_queue", "implementation_source_id": "P2-I3-SRC-012", "admission_role": "supporting_implementation_only"}
+  ],
+  "callable_boundary_profiles": {
+    "synchronous_grc": "GRC9V3.apply_continuity and GRC9V3.step are genuine GRC operations, but P2-I3 targets LGRC9V3. Their different full-step evolution and relaxation semantics make them comparative-only; a bridge cannot promote them into an LGRC9V3 core realization.",
+    "passive_surface_and_producer": "Pulse-surface rows and feedback producers are evidence/scheduling infrastructure, not mutable field state or local traversal response.",
+    "route_configuration": "Route-aspect and causal-flux route configuration may register or validate geometry but cannot supply the preferred route or scientific response.",
+    "restoration": "Native identities cover only supported PyGRC state. Complete P2-I3 identity must later compose every RCAE-owned state and policy.",
+    "relocation": "Topology-lineage operations are nonqualifying references for fixed-topology field relocation.",
+    "state_intervention": "LGRC9V3.set_state is an implementation surface, not by itself an adequate pure intervention. Later controls must bind target fields and complete non-target equality."
+  },
+  "preexisting_test_admissions": [
+    {
+      "source_id": "P2-I3-SRC-017",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": [
+        "test_causal_pulse_substrate_surface_row_round_trips",
+        "test_lgrc2_multiple_packets_on_one_edge_have_deterministic_order",
+        "test_lgrc2_packet_ledger_orders_queue_events_deterministically",
+        "test_lgrc2_packet_departure_debits_source_and_adds_in_flight",
+        "test_lgrc2_packet_arrival_credits_target_and_removes_in_flight",
+        "test_lgrc2_departure_arrival_cycle_round_trips_and_preserves_budget",
+        "test_three_distance_surfaces_are_not_conflated"
+      ]
+    },
+    {
+      "source_id": "P2-I3-SRC-022",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": [
+        "test_departure_arrival_lifecycle_preserves_budget",
+        "test_enabled_pulse_substrate_surface_emits_after_committed_packet_event",
+        "test_pulse_substrate_surface_snapshot_round_trip_and_continuation",
+        "test_feedback_surface_and_producer_schedule_via_packet_queue_only",
+        "test_native_route_candidate_emission_rejects_hidden_route_selection",
+        "test_snapshot_serializes_runtime_queue_and_events",
+        "test_native_runtime_snapshot_load_preserves_queue_and_continuation"
+      ]
+    },
+    {
+      "source_id": "P2-I3-SRC-020",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": [
+        "test_component_is_stable_across_native_load",
+        "test_public_identity_is_stable_across_native_load"
+      ]
+    },
+    {
+      "source_id": "P2-I3-SRC-021",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": [
+        "test_composite_fixed_point_and_raw_digest_cycle_across_three_loads",
+        "test_lgrc_queue_clock_ledger_route_topology_and_producer_sensitivity",
+        "test_source_current_surface_mutation_changes_identity"
+      ]
+    },
+    {
+      "source_id": "P2-I3-SRC-016",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": ["test_route_generation_and_broad_seed_priming_are_library_owned"]
+    },
+    {
+      "source_id": "P2-I3-SRC-019",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": [
+        "test_route_aspect_validates_against_state_and_compiles_to_routes",
+        "test_broken_return_route_is_rejected",
+        "test_route_aspect_state_validation_rejects_bad_edge"
+      ]
+    },
+    {
+      "source_id": "P2-I3-SRC-018",
+      "evidence_role": "supporting_conformance_only",
+      "test_names": ["test_existing_static_route_autonomy_is_not_d2_3_equivalent"]
+    }
+  ],
+  "preexisting_test_summary": {
+    "test_count": 24,
+    "i01_result": "24 passed, 333 deselected, 0 failed, 0 errors",
+    "i02_execution": "not_rerun",
+    "role": "Exact test definitions and accepted I01 conformance result only; no P2-I3 candidate or calibration evidence."
+  },
+  "evidence_class_taxonomy": {
+    "inherited_evidence": "N29/N30, graph source, generic-test, and closeout facts retain their original claim ceilings.",
+    "ecology_interpretation": "Theory and RCAE papers may define meaning, boundaries, and developmental reading but cannot establish runtime behavior.",
+    "constructed_mechanism": "Predecessor producer patterns may justify feasibility only; any P2-I3 use remains explicitly RCAE-owned and rerunnable.",
+    "missing_surface": "I01 absent or inadequate native lifecycle, local-response, intervention, relocation, and participant-role surfaces remain missing or inadequate after admission.",
+    "proposed_discriminator": "The P2-I3 brief supplies the dynamic-field-to-local-traversal discriminator; admission does not show that it succeeds."
+  },
+  "selected_resolution": {
+    "question": "Which exact theory and graph revisions, files, public callables, and evidence roles are admitted?",
+    "answer": "Admit the exact identities and bounded roles in this manifest. Consume semantically adequate native LGRC9V3 surfaces first; permit explicit RCAE producer completion from admitted precedents when LGRC9V3 coverage is absent or unsuitable; preserve every missing-surface and claim boundary. Retain GRC9V3 only as a possible comparative result, never as an LGRC9V3 substitute.",
+    "selection_effect": "none",
+    "next_decision": "P2-I3-Q-003 through P2-I3-Q-008 at I03 realization selection"
+  },
+  "reconstruction": {
+    "validator": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i02_validate.py",
+      "sha256": "abe0e467429ce81b262be0d438d25e423087a1a6fd79d381a94699702a560ec8"
+    },
+    "command": ".venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i02_validate.py --graph-root ../graph-reflexive-coherence --theory-root ../geometric-reflexive-coherence",
+    "requirements": [
+      "RCAE checkout containing revision 8f09ae2f9abf734829f8f046b9be2015ae007458",
+      "clean graph checkout at revision 83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "clean geometric-theory checkout at revision e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "repository .venv with the already verified PyGRC import dependencies"
+    ],
+    "network_required": false,
+    "writes_external_repositories": false
+  },
+  "claim_boundary": {
+    "source_admission_proposed": true,
+    "source_admission_accepted": true,
+    "source_admission_gate_passed": true,
+    "realization_selected": false,
+    "carrier_selected": false,
+    "dynamic_selected": false,
+    "equation_selected": false,
+    "producer_selected": false,
+    "metric_selected": false,
+    "calibration_performed": false,
+    "runtime_transition_invoked": false,
+    "scientific_execution_performed": false,
+    "grc9v3_substitution_authorized": false,
+    "l03_evidence_produced": false
+  },
+  "reopening_conditions": [
+    "A later realization needs a source or public callable not present in the exact admitted set.",
+    "A source-current graph revision changes a load-bearing callable, restoration identity, or missing-surface classification.",
+    "An admitted theory source changes in a way that alters P2-I3 meaning or claim boundaries.",
+    "A producer pattern cannot be reconstructed without an unadmitted predecessor source.",
+    "A later native transition is proposed for a retained RCAE producer.",
+    "The project owner changes the primary substrate from LGRC9V3 or authorizes a separately governed GRC9V3 comparative study."
+  ]
+}
