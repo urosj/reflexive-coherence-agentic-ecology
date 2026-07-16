@@ -3,7 +3,7 @@
 **Status:** active cumulative lane decision record; initial governance package
 accepted, `P2-I3-BRIEF-GATE`, `P2-I3-SOURCE-AUDIT-GATE`, and
 `P2-I3-SOURCE-ADMISSION-GATE` passed; I03 intentionally paused at Q-005 for
-the N31 graph-side decay-primitive handoff
+the DEC-023/DEC-024 N31 graph-side derived-decay/primitive-semantics handoff
 
 **Lane:** `AE01-L03`
 
@@ -86,6 +86,7 @@ No decision may be inferred from:
 | `P2-I3-DEC-021` | Which route-local surface carries the minimum core field under Q-003? | Route-exclusive intermediate-node coherence, with edge and external-corridor alternatives retained | Fixes the carrier only; opens Q-004 ownership comparison without selecting a dynamic, equation, encounter, or result | 2026-07-16 |
 | `P2-I3-DEC-022` | Which required functions are native, producer-assisted, constructed, unsuitable, or missing under Q-004? | Mixed ownership: native LGRC state/packet/restoration core plus explicit RCAE completion and controls | Fixes ownership truth and naturalization debt; opens Q-005 without selecting the dynamic or equation | 2026-07-16 |
 | `P2-I3-DEC-023` | Should RCAE choose a decay implementation locally or return the missing primitive question to graph/LGRC? | Pause P2-I3 at Q-005 and select an N31 decay-semantic/native-primitive experiment through the cross-project spiral | Replaces the local two-implementation proposal with a graph handoff and exact P2-I3 return contract; Q-005 remains unresolved | 2026-07-16 |
+| `P2-I3-DEC-024` | Must N31 first test whether ordinary coherence evolution already supplies bounded decay without an additional state? | Yes; D0 coherence-only derived decay is first, with causal slow organization separated from a fading graph observable | Amends the N31 demand and return paths, binds the theory/substrate/code authority split, and does not reopen gates or authorize P2-I3 implementation | 2026-07-16 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -1379,7 +1380,192 @@ transition; or the owner explicitly chooses an RCAE-constructed exploration
 despite the unresolved native surface. Any such path receives a new decision
 and does not erase the handoff history.
 
-## 26. Open decision register
+## 26. `P2-I3-DEC-024` — Coherence-only D0 priority
+
+### Question
+
+After admitting the coherence-only core theory and the LGRC substrate papers
+explicitly, should N31 still begin by choosing among release attenuation,
+conserved leakage, and relaxing susceptibility, or must it first test whether
+ordinary `C/J_C` evolution already produces the bounded decay relation without
+additional state?
+
+### Trigger
+
+Owner-directed evaluation of these theory and substrate sources:
+
+```text
+geometric-reflexive-coherence:core/2025-11-ReflexiveCoherence.md
+geometric-reflexive-coherence:core/2025-11-RC-IdentityChoiceAbundance.md
+geometric-reflexive-coherence:core/2025-11-Coherence.md
+geometric-reflexive-coherence:investigations/2026-01-RC-Distance-v4.md
+geometric-reflexive-coherence:substrates/2026-05-LGRC-9.md
+geometric-reflexive-coherence:substrates/2026-05-LGRC9V3-Native-Packet-Loops.md
+geometric-reflexive-coherence:substrates/2026-05-LGRC9V3-Causal-Pulse-Substrate-Surfaces.md
+```
+
+Their clean repository revision and exact file digests are retained in the
+handoff's required-theory-and-substrate-authority table. This is a prospective
+DEC-024 theory/substrate-source record, not the future committed RCAE
+demand-source identity and not a rewrite of historical I02 admission.
+The evaluation established a stricter ontology than the original three-way
+Q-005 comparison:
+
+- coherence is the only primitive dynamical field;
+- the strict formulation makes `C(x,t)` the only dynamical variable and
+  treats flux, geometry, graph, and memory as derived;
+- slow/low-pass coherence modes may carry memory without a second field;
+- a finite-window flux graph relation is derived but is not automatically a
+  causal mediator of later transport;
+- an independently causal susceptibility, release-age cursor, or other memory
+  state is an effective closure or theory extension even if stored natively;
+- LGRC requires operational causal order and exact node-plus-packet or
+  equivalent pending-budget accounting while leaving final lifecycle laws
+  open;
+- validated native packet self-rearm is conserved causal handoff, not evidence
+  of trail decay; and
+- the proposed pulse-substrate history surface is specification precedent,
+  not proof of native code or a relaxation primitive.
+
+The existing Q-005 report had honestly classified slow `S_e` as constructed,
+but it had not made the no-additional-state explanation a positive first
+hypothesis.
+
+### Considered paths
+
+#### Option A — leave the three-way N31 handoff unchanged
+
+This preserves the accepted document but biases N31 toward inventing or
+selecting a decay state before testing the theory's own closed loop. A later
+"no primitive" result would also conflate successful coherence-only decay with
+failure to find any relation.
+
+#### Option B — reject susceptibility and retain leakage as the sole candidate
+
+This respects conservation but still assumes that decay requires an added
+emission law. It also discards useful closure/extension evidence prematurely.
+
+#### Option C — add D0 first and retain the three mechanisms as later paths
+
+This tests the strongest theory-faithful explanation first while preserving
+release attenuation as an expression boundary, leakage as the first native-
+mechanics-aligned fallback, and susceptibility as a declared closure or
+theory-extension candidate.
+
+### Selected resolution
+
+Select Option C.
+
+N31 first tests:
+
+```text
+D0a — slow causal C/J_C organization weakens under ordinary evolution
+D0b — a finite-window derived graph relation fades as an observable/closure
+D0c — instantaneous current-derived geometry as the lower comparator
+```
+
+D0a may support a positive bounded coherence-only decay result. D0b alone is
+below causal trail support unless later local transport actually consumes the
+underlying coherence/flux relation. D0c alone is below durable decay.
+
+Only after D0 is classified may N31 require or compare an additional release,
+leakage, susceptibility, or newly exposed mechanism. An independently causal
+`S_e` must be described as an effective LGRC closure or explicit theory
+extension, not silently naturalized as coherence-only.
+
+### State and cache boundary
+
+N31 must distinguish:
+
+```text
+same complete spatial/spectral C plus laws and continuation
+-> same coherence-only future
+
+same complete C/J_C trajectory over a declared history functional
+-> same derived history value
+```
+
+Node-coherence scalar equality is not complete-field equality. A cached
+history value is derived only if it is exactly recomputable, cannot diverge,
+and does not create independent continuation. A causally active history value
+that is not fixed by current complete coherence state is at least an effective
+non-Markovian closure.
+
+### D0 redistribution, runtime state, and producer boundary
+
+Conserved outward flux remains D0 when it follows entirely from the already
+admitted ordinary `C/J_C` evolution and native LGRC event dynamics. Candidate
+B begins only when N31 introduces a new route-field-specific emission
+eligibility, amount, timing, destination, or lifecycle policy. The observation
+that local coherence moved outward is insufficient to classify leakage.
+
+`Coherence-only` does not reduce legitimate LGRC continuation state to node
+scalars. Queues, in-flight coherence, event ordering, scheduler state, node
+proper time, and frozen boundary/constitutive policies remain admitted. What
+D0 excludes is additional route-memory, susceptibility, age, decay, or
+causally independent history state.
+
+A D0 producer may build fixtures, initiate formation through admitted native
+operations, compute derived observations, request already admitted native
+transitions, and collect receipts. It may not author a load-bearing
+post-formation update, relaxation, future-affecting history cursor, D0-specific
+decay schedule, retained-history conductance update, or causal diagnostic
+feedback. Any such role makes the result a producer-mediated closure or
+added-mechanism candidate.
+
+### D0a representation gate
+
+Before D0a executes, N31 must classify its claimed slow coherence organization
+as:
+
+```text
+represented_natively
+represented_by_exact_projection
+represented_only_by_lossy_coarse_state
+missing
+```
+
+An exact projection freezes its basis, decomposition/recomposition, overlap
+policy, temporal support, intervention semantics, error bound, and independent
+state status. Lossy or missing representation closes D0a at that boundary.
+It must not be repaired by constructing a persistent `C_slow` scalar solely
+to satisfy the controls. Unavailable D0a controls receive
+`unavailable_missing_representation`, not an artificial approximation.
+
+Cache recomputation and complete execution/artifact reconstruction are
+separate statuses. Conditional return-manifest roles may be
+`not_applicable_with_reason`; empty placeholder artifacts are not required.
+
+### Source identity correction
+
+The clean `geometric-reflexive-coherence` revision and seven file digests are
+the theory/substrate-source identity. The RCAE demand-source identity is the
+future clean RCAE commit containing this accepted amendment and its projected
+documents. N31 must retain both identities without conflating them.
+
+### Gate and evidence effect
+
+- DEC-023 remains accepted: P2-I3 stays paused and N31 remains the selected
+  cross-project step.
+- Passed brief/source gates and I01/I02 artifacts remain unchanged.
+- Q-005 remains unresolved.
+- No P2-I3 implementation, conformance, calibration, execution, or scientific
+  authority follows.
+- The exact PyGRC source/callable/test freeze remains the executable-capability
+  barrier; substrate-paper statements cannot promote an absent operation to
+  native support.
+- The Q-005 study, N31 handoff, lane checklist, and master directives receive
+  a bounded prospective amendment before N31 begins.
+
+### Reopening condition
+
+Reopen this ordering only if exact N31 source analysis shows that the admitted
+core theory does not govern LGRC9V3, that D0 cannot be operationalized even as
+a classified missing-surface probe, or that a newly admitted theory explicitly
+requires an additional primitive. Failure of current PyGRC representation
+alone does not invalidate D0; it receives a distinct missing-surface result.
+
+## 27. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -1390,7 +1576,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-002` | Which exact theory and graph revisions, files, public callables, and evidence roles are admitted? | I02 source admission | Resolved by `P2-I3-DEC-019`; no longer blocks I03 |
 | `P2-I3-Q-003` | Is the field carrier edge-, node-, corridor-, or another route-local surface? | I03 realization selection | Resolved by `P2-I3-DEC-021`; alternative campaigns remain permitted under new identities |
 | `P2-I3-Q-004` | Is each required function native, minimally producer-assisted, constructed, unsuitable, or missing? | I03 after I01/I02 | Resolved by `P2-I3-DEC-022`; conformance may reopen affected rows |
-| `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze after N31 return | Deferred by DEC-023; three interpretations form the N31 demand input and no local answer may be selected before the return transition |
+| `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze after N31 return | Deferred by DEC-023/024; D0 is first and the three added mechanisms remain fallback/closure/extension inputs; no local answer may be selected before the return transition |
 | `P2-I3-Q-006` | What exact field equation/update law, units, update order, and invariants apply? | I03 realization freeze | Blocks conformance and calibration preregistration |
 | `P2-I3-Q-007` | How does traversal encounter the local field without a hidden global selector? | I03 causal factorization | Blocks discriminator gate |
 | `P2-I3-Q-008` | Is current field state sufficient, is active history load-bearing, or must multiple modes remain? | I03 discriminator freeze | Blocks downstream cell semantics |
@@ -1407,7 +1593,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 
-## 27. Decision protocol for subsequent work
+## 28. Decision protocol for subsequent work
 
 For each open question:
 
@@ -1425,15 +1611,18 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 28. Current boundary
+## 29. Current boundary
 
-Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-023` define semantic and
+Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` define semantic and
 process boundaries, accept the exact I01 read-only capability audit and I02
 source bundle, pass `P2-I3-SOURCE-AUDIT-GATE` and
-`P2-I3-SOURCE-ADMISSION-GATE`, restrict the core substrate to LGRC9V3, and
-select route-exclusive intermediate-node coherence as the minimum carrier,
-and fix its mixed native/RCAE ownership boundary. DEC-023 then pauses I03 at
-Q-005 and selects the N31 decay-primitive handoff. These decisions assign no
+`P2-I3-SOURCE-ADMISSION-GATE`, restrict the core substrate to LGRC9V3, select
+route-exclusive intermediate-node coherence as the minimum carrier, and fix
+its mixed native/RCAE ownership boundary. DEC-023 then pauses I03 at Q-005
+and selects the N31 handoff; DEC-024 prospectively makes coherence-only D0 the
+first N31 hypothesis, preserves the three original mechanisms as fallback,
+closure, or extension paths, and binds the theory/substrate/code authority
+split for N31. These decisions assign no
 selected dynamic, complete realization, equation, exact registered values,
 calibration, registration, execution, result, appendix activation, or
 specification-promotion authority.
@@ -1454,9 +1643,9 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted RCAE action is review and retention of the DEC-023 handoff
-package. After its commit, work switches explicitly to graph-project N31
-scope. P2-I3 resumes only through the handoff's reconstruction, source-
-transition, carrier/ownership, and Q-005 return sequence. No runtime
-conformance, calibration, candidate execution, or scientific activity is
-authorized in P2-I3 while N31 is active.
+The next permitted RCAE action is review and retention of the bounded DEC-024
+theory correction to the already merged DEC-023 handoff. After its commit,
+work switches explicitly to graph-project N31 scope. P2-I3 resumes only
+through the handoff's reconstruction, source-transition, carrier/ownership,
+and Q-005 return sequence. No runtime conformance, calibration, candidate
+execution, or scientific activity is authorized in P2-I3 while N31 is active.

@@ -209,13 +209,19 @@ select a lifecycle law. The retained
 shows that release-efficacy attenuation, coherence-conserving source leakage,
 and route-susceptibility relaxation are distinct causal ontologies with
 different carrier, topology, invariant, restoration, and claim contracts.
+DEC-024 amends their ordering after direct core-theory evaluation: D0 asks
+first whether ordinary coherence evolution already supplies causal decay,
+while a fading graph observable, effective closure, and independent theory
+extension remain distinct outcomes.
 
 DEC-023 therefore supersedes the provisional plan to implement two RCAE decay
 realizations before either was built. P2-I3 is intentionally paused at Q-005
 under the accepted
-[N31 decay-primitive handoff and return contract](P2-I3-N31-decay-primitive-handoff.md).
-N31 may select one primitive, distinct multiple primitives, a producer-only
-candidate, no primitive, or a new taxonomy. On return, P2-I3 must reconstruct
-and admit the exact graph revision, explicitly retain or reopen DEC-021/022,
-resolve Q-005, and continue Q-006 through Q-008 in order. No I03 conformance,
-calibration, registration, candidate execution, or L03 result exists yet.
+[N31 derived-decay/primitive-semantics handoff and return contract](P2-I3-N31-decay-primitive-handoff.md).
+N31 may support coherence-only decay, retain an observable below causal trail,
+select one or more primitives/closures, expose an explicit theory extension,
+retain a producer-only candidate, select nothing, or form a new taxonomy. On
+return, P2-I3 must reconstruct and admit the exact graph revision, explicitly
+retain or reopen DEC-021/022, resolve Q-005, and continue Q-006 through Q-008
+in order. No I03 conformance, calibration, registration, candidate execution,
+or L03 result exists yet.

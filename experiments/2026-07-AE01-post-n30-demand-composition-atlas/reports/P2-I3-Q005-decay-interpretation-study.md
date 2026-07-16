@@ -8,7 +8,8 @@
 candidate?
 
 **Status:** retained interpretation and N31 demand-input record under
-`P2-I3-DEC-023`
+`P2-I3-DEC-023`, amended by the owner-accepted coherence-only priority in
+`P2-I3-DEC-024`
 
 **Evidence effect:** theory-to-realization comparison only. This report does
 not resolve Q-005, select an equation or topology, authorize conformance or
@@ -24,14 +25,28 @@ execution, or supply L03 scientific evidence.
 ## 1. Why this record exists
 
 The word `decay` does not identify one physical, geometric, or computational
-operation. During Q-005 discussion, three materially different
-interpretations emerged:
+operation. During the original Q-005 discussion, three materially different
+implementation interpretations emerged:
 
 ```text
 release-efficacy attenuation
 coherence-conserving source leakage
 route-susceptibility relaxation
 ```
+
+A later review of the coherence-only core theory exposed a prior question
+that those three interpretations did not ask:
+
+```text
+Does any additional decay state or primitive need to exist at all?
+```
+
+The amended N31 input therefore begins with `D0`: prior route activity may
+reorganize `C` and `J_C`, ordinary coherence evolution may weaken the
+resulting route-local relation, and later local transport may respond through
+the geometry induced by the changed coherence state. Release attenuation,
+conserved leakage, and susceptibility relaxation remain distinct fallback or
+extension candidates if that coherence-only account is insufficient.
 
 All three can make a later route effect become weaker. They do not therefore
 describe the same field, continuation state, topology, intervention, or claim.
@@ -41,6 +56,7 @@ it go, and why did later traversal change?**
 
 This report preserves:
 
+- the coherence-only `D0` priority and its causal-versus-observational split;
 - the exact meaning of each proposal;
 - what existing RC theory, LGRC9V3, PyGRC, and predecessor experiments do and
   do not support;
@@ -67,6 +83,14 @@ Adequate public LGRC9V3 transitions retain priority. A missing lifecycle or
 encounter operation does not weaken the experiment; it becomes an explicit
 RCAE-owned producer or constructed mechanism plus graph-side naturalization
 debt under `P2-I3-DEC-017` and `P2-I3-DEC-022`.
+
+For D0, `coherence-only` does not mean that runtime continuation consists only
+of node-coherence scalars. Admitted LGRC causal state legitimately includes
+packet queues, in-flight coherence, event ordering, scheduler state, node
+proper time, and frozen boundary or constitutive policies. D0 means that no
+additional route-memory, susceptibility, age, decay, or causally independent
+history state carries the future effect beyond that admitted causal state and
+relations derived from coherence.
 
 ### 2.2 Coherence is not destroyed
 
@@ -111,7 +135,7 @@ An internal time value is necessary but not sufficient. Q-006 must identify:
 ### 2.4 The route effect must be local
 
 The later traversal must encounter the field through the selected route-local
-surface. None of the three interpretations may be implemented as:
+surface. No candidate or diagnostic may be implemented as:
 
 ```text
 read both route scores
@@ -142,7 +166,42 @@ carried that change.
 
 ## 3. Source-current evidence boundary
 
-### 3.1 RC-Distance
+### 3.1 Coherence-only core theory
+
+N31 must explicitly admit and digest-bind these three theory authorities:
+
+```text
+geometric-reflexive-coherence:core/2025-11-ReflexiveCoherence.md
+geometric-reflexive-coherence:core/2025-11-RC-IdentityChoiceAbundance.md
+geometric-reflexive-coherence:core/2025-11-Coherence.md
+```
+
+The clean theory-repository revision, exact SHA-256 digests, and N31 roles are
+retained in the
+[handoff authority table](../implementation/P2-I3-N31-decay-primitive-handoff.md#43-required-theory-and-substrate-authorities).
+This prospective DEC-024 demand source does not rewrite historical I02
+admission.
+
+Together they support these boundaries:
+
+- coherence is the only primitive dynamical field;
+- the strictest formulation treats `C(x,t)` as the only dynamical variable,
+  with `J_C`, geometry, graphs, memory, and policy as functionals or
+  decompositions of coherence;
+- memory may be carried by slow or low-pass-filtered coherence modes rather
+  than an auxiliary state field;
+- the induced graph may summarize recent boundary flux over a finite time
+  window; and
+- learning and geometric memory are written through coherence-field and
+  induced-geometry change rather than a separate memory mechanism.
+
+They do **not** by themselves prove that a finite-window graph weight feeds
+back into later transport. A fading derived graph observable is therefore not
+automatically a causal trail. The strongest coherence-only L03 candidate must
+show that a route-local slow `C/J_C` organization changes the geometry or
+constitutive response actually encountered by later local flux.
+
+### 3.2 RC-Distance
 
 The admitted
 `geometric-reflexive-coherence:investigations/2026-01-RC-Distance-v4.md`
@@ -167,7 +226,44 @@ The paper also limits a tempting inference: anisotropic metric structure does
 not by itself prove lower operational distance. Transport speed and the
 chosen timing relation remain load-bearing.
 
-### 3.2 Public LGRC9V3/PyGRC packet and timing surfaces
+### 3.3 LGRC substrate and implementation-specialization papers
+
+N31 must also admit and digest-bind:
+
+```text
+geometric-reflexive-coherence:substrates/2026-05-LGRC-9.md
+geometric-reflexive-coherence:substrates/2026-05-LGRC9V3-Native-Packet-Loops.md
+geometric-reflexive-coherence:substrates/2026-05-LGRC9V3-Causal-Pulse-Substrate-Surfaces.md
+```
+
+Their exact revision, digests, and roles are retained in the
+[handoff authority table](../implementation/P2-I3-N31-decay-primitive-handoff.md#43-required-theory-and-substrate-authorities).
+
+They establish a middle authority layer between core RC ontology and current
+PyGRC implementation:
+
+- base LGRC defines event-driven causal history, internal proper time,
+  operational edge delay, explicit in-flight or pending coherence, and exact
+  asynchronous budget accounting;
+- native packet loops demonstrate one conserved packet-handoff and
+  surplus-triggered self-rearm specialization without claiming a trail,
+  movement, or independent decay state; and
+- the causal pulse-substrate paper proposes a serializable packet-contact
+  history and producer-eligibility surface, but explicitly keeps its native
+  implementation and stronger claims open.
+
+This makes several Q-005 distinctions sharper. A packet retains its amount in
+flight and therefore cannot decay by elapsed time. Packet handoff and
+self-rearm supply mechanics that an explicitly registered conserved
+leakage/emission realization could use, but do not by themselves create
+durable-yet-weakening route state. A pulse-contact history surface is a
+relevant precedent for a history-derived observable or effective closure only
+if its value is reproducible from declared history, restored exactly, and
+shown to affect later local transport. The proposed surface paper supplies no
+native relaxation law and cannot upgrade route susceptibility into a current
+LGRC primitive.
+
+### 3.4 Public LGRC9V3/PyGRC packet and timing surfaces
 
 The accepted I01/I02 source records establish public support for:
 
@@ -187,10 +283,18 @@ They do not establish a native policy for:
 - a local traversal response that consumes any of those field states without
   an RCAE completion.
 
-Thus all three proposals require some RCAE-owned policy. They differ greatly
-in how much of the state transition remains native after that policy acts.
+Thus all three additional-mechanism proposals require some RCAE-owned policy.
+They differ greatly in how much of the state transition remains native after
+that policy acts. D0 instead asks whether any such policy is needed.
 
-### 3.3 N08 and N22
+The papers and the code have different authority. Paper text constrains LGRC
+meaning and proposed contracts; only exact source, public callables, tests,
+and retained runtime evidence establish current executable capability. A
+paper-defined but absent operation is a specified missing surface or
+producer/naturalization candidate. It is not native support. An available
+callable also cannot silently widen the paper's claim ceiling.
+
+### 3.5 N08 and N22
 
 The admitted N08 Hypothesis B record permits declared geometry, topology,
 support, or conductance to carry trail memory. It requires an explicit
@@ -216,9 +320,280 @@ N22 is therefore a construction and control precedent for a susceptibility
 realization. It is not evidence that slow susceptibility relaxation is already
 an LGRC theory or runtime primitive, and it supplies no P2-I3 result.
 
-## 4. Proposal A — release-efficacy attenuation
+## 4. Candidate D0 — no additional decay state
 
-### 4.1 Core interpretation
+### 4.1 Prior question
+
+Before N31 adds a lifecycle variable, autonomous emission rule, age cursor, or
+relaxing conductance, it must test:
+
+```text
+Can ordinary coherence redistribution and evolution produce
+a route-local, durable-yet-weakening aftereffect that later
+local transport causally encounters?
+```
+
+The coherence-only hypothesis is:
+
+```text
+attributable route activity changes C and J_C
+-> the changed coherence organization induces route-local geometry/coupling
+-> forming activity stops
+-> ordinary system-internal coherence evolution continues
+-> the route-local derived relation weakens
+-> later local flux changes because it encounters the changed C-derived state
+```
+
+No independently evolving decay substance or susceptibility is introduced.
+`D0` is a positive candidate, not the absence of a result and not merely an
+N31 non-selection path.
+
+Conserved outward flux remains D0 when it follows entirely from the
+pre-existing ordinary `C/J_C` evolution and admitted native event dynamics. It
+becomes Proposal B only when N31 introduces a new route-field-specific
+emission eligibility, amount, timing, destination, or lifecycle policy. Local
+coherence leaving a route does not by itself decide between D0 and leakage.
+
+### 4.2 D0a — slow causal coherence organization
+
+The strongest theory-faithful form is a slow route-local component of the
+coherence field itself:
+
+```text
+C = C_fast + C_slow
+route use redistributes C into a route-local slow organization
+C_slow changes induced geometry or the constitutive response
+ordinary C/J_C evolution weakens that organization after use stops
+later flux locally encounters the changed induced relation
+```
+
+The exact decomposition, equation, timescale, and topology belong to N31.
+The semantic requirement is that the aftereffect remain a feature of complete
+coherence state and its derived geometry, not a second hidden memory field.
+
+A D0a result must demonstrate all of the following:
+
+- attributable activity produces a measurable route-local change in complete
+  coherence organization, not merely in a label or readout;
+- a continuation-relevant component persists after forming flux stops;
+- ordinary LGRC/RC evolution weakens that component under system-internal
+  progression without an added decay scheduler;
+- the changed coherence state alters the actual local geometry or
+  constitutive response consumed by later transport;
+- mediator intervention on that coherence organization changes or removes the
+  later response; and
+- conservation, restoration, and equal-continuation identities close.
+
+### 4.3 D0b — finite-window derived graph relation
+
+The core theory also defines graph coupling from recent boundary flux over a
+finite time window. This creates a valid derived weakening:
+
+```text
+recent route flux contributes to a derived edge/coupling weight
+-> forming activity stops
+-> old flux leaves the declared window
+-> the derived weight weakens
+```
+
+This is theory-grounded as an observable or coarse-grained relation. It is not
+automatically a causal trail. N31 must ask whether the value is only reported
+or whether an admitted constitutive law actually uses the underlying
+coherence/flux organization in later local transport.
+
+If a stored window statistic is fed back into transport, its status must be
+classified explicitly:
+
+```text
+exact recomputable cache with no independent causal freedom
+effective non-Markovian closure over admitted C/J_C history
+additional causal state variable
+```
+
+Only the first is straightforwardly a derived implementation detail. The
+second may be a legitimate coarse-grained LGRC closure but is not identical to
+the coherence-only Markov state. The third is an extension.
+
+### 4.4 D0c — instantaneous state/flux-derived geometry
+
+The already recorded C1 relation remains a lower boundary:
+
+```text
+g(t) = geometry(C(t), gradient(C(t)), J_C(t))
+```
+
+It is theory-grounded and may change as soon as current changes. If the route
+effect disappears immediately when forming current stops, it demonstrates
+current-indexed anisotropy but not L03's durable-yet-decaying aftereffect.
+N31 should retain it as a diagnostic and comparator rather than silently
+counting it as D0a.
+
+### 4.5 Derived-cache versus independent-state test
+
+Two related tests are required.
+
+First, the coherence-only causal-state test:
+
+```text
+same complete spatial and spectral C state
++ same constitutive and boundary conditions
++ same derived J_C and geometry
++ same runtime continuation state
+-> same future evolution
+```
+
+If changing an otherwise independent `S_e`, age cursor, or conductance-memory
+state changes the future, the mechanism has added a causal degree of freedom.
+It may still be useful, but it is an effective closure or theory extension.
+
+Second, the derived-history reconstruction test:
+
+```text
+same complete C/J_C trajectory over the declared functional support
++ same current complete state and laws
+-> same derived history relation
+```
+
+A cached statistic must be exactly recomputable from that admitted history,
+must not diverge from recomputation, and must survive save/load/branch only as
+the same derived value. Removing and recomputing the cache may not change the
+continuation.
+
+Cache recomputation and execution reconstruction are separate obligations:
+
+```text
+cache recomputation
+  regenerate one derived value from the exact admitted history
+
+execution reconstruction
+  reproduce the complete run, retained artifacts, and classifications
+```
+
+Passing one does not imply the other, and N31 must retain distinct statuses.
+
+Matching node-level coherence scalars alone cannot satisfy either test. Such
+scalars may omit within-basin spatial gradients, flux structure, slow spectral
+modes, or other complete-field information. A difference after coarse scalar
+matching may therefore expose discretization loss rather than fundamental
+active history.
+
+### 4.6 LGRC9V3 representation boundary
+
+The coherence-only theory may authorize D0 even when source-current LGRC9V3
+cannot express it faithfully. N31 must distinguish:
+
+```text
+theory supports the relation
+LGRC9V3 state represents the relation
+PyGRC computes the relation
+the relation causally affects local transport
+```
+
+Failure at the second or third line is a missing graph/runtime surface, not a
+reason to manufacture positive D0 evidence. A producer may construct a
+fixture or observation probe and request an already admitted native
+transition under explicit ownership. It may not supply the claimed slow state
+or weakening transition itself.
+
+Before D0a execution, N31 must pass a representation gate:
+
+```text
+D0a representation status:
+  represented_natively
+  represented_by_exact_projection
+  represented_only_by_lossy_coarse_state
+  missing
+```
+
+The gate asks whether the selected LGRC state can distinguish, reconstruct,
+and intervene on the route-local slow coherence organization claimed to carry
+the aftereffect. An exact-projection path must freeze:
+
+- projection basis and decomposition operator;
+- reconstruction or recomposition operator;
+- orthogonality or overlap policy;
+- temporal support;
+- intervention semantics;
+- reconstruction error bound; and
+- whether the decomposition has any independent causal continuation state.
+
+A lossy or missing representation cannot support positive D0a. N31 must not
+invent a persistent `C_slow` scalar merely to make the controls executable;
+that would create a closure or added-state candidate under a different name.
+A valid closeout is that theory supports D0a while source-current LGRC9V3
+cannot represent it adequately.
+
+The general producer-completion permission is narrower for D0:
+
+```text
+D0 producer allowance:
+  fixture construction
+  attributable formation through existing public native operations
+  derived observation
+  request of an already admitted native transition
+  receipt collection
+
+D0 producer prohibition:
+  no load-bearing post-formation state update
+  no relaxation or D0-specific decay scheduling
+  no age/history cursor that changes future transport
+  no retained-history conductance update
+  no causal feedback from a cached diagnostic into transport
+```
+
+If a producer performs a prohibited role, the result is producer-mediated
+closure or an added-mechanism candidate, not coherence-only D0.
+
+### 4.7 Required controls
+
+These controls are mandatory for a positive D0a result only after the
+representation gate makes them meaningful. If representation is lossy or
+missing, the affected controls receive
+`unavailable_missing_representation`, D0a closes at that boundary, and N31
+must not construct an approximation solely to complete the matrix.
+
+- Full coherence-state intervention, not node-scalar matching alone.
+- Slow-mode or route-local organization clamp while other state remains
+  matched.
+- Forming flux stopped versus continued under equal current observation
+  windows.
+- Instantaneous anisotropy comparator after current withdrawal.
+- Derived graph relation reported but causally disconnected from transport.
+- Cache removed and recomputed from the exact admitted history.
+- Relevant-history shuffle with complete current-state equality where such
+  equality is actually achievable.
+- Local mediator intervention excluding a global route selector.
+- Snapshot/load/branch equality for complete state, relevant history, and any
+  recomputable cache.
+- Coherence and in-flight accounting throughout ordinary relaxation.
+
+### 4.8 What a result would mean
+
+A clean D0a result would support a bounded **coherence-only derived decay
+relation**: ordinary `C/J_C` evolution supplies a durable-yet-weakening
+route-local aftereffect with causal local transport consequences. It would
+support no additional decay state as necessary for that bounded relation.
+
+A clean D0b-only result would support a **fading derived graph observable**.
+It would not support a causal trail unless the local transport mediation is
+independently demonstrated.
+
+Neither result alone establishes the complete P2-I3 ecology pattern, native
+agency, communication, learning, or a universal decay law.
+
+### 4.9 Current disposition
+
+Make D0 the first N31 hypothesis. Test D0a before adding an independent decay
+state, retain D0b as an observational/coarse-graining distinction, and use
+D0c instantaneous geometry as the lower comparator. Only if the source-current
+LGRC representation cannot express the required aftereffect honestly should
+N31 proceed to the additional-mechanism candidates below, while recording
+whether the failure belongs to theory, discretization, runtime, or causal
+coupling.
+
+## 5. Proposal A — release-efficacy attenuation
+
+### 5.1 Core interpretation
 
 ```text
 carrier coherence remains locally available
@@ -244,7 +619,7 @@ Once `q_release` is selected, native packet mechanics debit, transport, and
 credit that exact amount. The policy may choose a smaller future amount; the
 runtime may not transform an already-created amount into a smaller arrival.
 
-### 4.2 What actually decays
+### 5.2 What actually decays
 
 The carrier amount need not decay. The decaying object is **release efficacy**:
 the relation between current carrier state and its later expression.
@@ -262,7 +637,13 @@ That state is causally load-bearing and must be registered, restored,
 intervened on, relocated where applicable, and included in complete-state
 matching. Calling it merely “elapsed time” does not make it non-state.
 
-### 4.3 Native and RCAE ownership
+If efficacy follows directly from current or slow coherence organization, it
+may remain coherence-derived. An independently stored age, phase, or policy
+cursor that changes future release under otherwise identical complete
+coherence state is an effective closure or additional causal state and must be
+claimed as such.
+
+### 5.3 Native and RCAE ownership
 
 | Function | Ownership/status |
 | --- | --- |
@@ -274,7 +655,7 @@ matching. Calling it merely “elapsed time” does not make it non-state.
 | Local traversal encounter | RCAE completion required |
 | Restoration of composite state | Native runtime plus RCAE wrapper for non-native state |
 
-### 4.4 Conservation and accounting
+### 5.4 Conservation and accounting
 
 This proposal can preserve coherence exactly:
 
@@ -294,7 +675,7 @@ unreleased coherence = decayed coherence
 
 because no coherence decay occurred.
 
-### 4.5 Topology implications
+### 5.5 Topology implications
 
 The selected node-carried two-route kernel may be usable, but this is not
 automatic. The topology must make a locally formed response packet affect
@@ -305,7 +686,7 @@ local encounter rather than a disguised route choice.
 Topology reuse with another proposal requires demonstrated equivalence. The
 presence of two alternative routes alone is insufficient.
 
-### 4.6 Required controls
+### 5.6 Required controls
 
 - Match carrier coherence while varying only registered release age/phase.
 - Match age/phase while varying carrier coherence.
@@ -318,7 +699,7 @@ presence of two alternative routes alone is insufficient.
 - Verify exact packet conservation and the absence of in-flight attenuation.
 - Exclude route labels and global comparison from amount selection.
 
-### 4.7 What a result would mean
+### 5.7 What a result would mean
 
 A clean result would establish a bounded **decay-of-field-expression**
 candidate. It would not by itself show that local field magnitude decreased or
@@ -329,7 +710,7 @@ whose ability to act changes from a field whose carrier state itself changes.
 It is weaker as the primary trail ontology because the load-bearing age/phase
 state can become an independent hidden memory surface.
 
-### 4.8 Principal risks
+### 5.8 Principal risks
 
 - The policy may amount to an external timer multiplying an output.
 - The age variable may become an undeclared second carrier.
@@ -337,15 +718,16 @@ state can become an independent hidden memory surface.
 - A directly addressed response packet may bypass local traversal.
 - A fitted attenuation curve may manufacture the expected dynamic.
 
-### 4.9 Current disposition
+### 5.9 Current disposition
 
 Retain as a separately rerunnable interpretation and a valuable discriminator
-between carrier decay and expression decay. It is not currently proposed as
-one of the two primary implementations.
+between carrier decay and expression decay. Evaluate it only after D0 unless
+N31 demonstrates that the release relation is itself derived from current or
+slow coherence organization. It is not a primary primitive by default.
 
-## 5. Proposal B — coherence-conserving source leakage
+## 6. Proposal B — coherence-conserving source leakage
 
-### 5.1 Core interpretation
+### 6.1 Core interpretation
 
 ```text
 route-local carrier coherence drives an endogenous emission
@@ -377,7 +759,11 @@ The exact law, schedule, floor, and amount belong to Q-006. The important
 semantic commitment is that the emitter's internal coherence state determines
 the possible release, while native packet transfer carries the quantity.
 
-### 5.2 What actually decays
+Ordinary conserved outward flux is not Proposal B merely because route-local
+coherence decreases. B begins only when a new route-field-specific emission
+eligibility, amount, timing, destination, or lifecycle policy is load-bearing.
+
+### 6.2 What actually decays
 
 The route-local node-coherence carrier decreases. The system-wide coherence
 budget does not.
@@ -392,7 +778,7 @@ W_in_flight or W_receiver increases by the same amount
 The receiver and any later return path are scientifically relevant. They
 cannot be omitted simply because the primary metric reads the route node.
 
-### 5.3 Native and RCAE ownership
+### 6.3 Native and RCAE ownership
 
 | Function | Ownership/status |
 | --- | --- |
@@ -412,7 +798,7 @@ efficacy carrier: current node coherence plus registered native time and any
 minimal producer cursor may be sufficient. Q-006 must prove rather than assume
 that sufficiency.
 
-### 5.4 Conservation and accounting
+### 6.4 Conservation and accounting
 
 Every emitted packet requires an auditable chain:
 
@@ -430,7 +816,7 @@ The complete audit includes queued and in-flight packets. A leak packet must
 not be silently deleted, attenuated in flight, or excluded from the system
 budget.
 
-### 5.5 Topology implications
+### 6.5 Topology implications
 
 This realization likely needs topology beyond a bare two-route diamond:
 
@@ -448,7 +834,7 @@ closed receiver structure is correct remains open. That decision affects
 symmetry, interference, restoration, and what “leakage” means. It belongs to
 the leakage realization's topology freeze, not to this report.
 
-### 5.6 Required controls
+### 6.6 Required controls
 
 - Disable only emission while preserving route activity, time, and
   opportunity.
@@ -463,7 +849,7 @@ the leakage realization's topology freeze, not to this report.
 - Verify the receiver cannot act as a hidden route selector or feedback
   source.
 
-### 5.7 What a result would mean
+### 6.7 What a result would mean
 
 A clean result would show a bounded trail field whose local strength decays by
 conserved redistribution after formation stops, and whose current local state
@@ -478,7 +864,7 @@ It would not show:
 - a stigmergic interpretation without the separately required participant
   relation.
 
-### 5.8 Principal risks
+### 6.8 Principal risks
 
 - The leak receiver may become a hidden second field or route cue.
 - Scheduled emissions may be an external clock in disguise.
@@ -489,21 +875,24 @@ It would not show:
 - Probe packets and lifecycle leak packets may be conflated.
 - A floor or return flow may silently maintain the field.
 
-### 5.9 Current disposition
+### 6.9 Current disposition
 
-This is the strongest native-mechanics-aligned candidate exposed by the Q-005
-discussion. It preserves the DEC-021 node carrier and uses native LGRC9V3
-conservation and packet transitions for the load-bearing movement, but its
-autonomous emission policy remains `producer_assisted`, not native decay.
+This remains the strongest native-mechanics-aligned **additional-mechanism
+fallback** exposed by the original Q-005 discussion. It preserves the DEC-021
+node carrier and uses native LGRC9V3 conservation and packet transitions for
+the load-bearing movement, but its autonomous emission policy remains
+`producer_assisted`, not native decay. D0 must be tested first.
 
 Under DEC-023 it is now an N31 primitive candidate, not an authorized P2-I3
 implementation.
 
-## 6. Proposal C — relaxing route susceptibility
+## 7. Proposal C — relaxing route susceptibility
 
-### 6.1 Two distinct forms
+### 7.1 D0 boundary and constructed susceptibility
 
-The phrase “geometric relaxation” hides two different mechanisms.
+The phrase “geometric relaxation” originally hid two different mechanisms.
+DEC-024 now classifies the first under D0 and leaves only the second as the
+constructed susceptibility candidate.
 
 #### C1 — purely derived instantaneous geometry
 
@@ -520,9 +909,10 @@ effect may vanish immediately with current. It can show current-indexed
 directional geometry but may provide no durable-yet-decaying aftereffect after
 formation activity stops.
 
-C1 is therefore best treated as a theory-grounded diagnostic or future
-comparative realization unless a source-current implementation demonstrates a
-continuation-relevant aftereffect without inventing one.
+C1 is therefore the instantaneous D0 comparator, not a susceptibility
+realization. It remains theory-grounded but falls below durable decay unless a
+source-current implementation demonstrates a continuation-relevant
+coherence-carried aftereffect without inventing one.
 
 #### C2 — slow susceptibility/conductance aftereffect
 
@@ -555,7 +945,7 @@ route coupling = Psi(S_e, current LGRC state)
 Neither equation nor `Psi` is defined by current LGRC theory, specification,
 or runtime. They would be RCAE constructions.
 
-### 6.2 What actually decays
+### 7.2 What actually decays
 
 In C2, coherence need not move. The decaying object is a bounded relational
 state that modifies route coupling.
@@ -573,7 +963,7 @@ That state has its own invariants:
 
 `S_e` must not be an opaque `memory_strength` consulted by a global router.
 
-### 6.3 Carrier and ownership consequence
+### 7.3 Carrier and ownership consequence
 
 Slow susceptibility is not merely a lifecycle attached to DEC-021's node
 carrier. If `S_e` persists after node coherence is matched and it determines
@@ -597,7 +987,7 @@ ownership is:
 This preserves N22's strongest precedent while retaining its naturalization
 debt.
 
-### 6.4 Conservation and accounting
+### 7.4 Conservation and accounting
 
 Susceptibility is not coherence mass. Its relaxation neither creates nor
 destroys coherence, provided the actual LGRC coherence budget remains closed.
@@ -607,7 +997,7 @@ that cost through a separately declared native transfer or other accepted
 mechanism. A free producer update cannot satisfy costly formation merely
 because the resulting conductance is stored in LGRC-visible state.
 
-### 6.5 Topology implications
+### 7.5 Topology implications
 
 The susceptibility realization must not inherit the leakage topology by
 default. It may require:
@@ -625,7 +1015,7 @@ A simple two-route graph may eventually satisfy both realizations, but that is
 a conformance result to demonstrate, not a design premise. Carrier location,
 receiver requirements, continuation state, and encounter mechanics differ.
 
-### 6.6 Required controls
+### 7.6 Required controls
 
 - Susceptibility clamp at candidate and baseline while matching coherence.
 - Coherence clamp while varying susceptibility.
@@ -640,7 +1030,7 @@ receiver requirements, continuation state, and encounter mechanics differ.
   functional distance, causal/proper-time distance, and experimental causal
   influence.
 
-### 6.7 What a result would mean
+### 7.7 What a result would mean
 
 A clean result would support a bounded **RCAE-constructed route-susceptibility
 relaxation candidate** coupled to LGRC-visible state. It could expose a precise
@@ -655,7 +1045,7 @@ It would not establish:
 - semantic learning; or
 - a general ecology primitive independent of realization debt.
 
-### 6.8 Principal risks
+### 7.8 Principal risks
 
 - `S_e` may be an arbitrary memory score with geometric vocabulary.
 - The producer may carry the result rather than LGRC-visible state.
@@ -665,38 +1055,52 @@ It would not establish:
   geometric surface.
 - A fitted relaxation law may be tuned to mirror the leakage outcome.
 
-### 6.9 Current disposition
+### 7.9 Current disposition
 
-Retain C2 as a graph-side primitive candidate, explicitly classified at entry
-as an RCAE-constructed mechanism with N08/N22 precedent and naturalization
-debt. N31 must decide whether it can be theory-authorized and naturalized,
-remains producer-mediated, or should be rejected. It requires its own topology
+Retain C2 as an explicit effective-closure or theory-extension candidate,
+classified at entry as an RCAE-constructed mechanism with N08/N22 precedent.
+Under the coherence-only core, an independently causal `S_e` cannot be
+reclassified as a native RC primitive merely because PyGRC stores it. N31 must
+decide whether the relation is exactly derived/recomputable, warrants a
+declared coarse-grained LGRC closure, remains producer-mediated, requires an
+explicit theory extension, or should be rejected. It requires its own topology
 and cannot inherit the leakage fixture.
 
-## 7. Direct comparison
+## 8. Direct comparison
 
-| Dimension | Release-efficacy attenuation | Conserved source leakage | Susceptibility relaxation |
-| --- | --- | --- | --- |
-| Decaying object | carrier-to-release efficacy | local node-carrier amount | route-local relational/coupling state |
-| Coherence location changes | not necessarily | yes | not necessarily |
-| Coherence total changes | no | no | no |
-| In-flight amplitude changes | forbidden | forbidden | forbidden |
-| Primary carrier | node coherence plus causal efficacy/phase state | node coherence | edge/corridor susceptibility or conductance state |
-| Native transition core | packet transfer after amount selection | packet debit/in-flight/credit | LGRC state storage and route-use receipts only |
-| Missing central policy | age/phase-to-release law | endogenous leak trigger/amount law | reinforcement, relaxation, and coupling law |
-| Current theory support | conservation-compatible, no attenuation law | continuity/conservation-compatible, no leak law | instantaneous induced geometry only; no slow `S_e` law |
-| Graph precedent | packet producers and timing | packet transfer and producer scheduling | N08 missing surface; N22 producer-mediated conductance candidate |
-| Likely topology need | local response receiver/encounter | declared receiver/reservoir and isolation | edge/corridor coupling and local encounter |
-| Strongest honest reading | decay of field expression | local field-state decay by redistribution | constructed relational relaxation |
-| Hidden-state risk | high | moderate | high |
-| Naturalization debt | release policy and encounter | emission policy and encounter | carrier lifecycle, coupling, encounter, restoration wrapper |
-| Current recommendation | N31 boundary/comparator candidate | N31 native-mechanics-aligned candidate | N31 constructed/naturalization candidate |
+| Dimension | D0 coherence-only relation | Release-efficacy attenuation | Conserved source leakage | Susceptibility relaxation |
+| --- | --- | --- | --- | --- |
+| Weakening object | slow `C/J_C` organization or derived relation | carrier-to-release efficacy | local node-carrier amount | route-local relational/coupling state |
+| Coherence location changes | ordinarily yes for D0a; not necessarily for D0b observable | not necessarily | yes | not necessarily |
+| Coherence total changes | no | no | no | no |
+| In-flight amplitude changes | forbidden | forbidden | forbidden | forbidden |
+| Primary carrier | complete coherence state; derived geometry/history relation has no independent freedom | node coherence plus causal efficacy/phase state | node coherence | edge/corridor susceptibility or conductance state |
+| Native transition core | ordinary coherence evolution and induced geometry | packet transfer after amount selection | packet debit/in-flight/credit | LGRC state storage and route-use receipts only |
+| Missing central requirement | faithful discrete slow-state representation and causal local consumption may be absent | age/phase-to-release law | endogenous leak trigger/amount law | reinforcement, relaxation, and coupling law |
+| Current theory support | primary coherence-only hypothesis; graph-window relation is observational until causal use is shown | compatible only when efficacy is coherence-derived; no independent age law | continuity/conservation-compatible, no leak law | instantaneous induced geometry only; no independent slow `S_e` law |
+| Graph precedent | coarse node state, packet/flux history, derived graph concepts; exact D0a support unproved | packet producers and timing | packet transfer and producer scheduling | N08 missing surface; N22 producer-mediated conductance candidate |
+| Likely topology need | enough route-local extent/state to expose slow organization and local mediation | local response receiver/encounter | declared receiver/reservoir and isolation | edge/corridor coupling and local encounter |
+| Strongest honest reading | derived causal decay or fading observable, classified separately | decay of field expression | local field-state decay by redistribution | constructed closure or theory extension |
+| Hidden-state risk | low only if complete-state and recomputation tests pass | high | moderate | high |
+| Naturalization debt | possible LGRC representation/coupling gap, not necessarily a new primitive | release policy and encounter | emission policy and encounter | carrier lifecycle, coupling, encounter, restoration wrapper, and theory-extension status |
+| Current recommendation | first N31 hypothesis | later boundary/comparator candidate | first additional-mechanism fallback | constructed closure/extension candidate |
 
-## 8. Why the N31 candidates must remain separate
+## 9. Why the N31 candidates must remain separate
 
-The leakage and susceptibility realizations test different ontologies:
+D0 and the three additional-mechanism candidates occupy different authority
+levels:
 
 ```text
+D0a:
+  complete coherence state changes and ordinary coherence evolution weakens
+  the causal route-local organization
+
+D0b:
+  a finite-history relation fades as an observable or declared closure
+
+release attenuation:
+  a carrier-to-expression relation changes
+
 leakage:
   local field quantity moves through the conserved coherence economy
 
@@ -704,8 +1108,13 @@ susceptibility:
   a non-coherence relational state changes and relaxes
 ```
 
-They cannot be represented as two values of one `decay_mode` parameter inside
-one scientific matrix without obscuring:
+D0a and D0b must not be conflated: the first can be a causal manifestation of
+the ordinary coherence loop, while the second is observational unless an
+authorized local constitutive relation consumes it. Likewise, the additional
+mechanisms cannot be represented as values of one `decay_mode` parameter
+without obscuring their ontology.
+
+Any cross-candidate matrix must preserve:
 
 - which state is the carrier;
 - what topology makes the transition closed;
@@ -716,15 +1125,18 @@ one scientific matrix without obscuring:
 - which controls are valid; and
 - which claim ceiling applies.
 
-They therefore require separate realization identities inside N31 even if
-some infrastructure is shared. N31 may select one, more than one, or none; the
-comparison must not presuppose that both become P2-I3 implementations.
+They therefore require separate realization or diagnostic identities inside
+N31 even if some infrastructure is shared. N31 may retain D0, select one or
+more additional mechanisms, classify a closure/extension, or select none; the
+comparison must not presuppose that any fallback becomes a P2-I3
+implementation.
 
-## 9. Safe reuse without assuming common topology
+## 10. Safe reuse without assuming common topology
 
-### 9.1 Share the abstract protocol
+### 10.1 Share the abstract protocol
 
-The N31 realizations can implement the same high-level causal roles:
+The N31 diagnostics and realizations can implement the same high-level causal
+roles:
 
 ```text
 construct registered baseline
@@ -739,7 +1151,7 @@ snapshot, restore, branch, and reconstruct
 
 The role names and ordering may be shared. Their concrete operations may not.
 
-### 9.2 Share artifact envelopes and validation infrastructure
+### 10.2 Share artifact envelopes and validation infrastructure
 
 Safe candidates for reuse include:
 
@@ -757,7 +1169,7 @@ Safe candidates for reuse include:
 The common layer must not assume that a route is an edge, a node, or a fixed
 path sequence.
 
-### 9.3 Use realization adapters, not one universal state
+### 10.3 Use realization adapters, not one universal state
 
 A future source layout may expose a small protocol such as:
 
@@ -774,14 +1186,16 @@ restore_complete_state()
 audit_invariants()
 ```
 
-The leakage adapter and susceptibility adapter provide different topology,
-state, transitions, and invariant audits. No common implementation should
-read route scores and decide outcomes on their behalf.
+The D0 adapter must expose complete coherence state, slow/instantaneous
+components, derived observables, and cache-recomputation status without adding
+causal state. The leakage and susceptibility adapters provide different
+topology, state, transitions, and invariant audits. No common implementation
+should read route scores and decide outcomes on their behalf.
 
 This interface is illustrative only. Exact API and module names require a
 later implementation decision.
 
-### 9.4 Keep these parts realization-specific
+### 10.4 Keep these parts realization-specific
 
 - topology fixture and symmetry proof;
 - carrier schema and units;
@@ -798,9 +1212,10 @@ later implementation decision.
 - terminal claim language.
 
 Duplicating these pieces is not wasted effort. They are the scientific content
-that proves the two mechanisms are genuinely different.
+that proves the coherence-only diagnostics and added mechanisms are genuinely
+different.
 
-## 10. Selected cross-project structure
+## 11. Selected cross-project structure
 
 DEC-023 pauses P2-I3 at Q-005 and transfers the primitive question to N31.
 The detailed departure and return procedure is the
@@ -808,13 +1223,19 @@ The detailed departure and return procedure is the
 
 ### N31 — primitive discrimination and possible naturalization
 
+- Ask first whether ordinary `C/J_C` evolution already supplies a causal,
+  durable-yet-weakening route-local relation without an additional decay
+  state.
+- Separate slow causal coherence organization, a fading finite-window graph
+  observable, and instantaneous anisotropy.
 - Treat release attenuation, conserved leakage, and susceptibility relaxation
-  as distinct semantic candidates.
+  as distinct later fallback, closure, or extension candidates.
 - Give each candidate its smallest faithful topology and invariant contract.
 - Use source-current evidence, local causal readout, intervention, restoration,
   and reconstruction.
-- Select one primitive, multiple distinct primitives, a producer-only
-  candidate, or no primitive without forcing continuity.
+- Retain a positive coherence-only result, select one or more additional
+  primitives/closures, retain a producer-only candidate, or select none
+  without forcing continuity.
 - If native admission is warranted, define and test the PyGRC specification
   and public operation in graph-project scope.
 
@@ -832,7 +1253,19 @@ This structure avoids making RCAE the author of unresolved substrate semantics
 while preserving its freedom to construct an ecology-side mechanism if N31
 selects nothing.
 
-## 11. Controls that can share intent but not assumed mechanics
+## 12. Controls that can share intent but not assumed mechanics
+
+D0 requires controls that do not project cleanly onto the additional-state
+realizations: complete-field rather than node-scalar matching, slow-mode
+clamp, instantaneous-geometry comparison, derived-observable causal
+disconnection, and exact cache recomputation. Those controls retain separate
+identities even where their intent resembles formation withdrawal, mediator
+clamp, or state-matched history below.
+
+They become scientific controls only after the D0a representation gate
+passes. Lossy or missing representation closes D0a with
+`unavailable_missing_representation`; it does not activate a constructed
+surrogate solely to populate this matrix.
 
 | Control intent | Leakage realization | Susceptibility realization |
 | --- | --- | --- |
@@ -848,12 +1281,12 @@ selects nothing.
 The stable lane-control IDs may remain common, but each realization needs a
 separate operational control identity and evidence resolver.
 
-## 12. Interpretation ladder
+## 13. Interpretation ladder
 
 Thresholds remain guidance bands under the developmental-interpretation
 contract, not automatic accept/reject switches.
 
-For either implementation, interpretation must ask:
+For every diagnostic or implementation, interpretation must ask:
 
 - Did the selected state actually change?
 - Was the change distinguishable from measurement resolution?
@@ -868,24 +1301,30 @@ For either implementation, interpretation must ask:
 A small or counter-directional effect is not discarded. It receives a
 structural and behavioral interpretation and a bounded next-move record.
 
-## 13. Decision consequences still open
+## 14. Decision consequences still open
 
-This report and DEC-023 establish these consequences:
+This report and DEC-023/DEC-024 establish these consequences:
 
-1. The three-way interpretation record is retained as N31 demand input.
+1. D0 is the first N31 hypothesis; the original three-way interpretation
+   remains retained as fallback/extension demand input.
 2. The former plan for two RCAE implementations is inactive.
 3. Q-005 remains intentionally unresolved while N31 is active.
-4. N31 must preserve candidate-specific topology and semantics.
+4. N31 must preserve the D0a/D0b causal boundary and candidate-specific
+   topology and semantics.
 5. P2-I3 resumes only through the handoff's exact reconstruction,
    source-transition, carrier/ownership review, and decision sequence.
 6. No implementation, conformance, calibration, registration, or execution
    authority follows in RCAE before that return.
 
-## 14. Bottom line
+## 15. Bottom line
 
-The three proposals answer different questions:
+The four candidate positions answer different questions:
 
 ```text
+D0:
+  Does ordinary coherence evolution itself produce a causal,
+  durable-yet-weakening route-local relation without additional state?
+
 release attenuation:
   Does an old field express less even when its carrier remains?
 
@@ -898,9 +1337,10 @@ susceptibility relaxation:
   may remain unchanged?
 ```
 
-The active program sends all three meanings to N31 for a small, directed
-LGRC9V3 primitive experiment. Conserved leakage enters as the strongest
-native-mechanics-aligned candidate; susceptibility relaxation enters as an
-explicitly constructed naturalization candidate; release attenuation enters
-as a boundary between field decay and expression decay. P2-I3 then consumes
-the bounded graph result rather than defining the primitive locally.
+The active program sends D0 and all three additional meanings to N31 for a
+small, directed LGRC9V3 experiment. D0 is tested first. Conserved leakage is
+the first native-mechanics-aligned fallback if ordinary coherence evolution is
+insufficient; susceptibility relaxation is an explicit closure or
+theory-extension candidate; release attenuation is a boundary between field
+decay and expression decay. P2-I3 then consumes the bounded graph result rather
+than defining the primitive locally.

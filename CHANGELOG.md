@@ -50,6 +50,17 @@ All notable changes to this project will be documented in this file.
   source leakage, and route-susceptibility relaxation; the handoff fixes the
   graph-side demand, required N31 return roles, outcome-specific branches, and
   exact RCAE resumption procedure.
+- Added DEC-024's coherence-only D0 amendment to the P2-I3/N31 boundary. N31
+  now tests ordinary `C/J_C` evolution first, distinguishes slow causal
+  organization from a fading graph observable and instantaneous geometry, and
+  classifies cached susceptibility as derived state, effective closure, or
+  explicit theory extension. The demand now binds the three LGRC substrate
+  papers as a separate specification layer while retaining exact PyGRC
+  source, callables, tests, and artifacts as the executable-capability barrier.
+  Its pre-freeze guards also separate ordinary redistribution from added
+  leakage, prohibit producer-authored D0 aftereffects, require D0a
+  representability, and distinguish source identities and reconstruction
+  statuses.
 - Added the AE01 experiment workspace and advanced it to `AE01-C2`, with L01
   and L02 accepted and L03–L07 plus cross-lane synthesis still unexecuted.
 - Added native-first capability and source-admission audits that distinguish
@@ -79,7 +90,12 @@ All notable changes to this project will be documented in this file.
 - Advanced P2-I3 through its brief, source-audit, and source-admission gates,
   then intentionally paused I03 at Q-005. The provisional two-RCAE-decay-
   realization direction was superseded before implementation so graph-project
-  N31 can test and possibly naturalize the unresolved primitive first.
+  N31 can test coherence-only decay and only then specify or naturalize any
+  required additional mechanism.
+- Corrected the prospective N31 ordering before execution: conserved leakage
+  is now the first additional-mechanism fallback rather than the first
+  hypothesis, and a positive coherence-only result is distinct from primitive
+  non-selection. No P2-I3 gate, evidence, implementation, or claim changed.
 - Updated the root, papers, experiments, and AE01 navigation so accepted
   experiment mechanisms and their limits are visible from the primary reading
   paths.

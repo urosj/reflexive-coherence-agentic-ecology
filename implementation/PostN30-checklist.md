@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.58 draft
+**Baseline revision:** 0.59 draft
 
 **Date:** 2026-07-16
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.58 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.59 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I03 paused at N31 handoff | P2-GATE | DEC-023 defers Q-005 to graph/LGRC; return admission, dynamics, encounter, and execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I03 paused at N31 handoff | P2-GATE | DEC-023/024 defer Q-005 to D0-first graph/LGRC work; return admission, dynamics, encounter, and execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1361,12 +1361,24 @@ Entry condition:
   [N31 handoff/return contract](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md).
   P2-I3 I03 is intentionally paused at Q-005; no implementation,
   conformance, calibration, registration, execution, or L03 result exists.
+- [x] Record DEC-024 after direct coherence-only core-theory and LGRC-substrate
+  evaluation. N31 must test D0 ordinary `C/J_C` evolution first, distinguish
+  slow causal organization from a fading graph observable and instantaneous
+  geometry, classify any cached susceptibility as derived, effective closure,
+  or theory extension, and keep paper-defined semantics separate from
+  source/test-proven PyGRC capability. Existing gates and evidence remain
+  unchanged.
+- [x] Apply the grounded DEC-024 pre-freeze clarifications: separate ordinary
+  redistribution from added leakage, prohibit load-bearing D0 producer
+  updates, require a D0a representation disposition before execution,
+  distinguish cache recomputation from execution reconstruction, and separate
+  theory/substrate-source identity from the future RCAE demand-source commit.
 
 Current continuation:
 
 ```text
 committed RCAE P2-I3 demand state
--> explicit graph-project N31 scope
+-> explicit graph-project N31 scope with D0 tested first
 -> reconstructable N31 closeout and return bundle
 -> bounded RCAE source transition
 -> explicitly retain/reopen DEC-021 and DEC-022
@@ -2338,6 +2350,7 @@ Change log:
 | CL-059 | 2026-07-16 | Revision 0.56 draft retains a thorough Q-005 study of release-efficacy attenuation, coherence-conserving source leakage, and constructed susceptibility relaxation. Leakage and susceptibility are separate causal realizations and may not be presumed to share topology; protocol/artifact reuse remains allowed above carrier semantics. | P2-I3 Q-005 pre-decision evidence | Superseded prospectively by CL-060 before any implementation; the interpretation study remains active input |
 | CL-060 | 2026-07-16 | Revision 0.57 draft records DEC-023 and the detailed N31 handoff/return contract. P2-I3 is intentionally paused at Q-005; graph-project N31 receives all three decay meanings and may select one, multiple, a producer-only candidate, no primitive, or a new taxonomy. Return requires graph reconstruction, a bounded RCAE source transition, explicit carrier/ownership retention or reopening, and ordered Q-005-through-Q-008 resumption. | P2-I3 cross-project spiral boundary | Owner-accepted and authorized for retention; after commit switch scope explicitly to graph N31, with no P2-I3 implementation or scientific effect |
 | CL-061 | 2026-07-16 | Revision 0.58 draft synchronizes root, experiment, AE01-view, implementation, changelog, release-note, and master-lane status with the retained P2-I3 source-gate and N31-handoff state. | Repository public/current-state projection | Active; documentation-only synchronization, with no gate, evidence, implementation, or claim change |
+| CL-062 | 2026-07-16 | Revision 0.59 draft records DEC-024 and amends the prospective N31 demand after direct core-theory, LGRC-substrate, and grounded pre-freeze review. D0 coherence-only decay is first; D0a slow causal organization, D0b fading graph observable, D0c instantaneous geometry, complete-state/cache tests, discrete/runtime missing surfaces, effective closure, and theory-extension outcomes are separated. Seven exact theory/substrate papers are demand-bound while exact PyGRC source, callables, tests, and artifacts remain the executable-capability barrier. Ordinary redistribution is separated from added leakage; D0 producers cannot author the aftereffect; D0a must pass a representation gate; cache recomputation and execution reconstruction have distinct statuses; and theory/substrate versus RCAE demand-source identities are separate. | P2-I3 pre-N31 theory/substrate correction | Active; passed gates, I01/I02 evidence, P2-I3 pause, and scientific state unchanged |
 
 ## 17. Current next actions
 
@@ -2425,3 +2438,10 @@ The next unchecked actions in dependency order are:
     scope and return its reconstructable closeout bundle. P2-I3 remains paused;
     this RCAE repository records the dependency but does not authorize graph
     changes from within the RCAE project.
+25. [x] Before N31 begins, amend the retained Q-005 study, handoff, decision
+    record, lane checklist, master directives, and public status surfaces with
+    owner-accepted DEC-024's D0-first coherence-only boundary, seven exact
+    theory/substrate authorities, and the separate PyGRC executable-capability
+    barrier. Apply the grounded pre-freeze representation, producer,
+    redistribution/leakage, recomputation/reconstruction, and provenance
+    clarifications without reopening P2-I3 gates.

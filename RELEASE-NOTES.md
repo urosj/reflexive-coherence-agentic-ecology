@@ -1,6 +1,6 @@
 # Release Notes
 
-## P2-I3 decay-primitive spiral handoff — 2026-07-16
+## P2-I3 derived-decay spiral handoff — 2026-07-16
 
 P2-I3 has completed its semantic governance, source-current capability audit,
 and exact source admission without executing an L03 candidate. I03 selected a
@@ -18,13 +18,14 @@ route-susceptibility relaxation
 These are not interchangeable decay parameters. They differ in carrier,
 topology, invariants, continuation state, local causal action, restoration,
 and claim ceiling. DEC-023 therefore pauses P2-I3 and selects a graph-side N31
-decay-semantics/native-primitive experiment through the N30 cross-project
-spiral.
+decay-semantics experiment through the N30 cross-project spiral; DEC-024 makes
+the coherence-only explanation its first hypothesis.
 
 The [Q-005 interpretation study](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-Q005-decay-interpretation-study.md)
-retains the three meanings and their source boundaries. The
+retains D0 plus the three added-mechanism meanings and their source boundaries.
+The
 [N31 handoff and return contract](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
-defines the required graph return bundle, six admissible outcome paths,
+defines the required graph return bundle, seven admissible outcome paths,
 bounded RCAE source transition, affected carrier/ownership review, and exact
 Q-005-through-Q-008 resumption sequence.
 
@@ -38,6 +39,41 @@ Q-005-through-Q-008 resumption sequence.
 - The N31 handoff is ecology demand and continuation authority, not graph
   evidence or a native decay claim.
 - AE01 remains at `AE01-C2`.
+
+### Coherence-only priority amendment
+
+DEC-024 prospectively amends the N31 question after direct evaluation of the
+coherence-only core theory. N31 must first test whether prior route activity
+can reorganize `C/J_C` so that ordinary internal evolution weakens a causal
+route-local relation without an additional decay state.
+
+The amended handoff separates:
+
+```text
+D0a  slow causal coherence organization
+D0b  fading finite-window graph observable
+D0c  instantaneous current-derived geometry comparator
+```
+
+Release attenuation, conserved leakage, and susceptibility relaxation remain
+available only as later boundary, fallback, closure, or theory-extension
+paths. A successful D0 result is a positive coherence-only result, not “no
+primitive selected.” This amendment changes no passed P2-I3 gate or evidence
+state and authorizes no RCAE implementation.
+
+The amendment also binds the base LGRC, native packet-loop, and causal
+pulse-substrate papers as a specification layer between core RC theory and
+PyGRC. The papers constrain causal history, conservation, packet handoff, and
+proposed history-surface meaning; they do not prove that a decay lifecycle is
+implemented. Exact PyGRC source, public callables, tests, and retained runtime
+artifacts remain the native-capability barrier.
+
+The frozen N31 demand additionally requires D0a representability before
+execution and prevents experiment producers from authoring the claimed
+post-formation weakening. Ordinary conserved redistribution remains D0 unless
+a new field-specific emission policy is introduced. Cache recomputation,
+complete execution reconstruction, theory/substrate provenance, and the
+future RCAE demand-source commit remain separate identities.
 
 ## AE01 controlled-evidence update — 2026-07-15
 

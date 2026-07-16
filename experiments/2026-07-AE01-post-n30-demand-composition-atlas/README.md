@@ -230,10 +230,12 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   complete realization, calibration, registration, execution authority, or
   scientific result exists yet.
 - The [Q-005 decay interpretation study](reports/P2-I3-Q005-decay-interpretation-study.md)
-  separates release-efficacy attenuation, coherence-conserving source
-  leakage, and constructed susceptibility relaxation. DEC-023 now preserves
-  those meanings as input to graph-project N31 rather than selecting two local
-  RCAE implementations.
+  now begins with D0 coherence-only derived decay, separating slow causal
+  `C/J_C` organization from a fading graph observable and instantaneous
+  geometry. It retains release-efficacy attenuation, coherence-conserving
+  leakage, and constructed susceptibility relaxation as later paths.
+  DEC-023/024 preserve all four positions as graph-project N31 input rather
+  than selecting local RCAE implementations.
 - The accepted [N31 handoff and return contract](implementation/P2-I3-N31-decay-primitive-handoff.md)
   intentionally pauses P2-I3 at Q-005. It fixes the required N31 output roles,
   repository boundary, outcome-specific return paths, bounded source

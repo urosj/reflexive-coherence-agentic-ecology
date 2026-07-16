@@ -94,7 +94,7 @@ This repository is intended for:
   for the method that turns those concepts into bounded evidence.
 - Read the [AE01 Agentic-Ecology View](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
   for the current P2-I1, P2-I2, and appendix results and their limits.
-- Read the [P2-I3 to N31 decay-primitive handoff](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
+- Read the [P2-I3 to N31 derived-decay/primitive-semantics handoff](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
   for the active graph/ecology spiral boundary and exact return procedure.
 
 ## What this repository is
@@ -131,9 +131,11 @@ design work. Its source-audit and source-admission gates passed; Q-003/Q-004
 selected the provisional node carrier and mixed native/RCAE ownership
 available before a decay primitive was defined. The Q-005 study then showed
 that release attenuation, conserved leakage, and susceptibility relaxation
-are different substrate meanings. DEC-023 therefore pauses P2-I3 and hands
-that primitive question to graph-project N31. This is a demand and
-continuation state, not an L03 result or native decay evidence.
+are different added-mechanism meanings. DEC-023 therefore pauses P2-I3 and
+hands the question to graph-project N31. DEC-024 adds the prior coherence-only
+hypothesis: N31 must first test whether ordinary `C/J_C` evolution already
+produces causal weakening without an additional decay state. This is a demand
+and continuation state, not an L03 result or native decay evidence.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -196,7 +198,7 @@ and shared-medium participation before implementation claims are made.
   independent reconstruction, an Appendix A operation-complementarity result,
   and an Appendix B terminal-P temporal discriminator. P2-I3 has passed its
   source audit/admission work and is intentionally paused at Q-005 under the
-  N31 decay-primitive handoff; no L03 candidate has executed. L04–L07 and
+  DEC-023/024 D0-first N31 handoff; no L03 candidate has executed. L04–L07 and
   cross-lane synthesis remain unexecuted. New readers can begin with the
   [general experiment bridge](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
   and then read the

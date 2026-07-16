@@ -24,7 +24,9 @@ carrier; Appendix B/APP-B4 instead identifies a terminal-P temporal gate in
 P2-I2 active history. P2-I3 has passed its brief, source-audit, and exact
 source-admission gates. I03 selected a provisional node carrier and mixed
 native/RCAE ownership, then paused at Q-005 after its decay interpretation
-study exposed a graph-side primitive question. DEC-023 and the
+study exposed a graph-side primitive question. DEC-024 subsequently makes
+coherence-only D0 the first N31 hypothesis and retains the original three
+mechanisms as fallback, closure, or extension paths. DEC-023/024 and the
 [N31 handoff](2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
 return that question to graph/LGRC with an exact RCAE resumption contract.
 No L03 candidate has executed; L04–L07 and cross-lane synthesis also remain

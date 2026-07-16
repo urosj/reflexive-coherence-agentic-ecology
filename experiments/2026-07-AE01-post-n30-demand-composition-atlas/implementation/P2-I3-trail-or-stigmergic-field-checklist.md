@@ -2,7 +2,7 @@
 
 **Status:** I02 exact source admission accepted;
 `P2-I3-SOURCE-ADMISSION-GATE` passed; I03 intentionally paused at Q-005 under
-the N31 decay-primitive handoff
+the DEC-023/DEC-024 N31 derived-decay/primitive-semantics handoff
 
 **Iteration:** `P2-I3`
 
@@ -10,10 +10,12 @@ the N31 decay-primitive handoff
 
 **Current activity iteration:** `P2-I3-I00` complete; `P2-I3-I01` audit
 accepted and complete; `P2-I3-I02` exact source admission accepted and
-complete; `P2-I3-I03` paused by DEC-023 pending the exact N31 return contract
+complete; `P2-I3-I03` paused by DEC-023/024 pending the exact N31 return
+contract
 
 **Current evidence effect:** source-current capability evidence plus exact
-accepted source-role authority and one graph-side demand/handoff directive;
+accepted source-role authority and one amended graph-side demand/handoff
+directive;
 no realization, calibration, registration, execution, or scientific result
 
 **Semantic authority:**
@@ -133,7 +135,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-BRIEF-GATE` | Accepted semantic brief is projected into an owner-accepted checklist and cumulative decision record | Passed | `P2-I3-DEC-014`; opens only I01 input-freeze construction and review |
 | `P2-I3-SOURCE-AUDIT-GATE` | One frozen, source-current, read-only audit answers the accepted capability questions | Passed | Owner-passed grounded artifact review; `P2-I3-DEC-018` |
 | `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Passed | Owner-accepted DEC-019, exact manifest, and reconstruction; opens only I03 realization questions |
-| `P2-I3-DISCRIMINATOR-GATE` | Field realization, dynamic, causal chain, observation boundary, mode family, and operational hypotheses are frozen | Pending cross-project return | DEC-023 defers Q-005 to N31; Q-006 through Q-008, Q-013, and design part of Q-015 remain unopened until the N31 return is admitted |
+| `P2-I3-DISCRIMINATOR-GATE` | Field realization, dynamic, causal chain, observation boundary, mode family, and operational hypotheses are frozen | Pending cross-project return | DEC-023/024 defer Q-005 to D0-first N31; Q-006 through Q-008, Q-013, and design part of Q-015 remain unopened until the N31 return is admitted |
 | `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Unopened | Requires passed discriminator gate and `P2-I3-Q-009` through `Q-012`, plus `Q-016` |
 | `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | Requires accepted CAL-PRE package and an explicitly authorized calibration invocation |
 | `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Requires passed CAL-GATE and `P2-I3-Q-014` through `Q-018` |
@@ -196,7 +198,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-I00` | Accepted-brief projection, cumulative decision record, and evidence-expandable checklist | Owner-accepted semantic brief | Complete and owner-accepted | `P2-I3-BRIEF-GATE=passed`; no scientific evidence |
 | `P2-I3-I01` | Source-current read-only capability audit | Passed brief gate plus accepted Q-001 freeze | Complete and owner-accepted | `P2-I3-SOURCE-AUDIT-GATE=passed` through DEC-018; no source admission or scientific evidence |
 | `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Complete and owner-accepted | `P2-I3-SOURCE-ADMISSION-GATE=passed` through DEC-019; no realization |
-| `P2-I3-I03` | Field realization, dynamics, causal factorization, operational hypotheses, and bounded runtime conformance | Passed source-admission gate | Intentionally paused at Q-005 for N31 decay-primitive handoff | May resume only through the exact N31 return/source-transition procedure; no calibration or candidate evidence |
+| `P2-I3-I03` | Field realization, dynamics, causal factorization, operational hypotheses, and bounded runtime conformance | Passed source-admission gate | Intentionally paused at Q-005 for D0-first N31 handoff | May resume only through the exact N31 return/source-transition procedure; no calibration or candidate evidence |
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Unopened | May pass `P2-I3-CAL-PRE-GATE`; no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Unopened | May pass `P2-I3-CAL-GATE`; no candidate execution |
 | `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Unopened | May pass `P2-I3-REG-GATE`; no candidate execution |
@@ -617,17 +619,36 @@ no calibration or candidate evidence.
 - [x] Resolve native/producer/constructed/unsuitable/missing ownership
   `P2-I3-Q-004` through the mixed native-LGRC/RCAE map in
   `P2-I3-DEC-022`.
-- [x] Retain the three-way
+- [x] Retain the originally three-way, now D0-first
   [Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md)
-  as pre-decision evidence. It distinguishes release-efficacy attenuation,
-  coherence-conserving source leakage, and constructed susceptibility
-  relaxation; it grants no implementation authority.
+  as pre-decision evidence. DEC-024 adds coherence-only derived decay as the
+  first hypothesis, separates causal slow organization from a fading graph
+  observable, and retains release attenuation, conserved leakage, and
+  constructed susceptibility as later paths; it grants no implementation
+  authority.
 - [ ] Resolve the selected non-static dynamic `P2-I3-Q-005`.
 - [x] Replace the provisional two-RCAE-realization direction with the accepted
   DEC-023 cross-project spiral. Retain the
   [N31 handoff and return contract](P2-I3-N31-decay-primitive-handoff.md),
   defer Q-005 without answering it, and prohibit I03 implementation until the
   exact N31 result is reconstructed and admitted.
+- [x] Record DEC-024: N31 tests D0 first; exact cache/recomputation and
+  complete-field boundaries distinguish derived state from an effective
+  closure or theory extension. Passed gates and the P2-I3 pause remain
+  unchanged.
+- [x] Freeze DEC-024's D0-versus-B classifier: ordinary native `C/J_C`
+  redistribution remains D0; Candidate B requires a new field-specific
+  emission eligibility, amount, timing, destination, or lifecycle policy.
+- [x] Freeze the D0 producer guard: fixture, observation, admitted-native
+  request, and receipt roles are permitted; no producer may author the
+  load-bearing post-formation state or weakening transition.
+- [x] Require N31 to classify D0a representation as native, exact projection,
+  lossy, or missing before execution. Lossy/missing state closes D0a at the
+  representation boundary and makes affected controls
+  `unavailable_missing_representation`.
+- [x] Separate cache recomputation from complete execution reconstruction and
+  correct theory/substrate-source identity versus the future committed RCAE
+  demand-source identity.
 - [ ] On return, admit the exact N31 revision through a bounded source
   transition, then explicitly retain or reopen DEC-021/022 before resolving
   Q-005. Follow the handoff's outcome-specific branch and return checklist.
@@ -1034,7 +1055,7 @@ from appearing earlier than its evidence permits.
 | `P2-I3-Q-002` | I02 source admission | Resolved by `P2-I3-DEC-019`; no longer blocks I03 |
 | `P2-I3-Q-003` | I03 carrier selection | Resolved by `P2-I3-DEC-021`; alternative carriers retained with rerun rules |
 | `P2-I3-Q-004` | I03 operation ownership | Resolved by `P2-I3-DEC-022`; conformance may reopen affected rows |
-| `P2-I3-Q-005` | I03 dynamic selection after graph return | Deferred by DEC-023; N31 demand/return contract active and local implementation prohibited |
+| `P2-I3-Q-005` | I03 dynamic selection after graph return | Deferred by DEC-023/024; D0-first N31 demand/return contract active and local implementation prohibited |
 | `P2-I3-Q-006`–`P2-I3-Q-008` | I03 equation, encounter, and mode | Open but inactive until N31 return and Q-005 resolution; block discriminator gate |
 | `P2-I3-Q-009`–`P2-I3-Q-012` | I04 calibration preregistration | Open; block CAL-PRE |
 | `P2-I3-Q-013` | I03 assigns separate stable identities; I04 binds their measurement semantics | Open; blocks registration |
@@ -1101,6 +1122,7 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-021` | Project owner accepts the Q-004 ownership classification | Record DEC-022 mixed ownership: retain native LGRC9V3 carrier/packet/time/restoration transitions, require explicit RCAE completion for missing lifecycle/encounter/control functions, reject nearby causal substitutions, and preserve naturalization debt | Complete as ownership authority only; Q-005 through Q-008 remain open and no implementation, conformance, calibration, or scientific effect follows |
 | `P2-I3-CHG-022` | Owner requires a thorough record of all three decay interpretations and initially considers leakage plus constructed-susceptibility implementations; owner rejects assumed topology reuse | Retain the Q-005 interpretation study; separate attenuation, conserved leakage, and susceptibility relaxation; permit reuse only above demonstrated topology/carrier equivalence | Superseded prospectively by CHG-023 before implementation selection; report remains active evidence and no implementation occurred |
 | `P2-I3-CHG-023` | Owner recognizes that the unresolved meaning of decay belongs first in graph/LGRC and accepts the N31 cross-project spiral | Record DEC-023; replace the local two-implementation plan with a detailed N31 demand/handoff/return contract; pause I03 at Q-005 | Complete as cross-project continuation authority; Q-005 remains unresolved and all P2-I3 implementation/scientific work stays closed pending N31 return |
+| `P2-I3-CHG-024` | Owner accepts the core-theory evaluation, points to the LGRC substrate papers as the specification layer below core theory and above code, and supplies a grounded pre-freeze review of the amended package | Record DEC-024; add D0a slow causal coherence organization, D0b fading derived graph observable, D0c instantaneous comparator, seven theory/substrate authorities, explicit paper-to-code capability dispositions, ordinary-redistribution-versus-added-leakage classification, strict D0 producer limits, a pre-execution D0a representation gate, distinct cache-recomputation/execution-reconstruction statuses, corrected source identities, D0-first N31 outcomes, and return branches | Complete as bounded prospective theory/substrate correction; no passed gate, admitted I01/I02 artifact, implementation, or scientific state changes |
 
 ## 19. Evidence ledger
 
@@ -1123,8 +1145,9 @@ and evidence effect are retained.
 | `P2-I3-EV-012` | [I02 source-admission manifest](../contracts/p2-i3/i02-source-admission-manifest.json) | I02 | Exact accepted source and role authority only | Accepted; 26 graph files, 40 callables, 24 tests, 8 theory sources, and 76 grouped precedents |
 | `P2-I3-EV-013` | [I02 validation](../contracts/p2-i3/i02-admission-validation.json) and [report](../reports/P2-I3-I02-exact-source-admission.md) | I02 | Reconstruction and human interpretation of the admission bundle | Passed reconstruction; SOURCE-ADMISSION-GATE passed with no realization, runtime, or scientific effect |
 | `P2-I3-EV-014` | Owner substrate clarification retained as DEC-020/CHG-017 | I02 | Eligible-substrate and interpretation boundary only | Accepted: LGRC9V3 core, GRC9V3 comparative-only; no realization selected |
-| `P2-I3-EV-015` | [Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md) | I03 | Comparison of three decay ontologies, source support, realization boundaries, and safe reuse | Retained as N31 demand input under DEC-023; Q-005, topology, equation, and encounter remain open |
-| `P2-I3-EV-016` | [N31 handoff and return contract](P2-I3-N31-decay-primitive-handoff.md) | I03 | Graph-side demand selection, P2-I3 pause boundary, required N31 return roles, and exact resumption procedure | Accepted through DEC-023; no graph result, P2-I3 realization, or scientific effect |
+| `P2-I3-EV-015` | [Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md) | I03 | D0-first coherence-only analysis plus comparison of three added-mechanism ontologies, source support, realization boundaries, and safe reuse | Retained as amended N31 demand input under DEC-023/024; Q-005, topology, equation, and encounter remain open |
+| `P2-I3-EV-016` | [N31 handoff and return contract](P2-I3-N31-decay-primitive-handoff.md) | I03 | D0-first graph-side demand selection, P2-I3 pause boundary, required N31 return roles, and exact resumption procedure | Accepted through DEC-023/024; no graph result, P2-I3 realization, or scientific effect |
+| `P2-I3-EV-017` | Owner-accepted coherence-only theory/LGRC-substrate evaluation and grounded pre-freeze clarification retained as DEC-024/CHG-024 | I03 | Prospective N31 hypothesis ordering, theory/closure boundary, representation and producer guards, provenance split, and specification-to-code authority barrier only | Accepted 2026-07-16; no gate reopening, implementation, runtime, or scientific effect |
 
 No realization, calibration, registration, runtime, control, or scientific
 evidence exists yet for P2-I3. Accepted I02 authority is limited to exact
@@ -1149,16 +1172,18 @@ accepted semantic brief
 + LGRC9V3 core / GRC9V3 comparative-only boundary fixed by DEC-020
 + P2-I3-Q-002 resolved by DEC-019
 = P2-I3-SOURCE-ADMISSION-GATE passed
-+ Q-005 three-way interpretation retained
-+ DEC-023 selects N31 decay-primitive spiral
-+ exact N31 departure and return contract retained
++ Q-005 original three-way interpretation retained
++ DEC-023 selects N31 cross-project spiral
++ DEC-024 makes coherence-only D0 the first N31 hypothesis
++ amended N31 departure and return contract retained
 = P2-I3-I03 intentionally paused at Q-005
 != field realization or discriminator gate passed
 ```
 
-The next permitted RCAE action is bounded review and commit of the handoff
-package. Work then switches explicitly to graph-project N31 scope. On return,
-P2-I3 must execute the handoff's graph reconstruction, clean resumption branch,
-bounded source transition, affected carrier/ownership review, and explicit
-Q-005 resolution before Q-006 through Q-008 may resume. DEC-021/022/023
+The next permitted RCAE action is bounded review and commit of the DEC-024
+theory correction without rewriting the already merged DEC-023 history. Work
+then switches explicitly to graph-project N31 scope. On return, P2-I3 must
+execute the handoff's graph reconstruction, clean resumption branch, bounded
+source transition, affected carrier/ownership review, and explicit Q-005
+resolution before Q-006 through Q-008 may resume. DEC-021/022/023/024
 authorize no conformance, calibration, or scientific execution.
