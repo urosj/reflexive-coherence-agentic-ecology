@@ -1,0 +1,325 @@
+{
+  "artifact_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "status": "accepted_frozen",
+  "iteration_id": "P2-I3-I01",
+  "lane_id": "AE01-L03",
+  "question_id": "P2-I3-Q-001",
+  "acceptance_decision_id": "P2-I3-DEC-016",
+  "accepted_at": "2026-07-16",
+  "purpose": "Freeze the exact read-only scope for determining which public source-current PyGRC surfaces can express the P2-I3 route-local dynamic-field discriminator and which are inadequate, absent, unsuitable, or unresolved.",
+  "evidence_effect": "Input authority only. Construction and review perform no source capability classification, source admission, realization selection, conformance run, calibration, registration, candidate execution, or scientific evaluation.",
+  "review_policy_ref": "P2-I3-DEC-015",
+  "entry_authority": {
+    "rcae_source_anchor": "45b489061d7482190ea77bc23a2bcef04837a92b",
+    "brief": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-brief.md",
+      "sha256": "4cabaf7adbd5a339806908469459cd0879fdb0a18a3a84f092e69709198a3dec"
+    },
+    "checklist": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-checklist.md",
+      "sha256": "2c3f305fbc78670ff74b593eb37f6c4056d19acbf9ad7358d3150a0f6e25d163"
+    },
+    "decision_record": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-decision-record.md",
+      "sha256": "6515e36e63fa64da3de49f8577e92df3f6e7b5e5c1e63f43d9c5f535cbf67409"
+    },
+    "brief_gate": {
+      "decision_id": "P2-I3-DEC-014",
+      "status": "passed"
+    }
+  },
+  "target_checkouts": {
+    "graph_runtime": {
+      "repository_name": "graph-reflexive-coherence",
+      "portable_locator": "external-repository:graph-reflexive-coherence",
+      "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "branch_observation": "main",
+      "worktree_state": "clean",
+      "read_only_required": true,
+      "identity_rule": "Audit only the clean tracked checkout at this exact revision. Bind every cited file by repository-relative path and exact SHA-256 in the output source-digest inventory."
+    },
+    "distance_theory": {
+      "repository_name": "geometric-reflexive-coherence",
+      "portable_locator": "external-repository:geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "branch_observation": "main",
+      "worktree_state": "clean",
+      "read_only_required": true,
+      "tracked_path": "investigations/2026-01-RC-Distance-v4.md",
+      "role": "Theory-role consistency only. It cannot establish a public runtime capability, source admission, field realization, causal influence, or L03 evidence."
+    }
+  },
+  "scope": {
+    "graph_tracked_file_scope": [
+      "pyproject.toml",
+      "src/pygrc/__init__.py",
+      "src/pygrc/core/__init__.py",
+      "src/pygrc/core/events.py",
+      "src/pygrc/core/graph.py",
+      "src/pygrc/core/interfaces.py",
+      "src/pygrc/core/mutations.py",
+      "src/pygrc/core/observables.py",
+      "src/pygrc/core/serialization.py",
+      "src/pygrc/core/types.py",
+      "src/pygrc/models/__init__.py",
+      "src/pygrc/models/grc_9_v3*.py",
+      "src/pygrc/models/lgrc_9_v3*.py",
+      "src/pygrc/landscapes/**",
+      "src/pygrc/discovery/grc9_selector_feedback.py",
+      "src/pygrc/telemetry/lgrc9v3_contract.py",
+      "tests/core/test_events_observables_errors.py",
+      "tests/core/test_graph_protocols.py",
+      "tests/core/test_interfaces.py",
+      "tests/core/test_mutations_and_invalidation.py",
+      "tests/core/test_serialization_contract.py",
+      "tests/models/test_grc_9_v3_choice_budget.py",
+      "tests/models/test_grc_9_v3_representative_runtime.py",
+      "tests/models/test_grc_9_v3_step.py",
+      "tests/models/test_grc_9_v3_transport.py",
+      "tests/models/test_lgrc_9_v3*.py",
+      "tests/discovery/test_grc9_selector_feedback.py",
+      "examples/lgrc9v3/**",
+      "implementation/Phase-8-LGRC9-CausalPulseSubstrate*",
+      "implementation/Phase-8-LGRC9-NativePacketLoop*",
+      "implementation/Phase-8-LGRC9-NativeRouteArbitration*",
+      "implementation/Phase-8-LGRC9-RestorationIdentity*",
+      "implementation/Phase-8-LGRC9-TimeScopedLineageReplay*"
+    ],
+    "theory_tracked_file_scope": [
+      "investigations/2026-01-RC-Distance-v4.md"
+    ],
+    "public_surface_rule": "A runtime surface counts as public only when exported from the package or a public submodule, exposed as a non-underscore member on an exported object, or demonstrated as supported by tracked public documentation or pre-existing generic tests. Internal state may explain a limitation but cannot establish public adequacy.",
+    "native_rule": "A capability is native only when PyGRC owns the causally relevant state or transition and exposes the required observation or intervention publicly. RCAE orchestration may invoke a native operation but may not compute the field, selected dynamic, route response, or success and relabel it native.",
+    "source_fact_rule": "Public-source facts and pre-existing generic-test behavior may support source-audit classifications. Theory meaning, custom synthetic behavior, candidate-shaped fixtures, and RCAE interpretation cannot upgrade a public capability.",
+    "scope_change_rule": "Any widening or correction after this freeze is accepted requires a retained P2-I3 change entry naming the trigger, exact paths or operations, affected capability questions, evidence-class effect, and rerun scope before the new surface is inspected."
+  },
+  "evidence_classes": {
+    "public_source_fact": {
+      "authority": "source_audit",
+      "allowed_inputs": [
+        "tracked public source",
+        "tracked public documentation",
+        "pre-existing generic tests"
+      ]
+    },
+    "synthetic_probe": {
+      "authority": "interface_conformance_only",
+      "initially_authorized": false,
+      "activation_rule": "Requires a reviewed scope correction before construction or execution. Fixture values and outcomes remain ineligible for public-capability upgrade, calibration, registration values, and scientific evidence."
+    },
+    "candidate_shaped_behavior": {
+      "authority": "none",
+      "capability_upgrade_allowed": false,
+      "scientific_effect": "none",
+      "rule": "A probe that instantiates or compares the P2-I3 candidate, controls, response direction, or success relation is prohibited in I01."
+    }
+  },
+  "classification_contract": {
+    "allowed_values": [
+      "adequate",
+      "inadequate",
+      "absent",
+      "unsuitable",
+      "unresolved"
+    ],
+    "definitions": {
+      "adequate": "A qualifying public native surface satisfies the capability question without an RCAE-owned substitute for the causally relevant state, dynamic, intervention, or response.",
+      "inadequate": "A relevant public native surface exists, but a named missing operation, locality, identity, intervention, restoration, or causal boundary prevents adequacy.",
+      "absent": "No qualifying public native surface is found within the frozen tracked-file and API scope at the exact graph revision.",
+      "unsuitable": "A surface exists but would encode a forbidden proxy, hidden router, direct address, outcome-writing producer, private state mutation, or incompatible causal meaning.",
+      "unresolved": "The frozen admissible evidence cannot distinguish adequacy, inadequacy, absence, or unsuitability without work outside the audit boundary."
+    },
+    "producer_demand_rule": "For each promising inadequate, absent, or unsuitable surface, describe the smallest later RCAE assistance or constructed mechanism that could expose the missing relation. This is a demand description only and supplies no realization selection or authorization.",
+    "fail_closed_rule": "Audit failure, missing environment, inadequate or absent capability, unsuitable surface, and unresolved status cannot become a negative L03 result."
+  },
+  "capability_questions": [
+    {
+      "id": "P2-I3-CAP-01",
+      "question": "Can public PyGRC topology and route operations express two structurally matchable alternative route surfaces without a hidden preferred-route label?"
+    },
+    {
+      "id": "P2-I3-CAP-02",
+      "question": "Is there a public route-local carrier whose state and access scope are observable, alterable through declared public operations, and reconstructibly identifiable?"
+    },
+    {
+      "id": "P2-I3-CAP-03",
+      "question": "Can activity create an attributable carrier change with explicit timing, lineage, nonzero cost or budget effect, and no private-message substitution?"
+    },
+    {
+      "id": "P2-I3-CAP-04",
+      "question": "Can temporally distinct attributable formation events update one route-local carrier with deterministic ordering and retained per-event provenance?"
+    },
+    {
+      "id": "P2-I3-CAP-05",
+      "question": "Which public native operations express reinforcement or another activity-dependent field update beyond one static deposit?"
+    },
+    {
+      "id": "P2-I3-CAP-06",
+      "question": "Which public native operations express deposition withdrawal and autonomous field evolution or decay after activity stops?"
+    },
+    {
+      "id": "P2-I3-CAP-07",
+      "question": "Which public native operations express costly maintenance, saturation or bounded accumulation, and leakage where applicable?"
+    },
+    {
+      "id": "P2-I3-CAP-08",
+      "question": "Can later traversal encounter route-local carrier state through a public native response path without global ranking, source addressing, route-label lookup, or an outcome-writing producer?"
+    },
+    {
+      "id": "P2-I3-CAP-09",
+      "question": "Can current field state and continuation-relevant active history be separately enumerated, state-matched, intervened on, and classified without treating audit lineage as causal state?"
+    },
+    {
+      "id": "P2-I3-CAP-10",
+      "question": "Can deposition withdrawal, trace shuffle, false-trace intervention, field clamp, and carrier-level relocation be expressed while preserving unrelated opportunity and excluding route labels from the payload?"
+    },
+    {
+      "id": "P2-I3-CAP-11",
+      "question": "Which public surfaces provide registered structure, geometric distance, functional distance, causal or proper-time distance, and live causal-response observations, and what runtime role does each actually have?"
+    },
+    {
+      "id": "P2-I3-CAP-12",
+      "question": "Can depositor and later-probe episodes, participant identity, fresh nondepositor identity, alternate eligibility, and direct-address exclusion be represented independently?"
+    },
+    {
+      "id": "P2-I3-CAP-13",
+      "question": "What public state is covered by snapshot, save, load, branch, reset, and equal-input continuation identity, and what field, producer, intervention, or distance-policy state would remain external?"
+    },
+    {
+      "id": "P2-I3-CAP-14",
+      "question": "Does every in-scope operation and candidate surface receive an exact evidence-classified disposition with public facts separated from adequacy inference?"
+    },
+    {
+      "id": "P2-I3-CAP-15",
+      "question": "What is the smallest explicit RCAE assistance or constructed mechanism demanded by each otherwise promising inadequate, absent, or unsuitable public surface?"
+    }
+  ],
+  "operation_disposition_requirements": [
+    {
+      "id": "P2-I3-OP-01",
+      "operation": "form"
+    },
+    {
+      "id": "P2-I3-OP-02",
+      "operation": "reinforce"
+    },
+    {
+      "id": "P2-I3-OP-03",
+      "operation": "withdraw"
+    },
+    {
+      "id": "P2-I3-OP-04",
+      "operation": "decay"
+    },
+    {
+      "id": "P2-I3-OP-05",
+      "operation": "maintain"
+    },
+    {
+      "id": "P2-I3-OP-06",
+      "operation": "saturate"
+    },
+    {
+      "id": "P2-I3-OP-07",
+      "operation": "relocate"
+    },
+    {
+      "id": "P2-I3-OP-08",
+      "operation": "snapshot_or_save"
+    },
+    {
+      "id": "P2-I3-OP-09",
+      "operation": "restore_or_load"
+    },
+    {
+      "id": "P2-I3-OP-10",
+      "operation": "reset"
+    }
+  ],
+  "allowed_commands": {
+    "notation": "${GRC} and ${GRC_THEORY} denote the two read-only target checkouts; ${RCAE} denotes this repository; generated scratch output may exist only under ${TMPDIR}.",
+    "static_commands": [
+      "git -C ${GRC} rev-parse HEAD",
+      "git -C ${GRC} branch --show-current",
+      "git -C ${GRC} status --short",
+      "git -C ${GRC} ls-files with frozen in-scope pathspecs",
+      "git -C ${GRC} show HEAD:<in-scope-repository-relative-path>",
+      "git -C ${GRC_THEORY} rev-parse HEAD",
+      "git -C ${GRC_THEORY} branch --show-current",
+      "git -C ${GRC_THEORY} status --short",
+      "git -C ${GRC_THEORY} show HEAD:investigations/2026-01-RC-Distance-v4.md",
+      "rg --files over frozen in-scope tracked directories",
+      "rg -n with capability terms over frozen in-scope tracked files",
+      "sed -n over frozen in-scope text files",
+      "sha256sum over cited frozen in-scope tracked files"
+    ],
+    "public_interface_commands": [
+      "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src ${RCAE}/.venv/bin/python -B -c <read-only import or public introspection>",
+      "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=${GRC}/src ${RCAE}/.venv/bin/python -B -m pytest -p no:cacheprovider <targeted pre-existing generic test paths>"
+    ],
+    "environment_rule": "Before any Python or pytest command, verify the repository-local .venv interpreter and every required pinned package. If anything is absent or mismatched, stop and ask the owner to decide installation or repair. Do not use global Python or adapt the audit.",
+    "conformance_constraints": [
+      "Import only from the exact graph checkout and record every imported module __file__ as a portable external-checkout identity, never a retained machine-local path.",
+      "No new synthetic probe is authorized by this initial freeze.",
+      "Pre-existing generic tests may exercise public constructors and operations but cannot be interpreted as P2-I3 candidate behavior or scientific evidence.",
+      "Any generated files, test temporaries, bytecode, or caches must be disabled or directed to ${TMPDIR}.",
+      "Recheck both external revisions and clean worktree states after audit activity."
+    ],
+    "prohibited_actions": [
+      "Any write, formatter, generator, build output, package installation, or dependency update in either external repository.",
+      "Git checkout, switch, reset, clean, commit, stash, merge, rebase, or other external-repository mutation.",
+      "Direct private-state mutation, monkey-patching, copied PyGRC implementation, or private-state injection as evidence of native adequacy.",
+      "Any P2-I3 candidate or control fixture, response-direction comparison, calibration, source admission, realization selection, or scientific execution.",
+      "Network access or evidence substitution from another revision."
+    ]
+  },
+  "package_identity_policy": {
+    "installed_package_inspection_needed": false,
+    "reason": "I01 audits the exact tracked checkout, not an ambient installation. Any Python inspection must force the checkout package root through PYTHONPATH, disable bytecode writes, use the RCAE repository-local .venv, and record the imported module identity.",
+    "separation_rule": "If checkout import is impossible or an installed package becomes necessary, stop and record a reviewed scope correction before inspection. Never merge installed-package facts with checkout facts."
+  },
+  "required_outputs": {
+    "narrative_audit": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I01-source-current-capability-audit.md",
+    "capability_matrix": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-capability-matrix.json",
+    "operation_matrix": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-operation-dispositions.json",
+    "source_digest_inventory": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-source-digests.json",
+    "command_provenance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I01-command-provenance.md",
+    "audit_validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-audit-validation.json",
+    "capability_matrix_required_fields": [
+      "capability_question_id",
+      "candidate_surface_id",
+      "classification",
+      "evidence_class",
+      "public_source_facts",
+      "adequacy_inference",
+      "evidence_references",
+      "missing_or_unsuitable_distinction",
+      "minimal_assistance_or_constructed_demand",
+      "restoration_coverage",
+      "open_questions"
+    ],
+    "operation_matrix_required_fields": [
+      "operation_id",
+      "operation",
+      "classification",
+      "public_callables",
+      "ownership",
+      "declared_state_effects",
+      "evidence_class",
+      "evidence_references",
+      "missing_or_unsuitable_distinction",
+      "open_questions"
+    ]
+  },
+  "exit_gate": "P2-I3-SOURCE-AUDIT-GATE",
+  "exit_requirements": [
+    "The accepted input freeze predates all capability-classification activity.",
+    "All fifteen capability questions and ten operation dispositions resolve under the frozen classification and evidence-class contracts.",
+    "Exact revisions, cited tracked paths and digests, imported public identities, and command provenance are retained.",
+    "Public-source facts remain separate from adequacy inference, synthetic interface conformance, missing surfaces, and open questions.",
+    "A bounded native shortlist or classified absence is retained without source admission or realization selection.",
+    "Both external revisions remain unchanged and both worktrees remain clean after the audit.",
+    "No source, realization, conformance fixture, calibration, candidate operation, or L03 result is admitted by I01."
+  ]
+}

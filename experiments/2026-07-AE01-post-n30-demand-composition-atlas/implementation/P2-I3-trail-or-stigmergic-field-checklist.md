@@ -7,11 +7,12 @@
 
 **Lane:** `AE01-L03`
 
-**Current activity iteration:** `P2-I3-I00` complete; `P2-I3-I01` input-freeze
-construction is open but unstarted, and audit activity remains unauthorized
+**Current activity iteration:** `P2-I3-I00` complete; `P2-I3-I01` audit
+accepted and complete; `P2-I3-I02` exact source admission is open at Q-002
 
-**Current evidence effect:** none; no source capability, source admission,
-realization, calibration, registration, execution, or scientific result
+**Current evidence effect:** source-current capability evidence only; no
+source admission, realization, calibration, registration, execution, or
+scientific result
 
 **Semantic authority:**
 [accepted P2-I3 brief](P2-I3-trail-or-stigmergic-field-brief.md)
@@ -88,6 +89,11 @@ Rules:
 - Native, minimally producer-assisted, ecology-owned, constructed, missing,
   and unsuitable roles remain explicit. Transition to newly native behavior
   is deliberate and requires a new registered realization and rerun.
+- Native coverage has priority only when it preserves the registered causal
+  meaning. Missing or inadequate native coverage creates an explicit
+  RCAE-owned producer-completion obligation and graph-side naturalization
+  debt; it does not authorize weakening or blocking the experiment. Evidence:
+  `P2-I3-DEC-017`.
 - The graph/PyGRC repository and the geometric-reflexive-coherence repository
   are read-only from this project.
 - No terminal checkbox follows from a positive primary metric alone.
@@ -123,8 +129,8 @@ state, never negative evidence or a missing substrate surface.
 | Gate | Meaning | Status | Exit evidence or current blocker |
 | --- | --- | --- | --- |
 | `P2-I3-BRIEF-GATE` | Accepted semantic brief is projected into an owner-accepted checklist and cumulative decision record | Passed | `P2-I3-DEC-014`; opens only I01 input-freeze construction and review |
-| `P2-I3-SOURCE-AUDIT-GATE` | One frozen, source-current, read-only audit answers the accepted capability questions | Unopened | Requires accepted I01 input freeze and resolution of `P2-I3-Q-001` |
-| `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Unopened | Requires passed source audit and `P2-I3-Q-002` |
+| `P2-I3-SOURCE-AUDIT-GATE` | One frozen, source-current, read-only audit answers the accepted capability questions | Passed | Owner-passed grounded artifact review; `P2-I3-DEC-018` |
+| `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Open | Resolve `P2-I3-Q-002`; no source is admitted by I01 passage |
 | `P2-I3-DISCRIMINATOR-GATE` | Field realization, dynamic, causal chain, observation boundary, mode family, and operational hypotheses are frozen | Unopened | Requires source admission and decisions resolving `P2-I3-Q-003` through `P2-I3-Q-008`, `Q-013`, and design part of `Q-015` |
 | `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Unopened | Requires passed discriminator gate and `P2-I3-Q-009` through `Q-012`, plus `Q-016` |
 | `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | Requires accepted CAL-PRE package and an explicitly authorized calibration invocation |
@@ -182,8 +188,8 @@ state, never negative evidence or a missing substrate surface.
 | Iteration | Activity | Entry dependency | Status | Exit gate or effect |
 | --- | --- | --- | --- | --- |
 | `P2-I3-I00` | Accepted-brief projection, cumulative decision record, and evidence-expandable checklist | Owner-accepted semantic brief | Complete and owner-accepted | `P2-I3-BRIEF-GATE=passed`; no scientific evidence |
-| `P2-I3-I01` | Source-current read-only capability audit | Passed brief gate | Open for input-freeze construction only; audit unstarted | I01 first constructs/accepts its input freeze; only then may audit activity begin and later pass `P2-I3-SOURCE-AUDIT-GATE` |
-| `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Unopened | May pass `P2-I3-SOURCE-ADMISSION-GATE`; no realization |
+| `P2-I3-I01` | Source-current read-only capability audit | Passed brief gate plus accepted Q-001 freeze | Complete and owner-accepted | `P2-I3-SOURCE-AUDIT-GATE=passed` through DEC-018; no source admission or scientific evidence |
+| `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Open at Q-002 | May pass `P2-I3-SOURCE-ADMISSION-GATE`; no realization |
 | `P2-I3-I03` | Field realization, dynamics, causal factorization, operational hypotheses, and bounded runtime conformance | Passed source-admission gate | Unopened | May pass `P2-I3-DISCRIMINATOR-GATE`; no calibration or candidate evidence |
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Unopened | May pass `P2-I3-CAL-PRE-GATE`; no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Unopened | May pass `P2-I3-CAL-GATE`; no candidate execution |
@@ -220,7 +226,7 @@ one evidence-expandable checklist, and master/navigation projections.
 - [x] The accepted brief records semantic authority without claiming a gate
   passage or scientific evidence.
 - [x] One cumulative decision record exists and retains decisions
-  `P2-I3-DEC-001` through `P2-I3-DEC-014`.
+  `P2-I3-DEC-001` through `P2-I3-DEC-017`.
 - [x] Open implementation questions have stable identities
   `P2-I3-Q-001` through `P2-I3-Q-020`.
 - [x] This checklist defines named I00-I11 activities and stable cover gates.
@@ -258,6 +264,9 @@ construction and review of the exact I01 input freeze.
 
 ## 6. `P2-I3-I01` — Source-current capability audit
 
+**Status:** accepted and complete through `P2-I3-DEC-018`;
+`P2-I3-SOURCE-AUDIT-GATE` passed.
+
 **Purpose:** establish what the current public PyGRC and admitted theory
 surfaces can actually express before selecting a realization.
 
@@ -281,17 +290,20 @@ admission and no scientific evidence.
 
 ### 6.1 Input freeze before audit activity
 
-- [ ] Resolve `P2-I3-Q-001` through an accepted decision.
-- [ ] Freeze the exact graph/PyGRC revision candidate and theory revision
+- Accepted frozen artifact:
+  [I01 capability-audit input freeze](../contracts/p2-i3/i01-capability-audit-input-freeze.json).
+- [x] Resolve `P2-I3-Q-001` through an accepted decision. Evidence:
+  `P2-I3-DEC-016`.
+- [x] Freeze the exact graph/PyGRC revision candidate and theory revision
   candidate to inspect.
-- [ ] Freeze every in-scope path and capability question.
-- [ ] Freeze the rule distinguishing public callable, internal helper,
+- [x] Freeze every in-scope path and capability question.
+- [x] Freeze the rule distinguishing public callable, internal helper,
   pre-existing test evidence, documentation, and inference.
-- [ ] Freeze allowed static inspection and pre-existing test commands.
-- [ ] Freeze whether any scientific-outcome-free synthetic conformance probe
+- [x] Freeze allowed static inspection and pre-existing test commands.
+- [x] Freeze whether any scientific-outcome-free synthetic conformance probe
   is necessary and quarantine it from candidate and capability claims unless
-  separately reviewed.
-- [ ] Freeze the exact evidence-class distinction:
+  separately reviewed. Initial disposition: no synthetic probe is authorized.
+- [x] Freeze the exact evidence-class distinction:
 
   ```text
   public_source_fact:
@@ -304,48 +316,175 @@ admission and no scientific evidence.
     no capability upgrade and no scientific effect
   ```
 
-- [ ] Complete environment preflight without installation.
-- [ ] Record the input-freeze review and owner acceptance.
+- [x] Complete environment preflight. Pytest was initially absent; work
+  stopped under DEC-011, the owner authorized installation into `.venv`, and
+  preflight then passed with Python 3.12.3 and `pytest==9.1.1` recorded.
+- [x] Record the input-freeze review and owner acceptance. Evidence:
+  owner direction to continue on 2026-07-16 under `P2-I3-DEC-015`, retained
+  as `P2-I3-DEC-016`.
+
+Input-freeze construction record — 2026-07-16:
+
+- [x] Graph target is clean `main` at
+  `83e3a300426631ee4df71b661b67d4fcfdfed594`.
+- [x] Distance-theory target is clean `main` at
+  `e0d25bf69b8bf681eb8d092ba416497030e5d88e`.
+- [x] Fifteen capability questions and ten operation-disposition requirements
+  are frozen in the candidate.
+- [x] Theory-role consistency is separated from runtime-capability authority.
+- [x] Public-source fact, synthetic interface conformance, and
+  candidate-shaped behavior have distinct evidence effects.
+- [x] Checkout-only inspection uses the RCAE `.venv`; global Python and
+  ambient-package substitution are forbidden.
+- [x] Construction inspected source identities and tracked filenames only; it
+  performed no source classification, public API invocation, test,
+  conformance probe, or candidate behavior.
+- [x] Owner review accepts the freeze as the Q-001 resolution. Under
+  `P2-I3-DEC-015`, a direction to continue with no concrete objection is
+  sufficient and requires no separate acceptance formula. Evidence:
+  `P2-I3-DEC-016`.
 
 ### 6.2 Required audit questions
 
-- [ ] What registered topology can expose two structurally matchable
+- [x] What registered topology can expose two structurally matchable
   alternative routes?
-- [ ] Which route-local node, edge, corridor, pulse, feedback, eligibility,
+- [x] Which route-local node, edge, corridor, pulse, feedback, eligibility,
   or state surfaces are publicly observable and alterable through declared
   public operations?
-- [ ] For each of form, reinforce, withdraw, decay, maintain, saturate,
+- [x] For each of form, reinforce, withdraw, decay, maintain, saturate,
   relocate, snapshot, restore, and reset, record a separate native,
   producer-assisted, unsuitable, missing, or unknown disposition with exact
   source evidence.
-- [ ] Which scheduler, packet, producer, feedback, and event-order surfaces
+- [x] Which scheduler, packet, producer, feedback, and event-order surfaces
   are public and deterministic?
-- [ ] Which geometric, functional, and causal/proper-time distances are
+- [x] Which geometric, functional, and causal/proper-time distances are
   actually exposed, and what runtime roles do they have?
-- [ ] Which traversal-visible responses can be measured without a hidden
+- [x] Which traversal-visible responses can be measured without a hidden
   controller or global route selector?
-- [ ] Can complete continuation-relevant state be enumerated, saved, restored,
+- [x] Can complete continuation-relevant state be enumerated, saved, restored,
   branched, compared, and relocated?
-- [ ] Can participant identity, depositor identity, fresh probe identity, and
+- [x] Can participant identity, depositor identity, fresh probe identity, and
   direct-address exclusion be represented?
-- [ ] Which capabilities are native, producer-assisted by established
+- [x] Which capabilities are native, producer-assisted by established
   extension patterns, unsuitable, missing, or unknown?
-- [ ] Which claims depend only on static inspection, which on pre-existing
+- [x] Which claims depend only on static inspection, which on pre-existing
   tests, and which remain inference?
+- [x] Which mechanisms N29 indexes from earlier experiments are actually
+  load-bearing for P2-I3, and which are runtime, producer, constructed,
+  artifact-only, control, accounting, or missing-pattern precedents?
+- [x] For every native gap, distinguish absence of native support from
+  producer-completion feasibility. Native absence alone is not an execution
+  blocker under `P2-I3-DEC-017`.
 
 ### 6.3 Audit outputs and exit
 
-- [ ] Retain a machine-readable capability inventory with exact citations.
-- [ ] Retain a human-readable audit report separating facts and inferences.
-- [ ] Retain exact command, interpreter, package, revision, and digest
+- [x] Retain a machine-readable capability inventory with exact citations.
+- [x] Retain a human-readable audit report separating facts and inferences.
+- [x] Retain exact command, interpreter, package, revision, and digest
   provenance.
-- [ ] Record every missing or unsuitable surface without treating it as a
+- [x] Record every missing or unsuitable surface without treating it as a
   scientific null.
-- [ ] Independently review the audit against only its frozen input scope.
-- [ ] Resolve review findings in one bounded pass or record a new iteration;
+- [x] Retain the N29/N30 mechanism audit and the predecessor-lineage audit as
+  separate machine-readable records. N29 is an index into relevant earlier
+  experiments, not a substitute for inspecting them.
+- [x] Validate the package against its accepted input plus the two exact
+  owner-directed scope extensions:
+  [N29/N30 scope extension](../contracts/p2-i3/i01-n29-n30-scope-extension.json)
+  (`P2-I3-CHG-012`) and
+  [predecessor scope extension](../contracts/p2-i3/i01-predecessor-scope-extension.json)
+  (`P2-I3-CHG-013`). Machine validation passes all 15
+  capability and 10 operation records, 27 public/theory source identities,
+  32 N29/N30 and 44 predecessor source identities, output digests, producer-
+  feasibility/native-classification separation, quarantine flags, and
+  checkout-integrity checks.
+- [x] Owner reviews the audit against its accepted input and exact
+  owner-directed scope extensions. Evidence: grounded eleven-artifact review
+  passed on 2026-07-16.
+- [x] Resolve review findings in one bounded pass or record a new iteration;
   do not begin recursive review-of-review cycles absent a concrete new
-  assumption.
-- [ ] Owner accepts the audit and passes `P2-I3-SOURCE-AUDIT-GATE`.
+  assumption. Evidence: `P2-I3-CHG-014`; no classification or authority
+  changed.
+- [x] Owner accepts the audit and passes `P2-I3-SOURCE-AUDIT-GATE`.
+  Evidence: `P2-I3-DEC-018`.
+
+### 6.4 I01 implementation details and interpretation
+
+Retained implementation:
+
+- [x] Accepted one machine input freeze before classification.
+- [x] Bound clean graph revision
+  `83e3a300426631ee4df71b661b67d4fcfdfed594` and clean distance-theory
+  revision `e0d25bf69b8bf681eb8d092ba416497030e5d88e`.
+- [x] Retained a 15-record
+  [capability matrix](../contracts/p2-i3/i01-capability-matrix.json), a
+  10-record
+  [operation matrix](../contracts/p2-i3/i01-operation-dispositions.json),
+  27 exact [source digests](../contracts/p2-i3/i01-source-digests.json),
+  [command provenance](../reports/P2-I3-I01-command-provenance.md), and
+  [machine validation](../contracts/p2-i3/i01-audit-validation.json).
+- [x] Ran six targeted pre-existing-test invocations: 24 passed, 333
+  deselected, zero failed/errors. The exact six `-k` filters and per-command
+  deselection counts are retained in
+  [command provenance §5](../reports/P2-I3-I01-command-provenance.md#5-pre-existing-generic-tests).
+  No synthetic probe or candidate behavior ran.
+- [x] Rechecked both external revisions and clean worktrees after the audit.
+- [x] Expanded the read-only experiment audit from N29/N30 into the relevant
+  predecessor lineage: N05 producer scheduling, N06 route-arbitration limits,
+  N07 reservoir accounting, N08 serialized/dynamic trail-memory work, N09
+  producer request/native transition, N10/N11 missing-pattern demand, N22
+  producer-owned durable carrier, N25.2 native multi-basin context, and N28
+  artifact-level metric projection.
+
+Geometric and runtime interpretation:
+
+```text
+native registered topology
++ route-exclusive node coherence candidate
++ deterministic packet formation/reinforcement/withdrawal
++ separate synchronous GRC coherence continuity
++ distinct geometric/functional/causal timing surfaces
++ complete native restoration
+
+does not yet provide
+
+LGRC-integrated route-local field lifecycle
++ local field-to-traversal encounter
++ field-specific state/history controls
++ participant-role/direct-address exclusion
+```
+
+The strongest native carrier candidate is route-exclusive intermediate-node
+coherence, updated by budget-conserving packet arrivals. Public synchronous
+GRC continuity is a real native dynamic, but LGRC's queue-event step
+explicitly does not invoke it; using it would require a later explicit
+composition, ordering, state-effect, and restoration decision. These remain
+shortlist results, not source admission or realization selection. The native
+causal-pulse substrate is passive evidence and scheduling infrastructure, not
+the field itself. The landscape pheromone classifier is post-hoc inference,
+not live dynamics.
+
+From the agentic-ecology side, I01 identifies where a graph relation stops and
+the ecological discriminator begins. PyGRC can carry attributable route-local
+history and can separately evolve coherence synchronously. I03 must decide
+whether that dynamic can be integrated honestly or whether a bounded RCAE
+dynamic is required. L03 still needs a later local encounter that changes
+possibility without route labels, direct outcome addressing, or a global
+selector.
+
+That unresolved relation is a constructive demand for I03, not a negative
+result or a reason to truncate the experiment. N08 states the missing native
+route-memory pattern; N22 demonstrates that an explicitly producer-owned
+carrier can be mutated, snapshotted, replayed, controlled, and read through
+native runtime without being mislabeled native; N05/N09 demonstrate the
+narrower request-producer pattern in which PyGRC owns the transition. Under
+`P2-I3-DEC-017`, I03 must prefer semantically adequate native capability and
+fill any remaining load-bearing gap with the smallest explicit producer path.
+The unfilled native pattern remains a proposed LGRC expansion target.
+
+The source-audit gate is passed. The proportional next move is I02 exact
+source admission and Q-002. Only after its separate gate may I03 compare
+carrier and dynamic options; it must not infer the first working source
+surface as accepted.
 
 ## 7. `P2-I3-I02` — Exact source admission
 
@@ -808,7 +947,7 @@ from appearing earlier than its evidence permits.
 
 | Questions | Owning iteration | Current status |
 | --- | --- | --- |
-| `P2-I3-Q-001` | I01 audit input freeze | Open; blocks audit |
+| `P2-I3-Q-001` | I01 audit input freeze | Resolved by `P2-I3-DEC-016`; audit active |
 | `P2-I3-Q-002` | I02 source admission | Open; blocks realization |
 | `P2-I3-Q-003`–`P2-I3-Q-008` | I03 realization and dynamics | Open; block discriminator gate |
 | `P2-I3-Q-009`–`P2-I3-Q-012` | I04 calibration preregistration | Open; block CAL-PRE |
@@ -858,6 +997,16 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-003` | Initial governance projection | Add I00-I11 boundaries, gate dashboard, environment rule, decision timing, and change/evidence ledgers | Superseded by CHG-004 before brief-gate acceptance |
 | `P2-I3-CHG-004` | Two independent governance review sets plus owner authorization | Correct R05 projection, I01 freeze authority, effect ownership, conformance quarantine, typed control evidence, split question handoffs, proportionality, repetition, and bounded review findings | Complete and owner-accepted; no evidence effect |
 | `P2-I3-CHG-005` | Owner acceptance disposition after corrected-package review | Record DEC-014, pass BRIEF-GATE, and open only I01 input-freeze construction; clarify I01 evidence classes and I03 operational observability | Complete; no source audit or scientific evidence |
+| `P2-I3-CHG-006` | Owner direction on iteration review | Add DEC-015 correction-driven review: present every iteration, correct concrete comments, and treat unopposed reviewed progression as acceptance without a separate formula | Complete; review remains mandatory and gate status remains explicit |
+| `P2-I3-CHG-007` | Passed brief gate and I01 entry | Construct the exact Q-001 input-freeze candidate with fifteen capability questions, ten operation dispositions, synthetic probes disabled, and source/audit evidence separated | Review-ready; no audit or capability evidence |
+| `P2-I3-CHG-008` | Owner direction to continue after input-freeze review | Record DEC-016, resolve Q-001, accept the exact freeze, and open only its environment preflight and read-only audit | Complete; audit active with no output or capability classification yet |
+| `P2-I3-CHG-009` | I01 preflight found pytest absent | Stop before tests under DEC-011; after owner authorization install pytest only into RCAE `.venv`, record exact resolved identities, and rerun preflight | Complete; `pytest==9.1.1`, `iniconfig==2.3.0`, and `pluggy==1.6.0`; no external checkout mutation |
+| `P2-I3-CHG-010` | Accepted Q-001 audit scope and passed preflight | Execute the frozen source/public-interface audit, retain 15 capability and 10 operation dispositions, 27 source digests, six test invocations, narrative interpretation, and machine validation | Complete and review-ready; source-current capability effect only |
+| `P2-I3-CHG-011` | Final I01 boundary check found the public synchronous GRC continuity operator inside the already frozen source scope | Clarify CAP-06 and the narrative: `GRC9V3.apply_continuity`/`step` are relevant native dynamics, while `LGRC9V3.step` deliberately remains a separate event runtime; retain existing classifications and expose the composition choice to I02/I03 | Complete after targeted source/callable revalidation; no test rerun, scope widening, source admission, realization choice, or scientific effect |
+| `P2-I3-CHG-012` | Owner direction to examine the graph repository N29/N30 experiments thoroughly before I01 closure | Activate the exact [N29/N30 scope extension](../contracts/p2-i3/i01-n29-n30-scope-extension.json); inspect the roadmap and complete N29/N30 experiment trees for relevant native, producer-assisted, constructed, evidence-only, and debt mechanisms | Complete; no experiment rerun, source admission, realization choice, or P2-I3 scientific effect |
+| `P2-I3-CHG-013` | Owner correction that N29 indexes earlier work, plus direction that missing native PyGRC support must not weaken or block correct execution | Record DEC-017; activate the exact [predecessor-lineage scope extension](../contracts/p2-i3/i01-predecessor-scope-extension.json); inspect relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanisms; preserve native classifications while adding producer-completion feasibility and graph-side naturalization debt | Complete and validated; read-only source evidence only, no source admission, realization selection, experiment execution, or L03 result |
+| `P2-I3-CHG-014` | Grounded artifact review identified low-risk machine-role and citation ambiguities | Clarify that candidate-surface IDs name audit targets rather than asserting existence; mark CAP-14/15 as meta roles; mark OP-07 callables as nonqualifying topology-lineage comparisons; add precedent legend and exact scope/filter citations | Complete after targeted structural/digest validation; no classification, authority, source scope, test, execution, or scientific-effect change |
+| `P2-I3-CHG-015` | Project owner explicitly passed the grounded I01 review | Record DEC-018, accept the retained I01 package, pass SOURCE-AUDIT-GATE, and open only I02 exact source admission and Q-002 | Complete; governance status only, with no source admission, realization, execution, or scientific effect |
 
 ## 19. Evidence ledger
 
@@ -870,10 +1019,16 @@ and evidence effect are retained.
 | `P2-I3-EV-002` | [Cumulative decision record](P2-I3-decision-record.md) | I00 | Initial semantic/process decision history only | Accepted by owner 2026-07-16 |
 | `P2-I3-EV-003` | This checklist | I00 | Activity/gate/change authority only | Accepted by owner 2026-07-16 |
 | `P2-I3-EV-004` | Owner acceptance disposition | I00 | Passes BRIEF-GATE only; opens I01 input-freeze construction | Accepted 2026-07-16; retained as DEC-014/CHG-005 |
+| `P2-I3-EV-005` | [I01 capability-audit input freeze](../contracts/p2-i3/i01-capability-audit-input-freeze.json) | I01 | Frozen audit-input authority only | Accepted through DEC-016 before audit activity; supplies no capability evidence itself |
+| `P2-I3-EV-006` | [I01 capability matrix](../contracts/p2-i3/i01-capability-matrix.json) | I01 | Source-current capability classifications only | Accepted; 15/15 questions resolved |
+| `P2-I3-EV-007` | [I01 operation dispositions](../contracts/p2-i3/i01-operation-dispositions.json) | I01 | Source-current operation classifications only | Accepted; 10/10 operations resolved |
+| `P2-I3-EV-008` | [I01 source digests](../contracts/p2-i3/i01-source-digests.json) and [command provenance](../reports/P2-I3-I01-command-provenance.md) | I01 | Exact source/environment/reproduction identity | Accepted; 27 sources and six test invocations retained |
+| `P2-I3-EV-009` | [I01 narrative audit](../reports/P2-I3-I01-source-current-capability-audit.md) | I01 | Human interpretation of source facts and missing surfaces | Accepted; no source admission or scientific result |
+| `P2-I3-EV-010` | [I01 audit validation](../contracts/p2-i3/i01-audit-validation.json) | I01 | Package-completeness and quarantine validation only | Accepted; machine validation and source-audit gate passed through DEC-018 |
+| `P2-I3-EV-011` | [N29/N30 mechanism inventory](../contracts/p2-i3/i01-n29-n30-mechanism-inventory.json) and [predecessor mechanism lineage](../contracts/p2-i3/i01-predecessor-mechanism-lineage.json) | I01 | Source-current experiment-mechanism and producer-feasibility evidence only | Accepted under original claim ceilings; cannot upgrade native capability or select P2-I3 realization |
 
-No source audit, admission, implementation, calibration, registration,
-runtime, control, reconstruction, or scientific evidence exists yet for
-P2-I3.
+No source admission, realization, calibration, registration, runtime,
+control, reconstruction, or scientific evidence exists yet for P2-I3.
 
 ## 20. Current stop and next permitted action
 
@@ -884,11 +1039,16 @@ accepted semantic brief
 + accepted cumulative decision record
 + accepted evidence-expandable checklist
 = passed P2-I3-BRIEF-GATE
-+ I01 input-freeze construction open
-!= source audit authorized
++ Q-001 resolved by P2-I3-DEC-016
++ I01 input freeze accepted
++ environment preflight passed after owner-authorized pytest installation
++ complete source-current audit package retained and validated
+= P2-I3-SOURCE-AUDIT-GATE passed
+!= owner review complete or gate passed
 ```
 
-The next permitted action is construction and project-owner review of the exact
-I01 capability-audit input freeze. The source audit itself remains a separate,
-explicitly reviewed activity and may not begin until Q-001 and that freeze are
-accepted.
+The next permitted action is owner review of the bounded I01 package. Concrete
+comments trigger one correction pass; absent a concrete objection, a direction
+to continue records the audit as accepted and passes only
+`P2-I3-SOURCE-AUDIT-GATE` under DEC-015. I02 source admission must still
+resolve Q-002 separately.

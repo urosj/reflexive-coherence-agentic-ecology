@@ -1,0 +1,70 @@
+{
+  "artifact_id": "P2-I3-I01-PREDECESSOR-SCOPE-EXTENSION",
+  "artifact_version": "1.0.0",
+  "status": "completed",
+  "iteration_id": "P2-I3-I01",
+  "change_id": "P2-I3-CHG-013",
+  "parent_scope_extension_id": "P2-I3-I01-N29-N30-SCOPE-EXTENSION",
+  "authorized_at": "2026-07-16",
+  "trigger": "Owner correction that N29 indexes relevant earlier experiments and owner direction that absent native PyGRC coverage must produce an explicit producer-side completion rather than weaken or block the scientific experiment.",
+  "graph_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+  "read_only_required": true,
+  "added_scope": [
+    "experiments/2026-05-N05-lgrc-coherence-waves-oscillators/**",
+    "experiments/2026-05-N06-lgrc-semantic-route-choice/**",
+    "experiments/2026-05-N07-rc-identity-attractor-invariance/**",
+    "experiments/2026-05-N08-lgrc-memory-trail-affordance/**",
+    "experiments/2026-05-N09-lgrc-goal-proxy-regulation/**",
+    "experiments/2026-05-N10-lgrc-agentic-like-integration/**",
+    "experiments/2026-05-N11-lgrc-general-agentic-like-integration/**",
+    "experiments/2026-06-N22-lgrc-susceptibility-update-durable-geometry-modification/**",
+    "experiments/2026-06-N25.2-lgrc9v3-mb6-validation-bridge/**",
+    "experiments/2026-06-N28-lgrc-generative-vs-extractive-persistence/**"
+  ],
+  "selection_rationale": {
+    "primary_mechanism_lineage": [
+      "N05 producer-driven native packet scheduling",
+      "N08 serialized trail-memory lifecycle and native geometry limitation",
+      "N09 producer request followed by native runtime transition",
+      "N22 producer-owned durable carrier with native snapshot, reentry, and controls"
+    ],
+    "supporting_control_and_accounting_lineage": [
+      "N06 route arbitration and hidden-selector limits",
+      "N07 neutral reservoir accounting",
+      "N10/N11 missing native policy and naturalization demand",
+      "N25.2 native multi-basin runtime context"
+    ],
+    "projection_only_lineage": [
+      "N28 artifact-level generative/extractive metric construction",
+      "N29 convergence index and composition debt",
+      "N30 inherited shared-medium relation and control vocabulary"
+    ]
+  },
+  "audit_questions": [
+    "Which predecessor mechanisms explain the capability and debt entries summarized by N29?",
+    "Which mechanisms execute public PyGRC transitions, which emit producer requests, which directly mutate experiment-owned state, and which only construct or project artifacts?",
+    "For each native gap relevant to P2-I3, is there a source-backed producer-completion pattern that preserves the intended causal relation?",
+    "Which prior mechanisms would be unsuitable because they author a route, target, response, or outcome that P2-I3 must observe locally?",
+    "What precise missing LGRC pattern should remain visible if P2-I3 uses a producer completion?"
+  ],
+  "realization_rule": {
+    "authority": "P2-I3-DEC-017",
+    "native_priority": "Use a public PyGRC capability first only when it realizes the registered causal function without changing the experiment.",
+    "producer_completion": "When native coverage is absent, inadequate, or unsuitable, retain the scientific requirement and implement the smallest explicit RCAE-owned request producer or declared state producer.",
+    "never_allowed": [
+      "Weakening the scientific question to fit native coverage.",
+      "Treating missing native support as a scientific negative.",
+      "Promoting producer success to native PyGRC capability.",
+      "Silently replacing a frozen producer path after native coverage changes.",
+      "Changing the graph/PyGRC repository from RCAE."
+    ]
+  },
+  "evidence_effect": "Read-only source-current experiment-lineage and producer-feasibility evidence only. It neither admits a source nor selects or executes a P2-I3 realization.",
+  "required_outputs": [
+    "One machine-readable predecessor mechanism lineage with exact source digests.",
+    "Native classifications preserved separately from producer-completion feasibility.",
+    "Narrative audit interpretation of the staged native/producer/naturalization path.",
+    "Updated operation dispositions that no longer treat native absence as automatic experiment blockage."
+  ],
+  "rerun_scope": "No earlier experiment or P2-I3 candidate run. Revalidate JSON, exact source digests, output digests, narrative/provenance consistency, path portability, and external-checkout cleanliness."
+}

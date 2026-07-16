@@ -1,0 +1,218 @@
+{
+  "artifact_id": "P2-I3-I01-SOURCE-DIGESTS",
+  "artifact_version": "1.0.0",
+  "status": "accepted",
+  "iteration_id": "P2-I3-I01",
+  "input_freeze_id": "P2-I3-I01-CAPABILITY-AUDIT-INPUT-FREEZE",
+  "digest_algorithm": "sha256",
+  "checkout_identities": {
+    "graph_runtime": {
+      "repository_name": "graph-reflexive-coherence",
+      "revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "branch_observation": "main",
+      "worktree_before": "clean",
+      "worktree_after": "clean"
+    },
+    "distance_theory": {
+      "repository_name": "geometric-reflexive-coherence",
+      "revision": "e0d25bf69b8bf681eb8d092ba416497030e5d88e",
+      "branch_observation": "main",
+      "worktree_before": "clean",
+      "worktree_after": "clean"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "P2-I3-SRC-001",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "pyproject.toml",
+      "sha256": "b96f7e82c3e398502d12037548701e88aaf82b5b7c47f7153306fcea747a6d8b",
+      "role": "Python and runtime dependency declaration"
+    },
+    {
+      "source_id": "P2-I3-SRC-002",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/core/interfaces.py",
+      "sha256": "551d68fc103285608cef1a7ea4a69b9455181de21d9f91ea61cdd80c6065bc8f",
+      "role": "Common public model, state, reset, snapshot, and save interface"
+    },
+    {
+      "source_id": "P2-I3-SRC-003",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/__init__.py",
+      "sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+      "role": "Public model-family exports"
+    },
+    {
+      "source_id": "P2-I3-SRC-004",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/grc_9_v3.py",
+      "sha256": "d297def1eddfaf79a7ad3d6b676caaeebb29e6d7235f4fac5c6729bd7e26ca9e",
+      "role": "Registered topology, edge-label, node-state, synchronous continuity and hybrid-step, and snapshot substrate"
+    },
+    {
+      "source_id": "P2-I3-SRC-005",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/grc_9_v3_state.py",
+      "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "role": "Node coherence and geometric, temporal, conductance, and flux state fields"
+    },
+    {
+      "source_id": "P2-I3-SRC-006",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3.py",
+      "sha256": "37f9f9a0452fba447c875f7e652d8632dc49bb159c0d1af5caecb4ce4acf48bb",
+      "role": "Public LGRC9V3 compatibility facade"
+    },
+    {
+      "source_id": "P2-I3-SRC-007",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_construction.py",
+      "sha256": "c59f8d0747a5a6f5c954927fd1e1b1d71464bdffbdbf0401e39b17219a364938",
+      "role": "Library-owned topology route enumeration and packet-queue priming"
+    },
+    {
+      "source_id": "P2-I3-SRC-008",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_contract.py",
+      "sha256": "b86fb41ab530a7aa01abdf01dbc048da10c2e312a18c8b874cbd1386c4794680",
+      "role": "Packet, pulse-surface, route-aspect, and route-arbitration contracts"
+    },
+    {
+      "source_id": "P2-I3-SRC-009",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "role": "Deterministic packet ledger, debit, arrival credit, timing, and provenance"
+    },
+    {
+      "source_id": "P2-I3-SRC-010",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+      "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "role": "Public current-state and reset-baseline restoration identities"
+    },
+    {
+      "source_id": "P2-I3-SRC-011",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+      "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "role": "Public LGRC9V3 construction, scheduling, producers, execution, and restoration"
+    },
+    {
+      "source_id": "P2-I3-SRC-012",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_runtime_state.py",
+      "sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+      "role": "Continuation-relevant runtime state and deterministic queue ordering"
+    },
+    {
+      "source_id": "P2-I3-SRC-013",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_timing.py",
+      "sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+      "role": "Geometric, functional, causal, and proper-time annotation surfaces"
+    },
+    {
+      "source_id": "P2-I3-SRC-014",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/models/lgrc_9_v3_topology.py",
+      "sha256": "f3cf7e2281c4073531a5951a19f9ae9141a336f9f9b6398f76eda7e1493abde4",
+      "role": "Topology event, packet transport, proper-time inheritance, and lineage restoration"
+    },
+    {
+      "source_id": "P2-I3-SRC-015",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "src/pygrc/landscapes/inference_pheromone.py",
+      "sha256": "e2f6a0d93ca800be18df6ce955f347122a3b393a5590cdf81b2011572d599b2c",
+      "role": "Post-hoc path-memory classifier; explicitly not a live field carrier"
+    },
+    {
+      "source_id": "P2-I3-SRC-016",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_construction.py",
+      "sha256": "ed397b97cb586eec30a882d5b4da92f395ade95f4cba6b3b1b6823fe2c944999",
+      "role": "Pre-existing topology-route and library-owned priming conformance"
+    },
+    {
+      "source_id": "P2-I3-SRC-017",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_contract.py",
+      "sha256": "38574deb0bf0790ea9d63800d800478da5ffbe65073dd0c570f361dc85d5ba2b",
+      "role": "Pre-existing packet, ordering, budget, distance, and surface-contract conformance"
+    },
+    {
+      "source_id": "P2-I3-SRC-018",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_native_packet_loop_baseline.py",
+      "sha256": "e9f5fe5a644007b8246a548c687c51bd5b561d0364cd3a2ffc31c40f7c31b520",
+      "role": "Pre-existing evidence that static route autonomy is not self-rearm equivalence"
+    },
+    {
+      "source_id": "P2-I3-SRC-019",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_native_packet_loop_route_aspect.py",
+      "sha256": "9d0a55c702f8e77bd9204752f5f4f6993a493bdb9d1022ad907c9313a30401bd",
+      "role": "Pre-existing route-aspect validation and fail-closed conformance"
+    },
+    {
+      "source_id": "P2-I3-SRC-020",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_restoration.py",
+      "sha256": "881e1596ee39594bb21ce1ae9e3928c1a9eafe79255dbc69438d4de98c9d5b97",
+      "role": "Pre-existing public restoration identity conformance"
+    },
+    {
+      "source_id": "P2-I3-SRC-021",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_restoration_matrix.py",
+      "sha256": "b5c740545022c3be11e256d95645b57954bce993a46e7cc26edcca33517eb154",
+      "role": "Pre-existing queue, clock, route, producer, and source-current identity sensitivity"
+    },
+    {
+      "source_id": "P2-I3-SRC-022",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "tests/models/test_lgrc_9_v3_runtime.py",
+      "sha256": "19f310a120c5efaa4ee068fca7c6b7ffc9cedec745bc42e1f8156eb120b8736b",
+      "role": "Pre-existing live packet, pulse-surface, producer, hidden-route, and snapshot conformance"
+    },
+    {
+      "source_id": "P2-I3-SRC-023",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "implementation/Phase-8-LGRC9-CausalPulseSubstrateCloseout.md",
+      "sha256": "63cd7a332be71701896d29f054aaab36fc83bad0a207255d04e40062cd5541ff",
+      "role": "Accepted passive-surface and scheduling-only claim boundary"
+    },
+    {
+      "source_id": "P2-I3-SRC-024",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "implementation/Phase-8-LGRC9-NativePacketLoopBaselineFreeze.md",
+      "sha256": "186a51f5e1993762e6bb34355282b324dd8bb5c9978020d21b5ab03509cfc22f",
+      "role": "Accepted static-route versus self-rearm boundary"
+    },
+    {
+      "source_id": "P2-I3-SRC-025",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "implementation/Phase-8-LGRC9-NativeRouteArbitrationCloseout.md",
+      "sha256": "1d3166a3ca4b08cf88aa50b6054782442e7739b11eb2d2e7157c0581d830292c",
+      "role": "Accepted route-arbitration support and no-choice claim boundary"
+    },
+    {
+      "source_id": "P2-I3-SRC-026",
+      "repository_name": "graph-reflexive-coherence",
+      "path": "implementation/Phase-8-LGRC9-RestorationIdentityCloseout.md",
+      "sha256": "6835593e59edc24095186fde5585b02ffc7f4a05fd9ae89f39160443f277ca03",
+      "role": "Accepted restoration-identity boundary"
+    },
+    {
+      "source_id": "P2-I3-SRC-027",
+      "repository_name": "geometric-reflexive-coherence",
+      "path": "investigations/2026-01-RC-Distance-v4.md",
+      "sha256": "85c34229212c7ef0a67dd9baaa50ea755ba45701f7a99b60e4112f1a33b4ef70",
+      "role": "Theory-role consistency for induced geometric and operational distance; no runtime-capability authority"
+    }
+  ],
+  "source_count": 27,
+  "integrity_result": "passed",
+  "claim_boundary": "These digests bind source-current audit evidence only. They do not admit a source, select a realization, or establish L03 evidence."
+}

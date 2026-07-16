@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.46
+**Plan revision:** 0.50
 
 **Date:** 2026-07-16
 
@@ -1766,17 +1766,20 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.46:
+Current dependency order after revision 0.50:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
    support only the bounded shared-pool co-conditioning demand pattern. The
    three modes remain separate; cross-lane synthesis, active-history native
    substitution, mode ranking, and N31+ selection remain unopened.
-2. Retain the accepted P2-I3 semantic brief, cumulative decision record, and
-   evidence-expandable checklist under DEC-014. `P2-I3-BRIEF-GATE` passes and
-   opens only construction and review of the exact I01 capability-audit input
-   freeze; it does not perform the audit or admit a source.
+2. Perform P2-I3 I02 exact source admission and resolve Q-002. DEC-018 accepts
+   the complete grounded I01 audit and passes the source-audit gate; DEC-017
+   still requires semantically adequate native capability first and explicit
+   RCAE producer completion where native coverage is absent or unsuitable.
+   I02 must bind exact revisions, files, public callables, evidence roles, and
+   digests without selecting a realization or upgrading producer precedents to
+   native capability.
 3. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1879,6 +1882,10 @@ directive.
 | 2026-07-16 | Revision 0.44: records owner acceptance of the P2-I3 semantic brief and constructs its review-ready cumulative decision record and evidence-expandable I00–I11 checklist. Eleven semantic/process decisions are retained while twenty runtime, equation, source, metric, numeric, gate, and execution questions remain assigned to later decision points. The brief gate remains pending owner acceptance of the governance package; no source audit, admission, realization, calibration, registration, execution, or L03 evidence is assigned. |
 | 2026-07-16 | Revision 0.45: applies the owner-authorized bounded P2-I3 governance-review correction. DEC-012 fixes one realization plus one complete-state-matched history discriminator as the proportional default; DEC-013 defines repetition as at least two attributable events while leaving exact cardinality to registration. The brief now projects R05 only through geometry/timescale variation, and the checklist corrects I01 freeze authority, declared-effect ownership, scientific-outcome-free conformance, typed control evidence, split question handoffs, and related execution boundaries. `P2-I3-BRIEF-GATE` remains pending; no source or scientific evidence is assigned. |
 | 2026-07-16 | Revision 0.46: records owner acceptance of the corrected P2-I3 governance package as DEC-014/CHG-005 and passes `P2-I3-BRIEF-GATE`. The final non-blocking clarification keeps I03 dynamics operationally observable but scientifically unmeasured until I08 and requires I01 to separate public-source facts, synthetic interface conformance, and candidate-shaped behavior. Only I01 input-freeze construction and review open; Q-001, the audit, source admission, realization, and all scientific gates remain closed. |
+| 2026-07-16 | Revision 0.47: records DEC-015's correction-driven iteration-review convention and constructs the review-ready P2-I3 I01 input-freeze candidate. The candidate fixes exact clean graph/theory identities, fifteen capability questions, ten operation dispositions, allowed read-only commands, output contracts, and a public-source/synthetic/candidate-shaped evidence partition with synthetic probes disabled. Q-001 and the freeze remain pending review; no source classification, API invocation, test, conformance probe, audit evidence, or later authority is assigned. |
+| 2026-07-16 | Revision 0.48: records DEC-016 acceptance of the exact P2-I3 I01 input freeze, owner-authorized restoration of the missing pytest prerequisite, and the complete review-ready read-only audit. The package retains fifteen capability and ten operation dispositions, 27 exact source digests, 24 passing targeted pre-existing tests, distinct geometry/runtime roles, a bounded native shortlist, and explicit missing field-lifecycle, intervention, participant-role, and local traversal-response surfaces. Evidence effect is source-current capability only; source admission, realization, calibration, execution, and L03 evidence remain closed. |
+| 2026-07-16 | Revision 0.49: follows N29's index into the relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanism lineage and records DEC-017. Semantically adequate native PyGRC capability has priority, while absent or unsuitable native operations become explicit RCAE request-producer or declared-state-producer obligations plus graph-side naturalization debt; the experiment is never weakened to fit native coverage. Native capability classifications remain unchanged, 44 predecessor source identities are retained, no earlier experiment is rerun, and source admission, realization selection, and L03 evidence remain closed. |
+| 2026-07-16 | Revision 0.50: records grounded eleven-artifact I01 review passage through DEC-018 after one bounded CHG-014 clarification. All fifteen capability, ten operation, source-lineage, provenance, quarantine, and digest claims are accepted; SOURCE-AUDIT-GATE passes and opens only I02 exact source admission and Q-002. No source is admitted, no realization is selected, and no conformance, calibration, candidate, or scientific execution is authorized. |
 
 ## 18. Program completion criteria
 

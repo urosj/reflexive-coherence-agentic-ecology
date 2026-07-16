@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.46
+**Baseline revision:** 0.50
 
 **Date:** 2026-07-16
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.46 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.50 | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 brief gate passed | P2-GATE | P2-I3 I01 input-freeze construction open; audit and execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 source-audit gate passed | P2-GATE | P2-I3 I02 exact source admission open; realization and execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1317,6 +1317,28 @@ Entry condition:
   at least two attributable events while exact cardinality remains deferred.
 - [x] Project owner accepts the initial decision/checklist package and passes
   `P2-I3-BRIEF-GATE`; only the I01 capability-audit input freeze opens.
+- [x] Record `P2-I3-DEC-015`: iteration review is correction-driven and a
+  later direction to proceed accepts an unopposed reviewed package without a
+  separate ceremonial formula.
+- [x] Review the
+  [I01 capability-audit input freeze](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i01-capability-audit-input-freeze.json),
+  resolve Q-001, and accept the freeze before any audit activity. Evidence:
+  `P2-I3-DEC-016`.
+- [x] Complete the exact frozen read-only audit and retain 15 capability
+  dispositions, 10 operation dispositions, 27 source digests, command and
+  package provenance, 24 passing targeted pre-existing tests, narrative
+  interpretation, and machine validation. Evidence: P2-I3 I01 package at
+  revision 0.48.
+- [x] Follow N29's index into the relevant predecessor experiments and record
+  `P2-I3-DEC-017`: adequate native support has priority, while missing support
+  requires an explicit RCAE producer completion and graph-side naturalization
+  debt rather than a weakened experiment. Evidence: N29/N30 inventory,
+  predecessor mechanism lineage, and `P2-I3-CHG-013` at revision 0.49.
+- [x] Owner passes the grounded eleven-artifact I01 review after bounded
+  CHG-014 clarification. Evidence: `P2-I3-DEC-018`; source-audit gate passed
+  at revision 0.50 with no source admission or realization selection.
+- [ ] Complete I02 exact source admission and resolve Q-002. Do not select a
+  realization or promote producer precedent to native capability.
 
 Required lane work:
 
@@ -2176,6 +2198,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I2-EXEC-FREEZE | Accepted I07A inactive C01 freeze and activation history; C01 later bounded incomplete; I08A preserves all 234 projections and passes 8/8, 18/18 correction validation, and 19/19 activation validation | 2026-07-15 | C01 consumed/bounded incomplete; C02 correction/activation owner-accepted and commit-authorized; full committed HEAD and exact preflight still required |
 | P2-I2-GATE | Complete 234/234 C02 evidence, corrected I09A control projection, I10 retained-evidence reconstruction, and owner-accepted 30/30 I11 terminal closeout | 2026-07-15 | DEC-061; passed with `supported_bounded_candidate`, `AE01-L02-R05`, `scaffold_dependent`, and `T3_operational_class`; synthesis and native-substitution work remain unopened |
 | P2-I3-BRIEF-GATE | Accepted and R05-corrected P2-I3 semantic brief plus owner-accepted cumulative decision record and evidence-expandable checklist through DEC-014/CHG-005 | 2026-07-16 | Passed; opens only I01 input-freeze construction and review, with no source audit, admission, realization, calibration, registration, execution, or evidence effect |
+| P2-I3-SOURCE-AUDIT-GATE | Accepted DEC-016 input freeze; DEC-017 native-priority/producer-completion rule; 15 capability and 10 operation dispositions; 27 exact public/theory sources, 32 N29/N30 mechanism sources, and 44 predecessor-lineage sources; 24 passing targeted pre-existing tests; bounded native shortlist, producer feasibility, and classified naturalization debt; no source admission or scientific result | 2026-07-16 | Passed through grounded review and DEC-018; opens only I02 exact source admission and Q-002 |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2268,7 +2291,11 @@ Change log:
 | CL-046 | 2026-07-15 | Revision 0.43 closes P2-I2 under owner-accepted DEC-061. C02 completes 234/234; I09A and I10 pass their corrected control and reconstruction gates; I11 passes 30/30 and retains a mode-separated `supported_bounded_candidate` through R05 with scaffold-dependent/T3 boundaries. No new scientific runtime, mode ranking, synthesis, native substitution, or N31+ selection occurs in closeout. | P2-I2 terminal retention and lane gate | Active; P2-I2 complete, later lanes and synthesis remain separately gated |
 | CL-047 | 2026-07-16 | Revision 0.44 records owner acceptance of the P2-I3 semantic brief and constructs a review-ready cumulative decision record plus evidence-expandable I00–I11 checklist. The package retains eleven accepted semantic/process decisions and twenty deliberately open implementation questions, including source, runtime carrier, equation, metric, numeric registration, gate, environment, and execution boundaries. | P2-I3 brief and governance entry | Superseded by CL-048 before brief-gate passage |
 | CL-048 | 2026-07-16 | Revision 0.45 applies the owner-authorized bounded governance-review correction. DEC-012/013 add the proportional realization default and logical repetition floor; the brief corrects R05 to geometry/timescale only; and the checklist corrects I01 freeze authority, declared-effect ownership, scientific-outcome-free conformance, typed controls, split handoffs, cadence, quarantine, and appendix/runtime boundaries. | P2-I3 governance review correction | Superseded by CL-049 after owner acceptance |
-| CL-049 | 2026-07-16 | Revision 0.46 records owner acceptance of the corrected P2-I3 governance package as DEC-014/CHG-005, passes BRIEF-GATE, clarifies I03 operational observability versus I08 scientific measurement, and freezes the required I01 public-source/synthetic-conformance/candidate-shaped evidence distinction. | P2-I3 brief gate and I01 freeze-construction entry | Active; only I01 input-freeze construction/review open, with audit and all evidence gates closed |
+| CL-049 | 2026-07-16 | Revision 0.46 records owner acceptance of the corrected P2-I3 governance package as DEC-014/CHG-005, passes BRIEF-GATE, clarifies I03 operational observability versus I08 scientific measurement, and freezes the required I01 public-source/synthetic-conformance/candidate-shaped evidence distinction. | P2-I3 brief gate and I01 freeze-construction entry | Superseded by CL-050 when the input-freeze candidate was constructed |
+| CL-050 | 2026-07-16 | Revision 0.47 records DEC-015's correction-driven review convention and constructs the review-ready P2-I3 I01 input-freeze candidate with exact clean graph/theory identities, fifteen capability questions, ten operation dispositions, allowed commands, output contracts, and synthetic probes disabled. | P2-I3 I01 input-freeze review | Superseded by CL-051 after freeze acceptance and audit execution |
+| CL-051 | 2026-07-16 | Revision 0.48 records DEC-016 acceptance of Q-001 and the exact input freeze, owner-authorized installation of the missing pytest prerequisite into RCAE `.venv`, and the complete P2-I3 I01 read-only audit. The review-ready package resolves 15 capability and 10 operation dispositions, binds 27 exact sources, passes 24 targeted pre-existing tests, separates passive evidence from field state, and retains a bounded native shortlist plus explicit missing lifecycle, intervention, participant-role, and local-response surfaces. | P2-I3 I01 source-audit review | Superseded by CL-052 after mechanism-lineage expansion |
+| CL-052 | 2026-07-16 | Revision 0.49 follows the owner-corrected N29 index into relevant N05/N06/N07/N08/N09/N10/N11/N22/N25.2/N28 mechanisms and records DEC-017. Native classifications remain unchanged; semantically adequate native support has priority, while absent or unsuitable native operations become explicit RCAE request-producer or declared-state-producer obligations plus graph-side naturalization debt. Exact N29/N30 and 44-source predecessor inventories are retained and validated without rerunning an experiment or assigning source admission, realization, or L03 evidence. | P2-I3 I01 bounded mechanism-lineage correction | Superseded by CL-053 after grounded review and acceptance |
+| CL-053 | 2026-07-16 | Revision 0.50 records the grounded eleven-artifact I01 review passage after bounded CHG-014 machine-role/citation clarification. DEC-018 accepts the complete I01 package and passes SOURCE-AUDIT-GATE; all native classifications, producer-feasibility boundaries, source identities, test results, quarantine, and claim ceilings remain unchanged. | P2-I3 I01 acceptance and I02 entry | Active; I01 complete, I02 exact source admission open, with no source yet admitted or realization selected |
 
 ## 17. Current next actions
 
@@ -2334,5 +2361,9 @@ The next unchecked actions in dependency order are:
 18. [x] Review and accept the corrected P2-I3 cumulative decision
     record and evidence-expandable checklist; pass `P2-I3-BRIEF-GATE` without
     starting the source audit.
-19. [ ] Construct and review the exact P2-I3 I01 capability-audit input freeze
-    before any read-only audit activity.
+19. [x] Review the constructed P2-I3 I01 capability-audit input freeze,
+    resolve Q-001 through DEC-016, and accept it before any read-only audit
+    activity.
+20. [ ] Review the complete P2-I3 I01 source-current capability package. A
+    direction to continue with no concrete correction passes only
+    `P2-I3-SOURCE-AUDIT-GATE` under DEC-015 and opens I02/Q-002.

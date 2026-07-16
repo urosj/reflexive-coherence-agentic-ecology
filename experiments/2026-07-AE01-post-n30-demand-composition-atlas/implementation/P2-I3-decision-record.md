@@ -1,7 +1,8 @@
 # P2-I3 Decision Record
 
 **Status:** active cumulative lane decision record; initial governance package
-accepted and `P2-I3-BRIEF-GATE` passed
+accepted, `P2-I3-BRIEF-GATE` and `P2-I3-SOURCE-AUDIT-GATE` passed, and I02
+source admission open
 
 **Lane:** `AE01-L03`
 
@@ -75,6 +76,10 @@ No decision may be inferred from:
 | `P2-I3-DEC-012` | What realization breadth is the proportional default? | One selected field realization plus one complete-state-matched formation-history discriminator | Multiple full modes require demonstrated necessity and explicit owner acceptance | 2026-07-16 |
 | `P2-I3-DEC-013` | What is the logical floor for repeated formation? | More than one attributable formation event; exact cardinality remains an I06 decision | Prevents one event from satisfying repetition without freezing a premature numeric design | 2026-07-16 |
 | `P2-I3-DEC-014` | Is the corrected initial governance package accepted? | Accepted; `P2-I3-BRIEF-GATE` passes | Opens only I01 input-freeze construction and review | 2026-07-16 |
+| `P2-I3-DEC-015` | How are iteration packages reviewed and accepted without unnecessary ceremony? | Review is correction-driven; absent a concrete objection, progression treats the presented package as accepted | Preserves owner review without requiring a separate acceptance formula | 2026-07-16 |
+| `P2-I3-DEC-016` | What exact scope resolves Q-001 and authorizes I01 audit activity? | Accept the review-ready I01 input freeze without correction | Opens only the frozen read-only capability audit | 2026-07-16 |
+| `P2-I3-DEC-017` | Does missing native PyGRC coverage block a scientifically correct P2-I3 realization? | No: use semantically adequate native capability first and complete missing functions through explicit RCAE-owned producers | Converts native gaps into producer requirements and graph-side naturalization demands without weakening the experiment | 2026-07-16 |
+| `P2-I3-DEC-018` | Does the complete grounded I01 package pass the source-audit gate? | Accepted by project owner after grounded artifact review and bounded CHG-014 clarification | Passes source-audit gate and opens only I02 exact source admission and Q-002 | 2026-07-16 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -621,14 +626,285 @@ A concrete conflict appears between this package and a controlling Phase 1
 authority, or I01 input-freeze construction exposes a semantic ambiguity that
 cannot be resolved under the existing brief and decisions.
 
-## 17. Open decision register
+## 17. `P2-I3-DEC-015` — Correction-driven iteration review
+
+### Question
+
+Must every P2-I3 iteration receive a separate ceremonial acceptance statement
+after its package is presented and reviewed?
+
+### Selected resolution
+
+No. Every iteration package is still presented for owner review, but review is
+correction-driven:
+
+```text
+concrete owner comment:
+  affected scope remains open and is corrected before progression
+
+no concrete objection + direction to continue:
+  presented package is treated as accepted
+
+review reports no blocker + owner proceeds:
+  reviewed package is treated as accepted
+```
+
+An explicit phrase such as “I accept” is not required. Silence by itself while
+work is paused does not authorize progression; the owner's next instruction to
+continue supplies the operational acceptance. Unaffected portions of a package
+do not reopen merely because one bounded correction is requested.
+
+Gate and checklist status must still be recorded before dependent activity.
+This decision removes redundant ceremony, not review, evidence, validation,
+or authorization boundaries.
+
+### Gate effect
+
+Future review-ready iterations may advance on an owner direction to continue
+when no unresolved concrete objection remains. Candidate execution, package
+installation, external mutation, and other separately explicit authorities
+retain their existing rules.
+
+### Reopening condition
+
+The convention makes it ambiguous whether a load-bearing correction was
+resolved, or a future iteration requires a legally, operationally, or
+scientifically distinct explicit authorization.
+
+## 18. `P2-I3-DEC-016` — I01 capability-audit input freeze
+
+### Question
+
+Does the review-ready I01 input freeze adequately resolve `P2-I3-Q-001`, and
+what activity does its acceptance authorize?
+
+### Considered alternatives
+
+1. Accept the exact frozen scope and begin only its read-only audit.
+2. Revise the capability questions, source identities, path scope, command
+   envelope, evidence classes, or required outputs before inspection.
+3. Authorize a synthetic conformance probe with the source audit.
+4. Treat freeze acceptance as source admission or realization authority.
+
+### Selected resolution
+
+Option 1. The project owner reviewed the input-freeze package, raised no
+concrete correction, and directed the work to continue. Under
+`P2-I3-DEC-015`, this accepts the exact freeze and resolves
+`P2-I3-Q-001`.
+
+The accepted scope fixes:
+
+- the clean graph/PyGRC and distance-theory checkout identities;
+- fifteen capability questions and ten separately classified operation
+  dispositions;
+- the tracked path scope and public-callable boundary;
+- allowed read-only static inspection, import/introspection, and
+  pre-existing-test commands;
+- public-source fact, synthetic interface-conformance, and candidate-shaped
+  behavior as distinct evidence classes;
+- synthetic probes as disabled unless a later concrete gap is separately
+  reviewed;
+- exact environment, mutation, checkout-integrity, provenance, output, and
+  exit requirements; and
+- the claim boundary that the audit creates capability evidence only.
+
+Options 3 and 4 remain prohibited. The audit may identify a source as
+adequate, inadequate, absent, unsuitable, or unresolved, but it cannot admit
+that source, select a field carrier or equation, execute candidate-shaped
+behavior, or create L03 scientific evidence.
+
+### Gate effect
+
+I01 audit activity is authorized after the frozen environment preflight
+passes. `P2-I3-SOURCE-AUDIT-GATE` remains open until all frozen outputs are
+retained, validated, reviewed, and accepted. I02 and every later iteration
+remain unopened.
+
+### Reopening condition
+
+The preflight or audit exposes a concrete mismatch in a frozen revision,
+tracked path, required public-interface question, command assumption, evidence
+class, or output requirement that prevents the exact audit from answering
+Q-001 honestly. Reopening must record the bounded correction before the
+affected audit activity continues.
+
+## 19. `P2-I3-DEC-017` — Native priority and producer completion
+
+### Question
+
+Does an absent or semantically inadequate native PyGRC operation block P2-I3,
+or force the experiment to test only what the current runtime already exposes?
+
+### Considered alternatives
+
+1. Require every load-bearing operation to be native and block the realization
+   when one is missing.
+2. Reduce or redirect the scientific question until it fits current native
+   coverage.
+3. Prefer a semantically adequate native operation, but implement any missing
+   load-bearing function as an explicit RCAE-owned producer or constructed
+   operation without weakening the causal question.
+4. Build the whole realization outside PyGRC even when adequate native
+   operations already exist.
+
+### Selected resolution
+
+Use option 3. Naturalization depth is subordinate to scientific adequacy:
+
+```text
+semantically adequate native PyGRC capability exists:
+  use it as the first realization candidate
+
+native capability is absent or changes the intended causal relation:
+  retain the scientific requirement
+  + implement the smallest explicit RCAE-owned producer completion
+  + keep ownership, state effects, identity, and controls visible
+  + record the missing native pattern as graph-side naturalization debt
+```
+
+“Native priority” is not “native at any cost.” A public operation receives
+priority only when it realizes the same registered causal function without
+hidden route selection, outcome writing, unmatched state, or additional
+state effects that change the experiment. The experiment must not be reduced,
+redirected, or declared impossible merely because current PyGRC lacks a trail
+field, decay law, local encounter, relocation, or another selected operation.
+
+Two producer-completion forms are allowed for later I03 consideration:
+
+1. **Request producer:** RCAE reads immutable, registered runtime-visible
+   state and emits a typed request; PyGRC performs the native transition. N05
+   and N09 are precedents for producer scheduling followed by native queue
+   processing. The producer may not author the scientific response.
+2. **Declared state producer:** when no native transition can express the
+   required state change, RCAE performs the smallest typed, reconstructable,
+   explicitly receipted transition over the registered composite state. N22's
+   experiment-owned conductance carrier is the controlling precedent: the
+   mutation remained producer-mediated, entered replay and controls, and was
+   never promoted to native route-conductance memory.
+
+Any producer completion must freeze:
+
+- why every nearby native operation is absent, inadequate, or unsuitable;
+- exact read inputs, write targets, units, equation, ordering, and invariants;
+- whether PyGRC or RCAE owns each state transition;
+- composite snapshot, restoration, reset, branch, and continuation identity;
+- producer-absence/dependence and hidden-controller controls;
+- a failure boundary that distinguishes implementation failure from a valid
+  scientific negative; and
+- the precise missing LGRC pattern that the graph project could later test or
+  naturalize.
+
+Later native coverage cannot silently replace a frozen producer path. Such a
+transition requires a new realization profile, explicit provider change, and
+rerun. Conversely, producer success cannot upgrade a constructed operation to
+native capability or authorize a graph-repository change from RCAE.
+
+### Source-lineage rationale
+
+N29 is an index rather than the full authority for this rule. Its relevant
+predecessors show a staged path:
+
+```text
+N05/N09:
+  producer decision/request -> native PyGRC packet transition
+
+N08:
+  serialized trail-memory scaffold exposes the missing route-memory law;
+  static positive geometry does not close the dynamic gap
+
+N22:
+  explicit producer-owned carrier mutation -> native snapshot/readback/reentry
+  -> controls and durability, without a false native claim
+
+N29/N30:
+  preserve composition debt, evidence boundaries, and inherited relation
+```
+
+This is the intended graph/ecology spiral: RCAE may construct a missing
+pattern honestly, test what ecological relation it enables, and hand the
+result back as a proposed graph discriminator. Lack of native runtime support
+therefore creates an implementation obligation and naturalization debt, not a
+scientific veto.
+
+### Gate effect
+
+I01 native classifications remain unchanged: a native operation may still be
+`adequate`, `inadequate`, `absent`, or `unsuitable`. I01 must now record a
+separate producer-completion feasibility and precedent where evidence exists.
+I02 may admit exact producer-pattern sources by role. I03 resolves Q-004 by
+assigning each selected function to native, request-producer, declared-state-
+producer, constructed, or unsuitable ownership.
+
+An absent native operation does not block `P2-I3-DISCRIMINATOR-GATE` when a
+bounded producer completion can preserve the accepted causal kernel and pass
+conformance. A missing operation blocks later execution only when neither a
+semantically adequate native path nor a reconstructable producer completion
+can express the requirement honestly.
+
+### Reopening condition
+
+A source-current native operation proves semantically equivalent to a frozen
+producer completion, or the proposed producer boundary cannot preserve local
+encounter, reconstructable state, causal attribution, and hidden-controller
+exclusion. Reopening changes provider selection through a new recorded
+realization; it does not retroactively change the ownership of earlier runs.
+
+## 20. `P2-I3-DEC-018` — I01 source-audit acceptance
+
+### Question
+
+Does the complete I01 package answer the accepted capability-audit question
+with adequate source, ownership, producer-feasibility, provenance, and
+quarantine discipline?
+
+### Selected resolution
+
+Yes. The project owner explicitly passed the review after a grounded reviewer
+read all eleven retained artifacts. The review confirmed:
+
+- all fifteen capability and ten operation dispositions against their actual
+  machine records;
+- 27 public/theory, 32 N29/N30, and 44 predecessor source identities;
+- exact environment, command, test-filter, revision, and digest provenance;
+- 24 passing targeted pre-existing tests with 333 filtered deselections;
+- no synthetic probe, candidate execution, source mutation, admission, or
+  scientific effect;
+- unchanged native classifications plus separate producer-completion
+  feasibility under DEC-017; and
+- narrative-to-matrix consistency.
+
+The six non-blocking review refinements were closed in one bounded CHG-014
+pass. Candidate-surface IDs now explicitly name audit targets rather than
+assert existence, CAP-14/15 have machine-readable meta roles, OP-07 separates
+nearest nonqualifying callables from its empty qualifying-callable set, and
+the missing scope/filter cross-references are explicit. No classification,
+source scope, scientific meaning, test result, or execution authority changed.
+
+### Gate effect
+
+`P2-I3-SOURCE-AUDIT-GATE` passes. I01 is accepted and complete. Only I02 exact
+source admission and `P2-I3-Q-002` open. Gate passage does not itself admit a
+theory or runtime source, select a carrier, dynamic, equation, producer,
+response, or realization, run conformance or calibration, or create L03
+scientific evidence.
+
+### Reopening condition
+
+An exact retained digest fails reconstruction, an admitted I02 source cannot
+be traced to the accepted I01 classification, or a later public-source check
+shows that a load-bearing I01 fact was classified from the wrong revision or
+evidence class. A new implementation preference or producer alternative does
+not reopen I01.
+
+## 21. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
 
 | Question ID | Question | Earliest decision point | Blocking effect |
 | --- | --- | --- | --- |
-| `P2-I3-Q-001` | What exact read-only capability-audit scope examines route-local field, timing, distance, packet, route, intervention, and restoration surfaces? | I01 input freeze | Blocks source audit |
+| `P2-I3-Q-001` | What exact read-only capability-audit scope examines route-local field, timing, distance, packet, route, intervention, and restoration surfaces? | I01 input freeze | Resolved by `P2-I3-DEC-016`; no longer blocks audit |
 | `P2-I3-Q-002` | Which exact theory and graph revisions, files, public callables, and evidence roles are admitted? | I02 source admission | Blocks realization selection |
 | `P2-I3-Q-003` | Is the field carrier edge-, node-, corridor-, or another route-local surface? | I03 realization selection | Blocks discriminator freeze |
 | `P2-I3-Q-004` | Is each required function native, minimally producer-assisted, constructed, unsuitable, or missing? | I03 after I01/I02 | Blocks realization acceptance |
@@ -649,7 +925,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 
-## 18. Decision protocol for subsequent work
+## 22. Decision protocol for subsequent work
 
 For each open question:
 
@@ -667,13 +943,33 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 19. Current boundary
+## 23. Current boundary
 
-Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-014` define semantic and
-process boundaries only. They assign no source capability, source admission,
-runtime carrier, equation, exact registered values, calibration, registration,
-execution, result, appendix activation, or specification-promotion authority.
+Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-018` define semantic and
+process boundaries, accept the exact I01 read-only capability audit, and pass
+`P2-I3-SOURCE-AUDIT-GATE`.
+They assign no source admission, runtime carrier, equation, exact registered
+values, calibration, registration, execution, result, appendix activation, or
+specification-promotion authority.
 
-The next permitted action is checklist-first construction and owner review of
-the I01 capability-audit input freeze. The audit itself may not begin in the
-same step unless its exact scope is separately reviewed and accepted.
+The frozen I01 environment preflight and read-only audit are complete. The
+accepted package classifies source-current capabilities only; it does not
+resolve Q-002 or assign source admission, carrier, dynamic, equation, response,
+conformance, calibration, execution, or L03 evidence.
+
+The audit distinguishes public synchronous `GRC9V3` coherence continuity
+from the separate `LGRC9V3` queue-event runtime. This preserves the native
+dynamic as an I02/I03 option without silently selecting a bridge, conflating
+execution ownership, or claiming a native LGRC-integrated field lifecycle.
+
+Missing or inadequate native coverage is not a reason to weaken or stop the
+P2-I3 causal question. Under `P2-I3-DEC-017`, I01 records the native gap and
+source-backed producer-completion precedents; I03 later selects the smallest
+semantically adequate ownership path and exports every unresolved native
+pattern as explicit graph-side naturalization debt.
+
+The next permitted action is I02 exact source admission and resolution of
+`P2-I3-Q-002`. I02 must choose exact source files, public callables, evidence
+roles, revisions, and digests from the accepted audit without silently
+upgrading producer precedents to native capability. No realization or
+scientific activity is yet open.
