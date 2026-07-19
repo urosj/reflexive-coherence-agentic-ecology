@@ -1,0 +1,49 @@
+{
+  "activation_artifact_id": "P2-I3-I05-BR-CALIBRATION-LAUNCH-AUTHORIZATION",
+  "activation_sha256": "8e55a0f65903d8735d6468f3fc3612a16115a0ad99f0ddb31755f01592e93c33",
+  "artifact_id": "P2-I3-I05-BR-FINAL-RECEIPT",
+  "artifact_version": "1.0.2",
+  "attempt_consumed": true,
+  "builder_invocation_count": 1,
+  "calibrated_relation_ids": [
+    "m_trace",
+    "m_export"
+  ],
+  "candidate_execution_authorized": false,
+  "case_count": 5,
+  "claim_id": "P2-I3-I05-BR-ATTEMPT-1",
+  "claim_sha256": "5b0208f3b54953d801297f191f7cb5712ddaf223e5910cb313abb0c35f76da90",
+  "completion_status": "success",
+  "delta": {
+    "rational": "1/1000000000000",
+    "value": 1e-12
+  },
+  "entered_margin_count": 10,
+  "launch_head": "7a58471a7ba680e67e11cb35037cb7a3fac9f3f2",
+  "output_bindings": {
+    "frozen_metric_sheet": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-frozen-metric-sheet.json",
+      "sha256": "206de69c252e9cfbd82eeae4ef7ebe255f77b72e7b15ac44de6e9afa8a8d9319"
+    },
+    "matched_null": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json",
+      "sha256": "fa8de40ecba373fe7b3969a0cb76f8b6745de2a1d482fee18d80f7a934e25b79"
+    },
+    "metric_calibration": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-metric-calibration.json",
+      "sha256": "b5715991b6ade786d28863b52e4021d304de4407655be157f7e27d7685ef80b9"
+    }
+  },
+  "readback_validation": "passed_exact_bytes_canonical_json_and_semantics",
+  "response_record_count": 15,
+  "schema_validation": "passed",
+  "scientific_result": false,
+  "second_start_evidence": {
+    "attempted": true,
+    "claim_sha256_unchanged": true,
+    "refusal_reason": "attempt_claim_exists",
+    "refused": true
+  },
+  "semantic_validation": "passed",
+  "triplet_count": 5
+}

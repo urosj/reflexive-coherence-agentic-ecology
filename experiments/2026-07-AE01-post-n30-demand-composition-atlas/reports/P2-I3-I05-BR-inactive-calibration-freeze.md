@@ -1,7 +1,7 @@
 # P2-I3 I05 B-R Inactive Calibration Freeze
 
-**Status:** retained and clean-commit validated; launch authorized; calibration
-not yet invoked
+**Status:** retained and clean-commit validated; sole launch consumed
+successfully; final result owner-accepted and CAL-GATE passed
 
 **Iteration:** `P2-I3-I05`
 
@@ -220,10 +220,11 @@ candidate execution   = false
 ```
 
 The exact clean commit containing this record is deliberately not embedded in
-the record. It will be supplied as `--expected-head`, checked before and after
-attempt consumption, and retained by the claim and final receipt. Until that
-exact committed invocation occurs, no attempt is consumed and no `delta` is
-admitted.
+the record. Launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2` was
+supplied as `--expected-head`, checked before and after attempt consumption,
+and retained by the claim and final receipt. The sole invocation completed;
+see the [calibration result](P2-I3-I05-BR-calibration-result.md). This document
+remains the pre-execution freeze authority rather than the result record.
 
 ## 7. Review boundary
 
@@ -241,8 +242,8 @@ Review should confirm only:
 The owner accepted the package for retention. It was committed without launch
 authority or governed output, reconstructed from that exact clean source
 commit, and retained through the full 40-character identity above. A separate
-launch authorization and explicit direction have now been constructed for the
-sole calibration invocation. The run and retained reconstruction remain to be
-completed before final owner review.
-`P2-I3-CAL-GATE`, I06, B-R candidate execution, C.2, and every scientific or
-ecology result remain closed.
+launch authorization and explicit direction were constructed for the sole
+calibration invocation. The run and independent reconstruction completed
+successfully, and the owner accepted the final result. `P2-I3-CAL-GATE` is
+passed and I06 exact registration is open. B-R candidate/control execution,
+C.2, and every scientific or ecology result remain closed.

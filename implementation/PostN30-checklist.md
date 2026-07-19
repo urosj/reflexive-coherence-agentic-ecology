@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.84 draft
+**Baseline revision:** 0.86 draft
 
 **Date:** 2026-07-19
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.84 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.86 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 launch authorization prepared over retained inactive freeze `1.0.2` | P2-GATE | DEC-041 remains unchanged; owner directs completion through pre-acceptance I05; launch remains one attempt/zero retries with no claim, output, or `delta` at construction |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 accepted and CAL-GATE passed; I06 opened | P2-GATE | Owner accepts sole attempt at `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`; ten exact zero margins yield shared numeric `delta=1e-12`; 49/49 reconstruction checks pass; only I06 exact registration opens |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1499,8 +1499,11 @@ committed RCAE P2-I3 demand state
 -> corrected inactive I05 invocation freeze `1.0.2` passes 50 tests and 42 checks
 -> owner review and retention commit of the inactive freeze at `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`
 -> clean-commit tests, 42-check reconstruction, and full source identity retained
--> separate launch authorization and single governed calibration invocation
--> separately gated B-R calibration and exact registration
+-> separate launch authorization retained at `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`
+-> single governed calibration succeeds; ten zero margins yield shared `delta=1e-12`
+-> final receipt and 49/49 byte-exact reconstruction checks pass
+-> owner accepts I05 and P2-I3-CAL-GATE passes
+-> separately gated B-R exact registration
 -> execute and close B-R under route-scoped gates
 -> execute and close C.2 under separate route-scoped gates
 -> compare results and producer burden; resolve Q-021
@@ -2369,7 +2372,7 @@ Use this section when checking a conditional item as deferred.
 | P2-I3-N31-RETURN-GATE | Exact N31 merged closeout, eleven return roles, B-R/C.2 provider-contract options, bounded distribution-metadata error, no evidence transfer, and no automatic provider selection | 2026-07-19 | Passed under accepted DEC-025; validation passes with five byte-exact I12 artifacts and three distribution-metadata/digest-only differences; Q-005 was subsequently resolved as a staged evaluation by DEC-026 |
 | P2-I3-DISCRIMINATOR-GATE | B-R realization decisions, operational hypotheses, exact source/runtime binding, 11/11 conformance cells, 36/36 checks, typed closure of fifteen section 8.2 requirements, byte-exact reconstruction, corrected RCAE/PyGRC schedule ownership, and strict scientific quarantine | 2026-07-19 | Passed under DEC-035 without rerun; opens only I04 calibration preregistration, with all conformance fixture values prohibited downstream |
 | P2-I3-CAL-PRE-GATE | DEC-036-through-DEC-040 response, observation, W/O/E estimator, exact-null/conformance separation, per-leg control governance, closed schema, pure implementation, safe validation/reconstruction, and deferred I05 construction requirement; no calibration or scientific effect | 2026-07-19 | Passed after owner acceptance of corrected package `1.0.1`; 22 focused tests and 485 static checks pass and retained validation reconstructs byte-exactly from a non-retained path; opens only inactive I05 invocation-freeze construction |
-| P2-I3-CAL-GATE | Accepted inactive invocation freeze, exact committed launch authority, one consumed attempt, five retained exact-null triplets covering both relations, derived metric calibration and frozen metric sheet, successful final receipt, and semantic/byte-exact readback reconstruction; numeric-resolution effect only | — | Corrected inactive freeze `1.0.2` review-ready under DEC-041: 50 tests and 42 zero-calibration checks pass; owner acceptance/commit, clean-commit validation, launch authority, governed invocation, outputs, and reconstruction remain pending |
+| P2-I3-CAL-GATE | Owner-accepted inactive freeze and exact launch lineage, one consumed attempt, five retained exact-null triplets covering both relations, derived metric calibration and frozen metric sheet, successful final receipt, 49-check byte-exact reconstruction, and numeric-resolution effect only | 2026-07-19 | Passed under DEC-041 and CHG-053; shared `delta(m_trace)=delta(m_export)=1e-12`; opens I06 exact implementation registration only |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2501,6 +2504,8 @@ Change log:
 | CL-085 | 2026-07-19 | Revision 0.82 records final owner acceptance of I05 inactive freeze `1.0.2` without changing DEC-041 or any machine identity. | P2-I3 B-R I05 inactive-freeze retention authority | Exact retention commit is authorized; clean-commit validation/full source identity must follow before launch authorization, while calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed |
 | CL-086 | 2026-07-19 | Revision 0.83 records exact inactive-freeze retention commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, tree and parent identities, accepted source digests, 50 passing clean-commit tests, 42 passing zero-calibration checks, byte-exact reconstruction, clean source state, and absence of every governed launch/output path. | P2-I3 B-R I05 clean source-retention boundary | Retention identity is complete; construction and review of a separate launch authorization is next, while invocation, `delta`, CAL-GATE, I06, C.2, and scientific/ecology work remain closed |
 | CL-087 | 2026-07-19 | Revision 0.84 records the owner's direction to complete I05 through the final acceptance item and materializes one schema-valid launch authorization over the accepted freeze, exact source digests, `.venv`, deterministic environment, normalized command prefix, and five governed paths. | P2-I3 B-R I05 launch boundary | Commit and clean-HEAD preflight precede the irreversible one-shot claim; no invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction |
+| CL-088 | 2026-07-19 | Revision 0.85 records the successful sole candidate-blind I05 attempt at launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`: permanent pre-builder claim, one builder call, zero retries, five cases, 15 responses, five triplets, ten exact zero margins, shared `delta=1e-12`, successful final receipt, actual second-start refusal, and 49/49 byte-exact read-only reconstruction checks. | P2-I3 B-R I05 pre-acceptance result boundary | Numeric-resolution evidence only; owner acceptance and CAL-GATE remain pending, while I06, candidate/control execution, C.2, and every scientific/ecology result remain closed |
+| CL-089 | 2026-07-19 | Revision 0.86 records final owner acceptance of I05 and passes `P2-I3-CAL-GATE`. The acceptance record binds launch HEAD, activation, permanent claim, successful receipt, three governed outputs, 49-check result validation, shared `delta=1e-12`, and the narrow numeric-only interpretation ceiling. | P2-I3 B-R I05 exit and I06 entry | I05 complete; opens I06 exact implementation registration only, while candidate/control execution, C.2, R01-R05, tags, and every scientific/ecology/native claim remain closed |
 
 ## 17. Current next actions
 
@@ -2655,6 +2660,11 @@ The next unchecked actions in dependency order are:
     40-character source identity without creating launch authority or outputs.
 46. [x] After the committed and revalidated freeze exists, create and review a separate launch
     authorization before the sole governed calibration invocation.
-47. [ ] Invoke the one-shot candidate-blind calibration from its exact clean
+47. [x] Invoke the one-shot candidate-blind calibration from its exact clean
     launch commit, retain and reconstruct all outputs, and stop before owner
     acceptance and `P2-I3-CAL-GATE` passage.
+48. [x] Review and accept the complete I05 calibration package and pass
+    `P2-I3-CAL-GATE` before opening I06 exact registration.
+49. [ ] Begin I06 exact implementation registration by resolving Q-014 through
+    Q-018 and binding every topology, value, schedule, control, resource, and
+    reconstruction identity before any candidate execution.

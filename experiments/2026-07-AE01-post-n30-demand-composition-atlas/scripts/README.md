@@ -114,6 +114,16 @@ products belong under ignored top-level `outputs/`. Only an explicit verified
 manifest and retention decision can move selected evidence under the
 experiment. No command writes into the graph/PyGRC repository.
 
+## P2-I3 B-R I05 result validation
+
+`p2_i3_i05_br_result_validate.py` is the read-only closeout path for the
+consumed B-R calibration. It never calls the calibration builder. It validates
+the activation, permanent claim, final receipt, and three retained outputs;
+repeats cross-record semantic and receipt-admission checks; and canonically
+reserializes the three outputs to explicitly supplied absent reconstruction
+paths. Exact commands and expected digests are retained in
+`reports/P2-I3-I05-BR-calibration-result.md`.
+
 ## P2-I3 B-R conformance-freeze validation
 
 `p2_i3_i03_br_freeze_validate.py` validates accepted DEC-034 without

@@ -1,0 +1,126 @@
+{
+  "artifact_id": "P2-I3-I05-BR-RESULT-VALIDATION",
+  "artifact_version": "1.0.0",
+  "branch_id": "P2-I3-BR",
+  "check_count": 49,
+  "checks": [
+    "schema.activation",
+    "schema.attempt_claim",
+    "schema.final_receipt",
+    "schema.matched_null",
+    "schema.metric_calibration",
+    "schema.frozen_metric_sheet",
+    "activation.authorized_once",
+    "activation.candidate_forbidden",
+    "claim.authorization_consumed",
+    "claim.attempt_one",
+    "claim.zero_retries",
+    "claim.builder_ceiling_one",
+    "claim.activation_digest",
+    "claim.freeze_digest",
+    "claim.launch_head",
+    "receipt.success",
+    "receipt.attempt_consumed",
+    "receipt.builder_once",
+    "receipt.candidate_forbidden",
+    "receipt.no_scientific_result",
+    "receipt.second_start_refused",
+    "receipt.claim_unchanged",
+    "receipt.claim_digest",
+    "receipt.activation_digest",
+    "receipt.case_count",
+    "receipt.response_count",
+    "receipt.triplet_count",
+    "receipt.margin_count",
+    "receipt.relation_ids",
+    "receipt.schema_passed",
+    "receipt.semantic_passed",
+    "receipt.readback_passed",
+    "canonical.matched_null",
+    "binding.path.matched_null",
+    "binding.digest.matched_null",
+    "canonical.metric_calibration",
+    "binding.path.metric_calibration",
+    "binding.digest.metric_calibration",
+    "canonical.frozen_metric_sheet",
+    "binding.path.frozen_metric_sheet",
+    "binding.digest.frozen_metric_sheet",
+    "semantic.cross_record",
+    "semantic.receipt_admission",
+    "reconstruction.bytes.matched_null",
+    "reconstruction.digest.matched_null",
+    "reconstruction.bytes.metric_calibration",
+    "reconstruction.digest.metric_calibration",
+    "reconstruction.bytes.frozen_metric_sheet",
+    "reconstruction.digest.frozen_metric_sheet"
+  ],
+  "evidence_effect": "numeric_measurement_resolution_only",
+  "input_bindings": {
+    "activation": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+      "sha256": "8e55a0f65903d8735d6468f3fc3612a16115a0ad99f0ddb31755f01592e93c33"
+    },
+    "attempt_claim": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json",
+      "sha256": "5b0208f3b54953d801297f191f7cb5712ddaf223e5910cb313abb0c35f76da90"
+    },
+    "final_receipt": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-final-receipt.json",
+      "sha256": "8b979000286f467537c06f80531003ae719d07c3b27f81a3fa9f427562ad2a44"
+    },
+    "frozen_metric_sheet": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-frozen-metric-sheet.json",
+      "sha256": "206de69c252e9cfbd82eeae4ef7ebe255f77b72e7b15ac44de6e9afa8a8d9319"
+    },
+    "matched_null": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json",
+      "sha256": "fa8de40ecba373fe7b3969a0cb76f8b6745de2a1d482fee18d80f7a934e25b79"
+    },
+    "metric_calibration": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-metric-calibration.json",
+      "sha256": "b5715991b6ade786d28863b52e4021d304de4407655be157f7e27d7685ef80b9"
+    }
+  },
+  "iteration_id": "P2-I3-I05",
+  "lane_id": "AE01-L03",
+  "launch_head": "7a58471a7ba680e67e11cb35037cb7a3fac9f3f2",
+  "reconstruction_bindings": {
+    "frozen_metric_sheet": {
+      "path": "outputs/reconstruction/p2-i3-i05-results/br-frozen-metric-sheet.json",
+      "sha256": "206de69c252e9cfbd82eeae4ef7ebe255f77b72e7b15ac44de6e9afa8a8d9319"
+    },
+    "matched_null": {
+      "path": "outputs/reconstruction/p2-i3-i05-results/br-matched-null.json",
+      "sha256": "fa8de40ecba373fe7b3969a0cb76f8b6745de2a1d482fee18d80f7a934e25b79"
+    },
+    "metric_calibration": {
+      "path": "outputs/reconstruction/p2-i3-i05-results/br-metric-calibration.json",
+      "sha256": "b5715991b6ade786d28863b52e4021d304de4407655be157f7e27d7685ef80b9"
+    }
+  },
+  "result": {
+    "calibrated_relation_ids": [
+      "m_trace",
+      "m_export"
+    ],
+    "case_count": 5,
+    "delta": {
+      "rational": "1/1000000000000",
+      "value": 1e-12
+    },
+    "entered_margin_count": 10,
+    "maximum_absolute_matched_null_margin": {
+      "rational": "0",
+      "value": 0.0
+    },
+    "measurement_resolution": {
+      "rational": "1/1000000000000",
+      "value": 1e-12
+    },
+    "response_record_count": 15,
+    "triplet_count": 5
+  },
+  "scientific_result": false,
+  "status": "passed",
+  "validator_sha256": "7dbb72b421949065b41a246357145a42552f367be46313209f1d7299dc28c320"
+}

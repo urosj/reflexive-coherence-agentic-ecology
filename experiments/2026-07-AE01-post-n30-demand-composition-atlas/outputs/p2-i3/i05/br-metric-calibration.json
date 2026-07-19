@@ -1,0 +1,109 @@
+{
+  "artifact_id": "P2-I3-I05-BR-METRIC-CALIBRATION",
+  "artifact_version": "1.0.2",
+  "authority": {
+    "freeze_id": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE",
+    "i04_source_anchor": "1097547ad30b77d4cf9312fb05753902f6d1cc81",
+    "policy_id": "P2-I3-I05-BR-ONE-SHOT-POLICY"
+  },
+  "calibrated_relation_ids": [
+    "m_trace",
+    "m_export"
+  ],
+  "candidate_blind": true,
+  "delta": {
+    "rational": "1/1000000000000",
+    "value": 1e-12
+  },
+  "delta_formula": "max(measurement_resolution, max(abs(m_trace[c]), abs(m_export[c])) for c in entered_case_ids)",
+  "entered_case_ids": [
+    "EQ-NEG-HALF",
+    "EQ-NEG-QUARTER",
+    "EQ-ZERO",
+    "EQ-POS-QUARTER",
+    "EQ-POS-HALF"
+  ],
+  "entered_margin_count": 10,
+  "entered_margins": [
+    {
+      "case_id": "EQ-NEG-HALF",
+      "m_export": {
+        "rational": "0",
+        "value": 0.0
+      },
+      "m_trace": {
+        "rational": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "case_id": "EQ-NEG-QUARTER",
+      "m_export": {
+        "rational": "0",
+        "value": 0.0
+      },
+      "m_trace": {
+        "rational": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "case_id": "EQ-ZERO",
+      "m_export": {
+        "rational": "0",
+        "value": 0.0
+      },
+      "m_trace": {
+        "rational": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "case_id": "EQ-POS-QUARTER",
+      "m_export": {
+        "rational": "0",
+        "value": 0.0
+      },
+      "m_trace": {
+        "rational": "0",
+        "value": 0.0
+      }
+    },
+    {
+      "case_id": "EQ-POS-HALF",
+      "m_export": {
+        "rational": "0",
+        "value": 0.0
+      },
+      "m_trace": {
+        "rational": "0",
+        "value": 0.0
+      }
+    }
+  ],
+  "excluded_conformance_case_ids": [
+    "TRACE-FIRST-DOM-POS",
+    "TRACE-SECOND-DOM-NEG",
+    "EXPORT-FIRST-DOM-POS",
+    "EXPORT-SECOND-DOM-NEG",
+    "FLOOR-DOM-POS",
+    "FLOOR-EQUALITY",
+    "TRACE-CROSS-ZERO",
+    "EXPORT-CROSS-ZERO"
+  ],
+  "lane_id": "AE01-L03",
+  "margins_per_case": {
+    "m_export": 1,
+    "m_trace": 1
+  },
+  "matched_null_artifact_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json",
+  "maximum_absolute_matched_null_margin": {
+    "rational": "0",
+    "value": 0.0
+  },
+  "measurement_resolution": {
+    "rational": "1/1000000000000",
+    "value": 1e-12
+  },
+  "scientific_result": false
+}

@@ -127,9 +127,8 @@ both-relation coverage, and recomputes identities and arithmetic. The retained
 `p2-i3/i05-br-calibration-freeze-validation.json` passes 42 checks with 50
 focused tests.
 
-No launch-authorization record, permanent claim, governed output, calibration
-invocation, or `delta` exists. The owner accepted `1.0.2` for exact retention,
-and `p2-i3/i05-br-retention-validation.json` binds clean retention commit
+The owner accepted `1.0.2` for exact retention, and
+`p2-i3/i05-br-retention-validation.json` binds clean retention commit
 `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, the accepted source digests,
 50 passing tests, 42 passing checks, and byte-exact reconstruction. That record
 has SHA-256
@@ -138,8 +137,18 @@ and retention effect only. The separately schema-validated
 `p2-i3/i05-br-calibration-launch-authorization.json` now binds the accepted
 freeze and exact source/environment/path envelope for one invocation under the
 owner's direction to complete I05 through the final acceptance boundary. Its
-exact launch HEAD remains runtime-supplied and no attempt or output exists at
-authorization time.
+exact launch HEAD was runtime-supplied as
+`7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`. The sole invocation completed
+successfully; the permanent claim, final receipt, three calibration outputs,
+and 49-check independent validation are retained under `outputs/p2-i3/i05/`.
+The shared `delta=1e-12` is numeric-resolution evidence only.
+
+`p2-i3/i05-br-owner-acceptance-and-cal-gate.json` records that final
+acceptance, binds the launch HEAD, activation, permanent claim, successful
+receipt, three governed outputs, 49-check validation, exact shared `delta`, and
+interpretation ceiling, and passes `P2-I3-CAL-GATE`. Its SHA-256 is
+`16c820aaa2bba3ed2fa34604437f0c2202e194aa0db6c507a712dc30a09cdac0`. It
+opens I06 exact implementation registration only.
 
 ## P2-I1 registration materialization
 

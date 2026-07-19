@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.84 draft
+**Plan revision:** 0.86 draft
 
 **Date:** 2026-07-19
 
@@ -1844,9 +1844,13 @@ Current dependency order after revision 0.79 draft:
    retained at full commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`;
    50 focused tests, 42 zero-calibration checks, and byte-exact reconstruction
    pass again from that clean commit. The separately materialized launch
-   authorization now binds one invocation under explicit owner direction; its
-   exact clean commit must pass preflight before any matched-null operation.
-   Then carry B-R through separately gated
+   authorization was retained at
+   `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`; exact preflight passed and the
+   sole attempt completed with one builder call, five cases, ten exact-zero
+   margins, shared numeric `delta=1e-12`, a successful final receipt, and
+   49/49 byte-exact read-only reconstruction checks. This is numeric-resolution
+   evidence only. The owner accepts I05 and passes CAL-GATE, opening I06 exact
+   implementation registration but no scientific execution. Then carry B-R through separately gated
    calibration, registration, execution, controls, reconstruction, and branch
    interpretation. Only after B-R branch closeout may C.2 open under separate
    identities and the same common comparison fields. B-R Q-008 is fixed by
@@ -1995,6 +1999,8 @@ directive.
 | 2026-07-19 | Revision 0.82: records final owner acceptance of I05 inactive freeze `1.0.2`. DEC-041 and all package identities remain unchanged. Acceptance authorizes only the exact retention commit; clean-commit tests, 42-check reconstruction, byte comparison, and retention of the full 40-character source identity must follow before launch authorization. Calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
 | 2026-07-19 | Revision 0.83: retains I05 inactive freeze `1.0.2` at exact source commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5` and records its tree, parent, accepted source digests, 50 clean-commit tests, 42 zero-calibration checks, byte-exact reconstruction, clean repository state, and absent governed paths. Source retention is complete; a separate launch authorization may now be constructed and reviewed, but invocation, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
 | 2026-07-19 | Revision 0.84: records the owner's direction to complete I05 through retained calibration/reconstruction while reserving final acceptance. A separate schema-valid launch authorization binds the accepted freeze, exact six-source digest set, pinned `.venv` and deterministic environment, normalized command prefix, one attempt, zero retries, and all governed paths. The exact launch HEAD remains runtime-supplied and receipt-retained. Commit and clean preflight are next; no claim, invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction. |
+| 2026-07-19 | Revision 0.85: records the successful sole I05 candidate-blind calibration at launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`. A permanent pre-builder claim, one builder call, zero retries, five cases, 15 responses, five triplets, ten exact-zero margins, shared `delta=1e-12`, successful receipt, actual second-start refusal, and 49/49 byte-exact read-only reconstruction checks are retained. The result is numeric-resolution evidence only; owner acceptance and CAL-GATE remain pending, and I06, B-R candidate/control execution, C.2, and every scientific/ecology result remain closed. |
+| 2026-07-19 | Revision 0.86: records final owner acceptance of I05 and passes `P2-I3-CAL-GATE`. The acceptance record binds launch HEAD, permanent activation and claim, successful receipt, three governed outputs, 49-check result validation, exact shared `delta=1e-12`, and the numeric-only interpretation ceiling. I05 is complete and I06 exact implementation registration opens; candidate/control execution, C.2, R01-R05, tags, and every scientific/ecology/native claim remain closed. |
 
 ## 18. Program completion criteria
 
