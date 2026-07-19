@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.65 draft
+**Plan revision:** 0.66 draft
 
 **Date:** 2026-07-19
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.65 draft:
+Current dependency order after revision 0.66 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1801,8 +1801,9 @@ Current dependency order after revision 0.65 draft:
    through a blind RCAE structural adapter. DEC-030 through DEC-032 freeze the
    common ecology-result and producer-cost envelope, separate B-R formation-
    quantity/export-mass/complete-state-history contrasts, and define composite
-   restoration plus causal-continuation identities. Next project DEC-027
-   through DEC-032 into operational hypotheses and bounded conformance. Then
+   restoration plus causal-continuation identities. DEC-033 projects these
+   authorities into thirteen accepted operational hypotheses. Next construct,
+   review, and only then execute the bounded conformance fixture. Then
    carry B-R through calibration, registration, execution,
    controls, reconstruction, and branch interpretation. Only after
    B-R branch closeout may C.2 open under separate identities and the same
@@ -1933,6 +1934,7 @@ directive.
 | 2026-07-19 | Revision 0.63 draft: records accepted DEC-028. B-R Q-006 now uses serialized event-indexed conservative transfers from a registered route-support source through the native coherence carrier to an isolated reservoir. The decision freezes corrected floor/cap bounds, four receipt outcomes, complete lifecycle state, native/producer ownership, mass/contrast separation, matched-mass control semantics, reservoir isolation, and honest repeated-opportunity classifications. It consumes DEC-025 without re-admitting N31 and leaves Q-007 plus every conformance, calibration, registration, execution, and result gate open. |
 | 2026-07-19 | Revision 0.64 draft: records accepted DEC-029. B-R Q-007 now uses paired independent branch-local fixed native departure requests from matched complete checkpoints. A blind RCAE structural adapter schedules the frozen local opportunity without reading field or outcome state; native LGRC9V3 alone admits or refuses from source coherence. The decision fixes continuation roles, invasive-branch handling, typed refusal, controls, graded interpretation, and producer-cost ownership while leaving the common comparison envelope, Q-013/Q-015, operational hypotheses, conformance, calibration, registration, execution, and every result gate open. |
 | 2026-07-19 | Revision 0.65 draft: records accepted DEC-030 through DEC-032. The common B-R/C.2 envelope compares eight ecology questions and a three-class, six-dimension unsummed producer-cost vector without presuming shared metrics or an automatic winner. B-R Q-013 receives separate formation-quantity, export-mass, and complete-state/history identities. B-R Q-015 distinguishes exact composite restoration from causal-continuation equivalence, requires manifest-coordinated fail-closed save/load/reset/fork/replay, and defers exact schemas, hashes, horizon, and equality rules to I06. Operational hypotheses and bounded conformance remain next; no calibration, execution, or result authority follows. |
+| 2026-07-19 | Revision 0.66 draft: records owner-accepted DEC-033 and its thirteen B-R operational hypotheses. The projection preserves the frozen L03 rung meanings, three Q-013 contrast identities, Q-015 restoration handoff, lane controls, open directions/outcomes, redirective classifications, and the positive-export boundary for a non-static B-R dynamic. It opens only construction and review of a scientifically quarantined bounded-conformance input freeze; no conformance run, calibration, registration, candidate execution, control outcome, or scientific evidence follows. |
 
 ## 18. Program completion criteria
 

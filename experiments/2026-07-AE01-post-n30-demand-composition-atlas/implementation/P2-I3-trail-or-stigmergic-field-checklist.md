@@ -6,7 +6,8 @@ DEC-025 return admission accepted; DEC-026 resolves Q-005 as staged B-R-first
 and C.2-second evaluation; DEC-027 resolves B-R Q-008; DEC-028 resolves B-R
 Q-006; DEC-029 resolves B-R Q-007; DEC-030 common comparison envelope is
 accepted; DEC-031 resolves B-R Q-013 and DEC-032 resolves its I03 Q-015
-design; operational-hypothesis and bounded-conformance work remain pending
+design; DEC-033 operational-hypothesis projection is accepted; bounded-
+conformance input-freeze construction is next
 
 **Iteration:** `P2-I3`
 
@@ -944,16 +945,20 @@ no calibration or candidate evidence.
 
 ### 8.3 Operational hypotheses
 
-- [ ] Create subordinate operational-hypothesis records only after the
+- [x] Create subordinate operational-hypothesis records only after the
   realization and dynamic decisions are accepted.
-- [ ] Preserve `AE01-H-L03` as the frozen parent hypothesis.
-- [ ] Map the repeated formation, persistence, selected dynamic, causal
+- [x] Preserve `AE01-H-L03` as the frozen parent hypothesis.
+- [x] Map the repeated formation, persistence, selected dynamic, causal
   intervention, later traversal, specificity, variation, and interpretation
   relations to stable machine IDs.
-- [ ] State what each relation can support, cannot support, and how it may
+- [x] State what each relation can support, cannot support, and how it may
   redirect to another lane or a missing substrate surface.
-- [ ] Keep direction, magnitude, and terminal outcome open.
-- [ ] Bind minimum/strong/highest interpretations without inventing R06.
+- [x] Keep direction, magnitude, and terminal outcome open.
+- [x] Bind minimum/strong/highest interpretations without inventing R06.
+- [x] Retain the review-ready
+  [machine projection](../contracts/p2-i3/i03-br-operational-hypotheses.json)
+  and [subordinate record](../hypotheses/p2-i3-br-operational-hypotheses.md).
+- [x] Accept DEC-033 and open only bounded conformance-freeze construction.
 
 ### 8.4 Bounded runtime conformance
 
@@ -1371,6 +1376,7 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-030` | DEC-026 requires a common comparison envelope before B-R candidate work | Construct and accept DEC-030 plus machine and narrative projections with eight common scientific axes, three producer-cost classes, six unsummed cost dimensions, and a prospective C.2 influence register | Accepted through correction-free progression; comparison semantics only, with no conformance, calibration, execution, or result authority |
 | `P2-I3-CHG-031` | Owner accepts the Q-013 conclusion and its necessary split of the two B-R quantity-matched meanings | Record DEC-031 and three stable, non-substitutable contrast identities for formation quantity, export mass, and complete-state/history matching | Resolves B-R Q-013 meaning and IDs only; I04 response binding and I06 exact constructions remain open |
 | `P2-I3-CHG-032` | Owner accepts the Q-015 composite-restoration and two-identity conclusion | Record DEC-032 and the manifest-coordinated exact-execution versus causal-continuation design, fail-closed composition, clean forks, and equal-input obligations | Resolves B-R I03 Q-015 design only; I06 exact finalization, conformance, calibration, execution, and results remain open |
+| `P2-I3-CHG-033` | Accepted pre-conformance decisions require one falsifiable B-R projection of `AE01-H-L03` | Construct and accept DEC-033 plus thirteen machine/narrative OPs, rung/control/restoration mappings, open outcomes, redirects, and conformance quarantine | Accepted; opens only conformance input-freeze construction, with no runtime or scientific effect |
 
 ## 19. Evidence ledger
 
@@ -1400,6 +1406,7 @@ and evidence effect are retained.
 | `P2-I3-EV-019` | [N31 return report](../reports/P2-I3-N31-return-admission.md) | I03 return transition | Human interpretation of D0, B-R, C.2, topology/ownership effects, reconstruction debt, and next selection boundary | Accepted as return authority; DEC-026/028 later resolve staged work and B-R carrier/ownership projection without transferring N31 evidence |
 | `P2-I3-EV-020` | [Common comparison machine envelope](../contracts/p2-i3/i03-common-comparison-envelope.json) and [report](../reports/P2-I3-I03-common-comparison-envelope.md) | I03 staged comparison design | Prospective common scientific axes, producer-cost vector, sequential-development provenance, and Q-021 boundary only | Accepted under DEC-030; no conformance, calibration, execution, or scientific effect |
 | `P2-I3-EV-021` | [B-R contrast/restoration machine design](../contracts/p2-i3/i03-br-contrast-and-restoration-design.json) and [report](../reports/P2-I3-I03-BR-contrast-and-restoration-design.md) | I03 B-R design | Stable Q-013 contrast identities and Q-015 restoration/continuation obligations only | Accepted under DEC-031/032; I06 finalization and every runtime/scientific result remain open |
+| `P2-I3-EV-022` | [B-R operational-hypothesis machine contract](../contracts/p2-i3/i03-br-operational-hypotheses.json) and [subordinate record](../hypotheses/p2-i3-br-operational-hypotheses.md) | I03 B-R hypothesis projection | Thirteen falsifiable semantic OPs plus rung, control, restoration, redirect, and conformance handoffs | Accepted under DEC-033; no runtime or scientific effect |
 
 No selected realization, calibration, registration, runtime conformance,
 control, or scientific evidence exists yet for P2-I3. The N31 return adds
@@ -1442,10 +1449,10 @@ accepted semantic brief
 + DEC-030 common comparison envelope accepted
 + DEC-031 resolves B-R Q-013 contrast identities
 + DEC-032 resolves B-R I03 Q-015 restoration design
++ DEC-033 operational-hypothesis projection accepted
 != field realization or discriminator gate passed
 ```
 
-The next permitted action is to project DEC-027 through DEC-032 into B-R
-operational hypotheses. Bounded conformance follows only after that projection
-is accepted and frozen. C.2 design and every calibration or scientific
-execution remain unauthorized.
+The next action is bounded conformance input-freeze construction and review.
+C.2 design and every
+calibration or scientific execution remain unauthorized.

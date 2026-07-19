@@ -9,7 +9,8 @@ provider is selected as the lane result; DEC-027 resolves only the B-R
 instance of Q-008; DEC-028 resolves only the B-R instance of Q-006; DEC-029
 resolves only the B-R instance of Q-007; DEC-030 is the accepted common
 comparison-envelope authority; DEC-031 resolves B-R Q-013; DEC-032 resolves
-the I03 design portion of B-R Q-015
+the I03 design portion of B-R Q-015; DEC-033 is the accepted B-R
+operational-hypothesis projection and opens only conformance-freeze construction
 
 **Lane:** `AE01-L03`
 
@@ -101,6 +102,7 @@ No decision may be inferred from:
 | `P2-I3-DEC-030` | Which common scientific and producer-cost fields can compare B-R and C.2 without collapsing their mechanisms or choosing a winner? | Accepted by correction-free progression: common semantic axes plus an unsummed three-class producer-cost vector and prospective C.2 influence register | Freezes comparison semantics only and leaves Q-013/Q-015, metrics, conformance, calibration, execution, and results open | 2026-07-19 |
 | `P2-I3-DEC-031` | Which separate stable identities resolve B-R Q-013 after DEC-028 introduces a second quantity-matched relation? | Accepted by project owner: formation-quantity match, export-mass match, and complete-state/history match remain three non-substitutable contrasts | Resolves B-R Q-013 meaning/IDs only; I04 binds responses and I06 binds exact constructions | 2026-07-19 |
 | `P2-I3-DEC-032` | What B-R restoration and equal-continuation design resolves the I03 portion of Q-015? | Accepted by project owner: one manifest-coordinated composite restoration interface with separate exact-execution and causal-continuation identities | Resolves B-R Q-015 design only; I06 must finalize schemas, fields, hashes, commands, horizon, and equality rules | 2026-07-19 |
+| `P2-I3-DEC-033` | Does the B-R operational projection faithfully specialize `AE01-H-L03` and DEC-027 through DEC-032 without pre-answering metrics or results? | Accepted by project owner: thirteen operational hypotheses covering formation through bounded interpretation | Opens only bounded conformance-freeze construction; no runtime or scientific effect | 2026-07-19 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -2880,7 +2882,89 @@ conformance finds unequal continuation after verified restoration; native
 refusal cannot replay atomically; or new graph evidence changes the admitted
 restoration or B-R provider boundary.
 
-## 35. Open decision register
+## 35. `P2-I3-DEC-033` — B-R operational-hypothesis projection
+
+### Question
+
+Does the B-R operational projection faithfully specialize `AE01-H-L03`, the
+post-R3 non-static-dynamic discriminator, and DEC-027 through DEC-032 without
+selecting a metric, numeric direction, control outcome, or result?
+
+### Considered projection granularity
+
+1. **One monolithic B-R statement.** Rejected because formation, field
+   dynamics, local encounter, causal mediation, and controls could not fail or
+   redirect independently.
+2. **Mechanism steps only.** Rejected because quantity/history specificity,
+   restoration, hidden-router exclusion, variation, and interpretation would
+   remain implicit.
+3. **One hypothesis per matrix cell.** Rejected as premature because I04 and
+   I06 still own the exact finite matrix and numeric registration.
+4. **Thirteen semantic operational hypotheses.** Project the causal chain,
+   three Q-013 contrasts, restoration-aware state/history, required control
+   meanings, R05 variation, and interpretation tags while leaving every exact
+   value and outcome open.
+
+Select Option 4.
+
+### Accepted projection
+
+```text
+OP-01  costly attributable repeated formation
+OP-02  route-local persistent carrier
+OP-03  conservative non-static export lifecycle
+OP-04  fixed local native encounter
+OP-05  dynamic-to-encounter causal mediation
+OP-06  formation-quantity temporal discriminator
+OP-07  export-mass organization discriminator
+OP-08  complete-state/history discriminator
+OP-09  field locality, relocation, and permutation
+OP-10  withdrawal, false trace, and producer dependence
+OP-11  hidden-router and participant exclusion
+OP-12  geometry or internal-timescale variation
+OP-13  trail versus stigmergic interpretation boundary
+```
+
+The projection maps OP-01 to R01, OP-02 through OP-03 to R02, OP-03 through
+OP-05 to R03, OP-06 through OP-11 to the branch-specific R04 specificity
+package, and OP-12 to R05. OP-13 supplies bounded interpretation tags and adds
+no rung. The overlap preserves the frozen R02 meaning: persistence plus the
+selected decaying or reinforced dynamic precedes its later route function.
+
+A positive B-R non-static-dynamic interpretation requires at least one
+positive conservative export after the repetition floor. An eligible-zero
+policy transition with no carrier change remains a valid lifecycle observation
+but does not by itself satisfy the dynamic-beyond-persistence boundary.
+Repeated positive export is not required: one positive export followed by
+eligible-zero floor stability remains addressable under DEC-028.
+
+Direction, magnitude, binary split, perturbation strength, state-sufficiency
+outcome, interpretation tag, and terminal class remain open. Same-side, narrow,
+generic-mass, static, producer-dependent, missing-surface, redirective, and
+negative results are retained rather than forced into acceptance/rejection.
+
+The exact machine and narrative projection is retained in the
+[operational-hypothesis contract](../contracts/p2-i3/i03-br-operational-hypotheses.json)
+and [subordinate hypothesis record](../hypotheses/p2-i3-br-operational-hypotheses.md).
+
+### Gate and evidence effect
+
+DEC-033 freezes the B-R operational meanings and opens only
+construction of a bounded, scientifically quarantined conformance freeze. It
+does not run conformance, pass `P2-I3-DISCRIMINATOR-GATE`, select I04 metrics,
+authorize calibration or execution, or assign any control or scientific
+outcome.
+
+### Reopening condition
+
+Reopen DEC-033 if an OP cannot be addressed without changing DEC-027 through
+DEC-032; the projection implicitly chooses an I04 metric or numeric direction;
+the controls cannot distinguish the causal relation; bounded conformance finds
+omitted state, operation, refusal, restoration, or hidden selection; B-R cannot
+represent the parent ecology discriminator; or new graph evidence changes the
+provider contract.
+
+## 36. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -2909,7 +2993,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 36. Decision protocol for subsequent work
+## 37. Decision protocol for subsequent work
 
 For each open question:
 
@@ -2927,7 +3011,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 37. Current boundary
+## 38. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` define semantic and
 process boundaries, accept the exact I01 read-only capability audit and I02
@@ -2958,6 +3042,8 @@ DEC-030 is accepted as the common comparison and producer-cost envelope.
 DEC-031 separates B-R formation-quantity, export-mass, and complete-state/
 history contrasts. DEC-032 freezes the B-R composite restoration and causal-
 continuation design while leaving its exact I06 registration open.
+DEC-033 is the accepted operational-hypothesis projection. Its machine and
+narrative records open only construction of the bounded conformance freeze.
 
 The frozen I01 environment preflight and read-only audit are complete. The
 accepted I02 package fixes exact source identities and roles but does not
@@ -2975,8 +3061,7 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted action is to project DEC-027 through DEC-032 into B-R
-operational hypotheses, then freeze and execute only bounded, scientifically
-quarantined runtime conformance. C.2 and every calibration, candidate
-execution, or scientific activity remain unauthorized until their named gates
-pass.
+The next permitted action is construction and review of the bounded B-R
+conformance input freeze. C.2 and every
+calibration, candidate execution, or scientific activity remain unauthorized
+until their named gates pass.

@@ -35,6 +35,15 @@ graph surfaces, and proposed graph discriminators.
 
 ## Lane-local operational projections
 
+- [P2-I3 B-R operational hypotheses](p2-i3-br-operational-hypotheses.md)
+  provide the accepted, scientific-outcome-free projection of
+  `AE01-H-L03` into thirteen B-R statements covering repeated formation,
+  conservative non-static export, fixed local encounter, causal mediation,
+  the three Q-013 contrasts, restoration-aware state/history, locality,
+  withdrawal/false trace, hidden-router exclusion, R05 variation, and bounded
+  interpretation. DEC-033 accepts the projection and opens only construction
+  of its bounded conformance input freeze; conformance has not run.
+
 - [P2-I2 operational hypotheses](p2-i2-operational-hypotheses.md) project the
   frozen `AE01-H-L02` hypothesis and accepted P2-I2 brief into nine
   realization-local falsifiable statements. I03 now follows review-separated
