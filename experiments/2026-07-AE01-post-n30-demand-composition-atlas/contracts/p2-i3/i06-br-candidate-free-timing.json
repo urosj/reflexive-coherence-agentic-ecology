@@ -1,0 +1,137 @@
+{
+  "artifact_id": "P2-I3-I06-BR-CANDIDATE-FREE-TIMING",
+  "artifact_version": "1.0.1",
+  "branch_id": "P2-I3-BR",
+  "candidate_blindness": {
+    "candidate_artifacts_consumed": false,
+    "candidate_producer_invoked": false,
+    "candidate_topology_consumed": false,
+    "candidate_values_consumed": false,
+    "scientific_control_disposition_consumed": false,
+    "scientific_result": false
+  },
+  "canonical_payload_digest": "f9967de2f84908c2b30292a70951e0f530f4cfc81512cb9f1f3e37af4432cdf0",
+  "clock": "time.monotonic_ns",
+  "command": "env PYTHONPATH=${RCAE_PYGRC_ROOT}/src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 BLIS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 PYTHONHASHSEED=0 PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i06_br_registration.py build --graph-root ${RCAE_PYGRC_ROOT}",
+  "environment": {
+    "distribution_metadata_discrepancy_effect": "none_on_source_bound_runtime",
+    "graph_mutation_allowed": false,
+    "graph_repository_id": "graph-reflexive-coherence",
+    "graph_revision": "565706f8b7647f6b7638b9afbe52372e170bf724",
+    "graph_worktree_clean": true,
+    "installed_distribution_metadata_authoritative": false,
+    "interpreter": ".venv/bin/python",
+    "machine_local_path_retained": false,
+    "network_allowed": false,
+    "packages": {
+      "PyYAML": "6.0.3",
+      "jsonschema": "4.26.0",
+      "networkx": "3.6.1",
+      "pygrc": "0.1"
+    },
+    "pygrc_source_import": "${RCAE_PYGRC_ROOT}/src/pygrc/__init__.py",
+    "python_implementation": "CPython",
+    "python_version": "3.12.3",
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "evidence_effect": "infrastructure_resource_derivation_only",
+  "host_resource_observation": {
+    "available_memory_at_characterization_bytes": 17653874688,
+    "cgroup_memory_ceiling_bytes": null,
+    "host_physical_memory_bytes": 27035103232,
+    "identity_fields_for_I07_match": [
+      "platform_system",
+      "platform_machine",
+      "logical_cpu_count",
+      "host_physical_memory_bytes",
+      "cgroup_memory_ceiling_bytes"
+    ],
+    "logical_cpu_count": 6,
+    "machine_local_path_retained": false,
+    "observation_only_fields_not_exact_launch_match": [
+      "available_memory_at_characterization_bytes",
+      "swap_available_at_characterization_bytes"
+    ],
+    "platform_machine": "x86_64",
+    "platform_system": "Linux",
+    "swap_available_at_characterization_bytes": 536866816,
+    "swap_total_bytes": 536866816
+  },
+  "iteration_id": "P2-I3-I06",
+  "raw_monotonic_elapsed_ns": {
+    "eight_component_bundle_serialization": [
+      663549,
+      606029,
+      649539,
+      561479,
+      677683,
+      646872,
+      559429
+    ],
+    "eight_component_reconstruction_read": [
+      1404889,
+      1197922,
+      1042952,
+      1070528,
+      1211076,
+      1038871,
+      1077909
+    ],
+    "fixed_native_event_pair": [
+      3530392,
+      2887108,
+      2814424,
+      3037288,
+      3164999,
+      2849261,
+      2831588
+    ],
+    "inert_load": [
+      148635,
+      35672,
+      28422,
+      27792,
+      26981,
+      26269,
+      25839
+    ],
+    "schema_validation": [
+      1661489,
+      1396375,
+      1240538,
+      1642360,
+      1494025,
+      1346638,
+      1343815
+    ],
+    "startup": [
+      14118538,
+      13851136,
+      13227749,
+      13017444,
+      13296341,
+      13765491,
+      13439980
+    ]
+  },
+  "reference_derivation": "maximum observed elapsed divided by fixed operation cardinality with upward integer rounding",
+  "references": {
+    "bundle_reference_ns": 84711,
+    "event_reference_ns": 1765196,
+    "load_reference_ns": 148635,
+    "reconstruction_read_reference_ns": 175612,
+    "startup_reference_ns": 14118538,
+    "validation_reference_ns": 1661489
+  },
+  "repetitions_per_operation": 7,
+  "status": "retained_candidate_free_infrastructure_characterization"
+}

@@ -2,9 +2,9 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.59 draft
+**Baseline revision:** 0.86 draft
 
-**Date:** 2026-07-16
+**Date:** 2026-07-19
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.59 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.86 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 I03 paused at N31 handoff | P2-GATE | DEC-023/024 defer Q-005 to D0-first graph/LGRC work; return admission, dynamics, encounter, and execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 accepted and CAL-GATE passed; I06 opened | P2-GATE | Owner accepts sole attempt at `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`; ten exact zero margins yield shared numeric `delta=1e-12`; 49/49 reconstruction checks pass; only I06 exact registration opens |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1359,8 +1359,9 @@ Entry condition:
   leakage, and route-susceptibility relaxation without selecting one.
 - [x] Record DEC-023 and the
   [N31 handoff/return contract](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md).
-  P2-I3 I03 is intentionally paused at Q-005; no implementation,
-  conformance, calibration, registration, execution, or L03 result exists.
+  P2-I3 I03 was intentionally paused at Q-005 until the exact N31 return;
+  later DEC-026/028 resume staged B-R design without creating conformance,
+  calibration, registration, execution, or an L03 result.
 - [x] Record DEC-024 after direct coherence-only core-theory and LGRC-substrate
   evaluation. N31 must test D0 ordinary `C/J_C` evolution first, distinguish
   slow causal organization from a fading graph observable and instantaneous
@@ -1373,6 +1374,102 @@ Entry condition:
   updates, require a D0a representation disposition before execution,
   distinguish cache recomputation from execution reconstruction, and separate
   theory/substrate-source identity from the future RCAE demand-source commit.
+- [x] Complete graph-project N31 and retain its exact closeout/return bundle.
+  N31 finds native D0a organization without ordinary autonomous weakening and
+  returns separate B-R conservative-redistribution and C.2 exact-history-
+  susceptibility provider contracts.
+- [x] Construct and accept DEC-025 and the bounded
+  [N31 return admission](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-n31-return-admission.json).
+  Verify all eleven return roles, reconstruct I12 in a temporary source-anchor
+  clone, retain the incorrect `0.0.0` versus source-declared `0.1`
+  distribution metadata, and prove both provider contracts plus three other
+  I12 artifacts are byte-exact. No provider or P2-I3 evidence is selected.
+- [x] Review DEC-025 and pass `P2-I3-N31-RETURN-GATE` under the correction-
+  driven convention before resolving Q-005.
+- [x] Record DEC-026: explore B-R first and C.2 second under separate
+  realization/topology/evidence identities, measure producer cost as a vector,
+  and defer final provider retention to post-branch Q-021 comparison.
+- [x] Record DEC-027: B-R uses complete current native-plus-policy state as
+  its primary continuation mode and retains one mandatory complete-state-
+  matched formation-history discriminator; Q-006/Q-007 remained open at that
+  decision boundary.
+- [x] Record DEC-028: B-R Q-006 uses serialized conservative formation/export
+  with corrected floor bounds, distinct receipt outcomes, complete lifecycle
+  state, isolated reservoir topology, and no transferred N31 evidence.
+- [x] Record DEC-029: B-R Q-007 uses paired independent branch-local fixed
+  native departure requests, a blind RCAE structural adapter, native LGRC9V3
+  source-coherence admission/refusal, matched continuation roles, invasive
+  terminal branches, and graded encounter interpretation without a result.
+- [x] Record DEC-030 through DEC-032: freeze the non-scalar B-R/C.2 comparison
+  envelope, distinguish B-R formation-quantity/export-mass/complete-state-
+  history contrasts, and define exact composite restoration separately from
+  causal-continuation equivalence while deferring exact I06 registration.
+- [x] Record DEC-033: accept thirteen B-R operational hypotheses with frozen
+  rung/control/contrast/restoration handoffs and open scientific outcomes;
+  open only bounded conformance input-freeze construction.
+- [x] Record DEC-034: accept the exact inactive B-R conformance freeze, narrow
+  producer boundary, 85 zero-runtime checks, mechanical declared-provenance
+  quarantine, and separately identified stronger-proof follow-ups.
+- [x] Retain the accepted freeze in clean source-anchor commit `94bfe01` and
+  project the active P2-I3 section 8.1.2 program boundary into section 8.4.
+  Open only exact runtime-module/harness construction plus one quarantined
+  bounded-conformance run; all section 8.2 capability requirements remain open
+  until that run resolves them individually.
+- [x] Commit the exact B-R runtime module, harness, and focused tests at
+  implementation anchor `ce9701c`; consume the sole bounded-conformance
+  attempt; retain the exact runtime binding plus 11/11-cell, 36/36-check result;
+  reconstruct its 48,395 bytes exactly; and close all fifteen section 8.2
+  requirements at the operational boundary only. No calibration, control
+  outcome, scientific execution, branch result, or provider ranking follows.
+- [x] Accept DEC-035 and the exact I03 review after independently checking the
+  generated artifacts omitted from the reviewer upload. Correct complete-event-
+  schedule ownership to the factored RCAE/PyGRC statement, type the fifteen
+  section 8.2 closure bases, and pass `P2-I3-DISCRIMINATOR-GATE` without rerun.
+  Open only I04 calibration preregistration and prohibit fixture values,
+  topology, observed split, digests, or derived margins as downstream inputs.
+- [x] Resolve I04 Q-009 under DEC-036 as a typed encounter-response pair:
+  signed request-relative native admissibility margin is primary and native
+  disposition is its mandatory validity companion. Bind the exact pre-step and
+  next-event boundary, strict native sign relation, invalid-null policy,
+  unrounded inputs, matched-request comparability, and encounter index `j`
+  without selecting a value, comparator, or calibration input.
+- [x] Resolve I04 Q-010 under DEC-037 through five typed surface policies:
+  separate native observations, registered RCAE role metadata, derived graph
+  annotations, measured native time, and intervention-estimated causal
+  influence without selecting any surface value or estimating an effect.
+- [x] Resolve I04 Q-011 under DEC-038 through exact W/O/E arms, separate
+  primary trace and mandatory export-mediation estimands, raw additive but
+  normalized non-additive decomposition, strict pairing/missingness, one
+  primary encounter, and mandatory clamp interpretation without arm values.
+- [x] Resolve I04 Q-012 under DEC-039 as one shared exact-null W/O/E
+  calibration plus separate non-delta perturbation, denominator,
+  reconstruction, and validity/missingness conformance panels. Preserve the
+  frozen metric-sheet floor and prohibit candidate/runtime inputs or execution.
+- [x] Resolve the B-R instance of I04 Q-016 under DEC-040 through leg-level
+  applicability, separate execution/evidence/control/terminal statuses,
+  typed control classes and evidence, compound control families, two false-
+  trace strengths, stable discriminator/validity/claim guards, CTRL-19
+  closeout rules, and the I09-I11 reconstructed terminal-overlay handoff.
+  Assign no outcome and leave C.2 independently unresolved.
+- [x] Materialize DEC-036 through DEC-040 as one review-ready
+  [I04 machine package](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I04-BR-calibration-preregistration.md):
+  closed policy/schema, pure response-estimator path, preregistration identity,
+  validator, 22 focused tests, 485 zero-calibration checks, and byte-exact
+  retained reconstruction. The corrected `1.0.1` package closes the root and
+  conditional schema, binds all 42 leg policies, refuses destructive
+  reconstruction, and defers one exact I05 arithmetic construction. No
+  matched-null invocation, `delta`, PyGRC model,
+  candidate/control operation, or scientific result follows.
+- [x] Record DEC-041 and construct the separate inactive
+  [I05 invocation freeze](../experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I05-BR-inactive-calibration-freeze.md).
+  Fix `q_probe=1/2`, map every registered margin through
+  `C_pre(m_e)=1/2+mu`, retain one permanent pre-builder claim/one attempt/zero
+  retries, and pass 50 focused tests plus 42 zero-calibration checks. Explicitly
+  bind all ten `m_trace`/`m_export` margins, semantic output recomputation, and
+  closed activation/claim/receipt records; derive `delta` from rationals, fsync
+  claim and parent, revalidate after claim, and test thirteen fail-closed
+  transaction boundaries. No launch
+  record, claim, output, builder invocation, or `delta` exists.
 
 Current continuation:
 
@@ -1380,9 +1477,36 @@ Current continuation:
 committed RCAE P2-I3 demand state
 -> explicit graph-project N31 scope with D0 tested first
 -> reconstructable N31 closeout and return bundle
--> bounded RCAE source transition
--> explicitly retain/reopen DEC-021 and DEC-022
--> resolve Q-005 and resume Q-006 through Q-008
+-> bounded RCAE source transition (accepted; return gate passed)
+-> Q-005 resolved as B-R-first / C.2-second evaluation
+-> B-R Q-006 through Q-008 resolved under DEC-027 through DEC-029
+-> common comparison and Q-013/Q-015 design resolved under DEC-030 through DEC-032
+-> B-R operational hypotheses accepted under DEC-033
+-> bounded B-R conformance input freeze accepted under DEC-034
+-> freeze retained by clean source anchor `94bfe01`
+-> exact runtime module/harness committed at `ce9701c`
+-> bounded B-R conformance passes and reconstructs byte-exactly
+-> DEC-035 accepted; P2-I3-DISCRIMINATOR-GATE passed
+-> I04 Q-009 primary response resolved under DEC-036
+-> I04 Q-010 observation policies resolved under DEC-037
+-> I04 Q-011 comparator/estimators resolved under DEC-038
+-> I04 Q-012 candidate-blind null design resolved under DEC-039
+-> B-R Q-016 control/evidence governance resolved under DEC-040
+-> bounded review corrects schema, per-leg policy, and reconstruction
+-> corrected I04 machine preregistration passes 22 tests and 485 checks
+-> owner accepts I04 and P2-I3-CAL-PRE-GATE passes
+-> DEC-041 selects the half-unit arithmetic construction
+-> corrected inactive I05 invocation freeze `1.0.2` passes 50 tests and 42 checks
+-> owner review and retention commit of the inactive freeze at `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`
+-> clean-commit tests, 42-check reconstruction, and full source identity retained
+-> separate launch authorization retained at `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`
+-> single governed calibration succeeds; ten zero margins yield shared `delta=1e-12`
+-> final receipt and 49/49 byte-exact reconstruction checks pass
+-> owner accepts I05 and P2-I3-CAL-GATE passes
+-> separately gated B-R exact registration
+-> execute and close B-R under route-scoped gates
+-> execute and close C.2 under separate route-scoped gates
+-> compare results and producer burden; resolve Q-021
 ```
 
 Required lane work:
@@ -2245,6 +2369,10 @@ Use this section when checking a conditional item as deferred.
 | P2-I3-BRIEF-GATE | Accepted and R05-corrected P2-I3 semantic brief plus owner-accepted cumulative decision record and evidence-expandable checklist through DEC-014/CHG-005 | 2026-07-16 | Passed; opens only I01 input-freeze construction and review, with no source audit, admission, realization, calibration, registration, execution, or evidence effect |
 | P2-I3-SOURCE-AUDIT-GATE | Accepted DEC-016 input freeze; DEC-017 native-priority/producer-completion rule; 15 capability and 10 operation dispositions; 27 exact public/theory sources, 32 N29/N30 mechanism sources, and 44 predecessor-lineage sources; 24 passing targeted pre-existing tests; bounded native shortlist, producer feasibility, and classified naturalization debt; no source admission or scientific result | 2026-07-16 | Passed through grounded review and DEC-018; opens only I02 exact source admission and Q-002 |
 | P2-I3-SOURCE-ADMISSION-GATE | Exact I02 graph, callable, test, theory, and precedent identities with one bounded role each; source transitions, RCAE-producer/PyGRC non-mutation boundary, DEC-020 LGRC9V3-only core boundary, and validator-bound predecessor visibility explicit; no realization or scientific effect | 2026-07-16 | Accepted DEC-019 manifest reconstructs after CHG-017/018; Q-002 resolved and gate passed |
+| P2-I3-N31-RETURN-GATE | Exact N31 merged closeout, eleven return roles, B-R/C.2 provider-contract options, bounded distribution-metadata error, no evidence transfer, and no automatic provider selection | 2026-07-19 | Passed under accepted DEC-025; validation passes with five byte-exact I12 artifacts and three distribution-metadata/digest-only differences; Q-005 was subsequently resolved as a staged evaluation by DEC-026 |
+| P2-I3-DISCRIMINATOR-GATE | B-R realization decisions, operational hypotheses, exact source/runtime binding, 11/11 conformance cells, 36/36 checks, typed closure of fifteen section 8.2 requirements, byte-exact reconstruction, corrected RCAE/PyGRC schedule ownership, and strict scientific quarantine | 2026-07-19 | Passed under DEC-035 without rerun; opens only I04 calibration preregistration, with all conformance fixture values prohibited downstream |
+| P2-I3-CAL-PRE-GATE | DEC-036-through-DEC-040 response, observation, W/O/E estimator, exact-null/conformance separation, per-leg control governance, closed schema, pure implementation, safe validation/reconstruction, and deferred I05 construction requirement; no calibration or scientific effect | 2026-07-19 | Passed after owner acceptance of corrected package `1.0.1`; 22 focused tests and 485 static checks pass and retained validation reconstructs byte-exactly from a non-retained path; opens only inactive I05 invocation-freeze construction |
+| P2-I3-CAL-GATE | Owner-accepted inactive freeze and exact launch lineage, one consumed attempt, five retained exact-null triplets covering both relations, derived metric calibration and frozen metric sheet, successful final receipt, 49-check byte-exact reconstruction, and numeric-resolution effect only | 2026-07-19 | Passed under DEC-041 and CHG-053; shared `delta(m_trace)=delta(m_export)=1e-12`; opens I06 exact implementation registration only |
 | P2-GATE | Pending | — | Active phase; lane calibration/registration open, execution lane-gated |
 | P3-GATE | Pending | — | Blocked |
 | P4-GATE | Pending | — | Blocked |
@@ -2351,6 +2479,33 @@ Change log:
 | CL-060 | 2026-07-16 | Revision 0.57 draft records DEC-023 and the detailed N31 handoff/return contract. P2-I3 is intentionally paused at Q-005; graph-project N31 receives all three decay meanings and may select one, multiple, a producer-only candidate, no primitive, or a new taxonomy. Return requires graph reconstruction, a bounded RCAE source transition, explicit carrier/ownership retention or reopening, and ordered Q-005-through-Q-008 resumption. | P2-I3 cross-project spiral boundary | Owner-accepted and authorized for retention; after commit switch scope explicitly to graph N31, with no P2-I3 implementation or scientific effect |
 | CL-061 | 2026-07-16 | Revision 0.58 draft synchronizes root, experiment, AE01-view, implementation, changelog, release-note, and master-lane status with the retained P2-I3 source-gate and N31-handoff state. | Repository public/current-state projection | Active; documentation-only synchronization, with no gate, evidence, implementation, or claim change |
 | CL-062 | 2026-07-16 | Revision 0.59 draft records DEC-024 and amends the prospective N31 demand after direct core-theory, LGRC-substrate, and grounded pre-freeze review. D0 coherence-only decay is first; D0a slow causal organization, D0b fading graph observable, D0c instantaneous geometry, complete-state/cache tests, discrete/runtime missing surfaces, effective closure, and theory-extension outcomes are separated. Seven exact theory/substrate papers are demand-bound while exact PyGRC source, callables, tests, and artifacts remain the executable-capability barrier. Ordinary redistribution is separated from added leakage; D0 producers cannot author the aftereffect; D0a must pass a representation gate; cache recomputation and execution reconstruction have distinct statuses; and theory/substrate versus RCAE demand-source identities are separate. | P2-I3 pre-N31 theory/substrate correction | Active; passed gates, I01/I02 evidence, P2-I3 pause, and scientific state unchanged |
+| CL-063 | 2026-07-19 | Revision 0.60 draft reconstructs the merged N31 return and records accepted DEC-025. Eleven exact return roles validate; B-R and C.2 are admitted only as unselected producer-mediated contract options; their combination remains a new controlled composition. The owner classifies retained `pygrc==0.0.0` against source-declared/installed `0.1` as a distribution-metadata error; five I12 artifacts including both contracts are byte-exact, while three differ only in that metadata and dependent digests. | P2-I3 N31 bounded return transition | Complete; return gate passed with no provider selection, P2-I3 evidence transfer, realization, conformance, calibration, or execution authority |
+| CL-064 | 2026-07-19 | Revision 0.61 draft records accepted DEC-026. Q-005 becomes a staged B-R-first, C.2-second evidence program with isolated realization/topology/calibration/registration/execution identities and a common pre-B-R ecology-result plus producer-cost envelope. Producer burden remains a non-scalar vector, C.2 may learn prospectively from B-R, and final retention moves to Q-021 after both branch closeouts. | P2-I3 staged provider evaluation | Opens B-R design only; C.2 design, all conformance/calibration/execution, branch results, lane terminal, and promotion remain gated |
+| CL-065 | 2026-07-19 | Revision 0.62 draft records accepted DEC-027. B-R Q-008 uses complete current native-plus-policy state as the primary causal mode and requires one same-complete-state/different-formation-history discriminator. Raw history is audit-only unless evidence reopens the decision; a receipt, queue, phase, packet, or schedule omission is incomplete matching rather than history evidence. | P2-I3 B-R state/history boundary | Resolves B-R Q-008 only; B-R Q-006/Q-007, C.2 Q-008, common comparison freeze, and all later gates remain open |
+| CL-066 | 2026-07-19 | Revision 0.63 draft records accepted DEC-028. B-R Q-006 freezes serialized event-indexed conservative formation/export, corrected floor bounds, distinct zero/invalid/duplicate receipt semantics, complete policy lifecycle state, route source/carrier/reservoir roles, native/producer ownership, matched-mass control construction, reservoir isolation, and repeated-opportunity classifications. | P2-I3 B-R equation and lifecycle boundary | Resolves B-R Q-006 only; Q-007, common comparison freeze, conformance, calibration, registration, execution, C.2, and every result gate remain open |
+| CL-067 | 2026-07-19 | Revision 0.64 draft records accepted DEC-029. B-R Q-007 freezes paired independent branch-local fixed native departure requests from matched complete checkpoints, matched continuation roles, a blind structural request adapter, native source-coherence admission/refusal, invasive terminal branches, typed outcomes, controls, graded interpretation, and explicit producer-cost ownership. | P2-I3 B-R local-encounter boundary | Resolves B-R Q-007 only; common comparison and Q-013/Q-015 design, operational hypotheses, conformance, calibration, registration, execution, C.2, and every result gate remain open |
+| CL-068 | 2026-07-19 | Revision 0.65 draft records accepted DEC-030 through DEC-032. The common comparison freezes eight ontology-neutral science axes, a three-class/six-dimension unsummed producer-cost vector, and prospective C.2 influence provenance. B-R Q-013 separates formation quantity, export mass, and complete-state/history. B-R Q-015 separates exact composite restoration from causal-continuation equivalence with fail-closed composition and clean branch/replay rules. | P2-I3 B-R pre-conformance design boundary | Comparison and B-R Q-013/I03-Q-015 design resolved; operational hypotheses, bounded conformance, exact I06 finalization, calibration, registration, execution, C.2, and every result gate remain open |
+| CL-069 | 2026-07-19 | Revision 0.66 draft records owner-accepted DEC-033 and thirteen B-R operational hypotheses covering repeated formation, route-local persistence, conservative non-static export, local encounter, mediation, three Q-013 contrasts, controls, R05 variation, and bounded trail/stigmergic interpretation. | P2-I3 B-R operational-hypothesis boundary | Opens only bounded conformance input-freeze construction and review; no conformance, calibration, execution, control outcome, or scientific result |
+| CL-070 | 2026-07-19 | Revision 0.67 draft records owner-accepted DEC-034. The inactive freeze binds exact RCAE/graph sources, eighteen public calls, a result-neutral two-route fixture, eleven cells, narrow RCAE ownership, composite restoration/refusal, and declared-provenance quarantine; 85 zero-runtime checks pass. Stronger later structures remain allowed only under new identities and affected reruns. | P2-I3 B-R conformance-freeze acceptance | Clean source-anchor commit is next; no harness/runtime, discriminator gate, calibration, registration, control outcome, or scientific result yet |
+| CL-071 | 2026-07-19 | Revision 0.68 draft records clean source anchor `94bfe01` and corrects the post-commit P2-I3 lane/master handoff. Section 8.1.2 now exposes the active B-R program position in section 8.4; section 8.2 is explicitly contract-frozen but remains evidence-open pending the bounded conformance run. | P2-I3 B-R conformance activation and checklist visibility | Superseded by CL-072 after exact bounded conformance |
+| CL-072 | 2026-07-19 | Revision 0.69 draft records implementation anchor `ce9701c` and the sole retained B-R bounded-conformance attempt. Exact graph/runtime binding precedes model construction; 11/11 cells and 36/36 checks pass; all fifteen section 8.2 requirements close only at the operational boundary; both internal digests validate; and the 48,395-byte result reconstructs byte-exactly. Native LGRC9V3 retains state/packet/admission/restoration ownership while RCAE retains the explicit export policy, blind opportunity adapter, composite coordination, and control identities. | P2-I3 B-R I03 conformance owner-review boundary | Superseded by CL-073 after accepted review and corrected gate closeout |
+| CL-073 | 2026-07-19 | Revision 0.70 draft records DEC-035 and the accepted repository-local I03 review. The actual generated receipt/result omitted from the reviewer upload are independently verified; exact source/artifact/reconstruction identities and totals match. Ownership is corrected so RCAE owns lifecycle/request scheduling while PyGRC owns native ordering/admission/progression/refusal/settlement. The fifteen section 8.2 items close through typed runtime, addressability, design, nonclaim, restoration, and binding bases rather than one empirical proof. | P2-I3 B-R discriminator-gate passage | Passed without rerun; opens I04 preregistration only and prohibits all conformance values/topology/split/digests/margins downstream; no calibration execution or scientific result |
+| CL-074 | 2026-07-19 | Revision 0.71 draft records owner-accepted DEC-036. Q-009 now uses a typed native encounter response: `mu[e,j]=C_pre(m_e)-q_probe` is the primary scalar and native disposition is the mandatory validity companion. The exact post-scheduling/pre-departure boundary, next-event guard, structurally valid domain, invalid-null rule, unrounded runtime inputs, strict native sign agreement, matched-request comparability, raw-margin retention, and encounter index `j` are fixed. | P2-I3 B-R I04 primary-response decision | Resolves Q-009 only; no numeric value, comparator, calibration input/output, execution, or scientific result; Q-010 is next |
+| CL-075 | 2026-07-19 | Revision 0.72 draft records owner-accepted DEC-037. Q-010 separates observed native topology/state, registered RCAE role metadata, derived hop/path and geometric/functional projections, measured native event/internal time, annotated causal shortest paths, and intervention-estimated causal influence. Geometry/timescale interventions may be genuine factors, but projections and temporal coincidence cannot establish causal consequence. | P2-I3 B-R I04 five-surface policy | Resolves Q-010 only; no surface value, causal estimate, calibration input/output, execution, or scientific result; Q-011 is next |
+| CL-076 | 2026-07-19 | Revision 0.73 draft records owner-accepted DEC-038. Q-011 freezes exact W deposition-withdrawal, O lifecycle-neutralized, and E lifecycle-enabled arms; `N(E,W)` is the lane-primary trace relation and `N(O,E)` the mandatory B-R mediation relation. Raw deltas retain an additive audit identity while normalized margins remain non-additive, unclipped, and paired under exact forks, requests, checkpoints, schedules, encounters, missingness, and dispositions. | P2-I3 B-R I04 comparator/estimator decision | Resolves Q-011 only; no arm value, calibrated delta, calibration output, execution, or scientific result; Q-012 is next |
+| CL-077 | 2026-07-19 | Revision 0.74 draft records owner-accepted DEC-039. Q-012 uses one shared W/O/E arithmetic calibration: five equal-arm cases alone feed `delta`, while intentionally nonzero perturbation, denominator, crossing, reconstruction, and missingness cases are mandatory conformance panels excluded from it. The existing `1e-12` metric-sheet floor is authority rather than a quantity inferred from equality rows; the normalized delta remains a separate role. | P2-I3 B-R I04 candidate-blind calibration design | Resolves Q-012 only; no calibration invocation, generated delta, runtime/candidate input, execution, or scientific result; Q-016 and materialization remain |
+| CL-078 | 2026-07-19 | Revision 0.75 draft records owner-accepted DEC-040. B-R Q-016 now uses independently resolvable parent/leg controls, separate applicability/execution/evidence/control/terminal fields, typed control classes and evidence, factored producer/budget/dynamic controls, two false-trace strengths, stable scientific/validity/claim identities, completion-sensitive CTRL-19 rules, and an I09-I10-I11 reconstructed terminal overlay. | P2-I3 B-R I04 control/evidence governance | Superseded by CL-079 after machine materialization; the historical decision assigned no outcome, rung, tag, terminal class, calibration invocation, or scientific result, and C.2 remains unresolved |
+| CL-079 | 2026-07-19 | Revision 0.76 draft materializes accepted DEC-036 through DEC-040 as one review-ready P2-I3 B-R I04 machine package. A closed seven-definition schema, pure response/estimator path, complete policy, validator, preregistration identity, and retained validation cover five exact future null cases, eight non-delta conformance cases, 42 control legs, and 14 stable requirement IDs. Seventeen focused tests and 158 zero-calibration checks pass; retained validation reconstructs byte-exactly. | P2-I3 B-R I04 machine-materialization boundary | Superseded before gate passage by CL-080 after bounded review; no calibration or scientific effect was assigned |
+| CL-080 | 2026-07-19 | Revision 0.77 draft applies the bounded I04 review without reopening DEC-036 through DEC-040. Version `1.0.1` closes the schema root and conditional record states, binds target/outcome/ownership/fail-closed policy for all 42 legs, makes reconstruction non-destructive with explicit artifact-construction mode, and adds the deferred I05 exact arithmetic-construction requirement. | P2-I3 B-R corrected CAL-PRE review boundary | Corrected package is review-ready; 22 tests and 485 zero-calibration checks pass with byte-exact reconstruction; no calibration, `delta`, PyGRC model, candidate/control operation, or scientific result exists |
+| CL-081 | 2026-07-19 | Revision 0.78 draft records owner acceptance of corrected I04 package `1.0.1` and passes `P2-I3-CAL-PRE-GATE`. The accepted machine identities, 22 tests, 485 checks, exact arithmetic, control governance, and non-destructive reconstruction remain unchanged. | P2-I3 B-R I04 closure and I05 entry | Opens only construction and review of one separate inactive I05 invocation freeze; no calibration invocation, `delta`, I06, B-R/C.2 execution, rung, tag, terminal class, or scientific/ecology result is authorized |
+| CL-082 | 2026-07-19 | Revision 0.79 draft records owner-accepted DEC-041 and constructs the initial review-ready inactive I05 freeze. One fixed half-unit request maps every registered margin exactly into carrier range `[0,1]`; one permanent pre-builder claim, one attempt, zero retries, committed-source/`.venv` binding, three governed outputs, and readback-only reconstruction are frozen. | P2-I3 B-R initial I05 inactive-freeze review boundary | Superseded before acceptance by CL-083 after bounded review; zero calibration calls |
+| CL-083 | 2026-07-19 | Revision 0.80 draft applies the first bounded I05 review without reopening DEC-041. It explicitly enters five `m_trace` plus five `m_export` margins, recomputes case/arm/pair/rational/triplet/relation/`delta` semantics before writes and after readback, and closes activation, attempt-claim, and final-receipt contracts. | P2-I3 B-R first corrected I05 review boundary | Superseded before acceptance by CL-084 after final launch-safety audit; zero calibration calls |
+| CL-084 | 2026-07-19 | Revision 0.81 draft applies the owner-approved launch-safety correction as package `1.0.2` without reopening DEC-041. It derives normalized margins and `delta` directly from exact rational fields, freezes non-circular launch bindings over source/command/environment/paths, fsyncs claim file and parent, revalidates authority after claim, completes receipt counts, and injects failures at thirteen temporary transaction boundaries. | P2-I3 B-R final inactive-freeze review boundary | Review-ready; 50 tests and 42 zero-calibration checks pass byte-exactly; no launch record, claim, output, `delta`, CAL-GATE passage, I06, or scientific/ecology result exists |
+| CL-085 | 2026-07-19 | Revision 0.82 records final owner acceptance of I05 inactive freeze `1.0.2` without changing DEC-041 or any machine identity. | P2-I3 B-R I05 inactive-freeze retention authority | Exact retention commit is authorized; clean-commit validation/full source identity must follow before launch authorization, while calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed |
+| CL-086 | 2026-07-19 | Revision 0.83 records exact inactive-freeze retention commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, tree and parent identities, accepted source digests, 50 passing clean-commit tests, 42 passing zero-calibration checks, byte-exact reconstruction, clean source state, and absence of every governed launch/output path. | P2-I3 B-R I05 clean source-retention boundary | Retention identity is complete; construction and review of a separate launch authorization is next, while invocation, `delta`, CAL-GATE, I06, C.2, and scientific/ecology work remain closed |
+| CL-087 | 2026-07-19 | Revision 0.84 records the owner's direction to complete I05 through the final acceptance item and materializes one schema-valid launch authorization over the accepted freeze, exact source digests, `.venv`, deterministic environment, normalized command prefix, and five governed paths. | P2-I3 B-R I05 launch boundary | Commit and clean-HEAD preflight precede the irreversible one-shot claim; no invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction |
+| CL-088 | 2026-07-19 | Revision 0.85 records the successful sole candidate-blind I05 attempt at launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`: permanent pre-builder claim, one builder call, zero retries, five cases, 15 responses, five triplets, ten exact zero margins, shared `delta=1e-12`, successful final receipt, actual second-start refusal, and 49/49 byte-exact read-only reconstruction checks. | P2-I3 B-R I05 pre-acceptance result boundary | Numeric-resolution evidence only; owner acceptance and CAL-GATE remain pending, while I06, candidate/control execution, C.2, and every scientific/ecology result remain closed |
+| CL-089 | 2026-07-19 | Revision 0.86 records final owner acceptance of I05 and passes `P2-I3-CAL-GATE`. The acceptance record binds launch HEAD, activation, permanent claim, successful receipt, three governed outputs, 49-check result validation, shared `delta=1e-12`, and the narrow numeric-only interpretation ceiling. | P2-I3 B-R I05 exit and I06 entry | I05 complete; opens I06 exact implementation registration only, while candidate/control execution, C.2, R01-R05, tags, and every scientific/ecology/native claim remain closed |
 
 ## 17. Current next actions
 
@@ -2434,7 +2589,7 @@ The next unchecked actions in dependency order are:
 23. [x] Synchronize root, experiment, AE01-view, implementation, changelog,
     release-note, and master-lane status so the repository visibly distinguishes
     passed P2-I3 source gates and the N31 handoff from an executed L03 result.
-24. [ ] Complete graph-project N31 under an explicitly separate graph-repository
+24. [x] Complete graph-project N31 under an explicitly separate graph-repository
     scope and return its reconstructable closeout bundle. P2-I3 remains paused;
     this RCAE repository records the dependency but does not authorize graph
     changes from within the RCAE project.
@@ -2445,3 +2600,71 @@ The next unchecked actions in dependency order are:
     barrier. Apply the grounded pre-freeze representation, producer,
     redistribution/leakage, recomputation/reconstruction, and provenance
     clarifications without reopening P2-I3 gates.
+26. [x] Review the bounded P2-I3 N31 return admission. Accepted DEC-025 passes
+    only `P2-I3-N31-RETURN-GATE`, after which Q-005 must select
+    B-R, C.2, a separately controlled composition, another justified route,
+    or non-selection and explicitly retain/reopen DEC-021/022.
+27. [x] Resolve P2-I3 Q-005 through DEC-026 as a staged B-R-first,
+    C.2-second program with no provider selected as the lane result.
+28. [x] Bind the B-R branch's exact DEC-021/022 projection and resolve Q-006
+    through DEC-028 while projecting accepted DEC-027 into the serialized
+    complete-state contract. Preserve the corrected floor bound, receipt-state
+    distinctions, conservative accounting, and no-result boundary.
+29. [x] Resolve B-R Q-007 through DEC-029 as paired branch-local fixed native
+    departure admission with a blind structural adapter, typed atomic refusal,
+    matched continuation roles, and graded interpretation. Preserve the
+    no-primary-metric, no-result, and no-execution boundary.
+30. [x] Freeze the common ecology-result and producer-cost envelope and resolve
+    the B-R I03 portions of Q-013/Q-015 under DEC-030 through DEC-032.
+31. [x] Project and accept B-R operational hypotheses under DEC-033 without
+    assigning a metric, numeric direction, control outcome, or result.
+32. [x] Construct, review, and accept the bounded B-R runtime-conformance input
+    freeze under DEC-034, preserving stronger future structures through new
+    identities rather than retrospective tuning.
+33. [x] Commit the accepted freeze as clean source anchor `94bfe01` and record
+    that section 8.2 remains contract-frozen but evidence-open.
+34. [x] Construct the exact runtime module/harness and complete the single
+    quarantined bounded-conformance run, resolving every section 8.2
+    requirement before calibration or candidate work.
+35. [x] Review the retained P2-I3 B-R I03 conformance package, apply DEC-035's
+    two non-runtime ownership/ledger corrections, and pass only
+    `P2-I3-DISCRIMINATOR-GATE` without rerun. This opens I04 calibration
+    preregistration, not calibration or candidate work.
+36. [x] Begin I04 candidate-blind calibration preregistration and resolve Q-009
+    under DEC-036 without consuming any conformance fixture value, topology,
+    observed split, digest, or derived margin.
+37. [x] Resolve Q-010 by assigning each distance/observation surface an exact
+    measured, derived, annotation-only, not-applicable, or unavailable role and
+    policy without selecting numeric registration values.
+38. [x] Resolve Q-011 by freezing the causal estimand, matched comparator,
+    estimator, aggregation, missingness, and resolution relation without
+    consuming conformance or candidate outcomes.
+39. [x] Resolve Q-012 by freezing the candidate-blind matched-null generator,
+    input provenance, seed strata, and shared-versus-separate trace/export
+    resolution authority without candidate-shaped inputs.
+40. [x] Resolve the B-R instance of Q-016 by mapping every common and L03
+    control leg to exact
+    applicability, evidence type, owning iteration, and fail-closed resolution
+    without pre-assigning any outcome; retain C.2 as independently unresolved.
+41. [x] Materialize DEC-036 through DEC-040 as the complete candidate-blind
+    I04 machine contract, validators, reconstruction, and review package
+    without invoking calibration or consuming conformance/candidate values.
+42. [x] Review and accept the corrected `1.0.1` I04 machine package and pass
+    only `P2-I3-CAL-PRE-GATE`; no calibration invocation occurs at acceptance.
+43. [x] Construct one separately frozen inactive I05 calibration invocation
+    under DEC-041 without running calibration during construction.
+44. [x] Review and accept inactive I05 freeze `1.0.2`; authorize only its exact
+    retention commit without creating launch authorization or consuming the
+    attempt.
+45. [x] Revalidate from the exact clean retention commit and retain its full
+    40-character source identity without creating launch authority or outputs.
+46. [x] After the committed and revalidated freeze exists, create and review a separate launch
+    authorization before the sole governed calibration invocation.
+47. [x] Invoke the one-shot candidate-blind calibration from its exact clean
+    launch commit, retain and reconstruct all outputs, and stop before owner
+    acceptance and `P2-I3-CAL-GATE` passage.
+48. [x] Review and accept the complete I05 calibration package and pass
+    `P2-I3-CAL-GATE` before opening I06 exact registration.
+49. [ ] Begin I06 exact implementation registration by resolving Q-014 through
+    Q-018 and binding every topology, value, schedule, control, resource, and
+    reconstruction identity before any candidate execution.

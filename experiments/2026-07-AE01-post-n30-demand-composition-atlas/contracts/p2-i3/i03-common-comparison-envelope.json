@@ -1,0 +1,314 @@
+{
+  "artifact_id": "P2-I3-I03-COMMON-COMPARISON-ENVELOPE",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L03",
+  "iteration_id": "P2-I3-I03",
+  "status": "accepted",
+  "accepted_at": "2026-07-19",
+  "evidence_effect": "prospective branch-comparison and producer-cost semantics only; no realization acceptance, calibration value, candidate execution, branch result, provider selection, or lane result",
+  "authority": {
+    "parent_hypothesis_id": "AE01-H-L03",
+    "staged_program_decision_id": "P2-I3-DEC-026",
+    "proposal_decision_id": "P2-I3-DEC-030",
+    "branch_order": [
+      "P2-I3-BR",
+      "P2-I3-C2",
+      "P2-I3-COMPARE"
+    ],
+    "branch_order_is_ranking": false,
+    "graph_repository_read_only": true
+  },
+  "comparison_boundary": {
+    "comparison_kind": "sequential_developmental_mechanism_comparison",
+    "common_semantics_do_not_imply_shared_realization": true,
+    "shared_topology_carrier_equation_or_runtime_adapter_presumed": false,
+    "shared_calibration_registration_execution_or_result_identity_presumed": false,
+    "raw_effect_magnitudes_cross_branch_comparable_by_default": false,
+    "cross_branch_numeric_comparison_requires_later_semantic_equivalence_proof": true,
+    "scientific_adequacy_and_producer_burden_are_orthogonal": true,
+    "scalar_cost_total_or_automatic_winner_allowed": false,
+    "thresholds_are_interpretive_reference_bands_not_universal_accept_reject_gates": true
+  },
+  "required_branch_inputs": [
+    "terminal_branch_disposition",
+    "execution_and_reconstruction_status",
+    "retained_scientific_evidence_refs",
+    "branch_local_metric_and_resolution_refs",
+    "control_resolution_refs",
+    "boundary_rung_statuses_R01_through_R05",
+    "stability_perturbation_and_variation_profile",
+    "state_history_discriminator_status",
+    "failure_missing_surface_and_redirect_classifications",
+    "developmental_interpretation_ref",
+    "claim_ceiling_and_blocked_claims",
+    "producer_cost_record_ref",
+    "naturalization_debt_refs",
+    "reproduction_and_reconstruction_refs"
+  ],
+  "common_scientific_axes": [
+    {
+      "axis_id": "P2-I3-CMP-SCI-01",
+      "name": "repeated_costly_attributable_formation",
+      "question": "Did at least two attributable costly formation events create the registered route-local aftereffect?",
+      "required_evidence": [
+        "event_level_lineage",
+        "nonzero_declared_cost_or_budget_effect",
+        "producer_omission_or_formation_withdrawal_control"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-02",
+      "name": "non_static_dynamic",
+      "question": "Did a registered dynamic beyond static persistence change after formation, and was that dynamic independently addressable?",
+      "required_evidence": [
+        "registered_dynamic_identity",
+        "at_least_two_distinguishable_lifecycle_opportunities",
+        "dynamic_intervention_or_valid_missing_surface_disposition"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-03",
+      "name": "local_later_encounter",
+      "question": "Did a later route-local opportunity encounter the aftereffect without a hidden router, label reader, global comparison, or outcome-writing producer?",
+      "required_evidence": [
+        "local_encounter_identity",
+        "fixed_route_or_hidden_router_exclusion",
+        "participant_and_route_label_noncausality"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-04",
+      "name": "dynamic_to_traversal_causality",
+      "question": "Did intervention on the dynamic or its registered mediator change later traversal or continuation under held-fixed controls?",
+      "required_evidence": [
+        "dynamic_or_mediator_intervention",
+        "later_response_relation",
+        "quantity_matched_and_mechanism_specific_controls"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-05",
+      "name": "specificity_and_false_trace",
+      "question": "Did withdrawal, shuffle or relocation, false-trace, and no-field relations distinguish the claimed field from generic route, amount, or fixture effects?",
+      "required_evidence": [
+        "deposition_or_formation_withdrawal",
+        "carrier_shuffle_or_relocation",
+        "false_trace",
+        "no_field_or_static_reference"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-06",
+      "name": "state_history_mode",
+      "question": "Was the branch carried by complete current state, active history, or an unresolved distinction under a complete-state-matched discriminator?",
+      "required_evidence": [
+        "complete_continuation_state_identity",
+        "different_history_same_state_contrast",
+        "restored_equal_input_continuation"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-07",
+      "name": "stability_perturbation_and_variation",
+      "question": "How stable, perturbation-sensitive, narrow, transferable, or regime-limited was the relation?",
+      "required_evidence": [
+        "per_seed_or_per_registered_attempt_relations",
+        "perturbation_and_control_dispositions",
+        "R05_geometry_or_timescale_variation_or_bounded_missing_surface"
+      ]
+    },
+    {
+      "axis_id": "P2-I3-CMP-SCI-08",
+      "name": "claim_and_developmental_value",
+      "question": "What is the highest valid R01-R05 rung, strongest bounded claim, developmental value, and honest next move?",
+      "required_evidence": [
+        "all_boundary_rung_statuses",
+        "developmental_interpretation",
+        "blocked_stronger_claims",
+        "next_move_and_falsifier"
+      ]
+    }
+  ],
+  "common_status_vocabularies": {
+    "execution_status": [
+      "completed",
+      "blocked",
+      "incomplete"
+    ],
+    "branch_classification": [
+      "supported_bounded_candidate",
+      "partial_or_mixed",
+      "not_supported",
+      "blocked_missing_prerequisite",
+      "incomplete_execution"
+    ],
+    "scientific_relation": [
+      "robust_aligned",
+      "narrow_aligned",
+      "resolution_limited",
+      "mixed_direction",
+      "narrow_counter",
+      "robust_counter",
+      "resolution_unknown",
+      "not_applicable"
+    ],
+    "axis_disposition": [
+      "supported",
+      "partially_supported",
+      "not_supported",
+      "mixed_or_unresolved",
+      "blocked_missing_surface",
+      "invalid_or_not_evaluable",
+      "not_applicable_with_rationale"
+    ],
+    "state_history": [
+      "current_state_sufficient",
+      "active_history_required",
+      "mixed_or_unresolved",
+      "match_not_constructible",
+      "invalid_incomplete_state_match"
+    ],
+    "claim_value": [
+      "T0_observation_tag",
+      "T1_reusable_class",
+      "T2_generative_class",
+      "T3_operational_class",
+      "T4_theoretical_class"
+    ]
+  },
+  "producer_cost_ledger": {
+    "cost_classes": [
+      "contract_required",
+      "rcae_ecology_required",
+      "evidence_only"
+    ],
+    "classification_precedence": [
+      "contract_required when the admitted provider contract requires the item, even if ecology also reuses it",
+      "rcae_ecology_required only for additional causal work required by the L03 composition",
+      "evidence_only only when the item observes, controls, reconstructs, or audits without producing the mechanism"
+    ],
+    "required_dimensions": [
+      {
+        "dimension_id": "P2-I3-CMP-COST-01",
+        "name": "causal_operations",
+        "required_facts": [
+          "operation_identity",
+          "owner",
+          "causal_chain_position",
+          "invocation_count_by_registered_branch"
+        ]
+      },
+      {
+        "dimension_id": "P2-I3-CMP-COST-02",
+        "name": "causal_state_and_topology",
+        "required_facts": [
+          "producer_owned_state_fields",
+          "added_roles_edges_or_surfaces",
+          "schedule_or_lifecycle_state",
+          "serialized_continuation_coverage"
+        ]
+      },
+      {
+        "dimension_id": "P2-I3-CMP-COST-03",
+        "name": "control_and_failure_surface",
+        "required_facts": [
+          "producer_specific_controls",
+          "producer_specific_failure_classes",
+          "omission_or_neutralization_result",
+          "atomicity_and_refusal_guards"
+        ]
+      },
+      {
+        "dimension_id": "P2-I3-CMP-COST-04",
+        "name": "restoration_replay_and_reconstruction",
+        "required_facts": [
+          "restoration_components",
+          "cross_load_and_stale_state_guards",
+          "replay_obligations",
+          "reconstruction_artifacts"
+        ]
+      },
+      {
+        "dimension_id": "P2-I3-CMP-COST-05",
+        "name": "descriptive_implementation_and_resource_footprint",
+        "required_facts": [
+          "normalized_source_or_configuration_surface",
+          "retained_state_and_artifact_footprint",
+          "supplementary_runtime_memory_disk_and_process_measurements",
+          "measurement_scope_and_noncomparability_notes"
+        ]
+      },
+      {
+        "dimension_id": "P2-I3-CMP-COST-06",
+        "name": "naturalization_debt",
+        "required_facts": [
+          "missing_native_surface",
+          "producer_residue_removed_by_surface",
+          "explicit_transition_and_rerun_requirement",
+          "graph_side_demand_candidate"
+        ]
+      }
+    ],
+    "normalization_rules": [
+      "counts are retained per branch and cost class, not summed across dimensions",
+      "source lines, bytes, wall time, memory, disk, and process counts are descriptive metadata only",
+      "evidence_only rigor is never counted as causal mechanism residue",
+      "contract_required and rcae_ecology_required residue remain separate",
+      "missing native coverage is debt, not automatic scientific failure",
+      "producer omission dependence is scientific evidence and is not reduced to implementation size"
+    ]
+  },
+  "sequential_development_register": {
+    "required_before_c2_calibration": true,
+    "required_fields": [
+      "input_id",
+      "source_br_branch_artifact_or_observation",
+      "adopted_rejected_or_not_applicable",
+      "prospective_c2_design_effect",
+      "reason",
+      "frozen_before_c2_calibration",
+      "comparability_or_independence_effect"
+    ],
+    "forbidden_uses": [
+      "retuning_C2_to_outperform_BR",
+      "importing_BR_candidate_values_as_C2_calibration",
+      "claiming_blind_symmetric_provider_comparison",
+      "silently_reusing_BR_topology_carrier_equation_adapter_or_threshold"
+    ]
+  },
+  "final_comparison": {
+    "decision_point": "P2-I3-Q-021",
+    "eligible_dispositions": [
+      "retain_B_R",
+      "retain_C2",
+      "retain_both_as_alternatives",
+      "propose_separately_governed_composition",
+      "retain_another_justified_route",
+      "select_none"
+    ],
+    "automatic_selection_allowed": false,
+    "required_reasoning": [
+      "scientific adequacy by common axis",
+      "branch-specific mechanism meaning",
+      "producer burden by unsummed vector dimension",
+      "naturalization path",
+      "failure and missing-surface information",
+      "developmental value and next-move falsifier"
+    ]
+  },
+  "deferred": {
+    "q013_contrast_identities": "P2-I3-I03 design decision",
+    "q015_restoration_design": "P2-I3-I03 design decision finalized at I06",
+    "branch_specific_primary_metrics_and_comparators": "P2-I3-I04",
+    "numeric_values_topology_seeds_and_schedules": "P2-I3-I06",
+    "branch_results_and_provider_retention": "P2-I3-I08 through P2-I3-COMPARE"
+  },
+  "reopening_conditions": [
+    "a common axis systematically privileges one provider ontology rather than the L03 causal question",
+    "a required branch fact cannot be represented without collapsing distinct mechanism semantics",
+    "cross_branch numeric comparison becomes necessary and semantic equivalence can be prospectively demonstrated",
+    "producer cost classes mix causal residue with evidence-only rigor",
+    "C2 design cannot record B_R-derived inputs prospectively before calibration",
+    "new graph evidence changes a provider contract or naturalization boundary"
+  ]
+}

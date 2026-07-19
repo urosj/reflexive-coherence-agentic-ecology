@@ -1,0 +1,1517 @@
+{
+  "artifact_id": "P2-I3-I03-BR-RUNTIME-CONFORMANCE",
+  "artifact_kind": "p2_i3_i03_br_conformance_runtime_result",
+  "artifact_schema_version": "1.0.0",
+  "blocked_public_calls_used": [],
+  "branch_id": "P2-I3-BR",
+  "canonical_payload_digest": "4696e9d6c054c22f9770e9790eb991a255c7454cbcc465ed207aa0ab673fddee",
+  "cells": [
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-01",
+      "check_ids": [
+        "required_public_symbols_callable",
+        "executing_substrate_exact",
+        "all_required_public_calls_exercised",
+        "blocked_public_calls_unused"
+      ],
+      "name": "runtime_and_operation_binding",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-02",
+      "check_ids": [
+        "formation_event_count_per_route",
+        "formation_debit_credit_exact",
+        "formation_queue_empty_at_persistent_checkpoint",
+        "formed_carriers_role_matched"
+      ],
+      "name": "repeated_native_formation_and_persistence",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "check_ids": [
+        "eligible_positive_policy_transition",
+        "export_debit_packet_credit_exact",
+        "export_global_budget_closes",
+        "export_floor_preserved",
+        "export_queue_settled"
+      ],
+      "name": "positive_export_and_conservative_settlement",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-04",
+      "check_ids": [
+        "pending_export_blocks_second_receipt_atomically",
+        "eligible_zero_advances_policy_only",
+        "duplicate_receipt_atomic",
+        "invalid_receipt_atomic"
+      ],
+      "name": "eligible_zero_invalid_and_duplicate_lifecycle",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-05",
+      "check_ids": [
+        "encounter_requests_role_matched",
+        "formed_branch_native_admission",
+        "post_export_native_refusal_exact",
+        "native_refusal_atomic_at_scheduled_boundary"
+      ],
+      "name": "fixed_local_native_encounter",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-06",
+      "check_ids": [
+        "q013_constructor_identities_distinct",
+        "history_constructor_exact_distinct_causal_equal"
+      ],
+      "name": "q013_contrast_addressability",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "check_ids": [
+        "formed_original_load_exact_identity",
+        "atomic_refusal_replay_exact",
+        "forks_share_parent_and_have_distinct_identity",
+        "equal_input_continuation_exact",
+        "paired_native_rcae_reset_returns_construction_baseline"
+      ],
+      "name": "composite_save_load_reset_fork_and_replay",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-08",
+      "check_ids": [
+        "all_partial_stale_cross_bound_loads_fail_before_native_load"
+      ],
+      "name": "partial_stale_and_cross_bound_load_refusal",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-09",
+      "check_ids": [
+        "control_interfaces_distinct",
+        "relocation_payload_excludes_semantic_labels",
+        "distance_interfaces_callable_and_distinct"
+      ],
+      "name": "control_and_variation_interface_addressability",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-10",
+      "check_ids": [
+        "export_policy_input_surface_narrow",
+        "encounter_adapter_input_surface_field_blind",
+        "paired_encounters_used_independent_loaded_models"
+      ],
+      "name": "forbidden_read_and_hidden_router_exclusion",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-11",
+      "check_ids": [
+        "all_downstream_consumer_classes_reject_declared_conformance"
+      ],
+      "name": "mechanical_fixture_quarantine",
+      "scientific_evidence_effect": "none",
+      "status": "passed_implementation_conformance"
+    }
+  ],
+  "check_count": 36,
+  "checks": [
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-01",
+      "check_id": "required_public_symbols_callable",
+      "expected": 18,
+      "observed": 18,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-01",
+      "check_id": "executing_substrate_exact",
+      "expected": "lgrc2",
+      "observed": "lgrc2",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-02",
+      "check_id": "formation_event_count_per_route",
+      "expected": {
+        "route_a": 2,
+        "route_b": 2
+      },
+      "observed": {
+        "route_a": 2,
+        "route_b": 2
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-02",
+      "check_id": "formation_debit_credit_exact",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-02",
+      "check_id": "formation_queue_empty_at_persistent_checkpoint",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-02",
+      "check_id": "formed_carriers_role_matched",
+      "expected": {
+        "carrier_a": 0.5,
+        "carrier_b": 0.5
+      },
+      "observed": {
+        "carrier_a": 0.5,
+        "carrier_b": 0.5
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "check_id": "formed_original_load_exact_identity",
+      "expected": "05a1bad34b898ebb6dc26983242d07e1043ec5c7920d7bda3f76efd48d7ac5a7",
+      "observed": "05a1bad34b898ebb6dc26983242d07e1043ec5c7920d7bda3f76efd48d7ac5a7",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "check_id": "eligible_positive_policy_transition",
+      "expected": "eligible_positive",
+      "observed": "eligible_positive",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-04",
+      "check_id": "pending_export_blocks_second_receipt_atomically",
+      "expected": "prior_export_not_settled",
+      "observed": "prior_export_not_settled",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "check_id": "export_debit_packet_credit_exact",
+      "expected": 0.09999999999999998,
+      "observed": {
+        "credit": 0.09999999999999998,
+        "debit": 0.09999999999999998,
+        "packet": 0.09999999999999998
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "check_id": "export_global_budget_closes",
+      "expected": "constant conserved budget and zero error",
+      "observed": [
+        {
+          "budget_error": 0.0,
+          "conserved_budget_total": 2.2,
+          "in_flight_packet_total": 0.0,
+          "node_coherence_total": 2.2
+        },
+        {
+          "budget_error": 0.0,
+          "conserved_budget_total": 2.2,
+          "in_flight_packet_total": 0.0,
+          "node_coherence_total": 2.2
+        },
+        {
+          "budget_error": 0.0,
+          "conserved_budget_total": 2.2,
+          "in_flight_packet_total": 0.09999999999999998,
+          "node_coherence_total": 2.1
+        },
+        {
+          "budget_error": 0.0,
+          "conserved_budget_total": 2.2,
+          "in_flight_packet_total": 0.0,
+          "node_coherence_total": 2.2
+        }
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "check_id": "export_floor_preserved",
+      "expected": 0.4,
+      "observed": 0.4,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "check_id": "export_queue_settled",
+      "expected": 0,
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-04",
+      "check_id": "eligible_zero_advances_policy_only",
+      "expected": "eligible_zero with native identity unchanged",
+      "observed": "eligible_zero",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-04",
+      "check_id": "duplicate_receipt_atomic",
+      "expected": "duplicate_consumed",
+      "observed": "duplicate_consumed",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-04",
+      "check_id": "invalid_receipt_atomic",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-05",
+      "check_id": "encounter_requests_role_matched",
+      "expected": {
+        "amount": 0.45,
+        "arrival_event_time_key": 13.0,
+        "departure_event_time_key": 12.0,
+        "packet_index": 6,
+        "scheduler_event_index": 12,
+        "source_lineage_id": "p2_i3_i03_probe",
+        "target_lineage_id": "p2_i3_i03_continuation"
+      },
+      "observed": {
+        "amount": 0.45,
+        "arrival_event_time_key": 13.0,
+        "departure_event_time_key": 12.0,
+        "packet_index": 6,
+        "scheduler_event_index": 12,
+        "source_lineage_id": "p2_i3_i03_probe",
+        "target_lineage_id": "p2_i3_i03_continuation"
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-05",
+      "check_id": "formed_branch_native_admission",
+      "expected": 0.45,
+      "observed": 0.45,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-05",
+      "check_id": "post_export_native_refusal_exact",
+      "expected": "source coherence is smaller than packet amount",
+      "observed": "source coherence is smaller than packet amount",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-05",
+      "check_id": "native_refusal_atomic_at_scheduled_boundary",
+      "expected": "ef4a2ba10dbd196a0c1bea547fbb4ec26665cf6e4c95279ba07e4e242669b99d",
+      "observed": "ef4a2ba10dbd196a0c1bea547fbb4ec26665cf6e4c95279ba07e4e242669b99d",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "check_id": "atomic_refusal_replay_exact",
+      "expected": {
+        "after": "ef4a2ba10dbd196a0c1bea547fbb4ec26665cf6e4c95279ba07e4e242669b99d",
+        "before": "ef4a2ba10dbd196a0c1bea547fbb4ec26665cf6e4c95279ba07e4e242669b99d",
+        "reason": "source coherence is smaller than packet amount"
+      },
+      "observed": {
+        "after": "ef4a2ba10dbd196a0c1bea547fbb4ec26665cf6e4c95279ba07e4e242669b99d",
+        "before": "ef4a2ba10dbd196a0c1bea547fbb4ec26665cf6e4c95279ba07e4e242669b99d",
+        "reason": "source coherence is smaller than packet amount"
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-06",
+      "check_id": "q013_constructor_identities_distinct",
+      "expected": "three exact contrast IDs",
+      "observed": [
+        "P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001",
+        "P2-I3-BR-Q13-EXPORT-MASS-MATCH-001",
+        "P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001"
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-06",
+      "check_id": "history_constructor_exact_distinct_causal_equal",
+      "expected": {
+        "causal_equal": true,
+        "exact_equal": false
+      },
+      "observed": {
+        "causal_equal": true,
+        "exact_equal": false
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "check_id": "forks_share_parent_and_have_distinct_identity",
+      "expected": {
+        "branch_distinct": true,
+        "parent_equal": true
+      },
+      "observed": {
+        "branch_distinct": true,
+        "parent_equal": true
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "check_id": "equal_input_continuation_exact",
+      "expected": {
+        "native_equal": true,
+        "receipts_equal": true
+      },
+      "observed": {
+        "native_equal": true,
+        "receipts_equal": true
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "check_id": "paired_native_rcae_reset_returns_construction_baseline",
+      "expected": "425db23aaf2e553963c4854f07db72183eef17d5f6503be58f0e218804e69d5b",
+      "observed": "425db23aaf2e553963c4854f07db72183eef17d5f6503be58f0e218804e69d5b",
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-08",
+      "check_id": "all_partial_stale_cross_bound_loads_fail_before_native_load",
+      "expected": "all refused before native loader",
+      "observed": [
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "missing_component"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "digest_tamper"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_route_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_policy_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_opportunity_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_branch_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_reset_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "native_only"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "policy_only"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-09",
+      "check_id": "control_interfaces_distinct",
+      "expected": "nine distinct controls",
+      "observed": [
+        "P2-I3-BR-CTRL-CURRENT-STATE-RELOCATION-001",
+        "P2-I3-BR-CTRL-ROLE-RAW-ID-PERMUTATION-001",
+        "P2-I3-BR-CTRL-SOURCE-CLAMP-001",
+        "P2-I3-BR-CTRL-RESERVOIR-CLAMP-001",
+        "P2-I3-BR-CTRL-PRODUCER-OMISSION-001",
+        "P2-I3-BR-CTRL-FALSE-INSTALLATION-001",
+        "P2-I3-BR-CTRL-MATCHED-MASS-001",
+        "P2-I3-BR-CTRL-NO-FIELD-001",
+        "P2-I3-BR-CTRL-WITHDRAWAL-SHUFFLE-001"
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-09",
+      "check_id": "relocation_payload_excludes_semantic_labels",
+      "expected": "numeric bindings plus carrier state only",
+      "observed": {
+        "control_id": "P2-I3-BR-CTRL-CURRENT-STATE-RELOCATION-001",
+        "excluded_payload_fields": [
+          "route_label",
+          "participant",
+          "preference"
+        ],
+        "operation": "relocate_registered_carrier_state",
+        "payload": {
+          "carrier_coherence": 0.5,
+          "source_binding": 1,
+          "target_binding": 6
+        }
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-09",
+      "check_id": "distance_interfaces_callable_and_distinct",
+      "expected": {
+        "causal": 5,
+        "functional": 5,
+        "geometric": 5
+      },
+      "observed": {
+        "causal": 5,
+        "functional": 5,
+        "geometric": 5
+      },
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-10",
+      "check_id": "export_policy_input_surface_narrow",
+      "expected": [
+        "carrier_coherence",
+        "receipt",
+        "predecessor_composite_identity",
+        "policy_state"
+      ],
+      "observed": [
+        "carrier_coherence",
+        "receipt",
+        "predecessor_composite_identity",
+        "policy_state"
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-10",
+      "check_id": "encounter_adapter_input_surface_field_blind",
+      "expected": [
+        "opportunity",
+        "parent_composite_identity"
+      ],
+      "observed": [
+        "opportunity",
+        "parent_composite_identity"
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-10",
+      "check_id": "paired_encounters_used_independent_loaded_models",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-11",
+      "check_id": "all_downstream_consumer_classes_reject_declared_conformance",
+      "expected": "all eight rejected",
+      "observed": [
+        {
+          "consumer_class": "calibration_input",
+          "rejected": true
+        },
+        {
+          "consumer_class": "calibration_output",
+          "rejected": true
+        },
+        {
+          "consumer_class": "candidate_input",
+          "rejected": true
+        },
+        {
+          "consumer_class": "candidate_output",
+          "rejected": true
+        },
+        {
+          "consumer_class": "control_outcome",
+          "rejected": true
+        },
+        {
+          "consumer_class": "registration_value",
+          "rejected": true
+        },
+        {
+          "consumer_class": "scientific_result",
+          "rejected": true
+        },
+        {
+          "consumer_class": "terminal_classification",
+          "rejected": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-01",
+      "check_id": "all_required_public_calls_exercised",
+      "expected": [
+        "pygrc.core.PortGraphBackend",
+        "pygrc.models.GRC9V3NodeState",
+        "pygrc.models.GRC9V3State",
+        "pygrc.models.PortEdge",
+        "pygrc.models.LGRC9V3.from_state",
+        "pygrc.models.LGRC9V3.get_state",
+        "pygrc.models.LGRC9V3.schedule_packet_departure",
+        "pygrc.models.LGRC9V3.step",
+        "pygrc.models.LGRC9V3.run_event_queue",
+        "pygrc.models.LGRC9V3.snapshot",
+        "pygrc.models.LGRC9V3.save",
+        "pygrc.models.LGRC9V3.load",
+        "pygrc.models.LGRC9V3.reset",
+        "pygrc.models.lgrc9v3_restoration_identity_v2",
+        "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+        "pygrc.models.compute_lgrc9v3_geometric_distances",
+        "pygrc.models.compute_lgrc9v3_functional_distances",
+        "pygrc.models.compute_lgrc9v3_causal_distances"
+      ],
+      "observed": [
+        "pygrc.core.PortGraphBackend",
+        "pygrc.models.GRC9V3NodeState",
+        "pygrc.models.GRC9V3State",
+        "pygrc.models.LGRC9V3.from_state",
+        "pygrc.models.LGRC9V3.get_state",
+        "pygrc.models.LGRC9V3.load",
+        "pygrc.models.LGRC9V3.reset",
+        "pygrc.models.LGRC9V3.run_event_queue",
+        "pygrc.models.LGRC9V3.save",
+        "pygrc.models.LGRC9V3.schedule_packet_departure",
+        "pygrc.models.LGRC9V3.snapshot",
+        "pygrc.models.LGRC9V3.step",
+        "pygrc.models.PortEdge",
+        "pygrc.models.compute_lgrc9v3_causal_distances",
+        "pygrc.models.compute_lgrc9v3_functional_distances",
+        "pygrc.models.compute_lgrc9v3_geometric_distances",
+        "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+        "pygrc.models.lgrc9v3_restoration_identity_v2"
+      ],
+      "passed": true
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-01",
+      "check_id": "blocked_public_calls_unused",
+      "expected": [],
+      "observed": [],
+      "passed": true
+    }
+  ],
+  "claim_boundaries": {
+    "AE01_H_L03_refuted": false,
+    "AE01_H_L03_supported": false,
+    "B_R_selected_over_C2": false,
+    "control_outcomes_assigned": false,
+    "discriminator_gate_passed": false,
+    "native_trail_primitive": false,
+    "operational_expressibility": true
+  },
+  "classification": "interfaces_operationally_expressible_at_exact_sources",
+  "evidence_effect": "implementation_conformance_only",
+  "execution_boundaries": {
+    "attempt_index": 1,
+    "calibration_execution": false,
+    "candidate_execution": false,
+    "external_repository_writes": false,
+    "network_used": false,
+    "parallelism": 1,
+    "retry_count": 0,
+    "scientific_control_execution": false,
+    "scientific_interpretation": false
+  },
+  "freeze": {
+    "artifact_id": "P2-I3-I03-BR-BOUNDED-CONFORMANCE-INPUT-FREEZE",
+    "decision_id": "P2-I3-DEC-034",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json",
+    "sha256": "0a255d21605c2a1cbf00a3467562fc08dd73a32505d4d435b6eb6f140f16a243"
+  },
+  "iteration_id": "P2-I3-I03",
+  "observations": {
+    "budgets": {
+      "formed": {
+        "budget_error": 0.0,
+        "conserved_budget_total": 2.2,
+        "in_flight_packet_total": 0.0,
+        "node_coherence_total": 2.2
+      },
+      "in_flight_export": {
+        "budget_error": 0.0,
+        "conserved_budget_total": 2.2,
+        "in_flight_packet_total": 0.09999999999999998,
+        "node_coherence_total": 2.1
+      },
+      "initial": {
+        "budget_error": 0.0,
+        "conserved_budget_total": 2.2,
+        "in_flight_packet_total": 0.0,
+        "node_coherence_total": 2.2
+      },
+      "post_export": {
+        "budget_error": 0.0,
+        "conserved_budget_total": 2.2,
+        "in_flight_packet_total": 0.0,
+        "node_coherence_total": 2.2
+      },
+      "pre_export": {
+        "budget_error": 0.0,
+        "conserved_budget_total": 2.2,
+        "in_flight_packet_total": 0.0,
+        "node_coherence_total": 2.2
+      },
+      "scheduled_export": {
+        "budget_error": 0.0,
+        "conserved_budget_total": 2.2,
+        "in_flight_packet_total": 0.0,
+        "node_coherence_total": 2.2
+      }
+    },
+    "control_interfaces": [
+      {
+        "control_id": "P2-I3-BR-CTRL-CURRENT-STATE-RELOCATION-001",
+        "excluded_payload_fields": [
+          "route_label",
+          "participant",
+          "preference"
+        ],
+        "operation": "relocate_registered_carrier_state",
+        "payload": {
+          "carrier_coherence": 0.5,
+          "source_binding": 1,
+          "target_binding": 6
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-ROLE-RAW-ID-PERMUTATION-001",
+        "operation": "role_preserving_raw_id_permutation",
+        "payload": {
+          "node_permutation": {
+            "0": 5,
+            "1": 6,
+            "5": 0,
+            "6": 1
+          }
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-SOURCE-CLAMP-001",
+        "operation": "source_coherence_clamp_request",
+        "payload": {
+          "binding": 1
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-RESERVOIR-CLAMP-001",
+        "operation": "reservoir_coherence_clamp_request",
+        "payload": {
+          "binding": 2
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-PRODUCER-OMISSION-001",
+        "operation": "omit_export_policy",
+        "payload": {
+          "expected_native_request_count": 0
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-FALSE-INSTALLATION-001",
+        "operation": "false_installation_request",
+        "payload": {
+          "depositor_history_required": false,
+          "exact_native_operation_deferred_to": "P2-I3-I06",
+          "outcome_writing_allowed": false
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-MATCHED-MASS-001",
+        "operation": "matched_mass_conservative_request",
+        "payload": {
+          "equal_source_and_carrier_debit": true
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-NO-FIELD-001",
+        "operation": "no_field_request",
+        "payload": {
+          "export_policy_invoked": false,
+          "formation_request_count": 0
+        }
+      },
+      {
+        "control_id": "P2-I3-BR-CTRL-WITHDRAWAL-SHUFFLE-001",
+        "operation": "withdrawal_or_shuffle_request",
+        "payload": {
+          "subtypes": [
+            "withdrawal",
+            "shuffle"
+          ]
+        }
+      }
+    ],
+    "distance_interface_addressability": {
+      "causal_node_count": 5,
+      "functional_node_count": 5,
+      "geometric_node_count": 5,
+      "interpretation": "none_conformance_only"
+    },
+    "encounter": {
+      "admitted_arrival": {
+        "amount": 0.45,
+        "budget_error": 0.0,
+        "edge_id": 2,
+        "event_id": "lgrc9v3-packet-event-157763cf0e308810",
+        "event_kind": "lgrc9v3_packet_arrival",
+        "event_time_key": 13.0,
+        "packet_id": "lgrc9v3-packet-f965fb25cbfc5927",
+        "scheduler_event_index": 13,
+        "source_lineage_id": "p2_i3_i03_probe",
+        "source_node_id": 1,
+        "target_node_id": 3
+      },
+      "admitted_departure": {
+        "amount": 0.45,
+        "budget_error": 0.0,
+        "edge_id": 2,
+        "event_id": "lgrc9v3-packet-event-4a500f031e36d9b5",
+        "event_kind": "lgrc9v3_packet_departure",
+        "event_time_key": 12.0,
+        "packet_id": "lgrc9v3-packet-f965fb25cbfc5927",
+        "scheduler_event_index": 12,
+        "source_lineage_id": "p2_i3_i03_probe",
+        "source_node_id": 1,
+        "target_node_id": 3
+      },
+      "admitted_request": {
+        "amount": 0.45,
+        "arrival_event_time_key": 13.0,
+        "departure_event_time_key": 12.0,
+        "edge_id": 2,
+        "packet_index": 6,
+        "scheduler_event_index": 12,
+        "source_lineage_id": "p2_i3_i03_probe",
+        "source_node_id": 1,
+        "target_lineage_id": "p2_i3_i03_continuation",
+        "target_node_id": 3
+      },
+      "refusal_atomic": true,
+      "refusal_reason": "source coherence is smaller than packet amount",
+      "refused_request": {
+        "amount": 0.45,
+        "arrival_event_time_key": 13.0,
+        "departure_event_time_key": 12.0,
+        "edge_id": 7,
+        "packet_index": 6,
+        "scheduler_event_index": 12,
+        "source_lineage_id": "p2_i3_i03_probe",
+        "source_node_id": 6,
+        "target_lineage_id": "p2_i3_i03_continuation",
+        "target_node_id": 8
+      },
+      "replay_exact": true
+    },
+    "export": {
+      "arrival": {
+        "amount": 0.09999999999999998,
+        "budget_error": 0.0,
+        "edge_id": 6,
+        "event_id": "lgrc9v3-packet-event-554ccd6b67cfb82f",
+        "event_kind": "lgrc9v3_packet_arrival",
+        "event_time_key": 9.0,
+        "packet_id": "lgrc9v3-packet-7a46295d99177748",
+        "scheduler_event_index": 9,
+        "source_lineage_id": "p2_i3_i03_br_export_0",
+        "source_node_id": 6,
+        "target_node_id": 7
+      },
+      "departure": {
+        "amount": 0.09999999999999998,
+        "budget_error": 0.0,
+        "edge_id": 6,
+        "event_id": "lgrc9v3-packet-event-f4a1285798b2750e",
+        "event_kind": "lgrc9v3_packet_departure",
+        "event_time_key": 8.0,
+        "packet_id": "lgrc9v3-packet-7a46295d99177748",
+        "scheduler_event_index": 8,
+        "source_lineage_id": "p2_i3_i03_br_export_0",
+        "source_node_id": 6,
+        "target_node_id": 7
+      },
+      "duplicate_disposition": "duplicate_consumed",
+      "eligible_zero_transition": {
+        "disposition": "eligible_zero",
+        "native_mutation_authored": false,
+        "native_request": null,
+        "policy_state": {
+          "absolute_tolerance": 1e-12,
+          "consumed_receipt_ids": [
+            "p2-i3-i03-receipt-0",
+            "p2-i3-i03-receipt-1"
+          ],
+          "destination_node_id": 7,
+          "edge_id": 6,
+          "export_cap": 0.1,
+          "export_floor": 0.4,
+          "next_sequence_index": 2,
+          "pending_export": null,
+          "policy_id": "p2-i3-i03-br-export-policy-v1",
+          "route_id": "p2-i3-i03-route-0002",
+          "schedule_by_sequence": {
+            "0": {
+              "arrival_event_time_key": 9.0,
+              "departure_event_time_key": 8.0,
+              "packet_index": 4,
+              "scheduler_event_index": 8,
+              "source_lineage_id": "p2_i3_i03_br_export_0",
+              "target_lineage_id": "p2_i3_i03_br_reservoir_0002"
+            },
+            "1": {
+              "arrival_event_time_key": 11.0,
+              "departure_event_time_key": 10.0,
+              "packet_index": 5,
+              "scheduler_event_index": 10,
+              "source_lineage_id": "p2_i3_i03_br_export_1",
+              "target_lineage_id": "p2_i3_i03_br_reservoir_0002"
+            }
+          },
+          "schema": "p2_i3_br_export_policy_state_v1",
+          "settled_export_receipt_ids": [
+            "p2-i3-i03-receipt-0"
+          ],
+          "source_node_id": 6
+        },
+        "policy_state_changed": true,
+        "reason": "carrier_at_or_below_export_floor",
+        "receipt_id": "p2-i3-i03-receipt-1",
+        "reserved_amount": 0.0
+      },
+      "invalid_disposition": "invalid",
+      "pending_conflict_disposition": "prior_export_not_settled",
+      "positive_transition": {
+        "disposition": "eligible_positive",
+        "native_mutation_authored": false,
+        "native_request": {
+          "amount": 0.09999999999999998,
+          "arrival_event_time_key": 9.0,
+          "departure_event_time_key": 8.0,
+          "edge_id": 6,
+          "packet_index": 4,
+          "scheduler_event_index": 8,
+          "source_lineage_id": "p2_i3_i03_br_export_0",
+          "source_node_id": 6,
+          "target_lineage_id": "p2_i3_i03_br_reservoir_0002",
+          "target_node_id": 7
+        },
+        "policy_state": {
+          "absolute_tolerance": 1e-12,
+          "consumed_receipt_ids": [
+            "p2-i3-i03-receipt-0"
+          ],
+          "destination_node_id": 7,
+          "edge_id": 6,
+          "export_cap": 0.1,
+          "export_floor": 0.4,
+          "next_sequence_index": 1,
+          "pending_export": {
+            "amount": 0.09999999999999998,
+            "native_request_digest": "e934cf9aef4e0ab81b52bfca3b5da578a7659e8e9684482bbc03abda4ed35770",
+            "predecessor_composite_identity": "05a1bad34b898ebb6dc26983242d07e1043ec5c7920d7bda3f76efd48d7ac5a7",
+            "receipt_id": "p2-i3-i03-receipt-0",
+            "sequence_index": 0
+          },
+          "policy_id": "p2-i3-i03-br-export-policy-v1",
+          "route_id": "p2-i3-i03-route-0002",
+          "schedule_by_sequence": {
+            "0": {
+              "arrival_event_time_key": 9.0,
+              "departure_event_time_key": 8.0,
+              "packet_index": 4,
+              "scheduler_event_index": 8,
+              "source_lineage_id": "p2_i3_i03_br_export_0",
+              "target_lineage_id": "p2_i3_i03_br_reservoir_0002"
+            },
+            "1": {
+              "arrival_event_time_key": 11.0,
+              "departure_event_time_key": 10.0,
+              "packet_index": 5,
+              "scheduler_event_index": 10,
+              "source_lineage_id": "p2_i3_i03_br_export_1",
+              "target_lineage_id": "p2_i3_i03_br_reservoir_0002"
+            }
+          },
+          "schema": "p2_i3_br_export_policy_state_v1",
+          "settled_export_receipt_ids": [],
+          "source_node_id": 6
+        },
+        "policy_state_changed": true,
+        "reason": "bounded_export_reserved",
+        "receipt_id": "p2-i3-i03-receipt-0",
+        "reserved_amount": 0.09999999999999998
+      },
+      "post_export_coherence": {
+        "0": 0.6000000000000001,
+        "1": 0.5,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.6000000000000001,
+        "6": 0.4,
+        "7": 0.09999999999999998,
+        "8": 0.0,
+        "9": 0.0
+      }
+    },
+    "fixture_only": true,
+    "formation": [
+      {
+        "arrival": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 0,
+          "event_id": "lgrc9v3-packet-event-7dc8f9af425c282f",
+          "event_kind": "lgrc9v3_packet_arrival",
+          "event_time_key": 1.0,
+          "packet_id": "lgrc9v3-packet-2d6ec0fada9874a2",
+          "scheduler_event_index": 1,
+          "source_lineage_id": "p2_i3_i03_formation_0",
+          "source_node_id": 0,
+          "target_node_id": 1
+        },
+        "carrier_credit": 0.20000000000000004,
+        "departure": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 0,
+          "event_id": "lgrc9v3-packet-event-6bc41e801f6f6146",
+          "event_kind": "lgrc9v3_packet_departure",
+          "event_time_key": 0.0,
+          "packet_id": "lgrc9v3-packet-2d6ec0fada9874a2",
+          "scheduler_event_index": 0,
+          "source_lineage_id": "p2_i3_i03_formation_0",
+          "source_node_id": 0,
+          "target_node_id": 1
+        },
+        "request": {
+          "amount": 0.2,
+          "arrival_event_time_key": 1.0,
+          "departure_event_time_key": 0.0,
+          "edge_id": 0,
+          "packet_index": 0,
+          "scheduler_event_index": 0,
+          "source_lineage_id": "p2_i3_i03_formation_0",
+          "source_node_id": 0,
+          "target_lineage_id": "p2_i3_i03_carrier_1",
+          "target_node_id": 1
+        },
+        "source_debit": 0.19999999999999996
+      },
+      {
+        "arrival": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 5,
+          "event_id": "lgrc9v3-packet-event-8e06548250b15665",
+          "event_kind": "lgrc9v3_packet_arrival",
+          "event_time_key": 3.0,
+          "packet_id": "lgrc9v3-packet-75c82541c2e1b7aa",
+          "scheduler_event_index": 3,
+          "source_lineage_id": "p2_i3_i03_formation_1",
+          "source_node_id": 5,
+          "target_node_id": 6
+        },
+        "carrier_credit": 0.20000000000000004,
+        "departure": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 5,
+          "event_id": "lgrc9v3-packet-event-853b055b3988951d",
+          "event_kind": "lgrc9v3_packet_departure",
+          "event_time_key": 2.0,
+          "packet_id": "lgrc9v3-packet-75c82541c2e1b7aa",
+          "scheduler_event_index": 2,
+          "source_lineage_id": "p2_i3_i03_formation_1",
+          "source_node_id": 5,
+          "target_node_id": 6
+        },
+        "request": {
+          "amount": 0.2,
+          "arrival_event_time_key": 3.0,
+          "departure_event_time_key": 2.0,
+          "edge_id": 5,
+          "packet_index": 1,
+          "scheduler_event_index": 2,
+          "source_lineage_id": "p2_i3_i03_formation_1",
+          "source_node_id": 5,
+          "target_lineage_id": "p2_i3_i03_carrier_6",
+          "target_node_id": 6
+        },
+        "source_debit": 0.19999999999999996
+      },
+      {
+        "arrival": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 0,
+          "event_id": "lgrc9v3-packet-event-131af29a87f1a6f3",
+          "event_kind": "lgrc9v3_packet_arrival",
+          "event_time_key": 5.0,
+          "packet_id": "lgrc9v3-packet-97c5976884136810",
+          "scheduler_event_index": 5,
+          "source_lineage_id": "p2_i3_i03_formation_2",
+          "source_node_id": 0,
+          "target_node_id": 1
+        },
+        "carrier_credit": 0.19999999999999996,
+        "departure": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 0,
+          "event_id": "lgrc9v3-packet-event-ebb9d82fc811e144",
+          "event_kind": "lgrc9v3_packet_departure",
+          "event_time_key": 4.0,
+          "packet_id": "lgrc9v3-packet-97c5976884136810",
+          "scheduler_event_index": 4,
+          "source_lineage_id": "p2_i3_i03_formation_2",
+          "source_node_id": 0,
+          "target_node_id": 1
+        },
+        "request": {
+          "amount": 0.2,
+          "arrival_event_time_key": 5.0,
+          "departure_event_time_key": 4.0,
+          "edge_id": 0,
+          "packet_index": 2,
+          "scheduler_event_index": 4,
+          "source_lineage_id": "p2_i3_i03_formation_2",
+          "source_node_id": 0,
+          "target_lineage_id": "p2_i3_i03_carrier_1",
+          "target_node_id": 1
+        },
+        "source_debit": 0.19999999999999996
+      },
+      {
+        "arrival": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 5,
+          "event_id": "lgrc9v3-packet-event-80eea1d44f06cb8a",
+          "event_kind": "lgrc9v3_packet_arrival",
+          "event_time_key": 7.0,
+          "packet_id": "lgrc9v3-packet-af6187c480ca203f",
+          "scheduler_event_index": 7,
+          "source_lineage_id": "p2_i3_i03_formation_3",
+          "source_node_id": 5,
+          "target_node_id": 6
+        },
+        "carrier_credit": 0.19999999999999996,
+        "departure": {
+          "amount": 0.2,
+          "budget_error": 0.0,
+          "edge_id": 5,
+          "event_id": "lgrc9v3-packet-event-2863caf468ee1d67",
+          "event_kind": "lgrc9v3_packet_departure",
+          "event_time_key": 6.0,
+          "packet_id": "lgrc9v3-packet-af6187c480ca203f",
+          "scheduler_event_index": 6,
+          "source_lineage_id": "p2_i3_i03_formation_3",
+          "source_node_id": 5,
+          "target_node_id": 6
+        },
+        "request": {
+          "amount": 0.2,
+          "arrival_event_time_key": 7.0,
+          "departure_event_time_key": 6.0,
+          "edge_id": 5,
+          "packet_index": 3,
+          "scheduler_event_index": 6,
+          "source_lineage_id": "p2_i3_i03_formation_3",
+          "source_node_id": 5,
+          "target_lineage_id": "p2_i3_i03_carrier_6",
+          "target_node_id": 6
+        },
+        "source_debit": 0.19999999999999996
+      }
+    ],
+    "formed_coherence": {
+      "0": 0.6000000000000001,
+      "1": 0.5,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.6000000000000001,
+      "6": 0.5,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0
+    },
+    "initial_coherence": {
+      "0": 1.0,
+      "1": 0.1,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 1.0,
+      "6": 0.1,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0
+    },
+    "q013_constructors": [
+      {
+        "constructors": [
+          "repeated_formation",
+          "one_equal_total_pulse"
+        ],
+        "contrast_id": "P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001",
+        "meaning": "formation_quantity_only"
+      },
+      {
+        "constructors": [
+          "candidate_export",
+          "equal_mass_zero_contrast_debit"
+        ],
+        "contrast_id": "P2-I3-BR-Q13-EXPORT-MASS-MATCH-001",
+        "meaning": "export_mass_separate_from_route_contrast"
+      },
+      {
+        "constructors": [
+          "history_arm_a",
+          "history_arm_b"
+        ],
+        "contrast_id": "P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001",
+        "meaning": "equal_causal_projection_distinct_audit_history"
+      }
+    ],
+    "q015": {
+      "formed_manifest_identity": "05a1bad34b898ebb6dc26983242d07e1043ec5c7920d7bda3f76efd48d7ac5a7",
+      "history_causal_projections_equal": true,
+      "history_exact_identities_differ": true,
+      "load_refusals": [
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "missing_component"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "digest_tamper"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_route_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_policy_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_opportunity_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_branch_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "wrong_reset_id"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "native_only"
+        },
+        {
+          "native_loader_invoked": false,
+          "refused": true,
+          "scenario_id": "policy_only"
+        }
+      ],
+      "post_zero_manifest_identity": "fbba97250bc4aa0551538f09fb4c2a2f90620911cbde7d7cfef573a26462b9cb",
+      "settled_manifest_identity": "a72e262a6f0cabb44de67d723cb3a1dca6ec53ce3bc0bccc6abc6ee3c5dedf8f"
+    },
+    "quarantine_rejections": [
+      {
+        "consumer_class": "calibration_input",
+        "rejected": true
+      },
+      {
+        "consumer_class": "calibration_output",
+        "rejected": true
+      },
+      {
+        "consumer_class": "candidate_input",
+        "rejected": true
+      },
+      {
+        "consumer_class": "candidate_output",
+        "rejected": true
+      },
+      {
+        "consumer_class": "control_outcome",
+        "rejected": true
+      },
+      {
+        "consumer_class": "registration_value",
+        "rejected": true
+      },
+      {
+        "consumer_class": "scientific_result",
+        "rejected": true
+      },
+      {
+        "consumer_class": "terminal_classification",
+        "rejected": true
+      }
+    ],
+    "scientific_interpretation_allowed": false
+  },
+  "producer_cost_conformance_projection": {
+    "contract_required": [
+      "serialized_export_policy",
+      "composite_policy_restoration"
+    ],
+    "evidence_only": [
+      "temporary_branching",
+      "checks",
+      "quarantine",
+      "reconstruction"
+    ],
+    "harness_source_lines": 1175,
+    "native_call_count": 109,
+    "rcae_ecology_required": [
+      "blind_structural_encounter_adapter",
+      "control_interface_identity"
+    ],
+    "runtime_module_source_lines": 673,
+    "scalar_cost_or_winner": null,
+    "scientific_interpretation": null
+  },
+  "reconstruction": {
+    "command": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=${RCAE_PYGRC_ROOT}/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_conform.py --graph-root ${RCAE_PYGRC_ROOT} --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json --output ${TMPDIR}/p2-i3-i03-br-runtime-conformance.reconstructed.json",
+    "expected_relation": "byte_exact_output_using_retained_binding_receipt"
+  },
+  "required_public_call_counts": {
+    "pygrc.core.PortGraphBackend": 1,
+    "pygrc.models.GRC9V3NodeState": 1,
+    "pygrc.models.GRC9V3State": 1,
+    "pygrc.models.LGRC9V3.from_state": 1,
+    "pygrc.models.LGRC9V3.get_state": 31,
+    "pygrc.models.LGRC9V3.load": 7,
+    "pygrc.models.LGRC9V3.reset": 1,
+    "pygrc.models.LGRC9V3.run_event_queue": 4,
+    "pygrc.models.LGRC9V3.save": 3,
+    "pygrc.models.LGRC9V3.schedule_packet_departure": 10,
+    "pygrc.models.LGRC9V3.snapshot": 1,
+    "pygrc.models.LGRC9V3.step": 10,
+    "pygrc.models.PortEdge": 10,
+    "pygrc.models.compute_lgrc9v3_causal_distances": 1,
+    "pygrc.models.compute_lgrc9v3_functional_distances": 1,
+    "pygrc.models.compute_lgrc9v3_geometric_distances": 1,
+    "pygrc.models.digest_lgrc9v3_restoration_identity_v2": 24,
+    "pygrc.models.lgrc9v3_restoration_identity_v2": 1
+  },
+  "runtime_binding_receipt": {
+    "canonical_payload_digest": "abdbcd1078511284e6e64d1646593ffaa4bdca8cd80fcca8011183134a7ede7e",
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/conformance/i03-br-runtime-binding-receipt.json",
+    "sha256": "9f26ccecde072420c53ff1b46aa00693ea63f302c726deb03be62e02c3cf0b69"
+  },
+  "scientific_evidence_effect": "none",
+  "section_8_2_dispositions": [
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-01",
+        "P2-I3-I03-BR-CONF-02"
+      ],
+      "item": 1,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "two_alternative_route_surfaces",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-02",
+        "P2-I3-I03-BR-CONF-05"
+      ],
+      "item": 2,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "route_local_field_encounter",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-02"
+      ],
+      "item": 3,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "attributable_repeated_costly_formation",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-03",
+        "P2-I3-I03-BR-CONF-04"
+      ],
+      "item": 4,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "non_static_dynamic_operationally_observable",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-03",
+        "P2-I3-I03-BR-CONF-05"
+      ],
+      "item": 5,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "dynamic_to_encounter_mediator",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-06",
+        "P2-I3-I03-BR-CONF-09"
+      ],
+      "item": 6,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "separate_candidate_and_control_addressability",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-09",
+        "P2-I3-I03-BR-CONF-10"
+      ],
+      "item": 7,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "false_trace_interface_without_outcome_writer",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-09"
+      ],
+      "item": 8,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "relocation_payload_boundary",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-07",
+        "P2-I3-I03-BR-CONF-08"
+      ],
+      "item": 9,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "complete_continuation_state_enumerated",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-06",
+        "P2-I3-I03-BR-CONF-07"
+      ],
+      "item": 10,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "active_history_not_claimed_and_audit_separated",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-05",
+        "P2-I3-I03-BR-CONF-10"
+      ],
+      "item": 11,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "fresh_traverser_and_direct_address",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-09"
+      ],
+      "item": 12,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "distance_roles_non_substituted",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-01",
+        "P2-I3-I03-BR-CONF-03",
+        "P2-I3-I03-BR-CONF-10"
+      ],
+      "item": 13,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "native_rcae_ownership_explicit",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-01",
+        "P2-I3-I03-BR-CONF-07"
+      ],
+      "item": 14,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "non_native_identity_cannot_transition_silently",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    },
+    {
+      "evidence_cells": [
+        "P2-I3-I03-BR-CONF-03",
+        "P2-I3-I03-BR-CONF-05",
+        "P2-I3-I03-BR-CONF-10"
+      ],
+      "item": 15,
+      "later_scientific_evidence": "not_supplied_by_i03_conformance",
+      "requirement_id": "constructed_surface_minimality_visible",
+      "status": "satisfied_at_i03_operational_conformance_boundary"
+    }
+  ],
+  "status": "passed_implementation_conformance"
+}

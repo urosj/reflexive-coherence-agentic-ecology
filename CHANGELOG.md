@@ -61,6 +61,24 @@ All notable changes to this project will be documented in this file.
   leakage, prohibit producer-authored D0 aftereffects, require D0a
   representability, and distinguish source identities and reconstruction
   statuses.
+- Added the accepted DEC-025 N31 return-admission package. It verifies eleven
+  exact return roles, admits B-R conservative redistribution and C.2
+  exact-history susceptibility as unselected provider-contract options, and
+  passes `P2-I3-N31-RETURN-GATE` without transferring positive N31 evidence
+  into P2-I3. The retained `0.0.0`/`0.1` difference is classified as a bounded
+  distribution-metadata error; both contracts and three other I12 artifacts
+  reconstruct byte-exactly.
+- Added accepted DEC-028 as the B-R Q-006 equation and lifecycle authority. It
+  binds event-indexed conservative formation and export, corrected floor/cap
+  bounds, distinct receipt outcomes, serialized composite state, native versus
+  producer ownership, matched-mass control semantics, isolated-reservoir
+  requirements, and repeated-opportunity classifications without assigning a
+  traversal response or scientific result.
+- Added accepted DEC-026. P2-I3 will evaluate B-R first and C.2 second under
+  separate realization, topology, calibration, registration, execution, and
+  branch-evidence identities, then compare their ecology results and vector
+  producer burden at Q-021. Only evidence-neutral infrastructure may be
+  shared before semantic equivalence is demonstrated.
 - Added the AE01 experiment workspace and advanced it to `AE01-C2`, with L01
   and L02 accepted and L03–L07 plus cross-lane synthesis still unexecuted.
 - Added native-first capability and source-admission audits that distinguish
@@ -87,11 +105,11 @@ All notable changes to this project will be documented in this file.
 - Expanded the repository from a conceptual paper archive into a conceptual
   and bounded experiment-evidence workspace; conceptual papers remain
   non-implementation authorities.
-- Advanced P2-I3 through its brief, source-audit, and source-admission gates,
-  then intentionally paused I03 at Q-005. The provisional two-RCAE-decay-
-  realization direction was superseded before implementation so graph-project
-  N31 can test coherence-only decay and only then specify or naturalize any
-  required additional mechanism.
+- Advanced P2-I3 through its brief, source-audit, source-admission, and bounded
+  N31 return-admission gates. DEC-026 opens isolated B-R-first and C.2-second
+  evidence tracks; DEC-027/028 resolve the active B-R mode and lifecycle law.
+  B-R Q-007, conformance, calibration, registration, execution, C.2, and all
+  scientific results remain open.
 - Corrected the prospective N31 ordering before execution: conserved leakage
   is now the first additional-mechanism fallback rather than the first
   hypothesis, and a positive coherence-only result is distinct from primitive

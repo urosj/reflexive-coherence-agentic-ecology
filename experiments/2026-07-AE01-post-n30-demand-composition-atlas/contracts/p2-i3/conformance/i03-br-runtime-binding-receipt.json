@@ -1,0 +1,79 @@
+{
+  "artifact_kind": "p2_i3_i03_br_conformance_runtime_binding_receipt",
+  "artifact_schema_version": "1.0.0",
+  "attempt_policy": {
+    "attempts": 1,
+    "parallelism": 1,
+    "retries": 0
+  },
+  "branch_id": "P2-I3-BR",
+  "canonical_payload_digest": "abdbcd1078511284e6e64d1646593ffaa4bdca8cd80fcca8011183134a7ede7e",
+  "environment": {
+    "interpreter": ".venv/bin/python",
+    "network_allowed": false,
+    "packages": {
+      "PyYAML": "6.0.3",
+      "jsonschema": "4.26.0",
+      "networkx": "3.6.1",
+      "pygrc": "0.1"
+    },
+    "python_implementation": "CPython",
+    "python_version": "3.12.3",
+    "pythondontwritebytecode": "1",
+    "pythonhashseed": "0"
+  },
+  "evidence_effect": "implementation_conformance_only",
+  "execution_flags": {
+    "calibration_execution": false,
+    "candidate_execution": false,
+    "scientific_control_execution": false,
+    "scientific_interpretation": false
+  },
+  "freeze_source_anchor": "94bfe01f1ecf3d427e86e47968cc249256487208",
+  "graph": {
+    "pygrc_import": "src/pygrc/__init__.py",
+    "repository_id": "graph-reflexive-coherence",
+    "revision": "565706f8b7647f6b7638b9afbe52372e170bf724",
+    "source_files": {
+      "src/pygrc/core/storage.py": "a73d30238bc81dc3c366f04f3e8d5e8a266d0a683e7db88560196930d279c397",
+      "src/pygrc/models/__init__.py": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+      "src/pygrc/models/grc_9_state.py": "b3d979fe4bffbc86fe256f71ff4894c3da03fd4af706457a281f650242ca26b7",
+      "src/pygrc/models/grc_9_v3_state.py": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "src/pygrc/models/lgrc_9_v3_packets.py": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "src/pygrc/models/lgrc_9_v3_restoration.py": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "src/pygrc/models/lgrc_9_v3_runtime.py": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "src/pygrc/models/lgrc_9_v3_runtime_state.py": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+      "src/pygrc/models/lgrc_9_v3_timing.py": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c"
+    },
+    "worktree_clean": true
+  },
+  "iteration_id": "P2-I3-I03",
+  "normalized_command": [
+    ".venv/bin/python",
+    "-B",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_conform.py",
+    "--graph-root",
+    "../graph-reflexive-coherence",
+    "--freeze",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json",
+    "--output",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/conformance/i03-br-runtime-conformance.json"
+  ],
+  "prior_artifact_state": {
+    "retained_output_absent": true,
+    "runtime_binding_receipt_absent": true
+  },
+  "rcae_source_revision": "ce9701c436f9ed39fa2db5323c5f4bac8c55d931",
+  "rcae_worktree_clean_before_invocation": true,
+  "source_files": {
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i02-source-admission-manifest.json": "c1194085c6a55e783ce739f5a22a75e89b9eb1ab237f6bec3199853426ab343f",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json": "0a255d21605c2a1cbf00a3467562fc08dd73a32505d4d435b6eb6f140f16a243",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-contrast-and-restoration-design.json": "b961c3bb69f7d4c0cf14a8d50d0929a68474e7a1b949013620cfda56dc92b253",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-operational-hypotheses.json": "858f3979c09ea4d984018b99e71f2286003d58d4dbb0007e0a949c197c124eaa",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-common-comparison-envelope.json": "f147e0fed453d0314fa074752a6ee4e74a864d15a0bbeefd5de11203c4cfcedd",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-n31-return-admission.json": "17da521f45c7f4c6f1a01e2aba5b03e4fb9c8928b4899307073b1815c869719c",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_runtime.py": "e8496bf5af9c8fc297f569c127c7193e238f562063e10a71a94cae2c87b5d7f7",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_conformance_quarantine.py": "deeb969d5d5a0b29b0d4c95441a5769be8b4d9002fede8e889a96b3b92deaff7",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_conform.py": "63ff0086bda4e92aec375153a37293e313845005839edea1e2b07efaeadb306e"
+  }
+}

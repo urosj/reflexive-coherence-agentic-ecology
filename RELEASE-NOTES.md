@@ -1,5 +1,42 @@
 # Release Notes
 
+## P2-I3 N31 return admission — 2026-07-19
+
+Graph-project N31 has completed the D0-first decay-semantics investigation and
+returned exact reusable contracts for B-R conservative coherence
+redistribution and C.2 exact packet-history susceptibility. RCAE reconstructs
+all eleven return roles and admits both contracts only as unselected provider
+options under accepted DEC-025.
+
+`P2-I3-N31-RETURN-GATE` has passed. This transfers graph-side semantic and
+contract authority, not positive P2-I3 evidence. DEC-026 subsequently selects
+a B-R-first/C.2-second evaluation program without selecting a lane winner.
+
+The retained N31 closeout reports `pygrc==0.0.0`, while the exact source has
+always declared and reconstructs as `0.1`. The owner classifies this as a
+bounded distribution-metadata error: the editable import resolves to the
+admitted graph source, protected PyGRC source did not change across closeout,
+both provider contracts reconstruct byte-exactly, and the only other
+differences are the metadata-dependent digest cascade. The historical closeout
+is retained unchanged.
+
+No P2-I3 runtime conformance, calibration, registration, candidate execution,
+control result, or L03 scientific result exists yet. AE01 remains at
+`AE01-C2`.
+
+DEC-026 subsequently resolves Q-005 as a staged evaluation rather than a
+pre-evidence provider choice. B-R is explored first, C.2 second, and Q-021
+compares both branch results with producer burden retained as a vector of
+owned operations/state, causal-chain dependence, controls, replay burden,
+resource footprint, and naturalization debt. The tracks do not share topology,
+carrier, equations, calibration, registration, or evidence identities by
+default. DEC-027 fixes complete current native-plus-policy state as B-R's
+primary mode with one matched-history discriminator. DEC-028 fixes B-R's
+serialized conservative formation/export equation, corrected floor bound,
+receipt state machine, route source/carrier/reservoir roles, ownership,
+matched-mass semantics, and reservoir isolation. Q-007's local encounter is
+next; no conformance, calibration, execution, or scientific result follows.
+
 ## P2-I3 derived-decay spiral handoff — 2026-07-16
 
 P2-I3 has completed its semantic governance, source-current capability audit,

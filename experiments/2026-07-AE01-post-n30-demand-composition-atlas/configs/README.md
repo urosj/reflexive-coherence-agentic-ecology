@@ -25,6 +25,43 @@ resource overrides are local inputs and are never committed. A lane-specific
 live probe must add an explicit realization profile and runtime receipt before
 execution; absence fails closed.
 
+## P2-I3 B-R I04 machine policy
+
+`p2_i3_br_i04_machine_policy.json` is the owner-accepted machine projection of
+DEC-036 through DEC-040. It freezes the typed encounter response,
+five observation surfaces, exact W/O/E pair estimators, candidate-blind
+arithmetic panels, 42 independently resolvable control legs, 14 stable
+scientific/validity/claim requirements, and the I09-I11 terminal-overlay
+handoff. Version `1.0.1` also gives every leg an explicit target, outcome,
+ownership, fail-closed, unavailability, and terminal-role policy.
+
+The policy is preregistration input only. Its five equality cases are frozen
+future matched-null inputs, while its eight deliberately nonzero cases are
+pure estimator conformance and cannot enter `delta`. It imports no PyGRC,
+consumes no candidate or I03 conformance value, and grants no I05 invocation,
+registration, candidate execution, or scientific-result authority. Validate
+the complete package with the repository environment:
+
+```bash
+.venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_validate.py
+```
+
+I05 separately freezes the exact nonnegative candidate-blind construction and
+may not reuse its arithmetic fixtures in I06/I08 scientific registration.
+
+## P2-I3 B-R I05 inactive one-shot policy
+
+`p2_i3_br_i05_one_shot_policy.json` implements DEC-041 with one fixed
+`q_probe=1/2` and `C_pre(m_e)=1/2+registered_margin`. It binds the accepted I04
+source/hashes, repository `.venv`, closed future output paths, one permanent
+pre-builder claim, one attempt, zero retries, one complete builder call, and
+readback-only reconstruction.
+
+The policy is inactive. It contains no calibration authority and requires a
+separate owner-accepted launch record in a later clean commit. Fifty tests
+and 42 static checks validate corrected package `1.0.2` without calling the builder or
+creating a claim, governed output, or `delta`.
+
 ## P2-I2 active calibration-preregistration authority
 
 Owner-accepted I04R2 is the sole P2-I2 progression authority. Its active

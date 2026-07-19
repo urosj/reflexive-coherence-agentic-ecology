@@ -1,0 +1,57 @@
+{
+  "artifact_id": "P2-I3-I05-BR-RETENTION-VALIDATION",
+  "artifact_version": "1.0.0",
+  "branch_id": "P2-I3-BR",
+  "iteration_id": "P2-I3-I05",
+  "lane_id": "AE01-L03",
+  "retention_identity": {
+    "commit": "d054c4df8491ea8f5cc3b13dcb10b222cf8973d5",
+    "parent": "1097547ad30b77d4cf9312fb05753902f6d1cc81",
+    "subject": "experiment: retain P2-I3 I05 inactive calibration freeze",
+    "tree": "ac40cd5002a2c2942b1afe4e99f234d9b7951ac6"
+  },
+  "accepted_source_digests": {
+    "builder": "d9155c1a1f03c0543b86a47d7d1439c109dd17b71895493879dd6bb7fd6d687f",
+    "freeze": "ce2bf6f479197d32009f8a5019a001172bda81db8099318c538030e60def1425",
+    "output_schema": "94a463ea820683d72742d05b2f9a8757619ee8da8a913b2b16978c9c7805f11a",
+    "policy": "3e28501b1a2a4f6c148cb49694d69e4322fbf519b59c8eeea9bd7ae41f7b6282",
+    "retained_validation": "763a9d6dac8f22117e19bd6d2e3ebf4411d7d476f56e7f5eea13b1413f866eed",
+    "tests": "b9d266e581b5b0e3077ad3b718e4b52c31f28096bbe4a068927c9dbf35ecc081",
+    "validator": "6d419dd3101414d9807d14840d23a7e6a2af99f1e3c96e6f31fd6e076879b385",
+    "wrapper": "083bc2cfa21553456c8d104e40979cfc0a7448c9346ab5b50ef9b8c66fd4e758"
+  },
+  "verification": {
+    "calibration_invocations": 0,
+    "clean_after": true,
+    "clean_before": true,
+    "focused_test_count": 50,
+    "focused_tests_status": "passed",
+    "freeze_check_count": 42,
+    "freeze_checks_status": "passed",
+    "reconstruction_comparison": "byte_exact",
+    "retained_validation_reconstructed": true
+  },
+  "governed_state": {
+    "attempt_claim_present": false,
+    "delta_assigned": false,
+    "final_receipt_present": false,
+    "governed_outputs_present": false,
+    "launch_authorization_present": false
+  },
+  "reconstruction": {
+    "compare_command": "cmp experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-freeze-validation.json outputs/reconstruction/p2-i3-i05-freeze-validation.reconstructed.json",
+    "reconstruct_command": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py --output outputs/reconstruction/p2-i3-i05-freeze-validation.reconstructed.json",
+    "test_command": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -m pytest -q experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i05_br_freeze.py"
+  },
+  "evidence_effect": "retention identity and clean-commit validation only",
+  "next_permitted_action": "construct and review a separate launch authorization",
+  "gate_boundary": {
+    "calibration_invocation_authorized": false,
+    "c2_open": false,
+    "cal_gate_passed": false,
+    "i06_open": false,
+    "retention_complete": true,
+    "scientific_or_ecology_result": false
+  },
+  "status": "passed"
+}

@@ -1,0 +1,925 @@
+{
+  "artifact_id": "P2-I3-I05-BR-MATCHED-NULL",
+  "artifact_version": "1.0.2",
+  "authority": {
+    "freeze_id": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE",
+    "i04_source_anchor": "1097547ad30b77d4cf9312fb05753902f6d1cc81",
+    "policy_id": "P2-I3-I05-BR-ONE-SHOT-POLICY"
+  },
+  "candidate_artifacts_consumed": false,
+  "candidate_execution_performed": false,
+  "case_count": 5,
+  "cases": [
+    {
+      "case_id": "EQ-NEG-HALF",
+      "response_records": [
+        {
+          "admissibility_margin": {
+            "rational": "-1/2",
+            "value": -0.5
+          },
+          "arm_id": "W",
+          "c_pre_m_e": {
+            "rational": "0",
+            "value": 0.0
+          },
+          "calibration_seed_alias": 19,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-NEG-HALF",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "field_limited_refusal",
+          "pair_id": "P2-I3-I05:EQ-NEG-HALF",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-NEG-HALF",
+            "deterministic_replicate": 19,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-NEG-HALF:W",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "-1/2",
+            "value": -0.5
+          },
+          "arm_id": "O",
+          "c_pre_m_e": {
+            "rational": "0",
+            "value": 0.0
+          },
+          "calibration_seed_alias": 19,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-NEG-HALF",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "field_limited_refusal",
+          "pair_id": "P2-I3-I05:EQ-NEG-HALF",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-NEG-HALF",
+            "deterministic_replicate": 19,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-NEG-HALF:O",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "-1/2",
+            "value": -0.5
+          },
+          "arm_id": "E",
+          "c_pre_m_e": {
+            "rational": "0",
+            "value": 0.0
+          },
+          "calibration_seed_alias": 19,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-NEG-HALF",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "field_limited_refusal",
+          "pair_id": "P2-I3-I05:EQ-NEG-HALF",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-NEG-HALF",
+            "deterministic_replicate": 19,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-NEG-HALF:E",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        }
+      ],
+      "seed_alias": 19,
+      "triplet_result": {
+        "export_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-NEG-HALF:O",
+            "P2-I3-I05:EQ-NEG-HALF:E"
+          ],
+          "denominator": 0.5,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-NEG-HALF",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_export"
+        },
+        "normalized_relations_additive": false,
+        "normalized_relations_are_percentages": false,
+        "normalized_relations_clipped": false,
+        "pair_id": "P2-I3-I05:EQ-NEG-HALF",
+        "raw_additive_identity": {
+          "additive_identity_holds": true,
+          "delta_export": 0.0,
+          "delta_formed": 0.0,
+          "delta_trace": 0.0
+        },
+        "record_type": "p2-i3-br-woe-triplet-result-v1",
+        "record_version": "1.0.0",
+        "trace_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-NEG-HALF:E",
+            "P2-I3-I05:EQ-NEG-HALF:W"
+          ],
+          "denominator": 0.5,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-NEG-HALF",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_trace"
+        }
+      }
+    },
+    {
+      "case_id": "EQ-NEG-QUARTER",
+      "response_records": [
+        {
+          "admissibility_margin": {
+            "rational": "-1/4",
+            "value": -0.25
+          },
+          "arm_id": "W",
+          "c_pre_m_e": {
+            "rational": "1/4",
+            "value": 0.25
+          },
+          "calibration_seed_alias": 43,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-NEG-QUARTER",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "field_limited_refusal",
+          "pair_id": "P2-I3-I05:EQ-NEG-QUARTER",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-NEG-QUARTER",
+            "deterministic_replicate": 43,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-NEG-QUARTER:W",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "-1/4",
+            "value": -0.25
+          },
+          "arm_id": "O",
+          "c_pre_m_e": {
+            "rational": "1/4",
+            "value": 0.25
+          },
+          "calibration_seed_alias": 43,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-NEG-QUARTER",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "field_limited_refusal",
+          "pair_id": "P2-I3-I05:EQ-NEG-QUARTER",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-NEG-QUARTER",
+            "deterministic_replicate": 43,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-NEG-QUARTER:O",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "-1/4",
+            "value": -0.25
+          },
+          "arm_id": "E",
+          "c_pre_m_e": {
+            "rational": "1/4",
+            "value": 0.25
+          },
+          "calibration_seed_alias": 43,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-NEG-QUARTER",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "field_limited_refusal",
+          "pair_id": "P2-I3-I05:EQ-NEG-QUARTER",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-NEG-QUARTER",
+            "deterministic_replicate": 43,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-NEG-QUARTER:E",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        }
+      ],
+      "seed_alias": 43,
+      "triplet_result": {
+        "export_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-NEG-QUARTER:O",
+            "P2-I3-I05:EQ-NEG-QUARTER:E"
+          ],
+          "denominator": 0.25,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-NEG-QUARTER",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_export"
+        },
+        "normalized_relations_additive": false,
+        "normalized_relations_are_percentages": false,
+        "normalized_relations_clipped": false,
+        "pair_id": "P2-I3-I05:EQ-NEG-QUARTER",
+        "raw_additive_identity": {
+          "additive_identity_holds": true,
+          "delta_export": 0.0,
+          "delta_formed": 0.0,
+          "delta_trace": 0.0
+        },
+        "record_type": "p2-i3-br-woe-triplet-result-v1",
+        "record_version": "1.0.0",
+        "trace_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-NEG-QUARTER:E",
+            "P2-I3-I05:EQ-NEG-QUARTER:W"
+          ],
+          "denominator": 0.25,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-NEG-QUARTER",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_trace"
+        }
+      }
+    },
+    {
+      "case_id": "EQ-ZERO",
+      "response_records": [
+        {
+          "admissibility_margin": {
+            "rational": "0",
+            "value": 0.0
+          },
+          "arm_id": "W",
+          "c_pre_m_e": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "calibration_seed_alias": 71,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-ZERO",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-ZERO",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-ZERO",
+            "deterministic_replicate": 71,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-ZERO:W",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "0",
+            "value": 0.0
+          },
+          "arm_id": "O",
+          "c_pre_m_e": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "calibration_seed_alias": 71,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-ZERO",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-ZERO",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-ZERO",
+            "deterministic_replicate": 71,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-ZERO:O",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "0",
+            "value": 0.0
+          },
+          "arm_id": "E",
+          "c_pre_m_e": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "calibration_seed_alias": 71,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-ZERO",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-ZERO",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-ZERO",
+            "deterministic_replicate": 71,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-ZERO:E",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        }
+      ],
+      "seed_alias": 71,
+      "triplet_result": {
+        "export_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-ZERO:O",
+            "P2-I3-I05:EQ-ZERO:E"
+          ],
+          "denominator": 1e-12,
+          "denominator_source": "epsilon_mu",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-ZERO",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_export"
+        },
+        "normalized_relations_additive": false,
+        "normalized_relations_are_percentages": false,
+        "normalized_relations_clipped": false,
+        "pair_id": "P2-I3-I05:EQ-ZERO",
+        "raw_additive_identity": {
+          "additive_identity_holds": true,
+          "delta_export": 0.0,
+          "delta_formed": 0.0,
+          "delta_trace": 0.0
+        },
+        "record_type": "p2-i3-br-woe-triplet-result-v1",
+        "record_version": "1.0.0",
+        "trace_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-ZERO:E",
+            "P2-I3-I05:EQ-ZERO:W"
+          ],
+          "denominator": 1e-12,
+          "denominator_source": "epsilon_mu",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-ZERO",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_trace"
+        }
+      }
+    },
+    {
+      "case_id": "EQ-POS-QUARTER",
+      "response_records": [
+        {
+          "admissibility_margin": {
+            "rational": "1/4",
+            "value": 0.25
+          },
+          "arm_id": "W",
+          "c_pre_m_e": {
+            "rational": "3/4",
+            "value": 0.75
+          },
+          "calibration_seed_alias": 109,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-POS-QUARTER",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-POS-QUARTER",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-POS-QUARTER",
+            "deterministic_replicate": 109,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-POS-QUARTER:W",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "1/4",
+            "value": 0.25
+          },
+          "arm_id": "O",
+          "c_pre_m_e": {
+            "rational": "3/4",
+            "value": 0.75
+          },
+          "calibration_seed_alias": 109,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-POS-QUARTER",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-POS-QUARTER",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-POS-QUARTER",
+            "deterministic_replicate": 109,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-POS-QUARTER:O",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "1/4",
+            "value": 0.25
+          },
+          "arm_id": "E",
+          "c_pre_m_e": {
+            "rational": "3/4",
+            "value": 0.75
+          },
+          "calibration_seed_alias": 109,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-POS-QUARTER",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-POS-QUARTER",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-POS-QUARTER",
+            "deterministic_replicate": 109,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-POS-QUARTER:E",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        }
+      ],
+      "seed_alias": 109,
+      "triplet_result": {
+        "export_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-POS-QUARTER:O",
+            "P2-I3-I05:EQ-POS-QUARTER:E"
+          ],
+          "denominator": 0.25,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-POS-QUARTER",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_export"
+        },
+        "normalized_relations_additive": false,
+        "normalized_relations_are_percentages": false,
+        "normalized_relations_clipped": false,
+        "pair_id": "P2-I3-I05:EQ-POS-QUARTER",
+        "raw_additive_identity": {
+          "additive_identity_holds": true,
+          "delta_export": 0.0,
+          "delta_formed": 0.0,
+          "delta_trace": 0.0
+        },
+        "record_type": "p2-i3-br-woe-triplet-result-v1",
+        "record_version": "1.0.0",
+        "trace_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-POS-QUARTER:E",
+            "P2-I3-I05:EQ-POS-QUARTER:W"
+          ],
+          "denominator": 0.25,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-POS-QUARTER",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_trace"
+        }
+      }
+    },
+    {
+      "case_id": "EQ-POS-HALF",
+      "response_records": [
+        {
+          "admissibility_margin": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "arm_id": "W",
+          "c_pre_m_e": {
+            "rational": "1",
+            "value": 1.0
+          },
+          "calibration_seed_alias": 163,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-POS-HALF",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-POS-HALF",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-POS-HALF",
+            "deterministic_replicate": 163,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-POS-HALF:W",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "arm_id": "O",
+          "c_pre_m_e": {
+            "rational": "1",
+            "value": 1.0
+          },
+          "calibration_seed_alias": 163,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-POS-HALF",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-POS-HALF",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-POS-HALF",
+            "deterministic_replicate": 163,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-POS-HALF:O",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        },
+        {
+          "admissibility_margin": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "arm_id": "E",
+          "c_pre_m_e": {
+            "rational": "1",
+            "value": 1.0
+          },
+          "calibration_seed_alias": 163,
+          "candidate_artifacts_consumed": false,
+          "candidate_execution_performed": false,
+          "case_id": "EQ-POS-HALF",
+          "coherence_units": "native_lgrc9v3_coherence",
+          "diagnostic_margin": null,
+          "native_disposition": "admitted",
+          "pair_id": "P2-I3-I05:EQ-POS-HALF",
+          "pairing": {
+            "calibration_stratum": "panel-a-exact-null",
+            "causal_continuation_projection_identity": "not-applicable-arithmetic-null",
+            "clean_parent_identity": "candidate-blind-arithmetic-parent-v1",
+            "configuration_or_variation_id": "EQ-POS-HALF",
+            "deterministic_replicate": 163,
+            "encounter_index": 0,
+            "future_schedule_identity": "not-applicable-arithmetic-null",
+            "observation_boundary_id": "synthetic-exact-response",
+            "request_construction_id": "p2-i3-i05-q-half-v1",
+            "request_timing_id": "synthetic-pre-next-event",
+            "route_role": "arithmetic-null-no-route"
+          },
+          "pygrc_runtime_inputs_consumed": false,
+          "q_probe": {
+            "rational": "1/2",
+            "value": 0.5
+          },
+          "randomness_used": false,
+          "record_id": "P2-I3-I05:EQ-POS-HALF:E",
+          "record_type": "p2-i3-br-encounter-response-v1",
+          "record_version": "1.0.0",
+          "source_class": "candidate_blind_arithmetic_synthetic",
+          "validity_status": "valid"
+        }
+      ],
+      "seed_alias": 163,
+      "triplet_result": {
+        "export_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-POS-HALF:O",
+            "P2-I3-I05:EQ-POS-HALF:E"
+          ],
+          "denominator": 0.5,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-POS-HALF",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_export"
+        },
+        "normalized_relations_additive": false,
+        "normalized_relations_are_percentages": false,
+        "normalized_relations_clipped": false,
+        "pair_id": "P2-I3-I05:EQ-POS-HALF",
+        "raw_additive_identity": {
+          "additive_identity_holds": true,
+          "delta_export": 0.0,
+          "delta_formed": 0.0,
+          "delta_trace": 0.0
+        },
+        "record_type": "p2-i3-br-woe-triplet-result-v1",
+        "record_version": "1.0.0",
+        "trace_relation": {
+          "arm_record_ids": [
+            "P2-I3-I05:EQ-POS-HALF:E",
+            "P2-I3-I05:EQ-POS-HALF:W"
+          ],
+          "denominator": 0.5,
+          "denominator_source": "first_arm",
+          "evaluable": true,
+          "nonevaluable_record_ids": [],
+          "normalized_margin": 0.0,
+          "pair_id": "P2-I3-I05:EQ-POS-HALF",
+          "raw_numerator": 0.0,
+          "record_type": "p2-i3-br-normalized-pair-result-v1",
+          "record_version": "1.0.0",
+          "relation_id": "m_trace"
+        }
+      }
+    }
+  ],
+  "evidence_effect": "numeric_measurement_resolution_only",
+  "lane_id": "AE01-L03",
+  "pygrc_runtime_inputs_consumed": false,
+  "randomness_used": false,
+  "response_record_count": 15,
+  "scientific_result": false
+}

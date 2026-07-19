@@ -1,0 +1,618 @@
+{
+  "artifact_id": "P2-I3-I05-BR-CALIBRATION-FREEZE-VALIDATION",
+  "artifact_version": "1.0.2",
+  "branch_id": "P2-I3-BR",
+  "check_count": 42,
+  "checks": [
+    {
+      "check_id": "I05F-001",
+      "evidence": "1097547ad30b77d4cf9312fb05753902f6d1cc81",
+      "finding": "accepted I04 source anchor exists",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-002",
+      "evidence": "passed",
+      "finding": "accepted I04 source anchor is an ancestor",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-003",
+      "evidence": {
+        "freeze": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE",
+        "policy": "P2-I3-I05-BR-ONE-SHOT-POLICY"
+      },
+      "finding": "policy and freeze identities are exact",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-004",
+      "evidence": [
+        "i04_analysis",
+        "i04_machine_policy",
+        "i04_preregistration",
+        "i04_schema",
+        "i04_validation",
+        "i05_builder",
+        "i05_policy",
+        "i05_schema",
+        "i05_tests",
+        "i05_validator",
+        "i05_wrapper",
+        "metric_sheet"
+      ],
+      "finding": "freeze binds the exact twelve-source identity set",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-005",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_analysis.py",
+        "sha256": "e8292c7fbe0f3cb8521e15de354dd8a0a36b9ade80c38b2c8b733858e197bb46"
+      },
+      "finding": "source identity matches: i04_analysis",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-006",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i04_machine_policy.json",
+        "sha256": "9877154766ab9ea26a11c426a8feb8666df1a3f146efb188006a5e0f26a77bf1"
+      },
+      "finding": "source identity matches: i04_machine_policy",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-007",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration.json",
+        "sha256": "d6ffb7fc1604b529ba23cf2574bb17128019749f405df878b32b22819bfb40fc"
+      },
+      "finding": "source identity matches: i04_preregistration",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-008",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-machine-records.schema.json",
+        "sha256": "2e8f3cc72e588b45a641a04a16bf0287f703ee4d91880af6102692553d968e72"
+      },
+      "finding": "source identity matches: i04_schema",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-009",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration-validation.json",
+        "sha256": "153d187c988f8802c674977f07d872c28798cdda78d5296321c55c8eb74a1862"
+      },
+      "finding": "source identity matches: i04_validation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-010",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_calibration.py",
+        "sha256": "d9155c1a1f03c0543b86a47d7d1439c109dd17b71895493879dd6bb7fd6d687f"
+      },
+      "finding": "source identity matches: i05_builder",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-011",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+        "sha256": "3e28501b1a2a4f6c148cb49694d69e4322fbf519b59c8eeea9bd7ae41f7b6282"
+      },
+      "finding": "source identity matches: i05_policy",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-012",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-output.schema.json",
+        "sha256": "94a463ea820683d72742d05b2f9a8757619ee8da8a913b2b16978c9c7805f11a"
+      },
+      "finding": "source identity matches: i05_schema",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-013",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i05_br_freeze.py",
+        "sha256": "b9d266e581b5b0e3077ad3b718e4b52c31f28096bbe4a068927c9dbf35ecc081"
+      },
+      "finding": "source identity matches: i05_tests",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-014",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py",
+        "sha256": "6d419dd3101414d9807d14840d23a7e6a2af99f1e3c96e6f31fd6e076879b385"
+      },
+      "finding": "source identity matches: i05_validator",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-015",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+        "sha256": "083bc2cfa21553456c8d104e40979cfc0a7448c9346ab5b50ef9b8c66fd4e758"
+      },
+      "finding": "source identity matches: i05_wrapper",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-016",
+      "evidence": {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L03.json",
+        "sha256": "757247854da122836d69971a9f111922a1734ba6a89b489df411273fd2576123"
+      },
+      "finding": "source identity matches: metric_sheet",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-017",
+      "evidence": "e8292c7fbe0f3cb8521e15de354dd8a0a36b9ade80c38b2c8b733858e197bb46",
+      "finding": "accepted I04 identity is unchanged: analysis",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-018",
+      "evidence": "9877154766ab9ea26a11c426a8feb8666df1a3f146efb188006a5e0f26a77bf1",
+      "finding": "accepted I04 identity is unchanged: machine_policy",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-019",
+      "evidence": "2e8f3cc72e588b45a641a04a16bf0287f703ee4d91880af6102692553d968e72",
+      "finding": "accepted I04 identity is unchanged: machine_schema",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-020",
+      "evidence": "757247854da122836d69971a9f111922a1734ba6a89b489df411273fd2576123",
+      "finding": "accepted I04 identity is unchanged: metric_sheet",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-021",
+      "evidence": "d6ffb7fc1604b529ba23cf2574bb17128019749f405df878b32b22819bfb40fc",
+      "finding": "accepted I04 identity is unchanged: preregistration",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-022",
+      "evidence": "153d187c988f8802c674977f07d872c28798cdda78d5296321c55c8eb74a1862",
+      "finding": "accepted I04 identity is unchanged: retained_validation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-023",
+      "evidence": {
+        "calibrated_relation_ids": [
+          "m_trace",
+          "m_export"
+        ],
+        "candidate_shaped_arguments_allowed": false,
+        "carrier_formula": "c_pre_m_e = 1/2 + registered_margin",
+        "construction_id": "p2-i3-i05-q-half-v1",
+        "entered_margin_count": 10,
+        "exact_difference_requirement": "c_pre_m_e - q_probe = registered_margin",
+        "exact_entered_case_ids": [
+          "EQ-NEG-HALF",
+          "EQ-NEG-QUARTER",
+          "EQ-ZERO",
+          "EQ-POS-QUARTER",
+          "EQ-POS-HALF"
+        ],
+        "exact_excluded_conformance_case_ids": [
+          "TRACE-FIRST-DOM-POS",
+          "TRACE-SECOND-DOM-NEG",
+          "EXPORT-FIRST-DOM-POS",
+          "EXPORT-SECOND-DOM-NEG",
+          "FLOOR-DOM-POS",
+          "FLOOR-EQUALITY",
+          "TRACE-CROSS-ZERO",
+          "EXPORT-CROSS-ZERO"
+        ],
+        "margins_per_case": {
+          "m_export": 1,
+          "m_trace": 1
+        },
+        "maximum_carrier_coherence": "1",
+        "minimum_carrier_coherence": "0",
+        "q_probe": {
+          "rational": "1/2",
+          "value": 0.5
+        },
+        "request_semantics": "one identical arithmetic probe request across W/O/E and all five exact-null cases",
+        "scientific_reuse": "prohibited from I06 and I08 registration and execution",
+        "shared_delta_formula": "max(measurement_resolution, max(abs(m_trace[c]), abs(m_export[c])) for c in entered_case_ids)"
+      },
+      "finding": "DEC-041 half-unit arithmetic construction is exact and bounded",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-024",
+      "evidence": {
+        "candidate_artifacts_allowed": false,
+        "candidate_execution_authorized": false,
+        "candidate_seed_values_allowed": false,
+        "candidate_shaped_inputs_allowed": false,
+        "pygrc_import_allowed": false,
+        "pygrc_runtime_inputs_allowed": false,
+        "scientific_effect": "none"
+      },
+      "finding": "candidate and PyGRC inputs are mechanically prohibited",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-025",
+      "evidence": {
+        "activation_record_required": true,
+        "builder_invocations": 1,
+        "calibration_invocation_authorized": false,
+        "candidate_execution_authorized": false,
+        "exact_null_case_count": 5,
+        "expected_delta_if_valid": "1/1000000000000",
+        "expected_response_record_count": 15,
+        "expected_triplet_count": 5,
+        "non_delta_conformance_case_count": 8,
+        "randomness_used": false
+      },
+      "finding": "the inactive invocation has the exact finite calibration envelope",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-025A",
+      "evidence": {
+        "calibrated_relation_ids": [
+          "m_trace",
+          "m_export"
+        ],
+        "entered_case_ids": [
+          "EQ-NEG-HALF",
+          "EQ-NEG-QUARTER",
+          "EQ-ZERO",
+          "EQ-POS-QUARTER",
+          "EQ-POS-HALF"
+        ],
+        "entered_margin_count": 10
+      },
+      "finding": "shared delta is explicitly bound to both estimators and all ten margins",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-026",
+      "evidence": {
+        "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
+        "claim_deletion_forbidden": true,
+        "claim_parent_directory_fsync_required": true,
+        "claim_survives_failure": true,
+        "consume_before_builder": true,
+        "max_governed_attempts": 1,
+        "max_infrastructure_retries": 0
+      },
+      "finding": "one permanent pre-builder claim and zero retries are frozen",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-027",
+      "evidence": {
+        "attempt_claim": false,
+        "final_receipt": false,
+        "frozen_metric_sheet": false,
+        "matched_null": false,
+        "metric_calibration": false
+      },
+      "finding": "all governed outputs and the permanent claim are absent",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-028",
+      "evidence": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+      "finding": "separate launch authorization is absent",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-029",
+      "evidence": [
+        ".venv/bin/python",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+        "--policy",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+        "--activation",
+        "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+        "--expected-head",
+        "<OWNER_AUTHORIZED_FULL_HEAD>"
+      ],
+      "finding": "future launch command is exact and repository-relative",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-030",
+      "evidence": [
+        "__future__",
+        "ae01_tooling",
+        "argparse",
+        "ast",
+        "fractions",
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "jsonschema",
+        "math",
+        "os",
+        "p2_i3_i04_br_analysis",
+        "p2_i3_i05_br_calibration",
+        "pathlib",
+        "platform",
+        "referencing",
+        "subprocess",
+        "sys",
+        "typing"
+      ],
+      "finding": "builder, wrapper, and validator import no PyGRC module",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-031",
+      "evidence": [
+        "i04_policy",
+        "metric_sheet",
+        "source_metric_sheet_sha256"
+      ],
+      "finding": "complete builder accepts only frozen authority inputs",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-032",
+      "evidence": "claim < post-claim revalidation < import < invocation",
+      "finding": "permanent durable claim and post-claim revalidation precede builder import and invocation",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-033",
+      "evidence": {
+        "definitions": [
+          "attempt_claim",
+          "authority",
+          "authority_sha256",
+          "case_ids",
+          "commit",
+          "excluded_ids",
+          "final_receipt",
+          "frozen_metric_sheet",
+          "governed_paths",
+          "launch_authorization",
+          "matched_null",
+          "metric_calibration",
+          "null_case",
+          "output_binding",
+          "positive_zero",
+          "process_environment",
+          "rational_value",
+          "relation_ids",
+          "resolution",
+          "sha256"
+        ],
+        "root_classes": 6
+      },
+      "finding": "I05 schema closes three outputs plus activation, claim, and final receipt",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-033A",
+      "evidence": {
+        "activation": {
+          "exact_bindings": [
+            "accepted freeze commit and digest",
+            "policy/freeze/wrapper/builder/schema/validator digests",
+            "normalized command prefix",
+            "interpreter and process environment",
+            "attempt-claim and all governed paths",
+            "one calibration invocation and zero candidate invocations"
+          ],
+          "launch_head_binding_method": "runtime_expected_head_verified_clean_and_retained_in_claim_and_receipt",
+          "record_class": "launch_authorization",
+          "schema_id": "urn:rcae:ae01:p2-i3:i05-br-calibration-output:1.0.2",
+          "values_deferred_until_owner_launch": [
+            "accepted_freeze_commit",
+            "freeze_sha256"
+          ]
+        },
+        "attempt_claim": {
+          "attempt_consumed_on_creation": true,
+          "durability": "claim file and containing directory fsynced before builder import",
+          "post_claim_revalidation": "HEAD, clean status except exact claim, activation, authority bytes, environment, and remaining output absence",
+          "required_bindings": [
+            "claim_id",
+            "activation path and digest",
+            "launch HEAD",
+            "accepted freeze commit and digest",
+            "policy/freeze/wrapper/builder/schema/validator digests",
+            "normalized command",
+            "interpreter and environment",
+            "all governed output paths",
+            "attempt 1 and builder ceiling 1"
+          ],
+          "schema_record_class": "attempt_claim"
+        },
+        "final_receipt": {
+          "required_success_evidence": [
+            "claim and activation identity/digest",
+            "launch HEAD and builder count",
+            "15 response records and 5 triplets",
+            "all scientific output paths and digests",
+            "schema and semantic validation",
+            "exact canonical readback",
+            "shared delta for m_trace and m_export",
+            "consumed attempt and successful status",
+            "retained second-start refusal"
+          ],
+          "schema_record_class": "final_receipt"
+        },
+        "output_admission": {
+          "cal_gate_effect_without_successful_receipt": "closed",
+          "delta_admitted_without_successful_receipt": false,
+          "failed_or_missing_receipt_effect": "attempt remains consumed; partial outputs remain quarantined",
+          "requires_exact_receipt_output_digests": true,
+          "requires_schema_and_semantic_validation": true
+        }
+      },
+      "finding": "semantic readback and fail-closed output admission are mechanically bound",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-033B",
+      "evidence": [
+        "accepted_freeze_commit",
+        "artifact_id",
+        "artifact_version",
+        "attempt_claim_path",
+        "authority_sha256",
+        "branch_id",
+        "calibration_invocation_authorized",
+        "candidate_execution_authorized",
+        "freeze_artifact_id",
+        "freeze_sha256",
+        "governed_invocations_authorized",
+        "governed_paths",
+        "interpreter_environment",
+        "iteration_id",
+        "lane_id",
+        "launch_head_binding_method",
+        "normalized_command_prefix",
+        "owner_accepted_freeze"
+      ],
+      "finding": "launch authorization meaning is frozen without a circular self-commit field",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-033C",
+      "evidence": "exact_triplet_margins plus retained exact entered-margin ledger",
+      "finding": "delta inputs are derived from exact rational response fields before projection",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-033D",
+      "evidence": {
+        "failure_boundaries": 13,
+        "file_and_parent_fsync": true,
+        "post_claim_status": "exact claim only"
+      },
+      "finding": "durability, TOCTOU closure, and thirteen fail-closed transaction boundaries are tested",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-034",
+      "evidence": {
+        "interpreter_command": ".venv/bin/python",
+        "jsonschema": "4.26.0",
+        "pytest": "9.1.1",
+        "python": "3.12.3"
+      },
+      "finding": "active .venv and frozen packages/interpreter are available",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-035",
+      "evidence": [],
+      "finding": "freeze validation loaded no PyGRC module",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-036",
+      "evidence": {
+        "calibration_invocations": 0,
+        "candidate_execution_authorized": false,
+        "delta_assigned": false,
+        "freeze_active": false,
+        "next_permitted_action": "owner review and retention commit only",
+        "scientific_result": false
+      },
+      "finding": "freeze is inactive and opens no calibration or scientific authority",
+      "status": "passed"
+    },
+    {
+      "check_id": "I05F-037",
+      "evidence": 50,
+      "finding": "focused zero-calibration test count is frozen",
+      "status": "passed"
+    }
+  ],
+  "evidence_effect": "inactive_invocation_integrity_only",
+  "gate_boundary": {
+    "calibration_invocations": 0,
+    "candidate_execution_authorized": false,
+    "delta_assigned": false,
+    "freeze_active": false,
+    "next_permitted_action": "owner review and retention commit only",
+    "scientific_result": false
+  },
+  "iteration_id": "P2-I3-I05",
+  "lane_id": "AE01-L03",
+  "reconstruction": {
+    "artifact_construction_command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py --artifact-construction --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-freeze-validation.json",
+    "compare_command": "cmp experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-freeze-validation.json outputs/reconstruction/p2-i3-i05-freeze-validation.reconstructed.json",
+    "rebuild_command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py --output outputs/reconstruction/p2-i3-i05-freeze-validation.reconstructed.json"
+  },
+  "source_hashes": {
+    "i04_analysis": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_analysis.py",
+      "sha256": "e8292c7fbe0f3cb8521e15de354dd8a0a36b9ade80c38b2c8b733858e197bb46"
+    },
+    "i04_machine_policy": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i04_machine_policy.json",
+      "sha256": "9877154766ab9ea26a11c426a8feb8666df1a3f146efb188006a5e0f26a77bf1"
+    },
+    "i04_preregistration": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration.json",
+      "sha256": "d6ffb7fc1604b529ba23cf2574bb17128019749f405df878b32b22819bfb40fc"
+    },
+    "i04_schema": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-machine-records.schema.json",
+      "sha256": "2e8f3cc72e588b45a641a04a16bf0287f703ee4d91880af6102692553d968e72"
+    },
+    "i04_validation": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration-validation.json",
+      "sha256": "153d187c988f8802c674977f07d872c28798cdda78d5296321c55c8eb74a1862"
+    },
+    "i05_builder": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_calibration.py",
+      "sha256": "d9155c1a1f03c0543b86a47d7d1439c109dd17b71895493879dd6bb7fd6d687f"
+    },
+    "i05_policy": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+      "sha256": "3e28501b1a2a4f6c148cb49694d69e4322fbf519b59c8eeea9bd7ae41f7b6282"
+    },
+    "i05_schema": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-output.schema.json",
+      "sha256": "94a463ea820683d72742d05b2f9a8757619ee8da8a913b2b16978c9c7805f11a"
+    },
+    "i05_tests": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i05_br_freeze.py",
+      "sha256": "b9d266e581b5b0e3077ad3b718e4b52c31f28096bbe4a068927c9dbf35ecc081"
+    },
+    "i05_validator": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py",
+      "sha256": "6d419dd3101414d9807d14840d23a7e6a2af99f1e3c96e6f31fd6e076879b385"
+    },
+    "i05_wrapper": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+      "sha256": "083bc2cfa21553456c8d104e40979cfc0a7448c9346ab5b50ef9b8c66fd4e758"
+    },
+    "metric_sheet": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L03.json",
+      "sha256": "757247854da122836d69971a9f111922a1734ba6a89b489df411273fd2576123"
+    }
+  },
+  "status": "inactive_freeze_review_ready",
+  "test_count": 50,
+  "validator": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py",
+    "sha256": "6d419dd3101414d9807d14840d23a7e6a2af99f1e3c96e6f31fd6e076879b385"
+  }
+}

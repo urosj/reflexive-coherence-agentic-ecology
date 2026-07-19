@@ -1,0 +1,594 @@
+{
+  "artifact_version": "1.0.1",
+  "authority": {
+    "decision_ids": [
+      "P2-I3-DEC-036",
+      "P2-I3-DEC-037",
+      "P2-I3-DEC-038",
+      "P2-I3-DEC-039",
+      "P2-I3-DEC-040"
+    ],
+    "rcae_source_anchor": "4c5b49153cf42ea4893f4bf42538bce79138a7b4",
+    "source_artifacts": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-decision-record.md",
+        "sha256": "52d3aa40b6fc0794b88a2a39203312fea6ae8cf4976222a40f9303279211be00"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-checklist.md",
+        "sha256": "799a13a8aea4da24a7a3fb1f9e9b7d26a86252e56268413540e290eb5c3d1868"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-operational-hypotheses.json",
+        "sha256": "858f3979c09ea4d984018b99e71f2286003d58d4dbb0007e0a949c197c124eaa"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-contrast-and-restoration-design.json",
+        "sha256": "b961c3bb69f7d4c0cf14a8d50d0929a68474e7a1b949013620cfda56dc92b253"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i02-source-admission-manifest.json",
+        "sha256": "c1194085c6a55e783ce739f5a22a75e89b9eb1ab237f6bec3199853426ab343f"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/common-contract.md",
+        "sha256": "d2272c79e191543374fd76a1b381ead9227a206ef084f58d2ab6fb191324676f"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L03.json",
+        "sha256": "757247854da122836d69971a9f111922a1734ba6a89b489df411273fd2576123"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p1_i5_execution_policy.json",
+        "sha256": "b161d8e1f07889b6121032aacae501ebcd0669bd017aa9c1caf91d2f9a38234d"
+      }
+    ]
+  },
+  "branch_id": "P2-I3-BR",
+  "calibration": {
+    "candidate_seed_exclusions": [
+      101,
+      211,
+      307
+    ],
+    "delta_policy": {
+      "existing_metric_sheet_field": "delta",
+      "expected_value_if_all_panel_a_margins_are_zero": "1/1000000000000",
+      "formula": "max(1e-12, maximum absolute Panel A matched-null margin)",
+      "generated_value_status": "pending_I05",
+      "panel_b_through_e_may_enter_delta": false
+    },
+    "epsilon_mu": {
+      "rational": "1/1000000000000",
+      "role": "existing metric-sheet denominator floor; not a scientific-effect threshold",
+      "value": 1e-12
+    },
+    "panel_a_exact_null": [
+      {
+        "case_id": "EQ-NEG-HALF",
+        "seed_alias": 19,
+        "values": {
+          "E": "-1/2",
+          "O": "-1/2",
+          "W": "-1/2"
+        }
+      },
+      {
+        "case_id": "EQ-NEG-QUARTER",
+        "seed_alias": 43,
+        "values": {
+          "E": "-1/4",
+          "O": "-1/4",
+          "W": "-1/4"
+        }
+      },
+      {
+        "case_id": "EQ-ZERO",
+        "seed_alias": 71,
+        "values": {
+          "E": "0",
+          "O": "0",
+          "W": "0"
+        }
+      },
+      {
+        "case_id": "EQ-POS-QUARTER",
+        "seed_alias": 109,
+        "values": {
+          "E": "1/4",
+          "O": "1/4",
+          "W": "1/4"
+        }
+      },
+      {
+        "case_id": "EQ-POS-HALF",
+        "seed_alias": 163,
+        "values": {
+          "E": "1/2",
+          "O": "1/2",
+          "W": "1/2"
+        }
+      }
+    ],
+    "panel_a_rules": {
+      "calibration_case_identity": "case_id plus pair_id; seed is an inert schema-compatible alias",
+      "expected_export_margin": "+0",
+      "expected_trace_margin": "+0",
+      "only_panel_entering_delta": true,
+      "randomness_used": false,
+      "serialization_negative_zero_forbidden": true
+    },
+    "panels_b_c_estimator_conformance": [
+      {
+        "assertions": [
+          "m_trace_positive",
+          "m_export_positive_zero",
+          "trace_denominator_first_arm"
+        ],
+        "case_id": "TRACE-FIRST-DOM-POS",
+        "values": {
+          "E": "250000000001/1000000000000",
+          "O": "250000000001/1000000000000",
+          "W": "1/4"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_negative",
+          "m_export_positive_zero",
+          "trace_denominator_second_arm"
+        ],
+        "case_id": "TRACE-SECOND-DOM-NEG",
+        "values": {
+          "E": "1/4",
+          "O": "1/4",
+          "W": "250000000001/1000000000000"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_positive_zero",
+          "m_export_positive",
+          "export_denominator_first_arm"
+        ],
+        "case_id": "EXPORT-FIRST-DOM-POS",
+        "values": {
+          "E": "1/4",
+          "O": "250000000001/1000000000000",
+          "W": "1/4"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_positive_zero",
+          "m_export_negative",
+          "export_denominator_second_arm"
+        ],
+        "case_id": "EXPORT-SECOND-DOM-NEG",
+        "values": {
+          "E": "250000000001/1000000000000",
+          "O": "1/4",
+          "W": "250000000001/1000000000000"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_equals_one_half",
+          "m_export_positive_zero",
+          "trace_denominator_epsilon_mu"
+        ],
+        "case_id": "FLOOR-DOM-POS",
+        "values": {
+          "E": "1/2000000000000",
+          "O": "1/2000000000000",
+          "W": "0"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_equals_one",
+          "m_export_positive_zero",
+          "trace_denominator_epsilon_mu"
+        ],
+        "case_id": "FLOOR-EQUALITY",
+        "values": {
+          "E": "1/1000000000000",
+          "O": "1/1000000000000",
+          "W": "0"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_equals_two",
+          "m_export_positive_zero",
+          "unclipped",
+          "non_dyadic_round_trip"
+        ],
+        "case_id": "TRACE-CROSS-ZERO",
+        "values": {
+          "E": "1/10",
+          "O": "1/10",
+          "W": "-1/10"
+        }
+      },
+      {
+        "assertions": [
+          "m_trace_positive_zero",
+          "m_export_equals_two",
+          "unclipped",
+          "non_dyadic_round_trip"
+        ],
+        "case_id": "EXPORT-CROSS-ZERO",
+        "values": {
+          "E": "-1/10",
+          "O": "1/10",
+          "W": "-1/10"
+        }
+      }
+    ],
+    "panels_b_c_rules": {
+      "calibration_effect": "none",
+      "intentionally_nonzero_margins_enter_delta": false,
+      "required_properties_are_authoritative": true,
+      "runtime_noise_effect": "none"
+    },
+    "panel_d_reconstruction": {
+      "byte_exact_output_required": true,
+      "canonical_positive_zero_required": true,
+      "complete_record_round_trip_required": true,
+      "route": [
+        "construct complete typed raw W/O/E response records",
+        "canonicalize and serialize",
+        "reload through p2_i3_i04_br_analysis",
+        "compute m_trace and m_export independently",
+        "serialize complete calibration/conformance artifact",
+        "reconstruct exact bytes and semantic projection"
+      ]
+    },
+    "panel_e_validity_missingness": [
+      "valid admitted arm is included",
+      "valid field_limited_refusal with negative mu is included",
+      "invalid arm makes its required pair nonevaluable",
+      "one valid and one invalid arm never permits surviving-arm substitution",
+      "mu/disposition sign mismatch is invalid rather than scientific",
+      "eligible-zero and same-side movement remain valid when complete records validate"
+    ]
+  },
+  "candidate_blind_boundary": {
+    "accepted_inputs": [
+      "this frozen machine policy",
+      "bound authority identities",
+      "the closed machine-record schema",
+      "pure analysis module identity"
+    ],
+    "forbidden_inputs": [
+      "PyGRC imports, models, snapshots, runtime values, or execution",
+      "candidate artifacts, outcomes, seeds, values, topology, schedules, or configuration",
+      "I03 conformance fixture topology, values, outcomes, split, digests, or margins",
+      "N31 candidate outputs or provider observations",
+      "earlier-lane calibration values or outputs as numeric inputs",
+      "scientific controls disguised as arithmetic nulls",
+      "post-outcome tuning"
+    ],
+    "generator_accepts_candidate_shaped_arguments": false,
+    "i04_calibration_invocations": 0,
+    "i04_candidate_or_control_invocations": 0,
+    "i04_pygrc_model_instantiations": 0
+  },
+  "control_governance": {
+    "closeout_rules": {
+      "blocked_incomplete_or_missing_surface": "unavailable scientific legs may remain only when each is explicit and no support or refutation is inferred from absence",
+      "every_closeout": "all source, identity, reconstruction, ownership, fixture-lock, and terminal-language guards resolved",
+      "not_supported": "every claim-mandatory scientific leg completed with valid evidence",
+      "supported_rung_or_tag": "every leg mandatory for the rung or tag resolved without a claim-blocking disposition"
+    },
+    "common_control_legs": [
+      {"applicability":"applicable","control_class":"provenance_guard","description":"conceptual motivation remains non-runtime and non-ecology evidence","evidence_types":["inherited/source verification"],"leg_id":"P2-I3-BR-CTRL-01-LEG-01-CONCEPTUAL-PROVENANCE","parent_control_id":"AE01-CTRL-01"},
+      {"applicability":"applicable","control_class":"source_ceiling_guard","description":"N30 retains original trace-mediated eligibility ceiling","evidence_types":["inherited/source verification","terminal report guard"],"leg_id":"P2-I3-BR-CTRL-02-LEG-01-N30-CEILING","parent_control_id":"AE01-CTRL-02"},
+      {"applicability":"applicable","control_class":"source_ceiling_guard","description":"N29 components cannot substitute for fresh P2-I3 composition evidence","evidence_types":["inherited/source verification","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-03-LEG-01-N29-COMPONENT-COMPOSITION","parent_control_id":"AE01-CTRL-03"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"participant and field identities remain separate","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-04-LEG-01-PARTICIPANT-FIELD-BOUNDARY","parent_control_id":"AE01-CTRL-04"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"ordered OP-01 through OP-05 chain rather than passive environment","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-04-LEG-02-CAUSAL-CHAIN","parent_control_id":"AE01-CTRL-04"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"exclude private and global routing","evidence_types":["causal-chain evidence","registration guard"],"leg_id":"P2-I3-BR-CTRL-05-LEG-01-NONPRIVATE-LOCAL-CARRIER","parent_control_id":"AE01-CTRL-05"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"surface dependence through withdrawal relocation shuffle and false trace","evidence_types":["withdrawal comparison","numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-06-LEG-01-SURFACE-DEPENDENCE","parent_control_id":"AE01-CTRL-06"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"ordered formation field dynamic and encounter handoff","evidence_types":["causal-chain evidence","numeric execution comparison"],"leg_id":"P2-I3-BR-CTRL-07-LEG-01-ORDERED-COMPOSITION","parent_control_id":"AE01-CTRL-07"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"omit B-R export policy under registered comparison","evidence_types":["withdrawal comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-08-LEG-01-EXPORT-POLICY-OMISSION","parent_control_id":"AE01-CTRL-08"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"omit or neutralize lifecycle scheduling separately from the O arm","evidence_types":["withdrawal comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-08-LEG-02-LIFECYCLE-SCHEDULE","parent_control_id":"AE01-CTRL-08"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"verify blind encounter adapter boundary","evidence_types":["registration guard","causal-chain evidence","reconstruction evidence"],"leg_id":"P2-I3-BR-CTRL-08-LEG-03-ENCOUNTER-ADAPTER-BOUNDARY","parent_control_id":"AE01-CTRL-08"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"classify composite coordination dependence by producer-cost class","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-08-LEG-04-COMPOSITE-COORDINATION","parent_control_id":"AE01-CTRL-08"},
+      {"applicability":"applicable","control_class":"runtime_validity_guard","description":"verify nonzero attributable formation cost","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-09-LEG-01-FORMATION-COST","parent_control_id":"AE01-CTRL-09"},
+      {"applicability":"applicable","control_class":"runtime_validity_guard","description":"global native plus in-flight coherence conservation","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-09-LEG-02-GLOBAL-CONSERVATION","parent_control_id":"AE01-CTRL-09"},
+      {"applicability":"applicable","control_class":"runtime_validity_guard","description":"detect unregistered leakage","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-09-LEG-03-UNREGISTERED-LEAKAGE","parent_control_id":"AE01-CTRL-09"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"verify isolated reservoir has no continuation influence","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-09-LEG-04-RESERVOIR-ISOLATION","parent_control_id":"AE01-CTRL-09"},
+      {"applicability":"applicable","control_class":"scientific_comparison","description":"separate export mass from organization specificity","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-09-LEG-05-EXPORT-MASS-ORGANIZATION","parent_control_id":"AE01-CTRL-09"},
+      {"applicability":"applicable","control_class":"terminal_semantic_guard","description":"preserve parent-context and motif/regime claim prohibition","evidence_types":["terminal report guard"],"leg_id":"P2-I3-BR-CTRL-10-LEG-01-PARENT-CONTEXT-CLAIM-GUARD","parent_control_id":"AE01-CTRL-10"},
+      {"applicability":"not_applicable","control_class":"causal_intervention","description":"no registered parent basin exists in the B-R realization","evidence_types":["registration guard"],"leg_id":"P2-I3-BR-CTRL-10-LEG-02-PARENT-BASIN-COMPARISON","parent_control_id":"AE01-CTRL-10"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"separate source carrier reservoir continuation participant and route roles","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-11-LEG-01-PARTICIPANT-MEDIUM-BOUNDARY","parent_control_id":"AE01-CTRL-11"},
+      {"applicability":"applicable","control_class":"terminal_semantic_guard","description":"enforce bounded trail and stigmergic vocabulary","evidence_types":["terminal report guard"],"leg_id":"P2-I3-BR-CTRL-12-LEG-01-SEMANTIC-CEILING","parent_control_id":"AE01-CTRL-12"},
+      {"applicability":"applicable","control_class":"terminal_semantic_guard","description":"keep Q-021 branch comparison distinct from seven-lane successor ranking","evidence_types":["terminal report guard"],"leg_id":"P2-I3-BR-CTRL-13-LEG-01-RANKING-SEPARATION","parent_control_id":"AE01-CTRL-13"},
+      {"applicability":"applicable","control_class":"source_ceiling_guard","description":"ecology demand is never native substrate evidence","evidence_types":["inherited/source verification","terminal report guard"],"leg_id":"P2-I3-BR-CTRL-14-LEG-01-DEMAND-NATIVE-SEPARATION","parent_control_id":"AE01-CTRL-14"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"constructed B-R remains RCAE until explicit native transition and rerun","evidence_types":["registration guard","reconstruction evidence","terminal report guard"],"leg_id":"P2-I3-BR-CTRL-15-LEG-01-CONSTRUCTED-NATIVE-TRANSITION","parent_control_id":"AE01-CTRL-15"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"construction completeness necessity minimality counterfactual and debt","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-CTRL-16-LEG-01-CONSTRUCTION-COMPLETENESS","parent_control_id":"AE01-CTRL-16"},
+      {"applicability":"applicable","control_class":"runtime_validity_guard","description":"exact live PyGRC binding and no fallback","evidence_types":["registration guard","reconstruction evidence"],"leg_id":"P2-I3-BR-CTRL-17-LEG-01-RUNTIME-SOURCE-BINDING","parent_control_id":"AE01-CTRL-17"},
+      {"applicability":"applicable","control_class":"reconstruction_guard","description":"before and after state receipts and runtime identity reconstruct","evidence_types":["reconstruction evidence"],"leg_id":"P2-I3-BR-CTRL-17-LEG-02-RUNTIME-RECONSTRUCTION","parent_control_id":"AE01-CTRL-17"},
+      {"applicability":"applicable","control_class":"terminal_semantic_guard","description":"fixture cannot become motif regime or domain package","evidence_types":["terminal report guard"],"leg_id":"P2-I3-BR-CTRL-18-LEG-01-FIXTURE-PROMOTION-LOCK","parent_control_id":"AE01-CTRL-18"},
+      {"applicability":"applicable","control_class":"terminal_semantic_guard","description":"completion-sensitive terminal classification","evidence_types":["reconstruction evidence","terminal report guard"],"leg_id":"P2-I3-BR-CTRL-19-LEG-01-COMPLETION-CLASSIFICATION","parent_control_id":"AE01-CTRL-19"}
+    ],
+    "diagnostic_resolution_rule": "a control resolves when valid evidence distinguishes and classifies alternatives; preferred direction is not required",
+    "false_trace_interpretation": {
+      "carrier_matched_divergence": "omitted current state versus active history remains unresolved",
+      "carrier_matched_reproduction": "supports carrier-value sufficiency for the tested encounter only",
+      "causal_projection_matched_reproduction": "may support current-composite-state sufficiency",
+      "costly_formation_effect": "unsupported in every false-installation arm"
+    },
+    "initial_status_by_applicability": {
+      "applicable_or_conditional": {
+        "control_resolution": "unresolved",
+        "evidence_resolution": "not_evaluated",
+        "execution_status": "not_due",
+        "terminal_guard_status": "not_armed"
+      },
+      "not_applicable": {
+        "control_resolution": "resolved",
+        "evidence_resolution": "not_evaluated",
+        "execution_status": "not_due",
+        "terminal_guard_status": "not_applicable"
+      }
+    },
+    "lane_control_legs": [
+      {"applicability":"applicable","control_class":"causal_intervention","description":"W versus E deposition withdrawal with cost and attribution","evidence_types":["withdrawal comparison","numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-01-LEG-01-DEPOSITION-WITHDRAWAL","parent_control_id":"AE01-L03-CTRL-01"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"relocate complete carrier and continuation state","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-02-LEG-01-COMPLETE-STATE-RELOCATION","parent_control_id":"AE01-L03-CTRL-02"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"role-preserving raw-ID permutation without route labels","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-02-LEG-02-ROLE-ID-PERMUTATION","parent_control_id":"AE01-L03-CTRL-02"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"match C(m_e) and encounter while removing valid depositor history","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-03-LEG-01-CARRIER-MATCHED-FALSE-TRACE","parent_control_id":"AE01-L03-CTRL-03"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"match every continuation-causal field except formation lineage and cost","evidence_types":["numeric execution comparison","causal-chain evidence","reconstruction evidence"],"leg_id":"P2-I3-BR-L03-CTRL-03-LEG-02-CAUSAL-PROJECTION-MATCHED-FALSE-TRACE","parent_control_id":"AE01-L03-CTRL-03"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"O versus E lifecycle contrast","evidence_types":["withdrawal comparison","numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-04-LEG-01-O-E-LIFECYCLE","parent_control_id":"AE01-L03-CTRL-04"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"equal-carrier clamp","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-04-LEG-02-EQUAL-CARRIER-CLAMP","parent_control_id":"AE01-L03-CTRL-04"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"reservoir clamp","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-04-LEG-03-RESERVOIR-CLAMP","parent_control_id":"AE01-L03-CTRL-04"},
+      {"applicability":"applicable","control_class":"scientific_comparison","description":"export-mass and organization comparison","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-04-LEG-04-EXPORT-MASS-ORGANIZATION","parent_control_id":"AE01-L03-CTRL-04"},
+      {"applicability":"applicable","control_class":"scientific_comparison","description":"eligible-zero and floor classification","evidence_types":["numeric execution comparison","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-04-LEG-05-ELIGIBLE-ZERO-FLOOR","parent_control_id":"AE01-L03-CTRL-04"},
+      {"applicability":"applicable","control_class":"causal_intervention","description":"fixed branch-local requests without shared selector","evidence_types":["registration guard","causal-chain evidence"],"leg_id":"P2-I3-BR-L03-CTRL-05-LEG-01-FIXED-BRANCH-REQUESTS","parent_control_id":"AE01-L03-CTRL-05"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"forbid cross-route field history label and outcome reads","evidence_types":["registration guard","causal-chain evidence","reconstruction evidence"],"leg_id":"P2-I3-BR-L03-CTRL-05-LEG-02-FORBIDDEN-CROSS-ROUTE-READS","parent_control_id":"AE01-L03-CTRL-05"},
+      {"applicability":"applicable","control_class":"ownership_or_boundary_guard","description":"same-participant evidence cannot receive stigmergic tag","evidence_types":["registration guard","terminal report guard"],"leg_id":"P2-I3-BR-L03-CTRL-05-LEG-03-PARTICIPANT-TAG-BOUNDARY","parent_control_id":"AE01-L03-CTRL-05"}
+    ],
+    "leg_policy_registry": {
+      "P2-I3-BR-CTRL-01-LEG-01-CONCEPTUAL-PROVENANCE": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"conceptual sources remain motivation only; failure blocks their use as runtime or ecology evidence without changing independent fresh evidence","invalidity_effect":"block source-derived claim and affected evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-CLAIM-03-NATIVE-RCAE-ATTRIBUTION"],"terminal_guard_role":"none","unavailability_effect":"blocked or missing-surface source disposition with no support or refutation"},
+      "P2-I3-BR-CTRL-02-LEG-01-N30-CEILING": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"blocks relabeling inherited N30 evidence as a fresh P2-I3 ecology result","invalidity_effect":"block source-ceiling claim and affected terminal wording only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-13","P2-I3-BR-CLAIM-04-TRAIL-STIGMERGIC-PARTICIPANT"],"terminal_guard_role":"preterminal_guard_armed_I09","unavailability_effect":"blocked source-ceiling closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-03-LEG-01-N29-COMPONENT-COMPOSITION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"blocks treating inherited components as fresh evidence for the composed OP-01-through-OP-05 relation","invalidity_effect":"block composed ecology claim while preserving separately valid component observations","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","P2-I3-BR-OP-02","P2-I3-BR-OP-03","P2-I3-BR-OP-04","P2-I3-BR-OP-05"],"terminal_guard_role":"none","unavailability_effect":"blocked source-composition closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-04-LEG-01-PARTICIPANT-FIELD-BOUNDARY": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"blocks participant-relative and field-mediated interpretation when participant and field identities are not independent","invalidity_effect":"invalidate affected causal-chain evidence while preserving unrelated structural observations","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","P2-I3-BR-OP-02","P2-I3-BR-OP-13"],"terminal_guard_role":"none","unavailability_effect":"blocked boundary or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-04-LEG-02-CAUSAL-CHAIN": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"non-supportive valid outcomes classify the chain; absence of an ordered OP-01-through-OP-05 relation blocks R03 and higher without erasing lower observations","invalidity_effect":"invalidate the affected causal comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","P2-I3-BR-OP-02","P2-I3-BR-OP-03","P2-I3-BR-OP-04","P2-I3-BR-OP-05"],"terminal_guard_role":"none","unavailability_effect":"blocked or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-05-LEG-01-NONPRIVATE-LOCAL-CARRIER": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"private or global routing blocks the non-private route-local field interpretation","invalidity_effect":"invalidate affected locality evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-02","P2-I3-BR-OP-04","P2-I3-BR-OP-11"],"terminal_guard_role":"none","unavailability_effect":"blocked locality or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-06-LEG-01-SURFACE-DEPENDENCE": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"valid generic or counterdirectional outcomes classify surface dependence; failure to isolate the surface blocks R04 specificity","invalidity_effect":"invalidate affected surface comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-09","P2-I3-BR-OP-10"],"terminal_guard_role":"none","unavailability_effect":"blocked intervention or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-07-LEG-01-ORDERED-COMPOSITION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"temporal co-occurrence without ordered handoffs blocks the composed field-to-encounter claim","invalidity_effect":"invalidate affected ordered-composition evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","P2-I3-BR-OP-02","P2-I3-BR-OP-03","P2-I3-BR-OP-04","P2-I3-BR-OP-05"],"terminal_guard_role":"none","unavailability_effect":"blocked handoff or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-08-LEG-01-EXPORT-POLICY-OMISSION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"classifies export-producer dependence without invalidating an honestly constructed observation; dependence blocks a native qualifier","invalidity_effect":"invalidate affected omission comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03","P2-I3-BR-OP-05","P2-I3-BR-OP-10","P2-I3-BR-CLAIM-01-PRODUCER-DEPENDENCE"],"terminal_guard_role":"none","unavailability_effect":"blocked producer-dependence or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-08-LEG-02-LIFECYCLE-SCHEDULE": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"classifies lifecycle-schedule dependence separately from O-arm export neutralization and preserves an honestly constructed result","invalidity_effect":"invalidate affected schedule comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03","P2-I3-BR-OP-05","P2-I3-BR-OP-10","P2-I3-BR-CLAIM-01-PRODUCER-DEPENDENCE"],"terminal_guard_role":"none","unavailability_effect":"blocked schedule-dependence or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-08-LEG-03-ENCOUNTER-ADAPTER-BOUNDARY": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"field-reading or outcome-authoring adapter behavior blocks the local native-encounter interpretation","invalidity_effect":"invalidate affected encounter evidence while preserving unrelated field observations","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-04","P2-I3-BR-OP-11","P2-I3-BR-VALID-04-FORBIDDEN-READ"],"terminal_guard_role":"none","unavailability_effect":"blocked adapter-boundary or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-08-LEG-04-COMPOSITE-COORDINATION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"classifies coordination dependence by producer-cost class without automatically invalidating constructed evidence","invalidity_effect":"invalidate affected composite handoff evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03","P2-I3-BR-OP-04","P2-I3-BR-OP-05","P2-I3-BR-CLAIM-01-PRODUCER-DEPENDENCE"],"terminal_guard_role":"none","unavailability_effect":"blocked composition or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-09-LEG-01-FORMATION-COST": {"allowed_evidence_resolutions":["supportive","counterdirectional","mixed","unresolved"],"claim_effect":"nonzero attributable cost supports the formation prerequisite; cost failure blocks R01 and higher while preserving preformation observations","invalidity_effect":"invalidate affected formation evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","AE01-L03-R01"],"terminal_guard_role":"none","unavailability_effect":"blocked cost or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-09-LEG-02-GLOBAL-CONSERVATION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"conservation failure permits no scientific result from the affected execution","invalidity_effect":"invalidate affected execution","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03"],"terminal_guard_role":"none","unavailability_effect":"blocked execution or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-09-LEG-03-UNREGISTERED-LEAKAGE": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"unregistered leakage permits no scientific result from the affected execution","invalidity_effect":"invalidate affected execution","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03"],"terminal_guard_role":"none","unavailability_effect":"blocked execution or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-09-LEG-04-RESERVOIR-ISOLATION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"reservoir dependence blocks isolated-carrier mediation but preserves the observed dependence for reclassification","invalidity_effect":"invalidate affected reservoir-clamp comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-05"],"terminal_guard_role":"none","unavailability_effect":"blocked isolation or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-09-LEG-05-EXPORT-MASS-ORGANIZATION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"generic_effect blocks organization-specific interpretation but does not invalidate the executed comparison","invalidity_effect":"invalidate affected export-mass comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-07","P2-I3-BR-DISC-02-EXPORT-MASS-ORGANIZATION"],"terminal_guard_role":"none","unavailability_effect":"blocked specificity or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-10-LEG-01-PARENT-CONTEXT-CLAIM-GUARD": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"rejects motif regime and parent-context inflation without changing reconstructed I09 scientific facts","invalidity_effect":"fail terminal overlay only","owning_iteration":"P2-I3-I11","target_relation_ids":["P2-I3-BR-OP-13","P2-I3-BR-CLAIM-04-TRAIL-STIGMERGIC-PARTICIPANT"],"terminal_guard_role":"terminal_overlay_guard_I11","unavailability_effect":"block terminal closeout until the claim guard is available"},
+      "P2-I3-BR-CTRL-10-LEG-02-PARENT-BASIN-COMPARISON": {"allowed_evidence_resolutions":["not_evaluated"],"claim_effect":"no claim effect because no parent basin is registered; absence is not an unmet scientific control","invalidity_effect":"not applicable","owning_iteration":"P2-I3-I04","target_relation_ids":["AE01-CTRL-10"],"terminal_guard_role":"not_applicable","unavailability_effect":"not applicable"},
+      "P2-I3-BR-CTRL-11-LEG-01-PARTICIPANT-MEDIUM-BOUNDARY": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"identity collapse blocks participant-relative and field-mediated interpretation","invalidity_effect":"invalidate affected role-bound causal evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","P2-I3-BR-OP-02","P2-I3-BR-OP-04","P2-I3-BR-OP-09","P2-I3-BR-OP-11","P2-I3-BR-OP-13"],"terminal_guard_role":"none","unavailability_effect":"blocked identity or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-12-LEG-01-SEMANTIC-CEILING": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"rejects communication coordination agency motif regime and other prohibited vocabulary without changing I09 facts","invalidity_effect":"fail terminal overlay only","owning_iteration":"P2-I3-I11","target_relation_ids":["P2-I3-BR-OP-13","P2-I3-BR-CLAIM-04-TRAIL-STIGMERGIC-PARTICIPANT"],"terminal_guard_role":"terminal_overlay_guard_I11","unavailability_effect":"block terminal closeout until semantic validation is available"},
+      "P2-I3-BR-CTRL-13-LEG-01-RANKING-SEPARATION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"rejects any P2-I3 terminal that performs Q-021 branch retention or seven-lane successor ranking","invalidity_effect":"fail terminal overlay only","owning_iteration":"P2-I3-I11","target_relation_ids":["P2-I3-Q-021"],"terminal_guard_role":"terminal_overlay_guard_I11","unavailability_effect":"block terminal closeout until ranking separation is verified"},
+      "P2-I3-BR-CTRL-14-LEG-01-DEMAND-NATIVE-SEPARATION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"blocks ecology demand or missing-surface records from being presented as native substrate evidence","invalidity_effect":"block demand/native claim and affected terminal wording only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-CLAIM-03-NATIVE-RCAE-ATTRIBUTION"],"terminal_guard_role":"preterminal_guard_armed_I09","unavailability_effect":"blocked demand/native closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-15-LEG-01-CONSTRUCTED-NATIVE-TRANSITION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"blocks native qualification and requires the registered RCAE-constructed attribution until explicit transition and rerun","invalidity_effect":"invalidate affected realization-attribution claim only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-CLAIM-03-NATIVE-RCAE-ATTRIBUTION","P2-I3-BR-VALID-05-RUNTIME-SOURCE-BINDING"],"terminal_guard_role":"preterminal_guard_armed_I09","unavailability_effect":"blocked transition or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-16-LEG-01-CONSTRUCTION-COMPLETENESS": {"allowed_evidence_resolutions":["supportive","mixed","unresolved"],"claim_effect":"incomplete necessity minimality counterfactual ownership or debt accounting blocks promotion and the affected constructed-mechanism claim","invalidity_effect":"invalidate affected construction claim while preserving directly observed runtime facts","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-CLAIM-01-PRODUCER-DEPENDENCE","P2-I3-BR-CLAIM-02-FIXTURE-LOCK","P2-I3-BR-CLAIM-03-NATIVE-RCAE-ATTRIBUTION"],"terminal_guard_role":"none","unavailability_effect":"blocked construction or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-17-LEG-01-RUNTIME-SOURCE-BINDING": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"binding failure blocks every live scientific result without becoming not_supported","invalidity_effect":"invalidate affected live execution","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-VALID-05-RUNTIME-SOURCE-BINDING"],"terminal_guard_role":"none","unavailability_effect":"blocked or missing-runtime closeout with no support or refutation"},
+      "P2-I3-BR-CTRL-17-LEG-02-RUNTIME-RECONSTRUCTION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"reconstruction failure blocks every claim consuming the affected evidence without changing the retained I09 fact record","invalidity_effect":"invalidate affected reconstructed evidence","owning_iteration":"P2-I3-I10","target_relation_ids":["P2-I3-BR-VALID-03-RECONSTRUCTION","P2-I3-BR-VALID-05-RUNTIME-SOURCE-BINDING"],"terminal_guard_role":"reconstruction_guard_consumed_I11","unavailability_effect":"block I11 and close as reconstruction-unavailable with no support or refutation"},
+      "P2-I3-BR-CTRL-18-LEG-01-FIXTURE-PROMOTION-LOCK": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"rejects fixture promotion to motif regime or domain package without separate evidence and leaves I09 facts unchanged","invalidity_effect":"fail terminal overlay only","owning_iteration":"P2-I3-I11","target_relation_ids":["P2-I3-BR-CLAIM-02-FIXTURE-LOCK"],"terminal_guard_role":"terminal_overlay_guard_I11","unavailability_effect":"block terminal promotion wording until the guard is available"},
+      "P2-I3-BR-CTRL-19-LEG-01-COMPLETION-CLASSIFICATION": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"rejects a terminal class inconsistent with reconstructed completion while leaving I09 scientific facts unchanged","invalidity_effect":"fail terminal overlay only","owning_iteration":"P2-I3-I11","target_relation_ids":["P2-I3-CLOSE-GATE"],"terminal_guard_role":"terminal_overlay_guard_I11","unavailability_effect":"block terminal closeout until completion classification is available"},
+      "P2-I3-BR-L03-CTRL-01-LEG-01-DEPOSITION-WITHDRAWAL": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"valid non-supportive outcomes classify formation dependence; unresolved deposition specificity blocks the affected R04 claim but preserves lower observations","invalidity_effect":"invalidate affected W/E comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-01","P2-I3-BR-OP-10","m_trace"],"terminal_guard_role":"none","unavailability_effect":"blocked withdrawal or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-02-LEG-01-COMPLETE-STATE-RELOCATION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"failure to move the encounter relation with complete state blocks field-locality specificity but preserves lower route observations","invalidity_effect":"invalidate affected relocation comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-09"],"terminal_guard_role":"none","unavailability_effect":"blocked relocation or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-02-LEG-02-ROLE-ID-PERMUTATION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"raw-ID sensitivity blocks role-local interpretation and indicates hidden routing","invalidity_effect":"invalidate affected permutation evidence only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-09","P2-I3-BR-OP-11"],"terminal_guard_role":"none","unavailability_effect":"blocked permutation or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-03-LEG-01-CARRIER-MATCHED-FALSE-TRACE": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"reproduction supports carrier-value sufficiency only; divergence leaves omitted state versus history unresolved and cannot support costly formation","invalidity_effect":"invalidate affected carrier-matched false-trace comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-10","P2-I3-BR-DISC-03-COMPLETE-STATE-HISTORY"],"terminal_guard_role":"none","unavailability_effect":"blocked false-trace or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-03-LEG-02-CAUSAL-PROJECTION-MATCHED-FALSE-TRACE": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"only verified projection-matched reproduction may support current-state sufficiency; no outcome establishes costly formation","invalidity_effect":"invalidate affected projection-matched false-trace comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-08","P2-I3-BR-OP-10","P2-I3-BR-DISC-03-COMPLETE-STATE-HISTORY"],"terminal_guard_role":"none","unavailability_effect":"blocked projection-match or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-04-LEG-01-O-E-LIFECYCLE": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"valid outcomes classify lifecycle mediation; absence of the O/E relation blocks the selected B-R dynamic claim without invalidating execution","invalidity_effect":"invalidate affected O/E comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03","P2-I3-BR-OP-05","m_export"],"terminal_guard_role":"none","unavailability_effect":"blocked lifecycle or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-04-LEG-02-EQUAL-CARRIER-CLAMP": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"clamp failure blocks carrier-mediation interpretation but preserves the observed uncontrolled relation","invalidity_effect":"invalidate affected carrier-clamp comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-05","m_trace","m_export"],"terminal_guard_role":"none","unavailability_effect":"blocked clamp or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-04-LEG-03-RESERVOIR-CLAMP": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"reservoir dependence blocks isolated-carrier mediation but preserves the observed dependence for reclassification","invalidity_effect":"invalidate affected reservoir-clamp comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-05","m_trace","m_export"],"terminal_guard_role":"none","unavailability_effect":"blocked clamp or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-04-LEG-04-EXPORT-MASS-ORGANIZATION": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"generic_effect blocks organization-specific interpretation but does not invalidate the executed comparison","invalidity_effect":"invalidate affected export-mass comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-07","P2-I3-BR-DISC-02-EXPORT-MASS-ORGANIZATION"],"terminal_guard_role":"none","unavailability_effect":"blocked specificity or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-04-LEG-05-ELIGIBLE-ZERO-FLOOR": {"allowed_evidence_resolutions":["supportive","equivalent","counterdirectional","generic_effect","mixed","unresolved"],"claim_effect":"valid eligible-zero or floor behavior classifies the dynamic boundary and may close below non-static support without invalidating execution","invalidity_effect":"invalidate affected floor comparison only","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-03"],"terminal_guard_role":"none","unavailability_effect":"blocked floor classification or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-05-LEG-01-FIXED-BRANCH-REQUESTS": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"state-aware or shared route selection blocks the local-encounter interpretation","invalidity_effect":"invalidate affected encounter execution","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-04","P2-I3-BR-OP-11"],"terminal_guard_role":"none","unavailability_effect":"blocked request construction or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-05-LEG-02-FORBIDDEN-CROSS-ROUTE-READS": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"forbidden reads block R03-R05 and every local-encounter tag using the affected execution","invalidity_effect":"invalidate affected local-encounter execution","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-04","P2-I3-BR-OP-11","P2-I3-BR-VALID-04-FORBIDDEN-READ"],"terminal_guard_role":"none","unavailability_effect":"blocked read-boundary or missing-surface closeout with no support or refutation"},
+      "P2-I3-BR-L03-CTRL-05-LEG-03-PARTICIPANT-TAG-BOUNDARY": {"allowed_evidence_resolutions":["supportive"],"claim_effect":"same-participant evidence remains eligible for trail_field_candidate only and blocks stigmergic_field_candidate","invalidity_effect":"block participant-specific tag only while preserving reconstructed scientific facts","owning_iteration":"P2-I3-I09","target_relation_ids":["P2-I3-BR-OP-13","P2-I3-BR-DISC-05-FRESH-NONDEPOSITOR","P2-I3-BR-CLAIM-04-TRAIL-STIGMERGIC-PARTICIPANT"],"terminal_guard_role":"preterminal_guard_armed_I09","unavailability_effect":"block stigmergic tag with no inference against trail evidence"}
+    },
+    "parent_applicability": {
+      "common": {
+        "applicable": ["AE01-CTRL-01","AE01-CTRL-02","AE01-CTRL-03","AE01-CTRL-04","AE01-CTRL-05","AE01-CTRL-06","AE01-CTRL-07","AE01-CTRL-08","AE01-CTRL-09","AE01-CTRL-11","AE01-CTRL-12","AE01-CTRL-13","AE01-CTRL-14","AE01-CTRL-15","AE01-CTRL-16","AE01-CTRL-17","AE01-CTRL-18","AE01-CTRL-19"],
+        "conditionally_applicable": [],
+        "not_applicable": [],
+        "partially_applicable": ["AE01-CTRL-10"]
+      },
+      "lane": {
+        "applicable": ["AE01-L03-CTRL-01","AE01-L03-CTRL-02","AE01-L03-CTRL-03","AE01-L03-CTRL-04","AE01-L03-CTRL-05"],
+        "conditionally_applicable": [],
+        "not_applicable": [],
+        "partially_applicable": []
+      }
+    },
+    "o_arm_and_producer_omission": {
+      "O_arm": "retains eligible receipts producer invocation schedule and lifecycle checkpoints while neutralizing the designated native export request",
+      "producer_omission_control": "removes one registered causally necessary producer item",
+      "same_control": false
+    },
+    "producer_cost_classes": [
+      "contract_required",
+      "rcae_ecology_required",
+      "evidence_only"
+    ],
+    "requirement_registry": [
+      {"group":"scientific","requirement_id":"P2-I3-BR-DISC-01-FORMATION-QUANTITY-TEMPORAL-MATCH","required_for_rungs":["AE01-L03-R04"],"required_for_tags":["trail_field_candidate","stigmergic_field_candidate"],"required_for_terminal_classes":["supported_bounded_candidate","not_supported_when_question_claimed"]},
+      {"group":"scientific","requirement_id":"P2-I3-BR-DISC-02-EXPORT-MASS-ORGANIZATION","required_for_rungs":["AE01-L03-R04"],"required_for_tags":["trail_field_candidate","stigmergic_field_candidate"],"required_for_terminal_classes":["supported_bounded_candidate","not_supported_when_question_claimed"]},
+      {"group":"scientific","requirement_id":"P2-I3-BR-DISC-03-COMPLETE-STATE-HISTORY","required_for_rungs":["AE01-L03-R04"],"required_for_tags":["trail_field_candidate","stigmergic_field_candidate"],"required_for_terminal_classes":["supported_bounded_candidate","not_supported_when_question_claimed"]},
+      {"group":"scientific","requirement_id":"P2-I3-BR-DISC-04-GEOMETRY-OR-TIMESCALE","required_for_rungs":["AE01-L03-R05"],"required_for_tags":[],"required_for_terminal_classes":["supported_bounded_candidate_at_R05"]},
+      {"applicability":"conditional","group":"scientific","requirement_id":"P2-I3-BR-DISC-05-FRESH-NONDEPOSITOR","required_for_rungs":[],"required_for_tags":["stigmergic_field_candidate"],"required_for_terminal_classes":["terminal_with_stigmergic_field_candidate"]},
+      {"group":"validity","requirement_id":"P2-I3-BR-VALID-01-EXACT-RESTORATION","required_for_rungs":["all_using_restored_comparisons"],"required_for_tags":["all_using_restored_evidence"],"required_for_terminal_classes":["scientific_closeout_using_restored_evidence"]},
+      {"group":"validity","requirement_id":"P2-I3-BR-VALID-02-EQUAL-INPUT-CONTINUATION","required_for_rungs":["AE01-L03-R03","AE01-L03-R04","AE01-L03-R05"],"required_for_tags":["trail_field_candidate","stigmergic_field_candidate"],"required_for_terminal_classes":["paired_causal_support_or_not_supported"]},
+      {"group":"validity","requirement_id":"P2-I3-BR-VALID-03-RECONSTRUCTION","required_for_rungs":["all"],"required_for_tags":["all"],"required_for_terminal_classes":["all"]},
+      {"group":"validity","requirement_id":"P2-I3-BR-VALID-04-FORBIDDEN-READ","required_for_rungs":["AE01-L03-R03","AE01-L03-R04","AE01-L03-R05"],"required_for_tags":["trail_field_candidate","stigmergic_field_candidate"],"required_for_terminal_classes":["scientific_closeout_using_encounter_adapter"]},
+      {"group":"validity","requirement_id":"P2-I3-BR-VALID-05-RUNTIME-SOURCE-BINDING","required_for_rungs":["all_live_evidence"],"required_for_tags":["all_live_evidence"],"required_for_terminal_classes":["all_live_scientific_closeout"]},
+      {"group":"claim","requirement_id":"P2-I3-BR-CLAIM-01-PRODUCER-DEPENDENCE","required_for_rungs":[],"required_for_tags":["all"],"required_for_terminal_classes":["all"]},
+      {"group":"claim","requirement_id":"P2-I3-BR-CLAIM-02-FIXTURE-LOCK","required_for_rungs":[],"required_for_tags":["all"],"required_for_terminal_classes":["all"]},
+      {"group":"claim","requirement_id":"P2-I3-BR-CLAIM-03-NATIVE-RCAE-ATTRIBUTION","required_for_rungs":[],"required_for_tags":["all"],"required_for_terminal_classes":["all"]},
+      {"group":"claim","requirement_id":"P2-I3-BR-CLAIM-04-TRAIL-STIGMERGIC-PARTICIPANT","required_for_rungs":[],"required_for_tags":["trail_field_candidate","stigmergic_field_candidate"],"required_for_terminal_classes":["all_tagged_closeout"]}
+    ],
+    "sequencing": {
+      "I09": "resolve scientific comparisons and pre-terminal guards, emit control index, arm terminal guards",
+      "I10": "reconstruct every evidence binding and I09 disposition; block I11 on mismatch",
+      "I11": "consume reconstructed I09 facts, validate terminal overlay, never change I09 numeric or scientific facts"
+    }
+  },
+  "evidence_effect": "candidate_blind_calibration_preregistration_semantics_only",
+  "estimator": {
+    "aggregation": "one registered encounter j supplies each primary pair; additional opportunities are separate trajectory panels",
+    "denominator_tie_rule": "epsilon_mu owns equality at the floor; otherwise first_arm owns exact equal magnitudes",
+    "epsilon_mu_source": "existing AE01-L03 metric-sheet denominator floor",
+    "export_relation": {
+      "first_arm": "O",
+      "formula": "N(O,E;epsilon_mu)",
+      "meaning": "mandatory B-R dynamic mediation",
+      "metric_id": "m_export",
+      "second_arm": "E"
+    },
+    "formula": "N(a,b;epsilon_mu)=(mu_a-mu_b)/max(abs(mu_a),abs(mu_b),epsilon_mu)",
+    "missingness": "an invalid required arm makes only its pair nonevaluable; no imputation, averaging, or surviving-arm substitution",
+    "normalized_relations_additive": false,
+    "normalized_relations_are_percentages": false,
+    "normalized_relations_clipped": false,
+    "pairing_fields": [
+      "calibration_stratum",
+      "deterministic_replicate",
+      "configuration_or_variation_id",
+      "route_role",
+      "clean_parent_identity",
+      "causal_continuation_projection_identity",
+      "encounter_index",
+      "request_construction_id",
+      "request_timing_id",
+      "future_schedule_identity",
+      "observation_boundary_id"
+    ],
+    "relation_tie_rule": "exact equal valid arms produce canonical positive zero and remain a valid equivalent relation for later ladder interpretation",
+    "raw_additive_identity": "Delta_formed=(mu_O-mu_W)=Delta_trace+Delta_export",
+    "trace_relation": {
+      "first_arm": "E",
+      "formula": "N(E,W;epsilon_mu)",
+      "meaning": "lane-primary complete-trace relation",
+      "metric_id": "m_trace",
+      "second_arm": "W"
+    }
+  },
+  "future_i05_boundary": {
+    "authorization_present": false,
+    "calibration_artifact_present": false,
+    "calibration_entrypoint_status": "not_yet_constructed",
+    "canonical_arithmetic_response_construction": {
+      "candidate_shaped_arguments_allowed": false,
+      "carrier_coherence_may_be_negative": false,
+      "construction_status": "must_be_selected_and_frozen_in_separate_I05_invocation_freeze",
+      "exact_requirement": "for every arm c_pre_m_e - q_probe equals the registered exact rational margin",
+      "matched_within_case": [
+        "q_probe rational and value",
+        "request construction identity",
+        "request semantics"
+      ],
+      "role": "candidate-blind arithmetic fixture only",
+      "scientific_reuse": "mechanically prohibited from I06 and I08 scientific registration"
+    },
+    "required_before_invocation": [
+      "accepted P2-I3-CAL-PRE-GATE",
+      "clean committed I04 source identity",
+      "separate inactive I05 invocation freeze",
+      "verified candidate-absence boundary",
+      "one exact canonical arithmetic response construction satisfying the frozen construction contract"
+    ]
+  },
+  "gate_boundary": {
+    "CAL_PRE_status": "pending_bounded_correction_review",
+    "candidate_execution_authorized": false,
+    "does_not_assign": [
+      "calibrated delta",
+      "control outcome",
+      "R01-R05 rung",
+      "trail or stigmergic tag",
+      "terminal class",
+      "C.2 control applicability",
+      "B-R or lane scientific result"
+    ],
+    "next_on_acceptance": "open construction of a separately frozen candidate-blind I05 calibration invocation only"
+  },
+  "iteration_id": "P2-I3-I04",
+  "lane_id": "AE01-L03",
+  "measurement_design": {
+    "contrast_identities": [
+      "P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001",
+      "P2-I3-BR-Q13-EXPORT-MASS-MATCH-001",
+      "P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001"
+    ],
+    "interpretation_ladder": {
+      "automatic_terminal_gate": false,
+      "narrow_or_resolution_limited_result_requires_interpretation": true,
+      "relation_vocabulary_source": "contracts/metric-sheets/AE01-L03.json",
+      "threshold_role": "numeric resolution and developmental interpretation guidance only"
+    },
+    "observation_cadence": {
+      "event_basis": "system-internal LGRC9V3 event and settled lifecycle order only",
+      "exact_numeric_times": "deferred_to_I06",
+      "field_dynamic_checkpoints": [
+        "pre-formation",
+        "after every settled attributable formation event",
+        "immediately before selected B-R export",
+        "immediately after selected B-R export settlement",
+        "immediately before encounter request is the next native event",
+        "immediately after encounter disposition"
+      ],
+      "primary_encounter_count_per_pair": 1,
+      "timescale_justification": "B-R is event-indexed; observing every qualifying formation and export settlement plus the adjacent encounter boundary resolves the selected dynamic without importing external wall time"
+    },
+    "panels": [
+      {"panel_id":"primary_response","role":"typed mu and native disposition for W/O/E pairs"},
+      {"panel_id":"selected_field_dynamic","role":"formation and B-R export state trajectory with eligible-zero/floor classification"},
+      {"panel_id":"distance_surfaces","role":"native structure/time observations plus separately typed derived annotations"},
+      {"panel_id":"cost_and_conservation","role":"formation cost global conservation leakage reservoir and producer-cost vector"},
+      {"panel_id":"causal_interventions","role":"withdrawal lifecycle clamps mass history relocation false trace hidden-router and variation comparisons"}
+    ]
+  },
+  "observation_policies": {
+    "causal_temporal": {
+      "causal_shortest_path": "derived_annotation_only",
+      "native_event_and_internal_time": "measured_native"
+    },
+    "experimental_causal_influence": {
+      "direct_observation_claim": false,
+      "measurement_class": "estimated_from_measured_intervention_arms",
+      "mandatory": true
+    },
+    "functional_distance": "derived_annotation_only",
+    "geometric_distance": "derived_annotation_only",
+    "registered_native_structure_and_bindings": {
+      "hop_and_path_summaries": "derived_annotation_only",
+      "native_node_edge_existence_and_state": "measured_native",
+      "rcae_role_bindings": "registered_metadata_integrity_checked"
+    },
+    "variation_rule": "geometry or internal-timescale variation is a registered intervention factor; annotations alone cannot establish consequence"
+  },
+  "policy_id": "rcae-p2-i3-br-i04-machine-policy-v1",
+  "primary_response": {
+    "coherence_units": "native_lgrc9v3_coherence",
+    "disposition": {
+      "invalid": "invalid_or_infrastructure_failure with null primary margin",
+      "negative_margin": "field_limited_refusal",
+      "nonnegative_margin": "admitted"
+    },
+    "encounter_index": "j indexes encounter opportunity, not lifecycle receipt k",
+    "formula": "mu[e,j]=C_pre(m_e)-q_probe",
+    "metric_id": "signed_native_admissibility_margin",
+    "observation_boundary": "after request scheduling and immediately before the request is the next native event capable of testing or changing m_e",
+    "raw_inputs_unrounded": true,
+    "record_schema_id": "p2-i3-br-encounter-response-v1",
+    "validity_companion": "native_disposition",
+    "validity_domain": "structurally valid registered request and native event boundary"
+  },
+  "scientific_outcomes_assigned": false
+}

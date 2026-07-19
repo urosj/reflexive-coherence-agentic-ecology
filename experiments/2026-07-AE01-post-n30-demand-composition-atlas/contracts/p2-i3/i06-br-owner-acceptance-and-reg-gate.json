@@ -1,0 +1,121 @@
+{
+  "artifact_id": "P2-I3-I06-BR-OWNER-ACCEPTANCE-AND-REG-GATE",
+  "artifact_version": "1.0.1",
+  "accepted_at": "2026-07-19",
+  "authority": {
+    "change_id": "P2-I3-CHG-064",
+    "implementation_source_anchor": "7b5d392078e18428da297ea68a2c956a13e8edee",
+    "owner_disposition": "accept bounded I06A package 1.0.2, let I07-A expose any remaining execution-authority defect, and pass corrected P2-I3-REG-GATE"
+  },
+  "branch_id": "P2-I3-BR",
+  "iteration_id": "P2-I3-I06A",
+  "lane_id": "AE01-L03",
+  "accepted_package": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i06_registration_policy.json",
+      "role": "inactive_registration_policy",
+      "sha256": "60b4cfa98e0e0a93c4af8bcd7fb75ac9ef5f877217acaa9616bfa993290979e1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-candidate-free-timing.json",
+      "role": "candidate_free_resource_characterization",
+      "sha256": "7644d54098cbbfe8c9b447b75500104cfcf5e28bfd9b3c4a54d724775af98973"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-exact-registration.json",
+      "role": "bounded_corrected_exact_inactive_registration_1_0_2",
+      "sha256": "7d5987223f42ef053beefbb5afb5fd88cf1fcd150a0048818b96f5718ae878b6"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-registration-validation.json",
+      "role": "passed_26_check_semantic_validation",
+      "sha256": "d02e59b978b5cad22251c76ad0f703c8842b1792593e807a99a21e5faa47f1f1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-registration.schema.json",
+      "role": "closed_root_structural_envelope_schema",
+      "sha256": "6625b8368e973dbea6c586fc63900ecc149270bdf2e0f2123eebf950d2f0a527"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-execution-records.schema.json",
+      "role": "closed_future_execution_record_schema",
+      "sha256": "facde54ab7be3490433ca574e10bd2c3038b285000675ca40e65bd3d2de6d5e5"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i06_br_registration.py",
+      "role": "mandatory_semantic_builder_validator",
+      "sha256": "91fcede7c7090dd29e7b776e17bbb1a819342d8708e775fabca315bd501d545c"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i06_br.py",
+      "role": "passed_42_test_focused_adversarial_suite",
+      "sha256": "fe0cd6ab51a8edd98d916c3acb9142db240d0da73acb0e5d6a0400942bf0368c"
+    }
+  ],
+  "accepted_closure": {
+    "adjacent_I03_I04_I06_tests": 72,
+    "candidate_free_registration_checks": 26,
+    "cell_envelopes": 18,
+    "configurations": 90,
+    "control_legs": 42,
+    "evidence_case_sets": 24,
+    "focused_adversarial_tests": 42,
+    "governed_cases": 450,
+    "governed_execution_entries": 456,
+    "integrity_cases": 72,
+    "maximum_child_starts": 460,
+    "operational_baseline_entries": 6,
+    "producer_items": 7,
+    "requirements": 14,
+    "scientific_branches": 378,
+    "substrate_bases": 6
+  },
+  "accepted_corrections": [
+    "DEC_038_exact_estimators_and_targets",
+    "DEC_037_separated_observation_surfaces",
+    "DEC_042_undirected_native_edges_and_request_whitelist",
+    "DEC_044_exact_case_set_control_and_requirement_bindings",
+    "DEC_040_four_field_control_lifecycle_schema",
+    "structural_schema_plus_mandatory_semantic_validator_boundary",
+    "I06A_450_case_registry_separated_from_456_entry_execution_schedule",
+    "six_scientifically_inert_operational_baseline_constructions",
+    "trajectory_and_checkpoint_parent_before_probe_topological_order",
+    "entry_aware_attempt_resource_and_terminal_records"
+  ],
+  "gate_effect": {
+    "P2-I3-REG-GATE": "passed_after_explicit_owner_acceptance_of_bounded_corrected_I06A_1_0_2",
+    "opens_after_clean_retention_commit": [
+      "P2-I3-I07A_candidate_free_source_package_rebinding_and_validation"
+    ],
+    "does_not_open": [
+      "P2-I3-EXEC-FREEZE",
+      "candidate_execution",
+      "control_execution",
+      "integrity_fault_execution",
+      "C2_work",
+      "R01_R05_assignment",
+      "trail_field_candidate",
+      "stigmergic_field_candidate",
+      "ecology_claim",
+      "native_mechanism_claim"
+    ]
+  },
+  "interpretation_ceiling": {
+    "candidate_or_control_observation": false,
+    "ecology_result": false,
+    "native_BR_mechanism": false,
+    "registration_completeness_only": true,
+    "trail_or_stigmergic_field_exists": false
+  },
+  "retention": {
+    "clean_commit_required_before_I07": true,
+    "commit_authorized_by_this_acceptance": true,
+    "status": "accepted_package_commit_authorized"
+  },
+  "scientific_invariance": {
+    "candidate_design_matrix_controls_requirements_producers_pairing_restoration_digest_1_0_1_and_1_0_2": "4657f0086b8910e6b651e07661cf8ca5c4ba3df5d4c33a848a4ef84755911a6e",
+    "exact_case_set_identity_and_ordinal_digest_1_0_1_and_1_0_2": "9e0d3031e4349c8f390b27934911f2b17f4d89e89e6fb8b39262ff382d42e7aa",
+    "scientific_redesign": false
+  },
+  "status": "owner_accepted_I06A_1_0_2_corrected_REG_GATE_passed"
+}

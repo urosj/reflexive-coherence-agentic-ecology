@@ -1,0 +1,203 @@
+{
+  "artifact_id": "P2-I3-I03-BR-CONTRAST-AND-RESTORATION-DESIGN",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L03",
+  "branch_id": "P2-I3-BR",
+  "iteration_id": "P2-I3-I03",
+  "status": "accepted",
+  "accepted_at": "2026-07-19",
+  "evidence_effect": "prospective B-R contrast identity and restoration design only; no response, comparator, numeric registration, conformance result, calibration, execution, control outcome, or scientific result",
+  "authority": {
+    "matching_boundary_decision_id": "P2-I3-DEC-006",
+    "state_history_mode_decision_id": "P2-I3-DEC-027",
+    "lifecycle_decision_id": "P2-I3-DEC-028",
+    "encounter_decision_id": "P2-I3-DEC-029",
+    "q013_decision_id": "P2-I3-DEC-031",
+    "q015_decision_id": "P2-I3-DEC-032",
+    "graph_repository_read_only": true
+  },
+  "q013_contrast_registry": [
+    {
+      "contrast_id": "P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001",
+      "contrast_class": "formation_quantity_matched",
+      "question": "Does repeated temporally distributed formation differ from one formation pulse with the same total deposited quantity?",
+      "matched": [
+        "total native formation transfer into the registered carrier",
+        "total formation-source debit",
+        "formation cost accounting",
+        "baseline route opportunity and later probe class"
+      ],
+      "varied": [
+        "number and temporal distribution of attributable formation events",
+        "formation-event and lifecycle receipt history"
+      ],
+      "complete_current_state_required_equal": false,
+      "interpretation_boundary": "distinguishes temporal formation structure from accumulated formation quantity; it cannot establish active-history dependence unless the complete causal continuation state is also matched",
+      "exact_amounts_timing_and_response_binding": "deferred_to_I04_and_I06"
+    },
+    {
+      "contrast_id": "P2-I3-BR-Q13-EXPORT-MASS-MATCH-001",
+      "contrast_class": "export_mass_matched",
+      "question": "Does B-R organization loss differ from generic route-mass loss of the same amount?",
+      "candidate_relation": {
+        "delta_M": "-q",
+        "delta_O": "-q",
+        "operation": "native export from m_e to isolated d_e under the DEC-028 lifecycle"
+      },
+      "control_relation": {
+        "delta_M": "-q",
+        "delta_O": "0",
+        "operation": "remove q/2 from s_e and q/2 from m_e into an explicit isolated control destination"
+      },
+      "matched": [
+        "total route-mass removal q",
+        "conservation accounting",
+        "later opportunity class",
+        "registered branch timing at the comparison boundary"
+      ],
+      "varied": [
+        "route-organization contrast O_e",
+        "declared intervention identity"
+      ],
+      "preconditions": [
+        "both s_e and m_e satisfy the registered q/2 availability bound",
+        "candidate and control destinations remain isolated from the route and encounter",
+        "no removed coherence is destroyed or hidden"
+      ],
+      "interpretation_boundary": "distinguishes organization contrast from generic mass loss; the outcome is not predetermined",
+      "exact_q_operation_and_response_binding": "deferred_to_I04_and_I06"
+    },
+    {
+      "contrast_id": "P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001",
+      "contrast_class": "complete_state_matched_history",
+      "question": "Do different attributable formation histories produce different futures when complete causal continuation state and future inputs are equal?",
+      "matched": [
+        "complete causal-continuation projection at t_star",
+        "future lifecycle receipt sequence",
+        "fixed local opportunity and q_probe",
+        "future native schedule and registered observation horizon",
+        "route role and policy bindings"
+      ],
+      "varied": [
+        "attributable formation history",
+        "audit lineage and exact execution identity where required to retain that history"
+      ],
+      "formed_arm_claim_rule": "only an arm with valid costly attributable formation may satisfy the formation requirement",
+      "interpretation": {
+        "matching_futures": "supports current-composite-state sufficiency at the tested boundary",
+        "difference_from_audit_only_read": "invalid hidden-history dependence",
+        "difference_from_omitted_current_state": "invalid incomplete state match",
+        "difference_after_verified_complete_match": "reopens active-history or missing-state interpretation without automatically supporting B-R",
+        "match_not_constructible": "realization or restoration limitation, not negative L03 evidence"
+      },
+      "exact_history_construction_and_response_binding": "deferred_to_I04_and_I06"
+    }
+  ],
+  "q013_separation_rules": [
+    "the three contrast identities are non-substitutable",
+    "formation-quantity matching and export-mass matching may not share one generic quantity_matched result identity",
+    "quantity matching does not imply complete-state matching",
+    "complete-state matching does not imply equal exact execution bytes when audit histories differ",
+    "relocation, false-trace, clamp, withdrawal, and hidden-router controls retain separate identities",
+    "I03 owns contrast meaning and stable IDs; I04 owns response and comparator binding; I06 owns exact values and construction"
+  ],
+  "q015_identity_layers": {
+    "exact_composite_execution_identity": {
+      "identity_id": "P2-I3-BR-Q15-EXACT-COMPOSITE-RESTORATION-001",
+      "purpose": "exact branch reconstruction, save/load/reset, audit, and replay",
+      "required_components": [
+        "full native LGRC9V3 restoration identity",
+        "native topology, node coherence, conductance, packet ledger, pending events, event time, phases, scheduler, and budgets",
+        "B-R policy identity and values",
+        "lifecycle cursor, eligible and consumed receipts, pending reservation, scheduled export, and settlement state",
+        "source, carrier, reservoir, continuation-node, edge, and route-role bindings",
+        "fixed encounter opportunity, parent checkpoint, request schedule, and branch identity",
+        "intervention and control identity",
+        "participant eligibility and audit provenance",
+        "distance-surface policy inputs and dispositions",
+        "native and RCAE reset baselines",
+        "audit lineage and every other serialized field"
+      ],
+      "equality_rule": "exact canonical component identities and one manifest identity match before continuation"
+    },
+    "causal_continuation_equivalence_projection": {
+      "identity_id": "P2-I3-BR-Q15-CAUSAL-CONTINUATION-PROJECTION-001",
+      "purpose": "state-matched history discrimination and equal-input continuation comparison",
+      "included": "every field capable of changing registered future lifecycle, native evolution, request construction, admission or refusal, distance policy, or observation",
+      "excluded": "only fields prospectively validated as audit-only and unread by native runtime and all producers",
+      "equality_rule": "projection equality is necessary but must be followed by bounded equal-input continuation; a digest match alone is not continuation evidence",
+      "cross_history_rule": "different-history arms restore exactly to themselves and may differ in exact execution identity while their causal continuation projections match"
+    }
+  },
+  "q015_operations": {
+    "save": "retain all native and RCAE components plus their component digests and one composite manifest",
+    "load": "return a fully validated composite branch or fail closed before scientific continuation; partial, stale, one-sided, mismatched, or cross-bound component loads are invalid",
+    "reset": "restore the declared native and RCAE baselines together; implicit rebase and one-sided or repeated-reset drift are invalid",
+    "fork": "create each scientific branch from one validated clean parent checkpoint with a fresh immutable branch identity",
+    "invasive_probe": "an admitted Q-007 probe terminates its branch; delayed or repeated probes fork from clean unprobed parents",
+    "field_limited_refusal": "compare the post-attempt native identity with the pre-step identity that already contains the scheduled request and require exact atomic neutrality",
+    "replay": "restore the same clean parent, apply the same registered inputs, and reproduce disposition plus registered state projections"
+  },
+  "equal_input_continuation": {
+    "required_comparisons": [
+      "original versus loaded exact composite",
+      "initial versus paired-reset composite",
+      "each state-matched history arm restored exactly to itself",
+      "paired state-matched history arms under equal causal projection and identical future inputs",
+      "atomic refusal replay from the same clean parent"
+    ],
+    "identical_future_inputs_include": [
+      "native event and packet requests",
+      "lifecycle receipts and policy calls",
+      "fixed encounter opportunities and q_probe",
+      "intervention-free or registered intervention schedule",
+      "observation and distance-policy calls"
+    ],
+    "registered_outputs_include": [
+      "native event and packet sequence",
+      "lifecycle receipt and settlement sequence",
+      "request admission or typed refusal",
+      "registered state and causal-projection digests",
+      "route-local response projection later bound by I04"
+    ],
+    "bounded_horizon": "deferred_to_I06",
+    "numeric_tolerance_or_exactness": "deferred_to_I06_by_output_field"
+  },
+  "fail_closed_conditions": [
+    "missing native or RCAE component",
+    "component or manifest digest mismatch",
+    "native state paired with the wrong policy, route, opportunity, intervention, or reset baseline",
+    "stale policy readout or pending-work mismatch",
+    "cross-route or cross-branch load",
+    "unregistered field excluded from causal projection without an audit-only proof",
+    "continuation begins after partial load or failed composite validation",
+    "equal-input continuation diverges outside the later registered field-specific equality rule"
+  ],
+  "deferred_to_i06": [
+    "exact topology and role values",
+    "canonical component and manifest schemas",
+    "component hashes and source anchors",
+    "save load reset fork and replay commands",
+    "registered continuation horizon",
+    "field-specific exact or tolerance rules",
+    "exact reset values and branch counts",
+    "runtime binding and environment receipt"
+  ],
+  "gate_effect": {
+    "q013_resolved_for_br": true,
+    "q015_i03_design_resolved_for_br": true,
+    "q015_i06_finalization_complete": false,
+    "operational_hypothesis_work_open": true,
+    "bounded_conformance_open": false,
+    "calibration_or_candidate_work_open": false
+  },
+  "reopening_conditions": [
+    "a contrast cannot be constructed without conflating its matching relation with another contrast",
+    "a continuation-relevant component is absent from both identity layers",
+    "audit-only lineage must be read to implement B-R",
+    "a complete composite cannot be restored through a fail-closed manifest-coordinated interface",
+    "bounded conformance finds unequal continuation after a verified restore or reset",
+    "the native refusal boundary cannot be reconstructed atomically",
+    "new graph evidence changes the admitted restoration or B-R provider contract"
+  ]
+}

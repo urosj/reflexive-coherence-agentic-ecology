@@ -1,0 +1,461 @@
+{
+  "artifact_id": "P2-I3-I03-BR-OPERATIONAL-HYPOTHESES",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L03",
+  "branch_id": "P2-I3-BR",
+  "iteration_id": "P2-I3-I03",
+  "status": "accepted",
+  "accepted_at": "2026-07-19",
+  "source_anchor": "0423bff17b2cc173b620d2df470bb9bb83ff5a2e",
+  "evidence_effect": "prospective operational-hypothesis semantics only; no conformance result, calibration value, candidate execution, control outcome, branch interpretation, provider selection, or L03 result",
+  "authority": {
+    "parent_hypothesis_id": "AE01-H-L03",
+    "ecology_discriminator": "repeated costly activity creates a non-static route-local dynamic that causally changes later traversal beyond static trace persistence",
+    "decision_ids": [
+      "P2-I3-DEC-005",
+      "P2-I3-DEC-006",
+      "P2-I3-DEC-007",
+      "P2-I3-DEC-008",
+      "P2-I3-DEC-026",
+      "P2-I3-DEC-027",
+      "P2-I3-DEC-028",
+      "P2-I3-DEC-029",
+      "P2-I3-DEC-030",
+      "P2-I3-DEC-031",
+      "P2-I3-DEC-032"
+    ],
+    "decision_id": "P2-I3-DEC-033",
+    "graph_repository_read_only": true
+  },
+  "global_boundaries": {
+    "direction_magnitude_and_terminal_outcome_open": true,
+    "thresholds_are_interpretive_reference_bands": true,
+    "conformance_fixture_is_scientifically_quarantined": true,
+    "static_persistence_alone_satisfies_l03": false,
+    "producer_mediated_status_is_automatic_failure": false,
+    "native_binary_admission_is_terminal_scientific_gate": false,
+    "participant_route_or_result_labels_may_be_causal_inputs": false,
+    "maximum_claim": "bounded trail or stigmergic demand pattern",
+    "blocked_claims": [
+      "symbolic pheromone",
+      "message passing",
+      "learning",
+      "coordination",
+      "route choice",
+      "planning",
+      "colony ecology",
+      "agency",
+      "native trail field"
+    ]
+  },
+  "operational_hypotheses": [
+    {
+      "op_id": "P2-I3-BR-OP-01",
+      "name": "costly_attributable_repeated_formation",
+      "proposition": "At least two temporally distinguishable attributable native formation transfers debit registered source s_e, credit route-local carrier m_e, and retain nonzero formation cost and lineage without hidden result state.",
+      "required_relations": [
+        "source debit equals packet amount equals carrier credit",
+        "at least two accepted formation events",
+        "event and cost provenance retained",
+        "producer omission cannot fabricate formation"
+      ],
+      "supports_if_resolved": [
+        "AE01-L03-R01",
+        "formation component of the L03 causal chain"
+      ],
+      "cannot_support": [
+        "non-static dynamic",
+        "later traversal causality",
+        "stigmergic interpretation"
+      ],
+      "failure_or_redirect": "free installation, one event, unattributed activity, or outcome-authored formation remains below R01 or invalid",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-02",
+      "name": "route_local_persistent_carrier",
+      "proposition": "After formation stops, m_e retains a route-local carrier state through a registered later checkpoint and the state is neither a private message nor a route-choice label.",
+      "required_relations": [
+        "carrier remains on the registered route-local role",
+        "state is externally restorable and independently addressable",
+        "route and participant labels are excluded from field payload"
+      ],
+      "supports_if_resolved": [
+        "persistent component of AE01-L03-R02",
+        "persistent trace prerequisite"
+      ],
+      "cannot_support": [
+        "L03 ecology discriminator without OP-03 through OP-05",
+        "symbolic trail semantics"
+      ],
+      "failure_or_redirect": "nonpersistent or private state classifies the carrier boundary; persistence alone remains an inherited trace-only result",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-03",
+      "name": "conservative_non_static_export_lifecycle",
+      "proposition": "After the repetition floor, serialized internal lifecycle opportunities can produce at least one positive conservative m_e-to-d_e export before terminal floor stability, changing route-local carrier state without destroying global coherence.",
+      "required_relations": [
+        "at least two serialized lifecycle opportunities",
+        "positive export has q=min(q_cap,max(0,C(m_e)-C_floor))",
+        "carrier debit equals packet amount equals isolated-reservoir credit",
+        "eligible-zero, invalid, and duplicate outcomes remain distinct",
+        "global node-plus-packet coherence is conserved"
+      ],
+      "supports_if_resolved": [
+        "non-static decaying or reinforced component of AE01-L03-R02",
+        "non-static dynamic beyond persistence",
+        "dynamic component of AE01-L03-R03"
+      ],
+      "cannot_support": [
+        "autonomous native decay",
+        "coherence destruction",
+        "route effect without OP-04 and OP-05"
+      ],
+      "failure_or_redirect": "only static persistence, immediate eligible-zero, invalid lifecycle, or missing producer surface closes below the non-static boundary with its exact classification",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-04",
+      "name": "fixed_local_native_encounter",
+      "proposition": "A prospectively fixed branch-local m_e-to-x_e request encounters current carrier coherence without field-reading adapter logic, and native LGRC9V3 alone determines admission or exact insufficient-source-coherence refusal.",
+      "required_relations": [
+        "request amount and endpoints freeze before field observation",
+        "adapter reads no field, history, other route, label, rank, or outcome",
+        "mu=C(m_e)-q_probe remains analysis-only",
+        "admission and refusal are native and conservation-safe",
+        "invalid infrastructure failure remains separate"
+      ],
+      "supports_if_resolved": [
+        "route-local continuation encounter",
+        "response component of AE01-L03-R03"
+      ],
+      "cannot_support": [
+        "embodied movement",
+        "route choice",
+        "preference or planning"
+      ],
+      "failure_or_redirect": "field-reading or route-selecting production invalidates the encounter; same-side or narrow margins remain interpretable rather than automatic failure",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-05",
+      "name": "dynamic_to_encounter_causal_mediation",
+      "proposition": "Intervening on the B-R export lifecycle or current carrier changes the later registered encounter relation while reservoir state and hidden selection remain noncausal.",
+      "required_relations": [
+        "lifecycle enabled versus omitted or frozen",
+        "registered export-source C(m_e) clamp",
+        "reservoir C(d_e) clamp with no encounter effect",
+        "same fixed local request and matched later opportunity",
+        "retained margin and typed native disposition"
+      ],
+      "supports_if_resolved": [
+        "causal dynamic-to-traversal chain",
+        "AE01-L03-R03 when OP-01 through OP-04 also resolve"
+      ],
+      "cannot_support": [
+        "full mediation by abstract organization",
+        "generic ecology regime"
+      ],
+      "failure_or_redirect": "no effect, reservoir dependence, or invalid clamp distinguishes static/generic, misfactored, or missing-surface outcomes",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-06",
+      "name": "formation_quantity_temporal_discriminator",
+      "contrast_id": "P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001",
+      "proposition": "Repeated formation and one pulse with equal total formation transfer are compared without presuming equal complete current state or a directional result.",
+      "required_relations": [
+        "equal total formation transfer, debit, and declared cost",
+        "different event cardinality or temporal distribution",
+        "separate complete-state audit at the later checkpoint"
+      ],
+      "supports_if_resolved": [
+        "classification of temporal formation structure versus accumulated quantity"
+      ],
+      "cannot_support": [
+        "active-history dependence without OP-08 state matching",
+        "export-organization specificity"
+      ],
+      "failure_or_redirect": "equality may show current quantity suffices; difference with unequal current state remains a temporal/quantity observation rather than history evidence",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-07",
+      "name": "export_mass_organization_discriminator",
+      "contrast_id": "P2-I3-BR-Q13-EXPORT-MASS-MATCH-001",
+      "proposition": "Candidate export with Delta M=-q and Delta O=-q is compared with conserved matched removal having Delta M=-q and Delta O=0 under the same later opportunity.",
+      "required_relations": [
+        "equal total route-mass removal",
+        "candidate and control organization contrast retained separately",
+        "availability bounds and isolated destinations",
+        "no destroyed or hidden coherence"
+      ],
+      "supports_if_resolved": [
+        "organization-versus-generic-mass specificity",
+        "AE01-L03-R04 when the complete control family resolves"
+      ],
+      "cannot_support": [
+        "organization specificity if the control reproduces the candidate relation",
+        "formation-history dependence"
+      ],
+      "failure_or_redirect": "control reproduction supports a generic mass-loss interpretation rather than forced rejection; invalid matching blocks the discriminator",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-08",
+      "name": "complete_state_history_discriminator",
+      "contrast_id": "P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001",
+      "proposition": "Different attributable formation histories with equal causal-continuation projection and identical future inputs produce equal future lifecycle and encounter trajectories if current composite state is sufficient.",
+      "required_relations": [
+        "each arm restores exactly to itself",
+        "causal-continuation projections match",
+        "future receipts, schedules, opportunities, and probes match",
+        "audit lineage is unread by runtime and producers"
+      ],
+      "supports_if_resolved": [
+        "current-composite-state sufficiency at the tested boundary"
+      ],
+      "cannot_support": [
+        "costly formation in a false-installed arm",
+        "active history when the match is incomplete"
+      ],
+      "failure_or_redirect": "verified divergence reopens active history or missing state; omitted state or hidden audit reads invalidate the contrast; inability to match is a restoration limitation",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-09",
+      "name": "field_locality_relocation_and_permutation",
+      "proposition": "Moving complete registered current carrier and continuation state between matched route roles moves the encounter relation, while route labels and role-preserving raw-ID permutations do not change it.",
+      "required_relations": [
+        "complete current-state relocation with no label payload",
+        "matched route topology and future opportunity",
+        "role-preserving node and edge permutation",
+        "reservoir remains isolated"
+      ],
+      "supports_if_resolved": [
+        "carrier locality",
+        "shuffle or relocation component of AE01-L03-R04"
+      ],
+      "cannot_support": [
+        "active-history relocation unless causal history is separately registered",
+        "route preference"
+      ],
+      "failure_or_redirect": "label tracking indicates hidden routing; inability to relocate exposes a control or restoration surface limitation",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-10",
+      "name": "withdrawal_false_trace_and_producer_dependence",
+      "proposition": "Formation withdrawal, false installation through the declared field interface, static/no-export, and producer-omission branches remain distinct and classify which relation is carried by formation, current state, or producer residue.",
+      "required_relations": [
+        "activity with deposition disabled",
+        "false trace installed without depositor history and without outcome write",
+        "static or no-export branch",
+        "B-R producer omitted or neutralized",
+        "same later opportunity class"
+      ],
+      "supports_if_resolved": [
+        "withdrawal and false-trace specificity",
+        "producer dependence classification",
+        "AE01-L03-R04 with OP-07 and OP-09"
+      ],
+      "cannot_support": [
+        "costly formation from false installation",
+        "native expression when producer omission removes the relation"
+      ],
+      "failure_or_redirect": "false-trace success may support state sufficiency but not formation; producer dependence is a valid bounded result and naturalization debt",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-11",
+      "name": "fixed_route_hidden_router_and_participant_exclusion",
+      "proposition": "Every route receives a prospectively fixed independent branch-local opportunity, and participant identity, route labels, other-route state, and global rank cannot select the request or outcome.",
+      "required_relations": [
+        "independent route branches from matched complete checkpoints",
+        "no simultaneous selector or shared comparison queue",
+        "participant identity retained only for audit and eligibility",
+        "fixed-route and label-permutation controls"
+      ],
+      "supports_if_resolved": [
+        "hidden-router exclusion",
+        "local encounter specificity within AE01-L03-R04"
+      ],
+      "cannot_support": [
+        "free route choice",
+        "coordination or planning"
+      ],
+      "failure_or_redirect": "any state-aware route selection invalidates the B-R local-encounter interpretation",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-12",
+      "name": "geometry_or_internal_timescale_variation",
+      "proposition": "One preregistered geometry or system-internal timescale variation tests whether the complete B-R causal relation persists, changes, narrows, or disappears without predetermining direction.",
+      "required_relations": [
+        "one geometry or internal-timescale axis selected before candidate execution",
+        "same operational hypothesis family and claim boundary",
+        "registered held-fixed structure and changed axis",
+        "branch-local metrics and resolution retained"
+      ],
+      "supports_if_resolved": [
+        "AE01-L03-R05 when lower rungs and the variation relation resolve",
+        "bounded robustness or regime limitation"
+      ],
+      "cannot_support": [
+        "R05 from participant or susceptibility variation alone",
+        "universal transfer"
+      ],
+      "failure_or_redirect": "narrow, mixed, or absent transfer remains a stability/regime classification rather than an automatic terminal rejection",
+      "scientific_evaluation": "pending_I08"
+    },
+    {
+      "op_id": "P2-I3-BR-OP-13",
+      "name": "trail_and_stigmergic_interpretation_boundary",
+      "proposition": "A route-local field effect may receive trail_field_candidate, while stigmergic_field_candidate additionally requires one participant's attributable formation to alter another eligible non-addressed participant's later activity.",
+      "required_relations": [
+        "trail relation references OP-01 through OP-11 as applicable",
+        "stronger tag uses a fresh nondepositor participant",
+        "identity, direct-address exclusion, and same access class resolve independently"
+      ],
+      "supports_if_resolved": [
+        "bounded interpretation tag only"
+      ],
+      "cannot_support": [
+        "new terminal class or R06",
+        "communication, coordination, learning, colony, or agency claims"
+      ],
+      "failure_or_redirect": "same-participant evidence remains eligible only for trail_field_candidate; neither tag is mandatory for a valid negative or missing-surface closeout",
+      "scientific_evaluation": "pending_interpretation"
+    }
+  ],
+  "parent_signature_projection": {
+    "formation_source_carrier_timing_and_cost": [
+      "P2-I3-BR-OP-01"
+    ],
+    "non_private_non_message_surface": [
+      "P2-I3-BR-OP-02",
+      "P2-I3-BR-OP-09",
+      "P2-I3-BR-OP-11"
+    ],
+    "persistence_and_non_static_dynamic": [
+      "P2-I3-BR-OP-02",
+      "P2-I3-BR-OP-03"
+    ],
+    "later_response_causally_depends_on_trace": [
+      "P2-I3-BR-OP-04",
+      "P2-I3-BR-OP-05"
+    ],
+    "specificity_controls": [
+      "P2-I3-BR-OP-06",
+      "P2-I3-BR-OP-07",
+      "P2-I3-BR-OP-08",
+      "P2-I3-BR-OP-09",
+      "P2-I3-BR-OP-10",
+      "P2-I3-BR-OP-11"
+    ],
+    "variation_and_interpretation": [
+      "P2-I3-BR-OP-12",
+      "P2-I3-BR-OP-13"
+    ]
+  },
+  "rung_projection": {
+    "AE01-L03-R01": [
+      "P2-I3-BR-OP-01"
+    ],
+    "AE01-L03-R02": [
+      "P2-I3-BR-OP-02",
+      "P2-I3-BR-OP-03"
+    ],
+    "AE01-L03-R03": [
+      "P2-I3-BR-OP-03",
+      "P2-I3-BR-OP-04",
+      "P2-I3-BR-OP-05"
+    ],
+    "AE01-L03-R04": [
+      "P2-I3-BR-OP-06",
+      "P2-I3-BR-OP-07",
+      "P2-I3-BR-OP-08",
+      "P2-I3-BR-OP-09",
+      "P2-I3-BR-OP-10",
+      "P2-I3-BR-OP-11"
+    ],
+    "AE01-L03-R05": [
+      "P2-I3-BR-OP-12"
+    ]
+  },
+  "lane_control_projection": {
+    "AE01-L03-CTRL-01": [
+      "P2-I3-BR-OP-01",
+      "P2-I3-BR-OP-10"
+    ],
+    "AE01-L03-CTRL-02": [
+      "P2-I3-BR-OP-09"
+    ],
+    "AE01-L03-CTRL-03": [
+      "P2-I3-BR-OP-10"
+    ],
+    "AE01-L03-CTRL-04": [
+      "P2-I3-BR-OP-03",
+      "P2-I3-BR-OP-05",
+      "P2-I3-BR-OP-07"
+    ],
+    "AE01-L03-CTRL-05": [
+      "P2-I3-BR-OP-04",
+      "P2-I3-BR-OP-11"
+    ]
+  },
+  "restoration_projection": {
+    "exact_identity_id": "P2-I3-BR-Q15-EXACT-COMPOSITE-RESTORATION-001",
+    "causal_projection_id": "P2-I3-BR-Q15-CAUSAL-CONTINUATION-PROJECTION-001",
+    "applies_to": [
+      "P2-I3-BR-OP-03",
+      "P2-I3-BR-OP-04",
+      "P2-I3-BR-OP-05",
+      "P2-I3-BR-OP-08",
+      "P2-I3-BR-OP-09",
+      "P2-I3-BR-OP-11",
+      "P2-I3-BR-OP-12"
+    ],
+    "identity_equality_is_continuation_evidence": false,
+    "bounded_equal_input_continuation_required": true
+  },
+  "conformance_handoff": {
+    "allowed_effect": "interface, ownership, serialization, operation-order, refusal, restoration, and hypothesis-addressability evidence only",
+    "scientific_effect": false,
+    "fixture_values_may_enter_I04_I06_or_I08": false,
+    "must_demonstrate_addressability": [
+      "P2-I3-BR-OP-01",
+      "P2-I3-BR-OP-02",
+      "P2-I3-BR-OP-03",
+      "P2-I3-BR-OP-04",
+      "P2-I3-BR-OP-05",
+      "P2-I3-BR-OP-06",
+      "P2-I3-BR-OP-07",
+      "P2-I3-BR-OP-08",
+      "P2-I3-BR-OP-09",
+      "P2-I3-BR-OP-10",
+      "P2-I3-BR-OP-11",
+      "P2-I3-BR-OP-12"
+    ],
+    "interpretation_only": [
+      "P2-I3-BR-OP-13"
+    ],
+    "exact_runtime_calls_fixture_values_and_assertions": "deferred_to_bounded_conformance_freeze"
+  },
+  "deferred": {
+    "primary_response_comparator_and_resolution": "P2-I3-I04",
+    "exact_topology_values_times_seeds_controls_and_restoration": "P2-I3-I06",
+    "candidate_execution": "P2-I3-I08_after_all_execution_gates",
+    "control_outcomes": "P2-I3-I09",
+    "rungs_tags_and_terminal_interpretation": "P2-I3-I11_and_branch_closeout"
+  },
+  "reopening_conditions": [
+    "an operational hypothesis cannot be addressed without changing DEC-027 through DEC-032",
+    "the projection silently requires a primary metric or numeric direction before I04",
+    "a control cannot distinguish the intended causal relation from generic quantity, route, or producer effects",
+    "bounded conformance reveals an omitted operation, state, refusal, restoration, or hidden-router boundary",
+    "the parent L03 hypothesis or post-R3 discriminator cannot be represented by the B-R realization",
+    "new graph evidence changes the admitted B-R provider contract"
+  ]
+}

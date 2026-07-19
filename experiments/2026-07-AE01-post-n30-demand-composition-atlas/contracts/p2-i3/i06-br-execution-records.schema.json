@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p2-i3-i06-br-execution-records-v1.0.2",
+  "$defs": {
+    "attempt_terminal": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {"const": "p2_i3_br_attempt_terminal"},
+        "attempt_id": {"minLength": 1, "type": "string"},
+        "case_id": {"type": ["string", "null"]},
+        "entry_id": {"minLength": 1, "type": "string"},
+        "entry_kind": {"enum": ["operational_baseline_construction", "scientific_branch", "quarantined_integrity_fault"]},
+        "last_durable_phase": {"enum": ["P0", "P1", "P2", "P3", "P4", "P5", "P6", "P7"]},
+        "p5_authorization_digest": {"type": ["string", "null"]},
+        "result_artifact_digests": {"items": {"type": "string"}, "type": "array"},
+        "status": {"enum": ["valid_terminal", "attested_pre_candidate_infrastructure_failure", "post_candidate_infrastructure_failure", "invalid_execution", "unknown_boundary_failure", "authority_breach"]}
+      },
+      "required": ["artifact_kind", "attempt_id", "entry_id", "entry_kind", "case_id", "last_durable_phase", "p5_authorization_digest", "result_artifact_digests", "status"],
+      "type": "object"
+    },
+    "operational_baseline_terminal": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {"const": "p2_i3_br_operational_baseline_terminal"},
+        "entry_id": {"minLength": 1, "type": "string"},
+        "substrate_base_id": {"minLength": 1, "type": "string"},
+        "source_identity_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "runtime_identity_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "native_restoration_v2_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "content_addressed_bundle_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "scientific_operation_counts": {
+          "additionalProperties": false,
+          "properties": {
+            "encounter_probe": {"const": 0},
+            "export": {"const": 0},
+            "formation": {"const": 0},
+            "integrity_fault_dispatch": {"const": 0},
+            "scientific_control": {"const": 0}
+          },
+          "required": ["formation", "export", "encounter_probe", "scientific_control", "integrity_fault_dispatch"],
+          "type": "object"
+        },
+        "scientific_evidence_effect": {"const": "none"},
+        "status": {"enum": ["valid_operational_baseline", "invalid_operational_baseline"]}
+      },
+      "required": ["artifact_kind", "entry_id", "substrate_base_id", "source_identity_digest", "runtime_identity_digest", "native_restoration_v2_digest", "content_addressed_bundle_digest", "scientific_operation_counts", "scientific_evidence_effect", "status"],
+      "type": "object"
+    },
+    "case_resolution": {
+      "additionalProperties": false,
+      "properties": {
+        "admitted_attempt_id": {"type": ["string", "null"]},
+        "artifact_kind": {"const": "p2_i3_br_case_resolution"},
+        "attempt_terminal_digests": {"items": {"type": "string"}, "maxItems": 2, "minItems": 0, "type": "array"},
+        "case_id": {"minLength": 1, "type": "string"},
+        "final_status": {"enum": ["valid_terminal", "attested_pre_candidate_infrastructure_failure", "post_candidate_infrastructure_failure", "invalid_execution", "unknown_boundary_failure", "preclaim_failure", "blocked_dependency", "not_started_campaign_stop", "authority_breach"]},
+        "retry_token_digest": {"type": ["string", "null"]}
+      },
+      "required": ["artifact_kind", "case_id", "attempt_terminal_digests", "admitted_attempt_id", "retry_token_digest", "final_status"],
+      "type": "object"
+    },
+    "checkpoint_manifest": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {"const": "p2_i3_br_checkpoint_manifest"},
+        "bindings": {"type": "object"},
+        "causal_continuation_projection_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "component_records": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "blob_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+              "byte_length": {"minimum": 1, "type": "integer"},
+              "logical_path": {"minLength": 1, "type": "string"},
+              "role": {"minLength": 1, "type": "string"},
+              "schema_id": {"minLength": 1, "type": "string"},
+              "semantic_digest": {"type": ["string", "null"]}
+            },
+            "required": ["logical_path", "role", "schema_id", "byte_length", "blob_sha256", "semantic_digest"],
+            "type": "object"
+          },
+          "maxItems": 8,
+          "minItems": 8,
+          "type": "array"
+        },
+        "detached_exact_composite_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+      },
+      "required": ["artifact_kind", "component_records", "bindings", "causal_continuation_projection_digest", "detached_exact_composite_digest"],
+      "type": "object"
+    },
+    "control_leg_resolution": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {"const": "p2_i3_br_control_leg_resolution"},
+        "control_resolution": {"enum": ["resolved", "unresolved", "invalid", "unavailable"]},
+        "evidence_resolution": {"enum": ["supportive", "equivalent", "counterdirectional", "generic_effect", "mixed", "unresolved", "not_evaluated"]},
+        "evidence_refs": {"items": {"type": "string"}, "type": "array"},
+        "execution_status": {"enum": ["not_due", "registered", "executed_valid", "executed_invalid", "unavailable"]},
+        "leg_id": {"minLength": 1, "type": "string"},
+        "terminal_guard_status": {"enum": ["not_armed", "armed", "passed", "failed", "not_applicable"]}
+      },
+      "required": ["artifact_kind", "leg_id", "execution_status", "evidence_resolution", "control_resolution", "terminal_guard_status", "evidence_refs"],
+      "type": "object"
+    },
+    "cycle_closeout": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {"const": "p2_i3_br_cycle_closeout"},
+        "operational_baseline_terminal_count": {"const": 6},
+        "case_resolution_count": {"const": 450},
+        "closure": {"enum": ["failed_closed", "invalid", "bounded_incomplete", "complete"]},
+        "ledger_complete": {"type": "boolean"},
+        "scientific_complete": {"type": "boolean"},
+        "unused_or_allocated_class_token_count": {"const": 4}
+      },
+      "required": ["artifact_kind", "operational_baseline_terminal_count", "case_resolution_count", "unused_or_allocated_class_token_count", "ledger_complete", "scientific_complete", "closure"],
+      "type": "object"
+    },
+    "resource_receipt": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {"const": "p2_i3_br_resource_receipt"},
+        "captured_log_bytes": {"minimum": 0, "type": "integer"},
+        "case_id": {"type": ["string", "null"]},
+        "entry_id": {"minLength": 1, "type": "string"},
+        "child_peak_rss_bytes": {"minimum": 0, "type": "integer"},
+        "elapsed_monotonic_ns": {"minimum": 0, "type": "integer"},
+        "exit_status": {"type": ["integer", "null"]},
+        "logical_artifact_bytes": {"minimum": 0, "type": "integer"},
+        "oom_evidence": {"type": ["boolean", "null"]},
+        "physical_blob_bytes": {"minimum": 0, "type": "integer"},
+        "process_tree_peak_rss_bytes": {"minimum": 0, "type": "integer"},
+        "signal": {"type": ["integer", "null"]},
+        "temporary_work_bytes": {"minimum": 0, "type": "integer"}
+      },
+      "required": ["artifact_kind", "entry_id", "case_id", "elapsed_monotonic_ns", "child_peak_rss_bytes", "process_tree_peak_rss_bytes", "logical_artifact_bytes", "physical_blob_bytes", "temporary_work_bytes", "captured_log_bytes", "exit_status", "signal", "oom_evidence"],
+      "type": "object"
+    }
+  },
+  "oneOf": [
+    {"$ref": "#/$defs/checkpoint_manifest"},
+    {"$ref": "#/$defs/operational_baseline_terminal"},
+    {"$ref": "#/$defs/attempt_terminal"},
+    {"$ref": "#/$defs/case_resolution"},
+    {"$ref": "#/$defs/control_leg_resolution"},
+    {"$ref": "#/$defs/resource_receipt"},
+    {"$ref": "#/$defs/cycle_closeout"}
+  ]
+}

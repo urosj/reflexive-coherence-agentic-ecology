@@ -73,6 +73,38 @@ Phase 2 gate reviews:
   source transitions, producer boundary, LGRC9V3-only core substrate,
   comparative-only GRC9V3 role, and reconstruction. DEC-019 passes the
   source-admission gate without selecting a realization.
+- [P2-I3 I03 B-R bounded-conformance input freeze](P2-I3-I03-BR-bounded-conformance-input-freeze.md)
+  explains accepted DEC-034's exact inactive source/call binding, result-
+  neutral two-route fixture, eleven-cell matrix, narrow producer ownership,
+  composite restoration/refusal boundary, and declared-provenance quarantine.
+  Its 85 checks run no LGRC model operation and authorize no runtime or
+  scientific evidence.
+- [P2-I3 I04 B-R calibration preregistration](P2-I3-I04-BR-calibration-preregistration.md)
+  explains the corrected, owner-accepted DEC-036-through-DEC-040 machine
+  projection. Its closed root schema, 42 per-leg policies, safe reconstruction,
+  22 pure tests, and 485 static checks pass, and the retained validation
+  artifact reconstructs byte-exactly. No matched-null calibration, `delta`,
+  PyGRC model, candidate/control operation, or scientific result exists. The
+  owner passed `P2-I3-CAL-PRE-GATE` on 2026-07-19, opening only construction
+  of a separate inactive I05 invocation freeze.
+- [P2-I3 I05 B-R inactive calibration freeze](P2-I3-I05-BR-inactive-calibration-freeze.md)
+  records DEC-041's exact half-unit response construction and one-shot
+  boundary. Fifty tests and 42 zero-calibration checks pass for corrected
+  package `1.0.2`; the exact retention and separate launch transition are
+  recorded without changing the accepted machine sources.
+- [P2-I3 I05 B-R calibration result](P2-I3-I05-BR-calibration-result.md)
+  records the sole successful one-shot invocation, permanent claim, final
+  receipt, five exact-null cases, ten zero margins, shared `delta=1e-12`, 49
+  passing independent reconstruction checks, and the strict numeric-only
+  evidence boundary. The owner accepts I05 and passes `P2-I3-CAL-GATE`, opening
+  I06 exact registration only.
+- [P2-I3 I06 B-R exact registration](P2-I3-I06-BR-exact-registration.md)
+  records the owner-accepted corrected `1.0.1` topology, matrix, exact
+  evidence case sets, restoration, resources, attempts, producer inventory,
+  schemas, and semantic validation. Twenty-five retained checks and 36
+  focused adversarial tests pass without candidate/control execution. The
+  owner passes `P2-I3-REG-GATE`; a clean retention commit remains required
+  before I07 and no execution freeze is opened.
 - [P2-I3 Q-005 decay interpretation study](P2-I3-Q005-decay-interpretation-study.md)
   distinguishes release-efficacy attenuation, coherence-conserving source
   leakage, and route-susceptibility relaxation. DEC-023 consumes it only as

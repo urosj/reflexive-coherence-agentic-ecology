@@ -1,6 +1,9 @@
 # P2-I3 to N31 Decay-Primitive Handoff and Return Contract
 
-**Status:** active cross-project handoff directive
+**Status:** graph handoff complete; bounded RCAE return transition accepted and
+`P2-I3-N31-RETURN-GATE` passed; DEC-026 staged resumption accepted and B-R
+Q-006 through Q-008 resolved; pre-conformance comparison and control design
+resolved through DEC-032; B-R operational hypotheses next
 
 **RCAE lane:** `AE01-L03`
 
@@ -8,8 +11,12 @@
 
 **Graph experiment proposed:** `N31`
 
-**Controlling RCAE decisions:** `P2-I3-DEC-023` and the coherence-only
-priority amendment `P2-I3-DEC-024`
+**Controlling RCAE decisions:** `P2-I3-DEC-023`, the coherence-only priority
+amendment `P2-I3-DEC-024`, and accepted return admission
+`P2-I3-DEC-025`; staged resumption is controlled by `P2-I3-DEC-026`
+and the active B-R mode/equation/encounter projection by
+`P2-I3-DEC-027/028/029`; comparison and B-R contrast/restoration design are
+controlled by `P2-I3-DEC-030/031/032`
 
 **Handoff trigger:** `P2-I3-Q-005` exposed three incompatible added-mechanism
 meanings of decay. Subsequent core-theory review established that N31 must
@@ -17,8 +24,12 @@ first test whether ordinary coherence evolution already supplies the bounded
 phenomenon without any additional decay state.
 
 **Evidence effect:** demand and continuation authority only. This handoff is
-not graph evidence, does not select or implement N31 inside RCAE, does not
-resolve Q-005, and supplies no L03 scientific result.
+not graph evidence, did not itself select or implement N31 inside RCAE, and
+supplies no L03 scientific result. DEC-026 later resolves Q-005 as staged
+evaluation; DEC-027/028 resolve only the active B-R Q-008/Q-006 boundaries.
+DEC-029 resolves only the active B-R Q-007 encounter boundary.
+DEC-030/031/032 resolve comparison semantics and the active B-R Q-013/I03
+Q-015 design boundaries without opening runtime or scientific work.
 
 **Primary input:**
 [Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md)
@@ -899,10 +910,12 @@ After the N31 source transition passes, resume in this order:
    exact semantics while freezing P2-I3-specific values and order before
    candidate evidence.
 6. Resolve Q-007 local traversal encounter; N31 local readout does not
-   automatically satisfy the ecology traversal relation.
+   automatically satisfy the ecology traversal relation. DEC-029 now resolves
+   the B-R instance as paired branch-local fixed native departure admission.
 7. Resolve Q-008 state/history mode with the returned relation or mechanism's
    complete continuation state and any relevant recomputation boundary.
-8. Resolve the I03 parts of Q-013 and Q-015.
+8. Resolve the I03 parts of Q-013 and Q-015. DEC-031/032 now resolve the B-R
+   instances while preserving I04 response binding and I06 exact finalization.
 9. Build and run bounded runtime conformance with scientific effect disabled.
 10. Review and pass `P2-I3-DISCRIMINATOR-GATE` only after every I03 obligation
     is frozen and reconstructed.
@@ -921,7 +934,7 @@ handoff does not reserve them or predetermine their answers.
 | Carrier availability | Yes as a substrate option | P2-I3 still decides ecology realization suitability |
 | Exact relation/mechanism equation/API | Yes if frozen and source-backed by N31 | P2-I3 registers its usage separately |
 | P2-I3 two-route topology | No | Must be designed and frozen in P2-I3 |
-| Local ecology traversal encounter | No | Q-007 remains P2-I3-owned |
+| Local ecology traversal encounter | No | Q-007 remains P2-I3-owned; B-R is resolved by DEC-029 and C.2 remains independent |
 | Candidate-blind calibration | No | I04/I05 remain unopened until return |
 | P2-I3 controls | No | N31 controls inform but do not replace lane controls |
 | Trail/stigmergic interpretation | No | Requires P2-I3 execution and closeout |
@@ -931,41 +944,55 @@ handoff does not reserve them or predetermine their answers.
 
 ### Graph closeout readiness
 
-- [ ] N31 terminal or bounded-incomplete closeout retained.
-- [ ] Graph sources committed and worktree clean.
-- [ ] Exact graph revision and PyGRC version retained.
-- [ ] Exact core, RC-Distance, and LGRC substrate-paper identities consumed by
+- [x] N31 terminal closeout retained.
+- [x] Graph sources committed and worktree clean.
+- [x] Exact graph revisions and both retained/reconstructed PyGRC version
+      identities retained; the bounded `0.0.0`/`0.1` distribution-metadata
+      error is explicit.
+- [x] Exact core, RC-Distance, and LGRC substrate-paper identities consumed by
       N31 retained separately from the executable PyGRC source identity.
-- [ ] Every load-bearing paper-defined surface classified as implemented,
+- [x] Every load-bearing paper-defined surface classified as implemented,
       producer-completed, specified-but-missing, unsuitable, or not consumed.
-- [ ] D0a, D0b, D0c instantaneous geometry, and all three added-mechanism
+- [x] D0a, D0b, D0c instantaneous geometry, and all three added-mechanism
       meanings have dispositions.
-- [ ] D0a representation status and producer-role audit retained; lossy or
+- [x] D0a representation status and producer-role audit retained; lossy or
       missing representation cannot support positive D0a.
-- [ ] Ordinary redistribution and added field-specific leakage are classified
+- [x] Ordinary redistribution and added field-specific leakage are classified
       by mechanism rather than by observed local loss alone.
-- [ ] Selection or non-selection reasoning retained.
-- [ ] Candidate-specific topology and invariant records retained.
-- [ ] Native versus producer ownership explicit.
-- [ ] Reproduction commands and artifact digests retained.
-- [ ] Cache recomputation and complete execution reconstruction have separate
+- [x] Selection or non-selection reasoning retained.
+- [x] Candidate-specific topology and invariant records retained.
+- [x] Native versus producer ownership explicit.
+- [x] Reproduction commands and artifact digests retained.
+- [x] Cache recomputation and complete execution reconstruction have separate
       statuses; tests pass or exact blockers are retained.
-- [ ] P2-I3 return manifest complete.
+- [x] P2-I3 return manifest complete, accepted, and return gate passed.
 
 ### RCAE resumption readiness
 
-- [ ] RCAE handoff commit identified and clean.
-- [ ] Dedicated resumption branch created.
-- [ ] N31 checkout configured locally and verified at exact revision.
-- [ ] Graph repository restored to read-only RCAE consumption.
-- [ ] Historical I01/I02 records unchanged.
-- [ ] N31 transition package constructed and reconstructed.
-- [ ] Transition review resolves affected source/API/claim boundaries.
-- [ ] Carrier and ownership decisions reopened only where evidence requires.
-- [ ] Q-005 resolved explicitly; no automatic native substitution.
-- [ ] Q-006 through Q-008 resumed in order.
-- [ ] I03 conformance remains scientifically quarantined.
-- [ ] No I04 or candidate activity begins before discriminator-gate passage.
+- [x] RCAE handoff commit identified and clean.
+- [x] Dedicated resumption branch created.
+- [x] N31 checkout configured locally and verified at exact revision.
+- [x] Graph repository restored to read-only RCAE consumption.
+- [x] Historical I01/I02 records unchanged.
+- [x] N31 transition package constructed and reconstructed.
+- [x] Transition review resolves affected source/API/claim boundaries; the
+      `0.0.0` value is retained as a bounded distribution-metadata error.
+- [x] Carrier and ownership decisions reopened only where B-R evidence
+      requires; DEC-028 retains the native node carrier while adding the
+      explicit reservoir and exact producer-owned lifecycle.
+- [x] Q-005 resolved explicitly by DEC-026 as B-R-first and C.2-second
+      evaluation; no automatic native substitution or lane winner selection.
+- [x] B-R Q-006 resumed and resolved by DEC-028.
+- [x] B-R Q-007 local encounter resumed and resolved by DEC-029 as paired
+      branch-local fixed native departure admission; metric selection and
+      result interpretation remain later authorities.
+- [x] B-R Q-008 resumed and resolved by DEC-027; C.2 Q-006 through Q-008
+      remain inactive and independent until B-R closeout.
+- [x] Common comparison semantics accepted under DEC-030; B-R Q-013 and the
+      I03 portion of Q-015 resolved under DEC-031/032.
+- [x] I03 conformance remains scientifically quarantined; none occurred in
+      the return transition.
+- [x] No I04 or candidate activity begins before discriminator-gate passage.
 
 ## 16. Stop conditions on return
 

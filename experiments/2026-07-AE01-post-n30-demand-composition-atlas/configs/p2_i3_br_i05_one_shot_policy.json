@@ -1,0 +1,204 @@
+{
+  "artifact_id": "P2-I3-I05-BR-ONE-SHOT-POLICY",
+  "artifact_version": "1.0.2",
+  "attempt_policy": {
+    "atomic_primitive": "os.open(O_CREAT|O_EXCL|O_WRONLY)",
+    "claim_deletion_forbidden": true,
+    "claim_parent_directory_fsync_required": true,
+    "claim_survives_failure": true,
+    "consume_before_builder": true,
+    "max_governed_attempts": 1,
+    "max_infrastructure_retries": 0
+  },
+  "authority": {
+    "accepted_i04_source_anchor": "1097547ad30b77d4cf9312fb05753902f6d1cc81",
+    "cal_pre_gate": "passed_by_owner_2026-07-19",
+    "decision_id": "P2-I3-DEC-041",
+    "source_anchor_rule": "accepted I04 source anchor must be an ancestor of launch HEAD"
+  },
+  "branch_id": "P2-I3-BR",
+  "calibration_construction": {
+    "calibrated_relation_ids": [
+      "m_trace",
+      "m_export"
+    ],
+    "candidate_shaped_arguments_allowed": false,
+    "carrier_formula": "c_pre_m_e = 1/2 + registered_margin",
+    "construction_id": "p2-i3-i05-q-half-v1",
+    "exact_difference_requirement": "c_pre_m_e - q_probe = registered_margin",
+    "exact_entered_case_ids": [
+      "EQ-NEG-HALF",
+      "EQ-NEG-QUARTER",
+      "EQ-ZERO",
+      "EQ-POS-QUARTER",
+      "EQ-POS-HALF"
+    ],
+    "exact_excluded_conformance_case_ids": [
+      "TRACE-FIRST-DOM-POS",
+      "TRACE-SECOND-DOM-NEG",
+      "EXPORT-FIRST-DOM-POS",
+      "EXPORT-SECOND-DOM-NEG",
+      "FLOOR-DOM-POS",
+      "FLOOR-EQUALITY",
+      "TRACE-CROSS-ZERO",
+      "EXPORT-CROSS-ZERO"
+    ],
+    "entered_margin_count": 10,
+    "margins_per_case": {
+      "m_export": 1,
+      "m_trace": 1
+    },
+    "maximum_carrier_coherence": "1",
+    "minimum_carrier_coherence": "0",
+    "q_probe": {
+      "rational": "1/2",
+      "value": 0.5
+    },
+    "request_semantics": "one identical arithmetic probe request across W/O/E and all five exact-null cases",
+    "shared_delta_formula": "max(measurement_resolution, max(abs(m_trace[c]), abs(m_export[c])) for c in entered_case_ids)",
+    "scientific_reuse": "prohibited from I06 and I08 registration and execution"
+  },
+  "candidate_blindness": {
+    "candidate_artifacts_allowed": false,
+    "candidate_execution_authorized": false,
+    "candidate_seed_values_allowed": false,
+    "candidate_shaped_inputs_allowed": false,
+    "pygrc_import_allowed": false,
+    "pygrc_runtime_inputs_allowed": false,
+    "scientific_effect": "none"
+  },
+  "committed_authority_paths": [
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i04_machine_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L03.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-machine-records.schema.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-invocation-freeze.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-output.schema.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-freeze-validation.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-decision-record.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-checklist.md",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i05_br_freeze.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_analysis.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_calibration.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py"
+  ],
+  "environment": {
+    "interpreter_binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "interpreter_command": ".venv/bin/python",
+    "jsonschema": "4.26.0",
+    "python": "3.12.3",
+    "pytest": "9.1.1",
+    "required_process_environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0"
+    },
+    "require_active_repository_venv": true
+  },
+  "frozen_i04_hashes": {
+    "analysis": "e8292c7fbe0f3cb8521e15de354dd8a0a36b9ade80c38b2c8b733858e197bb46",
+    "machine_policy": "9877154766ab9ea26a11c426a8feb8666df1a3f146efb188006a5e0f26a77bf1",
+    "machine_schema": "2e8f3cc72e588b45a641a04a16bf0287f703ee4d91880af6102692553d968e72",
+    "metric_sheet": "757247854da122836d69971a9f111922a1734ba6a89b489df411273fd2576123",
+    "preregistration": "d6ffb7fc1604b529ba23cf2574bb17128019749f405df878b32b22819bfb40fc",
+    "retained_validation": "153d187c988f8802c674977f07d872c28798cdda78d5296321c55c8eb74a1862"
+  },
+  "governed_invocation": {
+    "activation_record_required": true,
+    "builder_invocations": 1,
+    "calibration_invocation_authorized": false,
+    "candidate_execution_authorized": false,
+    "exact_null_case_count": 5,
+    "expected_delta_if_valid": "1/1000000000000",
+    "expected_response_record_count": 15,
+    "expected_triplet_count": 5,
+    "non_delta_conformance_case_count": 8,
+    "randomness_used": false
+  },
+  "iteration_id": "P2-I3-I05",
+  "lane_id": "AE01-L03",
+  "normalized_command_template": [
+    ".venv/bin/python",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+    "--policy",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+    "--activation",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+    "--expected-head",
+    "<OWNER_AUTHORIZED_FULL_HEAD>"
+  ],
+  "outputs": {
+    "attempt_claim": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json",
+    "final_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-final-receipt.json",
+    "frozen_metric_sheet": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-frozen-metric-sheet.json",
+    "matched_null": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json",
+    "metric_calibration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-metric-calibration.json"
+  },
+  "readback_policy": {
+    "builder_invocations_per_attempt": 1,
+    "output_readback_count": 3,
+    "reconstruction_builder_invocations": 0,
+    "reconstruction_is_readback_only": true,
+    "second_start_must_be_refused": true
+  },
+  "record_contracts": {
+    "activation": {
+      "exact_bindings": [
+        "accepted freeze commit and digest",
+        "policy/freeze/wrapper/builder/schema/validator digests",
+        "normalized command prefix",
+        "interpreter and process environment",
+        "attempt-claim and all governed paths",
+        "one calibration invocation and zero candidate invocations"
+      ],
+      "launch_head_binding_method": "runtime_expected_head_verified_clean_and_retained_in_claim_and_receipt",
+      "record_class": "launch_authorization",
+      "schema_id": "urn:rcae:ae01:p2-i3:i05-br-calibration-output:1.0.2",
+      "values_deferred_until_owner_launch": [
+        "accepted_freeze_commit",
+        "freeze_sha256"
+      ]
+    },
+    "attempt_claim": {
+      "attempt_consumed_on_creation": true,
+      "durability": "claim file and containing directory fsynced before builder import",
+      "post_claim_revalidation": "HEAD, clean status except exact claim, activation, authority bytes, environment, and remaining output absence",
+      "required_bindings": [
+        "claim_id",
+        "activation path and digest",
+        "launch HEAD",
+        "accepted freeze commit and digest",
+        "policy/freeze/wrapper/builder/schema/validator digests",
+        "normalized command",
+        "interpreter and environment",
+        "all governed output paths",
+        "attempt 1 and builder ceiling 1"
+      ],
+      "schema_record_class": "attempt_claim"
+    },
+    "final_receipt": {
+      "required_success_evidence": [
+        "claim and activation identity/digest",
+        "launch HEAD and builder count",
+        "15 response records and 5 triplets",
+        "all scientific output paths and digests",
+        "schema and semantic validation",
+        "exact canonical readback",
+        "shared delta for m_trace and m_export",
+        "consumed attempt and successful status",
+        "retained second-start refusal"
+      ],
+      "schema_record_class": "final_receipt"
+    },
+    "output_admission": {
+      "cal_gate_effect_without_successful_receipt": "closed",
+      "delta_admitted_without_successful_receipt": false,
+      "failed_or_missing_receipt_effect": "attempt remains consumed; partial outputs remain quarantined",
+      "requires_exact_receipt_output_digests": true,
+      "requires_schema_and_semantic_validation": true
+    }
+  }
+}

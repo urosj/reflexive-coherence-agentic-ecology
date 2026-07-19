@@ -1,0 +1,159 @@
+{
+  "admission_id": "P2-I3-N31-RETURN-001",
+  "artifact_id": "P2-I3-N31-RETURN-VALIDATION-001",
+  "artifact_version": "1.0",
+  "claim_boundary": {
+    "n31_graph_evidence_admitted": true,
+    "n31_positive_evidence_is_p2_i3_evidence": false,
+    "p2_i3_candidate_execution_authorized": false,
+    "provider_contracts_admitted_as_options": true,
+    "provider_selected": false,
+    "q005_resolved": false
+  },
+  "closeout_reconstruction": {
+    "bounded_artifact_count": 3,
+    "bounded_artifacts": [
+      {
+        "classification": "distribution_metadata_and_digest_cascade_only",
+        "difference_json_pointers": [
+          "/artifact_manifest/4/output_digest",
+          "/artifact_manifest/4/sha256",
+          "/checks/20/detail/4/output_digest",
+          "/checks/20/detail/4/sha256",
+          "/checks/21/detail/4/output_digest",
+          "/checks/21/detail/4/sha256",
+          "/output_digest",
+          "/pygrc_version",
+          "/source_artifact_manifest/9/output_digest",
+          "/source_artifact_manifest/9/sha256"
+        ],
+        "path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_closeout_and_rcae_return_i12.json"
+      },
+      {
+        "classification": "distribution_metadata_and_digest_cascade_only",
+        "difference_json_pointers": [
+          "/checks/20/detail/4/output_digest",
+          "/checks/20/detail/4/sha256",
+          "/checks/21/detail/4/output_digest",
+          "/checks/21/detail/4/sha256",
+          "/generated_artifact_manifest/4/output_digest",
+          "/generated_artifact_manifest/4/sha256",
+          "/output_digest"
+        ],
+        "path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_trace.json"
+      },
+      {
+        "classification": "distribution_metadata_and_digest_cascade_only",
+        "difference_json_pointers": [
+          "/output_digest",
+          "/pygrc_version"
+        ],
+        "path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_source_authority_and_reconstruction.json"
+      }
+    ],
+    "builder_status": "passed",
+    "exact_artifact_count": 5,
+    "exact_artifacts": [
+      "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_B_R_reusable_contract.json",
+      "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_C2_reusable_contract.json",
+      "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_candidate_disposition_matrix.json",
+      "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_claim_debt_and_nativeness_register.json",
+      "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_rcae_p2_i3_recommendation.json"
+    ],
+    "graph_checkout_mutated": false,
+    "reconstruction_mode": "temporary_local_clone_at_n31_evidence_source_anchor",
+    "scientific_or_provider_contract_difference": false,
+    "status": "passed_with_bounded_distribution_metadata_error"
+  },
+  "decision_id": "P2-I3-DEC-025",
+  "output_digest": "ec87c52d927d83f23aa31968ded3a8d757cad9b9633b1d93ba7cd4b3aa0e3d18",
+  "reproduction_commands": [
+    ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py validate --graph-root <local-graph-checkout>",
+    ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py reconstruct --graph-root <local-graph-checkout>",
+    ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py all --graph-root <local-graph-checkout>"
+  ],
+  "selection_status": "provider_options_admitted_none_selected",
+  "source_transition_validation": {
+    "distribution_metadata_error_support": {
+      "editable_import_resolves_to_admitted_graph_source": true,
+      "protected_pygrc_source_changed_between_source_anchor_and_closeout": false
+    },
+    "environment_identity": {
+      "reconstruction_environment_pygrc_version": "0.1",
+      "retained_closeout_pygrc_version": "0.0.0",
+      "source_declared_pygrc_version": "0.1"
+    },
+    "evidence_effect": "exact N31 graph-evidence and provider-contract option authority only; no provider selection, P2-I3 scientific evidence, calibration, registration, or execution authority",
+    "graph_checkout_merge_revision": "565706f8b7647f6b7638b9afbe52372e170bf724",
+    "n31_closeout_commit": "a11e1a5255a0e3475967926879b0f8a66f723950",
+    "n31_closeout_output_digest": "11cdb85a4a47f3d3d939e795b73a6a69ccb6889518c38bb82a04219f3dbfe736",
+    "n31_closeout_sha256": "afd11c57356e62d2c38bcd8824ad16a027b8f374a3cad568f37b687873499d04",
+    "n31_evidence_source_anchor": "55d5f083bfbc09d917d7a0c1df0600d4fb85cc43",
+    "provider_options_admitted": [
+      "B_conserved_export_policy",
+      "C2_exact_history_susceptibility_closure"
+    ],
+    "provider_selected": null,
+    "rcae_demand_source_revision": "ae11be2008b1902df1749faec531420432056c37",
+    "status": "passed_with_bounded_distribution_metadata_error",
+    "verified_return_artifact_count": 11,
+    "verified_return_artifacts": [
+      {
+        "output_digest": "c8b1d7eb4b8009b418b7e7c240628b1c1a547d12e259156f2e53e63bb3dc9736",
+        "role": "N31_source_and_demand_authority",
+        "sha256": "1aff8008e26e29001da019168c8340322fe3172be8b2d8ea60c3de1496f47d79"
+      },
+      {
+        "output_digest": "a61df7d4baadcecc691a4fefad6bb633a7081f11bd609eea07625740e80c68cf",
+        "role": "N31_schema_and_return_contract_authority",
+        "sha256": "9780aa2f8ac4a0aff5a3c62f13f4278fcdc780e48203dee32b436de09344d6d6"
+      },
+      {
+        "output_digest": "bf7d5eb98ab6b84e16a86fe4eba662e9b99ac648abd9b9490dcc6598c40cb5d8",
+        "role": "executed_D0_family_classification",
+        "sha256": "28a3d8b9e98b23ebdc7d852e9264fd802dad9bb45d48097d40efa2a0b1c9dc61"
+      },
+      {
+        "output_digest": "29314dc62908e445deeb868ad04719dc1c23bd856562ac159098f5a3b081e257",
+        "role": "executed_added_mechanism_DR5_replay_control_authority",
+        "sha256": "c8bf981ae9b5d59e2e486dc1c53bf84a1859ddf4569d4eea4c253e85039872af"
+      },
+      {
+        "output_digest": "95d4577ea77f49afa185e49bccb3d29a2b404f1f1bb626c7a8840f2271c93eb6",
+        "role": "comparative_conditional_frontier_authority",
+        "sha256": "e3bd4c5f23956edd35d18c42b383302d34132a259e2ba2d2e0cb336686e0edc4"
+      },
+      {
+        "output_digest": "7b8d171835eccf70df8debc0732eed0704867e1d7893ef955415d6c105e20873",
+        "role": "B_R_reusable_contract",
+        "sha256": "bcbac46ceb2bc2ce9f42bbef6ab6f8aa8f160288fd6e40545ffec2bd689b0f29"
+      },
+      {
+        "output_digest": "8d21f49662951cdfb3ae71bb550e814bc60a6f5904dc9967eb0c8eeaa9f00b49",
+        "role": "C2_reusable_contract",
+        "sha256": "ad0126e201c39923278e643f2c511d30ac3691f682fe1de40c0a5ca02c16f4ea"
+      },
+      {
+        "output_digest": "ecdd2f9ce7576cbcbdd549431c7ba273593c8a66fb14318f86de976c91e90e51",
+        "role": "candidate_disposition_matrix",
+        "sha256": "3e54340b31c63630e6ddf8d2205bc4299cf98c028153cbc1b2c27cffba3b2d8e"
+      },
+      {
+        "output_digest": "faa7a5c082434f818315b80e3f416f8735d55eeefb3dd34372e3874b0e34f120",
+        "role": "RCAE_P2_I3_recommendation",
+        "sha256": "838b5d570ad1f322b920b8997a53d01ecc1ae3976adec3ee4e0a5bcb59386080"
+      },
+      {
+        "output_digest": "143f4472320e3b2e4d1c6a9a1ae92bbe29eedbd9d74c67f58d042ca6b2c82f94",
+        "role": "source_authority_and_reconstruction",
+        "sha256": "6e2032a1749fe2e0a0c6726318bb1822855c827da9c101d2be2ceaa296353648"
+      },
+      {
+        "output_digest": "c620ea979ef9654e9181ab093549e957cc4fc91723aec34533aacd8b582db8ab",
+        "role": "claim_debt_and_nativeness_register",
+        "sha256": "1cc5c685f1e8d039ede744c637c87dcb37c7214d5817890f6540415c6a7bc25b"
+      }
+    ]
+  },
+  "status": "passed_with_bounded_distribution_metadata_error"
+}

@@ -1,0 +1,169 @@
+{
+  "artifact_id": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE",
+  "artifact_version": "1.0.2",
+  "authority": {
+    "accepted_i04_source_anchor": "1097547ad30b77d4cf9312fb05753902f6d1cc81",
+    "cal_pre_gate": "passed_by_owner_2026-07-19",
+    "decision_id": "P2-I3-DEC-041",
+    "owner_acceptance_evidence": [
+      "P2-I3-CHG-045",
+      "P2-I3-EV-035",
+      "CL-081"
+    ]
+  },
+  "branch_id": "P2-I3-BR",
+  "calibration_construction": {
+    "calibrated_relation_ids": [
+      "m_trace",
+      "m_export"
+    ],
+    "carrier_formula": "c_pre_m_e = 1/2 + registered_margin",
+    "construction_id": "p2-i3-i05-q-half-v1",
+    "exact_difference_requirement": "c_pre_m_e - q_probe = registered_margin",
+    "entered_case_ids": [
+      "EQ-NEG-HALF",
+      "EQ-NEG-QUARTER",
+      "EQ-ZERO",
+      "EQ-POS-QUARTER",
+      "EQ-POS-HALF"
+    ],
+    "entered_margin_count": 10,
+    "exact_margin_derivation": "derive from rational response margins and exact rational denominator before float projection",
+    "margins_per_case": {
+      "m_export": 1,
+      "m_trace": 1
+    },
+    "q_probe": {
+      "rational": "1/2",
+      "value": 0.5
+    },
+    "registered_margin_range": {
+      "maximum": "1/2",
+      "minimum": "-1/2"
+    },
+    "resulting_carrier_range": {
+      "maximum": "1",
+      "minimum": "0"
+    },
+    "shared_delta_formula": "max(measurement_resolution, max(abs(m_trace[c]), abs(m_export[c])) for c in entered_case_ids)",
+    "scientific_reuse": "mechanically prohibited from I06 and I08"
+  },
+  "candidate_blindness": {
+    "candidate_artifacts_consumed": false,
+    "candidate_execution_performed": false,
+    "candidate_seed_values_consumed": false,
+    "candidate_shaped_inputs_accepted": false,
+    "pygrc_imported": false,
+    "pygrc_runtime_inputs_consumed": false
+  },
+  "environment": {
+    "interpreter_binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "interpreter_command": ".venv/bin/python",
+    "jsonschema": "4.26.0",
+    "python": "3.12.3",
+    "pytest": "9.1.1",
+    "required_process_environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0"
+    }
+  },
+  "expected_governed_outputs": {
+    "attempt_claim": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json",
+    "final_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-final-receipt.json",
+    "frozen_metric_sheet": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-frozen-metric-sheet.json",
+    "matched_null": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json",
+    "metric_calibration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-metric-calibration.json"
+  },
+  "gate_boundary": {
+    "calibration_invocations": 0,
+    "candidate_execution_authorized": false,
+    "delta_assigned": false,
+    "freeze_active": false,
+    "next_permitted_action": "owner review and retention commit only",
+    "scientific_result": false
+  },
+  "invocation_envelope": {
+    "activation_record_present": false,
+    "builder_invocations_if_later_authorized": 1,
+    "exact_null_case_count": 5,
+    "expected_delta_if_valid_not_assigned": "1/1000000000000",
+    "governed_invocations_authorized": 0,
+    "injected_failure_boundaries_tested": 13,
+    "infrastructure_retries": 0,
+    "non_delta_conformance_cases_executed": 0,
+    "randomness_used": false,
+    "response_record_count_if_later_authorized": 15,
+    "triplet_count_if_later_authorized": 5
+  },
+  "iteration_id": "P2-I3-I05",
+  "lane_id": "AE01-L03",
+  "reconstruction": {
+    "compare_command": "cmp experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-freeze-validation.json outputs/reconstruction/p2-i3-i05-freeze-validation.reconstructed.json",
+    "rebuild_command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py --output outputs/reconstruction/p2-i3-i05-freeze-validation.reconstructed.json",
+    "retained_construction_command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py --artifact-construction --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-freeze-validation.json",
+    "test_command": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -m pytest -q experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i05_br_freeze.py"
+  },
+  "record_contracts": {
+    "activation_shape_frozen_values_deferred": true,
+    "activation_binds_authority_command_environment_and_paths": true,
+    "attempt_claim_closed_and_pre_builder": true,
+    "claim_file_and_parent_directory_fsync_before_builder": true,
+    "final_receipt_closed_and_required_for_admission": true,
+    "missing_or_failed_receipt_effect": "attempt consumed; outputs quarantined; delta not admitted; CAL-GATE closed",
+    "second_start_refusal_retained_in_final_receipt": true,
+    "semantic_readback_required": true,
+    "post_claim_authority_revalidation_before_builder": true
+  },
+  "source_hashes": {
+    "i04_analysis": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_analysis.py",
+      "sha256": "e8292c7fbe0f3cb8521e15de354dd8a0a36b9ade80c38b2c8b733858e197bb46"
+    },
+    "i04_machine_policy": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i04_machine_policy.json",
+      "sha256": "9877154766ab9ea26a11c426a8feb8666df1a3f146efb188006a5e0f26a77bf1"
+    },
+    "i04_preregistration": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration.json",
+      "sha256": "d6ffb7fc1604b529ba23cf2574bb17128019749f405df878b32b22819bfb40fc"
+    },
+    "i04_schema": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-machine-records.schema.json",
+      "sha256": "2e8f3cc72e588b45a641a04a16bf0287f703ee4d91880af6102692553d968e72"
+    },
+    "i04_validation": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration-validation.json",
+      "sha256": "153d187c988f8802c674977f07d872c28798cdda78d5296321c55c8eb74a1862"
+    },
+    "i05_builder": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_calibration.py",
+      "sha256": "d9155c1a1f03c0543b86a47d7d1439c109dd17b71895493879dd6bb7fd6d687f"
+    },
+    "i05_policy": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+      "sha256": "3e28501b1a2a4f6c148cb49694d69e4322fbf519b59c8eeea9bd7ae41f7b6282"
+    },
+    "i05_schema": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-output.schema.json",
+      "sha256": "94a463ea820683d72742d05b2f9a8757619ee8da8a913b2b16978c9c7805f11a"
+    },
+    "i05_tests": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i05_br_freeze.py",
+      "sha256": "b9d266e581b5b0e3077ad3b718e4b52c31f28096bbe4a068927c9dbf35ecc081"
+    },
+    "i05_validator": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_freeze_validate.py",
+      "sha256": "6d419dd3101414d9807d14840d23a7e6a2af99f1e3c96e6f31fd6e076879b385"
+    },
+    "i05_wrapper": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+      "sha256": "083bc2cfa21553456c8d104e40979cfc0a7448c9346ab5b50ef9b8c66fd4e758"
+    },
+    "metric_sheet": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/metric-sheets/AE01-L03.json",
+      "sha256": "757247854da122836d69971a9f111922a1734ba6a89b489df411273fd2576123"
+    }
+  },
+  "status": "inactive_freeze_review_ready",
+  "test_count": 50
+}

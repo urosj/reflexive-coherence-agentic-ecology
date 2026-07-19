@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rcae.invalid/schemas/p2-i3-i07-br-execution-authority-v1.json",
+  "title": "P2-I3 B-R I07 execution-authority records",
+  "oneOf": [
+    { "$ref": "#/$defs/run_matrix" },
+    { "$ref": "#/$defs/runtime_binding" },
+    { "$ref": "#/$defs/inactive_freeze" },
+    { "$ref": "#/$defs/validation" },
+    { "$ref": "#/$defs/freeze_acceptance" },
+    { "$ref": "#/$defs/activation" }
+  ],
+  "$defs": {
+    "digest": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "portable_path": {
+      "type": "string",
+      "minLength": 1,
+      "not": { "pattern": "^(?:/|[A-Za-z]:|.*(?:^|/)\\.\\.(?:/|$))" }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "$ref": "#/$defs/portable_path" },
+        "sha256": { "$ref": "#/$defs/digest" }
+      }
+    },
+    "record_base": {
+      "type": "object",
+      "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "canonical_payload_digest"],
+      "properties": {
+        "artifact_id": { "type": "string", "minLength": 1 },
+        "artifact_version": { "const": "1.0.0" },
+        "iteration_id": { "const": "P2-I3-I07" },
+        "branch_id": { "const": "P2-I3-BR" },
+        "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+      }
+    },
+    "run_matrix": {
+      "allOf": [
+        { "$ref": "#/$defs/record_base" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "source_anchor", "registration", "canonical_case_count", "operational_baseline_entry_count", "governed_entry_count", "maximum_governed_child_starts", "entries", "campaign_resource_envelope", "attempt_governance", "expected_terminal_set", "expected_terminal_set_digest", "candidate_operations", "canonical_payload_digest"],
+          "properties": {
+            "artifact_id": { "const": "P2-I3-BR-I07-RUN-MATRIX" },
+            "artifact_version": { "const": "1.0.0" },
+            "iteration_id": { "const": "P2-I3-I07" },
+            "branch_id": { "const": "P2-I3-BR" },
+            "source_anchor": { "$ref": "#/$defs/commit" },
+            "registration": { "$ref": "#/$defs/identity" },
+            "canonical_case_count": { "const": 450 },
+            "operational_baseline_entry_count": { "const": 6 },
+            "governed_entry_count": { "const": 456 },
+            "maximum_governed_child_starts": { "const": 460 },
+            "entries": { "type": "array", "minItems": 456, "maxItems": 456, "items": { "type": "object" } },
+            "campaign_resource_envelope": { "type": "object" },
+            "attempt_governance": { "type": "object" },
+            "expected_terminal_set": { "type": "array", "minItems": 919, "maxItems": 919, "items": { "type": "object" } },
+            "expected_terminal_set_digest": { "$ref": "#/$defs/digest" },
+            "candidate_operations": { "const": 0 },
+            "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+          }
+        }
+      ]
+    },
+    "runtime_binding": {
+      "allOf": [
+        { "$ref": "#/$defs/record_base" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "source_anchor", "graph", "environment", "public_api", "public_api_count", "forbidden_runtime_paths", "inspection_activity", "canonical_payload_digest"],
+          "properties": {
+            "artifact_id": { "const": "P2-I3-BR-I07-RUNTIME-BINDING" },
+            "artifact_version": { "const": "1.0.0" },
+            "iteration_id": { "const": "P2-I3-I07" },
+            "branch_id": { "const": "P2-I3-BR" },
+            "source_anchor": { "$ref": "#/$defs/commit" },
+            "graph": { "type": "object" },
+            "environment": { "type": "object" },
+            "public_api": { "type": "array", "minItems": 18, "maxItems": 18, "items": { "type": "object" } },
+            "public_api_count": { "const": 18 },
+            "forbidden_runtime_paths": { "type": "array", "minItems": 4, "items": { "type": "string" } },
+            "inspection_activity": { "type": "object" },
+            "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+          }
+        }
+      ]
+    },
+    "inactive_freeze": {
+      "allOf": [
+        { "$ref": "#/$defs/record_base" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "status", "source_anchor", "source_identities", "authority_identities", "matrix", "runtime_binding", "activation_boundary", "claim_boundary", "reconstruction_boundary", "candidate_activity", "gate_effect", "canonical_payload_digest"],
+          "properties": {
+            "artifact_id": { "const": "P2-I3-BR-I07-INACTIVE-EXEC-FREEZE" },
+            "artifact_version": { "const": "1.0.0" },
+            "iteration_id": { "const": "P2-I3-I07" },
+            "branch_id": { "const": "P2-I3-BR" },
+            "status": { "const": "inactive_pending_owner_freeze_acceptance" },
+            "source_anchor": { "$ref": "#/$defs/commit" },
+            "source_identities": { "type": "array", "minItems": 8, "items": { "$ref": "#/$defs/identity" } },
+            "authority_identities": { "type": "array", "minItems": 5, "items": { "$ref": "#/$defs/identity" } },
+            "matrix": { "$ref": "#/$defs/identity" },
+            "runtime_binding": { "$ref": "#/$defs/identity" },
+            "activation_boundary": { "type": "object" },
+            "claim_boundary": { "type": "object" },
+            "reconstruction_boundary": { "type": "object" },
+            "candidate_activity": { "type": "object" },
+            "gate_effect": { "type": "object" },
+            "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+          }
+        }
+      ]
+    },
+    "validation": {
+      "allOf": [
+        { "$ref": "#/$defs/record_base" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "status", "source_anchor", "checks", "total_checks", "passed_checks", "candidate_activity", "validated_identities", "gate_effect", "canonical_payload_digest"],
+          "properties": {
+            "artifact_id": { "const": "P2-I3-BR-I07-INACTIVE-FREEZE-VALIDATION" },
+            "artifact_version": { "const": "1.0.0" },
+            "iteration_id": { "const": "P2-I3-I07" },
+            "branch_id": { "const": "P2-I3-BR" },
+            "status": { "const": "passed_candidate_free_inactive_validation" },
+            "source_anchor": { "$ref": "#/$defs/commit" },
+            "checks": { "type": "array", "minItems": 1, "items": { "type": "object" } },
+            "total_checks": { "type": "integer", "minimum": 1 },
+            "passed_checks": { "type": "integer", "minimum": 1 },
+            "candidate_activity": { "type": "object" },
+            "validated_identities": { "type": "array", "minItems": 3, "items": { "$ref": "#/$defs/identity" } },
+            "gate_effect": { "type": "object" },
+            "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+          }
+        }
+      ]
+    },
+    "freeze_acceptance": {
+      "allOf": [
+        { "$ref": "#/$defs/record_base" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "freeze_retention_commit", "accepted_freeze", "execution_authorized", "activation_construction_permitted", "canonical_payload_digest"],
+          "properties": {
+            "artifact_id": { "const": "P2-I3-BR-I07-FREEZE-ACCEPTANCE" },
+            "artifact_version": { "const": "1.0.0" },
+            "iteration_id": { "const": "P2-I3-I07" },
+            "branch_id": { "const": "P2-I3-BR" },
+            "freeze_retention_commit": { "$ref": "#/$defs/commit" },
+            "accepted_freeze": { "$ref": "#/$defs/identity" },
+            "execution_authorized": { "const": false },
+            "activation_construction_permitted": { "const": true },
+            "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+          }
+        }
+      ]
+    },
+    "activation": {
+      "allOf": [
+        { "$ref": "#/$defs/record_base" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["artifact_id", "artifact_version", "iteration_id", "branch_id", "freeze_acceptance", "accepted_freeze", "freeze_retention_commit", "owner_execution_direction", "launch_head_binding", "launch_environment", "interpreter_binding", "graph_root_binding", "governed_path_policy", "consumed", "canonical_payload_digest"],
+          "properties": {
+            "artifact_id": { "const": "P2-I3-BR-I07-EXECUTION-ACTIVATION" },
+            "artifact_version": { "const": "1.0.0" },
+            "iteration_id": { "const": "P2-I3-I07" },
+            "branch_id": { "const": "P2-I3-BR" },
+            "freeze_acceptance": { "$ref": "#/$defs/identity" },
+            "accepted_freeze": { "$ref": "#/$defs/identity" },
+            "freeze_retention_commit": { "$ref": "#/$defs/commit" },
+            "owner_execution_direction": { "const": true },
+            "launch_head_binding": { "const": "runtime_argument_verified_and_retained_in_campaign_claim" },
+            "launch_environment": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["required_environment", "pythonpath_template", "pythonhome", "ambient_or_installed_fallback_allowed"],
+              "properties": {
+                "required_environment": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["BLIS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS", "OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "PYTHONDONTWRITEBYTECODE", "PYTHONHASHSEED", "PYTHONNOUSERSITE", "VECLIB_MAXIMUM_THREADS"],
+                  "properties": {
+                    "BLIS_NUM_THREADS": { "const": "1" },
+                    "MKL_NUM_THREADS": { "const": "1" },
+                    "NUMEXPR_NUM_THREADS": { "const": "1" },
+                    "OMP_NUM_THREADS": { "const": "1" },
+                    "OPENBLAS_NUM_THREADS": { "const": "1" },
+                    "PYTHONDONTWRITEBYTECODE": { "const": "1" },
+                    "PYTHONHASHSEED": { "const": "0" },
+                    "PYTHONNOUSERSITE": { "const": "1" },
+                    "VECLIB_MAXIMUM_THREADS": { "const": "1" }
+                  }
+                },
+                "pythonpath_template": { "const": "${RCAE_PYGRC_ROOT}/src:experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts" },
+                "pythonhome": { "const": "absent" },
+                "ambient_or_installed_fallback_allowed": { "const": false }
+              }
+            },
+            "interpreter_binding": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["invocation_path", "resolved_target_sha256", "resolved_target_kind", "python_version", "python_implementation"],
+              "properties": {
+                "invocation_path": { "const": ".venv/bin/python" },
+                "resolved_target_sha256": { "$ref": "#/$defs/digest" },
+                "resolved_target_kind": { "const": "regular_file" },
+                "python_version": { "const": "3.12.3" },
+                "python_implementation": { "const": "CPython" }
+              }
+            },
+            "graph_root_binding": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["environment_variable", "retained_root", "resolved_target_revision", "resolved_target_source_root", "resolved_target_pygrc_init_sha256", "machine_local_path_retained"],
+              "properties": {
+                "environment_variable": { "const": "RCAE_PYGRC_ROOT" },
+                "retained_root": { "const": "${RCAE_PYGRC_ROOT}" },
+                "resolved_target_revision": { "const": "565706f8b7647f6b7638b9afbe52372e170bf724" },
+                "resolved_target_source_root": { "const": "src" },
+                "resolved_target_pygrc_init_sha256": { "$ref": "#/$defs/digest" },
+                "machine_local_path_retained": { "const": false }
+              }
+            },
+            "governed_path_policy": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["claims_no_symlink_components", "outputs_no_symlink_components", "temporaries_no_symlink_components", "content_store_no_symlink_components"],
+              "properties": {
+                "claims_no_symlink_components": { "const": true },
+                "outputs_no_symlink_components": { "const": true },
+                "temporaries_no_symlink_components": { "const": true },
+                "content_store_no_symlink_components": { "const": true }
+              }
+            },
+            "consumed": { "const": false },
+            "canonical_payload_digest": { "$ref": "#/$defs/digest" }
+          }
+        }
+      ]
+    }
+  }
+}

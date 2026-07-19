@@ -1,0 +1,273 @@
+{
+  "admission_id": "P2-I3-N31-RETURN-001",
+  "artifact_version": "1.0",
+  "status": "accepted",
+  "decision_id": "P2-I3-DEC-025",
+  "gate_id": "P2-I3-N31-RETURN-GATE",
+  "gate_disposition": "passed",
+  "lane_id": "AE01-L03",
+  "iteration_id": "P2-I3-I03",
+  "question_id": "P2-I3-Q-005",
+  "n31_experiment_path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics",
+  "evidence_effect": "exact N31 graph-evidence and provider-contract option authority only; no provider selection, P2-I3 scientific evidence, calibration, registration, or execution authority",
+  "selection_status": "provider_options_admitted_none_selected",
+  "repository_identities": {
+    "graph_checkout_merge_revision": "565706f8b7647f6b7638b9afbe52372e170bf724",
+    "n31_closeout_commit": "a11e1a5255a0e3475967926879b0f8a66f723950",
+    "n31_evidence_source_anchor": "55d5f083bfbc09d917d7a0c1df0600d4fb85cc43",
+    "rcae_demand_source_revision": "ae11be2008b1902df1749faec531420432056c37"
+  },
+  "historical_i02_authority": {
+    "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i02-source-admission-manifest.json",
+    "sha256": "c1194085c6a55e783ce739f5a22a75e89b9eb1ab237f6bec3199853426ab343f",
+    "disposition": "retained_unchanged_historical_authority"
+  },
+  "n31_closeout_identity": {
+    "path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_closeout_and_rcae_return_i12.json",
+    "sha256": "afd11c57356e62d2c38bcd8824ad16a027b8f374a3cad568f37b687873499d04",
+    "output_digest": "11cdb85a4a47f3d3d939e795b73a6a69ccb6889518c38bb82a04219f3dbfe736",
+    "closeout_status": "N31-C6_exact_RCAE_return_bundle_complete",
+    "claim_ceiling": "bounded graph-side decay-semantic classification and authority-qualified RCAE return contracts for conserved redistribution and effective susceptibility"
+  },
+  "required_return_artifact_roles": [
+    "N31_source_and_demand_authority",
+    "N31_schema_and_return_contract_authority",
+    "executed_D0_family_classification",
+    "executed_added_mechanism_DR5_replay_control_authority",
+    "comparative_conditional_frontier_authority",
+    "B_R_reusable_contract",
+    "C2_reusable_contract",
+    "candidate_disposition_matrix",
+    "RCAE_P2_I3_recommendation",
+    "source_authority_and_reconstruction",
+    "claim_debt_and_nativeness_register"
+  ],
+  "n31_candidate_dispositions": {
+    "D0a_native_spatial_organization": "retained_native_foundation_not_selected_as_decay_provider",
+    "D0b_finite_window_derived_observable": "retained_diagnostic_not_selected_as_causal_provider",
+    "D0c_instantaneous_geometry_comparator": "retained_diagnostic_not_selected_as_decay_provider",
+    "A_release_efficacy_attenuation": "retained_semantic_boundary_not_selected_for_current_field_state_demand",
+    "B_conserved_export_policy": "conditionally_selected_for_I12_conserved_redistribution_contract",
+    "C2_exact_history_susceptibility_closure": "conditionally_selected_for_I12_susceptibility_closure_contract"
+  },
+  "rcae_admission_dispositions": {
+    "D0a_native_spatial_organization": "retained_native_foundation_not_selected_as_decay_provider",
+    "D0b_finite_window_derived_observable": "retained_diagnostic_not_selected_as_causal_provider",
+    "D0c_instantaneous_geometry_comparator": "retained_diagnostic_not_selected_as_decay_provider",
+    "A_release_efficacy_attenuation": "retained_semantic_boundary_not_selected_for_current_field_state_demand",
+    "B_conserved_export_policy": "provider_contract_option_admitted_not_selected",
+    "C2_exact_history_susceptibility_closure": "provider_contract_option_admitted_not_selected",
+    "B_R_plus_C2": "new_composition_option_not_inherited_not_selected"
+  },
+  "provider_contract_options": [
+    {
+      "semantic_route": "conservative_coherence_redistribution",
+      "candidate_id": "B_conserved_export_policy",
+      "selection_status": "admitted_option_not_selected",
+      "contract_artifact_path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_B_R_reusable_contract.json",
+      "contract_artifact_sha256": "bcbac46ceb2bc2ce9f42bbef6ab6f8aa8f160288fd6e40545ffec2bd689b0f29",
+      "contract_output_digest": "7b8d171835eccf70df8debc0732eed0704867e1d7893ef955415d6c105e20873",
+      "authority_ceiling": "producer_mediated_B_R_DR5",
+      "executed_rung": "DR5_producer_mediated",
+      "contract_only_rung": "DR6_contract_only",
+      "producer_residue": [
+        "export eligibility",
+        "amount/cap",
+        "time",
+        "destination"
+      ],
+      "naturalization_debt": [
+        "native route-local export lifecycle",
+        "full route-distribution mediation",
+        "separate D0-R bridge evidence"
+      ],
+      "consumer_control_set": [
+        "artifact_replay",
+        "snapshot_load_replay",
+        "branch_replay",
+        "duplicate_replay",
+        "explicit_destination_and_complete_conservation",
+        "source_C_clamp_reverses_readout",
+        "destination_C_clamp_preserves_readout",
+        "matched_route_mass_loss_without_contrast_change_preserves_readout",
+        "producer_omission_yields_zero_export",
+        "rejected_readout_is_atomic_and_state_neutral"
+      ],
+      "forbidden_claims": [
+        "ordinary_post_formation_D0_R",
+        "autonomous_native_decay",
+        "susceptibility_relaxation",
+        "organization_transferred_to_destination",
+        "cross_context_reuse_evidence",
+        "native_support",
+        "general_decay_law",
+        "ecology_evidence"
+      ]
+    },
+    {
+      "semantic_route": "activity_indexed_susceptibility",
+      "candidate_id": "C2_exact_history_susceptibility_closure",
+      "selection_status": "admitted_option_not_selected",
+      "contract_artifact_path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_C2_reusable_contract.json",
+      "contract_artifact_sha256": "ad0126e201c39923278e643f2c511d30ac3691f682fe1de40c0a5ca02c16f4ea",
+      "contract_output_digest": "8d21f49662951cdfb3ae71bb550e814bc60a6f5904dc9967eb0c8eeaa9f00b49",
+      "authority_ceiling": "relation_DR2_producer_extension_DR5_native_DR0",
+      "executed_rung": "DR5_producer_extension",
+      "contract_only_rung": "DR6_contract_only",
+      "producer_residue": [
+        "history functional application",
+        "effective conductance insertion",
+        "packet scheduling"
+      ],
+      "naturalization_debt": [
+        "packetization invariance",
+        "direct mediation controls",
+        "multi-cycle stability",
+        "topology lifecycle policy",
+        "cache and pruning semantics",
+        "native source-current re-admission"
+      ],
+      "consumer_control_set": [
+        "artifact_replay",
+        "snapshot_load_replay",
+        "branch_replay",
+        "duplicate_replay",
+        "post_feedback_restoration_replay",
+        "exact_history_rederivation",
+        "wrong_edge_or_nonqualifying_event_invariance",
+        "wrong_lineage_invariance",
+        "semantic_label_invariance",
+        "role_preserving_topology_invariance",
+        "physical_progression_changes_relation",
+        "conservation_exact"
+      ],
+      "forbidden_claims": [
+        "strict_current_C_only_relation",
+        "native_route_organization_weakening",
+        "native_C2",
+        "cross_context_reuse_evidence",
+        "native_support",
+        "general_decay_law",
+        "ecology_evidence"
+      ]
+    }
+  ],
+  "composition_option": {
+    "candidate_id": "B_R_plus_C2",
+    "selection_status": "admitted_possibility_not_selected",
+    "classification": "new_controlled_composition_candidate",
+    "may_inherit_individual_DR5_results": false,
+    "requires_separate_controls": true,
+    "required_attribution": [
+      "coherence_redistribution_caused_by_B_R",
+      "susceptibility_modification_caused_by_C2",
+      "interaction_or_interference_between_B_R_and_C2"
+    ]
+  },
+  "environment_identity_discrepancy": {
+    "retained_closeout_pygrc_version": "0.0.0",
+    "source_declared_pygrc_version": "0.1",
+    "reconstruction_environment_pygrc_version": "0.1",
+    "disposition": "bounded_distribution_metadata_error_no_provider_contract_effect",
+    "owner_disposition": "distribution_metadata_error",
+    "owner_disposition_date": "2026-07-19",
+    "supporting_checks": {
+      "editable_import_resolves_to_admitted_graph_source": true,
+      "protected_pygrc_source_changed_between_source_anchor_and_closeout": false
+    },
+    "exact_effect": "source-authority record, top-level closeout, and closeout trace are not byte-exact after reconstruction because version metadata and its dependent digests differ",
+    "non_effect": "both provider contracts and all other I12 return artifacts reconstruct byte-for-byte; all builder checks pass",
+    "debt": "N31 retained incorrect installed-distribution version metadata; the source and provider-contract identities remain authoritative"
+  },
+  "effect_on_existing_decisions": {
+    "P2-I3-DEC-020": "retained; all executable return routes remain LGRC9V3-based",
+    "P2-I3-DEC-021": "not yet retained or reopened; B-R can preserve a node-coherence source carrier only with explicit destination topology, while C2 makes a packet-history-derived relational surface load-bearing",
+    "P2-I3-DEC-022": "not yet retained or reopened; N31 fixes exact native/producer ceilings for each option but only the selected option may reopen affected ownership rows",
+    "P2-I3-DEC-023": "handoff satisfied through a committed reconstructable return bundle",
+    "P2-I3-DEC-024": "D0-first demand satisfied; native D0a reaches DR2 but no autonomous ordinary weakening provider was found"
+  },
+  "non_effects": [
+    "no P2-I1 authority or evidence changes",
+    "no P2-I2 authority or evidence changes",
+    "no historical P2-I3 I01/I02 artifact changes",
+    "no graph repository source or runtime changes from RCAE",
+    "no native implementation requirement",
+    "no provider selection",
+    "no positive P2-I3 evidence admission",
+    "no calibration, registration, or execution authority"
+  ],
+  "blocked_relabels": [
+    "one_general_decay_law",
+    "native_autonomous_decay",
+    "D0_R_success",
+    "B_R_as_D0_R",
+    "B_R_D0_R_equivalence",
+    "strict_current_C_only_C2",
+    "native_C2",
+    "trail_or_stigmergic_field",
+    "memory_or_learning",
+    "communication_or_coordination",
+    "ecology_regime",
+    "agency_or_selfhood",
+    "native_support",
+    "automatic_RCAE_adoption",
+    "cross_context_reuse"
+  ],
+  "reconstruction_difference_contract": {
+    "source_authority_json_pointers": [
+      "/output_digest",
+      "/pygrc_version"
+    ],
+    "closeout_json_pointers": [
+      "/artifact_manifest/4/output_digest",
+      "/artifact_manifest/4/sha256",
+      "/checks/20/detail/4/output_digest",
+      "/checks/20/detail/4/sha256",
+      "/checks/21/detail/4/output_digest",
+      "/checks/21/detail/4/sha256",
+      "/output_digest",
+      "/pygrc_version",
+      "/source_artifact_manifest/9/output_digest",
+      "/source_artifact_manifest/9/sha256"
+    ],
+    "trace_json_pointers": [
+      "/checks/20/detail/4/output_digest",
+      "/checks/20/detail/4/sha256",
+      "/checks/21/detail/4/output_digest",
+      "/checks/21/detail/4/sha256",
+      "/generated_artifact_manifest/4/output_digest",
+      "/generated_artifact_manifest/4/sha256",
+      "/output_digest"
+    ]
+  },
+  "reconstruction": {
+    "scope": "rebuild the I12 closeout from exact retained I1/I2/I8/I10/I11 inputs and verify all eleven return identities; do not reexecute the upstream N31 scientific matrices",
+    "upstream_execution_authority": "consume N31 retained I8/I10 complete replay and reconstruction statuses at their graph-side claim ceilings; generate all P2-I3 ecology evidence fresh",
+    "validator": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py",
+      "sha256": "4fc3369e475dd9d07216eb10fa11eefa360e8faeac1a6e69e6a9c9ede52d2466"
+    },
+    "commands": [
+      ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py validate --graph-root <local-graph-checkout>",
+      ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py reconstruct --graph-root <local-graph-checkout>",
+      ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_n31_return_validate.py all --graph-root <local-graph-checkout>"
+    ],
+    "graph_mutation_allowed": false,
+    "temporary_clone_required_for_builder": true
+  },
+  "next_decision_boundary": {
+    "question_id": "P2-I3-Q-005",
+    "required_choice": "select B-R, C2, a separately controlled B-R+C2 composition, another explicitly justified route, or non-selection",
+    "selection_must_bind": [
+      "demanded ecology semantics",
+      "exact provider contract identity",
+      "authority ceiling",
+      "producer residue",
+      "naturalization debt",
+      "consumer controls",
+      "forbidden claims",
+      "effect on DEC-021",
+      "effect on DEC-022"
+    ]
+  }
+}

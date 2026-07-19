@@ -87,6 +87,69 @@ Contract completeness, schema validity, and registry consistency are not
 positive atlas evidence. Review R2 assigned `AE01-C2` for the accepted Phase 1
 contract; no lane or higher scientific rung is assigned.
 
+## P2-I3 B-R bounded-conformance freeze
+
+`p2-i3/i03-br-bounded-conformance-input-freeze.json` is the accepted inactive
+DEC-034 authority. It binds exact sources and public calls, a result-neutral two-route
+fixture, eleven conformance cells, narrow RCAE ownership, Q-013/Q-015
+addressability, and mechanical downstream quarantine. Its 85-check validation
+performs no LGRC model operation and creates no conformance output. The freeze
+cannot supply later scientific values. Harness construction and runtime wait
+for the accepted freeze's clean source-anchor commit.
+
+## P2-I3 B-R I04 calibration preregistration
+
+`p2-i3/i04-br-calibration-preregistration.json` binds the accepted
+DEC-036-through-DEC-040 authority to the exact machine policy, closed schema,
+pure analysis path, validator, and focused tests.
+`p2-i3/i04-br-machine-records.schema.json` defines a closed five-record root
+union and eight response, pair/triplet, control-leg, terminal-overlay, and
+component definitions. The retained
+`p2-i3/i04-br-calibration-preregistration-validation.json` passes 485 static
+checks and reconstructs byte-exactly.
+
+This package runs no calibration builder and produces no `delta`. Its 22 pure
+tests exercise response/estimator conformance, conditional schema closure, the
+42-leg policy, and non-destructive reconstruction. The owner accepted the
+corrected package and passed `P2-I3-CAL-PRE-GATE` on 2026-07-19, opening only
+construction of a separate inactive I05 invocation freeze.
+
+## P2-I3 B-R I05 inactive calibration freeze
+
+`p2-i3/i05-br-calibration-invocation-freeze.json` binds DEC-041, accepted I04
+source identities, the half-unit construction, one-shot envelope, candidate-
+blindness, environment, outputs, and zero-execution gate boundary.
+`p2-i3/i05-br-calibration-output.schema.json` is a closed root union for the
+future matched-null, metric-calibration, frozen-metric-sheet, activation,
+attempt-claim, and final-receipt records. A bound semantic validator resolves
+nested response/triplet shapes against accepted I04 schema `1.0.1`, enforces
+both-relation coverage, and recomputes identities and arithmetic. The retained
+`p2-i3/i05-br-calibration-freeze-validation.json` passes 42 checks with 50
+focused tests.
+
+The owner accepted `1.0.2` for exact retention, and
+`p2-i3/i05-br-retention-validation.json` binds clean retention commit
+`d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, the accepted source digests,
+50 passing tests, 42 passing checks, and byte-exact reconstruction. That record
+has SHA-256
+`f956eebe1695c62131f7b5cbc107f581eb5ee654a36ca5dcdf5c4f9668328e61`
+and retention effect only. The separately schema-validated
+`p2-i3/i05-br-calibration-launch-authorization.json` now binds the accepted
+freeze and exact source/environment/path envelope for one invocation under the
+owner's direction to complete I05 through the final acceptance boundary. Its
+exact launch HEAD was runtime-supplied as
+`7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`. The sole invocation completed
+successfully; the permanent claim, final receipt, three calibration outputs,
+and 49-check independent validation are retained under `outputs/p2-i3/i05/`.
+The shared `delta=1e-12` is numeric-resolution evidence only.
+
+`p2-i3/i05-br-owner-acceptance-and-cal-gate.json` records that final
+acceptance, binds the launch HEAD, activation, permanent claim, successful
+receipt, three governed outputs, 49-check validation, exact shared `delta`, and
+interpretation ceiling, and passes `P2-I3-CAL-GATE`. Its SHA-256 is
+`16c820aaa2bba3ed2fa34604437f0c2202e194aa0db6c507a712dc30a09cdac0`. It
+opens I06 exact implementation registration only.
+
 ## P2-I1 registration materialization
 
 `p2-i1/registration-records/` applies the existing `1.1.0` record vocabulary
