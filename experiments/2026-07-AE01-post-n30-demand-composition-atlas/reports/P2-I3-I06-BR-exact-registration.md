@@ -3,14 +3,14 @@
 ## Disposition
 
 The B-R I06A bounded correction is owner-accepted, source-anchored,
-materialized, tested, and byte-exactly reconstructed. Its retention commit is
-the next boundary before candidate-free I07-A rebinding resumes.
+materialized, tested, byte-exactly reconstructed, and retained at `0769e5c`.
+Candidate-free I07-A rebinding has resumed under that exact authority.
 
 ```text
 P2-I3-I06 package 1.0.1:        historical, accepted, retained
-P2-I3-I06A package 1.0.2:       owner-accepted; retention pending
+P2-I3-I06A package 1.0.2:       owner-accepted; retained at 0769e5c
 prior P2-I3-REG-GATE identity:  non-executable after defect discovery
-corrected P2-I3-REG-GATE:       passed; effective after retention commit
+corrected P2-I3-REG-GATE:       passed; effective
 P2-I3-EXEC-FREEZE:              unopened
 candidate execution:            not authorized and not performed
 scientific/control execution:   not authorized and not performed
@@ -634,11 +634,11 @@ P2-I3-I06 package 1.0.1 = retained historical authority
 P2-I3-I06A source anchor = 7b5d392078e18428da297ea68a2c956a13e8edee
 P2-I3-I06A package 1.0.2 = owner-accepted
 corrected P2-I3-REG-GATE = passed
-next required boundary = accepted package retention commit
-after that = rebind and resume candidate-free I07-A
+retention commit = 0769e5c6e3fefbb25c7841a3878da2d29c8d0604
+next required boundary = clean I07-A source anchor before I07-B
 ```
 
 Corrected REG-GATE does not pass `P2-I3-EXEC-FREEZE` or authorize a candidate,
-control, baseline, or integrity-fault operation. I07-A may resume only after
-the accepted package is committed and then only for candidate-free source
-rebinding and validation.
+control, baseline, or integrity-fault operation. I07-A has resumed only for
+candidate-free source rebinding and validation; its review-ready result is
+recorded separately and still does not open I07-B or execution.

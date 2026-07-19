@@ -1,0 +1,129 @@
+{
+  "artifact_id": "P2-I3-BR-I07-EXECUTION-SOURCE-POLICY",
+  "artifact_version": "1.0.0",
+  "branch_id": "P2-I3-BR",
+  "candidate_free_construction": {
+    "allowed": [
+      "read_committed_rcae_authority",
+      "read_clean_graph_source",
+      "import_public_modules_for_identity_inspection",
+      "inspect_frozen_public_signatures",
+      "derive_exact_run_matrix_and_terminal_set",
+      "schema_and_semantic_validation",
+      "read_only_reconstruction"
+    ],
+    "forbidden": [
+      "model_construction",
+      "packet_scheduling",
+      "event_progression",
+      "native_save_load_or_reset",
+      "response_evaluation",
+      "control_resolution",
+      "integrity_fault_dispatch",
+      "scientific_or_ecology_interpretation"
+    ]
+  },
+  "authority": {
+    "decision": "P2-I3-DEC-047",
+    "graph_revision": "565706f8b7647f6b7638b9afbe52372e170bf724",
+    "i03_public_call_authority": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json",
+    "i05_calibration_acceptance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-owner-acceptance-and-cal-gate.json",
+    "i06_registration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-exact-registration.json",
+    "i06_registration_validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-registration-validation.json",
+    "i06_reg_gate": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-owner-acceptance-and-reg-gate.json",
+    "i06_retention_commit": "0769e5c6e3fefbb25c7841a3878da2d29c8d0604",
+    "i06_package": {
+      "package_version": "1.0.2",
+      "registration_sha256": "7d5987223f42ef053beefbb5afb5fd88cf1fcd150a0048818b96f5718ae878b6",
+      "registration_validation_sha256": "d02e59b978b5cad22251c76ad0f703c8842b1792593e807a99a21e5faa47f1f1",
+      "reg_gate_sha256": "376ddd9272d8880bc9b9d8d47a7f5eb06cbb9a2814d486e5f8b92caf34049c94",
+      "canonical_case_count": 450,
+      "operational_baseline_entry_count": 6,
+      "governed_entry_count": 456,
+      "maximum_governed_child_starts": 460
+    }
+  },
+  "environment": {
+    "interpreter": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "python_implementation": "CPython",
+    "required_packages": {
+      "PyYAML": "6.0.3",
+      "jsonschema": "4.26.0",
+      "networkx": "3.6.1",
+      "pygrc": "0.1"
+    },
+    "required_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0",
+      "PYTHONNOUSERSITE": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "normalized_pythonpath": "${RCAE_PYGRC_ROOT}/src:experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts",
+    "pythonhome": "absent",
+    "graph_root_environment_variable": "RCAE_PYGRC_ROOT",
+    "retained_graph_root": "${RCAE_PYGRC_ROOT}",
+    "network_allowed": false,
+    "ambient_or_installed_fallback_allowed": false
+  },
+  "source_package": {
+    "files": [
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i07_execution_policy.json",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-execution-authority.schema.json",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_execution_runtime.py",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i07_br_freeze.py",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i07_br_validate.py",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i08_br_supervisor.py",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i08_br_case.py",
+      "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i07_br.py"
+    ],
+    "supervisor_must_not_import": [
+      "pygrc",
+      "p2_i3_i08_br_case",
+      "p2_i3_i06_br_registration"
+    ],
+    "live_child_fresh_interpreter": true,
+    "live_child_python_flag": "-B",
+    "worker_reuse": false
+  },
+  "commands": {
+    "build_inactive_freeze": "env BLIS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONNOUSERSITE=1 VECLIB_MAXIMUM_THREADS=1 PYTHONPATH=${RCAE_PYGRC_ROOT}/src:experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i07_br_freeze.py build --graph-root ${RCAE_PYGRC_ROOT}",
+    "validate_inactive_freeze": "env BLIS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONNOUSERSITE=1 VECLIB_MAXIMUM_THREADS=1 PYTHONPATH=${RCAE_PYGRC_ROOT}/src:experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i07_br_validate.py validate --graph-root ${RCAE_PYGRC_ROOT}",
+    "reconstruct_inactive_freeze": "env BLIS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONNOUSERSITE=1 VECLIB_MAXIMUM_THREADS=1 PYTHONPATH=${RCAE_PYGRC_ROOT}/src:experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i07_br_validate.py reconstruct --graph-root ${RCAE_PYGRC_ROOT} --output outputs/reconstruction/p2-i3-i07-br-validation.reconstructed.json",
+    "future_launch_prefix": "env RCAE_PYGRC_ROOT=${RCAE_PYGRC_ROOT} BLIS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONNOUSERSITE=1 VECLIB_MAXIMUM_THREADS=1 PYTHONPATH=${RCAE_PYGRC_ROOT}/src:experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i08_br_supervisor.py run-campaign --expected-head <full-clean-launch-head>"
+  },
+  "retained_outputs": {
+    "run_matrix": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-run-matrix.json",
+    "runtime_binding": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-runtime-binding.json",
+    "inactive_freeze": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-inactive-exec-freeze.json",
+    "validation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-inactive-freeze-validation.json"
+  },
+  "future_authority_paths": {
+    "freeze_acceptance": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-freeze-acceptance.json",
+    "activation": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i07-br-execution-activation.json"
+  },
+  "live_paths": {
+    "governed_root": "outputs/p2-i3/br/c01",
+    "content_store": "outputs/p2-i3/br/c01/content/sha256",
+    "campaign_claim": "outputs/p2-i3/br/c01/authority/campaign-claim.json",
+    "resume_claim": "outputs/p2-i3/br/c01/authority/resume-claim.json",
+    "retry_token_template": "outputs/p2-i3/br/c01/authority/retry-tokens/{execution_class}.json",
+    "entry_root_template": "outputs/p2-i3/br/c01/entries/{schedule_ordinal:03d}-{entry_slug}",
+    "cycle_closeout": "outputs/p2-i3/br/c01/cycle-closeout.json"
+  },
+  "authorization": {
+    "freeze_acceptance_authorizes_execution": false,
+    "activation_requires_separate_owner_direction": true,
+    "campaign_claim_consumes_activation": true,
+    "campaign_claim_crosses_p5": false,
+    "governed_entry_claim_required": true,
+    "supervisor_p5_required": true,
+    "activation_reusable": false,
+    "scientific_rerun_is_reconstruction": false
+  }
+}

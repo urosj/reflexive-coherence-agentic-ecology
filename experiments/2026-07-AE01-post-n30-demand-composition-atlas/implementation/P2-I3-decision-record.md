@@ -6164,6 +6164,29 @@ I07 produces operational authorization evidence only. It assigns no response,
 control outcome, rung, tag, provider comparison, scientific result, or ecology
 claim.
 
+### I07-A pre-anchor hardening clarification
+
+The accepted authority separation requires closed records and self-contained
+commands at the final boundary, not only correct prose. Before the clean I07-A
+anchor, `freeze_acceptance` and `activation` therefore declare every inherited
+and record-specific field and reject unknown fields through both JSON Schema
+and independent supervisor semantics. Every retained I07 command carries the
+complete normalized environment; activation additionally binds that exact
+environment, normalized PyGRC-first `PYTHONPATH`, resolved interpreter-file
+digest, resolved graph revision/PyGRC-root digest, and no-symlink policy for
+governed claims, outputs, temporaries, and content storage. No machine-local
+absolute path is retained.
+
+The 919-member expected terminal set is explicitly a closure-root set. Its four
+permanent retry-token roots each own any optional attempt-2 claim, phases, P5,
+logs, resource receipt, terminal, output, and entry resolution as digest-bound
+descendants. Their closed states are `unused`,
+`allocated_before_attempt_2_claim`, `attempt_2_failed`, and
+`attempt_2_valid_terminal`. Attempt-2 terminals are not independent roots;
+orphan or multiply owned retry output fails closed. A controlled importable
+ambient-PyGRC test must also fail on source identity before any public runtime
+call, so no-fallback evidence does not depend on an accidentally stale package.
+
 ### Gate and reopening effect
 
 This resolves the B-R instance of Q-019. I07-A may now implement and test the
@@ -6310,8 +6333,26 @@ campaign/case/token/phase transactions, a prospectively frozen dependency DAG,
 typed failure propagation, and separate terminal-ledger/scientific evidence
 completeness. These are registration authorities only and run no child.
 
-I06 exact implementation registration is active. The complete machine
-registration still blocks `P2-I3-REG-GATE`. Candidate/control
-execution, C.2 work, every OP and R01-R05 result, `AE01-H-L03`, provider
-comparison, appendix activation, and every branch/lane/specification result
-remain unauthorized or unassigned until their named gates pass.
+I06A package `1.0.2` preserves those scientific authorities while adding the
+six separately governed operational baselines and corrected 456-entry
+topological schedule described above. It is owner-accepted, passes corrected
+`P2-I3-REG-GATE`, and is retained at `0769e5c`. That acceptance certifies
+registration completeness only; it deliberately leaves source executability
+to I07-A.
+
+Candidate-free I07-A now projects the retained 450-case registry plus six
+baseline entries into a 456-entry run matrix and 919-root terminal set. It
+corrects the paused draft's repository-root, baseline dispatch, P4/P5 order,
+process-group timeout, captured-log, retry, and supervisor-resume assumptions;
+then closes acceptance/activation shapes, command/environment identity, Model
+A retry-root ownership, and intentional ambient-fallback refusal. Forty
+focused tests and the 82-test I06A/I07-A boundary pass, and two byte-identical
+dirty previews inspect the exact 18-call PyGRC surface with zero public-symbol
+invocation or candidate/control operation. The previews are retention-
+ineligible and I07-A still requires a clean source-anchor commit before I07-B.
+
+No inactive I07-B freeze, `P2-I3-EXEC-FREEZE`, freeze acceptance, activation,
+campaign claim, governed child, candidate/control/integrity operation, C.2
+work, OP or R01-R05 result, `AE01-H-L03`, provider comparison, appendix
+activation, or branch/lane/specification result exists. Those remain
+unauthorized or unassigned until their named boundaries pass.
