@@ -114,6 +114,23 @@ tests exercise response/estimator conformance, conditional schema closure, the
 corrected package and passed `P2-I3-CAL-PRE-GATE` on 2026-07-19, opening only
 construction of a separate inactive I05 invocation freeze.
 
+## P2-I3 B-R I05 inactive calibration freeze
+
+`p2-i3/i05-br-calibration-invocation-freeze.json` binds DEC-041, accepted I04
+source identities, the half-unit construction, one-shot envelope, candidate-
+blindness, environment, outputs, and zero-execution gate boundary.
+`p2-i3/i05-br-calibration-output.schema.json` is a closed root union for the
+future matched-null, metric-calibration, frozen-metric-sheet, activation,
+attempt-claim, and final-receipt records. A bound semantic validator resolves
+nested response/triplet shapes against accepted I04 schema `1.0.1`, enforces
+both-relation coverage, and recomputes identities and arithmetic. The retained
+`p2-i3/i05-br-calibration-freeze-validation.json` passes 42 checks with 50
+focused tests.
+
+No launch-authorization record, permanent claim, governed output, calibration
+invocation, or `delta` exists. The owner accepted `1.0.2` for exact retention
+only; clean-commit validation and full source identity precede any launch.
+
 ## P2-I1 registration materialization
 
 `p2-i1/registration-records/` applies the existing `1.1.0` record vocabulary

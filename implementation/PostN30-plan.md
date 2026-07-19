@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.77 draft
+**Plan revision:** 0.82 draft
 
 **Date:** 2026-07-19
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.78 draft:
+Current dependency order after revision 0.79 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1835,9 +1835,14 @@ Current dependency order after revision 0.78 draft:
    and retained validation pass 22 focused tests and 485 zero-calibration
    checks with byte-exact non-destructive reconstruction. No conformance
    fixture value, topology, split, digest, or margin was consumed. The owner
-   accepted I04 and passed `P2-I3-CAL-PRE-GATE` on 2026-07-19. Next construct
-   and review a separate inactive I05 invocation freeze before any matched-null
-   operation. Then carry B-R through separately gated
+   accepted I04 and passed `P2-I3-CAL-PRE-GATE` on 2026-07-19. DEC-041 now
+   fixes `q_probe=1/2` and `C_pre(m_e)=1/2+mu`; its inactive I05 invocation
+   launch-hardened package `1.0.2` passes 50 tests and 42 zero-calibration
+   checks. Both estimator relations, exact-rational derivation, durable claim,
+   post-claim revalidation, semantic readback, failure residues, and
+   activation/claim/receipt contracts are explicit. Next review and
+   commit that freeze, then create a separate launch authorization before any
+   matched-null operation. Then carry B-R through separately gated
    calibration, registration, execution, controls, reconstruction, and branch
    interpretation. Only after B-R branch closeout may C.2 open under separate
    identities and the same common comparison fields. B-R Q-008 is fixed by
@@ -1980,6 +1985,10 @@ directive.
 | 2026-07-19 | Revision 0.76 draft: materializes accepted DEC-036 through DEC-040 as one review-ready P2-I3 B-R I04 machine package. The package retains a closed seven-definition schema, one pure typed response/estimator path, complete observation/null/control policy, exact preregistration identity, validator, reconstruction commands, and narrative implementation record. Seventeen focused tests and 158 zero-calibration checks pass; retained validation reconstructs byte-exactly. No calibration builder, matched-null output, `delta`, PyGRC model, candidate/control operation, rung, tag, terminal class, or scientific result exists. CAL-PRE owner review is next. |
 | 2026-07-19 | Revision 0.77 draft: applies the bounded I04 review without reopening DEC-036 through DEC-040. Machine-contract version `1.0.1` closes the schema root and conditional pair/response/triplet states, binds target/outcome/ownership/fail-closed semantics for all 42 control legs, prevents reconstruction from overwriting retained evidence, and requires a separately frozen exact nonnegative candidate-blind arithmetic construction in I05. Twenty-two focused tests and 485 zero-calibration checks pass; safe reconstruction is byte-exact. No calibration builder, matched-null output, `delta`, PyGRC model, candidate/control operation, rung, tag, terminal class, or scientific result exists. Corrected CAL-PRE owner review is next. |
 | 2026-07-19 | Revision 0.78 draft: records owner acceptance of corrected I04 package `1.0.1` and passage of `P2-I3-CAL-PRE-GATE`. The accepted machine identities, exact estimator arithmetic, 42-leg governance, 22 tests, 485 checks, and byte-exact non-destructive reconstruction remain unchanged. Only construction and review of one separate inactive I05 invocation freeze opens; calibration invocation, `delta`, I06, B-R/C.2 execution, rung, tag, terminal classification, and every scientific/ecology result remain unauthorized. |
+| 2026-07-19 | Revision 0.79 draft: records owner-accepted DEC-041 and constructs the initial inactive P2-I3 B-R I05 invocation freeze. One fixed `q_probe=1/2` maps every registered margin exactly through `C_pre(m_e)=1/2+mu` into `[0,1]`. The future wrapper freezes a permanent pre-builder claim, one attempt, zero retries, exact committed-source/`.venv` authority, three governed outputs, and readback-only reconstruction. Superseded before acceptance by revision 0.80; zero calibration calls occurred. |
+| 2026-07-19 | Revision 0.80 draft: applies the bounded I05 machine-contract review without reopening DEC-041. All five exact-null cases now contribute one `m_trace` and one `m_export` margin; a digest-bound semantic validator recomputes exact identities, canonical rationals, triplets, relation coverage, maximum null margin, and `delta` before writes and after readback. Closed activation, attempt-claim, and final-receipt records make successful exact closeout mandatory for output or `delta` admission. Twenty-seven tests and 39 static checks pass with byte-exact freeze reconstruction and zero calibration calls; owner review/commit remains next. |
+| 2026-07-19 | Revision 0.81 draft: applies the owner-approved launch-safety correction as I05 package `1.0.2` without reopening DEC-041. Normalized margins and `delta` now derive from exact rational response fields; activation binds source, command, environment, claim, and output authority without circular self-commit identity; claim bytes and parent directory are fsynced; HEAD/authority/environment/output state is rechecked after consumption; and the final receipt names five cases and ten margins. Thirteen injected temporary-path transaction boundaries extend the focused suite to 50 tests; retained validation passes 42 checks byte-exactly with zero calibration calls. Retention commit and exact clean-commit validation remain next. |
+| 2026-07-19 | Revision 0.82: records final owner acceptance of I05 inactive freeze `1.0.2`. DEC-041 and all package identities remain unchanged. Acceptance authorizes only the exact retention commit; clean-commit tests, 42-check reconstruction, byte comparison, and retention of the full 40-character source identity must follow before launch authorization. Calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
 
 ## 18. Program completion criteria
 

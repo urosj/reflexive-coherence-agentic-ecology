@@ -46,9 +46,21 @@ the complete package with the repository environment:
 .venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_validate.py
 ```
 
-I05 must separately freeze one exact nonnegative candidate-blind
-`c_pre_m_e`/`q_probe` construction and may not reuse those arithmetic fixtures
-in I06/I08 scientific registration.
+I05 separately freezes the exact nonnegative candidate-blind construction and
+may not reuse its arithmetic fixtures in I06/I08 scientific registration.
+
+## P2-I3 B-R I05 inactive one-shot policy
+
+`p2_i3_br_i05_one_shot_policy.json` implements DEC-041 with one fixed
+`q_probe=1/2` and `C_pre(m_e)=1/2+registered_margin`. It binds the accepted I04
+source/hashes, repository `.venv`, closed future output paths, one permanent
+pre-builder claim, one attempt, zero retries, one complete builder call, and
+readback-only reconstruction.
+
+The policy is inactive. It contains no calibration authority and requires a
+separate owner-accepted launch record in a later clean commit. Fifty tests
+and 42 static checks validate corrected package `1.0.2` without calling the builder or
+creating a claim, governed output, or `delta`.
 
 ## P2-I2 active calibration-preregistration authority
 

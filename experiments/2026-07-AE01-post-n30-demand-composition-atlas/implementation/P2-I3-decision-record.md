@@ -13,14 +13,17 @@ the I03 design portion of B-R Q-015; DEC-033 is the accepted B-R
 operational-hypothesis projection; DEC-034 is the accepted inactive bounded-
 conformance input freeze; DEC-035 accepts the exact B-R operational-
 conformance package and passes `P2-I3-DISCRIMINATOR-GATE`; I04 calibration
-preregistration is open; DEC-036 resolves Q-009 as a typed native encounter-
+preregistration is accepted; DEC-036 resolves Q-009 as a typed native encounter-
 response pair with signed margin primary; DEC-037 resolves Q-010 through five
 typed surface policies; DEC-038 resolves Q-011 through an exact three-arm
 trace/dynamic factorization; DEC-039 resolves Q-012 through one shared
 candidate-blind arithmetic null plus non-delta conformance panels; calibration
 execution remains unauthorized; DEC-040 resolves only the B-R instance of
 Q-016 through a leg-factored control and evidence-governance contract; C.2
-control projection and all control outcomes remain unresolved
+control projection and all control outcomes remain unresolved; corrected I04
+package `1.0.1` is owner-accepted and `P2-I3-CAL-PRE-GATE` passed; DEC-041
+selects the half-unit I05 arithmetic construction and one-shot inactive-freeze
+boundary; calibration invocation remains unauthorized
 
 **Lane:** `AE01-L03`
 
@@ -120,6 +123,7 @@ No decision may be inferred from:
 | `P2-I3-DEC-038` | Which comparator and estimator preserve both the complete trace relation and B-R dynamic-to-traversal mediation under Q-011? | Accepted exact W/O/E arm factorization with separate trace and export margins, raw additive decomposition, strict pairing/missingness, and mandatory clamp interpretation | Resolves Q-011 only; Q-012 and Q-016 plus the remaining I04 contract still block CAL-PRE | 2026-07-19 |
 | `P2-I3-DEC-039` | What candidate-blind matched-null generator and inputs calibrate Q-011 without consuming candidate structure under Q-012? | Accepted one shared exact-null W/O/E calibration plus separate non-delta perturbation, denominator, reconstruction, and missingness conformance panels | Resolves Q-012 only; Q-016 plus the remaining I04 contract still block CAL-PRE | 2026-07-19 |
 | `P2-I3-DEC-040` | Which common and lane-specific controls apply to B-R, what evidence resolves each leg, and how do I09-I11 close them under Q-016? | Accepted leg-factored applicability, separated execution/evidence/control/terminal statuses, typed control classes, stable discriminator/validity/claim guards, and reconstructed terminal overlay | Resolves B-R Q-016 meaning only; C.2 remains independent and CAL-PRE still requires machine materialization, validation, reconstruction, and acceptance | 2026-07-19 |
+| `P2-I3-DEC-041` | Which exact arithmetic construction and invocation boundary may carry accepted I04 into I05? | Use one fixed `q_probe=1/2` and `C_pre(m_e)=1/2+mu`; retain one permanent pre-builder claim, one attempt, zero retries, and a separate post-commit launch authorization | Resolves only the inactive I05 construction; opens freeze construction/review without invoking calibration or assigning `delta` | 2026-07-19 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -4144,7 +4148,111 @@ a control conflates invalid execution with scientific evidence, or I09-I11
 cannot preserve reconstructed scientific facts while validating terminal
 claims. A future C.2 projection does not by itself reopen B-R.
 
-## 43. Open decision register
+## 43. `P2-I3-DEC-041` — Half-unit I05 arithmetic construction and inactive invocation freeze
+
+### Question
+
+Which exact candidate-blind construction fills the I04-deferred
+`C_pre(m_e)`/`q_probe` fields, and what minimum invocation boundary prevents
+freeze review from becoming calibration execution?
+
+### Considered alternatives
+
+1. **Retain the I04 test helper's unit request.** Use `q_probe=1` and
+   `C_pre(m_e)=1+mu`. This reuses the local helper directly, but produces
+   carrier values through `3/2`. More importantly, I04 explicitly left the
+   construction to I05, so an internal conformance fixture cannot silently
+   become execution authority.
+2. **Use one half-unit request.** Use `q_probe=1/2` and
+   `C_pre(m_e)=1/2+mu`. Every frozen margin remains exact, the full registered
+   margin range `[-1/2,1/2]` maps into carrier range `[0,1]`, and request
+   semantics stay identical across every W/O/E arm and exact-null case.
+3. **Choose a case-relative request.** This could minimize each carrier value,
+   but would weaken cross-case request identity and add discretion without
+   measurement value.
+4. **Derive the request or carrier from candidate behavior.** This is
+   prohibited because calibration must remain candidate-blind.
+
+### Selected resolution
+
+The project owner accepted the second construction while directing I05 to
+proceed:
+
+```text
+q_probe = 1/2
+C_pre(m_e) = 1/2 + registered_margin
+
+C_pre(m_e) - q_probe = registered_margin
+C_pre(m_e) in [0, 1]
+```
+
+I05 owns this arithmetic layer. It reuses the accepted I04 response shape,
+validator, and W/O/E estimator without modifying I04. The I04 helper's local
+`q_probe=1` remains test-scaffold history and receives no I05 authority.
+
+The inactive freeze must include one I05-owned complete builder and one
+governed wrapper with:
+
+```text
+permanent exclusive claim before builder import or invocation
+one governed attempt
+zero infrastructure retries
+one complete builder invocation
+readback-only reconstruction
+separate committed owner launch authorization
+no candidate or PyGRC input
+no I06/I08 reuse of arithmetic fixtures
+```
+
+Freeze construction and validation may exercise individual arithmetic records,
+the accepted estimator, schema references, and the claim primitive. They may
+not call the complete builder, produce a governed output, calculate or assign
+`delta`, or create launch authority.
+
+### Gate effect
+
+DEC-041 opens construction and review of one inactive I05 invocation freeze.
+It does not activate the freeze, consume the attempt, invoke calibration, pass
+`P2-I3-CAL-GATE`, open I06, or assign any scientific/ecology result. After
+owner acceptance the inactive package must be committed before a separate
+launch-authorization record and explicit invocation direction can exist.
+
+A bounded machine-contract review does not reopen this decision. It requires
+the retained implementation to state explicitly that each of the five cases
+contributes both `m_trace` and `m_export`; to recompute case, arm, pair,
+rational, relation, and `delta` semantics before writes and after readback;
+and to type activation, attempt claim, and final receipt as closed records.
+Without a successful receipt binding exact output bytes and validations, the
+attempt remains consumed while partial outputs, `delta`, and CAL-GATE remain
+quarantined. These are integrity projections of the accepted construction and
+one-shot boundary, not new arithmetic or scientific choices.
+
+A subsequent owner-approved launch-safety correction likewise leaves DEC-041
+closed. Package `1.0.2` makes normalized margins and `delta` exact-rational
+derivations rather than float round trips; freezes launch authority over exact
+source, command, environment, claim, and output bindings; flushes claim bytes
+and their directory entry; rechecks authority after claim consumption; and
+requires the final receipt to name five cases and ten margins. Thirteen
+injected failure boundaries use temporary paths and a fake builder to verify
+that pre-claim failure consumes nothing while every post-claim failure leaves
+the claim permanent, the receipt absent, outputs quarantined, and CAL-GATE
+closed. No governed calibration builder or output is created by those tests.
+
+The owner accepted the complete `1.0.2` inactive freeze for retention on
+2026-07-19. Acceptance authorizes only the exact package commit. It does not
+authorize activation construction, consume the attempt, admit `delta`, pass
+CAL-GATE, or open I06. Clean-commit validation and retention of the resulting
+full 40-character source identity remain mandatory immediately afterward.
+
+### Reopening condition
+
+Reopen only if exact validation cannot reproduce a registered margin with the
+half-unit construction, accepted coherence units make `[0,1]` invalid for this
+arithmetic-only role, the I04 response validator rejects the constructed
+records, or the one-shot wrapper cannot keep claim consumption strictly before
+builder access. Candidate outcomes cannot reopen or tune this construction.
+
+## 44. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -4166,14 +4274,14 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-013` | Which separate IDs bind quantity-matched and complete-state-matched contrasts? | I03/I04 | B-R resolved by DEC-031 as three distinct contrast identities; C.2 remains inactive and independent |
 | `P2-I3-Q-014` | What exact topology, field values, costs, schedules, times, seeds, and transfer contrast are registered? | I06 after calibration | Blocks REG-GATE |
 | `P2-I3-Q-015` | What complete restoration, reset, branch, and equal-input continuation identity is required? | I03 design; finalized I06 | B-R I03 design resolved by DEC-032; exact I06 finalization remains open and blocks REG-GATE |
-| `P2-I3-Q-016` | Which common controls apply and what evidence must resolve every lane-specific control? | I04/I06 | B-R applicability/evidence meaning resolved by DEC-040; machine materialization and exact I06 evidence bindings still block CAL-PRE/REG-GATE, while C.2 remains inactive and independently unresolved |
+| `P2-I3-Q-016` | Which common controls apply and what evidence must resolve every lane-specific control? | I04/I06 | B-R applicability/evidence meaning and I04 machine materialization are complete through DEC-040 and accepted I04; exact I06 evidence bindings still block REG-GATE, while C.2 remains inactive and independently unresolved |
 | `P2-I3-Q-017` | What time, memory, disk, process, and artifact-size envelope applies? | I06 | Blocks REG-GATE |
 | `P2-I3-Q-018` | What finite attempts, infrastructure-only retries, failure classes, and one-shot claims apply? | I06/I07 | Blocks EXEC-FREEZE |
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 44. Decision protocol for subsequent work
+## 45. Decision protocol for subsequent work
 
 For each open question:
 
@@ -4191,7 +4299,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 45. Current boundary
+## 46. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` retain the semantic,
 source, LGRC9V3-only, N31 handoff, and theory/substrate/code authority chain.
@@ -4228,11 +4336,17 @@ leg-factored applicability, separated lifecycle fields, typed evidence and
 control classes, compound-control legs, false-trace levels, stable
 discriminator/validity/claim identities, and an I09-I10-I11 reconstructed
 terminal-overlay handoff. It assigns no control outcome. Machine
-materialization, validation, reconstruction, and acceptance remain required
-before CAL-PRE can pass, without consuming conformance fixture values,
-topology, observed split, digest, or derived margins.
+materialization, validation, reconstruction, and acceptance completed in
+corrected package `1.0.1`; `P2-I3-CAL-PRE-GATE` passed and the exact I04
+package is retained at source anchor `1097547`.
 
-Calibration execution, exact I06 registration, candidate/control execution,
-C.2 work, every OP and R01–R05 result, `AE01-H-L03`, provider comparison,
-appendix activation, and every branch/lane/specification result remain
-unauthorized or unassigned until their named gates pass.
+DEC-041 now selects the I05 half-unit construction and one-attempt/zero-retry
+inactive-freeze boundary. Owner-accepted package `1.0.2` passes 50 focused tests and
+42 zero-calibration checks. It explicitly covers both relations through exact
+rational arithmetic and closes durable claim, post-claim revalidation,
+semantic readback, and activation/claim/receipt admission. It has no launch authorization, permanent
+claim, governed output, or assigned `delta`. Calibration execution, exact I06
+registration, candidate/control execution, C.2 work, every OP and R01–R05
+result, `AE01-H-L03`, provider comparison, appendix activation, and every
+branch/lane/specification result remain unauthorized or unassigned until their
+named gates pass.

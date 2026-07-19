@@ -1,0 +1,304 @@
+{
+  "$id": "urn:rcae:ae01:p2-i3:i05-br-calibration-output:1.0.2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Closed record shapes are supplemented by the digest-bound validate_calibration_outputs semantic validator for cross-record arithmetic and identity consistency.",
+  "$defs": {
+    "sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "commit": {"pattern": "^[0-9a-f]{40}$", "type": "string"},
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "freeze_id": {"const": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE"},
+        "i04_source_anchor": {"const": "1097547ad30b77d4cf9312fb05753902f6d1cc81"},
+        "policy_id": {"const": "P2-I3-I05-BR-ONE-SHOT-POLICY"}
+      },
+      "required": ["freeze_id", "i04_source_anchor", "policy_id"],
+      "type": "object"
+    },
+    "relation_ids": {
+      "const": ["m_trace", "m_export"],
+      "type": "array"
+    },
+    "case_ids": {
+      "const": ["EQ-NEG-HALF", "EQ-NEG-QUARTER", "EQ-ZERO", "EQ-POS-QUARTER", "EQ-POS-HALF"],
+      "type": "array"
+    },
+    "excluded_ids": {
+      "const": ["TRACE-FIRST-DOM-POS", "TRACE-SECOND-DOM-NEG", "EXPORT-FIRST-DOM-POS", "EXPORT-SECOND-DOM-NEG", "FLOOR-DOM-POS", "FLOOR-EQUALITY", "TRACE-CROSS-ZERO", "EXPORT-CROSS-ZERO"],
+      "type": "array"
+    },
+    "rational_value": {
+      "additionalProperties": false,
+      "properties": {
+        "rational": {"pattern": "^-?(0|[1-9][0-9]*)(/[1-9][0-9]*)?$", "type": "string"},
+        "value": {"type": "number"}
+      },
+      "required": ["rational", "value"],
+      "type": "object"
+    },
+    "process_environment": {
+      "additionalProperties": false,
+      "properties": {
+        "PYTHONDONTWRITEBYTECODE": {"const": "1"},
+        "PYTHONHASHSEED": {"const": "0"}
+      },
+      "required": ["PYTHONDONTWRITEBYTECODE", "PYTHONHASHSEED"],
+      "type": "object"
+    },
+    "authority_sha256": {
+      "additionalProperties": false,
+      "properties": {
+        "builder": {"$ref": "#/$defs/sha256"},
+        "freeze": {"$ref": "#/$defs/sha256"},
+        "output_schema": {"$ref": "#/$defs/sha256"},
+        "policy": {"$ref": "#/$defs/sha256"},
+        "validator": {"$ref": "#/$defs/sha256"},
+        "wrapper": {"$ref": "#/$defs/sha256"}
+      },
+      "required": ["builder", "freeze", "output_schema", "policy", "validator", "wrapper"],
+      "type": "object"
+    },
+    "resolution": {
+      "additionalProperties": false,
+      "properties": {
+        "rational": {"const": "1/1000000000000"},
+        "value": {"const": 1e-12}
+      },
+      "required": ["rational", "value"],
+      "type": "object"
+    },
+    "positive_zero": {
+      "additionalProperties": false,
+      "properties": {
+        "rational": {"const": "0"},
+        "value": {"const": 0.0}
+      },
+      "required": ["rational", "value"],
+      "type": "object"
+    },
+    "governed_paths": {
+      "additionalProperties": false,
+      "properties": {
+        "attempt_claim": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json"},
+        "final_receipt": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-final-receipt.json"},
+        "frozen_metric_sheet": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-frozen-metric-sheet.json"},
+        "matched_null": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json"},
+        "metric_calibration": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-metric-calibration.json"}
+      },
+      "required": ["attempt_claim", "final_receipt", "frozen_metric_sheet", "matched_null", "metric_calibration"],
+      "type": "object"
+    },
+    "null_case": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {"enum": ["EQ-NEG-HALF", "EQ-NEG-QUARTER", "EQ-ZERO", "EQ-POS-QUARTER", "EQ-POS-HALF"]},
+        "response_records": {
+          "items": {"$ref": "urn:rcae:p2-i3:br:i04:machine-records:1.0.1#/$defs/response_record"},
+          "maxItems": 3,
+          "minItems": 3,
+          "type": "array"
+        },
+        "seed_alias": {"enum": [19, 43, 71, 109, 163]},
+        "triplet_result": {"$ref": "urn:rcae:p2-i3:br:i04:machine-records:1.0.1#/$defs/triplet_result"}
+      },
+      "required": ["case_id", "response_records", "seed_alias", "triplet_result"],
+      "type": "object"
+    },
+    "matched_null": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {"const": "P2-I3-I05-BR-MATCHED-NULL"},
+        "artifact_version": {"const": "1.0.2"},
+        "authority": {"$ref": "#/$defs/authority"},
+        "candidate_artifacts_consumed": {"const": false},
+        "candidate_execution_performed": {"const": false},
+        "case_count": {"const": 5},
+        "cases": {"items": {"$ref": "#/$defs/null_case"}, "maxItems": 5, "minItems": 5, "type": "array", "uniqueItems": true},
+        "evidence_effect": {"const": "numeric_measurement_resolution_only"},
+        "lane_id": {"const": "AE01-L03"},
+        "pygrc_runtime_inputs_consumed": {"const": false},
+        "randomness_used": {"const": false},
+        "response_record_count": {"const": 15},
+        "scientific_result": {"const": false}
+      },
+      "required": ["artifact_id", "artifact_version", "authority", "candidate_artifacts_consumed", "candidate_execution_performed", "case_count", "cases", "evidence_effect", "lane_id", "pygrc_runtime_inputs_consumed", "randomness_used", "response_record_count", "scientific_result"],
+      "type": "object"
+    },
+    "metric_calibration": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {"const": "P2-I3-I05-BR-METRIC-CALIBRATION"},
+        "artifact_version": {"const": "1.0.2"},
+        "authority": {"$ref": "#/$defs/authority"},
+        "calibrated_relation_ids": {"$ref": "#/$defs/relation_ids"},
+        "candidate_blind": {"const": true},
+        "delta": {"$ref": "#/$defs/resolution"},
+        "delta_formula": {"const": "max(measurement_resolution, max(abs(m_trace[c]), abs(m_export[c])) for c in entered_case_ids)"},
+        "entered_case_ids": {"$ref": "#/$defs/case_ids"},
+        "entered_margin_count": {"const": 10},
+        "entered_margins": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "case_id": {"enum": ["EQ-NEG-HALF", "EQ-NEG-QUARTER", "EQ-ZERO", "EQ-POS-QUARTER", "EQ-POS-HALF"]},
+              "m_export": {"$ref": "#/$defs/rational_value"},
+              "m_trace": {"$ref": "#/$defs/rational_value"}
+            },
+            "required": ["case_id", "m_export", "m_trace"],
+            "type": "object"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "excluded_conformance_case_ids": {"$ref": "#/$defs/excluded_ids"},
+        "lane_id": {"const": "AE01-L03"},
+        "margins_per_case": {"additionalProperties": false, "properties": {"m_export": {"const": 1}, "m_trace": {"const": 1}}, "required": ["m_export", "m_trace"], "type": "object"},
+        "matched_null_artifact_path": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json"},
+        "maximum_absolute_matched_null_margin": {"$ref": "#/$defs/positive_zero"},
+        "measurement_resolution": {"$ref": "#/$defs/resolution"},
+        "scientific_result": {"const": false}
+      },
+      "required": ["artifact_id", "artifact_version", "authority", "calibrated_relation_ids", "candidate_blind", "delta", "delta_formula", "entered_case_ids", "entered_margin_count", "entered_margins", "excluded_conformance_case_ids", "lane_id", "margins_per_case", "matched_null_artifact_path", "maximum_absolute_matched_null_margin", "measurement_resolution", "scientific_result"],
+      "type": "object"
+    },
+    "frozen_metric_sheet": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {"const": "P2-I3-I05-BR-FROZEN-METRIC-SHEET"},
+        "artifact_version": {"const": "1.0.2"},
+        "authority": {"$ref": "#/$defs/authority"},
+        "calibrated_relation_ids": {"$ref": "#/$defs/relation_ids"},
+        "candidate_blind": {"const": true},
+        "delta": {"$ref": "#/$defs/resolution"},
+        "delta_scope": {"const": "shared_arithmetic_resolution_for_both_relations"},
+        "evidence_effect": {"const": "numeric_measurement_resolution_only"},
+        "lane_id": {"const": "AE01-L03"},
+        "measurement_resolution": {"$ref": "#/$defs/resolution"},
+        "metric_id": {"const": "trace_conditioned_route_normalized_margin"},
+        "metric_sheet_id": {"const": "ae01-l03-primary-metric-v1"},
+        "source_metric_sheet_sha256": {"$ref": "#/$defs/sha256"},
+        "status": {"const": "frozen_candidate_blind_calibration"}
+      },
+      "required": ["artifact_id", "artifact_version", "authority", "calibrated_relation_ids", "candidate_blind", "delta", "delta_scope", "evidence_effect", "lane_id", "measurement_resolution", "metric_id", "metric_sheet_id", "source_metric_sheet_sha256", "status"],
+      "type": "object"
+    },
+    "launch_authorization": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {"const": "P2-I3-I05-BR-CALIBRATION-LAUNCH-AUTHORIZATION"},
+        "artifact_version": {"const": "1.0.2"},
+        "accepted_freeze_commit": {"$ref": "#/$defs/commit"},
+        "attempt_claim_path": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json"},
+        "authority_sha256": {"$ref": "#/$defs/authority_sha256"},
+        "branch_id": {"const": "P2-I3-BR"},
+        "calibration_invocation_authorized": {"const": true},
+        "candidate_execution_authorized": {"const": false},
+        "freeze_artifact_id": {"const": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE"},
+        "freeze_sha256": {"$ref": "#/$defs/sha256"},
+        "governed_invocations_authorized": {"const": 1},
+        "governed_paths": {"$ref": "#/$defs/governed_paths"},
+        "interpreter_environment": {
+          "additionalProperties": false,
+          "properties": {
+            "binary_sha256": {"$ref": "#/$defs/sha256"},
+            "command": {"const": ".venv/bin/python"},
+            "jsonschema": {"const": "4.26.0"},
+            "process_environment": {"$ref": "#/$defs/process_environment"},
+            "pytest": {"const": "9.1.1"},
+            "python": {"const": "3.12.3"}
+          },
+          "required": ["binary_sha256", "command", "jsonschema", "process_environment", "pytest", "python"],
+          "type": "object"
+        },
+        "iteration_id": {"const": "P2-I3-I05"},
+        "lane_id": {"const": "AE01-L03"},
+        "launch_head_binding_method": {"const": "runtime_expected_head_verified_clean_and_retained_in_claim_and_receipt"},
+        "normalized_command_prefix": {
+          "const": [
+            ".venv/bin/python",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+            "--policy",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+            "--activation",
+            "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+            "--expected-head"
+          ],
+          "type": "array"
+        },
+        "owner_accepted_freeze": {"const": true}
+      },
+      "required": ["artifact_id", "artifact_version", "accepted_freeze_commit", "attempt_claim_path", "authority_sha256", "branch_id", "calibration_invocation_authorized", "candidate_execution_authorized", "freeze_artifact_id", "freeze_sha256", "governed_invocations_authorized", "governed_paths", "interpreter_environment", "iteration_id", "lane_id", "launch_head_binding_method", "normalized_command_prefix", "owner_accepted_freeze"],
+      "type": "object"
+    },
+    "attempt_claim": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {"const": "P2-I3-I05-BR-ATTEMPT-CLAIM"},
+        "artifact_version": {"const": "1.0.2"},
+        "accepted_freeze_commit": {"$ref": "#/$defs/commit"},
+        "accepted_freeze_sha256": {"$ref": "#/$defs/sha256"},
+        "activation": {"additionalProperties": false, "properties": {"artifact_id": {"const": "P2-I3-I05-BR-CALIBRATION-LAUNCH-AUTHORIZATION"}, "path": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json"}, "sha256": {"$ref": "#/$defs/sha256"}}, "required": ["artifact_id", "path", "sha256"], "type": "object"},
+        "authorization_consumed": {"const": true},
+        "bound_source_sha256": {"$ref": "#/$defs/authority_sha256"},
+        "builder_invocation_ceiling": {"const": 1},
+        "candidate_execution_authorized": {"const": false},
+        "claim_id": {"const": "P2-I3-I05-BR-ATTEMPT-1"},
+        "creation_disposition": {"const": "exclusive_pre_builder_attempt_consumption"},
+        "governed_attempt": {"const": 1},
+        "infrastructure_retries": {"const": 0},
+        "interpreter": {"additionalProperties": false, "properties": {"binary_sha256": {"$ref": "#/$defs/sha256"}, "command": {"const": ".venv/bin/python"}, "implementation": {"const": "CPython"}, "jsonschema": {"const": "4.26.0"}, "pytest": {"const": "9.1.1"}, "version": {"const": "3.12.3"}}, "required": ["binary_sha256", "command", "implementation", "jsonschema", "pytest", "version"], "type": "object"},
+        "launch_head": {"$ref": "#/$defs/commit"},
+        "normalized_command": {"items": {"type": "string"}, "maxItems": 8, "minItems": 8, "type": "array"},
+        "output_paths": {"$ref": "#/$defs/governed_paths"},
+        "process_environment": {"$ref": "#/$defs/process_environment"}
+      },
+      "required": ["artifact_id", "artifact_version", "accepted_freeze_commit", "accepted_freeze_sha256", "activation", "authorization_consumed", "bound_source_sha256", "builder_invocation_ceiling", "candidate_execution_authorized", "claim_id", "creation_disposition", "governed_attempt", "infrastructure_retries", "interpreter", "launch_head", "normalized_command", "output_paths", "process_environment"],
+      "type": "object"
+    },
+    "output_binding": {
+      "additionalProperties": false,
+      "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha256"}},
+      "required": ["path", "sha256"],
+      "type": "object"
+    },
+    "final_receipt": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {"const": "P2-I3-I05-BR-FINAL-RECEIPT"},
+        "artifact_version": {"const": "1.0.2"},
+        "activation_artifact_id": {"const": "P2-I3-I05-BR-CALIBRATION-LAUNCH-AUTHORIZATION"},
+        "activation_sha256": {"$ref": "#/$defs/sha256"},
+        "attempt_consumed": {"const": true},
+        "builder_invocation_count": {"const": 1},
+        "case_count": {"const": 5},
+        "calibrated_relation_ids": {"$ref": "#/$defs/relation_ids"},
+        "candidate_execution_authorized": {"const": false},
+        "claim_id": {"const": "P2-I3-I05-BR-ATTEMPT-1"},
+        "claim_sha256": {"$ref": "#/$defs/sha256"},
+        "completion_status": {"const": "success"},
+        "delta": {"$ref": "#/$defs/resolution"},
+        "entered_margin_count": {"const": 10},
+        "launch_head": {"$ref": "#/$defs/commit"},
+        "output_bindings": {"additionalProperties": false, "properties": {"frozen_metric_sheet": {"$ref": "#/$defs/output_binding"}, "matched_null": {"$ref": "#/$defs/output_binding"}, "metric_calibration": {"$ref": "#/$defs/output_binding"}}, "required": ["frozen_metric_sheet", "matched_null", "metric_calibration"], "type": "object"},
+        "readback_validation": {"const": "passed_exact_bytes_canonical_json_and_semantics"},
+        "response_record_count": {"const": 15},
+        "schema_validation": {"const": "passed"},
+        "scientific_result": {"const": false},
+        "second_start_evidence": {"additionalProperties": false, "properties": {"attempted": {"const": true}, "claim_sha256_unchanged": {"const": true}, "refusal_reason": {"const": "attempt_claim_exists"}, "refused": {"const": true}}, "required": ["attempted", "claim_sha256_unchanged", "refusal_reason", "refused"], "type": "object"},
+        "semantic_validation": {"const": "passed"},
+        "triplet_count": {"const": 5}
+      },
+      "required": ["artifact_id", "artifact_version", "activation_artifact_id", "activation_sha256", "attempt_consumed", "builder_invocation_count", "case_count", "calibrated_relation_ids", "candidate_execution_authorized", "claim_id", "claim_sha256", "completion_status", "delta", "entered_margin_count", "launch_head", "output_bindings", "readback_validation", "response_record_count", "schema_validation", "scientific_result", "second_start_evidence", "semantic_validation", "triplet_count"],
+      "type": "object"
+    }
+  },
+  "oneOf": [
+    {"$ref": "#/$defs/matched_null"},
+    {"$ref": "#/$defs/metric_calibration"},
+    {"$ref": "#/$defs/frozen_metric_sheet"},
+    {"$ref": "#/$defs/launch_authorization"},
+    {"$ref": "#/$defs/attempt_claim"},
+    {"$ref": "#/$defs/final_receipt"}
+  ]
+}

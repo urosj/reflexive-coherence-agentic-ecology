@@ -87,6 +87,13 @@ Phase 2 gate reviews:
   PyGRC model, candidate/control operation, or scientific result exists. The
   owner passed `P2-I3-CAL-PRE-GATE` on 2026-07-19, opening only construction
   of a separate inactive I05 invocation freeze.
+- [P2-I3 I05 B-R inactive calibration freeze](P2-I3-I05-BR-inactive-calibration-freeze.md)
+  records DEC-041's exact half-unit response construction and one-shot
+  boundary. Fifty tests and 42 zero-calibration checks pass for corrected
+  package `1.0.2`; no launch
+  record, claim, governed output, `delta`, PyGRC operation, or scientific
+  result exists. The owner accepted the exact retention commit; clean-commit
+  validation and full source identity precede any separate launch authorization.
 - [P2-I3 Q-005 decay interpretation study](P2-I3-Q005-decay-interpretation-study.md)
   distinguishes release-efficacy attenuation, coherence-conserving source
   leakage, and route-susceptibility relaxation. DEC-023 consumes it only as

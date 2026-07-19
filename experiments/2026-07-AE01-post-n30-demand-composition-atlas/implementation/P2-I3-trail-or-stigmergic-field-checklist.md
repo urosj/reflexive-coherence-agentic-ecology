@@ -14,8 +14,9 @@ close the operational I03 requirements; DEC-035 accepts the corrected
 ownership/ledger interpretation and passes `P2-I3-DISCRIMINATOR-GATE`;
 DEC-036 through DEC-040 resolve I04 response, observation, comparator, null,
 and B-R control-governance decisions; corrected machine package `1.0.1` is
-owner-accepted and `P2-I3-CAL-PRE-GATE` passed; only construction and review
-of a separate inactive I05 invocation freeze is open
+owner-accepted and `P2-I3-CAL-PRE-GATE` passed; DEC-041 selects the exact
+half-unit arithmetic construction and the separate inactive I05 invocation
+freeze is review-ready with no calibration invocation
 
 **Iteration:** `P2-I3`
 
@@ -25,8 +26,8 @@ of a separate inactive I05 invocation freeze is open
 accepted and complete; `P2-I3-I02` exact source admission accepted and
 complete; `P2-I3-I03` has reconstructed and admitted the N31 return and now
 retains accepted B-R bounded runtime conformance; `P2-I3-I04` calibration
-preregistration is accepted and complete; inactive `P2-I3-I05` invocation-
-freeze construction is next
+preregistration is accepted and complete; inactive `P2-I3-I05` invocation
+freeze is review-ready and awaits owner review/retention commit
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
@@ -157,7 +158,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-N31-RETURN-GATE` | Exact N31 closeout and provider contracts reconstruct and are admitted without evidence transfer or automatic selection | Passed | Accepted DEC-025; 11 exact retained identities verified, 5 I12 artifacts byte-exact, and the other 3 bounded to an incorrect distribution-metadata value and dependent digests |
 | `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Passed | DEC-035 accepts exact B-R operational conformance with corrected ownership and typed closure; C.2 remains explicitly inactive until B-R closeout |
 | `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Passed | Owner accepted corrected package `1.0.1` on 2026-07-19 after 22 focused tests, 485 static checks, and byte-exact non-destructive reconstruction; opens only construction of a separate inactive I05 invocation freeze |
-| `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | CAL-PRE passed; requires an accepted inactive I05 invocation freeze and its separately authorized calibration invocation |
+| `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Inactive freeze `1.0.2` owner-accepted for retention | DEC-041 freeze passes 50 tests and 42 zero-calibration checks; requires retention commit, clean-commit validation, a separate launch authorization, one governed invocation, successful final receipt, retained outputs, and reconstruction |
 | `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Requires passed CAL-GATE and `P2-I3-Q-014` through `Q-018` |
 | `P2-I3-EXEC-FREEZE` | One exact inactive candidate cycle is accepted and then explicitly activated | Unopened | Requires passed REG-GATE, clean committed sources, runtime identity, and `P2-I3-Q-019` |
 | `P2-I3-EXEC-GATE` | The finite frozen matrix completes or closes validly incomplete without interpretation inflation | Unopened | Candidate execution is unauthorized |
@@ -220,7 +221,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Complete and owner-accepted | `P2-I3-SOURCE-ADMISSION-GATE=passed` through DEC-019; no realization |
 | `P2-I3-I03` | Route-scoped field realization, dynamics, causal factorization, operational hypotheses, bounded runtime conformance, and common comparison envelope | Passed source-admission and N31 return gates | B-R complete and accepted; C.2 queued after B-R branch closeout | B-R discriminator gate passed; no calibration or candidate evidence |
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Complete and owner-accepted | `P2-I3-CAL-PRE-GATE=passed`; opens only inactive I05 invocation-freeze construction, with no calibration execution |
-| `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Unopened | May pass `P2-I3-CAL-GATE`; no candidate execution |
+| `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Inactive invocation freeze `1.0.2` owner-accepted for retention | Fifty tests and 42 checks pass with zero calibration calls; retention commit, clean-commit validation, and separate launch authority remain before invocation |
 | `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Unopened | May pass `P2-I3-REG-GATE`; no candidate execution |
 | `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Passed REG-GATE and clean committed source anchor | Unopened | May pass/consume `P2-I3-EXEC-FREEZE`; no operation before activation |
 | `P2-I3-I08` | Frozen finite matrix execution | Consumed active execution freeze | Unopened | May pass or validly close `P2-I3-EXEC-GATE`; no terminal interpretation |
@@ -1463,17 +1464,22 @@ calibration invocation freeze.
 
 **Evidence effect:** numeric measurement resolution only.
 
-- [ ] Verify complete `.venv`, interpreter, and pinned packages before claim
-  consumption.
+- [x] Verify the complete `.venv`, interpreter, and pinned packages during
+  inactive-freeze construction. Repeat immediately before claim consumption.
 - [ ] Verify clean committed calibration sources and exact authority hashes.
-- [ ] Verify candidate artifacts, candidate seeds, PyGRC candidate runtime,
+- [x] Verify candidate artifacts, candidate seeds, PyGRC candidate runtime,
   realization responses, and candidate-shaped inputs are mechanically absent.
-- [ ] Freeze one canonical candidate-blind `c_pre_m_e`/`q_probe` construction
+- [x] Freeze one canonical candidate-blind `c_pre_m_e`/`q_probe` construction
   whose exact difference equals every registered rational margin.
-- [ ] Require nonnegative carrier coherence and matched request values,
+- [x] Require nonnegative carrier coherence and matched request values,
   construction identity, and semantics across W/O/E arms within each case.
-- [ ] Prove the construction accepts no candidate-shaped value and its
+- [x] Prove the construction accepts no candidate-shaped value and its
   arithmetic fixtures cannot enter I06 or I08 scientific registration.
+- [x] Owner accepts the inactive invocation freeze and authorizes its exact
+  retention commit; create no launch authorization or governed output during
+  acceptance or retention.
+- [ ] Revalidate from the exact clean retention commit and retain its full
+  40-character source identity before constructing launch authorization.
 - [ ] Activate exactly one frozen calibration invocation.
 - [ ] Run the complete finite null matrix once, subject only to a frozen
   infrastructure-retry rule.
@@ -1489,6 +1495,78 @@ calibration invocation freeze.
 - [ ] Owner accepts calibration and passes `P2-I3-CAL-GATE`.
 
 Calibration does not execute or evaluate the P2-I3 candidate.
+
+### 10.1 Accepted arithmetic construction
+
+DEC-041 selects:
+
+```text
+q_probe = 1/2
+C_pre(m_e) = 1/2 + registered_margin
+```
+
+The accepted margin range `[-1/2,1/2]` therefore maps exactly to carrier range
+`[0,1]`. Every W/O/E arm uses the same request value and construction identity.
+The I04 unit-test helper's local unit request remains unchanged and gains no
+execution authority; I05 replaces only the explicitly deferred arithmetic
+fields and then reuses the accepted I04 validator and estimator.
+
+### 10.2 Inactive-freeze implementation
+
+The [policy](../configs/p2_i3_br_i05_one_shot_policy.json),
+[freeze](../contracts/p2-i3/i05-br-calibration-invocation-freeze.json),
+[future-output schema](../contracts/p2-i3/i05-br-calibration-output.schema.json),
+[builder](../scripts/p2_i3_i05_br_calibration.py),
+[one-shot wrapper](../scripts/p2_i3_i05_br_one_shot.py),
+[validator](../scripts/p2_i3_i05_br_freeze_validate.py), focused
+[tests](tests/test_p2_i3_i05_br_freeze.py), retained
+[validation](../contracts/p2-i3/i05-br-calibration-freeze-validation.json), and
+[report](../reports/P2-I3-I05-BR-inactive-calibration-freeze.md) form one
+inactive package.
+
+Implementation verification:
+
+```text
+50 focused tests passed
+42 zero-calibration checks passed
+calibration invocations = 0
+candidate/PyGRC operations = 0
+launch authorization present = false
+governed claims or outputs present = false
+```
+
+The bounded review correction explicitly enters both `m_trace` and `m_export`
+for every exact-null case, closes the six activation/claim/receipt/output record
+classes, and binds a semantic validator before writes and after readback.
+Partial outputs are inadmissible unless a successful final receipt binds their
+exact paths/digests and passed schema, semantic, and readback validations.
+
+Launch-safety package `1.0.2` adds exact-rational normalized-margin and `delta`
+derivation, deterministic process-environment enforcement, file-plus-directory
+claim durability, post-claim authority revalidation, complete launch bindings,
+explicit five-case/ten-margin receipt counts, and thirteen injected
+transaction-boundary tests. The launch HEAD remains a runtime-supplied exact
+identity retained in claim and receipt because embedding the hash of the commit
+that contains the activation record would be circular.
+
+The one-shot wrapper freezes one attempt, zero retries, and one complete
+builder call. A permanent repository-local exclusive claim must be created
+before the wrapper imports the builder. Any failure after that point consumes
+the attempt. Reconstruction reads and reserializes the three governed outputs;
+it never calls the builder again.
+
+### 10.3 Meaning and next boundary
+
+The package establishes that the accepted I04 arithmetic can be instantiated
+exactly, portably, and without candidate-shaped inputs. It does not establish
+numeric resolution because the full five-case null procedure has not run.
+The expected `1e-12` result remains a prospective arithmetic consequence, not
+an assigned `delta`.
+
+Owner acceptance may authorize only a retention commit. After that, a separate
+launch record and explicit invocation direction are required. CAL-GATE, I06,
+candidate/control execution, C.2, and all scientific/ecology results remain
+closed.
 
 ## 11. `P2-I3-I06` — Exact implementation registration
 
@@ -1849,6 +1927,10 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-043` | Accepted DEC-036 through DEC-040 require one coherent machine contract before CAL-PRE review | Materialize the typed response/estimator path, closed schema, complete policy, preregistration identity, validator, focused tests, retained validation, reconstruction commands, and implementation report | Superseded before gate passage by CHG-044 after bounded review; the 17-test/158-check package remains pre-correction history with no calibration or scientific effect |
 | `P2-I3-CHG-044` | Owner-supplied I04 review accepts semantic materialization but finds open root schema, incomplete per-leg fail-closed/outcome mapping, and destructive machine reconstruction commands | Issue version `1.0.1`; close root and conditional schemas, add 42 exact leg policies, separate reconstruction from explicit artifact construction, and add the deferred I05 arithmetic-construction obligation | Corrected package review-ready; 22 tests and 485 zero-calibration checks pass with safe byte-exact reconstruction; no decision reopened and CAL-PRE remains pending owner review |
 | `P2-I3-CHG-045` | Owner disposition accepts corrected I04 package `1.0.1` and authorizes CAL-PRE passage | Mark I04 complete, pass only `P2-I3-CAL-PRE-GATE`, and open construction of one separate inactive I05 invocation freeze under the exact arithmetic-construction obligation | Complete; no calibration invocation, `delta`, I06 registration, B-R/C.2 execution, rung, tag, terminal class, or scientific/ecology result is opened |
+| `P2-I3-CHG-046` | Owner accepts the proposed half-unit arithmetic construction and directs I05 to proceed | Record DEC-041; construct one inactive one-shot policy/freeze, pure builder, output schema, future wrapper, validator, tests, retained validation, and report without invoking calibration | Superseded before acceptance by CHG-047 after bounded machine-contract review; no calibration occurred |
+| `P2-I3-CHG-047` | Owner-supplied I05 review accepts the arithmetic and one-shot design but finds implicit two-relation coverage, semantically open outputs, and untyped claim/receipt records | Preserve DEC-041; bind all ten `m_trace`/`m_export` margins, add digest-bound semantic recomputation, close activation/claim/receipt contracts, and quarantine outputs without a successful exact receipt | Superseded before acceptance by CHG-048 after launch-safety audit; zero calibration calls |
+| `P2-I3-CHG-048` | Owner approves the final launch-safety audit correction while preserving DEC-041 and rejecting circular self-commit binding | Issue package `1.0.2`; derive margins/`delta` from rationals, bind launch command/environment/source/paths, fsync claim file and parent, revalidate after claim, extend receipt counts, and inject failures at thirteen temporary transaction boundaries | Review-ready; 50 tests and 42 static checks pass byte-exactly with zero calibration calls; retention commit and clean-commit validation remain next |
+| `P2-I3-CHG-049` | Owner final disposition accepts I05 inactive freeze `1.0.2` and permits the retention commit only | Record acceptance without changing DEC-041; commit the exact package, then revalidate and retain the full source identity before any launch record | Accepted; retention commit is the sole next mutation, with calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work closed |
 
 ## 19. Evidence ledger
 
@@ -1892,6 +1974,10 @@ and evidence effect are retained.
 | `P2-I3-EV-033` | Initial I04 machine materialization at policy/schema version `1.0.0` | I04 machine materialization | Candidate-blind response, estimator, observation, control, provenance, and reconstruction readiness only | Superseded before acceptance by EV-034 after bounded review; 17 tests and 158 checks remain pre-correction history only |
 | `P2-I3-EV-034` | Corrected [I04 machine policy](../configs/p2_i3_br_i04_machine_policy.json), [schema](../contracts/p2-i3/i04-br-machine-records.schema.json), [preregistration](../contracts/p2-i3/i04-br-calibration-preregistration.json), [validation](../contracts/p2-i3/i04-br-calibration-preregistration-validation.json), and [report](../reports/P2-I3-I04-BR-calibration-preregistration.md) | I04 bounded review correction | Closed root/conditional schema, 42 per-leg policies, safe reconstruction, deferred I05 construction requirement, and exact readiness identity only | Corrected package review-ready; 22 focused tests and 485 static checks pass; validation reconstructs byte-exactly; no calibration or scientific evidence |
 | `P2-I3-EV-035` | Owner I04 acceptance disposition retained through CHG-045 and this checklist | I04 exit | Accepts corrected package `1.0.1` and passes CAL-PRE only | Accepted 2026-07-19; opens inactive I05 invocation-freeze construction, not calibration invocation or scientific work |
+| `P2-I3-EV-036` | Initial I05 inactive-freeze materialization | I05 inactive freeze | Exact arithmetic-construction and future one-shot integrity only | Superseded before acceptance by EV-037 after bounded review; zero calibration calls |
+| `P2-I3-EV-037` | First corrected I05 inactive-freeze package | I05 inactive freeze | Exact two-relation arithmetic, semantic readback, and closed activation/claim/receipt integrity only | Superseded before acceptance by EV-038 after launch-safety audit; zero calibration calls |
+| `P2-I3-EV-038` | Corrected [I05 inactive-freeze package `1.0.2`](../reports/P2-I3-I05-BR-inactive-calibration-freeze.md), DEC-041, and retained [validation](../contracts/p2-i3/i05-br-calibration-freeze-validation.json) | I05 inactive freeze | Exact-rational two-relation arithmetic, durable one-shot transaction, launch binding, fail-closed injection, and semantic readback integrity only | Review-ready; 50 tests/42 checks, zero calibration calls, no launch authority, claim, output, `delta`, or scientific evidence |
+| `P2-I3-EV-039` | Owner final acceptance disposition retained through CHG-049 and this checklist | I05 inactive-freeze acceptance | Accepts package `1.0.2` for exact retention only | Accepted 2026-07-19; clean-commit validation remains mandatory before activation construction |
 
 A B-R realization, its quarantined runtime-conformance evidence, and its
 owner-accepted I04 machine preregistration now exist for P2-I3. No calibration,
@@ -1958,18 +2044,23 @@ accepted semantic brief
 + diagnostic alternatives, invalid execution, and terminal guards remain distinct
 + DEC-036 through DEC-040 materialize as one closed machine package
 + bounded review closes root schema, per-leg policy, and reconstruction gaps
-+ I05 canonical arithmetic construction remains explicitly deferred
++ I04's deferred arithmetic construction is discharged by DEC-041 in I05
 + 22 pure tests and 485 static checks pass
 + retained validation reconstructs byte-exactly
 + no calibration builder, PyGRC model, or candidate/control operation runs
 = P2-I3-I04 is owner-accepted and P2-I3-CAL-PRE-GATE passed
++ DEC-041 fixes q_probe=1/2 and C_pre(m_e)=1/2+registered_margin
++ corrected inactive I05 freeze `1.0.2` passes 50 tests and 42 zero-calibration checks
++ exact-rational margins, durable claim, post-claim revalidation, all ten relation margins, semantic readback, and successful-receipt admission are frozen
++ no launch record, permanent claim, governed output, or assigned delta exists
 != calibration execution, registration, or scientific execution passed
 ```
 
-The next permitted action is construction of a separate inactive I05
-invocation freeze. Its review and later explicit authorization remain distinct
-from calibration invocation. Exact control-cell/evidence identities remain I06
-work.
+The next permitted action is the owner-authorized retention commit of inactive
+I05 invocation freeze `1.0.2`, followed by clean-HEAD revalidation that retains
+the full source-commit identity. A separate committed launch authorization and
+explicit invocation direction must then follow before calibration can run. Exact control-
+cell/evidence identities remain I06 work.
 Conformance fixture values, topology, observed split, digests, and derived
 margins are prohibited inputs. C.2 design and every calibration or scientific
 execution remain unauthorized.
