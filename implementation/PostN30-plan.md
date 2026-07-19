@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.83 draft
+**Plan revision:** 0.84 draft
 
 **Date:** 2026-07-19
 
@@ -1843,8 +1843,10 @@ Current dependency order after revision 0.79 draft:
    activation/claim/receipt contracts are explicit. The accepted freeze is
    retained at full commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`;
    50 focused tests, 42 zero-calibration checks, and byte-exact reconstruction
-   pass again from that clean commit. Next create and review a separate launch
-   authorization before any matched-null operation. Then carry B-R through separately gated
+   pass again from that clean commit. The separately materialized launch
+   authorization now binds one invocation under explicit owner direction; its
+   exact clean commit must pass preflight before any matched-null operation.
+   Then carry B-R through separately gated
    calibration, registration, execution, controls, reconstruction, and branch
    interpretation. Only after B-R branch closeout may C.2 open under separate
    identities and the same common comparison fields. B-R Q-008 is fixed by
@@ -1992,6 +1994,7 @@ directive.
 | 2026-07-19 | Revision 0.81 draft: applies the owner-approved launch-safety correction as I05 package `1.0.2` without reopening DEC-041. Normalized margins and `delta` now derive from exact rational response fields; activation binds source, command, environment, claim, and output authority without circular self-commit identity; claim bytes and parent directory are fsynced; HEAD/authority/environment/output state is rechecked after consumption; and the final receipt names five cases and ten margins. Thirteen injected temporary-path transaction boundaries extend the focused suite to 50 tests; retained validation passes 42 checks byte-exactly with zero calibration calls. Retention commit and exact clean-commit validation remain next. |
 | 2026-07-19 | Revision 0.82: records final owner acceptance of I05 inactive freeze `1.0.2`. DEC-041 and all package identities remain unchanged. Acceptance authorizes only the exact retention commit; clean-commit tests, 42-check reconstruction, byte comparison, and retention of the full 40-character source identity must follow before launch authorization. Calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
 | 2026-07-19 | Revision 0.83: retains I05 inactive freeze `1.0.2` at exact source commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5` and records its tree, parent, accepted source digests, 50 clean-commit tests, 42 zero-calibration checks, byte-exact reconstruction, clean repository state, and absent governed paths. Source retention is complete; a separate launch authorization may now be constructed and reviewed, but invocation, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
+| 2026-07-19 | Revision 0.84: records the owner's direction to complete I05 through retained calibration/reconstruction while reserving final acceptance. A separate schema-valid launch authorization binds the accepted freeze, exact six-source digest set, pinned `.venv` and deterministic environment, normalized command prefix, one attempt, zero retries, and all governed paths. The exact launch HEAD remains runtime-supplied and receipt-retained. Commit and clean preflight are next; no claim, invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction. |
 
 ## 18. Program completion criteria
 

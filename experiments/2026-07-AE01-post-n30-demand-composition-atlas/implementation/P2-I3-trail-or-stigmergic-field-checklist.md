@@ -17,7 +17,8 @@ and B-R control-governance decisions; corrected machine package `1.0.1` is
 owner-accepted and `P2-I3-CAL-PRE-GATE` passed; DEC-041 selects the exact
 half-unit arithmetic construction; inactive I05 package `1.0.2` is retained at
 `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5` and clean-commit validated with no
-calibration invocation
+calibration invocation; a separate one-invocation launch authorization is
+materialized under explicit owner direction
 
 **Iteration:** `P2-I3`
 
@@ -28,8 +29,8 @@ accepted and complete; `P2-I3-I02` exact source admission accepted and
 complete; `P2-I3-I03` has reconstructed and admitted the N31 return and now
 retains accepted B-R bounded runtime conformance; `P2-I3-I04` calibration
 preregistration is accepted and complete; inactive `P2-I3-I05` invocation
-freeze is accepted, retained, and clean-commit validated; separate launch-
-authorization construction is next
+freeze is accepted, retained, and clean-commit validated; separate launch
+authorization is prepared for exact clean-HEAD invocation
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
@@ -1483,6 +1484,10 @@ calibration invocation freeze.
   acceptance or retention.
 - [x] Revalidate from the exact clean retention commit and retain its full
   40-character source identity before constructing launch authorization.
+- [x] Construct and schema-validate a separate launch authorization binding
+  the accepted freeze, exact sources, environment, command prefix, one attempt,
+  zero retries, and all governed paths; retain the runtime-supplied launch HEAD
+  in the future claim and receipt.
 - [ ] Activate exactly one frozen calibration invocation.
 - [ ] Run the complete finite null matrix once, subject only to a frozen
   infrastructure-retry rule.
@@ -1951,6 +1956,7 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-048` | Owner approves the final launch-safety audit correction while preserving DEC-041 and rejecting circular self-commit binding | Issue package `1.0.2`; derive margins/`delta` from rationals, bind launch command/environment/source/paths, fsync claim file and parent, revalidate after claim, extend receipt counts, and inject failures at thirteen temporary transaction boundaries | Review-ready; 50 tests and 42 static checks pass byte-exactly with zero calibration calls; retention commit and clean-commit validation remain next |
 | `P2-I3-CHG-049` | Owner final disposition accepts I05 inactive freeze `1.0.2` and permits the retention commit only | Record acceptance without changing DEC-041; commit the exact package, then revalidate and retain the full source identity before any launch record | Accepted; retention commit is the sole next mutation, with calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work closed |
 | `P2-I3-CHG-050` | Exact inactive-freeze retention commit exists and owner-required clean-commit verification passes | Retain the full commit/tree/parent and accepted source digests; record 50 passing tests, 42 passing checks, byte-exact reconstruction, clean state, and governed-path absence without creating launch authority | Complete; retention identity is fixed and separate launch-authorization construction is the next permitted action; calibration and every downstream gate remain closed |
+| `P2-I3-CHG-051` | Owner directs I05 to proceed through retained output and reconstruction while reserving final CAL-GATE acceptance | Materialize one separate schema-validated launch authorization over the accepted freeze/source/environment/command/path envelope; preserve runtime-supplied exact launch HEAD, one attempt, zero retries, and candidate-execution prohibition | Complete as inactive launch authority only; commit and exact clean preflight precede irreversible claim creation, and no calibration or scientific effect exists yet |
 
 ## 19. Evidence ledger
 
@@ -1999,6 +2005,7 @@ and evidence effect are retained.
 | `P2-I3-EV-038` | Corrected [I05 inactive-freeze package `1.0.2`](../reports/P2-I3-I05-BR-inactive-calibration-freeze.md), DEC-041, and retained [validation](../contracts/p2-i3/i05-br-calibration-freeze-validation.json) | I05 inactive freeze | Exact-rational two-relation arithmetic, durable one-shot transaction, launch binding, fail-closed injection, and semantic readback integrity only | Accepted and retained; 50 tests/42 checks, zero calibration calls, no launch authority, claim, output, `delta`, or scientific evidence |
 | `P2-I3-EV-039` | Owner final acceptance disposition retained through CHG-049 and this checklist | I05 inactive-freeze acceptance | Accepts package `1.0.2` for exact retention only | Accepted 2026-07-19; source-retention requirement completed by EV-040 |
 | `P2-I3-EV-040` | [I05 clean-commit retention validation](../contracts/p2-i3/i05-br-retention-validation.json) | I05 source retention | Full commit/tree/parent, accepted source digests, 50 tests, 42 checks, byte-exact reconstruction, clean source state, and governed-path absence only | Passed at `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`; no launch authority, calibration, `delta`, or scientific effect |
+| `P2-I3-EV-041` | [I05 launch authorization](../contracts/p2-i3/i05-br-calibration-launch-authorization.json) | I05 launch boundary | One accepted-freeze/source/environment/command/path authorization and zero candidate execution only | Schema-valid and ready for exact clean source commit; no claim, invocation, output, `delta`, or scientific effect at construction |
 
 A B-R realization, its quarantined runtime-conformance evidence, and its
 owner-accepted I04 machine preregistration now exist for P2-I3. No calibration,
@@ -2075,15 +2082,16 @@ accepted semantic brief
 + exact-rational margins, durable claim, post-claim revalidation, all ten relation margins, semantic readback, and successful-receipt admission are frozen
 + exact retention commit d054c4df8491ea8f5cc3b13dcb10b222cf8973d5 re-passes all 50 tests and 42 checks
 + retained validation reconstructs byte-exactly from clean committed sources
-+ no launch record, permanent claim, governed output, or assigned delta exists
++ separate launch authorization binds one invocation under explicit owner direction
++ no permanent claim, governed output, or assigned delta exists
 != calibration execution, registration, or scientific execution passed
 ```
 
 The inactive I05 invocation freeze `1.0.2` is retained and clean-commit
-validated. The next permitted action is construction and review of a separate
-committed launch authorization. Explicit invocation direction must then follow
-before calibration can run. Exact control-cell/evidence identities remain I06
-work.
+validated, and its separate launch authorization is materialized. The next
+permitted action is to commit this exact authority, verify the resulting clean
+HEAD, and run the sole governed calibration invocation. Exact control-cell/
+evidence identities remain I06 work.
 Conformance fixture values, topology, observed split, digests, and derived
 margins are prohibited inputs. C.2 design and every calibration or scientific
 execution remain unauthorized.

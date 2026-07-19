@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.83 draft
+**Baseline revision:** 0.84 draft
 
 **Date:** 2026-07-19
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.83 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.84 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 inactive freeze `1.0.2` retained and clean-commit validated | P2-GATE | DEC-041 remains unchanged; exact commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5` re-passes 50 focused tests, 42 zero-calibration checks, and byte-exact reconstruction; launch authorization remains separate and no claim, output, or `delta` exists |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 launch authorization prepared over retained inactive freeze `1.0.2` | P2-GATE | DEC-041 remains unchanged; owner directs completion through pre-acceptance I05; launch remains one attempt/zero retries with no claim, output, or `delta` at construction |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -2500,6 +2500,7 @@ Change log:
 | CL-084 | 2026-07-19 | Revision 0.81 draft applies the owner-approved launch-safety correction as package `1.0.2` without reopening DEC-041. It derives normalized margins and `delta` directly from exact rational fields, freezes non-circular launch bindings over source/command/environment/paths, fsyncs claim file and parent, revalidates authority after claim, completes receipt counts, and injects failures at thirteen temporary transaction boundaries. | P2-I3 B-R final inactive-freeze review boundary | Review-ready; 50 tests and 42 zero-calibration checks pass byte-exactly; no launch record, claim, output, `delta`, CAL-GATE passage, I06, or scientific/ecology result exists |
 | CL-085 | 2026-07-19 | Revision 0.82 records final owner acceptance of I05 inactive freeze `1.0.2` without changing DEC-041 or any machine identity. | P2-I3 B-R I05 inactive-freeze retention authority | Exact retention commit is authorized; clean-commit validation/full source identity must follow before launch authorization, while calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed |
 | CL-086 | 2026-07-19 | Revision 0.83 records exact inactive-freeze retention commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, tree and parent identities, accepted source digests, 50 passing clean-commit tests, 42 passing zero-calibration checks, byte-exact reconstruction, clean source state, and absence of every governed launch/output path. | P2-I3 B-R I05 clean source-retention boundary | Retention identity is complete; construction and review of a separate launch authorization is next, while invocation, `delta`, CAL-GATE, I06, C.2, and scientific/ecology work remain closed |
+| CL-087 | 2026-07-19 | Revision 0.84 records the owner's direction to complete I05 through the final acceptance item and materializes one schema-valid launch authorization over the accepted freeze, exact source digests, `.venv`, deterministic environment, normalized command prefix, and five governed paths. | P2-I3 B-R I05 launch boundary | Commit and clean-HEAD preflight precede the irreversible one-shot claim; no invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction |
 
 ## 17. Current next actions
 
@@ -2652,5 +2653,8 @@ The next unchecked actions in dependency order are:
     attempt.
 45. [x] Revalidate from the exact clean retention commit and retain its full
     40-character source identity without creating launch authority or outputs.
-46. [ ] After the committed and revalidated freeze exists, create and review a separate launch
+46. [x] After the committed and revalidated freeze exists, create and review a separate launch
     authorization before the sole governed calibration invocation.
+47. [ ] Invoke the one-shot candidate-blind calibration from its exact clean
+    launch commit, retain and reconstruct all outputs, and stop before owner
+    acceptance and `P2-I3-CAL-GATE` passage.

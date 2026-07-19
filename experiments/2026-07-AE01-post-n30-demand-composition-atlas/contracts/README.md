@@ -134,7 +134,12 @@ and `p2-i3/i05-br-retention-validation.json` binds clean retention commit
 50 passing tests, 42 passing checks, and byte-exact reconstruction. That record
 has SHA-256
 `f956eebe1695c62131f7b5cbc107f581eb5ee654a36ca5dcdf5c4f9668328e61`
-and retention effect only; a separate launch authorization remains required.
+and retention effect only. The separately schema-validated
+`p2-i3/i05-br-calibration-launch-authorization.json` now binds the accepted
+freeze and exact source/environment/path envelope for one invocation under the
+owner's direction to complete I05 through the final acceptance boundary. Its
+exact launch HEAD remains runtime-supplied and no attempt or output exists at
+authorization time.
 
 ## P2-I1 registration materialization
 

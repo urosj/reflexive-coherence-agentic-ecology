@@ -1,0 +1,51 @@
+{
+  "artifact_id": "P2-I3-I05-BR-CALIBRATION-LAUNCH-AUTHORIZATION",
+  "artifact_version": "1.0.2",
+  "accepted_freeze_commit": "d054c4df8491ea8f5cc3b13dcb10b222cf8973d5",
+  "attempt_claim_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json",
+  "authority_sha256": {
+    "builder": "d9155c1a1f03c0543b86a47d7d1439c109dd17b71895493879dd6bb7fd6d687f",
+    "freeze": "ce2bf6f479197d32009f8a5019a001172bda81db8099318c538030e60def1425",
+    "output_schema": "94a463ea820683d72742d05b2f9a8757619ee8da8a913b2b16978c9c7805f11a",
+    "policy": "3e28501b1a2a4f6c148cb49694d69e4322fbf519b59c8eeea9bd7ae41f7b6282",
+    "validator": "6d419dd3101414d9807d14840d23a7e6a2af99f1e3c96e6f31fd6e076879b385",
+    "wrapper": "083bc2cfa21553456c8d104e40979cfc0a7448c9346ab5b50ef9b8c66fd4e758"
+  },
+  "branch_id": "P2-I3-BR",
+  "calibration_invocation_authorized": true,
+  "candidate_execution_authorized": false,
+  "freeze_artifact_id": "P2-I3-I05-BR-CALIBRATION-INVOCATION-FREEZE",
+  "freeze_sha256": "ce2bf6f479197d32009f8a5019a001172bda81db8099318c538030e60def1425",
+  "governed_invocations_authorized": 1,
+  "governed_paths": {
+    "attempt_claim": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-attempt-claim.json",
+    "final_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-final-receipt.json",
+    "frozen_metric_sheet": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-frozen-metric-sheet.json",
+    "matched_null": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-matched-null.json",
+    "metric_calibration": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/outputs/p2-i3/i05/br-metric-calibration.json"
+  },
+  "interpreter_environment": {
+    "binary_sha256": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "command": ".venv/bin/python",
+    "jsonschema": "4.26.0",
+    "process_environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONHASHSEED": "0"
+    },
+    "pytest": "9.1.1",
+    "python": "3.12.3"
+  },
+  "iteration_id": "P2-I3-I05",
+  "lane_id": "AE01-L03",
+  "launch_head_binding_method": "runtime_expected_head_verified_clean_and_retained_in_claim_and_receipt",
+  "normalized_command_prefix": [
+    ".venv/bin/python",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i05_br_one_shot.py",
+    "--policy",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i05_one_shot_policy.json",
+    "--activation",
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i05-br-calibration-launch-authorization.json",
+    "--expected-head"
+  ],
+  "owner_accepted_freeze": true
+}

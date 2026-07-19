@@ -1,6 +1,7 @@
 # P2-I3 I05 B-R Inactive Calibration Freeze
 
-**Status:** retained and clean-commit validated; inactive; calibration not invoked
+**Status:** retained and clean-commit validated; launch authorized; calibration
+not yet invoked
 
 **Iteration:** `P2-I3-I05`
 
@@ -203,6 +204,27 @@ calibration calls = 0
 This record completes retention identity only. It is not launch authority and
 does not pass `P2-I3-CAL-GATE`.
 
+### 6.2 Separate launch authorization
+
+On 2026-07-19 the owner directed I05 to proceed through every remaining item
+before final owner acceptance. The separate
+[launch authorization](../contracts/p2-i3/i05-br-calibration-launch-authorization.json)
+materializes that direction without modifying the accepted freeze:
+
+```text
+accepted freeze commit = d054c4df8491ea8f5cc3b13dcb10b222cf8973d5
+launch-record SHA-256  = 8e55a0f65903d8735d6468f3fc3612a16115a0ad99f0ddb31755f01592e93c33
+governed invocations  = 1
+infrastructure retries = 0
+candidate execution   = false
+```
+
+The exact clean commit containing this record is deliberately not embedded in
+the record. It will be supplied as `--expected-head`, checked before and after
+attempt consumption, and retained by the claim and final receipt. Until that
+exact committed invocation occurs, no attempt is consumed and no `delta` is
+admitted.
+
 ## 7. Review boundary
 
 Review should confirm only:
@@ -219,7 +241,8 @@ Review should confirm only:
 The owner accepted the package for retention. It was committed without launch
 authority or governed output, reconstructed from that exact clean source
 commit, and retained through the full 40-character identity above. A separate
-launch authorization and explicit direction may now be constructed and
-reviewed for the sole calibration invocation.
+launch authorization and explicit direction have now been constructed for the
+sole calibration invocation. The run and retained reconstruction remain to be
+completed before final owner review.
 `P2-I3-CAL-GATE`, I06, B-R candidate execution, C.2, and every scientific or
 ecology result remain closed.
