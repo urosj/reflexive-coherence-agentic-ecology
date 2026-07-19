@@ -1,0 +1,109 @@
+{
+  "artifact_id": "P2-I3-I06-BR-OWNER-ACCEPTANCE-AND-REG-GATE",
+  "artifact_version": "1.0.0",
+  "accepted_at": "2026-07-19",
+  "authority": {
+    "change_id": "P2-I3-CHG-062",
+    "owner_disposition": "accept corrected I06 package 1.0.1 and pass P2-I3-REG-GATE"
+  },
+  "branch_id": "P2-I3-BR",
+  "iteration_id": "P2-I3-I06",
+  "lane_id": "AE01-L03",
+  "accepted_package": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i06_registration_policy.json",
+      "role": "inactive_registration_policy",
+      "sha256": "3db143f93f06246935d0665a5d53e4e2c729f0b4380b9a7e4a9eca0b212e590d"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-candidate-free-timing.json",
+      "role": "candidate_free_resource_characterization",
+      "sha256": "7644d54098cbbfe8c9b447b75500104cfcf5e28bfd9b3c4a54d724775af98973"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-exact-registration.json",
+      "role": "corrected_exact_inactive_registration_1_0_1",
+      "sha256": "60f662965ce7c84c0b909a59b4826dbd8bb9cb400500dc14bb8b312790cc3af9"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-registration-validation.json",
+      "role": "passed_25_check_semantic_validation",
+      "sha256": "531221f4eb15f30084584b8ac55dde2509db636ba588d2b995ba7d9ae39be597"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-registration.schema.json",
+      "role": "closed_root_structural_envelope_schema",
+      "sha256": "6efb99c60f468d857b5140f64897cdbca280ccc9272aba26694125fcf7519ac8"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i06-br-execution-records.schema.json",
+      "role": "closed_future_execution_record_schema",
+      "sha256": "de7887c9ad484caf973efe7fec8469243e29125c7a2065102decf988abedb1c1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i06_br_registration.py",
+      "role": "mandatory_semantic_builder_validator",
+      "sha256": "1b38247344b200f9398c2294ed5eb377ccc41a889d3853546899ff284a96ba6b"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i06_br.py",
+      "role": "passed_36_test_focused_adversarial_suite",
+      "sha256": "295eddbcec96fcb62be6742d9ba10acd1fc9a8f5ff8883603f1061c54a681fb1"
+    }
+  ],
+  "accepted_closure": {
+    "candidate_free_registration_checks": 25,
+    "cell_envelopes": 18,
+    "configurations": 90,
+    "control_legs": 42,
+    "evidence_case_sets": 24,
+    "focused_adversarial_tests": 36,
+    "governed_cases": 450,
+    "integrity_cases": 72,
+    "maximum_child_starts": 454,
+    "producer_items": 7,
+    "requirements": 14,
+    "scientific_branches": 378,
+    "substrate_bases": 6
+  },
+  "accepted_corrections": [
+    "DEC_038_exact_estimators_and_targets",
+    "DEC_037_separated_observation_surfaces",
+    "DEC_042_undirected_native_edges_and_request_whitelist",
+    "DEC_044_exact_case_set_control_and_requirement_bindings",
+    "DEC_040_four_field_control_lifecycle_schema",
+    "structural_schema_plus_mandatory_semantic_validator_boundary"
+  ],
+  "gate_effect": {
+    "P2-I3-REG-GATE": "passed_after_explicit_owner_acceptance_of_corrected_I06",
+    "opens_after_clean_retention_commit": [
+      "P2-I3-I07_inactive_execution_freeze_construction",
+      "P2-I3-Q-019_resolution"
+    ],
+    "does_not_open": [
+      "P2-I3-EXEC-FREEZE",
+      "candidate_execution",
+      "control_execution",
+      "integrity_fault_execution",
+      "C2_work",
+      "R01_R05_assignment",
+      "trail_field_candidate",
+      "stigmergic_field_candidate",
+      "ecology_claim",
+      "native_mechanism_claim"
+    ]
+  },
+  "interpretation_ceiling": {
+    "candidate_or_control_observation": false,
+    "ecology_result": false,
+    "native_BR_mechanism": false,
+    "registration_completeness_only": true,
+    "trail_or_stigmergic_field_exists": false
+  },
+  "retention": {
+    "clean_commit_required_before_I07": true,
+    "commit_authorized_by_this_acceptance": false,
+    "status": "pending_explicit_owner_commit_direction"
+  },
+  "status": "owner_accepted_I06_complete_REG_GATE_passed"
+}

@@ -98,6 +98,13 @@ Phase 2 gate reviews:
   passing independent reconstruction checks, and the strict numeric-only
   evidence boundary. The owner accepts I05 and passes `P2-I3-CAL-GATE`, opening
   I06 exact registration only.
+- [P2-I3 I06 B-R exact registration](P2-I3-I06-BR-exact-registration.md)
+  records the owner-accepted corrected `1.0.1` topology, matrix, exact
+  evidence case sets, restoration, resources, attempts, producer inventory,
+  schemas, and semantic validation. Twenty-five retained checks and 36
+  focused adversarial tests pass without candidate/control execution. The
+  owner passes `P2-I3-REG-GATE`; a clean retention commit remains required
+  before I07 and no execution freeze is opened.
 - [P2-I3 Q-005 decay interpretation study](P2-I3-Q005-decay-interpretation-study.md)
   distinguishes release-efficacy attenuation, coherence-conserving source
   leakage, and route-susceptibility relaxation. DEC-023 consumes it only as

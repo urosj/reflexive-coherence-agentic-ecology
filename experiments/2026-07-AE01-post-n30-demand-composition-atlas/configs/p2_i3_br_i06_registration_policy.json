@@ -1,0 +1,71 @@
+{
+  "allowed_actions": [
+    "source_binding",
+    "candidate_free_timing",
+    "static_registry_construction",
+    "baseline_constructor_and_restoration_validation",
+    "schema_validation",
+    "reconstruction"
+  ],
+  "artifact_version": "1.0.1",
+  "claim_ceiling": "exact_inactive_candidate_and_control_authority_only",
+  "entry_gate": {
+    "gate_id": "P2-I3-CAL-GATE",
+    "status": "passed"
+  },
+  "exit_gate": {
+    "gate_id": "P2-I3-REG-GATE",
+    "status": "unopened_owner_review_required"
+  },
+  "policy_id": "P2-I3-I06-BR-REGISTRATION-POLICY",
+  "prohibited_actions": [
+    "formation",
+    "export",
+    "encounter_probe",
+    "scientific_control",
+    "integrity_fault_dispatch",
+    "campaign_claim",
+    "P5_authorization",
+    "candidate_interpretation",
+    "C2_work"
+  ],
+  "required_decisions": [
+    "P2-I3-DEC-020",
+    "P2-I3-DEC-021",
+    "P2-I3-DEC-022",
+    "P2-I3-DEC-023",
+    "P2-I3-DEC-024",
+    "P2-I3-DEC-025",
+    "P2-I3-DEC-026",
+    "P2-I3-DEC-027",
+    "P2-I3-DEC-028",
+    "P2-I3-DEC-029",
+    "P2-I3-DEC-030",
+    "P2-I3-DEC-031",
+    "P2-I3-DEC-032",
+    "P2-I3-DEC-033",
+    "P2-I3-DEC-034",
+    "P2-I3-DEC-035",
+    "P2-I3-DEC-036",
+    "P2-I3-DEC-037",
+    "P2-I3-DEC-038",
+    "P2-I3-DEC-039",
+    "P2-I3-DEC-040",
+    "P2-I3-DEC-041",
+    "P2-I3-DEC-042",
+    "P2-I3-DEC-043",
+    "P2-I3-DEC-044",
+    "P2-I3-DEC-045",
+    "P2-I3-DEC-046"
+  ],
+  "runtime": {
+    "explicit_RCAE_producer_when_native_surface_missing": true,
+    "fallback": false,
+    "graph_mutation": false,
+    "native_priority": true,
+    "required": true,
+    "silent_native_substitution": false,
+    "source_binding": "${RCAE_PYGRC_ROOT}/src"
+  },
+  "source_anchor": "2e63a0dc6147bf124966374341c126f09b765cdd"
+}

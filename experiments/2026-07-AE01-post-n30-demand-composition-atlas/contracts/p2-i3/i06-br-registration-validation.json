@@ -1,0 +1,201 @@
+{
+  "artifact_id": "P2-I3-I06-BR-REGISTRATION-VALIDATION",
+  "artifact_version": "1.0.1",
+  "branch_id": "P2-I3-BR",
+  "candidate_free_timing_only": true,
+  "canonical_payload_digest": "f52425351e72da0ae462e41bd6908b25abee467876a399bfc8cc130368fc75f8",
+  "checks": [
+    {
+      "bound_count": 1,
+      "check_id": "I06-01",
+      "name": "source-bound runtime and environment",
+      "status": "passed"
+    },
+    {
+      "bound_count": 1,
+      "check_id": "I06-02",
+      "name": "N31 B-R and CAL-GATE authorities",
+      "status": "passed"
+    },
+    {
+      "bound_count": 6,
+      "check_id": "I06-03",
+      "name": "undirected two-route topology, request whitelist, and dyadic values",
+      "status": "passed"
+    },
+    {
+      "bound_count": 6,
+      "check_id": "I06-04",
+      "name": "six native baseline construction/load/reset identities",
+      "status": "passed"
+    },
+    {
+      "bound_count": 18,
+      "check_id": "I06-05",
+      "name": "18 cell envelope and eight-component contract",
+      "status": "passed"
+    },
+    {
+      "bound_count": 90,
+      "check_id": "I06-06",
+      "name": "90 configuration closure",
+      "status": "passed"
+    },
+    {
+      "bound_count": 378,
+      "check_id": "I06-07",
+      "name": "378 scientific branch closure",
+      "status": "passed"
+    },
+    {
+      "bound_count": 72,
+      "check_id": "I06-08",
+      "name": "72 integrity-case quarantine closure",
+      "status": "passed"
+    },
+    {
+      "bound_count": 2,
+      "check_id": "I06-09",
+      "name": "DEC-038 estimator formulas and exact 2 and 4/5 projections",
+      "status": "passed"
+    },
+    {
+      "bound_count": 5,
+      "check_id": "I06-10",
+      "name": "separated Q-010 observation surfaces",
+      "status": "passed"
+    },
+    {
+      "bound_count": 14,
+      "check_id": "I06-11",
+      "name": "full pairing key and exact/delta split",
+      "status": "passed"
+    },
+    {
+      "bound_count": 24,
+      "check_id": "I06-12",
+      "name": "digest-bound exact evidence case-set registry",
+      "status": "passed"
+    },
+    {
+      "bound_count": 42,
+      "check_id": "I06-13",
+      "name": "42 independent exact control-leg projections",
+      "status": "passed"
+    },
+    {
+      "bound_count": 14,
+      "check_id": "I06-14",
+      "name": "14 exact supplemental requirement bindings",
+      "status": "passed"
+    },
+    {
+      "bound_count": 7,
+      "check_id": "I06-15",
+      "name": "candidate-free timing characterization",
+      "status": "passed"
+    },
+    {
+      "bound_count": 450,
+      "check_id": "I06-16",
+      "name": "450 immutable class and numeric resource assignments",
+      "status": "passed"
+    },
+    {
+      "bound_count": 1,
+      "check_id": "I06-17",
+      "name": "campaign time and byte envelope",
+      "status": "passed"
+    },
+    {
+      "bound_count": 454,
+      "check_id": "I06-18",
+      "name": "450 primary slots and four retry tokens",
+      "status": "passed"
+    },
+    {
+      "bound_count": 450,
+      "check_id": "I06-19",
+      "name": "closed schedule and dependency propagation",
+      "status": "passed"
+    },
+    {
+      "bound_count": 7,
+      "check_id": "I06-20",
+      "name": "static producer inventory with unsummed dimensions",
+      "status": "passed"
+    },
+    {
+      "bound_count": 1,
+      "check_id": "I06-21",
+      "name": "structural schema role and mandatory semantic validator",
+      "status": "passed"
+    },
+    {
+      "bound_count": 4,
+      "check_id": "I06-22",
+      "name": "four-field I04 control lifecycle schema",
+      "status": "passed"
+    },
+    {
+      "bound_count": 0,
+      "check_id": "I06-23",
+      "name": "appendix exclusion",
+      "status": "passed"
+    },
+    {
+      "bound_count": 0,
+      "check_id": "I06-24",
+      "name": "portable reconstruction and no absolute path",
+      "status": "passed"
+    },
+    {
+      "bound_count": 0,
+      "check_id": "I06-25",
+      "name": "candidate/control/claim execution stop",
+      "status": "passed"
+    }
+  ],
+  "closed_counts": {
+    "cell_envelopes": 18,
+    "configurations": 90,
+    "control_legs": 42,
+    "evidence_case_sets": 24,
+    "governed_cases": 450,
+    "integrity_cases": 72,
+    "maximum_child_starts": 454,
+    "requirements": 14,
+    "retry_tokens": 4,
+    "scientific_branches": 378,
+    "substrate_bases": 6
+  },
+  "construction_activity": {
+    "candidate_operations": 0,
+    "model_instantiations": 6,
+    "resets": 6,
+    "save_load_pairs": 6
+  },
+  "evidence_effect": "registration_integrity_only_no_scientific_or_ecology_result",
+  "execution_records_schema_sha256": "de7887c9ad484caf973efe7fec8469243e29125c7a2065102decf988abedb1c1",
+  "gate_effect": {
+    "P2-I3-EXEC-FREEZE": "unopened",
+    "P2-I3-REG-GATE": "unopened_pending_owner_review",
+    "candidate_execution_authorized": false,
+    "owner_review_required": true
+  },
+  "iteration_id": "P2-I3-I06",
+  "passed_checks": 25,
+  "policy_sha256": "3db143f93f06246935d0665a5d53e4e2c729f0b4380b9a7e4a9eca0b212e590d",
+  "registration_sha256": "60f662965ce7c84c0b909a59b4826dbd8bb9cb400500dc14bb8b312790cc3af9",
+  "schema_sha256": "6efb99c60f468d857b5140f64897cdbca280ccc9272aba26694125fcf7519ac8",
+  "scientific_operations": {
+    "encounter_probe": 0,
+    "export": 0,
+    "formation": 0,
+    "integrity_fault_dispatch": 0,
+    "scientific_control": 0
+  },
+  "status": "review_ready_all_registration_checks_passed",
+  "timing_sha256": "7644d54098cbbfe8c9b447b75500104cfcf5e28bfd9b3c4a54d724775af98973",
+  "total_checks": 25
+}

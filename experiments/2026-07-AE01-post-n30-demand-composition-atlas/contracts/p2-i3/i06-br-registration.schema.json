@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p2-i3-i06-br-registration-v1.0.1",
+  "$comment": "This schema closes the root and finite structural envelope. Complete DEC-042 through DEC-046 semantic closure requires p2_i3_i06_br_registration.py:validate_registration; schema-only acceptance is prohibited.",
+  "title": "P2-I3 I06 B-R structural registration envelope",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id": {
+      "const": "P2-I3-I06-BR-EXACT-REGISTRATION"
+    },
+    "artifact_version": {
+      "const": "1.0.1"
+    },
+    "attempt_governance": {
+      "additionalProperties": true,
+      "properties": {
+        "class_retry_tokens": {
+          "maxItems": 4,
+          "minItems": 4,
+          "type": "array"
+        },
+        "maximum_governed_child_starts": {
+          "const": 454
+        },
+        "primary_attempt_slots": {
+          "const": 450
+        },
+        "registered_case_count": {
+          "const": 450
+        },
+        "slots": {
+          "maxItems": 450,
+          "minItems": 450,
+          "type": "array"
+        }
+      },
+      "required": [
+        "registered_case_count",
+        "primary_attempt_slots",
+        "slots",
+        "class_retry_tokens",
+        "maximum_governed_child_starts"
+      ],
+      "type": "object"
+    },
+    "artifact_governance": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "object"
+    },
+    "branch_id": {
+      "const": "P2-I3-BR"
+    },
+    "candidate_design": {
+      "type": "object"
+    },
+    "canonical_payload_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "control_governance": {
+      "additionalProperties": true,
+      "properties": {
+        "control_leg_count": {
+          "const": 42
+        },
+        "control_legs": {
+          "maxItems": 42,
+          "minItems": 42,
+          "type": "array"
+        },
+        "requirement_count": {
+          "const": 14
+        },
+        "evidence_case_set_count": {
+          "const": 24
+        },
+        "evidence_case_set_registry": {
+          "maxItems": 24,
+          "minItems": 24,
+          "type": "array"
+        },
+        "requirements": {
+          "maxItems": 14,
+          "minItems": 14,
+          "type": "array"
+        }
+      },
+      "required": [
+        "evidence_case_set_registry",
+        "evidence_case_set_count",
+        "control_legs",
+        "control_leg_count",
+        "requirements",
+        "requirement_count"
+      ],
+      "type": "object"
+    },
+    "evidence_effect": {
+      "const": "exact_inactive_candidate_control_resource_and_attempt_authority_only"
+    },
+    "gate_boundary": {
+      "additionalProperties": true,
+      "properties": {
+        "candidate_execution_authorized": {
+          "const": false
+        },
+        "control_execution_authorized": {
+          "const": false
+        },
+        "integrity_fault_execution_authorized": {
+          "const": false
+        }
+      },
+      "required": [
+        "candidate_execution_authorized",
+        "control_execution_authorized",
+        "integrity_fault_execution_authorized"
+      ],
+      "type": "object"
+    },
+    "iteration_id": {
+      "const": "P2-I3-I06"
+    },
+    "matrix": {
+      "additionalProperties": true,
+      "properties": {
+        "appendix_case_count": {
+          "const": 0
+        },
+        "configuration_count": {
+          "const": 90
+        },
+        "configurations": {
+          "maxItems": 90,
+          "minItems": 90,
+          "type": "array"
+        },
+        "governed_case_count": {
+          "const": 450
+        },
+        "integrity_case_count": {
+          "const": 72
+        },
+        "integrity_fault_cases": {
+          "maxItems": 72,
+          "minItems": 72,
+          "type": "array"
+        },
+        "scientific_branch_count": {
+          "const": 378
+        },
+        "scientific_branches": {
+          "maxItems": 378,
+          "minItems": 378,
+          "type": "array"
+        }
+      },
+      "required": [
+        "configurations",
+        "scientific_branches",
+        "integrity_fault_cases",
+        "configuration_count",
+        "scientific_branch_count",
+        "integrity_case_count",
+        "governed_case_count",
+        "appendix_case_count"
+      ],
+      "type": "object"
+    },
+    "pairing": {
+      "type": "object"
+    },
+    "producer_inventory": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "reconstruction": {
+      "type": "object"
+    },
+    "resource_governance": {
+      "type": "object"
+    },
+    "restoration": {
+      "type": "object"
+    },
+    "runtime_identity": {
+      "type": "object"
+    },
+    "schedule": {
+      "additionalProperties": true,
+      "properties": {
+        "order": {
+          "maxItems": 450,
+          "minItems": 450,
+          "type": "array"
+        }
+      },
+      "required": [
+        "order"
+      ],
+      "type": "object"
+    },
+    "scientific_outcomes_assigned": {
+      "const": false
+    },
+    "schema_contract": {
+      "additionalProperties": false,
+      "properties": {
+        "json_schema_role": {"const": "closed_root_and_structural_envelope_only"},
+        "schema_alone_is_complete_experiment_validation": {"const": false},
+        "semantic_closure_authority": {"const": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i06_br_registration.py:validate_registration"},
+        "semantic_validator_required": {"const": true}
+      },
+      "required": ["json_schema_role", "semantic_closure_authority", "semantic_validator_required", "schema_alone_is_complete_experiment_validation"],
+      "type": "object"
+    },
+    "status": {
+      "const": "review_ready_inactive_registration"
+    },
+    "terminal_record_templates": {
+      "type": "object"
+    },
+    "universal_live_branch_obligations": {
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "artifact_id",
+    "artifact_version",
+    "iteration_id",
+    "branch_id",
+    "status",
+    "schema_contract",
+    "authority",
+    "runtime_identity",
+    "candidate_design",
+    "restoration",
+    "matrix",
+    "pairing",
+    "control_governance",
+    "resource_governance",
+    "attempt_governance",
+    "producer_inventory",
+    "schedule",
+    "artifact_governance",
+    "terminal_record_templates",
+    "universal_live_branch_obligations",
+    "reconstruction",
+    "gate_boundary",
+    "scientific_outcomes_assigned",
+    "evidence_effect",
+    "canonical_payload_digest"
+  ],
+  "type": "object"
+}
