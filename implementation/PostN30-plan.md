@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.64 draft
+**Plan revision:** 0.65 draft
 
 **Date:** 2026-07-19
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.64 draft:
+Current dependency order after revision 0.65 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1798,10 +1798,12 @@ Current dependency order after revision 0.64 draft:
    roles, serialized receipt lifecycle, native/producer ownership,
    conservation, matched-mass, and reservoir-isolation boundaries. DEC-029
    freezes Q-007 as paired branch-local fixed native departure admission
-   through a blind RCAE structural adapter. Next freeze the common ecology-
-   result and producer-cost envelope, resolve the I03 portions of Q-013/Q-015,
-   and project DEC-027 through DEC-029 into operational hypotheses and bounded
-   conformance. Then carry B-R through calibration, registration, execution,
+   through a blind RCAE structural adapter. DEC-030 through DEC-032 freeze the
+   common ecology-result and producer-cost envelope, separate B-R formation-
+   quantity/export-mass/complete-state-history contrasts, and define composite
+   restoration plus causal-continuation identities. Next project DEC-027
+   through DEC-032 into operational hypotheses and bounded conformance. Then
+   carry B-R through calibration, registration, execution,
    controls, reconstruction, and branch interpretation. Only after
    B-R branch closeout may C.2 open under separate identities and the same
    common comparison fields. B-R Q-008 is already fixed by DEC-027 as complete
@@ -1930,6 +1932,7 @@ directive.
 | 2026-07-19 | Revision 0.62 draft: records accepted DEC-027. The B-R Q-008 primary mode is complete current native-plus-policy state, not node coherence alone or a raw-history functional. One complete-state-matched/different-formation-history discriminator remains mandatory; matching futures may support state sufficiency, while omitted runtime/policy state, hidden audit reads, inability to match, and genuine verified divergence retain separate classifications. Q-006/Q-007 and all later authority remain open. |
 | 2026-07-19 | Revision 0.63 draft: records accepted DEC-028. B-R Q-006 now uses serialized event-indexed conservative transfers from a registered route-support source through the native coherence carrier to an isolated reservoir. The decision freezes corrected floor/cap bounds, four receipt outcomes, complete lifecycle state, native/producer ownership, mass/contrast separation, matched-mass control semantics, reservoir isolation, and honest repeated-opportunity classifications. It consumes DEC-025 without re-admitting N31 and leaves Q-007 plus every conformance, calibration, registration, execution, and result gate open. |
 | 2026-07-19 | Revision 0.64 draft: records accepted DEC-029. B-R Q-007 now uses paired independent branch-local fixed native departure requests from matched complete checkpoints. A blind RCAE structural adapter schedules the frozen local opportunity without reading field or outcome state; native LGRC9V3 alone admits or refuses from source coherence. The decision fixes continuation roles, invasive-branch handling, typed refusal, controls, graded interpretation, and producer-cost ownership while leaving the common comparison envelope, Q-013/Q-015, operational hypotheses, conformance, calibration, registration, execution, and every result gate open. |
+| 2026-07-19 | Revision 0.65 draft: records accepted DEC-030 through DEC-032. The common B-R/C.2 envelope compares eight ecology questions and a three-class, six-dimension unsummed producer-cost vector without presuming shared metrics or an automatic winner. B-R Q-013 receives separate formation-quantity, export-mass, and complete-state/history identities. B-R Q-015 distinguishes exact composite restoration from causal-continuation equivalence, requires manifest-coordinated fail-closed save/load/reset/fork/replay, and defers exact schemas, hashes, horizon, and equality rules to I06. Operational hypotheses and bounded conformance remain next; no calibration, execution, or result authority follows. |
 
 ## 18. Program completion criteria
 

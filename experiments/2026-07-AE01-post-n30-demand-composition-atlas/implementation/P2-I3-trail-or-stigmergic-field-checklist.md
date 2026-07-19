@@ -4,8 +4,9 @@
 `P2-I3-SOURCE-ADMISSION-GATE` and `P2-I3-N31-RETURN-GATE` passed; bounded
 DEC-025 return admission accepted; DEC-026 resolves Q-005 as staged B-R-first
 and C.2-second evaluation; DEC-027 resolves B-R Q-008; DEC-028 resolves B-R
-Q-006; DEC-029 resolves B-R Q-007; comparison-envelope, Q-013/Q-015 design,
-operational-hypothesis, and bounded-conformance work are active
+Q-006; DEC-029 resolves B-R Q-007; DEC-030 common comparison envelope is
+accepted; DEC-031 resolves B-R Q-013 and DEC-032 resolves its I03 Q-015
+design; operational-hypothesis and bounded-conformance work remain pending
 
 **Iteration:** `P2-I3`
 
@@ -140,7 +141,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-SOURCE-AUDIT-GATE` | One frozen, source-current, read-only audit answers the accepted capability questions | Passed | Owner-passed grounded artifact review; `P2-I3-DEC-018` |
 | `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Passed | Owner-accepted DEC-019, exact manifest, and reconstruction; opens only I03 realization questions |
 | `P2-I3-N31-RETURN-GATE` | Exact N31 closeout and provider contracts reconstruct and are admitted without evidence transfer or automatic selection | Passed | Accepted DEC-025; 11 exact retained identities verified, 5 I12 artifacts byte-exact, and the other 3 bounded to an incorrect distribution-metadata value and dependent digests |
-| `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Pending staged I03 work | DEC-027/028/029 resolve B-R Q-008 mode, Q-006 law, and Q-007 encounter; common comparison, Q-013, design part of Q-015, operational hypotheses, and bounded conformance remain; C.2 is inactive until B-R closeout |
+| `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Pending staged I03 work | DEC-027 through DEC-032 resolve B-R mode/law/encounter, common comparison, contrast identities, and restoration design; operational hypotheses and bounded conformance remain; C.2 is inactive until B-R closeout |
 | `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Unopened | Requires passed discriminator gate and `P2-I3-Q-009` through `Q-012`, plus `Q-016` |
 | `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | Requires accepted CAL-PRE package and an explicitly authorized calibration invocation |
 | `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Requires passed CAL-GATE and `P2-I3-Q-014` through `Q-018` |
@@ -667,10 +668,11 @@ no calibration or candidate evidence.
   adapter cannot read field state or compare routes. Keep C.2 independent.
 - [x] Resolve the B-R current-state versus active-history mode family through
   DEC-027. Keep the C.2 instance inactive and independent.
-- [ ] Assign separate quantity-matched and state-matched identities under
-  `P2-I3-Q-013`.
-- [ ] Specify restoration and equal-continuation design obligations from
-  `P2-I3-Q-015`.
+- [x] Assign separate B-R formation-quantity, export-mass, and complete-state/
+  history contrast identities under `P2-I3-Q-013` and DEC-031.
+- [x] Specify B-R composite restoration and causal-continuation design
+  obligations from `P2-I3-Q-015` under DEC-032; exact I06 finalization remains
+  open.
 - [x] Apply and explicitly widen the `P2-I3-DEC-012` proportional default
   through DEC-026: N31's two distinct provider ontologies and the owner's
   request for evidence about both justify separate B-R and C.2 tracks. This
@@ -734,9 +736,10 @@ no calibration or candidate evidence.
   registration, or result identity unless equivalence is later demonstrated.
 - [x] Permit reuse only of evidence-neutral schemas, validators, runner
   interfaces, telemetry shapes, reconstruction utilities, and report forms.
-- [ ] Freeze the common ecology-result and producer-cost comparison envelope
+- [x] Freeze the common ecology-result and producer-cost comparison envelope
   before B-R candidate work. Cost remains a vector, not a scalar gate, and
   separates contract-required, RCAE-ecology-required, and evidence-only work.
+  DEC-030 is accepted through correction-free progression.
 - [x] Bind the exact B-R provider contract and branch-specific DEC-021/022
   projection through DEC-028; resolve the B-R instance of Q-006 without
   transferring N31 evidence.
@@ -766,6 +769,30 @@ no calibration or candidate evidence.
 - [ ] Author one lane terminal record only after both branch closeouts and the
   comparison record exist, unless a later accepted decision stops the program
   with a classified bounded result.
+
+### 8.1.2.1 Review-ready common comparison envelope
+
+- [x] Define eight ontology-neutral scientific questions covering formation,
+  non-static dynamics, local encounter, causal mediation, specificity,
+  state/history, stability/variation, and bounded interpretation.
+- [x] Preserve branch-local metrics and raw magnitudes; prohibit cross-branch
+  numeric comparison without a later prospective semantic-equivalence proof.
+- [x] Preserve thresholds as interpretive reference bands rather than one
+  universal branch acceptance gate.
+- [x] Define the three producer-cost classes: `contract_required`,
+  `rcae_ecology_required`, and `evidence_only`.
+- [x] Define six unsummed producer-cost dimensions and prohibit scalar winner
+  calculation from counts, source size, bytes, or runtime measurements.
+- [x] Require a prospective B-R-to-C.2 influence register before C.2
+  calibration, while prohibiting B-R value import or outcome-driven C.2
+  retuning.
+- [x] Preserve every Q-021 disposition, including both alternatives,
+  separately governed composition, another route, and non-selection.
+- [x] Retain the accepted
+  [machine envelope](../contracts/p2-i3/i03-common-comparison-envelope.json)
+  and [interpretive report](../reports/P2-I3-I03-common-comparison-envelope.md).
+- [x] Accept DEC-030 through correction-free progression; comparison semantics
+  are frozen without opening conformance, calibration, or scientific work.
 
 ### 8.1.3 Accepted B-R Q-006 law
 
@@ -846,6 +873,39 @@ no calibration or candidate evidence.
   `rcae_ecology_required`; native admission/debit/transport/refusal as native;
   and branching, margin derivation, and telemetry as `evidence_only`. Do not
   add this encounter adapter to N31's contract-required export residue.
+
+### 8.1.5 Accepted B-R Q-013/Q-015 design
+
+- [x] Assign `P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001` to repeated
+  formation versus one equal-total-quantity formation pulse; do not require
+  complete current state equality or infer history dependence from it.
+- [x] Assign `P2-I3-BR-Q13-EXPORT-MASS-MATCH-001` to candidate
+  `Delta M=-q, Delta O=-q` versus control `Delta M=-q, Delta O=0`; preserve
+  conservation, isolated destinations, availability bounds, and open outcome.
+- [x] Assign `P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001` to different
+  histories with equal causal continuation state and identical future
+  receipts, schedules, opportunities, and probe inputs.
+- [x] Prohibit substitution among the three contrasts. Relocation,
+  false-trace, clamp, withdrawal, and hidden-router controls retain separate
+  identities.
+- [x] Assign `P2-I3-BR-Q15-EXACT-COMPOSITE-RESTORATION-001` to complete
+  native-plus-RCAE-plus-branch execution and audit identity.
+- [x] Assign `P2-I3-BR-Q15-CAUSAL-CONTINUATION-PROJECTION-001` to every
+  continuation-relevant field while excluding only prospectively validated
+  audit-only state.
+- [x] Require each different-history arm to restore exactly to itself while
+  the paired causal projections match before equal future inputs. Identity
+  equality alone does not establish continuation equivalence.
+- [x] Require manifest-coordinated load/reset/fork/replay to fail closed on
+  missing, partial, stale, one-sided, cross-route, cross-policy, or cross-
+  branch composition.
+- [x] Preserve invasive Q-007 probes as terminal branches and atomic refusal
+  relative to the pre-step identity already containing the scheduled request.
+- [x] Retain the accepted
+  [machine design](../contracts/p2-i3/i03-br-contrast-and-restoration-design.json)
+  and [report](../reports/P2-I3-I03-BR-contrast-and-restoration-design.md).
+- [x] Defer exact schemas, fields, hashes, commands, horizon, equality rules,
+  reset values, branch counts, and runtime binding to I06.
 
 ### 8.2 Realization and causal-factorization requirements
 
@@ -1237,9 +1297,9 @@ from appearing earlier than its evidence permits.
 | `P2-I3-Q-007` | Route-scoped I03 encounter | B-R resolved by DEC-029 as paired branch-local fixed native departure admission; C.2 remains inactive and independent |
 | `P2-I3-Q-008` | Route-scoped I03 current-state/history mode | B-R resolved by DEC-027 as current-composite-state primary plus mandatory history discriminator; C.2 remains open and inactive |
 | `P2-I3-Q-009`–`P2-I3-Q-012` | I04 calibration preregistration | Open; block CAL-PRE |
-| `P2-I3-Q-013` | I03 assigns separate stable identities; I04 binds their measurement semantics | Open; blocks registration |
+| `P2-I3-Q-013` | I03 assigns separate stable identities; I04 binds their measurement semantics | B-R resolved by DEC-031 as formation-quantity, export-mass, and complete-state/history contrasts; C.2 remains inactive |
 | `P2-I3-Q-014` | I06 exact numeric and topology registration | Open; blocks registration |
-| `P2-I3-Q-015` | I03 fixes design obligations; I06 finalizes exact restoration and continuation identity | Open; blocks registration |
+| `P2-I3-Q-015` | I03 fixes design obligations; I06 finalizes exact restoration and continuation identity | B-R I03 design resolved by DEC-032; exact I06 finalization remains open and blocks registration |
 | `P2-I3-Q-016`–`P2-I3-Q-018` | I04/I06 control design and I06/I07 registration/execution boundaries as declared in the decision record | Open; block registration/execution freeze |
 | `P2-I3-Q-019` | I07 execution freeze | Open; blocks candidate execution |
 | `P2-I3-Q-020` | Post-core appendix decision | Open; no core blocker |
@@ -1308,6 +1368,9 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-027` | Owner accepts the proposed B-R Q-008 current-state/history boundary | Record DEC-027; make complete native-plus-policy current state primary, require one matched-history discriminator, prohibit raw-history producer reads, and leave C.2 Q-008 independent | Accepted B-R mode authority only; Q-006/Q-007 and every conformance, calibration, execution, and result gate remain open |
 | `P2-I3-CHG-028` | Owner accepts the proposed B-R Q-006 law plus bounded mechanical corrections from review | Record DEC-028; consume DEC-025 rather than re-admit N31; freeze route roles, coherence equations, floor/cap bound, four receipt outcomes, serialized lifecycle, native/producer ownership, matched-mass construction, reservoir isolation, and repetition classifications | Accepted B-R equation authority only; Q-007 and every conformance, calibration, registration, execution, and result gate remain open |
 | `P2-I3-CHG-029` | Owner accepts the proposed B-R Q-007 local encounter | Record DEC-029; add matched continuation roles, freeze independent branch-local fixed requests, make native source-coherence admission load-bearing, prohibit adapter field reads and runtime route comparison, type refusal states, and carry clamp/mass/history/relocation/permutation controls forward | Accepted B-R encounter authority only; common comparison, Q-013/Q-015, operational hypotheses, conformance, calibration, registration, execution, and all results remain open |
+| `P2-I3-CHG-030` | DEC-026 requires a common comparison envelope before B-R candidate work | Construct and accept DEC-030 plus machine and narrative projections with eight common scientific axes, three producer-cost classes, six unsummed cost dimensions, and a prospective C.2 influence register | Accepted through correction-free progression; comparison semantics only, with no conformance, calibration, execution, or result authority |
+| `P2-I3-CHG-031` | Owner accepts the Q-013 conclusion and its necessary split of the two B-R quantity-matched meanings | Record DEC-031 and three stable, non-substitutable contrast identities for formation quantity, export mass, and complete-state/history matching | Resolves B-R Q-013 meaning and IDs only; I04 response binding and I06 exact constructions remain open |
+| `P2-I3-CHG-032` | Owner accepts the Q-015 composite-restoration and two-identity conclusion | Record DEC-032 and the manifest-coordinated exact-execution versus causal-continuation design, fail-closed composition, clean forks, and equal-input obligations | Resolves B-R I03 Q-015 design only; I06 exact finalization, conformance, calibration, execution, and results remain open |
 
 ## 19. Evidence ledger
 
@@ -1335,6 +1398,8 @@ and evidence effect are retained.
 | `P2-I3-EV-017` | Owner-accepted coherence-only theory/LGRC-substrate evaluation and grounded pre-freeze clarification retained as DEC-024/CHG-024 | I03 | Prospective N31 hypothesis ordering, theory/closure boundary, representation and producer guards, provenance split, and specification-to-code authority barrier only | Accepted 2026-07-16; no gate reopening, implementation, runtime, or scientific effect |
 | `P2-I3-EV-018` | [N31 return-admission manifest](../contracts/p2-i3/i03-n31-return-admission.json) and [validation](../contracts/p2-i3/i03-n31-return-validation.json) | I03 return transition | Exact N31 graph evidence and unselected provider-contract option authority; bounded distribution-metadata error retained | Accepted; all 11 return roles verified, return gate passed, no provider or evidence transfer |
 | `P2-I3-EV-019` | [N31 return report](../reports/P2-I3-N31-return-admission.md) | I03 return transition | Human interpretation of D0, B-R, C.2, topology/ownership effects, reconstruction debt, and next selection boundary | Accepted as return authority; DEC-026/028 later resolve staged work and B-R carrier/ownership projection without transferring N31 evidence |
+| `P2-I3-EV-020` | [Common comparison machine envelope](../contracts/p2-i3/i03-common-comparison-envelope.json) and [report](../reports/P2-I3-I03-common-comparison-envelope.md) | I03 staged comparison design | Prospective common scientific axes, producer-cost vector, sequential-development provenance, and Q-021 boundary only | Accepted under DEC-030; no conformance, calibration, execution, or scientific effect |
+| `P2-I3-EV-021` | [B-R contrast/restoration machine design](../contracts/p2-i3/i03-br-contrast-and-restoration-design.json) and [report](../reports/P2-I3-I03-BR-contrast-and-restoration-design.md) | I03 B-R design | Stable Q-013 contrast identities and Q-015 restoration/continuation obligations only | Accepted under DEC-031/032; I06 finalization and every runtime/scientific result remain open |
 
 No selected realization, calibration, registration, runtime conformance,
 control, or scientific evidence exists yet for P2-I3. The N31 return adds
@@ -1374,11 +1439,13 @@ accepted semantic brief
 + DEC-027 resolves B-R Q-008 without assigning its outcome
 + DEC-028 resolves B-R Q-006 without assigning a traversal or result
 + DEC-029 resolves B-R Q-007 without assigning a primary metric or result
++ DEC-030 common comparison envelope accepted
++ DEC-031 resolves B-R Q-013 contrast identities
++ DEC-032 resolves B-R I03 Q-015 restoration design
 != field realization or discriminator gate passed
 ```
 
-The next permitted action is to freeze the common ecology-result and
-producer-cost envelope, assign Q-013 comparison identities, specialize Q-015
-restoration design, and project DEC-027 through DEC-029 into operational
-hypotheses and bounded conformance. C.2 design and every calibration or
-scientific execution remain unauthorized.
+The next permitted action is to project DEC-027 through DEC-032 into B-R
+operational hypotheses. Bounded conformance follows only after that projection
+is accepted and frozen. C.2 design and every calibration or scientific
+execution remain unauthorized.

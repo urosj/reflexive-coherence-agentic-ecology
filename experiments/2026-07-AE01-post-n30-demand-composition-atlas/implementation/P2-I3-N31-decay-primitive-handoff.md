@@ -3,7 +3,7 @@
 **Status:** graph handoff complete; bounded RCAE return transition accepted and
 `P2-I3-N31-RETURN-GATE` passed; DEC-026 staged resumption accepted and B-R
 Q-006 through Q-008 resolved; pre-conformance comparison and control design
-next
+resolved through DEC-032; B-R operational hypotheses next
 
 **RCAE lane:** `AE01-L03`
 
@@ -15,7 +15,8 @@ next
 amendment `P2-I3-DEC-024`, and accepted return admission
 `P2-I3-DEC-025`; staged resumption is controlled by `P2-I3-DEC-026`
 and the active B-R mode/equation/encounter projection by
-`P2-I3-DEC-027/028/029`
+`P2-I3-DEC-027/028/029`; comparison and B-R contrast/restoration design are
+controlled by `P2-I3-DEC-030/031/032`
 
 **Handoff trigger:** `P2-I3-Q-005` exposed three incompatible added-mechanism
 meanings of decay. Subsequent core-theory review established that N31 must
@@ -27,6 +28,8 @@ not graph evidence, did not itself select or implement N31 inside RCAE, and
 supplies no L03 scientific result. DEC-026 later resolves Q-005 as staged
 evaluation; DEC-027/028 resolve only the active B-R Q-008/Q-006 boundaries.
 DEC-029 resolves only the active B-R Q-007 encounter boundary.
+DEC-030/031/032 resolve comparison semantics and the active B-R Q-013/I03
+Q-015 design boundaries without opening runtime or scientific work.
 
 **Primary input:**
 [Q-005 decay interpretation study](../reports/P2-I3-Q005-decay-interpretation-study.md)
@@ -911,7 +914,8 @@ After the N31 source transition passes, resume in this order:
    the B-R instance as paired branch-local fixed native departure admission.
 7. Resolve Q-008 state/history mode with the returned relation or mechanism's
    complete continuation state and any relevant recomputation boundary.
-8. Resolve the I03 parts of Q-013 and Q-015.
+8. Resolve the I03 parts of Q-013 and Q-015. DEC-031/032 now resolve the B-R
+   instances while preserving I04 response binding and I06 exact finalization.
 9. Build and run bounded runtime conformance with scientific effect disabled.
 10. Review and pass `P2-I3-DISCRIMINATOR-GATE` only after every I03 obligation
     is frozen and reconstructed.
@@ -984,6 +988,8 @@ handoff does not reserve them or predetermine their answers.
       result interpretation remain later authorities.
 - [x] B-R Q-008 resumed and resolved by DEC-027; C.2 Q-006 through Q-008
       remain inactive and independent until B-R closeout.
+- [x] Common comparison semantics accepted under DEC-030; B-R Q-013 and the
+      I03 portion of Q-015 resolved under DEC-031/032.
 - [x] I03 conformance remains scientifically quarantined; none occurred in
       the return transition.
 - [x] No I04 or candidate activity begins before discriminator-gate passage.

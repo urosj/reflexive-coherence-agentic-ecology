@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.64 draft
+**Baseline revision:** 0.65 draft
 
 **Date:** 2026-07-19
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.64 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.65 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R Q-006 through Q-008 resolved | P2-GATE | DEC-026 defines two isolated route tracks; DEC-027 through DEC-029 fix B-R mode, lifecycle law, and local encounter; common comparison/control design, conformance, C.2, and execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R pre-conformance design through Q-013/Q-015 resolved | P2-GATE | DEC-026 defines two isolated route tracks; DEC-027 through DEC-032 fix B-R mode/law/encounter, comparison envelope, contrast identities, and restoration design; operational hypotheses, conformance, C.2, and execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1400,6 +1400,10 @@ Entry condition:
   native departure requests, a blind RCAE structural adapter, native LGRC9V3
   source-coherence admission/refusal, matched continuation roles, invasive
   terminal branches, and graded encounter interpretation without a result.
+- [x] Record DEC-030 through DEC-032: freeze the non-scalar B-R/C.2 comparison
+  envelope, distinguish B-R formation-quantity/export-mass/complete-state-
+  history contrasts, and define exact composite restoration separately from
+  causal-continuation equivalence while deferring exact I06 registration.
 
 Current continuation:
 
@@ -1410,8 +1414,8 @@ committed RCAE P2-I3 demand state
 -> bounded RCAE source transition (accepted; return gate passed)
 -> Q-005 resolved as B-R-first / C.2-second evaluation
 -> B-R Q-006 through Q-008 resolved under DEC-027 through DEC-029
--> freeze common ecology-result and producer-cost envelope
--> resolve Q-013/Q-015 design and project operational hypotheses
+-> common comparison and Q-013/Q-015 design resolved under DEC-030 through DEC-032
+-> project B-R operational hypotheses
 -> complete bounded B-R conformance
 -> execute and close B-R under route-scoped gates
 -> execute and close C.2 under separate route-scoped gates
@@ -2390,6 +2394,7 @@ Change log:
 | CL-065 | 2026-07-19 | Revision 0.62 draft records accepted DEC-027. B-R Q-008 uses complete current native-plus-policy state as the primary causal mode and requires one same-complete-state/different-formation-history discriminator. Raw history is audit-only unless evidence reopens the decision; a receipt, queue, phase, packet, or schedule omission is incomplete matching rather than history evidence. | P2-I3 B-R state/history boundary | Resolves B-R Q-008 only; B-R Q-006/Q-007, C.2 Q-008, common comparison freeze, and all later gates remain open |
 | CL-066 | 2026-07-19 | Revision 0.63 draft records accepted DEC-028. B-R Q-006 freezes serialized event-indexed conservative formation/export, corrected floor bounds, distinct zero/invalid/duplicate receipt semantics, complete policy lifecycle state, route source/carrier/reservoir roles, native/producer ownership, matched-mass control construction, reservoir isolation, and repeated-opportunity classifications. | P2-I3 B-R equation and lifecycle boundary | Resolves B-R Q-006 only; Q-007, common comparison freeze, conformance, calibration, registration, execution, C.2, and every result gate remain open |
 | CL-067 | 2026-07-19 | Revision 0.64 draft records accepted DEC-029. B-R Q-007 freezes paired independent branch-local fixed native departure requests from matched complete checkpoints, matched continuation roles, a blind structural request adapter, native source-coherence admission/refusal, invasive terminal branches, typed outcomes, controls, graded interpretation, and explicit producer-cost ownership. | P2-I3 B-R local-encounter boundary | Resolves B-R Q-007 only; common comparison and Q-013/Q-015 design, operational hypotheses, conformance, calibration, registration, execution, C.2, and every result gate remain open |
+| CL-068 | 2026-07-19 | Revision 0.65 draft records accepted DEC-030 through DEC-032. The common comparison freezes eight ontology-neutral science axes, a three-class/six-dimension unsummed producer-cost vector, and prospective C.2 influence provenance. B-R Q-013 separates formation quantity, export mass, and complete-state/history. B-R Q-015 separates exact composite restoration from causal-continuation equivalence with fail-closed composition and clean branch/replay rules. | P2-I3 B-R pre-conformance design boundary | Comparison and B-R Q-013/I03-Q-015 design resolved; operational hypotheses, bounded conformance, exact I06 finalization, calibration, registration, execution, C.2, and every result gate remain open |
 
 ## 17. Current next actions
 
@@ -2498,6 +2503,7 @@ The next unchecked actions in dependency order are:
     departure admission with a blind structural adapter, typed atomic refusal,
     matched continuation roles, and graded interpretation. Preserve the
     no-primary-metric, no-result, and no-execution boundary.
-30. [ ] Freeze the common ecology-result and producer-cost envelope, resolve
-    the I03 portions of Q-013/Q-015, project operational hypotheses, and
-    complete bounded B-R conformance before calibration or candidate work.
+30. [x] Freeze the common ecology-result and producer-cost envelope and resolve
+    the B-R I03 portions of Q-013/Q-015 under DEC-030 through DEC-032.
+31. [ ] Project B-R operational hypotheses and complete bounded runtime
+    conformance before calibration or candidate work.

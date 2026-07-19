@@ -7,7 +7,9 @@ DEC-025 source transition is accepted and `P2-I3-N31-RETURN-GATE` passed; I03
 now begins a staged B-R-first, C.2-second evaluation under DEC-026; neither
 provider is selected as the lane result; DEC-027 resolves only the B-R
 instance of Q-008; DEC-028 resolves only the B-R instance of Q-006; DEC-029
-resolves only the B-R instance of Q-007
+resolves only the B-R instance of Q-007; DEC-030 is the accepted common
+comparison-envelope authority; DEC-031 resolves B-R Q-013; DEC-032 resolves
+the I03 design portion of B-R Q-015
 
 **Lane:** `AE01-L03`
 
@@ -96,6 +98,9 @@ No decision may be inferred from:
 | `P2-I3-DEC-027` | For the B-R track, is complete current state or active formation history the primary continuation mode under Q-008? | Accepted by project owner: current composite state is primary, with one mandatory complete-state-matched formation-history discriminator | Resolves only B-R Q-008; Q-006/Q-007 and all conformance or later gates remain open | 2026-07-19 |
 | `P2-I3-DEC-028` | What exact B-R field equation, units, update order, receipt lifecycle, and invariants resolve Q-006? | Accepted by project owner: repeated event-indexed conservative redistribution from a registered route source through the native carrier to an isolated reservoir | Resolves only B-R Q-006; Q-007, conformance, calibration, registration, execution, and all result gates remain open | 2026-07-19 |
 | `P2-I3-DEC-029` | How does a later B-R probe encounter the local field without a hidden global selector under Q-007? | Accepted by project owner: paired independent branch-local fixed native departure requests, with LGRC9V3 alone deciding admission from local carrier coherence | Resolves only B-R Q-007; common comparison, Q-013/Q-015, conformance, calibration, registration, execution, and all result gates remain open | 2026-07-19 |
+| `P2-I3-DEC-030` | Which common scientific and producer-cost fields can compare B-R and C.2 without collapsing their mechanisms or choosing a winner? | Accepted by correction-free progression: common semantic axes plus an unsummed three-class producer-cost vector and prospective C.2 influence register | Freezes comparison semantics only and leaves Q-013/Q-015, metrics, conformance, calibration, execution, and results open | 2026-07-19 |
+| `P2-I3-DEC-031` | Which separate stable identities resolve B-R Q-013 after DEC-028 introduces a second quantity-matched relation? | Accepted by project owner: formation-quantity match, export-mass match, and complete-state/history match remain three non-substitutable contrasts | Resolves B-R Q-013 meaning/IDs only; I04 binds responses and I06 binds exact constructions | 2026-07-19 |
+| `P2-I3-DEC-032` | What B-R restoration and equal-continuation design resolves the I03 portion of Q-015? | Accepted by project owner: one manifest-coordinated composite restoration interface with separate exact-execution and causal-continuation identities | Resolves B-R Q-015 design only; I06 must finalize schemas, fields, hashes, commands, horizon, and equality rules | 2026-07-19 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -2613,7 +2618,269 @@ state; or new graph evidence changes the admitted B-R readout contract. A
 narrow, same-side, or contrary candidate outcome is interpreted under the
 frozen ladder and does not silently rewrite this decision.
 
-## 32. Open decision register
+## 32. `P2-I3-DEC-030` — Common branch-comparison envelope
+
+### Question
+
+Which common result and producer-cost fields can compare the sequential B-R
+and C.2 branches without forcing distinct mechanisms into one realization,
+making raw magnitudes falsely commensurable, or computing an automatic winner?
+
+### Considered comparison forms
+
+1. **One shared implementation and metric.** Rejected because DEC-026 requires
+   separate topology, carrier, equation, calibration, registration, execution,
+   and evidence identities unless equivalence is demonstrated.
+2. **One scalar benefit-minus-cost score.** Rejected because it would collapse
+   scientific adequacy, producer dependence, naturalization debt, and
+   evidence-only rigor into discretionary weights.
+3. **Narrative comparison after both results.** Rejected because outcome-aware
+   selection of comparison criteria would defeat the pre-B-R freeze.
+4. **Raw side-by-side artifacts only.** Retained as necessary evidence but
+   insufficient: unlike structures would remain difficult to compare and the
+   sequential C.2 learning boundary would be implicit.
+5. **Prospective semantic envelope plus unsummed producer-cost vector.** Each
+   branch answers the same ecology questions and R01-R05 ladder while keeping
+   its own mechanism, metric, and numeric scale. Producer residue is classified
+   by causal role, and all B-R-derived C.2 inputs are recorded prospectively.
+
+Select Option 5.
+
+### Proposed scientific envelope
+
+Every branch closeout must answer eight common questions:
+
+1. Did at least two attributable costly events form the route-local
+   aftereffect?
+2. Did a registered non-static dynamic occur beyond static persistence?
+3. Did a later local opportunity encounter it without hidden selection,
+   label reading, or outcome-writing production?
+4. Did intervention on the dynamic or its mediator change continuation?
+5. Did withdrawal, shuffle or relocation, false-trace, and no-field controls
+   establish mechanism specificity?
+6. Was continuation carried by complete current state, active history, or an
+   honestly unresolved distinction?
+7. How stable, perturbation-sensitive, narrow, transferable, or regime-limited
+   was the relation?
+8. What R01-R05 rung, claim ceiling, developmental value, and next move are
+   justified?
+
+The questions are mandatory; positive answers are not. Valid static-trace,
+generic-quantity, narrow, counter-directional, unresolved, producer-dependent,
+missing-surface, redirective, or non-selection results remain visible.
+Infrastructure failure remains separate from scientific evidence.
+
+Each branch retains its own primary response, comparator, resolution band,
+and raw effect magnitude. Cross-branch numeric comparison is prohibited unless
+a later prospective record demonstrates equivalent response meaning, units,
+timing, comparator, aggregation, missingness, and calibration population.
+Common normalization alone is not semantic equivalence.
+
+Thresholds remain interpretive reference bands, not universal pass/fail gates.
+The comparison preserves per-seed or per-attempt relations, controls,
+perturbations, unexpected properties, and developmental readings.
+
+### Proposed producer-cost envelope
+
+Every producer item receives exactly one role class:
+
+```text
+contract_required
+rcae_ecology_required
+evidence_only
+```
+
+Classification precedence is provider-contract duty first, additional
+ecology-composition duty second, and non-causal evidence work third. Reuse does
+not duplicate one item across cost classes.
+
+Within those classes, each branch reports six unsummed dimensions:
+
+1. causal operations, ownership, chain position, and registered invocation
+   counts;
+2. causal state, topology, schedules, lifecycle, and serialization;
+3. producer-specific controls, failure surfaces, omission dependence, and
+   atomicity/refusal guards;
+4. restoration, cross-load protection, replay, and reconstruction burden;
+5. descriptive implementation, state/artifact, runtime, memory, disk, and
+   process footprint; and
+6. naturalization debt and the exact graph-side surface that would remove it.
+
+Counts, source lines, bytes, or runtime measurements are descriptive and may
+not be summed into a winner. Evidence-only work is not causal mechanism cost;
+contract-required and RCAE-ecology-required residue remain separate. Missing
+native coverage is debt rather than automatic scientific failure, while a
+strong scientific result cannot erase producer dependence.
+
+### Sequential-development boundary
+
+Before C.2 calibration, retain one prospective influence-register entry for
+every B-R result, artifact, or observation used in C.2 design:
+
+```text
+source B-R input
+-> adopted / rejected / not applicable
+-> prospective C.2 design effect and reason
+-> comparison or independence consequence
+```
+
+The register permits learning. It prohibits importing B-R candidate values as
+C.2 calibration, retuning C.2 to outperform B-R, claiming a blind symmetric
+contest, or silently reusing B-R topology, carrier, equation, adapter, or
+threshold.
+
+### Q-021 and gate effect
+
+The final Q-021 disposition remains one of: retain B-R, retain C.2, retain both
+as alternatives, propose a separately governed composition, retain another
+justified route, or select none. No envelope field computes that decision.
+
+DEC-030 freezes comparison semantics and the producer-cost ledger before B-R
+candidate work. It does not accept the B-R realization, resolve
+Q-013 or Q-015, select a metric or numeric value, authorize conformance or
+calibration, or assign any branch/provider/lane result.
+
+The complete accepted projection is retained in the
+[machine envelope](../contracts/p2-i3/i03-common-comparison-envelope.json) and
+[interpretive report](../reports/P2-I3-I03-common-comparison-envelope.md).
+
+### Reopening condition
+
+Reopen DEC-030 if the common axes systematically privilege one provider
+ontology rather than L03's causal question; a branch cannot be represented
+without erasing its mechanism; cross-branch numeric comparison becomes
+necessary and prospective semantic equivalence can be shown; the cost classes
+mix evidence rigor with causal residue; C.2 cannot preserve prospective B-R
+input provenance; or new graph evidence changes a provider contract.
+
+A weak, narrow, surprising, or negative branch outcome is interpreted inside
+the envelope and does not itself reopen it.
+
+## 33. `P2-I3-DEC-031` — B-R Q-013 contrast identities
+
+### Question
+
+Which separate stable identities bind B-R quantity-matched and complete-state-
+matched contrasts without conflating temporal formation, route-mass loss, and
+history sufficiency?
+
+### Accepted resolution
+
+DEC-028 introduced a second quantity relation beyond the brief's original
+repeated-formation versus one-pulse comparison. A generic `quantity_matched`
+identity would now be ambiguous. Register three non-substitutable contrasts:
+
+```text
+P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001
+  equal total formation transfer, debit, and cost
+  repeated attributable formation versus one formation pulse
+  complete current state is not required equal
+
+P2-I3-BR-Q13-EXPORT-MASS-MATCH-001
+  candidate and control both have Delta M = -q
+  candidate has Delta O = -q
+  control removes q/2 from s_e and q/2 from m_e, so Delta O = 0
+
+P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001
+  equal complete causal continuation state at t*
+  different attributable formation histories
+  identical future receipts, schedule, opportunity, and probe inputs
+```
+
+The formation-quantity contrast tests temporal structure versus accumulated
+quantity. The export-mass contrast tests organization loss versus generic mass
+loss. The complete-state/history contrast tests current-state sufficiency
+versus active history or omitted causal state. None may substitute for another.
+
+Only a validly formed arm can satisfy costly attributable formation. Matching
+future trajectories after a verified state match support state sufficiency at
+the tested boundary; divergence from an omitted state component invalidates
+the match; verified divergence reopens active history or missing state without
+automatically supporting B-R.
+
+Relocation, false trace, clamp, withdrawal, and hidden-router controls retain
+separate identities. I03 owns contrast meaning and IDs; I04 owns response and
+comparator binding; I06 owns exact values, operations, timing, and topology.
+
+### Gate and evidence effect
+
+This resolves B-R Q-013 only. It assigns no response, metric, amount, control
+outcome, conformance result, calibration, execution, or L03 evidence.
+
+### Reopening condition
+
+Reopen DEC-031 if one contrast cannot be constructed without collapsing into
+another; exact B-R mechanics expose another load-bearing matching relation; or
+I04/I06 cannot preserve the three meanings under separate identities.
+
+## 34. `P2-I3-DEC-032` — B-R Q-015 restoration and continuation design
+
+### Question
+
+What complete restoration, reset, branch, and equal-input continuation design
+is required for B-R, especially when different-history arms cannot be byte-
+identical yet must have equal causal continuation state?
+
+### Accepted resolution
+
+Use one manifest-coordinated composite restoration interface with two distinct
+identity layers:
+
+```text
+P2-I3-BR-Q15-EXACT-COMPOSITE-RESTORATION-001
+  exact native + RCAE + branch + audit execution identity
+
+P2-I3-BR-Q15-CAUSAL-CONTINUATION-PROJECTION-001
+  every field capable of changing registered continuation
+  excluding only prospectively validated audit-only fields
+```
+
+The exact identity includes full native LGRC9V3 restoration state, topology,
+roles, coherence/conductance, packet/event/scheduler/time/budget state, B-R
+policy and lifecycle receipts, reservations and pending work, source/carrier/
+reservoir/continuation bindings, encounter opportunity and parent checkpoint,
+intervention identity, participant audit provenance, distance-policy inputs,
+reset baselines, and audit lineage.
+
+Different-history arms restore exactly to themselves and may retain different
+exact execution identities. Their causal continuation projections must match
+before identical future native inputs, lifecycle receipts, probe opportunity,
+request, interventions, and observation calls are applied. Projection equality
+is necessary but cannot replace bounded equal-input continuation.
+
+Load returns one fully validated composite or fails closed before scientific
+continuation. Missing, partial, stale, one-sided, cross-route, cross-policy,
+cross-branch, or mismatched components are invalid. Reset restores native and
+RCAE baselines together and cannot silently rebase. Each scientific branch
+forks from a clean validated parent; an admitted Q-007 probe is invasive and
+terminal, so delayed or repeated probes require fresh unprobed forks.
+
+Equal-input continuation must later compare original/load, initial/reset,
+each history arm restored to itself, paired state-matched histories, and
+atomic-refusal replay. For field-limited refusal, the post-attempt native
+identity must equal the pre-step identity that already contains the scheduled
+request.
+
+The accepted machine and narrative projection is retained in the
+[B-R contrast/restoration design](../contracts/p2-i3/i03-br-contrast-and-restoration-design.json)
+and its [report](../reports/P2-I3-I03-BR-contrast-and-restoration-design.md).
+
+### Gate and evidence effect
+
+This resolves only the I03 design portion of B-R Q-015. I06 still owns exact
+component schemas and hashes, topology values, commands, reset values,
+continuation horizon, output-specific equality/tolerance rules, branch counts,
+and runtime binding. No conformance, calibration, execution, or result follows.
+
+### Reopening condition
+
+Reopen DEC-032 if a continuation-relevant component is absent; an audit-only
+field must become causal; complete save/load/reset cannot fail closed;
+conformance finds unequal continuation after verified restoration; native
+refusal cannot replay atomically; or new graph evidence changes the admitted
+restoration or B-R provider boundary.
+
+## 35. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -2632,9 +2899,9 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-010` | Which of the five surfaces are measured, annotation-only, inapplicable, or unavailable, and which policies derive them? | I04 | Blocks CAL-PRE |
 | `P2-I3-Q-011` | What comparator and estimator preserve the dynamic-to-traversal causal question? | I04 | Blocks CAL-PRE |
 | `P2-I3-Q-012` | What candidate-blind matched-null generator and inputs calibrate resolution without consuming candidate structure? | I04 | Blocks calibration |
-| `P2-I3-Q-013` | Which separate IDs bind quantity-matched and complete-state-matched contrasts? | I03/I04 | Blocks registration |
+| `P2-I3-Q-013` | Which separate IDs bind quantity-matched and complete-state-matched contrasts? | I03/I04 | B-R resolved by DEC-031 as three distinct contrast identities; C.2 remains inactive and independent |
 | `P2-I3-Q-014` | What exact topology, field values, costs, schedules, times, seeds, and transfer contrast are registered? | I06 after calibration | Blocks REG-GATE |
-| `P2-I3-Q-015` | What complete restoration, reset, branch, and equal-input continuation identity is required? | I03 design; finalized I06 | Blocks REG-GATE |
+| `P2-I3-Q-015` | What complete restoration, reset, branch, and equal-input continuation identity is required? | I03 design; finalized I06 | B-R I03 design resolved by DEC-032; exact I06 finalization remains open and blocks REG-GATE |
 | `P2-I3-Q-016` | Which common controls apply and what evidence must resolve every lane-specific control? | I04/I06 | Blocks REG-GATE and CONTROL-GATE |
 | `P2-I3-Q-017` | What time, memory, disk, process, and artifact-size envelope applies? | I06 | Blocks REG-GATE |
 | `P2-I3-Q-018` | What finite attempts, infrastructure-only retries, failure classes, and one-shot claims apply? | I06/I07 | Blocks EXEC-FREEZE |
@@ -2642,7 +2909,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 33. Decision protocol for subsequent work
+## 36. Decision protocol for subsequent work
 
 For each open question:
 
@@ -2660,7 +2927,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 34. Current boundary
+## 37. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` define semantic and
 process boundaries, accept the exact I01 read-only capability audit and I02
@@ -2687,6 +2954,10 @@ isolation boundaries without assigning a traversal response or result.
 DEC-029 resolves the B-R Q-007 local encounter as independent, role-matched,
 fixed native departure requests whose admission depends only on branch-local
 carrier coherence inside LGRC9V3. It assigns no primary metric or result.
+DEC-030 is accepted as the common comparison and producer-cost envelope.
+DEC-031 separates B-R formation-quantity, export-mass, and complete-state/
+history contrasts. DEC-032 freezes the B-R composite restoration and causal-
+continuation design while leaving its exact I06 registration open.
 
 The frozen I01 environment preflight and read-only audit are complete. The
 accepted I02 package fixes exact source identities and roles but does not
@@ -2704,9 +2975,8 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted action is route-scoped B-R realization work: freeze the
-common comparison envelope, assign Q-013's comparison identities, specialize
-Q-015's complete restoration design, and project DEC-027 through DEC-029 into
-operational hypotheses and bounded conformance. C.2 and every calibration,
-candidate execution, or scientific activity remain unauthorized until their
-named gates pass.
+The next permitted action is to project DEC-027 through DEC-032 into B-R
+operational hypotheses, then freeze and execute only bounded, scientifically
+quarantined runtime conformance. C.2 and every calibration, candidate
+execution, or scientific activity remain unauthorized until their named gates
+pass.
