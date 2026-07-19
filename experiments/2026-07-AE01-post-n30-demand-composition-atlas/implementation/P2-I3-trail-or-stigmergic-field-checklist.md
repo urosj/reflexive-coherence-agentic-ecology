@@ -11,10 +11,11 @@ conformance input freeze are accepted; clean source-anchor commit `94bfe01`
 satisfied the freeze's activation condition; implementation anchor `ce9701c`
 and one byte-exactly reconstructed quarantined bounded-conformance result now
 close the operational I03 requirements; DEC-035 accepts the corrected
-ownership/ledger interpretation and passes `P2-I3-DISCRIMINATOR-GATE`; only
-I04 calibration preregistration is open; DEC-036 through DEC-040 resolve its
-response, observation, comparator, null, and B-R control-governance decisions,
-while machine materialization and CAL-PRE acceptance remain pending
+ownership/ledger interpretation and passes `P2-I3-DISCRIMINATOR-GATE`;
+DEC-036 through DEC-040 resolve I04 response, observation, comparator, null,
+and B-R control-governance decisions; corrected machine package `1.0.1` is
+owner-accepted and `P2-I3-CAL-PRE-GATE` passed; only construction and review
+of a separate inactive I05 invocation freeze is open
 
 **Iteration:** `P2-I3`
 
@@ -24,13 +25,15 @@ while machine materialization and CAL-PRE acceptance remain pending
 accepted and complete; `P2-I3-I02` exact source admission accepted and
 complete; `P2-I3-I03` has reconstructed and admitted the N31 return and now
 retains accepted B-R bounded runtime conformance; `P2-I3-I04` calibration
-preregistration is active at its machine-materialization boundary
+preregistration is accepted and complete; inactive `P2-I3-I05` invocation-
+freeze construction is next
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
 N31 return/provider-option transition, source-anchored conformance-input
 authority, quarantined implementation-conformance evidence, and accepted I04
-response/comparator/null/control-governance meaning; no provider selection,
+response/comparator/null/control-governance meaning plus candidate-blind
+machine-readiness evidence; no provider selection,
 calibration output, registration, scientific execution, control outcome, or
 P2-I3 result
 
@@ -153,8 +156,8 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Passed | Owner-accepted DEC-019, exact manifest, and reconstruction; opens only I03 realization questions |
 | `P2-I3-N31-RETURN-GATE` | Exact N31 closeout and provider contracts reconstruct and are admitted without evidence transfer or automatic selection | Passed | Accepted DEC-025; 11 exact retained identities verified, 5 I12 artifacts byte-exact, and the other 3 bounded to an incorrect distribution-metadata value and dependent digests |
 | `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Passed | DEC-035 accepts exact B-R operational conformance with corrected ownership and typed closure; C.2 remains explicitly inactive until B-R closeout |
-| `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Open for construction | DEC-036 through DEC-040 resolve Q-009 through Q-012 and B-R Q-016; machine materialization, validation, reconstruction, and acceptance remain, without running calibration |
-| `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | Requires accepted CAL-PRE package and an explicitly authorized calibration invocation |
+| `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Passed | Owner accepted corrected package `1.0.1` on 2026-07-19 after 22 focused tests, 485 static checks, and byte-exact non-destructive reconstruction; opens only construction of a separate inactive I05 invocation freeze |
+| `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | CAL-PRE passed; requires an accepted inactive I05 invocation freeze and its separately authorized calibration invocation |
 | `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Requires passed CAL-GATE and `P2-I3-Q-014` through `Q-018` |
 | `P2-I3-EXEC-FREEZE` | One exact inactive candidate cycle is accepted and then explicitly activated | Unopened | Requires passed REG-GATE, clean committed sources, runtime identity, and `P2-I3-Q-019` |
 | `P2-I3-EXEC-GATE` | The finite frozen matrix completes or closes validly incomplete without interpretation inflation | Unopened | Candidate execution is unauthorized |
@@ -215,8 +218,8 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-I00` | Accepted-brief projection, cumulative decision record, and evidence-expandable checklist | Owner-accepted semantic brief | Complete and owner-accepted | `P2-I3-BRIEF-GATE=passed`; no scientific evidence |
 | `P2-I3-I01` | Source-current read-only capability audit | Passed brief gate plus accepted Q-001 freeze | Complete and owner-accepted | `P2-I3-SOURCE-AUDIT-GATE=passed` through DEC-018; no source admission or scientific evidence |
 | `P2-I3-I02` | Exact theory and graph source admission | Passed source-audit gate | Complete and owner-accepted | `P2-I3-SOURCE-ADMISSION-GATE=passed` through DEC-019; no realization |
-| `P2-I3-I03` | Route-scoped field realization, dynamics, causal factorization, operational hypotheses, bounded runtime conformance, and common comparison envelope | Passed source-admission and N31 return gates | B-R conformance construction active from source anchor `94bfe01`; C.2 queued | Each route remains separately gated; no calibration or candidate evidence |
-| `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Unopened | May pass `P2-I3-CAL-PRE-GATE`; no calibration execution |
+| `P2-I3-I03` | Route-scoped field realization, dynamics, causal factorization, operational hypotheses, bounded runtime conformance, and common comparison envelope | Passed source-admission and N31 return gates | B-R complete and accepted; C.2 queued after B-R branch closeout | B-R discriminator gate passed; no calibration or candidate evidence |
+| `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Complete and owner-accepted | `P2-I3-CAL-PRE-GATE=passed`; opens only inactive I05 invocation-freeze construction, with no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Unopened | May pass `P2-I3-CAL-GATE`; no candidate execution |
 | `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Unopened | May pass `P2-I3-REG-GATE`; no candidate execution |
 | `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Passed REG-GATE and clean committed source anchor | Unopened | May pass/consume `P2-I3-EXEC-FREEZE`; no operation before activation |
@@ -1142,26 +1145,28 @@ calibration output or candidate response exists.
   that are mechanically excluded from calibrated `delta`.
 - [x] Resolve B-R common and lane-control applicability and evidence meaning
   `P2-I3-Q-016` through DEC-040. C.2 remains independently unresolved.
-- [ ] Freeze response units, sign, observation window, aggregation, missing
+- [x] Freeze response units, sign, observation window, aggregation, missing
   values, ties, and normalization.
-- [ ] Freeze an observation cadence that can resolve the selected dynamic and
+- [x] Freeze an observation cadence that can resolve the selected dynamic and
   justify it relative to the declared field timescale.
-- [ ] Freeze separate panels for primary response, selected field dynamics,
+- [x] Freeze separate panels for primary response, selected field dynamics,
   distance surfaces, costs, and causal interventions.
-- [ ] Freeze quantity-matched and complete-state-matched comparisons as
+- [x] Freeze quantity-matched and complete-state-matched comparisons as
   distinct relations.
-- [ ] Bind measurement semantics to the stable identities assigned in I03;
+- [x] Bind measurement semantics to the stable identities assigned in I03;
   I03 owns Q-013 identity and I04 owns its response/comparator binding.
-- [ ] Freeze relocation, withdrawal/decay, shuffle/false-trace, hidden-router,
+- [x] Freeze relocation, withdrawal/decay, shuffle/false-trace, hidden-router,
   producer-dependence, fixture-lock, and fresh-traverser controls as
   applicable.
-- [ ] Freeze the candidate-blind input provenance and prove the null generator
+- [x] Freeze the candidate-blind input provenance and prove the null generator
   accepts no candidate-derived argument.
-- [ ] Freeze deterministic calibration seeds disjoint from candidate seeds.
-- [ ] Freeze the resolution ladder and interpretation obligations without
+- [x] Freeze deterministic calibration seeds disjoint from candidate seeds.
+- [x] Freeze the resolution ladder and interpretation obligations without
   turning a threshold into an automatic terminal gate.
-- [ ] Retain exact reconstruction commands and expected artifacts.
-- [ ] Owner accepts the package and passes `P2-I3-CAL-PRE-GATE`.
+- [x] Retain exact reconstruction commands and expected artifacts.
+- [x] Owner accepted corrected package `1.0.1` and passed
+  `P2-I3-CAL-PRE-GATE` on 2026-07-19. This opens only construction of a
+  separate inactive I05 invocation freeze; it does not invoke calibration.
 
 ### 9.1 Accepted Q-009 projection
 
@@ -1358,9 +1363,93 @@ Invalid execution cannot receive a scientific disposition.
   facts.
 
 DEC-040 assigns no control outcome, result, rung, tag, or terminal class. Its
-machine projection, validation, reconstruction, and acceptance remain part of
-the current I04 package. Exact cell/evidence bindings remain I06 work. C.2
-must later receive an independent projection.
+machine projection, validation, and reconstruction are now materialized;
+acceptance remains the current I04 boundary. Exact cell/evidence bindings
+remain I06 work. C.2 must later receive an independent projection.
+
+### 9.6 I04 machine materialization and implementation record
+
+The owner-accepted package retains:
+
+- [x] one complete
+  [machine policy](../configs/p2_i3_br_i04_machine_policy.json) projecting
+  DEC-036 through DEC-040 without consuming any I03 conformance value;
+- [x] one closed-root eight-definition
+  [machine schema](../contracts/p2-i3/i04-br-machine-records.schema.json) for
+  response, pair, triplet, control-leg, and terminal-overlay records;
+- [x] one pure
+  [analysis path](../scripts/p2_i3_i04_br_analysis.py) shared by tests and the
+  future calibration route, with no PyGRC import or calibration builder;
+- [x] one
+  [validator](../scripts/p2_i3_i04_br_validate.py), exact
+  [preregistration identity](../contracts/p2-i3/i04-br-calibration-preregistration.json),
+  retained
+  [validation result](../contracts/p2-i3/i04-br-calibration-preregistration-validation.json),
+  and [implementation report](../reports/P2-I3-I04-BR-calibration-preregistration.md);
+- [x] all 19 common and five L03 parent controls projected into 42 separately
+  resolvable B-R legs, plus 14 stable discriminator/validity/claim IDs; and
+- [x] a complete observation cadence and five measurement panels, including
+  distinct field-dynamic and experimental-causal surfaces.
+
+Implementation verification:
+
+```text
+22 focused pure tests passed
+485 zero-calibration machine checks passed
+retained validation reconstructed byte-exactly
+validation SHA-256:
+153d187c988f8802c674977f07d872c28798cdda78d5296321c55c8eb74a1862
+```
+
+The tests execute only typed response and estimator conformance. Five exact
+W/O/E equality cases are statically frozen for later I05 use but are not
+iterated through a calibration builder. Eight intentionally nonzero cases
+exercise orientation, denominator, floor, crossing, serialization, and
+missingness behavior and are mechanically excluded from future `delta`.
+
+The first focused run exposed four schema-test errors because a test helper
+extracted a `$defs` fragment without its root-reference context. Correcting
+the wrapper changed no policy, estimator, schema meaning, case, or authority.
+The pre-review 17/17 result covers every intentionally nonzero conformance
+case. The bounded review correction adds five focused closure and
+reconstruction tests, producing the final 22/22 result.
+
+Final checklist projection also exposed that authority artifacts were being
+checked against their mutable working-tree paths even though the policy binds
+their accepted bytes at source anchor `4c5b491`. The validator now reads those
+artifacts from the exact Git anchor while continuing to hash current machine
+files directly. This removes a checklist/self-validation cycle without
+changing the accepted decisions or machine semantics.
+
+The owner-supplied bounded review then identified three machine-contract
+blockers, all corrected without reopening DEC-036 through DEC-040:
+
+- [x] close the schema root over the five top-level record classes; close
+  evaluable/nonevaluable pairs, valid/invalid responses, synthetic/live source
+  declarations, unique arm IDs, and the raw additive identity;
+- [x] add one keyed policy for every control leg, including target relation,
+  owning iteration, allowed resolutions, claim effect, invalidity effect,
+  unavailability effect, and terminal-guard role; and
+- [x] make reconstruction non-destructive through a separate
+  `outputs/reconstruction/` target plus explicit comparison; require explicit
+  artifact-construction mode before the validator may write the retained path.
+
+During closure validation, the estimator path was also tightened to compute
+raw and normalized relations from the accepted exact rational fields before
+projecting floats. This removes binary-subtraction noise without changing the
+formula, orientation, panels, or resolution policy.
+
+The future I05 boundary now requires—but does not select—one exact canonical
+candidate-blind arithmetic construction. It must use nonnegative carrier
+coherence, produce each registered rational margin exactly as
+`c_pre_m_e - q_probe`, match request semantics within each W/O/E case, accept
+no candidate-shaped values, and be mechanically prohibited from I06/I08
+scientific reuse.
+
+The package creates candidate-blind readiness evidence only. It produces no
+matched-null output, `delta`, metric-sheet result, PyGRC operation, candidate
+or control result, rung, tag, or terminal classification. Thresholds remain
+interpretive ladder guidance rather than automatic accept/reject gates.
 
 No calibration command runs in I04.
 
@@ -1379,6 +1468,12 @@ calibration invocation freeze.
 - [ ] Verify clean committed calibration sources and exact authority hashes.
 - [ ] Verify candidate artifacts, candidate seeds, PyGRC candidate runtime,
   realization responses, and candidate-shaped inputs are mechanically absent.
+- [ ] Freeze one canonical candidate-blind `c_pre_m_e`/`q_probe` construction
+  whose exact difference equals every registered rational margin.
+- [ ] Require nonnegative carrier coherence and matched request values,
+  construction identity, and semantics across W/O/E arms within each case.
+- [ ] Prove the construction accepts no candidate-shaped value and its
+  arithmetic fixtures cannot enter I06 or I08 scientific registration.
 - [ ] Activate exactly one frozen calibration invocation.
 - [ ] Run the complete finite null matrix once, subject only to a frozen
   infrastructure-retry rule.
@@ -1669,7 +1764,7 @@ from appearing earlier than its evidence permits.
 | `P2-I3-Q-013` | I03 assigns separate stable identities; I04 binds their measurement semantics | B-R resolved by DEC-031 as formation-quantity, export-mass, and complete-state/history contrasts; C.2 remains inactive |
 | `P2-I3-Q-014` | I06 exact numeric and topology registration | Open; blocks registration |
 | `P2-I3-Q-015` | I03 fixes design obligations; I06 finalizes exact restoration and continuation identity | B-R I03 design resolved by DEC-032; exact I06 finalization remains open and blocks registration |
-| `P2-I3-Q-016` | I04 control governance; I06 exact evidence bindings | B-R applicability/evidence meaning resolved by DEC-040; machine materialization and exact I06 bindings remain; C.2 independently unresolved |
+| `P2-I3-Q-016` | I04 control governance; I06 exact evidence bindings | B-R applicability/evidence meaning and I04 machine projection resolved by DEC-040; exact I06 bindings remain; C.2 independently unresolved |
 | `P2-I3-Q-017`–`P2-I3-Q-018` | I06/I07 resource, attempt, retry, failure, and execution boundaries as declared in the decision record | Open; block registration/execution freeze |
 | `P2-I3-Q-019` | I07 execution freeze | Open; blocks candidate execution |
 | `P2-I3-Q-020` | Post-core appendix decision | Open; no core blocker |
@@ -1751,6 +1846,9 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-040` | Owner-supplied Q-011 review accepts the two-estimator proposal with exact three-arm, raw-decomposition, pairing, normalization, and clamp tightenings | Record DEC-038; distinguish W deposition withdrawal, O lifecycle neutralization, and E enabled lifecycle; preserve raw additive but normalized non-additive relations; bind exact forks, pair identity, missingness, interpretation, and partly algebraic mediation limits | Complete as comparator/estimator meaning only; Q-012 and Q-016 remain open, and no arm value, calibration operation, or scientific result exists |
 | `P2-I3-CHG-041` | Owner-supplied Q-012 review accepts shared calibration but shows that equality rows cannot exercise the floor or nonzero estimator paths | Preserve equality rows as the only matched-null inputs; correct the review's floor-authority reading against the frozen metric sheet; record DEC-039 with separate non-delta perturbation, denominator, reconstruction, and missingness panels | Complete as calibration/conformance-input meaning only; Q-016 and I04 materialization remain open, and no calibration invocation or scientific result exists |
 | `P2-I3-CHG-042` | Owner-supplied Q-016 review accepts the B-R control projection with leg-level applicability, lifecycle-status, compound-control, false-trace, mandatory-leg, CTRL-19, and I09-I11 tightenings | Record DEC-040; separate control class from evidence type; add stable discriminator/validity/claim IDs; preserve valid diagnostic alternatives, invalid execution, and blocked/missing-surface closeout as distinct states | Complete as B-R control/evidence-governance meaning only; no outcome is assigned, C.2 remains unresolved, and CAL-PRE still requires machine materialization, validation, reconstruction, and acceptance |
+| `P2-I3-CHG-043` | Accepted DEC-036 through DEC-040 require one coherent machine contract before CAL-PRE review | Materialize the typed response/estimator path, closed schema, complete policy, preregistration identity, validator, focused tests, retained validation, reconstruction commands, and implementation report | Superseded before gate passage by CHG-044 after bounded review; the 17-test/158-check package remains pre-correction history with no calibration or scientific effect |
+| `P2-I3-CHG-044` | Owner-supplied I04 review accepts semantic materialization but finds open root schema, incomplete per-leg fail-closed/outcome mapping, and destructive machine reconstruction commands | Issue version `1.0.1`; close root and conditional schemas, add 42 exact leg policies, separate reconstruction from explicit artifact construction, and add the deferred I05 arithmetic-construction obligation | Corrected package review-ready; 22 tests and 485 zero-calibration checks pass with safe byte-exact reconstruction; no decision reopened and CAL-PRE remains pending owner review |
+| `P2-I3-CHG-045` | Owner disposition accepts corrected I04 package `1.0.1` and authorizes CAL-PRE passage | Mark I04 complete, pass only `P2-I3-CAL-PRE-GATE`, and open construction of one separate inactive I05 invocation freeze under the exact arithmetic-construction obligation | Complete; no calibration invocation, `delta`, I06 registration, B-R/C.2 execution, rung, tag, terminal class, or scientific/ecology result is opened |
 
 ## 19. Evidence ledger
 
@@ -1791,11 +1889,15 @@ and evidence effect are retained.
 | `P2-I3-EV-030` | DEC-038 plus the frozen L03 primary metric and accepted B-R operational hypotheses | I04 Q-011 | Exact W/O/E comparator, estimator, pairing, missingness, normalization, and causal-role meanings only | Accepted; resolves Q-011 without arm values, calibrated resolution, execution, or candidate evidence |
 | `P2-I3-EV-031` | DEC-039 plus the frozen L03 metric-sheet resolution policy and Phase 1 calibration contract | I04 Q-012 | Shared exact-null population, non-delta conformance panels, provenance, and resolution-role meaning only | Accepted; resolves Q-012 without invoking calibration or producing numeric/scientific evidence |
 | `P2-I3-EV-032` | DEC-040 plus the common control/failure register and accepted B-R operational-hypothesis projection | I04 Q-016 | Leg-level applicability, control/evidence typing, compound-control and false-trace meanings, stable mandatory-leg identities, and I09-I11 handoff only | Accepted; resolves B-R Q-016 meaning without assigning outcomes; C.2 and machine/exact-registration bindings remain open |
+| `P2-I3-EV-033` | Initial I04 machine materialization at policy/schema version `1.0.0` | I04 machine materialization | Candidate-blind response, estimator, observation, control, provenance, and reconstruction readiness only | Superseded before acceptance by EV-034 after bounded review; 17 tests and 158 checks remain pre-correction history only |
+| `P2-I3-EV-034` | Corrected [I04 machine policy](../configs/p2_i3_br_i04_machine_policy.json), [schema](../contracts/p2-i3/i04-br-machine-records.schema.json), [preregistration](../contracts/p2-i3/i04-br-calibration-preregistration.json), [validation](../contracts/p2-i3/i04-br-calibration-preregistration-validation.json), and [report](../reports/P2-I3-I04-BR-calibration-preregistration.md) | I04 bounded review correction | Closed root/conditional schema, 42 per-leg policies, safe reconstruction, deferred I05 construction requirement, and exact readiness identity only | Corrected package review-ready; 22 focused tests and 485 static checks pass; validation reconstructs byte-exactly; no calibration or scientific evidence |
+| `P2-I3-EV-035` | Owner I04 acceptance disposition retained through CHG-045 and this checklist | I04 exit | Accepts corrected package `1.0.1` and passes CAL-PRE only | Accepted 2026-07-19; opens inactive I05 invocation-freeze construction, not calibration invocation or scientific work |
 
-A B-R realization and its quarantined runtime-conformance evidence now exist
-for P2-I3. No calibration, registration, control outcome, scientific execution,
-branch result, provider comparison, or lane result exists. The N31 return
-remains graph-side evidence and provider-contract option authority only.
+A B-R realization, its quarantined runtime-conformance evidence, and its
+owner-accepted I04 machine preregistration now exist for P2-I3. No calibration,
+registration, control outcome, scientific execution, branch result, provider
+comparison, or lane result exists. The N31 return remains graph-side evidence
+and provider-contract option authority only.
 
 ## 20. Current stop and next permitted action
 
@@ -1854,12 +1956,20 @@ accepted semantic brief
 + nonzero estimator-conformance panels are excluded from calibrated delta
 + DEC-040 resolves B-R Q-016 as leg-factored evidence governance
 + diagnostic alternatives, invalid execution, and terminal guards remain distinct
++ DEC-036 through DEC-040 materialize as one closed machine package
++ bounded review closes root schema, per-leg policy, and reconstruction gaps
++ I05 canonical arithmetic construction remains explicitly deferred
++ 22 pure tests and 485 static checks pass
++ retained validation reconstructs byte-exactly
++ no calibration builder, PyGRC model, or candidate/control operation runs
+= P2-I3-I04 is owner-accepted and P2-I3-CAL-PRE-GATE passed
 != calibration execution, registration, or scientific execution passed
 ```
 
-The next boundary is machine materialization, validation, reconstruction, and
-review of the complete DEC-036-through-DEC-040 I04 contract without running
-calibration. Exact control-cell/evidence identities remain I06 work.
+The next permitted action is construction of a separate inactive I05
+invocation freeze. Its review and later explicit authorization remain distinct
+from calibration invocation. Exact control-cell/evidence identities remain I06
+work.
 Conformance fixture values, topology, observed split, digests, and derived
 margins are prohibited inputs. C.2 design and every calibration or scientific
 execution remain unauthorized.

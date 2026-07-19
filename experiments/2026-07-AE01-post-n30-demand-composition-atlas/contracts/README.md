@@ -97,6 +97,23 @@ performs no LGRC model operation and creates no conformance output. The freeze
 cannot supply later scientific values. Harness construction and runtime wait
 for the accepted freeze's clean source-anchor commit.
 
+## P2-I3 B-R I04 calibration preregistration
+
+`p2-i3/i04-br-calibration-preregistration.json` binds the accepted
+DEC-036-through-DEC-040 authority to the exact machine policy, closed schema,
+pure analysis path, validator, and focused tests.
+`p2-i3/i04-br-machine-records.schema.json` defines a closed five-record root
+union and eight response, pair/triplet, control-leg, terminal-overlay, and
+component definitions. The retained
+`p2-i3/i04-br-calibration-preregistration-validation.json` passes 485 static
+checks and reconstructs byte-exactly.
+
+This package runs no calibration builder and produces no `delta`. Its 22 pure
+tests exercise response/estimator conformance, conditional schema closure, the
+42-leg policy, and non-destructive reconstruction. The owner accepted the
+corrected package and passed `P2-I3-CAL-PRE-GATE` on 2026-07-19, opening only
+construction of a separate inactive I05 invocation freeze.
+
 ## P2-I1 registration materialization
 
 `p2-i1/registration-records/` applies the existing `1.1.0` record vocabulary

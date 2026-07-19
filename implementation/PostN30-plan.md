@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.75 draft
+**Plan revision:** 0.77 draft
 
 **Date:** 2026-07-19
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.75 draft:
+Current dependency order after revision 0.78 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1824,11 +1824,20 @@ Current dependency order after revision 0.75 draft:
    governance: applicability, execution, scientific resolution, control
    resolution, and terminal guards remain separate; compound producer,
    budget, dynamic, and false-trace controls retain independently resolvable
-   meanings; and I09 facts reach I11 only through I10 reconstruction. Next
-   materialize, validate, reconstruct, and review the complete DEC-036-through-
-   DEC-040 candidate-blind preregistration without consuming any conformance
-   fixture value, topology, split, digest, or margin. Then carry
-   B-R through separately gated
+   meanings; and I09 facts reach I11 only through I10 reconstruction. The
+   complete DEC-036-through-DEC-040 candidate-blind machine preregistration is
+   was accepted after one bounded machine-contract review: version `1.0.1`
+   closes the schema root and conditional states, binds target/outcome/
+   ownership/fail-closed semantics for all 42 control legs, separates safe
+   reconstruction from explicit artifact construction, and requires I05 to
+   freeze one exact nonnegative candidate-blind arithmetic construction. One
+   pure response/estimator path, policy, validator, preregistration identity,
+   and retained validation pass 22 focused tests and 485 zero-calibration
+   checks with byte-exact non-destructive reconstruction. No conformance
+   fixture value, topology, split, digest, or margin was consumed. The owner
+   accepted I04 and passed `P2-I3-CAL-PRE-GATE` on 2026-07-19. Next construct
+   and review a separate inactive I05 invocation freeze before any matched-null
+   operation. Then carry B-R through separately gated
    calibration, registration, execution, controls, reconstruction, and branch
    interpretation. Only after B-R branch closeout may C.2 open under separate
    identities and the same common comparison fields. B-R Q-008 is fixed by
@@ -1968,6 +1977,9 @@ directive.
 | 2026-07-19 | Revision 0.73 draft: records owner-accepted DEC-038 and resolves I04 Q-011. Exact W deposition-withdrawal, O lifecycle-neutralized, and E lifecycle-enabled arms separate the lane-primary complete-trace relation from mandatory B-R export mediation. Raw deltas retain their additive identity; normalized margins remain non-additive, unclipped, strictly paired, and accompanied by native dispositions, missingness, and clamp interpretation. No arm value, calibrated resolution, calibration output, or result is selected. |
 | 2026-07-19 | Revision 0.74 draft: records owner-accepted DEC-039 and resolves I04 Q-012. One shared exact-null W/O/E population calibrates both estimators; five equal-arm rows alone enter the Phase 1 delta rule. Separate intentionally nonzero perturbation, denominator, cross-zero, reconstruction, and missingness panels verify estimator behavior but are mechanically excluded from delta. The existing `1e-12` metric-sheet floor remains prior authority, not a value inferred from equality rows. No calibration is invoked. |
 | 2026-07-19 | Revision 0.75 draft: records owner-accepted DEC-040 and resolves the B-R instance of I04 Q-016. Control applicability is leg-level; execution, evidence, control, and terminal-guard states are independent; control classes remain distinct from evidence types; compound producer/budget/dynamic and false-trace controls receive separate meanings; stable discriminator/validity/claim IDs bind rung, tag, and terminal needs; CTRL-19 permits honest blocked or missing-surface closeout without manufacturing a negative; and I09 facts reach the I11 terminal overlay only through I10 reconstruction. No control outcome, C.2 projection, calibration invocation, or scientific result is assigned. |
+| 2026-07-19 | Revision 0.76 draft: materializes accepted DEC-036 through DEC-040 as one review-ready P2-I3 B-R I04 machine package. The package retains a closed seven-definition schema, one pure typed response/estimator path, complete observation/null/control policy, exact preregistration identity, validator, reconstruction commands, and narrative implementation record. Seventeen focused tests and 158 zero-calibration checks pass; retained validation reconstructs byte-exactly. No calibration builder, matched-null output, `delta`, PyGRC model, candidate/control operation, rung, tag, terminal class, or scientific result exists. CAL-PRE owner review is next. |
+| 2026-07-19 | Revision 0.77 draft: applies the bounded I04 review without reopening DEC-036 through DEC-040. Machine-contract version `1.0.1` closes the schema root and conditional pair/response/triplet states, binds target/outcome/ownership/fail-closed semantics for all 42 control legs, prevents reconstruction from overwriting retained evidence, and requires a separately frozen exact nonnegative candidate-blind arithmetic construction in I05. Twenty-two focused tests and 485 zero-calibration checks pass; safe reconstruction is byte-exact. No calibration builder, matched-null output, `delta`, PyGRC model, candidate/control operation, rung, tag, terminal class, or scientific result exists. Corrected CAL-PRE owner review is next. |
+| 2026-07-19 | Revision 0.78 draft: records owner acceptance of corrected I04 package `1.0.1` and passage of `P2-I3-CAL-PRE-GATE`. The accepted machine identities, exact estimator arithmetic, 42-leg governance, 22 tests, 485 checks, and byte-exact non-destructive reconstruction remain unchanged. Only construction and review of one separate inactive I05 invocation freeze opens; calibration invocation, `delta`, I06, B-R/C.2 execution, rung, tag, terminal classification, and every scientific/ecology result remain unauthorized. |
 
 ## 18. Program completion criteria
 

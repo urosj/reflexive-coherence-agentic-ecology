@@ -1,0 +1,111 @@
+{
+  "artifact_id": "P2-I3-I04-BR-CALIBRATION-PREREGISTRATION",
+  "artifact_version": "1.0.1",
+  "authority": {
+    "decision_ids": [
+      "P2-I3-DEC-036",
+      "P2-I3-DEC-037",
+      "P2-I3-DEC-038",
+      "P2-I3-DEC-039",
+      "P2-I3-DEC-040"
+    ],
+    "rcae_source_anchor": "4c5b49153cf42ea4893f4bf42538bce79138a7b4"
+  },
+  "branch_id": "P2-I3-BR",
+  "calibration_invocations": 0,
+  "candidate_blindness": {
+    "candidate_artifacts_consumed": false,
+    "candidate_execution_performed": false,
+    "candidate_shaped_generator_arguments": false,
+    "conformance_fixture_values_consumed": false,
+    "earlier_lane_numeric_calibration_consumed": false,
+    "n31_candidate_outputs_consumed": false,
+    "pygrc_imported_or_executed": false
+  },
+  "constructed_at": "2026-07-19",
+  "evidence_effect": "candidate_blind_calibration_preregistration_integrity_only",
+  "gate_boundary": {
+    "CAL_PRE_status": "pending_review",
+    "I05_authorized": false,
+    "candidate_execution_authorized": false,
+    "does_not_assign": [
+      "calibrated delta",
+      "control outcome",
+      "R01-R05 rung",
+      "trail_field_candidate or stigmergic_field_candidate",
+      "terminal classification",
+      "C.2 applicability",
+      "B-R or lane scientific result"
+    ],
+    "next_if_accepted": "pass P2-I3-CAL-PRE-GATE and open construction of a separate inactive I05 candidate-blind calibration invocation freeze only"
+  },
+  "implementation_summary": {
+    "analysis_path": "one pure typed response and W/O/E estimator path shared by future arithmetic calibration and registered live analysis",
+    "calibration_panel_counts": {
+      "delta_entering_exact_null_cases": 5,
+      "estimator_conformance_cases_excluded_from_delta": 8,
+      "reconstruction_panel": 1,
+      "validity_missingness_rules": 6
+    },
+    "common_control_legs": 29,
+    "lane_control_legs": 13,
+    "machine_schema_definitions": 8,
+    "mandatory_requirement_ids": 14,
+    "per_leg_policy_records": 42,
+    "primary_response": "typed signed native admissibility margin plus mandatory native disposition",
+    "relation_ids": [
+      "m_trace=N(E,W;epsilon_mu)",
+      "m_export=N(O,E;epsilon_mu)"
+    ],
+    "test_count": 22
+  },
+  "iteration_id": "P2-I3-I04",
+  "lane_id": "AE01-L03",
+  "machine_identities": [
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/configs/p2_i3_br_i04_machine_policy.json",
+      "sha256": "9877154766ab9ea26a11c426a8feb8666df1a3f146efb188006a5e0f26a77bf1"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-machine-records.schema.json",
+      "sha256": "2e8f3cc72e588b45a641a04a16bf0287f703ee4d91880af6102692553d968e72"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_analysis.py",
+      "sha256": "e8292c7fbe0f3cb8521e15de354dd8a0a36b9ade80c38b2c8b733858e197bb46"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_validate.py",
+      "sha256": "637978b743a6935b0c7ae748866b5e6466bc3e66996450b9ff48ebebd1766b82"
+    },
+    {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i04_br.py",
+      "sha256": "0dc5761f0dd87b130f4cee194f61d84039310d5e1d688a83950020964e968e82"
+    }
+  ],
+  "reconstruction": {
+    "environment": {
+      "interpreter": ".venv/bin/python",
+      "jsonschema": "4.26.0",
+      "pytest": "9.1.1",
+      "python": "3.12.3",
+      "pythonhashseed": "0",
+      "pythondontwritebytecode": "1"
+    },
+    "steps": [
+      "verify RCAE source anchor is an ancestor of the current source",
+      "verify every authority and machine file SHA-256",
+      "run the focused pure test command",
+      "run the zero-calibration validator into a non-retained reconstruction path",
+      "compare retained and reconstructed validation bytes",
+      "use explicit artifact-construction mode only when intentionally building the retained validation"
+    ],
+    "test_command": "PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 .venv/bin/python -m pytest -q experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/tests/test_p2_i3_i04_br.py",
+    "test_result": "22 passed",
+    "validation_artifact_construction_command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_validate.py --artifact-construction --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration-validation.json",
+    "validation_compare_command": "cmp experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i04-br-calibration-preregistration-validation.json outputs/reconstruction/p2-i3-i04-validation.reconstructed.json",
+    "validation_reconstruction_command": ".venv/bin/python experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_validate.py --output outputs/reconstruction/p2-i3-i04-validation.reconstructed.json"
+  },
+  "scientific_outcomes_assigned": false,
+  "status": "review_ready_not_accepted"
+}

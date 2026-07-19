@@ -79,6 +79,14 @@ Phase 2 gate reviews:
   composite restoration/refusal boundary, and declared-provenance quarantine.
   Its 85 checks run no LGRC model operation and authorize no runtime or
   scientific evidence.
+- [P2-I3 I04 B-R calibration preregistration](P2-I3-I04-BR-calibration-preregistration.md)
+  explains the corrected, owner-accepted DEC-036-through-DEC-040 machine
+  projection. Its closed root schema, 42 per-leg policies, safe reconstruction,
+  22 pure tests, and 485 static checks pass, and the retained validation
+  artifact reconstructs byte-exactly. No matched-null calibration, `delta`,
+  PyGRC model, candidate/control operation, or scientific result exists. The
+  owner passed `P2-I3-CAL-PRE-GATE` on 2026-07-19, opening only construction
+  of a separate inactive I05 invocation freeze.
 - [P2-I3 Q-005 decay interpretation study](P2-I3-Q005-decay-interpretation-study.md)
   distinguishes release-efficacy attenuation, coherence-conserving source
   leakage, and route-susceptibility relaxation. DEC-023 consumes it only as

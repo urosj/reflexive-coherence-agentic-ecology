@@ -1,0 +1,703 @@
+{
+  "$defs": {
+    "control_leg_state": {
+      "additionalProperties": false,
+      "properties": {
+        "applicability": {
+          "enum": [
+            "applicable",
+            "conditional",
+            "not_applicable"
+          ]
+        },
+        "control_class": {
+          "enum": [
+            "provenance_guard",
+            "source_ceiling_guard",
+            "scientific_comparison",
+            "causal_intervention",
+            "ownership_or_boundary_guard",
+            "runtime_validity_guard",
+            "reconstruction_guard",
+            "terminal_semantic_guard"
+          ]
+        },
+        "control_resolution": {
+          "enum": [
+            "resolved",
+            "unresolved",
+            "invalid",
+            "unavailable"
+          ]
+        },
+        "evidence_resolution": {
+          "enum": [
+            "supportive",
+            "equivalent",
+            "counterdirectional",
+            "generic_effect",
+            "mixed",
+            "unresolved",
+            "not_evaluated"
+          ]
+        },
+        "evidence_types": {
+          "items": {
+            "enum": [
+              "inherited/source verification",
+              "registration guard",
+              "numeric execution comparison",
+              "causal-chain evidence",
+              "withdrawal comparison",
+              "reconstruction evidence",
+              "terminal report guard"
+            ]
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "execution_status": {
+          "enum": [
+            "not_due",
+            "registered",
+            "executed_valid",
+            "executed_invalid",
+            "unavailable"
+          ]
+        },
+        "leg_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "parent_control_id": {
+          "pattern": "^AE01-(CTRL-[0-9]{2}|L03-CTRL-[0-9]{2})$",
+          "type": "string"
+        },
+        "terminal_guard_status": {
+          "enum": [
+            "not_armed",
+            "armed",
+            "passed",
+            "failed",
+            "not_applicable"
+          ]
+        }
+      },
+      "required": [
+        "leg_id",
+        "parent_control_id",
+        "applicability",
+        "control_class",
+        "evidence_types",
+        "execution_status",
+        "evidence_resolution",
+        "control_resolution",
+        "terminal_guard_status"
+      ],
+      "type": "object"
+    },
+    "exact_rational_value": {
+      "additionalProperties": false,
+      "properties": {
+        "rational": {
+          "pattern": "^-?[0-9]+(/[1-9][0-9]*)?$",
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "rational",
+        "value"
+      ],
+      "type": "object"
+    },
+    "pair_result": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "evaluable": {
+                "const": true
+              }
+            },
+            "required": [
+              "evaluable"
+            ]
+          },
+          "then": {
+            "properties": {
+              "denominator": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              },
+              "denominator_source": {
+                "enum": [
+                  "first_arm",
+                  "second_arm",
+                  "epsilon_mu"
+                ]
+              },
+              "nonevaluable_record_ids": {
+                "maxItems": 0
+              },
+              "normalized_margin": {
+                "type": "number"
+              },
+              "raw_numerator": {
+                "type": "number"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "denominator": {
+                "type": "null"
+              },
+              "denominator_source": {
+                "type": "null"
+              },
+              "nonevaluable_record_ids": {
+                "minItems": 1
+              },
+              "normalized_margin": {
+                "type": "null"
+              },
+              "raw_numerator": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "arm_record_ids": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "denominator": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "denominator_source": {
+          "enum": [
+            "first_arm",
+            "second_arm",
+            "epsilon_mu",
+            null
+          ]
+        },
+        "evaluable": {
+          "type": "boolean"
+        },
+        "nonevaluable_record_ids": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "normalized_margin": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "raw_numerator": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "record_type": {
+          "const": "p2-i3-br-normalized-pair-result-v1"
+        },
+        "record_version": {
+          "const": "1.0.0"
+        },
+        "relation_id": {
+          "enum": [
+            "m_trace",
+            "m_export"
+          ]
+        }
+      },
+      "required": [
+        "record_type",
+        "record_version",
+        "relation_id",
+        "pair_id",
+        "arm_record_ids",
+        "evaluable",
+        "nonevaluable_record_ids",
+        "raw_numerator",
+        "denominator",
+        "denominator_source",
+        "normalized_margin"
+      ],
+      "type": "object"
+    },
+    "pairing": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_stratum": {
+          "type": "string"
+        },
+        "causal_continuation_projection_identity": {
+          "type": "string"
+        },
+        "clean_parent_identity": {
+          "type": "string"
+        },
+        "configuration_or_variation_id": {
+          "type": "string"
+        },
+        "deterministic_replicate": {
+          "type": "integer"
+        },
+        "encounter_index": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "future_schedule_identity": {
+          "type": "string"
+        },
+        "observation_boundary_id": {
+          "type": "string"
+        },
+        "request_construction_id": {
+          "type": "string"
+        },
+        "request_timing_id": {
+          "type": "string"
+        },
+        "route_role": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "calibration_stratum",
+        "deterministic_replicate",
+        "configuration_or_variation_id",
+        "route_role",
+        "clean_parent_identity",
+        "causal_continuation_projection_identity",
+        "encounter_index",
+        "request_construction_id",
+        "request_timing_id",
+        "future_schedule_identity",
+        "observation_boundary_id"
+      ],
+      "type": "object"
+    },
+    "raw_additive_identity": {
+      "additionalProperties": false,
+      "properties": {
+        "additive_identity_holds": {
+          "const": true
+        },
+        "delta_export": {
+          "type": "number"
+        },
+        "delta_formed": {
+          "type": "number"
+        },
+        "delta_trace": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "delta_trace",
+        "delta_export",
+        "delta_formed",
+        "additive_identity_holds"
+      ],
+      "type": "object"
+    },
+    "response_record": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "validity_status": {
+                "const": "valid"
+              }
+            },
+            "required": [
+              "validity_status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "admissibility_margin": {
+                "$ref": "#/$defs/exact_rational_value"
+              },
+              "native_disposition": {
+                "enum": [
+                  "admitted",
+                  "field_limited_refusal"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "admissibility_margin": {
+                "type": "null"
+              },
+              "native_disposition": {
+                "const": "invalid_or_infrastructure_failure"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "source_class": {
+                "const": "candidate_blind_arithmetic_synthetic"
+              }
+            },
+            "required": [
+              "source_class"
+            ]
+          },
+          "then": {
+            "properties": {
+              "calibration_seed_alias": {
+                "type": "integer"
+              },
+              "candidate_artifacts_consumed": {
+                "const": false
+              },
+              "candidate_execution_performed": {
+                "const": false
+              },
+              "pygrc_runtime_inputs_consumed": {
+                "const": false
+              },
+              "randomness_used": {
+                "const": false
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "calibration_seed_alias": {
+                "type": "null"
+              },
+              "candidate_artifacts_consumed": {
+                "const": true
+              },
+              "candidate_execution_performed": {
+                "const": true
+              },
+              "pygrc_runtime_inputs_consumed": {
+                "const": true
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "admissibility_margin": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/exact_rational_value"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "arm_id": {
+          "enum": [
+            "W",
+            "O",
+            "E"
+          ]
+        },
+        "c_pre_m_e": {
+          "$ref": "#/$defs/exact_rational_value"
+        },
+        "calibration_seed_alias": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "candidate_artifacts_consumed": {
+          "type": "boolean"
+        },
+        "candidate_execution_performed": {
+          "type": "boolean"
+        },
+        "case_id": {
+          "type": "string"
+        },
+        "coherence_units": {
+          "const": "native_lgrc9v3_coherence"
+        },
+        "diagnostic_margin": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "native_disposition": {
+          "enum": [
+            "admitted",
+            "field_limited_refusal",
+            "invalid_or_infrastructure_failure"
+          ]
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "pairing": {
+          "$ref": "#/$defs/pairing"
+        },
+        "pygrc_runtime_inputs_consumed": {
+          "type": "boolean"
+        },
+        "q_probe": {
+          "$ref": "#/$defs/exact_rational_value"
+        },
+        "randomness_used": {
+          "type": "boolean"
+        },
+        "record_id": {
+          "type": "string"
+        },
+        "record_type": {
+          "const": "p2-i3-br-encounter-response-v1"
+        },
+        "record_version": {
+          "const": "1.0.0"
+        },
+        "source_class": {
+          "enum": [
+            "candidate_blind_arithmetic_synthetic",
+            "registered_live_response"
+          ]
+        },
+        "validity_status": {
+          "enum": [
+            "valid",
+            "invalid_or_infrastructure_failure"
+          ]
+        }
+      },
+      "required": [
+        "record_type",
+        "record_version",
+        "record_id",
+        "pair_id",
+        "arm_id",
+        "case_id",
+        "calibration_seed_alias",
+        "randomness_used",
+        "source_class",
+        "candidate_artifacts_consumed",
+        "pygrc_runtime_inputs_consumed",
+        "candidate_execution_performed",
+        "coherence_units",
+        "c_pre_m_e",
+        "q_probe",
+        "admissibility_margin",
+        "native_disposition",
+        "validity_status",
+        "diagnostic_margin",
+        "pairing"
+      ],
+      "type": "object"
+    },
+    "terminal_guard_overlay": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_vocabulary_valid": {
+          "type": "boolean"
+        },
+        "control_index_identity": {
+          "type": "string"
+        },
+        "demand_native_separation_valid": {
+          "type": "boolean"
+        },
+        "i09_scientific_facts_changed": {
+          "const": false
+        },
+        "overlay_id": {
+          "type": "string"
+        },
+        "reconstruction_identity": {
+          "type": "string"
+        },
+        "report_language_valid": {
+          "type": "boolean"
+        },
+        "selection_record_valid": {
+          "type": "boolean"
+        },
+        "terminal_class_valid": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "overlay_id",
+        "control_index_identity",
+        "reconstruction_identity",
+        "terminal_class_valid",
+        "claim_vocabulary_valid",
+        "selection_record_valid",
+        "demand_native_separation_valid",
+        "report_language_valid",
+        "i09_scientific_facts_changed"
+      ],
+      "type": "object"
+    },
+    "triplet_result": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "export_relation": {
+                "properties": {
+                  "evaluable": {
+                    "const": true
+                  }
+                }
+              },
+              "trace_relation": {
+                "properties": {
+                  "evaluable": {
+                    "const": true
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "raw_additive_identity": {
+                "$ref": "#/$defs/raw_additive_identity"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "raw_additive_identity": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "export_relation": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/pair_result"
+            },
+            {
+              "properties": {
+                "relation_id": {
+                  "const": "m_export"
+                }
+              }
+            }
+          ]
+        },
+        "normalized_relations_additive": {
+          "const": false
+        },
+        "normalized_relations_are_percentages": {
+          "const": false
+        },
+        "normalized_relations_clipped": {
+          "const": false
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "raw_additive_identity": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/raw_additive_identity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "record_type": {
+          "const": "p2-i3-br-woe-triplet-result-v1"
+        },
+        "record_version": {
+          "const": "1.0.0"
+        },
+        "trace_relation": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/pair_result"
+            },
+            {
+              "properties": {
+                "relation_id": {
+                  "const": "m_trace"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "record_type",
+        "record_version",
+        "pair_id",
+        "trace_relation",
+        "export_relation",
+        "raw_additive_identity",
+        "normalized_relations_additive",
+        "normalized_relations_are_percentages",
+        "normalized_relations_clipped"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:rcae:p2-i3:br:i04:machine-records:1.0.1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/response_record"
+    },
+    {
+      "$ref": "#/$defs/pair_result"
+    },
+    {
+      "$ref": "#/$defs/triplet_result"
+    },
+    {
+      "$ref": "#/$defs/control_leg_state"
+    },
+    {
+      "$ref": "#/$defs/terminal_guard_overlay"
+    }
+  ],
+  "title": "P2-I3 B-R I04 machine record schemas"
+}
