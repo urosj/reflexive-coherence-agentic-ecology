@@ -10,7 +10,8 @@ instance of Q-008; DEC-028 resolves only the B-R instance of Q-006; DEC-029
 resolves only the B-R instance of Q-007; DEC-030 is the accepted common
 comparison-envelope authority; DEC-031 resolves B-R Q-013; DEC-032 resolves
 the I03 design portion of B-R Q-015; DEC-033 is the accepted B-R
-operational-hypothesis projection and opens only conformance-freeze construction
+operational-hypothesis projection; DEC-034 is the accepted inactive bounded-
+conformance input freeze
 
 **Lane:** `AE01-L03`
 
@@ -103,6 +104,7 @@ No decision may be inferred from:
 | `P2-I3-DEC-031` | Which separate stable identities resolve B-R Q-013 after DEC-028 introduces a second quantity-matched relation? | Accepted by project owner: formation-quantity match, export-mass match, and complete-state/history match remain three non-substitutable contrasts | Resolves B-R Q-013 meaning/IDs only; I04 binds responses and I06 binds exact constructions | 2026-07-19 |
 | `P2-I3-DEC-032` | What B-R restoration and equal-continuation design resolves the I03 portion of Q-015? | Accepted by project owner: one manifest-coordinated composite restoration interface with separate exact-execution and causal-continuation identities | Resolves B-R Q-015 design only; I06 must finalize schemas, fields, hashes, commands, horizon, and equality rules | 2026-07-19 |
 | `P2-I3-DEC-033` | Does the B-R operational projection faithfully specialize `AE01-H-L03` and DEC-027 through DEC-032 without pre-answering metrics or results? | Accepted by project owner: thirteen operational hypotheses covering formation through bounded interpretation | Opens only bounded conformance-freeze construction; no runtime or scientific effect | 2026-07-19 |
+| `P2-I3-DEC-034` | Which exact inactive input freeze may authorize one scientifically quarantined B-R conformance implementation and run? | Accepted by project owner: exact source/call bindings, two-route synthetic fixture, eleven cells, narrow RCAE interfaces, restoration/refusal, mechanical quarantine, and evidence-responsive stronger alternatives | Opens committed-source harness construction and one bounded conformance run only | 2026-07-19 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -2964,7 +2966,71 @@ omitted state, operation, refusal, restoration, or hidden selection; B-R cannot
 represent the parent ecology discriminator; or new graph evidence changes the
 provider contract.
 
-## 36. Open decision register
+## 36. `P2-I3-DEC-034` — Inactive bounded-conformance input freeze
+
+### Question
+
+Which exact inactive input freeze can test whether the accepted B-R operation
+chain is expressible without turning a synthetic fixture into calibration,
+registration, control, or scientific evidence?
+
+### Accepted resolution
+
+Freeze one deterministic two-route LGRC9V3 fixture with eleven conformance
+cells. Bind the clean merged N31 graph revision, the unchanged I02-admitted
+PyGRC provider sources, eighteen exact public symbols, locally resolved PyGRC,
+one attempt, zero retries, and no network or external-repository writes.
+
+The fixture exposes two native formation events, a positive B-R export followed
+by eligible zero, an admitted and refused fixed encounter, all four lifecycle
+states, all three Q-013 constructor identities, composite save/load/reset/
+fork/replay, cross-bound refusal, control/variation addressability, forbidden-
+read exclusion, and downstream quarantine. Fixture values deliberately span
+both native encounter paths but are result-neutral and ineligible downstream.
+
+RCAE owns only the serialized export policy, blind structural request adapter,
+composite restoration coordination, and quarantine guard. LGRC9V3 owns every
+coherence and packet transition plus native admission/refusal. The export
+policy receives one declared carrier value rather than a model/global-state
+object; the encounter adapter receives no field value.
+
+The exact proposed freeze, zero-runtime validator, quarantine module, and
+interpretive record are:
+
+- [machine input freeze](../contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json);
+- [zero-runtime validator](../scripts/p2_i3_i03_br_freeze_validate.py);
+- [quarantine guard](../scripts/p2_i3_conformance_quarantine.py); and
+- [freeze report](../reports/P2-I3-I03-BR-bounded-conformance-input-freeze.md).
+
+The validator passes 85 checks while constructing no model and producing no
+conformance output. Quarantine is mechanical for declared provenance, paths,
+kinds, digests, and fixture value identities; it does not claim to recognize
+an unattributed copied number.
+
+The owner explicitly retains the recurring evidence-responsive development
+rule: results may motivate a stronger topology, narrower producer, more native
+realization, or more discriminating structure later. Such work receives new
+realization/freeze/execution/artifact identities, preserves this structure and
+result as history, and reruns every affected comparison. It may not tune this
+fixture retrospectively or claim that the stronger structure already ran.
+
+### Gate and evidence effect
+
+DEC-034 authorizes construction of the exact source-bound runtime module and
+harness followed by the one bounded conformance run after this accepted freeze
+is committed as a clean source anchor. It does not
+pass the discriminator gate, open I04, or assign any OP/control/scientific
+outcome.
+
+### Reopening condition
+
+Reopen DEC-034 if a public call is unavailable; the producer needs a forbidden
+input or direct native mutation; the encounter needs a field read or selector;
+a Q-013 interface is conflated; composite restoration or atomic refusal cannot
+be expressed; quarantine does not reject declared conformance provenance; or
+new graph evidence changes the admitted provider boundary.
+
+## 37. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -2993,7 +3059,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 37. Decision protocol for subsequent work
+## 38. Decision protocol for subsequent work
 
 For each open question:
 
@@ -3011,7 +3077,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 38. Current boundary
+## 39. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` define semantic and
 process boundaries, accept the exact I01 read-only capability audit and I02
@@ -3044,6 +3110,9 @@ history contrasts. DEC-032 freezes the B-R composite restoration and causal-
 continuation design while leaving its exact I06 registration open.
 DEC-033 is the accepted operational-hypothesis projection. Its machine and
 narrative records open only construction of the bounded conformance freeze.
+DEC-034 is the accepted inactive freeze. Its 85-check static validation opens
+the planned runtime module and harness only after the freeze's clean source-
+anchor commit; no conformance run has occurred.
 
 The frozen I01 environment preflight and read-only audit are complete. The
 accepted I02 package fixes exact source identities and roles but does not
@@ -3061,7 +3130,7 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted action is construction and review of the bounded B-R
-conformance input freeze. C.2 and every
+The next required action is the accepted-freeze source-anchor commit. It then
+opens construction and the single bounded conformance run. C.2 and every
 calibration, candidate execution, or scientific activity remain unauthorized
 until their named gates pass.

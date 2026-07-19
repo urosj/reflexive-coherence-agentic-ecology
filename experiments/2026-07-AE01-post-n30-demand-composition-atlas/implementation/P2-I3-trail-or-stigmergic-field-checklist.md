@@ -6,8 +6,9 @@ DEC-025 return admission accepted; DEC-026 resolves Q-005 as staged B-R-first
 and C.2-second evaluation; DEC-027 resolves B-R Q-008; DEC-028 resolves B-R
 Q-006; DEC-029 resolves B-R Q-007; DEC-030 common comparison envelope is
 accepted; DEC-031 resolves B-R Q-013 and DEC-032 resolves its I03 Q-015
-design; DEC-033 operational-hypothesis projection is accepted; bounded-
-conformance input-freeze construction is next
+design; DEC-033 operational-hypothesis projection and DEC-034 bounded-
+conformance input freeze are accepted; the freeze remains inactive until its
+clean source-anchor commit
 
 **Iteration:** `P2-I3`
 
@@ -962,12 +963,12 @@ no calibration or candidate evidence.
 
 ### 8.4 Bounded runtime conformance
 
-- [ ] Freeze exact public runtime call requirements before conformance.
-- [ ] Freeze a scientific-outcome-free, result-neutral conformance matrix. It
+- [x] Freeze exact public runtime call requirements before conformance.
+- [x] Freeze a scientific-outcome-free, result-neutral conformance matrix. It
   may exercise a synthetic traversal-response interface when needed to prove
   the complete causal architecture, but its fixture values and outcomes are
   ineligible for calibration, registration values, and scientific evidence.
-- [ ] Retain exact runtime identity, realization ownership, commands, seeds if
+- [x] Retain exact runtime identity, realization ownership, commands, seeds if
   any, artifacts, and reconstruction instructions.
 - [ ] Demonstrate save/load/reset/branch and equal-input continuation where
   required.
@@ -975,9 +976,18 @@ no calibration or candidate evidence.
   operation refusal boundaries.
 - [ ] Keep conformance artifacts quarantined from calibration and candidate
   result inputs.
-- [ ] Freeze the quarantine mechanism: separate artifact namespace and
+- [x] Freeze the quarantine mechanism: separate artifact namespace and
   identities plus validator rejection of any downstream calibration,
   registration-value, or candidate-result reference to conformance outputs.
+- [x] Pass 85 zero-runtime freeze checks, including exact graph/source/call
+  bindings, absent output, fixture arithmetic, Q-013 identities, and eight
+  quarantine negative self-tests.
+- [x] Accept DEC-034 before constructing the runtime module or harness and
+  before any LGRC9V3 conformance operation.
+- [x] Preserve evidence-responsive stronger alternatives under new identities
+  and reruns without tuning or erasing the accepted fixture.
+- [ ] Commit the accepted freeze as the clean source anchor before constructing
+  the runtime module or performing any LGRC9V3 conformance operation.
 - [ ] Classify any failed binding as implementation or source evidence, never
   a scientific negative.
 
@@ -1377,6 +1387,7 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-031` | Owner accepts the Q-013 conclusion and its necessary split of the two B-R quantity-matched meanings | Record DEC-031 and three stable, non-substitutable contrast identities for formation quantity, export mass, and complete-state/history matching | Resolves B-R Q-013 meaning and IDs only; I04 response binding and I06 exact constructions remain open |
 | `P2-I3-CHG-032` | Owner accepts the Q-015 composite-restoration and two-identity conclusion | Record DEC-032 and the manifest-coordinated exact-execution versus causal-continuation design, fail-closed composition, clean forks, and equal-input obligations | Resolves B-R I03 Q-015 design only; I06 exact finalization, conformance, calibration, execution, and results remain open |
 | `P2-I3-CHG-033` | Accepted pre-conformance decisions require one falsifiable B-R projection of `AE01-H-L03` | Construct and accept DEC-033 plus thirteen machine/narrative OPs, rung/control/restoration mappings, open outcomes, redirects, and conformance quarantine | Accepted; opens only conformance input-freeze construction, with no runtime or scientific effect |
+| `P2-I3-CHG-034` | DEC-033 opens bounded conformance-freeze construction and the owner accepts the reviewed result-neutral fixture plus later stronger-proof rule | Construct and accept DEC-034, an exact inactive machine freeze, 85-check zero-runtime validator, declared-provenance quarantine guard, interpretive report, and evidence-responsive extension boundary | Accepted and inactive pending clean source-anchor commit; no model, packet, runtime output, gate passage, calibration, execution, control outcome, or scientific result |
 
 ## 19. Evidence ledger
 
@@ -1407,6 +1418,7 @@ and evidence effect are retained.
 | `P2-I3-EV-020` | [Common comparison machine envelope](../contracts/p2-i3/i03-common-comparison-envelope.json) and [report](../reports/P2-I3-I03-common-comparison-envelope.md) | I03 staged comparison design | Prospective common scientific axes, producer-cost vector, sequential-development provenance, and Q-021 boundary only | Accepted under DEC-030; no conformance, calibration, execution, or scientific effect |
 | `P2-I3-EV-021` | [B-R contrast/restoration machine design](../contracts/p2-i3/i03-br-contrast-and-restoration-design.json) and [report](../reports/P2-I3-I03-BR-contrast-and-restoration-design.md) | I03 B-R design | Stable Q-013 contrast identities and Q-015 restoration/continuation obligations only | Accepted under DEC-031/032; I06 finalization and every runtime/scientific result remain open |
 | `P2-I3-EV-022` | [B-R operational-hypothesis machine contract](../contracts/p2-i3/i03-br-operational-hypotheses.json) and [subordinate record](../hypotheses/p2-i3-br-operational-hypotheses.md) | I03 B-R hypothesis projection | Thirteen falsifiable semantic OPs plus rung, control, restoration, redirect, and conformance handoffs | Accepted under DEC-033; no runtime or scientific effect |
+| `P2-I3-EV-023` | [B-R bounded-conformance input freeze](../contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json), [validator](../scripts/p2_i3_i03_br_freeze_validate.py), [quarantine guard](../scripts/p2_i3_conformance_quarantine.py), and [report](../reports/P2-I3-I03-BR-bounded-conformance-input-freeze.md) | I03 B-R conformance freeze | Exact source/call/interface/fixture/matrix/quarantine authority plus 85 zero-runtime checks | Accepted under DEC-034 and inactive until committed; no runtime or scientific effect exists |
 
 No selected realization, calibration, registration, runtime conformance,
 control, or scientific evidence exists yet for P2-I3. The N31 return adds
@@ -1450,9 +1462,10 @@ accepted semantic brief
 + DEC-031 resolves B-R Q-013 contrast identities
 + DEC-032 resolves B-R I03 Q-015 restoration design
 + DEC-033 operational-hypothesis projection accepted
++ DEC-034 bounded-conformance input freeze accepted and inactive
 != field realization or discriminator gate passed
 ```
 
-The next action is bounded conformance input-freeze construction and review.
-C.2 design and every
+The next boundary is the accepted-freeze source-anchor commit. No harness or
+runtime work begins before that commit. C.2 design and every
 calibration or scientific execution remain unauthorized.

@@ -1,0 +1,557 @@
+{
+  "artifact_id": "P2-I3-I03-BR-BOUNDED-CONFORMANCE-INPUT-FREEZE",
+  "artifact_version": "1.0.0",
+  "lane_id": "AE01-L03",
+  "branch_id": "P2-I3-BR",
+  "iteration_id": "P2-I3-I03",
+  "status": "accepted_inactive",
+  "constructed_at": "2026-07-19",
+  "accepted_at": "2026-07-19",
+  "decision_id": "P2-I3-DEC-034",
+  "runtime_authorized": false,
+  "scientific_evidence_effect": "none",
+  "purpose": "Freeze one deterministic, result-neutral implementation-conformance fixture for the accepted B-R lifecycle, encounter, restoration, control-addressability, and quarantine interfaces before any conformance runtime operation.",
+  "authority": {
+    "rcae_authority_source_anchor": "12763ba78bfe070cfd617c01666f0449727834a8",
+    "required_decision_ids": [
+      "P2-I3-DEC-017",
+      "P2-I3-DEC-020",
+      "P2-I3-DEC-025",
+      "P2-I3-DEC-026",
+      "P2-I3-DEC-027",
+      "P2-I3-DEC-028",
+      "P2-I3-DEC-029",
+      "P2-I3-DEC-030",
+      "P2-I3-DEC-031",
+      "P2-I3-DEC-032",
+      "P2-I3-DEC-033"
+    ],
+    "bound_rcae_artifacts": [
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i02-source-admission-manifest.json",
+        "sha256": "c1194085c6a55e783ce739f5a22a75e89b9eb1ab237f6bec3199853426ab343f",
+        "role": "admitted public source, callable, test, and producer-extension boundary"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-n31-return-admission.json",
+        "sha256": "17da521f45c7f4c6f1a01e2aba5b03e4fb9c8928b4899307073b1815c869719c",
+        "role": "bounded N31 return and B-R provider-contract admission"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-common-comparison-envelope.json",
+        "sha256": "f147e0fed453d0314fa074752a6ee4e74a864d15a0bbeefd5de11203c4cfcedd",
+        "role": "common scientific and producer-cost semantics"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-contrast-and-restoration-design.json",
+        "sha256": "b961c3bb69f7d4c0cf14a8d50d0929a68474e7a1b949013620cfda56dc92b253",
+        "role": "Q-013 contrast and Q-015 restoration design"
+      },
+      {
+        "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-operational-hypotheses.json",
+        "sha256": "858f3979c09ea4d984018b99e71f2286003d58d4dbb0007e0a949c197c124eaa",
+        "role": "accepted B-R operational meanings"
+      }
+    ],
+    "graph_repository": {
+      "repository_id": "graph-reflexive-coherence",
+      "local_root_environment_variable": "RCAE_PYGRC_ROOT",
+      "example_relative_value": "../graph-reflexive-coherence",
+      "required_revision": "565706f8b7647f6b7638b9afbe52372e170bf724",
+      "required_worktree_state": "clean",
+      "read_only_required": true,
+      "i02_admitted_provider_revision": "83e3a300426631ee4df71b661b67d4fcfdfed594",
+      "n31_source_transition_status": "protected_pygrc_runtime_sources_unchanged_at_merged_revision",
+      "n31_return_contract_path": "experiments/2026-07-N31-lgrc9v3-derived-decay-and-primitive-semantics/outputs/n31_i12_closeout_and_rcae_return_artifacts/n31_i12_B_R_reusable_contract.json",
+      "n31_return_contract_sha256": "bcbac46ceb2bc2ce9f42bbef6ab6f8aa8f160288fd6e40545ffec2bd689b0f29",
+      "n31_return_contract_output_digest": "7b8d171835eccf70df8debc0732eed0704867e1d7893ef955415d6c105e20873"
+    }
+  },
+  "environment": {
+    "python_invocation": ".venv/bin/python",
+    "python_version": "3.12.3",
+    "pythonhashseed": "0",
+    "pythondontwritebytecode": "1",
+    "required_packages": {
+      "jsonschema": "4.26.0",
+      "networkx": "3.6.1",
+      "PyYAML": "6.0.3",
+      "pygrc": "0.1"
+    },
+    "pygrc_import_rule": "PYTHONPATH must resolve from ${RCAE_PYGRC_ROOT}/src and the imported package must be inside that exact source tree",
+    "ambient_or_fallback_pygrc_allowed": false,
+    "network_required": false,
+    "randomness_used": false,
+    "seed": null
+  },
+  "bound_graph_sources": [
+    {
+      "path": "src/pygrc/core/storage.py",
+      "sha256": "a73d30238bc81dc3c366f04f3e8d5e8a266d0a683e7db88560196930d279c397",
+      "role": "public PortGraphBackend construction"
+    },
+    {
+      "path": "src/pygrc/models/__init__.py",
+      "sha256": "23768e181455f4e7eb68908cdac532464c063fa5eb4250c4d05537eca0dcaa70",
+      "role": "public PyGRC model exports"
+    },
+    {
+      "path": "src/pygrc/models/grc_9_state.py",
+      "sha256": "b3d979fe4bffbc86fe256f71ff4894c3da03fd4af706457a281f650242ca26b7",
+      "role": "public PortEdge construction"
+    },
+    {
+      "path": "src/pygrc/models/grc_9_v3_state.py",
+      "sha256": "4ab5ffcb95d69a0767b24d6c95277ba3619a5d477c4865cc0d31735a2377918e",
+      "role": "LGRC9V3 base node and state construction"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_packets.py",
+      "sha256": "14d99292e18e2fe34e0fd5c6a1f69051e82115a051d142f10792775e2321e58f",
+      "role": "native packet scheduling and conservative transition implementation"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_runtime.py",
+      "sha256": "55d05aa03a4cf62cb42f18753aa572119011b6c4424bf2051a7ed0f6c78932d4",
+      "role": "LGRC9V3 construction, event progression, packet operations, and persistence"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_runtime_state.py",
+      "sha256": "ef409403954749a45fbf444116a9a253b95b3e2d74a119006f1cbb364a83630c",
+      "role": "complete native runtime-state contract"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_restoration.py",
+      "sha256": "e7c6b143c08eb0bda210152aeb0f6b12e0efcb666268416404ed3b649dd46931",
+      "role": "public exact native restoration identities"
+    },
+    {
+      "path": "src/pygrc/models/lgrc_9_v3_timing.py",
+      "sha256": "3a8528da792ee57ea6a229cdf952af38a52c3f2689525cf12adf63a27a63983c",
+      "role": "public geometric, functional, and causal distance addressability"
+    }
+  ],
+  "required_public_calls": [
+    {
+      "symbol": "pygrc.core.PortGraphBackend",
+      "operation_class": "fixture_topology_construction",
+      "allowed_use": "construct the frozen synthetic role topology only"
+    },
+    {
+      "symbol": "pygrc.models.GRC9V3NodeState",
+      "operation_class": "fixture_state_construction",
+      "allowed_use": "construct initial node coherence values"
+    },
+    {
+      "symbol": "pygrc.models.GRC9V3State",
+      "operation_class": "fixture_state_construction",
+      "allowed_use": "construct the base state consumed by LGRC9V3"
+    },
+    {
+      "symbol": "pygrc.models.PortEdge",
+      "operation_class": "fixture_topology_construction",
+      "allowed_use": "construct frozen port-edge state"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.from_state",
+      "operation_class": "lgrc9v3_runtime_construction",
+      "allowed_use": "construct only the LGRC9V3 core substrate"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.get_state",
+      "operation_class": "declared_state_read",
+      "allowed_use": "read registered carrier coherence, packet/event state, and retained conformance projections"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.schedule_packet_departure",
+      "operation_class": "native_packet_request",
+      "allowed_use": "formation, B-R export, matched-mass control, and fixed encounter requests"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.step",
+      "operation_class": "native_event_progression",
+      "allowed_use": "process one frozen packet event and expose native refusal"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.run_event_queue",
+      "operation_class": "bounded_native_event_progression",
+      "allowed_use": "drain only the already bounded fixture queue"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.snapshot",
+      "operation_class": "native_snapshot",
+      "allowed_use": "construct exact composite state and reconstruction evidence"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.save",
+      "operation_class": "native_save",
+      "allowed_use": "write temporary conformance-only native snapshots"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.load",
+      "operation_class": "native_load",
+      "allowed_use": "load only after composite manifest validation"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.reset",
+      "operation_class": "native_reset",
+      "allowed_use": "paired native-plus-RCAE reset to the frozen baseline"
+    },
+    {
+      "symbol": "pygrc.models.lgrc9v3_restoration_identity_v2",
+      "operation_class": "native_identity_projection",
+      "allowed_use": "retain the exact native current-plus-reset identity"
+    },
+    {
+      "symbol": "pygrc.models.digest_lgrc9v3_restoration_identity_v2",
+      "operation_class": "native_identity_digest",
+      "allowed_use": "bind native components inside exact composite identities"
+    },
+    {
+      "symbol": "pygrc.models.compute_lgrc9v3_geometric_distances",
+      "operation_class": "distance_interface_addressability",
+      "allowed_use": "prove the admitted geometric-distance interface is callable without interpreting a scientific result"
+    },
+    {
+      "symbol": "pygrc.models.compute_lgrc9v3_functional_distances",
+      "operation_class": "distance_interface_addressability",
+      "allowed_use": "prove the admitted functional-distance interface is callable without interpreting a scientific result"
+    },
+    {
+      "symbol": "pygrc.models.compute_lgrc9v3_causal_distances",
+      "operation_class": "distance_interface_addressability",
+      "allowed_use": "prove the admitted causal-distance interface is callable without interpreting a scientific result"
+    }
+  ],
+  "blocked_public_calls": [
+    {
+      "symbol": "pygrc.models.GRC9V3.step",
+      "reason": "synchronous GRC9V3 execution cannot substitute for LGRC9V3"
+    },
+    {
+      "symbol": "pygrc.models.GRC9V3.apply_continuity",
+      "reason": "synchronous GRC9V3 relaxation cannot substitute for LGRC9V3"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.set_state",
+      "reason": "direct native state installation would bypass the frozen packet and composite-restoration interfaces"
+    },
+    {
+      "symbol": "pygrc.models.LGRC9V3.rebase_reset_baseline",
+      "reason": "the conformance reset baseline is immutable after construction"
+    }
+  ],
+  "rcae_owned_interfaces": {
+    "export_policy": {
+      "planned_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_runtime.py",
+      "inputs": [
+        "current coherence of the one frozen carrier binding",
+        "exact lifecycle receipt",
+        "frozen floor and cap",
+        "frozen source, destination, edge, route, and policy identities",
+        "exact predecessor composite identity"
+      ],
+      "outputs": [
+        "typed invalid, duplicate, eligible-zero, or eligible-positive transition",
+        "at most one exact native packet request",
+        "updated serializable policy state and audit receipt"
+      ],
+      "native_mutation_allowed": false,
+      "raw_history_read_allowed": false,
+      "destination_state_read_allowed": false,
+      "other_route_read_allowed": false,
+      "wall_clock_read_allowed": false,
+      "outcome_or_result_read_allowed": false
+    },
+    "blind_encounter_adapter": {
+      "planned_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_runtime.py",
+      "inputs": [
+        "immutable local opportunity",
+        "exact parent composite identity",
+        "branch-local structural source, target, and edge bindings"
+      ],
+      "outputs": [
+        "one exact native packet request or a structural validation refusal"
+      ],
+      "carrier_state_read_allowed": false,
+      "other_route_read_allowed": false,
+      "history_or_label_read_allowed": false,
+      "rank_or_outcome_read_allowed": false
+    },
+    "composite_restoration": {
+      "planned_path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_runtime.py",
+      "exact_identity_id": "P2-I3-BR-Q15-EXACT-COMPOSITE-RESTORATION-001",
+      "causal_projection_id": "P2-I3-BR-Q15-CAUSAL-CONTINUATION-PROJECTION-001",
+      "load_rule": "validate the complete manifest and every component before returning a runnable branch",
+      "reset_rule": "restore paired native and RCAE baselines without implicit rebase",
+      "cross_route_policy_or_branch_load_allowed": false
+    },
+    "quarantine_guard": {
+      "path": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_conformance_quarantine.py",
+      "role": "reject any conformance path, digest, fixture value, or observation imported into later calibration, registration-value, candidate, control-result, or scientific-result records"
+    }
+  },
+  "fixture": {
+    "fixture_id": "p2-i3-i03-br-result-neutral-conformance-v1",
+    "fixture_class": "synthetic_deterministic_implementation_conformance_only",
+    "fixture_namespace": "p2_i3_i03_conformance_only",
+    "values_may_be_reused_by_i04_i05_i06_or_i08": false,
+    "topology_may_be_promoted_without_new_registration": false,
+    "scientific_interpretation_allowed": false,
+    "dt": 1.0,
+    "causal_layer_mode": "packetized_fixed_topology",
+    "lgrc_runtime_level": "lgrc2",
+    "nodes": [
+      {"node_id": 0, "role": "route_a_source", "initial_coherence": 1.0},
+      {"node_id": 1, "role": "route_a_carrier", "initial_coherence": 0.1},
+      {"node_id": 2, "role": "route_a_reservoir", "initial_coherence": 0.0},
+      {"node_id": 3, "role": "route_a_continuation", "initial_coherence": 0.0},
+      {"node_id": 4, "role": "route_a_control_destination", "initial_coherence": 0.0},
+      {"node_id": 5, "role": "route_b_source", "initial_coherence": 1.0},
+      {"node_id": 6, "role": "route_b_carrier", "initial_coherence": 0.1},
+      {"node_id": 7, "role": "route_b_reservoir", "initial_coherence": 0.0},
+      {"node_id": 8, "role": "route_b_continuation", "initial_coherence": 0.0},
+      {"node_id": 9, "role": "route_b_control_destination", "initial_coherence": 0.0}
+    ],
+    "edges": [
+      {"edge_id": 0, "role": "route_a_formation", "source": 0, "target": 1, "delay": 1.0},
+      {"edge_id": 1, "role": "route_a_export", "source": 1, "target": 2, "delay": 1.0},
+      {"edge_id": 2, "role": "route_a_encounter", "source": 1, "target": 3, "delay": 1.0},
+      {"edge_id": 3, "role": "route_a_source_control", "source": 0, "target": 4, "delay": 1.0},
+      {"edge_id": 4, "role": "route_a_carrier_control", "source": 1, "target": 4, "delay": 1.0},
+      {"edge_id": 5, "role": "route_b_formation", "source": 5, "target": 6, "delay": 1.0},
+      {"edge_id": 6, "role": "route_b_export", "source": 6, "target": 7, "delay": 1.0},
+      {"edge_id": 7, "role": "route_b_encounter", "source": 6, "target": 8, "delay": 1.0},
+      {"edge_id": 8, "role": "route_b_source_control", "source": 5, "target": 9, "delay": 1.0},
+      {"edge_id": 9, "role": "route_b_carrier_control", "source": 6, "target": 9, "delay": 1.0}
+    ],
+    "fixture_only_values": {
+      "formation_event_amount": 0.2,
+      "formation_event_count": 2,
+      "one_pulse_quantity_match_amount": 0.4,
+      "export_floor": 0.4,
+      "export_cap": 0.1,
+      "encounter_probe_amount": 0.45,
+      "matched_export_mass": 0.1,
+      "absolute_float_tolerance": 1e-12,
+      "relative_float_tolerance": 0.0
+    },
+    "fixture_value_rationale": "Two equal formation requests make the repetition interface visible; one capped export moves the carrier to the fixture floor; the fixed probe is admitted before and refused after that export. This deliberate branch split tests operation and refusal wiring only and is prohibited from becoming a metric, threshold, topology, candidate expectation, or scientific result.",
+    "event_order": [
+      "two attributable formation departures and arrivals settle independently",
+      "formation stops and the exact composite checkpoint is retained",
+      "one exact lifecycle receipt is validated against its predecessor",
+      "eligible-positive policy transition reserves one export request",
+      "native carrier debit, transport, and reservoir credit settle",
+      "a second eligible receipt advances as eligible-zero without native mutation",
+      "independent clean branches schedule one fixed local encounter each",
+      "native LGRC9V3 admits or refuses without a route selector"
+    ]
+  },
+  "conformance_matrix": [
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-01",
+      "name": "runtime_and_operation_binding",
+      "requirements": [
+        "all required public symbols resolve callable from the exact graph source tree",
+        "all blocked calls remain unused",
+        "LGRC9V3 is the only executing substrate"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-02",
+      "name": "repeated_native_formation_and_persistence",
+      "requirements": [
+        "two distinct native formation transfers settle with exact lineage",
+        "each source debit equals packet amount equals carrier credit",
+        "the queue is empty at the later persistent checkpoint"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-03",
+      "name": "positive_export_and_conservative_settlement",
+      "requirements": [
+        "one exact eligible receipt produces one policy transition and one native request",
+        "carrier debit equals in-flight amount equals reservoir credit",
+        "global node-plus-packet coherence closes",
+        "the settled carrier does not cross the fixture export floor"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-04",
+      "name": "eligible_zero_invalid_and_duplicate_lifecycle",
+      "requirements": [
+        "eligible-zero consumes its receipt and advances only policy state",
+        "invalid receipt consumes nothing and preserves exact composite identity",
+        "duplicate consumed receipt refuses atomically and preserves exact composite identity",
+        "no second export may be pending before settlement"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-05",
+      "name": "fixed_local_native_encounter",
+      "requirements": [
+        "the blind adapter constructs the same role-matched request without carrier or other-route reads",
+        "one clean fixture branch is natively admitted",
+        "one clean fixture branch is natively refused for insufficient source coherence",
+        "refusal is exact-state neutral relative to the pre-step identity that already contains the scheduled request"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-06",
+      "name": "q013_contrast_addressability",
+      "requirements": [
+        "formation-quantity match has separate repeated and one-pulse constructors",
+        "export-mass match has separate candidate and conserved equal-source/carrier debit constructors",
+        "complete-state/history match can retain different audit histories with equal causal projections without treating equality as scientific continuation evidence"
+      ],
+      "contrast_ids": [
+        "P2-I3-BR-Q13-FORMATION-QUANTITY-MATCH-001",
+        "P2-I3-BR-Q13-EXPORT-MASS-MATCH-001",
+        "P2-I3-BR-Q13-COMPLETE-STATE-HISTORY-MATCH-001"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-07",
+      "name": "composite_save_load_reset_fork_and_replay",
+      "requirements": [
+        "original and loaded exact composites match",
+        "paired native-plus-policy reset returns to the frozen baseline without rebase",
+        "two forks start from one validated clean parent with distinct branch identities",
+        "equal input replay reproduces native events, lifecycle receipts, disposition, and causal projections over the bounded conformance horizon"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-08",
+      "name": "partial_stale_and_cross_bound_load_refusal",
+      "requirements": [
+        "missing component and digest tamper refuse before a runnable model is returned",
+        "wrong route, policy, opportunity, branch, or reset identity refuses before continuation",
+        "native-only or policy-only load is never exposed as a valid composite"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-09",
+      "name": "control_and_variation_interface_addressability",
+      "requirements": [
+        "relocation, role-preserving raw-ID permutation, source clamp, reservoir clamp, producer omission, false installation, and matched-mass intervention each have a distinct frozen request identity",
+        "geometric, functional, and causal distance interfaces are callable",
+        "no control disposition or variation direction is assigned"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-10",
+      "name": "forbidden_read_and_hidden_router_exclusion",
+      "requirements": [
+        "export policy receives one route-local carrier value rather than a model or global state object",
+        "encounter adapter receives structure only",
+        "no runtime function receives both route values, participant labels, expected outcomes, or a route ranking",
+        "paired requests execute on independent clean branches and comparison occurs only in retained conformance analysis"
+      ]
+    },
+    {
+      "cell_id": "P2-I3-I03-BR-CONF-11",
+      "name": "mechanical_fixture_quarantine",
+      "requirements": [
+        "conformance outputs use the dedicated p2-i3/conformance namespace",
+        "the quarantine guard rejects conformance paths, digests, fixture values, and observations from downstream calibration, registration-value, candidate, control-result, and scientific-result payloads",
+        "synthetic negative self-tests prove each prohibited consumer class is rejected"
+      ]
+    }
+  ],
+  "bounded_execution": {
+    "planned_runtime_module": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_runtime.py",
+    "planned_harness": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_conform.py",
+    "planned_runtime_binding_receipt": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/conformance/i03-br-runtime-binding-receipt.json",
+    "planned_output": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/conformance/i03-br-runtime-conformance.json",
+    "required_rcae_worktree_state_at_runtime": "clean_committed_source",
+    "binding_receipt_requirements": [
+      "exact RCAE HEAD and clean worktree",
+      "freeze, runtime module, harness, quarantine guard, and authority artifact SHA-256 digests",
+      "exact graph revision, clean graph worktree, graph source digests, and PyGRC import origin",
+      "interpreter, package versions, normalized command, attempt ceiling, and absent prior output",
+      "candidate, calibration, control-result, and scientific execution flags all false"
+    ],
+    "temporary_snapshot_scope": "one automatically removed temporary directory",
+    "max_native_queue_events_per_branch": 32,
+    "attempts": 1,
+    "retries": 0,
+    "parallelism": 1,
+    "network_allowed": false,
+    "external_repository_writes_allowed": false,
+    "candidate_execution": false,
+    "calibration_execution": false,
+    "scientific_control_execution": false,
+    "scientific_interpretation": false
+  },
+  "quarantine": {
+    "output_namespace_prefix": "experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/conformance/",
+    "artifact_kind_prefix": "p2_i3_i03_br_conformance_",
+    "forbidden_downstream_consumer_classes": [
+      "calibration_input",
+      "calibration_output",
+      "registration_value",
+      "candidate_input",
+      "candidate_output",
+      "control_outcome",
+      "scientific_result",
+      "terminal_classification"
+    ],
+    "forbidden_import_classes": [
+      "fixture topology or role IDs",
+      "fixture numeric values",
+      "fixture event times or counts",
+      "fixture observed admission or refusal",
+      "conformance output paths or digests",
+      "conformance-derived comparator, margin, direction, or threshold"
+    ],
+    "allowed_later_reference": "provenance-only reference that the accepted I03 conformance gate passed, without importing a path digest value observation or outcome into scientific inputs",
+    "mechanical_guard_required": true
+  },
+  "classification_rules": {
+    "all_cells_pass": "implementation interfaces are operationally expressible at this exact source and fixture; no OP is supported or refuted scientifically",
+    "public_binding_failure": "source or implementation blocker; never a negative L03 result",
+    "producer_interface_failure": "RCAE implementation blocker or missing-surface evidence; never a negative L03 result",
+    "native_operation_failure": "classify exact source/runtime mismatch and reopen the affected decision only if its accepted semantics cannot be represented",
+    "restoration_failure": "block I03 exit and every later scientific activity",
+    "quarantine_failure": "block conformance execution and later gates until mechanical rejection exists",
+    "unexpected_fixture_outcome": "implementation-conformance failure; fixture values may not be tuned into a scientific success"
+  },
+  "evidence_responsive_extension_rule": {
+    "stronger_structure_search_allowed": true,
+    "trigger": "conformance or later scientific results expose a stronger, cleaner, more native, more robust, or more discriminating structure worth testing",
+    "requirements": [
+      "retain this accepted fixture, implementation result, and interpretation as historical evidence",
+      "assign the stronger structure a new realization, freeze, execution, and artifact identity",
+      "state whether it is an alternative, extension, naturalization attempt, or new discriminator",
+      "rerun every affected comparison and control rather than transferring the earlier result",
+      "do not retune this fixture or reinterpret its outcome as if the later structure had run"
+    ],
+    "non_effect": "the possibility of later stronger proof does not weaken, block, or inflate the bounded claim established by the present structure"
+  },
+  "commands": {
+    "local_runtime_root_setup": "export RCAE_PYGRC_ROOT=../graph-reflexive-coherence",
+    "validate_freeze": "env RCAE_PYGRC_ROOT=../graph-reflexive-coherence .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_freeze_validate.py --graph-root ../graph-reflexive-coherence",
+    "planned_conformance_after_acceptance": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=${RCAE_PYGRC_ROOT}/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_conform.py --graph-root ${RCAE_PYGRC_ROOT} --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json --output experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/conformance/i03-br-runtime-conformance.json",
+    "planned_reconstruction_after_execution": "env PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0 PYTHONPATH=${RCAE_PYGRC_ROOT}/src .venv/bin/python -B experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i03_br_conform.py --graph-root ${RCAE_PYGRC_ROOT} --freeze experiments/2026-07-AE01-post-n30-demand-composition-atlas/contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json --output ${TMPDIR}/p2-i3-i03-br-runtime-conformance.reconstructed.json"
+  },
+  "review_boundary": {
+    "freeze_acceptance_required_before_harness_construction": true,
+    "harness_construction_authorized_by_decision": true,
+    "harness_construction_currently_open": false,
+    "runtime_execution_authorized": false,
+    "next_required_boundary": "commit this accepted freeze as the clean source anchor before harness construction and runtime execution",
+    "accepted_scope": "construction of the exact runtime module, harness, and source-bound execution receipt followed by the single bounded conformance run",
+    "acceptance_does_not_open": "I04 calibration preregistration, calibration, I06 registration, candidate execution, control outcomes, or any scientific claim"
+  },
+  "reopening_conditions": [
+    "a required public call is not callable at the exact source revision",
+    "the B-R producer needs a forbidden input or must mutate native state directly",
+    "the blind encounter cannot be constructed without a field read or route selector",
+    "one of the three Q-013 contrast interfaces is not addressable without conflating its meaning",
+    "the Q-015 composite cannot fail closed or reproduce equal-input continuation",
+    "native refusal is not atomic relative to the already-scheduled request",
+    "mechanical quarantine cannot prevent conformance leakage into later scientific records",
+    "new graph evidence changes the admitted public or B-R contract boundary"
+  ]
+}

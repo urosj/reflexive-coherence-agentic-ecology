@@ -87,6 +87,16 @@ Contract completeness, schema validity, and registry consistency are not
 positive atlas evidence. Review R2 assigned `AE01-C2` for the accepted Phase 1
 contract; no lane or higher scientific rung is assigned.
 
+## P2-I3 B-R bounded-conformance freeze
+
+`p2-i3/i03-br-bounded-conformance-input-freeze.json` is the accepted inactive
+DEC-034 authority. It binds exact sources and public calls, a result-neutral two-route
+fixture, eleven conformance cells, narrow RCAE ownership, Q-013/Q-015
+addressability, and mechanical downstream quarantine. Its 85-check validation
+performs no LGRC model operation and creates no conformance output. The freeze
+cannot supply later scientific values. Harness construction and runtime wait
+for the accepted freeze's clean source-anchor commit.
+
 ## P2-I1 registration materialization
 
 `p2-i1/registration-records/` applies the existing `1.1.0` record vocabulary

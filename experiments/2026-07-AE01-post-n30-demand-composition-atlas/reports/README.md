@@ -73,6 +73,12 @@ Phase 2 gate reviews:
   source transitions, producer boundary, LGRC9V3-only core substrate,
   comparative-only GRC9V3 role, and reconstruction. DEC-019 passes the
   source-admission gate without selecting a realization.
+- [P2-I3 I03 B-R bounded-conformance input freeze](P2-I3-I03-BR-bounded-conformance-input-freeze.md)
+  explains accepted DEC-034's exact inactive source/call binding, result-
+  neutral two-route fixture, eleven-cell matrix, narrow producer ownership,
+  composite restoration/refusal boundary, and declared-provenance quarantine.
+  Its 85 checks run no LGRC model operation and authorize no runtime or
+  scientific evidence.
 - [P2-I3 Q-005 decay interpretation study](P2-I3-Q005-decay-interpretation-study.md)
   distinguishes release-efficacy attenuation, coherence-conserving source
   leakage, and route-susceptibility relaxation. DEC-023 consumes it only as
