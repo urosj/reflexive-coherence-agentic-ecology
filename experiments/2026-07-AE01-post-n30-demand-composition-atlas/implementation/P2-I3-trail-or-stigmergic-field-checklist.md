@@ -20,7 +20,11 @@ half-unit arithmetic construction; inactive I05 package `1.0.2` is retained at
 separate one-invocation launch authorization is
 materialized under explicit owner direction; the sole invocation and
 independent 49-check reconstruction pass with shared `delta=1e-12`; the owner
-accepts final I05 and `P2-I3-CAL-GATE` is passed
+accepts final I05 and `P2-I3-CAL-GATE` is passed; DEC-042 resolves B-R Q-014
+and DEC-043 resolves B-R Q-015 as exact I06 construction authority; DEC-044
+resolves B-R Q-016 exact control/evidence authority; DEC-045 resolves B-R
+Q-017 resource, artifact, and producer-cost authority; DEC-046 resolves B-R
+Q-018 attempt, retry, failure, dependency, and cycle-closure authority
 
 **Iteration:** `P2-I3`
 
@@ -34,7 +38,10 @@ preregistration is accepted and complete; inactive `P2-I3-I05` invocation
 freeze is accepted, retained, and clean-commit validated; separate launch
 authorization is consumed successfully; calibration outputs and reconstruction
 are owner-accepted and complete; `P2-I3-I06` exact implementation registration
-is opened but not begun
+is active, with Q-014/Q-015 resolved through accepted `P2-I3-DEC-042` and
+`P2-I3-DEC-043`, Q-016 resolved through `P2-I3-DEC-044`, and Q-017 resolved
+through `P2-I3-DEC-045`; Q-018 is resolved through `P2-I3-DEC-046`; exact
+machine registration is next
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
@@ -42,8 +49,9 @@ N31 return/provider-option transition, source-anchored conformance-input
 authority, quarantined implementation-conformance evidence, and accepted I04
 response/comparator/null/control-governance meaning plus candidate-blind
 machine-readiness evidence, plus candidate-blind numeric-resolution evidence
-only; no provider selection,
-registration, scientific execution, control outcome, or P2-I3 ecology result
+and exact B-R candidate/restoration/control/resource/attempt authority through
+DEC-042/046 only; no complete registration, provider selection, scientific
+execution, control outcome, or P2-I3 ecology result
 
 **Semantic authority:**
 [accepted P2-I3 brief](P2-I3-trail-or-stigmergic-field-brief.md)
@@ -166,7 +174,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Passed | DEC-035 accepts exact B-R operational conformance with corrected ownership and typed closure; C.2 remains explicitly inactive until B-R closeout |
 | `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Passed | Owner accepted corrected package `1.0.1` on 2026-07-19 after 22 focused tests, 485 static checks, and byte-exact non-destructive reconstruction; opens only construction of a separate inactive I05 invocation freeze |
 | `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Passed | Owner accepts the sole successful attempt at launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`; ten zero margins yield shared `delta=1e-12`; receipt and 49/49 byte-exact reconstruction checks pass; opens I06 registration only |
-| `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Requires passed CAL-GATE and `P2-I3-Q-014` through `Q-018` |
+| `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Q-014/Q-018 resolved by DEC-042/046; requires complete machine registration and review |
 | `P2-I3-EXEC-FREEZE` | One exact inactive candidate cycle is accepted and then explicitly activated | Unopened | Requires passed REG-GATE, clean committed sources, runtime identity, and `P2-I3-Q-019` |
 | `P2-I3-EXEC-GATE` | The finite frozen matrix completes or closes validly incomplete without interpretation inflation | Unopened | Candidate execution is unauthorized |
 | `P2-I3-CONTROL-GATE` | I09 scientific comparisons and pre-terminal guards resolve in a compact index; terminal guards are armed | Unopened | Requires terminal execution records |
@@ -229,7 +237,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-I03` | Route-scoped field realization, dynamics, causal factorization, operational hypotheses, bounded runtime conformance, and common comparison envelope | Passed source-admission and N31 return gates | B-R complete and accepted; C.2 queued after B-R branch closeout | B-R discriminator gate passed; no calibration or candidate evidence |
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Complete and owner-accepted | `P2-I3-CAL-PRE-GATE=passed`; opens only inactive I05 invocation-freeze construction, with no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Complete and owner-accepted | Permanent attempt consumed once; five null cases/15 responses/five triplets/ten zero margins; shared `delta=1e-12`; successful receipt and 49/49 reconstruction checks; CAL-GATE passed |
-| `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Opened, not begun | May construct exact registration and pass `P2-I3-REG-GATE`; no candidate execution |
+| `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Active; Q-014/Q-018 resolved, machine materialization next | May construct exact registration and pass `P2-I3-REG-GATE`; no candidate execution |
 | `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Passed REG-GATE and clean committed source anchor | Unopened | May pass/consume `P2-I3-EXEC-FREEZE`; no operation before activation |
 | `P2-I3-I08` | Frozen finite matrix execution | Consumed active execution freeze | Unopened | May pass or validly close `P2-I3-EXEC-GATE`; no terminal interpretation |
 | `P2-I3-I09` | Compact common and lane-control resolution | Retained I08 terminals | Unopened | May pass `P2-I3-CONTROL-GATE` |
@@ -1619,17 +1627,20 @@ execution.
 
 **Evidence effect:** exact candidate/control authority only.
 
-- [ ] Resolve exact topology, values, schedules, times, costs, seeds, and
-  transfer/variation `P2-I3-Q-014`.
-- [ ] Finalize restoration, reset, branch, and continuation identity
-  `P2-I3-Q-015`.
-- [ ] Preserve the Q-015 handoff: I03 owns the restoration and
+- [x] Resolve exact topology, values, schedules, times, costs, seeds, and
+  transfer/variation `P2-I3-Q-014` through accepted `P2-I3-DEC-042`.
+- [x] Finalize restoration, reset, branch, and continuation identity
+  `P2-I3-Q-015` through accepted `P2-I3-DEC-043`.
+- [x] Preserve the Q-015 handoff: I03 owns the restoration and
   equal-continuation design obligations; I06 binds their exact fields,
   operations, policies, and identities.
-- [ ] Finalize control evidence bindings `P2-I3-Q-016`.
-- [ ] Resolve resources and artifact envelope `P2-I3-Q-017`.
-- [ ] Resolve attempts, retries, failure classes, and one-shot rules
-  `P2-I3-Q-018`.
+- [x] Finalize control evidence bindings `P2-I3-Q-016` through accepted
+  `P2-I3-DEC-044`.
+- [x] Resolve resources, artifact retention, and producer-cost envelope
+  `P2-I3-Q-017` through accepted `P2-I3-DEC-045`.
+- [x] Resolve attempts, retries, failure classes, dependency propagation,
+  supervisor resumption, and one-shot rules `P2-I3-Q-018` through accepted
+  `P2-I3-DEC-046`.
 - [ ] Register the exact two-route topology and baseline matching obligations.
 - [ ] Register every field parameter, equation input, update order, dynamic,
   formation cost, traversal input, and observation window.
@@ -1652,6 +1663,304 @@ execution.
 - [ ] Independently review the bundle for exact completeness, not for new
   hypothetical exploit resistance.
 - [ ] Owner accepts registration and passes `P2-I3-REG-GATE`.
+
+### 11.1 Accepted Q-014 candidate-design boundary
+
+- [x] Freeze two matched native corridors sharing only invariant native origin
+  `O` and target `T`; prohibit interior cross-route edges, shared-boundary
+  reads or packets, reverse reservoir/control transfers, and causal inference
+  from annotation-only paths through the shared boundaries.
+- [x] Freeze the exact dyadic baseline: route-local `C(s)=7/8`, `C(m)=3/16`,
+  `C(x)=1/4`, `C(d)=C(z_s)=C(z_m)=1/16`; shared `C(O)=C(T)=1/2`;
+  `C_floor=3/16`, `q_cap=3/32`, and `q_probe=15/64`.
+- [x] Freeze focal/reference semantics. The reference always receives matched
+  non-field activity diversion plus lifecycle/probe opportunities; the focal
+  receives exact DEC-038 W diversion, O neutralization, or E enabled export.
+  Keep focal/reference exchange as a separate DEC-044 control.
+- [x] Freeze repeated formation as three `3/32` transfers and its one-pulse
+  quantity comparison as one `9/32` transfer. Scientific formation cost is
+  native source-coherence debit `9/32`; matched non-field activity has the
+  same debit but no valid formation claim.
+- [x] Keep event cardinality, producer calls, scheduler work, bookkeeping,
+  runtime, and computational cost outside scientific coherence-cost equality;
+  Q-017 owns those resource observations.
+- [x] Freeze W/O/E carrier identities, three positive E exports, E3 floor,
+  E4 eligible zero, primary E2 encounter, exact target margins
+  `(-3/64,3/64,15/64)`, and construction targets `m_trace=2`,
+  `m_export=4/5` without treating them as evidence or pass thresholds.
+- [x] Retain raw coherence/margin deltas as the weakening-trajectory readout.
+  Record that `m_trace=2` is boundary centering, not maximal mechanism
+  strength, and normalized values are not a monotonic physical decay scale.
+- [x] Freeze system-internal formation times `0,4,8`, lifecycle opportunities
+  `12,16,20,24`, terminal encounter branches `j1=16`, primary `j2=20`, and
+  floor `j3=28`, with the exact role-order scheduler projection and no
+  wall-clock or raw-ID-dependent tie resolution.
+- [x] Require native encounter probes at j1, j2, and post-E4 j3 from clean
+  terminal forks; retain E3 separately as an unprobed carrier checkpoint and
+  forbid post-probe lifecycle evidence.
+- [x] Freeze `tau=1` and `tau=2` as order-preserving internal-delay profiles
+  only. They do not test overlap, congestion, order change, competition, or
+  unrestricted timescale robustness.
+- [x] Freeze deterministic realization IDs `101`, `211`, and `307` as retained
+  raw node/edge-ID permutations only: no randomness, sampling claim,
+  cross-realization scalar average, seed-dependent order, or producer raw-ID
+  read.
+- [x] Count exactly 18 top-level core configuration cells. DEC-044 supplies
+  the exact control and branch expansion; DEC-045 supplies resource,
+  artifact, and producer-cost authority; DEC-046 supplies attempt, retry, and
+  failure authority.
+- [x] Preserve the I03/I05 quarantine: no conformance fixture value, topology,
+  outcome, margin, or digest and no I05 half-unit carrier/probe construction is
+  a candidate input. I05 contributes only accepted shared numeric resolution.
+
+DEC-042 supplies candidate-design authority, not the complete registration.
+All remaining unchecked I06 items require exact machine materialization before
+REG-GATE review.
+
+### 11.2 Accepted Q-015 restoration and continuation boundary
+
+- [x] Freeze one manifest-coordinated eight-file checkpoint bundle:
+  `native.json`, `native-identity-v2.json`, `policy.json`, `execution.json`,
+  `measurement.json`, `reset.json`, `audit.json`, and `manifest.json`.
+- [x] Keep exact composite evidence identity separate from the closed causal
+  continuation projection; reject rather than silently omit unknown
+  continuation-relevant fields.
+- [x] Distinguish exact retained native bytes, native restoration-v2 semantic
+  identity after load, and any later resave bytes. Do not require byte equality
+  from a serializer that has not been established as canonical.
+- [x] Factor six immutable profile-by-realization substrate baselines from 18
+  immutable substrate-by-W/O/E cell initialization envelopes.
+- [x] Require a reset to reproduce native restoration-v2 identity, causal
+  projection, and the cell semantic envelope while issuing fresh branch/audit
+  lineage and therefore a distinct exact bundle identity.
+- [x] Freeze a non-circular digest graph from component bytes through file and
+  semantic digests to reset identity, canonical manifest payload, and detached
+  exact composite digest.
+- [x] Separate raw-ID/file/lineage integrity validation from continuation. The
+  latter receives only a validated normalized semantic payload and cannot
+  inspect raw IDs or audit identities.
+- [x] Retain `semantic_branch_key` separately from fresh
+  `branch_instance_id`.
+- [x] Bind each of the 18 cells to one unprobed trajectory plus six terminal
+  probe forks: 126 core branch instances before the DEC-044 control expansion.
+- [x] Bind the complete-state/history discriminator to repeated-formation E
+  versus one-pulse E with identical later arm semantics, roles, profile,
+  realization, receipts, probes, measurement calls, and named continuation
+  horizon.
+- [x] Freeze exact primary and floor continuation horizons; numeric `delta`
+  may annotate derived responses but cannot weaken restoration equality.
+- [x] Prohibit event padding and native counter rewriting. A verified native
+  checkpoint mismatch makes the discriminator unavailable under the current
+  substrate surface; it is not negative L03 evidence.
+- [x] Require atomic refusal to preserve native and B-R mechanism state while
+  allowing only a typed terminal evidence transition; the full exact bundle
+  identity may consequently change and the refused branch cannot continue.
+
+DEC-043 supplies exact construction semantics, not their materialization.
+Schemas, bundle instances, validators, reconstruction, and REG-GATE review
+remain I06 work. DEC-045 resolves Q-017 and DEC-046 later resolves Q-018; no
+execution or result authority follows.
+
+### 11.3 Accepted Q-016 control and evidence-binding boundary
+
+- [x] Freeze six substrate bases, 18 core cells, 72 added control cells, and
+  exactly 90 top-level scientific configurations.
+- [x] Freeze exactly 378 scientific branch instances: 126 core, 60 across
+  formation/history and causal-projection false trace, 180 across the other
+  added configurations, and 12 fresh-nondepositor probes.
+- [x] Freeze 72 quarantined composite-integrity fault cases as 18 cell
+  envelopes by invalid load/reset/branch/continuation request. Keep them
+  distinct from native scientific field refusal.
+- [x] Retain all 42 accepted I04 control-leg identities and 14 supplemental
+  discriminator/validity/claim bindings; shared artifacts never copy a
+  disposition between legs.
+- [x] Require the full DEC-038 semantic pairing key, including clean parent,
+  causal projection, route role, request, timing, future schedule, and
+  observation boundary. Only prospectively declared intervention fields may
+  differ.
+- [x] Add intervention/held-fixed field IDs, pairing exemption, scientific or
+  guard class, minimum artifact count, and completion rule to every leg.
+- [x] Bind repeated versus one-pulse formation, full W/O/E role exchange,
+  current-state relocation, two false-trace levels, equal-carrier clamp,
+  reservoir clamp, export-mass/organization, export-policy omission, and
+  lifecycle-schedule omission as non-substitutable families.
+- [x] Define relocation as moving current mutable route-local mechanism state
+  with regenerated destination bindings while roles, participants, future
+  inputs, global schedule meaning, and shared boundaries remain fixed.
+- [x] Require the causal-projection false trace to preserve native source
+  debit and every causal field while replacing only proven-noncausal
+  formation provenance and cost classification. It cannot satisfy OP-01.
+- [x] Keep carrier-matched false trace weaker: matching `C(m)` and encounter
+  conditions cannot answer complete-state/history sufficiency.
+- [x] Keep fresh-nondepositor evidence conditional for the stronger
+  stigmergic tag and never mandatory for the trail tag.
+- [x] Apply exact conservation, restoration, and causal-projection equality;
+  numeric `delta` applies only to derived response comparisons.
+- [x] Retain every profile/realization outcome without scalar averaging or an
+  all-six boolean; narrow, mixed, counterdirectional, or unavailable evidence
+  receives its DEC-040 classification.
+- [x] Bind native field-limited refusal separately: the scheduled request is
+  already in the pre-step identity, insufficient coherence leaves the full
+  native identity unchanged, and replay from the same clean parent is exact.
+
+DEC-044 resolves Q-016 as construction and evidence-binding authority only.
+It does not materialize the registry, execute any branch or fault case, assign
+a control result, or pass REG-GATE. DEC-045 resolves Q-017 and DEC-046 later
+resolves Q-018.
+
+### 11.4 Accepted Q-017 resource, artifact, and producer-cost boundary
+
+- [x] Freeze one local CPU-only machine, no accelerator, no network, no
+  distributed execution, and scientific-child parallelism exactly one.
+- [x] Freeze at most one supervisor and one fresh active governed child; no
+  worker or candidate-state reuse. Bind `.venv` Python `-B`, all registered
+  numerical thread variables to `1`, `PYTHONHASHSEED=0`, and
+  `PYTHONDONTWRITEBYTECODE=1`.
+- [x] Freeze 450 primary governed child starts: 378 scientific branches plus
+  72 quarantined integrity cases. Exclude builders, validators, supervisor,
+  aggregation, reconstruction, and any later Q-018-authorized cycle.
+- [x] Assign every case prospectively to exactly one immutable class:
+  `probe_only`, `standard_trajectory`,
+  `complex_construction_or_comparison`, or `integrity_fault`. Derive the class
+  only from registered event/load/bundle/validation counts and exact artifact
+  obligations, never outcomes, margins, dispositions, or elapsed candidate
+  runtime.
+- [x] Require candidate-free timing characterization of startup, inert load,
+  fixed native-event counts, serialization, schema validation, and
+  reconstruction reads. I06 freezes environment, repetitions, raw monotonic
+  observations, coefficients, class minima, safety factor, all 450 numeric
+  case ceilings, and assignment digest before REG-GATE.
+- [x] Retain 180 seconds per scientific child, 60 seconds per integrity child,
+  600 seconds per registration command, 1,800 seconds per aggregation or
+  reconstruction command, and 30 campaign hours as outer fail-safes. Derive
+  the lower-or-equal exact campaign ceiling from the complete class inventory,
+  aggregation allowance, and frozen overhead.
+- [x] Bind timeout to the full process group: graceful termination, one exact
+  10-second grace interval, forced descendant termination, retained logs and
+  resource receipt, typed affected scope, `infrastructure_timeout`, and no
+  scientific disposition.
+- [x] Prohibit experiment-imposed address-space/RSS caps. Require host,
+  available/swap/cgroup memory, supervisor/child/process-tree peak RSS,
+  exit/signal, and available OOM evidence; memory failure remains
+  infrastructure-only and cannot adapt the matrix.
+- [x] Separate logical artifact, physical blob, temporary work, and captured
+  log bytes. Apply the 8 GiB campaign ceiling to unique physical blobs plus
+  active temporary bytes plus retained logs; derive and freeze the exact
+  logical maximum from the I06 registry.
+- [x] Freeze 512 MiB per generated file and 16 MiB independently for each
+  child stdout/stderr. Overflow terminates and records a typed infrastructure
+  failure; silent truncation, overwrite, deletion, or continuation is
+  prohibited.
+- [x] Require exclusive temporary-file construction, validation before atomic
+  rename, prospective per-child disk budgets, and bounded-incomplete closure
+  when the next child cannot fit.
+- [x] Keep exact artifact obligations independent of execution class. Class-
+  specific prospective reservations cannot remove an artifact, and the common
+  16 MiB stream and 512 MiB file limits remain outer safety ceilings.
+- [x] Permit deduplication only by SHA-256 identity of exact bytes. Require a
+  write-once immutable content store, rehash-before-use, no governed garbage
+  collection, and byte-exact reconstruction of all eight logical checkpoint
+  components.
+- [x] Preserve existing 1 MiB individual and 10 MiB selected-set retention
+  review boundaries; any local-only artifact remains exactly reconstructable
+  with command, input, source/environment, digest, size, resource, and
+  verification metadata.
+- [x] Freeze one full preflight and dependency schedule: validate all 450
+  entries before execution, construct immutable shared components once, keep
+  integrity cases in a separate fixed block, order scientific children by
+  substrate/checkpoint dependency, load only rehashed immutable blobs, and
+  finish with one validated aggregate. No mutable cross-child state or
+  result-responsive reordering is permitted.
+- [x] Freeze a pre-execution producer inventory under the accepted
+  `contract_required > rcae_ecology_required > evidence_only` precedence,
+  including expected formulas/counts for all 90/378/72 populations and the
+  six unsummed dimensions.
+- [x] Require separate IDs for causal restoration and evidence-only
+  restoration verification. I08 records expected-versus-realized causal,
+  setup, observation, validation/reconstruction, process, time, RSS, byte,
+  and artifact counts without double-counting or scalar winner selection.
+- [x] Treat every resource ceiling as an operational boundary, never a
+  scientific threshold. Pre-execution infeasibility requires a retained
+  DEC-045 revision; post-start changes require a new Q-018-authorized cycle
+  and complete affected-comparison rerun without favorable-branch selection.
+
+DEC-045 supplies exact registration and derivation authority only. I06 must
+still materialize the candidate-free characterization, class assignments,
+numeric case/campaign and logical maxima, fixed schedule, closed policies,
+receipts, budgets, producer inventory, expected-count expansion, content-store
+rules, and validators. It creates no execution authority, resource
+observation, producer result, or scientific evidence. DEC-046 now resolves
+Q-018; exact machine materialization is next.
+
+### 11.5 Accepted Q-018 attempt, failure, and closure boundary
+
+- [x] Freeze 450 primary case-attempt slots, one primary attempt per case,
+  zero scientific retries, and at most four class-scoped pre-scientific retry
+  tokens for a maximum of 454 governed child starts.
+- [x] Allocate at most one token per nonempty DEC-045 execution class to the
+  first retry-eligible failure in frozen schedule order. The permanent token
+  cannot move to another case, and attempt-2 runs in the immediate registered
+  slot before dependents.
+- [x] Require one permanent campaign claim to consume EXEC-FREEZE and one
+  permanent case claim before every child. Claims are externally owned,
+  exclusive, durably flushed, immutable, and never reused or deleted.
+- [x] Permit one bounded external-supervisor resume without consuming a case
+  attempt or retry token, resetting a budget, or changing schedule. Resume
+  requires no active child or unresolved case claim, a complete ledger,
+  unchanged host boot/authority/environment/worktree, consistent paths, and
+  an unused resume claim.
+- [x] Freeze P0-P7 attempt phases from durable claim through terminal receipt.
+  Restoration of an immutable parent remains preparation; failed restoration
+  identity is invalid execution.
+- [x] Require a supervisor-owned one-shot P5 dispatch authorization before the
+  first case-specific request, mutation, observation, or malformed integrity
+  dispatch. P5 authorization consumes the scientific opportunity even if the
+  child later fails.
+- [x] Allow same-cycle retry only from a complete externally attested failure
+  at or before P4 with no P5 authorization and no scientific/control/integrity
+  artifact. Missing or contradictory phase evidence is non-retryable
+  `unknown_boundary_failure`.
+- [x] Freeze the token transaction: validate attempt-1 failure and absence,
+  allocate and flush token, create and flush attempt-2 claim, then start the
+  byte-identical retry with fresh lineage and paths.
+- [x] Admit successful attempt-2 only through one final case-resolution record
+  binding the non-scientific attempt-1 failure, token, admitted attempt, valid
+  attempt-2 terminal, and byte-identical pairing semantics. Never average or
+  select between attempt artifacts.
+- [x] Freeze final statuses: `valid_terminal`,
+  `attested_pre_candidate_infrastructure_failure`,
+  `post_candidate_infrastructure_failure`, `invalid_execution`,
+  `unknown_boundary_failure`, `preclaim_failure`, `blocked_dependency`,
+  `not_started_campaign_stop`, and `authority_breach`.
+- [x] Retain attempt status separately from final case resolution. A successful
+  attempt-2 may resolve the case as `valid_terminal` only while preserving the
+  attempt-1 infrastructure failure and admitting exactly one attempt.
+- [x] Keep native field-limited refusal, expected composite-integrity refusal,
+  and registered missing-surface outcomes as valid typed terminals rather than
+  retryable infrastructure failures.
+- [x] Require a complete 450-case dependency DAG, immutable parent and shared-
+  baseline bindings, comparison/control-family closure, and prospectively
+  frozen failure-to-scope propagation table. Observed failures cannot choose
+  their scope retrospectively.
+- [x] Regenerate retry time from the maximum frozen case ceiling in every
+  nonempty class plus its 10-second termination grace; record the current
+  640-second outer projection but derive rather than hard-code it. Add
+  candidate-free retry-administration time separately.
+- [x] Reserve incremental retry disk for token, attempt-2 claim/phases/logs/
+  residue/outputs/receipt, and final resolution while retaining all attempt-1
+  failure bytes.
+- [x] Separate terminal-ledger completeness from scientific completeness and
+  close with strict precedence `failed_closed > invalid > bounded_incomplete
+  > complete`.
+- [x] Require new registration and activation for any correction after the
+  campaign claim, preserve the prior cycle, and rerun every affected
+  comparison closure without favorable cross-cycle selection.
+
+DEC-046 supplies exact registration authority only. I06 must still materialize
+all primary/retry slots, claims, resume transaction, phase and P5 protocol,
+dependency DAG, propagation rows, reserves, terminal/case-resolution records,
+and cycle validators. It passes no gate and runs no child. Exact machine
+registration is next.
 
 ## 12. `P2-I3-I07` — Candidate-cycle execution freeze
 
@@ -1882,10 +2191,11 @@ from appearing earlier than its evidence permits.
 | `P2-I3-Q-011` | I04 comparator and estimator | Resolved by DEC-038 as exact W/O/E arms with separate trace and export relations |
 | `P2-I3-Q-012` | I04 candidate-blind matched-null calibration | Resolved by DEC-039 as one shared exact-null calibration plus non-delta conformance panels |
 | `P2-I3-Q-013` | I03 assigns separate stable identities; I04 binds their measurement semantics | B-R resolved by DEC-031 as formation-quantity, export-mass, and complete-state/history contrasts; C.2 remains inactive |
-| `P2-I3-Q-014` | I06 exact numeric and topology registration | Open; blocks registration |
-| `P2-I3-Q-015` | I03 fixes design obligations; I06 finalizes exact restoration and continuation identity | B-R I03 design resolved by DEC-032; exact I06 finalization remains open and blocks registration |
-| `P2-I3-Q-016` | I04 control governance; I06 exact evidence bindings | B-R applicability/evidence meaning and I04 machine projection resolved by DEC-040; exact I06 bindings remain; C.2 independently unresolved |
-| `P2-I3-Q-017`–`P2-I3-Q-018` | I06/I07 resource, attempt, retry, failure, and execution boundaries as declared in the decision record | Open; block registration/execution freeze |
+| `P2-I3-Q-014` | I06 exact numeric and topology registration | Resolved for B-R by DEC-042; exact machine materialization remains I06 work |
+| `P2-I3-Q-015` | I03 fixes design obligations; I06 finalizes exact restoration and continuation identity | B-R resolved by DEC-032 plus exact DEC-043 finalization authority; machine materialization remains I06 work |
+| `P2-I3-Q-016` | I04 control governance; I06 exact evidence bindings | B-R resolved by DEC-040 meaning and DEC-044 exact construction authority; machine materialization remains I06 work; C.2 independently unresolved |
+| `P2-I3-Q-017` | I06 resource, artifact-retention, and producer-cost envelope | Resolved for B-R by DEC-045; exact materialization and logical-ceiling derivation remain I06 work |
+| `P2-I3-Q-018` | I06/I07 attempt, retry, failure, dependency, resumption, and cycle-closure boundaries | Resolved for B-R by DEC-046; exact machine materialization remains I06 work |
 | `P2-I3-Q-019` | I07 execution freeze | Open; blocks candidate execution |
 | `P2-I3-Q-020` | Post-core appendix decision | Open; no core blocker |
 | `P2-I3-Q-021` | Post-branch comparison and lane retention decision | Inactive until B-R and C.2 branch closeouts; blocks lane terminal and promotion |
@@ -1977,6 +2287,12 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-051` | Owner directs I05 to proceed through retained output and reconstruction while reserving final CAL-GATE acceptance | Materialize one separate schema-validated launch authorization over the accepted freeze/source/environment/command/path envelope; preserve runtime-supplied exact launch HEAD, one attempt, zero retries, and candidate-execution prohibition | Complete as inactive launch authority only; commit and exact clean preflight precede irreversible claim creation, and no calibration or scientific effect exists yet |
 | `P2-I3-CHG-052` | Committed launch authority and exact clean preflight permit the sole governed candidate-blind calibration | Consume the permanent claim once; run one builder invocation; retain five null cases, calibration, metric sheet, receipt, and digests; independently validate and reconstruct without rerun; stop before owner acceptance | Complete through pre-acceptance I05; shared `delta=1e-12` is numeric-only evidence, 49/49 reconstruction checks pass, and CAL-GATE remains pending owner acceptance |
 | `P2-I3-CHG-053` | Owner final disposition accepts the complete I05 result and passes CAL-GATE | Bind launch HEAD, activation, claim, receipt, three governed outputs, result validation, shared `delta`, and interpretation ceiling in one acceptance record; open I06 registration only | Complete; I05 is accepted and complete, CAL-GATE passed, and candidate/control execution, C.2, rungs, tags, and scientific/ecology claims remain closed |
+| `P2-I3-CHG-054` | Owner accepts the amended exact Q-014 proposal after review corrects W semantics, runtime topology, branch scheduling, interpretation ceilings, seed meaning, and scientific-cost ownership | Record DEC-042; freeze the new dyadic focal/reference B-R design, native shared-boundary topology, W/O/E trajectory, internal schedule, terminal forks, delay profiles, deterministic raw-ID realizations, and 18-cell core without consuming I03 or I05 fixture constructions | Complete as candidate-design authority only; Q-014 resolved, while exact machine registration and Q-015 through Q-018 remain open and no candidate/control execution or scientific/ecology result exists |
+| `P2-I3-CHG-055` | Owner accepts the amended Q-015 proposal after review separates reset semantics from fresh evidence lineage, factors substrate/cell baselines, and tightens byte/semantic, digest, comparison, history, mismatch, and refusal boundaries | Record DEC-043; freeze the eight-file bundle, exact/causal identity split, six substrate baselines, 18 cell envelopes, two-stage comparison, repeated-E/pulse-E continuation, 126 core branches, and fail-closed checkpoint handling | Complete as restoration/continuation construction authority only; Q-015 resolved, while exact machine materialization and Q-016 through Q-018 remain open and no execution or scientific/ecology result exists |
+| `P2-I3-CHG-056` | Owner accepts amended Q-016 after review restores the full DEC-038 pairing key, corrects relocation and causal false-trace semantics, and separates composite-integrity faults from native field refusal | Record DEC-044; freeze 90 configurations, 378 scientific branches, 72 quarantined integrity cases, 42 independent leg records, 14 supplemental bindings, and the corrected evidence boundaries | Complete as exact control/evidence authority only; Q-016 resolved, while machine materialization and Q-017/Q-018 remain open and no execution or scientific/ecology result exists |
+| `P2-I3-CHG-057` | Owner-supplied review accepts Q-017 in substance and requires exact concurrency, process-tree timeout, memory observation, byte-scope, immutable deduplication, and producer-accounting clarification | Record DEC-045; freeze 450 sequential primary child starts, monotonic ceilings, no experiment hard memory cap, exact physical/logical accounting, exact-byte content identity, and expected-versus-realized unsummed producer cost | Complete as resource/artifact/producer registration authority only; Q-017 resolved, while I06 materialization and Q-018 remain open and no execution or scientific/ecology result exists |
+| `P2-I3-CHG-058` | Owner proposes and accepts smarter registered execution classes rather than one universal scientific-child allowance | Amend uncommitted DEC-045; add four immutable classes, candidate-free timing characterization, derived numeric case/campaign ceilings under existing outer fail-safes, exact-artifact invariance, and fixed dependency-aware scheduling | Complete as a prospective resource derivation correction only; Q-017 remains resolved, while I06 materialization and Q-018 remain open and no candidate timing or scientific/ecology result exists |
+| `P2-I3-CHG-059` | Owner-supplied review accepts Q-018 in substance and requires bounded supervisor resumption, durable retry allocation, a supervisor-gated case boundary, frozen dependency propagation, and separate ledger/scientific completeness | Record DEC-046; freeze 450 primary slots, at most four class retries, one resume, P0-P7/P5 governance, exact failure statuses, dependency DAG, derived reserves, and closure precedence | Complete as attempt/failure registration authority only; Q-018 resolved, while I06 materialization remains open and no claim, child, retry, or scientific/ecology result exists |
 
 ## 19. Evidence ledger
 
@@ -2028,12 +2344,23 @@ and evidence effect are retained.
 | `P2-I3-EV-041` | [I05 launch authorization](../contracts/p2-i3/i05-br-calibration-launch-authorization.json) | I05 launch boundary | One accepted-freeze/source/environment/command/path authorization and zero candidate execution only | Schema-valid and ready for exact clean source commit; no claim, invocation, output, `delta`, or scientific effect at construction |
 | `P2-I3-EV-042` | [I05 calibration result](../reports/P2-I3-I05-BR-calibration-result.md), permanent claim, final receipt, three calibration outputs, [result validation](../outputs/p2-i3/i05/br-result-validation.json), and read-only validator | I05 candidate-blind calibration | Numeric measurement resolution for `m_trace` and `m_export` only | Sole attempt succeeds; ten exact zero margins yield shared `delta=1e-12`; 49/49 checks and three byte-exact reconstructions pass; accepted through EV-043 |
 | `P2-I3-EV-043` | [I05 owner acceptance and CAL-GATE record](../contracts/p2-i3/i05-br-owner-acceptance-and-cal-gate.json) | I05 exit | Accepts exact numeric authority and its interpretation ceiling only | Accepted 2026-07-19; I05 complete and CAL-GATE passed; opens I06 exact registration, not execution or scientific interpretation |
+| `P2-I3-EV-044` | Accepted `P2-I3-DEC-042` and owner review disposition retained through CHG-054 | I06 Q-014 | Exact B-R candidate topology, dyadic values, scientific cost, focal/reference arms, trajectory, branches, internal schedule, transfer profile, seed meaning, and top-level cell authority only | Accepted 2026-07-19; resolves B-R Q-014 without complete registration, runtime evidence, control outcome, or scientific/ecology effect |
+| `P2-I3-EV-045` | Accepted `P2-I3-DEC-043` and owner review disposition retained through CHG-055 | I06 Q-015 | Exact B-R bundle, identity, baseline, reset, branch, continuation, mismatch, and refusal construction authority only | Accepted 2026-07-19; resolves B-R Q-015 without machine materialization, runtime evidence, discriminator outcome, or scientific/ecology effect |
+| `P2-I3-EV-046` | Accepted `P2-I3-DEC-044` and owner review disposition retained through CHG-056 | I06 Q-016 | Exact B-R control families, pairing, evidence selectors, leg/supplemental bindings, relocation/false-trace semantics, and separated integrity/refusal authority only | Accepted 2026-07-19; resolves B-R Q-016 without machine materialization, control outcome, runtime evidence, or scientific/ecology effect |
+| `P2-I3-EV-047` | Accepted `P2-I3-DEC-045` and owner-supplied refinements retained through CHG-057/058 | I06 Q-017 | Exact B-R class derivation, process/time/memory/disk/log/retention/content-store/scheduling and unsummed producer-cost authority only | Accepted 2026-07-19; resolves B-R Q-017 without timing characterization, machine materialization, execution authority, resource observation, producer outcome, or scientific/ecology effect |
+| `P2-I3-EV-048` | Accepted `P2-I3-DEC-046` and owner-supplied review retained through CHG-059 | I06 Q-018 | Exact B-R attempt, retry-token, supervisor-resume, phase/P5, dependency-propagation, failure, reserve, and cycle-closure authority only | Accepted 2026-07-19; resolves B-R Q-018 without machine materialization, claim consumption, child start, retry, execution authority, or scientific/ecology effect |
 
 A B-R realization, its quarantined runtime-conformance evidence, and its
-owner-accepted I04 machine preregistration now exist for P2-I3. No calibration,
-registration, control outcome, scientific execution, branch result, provider
-comparison, or lane result exists. The N31 return remains graph-side evidence
-and provider-contract option authority only.
+owner-accepted I04 machine preregistration now exist for P2-I3. I05 supplies
+accepted candidate-blind numeric-resolution evidence, DEC-042 supplies exact
+candidate-design authority, DEC-043 supplies exact restoration and
+continuation construction authority, DEC-044 supplies exact control and
+evidence-binding authority, and DEC-045 supplies exact resource/artifact/
+producer-cost authority. DEC-046 supplies exact attempt/failure/closure
+authority. No complete registration, candidate/control
+execution, control outcome, scientific branch result, provider comparison, or
+lane result exists. The N31 return remains graph-side evidence and provider-
+contract option authority only.
 
 ## 20. Current stop and next permitted action
 
@@ -2114,15 +2441,44 @@ accepted semantic brief
 + no candidate/PyGRC input or scientific/ecology result exists
 + owner acceptance binds launch, claim, receipt, outputs, validation, and delta
 = P2-I3-CAL-GATE passed
-!= I06 registration, candidate/control execution, or scientific execution passed
++ DEC-042 resolves B-R Q-014 with a new exact dyadic candidate design
++ native shared-boundary corridors, W/O/E roles, costs, trajectory, schedules,
+  branches, delay profiles, deterministic permutations, and 18 core cells fixed
++ construction expectations remain non-evidential and non-threshold
++ DEC-043 resolves B-R Q-015 restoration and continuation finalization
++ eight-file bundles separate exact evidence identity from causal state
++ six substrate baselines combine with 18 immutable cell envelopes
++ reset reproduces causal semantics while issuing fresh evidence lineage
++ repeated-E versus pulse-E continuation is exact or closes as missing surface
++ DEC-044 resolves B-R Q-016 exact control and evidence bindings
++ 90 configurations expand to 378 scientific branches without aggregation
++ 72 composite-integrity cases remain separate from native field refusal
++ 42 leg records and 14 supplemental bindings resolve independently
++ full DEC-038 pairing permits only declared intervention fields to differ
++ DEC-045 resolves B-R Q-017 resource, artifact, and producer-cost boundaries
++ 450 primary child starts remain sequential, isolated, and freshly supervised
++ four prospective execution classes and candidate-free timing derivation fixed
++ outer time, process-tree timeout, memory observation, and byte classes fixed
++ dependency-aware scheduling preserves immutable reuse and branch-local state
++ exact-byte deduplication preserves complete logical reconstruction
++ expected/realized producer costs remain purpose-classified and unsummed
++ DEC-046 resolves B-R Q-018 attempt, retry, and failure governance
++ 450 primary slots plus at most four pre-P5 class retries fixed
++ one bounded supervisor resume does not create a scientific opportunity
++ P0-P7/P5 phase authority and dependency propagation are prospective
++ terminal-ledger and scientific completeness remain separate
+!= complete I06 registration, candidate/control execution, or scientific execution passed
 ```
 
 The inactive I05 invocation freeze `1.0.2` is retained and clean-commit
 validated; its separate launch authorization has been consumed exactly once;
 and the outputs reconstruct byte-exactly. The owner accepts I05 and passes
-`P2-I3-CAL-GATE`. The next permitted action is I06 exact implementation
-registration, beginning with Q-014 through Q-018 and exact control-cell/
-evidence identities. Candidate/control execution remains unauthorized.
+`P2-I3-CAL-GATE`. Accepted DEC-042 and DEC-043 resolve the B-R instances of
+Q-014 and Q-015, accepted DEC-044 resolves Q-016, and accepted DEC-045 resolves
+Q-017; accepted DEC-046 resolves Q-018. These decisions do not themselves
+materialize the registration. Exact machine-bundle construction is next before
+REG-GATE review.
+Candidate/control execution remains unauthorized.
 Conformance fixture values, topology, observed split, digests, and derived
 margins are prohibited inputs. C.2 design and every calibration or scientific
 execution remain unauthorized.
