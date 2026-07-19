@@ -8,8 +8,11 @@ Q-006; DEC-029 resolves B-R Q-007; DEC-030 common comparison envelope is
 accepted; DEC-031 resolves B-R Q-013 and DEC-032 resolves its I03 Q-015
 design; DEC-033 operational-hypothesis projection and DEC-034 bounded-
 conformance input freeze are accepted; clean source-anchor commit `94bfe01`
-satisfies the freeze's activation condition and opens only construction plus
-one quarantined bounded-conformance run
+satisfied the freeze's activation condition; implementation anchor `ce9701c`
+and one byte-exactly reconstructed quarantined bounded-conformance result now
+close the operational I03 requirements; DEC-035 accepts the corrected
+ownership/ledger interpretation and passes `P2-I3-DISCRIMINATOR-GATE`; only
+I04 calibration preregistration is open
 
 **Iteration:** `P2-I3`
 
@@ -18,13 +21,15 @@ one quarantined bounded-conformance run
 **Current activity iteration:** `P2-I3-I00` complete; `P2-I3-I01` audit
 accepted and complete; `P2-I3-I02` exact source admission accepted and
 complete; `P2-I3-I03` has reconstructed and admitted the N31 return and now
-continues the B-R track at bounded runtime-conformance construction
+retains accepted B-R bounded runtime conformance; `P2-I3-I04` calibration
+preregistration is open but has not begun
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
-N31 return/provider-option transition plus source-anchored conformance-input
-authority; no completed realization, runtime-conformance evidence, provider
-selection, calibration, registration, scientific execution, or P2-I3 result
+N31 return/provider-option transition, source-anchored conformance-input
+authority, and quarantined implementation-conformance evidence; no provider
+selection, calibration output, registration, scientific execution, control
+outcome, or P2-I3 result
 
 **Semantic authority:**
 [accepted P2-I3 brief](P2-I3-trail-or-stigmergic-field-brief.md)
@@ -144,8 +149,8 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-SOURCE-AUDIT-GATE` | One frozen, source-current, read-only audit answers the accepted capability questions | Passed | Owner-passed grounded artifact review; `P2-I3-DEC-018` |
 | `P2-I3-SOURCE-ADMISSION-GATE` | Exact theory and graph revisions, files, callables, roles, and digests are admitted | Passed | Owner-accepted DEC-019, exact manifest, and reconstruction; opens only I03 realization questions |
 | `P2-I3-N31-RETURN-GATE` | Exact N31 closeout and provider contracts reconstruct and are admitted without evidence transfer or automatic selection | Passed | Accepted DEC-025; 11 exact retained identities verified, 5 I12 artifacts byte-exact, and the other 3 bounded to an incorrect distribution-metadata value and dependent digests |
-| `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Pending staged I03 work | DEC-027 through DEC-032 resolve B-R mode/law/encounter, common comparison, contrast identities, and restoration design; operational hypotheses and bounded conformance remain; C.2 is inactive until B-R closeout |
-| `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Unopened | Requires passed discriminator gate and `P2-I3-Q-009` through `Q-012`, plus `Q-016` |
+| `P2-I3-DISCRIMINATOR-GATE` | Both route-scoped field realizations, dynamics, causal chains, observation boundaries, mode families, and operational hypotheses are frozen or separately dispositioned | Passed | DEC-035 accepts exact B-R operational conformance with corrected ownership and typed closure; C.2 remains explicitly inactive until B-R closeout |
+| `P2-I3-CAL-PRE-GATE` | Response, comparator, matched null, controls, panels, windows, and candidate-blind calibration inputs are preregistered | Open for construction | Discriminator gate passed; resolve `P2-I3-Q-009` through `Q-012` plus `Q-016` without running calibration |
 | `P2-I3-CAL-GATE` | Candidate-blind calibration freezes a reconstructable metric sheet and resolution delta | Unopened | Requires accepted CAL-PRE package and an explicitly authorized calibration invocation |
 | `P2-I3-REG-GATE` | Exact topology, values, cells, schedules, controls, identities, resources, and reconstruction bundle are registered | Unopened | Requires passed CAL-GATE and `P2-I3-Q-014` through `Q-018` |
 | `P2-I3-EXEC-FREEZE` | One exact inactive candidate cycle is accepted and then explicitly activated | Unopened | Requires passed REG-GATE, clean committed sources, runtime identity, and `P2-I3-Q-019` |
@@ -733,9 +738,10 @@ no calibration or candidate evidence.
 **Current program position:** the B-R law, encounter, state/history boundary,
 common comparison envelope, Q-013/Q-015 design, operational hypotheses, and
 bounded-conformance input are accepted under DEC-027 through DEC-034. The
-input freeze is retained by source anchor `94bfe01`; the active detailed
-boundary is section 8.4 runtime-conformance construction. B-R branch closeout,
-C.2, and final comparison remain open.
+input freeze is retained by source anchor `94bfe01`; implementation anchor
+`ce9701c` and the retained section 8.4 result close bounded runtime conformance.
+DEC-035 passes the discriminator gate. B-R scientific branch closeout, C.2,
+and final comparison remain open.
 
 - [x] Record explicit owner authority to widen DEC-012's one-realization
   default because N31 returned two distinct causal ontologies and both are to
@@ -923,45 +929,61 @@ C.2, and final comparison remain open.
 
 ### 8.2 Realization and causal-factorization requirements
 
-**Current status at source anchor `94bfe01`:** DEC-027 through DEC-034 bind
-every requirement below prospectively, but these checkboxes record demonstrated
-I03 capability rather than accepted design alone. They therefore remain open
-until the retained bounded-conformance result resolves them individually.
-Requirements that defer exact values to I06 or scientific measurement to I08
-close here only at the operational-addressability boundary; conformance cannot
-supply their later scientific evidence.
+**Current status at implementation anchor `ce9701c`:** the retained result's
+`section_8_2_dispositions` resolves all fifteen requirements below at the I03
+operational-conformance boundary. Each disposition cites its exact conformance
+cells. Requirements that defer exact values to I06 or scientific measurement
+to I08 close here only at the operational-addressability boundary; this
+conformance result supplies no later scientific evidence.
 
-- [ ] The realization is structurally capable of exposing two alternative
+DEC-035 requires the following typed closure rather than treating the run as
+one empirical proof:
+
+| Items | I03 closure basis |
+| --- | --- |
+| 1–5 | Runtime-conformed fixture, native transfer/debit, conservative export, local encounter, and synthetic branch split; no scientific measurement |
+| 6–8 | Constructor/interface addressability and forbidden-label exclusion |
+| 9 | Composite identity plus fail-closed restoration conformance |
+| 10 | Active history explicitly not claimed; audit history remains noncausal |
+| 11–12 | Representable access/identity boundary and separately callable distance roles |
+| 13–14 | Native/RCAE dataflow, forbidden reads, and exact source/provider/realization binding |
+| 15 | Accepted minimality argument plus narrow-producer conformance |
+
+False-trace, formation-withdrawal, and no-field remain constructible interfaces
+rather than passed scientific controls. Fresh/direct address does not establish
+a second participant. OP-13 remains interpretation-only.
+
+- [x] The realization is structurally capable of exposing two alternative
   route surfaces under the complete baseline-matching contract, without a
   hidden preferred route. Exact numeric and parametric equality belongs to
   I06 registration.
-- [ ] Field state is route-local and encountered during traversal.
-- [ ] Formation is attributable, repeated, and has a nonzero declared cost.
-- [ ] At least one selected non-static dynamic is operationally observable,
+- [x] Field state is route-local and encountered during traversal.
+- [x] Formation is attributable, repeated, and has a nonzero declared cost.
+- [x] At least one selected non-static dynamic is operationally observable,
   independently intervenable where required, and capable of producing the
   registered measurements later frozen in I04. Scientific measurement belongs
   to I08, not I03 conformance.
-- [ ] The selected dynamic either changes traversal directly or changes an
+- [x] The selected dynamic either changes traversal directly or changes an
   independently intervenable mediator that changes traversal.
-- [ ] Candidate, quantity-matched, state-matched, withdrawal/shuffle,
+- [x] Candidate, quantity-matched, state-matched, withdrawal/shuffle,
   false-trace, relocation, and no-field relations are separately addressable.
-- [ ] The field-interface family supports a false-trace intervention without
+- [x] The field-interface family supports a false-trace intervention without
   depositor history and without an outcome-writing path; I06 later freezes the
   exact operation before any execution.
-- [ ] Relocation moves registered carrier state while excluding route,
+- [x] Relocation moves registered carrier state while excluding route,
   participant, and preference labels from the payload.
-- [ ] Complete continuation-relevant current state is enumerated.
-- [ ] Any claimed active history is causal, restorable, and independently
+- [x] Complete continuation-relevant current state is enumerated.
+- [x] Any claimed active history is causal, restorable, and independently
   intervenable rather than audit metadata.
-- [ ] Fresh-traverser and direct-address boundaries can be represented.
-- [ ] Geometric, functional, causal/proper-time, and experimental causal roles
+- [x] Fresh-traverser and direct-address boundaries can be represented.
+- [x] Geometric, functional, causal/proper-time, and experimental causal roles
   cannot be substituted for one another.
-- [ ] Native and RCAE-owned paths have explicit ownership boundaries. Only
+- [x] Native and RCAE-owned paths have explicit ownership boundaries. Only
   declared, receipted state transitions are permitted; undeclared cross-owner
   mutation and producer-authored response or success are forbidden.
-- [ ] A future native transition cannot silently replace the registered
+- [x] A future native transition cannot silently replace the registered
   non-native realization.
-- [ ] Any constructed mechanism justifies minimality against the added state
+- [x] Any constructed mechanism justifies minimality against the added state
   and operations required by the accepted causal chain.
 
 ### 8.3 Operational hypotheses
@@ -990,11 +1012,11 @@ supply their later scientific evidence.
   ineligible for calibration, registration values, and scientific evidence.
 - [x] Retain exact runtime identity, realization ownership, commands, seeds if
   any, artifacts, and reconstruction instructions.
-- [ ] Demonstrate save/load/reset/branch and equal-input continuation where
+- [x] Demonstrate save/load/reset/branch and equal-input continuation where
   required.
-- [ ] Demonstrate field update order, route-local access, invariants, and
+- [x] Demonstrate field update order, route-local access, invariants, and
   operation refusal boundaries.
-- [ ] Keep conformance artifacts quarantined from calibration and candidate
+- [x] Keep conformance artifacts quarantined from calibration and candidate
   result inputs.
 - [x] Freeze the quarantine mechanism: separate artifact namespace and
   identities plus validator rejection of any downstream calibration,
@@ -1009,19 +1031,89 @@ supply their later scientific evidence.
 - [x] Commit the accepted freeze as clean source anchor `94bfe01` before
   constructing the runtime module or performing any LGRC9V3 conformance
   operation.
-- [ ] Classify any failed binding as implementation or source evidence, never
-  a scientific negative.
+- [x] Retain the failed-binding classifier as implementation/source evidence
+  only. It was not triggered: all eighteen required public surfaces bound and
+  all required calls were exercised; zero blocked calls were used.
+
+#### 8.4.1 Retained implementation and interpretation record
+
+The accepted freeze was materialized in clean implementation commit `ce9701c`
+as three separately owned surfaces:
+
+- [runtime module](../scripts/p2_i3_br_runtime.py): 673 lines with no PyGRC
+  import; owns only the serialized B-R export policy, blind structural
+  encounter adapter, composite RCAE state, Q-013 constructors, and control
+  interface identities;
+- [runtime harness](../scripts/p2_i3_i03_br_conform.py): 1,175 lines; owns exact
+  binding/preflight, native LGRC9V3 construction, one-shot execution,
+  observation, quarantine, retained output, and reconstruction;
+- [focused tests](tests/test_p2_i3_br_runtime.py): 301 lines and eight passing
+  tests covering policy transitions, atomicity, restoration, blind adapter
+  inputs, control identities, and producer/native separation.
+
+The retained
+[binding receipt](../contracts/p2-i3/conformance/i03-br-runtime-binding-receipt.json)
+binds RCAE commit `ce9701c`, graph commit `565706f`, CPython 3.12.3, the frozen
+package set, clean pre-invocation worktrees, the normalized one-attempt command,
+and absent prior output before any model construction. Its exact-file SHA-256
+is `9f26ccecde072420c53ff1b46aa00693ea63f302c726deb03be62e02c3cf0b69`.
+
+The retained
+[conformance result](../contracts/p2-i3/conformance/i03-br-runtime-conformance.json)
+passes all 11 cells and all 36 checks, invokes the eighteen required public
+surfaces 109 times in total, uses no blocked public call, and has exact-file
+SHA-256 `2baf7ba5782bcab686123ac004dafbbe6f993cd29ebfb9da53e9da5126de5e4c`.
+Both artifacts' internal canonical-payload digests validate. The frozen
+reconstruction command reproduced the 48,395-byte result byte-for-byte from
+the retained binding receipt.
+
+Geometrically, the fixture realizes two role-matched, disconnected five-node
+route surfaces. Each has a support source, route-local intermediate coherence
+carrier, isolated export reservoir, continuation node, and auxiliary control
+node. Four native conservative formation transfers produce matched carriers.
+One bounded B-R export moves `0.1` coherence from the selected carrier to its
+reservoir while the paired carrier remains unchanged; total native coherence
+plus in-flight packet coherence remains exactly `2.2` at every recorded
+checkpoint. A later equal fixed request is natively admitted on the retained
+carrier and refused atomically on the exported carrier. The adapter supplies
+only the frozen structural opportunity and never reads field value, history,
+route label, result, or the other route.
+
+Operationally, this demonstrates that the chosen B-R composition is
+expressible without modifying PyGRC: native LGRC9V3 owns coherence, packets,
+native ordering, admission, progression, refusal, settlement, and native
+restoration. RCAE owns lifecycle eligibility and the request schedule through
+the explicit bounded-export policy, structural opportunity, paired composite
+coordination, and control identities. The producer constructs the weakened-
+carrier condition but the blind encounter adapter does not author the later
+native disposition. Save/load, clean forks, equal-input continuation, paired
+native-plus-RCAE reset, stale/partial/cross-bound refusal, exact replay, three
+distance-interface roles, nine controls, and all eight quarantine consumer
+rejections were exercised.
+
+Ecologically, this is only a causal-architecture result. It shows that a
+costly repeated route-local trace, a non-static conservative weakening
+operation, and a later local susceptibility difference can be composed while
+keeping the response native and the producer blind. It does not show that the
+effect is robust, selective across registered scientific conditions,
+history-dependent, stable under perturbation, preferable to C.2, or sufficient
+for `AE01-H-L03`. Those are calibration, registration, candidate, control, and
+branch-comparison questions. The producer-cost projection is therefore an
+unsummed structural record—contract-required policy/restoration,
+ecology-required adapter/control identities, and evidence-only harness work—
+not a scalar cost or provider ranking.
 
 ### 8.5 I03 exit
 
-- [ ] Accepted realization and all load-bearing decisions have stable IDs.
-- [ ] Operational hypotheses validate against their schemas/contracts.
-- [ ] Runtime conformance reconstructs exactly or is validly classified
+- [x] Accepted realization and all load-bearing decisions have stable IDs.
+- [x] Operational hypotheses validate against their schemas/contracts.
+- [x] Runtime conformance reconstructs exactly or is validly classified
   missing/unsuitable.
-- [ ] Alternative realization families remain visible with reopening
+- [x] Alternative realization families remain visible with reopening
   conditions.
-- [ ] Owner accepts the package and passes
-  `P2-I3-DISCRIMINATOR-GATE`.
+- [x] Owner accepts the corrected package under DEC-035 and the retained
+  [operational-conformance review](../reports/P2-I3-I03-BR-operational-conformance-review.md);
+  `P2-I3-DISCRIMINATOR-GATE` passes with no rerun.
 
 ## 9. `P2-I3-I04` — Calibration preregistration
 
@@ -1410,6 +1502,8 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-033` | Accepted pre-conformance decisions require one falsifiable B-R projection of `AE01-H-L03` | Construct and accept DEC-033 plus thirteen machine/narrative OPs, rung/control/restoration mappings, open outcomes, redirects, and conformance quarantine | Accepted; opens only conformance input-freeze construction, with no runtime or scientific effect |
 | `P2-I3-CHG-034` | DEC-033 opens bounded conformance-freeze construction and the owner accepts the reviewed result-neutral fixture plus later stronger-proof rule | Construct and accept DEC-034, an exact inactive machine freeze, 85-check zero-runtime validator, declared-provenance quarantine guard, interpretive report, and evidence-responsive extension boundary | Accepted as the content retained by source anchor `94bfe01`; no model, packet, runtime output, gate passage, calibration, execution, control outcome, or scientific result |
 | `P2-I3-CHG-035` | Source-anchor commit `94bfe01` exists and owner review identifies stale post-commit checklist state plus unclear 8.1.2 program position and 8.2 evidence boundary | Record the exact source anchor, expose the active 8.1.2/8.4 boundary, open only bounded-conformance construction/run, and distinguish contract-frozen 8.2 requirements from demonstrated conformance | Complete as bookkeeping/authority projection; no harness, runtime operation, B-R closeout, 8.2 closure, discriminator gate, or scientific effect |
+| `P2-I3-CHG-036` | Source anchor `94bfe01` authorizes exact harness construction and one quarantined bounded-conformance attempt | Commit the narrow runtime/harness/tests at `ce9701c`; consume the sole retained attempt; retain binding and result artifacts; reconstruct byte-exactly; resolve all fifteen section 8.2 requirements only at the operational boundary | Complete; 11/11 cells and 36/36 checks pass, all canonical digests validate, no blocked public call or scientific effect occurs, and owner discriminator-gate review remains open |
+| `P2-I3-CHG-037` | Owner-supplied review accepts the I03 package with two non-runtime corrections and notes that the reviewer did not receive generated artifact bytes | Independently verify exact retained identities/totals; record DEC-035; correct complete-schedule ownership; type all fifteen section 8.2 closure bases; retain a repository-local review; pass only DISCRIMINATOR-GATE without rerun | Complete; I04 preregistration opens, while all fixture values, scientific work, C.2, and provider/lane conclusions remain closed |
 
 ## 19. Evidence ledger
 
@@ -1442,10 +1536,14 @@ and evidence effect are retained.
 | `P2-I3-EV-022` | [B-R operational-hypothesis machine contract](../contracts/p2-i3/i03-br-operational-hypotheses.json) and [subordinate record](../hypotheses/p2-i3-br-operational-hypotheses.md) | I03 B-R hypothesis projection | Thirteen falsifiable semantic OPs plus rung, control, restoration, redirect, and conformance handoffs | Accepted under DEC-033; no runtime or scientific effect |
 | `P2-I3-EV-023` | [B-R bounded-conformance input freeze](../contracts/p2-i3/i03-br-bounded-conformance-input-freeze.json), [validator](../scripts/p2_i3_i03_br_freeze_validate.py), [quarantine guard](../scripts/p2_i3_conformance_quarantine.py), and [report](../reports/P2-I3-I03-BR-bounded-conformance-input-freeze.md) | I03 B-R conformance freeze | Exact source/call/interface/fixture/matrix/quarantine authority plus 85 zero-runtime checks | Accepted under DEC-034 and retained by source anchor `94bfe01`; no runtime or scientific effect exists |
 | `P2-I3-EV-024` | RCAE source-anchor commit `94bfe01` | I03 B-R conformance activation | Exact clean committed source identity for the accepted DEC-034 freeze | Retained; opens only harness construction and one quarantined bounded-conformance run |
+| `P2-I3-EV-025` | RCAE implementation-anchor commit `ce9701c`, [runtime module](../scripts/p2_i3_br_runtime.py), [harness](../scripts/p2_i3_i03_br_conform.py), and [focused tests](tests/test_p2_i3_br_runtime.py) | I03 B-R bounded conformance | Exact clean implementation identity and narrow native/RCAE ownership boundary | Retained; eight focused tests pass and the implementation source itself supplies no scientific result |
+| `P2-I3-EV-026` | [Runtime binding receipt](../contracts/p2-i3/conformance/i03-br-runtime-binding-receipt.json) and [bounded-conformance result](../contracts/p2-i3/conformance/i03-br-runtime-conformance.json) | I03 B-R bounded conformance | Quarantined operational expressibility, exact source/runtime identity, section 8.2 dispositions, and reconstruction evidence only | Retained one-attempt result passes 11/11 cells and 36/36 checks; 48,395-byte output reconstructs byte-exactly; scientific evidence effect is `none` |
+| `P2-I3-EV-027` | [I03 operational-conformance review](../reports/P2-I3-I03-BR-operational-conformance-review.md) and DEC-035 | I03 exit | Corrected ownership, typed requirement closure, independently verified identities, claim ceiling, and gate disposition | Accepted; DISCRIMINATOR-GATE passed without rerun and opens I04 preregistration only |
 
-No selected realization, calibration, registration, runtime conformance,
-control, or scientific evidence exists yet for P2-I3. The N31 return adds
-graph-side evidence and provider-contract options only.
+A B-R realization and its quarantined runtime-conformance evidence now exist
+for P2-I3. No calibration, registration, control outcome, scientific execution,
+branch result, provider comparison, or lane result exists. The N31 return
+remains graph-side evidence and provider-contract option authority only.
 
 ## 20. Current stop and next permitted action
 
@@ -1487,12 +1585,18 @@ accepted semantic brief
 + DEC-033 operational-hypothesis projection accepted
 + DEC-034 bounded-conformance input freeze accepted
 + clean RCAE source anchor `94bfe01` retains the freeze
-+ all 8.2 requirements are contract-frozen but await conformance evidence
-!= bounded runtime conformance, field realization, or discriminator gate passed
++ clean implementation anchor `ce9701c` binds the runtime module and harness
++ sole retained bounded-conformance attempt passes 11/11 cells and 36/36 checks
++ all 15 section 8.2 requirements close at the operational boundary
++ retained output reconstructs byte-exactly and remains quarantined
+= B-R implementation is operationally expressible at exact sources
++ DEC-035 accepts corrected ownership and typed requirement closure
+= P2-I3-DISCRIMINATOR-GATE passed
+!= calibration execution, registration, or scientific execution passed
 ```
 
-The next boundary is construction of the exact runtime module/harness followed
-by the single quarantined bounded-conformance run. Each 8.2 requirement must be
-resolved from retained conformance evidence or an explicit missing/unsuitable
-classification. C.2 design and every calibration or scientific execution
-remain unauthorized.
+The next boundary is I04 candidate-blind calibration preregistration: resolve
+Q-009 through Q-012 and Q-016 and freeze measurement/null semantics without
+running calibration. Conformance fixture values, topology, observed split,
+digests, and derived margins are prohibited inputs. C.2 design and every
+calibration or scientific execution remain unauthorized.

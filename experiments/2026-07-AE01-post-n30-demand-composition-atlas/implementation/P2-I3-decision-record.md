@@ -11,7 +11,9 @@ resolves only the B-R instance of Q-007; DEC-030 is the accepted common
 comparison-envelope authority; DEC-031 resolves B-R Q-013; DEC-032 resolves
 the I03 design portion of B-R Q-015; DEC-033 is the accepted B-R
 operational-hypothesis projection; DEC-034 is the accepted inactive bounded-
-conformance input freeze
+conformance input freeze; DEC-035 accepts the exact B-R operational-
+conformance package and passes `P2-I3-DISCRIMINATOR-GATE`; I04 calibration
+preregistration is open but calibration execution remains unauthorized
 
 **Lane:** `AE01-L03`
 
@@ -3030,7 +3032,73 @@ a Q-013 interface is conflated; composite restoration or atomic refusal cannot
 be expressed; quarantine does not reject declared conformance provenance; or
 new graph evidence changes the admitted provider boundary.
 
-## 37. Open decision register
+## 37. `P2-I3-DEC-035` — Accept B-R operational conformance
+
+### Question
+
+Does the retained B-R package establish the accepted realization's operational
+adequacy strongly enough to pass `P2-I3-DISCRIMINATOR-GATE`, and which wording
+and evidence boundaries must govern that acceptance?
+
+### Alternatives considered
+
+1. reject the package and reopen the realization;
+2. require a second conformance run or stronger fixture before gate passage;
+3. accept the runtime result without correcting ownership and section 8.2
+   wording; or
+4. accept the exact package, correct the two ledger meanings without rerun, and
+   preserve all scientific questions for later gates.
+
+### Accepted resolution
+
+Accept alternative 4. At the exact retained RCAE and PyGRC identities, the
+producer-mediated B-R realization is operationally expressible. Repeated native
+formation, serialized conservative export, fixed local encounter, native
+admission/refusal, composite restoration, control addressability, and
+conformance quarantine compose without an RCAE producer reading or authoring
+the later native disposition.
+
+Correct the ownership statement as follows: RCAE owns lifecycle eligibility
+and the request schedule; PyGRC owns native ordering, admission, progression,
+refusal, and settlement of each scheduled native operation. RCAE causally
+constructs the export opportunity and weakened-carrier condition but does not
+manufacture the later result through an outcome-aware encounter selector.
+
+Close all fifteen section 8.2 requirements at I03 through their individually
+typed bases: bounded runtime conformance, constructor/interface addressability,
+accepted design, explicit nonclaim/non-applicability, restoration evidence, or
+source/provider binding. Do not describe them as one empirical proof. In
+particular, active history is not claimed; fresh/direct address is only
+representable; false-trace and no-field are only addressable; and no scientific
+control or OP-13 interpretation has passed.
+
+Retain the complete review, exact source/artifact identities, crosswalk,
+reconstruction evidence, and downstream prohibition in the
+[I03 operational-conformance review](../reports/P2-I3-I03-BR-operational-conformance-review.md).
+No runtime artifact changes and no rerun are required.
+
+### Gate and evidence effect
+
+`P2-I3-DISCRIMINATOR-GATE` passes. This opens only I04 candidate-blind
+calibration preregistration. Calibration execution, I06 registration,
+candidate/control execution, C.2 work, every OP and R01–R05 disposition,
+`AE01-H-L03`, provider comparison, and all scientific or lane results remain
+unassigned or unauthorized.
+
+Only the statement that the accepted I03 B-R conformance gate passed may be
+consumed downstream. Fixture values, topology, admission/refusal split,
+artifact digest, and derived margins are prohibited I04/I06 inputs.
+
+### Reopening condition
+
+Reopen DEC-035 if an exact source or artifact identity fails reconstruction; a
+producer needs a forbidden read or authors the native response; composite
+restoration is incomplete or not fail-closed; the admitted source/provider
+identity changes; quarantine admits conformance provenance downstream; or
+later work demonstrates that an operational interface cannot support its
+registered scientific role.
+
+## 38. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -3059,7 +3127,7 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 38. Decision protocol for subsequent work
+## 39. Decision protocol for subsequent work
 
 For each open question:
 
@@ -3077,60 +3145,32 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 39. Current boundary
+## 40. Current boundary
 
-Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` define semantic and
-process boundaries, accept the exact I01 read-only capability audit and I02
-source bundle, pass `P2-I3-SOURCE-AUDIT-GATE` and
-`P2-I3-SOURCE-ADMISSION-GATE`, restrict the core substrate to LGRC9V3, select
-route-exclusive intermediate-node coherence as the minimum carrier, and fix
-its mixed native/RCAE ownership boundary. DEC-023 then pauses I03 at Q-005
-and selects the N31 handoff; DEC-024 prospectively makes coherence-only D0 the
-first N31 hypothesis, preserves the three original mechanisms as fallback,
-closure, or extension paths, and binds the theory/substrate/code authority
-split for N31. These decisions assign no
-selected dynamic, complete realization, equation, exact registered values,
-calibration, registration, execution, result, appendix activation, or
-specification-promotion authority. Accepted DEC-025 admits the exact N31 graph
-return and its B-R and C.2 contracts as unselected options. It retains the
-distribution-metadata error rather than rewriting N31 and passes only
-`P2-I3-N31-RETURN-GATE`. DEC-026 then resolves Q-005 as a staged B-R-first,
-C.2-second evidence program without selecting a lane winner. DEC-027 resolves
-the B-R Q-008 mode as current-composite-state-carried with a mandatory matched-
-history discriminator; it assigns no state-sufficiency result.
-DEC-028 then resolves the B-R Q-006 equation, units, serialized lifecycle,
-route roles, ownership, conservation, floor/cap, matched-mass, and reservoir-
-isolation boundaries without assigning a traversal response or result.
-DEC-029 resolves the B-R Q-007 local encounter as independent, role-matched,
-fixed native departure requests whose admission depends only on branch-local
-carrier coherence inside LGRC9V3. It assigns no primary metric or result.
-DEC-030 is accepted as the common comparison and producer-cost envelope.
-DEC-031 separates B-R formation-quantity, export-mass, and complete-state/
-history contrasts. DEC-032 freezes the B-R composite restoration and causal-
-continuation design while leaving its exact I06 registration open.
-DEC-033 is the accepted operational-hypothesis projection. Its machine and
-narrative records open only construction of the bounded conformance freeze.
-DEC-034 is the accepted inactive freeze. Its 85-check static validation opens
-the planned runtime module and harness only after the freeze's clean source-
-anchor commit; no conformance run has occurred.
+Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` retain the semantic,
+source, LGRC9V3-only, N31 handoff, and theory/substrate/code authority chain.
+DEC-025 admits the exact N31 return without transferring its evidence or
+selecting B-R/C.2. DEC-026 defines the staged B-R-first/C.2-second program.
+DEC-027 through DEC-032 fix the B-R mode, conservative redistribution law,
+blind local encounter, comparison, contrast, and restoration meanings.
+DEC-033 fixes the operational hypotheses without assigning outcomes. DEC-034
+freezes the exact result-neutral conformance input and quarantine.
 
-The frozen I01 environment preflight and read-only audit are complete. The
-accepted I02 package fixes exact source identities and roles but does not
-assign a carrier, dynamic, equation, response, conformance result, calibration,
-execution, or L03 evidence.
+The accepted freeze is retained at source anchor `94bfe01`; the exact runtime
+module, harness, and focused tests are retained at implementation anchor
+`ce9701c`. The sole conformance attempt passes 11/11 cells and 36/36 checks,
+uses no blocked public call, remains scientifically quarantined, and
+reconstructs byte-exactly. DEC-035 accepts this as B-R operational
+expressibility, corrects complete-schedule ownership to the factored RCAE/
+PyGRC statement, and closes all fifteen section 8.2 requirements through their
+individual operational/design/nonclaim bases rather than one empirical claim.
 
-The audit distinguishes public synchronous `GRC9V3` coherence continuity
-from the separate `LGRC9V3` queue-event runtime. DEC-020 now fixes the former
-as comparative-only: it cannot become an I03 core option or silently bridge
-the missing LGRC-integrated field lifecycle.
+`P2-I3-DISCRIMINATOR-GATE` is passed. I04 candidate-blind calibration
+preregistration is the only newly opened activity. It must resolve Q-009
+through Q-012 and Q-016 prospectively without consuming conformance fixture
+values, topology, observed split, digest, or derived margins.
 
-Missing or inadequate native coverage is not a reason to weaken or stop the
-P2-I3 causal question. Under `P2-I3-DEC-017`, I01 records the native gap and
-source-backed producer-completion precedents; I03 later selects the smallest
-semantically adequate ownership path and exports every unresolved native
-pattern as explicit graph-side naturalization debt.
-
-The next required action is the accepted-freeze source-anchor commit. It then
-opens construction and the single bounded conformance run. C.2 and every
-calibration, candidate execution, or scientific activity remain unauthorized
-until their named gates pass.
+Calibration execution, exact I06 registration, candidate/control execution,
+C.2 work, every OP and R01–R05 result, `AE01-H-L03`, provider comparison,
+appendix activation, and every branch/lane/specification result remain
+unauthorized or unassigned until their named gates pass.

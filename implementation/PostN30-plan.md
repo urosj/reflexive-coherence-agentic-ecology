@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.67 draft
+**Plan revision:** 0.70 draft
 
 **Date:** 2026-07-19
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.67 draft:
+Current dependency order after revision 0.70 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1777,9 +1777,9 @@ Current dependency order after revision 0.67 draft:
    40 callables, 24 pre-existing tests, eight theory/method files, and two
    exact grouped precedent inventories. Q-002 is resolved and the source-
    admission gate is passed. DEC-020 fixes LGRC9V3 as the only eligible core
-   substrate; GRC9V3 is comparative-only. DEC-028/029 now fix the B-R
-   lifecycle law and local encounter without completing the realization or
-   assigning a traversal response.
+   substrate; GRC9V3 is comparative-only. DEC-028/029 fix the B-R lifecycle law
+   and local encounter; DEC-035 now accepts their operationally conformant
+   realization without assigning a scientific traversal response.
 3. Retain the accepted P2-I3 DEC-025 bounded N31 return transition. N31 has
    closed and merged after testing D0 first. Native D0a route organization
    reaches DR2, but ordinary autonomous weakening was not found in the tested
@@ -1803,19 +1803,23 @@ Current dependency order after revision 0.67 draft:
    quantity/export-mass/complete-state-history contrasts, and define composite
    restoration plus causal-continuation identities. DEC-033 projects these
    authorities into thirteen accepted operational hypotheses. DEC-034 accepts
-   the exact inactive bounded-conformance freeze, narrow RCAE producer
-   boundary, and evidence-responsive stronger-alternative rule. Next commit
-   that freeze as the clean source anchor, construct its exact harness, and
-   execute the one scientifically quarantined conformance run. Then
-   carry B-R through calibration, registration, execution,
-   controls, reconstruction, and branch interpretation. Only after
-   B-R branch closeout may C.2 open under separate identities and the same
-   common comparison fields. B-R Q-008 is already fixed by DEC-027 as complete
-   current native-plus-policy state with one matched-history discriminator;
-   its outcome remains unknown. Compare both branch results and producer burden
-   at Q-021 without scalar cost collapse or automatic winner selection. N31
-   positive evidence does not become P2-I3 evidence; both ecology tracks must
-   generate fresh evidence.
+   the exact bounded-conformance freeze, narrow RCAE producer boundary, and
+   evidence-responsive stronger-alternative rule. Source anchor `94bfe01` and
+   implementation anchor `ce9701c` retain the freeze and implementation. The
+   sole quarantined run passes 11/11 cells and 36/36 checks and reconstructs
+   byte-exactly. DEC-035 corrects schedule ownership, types the fifteen I03
+   closure bases, accepts B-R as operationally expressible, and passes
+   `P2-I3-DISCRIMINATOR-GATE`. Next complete I04 candidate-blind calibration
+   preregistration without consuming any conformance fixture value, topology,
+   split, digest, or margin. Then carry B-R through separately gated
+   calibration, registration, execution, controls, reconstruction, and branch
+   interpretation. Only after B-R branch closeout may C.2 open under separate
+   identities and the same common comparison fields. B-R Q-008 is fixed by
+   DEC-027 as complete current native-plus-policy state with one matched-
+   history discriminator; its outcome remains unknown. Compare both branch
+   results and producer burden at Q-021 without scalar cost collapse or
+   automatic winner selection. N31 and conformance evidence do not become
+   P2-I3 scientific evidence; both ecology tracks must generate fresh evidence.
 5. For every future lane, freeze candidate-blind calibration and exact
    implementation registration before candidate execution, and emit the
    compact lane-local control-resolution index required by R3 before terminal
@@ -1939,6 +1943,9 @@ directive.
 | 2026-07-19 | Revision 0.65 draft: records accepted DEC-030 through DEC-032. The common B-R/C.2 envelope compares eight ecology questions and a three-class, six-dimension unsummed producer-cost vector without presuming shared metrics or an automatic winner. B-R Q-013 receives separate formation-quantity, export-mass, and complete-state/history identities. B-R Q-015 distinguishes exact composite restoration from causal-continuation equivalence, requires manifest-coordinated fail-closed save/load/reset/fork/replay, and defers exact schemas, hashes, horizon, and equality rules to I06. Operational hypotheses and bounded conformance remain next; no calibration, execution, or result authority follows. |
 | 2026-07-19 | Revision 0.66 draft: records owner-accepted DEC-033 and its thirteen B-R operational hypotheses. The projection preserves the frozen L03 rung meanings, three Q-013 contrast identities, Q-015 restoration handoff, lane controls, open directions/outcomes, redirective classifications, and the positive-export boundary for a non-static B-R dynamic. It opens only construction and review of a scientifically quarantined bounded-conformance input freeze; no conformance run, calibration, registration, candidate execution, control outcome, or scientific evidence follows. |
 | 2026-07-19 | Revision 0.67 draft: records owner-accepted DEC-034. The inactive B-R conformance freeze binds accepted RCAE and merged-N31 source identities, eighteen public calls, one result-neutral two-route fixture, eleven conformance cells, narrow RCAE export/encounter/restoration ownership, and a declared-provenance quarantine guard. Eighty-five zero-runtime checks pass. Results may motivate stronger structures later only under new identities and affected reruns; the accepted fixture remains historical evidence and is not retrospectively tuned. The clean source-anchor commit remains required before harness construction or the single conformance run; no discriminator gate, calibration, registration, control outcome, or scientific evidence opens. |
+| 2026-07-19 | Revision 0.68 draft: records clean source anchor `94bfe01` and corrects the P2-I3 handoff so section 8.1.2 visibly delegates to section 8.4 while all fifteen section 8.2 requirements remain evidence-open. Only exact harness construction and one quarantined conformance attempt open. |
+| 2026-07-19 | Revision 0.69 draft: records implementation anchor `ce9701c` and the sole B-R bounded-conformance attempt. Exact binding precedes model construction; 11/11 cells and 36/36 checks pass; the 48,395-byte result reconstructs byte-exactly; all section 8.2 requirements close at the operational boundary; and no scientific effect or downstream authority follows pending review. |
+| 2026-07-19 | Revision 0.70 draft: records DEC-035 and the accepted I03 closeout review. Generated receipt/result identities omitted from the reviewer upload are independently verified. The review corrects scheduling ownership, types the fifteen realization closures instead of treating them as one empirical proof, passes `P2-I3-DISCRIMINATOR-GATE` without rerun, and opens I04 preregistration only. Conformance fixture values, topology, observed split, digests, and margins remain prohibited downstream. |
 
 ## 18. Program completion criteria
 
