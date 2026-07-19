@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.67 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.68 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R conformance freeze accepted and inactive | P2-GATE | DEC-026 defines two isolated route tracks; DEC-027 through DEC-034 fix B-R mode/law/encounter, comparison, hypotheses, and the inactive conformance boundary; clean-source harness/conformance, C.2, and scientific execution remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R conformance construction open from source anchor `94bfe01` | P2-GATE | DEC-026 defines two isolated route tracks; DEC-027 through DEC-034 fix B-R mode/law/encounter, comparison, hypotheses, and conformance input; all realization requirements await bounded conformance, while C.2 and scientific execution remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1410,6 +1410,11 @@ Entry condition:
 - [x] Record DEC-034: accept the exact inactive B-R conformance freeze, narrow
   producer boundary, 85 zero-runtime checks, mechanical declared-provenance
   quarantine, and separately identified stronger-proof follow-ups.
+- [x] Retain the accepted freeze in clean source-anchor commit `94bfe01` and
+  project the active P2-I3 section 8.1.2 program boundary into section 8.4.
+  Open only exact runtime-module/harness construction plus one quarantined
+  bounded-conformance run; all section 8.2 capability requirements remain open
+  until that run resolves them individually.
 
 Current continuation:
 
@@ -1423,7 +1428,8 @@ committed RCAE P2-I3 demand state
 -> common comparison and Q-013/Q-015 design resolved under DEC-030 through DEC-032
 -> B-R operational hypotheses accepted under DEC-033
 -> bounded B-R conformance input freeze accepted under DEC-034
--> commit the freeze as clean source anchor
+-> freeze retained by clean source anchor `94bfe01`
+-> construct the exact runtime module/harness
 -> complete bounded B-R conformance
 -> execute and close B-R under route-scoped gates
 -> execute and close C.2 under separate route-scoped gates
@@ -2405,6 +2411,7 @@ Change log:
 | CL-068 | 2026-07-19 | Revision 0.65 draft records accepted DEC-030 through DEC-032. The common comparison freezes eight ontology-neutral science axes, a three-class/six-dimension unsummed producer-cost vector, and prospective C.2 influence provenance. B-R Q-013 separates formation quantity, export mass, and complete-state/history. B-R Q-015 separates exact composite restoration from causal-continuation equivalence with fail-closed composition and clean branch/replay rules. | P2-I3 B-R pre-conformance design boundary | Comparison and B-R Q-013/I03-Q-015 design resolved; operational hypotheses, bounded conformance, exact I06 finalization, calibration, registration, execution, C.2, and every result gate remain open |
 | CL-069 | 2026-07-19 | Revision 0.66 draft records owner-accepted DEC-033 and thirteen B-R operational hypotheses covering repeated formation, route-local persistence, conservative non-static export, local encounter, mediation, three Q-013 contrasts, controls, R05 variation, and bounded trail/stigmergic interpretation. | P2-I3 B-R operational-hypothesis boundary | Opens only bounded conformance input-freeze construction and review; no conformance, calibration, execution, control outcome, or scientific result |
 | CL-070 | 2026-07-19 | Revision 0.67 draft records owner-accepted DEC-034. The inactive freeze binds exact RCAE/graph sources, eighteen public calls, a result-neutral two-route fixture, eleven cells, narrow RCAE ownership, composite restoration/refusal, and declared-provenance quarantine; 85 zero-runtime checks pass. Stronger later structures remain allowed only under new identities and affected reruns. | P2-I3 B-R conformance-freeze acceptance | Clean source-anchor commit is next; no harness/runtime, discriminator gate, calibration, registration, control outcome, or scientific result yet |
+| CL-071 | 2026-07-19 | Revision 0.68 draft records clean source anchor `94bfe01` and corrects the post-commit P2-I3 lane/master handoff. Section 8.1.2 now exposes the active B-R program position in section 8.4; section 8.2 is explicitly contract-frozen but remains evidence-open pending the bounded conformance run. | P2-I3 B-R conformance activation and checklist visibility | Opens only exact harness construction and one quarantined conformance run; no B-R closeout, runtime evidence, 8.2 closure, discriminator gate, calibration, registration, execution, or scientific result yet |
 
 ## 17. Current next actions
 
@@ -2520,6 +2527,8 @@ The next unchecked actions in dependency order are:
 32. [x] Construct, review, and accept the bounded B-R runtime-conformance input
     freeze under DEC-034, preserving stronger future structures through new
     identities rather than retrospective tuning.
-33. [ ] Commit the accepted freeze as the clean source anchor, construct its
-    exact runtime module/harness, and complete the single bounded conformance
-    run before calibration or candidate work.
+33. [x] Commit the accepted freeze as clean source anchor `94bfe01` and record
+    that section 8.2 remains contract-frozen but evidence-open.
+34. [ ] Construct the exact runtime module/harness and complete the single
+    quarantined bounded-conformance run, resolving every section 8.2
+    requirement before calibration or candidate work.
