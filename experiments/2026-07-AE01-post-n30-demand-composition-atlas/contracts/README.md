@@ -128,8 +128,13 @@ both-relation coverage, and recomputes identities and arithmetic. The retained
 focused tests.
 
 No launch-authorization record, permanent claim, governed output, calibration
-invocation, or `delta` exists. The owner accepted `1.0.2` for exact retention
-only; clean-commit validation and full source identity precede any launch.
+invocation, or `delta` exists. The owner accepted `1.0.2` for exact retention,
+and `p2-i3/i05-br-retention-validation.json` binds clean retention commit
+`d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, the accepted source digests,
+50 passing tests, 42 passing checks, and byte-exact reconstruction. That record
+has SHA-256
+`f956eebe1695c62131f7b5cbc107f581eb5ee654a36ca5dcdf5c4f9668328e61`
+and retention effect only; a separate launch authorization remains required.
 
 ## P2-I1 registration materialization
 

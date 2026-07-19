@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.82 draft
+**Baseline revision:** 0.83 draft
 
 **Date:** 2026-07-19
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.79 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.83 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 inactive freeze `1.0.2` accepted for retention | P2-GATE | DEC-041 remains unchanged; 50 focused tests and 42 zero-calibration checks pass; owner permits retention commit only, with no launch record, claim, output, or `delta` |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 inactive freeze `1.0.2` retained and clean-commit validated | P2-GATE | DEC-041 remains unchanged; exact commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5` re-passes 50 focused tests, 42 zero-calibration checks, and byte-exact reconstruction; launch authorization remains separate and no claim, output, or `delta` exists |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1497,7 +1497,8 @@ committed RCAE P2-I3 demand state
 -> owner accepts I04 and P2-I3-CAL-PRE-GATE passes
 -> DEC-041 selects the half-unit arithmetic construction
 -> corrected inactive I05 invocation freeze `1.0.2` passes 50 tests and 42 checks
--> owner review and retention commit of the inactive freeze
+-> owner review and retention commit of the inactive freeze at `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`
+-> clean-commit tests, 42-check reconstruction, and full source identity retained
 -> separate launch authorization and single governed calibration invocation
 -> separately gated B-R calibration and exact registration
 -> execute and close B-R under route-scoped gates
@@ -2498,6 +2499,7 @@ Change log:
 | CL-083 | 2026-07-19 | Revision 0.80 draft applies the first bounded I05 review without reopening DEC-041. It explicitly enters five `m_trace` plus five `m_export` margins, recomputes case/arm/pair/rational/triplet/relation/`delta` semantics before writes and after readback, and closes activation, attempt-claim, and final-receipt contracts. | P2-I3 B-R first corrected I05 review boundary | Superseded before acceptance by CL-084 after final launch-safety audit; zero calibration calls |
 | CL-084 | 2026-07-19 | Revision 0.81 draft applies the owner-approved launch-safety correction as package `1.0.2` without reopening DEC-041. It derives normalized margins and `delta` directly from exact rational fields, freezes non-circular launch bindings over source/command/environment/paths, fsyncs claim file and parent, revalidates authority after claim, completes receipt counts, and injects failures at thirteen temporary transaction boundaries. | P2-I3 B-R final inactive-freeze review boundary | Review-ready; 50 tests and 42 zero-calibration checks pass byte-exactly; no launch record, claim, output, `delta`, CAL-GATE passage, I06, or scientific/ecology result exists |
 | CL-085 | 2026-07-19 | Revision 0.82 records final owner acceptance of I05 inactive freeze `1.0.2` without changing DEC-041 or any machine identity. | P2-I3 B-R I05 inactive-freeze retention authority | Exact retention commit is authorized; clean-commit validation/full source identity must follow before launch authorization, while calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed |
+| CL-086 | 2026-07-19 | Revision 0.83 records exact inactive-freeze retention commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`, tree and parent identities, accepted source digests, 50 passing clean-commit tests, 42 passing zero-calibration checks, byte-exact reconstruction, clean source state, and absence of every governed launch/output path. | P2-I3 B-R I05 clean source-retention boundary | Retention identity is complete; construction and review of a separate launch authorization is next, while invocation, `delta`, CAL-GATE, I06, C.2, and scientific/ecology work remain closed |
 
 ## 17. Current next actions
 
@@ -2648,7 +2650,7 @@ The next unchecked actions in dependency order are:
 44. [x] Review and accept inactive I05 freeze `1.0.2`; authorize only its exact
     retention commit without creating launch authorization or consuming the
     attempt.
-45. [ ] Revalidate from the exact clean retention commit and retain its full
+45. [x] Revalidate from the exact clean retention commit and retain its full
     40-character source identity without creating launch authority or outputs.
 46. [ ] After the committed and revalidated freeze exists, create and review a separate launch
     authorization before the sole governed calibration invocation.

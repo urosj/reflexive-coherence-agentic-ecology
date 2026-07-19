@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.82 draft
+**Plan revision:** 0.83 draft
 
 **Date:** 2026-07-19
 
@@ -1840,9 +1840,11 @@ Current dependency order after revision 0.79 draft:
    launch-hardened package `1.0.2` passes 50 tests and 42 zero-calibration
    checks. Both estimator relations, exact-rational derivation, durable claim,
    post-claim revalidation, semantic readback, failure residues, and
-   activation/claim/receipt contracts are explicit. Next review and
-   commit that freeze, then create a separate launch authorization before any
-   matched-null operation. Then carry B-R through separately gated
+   activation/claim/receipt contracts are explicit. The accepted freeze is
+   retained at full commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`;
+   50 focused tests, 42 zero-calibration checks, and byte-exact reconstruction
+   pass again from that clean commit. Next create and review a separate launch
+   authorization before any matched-null operation. Then carry B-R through separately gated
    calibration, registration, execution, controls, reconstruction, and branch
    interpretation. Only after B-R branch closeout may C.2 open under separate
    identities and the same common comparison fields. B-R Q-008 is fixed by
@@ -1989,6 +1991,7 @@ directive.
 | 2026-07-19 | Revision 0.80 draft: applies the bounded I05 machine-contract review without reopening DEC-041. All five exact-null cases now contribute one `m_trace` and one `m_export` margin; a digest-bound semantic validator recomputes exact identities, canonical rationals, triplets, relation coverage, maximum null margin, and `delta` before writes and after readback. Closed activation, attempt-claim, and final-receipt records make successful exact closeout mandatory for output or `delta` admission. Twenty-seven tests and 39 static checks pass with byte-exact freeze reconstruction and zero calibration calls; owner review/commit remains next. |
 | 2026-07-19 | Revision 0.81 draft: applies the owner-approved launch-safety correction as I05 package `1.0.2` without reopening DEC-041. Normalized margins and `delta` now derive from exact rational response fields; activation binds source, command, environment, claim, and output authority without circular self-commit identity; claim bytes and parent directory are fsynced; HEAD/authority/environment/output state is rechecked after consumption; and the final receipt names five cases and ten margins. Thirteen injected temporary-path transaction boundaries extend the focused suite to 50 tests; retained validation passes 42 checks byte-exactly with zero calibration calls. Retention commit and exact clean-commit validation remain next. |
 | 2026-07-19 | Revision 0.82: records final owner acceptance of I05 inactive freeze `1.0.2`. DEC-041 and all package identities remain unchanged. Acceptance authorizes only the exact retention commit; clean-commit tests, 42-check reconstruction, byte comparison, and retention of the full 40-character source identity must follow before launch authorization. Calibration, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
+| 2026-07-19 | Revision 0.83: retains I05 inactive freeze `1.0.2` at exact source commit `d054c4df8491ea8f5cc3b13dcb10b222cf8973d5` and records its tree, parent, accepted source digests, 50 clean-commit tests, 42 zero-calibration checks, byte-exact reconstruction, clean repository state, and absent governed paths. Source retention is complete; a separate launch authorization may now be constructed and reviewed, but invocation, `delta`, CAL-GATE, I06, C.2, and all scientific/ecology work remain closed. |
 
 ## 18. Program completion criteria
 

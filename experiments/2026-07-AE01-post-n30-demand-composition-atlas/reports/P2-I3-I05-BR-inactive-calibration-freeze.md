@@ -1,6 +1,6 @@
 # P2-I3 I05 B-R Inactive Calibration Freeze
 
-**Status:** owner-accepted for retention; inactive; calibration not invoked
+**Status:** retained and clean-commit validated; inactive; calibration not invoked
 
 **Iteration:** `P2-I3-I05`
 
@@ -11,8 +11,8 @@
 
 **Evidence effect:** inactive invocation-integrity evidence only
 
-**Owner disposition:** package `1.0.2` accepted on 2026-07-19; retention commit
-only
+**Owner disposition:** package `1.0.2` accepted on 2026-07-19 and retained at
+`d054c4df8491ea8f5cc3b13dcb10b222cf8973d5`
 
 ## 1. Outcome
 
@@ -37,6 +37,11 @@ the same across W/O/E and all five exact-null cases.
 Fifty focused tests and 42 static checks pass. They call no complete
 calibration builder, create no governed claim or output, import no PyGRC, and
 assign no `delta`.
+
+The same 50 tests and 42 checks passed again from the exact clean retention
+commit. The retained validation reconstructed byte-exactly, the repository was
+clean before and after verification, and no launch authorization, claim,
+receipt, governed output, or `delta` existed.
 
 The first bounded review correction makes the shared calibration explicit: every
 one of the five entered cases contributes exactly one `m_trace` and one
@@ -178,6 +183,26 @@ byte-exact reconstruction
 
 The reconstruction target is non-retained and may be removed after comparison.
 
+### 6.1 Clean-commit retention identity
+
+The post-commit
+[retention validation](../contracts/p2-i3/i05-br-retention-validation.json)
+binds the complete source identity and reconstruction outcome:
+
+```text
+retention commit = d054c4df8491ea8f5cc3b13dcb10b222cf8973d5
+tree             = ac40cd5002a2c2942b1afe4e99f234d9b7951ac6
+parent           = 1097547ad30b77d4cf9312fb05753902f6d1cc81
+retention record = f956eebe1695c62131f7b5cbc107f581eb5ee654a36ca5dcdf5c4f9668328e61
+focused tests    = 50 passed
+freeze checks    = 42 passed
+reconstruction   = byte-exact
+calibration calls = 0
+```
+
+This record completes retention identity only. It is not launch authority and
+does not pass `P2-I3-CAL-GATE`.
+
 ## 7. Review boundary
 
 Review should confirm only:
@@ -191,10 +216,10 @@ Review should confirm only:
    and
 6. acceptance opens a retention commit, not calibration invocation.
 
-The owner has accepted the package for retention. It must be committed without
-launch authority or governed output, then reconstructed from that exact clean
-source commit. A separate record must retain the full
-40-character identity. Only afterward may a separate launch authorization and
-explicit direction be constructed for the sole calibration invocation.
+The owner accepted the package for retention. It was committed without launch
+authority or governed output, reconstructed from that exact clean source
+commit, and retained through the full 40-character identity above. A separate
+launch authorization and explicit direction may now be constructed and
+reviewed for the sole calibration invocation.
 `P2-I3-CAL-GATE`, I06, B-R candidate execution, C.2, and every scientific or
 ecology result remain closed.
