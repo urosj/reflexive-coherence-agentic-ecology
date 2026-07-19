@@ -94,8 +94,9 @@ This repository is intended for:
   for the method that turns those concepts into bounded evidence.
 - Read the [AE01 Agentic-Ecology View](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
   for the current P2-I1, P2-I2, and appendix results and their limits.
-- Read the [P2-I3 to N31 derived-decay/primitive-semantics handoff](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
-  for the active graph/ecology spiral boundary and exact return procedure.
+- Read the [P2-I3 N31 handoff and return contract](experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-N31-decay-primitive-handoff.md)
+  for the completed graph/ecology spiral handoff, admitted return, and exact
+  B-R-first/C.2-second resumption boundary.
 
 ## What this repository is
 
@@ -129,13 +130,20 @@ L03–L07 and cross-lane synthesis unexecuted.
 P2-I3 has nevertheless advanced through pre-execution source and realization-
 design work. Its source-audit and source-admission gates passed; Q-003/Q-004
 selected the provisional node carrier and mixed native/RCAE ownership
-available before a decay primitive was defined. The Q-005 study then showed
-that release attenuation, conserved leakage, and susceptibility relaxation
-are different added-mechanism meanings. DEC-023 therefore pauses P2-I3 and
-hands the question to graph-project N31. DEC-024 adds the prior coherence-only
-hypothesis: N31 must first test whether ordinary `C/J_C` evolution already
-produces causal weakening without an additional decay state. This is a demand
-and continuation state, not an L03 result or native decay evidence.
+available before a decay primitive was defined. The Q-005 study separated
+coherence-only evolution, release attenuation, conserved redistribution, and
+susceptibility closure. Graph-project N31 has now returned exact B-R
+conservative-redistribution and C.2 exact-history-susceptibility provider
+contracts. Accepted DEC-025 admits both only as unselected options and passes
+`P2-I3-N31-RETURN-GATE`. DEC-026 resolves Q-005 as a staged B-R-first,
+C.2-second evidence program followed by comparison; it does not select a lane
+winner. DEC-027 through DEC-029 resolve the B-R current-state/history mode,
+serialized conservative lifecycle, and paired local native-departure
+encounter. The common comparison envelope, Q-013/Q-015 design, operational
+hypotheses, and bounded conformance remain next. The retained `0.0.0` versus
+source-declared/reconstructed `0.1` value is classified as a bounded
+distribution-metadata error with no provider-contract effect. This is graph
+evidence and continuation authority, not an L03 result or provider adoption.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -197,8 +205,9 @@ and shared-medium participation before implementation claims are made.
   L01 result. P2-I2 is closed with an accepted 234-entry L02 main result,
   independent reconstruction, an Appendix A operation-complementarity result,
   and an Appendix B terminal-P temporal discriminator. P2-I3 has passed its
-  source audit/admission work and is intentionally paused at Q-005 under the
-  DEC-023/024 D0-first N31 handoff; no L03 candidate has executed. L04–L07 and
+  source audit/admission and N31 return-admission work. DEC-026 opens only B-R
+  realization design before a separate C.2 track and later comparison; no L03
+  candidate has executed. L04–L07 and
   cross-lane synthesis remain unexecuted. New readers can begin with the
   [general experiment bridge](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
   and then read the

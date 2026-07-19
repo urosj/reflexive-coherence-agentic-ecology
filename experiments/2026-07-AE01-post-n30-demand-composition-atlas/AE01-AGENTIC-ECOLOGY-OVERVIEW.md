@@ -5,8 +5,9 @@
 **Experiment:** `AE01` — Post-N30 Demand and Composition Atlas
 
 **Current atlas rung:** `AE01-C2`; L01/P2-I1 and the main L02/P2-I2 result are
-owner-accepted; P2-I3 is paused before execution at its DEC-023/024 D0-first
-N31 handoff, while L03–L07 results and cross-lane synthesis remain unexecuted
+owner-accepted; P2-I3 has admitted the exact N31 return under DEC-025 and
+accepted separate B-R-first and C.2-second tracks under DEC-026, while L03–L07
+results and cross-lane synthesis remain unexecuted
 
 **Role:** AE01-specific narrative orientation; machine evidence, closeouts,
 and decision records retain scientific authority
@@ -105,7 +106,7 @@ compared:
 | --- | --- | --- |
 | `AE01-L01` | Can shared history differentially condition later possibility across matched susceptibilities? | Owner-accepted bounded result via P2-I1 |
 | `AE01-L02` | Can multiple attributable operations constitute one functional non-private pool state/history? | Owner-accepted main result via P2-I2; appendices refine the mechanism |
-| `AE01-L03` | Can costly repeated activity create decay, reinforcement, saturation, or maintenance dynamics beyond static trace persistence? | Pre-execution P2-I3 I03 paused at Q-005; DEC-023/024 select a D0-first N31 handoff |
+| `AE01-L03` | Can costly repeated activity create decay, reinforcement, saturation, or maintenance dynamics beyond static trace persistence? | Pre-execution P2-I3 I03; B-R-first and C.2-second tracks accepted; B-R Q-006 through Q-008 resolved and pre-conformance design next |
 | `AE01-L04` | Can produced, depleted, leaking, or maintained support differentially govern fragile and robust formation? | Not executed |
 | `AE01-L05` | Can a maintained selective interface govern exchange, leakage, transformation, repair, and closure? | Not executed |
 | `AE01-L06` | Can capacity complete a budget-closing depletion/replenishment or return cycle with floors and leakage? | Not executed |
@@ -336,22 +337,25 @@ AE01 does not currently establish:
 - support-field economy, maintained selective boundaries, or budget-closing
   circulation;
 - parent-basin modulation above the inherited ceiling; or
-- an executed, admitted, or RCAE-consumed N31 coherence-derived relation,
-  closure, or decay primitive.
+- an executed or selected P2-I3 realization of an N31 relation, closure, or
+  decay provider.
 
 The atlas remains at `AE01-C2` precisely because five lanes and the later
 synthesis, control/debt, and selection gates remain open.
 
 ## What happens next
 
-P2-I3 first waits for graph-project N31 to test whether ordinary `C/J_C`
-evolution supplies causal decay without additional state, then discriminate
-and, if warranted, specify a closure, extension, or decay primitive. It then
-resumes through the exact source-transition and Q-005-through-Q-008 procedure
-in the
-[handoff contract](implementation/P2-I3-N31-decay-primitive-handoff.md); N31
-cannot discharge the lane's ecology topology, traversal encounter, controls,
-or result. L04–L07 must likewise define and test their ecology-specific
+Graph-project N31 has returned exact B-R conservative-redistribution and C.2
+exact-history-susceptibility contracts after testing coherence-only D0 first.
+P2-I3 has admitted both as unselected options through the exact source
+transition in the
+[handoff contract](implementation/P2-I3-N31-decay-primitive-handoff.md).
+DEC-026 resolves Q-005 by evaluating B-R first and C.2 second under separate
+identities, then comparing ecology results and vector producer burden before
+Q-021 retains either, both as alternatives, a composition proposal, or neither.
+N31 cannot discharge the
+lane's ecology topology, traversal encounter, controls, or result. L04–L07
+must likewise define and test their ecology-specific
 discriminators rather than replay inherited graph capabilities. Only after all
 terminal records exist may AE01 compare normalized requirements, use leave-
 one-lane-out recurrence controls, assess shared fixture dependence, and either

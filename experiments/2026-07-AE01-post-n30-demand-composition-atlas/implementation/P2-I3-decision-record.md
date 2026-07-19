@@ -2,8 +2,12 @@
 
 **Status:** active cumulative lane decision record; initial governance package
 accepted, `P2-I3-BRIEF-GATE`, `P2-I3-SOURCE-AUDIT-GATE`, and
-`P2-I3-SOURCE-ADMISSION-GATE` passed; I03 intentionally paused at Q-005 for
-the DEC-023/DEC-024 N31 graph-side derived-decay/primitive-semantics handoff
+`P2-I3-SOURCE-ADMISSION-GATE` passed; N31 has returned and the bounded
+DEC-025 source transition is accepted and `P2-I3-N31-RETURN-GATE` passed; I03
+now begins a staged B-R-first, C.2-second evaluation under DEC-026; neither
+provider is selected as the lane result; DEC-027 resolves only the B-R
+instance of Q-008; DEC-028 resolves only the B-R instance of Q-006; DEC-029
+resolves only the B-R instance of Q-007
 
 **Lane:** `AE01-L03`
 
@@ -87,6 +91,11 @@ No decision may be inferred from:
 | `P2-I3-DEC-022` | Which required functions are native, producer-assisted, constructed, unsuitable, or missing under Q-004? | Mixed ownership: native LGRC state/packet/restoration core plus explicit RCAE completion and controls | Fixes ownership truth and naturalization debt; opens Q-005 without selecting the dynamic or equation | 2026-07-16 |
 | `P2-I3-DEC-023` | Should RCAE choose a decay implementation locally or return the missing primitive question to graph/LGRC? | Pause P2-I3 at Q-005 and select an N31 decay-semantic/native-primitive experiment through the cross-project spiral | Replaces the local two-implementation proposal with a graph handoff and exact P2-I3 return contract; Q-005 remains unresolved | 2026-07-16 |
 | `P2-I3-DEC-024` | Must N31 first test whether ordinary coherence evolution already supplies bounded decay without an additional state? | Yes; D0 coherence-only derived decay is first, with causal slow organization separated from a fading graph observable | Amends the N31 demand and return paths, binds the theory/substrate/code authority split, and does not reopen gates or authorize P2-I3 implementation | 2026-07-16 |
+| `P2-I3-DEC-025` | Can the exact N31 return and its two provider contracts be admitted despite incorrect retained PyGRC distribution metadata, without selecting a P2-I3 provider? | Accepted by project owner: admit B-R and C.2 as exact unselected options; retain the `0.0.0`/`0.1` distribution-metadata error and require fresh RCAE evidence | Passes `P2-I3-N31-RETURN-GATE` and opens only Q-005 plus affected DEC-021/022 comparison | 2026-07-19 |
+| `P2-I3-DEC-026` | Should Q-005 select one N31 provider before evidence, or evaluate both and compare their ecology results and producer cost? | Accepted by project owner: execute separate B-R-first and C.2-second tracks, then compare without automatic winner selection | Resolves Q-005 as a two-route candidate program; opens only B-R realization decisions first and keeps C.2 execution inactive until B-R branch closeout | 2026-07-19 |
+| `P2-I3-DEC-027` | For the B-R track, is complete current state or active formation history the primary continuation mode under Q-008? | Accepted by project owner: current composite state is primary, with one mandatory complete-state-matched formation-history discriminator | Resolves only B-R Q-008; Q-006/Q-007 and all conformance or later gates remain open | 2026-07-19 |
+| `P2-I3-DEC-028` | What exact B-R field equation, units, update order, receipt lifecycle, and invariants resolve Q-006? | Accepted by project owner: repeated event-indexed conservative redistribution from a registered route source through the native carrier to an isolated reservoir | Resolves only B-R Q-006; Q-007, conformance, calibration, registration, execution, and all result gates remain open | 2026-07-19 |
+| `P2-I3-DEC-029` | How does a later B-R probe encounter the local field without a hidden global selector under Q-007? | Accepted by project owner: paired independent branch-local fixed native departure requests, with LGRC9V3 alone deciding admission from local carrier coherence | Resolves only B-R Q-007; common comparison, Q-013/Q-015, conformance, calibration, registration, execution, and all result gates remain open | 2026-07-19 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -1565,7 +1574,1046 @@ a classified missing-surface probe, or that a newly admitted theory explicitly
 requires an additional primitive. Failure of current PyGRC representation
 alone does not invalidate D0; it receives a distinct missing-surface result.
 
-## 27. Open decision register
+## 27. `P2-I3-DEC-025` — Bounded N31 return admission
+
+### Question
+
+Can RCAE admit N31's exact graph-side classifications and reusable provider
+contracts when closeout reconstruction exposes incorrect installed PyGRC
+distribution metadata, while preserving the rule that provider adoption and
+positive ecology evidence must be generated afresh?
+
+### Evidence inspected
+
+The bounded return pass inspected:
+
+- the graph `main` merge tree, N31 closeout commit, I11 source anchor, and the
+  committed RCAE demand-source lineage;
+- the exact N31 closeout, all eleven source-artifact-manifest entries, and
+  their internal output digests;
+- the B-R and C.2 reusable contracts, candidate disposition matrix,
+  claim/debt register, and RCAE recommendation;
+- the source-anchor `pyproject.toml` and installed reconstruction package
+  identity; and
+- a fresh I12 builder run in a temporary clone at the exact source anchor.
+
+The retained closeout records `pygrc_version=0.0.0`, while the exact source
+declares and installs `0.1`. All N31 builder checks pass under `0.1`. Five
+return artifacts, including both provider contracts, reconstruct byte-exactly.
+Only the source-authority record, top-level closeout, and trace differ, and
+only in the version field or its dependent digests.
+
+### Considered dispositions
+
+#### Option A — reject the complete N31 return
+
+This would treat inconsistent environment metadata as if it invalidated exact
+provider semantics and controls. It is too strong because no scientific or
+provider-contract byte differs.
+
+#### Option B — silently regenerate N31 artifacts with version `0.1`
+
+This would rewrite graph evidence from RCAE and destroy the exact historical
+closeout identity. It is forbidden.
+
+#### Option C — bounded admission with explicit metadata error
+
+Admit the committed graph result and exact provider contracts, retain both
+historical and reconstructed environment identities, enumerate every allowed
+reconstruction difference, and prohibit provider selection or evidence
+transfer in this transition.
+
+### Accepted resolution
+
+Select Option C. The exact machine authority is the
+[N31 return-admission manifest](../contracts/p2-i3/i03-n31-return-admission.json),
+its [validation result](../contracts/p2-i3/i03-n31-return-validation.json), and
+the [interpretive report](../reports/P2-I3-N31-return-admission.md).
+
+The project owner classifies the retained `pygrc_version=0.0.0` value as a
+distribution-metadata error. The source has always declared `0.1`, the current
+editable import resolves directly to the admitted graph source, protected
+runtime code is unchanged across the admitted source/closeout boundary, and
+both provider contracts reconstruct byte-exactly. The historical value and
+its digest cascade remain retained rather than rewritten.
+
+The transition admits:
+
+- B-R conservative coherence redistribution at
+  `DR5_producer_mediated`, with reusable semantics at
+  `DR6_contract_only`; and
+- C.2 exact packet-history-derived susceptibility at relation `DR2`,
+  producer extension `DR5`, native constitutive surface `DR0`, and reusable
+  semantics at `DR6_contract_only`.
+
+Both remain `admitted_option_not_selected`. Their producer-mediated status is
+valid graph evidence and is not a reason to prefer or reject either option.
+Nativity remains implementation-ownership and claim-boundary metadata. P2-I3
+must choose by ecology semantics, carrier, topology, encounter, controls, and
+restoration adequacy.
+
+The B-R+C.2 possibility is retained only as a new composition candidate. It
+cannot inherit either individual DR5 result and requires separate attribution
+and interference controls.
+
+### Effect on existing decisions
+
+- DEC-020 remains fixed: every executable route is LGRC9V3-based.
+- DEC-021 is neither retained nor reopened by admission alone. B-R adds an
+  explicit destination topology; C.2 makes a history-derived relational
+  carrier load-bearing.
+- DEC-022 is neither retained nor reopened until selection. The two contracts
+  provide the exact ownership rows that the selected route must consume.
+- DEC-023's return-bundle condition is satisfied.
+- DEC-024's D0-first question is answered: native D0a organization reaches
+  DR2, but ordinary autonomous weakening was not found in the tested domain.
+
+### Gate and evidence effect
+
+`P2-I3-N31-RETURN-GATE` has passed. It opens only the Q-005 semantic/provider
+decision and its affected DEC-021/022 comparison. It does
+not pass `P2-I3-DISCRIMINATOR-GATE`, authorize I03 conformance, admit N31
+positive evidence as P2-I3 evidence, or open calibration, registration, or
+execution.
+
+### Reopening condition
+
+Reopen the source transition if the admitted graph merge no longer contains
+the exact closeout tree, any provider contract or source-manifest artifact
+fails its exact identity, reconstruction differences exceed the frozen JSON
+pointer envelope, or new graph evidence changes a load-bearing semantic or
+ownership boundary. Do not reopen it merely because one option is
+producer-mediated or later remains unselected.
+
+## 28. `P2-I3-DEC-026` — Staged B-R and C.2 evaluation
+
+### Question
+
+Should Q-005 select one returned provider from graph evidence alone, or should
+P2-I3 generate fresh ecology evidence for both B-R and C.2 and evaluate their
+results together with the cost of their producer residue?
+
+### Considered paths
+
+1. Select B-R immediately because it is closer to the provisional
+   node-coherence carrier.
+2. Select C.2 immediately because it gives history a direct relational role.
+3. Construct both simultaneously under one shared topology and implementation.
+4. Evaluate B-R first and C.2 second under separate realization identities,
+   then compare ecology evidence, producer burden, and naturalization debt.
+5. Select neither provider without executing either.
+
+Options 1 and 2 would turn N31's conditional graph result into premature
+ecology selection. Option 3 would assume the topology equivalence already
+rejected during the original Q-005 study and could hide which mechanism caused
+the result. Option 5 remains a legitimate final outcome, but it would discard
+the owner's requested opportunity to learn from both returned contracts.
+
+### Accepted resolution
+
+Select Option 4:
+
+```text
+P2-I3-BR
+  B-R realization, conformance, calibration, registration, execution,
+  controls, reconstruction, and branch interpretation
+
+then
+
+P2-I3-C2
+  C.2 realization, conformance, calibration, registration, execution,
+  controls, reconstruction, and branch interpretation
+
+then
+
+P2-I3-COMPARE
+  ecology-result and producer-cost comparison
+  -> retain B-R, retain C.2, retain both as alternatives,
+     propose a separately governed composition, or select none
+```
+
+The order is developmental, not a ranking. B-R goes first because its
+conservative redistribution semantics can initially retain node coherence as
+the local source carrier while making its destination/reservoir topology and
+producer-owned export lifecycle explicit. C.2 follows because it more deeply
+reopens the carrier boundary: packet history becomes a load-bearing relational
+surface and the producer applies the history functional, effective
+conductance, and scheduling.
+
+DEC-012's proportional one-realization default is explicitly widened for this
+lane. N31 demonstrated that B-R and C.2 are distinct causal ontologies, and the
+owner has requested evidence about both rather than a pre-evidence selection.
+This is the demonstrated necessity and explicit owner authority DEC-012
+requires for multiple full realization tracks.
+
+### Independence and permitted reuse
+
+B-R and C.2 MUST have separate:
+
+- realization, topology, carrier, equation, and ownership identities;
+- calibration and registration artifacts;
+- execution activation and retained evidence;
+- controls, reconstruction, branch interpretation, and producer-cost record;
+- terminal branch disposition.
+
+They MAY reuse evidence-neutral infrastructure:
+
+- schemas, validators, runner interfaces, telemetry event shapes;
+- common causal-obligation and claim-boundary vocabulary;
+- reconstruction utilities and report templates; and
+- the producer-cost ledger defined below.
+
+No shared topology, field state, causal equation, runtime adapter, threshold,
+or result may be presumed. Reuse requires demonstrated semantic equivalence;
+code convenience is not evidence of equivalence.
+
+### Common comparison envelope
+
+Before B-R candidate work, freeze the common comparison questions without
+freezing C.2's concrete design:
+
+1. Does repeated costly activity create an attributable non-static route-local
+   aftereffect?
+2. Does that aftereffect causally change later local traversal under the
+   registered controls?
+3. What rung, stability/perturbation profile, failure class, and claim ceiling
+   does the branch support?
+4. Which topology, carrier, and history assumptions are load-bearing?
+5. Which functions and state remain producer-owned, and what would native
+   naturalization require?
+6. What new controls and reconstruction obligations exist only because of the
+   producer?
+
+C.2's detailed design may learn from the completed B-R branch, but every
+B-R-derived design input MUST be recorded prospectively before C.2 calibration.
+The final comparison must label this as a sequential developmental comparison,
+not a blind symmetric contest.
+
+### Producer-cost ledger
+
+Producer cost is a vector, not one scalar score or a pass/fail gate. Each
+branch MUST retain at least:
+
+- exact producer-owned operations and their place in the causal chain;
+- producer-owned state, topology, schedules, and serialized continuation
+  state;
+- native calls versus producer decisions and runtime invocation counts;
+- producer-specific controls, restoration checks, replay checks, and failure
+  modes;
+- normalized artifact/state footprint and supplementary runtime/resource
+  measurements;
+- implementation surface size as descriptive metadata, never as the primary
+  scientific metric;
+- naturalization debt and the explicit graph-side surfaces that would remove
+  the producer residue; and
+- producer-omission or neutralization evidence showing whether the claimed
+  relation depends on that residue.
+
+Every cost item MUST also distinguish:
+
+```text
+contract_required
+  residue required by the admitted N31 provider contract
+
+rcae_ecology_required
+  additional producer work required by the L03 topology or local encounter
+
+evidence_only
+  harness, telemetry, control, and reconstruction work that observes or
+  verifies the mechanism but does not produce it
+```
+
+This prevents experimental rigor from being miscounted as mechanism cost and
+prevents RCAE-specific topology work from being attributed to the N31 contract.
+
+A cheaper producer does not automatically win, and a stronger ecology result
+does not erase producer debt. Scientific adequacy and producer burden remain
+separate comparison axes.
+
+### Effect on DEC-021 and DEC-022
+
+- B-R reopens DEC-021 only enough to add an explicit destination/reservoir
+  topology while retaining node coherence as the provisional local source
+  carrier. It reopens DEC-022 to bind the exact B-R export eligibility,
+  amount/cap, time, and destination producer residue.
+- C.2 remains inactive during B-R. When its track opens, it reopens DEC-021
+  under a new branch identity for a packet-history-derived relational carrier
+  and reopens DEC-022 for history-functional application, effective-conductance
+  insertion, and packet scheduling.
+- Neither branch silently replaces the historical DEC-021/022 choice, and a
+  later native implementation cannot silently replace retained producer code.
+
+### Gate and evidence effect
+
+Q-005 is resolved as a two-route candidate-family decision, not as provider
+adoption or an L03 result. Only `P2-I3-BR` realization work may begin. C.2
+construction, any B-R or C.2 candidate execution, the final comparison, and
+the top-level `P2-I3-DISCRIMINATOR-GATE` remain separately gated.
+
+Each track must traverse the existing I03–I11 obligations under route-scoped
+identities. A branch closeout is branch evidence, not the lane terminal record.
+The lane terminal may be authored only after both branch closeouts and the
+comparison record exist, unless a later owner decision explicitly stops the
+program with a classified bounded result.
+
+### Reopening condition
+
+Reopen DEC-026 if a provider contract cannot express the required L03 causal
+chain, branch isolation proves impossible, the common producer-cost ledger
+systematically favors one ontology, new graph evidence changes a provider's
+load-bearing semantics, or the owner explicitly stops after a classified
+branch outcome. Do not skip C.2 merely because B-R succeeds, or reject B-R
+merely because its producer burden is higher, without such a recorded change.
+
+## 29. `P2-I3-DEC-027` — B-R current-state/history mode
+
+### Question
+
+For the B-R branch, should later export and traversal depend on native node
+coherence alone, on a complete current native-plus-policy state, on active
+formation history, or on several full realization modes?
+
+### Considered paths
+
+1. **Native coherence only.** Treat carrier-node `C` as the entire
+   continuation state.
+2. **Current composite state plus one history discriminator.** Treat the
+   complete native LGRC state and current export-policy closure as causal;
+   retain formation history as audit lineage and test state sufficiency.
+3. **Active history primary.** Make a formation-history functional a direct
+   producer input.
+4. **Multiple full B-R modes.** Execute current-state and active-history B-R
+   campaigns independently.
+
+Option 1 omits load-bearing packet, event, receipt, and policy state. Option 3
+adds a history functional not required by conservative redistribution and
+begins to overlap C.2's ontology. Option 4 is disproportionate before the
+bounded discriminator shows that complete current state is insufficient.
+
+### Accepted resolution
+
+Select Option 2 under the branch-local identity:
+
+```text
+P2-I3-BR-Q008
+  primary_mode = current_composite_state_carried
+  mandatory_discriminator = complete_state_matched_formation_history
+  active_history_primary = false
+  multiple_full_B_R_modes = false
+```
+
+The complete continuation state includes at least:
+
+- the full native LGRC9V3 restoration identity rather than one projected
+  carrier value;
+- all continuation-relevant node coherence, conductance, packet-ledger,
+  pending-event, event-time, phase, and native scheduling state;
+- the registered B-R export-policy identity;
+- eligible and consumed lifecycle receipts;
+- pending exports and their exact source, amount, time, destination, and
+  lineage;
+- route boundary, explicit reservoir, and later-probe continuation state; and
+- every current input later admitted by Q-006 and Q-007.
+
+Route mass and route organization are derived measurements, not separately
+stored causal variables. Immutable audit lineage may differ between matched
+arms only after validation proves that neither native runtime nor any producer
+reads it.
+
+### Mandatory discriminator
+
+Construct two arms with:
+
+```text
+same complete continuation state at t*
++ different attributable formation histories
++ identical future lifecycle receipts and probe opportunity
+-> compare future export and traversal trajectories
+```
+
+The formed arm is the only arm that may satisfy costly attributable formation.
+A false-installed or differently formed arm may test state sufficiency but
+cannot inherit the formation claim.
+
+Interpret outcomes as follows:
+
+- matching futures support current-composite-state sufficiency at the tested
+  boundary;
+- a difference caused by audit-only lineage exposes an invalid hidden-history
+  read;
+- a difference caused by an omitted packet, queue, phase, receipt, cursor, or
+  schedule means the state match was incomplete;
+- a difference after a verified complete match reopens Q-008 as a genuine
+  active-history or missing-state result rather than automatically promoting
+  B-R; and
+- inability to construct the matched state is a classified realization or
+  restoration limitation, not negative L03 evidence.
+
+### Producer-cost effect
+
+Current policy receipts and their consumed/pending state count as
+`contract_required` or `rcae_ecology_required` producer state according to
+their exact origin. Audit-only history and comparison harness work count as
+`evidence_only`. A producer that reads the raw formation trajectory would
+change the accepted mode and must reopen this decision.
+
+### Gate and evidence effect
+
+This resolves only the B-R instance of Q-008. It does not resolve B-R Q-006 or
+Q-007, open B-R conformance, make the state-sufficiency outcome positive,
+authorize calibration, or constrain the later C.2 instance of Q-008.
+
+### Reopening condition
+
+Reopen DEC-027 if Q-006 or Q-007 adds continuation-relevant state omitted
+above; bounded conformance cannot restore the native-plus-policy identity; the
+state-matched discriminator cannot be constructed; verified complete-state
+matches diverge; or a producer must read formation history to implement B-R.
+
+## 30. `P2-I3-DEC-028` — B-R conservative repeated-lifecycle law
+
+### Question
+
+What exact field equation, units, update order, receipt lifecycle, and
+invariants resolve the B-R branch instance of Q-006 without destroying
+coherence, importing C.2 history semantics, or treating one N31 export as a
+completed ecology result?
+
+### Consumed authority
+
+This decision consumes the already accepted
+[DEC-025 return admission](../contracts/p2-i3/i03-n31-return-admission.json)
+rather than re-admitting or restating the complete N31 closeout identity. Its
+selected semantic contract is the admitted B-R provider option:
+
+```text
+contract_id = n31_B_R_conserved_redistribution_contract_v2
+contract_output_digest = 7b8d171835eccf70df8debc0732eed0704867e1d7893ef955415d6c105e20873
+executed_graph_rung = DR5_producer_mediated
+reusable_semantics_rung = DR6_contract_only
+```
+
+DEC-025 remains the sole authority for graph revision, contract file digest,
+producer residue, naturalization debt, consumer controls, forbidden claims,
+and the bounded distribution-metadata error. No N31 positive result transfers
+into this branch.
+
+### Considered laws
+
+1. **Wall-clock attenuation or direct carrier decrement.** Rejected because it
+   either introduces external time or destroys coherence without a destination.
+2. **Release-efficacy attenuation.** Rejected for this branch because it is
+   Candidate A semantics: later release changes while the field carrier need
+   not weaken.
+3. **Raw-history-derived weakening.** Rejected for B-R because it imports a
+   C.2-like functional and contradicts DEC-027's audit-only formation history.
+4. **One N31-style export only.** Semantically valid B-R, but insufficient for
+   the P2-I3 demand for an evolving field with repeated lifecycle
+   opportunities.
+5. **Serialized conservative redistribution.** Formation conservatively moves
+   coherence into the route carrier; distinct internal lifecycle receipts may
+   later authorize bounded conservative exports to an isolated destination.
+
+Select Option 5 for the B-R branch only.
+
+### Registered roles and units
+
+For each matched route `e`, register three distinct node roles:
+
+```text
+s_e  route-local formation source and physical deposition debit account
+m_e  route-exclusive intermediate-node coherence carrier and export source
+d_e  explicit isolated reservoir outside later traversal and readout
+```
+
+`s_e` belongs to the registered route support. Its debit makes deposition
+physically costly in the native coherence account, but `s_e` is not thereby
+the depositor's complete support, participant identity, ecological fitness,
+or total budget. Those participant-role and cost mappings remain later
+registration questions.
+
+Only native node coherence `C` carries the B-R field. Coherence is the unit for
+formation amount `p`, export amount `q`, carrier value, route mass, and route
+contrast. At settled checkpoints define the analysis-only projections:
+
+```text
+F_e = C(m_e)
+M_e = C(s_e) + C(m_e)
+O_e = C(m_e) - C(s_e)
+```
+
+`F_e` is the carrier value. `M_e` and `O_e` separately expose mass and spatial
+contrast; neither may be stored as a hidden causal variable or read by the
+producer. In-flight packets are included in global conservation accounting
+but the displayed `M_e`/`O_e` equations apply only at declared settled
+checkpoints.
+
+### Formation law
+
+Each attributable formation event `j` requests a positive native transfer
+`p_{e,j}` from `s_e` to `m_e`:
+
+```text
+s_e --p_{e,j}--> m_e
+C(s_e)' = C(s_e) - p_{e,j}
+C(m_e)' = C(m_e) + p_{e,j}
+
+Delta M_e = 0
+Delta O_e = 2 * p_{e,j}
+```
+
+LGRC9V3 performs source debit, packet creation, transport, and destination
+credit. Each event has a distinct attributable receipt and settles before its
+registered checkpoint. DEC-013's logical floor applies: at least two
+attributable formation events are required, while exact amounts, count beyond
+that floor, and event schedule remain for candidate-blind calibration and I06
+registration.
+
+### Export law
+
+After registered formation stops and a complete checkpoint exists, an exact
+eligible internal lifecycle receipt `k` may authorize at most one export from
+`m_e` to `d_e`. For nonnegative policy values `q_cap` and `C_floor`, evaluate:
+
+```text
+E_{e,k} in {0, 1}
+
+q_{e,k} = E_{e,k} * min(
+  q_cap,
+  max(0, C(m_e) - C_floor)
+)
+```
+
+For every eligible receipt:
+
+```text
+0 <= q_{e,k} <= max(0, C(m_e) - C_floor)
+```
+
+If `C(m_e) <= C_floor`, then `q_{e,k}=0`. Every positive export satisfies
+`C(m_e)' >= C_floor`. `C_floor` is an export floor, not a universal lower bound
+on every admissible initial carrier state.
+
+For `q_{e,k}>0`, the producer requests native transfer
+`m_e --q_{e,k}--> d_e`. At the settled post-credit checkpoint:
+
+```text
+Delta M_e = -q_{e,k}
+Delta O_e = -q_{e,k}
+
+source debit = in-flight amount = destination credit = q_{e,k}
+```
+
+Global node-plus-packet coherence remains conserved. The B-R weakening is
+local redistribution, never coherence destruction, autonomous native decay,
+or organization transferred to the reservoir.
+
+### Receipt states and serialized lifecycle
+
+The lifecycle distinguishes four outcomes:
+
+```text
+eligible positive
+  consume receipt; reserve q > 0; schedule native export
+
+eligible zero
+  consume receipt; create no packet; leave native state unchanged;
+  advance the producer-policy cursor
+
+ineligible or invalid
+  consume nothing; leave complete composite state unchanged
+
+duplicate consumed receipt
+  refuse atomically; leave complete composite state unchanged
+```
+
+Every lifecycle receipt binds:
+
+```text
+route identity
+sequence index
+qualifying native event identity
+exact predecessor composite identity
+policy identity
+source and destination identities
+prior receipt-settlement status
+```
+
+At most one accepted-but-unsettled export may exist per route. Receipt
+acceptance and `q` reservation form one atomic producer-policy transition; the
+next receipt becomes eligible only after the prior native export and complete
+checkpoint settle. A validation or scheduling refusal must restore the exact
+predecessor native-plus-policy identity rather than leave a consumed receipt,
+reservation, or partial packet.
+
+The restorable producer-policy identity therefore includes the lifecycle
+cursor, eligible and consumed receipt sets, pending reservation or scheduled
+export, policy values, and source/destination binding. This specializes rather
+than reopens DEC-027's complete-current-state contract. The producer still may
+not read raw formation history.
+
+### Update order and ownership
+
+The registered causal order is:
+
+```text
+1.  attributable formation request
+2.  native source debit
+3.  native formation packet transport
+4.  native carrier credit and settled checkpoint
+5.  repeat formation through the logical floor
+6.  stop formation and retain complete checkpoint
+7.  receive next exact internal lifecycle receipt
+8.  validate receipt and current composite identity
+9.  read current C(m_e) and compute/reserve q from frozen policy
+10. request native export when q > 0, or settle eligible zero
+11. native carrier debit
+12. native export packet transport
+13. native reservoir credit
+14. retain complete native-plus-policy checkpoint
+15. admit the next lifecycle opportunity or later Q-007 traversal probe
+```
+
+LGRC9V3 owns coherence state, debit, packets and ledger, event progression,
+transport, credit, and native restoration. RCAE owns lifecycle eligibility,
+the internal event schedule, floor/cap policy, receipt serialization and
+consumption, source/destination binding, request construction, and composite
+policy restoration.
+
+The producer may read only current `C(m_e)`, the exact current receipt, frozen
+policy values, and frozen source/destination identity. It may not read raw
+formation history, participant or route labels, global route rank, destination
+state, future outcomes, semantic success labels, or wall-clock time. Time is
+internal event and checkpoint order generated by the system.
+
+### Invariants, controls, and reservoir isolation
+
+Every later realization and conformance package must preserve:
+
+- exact global node-plus-packet coherence conservation;
+- source debit equals packet amount equals destination credit;
+- the export floor and cap bounds above;
+- separate route-mass and route-contrast reporting;
+- producer omission yields zero export;
+- eligible-zero, invalid, duplicate, and rejected-operation semantics above;
+- complete native-plus-policy restoration and branch replay; and
+- B-R producer-mediated attribution and its N31 forbidden-claim ceiling.
+
+The matched route-mass-loss control must decrease `M_e` by the candidate's
+matched amount while leaving `O_e` unchanged. Its semantic transform removes
+equal coherence from `s_e` and `m_e` and accounts for the removed quantity at
+an explicit isolated control destination:
+
+```text
+C(s_e)' = C(s_e) - q/2
+C(m_e)' = C(m_e) - q/2
+Delta M_e = -q
+Delta O_e = 0
+```
+
+Both debited nodes must satisfy the registered `q/2` availability bound.
+The exact admissible intervention operation and numeric amount freeze later,
+but no control may destroy or hide coherence. Q-007 must require that this
+matched mass loss does not reproduce the candidate traversal effect. It must
+also carry forward the admitted N31 export-source `C(m_e)` clamp, destination
+`C(d_e)` clamp, and atomic rejected-readout obligations. Q-006 defines their
+dynamic inputs; it assigns no readout outcome.
+
+The candidate reservoir `d_e` is excluded from the later route and readout and
+must remain causally isolated from the lifecycle:
+
+- no automatic or scheduled return packet;
+- no outgoing registered path into either candidate route;
+- no reservoir-dependent export eligibility, amount, route choice, or global
+  producer decision;
+- no reservoir-triggered topology, pressure, or scheduler effect that can
+  feed back into the candidate conclusion; and
+- destination-state clamps must leave export and later traversal conclusions
+  unchanged once Q-007 supplies the encounter.
+
+A role-preserving reservoir permutation may be added later as a registered
+control, but is not made mandatory by this equation decision alone.
+
+### Repetition and composition classification
+
+Register at least two sequential lifecycle opportunities. One positive export
+followed by an eligible zero at the floor is a valid multi-opportunity
+lifecycle but not repeated positive export. Later evidence must distinguish:
+
+```text
+one positive plus one zero
+  single_positive_withdrawal_plus_floor
+
+two or more sequential positive exports
+  repeated_event_indexed_weakening
+
+additional eligible zeros after the floor
+  terminal_floor_stability
+```
+
+Exact opportunity count beyond the logical minimum is deferred. This is an
+RCAE repeated-lifecycle realization of the admitted B-R contract, not a
+B-R+C.2 semantic composition and not inherited N31 DR5 evidence. At Q-006 it
+is only the dynamic segment of a candidate ecology composition. The full L03
+causal composition requires Q-007's local traversal encounter and fresh RCAE
+execution:
+
+```text
+costly repeated formation
+  -> route-local native carrier
+  -> serialized conservative weakening
+  -> later local traversal encounter
+```
+
+### Deferred numeric and observational choices
+
+This decision freezes the equation family, coherence units, role topology,
+event order, receipt state machine, ownership, and invariants. It does not
+freeze:
+
+- `C_floor`, `q_cap`, formation amounts, initial coherence, or exact times;
+- event and opportunity counts beyond their logical minima;
+- the later traversal request or primary response family;
+- candidate-blind resolution, interpretation bands, or ladder placement;
+- exact fixture, seeds, attempts, controls, or resource envelope; or
+- a scientific, ecological, provider-selection, or naturalization result.
+
+Those choices remain assigned to Q-007, I04 calibration, I06 registration, and
+later gated iterations. Numeric thresholds remain interpretive guides whose
+near, narrow, failed, and exceeded outcomes require developmental analysis;
+they are not automatic accept/reject selectors.
+
+### Gate and evidence effect
+
+This resolves only the B-R instance of Q-006. It binds the exact B-R contract
+and the affected DEC-021/022 carrier/topology/ownership projection. B-R Q-007
+is now the next realization decision. B-R Q-008 remains resolved by DEC-027;
+C.2 Q-006 through Q-008 remain inactive and independent until the B-R branch
+closeout.
+
+No conformance, candidate-blind calibration, registration, candidate
+execution, control result, branch evidence, trail/stigmergic interpretation,
+or lane result follows. `P2-I3-DISCRIMINATOR-GATE` remains pending.
+
+### Reopening condition
+
+Reopen DEC-028 if bounded conformance cannot serialize and restore the complete
+lifecycle; an eligible export cannot use native conservative packet transfer;
+the reservoir cannot be causally isolated; Q-007 requires producer access to
+forbidden history, labels, global rank, or outcome state; the matched-mass
+control cannot preserve contrast and conservation; a verified complete-state
+match exposes omitted load-bearing state; or new graph evidence changes the
+admitted B-R contract. A narrow or unexpected later scientific result does not
+silently rewrite the law; it is interpreted through the registered ladders and
+may motivate an explicit alternative campaign.
+
+## 31. `P2-I3-DEC-029` — B-R paired local native-departure encounter
+
+### Question
+
+How does a fresh later B-R probe encounter route-local carrier state and
+produce a substrate-visible continuation consequence without a runtime route
+ranker, field-reading outcome producer, participant-label decision, or global
+comparison?
+
+### Considered encounter paths
+
+1. **Global route choice.** Compare both carrier values and schedule work on
+   the preferred route. Rejected as the exact hidden-router pattern Q-007 must
+   exclude.
+2. **Field-reading outcome producer.** Let RCAE read `C(m_e)` and emit an
+   accepted/refused traversal result or field-conditioned request. Rejected as
+   unnecessary outcome authorship for the B-R minimum.
+3. **Field-to-participant support transfer.** Conservatively transfer carrier
+   coherence into separate participant support before movement. Retained only
+   as a possible later realization because the extra transfer can make support
+   provisioning or budget circulation, rather than the route field, carry the
+   result and redirect interpretation toward L04 or L06.
+4. **Conductance or susceptibility modulation.** Retained for the later C.2
+   branch or a separately governed alternative; it is not B-R's selected
+   coherence-carried encounter.
+5. **Paired branch-local native departure admission.** At one frozen local
+   continuation opportunity per branch, schedule the same role-matched request
+   from the carrier to its continuation node. The adapter never reads field
+   state; LGRC9V3 alone admits or refuses native processing from local source
+   coherence.
+
+Select Option 5 for the B-R branch.
+
+### Encounter topology
+
+Add one matched continuation role `x_e` and one fixed continuation edge
+`h_e=(m_e,x_e)` to each route:
+
+```text
+s_e -> m_e -> x_e
+       |
+       -> d_e
+```
+
+`m_e` remains DEC-028's sole field carrier and export source. `d_e` remains
+the isolated B-R reservoir and is not on the continuation path. `x_e` is a
+route-local continuation target, not field state, participant state, or a
+result label. The two routes must have role-matched continuation topology,
+edge properties, causal delay, initial state, and opportunity policy before
+any field intervention.
+
+Adding `x_e` specializes the anticipated Q-007 encounter topology. It does not
+reopen DEC-028's field law, but `x_e`, `h_e`, their runtime state, and every
+pending encounter request become continuation-relevant state under DEC-027.
+
+### Local opportunity and fixed request
+
+For each route `e` and probe branch `k`, preregister one immutable local
+opportunity record:
+
+```text
+o_{e,k} = (
+  role-preserving source binding m_e,
+  continuation target x_e,
+  continuation edge h_e,
+  fixed q_probe,
+  internal departure and arrival event positions,
+  generic fresh-probe role,
+  exact parent checkpoint identity
+)
+```
+
+The exact numeric `q_probe`, event positions, edge values, and branch set are
+deferred to candidate-blind calibration and I06. They must match across paired
+route roles and freeze before candidate execution.
+
+An RCAE blind request adapter validates the already frozen local opportunity
+and invokes one native request:
+
+```text
+m_e --q_probe--> x_e
+```
+
+The adapter may read only the immutable opportunity record, its exact parent
+checkpoint identity, and branch-local structural endpoint bindings. It may
+not read:
+
+- `C(m_e)`, `M_e`, `O_e`, the other route, or any derived field score;
+- formation or lifecycle history;
+- semantic route labels, participant identity, or preferred-route metadata;
+- expected classification, candidate arm, or future outcome; or
+- any global rank, comparison matrix, or wall-clock value.
+
+Numeric source, target, and edge IDs are required by the public PyGRC call.
+They are permitted only as prospectively frozen structural bindings. They may
+not be chosen or changed as a function of field state or result.
+
+### Native encounter relation
+
+The fixed adapter authors a request, not its outcome. LGRC9V3 processing owns
+the state-dependent boundary. Once all non-field validity conditions are
+verified, retain the analysis-only signed local margin:
+
+```text
+mu_{e,k} = C(m_e) - q_probe
+```
+
+The native relation is:
+
+```text
+mu_{e,k} >= 0
+  -> departure admitted; native debit, packet transport, and x_e credit
+
+mu_{e,k} < 0
+  -> native insufficient-source-coherence refusal
+```
+
+`mu` is measured from retained state and request facts. Neither the request
+adapter nor any runtime producer may consume it. Equality belongs to native
+admission because source coherence is rejected only when it is smaller than
+the requested amount.
+
+An admitted row must close:
+
+```text
+C(m_e) debit = in-flight amount = C(x_e) credit = q_probe
+global node-plus-packet coherence change = 0
+```
+
+This is a local continuation-admission response. It is not a native route
+choice, embodied participant trajectory, preference, or abstract organization
+mediator.
+
+### Paired branch factorization
+
+No runtime invocation may offer both routes to a selector. Starting from one
+verified matched complete checkpoint, create independent counterfactual probe
+branches:
+
+```text
+branch A
+  -> invoke only o_A with the frozen role-matched request
+
+branch B
+  -> invoke only o_B with the frozen role-matched request
+```
+
+The branch plan is frozen before field values or outcomes are consumed. A
+later analysis may compare the retained branch results; that comparison is
+not runtime causal input. Scheduling both requests in one shared queue is not
+the primary encounter because queue order and shared continuation state could
+create an unregistered interaction.
+
+Accepted probes debit the carrier and are therefore invasive. Each probe is
+terminal within its scientific branch. A delayed or repeated probe must fork
+from a clean, unprobed checkpoint with its own registered opportunity rather
+than continue after an earlier readout changed the carrier.
+
+### Outcome typing and atomic refusal
+
+Retain three distinct terminal encounter states:
+
+```text
+admitted
+  native departure and arrival complete with exact conservation
+
+field_limited_refusal
+  exact native insufficient-source-coherence refusal after every other
+  request and state condition validates
+
+invalid_or_infrastructure_failure
+  malformed endpoint, unexpected exception, queue/restoration mismatch,
+  missing runtime, or other non-scientific failure
+```
+
+Only the exact insufficient-source-coherence condition is a valid field-
+limited refusal. Other failures cannot be counted as a scientific negative or
+silently mapped to `admitted=false`.
+
+For a field-limited refusal, the complete native identity after the attempted
+processing step must equal the pre-step identity that already contains the
+scheduled request, including queue, packet ledger, clocks, checkpoint,
+scheduler index, node coherence, budget, topology, and restoration digest.
+The probe branch then terminates. Replay from the same clean parent checkpoint
+must reproduce the disposition and state projection exactly.
+
+The immutable branch/attempt ledger is evidence-only orchestration, not a
+hidden producer cursor or causal field. Duplicate execution within one branch
+is invalid; duplicate replay uses a fresh branch from the same parent identity.
+
+### Required causal and hidden-router controls
+
+Q-007 carries the following design obligations into conformance,
+calibration, registration, and execution without assigning their outcomes:
+
+1. **Lifecycle intervention.** B-R export changes `C(m_e)` and therefore may
+   change native encounter margin or admission under the frozen request.
+2. **Export-source clamp.** A registered `C(m_e)` clamp must reverse the
+   encounter relation where its frozen intervention predicts reversal.
+3. **Reservoir clamp.** Changing `C(d_e)` must not alter request construction,
+   native encounter disposition, or continuation outcome.
+4. **Matched mass loss.** DEC-028's same-`Delta M`, zero-`Delta O` control must
+   not reproduce the candidate traversal effect required by the admitted B-R
+   contract. Its actual outcome remains scientific evidence.
+5. **Complete-state-matched history.** DEC-027's different formation histories
+   must produce matching future encounter trajectories when complete current
+   state is truly equal.
+6. **Current-state relocation.** Moving the complete registered carrier and
+   continuation state between matched route roles must move the encounter
+   relation with that state rather than with a route label.
+7. **Role and raw-ID permutation.** A role-preserving node/edge permutation
+   must yield the correspondingly permuted request and outcome.
+8. **Fixed-route exclusion.** Every retained route receives its own
+   prospectively frozen local branch; no adapter may select which route to
+   invoke after inspecting state.
+9. **Atomic refusal and replay.** Every field-limited refusal is native-state
+   neutral at the exact pre-step boundary and every retained branch replays.
+10. **No-export and producer-omission controls.** Static/no-export and omitted
+    B-R lifecycle branches remain distinct from encounter-adapter omission.
+
+The matched-mass control can change `C(m_e)` while preserving `O_e`; therefore
+its result must be interpreted at the registered margin rather than presumed
+from its label. B-R's inherited evidence ceiling remains bounded partial
+mediation by local source `C(m_e)`, not full route-distribution or abstract
+organization mediation.
+
+### Participant and interpretation boundary
+
+The probe manifest may identify a fresh eligible probe episode, but participant
+identity is audit and eligibility provenance only. It cannot affect endpoint,
+request amount, timing, or outcome. The core may use the same participant in a
+later episode or a different matched participant; only the latter can support
+the stronger `stigmergic_field_candidate` interpretation after its own role
+controls pass.
+
+The maximum Q-007 operational meaning is:
+
+> bounded route-local continuation admissibility conditioned by current
+> carrier coherence after an evolving B-R lifecycle.
+
+It does not establish embodied movement, free route choice, preference,
+planning, learning, communication, or persistent participant identity. A
+participant-coupled support-transfer or field-conditioned producer remains a
+separately governed alternative if this bounded readout later proves too weak;
+it cannot silently replace the retained branch.
+
+### Interpretation is not a binary gate
+
+Native processing is binary, but the scientific result is not. Later metric
+and ladder design must separately classify at least:
+
+```text
+robust admission split
+graded margin movement without a binary split
+narrow or boundary-sensitive split
+no encounter-relevant movement
+matched-mass reproduction
+state/history divergence
+invalid, censored, or resolution-limited encounter
+```
+
+Candidate-blind calibration and Q-009 decide the primary response projection,
+resolution bands, and exact margin treatment. A same-side margin movement is
+not automatically failure; a narrow split is not automatically strong
+evidence; and values may not be retuned after candidate outcomes merely to
+create a binary difference.
+
+### Producer-cost and naturalization effect
+
+The local opportunity manifest, structural binding guard, and blind request
+adapter are `rcae_ecology_required` producer work. Native source-coherence
+admission, debit, transport, arrival, and refusal remain LGRC9V3-owned.
+Branch comparison, margin calculation, telemetry, and replay harnesses are
+`evidence_only`. None is added to N31's `contract_required` export residue.
+
+The specialized naturalization debt is a native local-opportunity interface
+that can bind a carrier-local continuation without experiment-owned numeric
+addresses while preserving the same no-ranking and restoration boundaries.
+The retained RCAE adapter is not silently replaced if such an interface later
+appears.
+
+### Gate and evidence effect
+
+This resolves only the B-R instance of Q-007. Together, DEC-027 through
+DEC-029 fix the B-R Q-008 mode, Q-006 lifecycle law, and Q-007 encounter
+factorization. The common comparison envelope, Q-013 comparison identities,
+the design portion of Q-015 restoration, operational hypotheses, and bounded
+conformance still remain before `P2-I3-DISCRIMINATOR-GATE` can pass.
+
+No `q_probe`, fixture, calibration value, primary metric, threshold, seed,
+attempt, registration, conformance result, candidate execution, control
+outcome, trail/stigmergic interpretation, branch result, or lane result is
+assigned.
+
+### Reopening condition
+
+Reopen DEC-029 if bounded conformance shows that a fixed local request cannot
+be generated and restored without field-reading or route-selecting producer
+logic; native refusal is not atomic at the registered boundary; paired branches
+cannot exclude queue or shared-state interference; the request topology makes
+the reservoir causal; the local departure readout cannot support even bounded
+continuation-admissibility meaning; Q-013/Q-015 exposes omitted load-bearing
+state; or new graph evidence changes the admitted B-R readout contract. A
+narrow, same-side, or contrary candidate outcome is interpreted under the
+frozen ladder and does not silently rewrite this decision.
+
+## 32. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -1576,10 +2624,10 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-002` | Which exact theory and graph revisions, files, public callables, and evidence roles are admitted? | I02 source admission | Resolved by `P2-I3-DEC-019`; no longer blocks I03 |
 | `P2-I3-Q-003` | Is the field carrier edge-, node-, corridor-, or another route-local surface? | I03 realization selection | Resolved by `P2-I3-DEC-021`; alternative campaigns remain permitted under new identities |
 | `P2-I3-Q-004` | Is each required function native, minimally producer-assisted, constructed, unsuitable, or missing? | I03 after I01/I02 | Resolved by `P2-I3-DEC-022`; conformance may reopen affected rows |
-| `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze after N31 return | Deferred by DEC-023/024; D0 is first and the three added mechanisms remain fallback/closure/extension inputs; no local answer may be selected before the return transition |
-| `P2-I3-Q-006` | What exact field equation/update law, units, update order, and invariants apply? | I03 realization freeze | Blocks conformance and calibration preregistration |
-| `P2-I3-Q-007` | How does traversal encounter the local field without a hidden global selector? | I03 causal factorization | Blocks discriminator gate |
-| `P2-I3-Q-008` | Is current field state sufficient, is active history load-bearing, or must multiple modes remain? | I03 discriminator freeze | Blocks downstream cell semantics |
+| `P2-I3-Q-005` | Which non-static dynamic carries the minimum candidate? | I03 realization freeze after N31 return | Resolved by DEC-026 as separate B-R-first and C.2-second candidate tracks; no final provider is selected |
+| `P2-I3-Q-006` | What exact field equation/update law, units, update order, and invariants apply? | Route-scoped I03 realization freeze | B-R instance resolved by DEC-028 as serialized conservative B-R redistribution; C.2 instance remains inactive until B-R branch closeout |
+| `P2-I3-Q-007` | How does traversal encounter the local field without a hidden global selector? | Route-scoped I03 causal factorization | B-R instance resolved by DEC-029 as paired branch-local fixed native departure admission; C.2 remains inactive and independent |
+| `P2-I3-Q-008` | Is current field state sufficient, is active history load-bearing, or must multiple modes remain? | Route-scoped I03 discriminator freeze | B-R instance resolved by DEC-027 as current-composite-state primary plus mandatory history discriminator; C.2 instance remains open and inactive |
 | `P2-I3-Q-009` | What primary substrate-visible traversal response is measured? | I04 calibration preregistration | Blocks CAL-PRE |
 | `P2-I3-Q-010` | Which of the five surfaces are measured, annotation-only, inapplicable, or unavailable, and which policies derive them? | I04 | Blocks CAL-PRE |
 | `P2-I3-Q-011` | What comparator and estimator preserve the dynamic-to-traversal causal question? | I04 | Blocks CAL-PRE |
@@ -1592,8 +2640,9 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-018` | What finite attempts, infrastructure-only retries, failure classes, and one-shot claims apply? | I06/I07 | Blocks EXEC-FREEZE |
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
+| `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 28. Decision protocol for subsequent work
+## 33. Decision protocol for subsequent work
 
 For each open question:
 
@@ -1611,7 +2660,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 29. Current boundary
+## 34. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` define semantic and
 process boundaries, accept the exact I01 read-only capability audit and I02
@@ -1625,7 +2674,19 @@ closure, or extension paths, and binds the theory/substrate/code authority
 split for N31. These decisions assign no
 selected dynamic, complete realization, equation, exact registered values,
 calibration, registration, execution, result, appendix activation, or
-specification-promotion authority.
+specification-promotion authority. Accepted DEC-025 admits the exact N31 graph
+return and its B-R and C.2 contracts as unselected options. It retains the
+distribution-metadata error rather than rewriting N31 and passes only
+`P2-I3-N31-RETURN-GATE`. DEC-026 then resolves Q-005 as a staged B-R-first,
+C.2-second evidence program without selecting a lane winner. DEC-027 resolves
+the B-R Q-008 mode as current-composite-state-carried with a mandatory matched-
+history discriminator; it assigns no state-sufficiency result.
+DEC-028 then resolves the B-R Q-006 equation, units, serialized lifecycle,
+route roles, ownership, conservation, floor/cap, matched-mass, and reservoir-
+isolation boundaries without assigning a traversal response or result.
+DEC-029 resolves the B-R Q-007 local encounter as independent, role-matched,
+fixed native departure requests whose admission depends only on branch-local
+carrier coherence inside LGRC9V3. It assigns no primary metric or result.
 
 The frozen I01 environment preflight and read-only audit are complete. The
 accepted I02 package fixes exact source identities and roles but does not
@@ -1643,9 +2704,9 @@ source-backed producer-completion precedents; I03 later selects the smallest
 semantically adequate ownership path and exports every unresolved native
 pattern as explicit graph-side naturalization debt.
 
-The next permitted RCAE action is review and retention of the bounded DEC-024
-theory correction to the already merged DEC-023 handoff. After its commit,
-work switches explicitly to graph-project N31 scope. P2-I3 resumes only
-through the handoff's reconstruction, source-transition, carrier/ownership,
-and Q-005 return sequence. No runtime conformance, calibration, candidate
-execution, or scientific activity is authorized in P2-I3 while N31 is active.
+The next permitted action is route-scoped B-R realization work: freeze the
+common comparison envelope, assign Q-013's comparison identities, specialize
+Q-015's complete restoration design, and project DEC-027 through DEC-029 into
+operational hypotheses and bounded conformance. C.2 and every calibration,
+candidate execution, or scientific activity remain unauthorized until their
+named gates pass.

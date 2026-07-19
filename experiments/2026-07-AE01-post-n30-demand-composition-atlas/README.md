@@ -193,9 +193,9 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   assigns every later activity to I00–I11. `P2-I3-BRIEF-GATE` has passed;
   Q-001 and the exact I01 input freeze are accepted through DEC-016.
 - The [cumulative decision record](implementation/P2-I3-decision-record.md)
-  retains all twenty-three accepted semantic, process, source, substrate, and
-  cross-project-handoff decisions plus the remaining implementation questions
-  at their legitimate decision points.
+  retains all twenty-eight accepted semantic, process, source, substrate,
+  handoff, return-admission, and realization decisions plus the remaining
+  implementation questions at their legitimate decision points.
 - The accepted
   [I01 capability-audit input freeze](contracts/p2-i3/i01-capability-audit-input-freeze.json)
   fixes fifteen capability questions, ten operation dispositions, exact
@@ -226,9 +226,9 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   become explicit RCAE producer requirements and LGRC naturalization debt
   rather than reasons to weaken the experiment.
 - I01 supplies source-current capability evidence and I02 supplies exact
-  source-role authority. I03 currently supplies only a carrier choice; no
-  complete realization, calibration, registration, execution authority, or
-  scientific result exists yet.
+  source-role authority. I03 now also carries exact N31 return/provider-option
+  authority; no complete realization, calibration, registration, execution
+  authority, or P2-I3 scientific result exists yet.
 - The [Q-005 decay interpretation study](reports/P2-I3-Q005-decay-interpretation-study.md)
   now begins with D0 coherence-only derived decay, separating slow causal
   `C/J_C` organization from a fading graph observable and instantaneous
@@ -237,10 +237,17 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   DEC-023/024 preserve all four positions as graph-project N31 input rather
   than selecting local RCAE implementations.
 - The accepted [N31 handoff and return contract](implementation/P2-I3-N31-decay-primitive-handoff.md)
-  intentionally pauses P2-I3 at Q-005. It fixes the required N31 output roles,
-  repository boundary, outcome-specific return paths, bounded source
-  transition, and exact order for reopening carrier/ownership and resuming
-  Q-005 through Q-008. No P2-I3 realization or scientific evidence exists.
+  now records the completed handoff and return. Accepted
+  [DEC-025](implementation/P2-I3-decision-record.md) and the exact
+  [return admission](contracts/p2-i3/i03-n31-return-admission.json) admit B-R
+  conservative redistribution and C.2 exact-history susceptibility only as
+  unselected provider-contract options. `P2-I3-N31-RETURN-GATE` has passed;
+  DEC-026 subsequently resolves Q-005 as isolated B-R-first and C.2-second
+  evidence tracks followed by producer-cost-aware comparison. DEC-027 through
+  DEC-029 now resolve the B-R state/history mode, serialized conservative
+  lifecycle, and paired local native-departure encounter. The common
+  comparison envelope, Q-013/Q-015 design, operational hypotheses, and bounded
+  conformance remain next; no P2-I3 conformance or scientific evidence exists.
 
 ## Program authority
 
@@ -399,7 +406,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
 P2-I2                                           closed; accepted bounded L02 result retained for commit
-P2-I3                                           I03 paused at Q-005; N31 handoff active
+P2-I3                                           B-R Q-006 through Q-008 resolved; pre-conformance design next
 P2-I4 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis
