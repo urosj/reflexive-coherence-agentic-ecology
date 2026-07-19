@@ -5,9 +5,9 @@
 **Experiment:** `AE01` — Post-N30 Demand and Composition Atlas
 
 **Current atlas rung:** `AE01-C2`; L01/P2-I1 and the main L02/P2-I2 result are
-owner-accepted; P2-I3 has admitted the exact N31 return under DEC-025 and
-accepted separate B-R-first and C.2-second tracks under DEC-026, while L03–L07
-results and cross-lane synthesis remain unexecuted
+owner-accepted; P2-I3 B-R has completed its candidate-free I07-A
+execution-source package and opens only I07-B inactive-freeze construction,
+while L03–L07 results and cross-lane synthesis remain unexecuted
 
 **Role:** AE01-specific narrative orientation; machine evidence, closeouts,
 and decision records retain scientific authority
@@ -106,7 +106,7 @@ compared:
 | --- | --- | --- |
 | `AE01-L01` | Can shared history differentially condition later possibility across matched susceptibilities? | Owner-accepted bounded result via P2-I1 |
 | `AE01-L02` | Can multiple attributable operations constitute one functional non-private pool state/history? | Owner-accepted main result via P2-I2; appendices refine the mechanism |
-| `AE01-L03` | Can costly repeated activity create decay, reinforcement, saturation, or maintenance dynamics beyond static trace persistence? | Pre-execution P2-I3 I03; B-R-first and C.2-second tracks accepted; B-R Q-006 through Q-008 resolved and pre-conformance design next |
+| `AE01-L03` | Can costly repeated activity create decay, reinforcement, saturation, or maintenance dynamics beyond static trace persistence? | Pre-execution P2-I3 I07-A complete; B-R-first and C.2-second tracks accepted; I07-B inactive freeze next, with no L03 result |
 | `AE01-L04` | Can produced, depleted, leaking, or maintained support differentially govern fragile and robust formation? | Not executed |
 | `AE01-L05` | Can a maintained selective interface govern exchange, leakage, transformation, repair, and closure? | Not executed |
 | `AE01-L06` | Can capacity complete a budget-closing depletion/replenishment or return cycle with floors and leakage? | Not executed |
@@ -344,6 +344,11 @@ The atlas remains at `AE01-C2` precisely because five lanes and the later
 synthesis, control/debt, and selection gates remain open.
 
 ## What happens next
+
+The immediate next action is narrower than the remaining lane program: build
+and independently validate the P2-I3 B-R I07-B inactive freeze from committed
+I07-A source, then stop for owner review. I07-B does not execute a candidate or
+authorize activation.
 
 Graph-project N31 has returned exact B-R conservative-redistribution and C.2
 exact-history-susceptibility contracts after testing coherence-only D0 first.

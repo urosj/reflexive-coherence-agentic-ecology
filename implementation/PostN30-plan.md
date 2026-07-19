@@ -2,9 +2,9 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.86 draft
+**Plan revision:** 0.87 draft
 
-**Date:** 2026-07-19
+**Date:** 2026-07-20
 
 **Scope:** repository architecture, directive hierarchy, Post-N30 atlas program,
 LGRC consumption boundary, specification promotion, and implementation sequence
@@ -13,6 +13,8 @@ LGRC consumption boundary, specification promotion, and implementation sequence
 statements marked **Proposed** or **Deferred** are not yet binding
 
 **Execution tracking:** [Post-N30 master checklist](PostN30-checklist.md)
+
+**Current project state:** [project-wide handoff](../PROJECT-HANDOFF.md)
 
 ## 1. Purpose
 
@@ -1766,7 +1768,16 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.79 draft:
+Current live continuation after revision 0.87 is P2-I3 I07-B: construct the
+retained inactive B-R freeze from exact committed I07-A source, validate and
+reconstruct it without candidate activity, and stop for owner review. Freeze
+acceptance, activation, campaign claim, P5, execution, C.2, and every L03
+result remain closed. The exact operational handoff is maintained in
+[the project-wide continuation snapshot](../PROJECT-HANDOFF.md).
+
+The numbered sequence below retains the dependency history that led to this
+boundary; items through I07-A are complete even where their original wording
+describes the then-next gate.
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -2001,6 +2012,7 @@ directive.
 | 2026-07-19 | Revision 0.84: records the owner's direction to complete I05 through retained calibration/reconstruction while reserving final acceptance. A separate schema-valid launch authorization binds the accepted freeze, exact six-source digest set, pinned `.venv` and deterministic environment, normalized command prefix, one attempt, zero retries, and all governed paths. The exact launch HEAD remains runtime-supplied and receipt-retained. Commit and clean preflight are next; no claim, invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction. |
 | 2026-07-19 | Revision 0.85: records the successful sole I05 candidate-blind calibration at launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`. A permanent pre-builder claim, one builder call, zero retries, five cases, 15 responses, five triplets, ten exact-zero margins, shared `delta=1e-12`, successful receipt, actual second-start refusal, and 49/49 byte-exact read-only reconstruction checks are retained. The result is numeric-resolution evidence only; owner acceptance and CAL-GATE remain pending, and I06, B-R candidate/control execution, C.2, and every scientific/ecology result remain closed. |
 | 2026-07-19 | Revision 0.86: records final owner acceptance of I05 and passes `P2-I3-CAL-GATE`. The acceptance record binds launch HEAD, permanent activation and claim, successful receipt, three governed outputs, 49-check result validation, exact shared `delta=1e-12`, and the numeric-only interpretation ceiling. I05 is complete and I06 exact implementation registration opens; candidate/control execution, C.2, R01-R05, tags, and every scientific/ecology/native claim remain closed. |
+| 2026-07-20 | Revision 0.87: synchronizes the project through owner-accepted I06/I06A and retained I07-A. The unchanged 450-case evidence registry plus six inert operational baselines yields a 456-entry schedule, 460-start ceiling, and 919 closure roots. Candidate-free I07-A closes execution-source, environment, authority-schema, P4/P5, retry-root, process/log, and no-fallback boundaries; 40 focused and 82 adjacent tests plus two byte-identical zero-operation previews pass. Source commit `51273e9` is merged into `main` at `8cb360d`; the root project handoff opens I07-B inactive-freeze construction only. |
 
 ## 18. Program completion criteria
 

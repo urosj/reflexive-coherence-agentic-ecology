@@ -237,7 +237,8 @@ pass. I07-A does not alter that historical test.
 
 ```text
 I06A REG-GATE:                       passed and retained
-I07-A source package:                review-ready, uncommitted
+I07-A source package:                retained at 51273e9
+main integration:                    merged at 8cb360d
 I07-A dirty preview:                 passed, retention-ineligible
 I07-B inactive freeze:               not constructed
 P2-I3-EXEC-FREEZE:                   unopened
@@ -247,7 +248,6 @@ campaign claim:                      absent
 candidate/control/integrity execution: unauthorized and absent
 ```
 
-The next permitted action after review is the clean I07-A source-anchor
-commit. Only that commit permits construction of I07-B retained freeze records
-and their independent validation. I07-B acceptance still would not authorize
-execution; explicit activation remains separate.
+The clean I07-A source anchor now permits construction of I07-B retained freeze
+records and their independent validation. I07-B acceptance still would not
+authorize execution; explicit activation remains separate.

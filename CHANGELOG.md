@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 ### Experimental evidence
 
+- Completed and retained the candidate-free P2-I3 B-R execution-source
+  package through I07-A. The package fixes 450 evidence cases, six inert
+  operational baselines, a 456-entry schedule, a 460-child-start ceiling, and
+  919 closure roots. Forty focused tests, the 82-test I06A/I07-A boundary, and
+  two byte-identical previews pass with zero candidate, control, integrity, or
+  scientific operations. This is pre-execution authority, not an L03 result.
+  See the [I07-A source-package
+  report](experiments/2026-07-AE01-post-n30-demand-composition-atlas/reports/P2-I3-I07A-BR-execution-source-package.md).
 - Completed and owner-accepted AE01 L01/P2-I1. The bounded result shows that
   the same attributable shared-medium history creates different later
   formation possibilities across matched susceptibility configurations. The
@@ -37,6 +45,10 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Added the [project-wide handoff](PROJECT-HANDOFF.md) as the shortest current
+  route from project purpose and accepted evidence to the exact continuation
+  boundary. It records I07-B inactive-freeze construction as the next action
+  and keeps activation and all scientific execution closed.
 - Added the Post-N30 Demand and Composition Atlas program plan, checklist,
   roadmap, lane registry, source inventory, common contracts, hypothesis
   directory, evidence tiers, reconstruction rules, and independent gate
@@ -102,14 +114,16 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Advanced P2-I3 B-R through quarantined conformance, candidate-blind
+  calibration, exact I06/I06A registration, and candidate-free I07-A source
+  construction. I07-B inactive-freeze construction is next; B-R execution,
+  C.2 work, rung assignment, and every L03/ecology claim remain closed.
 - Expanded the repository from a conceptual paper archive into a conceptual
   and bounded experiment-evidence workspace; conceptual papers remain
   non-implementation authorities.
 - Advanced P2-I3 through its brief, source-audit, source-admission, and bounded
   N31 return-admission gates. DEC-026 opens isolated B-R-first and C.2-second
   evidence tracks; DEC-027/028 resolve the active B-R mode and lifecycle law.
-  B-R Q-007, conformance, calibration, registration, execution, C.2, and all
-  scientific results remain open.
 - Corrected the prospective N31 ordering before execution: conserved leakage
   is now the first additional-mechanism fallback rather than the first
   hypothesis, and a positive coherence-only result is distinct from primitive

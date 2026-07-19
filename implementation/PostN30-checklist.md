@@ -2,11 +2,13 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.86 draft
+**Baseline revision:** 0.87 draft
 
-**Date:** 2026-07-19
+**Date:** 2026-07-20
 
 **Companion directive:** [Post-N30 master plan](PostN30-plan.md)
+
+**Current handoff:** [project-wide continuation snapshot](../PROJECT-HANDOFF.md)
 
 **Scope:** architecture, AE01 contract and execution, closeout, specification
 promotion, LGRC bridge, reusable implementation, verification, and final handoff
@@ -46,10 +48,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.86 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.87 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I05 accepted and CAL-GATE passed; I06 opened | P2-GATE | Owner accepts sole attempt at `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`; ten exact zero margins yield shared numeric `delta=1e-12`; 49/49 reconstruction checks pass; only I06 exact registration opens |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I07-A retained and I07-B opened for inactive-freeze construction | P2-GATE | I06A fixes 450 evidence cases plus six inert baselines in a 456-entry schedule; I07-A source commit `51273e9` passes 40 focused/82 adjacent tests and two byte-identical zero-operation previews; no B-R scientific execution |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -2506,6 +2508,7 @@ Change log:
 | CL-087 | 2026-07-19 | Revision 0.84 records the owner's direction to complete I05 through the final acceptance item and materializes one schema-valid launch authorization over the accepted freeze, exact source digests, `.venv`, deterministic environment, normalized command prefix, and five governed paths. | P2-I3 B-R I05 launch boundary | Commit and clean-HEAD preflight precede the irreversible one-shot claim; no invocation, output, `delta`, CAL-GATE passage, I06, C.2, or scientific/ecology result exists at construction |
 | CL-088 | 2026-07-19 | Revision 0.85 records the successful sole candidate-blind I05 attempt at launch HEAD `7a58471a7ba680e67e11cb35037cb7a3fac9f3f2`: permanent pre-builder claim, one builder call, zero retries, five cases, 15 responses, five triplets, ten exact zero margins, shared `delta=1e-12`, successful final receipt, actual second-start refusal, and 49/49 byte-exact read-only reconstruction checks. | P2-I3 B-R I05 pre-acceptance result boundary | Numeric-resolution evidence only; owner acceptance and CAL-GATE remain pending, while I06, candidate/control execution, C.2, and every scientific/ecology result remain closed |
 | CL-089 | 2026-07-19 | Revision 0.86 records final owner acceptance of I05 and passes `P2-I3-CAL-GATE`. The acceptance record binds launch HEAD, activation, permanent claim, successful receipt, three governed outputs, 49-check result validation, shared `delta=1e-12`, and the narrow numeric-only interpretation ceiling. | P2-I3 B-R I05 exit and I06 entry | I05 complete; opens I06 exact implementation registration only, while candidate/control execution, C.2, R01-R05, tags, and every scientific/ecology/native claim remain closed |
+| CL-090 | 2026-07-20 | Revision 0.87 synchronizes the master program through owner-accepted I06/I06A registration and retained I07-A. Package `1.0.2` preserves 450 evidence cases, adds six inert operational baselines, and fixes a 456-entry/460-start schedule. Candidate-free I07-A closes source, environment, activation-schema, P4/P5, retry-root, timeout/log, and no-fallback authority; 40 focused and 82 adjacent tests plus two byte-identical zero-operation previews pass. Source commit `51273e9` is merged into `main` at `8cb360d`, and the root project handoff records the exact continuation. | P2-I3 B-R I07-A retention and project handoff | I07-B inactive-freeze construction opens; EXEC-FREEZE acceptance, activation, campaign claim, candidate/control/integrity execution, C.2, R01-R05, tags, and every L03/ecology result remain closed |
 
 ## 17. Current next actions
 
@@ -2665,6 +2668,17 @@ The next unchecked actions in dependency order are:
     acceptance and `P2-I3-CAL-GATE` passage.
 48. [x] Review and accept the complete I05 calibration package and pass
     `P2-I3-CAL-GATE` before opening I06 exact registration.
-49. [ ] Begin I06 exact implementation registration by resolving Q-014 through
+49. [x] Begin I06 exact implementation registration by resolving Q-014 through
     Q-018 and binding every topology, value, schedule, control, resource, and
     reconstruction identity before any candidate execution.
+50. [x] Complete and owner-accept corrected I06A package `1.0.2`; retain its
+    exact 450-case registry, six inert operational baselines, 456-entry
+    topological schedule, 460-start ceiling, and corrected REG-GATE at
+    `0769e5c` without candidate execution.
+51. [x] Complete candidate-free I07-A, apply its bounded authority-hardening
+    review, pass 40 focused and 82 adjacent tests plus two byte-identical
+    zero-operation previews, retain source commit `51273e9`, and merge it into
+    `main` at `8cb360d` with branch history preserved.
+52. [ ] Construct I07-B from the exact committed I07-A source, retain and
+    independently reconstruct the inactive freeze, prove zero candidate
+    activity, and stop for owner review before freeze acceptance or activation.

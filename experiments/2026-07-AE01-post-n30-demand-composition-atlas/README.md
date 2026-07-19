@@ -12,17 +12,23 @@ reconstruction and 53/53 closeout validation.
 Appendix B is likewise closed and owner-accepted. Its APP-B4 campaign retains
 75/75 valid fresh PyGRC arms and identifies a bounded three-admission terminal-P
 quantitative-history gate rather than distinct-operation complementarity.
+P2-I3 B-R has completed its candidate-free I07-A execution-source package at
+commit `51273e9`, now merged into `main`. I07-B inactive-freeze construction is
+the next permitted step. No B-R candidate, control, integrity, scientific, or
+ecology execution has occurred.
 
 **Acceptance state:** `AE01-C2` assigned; `AE01-C3` through `AE01-C6` unassigned
 
 ## Start here
 
-1. [Agentic Ecology: From Theory to Controlled Experiments](AGENTIC-ECOLOGY-OVERVIEW.md)
+1. The [project-wide handoff](../../PROJECT-HANDOFF.md) gives the current
+   evidence boundary and exact continuation point.
+2. [Agentic Ecology: From Theory to Controlled Experiments](AGENTIC-ECOLOGY-OVERVIEW.md)
    explains the general theory-to-evidence method.
-2. The [AE01 Agentic-Ecology View](AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
+3. The [AE01 Agentic-Ecology View](AE01-AGENTIC-ECOLOGY-OVERVIEW.md)
    interprets the current P2-I1, P2-I2, and appendix evidence across the
    seven-lane atlas.
-3. The [P2-I2 Interpretative Synthesis](reports/P2-I2-interpretative-synthesis.md)
+4. The [P2-I2 Interpretative Synthesis](reports/P2-I2-interpretative-synthesis.md)
    provides the detailed L02 case and mechanism account.
 
 The program-level orientation is the
@@ -193,9 +199,9 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   assigns every later activity to I00–I11. `P2-I3-BRIEF-GATE` has passed;
   Q-001 and the exact I01 input freeze are accepted through DEC-016.
 - The [cumulative decision record](implementation/P2-I3-decision-record.md)
-  retains all twenty-eight accepted semantic, process, source, substrate,
-  handoff, return-admission, and realization decisions plus the remaining
-  implementation questions at their legitimate decision points.
+  retains the accepted semantic, process, source, substrate, handoff,
+  return-admission, realization, calibration, registration, and execution-
+  authority decisions plus remaining questions at their legitimate points.
 - The accepted
   [I01 capability-audit input freeze](contracts/p2-i3/i01-capability-audit-input-freeze.json)
   fixes fifteen capability questions, ten operation dispositions, exact
@@ -226,9 +232,9 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   become explicit RCAE producer requirements and LGRC naturalization debt
   rather than reasons to weaken the experiment.
 - I01 supplies source-current capability evidence and I02 supplies exact
-  source-role authority. I03 now also carries exact N31 return/provider-option
-  authority; no complete realization, calibration, registration, execution
-  authority, or P2-I3 scientific result exists yet.
+  source-role authority. I03 through I07-A now carry the admitted N31 return,
+  B-R realization/conformance, calibration, exact registration, and candidate-
+  free execution-source authority. No P2-I3 scientific result exists yet.
 - The [Q-005 decay interpretation study](reports/P2-I3-Q005-decay-interpretation-study.md)
   now begins with D0 coherence-only derived decay, separating slow causal
   `C/J_C` organization from a fading graph observable and instantaneous
@@ -245,9 +251,10 @@ work; DEC-012 later accepted I03A only as the I03AR1 conformance baseline.
   DEC-026 subsequently resolves Q-005 as isolated B-R-first and C.2-second
   evidence tracks followed by producer-cost-aware comparison. DEC-027 through
   DEC-029 now resolve the B-R state/history mode, serialized conservative
-  lifecycle, and paired local native-departure encounter. The common
-  comparison envelope, Q-013/Q-015 design, operational hypotheses, and bounded
-  conformance remain next; no P2-I3 conformance or scientific evidence exists.
+  lifecycle, and paired local native-departure encounter. The later B-R
+  decisions and retained I03–I07-A packages close conformance, calibration,
+  registration, and source-authority work. I07-B inactive-freeze construction
+  is next; no candidate/control execution or P2-I3 scientific evidence exists.
 
 ## Program authority
 
@@ -406,7 +413,7 @@ Review R2 and P1-GATE                           passed; C1/C2 assigned
 P2-I1                                           closed; bounded constructed L01 result retained
 Review R3                                       passed; no P2-I1 result tuning
 P2-I2                                           closed; accepted bounded L02 result retained for commit
-P2-I3                                           B-R Q-006 through Q-008 resolved; pre-conformance design next
+P2-I3                                           B-R I07-A retained; I07-B inactive freeze next
 P2-I4 through P2-I7                             unopened or lane-local; execution lane-gated
 P2-I8                                           cross-lane synthesis
 P2-I9                                           control/debt/acceptance synthesis

@@ -6349,7 +6349,9 @@ A retry-root ownership, and intentional ambient-fallback refusal. Forty
 focused tests and the 82-test I06A/I07-A boundary pass, and two byte-identical
 dirty previews inspect the exact 18-call PyGRC surface with zero public-symbol
 invocation or candidate/control operation. The previews are retention-
-ineligible and I07-A still requires a clean source-anchor commit before I07-B.
+ineligible. The exact source package is retained at `51273e9` and merged into
+`main` at `8cb360d`, so I07-B inactive-freeze construction is now the next
+permitted boundary.
 
 No inactive I07-B freeze, `P2-I3-EXEC-FREEZE`, freeze acceptance, activation,
 campaign claim, governed child, candidate/control/integrity operation, C.2

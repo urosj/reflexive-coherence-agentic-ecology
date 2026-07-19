@@ -46,8 +46,9 @@ retry/resume/resource boundaries, passes 35 focused tests, and constructs a
 retention-ineligible zero-operation preview; bounded review then closes the
 acceptance/activation schemas, complete command/environment identity, Model A
 retry-root ownership, and intentional ambient-fallback test; 40 focused and 82
-adjacent tests plus two byte-identical previews pass; I07-A is review-ready and
-uncommitted, while I07-B and all execution authority remain unopened
+adjacent tests plus two byte-identical previews pass; I07-A is retained at
+`51273e9` and merged into `main` at `8cb360d`, while I07-B and all execution
+authority remain unopened
 
 **Iteration:** `P2-I3`
 
@@ -69,9 +70,8 @@ retention commit `e57c09c` opened candidate-free I07-A construction under
 DEC-047; I07-A then exposed a baseline/schedule ordering defect and was paused
 while bounded I06A package `1.0.2` was source-anchored at `7b5d392`,
 materialized, validated, owner-accepted, and retained at `0769e5c`; candidate-
-free I07-A has resumed and is review-ready after correcting and testing the
-456-entry source package; no I07-A source anchor, I07-B retained freeze, or
-execution authority exists
+free I07-A completed, was retained at `51273e9`, and was merged into `main` at
+`8cb360d`; no I07-B retained freeze or execution authority exists
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
@@ -270,7 +270,7 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Complete and owner-accepted | `P2-I3-CAL-PRE-GATE=passed`; opens only inactive I05 invocation-freeze construction, with no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Complete and owner-accepted | Permanent attempt consumed once; five null cases/15 responses/five triplets/ten zero margins; shared `delta=1e-12`; successful receipt and 49/49 reconstruction checks; CAL-GATE passed |
 | `P2-I3-I06/I06A` | Exact implementation registration and bounded execution-order correction | Passed CAL-GATE; I06 package `1.0.1` retained at `e57c09c` | I06A `1.0.2` source-anchored, materialized, 26/26 validated, 42/42 focused and 72/72 adjacent tests passed, byte-exactly reconstructed, owner-accepted, and retained at `0769e5c`; corrected REG-GATE passed | Complete; no candidate execution |
-| `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Corrected I06A REG-GATE and clean retention anchor `0769e5c` | Q-019 resolved by DEC-047; I07-A 456-entry source package review-ready after bounded authority hardening, 40/40 tests, and two byte-identical zero-operation previews; source commit pending | I07-B may later pass inactive `P2-I3-EXEC-FREEZE`; activation, campaign consumption, governed-entry claim, and P5 remain separate |
+| `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Corrected I06A REG-GATE and clean retention anchor `0769e5c` | Q-019 resolved by DEC-047; I07-A 456-entry source package retained at `51273e9` after bounded authority hardening, 40/40 tests, and two byte-identical zero-operation previews | I07-B may now construct and review the inactive `P2-I3-EXEC-FREEZE`; activation, campaign consumption, governed-entry claim, and P5 remain separate |
 | `P2-I3-I08` | Frozen finite matrix execution | Consumed active execution freeze | Unopened | May pass or validly close `P2-I3-EXEC-GATE`; no terminal interpretation |
 | `P2-I3-I09` | Compact common and lane-control resolution | Retained I08 terminals | Unopened | May pass `P2-I3-CONTROL-GATE` |
 | `P2-I3-I10` | Independent reconstruction and identity verification | Retained I08/I09 evidence | Unopened | May pass `P2-I3-RECON-GATE` |
@@ -2194,8 +2194,9 @@ runs no scientific response.
   control, integrity, model, packet, event, or save/load/reset operations.
 - [x] Record detailed findings and reconstruction commands in
   [the I07-A source-package report](../reports/P2-I3-I07A-BR-execution-source-package.md).
-- [ ] Retain the exact I07-A source package in one clean committed RCAE source
-  anchor. Dirty previews are retention-ineligible and cannot enter activation.
+- [x] Retain the exact I07-A source package in clean commit `51273e9` and merge
+  it into `main` at `8cb360d`. Dirty previews remain retention-ineligible and
+  cannot enter activation.
 
 ### 12.2 I07-B — inactive freeze and validation
 
@@ -2523,6 +2524,7 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-064` | I07-A construction exposes six missing operational baseline entries and probe-before-parent order; owner review accepts a bounded I06A correction | Preserve the 450-case evidence registry; add six inert baseline entries, a deterministic 456-entry DAG, 456/460 attempt bounds, 7,440-second ceiling, entry-aware schemas, and refreshed REG-GATE identities | Complete; source anchor `7b5d392`, owner-accepted package `1.0.2`, corrected REG-GATE, and retention commit `0769e5c` now govern I07-A; no candidate/control execution |
 | `P2-I3-CHG-065` | Owner accepts I06A at registration-completeness ceiling because I07-A must expose any remaining source/executability defect | Resume candidate-free I07-A; audit and correct the stale case-only projection, repository-root derivation, baseline dispatch, P4/P5 ordering, terminal closure, process-group/log/retry/resume source, and exact predecessor bindings | Review-ready I07-A source package: 456 entries and 919 closure roots; superseded in test/preview detail by CHG-066 before the source anchor |
 | `P2-I3-CHG-066` | Owner-supplied I07-A review accepts the scientific/schedule projection and identifies open acceptance/activation schemas, incomplete command environment, retry-root ambiguity, and incidental no-fallback evidence | Close both authority records twice; make commands self-contained; bind launch environment/interpreter/graph/path policy; select Model A 919-root ownership; add controlled ambient-fallback refusal | Corrected before source anchor; 40 focused and 82 adjacent tests plus two byte-identical zero-operation previews pass; I07-B and execution remain closed |
+| `P2-I3-CHG-067` | Owner directs I07-A commit, history-preserving merge into `main`, and one project-wide handoff before I07-B | Retain exact I07-A source at `51273e9`; merge at `8cb360d`; add root handoff and refresh current navigation/continuation records | Complete as source retention and documentation only; I07-B opens for construction, while EXEC-FREEZE acceptance, activation, and execution remain absent |
 
 ## 19. Evidence ledger
 
@@ -2586,6 +2588,7 @@ and evidence effect are retained.
 | `P2-I3-EV-053` | Corrected [I06A owner acceptance and REG-GATE record](../contracts/p2-i3/i06-br-owner-acceptance-and-reg-gate.json) | I06A exit | Accepts bounded registration completeness so I07-A can expose remaining execution-authority defects; passes corrected REG-GATE only | Owner-accepted 2026-07-19 and retained at `0769e5c`; I07-A may proceed, while EXEC-FREEZE and every candidate/control/scientific result remain closed |
 | `P2-I3-EV-054` | Retention commit `0769e5c` over exact accepted I06A package `1.0.2` | I06A retention | Clean immutable predecessor anchor for I07-A only | Retained 2026-07-19; does not certify I07 executability or authorize an operation |
 | `P2-I3-EV-055` | [I07-A execution-source package report](../reports/P2-I3-I07A-BR-execution-source-package.md), source policy/schema/runtime/freeze/validator/supervisor/case code, and 40-test suite | I07-A source construction and bounded pre-anchor hardening | Candidate-free execution-source conformance over the retained 456-entry schedule and 919 closure roots, including closed activation authority, exact environment, Model A retry descendants, and intentional no-fallback evidence | Review-ready 2026-07-20; 40 focused/82 adjacent tests and two byte-identical zero-operation previews pass; previews remain retention-ineligible and clean source anchor, I07-B, EXEC-FREEZE, activation, and execution remain absent |
+| `P2-I3-EV-056` | I07-A source commit `51273e9`, no-fast-forward main merge `8cb360d`, and repository [project handoff](../../../PROJECT-HANDOFF.md) | I07-A retention and project continuation | Clean immutable source authority plus project-wide navigation; no new runtime or scientific evidence | Retained 2026-07-20; opens I07-B construction only and does not pass EXEC-FREEZE or authorize execution |
 
 A B-R realization, its quarantined runtime-conformance evidence, and its
 owner-accepted I04 machine preregistration now exist for P2-I3. I05 supplies
@@ -2738,8 +2741,9 @@ accepted semantic brief
 + 40/40 I07-A focused tests and 82/82 I06A/I07-A boundary tests pass
 + retention-ineligible preview inspects 18 public symbols and invokes zero
   public/candidate/control/integrity operations
-!= clean I07-A source anchor, I07-B retained freeze, P2-I3-EXEC-FREEZE,
-   activation, campaign claim, or any candidate/control execution
++ clean I07-A source anchor 51273e9 merged into main at 8cb360d
+!= I07-B retained freeze, P2-I3-EXEC-FREEZE, activation, campaign claim,
+   or any candidate/control execution
 ```
 
 The inactive I05 invocation freeze `1.0.2` is retained and clean-commit
@@ -2751,9 +2755,9 @@ Q-017; accepted DEC-046 resolves Q-018. EV-050/051 preserve the historical
 package `1.0.1` and acceptance. EV-052 materializes corrected package `1.0.2`
 from clean source anchor `7b5d392`; EV-053 accepts it and passes corrected
 REG-GATE; EV-054 retains the exact package at `0769e5c`. EV-055 records the
-review-ready I07-A source package and zero-operation preview. A clean I07-A
-source-anchor commit is the next boundary before I07-B construction.
-Candidate/control execution remains unauthorized.
+retained I07-A source package and zero-operation previews. I07-B inactive-
+freeze construction is the next boundary. Candidate/control execution remains
+unauthorized.
 Conformance fixture values, topology, observed split, digests, and derived
 margins are prohibited inputs. C.2 design and every calibration or scientific
 execution remain unauthorized.

@@ -82,6 +82,9 @@ This repository is intended for:
 
 ## How to use this repository
 
+- Start with the [current project handoff](PROJECT-HANDOFF.md) for the shortest
+  route from the project-wide purpose and accepted evidence to the exact next
+  implementation boundary.
 - Read `From State to Becoming` first if you are coming from state machines,
   control systems, reinforcement learning, or agent-based modeling.
 - Read `RC Agentic Ecology` if you want the general mapping rule and the
@@ -127,23 +130,17 @@ temporal discriminator. These results do not establish an admitted ecology
 primitive or a complete agentic ecology; AE01 remains at `AE01-C2`, with
 L03–L07 and cross-lane synthesis unexecuted.
 
-P2-I3 has nevertheless advanced through pre-execution source and realization-
-design work. Its source-audit and source-admission gates passed; Q-003/Q-004
-selected the provisional node carrier and mixed native/RCAE ownership
-available before a decay primitive was defined. The Q-005 study separated
-coherence-only evolution, release attenuation, conserved redistribution, and
-susceptibility closure. Graph-project N31 has now returned exact B-R
-conservative-redistribution and C.2 exact-history-susceptibility provider
-contracts. Accepted DEC-025 admits both only as unselected options and passes
-`P2-I3-N31-RETURN-GATE`. DEC-026 resolves Q-005 as a staged B-R-first,
-C.2-second evidence program followed by comparison; it does not select a lane
-winner. DEC-027 through DEC-029 resolve the B-R current-state/history mode,
-serialized conservative lifecycle, and paired local native-departure
-encounter. The common comparison envelope, Q-013/Q-015 design, operational
-hypotheses, and bounded conformance remain next. The retained `0.0.0` versus
-source-declared/reconstructed `0.1` value is classified as a bounded
-distribution-metadata error with no provider-contract effect. This is graph
-evidence and continuation authority, not an L03 result or provider adoption.
+P2-I3 has advanced to its final pre-execution authority layer. Graph-project
+N31 returned B-R conservative redistribution and C.2 exact-history
+susceptibility as unselected provider contracts; the accepted program tests
+B-R first, C.2 second, and compares them only after both close. B-R theory,
+source admission, realization, quarantined conformance, preregistration,
+candidate-blind calibration, exact registration, and candidate-free I07-A
+execution-source construction are retained. I07-A fixes a 456-entry schedule,
+919 closure roots, and a 460-child-start ceiling, and passes 40 focused plus 82
+adjacent tests with zero candidate activity. I07-B inactive-freeze construction
+is next. No L03 candidate, control, or scientific execution has occurred, and
+no provider is selected.
 
 It does not claim that a full RC ant colony, native agency, biological
 identity, consciousness, native shared-medium coordination, or complete LGRC
@@ -204,16 +201,19 @@ and shared-medium participation before implementation claims are made.
   AE01 workspace remains at `AE01-C2`. P2-I1 is closed with an accepted bounded
   L01 result. P2-I2 is closed with an accepted 234-entry L02 main result,
   independent reconstruction, an Appendix A operation-complementarity result,
-  and an Appendix B terminal-P temporal discriminator. P2-I3 has passed its
-  source audit/admission and N31 return-admission work. DEC-026 opens only B-R
-  realization design before a separate C.2 track and later comparison; no L03
-  candidate has executed. L04–L07 and
+  and an Appendix B terminal-P temporal discriminator. P2-I3 B-R is at I07-A:
+  realization/conformance, candidate-blind calibration, exact registration,
+  and the candidate-free execution-source package are retained. I07-B
+  inactive-freeze construction is next; no L03 candidate has executed. C.2
+  remains separately queued after B-R closeout. L04–L07 and
   cross-lane synthesis remain unexecuted. New readers can begin with the
   [general experiment bridge](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AGENTIC-ECOLOGY-OVERVIEW.md)
   and then read the
   [AE01-specific view](experiments/2026-07-AE01-post-n30-demand-composition-atlas/AE01-AGENTIC-ECOLOGY-OVERVIEW.md).
 - [`implementation/`](implementation/README.md): active cross-cutting plans,
   decisions, checklists, and handoffs.
+- [`PROJECT-HANDOFF.md`](PROJECT-HANDOFF.md): current project-wide evidence
+  summary, claim boundary, runtime constraints, and exact continuation point.
 - `README.md`: public orientation and claim boundary.
 - `CONTRIBUTING.md`: contribution scope and review expectations.
 - `CITATION.cff`: citation metadata for GitHub and archival tooling.

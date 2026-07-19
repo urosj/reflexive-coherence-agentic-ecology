@@ -1,12 +1,15 @@
 # Post-N30 Agentic-Ecology Demand and Composition Atlas Roadmap
 
-**Status:** P2-I1 closed and Review R3 passed; P2-I2 brief/I01R1-corrected
-source-audit gates passed and source admission not begun
+**Status:** P2-I1 and P2-I2 closed with owner-accepted bounded results; P2-I3
+B-R has completed candidate-free I07-A source construction and opens I07-B
+inactive-freeze construction only
 
 **Local experiment:** `AE01`
 
-**Acceptance state:** `AE01-C2` assigned; one bounded L01 result, no cross-lane
-or N31+ claim
+**Acceptance state:** `AE01-C2` assigned; bounded L01 and L02 results, no L03,
+cross-lane, or N31+ selection claim
+
+**Current project handoff:** [repository-wide continuation snapshot](../PROJECT-HANDOFF.md)
 
 **Source admission:**
 [AE01 P1-I1 source inventory](2026-07-AE01-post-n30-demand-composition-atlas/contracts/source-inventory.md)
