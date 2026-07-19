@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "p2-i3-i06-br-registration-v1.0.1",
+  "$id": "p2-i3-i06-br-registration-v1.0.2",
   "$comment": "This schema closes the root and finite structural envelope. Complete DEC-042 through DEC-046 semantic closure requires p2_i3_i06_br_registration.py:validate_registration; schema-only acceptance is prohibited.",
   "title": "P2-I3 I06 B-R structural registration envelope",
   "additionalProperties": false,
@@ -9,7 +9,7 @@
       "const": "P2-I3-I06-BR-EXACT-REGISTRATION"
     },
     "artifact_version": {
-      "const": "1.0.1"
+      "const": "1.0.2"
     },
     "attempt_governance": {
       "additionalProperties": true,
@@ -20,22 +20,30 @@
           "type": "array"
         },
         "maximum_governed_child_starts": {
-          "const": 454
+          "const": 460
         },
         "primary_attempt_slots": {
-          "const": 450
+          "const": 456
         },
         "registered_case_count": {
           "const": 450
         },
+        "registered_operational_baseline_entry_count": {
+          "const": 6
+        },
+        "governed_entry_count": {
+          "const": 456
+        },
         "slots": {
-          "maxItems": 450,
-          "minItems": 450,
+          "maxItems": 456,
+          "minItems": 456,
           "type": "array"
         }
       },
       "required": [
         "registered_case_count",
+        "registered_operational_baseline_entry_count",
+        "governed_entry_count",
         "primary_attempt_slots",
         "slots",
         "class_retry_tokens",
@@ -191,13 +199,49 @@
     "schedule": {
       "additionalProperties": true,
       "properties": {
-        "order": {
+        "canonical_case_registry_count": {
+          "const": 450
+        },
+        "canonical_case_registry_order": {
           "maxItems": 450,
           "minItems": 450,
+          "type": "array"
+        },
+        "operational_baseline_entry_count": {
+          "const": 6
+        },
+        "operational_baseline_entries": {
+          "maxItems": 6,
+          "minItems": 6,
+          "type": "array"
+        },
+        "governed_entry_count": {
+          "const": 456
+        },
+        "entries": {
+          "maxItems": 456,
+          "minItems": 456,
+          "type": "array"
+        },
+        "dependency_dag": {
+          "maxItems": 456,
+          "minItems": 456,
+          "type": "array"
+        },
+        "order": {
+          "maxItems": 456,
+          "minItems": 456,
           "type": "array"
         }
       },
       "required": [
+        "canonical_case_registry_count",
+        "canonical_case_registry_order",
+        "operational_baseline_entry_count",
+        "operational_baseline_entries",
+        "governed_entry_count",
+        "entries",
+        "dependency_dag",
         "order"
       ],
       "type": "object"

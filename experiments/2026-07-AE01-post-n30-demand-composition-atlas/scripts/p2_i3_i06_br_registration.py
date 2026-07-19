@@ -69,6 +69,14 @@ VALIDATION_RELATIVE = (
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/"
     "contracts/p2-i3/i06-br-registration-validation.json"
 )
+TEST_RELATIVE = (
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/"
+    "implementation/tests/test_p2_i3_i06_br.py"
+)
+REPORT_RELATIVE = (
+    "experiments/2026-07-AE01-post-n30-demand-composition-atlas/"
+    "reports/P2-I3-I06-BR-exact-registration.md"
+)
 I03_RETURN_RELATIVE = (
     "experiments/2026-07-AE01-post-n30-demand-composition-atlas/"
     "contracts/p2-i3/i03-n31-return-admission.json"
@@ -93,7 +101,7 @@ REALIZATIONS = (101, 211, 307)
 PROFILES = (("tau-1", 1), ("tau-2", 2))
 ARMS = ("W", "O", "E")
 DELTA = Fraction(1, 1_000_000_000_000)
-ARTIFACT_VERSION = "1.0.1"
+ARTIFACT_VERSION = "1.0.2"
 MIB = 1024 * 1024
 GIB = 1024 * MIB
 THREAD_ENV = {
@@ -812,6 +820,220 @@ def integrity_registry(configs: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return rows
 
 
+def canonical_case_registry(
+    branches: list[dict[str, Any]], faults: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Return the immutable 450-case evidence identity space.
+
+    Execution order is deliberately not encoded here. Control selectors and
+    requirement sets retain the original one-based ordinal universe:
+    integrity faults followed by the scientific branch registry.
+    """
+    rows = faults + branches
+    require(len(rows) == 450, "canonical case registry count drift")
+    require(len({row["case_id"] for row in rows}) == len(rows), "canonical case identity collision")
+    return rows
+
+
+def operational_baseline_entries(
+    baselines: list[dict[str, Any]], configs: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Register six scientifically inert campaign baseline constructions."""
+    core_by_base: dict[str, list[str]] = {row["substrate_base_id"]: [] for row in baselines}
+    for config in configs:
+        if config["family_id"] == "core":
+            core_by_base[config["substrate_base_id"]].append(config["configuration_id"])
+    rows = []
+    for baseline in baselines:
+        base_id = baseline["substrate_base_id"]
+        rows.append(
+            {
+                "entry_id": f"P2-I3-BR-OPBASE-{baseline['delay_profile_id'].upper()}-R{baseline['realization_id']}",
+                "entry_kind": "operational_baseline_construction",
+                "case_id": None,
+                "substrate_base_id": base_id,
+                "delay_profile_id": baseline["delay_profile_id"],
+                "realization_id": baseline["realization_id"],
+                "execution_class": "complex_construction_or_comparison",
+                "scientific_evidence_effect": "none",
+                "declared_parent_refs": [],
+                "parent_entry_ids": [],
+                "produced_restoration_refs": [
+                    f"baseline:{base_id}",
+                    *[
+                        f"cell-envelope:{config_id}"
+                        for config_id in sorted(core_by_base[base_id])
+                    ],
+                ],
+                "obligations": [
+                    "construct_registered_native_topology_and_immutable_RCAE_baseline",
+                    "verify_registered_source_and_runtime_identity",
+                    "save_and_validate_native_restoration_identity_v2",
+                    "emit_immutable_content_addressed_baseline_bundle",
+                    "emit_typed_operational_baseline_terminal",
+                ],
+                "scientific_operation_counts": {
+                    "formation": 0,
+                    "export": 0,
+                    "encounter_probe": 0,
+                    "scientific_control": 0,
+                    "integrity_fault_dispatch": 0,
+                },
+                "expected_terminal": "p2_i3_br_operational_baseline_terminal",
+            }
+        )
+    require(len(rows) == 6, "operational baseline entry count drift")
+    return rows
+
+
+def _scientific_schedule_key(row: Mapping[str, Any]) -> tuple[Any, ...]:
+    kind_rank = {
+        "unprobed_trajectory": 0,
+        "terminal_probe": 1,
+        "fresh_nondepositor_terminal_probe": 2,
+    }
+    return (
+        row["substrate_base_id"],
+        row["configuration_id"],
+        kind_rank[row["branch_kind"]],
+        row.get("checkpoint", ""),
+        row.get("participant_class", ""),
+        row.get("route_role", ""),
+        row["case_id"],
+    )
+
+
+def topological_scientific_order(branches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Return the frozen deterministic parent-before-probe permutation."""
+    by_id = {row["case_id"]: row for row in branches}
+    require(len(by_id) == len(branches), "scientific schedule identity collision")
+    parents: dict[str, set[str]] = {}
+    children: dict[str, set[str]] = {case_id: set() for case_id in by_id}
+    for case_id, row in by_id.items():
+        dependencies: set[str] = set()
+        for parent in row["parent_ids"]:
+            candidate = parent.split(":", 2)[1] if parent.startswith("checkpoint:") else parent
+            if candidate in by_id:
+                dependencies.add(candidate)
+        parents[case_id] = dependencies
+        for dependency in dependencies:
+            children[dependency].add(case_id)
+    ready = sorted((by_id[item] for item, deps in parents.items() if not deps), key=_scientific_schedule_key)
+    ordered: list[dict[str, Any]] = []
+    while ready:
+        row = ready.pop(0)
+        ordered.append(row)
+        for child in sorted(children[row["case_id"]]):
+            parents[child].remove(row["case_id"])
+            if not parents[child]:
+                ready.append(by_id[child])
+        ready.sort(key=_scientific_schedule_key)
+    require(len(ordered) == len(branches), "scientific dependency graph is cyclic or incomplete")
+    return ordered
+
+
+def governed_execution_schedule(
+    baselines: list[dict[str, Any]],
+    configs: list[dict[str, Any]],
+    branches: list[dict[str, Any]],
+    faults: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Build the six-baseline plus 450-case governed execution DAG."""
+    baseline_entries = operational_baseline_entries(baselines, configs)
+    baseline_entry_by_base = {row["substrate_base_id"]: row["entry_id"] for row in baseline_entries}
+    scientific_order = topological_scientific_order(branches)
+    branch_ids = {row["case_id"] for row in branches}
+    produced_checkpoints: dict[str, set[str]] = {
+        row["case_id"]: set() for row in branches if row["branch_kind"] == "unprobed_trajectory"
+    }
+    for row in branches:
+        for parent in row["parent_ids"]:
+            if parent.startswith("checkpoint:"):
+                trajectory_id = parent.split(":", 2)[1]
+                require(trajectory_id in produced_checkpoints, "checkpoint has no registered trajectory producer")
+                produced_checkpoints[trajectory_id].add(parent)
+    case_rows = faults + scientific_order
+    entries = deepcopy(baseline_entries)
+    for case in case_rows:
+        parent_entries: set[str] = {baseline_entry_by_base[case["substrate_base_id"]]}
+        checkpoint_refs = [parent for parent in case["parent_ids"] if parent.startswith("checkpoint:")]
+        for parent in case["parent_ids"]:
+            candidate = parent.split(":", 2)[1] if parent.startswith("checkpoint:") else parent
+            if candidate in branch_ids:
+                parent_entries.add(candidate)
+        entries.append(
+            {
+                "entry_id": case["case_id"],
+                "entry_kind": case["case_kind"],
+                "case_id": case["case_id"],
+                "substrate_base_id": case["substrate_base_id"],
+                "configuration_id": case["configuration_id"],
+                "execution_class": case["execution_class"],
+                "scientific_evidence_effect": case.get("scientific_evidence_effect", "registered_case_evidence"),
+                "declared_parent_refs": deepcopy(case["parent_ids"]),
+                "parent_entry_ids": sorted(parent_entries),
+                "produced_checkpoint_refs": sorted(produced_checkpoints.get(case["case_id"], set())),
+                "fresh_runtime_load_ref": checkpoint_refs[0] if checkpoint_refs else f"baseline:{case['substrate_base_id']}",
+                "fresh_runtime_process": True,
+                "parent_trajectory_advanced_in_child": False,
+            }
+        )
+    ordinals = {row["entry_id"]: index for index, row in enumerate(entries, start=1)}
+    for row in entries:
+        row["schedule_ordinal"] = ordinals[row["entry_id"]]
+        require(
+            all(ordinals[parent] < row["schedule_ordinal"] for parent in row["parent_entry_ids"]),
+            f"execution dependency does not precede child: {row['entry_id']}",
+        )
+    subtrees = []
+    for baseline in baseline_entries:
+        dependent_ids = [
+            row["entry_id"]
+            for row in entries
+            if row["substrate_base_id"] == baseline["substrate_base_id"]
+            and row["entry_id"] != baseline["entry_id"]
+        ]
+        subtrees.append(
+            {
+                "baseline_entry_id": baseline["entry_id"],
+                "substrate_base_id": baseline["substrate_base_id"],
+                "dependent_entry_ids": dependent_ids,
+                "failure_status": "blocked_dependency",
+            }
+        )
+    return {
+        "canonical_case_registry_order": [row["case_id"] for row in canonical_case_registry(branches, faults)],
+        "canonical_case_registry_count": 450,
+        "canonical_case_registry_digest": digest_data([row["case_id"] for row in canonical_case_registry(branches, faults)]),
+        "operational_baseline_entries": baseline_entries,
+        "operational_baseline_entry_count": 6,
+        "governed_entry_count": 456,
+        "entries": entries,
+        "order": [row["entry_id"] for row in entries],
+        "dependency_dag": [
+            {"entry_id": row["entry_id"], "parent_entry_ids": row["parent_entry_ids"]}
+            for row in entries
+        ],
+        "baseline_failure_subtrees": subtrees,
+        "independent_substrate_bases_continue_after_local_baseline_failure": True,
+        "integrity_block_after_baselines": True,
+        "scientific_order": "deterministic_topological_sort",
+        "topological_tie_break_key": [
+            "substrate_base_id",
+            "configuration_id",
+            "branch_kind_rank",
+            "checkpoint",
+            "participant_class",
+            "route_role",
+            "case_id",
+        ],
+        "result_responsive_reordering": False,
+        "fresh_child_per_entry": True,
+        "mutable_cross_child_state": False,
+        "implicit_parent_trajectory_reexecution": False,
+    }
+
+
 CLASS_PROFILES = {
     "probe_only": {"startup_count": 1, "event_count": 1, "load_count": 1, "bundle_count": 1, "validation_count": 2, "class_minimum_seconds": 5, "outer_seconds": 180, "logical_bytes": 8 * MIB, "physical_bytes": 1 * MIB, "temporary_bytes": 2 * MIB, "stdout_bytes": 1 * MIB, "stderr_bytes": 1 * MIB},
     "standard_trajectory": {"startup_count": 1, "event_count": 30, "load_count": 1, "bundle_count": 4, "validation_count": 4, "class_minimum_seconds": 20, "outer_seconds": 180, "logical_bytes": 32 * MIB, "physical_bytes": 8 * MIB, "temporary_bytes": 16 * MIB, "stdout_bytes": 1 * MIB, "stderr_bytes": 1 * MIB},
@@ -820,7 +1042,7 @@ CLASS_PROFILES = {
 }
 
 
-def resource_registry(cases: list[dict[str, Any]], timing: Mapping[str, Any]) -> dict[str, Any]:
+def resource_registry(entries: list[dict[str, Any]], timing: Mapping[str, Any]) -> dict[str, Any]:
     refs = timing["references"]
     safety_factor = 8
     profiles = deepcopy(CLASS_PROFILES)
@@ -839,13 +1061,15 @@ def resource_registry(cases: list[dict[str, Any]], timing: Mapping[str, Any]) ->
         row["case_timeout_seconds"] = derived
     assignments = []
     counts = {name: 0 for name in profiles}
-    for index, case in enumerate(cases, start=1):
-        class_id = case["execution_class"]
+    for index, entry in enumerate(entries, start=1):
+        class_id = entry["execution_class"]
         require(class_id in profiles, f"unknown execution class: {class_id}")
         counts[class_id] += 1
         assignments.append(
             {
-                "case_id": case["case_id"],
+                "entry_id": entry["entry_id"],
+                "entry_kind": entry["entry_kind"],
+                "case_id": entry["case_id"],
                 "schedule_ordinal": index,
                 "execution_class": class_id,
                 "case_timeout_seconds": profiles[class_id]["case_timeout_seconds"],
@@ -879,6 +1103,18 @@ def resource_registry(cases: list[dict[str, Any]], timing: Mapping[str, Any]) ->
         "class_counts": counts,
         "assignment_digest": digest_data(assignments),
         "assignments": assignments,
+        "operational_baseline_artifact_projection": {
+            "immutable_content_addressed_bundles": sum(
+                row["entry_kind"] == "operational_baseline_construction" for row in entries
+            ),
+            "typed_operational_terminals": sum(
+                row["entry_kind"] == "operational_baseline_construction" for row in entries
+            ),
+            "attempt_claims_and_resource_receipts": sum(
+                row["entry_kind"] == "operational_baseline_construction" for row in entries
+            ),
+            "scientific_artifacts": 0,
+        },
         "case_timeout_formula": "max(class_minimum_seconds,ceil(8*reference_time_ns/1e9))",
         "campaign": {
             "primary_child_seconds": child_seconds,
@@ -888,7 +1124,7 @@ def resource_registry(cases: list[dict[str, Any]], timing: Mapping[str, Any]) ->
             "retry_administration_seconds": retry_admin,
             "exact_campaign_ceiling_seconds": campaign,
             "outer_campaign_ceiling_seconds": 30 * 3600,
-            "uniform_outer_child_projection_seconds": 72 * 60 + 378 * 180,
+            "uniform_outer_child_projection_seconds": 72 * 60 + 384 * 180,
             "retry_outer_projection_seconds": 640,
         },
         "bytes": {
@@ -1242,9 +1478,11 @@ def control_projection(
     return rows, requirements
 
 
-def attempt_policy(cases: list[dict[str, Any]], resources: Mapping[str, Any]) -> dict[str, Any]:
+def attempt_policy(entries: list[dict[str, Any]], resources: Mapping[str, Any]) -> dict[str, Any]:
     slots = [
         {
+            "entry_id": row["entry_id"],
+            "entry_kind": row["entry_kind"],
             "case_id": row["case_id"],
             "primary_attempt": 1,
             "scientific_retries": 0,
@@ -1252,7 +1490,7 @@ def attempt_policy(cases: list[dict[str, Any]], resources: Mapping[str, Any]) ->
             "execution_class": row["execution_class"],
             "schedule_ordinal": index,
         }
-        for index, row in enumerate(cases, start=1)
+        for index, row in enumerate(entries, start=1)
     ]
     propagation = [
         {"trigger": "failed_terminal_probe", "scope": "branch", "dependent_status": "none_independent_cases_continue"},
@@ -1262,7 +1500,11 @@ def attempt_policy(cases: list[dict[str, Any]], resources: Mapping[str, Any]) ->
         {"trigger": "shared_authority_schema_validator_content_store_or_graph_guard", "scope": "whole_campaign", "dependent_status": "not_started_campaign_stop"},
     ]
     return {
-        "registered_case_count": len(cases),
+        "registered_case_count": sum(row["case_id"] is not None for row in entries),
+        "registered_operational_baseline_entry_count": sum(
+            row["entry_kind"] == "operational_baseline_construction" for row in entries
+        ),
+        "governed_entry_count": len(entries),
         "primary_attempt_slots": len(slots),
         "slots": slots,
         "class_retry_tokens": [
@@ -1270,10 +1512,11 @@ def attempt_policy(cases: list[dict[str, Any]], resources: Mapping[str, Any]) ->
             for name, count in resources["class_counts"].items()
             if count
         ],
-        "maximum_governed_child_starts": len(cases) + 4,
+        "retry_token_allocation_rule": "first_retry_eligible_failure_in_frozen_schedule_order_with_matching_execution_class_including_operational_baselines",
+        "maximum_governed_child_starts": len(entries) + 4,
         "campaign_supervisor_starts": {"primary": 1, "resume_maximum": 1},
-        "claim_protocol": {"campaign_claim_consumes": "P2-I3-EXEC-FREEZE", "case_claim_before_child": True, "exclusive": True, "durably_flushed": True, "immutable": True, "deletion_or_reuse": False},
-        "phases": ["P0_case_claim_durable", "P1_child_started", "P2_authorities_and_inputs_loaded", "P3_parent_restored_and_validated", "P4_case_boundary_armed", "P5_case_specific_dispatch_authorized", "P6_output_observed", "P7_terminal_receipt_complete"],
+        "claim_protocol": {"campaign_claim_consumes": "P2-I3-EXEC-FREEZE", "governed_entry_claim_before_child": True, "case_claim_required_when_case_id_present": True, "operational_baseline_claim_required": True, "exclusive": True, "durably_flushed": True, "immutable": True, "deletion_or_reuse": False},
+        "phases": ["P0_governed_entry_claim_durable", "P1_child_started", "P2_authorities_and_inputs_loaded", "P3_parent_restored_and_validated", "P4_entry_boundary_armed", "P5_entry_specific_dispatch_authorized", "P6_output_observed", "P7_terminal_receipt_complete"],
         "P5_owner": "external_supervisor_one_shot_authorization",
         "retry_eligibility": "complete_externally_attested_failure_at_or_before_P4_and_no_P5_or_result_artifact",
         "statuses": ["valid_terminal", "attested_pre_candidate_infrastructure_failure", "post_candidate_infrastructure_failure", "invalid_execution", "unknown_boundary_failure", "preclaim_failure", "blocked_dependency", "not_started_campaign_stop", "authority_breach"],
@@ -1338,6 +1581,12 @@ def machine_policy() -> dict[str, Any]:
         "artifact_version": ARTIFACT_VERSION,
         "source_anchor": SOURCE_ANCHOR,
         "required_decisions": [f"P2-I3-DEC-{number:03d}" for number in range(20, 47)],
+        "bounded_correction": {
+            "change_id": "P2-I3-CHG-064",
+            "correction_iteration_id": "P2-I3-I06A",
+            "reason": "separate_the_450_case_evidence_registry_from_the_456_entry_dependency_ordered_execution_schedule",
+            "scientific_redesign": False,
+        },
         "entry_gate": {"gate_id": "P2-I3-CAL-GATE", "status": "passed"},
         "exit_gate": {"gate_id": "P2-I3-REG-GATE", "status": "unopened_owner_review_required"},
         "allowed_actions": ["source_binding", "candidate_free_timing", "static_registry_construction", "baseline_constructor_and_restoration_validation", "schema_validation", "reconstruction"],
@@ -1347,14 +1596,19 @@ def machine_policy() -> dict[str, Any]:
     }
 
 
-def build_registration(graph_root: Path, timing: Mapping[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+def build_registration(
+    graph_root: Path,
+    timing: Mapping[str, Any],
+    implementation_source_anchor: str | None = None,
+) -> tuple[dict[str, Any], dict[str, Any]]:
     environment = timing["environment"]
     baselines, topologies, baseline_checks = baseline_registry()
     configs = configurations(baselines)
     branches = branch_registry(configs)
     faults = integrity_registry(configs)
-    cases = faults + sorted(branches, key=lambda row: (row["substrate_base_id"], row["configuration_id"], row["branch_kind"], row["case_id"]))
-    resources = resource_registry(cases, timing)
+    cases = canonical_case_registry(branches, faults)
+    schedule = governed_execution_schedule(baselines, configs, branches, faults)
+    resources = resource_registry(schedule["entries"], timing)
     i04 = load_json(ROOT / I04_POLICY_RELATIVE)
     case_sets = evidence_case_sets(configs, branches, faults)
     controls, requirements = control_projection(i04, case_sets)
@@ -1377,7 +1631,17 @@ def build_registration(graph_root: Path, timing: Mapping[str, Any]) -> tuple[dic
         "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_br_runtime.py",
         "experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i04_br_analysis.py",
     ):
-        source_authorities.append({"path": relative, "sha256": sha256_file(ROOT / relative)})
+        source_authorities.append(
+            {
+                "path": relative,
+                "sha256": sha256_file(ROOT / relative),
+                "sha256_at_implementation_source_anchor": (
+                    committed_file_sha256(implementation_source_anchor, relative)
+                    if implementation_source_anchor is not None
+                    else None
+                ),
+            }
+        )
     source_anchor_files = [
         "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-decision-record.md",
         "experiments/2026-07-AE01-post-n30-demand-composition-atlas/implementation/P2-I3-trail-or-stigmergic-field-checklist.md",
@@ -1397,11 +1661,30 @@ def build_registration(graph_root: Path, timing: Mapping[str, Any]) -> tuple[dic
             },
             "authority": {
                 "rcae_source_anchor": SOURCE_ANCHOR,
+                "implementation_source_anchor": implementation_source_anchor,
+                "retention_eligible_source_binding": implementation_source_anchor is not None,
                 "required_decisions": [f"P2-I3-DEC-{number:03d}" for number in range(20, 47)],
+                "bounded_correction": {
+                    "change_id": "P2-I3-CHG-064",
+                    "correction_iteration_id": "P2-I3-I06A",
+                    "owner_accepted": True,
+                    "scientific_redesign": False,
+                },
                 "source_artifacts": source_authorities,
                 "source_anchor_files": [
                     {"path": relative, "sha256_at_source_anchor": committed_file_sha256(SOURCE_ANCHOR, relative)}
                     for relative in source_anchor_files
+                ],
+                "implementation_governance_files": [
+                    {
+                        "path": relative,
+                        "sha256_at_implementation_source_anchor": (
+                            committed_file_sha256(implementation_source_anchor, relative)
+                            if implementation_source_anchor is not None
+                            else None
+                        ),
+                    }
+                    for relative in (TEST_RELATIVE, REPORT_RELATIVE, *source_anchor_files)
                 ],
                 "graph_revision": EXPECTED_GRAPH_REVISION,
                 "n31_contract_id": "n31_B_R_conserved_redistribution_contract_v2",
@@ -1496,11 +1779,11 @@ def build_registration(graph_root: Path, timing: Mapping[str, Any]) -> tuple[dic
             "pairing": pairing_registry(),
             "control_governance": {"evidence_case_set_registry": case_sets, "evidence_case_set_count": len(case_sets), "control_legs": controls, "control_leg_count": len(controls), "requirements": requirements, "requirement_count": len(requirements), "outcomes_assigned": 0, "disposition_copying_allowed": False},
             "resource_governance": resources,
-            "attempt_governance": attempt_policy(cases, resources),
+            "attempt_governance": attempt_policy(schedule["entries"], resources),
             "producer_inventory": producer_inventory(configs, branches, faults),
-            "schedule": {"order": [row["case_id"] for row in cases], "integrity_block_first": True, "scientific_order": "substrate_base_then_configuration_then_branch_kind_then_case_id", "result_responsive_reordering": False, "fresh_child_per_case": True, "mutable_cross_child_state": False},
+            "schedule": schedule,
             "artifact_governance": {"logical_components": ["native.json", "native-identity-v2.json", "policy.json", "execution.json", "measurement.json", "reset.json", "audit.json", "manifest.json"], "large_individual_review_bytes": 1 * MIB, "large_selected_set_review_bytes": 10 * MIB, "reconstructable_local_only_allowed_with_complete_metadata": True, "exact_byte_dedup_only": True},
-            "terminal_record_templates": {"schema": EXECUTION_SCHEMA_RELATIVE, "root_classes": ["checkpoint_manifest", "attempt_terminal", "case_resolution", "control_leg_resolution", "resource_receipt", "cycle_closeout"], "status": "closed_shapes_registered_no_instances_or_observations"},
+            "terminal_record_templates": {"schema": EXECUTION_SCHEMA_RELATIVE, "root_classes": ["checkpoint_manifest", "operational_baseline_terminal", "attempt_terminal", "case_resolution", "control_leg_resolution", "resource_receipt", "cycle_closeout"], "status": "closed_shapes_registered_no_instances_or_observations"},
             "reconstruction": {
                 "validate_command": f"env PYTHONPATH=${{RCAE_PYGRC_ROOT}}/src {' '.join(f'{k}={v}' for k,v in THREAD_ENV.items())} .venv/bin/python -B {SCRIPT_RELATIVE} validate --graph-root ${{RCAE_PYGRC_ROOT}}",
                 "reconstruct_command": f"env PYTHONPATH=${{RCAE_PYGRC_ROOT}}/src {' '.join(f'{k}={v}' for k,v in THREAD_ENV.items())} .venv/bin/python -B {SCRIPT_RELATIVE} reconstruct --graph-root ${{RCAE_PYGRC_ROOT}} --output outputs/reconstruction/p2-i3-i06-br-registration-validation.reconstructed.json",
@@ -1541,10 +1824,31 @@ def validate_registration(policy: Mapping[str, Any], timing: Mapping[str, Any], 
     require(policy == machine_policy(), "machine policy does not reconstruct from accepted decisions")
     expected_decisions = [f"P2-I3-DEC-{number:03d}" for number in range(20, 47)]
     require(registration["authority"]["required_decisions"] == expected_decisions, "registration decision chain drift")
+    implementation_source_anchor = registration["authority"]["implementation_source_anchor"]
+    retention_eligible = registration["authority"]["retention_eligible_source_binding"]
+    require(retention_eligible == (implementation_source_anchor is not None), "implementation source-binding eligibility drift")
+    if retention_eligible:
+        git(ROOT, "merge-base", "--is-ancestor", implementation_source_anchor, "HEAD")
     for source in registration["authority"]["source_artifacts"]:
         require(sha256_file(ROOT / source["path"]) == source["sha256"], f"registration source drift: {source['path']}")
+        if retention_eligible:
+            require(
+                source["sha256_at_implementation_source_anchor"] == source["sha256"],
+                f"registration source was not cleanly committed at implementation anchor: {source['path']}",
+            )
+        else:
+            require(source["sha256_at_implementation_source_anchor"] is None, "preview acquired a committed source digest")
     for source in registration["authority"]["source_anchor_files"]:
         require(committed_file_sha256(SOURCE_ANCHOR, source["path"]) == source["sha256_at_source_anchor"], f"source-anchor file drift: {source['path']}")
+    for source in registration["authority"]["implementation_governance_files"]:
+        if retention_eligible:
+            require(
+                committed_file_sha256(implementation_source_anchor, source["path"])
+                == source["sha256_at_implementation_source_anchor"],
+                f"implementation governance source-anchor drift: {source['path']}",
+            )
+        else:
+            require(source["sha256_at_implementation_source_anchor"] is None, "preview acquired committed governance digest")
     raw_timing = timing["raw_monotonic_elapsed_ns"]
     require(all(len(values) == timing["repetitions_per_operation"] == 7 and all(isinstance(value, int) and value > 0 for value in values) for values in raw_timing.values()), "timing observation closure failure")
     expected_timing_references = {
@@ -1668,26 +1972,58 @@ def validate_registration(policy: Mapping[str, Any], timing: Mapping[str, Any], 
         require(row["minimum_valid_artifact_count"] <= len(selected), f"requirement minimum cannot be achieved: {row['requirement_id']}")
     require(all(row["observed_resolution"] is None for row in registration["control_governance"]["control_legs"]), "control outcome leaked into registration")
     require(all(row["observed_resolution"] is None for row in registration["control_governance"]["requirements"]), "requirement outcome leaked into registration")
+    expected_schedule = governed_execution_schedule(
+        baselines,
+        matrix["configurations"],
+        matrix["scientific_branches"],
+        matrix["integrity_fault_cases"],
+    )
+    require(registration["schedule"] == expected_schedule, "governed execution schedule does not reconstruct")
     classes = registration["resource_governance"]["class_counts"]
-    require(classes == {"probe_only": 288, "standard_trajectory": 48, "complex_construction_or_comparison": 42, "integrity_fault": 72}, "execution-class counts drift")
+    require(classes == {"probe_only": 288, "standard_trajectory": 48, "complex_construction_or_comparison": 48, "integrity_fault": 72}, "execution-class counts drift")
     assignments = registration["resource_governance"]["assignments"]
-    require(len(assignments) == 450 and {row["case_id"] for row in assignments} == set(case_ids), "resource assignment closure failure")
+    schedule_entry_ids = registration["schedule"]["order"]
+    require(len(assignments) == 456 and {row["entry_id"] for row in assignments} == set(schedule_entry_ids), "resource assignment closure failure")
+    require({row["case_id"] for row in assignments if row["case_id"] is not None} == set(case_ids), "resource case assignment closure failure")
     require(registration["resource_governance"]["assignment_digest"] == digest_data(assignments), "assignment digest drift")
-    ordered_cases = matrix["integrity_fault_cases"] + sorted(matrix["scientific_branches"], key=lambda row: (row["substrate_base_id"], row["configuration_id"], row["branch_kind"], row["case_id"]))
-    expected_resources = resource_registry(ordered_cases, timing)
+    expected_resources = resource_registry(expected_schedule["entries"], timing)
     require(registration["resource_governance"] == expected_resources, "resource registry does not reconstruct")
+    require(registration["resource_governance"]["campaign"]["primary_child_seconds"] == 4920, "I06A primary child allowance drift")
+    require(registration["resource_governance"]["campaign"]["exact_campaign_ceiling_seconds"] == 7440, "I06A exact campaign ceiling drift")
     require(registration["resource_governance"]["campaign"]["exact_campaign_ceiling_seconds"] <= 108000, "campaign ceiling exceeded")
     require(registration["resource_governance"]["bytes"]["governed_physical_projection_bytes"] <= 8 * GIB, "physical bytes exceeded")
     require(registration["attempt_governance"]["registered_case_count"] == 450, "attempt case count drift")
+    require(registration["attempt_governance"]["registered_operational_baseline_entry_count"] == 6, "attempt baseline entry count drift")
+    require(registration["attempt_governance"]["governed_entry_count"] == 456, "attempt governed entry count drift")
+    require(registration["attempt_governance"]["primary_attempt_slots"] == 456, "primary attempt-slot count drift")
     require(len(registration["attempt_governance"]["class_retry_tokens"]) == 4, "retry token count drift")
-    require(registration["attempt_governance"]["maximum_governed_child_starts"] == 454, "child start ceiling drift")
-    require(registration["attempt_governance"] == attempt_policy(ordered_cases, expected_resources), "attempt policy does not reconstruct")
+    require(registration["attempt_governance"]["maximum_governed_child_starts"] == 460, "child start ceiling drift")
+    require(registration["attempt_governance"] == attempt_policy(expected_schedule["entries"], expected_resources), "attempt policy does not reconstruct")
     require(registration["producer_inventory"] == producer_inventory(matrix["configurations"], matrix["scientific_branches"], matrix["integrity_fault_cases"]), "producer inventory does not reconstruct")
-    require(len(registration["schedule"]["order"]) == len(set(registration["schedule"]["order"])) == 450, "schedule closure failure")
-    require(set(registration["schedule"]["order"]) == set(case_ids), "schedule membership failure")
-    require(registration["schedule"]["order"][:72] == [row["case_id"] for row in matrix["integrity_fault_cases"]], "integrity block is not first")
+    require(len(schedule_entry_ids) == len(set(schedule_entry_ids)) == 456, "schedule closure failure")
+    require(registration["schedule"]["canonical_case_registry_order"] == case_ids, "canonical case-registry order drift")
+    require(registration["schedule"]["canonical_case_registry_digest"] == digest_data(case_ids), "canonical case-registry digest drift")
+    require(set(schedule_entry_ids[6:]) == set(case_ids), "schedule case membership failure")
+    baseline_entries = registration["schedule"]["operational_baseline_entries"]
+    require(schedule_entry_ids[:6] == [row["entry_id"] for row in baseline_entries], "operational baselines are not first")
+    require(schedule_entry_ids[6:78] == [row["case_id"] for row in matrix["integrity_fault_cases"]], "integrity block does not follow operational baselines")
+    require(all(row["scientific_evidence_effect"] == "none" for row in baseline_entries), "operational baseline acquired scientific effect")
+    require(all(set(row["scientific_operation_counts"].values()) == {0} for row in baseline_entries), "operational baseline performs scientific operation")
+    observed_subtree_entries: set[str] = set()
+    for subtree in registration["schedule"]["baseline_failure_subtrees"]:
+        dependent_ids = set(subtree["dependent_entry_ids"])
+        require(len(dependent_ids) == 75, "baseline dependency subtree population drift")
+        require(not observed_subtree_entries.intersection(dependent_ids), "baseline dependency subtrees overlap")
+        observed_subtree_entries.update(dependent_ids)
+    require(observed_subtree_entries == set(case_ids), "baseline dependency subtrees do not cover canonical cases exactly")
+    ordinal_by_entry = {entry_id: index for index, entry_id in enumerate(schedule_entry_ids, start=1)}
+    execution_entry_by_id = {row["entry_id"]: row for row in registration["schedule"]["entries"]}
+    for edge in registration["schedule"]["dependency_dag"]:
+        require(all(ordinal_by_entry[parent] < ordinal_by_entry[edge["entry_id"]] for parent in edge["parent_entry_ids"]), f"non-topological schedule edge: {edge['entry_id']}")
     baseline_ids = {row["substrate_base_id"] for row in registration["candidate_design"]["substrate_baselines"]}
     core_config_ids = {row["configuration_id"] for row in matrix["configurations"] if row["family_id"] == "core"}
+    config_by_id = {row["configuration_id"]: row for row in matrix["configurations"]}
+    case_by_id = {row["case_id"]: row for row in matrix["scientific_branches"] + matrix["integrity_fault_cases"]}
     for case in matrix["scientific_branches"] + matrix["integrity_fault_cases"]:
         for parent in case["parent_ids"]:
             if parent.startswith("baseline:"):
@@ -1698,6 +2034,21 @@ def validate_registration(policy: Mapping[str, Any], timing: Mapping[str, Any], 
                 require(parent.split(":", 2)[1] in case_ids, "unknown checkpoint producer")
             else:
                 require(parent in case_ids, "unknown case dependency")
+        if case.get("branch_kind") in {"terminal_probe", "fresh_nondepositor_terminal_probe"}:
+            trajectory_parents = [parent for parent in case["parent_ids"] if parent in case_by_id]
+            require(len(trajectory_parents) == 1, "probe does not bind exactly one trajectory parent")
+            trajectory = case_by_id[trajectory_parents[0]]
+            require(trajectory["branch_kind"] == "unprobed_trajectory", "probe parent is not a trajectory")
+            require(trajectory["substrate_base_id"] == case["substrate_base_id"], "probe crossed substrate base")
+            require(trajectory["configuration_id"] == case["configuration_id"], "probe crossed configuration")
+            require(ordinal_by_entry[trajectory["case_id"]] < ordinal_by_entry[case["case_id"]], "probe precedes trajectory parent")
+            checkpoints = [parent for parent in case["parent_ids"] if parent.startswith("checkpoint:")]
+            require(len(checkpoints) == 1 and checkpoints[0].split(":", 2)[1] == trajectory["case_id"], "probe checkpoint producer drift")
+            require(checkpoints[0] in execution_entry_by_id[trajectory["case_id"]]["produced_checkpoint_refs"], "required checkpoint is not produced by trajectory parent")
+            require(execution_entry_by_id[case["case_id"]]["parent_trajectory_advanced_in_child"] is False, "probe implicitly advances or reconstructs its parent trajectory")
+            if case["branch_kind"] == "fresh_nondepositor_terminal_probe":
+                config = config_by_id[case["configuration_id"]]
+                require(config["family_id"] == "core" and config["arm"] == "E" and case["checkpoint"] == "j2", "fresh nondepositor did not bind clean core-E j2")
     require(all(row["case_kind"] == "quarantined_integrity_fault" for row in matrix["integrity_fault_cases"]), "integrity quarantine drift")
     require(registration["matrix"]["appendix_case_count"] == 0, "appendix entered core matrix")
     require(registration["scientific_outcomes_assigned"] is False, "scientific outcome assigned")
@@ -1723,16 +2074,17 @@ def validate_registration(policy: Mapping[str, Any], timing: Mapping[str, Any], 
         ("I06-13", "42 independent exact control-leg projections", 42),
         ("I06-14", "14 exact supplemental requirement bindings", 14),
         ("I06-15", "candidate-free timing characterization", timing["repetitions_per_operation"]),
-        ("I06-16", "450 immutable class and numeric resource assignments", 450),
+        ("I06A-16", "456 immutable operational-entry class and numeric resource assignments", 456),
         ("I06-17", "campaign time and byte envelope", 1),
-        ("I06-18", "450 primary slots and four retry tokens", 454),
-        ("I06-19", "closed schedule and dependency propagation", 450),
-        ("I06-20", "static producer inventory with unsummed dimensions", len(registration["producer_inventory"])),
-        ("I06-21", "structural schema role and mandatory semantic validator", 1),
-        ("I06-22", "four-field I04 control lifecycle schema", 4),
-        ("I06-23", "appendix exclusion", 0),
-        ("I06-24", "portable reconstruction and no absolute path", 0),
-        ("I06-25", "candidate/control/claim execution stop", 0),
+        ("I06A-18", "456 primary slots and four retry tokens", 460),
+        ("I06A-19", "six baseline entries plus closed topological schedule and dependency propagation", 456),
+        ("I06A-20", "unchanged 450-case canonical evidence registry", 450),
+        ("I06-21", "static producer inventory with unsummed dimensions", len(registration["producer_inventory"])),
+        ("I06-22", "structural schema role and mandatory semantic validator", 1),
+        ("I06-23", "four-field I04 control lifecycle schema", 4),
+        ("I06-24", "appendix exclusion", 0),
+        ("I06-25", "portable reconstruction and no absolute path", 0),
+        ("I06-26", "candidate/control/claim execution stop", 0),
     ]
     return with_digest(
         {
@@ -1749,7 +2101,7 @@ def validate_registration(policy: Mapping[str, Any], timing: Mapping[str, Any], 
             "checks": [{"check_id": item[0], "name": item[1], "status": "passed", "bound_count": item[2]} for item in checks],
             "passed_checks": len(checks),
             "total_checks": len(checks),
-            "closed_counts": {"substrate_bases": 6, "cell_envelopes": 18, "configurations": 90, "scientific_branches": 378, "integrity_cases": 72, "governed_cases": 450, "evidence_case_sets": len(expected_case_sets), "control_legs": 42, "requirements": 14, "retry_tokens": 4, "maximum_child_starts": 454},
+            "closed_counts": {"substrate_bases": 6, "cell_envelopes": 18, "configurations": 90, "scientific_branches": 378, "integrity_cases": 72, "governed_cases": 450, "operational_baseline_entries": 6, "governed_execution_entries": 456, "evidence_case_sets": len(expected_case_sets), "control_legs": 42, "requirements": 14, "retry_tokens": 4, "maximum_child_starts": 460},
             "construction_activity": registration["candidate_design"]["baseline_constructor_validation"],
             "candidate_free_timing_only": True,
             "scientific_operations": {"formation": 0, "export": 0, "encounter_probe": 0, "scientific_control": 0, "integrity_fault_dispatch": 0},
@@ -1764,11 +2116,26 @@ def write(path: Path, value: Mapping[str, Any]) -> None:
     path.write_bytes(pretty_bytes(value))
 
 
-def command_build(graph_root: Path) -> dict[str, Any]:
+def command_build(graph_root: Path, implementation_source_anchor: str) -> dict[str, Any]:
     environment = require_environment(graph_root)
-    timing = characterize_timing(environment)
-    write(ROOT / TIMING_RELATIVE, timing)
-    policy, registration = build_registration(graph_root, timing)
+    require(git(ROOT, "rev-parse", "HEAD") == implementation_source_anchor, "I06A build HEAD differs from supplied source anchor")
+    timing = load_json(ROOT / TIMING_RELATIVE)
+    require(timing["artifact_version"] == "1.0.1", "accepted I06 timing authority version drift")
+    require(timing["environment"] == environment, "accepted I06 timing environment drift")
+    require(
+        all(value is False for value in timing["candidate_blindness"].values()),
+        "accepted I06 timing authority is not candidate-free",
+    )
+    policy, registration = build_registration(
+        graph_root,
+        timing,
+        implementation_source_anchor=implementation_source_anchor,
+    )
+    for source in registration["authority"]["source_artifacts"]:
+        require(
+            source["sha256"] == source["sha256_at_implementation_source_anchor"],
+            f"I06A consumed source is not cleanly committed: {source['path']}",
+        )
     write(ROOT / POLICY_RELATIVE, policy)
     write(ROOT / REGISTRATION_RELATIVE, registration)
     schema = load_json(ROOT / SCHEMA_RELATIVE)
@@ -1782,6 +2149,7 @@ def command_validate(graph_root: Path) -> dict[str, Any]:
     policy = load_json(ROOT / POLICY_RELATIVE)
     timing = load_json(ROOT / TIMING_RELATIVE)
     registration = load_json(ROOT / REGISTRATION_RELATIVE)
+    require(registration["authority"]["retention_eligible_source_binding"] is True, "retained I06A lacks a clean implementation source anchor")
     schema = load_json(ROOT / SCHEMA_RELATIVE)
     rebuilt_baselines, _, rebuilt_activity = baseline_registry()
     require(
@@ -1805,13 +2173,15 @@ def main(argv: list[str] | None = None) -> int:
     for name in ("build", "validate"):
         child = subparsers.add_parser(name)
         child.add_argument("--graph-root", required=True)
+        if name == "build":
+            child.add_argument("--implementation-source-anchor", required=True)
     reconstruct = subparsers.add_parser("reconstruct")
     reconstruct.add_argument("--graph-root", required=True)
     reconstruct.add_argument("--output", required=True)
     args = parser.parse_args(argv)
     graph_root = Path(args.graph_root).resolve()
     if args.command == "build":
-        result = command_build(graph_root)
+        result = command_build(graph_root, args.implementation_source_anchor)
     else:
         result = command_validate(graph_root)
         if args.command == "reconstruct":

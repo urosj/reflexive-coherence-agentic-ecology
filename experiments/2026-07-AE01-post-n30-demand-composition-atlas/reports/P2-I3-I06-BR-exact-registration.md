@@ -2,12 +2,15 @@
 
 ## Disposition
 
-The B-R I06 package is complete and ready for one owner review of exact
-registration completeness.
+The B-R I06A bounded correction is owner-authorized and source-materialized.
+Its clean source anchor, retained artifacts, reconstruction, and superseding
+REG-GATE identity remain the next boundaries.
 
 ```text
-P2-I3-I06 implementation:       owner-accepted and complete
-P2-I3-REG-GATE:                 passed after owner acceptance
+P2-I3-I06 package 1.0.1:        historical, accepted, retained
+P2-I3-I06A package 1.0.2:       source-materialized; retention pending
+prior P2-I3-REG-GATE identity:  non-executable after defect discovery
+corrected P2-I3-REG-GATE:       pending clean retention and acceptance
 P2-I3-EXEC-FREEZE:              unopened
 candidate execution:            not authorized and not performed
 scientific/control execution:   not authorized and not performed
@@ -22,14 +25,20 @@ works scientifically. It fixes what a later test would be allowed to run,
 which comparisons must close, what artifacts must exist, and how failures may
 propagate before any outcome is known.
 
-This report describes corrected package `1.0.1`. Initial package `1.0.0` was
-reviewed before acceptance and superseded. The bounded correction changed no
-accepted decision, matrix population, resource envelope, or execution
-authority. It corrected the DEC-038 estimator projection, restored the full
+This report now describes the bounded package `1.0.2` correction. Initial
+package `1.0.0` was reviewed before acceptance and superseded by accepted
+package `1.0.1`, which corrected the DEC-038 estimator projection, restored the full
 DEC-037 observation split and DEC-042 undirected-edge/request-whitelist
 boundary, replaced heuristic control selectors with exact case-set bindings,
-and separated the four DEC-040 control-lifecycle fields. `REG-GATE` remained
-closed throughout.
+and separated the four DEC-040 control-lifecycle fields.
+
+I07-A construction then exposed a distinct execution-order defect: the future
+schedule omitted six baseline-construction children and allowed probes to
+precede their trajectory/checkpoint parents. I06A changes no accepted science,
+matrix member, control, estimator, candidate value, producer class, or
+interpretation. It separates the unchanged 450-case evidence registry from a
+new 456-entry governed topological schedule. Candidate and control execution
+remain closed throughout.
 
 ## Why this registration matters for agentic ecology
 
@@ -58,7 +67,7 @@ coordination, motif, regime, agency, or selfhood.
 
 ## Authority and runtime boundary
 
-The package consumes:
+Historical package `1.0.1` consumes:
 
 - RCAE source anchor `2e63a0dc6147bf124966374341c126f09b765cdd`;
 - accepted `P2-I3-DEC-027` through `P2-I3-DEC-046`;
@@ -67,6 +76,16 @@ The package consumes:
 - clean graph revision
   `565706f8b7647f6b7638b9afbe52372e170bf724`; and
 - the accepted I05 shared resolution `delta=1/1000000000000`.
+
+I06A preserves every upstream authority but must replace the RCAE source
+anchor with the clean commit that contains this correction. That identity is
+not guessed or retained while the worktree is dirty.
+
+The build accepts the full clean source commit explicitly, requires every
+consumed executable/schema byte to equal its committed byte at that anchor,
+and retains the anchor-time test/report/decision/checklist digests as governance
+provenance. Later closeout prose may add result identities without pretending
+those prose edits were executable inputs.
 
 PyGRC distribution metadata is not runtime authority. The local `.venv`
 contains package metadata and an installed copy, but the exact graph `src`
@@ -227,8 +246,9 @@ the same causal and cell semantics while issuing fresh evidence lineage and
 therefore a distinct exact bundle identity.
 
 The closed execution-record schema fixes machine shapes for checkpoint
-manifests, attempt terminals, case resolutions, control-leg resolutions,
-resource receipts, and cycle closeout. Unknown continuation-relevant fields
+manifests, scientifically inert operational-baseline terminals, entry-aware
+attempt terminals and resource receipts, case resolutions, control-leg
+resolutions, and cycle closeout. Unknown continuation-relevant fields
 fail closed. No terminal record instance or observed disposition exists in
 I06. A control-leg record keeps `execution_status`, `evidence_resolution`,
 `control_resolution`, and `terminal_guard_status` separate under the exact
@@ -285,6 +305,22 @@ x
 These 72 cases are not native field-limited refusals and cannot produce a
 scientific comparison. They later test only whether composite coordination
 fails closed.
+
+Those `378 + 72 = 450` identities remain the complete canonical evidence-case
+registry and the unchanged one-based ordinal universe of all 24 case sets.
+I06A does not add six cases. It separately registers:
+
+```text
+6 operational baseline constructions
++ 450 canonical evidence cases
+= 456 governed execution entries
+```
+
+Each operational entry belongs to one delay-profile/realization substrate,
+constructs and content-addresses its immutable baseline bundle, verifies
+source/runtime and native restoration identity, and emits a typed terminal.
+Formation, export, encounter, scientific-control, and integrity-fault counts
+are all exactly zero, so these entries cannot satisfy any scientific selector.
 
 Every live branch must produce source/runtime identity, before/after composite
 identity, causal receipts, formation-cost and conservation receipts, request
@@ -343,8 +379,9 @@ Case-set membership is stored as 1-based ordinals over the already frozen
 `72 integrity + 378 scientific` matrix order, with exact case-ID and
 configuration-ID membership digests. The validator reconstructs and checks
 every selected identity. This removes repeated long IDs without weakening the
-selector contract and keeps the 991,536-byte registration below the existing
-1 MiB individual-artifact review boundary.
+selector contract. I06A keeps that canonical ordinal space unchanged even
+though its separately retained operational registry and DAG make the exact
+registration larger.
 
 ## Candidate-free timing and future resource envelope
 
@@ -365,11 +402,11 @@ also retained without a machine path.
 
 Prospective class assignment is:
 
-| Class | Cases | Timeout per case |
+| Class | Governed entries | Timeout per entry |
 | --- | ---: | ---: |
 | `probe_only` | 288 | 5 s |
 | `standard_trajectory` | 48 | 20 s |
-| `complex_construction_or_comparison` | 42 | 45 s |
+| `complex_construction_or_comparison` | 48 | 45 s |
 | `integrity_fault` | 72 | 5 s |
 
 The timeout is the maximum of a class minimum and eight times the measured
@@ -380,13 +417,13 @@ remain controlling.
 The complete future campaign ceiling is:
 
 ```text
-primary child allowances       4,650 s
+primary child allowances       4,920 s
 aggregation allowance          1,800 s
 campaign overhead                600 s
 four retry + grace reserves      115 s
 retry administration               5 s
                               --------
-exact registered ceiling        7,170 s = 1 h 59 m 30 s
+exact registered ceiling        7,440 s = 2 h 04 m 00 s
 outer campaign ceiling        108,000 s = 30 h
 ```
 
@@ -396,20 +433,23 @@ runtime nor work performed by I06.
 Storage closes separately:
 
 ```text
-logical artifact maximum             7,147,094,016 bytes
-prospective unique physical blobs     1,484,783,616 bytes
-prospective retained logs               943,718,400 bytes
+logical artifact maximum             7,549,747,200 bytes
+prospective unique physical blobs     1,585,446,912 bytes
+prospective retained logs               956,301,312 bytes
 maximum active temporary work            33,554,432 bytes
 incremental four-class retry reserve     109,051,904 bytes
-governed physical projection           2,571,108,352 bytes
+governed physical projection           2,684,354,560 bytes
 governed physical ceiling              8,589,934,592 bytes
 ```
 
 Logical bytes intentionally may exceed the physical projection because exact-
 byte SHA-256 deduplication can map several logical components to one immutable
-blob. Semantic equivalence never permits deduplication. The retained I06 file
-set is below both repository retention-review thresholds: the largest file is
-871,585 bytes and the selected set is below 10 MiB.
+blob. Semantic equivalence never permits deduplication. The reconstructed I06A
+exact registration is expected to cross the 1 MiB individual review threshold
+because it retains the complete operational registry and DAG. That threshold
+requires this compact report, selectors, and exact reconstruction instructions;
+it is not a prohibition on retention. Final byte lengths are recorded only
+after clean-source construction.
 
 No experiment `RLIMIT_AS` or RSS kill threshold exists. The future runner must
 observe memory and classify OOM or native memory failure as infrastructure,
@@ -417,16 +457,21 @@ never negative L03 evidence.
 
 ## Attempts, failures, and fixed schedule
 
-The registry contains 450 primary slots, zero scientific retries, and one
-inactive pre-P5 retry position per case. Four class tokens may each be
-allocated at most once to the first eligible pre-scientific failure in frozen
-schedule order. Thus the maximum governed child-start count is 454.
+The registry contains 450 case slots plus six operational-baseline slots, zero
+scientific retries, and one inactive pre-P5 retry position per governed entry.
+Four class tokens may each be allocated at most once to the first eligible
+pre-scientific failure in frozen schedule order. The complex token includes
+baseline entries and cannot be reserved preferentially for a scientific case.
+Thus primary governed starts are 456 and the maximum child-start count is 460.
 
-The schedule places all 72 integrity cases first, then scientific cases in
-fixed substrate/configuration/branch order. Each case names its immutable
-baseline, trajectory, checkpoint, or cell-envelope parent. The validator
-resolves every parent reference and freezes five failure-propagation classes.
-Result-responsive reordering is forbidden.
+The governed schedule places six operational baselines first, then the
+unchanged 72-case integrity block, then scientific cases under a deterministic
+topological sort. Every probe has a lower-ordinal trajectory parent and a
+checkpoint explicitly produced by that parent. Fresh nondepositor probes bind
+the clean core-E `j2` parent. Every child receives a fresh process/runtime;
+probe children cannot reconstruct or advance the parent trajectory. Baseline
+failure maps to the exact profile/realization subtree while independent bases
+may continue. Result-responsive reordering is forbidden.
 
 P0 through P7, the supervisor-owned P5 boundary, campaign/case claims, one
 bounded supervisor resume, retry allocation, closed attempt statuses, final
@@ -459,6 +504,7 @@ Commands assume a locally chosen graph checkout:
 
 ```text
 export RCAE_PYGRC_ROOT=../graph-reflexive-coherence
+export RCAE_I06A_SOURCE_ANCHOR=<full-clean-source-commit>
 ```
 
 Build the retained candidate-free package:
@@ -470,7 +516,8 @@ env PYTHONPATH=${RCAE_PYGRC_ROOT}/src \
   PYTHONHASHSEED=0 PYTHONDONTWRITEBYTECODE=1 \
   .venv/bin/python -B \
   experiments/2026-07-AE01-post-n30-demand-composition-atlas/scripts/p2_i3_i06_br_registration.py \
-  build --graph-root ${RCAE_PYGRC_ROOT}
+  build --graph-root ${RCAE_PYGRC_ROOT} \
+  --implementation-source-anchor ${RCAE_I06A_SOURCE_ANCHOR}
 ```
 
 Read-only validation and non-destructive reconstruction use the same
@@ -485,14 +532,18 @@ observations are not expected to recur byte-exactly; a new timing run is a new
 characterization. Reconstruction validates the retained observations and all
 derived values without pretending host elapsed time is deterministic.
 
-Focused results:
+Current I06A source-stage results:
 
 ```text
-registration validator:     25 / 25 passed
-new adversarial tests:       36 / 36 passed
-current I03/I04/I06 tests:   66 / 66 passed
-I05 final closeout:          49 / 49 passed
+in-memory semantic validator: 26 / 26 passed
+candidate/control operations:  0
+retained package reconstruction: pending clean source anchor
+focused adversarial tests:      pending retained package
 ```
+
+Accepted I06 package `1.0.1` previously passed 25/25 retained checks, 36/36
+focused tests, 66/66 current I03/I04/I06 tests, and the I05 49/49 closeout.
+Those historical checks do not substitute for the I06A clean-source rebuild.
 
 One old I05 inactive-freeze test still asserts that the later accepted I05
 launch authorization does not exist. That assertion is historical and stale
@@ -513,7 +564,7 @@ None of those files or authorities is consumed by the I06 validator. The
 focused current-state P2-I3 and I05 closeout checks above are the relevant
 regression boundary.
 
-## Artifact identities
+## Superseded package `1.0.1` artifact identities
 
 ```text
 registration policy
@@ -541,7 +592,7 @@ focused test source
 295eddbcec96fcb62be6742d9ba10acd1fc9a8f5ff8883603f1061c54a681fb1
 ```
 
-The exact registration's canonical payload digest is:
+The superseded exact registration's canonical payload digest is:
 
 ```text
 9981d03df09f90d9507d038fc6581e35daa3fa085650c00db1144c968b581552
@@ -560,9 +611,13 @@ later admissibility, that current state is sufficient, that perturbations are
 stable, or that fresh participants respond. Those are future execution and
 analysis questions.
 
+I06A package `1.0.2` identities are intentionally not predicted from a dirty
+worktree. They will be recorded after the source correction is committed and
+the retained package is rebuilt from that clean anchor.
+
 ## Owner acceptance and gate effect
 
-The owner accepted corrected I06 package `1.0.1` on 2026-07-19. The
+The owner accepted corrected I06 package `1.0.1` on 2026-07-19. The historical
 [acceptance record](../contracts/p2-i3/i06-br-owner-acceptance-and-reg-gate.json)
 binds the policy, timing characterization, exact registration, retained
 validation, both schemas, mandatory semantic validator, and focused
@@ -571,15 +626,22 @@ adversarial tests.
 Acceptance-record SHA-256:
 `3fdf921893083505fad6889567698b58dd7dbd5efdbbb1f5c32687947630faa1`.
 
-Acceptance changes governance only:
+Discovery of the schedule defect does not erase that history, but the record
+cannot authorize execution. The owner has accepted the bounded I06A correction;
+the corrected package and superseding acceptance identity remain pending.
+
+Current governance is:
 
 ```text
-P2-I3-I06 = accepted and complete
-P2-I3-REG-GATE = passed
-next required boundary = clean retention commit
-then = P2-I3-I07 inactive execution-freeze construction and Q-019
+P2-I3-I06 package 1.0.1 = retained historical authority
+P2-I3-I06A source correction = owner-authorized and source-materialized
+corrected P2-I3-REG-GATE = pending clean retention and acceptance
+next required boundary = clean I06A source-anchor commit
+then = retained rebuild, reconstruction, focused tests, and gate supersession
+after that = rebind and resume I07-A
 ```
 
-REG-GATE does not pass `P2-I3-EXEC-FREEZE` and authorizes no candidate,
-control, or integrity-fault operation. I07 requires a separate clean committed
-source anchor, inactive freeze, review, and explicit activation.
+Neither historical REG-GATE nor the I06A source correction passes
+`P2-I3-EXEC-FREEZE` or authorizes a candidate, control, baseline, or
+integrity-fault operation. I07 remains paused until it consumes corrected
+cleanly retained I06A authority.

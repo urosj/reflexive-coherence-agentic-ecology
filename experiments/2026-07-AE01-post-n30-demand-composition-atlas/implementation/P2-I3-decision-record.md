@@ -5957,7 +5957,230 @@ dependency creates a new retained cycle under explicit registration and
 activation authority. Outcome direction or scientific inconvenience can never
 reopen this decision.
 
-## 49. Open decision register
+### I06A bounded execution-order clarification
+
+Pre-execution construction of I07-A exposed that package `1.0.1` had correctly
+registered and candidate-free validated six substrate baselines, but had not
+given their future campaign construction distinct governed entry identities.
+It also sorted probe cases before their required trajectory/checkpoint parents.
+The owner accepted this as a bounded executability correction under
+`P2-I3-CHG-064`, not a scientific redesign or reopening of DEC-046.
+
+The original `450` population remains the complete scientific/integrity case
+registry and the sole ordinal universe for all 24 evidence case sets. I06A
+adds six scientifically inert `operational_baseline_construction` entries and
+separates that registry from the governed execution schedule:
+
+```text
+scientific branches                 378
+quarantined integrity cases          72
+canonical evidence cases            450
+
+operational baseline constructions    6
+governed execution entries          456
+class retry tokens                     4
+maximum governed child starts       460
+```
+
+References in DEC-046 to 450 primary slots, a 450-case DAG, and a 454-child
+ceiling therefore continue to govern the case population but are superseded
+for process scheduling by six prerequisite operational slots, a 456-entry
+topological DAG, and a 460-child ceiling. The complex-class retry token goes to
+the first retry-eligible complex failure in frozen order, including a baseline;
+it is not preferentially reserved for a scientific case.
+
+Each baseline entry binds one delay-profile/realization substrate, constructs
+and content-addresses its immutable native-plus-RCAE baseline, validates source,
+runtime, save/load, and native restoration identity, and emits a typed
+operational terminal with zero formation, export, encounter, scientific-control,
+or integrity-fault operation. Failure blocks exactly that substrate base's
+registered subtree; independent bases may continue. Every dependent probe is
+scheduled strictly after its trajectory parent and declared checkpoint, loads
+a fresh runtime in its own process, and may neither reconstruct nor advance the
+parent trajectory.
+
+The correction changes no configuration, branch, integrity case, control leg,
+requirement, estimator, candidate value, producer classification, scientific
+interpretation, or evidence-case membership. It requires new registration,
+resource, attempt, schema, validation, reconstruction, and REG-GATE identities
+before I07-A may resume. No candidate/control execution is authorized.
+
+## 49. `P2-I3-DEC-047` — B-R execution authority and activation model
+
+### Question
+
+Which clean committed RCAE sources, commands, runtime identities, inactive
+freeze, owner dispositions, activation record, and claim boundaries resolve
+`P2-I3-Q-019` without letting registration, freeze acceptance, or a campaign
+claim silently authorize a case-specific operation?
+
+### Alternatives considered
+
+1. let passed REG-GATE directly authorize the registered campaign;
+2. construct and activate one freeze from an uncommitted harness tree;
+3. place the harness, inactive freeze, retention identity, activation, and
+   launch commit in one self-referential authority record;
+4. use a committed harness anchor and retained inactive freeze, but interpret
+   ordinary owner acceptance as execution activation;
+5. retain three non-circular commit-level identities, separate freeze
+   acceptance from explicit activation, consume activation through one
+   permanent campaign claim, and preserve the registered per-case P5 gate.
+
+Reject Alternative 1 because registration is specification authority, not
+execution authority. Reject Alternative 2 because uncommitted code cannot be
+the reproducible implementation of a one-shot scientific cycle. Reject
+Alternative 3 because neither a record nor its containing commit can safely
+embed its own future identity. Reject Alternative 4 because acceptance of
+registration fidelity must not be interpreted as permission to run.
+
+Accept Alternative 5.
+
+### Three non-circular source and launch identities
+
+The B-R authority chain contains three distinct commit-level identities:
+
+```text
+I07-A harness source anchor
+  committed harness, schemas, source policy, validators, and tests
+
+I07-B inactive-freeze retention anchor
+  freeze, independent validation, and reconstruction evidence
+  constructed from exactly I07-A
+
+I08 activation launch anchor
+  separate activation record referring to accepted I07-B
+```
+
+The inactive freeze binds the I07-A commit and exact harness/schema digests;
+the accepted I05 calibration authority; corrected I06A registration,
+validation, and REG-GATE identities; graph revision and admitted source
+digests; the unchanged 450-case evidence registry, complete 456-entry schedule
+and dependency DAG; resource and attempt envelopes; the expected terminal-set
+digest; and the governed path table. Its canonical
+payload digest is intrinsic. It does not bind its own future retention commit.
+After I07-B is committed, its retention commit is recorded by later authority,
+and activation binds both that commit and the exact freeze digest.
+
+Activation likewise does not embed the future commit containing itself. The
+exact clean launch HEAD is supplied at I08 start, checked before and after the
+campaign claim, and retained in that permanent claim and subsequent receipts.
+
+### Acceptance, activation, and dispatch are separate
+
+Two explicit owner dispositions remain distinct:
+
+```text
+freeze acceptance
+  accepts I07 registration fidelity
+  passes the inactive EXEC-FREEZE review boundary
+  permits activation construction
+  does not authorize execution
+
+execution activation
+  explicit owner direction
+  creates the one-shot activation record
+```
+
+They may be given together in one owner instruction, but the retained records
+must preserve both meanings. REG-GATE, the inactive freeze, freeze acceptance,
+or activation alone never permits a candidate or control operation.
+
+The full per-case execution conjunction is:
+
+```text
+passed REG-GATE
++ accepted inactive freeze
++ valid activation
++ durable campaign claim
++ durable governed-entry attempt claim
++ supervisor-owned entry-specific P5 authorization
+= permission to dispatch exactly one registered entry operation
+```
+
+The campaign claim atomically and permanently consumes activation, binds the
+actual clean launch HEAD plus the accepted freeze, schedule, paths, budgets,
+runtime, environment, and expected terminal set, and refuses a second campaign
+start. It authorizes only campaign coordination and pre-P5 preparation. It does
+not authorize formation, redistribution/export, encounter probes, controls,
+or integrity-fault dispatch. DEC-046's P0-P7 protocol and separate P5 boundary
+remain load-bearing for every case.
+
+### Exact local runtime and public-call closure
+
+The local graph checkout is selected only through the owner-supplied
+`RCAE_PYGRC_ROOT` invocation environment. Retained authority uses the portable
+`${RCAE_PYGRC_ROOT}` placeholder, exact graph revision, exact admitted source
+digests, and source-relative module identities; it retains no machine path.
+Launch refuses missing, dirty, wrong-revision, wrong-source, ambient-installed,
+or fallback PyGRC before the campaign claim. The imported `pygrc.__file__`
+must resolve beneath the canonical `${RCAE_PYGRC_ROOT}/src` target.
+
+I07 freezes the same closed 18-call public PyGRC surface admitted and exercised
+by I03. For every entry it binds module path, public symbol, inspected
+signature, owning-source digest, registered harness call sites, and allowed
+operation roles. Candidate-free validation may use reflective lookup only over
+that exact registry. Live runtime dispatch uses explicit registered call sites:
+no private PyGRC call, unregistered reflective dispatch, dynamic-import
+fallback, raw-ID-sensitive alternative path, or new public symbol is allowed.
+A new symbol reopens Q-019 before activation.
+
+### Path, process, and import isolation
+
+Governed claims, outputs, temporary paths, and content-store paths may contain
+no symlink component. The interpreter and `RCAE_PYGRC_ROOT` may themselves be
+platform symlinks; launch records their canonical resolved targets locally and
+validates those targets against the frozen identities without retaining an
+absolute path.
+
+Every case runs under `.venv/bin/python -B` in a fresh interpreter. Add
+`PYTHONNOUSERSITE=1`, freeze the exact allowed `sys.path` projection, prohibit
+cross-case process/module/model reuse, and keep the supervisor free of PyGRC
+candidate-runtime imports. Ordinary within-child `sys.modules` caching is not
+contamination and is not prohibited.
+
+### Primary evidence and read-only reconstruction
+
+Large immutable blobs may remain `reconstructable_local_only` only when their
+content-addressed bytes remain retained locally; committed authority records
+their exact digest and byte length; committed logical manifests and selectors
+resolve them; and every I09/I10 consumer can reconstruct logical files,
+receipts, and aggregates without candidate or control execution.
+
+Read-only reconstruction means deriving logical views from retained immutable
+primary bytes. It never means rerunning the consumed scientific campaign.
+Derived reports and aggregates may be rebuilt from retained evidence. Lost
+claim-bearing primary evidence becomes unavailable and may not be silently
+regenerated by repeating a case.
+
+### Candidate-free I07 construction boundary
+
+I07 may import modules and inspect exact public symbols, signatures, source
+ownership, schemas, commands, and retained authority. Adversarial tests must
+trap model construction, packet scheduling, event progression, save/load/reset,
+response evaluation, control resolution, and integrity-fault dispatch and
+prove zero calls during freeze construction and validation.
+
+I07 produces operational authorization evidence only. It assigns no response,
+control outcome, rung, tag, provider comparison, scientific result, or ecology
+claim.
+
+### Gate and reopening effect
+
+This resolves the B-R instance of Q-019. I07-A may now implement and test the
+candidate-free source package. Only after a clean I07-A commit may I07-B retain
+the inactive freeze. Freeze acceptance opens activation construction only;
+explicit activation and the later campaign/case/P5 conjunction are still
+required for I08 dispatch.
+
+Before activation, reopen DEC-047 if the exact 18-call closure is insufficient;
+the launch cannot remain non-circular; the supervisor must import candidate
+runtime code; governed path containment or fresh-child isolation cannot be
+proved; the full terminal set cannot be bound; or read-only reconstruction
+would require scientific re-execution. After activation is consumed, any such
+change requires a new retained cycle and complete affected-comparison rerun;
+the active cycle is never patched.
+
+## 50. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -5982,11 +6205,11 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-016` | Which common controls apply and what evidence must resolve every lane-specific control? | I04/I06 | Resolved for B-R by DEC-040 meaning and DEC-044 exact control/evidence authority; machine materialization remains I06 work, while C.2 remains inactive and independent |
 | `P2-I3-Q-017` | What time, memory, disk, process, artifact-size, and producer-cost envelope applies? | I06 | Resolved for B-R by DEC-045; exact machine materialization and logical-ceiling derivation remain I06 work |
 | `P2-I3-Q-018` | What finite attempts, infrastructure-only retries, failure classes, and one-shot claims apply? | I06/I07 | Resolved for B-R by DEC-046; exact machine materialization remains I06 work |
-| `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
+| `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Resolved for B-R by DEC-047; I07-A/I07-B machine materialization remains open and candidate execution remains blocked |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 50. Decision protocol for subsequent work
+## 51. Decision protocol for subsequent work
 
 For each open question:
 
@@ -6004,7 +6227,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 51. Current boundary
+## 52. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` retain the semantic,
 source, LGRC9V3-only, N31 handoff, and theory/substrate/code authority chain.

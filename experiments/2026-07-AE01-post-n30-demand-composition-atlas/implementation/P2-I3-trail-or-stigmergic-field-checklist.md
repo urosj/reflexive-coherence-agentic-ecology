@@ -28,7 +28,14 @@ Q-018 attempt, retry, failure, dependency, and cycle-closure authority; the
 corrected I06 inactive registration `1.0.1` is materialized and passes 25
 machine checks plus 36 focused adversarial tests; initial package `1.0.0` was
 superseded before acceptance; the owner accepts corrected I06 and
-`P2-I3-REG-GATE` is passed; a clean retention commit is required before I07
+`P2-I3-REG-GATE` is passed; clean I06 retention commit `e57c09c` opens I07;
+DEC-047 resolves Q-019 through separate I07-A source, I07-B inactive-freeze,
+freeze-acceptance, explicit-activation, campaign-claim, case-claim, and P5
+authorities without opening candidate execution; I07-A construction exposed a
+pre-execution schedule defect; owner-accepted bounded correction I06A preserves
+the 450-case evidence registry, adds six scientifically inert baseline entries,
+and requires a corrected 456-entry topological schedule; I07-A is paused and
+the prior REG-GATE identity cannot authorize execution while I06A is retained
 
 **Iteration:** `P2-I3`
 
@@ -45,8 +52,11 @@ are owner-accepted and complete; `P2-I3-I06` exact implementation registration
 is owner-accepted and complete, with Q-014/Q-015 resolved through accepted `P2-I3-DEC-042` and
 `P2-I3-DEC-043`, Q-016 resolved through `P2-I3-DEC-044`, and Q-017 resolved
 through `P2-I3-DEC-045`; Q-018 is resolved through `P2-I3-DEC-046`; exact
-machine registration is accepted and REG-GATE passed, while I07 waits for a
-clean retention commit and no execution authority exists
+machine registration package `1.0.1` was accepted and REG-GATE passed; clean
+retention commit `e57c09c` opened candidate-free I07-A construction under
+DEC-047; I07-A then exposed a baseline/schedule ordering defect and is paused
+while bounded I06A package `1.0.2` is source-materialized, cleanly retained,
+and given a superseding REG-GATE identity; no execution authority exists
 
 **Current evidence effect:** source-current capability evidence, exact accepted
 source-role authority, the N31 demand/handoff directive, and an accepted exact
@@ -243,8 +253,8 @@ state, never negative evidence or a missing substrate surface.
 | `P2-I3-I03` | Route-scoped field realization, dynamics, causal factorization, operational hypotheses, bounded runtime conformance, and common comparison envelope | Passed source-admission and N31 return gates | B-R complete and accepted; C.2 queued after B-R branch closeout | B-R discriminator gate passed; no calibration or candidate evidence |
 | `P2-I3-I04` | Calibration preregistration | Passed discriminator gate | Complete and owner-accepted | `P2-I3-CAL-PRE-GATE=passed`; opens only inactive I05 invocation-freeze construction, with no calibration execution |
 | `P2-I3-I05` | Candidate-blind calibration and metric-sheet freeze | Passed CAL-PRE gate and separately accepted invocation freeze | Complete and owner-accepted | Permanent attempt consumed once; five null cases/15 responses/five triplets/ten zero margins; shared `delta=1e-12`; successful receipt and 49/49 reconstruction checks; CAL-GATE passed |
-| `P2-I3-I06` | Exact implementation registration | Passed CAL-GATE | Owner-accepted and complete; REG-GATE passed | No candidate execution; retain exact package in a clean commit |
-| `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Passed REG-GATE and clean committed source anchor | Waiting for clean I06 retention commit | May pass/consume `P2-I3-EXEC-FREEZE`; no operation before activation |
+| `P2-I3-I06/I06A` | Exact implementation registration and bounded execution-order correction | Passed CAL-GATE; I06 package `1.0.1` retained at `e57c09c` | I06A source correction active; preserves 450 cases and adds six operational baselines to a 456-entry DAG | Must retain corrected package and superseding REG-GATE identity before I07 resumes; no candidate execution |
+| `P2-I3-I07` | Inactive candidate-cycle execution freeze and explicit activation | Corrected I06A REG-GATE and clean retention anchor | Q-019 resolved by DEC-047; partially constructed I07-A paused for I06A | May pass inactive `P2-I3-EXEC-FREEZE`; activation, campaign consumption, governed-entry claim, and P5 remain separate |
 | `P2-I3-I08` | Frozen finite matrix execution | Consumed active execution freeze | Unopened | May pass or validly close `P2-I3-EXEC-GATE`; no terminal interpretation |
 | `P2-I3-I09` | Compact common and lane-control resolution | Retained I08 terminals | Unopened | May pass `P2-I3-CONTROL-GATE` |
 | `P2-I3-I10` | Independent reconstruction and identity verification | Retained I08/I09 evidence | Unopened | May pass `P2-I3-RECON-GATE` |
@@ -1970,6 +1980,11 @@ does not pass EXEC-FREEZE.
 
 ### 11.6 I06 implementation details and interpretation
 
+This subsection records accepted package `1.0.1` as historical authority.
+Section 11.7 supersedes only its operational-entry order/count/resource
+projection; all scientific matrix, control, estimator, and interpretation
+details below remain unchanged.
+
 The [exact registration](../contracts/p2-i3/i06-br-exact-registration.json),
 [candidate-free timing record](../contracts/p2-i3/i06-br-candidate-free-timing.json),
 [structural-envelope registration schema](../contracts/p2-i3/i06-br-registration.schema.json),
@@ -2048,17 +2063,68 @@ clean N31 graph revision and exact `src/pygrc` bytes through a locally selected
 `RCAE_PYGRC_ROOT`; no machine-local absolute path or graph mutation enters the
 package.
 
+### 11.7 I06A bounded execution-order correction
+
+I07-A source construction exposed one executable-order defect in accepted I06
+package `1.0.1`: six registration-validated substrate baselines had no future
+governed construction entries, and the case ordering permitted probes to
+precede their trajectory/checkpoint parents. `P2-I3-CHG-064` authorizes only a
+mechanical correction. The scientific design and evidence selectors remain
+frozen.
+
+- [x] Preserve 378 scientific branches, 72 quarantined integrity cases, and
+  the exact 450-case canonical ordinal universe used by all 24 evidence sets.
+- [x] Add six distinct `operational_baseline_construction` entries, one for
+  each delay-profile/realization substrate; give them complex resource class,
+  typed operational terminals, and zero scientific evidence effect.
+- [x] Freeze a deterministic 456-entry topological schedule: six baseline
+  entries, the unchanged 72-case integrity block, then all trajectory/probe
+  cases with every trajectory and checkpoint strictly before its dependents.
+- [x] Bind exact baseline-failure subtrees, allow independent substrate bases
+  to continue, require fresh per-child runtimes, and prohibit implicit parent
+  trajectory reconstruction or advancement inside probe children.
+- [x] Preserve four class retry tokens; allow the complex token to bind the
+  first eligible complex failure in frozen order, including a baseline; derive
+  456 primary and at most 460 governed child starts.
+- [x] Recalculate the primary child allowance to 4,920 seconds and exact
+  campaign ceiling to 7,440 seconds; regenerate logical, physical, log,
+  temporary, and retry projections without changing the 30-hour or 8-GiB
+  outer ceilings.
+- [x] Extend future record shapes with a scientifically inert operational
+  baseline terminal and entry-aware attempt/resource receipts.
+- [x] Validate the source-level package in memory against the admitted PyGRC
+  source: 26 semantic checks pass with no candidate, control, integrity-fault,
+  or campaign execution.
+- [ ] Commit the I06A source/schema/test/documentation correction as the clean
+  source anchor after owner confirmation.
+- [ ] Rebuild and retain package `1.0.2` from that clean source anchor; update
+  exact identities, validation, non-destructive reconstruction, and the
+  detailed implementation report.
+- [ ] Run focused I06A adversarial tests and the bounded adjacent test set from
+  `.venv`; retain the corrected test counts.
+- [ ] Supersede EV-051 with a corrected owner-acceptance/REG-GATE identity.
+- [ ] Rebind I07-A to the corrected identities and 456-entry schedule before
+  any I07-A retention or I07-B construction.
+
+The prior REG-GATE record remains historical evidence of owner acceptance for
+package `1.0.1`, but it is not executable authority after this defect was
+identified. I07-A remains paused. No candidate or control operation is
+authorized by the source-level I06A work.
+
 ## 12. `P2-I3-I07` — Candidate-cycle execution freeze
 
 **Purpose:** create one inactive, clean-source, exact execution authority and
 activate it only through an explicit owner decision.
 
-**Entry authority:** passed REG-GATE.
+**Entry authority:** superseding corrected I06A REG-GATE; currently pending.
 
 **Evidence effect:** operational authorization only; inactive freeze creation
 runs no scientific response.
 
-- [ ] Resolve clean-source execution authority `P2-I3-Q-019`.
+- [x] Resolve clean-source execution authority `P2-I3-Q-019` through
+  `P2-I3-DEC-047`: retain separate I07-A harness, I07-B inactive-freeze, and
+  activation launch identities; distinguish freeze acceptance from execution
+  activation; and preserve the campaign/case/P5 conjunction.
 - [ ] Verify the repository-local `.venv`, interpreter, and pinned packages.
 - [ ] Require a clean committed RCAE source anchor; dirty previews are
   retention-ineligible and cannot enter activation.
@@ -2382,6 +2448,8 @@ appended as accepted evidence or review changes accumulate.
 | `P2-I3-CHG-060` | Owner authorizes the remaining I06 construction to run through one end review | Materialize the exact 90/378/72 registry, source-bound baseline checks, 42+14 evidence bindings, candidate-free timing and resource envelope, 450-slot attempt/DAG policy, producer inventory, schemas, reconstruction, tests, and detailed geometric/ecology interpretation | Superseded before acceptance by CHG-061 after the bounded I06 review; package `1.0.0` performed no scientific/control operation and passed no gate |
 | `P2-I3-CHG-061` | Owner-supplied I06 review confirms population/resource/attempt closure but finds incorrect estimator text, collapsed Q-010 surfaces, heuristic evidence selectors, and overclaimed/incomplete schema semantics | Issue package `1.0.1`; restore DEC-038 exact arithmetic, DEC-037 observation classes, and DEC-042 undirected-edge/request-whitelist semantics; add 24 exact case sets, four-field DEC-040 lifecycle records, mandatory semantic validation, and focused adversarial coverage | Corrected package review-ready; no decision reopened, matrix/resource/attempt design unchanged, 25 retained checks and 36 focused tests pass, and REG-GATE plus all execution remain closed pending owner review |
 | `P2-I3-CHG-062` | Owner explicitly accepts corrected I06 after the bounded correction and declines further recursive review | Retain one exact owner-acceptance record over package `1.0.1`; mark I06 complete and pass only REG-GATE | Complete; clean retention commit is required before I07, while EXEC-FREEZE and all candidate/control/scientific activity remain closed |
+| `P2-I3-CHG-063` | Owner accepts Q-019 authority separation and later supplied refinements | Record DEC-047; separate I07-A source, I07-B inactive freeze, freeze acceptance, explicit activation, campaign claim, governed-entry claim, and P5; bind clean local PyGRC source and read-only reconstruction | Complete as execution-authority design only; partially constructed I07-A remains candidate-free and unretained |
+| `P2-I3-CHG-064` | I07-A construction exposes six missing operational baseline entries and probe-before-parent order; owner review accepts a bounded I06A correction | Preserve the 450-case evidence registry; add six inert baseline entries, a deterministic 456-entry DAG, 456/460 attempt bounds, 7,440-second ceiling, entry-aware schemas, and refreshed REG-GATE identities | Source materialization active; I07-A paused, prior REG-GATE identity non-executable, no scientific redesign or candidate/control execution |
 
 ## 19. Evidence ledger
 
@@ -2549,14 +2617,14 @@ accepted semantic brief
 + 42 leg records and 14 supplemental bindings resolve independently
 + full DEC-038 pairing permits only declared intervention fields to differ
 + DEC-045 resolves B-R Q-017 resource, artifact, and producer-cost boundaries
-+ 450 primary child starts remain sequential, isolated, and freshly supervised
++ 450 canonical case starts remain sequential, isolated, and freshly supervised
 + four prospective execution classes and candidate-free timing derivation fixed
 + outer time, process-tree timeout, memory observation, and byte classes fixed
 + dependency-aware scheduling preserves immutable reuse and branch-local state
 + exact-byte deduplication preserves complete logical reconstruction
 + expected/realized producer costs remain purpose-classified and unsummed
 + DEC-046 resolves B-R Q-018 attempt, retry, and failure governance
-+ 450 primary slots plus at most four pre-P5 class retries fixed
++ 450 canonical case slots plus at most four pre-P5 class retries fixed
 + one bounded supervisor resume does not create a scientific opportunity
 + P0-P7/P5 phase authority and dependency propagation are prospective
 + terminal-ledger and scientific completeness remain separate
@@ -2570,8 +2638,17 @@ accepted semantic brief
 + owner acceptance retained through EV-051
 = P2-I3-I06 accepted and complete
 = P2-I3-REG-GATE passed
-!= clean I06 retention commit, P2-I3-EXEC-FREEZE, candidate/control execution,
-   or scientific execution passed
++ clean I06 package 1.0.1 retained at e57c09c
++ DEC-047 resolves Q-019 without execution authority
+! I07-A exposed six missing operational baseline entries and probe-before-parent order
++ CHG-064 accepts bounded I06A correction with no scientific redesign
++ canonical 450-case evidence registry and all 24 selectors remain unchanged
++ six inert operational baselines produce a 456-entry topological DAG
++ resource and attempt projections become 4,920 primary seconds, 7,440 campaign
+  seconds, 456 primary starts, and at most 460 starts
++ source-level I06A validation passes 26/26 with zero candidate/control operations
+!= clean I06A source commit, retained package 1.0.2, superseding REG-GATE,
+   resumed I07-A, P2-I3-EXEC-FREEZE, or any candidate/control execution
 ```
 
 The inactive I05 invocation freeze `1.0.2` is retained and clean-commit
@@ -2579,10 +2656,11 @@ validated; its separate launch authorization has been consumed exactly once;
 and the outputs reconstruct byte-exactly. The owner accepts I05 and passes
 `P2-I3-CAL-GATE`. Accepted DEC-042 and DEC-043 resolve the B-R instances of
 Q-014 and Q-015, accepted DEC-044 resolves Q-016, and accepted DEC-045 resolves
-Q-017; accepted DEC-046 resolves Q-018. EV-050 materializes the corrected exact
-inactive registration and EV-051 records owner acceptance and REG-GATE
-passage. A clean retention commit is the next required boundary before I07.
-Candidate/control execution remains unauthorized.
+Q-017; accepted DEC-046 resolves Q-018. EV-050/051 preserve the historical
+package `1.0.1` and acceptance. CHG-064 requires corrected package `1.0.2` and
+a superseding REG-GATE identity before I07-A resumes. The next boundary is the
+clean I06A source-anchor commit, after owner confirmation. Candidate/control
+execution remains unauthorized.
 Conformance fixture values, topology, observed split, digests, and derived
 margins are prohibited inputs. C.2 design and every calibration or scientific
 execution remain unauthorized.

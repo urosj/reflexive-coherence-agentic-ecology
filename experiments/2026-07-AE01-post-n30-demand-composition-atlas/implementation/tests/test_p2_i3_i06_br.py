@@ -61,7 +61,7 @@ class P2I3I06RegistrationTests(unittest.TestCase):
         self.assertTrue(all(row["scientific_evidence_effect"] == "none" for row in rows))
 
     def test_execution_class_counts(self) -> None:
-        self.assertEqual(self.registration["resource_governance"]["class_counts"], {"probe_only": 288, "standard_trajectory": 48, "complex_construction_or_comparison": 42, "integrity_fault": 72})
+        self.assertEqual(self.registration["resource_governance"]["class_counts"], {"probe_only": 288, "standard_trajectory": 48, "complex_construction_or_comparison": 48, "integrity_fault": 72})
 
     def test_resource_envelope_is_bounded(self) -> None:
         resources = self.registration["resource_governance"]
@@ -164,13 +164,69 @@ class P2I3I06RegistrationTests(unittest.TestCase):
         with self.assertRaises(self.module.jsonschema.ValidationError):
             self.module.jsonschema.validate(invalid, self.execution_schema)
 
-    def test_schedule_starts_with_integrity_block(self) -> None:
+    def test_operational_baseline_terminal_is_scientifically_inert(self) -> None:
+        valid = {
+            "artifact_kind": "p2_i3_br_operational_baseline_terminal",
+            "entry_id": "P2-I3-BR-OPBASE-TAU-1-R101",
+            "substrate_base_id": "P2-I3-BR-BASE-TAU-1-R101",
+            "source_identity_digest": "0" * 64,
+            "runtime_identity_digest": "1" * 64,
+            "native_restoration_v2_digest": "2" * 64,
+            "content_addressed_bundle_digest": "3" * 64,
+            "scientific_operation_counts": {
+                "formation": 0,
+                "export": 0,
+                "encounter_probe": 0,
+                "scientific_control": 0,
+                "integrity_fault_dispatch": 0,
+            },
+            "scientific_evidence_effect": "none",
+            "status": "valid_operational_baseline",
+        }
+        self.module.jsonschema.validate(valid, self.execution_schema)
+        invalid = deepcopy(valid)
+        invalid["scientific_operation_counts"]["formation"] = 1
+        with self.assertRaises(self.module.jsonschema.ValidationError):
+            self.module.jsonschema.validate(invalid, self.execution_schema)
+
+    def test_schedule_starts_with_baselines_then_integrity_block(self) -> None:
+        schedule = self.registration["schedule"]
+        baseline_ids = [row["entry_id"] for row in schedule["operational_baseline_entries"]]
         expected = [row["case_id"] for row in self.registration["matrix"]["integrity_fault_cases"]]
-        self.assertEqual(self.registration["schedule"]["order"][:72], expected)
+        self.assertEqual(schedule["order"][:6], baseline_ids)
+        self.assertEqual(schedule["order"][6:78], expected)
+
+    def test_case_registry_is_separate_and_unchanged(self) -> None:
+        schedule = self.registration["schedule"]
+        expected = [row["case_id"] for row in self.registration["matrix"]["integrity_fault_cases"] + self.registration["matrix"]["scientific_branches"]]
+        self.assertEqual(schedule["canonical_case_registry_order"], expected)
+        self.assertEqual(len(expected), 450)
+        self.assertEqual(set(schedule["order"][6:]), set(expected))
+
+    def test_schedule_is_topological(self) -> None:
+        schedule = self.registration["schedule"]
+        ordinals = {entry_id: index for index, entry_id in enumerate(schedule["order"], start=1)}
+        self.assertEqual(len(ordinals), 456)
+        for edge in schedule["dependency_dag"]:
+            self.assertTrue(all(ordinals[parent] < ordinals[edge["entry_id"]] for parent in edge["parent_entry_ids"]))
+
+    def test_baseline_failure_subtrees_are_exact_and_disjoint(self) -> None:
+        schedule = self.registration["schedule"]
+        observed: set[str] = set()
+        for subtree in schedule["baseline_failure_subtrees"]:
+            entries = set(subtree["dependent_entry_ids"])
+            self.assertFalse(observed & entries)
+            observed |= entries
+            self.assertTrue(all(
+                next(row for row in schedule["entries"] if row["entry_id"] == entry_id)["substrate_base_id"]
+                == subtree["substrate_base_id"]
+                for entry_id in entries
+            ))
+        self.assertEqual(observed, set(schedule["order"][6:]))
 
     def test_attempts_and_retry_tokens_are_finite(self) -> None:
         attempts = self.registration["attempt_governance"]
-        self.assertEqual((attempts["primary_attempt_slots"], len(attempts["class_retry_tokens"]), attempts["maximum_governed_child_starts"]), (450, 4, 454))
+        self.assertEqual((attempts["registered_case_count"], attempts["registered_operational_baseline_entry_count"], attempts["primary_attempt_slots"], len(attempts["class_retry_tokens"]), attempts["maximum_governed_child_starts"]), (450, 6, 456, 4, 460))
         self.assertTrue(all(row["allocation"] is None for row in attempts["class_retry_tokens"]))
 
     def test_gate_stops_remain_closed(self) -> None:
@@ -221,6 +277,21 @@ class P2I3I06RegistrationTests(unittest.TestCase):
         changed["canonical_payload_digest"] = self.module.digest_data({key: value for key, value in changed.items() if key != "canonical_payload_digest"})
         with self.assertRaises(self.module.RegistrationError):
             self.module.validate_registration(self.policy, self.timing, changed, self.schema)
+
+    def test_adversarial_baseline_scientific_operation_is_rejected(self) -> None:
+        changed = deepcopy(self.registration)
+        changed["schedule"]["operational_baseline_entries"][0]["scientific_operation_counts"]["formation"] = 1
+        self._assert_semantic_mutation_rejected(changed)
+
+    def test_adversarial_probe_before_parent_is_rejected(self) -> None:
+        changed = deepcopy(self.registration)
+        order = changed["schedule"]["order"]
+        probe = next(row for row in changed["matrix"]["scientific_branches"] if row.get("terminal_probe"))
+        parent = next(parent for parent in probe["parent_ids"] if not parent.startswith("checkpoint:"))
+        probe_index = order.index(probe["case_id"])
+        parent_index = order.index(parent)
+        order[parent_index], order[probe_index] = order[probe_index], order[parent_index]
+        self._assert_semantic_mutation_rejected(changed)
 
     def test_adversarial_unknown_dependency_is_rejected(self) -> None:
         changed = deepcopy(self.registration)
