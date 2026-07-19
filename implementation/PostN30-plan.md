@@ -2,7 +2,7 @@
 
 **Status:** active master program directive
 
-**Plan revision:** 0.70 draft
+**Plan revision:** 0.75 draft
 
 **Date:** 2026-07-19
 
@@ -1766,7 +1766,7 @@ a scientifically meaningful failure or missing-surface classification.
 
 ## 16. Immediate next steps
 
-Current dependency order after revision 0.70 draft:
+Current dependency order after revision 0.75 draft:
 
 1. Retain P2-I2 as closed under DEC-061. Its complete C02 evidence, corrected
    I09A control projection, I10 reconstruction, and I11 terminal closeout
@@ -1809,9 +1809,26 @@ Current dependency order after revision 0.70 draft:
    sole quarantined run passes 11/11 cells and 36/36 checks and reconstructs
    byte-exactly. DEC-035 corrects schedule ownership, types the fifteen I03
    closure bases, accepts B-R as operationally expressible, and passes
-   `P2-I3-DISCRIMINATOR-GATE`. Next complete I04 candidate-blind calibration
-   preregistration without consuming any conformance fixture value, topology,
-   split, digest, or margin. Then carry B-R through separately gated
+   `P2-I3-DISCRIMINATOR-GATE`. DEC-036 begins I04 by resolving Q-009 as a typed
+   encounter response whose primary scalar is the signed request-relative
+   native admissibility margin and whose native disposition is a mandatory
+   validity companion. DEC-037 resolves Q-010 by separating native
+   observations, registered RCAE metadata, derived distance annotations,
+   measured native time, and intervention-estimated causal influence. DEC-038
+   resolves Q-011 through exact W/O/E arms, separate primary trace and
+   mandatory export-mediation estimands, raw additive decomposition, strict
+   pairing/missingness, and mandatory clamp interpretation. DEC-039 resolves
+   Q-012 through one shared exact-null population and separate non-delta
+   perturbation, denominator, reconstruction, and missingness conformance
+   panels. DEC-040 resolves the B-R instance of Q-016 as leg-factored evidence
+   governance: applicability, execution, scientific resolution, control
+   resolution, and terminal guards remain separate; compound producer,
+   budget, dynamic, and false-trace controls retain independently resolvable
+   meanings; and I09 facts reach I11 only through I10 reconstruction. Next
+   materialize, validate, reconstruct, and review the complete DEC-036-through-
+   DEC-040 candidate-blind preregistration without consuming any conformance
+   fixture value, topology, split, digest, or margin. Then carry
+   B-R through separately gated
    calibration, registration, execution, controls, reconstruction, and branch
    interpretation. Only after B-R branch closeout may C.2 open under separate
    identities and the same common comparison fields. B-R Q-008 is fixed by
@@ -1946,6 +1963,11 @@ directive.
 | 2026-07-19 | Revision 0.68 draft: records clean source anchor `94bfe01` and corrects the P2-I3 handoff so section 8.1.2 visibly delegates to section 8.4 while all fifteen section 8.2 requirements remain evidence-open. Only exact harness construction and one quarantined conformance attempt open. |
 | 2026-07-19 | Revision 0.69 draft: records implementation anchor `ce9701c` and the sole B-R bounded-conformance attempt. Exact binding precedes model construction; 11/11 cells and 36/36 checks pass; the 48,395-byte result reconstructs byte-exactly; all section 8.2 requirements close at the operational boundary; and no scientific effect or downstream authority follows pending review. |
 | 2026-07-19 | Revision 0.70 draft: records DEC-035 and the accepted I03 closeout review. Generated receipt/result identities omitted from the reviewer upload are independently verified. The review corrects scheduling ownership, types the fifteen realization closures instead of treating them as one empirical proof, passes `P2-I3-DISCRIMINATOR-GATE` without rerun, and opens I04 preregistration only. Conformance fixture values, topology, observed split, digests, and margins remain prohibited downstream. |
+| 2026-07-19 | Revision 0.71 draft: records owner-accepted DEC-036 and resolves I04 Q-009. The primary response is the signed native encounter-admissibility margin inside a typed scalar-plus-disposition record. Exact pre-step timing, next-event isolation, structural validity, invalid-null behavior, unrounded inputs, strict native sign agreement, matched-request comparability, raw-margin retention, and encounter index `j` are fixed without selecting any request value, comparator, normalization, calibration input, or result. |
+| 2026-07-19 | Revision 0.72 draft: records owner-accepted DEC-037 and resolves I04 Q-010. Native topology/state observations, RCAE role metadata, graph-derived distance/path annotations, native event/internal-time observations, causal-shortest-path annotations, and intervention-estimated causal influence receive separate evidential roles. A geometry or timescale intervention may be real, but its projection cannot establish causal influence; no numeric value, estimate, calibration input, or result is selected. |
+| 2026-07-19 | Revision 0.73 draft: records owner-accepted DEC-038 and resolves I04 Q-011. Exact W deposition-withdrawal, O lifecycle-neutralized, and E lifecycle-enabled arms separate the lane-primary complete-trace relation from mandatory B-R export mediation. Raw deltas retain their additive identity; normalized margins remain non-additive, unclipped, strictly paired, and accompanied by native dispositions, missingness, and clamp interpretation. No arm value, calibrated resolution, calibration output, or result is selected. |
+| 2026-07-19 | Revision 0.74 draft: records owner-accepted DEC-039 and resolves I04 Q-012. One shared exact-null W/O/E population calibrates both estimators; five equal-arm rows alone enter the Phase 1 delta rule. Separate intentionally nonzero perturbation, denominator, cross-zero, reconstruction, and missingness panels verify estimator behavior but are mechanically excluded from delta. The existing `1e-12` metric-sheet floor remains prior authority, not a value inferred from equality rows. No calibration is invoked. |
+| 2026-07-19 | Revision 0.75 draft: records owner-accepted DEC-040 and resolves the B-R instance of I04 Q-016. Control applicability is leg-level; execution, evidence, control, and terminal-guard states are independent; control classes remain distinct from evidence types; compound producer/budget/dynamic and false-trace controls receive separate meanings; stable discriminator/validity/claim IDs bind rung, tag, and terminal needs; CTRL-19 permits honest blocked or missing-surface closeout without manufacturing a negative; and I09 facts reach the I11 terminal overlay only through I10 reconstruction. No control outcome, C.2 projection, calibration invocation, or scientific result is assigned. |
 
 ## 18. Program completion criteria
 

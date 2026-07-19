@@ -2,7 +2,7 @@
 
 **Status:** active master tracking checklist
 
-**Baseline revision:** 0.70 draft
+**Baseline revision:** 0.75 draft
 
 **Date:** 2026-07-19
 
@@ -46,10 +46,10 @@ Rules:
 
 | Program surface | Status | Current gate | Exit evidence |
 | --- | --- | --- | --- |
-| Master directive | Active at revision 0.70 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
+| Master directive | Active at revision 0.75 draft | Maintained under change control | `implementation/PostN30-plan.md` and `implementation/PostN30-checklist.md` |
 | Phase 0 — Architecture and decisions | Complete | P0-GATE | P0-GATE passed |
 | Phase 1 — AE01 contract freeze | Complete at revision 0.25 | P1-GATE | Review R2 passed; AE01-C1/C2 assigned; P1-GATE passed |
-| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R discriminator gate passed and I04 preregistration open | P2-GATE | DEC-035 accepts corrected ownership and typed I03 closure over the byte-exact 11-cell/36-check result; calibration execution, C.2, and scientific work remain lane-gated |
+| Phase 2 — Atlas execution | P2-I1/P2-I2 closed; P2-I3 B-R I04 open with Q-009 through Q-012 and B-R Q-016 resolved | P2-GATE | DEC-036 through DEC-040 fix response, observation policy, W/O/E estimators, candidate-blind calibration design, and leg-factored control governance without execution; I04 machine materialization still blocks CAL-PRE, while C.2 and scientific work remain lane-gated |
 | Phase 3 — Closeout and promotion | Blocked by Phase 2 | P3-GATE | Pending |
 | Phase 4 — Specs and implementation | Blocked by Phase 3 except approved infrastructure | P4-GATE | Pending |
 | Final Post-N30 closeout | Blocked | FINAL-GATE | Pending |
@@ -1427,6 +1427,30 @@ Entry condition:
   section 8.2 closure bases, and pass `P2-I3-DISCRIMINATOR-GATE` without rerun.
   Open only I04 calibration preregistration and prohibit fixture values,
   topology, observed split, digests, or derived margins as downstream inputs.
+- [x] Resolve I04 Q-009 under DEC-036 as a typed encounter-response pair:
+  signed request-relative native admissibility margin is primary and native
+  disposition is its mandatory validity companion. Bind the exact pre-step and
+  next-event boundary, strict native sign relation, invalid-null policy,
+  unrounded inputs, matched-request comparability, and encounter index `j`
+  without selecting a value, comparator, or calibration input.
+- [x] Resolve I04 Q-010 under DEC-037 through five typed surface policies:
+  separate native observations, registered RCAE role metadata, derived graph
+  annotations, measured native time, and intervention-estimated causal
+  influence without selecting any surface value or estimating an effect.
+- [x] Resolve I04 Q-011 under DEC-038 through exact W/O/E arms, separate
+  primary trace and mandatory export-mediation estimands, raw additive but
+  normalized non-additive decomposition, strict pairing/missingness, one
+  primary encounter, and mandatory clamp interpretation without arm values.
+- [x] Resolve I04 Q-012 under DEC-039 as one shared exact-null W/O/E
+  calibration plus separate non-delta perturbation, denominator,
+  reconstruction, and validity/missingness conformance panels. Preserve the
+  frozen metric-sheet floor and prohibit candidate/runtime inputs or execution.
+- [x] Resolve the B-R instance of I04 Q-016 under DEC-040 through leg-level
+  applicability, separate execution/evidence/control/terminal statuses,
+  typed control classes and evidence, compound control families, two false-
+  trace strengths, stable discriminator/validity/claim guards, CTRL-19
+  closeout rules, and the I09-I11 reconstructed terminal-overlay handoff.
+  Assign no outcome and leave C.2 independently unresolved.
 
 Current continuation:
 
@@ -1444,7 +1468,12 @@ committed RCAE P2-I3 demand state
 -> exact runtime module/harness committed at `ce9701c`
 -> bounded B-R conformance passes and reconstructs byte-exactly
 -> DEC-035 accepted; P2-I3-DISCRIMINATOR-GATE passed
--> I04 candidate-blind calibration preregistration
+-> I04 Q-009 primary response resolved under DEC-036
+-> I04 Q-010 observation policies resolved under DEC-037
+-> I04 Q-011 comparator/estimators resolved under DEC-038
+-> I04 Q-012 candidate-blind null design resolved under DEC-039
+-> B-R Q-016 control/evidence governance resolved under DEC-040
+-> materialize and validate the complete calibration preregistration
 -> separately gated B-R calibration and exact registration
 -> execute and close B-R under route-scoped gates
 -> execute and close C.2 under separate route-scoped gates
@@ -2430,6 +2459,11 @@ Change log:
 | CL-071 | 2026-07-19 | Revision 0.68 draft records clean source anchor `94bfe01` and corrects the post-commit P2-I3 lane/master handoff. Section 8.1.2 now exposes the active B-R program position in section 8.4; section 8.2 is explicitly contract-frozen but remains evidence-open pending the bounded conformance run. | P2-I3 B-R conformance activation and checklist visibility | Superseded by CL-072 after exact bounded conformance |
 | CL-072 | 2026-07-19 | Revision 0.69 draft records implementation anchor `ce9701c` and the sole retained B-R bounded-conformance attempt. Exact graph/runtime binding precedes model construction; 11/11 cells and 36/36 checks pass; all fifteen section 8.2 requirements close only at the operational boundary; both internal digests validate; and the 48,395-byte result reconstructs byte-exactly. Native LGRC9V3 retains state/packet/admission/restoration ownership while RCAE retains the explicit export policy, blind opportunity adapter, composite coordination, and control identities. | P2-I3 B-R I03 conformance owner-review boundary | Superseded by CL-073 after accepted review and corrected gate closeout |
 | CL-073 | 2026-07-19 | Revision 0.70 draft records DEC-035 and the accepted repository-local I03 review. The actual generated receipt/result omitted from the reviewer upload are independently verified; exact source/artifact/reconstruction identities and totals match. Ownership is corrected so RCAE owns lifecycle/request scheduling while PyGRC owns native ordering/admission/progression/refusal/settlement. The fifteen section 8.2 items close through typed runtime, addressability, design, nonclaim, restoration, and binding bases rather than one empirical proof. | P2-I3 B-R discriminator-gate passage | Passed without rerun; opens I04 preregistration only and prohibits all conformance values/topology/split/digests/margins downstream; no calibration execution or scientific result |
+| CL-074 | 2026-07-19 | Revision 0.71 draft records owner-accepted DEC-036. Q-009 now uses a typed native encounter response: `mu[e,j]=C_pre(m_e)-q_probe` is the primary scalar and native disposition is the mandatory validity companion. The exact post-scheduling/pre-departure boundary, next-event guard, structurally valid domain, invalid-null rule, unrounded runtime inputs, strict native sign agreement, matched-request comparability, raw-margin retention, and encounter index `j` are fixed. | P2-I3 B-R I04 primary-response decision | Resolves Q-009 only; no numeric value, comparator, calibration input/output, execution, or scientific result; Q-010 is next |
+| CL-075 | 2026-07-19 | Revision 0.72 draft records owner-accepted DEC-037. Q-010 separates observed native topology/state, registered RCAE role metadata, derived hop/path and geometric/functional projections, measured native event/internal time, annotated causal shortest paths, and intervention-estimated causal influence. Geometry/timescale interventions may be genuine factors, but projections and temporal coincidence cannot establish causal consequence. | P2-I3 B-R I04 five-surface policy | Resolves Q-010 only; no surface value, causal estimate, calibration input/output, execution, or scientific result; Q-011 is next |
+| CL-076 | 2026-07-19 | Revision 0.73 draft records owner-accepted DEC-038. Q-011 freezes exact W deposition-withdrawal, O lifecycle-neutralized, and E lifecycle-enabled arms; `N(E,W)` is the lane-primary trace relation and `N(O,E)` the mandatory B-R mediation relation. Raw deltas retain an additive audit identity while normalized margins remain non-additive, unclipped, and paired under exact forks, requests, checkpoints, schedules, encounters, missingness, and dispositions. | P2-I3 B-R I04 comparator/estimator decision | Resolves Q-011 only; no arm value, calibrated delta, calibration output, execution, or scientific result; Q-012 is next |
+| CL-077 | 2026-07-19 | Revision 0.74 draft records owner-accepted DEC-039. Q-012 uses one shared W/O/E arithmetic calibration: five equal-arm cases alone feed `delta`, while intentionally nonzero perturbation, denominator, crossing, reconstruction, and missingness cases are mandatory conformance panels excluded from it. The existing `1e-12` metric-sheet floor is authority rather than a quantity inferred from equality rows; the normalized delta remains a separate role. | P2-I3 B-R I04 candidate-blind calibration design | Resolves Q-012 only; no calibration invocation, generated delta, runtime/candidate input, execution, or scientific result; Q-016 and materialization remain |
+| CL-078 | 2026-07-19 | Revision 0.75 draft records owner-accepted DEC-040. B-R Q-016 now uses independently resolvable parent/leg controls, separate applicability/execution/evidence/control/terminal fields, typed control classes and evidence, factored producer/budget/dynamic controls, two false-trace strengths, stable scientific/validity/claim identities, completion-sensitive CTRL-19 rules, and an I09-I10-I11 reconstructed terminal overlay. | P2-I3 B-R I04 control/evidence governance | Resolves B-R Q-016 meaning only; no control outcome, rung, tag, terminal class, calibration invocation, or scientific result; C.2 remains unresolved and I04 machine materialization still blocks CAL-PRE |
 
 ## 17. Current next actions
 
@@ -2554,6 +2588,22 @@ The next unchecked actions in dependency order are:
     two non-runtime ownership/ledger corrections, and pass only
     `P2-I3-DISCRIMINATOR-GATE` without rerun. This opens I04 calibration
     preregistration, not calibration or candidate work.
-36. [ ] Begin I04 candidate-blind calibration preregistration by resolving
-    Q-009 through Q-012 and Q-016 without consuming any conformance fixture
-    value, topology, observed split, digest, or derived margin.
+36. [x] Begin I04 candidate-blind calibration preregistration and resolve Q-009
+    under DEC-036 without consuming any conformance fixture value, topology,
+    observed split, digest, or derived margin.
+37. [x] Resolve Q-010 by assigning each distance/observation surface an exact
+    measured, derived, annotation-only, not-applicable, or unavailable role and
+    policy without selecting numeric registration values.
+38. [x] Resolve Q-011 by freezing the causal estimand, matched comparator,
+    estimator, aggregation, missingness, and resolution relation without
+    consuming conformance or candidate outcomes.
+39. [x] Resolve Q-012 by freezing the candidate-blind matched-null generator,
+    input provenance, seed strata, and shared-versus-separate trace/export
+    resolution authority without candidate-shaped inputs.
+40. [x] Resolve the B-R instance of Q-016 by mapping every common and L03
+    control leg to exact
+    applicability, evidence type, owning iteration, and fail-closed resolution
+    without pre-assigning any outcome; retain C.2 as independently unresolved.
+41. [ ] Materialize DEC-036 through DEC-040 as the complete candidate-blind
+    I04 machine contract, validators, reconstruction, and review package
+    without invoking calibration or consuming conformance/candidate values.

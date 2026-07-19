@@ -13,7 +13,14 @@ the I03 design portion of B-R Q-015; DEC-033 is the accepted B-R
 operational-hypothesis projection; DEC-034 is the accepted inactive bounded-
 conformance input freeze; DEC-035 accepts the exact B-R operational-
 conformance package and passes `P2-I3-DISCRIMINATOR-GATE`; I04 calibration
-preregistration is open but calibration execution remains unauthorized
+preregistration is open; DEC-036 resolves Q-009 as a typed native encounter-
+response pair with signed margin primary; DEC-037 resolves Q-010 through five
+typed surface policies; DEC-038 resolves Q-011 through an exact three-arm
+trace/dynamic factorization; DEC-039 resolves Q-012 through one shared
+candidate-blind arithmetic null plus non-delta conformance panels; calibration
+execution remains unauthorized; DEC-040 resolves only the B-R instance of
+Q-016 through a leg-factored control and evidence-governance contract; C.2
+control projection and all control outcomes remain unresolved
 
 **Lane:** `AE01-L03`
 
@@ -107,6 +114,12 @@ No decision may be inferred from:
 | `P2-I3-DEC-032` | What B-R restoration and equal-continuation design resolves the I03 portion of Q-015? | Accepted by project owner: one manifest-coordinated composite restoration interface with separate exact-execution and causal-continuation identities | Resolves B-R Q-015 design only; I06 must finalize schemas, fields, hashes, commands, horizon, and equality rules | 2026-07-19 |
 | `P2-I3-DEC-033` | Does the B-R operational projection faithfully specialize `AE01-H-L03` and DEC-027 through DEC-032 without pre-answering metrics or results? | Accepted by project owner: thirteen operational hypotheses covering formation through bounded interpretation | Opens only bounded conformance-freeze construction; no runtime or scientific effect | 2026-07-19 |
 | `P2-I3-DEC-034` | Which exact inactive input freeze may authorize one scientifically quarantined B-R conformance implementation and run? | Accepted by project owner: exact source/call bindings, two-route synthetic fixture, eleven cells, narrow RCAE interfaces, restoration/refusal, mechanical quarantine, and evidence-responsive stronger alternatives | Opens committed-source harness construction and one bounded conformance run only | 2026-07-19 |
+| `P2-I3-DEC-035` | Does the exact B-R conformance package establish operational adequacy and pass the discriminator gate? | Accepted with corrected schedule ownership and typed section 8.2 closure bases | Passes `P2-I3-DISCRIMINATOR-GATE` and opens only I04 calibration preregistration | 2026-07-19 |
+| `P2-I3-DEC-036` | What primary substrate-visible traversal response resolves B-R Q-009? | Accepted typed encounter response with signed native admissibility margin primary and native disposition as mandatory validity companion | Resolves Q-009 only; Q-010 through Q-012 and Q-016 still block CAL-PRE | 2026-07-19 |
+| `P2-I3-DEC-037` | Which exact semantic disposition and policy applies to each of the five Q-010 surfaces? | Accepted measured native structure/bindings, annotation-only geometric/functional projections, split measured/annotated causal-temporal components, and mandatory intervention-estimated causal influence | Resolves Q-010 only; Q-011, Q-012, and Q-016 still block CAL-PRE | 2026-07-19 |
+| `P2-I3-DEC-038` | Which comparator and estimator preserve both the complete trace relation and B-R dynamic-to-traversal mediation under Q-011? | Accepted exact W/O/E arm factorization with separate trace and export margins, raw additive decomposition, strict pairing/missingness, and mandatory clamp interpretation | Resolves Q-011 only; Q-012 and Q-016 plus the remaining I04 contract still block CAL-PRE | 2026-07-19 |
+| `P2-I3-DEC-039` | What candidate-blind matched-null generator and inputs calibrate Q-011 without consuming candidate structure under Q-012? | Accepted one shared exact-null W/O/E calibration plus separate non-delta perturbation, denominator, reconstruction, and missingness conformance panels | Resolves Q-012 only; Q-016 plus the remaining I04 contract still block CAL-PRE | 2026-07-19 |
+| `P2-I3-DEC-040` | Which common and lane-specific controls apply to B-R, what evidence resolves each leg, and how do I09-I11 close them under Q-016? | Accepted leg-factored applicability, separated execution/evidence/control/terminal statuses, typed control classes, stable discriminator/validity/claim guards, and reconstructed terminal overlay | Resolves B-R Q-016 meaning only; C.2 remains independent and CAL-PRE still requires machine materialization, validation, reconstruction, and acceptance | 2026-07-19 |
 
 ## 3. `P2-I3-DEC-001` — Semantic authority
 
@@ -3098,7 +3111,1040 @@ identity changes; quarantine admits conformance provenance downstream; or
 later work demonstrates that an operational interface cannot support its
 registered scientific role.
 
-## 38. Open decision register
+## 38. `P2-I3-DEC-036` — B-R primary traversal response
+
+### Question
+
+What primary substrate-visible traversal response resolves Q-009 while
+preserving native LGRC9V3 disposition, graded boundary information, and the
+prohibition on hidden route selection?
+
+### Alternatives considered
+
+1. carrier coherence `C(m_e)` alone;
+2. native admitted/refused disposition alone;
+3. realized transported amount or continuation credit;
+4. a geometric, functional, or causal-distance surface; or
+5. a typed native encounter response whose primary scalar is the signed
+   request-relative admissibility margin.
+
+Carrier coherence alone lacks an explicit relation to the registered traversal
+demand. Disposition and transported amount are effectively binary and erase
+same-side or narrow movement. Distance surfaces describe geometry, reach, or
+variation rather than the immediate local request encounter.
+
+### Accepted resolution
+
+Accept alternative 5. The complete response record is:
+
+```text
+R_encounter[e,j] = {
+  admissibility_margin: mu[e,j],
+  native_disposition:
+    admitted
+    | field_limited_refusal
+    | invalid_or_infrastructure_failure
+}
+
+mu[e,j] = C_pre(m_e) - q_probe
+```
+
+`j` is the registered encounter-opportunity index. It is not lifecycle-receipt
+index `k`. The primary scalar is `mu[e,j]` in native coherence units. Native
+disposition is its mandatory causal and validity companion; the analysis-side
+subtraction is not a native response object and does not author the outcome.
+
+`C_pre(m_e)` is carrier coherence in the exact composite checkpoint after the
+prospectively fixed request is scheduled and immediately before its native
+departure event is processed. The registered departure must be the next
+processed event capable of changing or testing `C(m_e)`.
+
+The validity domain is a structurally valid registered encounter whose source,
+target, and edge resolve and whose request reaches native source-coherence
+admission. Compute `mu_raw` from the exact in-memory carrier and request values
+consumed at that boundary, before report rounding:
+
+```text
+valid encounter and mu_raw >= 0
+  -> admitted
+
+valid encounter and mu_raw < 0
+  -> field_limited_refusal
+
+invalid or infrastructure failure
+  -> native_disposition = invalid_or_infrastructure_failure
+  -> admissibility_margin = null for primary scientific analysis
+```
+
+A diagnostically computable margin from an invalid encounter may be retained
+outside the primary comparator. Any sign/disposition disagreement is an
+invalid measurement/runtime binding, not a surprising scientific result.
+Equality is admitted because the admitted native provider refuses only when
+source coherence is strictly smaller than packet amount.
+
+Larger `mu` means greater local continuation admissibility only within a
+comparison set sharing `q_probe`, native coherence units, encounter timing, and
+request-construction semantics. With fixed `q_probe`, margin change is an
+affine recentering of carrier-coherence change. Its benefit is semantic: zero
+is the native request boundary and native disposition supplies an independent
+validity check. Normalization cannot make unlike requests commensurable, and
+raw margins remain retained.
+
+### Boundary and deferred work
+
+The response is a request-relative analysis projection of native pre-step
+state. It is not a route score, preference, free route choice, traversal
+success, participant response, or ecology result.
+
+DEC-036 selects no `q_probe`, comparator, normalization, aggregation,
+missingness policy, resolution band, topology, schedule value, seed, attempt,
+or registration value. Q-010 through Q-012 and Q-016 plus the remaining I04
+contract still block CAL-PRE; I06 owns exact serialization and equality rules.
+No conformance fixture value is consumed.
+
+### Gate and evidence effect
+
+Q-009 is resolved. This decision supplies measurement meaning only and does
+not pass CAL-PRE, run calibration, assign a margin direction or magnitude,
+authorize registration/execution, or support/refute any OP, rung, hypothesis,
+branch, or lane result.
+
+### Reopening condition
+
+Reopen DEC-036 if the native provider's source-coherence admission relation
+changes; the exact pre-step boundary cannot be isolated; an intervening event
+can alter the carrier before admission; valid sign and disposition cannot be
+made consistent; later Q-010/Q-011 work shows that the margin cannot serve the
+frozen primary metric without comparing unlike request semantics; or a
+different substrate-visible response is necessary to express the accepted
+local continuation-admissibility question.
+
+## 39. `P2-I3-DEC-037` — B-R five-surface observation policy
+
+### Question
+
+Which exact disposition and derivation policy applies to registered structure,
+geometric distance, functional distance, causal/proper-time distance, and
+experimental causal influence under Q-010?
+
+### Accepted resolution
+
+Retain the brief's existing fail-closed disposition vocabulary. Do not add an
+`experimentally_estimated_mandatory` schema value. Instead, use `measured` for
+the experimental-causal surface with an explicit estimation class and a false
+direct-observation claim.
+
+#### Registered native structure and bindings
+
+```text
+disposition: measured
+
+native_observation:
+  node and edge existence
+  exact current registered native state
+  current native availability where applicable
+
+registered_metadata:
+  RCAE route and role bindings
+
+derived_annotation:
+  hop counts and path summaries
+```
+
+Native topology/state are observed from the exact runtime. RCAE roles are
+integrity-checked prospective bindings, not native discoveries. Dynamic carrier
+availability belongs to current state rather than immutable structure. Hop and
+path summaries cannot be reported as raw measured structure.
+
+#### Geometric distance
+
+```text
+disposition: derived_annotation_only
+policy: public shortest-path projection over registered geometric edge lengths
+```
+
+The projection cannot by itself establish experimental causal influence. A
+registered geometry intervention may be a genuine OP-12 experimental factor,
+but its consequence must be evaluated through the DEC-036 response and the
+Q-011 causal contrast.
+
+#### Functional distance
+
+```text
+disposition: derived_annotation_only
+policy: public inverse-conductance or registered coupling projection
+```
+
+B-R does not itself mutate conductance/coupling. The projection may annotate a
+registered intervention or reveal an unexpected relation, but cannot
+substitute for the encounter response or experimental causal influence.
+
+#### Causal-temporal surface
+
+Retain two explicit typed components rather than hiding them behind one mixed
+label:
+
+```text
+native_event_internal_time:
+  disposition: measured
+  fields:
+    event_time_key
+    node_proper_time
+    node_last_update_proper_time
+    departure/arrival ordering and elapsed internal time
+    settled checkpoint timing
+
+causal_shortest_path_projection:
+  disposition: derived_annotation_only
+  policy: public shortest-path projection over registered edge causal delay
+```
+
+`node_proper_time` is an exact admitted PyGRC runtime field, but the helper-
+generated shortest-path projection is symmetric where the public helper is
+symmetric, topology-derived, and not directed packet influence. Neither
+temporal coincidence nor that projection establishes that B-R caused the
+encounter response.
+
+#### Experimental causal influence
+
+```text
+disposition: measured
+measurement_class: estimated_from_measured_intervention_arms
+direct_observation_claim: false
+required_for_every_valid_b_r_scientific_branch: true
+required_supportive_contrast_for_positive_dynamic_to_traversal_result: true
+source_response: DEC-036 typed encounter response
+```
+
+Experimental causal influence is an estimand from a preregistered intervention
+contrast over measured arm responses, not a raw observation or distance.
+Q-011 owns the estimand, comparator, estimator, aggregation, missingness, and
+resolution relation. Valid negative branches must still evaluate this panel.
+Annotation-only or not-applicable cannot support a positive B-R
+dynamic-to-traversal result.
+
+### Boundary and deferred work
+
+No distance change substitutes for `mu` plus native disposition. Geometric or
+internal-timescale variation contributes to R05 only through its experimentally
+evaluated encounter consequence. No topology, edge length, conductance,
+coupling, delay, window, comparator, timing value, seed, threshold, or
+conformance observation is selected.
+
+### Gate and evidence effect
+
+Q-010 is resolved. DEC-037 fixes semantic observation/derivation roles only.
+It does not pass CAL-PRE, estimate causal influence, run calibration, assign a
+surface value, or authorize registration/execution or any scientific result.
+
+### Reopening condition
+
+Reopen DEC-037 if an admitted surface is unavailable at registration; native
+topology/state cannot be separated from RCAE role metadata; a distance helper
+becomes live directed influence; the causal-temporal subcomponents cannot be
+retained separately; Q-011 cannot define experimental influence without
+changing these evidence roles; or a new source exposes a distinct load-bearing
+surface requiring an explicitly reviewed extension.
+
+## 40. `P2-I3-DEC-038` — B-R three-arm comparator and estimator
+
+### Question
+
+What comparator and estimator preserve both the inherited L03 question—does a
+formed trace alter later local admissibility relative to no deposited
+trace?—and the post-R3 B-R question—does conservative export change that
+trace-dependent admissibility?
+
+### Alternatives considered
+
+1. compare only the complete B-R candidate with deposition withdrawal;
+2. compare only lifecycle enabled with lifecycle omitted or frozen;
+3. merge trace presence and lifecycle intervention into one binary contrast;
+4. retain an exact three-arm factorization with separate primary trace and
+   mandatory export-mediation relations.
+
+Alternative 1 cannot establish that the selected non-static dynamic reaches
+the encounter. Alternative 2 tests the B-R mechanism but does not establish a
+costly formed trace relative to matched activity without deposition.
+Alternative 3 confounds formation with export and permits omission, freezing,
+and withdrawal to become interchangeable. Accept alternative 4.
+
+### Exact arm identities
+
+```text
+P2-I3-BR-I04-W-DEPOSITION-WITHDRAWAL-001 (W)
+  matched repeated activity
+  valid installation into m_e withdrawn
+  no route-local formed trace
+
+P2-I3-BR-I04-O-LIFECYCLE-NEUTRALIZED-001 (O)
+  repeated formation completed
+  same eligible receipts, producer invocation schedule, and checkpoints
+  designated B-R export neutralized before any native m_e -> d_e request
+
+P2-I3-BR-I04-E-LIFECYCLE-ENABLED-001 (E)
+  repeated formation completed
+  designated B-R export lifecycle enabled
+  complete candidate relation evaluated
+```
+
+`W` means deposition withdrawal during formation, not withdrawal of a
+depositor after a trace already exists. It preserves, as applicable, repeated
+activity count and timing, source opportunity, declared non-field activity
+cost, lifecycle-opportunity schedule, encounter opportunity, and request
+semantics. Where feasible, source debit is conservatively matched by diverting
+the would-be installation to a registered isolated non-route destination.
+Exact operations and values remain I06 work.
+
+`O` is one exact neutralization intervention, not the ambiguous phrase
+"omitted/frozen." The RCAE lifecycle remains invoked and its receipts,
+checkpoints, and schedule remain visible, but the designated control prevents
+the native export request. The intervention is recorded as
+`lifecycle_neutralized`; it is not silently relabeled as an ordinary
+eligible-zero lifecycle. Producer omission remains a separate OP-10 ownership
+and naturalization control.
+
+### Common normalization and the two estimands
+
+For valid unrounded DEC-036 encounter margins, freeze:
+
+```text
+N(a, b; epsilon_mu) =
+  (mu_a - mu_b)
+  / max(abs(mu_a), abs(mu_b), epsilon_mu)
+
+m_trace  = N(E, W; epsilon_mu)
+m_export = N(O, E; epsilon_mu)
+```
+
+`epsilon_mu` is the arithmetic measurement-resolution floor already declared
+by the L03 metric sheet. Q-012 owns candidate-blind calibrated resolution
+authority and must decide whether the two relations justify one shared null
+stratum or require distinct `delta_trace` and `delta_export` strata.
+
+`m_trace` is the lane-primary normalized relation. Positive orientation means
+the complete formed-and-exported trace retains greater local admissibility
+than matched activity with deposition withdrawn.
+
+`m_export` is the mandatory B-R mediation relation. Positive orientation means
+the enabled conservative export reduced local admissibility relative to the
+otherwise matched neutralized lifecycle. This direction can coexist with
+positive `m_trace`: a formed trace can remain beneficial relative to no trace
+while export weakens that benefit.
+
+The operator consumes exact unrounded values, is not a percentage, and is not
+clipped. Its range may reach `[-2, 2]` when paired margins cross the native zero
+boundary. A normalized margin never replaces its raw response or native
+disposition.
+
+### Raw decomposition and retained fields
+
+Retain the exact unnormalized decomposition for every valid matched triple:
+
+```text
+Delta_trace  = mu_E - mu_W
+Delta_export = mu_O - mu_E
+Delta_formed = mu_O - mu_W
+
+Delta_formed = Delta_trace + Delta_export
+```
+
+This identity states that the pre-export formed-trace benefit equals the
+residual complete-trace benefit plus the admissibility removed by export. Only
+the raw deltas add. Because each normalized relation has its own denominator:
+
+```text
+m_trace + m_export != m_formed in general
+```
+
+No analysis or report may sum normalized margins. Every paired relation must
+retain both raw `mu` values, both native dispositions, the disposition
+transition, raw delta, normalization denominator and components, normalized
+margin, pair identity, missingness, and resolution relation.
+
+### Pairing, fork, aggregation, and missingness
+
+Every pair identity binds:
+
+```text
+calibration stratum
+seed or deterministic replicate identity
+configuration and variation cell
+route-role binding
+exact clean parent checkpoint
+causal-continuation projection
+encounter index j
+q_probe and request construction
+request timing and next-event isolation
+future lifecycle/opportunity schedule
+observation boundary
+```
+
+The trace relation forks `E` and `W` from the matched pre-formation parent. The
+export relation forks `O` and `E` from the same validated formation-stop
+checkpoint before the designated lifecycle intervention. The named
+intervention is the only intended causal difference in each pair.
+
+One prospectively registered encounter `j` supplies the primary value for each
+pair. Additional encounters remain separate indexed trajectory panels and
+cannot be averaged post hoc into the primary value. Per-seed and per-stratum
+margins remain visible without cross-seed scalar collapse.
+
+If either arm is invalid or infrastructure-failed, the paired metric is
+missing and no surviving-arm value may be substituted, imputed as zero, or
+averaged elsewhere. Native admission, native field-limited refusal with
+negative `mu`, eligible-zero lifecycle, same-side movement, and exact-boundary
+`mu=0` remain valid measurements when their own bindings validate.
+
+### Interpretation and mechanism boundary
+
+```text
+m_trace > 0  -> aligned complete-trace relation
+m_trace = 0  -> no exact paired difference before resolution classification
+m_trace < 0  -> counter-directional trace relation
+
+m_export > 0 -> enabled export reduced local admissibility
+m_export = 0 -> no exact lifecycle-associated margin change
+m_export < 0 -> counter to the registered debit expectation; inspect matching,
+                intervening events, extraction, and omitted causal state
+```
+
+Positive normalized margin does not imply native admission. Both arms may be
+admitted or both refused while retaining a graded difference. Exact arithmetic
+sign is recorded first; Q-012's calibrated resolution later assigns robust,
+narrow, or resolution-limited relations. None is an automatic terminal
+accept/reject gate.
+
+With matched `q_probe`, if enabled export transfers positive total coherence
+`Q` and no other continuation-relevant difference exists, then
+`mu_O - mu_E = Q`. Thus `m_export` verifies and quantifies that the registered
+B-R lifecycle reached the later native encounter through current carrier
+coherence. It does not independently discover that debiting a request source
+reduces its availability.
+
+### Mandatory clamp panel
+
+The equal-carrier clamp conservatively matches `C_pre(m_e)` while preserving
+the request, encounter index, checkpoint, and observation semantics. The
+paired margin must collapse under the later registered exactness rule; a
+non-collapse is unmatched continuation state, invalid intervention, or
+response-binding failure rather than surprising ecology evidence.
+
+The reservoir clamp varies `C(d_e)` without changing `C(m_e)`, preserves global
+coherence through an explicit isolated balancing operation, and requires no
+independent change in `mu` or native disposition. An effect indicates failed
+reservoir isolation or hidden producer/runtime dependence.
+
+These clamps are necessary mediation and measurement-consistency checks, but
+their expected relations are partly algebraic under DEC-036/028. They do not
+replace formation withdrawal, relocation, false trace, export-mass/
+organization, hidden-router, participant, restoration, or variation evidence.
+
+### Gate and evidence effect
+
+Q-011 is resolved. DEC-038 fixes arm meanings, estimators, orientations,
+pairing, missingness, raw retention, aggregation, and causal interpretation.
+It assigns no arm value, topology, schedule, seed, numeric calibrated delta,
+control outcome, calibration output, registration, execution, OP/rung result,
+or ecology interpretation. Neither estimator alone establishes R04,
+`trail_field_candidate`, `stigmergic_field_candidate`, robustness, or lane
+support.
+
+Q-012 and Q-016 plus the remaining I04 measurement/null contract still block
+CAL-PRE. No calibration command is authorized.
+
+### Reopening condition
+
+Reopen DEC-038 if `W` cannot preserve the non-field causal inputs without
+creating a new route-relevant carrier; `O` cannot retain the lifecycle schedule
+without adding a causal difference beyond export neutralization; exact fork or
+pair identity cannot be reconstructed; the primary L03 metric sheet cannot
+represent `N(E,W)` without semantic revision; the B-R mediation relation
+cannot be isolated by `N(O,E)` and its clamps; candidate-blind calibration
+shows the two estimators require a changed normalization rather than separate
+resolution strata; or later exact registration exposes another load-bearing
+arm that cannot remain a control panel.
+
+## 41. `P2-I3-DEC-039` — Shared candidate-blind arithmetic calibration
+
+### Question
+
+What candidate-blind matched-null generator and input package calibrates both
+DEC-038 estimators without consuming candidate structure, confusing the
+denominator floor with normalized resolution, or allowing intentionally
+nonzero conformance cases to inflate `delta`?
+
+### Review correction
+
+Equal W/O/E rows alone cannot discover a positive denominator floor or exercise
+nonzero estimator paths. That criticism is correct. It does not, however,
+invalidate the matched-null design or reopen the L03 metric sheet.
+
+The accepted metric sheet already declares `measurement_resolution = 1e-12`,
+and the Phase 1 contract requires:
+
+```text
+delta = max(
+  declared measurement_resolution,
+  maximum absolute matched-null normalized margin
+)
+```
+
+Q-012 therefore does not infer `epsilon_mu` from equality rows. It binds the
+existing metric-sheet value as the normalization denominator floor and
+calibrates the normalized estimator's observed exact-null deviation. Keep the
+two conceptual roles explicit:
+
+```text
+epsilon_mu:
+  existing metric-sheet denominator floor in the DEC-036 response relation
+  value = 1e-12
+  not a scientific effect threshold or discovered runtime quantum
+
+delta_N:
+  normalized relation-resolution authority
+  serialized in the existing metric-sheet field delta
+  value generated under the Phase 1 max rule
+```
+
+No schema change follows. The distinct symbols prevent a unit/role conflation;
+`delta_N` maps to the existing `delta` field.
+
+### Shared calibration decision
+
+Use one shared calibration. `m_trace` and `m_export` consume the same typed
+DEC-036 response, native units, `N` implementation, representation,
+serialization, pairing validator, validity rules, and missingness behavior.
+Different arm names and scientific meanings do not create different arithmetic
+resolution.
+
+Split into `delta_trace` and `delta_export` only if implementation exposes an
+actual difference in one of those surfaces. A semantic label difference alone
+cannot justify two deltas.
+
+### Panel A — exact-null inputs to `delta`
+
+Only Panel A contributes matched-null margins to `delta_N`. It uses exact
+rational-string source values and materializes typed synthetic W/O/E response
+records through the same future analysis path:
+
+| Calibration case | W | O | E | Expected `m_trace` | Expected `m_export` |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| `EQ-NEG-HALF` | `-1/2` | `-1/2` | `-1/2` | `+0` | `+0` |
+| `EQ-NEG-QUARTER` | `-1/4` | `-1/4` | `-1/4` | `+0` | `+0` |
+| `EQ-ZERO` | `0` | `0` | `0` | `+0` | `+0` |
+| `EQ-POS-QUARTER` | `1/4` | `1/4` | `1/4` | `+0` | `+0` |
+| `EQ-POS-HALF` | `1/2` | `1/2` | `1/2` | `+0` | `+0` |
+
+Canonical output must use positive zero; `-0.0` is rejected. Both estimator
+entry paths run independently. Every raw delta and normalized margin must be
+exactly zero after canonical serialization and reload.
+
+The Phase 1 calibration profile `[19, 43, 71, 109, 163]` may remain as required
+schema-compatible case aliases, but:
+
+```text
+randomness_used = false
+seed_semantics = inert_calibration_case_identity_only
+primary_identity = calibration_case_id + pair_id
+```
+
+Candidate seeds `[101, 211, 307]` remain explicitly excluded.
+
+The preregistered calculation is:
+
+```text
+delta_N = max(1e-12, max(abs(all Panel A matched-null margins)))
+expected Panel A margins = 0
+expected delta_N = 1e-12
+```
+
+These are preregistration expectations. The future retained calibration output
+is authoritative. Any nonzero Panel A deviation is preserved and enters the
+max rule; it is an analysis/reconstruction finding without scientific effect.
+
+### Panels B/C — estimator and denominator conformance only
+
+Panels B/C are mandatory zero-scientific-effect conformance inputs. Their
+intentionally nonzero margins never enter `delta_N`.
+
+Using `e = epsilon_mu`, freeze these symbolic cases:
+
+| Case | W | O | E | Required property |
+| --- | ---: | ---: | ---: | --- |
+| `TRACE-FIRST-DOM-POS` | `1/4` | `1/4 + e` | `1/4 + e` | `m_trace > 0`; `m_export = +0`; first trace arm controls denominator |
+| `TRACE-SECOND-DOM-NEG` | `1/4 + e` | `1/4` | `1/4` | `m_trace < 0`; `m_export = +0`; second trace arm controls denominator |
+| `EXPORT-FIRST-DOM-POS` | `1/4` | `1/4 + e` | `1/4` | `m_trace = +0`; `m_export > 0`; first export arm controls denominator |
+| `EXPORT-SECOND-DOM-NEG` | `1/4 + e` | `1/4` | `1/4 + e` | `m_trace = +0`; `m_export < 0`; second export arm controls denominator |
+| `FLOOR-DOM-POS` | `0` | `e/2` | `e/2` | denominator is `e`; `m_trace = 1/2`; `m_export = +0` |
+| `FLOOR-EQUALITY` | `0` | `e` | `e` | arm magnitude equals `e`; `m_trace = 1`; `m_export = +0` |
+| `TRACE-CROSS-ZERO` | `-0.1` | `0.1` | `0.1` | `m_trace = 2`; no clipping; non-dyadic round trip |
+| `EXPORT-CROSS-ZERO` | `-0.1` | `0.1` | `-0.1` | `m_trace = +0`; `m_export = 2`; no clipping; non-dyadic round trip |
+
+The table uses W/O/E column order; estimator numerator orientation remains
+exactly DEC-038. Values expressed with `e` are constructed from the frozen
+floor rather than copied from candidate data. Required sign, denominator
+branch, zero canonicalization, and no-clipping assertions are authoritative;
+computed binary-float representations are retained rather than replaced by
+idealized decimal outputs.
+
+### Panel D — canonical serialization and reconstruction
+
+Every Panel A/B/C case must:
+
+1. construct complete raw typed synthetic response records;
+2. canonicalize and serialize them through the intended RCAE representation;
+3. reload them through the exact analysis path;
+4. compute `m_trace` and `m_export` independently;
+5. serialize and reconstruct the complete calibration/conformance artifact;
+6. require byte-exact output and equal pre/post reconstruction projections.
+
+The `0.1` crossing cases ensure that this path is not tested only with binary-
+exact dyadic values. This calibrates analysis arithmetic and reconstruction,
+not PyGRC floating behavior or runtime equality tolerance.
+
+### Panel E — shared validity and missingness conformance
+
+Typed synthetic records must confirm for both estimators:
+
+```text
+valid admitted arm
+  -> included
+
+valid field_limited_refusal with negative mu
+  -> included
+
+invalid_or_infrastructure_failure in either required arm
+  -> paired estimator missing
+
+one valid and one invalid arm
+  -> no surviving-arm substitution, imputation, or averaging
+
+mu/disposition sign mismatch
+  -> invalid measurement binding, not a scientific value
+```
+
+Eligible-zero lifecycle and same-side movement remain valid when their complete
+records validate. Panel E tests shared software behavior only and cannot
+scientifically evaluate admission or refusal.
+
+### Candidate-blind provenance and exclusions
+
+The future generator must accept only the frozen calibration/conformance
+policy and exact source identities. It must expose no candidate-valued or
+candidate-shaped input argument. Retain and digest the generator, pure analysis
+entry paths, panel policy, metric sheet, serializer, interpreter/dependency
+profile, exact command, outputs, and reconstruction receipts.
+
+Mechanically exclude:
+
+- PyGRC imports, models, snapshots, runtime values, and execution;
+- candidate artifacts, outcomes, seeds, values, topology, schedules, or
+  configuration;
+- I03 conformance fixture topology, values, outcomes, split, digests, or
+  derived margins;
+- N31 candidate outputs or provider observations;
+- earlier-lane calibration panels, deltas, or outputs as numeric inputs;
+- scientific controls disguised as numerical nulls; and
+- post-outcome tuning.
+
+The admitted metric-sheet seed profile and authority identities are contract
+inputs, not candidate observations.
+
+### Gate and evidence effect
+
+Q-012 is resolved. DEC-039 freezes one shared matched-null population, the
+shared-versus-split rule, exact-null inputs, non-delta conformance panels,
+provenance, exclusions, expected reconstruction, and the existing Phase 1
+resolution formula. It authorizes no invocation.
+
+No panel is runtime evidence, a scientific null, a control result, a candidate
+result, a bound on PyGRC noise, or a scientific-effect threshold. Panels B
+through E cannot enter `delta_N`. Q-016 plus the remaining I04 contract still
+block CAL-PRE.
+
+### Reopening condition
+
+Reopen DEC-039 if the two estimator paths diverge in representation,
+serialization, normalization, validity, pairing, or missingness; an exact-null
+case cannot pass through the intended live analysis entry point; the existing
+metric-sheet floor cannot be honored without Phase 1 contract revision; a
+non-delta conformance case leaks into `delta_N`; candidate-shaped input becomes
+necessary; canonical reconstruction changes a result; or implementation
+requires different arithmetic null populations for reasons stronger than arm
+semantics.
+
+## 42. `P2-I3-DEC-040` — B-R control and evidence-governance contract
+
+### Question
+
+Which common and L03-specific controls apply to the B-R track, what kind of
+evidence may resolve each obligation, and how must control facts move through
+I09 reconstruction and I11 terminal validation under Q-016?
+
+### Considered alternatives
+
+#### Option A — one boolean per parent control
+
+This is compact but collapses compound controls, scientific findings,
+infrastructure validity, ownership, and terminal language into one misleading
+pass/fail surface. It cannot represent the partially applicable parent-context
+control or the different meanings of the B-R budget and producer legs.
+
+#### Option B — one flat row per control outcome
+
+This preserves more detail, but still overloads outcome with applicability and
+does not distinguish a valid counterdirectional result from invalid execution.
+It also risks treating I11 claim validation as if it were an I09 scientific
+measurement.
+
+#### Option C — leg-factored evidence governance
+
+Retain the common and lane control IDs as parents, assign independently
+resolvable legs, separate applicability from execution and interpretation,
+and carry reconstructed I09 facts into an I11 terminal overlay. This option is
+accepted for B-R.
+
+### Scope and non-outcome boundary
+
+DEC-040 resolves the B-R instance of Q-016 only. It assigns:
+
+- control and leg applicability;
+- control classes and admissible evidence types;
+- stable scientific-discriminator, validity, and claim-guard identities;
+- compound-control factorization;
+- I09-I11 ownership and closeout rules; and
+- fail-closed meanings for unavailable, invalid, and missing evidence.
+
+It assigns no control outcome, rung, interpretation tag, terminal class,
+candidate direction, or C.2 applicability. C.2 must receive an independently
+registered projection after the B-R branch closes.
+
+### Machine lifecycle vocabulary
+
+Control-level applicability and leg-level applicability are separate:
+
+```text
+control_applicability:
+  applicable
+  | partially_applicable
+  | conditionally_applicable
+  | not_applicable
+
+leg_applicability:
+  applicable
+  | conditional
+  | not_applicable
+```
+
+No single `pass` field may replace the following orthogonal fields:
+
+```text
+execution_status:
+  not_due
+  | registered
+  | executed_valid
+  | executed_invalid
+  | unavailable
+
+evidence_resolution:
+  supportive
+  | equivalent
+  | counterdirectional
+  | generic_effect
+  | mixed
+  | unresolved
+  | not_evaluated
+
+control_resolution:
+  resolved
+  | unresolved
+  | invalid
+  | unavailable
+
+terminal_guard_status:
+  not_armed
+  | armed
+  | passed
+  | failed
+  | not_applicable
+```
+
+A diagnostic control is resolved when it validly distinguishes and classifies
+the registered alternatives. It need not favor the candidate. A reproduced
+relation may therefore be `executed_valid`, `generic_effect`, and `resolved`.
+A digest mismatch or malformed arm is `executed_invalid`; it receives no
+scientific evidence resolution.
+
+Each leg also has a `control_class`, distinct from its `evidence_type`:
+
+```text
+control_class:
+  provenance_guard
+  | source_ceiling_guard
+  | scientific_comparison
+  | causal_intervention
+  | ownership_or_boundary_guard
+  | runtime_validity_guard
+  | reconstruction_guard
+  | terminal_semantic_guard
+
+evidence_type:
+  inherited/source verification
+  | registration guard
+  | numeric execution comparison
+  | causal-chain evidence
+  | withdrawal comparison
+  | reconstruction evidence
+  | terminal report guard
+```
+
+Mixed legs require every named evidence type. An authored boolean cannot
+substitute for a numeric comparison, causal lineage, runtime receipt, or
+reconstruction fact.
+
+### Common-control applicability and evidence projection
+
+Every common control has at least one applicable B-R leg. The exact parent
+projection is:
+
+```text
+applicable:
+  AE01-CTRL-01 through AE01-CTRL-09
+  AE01-CTRL-11 through AE01-CTRL-19
+
+partially_applicable:
+  AE01-CTRL-10
+
+conditionally_applicable:
+  none at the B-R parent-control level
+
+not_applicable:
+  none at the B-R parent-control level
+```
+
+Conditional applicability is used by individual legs such as the fresh-
+nondepositor discriminator, not to postpone the parent common-control
+projection.
+
+`AE01-CTRL-10` is exactly factored as:
+
+```text
+P2-I3-BR-CTRL-10-LEG-01-PARENT-CONTEXT-CLAIM-GUARD:
+  applicable
+
+P2-I3-BR-CTRL-10-LEG-02-PARENT-BASIN-COMPARISON:
+  not_applicable
+  reason: no registered parent basin exists in the B-R realization
+```
+
+| Parent | Control class | B-R legs and admissible resolution |
+| --- | --- | --- |
+| `AE01-CTRL-01` | `provenance_guard` | Verify conceptual sources remain motivation-only through inherited/source verification; they cannot become runtime or ecology evidence. |
+| `AE01-CTRL-02` | `source_ceiling_guard` | Verify N30 retains its original trace-mediated eligibility ceiling and blocked relabels. |
+| `AE01-CTRL-03` | `source_ceiling_guard` | Admit N29 components only as inherited mechanisms; require fresh combined P2-I3 evidence for the formation-field-dynamic-encounter composition. |
+| `AE01-CTRL-04` | `ownership_or_boundary_guard` plus `causal_intervention` | Resolve participant/field boundaries and the complete OP-01-through-OP-05 causal chain; component presence or a passive environment is insufficient. |
+| `AE01-CTRL-05` | `causal_intervention` | Exclude private/global routing through fixed local encounter, relocation, and role/raw-ID permutation evidence. |
+| `AE01-CTRL-06` | `causal_intervention` | Resolve enabled/withdrawn, relocation, shuffle, and both false-trace forms; surface annotation alone is insufficient. |
+| `AE01-CTRL-07` | `causal_intervention` | Require ordered formation, field dynamic, and later encounter lineage plus registered handoffs; temporal co-occurrence is insufficient. |
+| `AE01-CTRL-08` | `ownership_or_boundary_guard` plus `causal_intervention` | Factor producer/handoff dependence into the four legs below. Producer dependence blocks a native claim but need not invalidate an honestly constructed result. |
+| `AE01-CTRL-09` | `runtime_validity_guard` plus `scientific_comparison` | Factor cost, conservation, leakage, reservoir isolation, and mass/organization specificity into the five legs below. |
+| `AE01-CTRL-10` | `terminal_semantic_guard` plus `causal_intervention` | Parent-context and claim-prohibition leg is applicable. Parent-basin causal comparison leg is not applicable because no parent basin is registered. The absent comparison is not an unmet scientific control, while motif/regime inflation remains blocked. |
+| `AE01-CTRL-11` | `ownership_or_boundary_guard` | Verify separate `s_e`, `m_e`, `d_e`, `x_e`, participant, and route-role identities without circular lineage. |
+| `AE01-CTRL-12` | `terminal_semantic_guard` | Enforce the bounded trail/stigmergic vocabulary and reject communication, cooperation, intention, goal, care, agency, motif, or regime inflation. |
+| `AE01-CTRL-13` | `terminal_semantic_guard` | Keep Q-021 branch comparison distinct from the seven-lane successor-ranking procedure; no P2-I3 result can perform synthesis ranking. |
+| `AE01-CTRL-14` | `source_ceiling_guard` | Preserve ecology demand or missing-surface records as demand, never native substrate evidence. |
+| `AE01-CTRL-15` | `ownership_or_boundary_guard` | Keep B-R constructed/producer-mediated until an explicit native transition and affected rerun; no source update silently changes the retained realization. |
+| `AE01-CTRL-16` | `ownership_or_boundary_guard` | Verify mechanism necessity, minimality, counterfactuals, withdrawal, discriminator, ownership, and naturalization debt before exact registration. |
+| `AE01-CTRL-17` | `runtime_validity_guard` plus `reconstruction_guard` | Require exact live PyGRC identity, conformance, before/after state, receipts, and no fallback. Runtime absence yields blocked/incomplete or missing-surface status, never `not_supported`. |
+| `AE01-CTRL-18` | `terminal_semantic_guard` | Keep the two-route fixture and B-R construction from becoming a reusable motif, regime, or domain package without separate promotion evidence. |
+| `AE01-CTRL-19` | `terminal_semantic_guard` | Apply the completion-sensitive closeout rules below; invalid or unavailable evidence cannot become support or refutation. |
+
+Evidence and iteration ownership follow the control class rather than one
+universal control-arm procedure:
+
+| Control class | Required evidence types | Activity ownership |
+| --- | --- | --- |
+| `provenance_guard`, `source_ceiling_guard` | inherited/source verification plus exact registration guard where consumed | I04 defines meaning; I06 binds identities; I09 resolves consumption; I10 reconstructs |
+| `scientific_comparison` | numeric execution comparison and any named causal-chain evidence | I06 registers; I08 executes; I09 resolves; I10 reconstructs |
+| `causal_intervention` | withdrawal or other registered comparison plus causal-chain evidence; numeric evidence when the leg has a metric | I06 registers; I08 executes; I09 resolves; I10 reconstructs |
+| `ownership_or_boundary_guard` | registration guard, causal-chain evidence where dynamic, and reconstruction evidence | I06 binds; I08 retains receipts where exercised; I09 resolves; I10 reconstructs |
+| `runtime_validity_guard` | registration guard and exact runtime/reconstruction evidence | I06/I07 bind; I08 records; I09 resolves validity; I10 reconstructs |
+| `reconstruction_guard` | reconstruction evidence only from the independent path | I10 resolves; I11 consumes the reconstructed status |
+| `terminal_semantic_guard` | terminal report guard over reconstructed facts | I09 arms; I10 reconstructs its inputs; I11 validates the overlay |
+
+When a leg belongs to more than one class, every applicable row is required;
+the least convenient evidence type cannot be dropped.
+
+### Compound common-control legs
+
+`AE01-CTRL-08` retains separate leg IDs for:
+
+1. `P2-I3-BR-CTRL-08-LEG-01-EXPORT-POLICY-OMISSION` — B-R export-policy
+   omission;
+2. `P2-I3-BR-CTRL-08-LEG-02-LIFECYCLE-SCHEDULE` — lifecycle-schedule
+   omission or neutralization;
+3. `P2-I3-BR-CTRL-08-LEG-03-ENCOUNTER-ADAPTER-BOUNDARY` — encounter-adapter
+   boundary verification; and
+4. `P2-I3-BR-CTRL-08-LEG-04-COMPOSITE-COORDINATION` — composite-coordination
+   dependence.
+
+The DEC-038 O arm neutralizes the export lifecycle while retaining eligible
+receipts, schedule, and checkpoints. It is not a producer-omission control.
+Every omission/dependence record preserves the accepted producer classes:
+`contract_required`, `rcae_ecology_required`, and `evidence_only`.
+
+`AE01-CTRL-09` retains separate leg IDs for:
+
+1. `P2-I3-BR-CTRL-09-LEG-01-FORMATION-COST` — formation-cost validity;
+2. `P2-I3-BR-CTRL-09-LEG-02-GLOBAL-CONSERVATION` — global conservation;
+3. `P2-I3-BR-CTRL-09-LEG-03-UNREGISTERED-LEAKAGE` — unregistered leakage;
+4. `P2-I3-BR-CTRL-09-LEG-04-RESERVOIR-ISOLATION` — reservoir isolation; and
+5. `P2-I3-BR-CTRL-09-LEG-05-EXPORT-MASS-ORGANIZATION` — export-mass/
+   organization specificity.
+
+Conservation failure or hidden loss makes the execution invalid. Formation-
+cost failure blocks R01. Reservoir influence blocks the isolated B-R
+mediation claim. Reproduction under export-mass matching is a valid generic-
+mass result rather than invalid execution.
+
+### L03 control projection
+
+All five L03 parent controls are applicable to B-R:
+
+| Parent | Control class | Required legs |
+| --- | --- | --- |
+| `AE01-L03-CTRL-01` | `causal_intervention` | W-versus-E deposition/trace withdrawal with cost and attribution evidence. |
+| `AE01-L03-CTRL-02` | `causal_intervention` | Relocate complete registered carrier/continuation state and apply role-preserving raw-ID permutation without route/preference labels. |
+| `AE01-L03-CTRL-03` | `causal_intervention` | Carrier-matched false trace and causal-projection-matched false trace as distinct interventions. |
+| `AE01-L03-CTRL-04` | `scientific_comparison` plus `causal_intervention` | O/E lifecycle contrast, equal-carrier clamp, reservoir clamp, export-mass/organization comparison, and eligible-zero/floor classification. |
+| `AE01-L03-CTRL-05` | `ownership_or_boundary_guard` plus `causal_intervention` | Fixed branch-local requests, forbidden cross-route reads, and role/raw-ID permutation. Same-participant evidence may support a trail tag but never the stronger stigmergic tag. |
+
+The compound lane legs receive these stable identities:
+
+```text
+P2-I3-BR-L03-CTRL-03-LEG-01-CARRIER-MATCHED-FALSE-TRACE
+P2-I3-BR-L03-CTRL-03-LEG-02-CAUSAL-PROJECTION-MATCHED-FALSE-TRACE
+
+P2-I3-BR-L03-CTRL-04-LEG-01-O-E-LIFECYCLE
+P2-I3-BR-L03-CTRL-04-LEG-02-EQUAL-CARRIER-CLAMP
+P2-I3-BR-L03-CTRL-04-LEG-03-RESERVOIR-CLAMP
+P2-I3-BR-L03-CTRL-04-LEG-04-EXPORT-MASS-ORGANIZATION
+P2-I3-BR-L03-CTRL-04-LEG-05-ELIGIBLE-ZERO-FLOOR
+```
+
+The `AE01-L03-CTRL-04` family is not one aggregate pass. Each leg retains its
+own lifecycle fields and may resolve supportive, equivalent,
+counterdirectional, generic, or mixed without rewriting the others.
+
+### False-trace boundary
+
+The two false-trace interventions answer different questions:
+
+```text
+carrier-matched false trace:
+  match registered C(m_e) and encounter conditions
+  remove valid depositor history
+
+causal-projection-matched false trace:
+  match every continuation-causal field except attributable
+  formation lineage and cost
+```
+
+Carrier-matched reproduction supports only carrier-value sufficiency for the
+tested encounter. Carrier-matched divergence leaves omitted current state
+versus history unresolved. Only a verified causal-projection match may support
+current-composite-state sufficiency. No false-installation arm supports costly
+attributable formation.
+
+### Stable B-R discriminator, validity, and claim identities
+
+These supplemental IDs make claim requirements machine-addressable without
+replacing their parent common/lane controls:
+
+| Stable ID | Group | Required for rungs | Required for tags | Required for terminal classes |
+| --- | --- | --- | --- | --- |
+| `P2-I3-BR-DISC-01-FORMATION-QUANTITY-TEMPORAL-MATCH` | scientific | R04 temporal specificity when claimed | both candidate tags when that specificity is claimed | support or `not_supported` for the formation-quantity question |
+| `P2-I3-BR-DISC-02-EXPORT-MASS-ORGANIZATION` | scientific | R04 | both candidate tags | support or `not_supported` for B-R organization specificity |
+| `P2-I3-BR-DISC-03-COMPLETE-STATE-HISTORY` | scientific | R04 | both candidate tags | support or `not_supported` for state/history sufficiency |
+| `P2-I3-BR-DISC-04-GEOMETRY-OR-TIMESCALE` | scientific | R05 only | none by itself | any terminal claiming R05 |
+| `P2-I3-BR-DISC-05-FRESH-NONDEPOSITOR` | scientific, conditional | no rung | `stigmergic_field_candidate` only | any terminal using the stigmergic tag; never required for `trail_field_candidate` |
+| `P2-I3-BR-VALID-01-EXACT-RESTORATION` | validity | every rung whose comparison forks/restores | every tag using restored evidence | every scientific support or `not_supported` class using restored evidence |
+| `P2-I3-BR-VALID-02-EQUAL-INPUT-CONTINUATION` | validity | R03-R05 where paired continuation is used | both candidate tags | support or `not_supported` for paired causal claims |
+| `P2-I3-BR-VALID-03-RECONSTRUCTION` | validity | all retained rungs | all retained tags | every closeout |
+| `P2-I3-BR-VALID-04-FORBIDDEN-READ` | validity | R03-R05 | both candidate tags | every scientific closeout using the encounter adapter |
+| `P2-I3-BR-VALID-05-RUNTIME-SOURCE-BINDING` | validity | all live-evidence rungs | all live-evidence tags | every live scientific closeout |
+| `P2-I3-BR-CLAIM-01-PRODUCER-DEPENDENCE` | claim | none; constrains realization qualifier | all tags | every closeout and native/missing-surface statement |
+| `P2-I3-BR-CLAIM-02-FIXTURE-LOCK` | claim | none | all tags | every closeout and promotion statement |
+| `P2-I3-BR-CLAIM-03-NATIVE-RCAE-ATTRIBUTION` | claim | none | all tags | every closeout and demand/native statement |
+| `P2-I3-BR-CLAIM-04-TRAIL-STIGMERGIC-PARTICIPANT` | claim | none | both tags, with the fresh nondepositor required only for stigmergic | every tagged closeout |
+
+Formation-cost validity remains the R01 guard; DISC-01 is the later temporal-
+quantity specificity comparison and cannot substitute for cost attribution.
+The tables freeze required-field semantics, not any future disposition.
+
+### `AE01-CTRL-19` closeout rule
+
+```text
+not_supported:
+  every claim-mandatory scientific leg completed with valid evidence
+
+supported at a rung or tag:
+  every leg mandatory for that rung or tag resolved without a
+  claim-blocking disposition
+
+blocked / incomplete / missing_surface:
+  unavailable scientific legs may remain only when each is explicitly
+  classified and neither support nor refutation is inferred from absence
+
+every closeout:
+  all source, identity, reconstruction, ownership, fixture-lock,
+  and terminal-language guards resolved
+```
+
+Thus a valid scientific counterdirection may support `not_supported`, while
+missing runtime, invalid reconstruction, or an unavailable intervention may
+not. An honest blocked or missing-surface closeout remains possible without
+inventing scientific completion.
+
+### I09-I11 ownership and handoff
+
+I09 resolves scientific comparisons and all pre-terminal guards, emits one
+machine control-resolution index, and marks terminal semantic guards `armed`.
+It cannot pass terminal report language that does not yet exist.
+
+I10 independently reconstructs every evidence binding and I09 disposition,
+emits a reconstructed control-resolution identity, and blocks I11 on any
+mismatch. It neither reruns scientific operations nor changes their meaning.
+
+I11 consumes only reconstructed I09 facts. It validates the actual terminal
+classification, claim vocabulary, selection record, demand/native separation,
+and report; emits a terminal-guard overlay; and may not alter any I09 numeric
+fact or scientific disposition.
+
+Closeout requires the I09 index, passed I10 reconstruction, passed I11
+overlay, and no claim-required pending, invalid, or unavailable leg unless the
+terminal class explicitly records a blocked or incomplete boundary under the
+CTRL-19 rule.
+
+### Gate effect
+
+B-R Q-016 applicability and evidence meaning are resolved. CAL-PRE does not
+pass from this decision alone. DEC-036 through DEC-040 must still be
+materialized in machine policy and schemas, validated, reconstructed, and
+accepted without calibration invocation or candidate-shaped input. I06 later
+binds exact cell/evidence identities. C.2 remains inactive and unresolved.
+
+### Reopening condition
+
+Reopen the affected B-R legs if machine materialization cannot represent the
+separate lifecycle fields, an accepted OP or parent control lacks a resolvable
+leg, exact registration reveals a new causal producer or continuation state,
+a control conflates invalid execution with scientific evidence, or I09-I11
+cannot preserve reconstructed scientific facts while validating terminal
+claims. A future C.2 projection does not by itself reopen B-R.
+
+## 43. Open decision register
 
 These questions are intentionally unresolved. Their order is part of the
 governance contract; answers cannot be taken from candidate outcomes.
@@ -3113,21 +4159,21 @@ governance contract; answers cannot be taken from candidate outcomes.
 | `P2-I3-Q-006` | What exact field equation/update law, units, update order, and invariants apply? | Route-scoped I03 realization freeze | B-R instance resolved by DEC-028 as serialized conservative B-R redistribution; C.2 instance remains inactive until B-R branch closeout |
 | `P2-I3-Q-007` | How does traversal encounter the local field without a hidden global selector? | Route-scoped I03 causal factorization | B-R instance resolved by DEC-029 as paired branch-local fixed native departure admission; C.2 remains inactive and independent |
 | `P2-I3-Q-008` | Is current field state sufficient, is active history load-bearing, or must multiple modes remain? | Route-scoped I03 discriminator freeze | B-R instance resolved by DEC-027 as current-composite-state primary plus mandatory history discriminator; C.2 instance remains open and inactive |
-| `P2-I3-Q-009` | What primary substrate-visible traversal response is measured? | I04 calibration preregistration | Blocks CAL-PRE |
-| `P2-I3-Q-010` | Which of the five surfaces are measured, annotation-only, inapplicable, or unavailable, and which policies derive them? | I04 | Blocks CAL-PRE |
-| `P2-I3-Q-011` | What comparator and estimator preserve the dynamic-to-traversal causal question? | I04 | Blocks CAL-PRE |
-| `P2-I3-Q-012` | What candidate-blind matched-null generator and inputs calibrate resolution without consuming candidate structure? | I04 | Blocks calibration |
+| `P2-I3-Q-009` | What primary substrate-visible traversal response is measured? | I04 calibration preregistration | Resolved by DEC-036 as a typed encounter response with signed native admissibility margin primary; no longer blocks CAL-PRE |
+| `P2-I3-Q-010` | Which of the five surfaces are measured, annotation-only, inapplicable, or unavailable, and which policies derive them? | I04 | Resolved by DEC-037 with five typed policies and a split causal-temporal surface; no longer blocks CAL-PRE |
+| `P2-I3-Q-011` | What comparator and estimator preserve the dynamic-to-traversal causal question? | I04 | Resolved by DEC-038 as exact W/O/E arms with separate trace and export relations; no longer blocks CAL-PRE |
+| `P2-I3-Q-012` | What candidate-blind matched-null generator and inputs calibrate resolution without consuming candidate structure? | I04 | Resolved by DEC-039 as one shared exact-null calibration plus non-delta estimator conformance panels; no longer blocks CAL-PRE |
 | `P2-I3-Q-013` | Which separate IDs bind quantity-matched and complete-state-matched contrasts? | I03/I04 | B-R resolved by DEC-031 as three distinct contrast identities; C.2 remains inactive and independent |
 | `P2-I3-Q-014` | What exact topology, field values, costs, schedules, times, seeds, and transfer contrast are registered? | I06 after calibration | Blocks REG-GATE |
 | `P2-I3-Q-015` | What complete restoration, reset, branch, and equal-input continuation identity is required? | I03 design; finalized I06 | B-R I03 design resolved by DEC-032; exact I06 finalization remains open and blocks REG-GATE |
-| `P2-I3-Q-016` | Which common controls apply and what evidence must resolve every lane-specific control? | I04/I06 | Blocks REG-GATE and CONTROL-GATE |
+| `P2-I3-Q-016` | Which common controls apply and what evidence must resolve every lane-specific control? | I04/I06 | B-R applicability/evidence meaning resolved by DEC-040; machine materialization and exact I06 evidence bindings still block CAL-PRE/REG-GATE, while C.2 remains inactive and independently unresolved |
 | `P2-I3-Q-017` | What time, memory, disk, process, and artifact-size envelope applies? | I06 | Blocks REG-GATE |
 | `P2-I3-Q-018` | What finite attempts, infrastructure-only retries, failure classes, and one-shot claims apply? | I06/I07 | Blocks EXEC-FREEZE |
 | `P2-I3-Q-019` | Which clean committed sources, commands, runtime identities, and activation record authorize the candidate cycle? | I07 | Blocks candidate execution |
 | `P2-I3-Q-020` | Does any appendix activate after core closeout, and under what separate hypothesis? | Post-core decision only | No core blocker; appendix remains closed |
 | `P2-I3-Q-021` | After both branch closeouts, which provider, alternative set, composition proposal, or non-selection should the lane retain? | P2-I3-COMPARE after B-R and C.2 branch closeouts | Blocks the single lane terminal record and any specification promotion |
 
-## 39. Decision protocol for subsequent work
+## 44. Decision protocol for subsequent work
 
 For each open question:
 
@@ -3145,7 +4191,7 @@ A review correction receives its own decision and change entry when it changes
 authority, semantics, or rerun scope. Cosmetic corrections may remain in the
 containing iteration when they introduce no unknown assumption.
 
-## 40. Current boundary
+## 45. Current boundary
 
 Accepted decisions `P2-I3-DEC-001` through `P2-I3-DEC-024` retain the semantic,
 source, LGRC9V3-only, N31 handoff, and theory/substrate/code authority chain.
@@ -3166,9 +4212,25 @@ PyGRC statement, and closes all fifteen section 8.2 requirements through their
 individual operational/design/nonclaim bases rather than one empirical claim.
 
 `P2-I3-DISCRIMINATOR-GATE` is passed. I04 candidate-blind calibration
-preregistration is the only newly opened activity. It must resolve Q-009
-through Q-012 and Q-016 prospectively without consuming conformance fixture
-values, topology, observed split, digest, or derived margins.
+preregistration is the only newly opened activity. DEC-036 resolves Q-009 as a
+typed encounter response with signed request-relative admissibility margin
+primary and native disposition as its mandatory validity companion. No numeric
+request, comparator, normalization, aggregation, or resolution value follows.
+DEC-037 resolves Q-010 with measured native structure/bindings, annotation-only
+geometric and functional projections, separately typed measured native time and
+annotated causal shortest paths, and mandatory intervention-estimated causal
+influence. DEC-038 resolves Q-011 through exact W/O/E arms, separate trace and
+export estimands, raw additive decomposition, strict pairing/missingness, and
+mandatory clamp interpretation. DEC-039 resolves Q-012 through one shared
+candidate-blind exact-null population plus non-delta perturbation, denominator,
+reconstruction, and missingness panels. DEC-040 resolves B-R Q-016 through
+leg-factored applicability, separated lifecycle fields, typed evidence and
+control classes, compound-control legs, false-trace levels, stable
+discriminator/validity/claim identities, and an I09-I10-I11 reconstructed
+terminal-overlay handoff. It assigns no control outcome. Machine
+materialization, validation, reconstruction, and acceptance remain required
+before CAL-PRE can pass, without consuming conformance fixture values,
+topology, observed split, digest, or derived margins.
 
 Calibration execution, exact I06 registration, candidate/control execution,
 C.2 work, every OP and R01–R05 result, `AE01-H-L03`, provider comparison,
