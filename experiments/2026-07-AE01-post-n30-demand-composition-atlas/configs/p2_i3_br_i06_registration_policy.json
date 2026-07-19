@@ -7,7 +7,13 @@
     "schema_validation",
     "reconstruction"
   ],
-  "artifact_version": "1.0.1",
+  "artifact_version": "1.0.2",
+  "bounded_correction": {
+    "change_id": "P2-I3-CHG-064",
+    "correction_iteration_id": "P2-I3-I06A",
+    "reason": "separate_the_450_case_evidence_registry_from_the_456_entry_dependency_ordered_execution_schedule",
+    "scientific_redesign": false
+  },
   "claim_ceiling": "exact_inactive_candidate_and_control_authority_only",
   "entry_gate": {
     "gate_id": "P2-I3-CAL-GATE",

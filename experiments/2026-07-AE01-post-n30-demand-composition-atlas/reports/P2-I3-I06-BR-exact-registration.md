@@ -2,15 +2,15 @@
 
 ## Disposition
 
-The B-R I06A bounded correction is owner-authorized and source-materialized.
-Its clean source anchor, retained artifacts, reconstruction, and superseding
-REG-GATE identity remain the next boundaries.
+The B-R I06A bounded correction is owner-accepted, source-anchored,
+materialized, tested, and byte-exactly reconstructed. Its retention commit is
+the next boundary before candidate-free I07-A rebinding resumes.
 
 ```text
 P2-I3-I06 package 1.0.1:        historical, accepted, retained
-P2-I3-I06A package 1.0.2:       source-materialized; retention pending
+P2-I3-I06A package 1.0.2:       owner-accepted; retention pending
 prior P2-I3-REG-GATE identity:  non-executable after defect discovery
-corrected P2-I3-REG-GATE:       pending clean retention and acceptance
+corrected P2-I3-REG-GATE:       passed; effective after retention commit
 P2-I3-EXEC-FREEZE:              unopened
 candidate execution:            not authorized and not performed
 scientific/control execution:   not authorized and not performed
@@ -77,9 +77,8 @@ Historical package `1.0.1` consumes:
   `565706f8b7647f6b7638b9afbe52372e170bf724`; and
 - the accepted I05 shared resolution `delta=1/1000000000000`.
 
-I06A preserves every upstream authority but must replace the RCAE source
-anchor with the clean commit that contains this correction. That identity is
-not guessed or retained while the worktree is dirty.
+I06A preserves every upstream authority and binds clean implementation source
+commit `7b5d392078e18428da297ea68a2c956a13e8edee`.
 
 The build accepts the full clean source commit explicitly, requires every
 consumed executable/schema byte to equal its committed byte at that anchor,
@@ -445,11 +444,11 @@ governed physical ceiling              8,589,934,592 bytes
 Logical bytes intentionally may exceed the physical projection because exact-
 byte SHA-256 deduplication can map several logical components to one immutable
 blob. Semantic equivalence never permits deduplication. The reconstructed I06A
-exact registration is expected to cross the 1 MiB individual review threshold
-because it retains the complete operational registry and DAG. That threshold
+exact registration is 1,768,714 bytes and crosses the 1 MiB individual review
+threshold because it retains the complete operational registry and DAG. That threshold
 requires this compact report, selectors, and exact reconstruction instructions;
 it is not a prohibition on retention. Final byte lengths are recorded only
-after clean-source construction.
+through the retained build and reconstruction records.
 
 No experiment `RLIMIT_AS` or RSS kill threshold exists. The future runner must
 observe memory and classify OOM or native memory failure as infrastructure,
@@ -524,7 +523,7 @@ Read-only validation and non-destructive reconstruction use the same
 environment with `validate` and `reconstruct`. Reconstruction writes to:
 
 ```text
-outputs/reconstruction/p2-i3-i06-br-registration-validation.reconstructed.json
+outputs/reconstruction/p2-i3-i06a-br-registration-validation.reconstructed.json
 ```
 
 The retained and reconstructed validation files compare byte-exactly. Timing
@@ -532,70 +531,62 @@ observations are not expected to recur byte-exactly; a new timing run is a new
 characterization. Reconstruction validates the retained observations and all
 derived values without pretending host elapsed time is deterministic.
 
-Current I06A source-stage results:
+Current I06A results:
 
 ```text
-in-memory semantic validator: 26 / 26 passed
-candidate/control operations:  0
-retained package reconstruction: pending clean source anchor
-focused adversarial tests:      pending retained package
+retained semantic validator:       26 / 26 passed
+focused I06A tests:                42 / 42 passed
+adjacent I03/I04/I06 tests:        72 / 72 passed
+non-destructive reconstruction:    byte-exact
+candidate/control/integrity work:  0
+1.0.1/1.0.2 scientific payload:    byte-semantically identical
+1.0.1/1.0.2 exact case sets:       byte-semantically identical
 ```
 
-Accepted I06 package `1.0.1` previously passed 25/25 retained checks, 36/36
-focused tests, 66/66 current I03/I04/I06 tests, and the I05 49/49 closeout.
-Those historical checks do not substitute for the I06A clean-source rebuild.
+The direct canonical comparison digest for candidate design, matrix, controls,
+requirements, producers, pairing, and restoration is
+`4657f0086b8910e6b651e07661cf8ca5c4ba3df5d4c33a848a4ef84755911a6e`
+on both packages. The corresponding exact case-set identity/ordinal digest is
+`9e0d3031e4349c8f390b27934911f2b17f4d89e89e6fb8b39262ff382d42e7aa`
+on both packages. This mechanically proves the correction did not alter the
+scientific or evidence-selector surface.
 
-One old I05 inactive-freeze test still asserts that the later accepted I05
-launch authorization does not exist. That assertion is historical and stale
-after completed I05; it is not used as a current-state gate.
+The accepted `1.0.1` timing characterization is reused byte-exactly; I06A does
+not rerun host timing merely because the schedule gained six known complex
+entries. All resource projections are regenerated from that accepted record.
 
-A repository-wide atlas test run, with that one assertion deselected, produced
-254 passes, 33 passing subtests, and five failures outside P2-I3 I06. They are
-retained as existing-state diagnostics rather than repaired in this iteration:
-
-- one P2-I1 conceptual-source digest has drifted from its historical registry;
-- the local `.venv` has Matplotlib `3.11.0` while one P2-I2 test expects
-  `3.10.9`;
-- one P2-I2 pre-activation test requires an authorization that has since been
-  created and consumed to remain absent; and
-- two P2-I2 I05B tests detect historical I04R2 frozen-hash drift.
-
-None of those files or authorities is consumed by the I06 validator. The
-focused current-state P2-I3 and I05 closeout checks above are the relevant
-regression boundary.
-
-## Superseded package `1.0.1` artifact identities
+## Package `1.0.2` artifact identities
 
 ```text
 registration policy
-3db143f93f06246935d0665a5d53e4e2c729f0b4380b9a7e4a9eca0b212e590d
+60b4cfa98e0e0a93c4af8bcd7fb75ac9ef5f877217acaa9616bfa993290979e1
 
 candidate-free timing
 7644d54098cbbfe8c9b447b75500104cfcf5e28bfd9b3c4a54d724775af98973
 
 exact registration
-60f662965ce7c84c0b909a59b4826dbd8bb9cb400500dc14bb8b312790cc3af9
+7d5987223f42ef053beefbb5afb5fd88cf1fcd150a0048818b96f5718ae878b6
 
 registration validation
-531221f4eb15f30084584b8ac55dde2509db636ba588d2b995ba7d9ae39be597
+d02e59b978b5cad22251c76ad0f703c8842b1792593e807a99a21e5faa47f1f1
 
 registration schema
-6efb99c60f468d857b5140f64897cdbca280ccc9272aba26694125fcf7519ac8
+6625b8368e973dbea6c586fc63900ecc149270bdf2e0f2123eebf950d2f0a527
 
 execution-record schema
-de7887c9ad484caf973efe7fec8469243e29125c7a2065102decf988abedb1c1
+facde54ab7be3490433ca574e10bd2c3038b285000675ca40e65bd3d2de6d5e5
 
 builder/validator source
-1b38247344b200f9398c2294ed5eb377ccc41a889d3853546899ff284a96ba6b
+91fcede7c7090dd29e7b776e17bbb1a819342d8708e775fabca315bd501d545c
 
 focused test source
-295eddbcec96fcb62be6742d9ba10acd1fc9a8f5ff8883603f1061c54a681fb1
+fe0cd6ab51a8edd98d916c3acb9142db240d0da73acb0e5d6a0400942bf0368c
 ```
 
-The superseded exact registration's canonical payload digest is:
+The exact registration's canonical payload digest is:
 
 ```text
-9981d03df09f90d9507d038fc6581e35daa3fa085650c00db1144c968b581552
+9188bf2f177c87c3d60bd68f8babd70e584061a65d110afef89fd16dd27757db
 ```
 
 ## Interpretation and next boundary
@@ -611,9 +602,8 @@ later admissibility, that current state is sufficient, that perturbations are
 stable, or that fresh participants respond. Those are future execution and
 analysis questions.
 
-I06A package `1.0.2` identities are intentionally not predicted from a dirty
-worktree. They will be recorded after the source correction is committed and
-the retained package is rebuilt from that clean anchor.
+All identities above were generated after clean source commit `7b5d392`, not
+predicted from a dirty worktree.
 
 ## Owner acceptance and gate effect
 
@@ -626,22 +616,29 @@ adversarial tests.
 Acceptance-record SHA-256:
 `3fdf921893083505fad6889567698b58dd7dbd5efdbbb1f5c32687947630faa1`.
 
-Discovery of the schedule defect does not erase that history, but the record
-cannot authorize execution. The owner has accepted the bounded I06A correction;
-the corrected package and superseding acceptance identity remain pending.
+Discovery of the schedule defect does not erase that history, but the old
+record cannot authorize execution. The owner now accepts materialized I06A
+package `1.0.2` specifically so I07-A can expose any remaining
+execution-authority incompatibility. The corrected
+[acceptance record](../contracts/p2-i3/i06-br-owner-acceptance-and-reg-gate.json)
+supersedes EV-051 for future execution-authority consumers and passes corrected
+`P2-I3-REG-GATE` only.
+
+Corrected acceptance-record SHA-256:
+`376ddd9272d8880bc9b9d8d47a7f5eb06cbb9a2814d486e5f8b92caf34049c94`.
 
 Current governance is:
 
 ```text
 P2-I3-I06 package 1.0.1 = retained historical authority
-P2-I3-I06A source correction = owner-authorized and source-materialized
-corrected P2-I3-REG-GATE = pending clean retention and acceptance
-next required boundary = clean I06A source-anchor commit
-then = retained rebuild, reconstruction, focused tests, and gate supersession
-after that = rebind and resume I07-A
+P2-I3-I06A source anchor = 7b5d392078e18428da297ea68a2c956a13e8edee
+P2-I3-I06A package 1.0.2 = owner-accepted
+corrected P2-I3-REG-GATE = passed
+next required boundary = accepted package retention commit
+after that = rebind and resume candidate-free I07-A
 ```
 
-Neither historical REG-GATE nor the I06A source correction passes
-`P2-I3-EXEC-FREEZE` or authorizes a candidate, control, baseline, or
-integrity-fault operation. I07 remains paused until it consumes corrected
-cleanly retained I06A authority.
+Corrected REG-GATE does not pass `P2-I3-EXEC-FREEZE` or authorize a candidate,
+control, baseline, or integrity-fault operation. I07-A may resume only after
+the accepted package is committed and then only for candidate-free source
+rebinding and validation.
